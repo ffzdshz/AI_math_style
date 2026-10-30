@@ -1,0 +1,81 @@
+{
+  "proposition": "12.16",
+  "run": "Fable",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G falls between K and D on segment KD, since KG (lesser radius) < KD (greater radius)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "G lies between A and C on chord AC, which is drawn through G perpendicular to BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC is perpendicular to BD at G; KG is the perpendicular distance from centre K to chord AC",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Arc BAD is a semicircle (half the circumference), since BD is a diameter",
+      "type": "arc_measure"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Arc AD is a part of arc BAD; after repeated bisection, arc LD < arc AD",
+      "type": "arc_measure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "L lies on arc AD, between A and D on the circumference of the greater circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "KL falls within angle AKD because L is on arc AD between A and D",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 7",
+      "claim": "KD falls within angle AKC because G (on ray KD) lies between A and C on chord AC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 7",
+      "claim": "angle LKD < angle AKD < angle AKC (chain of strict inequalities)",
+      "type": "angle_comparison"
+    },
+    {
+      "step": "Step 8",
+      "claim": "LD < AC, by 1.24 (hinge theorem) applied to triangles LKD and AKC with equal radii and smaller included angle",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 9",
+      "claim": "KO > KG, where KO is perpendicular distance from K to chord LD and KG is perpendicular distance from K to chord AC",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Perpendicular from K to each side of the polygon equals KO, hence greater than KG",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Every point P on any side S of the polygon satisfies KP > KG",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 14",
+      "claim": "No point of any side lies on or within the lesser circle (radius KG)",
+      "type": "inside_outside"
+    }
+  ],
+  "configuration_map": "Two concentric circles centred at K: greater circle ABCD, lesser circle EFGH. BD is a diameter of the greater circle passing through K. G is the intersection of radius KD with the lesser circle, lying between K and D. AC is a chord of the greater circle drawn through G perpendicular to BD; G is the midpoint of AC (by III.3, perpendicular from centre bisects chord). L is a point on arc AD obtained by repeated bisection of the semicircular arc BAD, positioned between A and D. O is the foot of the perpendicular from K to chord LD. The polygon DP1P2...P(2m-1) has 2m sides, each equal to LD, inscribed in the greater circle. All points maintain consistent positions throughout the proof: G remains between K and D and between A and C; L remains on arc AD; the distance ordering KO > KG is preserved in all subsequent steps.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof carefully tracks point positions (G between K and D, G between A and C, L on arc AD between A and D), correctly establishes ray orderings (KL within angle AKD, KD within angle AKC), properly applies the hinge theorem (1.24) to deduce LD less than AC, and correctly derives the distance inequality KO greater than KG ensuring every point of the inscribed polygon lies outside the lesser circle. No angle decomposition errors or point position contradictions are present."
+}

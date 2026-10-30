@@ -1,0 +1,86 @@
+{
+  "proposition": "6.24",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a parallelogram with diagonal AC; E on AB, G on AD, K on DC, H on BC, F on diagonal AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Diagonal AF of AEFG lies along AC",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EF || AG (along AD), so EF || AD and EF || BC",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 3",
+      "claim": "GF || AE (along AB), so GF || AB and GF || DC",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 4",
+      "claim": "In triangle ABC, E on AB, F on AC, EF || BC: line EF cuts two sides of triangle ABC",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In triangle ACD, G on AD, F on AC, GF || DC: line GF cuts two sides of triangle ACD",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle GAE = angle DAB (same angle, since E on ray AB and G on ray AD)",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Angle GAE + angle AEF = two right angles (consecutive angles in parallelogram AEFG)",
+      "type": "supplementary_angles"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Diagonal FC of FHCK lies along AC",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "FH || CK (along DC), so FH || DC and FH || AB",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 12",
+      "claim": "FK || HC (along BC), so FK || BC and FK || AD",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 13",
+      "claim": "In triangle ABC, F on AC, H on BC, FH || AB: line FH cuts two sides of triangle ABC",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 14",
+      "claim": "In triangle ACD, F on AC, K on CD, FK || AD: line FK cuts two sides of triangle ACD",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Angle KCH = angle DCB (same angle, since K on ray CD and H on ray CB)",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Angle KCH + angle CHF = two right angles (consecutive angles in parallelogram FHCK)",
+      "type": "supplementary_angles"
+    }
+  ],
+  "configuration_map": "Point F lies on diagonal AC throughout, serving as a vertex of both sub-parallelograms. In AEFG, diagonal AF is along AC; in FHCK, diagonal FC is along AC. Point E remains on AB, Point G on AD, Point H on BC, Point K on DC throughout all steps. Through F, two lines are drawn: one parallel to AB/DC (creating segments EF and FH on opposite sides of F) and one parallel to AD/BC (creating segments GF and FK on opposite sides of F). This produces two parallelograms about the diameter: AEFG (at vertex A end) and FHCK (at vertex C end). All parallel-line claims are derived from opposite-side parallelism in the sub-parallelograms and the main parallelogram. All angle claims use only angle identity (shared angles at A and C) and supplementary angle pairs from parallelogram properties. No angle is decomposed as a sum, so no between-ray issues arise.",
+  "pass_reason": "All spatial claims are mutually consistent. F remains on diagonal AC throughout, and every point (E, G, H, K) maintains its claimed position on the respective side of ABCD in every step. The parallel-line relationships (EF||BC, GF||DC, FH||AB, FK||AD) follow correctly from the sub-parallelogram structure. Applications of 6.2 in triangles ABC and ACD use geometrically valid configurations (line parallel to one side cutting the other two sides). The proof uses only angle identities (shared angles) and supplementary angle pairs — no angle decomposition into sums — so the primary error pattern (invalid between-ray claims) does not arise. The only gap is a citation issue (missing V.18 componendo for deriving AE/AB = AF/AC from AE/EB = AF/FC), which is not a spatial configuration error."
+}

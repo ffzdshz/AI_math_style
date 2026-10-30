@@ -1,0 +1,30 @@
+{
+  "proposition": "9.14",
+  "book": 9,
+  "statement": "If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.",
+  "heath_proof": "For let the number A be the least that is measured by the prime numbers B, C, D; I say that A will not be measured by any other prime number except B, C, D. For, if possible, let it be measured by the prime number E, and let E not be the same with any one of the numbers B, C, D. Now, since E measures A, let it measure it according to F; therefore E by multiplying F has made A. And A is measured by the prime numbers B, C, D. But, if two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers; [VII. 30] therefore B, C, D will measure one of the numbers E, F. Now they will not measure E; for E is prime and not the same with any one of the numbers B, C, D. Therefore they will measure F, which is less than A: which is impossible, for A is by hypothesis the least number measured by B, C, D. Therefore no prime number will measure A except B, C, D.",
+  "ai_proof_text": "9.14\n**Statement:** If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.\n\n**Step 1.** Let A be the least number that is measured by the prime numbers p1, p2, ..., pn. Suppose, for the sake of contradiction, that some other prime number q, distinct from each of p1, p2, ..., pn, also measures A.\n\n**Step 2.** Since q measures A, there exists a number B such that A = q * B [by D7.3, D7.5, D7.15].\n\n**Step 3.** Since A = q * B, the numbers q and B multiplied together produce A. Now consider any one of the primes pi (where i ranges from 1 to n). Since pi measures A, and A is the product of q and B, and pi is prime, by 7.30 pi must measure one of the factors q or B.\n\n**Step 4.** Now q is prime, so by D7.11 q is measured by a unit alone. The only numbers that measure q are therefore 1 and q itself. Since pi is prime, pi is greater than 1 [by D7.11, as a prime is a number, and a number is a multitude of units by D7.2, and it is not the unit itself]. And pi is distinct from q by hypothesis. Therefore pi does not measure q.\n\n**Step 5.** Since pi measures one of q or B (Step 3), and pi does not measure q (Step 4), it follows that pi measures B. This holds for every prime pi among p1, p2, ..., pn.\n\n**Step 6.** Therefore B is measured by each of the primes p1, p2, ..., pn.\n\n**Step 7.** Since A = q * B and q is a prime number (hence q is at least 2), B is less than A [by CN5, since A is the whole and B is a part of A, as q measures A according to B, and q is not the unit].\n\n**Step 8.** But A was supposed to be the least number measured by all of p1, p2, ..., pn. We have found B, a number less than A, that is also measured by all of p1, p2, ..., pn. This is a contradiction.\n\n**Step 9.** Therefore no prime number other than p1, p2, ..., pn can measure A. Q.E.D.\n\n**USED:** 7.30, CN5, D7.11, D7.15, D7.2, D7.3, D7.5\n**Human refs (from References field):** 7.30\n**Jaccard:** 0.143 — AI adds ['CN5', 'D7.11', 'D7.15', 'D7.2', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "7.30",
+    "CN5",
+    "D7.11",
+    "D7.15",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.30"
+  ],
+  "ai_only": [
+    "CN5",
+    "D7.11",
+    "D7.15",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A be the least number that is measured by the prime numbers p1, p2, ..., pn. Suppose, for the sake of contradiction, that some other prime number q, distinct from each of p1, p2, ..., "
+}

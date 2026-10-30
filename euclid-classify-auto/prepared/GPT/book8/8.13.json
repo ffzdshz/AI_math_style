@@ -1,0 +1,34 @@
+{
+  "proposition": "8.13",
+  "book": 8,
+  "statement": "If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, in continued proportion, so that, as A is to B, so is B to C; let A, B, C by multiplying themselves make D, E, F, and by multiplying D, E, F let them make G, H, K; I say that D, E, F and G, H, K are in continued proportion. For let A by multiplying B make L, and let the numbers A, B by multiplying L make M. N respectively. And again let B by multiplying C make O, and let the numbers B, C by multiplying O make P, Q respectively. Then, in manner similar to the foregoing, we can prove that D, L, E and G, M, N, H are continuously proportional in the ratio of A to B, and further E, O, F and H, P, Q, K are continuously proportional in the ratio of B to C. Now, as A is to B, so is B to C; therefore D, L, E are also in the same ratio with E, O, F, and further G, M, N, H in the same ratio with H, P, Q, K. And the multitude of D, L, E is equal to the multitude of E, O, F, and that of G, M, N, H to that of H, P, Q, K; therefore, ex acquali, as D is to E, so is E to F, and, as G is to H, so is H to K. [VII. 14]",
+  "ai_proof_text": "8.13\n**Statement:** If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.\n\n**Step 1.** Let a₁, …, aₙ be the given numbers in continued proportion. Write Sᵢ for the product of aᵢ with itself, and Tᵢ for the product of aᵢ with Sᵢ. Thus Sᵢ is a square with side aᵢ, and Tᵢ is a cube with side aᵢ. [D7.18, D7.19] Path choice: apply the square-ratio theorem 8.11 first, since the first products are squares, and then the cube-ratio theorem 8.12; use numerical ex aequali, 7.14, to compare the resulting chains.\n\n**Step 2.** Take any three consecutive original numbers aᵢ, aᵢ₊₁, aᵢ₊₂. By hypothesis, aᵢ:aᵢ₊₁ = aᵢ₊₁:aᵢ₊₂. By 8.11 and the definition of duplicate ratio, there are mean proportional numbers p and q such that\nSᵢ:p = p:Sᵢ₊₁ = aᵢ:aᵢ₊₁,\nand\nSᵢ₊₁:q = q:Sᵢ₊₂ = aᵢ₊₁:aᵢ₊₂. [8.11, D5.9]\n\n**Step 3.** Consequently, the chains Sᵢ, p, Sᵢ₊₁ and Sᵢ₊₁, q, Sᵢ₊₂ have equal corresponding successive ratios. [5.11] Therefore, ex aequali,\nSᵢ:Sᵢ₊₁ = Sᵢ₊₁:Sᵢ₊₂. [7.14]\n\n**Step 4.** Likewise, by 8.12 and the definition of triplicate ratio, there are intermediate numbers u, v and w, x such that\nTᵢ:u = u:v = v:Tᵢ₊₁ = aᵢ:aᵢ₊₁,\nand\nTᵢ₊₁:w = w:x = x:Tᵢ₊₂ = aᵢ₊₁:aᵢ₊₂. [8.12, D5.10]\n\n**Step 5.** Since aᵢ:aᵢ₊₁ = aᵢ₊₁:aᵢ₊₂, these two four-term chains also have equal corresponding successive ratios. [5.11] Hence, ex aequali,\nTᵢ:Tᵢ₊₁ = Tᵢ₊₁:Tᵢ₊₂. [7.14]\n\n**Step 6.** The three consecutive original numbers were arbitrary. Thus every consecutive triple of the Sᵢ is proportional, and every consecutive triple of the Tᵢ is proportional. Accordingly, both the products obtained by multiplying each original number by itself and the products obtained by multiplying each original number by its corresponding first product are in continued proportion, as required. [D7.20]\n\n**USED:** 5.11, 7.14, 8.11, 8.12, D5.10, D5.9, D7.18, D7.19, D7.20\n**Human refs (from References field):** 7.14\n**Jaccard:** 0.111 — AI adds ['5.11', '8.11', '8.12', 'D5.10', 'D5.9', 'D7.18', 'D7.19', 'D7.20']",
+  "ai_used": [
+    "5.11",
+    "7.14",
+    "8.11",
+    "8.12",
+    "D5.10",
+    "D5.9",
+    "D7.18",
+    "D7.19",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.14"
+  ],
+  "ai_only": [
+    "5.11",
+    "8.11",
+    "8.12",
+    "D5.10",
+    "D5.9",
+    "D7.18",
+    "D7.19",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.111,
+  "proof_summary": "**Step 1.** Let a₁, …, aₙ be the given numbers in continued proportion. Write Sᵢ for the product of aᵢ with itself, and Tᵢ for the product of aᵢ with Sᵢ. Thus Sᵢ is a square with side aᵢ, and Tᵢ is a "
+}

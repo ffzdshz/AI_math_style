@@ -1,0 +1,31 @@
+{
+  "proposition": "6.30",
+  "run": "RunB",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on segment AB (between A and B)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C lies on AB with AC greater than CB (C divides AB with the longer part toward A)",
+      "type": "point_position_with_ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The rectangle AB * CB equals the square on AC (area relationship from Prop 2.11)",
+      "type": "area_relationship"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB, AC, CB are three straight lines in proportion: AB : AC = AC : CB",
+      "type": "proportional_relationship"
+    }
+  ],
+  "configuration_map": "Point C lies on segment AB, between A and B, positioned such that AC > CB (i.e., C is closer to B than to A). This is the standard golden ratio division point. The configuration is a single line segment with one interior point — no angles, triangles, circles, or complex figures are involved. All reasoning after the construction is purely proportional.",
+  "pass_reason": "The proof makes only minimal spatial claims: a single point C on segment AB with AC > CB. These claims are trivially consistent with each other and remain so throughout the proof. The rest of the argument is purely algebraic/proportional (applying Prop 2.11 for construction and the converse of Prop 6.17 for the proportion). No angle decompositions, no interior/exterior claims, no ray orderings — nothing that could generate a spatial contradiction."
+}

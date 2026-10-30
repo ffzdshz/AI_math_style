@@ -1,0 +1,13 @@
+{
+  "proposition": "4.10",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides this as G (granularity difference). Both proofs share the same logical backbone: cutting AB at C via II.11, fitting BD = CA in circle BDE, circumscribing circle ACD, establishing BD is tangent to circle ACD, using the alternate segment theorem (III.32) to get angle BDC = angle DAC, then using angle sums (I.32), isosceles triangle properties (I.5), and I.6 to show each base angle of triangle ABD is double the vertex angle. The ai_only citations (4.1, P1, P3) are construction postulates and propositions that Heath uses implicitly. The AI cites 3.36 instead of Heath's 3.37, but the AI explicitly writes 'by the converse of the tangent-secant theorem,' demonstrating correct logical reasoning with merely a wrong proposition number label. Under the lenience rule this is not an error but a citation-depth difference. All key intermediate conclusions appear in both proofs at the same logical positions, making this Case A of Q2.",
+  "jaccard": 0.545,
+  "ai_citations": "1.32|1.5|1.6|2.11|3.32|3.36|4.1|4.5|P1|P3",
+  "heath_citations": "1.32|1.5|1.6|2.11|3.32|3.37|4.5",
+  "ai_only": "3.36|4.1|P1|P3",
+  "heath_only": "3.37",
+  "audit_record": "CANDIDATE E — 4.10\n  violated_claim : BD touches circle ACD at D\n  failure_mode   : invalid_inference\n  missing_is     : expansion\n  evidence       : AI Step 7 cites [3.36] but says 'by the converse of the tangent-secant theorem' - 3.36 is the direct theorem, 3.37 is the converse. The AI uses the correct logical direction but cites the wrong number.\n  why_not_terse  : The cited proposition 3.36 is the forward direction, not the converse needed here. However, the AI text explicitly invokes the converse, making this a citation numbering error not a logical gap.\nVERDICT: NOT-E. missing_is = expansion. The AI demonstrates correct reasoning (invoking the converse) but mislabels the proposition. Lenience rule applies: compressed-but-sound. Reclassified to G."
+}

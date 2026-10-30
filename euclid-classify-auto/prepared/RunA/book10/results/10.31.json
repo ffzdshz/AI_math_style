@@ -1,0 +1,13 @@
+{
+  "proposition": "10.31",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G. Both proofs share the same logical backbone: set out rational lines A, B via 10.29, construct C as mean proportional so sq(C) = rect(A,B) making C medial (10.21), construct D so A:B = C:D, establish C and D are commensurable in square only (10.11), show D is medial, show rect(C,D) is rational (equals sq(B)), and conclude sq(C) > sq(D) by a commensurable square (10.14). The key difference is citation depth: Heath invokes 10.23 (addition) directly to conclude D is medial from C being medial and C,D commensurable in square, while the AI re-derives the content of 10.23 from first principles in Steps 5-9, citing the subsidiary propositions 6.22, 10.12, 10.11, 10.22, 10.13, and 10.21 that appear inside Heath's proof of 10.23. The proof-tree containment test confirms that the heath_only item 10.23 is subsumed by the AI's inline re-derivation. The other heath_only item 10.30 appears only in Heath's closing remark about the analogous incommensurable case, which is not part of the core proof. The ai_only items are either construction references (6.12, 6.13), definition references (D10.1.4), or parts of the 10.23 re-derivation, all consistent with greater citation depth rather than a different path.",
+  "jaccard": 0.25,
+  "ai_citations": "10.11|10.12|10.13|10.14|10.21|10.22|10.29|5.16|6.1|6.12|6.13|6.17|6.22|D10.1.4",
+  "heath_citations": "10.11|10.14|10.21|10.23|10.29|10.30",
+  "ai_only": "10.12|10.13|10.22|5.16|6.1|6.12|6.13|6.17|6.22|D10.1.4",
+  "heath_only": "10.23|10.30",
+  "audit_record": ""
+}

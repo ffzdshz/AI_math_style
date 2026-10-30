@@ -1,0 +1,30 @@
+{
+  "proposition": "7.2",
+  "book": 7,
+  "statement": "Given two numbers not prime to one another, to find their greatest common measure.",
+  "heath_proof": "Let AB, CD be the two given numbers not prime to one another. Thus it is required to find the greatest common measure of AB, CD. If now CD measures AB —and it also measures itself— CD is a common measure of CD, AB. And it is manifest that it is also the greatest; for no greater number than CD will measure CD. But, if CD does not measure AB, then, the less of the numbers AB, CD being continually subtracted from the greater, some number will be left which will measure the one before it. For an unit will not be left; otherwise AB, CD will be prime to one another [VII. 1], which is contrary to the hypothesis. Therefore some number will be left which will measure the one before it. Now let CD, measuring BE, leave EA less than itself, let EA, measuring DF, leave FC less than itself, and let CF measure AE. Since then, CF measures AE, and AE measures DF, therefore CF will also measure DF. But it also measures itself; therefore it will also measure the whole CD. But CD measures BE; therefore CF also measures BE. But it also measures EA; therefore it will also measure the whole BA. But it also measures CD; therefore CF measures AB, CD. Therefore CF is a common measure of AB, CD. I say next that it is also the greatest. For, if CF is not the greatest common measure of AB, CD, some number which is greater than CF will measure the numbers AB, CD. Let such a number measure them, and let it be G. Now, since G measures CD, while CD measures BE, G also measures BE. But it also measures the whole BA; therefore it will also measure the remainder AE. But AE measures DF; therefore G will also measure DF. But it also measures the whole DC; therefore it will also measure the remainder CF, that is, the greater will measure the less: which is impossible. Therefore no number which is greater than CF will measure the numbers AB, CD; therefore CF is the greatest common measure of AB, CD.",
+  "ai_proof_text": "7.2\n**Statement:** Given two numbers not prime to one another, to find their greatest common measure.\n\n**Step 1.** Let A and B be the given numbers, not prime to one another, and arrange them so that A is not less than B. If A = B, take B. If A > B and B measures A, again take B. In either case B measures both numbers, and no number greater than B can measure B: a measure occurs as one or more whole copies within what it measures. Thus B is the greatest common measure in these cases. [D7.2, D7.3, CN5]\n\n**Step 2.** Suppose, then, that A > B and B does not measure A. Path choice: use successive subtraction, the procedure addressed directly by the immediately preceding proposition, 7.1. Starting with the pair (A, B), proceed as follows. For a current pair (x, y), with x > y, stop if y measures x. Otherwise subtract y repeatedly from x until a positive remainder z less than y is left. Record that x consists of the removed copies of y together with z, and continue with the pair (y, z). Each such subtraction is possible by removing the corresponding units; since y does not measure x, the final remainder is not empty. [7.1, D7.2, D7.3, CN3, CN5]\n\n**Step 3.** This procedure must terminate. Whenever it continues, the lesser member strictly decreases, losing at least one unit; there cannot be more such decreases than there are units in B. Nor can the procedure first terminate with an unit: if no preceding remainder measures its predecessor until an unit is left, 7.1 says that A and B are prime to one another, contrary to the hypothesis. Hence it terminates with a number d, not an unit, which measures the preceding number C. [D7.2, CN5, 7.1, D7.12]\n\n**Step 4.** The number d measures both original numbers. At the terminal pair it measures C and itself. Now retrace the recorded stages. At any stage, the earlier greater number x consists of some whole copies of y together with the remainder z. If d measures y and z, replace each of those copies of y, and z itself, by their constituent copies of d. Adding these copies shows that d measures x also. Applying this reasoning successively backwards from (C, d) proves that d measures A and B. [D7.2, D7.3, CN2]\n\n**Step 5.** Let e be any number measuring both A and B. Follow the same subtraction procedure forwards. Whenever e measures x and y, both consist of whole copies of e. Subtracting y from x removes exactly the copies of e constituting y, so the remainder also consists of whole copies of e. Consequently e continues to measure every remainder throughout the procedure. In particular, e measures the terminal number d. [D7.2, D7.3, CN3]\n\n**Step 6.** Since e measures d, it cannot be greater than d: one copy equals d, or several copies compose d and each is less than the whole. Thus every common numerical measure of A and B is at most d. By Step 4, d is itself a common measure, so d is their greatest common measure. The prescribed finite procedure therefore finds the required greatest common measure. [D7.3, CN5]\n\n**USED:** 7.1, CN2, CN3, CN5, D7.12, D7.2, D7.3\n**Human refs (from References field):** 7.1\n**Jaccard:** 0.143 — AI adds ['CN2', 'CN3', 'CN5', 'D7.12', 'D7.2', 'D7.3']",
+  "ai_used": [
+    "7.1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.1"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A and B be the given numbers, not prime to one another, and arrange them so that A is not less than B. If A = B, take B. If A > B and B measures A, again take B. In either case B measu"
+}

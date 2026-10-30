@@ -1,0 +1,44 @@
+{
+  "proposition": "6.7",
+  "book": 6,
+  "statement": "If two triangles have one angle equal to one angle, the sides about other angles proportional, and the remaining angles either both less or both not less than a right angle, the triangles will be equiangular and will have those angles equal, the sides about which are proportional.",
+  "heath_proof": "Let ABC, DEF be two triangles having one angle equal to one angle, the angle BAC to the angle EDF, the sides about other angles ABC, DEF proportional, so that, as AB is to BC, so is DE to EF, and, first, each of the remaining angles at C, F less than a right angle; I say that the triangle ABC is equiangular with the triangle DEF, the angle ABC will be equal to the angle DEF, and the remaining angle, namely the angle at C, equal to the remaining angle, the angle at F. For, if the angle ABC is unequal to the angle DEF, one of them is greater. Let the angle ABC be greater; and on the straight line AB, and at the point B on it, let the angle ABG be constructed equal to the angle DEF. [I. 23] Then, since the angle A is equal to D, and the angle ABG to the angle DEF, therefore the remaining angle AGB is equal to the remaining angle DFE. [I. 32] Therefore the triangle ABG is equiangular with the triangle DEF. Therefore, as AB is to BG, so is DE to EF [VI. 4] But, as DE is to EF, so by hypothesis is AB to BC; therefore AB has the same ratio to each of the straight lines BC, BG; [V. 11] therefore BC is equal to BG, [V. 9]so that the angle at C is also equal to the angle BGC. [I. 5] But, by hypothesis, the angle at C is less than a right angle; therefore the angle BGC is also less than a right angle; so that the angle AGB adjacent to it is greater than a right angle. [I. 13] And it was proved equal to the angle at F; therefore the angle at F is also greater than a right angle. But it is by hypothesis less than a right angle: which is absurd. Therefore the angle ABC is not unequal to the angle DEF; therefore it is equal to it. But the angle at A is also equal to the angle at D; therefore the remaining angle at C is equal to the remaining angle at F. [I. 32] Therefore the triangle ABC is equiangular with the triangle DEF. But, again, let each of the angles at C, F be supposed not less than a right angle; I say again that, in this case too, the triangle ABC is equiangular with the triangle DEF. For, with the same construction, we can prove similarly that BC is equal to BG; so that the angle at C is also equal to the angle BGC. [I. 5] But the angle at C is not less than a right angle; therefore neither is the angle BGC less than a right angle. Thus in the triangle BGC the two angles are not less than two right angles: which is impossible. [I. 17] Therefore, once more, the angle ABC is not unequal to the angle DEF; therefore it is equal to it. But the angle at A is also equal to the angle at D; therefore the remaining angle at C is equal to the remaining angle at F. [I. 32] Therefore the triangle ABC is equiangular with the triangle DEF.",
+  "ai_proof_text": "6.7\n**Statement:** If two triangles have one angle equal to one angle, the sides about other angles proportional, and the remaining angles either both less or both not less than a right angle, the triangles will be equiangular and will have those angles equal, the sides about which are proportional.\n\n**Step 1.** Let ABC and DEF be the given triangles, with ∠BAC = ∠EDF and AB:BC = DE:EF. Suppose that the remaining angles ∠ACB and ∠DFE are either both less than a right angle or both not less than a right angle. These are the hypotheses. Write R for a right angle; all right angles are equal. [P4]\n\n**Step 2.** If ∠ABC = ∠DEF, the remaining angles are also equal, by subtracting the two pairs of equal angles from the angle sums of the triangles, and the conclusion follows. [1.32, CN3] Suppose, therefore, that ∠ABC and ∠DEF are unequal. Interchanging the triangles if necessary, assume ∠ABC > ∠DEF.\n\n**Step 3.** At B construct a ray BG inside ∠ABC such that ∠ABG = ∠DEF. [1.23] Since ∠ABG < ∠ABC, we have ∠BAC + ∠ABG < ∠BAC + ∠ABC < 2R. [CN5, 1.17] Consequently this ray meets AC on the side of AB containing C. [P5] Because the ray lies strictly inside ∠ABC, its intersection G lies strictly between A and C.\n\n**Step 4.** Since AG lies along AC, ∠BAG = ∠BAC = ∠EDF. [CN4, hypothesis] Together with ∠ABG = ∠DEF, this gives ∠AGB = ∠DFE by the angle sums of triangles ABG and DEF. [1.32, CN3] Thus those triangles are equiangular.\n\n**Step 5.** Path choice: apply 6.4, since the auxiliary triangles have already been shown equiangular. It gives AB:BG = DE:EF. [6.4] Combining this with the given proportion AB:BC = DE:EF yields AB:BG = AB:BC. [5.11] Therefore BG = BC, since magnitudes to which the same magnitude has the same ratio are equal. [5.9]\n\n**Step 6.** Triangle BGC is consequently isosceles, so ∠BGC = ∠GCB. [1.5] Since G lies between A and C, ∠GCB = ∠ACB. [CN4] The two equal base angles of BGC have sum less than 2R. [1.17] Hence each is less than R: otherwise both would be at least R and their sum would be at least 2R. [P4, CN2, CN5] In particular, ∠ACB < R.\n\n**Step 7.** Since A, G, C lie on one straight line, ∠AGB + ∠BGC = 2R. [1.13] As ∠BGC < R, its supplementary angle ∠AGB is greater than R. [P4, CN3, CN5] But ∠AGB = ∠DFE by Step 4, whereas ∠ACB < R by Step 6. Thus one of the original remaining angles is less than a right angle and the other is greater than a right angle, contradicting either permitted alternative in the hypothesis.\n\n**Step 8.** Therefore ∠ABC = ∠DEF. Together with the given equality ∠BAC = ∠EDF, the angle sums now give ∠ACB = ∠DFE. [1.32, CN3] Hence ABC and DEF are equiangular, and in particular the angles ABC and DEF, about which the given proportional sides lie, are equal. This proves the proposition.\n\n**USED:** 1.13, 1.17, 1.23, 1.32, 1.5, 5.11, 5.9, 6.4, CN2, CN3, CN4, CN5, P4, P5\n**Human refs (from References field):** 1.13, 1.17, 1.23, 1.32, 1.5, 5.11, 5.9, 6.4\n**Jaccard:** 0.571 — AI adds ['CN2', 'CN3', 'CN4', 'CN5', 'P4', 'P5']",
+  "ai_used": [
+    "1.13",
+    "1.17",
+    "1.23",
+    "1.32",
+    "1.5",
+    "5.11",
+    "5.9",
+    "6.4",
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "P4",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.13",
+    "1.17",
+    "1.23",
+    "1.32",
+    "1.5",
+    "5.11",
+    "5.9",
+    "6.4"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "P4",
+    "P5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let ABC and DEF be the given triangles, with ∠BAC = ∠EDF and AB:BC = DE:EF. Suppose that the remaining angles ∠ACB and ∠DFE are either both less than a right angle or both not less than a "
+}

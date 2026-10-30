@@ -1,0 +1,41 @@
+{
+  "proposition": "10.42",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on segment AB dividing it into AC and CB, with AC > CB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is a different point on segment AB dividing it into AD and DB, with AD > DB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AB = AC + CB = AD + DB, so II.4 applies to both decompositions giving sq(AB) = sq(AC) + sq(CB) + 2*rect(AC,CB) and similarly for AD, DB",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "E is the midpoint of AB (bisection), so AE = EB; II.5 applied with AB bisected at E and cut at C (and similarly at D)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "C is not at E (since AC > CB, C is between E and B); similarly D is between E and B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 13",
+      "claim": "EC = ED together with both C and D on the same side of E implies C = D",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "All points lie on line segment AB. A and B are the endpoints. E is the midpoint (AE = EB). C divides AB with AC > CB, placing C between E and B. D divides AB with AD > DB, placing D between E and B. Both C and D are on the B-side of the midpoint E. The proof is primarily algebraic, manipulating rational and medial areas arising from these segment divisions. The one-dimensional configuration (points on a line) involves no angles, triangles, circles, or complex spatial relationships.",
+  "pass_reason": "The proof operates on a simple one-dimensional configuration (points on a line segment) with no complex spatial claims. All geometric claims (segment division, bisection, point ordering) are mutually consistent. The ordering constraints AC > CB and AD > DB correctly place both C and D on the same side of midpoint E, making the final deduction EC = ED implies C = D valid. The bulk of the proof is algebraic manipulation of rational and medial areas, where no spatial configuration errors can arise."
+}

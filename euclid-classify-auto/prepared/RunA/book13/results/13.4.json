@@ -1,0 +1,13 @@
+{
+  "proposition": "13.4",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: (1) from the extreme and mean ratio definition, establish rect(AB,BC) = sq(AC) via D6.3 and 6.17, then (2) show sq(AB) + sq(BC) = 2*rect(AB,BC) + sq(AC), and (3) substitute to get 3*sq(AC). The key difference is citation depth: Heath re-derives the content of 2.7 inline using gnomon reasoning on the constructed square ADEB (the same geometric argument that constitutes Heath's own proof of 2.7), while the AI cites 2.7 directly as a unit. The proof-tree containment test confirms this: Heath's gnomon argument in 13.4 (AF=FE, AK=CE, gnomon LMN) mirrors the structure of Heath's proof of 2.7 (AG=GE, AF=CE, gnomon KLM). The AI also explicitly cites CN1 and CN2 for substitution and arithmetic steps that Heath performs implicitly. Since heath_only is empty and ai_only contains 2.7 (whose content Heath re-derives inline) plus two common notions, this is a clear granularity difference rather than a path divergence.",
+  "jaccard": 0.4,
+  "ai_citations": "2.7|6.17|CN1|CN2|D6.3",
+  "heath_citations": "6.17|D6.3",
+  "ai_only": "2.7|CN1|CN2",
+  "heath_only": "",
+  "audit_record": ""
+}

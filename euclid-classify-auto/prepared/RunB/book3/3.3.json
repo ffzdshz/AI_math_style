@@ -1,0 +1,37 @@
+{
+  "proposition": "3.3",
+  "book": 3,
+  "statement": "If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.",
+  "heath_proof": "Let ABC be a circle, and in it let a straight line CD  through the centre bisect a straight line AB not through the centre at the point F; I say that it also cuts it at right angles. For let the centre of the circle ABC  be taken, and let it be E; let EA, EB be joined. Then, since AF is equal to FB, and FE is common, two sides are equal to two sides; and the base EA is equal to the base EB; therefore the angle AFE is equal to the angle BFE. [I. 8]  But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right; [I. Def. 10]therefore each of the angles AFE, BFE is right. Therefore CD, which is through the centre, and bisects AB which is not through the centre, also cuts it at right angles. Again, let CD cut AB at right angles;I say that it also bisects it. that is, that AF is equal to FB. For, with the same construction, since EA is equal to EB, the angle EAF is also equal to the angle EBF. [I. 5] But the right angle AFE is equal to the right angle BFE,therefore EAF, EBF are two triangles having two angles equal to two angles and one side equal to one side, namely EF, which is common to them, and subtends one of the equal angles; therefore they will also have the remaining sides equal to the remaining sides; [I. 26]therefore AF is equal to FB.",
+  "ai_proof_text": "3.3\n**Statement:** If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.\n\n**Step 1.** Let ABC be a circle with centre F (found by 3.1), and let CD be a straight line through F that bisects a chord AB (not through the centre) at E, so that AE equals EB. We must show CD cuts AB at right angles. Conversely, suppose CD cuts AB at right angles at E; we must show AE equals EB.\n\n**Part I: If CD bisects AB, then CD cuts AB at right angles.**\n\n**Step 2.** Join FA and FB (P1). Since F is the centre of circle ABC and A, B lie on the circumference, FA equals FB (D1.15).\n\n**Step 3.** In triangles FEA and FEB, we have: AE equals EB (given, CD bisects AB), FA equals FB (Step 2, radii), and FE is common. Therefore triangle FEA is congruent to triangle FEB, and angle FEA equals angle FEB (1.8, SSS congruence).\n\n**Step 4.** Since FE stands on line AB making adjacent angles FEA and FEB equal to one another, each of the angles FEA and FEB is a right angle (D1.10). Therefore CD cuts AB at right angles.\n\n**Part II: If CD cuts AB at right angles, then CD bisects AB.**\n\n**Step 5.** Again let F be the centre, and suppose CD passes through F and meets AB at E at right angles, so that angle FEA and angle FEB are each right angles. Join FA and FB (P1).\n\n**Step 6.** Since F is the centre and A, B are on the circle, FA equals FB (D1.15). Therefore the square on FA equals the square on FB.\n\n**Step 7.** Since angle FEA is a right angle, the square on FA (the side subtending the right angle) equals the sum of the squares on FE and EA (1.47). Likewise, since angle FEB is a right angle, the square on FB equals the sum of the squares on FE and EB (1.47).\n\n**Step 8.** Since the square on FA equals the square on FB (Step 6), the sum of the squares on FE and EA equals the sum of the squares on FE and EB (CN1). Subtracting the square on FE from each, the square on EA equals the square on EB (CN3).\n\n**Step 9.** Since the square on EA equals the square on EB, and EA and EB are straight lines, EA equals EB. For if EA were greater than EB, the square on EA would be greater than the square on EB (which contradicts their equality), and similarly if EB were greater than EA. Therefore AE equals EB, and CD bisects AB.\n\n**Step 10.** Therefore, if in a circle a straight line through the centre bisects a straight line not through the centre, it also cuts it at right angles; and if it cuts it at right angles, it also bisects it. Q.E.D.\n\n**USED:** 1.47, 1.8, 3.1, CN1, CN3, D1.10, D1.15, P1\n**Human refs (from References field):** 1.26, 1.5, 1.8, D1.10\n**Jaccard:** 0.200 — AI adds ['1.47', '3.1', 'CN1', 'CN3', 'D1.15', 'P1']; Human adds ['1.26', '1.5']",
+  "ai_used": [
+    "1.47",
+    "1.8",
+    "3.1",
+    "CN1",
+    "CN3",
+    "D1.10",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.26",
+    "1.5",
+    "1.8",
+    "D1.10"
+  ],
+  "ai_only": [
+    "1.47",
+    "3.1",
+    "CN1",
+    "CN3",
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [
+    "1.26",
+    "1.5"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let ABC be a circle with centre F (found by 3.1), and let CD be a straight line through F that bisects a chord AB (not through the centre) at E, so that AE equals EB. We must show CD cuts "
+}

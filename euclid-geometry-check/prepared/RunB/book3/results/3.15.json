@@ -1,0 +1,46 @@
+{
+  "proposition": "3.15",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a circle with centre E; BC is a diameter; AD is a chord not passing through E; FG is a chord more remote from centre than AD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EA and ED are radii from centre E to endpoints of chord AD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E, A, D form a valid triangle (E not on line AD since AD is not a diameter)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "B, E, C are collinear with E between B and C, so BC = EB + EC",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "EH is perpendicular from E to chord AD; EK is perpendicular from E to chord FG; EH < EK",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H is midpoint of AD (H on segment AD); K is midpoint of FG (K on segment FG)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Right triangle EHA with right angle at H; right triangle EKG with right angle at K",
+      "type": "angle_decomposition"
+    }
+  ],
+  "configuration_map": "Circle with centre E. Diameter BC passes through E with B-E-C collinear (E between B and C). Chord AD does not pass through E, placing E off line AD so triangle EAD is valid. Chord FG does not pass through E either. H is the foot of perpendicular from E to AD, lying on segment AD between A and D, creating right triangle EHA. K is the foot of perpendicular from E to FG, lying on segment FG between F and G, creating right triangle EKG. Since AD is nearer to centre than FG, EH < EK. All points A, D, F, G lie on the circle, so EA = ED = EF = EG (all radii).",
+  "pass_reason": "All spatial claims are mutually consistent. The triangle EAD is valid because AD is not a diameter. The right triangles EHA and EKG are valid with correctly placed feet of perpendiculars. The collinearity B-E-C and betweenness follow from the definition of diameter. The Pythagorean theorem is correctly applied to valid right triangles, and the algebraic chain preserves the geometric relationships without contradiction."
+}

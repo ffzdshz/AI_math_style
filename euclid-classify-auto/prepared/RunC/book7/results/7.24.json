@@ -1,0 +1,13 @@
+{
+  "proposition": "7.24",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs follow the same logical backbone: assume for contradiction that a common factor measures both the product A*B and C, apply 7.23 to establish that this factor is prime to A, set up a proportion via 7.19, use 7.21 and 7.20 to derive that the factor must measure B, then reach a contradiction. The AI applies 7.23 an extra time (to B as well as A), which produces a slightly more direct contradiction (the factor measures B yet is prime to B) compared to Heath's contradiction (the factor measures both B and C which are prime to each other), but this is a surface-level variation in the same argument. The citation differences reflect granularity: ai_only contains D7.1 (an over-citation of the definition of unit in the contradiction setup), and heath_only contains 7.16 (the commutativity/measurement step that the AI bypasses by directly invoking the definition of divisibility). Since the key intermediate conclusions and the logical chain are the same, this is a granularity difference.",
+  "jaccard": 0.75,
+  "ai_citations": "7.19|7.20|7.21|7.23|D7.1|D7.12|D7.15",
+  "heath_citations": "7.16|7.19|7.20|7.21|7.23|D7.12|D7.15",
+  "ai_only": "D7.1",
+  "heath_only": "7.16",
+  "audit_record": ""
+}

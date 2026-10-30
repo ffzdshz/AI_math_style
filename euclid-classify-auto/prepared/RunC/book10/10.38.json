@@ -1,0 +1,47 @@
+{
+  "proposition": "10.38",
+  "book": 10,
+  "statement": "If two medial straight lines commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a second bimedial straight line.",
+  "heath_proof": "For let two medial straight lines AB, BC commensurable in square only and containing a medial rectangle be added together; I say that AC is irrational. For let a rational straight line DE be set out, and let the parallelogram DF equal to the square on AC be applied to DE, producing DG as breadth. [I. 44] Then, since the square on AC is equal to the squares on AB, BC and twice the rectangle AB, BC, [II. 4] let EH, equal to the squares on AB, BC, be applied to DE; therefore the remainder HF is equal to twice the rectangle AB, BC. And, since each of the straight lines AB, BC is medial, therefore the squares on AB, BC are also medial. But, by hypothesis, twice the rectangle AB, BC is also medial. And EH is equal to the squares on AB, BC,while FH is equal to twice the rectangle AB, BC; therefore each of the rectangle EH, HF is medial. And they are applied to the rational straight line DE; therefore each of the straight lines DH, HG is rational and incommensurable in length with DE. [X. 22] Since then AB is incommensurable in length with BC, and, as AB is to BC, so is the square on AB to the rectangle AB, BC, therefore the square on AB is incommensurable with the rectangle AB, BC. [X. 11] But the sum of the squares on AB, BC is commensurable with the square on AB, [X. 15] and twice the rectangle AB, BC is commensurable with the rectangle AB, BC. [X. 6] Therefore the sum of the squares on AB, BC is incommensurablewith twice the rectangle AB, BC. [X. 13] But EH is equal to the squares on AB, BC, and HF is equal to twice the rectangle AB, BC. Therefore EH is incommensurable with HF, so that DH is also incommensurable in length with HG. [VI. 1, X. 11] Therefore DH, HG are rational straight lines commensurable in square only; so that DG is irrational. [X. 36] But DE is rational; and the rectangle contained by an irrational and a rationalstraight line is irrational; [cf. X. 20] therefore the area DF is irrational, and the side of the square equal to it is irrational. [X. Def. 4] But AC is the side of the square equal to DF; therefore AC is irrational. And let it be called a second bimedial straight line.",
+  "ai_proof_text": "10.38\n**Statement:** If two medial straight lines commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a second bimedial straight line.\n\n**Step 1.** Let AB and BC be two medial straight lines commensurable in square only such that the rectangle AB by BC is medial. Let AC be their sum. We aim to show that AC is irrational.\n\n**Step 2.** Since AB is medial, the square on AB is a medial area. Since BC is medial, the square on BC is a medial area. Since AB and BC are commensurable in square, the square on AB is commensurable with the square on BC. By 10.15, the sum of the squares on AB and BC is commensurable with the square on AB, and hence is itself a medial area.\n\n**Step 3.** Since the rectangle AB by BC is medial (by hypothesis), and 2 times the rectangle AB by BC has to the rectangle AB by BC the ratio 2:1, which is a ratio of number to number, by 10.6 the area 2*AB*BC is commensurable with AB*BC. Since AB*BC is medial, by 10.23 (applied to areas: a magnitude commensurable with a medial magnitude is medial), the area 2*AB*BC is also medial.\n\n**Step 4.** Now, by 2.4, the square on AC equals the sum of the squares on AB and BC together with twice the rectangle AB by BC. That is, AC^2 = (AB^2 + BC^2) + 2*AB*BC.\n\n**Step 5.** We show that AB^2 + BC^2 is incommensurable with 2*AB*BC. Since AB and BC are commensurable in square only, AB is incommensurable in length with BC. The ratio of the square on AB to the rectangle AB by BC equals the ratio AB to BC (for AB^2 : AB*BC :: AB : BC, since each bears to AB*BC the same ratio by the properties of rectangles and lines). Since AB is incommensurable in length with BC, by 10.11 the square on AB is incommensurable with the rectangle AB by BC.\n\n**Step 6.** By 10.15, since the square on AB is commensurable with the square on BC, the sum AB^2 + BC^2 is commensurable with AB^2. By 10.13, since AB^2 is incommensurable with AB*BC and AB^2 is commensurable with (AB^2 + BC^2), it follows that AB^2 + BC^2 is incommensurable with AB*BC.\n\n**Step 7.** Since AB*BC is commensurable with 2*AB*BC (as shown in Step 3), by 10.13 again, AB^2 + BC^2 is incommensurable with 2*AB*BC.\n\n**Step 8.** Let D be a rational straight line. Apply the area AB^2 + BC^2 to D, producing breadth EF, so that D*EF = AB^2 + BC^2. Apply the area 2*AB*BC to D, producing breadth FG, so that D*FG = 2*AB*BC. Then D*EG = AC^2, where EG = EF + FG.\n\n**Step 9.** Since AB^2 + BC^2 is a medial area applied to the rational straight line D, by 10.22 the breadth EF is rational and incommensurable in length with D. Since 2*AB*BC is a medial area applied to the rational straight line D, by 10.22 the breadth FG is rational and incommensurable in length with D.\n\n**Step 10.** Since AB^2 + BC^2 is incommensurable with 2*AB*BC (Step 7), and D*EF = AB^2 + BC^2 while D*FG = 2*AB*BC, by 10.11 EF is incommensurable in length with FG.\n\n**Step 11.** Now EF and FG are both rational straight lines. Since both are commensurable in square with the rational line D (being rational), by 10.12 they are commensurable in square with each other. Since they are incommensurable in length (Step 10), they are commensurable in square only. By 10.36, the sum EF + FG = EG is irrational; it is a binomial straight line.\n\n**Step 12.** Since D is rational and EG is irrational, the rectangle D*EG is irrational (for if D*EG were a rational area, then by 10.20 EG would be rational and commensurable in length with D, contradicting the irrationality of EG). Therefore AC^2, which equals D*EG, is an irrational area, and consequently AC is irrational.\n\n**Step 13.** Therefore, when two medial straight lines commensurable in square only and containing a medial rectangle are added together, the whole is irrational. Let such a line be called a second bimedial straight line. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.20, 10.22, 10.23, 10.36, 10.6, 2.4, D10.1.1, D10.1.3, D10.1.4\n**Human refs (from References field):** 1.44, 10.11, 10.13, 10.15, 10.20, 10.22, 10.36, 10.6, 2.4, 6.1, D10.1.4\n**Jaccard:** 0.600 — AI adds ['10.12', '10.23', 'D10.1.1', 'D10.1.3']; Human adds ['1.44', '6.1']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.6",
+    "2.4",
+    "D10.1.1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "1.44",
+    "10.11",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.36",
+    "10.6",
+    "2.4",
+    "6.1",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.23",
+    "D10.1.1",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "1.44",
+    "6.1"
+  ],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let AB and BC be two medial straight lines commensurable in square only such that the rectangle AB by BC is medial. Let AC be their sum. We aim to show that AC is irrational.  **Step 2.** "
+}

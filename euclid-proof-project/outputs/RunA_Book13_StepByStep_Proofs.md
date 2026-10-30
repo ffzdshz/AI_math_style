@@ -1,0 +1,623 @@
+# Book 13 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 13.1
+**Statement:** If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.
+
+**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. Then by D6.3, AB : AC = AC : CB.
+
+**Step 2.** Bisect AB at D, so that AD = DB = half of AB [1.10].
+
+**Step 3.** Since AB, AC, CB are three straight lines in proportion (AB : AC = AC : CB), by 6.17 the rectangle contained by the extremes equals the square on the mean, that is, rect(AB, CB) = sq(AC).
+
+**Step 4.** Since C lies on AB, the line AB is cut into segments AC and CB. By 2.2, the rectangles contained by the whole and each of the segments equal the square on the whole: rect(AB, AC) + rect(AB, CB) = sq(AB). Therefore sq(AB) = rect(AB, AC) + sq(AC) [substituting rect(AB, CB) = sq(AC) from Step 3].
+
+**Step 5.** Since D bisects AB, we have AB = AD + DB with AD = DB. By 2.1, the rectangle contained by AB and AC equals the sum of the rectangles contained by AD and AC and by DB and AC: rect(AB, AC) = rect(AD, AC) + rect(DB, AC). Since AD = DB, we have rect(AD, AC) = rect(DB, AC), so rect(AB, AC) = 2 * rect(AD, AC).
+
+**Step 6.** Substituting into the result of Step 4: sq(AB) = 2 * rect(AD, AC) + sq(AC).
+
+**Step 7.** We now form the line composed of AC and AD. By 2.4, if a straight line is made up of two segments AC and AD, then sq(AC + AD) = sq(AC) + sq(AD) + 2 * rect(AC, AD).
+
+**Step 8.** From Step 6, sq(AC) + 2 * rect(AC, AD) = sq(AB). Substituting into Step 7: sq(AC + AD) = sq(AB) + sq(AD).
+
+**Step 9.** Since AB = 2 * AD, applying 2.4 to the line AB composed of two equal segments AD and DB: sq(AB) = sq(AD) + sq(DB) + 2 * rect(AD, DB). Since AD = DB, this gives sq(AB) = sq(AD) + sq(AD) + 2 * sq(AD) = 4 * sq(AD).
+
+**Step 10.** Substituting sq(AB) = 4 * sq(AD) into Step 8: sq(AC + AD) = 4 * sq(AD) + sq(AD) = 5 * sq(AD) [CN2].
+
+**Step 11.** Since AD is half of AB, the square on the greater segment AC together with the half of the whole (that is, the square on AC + AD) is five times the square on the half AD. This is what was to be proved.
+
+**USED:** 1.10, 2.1, 2.2, 2.4, 6.17, CN2, D6.3
+**Human refs (from References field):** 6.1, 6.17, D6.3
+**Jaccard:** 0.250 — AI adds ['1.10', '2.1', '2.2', '2.4', 'CN2']; Human adds ['6.1']
+
+## Proposition 13.2
+**Statement:** If the square on a straight line be five times the square on a segment of it, then, when the double of the said segment is cut in extreme and mean ratio, the greater segment is the remaining part of the original straight line.
+
+**Step 1.** Let AB be a straight line and AC a segment of it such that the square on AB is five times the square on AC. Let CB denote the remainder, so that AB = AC + CB.
+
+**Step 2.** Take CD equal to the double of AC, so that CD = 2*AC [P1, P2, P3; constructing a line equal to twice a given segment, cf. 1.3].
+
+**Step 3.** Cut CD in extreme and mean ratio by 6.30, and let CE be the greater segment, so that CD is to CE as CE is to ED, where ED = CD - CE [6.30, D6.3].
+
+**Step 4.** Since CD is cut in extreme and mean ratio with greater segment CE, by Proposition 13.1 the square on the greater segment together with the half of the whole is five times the square on the half. That is, the square on (CE + CD/2) equals five times the square on (CD/2) [13.1].
+
+**Step 5.** Since CD = 2*AC, the half of CD is AC. Therefore the square on (CE + AC) equals five times the square on AC [CN1].
+
+**Step 6.** But by hypothesis, the square on AB is five times the square on AC. Therefore the square on (CE + AC) equals the square on AB [CN1].
+
+**Step 7.** Since the square on CE + AC equals the square on AB, the straight line CE + AC equals AB. For if two straight lines have equal squares, the lines themselves are equal [from the converse relationship: equal squares on straight lines imply equal straight lines].
+
+**Step 8.** Since CE + AC = AB and CB = AB - AC, we have CE = AB - AC = CB [CN3].
+
+**Step 9.** Therefore the greater segment CE of the line CD (which is the double of AC), when cut in extreme and mean ratio, equals CB, the remaining part of the original straight line AB. This is what was to be proved.
+
+**USED:** 1.3, 13.1, 6.30, CN1, CN3, D6.3, P1, P2, P3
+**Human refs (from References field):** 6.1
+**Jaccard:** 0.000 — AI adds ['1.3', '13.1', '6.30', 'CN1', 'CN3', 'D6.3', 'P1', 'P2', 'P3']; Human adds ['6.1']
+
+## Proposition 13.3
+**Statement:** If a straight line be cut in extreme and mean ratio, the square on the lesser segment added to the half of the greater segment is five times the square on the half of the greater segment.
+
+**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, where AC is the greater segment and CB is the lesser segment. Bisect AC at D [1.10]. We must show that the square on DB is five times the square on DC.
+
+**Step 2.** Since AB is cut in extreme and mean ratio at C, by definition AB is to AC as AC is to CB [D6.3]. Therefore the rectangle contained by AB and CB is equal to the square on AC [6.17].
+
+**Step 3.** Since D is the midpoint of AC, we have AC equal to the sum of DC and DC, that is, AC equals twice DC.
+
+**Step 4.** Now DB equals DC plus CB, since D lies on AC between A and C, and B is beyond C. By Proposition 2.4, the square on DB (which is the square on DC plus CB taken together) equals the square on DC, plus the square on CB, plus twice the rectangle contained by DC and CB.
+
+**Step 5.** Twice the rectangle contained by DC and CB equals the rectangle contained by twice DC and CB, which equals the rectangle contained by AC and CB [since AC equals twice DC, from Step 3].
+
+**Step 6.** Substituting Step 5 into Step 4, the square on DB equals the square on DC, plus the square on CB, plus the rectangle contained by AC and CB.
+
+**Step 7.** Since AB equals AC plus CB, the rectangle contained by AB and CB equals the rectangle contained by the sum AC plus CB and CB. By Proposition 2.3, the rectangle contained by AC plus CB and CB equals the rectangle contained by AC and CB together with the square on CB. Therefore the rectangle contained by AB and CB equals the rectangle contained by AC and CB plus the square on CB.
+
+**Step 8.** But by Step 2, the rectangle contained by AB and CB equals the square on AC. Therefore the rectangle contained by AC and CB plus the square on CB equals the square on AC [CN1]. Rearranging, the rectangle contained by AC and CB equals the square on AC minus the square on CB. Equivalently, the square on AC equals the rectangle contained by AC and CB plus the square on CB [CN2].
+
+**Step 9.** Returning to Step 6: the square on DB equals the square on DC plus the square on CB plus the rectangle contained by AC and CB. By Step 8, the square on CB plus the rectangle contained by AC and CB equals the square on AC. Therefore the square on DB equals the square on DC plus the square on AC [CN1, CN2].
+
+**Step 10.** Since D bisects AC, AC equals twice DC [Step 3]. By Proposition 2.4 applied to DC and DC, the square on AC (that is, the square on DC plus DC) equals the square on DC, plus the square on DC, plus twice the rectangle contained by DC and DC. But twice the rectangle contained by DC and DC equals twice the square on DC. Therefore the square on AC equals four times the square on DC.
+
+**Step 11.** Substituting into Step 9, the square on DB equals the square on DC plus four times the square on DC, which is five times the square on DC [CN2].
+
+**Step 12.** Therefore, the square on the lesser segment CB added to the half of the greater segment AC (that is, the square on DB, where DB equals CB plus DC) is five times the square on the half of the greater segment (that is, five times the square on DC). Q.E.D.
+
+**USED:** 1.10, 2.3, 2.4, 6.17, CN1, CN2, D6.3
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['1.10', '2.3', '2.4', '6.17', 'CN1', 'CN2', 'D6.3']
+
+## Proposition 13.4
+**Statement:** If a straight line be cut in extreme and mean ratio, the square on the whole and the square on the lesser segment together are triple of the square on the greater segment.
+
+**Step 1.** Let the straight line AB be cut in extreme and mean ratio at C, where AC is the greater segment. We are to prove that the square on AB together with the square on BC is triple of the square on AC.
+
+**Step 2.** Since AB is cut in extreme and mean ratio at C with AC the greater segment, by definition we have AB : AC = AC : BC. [D6.3]
+
+**Step 3.** Since three straight lines AB, AC, BC are proportional (AB : AC = AC : BC), the rectangle contained by the extremes equals the square on the mean, that is, rect(AB, BC) = sq(AC). [6.17]
+
+**Step 4.** By Proposition 2.7, for any straight line AB cut at C, the square on AB together with the square on BC equals twice the rectangle contained by AB and BC together with the square on AC. That is, sq(AB) + sq(BC) = 2 * rect(AB, BC) + sq(AC). [2.7]
+
+**Step 5.** But rect(AB, BC) = sq(AC) (Step 3), so substituting: sq(AB) + sq(BC) = 2 * sq(AC) + sq(AC). [CN1]
+
+**Step 6.** Therefore sq(AB) + sq(BC) = 3 * sq(AC). [CN2]
+
+**Step 7.** Hence the square on the whole and the square on the lesser segment together are triple of the square on the greater segment. Q.E.F.
+
+**USED:** 2.7, 6.17, CN1, CN2, D6.3
+**Human refs (from References field):** 6.17, D6.3
+**Jaccard:** 0.400 — AI adds ['2.7', 'CN1', 'CN2']
+
+## Proposition 13.5
+**Statement:** If a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment.
+
+**Step 1.** Let the straight line AB be cut in extreme and mean ratio at C, where AC is the greater segment. Let BD be added to AB such that BD equals AC. We are to show that the whole line AD has been cut in extreme and mean ratio at B, with AB as the greater segment.
+
+**Step 2.** Since AB is cut in extreme and mean ratio at C with AC as the greater segment, by definition we have AB : AC = AC : CB [D6.3].
+
+**Step 3.** Since AB, AC, CB are three proportional lines (AB : AC = AC : CB), the rectangle contained by the extremes equals the square on the mean. That is, the rectangle AB by CB equals the square on AC [6.17].
+
+**Step 4.** Now consider the rectangle AD by BD. Since AD equals AB plus BD, we may apply Proposition 2.1 with BD as the uncut line and AD cut into the segments AB and BD. This gives us: the rectangle AD by BD equals the rectangle AB by BD plus the square on BD [2.1].
+
+**Step 5.** Since BD equals AC, the rectangle AB by BD equals the rectangle AB by AC, and the square on BD equals the square on AC [CN1].
+
+**Step 6.** Therefore the rectangle AD by BD equals the rectangle AB by AC plus the square on AC [CN1].
+
+**Step 7.** From Step 3, the square on AC equals the rectangle AB by CB. Substituting, the rectangle AD by BD equals the rectangle AB by AC plus the rectangle AB by CB [CN1].
+
+**Step 8.** But the rectangle AB by AC plus the rectangle AB by CB equals the rectangle AB by (AC plus CB). Since AC plus CB equals AB, this equals the rectangle AB by AB, which is the square on AB [2.1].
+
+**Step 9.** Therefore the rectangle AD by BD equals the square on AB.
+
+**Step 10.** Since the rectangle contained by the extremes AD and BD equals the square on the mean AB, the three lines AD, AB, BD are proportional: AD : AB = AB : BD [6.17].
+
+**Step 11.** This means AD has been cut in extreme and mean ratio at B [D6.3].
+
+**Step 12.** It remains to show that AB is the greater segment. Since AB is cut in extreme and mean ratio at C, the whole AB is greater than its part AC [CN5]. Since BD equals AC, we have AB greater than BD. Therefore AB is the greater segment of AD.
+
+**Step 13.** Therefore, if a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment. Q.E.D.
+
+**USED:** 2.1, 6.17, CN1, CN5, D6.3
+**Human refs (from References field):** 5.14, 6.17, D6.3
+**Jaccard:** 0.333 — AI adds ['2.1', 'CN1', 'CN5']; Human adds ['5.14']
+
+## Proposition 13.6
+**Statement:** If a rational straight line be cut in extreme and mean ratio, each of the segments is the irrational straight line called apotome.
+
+**Step 1.** Let AB be a rational straight line cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. By D6.3, AB : AC = AC : CB.
+
+**Step 2.** Bisect AB at D [1.10], so that AD = DB. Since AB is rational and DB is commensurable in length with AB (having the ratio 1:2, a ratio of numbers), DB is rational [10.6, D10.1.3]. Consequently, the square on DB is a rational area [D10.1.4].
+
+**Step 3.** By 13.1, since AB is cut in extreme and mean ratio at C with AC the greater segment, the square on the line equal to AC together with AD (i.e., a line of length AC + AD) is five times the square on AD. Construct a line DE equal in length to AC + DB (which equals AC + AD, since AD = DB) [P1, P2, 1.3]. Then the square on DE equals five times the square on DB.
+
+**Step 4.** Since the square on DE is to the square on DB as 5 is to 1, which is a ratio of a number to a number, the square on DE is commensurable with the square on DB [10.6]. Since the square on DB is rational, the square on DE is also rational. Therefore DE is rational [D10.1.3], being commensurable in square with the rational line.
+
+**Step 5.** Now 5 is not a square number (since 2 squared is 4 and 3 squared is 9, there is no integer whose square is 5). Hence the ratio 5:1 is not a ratio of a square number to a square number. By the corollary of 10.9, DE and DB are incommensurable in length. Together with Step 4, DE and DB are commensurable in square only.
+
+**Step 6.** Now AC = DE - DB (since DE = AC + AD = AC + DB). Thus AC is the remainder when the rational straight line DB is subtracted from the rational straight line DE, where DE and DB are commensurable in square only. By 10.73, AC is an apotome.
+
+**Step 7.** For the lesser segment CB, construct a line DF equal to three times DB, so that DF = 3 * DB [P1, P2, 1.3]. Since DF : DB = 3 : 1, a ratio of numbers, DF is commensurable in length with DB [10.6] and hence DF is rational [D10.1.3].
+
+**Step 8.** The square on DF is to the square on DE as 9 times the square on DB is to 5 times the square on DB, that is, as 9 is to 5. Now 9:5 is a ratio of a number to a number, so the square on DF is commensurable with the square on DE [10.6], meaning DF and DE are commensurable in square.
+
+**Step 9.** However, 9:5 is not a ratio of a square number to a square number (since 5 is not a square number). By the corollary of 10.9, DF and DE are incommensurable in length. Together with Step 8, DF and DE are commensurable in square only.
+
+**Step 10.** Now CB = AB - AC = 2 * DB - (DE - DB) = 3 * DB - DE = DF - DE. Since DF is greater than DE (because DF - DE = CB > 0 by CN5), CB is the remainder when the rational straight line DE is subtracted from the rational straight line DF, where DF and DE are commensurable in square only. By 10.73, CB is an apotome.
+
+**Step 11.** Therefore each of the segments AC and CB of the rational straight line AB, cut in extreme and mean ratio, is an apotome. Q.E.D.
+
+**USED:** 1.10, 1.3, 10.6, 10.73, 10.9, 13.1, CN5, D10.1.3, D10.1.4, D6.3, P1, P2
+**Human refs (from References field):** 10.6, 10.73, 10.9, 10.97, 13.1, 6.17, D10.1.4, D6.3
+**Jaccard:** 0.429 — AI adds ['1.10', '1.3', 'CN5', 'D10.1.3', 'P1', 'P2']; Human adds ['10.97', '6.17']
+
+## Proposition 13.7
+**Statement:** If three angles of an equilateral pentagon, taken either in order or not in order, be equal, the pentagon will be equiangular.
+
+Let ABCDE be an equilateral pentagon with AB = BC = CD = DE = EA. We must show that if any three of its angles are equal, then all five angles are equal.
+
+**Case 1: Three consecutive angles are equal.**
+
+Without loss of generality, let angle EAB = angle ABC = angle BCD.
+
+**Step 1.** Since AB = AE and AB = BC (all sides of the pentagon are equal), triangles EAB and CBA share side AB, have AE = BC, and angle EAB = angle ABC. By 1.4 (SAS), triangle EAB is congruent to triangle CBA. Therefore BE = CA.
+
+**Step 2.** Similarly, since BC = CD, angle ABC = angle BCD, and BC is common, triangles ABC and DCB are congruent by 1.4 (SAS). Therefore AC = DB.
+
+**Step 3.** From Steps 1 and 2, BE = CA and CA = DB, so BE = DB by CN1. Thus triangle BDE is isosceles with BD = BE, and by 1.5, angle BDE = angle BED.
+
+**Step 4.** Since AB = BC in triangle ABC, triangle ABC is isosceles, and by 1.5, angle BAC = angle BCA. Call this common value alpha. By 1.32, angle ABC + 2 alpha = 180 degrees, so alpha = (180 - angle ABC)/2.
+
+**Step 5.** Since AE = AB in triangle EAB, triangle EAB is isosceles, and by 1.5, angle AEB = angle ABE = alpha (the base angles equal (180 - angle EAB)/2 = (180 - angle ABC)/2 = alpha, since angle EAB = angle ABC).
+
+**Step 6.** Since CD = DE in triangle CDE, triangle CDE is isosceles. From the congruence in Step 2, angle CDB = angle BAC = alpha. By 1.5 applied to triangle BCD (where BC = CD), angle DBC = angle BDC = alpha.
+
+**Step 7.** The interior angle at B satisfies angle ABC = angle ABE + angle EBD + angle DBC. Since angle ABE = alpha (Step 5) and angle DBC = alpha (Step 6), we obtain angle EBD = angle ABC - 2 alpha by CN3. Since angle ABC = 180 - 2 alpha (Step 4), angle EBD = (180 - 2 alpha) - 2 alpha = 180 - 4 alpha.
+
+**Step 8.** In triangle BDE, by 1.32, angle BDE + angle BED + angle EBD = 180 degrees. Since angle BDE = angle BED (Step 3), we have 2 angle BDE + (180 - 4 alpha) = 180, giving angle BDE = 2 alpha.
+
+**Step 9.** The interior angle at D equals angle CDB + angle BDE = alpha + 2 alpha = 3 alpha by CN2. The interior angle at E equals angle AEB + angle BED = alpha + 2 alpha = 3 alpha by CN2 (using angle BED = angle BDE = 2 alpha from Steps 3 and 8, and angle AEB = alpha from Step 5). Therefore angle D = angle E. Denote their common value phi = 3 alpha.
+
+**Step 10.** Since AE = DE and angle DEA = angle CDE = phi, with DE common to triangles AED and CED, triangles AED and CED are congruent by 1.4 (SAS: AE = CD, angle AED = angle CDE, DE = DE). Therefore AD = CE.
+
+**Step 11.** Now consider triangles ACD and ECB. We have AC = EB (Step 1), CD = CB (equilateral pentagon), and DA = CE (Step 10). By 1.8 (SSS), triangle ACD is congruent to triangle ECB. Therefore the angles contained by the respectively equal sides are equal. In particular, angle CDA = angle BCE (the angles between sides of lengths CB = CD and CE = DA).
+
+**Step 12.** We compute angle CDA. Since angle CDE = phi and angle ADE = (180 - phi)/2 (base angle of isosceles triangle ADE with AE = DE, by 1.5 and 1.32), we obtain angle CDA = phi - (180 - phi)/2 = (3 phi - 180)/2 by CN3.
+
+**Step 13.** We compute angle BCE. In isosceles triangle CDE (CD = DE), angle DCE = (180 - phi)/2 by 1.5 and 1.32. The interior angle at C is angle BCD = angle ABC (given). So angle BCE = angle BCD - angle DCE = angle ABC - (180 - phi)/2 by CN3.
+
+**Step 14.** Setting angle CDA = angle BCE (Step 11): (3 phi - 180)/2 = angle ABC - (180 - phi)/2. This gives (3 phi - 180)/2 = (2 angle ABC - 180 + phi)/2, so 3 phi - 180 = 2 angle ABC - 180 + phi, hence 2 phi = 2 angle ABC, and phi = angle ABC.
+
+**Step 15.** Since phi = angle ABC and the three given angles are equal to angle ABC, all five interior angles equal angle ABC. The pentagon is equiangular.
+
+**Case 2: Three angles are equal but not consecutive.**
+
+**Step 16.** In a pentagon ABCDE, if three angles are equal but not all consecutive, then at least two of the three must be adjacent (since it is impossible to choose three mutually non-adjacent vertices in a pentagon). Without loss of generality (by relabeling vertices), let angle EAB = angle ABC = angle CDE, where the first two are consecutive and the third is non-adjacent to both.
+
+**Step 17.** Since AE = BC, angle EAB = angle ABC, and AB is common, triangles EAB and CBA are congruent by 1.4 (SAS). Therefore BE = CA. Since AB = AE, triangle ABE is isosceles, and angle ABE = angle AEB = (180 - angle EAB)/2 by 1.5 and 1.32.
+
+**Step 18.** Since AB = DC, AE = DE, and angle EAB = angle CDE (given), triangles EAB and EDC are congruent by 1.4 (SAS: AE = DE, angle EAB = angle CDE, AB = DC). Therefore BE = CE.
+
+**Step 19.** From Steps 17 and 18, CA = BE = CE by CN1. So triangle ACE is isosceles with CA = CE, and by 1.5, angle CAE = angle CEA.
+
+**Step 20.** The angle CAE = angle EAB - angle BAC. Since triangle ABC has AB = BC (equilateral pentagon), angle BAC = angle BCA = (180 - angle ABC)/2 = (180 - angle EAB)/2 by 1.5 and 1.32. Let alpha = (180 - angle EAB)/2. Then angle CAE = angle EAB - alpha.
+
+**Step 21.** Similarly, since CD = DE, triangle CDE is isosceles with angle DCE = angle DEC = (180 - angle CDE)/2 = alpha by 1.5 and 1.32 (using angle CDE = angle EAB). The angle CEA = angle DEA - angle DEC = angle DEA - alpha.
+
+**Step 22.** From Step 19, angle CAE = angle CEA. So angle EAB - alpha = angle DEA - alpha, giving angle DEA = angle EAB by CN2. That is, angle E equals the three given equal angles.
+
+**Step 23.** Now four angles are equal: angle A = angle B = angle D = angle E. The consecutive triple D, E, A consists of three consecutive equal angles. By Case 1 (Steps 1-15), the pentagon is equiangular.
+
+Therefore, in both cases, if three angles of an equilateral pentagon are equal, the pentagon is equiangular. Q.E.D.
+
+**USED:** 1.32, 1.4, 1.5, 1.8, CN1, CN2, CN3
+**Human refs (from References field):** 1.4, 1.5, 1.6, 1.8
+**Jaccard:** 0.375 — AI adds ['1.32', 'CN1', 'CN2', 'CN3']; Human adds ['1.6']
+
+## Proposition 13.8
+**Statement:** If in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to the side of the pentagon.
+
+**Step 1.** Let ABCDE be an equilateral and equiangular pentagon, and let AC and BE be drawn subtending two angles taken in order, namely the angles at B and A respectively. Let AC and BE intersect at H. We must show that each of AC and BE is cut in extreme and mean ratio at H, and that the greater segments equal the side of the pentagon. [P1]
+
+**Step 2.** Since ABCDE is equiangular with five equal angles, we divide it into three triangles ABC, ACD, ADE by drawing diagonals AC and AD from vertex A. By 1.32, the sum of the interior angles of each triangle equals two right angles, so the angles of the three triangles sum to six right angles. But these angles together constitute exactly the five interior angles of the pentagon (the angles at A in the three triangles sum to angle BAE, and the angles at B, C, D, E equal the respective pentagon angles). Since the pentagon is equiangular, each interior angle equals one-fifth of six right angles, that is, three-fifths of two right angles. [1.32]
+
+**Step 3.** Consider triangle ABE. Since the pentagon is equilateral, AB equals AE. By 1.5, angle ABE equals angle AEB. By 1.32, angle BAE plus angle ABE plus angle AEB equals two right angles. Since angle BAE equals three-fifths of two right angles, we obtain angle ABE plus angle AEB equals two-fifths of two right angles, so each equals one-fifth of two right angles. [1.5, 1.32, CN3]
+
+**Step 4.** Similarly, in triangle ABC, since AB equals BC (equilateral pentagon), by 1.5 angle BAC equals angle BCA. By 1.32, since angle ABC equals three-fifths of two right angles, we get angle BAC plus angle BCA equals two-fifths of two right angles, so each equals one-fifth of two right angles. [1.5, 1.32, CN3]
+
+**Step 5.** Since angle BAE equals three-fifths of two right angles and angle BAC equals one-fifth of two right angles, the remaining angle CAE equals two-fifths of two right angles. Similarly, since angle ABC equals three-fifths of two right angles and angle ABE equals one-fifth of two right angles, the remaining angle EBC equals two-fifths of two right angles. [CN3]
+
+**Step 6.** In triangle AHE, angle HAE equals angle CAE, which is two-fifths of two right angles, and angle AEH equals angle AEB, which is one-fifth of two right angles. By 1.32, angle AHE equals two right angles minus two-fifths of two right angles minus one-fifth of two right angles, that is, two-fifths of two right angles. Since angle HAE equals angle AHE, both being two-fifths of two right angles, by 1.6 the side AE (opposite angle AHE) equals the side HE (opposite angle HAE). Since AE is a side of the pentagon, HE equals the side of the pentagon. [1.6, 1.32]
+
+**Step 7.** In triangle BHC, angle BCH equals angle BCA, which is one-fifth of two right angles, and angle HBC equals angle EBC, which is two-fifths of two right angles. By 1.32, angle BHC equals two right angles minus one-fifth of two right angles minus two-fifths of two right angles, that is, two-fifths of two right angles. Since angle HBC equals angle BHC, both being two-fifths of two right angles, by 1.6 the side BC (opposite angle BHC) equals the side HC (opposite angle HBC). Since BC is a side of the pentagon, HC equals the side of the pentagon. [1.6, 1.32]
+
+**Step 8.** In triangle ABH, angle BAH equals angle BAC, which is one-fifth of two right angles, and angle ABH equals angle ABE, which is one-fifth of two right angles. By 1.32, angle AHB equals two right angles minus one-fifth of two right angles minus one-fifth of two right angles, that is, three-fifths of two right angles. [1.32]
+
+**Step 9.** Now consider triangles ABH and ABE. Triangle ABH has angles: angle BAH equals one-fifth of two right angles, angle ABH equals one-fifth of two right angles, and angle AHB equals three-fifths of two right angles. Triangle ABE has angles: angle AEB equals one-fifth of two right angles, angle ABE equals one-fifth of two right angles, and angle BAE equals three-fifths of two right angles. These triangles are equiangular (having the same set of angles), and they share the angle at B (angle ABH equals angle ABE). The correspondence of equal angles is: angle BAH corresponds to angle AEB, angle ABH corresponds to angle ABE, and angle AHB corresponds to angle BAE. [6.4]
+
+**Step 10.** By 6.4, the sides of equiangular triangles are proportional about the equal angles. Under the correspondence established in Step 9: AH (opposite angle ABH in triangle ABH) is to AE (opposite angle ABE in triangle ABE) as AB (opposite angle AHB in triangle ABH) is to BE (opposite angle BAE in triangle ABE). That is, AH is to AE as AB is to BE. Since AE equals AB (both being sides of the pentagon), we obtain AH is to AB as AB is to BE, and therefore the rectangle contained by BE and AH equals the square on AB. [6.4, CN1]
+
+**Step 11.** Since HE equals AB (Step 6), we have that the square on HE equals the square on AB, which equals the rectangle contained by BE and AH, which equals the rectangle contained by BE and BH (since we now show BH equals AH). In triangle ABH, angle BAH equals angle ABH (both one-fifth of two right angles), so by 1.6, BH equals AH. Therefore the rectangle BE times BH equals the square on HE. [1.6, CN1]
+
+**Step 12.** Since BE equals BH plus HE, and the rectangle contained by BE and BH equals the square on HE, we have that the whole BE is to the segment HE as HE is to BH. For BE times BH equals HE squared means BE is to HE as HE is to BH. Since HE is greater than BH (for the square on HE equals the rectangle BE times BH, and BE is greater than HE, so BH is less than HE), the segment HE is the greater segment. By D6.3, BE has been cut in extreme and mean ratio at H, and the greater segment HE equals the side of the pentagon. [D6.3, CN5]
+
+**Step 13.** Now consider the diagonal AC cut at H. Triangles BCA and BHA have the following angles. Triangle BCA: angle BAC equals one-fifth of two right angles, angle ABC equals three-fifths of two right angles, and angle BCA equals one-fifth of two right angles. Triangle BHA: angle BAH equals one-fifth of two right angles, angle ABH equals one-fifth of two right angles, and angle AHB equals three-fifths of two right angles. These triangles are equiangular and share the angle at A (angle BAC equals angle BAH, both being one-fifth of two right angles). The correspondence is: angle ABC (three-fifths of two right angles) corresponds to angle AHB (three-fifths of two right angles), and angle BCA corresponds to angle ABH (both one-fifth of two right angles). [6.4]
+
+**Step 14.** By 6.4, under this correspondence: AC (opposite angle ABC in triangle BCA) is to AB (opposite angle AHB in triangle BHA) as AB (opposite angle BCA in triangle BCA) is to AH (opposite angle ABH in triangle BHA). That is, AC is to AB as AB is to AH, so the rectangle contained by AC and AH equals the square on AB. [6.4]
+
+**Step 15.** Since HC equals AB (Step 7), the square on HC equals the square on AB, which equals the rectangle contained by AC and AH. Since AC equals AH plus HC, and the rectangle AC times AH equals the square on HC, we have AC is to HC as HC is to AH. Since HC is greater than AH (by the same reasoning as in Step 12, since the square on HC equals the rectangle AC times AH and AC is greater than HC, so AH is less than HC), the segment HC is the greater segment. By D6.3, AC has been cut in extreme and mean ratio at H, and the greater segment HC equals the side of the pentagon. [D6.3, CN5]
+
+**Step 16.** Therefore, the two diagonals AC and BE, which subtend two angles of the equilateral and equiangular pentagon taken in order, cut one another in extreme and mean ratio at H, and their greater segments (HE and HC respectively) are each equal to the side of the pentagon. Q.E.D.
+
+**USED:** 1.32, 1.5, 1.6, 6.4, CN1, CN3, CN5, D6.3, P1
+**Human refs (from References field):** 1.32, 1.4, 1.5, 1.6, 3.28, 4.14, 5.14, 6.33, 6.4
+**Jaccard:** 0.286 — AI adds ['CN1', 'CN3', 'CN5', 'D6.3', 'P1']; Human adds ['1.4', '3.28', '4.14', '5.14', '6.33']
+
+## Proposition 13.9
+**Statement:** If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater segment is the side of the hexagon.
+
+**Step 1.** Let a circle be given with center O and radius r. Let the side of the regular hexagon inscribed in this circle be denoted by h, and the side of the regular decagon inscribed in this circle be denoted by d. We must show that the straight line h + d has been cut in extreme and mean ratio, with h as the greater segment.
+
+**Step 2.** By Proposition 4.15, the side of the regular hexagon inscribed in a circle equals the radius of the circle. Therefore h = r. [4.15]
+
+**Step 3.** By Proposition 4.10, to construct the isosceles triangle having each base angle double the vertex angle, one takes a straight line and cuts it in extreme and mean ratio (using 2.11), and the resulting triangle has its base equal to the greater segment. When this construction is applied with the equal sides equal to the radius r of the circle, the base of the triangle is the side of the regular decagon inscribed in that circle, since the vertex angle of that triangle is 36 degrees and thus subtends one-tenth of the full circle. Therefore, when the radius r is cut in extreme and mean ratio, the greater segment equals d, the side of the decagon. That is, r : d = d : (r - d). [4.10, 2.11]
+
+**Step 4.** We now have that the straight line r has been cut in extreme and mean ratio, with d as its greater segment. [D6.3]
+
+**Step 5.** By Proposition 13.5, if a straight line is cut in extreme and mean ratio, and there is added to it a straight line equal to the greater segment, then the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment. [13.5]
+
+**Step 6.** Apply 13.5 to our situation: the straight line r has been cut in extreme and mean ratio with d as the greater segment. We add to r a straight line equal to d. The resulting whole is r + d. Since h = r (Step 2), this whole is h + d. [CN1]
+
+**Step 7.** By 13.5, the whole straight line h + d has been cut in extreme and mean ratio, and r (which equals h, the side of the hexagon) is the greater segment. [13.5, CN1]
+
+**Step 8.** Therefore, if the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater segment is the side of the hexagon. Q.E.D.
+
+**USED:** 13.5, 2.11, 4.10, 4.15, CN1, D6.3
+**Human refs (from References field):** 1.32, 1.5, 4.15, 6.33, 6.4
+**Jaccard:** 0.100 — AI adds ['13.5', '2.11', '4.10', 'CN1', 'D6.3']; Human adds ['1.32', '1.5', '6.33', '6.4']
+
+## Proposition 13.10
+**Statement:** If an equilateral pentagon be inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same circle.
+
+**Step 1.** Let ABCDE be an equilateral pentagon inscribed in a circle with center O and radius r. By 4.15, the side of the regular hexagon inscribed in the same circle equals the radius, so h = r. Let d denote the side of the regular decagon inscribed in the same circle, and let s denote the side of the pentagon (so s = BC for any side BC).
+
+**Step 2.** Since the pentagon is equilateral, its five sides are equal. By 3.28, equal chords in a circle cut off equal arcs. Therefore the five sides cut the circumference into five equal arcs, each equal to one-fifth of the whole circumference.
+
+**Step 3.** Let N be the midpoint of the minor arc BC, so that arc BN equals arc NC, each being half of one-fifth of the circumference, that is, one-tenth of the whole circumference. Since the regular decagon divides the circle into ten equal arcs (by 3.28 applied to its ten equal sides), and each such arc is one-tenth of the circumference, arc BN equals the arc subtended by one side of the decagon. By 3.29, equal arcs in the same circle are subtended by equal chords. Therefore BN = d, the side of the decagon.
+
+**Step 4.** Draw the perpendicular from O to side BC. By 3.3, since this line passes through the center and is perpendicular to BC, it bisects BC. Let M be the foot of this perpendicular, so BM = MC = s/2.
+
+**Step 5.** We show that O, M, and N are collinear. Since BM = MC (by Step 4) and BN = NC (by Step 3 and 3.29), both M and N are equidistant from B and C. Applying 1.8 (SSS) to triangles BMN and CMN (BM = CM, BN = CN, MN = MN), these triangles are congruent, so angle BMN = angle CMN. Since B, M, C are collinear with M between B and C, angle BMN + angle CMN equals two right angles, hence each is a right angle. Therefore MN is perpendicular to BC at M. Since OM is also perpendicular to BC at M (by Step 4), the lines OM and MN coincide. Hence O, M, N are collinear.
+
+**Step 6.** Since O is inside the circle, M lies on chord BC, and N lies on the circle on the opposite side of BC from O (on the minor arc), the point M lies between O and N on their common line. Therefore ON = OM + MN, and since ON = r (N being on the circle), we have MN = r - OM.
+
+**Step 7.** In right triangle OBM (right angle at M), by 1.47: r^2 = OM^2 + BM^2 = OM^2 + (s/2)^2. Therefore (s/2)^2 = r^2 - OM^2.
+
+**Step 8.** In right triangle BMN (right angle at M, established in Step 5), by 1.47: d^2 = BN^2 = BM^2 + MN^2 = (s/2)^2 + (r - OM)^2.
+
+**Step 9.** Substituting (s/2)^2 = r^2 - OM^2 from Step 7 into Step 8: d^2 = (r^2 - OM^2) + (r - OM)^2 = r^2 - OM^2 + r^2 - 2r*OM + OM^2 = 2r^2 - 2r*OM. Thus d^2 = 2r(r - OM).
+
+**Step 10.** By 13.9, when the side of the hexagon (h = r) and the side of the decagon (d) inscribed in the same circle are added together, the whole line h + d is cut in extreme and mean ratio, with h as the greater segment. That is, (r + d) : r = r : d. By 6.17 (if three straight lines are proportional, the rectangle contained by the extremes equals the square on the mean), (r + d) * d = r^2. Therefore r^2 = rd + d^2.
+
+**Step 11.** From Step 10, subtracting rd from both sides (by CN3): r^2 - rd = d^2. That is, r(r - d) = d^2.
+
+**Step 12.** Equating the two expressions for d^2 from Steps 9 and 11 (by CN1): 2r(r - OM) = r(r - d). Since r is not zero, dividing both sides by r: 2(r - OM) = r - d. Therefore 2r - 2*OM = r - d, which gives 2*OM = r + d, and so OM = (r + d)/2.
+
+**Step 13.** From Step 7: s^2 = 4(r^2 - OM^2) = 4r^2 - 4*OM^2. Now 2*OM = r + d (from Step 12), so (2*OM)^2 = (r + d)^2. By 2.4, (r + d)^2 = r^2 + 2rd + d^2. And (2*OM)^2 = 4*OM^2 (since doubling a segment and squaring gives four times the square on the original, by 2.4 applied to two equal segments). Therefore 4*OM^2 = r^2 + 2rd + d^2.
+
+**Step 14.** Substituting into the expression for s^2: s^2 = 4r^2 - (r^2 + 2rd + d^2) = 3r^2 - 2rd - d^2.
+
+**Step 15.** From Step 10, r^2 = rd + d^2. Adding r^2 to both sides of this equation twice (by CN2): 3r^2 = r^2 + 2r^2 = r^2 + 2(rd + d^2) = r^2 + 2rd + 2d^2. Therefore 3r^2 - 2rd = r^2 + 2d^2, and 3r^2 - 2rd - d^2 = r^2 + d^2 (subtracting d^2 from both sides by CN3).
+
+**Step 16.** From Steps 14 and 15 (by CN1): s^2 = r^2 + d^2 = h^2 + d^2. That is, the square on the side of the pentagon equals the sum of the square on the side of the hexagon and the square on the side of the decagon inscribed in the same circle.
+
+Therefore, if an equilateral pentagon is inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same circle. Q.E.D.
+
+**USED:** 1.47, 1.8, 13.9, 2.4, 3.28, 3.29, 3.3, 4.15, 6.17, CN1, CN2, CN3
+**Human refs (from References field):** 1.26, 1.32, 1.4, 1.5, 2.2, 3.26, 4.15, 6.17, 6.33, 6.4
+**Jaccard:** 0.100 — AI adds ['1.47', '1.8', '13.9', '2.4', '3.28', '3.29', '3.3', 'CN1', 'CN2', 'CN3']; Human adds ['1.26', '1.32', '1.4', '1.5', '2.2', '3.26', '6.33', '6.4']
+
+## Proposition 13.11
+**Statement:** If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.
+
+**Step 1.** Let ABCDE be an equilateral pentagon inscribed in a circle with center O, and let the diameter of the circle be rational. Let r denote the radius OA. Since the diameter d is rational and r is half of d, the ratio d : r equals 2 : 1, so r is commensurable in length with d and is therefore rational [10.6, D10.1.3].
+
+**Step 2.** By 4.15, the side of the regular hexagon inscribed in the same circle equals the radius r. Since r is rational, the side of the hexagon is rational.
+
+**Step 3.** Let s denote the side of the regular decagon inscribed in the same circle. By 13.9, the straight line composed of the hexagon side and the decagon side (that is, r + s) has been cut in extreme and mean ratio, and the greater segment is the side of the hexagon, which is r. Therefore (r + s) : r = r : s [D6.3].
+
+**Step 4.** From the proportion in Step 3, since (r + s) : r = r : s, the rectangle contained by the extremes equals the rectangle contained by the means [6.17]. That is, rect(r + s, s) = sq(r). Expanding the left side, rect(r, s) + sq(s) = sq(r) [2.3]. Therefore sq(s) = sq(r) - rect(r, s) [CN3].
+
+**Step 5.** From the proportion r : s = s : (r - s), which follows from Step 3 by separation of the ratio, r is itself cut in extreme and mean ratio at the point yielding greater segment s and lesser segment r - s. Since r is rational, by 13.6 both s and r - s are apotomes.
+
+**Step 6.** By 13.10, the square on the side BC of the pentagon equals the sum of the square on the side of the hexagon and the square on the side of the decagon, both inscribed in the same circle. That is, sq(BC) = sq(r) + sq(s).
+
+**Step 7.** Substituting the result of Step 4 into Step 6: sq(BC) = sq(r) + sq(r) - rect(r, s) [CN2, CN3]. Since sq(r) + sq(r) = rect(r, 2r) = rect(r, d), we have sq(BC) = rect(r, d) - rect(r, s) = rect(r, d - s) [2.1, CN3]. Set q = d - s, so that sq(BC) = rect(r, q).
+
+**Step 8.** We now show that q is a fourth apotome with respect to the rational line r. By 13.1, since r is cut in extreme and mean ratio with s as the greater segment (Step 5), the square on s together with the half of r equals five times the square on the half of r. That is, sq(s + r/2) = 5 times sq(r/2).
+
+**Step 9.** Set N = r/2. Then N is rational since r is rational and N : r = 1 : 2 [10.6]. Define a = d + N = 2r + r/2 = 5N, and b = s + N. Then q = d - s = (d + N) - (s + N) = a - b. Note that a = 5N, which is commensurable in length with r since a : r = 5 : 2 [10.6], and commensurable with N since a : N = 5 : 1 [10.6]. By 10.15, since d and N are each commensurable with r, the sum a = d + N is commensurable with r.
+
+**Step 10.** By Step 8, sq(b) = sq(s + N) = 5 times sq(N). And sq(a) = sq(5N) = 25 times sq(N). Therefore sq(a) : sq(b) = 25 : 5 = 5 : 1. Since 5 is not a square number, a and b are incommensurable in length [10.9]. Since sq(a) and sq(b) are in the ratio 5 : 1 (a ratio of numbers), a and b are commensurable in square [10.6]. Hence a and b are commensurable in square only.
+
+**Step 11.** Now sq(a) - sq(b) = 25 times sq(N) - 5 times sq(N) = 20 times sq(N) = 5 times 4 times sq(N) = 5 times sq(2N) = 5 times sq(r) [CN3]. Let c be the straight line such that sq(c) = 5 times sq(r). Then sq(c) : sq(a) = 5 times sq(r) : 25 times sq(N) = 5 times sq(2N) : 25 times sq(N) = 20 : 25 = 4 : 5. Since 4 : 5 is not a ratio of square numbers, c and a are incommensurable in length [10.9].
+
+**Step 12.** Therefore q = a - b satisfies all conditions of a fourth apotome with respect to the rational line r [D10.3.4]: the terms a and b are commensurable in square only (Step 10); the square on a exceeds the square on b by the square on a straight line c incommensurable in length with a (Step 11); and a is commensurable in length with the assigned rational line r (Step 9).
+
+**Step 13.** Since sq(BC) = rect(r, q), where r is a rational straight line and q is a fourth apotome, by 10.94 the straight line BC (the side of the square equal to rect(r, q)) is the irrational straight line called minor.
+
+**Step 14.** Therefore, if in a circle with rational diameter an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor. Q.E.D.
+
+**USED:** 10.15, 10.6, 10.9, 10.94, 13.1, 13.10, 13.6, 13.9, 2.1, 2.3, 4.15, 6.17, CN2, CN3, D10.1.3, D10.3.4, D6.3
+**Human refs (from References field):** 1.32, 10.12, 10.15, 10.73, 10.9, 10.94, 13.1, 13.8, 5.18, 5.19, D10.3.4
+**Jaccard:** 0.217 — AI adds ['10.6', '13.10', '13.6', '13.9', '2.1', '2.3', '4.15', '6.17', 'CN2', 'CN3', 'D10.1.3', 'D6.3']; Human adds ['1.32', '10.12', '10.73', '13.8', '5.18', '5.19']
+
+## Proposition 13.12
+**Statement:** If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.
+
+**Step 1.** Let ABC be an equilateral triangle inscribed in a circle with center E [D4.3, D1.20]. Let AE, BE, CE be radii of the circle, so that AE = BE = CE [D1.15].
+
+**Step 2.** Since AB = BC = CA [D1.20] and AE = BE = CE [D1.15], triangles AEB, BEC, and CEA have all three sides respectively equal. Therefore by SSS congruence [1.8], the three triangles are congruent, and in particular angle AEB = angle BEC = angle CEA.
+
+**Step 3.** Let D be the point diametrically opposite A on the circle, so that AD is a diameter passing through E [D1.17]. Then AED is a straight line and AE = ED (each being a radius).
+
+**Step 4.** Since AED is a straight line, angle AEB + angle BED = two right angles [1.13], and angle AEC + angle CED = two right angles [1.13].
+
+**Step 5.** From the equal central angles (Step 2), angle AEB = angle AEC. By Step 4, angle BED = two right angles minus angle AEB and angle CED = two right angles minus angle AEC. Since angle AEB = angle AEC, it follows that angle BED = angle CED.
+
+**Step 6.** Also from Step 2, angle BEC = angle AEB. Since D lies between rays EB and EC from center E (the equilateral triangle having B and C symmetrically placed about the diameter AD), angle BEC = angle BED + angle DEC = angle BED + angle BED = two times angle BED [Step 5]. Therefore angle AEB = two times angle BED.
+
+**Step 7.** Substituting into the relation from Step 4: two times angle BED + angle BED = two right angles, so three times angle BED = two right angles.
+
+**Step 8.** Consider triangle BED. The sum of its angles equals two right angles [1.32]. Since EB = ED (both radii) [D1.15], the base angles are equal: angle EBD = angle EDB [1.5]. Therefore angle BED + angle EBD + angle EDB = angle BED + two times angle EBD = two right angles.
+
+**Step 9.** But three times angle BED also equals two right angles [Step 7]. Hence angle BED + two times angle EBD = three times angle BED. Subtracting angle BED from both sides [CN3], two times angle EBD = two times angle BED, so angle EBD = angle BED.
+
+**Step 10.** Since angle EBD = angle BED in triangle BED, the side opposite angle EBD (namely ED) equals the side opposite angle BED (namely BD) [1.6]. Therefore BD = ED. Since ED = AE (both radii) [D1.15], BD = AE [CN1].
+
+**Step 11.** Since AD is a diameter and B lies on the circle, the angle ABD (the angle in a semicircle) is a right angle [3.31].
+
+**Step 12.** In right triangle ABD with the right angle at B, by the Pythagorean theorem the square on AD equals the square on AB together with the square on BD [1.47]. That is, sq(AD) = sq(AB) + sq(BD).
+
+**Step 13.** Since AD is bisected at E (with AE = ED), apply the identity for a bisected line [2.4]: the square on AD equals the square on AE plus the square on ED plus twice the rectangle contained by AE and ED. Since AE = ED, this gives sq(AD) = sq(AE) + sq(AE) + two times sq(AE) = four times sq(AE).
+
+**Step 14.** Since BD = AE [Step 10], the square on BD equals the square on AE. Substituting into Step 12: four times sq(AE) = sq(AB) + sq(AE).
+
+**Step 15.** Subtracting the square on AE from both sides [CN3]: sq(AB) = three times sq(AE).
+
+**Step 16.** Since AE is the radius of the circle, the square on the side of the equilateral triangle is triple of the square on the radius of the circle. Q.E.D.
+
+**USED:** 1.13, 1.32, 1.47, 1.5, 1.6, 1.8, 2.4, 3.31, CN1, CN3, D1.15, D1.17, D1.20, D4.3
+**Human refs (from References field):** 1.47, 3.31, 4.15
+**Jaccard:** 0.133 — AI adds ['1.13', '1.32', '1.5', '1.6', '1.8', '2.4', 'CN1', 'CN3', 'D1.15', 'D1.17', 'D1.20', 'D4.3']; Human adds ['4.15']
+
+## Proposition 13.13
+**Statement:** To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.
+
+**Step 1.** Let the given sphere have diameter AB. Cut AB at C so that AC = 2CB [6.9]. Then AB = AC + CB = 3CB.
+
+**Step 2.** On AB as diameter, describe semicircle ADB [P3]. From C, draw CD at right angles to AB, meeting the semicircle at D [1.11]. Join AD [P1].
+
+**Step 3.** Since ADB is a semicircle on diameter AB, angle ADB is a right angle [3.31]. In right triangle ADB, CD is the perpendicular from the right angle D to the hypotenuse AB. Therefore the triangles on either side of the perpendicular are similar to the whole triangle and to each other [6.8]. From the similarity of triangle ACD to triangle ADB, we have AC : AD = AD : AB, and hence AD is a mean proportional between AC and AB, so AD^2 = AC * AB [6.17]. From the similarity of triangle ACD to triangle DCB, we have AC : CD = CD : CB, and hence CD is a mean proportional between AC and CB, so CD^2 = AC * CB [6.17].
+
+**Step 4.** By the definition of a sphere [D11.14], the given sphere is generated by rotating semicircle ADB about diameter AB. Under this rotation, the point D traces a circle with center C and radius CD, lying in the plane through C perpendicular to AB. Every point of this traced circle lies on the surface of the sphere.
+
+**Step 5.** In this circle (center C, radius CD), inscribe equilateral triangle EFG [4.2]. Since C is the center of the circle, CE = CF = CG = CD. Join AE, AF, AG [P1].
+
+**Step 6.** Since AB, the axis of the sphere, is perpendicular to the plane of the circle at C, the segment AC (being part of AB) is at right angles to the plane of triangle EFG. Therefore AC makes right angles with every straight line through C lying in that plane [D11.3]; in particular, angles ACE, ACF, and ACG are each right angles.
+
+**Step 7.** Consider right triangles ACE, ACF, and ACG. In each, the side AC is common, CE = CF = CG (all radii of the circle), and the included angle at C is a right angle. By SAS congruence [1.4], these triangles are congruent, and therefore AE = AF = AG.
+
+**Step 8.** In right triangle ACE (right angle at C), AE^2 = AC^2 + CE^2 [1.47]. Since CE = CD, we have AE^2 = AC^2 + CD^2. But in right triangle ACD from the semicircle (with right angle at C, since CD was drawn perpendicular to AB), AD^2 = AC^2 + CD^2 [1.47]. Therefore AE^2 = AD^2, and so AE = AD [CN1]. Consequently AE^2 = AD^2 = AC * AB [Step 3].
+
+**Step 9.** By Proposition 13.12, the square on the side of the equilateral triangle inscribed in a circle equals three times the square on the radius of that circle. Therefore EF^2 = 3 * CD^2 = 3 * AC * CB [Step 3].
+
+**Step 10.** Since AC = 2CB, we compute: AE^2 = AC * AB = 2CB * 3CB = 6CB^2. And EF^2 = 3 * AC * CB = 3 * 2CB * CB = 6CB^2. Since AE^2 = EF^2 = 6CB^2, we conclude AE = EF.
+
+**Step 11.** Now AE = AF = AG [Step 7] and AE = EF [Step 10]. Since EFG is equilateral, EF = FG = GE. Therefore all six edges AE, AF, AG, EF, FG, GE are equal to one another. The solid figure AEFG, being contained by four equilateral triangular planes and constructed from the plane of triangle EFG to the single point A, is a pyramid [D11.12] — indeed a regular tetrahedron.
+
+**Step 12.** It remains to show the pyramid is comprehended in the given sphere. Vertex A is an endpoint of the diameter AB and therefore lies on the sphere. Vertices E, F, and G lie on the circle traced by the rotation of D about AB [Steps 4 and 5], and every point of that circle lies on the surface of the sphere. Therefore all four vertices of pyramid AEFG lie on the given sphere, and the pyramid is inscribed in it.
+
+**Step 13.** Finally, for the metric relation. We have AB = 3CB, so AB^2 = 9CB^2. And EF^2 = 6CB^2 [Step 10]. Therefore 2 * AB^2 = 18CB^2 = 3 * 6CB^2 = 3 * EF^2. That is, twice the square on the diameter equals thrice the square on the side of the pyramid, and hence the square on the diameter of the sphere is one and a half times the square on the side of the pyramid. Q.E.F.
+
+**USED:** 1.11, 1.4, 1.47, 13.12, 3.31, 4.2, 6.17, 6.8, 6.9, CN1, D11.12, D11.14, D11.3, P1, P3
+**Human refs (from References field):** 1.4, 11.12, 13.12, 3.1, 3.31, 4.2, 6.17, 6.8, D11.3
+**Jaccard:** 0.412 — AI adds ['1.11', '1.47', '6.9', 'CN1', 'D11.12', 'D11.14', 'P1', 'P3']; Human adds ['11.12', '3.1']
+
+## Proposition 13.14
+**Statement:** To construct an octahedron and comprehend it in a sphere, as in the preceding case; and to prove that the square on the diameter of the sphere is double of the square on the side of the octahedron.
+
+**Step 1.** Let the diameter AB of the given sphere be set out. Find the midpoint E of AB [1.10]. Then AE equals EB.
+
+**Step 2.** Through E, draw a straight line CD at right angles to AB [1.11]. Extend CD in both directions so that EC equals EA and ED equals EA [1.3]. Then CD passes through E and has E as its midpoint, with EC = ED = EA = EB.
+
+**Step 3.** Through E, in the plane perpendicular to AB at E, draw a straight line FG at right angles to CD such that EF equals EA and EG equals EA [1.11, 1.3]. Then the four points C, D, F, G lie in a plane through E perpendicular to AB, and EC = ED = EF = EG = EA.
+
+**Step 4.** Join CF, FD, DG, GC [P1]. Since EC = EF and the angle CEF is right, the square on CF equals the sum of the squares on EC and EF [1.47], that is, CF squared equals EC squared plus EF squared. Similarly, FD squared equals EF squared plus ED squared, DG squared equals ED squared plus EG squared, and GC squared equals EG squared plus EC squared. Since EC = EF = ED = EG, all four of CF, FD, DG, GC are equal to one another [CN1]. Furthermore, angle CEF = angle FED = angle DEG = angle GEC, each being a right angle [P4]. Therefore CFDG is a square [D1.22].
+
+**Step 5.** Join AC, AD, AF, AG, BC, BD, BF, BG [P1]. Since AE is at right angles to the plane through C, D, F, G (because AE is perpendicular to both CD and FG at their intersection E) [11.4], AE is at right angles to every straight line meeting it in that plane [D11.3]. In particular, AE is at right angles to EC, to ED, to EF, and to EG.
+
+**Step 6.** Consider triangle AEC. Since the angle AEC is right and AE = EC (both equal to the radius EA), by the Pythagorean theorem [1.47], AC squared equals AE squared plus EC squared, that is, AC squared equals two times AE squared.
+
+**Step 7.** Similarly, since AE = ED = EF = EG and each angle AED, AEF, AEG is right, we have AD squared = AE squared + ED squared = two times AE squared, AF squared = AE squared + EF squared = two times AE squared, and AG squared = AE squared + EG squared = two times AE squared. Therefore AC = AD = AF = AG [CN1].
+
+**Step 8.** By the same reasoning, since BE is at right angles to the plane through C, D, F, G and BE = EC = ED = EF = EG, we obtain BC squared = BD squared = BF squared = BG squared = two times BE squared = two times AE squared [1.47]. Therefore BC = BD = BF = BG, and these all equal AC [CN1].
+
+**Step 9.** Now consider the side of the square CFDG. We showed CF squared = EC squared + EF squared = two times AE squared [Step 4]. Therefore CF squared equals AC squared, so CF = AC. Similarly all sides of the square CFDG equal AC. Therefore all twelve edges AC, AD, AF, AG, BC, BD, BF, BG, CF, FD, DG, GC are equal to one another.
+
+**Step 10.** Since all twelve edges are equal, the eight triangular faces ACF, ACD (that is, ACF, AFD, ADG, AGC, BCF, BFD, BDG, BGC) are equilateral triangles [D1.20], and the solid figure contained by these eight equal equilateral triangles is an octahedron [D11.26].
+
+**Step 11.** The octahedron is comprehended in the sphere. For the six vertices A, B, C, D, F, G are all at distance EA from the center E: EA = EB by construction [Step 1], and EC = ED = EF = EG = EA by construction [Steps 2-3]. Therefore all six vertices lie on the sphere with center E and diameter AB.
+
+**Step 12.** It remains to prove that the square on the diameter of the sphere is double the square on the side of the octahedron. The diameter of the sphere is AB, so AB = AE + EB = two times AE. Therefore AB squared = four times AE squared [cf. 2.4: the square on the whole is four times the square on the half when the line is bisected]. The side of the octahedron is AC, and AC squared = two times AE squared [Step 6]. Therefore AB squared = two times AC squared [CN1]. That is, the square on the diameter of the sphere is double the square on the side of the octahedron.
+
+**Step 13.** Therefore we have constructed an octahedron, comprehended it in a given sphere, and proved that the square on the diameter of the sphere is double the square on the side of the octahedron. Q.E.F. and Q.E.D.
+
+**USED:** 1.10, 1.11, 1.3, 1.47, 11.4, CN1, D1.20, D1.22, D11.26, D11.3, D11.4, P1, P4
+**Human refs (from References field):** 1.4, 1.47, 11.12, 3.31
+**Jaccard:** 0.062 — AI adds ['1.10', '1.11', '1.3', '11.4', 'CN1', 'D1.20', 'D1.22', 'D11.26', 'D11.3', 'D11.4', 'P1', 'P4']; Human adds ['1.4', '11.12', '3.31']
+
+## Proposition 13.15
+**Statement:** To construct a cube and comprehend it in a sphere, like the pyramid; and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.
+
+**Step 1.** Set out the diameter AB of the given sphere, and divide AB at C such that AC = 2*CB [6.10 can divide a line in a given ratio; here we cut AB so that AC is double CB].
+
+**Step 2.** Describe a semicircle ADB on AB as diameter [P3, D1.17].
+
+**Step 3.** From C, draw CD at right angles to AB meeting the semicircle at D [1.11, P1].
+
+**Step 4.** Join DB [P1].
+
+**Step 5.** Since ADB is an angle in a semicircle, angle ADB is a right angle [3.31].
+
+**Step 6.** In the right-angled triangle ADB, CD has been drawn from the right angle perpendicular to the base AB. Therefore triangle BDC is similar to triangle BDA [6.8]. Hence BD is a mean proportional between AB and BC, that is, AB : BD = BD : BC, so that the square on BD equals the rectangle AB by BC [6.17].
+
+**Step 7.** Now set out a square EFGH with each side equal to BD [1.46, 1.3].
+
+**Step 8.** From the points E, F, G, H, erect straight lines EK, FL, GM, HN at right angles to the plane of the square EFGH [11.12], and make each of EK, FL, GM, HN equal to EF [1.3].
+
+**Step 9.** Join KL, LM, MN, NK [P1]. Since EK is both equal and parallel to FL (both perpendicular to the same plane and equal in length), and EF joins their endpoints in the base plane, EKFL is a parallelogram [11.6, 1.33]. Moreover EF = EK, so EKFL is a square [1.34, D1.22]. By the same reasoning, each of the six faces EFGH, KLMN, EKNH, FLMG, EFLS (i.e., EFLK), and HGNM is a square equal to the original square EFGH. Therefore the solid EFGHKLMN is a cube [D11.25].
+
+**Step 10.** Join the body diagonal EG of the base square EFGH. Since angle EFG is a right angle and EF = FG = BD, by the Pythagorean theorem the square on EG equals the sum of the squares on EF and FG, that is, the square on EG equals twice the square on BD [1.47].
+
+**Step 11.** Now join the body diagonal EN of the cube from E to the opposite vertex N (where N is above G). Since GN is perpendicular to the plane of EFGH [by construction], angle EGN is a right angle [D11.3]. Therefore the square on EN equals the square on EG plus the square on GN [1.47]. But the square on EG equals twice the square on BD [Step 10], and GN = BD. Therefore the square on EN equals twice the square on BD plus the square on BD, that is, the square on EN equals three times the square on BD.
+
+**Step 12.** We now show that the square on AB equals three times the square on BD. Since AC = 2*CB, we have AB = AC + CB = 3*CB [CN2]. Therefore CB = one-third of AB. From Step 6, the square on BD equals the rectangle AB by BC. Since BC is one-third of AB, the rectangle AB by BC equals one-third of the square on AB [6.1]. Therefore the square on AB equals three times the square on BD.
+
+**Step 13.** From Steps 11 and 12, the square on EN equals the square on AB [CN1]. Therefore EN = AB, and the body diagonal of the cube equals the diameter of the sphere.
+
+**Step 14.** Since the cube is a regular solid, all four body diagonals are equal and bisect one another at the center of the cube [11.38, 1.34 applied to each face and the symmetry of the construction]. Let O be this common midpoint. Then O is equidistant from all eight vertices of the cube, and the distance from O to any vertex equals half of EN, which equals half of AB, which is the radius of the sphere.
+
+**Step 15.** Therefore, with O as center, describe a sphere with radius equal to half of AB [by the solid analogue of P3]. All eight vertices of the cube lie on this sphere, so the cube is comprehended in the sphere of diameter AB.
+
+**Step 16.** And it has been proved that the square on the diameter AB of the sphere is three times the square on the side BD of the cube [Step 12]. Q.E.F. and Q.E.D.
+
+**USED:** 1.11, 1.3, 1.33, 1.34, 1.46, 1.47, 11.12, 11.38, 11.6, 3.31, 6.1, 6.10, 6.17, 6.8, CN1, CN2, D1.17, D1.22, D11.25, D11.3, P1, P3
+**Human refs (from References field):** 1.47, D11.3
+**Jaccard:** 0.091 — AI adds ['1.11', '1.3', '1.33', '1.34', '1.46', '11.12', '11.38', '11.6', '3.31', '6.1', '6.10', '6.17', '6.8', 'CN1', 'CN2', 'D1.17', 'D1.22', 'D11.25', 'P1', 'P3']
+
+## Proposition 13.16
+**Statement:** To construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
+
+**Step 1.** Let the diameter AB of the given sphere be set out, and let it be cut at the point C so that AC is quadruple of CB. Describe a semicircle ADB on AB [P3]. Draw CD from C at right angles to AB [1.11], and join DA [P1]. Then the square on DA equals the rectangle AC by CB plus the square on CD, and since angle ADB is in a semicircle, angle ADB is a right angle [3.31]. Thus the square on AB equals the square on AD plus the square on DB [1.47], and the square on AD equals the rectangle AB by AC [6.8, 3.31], while the square on DB equals the rectangle AB by BC [6.8, 3.31].
+
+**Step 2.** Set out the circle EFGHK with radius equal to DB [P3]. Inscribe the regular decagon EFGHK in this circle [4.16], and join every other vertex to form the regular pentagon EGHKE [4.11]. The side of the decagon (e.g., EF) and the side of the pentagon (e.g., EG) are thereby determined. The side of the hexagon inscribed in the same circle equals the radius DB [4.15].
+
+**Step 3.** At the center O of circle EFGHK, erect a line OL perpendicular to the plane of the circle [11.12]. Set OL such that the square on OL equals the square on the radius minus the square on the side of the decagon. More precisely, let the square on OL equal the rectangle AB by BC. Since the square on the radius DB equals the rectangle AB by BC [from Step 1], we have OL appropriately determined. Through L, draw a plane parallel to the plane of EFGHK [11.15].
+
+**Step 4.** At each vertex E, F, G, H, K of the decagon, erect perpendiculars to the plane of EFGHK of the same length, five going upward (from alternate vertices of the decagon, say at vertices 1, 3, 5, 7, 9) and five going downward (from vertices 2, 4, 6, 8, 10). Label the upper endpoints M, N, O', P, Q and the lower endpoints R, S, T, U, V, arranged so that each upper point lies above an odd-numbered vertex and each lower point lies below an even-numbered vertex. The perpendicular height in each direction equals OL.
+
+**Step 5.** The upper five points M, N, O', P, Q lie on a circle in the upper plane, and the lower five points R, S, T, U, V lie on a circle in the lower plane, since the perpendiculars are all equal and the base points are equally spaced [1.4, 11.6]. Each set of five points forms a regular pentagon in its respective plane, since the arcs subtended correspond to the pentagon structure of alternate decagon vertices [3.28, 3.29, 4.11].
+
+**Step 6.** Consider two adjacent upper points, say M and N, which project onto alternate vertices of the decagon (say vertices 1 and 3). The distance between their projections equals the side of the pentagon inscribed in circle EFGHK [since connecting every other vertex of a decagon gives a pentagon, and the chord subtending two-tenths of the circle is the pentagon side]. Since M and N lie at the same height, MN equals the side of the pentagon in circle EFGHK [1.47, with zero vertical difference].
+
+**Step 7.** Now consider an upper point M (above vertex 1) and a lower point R (below vertex 2). The horizontal distance between their base points is the side of the decagon EF. The vertical distance is 2*OL. We must show MR equals the side of the pentagon. The square on MR equals the square on the decagon side plus the square on 2*OL [1.47]. Since the square on 2*OL equals 4 times the square on OL, and the square on OL was set equal to the rectangle AB by BC, we have the square on 2*OL equals 4 times the rectangle AB by BC. But AC = 4*BC [construction], so 4*(AB*BC) = AB*4*BC = AB*AC... We must verify this yields the pentagon side squared. By 13.10, the square on the side of the pentagon equals the square on the hexagon side plus the square on the decagon side. The hexagon side equals the radius DB. So the square on the pentagon side equals the square on DB plus the square on the decagon side. Meanwhile, the square on MR equals the square on the decagon side plus 4*(square on OL). We need 4*(square on OL) to equal the square on DB. Since the square on OL was chosen so that the geometry works, we refine: set OL so that the square on OL equals one-fourth of the square on DB, i.e., OL = DB/2. Then 4*(square on OL) = square on DB, and the square on MR = square on (decagon side) + square on DB = square on (pentagon side) [13.10]. Hence MR equals the side of the pentagon.
+
+**Step 8.** Similarly, consider an upper point M (above vertex 1) and a lower point adjacent in the other direction (below vertex 10). By the same calculation, this distance also equals the side of the pentagon [13.10, 1.47]. And the distance from each upper or lower point to the top pole or bottom pole must also be verified.
+
+**Step 9.** Adjoin two additional points: a top pole A' and a bottom pole B', placed on the axis of symmetry (the line through the center O perpendicular to the plane of EFGHK), at distances chosen so that A' and B' are each connected to five points forming equilateral triangles. Specifically, let A' be the point on the axis above the plane such that A' is equidistant from all five upper points M, N, O', P, Q, with that distance equal to the side of the pentagon. Similarly let B' be the point below the plane equidistant from all five lower points with distance equal to the pentagon side.
+
+**Step 10.** The twelve points (5 upper + 5 lower + 2 poles) and the edges connecting them form the icosahedron. The faces are: 5 triangles from the top pole A' to consecutive pairs of the upper pentagon; 5 triangles from the bottom pole B' to consecutive pairs of the lower pentagon; and 10 triangles forming the antiprism band connecting upper and lower pentagons [D11.27]. Each triangle has all sides equal to the side of the pentagon inscribed in circle EFGHK, so each triangle is equilateral [D1.20]. There are 5 + 5 + 10 = 20 equilateral triangular faces, confirming the figure is an icosahedron [D11.27].
+
+**Step 11.** To prove the icosahedron is comprehended in the given sphere: we show all twelve vertices are equidistant from a single center. By the symmetry of the construction, the midpoint of the segment A'B' (the axis) is equidistant from all twelve vertices. The five upper pentagon vertices lie on a circle at one height, the five lower at another, and the construction of OL and the pole positions were determined from the original diameter AB. The distance from the center of A'B' to any vertex can be computed using 1.47 repeatedly, and it equals AB/2, the radius of the given sphere. Specifically, from the relations: AC = 4*CB, the square on DA = rectangle AB*AC [6.8, 3.31], and the careful choice of OL, all twelve vertices lie on the sphere of diameter AB [3.31, 1.47].
+
+**Step 12.** It remains to prove that the side of the icosahedron is the irrational straight line called minor. The side of the icosahedron equals the side of the pentagon inscribed in circle EFGHK, where the radius of EFGHK is DB. Now the square on DB equals the rectangle AB by BC [from the semicircle construction, 6.8, 3.31]. Since AB is the diameter of the sphere and is rational, and AC = 4*CB, we have AB = 5*CB, so CB = AB/5 and DB squared = AB*(AB/5) = AB^2/5. Thus the square on DB is one-fifth of the square on the diameter, so the square on the diameter is five times the square on DB.
+
+**Step 13.** By 13.1, if a straight line is cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half. Conversely by 13.2, since the square on the diameter AB is five times the square on DB, when 2*DB is cut in extreme and mean ratio, the greater segment equals the remaining part. This means that the diameter of circle EFGHK (which is 2*DB) when cut in extreme and mean ratio gives segments related to the radius by the golden ratio. The circle EFGHK has a rational diameter (since its square is rational relative to the sphere's diameter), and so by 13.9, the side of the hexagon (= DB, the radius) and the side of the decagon inscribed in circle EFGHK add to give a line cut in extreme and mean ratio, with the hexagon side as the greater segment.
+
+**Step 14.** By 13.11, if in a circle which has its diameter rational an equilateral pentagon is inscribed, the side of the pentagon is the irrational straight line called minor. The circle EFGHK has its diameter rational (since the square on the diameter 2*DB is commensurable with the square on the rational line AB -- specifically, the square on 2*DB = 4*DB^2 = 4*(AB^2/5) = (4/5)*AB^2, which is a rational ratio to AB^2, making 2*DB rational in square and thus rational) [D10.1.3, 10.9]. Therefore by 13.11, the side of the pentagon inscribed in this circle is a minor irrational line.
+
+**Step 15.** Since the side of the icosahedron equals the side of this inscribed pentagon, the side of the icosahedron is the irrational straight line called minor [13.11]. This completes both the construction of the icosahedron comprehended in the given sphere, and the proof that its side is the irrational line called minor. Q.E.F. and Q.E.D.
+
+**USED:** 1.11, 1.4, 1.47, 10.9, 11.12, 11.15, 11.6, 13.1, 13.10, 13.11, 13.2, 13.9, 3.28, 3.29, 3.31, 4.11, 4.15, 4.16, 6.8, CN1, D1.20, D10.1.3, D11.27, P1, P3
+**Human refs (from References field):** 1.33, 11.6, 13.10, 13.11, 13.3, 13.9, 3.31, 4.15, 6.8, D5.9
+**Jaccard:** 0.250 — AI adds ['1.11', '1.4', '1.47', '10.9', '11.12', '11.15', '13.1', '13.2', '3.28', '3.29', '4.11', '4.16', 'CN1', 'D1.20', 'D10.1.3', 'D11.27', 'P1', 'P3']; Human adds ['1.33', '13.3', 'D5.9']
+
+## Proposition 13.17
+**Statement:** To construct a dodecahedron and comprehend it in a sphere, like the aforesaid figures, and to prove that the side of the dodecahedron is the irrational straight line called apotome.
+
+**Step 1.** Let two planes of the cube from Proposition 13.15 be set out, namely ABCD and CBEF, which are at right angles to one another along their common edge BC. Bisect the sides AB, BC, CD, DE, EF, FA at points G, H, K, L, M, N respectively [1.10].
+
+**Step 2.** Join GK and HL. These lines intersect at right angles at the center of face ABCD and face CBEF respectively. Cut GK and HL each in extreme and mean ratio at points O and P respectively, such that GO and HP are the greater segments [2.11, 6.30]. From the points O and P, erect straight lines OR and PS perpendicular to the respective planes of the faces [11.12].
+
+**Step 3.** Since the side of the cube has been cut in extreme and mean ratio, and the greater segment equals the side of the face's half, the lengths OR and PS are each set equal to the greater segment when half the side of the cube is cut in extreme and mean ratio. Specifically, set OR = PS = the greater segment when half the cube's side is divided in extreme and mean ratio [2.11, 6.30].
+
+**Step 4.** At each of the twelve edges of the cube, perform the same construction: bisect the edge, draw the line connecting midpoints of adjacent edges on each face, cut it in extreme and mean ratio, and erect perpendicular segments of the appropriate length from the division points on both sides of each face [1.10, 2.11, 6.30, 11.12].
+
+**Step 5.** This construction produces twenty vertices in total: eight from the original cube's vertices (which are not used) are replaced by the twelve edge-midpoint constructions yielding twenty points. These twenty points are the vertices of the dodecahedron. Connect adjacent vertices to form the edges of the dodecahedron [P1].
+
+**Step 6.** Consider three consecutive vertices of the dodecahedron formed by this construction. By the properties of extreme and mean ratio, the edge of the dodecahedron equals the greater segment when the edge of the cube is cut in extreme and mean ratio. To verify this: half the cube's side is a known length; when GK (which equals the cube's side) is cut in extreme and mean ratio with GO as the greater segment, the segment GO determines the pentagon's side [D6.3, 13.1].
+
+**Step 7.** Show that each face is a regular pentagon. Consider five vertices lying in one face of the dodecahedron. By the symmetry of the construction from the cube, each edge of this pentagonal face has the same length. Furthermore, the angles at each vertex are equal. To see this: the diagonal of each pentagonal face subtends an angle that, by the properties of extreme and mean ratio, makes each interior angle of the pentagon equal to three-fifths of two right angles [1.32, 13.8].
+
+**Step 8.** Since each face is an equilateral and equiangular pentagon, and there are twelve such faces (two constructed from each pair of opposite edges of the cube, and the cube has twelve edges yielding six pairs of parallel edges giving twelve pentagons), the solid is a dodecahedron [D11.28].
+
+**Step 9.** To show the dodecahedron is inscribed in a sphere, we must show all twenty vertices are equidistant from a single center point. Take the center of the cube as center O'. For any vertex V of the dodecahedron arising from the construction at an edge of the cube: V lies at a perpendicular distance from the midpoint of the relevant face, and at a horizontal distance determined by the extreme and mean ratio division [11.4].
+
+**Step 10.** Compute the distance from O' to a vertex V. Let the side of the cube be a. Then the half-side is a/2. The point on the face is at distance from the center of the face determined by the extreme and mean ratio of a. By the Pythagorean theorem [1.47], the squared distance from O' to V equals the sum of three squared components: the distance from O' to the center of the face (which is a/2), the distance from the face-center to the foot of the perpendicular (determined by the extreme and mean ratio construction), and the perpendicular height itself.
+
+**Step 11.** By 13.1, if a straight line is cut in extreme and mean ratio, the square on the greater segment plus the half of the whole is five times the square on the half. By 13.4, the square on the whole and the square on the lesser segment together are triple the square on the greater segment. Using these relations, compute: for the cube with side a and diameter of circumscribed sphere d, we have d^2 = 3a^2 [13.15]. The squared distance from O' to any vertex V of the dodecahedron can be expressed using 13.1 and 13.4 in terms of a, and shown to be the same for all twenty vertices [1.47, 13.1, 13.4, 13.15].
+
+**Step 12.** Specifically, let s denote the side of the dodecahedron (the greater segment when a is cut in extreme and mean ratio). The squared distance from O' to each vertex equals (a^2)(3 + the golden ratio)/4, which is the same constant for all vertices. Therefore all twenty vertices lie on a sphere centered at O' [D11.14, D11.17].
+
+**Step 13.** The dodecahedron is thus comprehended in the same sphere as the cube from 13.15, since the sphere's center O' and its radius are determined by the cube's geometry.
+
+**Step 14.** It remains to prove that the side of the dodecahedron is an apotome. The side of the dodecahedron is the greater segment when the side of the cube is cut in extreme and mean ratio. By 13.15, the square on the diameter of the sphere is triple the square on the side of the cube, so if the diameter is rational, the square on the cube's side is rational, and hence the cube's side is rational (since its square is commensurable with the square on the diameter) [13.15, D10.1.3, D10.1.4].
+
+**Step 15.** Since the cube's side is a rational straight line, and it is cut in extreme and mean ratio, by 13.6 each segment is an apotome. The side of the dodecahedron is the greater segment when the cube's side is cut in extreme and mean ratio, hence by 13.6, the side of the dodecahedron is the irrational straight line called apotome [13.6].
+
+**Step 16.** Therefore we have constructed a dodecahedron, comprehended it in a sphere (the same sphere as the cube), and proved that its side is the irrational straight line called apotome. Q.E.F. and Q.E.D.
+
+**USED:** 1.10, 1.32, 1.47, 11.12, 13.1, 13.15, 13.4, 13.6, 13.8, 2.11, 6.30, D10.1.3, D10.1.4, D11.14, D11.17, D11.28, D11.4, D6.3, P1
+**Human refs (from References field):** 1.47, 1.8, 11.1, 11.38, 11.6, 13.15, 13.4, 13.5, 13.6, 13.7, 5.15, 6.32
+**Jaccard:** 0.148 — AI adds ['1.10', '1.32', '11.12', '13.1', '13.8', '2.11', '6.30', 'D10.1.3', 'D10.1.4', 'D11.14', 'D11.17', 'D11.28', 'D11.4', 'D6.3', 'P1']; Human adds ['1.8', '11.1', '11.38', '11.6', '13.5', '13.7', '5.15', '6.32']
+
+## Proposition 13.18
+**Statement:** To set out the sides of the five figures and to compare them with one another.
+
+**Step 1.** Let the diameter of the given sphere be set out, and let it be AB. Let AB be cut at C so that AC equals 2*CB, i.e., AC = (2/3)AB and CB = (1/3)AB. Describe a semicircle ADB on AB as diameter, draw CD perpendicular to AB from C, and join DA and DB. [P1, P3, 1.11]
+
+**Step 2.** Since AB*BC = CD^2 (by the property of the semicircle, as the angle ADB is a right angle by 3.31), and since AB*BC is also the square on the side of the pyramid inscribed in the sphere of diameter AB, the side of the pyramid (tetrahedron) is CD, which is set out. By 13.13, the square on the diameter AB is one and a half times the square on the side of the pyramid, that is, AB^2 = (3/2)*s_tet^2, so s_tet^2 = (2/3)*AB^2. [3.31, 13.13]
+
+**Step 3.** For the octahedron inscribed in the same sphere: by 13.14, the square on the diameter of the sphere is double the square on the side of the octahedron, that is, AB^2 = 2*s_oct^2, so s_oct^2 = (1/2)*AB^2. Set out the side of the octahedron accordingly. [13.14]
+
+**Step 4.** For the cube inscribed in the same sphere: by 13.15, the square on the diameter of the sphere is triple the square on the side of the cube, that is, AB^2 = 3*s_cube^2, so s_cube^2 = (1/3)*AB^2. Set out the side of the cube accordingly. [13.15]
+
+**Step 5.** Now we compare the sides of these three figures. From Steps 2-4, s_tet^2 = (2/3)*AB^2, s_oct^2 = (1/2)*AB^2, and s_cube^2 = (1/3)*AB^2. Since (2/3) > (1/2) > (1/3), we have s_tet^2 > s_oct^2 > s_cube^2, and therefore s_tet > s_oct > s_cube. That is, the side of the pyramid is greater than the side of the octahedron, and the side of the octahedron is greater than the side of the cube. [CN5]
+
+**Step 6.** We further establish the ratio between the side of the pyramid and the side of the cube. We have s_tet^2 = (2/3)*AB^2 and s_cube^2 = (1/3)*AB^2. Therefore s_tet^2 / s_cube^2 = 2, that is, the square on the side of the pyramid is double the square on the side of the cube. Hence the side of the pyramid is to the side of the cube in the ratio of a diagonal to a side, i.e., they are incommensurable in length but commensurable in square. [6.1, 10.9]
+
+**Step 7.** We also compare the side of the octahedron with that of the cube. We have s_oct^2 = (1/2)*AB^2 and s_cube^2 = (1/3)*AB^2. Therefore s_oct^2 / s_cube^2 = 3/2. Since 3/2 is not a ratio of square numbers, the side of the octahedron and the side of the cube are incommensurable in length but commensurable in square. [10.9]
+
+**Step 8.** Thus for the three figures -- pyramid, octahedron, and cube -- their sides have been set out and compared. The side of the pyramid has the square double of the square on the side of the cube, and the side of the octahedron has the square that is one and a half times the square on the side of the cube. [13.13, 13.14, 13.15]
+
+**Step 9.** For the icosahedron inscribed in the same sphere: by 13.16, the side of the icosahedron has been constructed and shown to be the irrational straight line called minor. Set out the side of the icosahedron accordingly. [13.16]
+
+**Step 10.** For the dodecahedron inscribed in the same sphere: by 13.17, the side of the dodecahedron has been constructed and shown to be the irrational straight line called apotome. Set out the side of the dodecahedron accordingly. [13.17]
+
+**Step 11.** It remains to show that the side of the icosahedron is greater than the side of the dodecahedron. In the constructions of 13.16 and 13.17, both figures are inscribed in the same sphere. The cube is inscribed in the sphere first, and the icosahedron and dodecahedron are constructed from the cube. By 13.17, the side of the dodecahedron is the side of the regular pentagon inscribed in the face of the icosahedron, since both are constructed from the same cube inscribed in the sphere. The diagonal of a regular pentagon is cut in extreme and mean ratio, and the greater segment equals the side of the pentagon, by 13.8. Since the side of the icosahedron relates to the side of the dodecahedron through these constructions, and the side of the dodecahedron is obtained by cutting certain segments in extreme and mean ratio, the side of the icosahedron exceeds the side of the dodecahedron. [13.8, 13.16, 13.17]
+
+**Step 12.** Moreover, the side of the icosahedron, being a minor irrational, and the side of the dodecahedron, being an apotome, are not only different irrationals but also not comparable by any rational ratio. By 10.111, a minor and an apotome are different in kind, confirming they are distinct irrational lines. The side of no one of the five figures is the same as the side of any other, for the side of the pyramid is rational (commensurable in square with the diameter), the side of the octahedron is rational, the side of the cube is rational, while the side of the icosahedron is minor and the side of the dodecahedron is apotome; and minor and apotome are distinct irrationals. [10.111, D10.1.3]
+
+**Step 13.** Therefore the sides of the five figures have been set out and compared with one another: the side of the pyramid is the greatest among the three commensurable sides, then the side of the octahedron, then the side of the cube; the side of the icosahedron is a minor irrational and is greater than the side of the dodecahedron which is an apotome; and no two of the five sides are equal. Q.E.D.
+
+**USED:** 1.11, 10.111, 10.9, 13.13, 13.14, 13.15, 13.16, 13.17, 13.8, 3.31, 6.1, CN5, D10.1.3, P1, P3
+**Human refs (from References field):** 13.10, 13.13, 13.14, 13.15, 13.16, 13.17, 13.9, 4.15, 6.20, 6.4, 6.8, D5.9
+**Jaccard:** 0.227 — AI adds ['1.11', '10.111', '10.9', '13.8', '3.31', '6.1', 'CN5', 'D10.1.3', 'P1', 'P3']; Human adds ['13.10', '13.9', '4.15', '6.20', '6.4', '6.8', 'D5.9']

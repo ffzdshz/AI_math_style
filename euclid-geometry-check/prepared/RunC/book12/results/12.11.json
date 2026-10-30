@@ -1,0 +1,51 @@
+{
+  "proposition": "12.11",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two circles A and B serve as bases of cones/cylinders, all sharing the same height h",
+      "type": "basic_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "A regular polygon is inscribed in circle B, lying entirely within circle B",
+      "type": "containment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The same regular polygon is inscribed in circle A, lying entirely within circle A",
+      "type": "containment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Prism of height h erected on inscribed polygon in circle A is contained within cylinder(A)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Prism of height h erected on inscribed polygon in circle B is contained within cylinder(B)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Each inscribed polygon is divided into triangles from its center; each prism decomposes into triangular prisms",
+      "type": "spatial_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "prism(A) < cylinder(A) since the prism is inscribed in the cylinder",
+      "type": "containment"
+    },
+    {
+      "step": "Step 8",
+      "claim": "prism(B) < cylinder(B) since the prism is inscribed in the cylinder",
+      "type": "containment"
+    }
+  ],
+  "configuration_map": "The configuration involves two circles A and B as bases, with cones and cylinders of equal height h erected on each. Regular polygons are inscribed in each circle (vertices on the circle, polygon interior within the circle). Prisms of height h are erected on these inscribed polygons, and since the polygon base is contained in the circular base and the heights match, each prism is fully contained within its respective cylinder. The polygons can be subdivided from their centers into triangles, inducing a decomposition of the prisms into triangular prisms. No auxiliary points have complex or ambiguous positions. The entire spatial configuration is standard and unambiguous.",
+  "pass_reason": "The proof is predominantly a proportion-theory argument using the method of exhaustion. Its spatial claims are limited to standard containment relationships (inscribed polygons in circles, inscribed prisms in cylinders) which are all trivially consistent. There are no angle decompositions, no interior/exterior point arguments, no ray-ordering claims, and no complex point-position tracking that could generate contradictions."
+}

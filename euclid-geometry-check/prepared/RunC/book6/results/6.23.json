@@ -1,0 +1,61 @@
+{
+  "proposition": "6.23",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD and CEFG are parallelograms with angle BCD equal to angle GCE",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BC is in a straight line with CG (B, C, G are collinear)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "angle BCD + angle DCG = two right angles (supplementary angles on line BCG, by 1.13)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "DC is in a straight line with CE (D, C, E are collinear, by 1.14)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "GH is drawn parallel to DC (and CE) through G",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DCGH is a completed parallelogram with DC || GH and DH || CG",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "ABCD and DCGH are between the same parallel lines: line BG and the line through A, D, H",
+      "type": "between_parallels"
+    },
+    {
+      "step": "Step 4",
+      "claim": "ABCD and DCGH share base line BG (bases BC and CG respectively)",
+      "type": "shared_base"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DCGH and CEFG are between the same parallel lines: line DE and the line through G, H, F",
+      "type": "between_parallels"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DCGH and CEFG share base line DE (bases DC and CE respectively)",
+      "type": "shared_base"
+    }
+  ],
+  "configuration_map": "Place C at origin. B, C, G collinear on the x-axis (line BG). D, C, E collinear on a second line through C (line DE), making angle theta with BG. A is the fourth vertex of parallelogram ABCD, located above line BG. H is constructed as the fourth vertex of parallelogram DCGH (GH || DC through G); H lies on the line through A and D, parallel to BG. F is the fourth vertex of parallelogram CEFG, located below line BG. Key collinearities: (1) A, D, H are collinear on a line parallel to BG at height d*sin(theta); (2) H, G, F are collinear on a line parallel to DE at perpendicular distance g*sin(theta) from DE. Both pairs of parallelograms (ABCD,DCGH) and (DCGH,CEFG) correctly share base lines and lie between parallel lines, validating both applications of 6.1.",
+  "pass_reason": "All spatial claims are mutually consistent. Coordinate verification confirms: (1) B,C,G collinear and D,C,E collinear follow correctly from the equal angles and 1.13/1.14; (2) A,D,H are collinear on a line parallel to BG, so ABCD and DCGH are between the same parallels with bases on BG; (3) H,G,F are collinear on a line parallel to DE, so DCGH and CEFG are between the same parallels with bases on DE. Both applications of 6.1 are geometrically valid. The ratio compounding in Step 6 is purely algebraic. A minor labeling issue (mentioning HF in Step 4 when F is not on that parallel line) does not affect geometric correctness."
+}

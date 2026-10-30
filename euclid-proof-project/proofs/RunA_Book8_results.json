@@ -1,0 +1,375 @@
+{
+  "summary": "Prove all 27 propositions of Euclid Book 8 (Run A)",
+  "agentCount": 27,
+  "logs": [
+    "Run A | Book 8: proving 27 propositions",
+    "8.5 proved (5 refs)",
+    "8.1 proved (4 refs)",
+    "8.8 proved (6 refs)",
+    "8.2 proved (6 refs)",
+    "8.7 proved (1 refs)",
+    "8.3 proved (6 refs)",
+    "8.4 proved (6 refs)",
+    "8.11 proved (6 refs)",
+    "8.12 proved (7 refs)",
+    "8.16 proved (2 refs)",
+    "8.17 proved (1 refs)",
+    "8.14 proved (7 refs)",
+    "8.13 proved (4 refs)",
+    "8.18 proved (7 refs)",
+    "8.9 proved (5 refs)",
+    "8.10 proved (6 refs)",
+    "8.25 proved (4 refs)",
+    "8.24 proved (3 refs)",
+    "8.20 proved (5 refs)",
+    "8.19 proved (8 refs)",
+    "8.15 proved (5 refs)",
+    "8.22 proved (7 refs)",
+    "8.27 proved (9 refs)",
+    "8.26 proved (8 refs)",
+    "8.23 proved (5 refs)",
+    "8.6 proved (9 refs)",
+    "8.21 proved (6 refs)",
+    "No ordering violations found",
+    "Done: 27/27 propositions"
+  ],
+  "result": [
+    {
+      "prop_id": "8.1",
+      "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.",
+      "proof": "**Step 1.** Let A, B, C, ..., D be as many numbers as we please in continued proportion, and let the extremes A and D be prime to one another. We must show that A, B, C, ..., D are the least of those which have the same ratio with them.\n\n**Step 2.** Suppose, for the sake of contradiction, that A, B, C, ..., D are not the least numbers in continued proportion having those ratios. Then there exist numbers E, F, G, ..., H, less than A, B, C, ..., D respectively (that is, at least one of them is less than the corresponding term), which are in the same continued proportion as A, B, C, ..., D.\n\n**Step 3.** Since A, B, C, ..., D and E, F, G, ..., H are in the same continued proportion, the ratio of the extremes is the same in both sequences: that is, A is to D as E is to H. This follows because the continued proportion determines each successive ratio, and so the ratio of the first to the last is determined by these successive ratios, which are the same in both sequences (by repeated application of 7.14, which states that if a:b = c:d and b:e = d:f, then a:e = c:f, applied through the chain of equal ratios via 7.13 on the ex aequali composition).\n\n**Step 4.** Since A and D are prime to one another, by Proposition 7.21 (numbers prime to one another are the least of those which have the same ratio with them), A and D are the least numbers in the ratio A:D.\n\n**Step 5.** Since A and D are the least numbers in the ratio A:D, and E:H = A:D, by Proposition 7.20 (the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less), A measures E and D measures H.\n\n**Step 6.** Since A measures E, we have E is a multiple of A, so E is greater than or equal to A. Similarly, since D measures H, H is greater than or equal to D.\n\n**Step 7.** But by our assumption in Step 2, E, F, G, ..., H are supposed to be less than or equal to A, B, C, ..., D with at least one strictly less. Since E is greater than or equal to A and H is greater than or equal to D, we must have E = A and H = D.\n\n**Step 8.** Now since A:B = E:F and E = A, we have A:B = A:F, whence B = F (by 7.20, since in equal ratios the terms are equimultiples of the least, and A = E forces B = F). Similarly, proceeding through each consecutive ratio, each term of the sequence E, F, G, ..., H equals the corresponding term of A, B, C, ..., D.\n\n**Step 9.** This contradicts the assumption that E, F, G, ..., H are less than A, B, C, ..., D (with at least one strictly less). Therefore the supposition in Step 2 is false.\n\n**Step 10.** Therefore A, B, C, ..., D are the least of those numbers which have the same ratio with them. Q.E.D.",
+      "used": [
+        "7.14",
+        "7.20",
+        "7.21",
+        "D7.20"
+      ]
+    },
+    {
+      "prop_id": "8.2",
+      "statement": "To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.",
+      "proof": "**Step 1.** Let the given ratio be that of A to B. Using Proposition 7.33, let A and B be the least numbers having this ratio. We are prescribed to find n numbers in continued proportion with ratio A:B, and the least such numbers.\n\n**Step 2.** Since A and B are the least numbers in their ratio, by Proposition 7.22, A and B are prime to one another.\n\n**Step 3.** We construct the required sequence as follows. For the case of two terms, the answer is simply A, B. For the case of three terms, let A multiplied by A produce C, let A multiplied by B produce D, and let B multiplied by B produce E. We claim C, D, E are in continued proportion with ratio A:B.\n\n**Step 4.** Since A multiplied by A makes C and multiplied by B makes D, by Proposition 7.17, C is to D as A is to B. Since A multiplied by B makes D and B multiplied by B makes E, by Proposition 7.18 (since A and B each multiply B, yielding D and E respectively — equivalently, B multiplied by A makes D and B multiplied by B makes E), by Proposition 7.17, D is to E as A is to B. Therefore C, D, E are in continued proportion with the ratio A:B.\n\n**Step 5.** For four terms, let C (which is A squared) multiply A to produce F, let C multiply B to produce G, and let E (which is B squared) multiply B to produce H. We already have C, D, E in continued proportion. Now since C multiplied by A makes F and C multiplied by B makes G, by Proposition 7.17, F is to G as A is to B. But we showed C:D = A:B, so F:G = C:D. Since D = A times B, and G = A squared times B = C times B, while D times A = A times B times A = A squared times B = G, we see G = D times A. Similarly, D multiplied by B makes A times B times B = A times B squared = D times B. But E = B squared, and D = AB, so D times B = AB squared. And E times A = B squared times A = AB squared. Thus D multiplied by B equals E multiplied by A, so the term after D times A = G continues the proportion. We can verify the full sequence: F = A cubed, G = A squared times B, and the term A times B squared, and H = B cubed are in continued proportion with ratio A:B.\n\n**Step 6.** More precisely, for the general case of n terms, we form the sequence: A^(n-1), A^(n-2)*B, A^(n-3)*B^2, ..., A*B^(n-2), B^(n-1). Each consecutive pair A^(n-1-k)*B^k and A^(n-2-k)*B^(k+1) can be written as A^(n-2-k)*B^k multiplied by A, and A^(n-2-k)*B^k multiplied by B, respectively. By Proposition 7.17, their ratio equals A:B. Hence all consecutive pairs are in the ratio A:B, and the sequence is in continued proportion.\n\n**Step 7.** It remains to show these are the least such numbers. Since A and B are prime to one another (Step 2), by Proposition 7.27, A squared and B squared are prime to one another, and A cubed and B cubed are prime to one another, and in general A^(n-1) and B^(n-1) are prime to one another. That is, the extremes of our sequence are prime to one another.\n\n**Step 8.** Since the numbers A^(n-1), A^(n-2)*B, ..., B^(n-1) are in continued proportion and the extremes A^(n-1) and B^(n-1) are prime to one another, by Proposition 8.1, these numbers are the least of those which have the same ratio with them.\n\n**Step 9.** Therefore we have found numbers in continued proportion, as many as prescribed, that are the least in the given ratio A:B. This is what was required to find.",
+      "used": [
+        "7.33",
+        "7.22",
+        "7.17",
+        "7.18",
+        "7.27",
+        "8.1"
+      ]
+    },
+    {
+      "prop_id": "8.3",
+      "statement": "If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.",
+      "proof": "**Step 1.** Let A_1, A_2, ..., A_n be as many numbers as we please in continued proportion, and let them be the least of those which have the same ratio with them. We must show that the extremes A_1 and A_n are prime to one another.\n\n**Step 2.** Since A_1, A_2, ..., A_n are in continued proportion, the ratio A_1 : A_2 is the same as A_2 : A_3, and so on. By 7.33, let e and f be the least numbers in the ratio A_1 : A_2.\n\n**Step 3.** Since e and f are the least numbers having the same ratio as A_1 to A_2, by 7.22, e and f are prime to one another.\n\n**Step 4.** By 8.2, from the ratio e : f we can find the least numbers in continued proportion with n terms. Let these be G_1, G_2, ..., G_n. By the construction of 8.2, G_1 is obtained by multiplying e by itself (n - 1) times, and G_n is obtained by multiplying f by itself (n - 1) times. That is, G_1 = e^(n-1) and G_n = f^(n-1), while the intermediate terms are the appropriate products of powers of e and f.\n\n**Step 5.** Now A_1, A_2, ..., A_n are the least numbers in continued proportion with ratio A_1 : A_2, and G_1, G_2, ..., G_n are also the least numbers in continued proportion with the same ratio e : f = A_1 : A_2 and the same number of terms. Since the least numbers in continued proportion for a given ratio and given count of terms are unique, we have A_i = G_i for each i. In particular, A_1 = G_1 = e^(n-1) and A_n = G_n = f^(n-1).\n\n**Step 6.** Since e and f are prime to one another (Step 3), by 7.27, the numbers obtained by multiplying e by itself any number of times and f by itself the same number of times are also prime to one another. Specifically, e^(n-1) and f^(n-1) are prime to one another.\n\n**Step 7.** Therefore A_1 and A_n, being equal to e^(n-1) and f^(n-1) respectively, are prime to one another. This is what was to be proved.",
+      "used": [
+        "7.22",
+        "7.27",
+        "7.33",
+        "8.2",
+        "D7.12",
+        "D7.20"
+      ]
+    },
+    {
+      "prop_id": "8.4",
+      "statement": "Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.",
+      "proof": "**Step 1.** Let the given ratios in least numbers be A:B, C:D, E:F, and so on, for as many ratios as we please. We must find numbers in continued proportion which are the least having these ratios consecutively.\n\n**Step 2.** First, consider the two ratios A:B and C:D. Since A:B is in least numbers, A and B are prime to one another by 7.22. Similarly, since C:D is in least numbers, C and D are prime to one another by 7.22.\n\n**Step 3.** Let A multiplied by C make G, let A multiplied by D make H, and let B multiplied by D make K. (We may also note that B multiplied by C makes L, where L equals the product of B and C.)\n\n**Step 4.** Since A multiplied by C makes G and A multiplied by D makes H, we have G:H = C:D by 7.17 (when a number multiplies two numbers, the products have the same ratio as the numbers multiplied). Likewise, since A multiplied by D makes H and B multiplied by D makes K, we have H:K = A:B by 7.18 (when two numbers multiply a number, the products have the same ratio as the multipliers).\n\n**Step 5.** But we require the continued proportion to have ratios A:B first, then C:D. So reconfigure: let C multiplied by A make P, let C multiplied by B make Q, and let B multiplied by D make R. Then P = CA, Q = CB, R = BD.\n\n**Step 6.** Since C multiplied by A makes P and C multiplied by B makes Q, we have P:Q = A:B by 7.17 (C multiplies both A and B, so the products are as A to B).\n\n**Step 7.** Since B multiplied by C makes Q (for CB = BC) and B multiplied by D makes R, we have Q:R = C:D by 7.17 (B multiplies both C and D, so the products are as C to D).\n\n**Step 8.** Therefore P, Q, R are in continued proportion with P:Q = A:B and Q:R = C:D. However, P, Q, R may not yet be the least such numbers.\n\n**Step 9.** By 7.33, find the least numbers G, H, K having the same ratio as P, Q, R. Then G:H:K is proportional to P:Q:R, meaning G:H = P:Q = A:B and H:K = Q:R = C:D.\n\n**Step 10.** The numbers G, H, K are the least in continued proportion with ratios A:B and C:D, since by 7.33 they are the least numbers having these ratios.\n\n**Step 11.** Now suppose there is a further ratio E:F in least numbers. We extend the continued proportion as follows. Let G, H, K be the continued proportion already found for ratios A:B and C:D.\n\n**Step 12.** Let E multiplied by G make P', E multiplied by H make Q', E multiplied by K make R', and K multiplied by F make S'. Then P' = EG, Q' = EH, R' = EK, S' = KF.\n\n**Step 13.** Since E multiplied by G makes P' and E multiplied by H makes Q', we have P':Q' = G:H = A:B by 7.17. Similarly, E multiplied by H makes Q' and E multiplied by K makes R', so Q':R' = H:K = C:D by 7.17.\n\n**Step 14.** Since K multiplied by E makes R' (for EK = KE by 7.16, which states that if two numbers multiply one another they make the same product) and K multiplied by F makes S', we have R':S' = E:F by 7.17.\n\n**Step 15.** Therefore P', Q', R', S' are in continued proportion with ratios A:B, C:D, E:F. By 7.33, find the least numbers L, M, N, O having the same ratios as P', Q', R', S'. Then L:M = A:B, M:N = C:D, and N:O = E:F, and these are the least such numbers.\n\n**Step 16.** This process may be continued for as many ratios as we please: at each stage, if we have the least numbers in continued proportion for the first n ratios, say X_1, X_2, ..., X_{n+1}, and we are given a new ratio in least numbers, we multiply X_1, X_2, ..., X_{n+1} each by the first term of the new ratio, and multiply X_{n+1} by the second term of the new ratio, producing numbers in continued proportion with all n+1 ratios. Applying 7.33 then yields the least such numbers.\n\n**Step 17.** It remains to verify that these are indeed the least. Suppose there exist smaller numbers in continued proportion with the same ratios. Since G, H, K, ... are the result of applying 7.33 (which produces the least numbers in the given ratios), any other numbers in the same continued proportion must be equimultiples of G, H, K, ... by 7.20 (the least numbers of those which have the same ratio measure those which have the same ratio equally). Hence no smaller such numbers exist.\n\n**Step 18.** Therefore, given as many ratios as we please in least numbers, we have found numbers in continued proportion which are the least in the given ratios. Q.E.F.",
+      "used": [
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.20",
+        "7.22",
+        "7.33"
+      ]
+    },
+    {
+      "prop_id": "8.5",
+      "statement": "Plane numbers have to one another the ratio compounded of the ratios of their sides.",
+      "proof": "**Step 1.** Let A and C be plane numbers, with A = a * b (sides a and b) and C = c * d (sides c and d), as given by the definition of plane numbers [D7.16].\n\n**Step 2.** We wish to show that the ratio A : C is the ratio compounded of the ratios of their sides, namely a : c and b : d. By the definition of compounded ratio [D6.5], it suffices to find a number E such that A : E = a : c and E : C = b : d, so that the ratio A : C is obtained by compounding these two ratios in sequence.\n\n**Step 3.** Let E be the number produced when c multiplies b, that is, E = c * b [D7.15].\n\n**Step 4.** Since a and c each multiply b, producing A = a * b and E = c * b respectively, by Proposition 7.18 (if two numbers multiply any number, the products have the same ratio as the multipliers), we have A : E = a : c.\n\n**Step 5.** Since c multiplies both b and d, producing E = c * b and C = c * d respectively, by Proposition 7.17 (if a number multiplies two numbers, the products have the same ratio as the numbers multiplied), we have E : C = b : d.\n\n**Step 6.** Therefore, since A : E = a : c and E : C = b : d, the ratio A : C is the ratio compounded of a : c and b : d [D6.5]. That is, the plane numbers A and C have to one another the ratio compounded of the ratios of their sides. Q.E.D.",
+      "used": [
+        "D6.5",
+        "D7.15",
+        "D7.16",
+        "7.17",
+        "7.18"
+      ]
+    },
+    {
+      "prop_id": "8.6",
+      "statement": "If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.",
+      "proof": "**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An, with A1 less than A2, and let A1 not measure A2. We must show that neither does any of them measure any other.\n\n**Step 2.** By 7.33, let p and q be the least numbers in the same ratio as A1:A2. By 7.22, p and q are prime to one another. Since A1 < A2, we have p < q.\n\n**Step 3.** By 7.20, since p and q are the least in the ratio A1:A2, there exists a number m such that A1 = m*p and A2 = m*q.\n\n**Step 4.** If p were equal to 1, then A2 = m*q = q*A1, so A1 would measure A2, contradicting the hypothesis. Therefore p > 1. Since p < q, it follows that q > 1 as well.\n\n**Step 5.** Since the ratio p:q has p < q, the continued proportion is increasing: A1 < A2 < A3 < ... < An. By D7.3, measurement is of the less into the greater, so the only way any term can measure another is if an earlier (lesser) term measures a later (greater) one. We must show this cannot happen.\n\n**Step 6.** (Consecutive terms) Suppose for contradiction that for some k, A_k measures A(k+1). Then A(k+1) = t*A_k for some positive integer t, so by D7.20 the ratio A_k:A(k+1) equals 1:t. Since A_k:A(k+1) = p:q from the continued proportion, and p, q are the least in this ratio (by 7.21, since they are prime to one another), by 7.20 p must measure 1. Hence p = 1, contradicting Step 4. Therefore no consecutive term measures the next.\n\n**Step 7.** (Non-consecutive terms) Now let i < j with j - i >= 2. The numbers A_i, A(i+1), ..., A_j form a continued proportion of (j - i + 1) terms in ratio p:q. By 8.2, let L1, L2, ..., L(j-i+1) be the least numbers in continued proportion of (j - i + 1) terms in this same ratio.\n\n**Step 8.** By 8.3, the extremes L1 and L(j-i+1) are prime to one another. Therefore by 7.21, L1 and L(j-i+1) are the least numbers in the ratio L1:L(j-i+1).\n\n**Step 9.** The sequences A_i, A(i+1), ..., A_j and L1, L2, ..., L(j-i+1) have the same multitude, and each consecutive pair is in the same ratio p:q. By 7.14 (ex aequali), A_i:A_j = L1:L(j-i+1).\n\n**Step 10.** Since L1 and L(j-i+1) are the least in their ratio (Step 8) and A_i:A_j is the same ratio (Step 9), by 7.20 there exists a number m' such that A_i = m'*L1 and A_j = m'*L(j-i+1).\n\n**Step 11.** Suppose for contradiction that A_i measures A_j. Then A_j = s*A_i for some positive integer s. Substituting from Step 10: m'*L(j-i+1) = s*m'*L1, whence L(j-i+1) = s*L1, so L1 measures L(j-i+1). Since L1 and L(j-i+1) are prime to one another (Step 8), L1 = 1.\n\n**Step 12.** But L1, L2, ..., L(j-i+1) is a continued proportion in ratio p:q, so L1:L2 = p:q, that is, 1:L2 = p:q. Since p and q are the least in ratio p:q (Step 2, by 7.21), by 7.20 p measures 1, giving p = 1. This contradicts Step 4.\n\n**Step 13.** Therefore A_i does not measure A_j. Since i and j were arbitrary with i < j, no term of the continued proportion measures any other. Q.E.D.",
+      "used": [
+        "D7.3",
+        "D7.20",
+        "7.14",
+        "7.20",
+        "7.21",
+        "7.22",
+        "7.33",
+        "8.2",
+        "8.3"
+      ]
+    },
+    {
+      "prop_id": "8.7",
+      "statement": "If there be as many numbers as we please in continued proportion, and the first measure the last, it will measure the second also.",
+      "proof": "**Step 1.** Let A_1, A_2, ..., A_n be as many numbers as we please in continued proportion, and let A_1 measure A_n.\n\n**Step 2.** Suppose, for the sake of contradiction, that A_1 does not measure A_2.\n\n**Step 3.** Since A_1, A_2, ..., A_n are in continued proportion and A_1 does not measure A_2, then by Proposition 8.6, neither will any other of the numbers measure any other. In particular, A_1 does not measure A_n. [8.6]\n\n**Step 4.** But this contradicts our hypothesis that A_1 measures A_n.\n\n**Step 5.** Therefore the supposition is false, and A_1 must measure A_2. Q.E.D.",
+      "used": [
+        "8.6"
+      ]
+    },
+    {
+      "prop_id": "8.8",
+      "statement": "If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.",
+      "proof": "**Step 1.** Let A, C1, C2, ..., Ck, B be numbers in continued proportion, so that k numbers fall between A and B. Let D, E be numbers such that A:B :: D:E. We must show that there exist k numbers falling in continued proportion between D and E.\n\n**Step 2.** By 7.33, find the least numbers F, G in the ratio A:B. Then F:G :: A:B :: D:E.\n\n**Step 3.** By 8.2, find the least numbers in continued proportion having k+2 terms in the ratio F:G. Call these F, H1, H2, ..., Hk, G, so that F:H1 :: H1:H2 :: ... :: Hk:G :: F:G.\n\n**Step 4.** Since A, C1, ..., Ck, B are in continued proportion and F, H1, ..., Hk, G are the least numbers in continued proportion of the same count of terms with the same ratio (by 8.1, since by 8.3 the extremes F, G of the least continued proportion are prime to one another), by 7.20 the least numbers F, G measure the numbers A, B which have the same ratio, the same number of times. That is, F measures A and G measures B, and there exists a number m such that A = m·F and B = m·G.\n\n**Step 5.** Similarly, since D:E :: F:G and F, G are the least numbers in this ratio, by 7.20 there exists a number n such that D = n·F and E = n·G.\n\n**Step 6.** Form the numbers n·H1, n·H2, ..., n·Hk. We claim these k numbers fall in continued proportion between D and E.\n\n**Step 7.** Since F, H1, H2, ..., Hk, G are in continued proportion, we have F:H1 :: H1:H2 :: ... :: Hk:G. By 7.17, if a number multiplies two numbers, the products have the same ratio as the numbers multiplied. Applying this to n multiplying each consecutive pair: n·F : n·H1 :: F : H1, and n·H1 : n·H2 :: H1 : H2, and so on through n·Hk : n·G :: Hk : G.\n\n**Step 8.** Therefore D, n·H1, n·H2, ..., n·Hk, E are in continued proportion (since n·F = D and n·G = E, and all consecutive ratios are equal by Step 7).\n\n**Step 9.** Thus k numbers, namely n·H1, n·H2, ..., n·Hk, fall in continued proportion between D and E, which is the same count as the k numbers that fall between A and B.\n\n**Step 10.** Therefore, if between two numbers there fall numbers in continued proportion with them, then however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers. Q.E.D.",
+      "used": [
+        "7.33",
+        "8.2",
+        "8.1",
+        "8.3",
+        "7.20",
+        "7.17"
+      ]
+    },
+    {
+      "prop_id": "8.9",
+      "statement": "If two numbers be prime to one another, and numbers fall between them in continued proportion, then, however many numbers fall between them in continued proportion, so many will also fall between each of them and an unit in continued proportion.",
+      "proof": "**Step 1.** Let A and B be two numbers prime to one another, and let C_1, C_2, ..., C_n fall between them in continued proportion, so that A, C_1, C_2, ..., C_n, B is a sequence of n+2 terms in continued proportion. We must show that n numbers also fall between A and the unit in continued proportion, and likewise n numbers between B and the unit.\n\n**Step 2.** Since A and B are prime to one another, and A, C_1, ..., C_n, B are in continued proportion, by 8.1 these numbers are the least of those which have the same ratio with them.\n\n**Step 3.** Let the ratio A : C_1 be represented in least terms as e : f. By 7.22, since e and f are the least numbers in their ratio, e and f are prime to one another.\n\n**Step 4.** By 8.2, we can find the least n+2 numbers in continued proportion with ratio e : f. The construction of 8.2 produces the sequence e^(n+1), e^n * f, e^(n-1) * f^2, ..., e * f^n, f^(n+1), where each consecutive pair is in the ratio e : f.\n\n**Step 5.** But by Step 2, A, C_1, ..., C_n, B are themselves the least n+2 numbers in continued proportion with ratio A : C_1 = e : f. Since the least such numbers are unique (for if there were two distinct sets of least numbers in the same ratio with the same count of terms, one would have to be less than the other, contradicting minimality), the sequence from Step 2 equals the sequence from Step 4. In particular, A = e^(n+1) and B = f^(n+1).\n\n**Step 6.** Now consider the sequence 1, e, e^2, e^3, ..., e^n, e^(n+1). Each consecutive pair has the ratio 1 : e, since e^k multiplied by e gives e^(k+1) (by D7.15 and D7.20). Therefore these n+2 terms are in continued proportion. Between the unit 1 and e^(n+1) = A, there fall exactly n numbers, namely e, e^2, ..., e^n.\n\n**Step 7.** Similarly, consider the sequence 1, f, f^2, f^3, ..., f^n, f^(n+1). Each consecutive pair has the ratio 1 : f, so these are in continued proportion. Between the unit 1 and f^(n+1) = B, there fall exactly n numbers, namely f, f^2, ..., f^n.\n\n**Step 8.** Therefore, however many numbers fall between A and B in continued proportion (namely n), so many also fall between A and the unit in continued proportion, and so many between B and the unit in continued proportion. This is what was to be proved.",
+      "used": [
+        "8.1",
+        "8.2",
+        "7.22",
+        "D7.15",
+        "D7.20"
+      ]
+    },
+    {
+      "prop_id": "8.10",
+      "statement": "If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.",
+      "proof": "**Step 1.** Let A and B be two numbers, and suppose that there are n numbers falling between A and the unit 1 in continued proportion, and likewise n numbers falling between B and 1 in continued proportion. We must show that n numbers also fall between A and B in continued proportion.\n\n**Step 2.** Let the continued proportion from 1 to A be 1, c, c^2, ..., c^n, A, so that A = c^(n+1), where c is the second term. Similarly, let the continued proportion from 1 to B be 1, d, d^2, ..., d^n, B, so that B = d^(n+1), where d is the second term. Here c and d are the numbers such that the common ratio of each geometric sequence is c:1 and d:1 respectively. [D7.20]\n\n**Step 3.** By 7.33, reduce the ratio c:d to its least terms; let c:d = p:q where p and q are the least numbers in that ratio. Then there exists a number m such that c = m*p and d = m*q. [7.33]\n\n**Step 4.** Since A = c^(n+1) = (m*p)^(n+1) = m^(n+1) * p^(n+1), and B = d^(n+1) = (m*q)^(n+1) = m^(n+1) * q^(n+1), the ratio A:B equals m^(n+1)*p^(n+1) : m^(n+1)*q^(n+1). By 7.17, since a number (m^(n+1)) multiplies two numbers (p^(n+1) and q^(n+1)), the products have the same ratio as the numbers multiplied. Therefore A:B = p^(n+1) : q^(n+1). [7.17]\n\n**Step 5.** Now, since p and q are the least numbers in the ratio c:d, they are prime to one another by 7.22. [7.22]\n\n**Step 6.** By 8.2, we can find n+2 numbers in continued proportion that are the least in the ratio p:q. These least numbers are p^(n+1), p^n*q, p^(n-1)*q^2, ..., p*q^n, q^(n+1). Between the extremes p^(n+1) and q^(n+1), there are exactly n numbers in continued proportion. [8.2]\n\n**Step 7.** From Step 4, A:B = p^(n+1) : q^(n+1), so A and B have the same ratio as p^(n+1) and q^(n+1). From Step 6, there are n numbers falling between p^(n+1) and q^(n+1) in continued proportion. Therefore, by 8.8, since between p^(n+1) and q^(n+1) there fall n numbers in continued proportion, and A:B has the same ratio as p^(n+1):q^(n+1), there also fall n numbers between A and B in continued proportion. [8.8]\n\n**Step 8.** Therefore, if numbers fall between each of two numbers and a unit in continued proportion, however many numbers fall between each of them and the unit in continued proportion, so many also fall between the numbers themselves in continued proportion. Q.E.D.",
+      "used": [
+        "D7.20",
+        "7.17",
+        "7.22",
+        "7.33",
+        "8.2",
+        "8.8"
+      ]
+    },
+    {
+      "prop_id": "8.11",
+      "statement": "Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.",
+      "proof": "**Step 1.** Let A and B be two numbers, and let A multiplied by A make C, and let B multiplied by B make D. Then C and D are square numbers [D7.18]. We must show that there is one mean proportional number between C and D, and that C has to D the ratio duplicate of that which A has to B.\n\n**Step 2.** Let A multiplied by B make E [D7.15]. Since A multiplied by A makes C and A multiplied by B makes E, then C is to E as A is to B [7.17]. That is, A*A : A*B = A : B.\n\n**Step 3.** Again, since A multiplied by B makes E and B multiplied by B makes D, then E is to D as A is to B [7.18]. That is, A*B : B*B = A : B.\n\n**Step 4.** But it was shown in Step 2 that C is to E as A is to B, and in Step 3 that E is to D as A is to B. Since C : E and E : D are each equal to the same ratio A : B, therefore C is to E as E is to D [5.11]. Thus E is a mean proportional between C and D, establishing that between the two square numbers C and D there is one mean proportional number.\n\n**Step 5.** Since C, E, D are three numbers in continued proportion, C has to D the ratio duplicate of that which C has to E [D5.9]. But C is to E as A is to B [Step 2]. Therefore C has to D the ratio duplicate of that which A has to B. That is, the square has to the square the ratio duplicate of that which the side has to the side.\n\n**Step 6.** Therefore, between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side. Q.E.D.",
+      "used": [
+        "D7.18",
+        "D7.15",
+        "7.17",
+        "7.18",
+        "5.11",
+        "D5.9"
+      ]
+    },
+    {
+      "prop_id": "8.12",
+      "statement": "Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.",
+      "proof": "**Step 1.** Let A and B be numbers, and let A by multiplying itself make C, and by multiplying C make D; let B by multiplying itself make E, and by multiplying E make F. Then by the definition of cube numbers (D7.19), D = A*A*A is the cube of A, and F = B*B*B is the cube of B. Also C = A*A is the square of A and E = B*B is the square of B (D7.18).\n\n**Step 2.** Since A by multiplying itself makes C and by multiplying B makes G (let G = A*B), then A, B are two numbers and A has multiplied A and B to produce C and G respectively. Therefore by 7.17, A : B = C : G, that is, A : B = A^2 : AB.\n\n**Step 3.** Similarly, since A by multiplying B makes G and B by multiplying B makes E, then A, B have multiplied B. Therefore by 7.18, A : B = G : E, that is, A : B = AB : B^2.\n\n**Step 4.** Therefore A : B = A^2 : AB = AB : B^2. Thus A^2, AB, B^2 are three numbers in continued proportion with ratio A : B.\n\n**Step 5.** Now let A multiply A^2 to make D (= A^3), multiply AB to make H (= A^2*B), and multiply B^2 to make K (= A*B^2). Since A^2, AB, B^2 are three numbers and A has multiplied each of them, by 7.17 the products are in the same ratios: A^2 : AB = A*A^2 : A*AB = D : H, and AB : B^2 = A*AB : A*B^2 = H : K. Therefore D : H = H : K, and each ratio equals A : B.\n\n**Step 6.** Now let B multiply A^2 to make L, multiply AB to make M, and multiply B^2 to make F (= B^3). Since A^2, AB, B^2 are in continued proportion, and B has multiplied each, by 7.17, L, M, F are in the same proportion as A^2, AB, B^2. So L : M = M : F, and each ratio equals A : B.\n\n**Step 7.** Since A by multiplying B^2 makes K and B by multiplying B^2 makes F, and A, B have multiplied the same number B^2, by 7.18 we have A : B = K : F.\n\n**Step 8.** Since A by multiplying AB makes H, and B by multiplying AB makes M, by 7.18 we have A : B = H : M.\n\n**Step 9.** Since A by multiplying A^2 makes D and B by multiplying A^2 makes L, by 7.18 we have A : B = D : L.\n\n**Step 10.** But we showed A : B = H : K (Step 5) and A : B = L : M (Step 6). From Step 9, D : L = A : B. From Step 5, D : H = A : B. Therefore D : H = D : L, which gives H = L (by 7.17 and the uniqueness of the product, or by 5.9's consequence that equal ratios from the same term yield equal consequents). More directly: H = A^2*B = A*(A*B) and L = B*A^2 = A^2*B by 7.16 (commutativity of multiplication), so H = L.\n\n**Step 11.** Similarly, K = A*B^2 and M = (AB)*B = A*B^2 by 7.16, so K = M.\n\n**Step 12.** From Step 5, D : H = H : K with each ratio equal to A : B. From Step 7, K : F = A : B. Therefore we have the continued proportion D : H = H : K = K : F, that is, A^3 : A^2*B = A^2*B : AB^2 = AB^2 : B^3, with each ratio equal to A : B.\n\n**Step 13.** Thus between the two cube numbers D = A^3 and F = B^3, there are two mean proportional numbers H = A^2*B and K = AB^2.\n\n**Step 14.** Since D, H, K, F are four numbers in continued proportion, and the first D has to the second H the ratio A : B, by the definition of triplicate ratio (D5.10), D has to F the ratio triplicate of that which D has to H, that is, the cube A^3 has to the cube B^3 the ratio triplicate of that which the side A has to the side B.\n\n**Step 15.** Therefore, between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side. Q.E.D.",
+      "used": [
+        "D5.10",
+        "D7.16",
+        "D7.18",
+        "D7.19",
+        "7.16",
+        "7.17",
+        "7.18"
+      ]
+    },
+    {
+      "prop_id": "8.13",
+      "statement": "If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.",
+      "proof": "**Step 1.** Let A, B, C be as many numbers as we please in continued proportion, so that A:B = B:C. Let D = A*A, E = B*B, F = C*C be the numbers produced when each multiplies itself. Let G = A*D, H = B*E, K = C*F be the numbers produced when the original numbers multiply the products. We must show that D, E, F are proportional, and that G, H, K are proportional.\n\n**Step 2.** Since A:B = B:C, and A multiplied by A gives D and A multiplied by B gives some number, call it M, then by 7.17, D:M = A:B. Also, since A and B have each multiplied B, A multiplied by B gives M and B multiplied by B gives E, so by 7.18, M:E = A:B. Therefore D:M = M:E = A:B.\n\n**Step 3.** Similarly, since B:C = A:B, and B multiplied by B gives E and B multiplied by C gives some number, call it N, then by 7.17, E:N = B:C. Also, since B and C have each multiplied C, B multiplied by C gives N and C multiplied by C gives F, so by 7.18, N:F = B:C. Therefore E:N = N:F = B:C.\n\n**Step 4.** Since A:B = B:C, all four ratios D:M, M:E, E:N, N:F are equal. In particular, D:M = E:N and M:E = N:F.\n\n**Step 5.** Since D:M = E:N and M:E = N:F, by the ex aequali property for numbers (7.14), D:E = E:F. Therefore the squares D, E, F are in continued proportion. This completes the first part.\n\n**Step 6.** For the second part, since D:E = E:F has been established, and the original numbers A, B, C are in continued proportion, we proceed to the cubes. Since A multiplied by D gives G and A multiplied by E gives some number, call it P, then by 7.17, G:P = D:E.\n\n**Step 7.** Since A and B have each multiplied E, A multiplied by E gives P and B multiplied by E gives H, so by 7.18, P:H = A:B.\n\n**Step 8.** Similarly, since B multiplied by E gives H and B multiplied by F gives some number, call it Q, then by 7.17, H:Q = E:F. Since B and C have each multiplied F, B multiplied by F gives Q and C multiplied by F gives K, so by 7.18, Q:K = B:C.\n\n**Step 9.** Now from Step 5, D:E = E:F, so G:P = H:Q (since G:P = D:E by Step 6, and H:Q = E:F by Step 8, and D:E = E:F). Also, since A:B = B:C, we have P:H = Q:K (since P:H = A:B by Step 7, and Q:K = B:C by Step 8, and A:B = B:C).\n\n**Step 10.** Since G:P = H:Q and P:H = Q:K, by the ex aequali property for numbers (7.14), G:H = H:K. Therefore the cubes G, H, K are in continued proportion.\n\n**Step 11.** The same argument extends to any number of terms in continued proportion: for any three consecutive terms in the original sequence, the corresponding squares (and cubes) maintain the continued proportion by the same reasoning, so the entire sequence of squares is in continued proportion, and likewise the entire sequence of cubes. Q.E.D.",
+      "used": [
+        "7.14",
+        "7.17",
+        "7.18",
+        "CN1"
+      ]
+    },
+    {
+      "prop_id": "8.14",
+      "statement": "If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.",
+      "proof": "**Step 1.** Let A and B be numbers, and let A², B² be their respective squares (D7.18). We must prove two things: (i) if A² measures B², then A measures B; and (ii) if A measures B, then A² measures B².\n\n**Step 2.** (Part i — Forward direction) Suppose A² measures B². By 8.11, between two square numbers A² and B² there is one mean proportional number, and A² has to B² the duplicate ratio of that which A has to B. The mean proportional is AB (the product of A and B), so A², AB, B² are in continued proportion.\n\n**Step 3.** Since A², AB, B² are in continued proportion and A² measures B² (the first measures the last), by 8.7, A² also measures AB (the first measures the second).\n\n**Step 4.** Now A multiplied by A produces A², and A multiplied by B produces AB (D7.15). By 7.17, the products of a number multiplying two numbers have the same ratio as the numbers multiplied, so A² : AB = A : B.\n\n**Step 5.** Since A² measures AB, there is some number k such that AB = k · A² (D7.3, D7.15). From the proportion A : B = A² : AB, since A² measures AB, it follows that A measures B. For A : B is the same ratio as A² : AB (Step 4), and since A² is a part of AB (or equals it), A is correspondingly a part of B (or equals it), hence A measures B (D7.20).\n\n**Step 6.** (Part ii — Converse direction) Now suppose A measures B. We must show A² measures B².\n\n**Step 7.** Since A measures B, A multiplied by A gives A² and A multiplied by B gives AB. By 7.17, A² : AB = A : B. Since A measures B, the ratio A : B means A is a part of (or equal to) B, so A² is a corresponding part of (or equal to) AB. Therefore A² measures AB (D7.20).\n\n**Step 8.** Similarly, since A measures B, B multiplied by A gives AB and B multiplied by B gives B². By 7.17, AB : B² = A : B. Since A measures B, AB is a corresponding part of (or equal to) B², so AB measures B² (D7.20).\n\n**Step 9.** Since A² measures AB (Step 7) and AB measures B² (Step 8), there exist numbers m and n such that AB = m · A² and B² = n · AB (D7.15). Then B² = n · m · A² = (nm) · A², so A² measures B² (D7.3, D7.15).\n\n**Step 10.** Therefore, if a square measures a square, the side also measures the side; and if the side measures the side, the square also measures the square. Q.E.D.",
+      "used": [
+        "D7.3",
+        "D7.15",
+        "D7.18",
+        "D7.20",
+        "7.17",
+        "8.7",
+        "8.11"
+      ]
+    },
+    {
+      "prop_id": "8.15",
+      "statement": "If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.",
+      "proof": "**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a*a*a and B = b*b*b [D7.19].\n\n**Part I: If A measures B, then a measures b.**\n\n**Step 2.** Since A and B are cube numbers, by 8.12, between A and B there are two mean proportional numbers. Let C and D be such that A, C, D, B are in continued proportion. Moreover, by 8.12, the cube has to the cube the ratio triplicate of that which the side has to the side, so the common ratio of the continued proportion A, C, D, B is the same as the ratio a : b. In particular, A : C = a : b.\n\n**Step 3.** Since A, C, D, B are in continued proportion and A measures B (the first measures the last), by 8.7 the first also measures the second, that is, A measures C.\n\n**Step 4.** Since A : C = a : b [Step 2], and A measures C [Step 3], by D7.20 the relationship of the first to the second is the same as that of the third to the fourth. Since A measures C, A is a part of C (or equal to it), so a is the same part of b (or equal to it). Therefore a measures b.\n\n**Part II: If a measures b, then A measures B.**\n\n**Step 5.** Suppose a measures b. Again by 8.12, between A and B there are two mean proportional numbers C and D, with A, C, D, B in continued proportion and common ratio a : b. Thus A : C = a : b, C : D = a : b, and D : B = a : b.\n\n**Step 6.** Since A : C = a : b and a measures b, by D7.20, the first is the same part of the second as the third is of the fourth. Since a measures b, it follows that A measures C.\n\n**Step 7.** Since C : D = a : b and a measures b, by the same reasoning (D7.20), C measures D.\n\n**Step 8.** Since D : B = a : b and a measures b, by the same reasoning (D7.20), D measures B.\n\n**Step 9.** Since A measures C [Step 6], C measures D [Step 7], and D measures B [Step 8], by transitivity of measurement [D7.3], A measures B.\n\n**Step 10.** Therefore, if a cube number measures a cube number, the side also measures the side; and if the side measures the side, the cube also measures the cube. Q.E.D.",
+      "used": [
+        "8.12",
+        "8.7",
+        "D7.20",
+        "D7.19",
+        "D7.3"
+      ]
+    },
+    {
+      "prop_id": "8.16",
+      "statement": "If a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square.",
+      "proof": "**Step 1.** Let A and B be square numbers with sides C and D respectively, so that A = C * C and B = D * D (by D7.18, a square number is equal multiplied by equal).\n\n**Step 2.** We prove the first part: suppose A does not measure B; we claim C does not measure D. For assume, for the sake of contradiction, that C measures D. Then by the second part of 8.14 (if the side measure the side, the square will also measure the square), A measures B. But this contradicts our hypothesis that A does not measure B. Therefore C does not measure D.\n\n**Step 3.** We prove the second part: suppose C does not measure D; we claim A does not measure B. For assume, for the sake of contradiction, that A measures B. Then by the first part of 8.14 (if a square measure a square, the side will also measure the side), C measures D. But this contradicts our hypothesis that C does not measure D. Therefore A does not measure B.\n\n**Step 4.** Therefore, if a square number does not measure a square number, neither does the side measure the side; and if the side does not measure the side, neither does the square measure the square. Q.E.D.",
+      "used": [
+        "D7.18",
+        "8.14"
+      ]
+    },
+    {
+      "prop_id": "8.17",
+      "statement": "If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.",
+      "proof": "**Step 1.** Let A and B be numbers such that A^3 and B^3 are cube numbers. We must prove two things: (i) if A^3 does not measure B^3, then A does not measure B; and (ii) if A does not measure B, then A^3 does not measure B^3.\n\n**Step 2.** First, suppose that the cube A^3 does not measure the cube B^3. Assume, for the sake of contradiction, that the side A does measure the side B.\n\n**Step 3.** Since A measures B, by Proposition 8.15 (if the side measure the side, the cube will also measure the cube), the cube A^3 measures the cube B^3.\n\n**Step 4.** But this contradicts our hypothesis that A^3 does not measure B^3. Therefore the assumption is false, and A does not measure B. This establishes the first part.\n\n**Step 5.** Now suppose that the side A does not measure the side B. Assume, for the sake of contradiction, that the cube A^3 does measure the cube B^3.\n\n**Step 6.** Since A^3 measures B^3, by Proposition 8.15 (if a cube number measure a cube number, the side will also measure the side), the side A measures the side B.\n\n**Step 7.** But this contradicts our hypothesis that A does not measure B. Therefore the assumption is false, and A^3 does not measure B^3. This establishes the second part.\n\n**Step 8.** Therefore, if a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube. Q.E.D.",
+      "used": [
+        "8.15"
+      ]
+    },
+    {
+      "prop_id": "8.18",
+      "statement": "Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.",
+      "proof": "**Step 1.** Let A and C be two similar plane numbers. Then A = a * b and C = c * d for some numbers a, b, c, d, where a, b are the sides of A and c, d are the sides of C [D7.16]. Since A and C are similar plane numbers, their corresponding sides are proportional [D7.21], so a : c :: b : d, where a corresponds to c and b corresponds to d.\n\n**Step 2.** Let B = a * d, the number produced by multiplying the side a of the first plane number by the non-corresponding side d of the second plane number.\n\n**Step 3.** Since the number a multiplies both b and d to produce a * b = A and a * d = B respectively, by 7.17 we have A : B :: b : d.\n\n**Step 4.** Since the numbers a and c each multiply d to produce a * d = B and c * d = C respectively, by 7.18 we have B : C :: a : c.\n\n**Step 5.** But a : c :: b : d by the similarity of the plane numbers (Step 1). Therefore A : B :: B : C [CN1], since both ratios A : B and B : C equal the ratio b : d (from Steps 3, 4, and 5, noting that B : C :: a : c :: b : d).\n\n**Step 6.** Thus B is one mean proportional number between the similar plane numbers A and C. This establishes the first part of the proposition.\n\n**Step 7.** We also verify that B is a number: since a : c :: b : d, by 7.19 the product a * d equals the product b * c. So B = a * d = b * c, confirming B is a well-defined number (the product of two numbers).\n\n**Step 8.** Since A, B, C are three numbers in continued proportion (A : B :: B : C), by D5.9 the first A has to the third C the ratio duplicate of that which A has to the second B. But A : B :: b : d (Step 3), and b, d are corresponding sides of the two similar plane numbers. Therefore the plane number A has to the plane number C the ratio duplicate of that which the corresponding side b has to the corresponding side d.\n\n**Step 9.** The same holds for the other pair of corresponding sides: since A : B :: b : d and B : C :: a : c, and a : c :: b : d, the duplicate ratio of A to C is equally the duplicate of a : c. Therefore the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side. Q.E.D.",
+      "used": [
+        "D5.9",
+        "D7.16",
+        "D7.21",
+        "CN1",
+        "7.17",
+        "7.18",
+        "7.19"
+      ]
+    },
+    {
+      "prop_id": "8.19",
+      "statement": "Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.",
+      "proof": "**Step 1.** Let A and B be similar solid numbers. Then A has three sides a, b, c and B has three sides d, e, f, so that A = a * b * c and B = d * e * f (D7.17). Since A and B are similar solid numbers, their sides are proportional (D7.21), that is, a : d = b : e = c : f.\n\n**Step 2.** Since a : d = b : e, by 7.19 the product of the first and fourth equals the product of the second and third, so a * e = b * d. Let m denote this common product.\n\n**Step 3.** Now construct the following numbers: let C1 = m * c = a * e * c, and let C2 = d * e * c. We shall show that A, C1, C2, B are in continued proportion.\n\n**Step 4.** Consider A : C1, that is, a * b * c : a * e * c. Now a * b * c is the product of (a * c) and b, since by 7.16 the order of multiplication does not matter, and a * e * c is the product of (a * c) and e. Therefore by 7.17, since the number a * c by multiplying b and e produces a * b * c and a * e * c respectively, we have a * b * c : a * e * c = b : e. Thus A : C1 = b : e.\n\n**Step 5.** Consider C1 : C2, that is, a * e * c : d * e * c. Now a * e * c is the product of a and (e * c), and d * e * c is the product of d and (e * c), using 7.16 for commutativity. Therefore by 7.18, since a and d by multiplying the number e * c produce a * e * c and d * e * c respectively, we have a * e * c : d * e * c = a : d. Thus C1 : C2 = a : d.\n\n**Step 6.** Consider C2 : B, that is, d * e * c : d * e * f. Now d * e * c is the product of (d * e) and c, and d * e * f is the product of (d * e) and f. Therefore by 7.17, since the number d * e by multiplying c and f produces d * e * c and d * e * f respectively, we have d * e * c : d * e * f = c : f. Thus C2 : B = c : f.\n\n**Step 7.** Since a : d = b : e = c : f (from Step 1), the three ratios A : C1 = b : e (Step 4), C1 : C2 = a : d (Step 5), and C2 : B = c : f (Step 6) are all equal. Therefore A, C1, C2, B are four numbers in continued proportion, and C1, C2 are two mean proportional numbers falling between A and B.\n\n**Step 8.** Since A, C1, C2, B are four numbers in continued proportion, by D5.10 A has to B the ratio triplicate of that which A has to C1. But A : C1 = b : e (Step 4), which is the ratio of a corresponding side of A to the corresponding side of B.\n\n**Step 9.** Therefore between two similar solid numbers there fall two mean proportional numbers, and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side. Q.E.D.",
+      "used": [
+        "D5.10",
+        "D7.16",
+        "D7.17",
+        "D7.21",
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.19"
+      ]
+    },
+    {
+      "prop_id": "8.20",
+      "statement": "If one mean proportional number fall between two numbers, the numbers will be similar plane numbers.",
+      "proof": "**Step 1.** Let A and C be two numbers, and let B be a mean proportional between them, so that A : B = B : C.\n\n**Step 2.** By 7.33, let D and E be the least numbers in the ratio A : B. Then D : E = A : B = B : C.\n\n**Step 3.** Since D : E = A : B, and D, E are the least numbers in this ratio, by 7.20 the least numbers D and E measure A and B respectively the same number of times. Let F be this common measure-count, so that A = D * F and B = E * F.\n\n**Step 4.** Since D : E = B : C, and D, E are the least numbers in this ratio, by 7.20 the least numbers D and E measure B and C respectively the same number of times. Let G be this common measure-count, so that B = D * G and C = E * G.\n\n**Step 5.** From Steps 3 and 4, we have B = E * F and B = D * G, so E * F = D * G.\n\n**Step 6.** Since E * F = D * G, by 7.19 (the converse part), the four numbers D, E, F, G are proportional: D : E = F : G.\n\n**Step 7.** Now A = D * F, so A is the product of D and F, making A a plane number with sides D and F (by D7.16). Similarly, C = E * G, so C is a plane number with sides E and G (by D7.16).\n\n**Step 8.** Since D : E = F : G (from Step 6), the sides of A are proportional to the corresponding sides of C. Therefore A and C are similar plane numbers by D7.21.\n\n**Step 9.** Therefore, if one mean proportional number falls between two numbers, the numbers are similar plane numbers. Q.E.D.",
+      "used": [
+        "7.33",
+        "7.20",
+        "7.19",
+        "D7.16",
+        "D7.21"
+      ]
+    },
+    {
+      "prop_id": "8.21",
+      "statement": "If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.",
+      "proof": "**Step 1.** Let A, C, D, B be numbers in continued proportion, so that A:C = C:D = D:B, with C and D being two mean proportionals falling between A and B. By 7.33, let p:q be this common ratio expressed in least terms.\n\n**Step 2.** Since A:C = p:q and p, q are the least numbers in that ratio, by 7.20, there exists a number n such that A = n*p and C = n*q.\n\n**Step 3.** Since C:D = p:q and p, q are the least in that ratio, by 7.20, there exists a number l such that C = l*p and D = l*q. From Step 2, C = n*q, so n*q = l*p. By 7.19, n:l = p:q. Since p:q is in least terms, by 7.20, there exists a number n' such that n = n'*p and l = n'*q.\n\n**Step 4.** Substituting back: A = n'*p*p = n'*p^2, C = n'*p*q, and D = n'*q*q = n'*q^2.\n\n**Step 5.** Since D:B = p:q and p, q are the least in that ratio, by 7.20, there exists a number r such that D = r*p and B = r*q. From Step 4, D = n'*q^2, so n'*q^2 = r*p, that is, (n'*q)*q = r*p. By 7.19, (n'*q):r = p:q. Since p:q is in least terms, by 7.20, there exists a number s such that n'*q = s*p and r = s*q.\n\n**Step 6.** From n'*q = s*p, by 7.19, n':s = p:q. Since p:q is in least terms, by 7.20, there exists a number t such that n' = t*p and s = t*q.\n\n**Step 7.** Substituting all values back: A = n'*p^2 = t*p*p^2 = t*p^3. And r = s*q = t*q*q = t*q^2, so B = r*q = t*q^2*q = t*q^3.\n\n**Step 8.** Now A = t*p^3 = p * p * (t*p), which is the product of three numbers p, p, and t*p. Therefore A is a solid number by D7.17, with sides p, p, and t*p.\n\n**Step 9.** Similarly, B = t*q^3 = q * q * (t*q), which is the product of three numbers q, q, and t*q. Therefore B is a solid number by D7.17, with sides q, q, and t*q.\n\n**Step 10.** The first sides p and q are in the ratio p:q. The second sides p and q are in the ratio p:q. For the third sides, since t multiplies both p and q, by 7.17, t*p : t*q = p : q. Therefore all three pairs of corresponding sides are in the same ratio p:q, and the sides of A and B are proportional.\n\n**Step 11.** Since A and B are solid numbers with proportional sides, by D7.21, A and B are similar solid numbers. This is what was to be proved.",
+      "used": [
+        "7.17",
+        "7.19",
+        "7.20",
+        "7.33",
+        "D7.17",
+        "D7.21"
+      ]
+    },
+    {
+      "prop_id": "8.22",
+      "statement": "If three numbers be in continued proportion, and the first be square, the third will also be square.",
+      "proof": "**Step 1.** Let A, B, C be three numbers in continued proportion, so that A : B = B : C, and let A be a square number.\n\n**Step 2.** Since A, B, C are in continued proportion, B is a mean proportional between A and C. That is, one mean proportional number (B) falls between A and C.\n\n**Step 3.** By 8.20, since one mean proportional number falls between two numbers, those two numbers are similar plane numbers. Therefore A and C are similar plane numbers.\n\n**Step 4.** Since A is a square number, by D7.18, A is equal multiplied by equal. That is, A = a * a for some number a. Viewed as a plane number (D7.16), A has sides a and a.\n\n**Step 5.** Since A and C are similar plane numbers, by D7.21, their sides are proportional. Let C = p * q where p and q are the sides of C. Then the corresponding sides are proportional: a : p = a : q.\n\n**Step 6.** Since a : p = a : q, by 7.19 (applied to the four numbers a, p, a, q in proportion), the product of the extremes equals the product of the means: a * q = p * a. By 7.16 (commutativity of multiplication), p * a = a * p. Therefore a * q = a * p.\n\n**Step 7.** By 7.17, if a number by multiplying two numbers makes certain numbers, the products have the same ratio as the numbers multiplied. Hence a * p : a * q = p : q. But since a * p = a * q (from Step 6), p = q.\n\n**Step 8.** Since C = p * q and p = q, we have C = p * p, which is equal multiplied by equal. Therefore C is a square number by D7.18.\n\n**Step 9.** Therefore, if three numbers be in continued proportion and the first be square, the third is also square. Q.E.D.",
+      "used": [
+        "D7.16",
+        "D7.18",
+        "D7.21",
+        "7.16",
+        "7.17",
+        "7.19",
+        "8.20"
+      ]
+    },
+    {
+      "prop_id": "8.23",
+      "statement": "If four numbers be in continued proportion, and the first be cube, the fourth will also be cube.",
+      "proof": "**Step 1.** Let A, B, C, D be four numbers in continued proportion, so that A:B = B:C = C:D, and let A be a cube number. We must show that D is also a cube number.\n\n**Step 2.** Since A is a cube number, by D7.19 there exists a number e such that A = e * e * e, where e is the side of the cube A.\n\n**Step 3.** Since A, B, C, D are four numbers in continued proportion, B and C are two mean proportional numbers falling between A and D.\n\n**Step 4.** Since two mean proportional numbers B, C fall between A and D, by 8.21, A and D are similar solid numbers.\n\n**Step 5.** Since A and D are similar solid numbers, by D7.21 their sides are proportional. Now A, being a cube, has sides e, e, e (three equal sides). Let D be a solid number with sides d1, d2, d3. Since the corresponding sides are proportional, we have e:d1 = e:d2 = e:d3.\n\n**Step 6.** From e:d1 = e:d2, by 7.13 (alternation of a proportion), we obtain e:e = d1:d2. Since e:e is the ratio of a number to itself, by D7.20 we have d1 = d2, for the first number is the same part (namely equal) of the second as the third is of the fourth only when d1 equals d2.\n\n**Step 7.** By the same reasoning, from e:d2 = e:d3, by 7.13 we obtain e:e = d2:d3, and by D7.20, d2 = d3.\n\n**Step 8.** Since d1 = d2 = d3, let us call this common value f. Then D = f * f * f, which is a cube number by D7.19.\n\n**Step 9.** Therefore, if four numbers be in continued proportion and the first be cube, the fourth is also cube. Q.E.D.",
+      "used": [
+        "D7.19",
+        "D7.20",
+        "D7.21",
+        "7.13",
+        "8.21"
+      ]
+    },
+    {
+      "prop_id": "8.24",
+      "statement": "If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second will also be square.",
+      "proof": "**Step 1.** Let A and B be two numbers such that A : B = C² : D², where C² and D² are square numbers, and let A be square.\n\n**Step 2.** Since C² and D² are both square numbers, by 8.11 there is one mean proportional number between them. Let F be this mean proportional, so that C², F, D² are three numbers in continued proportion.\n\n**Step 3.** Since A : B = C² : D², and there is one mean proportional number (F) between C² and D², by 8.8 there is also one mean proportional number between A and B. Let G be this mean proportional, so that A, G, B are three numbers in continued proportion.\n\n**Step 4.** Now A, G, B are three numbers in continued proportion, and A (the first) is square. Therefore, by 8.22, B (the third) is also square.\n\n**Step 5.** Therefore, if two numbers have to one another the ratio which a square number has to a square number, and the first is square, then the second is also square. Q.E.D.",
+      "used": [
+        "8.11",
+        "8.8",
+        "8.22"
+      ]
+    },
+    {
+      "prop_id": "8.25",
+      "statement": "If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube.",
+      "proof": "**Step 1.** Let A and B be two numbers such that A is to B as some cube number is to some cube number. Specifically, let A:B = C³:D³, where C³ and D³ are cube numbers. Suppose further that A is itself a cube number. We aim to show that B is also a cube number.\n\n**Step 2.** Since C³ and D³ are both cube numbers, by Proposition 8.12, between C³ and D³ there fall two mean proportional numbers. That is, there exist numbers E and F such that C³, E, F, D³ are in continued proportion.\n\n**Step 3.** Now A and B have to one another the same ratio as C³ has to D³, and between C³ and D³ there fall two numbers E, F in continued proportion. Therefore, by Proposition 8.8, between A and B there also fall two numbers in continued proportion. Let these be G and H, so that A, G, H, B are four numbers in continued proportion.\n\n**Step 4.** Since A, G, H, B are four numbers in continued proportion and A is a cube number (by hypothesis), it follows by Proposition 8.23 that the fourth number B is also a cube number.\n\n**Step 5.** Therefore, if two numbers have to one another the ratio which a cube number has to a cube number, and the first is cube, the second will also be cube. Q.E.D.",
+      "used": [
+        "8.12",
+        "8.8",
+        "8.23",
+        "D7.19"
+      ]
+    },
+    {
+      "prop_id": "8.26",
+      "statement": "Similar plane numbers have to one another the ratio which a square number has to a square number.",
+      "proof": "**Step 1.** Let A and B be similar plane numbers with sides a, b and c, d respectively, so that A = a * b and B = c * d. Since A and B are similar plane numbers, by D7.21 their corresponding sides are proportional: a : c :: b : d.\n\n**Step 2.** By 8.18, between two similar plane numbers there is one mean proportional number. Let M be the mean proportional between A and B, so that A, M, B are in continued proportion: A : M :: M : B. Furthermore, by 8.18, A has to B the ratio duplicate of that which the corresponding side a has to the corresponding side c. In particular, A : M :: a : c.\n\n**Step 3.** Since A : M :: M : B (continued proportion) and A : M :: a : c, it follows by 5.11 that M : B :: a : c.\n\n**Step 4.** Now consider the square numbers a * a and c * c, which are square numbers by D7.18. By 8.11, between the two square numbers a * a and c * c there is one mean proportional number, namely a * c, and the square a * a has to the square c * c the ratio duplicate of that which a has to c. That is, a * a : a * c :: a * c : c * c, and in particular a * a : a * c :: a : c.\n\n**Step 5.** Since A : M :: a : c (from Step 2) and a * a : a * c :: a : c (from Step 4), by 5.11 we have A : M :: a * a : a * c.\n\n**Step 6.** Since M : B :: a : c (from Step 3) and a * c : c * c :: a : c (from Step 4, since a * c : c * c :: a : c by the continued proportion in Step 4), by 5.11 we have M : B :: a * c : c * c.\n\n**Step 7.** We now have A : M :: a * a : a * c (Step 5) and M : B :: a * c : c * c (Step 6). By 7.14 (ex aequali for numbers), A : B :: a * a : c * c.\n\n**Step 8.** Since a * a and c * c are square numbers by D7.18, A and B have to one another the ratio which a square number has to a square number. This is what was to be proved.",
+      "used": [
+        "D7.21",
+        "D7.18",
+        "D7.16",
+        "D5.9",
+        "8.18",
+        "8.11",
+        "5.11",
+        "7.14"
+      ]
+    },
+    {
+      "prop_id": "8.27",
+      "statement": "Similar solid numbers have to one another the ratio which a cube number has to a cube number.",
+      "proof": "**Step 1.** Let A and B be similar solid numbers. Since they are similar solid numbers, by D7.21, their sides are proportional. Let the sides of A be a, b, c and the sides of B be d, e, f, so that a:d = b:e = c:f.\n\n**Step 2.** By 8.19, between two similar solid numbers A and B there fall two mean proportional numbers. Let M1, M2 be such that A, M1, M2, B are in continued proportion. Moreover, by 8.19, A has to B the ratio triplicate of that which the corresponding side has to the corresponding side, that is, triplicate of the ratio a:d.\n\n**Step 3.** By 7.33, let p:q be the ratio a:d expressed in least terms, so that a:d = p:q and p, q are the least numbers having this ratio.\n\n**Step 4.** Consider the cube numbers p*p*p and q*q*q. These are cube numbers by D7.19, since each is equal multiplied by equal and again by equal.\n\n**Step 5.** By 8.12, between two cube numbers p^3 and q^3 there fall two mean proportional numbers, and p^3 has to q^3 the ratio triplicate of that which the side p has to the side q, that is, triplicate of p:q.\n\n**Step 6.** By 8.2, find the least numbers in continued proportion (four terms) having the ratio p:q between consecutive terms. Call these e1, e2, e3, e4. These are the unique least four numbers in continued proportion with ratio p:q.\n\n**Step 7.** Since A, M1, M2, B are four numbers in continued proportion and the ratio A:M1 equals a:d = p:q, the consecutive ratio in this sequence is p:q. Therefore A:B = e1:e4, since any four-term continued proportion with ratio p:q has its extremes in the ratio e1:e4 (as e1, e2, e3, e4 are the least such, by 8.2).\n\n**Step 8.** Similarly, since p^3, N1, N2, q^3 are four numbers in continued proportion (by 8.12) and the consecutive ratio is p:q, we have p^3:q^3 = e1:e4 by the same reasoning.\n\n**Step 9.** Since A:B = e1:e4 and p^3:q^3 = e1:e4, by CN1, A:B = p^3:q^3.\n\n**Step 10.** Since p^3 and q^3 are cube numbers (D7.19), the similar solid numbers A and B have to one another the ratio which a cube number has to a cube number. Q.E.D.",
+      "used": [
+        "D5.10",
+        "D7.17",
+        "D7.19",
+        "D7.21",
+        "7.33",
+        "8.2",
+        "8.12",
+        "8.19",
+        "CN1"
+      ]
+    }
+  ]
+}

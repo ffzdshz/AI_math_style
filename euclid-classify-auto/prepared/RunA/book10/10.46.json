@@ -1,0 +1,32 @@
+{
+  "proposition": "10.46",
+  "book": 10,
+  "statement": "The side of a rational plus a medial area is divided at one point only.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, but twice the rectangle AC, CB rational; [X. 40] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB medial, but twice the rectangle AD, DB rational. Since then that by which twice the rectangle AC, CB differs from twice the rectangle AD, DB is also that by which the squares on AD, DB differ from the squares on AC, CB, while twice the rectangle AC, CB exceeds twice the rectangle AD, DB by a rational area, therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore the side of a rational plus a medial area is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.46\n**Statement:** The side of a rational plus a medial area is divided at one point only.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC, CB are the two straight lines incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them rational, as in the definition given by 10.40.\n\n**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D, where D is different from C, such that AD, DB are likewise incommensurable in square, the sum of the squares on AD, DB is medial, and the rectangle AD by DB is rational.\n\n**Step 3.** Since AC + CB = AB = AD + DB, and the square on AB equals the sum of the squares on the parts plus twice the rectangle contained by them (by 2.4), we have: sq(AC) + sq(CB) + 2*rect(AC,CB) = sq(AB) = sq(AD) + sq(DB) + 2*rect(AD,DB).\n\n**Step 4.** Therefore, [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2*rect(AD,DB) - 2*rect(AC,CB).\n\n**Step 5.** Now, since the rectangle AC by CB is rational and the rectangle AD by DB is rational, twice the rectangle AC by CB and twice the rectangle AD by DB are each rational areas (by D10.1.4, since doubling a rational area produces an area commensurable with it, and an area commensurable with a rational area is rational).\n\n**Step 6.** If 2*rect(AC,CB) and 2*rect(AD,DB) are unequal, then their difference is a nonzero rational area. For both are rational areas, hence commensurable with the same rational square (D10.1.4), and therefore commensurable with each other (by 10.12). By 10.15, the difference of commensurable magnitudes is commensurable with each, and hence with the rational square, so the difference is rational.\n\n**Step 7.** By Step 4, this same difference equals [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)]. But sq(AC) + sq(CB) is medial and sq(AD) + sq(DB) is medial, by hypothesis. Therefore a medial area exceeds a medial area by a rational area.\n\n**Step 8.** This contradicts 10.26, which states that a medial area does not exceed a medial area by a rational area. Therefore 2*rect(AC,CB) = 2*rect(AD,DB), and hence rect(AC,CB) = rect(AD,DB).\n\n**Step 9.** From Step 4, since 2*rect(AD,DB) - 2*rect(AC,CB) = 0, it follows that sq(AC) + sq(CB) = sq(AD) + sq(DB) as well.\n\n**Step 10.** Now, since AC + CB = AD + DB = AB, let E be the midpoint of AB. Then whether C falls between A and E or between E and B, by 2.5, the rectangle AC by CB together with the square on EC equals the square on AE (i.e., the square on half of AB). Similarly, the rectangle AD by DB together with the square on ED equals the square on AE.\n\n**Step 11.** Since rect(AC,CB) = rect(AD,DB) (Step 8), subtracting each from the square on AE yields sq(EC) = sq(ED) (by CN3 and 2.5). Therefore EC = ED.\n\n**Step 12.** But AC = AE - EC (or AE + EC, depending on which side of E the point C falls) and AD = AE - ED (or AE + ED). Since EC = ED, we have AC = AD, and consequently CB = DB.\n\n**Step 13.** This means C and D coincide, contradicting the assumption that D is different from C. Therefore the side of a rational plus a medial area is divided at one point only. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.26, 10.40, 2.4, 2.5, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.40\n**Jaccard:** 0.250 — AI adds ['10.12', '10.15', '2.4', '2.5', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.40",
+    "2.4",
+    "2.5",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.40"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.5",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC, CB are the two straight lines incommensurable in square which make the sum of the squares on the"
+}

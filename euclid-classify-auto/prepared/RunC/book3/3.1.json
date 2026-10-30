@@ -1,0 +1,36 @@
+{
+  "proposition": "3.1",
+  "book": 3,
+  "statement": "To find the centre of a given circle.",
+  "heath_proof": "Let ABC be the given circle; thus it is required to find the centre of the circle ABC. Let a straight line AB be drawnthrough it at random, and let it be bisected at the point D; from D let DC be drawn at right angles to AB and let it be drawn through to E; let CE be bisected at F;I say that F is the centre of the circle ABC. For suppose it is not, but, if possible, let G be the centre, and let GA, GD, GB be joined. Then, since AD is equal to DB, and DG is common, the two sides AD, DG are equal to the two sides BD, DG respectively; and the base GA is equal to the base GB, for they areradii; therefore the angle ADG is equal to the angle GDB. [I. 8]  But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right; [I. Def. 10]therefore the angle GDB is right. But the angle FDB is also right; therefore the angle FDB is equal to the angle GDB, the greater to the less: which is impossible. Therefore G is not the centre of the circle ABC. Similarly we can prove that neither is any other point except F. Therefore the point F is the centre of the circle ABC.",
+  "ai_proof_text": "3.1\n**Statement:** To find the centre of a given circle.\n\n**Step 1.** Let ABC be the given circle. Draw any chord AB within the circle by taking two points A and B on the circumference and joining them [P1].\n\n**Step 2.** Bisect AB at the point D [1.10].\n\n**Step 3.** From D, draw DC at right angles to AB [1.11], and produce it in both directions to meet the circumference of the circle at points E and F [P2].\n\n**Step 4.** Bisect EF at the point G [1.10]. I claim that G is the centre of circle ABC.\n\n**Step 5.** Suppose, for the sake of contradiction, that G is not the centre. Let some other point H be the centre. Join HA, HD, and HB [P1].\n\n**Step 6.** Since H is the centre of the circle, HA equals HB, for all straight lines from the centre to the circumference are equal [D1.15, D1.16].\n\n**Step 7.** Since D is the midpoint of AB (by Step 2), DA equals DB.\n\n**Step 8.** HD is common to triangles HDA and HDB.\n\n**Step 9.** Therefore, in triangles HDA and HDB, we have HA equal to HB, DA equal to DB, and HD common. By the SSS congruence theorem, triangle HDA is congruent to triangle HDB, and in particular angle HDA equals angle HDB [1.8].\n\n**Step 10.** Since the straight line HD standing on the straight line AB makes the adjacent angles HDA and HDB equal to one another, each of the angles HDA and HDB is a right angle [D1.10].\n\n**Step 11.** But by construction (Step 3), angle GDA is also a right angle, since DC (and hence GD, which lies along EF) was drawn perpendicular to AB at D.\n\n**Step 12.** Since angle HDA is a right angle and angle GDA is a right angle, angle HDA equals angle GDA, for all right angles are equal to one another [P4].\n\n**Step 13.** But H and G are assumed to be distinct points. Therefore one of the angles HDA and GDA is a proper part of the other: either GDA is part of HDA or HDA is part of GDA. Hence they cannot be equal, for the whole is greater than the part [CN5].\n\n**Step 14.** This contradicts the conclusion of Step 12. Therefore the assumption that the centre is some point other than G is false.\n\n**Step 15.** Hence G is the centre of the given circle ABC, and it has been found by the given construction. Q.E.F.\n\n**USED:** 1.10, 1.11, 1.8, CN5, D1.10, D1.15, D1.16, P1, P2, P4\n**Human refs (from References field):** 1.8, D1.10\n**Jaccard:** 0.200 — AI adds ['1.10', '1.11', 'CN5', 'D1.15', 'D1.16', 'P1', 'P2', 'P4']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.8",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.16",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.8",
+    "D1.10"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "CN5",
+    "D1.15",
+    "D1.16",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let ABC be the given circle. Draw any chord AB within the circle by taking two points A and B on the circumference and joining them [P1].  **Step 2.** Bisect AB at the point D [1.10].  **S"
+}

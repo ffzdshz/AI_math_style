@@ -1,0 +1,13 @@
+{
+  "proposition": "6.24",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides: both proofs establish the same key intermediate conclusions -- equiangularity of the sub-triangles (AEF with ACB, AKF with ADC) with the whole parallelogram's component triangles, proportionality of all corresponding sides about equal angles, similarity via D6.1, and transitivity via 6.21. The difference lies in the tools used to derive these shared conclusions. Heath uses 6.2 (parallel line cuts sides proportionally) to extract ratios, then manipulates them with 5.18 (componendo), 5.16 (alternando), and 5.22 (ex aequali). The AI instead establishes equiangularity first using 1.29 and 1.32, then applies 6.4 (equiangular triangles have proportional sides) to derive the needed ratios directly, combining them with 5.11. The proof-tree containment test confirms that three of the four heath_only items (6.2, 5.16, 5.22) appear inside Heath's proof of 6.4, meaning the AI cites 6.4 as a unit while Heath re-derives its internals inline. The fourth heath_only item (5.18) is not needed by the AI because its use of 6.4 naturally produces ratios in the required form, avoiding the separando-to-componendo conversion. The ai_only items (1.29, 1.32, 1.34, CN1) are over-citations of elementary facts that Heath uses implicitly. This is a citation-depth difference with the same logical backbone, yielding G.",
+  "jaccard": 0.167,
+  "ai_citations": "1.29|1.32|1.34|5.11|6.21|6.4|CN1|D6.1",
+  "heath_citations": "5.16|5.18|5.22|6.2|6.21|D6.1",
+  "ai_only": "1.29|1.32|1.34|5.11|6.4|CN1",
+  "heath_only": "5.16|5.18|5.22|6.2",
+  "audit_record": ""
+}

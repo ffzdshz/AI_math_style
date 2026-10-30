@@ -1,0 +1,91 @@
+{
+  "proposition": "13.7",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Diagonals BE and CA are drawn in pentagon ABCDE; triangles EAB and CBA share side AB with AE = BC; SAS congruence gives BE = CA",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diagonal DB is drawn; triangles ABC and DCB share side BC with AB = DC; SAS congruence gives AC = DB",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle BDE is isosceles with BD = BE; angle BDE = angle BED",
+      "type": "isosceles_triangle"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle EAB is isosceles with AE = AB; base angles AEB = ABE = alpha",
+      "type": "isosceles_triangle"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle CDE is isosceles with CD = DE; triangle BCD is isosceles with BC = CD; angle DBC = angle BDC = alpha",
+      "type": "isosceles_triangle"
+    },
+    {
+      "step": "Step 7",
+      "claim": "At vertex B, rays BE and BD lie inside angle ABC with ordering BA, BE, BD, BC; angle ABC = angle ABE + angle EBD + angle DBC",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "At vertex D, ray DB lies inside angle CDE; angle CDE = angle CDB + angle BDE = alpha + 2*alpha = 3*alpha",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "At vertex E, ray EB lies inside angle DEA; angle DEA = angle AEB + angle BED = alpha + 2*alpha = 3*alpha",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Angle AED = phi (full interior angle at E) used as included angle in SAS for triangles AED and CED; AE = CD, DE = DE",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 11",
+      "claim": "SSS congruence of triangles ACD and ECB with sides AC = EB, CD = CB, DA = CE; yields angle CDA = angle ECB",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 12",
+      "claim": "At vertex D, ray DA lies inside angle CDE; angle CDA = angle CDE - angle ADE = phi - (180 - phi)/2",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 13",
+      "claim": "At vertex C, ray CE lies inside angle BCD; angle BCE = angle BCD - angle DCE",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 18",
+      "claim": "SAS on triangles EAB and EDC with AE = DE, angle EAB = angle CDE, AB = DC; yields BE = CE",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 19",
+      "claim": "Triangle ACE is isosceles with CA = CE; angle CAE = angle CEA",
+      "type": "isosceles_triangle"
+    },
+    {
+      "step": "Step 20",
+      "claim": "At vertex A, ray AC lies inside angle EAB with ordering AB, AC, AE; angle CAE = angle EAB - angle BAC",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 21",
+      "claim": "At vertex E, ray EC lies inside angle DEA with ordering ED, EC, EA; angle CEA = angle DEA - angle DEC",
+      "type": "angle_decomposition"
+    }
+  ],
+  "configuration_map": "Pentagon ABCDE is convex and equilateral with all sides equal. At vertex B: sides BA and BC, diagonals BE (toward E, A-side) and BD (toward D, C-side); ray ordering BA, BE, BD, BC through interior. At vertex D: sides DC and DE, diagonals DB (toward B, C-side) and DA (toward A, E-side); ray ordering DC, DB, DA, DE through interior. Both decompositions at D (Steps 9 and 12) are compatible: angle CDB = alpha, angle BDA = (7*alpha-180)/2 = 36 degrees, angle ADE = (180-3*alpha)/2 = 36 degrees, total = 3*alpha = 108 degrees. At vertex E: sides ED and EA, diagonal EB (into interior); ray ordering ED, EB, EA. In Case 2, at vertex A: ray AC between AB and AE; at vertex E: ray EC between ED and EA. All ray orderings are consistent with convex pentagon geometry.",
+  "pass_reason": "All spatial claims are mutually consistent. Every angle decomposition places the intermediate ray correctly between the outer rays for a convex equilateral pentagon. The two overlapping decompositions at vertex D (Steps 9 and 12) are compatible, with the intermediate angle BDA equal to 36 degrees. All SAS and SSS congruence applications correctly match sides and included angles. No contradiction exists between any pair of spatial claims across the proof's two cases."
+}

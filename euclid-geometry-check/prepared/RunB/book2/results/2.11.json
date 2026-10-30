@@ -1,0 +1,61 @@
+{
+  "proposition": "2.11",
+  "run": "RunB",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Square ABDC on AB with A top-left, B top-right, D bottom-right, C bottom-left; angle BAC = 90 degrees",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E is the midpoint of AC, lying on the left side of the square between A and C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "F lies on line CA produced beyond A (above A); collinear order is C-E-A-F; EF = EB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Square FGHA on AF with F top-left, G top-right, H bottom-right, A bottom-left; H falls on segment AB since AF < AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AH = AF (sides of square FGHA); AF < AB so H is between A and B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "GH produced downward meets CD at K (K is directly below H on the bottom side of square ABDC)",
+      "type": "line_intersection"
+    },
+    {
+      "step": "Step 8",
+      "claim": "C, E, A, F are collinear with E between C and A, and F beyond A; AC bisected at E with AF added in a straight line",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Angle BAE = 90 degrees in triangle ABE (AB horizontal, AE vertical along AC)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 13",
+      "claim": "A is between C and F on line CF (order C-A-F); CF is cut at point A",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 17",
+      "claim": "H is between A and B on line AB; AB cut at H into segments AH and HB",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Square ABDC: A(top-left), B(top-right), D(bottom-right), C(bottom-left). Vertical left side: C at bottom, E at midpoint, A at top, F above A (on CA produced). E is center of circle with radius EB = AB*sqrt(5)/2. AF = AB*(sqrt(5)-1)/2 approximately 0.618*AB. Square FGHA to the right of line AF: F(top-left), G(top-right), H(bottom-right), A(bottom-left). H lies on AB at distance AF from A. Line GH (vertical) extended downward meets bottom side CD at K. All points are consistently positioned: the vertical line through C-E-A-F is the left side extended, and H on the top side AB divides it in the golden ratio.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction correctly places F above A on line CA extended, with AF = AB*(sqrt(5)-1)/2 < AB ensuring H falls between A and B. All propositions (2.6, 2.3, 2.2, 1.47) are applied to configurations satisfying their hypotheses: 2.6 to line C-E-A-F bisected at E with AF added; 1.47 to right triangle ABE; 2.3 to line CF cut at interior point A; 2.2 to line AB cut at interior point H. No angle decomposition issues arise as the proof is primarily algebraic/area-based."
+}

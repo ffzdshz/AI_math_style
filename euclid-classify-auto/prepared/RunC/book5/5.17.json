@@ -1,0 +1,32 @@
+{
+  "proposition": "5.17",
+  "book": 5,
+  "statement": "If magnitudes be proportional componendo, they will also be proportional separando.",
+  "heath_proof": "Let AB, BE, CD, DF be magnitudes proportional componendo, so that, as AB is to BE, so is CD to DF; I say that they will also be proportional separando, that is, as AE is to EB, so is CF to DF. For of AE, EB, CF, FD let equimultiples GH, HK, LM, MN be taken, and of EB, FD other, chance, equimultiples, KO, NP. Then, since GH is the same multiple of AE that HK is of EB, therefore GH is the same multiple of AE that GK is of AB. [V. 1] But GH is the same multiple of AE that LM is of CF; therefore GK is the same multiple of AB that LM is of CF. Again, since LM is the same multiple of CF that MN is of FD, therefore LM is the same multiple of CF that LN is of CD. [V. 1] But LM was the same multiple of CF that GK is of AB; therefore GK is the same multiple of AB that LN is of CD. Therefore GK, LN are equimultiples of AB, CD. Again, since HK is the same multiple of EB that MN is of FD, and KO is also the same multiple of EB that NP is of FD, therefore the sum HO is also the same multiple of EB that MP is of FD. [V. 2]  And, since, as AB is to BE, so is CD to DF, and of AB, CD equimultiples GK, LN have been taken, and of EB, FD equimultiples HO, MP, therefore, if GK is in excess of HO, LN is also in excess of MP, if equal, equal, and if less, less. Let GK be in excess of HO; then, if HK be subtracted from each, GH is also in excess of KO. But we saw that, if GK was in excess of HO, LN was also in excess of MP; therefore LN is also in excess of MP,  and, if MN be subtracted from each, LM is also in excess of NP; so that, if GH is in excess of KO, LM is also in excess of NP. Similarly we can prove that, if GH be equal to KO, LM will also be equal to NP, and if less, less. And GH, LM are equimultiples of AE, CF, while KO, NP are other, chance, equimultiples of EB, FD; therefore, as AE is to EB, so is CF to FD.",
+  "ai_proof_text": "5.17\n**Statement:** If magnitudes be proportional componendo, they will also be proportional separando.\n\n**Step 1.** Let A, B, C, D be magnitudes such that (A + B) : B :: (C + D) : D; that is, they are proportional componendo (D5.14). We are to show that A : B :: C : D, i.e., they are proportional separando (D5.15).\n\n**Step 2.** Take any equimultiples mA and mC of A and C respectively, and any equimultiples nB and nD of B and D respectively, where m and n are arbitrary positive integers.\n\n**Step 3.** Since mA is the same multiple of A that mB is of B (both being m-fold multiples), we have that mA + mB is the same multiple of A + B that mC + mD is of C + D. In other words, m(A + B) = mA + mB and m(C + D) = mC + mD, where m(A + B) and m(C + D) are equimultiples of (A + B) and (C + D) respectively [by 5.1 applied inversely: since the m-fold multiple of the whole (A + B) exceeds the m-fold multiple of the part B by the m-fold multiple of A, we have m(A + B) = mA + mB; similarly for C + D].\n\n**Step 4.** Since mB is the same multiple of B that mD is of D, and nB is the same multiple of B that nD is of D, the sum mB + nB is the same multiple of B that mD + nD is of D [by 5.2]. That is, (m + n)B and (m + n)D are equimultiples of B and D.\n\n**Step 5.** Now m(A + B) and m(C + D) are equimultiples of (A + B) and (C + D), and (m + n)B and (m + n)D are equimultiples of B and D. Since by hypothesis (A + B) : B :: (C + D) : D, the definition of proportion (D5.5) gives us: if m(A + B) > (m + n)B then m(C + D) > (m + n)D; if m(A + B) = (m + n)B then m(C + D) = (m + n)D; if m(A + B) < (m + n)B then m(C + D) < (m + n)D.\n\n**Step 6.** But m(A + B) = mA + mB (Step 3) and (m + n)B = mB + nB (Step 4). Therefore m(A + B) > (m + n)B if and only if mA + mB > mB + nB. Since mB is a common magnitude on both sides, mA + mB > mB + nB if and only if mA > nB [CN3 and CN5: if equals (mB) be subtracted from unequals, the remainders are unequal in the same sense; and conversely by CN2, if equals be added to unequals, the wholes are unequal in the same sense]. By the same reasoning, mA + mB = mB + nB if and only if mA = nB [CN2, CN3], and mA + mB < mB + nB if and only if mA < nB.\n\n**Step 7.** Similarly, m(C + D) = mC + mD and (m + n)D = mD + nD, so m(C + D) > (m + n)D if and only if mC > nD; m(C + D) = (m + n)D if and only if mC = nD; and m(C + D) < (m + n)D if and only if mC < nD [by the same reasoning using CN2, CN3, CN5].\n\n**Step 8.** Combining Steps 5, 6, and 7: if mA > nB then mC > nD; if mA = nB then mC = nD; if mA < nB then mC < nD.\n\n**Step 9.** Since m and n were arbitrary, and the equimultiples mA, mC of A, C and the equimultiples nB, nD of B, D satisfy exactly the conditions of D5.5, we conclude that A : B :: C : D.\n\n**Step 10.** Therefore, if magnitudes be proportional componendo, they will also be proportional separando. Q.E.D.\n\n**USED:** 5.1, 5.2, CN2, CN3, CN5, D5.14, D5.15, D5.5\n**Human refs (from References field):** 5.1, 5.2\n**Jaccard:** 0.250 — AI adds ['CN2', 'CN3', 'CN5', 'D5.14', 'D5.15', 'D5.5']",
+  "ai_used": [
+    "5.1",
+    "5.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.1",
+    "5.2"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let A, B, C, D be magnitudes such that (A + B) : B :: (C + D) : D; that is, they are proportional componendo (D5.14). We are to show that A : B :: C : D, i.e., they are proportional separa"
+}

@@ -1,0 +1,30 @@
+{
+  "proposition": "2.1",
+  "book": 2,
+  "statement": "If there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments.",
+  "heath_proof": "Let A, BC be two straight lines, and let BC be cut at random at the points D, E; I say that the rectangle contained by A, BC is equal to the rectangle contained by A, BD, that contained by A, DE and that contained by A, EC. For let BF be drawn from B at right angles to BC; [I. 11] let BG be made equal to A, [I. 3] through G let GH be drawn parallel to BC, [I. 31] and through D, E, C let DK, EL, CH be drawn parallel to BG. Then BH is equal to BK, DL, EH. Now BH is the rectangle A, BC, for it is contained by GB, BC, and BG is equal to A; BK is the rectangle A, BD, for it is contained by GB, BD, and BG is equal to A; and DL is the rectangle A, DE, for DK, that is BG [I. 34], is equal to A. Similarly also EH is the rectangle A, EC. Therefore the rectangle A, BC is equal to the rectangle A, BD, the rectangle A, DE and the rectangle A, EC.",
+  "ai_proof_text": "2.1\n**Statement:** If there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments.\n\n**Step 1.** Let A and BC be two straight lines, and let BC be cut at any number of points; for concreteness, let it be cut at D and E, so that the segments are BD, DE, and EC. We are to show that the rectangle contained by A and BC equals the sum of the rectangles contained by A and each of the segments BD, DE, EC.\n\n**Step 2.** From point B, draw BF at right angles to BC [1.11].\n\n**Step 3.** On BF, cut off BG equal to A [1.3].\n\n**Step 4.** Through G, draw GH parallel to BC [1.31].\n\n**Step 5.** Through D, E, and C, draw DK, EL, and CH each parallel to BG, meeting GH at K, L, and H respectively [1.31].\n\n**Step 6.** Now BH is the rectangle contained by A and BC. For BH is the parallelogram with sides BG and BC containing a right angle at B, and BG equals A; thus by the definition of a rectangular parallelogram, BH is the rectangle contained by A and BC [D2.1].\n\n**Step 7.** Consider the parallelogram BK (that is, BGKD). Since BG is parallel to DK (by construction in Step 5) and BD is a segment of BC which is parallel to GK (a segment of GH, constructed parallel to BC in Step 4), BGKD is a parallelogram. Its opposite sides are equal, so DK equals BG [1.34]. Since BG equals A, we have DK equals A. The parallelogram BK has a right angle at B (from Step 2), and its sides containing this angle are BG (equal to A) and BD. Therefore BK is the rectangle contained by A and BD [D2.1].\n\n**Step 8.** Consider the parallelogram DL (that is, DKLE). Since DK is parallel to EL (both constructed parallel to BG in Step 5) and DE is a segment of BC which is parallel to KL (a segment of GH), DKLE is a parallelogram. By the equality of opposite sides, EL equals DK [1.34], and since DK equals BG equals A, we have EL equals A. The angle GKD is right since it is the angle of the rectangle BGKD at K, and angle DKL is supplementary to angle GKD along the straight line GH; but actually, since BG is perpendicular to BC and DK is parallel to BG, the angle KDE is also a right angle [1.29]. Therefore DL is the rectangle contained by A and DE [D2.1].\n\n**Step 9.** By the same reasoning applied to the parallelogram EH (that is, ELHC): EL is parallel to CH, and EC is a segment of BC parallel to LH (a segment of GH). So ELHC is a parallelogram, and CH equals EL equals A [1.34]. The angle at E in this parallelogram is right by the same argument using 1.29 applied to the parallel lines EL and BG with transversal BC. Therefore EH is the rectangle contained by A and EC [D2.1].\n\n**Step 10.** The rectangle BH is composed of the rectangles BK, DL, and EH, since the segments BD, DE, EC together make up BC and the parallels DK, EL partition the figure BH into exactly these three sub-rectangles. That is, the rectangle contained by A and BC equals the rectangle contained by A and BD, together with the rectangle contained by A and DE, together with the rectangle contained by A and EC [CN2].\n\n**Step 11.** The argument holds for any number of segments, since we may draw through each point of division a line parallel to BG and apply the same reasoning. Therefore, if there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments. Q.E.D.\n\n**USED:** 1.11, 1.29, 1.3, 1.31, 1.34, CN2, D2.1\n**Human refs (from References field):** 1.11, 1.3, 1.31, 1.34\n**Jaccard:** 0.571 — AI adds ['1.29', 'CN2', 'D2.1']",
+  "ai_used": [
+    "1.11",
+    "1.29",
+    "1.3",
+    "1.31",
+    "1.34",
+    "CN2",
+    "D2.1"
+  ],
+  "heath_refs": [
+    "1.11",
+    "1.3",
+    "1.31",
+    "1.34"
+  ],
+  "ai_only": [
+    "1.29",
+    "CN2",
+    "D2.1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let A and BC be two straight lines, and let BC be cut at any number of points; for concreteness, let it be cut at D and E, so that the segments are BD, DE, and EC. We are to show that the "
+}

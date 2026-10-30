@@ -1,0 +1,13 @@
+{
+  "proposition": "9.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Heath's proof of the square part argues by contradiction through ratios: if an even-positioned term C is square and the adjacent odd-positioned term B is square (by 9.8), then B:C = A:B gives A,B the ratio of square to square, so by 8.26 (converse) A is square, contradicting the hypothesis. The AI instead uses 8.22 (in contrapositive/inverse form): for three consecutive terms in continued proportion, if the first is not square then the third is not square, and extends this by induction across all even-positioned terms. These are genuinely different logical backbones -- Heath reasons via ratios and similar plane numbers (8.26), while the AI reasons via properties of squares in continued proportion (8.22). The proof-tree containment test confirms 8.26 does not appear inside Heath's proof of 8.22 (which uses 8.20), so the routes are independent. Additionally, Heath's proof includes a cube part using 8.25 and 9.6 that the AI omits since the proposition statement concerns only squares. The AI's mislabeling of the inverse of 8.22 as 'the contrapositive' was considered as a candidate E (invalid inference), but the underlying mathematical result is sound in the geometric-sequence context, and under the lenience rule this is compressed-but-sound rather than a genuine logical gap. The AI's path is valid, yielding D.",
+  "jaccard": 0.2,
+  "ai_citations": "8.22|9.8",
+  "heath_citations": "8.25|8.26|9.6|9.8",
+  "ai_only": "8.22",
+  "heath_only": "8.25|8.26|9.6",
+  "audit_record": "CANDIDATE E — 9.10\n  violated_claim : \"if the first A2 is not square, then the third A4 cannot be square\" — AI calls this the contrapositive of 8.22 but it is actually the inverse\n  failure_mode   : invalid_inference\n  missing_is     : expansion — the mathematical result is true in the geometric-sequence context; the AI compresses the justification by mislabeling the logical operation\n  evidence       : AI Step 5: \"8.22 states that if three numbers are in continued proportion and the first is square, then the third is square. We use the contrapositive: if the first A2 is not square, then the third A4 cannot be square.\" The actual contrapositive of 8.22 is \"if third NOT square then first NOT square\", not \"if first NOT square then third NOT square.\"\n  why_not_terse  : Cannot complete convincingly — while the labeling is incorrect, the underlying inference is sound in this context (for r^(k-1), r^k, r^(k+1) in geometric sequence, squareness of first and third are equivalent). This is compressed-but-sound, not a genuine logical gap. Reclassified to NOT-E per lenience rule."
+}

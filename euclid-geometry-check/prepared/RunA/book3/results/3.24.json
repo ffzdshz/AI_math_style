@@ -1,0 +1,36 @@
+{
+  "proposition": "3.24",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AEB and CFD are similar segments of circles on equal straight lines AB and CD",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Point A is placed on point C and line AB is placed on line CD; since AB = CD, point B coincides with point D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The relocated segment AEB (now CGD) lies on the same side of line CD as segment CFD",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "If the relocated segment does not coincide with CFD, it falls either inside CFD, outside it, or cuts across it, producing two similar and unequal segments on the same line on the same side",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Two similar and unequal segments cannot exist on the same straight line on the same side (by 3.23)",
+      "type": "segment_position"
+    }
+  ],
+  "configuration_map": "Points A,B are endpoints of chord for segment AEB; points C,D are endpoints of chord for segment CFD. After superposition, A coincides with C and B coincides with D (since AB = CD). The segment AEB is rigidly relocated to sit on chord CD. Point G is a hypothetical arc point if the relocated segment does not coincide with CFD. The relocated segment CGD and the original segment CFD both sit on the same straight line CD and on the same side of that line. No interior/exterior point claims, no angle decompositions, no ray orderings are involved. The proof is a clean superposition argument with a single contradiction via Proposition 3.23.",
+  "pass_reason": "The proof is a straightforward superposition argument with no conflicting spatial claims. All spatial assumptions are mutually consistent: the superposition correctly places equal chords on each other, the relocated segment is properly on the same side as the original, similarity is preserved under rigid motion, and 3.23 is correctly applied to all possible non-coincidence cases (inside, outside, or crossing). No angle decompositions, interior/exterior point arguments, or ray orderings are present that could introduce hidden contradictions."
+}

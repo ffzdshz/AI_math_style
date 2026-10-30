@@ -1,0 +1,13 @@
+{
+  "proposition": "3.37",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides this classification as D. Both proofs share the opening strategy of constructing a tangent and applying III.36 to equate squares, but their key intermediate conclusions diverge thereafter. Heath uses triangle congruence (I.8): he shows DE = DB, then with FE = FB and FD common concludes triangles DEF and DBF are congruent, transferring the known right angle at E to B. The AI instead uses the Pythagorean theorem and its converse (I.47, I.48): after establishing AT squared equals AD squared, it applies I.47 to the right triangle OAT to get OA squared = OT squared + AT squared, substitutes equal radii and equal squares to obtain OA squared = OD squared + AD squared, then invokes I.48 to conclude angle ODA is right. The containment test was checked since heath_only contains 1.8 which appears inside the proof of AI-cited I.48, but Heath is not re-deriving I.48 inline; rather Heath uses I.8 in an entirely independent congruence-based route that never reconstructs the Pythagorean converse argument. These are genuinely different logical backbones yielding a valid path difference.",
+  "jaccard": 0.167,
+  "ai_citations": "1.47|1.48|2.4|3.1|3.16|3.17|3.18|3.36|CN1|CN2|CN4|CN5|D1.15|D1.17|D3.2|P1|P2",
+  "heath_citations": "1.8|3.16|3.18|3.36",
+  "ai_only": "1.47|1.48|2.4|3.1|3.17|CN1|CN2|CN4|CN5|D1.15|D1.17|D3.2|P1|P2",
+  "heath_only": "1.8",
+  "audit_record": ""
+}

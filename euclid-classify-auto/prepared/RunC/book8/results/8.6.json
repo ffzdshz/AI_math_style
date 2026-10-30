@@ -1,0 +1,13 @@
+{
+  "proposition": "8.6",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The proofs have different logical backbones, leading to classification D. Heath's proof takes the least numbers F, G, H in the same ratio as A, B, C via VII.33, applies ex aequali (VII.14), uses VIII.3 to show the extremes are prime, and concludes non-measurement via the definition D7.20. The AI instead takes the least pair p:q in the basic ratio (7.33), constructs the least continued proportion via 8.2, invokes primality of extremes (logically 8.3 content, though labeled as 8.1), then uses 7.21 and 7.20 to set up a measurement-based contradiction showing e_1 = 1 implies p = 1 implies A_1 measures A_2. The AI's use of 8.1 in the direction of 8.3 was considered as a potential E (invalid inference), but under the lenience rule the conclusion is mathematically sound and follows from the converse proposition 8.3, making this a citation label error rather than a logical gap (missing_is = expansion). The key structural difference is that Heath uses 8.3 directly for prime-extremes, while the AI decomposes through 8.2 and 8.1 and relies on measurement theory (7.20, 7.21, 7.22) to reach the contradiction, constituting a genuinely different valid path.",
+  "jaccard": 0.222,
+  "ai_citations": "7.14|7.20|7.21|7.22|7.33|8.1|8.2",
+  "heath_citations": "7.14|7.33|8.3|D7.20",
+  "ai_only": "7.20|7.21|7.22|8.1|8.2",
+  "heath_only": "8.3|D7.20",
+  "audit_record": "CANDIDATE E — 8.6\n  violated_claim : \"By 8.1, since e_1...are the least numbers in continued proportion, the extremes e_1 and e_{j-i+1} are prime to one another\"\n  failure_mode   : invalid_inference\n  missing_is     : expansion — the conclusion is correct and follows from 8.3 (the converse of the cited 8.1); this is a citation label error, not a logical gap\n  evidence       : Step 5 cites 8.1 (\"extremes prime to one another implies numbers are least\") but uses it in the converse direction (\"numbers are least implies extremes are prime\"), which is 8.3\n  why_not_terse  : The wrong proposition is cited, but the conclusion is mathematically correct via 8.3; the logical chain is sound with the correct reference\nVERDICT: NOT-E (missing_is = expansion; lenience rule applies)"
+}

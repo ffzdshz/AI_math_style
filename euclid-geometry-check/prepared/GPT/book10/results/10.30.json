@@ -1,0 +1,31 @@
+{
+  "proposition": "10.30",
+  "run": "GPT",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a square constructed on AB; AB = BC and angle ABC is right",
+      "type": "construction"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AC is the diagonal of square ABCD",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangle ABC is right-angled at B, so AC² = AB² + BC² = 2·AB² by the Pythagorean theorem",
+      "type": "metric"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AC > AB because the right angle at B is the greatest angle and subtends the greatest side",
+      "type": "ordering"
+    }
+  ],
+  "configuration_map": "A and B are endpoints of the given rational straight line. ABCD is a square with AB as one side, so C is adjacent to B with BC = AB and angle ABC = 90 degrees. D is the fourth vertex. AC is the diagonal of the square, forming the hypotenuse of right triangle ABC. After establishing AC² = 2·AB² in Step 2, the proof proceeds entirely algebraically with commensurability and number-theoretic arguments. No auxiliary points, no interior/exterior claims, no angle decompositions beyond the trivial right-angle configuration.",
+  "pass_reason": "The geometric configuration is a simple square with its diagonal — one of the most elementary constructions in Euclid. All spatial claims (square properties, right triangle, Pythagorean relation, side ordering) are mutually consistent and standard. The bulk of the proof is algebraic/number-theoretic reasoning about commensurability and the irrationality of sqrt(2), which involves no spatial claims at all."
+}

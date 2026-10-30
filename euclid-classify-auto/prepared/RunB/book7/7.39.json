@@ -1,0 +1,30 @@
+{
+  "proposition": "7.39",
+  "book": 7,
+  "statement": "To find the number which is the least that will have given parts.",
+  "heath_proof": "Let A, B, C be the given parts; thus it is required to find the number which is the least that will have the parts A, B, C. Let D, E, F be numbers called by the same name as the parts A, B, C, and let G, the least number measured by D, E, F, be taken. [VII. 36] Therefore G has parts called by the same name as D, E, F. [VII. 37] But A, B, C are parts called by the same name as D, E, F; therefore G has the parts A, B, C. I say next that it is also the least number that has. For, if not, there will be some number less than G which will have the parts A, B, C. Let it be H. Since H has the parts A, B, C, therefore H will be measured by numbers called by the same name as the parts A, B, C. [VII. 38] But D, E, F are numbers called by the same name as the parts A, B, C; therefore H is measured by D, E, F. And it is less than G: which is impossible. Therefore there will be no number less than G that will have the parts A, B, C.",
+  "ai_proof_text": "7.39\n**Statement:** To find the number which is the least that will have given parts.\n\n**Step 1.** Let the given parts be a 1/A-th part, a 1/B-th part, and a 1/C-th part, where A, B, C are given numbers. We seek the least number that has all these parts.\n\n**Step 2.** By Proposition 7.36, find D, the least number which A, B, and C all measure. (If only two parts are given, use Proposition 7.34 instead; the argument generalizes to any finite collection of parts by iterating 7.34.)\n\n**Step 3.** Since A measures D, by Proposition 7.37 the number D has a part called by the same name as A, that is, D has a 1/A-th part. Likewise, since B measures D, D has a 1/B-th part, and since C measures D, D has a 1/C-th part. Therefore D has all the given parts.\n\n**Step 4.** We now show D is the least such number. Suppose, for the sake of contradiction, that there exists a number E less than D which also has a 1/A-th part, a 1/B-th part, and a 1/C-th part.\n\n**Step 5.** Since E has a 1/A-th part, by Proposition 7.38 the number E is measured by A. Similarly, since E has a 1/B-th part, E is measured by B, and since E has a 1/C-th part, E is measured by C. Thus A, B, and C all measure E.\n\n**Step 6.** But D is the least number measured by A, B, and C. By Proposition 7.35 (applied iteratively: since A and B both measure E, the least number measured by A and B also measures E; and since C also measures E, the least number measured by all three, namely D, measures E). Therefore D measures E.\n\n**Step 7.** But D measures E implies D is less than or equal to E (by Definition D7.3 and Common Notion CN5, since a part is less than the whole, a measuring number cannot exceed the measured number). This contradicts the assumption that E is less than D.\n\n**Step 8.** Therefore no number less than D has all the given parts, and D is the least number having the given parts. Q.E.F.\n\n**USED:** 7.34, 7.35, 7.36, 7.37, 7.38, CN5, D7.3\n**Human refs (from References field):** 7.36, 7.37, 7.38\n**Jaccard:** 0.429 — AI adds ['7.34', '7.35', 'CN5', 'D7.3']\n# Book 8 of Euclid's Elements — Step-by-Step AI Proofs (Run B)",
+  "ai_used": [
+    "7.34",
+    "7.35",
+    "7.36",
+    "7.37",
+    "7.38",
+    "CN5",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.36",
+    "7.37",
+    "7.38"
+  ],
+  "ai_only": [
+    "7.34",
+    "7.35",
+    "CN5",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let the given parts be a 1/A-th part, a 1/B-th part, and a 1/C-th part, where A, B, C are given numbers. We seek the least number that has all these parts.  **Step 2.** By Proposition 7.36"
+}

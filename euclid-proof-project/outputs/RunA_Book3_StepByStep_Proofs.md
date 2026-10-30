@@ -1,0 +1,1160 @@
+# Book 3 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 3.1
+**Statement:** To find the centre of a given circle.
+
+**Step 1.** Let ABC be the given circle. We wish to find its centre.
+
+**Step 2.** Draw any chord AB in the circle [P1]. Bisect AB at the point D [1.10].
+
+**Step 3.** From D, draw DC at right angles to AB [1.11]. Produce DC to meet the circle at E [P2]. Bisect CE at F [1.10].
+
+**Step 4.** I say that F is the centre of the circle ABC. Suppose it is not. If possible, let G, a point not on CE, be the centre. Join GA, GD, and GB [P1].
+
+**Step 5.** Since D is the midpoint of AB, we have DA = DB [D1.15, by construction in Step 2].
+
+**Step 6.** Since G is assumed to be the centre of the circle, GA = GB [D1.15].
+
+**Step 7.** In triangles GDA and GDB, we have DA = DB (Step 5), GA = GB (Step 6), and GD is common.
+
+**Step 8.** Therefore triangle GDA is congruent to triangle GDB, and hence angle GDA = angle GDB [1.8].
+
+**Step 9.** When a straight line standing on another straight line makes the adjacent angles equal to one another, each of the equal angles is a right angle [D1.10]. Therefore angle GDA is a right angle.
+
+**Step 10.** But angle FDA is also a right angle, since DC was drawn at right angles to AB at D (Step 3).
+
+**Step 11.** Therefore angle GDA = angle FDA [P4, since all right angles are equal].
+
+**Step 12.** But angle GDA is a part of angle FDA (since G is not on line CE, the angle GDA is less than or equal to FDA only if G lies on the same side; however, if G is off the line CE, then one of these angles is a proper part of the other). Since they are equal, yet the whole equals the part, this contradicts CN5, which states that the whole is greater than the part.
+
+**Step 13.** Therefore G cannot be the centre of the circle unless G lies on CE. Since the same argument applies for any point off the line CE, the centre must lie on CE.
+
+**Step 14.** By the same construction, if we were to draw another chord and its perpendicular bisector, the centre would have to lie on that perpendicular bisector as well. But we can establish that F is the centre directly: since F is the midpoint of the diameter CE (a chord through the centre lies on CE by the argument above), F is equidistant from C and E, and any chord through F would be bisected by the perpendicular from F, which is the defining property of the centre.
+
+**Step 15.** More precisely, suppose the centre is some other point F' on CE, with F' different from F. Since F' is the centre, F'C = F'E [D1.15]. But F is the midpoint of CE, so FC = FE. If F' is different from F and also on segment CE, then F'C and F'E cannot both be equal unless F' = F (for if F' is closer to C than F, then F'C < FC = FE < F'E, contradicting F'C = F'E). Therefore F' = F.
+
+**Step 16.** Therefore F is the centre of the circle ABC, which is what was required to find.
+
+**USED:** 1.10, 1.11, 1.8, CN5, D1.10, D1.15, P1, P2, P4
+**Human refs (from References field):** 1.8, D1.10
+**Jaccard:** 0.222 — AI adds ['1.10', '1.11', 'CN5', 'D1.15', 'P1', 'P2', 'P4']
+
+## Proposition 3.2
+**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.
+
+**Step 1.** Let ABC be a circle, and let A and B be two points taken on its circumference. Join AB [P1]. We must show that the straight line AB falls within the circle.
+
+**Step 2.** Find the centre D of circle ABC [3.1]. Join DA and DB [P1].
+
+**Step 3.** Take any point E on the straight line AB between A and B. Join DE [P1]. It suffices to show that DE is less than DA (a radius), for then E lies within the circle [D1.15].
+
+**Step 4.** Since DA and DB are both radii of circle ABC, we have DA = DB [D1.15]. Therefore triangle DAB is isosceles with DA = DB.
+
+**Step 5.** Since in triangle DAB the sides DA and DB are equal, the base angles are equal, that is, angle DAB = angle DBA [1.5].
+
+**Step 6.** Since E is a point on AB between A and B, the angle DEB is an exterior angle of triangle DAE (for the side AE of triangle DAE is produced to B) [1.16].
+
+**Step 7.** Therefore angle DEB is greater than the interior and opposite angle DAE [1.16]. That is, angle DEB > angle DAE.
+
+**Step 8.** Now angle DAE is the same as angle DAB (since E lies on AB), and angle DAB = angle DBA [Step 5]. Also angle DBA is the same as angle DBE (since E lies on AB). Therefore angle DAE = angle DBE.
+
+**Step 9.** From Steps 7 and 8, angle DEB > angle DBE.
+
+**Step 10.** In triangle DBE, since angle DEB is greater than angle DBE, the side opposite the greater angle is greater than the side opposite the lesser angle [1.19]. Therefore DB > DE.
+
+**Step 11.** But DB equals DA, and DA is a radius of the circle. Therefore DE is less than the radius. Hence the point E lies within the circle [D1.15].
+
+**Step 12.** Since E was taken as an arbitrary point on AB between A and B, every such point lies within the circle. Therefore the straight line AB falls within the circle. Q.E.D.
+
+**USED:** 1.16, 1.19, 1.5, 3.1, D1.15, P1
+**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1
+**Jaccard:** 0.667 — AI adds ['D1.15', 'P1']
+
+## Proposition 3.3
+**Statement:** If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.
+
+**Step 1.** Let there be a circle with centre E [found by 3.1], and let CD be a straight line through E, and let AB be a straight line not through the centre. Suppose first that CD bisects AB at F, so that AF equals FB. We must show that CD cuts AB at right angles.
+
+**Step 2.** Join EA and EB [P1]. Since E is the centre of the circle and A, B lie on the circumference, EA equals EB [D1.15].
+
+**Step 3.** In triangles EFA and EFB, AF equals FB [by hypothesis], EA equals EB [Step 2], and EF is common. Therefore by the SSS congruence theorem [1.8], triangle EFA is congruent to triangle EFB, and hence angle EFA equals angle EFB.
+
+**Step 4.** Since the straight line EF standing on the straight line AB makes the adjacent angles EFA and EFB equal to one another, each of the angles EFA and EFB is a right angle [D1.10]. Therefore CD cuts AB at right angles.
+
+**Step 5.** Now suppose conversely that CD cuts AB at right angles at F, so that angle EFA and angle EFB are each right angles. We must show that AF equals FB.
+
+**Step 6.** Join EA and EB [P1]. Since E is the centre and A, B lie on the circumference, EA equals EB [D1.15]. Therefore triangle EAB is isosceles, and by 1.5, angle EAF equals angle EBF.
+
+**Step 7.** In triangles EFA and EFB, angle EAF equals angle EBF [Step 6], angle EFA equals angle EFB [both being right angles, by hypothesis], and EF is common to both triangles. Therefore by 1.26 (AAS), triangle EFA is congruent to triangle EFB, and hence AF equals FB.
+
+**Step 8.** Therefore AF equals FB, that is, CD bisects AB. This completes the proof of both directions: if a straight line through the centre bisects a chord not through the centre, it cuts it at right angles; and if it cuts such a chord at right angles, it bisects it. Q.E.F.
+
+**USED:** 1.26, 1.5, 1.8, 3.1, D1.10, D1.15, P1
+**Human refs (from References field):** 1.26, 1.5, 1.8, D1.10
+**Jaccard:** 0.571 — AI adds ['3.1', 'D1.15', 'P1']
+
+## Proposition 3.4
+**Statement:** If in a circle two straight lines cut one another which are not through the centre, they do not bisect one another.
+
+**Step 1.** Let ABCD be a circle, and let AC and BD be two straight lines in the circle which cut one another at the point E, and let neither pass through the centre. I say that they do not bisect one another.
+
+**Step 2.** For suppose, if possible, that they do bisect one another, so that AE equals EC and BE equals ED.
+
+**Step 3.** Find the centre F of the circle ABCD [3.1].
+
+**Step 4.** Join FE [P1].
+
+**Step 5.** Since the straight line FE passes through the centre F, and the straight line AC, which does not pass through the centre, is bisected at E (by our assumption), then by Proposition 3.3, FE cuts AC at right angles. Therefore the angle FEA is a right angle.
+
+**Step 6.** Again, since the straight line FE passes through the centre F, and the straight line BD, which does not pass through the centre, is bisected at E (by our assumption), then by Proposition 3.3, FE cuts BD at right angles. Therefore the angle FEB is a right angle.
+
+**Step 7.** But the angle FEA was shown to be a right angle. Therefore the angle FEA equals the angle FEB, since all right angles are equal to one another [P4].
+
+**Step 8.** However, since AC and BD are two distinct straight lines cutting one another at E, and neither coincides with the other, the angle FEA is greater than the angle FEB, for the angle FEB is a part of the angle FEA [CN5]. This contradicts the conclusion of Step 7 that they are equal.
+
+**Step 9.** Therefore the assumption is false, and AC and BD do not bisect one another. Q.E.D.
+
+**USED:** 3.1, 3.3, CN5, P1, P4
+**Human refs (from References field):** 3.1, 3.3
+**Jaccard:** 0.400 — AI adds ['CN5', 'P1', 'P4']
+
+## Proposition 3.5
+**Statement:** If two circles cut one another, they will not have the same centre.
+
+**Step 1.** Let circles ABC and CDG cut one another at points C and B. Suppose, for the sake of contradiction, that they have the same centre; call it E.
+
+**Step 2.** Join EC from E to the intersection point C [P1]. Since E is the centre of circle ABC, all straight lines from E to the circumference of circle ABC are equal [D1.15, D1.16]. Since E is the centre of circle CDG, all straight lines from E to the circumference of circle CDG are equal [D1.15, D1.16].
+
+**Step 3.** Now draw a straight line from E through a region where the circles diverge, meeting circle ABC at F and circle CDG at G, where F and G are distinct points on this line [P1, P2]. Such a line exists because the two circles cut one another and are therefore not the same circle; there is a region where one circle extends beyond the other.
+
+**Step 4.** Since E is the centre of circle ABC, we have EF = EC [D1.15, D1.16].
+
+**Step 5.** Since E is the centre of circle CDG, we have EG = EC [D1.15, D1.16].
+
+**Step 6.** Therefore EF = EG [CN1], since both equal EC.
+
+**Step 7.** But F and G are distinct points on the same ray from E, so one of the segments EF, EG is a proper part of the other. Without loss of generality, suppose EG is a part of EF (i.e., G lies between E and F). Then EF, the whole, equals EG, the part. This contradicts the common notion that the whole is greater than the part [CN5].
+
+**Step 8.** Therefore the assumption that the two circles have the same centre is false. Hence, if two circles cut one another, they do not have the same centre. Q.E.D.
+
+**USED:** CN1, CN5, D1.15, D1.16, P1, P2
+**Human refs (from References field):** D1.15
+**Jaccard:** 0.167 — AI adds ['CN1', 'CN5', 'D1.16', 'P1', 'P2']
+
+## Proposition 3.6
+**Statement:** If two circles touch one another, they will not have the same centre.
+
+Suppose, for the sake of contradiction, that two circles touching one another have the same centre. We consider two cases.
+
+**Case 1: Internal tangency.**
+
+**Step 1.** Let circles ABC and CDE touch one another internally at the point C, and suppose, for contradiction, that they share the same centre F. Let circle CDE be the circle lying within circle ABC.
+
+**Step 2.** Join FC [P1], and draw a line from F, distinct from FC, cutting circle CDE at E and circle ABC at B [P2].
+
+**Step 3.** Since F is the centre of circle ABC, we have FC = FB [D1.15, D1.16].
+
+**Step 4.** Since F is the centre of circle CDE, we have FC = FE [D1.15, D1.16].
+
+**Step 5.** Therefore FB = FE [CN1].
+
+**Step 6.** But since circle CDE lies within circle ABC, the point E on circle CDE lies between F and B. Hence FE is a part of FB, and the whole FB is greater than the part FE [CN5].
+
+**Step 7.** This contradicts Step 5, where we established FB = FE. Therefore two circles touching internally cannot have the same centre.
+
+**Case 2: External tangency.**
+
+**Step 8.** Let circles ABC and CDE touch one another externally at the point C, and suppose, for contradiction, that they share the same centre F.
+
+**Step 9.** Join FC [P1]. Since F is the centre of circle ABC, FC equals every radius of circle ABC [D1.15, D1.16]. Since F is the centre of circle CDE, FC equals every radius of circle CDE [D1.15, D1.16].
+
+**Step 10.** Draw a line from F cutting circle ABC at a point B other than C [P2]. Then FB = FC [D1.15, D1.16], since both are radii of circle ABC. But FC is also a radius of circle CDE (Step 9).
+
+**Step 11.** Thus every radius from F to circle ABC equals every radius from F to circle CDE, so the two circles have equal radii and the same centre. By the definition of equal circles [D3.1], the circles are equal.
+
+**Step 12.** But if two circles have the same centre and equal radii, every point at that distance from the centre lies on both circles, so the circles coincide entirely [D1.15]. Circles that coincide do not merely touch; they would cut one another at every point, contradicting the hypothesis that they touch without cutting [D3.3, D3.2].
+
+**Step 13.** Therefore two circles touching externally cannot have the same centre either.
+
+**Step 14.** In both cases a contradiction arises, so if two circles touch one another, they do not have the same centre. Q.E.D.
+
+**USED:** CN1, CN5, D1.15, D1.16, D3.1, D3.2, D3.3, P1, P2
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['CN1', 'CN5', 'D1.15', 'D1.16', 'D3.1', 'D3.2', 'D3.3', 'P1', 'P2']
+
+## Proposition 3.7
+**Statement:** If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that will be greatest on which the centre is, the remainder of the same diameter will be least, and of the rest  the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.
+
+**Step 1.** Let there be a circle ABCD with centre E and diameter AD. Let F be a point on AD which is not the centre E. From F let various straight lines FB, FC, FG be drawn to the circle. We must show: (i) FA is greatest among all lines from F to the circle, (ii) FD is least, (iii) of the remaining lines, the nearer to FA is always greater than the more remote, and (iv) only two equal straight lines fall from F on the circle, one on each side of FD.
+
+**Step 2.** Since E is the centre and A, D are endpoints of the diameter, EA = ED [D1.15, D1.17]. Since F lies on AD between E and D (without loss of generality), the points lie in order A-E-F-D along the line. Therefore AF = AE + EF [CN2] and DF = ED - EF [CN3].
+
+**Step 3.** (FA is greatest.) Let B be any point on the circle other than A. Join EB and FB [P1]. In triangle BEF, EB + EF > BF [1.20]. Since EB = EA (both are radii) [D1.15], we have EA + EF > BF. But EA + EF = AF (from Step 2). Therefore AF > BF. Since B was an arbitrary point on the circle, FA is the greatest of all straight lines drawn from F to the circle.
+
+**Step 4.** (FD is least.) Let B be any point on the circle other than D. Join EB [P1]. In triangle BEF, EF + FB > EB [1.20]. Since EB = ED (radii) [D1.15], we have EF + FB > ED. Therefore FB > ED - EF = FD. Since B was arbitrary, FD is the least of all straight lines drawn from F to the circle.
+
+**Step 5.** (The nearer to FA is greater than the more remote.) Let B and C be points on the circle on the same side of diameter AD, with B nearer to A than C. Join EB and EC [P1]. Since B is nearer to A on the circle than C, angle AEB < angle AEC. Now since A, E, F are collinear and E lies between A and F, the angles AEB and FEB are supplementary: angle AEB + angle FEB equals two right angles [1.13]. Likewise angle AEC + angle FEC equals two right angles [1.13]. Since angle AEB < angle AEC, it follows that angle FEB > angle FEC.
+
+**Step 6.** Now consider triangles FEB and FEC. We have EF = EF (common side), EB = EC (both radii) [D1.15], and angle FEB > angle FEC (from Step 5). By Proposition 1.24, the side opposite the greater included angle is greater: FB > FC. Therefore the straight line from F to the nearer point B is greater than the straight line from F to the more remote point C. The same argument applies on the other side of the diameter.
+
+**Step 7.** (Two equal lines, one on each side.) Let FB be a line from F to a point B on the circle, where B does not lie on the diameter. At the point E, on the opposite side of line AD from B, construct angle FEG equal to angle FEB [1.23]. Let G be the point where ray EG meets the circle [D1.15]. In triangles FEB and FEG: EF = EF (common), EB = EG (radii) [D1.15], and angle FEB = angle FEG (by construction). By Proposition 1.4 (SAS), FB = FG. Thus from F there fall two equal straight lines to the circle, one on each side of FD.
+
+**Step 8.** (No more than two equal lines.) Suppose FH = FB where H is a point on the circle on the same side of diameter AD as B, with H distinct from B. In triangles FEH and FEB: EF = EF (common), EH = EB (radii) [D1.15], and FH = FB (by hypothesis). By Proposition 1.8 (SSS), angle FEH = angle FEB. Since H and B lie on the same side of line AD and the angles FEH and FEB measured from EF are equal, ray EH coincides with ray EB. Since both H and B lie on this ray and on the circle, H = B, contradicting the assumption that H is distinct from B. Therefore on each side of the diameter there falls exactly one straight line from F equal to a given line FB.
+
+**Step 9.** We have shown that FA is greatest, FD is least, among the remaining lines the nearer to FA is always greater than the more remote, and exactly two equal straight lines fall from F on the circle, one on each side of the least line FD. This is what was required to prove.
+
+**USED:** 1.13, 1.20, 1.23, 1.24, 1.4, 1.8, CN2, CN3, D1.15, D1.17, P1
+**Human refs (from References field):** 1.20, 1.23, 1.24, 1.4
+**Jaccard:** 0.364 — AI adds ['1.13', '1.8', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']
+
+## Proposition 3.8
+**Statement:** If a point be taken outside a circle and from the point straight lines be drawn through to the circle, one of which is through the centre and the others are drawn at random, then, of the straight lines which fall on the concave circumference, that through the centre is greatest, while of the rest   the nearer to that through the centre is always greater than the more remote, but, of the straight lines falling on the convex circumference, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal straight lines will fall on the circle from the point, one on each side of the least.
+
+**Step 1.** Let circle ABC have centre M, and let D be a point outside the circle. Draw straight lines DA, DE, DF, DC through D to the circle, where DA passes through the centre M and meets the circle at A (on the far side, the concave circumference relative to D) and at G (on the near side, the convex circumference). Let E, F, C be points on the circle such that DE, DF, DC meet the circle, with E nearer to A than F, and F nearer to A than C, all on the concave side. Also let DK, DL be lines meeting the circle on the convex side, with K nearer to G than L. [P1, D1.15, D1.16]
+
+**Step 2.** Since M is the centre of the circle, we have MA = ME = MF = MC = MK = ML = MG, since all are radii. [D1.15]
+
+**Step 3.** We prove DA is the greatest line to the concave circumference. Consider triangle DME. By 1.20 (any two sides of a triangle are together greater than the remaining side), DM + ME > DE. But ME = MA (radii), so DM + MA > DE. Now DM + MA = DA (since A, M, G are collinear and D, G, M, A are collinear with M between G and A). Therefore DA > DE. [1.20, CN1]
+
+**Step 4.** Similarly, for any other line DF or DC to the concave circumference, DM + MF > DF, and since MF = MA, we get DA = DM + MA = DM + MF > DF. Likewise DA > DC. So DA is the greatest of all lines from D to the concave circumference. [1.20]
+
+**Step 5.** We prove that among lines to the concave circumference, the nearer to DA is greater than the more remote. We must show DE > DF. In triangles DME and DMF, we have DM = DM (common), ME = MF (radii), and angle DME > angle DMF since E is nearer to A (the line through the centre) than F is. By 1.24 (if two triangles have two sides equal respectively, but the included angle of one greater, then the base of that one is greater), DE > DF. [1.24]
+
+**Step 6.** Similarly, since angle DMF > angle DMC (as F is nearer to A than C), by 1.24 we get DF > DC. Thus among lines to the concave circumference, the nearer to the line through the centre is always greater than the more remote. [1.24]
+
+**Step 7.** We prove DG is the least line to the convex circumference. Consider triangle DMK. By 1.20, DM + MK > DK. But MK = MG (radii), so DM + MG > DK. Now DG = DM - MG (since D is outside the circle and G is between D and M on line DA), so DG < DM. Also DK > DM - MK = DM - MG = DG would need separate argument. Instead: In triangle DMK, by 1.20, DK + KM > DM, so DK > DM - MK = DM - MG. But DG = DM - MG, so DK > DG. [1.20, CN5]
+
+**Step 8.** More precisely, since G lies on segment DM (D is outside the circle, G is the near intersection on line DA, and M is the centre inside the circle), we have DM = DG + GM. In triangle DMK, we have DK + KM > DM by 1.20, so DK + MG > DG + MG (since KM = MG as radii, and DM = DG + GM = DG + MG). Therefore DK > DG. [1.20, CN3]
+
+**Step 9.** Similarly, DL + ML > DM = DG + MG by 1.20, and since ML = MG, we get DL > DG. So DG is less than every other line from D to the convex circumference, hence DG is least. [1.20, CN3]
+
+**Step 10.** We prove that among lines to the convex circumference, the nearer to DG is less than the more remote. We must show DK < DL. In triangles DMK and DML, we have DM = DM (common), MK = ML (radii), and angle DMK < angle DML since K is nearer to G than L is. By 1.24, DK < DL. [1.24]
+
+**Step 11.** Thus among lines to the convex circumference, the nearer to the least (DG) is always less than the more remote. [1.24]
+
+**Step 12.** We prove that exactly two equal straight lines fall on the circle from D, one on each side of the least line DG. At the centre M, construct angle DMB equal to angle DMK on the opposite side of DM, where B is the point where the resulting line meets the circle. [1.23, P1]
+
+**Step 13.** In triangles DMK and DMB, DM = DM (common), MK = MB (radii), and angle DMK = angle DMB (by construction). Therefore by 1.4 (SAS congruence), DK = DB. [1.4]
+
+**Step 14.** We show no other line from D to the circle can equal DK. Suppose DN is another line from D to the circle on the same side as DK. If DN is nearer to DG than DK, then DN < DK by Step 10. If DN is more remote from DG than DK, then DN > DK by Step 10. In neither case does DN = DK. Similarly on the other side, no line other than DB can equal DK. [1.24]
+
+**Step 15.** Therefore only two equal straight lines fall on the circle from D, one on each side of the least line DG. This completes the proof. [1.4, 1.23]
+
+**USED:** 1.20, 1.23, 1.24, 1.4, CN1, CN3, CN5, D1.15, D1.16, P1
+**Human refs (from References field):** 1.20, 1.21, 1.24, 1.4, 3.1
+**Jaccard:** 0.250 — AI adds ['1.23', 'CN1', 'CN3', 'CN5', 'D1.15', 'D1.16', 'P1']; Human adds ['1.21', '3.1']
+
+## Proposition 3.9
+**Statement:** If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.
+
+**Step 1.** Let ABC be a circle, and let D be a point taken within the circle such that more than two equal straight lines fall from D on the circle. Suppose DA, DB, and DC are three such equal straight lines, so that DA = DB = DC.
+
+**Step 2.** Assume, for the sake of contradiction, that D is not the centre of circle ABC.
+
+**Step 3.** Since D is a point within circle ABC and D is not the centre, by Proposition 3.7, only two equal straight lines can fall from D on the circle, one on each side of the least straight line (the remainder of the diameter through D). [3.7]
+
+**Step 4.** But we have supposed that DA = DB = DC, which gives three equal straight lines falling from D on the circle. This contradicts the conclusion of Step 3 that only two equal straight lines can fall from such a point.
+
+**Step 5.** Therefore the assumption in Step 2 is false, and D must be the centre of circle ABC. This is what was to be proved.
+
+**USED:** 3.7
+**Human refs (from References field):** 1.8, 3.1, D1.10
+**Jaccard:** 0.000 — AI adds ['3.7']; Human adds ['1.8', '3.1', 'D1.10']
+
+## Proposition 3.10
+**Statement:** A circle does not cut a circle at more points than two.
+
+**Step 1.** Suppose, for the sake of contradiction, that circle ABC cuts circle DEF at more than two points, say at the points B, G, and F.
+
+**Step 2.** Find the centre K of circle ABC. [3.1]
+
+**Step 3.** Join KB, KG, and KF. [P1]
+
+**Step 4.** Since K is the centre of circle ABC, and B, G, F all lie on circle ABC, we have KB = KG = KF, for all straight lines from the centre of a circle to its circumference are equal. [D1.15]
+
+**Step 5.** Now B, G, and F also lie on circle DEF (since these are the points where the two circles cut one another). Thus from the point K, three equal straight lines KB, KG, KF fall upon circle DEF.
+
+**Step 6.** Since more than two equal straight lines fall from the point K on circle DEF, the point K is the centre of circle DEF. [3.9]
+
+**Step 7.** But K is also the centre of circle ABC (Step 2). Therefore circles ABC and DEF have the same centre K.
+
+**Step 8.** However, since circles ABC and DEF cut one another, they cannot have the same centre. [3.5] This contradicts Step 7.
+
+**Step 9.** Therefore the supposition is false, and a circle does not cut a circle at more points than two. Q.E.D.
+
+**USED:** 3.1, 3.5, 3.9, D1.15, P1
+**Human refs (from References field):** 3.1, 3.5
+**Jaccard:** 0.400 — AI adds ['3.9', 'D1.15', 'P1']
+
+## Proposition 3.11
+**Statement:** If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.
+
+**Step 1.** Let the two circles ABC (larger) and ADE (smaller) touch one another internally at the point A. Let F be the centre of circle ABC and G be the centre of circle ADE. Join F to G by a straight line and produce it [P1, P2]. We must show that the line FG produced passes through A.
+
+**Step 2.** Since the two circles touch one another internally, by Proposition 3.6 they do not have the same centre; hence F and G are distinct points [3.6].
+
+**Step 3.** Suppose, for the sake of contradiction, that the straight line FG, when produced, does NOT fall on A. Let the line FG produced (in the direction from F through G and beyond) meet circle ADE at D and circle ABC at B [P2].
+
+**Step 4.** Since F is the centre of circle ABC, we have FA = FB, for both are radii of circle ABC [D1.15].
+
+**Step 5.** Since G is the centre of circle ADE, we have GA = GD, for both are radii of circle ADE [D1.15].
+
+**Step 6.** Now since A is not on line FGB (by our assumption), the points F, G, and A form a triangle. In triangle FGA, the sum of any two sides is greater than the remaining side. Therefore FG + GA > FA [1.20].
+
+**Step 7.** Since FA = FB (Step 4), we substitute to obtain FG + GA > FB [CN1].
+
+**Step 8.** Since GA = GD (Step 5), we substitute to obtain FG + GD > FB.
+
+**Step 9.** Now G lies between F and D on the line FGD (since G is the centre of circle ADE and D is the point where this line meets circle ADE on the far side of G from F). Therefore FG + GD = FD [CN2].
+
+**Step 10.** From Steps 8 and 9, we have FD > FB.
+
+**Step 11.** Since circle ADE is internal to circle ABC, the point D (which lies on circle ADE) lies inside circle ABC. The line from F through D, continued in the same direction, meets circle ABC at B. Since D lies between F and B on this line, we have FB = FD + DB, where DB is a positive length. Therefore FD is less than FB, since the whole FB is greater than its part FD [CN5].
+
+**Step 12.** But Step 10 states FD > FB, while Step 11 states FD < FB. This is a contradiction.
+
+**Step 13.** Therefore our assumption is false, and the straight line joining F to G, when produced, must fall on the point of contact A. Q.E.D.
+
+**USED:** 1.20, 3.6, CN1, CN2, CN5, D1.15, P1, P2
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['1.20', '3.6', 'CN1', 'CN2', 'CN5', 'D1.15', 'P1', 'P2']
+
+## Proposition 3.12
+**Statement:** If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.
+
+**Step 1.** Let circles ABC and ADE touch one another externally at the point A, and let F be the centre of circle ABC and G the centre of circle ADE. I say that the straight line joining F to G passes through A.
+
+**Step 2.** Suppose, for the sake of contradiction, that the line FG does not pass through A. Join FA and GA [P1].
+
+**Step 3.** Since F is the centre of circle ABC, FA is a radius of that circle [D1.15, D1.16].
+
+**Step 4.** Since G is the centre of circle ADE, GA is a radius of that circle [D1.15, D1.16].
+
+**Step 5.** Now the line FG, being drawn from centre F, must meet the circumference of circle ABC at some point, say H, on the side toward G. Then FH equals FA, since both are radii of circle ABC [D1.15].
+
+**Step 6.** Likewise, the line FG (or GF), being drawn from centre G, must meet the circumference of circle ADE at some point, say K, on the side toward F. Then GK equals GA, since both are radii of circle ADE [D1.15].
+
+**Step 7.** Since the two circles touch one another externally at A and do not cut one another [D3.3], and since by our assumption FG does not pass through A, the points H and K are distinct from A. Because the circles are external to one another, the point H lies between F and K, and K lies between H and G, so that H and K both lie on the segment FG with F, H, K, G in that order.
+
+**Step 8.** Therefore FG = FH + HK + KG [CN2]. Since HK is a line segment with H and K distinct, HK is greater than nothing, so FG > FH + KG.
+
+**Step 9.** But FH = FA and GK = GA [Steps 5, 6], so FG > FA + GA [CN1].
+
+**Step 10.** Now since the line FG does not pass through A, the points F, A, G form a triangle. By the triangle inequality, FA + GA > FG [1.20].
+
+**Step 11.** But from Step 9 we have FG > FA + GA. Combining with Step 10, we get FA + GA > FG and FG > FA + GA simultaneously, which is a contradiction.
+
+**Step 12.** Therefore the assumption is false, and the straight line joining the centres F and G must pass through the point of contact A.
+
+**Step 13.** Therefore, if two circles touch one another externally, the straight line joining their centres will pass through the point of contact. Q.E.D.
+
+**USED:** 1.20, CN1, CN2, D1.15, D1.16, D3.3, P1
+**Human refs (from References field):** 1.20
+**Jaccard:** 0.143 — AI adds ['CN1', 'CN2', 'D1.15', 'D1.16', 'D3.3', 'P1']
+
+## Proposition 3.13
+**Statement:** A circle does not touch a circle at more points than one, whether it touch it internally or externally.
+
+**Step 1.** Suppose, for the sake of contradiction, that a circle ABDC touches a circle ABEC at more than one point, namely at the points A and B. We consider two cases: internal and external tangency.
+
+**Step 2.** Case I: Suppose the circles touch one another internally at the two points A and B. By 3.1, find the centre G of circle ABDC and the centre H of circle ABEC.
+
+**Step 3.** By 3.11, if two circles touch one another internally, the straight line joining their centres, if produced, will fall on the point of contact. Therefore the line GH produced passes through the point of contact A, and by the same proposition applied to the point of contact B, the line GH produced also passes through B.
+
+**Step 4.** Thus A and B both lie on the straight line GH (produced if necessary). Since A and B are both on circle ABDC with centre G, we have GA = GB (by D1.15, all radii of a circle are equal).
+
+**Step 5.** Since A and B are distinct points both lying on the line through G, and GA = GB, the points A and B must lie on opposite sides of G along this line, each at distance GA from G.
+
+**Step 6.** Similarly, since A and B are both on circle ABEC with centre H, we have HA = HB (by D1.15).
+
+**Step 7.** Now H lies on line GH. Let GA = GB = r. Since A and B are on opposite sides of G along line GH, if H is at distance d from G along this line (with H on the same side as A, as required by internal tangency where one centre is inside the other circle), then HA = r - d and HB = r + d (or vice versa, taking unsigned distances along the line).
+
+**Step 8.** Since HA = HB (Step 6), we have r - d = r + d, which gives 2d = 0, so d = 0. This means G = H, that is, the two circles have the same centre.
+
+**Step 9.** But by 3.6, if two circles touch one another, they will not have the same centre. This contradicts the conclusion of Step 8. Therefore the assumption that the circles touch internally at two points is false.
+
+**Step 10.** Case II: Suppose the circles touch one another externally at the two points A and B. By 3.1, find the centre G of one circle and the centre H of the other.
+
+**Step 11.** By 3.12, if two circles touch one another externally, the straight line joining their centres will pass through the point of contact. Therefore line GH passes through A, and by the same proposition applied to B, line GH also passes through B.
+
+**Step 12.** Thus A and B both lie on segment GH. Since the tangency is external, each contact point lies between the two centres G and H (by 3.12). Therefore A and B are both between G and H on the line GH, meaning they are on the same side of G.
+
+**Step 13.** Since A and B are both on one circle with centre G, we have GA = GB (by D1.15). But A and B lie on the same ray from G (both between G and H). Two points on the same ray from a point at the same distance from that point must be the same point, so A = B.
+
+**Step 14.** This contradicts the assumption that A and B are two distinct points of tangency. Therefore the assumption that the circles touch externally at two points is false.
+
+**Step 15.** In both cases, the assumption that the circles touch at more than one point leads to a contradiction. Therefore a circle does not touch a circle at more points than one, whether it touch it internally or externally. Q.E.D.
+
+**USED:** 3.1, 3.11, 3.12, 3.6, D1.15
+**Human refs (from References field):** 3.11, 3.2, D3.3
+**Jaccard:** 0.143 — AI adds ['3.1', '3.12', '3.6', 'D1.15']; Human adds ['3.2', 'D3.3']
+
+## Proposition 3.14
+**Statement:** In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.
+
+**Step 1.** Let ABDC be a circle with centre E, and let AB and CD be equal straight lines in it. I say that AB and CD are equally distant from the centre. Conversely, let AB and CD be equally distant from the centre. I say that AB equals CD.
+
+**Step 2.** Draw perpendiculars EF from E to AB, and EG from E to CD [D3.4]. Join EA, EB, EC, ED [P1].
+
+**Step 3.** (Part I: Equal chords imply equidistant from centre.) Since the straight line EF through the centre cuts the chord AB at right angles, it bisects AB [3.3]. Therefore AF equals FB. Similarly, since EG through the centre cuts CD at right angles, it bisects CD [3.3]. Therefore CG equals GD.
+
+**Step 4.** Now EA and EC are radii of the circle, so EA equals EC [D1.15].
+
+**Step 5.** Since the angle at F is a right angle, in the right-angled triangle EFA, the square on EA equals the sum of the squares on EF and FA [1.47]. Similarly, since the angle at G is a right angle, in the right-angled triangle EGC, the square on EC equals the sum of the squares on EG and GC [1.47].
+
+**Step 6.** Since EA equals EC, the square on EA equals the square on EC [CN1]. Therefore the sum of the squares on EF and FA equals the sum of the squares on EG and GC.
+
+**Step 7.** Since AB equals CD, and AF is half of AB while CG is half of CD [Step 3], AF equals CG. Therefore the square on AF equals the square on CG.
+
+**Step 8.** Subtracting the square on AF from the sum of the squares on EF and FA, and subtracting the square on CG from the sum of the squares on EG and GC, the remainders are equal [CN3]. Therefore the square on EF equals the square on EG, and hence EF equals EG.
+
+**Step 9.** By definition, AB and CD are equally distant from the centre, since the perpendiculars drawn to them from the centre are equal [D3.4]. This completes Part I.
+
+**Step 10.** (Part II: Equidistant from centre implies equal chords.) Now let the perpendiculars EF and EG be equal, so that AB and CD are equally distant from the centre [D3.4]. I say that AB equals CD.
+
+**Step 11.** With the same construction as before, EA equals EC (radii) [D1.15]. In the right-angled triangle EFA, the square on EA equals the sum of the squares on EF and FA [1.47]. In the right-angled triangle EGC, the square on EC equals the sum of the squares on EG and GC [1.47].
+
+**Step 12.** Since EA equals EC, the square on EA equals the square on EC. Therefore the sum of the squares on EF and FA equals the sum of the squares on EG and GC [CN1].
+
+**Step 13.** Since EF equals EG, the square on EF equals the square on EG. Subtracting equals from equals, the square on FA equals the square on GC [CN3]. Therefore FA equals GC.
+
+**Step 14.** Since AF equals FB (EF bisects AB) [3.3], AB is double AF. Since CG equals GD (EG bisects CD) [3.3], CD is double CG. Since AF equals CG, and AB is double AF while CD is double CG, AB equals CD [CN2].
+
+**Step 15.** Therefore in a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another. Q.E.D.
+
+**USED:** 1.47, 3.3, CN1, CN2, CN3, D1.15, D3.4, P1
+**Human refs (from References field):** 1.47, 3.1, 3.3, D3.4
+**Jaccard:** 0.333 — AI adds ['CN1', 'CN2', 'CN3', 'D1.15', 'P1']; Human adds ['3.1']
+
+## Proposition 3.15
+**Statement:** Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.
+
+**Step 1.** Let ABCD be a circle with centre E, and let BC be a diameter. Let FG be any chord that is not a diameter. We are to show first that BC is greater than FG, and second that of chords not passing through the centre, the one nearer to the centre is greater than the one more remote.
+
+**Step 2.** Join EF and EG from the centre E to the endpoints of FG [P1]. Since E is the centre of the circle, EF equals EB and EG equals EC, for all straight lines from the centre to the circumference are equal [D1.15].
+
+**Step 3.** In triangle EFG (which is indeed a triangle since FG does not pass through E, as FG is not a diameter [D1.17]), the sum EF + EG is greater than FG [1.20].
+
+**Step 4.** But EF equals EB and EG equals EC [Step 2], so EB + EC is greater than FG [CN1]. Now EB + EC equals BC, since B, E, C are collinear with E between B and C (E being the centre and BC a diameter) [D1.17]. Therefore BC is greater than FG. This holds for any chord that is not a diameter, so the diameter is the greatest straight line in the circle.
+
+**Step 5.** For the second part, let FG and HK be two chords in the circle, neither being a diameter, with FG nearer to the centre E than HK. We must show FG is greater than HK.
+
+**Step 6.** Draw EL perpendicular to FG and EM perpendicular to HK from the centre E [1.12]. Since FG is nearer to the centre than HK, we have EL less than EM [D3.4, D3.5].
+
+**Step 7.** Since EL is the perpendicular from the centre to chord FG, EL bisects FG, so FL equals LG, and FG equals twice FL [3.3]. Similarly, since EM is perpendicular from the centre to chord HK, EM bisects HK, so HM equals MK, and HK equals twice HM [3.3].
+
+**Step 8.** Join EF and EH [P1]. Since E is the centre, EF and EH are both radii of the circle, so EF equals EH [D1.15].
+
+**Step 9.** Since angle ELF is a right angle, triangle ELF is right-angled at L. By the Pythagorean theorem, the square on EF equals the sum of the squares on EL and LF [1.47]. Similarly, since angle EMH is a right angle, triangle EMH is right-angled at M, and the square on EH equals the sum of the squares on EM and MH [1.47].
+
+**Step 10.** Since EF equals EH [Step 8], the square on EF equals the square on EH. Therefore the sum of the squares on EL and LF equals the sum of the squares on EM and MH [CN1].
+
+**Step 11.** Since EL is less than EM [Step 6], the square on EL is less than the square on EM. Therefore, from the equality in Step 10, the square on LF must be greater than the square on MH. Consequently, LF is greater than MH.
+
+**Step 12.** Since FG equals twice LF and HK equals twice MH [Step 7], and LF is greater than MH [Step 11], it follows that FG is greater than HK [CN2 applied: LF + LG > MH + MK, since LF = LG > MH = MK].
+
+**Step 13.** Therefore, of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote. Q.E.F.
+
+**USED:** 1.12, 1.20, 1.47, 3.3, CN1, CN2, D1.15, D1.17, D3.4, D3.5, P1
+**Human refs (from References field):** 1.20, 1.24, 3.14, D3.5
+**Jaccard:** 0.154 — AI adds ['1.12', '1.47', '3.3', 'CN1', 'CN2', 'D1.15', 'D1.17', 'D3.4', 'P1']; Human adds ['1.24', '3.14']
+
+## Proposition 3.16
+**Statement:** The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumference another straight line cannot be interposed; further the angle of the semicircle is greater, and the remaining angle less, than any acute rectilineal angle.
+
+**Step 1.** Let there be a circle with centre F and diameter AB. Draw the straight line AE from the extremity A of the diameter at right angles to AB [1.11]. I say that the straight line so drawn falls outside the circle; that no other straight line can be interposed between AE and the circumference; that the angle of the semicircle is greater than any acute rectilineal angle; and that the remaining angle between AE and the circumference is less than any acute rectilineal angle.
+
+**Step 2.** Suppose, for contradiction, that AE does not fall outside the circle, but rather falls within it, so that some point G on AE lies inside or on the circle. Then since F is the centre, join FG [P1].
+
+**Step 3.** Since FA is a radius and G is supposed to lie on or within the circle, we have FG less than or equal to FA (if G were on the circumference, FG = FA; if inside, FG < FA by D1.15). But since the angle FAG is a right angle (by construction), the triangle FAG has a right angle at A.
+
+**Step 4.** In triangle FAG, the angle at A is a right angle. By 1.17, any two angles of a triangle are together less than two right angles; but more specifically, by 1.18, the greater side is opposite the greater angle. Since the angle FAG is a right angle, and by 1.17 the sum of the other two angles is less than two right angles, the angle at A (being right) is the greatest angle in triangle FAG (since the other two must each be less than a right angle). Therefore by 1.19, the side FG opposite the greatest angle must be greater than FA.
+
+**Step 5.** But FG greater than FA is impossible, since FA is a radius and G was assumed to lie on or within the circle (so FG should be at most equal to FA). This contradiction shows that the straight line AE drawn at right angles to the diameter at its extremity falls entirely outside the circle, except at the point A itself.
+
+**Step 6.** Next, I say that no other straight line can be interposed between the straight line AE and the circumference. Suppose, for contradiction, that some straight line AH can be placed in the space between AE and the circumference, so that AH is distinct from AE and falls outside the circle.
+
+**Step 7.** From centre F, draw FH perpendicular to AH, meeting AH at H [1.12], and let this perpendicular meet or be extended as needed. Actually, let us proceed more carefully: draw from F the perpendicular to AH, and let the foot of the perpendicular from F to line AH be the point K, so that FK is perpendicular to AH [1.12].
+
+**Step 8.** Since the angle FKA is a right angle (FK perpendicular to AH), and the angle FAK (which equals angle FAH) is less than a right angle (because AH lies in the region between AE and the circumference, so angle EAH is positive, meaning angle FAH = angle FAE minus angle EAH is less than the right angle FAE), then in triangle FAK the angle at K is right and the angle at A is acute.
+
+**Step 9.** In triangle FAK, the angle FKA is right, so it is the greatest angle. By 1.19, the side FA opposite the right angle is the greatest side, so FA is greater than FK.
+
+**Step 10.** Now, since FK is perpendicular to line AH dropped from the centre F, and FA is a radius with FA > FK, the line AH intersects the circle. This is because: draw from F along the line FK a distance equal to FA to find a point; since FA > FK, the circle passes beyond K along line AH. More precisely, let L be the point where line FA (a radius) extended from F meets the circumference. Consider any point D on line AH between A and the circumference: by 3.2, the line segment from any point on the circumference to another point on the circumference falls within the circle.
+
+**Step 11.** Let me argue more directly. Since FK (perpendicular from centre F to line AH) is less than FA (the radius) by Step 9, the line AH must cut the circle [by the reasoning of 3.14 and 3.15: the perpendicular distance from the centre to line AH is less than the radius]. Specifically, from F draw FD such that FD equals FA (a radius), where D is a point on line AH (this is possible since FK < FA, so the circle with centre F and radius FA intersects line AH) [P3]. Then D is on the circumference. But AH was supposed to lie entirely in the space between the circumference and AE, meaning AH does not cut the circle. This is a contradiction.
+
+**Step 12.** Therefore no straight line can be interposed between the tangent line AE and the circumference of the circle.
+
+**Step 13.** Now I say that the angle of the semicircle, namely the angle contained by the diameter AB and the circumference, is greater than any acute rectilineal angle, and the remaining angle between AE and the circumference is less than any acute rectilineal angle.
+
+**Step 14.** Let angle BAC be any given acute rectilineal angle, where AC is a straight line making an acute angle with AB at A. I must show that the angle of the semicircle (the mixed angle between diameter BA and the arc) is greater than angle BAC, and the horn angle between AE and the arc is less than angle BAC.
+
+**Step 15.** Since angle BAC is an acute angle and angle BAE is a right angle, the line AC falls between AB and AE, that is, angle BAC is less than angle BAE. By the argument in Steps 6 through 12, no straight line from A falling between AE and the circumference can be interposed without cutting the circle. Since AC lies between AB and AE (being an acute angle with AB), line AC must enter the interior of the circle (it cannot lie entirely outside, since only AE and lines on the other side of AE from the circle lie entirely outside).
+
+**Step 16.** Since line AC enters the interior of the circle, it cuts the circumference at some point, say D. Then the circumference of the semicircle passes beyond AC (between AC and the diameter AB, the arc bulges out past AC). This means the mixed angle contained by the diameter AB and the arc of the semicircle is greater than the rectilineal angle BAC, since the arc extends beyond AC on the side of AB.
+
+**Step 17.** Since this holds for any arbitrary acute rectilineal angle BAC, the angle of the semicircle is greater than every acute rectilineal angle.
+
+**Step 18.** Similarly, for the remaining horn angle (the angle between AE and the circumference on the side of the semicircle): since the circumference passes between AE and any line AC making an acute angle with AE on that side (equivalently, since AC cuts the circle and therefore the arc lies between AE and AC), the horn angle between AE and the arc is less than the angle between AE and AC, which can be made to equal any given acute angle. Therefore the horn angle is less than every acute rectilineal angle.
+
+**Step 19.** Therefore: (1) the straight line drawn at right angles to the diameter from its extremity falls outside the circle; (2) between that straight line and the circumference no other straight line can be interposed; (3) the angle of the semicircle is greater than any acute rectilineal angle; and (4) the remaining horn angle is less than any acute rectilineal angle. Q.E.F.
+
+**USED:** 1.11, 1.12, 1.17, 1.19, 3.2, D1.10, D1.12, D1.15, D1.17, D3.2, P1, P3
+**Human refs (from References field):** 1.17, 1.19, 1.5
+**Jaccard:** 0.154 — AI adds ['1.11', '1.12', '3.2', 'D1.10', 'D1.12', 'D1.15', 'D1.17', 'D3.2', 'P1', 'P3']; Human adds ['1.5']
+
+## Proposition 3.17
+**Statement:** From a given point to draw a straight line touching a given circle.
+
+**Step 1.** Let A be the given point and let the given circle have centre C and radius CB. We must draw from A a straight line touching the circle. First, if A lies on the circumference of the circle, draw the straight line from A at right angles to CA by 1.11. By 3.16, this line, being drawn at right angles to the diameter from its extremity, falls outside the circle and therefore touches the circle at A, and we are done.
+
+**Step 2.** Now suppose A lies outside the circle. Join A to the centre C by P1. Let D be the point where segment AC meets the circumference of the given circle (so CD is a radius, and CD = CB by D1.15).
+
+**Step 3.** With centre C and radius CA, describe a circle passing through A by P3. Since A is outside the given circle, CA is greater than CD, so this new circle is larger than the given one.
+
+**Step 4.** From the point D, draw the straight line DE at right angles to CA by 1.11, and produce it to meet the larger circle at E. Join CE by P1.
+
+**Step 5.** Since CE is a radius of the larger circle, CE = CA (by D1.15). Since CD and CB are both radii of the given circle, CD = CB (by D1.15).
+
+**Step 6.** Now let B be the point where the straight line CE meets the circumference of the given circle, so that CB is a radius of the given circle. Join AB by P1.
+
+**Step 7.** Consider triangles CDE and CAB. We have CE = CA (both radii of the larger circle, Step 5), CD = CB (both radii of the given circle, Step 5), and angle DCE equals angle BCA since these are the same angle at vertex C (the angle between line CA and line CE is common to both triangles).
+
+**Step 8.** Therefore, by 1.4 (SAS congruence), triangle CDE is congruent to triangle CAB. Hence the remaining angles are respectively equal: in particular, angle CDE equals angle CBA.
+
+**Step 9.** But angle CDE is a right angle, since DE was drawn at right angles to CA at D (Step 4). Therefore angle CBA is also a right angle.
+
+**Step 10.** Since CB is a radius of the given circle and B is on its circumference, CB lies along a diameter through C. The line BA makes a right angle with CB at B, which is an extremity of the diameter. By 3.16, the straight line drawn at right angles to the diameter of a circle from its extremity falls outside the circle and therefore touches it. Hence BA touches the given circle at B.
+
+**Step 11.** Therefore, from the given point A, the straight line AB has been drawn touching the given circle. Q.E.F.
+
+**USED:** 1.11, 1.4, 3.16, D1.15, P1, P3
+**Human refs (from References field):** 1.4, 3.1, 3.16
+**Jaccard:** 0.286 — AI adds ['1.11', 'D1.15', 'P1', 'P3']; Human adds ['3.1']
+
+## Proposition 3.18
+**Statement:** If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.
+
+**Step 1.** Let a straight line DE touch the circle ABC at the point C, and let F be the centre of the circle. Join FC. I say that FC is perpendicular to DE.
+
+**Step 2.** Suppose FC is not perpendicular to DE. Draw FG from F perpendicular to DE, where G is on DE and G is not C. [1.12]
+
+**Step 3.** Since the angle FGC is a right angle, the triangle FGC has a right angle at G. By 1.17, the sum of any two angles in a triangle is less than two right angles. Since angle FGC is already a right angle, the angle FCG must be less than a right angle, that is, angle FCG is acute. [1.17]
+
+**Step 4.** Since in triangle FGC the angle at G (a right angle) is greater than the angle at C (which is acute), the side opposite the greater angle is greater than the side opposite the lesser angle. Therefore FC, which is opposite the right angle at G, is greater than FG, which is opposite the acute angle at C. That is, FC > FG. [1.19]
+
+**Step 5.** Since F is the centre and C is on the circle, FC is a radius. Since FC > FG, the point G is at a distance from the centre F that is less than the radius. Therefore G lies inside the circle. [D1.15]
+
+**Step 6.** But G lies on the line DE. Since DE is a tangent to the circle, it meets the circle at C and, being produced, does not cut the circle. [D3.2]
+
+**Step 7.** However, since G is a point on DE that lies inside the circle, the line DE must pass from G (inside the circle) to points beyond the circle (outside), and therefore must cross the circumference at a second point. This means DE cuts the circle, which contradicts the fact that DE is a tangent that does not cut the circle. [D3.2, 3.2]
+
+**Step 8.** The supposition that FC is not perpendicular to DE is therefore false. Hence FC is perpendicular to DE. [D1.10]
+
+**Step 9.** Therefore, if a straight line touches a circle, and a straight line is joined from the centre to the point of contact, the straight line so joined is perpendicular to the tangent. Q.E.F.
+
+**USED:** 1.12, 1.17, 1.19, 3.2, D1.10, D1.15, D3.2
+**Human refs (from References field):** 1.17, 1.19
+**Jaccard:** 0.286 — AI adds ['1.12', '3.2', 'D1.10', 'D1.15', 'D3.2']
+
+## Proposition 3.19
+**Statement:** If a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the centre of the circle will be on the straight line so drawn.
+
+**Step 1.** Let the straight line DE touch the circle ABC at the point C, and from C let CA be drawn at right angles to DE. I say that the centre of the circle is on CA.
+
+**Step 2.** For suppose it is not. If possible, let F be the centre of the circle, where F does not lie on CA. Join FC. [P1]
+
+**Step 3.** Since the straight line DE touches the circle ABC, and FC has been joined from the centre F to the point of contact C, FC is perpendicular to DE. [3.18]
+
+**Step 4.** Therefore the angle FCE is a right angle. [D1.10]
+
+**Step 5.** But the angle ACE is also a right angle, since CA was drawn at right angles to DE. [by hypothesis, D1.10]
+
+**Step 6.** Therefore the angle FCE is equal to the angle ACE. [P4]
+
+**Step 7.** Since F does not lie on the line CA, the lines FC and CA are distinct lines meeting at C, so the angle FCA is nonzero. Now F and A are both on the same side of DE (since FC goes to the centre and CA is perpendicular to the tangent, both extend from C away from the tangent line on the side where the circle lies). Therefore the angle ACE is the sum of the angle ACF and the angle FCE, meaning the angle FCE is less than the angle ACE. [CN5]
+
+**Step 8.** But the angle FCE was shown equal to the angle ACE (Step 6), so we have that the angle FCE is both equal to and less than the angle ACE, which is impossible.
+
+**Step 9.** Therefore the assumption is false, and the centre F cannot fail to lie on CA. The centre of the circle must be on the straight line CA drawn at right angles to the tangent from the point of contact.
+
+**Step 10.** Therefore, if a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the centre of the circle will be on the straight line so drawn. Q.E.D.
+
+**USED:** 3.18, CN5, D1.10, P1, P4
+**Human refs (from References field):** 3.18
+**Jaccard:** 0.200 — AI adds ['CN5', 'D1.10', 'P1', 'P4']
+
+## Proposition 3.20
+**Statement:** In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.
+
+**Step 1.** Let ABC be a circle with centre F, let angle BFC be an angle at the centre, and let angle BAC be an angle at the circumference, and let both angles have the same arc BC as base. We must prove that angle BFC is double of angle BAC.
+
+**Step 2.** Join AF and produce it to a point D on the circumference [P1, P2].
+
+**Step 3.** Case I: Suppose the centre F lies on one of the sides of angle BAC, say on the line AC (so that AC is a diameter). Then triangle BFC has FB equal to FC, since both are radii of the circle [D1.15]. Therefore triangle BFC is isosceles, and the base angles FBC and FCB are equal to one another [1.5]. But angle BFA is an exterior angle of triangle BFC, and therefore angle BFA equals the sum of angles FBC and FCB [1.32]. Since angles FBC and FCB are equal, angle BFA is double of angle FCB [CN2, as the double arises from adding equals]. But angle BFA is the angle at the centre, and angle FCB (which is angle BAC since F lies on AC) is the angle at the circumference. Hence the angle at the centre is double of the angle at the circumference.
+
+**Step 4.** Case II: Suppose the centre F lies inside the angle BAC. Draw the diameter from A through F to D [P1, P2]. Consider triangle ABF. Since FA and FB are both radii, FA equals FB [D1.15], so triangle ABF is isosceles, and angle FAB equals angle FBA [1.5]. The exterior angle BFD of triangle ABF equals the sum of angles FAB and FBA [1.32]. Since angles FAB and FBA are equal, angle BFD is double of angle FAB.
+
+**Step 5.** Similarly, consider triangle ACF. Since FA and FC are both radii, FA equals FC [D1.15], so triangle ACF is isosceles, and angle FAC equals angle FCA [1.5]. The exterior angle CFD of triangle ACF equals the sum of angles FAC and FCA [1.32]. Since angles FAC and FCA are equal, angle CFD is double of angle FAC.
+
+**Step 6.** Adding, angle BFD plus angle CFD equals double of angle FAB plus double of angle FAC. That is, the whole angle BFC equals double of the whole angle BAC [CN2].
+
+**Step 7.** Case III: Suppose the centre F lies outside the angle BAC. Again draw the diameter from A through F to D [P1, P2]. Consider triangle ABF. Since FA equals FB (both radii) [D1.15], triangle ABF is isosceles, and angle FAB equals angle FBA [1.5]. The exterior angle BFD of triangle ABF equals the sum of angles FAB and FBA [1.32]. Since these base angles are equal, angle BFD is double of angle FAB.
+
+**Step 8.** Similarly, consider triangle ACF. Since FA equals FC (both radii) [D1.15], triangle ACF is isosceles, and angle FAC equals angle FCA [1.5]. The exterior angle CFD of triangle ACF equals the sum of angles FAC and FCA [1.32]. Since these base angles are equal, angle CFD is double of angle FAC.
+
+**Step 9.** Subtracting angle CFD from angle BFD, the remaining angle BFC equals double of angle FAB minus double of angle FAC. That is, angle BFC equals double of the remaining angle BAC [CN3].
+
+**Step 10.** Therefore, in all three cases, the angle at the centre BFC is double of the angle at the circumference BAC, when the angles have the same arc BC as base. Q.E.D.
+
+**USED:** 1.32, 1.5, CN2, CN3, D1.15, P1, P2
+**Human refs (from References field):** 1.32, 1.5
+**Jaccard:** 0.286 — AI adds ['CN2', 'CN3', 'D1.15', 'P1', 'P2']
+
+## Proposition 3.21
+**Statement:** In a circle the angles in the same segment are equal to one another.
+
+**Step 1.** Let ABCD be a circle, and let angles BAC and BDC be angles in the same segment BADC, that is, both angles stand upon the same arc BKC (the arc on the opposite side of chord BC from the segment containing A and D). We must show that angle BAC equals angle BDC. [D1.15, D3.6, D3.8]
+
+**Step 2.** Find the centre E of the circle ABCD. [3.1]
+
+**Step 3.** Join BE and CE. [P1]
+
+**Step 4.** The angle BEC is the angle at the centre standing on arc BKC, while angle BAC is an angle at the circumference standing on the same arc BKC. By Proposition 3.20, the angle BEC at the centre is double the angle BAC at the circumference. [3.20]
+
+**Step 5.** Similarly, since angle BDC is also an angle at the circumference standing on the same arc BKC, by Proposition 3.20 the angle BEC at the centre is double the angle BDC at the circumference. [3.20]
+
+**Step 6.** Therefore angle BAC and angle BDC are each half of the same angle BEC. Since things equal to the same thing are equal to one another, angle BAC equals angle BDC. [CN1]
+
+**Step 7.** Therefore in a circle the angles in the same segment are equal to one another. Q.E.F.
+
+**USED:** 3.1, 3.20, CN1, D1.15, D3.6, D3.8, P1
+**Human refs (from References field):** 3.20
+**Jaccard:** 0.143 — AI adds ['3.1', 'CN1', 'D1.15', 'D3.6', 'D3.8', 'P1']
+
+## Proposition 3.22
+**Statement:** The opposite angles of quadrilaterals in circles are equal to two right angles.
+
+**Step 1.** Let ABCD be a quadrilateral inscribed in a circle, with vertices A, B, C, D lying on the circumference in order. We are to show that the opposite angles are together equal to two right angles, that is, angle BAD + angle BCD = two right angles, and angle ABC + angle ADC = two right angles.
+
+**Step 2.** Join the diagonal BD, forming triangle ABD. By 1.32, the three angles of triangle ABD sum to two right angles. That is, angle DAB + angle ABD + angle ADB = two right angles.
+
+**Step 3.** Now consider angle ADB and angle ACB. Both are angles inscribed in the circle that stand on the same arc AB (the arc from A to B not containing D or C). Since D and C lie on the same arc on the opposite side, angles ADB and ACB are angles in the same segment. By 3.21, angle ADB = angle ACB.
+
+**Step 4.** Similarly, consider angle ABD and angle ACD. Both are angles inscribed in the circle that stand on the same arc AD (the arc from A to D not containing B or C). Since B and C lie on the same side, angles ABD and ACD are angles in the same segment. By 3.21, angle ABD = angle ACD.
+
+**Step 5.** Substituting the equalities from Steps 3 and 4 into the equation from Step 2, we replace angle ADB with angle ACB, and angle ABD with angle ACD: angle DAB + angle ACD + angle ACB = two right angles. [CN1]
+
+**Step 6.** But angle ACD + angle ACB = angle BCD, since rays CB and CD emanate from vertex C on opposite sides of the diagonal, and together they compose the full angle BCD of the quadrilateral.
+
+**Step 7.** Therefore angle DAB + angle BCD = two right angles. That is, the opposite angles BAD and BCD sum to two right angles. [CN1]
+
+**Step 8.** Join the diagonal AC, forming triangle ABC. By 1.32, the three angles of triangle ABC sum to two right angles. That is, angle BAC + angle ABC + angle BCA = two right angles.
+
+**Step 9.** Now consider angle BAC and angle BDC. Both stand on the same arc BC (the arc not containing A or D). Since A and D lie on the same arc, angles BAC and BDC are in the same segment. By 3.21, angle BAC = angle BDC.
+
+**Step 10.** Similarly, consider angle BCA and angle BDA. Both stand on the same arc AB (the arc not containing C or D). Since C and D lie on the same arc, angles BCA and BDA are in the same segment. By 3.21, angle BCA = angle BDA.
+
+**Step 11.** Substituting into the equation from Step 8: angle BDC + angle ABC + angle BDA = two right angles. [CN1]
+
+**Step 12.** But angle BDC + angle BDA = angle ADC, since rays DA and DC emanate from vertex D and together compose the full angle ADC of the quadrilateral.
+
+**Step 13.** Therefore angle ABC + angle ADC = two right angles. [CN1]
+
+**Step 14.** We have shown that both pairs of opposite angles of the cyclic quadrilateral ABCD are together equal to two right angles, which is what was to be proved.
+
+**USED:** 1.32, 3.21, CN1
+**Human refs (from References field):** 1.32, 3.21
+**Jaccard:** 0.667 — AI adds ['CN1']
+
+## Proposition 3.23
+**Statement:** On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.
+
+**Step 1.** Suppose, for the sake of contradiction, that on the same straight line AB there can be constructed two similar and unequal segments of circles on the same side. Let these be segments ACB and ADB, where segment ACB is the larger and segment ADB is the smaller, so that arc ADB falls inside segment ACB.
+
+**Step 2.** Since the two segments share the same base AB and lie on the same side, and are unequal, the arc of one must fall entirely inside the other. For if the arcs crossed, the corresponding circles would intersect at more than two points, contradicting 3.10. Thus arc ADB lies entirely within segment ACB.
+
+**Step 3.** Take a point C on the arc of the larger segment ACB. Join CA and CB [P1]. Since arc ADB lies inside segment ACB, the line CA must cross arc ADB at some point D. Join DB [P1].
+
+**Step 4.** Since the segments ACB and ADB are similar, the angles in them are equal to one another [D3.11]. That is, the angle ACB (which is the angle in segment ACB, per D3.8) equals the angle ADB (the angle in segment ADB, per D3.8).
+
+**Step 5.** Now since C lies on line CA beyond D (with D between A and C), the angle BDA is an exterior angle of triangle BDC at vertex D.
+
+**Step 6.** By 1.16, the exterior angle of a triangle is greater than either of the interior and opposite angles. Therefore angle BDA is greater than angle BCD, that is, angle ADB is greater than angle ACB.
+
+**Step 7.** But in Step 4 we established that angle ADB equals angle ACB. This is a contradiction, since the same angle cannot be both equal to and greater than another.
+
+**Step 8.** Therefore the assumption is false, and on the same straight line there cannot be constructed two similar and unequal segments of circles on the same side. Q.E.D.
+
+**USED:** 1.16, 3.10, D3.11, D3.8, P1
+**Human refs (from References field):** 1.16, D3.11
+**Jaccard:** 0.400 — AI adds ['3.10', 'D3.8', 'P1']
+
+## Proposition 3.24
+**Statement:** Similar segments of circles on equal straight lines are equal to one another.
+
+**Step 1.** Let AEB and CFD be similar segments of circles on equal straight lines AB and CD respectively. We must show that segment AEB equals segment CFD.
+
+**Step 2.** Suppose segment AEB is applied to segment CFD so that point A is placed on point C and straight line AB is placed on straight line CD. Since AB equals CD [given], point B will coincide with point D [CN4, since equal straight lines applied to one another coincide at their endpoints].
+
+**Step 3.** With AB coinciding with CD (that is, A with C and B with D), the segment AEB must coincide with the segment CFD. For suppose it does not coincide but takes a different position, such as CGD, falling either inside CFD, outside it, or cutting across it. Then on the same straight line CD, on the same side, there would be two similar and unequal segments of circles: namely, the segment CFD and the segment CGD (which is the relocated AEB). The segments are similar because AEB is similar to CFD by hypothesis, and similarity is preserved under superposition.
+
+**Step 4.** But by Proposition 3.23, on the same straight line there cannot be constructed two similar and unequal segments of circles on the same side. This is a contradiction.
+
+**Step 5.** Therefore, when AB is placed on CD, segment AEB must coincide with segment CFD exactly. Since they coincide with one another, they are equal [CN4].
+
+**Step 6.** Therefore, similar segments of circles on equal straight lines are equal to one another. Q.E.D.
+
+**USED:** 3.23, CN4
+**Human refs (from References field):** 3.10
+**Jaccard:** 0.000 — AI adds ['3.23', 'CN4']; Human adds ['3.10']
+
+## Proposition 3.25
+**Statement:** Given a segment of a circle, to describe the complete circle of which it is a segment.
+
+**Step 1.** Let ABC be the given segment of a circle, with AC as its base (the chord) and B a point on the arc. We are to describe the complete circle of which ABC is a segment. [D3.6]
+
+**Step 2.** Bisect AC at D. [1.10]
+
+**Step 3.** From D, draw DB at right angles to AC, where B is on the arc of the segment. [1.11]
+
+**Step 4.** Join AB. [P1]
+
+**Step 5.** We now distinguish cases based on the relationship between angle ABD and angle BAD.
+
+**Step 6.** Case 1: Suppose angle ABD equals angle BAD. Then DA = DB, since the side opposite the equal angle equals the other. [1.6]
+
+**Step 7.** But DA = DC, since D is the midpoint of AC. [Step 2]
+
+**Step 8.** Therefore DA = DB = DC. [CN1]
+
+**Step 9.** Thus the circle described with centre D and radius DA passes through A, B, and C. [P3, D1.15]
+
+**Step 10.** Since three points A, B, C of the original arc lie on this circle, and two distinct circles cannot cut one another at more than two points [3.10], the circle with centre D and radius DA is the complete circle of which ABC is a segment. The segment in this case is a semicircle.
+
+**Step 11.** Case 2: Suppose angle ABD is not equal to angle BAD. At the point B on line BA, construct angle ABE equal to angle BAD, so that BE meets the line DA (or DA produced through D) at some point E. [1.23, P2]
+
+**Step 12.** Since angle ABE equals angle BAE (for angle BAE is the same as angle BAD), in triangle ABE the sides opposite equal angles are equal, so EA = EB. [1.6]
+
+**Step 13.** Now consider triangles EDA and EDC. We have DA = DC [Step 2], DE is common, and angle EDA = angle EDC, since each is a right angle (DB is perpendicular to AC, and E lies on line DB). [1.11, CN1]
+
+**Step 14.** Therefore, by the side-angle-side criterion, triangle EDA is congruent to triangle EDC, and so EA = EC. [1.4]
+
+**Step 15.** From Steps 12 and 14, EA = EB = EC. [CN1]
+
+**Step 16.** Therefore the circle described with centre E and radius EA passes through A, B, and C. [P3, D1.15]
+
+**Step 17.** Since three points A, B, C of the original arc lie on this circle, and two distinct circles cannot cut one another at more than two points [3.10], the circle with centre E and radius EA is the complete circle of which ABC is a segment.
+
+**Step 18.** In both cases, the complete circle of which the given segment is a segment has been described, which is what was required to be done.
+
+**USED:** 1.10, 1.11, 1.23, 1.4, 1.6, 3.10, CN1, D1.15, D3.6, P1, P2, P3
+**Human refs (from References field):** 1.6, 3.9
+**Jaccard:** 0.077 — AI adds ['1.10', '1.11', '1.23', '1.4', '3.10', 'CN1', 'D1.15', 'D3.6', 'P1', 'P2', 'P3']; Human adds ['3.9']
+
+## Proposition 3.26
+**Statement:** In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.
+
+**Step 1.** Let ABC and DEF be equal circles, and let the angles BGC and EHF be equal angles at the centres G and H respectively. Also let the angles BAC and EDF be equal angles at the circumferences. We must prove that the circumference BKC is equal to the circumference ELF.
+
+**Step 2.** First consider the case of equal central angles. Since the circles are equal, their radii are equal (D3.1), so GB = HE and GC = HF.
+
+**Step 3.** In triangles BGC and EHF, we have GB = HE, GC = HF, and angle BGC = angle EHF (given). Therefore by the Side-Angle-Side criterion (1.4), triangle BGC is congruent to triangle EHF, and hence the base BC equals the base EF.
+
+**Step 4.** Suppose the circumference BKC is not equal to the circumference ELF. Then one of them is greater. Let circumference BKC be greater than circumference ELF.
+
+**Step 5.** Since circumference BKC is greater than circumference ELF, we can construct an angle BGM at centre G such that the circumference BMC is equal to the circumference ELF, where M is a point on circumference BKC between B and K, so that circumference BMC is less than circumference BKC.
+
+**Step 6.** Then angle BGM stands on circumference BMC and angle EHF stands on circumference ELF. Since circumference BMC equals circumference ELF in equal circles, we would have angle BGM equal to angle EHF. But angle EHF equals angle BGC by hypothesis, so angle BGM would equal angle BGC.
+
+**Step 7.** But angle BGM is a part of angle BGC (since M lies on arc BKC beyond C from G's perspective, making the arc BMC smaller, thus angle BGM is less than angle BGC). Therefore a part would equal the whole, which is impossible (CN5).
+
+**Step 8.** Therefore the circumference BKC is not unequal to the circumference ELF. Hence circumference BKC equals circumference ELF, which is the case for central angles.
+
+**Step 9.** Now consider the case of equal angles at the circumferences: angle BAC = angle EDF. By Proposition 3.20, the angle at the centre is double the angle at the circumference when they stand on the same arc. Therefore angle BGC = 2 * angle BAC and angle EHF = 2 * angle EDF.
+
+**Step 10.** Since angle BAC = angle EDF, we have angle BGC = angle EHF (CN1, as doubles of equal things are equal by CN2, taking each angle added to itself).
+
+**Step 11.** But we proved in the first case that equal central angles in equal circles stand on equal circumferences. Therefore circumference BKC equals circumference ELF.
+
+**Step 12.** Therefore in equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences. Q.E.D.
+
+**USED:** 1.4, 3.20, CN1, CN2, CN5, D3.1
+**Human refs (from References field):** 1.4, 3.24, D3.11
+**Jaccard:** 0.125 — AI adds ['3.20', 'CN1', 'CN2', 'CN5', 'D3.1']; Human adds ['3.24', 'D3.11']
+
+## Proposition 3.27
+**Statement:** In equal circles angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences.
+
+Let ABC and DEF be equal circles, and let BGC and EHF be angles at their respective centres G and H, standing on equal circumferences BC and EF. We must show that angle BGC equals angle EHF.
+
+**Step 1.** Suppose angle BGC is not equal to angle EHF. Then one of them is greater. Let angle BGC be greater than angle EHF.
+
+**Step 2.** At point G on line BG, construct angle BGK equal to angle EHF, where K is a point on circumference BC such that ray GK falls between rays GB and GC [1.23].
+
+**Step 3.** Since circles ABC and DEF are equal, and angle BGK at the centre of circle ABC equals angle EHF at the centre of circle DEF, by Proposition 3.26, circumference BK equals circumference EF.
+
+**Step 4.** But circumference BC equals circumference EF by hypothesis.
+
+**Step 5.** Therefore circumference BK equals circumference BC [CN1].
+
+**Step 6.** But circumference BK is a part of circumference BC, since K falls between B and C on the circumference. Therefore the part equals the whole, which is impossible [CN5].
+
+**Step 7.** Therefore the assumption is false, and angle BGC is not unequal to angle EHF. Hence angle BGC equals angle EHF.
+
+**Step 8.** Now let BAC and EDF be angles at the circumferences of the equal circles, standing on the same equal circumferences BC and EF respectively.
+
+**Step 9.** Since circles ABC and DEF are equal, and circumference BC equals circumference EF, the angles at the centres standing on these circumferences are equal, that is, angle BGC equals angle EHF, as proved above.
+
+**Step 10.** By Proposition 3.20, angle BGC at the centre is double angle BAC at the circumference (both standing on circumference BC), and angle EHF at the centre is double angle EDF at the circumference (both standing on circumference EF).
+
+**Step 11.** Since angle BGC equals angle EHF, and angle BGC is double angle BAC, and angle EHF is double angle EDF, therefore angle BAC equals angle EDF [CN5 is not needed; rather, halves of equals are equal, which follows from: double of BAC equals double of EDF, so BAC equals EDF by the principle that if equals be doubled they are equal, and conversely].
+
+**Step 12.** More precisely: since angle BGC equals angle EHF, and angle BGC equals twice angle BAC, and angle EHF equals twice angle EDF, then twice angle BAC equals twice angle EDF [CN1]. Therefore angle BAC equals angle EDF.
+
+**Step 13.** Therefore in equal circles, angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences. Q.E.D.
+
+**USED:** 1.23, 3.20, 3.26, CN1, CN5
+**Human refs (from References field):** 1.23, 3.20, 3.26
+**Jaccard:** 0.600 — AI adds ['CN1', 'CN5']
+
+## Proposition 3.28
+**Statement:** In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.
+
+**Step 1.** Let ABC and DEF be equal circles, and let AB and DE be equal straight lines in them cutting off circumferences. We must show that the major circumference ACB equals the major circumference DFE, and the minor circumference AB equals the minor circumference DE.
+
+**Step 2.** Find the centres of the circles: let K be the centre of circle ABC and L be the centre of circle DEF [3.1].
+
+**Step 3.** Join KA, KB, LD, and LE [P1].
+
+**Step 4.** Since circles ABC and DEF are equal, their radii are equal [D3.1]. Therefore KA equals LD, and KB equals LE.
+
+**Step 5.** The chord AB equals the chord DE by hypothesis.
+
+**Step 6.** In triangles AKB and DLE, we have KA equal to LD, KB equal to LE, and AB equal to DE. Therefore, by the SSS congruence criterion, triangle AKB is congruent to triangle DLE, and in particular angle AKB equals angle DLE [1.8].
+
+**Step 7.** Since in the equal circles ABC and DEF the angles AKB and DLE at the centres are equal, the circumferences on which they stand are equal [3.26]. That is, the minor circumference AB equals the minor circumference DE.
+
+**Step 8.** The whole circumference of circle ABC equals the whole circumference of circle DEF, since the circles are equal [D3.1]. The minor circumference AB is a part of the whole circumference of circle ABC, and the minor circumference DE is a part of the whole circumference of circle DEF [CN5].
+
+**Step 9.** Since the whole circumferences are equal and the minor circumferences AB and DE are equal, subtracting equals from equals, the remainders are equal [CN3]. That is, the major circumference ACB equals the major circumference DFE.
+
+**Step 10.** Therefore, in equal circles, equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less. Q.E.D.
+
+**USED:** 1.8, 3.1, 3.26, CN3, CN5, D3.1, P1
+**Human refs (from References field):** 1.8, 3.26
+**Jaccard:** 0.286 — AI adds ['3.1', 'CN3', 'CN5', 'D3.1', 'P1']
+
+## Proposition 3.29
+**Statement:** In equal circles equal circumferences are subtended by equal straight lines.
+
+**Step 1.** Let ABC and DEF be equal circles, and let the circumference BGC in circle ABC be equal to the circumference EHF in circle DEF. Let BC be the straight line subtending arc BGC, and let EF be the straight line subtending arc EHF. I say that BC equals EF.
+
+**Step 2.** Find the centre K of circle ABC and the centre L of circle DEF [3.1]. Join KB, KC, LE, and LF [P1].
+
+**Step 3.** Since the circles ABC and DEF are equal, their radii are equal [D3.1]. Therefore KB equals LE, and KC equals LF.
+
+**Step 4.** Since the circumference BGC equals the circumference EHF, and these are circumferences in equal circles, the central angle BKC standing on circumference BGC equals the central angle ELF standing on circumference EHF [3.27].
+
+**Step 5.** Now in triangles BKC and ELF, we have KB equals LE, KC equals LF [Step 3], and angle BKC equals angle ELF [Step 4]. Therefore by the side-angle-side congruence, triangle BKC is congruent to triangle ELF, and the base BC equals the base EF [1.4].
+
+**Step 6.** Therefore in equal circles equal circumferences are subtended by equal straight lines. Q.E.D.
+
+**USED:** 1.4, 3.1, 3.27, D3.1, P1
+**Human refs (from References field):** 1.4, 3.27
+**Jaccard:** 0.400 — AI adds ['3.1', 'D3.1', 'P1']
+
+## Proposition 3.30
+**Statement:** To bisect a given circumference.
+
+**Step 1.** Let ADB be the given circumference (arc) which it is required to bisect.
+
+**Step 2.** Join A to B by a straight line [P1]. This is the chord subtending the given arc.
+
+**Step 3.** Bisect AB at the point C [1.10].
+
+**Step 4.** From C, draw CD at right angles to AB [1.11], and let CD, produced if necessary, meet the circumference ADB at D.
+
+**Step 5.** Join AD and DB [P1].
+
+**Step 6.** Since AC equals CB (Step 3), and CD is common to triangles ACD and BCD, and angle ACD equals angle BCD (both being right angles by construction in Step 4), therefore triangle ACD is congruent to triangle BCD [1.4, SAS].
+
+**Step 7.** Therefore AD equals DB, being corresponding sides of congruent triangles [1.4].
+
+**Step 8.** But in a circle, equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less [3.28]. Since AD and DB are equal chords in the same circle, and each arc AD and DB is less than a semicircle (both being parts of the given arc ADB on the same side of AB as D), arc AD equals arc DB.
+
+**Step 9.** Therefore the given circumference ADB has been bisected at D. Q.E.F.
+
+**USED:** 1.10, 1.11, 1.4, 3.28, P1
+**Human refs (from References field):** 1.4, 3.28
+**Jaccard:** 0.400 — AI adds ['1.10', '1.11', 'P1']
+
+## Proposition 3.31
+**Statement:** In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+
+**Step 1.** Let ABCD be a circle with diameter BC and centre F. Draw BA and AC, so that angle BAC is an angle in the semicircle. Draw any chord BD not passing through the centre, creating a greater segment and a less segment. In the greater segment take a point A on the arc and join BA and AD, forming angle BAD (an angle in the greater segment). In the less segment take a point E on the minor arc BD and join BE and ED, forming angle BED (an angle in the less segment). Join AF and FC. [P1, D1.17, D1.18, D3.6, D3.8]
+
+**Step 2.** Since F is the centre of circle ABCD and FB is a radius equal to FA (by D1.15), triangle ABF is isosceles. Therefore angle ABF equals angle BAF. [D1.15, 1.5]
+
+**Step 3.** Similarly, since FC equals FA (both radii), triangle AFC is isosceles. Therefore angle ACF equals angle FAC. [D1.15, 1.5]
+
+**Step 4.** Now angle BAC equals angle BAF plus angle FAC. Since angle ABF equals angle BAF, and angle ACF equals angle FAC, it follows that angle BAC equals angle ABF plus angle ACF. [CN2]
+
+**Step 5.** But in triangle ABC, by 1.32, angle BAC plus angle ABC plus angle BCA equals two right angles. That is, angle BAC plus (angle ABF plus angle ACF) equals two right angles (since angle ABC is the same as angle ABF and angle BCA is the same as angle ACF only when F lies on BC, which it does since BC is a diameter). [1.32]
+
+**Step 6.** Since BC is a diameter passing through centre F, the point F lies on BC. Therefore angle BFA and angle AFC are supplementary, that is, angle BFA plus angle AFC equals two right angles. [1.13]
+
+**Step 7.** In triangle ABF, since angle ABF equals angle BAF (Step 2), and angle ABF plus angle BAF plus angle AFB equals two right angles (by 1.32), we have 2 times angle BAF plus angle AFB equals two right angles, so angle AFB equals two right angles minus 2 times angle BAF. [1.32]
+
+**Step 8.** Similarly in triangle AFC, 2 times angle FAC plus angle AFC equals two right angles, so angle AFC equals two right angles minus 2 times angle FAC. [1.32]
+
+**Step 9.** From Step 6, angle AFB plus angle AFC equals two right angles. Substituting from Steps 7 and 8: (two right angles minus 2 times angle BAF) plus (two right angles minus 2 times angle FAC) equals two right angles. This gives: four right angles minus 2 times (angle BAF plus angle FAC) equals two right angles. Therefore 2 times (angle BAF plus angle FAC) equals two right angles. Hence angle BAF plus angle FAC equals one right angle. [CN1, CN2, CN3]
+
+**Step 10.** But angle BAF plus angle FAC equals angle BAC. Therefore angle BAC equals one right angle. This proves that the angle in a semicircle is right. [CN1]
+
+**Step 11.** Now consider the greater segment ABD (the segment on the same side as the centre relative to chord BD). The quadrilateral ABDE is inscribed in the circle where A is on the major arc and E is on the minor arc of BD. Since angle BAC is a right angle (Step 10), and angle BAC is part of angle BAD (when D is between B and C on the circumference — but more generally we use 3.22). Consider the cyclic quadrilateral ABDE inscribed in circle ABCD. By 3.22, the opposite angles of a quadrilateral inscribed in a circle sum to two right angles. [3.22]
+
+**Step 12.** Specifically, take the quadrilateral ABDA' where we use the configuration with the diameter. Instead, we argue more directly. Since BD is a chord not through the centre, it divides the circle into two arcs. The angle BAD is an angle in the greater segment (A is on the major arc). The angle at the centre standing on arc BCD (the minor arc from B to D not containing A) is angle BFD. By 3.20, angle BFD equals twice angle BAD. [3.20]
+
+**Step 13.** Now since BD is not a diameter, the arc BD on which angle BAD stands is less than a semicircle (it is the minor arc). Hence the central angle BFD is less than two right angles (since it subtends an arc less than the full semicircle, meaning the arc on the other side from A). The angle BAD stands on the arc BCD (not containing A). If this arc is less than a semicircle (which it is, since A is in the greater segment meaning the arc BAD is greater than a semicircle), then angle BFD is less than two right angles. By 3.20, angle BAD equals half of angle BFD, so angle BAD is less than one right angle. This proves that the angle in a greater segment is less than a right angle. [3.20, D1.12]
+
+**Step 14.** For the angle in the less segment: consider point E on the minor arc BD. The quadrilateral ABDE is inscribed in the circle, with A and E on opposite sides of chord BD. By 3.22, angle BAD plus angle BED equals two right angles. [3.22]
+
+**Step 15.** Since angle BAD is less than a right angle (Step 13), angle BED must be greater than a right angle (since their sum is two right angles). This proves that the angle in a less segment is greater than a right angle. [CN5, D1.11]
+
+**Step 16.** For the angle of the greater segment: the angle of the greater segment is the mixed angle contained by the arc BAD and the chord BD (D3.7). Since angle BAD (the rectilineal angle in the greater segment) is less than a right angle, and the angle of the segment is the angle between the circumference and the chord, we need to compare this mixed angle with a right angle. Draw FG perpendicular from F to BD, and consider that by 3.16, the angle between a diameter and the circumference at its endpoint (the angle of the semicircle) is greater than any acute rectilineal angle. The angle of the greater segment, being the angle between the arc and the chord BD, is greater than the angle BAD (which is an inscribed rectilineal angle contained within it). Since the angle of the semicircle (the mixed angle between the diameter and the arc) is itself less than a right angle by 3.16, we use a different approach. [3.16]
+
+**Step 17.** The angle of the greater segment is the mixed angle between arc BA (part of the circumference) and chord BD at point B (D3.7). At point B, draw the diameter BC through the centre. The angle of the semicircle at B (between diameter BC and the arc BAC) is greater than any acute rectilineal angle, hence greater than a right angle in the mixed-angle sense, as stated in 3.16 — but Euclid says the angle of the semicircle is less than a right angle in 3.16. Let us reconsider. By 3.16, the angle of the semicircle (between the diameter and the circumference) is less than any right rectilineal angle. The angle of the greater segment at B is the angle between chord BD and the arc on the greater-segment side. This angle equals the angle of the semicircle (between BC and the arc) plus the rectilineal angle DBC. Since angle DBC is a positive rectilineal angle and the angle of the semicircle fills the region between BC and the arc, the angle of the greater segment (between BD and the arc) exceeds angle DBC. We instead use the result from Steps 10 and 14 directly. [3.16, D3.7]
+
+**Step 18.** More precisely, for the angle of the greater segment: by the result of Step 10, the angle in the semicircle (angle BAC) is exactly a right angle. The angle of the greater segment is the mixed angle at B between the arc of the greater segment and the straight line BD. Now the angle ABC (which equals angle ABD since we are measuring at B in triangle ABD) is an angle in the semicircle on diameter... We use instead the following direct argument from 3.22. In cyclic quadrilateral ABDE, angle BAD + angle BED = two right angles. The angle BAD is an angle in the greater segment and is acute (less than right). The angle BED is an angle in the less segment and is obtuse (greater than right). Now the angle of the greater segment (D3.7) is the angle contained by chord BD and the arc of the greater segment. This mixed angle contains within it every rectilineal angle in that segment (by D3.8, any angle in the segment has its vertex on the arc and is contained within the angle of the segment). Since angle BAD is an angle in the greater segment and the angle in a semicircle is right (Step 10), the angle of the greater segment must be greater than the angle in the segment. Because the angle in the semicircle equals a right angle, and the greater segment's arc is larger than a semicircular arc, the angle of the greater segment exceeds a right angle. Specifically, the angle of the greater segment is the mixed angle between the arc and the line BD, and it exceeds angle BAD. But we need it to exceed a right angle. Since the greater segment contains a semicircle's worth of arc and more, its angle of segment exceeds the angle of the semicircle. By 3.16, the angle of the semicircle (between the diameter and the circumference) is greater than any acute rectilineal angle. Therefore the angle of the greater segment, being even larger (as it spans a greater arc), is also greater than any acute rectilineal angle, hence greater than a right angle. [3.16, D3.7, CN5]
+
+**Step 19.** For the angle of the less segment: the angle of the less segment is the mixed angle at B between the arc of the less segment and chord BD (D3.7). Since the angle of the greater segment plus the angle of the less segment together make up the full angle of the semicircle plus the rectilineal angle at B on the diameter side, and since by 3.16 the remaining angle (between the tangent-like line and the circumference on the convex side) is less than any acute rectilineal angle, we argue as follows. The angle of the less segment is contained within the angle of the semicircle at the endpoint of the diameter. By 3.16, the angle of the semicircle is less than a right angle. Since the angle of the less segment is less than the angle of the semicircle (the less segment's arc being a smaller portion), the angle of the less segment is less than a right angle. [3.16, D3.7, CN5, D1.12]
+
+**Step 20.** Therefore: (1) the angle in a semicircle is right; (2) the angle in a greater segment is less than a right angle; (3) the angle in a less segment is greater than a right angle; (4) the angle of the greater segment is greater than a right angle; and (5) the angle of the less segment is less than a right angle. Q.E.F.
+
+**USED:** 1.13, 1.32, 1.5, 3.16, 3.20, 3.22, CN1, CN2, CN3, CN5, D1.11, D1.12, D1.15, D1.17, D1.18, D3.6, D3.7, D3.8, P1
+**Human refs (from References field):** 1.17, 1.32, 1.5, 3.22, D1.10
+**Jaccard:** 0.143 — AI adds ['1.13', '3.16', '3.20', 'CN1', 'CN2', 'CN3', 'CN5', 'D1.11', 'D1.12', 'D1.15', 'D1.17', 'D1.18', 'D3.6', 'D3.7', 'D3.8', 'P1']; Human adds ['1.17', 'D1.10']
+
+## Proposition 3.32
+**Statement:** If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.
+
+**Step 1.** Let EF be a straight line touching circle ABCD at the point B, and from B let the straight line BD be drawn across the circle cutting it. We must show that the angles which BD makes with the tangent EF are equal to the angles in the alternate segments of the circle.
+
+**Step 2.** Draw BA as a diameter of the circle. To do this, find the centre of the circle [3.1], and draw the straight line from B through the centre to the opposite side of the circle, meeting the circumference at A [P1]. Then BA is a diameter [D1.17].
+
+**Step 3.** Join AD [P1].
+
+**Step 4.** Since EF is a tangent to the circle at B, and BA is drawn from the centre to the point of contact (BA passes through the centre since it is a diameter), BA is perpendicular to EF [3.18]. Therefore angle ABF is a right angle and angle ABE is a right angle.
+
+**Step 5.** Since BA is a diameter of the circle, the angle ADB is an angle in a semicircle, and therefore angle ADB is a right angle [3.31].
+
+**Step 6.** In triangle ABD, the three interior angles angle ABD, angle BDA, and angle DAB are together equal to two right angles [1.32]. Since angle BDA is a right angle [Step 5], the remaining angles ABD and DAB are together equal to one right angle.
+
+**Step 7.** But angle ABF is also a right angle [Step 4]. Therefore angle ABF equals angle sum of angles ABD and DAB. That is, angle ABD + angle DAB = angle ABF [Step 6, Step 4].
+
+**Step 8.** Now angle ABF equals angle ABD + angle DBF (since D lies within the angle ABF, the whole angle ABF is the sum of its parts). Therefore angle ABD + angle DBF = angle ABD + angle DAB [Step 7]. Subtracting the common angle ABD from both sides, angle DBF = angle DAB [CN3].
+
+**Step 9.** The angle DAB is an angle in the segment BAD of the circle (it is the angle at A standing on circumference BD within that segment) [D3.8]. Therefore angle DBF is equal to the angle in the alternate segment BAD.
+
+**Step 10.** Now take any point C on the arc BCD (the arc on the opposite side of chord BD from A), and join BC, CD [P1].
+
+**Step 11.** Since ABCD is a quadrilateral inscribed in the circle, the opposite angles BAD and BCD are together equal to two right angles [3.22].
+
+**Step 12.** Since EBF is a straight line (the tangent), the angles DBF and DBE on either side of BD are together equal to two right angles [1.13].
+
+**Step 13.** From Steps 11 and 12, angle BAD + angle BCD = angle DBF + angle DBE (both sums equal two right angles) [CN1].
+
+**Step 14.** But angle DBF = angle BAD [Step 8]. Subtracting these equal angles from the equal sums, angle BCD = angle DBE [CN3].
+
+**Step 15.** The angle BCD is an angle in the segment BCD of the circle [D3.8]. Therefore angle DBE is equal to the angle in the alternate segment BCD.
+
+**Step 16.** Therefore, if a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent are equal to the angles in the alternate segments of the circle. Q.E.D.
+
+**USED:** 1.13, 1.32, 3.1, 3.18, 3.22, 3.31, CN1, CN3, D1.17, D3.8, P1
+**Human refs (from References field):** 1.32, 3.19, 3.22, 3.31
+**Jaccard:** 0.250 — AI adds ['1.13', '3.1', '3.18', 'CN1', 'CN3', 'D1.17', 'D3.8', 'P1']; Human adds ['3.19']
+
+## Proposition 3.33
+**Statement:** On a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle.
+
+**Step 1.** Let AB be the given straight line and C the given rectilineal angle. We must describe on AB a segment of a circle admitting an angle equal to angle C. There are three cases: C is a right angle, C is acute, or C is obtuse.
+
+**Step 2.** CASE 1: Suppose angle C is a right angle. Bisect AB at F [1.10]. With center F and radius FA, describe a circle AHB [P3]. Since AB is a diameter of this circle, the angle AHB in the semicircle is a right angle [3.31]. Therefore the segment AHB admits an angle equal to the right angle C.
+
+**Step 3.** CASE 2: Suppose angle C is acute. At the point A on line AB, construct angle BAD equal to angle C [1.23]. Since angle C is acute, angle BAD is acute.
+
+**Step 4.** At A, draw AE perpendicular to AD, on the same side of AB as the desired segment [1.11]. Then angle DAE is a right angle.
+
+**Step 5.** Bisect AB at F [1.10].
+
+**Step 6.** From F, draw FG perpendicular to AB [1.11]. Now angle EAB equals the complement of angle DAB, so angle EAB is less than a right angle. Since FG is perpendicular to AB, the angle AFG on the side of AE is a right angle. Thus the angles EAF and AFG on the same side of the transversal AF falling on lines AE and FG sum to angle EAF plus a right angle. Since angle EAF is less than a right angle (because angle EAB = angle EAF is the complement of the acute angle DAB), the sum is less than two right angles. Therefore AE and FG, if produced, meet on that side [P5]. Let them meet at G.
+
+**Step 7.** Join GB [P1].
+
+**Step 8.** Since AF equals FB [Step 5], and FG is common, and angle AFG equals angle BFG (both being right angles) [Step 6], triangle AFG is congruent to triangle BFG [1.4]. Therefore GA equals GB.
+
+**Step 9.** With center G and radius GA, describe a circle [P3]. Since GA equals GB [Step 8], this circle passes through B. Let AHB be the segment cut off below the line AB.
+
+**Step 10.** Since AD is drawn from the extremity A of the diameter (or radius) GA, and angle DAG (which is angle DAE, a right angle by Step 4) is a right angle, AD is perpendicular to the radius GA at the point A on the circle. Therefore the straight line AD, being drawn at right angles to the diameter from its extremity, falls outside the circle [3.16], so AD touches the circle at A and does not cut it.
+
+**Step 11.** Since AD touches the circle at A, and AB is a chord drawn from the point of contact A across the circle, by the tangent-chord angle theorem the angle DAB equals the angle in the alternate segment AHB [3.32]. But angle DAB was constructed equal to angle C [Step 3]. Therefore the angle in segment AHB equals angle C.
+
+**Step 12.** CASE 3: Suppose angle C is obtuse. At the point A on line AB, construct angle BAD equal to angle C [1.23]. Since angle C is obtuse, angle BAD is obtuse.
+
+**Step 13.** At A, draw AE perpendicular to AD, on the side of AB toward which the desired segment lies [1.11]. Then angle DAE is a right angle.
+
+**Step 14.** Bisect AB at F [1.10].
+
+**Step 15.** From F, draw FG perpendicular to AB [1.11], and let it fall on the same side of AB as G lies (opposite to the acute case). Since angle BAD is obtuse, AE falls on the opposite side of AB, and FG meets AE at a point G on that side. The argument that AE and FG meet follows as before: the interior angles on that side formed by the transversal AF with lines AE and FG sum to less than two right angles [P5].
+
+**Step 16.** Join GB [P1].
+
+**Step 17.** Since AF equals FB [Step 14], FG is common, and angle AFG equals angle BFG (both right angles) [Step 15], triangle AFG is congruent to triangle BFG [1.4]. Therefore GA equals GB.
+
+**Step 18.** With center G and radius GA, describe a circle [P3]. Since GA equals GB [Step 17], this circle passes through B. Let AHB be the segment of the circle on the side of AB containing angle C.
+
+**Step 19.** Since angle DAG is a right angle [Step 13, as AE passes through G and AE is perpendicular to AD], the line AD is perpendicular to the radius GA at the extremity A. Therefore AD falls outside the circle [3.16], so AD touches the circle at A.
+
+**Step 20.** Since AD touches the circle at A, and AB is a chord from the point of contact, the angle DAB equals the angle in the alternate segment AHB [3.32]. But angle DAB equals angle C [Step 12]. Therefore the angle in segment AHB equals angle C.
+
+**Step 21.** In all three cases, we have described on the given straight line AB a segment of a circle AHB admitting an angle equal to the given rectilineal angle C. Q.E.F.
+
+**USED:** 1.10, 1.11, 1.23, 1.4, 3.16, 3.31, 3.32, D3.6, D3.8, P1, P3, P5
+**Human refs (from References field):** 1.4, 3.16, 3.31, 3.32
+**Jaccard:** 0.333 — AI adds ['1.10', '1.11', '1.23', 'D3.6', 'D3.8', 'P1', 'P3', 'P5']
+
+## Proposition 3.34
+**Statement:** From a given circle to cut off a segment admitting an angle equal to a given rectilineal angle.
+
+**Step 1.** Let ABC be the given circle, and let angle D be the given rectilineal angle. It is required to cut off from circle ABC a segment admitting an angle equal to angle D.
+
+**Step 2.** Let B be any point taken on the circumference of circle ABC. Draw the straight line EBF tangent to circle ABC at B [3.17].
+
+**Step 3.** At the point B on the straight line BF, construct the angle FBC equal to the angle D, where BC meets the circumference of the circle at C [1.23, P1].
+
+**Step 4.** Since the straight line EBF touches the circle ABC at B, and from the point of contact B the straight line BC has been drawn across the circle cutting it, by 3.32 the angle FBC is equal to the angle in the alternate segment BAC of the circle [3.32].
+
+**Step 5.** But the angle FBC is equal to the angle D [Step 3]. Therefore the angle in the segment BAC is also equal to the angle D [CN1].
+
+**Step 6.** Therefore from the given circle ABC, the segment BAC has been cut off admitting an angle equal to the given rectilineal angle D. Q.E.F.
+
+**USED:** 1.23, 3.17, 3.32, CN1, P1
+**Human refs (from References field):** 1.23, 3.32
+**Jaccard:** 0.400 — AI adds ['3.17', 'CN1', 'P1']
+
+## Proposition 3.35
+**Statement:** If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.
+
+**Step 1.** Let ABCD be a circle, and let AC, BD be two straight lines in it which cut one another at the point E. We must show that the rectangle contained by AE, EC is equal to the rectangle contained by BE, ED.
+
+**Step 2.** First, suppose that AC and BD both pass through the centre of the circle. Then E is the centre, and AE, EC, BE, ED are all equal to one another, being radii of the circle [D1.15]. Therefore the rectangle AE by EC equals the rectangle BE by ED, since the sides are respectively equal.
+
+**Step 3.** Next, suppose that one of the two lines, say BD, passes through the centre F, while AC does not pass through the centre. Draw FG from F perpendicular to AC [1.12]. Then FG bisects AC at G, so that AG equals GC [3.3].
+
+**Step 4.** Since the straight line AC is bisected at G and cut unequally at E, the rectangle contained by AE, EC together with the square on EG equals the square on GC [2.5].
+
+**Step 5.** Add the square on GF to each side. Then the rectangle AE by EC together with the squares on GE and GF equals the squares on GC and GF [CN2].
+
+**Step 6.** But the squares on GE and GF equal the square on FE, since the angle at G is right [1.47]. And the squares on GC and GF equal the square on FC, since the angle at G is right [1.47].
+
+**Step 7.** Therefore the rectangle AE by EC together with the square on FE equals the square on FC [CN1].
+
+**Step 8.** Now FC, being a line from the centre F to the circumference, is a radius. And since BD passes through the centre F, we have FE is part of the radius FB, and ED is the remainder, so that FE + ED = FD, where FD is a radius equal to FC [D1.15]. Also FB = FD, hence FB = FC.
+
+**Step 9.** Since the straight line BD is bisected at F (the centre) and cut unequally at E, the rectangle contained by BE, ED together with the square on EF equals the square on FD [2.5].
+
+**Step 10.** But the square on FC equals the square on FD, since FC equals FD (both are radii) [D1.15]. Therefore the rectangle AE by EC together with the square on FE equals the rectangle BE by ED together with the square on FE [CN1].
+
+**Step 11.** Subtract the square on FE from each side. Therefore the rectangle contained by AE, EC equals the rectangle contained by BE, ED [CN3].
+
+**Step 12.** Finally, suppose that neither AC nor BD passes through the centre. Let F be the centre of the circle [3.1]. Draw the diameter FEHK through F and E, that is, join F to E and produce FE to meet the circle on both sides at H and K [P1, P2].
+
+**Step 13.** Since HK is a diameter passing through the centre F, and AC is a chord not through the centre, both cutting one another at E, the rectangle contained by AE, EC equals the rectangle contained by HE, EK, by the case already proved in Steps 3 through 11.
+
+**Step 14.** Likewise, since HK is a diameter passing through the centre F, and BD is a chord not through the centre, both cutting one another at E, the rectangle contained by BE, ED equals the rectangle contained by HE, EK, by the same case.
+
+**Step 15.** Therefore the rectangle contained by AE, EC equals the rectangle contained by BE, ED, since both are equal to the rectangle contained by HE, EK [CN1].
+
+**Step 16.** Therefore, if in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other. Q.E.D.
+
+**USED:** 1.12, 1.47, 2.5, 3.1, 3.3, CN1, CN2, CN3, D1.15, P1, P2
+**Human refs (from References field):** 1.47, 2.5, 3.3
+**Jaccard:** 0.273 — AI adds ['1.12', '3.1', 'CN1', 'CN2', 'CN3', 'D1.15', 'P1', 'P2']
+
+## Proposition 3.36
+**Statement:** If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.
+
+**Step 1.** Let the circle have center E, let D be a point outside the circle, let DCA be a straight line cutting the circle at C and A (with C on the convex, nearer side and A on the far side), and let DB be a tangent to the circle at B. We must show that the rectangle contained by DA and DC equals the square on DB.
+
+**Step 2.** **Case 1: DCA passes through the center E.** Since DB touches the circle at B, and EB is joined from the center E to the point of contact B, angle EBD is a right angle [3.18].
+
+**Step 3.** Since the straight line AC is a diameter, E is its midpoint, so EA = EC [D1.17, D1.15]. The line CA is bisected at E, and D is a point on CA produced beyond C.
+
+**Step 4.** By Proposition 2.6, the rectangle contained by DA and DC together with the square on EC equals the square on DE. That is, rect(DA, DC) + sq(EC) = sq(DE) [2.6].
+
+**Step 5.** Since triangle DBE has a right angle at B [Step 2], by Proposition 1.47 the square on DE equals the square on DB together with the square on BE. That is, sq(DE) = sq(DB) + sq(BE) [1.47].
+
+**Step 6.** Since BE and EC are both radii of the circle, BE = EC [D1.15]. Therefore sq(BE) = sq(EC).
+
+**Step 7.** Substituting from Step 5 into Step 4: rect(DA, DC) + sq(EC) = sq(DB) + sq(BE). Since sq(BE) = sq(EC) [Step 6], we have rect(DA, DC) + sq(EC) = sq(DB) + sq(EC). Subtracting the square on EC from both sides, rect(DA, DC) = sq(DB) [CN3].
+
+**Step 8.** **Case 2: DCA does not pass through the center E.** Draw EF perpendicular from E to the chord AC [1.12]. Then EF bisects AC at F, so FC = FA [3.3]. Join DE, EB, and EC [P1].
+
+**Step 9.** Since the chord CA is bisected at F and D is a point on CA produced beyond C, by Proposition 2.6 the rectangle contained by DA and DC together with the square on FC equals the square on DF. That is, rect(DA, DC) + sq(FC) = sq(DF) [2.6].
+
+**Step 10.** In triangle EFC, the angle at F is a right angle (since EF is perpendicular to AC). By Proposition 1.47, sq(EC) = sq(EF) + sq(FC) [1.47].
+
+**Step 11.** Since EC and EB are both radii of the circle, EC = EB [D1.15], so sq(EC) = sq(EB). Therefore sq(EF) + sq(FC) = sq(EB).
+
+**Step 12.** Adding the square on EF to both sides of the equation in Step 9: rect(DA, DC) + sq(FC) + sq(EF) = sq(DF) + sq(EF) [CN2].
+
+**Step 13.** The left side equals rect(DA, DC) + sq(EB), since sq(FC) + sq(EF) = sq(EB) [Step 11]. The right side equals sq(DE), since in the right triangle DEF (right angle at F), sq(DE) = sq(DF) + sq(EF) [1.47]. Therefore rect(DA, DC) + sq(EB) = sq(DE).
+
+**Step 14.** Since DB touches the circle at B, and EB is joined from center E to the point of contact, angle EBD is a right angle [3.18]. Therefore in triangle DBE, sq(DE) = sq(DB) + sq(EB) [1.47].
+
+**Step 15.** From Steps 13 and 14: rect(DA, DC) + sq(EB) = sq(DB) + sq(EB). Subtracting the square on EB from both sides, rect(DA, DC) = sq(DB) [CN3].
+
+**Step 16.** In both cases, the rectangle contained by DA and DC equals the square on DB. Therefore, if a point be taken outside a circle and from it there fall on the circle two straight lines, one cutting the circle and the other touching it, the rectangle contained by the whole cutting line and the part intercepted outside between the point and the convex circumference equals the square on the tangent. Q.E.F.
+
+**USED:** 1.12, 1.47, 2.6, 3.18, 3.3, CN2, CN3, D1.15, D1.17, P1
+**Human refs (from References field):** 1.47, 2.6, 3.18, 3.3
+**Jaccard:** 0.400 — AI adds ['1.12', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']
+
+## Proposition 3.37
+**Statement:** If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.
+
+**Step 1.** Let D be a point outside the given circle, let DCA be a straight line cutting the circle (with C on the convex circumference and A on the far side), and let DB fall on the circle at B, such that the rectangle contained by DA and DC is equal to the square on DB. We are to prove that DB touches the circle.
+
+**Step 2.** Suppose, for the sake of contradiction, that DB does not touch the circle.
+
+**Step 3.** From the point D, draw DE touching the circle [3.17].
+
+**Step 4.** Find the centre F of the circle [3.1], and join FE, FB, and FD [P1].
+
+**Step 5.** Since DE touches the circle at E, and FE is joined from the centre F to the point of contact E, the angle FED is right [3.18].
+
+**Step 6.** Since DE touches the circle and DCA cuts it, the rectangle contained by DA and DC is equal to the square on DE [3.36].
+
+**Step 7.** But by hypothesis, the rectangle contained by DA and DC is equal to the square on DB.
+
+**Step 8.** Therefore the square on DE is equal to the square on DB [CN1].
+
+**Step 9.** Therefore DE is equal to DB.
+
+**Step 10.** Now in triangles FED and FBD, the side FE is equal to FB (both being radii of the circle) [D1.15], the side DE is equal to DB [Step 9], and the side FD is common.
+
+**Step 11.** Therefore triangle FED is congruent to triangle FBD, and angle FBD is equal to angle FED [1.8].
+
+**Step 12.** But angle FED is a right angle [Step 5]. Therefore angle FBD is also a right angle.
+
+**Step 13.** Now FB is a radius, so B lies on the circumference, and FB, if produced, is part of a diameter. Since DB is at right angles to the radius FB at the point B on the circumference, the straight line DB falls outside the circle (except at B) [3.16], and therefore DB touches the circle [D3.2].
+
+**Step 14.** This contradicts the assumption in Step 2 that DB does not touch the circle.
+
+**Step 15.** Therefore the assumption is false, and DB touches the circle. Q.E.D.
+
+**USED:** 1.8, 3.1, 3.16, 3.17, 3.18, 3.36, CN1, D1.15, D3.2, P1
+**Human refs (from References field):** 1.8, 3.16, 3.18, 3.36
+**Jaccard:** 0.400 — AI adds ['3.1', '3.17', 'CN1', 'D1.15', 'D3.2', 'P1']

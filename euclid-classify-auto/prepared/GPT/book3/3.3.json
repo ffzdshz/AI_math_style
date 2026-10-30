@@ -1,0 +1,32 @@
+{
+  "proposition": "3.3",
+  "book": 3,
+  "statement": "If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.",
+  "heath_proof": "Let ABC be a circle, and in it let a straight line CD  through the centre bisect a straight line AB not through the centre at the point F; I say that it also cuts it at right angles. For let the centre of the circle ABC  be taken, and let it be E; let EA, EB be joined. Then, since AF is equal to FB, and FE is common, two sides are equal to two sides; and the base EA is equal to the base EB; therefore the angle AFE is equal to the angle BFE. [I. 8]  But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right; [I. Def. 10]therefore each of the angles AFE, BFE is right. Therefore CD, which is through the centre, and bisects AB which is not through the centre, also cuts it at right angles. Again, let CD cut AB at right angles;I say that it also bisects it. that is, that AF is equal to FB. For, with the same construction, since EA is equal to EB, the angle EAF is also equal to the angle EBF. [I. 5] But the right angle AFE is equal to the right angle BFE,therefore EAF, EBF are two triangles having two angles equal to two angles and one side equal to one side, namely EF, which is common to them, and subtends one of the equal angles; therefore they will also have the remaining sides equal to the remaining sides; [I. 26]therefore AF is equal to FB.",
+  "ai_proof_text": "3.3\n**Statement:** If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.\n\n**Step 1.** Let AB have its endpoints on the circumference of a circle with centre O, and suppose AB does not pass through O. Let a straight line through O cut AB at D, between A and B. Thus O and D are distinct. Join OA and OB (P1). Since they are radii of the same circle, OA = OB (D1.15).\n\n**Step 2.** First suppose that the line through O bisects AB, so AD = DB. In triangles ADO and BDO, AD = BD by hypothesis, DO = DO because it is common (CN4), and AO = BO by Step 1. Apply 1.8 directly to these three side equalities: the angles contained by AD, DO and BD, DO are equal. Hence ∠ADO = ∠BDO. This is the direct side-equality route, requiring no auxiliary construction (1.8).\n\n**Step 3.** Since A, D, B lie on one straight line, ∠ADO and ∠BDO are adjacent angles made by OD standing on AB. Their equality makes each a right angle, and OD is perpendicular to AB (D1.10). Thus the straight line through the centre that bisects AB also cuts it at right angles.\n\n**Step 4.** Conversely, suppose the straight line through O cuts AB at right angles at D. Then ∠ADO and ∠BDO are right angles, and therefore are equal (P4).\n\n**Step 5.** Since OA = OB, the base angles of triangle OAB are equal: ∠OAB = ∠ABO (1.5). Because D lies between A and B, these are respectively ∠OAD and ∠DBO. Hence ∠OAD = ∠DBO.\n\n**Step 6.** Triangles ADO and BDO therefore have two corresponding angles equal by Steps 4–5, and AO = BO by Step 1. These equal sides are opposite the equal angles at D. Consequently AD = BD by the side-opposite-an-equal-angle case of 1.26. This case is the direct choice because all its hypotheses are already established. Thus the straight line through the centre that cuts AB at right angles also bisects it, completing both assertions.\n\n**USED:** 1.26, 1.5, 1.8, CN4, D1.10, D1.15, P1, P4\n**Human refs (from References field):** 1.26, 1.5, 1.8, D1.10\n**Jaccard:** 0.500 — AI adds ['CN4', 'D1.15', 'P1', 'P4']",
+  "ai_used": [
+    "1.26",
+    "1.5",
+    "1.8",
+    "CN4",
+    "D1.10",
+    "D1.15",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.26",
+    "1.5",
+    "1.8",
+    "D1.10"
+  ],
+  "ai_only": [
+    "CN4",
+    "D1.15",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let AB have its endpoints on the circumference of a circle with centre O, and suppose AB does not pass through O. Let a straight line through O cut AB at D, between A and B. Thus O and D a"
+}

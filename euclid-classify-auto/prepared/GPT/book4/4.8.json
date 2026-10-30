@@ -1,0 +1,53 @@
+{
+  "proposition": "4.8",
+  "book": 4,
+  "statement": "In a given square to inscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to inscribe a circle in the given square ABCD. Let the straight lines AD, AB be bisected at the points E, F respectively [I. 10], through E let EH be drawn parallel to either AB or CD, and through F let FK be drawn parallel to either AD or BC; [I. 31] therefore each of the figures AK, KB, AH, HD, AG, GC, BG, GD is a parallelogram, and their opposite sides are evidently equal. [I. 34] Now, since AD is equal to AB, and AE is half of AD, and AF half of AB, therefore AE is equal to AF, so that the opposite sides are also equal;  therefore FG is equal to GE. Similarly we can prove that each of the straight lines GH, GK is equal to each of the straight lines FG, GE; therefore the four straight lines GE, GF, GH, GK are equal to one another. Therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will pass also through the remaining points. And it will touch the straight lines AB, BC, CD, DA, because the angles at E, F, H, K are right. For, if the circle cuts AB, BC, CD, DA, the straight line drawn at right angles to the diameter of the circle from its extremity will fall within the circle: which was proved absurd; [III. 16] therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will not cut the straight lines AB, BC, CD, DA. Therefore it will touch them, and will have been inscribed in the square ABCD. Therefore in the given square a circle has been inscribed.",
+  "ai_proof_text": "4.8\n**Statement:** In a given square to inscribe a circle.\n\n**Step 1.** Let ABCD be the given square. Its four sides are equal and its four angles are right angles (D1.22). Join AC and BD, meeting inside the square at O (P1). We shall use the diagonals to obtain equal perpendicular distances from O to the four sides.\n\n**Step 2.** In triangles ABC and ADC, AB = AD, BC = DC, and the included angles ABC and ADC are equal, being right angles (D1.22, P4). Hence, by 1.4,\n∠BAC = ∠DAC and ∠BCA = ∠DCA.\nLikewise, triangles BAD and BCD have BA = BC, AD = CD, and equal included right angles; therefore ∠ABD = ∠CBD (1.4). Thus AO, BO, and CO bisect the square’s angles at A, B, and C respectively. Side–angle–side is the direct choice here because the square supplies the equal included right angles immediately.\n\n**Step 3.** From O draw OE, OF, OG, and OH perpendicular to the lines AB, BC, CD, and DA respectively (1.12). Their feet lie strictly on the respective side-segments. Indeed, for AB, the angles OAB and OBA are each less than a right angle, since they are proper parts of the square’s right angles (D1.22, CN5). If E were A or B, one of these angles would be right (D1.10). If E lay beyond either endpoint, the angle there between O and the other endpoint would be an exterior angle of triangle OAE or OBE and would therefore exceed its opposite interior right angle, contrary to its being less than a right angle (1.16, P4). The same argument applies to the other three sides.\n\n**Step 4.** The angles at the perpendicular feet are right and hence equal (D1.10, P4). In triangles AEO and AHO, the angles EAO and HAO are equal by Step 2, and AO is common; therefore OE = OH by 1.26. Similarly, triangles BEO and BFO have equal angles at B, equal right angles at E and F, and BO common, so OE = OF by 1.26. Finally, triangles CFO and CGO have equal angles at C, equal right angles at F and G, and CO common, so OF = OG by 1.26. Consequently,\nOE = OF = OG = OH (CN1).\n\n**Step 5.** Describe the circle with centre O and radius OE (P3). Since OF, OG, and OH equal OE, this circle passes through E, F, G, and H (D1.15).\n\n**Step 6.** Each side of the square is perpendicular to the radius ending at its point on the circle: AB to OE, BC to OF, CD to OG, and DA to OH. By 3.16, the perpendicular to a radius at its endpoint on the circumference lies outside the circle except at that endpoint. Thus each of these sides meets the circle without cutting it and therefore touches it (D3.2). This is the direct tangency criterion, since the perpendicular radii have already been constructed.\n\n**Step 7.** The circle therefore touches all four sides of ABCD, at points on the side-segments. It is consequently inscribed in the given square (D4.5), as required.\n\n**USED:** 1.12, 1.16, 1.26, 1.4, 3.16, CN1, CN5, D1.10, D1.15, D1.22, D3.2, D4.5, P1, P3, P4\n**Human refs (from References field):** 1.10, 1.31, 1.34, 3.16\n**Jaccard:** 0.056 — AI adds ['1.12', '1.16', '1.26', '1.4', 'CN1', 'CN5', 'D1.10', 'D1.15', 'D1.22', 'D3.2', 'D4.5', 'P1', 'P3', 'P4']; Human adds ['1.10', '1.31', '1.34']",
+  "ai_used": [
+    "1.12",
+    "1.16",
+    "1.26",
+    "1.4",
+    "3.16",
+    "CN1",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.22",
+    "D3.2",
+    "D4.5",
+    "P1",
+    "P3",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.10",
+    "1.31",
+    "1.34",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.12",
+    "1.16",
+    "1.26",
+    "1.4",
+    "CN1",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.22",
+    "D3.2",
+    "D4.5",
+    "P1",
+    "P3",
+    "P4"
+  ],
+  "heath_only": [
+    "1.10",
+    "1.31",
+    "1.34"
+  ],
+  "jaccard": 0.056,
+  "proof_summary": "**Step 1.** Let ABCD be the given square. Its four sides are equal and its four angles are right angles (D1.22). Join AC and BD, meeting inside the square at O (P1). We shall use the diagonals to obta"
+}

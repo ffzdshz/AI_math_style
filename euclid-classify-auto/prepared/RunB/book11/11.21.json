@@ -1,0 +1,30 @@
+{
+  "proposition": "11.21",
+  "book": 11,
+  "statement": "Any solid angle is contained by plane angles less than four right angles.",
+  "heath_proof": "Let the angle at A be a solid angle contained by the plane angles BAC, CAD, DAB; I say that the angles BAC, CAD, DAB are less than four right angles. For let points B, C, D be taken at random on the straight lines AB, AC, AD respectively, and let BC, CD, DB be joined. Now, since the solid angle at B is contained by the three plane angles CBA, ABD, CBD, any two are greater than the remaining one; [XI. 20] therefore the angles CBA, ABD are greater than the angle CBD. For the same reason the angles BCA, ACD are also greater than the angle BCD, and the angles CDA, ADB are greater than the angle CDB; therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than the three angles CBD, BCD, CDB. But the three angles CBD, BDC, BCD are equal to two right angles; [I. 32] therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than two right angles. And, since the three angles of each of the triangles ABC, ACD, ADB are equal to two right angles, therefore the nine angles of the three triangles, the angles CBA, ACB, BAC, ACD, CDA, CAD, ADB, DBA, BAD are equal to six right angles; and of them the six angles ABC, BCA, ACD, CDA, ADB, DBA are greater than two right angles; therefore the remaining three angles BAC, CAD, DAB containing the solid angle are less than four right angles.",
+  "ai_proof_text": "11.21\n**Statement:** Any solid angle is contained by plane angles less than four right angles.\n\n**Step 1.** Let the solid angle at vertex A be contained by the plane angles BAC, CAD, DAE, EAF, and FAB (we take five face angles for generality; the argument works for any number greater than two). By D11.11, these plane angles are not all in the same plane and meet at A.\n\n**Step 2.** Let the plane angles at A be cut by a plane, so that the straight lines AB, AC, AD, AE, AF meet this plane at points B, C, D, E, F respectively. The sections form the convex polygon BCDEF lying in this cutting plane. By P1, join consecutive intersection points to form the sides BC, CD, DE, EF, FB of the polygon.\n\n**Step 3.** Let O be a point taken inside the polygon BCDEF. By P1, join O to each vertex B, C, D, E, F. This produces five triangles with vertex O: OBC, OCD, ODE, OEF, OFB. Likewise, the lines from A to the polygon vertices determine five triangles with vertex A: ABC, ACD, ADE, AEF, AFB.\n\n**Step 4.** Since both sets contain the same number of triangles (five in each set), and by 1.32 the three angles of any triangle sum to two right angles, the sum of all angles in the five A-triangles equals ten right angles, and the sum of all angles in the five O-triangles also equals ten right angles.\n\n**Step 5.** Consider any vertex of the polygon, say B. The point A is not in the plane of the polygon (since the face angles at A are not coplanar), so the lines BA, BF, BC form a solid angle at B. The three face angles of this solid angle are ABF, ABC, and FBC. By 11.20, angles ABF and ABC together are greater than angle FBC.\n\n**Step 6.** But since O lies inside the polygon, the point O lies inside angle FBC, so angle FBC equals angle FBO plus angle OBC. Therefore angles ABF and ABC together are greater than angles FBO and OBC together.\n\n**Step 7.** The same reasoning applies at each vertex of the polygon. At C: angles BCA + ACD > BCO + OCD. At D: angles CDA + ADE > CDO + ODE. At E: angles DEA + AEF > DEO + OEF. At F: angles EFA + FAB > EFO + OFB. Therefore, summing over all five polygon vertices, the total of the base angles of the A-triangles is greater than the total of the base angles of the O-triangles.\n\n**Step 8.** Now from Step 4, in the A-triangles the sum of all angles is: (the face angles at A) + (the base angles of the A-triangles) = ten right angles. In the O-triangles the sum of all angles is: (the angles at O) + (the base angles of the O-triangles) = ten right angles.\n\n**Step 9.** The angles at O, namely BOC, COD, DOE, EOF, FOB, are arranged around the point O and together constitute the full angle around O. By 1.13, two supplementary angles on a line equal two right angles, and by 1.15, vertical angles are equal. Applying these around point O, the angles around O sum to four right angles.\n\n**Step 10.** From Step 8, the face angles at A equal ten right angles minus the base angles of the A-triangles, and the angles at O equal ten right angles minus the base angles of the O-triangles. Since by Step 7 the base angles of the A-triangles are greater than the base angles of the O-triangles, it follows by CN5 that ten right angles minus the base angles of the A-triangles is less than ten right angles minus the base angles of the O-triangles.\n\n**Step 11.** That is, the sum of the face angles at A is less than the sum of the angles at O, which by Step 9 equals four right angles. Therefore the solid angle at A is contained by plane angles whose sum is less than four right angles, which was to be proved.\n\n**USED:** 1.13, 1.15, 1.32, 11.20, CN5, D11.11, P1\n**Human refs (from References field):** 1.32, 11.20\n**Jaccard:** 0.286 — AI adds ['1.13', '1.15', 'CN5', 'D11.11', 'P1']",
+  "ai_used": [
+    "1.13",
+    "1.15",
+    "1.32",
+    "11.20",
+    "CN5",
+    "D11.11",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "11.20"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.15",
+    "CN5",
+    "D11.11",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let the solid angle at vertex A be contained by the plane angles BAC, CAD, DAE, EAF, and FAB (we take five face angles for generality; the argument works for any number greater than two). "
+}

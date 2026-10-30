@@ -1,0 +1,46 @@
+{
+  "proposition": "10.45",
+  "book": 10,
+  "statement": "A major straight line is divided at one and the same point only.",
+  "heath_proof": "Let AB be a major straight line divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB rational, but the rectangle AC, CB medial; [X. 39] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB rational, but the rectangle contained by them medial. Then, since that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, while the squares on AC, CB exceed the squares on AD, DB by a rational area—for both are rational— therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore a major straight line is not divided at different points; therefore it is only divided at one and the same point.",
+  "ai_proof_text": "10.45\n**Statement:** A major straight line is divided at one and the same point only.\n\n**Step 1.** Let AB be a major straight line, divided at C into the two straight lines AC, CB from which it is compounded; that is (10.39), AC and CB are incommensurable in square, the sum of the squares on AC, CB is rational, and the rectangle AC·CB is medial. Throughout, an area is called rational when it is commensurable with the square on the assigned rational straight line (D10.1.4).\n\n**Step 2.** Suppose, if possible, that AB is also divided at another point D, different from C, into straight lines AD, DB having the same properties: AD and DB incommensurable in square, the sum of the squares on AD, DB rational, and the rectangle AD·DB medial; and let the division at D be different from the division at C. Then AC is not equal to DB: for if AC = DB, then AD = CB (CN3), so that AD, DB would be the very same two straight lines CB, AC, and AB would be divided at D in the same way as at C, which is not a different division.\n\n**Step 3.** Bisect AB at E (1.10). The point C is not E: for if C were E, then AC = CB, the squares on AC, CB would be equal and therefore measured by the same measure, that is, commensurable (D10.1.1), so that AC, CB would be commensurable in square (D10.1.2), contrary to Step 1. In the same way, D is not E. Hence AB is cut into equal segments at E and into unequal segments at C, and again into equal segments at E and into unequal segments at D.\n\n**Step 4.** Therefore, by 2.5, the rectangle AC·CB together with the square on EC is equal to the square on AE, and the rectangle AD·DB together with the square on ED is equal to the square on AE. Hence (CN1) the rectangle AC·CB together with the square on EC is equal to the rectangle AD·DB together with the square on ED.\n\n**Step 5.** EC is not equal to ED. For suppose EC = ED. Since C and D are different points at the same distance from E, they lie on opposite sides of E. If D lies between A and E and C between E and B, then AC = AE + EC and DB = EB + ED, and since AE = EB and EC = ED, AC = DB (CN2). If instead C lies between A and E and D between E and B, then CB = CE + EB = DE + EA = AD (CN2), whence AC = DB (CN3). Either case contradicts Step 2. Therefore EC and ED are unequal; and since the hypotheses concerning C and D are alike, let the lettering be so chosen that EC is greater than ED.\n\n**Step 6.** Since EC > ED, the square on EC is greater than the square on ED. But by Step 4 the rectangle AC·CB together with the greater square (on EC) equals the rectangle AD·DB together with the less square (on ED). Therefore the rectangle AC·CB is less than the rectangle AD·DB, and consequently twice the rectangle AC·CB is less than twice the rectangle AD·DB. Let K be the excess of twice the rectangle AD·DB over twice the rectangle AC·CB, so that twice AD·DB = twice AC·CB + K.\n\n**Step 7.** By 2.4, the square on AB is equal to the squares on AC, CB together with twice the rectangle AC·CB; and also the square on AB is equal to the squares on AD, DB together with twice the rectangle AD·DB. Hence (CN1) the squares on AC, CB together with twice AC·CB are equal to the squares on AD, DB together with twice AD·DB, that is, to the squares on AD, DB together with twice AC·CB and K. Taking away twice the rectangle AC·CB from each (CN3), the squares on AC, CB are equal to the squares on AD, DB together with K.\n\n**Step 8.** K is rational. For the sum of the squares on AC, CB and the sum of the squares on AD, DB are both rational, that is, each is commensurable with the rational square set out (D10.1.4); therefore they are commensurable with one another (10.12). Now the whole, the sum of the squares on AC, CB, is made up of the sum of the squares on AD, DB and K (Step 7), and the whole is commensurable with the former part; therefore the parts, namely the sum of the squares on AD, DB and K, are commensurable with one another (10.15). Thus K is commensurable with the sum of the squares on AD, DB, which is commensurable with the rational square set out; therefore K is commensurable with the rational square set out (10.12), that is, K is rational (D10.1.4).\n\n**Step 9.** Twice the rectangle AD·DB and twice the rectangle AC·CB are medial. For the rectangle AD·DB is medial (Step 2), and twice the rectangle AD·DB has to the rectangle AD·DB the ratio which the number 2 has to the unit, a ratio of a number to a number; therefore twice AD·DB is commensurable with AD·DB (10.6); and an area commensurable with a medial area is medial (10.23, Porism). Hence twice the rectangle AD·DB is medial; and in the same way twice the rectangle AC·CB is medial.\n\n**Step 10.** By Step 6, twice the rectangle AD·DB is equal to twice the rectangle AC·CB together with K; that is, the medial area twice AD·DB exceeds the medial area twice AC·CB by the rational area K. But a medial area does not exceed a medial area by a rational area (10.26). This is impossible.\n\n**Step 11.** Therefore AB cannot be divided at any point D other than C into two straight lines incommensurable in square whose squares have a rational sum and which contain a medial rectangle. Hence a major straight line is divided at one and the same point only. Q.E.D.\n\n**USED:** 1.10, 10.12, 10.15, 10.23, 10.26, 10.39, 10.6, 2.4, 2.5, CN1, CN2, CN3, D10.1.1, D10.1.2, D10.1.4\n**Human refs (from References field):** 10.26, 10.39\n**Jaccard:** 0.133 — AI adds ['1.10', '10.12', '10.15', '10.23', '10.6', '2.4', '2.5', 'CN1', 'CN2', 'CN3', 'D10.1.1', 'D10.1.2', 'D10.1.4']",
+  "ai_used": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "10.23",
+    "10.26",
+    "10.39",
+    "10.6",
+    "2.4",
+    "2.5",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.39"
+  ],
+  "ai_only": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "10.23",
+    "10.6",
+    "2.4",
+    "2.5",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.133,
+  "proof_summary": "**Step 1.** Let AB be a major straight line, divided at C into the two straight lines AC, CB from which it is compounded; that is (10.39), AC and CB are incommensurable in square, the sum of the squar"
+}

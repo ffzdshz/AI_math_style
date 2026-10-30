@@ -1,0 +1,30 @@
+{
+  "proposition": "1.22",
+  "book": 1,
+  "statement": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+  "heath_proof": "Let the three given straight lines be A, B, C, and of these let two taken together in any manner be greater than the remaining one, namely A, B greater than C, A, C greater than B, and B, C greater than A; thus it is required to construct a triangle out of straight lines equal to A, B, C. Let there be set out a straight line DE, terminated at D but of infinite length in the direction of E, and let DF be made equal to A, FG equal to B, and GH equal to C. [I. 3] With centre F and distance FD let the circle DKL be described; again, with centre G and distance GH let the circle KLH be described; and let KF, KG be joined; I say that the triangle KFG has been constructed out of three straight lines equal to A, B, C. For, since the point F is the centre of the circle DKL, FD is equal to FK. But FD is equal to A; therefore KF is also equal to A. Again, since the point G is the centre of the circle LKH, GH is equal to GK. But GH is equal to C; therefore KG is also equal to C. And FG is also equal to B; therefore the three straight lines KF, FG, GK are equal to the three straight lines A, B, C. Therefore out of the three straight lines KF, FG, GK, which are equal to the three given straight lines A, B, C, the triangle KFG has been constructed.",
+  "ai_proof_text": "1.22\n**Statement:** Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.\n\n**Step 1.** Let A, B, C be three given straight lines such that any two taken together are greater than the remaining one: A + B > C, A + C > B, and B + C > A. We must construct a triangle having its three sides equal to A, B, C respectively.\n\n**Step 2.** Set out a straight line DE, terminated at D but infinite in the direction of E [P2]. Using Proposition 1.3, cut off DF from DE equal to A [1.3]. Then from the remainder, again using 1.3, cut off FG equal to B, and from the remainder cut off GH equal to C. So DF = A, FG = B, GH = C, and D, F, G, H lie in order along the line DE.\n\n**Step 3.** With center F and distance FD, describe a circle DKL [P3]. With center G and distance GH, describe a circle KHL [P3].\n\n**Step 4.** We show the two circles must meet. Since A + B > C, we have DF + FG > GH. Thus FG < DF + FG, so the point D lies on the circle DKL and is at distance FD from F on the side of F away from G; meanwhile G is at distance FG from F, and since FG < FD + FG but also GH < FG + FD (because C < B + A by hypothesis), the circle centered at G with radius GH does not lie entirely outside circle DKL. Conversely, since B + C > A, we have FG + GH > FD, so the circle centered at G with radius GH extends beyond F on the far side, meaning circle DKL does not contain circle KHL entirely within it. Therefore the two circles meet; let them meet at the point K.\n\n**Step 5.** Join KF and KG [P1].\n\n**Step 6.** Since F is the center of circle DKL, and both FD and FK are radii of this circle, we have FK = FD [D1.15]. But DF = A (by construction in Step 2). Therefore FK = A [CN1].\n\n**Step 7.** Since G is the center of circle KHL, and both GH and GK are radii of this circle, we have GK = GH [D1.15]. But GH = C (by construction in Step 2). Therefore GK = C [CN1].\n\n**Step 8.** By construction, FG = B (Step 2).\n\n**Step 9.** Therefore triangle KFG has been constructed with FK = A, FG = B, and GK = C. That is, out of three straight lines FK, FG, GK, which are equal to the three given straight lines A, B, C, a triangle has been constructed. The condition that any two of the given lines taken together are greater than the remaining one (which follows from 1.20 for any triangle) was necessary to ensure the construction succeeds. Q.E.F.\n\n**USED:** 1.20, 1.3, CN1, D1.15, P1, P2, P3\n**Human refs (from References field):** 1.20, 1.3\n**Jaccard:** 0.286 — AI adds ['CN1', 'D1.15', 'P1', 'P2', 'P3']",
+  "ai_used": [
+    "1.20",
+    "1.3",
+    "CN1",
+    "D1.15",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.3"
+  ],
+  "ai_only": [
+    "CN1",
+    "D1.15",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let A, B, C be three given straight lines such that any two taken together are greater than the remaining one: A + B > C, A + C > B, and B + C > A. We must construct a triangle having its "
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "12.12",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof uses the method of exhaustion with inscribed polygons and pyramids: it inscribes polygons in the base circles, erects pyramids, proves these pyramids are similar (via VI.6, V.16, V.22, VI.5), applies XII.8 (similar pyramids in triplicate ratio), sums them with V.12, and obtains the result by double reductio ad absurdum. The AI takes a fundamentally different path: it introduces an intermediate solid C sharing A's base and B's height, decomposes the ratio A:B into A:C (height ratio, established via prisms and exhaustion) and C:B (base ratio squared, via XII.11 and XII.2), then compounds these via V.22 ex aequali to obtain the triplicate ratio. The backbones are entirely different -- Heath works through similar pyramids and exhaustion while the AI works through ratio decomposition via an intermediate solid. The AI's Step 4 mis-cites XI.32 (same height implies ratio of bases) for the converse claim (same base implies ratio of heights), but the underlying mathematical fact is correct and provable in Euclid's system; under the lenience rule this is not an error but a citation issue. The AI's proof path is logically complete and valid, yielding classification D.",
+  "jaccard": 0.222,
+  "ai_citations": "10.1|11.32|12.10|12.11|12.2|5.15|5.22|D11.24|D5.10|D5.9",
+  "heath_citations": "10.1|12.10|12.8|4.6|5.12|5.16|5.22|6.5|6.6|D11.24|D11.9|D6.1",
+  "ai_only": "11.32|12.11|12.2|5.15|D5.10|D5.9",
+  "heath_only": "12.8|4.6|5.12|5.16|6.5|6.6|D11.9|D6.1",
+  "audit_record": "CANDIDATE E — 12.12\n  violated_claim : \"These prisms, being parallelepipedal solids on equal bases, are to one another as their heights h_A and h_B by 11.32\"\n  failure_mode   : invalid_inference\n  missing_is     : expansion — XI.32 establishes same-height-as-bases; the AI needs same-base-as-heights which is the converse, but the mathematical fact is correct and derivable; this is a citation error not a logical gap\n  evidence       : AI Step 4 cites XI.32 (\"Parallelepipedal solids which are of the same height are to one another as their bases\") but applies it to prisms on equal bases to conclude they are as their heights — the converse\n  why_not_terse  : Cannot complete convincingly — the underlying mathematical claim is true and the AI's broader argument is sound; the error is in citing the wrong proposition number, not in the logical structure. Reclassify as NOT-E."
+}

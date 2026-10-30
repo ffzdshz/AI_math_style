@@ -1,0 +1,77 @@
+{
+  "proposition": "13.17",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cube ABCD-EFGH inscribed in sphere with d^2 = 3s^2; cube vertices at distance d/2 from center O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Midpoints N, O, P, Q, R, S, T, U, V, W, X, Y placed on the 12 edges of the cube",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Golden-section points created on each half-edge, positioned ON the cube edges between midpoints and vertices",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Four golden-section points on top face edges NB, OC, PD, QA connected to form a regular pentagon (but only 4 points identified for a 5-sided figure)",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Six pentagons from six cube faces plus six bridging pentagons give 12 pentagonal faces total",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Golden-section points on lateral edges combine with horizontal edge points to form bridging pentagons between top and bottom faces",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Each vertex of the dodecahedron is either a cube vertex or a golden-section point on a half-edge of the cube; 8 + 12 = 20 vertices, ALL positioned on cube edges or at cube vertices",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Vertices of two types: 8 cube vertices already on sphere, and 12 golden-section division points on half-edges of the cube",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 14",
+      "claim": "For golden-section point K on a top-face edge, OK^2 = (s/2 - g)^2 + (s/2)^2 + (s/2)^2 by Pythagorean theorem in 3D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 16",
+      "claim": "OK^2 = (s/2)^2 + (s/2)^2 + (s/2)^2 = 3(s/2)^2 = d^2/4 for every golden-section vertex, so all 20 vertices lie on the circumsphere",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Cube centered at origin O with side s, vertices at (+-s/2, +-s/2, +-s/2), inscribed in sphere of diameter d where d^2 = 3s^2. Each edge bisected at its midpoint. Each half-edge (length s/2) cut in golden ratio with greater segment g = s(sqrt(5)-1)/4. Golden-section points K lie ON the cube edges between midpoints and vertices. For example, K on edge AB (from A=(s/2,s/2,s/2) to B=(-s/2,s/2,s/2)) is at position (g-s/2, s/2, s/2). The 12 such golden-section points plus 8 cube vertices give 20 claimed dodecahedron vertices, ALL positioned on or at the cube's edges/vertices. Cube vertices lie on the circumsphere at distance d/2 = sqrt(3)*s/2. Golden-section points on edges are strictly INSIDE the sphere at distance sqrt((s/2-g)^2 + 2(s/2)^2) < sqrt(3(s/2)^2) = d/2.",
+  "contradictory_steps": [
+    "Steps 11-12",
+    "Step 16"
+  ],
+  "spatial_claim_1": {
+    "step": "Steps 11-12",
+    "claim": "The 12 non-cube-vertex vertices of the dodecahedron are golden-section division points located ON the edges of the cube (between midpoints and vertices of cube edges)",
+    "required_by": "The entire construction in Steps 2-8 which places all dodecahedron vertices on cube edges or at cube vertices"
+  },
+  "spatial_claim_2": {
+    "step": "Step 16",
+    "claim": "All 20 vertices including the 12 golden-section edge points are equidistant from center O at distance d/2, lying on the circumscribing sphere",
+    "required_by": "The conclusion in Step 16 that the dodecahedron is comprehended in the sphere"
+  },
+  "contradiction": "If a point K lies on an edge of the cube (between two cube vertices), it is strictly closer to the center O than the cube vertices are. Direct computation: for K on edge AB at the golden-section position, OK^2 = (s/2 - g)^2 + (s/2)^2 + (s/2)^2. Since 0 < g < s/2, we have (s/2 - g)^2 < (s/2)^2, so OK^2 < 3(s/2)^2 = d^2/4. Therefore K lies strictly inside the circumsphere, contradicting the claim that OK = d/2. The proof's assertion in Step 16 that OK^2 = (s/2)^2 + (s/2)^2 + (s/2)^2 is false -- it silently replaces (s/2 - g) with s/2 in the first coordinate. The fundamental error is that the construction places all vertices on the cube's edges, but a dodecahedron inscribed in the same sphere as the cube necessarily has vertices OUTSIDE the cube (raised above its faces).",
+  "fixable": true,
+  "fix_note": "Heath's construction avoids this by erecting perpendicular segments from the cube faces outward (RU, SV, TW at right angles to the planes of the cube towards the outside), placing the 12 additional vertices outside the cube rather than on its edges. This is the correct geometric construction: the dodecahedron vertices that are not cube vertices must be raised above the cube faces, not confined to its edges."
+}

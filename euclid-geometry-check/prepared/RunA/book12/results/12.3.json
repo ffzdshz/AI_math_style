@@ -1,0 +1,111 @@
+{
+  "proposition": "12.3",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a tetrahedron with triangular base BCD and apex A; midpoints E=mid(BC), F=mid(CA), G=mid(AB), H=mid(DA), I=mid(DB), K=mid(DC) are constructed on all six edges",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GE is parallel to AC and equals AC/2 (midsegment of triangle ABC); similarly GF || BC, EF || AB, and analogous midsegments on all four faces",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Pyramid AGFH has every edge exactly half the corresponding edge of ABCD; AGFH is similar to ABCD with ratio 1:2",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Pyramid BEGI has every edge exactly half the corresponding edge of ABCD; BEGI is similar to ABCD with ratio 1:2",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Edge-length multisets of AGFH and BEGI are identical; the two pyramids are equal and similar to each other",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "GF and IK are both parallel to BC with length BC/2, so GF || IK; GI and FK are both parallel to AD with length AD/2, so GI || FK; GFKI is a parallelogram in a plane P",
+      "type": "parallelogram_coplanarity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Diagonals GK and FI of parallelogram GFKI bisect each other at M = (A+B+C+D)/4, the centroid of the tetrahedron",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Midpoint of segment EH equals (A+B+C+D)/4 = M, which lies in plane P; E and H are on opposite sides of plane P at equal distances",
+      "type": "point_position_relative_to_plane"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Triangle CFK lies in the plane of face ACD; triangle EGI lies in a plane parallel to ACD at distance d(B,ACD)/2; CFK and EGI are congruent",
+      "type": "plane_membership_and_parallelism"
+    },
+    {
+      "step": "Step 10",
+      "claim": "GECF is a parallelogram (GE || CF, both parallel to AC, length AC/2; EC || FG, both parallel to BC, length BC/2)",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 10",
+      "claim": "CEIK is a parallelogram (CE || IK parallel to BC; EI || KC parallel to DC)",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Prism 1 is bounded by congruent parallel triangles CFK and EGI and three parallelograms GECF, CEIK, GFKI",
+      "type": "prism_identification"
+    },
+    {
+      "step": "Step 11",
+      "claim": "GIDH is a parallelogram (GI || DH parallel to AD; ID || HG parallel to BD)",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 11",
+      "claim": "FKDH is a parallelogram (FK || DH parallel to AD; KD || HF parallel to DC)",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Prism 2 is bounded by congruent parallel triangles DIK and GFH and three parallelograms GIDH, FKDH, GFKI",
+      "type": "prism_identification"
+    },
+    {
+      "step": "Step 12",
+      "claim": "CFHK is a parallelogram in plane ACD (CF || KH, CK || FH) with area = half of area(ACD); height of parallelepiped P1 is half the distance from B to plane ACD",
+      "type": "parallelepiped_base"
+    },
+    {
+      "step": "Step 13",
+      "claim": "DIKE is a parallelogram in plane BCD with area = half of area(BCD); height of parallelepiped P2 is half the distance from A to plane BCD",
+      "type": "parallelepiped_base"
+    },
+    {
+      "step": "Step 14",
+      "claim": "area(ACD)*d(B,ACD) = area(BCD)*d(A,BCD) since both equal 3*Vol(ABCD); hence P1 = P2 and Prism 1 = Prism 2",
+      "type": "volume_equality"
+    },
+    {
+      "step": "Step 15",
+      "claim": "ABCD is exhaustively partitioned into AGFH + BEGI + Prism 1 + Prism 2 with no overlap",
+      "type": "partition"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Prism 1 strictly contains pyramid CEFK (which is congruent to AGFH), so Prism 1 > AGFH; similarly Prism 2 > BEGI",
+      "type": "containment_inequality"
+    }
+  ],
+  "configuration_map": "Tetrahedron ABCD with base BCD and apex A. Six midpoints on edges: E=mid(BC), F=mid(CA), G=mid(AB), H=mid(DA), I=mid(DB), K=mid(DC). Plane P passes through the parallelogram GFKI (formed by midsegments from different faces, both pairs parallel to edges BC and AD respectively). Centroid M=(A+B+C+D)/4 is the intersection of diagonals of GFKI and also the midpoint of EH, placing E and H on opposite sides of plane P. Corner pyramid AGFH sits at vertex A with all edges half of ABCD's. Corner pyramid BEGI sits at vertex B with same edge multiset. Prism 1 occupies the region between parallel triangles CFK (in plane ACD) and EGI (parallel to ACD), containing vertex C. Prism 2 occupies the region between parallel triangles DIK (in plane BCD) and GFH (parallel to BCD), containing vertex D. The four pieces exhaust the tetrahedron. Each prism strictly contains a corner pyramid congruent to AGFH/BEGI (at vertices C and D respectively), establishing the prisms exceed half the total volume.",
+  "pass_reason": "All spatial claims are mutually consistent. Every midpoint is used in a position consistent with its definition throughout the proof. The parallelogram identifications (GFKI, GECF, CEIK, GIDH, FKDH, CFHK, DIKE) are all verified by showing opposite sides are parallel and equal via midsegment properties. The coplanarity of GFKI follows from the parallelogram structure. The plane membership claims (CFK in plane ACD, EGI parallel to ACD, DIK in plane BCD, GFH parallel to BCD) are verified by checking that vertices either lie on the face or are at equal perpendicular distances from it. The partition into two pyramids and two prisms is exhaustive and non-overlapping. The volume comparison via parallelepipeds uses consistent base-area and height values. No angle decomposition issues arise. No point is placed in contradictory positions across different steps."
+}

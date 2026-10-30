@@ -1,0 +1,45 @@
+{
+  "proposition": "10.75",
+  "book": 10,
+  "statement": "If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a medial rectangle, the remainder is irrational; and let it be called a second apotome of a medial straight line.",
+  "heath_proof": "For from the medial straight line AB let there be subtracted the medial straight line CB which is commensurable with the whole AB in square only and such that the rectangle AB, BC, which it contains with the whole AB, is medial; [X. 28] I say that the remainder AC is irrational; and let it be called a second apotome of a medial straight line. For let a rational straight line DI be set out, let DE equal to the squares on AB, BC be applied to DI, producing DG as breadth, and let DH equal to twice the rectangle AB, BC be applied to DI, producing DF as breadth; therefore the remainder FE is equal to the square on AC. [II. 7] Now, since the squares on AB, BC are medial and commensurable, therefore DE is also medial. [X. 15 and 23] And it is applied to the rational straight line DI, producing DG as breadth; therefore DG is rational and incommensurable in length with DI. [X. 22] Again, since the rectangle AB, BC is medial, therefore twice the rectangle AB, BC is also medial. [X. 23] And it is equal to DH; therefore DH is also medial. And it has been applied to the rational straight line DI, producing DF as breadth; therefore DF is rational and incommensurable in length with DI. [X. 22] And, since AB, BC are commensurable in square only, therefore AB is incommensurable in length with BC; therefore the square on AB is also incommensurable with the rectangle AB, BC. [X. 11] But the squares on AB, BC are commensurable with the square on AB, [X. 15] and twice the rectangle AB, BC is commensurable with the rectangle AB, BC; [X. 6] therefore twice the rectangle AB, BC is incommensurable with the squares on AB, BC. [X. 13] But DE is equal to the squares on AB, BC, and DH to twice the rectangle AB, BC; therefore DE is incommensurable with DH. But, as DE is to DH, so is GD to DF; [VI. 1] therefore GD is incommensurable with DF. [X. 11] And both are rational; therefore GD, DF are rational straight lines commensurable in square only; therefore FG is an apotome. [X. 73] But DI is rational, and the rectangle contained by a rational and an irrational straight line is irrational, [deduction from X. 20] and its ’side’ is irrational. And AC is the ’side’ of FE; therefore AC is irrational. And let it be called a second apotome of a medial straight line.",
+  "ai_proof_text": "10.75\n**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a medial rectangle, the remainder is irrational; and let it be called a second apotome of a medial straight line.\n\n**Step 1.** Let AB be a medial straight line, and from AB let there be subtracted BC, a medial straight line commensurable with AB in square only, such that the rectangle AB by BC is medial. We are to show that the remainder AC is irrational.\n\n**Step 2.** Let a rational straight line DI be set out, and let the rectangle DE equal to the sum of the squares on AB and BC be applied to DI, producing DG as breadth; and let the rectangle DH equal to twice the rectangle AB by BC be applied to DI, producing DF as breadth. Then the remainder FE equals the square on AC, since by Proposition 2.7 the square on the difference AC satisfies sq(AC) = sq(AB) + sq(BC) - 2*rect(AB,BC). Therefore the rectangle FE (that is, the area with breadth FG on base DI) equals the square on AC.\n\n**Step 3.** Since AB is medial, the square on AB is medial. Since AB and BC are commensurable in square only, the squares on AB and BC are commensurable with each other by definition (D10.1.2). Since the square on AB is medial, the square on BC, being commensurable with a medial area, is also medial (by 10.23 applied to the sides: BC is commensurable in square with AB, so sq(BC) is commensurable with sq(AB)). By Proposition 10.15, since sq(AB) and sq(BC) are commensurable, their sum sq(AB) + sq(BC) is commensurable with each of them, and hence is medial.\n\n**Step 4.** The rectangle DE, being equal to the medial area sq(AB) + sq(BC), is medial. Since DE is a medial area applied to the rational straight line DI, by Proposition 10.22 the breadth DG is rational and incommensurable in length with DI.\n\n**Step 5.** Since the rectangle AB by BC is medial (by hypothesis), twice the rectangle AB by BC is also medial, for it is commensurable with the rectangle AB by BC (being its double, their ratio is 2:1, a ratio of numbers, so they are commensurable by 10.6). By Proposition 10.23 (applied to areas via 10.6), 2*rect(AB,BC) is medial.\n\n**Step 6.** The rectangle DH, being equal to the medial area 2*rect(AB,BC), is medial. Since DH is a medial area applied to the rational straight line DI, by Proposition 10.22 the breadth DF is rational and incommensurable in length with DI.\n\n**Step 7.** Since AB and BC are commensurable in square only, AB is incommensurable in length with BC. Therefore the square on AB is incommensurable with the rectangle AB by BC, since sq(AB) : rect(AB,BC) = AB : BC (by 6.1, areas on the same base AB have ratio equal to the ratio of their heights), and AB : BC is a ratio of incommensurable magnitudes, so by 10.11 these areas are incommensurable.\n\n**Step 8.** But sq(AB) + sq(BC) is commensurable with sq(AB) (by 10.15, as shown in Step 3), and 2*rect(AB,BC) is commensurable with rect(AB,BC) (as shown in Step 5). Since sq(AB) is incommensurable with rect(AB,BC) (Step 7), and sq(AB) + sq(BC) is commensurable with sq(AB), by Proposition 10.13 the sum sq(AB) + sq(BC) is incommensurable with rect(AB,BC). Since 2*rect(AB,BC) is commensurable with rect(AB,BC), again by 10.13 the sum sq(AB) + sq(BC) is incommensurable with 2*rect(AB,BC).\n\n**Step 9.** Therefore DE is incommensurable with DH. But DE equals DI times DG, and DH equals DI times DF. So by 6.1, DG is incommensurable with DF (since the areas on equal base DI have ratio equal to the ratio of their breadths, and the areas are incommensurable, so by 10.11 the breadths are incommensurable).\n\n**Step 10.** Both DG and DF are rational (Steps 4 and 6). They are incommensurable with each other (Step 9). Also, both DG and DF are incommensurable in length with DI (Steps 4 and 6). Therefore, since DG and DF are rational straight lines commensurable in square only (being rational and incommensurable in length with each other), by Proposition 10.73 applied to magnitudes (or equivalently, since FG = DG - DF and DG and DF are rational commensurable in square only), the remainder FG is irrational.\n\n**Step 11.** Now DI is rational, and the rectangle FE (which equals DI times FG) equals the square on AC (Step 2). Since FG is irrational and DI is rational, the area DI times FG is irrational (for if the area were rational, then by 10.20 the breadth FG would be rational and commensurable with DI, contradicting that FG is irrational). Since the square on AC equals this irrational area, the straight line AC is irrational by Definition D10.1.4.\n\n**Step 12.** Therefore AC, the remainder when a medial straight line commensurable in square only with the whole and containing with the whole a medial rectangle is subtracted from a medial straight line, is irrational. Let it be called a second apotome of a medial straight line. Q.E.D.\n\n**USED:** 10.11, 10.13, 10.15, 10.20, 10.22, 10.23, 10.6, 10.73, 2.7, 6.1, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.13, 10.15, 10.20, 10.22, 10.23, 10.28, 10.6, 10.73, 2.7, 6.1\n**Jaccard:** 0.714 — AI adds ['D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.28']",
+  "ai_used": [
+    "10.11",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.6",
+    "10.73",
+    "2.7",
+    "6.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.28",
+    "10.6",
+    "10.73",
+    "2.7",
+    "6.1"
+  ],
+  "ai_only": [
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.28"
+  ],
+  "jaccard": 0.714,
+  "proof_summary": "**Step 1.** Let AB be a medial straight line, and from AB let there be subtracted BC, a medial straight line commensurable with AB in square only, such that the rectangle AB by BC is medial. We are to"
+}

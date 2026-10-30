@@ -1,0 +1,13 @@
+{
+  "proposition": "10.66",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same backbone of key intermediate conclusions: (1) divide the commensurable line proportionally to the binomial's terms, (2) show the new terms are rational and commensurable in square only, (3) conclude the line is binomial, and (4) show it is the same order via the six-case analysis using 10.14, commensurability checks, and the order definitions. The citation differences are explained by granularity: the AI cites 10.5 and 10.6 directly where Heath cites 10.11, and 10.11's proof internally uses 10.5 and 10.6 (proof-tree containment). The AI handles the case covered by Heath's 10.13 citation by re-deriving 10.13's argument inline via contradiction using 10.12, which is the sole citation in 10.13's own proof. Heath uses 5.19 (remainder proportionality) and 5.16 (alternation) to establish the proportion AE:EB = CF:FD, while the AI's construction via 6.12 sets up all parts in the same ratio directly and uses 5.11 to derive the same proportion, bypassing those lemmas but reaching the identical key conclusion. The AI's additional citation of 6.22 and D10.1.3 are over-citations that do not change the logical backbone. All key geometric facts are established at the same positions in both proofs.",
+  "jaccard": 0.579,
+  "ai_citations": "10.12|10.14|10.36|10.5|10.6|5.11|6.12|6.22|D10.1.3|D10.2.1|D10.2.2|D10.2.3|D10.2.4|D10.2.5|D10.2.6",
+  "heath_citations": "10.11|10.12|10.13|10.14|10.36|5.11|5.16|5.19|6.12|D10.2.1|D10.2.2|D10.2.3|D10.2.4|D10.2.5|D10.2.6",
+  "ai_only": "10.5|10.6|6.22|D10.1.3",
+  "heath_only": "10.11|10.13|5.16|5.19",
+  "audit_record": ""
+}

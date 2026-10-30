@@ -1,0 +1,23 @@
+{
+  "proposition": "3.11",
+  "book": 3,
+  "statement": "If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.",
+  "heath_proof": "For let the two circles ABC, ADE touch one another internally at the point A, and let the centre F of the circle ABC, and the centre G of ADE, be taken; I say that the straight line joined from G to F and produced will fall on A. For suppose it does not, but, if possible, let it fall as FGH, and let AF, AG be joined. Then, since AG, GF are greater than FA, that is, than FH, let FG be subtracted from each; therefore the remainder AG is greater than the remainder GH. But AG is equal to GD; therefore GD is also greater than GH, the less than the greater: which is impossible. Therefore the straight line joined from F to G will not fall outside; therefore it will fall at A on the point of contact.",
+  "ai_proof_text": "3.11\n**Statement:** If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.\n\n**Step 1.** Let two circles ABC (the larger) and ADE (the smaller) touch one another internally at the point A. Let G be the center of circle ABC, and H be the center of circle ADE. We must show that the straight line GH, produced, passes through A.\n\n**Step 2.** Suppose, for the sake of contradiction, that the line GH produced does not pass through A. Join GA and HA by P1.\n\n**Step 3.** The line from G through H, when produced, meets the circumference of the smaller circle ADE at some point D (on the far side of H from G), and meets the circumference of the larger circle ABC at some point B (beyond D from G). Since H is between G and D on this line, we have GD = GH + HD.\n\n**Step 4.** Since G is the center of circle ABC, we have GA = GB, both being radii of circle ABC (by D1.15).\n\n**Step 5.** Since H is the center of circle ADE, we have HA = HD, both being radii of circle ADE (by D1.15).\n\n**Step 6.** Now consider triangle GHA. Since by our assumption G, H, and A are not collinear, this is a genuine triangle. By 1.20 (in any triangle, the sum of any two sides is greater than the remaining side), we have GH + HA > GA.\n\n**Step 7.** Since HA = HD (Step 5), substituting gives GH + HD > GA. But GH + HD = GD (Step 3), so GD > GA.\n\n**Step 8.** Since GA = GB (Step 4), we conclude GD > GB.\n\n**Step 9.** Now, since the circles touch internally, the smaller circle ADE lies within the larger circle ABC. The point D lies on circle ADE, and D is not the point of tangency A (because by our assumption the line GH produced does not pass through A). Therefore D lies strictly inside circle ABC.\n\n**Step 10.** Since D is inside circle ABC and B is on circle ABC, and the points G, D, B are collinear (all on the line through G and H produced), with D between G and B, the segment GD is a part of the segment GB. Therefore by CN5 (the whole is greater than the part), GB > GD.\n\n**Step 11.** But Step 8 established GD > GB, which contradicts Step 10. This contradiction arises from our assumption that GH produced does not pass through A.\n\n**Step 12.** Therefore the straight line joining the centres G and H, when produced, falls on the point of contact A. Q.E.D.\n\n**USED:** 1.20, CN5, D1.15, P1\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['1.20', 'CN5', 'D1.15', 'P1']",
+  "ai_used": [
+    "1.20",
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "1.20",
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let two circles ABC (the larger) and ADE (the smaller) touch one another internally at the point A. Let G be the center of circle ABC, and H be the center of circle ADE. We must show that "
+}

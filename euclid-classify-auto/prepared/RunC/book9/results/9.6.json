@@ -1,0 +1,13 @@
+{
+  "proposition": "9.6",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof of 9.6 establishes a proportionality chain (unit:A = A:B = B:C), then uses 8.19 (mean proportionals between similar solids), 8.8 (transferring continued proportion), and 8.23 (first of four continued proportionals is cube implies fourth is cube) to conclude A is cube. The AI takes a fundamentally different path: it directly computes B*A = (A*A)*A = A^3, which is cube by definitions D7.17 and D7.19, and then invokes Proposition 9.5 (if a cube number multiplied by any number makes a cube, the multiplied number is also cube) to conclude A is cube. Although the containment test shows that the heath_only items (8.19, 8.8, 8.23) appear inside Heath's proof of 9.5, the AI's backbone introduces a novel key intermediate conclusion not present in Heath (that B*A equals A^3 and is therefore cube by definition) and reduces the problem to an entirely different prior result (9.5). The AI's proof is logically complete and valid but follows a genuinely different logical strategy, warranting classification as D.",
+  "jaccard": 0.0,
+  "ai_citations": "9.5|D7.17|D7.19",
+  "heath_citations": "8.19|8.23|8.8|D7.20",
+  "ai_only": "9.5|D7.17|D7.19",
+  "heath_only": "8.19|8.23|8.8|D7.20",
+  "audit_record": ""
+}

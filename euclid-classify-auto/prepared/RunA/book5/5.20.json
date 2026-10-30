@@ -1,0 +1,32 @@
+{
+  "proposition": "5.20",
+  "book": 5,
+  "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.",
+  "heath_proof": "Let there be three magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and as B is to C, so is E to F; and let A be greater than C ex aequali; I say that D will also be greater than F; if A is equal to C, equal; and, if less, less. For, since A is greater than C, and B is some other magnitude, and the greater has to the same a greater ratio than the less has, [V. 8] therefore A has to B a greater ratio than C has to B. But, as A is to B, so is D to E, and, as C is to B, inversely, so is F to E; therefore D has also to E a greater ratio than F has to E. [V. 13] But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater; [V. 10] therefore D is greater than F.  Similarly we can prove that, if A be equal to C, D will also be equal to F; and if less, less.",
+  "ai_proof_text": "5.20\n**Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.\n\n**Step 1.** Let A, B, C be three magnitudes and D, E, F be another three magnitudes such that A:B = D:E and B:C = E:F. We must show that if A > C then D > F; if A = C then D = F; and if A < C then D < F.\n\n**Step 2.** Since B:C = E:F, by the definition of same ratio (D5.5), for any equimultiples nB, nE of B, E and mC, mF of C, F: nB > mC if and only if nE > mF, nB = mC if and only if nE = mF, and nB < mC if and only if nE < mF. In particular, this means that C:B = F:E, since the equimultiple conditions for the ratio C:B are precisely the equimultiple conditions for the ratio F:E when we apply D5.5 to B:C = E:F with the roles of the multipliers exchanged.\n\n**Step 3.** Case 1: Suppose A > C. Since A is greater than C and both have a ratio to B, by 5.8, A has to B a greater ratio than C has to B, that is, A:B > C:B.\n\n**Step 4.** Since A:B = D:E (given), and A:B > C:B (Step 3), by 5.13 (if a first magnitude has to a second the same ratio as a third to a fourth, and the third to the fourth a greater ratio than a fifth to a sixth, then the first also has to the second a greater ratio than the fifth to the sixth), taking D:E as the first-to-second, A:B as the third-to-fourth, and C:B as the fifth-to-sixth, we conclude D:E > C:B.\n\n**Step 5.** By D5.7, since D:E > C:B, there exist positive integers m and n such that mD > nE but mC does not exceed nB, that is, nB >= mC.\n\n**Step 6.** Since B:C = E:F (given) and nB >= mC: if nB > mC, then nE > mF by D5.5; if nB = mC, then nE = mF by D5.5. In either case, nE >= mF.\n\n**Step 7.** From Steps 5 and 6, mD > nE and nE >= mF, so mD > mF. Since mD = m times D and mF = m times F with m a positive integer, it follows that D > F.\n\n**Step 8.** Case 2: Suppose A = C. Since A and C are equal, by 5.7, A and C have to B the same ratio, that is, A:B = C:B.\n\n**Step 9.** Since A:B = D:E (given) and A:B = C:B (Step 8), by 5.11 (ratios which are the same with the same ratio are also the same with one another), D:E = C:B.\n\n**Step 10.** From Step 2, C:B = F:E. Combined with D:E = C:B (Step 9), by 5.11 again, D:E = F:E.\n\n**Step 11.** Since D:E = F:E, that is, D and F have the same ratio to E, by 5.9 (magnitudes which have the same ratio to the same are equal to one another), D = F.\n\n**Step 12.** Case 3: Suppose A < C. Since C is greater than A, by 5.8, C has to B a greater ratio than A has to B, that is, C:B > A:B.\n\n**Step 13.** Since A:B = D:E (given), by D5.5, for any equimultiples mA, mD of A, D and nB, nE of B, E: mA > nB if and only if mD > nE, and mA <= nB if and only if mD <= nE. Since C:B > A:B, by D5.7 there exist positive integers m and n such that mC > nB and mA <= nB. By the equivalence just stated, mA <= nB gives mD <= nE. Thus mC > nB and mD <= nE, which by D5.7 means C:B > D:E.\n\n**Step 14.** From Step 2, C:B = F:E. Since C:B > D:E (Step 13), and C:B = F:E, by D5.5 and D5.7, the equimultiple conditions witnessing C:B > D:E are identical to those witnessing F:E > D:E. Therefore F:E > D:E.\n\n**Step 15.** Since F:E > D:E, that is, F has to E a greater ratio than D has to E, by 5.10 (of magnitudes which have a ratio to the same, that which has a greater ratio is greater), F > D, and therefore D < F.\n\n**Step 16.** Thus in all three cases the result holds: if A > C then D > F; if A = C then D = F; if A < C then D < F. This is what was to be proved.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.5, D5.7\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.375 — AI adds ['5.11', '5.7', '5.9', 'D5.5', 'D5.7']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_only": [],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let A, B, C be three magnitudes and D, E, F be another three magnitudes such that A:B = D:E and B:C = E:F. We must show that if A > C then D > F; if A = C then D = F; and if A < C then D <"
+}

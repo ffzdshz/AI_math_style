@@ -1,0 +1,13 @@
+{
+  "proposition": "5.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: for the primary case A > C, both establish A:B > C:B via 5.8, transfer the ratio inequality through the given proportions to obtain D:E > F:E, and conclude D > F via 5.10. The sole heath_only citation, 5.13, packages the transfer of ratio inequalities through proportion equalities; Heath's own proof of 5.13 uses V.Def.5 and V.Def.7, which are exactly the definitions (D5.5, D5.7) the AI cites directly to perform the same transfer step. The AI thus re-derives 5.13's internals from definitions rather than citing the packaged result, a citation-depth difference. The additional ai_only propositions (5.7, 5.9, 5.11) serve the A = C case that Heath dismisses with 'similarly we can prove,' representing explicit citation of a case Heath treats implicitly. Since the key intermediate conclusions are identical and all differences reduce to citation depth, Case A of Q2 holds, yielding G.",
+  "jaccard": 0.222,
+  "ai_citations": "5.10|5.11|5.7|5.8|5.9|D5.17|D5.5|D5.7",
+  "heath_citations": "5.10|5.13|5.8",
+  "ai_only": "5.11|5.7|5.9|D5.17|D5.5|D5.7",
+  "heath_only": "5.13",
+  "audit_record": ""
+}

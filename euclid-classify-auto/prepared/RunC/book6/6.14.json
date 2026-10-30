@@ -1,0 +1,35 @@
+{
+  "proposition": "6.14",
+  "book": 6,
+  "statement": "In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.",
+  "heath_proof": "Let AB, BC be equal and equiangular parallelograms having the angles at B equal, and let DB, BE be placed in a straight line; therefore FB, BG are also in a straight line. [I. 14] I say that, in AB, BC, the sides about the equal angles are reciprocally proportional, that is to say, that, as DB is to BE, so is GB to BF. For let the parallelogram FE be completed. Since, then, the parallelogram AB is equal to the parallelogram BC, and FE is another area, therefore, as AB is to FE, so is BC to FE. [V. 7] But, as AB is to FE, so is DB to BE, [VI. 1] and, as BC is to FE, so is GB to BF. [id.]therefore also, as DB is to BE, so is GB to BF. [V. 11] Therefore in the parallelograms AB, BC the sides about the equal angles are reciprocally proportional. Next, let GB be to BF as DB to BE; I say that the parallelogram AB is equal to the parallelogram BC. For since, as DB is to BE, so is GB to BF, while, as DB is to BE, so is the parallelogram AB to the parallelogram FE, [VI. 1] and, as GB is to BF, so is the parallelogram BC to the parallelogram FE, [VI. 1] therefore also, as AB is to FE, so is BC to FE; [V. 11] therefore the parallelogram AB is equal to the parallelogram BC. [V. 9]",
+  "ai_proof_text": "6.14\n**Statement:** In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.\n\n**Step 1.** Let ABCD and CEFG be two equal and equiangular parallelograms, with angle BCD equal to angle ECG. We must show that the sides about the equal angles are reciprocally proportional, that is, BC : CG = EC : CD.\n\n**Step 2.** Place the parallelograms so that the sides BC and CG about the equal angles are in a straight line, with C between B and G. Since BCG is a straight line, angle BCD + angle DCG equals two right angles [1.13].\n\n**Step 3.** Since angle BCD equals angle ECG (given), substituting yields angle ECG + angle DCG equals two right angles. Therefore DC and CE are in a straight line [1.14]. Call this straight line DE.\n\n**Step 4.** Through D, draw DH parallel to CG, and through G, draw GH parallel to CD, completing parallelogram DCHG [1.31].\n\n**Step 5.** Since ABCD is a parallelogram, AD is parallel to BC, that is, AD is parallel to BG [1.34]. Since DCHG is a parallelogram, DH is parallel to CG, that is, DH is parallel to BG [1.34]. Both AD and DH pass through point D and are each parallel to BG. If AD and DH were distinct lines, they would be two different lines through D both parallel to BG; but lines parallel to the same line are parallel to one another [1.30], so AD would be parallel to DH, which is impossible since they share the point D. Therefore A, D, and H are collinear, and the parallelograms ABCD and DCHG lie between the same parallels, namely line BG and line ADH.\n\n**Step 6.** Similarly, since CEFG is a parallelogram, GF is parallel to CE, that is, GF is parallel to DE [1.34]. Since DCHG is a parallelogram, GH is parallel to DC, that is, GH is parallel to DE [1.34]. Both GF and GH pass through point G and are each parallel to DE. By the same reasoning as in Step 5 using [1.30], F, G, and H are collinear, and the parallelograms CEFG and DCHG lie between the same parallels, namely line DE and line FGH.\n\n**Step 7.** Since parallelograms ABCD and DCHG are between the same parallels (line BG and line ADH) and have their bases BC and CG on the same line BG, by [6.1] we have ABCD : DCHG = BC : CG.\n\n**Step 8.** Since parallelograms CEFG and DCHG are between the same parallels (line DE and line FGH) and have their bases CE and CD on the same line DE, by [6.1] we have CEFG : DCHG = CE : CD.\n\n**Step 9.** Now since ABCD equals CEFG (given), we have ABCD : DCHG = CEFG : DCHG. From Steps 7 and 8, BC : CG = ABCD : DCHG and CE : CD = CEFG : DCHG. Since BC : CG and CE : CD are each equal to the same ratio (namely the ratio of ABCD to DCHG, which equals the ratio of CEFG to DCHG), we conclude BC : CG = CE : CD [5.11]. This completes the first part: the sides about the equal angles are reciprocally proportional.\n\n**Step 10.** Conversely, let ABCD and CEFG be equiangular parallelograms with angle BCD equal to angle ECG, and suppose BC : CG = EC : CD. We must show that ABCD equals CEFG.\n\n**Step 11.** Arrange the parallelograms and complete parallelogram DCHG exactly as in Steps 2 through 6.\n\n**Step 12.** By [6.1], as before, ABCD : DCHG = BC : CG, and CEFG : DCHG = CE : CD.\n\n**Step 13.** Since BC : CG = EC : CD (given), and ABCD : DCHG = BC : CG while CEFG : DCHG = CE : CD, it follows that ABCD : DCHG = CEFG : DCHG [5.11].\n\n**Step 14.** Since ABCD and CEFG have the same ratio to DCHG, we conclude ABCD equals CEFG [5.9]. This completes the converse.\n\n**Step 15.** Therefore, in equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal. Q.E.D.\n\n**USED:** 1.13, 1.14, 1.30, 1.31, 1.34, 5.11, 5.9, 6.1\n**Human refs (from References field):** 1.14, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.444 — AI adds ['1.13', '1.30', '1.31', '1.34']; Human adds ['5.7']",
+  "ai_used": [
+    "1.13",
+    "1.14",
+    "1.30",
+    "1.31",
+    "1.34",
+    "5.11",
+    "5.9",
+    "6.1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.30",
+    "1.31",
+    "1.34"
+  ],
+  "heath_only": [
+    "5.7"
+  ],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let ABCD and CEFG be two equal and equiangular parallelograms, with angle BCD equal to angle ECG. We must show that the sides about the equal angles are reciprocally proportional, that is,"
+}

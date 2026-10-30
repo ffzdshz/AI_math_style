@@ -1,0 +1,13 @@
+{
+  "proposition": "5.5",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q1 considered E because the AI mischaracterizes 5.1 as directly stating the subtraction/remainder result, when 5.1 actually proves the additive property of equimultiples. However, under the lenience rule, this is compressed-but-sound rather than invalid inference: 5.1 is the correct and sole tool needed (Heath uses only 5.1 and common notions), and the missing intermediate steps are expansions of a supported step, not a missing support relation. Q2 finds both proofs use the same backbone (5.1 as the sole citation) with the AI presenting a highly compressed version that omits the auxiliary construction and intermediate algebraic deductions Heath works through. Case A (same backbone, different depth) applies, yielding G.",
+  "jaccard": 1.0,
+  "ai_citations": "5.1",
+  "heath_citations": "5.1",
+  "ai_only": "",
+  "heath_only": "",
+  "audit_record": "CANDIDATE E -- 5.5\n  violated_claim : Applied to the wholes A, B and the subtracted parts C, D, [5.1] establishes that R is the same multiple of S that A is of B\n  failure_mode   : invalid_inference\n  missing_is     : expansion (5.1 is the correct tool used by Heath; the intermediate construction and algebraic steps are expansions of the 5.1 application, not independent support)\n  evidence       : AI text: \"Choose the direct application of 5.1, whose statement as supplied has exactly these hypotheses. Applied to the wholes A, B and the subtracted parts C, D, it establishes that R is the same multiple of S that A is of B.\" Heath proof of 5.1 shows it proves the additive combination of equimultiples, not the subtraction result.\n  why_not_terse  : RETRACTED -- missing_is = expansion; 5.1 is the key tool and the omitted steps are algebraic expansions using common notions, not an independent logical gap. Reclassified as NOT-E."
+}

@@ -1,0 +1,38 @@
+{
+  "proposition": "3.35",
+  "book": 3,
+  "statement": "If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.",
+  "heath_proof": "For in the circle ABCD let the two straight lines AC, BD cut one another at the point E; I say that the rectangle contained by AE, EC is equal to the rectangle contained by DE, EB. If now AC, BD are through the centre, so that E is the centre of the circle ABCD, it is manifest that, AE, EC, DE, EB being equal, the rectangle contained by AE, EC is also equal to the rectangle contained by DE, EB. Next let AC, DB not be through the centre; let the centre of ABCD be taken, and let it be F; from F let FG, FH be drawn perpendicular to the straight lines AC, DB, and let FB, FC, FE be joined. Then, since a straight line GF through the centre cuts a straight line AC not through the centre at right angles, it also bisects it; [III. 3]therefore AG is equal to GC. Since, then, the straight line AC has been cut into equal parts at G and into unequal parts at E, the rectangle contained by AE, EC together with the square on EG is equal to the square on GC; [II. 5] Let the square on GF be added; therefore the rectangle AE, EC together with the squares on GE, GF is equal to the squares on CG, GF. But the square on FE is equal to the squares on EG, GF, and the square on FC is equal to the squares on CG, GF; [I. 47] therefore the rectangle AE, EC together with the square on FE is equal to the square on FC.  And FC is equal to FB; therefore the rectangle AE, EC together with the square on EF is equal to the square on FB. For the same reason, also, the rectangle DE, EB together with the square on FE is equal to the square on FB. But the rectangle AE, EC together with the square on FE was also proved equal to the square on FB; therefore the rectangle AE, EC together with the square on FE is equal to the rectangle DE, EB together with the square on FE. Let the square on FE be subtracted from each; therefore the rectangle contained by AE, EC which remains is equal to the rectangle contained by DE, EB.",
+  "ai_proof_text": "3.35\n**Statement:** If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.\n\n**Step 1.** Let ABCD be a circle, and let AC and BD be two straight lines cutting one another at the point E within the circle. We must show that the rectangle AE by EC equals the rectangle BE by ED.\n\n**Step 2.** Case 1: Suppose both AC and BD pass through the centre F of the circle. Then E coincides with F, and AE, EC, BE, ED are all radii of the circle. Since AE = EC and BE = ED, and all four are equal to the radius, the rectangle AE by EC equals the rectangle BE by ED. [D1.15, D1.17]\n\n**Step 3.** Case 2: Suppose AC passes through the centre F, but BD does not pass through the centre. Drop a perpendicular FG from F to BD. By 3.3, FG bisects BD, so BG = GD. [3.3, 1.12]\n\n**Step 4.** Since the straight line AC is bisected at F and cut unequally at E, by 2.5 the rectangle AE by EC together with the square on FE equals the square on FC. [2.5]\n\n**Step 5.** But FC is a radius of the circle, and since B is on the circle, FB is also a radius, so FC = FB. Therefore the square on FE plus the rectangle AE by EC equals the square on FB. [D1.15]\n\n**Step 6.** Now in the right triangle FGE (with the right angle at G), by 1.47 the square on FE equals the square on FG plus the square on GE. [1.47]\n\n**Step 7.** Also in right triangle FGB, by 1.47 the square on FB equals the square on FG plus the square on GB. [1.47]\n\n**Step 8.** Substituting into the equation from Step 4: the rectangle AE by EC plus the square on FG plus the square on GE equals the square on FG plus the square on GB. [CN2]\n\n**Step 9.** Subtracting the square on FG from both sides, the rectangle AE by EC plus the square on GE equals the square on GB. [CN3]\n\n**Step 10.** Since BD is bisected at G and cut unequally at E, by 2.5 the rectangle BE by ED plus the square on GE equals the square on GB. [2.5]\n\n**Step 11.** Therefore the rectangle AE by EC plus the square on GE equals the rectangle BE by ED plus the square on GE. [CN1]\n\n**Step 12.** Subtracting the square on GE from both sides, the rectangle AE by EC equals the rectangle BE by ED. [CN3]\n\n**Step 13.** Case 3: Suppose neither AC nor BD passes through the centre F. Draw the diameter FKEF' through E and the centre F (that is, the straight line through F and E, meeting the circle at K and K'). [P1, 3.1]\n\n**Step 14.** Since KK' is a diameter passing through the centre and BD does not pass through the centre, and they intersect at E, by Case 2 the rectangle KE by EK' equals the rectangle BE by ED.\n\n**Step 15.** Similarly, since KK' passes through the centre and AC does not, by Case 2 the rectangle KE by EK' equals the rectangle AE by EC.\n\n**Step 16.** Therefore the rectangle AE by EC equals the rectangle BE by ED. [CN1]\n\n**Step 17.** In all cases, if in a circle two straight lines cut one another, the rectangle contained by the segments of the one equals the rectangle contained by the segments of the other. Q.E.D.\n\n**USED:** 1.12, 1.47, 2.5, 3.1, 3.3, CN1, CN2, CN3, D1.15, D1.17, P1\n**Human refs (from References field):** 1.47, 2.5, 3.3\n**Jaccard:** 0.273 — AI adds ['1.12', '3.1', 'CN1', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.5",
+    "3.1",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.5",
+    "3.3"
+  ],
+  "ai_only": [
+    "1.12",
+    "3.1",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let ABCD be a circle, and let AC and BD be two straight lines cutting one another at the point E within the circle. We must show that the rectangle AE by EC equals the rectangle BE by ED. "
+}

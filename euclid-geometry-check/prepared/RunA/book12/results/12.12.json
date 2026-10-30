@@ -1,0 +1,36 @@
+{
+  "proposition": "12.12",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A is a cone/cylinder with base circle diameter d1 and height h1; B is a similar cone/cylinder with diameter d2 and height h2; similarity (D11.24) gives d1:d2 = h1:h2",
+      "type": "solid_geometry_setup"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Auxiliary cone/cylinder C is constructed with the same base as B (diameter d2) and the same height as A (h1); A and C share height h1",
+      "type": "solid_construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "A and C have the same height h1, so 12.11 applies to compare them via their bases",
+      "type": "same_height_comparison"
+    },
+    {
+      "step": "Step 4",
+      "claim": "C and B share the same base circle (diameter d2) but have different heights (h1 vs h2)",
+      "type": "same_base_comparison"
+    },
+    {
+      "step": "Step 5",
+      "claim": "m copies of cylinder(d2, h1) stacked along the axis form cylinder(d2, m*h1); cylinders on the same base can be decomposed into congruent stacked copies",
+      "type": "solid_decomposition"
+    }
+  ],
+  "configuration_map": "The configuration involves three solids: A (base diameter d1, height h1), B (base diameter d2, height h2, similar to A), and auxiliary solid C (base diameter d2, height h1). C serves as a bridge: it shares its height with A (enabling comparison via 12.11) and its base with B (enabling comparison via the stacking/equimultiple argument). The proportional magnitudes e1 and e2 are abstract third proportionals, not geometric objects. The only spatial operations are: (1) constructing C with specified dimensions, (2) stacking congruent cylinders along an axis. No complex geometric configurations, no interior/exterior point claims, no angle decompositions.",
+  "pass_reason": "The proof is primarily a proportionality argument with minimal geometric configuration claims. The spatial elements (constructing auxiliary solid C, stacking cylinders for the equimultiple argument) are straightforward and mutually consistent. There are no angle decompositions, no point-inside/outside claims, no ray orderings, and no betweenness claims -- none of the error patterns the protocol targets. All spatial claims are compatible with each other."
+}

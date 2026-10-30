@@ -1,0 +1,61 @@
+{
+  "proposition": "13.10",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "M is the foot of the perpendicular from center N to chord BC, lying on BC with BM = MC = p/2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "G lies on the circle on the minor arc BC, on the line NM extended; G is the midpoint of minor arc BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Arc BG = arc GC = 1/10 of circle, so BG = GC = d (decagon side)",
+      "type": "arc_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Vertex E is the midpoint of the major arc BC (at 2/5 from B along the major arc spanning 4/5); E is diametrically opposite G, making GE a diameter",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "G, N, M, E are collinear on the perpendicular to BC through N, with M between G and E",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle GBE is a right angle (inscribed in semicircle on diameter GE)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle GBE is right-angled at B; BE is a diagonal of the pentagon subtending 2/5 of the circle",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Chords GE and BC intersect at M; by intersecting chords theorem GM * ME = BM * MC = (p/2)^2",
+      "type": "intersection_claim"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Triangle GMB is right-angled at M (since GM perpendicular to BC at M)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Triangle EMB is right-angled at M (since EM perpendicular to BC at M)",
+      "type": "angle_claim"
+    }
+  ],
+  "configuration_map": "Circle with center N, radius r. Pentagon ABCDE inscribed with vertices equally spaced (each arc = 1/5 of circle). M is the midpoint of chord BC (foot of perpendicular from N). G is the midpoint of minor arc BC (on the circle, collinear with N and M). E (pentagon vertex) is the midpoint of major arc BC, diametrically opposite G. Thus GE is a diameter passing through N and M, perpendicular to BC at M. The collinear order on line GE is G, M, N, E. Triangle GBE is right-angled at B (Thales). BM is the altitude from B to hypotenuse GE in this right triangle, creating two sub-right-triangles GMB and EMB (both right-angled at M). The intersecting chords GE and BC meet at M.",
+  "pass_reason": "All spatial claims are mutually consistent. The identification of E as diametrically opposite G is valid (midpoints of complementary arcs). The collinearity G-M-N-E follows from the perpendicular from center to chord passing through both arc midpoints. The three right angles (at B in triangle GBE from Thales, at M in triangles GMB and EMB from the perpendicularity) are compatible: BM is the altitude from the right-angle vertex B to hypotenuse GE. The intersecting chords theorem at M is correctly applied. The algebraic derivation in Steps 12-17 follows validly from the geometric identities established in Steps 1-11, and the final result p^2 = r^2 + d^2 is numerically verified."
+}

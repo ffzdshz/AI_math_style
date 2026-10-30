@@ -1,0 +1,26 @@
+{
+  "proposition": "10.26",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "H lies between E and G on a line, so EG = EH + HG and the rectangle EF x HG equals AB - CD",
+      "type": "betweenness/collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Rectangles EF x EG, EF x EH, and EF x HG are formed by applying areas to the rational straight line EF",
+      "type": "area application"
+    },
+    {
+      "step": "Step 9",
+      "claim": "EG = EH + HG used to apply II.4: sq(EG) = sq(EH) + 2*rect(EH,HG) + sq(HG)",
+      "type": "betweenness/algebraic identity"
+    }
+  ],
+  "configuration_map": "Points E, H, G are collinear in that order on a single line, with H between E and G. EF is a rational straight line perpendicular to EG. Three rectangles share EF as a common side: EF x EG = AB (medial area), EF x EH = CD (medial area), EF x HG = AB - CD (rational area by assumption). Since AB > CD, HG is a positive length, confirming H strictly between E and G. All subsequent reasoning is algebraic (commensurability chains), not spatial.",
+  "pass_reason": "The geometric configuration is minimal — just collinear points E, H, G with a betweenness relation and rectangles applied to a perpendicular base EF. The betweenness claim (H between E and G) is consistent throughout the proof and is properly justified by AB exceeding CD. All substantive reasoning is algebraic, concerning commensurability and incommensurability of lengths and areas. No angle decompositions, no interior/exterior claims, no circle arguments — no possibility of spatial configuration contradiction."
+}

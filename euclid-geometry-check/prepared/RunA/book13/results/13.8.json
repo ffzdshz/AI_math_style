@@ -1,0 +1,86 @@
+{
+  "proposition": "13.8",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AC and BE are diagonals of regular pentagon ABCDE that intersect at point H inside the pentagon",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray AC falls between rays AB and AE at vertex A, so angle BAE = angle BAC + angle CAE (108 = 36 + 72)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray BE falls between rays BA and BC at vertex B, so angle ABC = angle ABE + angle EBC (108 = 36 + 72)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "H lies on segment AC, so ray AH = ray AC and angle HAE = angle CAE = 72 degrees",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "H lies on segment BE, so ray EH = ray EB and angle AEH = angle AEB = 36 degrees",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle AHE has angles 72, 36, 72, making it isosceles with HE = AE = side of pentagon",
+      "type": "triangle_angles"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H on AC means ray CH = ray CA, so angle BCH = angle BCA = 36 degrees",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H on BE means ray BH = ray BE, so angle HBC = angle EBC = 72 degrees",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle BHC has angles 72, 36, 72, making it isosceles with HC = BC = side of pentagon",
+      "type": "triangle_angles"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle ABH has angles 36, 36, 108 at vertices A, B, H respectively",
+      "type": "triangle_angles"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangles ABH and ABE are equiangular (both have angle set 36, 36, 108) and share the angle at B",
+      "type": "similar_triangles"
+    },
+    {
+      "step": "Step 11",
+      "claim": "In triangle ABH, angles at A and B both equal 36 degrees, so BH = AH (isosceles)",
+      "type": "triangle_angles"
+    },
+    {
+      "step": "Step 12",
+      "claim": "H is between B and E on segment BE, so BE = BH + HE",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Triangles ABC and ABH are equiangular (both have angle set 36, 36, 108) and share the angle at A",
+      "type": "similar_triangles"
+    },
+    {
+      "step": "Step 15",
+      "claim": "H is between A and C on segment AC, so AC = AH + HC",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Pentagon ABCDE is regular with all sides equal and all interior angles 108 degrees. Diagonals AC (from vertex A to vertex C) and BE (from vertex B to vertex E) intersect at point H inside the pentagon. H lies on segment AC between A and C, and on segment BE between B and E. From vertex A, ray AC lies between rays AB and AE. From vertex B, ray BE lies between rays BA and BC. Triangle AHE (angles 72, 36, 72) is isosceles with HE = AE. Triangle BHC (angles 72, 36, 72) is isosceles with HC = BC. Triangle ABH (angles 36, 36, 108) is isosceles with AH = BH. The configuration is fully consistent: all angle decompositions respect the betweenness relations established by the intersection point H, and all triangle formations are compatible with H lying on both diagonals simultaneously.",
+  "pass_reason": "All spatial claims are mutually consistent. The intersection point H is consistently treated as lying on both diagonals AC and BE throughout the proof. Every angle decomposition (at A and at B in Step 5) correctly has the middle ray between the outer rays given the regular pentagon geometry. All triangle formations (AHE, BHC, ABH) use angles that follow correctly from H being on both diagonals, and all applications of I.5, I.6, and VI.4 are made in configurations matching their prerequisites. No contradiction exists between any pair of spatial claims."
+}

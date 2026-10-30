@@ -1,0 +1,13 @@
+{
+  "proposition": "4.11",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the identical logical backbone: construct the isosceles triangle FGH via IV.10, inscribe an equiangular triangle ACD via IV.2, bisect angles ACD and CDA via I.9 to obtain five equal angles, apply III.26 (equal inscribed angles stand on equal arcs) and III.29 (equal arcs subtend equal chords) to prove the pentagon equilateral, then combine arcs and apply III.27 (equal arcs subtend equal inscribed angles) to prove it equiangular. The AI proof adds four over-citations not in Heath: P1 (postulate for joining lines), CN2 (common notion for adding equals to equals), D4.3 (definition of polygon inscribed in circle), and 1.32 (angle-sum theorem, listed in USED but never actually invoked in the proof steps). Heath uses the same underlying operations without explicitly citing these basic axioms and definitions. Since heath_only is empty and the ai_only items are all postulates, common notions, definitions, or phantom citations, this is a pure citation-depth difference with no backbone divergence, yielding category G.",
+  "jaccard": 0.6,
+  "ai_citations": "1.32|1.9|3.26|3.27|3.29|4.10|4.2|CN2|D4.3|P1",
+  "heath_citations": "1.9|3.26|3.27|3.29|4.10|4.2",
+  "ai_only": "1.32|CN2|D4.3|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

@@ -1,0 +1,35 @@
+{
+  "proposition": "11.8",
+  "book": 11,
+  "statement": "If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane.",
+  "heath_proof": "Let AB, CD be two parallel straight lines, and let one of them, AB, be at right angles to the plane of reference; I say that the remaining one, CD, will also be at right angles to the same plane. For let AB, CD meet the plane of reference at the points B, D, and let BD be joined; therefore AB, CD, BD are in one plane. [XI. 7] Let DE be drawn, in the plane of reference, at right angles to BD, let DE be made equal to AB, and let BE, AE, AD be joined. Now, since AB is at right angles to the plane of reference, therefore AB is also at right angles to all the straight lines which meet it and are in the plane of reference; [XI. Def. 3] therefore each of the angles ABD, ABE is right. And, since the straight line BD has fallen on the parallels AB, CD, therefore the angles ABD, CDB are equal to two right angles. [I. 29] But the angle ABD is right; therefore the angle CDB is also right; therefore CD is at right angles to BD. And, since AB is equal to DE, and BD is common, the two sides AB, BD are equal to the two sides ED, DB; and the angle ABD is equal to the angle EDB, for each is right; therefore the base AD is equal to the base BE. And, since AB is equal to DE, and BE to AD, the two sides AB, BE are equal to the two sides ED, DA respectively, and AE is their common base; therefore the angle ABE is equal to the angle EDA. But the angle ABE is right; therefore the angle EDA is also right; therefore ED is at right angles to AD. But it is also at right angles to DB; therefore ED is also at right angles to the plane through BD, DA. [XI. 4] Therefore ED will also make right angles with all the straight lines which meet it and are in the plane through BD, DA. But DC is in the plane through BD, DA, inasmuch as AB, BD are in the plane through BD, DA, [XI. 2] and DC is also in the plane in which AB, BD are. Therefore ED is at right angles to DC, so that CD is also at right angles to DE. But CD is also at right angles to BD. Therefore CD is set up at right angles to the two straight lines DE, DB which cut one another, from the point of section at D; so that CD is also at right angles to the plane through DE, DB. [XI. 4] But the plane through DE, DB is the plane of reference; therefore CD is at right angles to the plane of reference.",
+  "ai_proof_text": "11.8\n**Statement:** If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane.\n\n**Step 1.** Let AB and CD be two parallel straight lines, and let AB be at right angles to plane P. Let B be the point where AB meets plane P, and let D be the point where CD meets plane P. We are to show that CD is also at right angles to plane P.\n\n**Step 2.** Since AB is at right angles to plane P, AB makes right angles with all straight lines which meet it and are in plane P (D11.3). In particular, since BD is a straight line through B in plane P, angle ABD is a right angle.\n\n**Step 3.** Since AB and CD are parallel, by 11.7 the straight line BD joining a point on AB to a point on CD lies in the same plane as AB and CD. Call this plane Q. Thus A, B, D, and C all lie in plane Q.\n\n**Step 4.** In plane Q, AB is parallel to CD and BD is a transversal cutting them. By 1.29, the alternate angles ABD and CDB are equal. Since angle ABD is a right angle (Step 2), angle CDB is also a right angle. Therefore CD is at right angles to BD.\n\n**Step 5.** In plane P, at the point D, draw DE at right angles to BD (1.11), so that DE is a straight line through D in plane P perpendicular to BD.\n\n**Step 6.** Join BE (P1). Since BE is a straight line through B lying in plane P, and AB is at right angles to plane P, angle ABE is a right angle (D11.3).\n\n**Step 7.** In the right triangle ABE (right angle at B), by 1.47: the square on AE equals the sum of the squares on AB and BE.\n\n**Step 8.** In the right triangle BDE (right angle at D, since DE was drawn perpendicular to BD in Step 5), by 1.47: the square on BE equals the sum of the squares on BD and DE.\n\n**Step 9.** Substituting the result of Step 8 into Step 7: the square on AE equals the sum of the squares on AB, BD, and DE.\n\n**Step 10.** In the right triangle ABD (right angle at B, from Step 2), by 1.47: the square on AD equals the sum of the squares on AB and BD.\n\n**Step 11.** From Steps 9 and 10: the square on AE equals the sum of the square on AD and the square on DE.\n\n**Step 12.** Since the square on AE equals the sum of the squares on AD and DE, by 1.48 (the converse of the Pythagorean theorem), the angle ADE is a right angle. Therefore AD is at right angles to DE at D.\n\n**Step 13.** We now have two straight lines, BD and AD, both passing through D, such that DE is at right angles to each of them (BD perpendicular to DE by construction in Step 5, and AD perpendicular to DE by Step 12). Since BD and AD cut one another at D (they are distinct lines, as A is not on line BD because angle ABD is a right angle), by 11.4, DE is at right angles to the plane through BD and AD.\n\n**Step 14.** The plane through BD and AD is the plane through the three non-collinear points A, B, D, which is plane Q (since A, B, D are in plane Q by Step 3, and three non-collinear points determine a unique plane). Therefore DE is at right angles to plane Q.\n\n**Step 15.** Since CD lies in plane Q and passes through D (Step 3), and DE is at right angles to plane Q at D (Step 14), DE is at right angles to CD (D11.3).\n\n**Step 16.** We have now shown that CD is at right angles to two straight lines lying in plane P that meet at D: namely BD (Step 4) and DE (Step 15). Since BD and DE cut one another at D (they are distinct lines meeting at D, being perpendicular to each other by construction), by 11.4, CD is at right angles to the plane through BD and DE, which is plane P.\n\n**Step 17.** Therefore, if two straight lines are parallel and one of them is at right angles to any plane, the remaining one is also at right angles to the same plane. Q.E.D.\n\n**USED:** 1.11, 1.29, 1.47, 1.48, 11.4, 11.7, D11.3, P1\n**Human refs (from References field):** 1.29, 11.2, 11.4, 11.7, D11.3\n**Jaccard:** 0.444 — AI adds ['1.11', '1.47', '1.48', 'P1']; Human adds ['11.2']",
+  "ai_used": [
+    "1.11",
+    "1.29",
+    "1.47",
+    "1.48",
+    "11.4",
+    "11.7",
+    "D11.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.29",
+    "11.2",
+    "11.4",
+    "11.7",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.47",
+    "1.48",
+    "P1"
+  ],
+  "heath_only": [
+    "11.2"
+  ],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let AB and CD be two parallel straight lines, and let AB be at right angles to plane P. Let B be the point where AB meets plane P, and let D be the point where CD meets plane P. We are to "
+}

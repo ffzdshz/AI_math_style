@@ -1,0 +1,13 @@
+{
+  "proposition": "10.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs establish the same key backbone: the sum of squares on AB and BC is rational, twice the rectangle AB,BC is incommensurable with that sum, and therefore the square on AC (which equals the sum of squares plus twice the rectangle by 2.4) is incommensurable with a rational area and hence irrational. The difference lies in how the incommensurability of twice the rectangle with the sum of squares is established. Heath uses 10.11 (proportionality transfers incommensurability) directly on the proportion AB:BC = rect(AB,BC):sq(BC) to get that the rectangle is incommensurable with sq(BC), then chains through 10.6 and 10.13. The AI instead cites 10.21 (the rectangle of rationals commensurable in square only is medial/irrational) to characterize the rectangle as irrational, then reasons that twice an irrational area remains irrational and hence incommensurable with the rational sum of squares. Since 10.11 (the sole heath_only item) appears inside Heath's own proof of 10.21, the proof-tree containment test is satisfied: the AI cites 10.21 as a unit while Heath re-derives one of 10.21's internal steps inline. The ai_only items 10.12, D10.1.2, and D10.1.3 are over-citations making explicit what is implicit in the definition of rational lines and in the direct application of 10.15. This is a citation-depth difference, not a path difference, so the classification is G.",
+  "jaccard": 0.545,
+  "ai_citations": "10.12|10.13|10.15|10.16|10.21|10.6|2.4|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|10.13|10.15|10.16|10.6|2.4|D10.1.4",
+  "ai_only": "10.12|10.21|D10.1.2|D10.1.3",
+  "heath_only": "10.11",
+  "audit_record": ""
+}

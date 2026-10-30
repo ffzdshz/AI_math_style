@@ -1,0 +1,13 @@
+{
+  "proposition": "13.8",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Both proofs reach the same final conclusions (diagonals cut in extreme and mean ratio with greater segments equal to the pentagon side), and share key intermediate conclusions such as HE = AE via I.6, equiangularity of triangles ABH and ABE, and the resulting proportion via VI.4. However, the route to establishing the critical angle equalities diverges fundamentally: Heath circumscribes a circle about the pentagon (IV.14), uses SAS congruence (I.4) to show triangle ABE congruent to ABC, then employs arc reasoning (III.28, VI.33) to show angle EAC = 2 * angle BAC, deducing angle HAE = angle AHE. The AI instead computes all angles directly from the pentagon angle sum via I.32 and isosceles triangle properties (I.5), determining each interior angle as 3/5 of two right angles, then computing sub-angles arithmetically. The heath_only citations (1.4, 3.28, 4.14, 5.14, 6.33) represent this circumscribed-circle method chain and are not contained in any AI citation's proof tree; the AI simply takes an entirely different approach. Since these represent genuinely different methods rather than citation-depth differences, this is Case B (different backbone). Q3 confirms the AI's angle-arithmetic path is logically complete and valid, yielding classification D.",
+  "jaccard": 0.286,
+  "ai_citations": "1.32|1.5|1.6|6.4|CN1|CN3|CN5|D6.3|P1",
+  "heath_citations": "1.32|1.4|1.5|1.6|3.28|4.14|5.14|6.33|6.4",
+  "ai_only": "CN1|CN3|CN5|D6.3|P1",
+  "heath_only": "1.4|3.28|4.14|5.14|6.33",
+  "audit_record": ""
+}

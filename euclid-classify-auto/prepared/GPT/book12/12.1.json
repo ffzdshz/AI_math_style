@@ -1,0 +1,61 @@
+{
+  "proposition": "12.1",
+  "book": 12,
+  "statement": "Similar polygons inscribed in circles are to one another as the squares on the diameters.",
+  "heath_proof": "Let ABC, FGH be circles, let ABCDE, FGHKL be similar polygons inscribed in them, and let BM, GN be diameters of the circles; I say that, as the square on BM is to the square on GN, so is the polygon ABCDE to the polygon FGHKL. For let BE, AM, GL, FN be joined. Now, since the polygon ABCDE is similar to the polygon FGHKL, the angle BAE is equal to the angle GFL, and, as BA is to AE, so is GF to FL. [VI. Def. I] Thus BAE, GFL are two triangles which have one angle equal to one angle, namely the angle BAE to the angle GFL, and the sides about the equal angles proportional; therefore the triangle ABE is equiangular with the triangle FGL. [VI. 6] Therefore the angle AEB is equal to the angle FLG. But the angle AEB is equal to the angle AMB, for they stand on the same circumference; [III. 27] and the angle FLG to the angle FNG; therefore the angle AMB is also equal to the angle FNG. But the right angle BAM is also equal to the right angle GFN; [III. 31] therefore the remaining angle is equal to the remaining angle. [I. 32] Therefore the triangle ABM is equiangular with the triangle FGN. Therefore, proportionally, as BM is to GN, so is BA to GF. [VI. 4] But the ratio of the square on BM to the square on GN is duplicate of the ratio of BM to GN, and the ratio of the polygon ABCDE to the polygon FGHKL is duplicate of the ratio of BA to GF; [VI. 20] therefore also, as the square on BM is to the square on GN, so is the polygon ABCDE to the polygon FGHKL.",
+  "ai_proof_text": "12.1\n**Statement:** Similar polygons inscribed in circles are to one another as the squares on the diameters.\n\n**Step 1.** Let F and G be the given similar polygons, with consecutive corresponding vertices A, B, C and A′, B′, C′. These vertices lie on their respective circles [D4.3]. Join AC and A′C′ [P1].\n\n**Step 2.** By similarity of the polygons, AB:BC = A′B′:B′C′ and ∠ABC = ∠A′B′C′ [D6.1]. Hence triangles ABC and A′B′C′ are equiangular [6.6]. At least one of ∠BAC and ∠ACB is acute, since their sum is less than two right angles [1.17]. Reverse the labels A and C, and simultaneously A′ and C′, if necessary, so that ∠ACB and its equal corresponding angle ∠A′C′B′ are acute. This choice will permit a same-segment comparison without a supplementary-angle case.\n\n**Step 3.** Find the centres of the two circles [3.1]. Draw the straight lines from A and A′ through their respective centres, producing them to meet the circumferences again at D and D′. Thus AD and A′D′ are diameters [P1, P2, D1.17]. Join BD and B′D′ [P1].\n\n**Step 4.** Since ∠ACB is acute, C lies on the arc of the greater segment cut off by AB, and AB is not a diameter; the corresponding assertions hold for A′B′ and C′ [3.31]. Consequently D ≠ B and D′ ≠ B′. The angles ABD and A′B′D′ are right, being angles in semicircles [3.31]. Therefore ∠ADB and ∠A′D′B′ are acute [1.17], so D and D′ also lie on the arcs of the greater segments cut off by AB and A′B′ respectively [3.31]. Thus C and D belong to the same segment on AB, and C′ and D′ to the same segment on A′B′.\n\n**Step 5.** Angles in the same segment are equal, so ∠ADB = ∠ACB and ∠A′D′B′ = ∠A′C′B′ [3.21]. The angles on the right are equal by Step 2; hence ∠ADB = ∠A′D′B′ [CN1]. Also ∠ABD = ∠A′B′D′, since both are right [P4]. The remaining angles are equal by subtracting these equal angles from the two-right-angle sums of the triangles [1.32, CN3]. Thus triangles ABD and A′B′D′ are equiangular, and consequently AB:AD = A′B′:A′D′ [6.4]. Alternating gives\nAB:A′B′ = AD:A′D′ [5.16].\n\n**Step 6.** Describe squares S and T on AD and A′D′ respectively [1.46]. Their corresponding angles are equal, since all are right, and their corresponding adjacent-side ratios are equal, since the sides within each square are equal [D1.22, P4, D5.5]. Hence S and T are similar [D6.1].\n\n**Step 7.** Path choice: apply the four-line proportion theorem directly, since Step 5 supplies precisely its hypothesis. The polygons F and G are similar and similarly described on the homologous sides AB and A′B′, while the squares S and T are similar and similarly described on AD and A′D′. Therefore the proportion AB:A′B′ = AD:A′D′ gives F:G = S:T [6.22]. Since AD and A′D′ are diameters [D1.17], the similar polygons are to one another as the squares on the diameters, as required.\n\n**USED:** 1.17, 1.32, 1.46, 3.1, 3.21, 3.31, 5.16, 6.22, 6.4, 6.6, CN1, CN3, D1.17, D1.22, D4.3, D5.5, D6.1, P1, P2, P4\n**Human refs (from References field):** 1.32, 3.27, 3.31, 6.20, 6.4, 6.6, D6.1\n**Jaccard:** 0.227 — AI adds ['1.17', '1.46', '3.1', '3.21', '5.16', '6.22', 'CN1', 'CN3', 'D1.17', 'D1.22', 'D4.3', 'D5.5', 'P1', 'P2', 'P4']; Human adds ['3.27', '6.20']",
+  "ai_used": [
+    "1.17",
+    "1.32",
+    "1.46",
+    "3.1",
+    "3.21",
+    "3.31",
+    "5.16",
+    "6.22",
+    "6.4",
+    "6.6",
+    "CN1",
+    "CN3",
+    "D1.17",
+    "D1.22",
+    "D4.3",
+    "D5.5",
+    "D6.1",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.32",
+    "3.27",
+    "3.31",
+    "6.20",
+    "6.4",
+    "6.6",
+    "D6.1"
+  ],
+  "ai_only": [
+    "1.17",
+    "1.46",
+    "3.1",
+    "3.21",
+    "5.16",
+    "6.22",
+    "CN1",
+    "CN3",
+    "D1.17",
+    "D1.22",
+    "D4.3",
+    "D5.5",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [
+    "3.27",
+    "6.20"
+  ],
+  "jaccard": 0.227,
+  "proof_summary": "**Step 1.** Let F and G be the given similar polygons, with consecutive corresponding vertices A, B, C and A′, B′, C′. These vertices lie on their respective circles [D4.3]. Join AC and A′C′ [P1].  **"
+}

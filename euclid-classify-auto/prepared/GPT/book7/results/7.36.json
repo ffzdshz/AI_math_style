@@ -1,0 +1,13 @@
+{
+  "proposition": "7.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: find D = LCM(A,B) via 7.34, then compute LCM(D,C), show all three numbers measure the result, and prove minimality using 7.35. Heath splits into two cases depending on whether C measures D, while the AI gives a single unified argument that subsumes both cases (when C measures D, LCM(D,C) = D). The key intermediate conclusions are identical in both proofs. The ai_only citations (CN2, D7.5, D7.15) are all definitions and common notions that the AI cites explicitly in Step 3 to justify that A and B measure E, whereas Heath treats this transitivity of divisibility as obvious. This is classic over-citation with no change to the logical path, yielding a granularity difference.",
+  "jaccard": 0.4,
+  "ai_citations": "7.34|7.35|CN2|D7.15|D7.5",
+  "heath_citations": "7.34|7.35",
+  "ai_only": "CN2|D7.15|D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

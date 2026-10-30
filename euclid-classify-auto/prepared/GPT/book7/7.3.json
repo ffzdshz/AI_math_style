@@ -1,0 +1,30 @@
+{
+  "proposition": "7.3",
+  "book": 7,
+  "statement": "Given three numbers not prime to one another, to find their greatest common measure.",
+  "heath_proof": "Let A, B, C be the three given numbers not prime to one another; thus it is required to find the greatest common measure of A, B, C. For let the greatest common measure, D, of the two numbers A, B be taken; [VII. 2] then D either measures, or does not measure, C. First, let it measure it. But it measures A, B also; therefore D measures A, B, C; therefore D is a common measure of A, B, C. I say that it is also the greatest. For, if D is not the greatest common measure of A, B, C, some number which is greater than D will measure the numbers A, B, C. Let such a number measure them, and let it be E. Since then E measures A, B, C, it will also measure A, B; therefore it will also measure the greatest common measure of A, B. [VII. 2] But the greatest common measure of A, B is D; therefore E measures D, the greater the less: which is impossible. Therefore no number which is greater than D will measure the numbers A, B, C; therefore D is the greatest common measure of A, B, C.  Next, let D not measure C; I say first that C, D are not prime to one another. For, since A, B, C are not prime to one another, some number will measure them. Now that which measures A, B, C will also measure A, B, and will measure D, the greatest common measure of A, B. [VII. 2] But it measures C also; therefore some number will measure the numbers D, C; therefore D, C are not prime to one another. Let then their greatest common measure E be taken. [VII. 2] Then, since E measures D, and D measures A, B, therefore E also measures A, B. But it measures C also; therefore E measures A, B, C; therefore E is a common measure of A, B, C. I say next that it is also the greatest. For, if E is not the greatest common measure of A, B, C, some number which is greater than E will measure the numbers A, B, C. Let such a number measure them, and let it be F. Now, since F measures A, B, C, it also measures A, B; therefore it will also measure the greatest common measure of A, B. [VII. 2] But the greatest common measure of A, B is D; therefore F measures D. And it measures C also; therefore F measures D, C; therefore it will also measure the greatest common measure of D, C. [VII. 2] But the greatest common measure of D, C is E; therefore F measures E, the greater the less: which is impossible. Therefore no number which is greater than E will measure the numbers A, B, C; therefore E is the greatest common measure of A, B, C.",
+  "ai_proof_text": "7.3\n**Statement:** Given three numbers not prime to one another, to find their greatest common measure.\n\n**Step 1.** Let A, B, C be the three given numbers. Since they are not prime to one another, some number E, not merely the unit, measures all three. Our path is to reduce A and B while preserving their common measures, and then apply 7.2, the immediately available two-number construction, to the reduced number and C. [D7.12]\n\n**Step 2.** Starting with the pair A, B, whenever its entries are unequal, replace the greater by its excess over the less. This preserves exactly their common measures: a measure of both old entries measures the excess, because subtracting two collections of copies of that measure leaves a collection of such copies; conversely, a measure of the excess and the unchanged entry measures their sum, which is the old greater entry. Thus both the subtraction and its reversal preserve common measures. [D7.2, D7.5, CN3, CN2]\n\n**Step 3.** Continue until the two entries are equal, and call their common value D. This process terminates: the sum of the entries is a finite multitude of units and strictly decreases at each subtraction, while both entries remain positive. Moreover, E continues to measure both entries by Step 2, so the final D is a number, not a unit. [D7.2, CN5; Step 2]\n\n**Step 4.** Since D measures each of the two equal final entries once, reversing the subtractions shows that D measures A and B. Conversely, every common measure of A and B measures D, by following the subtractions forward. In particular, E measures D. These conclusions also hold immediately if A and B were equal at the outset. [D7.2, D7.5, CN2, CN3; Step 2]\n\n**Step 5.** E measures both D and C; therefore D and C are not prime to one another. By 7.2, find their greatest common measure G. This application includes the cases in which D and C are equal or one measures the other. [D7.12, 7.2; Steps 1 and 4]\n\n**Step 6.** G measures D, and D measures A and B. Each of A and B therefore consists of copies of D, each of which in turn consists of copies of G; consequently G measures A and B. It also measures C by its construction. Thus G is a common measure of all three given numbers. [D7.5, CN2, 7.2; Steps 4 and 5]\n\n**Step 7.** Let H be any common measure of A, B, C. Since H measures A and B, it measures D by Step 4; it also measures C. Hence H cannot exceed G, the greatest common measure of D and C. Therefore G is the greatest common measure of A, B, C, and it has been found. [7.2; Steps 4–6]\n\n**USED:** 7.2, CN2, CN3, CN5, D7.12, D7.2, D7.5\n**Human refs (from References field):** 7.2\n**Jaccard:** 0.143 — AI adds ['CN2', 'CN3', 'CN5', 'D7.12', 'D7.2', 'D7.5']",
+  "ai_used": [
+    "7.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.2"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A, B, C be the three given numbers. Since they are not prime to one another, some number E, not merely the unit, measures all three. Our path is to reduce A and B while preserving thei"
+}

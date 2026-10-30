@@ -1,0 +1,37 @@
+{
+  "proposition": "1.45",
+  "book": 1,
+  "statement": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+  "heath_proof": "Let ABCD be the given rectilineal figure and E the given rectilineal angle;thus it is required to construct, in the given angle E, a parallelogram equal to the rectilineal figure ABCD. Let DB be joined, and let the parallelogram FH be constructed equal to the triangle ABD, in the angle HKF which is equal to E; [I. 42]let the parallelogram GM equal to the triangle DBC be applied to the straight line GH, in the angle GHM which is equal to E. [I. 44] Then, since the angle E is equal to each of the angles HKF, GHM,the angle HKF is also equal to the angle GHM. [C. N. 1]  Let the angle KHG be added to each; therefore the angles FKH, KHG are equal to the angles KHG, GHM. But the angles FKH, KHG are equal to two right angles; [I. 29]therefore the angles KHG, GHM are also equal to two right angles. Thus, with a straight line GH, and at the point H on it, two straight lines KH, HM not lying on the same side make the adjacent angles equal to two right angles;therefore KH is in a straight line with HM. [I. 14] And, since the straight line HG falls upon the parallels KM, FG, the alternate angles MHG, HGF are equal to one another. [I. 29] Let the angle HGL be added to each;therefore the angles MHG, HGL are equal to the angles HGF, HGL. [C. N. 2] But the angles MHG, HGL are equal to two right angles; [I. 29] therefore the angles HGF, HGL are also equal to two right angles. [C. N. 1]Therefore FG is in a straight line with GL. [I. 14] And, since FK is equal and parallel to HG, [I. 34] and HG to ML also,   KF is also equal and parallel to ML; [C. N. 1; I. 30] and the straight lines KM, FL join them (at their extremities);therefore KM, FL are also equal and parallel. [I. 33] Therefore KFLM is a parallelogram. And, since the triangle ABD is equal to the parallelogram FH, and DBC to GM,  the whole rectilineal figure ABCD is equal to the whole parallelogram KFLM. Therefore the parallelogram KFLM has been constructed equal to the given rectilineal figure ABCD, in the angle FKM which is equal to the given angle E.",
+  "ai_proof_text": "1.45\n**Statement:** To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.\n\n**Step 1.** Let ABCDE be the given rectilineal figure (illustrated as a polygon; the argument works for any number of sides) and let angle F be the given rectilineal angle. We must construct a parallelogram equal to ABCDE in angle F.\n\n**Step 2.** Draw diagonals AC and AD from vertex A, dividing the figure ABCDE into triangles: triangle ABC, triangle ACD, and triangle ADE [P1].\n\n**Step 3.** By Proposition 1.42, construct parallelogram GHKL equal to triangle ABC in the given angle F, so that GH is one of its sides. Then parallelogram GHKL equals triangle ABC [1.42].\n\n**Step 4.** By Proposition 1.44, to the straight line HK, in the angle GHM which equals angle F, apply the parallelogram HKMN equal to triangle ACD. Since the angle at H in both parallelograms equals angle F, and GH and HN lie along the same direction, the side GH is in a straight line with HN [1.14, 1.29]. Likewise KL is in a straight line with KM, since KL is parallel to GH, and KM is parallel to HN, and GH is in a straight line with HN, so KL is in a straight line with KM [1.30, 1.14, 1.29].\n\n**Step 5.** By Proposition 1.44 again, to the straight line KM (which is in a straight line with KL), in the angle MKP which equals angle F, apply the parallelogram KMPO equal to triangle ADE. By the same reasoning as in Step 4, HN is in a straight line with NO, and LM is in a straight line with MP [1.44, 1.14, 1.29, 1.30].\n\n**Step 6.** Now GLPO is a parallelogram: GL and OP are parallel (since GL lies along the line through KL-KM-MP extended, and OP lies along the opposite side), and GP and LO are parallel (since they connect corresponding endpoints of parallel sides). Moreover, angle GLP equals angle F, since angle GLK equals angle F from the original construction, and KL-KM-MP form a single straight line, giving angle GLP equal to angle F [1.34, 1.29, 1.30].\n\n**Step 7.** Now parallelogram GHKL equals triangle ABC [Step 3], parallelogram HKMN equals triangle ACD [Step 4], and parallelogram KMPO equals triangle ADE [Step 5].\n\n**Step 8.** Therefore the whole parallelogram GLPO equals triangle ABC together with triangle ACD together with triangle ADE [CN2].\n\n**Step 9.** But triangle ABC together with triangle ACD together with triangle ADE equals the rectilineal figure ABCDE, since these triangles exactly compose it [CN2].\n\n**Step 10.** Therefore parallelogram GLPO equals the rectilineal figure ABCDE, and it has been constructed in the given angle F [CN1].\n\n**Step 11.** Hence, in the given rectilineal angle, a parallelogram has been constructed equal to the given rectilineal figure, which is what was required to do. Q.E.F.\n\n**USED:** 1.14, 1.29, 1.30, 1.34, 1.42, 1.44, CN1, CN2, P1\n**Human refs (from References field):** 1.14, 1.29, 1.30, 1.33, 1.34, 1.42, 1.44, CN1, CN2\n**Jaccard:** 0.800 — AI adds ['P1']; Human adds ['1.33']",
+  "ai_used": [
+    "1.14",
+    "1.29",
+    "1.30",
+    "1.34",
+    "1.42",
+    "1.44",
+    "CN1",
+    "CN2",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.29",
+    "1.30",
+    "1.33",
+    "1.34",
+    "1.42",
+    "1.44",
+    "CN1",
+    "CN2"
+  ],
+  "ai_only": [
+    "P1"
+  ],
+  "heath_only": [
+    "1.33"
+  ],
+  "jaccard": 0.8,
+  "proof_summary": "**Step 1.** Let ABCDE be the given rectilineal figure (illustrated as a polygon; the argument works for any number of sides) and let angle F be the given rectilineal angle. We must construct a paralle"
+}

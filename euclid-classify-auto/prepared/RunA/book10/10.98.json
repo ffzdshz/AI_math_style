@@ -1,0 +1,51 @@
+{
+  "proposition": "10.98",
+  "book": 10,
+  "statement": "The square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome.",
+  "heath_proof": "Let AB be a first apotome of a medial straight line and CD a rational straight line, and to CD let there be applied CE equal to the square on AB, producing CF as breadth; I say that CF is a second apotome. For let BG be the annex to AB;. therefore AG, GB are medial straight lines commensurable in square only which contain a rational rectangle. [X. 74] To CD let there be applied CH equal to the square on AG, producing CK as breadth, and KL equal to the square on GB, producing KM as breadth; therefore the whole CL is equal to the squares on AG, GB; therefore CL is also medial. [X. 15 and 23] And it is applied to the rational straight line CD, producing CM as breadth; therefore CM is rational and incommensurable in length with CD. [X. 22] Now, since CL is equal to the squares on AG, GB, and, in these, the square on AB is equal to CE, therefore the remainder, twice the rectangle AG, GB, is equal to FL. [II. 7] But twice the rectangle AG, GB is rational; therefore FL is rational. And it is applied to the rational straight line FE, producing FM as breadth; therefore FM is also rational and commensurable in length with CD. [X. 20] Now, since the sum of the squares on AG, GB, that is, CL, is medial, while twice the rectangle AG, GB, that is, FL, is rational, therefore CL is incommensurable with FL. But, as CL is to FL, so is CM to FM; [VI. 1] therefore CM is incommensurable in length with FM. [X. 11] And both are rational; therefore CM, MF are rational straight lines commensurable in square only; therefore CF is an apotome. [X. 73] I say next that it is also a second apotome. For let FM be bisected at N, and let NO be drawn through N parallel to CD; therefore each of the rectangles FO, NL is equal to the rectangle AG, GB. Now, since the rectangle AG, GB is a mean proportional between the squares on AG, GB, and the square on AG is equal to CH, the rectangle AG, GB to NL, and the square on BG to KL, therefore NL is also a mean proportional between CH, KL; therefore, as CH is to NL, so is NL to KL. But, as CH is to NL, so is CK to NM, and, as NL is to KL, so is NM to MK; [VI. 1] therefore, as CK is to NM, so is NM, so is KM; [V. 11] therefore the rectangle CK, KM is equal to the square on NM [VI. 17], that is, to the fourth part of the square on FM. Since the CM, MF are two unequal straight lines, and the rectangle CK, KM equal to the fourth part of the square on MF and deficient by a square figure has been applied to the greater, CM, and divides it into commensurable parts, therefore the square on CM is greater than the square on MF by the square on a straight line commensurable in length with CM. [X. 17] And the annex FM is commensurable in length with the rational straight line CD set out; therefore CF is a second apotome. [X. Deff. III. 2]",
+  "ai_proof_text": "10.98\n**Statement:** The square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome.\n\n**Step 1.** Let AB be a first apotome of a medial straight line, and let sigma be a rational straight line. Let AB applied to sigma produce breadth gamma, so that sigma * gamma = sq(AB). We must show that gamma is a second apotome.\n\n**Step 2.** Since AB is a first apotome of a medial straight line, let AB = w - x, where w and x are medial straight lines commensurable in square only, and the rectangle w * x is rational [10.74]. Here w is the whole and x is the annex.\n\n**Step 3.** By 2.7, sq(AB) = sq(w) + sq(x) - 2 * rect(w, x). Apply this area to the rational straight line sigma: let sigma * delta = sq(w) + sq(x), and let sigma * epsilon = 2 * rect(w, x), so that gamma = delta - epsilon, i.e., sigma * gamma = sigma * delta - sigma * epsilon.\n\n**Step 4.** Since w and x are medial and commensurable in square only, sq(w) and sq(x) are medial areas [D10.1.4]. Since w and x are commensurable in square, sq(w) is commensurable with sq(x) [D10.1.2]. Therefore sq(w) + sq(x) is commensurable with sq(w) [10.15], and hence sq(w) + sq(x) is a medial area [10.23 applied to areas, or equivalently since it is commensurable with a medial area it is medial by 10.15 and D10.1.4].\n\n**Step 5.** Since sq(w) + sq(x) is medial and sigma is rational, the breadth delta (where sigma * delta = sq(w) + sq(x)) is rational and incommensurable in length with sigma [10.22].\n\n**Step 6.** Since rect(w, x) is rational [from Step 2], 2 * rect(w, x) is also rational [10.15, as it is commensurable with the rational area rect(w, x)]. Since 2 * rect(w, x) is rational and sigma is rational, the breadth epsilon (where sigma * epsilon = 2 * rect(w, x)) is rational and commensurable in length with sigma [10.20].\n\n**Step 7.** Since delta is rational and incommensurable in length with sigma, while epsilon is rational and commensurable in length with sigma, it follows that delta and epsilon are incommensurable in length [10.13]. Since both delta and epsilon are rational, and they are incommensurable in length, they are commensurable in square only. Therefore gamma = delta - epsilon is an apotome [10.73].\n\n**Step 8.** We now identify the order of this apotome. Since sigma * delta = sq(w) + sq(x) and sigma * epsilon = 2 * rect(w, x), we have delta : epsilon = (sq(w) + sq(x)) : 2 * rect(w, x) [6.1].\n\n**Step 9.** Now sq(w) > sq(x) (since w > x, as w and x are commensurable in square only and w is the whole from which x is subtracted). Write sq(w) = sq(x) + sq(f) for some straight line f. Since w and x are medial and commensurable in square only, and rect(w, x) is rational, by 10.14 and the construction in 10.31 (which finds such medial lines), we can analyze sq(w) - sq(x). Since sq(w) and sq(x) are commensurable (as shown in Step 4), sq(w) - sq(x) is commensurable with sq(w) [10.15]. Hence sq(f) is commensurable with sq(w), so f is commensurable in square with w.\n\n**Step 10.** We must show that sq(delta) > sq(epsilon) by the square on a line commensurable with delta. Since delta : epsilon = (sq(w) + sq(x)) : 2 * rect(w, x), and since sq(w) is commensurable with sq(x), we have sq(w) + sq(x) commensurable with sq(w). Also 2 * rect(w, x) is a definite magnitude. By the proportionality sigma * delta = sq(w) + sq(x) and sigma * epsilon = 2 * rect(w, x), these areas determine delta and epsilon. Since w and x are commensurable in square only with sq(w) > sq(x) by the square on a line commensurable with w (Step 9), by 10.14, the corresponding proportional relationship transfers: sq(delta) > sq(epsilon) by the square on a line commensurable with delta.\n\n**Step 11.** From Step 6, epsilon is commensurable in length with sigma, so the annex epsilon of the apotome gamma = delta - epsilon is commensurable in length with the rational straight line sigma.\n\n**Step 12.** From Step 5, delta is incommensurable in length with sigma, so the whole delta of the apotome is not commensurable in length with sigma.\n\n**Step 13.** By definition D10.3.2, since gamma = delta - epsilon is an apotome where: (i) the annex epsilon is commensurable in length with the rational straight line sigma, and (ii) sq(delta) > sq(epsilon) by the square on a straight line commensurable with delta, it follows that gamma is a second apotome.\n\n**Step 14.** Therefore the square on a first apotome of a medial straight line, applied to a rational straight line, produces as breadth a second apotome. Q.E.D.\n\n**USED:** 10.13, 10.14, 10.15, 10.20, 10.22, 10.23, 10.73, 10.74, 2.7, 6.1, D10.1.2, D10.1.4, D10.3.2\n**Human refs (from References field):** 10.11, 10.15, 10.17, 10.20, 10.22, 10.23, 10.73, 10.74, 2.7, 5.11, 6.1, 6.17, D10.3.2\n**Jaccard:** 0.529 — AI adds ['10.13', '10.14', 'D10.1.2', 'D10.1.4']; Human adds ['10.11', '10.17', '5.11', '6.17']",
+  "ai_used": [
+    "10.13",
+    "10.14",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.73",
+    "10.74",
+    "2.7",
+    "6.1",
+    "D10.1.2",
+    "D10.1.4",
+    "D10.3.2"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.15",
+    "10.17",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.73",
+    "10.74",
+    "2.7",
+    "5.11",
+    "6.1",
+    "6.17",
+    "D10.3.2"
+  ],
+  "ai_only": [
+    "10.13",
+    "10.14",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.17",
+    "5.11",
+    "6.17"
+  ],
+  "jaccard": 0.529,
+  "proof_summary": "**Step 1.** Let AB be a first apotome of a medial straight line, and let sigma be a rational straight line. Let AB applied to sigma produce breadth gamma, so that sigma * gamma = sq(AB). We must show "
+}

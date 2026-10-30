@@ -1,0 +1,32 @@
+{
+  "proposition": "3.10",
+  "book": 3,
+  "statement": "A circle does not cut a circle at more points than two.",
+  "heath_proof": "For, if possible, let the circle ABC cut the circle DEF at more points than two, namely B, C, F, H; let BH, BG be joined and bisected at the points K, L, and from K, L let KC, LM be drawn at right angles to BH, BG and carried through to the points A, E. Then, since in the circle ABC a straight line AC cuts a straight line BH into two equal parts and at right angles, the centre of the circle ABC is on AC. [III. 1]  Again, since in the same circle ABC a straight line NO cuts a straight line BG into two equal parts and at right angles, the centre of the circle ABC is on NO. But it was also proved to be on AC, and the straight lines AC, NO meet at no point except at P; therefore the point P is the centre of the circle ABC. Similarly we can prove that P is also the centre of the circle DEF; therefore the two circles ABC, DEF which cut one another have the same centre P: which is impossible. [III. 5]",
+  "ai_proof_text": "3.10\n**Statement:** A circle does not cut a circle at more points than two.\n\n**Step 1.** Suppose, for a contradiction, that two circles Γ and Δ cut one another at three distinct points A, B, and C. Find their centres O and T respectively. Since the circles cut one another, O and T are distinct. [3.1, 3.5]\n\n**Step 2.** Join TA, TB, TC, and OT. Because A, B, and C lie on the circumference of Δ and T is its centre, TA = TB = TC. The direct path is therefore to apply the bounds on the number of equal straight lines drawn from a point to a circle, distinguishing the position of T relative to Γ. [P1, D1.15]\n\n**Step 3.** First suppose that T lies within or on the circumference of Γ. Produce the straight line OT to obtain a diameter of Γ; T lies on this diameter and is not its centre O. Proposition 3.7 applies to a point on a diameter other than the centre, including the endpoint case in its stated hypothesis, and permits at most two equal straight lines from that point to the circumference. The three distinct straight lines TA, TB, and TC contradict this bound. [P2, D1.17, 3.7; Step 2]\n\n**Step 4.** Alternatively, suppose that T lies outside Γ. Produce TO through Γ, giving a straight line through its centre, and produce the other straight lines through the circle as necessary. Proposition 3.8 permits at most two equal straight lines from an exterior point to the circumference. Again, the three equal straight lines TA, TB, and TC contradict this bound. [P2, 3.8; Step 2]\n\n**Step 5.** Every possible position of T relative to Γ has led to a contradiction. Thus two circles cannot cut one another at three distinct points, and consequently a circle does not cut a circle at more points than two. [Steps 3–4]\n\n**USED:** 3.1, 3.5, 3.7, 3.8, D1.15, D1.17, P1, P2\n**Human refs (from References field):** 3.1, 3.5\n**Jaccard:** 0.250 — AI adds ['3.7', '3.8', 'D1.15', 'D1.17', 'P1', 'P2']",
+  "ai_used": [
+    "3.1",
+    "3.5",
+    "3.7",
+    "3.8",
+    "D1.15",
+    "D1.17",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "3.1",
+    "3.5"
+  ],
+  "ai_only": [
+    "3.7",
+    "3.8",
+    "D1.15",
+    "D1.17",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Suppose, for a contradiction, that two circles Γ and Δ cut one another at three distinct points A, B, and C. Find their centres O and T respectively. Since the circles cut one another, O a"
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "11.7",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB and CD are parallel straight lines lying in the same plane P",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is a point on AB; F is a point on CD; EF is a straight line joining them",
+      "type": "point position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E lies in plane P (since AB is in P and E is on AB)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "F lies in plane P (since CD is in P and F is on CD)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Both endpoints E and F of line EF lie in plane P",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "If EF not entirely in P, part of EF is in P and part in a more elevated plane (contradiction with 11.1)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 5",
+      "claim": "EF lies entirely in plane P",
+      "type": "plane membership"
+    }
+  ],
+  "configuration_map": "Single plane P contains parallel lines AB and CD. Point E is on AB (hence in P). Point F is on CD (hence in P). Line EF has both endpoints in P. All objects are consistently placed in or on plane P throughout the proof. No object is ever assigned to a conflicting location.",
+  "pass_reason": "All spatial claims are mutually consistent. Every object (lines AB, CD, points E, F, line EF) is placed in the same plane P, and no claim contradicts any other. The proof involves no angle decompositions, no inside/outside arguments, and no competing plane assignments. The difference from Heath (using 11.1 instead of 11.3) is a logical strategy choice, not a spatial configuration contradiction."
+}

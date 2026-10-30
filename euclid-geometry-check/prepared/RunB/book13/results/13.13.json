@@ -1,0 +1,71 @@
+{
+  "proposition": "13.13",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the midpoint of diameter AB (center of sphere); C lies on segment AB with AC = (2/3)AB, CB = (1/3)AB, giving the linear order A-O-C-B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A plane through C is perpendicular to AB; circle in that plane has center C and radius CD with sq(CD) = AC*CB = (2/9)*sq(AB)",
+      "type": "plane_perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies in the plane perpendicular to AB at C, so CD is perpendicular to AB",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Equilateral triangle DEF is inscribed in circle with center C and radius CD; C is the circumcenter of DEF with CE = CF = CD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle ACD has a right angle at C (CD perpendicular to AC since CD lies in the plane perpendicular to AB)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AD = AE = AF because for any point X on the circle, sq(AX) = sq(AC) + sq(CX) = sq(AC) + sq(CD), all equal",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AD = DE, so all six edges of tetrahedron ADEF are equal",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle BCD has a right angle at C (BC along AB, CD perpendicular to AB)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "BD is not equal to DE, so B is not a vertex of the regular tetrahedron; the tetrahedron is ADEF",
+      "type": "distance_inequality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "OC = AC - AO = (2/3)AB - (1/2)AB = (1/6)AB; O is between A and C on segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "CD perpendicular to OC (since OC is part of AB and CD is perpendicular to AB)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 11",
+      "claim": "OD = OE = OF = OA = (1/2)AB, so all four vertices A, D, E, F lie on the sphere",
+      "type": "point_on_sphere"
+    }
+  ],
+  "configuration_map": "Line AB is the diameter of the sphere with center O at midpoint (AO = OB = (1/2)AB). Point C lies on AB between O and B, with AC = (2/3)AB, CB = (1/3)AB, OC = (1/6)AB, giving the linear order A -- O -- C -- B. A plane perpendicular to AB passes through C. In this plane, a circle of center C and radius CD (where sq(CD) = (2/9)*sq(AB)) contains an inscribed equilateral triangle DEF. All of D, E, F are equidistant from C (distance CD) and lie in the perpendicular plane. Point A is the apex of tetrahedron ADEF, located at an endpoint of the diameter on the sphere surface. Every distance from A to a point on the circle uses the right angle at C: sq(AX) = sq(AC) + sq(CX). Every distance from O to a point on the circle uses the right angle at C: sq(OX) = sq(OC) + sq(CX). The configuration is fully determined by the single perpendicularity of the plane to AB at C, and all spatial claims derive consistently from this construction.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof's construction (perpendicular plane at C, circle in that plane, equilateral triangle DEF, apex A at diameter endpoint) is geometrically clean. Every perpendicularity claim derives from the single fact that the plane through C is perpendicular to AB. All distance computations (AD=DE, AE=AF=AD, OD=OA) follow correctly from right triangles at C. No angle decomposition issues arise since the proof uses no additive angle decompositions. No point is claimed to be in contradictory positions across different steps."
+}

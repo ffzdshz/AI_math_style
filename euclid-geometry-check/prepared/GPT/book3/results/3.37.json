@@ -1,0 +1,61 @@
+{
+  "proposition": "3.37",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A is a point outside the circle; secant from A meets circle at B (convex circumference) then C; D is on the circumference",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AT is tangent from A touching circle at T; O is the center of the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AT² = AD² (hence AT = AD) derived from 3.36 applied to secant AC and tangent AT, combined with hypothesis AC·AB = AD²",
+      "type": "equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "OT = OD as radii; angle OTA = 90° (tangent perpendicular to radius by 3.18)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "OA² = OT² + AT² by Pythagorean theorem (1.47) on right triangle OTA",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "OA² = OD² + AD² by substitution of equal quantities",
+      "type": "equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "O, A, D are not collinear — triangle OAD exists",
+      "type": "non_collinearity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle ODA = 90° by converse Pythagorean (1.48) in triangle OAD",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "DO produced through O is a diameter ending at D",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AD is perpendicular to the diameter at endpoint D, so AD falls outside the circle (3.16) and is tangent at D",
+      "type": "tangent_position"
+    }
+  ],
+  "configuration_map": "A is outside the circle throughout. B and C lie on the circle along the secant from A (B nearer to A on convex side). D is on the circumference; AD is the line to be proved tangent. T is an auxiliary tangent point on the circumference (from 3.17). O is the center. Key relationships: OT = OD (radii), AT = AD (from equal squares via 3.36 and hypothesis), angle OTA = 90° (tangent-radius perpendicularity), triangle OAD exists (non-collinearity proved by contradiction using 2.4), angle ODA = 90° (converse Pythagorean 1.48). The diameter through D and O is perpendicular to AD at D, placing AD outside the circle (3.16), confirming tangency.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof constructs an auxiliary tangent AT, uses 3.36 to establish AT = AD, applies the Pythagorean theorem (1.47) on right triangle OTA, substitutes equal quantities to get OA² = OD² + AD², proves non-collinearity of O-A-D, then applies the converse Pythagorean (1.48) to conclude angle ODA = 90°. Every spatial claim follows validly from the established configuration. The approach differs from Heath (who uses I.8 triangle congruence) but introduces no configuration contradictions."
+}

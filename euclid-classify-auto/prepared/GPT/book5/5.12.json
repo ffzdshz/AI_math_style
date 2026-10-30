@@ -1,0 +1,31 @@
+{
+  "proposition": "5.12",
+  "book": 5,
+  "statement": "If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.",
+  "heath_proof": "Let any number of magnitudes A, B, C, D, E, F be proportional, so that, as A is to B, so is C to D and E to F; I say that, as A is to B, so are A, C, E to B, D, F. For of A, C, E let equimultiples G, H, K be taken, and of B, D, F other, chance, equimultiples L, M, N. Then since, as A is to B, so is C to D, and E to F, and of A, C, E equimultiples G, H, K have been taken, and of B, D, F other, chance, equimultiples L, M, N, therefore, if G is in excess of L, H is also in excess of M, and K of N, if equal, equal, and if less, less; so that, in addition, if G is in excess of L, then G, H, K are in excess of L, M, N, if equal, equal, and if less, less. Now G and G, H, K are equimultiples of A and A, C, E, since, if any number of magnitudes whatever are respectively equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all. [V. 1] For the same reason L and L, M, N are also equimultiples of B and B, D, F; therefore, as A is to B, so are A, C, E to B, D, F. [V. Def. 5]",
+  "ai_proof_text": "5.12\n**Statement:** If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.\n\n**Step 1.** Let the antecedents be A₁, …, Aᵣ and their corresponding consequents B₁, …, Bᵣ, and write A = A₁ + ⋯ + Aᵣ and B = B₁ + ⋯ + Bᵣ. Fix any index j. By the hypothesis of proportionality, Aᵢ:Bᵢ = Aⱼ:Bⱼ for every i. [D5.6] **Path choice:** apply the equimultiple test directly, since the given equal ratios already supply the comparisons needed for the sums. [D5.5]\n\n**Step 2.** Take arbitrary positive whole numbers m and n. Repeated addition, grouping the copies of the summands into copies of their respective wholes, gives\nmA = mA₁ + ⋯ + mAᵣ,\nnB = nB₁ + ⋯ + nBᵣ.\nThus these sums are respectively the m-fold multiple of A and the n-fold multiple of B. [D5.2, CN2]\n\n**Step 3.** Since Aᵢ:Bᵢ = Aⱼ:Bⱼ, the comparison between mAᵢ and nBᵢ agrees with the comparison between mAⱼ and nBⱼ for every i. Consequently, if mAⱼ exceeds, equals, or falls short of nBⱼ, then every mAᵢ respectively exceeds, equals, or falls short of nBᵢ. [D5.5]\n\n**Step 4.** These comparisons pass to the wholes in Step 2. If all mAᵢ = nBᵢ, adding equals gives mA = nB. [CN2] If all mAᵢ > nBᵢ, write each mAᵢ as nBᵢ together with its positive excess. Adding these equal decompositions makes mA equal to nB together with the sum of those excesses; hence mA > nB. [CN2, CN5] If all mAᵢ < nBᵢ, the same argument with the roles reversed gives mA < nB. [CN2, CN5]\n\n**Step 5.** Because Aⱼ and Bⱼ have a ratio, some multiple of Aⱼ exceeds Bⱼ and some multiple of Bⱼ exceeds Aⱼ. Steps 3–4 give the corresponding exceedances for A and B, so these wholes also have a ratio. [D5.4] Moreover, for every choice of m and n, mAⱼ and mA alike exceed, alike equal, or alike fall short of nBⱼ and nB respectively. Therefore Aⱼ:Bⱼ = A:B. [D5.5] Since j was arbitrary, as any one antecedent is to its corresponding consequent, so are all the antecedents together to all the consequents together.\n\n**USED:** CN2, CN5, D5.2, D5.4, D5.5, D5.6\n**Human refs (from References field):** 5.1, D5.5\n**Jaccard:** 0.143 — AI adds ['CN2', 'CN5', 'D5.2', 'D5.4', 'D5.6']; Human adds ['5.1']",
+  "ai_used": [
+    "CN2",
+    "CN5",
+    "D5.2",
+    "D5.4",
+    "D5.5",
+    "D5.6"
+  ],
+  "heath_refs": [
+    "5.1",
+    "D5.5"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN5",
+    "D5.2",
+    "D5.4",
+    "D5.6"
+  ],
+  "heath_only": [
+    "5.1"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let the antecedents be A₁, …, Aᵣ and their corresponding consequents B₁, …, Bᵣ, and write A = A₁ + ⋯ + Aᵣ and B = B₁ + ⋯ + Bᵣ. Fix any index j. By the hypothesis of proportionality, Aᵢ:Bᵢ "
+}

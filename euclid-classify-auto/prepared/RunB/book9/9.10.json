@@ -1,0 +1,31 @@
+{
+  "proposition": "9.10",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be not square, neither will any other be square except the third from the unit and all those which leave out one.",
+  "heath_proof": "And, if the number after the unit be not cube, neither will any other be cube except the fourth from the unit and all those which leave out two. Let there be as many numbers as we please, A, B, C, D, E, F, beginning from an unit and in continued proportion, and let A, the number after the unit, not be square; I say that neither will any other be square except the third from the unit <and those which leave out one>. For, if possible, let C be square. But B is also square; [IX. 8] [therefore B, C have to one another the ratio which a square number has to a square number]. And, as B is to C, so is A to B; therefore A, B have to one another the ratio which a square number has to a square number; [so that A, B are similar plane numbers]. [VIII. 26, converse] And B is square; therefore A is also square: which is contrary to the hypothesis. Therefore C is not square. Similarly we can prove that neither is any other of the numbers square except the third from the unit and those which leave out one. Next, let A not be cube. I say that neither will any other be cube except the fourth from the unit and those which leave out two. For, if possible, let D be cube. Now C is also cube; for it is fourth from the unit. [IX. 8] And, as C is to D, so is B to C; therefore B also has to C the ratio which a cube has to a cube. And C is cube; therefore B is also cube. [VIII. 25] And since, as the unit is to A, so is A to B, and the unit measures A according to the units in it, therefore A also measures B according to the units in itself; therefore A by multiplying itself has made the cube number B. But, if a number by multiplying itself make a cube number, it is also itself cube. [IX. 6] Therefore A is also cube: which is contrary to the hypothesis. Therefore D is not cube. Similarly we can prove that neither is any other of the numbers cube except the fourth from the unit and those which leave out two.",
+  "ai_proof_text": "9.10\n**Statement:** If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be not square, neither will any other be square except the third from the unit and all those which leave out one.\n\n**Step 1.** Let there be as many numbers as we please, 1, A, A^2, A^3, A^4, ..., beginning from a unit and in continued proportion, and let A (the number after the unit) not be square. We must show that no term other than the third from the unit and those which leave out one (i.e., A^2, A^4, A^6, ...) is square.\n\n**Step 2.** By Proposition 9.8, the third from the unit, namely A^2, is square, as are all those which successively leave out one, namely A^4, A^6, and so on. These are precisely the even powers of A in the continued proportion.\n\n**Step 3.** We claim that no odd power of A (that is, A itself, A^3, A^5, A^7, ...) is square. First, A is not square by hypothesis.\n\n**Step 4.** Suppose for the sake of contradiction that some odd power A^k, with k >= 3 and k odd, is a square number.\n\n**Step 5.** Since k is odd, k - 1 is even and k - 1 >= 2. Therefore A^(k-1) is an even power of A, and by Proposition 9.8, A^(k-1) is a square number.\n\n**Step 6.** Now, A^k = A^(k-1) multiplied by A. Since A^k is square by our assumption, two numbers A^(k-1) and A have been multiplied together to produce a square number.\n\n**Step 7.** By Proposition 9.2, since A^(k-1) and A multiply to make a square number, A^(k-1) and A are similar plane numbers.\n\n**Step 8.** Since A^(k-1) is square, by Definition D7.18, A^(k-1) is equal multiplied by equal; that is, A^(k-1) = s * s for some number s, so A^(k-1) is a plane number with two equal sides s and s.\n\n**Step 9.** Since A^(k-1) and A are similar plane numbers, by Definition D7.21 their sides are proportional. Let A = p * q be the representation of A as a plane number with sides p and q. Then the sides of A^(k-1) are proportional to the sides of A, giving us s : p = s : q.\n\n**Step 10.** From the proportion s : p = s : q, since the same number s has the same ratio to both p and q, it follows that p = q.\n\n**Step 11.** Since A = p * q and p = q, we have A = p * p, so A is a square number by Definition D7.18. But this contradicts the hypothesis that A is not square.\n\n**Step 12.** Therefore our assumption in Step 4 is false, and no odd power of A is square. Combined with Step 2, the only square terms in the continued proportion from the unit are A^2, A^4, A^6, and so on -- that is, the third from the unit and all those which leave out one. This is what was to be proved.\n\n**USED:** 9.2, 9.8, D7.18, D7.21\n**Human refs (from References field):** 8.25, 8.26, 9.6, 9.8\n**Jaccard:** 0.143 — AI adds ['9.2', 'D7.18', 'D7.21']; Human adds ['8.25', '8.26', '9.6']",
+  "ai_used": [
+    "9.2",
+    "9.8",
+    "D7.18",
+    "D7.21"
+  ],
+  "heath_refs": [
+    "8.25",
+    "8.26",
+    "9.6",
+    "9.8"
+  ],
+  "ai_only": [
+    "9.2",
+    "D7.18",
+    "D7.21"
+  ],
+  "heath_only": [
+    "8.25",
+    "8.26",
+    "9.6"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please, 1, A, A^2, A^3, A^4, ..., beginning from a unit and in continued proportion, and let A (the number after the unit) not be square. We must show th"
+}

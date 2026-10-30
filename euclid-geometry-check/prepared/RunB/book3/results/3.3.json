@@ -1,0 +1,51 @@
+{
+  "proposition": "3.3",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "F is the centre of circle ABC and lies on line CD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E is the intersection of line CD and chord AB, lying between A and B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A and B lie on the circumference of circle ABC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FA and FB are radii, hence FA = FB",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangles FEA and FEB share side FE with E between A and B on line AB",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "FE stands on line AB making adjacent angles FEA and FEB at point E",
+      "type": "angle_configuration"
+    },
+    {
+      "step": "Step 5",
+      "claim": "CD passes through centre F and meets AB at E at right angles",
+      "type": "angle_configuration"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle FEA is right-angled at E; triangle FEB is right-angled at E",
+      "type": "angle_configuration"
+    }
+  ],
+  "configuration_map": "Circle ABC with centre F. Chord AB does not pass through centre. Line CD passes through centre F and intersects chord AB at point E. Point E lies between A and B on segment AB. Point F lies on line CD, off line AB. This creates two triangles FEA and FEB sharing the common side FE, with E as the vertex where lines CD and AB cross. The angles FEA and FEB are supplementary adjacent angles at E on line AB. All spatial positions are used consistently throughout both parts of the proof.",
+  "pass_reason": "The configuration is simple and all spatial claims are mutually consistent. E is consistently between A and B on the chord, F is consistently on line CD off line AB, and the two triangles FEA/FEB are well-formed. Part I correctly applies SSS (1.8) and Part II correctly applies the Pythagorean theorem (1.47) to right triangles at E. No angle decomposition issues arise since no angle is split into sub-angles. The AI's use of 1.47 instead of Heath's I.5+I.26 is a valid alternative with no spatial contradictions."
+}

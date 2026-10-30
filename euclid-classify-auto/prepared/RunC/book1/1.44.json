@@ -1,0 +1,36 @@
+{
+  "proposition": "1.44",
+  "book": 1,
+  "statement": "To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+  "heath_proof": "Let AB be the given straight line, C the given triangle and D the given rectilineal angle;thus it is required to apply to the given straight line AB, in an angle equal to the angle D, a parallelogram equal to the given triangle C. Let the parallelogram BEFG be constructed equal to the triangle C, in the angle EBG which is equal to D [I. 42];let it be placed so that BE is in a straight line with AB; let FG be drawn through to H, and let AH be drawn through A parallel to either BG or EF. [I. 31] Let HB be joined. Then, since the straight line HF falls upon the parallelsAH, EF, the angles AHF, HFE are equal to two right angles. [I. 29]Therefore the angles BHG, GFE are less than two right angles; and straight lines produced indefinitely from angles less thantwo right angles meet; [Post. 5] therefore HB, FE, when produced, will meet. Let them be produced and meet at K; through the point K let KL be drawn parallel to either EA or FH, [I. 31] and let HA, GB be produced to the points L, M. Then HLKF is a parallelogram, HK is its diameter, and AG, ME are parallelograms. and LB, BF the so-called complements, about HK; therefore LB is equal to BF. [I. 43] But BF is equal to the triangle C;therefore LB is also equal to C. [C. N. 1] And, since the angle GBE is equal to the angle ABM, [I. 15] while the angle GBE is equal to D, the angle ABM is also equal to the angle D. Therefore the parallelogram LB equal to the given triangleC has been applied to the given straight line AB, in the angle ABM which is equal to D.",
+  "ai_proof_text": "1.44\n**Statement:** To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.\n\n**Step 1.** Let AB be the given straight line, C the given triangle, and D the given rectilineal angle. By 1.42, construct the parallelogram BEFG equal to triangle C, with angle EBG equal to D. Place BEFG so that BE is in a straight line with AB, with B between A and E.\n\n**Step 2.** Produce the side GF of parallelogram BEFG to H, so that H is on the side of A (that is, H is on line GF produced beyond G). Through A draw AH parallel to BG by 1.31. Then AH is also parallel to EF, since in parallelogram BEFG the sides BG and EF are parallel (by 1.34). Since GF is parallel to BE (opposite sides of parallelogram BEFG, by 1.34), and ABE is a straight line, the line HGF is parallel to line ABE.\n\n**Step 3.** Join HB by P1. Since HGF is parallel to ABE, the transversal HB falling on these parallels makes the interior angles BHG and HBE. By 1.29, angle BHG plus angle HBE equals two right angles... but we need to consider HB and FE on the same side. Consider instead the two lines HB and FE, both meeting the parallel lines HGF and ABE. The transversal HGF crosses these lines at H and F. At H, the angle GHB is the angle between HG (going toward F along the upper parallel) and HB (going down toward B). At F, the angle GFE is the angle between FG (going toward H along the upper parallel) and FE (going down toward E). In parallelogram BEFG, angle GFE equals angle GBE (opposite angles are equal by 1.34), so angle GFE equals D. Now in parallelogram AHGB (which is a parallelogram since AH is parallel to BG and HG is parallel to AB), the diagonal HB lies strictly between sides HA and HG, so angle GHB is strictly less than angle GHA. Since AHGB is a parallelogram, angle GHA equals angle ABG (opposite angles, by 1.34), and angle ABG equals pi minus D (since angle ABG is supplementary to angle EBG on the straight line AE). Therefore angle GHB is strictly less than pi minus D. Thus angle GHB plus angle GFE is strictly less than (pi minus D) plus D, which equals two right angles. By Postulate 5, the lines HB and FE, when produced on the side of B and E, will meet. Call their meeting point K.\n\n**Step 4.** Through K draw KL parallel to AE by 1.31. Produce the line HA beyond A until it meets KL; call this meeting point L. Produce the line FE beyond E (through K, which is already on this line). Now FHLK is a parallelogram: FH is parallel to LK since FH lies along line HGF which is parallel to ABE, and KL is parallel to AE (which lies on ABE), so FH is parallel to KL. Also HL is parallel to FK since HL lies along the line HAL and FK lies along the line FEK, and AH is parallel to EF (established in Step 2), so their extensions HL and FK are parallel. Therefore FHLK is a parallelogram.\n\n**Step 5.** Now HK is a diagonal of parallelogram FHLK, and B lies on HK (since H, B, K are collinear by construction: K lies on HB produced). Through B, draw lines parallel to each pair of opposite sides of FHLK. The line through B parallel to FH (that is, parallel to HGF) is the line ABE, which meets side HL at A and side FK at E. The line through B parallel to HL (that is, parallel to AH, which is parallel to BG) is the line GBM, where G is on side FH and M is the point where BG produced meets side LK. These two lines through B, both passing through the point B on diagonal HK, divide parallelogram FHLK into four parallelograms. The two parallelograms about the diameter HK are HABG (containing vertex H of the diagonal) and BMKE (containing vertex K of the diagonal). The two complements are GFEB and ALMB.\n\n**Step 6.** By 1.43, the complements of the parallelograms about the diameter are equal. Therefore parallelogram GFEB equals parallelogram ALMB. But GFEB is the same as parallelogram BEFG, which was constructed equal to triangle C. Therefore parallelogram ALMB equals triangle C (by CN1).\n\n**Step 7.** The parallelogram ALMB has AB as one of its sides. It remains to show that the angle of ALMB at B equals angle D. Since A, B, E are collinear and G, B, M are collinear (B being the intersection of these two lines), the angles EBG and ABM are vertical angles. By 1.15, angle ABM equals angle EBG. But angle EBG equals D by construction. Therefore angle ABM equals D.\n\n**Step 8.** Therefore ALMB is a parallelogram applied to the given straight line AB, in the given angle D, equal to the given triangle C. This is what was required to be done.\n\n**USED:** 1.15, 1.29, 1.31, 1.34, 1.42, 1.43, CN1, P1, P2, P5\n**Human refs (from References field):** 1.15, 1.29, 1.31, 1.42, 1.43, CN1, P5\n**Jaccard:** 0.700 — AI adds ['1.34', 'P1', 'P2']",
+  "ai_used": [
+    "1.15",
+    "1.29",
+    "1.31",
+    "1.34",
+    "1.42",
+    "1.43",
+    "CN1",
+    "P1",
+    "P2",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.15",
+    "1.29",
+    "1.31",
+    "1.42",
+    "1.43",
+    "CN1",
+    "P5"
+  ],
+  "ai_only": [
+    "1.34",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.7,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, C the given triangle, and D the given rectilineal angle. By 1.42, construct the parallelogram BEFG equal to triangle C, with angle EBG equal to D. Place "
+}

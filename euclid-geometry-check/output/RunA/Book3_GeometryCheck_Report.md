@@ -1,0 +1,20 @@
+# Book 3 — Geometry Configuration Check (RunA)
+
+## Summary
+
+**Total propositions checked**: 6
+
+| Verdict | Count | Propositions |
+|---|---|---|
+| PASS | 6 | 3.9, 3.13, 3.15, 3.16, 3.24, 3.31 |
+| FAIL | 0 |  |
+| SKIP | 0 |  |
+
+## Passed Propositions
+
+- **3.9**: The proof is a clean indirect argument with minimal spatial content. The only geometric claims are that D is inside the circle and that three equal lines run from D to the circumference. The application of Proposition 3.7 is valid because any interior non-centre point lies on a diameter, satisfying 3.7's hypothesis. No angle decompositions, betweenness claims, or interior/exterior arguments are made, so there is no opportunity for the characteristic configuration contradiction patterns. All spatial claims are mutually consistent.
+- **3.13**: All spatial claims are mutually consistent. In Case I, the placement of A and B on opposite sides of G is the only valid configuration for two distinct equidistant points on a line, and the resulting algebra correctly forces centers to coincide. In Case II, both contact points being between G and H on the same ray from G at equal distances correctly forces them to coincide. The proof uses a different approach from Heath (3.12 instead of 3.2 and D3.3 for the external case) but the spatial reasoning is valid throughout.
+- **3.15**: All spatial claims are mutually consistent. Part 1 uses a valid triangle EFG (E off chord FG) with the triangle inequality. Part 2 uses well-defined perpendicular feet L and M on their respective chords, forming right triangles with equal hypotenuses (radii). The Pythagorean theorem argument correctly transfers the inequality EL < EM to LF > MH and then to FG > HK. No angle decomposition issues arise, no inside/outside contradictions exist, and every point position is used consistently throughout.
+- **3.16**: All spatial claims are mutually consistent. The proof has three main parts, each using proof by contradiction with valid spatial reasoning: (1) A point G on AE inside the circle creates a right triangle FAG where the hypotenuse FG must exceed FA, contradicting G being inside the circle -- geometrically sound since the right angle at A makes FG the hypotenuse. (2) An interposed line AH creates a right triangle FAK (K = foot of perpendicular from F to AH) where FA > FK, meaning the perpendicular distance from centre to AH is less than the radius, so AH must cut the circle -- the angle decomposition angle FAH = angle FAE - angle EAH is valid since ray AH lies between rays AB and AE. (3) Any line AC making an acute angle with AB enters the circle (by the tangent property from Part 1), so the arc extends beyond AC, establishing the angle comparison. No angle decomposition errors, no inside/outside contradictions, no betweenness inconsistencies.
+- **3.24**: The proof is a straightforward superposition argument with no conflicting spatial claims. All spatial assumptions are mutually consistent: the superposition correctly places equal chords on each other, the relocated segment is properly on the same side as the original, similarity is preserved under rigid motion, and 3.23 is correctly applied to all possible non-coincidence cases (inside, outside, or crossing). No angle decompositions, interior/exterior point arguments, or ray orderings are present that could introduce hidden contradictions.
+- **3.31**: All spatial claims are mutually consistent. The key angle decomposition (angle BAC = angle BAF + angle FAC) is valid because F lies on segment BC between B and C, placing ray AF between rays AB and AC from vertex A. The supplementary angle relation at F (angles BFA + AFC = 2R) is consistent with F being on line BC. The isosceles triangle properties, inscribed angle theorem (3.20), and cyclic quadrilateral theorem (3.22) are all applied with configurations matching the established positions of points. The mixed-angle arguments in Steps 16-19 are somewhat rambling in exposition but contain no contradictory spatial claims.

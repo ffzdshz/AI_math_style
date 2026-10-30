@@ -1,0 +1,31 @@
+{
+  "proposition": "10.112",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "BC is a line segment divided at point D, with BD the greater part and DC the lesser",
+      "type": "point-on-segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EF is a breadth produced by applying the square on A to BC (area application: BC x EF = A^2)",
+      "type": "area-application"
+    },
+    {
+      "step": "Step 3",
+      "claim": "L is a line segment equal to BD - DC",
+      "type": "length-definition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "BC x L = BD^2 - DC^2 by algebraic identity 2.5",
+      "type": "algebraic-identity"
+    }
+  ],
+  "configuration_map": "Point D on segment BC divides it into BD (greater term) and DC (lesser term). EF is a length defined by area application (BC x EF = A^2). L is a length equal to BD - DC. All other reasoning concerns commensurability ratios, rational areas, and proportions among these magnitudes. No complex geometric configuration is constructed — no points inside/outside figures, no angle decompositions, no ray orderings, no circle positions.",
+  "skip_reason": "The proof is purely algebraic/proportional, dealing entirely with Book 10 commensurability theory (rational lines, binomials, apotomes, commensurability in square, numerical ratios, and area commensurability). The only spatial elements are trivial 1D point-on-segment configurations and standard area applications. There are no geometric configuration claims (no interior/exterior points, no angle decompositions, no ray orderings, no circle positions) that could be checked for spatial consistency contradictions."
+}

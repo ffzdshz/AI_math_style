@@ -1,0 +1,39 @@
+{
+  "proposition": "8.4",
+  "book": 8,
+  "statement": "Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.",
+  "heath_proof": "Let the given ratios in least numbers be that of A to B,that of C to D, and that of E to F; thus it is required to find numbers in continued proportion which are the least that are in the ratio of A to B, in the ratio of C to D, and in the ratio of E to F. Let G, the least number measured by B, C, be taken. [VII. 34] And, as many times as B measures G, so many times also let A measure H, and, as many times as C measures G, so many times also let D measure K. Now E either measures or does not measure K. First, let it measure it. And, as many times as E measures K, so many times let F measure L also. Now, since A measures H the same number of times that B measures G,therefore, as A is to B, so is H to G. [VII. Def. 20, VII. 13] For the same reason also, as C is to D, so is G to K, and further, as E is to F, so is K to L; therefore H, G, K, L are continuously proportional in theratio of A to B, in the ratio of C to D, and in the ratio of E to F. I say next that they are also the least that have this property. For, if H, G, K, L are not the least numbers continuouslyproportional in the ratios of A to B, of C to D, and of E to F, let them be N, O, M, P. Then since, as A is to B, so is N to O, while A, B are least, and the least numbers measure those which have the sameratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent; therefore B measures O. [VII. 20] For the same reasonC also measures O; therefore B, C measure O; therefore the least number measured by B, C will also measure O. [VII. 35] But G is the least number measured by B, C;therefore G measures O, the greater the less: which is impossible. Therefore there will be no numbers less than H, G, K, L which are continuously in the ratio of A to B, of C to D, and of E to F. Next, let E not measure K. Let M, the least number measured by E, K, be taken. And, as many times as K measures M, so many times let H, G measure N, O respectively, and, as many times as E measures M, so many times let F  measure P also. Since H measures N the same number of times that G measures O, therefore, as H is to G, so is N to O. [VII. 13 and Def. 20] But, as H is to G, so is A to B;therefore also, as A is to B, so is N to O. For the same reason also, as C is to D, so is O to M. Again, since E measures M the same number of times that F measures P,therefore, as E is to F, so is M to P; [VII. 13 and Def. 20] therefore N, O, M, P are continuously proportional in the ratios of A to B, of C to D, and of E to F. I say next that they are also the least that are in the ratios A: B, C: D, E: F. For, if not, there will be some numbers less than N, O, M, P continuously proportional in the ratios A: B, C: D, E: F. Let them be Q, R, S, T. Now since, as Q is to R, so is A to B, while A, B are least, and the least numbers measure those which have the same ratio with them the same number of times, the antecedent the antecedent and the consequent the consequent, [VII. 20] therefore B measures R. For the same reason C also measures R; therefore B, C measure R. Therefore the least number measured by B, C will also measure R. [VII. 35] But G is the least number measured by B, C;therefore G measures R. And, as G is to R, so is K to S: [VII. 13] therefore K also measures S. But E also measures S; therefore E, K measure S. Therefore the least number measured by E, K will also measure S. [VII. 35] But M is the least number measured by E, K; therefore M measures S, the greater the less: which is impossible. Therefore there will not be any numbers less than N, O, M, P continuously proportional in the ratios of A to B, of C to D, and of E to F; therefore N, O, M, P are the least numbers continuously proportional in the ratios A: B, C: D, E: F.",
+  "ai_proof_text": "8.4\n**Statement:** Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.\n\n**Step 1.** Let the given ratios, expressed in least numbers, be a₁:b₁, …, aₘ:bₘ, in the prescribed order. We seek numbers N₀, …, Nₘ such that Nᵢ₋₁:Nᵢ = aᵢ:bᵢ for every i, and which are the least satisfying these conditions. We shall first construct an integral chain with these successive ratios and then apply the general minimization construction of **7.33**. This is the direct choice because that proposition applies to an arbitrary finite list, without requiring all its successive ratios to be equal.\n\n**Step 2.** Start with the chain a₁, b₁. Suppose that C₀, …, Cₖ has already been constructed with the first k prescribed successive ratios, where k < m. For the next ratio, write a = aₖ₊₁ and b = bₖ₊₁, and construct\nDⱼ = aCⱼ for 0 ≤ j ≤ k, and Dₖ₊₁ = bCₖ.\nThese products are constructed by repeated addition as in **D7.15**.\n\n**Step 3.** For every 1 ≤ j ≤ k, multiplication by the same number preserves the ratio, so\nDⱼ₋₁:Dⱼ = Cⱼ₋₁:Cⱼ = aⱼ:bⱼ (**7.17**, **5.11**).\nAlso, multiplication is commutative, and therefore\nDₖ:Dₖ₊₁ = (aCₖ):(bCₖ) = (Cₖa):(Cₖb) = a:b (**7.16**, **7.17**).\nThus the new chain retains all the previous prescribed ratios and adds the next one. Repeating this construction through the finite list produces numbers U₀, …, Uₘ satisfying Uᵢ₋₁:Uᵢ = aᵢ:bᵢ for every i.\n\n**Step 4.** Apply **7.33** to U₀, …, Uₘ, obtaining the least numbers N₀, …, Nₘ having the same ratios as that list. In particular,\nNᵢ₋₁:Nᵢ = Uᵢ₋₁:Uᵢ = aᵢ:bᵢ\nfor every i (**5.11**). Hence the constructed numbers have all the required successive ratios.\n\n**Step 5.** Let T₀, …, Tₘ be any other numbers having the prescribed successive ratios. Their corresponding adjacent ratios equal those of U₀, …, Uₘ by **5.11**. For any indices r < s, apply the numerical ex aequali theorem **7.14** to the intervening chains; it gives Tᵣ:Tₛ = Uᵣ:Uₛ. Thus every competing chain belongs to the class of lists minimized in Step 4. By **7.33**, no Tᵢ is smaller than its corresponding Nᵢ. Therefore N₀, …, Nₘ are the least numbers in a continued chain having the given ratios, as required.\n\n**USED:** 5.11, 7.14, 7.16, 7.17, 7.33, D7.15\n**Human refs (from References field):** 7.13, 7.20, 7.34, 7.35, D7.20\n**Jaccard:** 0.000 — AI adds ['5.11', '7.14', '7.16', '7.17', '7.33', 'D7.15']; Human adds ['7.13', '7.20', '7.34', '7.35', 'D7.20']",
+  "ai_used": [
+    "5.11",
+    "7.14",
+    "7.16",
+    "7.17",
+    "7.33",
+    "D7.15"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.20",
+    "7.34",
+    "7.35",
+    "D7.20"
+  ],
+  "ai_only": [
+    "5.11",
+    "7.14",
+    "7.16",
+    "7.17",
+    "7.33",
+    "D7.15"
+  ],
+  "heath_only": [
+    "7.13",
+    "7.20",
+    "7.34",
+    "7.35",
+    "D7.20"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let the given ratios, expressed in least numbers, be a₁:b₁, …, aₘ:bₘ, in the prescribed order. We seek numbers N₀, …, Nₘ such that Nᵢ₋₁:Nᵢ = aᵢ:bᵢ for every i, and which are the least sati"
+}

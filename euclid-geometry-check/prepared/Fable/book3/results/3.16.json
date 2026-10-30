@@ -1,0 +1,121 @@
+{
+  "proposition": "3.16",
+  "run": "Fable",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is the centre of circle ABC, lying on diameter AB (inside the circle)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AE is perpendicular to AB at endpoint A, so angle BAE = angle DAE = right angle",
+      "type": "angle_definition"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CHA is the semicircular arc on the same side of AB as E",
+      "type": "arc_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Reductio: assume AE enters circle, meeting circumference at C other than A",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DA = DC (radii), so triangle DAC is isosceles with angle DAC = angle DCA",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle DAC is right (AE perpendicular to AB), so angle DCA is also right",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 6",
+      "claim": "FA lies within angle BAE; every point of FA except A is outside the circle",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle DAF is part of right angle DAE, so angle DAF < right angle",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 7",
+      "claim": "D is inside the circle while FA lies outside except at A, so D is not on FA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "DG is perpendicular to FA at G; angle AGD is right",
+      "type": "perpendicular"
+    },
+    {
+      "step": "Step 7",
+      "claim": "G is not A (otherwise DA perpendicular to FA and angle DAF = right, contradicting Step 6)",
+      "type": "point_distinction"
+    },
+    {
+      "step": "Step 7",
+      "claim": "In triangle DAG, angle AGD is right so angle DAG < right angle (I.17)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 8",
+      "claim": "G lies on ray FA (not on FA produced beyond A): if beyond A, angles DAG + DAF = two right angles (I.13), but both < right angle",
+      "type": "ray_between"
+    },
+    {
+      "step": "Step 8",
+      "claim": "G is on FA other than A, so G is outside the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "In triangle AGD: angle AGD (right) > angle DAG, so AD > DG (I.19)",
+      "type": "side_ordering"
+    },
+    {
+      "step": "Step 10",
+      "claim": "D inside circle and G outside circle, so DG crosses circumference at H between D and G; DG > DH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "DH = DA (radii) and DA > DG (Step 9), so DH > DG, contradicting DG > DH",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Any line AF within angle BAE meets circumference (otherwise it would be interposed, contradicting Part 2)",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Chord AC falls within the circle (3.2), so circumference CHA lies between AF and AE",
+      "type": "arc_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Angle BAF is part of the angle of the semicircle; remaining angle (circumference to AE) is part of angle FAE",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Angle BAF = K < right angle BAE, so AF within angle BAE; angle of semicircle > K",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Angle EAF = K < right angle EAB, so AF within angle BAE; remaining angle < K",
+      "type": "angle_ordering"
+    }
+  ],
+  "configuration_map": "Circle ABC with center D and diameter AB. Line AE perpendicular to AB at A extends outside the circle (established Part 1). Semicircular arc CHA lies on the same side of AB as E.\n\nPoint D: center of circle, on diameter AB, inside the circle — used consistently throughout as interior point (Steps 1, 7, 10).\n\nPoint G (Part 2 reductio): foot of perpendicular from D to line FA. Lies on segment FA (not beyond A — argued in Step 8 by angle sum). Since G is on FA and distinct from A, and FA is outside the circle except at A, G is outside the circle. Used consistently as exterior point (Steps 8, 10).\n\nPoint H (Part 2 reductio): intersection of segment DG with circumference. Since D is inside and G is outside, H lies between D and G on segment DG. DH is a radius. Used consistently as circumference point between D and G (Step 10).\n\nLines AF (Part 3): Any line from A within angle BAE must cross the circumference (by Part 2 impossibility of interposition). The chord from A to the crossing point falls within the circle (3.2). This places the circumference between AF and AE near A, establishing the angle containment relationships used in Steps 13-14.\n\nAll point positions (inside/outside/on circle) and angle orderings are maintained consistently across all steps.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof carefully tracks point positions relative to the circle (D inside, G outside, H on circumference between D and G) and angle orderings (DAF < right, DAG < right, AGD = right). The Step 8 argument correctly establishes G on ray FA rather than beyond A. Contradictions arising in the reductio arguments (Parts 1 and 2) are intentional consequences of the false assumptions, not proof errors. The Part 3 direct argument using I.23 and 3.2 is a legitimate alternative to Heath's reductio approach, with sound spatial reasoning throughout."
+}

@@ -1,0 +1,36 @@
+{
+  "proposition": "5.21",
+  "book": 5,
+  "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth will also be greater than the sixth; if equal, equal; and if less, less.",
+  "heath_proof": "Let there be three magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two are in the same ratio, and let the proportion of them be perturbed, so that, as A is to B, so is E to F, and, as B is to C, so is D to E, and let A be greater than C   ex aequali; I say that D will also be greater than F; if A is equal to C, equal; and if less, less. For, since A is greater than C, and B is some other magnitude, therefore A has to B a greater ratio than C has to B. [V. 8] But, as A is to B, so is E to F, and, as C is to B, inversely, so is E to D. Therefore also E has to F a greater ratio than E has to D. [V. 13] But that to which the same has a greater ratio is less; [V. 10] therefore F is less than D; therefore D is greater than F.  Similarly we can prove that, if A be equal to C, D will also be equal to F; and if less, less.",
+  "ai_proof_text": "5.21\n**Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth will also be greater than the sixth; if equal, equal; and if less, less.\n\n**Step 1.** Let A, B, C be three magnitudes, and D, E, F be others equal to them in multitude, which taken two and two are in the same ratio with the proportion perturbed, so that A:B = E:F and B:C = D:E. We must show that, ex aequali, if A > C then D > F; if A = C then D = F; and if A < C then D < F. [D5.17, D5.18]\n\n**Step 2.** Note that from B:C = D:E, by the definition of same ratio (D5.5) and inverse ratio (D5.13), we have C:B = E:D. For if for all equimultiples m and n, mB exceeds, equals, or falls short of nC according as mD exceeds, equals, or falls short of nE, then equally nC exceeds, equals, or falls short of mB according as nE exceeds, equals, or falls short of mD. Thus C:B = E:D.\n\n**Step 3.** [Case 1: A > C.] Since A > C, by 5.8, A has to B a greater ratio than C has to B, that is, A:B > C:B.\n\n**Step 4.** Since A:B = E:F (given) and A:B > C:B (Step 3), by 5.13 (with E:F as the ratio equal to A:B, and C:B as the lesser ratio), we conclude E:F > C:B.\n\n**Step 5.** Since C:B = E:D (Step 2) and E:F > C:B (Step 4), by 5.13, E:F > E:D.\n\n**Step 6.** Since E has to F a greater ratio than E has to D, by the second part of 5.10 (that to which the same magnitude has a greater ratio is less), F < D, that is, D > F.\n\n**Step 7.** [Case 2: A = C.] Since A = C, by 5.7, A:B = C:B.\n\n**Step 8.** Since A:B = E:F (given) and A:B = C:B (Step 7), by 5.11, E:F = C:B.\n\n**Step 9.** Since C:B = E:D (Step 2) and E:F = C:B (Step 8), by 5.11, E:F = E:D.\n\n**Step 10.** Since E has the same ratio to F as E has to D, by 5.9 (magnitudes to which the same has the same ratio are equal), D = F.\n\n**Step 11.** [Case 3: A < C.] Since C > A, by 5.8, C has to B a greater ratio than A has to B, that is, C:B > A:B.\n\n**Step 12.** Since A:B = E:F (given) and C:B > A:B (Step 11), then C:B > E:F. Since C:B = E:D (Step 2), by 5.13, E:D > E:F.\n\n**Step 13.** Since E has to D a greater ratio than E has to F, by the second part of 5.10, D < F.\n\n**Step 14.** Therefore, if A > C then D > F; if A = C then D = F; and if A < C then D < F. Q.E.D.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.13, D5.17, D5.18, D5.5\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.300 — AI adds ['5.11', '5.7', '5.9', 'D5.13', 'D5.17', 'D5.18', 'D5.5']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.13",
+    "D5.17",
+    "D5.18",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.13",
+    "D5.17",
+    "D5.18",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.3,
+  "proof_summary": "**Step 1.** Let A, B, C be three magnitudes, and D, E, F be others equal to them in multitude, which taken two and two are in the same ratio with the proportion perturbed, so that A:B = E:F and B:C = "
+}

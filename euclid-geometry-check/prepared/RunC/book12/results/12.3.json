@@ -1,0 +1,171 @@
+{
+  "proposition": "12.3",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E, F, G, H, K, L are midpoints of edges AB, AC, AD, BC, CD, BD respectively of tetrahedron ABCD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EF parallel to BC and EF = BC/2 (midpoint theorem in triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EH parallel to AC and EH = AC/2 (midpoint theorem in triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FH parallel to AB and FH = AB/2 (midpoint theorem in triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EG parallel to BD and EG = BD/2 (midpoint theorem in triangle ABD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EL parallel to AD and EL = AD/2 (midpoint theorem in triangle ABD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GL parallel to AB and GL = AB/2 (midpoint theorem in triangle ABD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FG parallel to CD and FG = CD/2 (midpoint theorem in triangle ACD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FK parallel to AD and FK = AD/2 (midpoint theorem in triangle ACD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GK parallel to AC and GK = AC/2 (midpoint theorem in triangle ACD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HK parallel to BD and HK = BD/2 (midpoint theorem in triangle BCD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HL parallel to CD and HL = CD/2 (midpoint theorem in triangle BCD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "KL parallel to BC and KL = BC/2 (midpoint theorem in triangle BCD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Pyramid AEFG has each edge half the corresponding edge of ABCD, so AEFG is similar to ABCD with ratio 1:2",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Pyramid DGKL has each edge half the corresponding edge of ABCD, so DGKL is similar to ABCD with ratio 1:2",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AEFG and DGKL have the same six edge lengths and are therefore congruent",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "EHKG is a parallelogram: opposite sides EH parallel to GK (both parallel to AC) and EG parallel to HK (both parallel to BD)",
+      "type": "parallelogram_formation"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Plane of parallelogram EHKG divides the remaining solid into two parts, one containing F and C, the other containing L and B",
+      "type": "plane_partition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EHCF is a parallelogram on face ABC (EF parallel to HC, EH parallel to CF)",
+      "type": "parallelogram_formation"
+    },
+    {
+      "step": "Step 8",
+      "claim": "FGKC is a parallelogram on face ACD (FG parallel to CK, GK parallel to CF)",
+      "type": "parallelogram_formation"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Solid EFGHCK is a prism with congruent parallel triangular faces EFG and HCK",
+      "type": "solid_identification"
+    },
+    {
+      "step": "Step 10",
+      "claim": "EBLG is a parallelogram on face ABD (EB parallel to GL, BL parallel to EG)",
+      "type": "parallelogram_formation"
+    },
+    {
+      "step": "Step 10",
+      "claim": "BHKL is a parallelogram on face BCD (BH parallel to KL, BL parallel to HK)",
+      "type": "parallelogram_formation"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Solid EBHGKL is a prism with congruent parallel triangular faces EBH and GKL",
+      "type": "solid_identification"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Corner pyramid CFHK has same edge lengths as AEFG (all six edges are halves of ABCD edges)",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Corner pyramid BEHL has same edge lengths as DGKL",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Remainder of Prism 1 after removing CFHK is a pyramid on base EHKG with apex F",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Remainder of Prism 2 after removing BEHL is a pyramid on base EHKG with apex L",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "F and L lie on opposite sides of plane EHKG and are equidistant from it",
+      "type": "point_position_relative_to_plane"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Prism 1 properly contains corner pyramid CFHK which equals AEFG, so Prism 1 > AEFG",
+      "type": "volume_comparison"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Prism 2 properly contains corner pyramid BEHL which equals DGKL, so Prism 2 > DGKL",
+      "type": "volume_comparison"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Two prisms together exceed the two removed pyramids, hence exceed half the whole",
+      "type": "volume_comparison"
+    }
+  ],
+  "configuration_map": "Tetrahedron ABCD with apex A and base BCD. Six midpoints: E on AB, F on AC, G on AD, H on BC, K on CD, L on BD. The three pairs of opposite edges are (AB,CD), (AC,BD), (AD,BC). Midpoints of edges AB,BC,CD,AD form parallelogram EHKG in a plane through the centroid (A+B+C+D)/4; its diagonals EK and HG bisect each other at the centroid. Midpoints F and L of the remaining opposite edge pair (AC,BD) lie on opposite sides of plane EHKG, equidistant from it (verified by coordinate computation: signed distances are -V/8 and +V/8 where V is the scalar triple product). Four corner sub-tetrahedra AEFG, BEHL, CFHK, DGKL are all congruent with edge lengths {AB/2, AC/2, AD/2, BC/2, BD/2, CD/2}. After removing AEFG (at A) and DGKL (at D), the central octahedron EFGHKL is split by plane EHKG into two pyramids with apex F and L. Prism 1 = CFHK + pyramid(EHKG,F) on the C-side. Prism 2 = BEHL + pyramid(EHKG,L) on the B-side. Volume accounting: each corner = V/8, each central pyramid = V/4, each prism = 3V/8, total 2(V/8) + 2(3V/8) = V. Two prisms = 3V/4 > V/2.",
+  "pass_reason": "All spatial claims are mutually consistent. The midpoint parallelism claims follow correctly from VI.2 applied to each face. The parallelogram EHKG is verified by the diagonal midpoint coincidence (E+K = H+G). The prism identifications are correct with properly congruent and parallel triangular faces. The critical claim that F and L are equidistant from and on opposite sides of plane EHKG is verified by coordinate computation (signed distances are negatives of each other). The volume decomposition is complete and non-overlapping, with correct inequality for the final conclusion."
+}

@@ -1,0 +1,41 @@
+{
+  "proposition": "1.40",
+  "run": "GPT",
+  "book": 1,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Bases BC and EF are equal and lie on the same straight line ℓ; vertices A and D lie on the same side of ℓ",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line m is drawn through A parallel to ℓ; auxiliary triangle AEF is formed by joining AE and AF",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle ABC lies between parallels ℓ and m (base BC on ℓ, vertex A on m)",
+      "type": "between_parallels"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle AEF lies between parallels ℓ and m (base EF on ℓ, vertex A on m)",
+      "type": "between_parallels"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles AEF and DEF share base EF on ℓ, with A and D on the same side of ℓ",
+      "type": "same_side"
+    },
+    {
+      "step": "Step 5",
+      "claim": "By 1.39, A and D both lie on a line parallel to ℓ (which must be m), so D lies on m",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Line ℓ contains equal bases BC and EF. Point A is above ℓ and lies on line m (constructed through A parallel to ℓ via 1.31). Point D is above ℓ on the same side as A. After applying 1.39 to equal triangles AEF and DEF (same base EF, same side), D is shown to lie on m as well. Thus both vertices A and D lie on m, and both bases lie on ℓ, placing both original triangles between the same parallels ℓ and m.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction of line m through A parallel to ℓ is valid (1.31). The application of 1.38 to triangles ABC and AEF is geometrically correct: both have their bases on ℓ and share vertex A on m. The application of 1.39 to equal triangles AEF and DEF on the same base EF and same side is valid and correctly yields that A and D lie on the same parallel to ℓ. No angle decomposition issues arise; the proof uses only area-based parallel-strip results (1.38, 1.39) with no interior-point or betweenness claims that could conflict."
+}

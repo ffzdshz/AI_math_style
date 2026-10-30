@@ -1,0 +1,29 @@
+{
+  "proposition": "8.15",
+  "book": 8,
+  "statement": "If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.",
+  "heath_proof": "For let the cube number A measure the cube B, and let C be the side of A and D of B; I say that C measures D. For let C by multiplying itself make E, and let D by multiplying itself make G; further, let C by multiplying D make F, and let C, D by multiplying F make H, K respectively. Now it is manifest that E, F, G and A, H, K, B are continuously proportional in the ratio of C to D. [VIII. 11, 12] And, since A, H, K, B are continuously proportional, and A measures B, therefore it also measures H. [VIII. 7] And, as A is to H, so is C to D; therefore C also measures D. [VII. Def. 20] Next, let C measure D; I say that A will also measure B. For, with the same construction, we can prove in a similar manner that A, H, K, B are continuously proportional in the ratio of C to D. And, since C measures D, and, as C is to D, so is A to H, therefore A also measures H, [VII. Def. 20] so that A measures B also.",
+  "ai_proof_text": "8.15\n**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.\n\n**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a*a*a and B = b*b*b [D7.19].\n\n**Part I: If A measures B, then a measures b.**\n\n**Step 2.** Since A and B are cube numbers, by 8.12, between A and B there are two mean proportional numbers. Let C and D be such that A, C, D, B are in continued proportion. Moreover, by 8.12, the cube has to the cube the ratio triplicate of that which the side has to the side, so the common ratio of the continued proportion A, C, D, B is the same as the ratio a : b. In particular, A : C = a : b.\n\n**Step 3.** Since A, C, D, B are in continued proportion and A measures B (the first measures the last), by 8.7 the first also measures the second, that is, A measures C.\n\n**Step 4.** Since A : C = a : b [Step 2], and A measures C [Step 3], by D7.20 the relationship of the first to the second is the same as that of the third to the fourth. Since A measures C, A is a part of C (or equal to it), so a is the same part of b (or equal to it). Therefore a measures b.\n\n**Part II: If a measures b, then A measures B.**\n\n**Step 5.** Suppose a measures b. Again by 8.12, between A and B there are two mean proportional numbers C and D, with A, C, D, B in continued proportion and common ratio a : b. Thus A : C = a : b, C : D = a : b, and D : B = a : b.\n\n**Step 6.** Since A : C = a : b and a measures b, by D7.20, the first is the same part of the second as the third is of the fourth. Since a measures b, it follows that A measures C.\n\n**Step 7.** Since C : D = a : b and a measures b, by the same reasoning (D7.20), C measures D.\n\n**Step 8.** Since D : B = a : b and a measures b, by the same reasoning (D7.20), D measures B.\n\n**Step 9.** Since A measures C [Step 6], C measures D [Step 7], and D measures B [Step 8], by transitivity of measurement [D7.3], A measures B.\n\n**Step 10.** Therefore, if a cube number measures a cube number, the side also measures the side; and if the side measures the side, the cube also measures the cube. Q.E.D.\n\n**USED:** 8.12, 8.7, D7.19, D7.20, D7.3\n**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20\n**Jaccard:** 0.500 — AI adds ['D7.19', 'D7.3']; Human adds ['8.11']",
+  "ai_used": [
+    "8.12",
+    "8.7",
+    "D7.19",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.12",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "D7.19",
+    "D7.3"
+  ],
+  "heath_only": [
+    "8.11"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a*a*a and B = b*b*b [D7.19].  **Part I: If A measures B, then a measures b.**  **Step 2.** Since A and B are cube n"
+}

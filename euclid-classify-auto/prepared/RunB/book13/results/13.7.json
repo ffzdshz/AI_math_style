@@ -1,0 +1,13 @@
+{
+  "proposition": "13.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath's proof of Case I (three consecutive equal angles) introduces the intersection point F of diagonals AC and BE, uses I.6 to derive AF = BF, then deduces FC = FE, and applies I.8 to triangles FCD and FED to obtain angle FCD = angle FED. The AI proof never introduces any intersection point; instead it works with whole diagonals, applying I.4 to different triangle pairs (ABC/DCB rather than Heath's ABC/ABE), derives angle equalities via I.5 on isosceles sub-triangles, uses CN3 for angle subtraction, and ultimately applies I.8 to triangles ADE and BEA to establish the fifth angle. The key intermediates differ: Heath's backbone runs through AF = BF (via I.6) and FC = FE, while the AI's runs through angle ACD = angle ABD and angle CDA = angle BAD. For Case II (not in order), Heath handles it as a single case while the AI splits into two sub-cases (consecutive pair among the three vs. no consecutive pair). Both proofs are logically complete, but they follow genuinely different geometric paths, so the classification is D.",
+  "jaccard": 0.5,
+  "ai_citations": "1.4|1.5|1.8|CN2|CN3",
+  "heath_citations": "1.4|1.5|1.6|1.8",
+  "ai_only": "CN2|CN3",
+  "heath_only": "1.6",
+  "audit_record": ""
+}

@@ -1,0 +1,21 @@
+{
+  "proposition": "10.73",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on segment AB such that BC is subtracted from AB (C lies between A and B)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB is cut at C, invoking Proposition 2.7 algebraic identity",
+      "type": "point_on_segment"
+    }
+  ],
+  "configuration_map": "Points A and B are endpoints of a rational straight line. Point C lies on segment AB between A and B, creating remainder AC. No other points are constructed. The entire configuration is a single line segment with one interior point.",
+  "skip_reason": "The proof is purely algebraic, dealing with commensurability and rationality of magnitudes (squares, rectangles, medial areas). The only geometric element is the trivial setup of point C on segment AB. All reasoning involves algebraic properties: commensurability of squares (10.15), medial rectangles (10.21), the algebraic identity from 2.7, and proof by contradiction about rational vs irrational areas. There are no angle decompositions, no triangle or circle constructions, no ray orderings, and no inside/outside claims -- none of the spatial configuration patterns the protocol is designed to detect."
+}

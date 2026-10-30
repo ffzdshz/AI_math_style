@@ -1,0 +1,13 @@
+{
+  "proposition": "13.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath's proof establishes the result through similar triangles: it identifies AK as the decagon side, proves triangles ABF and BFN equiangular to get rect(AB,BN) = sq(BF), proves triangles KBA and KNA equiangular to get rect(BA,AN) = sq(AK), then applies II.2 to combine these into sq(BA) = sq(BF) + sq(AK). The AI takes a fundamentally different path: it identifies BG as the decagon side via arc midpoint, uses the angle-in-semicircle theorem (3.31) and the Pythagorean theorem (1.47) to get 4r^2 = d^2 + q^2, invokes 13.9 for the golden ratio property of hexagon and decagon sides, applies the intersecting chords theorem (3.35), and then proceeds through extensive algebraic manipulation to derive sq(p) = sq(r) + sq(d). The key intermediate conclusions are entirely different -- Heath uses proportion from equiangular triangles while the AI uses metric relations from the Pythagorean theorem and intersecting chords combined with the golden ratio. The very low Jaccard similarity of 0.13 (only 3 shared citations out of 23 total) confirms the massive divergence. The AI proof is logically complete under the hardened Q1(b) standard, with each step properly justified, so Q3 yields a valid different path.",
+  "jaccard": 0.13,
+  "ai_citations": "1.47|13.9|2.1|3.26|3.28|3.3|3.31|3.35|4.15|4.16|6.16|6.17|CN3|D4.3|D4.7|D6.3",
+  "heath_citations": "1.26|1.32|1.4|1.5|2.2|3.26|4.15|6.17|6.33|6.4",
+  "ai_only": "1.47|13.9|2.1|3.28|3.3|3.31|3.35|4.16|6.16|CN3|D4.3|D4.7|D6.3",
+  "heath_only": "1.26|1.32|1.4|1.5|2.2|6.33|6.4",
+  "audit_record": ""
+}

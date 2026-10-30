@@ -1,0 +1,19 @@
+{
+  "proposition": "7.35",
+  "book": 7,
+  "statement": "If two numbers measure any number, the least number measured by them will also measure the same.",
+  "heath_proof": "For let the two numbers A, B measure any number CD, and let E be the least that they measure; I say that E also measures CD. For, if E does not measure CD, let E, measuring DF, leave CF less than itself. Now, since A, B measure E, and E measures DF, therefore A, B will also measure DF. But they also measure the whole CD; therefore they will also measure the remainder CF which is less than E: which is impossible. Therefore E cannot fail to measure CD; therefore it measures it.",
+  "ai_proof_text": "7.35\n**Statement:** If two numbers measure any number, the least number measured by them will also measure the same.\n\n**Step 1.** Let A and B be two numbers, and let them both measure some number C. Let L be the least number measured by both A and B; such a number exists by Proposition 7.34. We must show that L also measures C.\n\n**Step 2.** Since A measures L and A measures C, and B measures L and B measures C, L is a number measured by both A and B, and C is also measured by both A and B. Since L is the least number measured by both A and B (by 7.34), we have L is not greater than C. For if L were greater than C, then C would be a number measured by both A and B that is less than L, contradicting the minimality of L.\n\n**Step 3.** If L equals C, then L measures C (as any number measures itself, being one times itself), and we are done.\n\n**Step 4.** Suppose L is less than C. Since A measures both C and L, let C = A * n and L = A * m for some numbers n and m, where n > m (by Definition D7.5). Then C - L = A * (n - m), so A measures the remainder C - L. By the same reasoning, since B measures both C and L, B also measures C - L.\n\n**Step 5.** Thus C - L is a positive number measured by both A and B. If C - L is less than L, then C - L is a number measured by both A and B that is less than L, contradicting the fact that L is the least such number (by 7.34). Therefore C - L is not less than L.\n\n**Step 6.** If C - L equals L, then C = 2L, so L measures C, and we are done.\n\n**Step 7.** If C - L is greater than L, we repeat the process: subtract L from C - L to obtain C - 2L. By the same argument as in Step 4, since A measures both C - L and L, A measures C - 2L, and similarly B measures C - 2L.\n\n**Step 8.** We continue subtracting L repeatedly. At each stage, the remainder is measured by both A and B, and by the argument of Step 5, the remainder cannot be less than L (for that would contradict the minimality of L). Since C is finite and each subtraction reduces the remainder by L, this process must eventually yield a remainder equal to L, at which point the next subtraction gives zero. Therefore C is a sum of copies of L, which means L measures C (by Definition D7.5).\n\n**Step 9.** Therefore, if two numbers measure any number, the least number measured by them also measures the same. Q.E.D.\n\n**USED:** 7.34, D7.5\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['7.34', 'D7.5']",
+  "ai_used": [
+    "7.34",
+    "D7.5"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "7.34",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be two numbers, and let them both measure some number C. Let L be the least number measured by both A and B; such a number exists by Proposition 7.34. We must show that L also "
+}

@@ -1,0 +1,91 @@
+{
+  "proposition": "3.8",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is a point outside the circle with center M",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D, G, M, A are collinear in that order (G nearer intersection, A farther)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E, F are on the concave circumference (arc farther from D, containing A)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "H, K are on the convex circumference (arc nearer to D, containing G)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "angle AME < angle AMF (E nearer to DA than F)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 1",
+      "claim": "angle GMH < angle GMK (H nearer to G than K)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D, M, E are not collinear so triangle DME exists",
+      "type": "non_collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DM + ME = DM + MA = DA (M between D and A)",
+      "type": "segment_addition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle DMA is a straight angle (D, M, A collinear)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle DME + angle EMA = 180 degrees (linear pair on straight line DMA)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle DME > angle DMF (from supplementary relationship)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "DM = DG + GM (G lies between D and M)",
+      "type": "segment_addition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "D, M, H not collinear so triangle DMH exists",
+      "type": "non_collinearity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "angle DMH = angle GMH (rays MD and MG are the same ray from M)",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "angle DMH < angle DMK (H nearer to G than K)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 9",
+      "claim": "E' on opposite side of line DA from E, at equal angle from M",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Circle with center M, external point D. Line through D and M meets circle at G (between D and M) and A (beyond M from D), giving collinear order D-G-M-A. From M, rays MD and MG are identical (both point toward D/G). E and F lie on the concave (far) arc containing A, not on line DMA. H and K lie on the convex (near) arc containing G, not on line DMA. The configuration is symmetric about line DMA. Throughout the proof, G remains between D and M, M remains between D and A, and all auxiliary points remain off line DMA (ensuring non-degenerate triangles for 1.20 and 1.24 applications).",
+  "pass_reason": "All spatial claims are mutually consistent. The collinearity D-G-M-A is correctly maintained and used throughout: segment additions (DM+MA=DA, DG+GM=DM), supplementary angle relationships (1.13), and the identity of rays MD and MG from M all follow correctly. The applications of 1.24 (SAS inequality) operate on valid non-degenerate triangles with properly ordered angles. The AI's alternative approach using 1.24 instead of Heath's 1.21 for the convex case introduces no spatial contradictions since the angle comparisons at M are geometrically valid given the established configuration."
+}

@@ -1,0 +1,28 @@
+{
+  "proposition": "10.45",
+  "book": 10,
+  "statement": "A major straight line is divided at one and the same point only.",
+  "heath_proof": "Let AB be a major straight line divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB rational, but the rectangle AC, CB medial; [X. 39] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB rational, but the rectangle contained by them medial. Then, since that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, while the squares on AC, CB exceed the squares on AD, DB by a rational area—for both are rational— therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore a major straight line is not divided at different points; therefore it is only divided at one and the same point.",
+  "ai_proof_text": "10.45\n**Statement:** A major straight line is divided at one and the same point only.\n\n**Step 1.** Let AB be a major straight line, and suppose it is divided at C so that AC, CB are the terms of the major line. Then by the definition of major (10.39), AC and CB are incommensurable in square, the sum sq(AC) + sq(CB) is rational, and the rectangle rect(AC, CB) is medial, so that 2*rect(AC, CB) is also medial.\n\n**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at a different point D into terms AD, DB satisfying the same conditions: AD and DB are incommensurable in square, sq(AD) + sq(DB) is rational, and 2*rect(AD, DB) is medial.\n\n**Step 3.** By 2.4 applied to AB divided at C: sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB). By 2.4 applied to AB divided at D: sq(AB) = sq(AD) + sq(DB) + 2*rect(AD, DB). Therefore, sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AD) + sq(DB) + 2*rect(AD, DB).\n\n**Step 4.** Rearranging by CN3: [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2*rect(AD, DB) - 2*rect(AC, CB).\n\n**Step 5.** Now sq(AC) + sq(CB) is rational and sq(AD) + sq(DB) is rational. Since both are rational areas, each is commensurable with the square on the assigned rational straight line. By 10.12, they are commensurable with one another. By 10.15, their difference [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] is commensurable with each, and hence is a rational area (if nonzero) or zero.\n\n**Step 6.** On the other side, 2*rect(AC, CB) is medial and 2*rect(AD, DB) is medial. By 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference 2*rect(AD, DB) - 2*rect(AC, CB) cannot be a nonzero rational area.\n\n**Step 7.** From Steps 5 and 6, the common value of both sides must be zero. Hence sq(AC) + sq(CB) = sq(AD) + sq(DB), and 2*rect(AC, CB) = 2*rect(AD, DB), which gives rect(AC, CB) = rect(AD, DB).\n\n**Step 8.** We now have AC + CB = AD + DB (both equal AB) and rect(AC, CB) = rect(AD, DB). The two segments AC, CB are therefore determined as the two values whose sum is AB and whose product (rectangle) is rect(AC, CB). Likewise AD, DB are determined as the two values with the same sum and the same product.\n\n**Step 9.** Since two magnitudes are uniquely determined (as an unordered pair) by their sum and their rectangle -- for they are the two segments produced when a line of given length is divided so as to produce a given rectangle -- it follows that the pair {AC, CB} equals the pair {AD, DB} as a set of magnitudes.\n\n**Step 10.** If AC = AD, then CB = DB (since AC + CB = AD + DB), and C coincides with D. If instead AC = DB and CB = AD, then since AC and CB are unequal (being incommensurable in square, they cannot be equal, for if AC = CB then sq(AC) = sq(CB) and they would be commensurable in square and in length), the point D would be the reflection of C about the midpoint of AB. But in either case the line AB is divided into the same two terms: the pair of magnitudes is identical.\n\n**Step 11.** Therefore the major straight line AB is divided into its terms at one and the same point only; that is, the decomposition of a major straight line into its two constituent terms is unique.\n\n**USED:** 10.12, 10.15, 10.26, 10.39, 2.4, CN3\n**Human refs (from References field):** 10.26, 10.39\n**Jaccard:** 0.333 — AI adds ['10.12', '10.15', '2.4', 'CN3']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.39",
+    "2.4",
+    "CN3"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.39"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.4",
+    "CN3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AB be a major straight line, and suppose it is divided at C so that AC, CB are the terms of the major line. Then by the definition of major (10.39), AC and CB are incommensurable in sq"
+}

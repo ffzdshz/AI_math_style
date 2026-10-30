@@ -1,0 +1,26 @@
+{
+  "proposition": "3.4",
+  "book": 3,
+  "statement": "If in a circle two straight lines cut one another which are not through the centre, they do not bisect one another.",
+  "heath_proof": "Let ABCD be a circle, and in it let the two straight lines AC, BD, which are not through the centre, cut one another at E; I say that they do not bisect one another. For, if possible, let them bisect one another, so that AE is equal to EC, and BE to ED; let the centre of the circle ABCD be taken [III. 1], and let it be F; let FE be joined. Then, since a straight line FE through the centre bisects a straight line AC not through the centre, it also cuts it at right angles; [III. 3]therefore the angle FEA is right. Again, since a straight line FE bisects a straight line BD, it also cuts it at right angles; [III. 3]therefore the angle FEB is right. But the angle FEA was also proved right; therefore the angle FEA is equal to the angle FEB, the less to the greater: which is impossible. Therefore AC, BD do not bisect one another.",
+  "ai_proof_text": "3.4\n**Statement:** If in a circle two straight lines cut one another which are not through the centre, they do not bisect one another.\n\n**Step 1.** Let the distinct chords AB and CD intersect at E, and suppose neither passes through the centre. Assume, for contradiction, that they bisect one another: AE = EB and CE = ED. [Hypothesis; supposition for contradiction.]\n\n**Step 2.** Find the centre O of the circle. [3.1] Since neither chord passes through O, O is distinct from E and lies on neither chord. Join OE. [P1]\n\n**Step 3.** Path choice: apply the forward implication of 3.3, since the assumed bisections are precisely its hypotheses. The straight line OE passes through the centre and bisects each of AB and CD; therefore it cuts both at right angles. In particular, ∠OEA, ∠OEB, ∠OEC, and ∠OED are right angles. [3.3]\n\n**Step 4.** Relabel the endpoints if necessary so that A and C lie on the same side of the straight line OE. This is possible because E lies between the endpoints of each chord, and neither chord lies along OE. The rays EA and EC are distinct because the chords are distinct. Thus, on this same side of OE, one of ∠OEA and ∠OEC is a proper part of the other. Consequently these angles are unequal, since the whole is greater than the part. [CN5]\n\n**Step 5.** But ∠OEA and ∠OEC are both right angles by Step 3, so they are equal. [P4] This contradicts Step 4. Hence the two chords cannot bisect one another. Therefore, if two straight lines in a circle cut one another and neither passes through the centre, they do not bisect one another. [Reductio from Steps 1–4.]\n\n**USED:** 3.1, 3.3, CN5, P1, P4\n**Human refs (from References field):** 3.1, 3.3\n**Jaccard:** 0.400 — AI adds ['CN5', 'P1', 'P4']",
+  "ai_used": [
+    "3.1",
+    "3.3",
+    "CN5",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "3.1",
+    "3.3"
+  ],
+  "ai_only": [
+    "CN5",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let the distinct chords AB and CD intersect at E, and suppose neither passes through the centre. Assume, for contradiction, that they bisect one another: AE = EB and CE = ED. [Hypothesis; "
+}

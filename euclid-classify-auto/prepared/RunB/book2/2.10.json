@@ -1,0 +1,55 @@
+{
+  "proposition": "2.10",
+  "book": 2,
+  "statement": "If a straight line be bisected, and a straight line be added to it in a straight line, the square on the whole with the added straight line and the square on the added straight line both together are double of the square on the half and of the square described on the straight line made up of the half and the added straight line as on one straight line.",
+  "heath_proof": "For let a straight line AB be bisected at C, and let a straight line BD be added to it in a straight line; I say that the squares on AD, DB are double of the squares on AC, CD. For let CE be drawn from the point C at right angles to AB [I. 11], and let it be made equal to either AC or CB [I. 3]; let EA, EB be joined; through E let EF be drawn parallel to AD, and through D let FD be drawn parallel to CE. [I. 31] Then, since a straight line EF falls on the parallel straight lines EC, FD, the angles CEF, EFD are equal to two right angles; [I. 29]therefore the angles FEB, EFD are less than two right angles. But straight lines produced from angles less than two right angles meet; [I. Post. 5] therefore EB, FD, if produced in the direction B, D, will meet. Let them be produced and meet at G, and let AG be joined. Then, since AC is equal to CE, the angle EAC is also equal to the angle AEC; [I. 5] and the angle at C is right; therefore each of the angles EAC, AEC is half a right angle. [I. 32] For the same reason each of the angles CEB, EBC is also half a right angle; therefore the angle AEB is right. And, since the angle EBC is half a right angle, the angle DBG is also half a right angle. [I. 15] But the angle BDG is also right, for it is equal to the angle DCE, they being alternate; [I. 29] therefore the remaining angle DGB is half a right angle; [I. 32]therefore the angle DGB is equal to the angle DBG, so that the side BD is also equal to the side GD. [I. 6]  Again, since the angle EGF is half a right angle, and the angle at F is right, for it is equal to the opposite angle, the angle at C, [I. 34] the remaining angle FEG is half a right angle; [I. 32] therefore the angle EGF is equal to the angle FEG, so that the side GF is also equal to the side EF. [I. 6] Now, since the square on EC is equal to the square on CA, the squares on EC, CA are double of the square on CA. But the square on EA is equal to the squares on EC, CA; [I. 47] therefore the square on EA is double of the square on AC. [C. N. 1]  Again, since FG is equal to EF, the square on FG is also equal to the square on FE; therefore the squares on GF, FE are double of the square on EF. But the square on EG is equal to the squares on GF, FE; [I. 47] therefore the square on EG is double of the square on EF. And EF is equal to CD; [I. 34] therefore the square on EG is double of the square on CD. But the square on EA was also proved double of the square on AC; therefore the squares on AE, EG are double of the squares on AC, CD. And the square on AG is equal to the squares on AE, EG; [I. 47] therefore the square on AG is double of the squares on AC, CD. But the squares on AD, DG are equal to the square on AG; [I. 47] therefore the squares on AD, DG are double of the squares on AC, CD. And DG is equal to DB; therefore the squares on AD, DB are double of the squares on AC, CD.",
+  "ai_proof_text": "2.10\n**Statement:** If a straight line be bisected, and a straight line be added to it in a straight line, the square on the whole with the added straight line and the square on the added straight line both together are double of the square on the half and of the square described on the straight line made up of the half and the added straight line as on one straight line.\n\n**Step 1.** Let AB be the given straight line bisected at C, and let BD be added to it in a straight line. We must show that sq(AD) + sq(DB) = 2*sq(AC) + 2*sq(CD), where CD is the straight line made up of the half CB and the added straight line BD.\n\n**Step 2.** Apply 2.7 to the straight line AD cut at the point B. By 2.7, the square on the whole AD and the square on one segment DB are together equal to twice the rectangle contained by AD and DB together with the square on the remaining segment AB. That is: sq(AD) + sq(DB) = 2*rect(AD, DB) + sq(AB).\n\n**Step 3.** Apply 2.6 to the straight line AB, which is bisected at C, with BD added to it in a straight line. By 2.6, the rectangle contained by the whole with the added straight line (that is, AD) and the added straight line (DB), together with the square on the half (CB), equals the square on the straight line made up of the half and the added straight line (CD). That is: rect(AD, DB) + sq(CB) = sq(CD).\n\n**Step 4.** Since AB is bisected at C, we have AC = CB [by hypothesis]. Therefore sq(CB) = sq(AC). From Step 3: rect(AD, DB) = sq(CD) - sq(AC) [CN3].\n\n**Step 5.** Substituting the result of Step 4 into Step 2: sq(AD) + sq(DB) = 2*(sq(CD) - sq(AC)) + sq(AB) = 2*sq(CD) - 2*sq(AC) + sq(AB) [CN1].\n\n**Step 6.** Apply 2.4 to the straight line AB cut at C. By 2.4, sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB). Since AC = CB (AB is bisected at C), this gives sq(AB) = sq(AC) + sq(AC) + 2*rect(AC, AC). Now rect(AC, AC) = sq(AC) [by the definition of a square, D2.1 and D1.22]. Therefore sq(AB) = 2*sq(AC) + 2*sq(AC) = 4*sq(AC) [CN2].\n\n**Step 7.** Substituting the result of Step 6 into Step 5: sq(AD) + sq(DB) = 2*sq(CD) - 2*sq(AC) + 4*sq(AC) = 2*sq(CD) + 2*sq(AC) [CN2, CN3].\n\n**Step 8.** Therefore the square on AD (the whole with the added straight line) and the square on DB (the added straight line) are together double of the square on AC (the half) and of the square on CD (the straight line made up of the half and the added straight line). Q.E.D.\n\n**USED:** 2.4, 2.6, 2.7, CN1, CN2, CN3, D1.22, D2.1\n**Human refs (from References field):** 1.11, 1.15, 1.29, 1.3, 1.31, 1.32, 1.34, 1.47, 1.5, 1.6, CN1, P5\n**Jaccard:** 0.053 — AI adds ['2.4', '2.6', '2.7', 'CN2', 'CN3', 'D1.22', 'D2.1']; Human adds ['1.11', '1.15', '1.29', '1.3', '1.31', '1.32', '1.34', '1.47', '1.5', '1.6', 'P5']",
+  "ai_used": [
+    "2.4",
+    "2.6",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.22",
+    "D2.1"
+  ],
+  "heath_refs": [
+    "1.11",
+    "1.15",
+    "1.29",
+    "1.3",
+    "1.31",
+    "1.32",
+    "1.34",
+    "1.47",
+    "1.5",
+    "1.6",
+    "CN1",
+    "P5"
+  ],
+  "ai_only": [
+    "2.4",
+    "2.6",
+    "2.7",
+    "CN2",
+    "CN3",
+    "D1.22",
+    "D2.1"
+  ],
+  "heath_only": [
+    "1.11",
+    "1.15",
+    "1.29",
+    "1.3",
+    "1.31",
+    "1.32",
+    "1.34",
+    "1.47",
+    "1.5",
+    "1.6",
+    "P5"
+  ],
+  "jaccard": 0.053,
+  "proof_summary": "**Step 1.** Let AB be the given straight line bisected at C, and let BD be added to it in a straight line. We must show that sq(AD) + sq(DB) = 2*sq(AC) + 2*sq(CD), where CD is the straight line made u"
+}

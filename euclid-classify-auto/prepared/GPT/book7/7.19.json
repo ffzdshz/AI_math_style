@@ -1,0 +1,30 @@
+{
+  "proposition": "7.19",
+  "book": 7,
+  "statement": "If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional.",
+  "heath_proof": "Let A, B, C, D be four numbers in proportion, so that, as A is to B, so is C to D; and let A by multiplying D make E, and let B by multiplying C make F; I say that E is equal to F. For let A by multiplying C make G. Since, then, A by multiplying C has made G, and by multiplying D has made E, the number A by multiplying the two numbers C, D has made G, E. Therefore, as C is to D, so is G to E. [VII. 17] But, as C is to D, so is A to B; therefore also, as A is to B, so is G to E. Again, since A by multiplying C has made G, but, further, B has also by multiplying C made F, the two numbers A, B by multiplying a certain number C have made G, F. Therefore, as A is to B, so is G to F. [VII. 18] But further, as A is to B, so is G to E also; therefore also, as G is to E, so is G to F. Therefore G has to each of the numbers E, F the same ratio; therefore E is equal to F. [cf. V. 9]  Again, let E be equal to F; I say that, as A is to B, so is C to D. For, with the same construction, since E is equal to F, therefore, as G is to E, so is G to F. [cf. V. 7] But, as G is to E, so is C to D, [VII. 17] and, as G is to F, so is A to B. [VII. 18]  Therefore also, as A is to B, so is C to D.",
+  "ai_proof_text": "7.19\n**Statement:** If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional.\n\n**Step 1.** Let A, B, C, D be the four numbers in their given order. Form E = AD, F = BC, and G = BD, with the left-hand factor multiplying the right-hand factor in each product. These products are understood as repeated additions. [D7.15] Our path is to compare both E and F with the auxiliary number G, avoiding any interchange of factors.\n\n**Step 2.** Since A and B multiply the same number D to produce E and G, respectively,\nA : B = E : G.\nHere 7.18 applies directly because the common factor D is the number multiplied. [7.18]\n\n**Step 3.** Since B multiplies C and D to produce F and G, respectively,\nC : D = F : G.\nHere 7.17 applies directly because the common factor B is the multiplier. [7.17]\n\n**Step 4.** First suppose that the four numbers are proportional, so that A : B = C : D. [D7.20] Combining this hypothesis with Steps 2 and 3, ratios equal to the same ratio are equal to one another; hence\nE : G = F : G. [5.11]\n\n**Step 5.** Things having the same ratio to the same thing are equal. Therefore E = F, that is, AD = BC: the product of the first and fourth equals the product of the second and third. [5.9]\n\n**Step 6.** Conversely, suppose that AD = BC, so E = F. Equal quantities have the same ratio to the same quantity; therefore\nE : G = F : G. [5.7]\n\n**Step 7.** Combining Step 6 with the identities established in Steps 2 and 3 gives A : B = C : D. [5.11] Thus the four numbers are proportional. [D7.20] Both implications are proved.\n\n**USED:** 5.11, 5.7, 5.9, 7.17, 7.18, D7.15, D7.20\n**Human refs (from References field):** 5.7, 5.9, 7.17, 7.18\n**Jaccard:** 0.571 — AI adds ['5.11', 'D7.15', 'D7.20']",
+  "ai_used": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "7.17",
+    "7.18",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "5.7",
+    "5.9",
+    "7.17",
+    "7.18"
+  ],
+  "ai_only": [
+    "5.11",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let A, B, C, D be the four numbers in their given order. Form E = AD, F = BC, and G = BD, with the left-hand factor multiplying the right-hand factor in each product. These products are un"
+}

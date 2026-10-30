@@ -1,0 +1,48 @@
+{
+  "proposition": "10.82",
+  "book": 10,
+  "statement": "To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.",
+  "heath_proof": "Let AB be the minor straight line, and let BC be an annex to AB; therefore AC, CB are straight lines incommensurable in square which make the sum of the squares on them rational, but twice the rectangle contained by them medial. [X. 76] I say that no other straight line can be annexed to AB fulfilling the same conditions. For, if possible, let BD be so annexed; therefore AD, DB are also straight lines incommensurable in square which fulfil the aforesaid conditions. [X. 76] Now, since the excess of the squares on AD, DB over the squares on AC, CB is also the excess of twice the rectangle AD, DB over twice the rectangle AC, CB, while the squares on AD, DB exceed the squares on AC, CB by a rational area, for both are rational, therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area: which is impossible, for both are medial. [X. 26] Therefore to a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes the squares on them added together rational, but twice the rectangle contained by them medial.",
+  "ai_proof_text": "10.82\n**Statement:** To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.\n\n**Step 1.** Let x be the given minor straight line. By the defining characterization in 10.76, there are straight lines a>b such that a=x+b, the lines a and b are incommensurable in square, a²+b² is rational, and ab is medial. Here t² denotes the square on t, and st denotes the rectangle contained by s and t. [10.76]\n\n**Step 2.** The area 2ab is also medial. Indeed, let m be the medial straight line whose square equals the medial area ab. [10.21] The lines m and 2m are commensurable in length, since m measures both; therefore 2m is medial. [D10.1.1, 10.23] Consequently, the rectangle contained by m and 2m is medial. [10.24] This rectangle equals twice m², and hence equals 2ab. [2.1, CN2, CN1] Thus b is an annex satisfying all the required conditions.\n\n**Step 3.** Suppose that two distinct annexes satisfy these conditions. Relabel their representations as a=x+b and c=x+d, with d>b. Writing d=b+h, where h>0, gives c=a+h. [CN2] Set\nR=a²+b², S=c²+d², M=2ab, and N=2cd.\nBy hypothesis, R and S are rational, while M and N are medial. Since c>a and d>b, expansion of the squares by 2.4 shows that S contains R together with positive additional areas. Hence S>R. [2.4, CN5] Let Δ=S−R.\n\n**Step 4.** The positive area Δ is rational. To see this explicitly, let Q be the square on the assigned rational straight line. Both R and S are commensurable with Q, and hence with one another. [D10.1.4, 10.12] Since S=R+Δ and S is commensurable with R, the converse part of 10.15 makes Δ commensurable with R. [10.15] Therefore Δ is commensurable with Q, and so is rational. [10.12, D10.1.4]\n\n**Step 5.** Applying 2.7 to a=x+b and c=x+d gives\nR=x²+M and S=x²+N. [2.7]\nSubstitute these equalities into S=R+Δ and subtract the common area x². The result is\nN=M+Δ. [CN2, CN3]\nThis is the direct area-comparison route: 2.7 identifies the difference of the rational square-sums with the difference of the medial double rectangles, bringing precisely 10.26 into application.\n\n**Step 6.** Thus the medial area N exceeds the medial area M by the positive rational area Δ. This is impossible, since a medial area does not exceed a medial area by a rational area. [10.26] Therefore two distinct qualifying annexes cannot exist. Together with the existence established in Steps 1–2, this proves that to the given minor straight line exactly one straight line can be annexed satisfying all the stated conditions.\n\n**USED:** 10.12, 10.15, 10.21, 10.23, 10.24, 10.26, 10.76, 2.1, 2.4, 2.7, CN1, CN2, CN3, CN5, D10.1.1, D10.1.4\n**Human refs (from References field):** 10.26, 10.76\n**Jaccard:** 0.125 — AI adds ['10.12', '10.15', '10.21', '10.23', '10.24', '2.1', '2.4', '2.7', 'CN1', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.23",
+    "10.24",
+    "10.26",
+    "10.76",
+    "2.1",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.76"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.23",
+    "10.24",
+    "2.1",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let x be the given minor straight line. By the defining characterization in 10.76, there are straight lines a>b such that a=x+b, the lines a and b are incommensurable in square, a²+b² is r"
+}

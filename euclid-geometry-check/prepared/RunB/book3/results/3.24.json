@@ -1,0 +1,26 @@
+{
+  "proposition": "3.24",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "After superposition, A is placed on C and AB along CD, so B coincides with D (since AB = CD)",
+      "type": "point_coincidence"
+    },
+    {
+      "step": "Step 3",
+      "claim": "After AB coincides with CD, segment AEB either coincides with CFD, or falls inside, outside, or intersects it",
+      "type": "exhaustive_cases"
+    },
+    {
+      "step": "Step 4",
+      "claim": "If segments do not coincide, then on the same straight line CD, on the same side, there exist two similar but unequal segments of circles",
+      "type": "same_side_placement"
+    }
+  ],
+  "configuration_map": "Two equal straight lines AB and CD with similar circle segments AEB and CFD. After superposition (A placed on C, AB along CD), B coincides with D. The segment AEB is placed on the same side of CD as CFD. If non-coincident, two similar unequal segments exist on the same line on the same side, contradicting 3.23.",
+  "pass_reason": "The proof makes minimal spatial claims (superposition placement, same-side positioning) that are all mutually consistent. The superposition method validly places AEB on the same side as CFD, and non-coincidence correctly yields the configuration forbidden by Proposition 3.23. No angle decompositions, no interior/exterior point claims, and no ray betweenness issues arise."
+}

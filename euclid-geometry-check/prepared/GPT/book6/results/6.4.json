@@ -1,0 +1,61 @@
+{
+  "proposition": "6.4",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Assume AB >= DE; if AB = DE then triangles are congruent by I.26; otherwise AB > DE",
+      "type": "magnitude comparison"
+    },
+    {
+      "step": "Step 3",
+      "claim": "P is placed on segment AB with AP = DE, so P lies strictly between A and B (since AB > DE > 0)",
+      "type": "point position (betweenness)"
+    },
+    {
+      "step": "Step 3",
+      "claim": "PQ is drawn through P parallel to BC, meeting AC at Q, with Q between A and C",
+      "type": "point position (betweenness)"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle PAQ = angle BAC because P lies on ray AB and Q lies on ray AC (same vertex angle at A)",
+      "type": "angle identity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle APQ = angle ABC by I.29 (corresponding angles with PQ parallel to BC)",
+      "type": "angle equality from parallel lines"
+    },
+    {
+      "step": "Step 5",
+      "claim": "PQ parallel to BC cuts sides AB and AC proportionally: AP:PB = AQ:QC (VI.2)",
+      "type": "proportional segments from parallel line"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Alternation gives AP:AQ = PB:QC (V.16)",
+      "type": "proportion manipulation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AP + PB = AB since P is between A and B",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AQ + QC = AC since Q is between A and C",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "(AP+PB):(AQ+QC) = AP:AQ by V.12, hence AB:AC = DE:DF",
+      "type": "proportion from segment sums"
+    }
+  ],
+  "configuration_map": "Triangle ABC with vertices A, B, C. Triangle DEF with vertices D, E, F. Equiangular correspondence: angle BAC = angle EDF, angle ABC = angle DEF, angle ACB = angle DFE. Point P on segment AB with AP = DE, strictly between A and B (since AB > DE). Point Q on segment AC, the intersection of the line through P parallel to BC with side AC; Q lies strictly between A and C. Triangle APQ is congruent to triangle DEF (by ASA via I.26). Line PQ is parallel to side BC and lies entirely within triangle ABC. The configuration is a standard parallel intercept within a triangle with no auxiliary points outside the triangle or ambiguous positioning.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places P strictly between A and B and Q strictly between A and C via a parallel line, with no angle decompositions, no interior/exterior ambiguity, and no ray-ordering issues. Every proportion and angle identity follows directly from the established positions. The proof is a clean parallel-line proportionality argument with no configuration tension."
+}

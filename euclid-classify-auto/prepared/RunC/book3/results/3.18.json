@@ -1,0 +1,13 @@
+{
+  "proposition": "3.18",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs use the same proof-by-contradiction structure: assume FC is not perpendicular to DE, draw FG perpendicular to DE, establish that angle FGC is right and angle FCG is acute (I.17), then conclude FC > FG (I.19). The key intermediate conclusions through step 3 are identical in both proofs. The proofs diverge only in how they articulate the final contradiction: Heath compresses it into FC = FB (radii) so FB > FG which is impossible, while the AI expands it by explicitly arguing that G lies inside the circle (D1.15), so DE cuts the circle (3.2, 3.16), contradicting tangency (D3.2). This divergence is a matter of citation depth, not a different logical backbone. The AI over-cites by including construction references (1.12), definitions (D1.10, D1.15, D3.2), a postulate (P1), and substantive propositions (3.2, 3.16) that merely expand the contradiction step Heath handles tersely. Since heath_only is empty, every Heath citation appears in the AI set, confirming no substantive step is missing. Q2 Case A applies: same backbone, different depth. Classification is G.",
+  "jaccard": 0.222,
+  "ai_citations": "1.12|1.17|1.19|3.16|3.2|D1.10|D1.15|D3.2|P1",
+  "heath_citations": "1.17|1.19",
+  "ai_only": "1.12|3.16|3.2|D1.10|D1.15|D3.2|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

@@ -1,0 +1,563 @@
+# Book 4 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 4.1
+**Statement:** Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle.
+
+**Step 1.** Let BCD be the given circle with center A, and let E be the given straight line which is not greater than the diameter of circle BCD.
+
+**Step 2.** Draw a diameter BC of circle BCD through center A. [P1, D1.17]
+
+**Step 3.** Now E is either equal to BC or less than BC.
+
+**Step 4.** If E equals BC, then BC has its extremities B and C on the circumference of circle BCD, so BC is fitted into circle BCD [D4.7], and BC equals the given line E. The problem is solved in this case.
+
+**Step 5.** If E is less than BC, then since E < BC, by Proposition 1.3 we can cut off from BC a straight line CF equal to E, so that CF = E. [1.3]
+
+**Step 6.** With center C and distance CF, describe a circle FGH. [P3]
+
+**Step 7.** Since C lies on the circumference of circle BCD, and CF is at most equal to the diameter BC (because CF = E and E is not greater than BC), the circle FGH meets the circumference of circle BCD at some point G.
+
+**Step 8.** Join CG. [P1]
+
+**Step 9.** Since C is the center of circle FGH, and both F and G lie on the circumference of circle FGH, we have CG = CF. [D1.15]
+
+**Step 10.** But CF = E by construction (Step 5). Therefore CG = E. [CN1]
+
+**Step 11.** Now both C and G lie on the circumference of circle BCD, so CG is a straight line fitted into circle BCD. [D4.7]
+
+**Step 12.** Therefore, into the given circle BCD, a straight line CG has been fitted equal to the given straight line E which is not greater than the diameter. Q.E.F.
+
+**USED:** 1.3, CN1, D1.15, D1.17, D4.7, P1, P3
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['1.3', 'CN1', 'D1.15', 'D1.17', 'D4.7', 'P1', 'P3']
+
+## Proposition 4.2
+**Statement:** In a given circle to inscribe a triangle equiangular with a given triangle.
+
+**Step 1.** Let ABC be the given circle, and let DEF be the given triangle. It is required to inscribe in circle ABC a triangle equiangular with triangle DEF.
+
+**Step 2.** Let GH be drawn touching the circle ABC at the point A [3.16, by first taking the center and then drawing the tangent].
+
+**Step 3.** On the straight line GH, at the point A on it, construct the angle GAB equal to the angle DEF [1.23].
+
+**Step 4.** On the straight line GH, at the point A on it, construct the angle HAC equal to the angle DFE [1.23].
+
+**Step 5.** Join BC [P1].
+
+**Step 6.** Since GH touches the circle ABC at A, and AB is a chord drawn from the point of tangency A, the angle GAB is equal to the angle ACB in the alternate segment of the circle [3.32].
+
+**Step 7.** But the angle GAB was made equal to the angle DEF [Step 3]. Therefore the angle ACB is equal to the angle DEF [CN1].
+
+**Step 8.** Since GH touches the circle ABC at A, and AC is a chord drawn from the point of tangency A, the angle HAC is equal to the angle ABC in the alternate segment of the circle [3.32].
+
+**Step 9.** But the angle HAC was made equal to the angle DFE [Step 4]. Therefore the angle ABC is equal to the angle DFE [CN1].
+
+**Step 10.** Since the two angles ACB and ABC of triangle ABC have been proved equal to the two angles DEF and DFE of triangle DEF respectively, the remaining angle BAC is equal to the remaining angle EDF [1.32, CN3]. For the three angles of each triangle are together equal to two right angles, and since two pairs are respectively equal, the remainders must be equal.
+
+**Step 11.** Therefore triangle ABC is equiangular with triangle DEF, and it has been inscribed in the circle ABC [D4.3].
+
+**Step 12.** Therefore in the given circle a triangle equiangular with the given triangle has been inscribed. Q.E.F.
+
+**USED:** 1.23, 1.32, 3.16, 3.32, CN1, CN3, D4.3, P1
+**Human refs (from References field):** 1.23, 1.32, 3.16, 3.32
+**Jaccard:** 0.500 — AI adds ['CN1', 'CN3', 'D4.3', 'P1']
+
+## Proposition 4.3
+**Statement:** About a given circle to circumscribe a triangle equiangular with a given triangle.
+
+**Step 1.** Let ABC be the given circle and DEF the given triangle. It is required to circumscribe about circle ABC a triangle equiangular with triangle DEF.
+
+**Step 2.** Produce EF in both directions to points G and H, so that GE-E-F-H are collinear, with G beyond E and H beyond F [P2].
+
+**Step 3.** Find the center K of circle ABC [3.1]. Draw any radius KB [P1].
+
+**Step 4.** At the point K on the line KB, construct angle BKA equal to angle DEG on one side, and angle BKC equal to angle DFH on the other side, where A and C are the points where the second rays of these angles meet the circumference [1.23].
+
+**Step 5.** Through A, draw the straight line LA perpendicular to KA at A; through B, draw the straight line LM perpendicular to KB at B; and through C, draw the straight line MC perpendicular to KC at C [3.16]. Since each of these lines is drawn at right angles to a diameter of the circle at its extremity, each of them touches the circle and does not cut it [3.16].
+
+**Step 6.** Let L be the point where the tangent at A meets the tangent at B, and let M be the point where the tangent at B meets the tangent at C, and let N be the point where the tangent at A meets the tangent at C. Then LMN is a triangle circumscribed about circle ABC, since each side of triangle LMN touches the circle [D4.4].
+
+**Step 7.** Consider the quadrilateral KBLA. The angle KAL is a right angle and the angle KBL is a right angle, since the tangent at each point is perpendicular to the radius at that point [3.16]. The four angles of quadrilateral KBLA equal four right angles [1.32, applied to the two triangles formed by a diagonal of the quadrilateral]. Since angle KAL + angle KBL = two right angles, it follows that angle AKB + angle ALB = two right angles.
+
+**Step 8.** Now, since GEF is a straight line, angle DEG + angle DEF = two right angles [1.13]. By construction, angle AKB = angle DEG [Step 4]. Since angle AKB + angle ALB = two right angles and angle DEG + angle DEF = two right angles, and angle AKB = angle DEG, therefore angle ALB = angle DEF.
+
+**Step 9.** Consider the quadrilateral KBMC. The angle KBM is a right angle and the angle KCM is a right angle [3.16]. By the same reasoning as in Step 7, the four angles of KBMC equal four right angles, so angle BKC + angle BMC = two right angles.
+
+**Step 10.** Since EFH is a straight line, angle DFE + angle DFH = two right angles [1.13]. By construction, angle BKC = angle DFH [Step 4]. Since angle BKC + angle BMC = two right angles and angle DFH + angle DFE = two right angles, and angle BKC = angle DFH, therefore angle BMC = angle DFE.
+
+**Step 11.** The three angles of triangle LMN sum to two right angles, and the three angles of triangle DEF sum to two right angles [1.32]. We have shown angle ALB = angle DEF and angle BMC = angle DFE. That is, angle L = angle E and angle M = angle F. Therefore the remaining angles are equal: angle N = angle D.
+
+**Step 12.** Therefore triangle LMN has been circumscribed about the given circle ABC, and it is equiangular with the given triangle DEF, which is what was required [D4.4].
+
+**USED:** 1.13, 1.23, 1.32, 3.1, 3.16, D4.4, P1, P2
+**Human refs (from References field):** 1.13, 1.23, 1.32, 3.1, 3.16, 3.18
+**Jaccard:** 0.556 — AI adds ['D4.4', 'P1', 'P2']; Human adds ['3.18']
+
+## Proposition 4.4
+**Statement:** In a given triangle to inscribe a circle.
+
+**Step 1.** Let ABC be the given triangle. It is required to inscribe a circle in triangle ABC.
+
+**Step 2.** Bisect angle ABC by line BD and bisect angle BCA by line CD, where D is the point at which these bisectors meet inside the triangle [1.9].
+
+**Step 3.** From point D, draw DE perpendicular to AB, DF perpendicular to BC, and DG perpendicular to AC [1.12].
+
+**Step 4.** Consider triangles BED and BFD. Since BD bisects angle ABC, angle EBD equals angle FBD. The angles BED and BFD are both right angles by construction. The side BD is common to both triangles. Therefore, by the angle-angle-side criterion, triangle BED is congruent to triangle BFD, and hence DE equals DF [1.26].
+
+**Step 5.** Consider triangles CFD and CGD. Since CD bisects angle BCA, angle FCD equals angle GCD. The angles DFC and DGC are both right angles by construction. The side CD is common to both triangles. Therefore, by the angle-angle-side criterion, triangle CFD is congruent to triangle CGD, and hence DF equals DG [1.26].
+
+**Step 6.** Since DE equals DF and DF equals DG, it follows that DE equals DG, and therefore DE, DF, and DG are all equal to one another [CN1].
+
+**Step 7.** With center D and radius DE, describe a circle EFG [P3]. This circle passes through E, F, and G, since DE equals DF equals DG.
+
+**Step 8.** The circle EFG touches each side of triangle ABC. For DE is perpendicular to AB at E, so since DE is a radius drawn to the point E on the circumference and AB is at right angles to it at that point, AB does not cut the circle but touches it at E [3.16]. By the same reasoning, BC touches the circle at F, and AC touches the circle at G.
+
+**Step 9.** Therefore the circle EFG has been inscribed in triangle ABC, since the circumference of the circle touches each side of the triangle [D4.5].
+
+Therefore, in the given triangle a circle has been inscribed, which is what was required to do.
+
+**USED:** 1.12, 1.26, 1.9, 3.16, CN1, D4.5, P3
+**Human refs (from References field):** 1.26, 1.9, 3.16, D4.5
+**Jaccard:** 0.571 — AI adds ['1.12', 'CN1', 'P3']
+
+## Proposition 4.5
+**Statement:** About a given triangle to circumscribe a circle.
+
+**Step 1.** Let ABC be the given triangle. It is required to circumscribe a circle about triangle ABC.
+
+**Step 2.** Bisect the straight lines AB and BC at the points D and E respectively [1.10].
+
+**Step 3.** From D, draw DF at right angles to AB, and from E, draw EF at right angles to BC [1.11].
+
+**Step 4.** The lines DF and EF will meet either inside triangle ABC, on the side AC, or outside triangle ABC. First, let them meet inside at F. Join FB, FC, and FA [P1].
+
+**Step 5.** Since AD equals DB (D being the midpoint of AB), and DF is common to triangles ADF and BDF, the two sides AD, DF are equal to the two sides BD, DF respectively. And the angle ADF equals the angle BDF, for each is a right angle [D1.10]. Therefore the base FA equals the base FB [1.4].
+
+**Step 6.** Similarly, since BE equals EC (E being the midpoint of BC), and EF is common to triangles BEF and CEF, and the angle BEF equals the angle CEF (each being a right angle), the base FB equals the base FC [1.4].
+
+**Step 7.** Therefore FA equals FB and FB equals FC. Hence FA equals FC [CN1]. Thus the three straight lines FA, FB, FC are equal to one another.
+
+**Step 8.** Describe a circle with center F and radius equal to any one of FA, FB, FC [P3]. The circle will pass through the remaining vertices as well, since FA, FB, and FC are all equal. Let this circle be called circle ABC.
+
+**Step 9.** Now suppose the lines DF and EF meet on the side AC, at the point F. Join BF [P1].
+
+**Step 10.** By the same reasoning as in Steps 5 and 6, since AD equals DB and DF is common with right angles at D, we have FA equals FB [1.4]. And since BE equals EC and EF is common with right angles at E, we have FB equals FC [1.4]. Therefore FA equals FB equals FC [CN1], and the circle described with center F and radius FA passes through all three vertices [P3].
+
+**Step 11.** Now suppose the lines DF and EF meet outside the triangle ABC, at the point F. Join FA, FB, FC [P1].
+
+**Step 12.** Again by the same reasoning: since AD equals DB and DF is common with right angles at D, we have FA equals FB [1.4]. Since BE equals EC and EF is common with right angles at E, we have FB equals FC [1.4]. Therefore FA equals FB equals FC [CN1], and the circle described with center F and radius FA passes through all three vertices [P3].
+
+**Step 13.** In every case, a circle has been described with center F passing through A, B, and C. Since the circumference of the circle passes through each angle of the triangle, the circle has been circumscribed about triangle ABC [D4.6].
+
+**Step 14.** Therefore, about the given triangle a circle has been circumscribed. Q.E.F.
+
+**USED:** 1.10, 1.11, 1.4, CN1, D1.10, D4.6, P1, P3
+**Human refs (from References field):** 1.10, 1.4
+**Jaccard:** 0.250 — AI adds ['1.11', 'CN1', 'D1.10', 'D4.6', 'P1', 'P3']
+
+## Proposition 4.6
+**Statement:** In a given circle to inscribe a square.
+
+**Step 1.** Let ABCD be the given circle with centre E. Draw a diameter AC through E [D1.17].
+
+**Step 2.** From E, construct the straight line BD at right angles to AC [1.11], and produce it in both directions to meet the circumference of the circle at B and D [P2]. Then BD is also a diameter of the circle, since it passes through the centre E [D1.17].
+
+**Step 3.** Join AB, BC, CD, and DA [P1].
+
+**Step 4.** Since AC is a diameter, the semicircle ABC contains the angle ABC. By 3.31, the angle ABC, being an angle in a semicircle, is a right angle. Similarly, since AC is a diameter, the angle ADC is an angle in a semicircle and is therefore a right angle [3.31]. Since BD is a diameter, the angle BAD is an angle in a semicircle and is therefore a right angle [3.31]. Likewise, the angle BCD is an angle in a semicircle and is therefore a right angle [3.31].
+
+**Step 5.** Thus the quadrilateral ABCD has all four angles right angles.
+
+**Step 6.** Now, since BE and AE are both radii of the circle ABCD, we have BE = AE [D1.15]. Similarly, AE = EC, EC = BE, BE = ED, and ED = AE, since all are radii of the same circle [D1.15].
+
+**Step 7.** Consider triangle AEB and triangle AED. We have AE is common, BE = ED (both radii) [D1.15], and angle AEB is a right angle and angle AED is a right angle (since BD was constructed at right angles to AC) [1.11]. Since angle AEB equals angle AED [P4], by 1.4 (Side-Angle-Side), triangle AEB is congruent to triangle AED. Therefore AB = AD [1.4].
+
+**Step 8.** Consider triangle AEB and triangle BEC. We have BE is common, AE = EC (both radii) [D1.15], and angle AEB equals angle BEC, both being right angles [P4]. By 1.4, triangle AEB is congruent to triangle BEC. Therefore AB = BC [1.4].
+
+**Step 9.** Consider triangle BEC and triangle DEC. We have EC is common, BE = ED (both radii) [D1.15], and angle BEC equals angle DEC, both being right angles [P4]. By 1.4, triangle BEC is congruent to triangle DEC. Therefore BC = CD [1.4].
+
+**Step 10.** From Steps 7, 8, and 9, AB = AD, AB = BC, and BC = CD. Therefore AB = BC = CD = DA [CN1]. The quadrilateral ABCD is equilateral.
+
+**Step 11.** Since ABCD is both equilateral (Step 10) and right-angled (Step 5), it is a square [D1.22].
+
+**Step 12.** Each vertex A, B, C, D lies on the circumference of the circle ABCD. Therefore the square ABCD is inscribed in the given circle [D4.3].
+
+Therefore, in the given circle, a square has been inscribed, which is what was required to do. Q.E.F.
+
+**USED:** 1.11, 1.4, 3.31, CN1, D1.15, D1.17, D1.22, D4.3, P1, P2, P4
+**Human refs (from References field):** 1.4, 3.31, D1.22
+**Jaccard:** 0.273 — AI adds ['1.11', 'CN1', 'D1.15', 'D1.17', 'D4.3', 'P1', 'P2', 'P4']
+
+## Proposition 4.7
+**Statement:** About a given circle to circumscribe a square.
+
+**Step 1.** Let ABCD be the given circle with center E. Draw two diameters AC and BD through E. [P1, D1.17]
+
+**Step 2.** Construct diameter AC perpendicular to diameter BD at the center E, so that angle AEB, angle BEC, angle CED, and angle DEA are each right angles. [1.11, D1.10]
+
+**Step 3.** Through A, draw line FG at right angles to EA (and hence to the diameter AC). Through B, draw line GH at right angles to EB (and hence to the diameter BD). Through C, draw line HK at right angles to EC. Through D, draw line KF at right angles to ED. [1.11]
+
+**Step 4.** Since FG is drawn at right angles to the diameter AC at its extremity A, FG touches the circle at A. Similarly GH touches the circle at B, HK touches the circle at C, and KF touches the circle at D. [3.16]
+
+**Step 5.** Since FG is perpendicular to AC and HK is also perpendicular to AC (both at extremities of the same diameter), FG is parallel to HK. [1.28]
+
+**Step 6.** Since GH is perpendicular to BD and KF is also perpendicular to BD, GH is parallel to KF. [1.28]
+
+**Step 7.** Therefore FGHK is a parallelogram, since both pairs of opposite sides are parallel. [D1.22]
+
+**Step 8.** Consider the quadrilateral AEBG. Angle EAG is a right angle (since FG, and hence AG, is perpendicular to EA). Angle EBG is a right angle (since GH, and hence BG, is perpendicular to EB). Angle AEB is a right angle (by construction in Step 2). Since the angles of quadrilateral AEBG sum to four right angles (as it is composed of two triangles by 1.32), angle AGB must also be a right angle. [1.32]
+
+**Step 9.** Since AEBG has all four angles right and EA = EB (both being radii of circle ABCD, by D1.15), and since AG is parallel to EB (both perpendicular to AE by 1.28) and BG is parallel to EA (both perpendicular to EB by 1.28), AEBG is a rectangle with adjacent sides EA = EB. By 1.34, opposite sides of parallelogram AEBG are equal, so AG = EB and BG = EA. Thus AG = BG = EA = EB. [D1.15, 1.28, 1.34]
+
+**Step 10.** By the same reasoning applied to quadrilateral BECH: angle EBH is right (tangent at B), angle ECH is right (tangent at C), angle BEC is right (construction). So angle BHC is right, and BH = CH = EB = EC. [1.32, 1.34, D1.15]
+
+**Step 11.** By the same reasoning applied to quadrilateral CEDK: angle ECK is right (tangent at C), angle EDK is right (tangent at D), angle CED is right (construction). So angle CKD is right, and CK = DK = EC = ED. [1.32, 1.34, D1.15]
+
+**Step 12.** By the same reasoning applied to quadrilateral DEAF: angle EDF is right (tangent at D), angle EAF is right (tangent at A), angle DEA is right (construction). So angle DFA is right, and DF = AF = ED = EA. [1.32, 1.34, D1.15]
+
+**Step 13.** Now GH = GB + BH = EA + EB (from Steps 9 and 10). And FG = FA + AG = EA + EA (from Steps 12 and 9). Since EA = EB = EC = ED (all radii, D1.15), we have GH = FG = 2·EA. Similarly HK = HC + CK = EC + EC = 2·EA, and KF = KD + DF = ED + ED = 2·EA. Therefore FG = GH = HK = KF, so FGHK is equilateral. [CN1, CN2, D1.15]
+
+**Step 14.** The angle at G is right (from Step 8, angle AGB is right, and G lies on sides FG and GH). Since FGHK is a parallelogram (Step 7) and one angle (at G) is right, all angles of FGHK are right, by 1.34 (opposite angles equal) and 1.29 (co-interior angles supplementary). [1.34, 1.29]
+
+**Step 15.** Since FGHK is both equilateral and right-angled, FGHK is a square. [D1.22]
+
+**Step 16.** Each side of FGHK touches the circle ABCD: FG at A, GH at B, HK at C, and KF at D (established in Step 4). Therefore the square FGHK is circumscribed about the given circle, according to D4.4.
+
+**Step 17.** Therefore, about the given circle, a square has been circumscribed, which is what was required to be done. [D4.4]
+
+**USED:** 1.11, 1.28, 1.29, 1.32, 1.34, 3.16, CN1, CN2, D1.10, D1.15, D1.17, D1.22, D4.4, P1
+**Human refs (from References field):** 1.28, 1.30, 1.34, 3.16, 3.18
+**Jaccard:** 0.188 — AI adds ['1.11', '1.29', '1.32', 'CN1', 'CN2', 'D1.10', 'D1.15', 'D1.17', 'D1.22', 'D4.4', 'P1']; Human adds ['1.30', '3.18']
+
+## Proposition 4.8
+**Statement:** In a given square to inscribe a circle.
+
+**Step 1.** Let ABCD be the given square. By definition (D1.22), ABCD is both equilateral and right-angled, so AB = BC = CD = DA and each angle is a right angle.
+
+**Step 2.** Bisect side AD at E, and bisect side BC at F (1.10). Then AE = ED, and BF = FC.
+
+**Step 3.** Bisect side AB at G, and bisect side DC at H (1.10). Then AG = GB, and DH = HC.
+
+**Step 4.** Join EF and GH (P1). Let K be the point at which EF and GH intersect.
+
+**Step 5.** Since ABCD is a parallelogram (its opposite angles are equal, each being right, and its opposite sides are equal by D1.22), by 1.34 we have AD = BC and AB = DC, and AD is parallel to BC and AB is parallel to DC.
+
+**Step 6.** Since AD = BC and E bisects AD while F bisects BC, we have AE = BF (CN3, as halves of equals are equal). Also AE is parallel to BF, being parts of the parallel lines AD and BC. Therefore by 1.33, since AE and BF are equal and parallel, EB is parallel to AF, and ABFE is a parallelogram. In particular, EF is parallel to AB.
+
+**Step 7.** Similarly, since AB = DC and G bisects AB while H bisects DC, we have AG = DH (CN3). Also AG is parallel to DH, being parts of the parallel lines AB and DC. Therefore by 1.33, GH is parallel to AD.
+
+**Step 8.** Since EF is parallel to AB and AB is perpendicular to AD (the angle DAB being right by D1.22), it follows by 1.29 that the angle AEK (formed by EF meeting AD) is a right angle, since it and the angle DAB are co-interior angles summing to two right angles, and angle DAB is right. More precisely, since EF is parallel to AB and AE is a transversal, the alternate angles GKE and KEB are related to the angles of the square; since angle EAG is right (being the angle of the square), and AGKE is a parallelogram (as AG is parallel to KE and AE is parallel to GK from Steps 6 and 7), the angle AEK is right (1.29, alternate interior angles with the right angle at A transferred through the parallel lines).
+
+**Step 9.** Since AGKE is a parallelogram (AG parallel to EK, and AE parallel to GK, established in Steps 6 and 7), by 1.34 opposite sides are equal: KE = AG and KG = AE.
+
+**Step 10.** Since the square is equilateral, AB = AD. Since G bisects AB, AG = AB/2. Since E bisects AD, AE = AD/2. Therefore AG = AE (CN1, as both equal half the side of the square). Hence KE = AG = AE = KG (CN1).
+
+**Step 11.** By the same reasoning applied to parallelogram GBFK, we have KF = GB = BF and KG = GB. Since GB = AG (G bisects AB) and BF = AE (from Step 6), we have KF = AG = KE (CN1).
+
+**Step 12.** Similarly, from parallelogram KHDE (with KH = ED and KE = DH), KH = ED = AE = KE (CN1). Thus KE = KG = KF = KH, and each equals half the side of the square.
+
+**Step 13.** With center K and radius KE, describe a circle EGFH (P3). Since KE = KG = KF = KH, the points E, G, F, and H all lie on this circle (D1.15).
+
+**Step 14.** Now, KE is perpendicular to AD (established in Step 8). The side AD passes through E, which lies on the circle, and AD is at right angles to the radius KE at E. By 3.16, the straight line drawn at right angles to a diameter from its extremity falls outside the circle. Since KE is a radius and AD is perpendicular to KE at the point E on the circle, AD does not cut the circle, and therefore AD touches the circle at E.
+
+**Step 15.** By entirely analogous reasoning: KG is perpendicular to AB (since GH is parallel to AD and AD is perpendicular to AB, by 1.29 the angle KGA is right), so side AB touches the circle at G. KF is perpendicular to BC (since EF is parallel to AB and AB is perpendicular to BC), so side BC touches the circle at F. KH is perpendicular to DC (since GH is parallel to AD and AD is parallel to and congruent with the configuration at DC), so side DC touches the circle at H.
+
+**Step 16.** Since the circumference of circle EGFH touches each side of square ABCD, the circle is inscribed in the square (D4.5).
+
+Therefore, in the given square ABCD, a circle has been inscribed. Q.E.F.
+
+**USED:** 1.10, 1.29, 1.33, 1.34, 3.16, CN1, CN3, D1.15, D1.22, D4.5, P1, P3
+**Human refs (from References field):** 1.10, 1.31, 1.34, 3.16
+**Jaccard:** 0.231 — AI adds ['1.29', '1.33', 'CN1', 'CN3', 'D1.15', 'D1.22', 'D4.5', 'P1', 'P3']; Human adds ['1.31']
+
+## Proposition 4.9
+**Statement:** About a given square to circumscribe a circle.
+
+**Step 1.** Let ABCD be the given square. By D1.22, all four sides are equal (AB = BC = CD = DA) and all four angles are right angles.
+
+**Step 2.** Draw diagonals AC and BD by P1. Let E be the point at which they intersect.
+
+**Step 3.** Since angle DAB and angle ABC are both right angles (Step 1), the co-interior angles formed by lines DA and CB with transversal AB sum to two right angles. By 1.28, DA is parallel to CB. Similarly, since angle ABC and angle BCD are both right angles, the co-interior angles formed by lines AB and DC with transversal BC sum to two right angles, so AB is parallel to DC by 1.28.
+
+**Step 4.** Since AB is parallel to DC and BD is a transversal, angle ABD = angle BDC as alternate interior angles by 1.29. That is, angle ABE = angle CDE. Similarly, since AB is parallel to DC and AC is a transversal, angle BAC = angle DCA by 1.29. That is, angle BAE = angle DCE.
+
+**Step 5.** In triangles AEB and CED: angle BAE = angle DCE (Step 4), AB = CD (D1.22), and angle ABE = angle CDE (Step 4). By 1.26 (ASA), triangle AEB is congruent to triangle CED. Therefore AE = CE and BE = DE.
+
+**Step 6.** In triangles AEB and AED: AB = AD (D1.22), BE = DE (Step 5), and AE is common. By 1.8 (SSS), triangle AEB is congruent to triangle AED. Therefore angle AEB = angle AED.
+
+**Step 7.** Since E lies on line BD, angles AEB and AED together make the angles on one side of line BD at point E. By 1.13, angle AEB + angle AED equals two right angles. Since angle AEB = angle AED (Step 6), each equals a right angle.
+
+**Step 8.** From the congruence in Step 6, angle EAB = angle EAD. Since angle EAB + angle EAD = angle BAD = a right angle (D1.22), and angle EAB = angle EAD, we have angle EAB + angle EAB equals a right angle, by CN1.
+
+**Step 9.** In triangle AEB, angle AEB is a right angle (Step 7). By 1.32, the three angles of triangle AEB equal two right angles, so angle EAB + angle ABE = two right angles minus one right angle = one right angle. That is, angle EAB + angle ABE equals a right angle.
+
+**Step 10.** From Step 8, angle EAB + angle EAB equals a right angle. From Step 9, angle EAB + angle ABE equals a right angle. By CN1, angle ABE = angle EAB.
+
+**Step 11.** In triangle AEB, since angle EAB = angle ABE (Step 10), the side opposite angle ABE equals the side opposite angle EAB. By 1.6, AE = BE.
+
+**Step 12.** From Step 5, AE = CE and BE = DE. From Step 11, AE = BE. Therefore EA = EB = EC = ED, so all four vertices of the square are equidistant from E.
+
+**Step 13.** With center E and radius EA, describe a circle ABCD by P3. Since EA = EB = EC = ED (Step 12), this circle passes through all four vertices A, B, C, D. By D1.15, all straight lines from E to the circumference are equal, confirming A, B, C, D lie on the circle.
+
+**Step 14.** Since the circumference of the circle passes through each angle of the square ABCD, the circle is circumscribed about the square by D4.6.
+
+Therefore, about the given square ABCD, a circle has been circumscribed, which is what was required to do.
+
+**USED:** 1.13, 1.26, 1.28, 1.29, 1.32, 1.6, 1.8, CN1, D1.15, D1.22, D4.6, P1, P3
+**Human refs (from References field):** 1.6, 1.8
+**Jaccard:** 0.154 — AI adds ['1.13', '1.26', '1.28', '1.29', '1.32', 'CN1', 'D1.15', 'D1.22', 'D4.6', 'P1', 'P3']
+
+## Proposition 4.10
+**Statement:** To construct an isosceles triangle having each of the angles at the base double of the remaining one.
+
+**Step 1.** Let AB be any given straight line. Cut AB at C so that the rectangle contained by AB and BC equals the square on AC [2.11]. That is, AB * BC = AC^2.
+
+**Step 2.** With center A and radius AB, describe the circle BDE [P3].
+
+**Step 3.** Into circle BDE, fit the straight line BD equal to AC, which is not greater than the diameter of the circle since AC is less than AB (the radius) [4.1].
+
+**Step 4.** Join DA and DC [P1].
+
+**Step 5.** Circumscribe a circle ACD about triangle ACD [4.5].
+
+**Step 6.** Since AB * BC = AC^2 (by construction) and BD = AC, we have AB * BC = BD^2. Now B is a point outside circle ACD, the straight line BCA is a secant meeting circle ACD at C and A, and BD meets the circle at D. Since BC * BA = BD^2, the straight line BD touches (is tangent to) circle ACD at D [3.37].
+
+**Step 7.** Since BD is tangent to circle ACD at D and DC is a chord drawn from the point of contact D, the angle BDC equals the angle DAC in the alternate segment [3.32].
+
+**Step 8.** Since A is the center of circle BDE and B, D are on its circumference, AB = AD [D1.15]. Therefore triangle ABD is isosceles, and so angle ABD = angle ADB [1.5].
+
+**Step 9.** Since C lies on segment AB between A and B, the ray from B toward C is the same as the ray from B toward A. Therefore angle DBC = angle DBA = angle ABD.
+
+**Step 10.** In triangle ACD, since side AC is produced to B, the exterior angle BCD equals the sum of the two interior and opposite angles: angle BCD = angle DAC + angle CDA [1.32].
+
+**Step 11.** From Step 8, angle ADB = angle ABD. Since C lies in the interior of angle ADB, we have angle ADB = angle ADC + angle BDC. By Step 7, angle BDC = angle DAC, so angle ABD = angle ADC + angle DAC. Comparing with Step 10, angle ABD = angle BCD.
+
+**Step 12.** From Steps 9 and 11, angle DBC = angle ABD = angle BCD. Thus in triangle BDC, the angles DBC and BCD are equal, so the side opposite angle DBC (namely DC) equals the side opposite angle BCD (namely BD) [1.6]. Therefore DC = BD.
+
+**Step 13.** Since BD = AC (by construction) and DC = BD (by Step 12), we have DC = AC. Therefore triangle ACD is isosceles, and angle CDA = angle DAC [1.5].
+
+**Step 14.** From Step 7, angle BDC = angle DAC, and from Step 13, angle CDA = angle DAC. Therefore angle ABD = angle ADC + angle DAC = angle DAC + angle DAC = 2 * angle DAC (using Step 11). Since angle DAC = angle BAD, we have angle ABD = 2 * angle BAD.
+
+**Step 15.** From Step 8, angle ADB = angle ABD = 2 * angle BAD. Since AB = AD [D1.15], triangle ABD is isosceles [D1.20] with each of the base angles ABD and ADB double of the remaining angle BAD.
+
+Therefore an isosceles triangle ABD has been constructed having each of the angles at the base double of the remaining one, which is what was required to do.
+
+**USED:** 1.32, 1.5, 1.6, 2.11, 3.32, 3.37, 4.1, 4.5, D1.15, D1.20, P1, P3
+**Human refs (from References field):** 1.32, 1.5, 1.6, 2.11, 3.32, 3.37, 4.5
+**Jaccard:** 0.583 — AI adds ['4.1', 'D1.15', 'D1.20', 'P1', 'P3']
+
+## Proposition 4.11
+**Statement:** In a given circle to inscribe an equilateral and equiangular pentagon.
+
+**Step 1.** Let the given circle be ABCDE. It is required to inscribe an equilateral and equiangular pentagon in the circle ABCDE.
+
+**Step 2.** By Proposition 4.10, construct an isosceles triangle FGH such that each of the angles FGH and FHG is double the angle GFH.
+
+**Step 3.** By Proposition 4.2, inscribe in the circle ABCDE a triangle ACD equiangular with triangle FGH, so that angle CAD equals angle GFH, angle ACD equals angle FGH, and angle ADC equals angle FHG. Thus angles ACD and ADC are each double the angle CAD.
+
+**Step 4.** Bisect the angle ACD by the straight line CE, and bisect the angle ADC by the straight line DB [1.9].
+
+**Step 5.** Since angles ACD and ADC are each double angle CAD, and they have been bisected, the five angles DAC, ACE, ECD, CDB, and BDA are all equal to one another.
+
+**Step 6.** Join the straight lines AB, BC, DE, and EA [P1].
+
+**Step 7.** Since the equal angles DAC, ACE, ECD, CDB, and BDA are inscribed angles in the circle ABCDE, and equal inscribed angles in the same circle stand on equal arcs [3.26], the five arcs AB, BC, CD, DE, and EA are all equal to one another.
+
+**Step 8.** Since arcs AB, BC, CD, DE, and EA are all equal, and in the same circle equal arcs are subtended by equal straight lines [3.29], the five straight lines AB, BC, CD, DE, and EA are all equal to one another. Therefore the pentagon ABCDE is equilateral.
+
+**Step 9.** It remains to show that the pentagon is also equiangular. Since arc BC equals arc DE, let the arc ACD be added to each. Then arc ABCD equals arc ACDE [CN2]. The angle AED is the inscribed angle standing on arc ABCD, and the angle BAE is the inscribed angle standing on arc BCDE. But arc BCDE also equals arc ABCD, since arc BC equals arc DE and each has arcs CD appended, and arc AB equals arc EA. Therefore arcs ABCD, BCDE, CDEA, DEAB, and EABC are all equal, since each is the sum of three of the five equal arcs.
+
+**Step 10.** Since these five arcs are equal, the inscribed angles standing on them are equal [3.27]. That is, angle AED (standing on arc ABCD), angle BAE (standing on arc BCDE), angle ABC (standing on arc CDEA), angle BCD (standing on arc DEAB), and angle CDE (standing on arc EABC) are all equal to one another. Therefore the pentagon ABCDE is equiangular.
+
+**Step 11.** Since the pentagon ABCDE is both equilateral and equiangular, and each of its vertices lies on the circumference of the circle ABCDE, an equilateral and equiangular pentagon has been inscribed in the given circle [D4.3]. Q.E.F.
+
+**USED:** 1.32, 1.9, 3.26, 3.27, 3.29, 4.10, 4.2, CN2, D4.3, P1
+**Human refs (from References field):** 1.9, 3.26, 3.27, 3.29, 4.10, 4.2
+**Jaccard:** 0.600 — AI adds ['1.32', 'CN2', 'D4.3', 'P1']
+
+## Proposition 4.12
+**Statement:** About a given circle to circumscribe an equilateral and equiangular pentagon.
+
+**Step 1.** Let ABCDE be the given circle. By Proposition 4.11, inscribe an equilateral and equiangular pentagon ABCDE in the circle, so that the vertices A, B, C, D, E lie on the circumference.
+
+**Step 2.** At each of the points A, B, C, D, E, draw tangent lines to the circle. By Proposition 3.16 (part 2: at any point on a circle, a unique tangent can be drawn), at point A draw a tangent to the circle, and similarly at points B, C, D, E.
+
+**Step 3.** Let the tangent at A and the tangent at B meet at point G; the tangent at B and the tangent at C meet at point H; the tangent at C and the tangent at D meet at point K; the tangent at D and the tangent at E meet at point L; and the tangent at E and the tangent at A meet at point F. Then FGHKL is a pentagon circumscribed about the circle, since each side is tangent to the circle (Definition D4.4).
+
+**Step 4.** Let O be the centre of the circle (it exists by Definition D1.16). Join O to each of A, B, C, D, E, and also join O to each of F, G, H, K, L (by Postulate P1).
+
+**Step 5.** Since GB is tangent to the circle at B, and OB is drawn from the centre to the point of tangency, the angle OBG is right (Proposition 3.18). Similarly, since GA is tangent at A, the angle OAG is right.
+
+**Step 6.** Consider triangle OBG and triangle OAG. We have: angle OBG = angle OAG (both right angles, by Step 5); OB = OA (radii of the same circle, by Definition D1.15); and OG is common. Therefore triangle OBG is congruent to triangle OAG (by Proposition 1.47 and 1.8: since OB = OA, angle OBG = angle OAG = right angle, and OG is common, by the right-angle-hypotenuse-side condition — more precisely, since OB^2 + BG^2 = OG^2 and OA^2 + AG^2 = OG^2 by Proposition 1.47, and OB = OA, we get BG = AG; then by Proposition 1.8, since OA = OB, AG = BG, and OG = OG, the triangles OAG and OBG are congruent). Hence angle AOG = angle BOG.
+
+**Step 7.** By analogous reasoning at each vertex: at H, the tangent at B and the tangent at C meet, so angle BOH = angle COH; at K, angle COK = angle DOK; at L, angle DOL = angle EOL; at F, angle EOF = angle AOF.
+
+**Step 8.** Since ABCDE is an equilateral and equiangular pentagon inscribed in the circle, the arcs AB, BC, CD, DE, EA are all equal (by Proposition 3.26, equal chords in equal circles subtend equal arcs, since AB = BC = CD = DE = EA).
+
+**Step 9.** Equal arcs subtend equal angles at the centre (by Proposition 3.27). Therefore angle AOB = angle BOC = angle COD = angle DOE = angle EOA. Since these five equal angles sum to four right angles (the full angle around O), each central angle equals four-fifths of a right angle.
+
+**Step 10.** From Steps 6 and 7, angle AOG = angle BOG, so each equals half of angle AOB. Similarly angle BOH = angle COH, each half of angle BOC. Since angle AOB = angle BOC (Step 9), we have angle BOG = angle BOH.
+
+**Step 11.** In triangle BOG: angle OBG is right (Step 5), so angle BGO = one right angle minus angle BOG (by Proposition 1.32, the angles of a triangle sum to two right angles). In triangle BOH: angle OBH is right, so angle BHO = one right angle minus angle BOH. Since angle BOG = angle BOH (Step 10), it follows that angle BGO = angle BHO.
+
+**Step 12.** In triangles BOG and BOH: angle OBG = angle OBH (both right, Step 5); OB is common; angle BOG = angle BOH (Step 10). Therefore triangle BOG is congruent to triangle BOH (by Proposition 1.26, AAS congruence). Hence BG = BH and OG = OH.
+
+**Step 13.** By entirely analogous reasoning applied at each successive pair of tangent intersection points: CH = CK (from congruent triangles COH and COK); DK = DL (from congruent triangles DOK and DOL); EL = EF (from congruent triangles EOL and EOF); AF = AG (from congruent triangles AOF and AOG).
+
+**Step 14.** Now GH = GB + BH (the tangent line from G through B to H has the tangent point B between G and H on the tangent line — but more carefully, GH is a side of the circumscribed pentagon, and by the construction GH passes through B; actually G and H are on the same side of the tangent at B). Let us reconsider: the side GH of the circumscribed pentagon is the tangent at B, so GH is the segment of the tangent at B between the intersections with the adjacent tangents. Thus G lies on the tangent at B and also on the tangent at A; H lies on the tangent at B and also on the tangent at C. The side GH of the outer pentagon lies along the tangent at B, so GH = GB + BH. Similarly, HK = HC + CK, KL = KD + DL, LF = LE + EF, FG = FA + AG.
+
+**Step 15.** From Step 12, BG = BH. By analogous congruences, CH = CK, DK = DL, EL = EF, AF = AG (Step 13). Also from Step 12 and its analogues, BG = CH = DK = EL = AF (since these all arise from congruent right triangles with equal radii and equal half-central-angles: specifically, in each case the right triangle has hypotenuse from O to the tangent intersection, one leg equal to the radius, and the angle at O equal to half of the central angle, which is the same for all five by Step 9).
+
+**Step 16.** Therefore GH = BG + BH = 2·BG, and HK = CH + CK = 2·CH. Since BG = CH (Step 15), GH = HK. By the same reasoning, HK = KL = LF = FG. Hence the circumscribed pentagon FGHKL is equilateral.
+
+**Step 17.** For equiangularity: consider angle FGH. From Step 11, angle BGO = one right angle minus half the central angle. By symmetry, angle AGO = one right angle minus half the central angle (from the congruent triangle at A). Thus angle FGH = angle AGO + angle BGO (since angle FGA = angle AGO by the congruence in Step 13's analogue at A, and the ray from G to the tangent at A makes angle AGO with GO). More directly: angle GOH = angle AOG + angle AOB + angle BOH... Let us use a cleaner approach.
+
+**Step 18.** Since OG = OH (Step 12 and its analogue give OG from vertex G equals OH from vertex H — in fact, by Step 15's reasoning, all five distances OF = OG = OH = OK = OL are equal), triangle OGH is isosceles with OG = OH. The angle GOH = angle AOB (since angle GOH = angle GOB + angle BOH = angle AOG + angle BOG... we need: angle GOH = angle GOA + angle AOB + angle BOH... No.) We have angle GOH = angle GOB + angle BOH = (half angle AOB) + (half angle BOC) = half(angle AOB + angle BOC). But actually angle GOB = half angle AOB, and angle BOH = half angle BOC. So angle GOH = half(angle AOB) + half(angle BOC) = half(angle AOB + angle BOC).
+
+**Step 19.** Wait — from Step 6, angle BOG = half of angle AOB, and angle AOG = half of angle AOB. So angle AOG = angle BOG = half(angle AOB). Similarly angle BOH = angle COH = half(angle BOC). The angle GOH at centre O is angle GOB + angle BOH = half(angle AOB) + half(angle BOC). Since angle AOB = angle BOC (Step 9), angle GOH = half(2 · angle AOB) = angle AOB. Similarly, angle HOK = angle BOC, angle KOL = angle COD, angle LOF = angle DOE, angle FOG = angle EOA. Since all central angles AOB = BOC = COD = DOE = EOA are equal (Step 9), all angles GOH = HOK = KOL = LOF = FOG are equal.
+
+**Step 20.** Since OF = OG = OH = OK = OL (all equal, as established: each equals the hypotenuse of a right triangle with leg equal to the radius and the same acute angle at O), and the angles at O between consecutive radii to the outer vertices are all equal (Step 19), the triangles OFG, OGH, OHK, OKL, OLF are all congruent (by Proposition 1.4, since two sides and the included angle are equal). Therefore angle OGH = angle OHK = angle OKL = angle OLG = angle OFG, and angle OGF = angle OHG = angle OKH = angle OLK = angle OFL.
+
+**Step 21.** Hence angle FGH = angle OGF + angle OGH = angle OHG + angle OHK = angle GHK. Similarly all five angles of FGHKL are equal. Therefore the circumscribed pentagon FGHKL is equiangular.
+
+**Step 22.** Since FGHKL is both equilateral (Step 16) and equiangular (Step 21), and each side is tangent to the given circle (Step 3), the equilateral and equiangular pentagon FGHKL has been circumscribed about the given circle ABCDE, as required (Definition D4.4). Q.E.D.
+
+**USED:** 1.26, 1.32, 1.4, 1.47, 1.8, 3.16, 3.18, 3.26, 3.27, 4.11, CN1, CN2, CN3, D1.15, D1.16, D4.4, P1
+**Human refs (from References field):** 1.26, 1.47, 1.8, 3.1, 3.16, 3.18, 3.27, 4.11
+**Jaccard:** 0.389 — AI adds ['1.32', '1.4', '3.26', 'CN1', 'CN2', 'CN3', 'D1.15', 'D1.16', 'D4.4', 'P1']; Human adds ['3.1']
+
+## Proposition 4.13
+**Statement:** In a given pentagon, which is equilateral and equiangular, to inscribe a circle.
+
+**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. We are to inscribe a circle in it.
+
+**Step 2.** Bisect angle BCD by the straight line CF, and bisect angle CDE by the straight line DF, where F is the point at which CF and DF meet [1.9, P1].
+
+**Step 3.** Join FB, FA, and FE [P1].
+
+**Step 4.** Since BC equals DC (the pentagon is equilateral), CF is common, and angle BCF equals angle DCF (CF bisects angle BCD), triangle BCF is congruent to triangle DCF [1.4]. Therefore BF equals DF, and angle CBF equals angle CDF.
+
+**Step 5.** Since the pentagon is equiangular, angle ABC equals angle CDE. Since angle CBF equals angle CDF (Step 4), subtracting, angle ABF equals angle ABC minus angle CBF, which equals angle CDE minus angle CDF, which equals angle EDF [CN3].
+
+**Step 6.** Since angle CDF equals angle EDF (DF bisects angle CDE), and angle CBF equals angle CDF (Step 4), it follows that angle CBF equals angle EDF. But angle ABF also equals angle EDF (Step 5). Therefore angle CBF equals angle ABF, so BF bisects angle ABC.
+
+**Step 7.** Since BC equals AB (the pentagon is equilateral), BF is common, and angle CBF equals angle ABF (Step 6), triangle BCF is congruent to triangle BAF [1.4]. Therefore FC equals FA, and angle BCF equals angle BAF.
+
+**Step 8.** Since CF bisects angle BCD, angle BCF equals half of angle BCD. Since the pentagon is equiangular, angle BCD equals angle EAB. Therefore angle BAF equals half of angle EAB, so FA bisects angle EAB.
+
+**Step 9.** Since DC equals DE (the pentagon is equilateral), DF is common, and angle CDF equals angle EDF (DF bisects angle CDE), triangle DCF is congruent to triangle DEF [1.4]. Therefore FC equals FE, and angle DCF equals angle DEF.
+
+**Step 10.** Since CF bisects angle BCD, angle DCF equals half of angle BCD. Since the pentagon is equiangular, angle BCD equals angle DEA. Therefore angle DEF equals half of angle DEA, so FE bisects angle DEA.
+
+**Step 11.** From F, draw FG perpendicular to AB, FH perpendicular to BC, FK perpendicular to CD, FL perpendicular to DE, and FM perpendicular to EA [1.12].
+
+**Step 12.** Since FA bisects angle EAB (Step 8), angle GAF equals angle MAF. The angles at G and M are right angles, which are equal [P4]. And AF is common to triangles AGF and AMF. Therefore triangle AGF is congruent to triangle AMF [1.26]. Hence FG equals FM.
+
+**Step 13.** Since BF bisects angle ABC (Step 6), angle GBF equals angle HBF. The angles at G and H are right angles, which are equal [P4]. And BF is common to triangles BGF and BHF. Therefore triangle BGF is congruent to triangle BHF [1.26]. Hence FG equals FH.
+
+**Step 14.** Since CF bisects angle BCD (by construction), angle HCF equals angle KCF. The angles at H and K are right angles, which are equal [P4]. And CF is common to triangles CHF and CKF. Therefore triangle CHF is congruent to triangle CKF [1.26]. Hence FH equals FK.
+
+**Step 15.** Since DF bisects angle CDE (by construction), angle KDF equals angle LDF. The angles at K and L are right angles, which are equal [P4]. And DF is common to triangles DKF and DLF. Therefore triangle DKF is congruent to triangle DLF [1.26]. Hence FK equals FL.
+
+**Step 16.** Since FE bisects angle DEA (Step 10), angle LEF equals angle MEF. The angles at L and M are right angles, which are equal [P4]. And EF is common to triangles ELF and EMF. Therefore triangle ELF is congruent to triangle EMF [1.26]. Hence FL equals FM.
+
+**Step 17.** From Steps 12 through 16, FG equals FH, FH equals FK, FK equals FL, FL equals FM, and FM equals FG. Therefore FG, FH, FK, FL, and FM are all equal to one another [CN1].
+
+**Step 18.** With centre F and radius FG, describe a circle GHKLM [P3]. This circle passes through the points G, H, K, L, M, since FG equals FH equals FK equals FL equals FM.
+
+**Step 19.** Since FG is a radius of circle GHKLM and AB is at right angles to FG at the point G on the circle, the line AB, being drawn at right angles to a diameter from its extremity, falls outside the circle and therefore does not cut it [3.16]. Since AB meets the circle at G and does not cut it, AB touches the circle [D3.2]. By the same reasoning, each of the sides BC, CD, DE, and EA touches the circle at H, K, L, and M respectively.
+
+**Step 20.** Therefore the circle GHKLM has been inscribed in the pentagon ABCDE, since its circumference touches each side of the pentagon [D4.5]. This is what was required to do.
+
+**USED:** 1.12, 1.26, 1.4, 1.9, 3.16, CN1, CN3, D3.2, D4.5, P1, P3, P4
+**Human refs (from References field):** 1.26, 1.4, 3.16
+**Jaccard:** 0.250 — AI adds ['1.12', '1.9', 'CN1', 'CN3', 'D3.2', 'D4.5', 'P1', 'P3', 'P4']
+
+## Proposition 4.14
+**Statement:** About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.
+
+**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. It is required to circumscribe a circle about it.
+
+**Step 2.** Bisect each of the angles BCD and CDE by the straight lines CF and DF respectively [1.9], and let these lines meet at the point F. Join FB, FA, and FE [P1].
+
+**Step 3.** Since the pentagon ABCDE is equiangular, angle BCD equals angle CDE. Because CF bisects angle BCD, angle FCD equals half of angle BCD. Because DF bisects angle CDE, angle FDC equals half of angle CDE. Since angle BCD equals angle CDE, it follows that angle FCD equals angle FDC.
+
+**Step 4.** In triangle FCD, since angle FCD equals angle FDC, the side FC equals the side FD [1.6].
+
+**Step 5.** Now consider triangles FCB and FCD. We have BC equals CD (the pentagon is equilateral), FC is common, and angle FCB equals angle FCD (each being half of angle BCD, since CF bisects angle BCD). Therefore by [1.4], triangle FCB is congruent to triangle FCD, and so FB equals FD.
+
+**Step 6.** But FC equals FD [Step 4], so FB equals FC [CN1].
+
+**Step 7.** Next consider triangles FCB and FDE. We have BC equals DE (the pentagon is equilateral), FC equals FD [Step 4], and angle FCB equals angle FDE (angle FCB is half of angle BCD, and angle FDE is half of angle CDE since DF bisects angle CDE, and angle BCD equals angle CDE because the pentagon is equiangular). Therefore by [1.4], triangle FCB is congruent to triangle FDE, and so FB equals FE, and angle FBC equals angle FED.
+
+**Step 8.** Since angle ABC equals angle DEA (the pentagon is equiangular) and angle FBC equals angle FED [Step 7], subtracting equals from equals gives angle ABF equals angle AEF [CN3].
+
+**Step 9.** Now consider triangles ABF and AEF. We have AB equals AE (the pentagon is equilateral), BF equals EF [Step 7], and angle ABF equals angle AEF [Step 8]. Therefore by [1.4], triangle ABF is congruent to triangle AEF. (This confirms the congruence of these triangles, though we require the next step to establish FA equals the common distance.)
+
+**Step 10.** Now consider triangles FAB and FCB. We have AB equals BC (the pentagon is equilateral). Since angle FBC equals half of angle ABC (for: angle FBC equals angle FDC [from the congruence in Step 5, where angle FBC equals angle FDC] which equals half of angle BCD which equals half of angle ABC, since the pentagon is equiangular), it follows that angle ABF equals angle ABC minus angle FBC equals half of angle ABC. Thus angle ABF equals angle CBF. Since BF is common and AB equals BC and angle ABF equals angle CBF, by [1.4] triangle FAB is congruent to triangle FCB, and therefore FA equals FC.
+
+**Step 11.** Collecting results: FA equals FC [Step 10], FC equals FB [Step 6], FB equals FE [Step 7], and FC equals FD [Step 4]. Therefore FA equals FB equals FC equals FD equals FE [CN1].
+
+**Step 12.** With center F and radius FA, describe a circle [P3]. Since FA equals FB equals FC equals FD equals FE, this circle passes through all five vertices A, B, C, D, and E. Therefore the circle is circumscribed about the pentagon ABCDE [D4.6].
+
+**Step 13.** Therefore about the given equilateral and equiangular pentagon, a circle has been circumscribed. Q.E.F.
+
+**USED:** 1.4, 1.6, 1.9, CN1, CN3, D4.6, P1, P3
+**Human refs (from References field):** 1.6
+**Jaccard:** 0.125 — AI adds ['1.4', '1.9', 'CN1', 'CN3', 'D4.6', 'P1', 'P3']
+
+## Proposition 4.15
+**Statement:** In a given circle to inscribe an equilateral and equiangular hexagon.
+
+**Step 1.** Let ABCDEF be the given circle with centre G. Draw a diameter AD of the circle [D1.17].
+
+**Step 2.** With centre D and distance DG, describe a circle GCH [P3]. With centre A and distance AG, describe a circle GFK [P3].
+
+**Step 3.** Since G is the centre of circle ABCDEF, GD equals GC (both are radii) [D1.15]. Since D is the centre of circle GCH, DC equals DG. Therefore GD, DC, and GC are all equal to one another, and triangle GCD is equilateral [D1.20]. Hence angle CGD is one-third of two right angles, that is, one-third of the sum of the angles of triangle GCD [1.32].
+
+**Step 4.** By the same reasoning, since GD equals GE (radii of circle ABCDEF) [D1.15] and DE equals DG (radii of circle GCH), triangle GDE is equilateral [D1.20]. Hence angle DGE is also one-third of two right angles [1.32].
+
+**Step 5.** Since AGD is a straight line (being a diameter), angle AGC plus angle CGD plus angle DGE plus angle EGA equals two straight angles, but angles CGD and DGE together equal the angles on one side. More precisely, angle CGE equals angle CGD plus angle DGE, and since AD is a straight line, angles AGA on the side containing C and E sum as follows: angle AGC plus angle CGD plus angle DGE equals two right angles [1.13]. Since angle CGD equals one-third of two right angles and angle DGE equals one-third of two right angles, angle AGE equals two right angles minus two-thirds of two right angles, which is one-third of two right angles [CN3].
+
+**Step 6.** By the same reasoning on the other side of diameter AD: since GA equals GB (radii) [D1.15] and AB equals AG (radii of circle GFK), triangle GAB is equilateral [D1.20], and angle AGB is one-third of two right angles [1.32]. Since GA equals GF (radii) [D1.15] and AF equals AG (radii of circle GFK), triangle GAF is equilateral [D1.20], and angle AGF is one-third of two right angles [1.32]. Since AD is a straight line, angle AGB plus angle BGD equals two right angles [1.13]. But angle AGB equals one-third of two right angles, so angle BGD equals two right angles minus one-third of two right angles. Now angle BGD equals angle BGC plus angle CGD. Since angle CGD equals one-third of two right angles, angle BGC equals two right angles minus two-thirds of two right angles, which is one-third of two right angles [CN3].
+
+**Step 7.** Similarly, since AD is a straight line, angle AGF plus angle FGD equals two right angles [1.13]. Angle AGF equals one-third of two right angles, so angle FGD equals two right angles minus one-third of two right angles. Now angle FGD equals angle FGE plus angle EGD. Since angle EGD equals one-third of two right angles, angle FGE equals two right angles minus two-thirds of two right angles, which is one-third of two right angles [CN3].
+
+**Step 8.** Therefore the six central angles AGB, BGC, CGD, DGE, EGF, and FGA are all equal, each being one-third of two right angles. Since equal central angles stand on equal arcs [3.26], the six arcs AB, BC, CD, DE, EF, and FA are all equal to one another.
+
+**Step 9.** Since the six arcs are equal, the six chords AB, BC, CD, DE, EF, and FA are also equal to one another [3.29]. Therefore the hexagon ABCDEF is equilateral.
+
+**Step 10.** Since equal arcs are cut off, the remaining arcs on which the inscribed angles stand are also equal. Specifically, each interior angle of the hexagon, for instance angle FAB, is an angle inscribed in the circle standing on arc BCDEF, which consists of five of the six equal arcs. Since each interior angle stands on an arc equal to five-sixths of the whole circumference, and equal arcs subtend equal inscribed angles [3.27], all six interior angles are equal to one another. Therefore the hexagon ABCDEF is equiangular.
+
+**Step 11.** Therefore in the given circle an equilateral and equiangular hexagon has been inscribed, which is what was required [D4.3].
+
+**USED:** 1.13, 1.32, 3.26, 3.27, 3.29, CN3, D1.15, D1.17, D1.20, D4.3, P3
+**Human refs (from References field):** 1.15, 1.32, 1.5, 3.26, 3.27, 3.29
+**Jaccard:** 0.308 — AI adds ['1.13', 'CN3', 'D1.15', 'D1.17', 'D1.20', 'D4.3', 'P3']; Human adds ['1.15', '1.5']
+
+## Proposition 4.16
+**Statement:** In a given circle to inscribe a fifteen-angled figure which shall be both equilateral and equiangular.
+
+**Step 1.** Let the given circle be ABCD. We are required to inscribe in it an equilateral and equiangular fifteen-angled figure.
+
+**Step 2.** Inscribe an equilateral triangle in circle ABCD [4.2], and let AC be a side of this triangle. Inscribe a regular (equilateral and equiangular) pentagon in circle ABCD [4.11], and let AB be a side of this pentagon, where A is a common vertex and B, C are chosen so that B lies on the arc from A to C (on the minor arc side).
+
+**Step 3.** Since the equilateral triangle has three equal sides, and these three equal chords partition the circumference into three arcs, the arcs are equal [3.28]. Therefore arc AC (the arc from A to C not containing B) is one-third of the whole circumference.
+
+**Step 4.** Similarly, since the regular pentagon has five equal sides, its five equal chords partition the circumference into five equal arcs [3.28]. Therefore arc AB is one-fifth of the whole circumference.
+
+**Step 5.** The arc BC, which is the remainder when arc AB is subtracted from arc AC, equals one-third minus one-fifth of the circumference, that is, five-fifteenths minus three-fifteenths, which is two-fifteenths of the whole circumference.
+
+**Step 6.** Bisect arc BC at the point E [3.30]. Then each of the arcs BE and EC equals one-fifteenth of the whole circumference.
+
+**Step 7.** Join the straight lines BE and EC [P1]. Now arc BE is one-fifteenth of the circumference, and BE is the chord subtending this arc. Starting from B, fit into the circle a straight line equal to BE [4.1], and from the endpoint of this chord fit another equal straight line, and so on, proceeding in succession around the entire circumference. Since each fitted chord is equal to BE, and in the same circle equal straight lines cut off equal arcs [3.28], each successive arc equals one-fifteenth of the circumference. Fifteen such arcs exactly exhaust the whole circumference, yielding fifteen consecutive points on the circle.
+
+**Step 8.** Connect all consecutive pairs of these fifteen points by straight lines [P1]. Since all fifteen arcs are equal, the chords subtending them are equal [3.29]. Therefore the inscribed fifteen-sided figure is equilateral.
+
+**Step 9.** Each interior angle of the inscribed fifteen-sided figure is an inscribed angle that stands on an arc consisting of thirteen-fifteenths of the circumference (the whole circumference minus the two adjacent arcs of one-fifteenth each). Since all such arcs are equal, all the inscribed angles standing on them are equal [3.27]. Therefore the fifteen-sided figure is equiangular.
+
+**Step 10.** Since all vertices of the figure lie on the circumference of circle ABCD, the figure is inscribed in the circle [D4.3]. Therefore in the given circle an equilateral and equiangular fifteen-angled figure has been inscribed, which is what was required to do.
+
+**USED:** 3.27, 3.28, 3.29, 3.30, 4.1, 4.11, 4.2, D4.3, P1
+**Human refs (from References field):** 3.30
+**Jaccard:** 0.111 — AI adds ['3.27', '3.28', '3.29', '4.1', '4.11', '4.2', 'D4.3', 'P1']

@@ -1,0 +1,26 @@
+{
+  "proposition": "2.12",
+  "book": 2,
+  "statement": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.",
+  "heath_proof": "Let ABC be an obtuse-angled triangle having the angle BAC obtuse, and let BD be drawn from the point B perpendicular to CA produced;  I say that the square on BC is greater than the squares on BA, AC by twice the rectangle contained by CA, AD. For, since the straight line CD has been cut at random at the point A, the square on DC is equal to the squares on CA, AD and twice the rectangle contained by CA, AD. [II. 4] Let the square on DB be added to each; therefore the squares on CD, DB are equal to the squares on CA, AD, DB and twice the rectangle CA, AD. But the square on CB is equal to the squares on CD, DB, for the angle at D is right; [I. 47] and the square on AB is equal to the squares on AD, DB; [I. 47]therefore the square on CB is equal to the squares on CA, AB and twice the rectangle contained by CA, AD; so that the square on CB is greater than the squares on CA, AB by twice the rectangle contained by CA, AD.",
+  "ai_proof_text": "2.12\n**Statement:** In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.\n\n**Step 1.** Let ABC be a triangle having the angle ABC obtuse [D1.11]. We must show that the square on AC is greater than the squares on AB and BC together by twice the rectangle contained by CB and BD, where D is the foot of the perpendicular from A.\n\n**Step 2.** From point A, draw AD perpendicular to the line BC produced [1.12]. Since the angle at B is obtuse, the foot D of the perpendicular falls on BC produced beyond B, so that D lies outside the segment BC.\n\n**Step 3.** Consider the straight line DC, which is composed of DB and BC. Since DC is cut at B, by Proposition 2.4 the square on DC equals the square on DB plus the square on BC plus twice the rectangle contained by CB and BD. That is, sq(DC) = sq(DB) + sq(BC) + 2*rect(CB, BD) [2.4].\n\n**Step 4.** In triangle ACD, the angle at D is a right angle (since AD is perpendicular to DC). By the Pythagorean theorem, the square on AC equals the square on AD plus the square on DC. That is, sq(AC) = sq(AD) + sq(DC) [1.47].\n\n**Step 5.** Substituting the expression for sq(DC) from Step 3 into Step 4, we obtain: sq(AC) = sq(AD) + sq(DB) + sq(BC) + 2*rect(CB, BD).\n\n**Step 6.** In triangle ABD, the angle at D is a right angle. By the Pythagorean theorem, the square on AB equals the square on AD plus the square on DB. That is, sq(AB) = sq(AD) + sq(DB) [1.47].\n\n**Step 7.** Therefore sq(AD) + sq(DB) = sq(AB). Substituting this into the equation from Step 5, we get: sq(AC) = sq(AB) + sq(BC) + 2*rect(CB, BD) [CN2].\n\n**Step 8.** Hence the square on AC exceeds the sum of the squares on AB and BC by twice the rectangle contained by CB and BD. This is precisely what was to be proved: in obtuse-angled triangles, the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle (namely that on which the perpendicular falls) and the straight line cut off outside by the perpendicular towards the obtuse angle. Q.E.D.\n\n**USED:** 1.12, 1.47, 2.4, CN2, D1.11\n**Human refs (from References field):** 1.47, 2.4\n**Jaccard:** 0.400 — AI adds ['1.12', 'CN2', 'D1.11']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.4",
+    "CN2",
+    "D1.11"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.4"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN2",
+    "D1.11"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let ABC be a triangle having the angle ABC obtuse [D1.11]. We must show that the square on AC is greater than the squares on AB and BC together by twice the rectangle contained by CB and B"
+}

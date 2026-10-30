@@ -1,0 +1,51 @@
+{
+  "proposition": "6.25",
+  "book": 6,
+  "statement": "To construct one and the same figure similar to a given rectilineal figure and equal to another given rectilineal figure.",
+  "heath_proof": "Let ABC be the given rectilineal figure to which the figure to be constructed must be similar, and D that to which it must be equal; thus it is required to construct one and the same figure similar to ABC and equal to D. Let there be applied to BC the parallelogram BE equal to the triangle ABC [I. 44], and to CE the parallelogram CM equal to D in the angle FCE which is equal to the angle CBL. [I. 45] Therefore BC is in a straight line with CF, and LE with EM. Now let GH be taken a mean proportional to BC, CF [VI. 13], and on GH let KGH be described similar and similarly situated to ABC. [VI. 18] Then, since, as BC is to GH, so is GH to CF, and, if three straight lines be proportional, as the first is to the third, so is the figure on the first to the similar and similarly situated figure described on the second, [VI. 19] therefore, as BC is to CF, so is the triangle ABC to the triangle KGH. But, as BC is to CF, so also is the parallelogram BE to the parallelogram EF. [VI. 1] Therefore also, as the triangle ABC is to the triangle KGH, so is the parallelogram BE to the parallelogram EF; therefore, alternately, as the triangle ABC is to the parallelogram BE, so is the triangle KGH to the parallelogram EF. [V. 16] But the triangle ABC is equal to the parallelogram BE; therefore the triangle KGH is also equal to the parallelogram EF. But the parallelogram EF is equal to D; therefore KGH is also equal to D. And KGH is also similar to ABC. Therefore one and the same figure KGH has been constructed similar to the given rectilineal figure ABC and equal to the other given figure D.",
+  "ai_proof_text": "6.25\n**Statement:** To construct one and the same figure similar to a given rectilineal figure and equal to another given rectilineal figure.\n\n**Step 1.** Let ABC be the given rectilineal figure to which the required figure is to be similar, BC being one of its sides, and let D be the given rectilineal figure to which the required figure is to be equal.\n\n**Step 2.** Apply to the straight line BC, in any angle CBL, the parallelogram BCEL (call it BE) equal to the figure ABC [1.44; if ABC is not a triangle, divide it into triangles and apply to BC parallelograms equal to them in succession in the same angle, as in 1.45, the result being a single parallelogram BE on BC equal to ABC].\n\n**Step 3.** Apply to the straight line CE, in the angle FCE equal to the angle CBL, the parallelogram CFME (call it CM) equal to the figure D [1.44, 1.45 as in Step 2], F lying on the side of CE remote from B.\n\n**Step 4.** Since BL is parallel to CE (opposite sides of the parallelogram BE) and BC falls upon them, the interior angles CBL, BCE on the same side are together equal to two right angles [1.29]. But the angle FCE is equal to the angle CBL (Step 3); therefore the angles FCE, BCE are together equal to two right angles [CN2, CN1]. Hence the straight line CE, standing at C on the two straight lines BC, CF, makes the adjacent angles together equal to two right angles, so that BC is in a straight line with CF [1.14].\n\n**Step 5.** In the parallelogram BE the opposite angles CBL, CEL are equal [1.34]; and since CF is parallel to EM (opposite sides of the parallelogram CM) and CE falls upon them, the angles FCE, CEM are together equal to two right angles [1.29]. Since the angle CEL is equal to the angle CBL, that is, to the angle FCE, the angles CEL, CEM are together equal to two right angles [CN1, CN2]; hence LE is in a straight line with EM [1.14].\n\n**Step 6.** Thus the parallelograms BE and CM have their bases BC, CF on the one straight line BF and their opposite sides LE, EM on the one straight line LM, which is parallel to BF; they are therefore under the same height, and so BE : CM = BC : CF [6.1].\n\n**Step 7.** Take GH a mean proportional between BC and CF [6.13], so that BC : GH = GH : CF.\n\n**Step 8.** On GH describe the rectilineal figure KGH similar and similarly situated to ABC, the side GH corresponding to the side BC [6.18].\n\n**Step 9.** Since BC, GH, CF are three proportional straight lines, BC has to CF the ratio duplicate of that which BC has to GH [D5.9]. And the figure ABC has to the similar figure KGH the ratio duplicate of that which the corresponding side BC has to the corresponding side GH [6.20; when ABC is a triangle this is 6.19]. Therefore BC : CF = ABC : KGH.\n\n**Step 10.** But BC : CF = BE : CM (Step 6). Therefore ABC : KGH = BE : CM [5.11].\n\n**Step 11.** Now ABC is equal to BE (Step 2), and equal magnitudes have the same ratio to the same magnitude; therefore ABC : KGH = BE : KGH [5.7]. Hence BE : KGH = BE : CM [5.11].\n\n**Step 12.** Magnitudes to which the same magnitude has the same ratio are equal; therefore KGH = CM [5.9].\n\n**Step 13.** But CM is equal to D (Step 3); therefore KGH is equal to D [CN1]. And KGH is similar to ABC (Step 8). Hence one and the same figure KGH has been constructed similar to the given rectilineal figure ABC and equal to the other given rectilineal figure D. Q.E.F.\n\n*Path note:* From ABC : KGH = BE : CM (Step 10) one could instead alternate [5.16] to ABC : BE = KGH : CM and conclude by 5.14; the route through 5.7 and 5.9 is the more direct and is the one taken.\n\n**USED:** 1.14, 1.29, 1.34, 1.44, 1.45, 5.11, 5.7, 5.9, 6.1, 6.13, 6.18, 6.19, 6.20, CN1, CN2, D5.9\n**Human refs (from References field):** 1.44, 1.45, 5.16, 6.1, 6.13, 6.18, 6.19\n**Jaccard:** 0.353 — AI adds ['1.14', '1.29', '1.34', '5.11', '5.7', '5.9', '6.20', 'CN1', 'CN2', 'D5.9']; Human adds ['5.16']",
+  "ai_used": [
+    "1.14",
+    "1.29",
+    "1.34",
+    "1.44",
+    "1.45",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1",
+    "6.13",
+    "6.18",
+    "6.19",
+    "6.20",
+    "CN1",
+    "CN2",
+    "D5.9"
+  ],
+  "heath_refs": [
+    "1.44",
+    "1.45",
+    "5.16",
+    "6.1",
+    "6.13",
+    "6.18",
+    "6.19"
+  ],
+  "ai_only": [
+    "1.14",
+    "1.29",
+    "1.34",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.20",
+    "CN1",
+    "CN2",
+    "D5.9"
+  ],
+  "heath_only": [
+    "5.16"
+  ],
+  "jaccard": 0.353,
+  "proof_summary": "**Step 1.** Let ABC be the given rectilineal figure to which the required figure is to be similar, BC being one of its sides, and let D be the given rectilineal figure to which the required figure is "
+}

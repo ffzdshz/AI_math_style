@@ -1,0 +1,31 @@
+{
+  "proposition": "6.30",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is a given finite straight line",
+      "type": "basic_setup"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C is a point on segment AB between A and B, constructed by Proposition 2.11 such that rect(AB, CB) = sq(AC)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB, AC, CB are three straight lines (C divides AB into two sub-segments)",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AC is the greater segment and CB is the lesser segment of AB",
+      "type": "segment_ordering"
+    }
+  ],
+  "configuration_map": "Point C: Constructed on segment AB via Proposition 2.11. Lies between A and B, dividing AB into two segments: AC (the greater segment, from A to C) and CB (the lesser segment, from C to B). The relation rect(AB, CB) = sq(AC) holds by construction. C maintains a consistent position on AB throughout all steps. No other auxiliary points or figures are constructed.",
+  "pass_reason": "The proof makes minimal spatial claims -- only that C is a point on segment AB between A and B. All subsequent reasoning is algebraic/proportional (applying 6.17 converse to derive the proportion AB:AC = AC:CB from rect(AB, CB) = sq(AC)). There are no angle decompositions, no inside/outside claims, no ray orderings, and no circle arguments. The few spatial claims present are mutually consistent."
+}

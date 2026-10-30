@@ -1,0 +1,28 @@
+{
+  "proposition": "9.33",
+  "book": 9,
+  "statement": "If a number have its half odd, it is even-times odd only.",
+  "heath_proof": "For let the number A have its half odd; I say that A is even-times odd only. Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times. [VII. Def. 9] I say next that it is also even-times odd only. For, if A is even-times even also, it will be measured by an even number according to an even number; [VII. Def. 8] so that the half of it will also be measured by an even number though it is odd: which is absurd. Therefore A is even-times odd only.",
+  "ai_proof_text": "9.33\n**Statement:** If a number have its half odd, it is even-times odd only.\n\n**Step 1.** Let N be a number whose half is odd. By D7.6, N is even and is divisible into two equal parts; call each part C. So N = 2C, where C is odd.\n\n**Step 2.** Since 2 is even (D7.6: 2 = 1 + 1 is divisible into two equal parts) and C is odd, and 2 measures N according to the odd number C (because N = 2 times C, per D7.15), N is an even-times odd number by D7.9.\n\n**Step 3.** We now show N is even-times odd only, that is, N is not even-times even. Suppose for contradiction that N is also even-times even. Then by D7.8, some even number A measures N according to some even number B, so that N = A times B, with A even and B even.\n\n**Step 4.** Since A is even, A is divisible into two equal parts (D7.6), so A = 2G for some number G. Since B is even, B is divisible into two equal parts (D7.6), so B = 2H for some number H.\n\n**Step 5.** By D7.15, N = A times B means B is added to itself A times. Since B = H + H (from Step 4), each copy of B contributes two copies of H. Therefore N = (H + H) + (H + H) + ... + (H + H), taken A times, which gives 2A copies of H in total. Grouping these into two equal collections of A copies each (by CN2, adding equals to equals), we obtain N = (H + H + ... + H, A copies) + (H + H + ... + H, A copies). By D7.15, A copies of H summed equals A times H, so N = (A times H) + (A times H). Hence N is divisible into two equal parts each equal to A times H, and the half of N is A times H.\n\n**Step 6.** But the half of N is C (from Step 1). Therefore C = A times H.\n\n**Step 7.** By D7.15, C = A times H means H is added to itself A times: C = H + H + ... + H, taken A times. Since A = 2G (from Step 4), this is 2G copies of H. Grouping these 2G copies into two equal collections of G copies each (by CN2), we get C = (H + H + ... + H, G copies) + (H + H + ... + H, G copies) = (G times H) + (G times H). Thus C is divided into two equal parts, each equal to G times H.\n\n**Step 8.** Since C is divisible into two equal parts, C is even (D7.6).\n\n**Step 9.** But C is odd, meaning C is not divisible into two equal parts (D7.7). This contradicts Step 8.\n\n**Step 10.** Therefore the assumption in Step 3 is false: N is not even-times even. Since N is even-times odd (Step 2) and not even-times even, N is even-times odd only. Q.E.D.\n\n**USED:** CN2, D7.15, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8, D7.9\n**Jaccard:** 0.333 — AI adds ['CN2', 'D7.15', 'D7.6', 'D7.7']",
+  "ai_used": [
+    "CN2",
+    "D7.15",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8",
+    "D7.9"
+  ],
+  "ai_only": [
+    "CN2",
+    "D7.15",
+    "D7.6",
+    "D7.7"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let N be a number whose half is odd. By D7.6, N is even and is divisible into two equal parts; call each part C. So N = 2C, where C is odd.  **Step 2.** Since 2 is even (D7.6: 2 = 1 + 1 is"
+}

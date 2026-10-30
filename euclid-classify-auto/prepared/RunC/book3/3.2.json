@@ -1,0 +1,28 @@
+{
+  "proposition": "3.2",
+  "book": 3,
+  "statement": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+  "heath_proof": "Let ABC be a circle, and let two points A, B be taken at random on its circumference; I say that the straight line joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as AEB; let the centre of the circle ABC be taken [III. 1], and let it be D; let DA, DB be joined, and let DFE be drawn through. Then, since DA is equal to DB, the angle DAE is also equal to the angle DBE. [I. 5]And, since one side AEB of the triangle DAE is produced, the angle DEB is greater than the angle DAE. [I. 16]  But the angle DAE is equal to the angle DBE; therefore the angle DEB is greater than the angle DBE. And the greater angle is subtended by the greater side; [I. 19] therefore DB is greater than DE. But DB is equal to DF;  therefore DF is greater than DE,   the less than the greater: which is impossible. Therefore the straight line joined from A to B will not fall outside the circle. Similarly we can prove that neither will it fall on the circumference itself; therefore it will fall within.",
+  "ai_proof_text": "3.2\n**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.\n\n**Step 1.** Let ABC be a circle, and let B and C be two points taken on its circumference. Join BC [P1]. We must show that the straight line BC falls within the circle.\n\n**Step 2.** Find the centre D of circle ABC [3.1]. Join DB and DC [P1].\n\n**Step 3.** Take an arbitrary point F on the line segment BC, between B and C. Join DF [P1].\n\n**Step 4.** Since DB and DC are both radii of circle ABC, we have DB = DC [D1.15].\n\n**Step 5.** Since in triangle DBC the side DB equals the side DC, the angle DBC equals the angle DCB [1.5].\n\n**Step 6.** Consider triangle DFC. The angle BFD is an exterior angle of triangle DFC (since F lies between B and C, so BF is the side of triangle DFC produced beyond F to B). Therefore angle BFD is greater than the interior and opposite angle DCF [1.16]. But angle DCF is the same as angle DCB.\n\n**Step 7.** From Steps 5 and 6, angle BFD is greater than angle DCB, which equals angle DBC. But angle DBC is the same as angle DBF (since F lies on BC between B and C). Therefore angle BFD is greater than angle DBF.\n\n**Step 8.** In triangle DBF, since angle BFD is greater than angle DBF, the side opposite the greater angle is greater than the side opposite the lesser angle [1.19]. Therefore DB is greater than DF.\n\n**Step 9.** Since DB is a radius of circle ABC, and DF is less than DB, the point F is at a distance from the centre D that is less than the radius. Therefore F lies within the circle [D1.15].\n\n**Step 10.** Since F was an arbitrary point on BC between B and C, every such point lies within the circle. The endpoints B and C lie on the circumference. Therefore the straight line BC falls within the circle [D1.15].\n\n**Step 11.** Therefore, if on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle. Q.E.F.\n\n**USED:** 1.16, 1.19, 1.5, 3.1, D1.15, P1\n**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1\n**Jaccard:** 0.667 — AI adds ['D1.15', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1"
+  ],
+  "ai_only": [
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let ABC be a circle, and let B and C be two points taken on its circumference. Join BC [P1]. We must show that the straight line BC falls within the circle.  **Step 2.** Find the centre D "
+}

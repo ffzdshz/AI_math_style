@@ -1,0 +1,39 @@
+{
+  "proposition": "12.5",
+  "book": 12,
+  "statement": "Pyramids which are of the same height and have triangular bases are to one another as the bases.",
+  "heath_proof": "Let there be pyramids of the same height, of which the triangles ABC, DEF are the bases and the points G, H the vertices; I say that, as the base ABC is to the base DEF, so is the pyramid ABCG to the pyramid DEFH. For, if the pyramid ABCG is not to the pyramid DEFH as the base ABC is to the base DEF, then, as the base ABC is to the base DEF, so will the pyramid ABCG be either to some solid less than the pyramid DEFH or to a greater. Let it, first, be in that ratio to a less solid W, and let the pyramid DEFH be divided into two pyramids equal to one another and similar to the whole and into two equal prisms; then the two prisms are greater than the half of the whole pyramid. [XII. 3] Again, let the pyramids arising from the division be similarly divided, and let this be done continually until there are left over from the pyramid DEFH some pyramids which are less than the excess by which the pyramid DEFH exceeds the solid W. [X. I] Let such be left, and let them be, for the sake of argument, DQRS, STUH; therefore the remainders, the prisms in the pyramid DEFH, are greater than the solid W. Let the pyramid ABCG also be divided similarly, and a similar number of times, with the pyramid DEFH; therefore, as the base ABC is to the base DEF, so are the prisms in the pyramid ABCG to the prisms in the pyramid DEFH. [XII. 4] But, as the base ABC is to the base DEF, so also is the pyramid ABCG to the solid W; therefore also, as the pyramid ABCG is to the solid W, so are the prisms in the pyramid ABCG to the prisms in the pyramid DEFH; [V. II]therefore, alternately, as the pyramid ABCG is to the prisms in it, so is the solid W to the prisms in the pyramid DEFH. [V. 16] But the pyramid ABCG is greater than the prisms in it; therefore the solid W is also greater than the prisms in the pyramid DEFH. But it is also less: which is impossible. Therefore the prism ABCG is not to any solid less than the pyramid DEFH as the base ABC is to the base DEF. Similarly it can be proved that neither is the pyramid DEFH to any solid less than the pyramid ABCG as the base DEF is to the base ABC. I say next that neither is the pyramid ABCG to any solid greater than the pyramid DEFH as the base ABC is to the base DEF. For, if possible, let it be in that ratio to a greater solid W; therefore, inversely, as the base DEF is to the base ABC, so is the solid W to the pyramid ABCG. But, as the solid W is to the solid ABCG, so is the pyramid DEFH to some solid less than the pyramid ABCG, as was before proved; [XII. 2, Lemma] therefore also, as the base DEF is to the base ABC, so is the pyramid DEFH to some solid less than the pyramid ABCG: [V. II]which was proved absurd. Therefore the pyramid ABCG is not to any solid greater than the pyramid DEFH as the base ABC is to the base DEF. But it was proved that neither is it in that ratio to a less solid. Therefore, as the base ABC is to the base DEF, so is the pyramid ABCG to the pyramid DEFH.",
+  "ai_proof_text": "12.5\n**Statement:** Pyramids which are of the same height and have triangular bases are to one another as the bases.\n\n**Step 1.** Let there be two pyramids of the same height with triangular bases, the first having base ABC and apex D, and the second having base EFG and apex H. We must prove that pyramid ABCD is to pyramid EFGH as triangle ABC is to triangle EFG.\n\n**Step 2.** Suppose, for the sake of contradiction, that the pyramids are not as the bases. Then as triangle ABC is to triangle EFG, so is pyramid ABCD to some solid W, where W is either less than or greater than pyramid EFGH.\n\n**Step 3.** First suppose W is less than pyramid EFGH. By 12.3, divide pyramid EFGH into two pyramids equal to one another and similar to the whole, and into two equal prisms. The two prisms together are greater than half of pyramid EFGH [12.3].\n\n**Step 4.** Again by 12.3, divide each of the two sub-pyramids in the same manner into two smaller pyramids and two prisms. The prisms obtained at this stage are again greater than half of the respective sub-pyramids [12.3].\n\n**Step 5.** Continue this process of successive division. Since pyramid EFGH exceeds W, and at each stage the prisms removed are greater than half of the remaining pyramidal portions, by repeated application we eventually reach a stage where the sum of the remaining pyramidal portions (the leftover sub-pyramids not yet resolved into prisms) is less than the excess of pyramid EFGH over W [10.1]. That is, the remaining sub-pyramids in EFGH together have total volume less than (pyramid EFGH - W).\n\n**Step 6.** Let the total of all the prisms accumulated in pyramid EFGH at this stage be called S_E. Then since the remaining sub-pyramids are less than (pyramid EFGH - W), we have pyramid EFGH - S_E < pyramid EFGH - W, so S_E > W.\n\n**Step 7.** Now perform exactly the same number of divisions on pyramid ABCD, obtaining prisms at each corresponding stage. Let the total of all accumulated prisms in ABCD be S_A.\n\n**Step 8.** By 12.4, at each stage of division, as triangle ABC is to triangle EFG, so are all the prisms in pyramid ABCD to all the prisms (equal in multitude) in pyramid EFGH. Therefore S_A is to S_E as triangle ABC is to triangle EFG [12.4].\n\n**Step 9.** But by our supposition, as triangle ABC is to triangle EFG, so is pyramid ABCD to W. Therefore S_A is to S_E as pyramid ABCD is to W [5.11].\n\n**Step 10.** Now S_A, being a sum of prisms contained within pyramid ABCD, is less than pyramid ABCD, so S_A < pyramid ABCD. Since S_A : S_E = pyramid ABCD : W, and S_A < pyramid ABCD, it follows that S_E < W [5.14].\n\n**Step 11.** But in Step 6 we showed S_E > W. This is a contradiction. Therefore W is not less than pyramid EFGH.\n\n**Step 12.** Now suppose W is greater than pyramid EFGH. Then as triangle ABC is to triangle EFG, so is pyramid ABCD to W with W > pyramid EFGH. By inversion, as triangle EFG is to triangle ABC, so is W to pyramid ABCD [5.7.corollary, i.e., from the proportion we derive the inverse].\n\n**Step 13.** Since W > pyramid EFGH, we have that W is to pyramid ABCD in a certain ratio. There exists some solid W' such that as triangle EFG is to triangle ABC, so is pyramid EFGH to W'. Since W > pyramid EFGH, and both are in proportion with the same terms, it follows that W' < pyramid ABCD [5.14].\n\n**Step 14.** But now we have: as triangle EFG is to triangle ABC, so is pyramid EFGH to W', with W' less than pyramid ABCD. This is exactly the first case again (with the two pyramids interchanged), which we have already shown leads to a contradiction in Steps 3-11.\n\n**Step 15.** Therefore W is neither less than nor greater than pyramid EFGH, so W equals pyramid EFGH. That is, as triangle ABC is to triangle EFG, so is pyramid ABCD to pyramid EFGH [5.9, from the definition of proportionality].\n\n**Step 16.** Therefore pyramids which are of the same height and have triangular bases are to one another as the bases. Q.E.D.\n\n**USED:** 10.1, 12.3, 12.4, 5.11, 5.14, 5.7, 5.9, CN5\n**Human refs (from References field):** 10.1, 12.2, 12.3, 12.4, 5.16, 5.2\n**Jaccard:** 0.273 — AI adds ['5.11', '5.14', '5.7', '5.9', 'CN5']; Human adds ['12.2', '5.16', '5.2']",
+  "ai_used": [
+    "10.1",
+    "12.3",
+    "12.4",
+    "5.11",
+    "5.14",
+    "5.7",
+    "5.9",
+    "CN5"
+  ],
+  "heath_refs": [
+    "10.1",
+    "12.2",
+    "12.3",
+    "12.4",
+    "5.16",
+    "5.2"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.14",
+    "5.7",
+    "5.9",
+    "CN5"
+  ],
+  "heath_only": [
+    "12.2",
+    "5.16",
+    "5.2"
+  ],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let there be two pyramids of the same height with triangular bases, the first having base ABC and apex D, and the second having base EFG and apex H. We must prove that pyramid ABCD is to p"
+}

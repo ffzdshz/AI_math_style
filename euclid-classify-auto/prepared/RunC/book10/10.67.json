@@ -1,0 +1,43 @@
+{
+  "proposition": "10.67",
+  "book": 10,
+  "statement": "A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.",
+  "heath_proof": "Let AB be bimedial, and let CD be commensurable in length with AB; I say that CD is bimedial and the same in order with AB. For, since AB is bimedial, let it be divided into its medials at E; therefore AE, EB are medial straight lines commensurable in square only. [X. 37, 38] And let it be contrived that, as AB is to CD, so is AE to CF; therefore also the remainder EB is to the remainder FD as AB is to CD. [V. 19] But AB is commensurable in length with CD; therefore AE, EB are also commensurable with CF, FD respectively. [X. 11] But AE, EB are medial; therefore CF, FD are also medial. [X. 23] And since, as AE is to EB, so is CF to FD, [V. 11] and AE, EB are commensurable in square only, CF, FD are also commensurable in square only. [X. 11] But they were also proved medial; therefore CD is bimedial. I say next that it is also the same in order with AB. For since, as AE is to EB, so is CF to FD, therefore also, as the square on AE is to the rectangle AE, EB, so is the square on CF to the rectangle CF, FD; therefore, alternately, as the square on AE is to the square on CF, so is the rectangle AE, EB to the rectangle CF, FD. [V. 16] But the square on AE is commensurable with the square on CF; therefore the rectangle AE, EB is also commensurable with the rectangle CF, FD. If therefore the rectangle AE, EB is rational, the rectangle CF, FD is also rational, [and for this reason CD is a first bimedial]; [X. 37] but if medial, medial, [X. 23] and each of the straight lines AB, CD is a second bimedial. [X. 38] And for this reason CD will be the same in order with AB.",
+  "ai_proof_text": "10.67\n**Statement:** A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.\n\n**Step 1.** Let AB be a bimedial straight line, and let CD be commensurable in length with AB. We must show that CD is also bimedial and the same in order as AB.\n\n**Step 2.** Since AB is bimedial, it is either a first bimedial or a second bimedial. Let AB be divided into its medial terms at E, so that AB = AE + EB, where AE is the greater term. By the definition of bimedial (whether first or second, per 10.37 and 10.38), AE and EB are medial straight lines commensurable in square only.\n\n**Step 3.** Since CD is commensurable in length with AB, let CD : AB be a ratio of commensurable magnitudes. By 10.6, CD and AB have to one another the ratio which a number has to a number. Let this ratio be that of the number p to the number q.\n\n**Step 4.** Divide CD at F such that CF : AE = FD : EB = CD : AB. This can be done because we can set CF such that CF : AE = CD : AB, and then since CD = CF + FD and AB = AE + EB, by 5.19 (componendo applied inversely, i.e., separando), FD : EB = CD : AB as well.\n\n**Step 5.** Since CF : AE = CD : AB and CD is commensurable in length with AB, the ratio CD : AB is a ratio of number to number (by 10.5). Therefore CF : AE is also a ratio of number to number, so by 10.6, CF is commensurable in length with AE. Similarly, FD is commensurable in length with EB.\n\n**Step 6.** Since AE is medial and CF is commensurable in length with AE, by 10.23 CF is also medial. Similarly, since EB is medial and FD is commensurable in length with EB, FD is also medial.\n\n**Step 7.** We now show CF and FD are commensurable in square only. Since AE and EB are commensurable in square only, the squares on AE and EB are commensurable (i.e., have a ratio of number to number). Since CF is commensurable in length with AE, the square on CF is commensurable with the square on AE (by 10.11 applied to the proportion of the squares, or directly because commensurable in length implies commensurable in square). Similarly, the square on FD is commensurable with the square on EB. Since sq(AE) is commensurable with sq(EB), and sq(CF) is commensurable with sq(AE), and sq(FD) is commensurable with sq(EB), by 10.12 sq(CF) is commensurable with sq(FD). Thus CF and FD are commensurable in square.\n\n**Step 8.** Now suppose CF and FD were commensurable in length. Since CF is commensurable in length with AE, and FD is commensurable in length with EB, then by 10.12 AE would be commensurable in length with EB. But AE and EB are commensurable in square only, a contradiction. Therefore CF and FD are not commensurable in length, and hence they are commensurable in square only.\n\n**Step 9.** We now show that the rectangle contained by CF and FD is of the same kind (rational or medial) as the rectangle contained by AE and EB. Since CF : AE = FD : EB (both equal to CD : AB), the rectangle CF.FD has to the rectangle AE.EB the duplicate ratio of CF to AE (by 6.23, since CF : AE = FD : EB). But CF is commensurable in length with AE, so CF : AE is a ratio of number to number (10.5), and the duplicate of a ratio of number to number is also a ratio of number to number (by 8.11). Therefore the rectangle CF.FD has to the rectangle AE.EB a ratio of number to number, so by 10.6 the rectangle CF.FD is commensurable with the rectangle AE.EB.\n\n**Step 10.** Case 1: AB is a first bimedial. Then by 10.37, the rectangle AE.EB is rational. Since the rectangle CF.FD is commensurable with the rectangle AE.EB (Step 9), and a magnitude commensurable with a rational magnitude is rational, the rectangle CF.FD is also rational. Since CF and FD are medial straight lines commensurable in square only (Steps 6, 8) containing a rational rectangle, CD = CF + FD is a first bimedial by 10.37.\n\n**Step 11.** Case 2: AB is a second bimedial. Then by 10.38, the rectangle AE.EB is medial. Since the rectangle CF.FD is commensurable with the rectangle AE.EB (Step 9), and a magnitude commensurable with a medial area is medial (by the definition of medial area, D10.1.4, and 10.23 applied to areas via 10.11), the rectangle CF.FD is also medial. Since CF and FD are medial straight lines commensurable in square only (Steps 6, 8) containing a medial rectangle, CD = CF + FD is a second bimedial by 10.38.\n\n**Step 12.** Therefore in either case, CD is bimedial and the same in order as AB. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.23, 10.37, 10.38, 10.5, 10.6, 5.19, 6.23, 8.11, D10.1.4\n**Human refs (from References field):** 10.11, 10.23, 10.37, 10.38, 5.11, 5.16, 5.19\n**Jaccard:** 0.385 — AI adds ['10.12', '10.5', '10.6', '6.23', '8.11', 'D10.1.4']; Human adds ['5.11', '5.16']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.23",
+    "10.37",
+    "10.38",
+    "10.5",
+    "10.6",
+    "5.19",
+    "6.23",
+    "8.11",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.23",
+    "10.37",
+    "10.38",
+    "5.11",
+    "5.16",
+    "5.19"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.5",
+    "10.6",
+    "6.23",
+    "8.11",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "5.11",
+    "5.16"
+  ],
+  "jaccard": 0.385,
+  "proof_summary": "**Step 1.** Let AB be a bimedial straight line, and let CD be commensurable in length with AB. We must show that CD is also bimedial and the same in order as AB.  **Step 2.** Since AB is bimedial, it "
+}

@@ -1,0 +1,36 @@
+{
+  "proposition": "3.14",
+  "book": 3,
+  "statement": "In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.",
+  "heath_proof": "Let ABDC be a circle, and let AB, CD be equal straight lines in it; I say that AB, CD are equally distant from the centre. For let the centre of the circle ABDC be taken [III. 1], and let it be E; from E let EF, EG be drawn perpendicular to AB, CD, and let AE, EC be joined. Then, since a straight line EF through the centre cuts a straight line AB not through the centre at right angles, it also bisects it. [III. 3] Therefore AF is equal to FB; therefore AB is double of AF. For the same reason CD is also double of CG; and AB is equal to CD; therefore AF is also equal to CG. And, since AE is equal to EC, the square on AE is also equal to the square on EC. But the squares on AF, EF are equal to the square on AE, for the angle at F is right; and the squares on EG, GC are equal to the square on EC, for the angle at G is right; [I. 47] therefore the squares on AF, FE are equal to the squares on CG, GE, of which the square on AF is equal to the square on CG, for AF is equal to CG; therefore the square on FE which remains is equal to the square on EG, therefore EF is equal to EG. But in a circle straight lines are said to be equally distant from the centre when the perpendiculars drawn to them from the centre are equal; [III. Def. 4] therefore AB, CD are equally distant from the centre. Next, let the straight lines AB, CD be equally distant from the centre; that is, let EF be equal to EG. I say that AB is also equal to CD. For, with the same construction, we can prove, similarly, that AB is double of AF, and CD of CG. And, since AE is equal to CE, the square on AE is equal to the square on CE. But the squares on EF, FA are equal to the square on AE, and the squares on EG, GC equal to the square on CE. [I. 47] Therefore the squares on EF, FA are equal to the squares on EG, GC, of which the square on EF is equal to the square on EG, for EF is equal to EG; therefore the square on AF which remains is equal to the square on CG; therefore AF is equal to CG. And AB is double of AF, and CD double of CG; therefore AB is equal to CD.",
+  "ai_proof_text": "3.14\n**Statement:** In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.\n\n**Step 1.** Let ABDC be a circle, and let AB and CD be straight lines in it (neither through the centre). Let the centre E of the circle be found [3.1]. From E draw EF perpendicular to AB, meeting it at F, and EG perpendicular to CD, meeting it at G [1.12]. Join AE and EC [P1].\n\n**Step 2.** EF is a straight line through the centre cutting the straight line AB, which is not through the centre, at right angles; therefore it also bisects AB [3.3], so AF = FB. Likewise EG bisects CD [3.3], so CG = GD. Hence AB is double of AF and CD is double of CG.\n\n**Step 3.** Since E is the centre and A, C lie on the circumference, AE = EC [D1.15].\n\n**Step 4.** Since the angle AFE is right, in the right-angled triangle AFE the square on AE is equal to the squares on AF and FE together: AE² = AF² + FE² [1.47]. Likewise, since the angle CGE is right, EC² = CG² + GE² [1.47].\n\n**Step 5.** Since AE = EC (Step 3), AE² = EC²; therefore AF² + FE² = CG² + GE² [CN1]. This relation holds for any two chords AB, CD of the circle, and both parts of the proposition follow from it.\n\n**Step 6.** (First part.) Suppose AB = CD. Then their halves are equal (Step 2): AF = CG, and so AF² = CG².\n\n**Step 7.** Subtracting the equals AF², CG² from the equals AF² + FE², CG² + GE² of Step 5, the remainders are equal: FE² = GE² [CN3]. Therefore FE = GE.\n\n**Step 8.** FE and GE are the perpendiculars drawn from the centre E to AB and CD respectively, and they are equal; therefore AB and CD are equally distant from the centre [D3.4]. This proves the first part.\n\n**Step 9.** (Second part.) Now suppose instead that AB and CD are equally distant from the centre, that is, the perpendiculars FE and GE from the centre to them are equal [D3.4]: FE = GE, and so FE² = GE².\n\n**Step 10.** Subtracting the equals FE², GE² from the equals AF² + FE², CG² + GE² of Step 5, the remainders are equal: AF² = CG² [CN3]. Therefore AF = CG.\n\n**Step 11.** By Step 2, FB = AF and GD = CG; since AF = CG, also FB = GD [CN1]. Adding equals to equals, AF + FB = CG + GD, that is, AB = CD [CN2]. This proves the second part.\n\n**Step 12.** Therefore in a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another. Q.E.D.\n\n*Path note:* the first part could alternatively be obtained by congruence (triangles AEB, CED by 1.8, then triangles AFE, CGE by 1.26), but the converse would still require 1.47, so the single route through 1.47 and 3.3 is the more direct and uniform choice.\n\n**USED:** 1.12, 1.47, 3.1, 3.3, CN1, CN2, CN3, D1.15, D3.4, P1\n**Human refs (from References field):** 1.47, 3.1, 3.3, D3.4\n**Jaccard:** 0.400 — AI adds ['1.12', 'CN1', 'CN2', 'CN3', 'D1.15', 'P1']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "3.1",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D3.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.47",
+    "3.1",
+    "3.3",
+    "D3.4"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Statement:** In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.  **Step 1.** Let ABDC be a circle, an"
+}

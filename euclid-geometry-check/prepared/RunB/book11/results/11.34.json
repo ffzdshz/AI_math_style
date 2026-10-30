@@ -1,0 +1,46 @@
+{
+  "proposition": "11.34",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Solid AB has base parallelogram EH and perpendicular height AE; solid CD has base parallelogram NQ and perpendicular height CN",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Auxiliary solid FO is constructed on the same base EH as AB but with height equal to CN",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Solids AB and FO share the same base EH, so by 11.25 (cutting the taller at the height of the shorter gives a piece equal to the shorter by 11.29/11.31), their ratio equals AE:CN",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Solids FO and CD have the same height CN, so by 11.32 their ratio equals base EH : base NQ",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Same auxiliary solid FO (base EH, height CN) is reconstructed for the converse",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 9",
+      "claim": "AB and FO share base EH, ratio AB:FO = AE:CN (same spatial relationship as Step 3)",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "FO and CD share height CN, ratio FO:CD = EH:NQ (same spatial relationship as Step 4)",
+      "type": "solid_geometry_configuration"
+    }
+  ],
+  "configuration_map": "Three parallelepipedal solids are in play: (1) AB with base EH and height AE, (2) CD with base NQ and height CN, (3) auxiliary FO with base EH and height CN. Solid FO serves as a bridge: it shares its base with AB (enabling comparison via 11.25, same-base ratio equals height ratio) and shares its height with CD (enabling comparison via 11.32, same-height ratio equals base ratio). The three solids are independent constructions; FO is placed on the same base plane as AB. No point or solid is claimed to be simultaneously in two incompatible positions.",
+  "pass_reason": "The proof is primarily proportional/algebraic, using Book 5 proportion theory to combine two ratio relationships. The spatial claims are limited and mutually consistent: (1) FO shares base EH with AB, (2) FO shares height CN with CD. These two claims are independent and non-contradictory. The construction of FO as a bridge solid linking AB and CD through shared dimensions is a standard and valid technique. No angle decompositions, betweenness claims, or interior/exterior claims are made that could generate spatial contradictions."
+}

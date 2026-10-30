@@ -1,0 +1,13 @@
+{
+  "proposition": "11.26",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals genuinely different logical backbones, leading to classification via Q3. Heath constructs the solid angle directly using perpendiculars to planes (11.11 to drop a perpendicular from an elevated point, 11.12 to erect a perpendicular from a point in a plane, and D11.3 for the definition of perpendicularity to a plane), constructing only two face angles explicitly and then proving the third face angle matches via congruent triangles (I.4, I.8). The AI takes a fundamentally different approach: it constructs all three face angles explicitly at the vertex using I.23 and I.3, verifies the conditions of 11.20 (any two face angles sum to more than the third) and 11.21 (all three sum to less than four right angles), then invokes 11.23 as a black-box existence theorem to assert that a solid angle with those face angles can be constructed. The AI's path is logically valid under Q3: the chain from premises to conclusion is complete, with 11.23 providing the key construction step that replaces Heath's perpendicular-based approach. The large symmetric difference (Jaccard 0.25) reflects this genuine path divergence rather than mere granularity differences.",
+  "jaccard": 0.25,
+  "ai_citations": "1.23|1.3|1.4|1.8|11.20|11.21|11.22|11.23|P1",
+  "heath_citations": "1.23|1.4|1.8|11.11|11.12|D11.3",
+  "ai_only": "1.3|11.20|11.21|11.22|11.23|P1",
+  "heath_only": "11.11|11.12|D11.3",
+  "audit_record": ""
+}

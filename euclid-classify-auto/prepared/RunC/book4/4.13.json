@@ -1,0 +1,38 @@
+{
+  "proposition": "4.13",
+  "book": 4,
+  "statement": "In a given pentagon, which is equilateral and equiangular, to inscribe a circle.",
+  "heath_proof": "Let ABCDE be the given equilateral and equiangular pentagon; thus it is required to inscribe a circle in the pentagon ABCDE. For let the angles BCD, CDE be bisected by the straight lines CF, DF respectively; and from the point F, at which the straight lines CF, DF meet one another, let the straight lines FB, FA, FE be joined. Then, since BC is equal to CD, and CF common, the two sides BC, CF are equal to the two sides DC, CF; and the angle BCF is equal to the angle DCF; therefore the base BF is equal to the base DF, and the triangle BCF is equal to the triangle DCF, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend. [I. 4] Therefore the angle CBF is equal to the angle CDF. And, since the angle CDE is double of the angle CDF, and the angle CDE is equal to the angle ABC, while the angle CDF is equal to the angle CBF; therefore the angle CBA is also double of the angle CBF; therefore the angle ABF is equal to the angle FBC; therefore the angle ABC has been bisected by the straight line BF. Similarly it can be proved that the angles BAE, AED have also been bisected by the straight lines FA, FE respectively. Now let FG, FH, FK, FL, FM be drawn from the point F perpendicular to the straight lines AB, BC, CD, DE, EA. Then, since the angle HCF is equal to the angle KCF, and the right angle FHC is also equal to the angle FKC, FHC, FKC are two triangles having two angles equal to two angles and one side equal to one side, namely FC which is common to them and subtends one of the equal angles; therefore they will also have the remaining sides equal to the remaining sides; [I. 26] therefore the perpendicular FH is equal to the perpendicular FK. Similarly it can be proved that each of the straight lines FL, FM, FG is also equal to each of the straight lines FH, FK; therefore the five straight lines FG, FH, FK, FL, FM are equal to one another. Therefore the circle described with centre F and distance one of the straight lines FG, FH, FK, FL, FM will pass also through the remaining points; and it will touch the straight lines AB, BC, CD, DE, EA, because the angles at the points G, H, K, L, M are right. For, if it does not touch them. but cuts them, it will result that the straight line drawn at right angles to the diameter of the circle from its extremity falls within the circle: which was proved absurd. [III. 16] Therefore the circle described with centre F and distance one of the straight lines FG, FH, FK, FL, FM will not cut the straight lines AB, BC, CD, DE, EA; therefore it will touch them. Let it be described, as GHKLM. Therefore in the given pentagon, which is equilateral and equiangular, a circle has been inscribed.",
+  "ai_proof_text": "4.13\n**Statement:** In a given pentagon, which is equilateral and equiangular, to inscribe a circle.\n\n**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. Bisect angle BCD by the straight line CF and angle CDE by the straight line DF [1.9], and let CF and DF meet at the point F within the pentagon.\n\n**Step 2.** From F, draw FG perpendicular to AB, FH perpendicular to BC, FK perpendicular to CD, FL perpendicular to DE, and FM perpendicular to EA [1.12].\n\n**Step 3.** Since the pentagon is equiangular, angle BCD equals angle CDE. Because CF bisects angle BCD, angle FCB equals half of angle BCD. Because DF bisects angle CDE, angle FDC equals half of angle CDE. Since angle BCD equals angle CDE, it follows that angle FCD equals angle FDC [CN1].\n\n**Step 4.** In triangle FCD, since angle FCD equals angle FDC, the side FC equals the side FD [1.6].\n\n**Step 5.** Now consider triangles FHC and FKC. Angle FHC and angle FKC are both right angles [D1.10]. Angle FCH equals angle FCK since CF bisects angle BCD. The side FC is common. Therefore triangle FHC is congruent to triangle FKC [1.26], and so FH equals FK.\n\n**Step 6.** Similarly, consider triangles FKD and FLD. Angle FKD and angle FLD are both right angles. Angle FDK equals angle FDL since DF bisects angle CDE. The side FD is common. Therefore triangle FKD is congruent to triangle FLD [1.26], and so FK equals FL.\n\n**Step 7.** Since the pentagon is equilateral, BC equals ED; and since it is equiangular, angle FCB equals angle FDE (both being half of equal angles as shown in Step 3). Also FC equals FD [Step 4]. Therefore, by SAS, triangle BCF is congruent to triangle EDF [1.4]. Hence BF equals EF and angle FBC equals angle FED.\n\n**Step 8.** Since angle ABC equals angle DEA (equiangular pentagon) and angle FBC equals angle FED [Step 7], subtracting equals from equals gives angle ABF equals angle AEF [CN3]. Therefore BF bisects angle ABC and EF bisects angle DEA.\n\n**Step 9.** Consider triangles FGB and FHB. Angle FGB and angle FHB are both right angles. Angle FBG equals angle FBH since BF bisects angle ABC [Step 8]. The side BF is common. Therefore triangle FGB is congruent to triangle FHB [1.26], and so FG equals FH.\n\n**Step 10.** Similarly, consider triangles FLE and FME. Angle FLE and angle FME are both right angles. Angle FEL equals angle FEM since EF bisects angle DEA [Step 8]. The side FE is common. Therefore triangle FLE is congruent to triangle FME [1.26], and so FL equals FM.\n\n**Step 11.** From Steps 5, 6, 9, and 10 we have FG equals FH, FH equals FK, FK equals FL, and FL equals FM. Therefore FG equals FH equals FK equals FL equals FM; that is, all five perpendicular distances from F to the sides of the pentagon are equal [CN1].\n\n**Step 12.** With centre F and radius FG, describe the circle GHKLM [P3]. Since FG, FH, FK, FL, FM are all equal to the radius and each is perpendicular to its respective side, each side of the pentagon touches the circle at the foot of the perpendicular. For the straight line drawn at right angles to a radius at its extremity touches the circle [3.16].\n\n**Step 13.** Therefore the circle GHKLM is inscribed in the pentagon ABCDE, since each side of the pentagon touches the circumference of the circle [D4.5]. This is what was required to do.\n\n**USED:** 1.12, 1.26, 1.4, 1.6, 1.9, 3.16, CN1, CN3, D1.10, D4.5, P3\n**Human refs (from References field):** 1.26, 1.4, 3.16\n**Jaccard:** 0.273 — AI adds ['1.12', '1.6', '1.9', 'CN1', 'CN3', 'D1.10', 'D4.5', 'P3']",
+  "ai_used": [
+    "1.12",
+    "1.26",
+    "1.4",
+    "1.6",
+    "1.9",
+    "3.16",
+    "CN1",
+    "CN3",
+    "D1.10",
+    "D4.5",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.26",
+    "1.4",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.12",
+    "1.6",
+    "1.9",
+    "CN1",
+    "CN3",
+    "D1.10",
+    "D4.5",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. Bisect angle BCD by the straight line CF and angle CDE by the straight line DF [1.9], and let CF and DF meet at the point F wit"
+}

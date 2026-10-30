@@ -1,0 +1,32 @@
+{
+  "proposition": "5.20",
+  "book": 5,
+  "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.",
+  "heath_proof": "Let there be three magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and as B is to C, so is E to F; and let A be greater than C ex aequali; I say that D will also be greater than F; if A is equal to C, equal; and, if less, less. For, since A is greater than C, and B is some other magnitude, and the greater has to the same a greater ratio than the less has, [V. 8] therefore A has to B a greater ratio than C has to B. But, as A is to B, so is D to E, and, as C is to B, inversely, so is F to E; therefore D has also to E a greater ratio than F has to E. [V. 13] But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater; [V. 10] therefore D is greater than F.  Similarly we can prove that, if A be equal to C, D will also be equal to F; and if less, less.",
+  "ai_proof_text": "5.20\n**Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.\n\nLet A, B, C be three magnitudes, and D, E, F three others equal to them in multitude, such that A : B = D : E and B : C = E : F. I say that if A > C then D > F; if A = C then D = F; and if A < C then D < F.\n\n**Step 1.** Since B : C = E : F, inversely C : B = F : E [5.7, Porism].\n\n**Step 2.** First let A > C. Since A > C and B is another magnitude, the greater has to the same a greater ratio than the less has; therefore A : B > C : B [5.8].\n\n**Step 3.** Since D : E = A : B (hypothesis) and A : B > C : B (Step 2), therefore D : E > C : B [5.13].\n\n**Step 4.** Since D : E > C : B, there are equimultiples mD, mC of D, C and equimultiples nE, nB of E, B such that mD > nE but mC does not exceed nB [D5.7].\n\n**Step 5.** Since C : B = F : E (Step 1), and mC, mF are equimultiples of C, F while nB, nE are equimultiples of B, E, the fact that mC does not exceed nB implies that mF does not exceed nE [D5.5].\n\n**Step 6.** Thus mD > nE while mF does not exceed nE; therefore D : E > F : E [D5.7].\n\n**Step 7.** D and F have ratios to the same magnitude E, and D : E > F : E; therefore D > F [5.10].\n\n**Step 8.** Next let A = C. Equal magnitudes have to the same the same ratio; therefore A : B = C : B [5.7].\n\n**Step 9.** Since D : E = A : B and A : B = C : B, therefore D : E = C : B [5.11]; and since C : B = F : E (Step 1), therefore D : E = F : E [5.11].\n\n**Step 10.** D and F have the same ratio to the same magnitude E; therefore D = F [5.9].\n\n**Step 11.** Lastly let A < C. Then C > A, so C : B > A : B [5.8].\n\n**Step 12.** Since F : E = C : B (Step 1) and C : B > A : B, therefore F : E > A : B [5.13].\n\n**Step 13.** Since F : E > A : B, there are equimultiples mF, mA of F, A and equimultiples nE, nB of E, B such that mF > nE but mA does not exceed nB [D5.7]; since A : B = D : E, mA not exceeding nB implies mD does not exceed nE [D5.5]; thus mF > nE while mD does not exceed nE, so F : E > D : E [D5.7].\n\n**Step 14.** D and F have ratios to the same magnitude E, and F : E > D : E; therefore F > D [5.10], that is, D < F.\n\nTherefore, if A > C then D > F; if equal, equal; and if less, less. Q.E.D.\n\n*Path note.* 5.13 substitutes an equal ratio only on the greater side of a ratio-inequality; substituting F : E for C : B (or D : E for A : B) on the lesser side (Steps 4–6, 13) is carried out directly from D5.5 and D5.7. The route via alternation (5.16) and 5.14 was not taken because A, B, C and D, E, F need not be magnitudes of the same kind. Inversion (Step 1) uses the Porism to 5.7, cited as 5.7.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.5, D5.7\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.375 — AI adds ['5.11', '5.7', '5.9', 'D5.5', 'D5.7']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_only": [],
+  "jaccard": 0.375,
+  "proof_summary": "## Proposition 5.20 **Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the t"
+}

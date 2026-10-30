@@ -1,0 +1,101 @@
+{
+  "proposition": "12.3",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Edges AD, BD, CD, AB, BC, CA bisected at E, F, G, H, I, J respectively",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EJ parallel to FI parallel to GC, all parallel to CD, each equal to CD/2",
+      "type": "parallelism_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HB parallel to EF parallel to JI, all parallel to AB, each equal to AB/2",
+      "type": "parallelism_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HJ parallel to FG parallel to BI parallel to IC, all parallel to BC, each equal to BC/2",
+      "type": "parallelism_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Four corner pyramids T_D=(D,E,F,G), T_A=(E,A,H,J), T_B=(F,H,B,I), T_C=(G,J,I,C) each have edges half the corresponding edges of ABCD",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "All four corner pyramids are equal and similar to each other and to ABCD",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "EFIJ is a coplanar parallelogram (EF parallel JI, EJ parallel FI) whose plane separates vertices D,C from vertices A,B",
+      "type": "plane_separation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "W = T_D + T_A + U + V: dissection with no overlap and no gap",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "U is a prism with parallel triangular bases EFG and JIC, connected by equal parallel lateral edges EJ, FI, GC",
+      "type": "solid_geometry"
+    },
+    {
+      "step": "Step 5",
+      "claim": "V is a prism with parallel triangular bases HEJ and BFI, connected by equal parallel lateral edges HB, EF, JI",
+      "type": "solid_geometry"
+    },
+    {
+      "step": "Step 6",
+      "claim": "K and L complete EFG and JIC to parallelograms EFGK and JICL; EK, FG, IC, JL are all equal and parallel",
+      "type": "parallelism_equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "KL is equal and parallel to EJ, FI, GC; the solid Z = EFGKJICL is a parallelepiped",
+      "type": "solid_geometry"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Plane through diagonals EG (of face EFGK) and JC (of face JICL) bisects parallelepiped Z; one half is prism U",
+      "type": "solid_bisection"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Plane through diagonals JK (of face EJLK) and IG (of face FICG) also bisects Z; the half R with triangular ends JKL and IGC equals U",
+      "type": "solid_bisection"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Translation by vector (C-B)/2 maps all six vertices of V onto corresponding vertices of R; hence V = R = U",
+      "type": "rigid_motion"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Pyramid T_C (apex G, base JIC) is a proper solid part of prism U",
+      "type": "containment"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Pyramid T_B (apex H, base BFI) is a proper solid part of prism V",
+      "type": "containment"
+    },
+    {
+      "step": "Step 10",
+      "claim": "U + V > T_D + T_A, hence the two prisms exceed half the whole pyramid",
+      "type": "inequality"
+    }
+  ],
+  "configuration_map": "Tetrahedron ABCD with midpoints E (of AD), F (of BD), G (of CD), H (of AB), I (of BC), J (of CA). Verified with coordinates A=(0,0,0), B=(1,0,0), C=(0,1,0), D=(0,0,1). The plane through E,F,I,J (equation y+z=1/2) is a parallelogram that separates {D,C} from {A,B}. The DC-part minus T_D gives prism U (bases EFG at z=1/2 and JIC at z=0, lateral edges along direction (0,1/2,-1/2)). The AB-part minus T_A gives prism V (bases HEJ and BFI, lateral edges along direction (1/2,0,0)). The parallelepiped Z is formed by completing triangular bases of U to parallelograms with auxiliary points K=(-1/2,1/2,1/2) and L=(-1/2,1,0). Volume verification: Vol(ABCD)=1/6, each corner pyramid=1/48, each prism=1/16, total T_D+T_A+U+V = 2/48+2/16 = 1/24+1/8 = 4/24 = 1/6. All positions tracked consistently through every step.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof dissects tetrahedron ABCD via midpoint constructions into two pyramids and two prisms using a genuinely different method from Heath (parallelepiped bisection via XI.28 rather than direct prism comparison via XI.39). Coordinate verification confirms: (1) EFIJ is coplanar and separates the correct vertices, (2) U and V are genuine prisms with parallel bases and equal parallel lateral edges, (3) the parallelepiped Z is correctly constructed and its diagonal bisections yield the correct halves, (4) the translation mapping V to R uses a single displacement vector verified at all six vertex pairs, (5) the containment of corner pyramids within prisms is valid, and (6) volumes sum exactly to the whole. No angle decomposition issues arise since the proof uses only solid dissection arguments."
+}

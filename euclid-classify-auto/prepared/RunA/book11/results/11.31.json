@@ -1,0 +1,13 @@
+{
+  "proposition": "11.31",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The classification was decided at Q1(b). The AI proof constructs a comparison solid RS on base FGPQ (constructed equal to LMNO via I.45) and then claims in Step 5 that solids AB (on base FGHK) and RS (on base FGPQ) are 'on the same base (sharing the side FG in the base plane)' and applies 11.29 or 11.30 to conclude AB equals RS. However, 11.29 and 11.30 both require the solids to be on THE SAME base - meaning the identical base parallelogram - not merely on equal bases that share one edge. FGHK and FGPQ are different parallelograms (equal in area but geometrically distinct), so the hypothesis of 11.29/11.30 is not satisfied. This is not a matter of compression or terseness: the AI explicitly identifies two different bases and then incorrectly claims they constitute 'the same base' for purposes of applying 11.29/11.30. Heath's proof avoids this by using a ratio argument through 11.25, 5.7, 5.9, and 5.11 to compare solids on different but related bases.",
+  "jaccard": 0.125,
+  "ai_citations": "1.31|1.45|11.2|11.27|11.29|11.30|11.7|CN1",
+  "heath_citations": "1.23|1.35|11.24|11.25|11.29|11.30|5.11|5.7|5.9|D11.10",
+  "ai_only": "1.31|1.45|11.2|11.27|11.7|CN1",
+  "heath_only": "1.23|1.35|11.24|11.25|5.11|5.7|5.9|D11.10",
+  "audit_record": "CANDIDATE E — 11.31\n  violated_claim : In Step 5, the AI applies 11.29/11.30 (which require solids on 'the same base') to solids AB (on base FGHK) and RS (on base FGPQ), which are on different (though equal) bases sharing only edge FG\n  failure_mode   : invalid_inference\n  missing_is     : support — there is no proposition or valid argument licensing the conclusion that solids on different bases sharing one edge can be compared via 11.29/11.30, which explicitly require the same base\n  evidence       : AI Step 5: 'solids AB and RS are on the same base (sharing the side FG in the base plane) and of the same height... by Proposition 11.29 the solids are equal. If not, then by Proposition 11.30 they are still equal.' But 11.29 states 'on the same base' meaning the identical parallelogram, not equal parallelograms sharing an edge. FGHK ≠ FGPQ.\n  why_not_terse  : The AI explicitly identifies two distinct bases (FGHK and FGPQ) in Step 4, then incorrectly equates sharing one edge with being 'on the same base' in Step 5. This is not compression of a sound argument but misapplication of a proposition whose central hypothesis is not met. Heath's proof shows the gap is real: comparing solids on equal-but-different bases requires the ratio argument via 11.25, 5.7, 5.9, 5.11, which the AI entirely omits."
+}

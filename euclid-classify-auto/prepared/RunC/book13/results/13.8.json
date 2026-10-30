@@ -1,0 +1,13 @@
+{
+  "proposition": "13.8",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides: both proofs share the same key intermediate conclusions (angle BAC = angle ABE, HE = EA = side of pentagon via I.6, triangle similarity yielding the proportion BE:HE = HE:HB, and HE being the greater segment) but differ in citation depth and supporting arguments. Heath uses VI.33 (angles proportional to arcs) combined with III.28 to establish that angle EAC is double angle BAC, while the AI uses III.27 (equal arcs yield equal inscribed angles) and explicit interior-angle computation to reach the same conclusion. Heath uses V.14 to establish HE > HB from the proportion, while the AI uses I.19. The AI additionally cites 6.17 to convert the proportion into a rectangle-square equality, and explicitly invokes D6.3 for the definition of extreme and mean ratio. Since 3.27 appears inside Heath's proof of 6.33, the AI is partly citing at a lower level, but also takes a genuinely different computational route through explicit angle values rather than arc proportionality. The ai_only items (1.19, 3.27, 6.17, CN1, CN3, D6.3, P1) are a mix of lower-level citations and alternative support for the same backbone conclusions, while the heath_only items (5.14, 6.33) represent Heath's alternative supporting propositions for those same conclusions. The backbone is the same; only the depth and choice of supporting lemmas differs, yielding G.",
+  "jaccard": 0.438,
+  "ai_citations": "1.19|1.32|1.4|1.5|1.6|3.27|3.28|4.14|6.17|6.4|CN1|CN3|D6.3|P1",
+  "heath_citations": "1.32|1.4|1.5|1.6|3.28|4.14|5.14|6.33|6.4",
+  "ai_only": "1.19|3.27|6.17|CN1|CN3|D6.3|P1",
+  "heath_only": "5.14|6.33",
+  "audit_record": ""
+}

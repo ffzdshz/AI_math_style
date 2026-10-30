@@ -1,0 +1,36 @@
+{
+  "proposition": "13.9",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A circle with center O and radius r is given; a regular hexagon with side h and a regular decagon with side d are inscribed in it.",
+      "type": "setup"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The side of the regular hexagon equals the radius: h = r (from 4.15).",
+      "type": "measurement"
+    },
+    {
+      "step": "Step 3",
+      "claim": "When radius r is cut in extreme and mean ratio, the greater segment equals d (the decagon side), so r : d = d : (r - d).",
+      "type": "ratio"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Adding d to r gives h + d (since h = r), to which Proposition 13.5 is applied.",
+      "type": "ratio"
+    },
+    {
+      "step": "Step 7",
+      "claim": "The whole line h + d is cut in extreme and mean ratio with h as the greater segment.",
+      "type": "ratio"
+    }
+  ],
+  "configuration_map": "The configuration is purely linear/algebraic. Circle with center O and radius r. Three line segments: h (hexagon side, equal to r), d (decagon side, the greater segment when r is cut in EMR), and h + d (the combined length). No auxiliary points are constructed. No points are placed inside or outside any figure. No angles are decomposed or compared. The proof operates entirely through ratio relationships: (1) h = r from 4.15, (2) r is cut in EMR with d as the greater segment from 4.10, (3) applying 13.5 to conclude h + d is cut in EMR with h as the greater segment.",
+  "pass_reason": "The proof is purely algebraic/proportional, operating on ratio relationships between line segments (h, d, r) and applying Proposition 13.5 about extreme and mean ratio. There are no geometric configuration claims (no interior/exterior point arguments, no angle decompositions, no ray orderings, no betweenness claims) that could produce spatial contradictions. Each algebraic step follows correctly from the preceding ones."
+}

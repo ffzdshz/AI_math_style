@@ -1,0 +1,21 @@
+{
+  "proposition": "10.26",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G falls between F and H on the line (since CD < AB implies FG < FH), and GH = FH - FG",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Rectangle (FH+FG) x GH = FH^2 - FG^2 by the difference of squares identity (2.1)",
+      "type": "algebraic identity"
+    }
+  ],
+  "configuration_map": "All construction occurs on a single line. EF is a rational straight line. FH is a segment (breadth of medial area AB applied to EF). FG is a segment (breadth of medial area CD applied to EF), with G between F and H since CD < AB. GH = FH - FG is the remaining segment. No triangles, circles, angles, or genuinely spatial constructions exist. The entire proof reasons about commensurability relations among these collinear segments and the areas they determine.",
+  "skip_reason": "The proof is purely algebraic, dealing with commensurability and incommensurability of lengths and areas (Book 10 irrational theory). The only spatial content is the trivial betweenness of G between F and H on a line. There are no angle decompositions, no triangle interior/exterior claims, no circle configurations, and no ray orderings — nothing that could produce a geometric configuration contradiction."
+}

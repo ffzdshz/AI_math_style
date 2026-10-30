@@ -1,0 +1,31 @@
+{
+  "proposition": "13.5",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is between A and B on line AB; D is beyond B on the ray AB with BD = AC. Collinear ordering: A, C, B, D.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AD is decomposed as AD = AB + BD, requiring D beyond B on the line.",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "AC + CB = AB, requiring C between A and B.",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AB > AC since C is a proper interior point of AB (AC is a part of AB).",
+      "type": "segment_comparison"
+    }
+  ],
+  "configuration_map": "All points are collinear in the order A---C---B---D on a single straight line. Point C divides AB into segments AC (greater) and CB (lesser) in extreme and mean ratio. Point D is appended beyond B with BD = AC. Point B thus divides AD into segments AB and BD. This single collinear configuration is established in Step 1 and used consistently throughout all 13 steps. No auxiliary points off the line are constructed, no angles are formed, and no interior/exterior claims are made.",
+  "pass_reason": "The proof operates entirely on a single collinear configuration A-C-B-D and uses purely algebraic manipulation of rectangle and square relationships among the segments. The collinear ordering is established once in Step 1 and every subsequent step is consistent with it. There are no angle decompositions, no interior/exterior claims, and no complex spatial configurations that could give rise to contradictions."
+}

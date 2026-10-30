@@ -1,0 +1,91 @@
+{
+  "proposition": "11.35",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "X lies on elevated ray from A above plane alpha; Y lies on elevated ray from D above plane beta",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "U is foot of perpendicular from X to plane alpha; V is foot of perpendicular from Y to plane beta",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "G on segment AX, H on segment DY, with AG = DH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GP parallel to XU meets line AU at P in plane alpha; GP is perpendicular to alpha (by 11.8)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HQ parallel to YV meets line DV at Q in plane beta; HQ is perpendicular to beta (by 11.8)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line through P in alpha meets complete lines AB0 and AC0 at B and C; A, B, C not collinear",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E on line DE0 and F on line DF0 with DE = AB, DF = AC, on corresponding rays",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle BAC = angle EDF, angle BAG = angle EDH, angle CAG = angle FDH (with supplement handling for reversed arms)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "R on line EF with ER = BP, on corresponding ray (or opposite)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Angle GPB is right because GP perpendicular to alpha and PB lies in alpha",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "HR perpendicular to line RE (derived from triangle congruence GBP ≅ HER)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle GPA is right because GP perpendicular to alpha and PA lies in alpha",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "HR perpendicular to line RD (derived from triangle congruence AGP ≅ DHR)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 10",
+      "claim": "RE and RD are distinct intersecting lines in beta (D not on line EF since angle EDF is non-degenerate)",
+      "type": "line_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "HR perpendicular to plane beta (by 11.4, since HR perp to two intersecting lines RE and RD in beta)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 10",
+      "claim": "R = Q (if distinct, triangle HRQ would have two right angles at R and Q, contradicting 1.17)",
+      "type": "point_identity"
+    }
+  ],
+  "configuration_map": "Point G: on elevated ray AX above plane alpha, with AG = DH (Step 2). Its perpendicular foot in alpha is P (GP ⊥ alpha by 11.8).\n\nPoint P: in plane alpha on line AU (Step 2). A transversal line through P meets arms AB0 and AC0 at B and C (Step 3). P lies on segment BC or its extension; both cases handled in Step 7.\n\nPoint H: on elevated ray DY above plane beta, with DH = AG (Step 2). Its perpendicular foot in beta is Q (HQ ⊥ beta by 11.8).\n\nPoint Q: in plane beta on line DV (Step 2). Ultimately shown to equal R (Step 10).\n\nPoints B, C: in plane alpha on the arms of angle B0AC0 (or their extensions), chosen so that a line through P meets both arms (Step 3).\n\nPoints E, F: in plane beta on the arms of angle E0DF0 (or their extensions), with DE = AB, DF = AC, on corresponding rays (Step 4).\n\nPoint R: in plane beta on line EF with ER = BP (Step 7). Proven to coincide with Q (Step 10) via the perpendicularity argument using 11.4 and 1.17.\n\nAll points maintain consistent positions throughout the proof. The perpendicularity claims (GP ⊥ alpha, HQ ⊥ beta, HR ⊥ beta) are derived correctly and used consistently. The triangle congruences (Steps 5, 6, 8, 9) rely only on established side and angle equalities with no hidden spatial assumptions.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses a different approach from Heath (transversal construction and 11.4 instead of Pythagorean theorem and 1.26) but maintains valid spatial reasoning throughout. Key checks: (1) perpendicularity of GP to alpha correctly implies right angles at P with all lines in alpha; (2) the supplement handling for reversed arms preserves angle equalities; (3) the derivation that HR is perpendicular to two distinct intersecting lines RE and RD in beta validly yields HR ⊥ beta by 11.4; (4) the identification R = Q follows from 1.17 (no triangle can have two right angles). No angle decomposition errors, no inside/outside contradictions, no betweenness violations."
+}

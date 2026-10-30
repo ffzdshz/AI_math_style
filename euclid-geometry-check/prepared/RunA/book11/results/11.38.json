@@ -1,0 +1,86 @@
+{
+  "proposition": "11.38",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCDEFGH is a cube with ABCD bottom face, EFGH top face, vertical edges AE, BF, CG, DH. AG is the space diagonal (diameter).",
+      "type": "solid geometry configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Opposite faces are equal parallelograms with opposite sides equal and parallel.",
+      "type": "parallelism and equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Midpoints K(AB), L(BC), M(CD), N(DA) on bottom face; O(EF), P(FG), Q(GH), R(HE) on top face.",
+      "type": "point position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "First cutting plane passes through K, O, Q, M; second cutting plane passes through L, P, R, N.",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 5",
+      "claim": "S is the intersection of diagonals AC and BD of face ABCD; S is midpoint of both AC and BD.",
+      "type": "point position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "K, S, M are collinear (midline theorem); S lies on line KM in the first cutting plane.",
+      "type": "collinearity and plane membership"
+    },
+    {
+      "step": "Step 7",
+      "claim": "L, S, N are collinear (midline theorem); S lies on line LN in the second cutting plane.",
+      "type": "collinearity and plane membership"
+    },
+    {
+      "step": "Step 8",
+      "claim": "T is intersection of diagonals EG and FH of face EFGH; T is midpoint of both. O, T, Q collinear (T on first plane); P, T, R collinear (T on second plane).",
+      "type": "point position and plane membership"
+    },
+    {
+      "step": "Step 9",
+      "claim": "ST is the common section of the two cutting planes within the cube.",
+      "type": "line of intersection"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AE is parallel and equal to CG (transitivity through BF).",
+      "type": "parallelism and equality"
+    },
+    {
+      "step": "Step 11",
+      "claim": "AC is parallel and equal to EG (by I.33 from AE parallel and equal to CG).",
+      "type": "parallelism and equality"
+    },
+    {
+      "step": "Step 12",
+      "claim": "ACGE is a planar parallelogram (coplanar by 11.7, opposite sides equal and parallel).",
+      "type": "plane membership and parallelogram"
+    },
+    {
+      "step": "Step 13",
+      "claim": "S is midpoint of AC, T is midpoint of EG; AS equal and parallel to TG (corresponding halves of parallel equal segments).",
+      "type": "parallelism and equality"
+    },
+    {
+      "step": "Step 14",
+      "claim": "ASTG is a parallelogram with AT parallel and equal to SG (by I.33).",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 16",
+      "claim": "AG and ST are diagonals of parallelogram ASTG and bisect each other at their intersection point.",
+      "type": "diagonal bisection"
+    }
+  ],
+  "configuration_map": "Cube ABCDEFGH with coordinates A=(0,0,0), B=(1,0,0), C=(1,1,0), D=(0,1,0), E=(0,0,1), F=(1,0,1), G=(1,1,1), H=(0,1,1). Midpoints: K=(0.5,0,0), L=(1,0.5,0), M=(0.5,1,0), N=(0,0.5,0) on bottom face; O=(0.5,0,1), P=(1,0.5,1), Q=(0.5,1,1), R=(0,0.5,1) on top face. Center of bottom face S=(0.5,0.5,0) lies on both cutting planes (x=0.5 and y=0.5). Center of top face T=(0.5,0.5,1) likewise lies on both cutting planes. First cutting plane is x=0.5 (containing K,M,O,Q,S,T). Second cutting plane is y=0.5 (containing L,N,P,R,S,T). Common section ST runs from (0.5,0.5,0) to (0.5,0.5,1). Parallelogram ACGE lies in the plane x=y, with vertices A=(0,0,0), C=(1,1,0), G=(1,1,1), E=(0,0,1). Sub-parallelogram ASGT (perimeter order A,S,G,T) has vertices A=(0,0,0), S=(0.5,0.5,0), G=(1,1,1), T=(0.5,0.5,1), with diagonals AG and ST intersecting at (0.5,0.5,0.5). All positions tracked consistently through every step.",
+  "pass_reason": "All spatial claims are mutually consistent. The cube labeling, midpoint positions, collinearity arguments (K-S-M and L-S-N via midline theorem), plane membership claims (S and T on both cutting planes), the identification of ST as common section, the construction of parallelogram ACGE, the sub-parallelogram ASGT, and the diagonal bisection of AG and ST are all verified to be geometrically correct and pairwise compatible. Coordinate verification confirms every claim: the two cutting planes are x=0.5 and y=0.5 respectively, their common section is ST, and the diagonals AG and ST of parallelogram ASGT meet at (0.5,0.5,0.5), bisecting each other."
+}

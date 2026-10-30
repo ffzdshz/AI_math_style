@@ -1,0 +1,32 @@
+{
+  "proposition": "3.10",
+  "book": 3,
+  "statement": "A circle does not cut a circle at more points than two.",
+  "heath_proof": "For, if possible, let the circle ABC cut the circle DEF at more points than two, namely B, C, F, H; let BH, BG be joined and bisected at the points K, L, and from K, L let KC, LM be drawn at right angles to BH, BG and carried through to the points A, E. Then, since in the circle ABC a straight line AC cuts a straight line BH into two equal parts and at right angles, the centre of the circle ABC is on AC. [III. 1]  Again, since in the same circle ABC a straight line NO cuts a straight line BG into two equal parts and at right angles, the centre of the circle ABC is on NO. But it was also proved to be on AC, and the straight lines AC, NO meet at no point except at P; therefore the point P is the centre of the circle ABC. Similarly we can prove that P is also the centre of the circle DEF; therefore the two circles ABC, DEF which cut one another have the same centre P: which is impossible. [III. 5]",
+  "ai_proof_text": "3.10\n**Statement:** A circle does not cut a circle at more points than two.\n\n**Step 1.** For, if possible, let the circle ABC cut the circle DEF at more points than two, and let B, G, H be three of the points at which the circles cut one another. Then each of B, G, H lies on the circumference of the circle ABC and also on the circumference of the circle DEF.\n\n**Step 2.** The points B, G, H are not in one straight line. For if they were, one of them, say G, would lie on the straight line joining the other two, B and H. But B and H are points on the circumference of the circle ABC, so the straight line BH falls within the circle ABC [3.2]; hence G would fall within the circle ABC, whereas it is on the circumference. Therefore B, G, H are not in one straight line.\n\n**Step 3.** Join BG and GH [P1]. By Step 2 these are two distinct straight lines, and since two straight lines cannot enclose a space, they have no point in common except G.\n\n**Step 4.** Bisect BG at the point L and GH at the point M [1.10]. L is a point of BG other than B and G, and M is a point of GH other than G and H. Moreover L and M are distinct points; for otherwise L would be a point common to the straight lines BG and GH other than G, contrary to Step 3.\n\n**Step 5.** From the point L draw LA at right angles to BG, and from the point M draw MC at right angles to GH [1.11], and produce the straight lines AL and CM continuously in both directions [P2].\n\n**Step 6.** The straight lines AL and CM are distinct. For if they were one and the same straight line, then L and M would be two distinct points on it (Step 4), and the straight lines GL and GM drawn from the point G would each make a right angle with it (Step 5); thus in the triangle GLM the two angles GLM, GML would together be equal to two right angles, which is impossible, since in any triangle two angles taken together are less than two right angles [1.17].\n\n**Step 7.** Since AL and CM are distinct straight lines, and two straight lines cannot enclose a space, AL and CM have at most one point in common.\n\n**Step 8.** Let K be the centre of the circle ABC [3.1]. Since in the circle ABC the straight line AL cuts the straight line BG into two equal parts and at right angles (Steps 4 and 5), the centre K of the circle ABC is on AL [3.1, Porism]. Again, since in the circle ABC the straight line CM cuts the straight line GH into two equal parts and at right angles, the centre K is also on CM [3.1, Porism]. Therefore K is a point common to AL and CM.\n\n**Step 9.** Let P be the centre of the circle DEF [3.1]. Since B, G, H are also on the circumference of the circle DEF, BG and GH are straight lines in the circle DEF, and AL cuts BG into two equal parts and at right angles, while CM cuts GH into two equal parts and at right angles; therefore the centre P of the circle DEF is on AL and also on CM [3.1, Porism]. Thus P is likewise a point common to AL and CM.\n\n**Step 10.** But AL and CM have at most one point in common (Step 7). Therefore K and P are one and the same point.\n\n**Step 11.** Hence the circles ABC and DEF, which cut one another, have the same centre; which is impossible, for if two circles cut one another they do not have the same centre [3.5].\n\n**Step 12.** Therefore the circle ABC does not cut the circle DEF at more points than two. Hence a circle does not cut a circle at more points than two. Q.E.D.\n\n**USED:** 1.10, 1.11, 1.17, 3.1, 3.2, 3.5, P1, P2\n**Human refs (from References field):** 3.1, 3.5\n**Jaccard:** 0.250 — AI adds ['1.10', '1.11', '1.17', '3.2', 'P1', 'P2']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.17",
+    "3.1",
+    "3.2",
+    "3.5",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "3.1",
+    "3.5"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.17",
+    "3.2",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "## Proposition 3.10 **Statement:** A circle does not cut a circle at more points than two.  **Step 1.** For, if possible, let the circle ABC cut the circle DEF at more points than two, and let B, G, H"
+}

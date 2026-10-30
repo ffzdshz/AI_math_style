@@ -1,0 +1,76 @@
+{
+  "proposition": "13.10",
+  "run": "GPT",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "F is diametrically opposite A on the circle, with AF a diameter passing through center O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Five equal arcs of 72 degrees each; central angle AOB = 72 degrees",
+      "type": "arc_measure"
+    },
+    {
+      "step": "Step 2",
+      "claim": "M is the midpoint of arc AB, so central angle AOM = 36 degrees",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OA and OF are opposite rays, so angle BOF = 180 - 72 = 108 degrees",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle BOF is isosceles (OB = OF = r) with base angles OBF = OFB = 36 degrees",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BF > BO since BF is opposite the larger angle (108 > 36)",
+      "type": "length_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "T lies between B and F on segment BF with BT = BO = r",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangle BOT is isosceles with angle BOT = angle OTB = 72 degrees",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle BOF = angle BOT + angle TOF, so angle TOF = 108 - 72 = 36 degrees (ray OT between rays OB and OF)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle OFT = angle OFB = 36 degrees (same angle since T on BF), so triangle OTF is isosceles with TF = OT",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 5",
+      "claim": "SAS congruence: triangles BOT and OAM with BO = OA = r, BT = OM = r, included angles both 36 degrees, giving OT = AM = d",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 5",
+      "claim": "BF = BT + TF = r + d (additive since T between B and F)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle ABF = 90 degrees (angle in semicircle since AF is diameter and B on circle)",
+      "type": "angle_value"
+    }
+  ],
+  "configuration_map": "O is the center of the circle throughout. A and B are adjacent pentagon vertices on the circle. F is on the circle diametrically opposite A, making AF a diameter through O; F is used consistently in this role in all steps. M is on the circle at the midpoint of arc AB, used only in the SAS congruence in Step 5 as a vertex of triangle OAM. T is constructed on segment BF (between B and F) with BT = r; it serves as the vertex of triangles BOT and OTF. The ray OT falls between rays OB and OF because T is interior to segment BF and O is off line BF, making the angle decomposition BOF = BOT + TOF valid. The supplementary angles at T (OTB = 72, OTF = 108) are consistent with T being on line BF.",
+  "pass_reason": "All spatial claims are mutually consistent. The key angle decomposition (angle BOF = angle BOT + angle TOF) is valid because T lies between B and F, placing ray OT between rays OB and OF. The SAS congruence is correctly set up with matching sides and included angles. The right angle at B from the semicircle theorem is properly applied. The proof takes a different but geometrically sound route from Heath, using an auxiliary point T on BF and a congruence argument to establish BF = r + d, then algebraic manipulation to reach the result."
+}

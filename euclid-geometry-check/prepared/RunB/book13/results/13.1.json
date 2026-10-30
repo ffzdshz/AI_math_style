@@ -1,0 +1,26 @@
+{
+  "proposition": "13.1",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB between A and B, with AC > CB (AC is the greater segment of the extreme and mean ratio cut)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies on segment AB between A and B, with AD = DB = AB/2 (D is the midpoint)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Steps 1-2 combined",
+      "claim": "Since AC > AB/2 = AD, the ordering on segment AB is A-D-C-B",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "All points lie on a single line segment AB. Point D is the midpoint of AB (AD = DB). Point C is the golden ratio cut point with AC > CB, so AC > AB/2 = AD, giving the linear order A—D—C—B. No other geometric figures (triangles, circles, angles) are constructed. The proof operates entirely on algebraic relationships among lengths and areas (squares and rectangles) of sub-segments of AB. The quantity (AC + AD) is treated as a pure length for algebraic expansion, not as a constructed segment with a new endpoint.",
+  "pass_reason": "The proof is essentially algebraic, manipulating squares and rectangles of line segments using Propositions 2.1, 2.4, and 6.17. The only spatial claims are that C and D both lie on segment AB in the order A-D-C-B, which is trivially consistent. There are no angle decompositions, no interior/exterior point arguments, no ray orderings, and no circle arguments — nothing that could create a spatial configuration contradiction."
+}

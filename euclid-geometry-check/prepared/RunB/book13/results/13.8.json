@@ -1,0 +1,91 @@
+{
+  "proposition": "13.8",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "H is the intersection point of diagonals AC and BE, lying on both segments",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Each interior angle of the regular pentagon equals 6R/5 (108 degrees)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle ABC is isosceles with AB = BC, giving angle BAC = angle BCA = 2R/5 (36 degrees)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 5",
+      "claim": "H lies on segment AC, so angle BAH = angle BAC = 2R/5",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "H lies on segment BE, so angle ABH = angle ABE = 2R/5",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In triangle ABH, AH = BH (isosceles by equal base angles)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "angle AHB = 6R/5 (108 degrees) in triangle ABH",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 6",
+      "claim": "angle BHC = 4R/5 (72 degrees), supplementary to angle AHB on line AC",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Ray BH (= ray BE) lies between rays BA and BC, so angle HBC = angle ABC - angle ABH = 4R/5",
+      "type": "ray_betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle BHC is isosceles with angle BHC = angle HBC = 4R/5, giving BC = HC",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angles AHE and BHC are vertical angles at intersection point H (since A-H-C and B-H-E are collinear triples)",
+      "type": "vertical_angles"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Ray AC lies between rays AB and AE, so angle HAE = angle EAB - angle BAC = 4R/5",
+      "type": "ray_betweenness"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle AHE is isosceles with angle AHE = angle HAE = 4R/5, giving HE = AE",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Triangles ABH and ACB are equiangular (AA similarity via shared angle at A and equal angles ABH = BCA)",
+      "type": "triangle_similarity"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AH < AB because in triangle ABH, angle AHB (6R/5) is the largest angle so opposite side AB is the longest",
+      "type": "side_ordering"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Triangles BAH and BEA are equiangular (AA similarity via shared angle at B and equal angles BAH = AEB)",
+      "type": "triangle_similarity"
+    }
+  ],
+  "configuration_map": "Configuration: Regular pentagon ABCDE with consecutive vertices. Diagonals AC and BE intersect at H. At point H, four angles are formed: angle AHB = angle CHE = 6R/5 (108 degrees) and angle BHC = angle AHE = 4R/5 (72 degrees), summing to 360 degrees. On segment AC: A---H---C with AH approximately 0.382 times AC and HC approximately 0.618 times AC (golden ratio cut). On segment BE: B---H---E with BH approximately 0.382 times BE and HE approximately 0.618 times BE. Key equalities: AH = BH (from isosceles triangle ABH), HC = HE = AB (side of pentagon). From vertex B, ray BE divides angle ABC (108 degrees) into angle ABE = 36 degrees and angle EBC = 72 degrees — ray BE lies properly between rays BA and BC. From vertex A, ray AC divides angle EAB (108 degrees) into angle BAC = 36 degrees and angle EAC = 72 degrees — ray AC lies properly between rays AB and AE.",
+  "pass_reason": "All spatial claims are mutually consistent. The two critical angle decompositions (Step 7: angle HBC = angle ABC - angle ABH; Step 9: angle HAE = angle EAB - angle BAC) are both valid because the dividing rays genuinely lie between the outer rays in the regular pentagon configuration. The vertical angle claim at H is correct since A-H-C and B-H-E are collinear triples. The four angles at H sum to 360 degrees. All distance relationships (AH = BH, HC = HE = AB) are consistent with each other and with the segment additions AC = AH + HC, BE = BH + HE. Coordinate verification confirms all angle values and the golden ratio division."
+}

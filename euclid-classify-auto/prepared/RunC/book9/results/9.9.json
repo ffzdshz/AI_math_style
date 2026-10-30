@@ -1,0 +1,13 @@
+{
+  "proposition": "9.9",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Heath's proof of the square case uses a two-phase strategy: first invoking 9.8 to establish that every other term (the third, fifth, etc.) is square, then applying 8.22 to fill in the remaining terms. The AI proof takes a fundamentally different approach: it establishes that the unit itself is square (via D7.18), then applies 8.22 sequentially starting from the unit through every consecutive triple, covering all terms by direct induction without needing 9.8 at all. This constitutes a different logical backbone (Case B in Q2). The AI's path is logically valid under Q3: the unit is indeed square, and repeated application of 8.22 to consecutive triples correctly propagates the square property through all terms. Additionally, Heath's proof covers both the square and cube cases (using 8.23 and 9.3 for the cube case), but the statement given to the AI only specifies the square case, so the AI's omission of the cube case is not an error. The heath_only citations 8.23, 9.3 are exclusively for the cube case, while 9.8 is replaced by the AI's inductive approach from the unit.",
+  "jaccard": 0.2,
+  "ai_citations": "8.22|D7.18",
+  "heath_citations": "8.22|8.23|9.3|9.8",
+  "ai_only": "D7.18",
+  "heath_only": "8.23|9.3|9.8",
+  "audit_record": ""
+}

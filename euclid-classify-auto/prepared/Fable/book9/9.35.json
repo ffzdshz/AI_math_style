@@ -1,0 +1,32 @@
+{
+  "proposition": "9.35",
+  "book": 9,
+  "statement": "If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.",
+  "heath_proof": "Let there be as many numbers as we please in continued proportion, A, BC, D, EF, beginning from A as least, and let there be subtracted from BC and EF the numbers BG, FH, each equal to A; I say that, as GC is to A, so is EH to A, BC, D. For let FK be made equal to BC, and FL equal to D. Then, since FK is equal to BC, and of these the part FH is equal to the part BG, therefore the remainder HK is equal to the remainder GC. And since, as EF is to D, so is D to BC, and BC to A, while D is equal to FL, BC to FK, and A to FH, therefore, as EF is to FL, so is LF to FK, and FK to FH.  Separando, as EL is to LF, so is LK to FK, and KH to FH. [VII. 11, 13] Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; [VII. 12] therefore, as KH is to FH, so are EL, LK. KH to LF, FK, HF. But KH is equal to CG, FH to A, and LF, FK, HF to D, BC, A; therefore, as CG is to A, so is EH to D, BC, A. Therefore, as the excess of the second is to the first, so is the excess of the last to all those before it.",
+  "ai_proof_text": "9.35\n**Statement:** If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.\n\n**Step 1.** Let A, BC, D, EF be as many numbers as we please in continued proportion, A being the first and EF the last, so that A : BC = BC : D = D : EF; and from the second, BC, and from the last, EF, let BG and FH, each equal to A, be subtracted. It is to be proved that as GC (the excess of BC) is to A, so is EH (the excess of EF) to A + BC + D (all the numbers before EF).\n\n**Step 2.** Since a number equal to A has been subtracted from BC, A is less than BC, and therefore A is either a part or parts of BC [D7.3, D7.4]. Since A : BC = BC : D, BC is the same part or parts of D that A is of BC [D7.20]; hence BC is less than D [D7.3, D7.4]. In the same way, since BC : D = D : EF, D is less than EF. Thus each of the numbers is less than the one following it.\n\n**Step 3.** From EF cut off FK equal to BC and FL equal to D (possible by Step 2, BC and D each being less than EF). Since FH = A < BC = FK < D = FL < EF, the numbers FH, FK, FL are contained in EF in that order, so that the remainders KH = FK − FH, LK = FL − FK, EL = EF − FL are numbers, and EH is composed of EL, LK, KH.\n\n**Step 4.** FH and BG are each equal to A, so FH = BG [CN1]. Since FK = BC and FH = BG, subtracting equals from equals, the remainder KH is equal to the remainder GC [CN3].\n\n**Step 5.** Since BC : D = D : EF, and FK = BC, FL = D, we have FK : FL = FL : EF, that is, FL : EF = FK : FL; in other words, as the whole FL is to the whole EF, so is FK subtracted from FL to FL subtracted from EF. Therefore the remainder LK is to the remainder EL as FL is to EF [7.11], and hence LK : EL = FK : FL.\n\n**Step 6.** Since LK : EL = FK : FL, alternately LK : FK = EL : FL [7.13].\n\n**Step 7.** Since A : BC = BC : D, and FH = A, FK = BC, FL = D, we have FH : FK = FK : FL, that is, FK : FL = FH : FK; in other words, as the whole FK is to the whole FL, so is FH subtracted from FK to FK subtracted from FL. Therefore the remainder KH is to the remainder LK as FK is to FL [7.11], and hence KH : LK = FH : FK.\n\n**Step 8.** Since KH : LK = FH : FK, alternately KH : FH = LK : FK [7.13].\n\n**Step 9.** From Steps 6 and 8, EL : FL = LK : FK = KH : FH. Therefore, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents [7.12]: KH : FH = (EL + LK + KH) : (FL + FK + FH).\n\n**Step 10.** But EL + LK + KH = EH (Step 3), FL + FK + FH = D + BC + A, KH = GC (Step 4), and FH = A. Therefore GC : A = EH : (A + BC + D); that is, as the excess of the second is to the first, so is the excess of the last to all the numbers before it.\n\n**Step 11.** If there are more numbers in the continued proportion, cut off from the last number parts equal to each of the numbers before it in the same way; Steps 5–8 applied to each pair of adjacent ratios show that the successive remainders are to the numbers cut off in one and the same ratio, namely that of the excess of the second to the first, and 7.12 then gives, exactly as in Steps 9–10, that this ratio is that of the excess of the last to the sum of all the numbers before it. Q.E.D.\n\n**USED:** 7.11, 7.12, 7.13, CN1, CN3, D7.20, D7.3, D7.4\n**Human refs (from References field):** 7.11, 7.12, 7.13\n**Jaccard:** 0.375 — AI adds ['CN1', 'CN3', 'D7.20', 'D7.3', 'D7.4']",
+  "ai_used": [
+    "7.11",
+    "7.12",
+    "7.13",
+    "CN1",
+    "CN3",
+    "D7.20",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_refs": [
+    "7.11",
+    "7.12",
+    "7.13"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN3",
+    "D7.20",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.375,
+  "proof_summary": "## Proposition 9.35 **Statement:** If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of t"
+}

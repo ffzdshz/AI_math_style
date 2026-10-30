@@ -1,0 +1,13 @@
+{
+  "proposition": "10.44",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "Q1(b) decided the classification. The AI proof's Step 20 claims that decompositions of sq(AB) into two incommensurable medial parts must be unique, citing 'the reasoning of 10.42 applied to medial areas and 10.26.' However, 10.42's proof technique exploits the rational/medial dichotomy: in 10.42, the sums of squares are rational while the doubled rectangles are medial, so their difference forces a rational quantity to equal a medial difference, contradicting 10.26. In 10.44, both the sums of squares and the doubled rectangles are medial, so both sides of the difference equation are medial-minus-medial, and no rational/medial contradiction arises. The AI's analogy to 10.42 is structurally invalid. Heath's proof addresses this difficulty by using the application-of-areas technique to convert the problem into one about binomial lines divided at different points, reducing to 10.42 for lines (not areas). The AI skips this essential conversion step, making the core inference in Step 20 invalid rather than merely terse.",
+  "jaccard": 0.1,
+  "ai_citations": "10.15|10.21|10.23|10.24|10.26|10.38|2.4|2.5|2.6|2.7|CN1|CN2|CN3|D10.1.2",
+  "heath_citations": "10.11|10.13|10.22|10.36|10.38|10.6|2.4|6.1",
+  "ai_only": "10.15|10.21|10.23|10.24|10.26|2.5|2.6|2.7|CN1|CN2|CN3|D10.1.2",
+  "heath_only": "10.11|10.13|10.22|10.36|10.6|6.1",
+  "audit_record": "CANDIDATE E — 10.44\n  violated_claim : 'these decompositions of sq(AB) into incommensurable medial parts must be the same decomposition (a medial area has a unique decomposition into two incommensurable medial parts that sum to it, by the reasoning of 10.42 applied to medial areas and 10.26)' (Step 20)\n  failure_mode   : invalid_inference\n  missing_is     : support — the unique decomposition of medial area sums is not established by 10.42 or 10.26; it is the very content of what 10.44 proves\n  evidence       : Step 20 cites 'the reasoning of 10.42 applied to medial areas and 10.26'. 10.42 proves binomial line uniqueness by exploiting the rational/medial dichotomy: sq-sums are rational, doubled-rectangles are medial, so their difference is rational=medial, contradicting 10.26. In 10.44 both sq-sums and doubled-rectangles are medial, so both sides are medial-minus-medial and no rational/medial contradiction arises.\n  why_not_terse  : This is not mere brevity; 10.42's proof mechanism structurally depends on the rational/medial dichotomy that does not exist in 10.44's all-medial setting, so 'the reasoning of 10.42 applied to medial areas' is an invalid analogy, not a compressed valid argument."
+}

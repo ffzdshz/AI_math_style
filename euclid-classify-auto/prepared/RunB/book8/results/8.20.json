@@ -1,0 +1,13 @@
+{
+  "proposition": "8.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: they take D, E as the least numbers in the ratio A:C via 7.33, use 7.20 to decompose A and B into products (A = F*D, B = G*E), establish that A and B are plane numbers, and then show that D:E = F:G to conclude the sides are proportional and hence A, B are similar plane numbers. The citation difference arises because the AI uses 7.19 (product equality implies proportionality) to establish D:E = F:G directly from F*E = G*D, whereas Heath uses 7.17 twice to establish D:E = A:C and F:G = C:B, then chains these and applies 7.13 (alternation). Since 7.17 appears inside Heath's own proof of 7.19, this satisfies the proof-tree containment test: the AI cites 7.19 as a unit while Heath re-derives its internals inline. The AI's additional citations of 7.22, D7.16, and D7.21 are either explicit statements of facts Heath uses implicitly or supporting lemmas not strictly needed. This is a citation-depth difference with the same backbone, yielding G.",
+  "jaccard": 0.25,
+  "ai_citations": "7.19|7.20|7.22|7.33|D7.16|D7.21",
+  "heath_citations": "7.13|7.17|7.20|7.33",
+  "ai_only": "7.19|7.22|D7.16|D7.21",
+  "heath_only": "7.13|7.17",
+  "audit_record": ""
+}

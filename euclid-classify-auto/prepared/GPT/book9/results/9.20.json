@@ -1,0 +1,13 @@
+{
+  "proposition": "9.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: construct a common multiple of the assigned primes, add a unit to obtain a new number, then consider whether it is prime or not. If prime, a new prime is found directly; if not, any prime factor of the new number cannot equal any assigned prime (since it would then measure both the common multiple and the new number, hence the unit, a contradiction). The AI cites 7.32 where Heath cites 7.31; the proof-tree containment test confirms that 7.31 appears inside Heath's proof of 7.32, so the AI simply invokes the higher-level result as a unit while Heath applies the component lemma directly. The remaining ai_only items (7.34 for constructing the common multiple, plus definitions D7.1, D7.2, D7.5, D7.15 and common notions CN3, CN5) are explicit over-citations of construction steps, definitions, and axioms that Heath leaves implicit. The key intermediate conclusions are identical in both proofs, making this a granularity difference.",
+  "jaccard": 0.0,
+  "ai_citations": "7.32|7.34|CN3|CN5|D7.1|D7.15|D7.2|D7.5",
+  "heath_citations": "7.31",
+  "ai_only": "7.32|7.34|CN3|CN5|D7.1|D7.15|D7.2|D7.5",
+  "heath_only": "7.31",
+  "audit_record": ""
+}

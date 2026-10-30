@@ -1,0 +1,13 @@
+{
+  "proposition": "5.15",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided this classification. Both proofs share the same backbone: decompose the multiples into equal parts, establish that each pair of corresponding parts has the same ratio via 5.7, then apply 5.12 to aggregate one-antecedent-to-one-consequent into all-antecedents-to-all-consequents, and finally substitute back to obtain the desired ratio. The AI proof differs only in citation depth: it explicitly cites 5.11 (transitivity of equal ratios) for substitution steps that Heath performs implicitly, and it explicitly cites definitions D5.1, D5.2, and D5.6 that Heath uses without citation. Since heath_only is empty and all ai_only items (5.11, D5.1, D5.2, D5.6) represent over-citation of supporting lemmas and definitions rather than a different logical path, this is Case A of Q2: same key intermediate conclusions at different citation granularity.",
+  "jaccard": 0.333,
+  "ai_citations": "5.11|5.12|5.7|D5.1|D5.2|D5.6",
+  "heath_citations": "5.12|5.7",
+  "ai_only": "5.11|D5.1|D5.2|D5.6",
+  "heath_only": "",
+  "audit_record": ""
+}

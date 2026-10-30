@@ -1,0 +1,13 @@
+{
+  "proposition": "2.3",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof of 2.3 constructs a square CDEB on CB (I.46) and draws a parallel (I.31) to create a geometric figure whose sub-areas are identified as the rectangle AB,BC, the rectangle AC,CB, and the square on BC. The AI instead applies the previously proved Proposition 2.1 algebraically, treating BC as the uncut line and AB as the line cut into segments AC and CB, to obtain rectangle(AB,BC) = rectangle(BC,AC) + rectangle(BC,CB), then identifies rectangle(BC,CB) as the square on BC by definition. These are fundamentally different backbones: Heath uses geometric area decomposition via construction, while the AI uses an algebraic identity from a prior theorem. The proof-tree containment test confirms this is not mere granularity difference: Heath's proof of 2.1 contains I.31 but not I.46, so the heath_only citations are not fully subsumed by the AI's cited proposition. The AI's different path is logically valid under Q3, so the classification is D (path difference).",
+  "jaccard": 0.0,
+  "ai_citations": "2.1|D1.22|D2.1",
+  "heath_citations": "1.31|1.46",
+  "ai_only": "2.1|D1.22|D2.1",
+  "heath_only": "1.31|1.46",
+  "audit_record": ""
+}

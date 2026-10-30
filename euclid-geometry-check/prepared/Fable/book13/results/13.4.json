@@ -1,0 +1,26 @@
+{
+  "proposition": "13.4",
+  "run": "Fable",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on segment AB, dividing it into greater segment AC and lesser segment CB, with AB:AC = AC:CB (extreme and mean ratio)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line AB is cut at point C, enabling application of II.3: rect(AB,CB) = rect(AC,CB) + sq(CB)",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Line AB is cut at point C, enabling application of II.4: sq(AB) = sq(AC) + sq(CB) + 2*rect(AC,CB)",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "Single line AB with one interior point C. C lies on segment AB with AC > CB. This is the only geometric configuration in the proof. All steps reference this same configuration: Steps 2-3 use the segments AB, AC, CB for rectangle/square identities; Steps 5-7 use the same segments for algebraic manipulation. No auxiliary points, circles, triangles, or angles are introduced.",
+  "pass_reason": "The proof is almost entirely algebraic, working with segment identities (II.3, II.4) and a proportional relationship (VI.17) applied to a single line AB cut at point C. The only spatial configuration — C on segment AB with AC as the greater segment — is used consistently and without contradiction throughout all steps. No angle decompositions, no interior/exterior point claims, no ray orderings, and no complex spatial reasoning are present. There is nothing that could produce a spatial configuration contradiction."
+}

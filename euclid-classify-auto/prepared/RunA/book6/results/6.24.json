@@ -1,0 +1,13 @@
+{
+  "proposition": "6.24",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same backbone of key intermediate conclusions: (1) establishing equiangularity of the sub-parallelogram with the whole, (2) establishing proportionality of sides about equal angles, (3) concluding similarity by D6.1, and (4) using 6.21 for mutual similarity. The critical difference is citation depth. The AI cites 6.4 (equiangular triangles have proportional sides) to obtain all proportional relationships directly from equiangular sub-triangles, while Heath re-derives the internals of 6.4 inline using 6.2 (proportional intercepts), 5.16 (alternately), 5.18 (componendo), and 5.22 (ex aequali). The proof-tree containment test confirms that three of the four heath_only items (6.2, 5.16, 5.22) appear inside Heath's own proof of 6.4, indicating the AI cites 6.4 as a unit while Heath unpacks its internals. The remaining heath_only item 5.18 (componendo) is avoided by the AI because 6.4 applied to appropriate sub-triangles gives the proportionality of sides about common angles directly, without needing the ratio manipulation step. The AI's additional citations (1.29, 1.32, 1.34, CN1) are foundational angle and parallelogram theorems used to set up the equiangular triangles, consistent with over-citation at a finer granularity level.",
+  "jaccard": 0.182,
+  "ai_citations": "1.29|1.32|1.34|6.21|6.4|CN1|D6.1",
+  "heath_citations": "5.16|5.18|5.22|6.2|6.21|D6.1",
+  "ai_only": "1.29|1.32|1.34|6.4|CN1",
+  "heath_only": "5.16|5.18|5.22|6.2",
+  "audit_record": ""
+}

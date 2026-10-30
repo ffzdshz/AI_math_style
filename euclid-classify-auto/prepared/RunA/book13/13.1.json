@@ -1,0 +1,33 @@
+{
+  "proposition": "13.1",
+  "book": 13,
+  "statement": "If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.",
+  "heath_proof": "For let the straight line AB be cut in extreme and mean ratio at the point C, and let AC be the greater segment; let the straight line AD be produced in a straight line with CA, and let AD be made half of AB; I say that the square on CD is five times the square on AD. For let the squares AE, DF be described on AB, DC, and let the figure in DF be drawn; let FC be carried through to G. Now, since AB has been cut in extreme and mean ratio at C, therefore the rectangle AB, BC is equal to the square on AC. [VI. Def. 3, VI. 17] And CE is the rectangle AB, BC, and FH the square on AC; therefore CE is equal to FH. And, since BA is double of AD, while BA is equal to KA, and AD to AH, therefore KA is also double of AH. But, as KA is to AH, so is CK to CH; [VI. 1] therefore CK is double of CH. But LH, HC are also double of CH. Therefore KC is equal to LH, HC. But CE was also proved equal to HF; therefore the whole square AE is equal to the gnomon MNO. And, since BA is double of AD, the square on BA is quadruple of the square on AD, that is, AE is quadruple of DH. But AE is equal to the gnomon MNO; therefore the gnomon MNO is also quadruple of AP; therefore the whole DF is five times AP. And DF is the square on DC, and AP the square on DA; therefore the square on CD is five times the square on DA.",
+  "ai_proof_text": "13.1\n**Statement:** If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.\n\n**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. Then by D6.3, AB : AC = AC : CB.\n\n**Step 2.** Bisect AB at D, so that AD = DB = half of AB [1.10].\n\n**Step 3.** Since AB, AC, CB are three straight lines in proportion (AB : AC = AC : CB), by 6.17 the rectangle contained by the extremes equals the square on the mean, that is, rect(AB, CB) = sq(AC).\n\n**Step 4.** Since C lies on AB, the line AB is cut into segments AC and CB. By 2.2, the rectangles contained by the whole and each of the segments equal the square on the whole: rect(AB, AC) + rect(AB, CB) = sq(AB). Therefore sq(AB) = rect(AB, AC) + sq(AC) [substituting rect(AB, CB) = sq(AC) from Step 3].\n\n**Step 5.** Since D bisects AB, we have AB = AD + DB with AD = DB. By 2.1, the rectangle contained by AB and AC equals the sum of the rectangles contained by AD and AC and by DB and AC: rect(AB, AC) = rect(AD, AC) + rect(DB, AC). Since AD = DB, we have rect(AD, AC) = rect(DB, AC), so rect(AB, AC) = 2 * rect(AD, AC).\n\n**Step 6.** Substituting into the result of Step 4: sq(AB) = 2 * rect(AD, AC) + sq(AC).\n\n**Step 7.** We now form the line composed of AC and AD. By 2.4, if a straight line is made up of two segments AC and AD, then sq(AC + AD) = sq(AC) + sq(AD) + 2 * rect(AC, AD).\n\n**Step 8.** From Step 6, sq(AC) + 2 * rect(AC, AD) = sq(AB). Substituting into Step 7: sq(AC + AD) = sq(AB) + sq(AD).\n\n**Step 9.** Since AB = 2 * AD, applying 2.4 to the line AB composed of two equal segments AD and DB: sq(AB) = sq(AD) + sq(DB) + 2 * rect(AD, DB). Since AD = DB, this gives sq(AB) = sq(AD) + sq(AD) + 2 * sq(AD) = 4 * sq(AD).\n\n**Step 10.** Substituting sq(AB) = 4 * sq(AD) into Step 8: sq(AC + AD) = 4 * sq(AD) + sq(AD) = 5 * sq(AD) [CN2].\n\n**Step 11.** Since AD is half of AB, the square on the greater segment AC together with the half of the whole (that is, the square on AC + AD) is five times the square on the half AD. This is what was to be proved.\n\n**USED:** 1.10, 2.1, 2.2, 2.4, 6.17, CN2, D6.3\n**Human refs (from References field):** 6.1, 6.17, D6.3\n**Jaccard:** 0.250 — AI adds ['1.10', '2.1', '2.2', '2.4', 'CN2']; Human adds ['6.1']",
+  "ai_used": [
+    "1.10",
+    "2.1",
+    "2.2",
+    "2.4",
+    "6.17",
+    "CN2",
+    "D6.3"
+  ],
+  "heath_refs": [
+    "6.1",
+    "6.17",
+    "D6.3"
+  ],
+  "ai_only": [
+    "1.10",
+    "2.1",
+    "2.2",
+    "2.4",
+    "CN2"
+  ],
+  "heath_only": [
+    "6.1"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. Then by D6.3, AB : AC = AC : CB.  **Step 2.** Bisect AB at D, so that AD = DB ="
+}

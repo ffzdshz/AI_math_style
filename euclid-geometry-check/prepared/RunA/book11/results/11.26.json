@@ -1,0 +1,76 @@
+{
+  "proposition": "11.26",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 5",
+      "claim": "K is placed on ray AB from A with AK = DE, so K lies along the given straight line AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle KAH is constructed equal to angle EDC in a plane through AB, placing H in that plane at distance AH = DC from A",
+      "type": "angle_construction"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle KAL is constructed equal to angle EDF in a plane different from the plane of KAH, with AL = DF",
+      "type": "angle_construction"
+    },
+    {
+      "step": "Step 6",
+      "claim": "L is in a different plane from H relative to the line AK (different dihedral half-plane around AK)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle HAL is constructed equal to angle CDF, implicitly requiring the dihedral position of L around AK to yield this angle",
+      "type": "angle_construction"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle HAL is congruent to triangle CDF (SAS via I.4), so HL = CF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle KAH is congruent to triangle EDC (SAS via I.4), so KH = EC",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle KAL is congruent to triangle EDF (SAS via I.4), so KL = EF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Triangle KHL is congruent to triangle ECF (SSS via I.8)",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Any two of the three plane angles KAH, KAL, HAL taken together are greater than the third (inherited from 11.20 applied to the original angles)",
+      "type": "angle_inequality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Sum of the three plane angles KAH, KAL, HAL is less than four right angles (inherited from 11.21)",
+      "type": "angle_sum"
+    },
+    {
+      "step": "Step 13",
+      "claim": "A solid angle at A is constructed from the three plane angles KAH, KAL, HAL via 11.23",
+      "type": "solid_angle_construction"
+    },
+    {
+      "step": "Step 16",
+      "claim": "The edge AK of the solid angle lies along the given line AB",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Point A: the given point on line AB, vertex of the constructed solid angle. Point K: on ray AB from A, at distance AK = DE. This fixes one edge of the solid angle along AB. Point H: in the plane through AB, positioned so angle KAH = angle EDC and AH = DC. H is fully determined in this plane (up to reflection, resolved by choice of side). Point L: in a plane through AK different from the plane containing H. The angle KAL = angle EDF and AL = DF fix L on a cone around AK; the specific dihedral angle around AK is implicitly chosen so that angle HAL = angle CDF. The three face angles KAH, KAL, HAL at vertex A mirror the three face angles EDC, EDF, FDC at vertex D. The base triangle KHL is congruent to triangle ECF. The solid angle at A is assembled from these three face angles via 11.23, with AK along AB as required.",
+  "pass_reason": "All spatial claims are mutually consistent. The three face angles KAH = EDC, KAL = EDF, and HAL = CDF can coexist simultaneously at vertex A: H is placed in the plane of AB, and L is placed in a different half-plane through AK with dihedral freedom allowing angle HAL to equal angle CDF. The conditions of 11.23 (any two face angles greater than the third, sum less than four right angles) are inherited from the original solid angle at D via 11.20 and 11.21. The triangle congruences (I.4, I.8) establishing edge equalities are straightforward SAS/SSS results with no conflicting spatial requirements. The solid angle is correctly positioned at A with edge AK along AB."
+}

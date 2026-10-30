@@ -1,0 +1,55 @@
+{
+  "proposition": "10.41",
+  "book": 10,
+  "statement": "If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.",
+  "heath_proof": "For let two straight lines AB, BC incommensurable in square and satisfying the given conditions [X. 35] be added together; I say that AC is irrational. Let a rational straight line DE be set out, and let there be applied to DE the rectangle DF equal to the squares on AB, BC, and the rectangle GH equal to twice the rectangle AB, BC; therefore the whole DH is equal to the square on AC. [II. 4] Now, since the sum of the squares on AB, BC is medial, and is equal to DF, therefore DF is also medial. And it is applied to the rational straight line DE; therefore DG is rational and incommensurable in length with DE. [X. 22] For the same reason GK is also rational and incommensurable in length with GF, that is, DE. And, since the squares on AB, BC are incommensurable with twice the rectangle AB, BC, DF is incommensurable with GH; so that DG is also incommensurable with GK. [VI. 1, X. 11] And they are rational; therefore DG, GK are rational straight lines commensurable in square only; therefore DK is irrational and what is called binomial. [X. 36] But DE is rational; therefore DH is irrational, and the side of the square which is equal to it is irrational. [X. Def. 4] But AC is the side of the square equal to HD; therefore AC is irrational. And let it be called the side of the sum of two medial areas.",
+  "ai_proof_text": "10.41\n**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.\n\n**Step 1.** Let AB, BC be two straight lines incommensurable in square, placed in a straight line at B, such that the sum of the squares on AB, BC is medial, the rectangle AB·BC is medial, and the rectangle AB·BC is incommensurable with the sum of the squares on AB, BC. We show that the whole AC is irrational.\n\n**Step 2.** Set out a rational straight line DE [D10.1.3]. To DE apply, at right angles, the rectangle DF equal to the sum of the squares on AB, BC, with breadth DG [1.45]; and to GF (the side of DF opposite DE) apply, at right angles and on the same side, the rectangle GH equal to twice the rectangle AB·BC, with breadth GK [1.45]. Then DK is one straight line, and the whole DH is the rectangle contained by DE, DK.\n\n**Step 3.** By 2.4, the square on AC equals the squares on AB, BC together with twice the rectangle AB·BC. Since DF equals the squares on AB, BC and GH equals twice the rectangle AB·BC, the whole DH = DF + GH equals the square on AC [CN2, CN1].\n\n**Step 4.** The sum of the squares on AB, BC is medial, that is, equal to the square on a medial straight line [10.21]; DF equals it [CN1], so DF is a medial area applied to the rational straight line DE. By 10.22 its breadth DG is rational and incommensurable in length with DE.\n\n**Step 5.** The rectangle AB·BC is medial. Twice the rectangle AB·BC has to the rectangle AB·BC the ratio 2 : 1, which a number has to a number, so twice the rectangle is commensurable with the rectangle [10.6]; and an area commensurable with a medial area is medial [10.23, Porism]. Hence GH, being equal to twice the rectangle AB·BC, is medial. GH is applied to GF, which equals DE [1.34] and is therefore rational; so by 10.22 its breadth GK is rational and incommensurable in length with DE.\n\n**Step 6.** By hypothesis the squares on AB, BC are incommensurable with the rectangle AB·BC, and the rectangle AB·BC is commensurable with twice itself (Step 5); therefore the squares on AB, BC are incommensurable with twice the rectangle AB·BC [10.13]. Hence DF is incommensurable with GH.\n\n**Step 7.** DF and GH are parallelograms under the same height DE (= GF), so DF : GH = DG : GK [6.1]. Since DF is incommensurable with GH, DG is incommensurable in length with GK [10.11].\n\n**Step 8.** DG and GK are each rational and each incommensurable in length with DE (Steps 4, 5); hence each is commensurable with DE in square only [D10.1.3]. The squares on DG and GK are thus both commensurable with the square on DE, so they are commensurable with one another [10.12], i.e. DG, GK are commensurable in square [D10.1.2]. Together with Step 7, DG and GK are rational straight lines commensurable in square only.\n\n**Step 9.** Therefore DK, the sum of DG and GK, is irrational; it is a binomial [10.36].\n\n**Step 10.** DH is contained by the rational straight line DE and the irrational straight line DK. If DH were rational, then, being a rational area applied to the rational straight line DE, it would produce as breadth a straight line rational and commensurable in length with DE [10.20]; but its breadth DK is irrational. Therefore DH is not rational, that is, DH is irrational [D10.1.4].\n\n**Step 11.** The side of the square equal to an irrational area is irrational [D10.1.4]. Since the square on AC equals DH (Step 3), AC is the side of the square equal to DH; therefore AC is irrational. Because the square on AC is the sum of the two medial areas DF and GH, let AC be called the side of the sum of two medial areas. Q.E.D.\n\nRemark on path choice: the applications of areas in Step 2 use 1.45 (a parallelogram in a given angle equal to any given rectilineal figure) rather than 1.44, since the figures applied are squares and rectangles rather than triangles.\n\n**USED:** 1.34, 1.45, 10.11, 10.12, 10.13, 10.20, 10.21, 10.22, 10.23, 10.36, 10.6, 2.4, 6.1, CN1, CN2, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.22, 10.35, 10.36, 2.4, 6.1, D10.1.4\n**Jaccard:** 0.316 — AI adds ['1.34', '1.45', '10.12', '10.13', '10.20', '10.21', '10.23', '10.6', 'CN1', 'CN2', 'D10.1.2', 'D10.1.3']; Human adds ['10.35']",
+  "ai_used": [
+    "1.34",
+    "1.45",
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.6",
+    "2.4",
+    "6.1",
+    "CN1",
+    "CN2",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.35",
+    "10.36",
+    "2.4",
+    "6.1",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "1.34",
+    "1.45",
+    "10.12",
+    "10.13",
+    "10.20",
+    "10.21",
+    "10.23",
+    "10.6",
+    "CN1",
+    "CN2",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.35"
+  ],
+  "jaccard": 0.316,
+  "proof_summary": "**Step 1.** Let AB, BC be two straight lines incommensurable in square, placed in a straight line at B, such that the sum of the squares on AB, BC is medial, the rectangle AB·BC is medial, and the rec"
+}

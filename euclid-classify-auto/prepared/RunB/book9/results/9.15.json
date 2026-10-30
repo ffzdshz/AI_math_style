@@ -1,0 +1,13 @@
+{
+  "proposition": "9.15",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. For the first two sub-cases (A+B prime to C, and B+C prime to A), both proofs share the same backbone: establish a,b coprime (7.22), their sum coprime to each (7.28), then use 7.25 and 7.24 to show the result. The AI omits the explicit citation of II.3 for the factoring but achieves the same intermediate conclusion, which alone would be a granularity difference. However, for the third sub-case (A+C prime to B), the proofs take genuinely different paths. Heath uses II.4 to expand (DE+EF)^2, establishes that this square is coprime to DE*EF, then applies separando twice to conclude that DE^2+EF^2 is coprime to DE*EF. The AI instead uses a direct divisibility argument: assuming d divides both a^2+b^2 and a, it shows d must divide b^2, but since b^2 is coprime to a (by 7.25) and d divides a, d must be unity. This proves a^2+b^2 is coprime to a (and symmetrically to b), then invokes 7.24 to get coprimality with ab. This is a valid but structurally different logical path that does not pass through II.4 or the separando steps at all, constituting a genuine path difference under Q2 Case B, confirmed valid under Q3.",
+  "jaccard": 0.714,
+  "ai_citations": "7.22|7.24|7.25|7.28|8.2",
+  "heath_citations": "2.3|2.4|7.22|7.24|7.25|7.28|8.2",
+  "ai_only": "",
+  "heath_only": "2.3|2.4",
+  "audit_record": ""
+}

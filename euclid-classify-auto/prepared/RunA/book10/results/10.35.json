@@ -1,0 +1,13 @@
+{
+  "proposition": "10.35",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs follow the same logical backbone: start with two medial straight lines commensurable in square only containing a medial rectangle with the square on the greater exceeding the square on the less by a line incommensurable with the greater, then use a semicircle construction with a perpendicular to produce two lines that are incommensurable in square, whose sum of squares is medial, whose rectangle is medial, and whose sum of squares is incommensurable with their rectangle. The sole heath_only citation (10.32) is a higher-level proposition that bundles the initial construction; the AI decomposes this into 10.28 (medial lines with medial rectangle) plus 10.18 (incommensurability condition) plus 10.10 (auxiliary construction). The proof-tree containment test confirms this: Heath's proof of 10.32 and its attached Lemma internally use 10.21, 10.23, 6.8, 6.17, and other propositions that appear in the AI's ai_only set, showing the AI re-derives at finer granularity what Heath cites as a unit. The remaining ai_only items are construction steps (1.11, P1), definitions (D10.1.2, D10.1.4), common notions (CN1), and explicit sub-steps (6.1, 6.8, 6.17, 2.14, 10.6) that Heath leaves implicit. All key intermediate conclusions match between the two proofs.",
+  "jaccard": 0.25,
+  "ai_citations": "1.11|1.47|10.10|10.11|10.13|10.18|10.21|10.23|10.28|10.6|2.14|3.31|6.1|6.17|6.8|CN1|D10.1.2|D10.1.4|P1",
+  "heath_citations": "1.47|10.11|10.13|10.18|10.32|3.31",
+  "ai_only": "1.11|10.10|10.21|10.23|10.28|10.6|2.14|6.1|6.17|6.8|CN1|D10.1.2|D10.1.4|P1",
+  "heath_only": "10.32",
+  "audit_record": ""
+}

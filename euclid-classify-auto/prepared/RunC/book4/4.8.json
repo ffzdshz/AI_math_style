@@ -1,0 +1,38 @@
+{
+  "proposition": "4.8",
+  "book": 4,
+  "statement": "In a given square to inscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to inscribe a circle in the given square ABCD. Let the straight lines AD, AB be bisected at the points E, F respectively [I. 10], through E let EH be drawn parallel to either AB or CD, and through F let FK be drawn parallel to either AD or BC; [I. 31] therefore each of the figures AK, KB, AH, HD, AG, GC, BG, GD is a parallelogram, and their opposite sides are evidently equal. [I. 34] Now, since AD is equal to AB, and AE is half of AD, and AF half of AB, therefore AE is equal to AF, so that the opposite sides are also equal;  therefore FG is equal to GE. Similarly we can prove that each of the straight lines GH, GK is equal to each of the straight lines FG, GE; therefore the four straight lines GE, GF, GH, GK are equal to one another. Therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will pass also through the remaining points. And it will touch the straight lines AB, BC, CD, DA, because the angles at E, F, H, K are right. For, if the circle cuts AB, BC, CD, DA, the straight line drawn at right angles to the diameter of the circle from its extremity will fall within the circle: which was proved absurd; [III. 16] therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will not cut the straight lines AB, BC, CD, DA. Therefore it will touch them, and will have been inscribed in the square ABCD. Therefore in the given square a circle has been inscribed.",
+  "ai_proof_text": "4.8\n**Statement:** In a given square to inscribe a circle.\n\n**Step 1.** Let ABCD be the given square, with vertices labeled so that AB, BC, CD, DA are its sides. By D1.22, ABCD is equilateral and right-angled, so AB = BC = CD = DA, and each interior angle is a right angle.\n\n**Step 2.** Bisect AD at E and bisect AB at G [1.10]. Then AE = ED and AG = GB.\n\n**Step 3.** Through E, draw line EF parallel to AB, meeting BC at F [1.31, P1]. Through G, draw line GH parallel to AD, meeting DC at H [1.31, P1].\n\n**Step 4.** Let K be the intersection of EF and GH. Since EF is parallel to AB (and hence to CD), and GH is parallel to AD (and hence to BC), the figure AEKG has AE parallel to GK and AG parallel to EK.\n\n**Step 5.** Therefore AEKG is a parallelogram, so AE = GK and AG = EK [1.34]. Since ABCD is a square, AD = AB, and since AE is half of AD and AG is half of AB, we have AE = AG [CN1]. Therefore EK = GK = AE = AG.\n\n**Step 6.** Similarly, EBFK is a parallelogram (EB parallel to KF, EK parallel to BF), so KF = EB = AE [1.34, CN1]. And GKHD is a parallelogram, so KH = GD. Now GD = AG (since AG = GB = half of AB, and similarly DH = half of DC = half of AB = AG; but GD is not a side — let me proceed differently). GKHD is a parallelogram with GK parallel to DH and GD parallel to KH, so KH = GD [1.34]. Since DC = AB and DH = half of DC (by the parallel construction from the midpoint G, the line GH meets DC at H with DH = AG), we have KH = AG = AE [CN1].\n\n**Step 7.** Thus KE = KG = KF = KH, all equal to half the side of the square.\n\n**Step 8.** With center K and radius KE, describe circle EGFH [P3]. Since KE = KF = KG = KH, the circle passes through E, F, G, and H, the midpoints of the four sides.\n\n**Step 9.** Now consider side AD. The line EK (part of EF) is parallel to AB, so EK is perpendicular to AD, since angle DAB is a right angle and EK is parallel to AB [1.29, P4]. Thus KE meets AD at right angles at the point E, which lies on the circle. By 3.16, since KE is a radius drawn to the point E on the circle and KE is perpendicular to AD, the line AD touches the circle at E and does not cut it. Therefore side AD is tangent to the circle at E.\n\n**Step 10.** By the same reasoning, side AB is perpendicular to GK at G (since GK is parallel to AD and angle DAB is right), so AB touches the circle at G [3.16, 1.29, P4]. Side BC is perpendicular to KF at F (since KF is parallel to AB and angle ABC is right), so BC touches the circle at F [3.16, 1.29, P4]. Side CD is perpendicular to KH at H (since KH is parallel to AD and angle ADC is right), so CD touches the circle at H [3.16, 1.29, P4].\n\n**Step 11.** Since each side of square ABCD touches the circle at exactly one point, the circle with center K and radius KE is inscribed in the square ABCD [D4.5].\n\n**Step 12.** Therefore, in the given square a circle has been inscribed, which is what was required to do.\n\n**USED:** 1.10, 1.29, 1.31, 1.34, 3.16, CN1, D1.22, D4.5, P1, P3, P4\n**Human refs (from References field):** 1.10, 1.31, 1.34, 3.16\n**Jaccard:** 0.364 — AI adds ['1.29', 'CN1', 'D1.22', 'D4.5', 'P1', 'P3', 'P4']",
+  "ai_used": [
+    "1.10",
+    "1.29",
+    "1.31",
+    "1.34",
+    "3.16",
+    "CN1",
+    "D1.22",
+    "D4.5",
+    "P1",
+    "P3",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.10",
+    "1.31",
+    "1.34",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.29",
+    "CN1",
+    "D1.22",
+    "D4.5",
+    "P1",
+    "P3",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let ABCD be the given square, with vertices labeled so that AB, BC, CD, DA are its sides. By D1.22, ABCD is equilateral and right-angled, so AB = BC = CD = DA, and each interior angle is a"
+}

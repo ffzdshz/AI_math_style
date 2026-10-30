@@ -1,0 +1,33 @@
+{
+  "proposition": "10.39",
+  "book": 10,
+  "statement": "If two straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole straight line is irrational: and let it be called major.",
+  "heath_proof": "For let two straight lines AB, BC incommensurable in square, and fulfilling the given conditions [X. 33], be added together; I say that AC is irrational. For, since the rectangle AB, BC is medial, twice the rectangle AB, BC is also medial. [X. 6 and 23] But the sum of the squares on AB, BC is rational; therefore twice the rectangle AB, BC is incommensurable with the sum of the squares on AB, BC, so that the squares on AB, BC together with twice the rectangle AB, BC that is, the square on AC, is also incommensurable with the sum of the squares on AB, BC; [X. 16] therefore the square on AC is irrational, so that AC is also irrational. [X. Def. 4] And let it be called major.",
+  "ai_proof_text": "10.39\n**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole straight line is irrational: and let it be called major.\n\n**Step 1.** Let AB and BC be two straight lines incommensurable in square which make the sum of the squares on them, sq(AB) + sq(BC), rational, and the rectangle contained by them, rect(AB, BC), medial. Let AC = AB + BC. We are to show that AC is irrational.\n\n**Step 2.** By 2.4, the square on the whole AC satisfies sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC).\n\n**Step 3.** Since rect(AB, BC) is medial, it is irrational, that is, incommensurable with the square on the assigned rational straight line, by D10.1.4 and 10.21.\n\n**Step 4.** Now 2*rect(AB, BC) has to rect(AB, BC) the ratio 2 to 1, which is a ratio of number to number. Therefore by 10.6, 2*rect(AB, BC) is commensurable with rect(AB, BC).\n\n**Step 5.** Since 2*rect(AB, BC) is commensurable with rect(AB, BC), and rect(AB, BC) is incommensurable with the square on the rational straight line (Step 3), it follows by 10.13 that 2*rect(AB, BC) is also incommensurable with the square on the rational straight line. Hence 2*rect(AB, BC) is irrational.\n\n**Step 6.** But sq(AB) + sq(BC) is rational by hypothesis, so it is commensurable with the square on the rational straight line, by D10.1.4.\n\n**Step 7.** Since sq(AB) + sq(BC) is commensurable with the square on the rational straight line (Step 6), and 2*rect(AB, BC) is incommensurable with the square on the rational straight line (Step 5), it follows by 10.13 that 2*rect(AB, BC) is incommensurable with sq(AB) + sq(BC).\n\n**Step 8.** Since sq(AB) + sq(BC) and 2*rect(AB, BC) are incommensurable with one another, by 10.16 their sum sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC) is incommensurable with each of them, and in particular incommensurable with sq(AB) + sq(BC).\n\n**Step 9.** Since sq(AB) + sq(BC) is rational, hence commensurable with the square on the rational straight line, and sq(AC) is incommensurable with sq(AB) + sq(BC) (Step 8), it follows by 10.13 that sq(AC) is incommensurable with the square on the rational straight line. Therefore sq(AC) is irrational by D10.1.4.\n\n**Step 10.** Since sq(AC) is irrational, the straight line AC is irrational by D10.1.4. Let AC be called major. QED.\n\n**USED:** 10.13, 10.16, 10.21, 10.6, 2.4, D10.1.4\n**Human refs (from References field):** 10.16, 10.23, 10.33, 10.6, D10.1.4\n**Jaccard:** 0.375 — AI adds ['10.13', '10.21', '2.4']; Human adds ['10.23', '10.33']",
+  "ai_used": [
+    "10.13",
+    "10.16",
+    "10.21",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.16",
+    "10.23",
+    "10.33",
+    "10.6",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.13",
+    "10.21",
+    "2.4"
+  ],
+  "heath_only": [
+    "10.23",
+    "10.33"
+  ],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let AB and BC be two straight lines incommensurable in square which make the sum of the squares on them, sq(AB) + sq(BC), rational, and the rectangle contained by them, rect(AB, BC), media"
+}

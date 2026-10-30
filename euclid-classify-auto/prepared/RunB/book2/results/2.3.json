@@ -1,0 +1,13 @@
+{
+  "proposition": "2.3",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as D (path difference). Heath's proof constructs a square CDEB on CB (I.46), draws a parallel line AF (I.31), and then decomposes the resulting rectangle AE into sub-rectangles AD and CE, identifying each with the required terms. The AI takes a fundamentally different approach by recognizing 2.3 as a direct corollary of Proposition 2.1: it treats AB and BC as two straight lines where AB is cut at C, applies 2.1 to get rect(AB,BC) = rect(AC,BC) + rect(CB,BC), and then identifies rect(CB,BC) as the square on BC by definition. The proof-tree containment test was applied since the AI cites 2.1 as a higher-level proposition and heath_only contains {1.31, 1.46}. While 1.31 appears in Heath's proof of 2.1, 1.46 does not, so containment fails. The key intermediate conclusions differ: Heath's backbone is geometric area decomposition of a constructed figure, while the AI's backbone is algebraic application of 2.1. The AI's path is logically valid (2.1 is correctly applied, the identification of rect(CB,BC) with sq(BC) is sound), yielding a valid different path.",
+  "jaccard": 0.0,
+  "ai_citations": "2.1|D1.22|D2.1",
+  "heath_citations": "1.31|1.46",
+  "ai_only": "2.1|D1.22|D2.1",
+  "heath_only": "1.31|1.46",
+  "audit_record": ""
+}

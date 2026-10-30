@@ -1,0 +1,13 @@
+{
+  "proposition": "5.23",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs establish the same key intermediate conclusions before applying 5.21: (1) G:H :: M:N and (2) H:L :: K:M, where G,H,K are equimultiples of A,B,D and L,M,N are equimultiples of C,E,F. The difference lies in how H:L :: K:M is derived. Heath uses a multi-step chain involving 5.16 (alternation), 5.15 (equimultiples preserve ratios), and 5.11 (transitivity) applied repeatedly to pass through intermediate ratios B:D :: C:E, H:K :: B:D, H:K :: C:E, L:M :: C:E, H:K :: L:M, and then alternation again to get H:L :: K:M. The AI instead applies 5.4 directly to B:C :: D:E to obtain mB:nC :: mD:nE, i.e., H:L :: K:M in one step. Since both proofs arrive at the same backbone of key intermediate conclusions and differ only in the propositions used to derive one of those intermediates, this is a granularity difference (Q2 Case A). The ai_only items D5.17, D5.18, and D5.5 are definitions (overcitation), and 5.4 replaces Heath's multi-step 5.16-based derivation to reach the same intermediate result.",
+  "jaccard": 0.375,
+  "ai_citations": "5.11|5.15|5.21|5.4|D5.17|D5.18|D5.5",
+  "heath_citations": "5.11|5.15|5.16|5.21",
+  "ai_only": "5.4|D5.17|D5.18|D5.5",
+  "heath_only": "5.16",
+  "audit_record": ""
+}

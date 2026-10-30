@@ -1,0 +1,26 @@
+{
+  "proposition": "7.27",
+  "book": 7,
+  "statement": "If two numbers be prime to one another, and each by multiplying itself make a certain number, the products will be prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter will also be prime to one another [and this is always the case with the extremes].",
+  "heath_proof": "Let A, B be two numbers prime to one another, let A by multiplying itself make C, and by multiplying C make D, and let B by multiplying itself make E, and by multiplying E make F; I say that both C, E and D, F are prime to one another. For, since A, B are prime to one another, and A by multiplying itself has made C, therefore C, B are prime to one another. [VII. 25] Since then C, B are prime to one another, and B by multiplying itself has made E, therefore C, E are prime to one another. [id.] Again, since A, B are prime to one another, and B by multiplying itself has made E, therefore A, E are prime to one another. [id.] Since then the two numbers A, C are prime to the two numbers B, E, both to each, therefore also the product of A, C is prime to the product of B, E. [VII. 26] And the product of A, C is D, and the product of B, E is F. Therefore D, F are prime to one another.",
+  "ai_proof_text": "7.27\n**Statement:** If two numbers be prime to one another, and each by multiplying itself make a certain number, the products will be prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter will also be prime to one another [and this is always the case with the extremes].\n\n**Step 1.** Let A and B be two numbers prime to one another [D7.12]. Let A multiplying itself make C, so that C = A * A [D7.15, D7.18], and let B multiplying itself make D, so that D = B * B [D7.15, D7.18]. We must show that C and D are prime to one another. Further, let A multiplying C make E, and B multiplying D make F. We must also show that E and F are prime to one another.\n\n**Step 2.** Since A and B are prime to one another, and A and B are each prime to the other, we may apply Proposition 7.26 with the two pairs (A, A) and (B, B). We verify: A is prime to B (given), and A is prime to B (given) — so each of A, A is prime to each of B, B, satisfying all four pairwise conditions. Therefore by 7.26, the product A * A is prime to the product B * B, that is, C is prime to D.\n\n**Step 3.** Now we must show that E = A * C and F = B * D are prime to one another. We shall apply 7.26 with the two pairs (A, C) and (B, D), so we must verify that each of A, C is prime to each of B, D.\n\n**Step 4.** A is prime to B: this is given.\n\n**Step 5.** A is prime to D: Since A and B are prime to one another, by 7.25 the product of B into itself, namely D = B * B, is prime to A. Hence A is prime to D.\n\n**Step 6.** C is prime to B: Since A and B are prime to one another, by 7.25 the product of A into itself, namely C = A * A, is prime to B.\n\n**Step 7.** C is prime to D: this was established in Step 2.\n\n**Step 8.** Since A is prime to B (Step 4), A is prime to D (Step 5), C is prime to B (Step 6), and C is prime to D (Step 7), we have that the two numbers A and C are prime to the two numbers B and D, both to each. Therefore by 7.26, the product A * C is prime to the product B * D, that is, E is prime to F.\n\n**Step 9.** Therefore, if two numbers be prime to one another, their squares are prime to one another, and their cubes are also prime to one another. Q.E.D.\n\n**USED:** 7.25, 7.26, D7.12, D7.15, D7.18\n**Human refs (from References field):** 7.25, 7.26\n**Jaccard:** 0.400 — AI adds ['D7.12', 'D7.15', 'D7.18']",
+  "ai_used": [
+    "7.25",
+    "7.26",
+    "D7.12",
+    "D7.15",
+    "D7.18"
+  ],
+  "heath_refs": [
+    "7.25",
+    "7.26"
+  ],
+  "ai_only": [
+    "D7.12",
+    "D7.15",
+    "D7.18"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let A and B be two numbers prime to one another [D7.12]. Let A multiplying itself make C, so that C = A * A [D7.15, D7.18], and let B multiplying itself make D, so that D = B * B [D7.15, D"
+}

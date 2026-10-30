@@ -1,0 +1,28 @@
+{
+  "proposition": "11.14",
+  "book": 11,
+  "statement": "Planes to which the same straight line is at right angles will be parallel.",
+  "heath_proof": "For let any straight line AB be at right angles to each of the planes CD, EF; I say that the planes are parallel. For, if not, they will meet when produced. Let them meet; they will then make, as common section, a straight line. [XI. 3] Let them make GH; let a point K be taken at random on GH, and let AK, BK be joined. Now, since AB is at right angles to the plane EF, therefore AB is also at right angles to BK which is a straight line in the plane EF produced; [XI. Def. 3] therefore the angle ABK is right. For the same reason the angle BAK is also right. Thus, in the triangle ABK, the two angles ABK, BAK are equal to two right angles: which is impossible. [I. 17] Therefore the planes CD, EF will not meet when produced; therefore the planes CD, EF are parallel. [XI. Def. 8] Therefore planes to which the same straight line is at right angles are parallel.",
+  "ai_proof_text": "11.14\n**Statement:** Planes to which the same straight line is at right angles will be parallel.\n\n**Step 1.** Let the straight line AB be at right angles to each of the planes P and Q, meeting plane P at A and plane Q at B. We wish to show that P and Q are parallel.\n\n**Step 2.** Suppose, for the sake of contradiction, that planes P and Q are not parallel. Then by the definition of parallel planes (D11.8), they meet one another.\n\n**Step 3.** Since the two planes meet, their common section is a straight line; call it DE. [11.3]\n\n**Step 4.** Take any point F on the line DE. Join AF and BF. [P1] Since A lies in plane P and F lies on DE which is in plane P, the line AF lies in plane P. Since B lies in plane Q and F lies on DE which is in plane Q, the line BF lies in plane Q.\n\n**Step 5.** We claim that A, B, and F are not collinear, so that triangle ABF exists. Since AB is at right angles to plane P, it meets plane P only at A; since AB is at right angles to plane Q, it meets plane Q only at B. If F were on line AB, then F would lie in both plane P and plane Q, giving F = A (the only intersection of AB with P) and F = B (the only intersection of AB with Q), hence A = B, which is impossible since AB is a straight line of positive length. Therefore A, B, F are non-collinear and triangle ABF exists. By 11.2, this triangle lies in one plane.\n\n**Step 6.** Since AB is at right angles to plane P, it makes right angles with all straight lines that meet it and lie in plane P (D11.3). The line AF meets AB at A and lies in plane P, so angle BAF is a right angle.\n\n**Step 7.** Since AB is at right angles to plane Q, it makes right angles with all straight lines that meet it and lie in plane Q (D11.3). The line BF meets AB at B and lies in plane Q, so angle ABF is a right angle.\n\n**Step 8.** In triangle ABF, the two angles BAF and ABF are each right angles, so together they equal two right angles. But by 1.17, any two angles of a triangle taken together are less than two right angles. This is a contradiction.\n\n**Step 9.** Therefore the assumption that planes P and Q meet is false. Hence P and Q do not meet, and by definition (D11.8) they are parallel. Q.E.D.\n\n**USED:** 1.17, 11.2, 11.3, D11.3, D11.8, P1\n**Human refs (from References field):** 1.17, 11.3, D11.3, D11.8\n**Jaccard:** 0.667 — AI adds ['11.2', 'P1']",
+  "ai_used": [
+    "1.17",
+    "11.2",
+    "11.3",
+    "D11.3",
+    "D11.8",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.17",
+    "11.3",
+    "D11.3",
+    "D11.8"
+  ],
+  "ai_only": [
+    "11.2",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let the straight line AB be at right angles to each of the planes P and Q, meeting plane P at A and plane Q at B. We wish to show that P and Q are parallel.  **Step 2.** Suppose, for the s"
+}

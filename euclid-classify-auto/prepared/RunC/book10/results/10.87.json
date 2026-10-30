@@ -1,0 +1,13 @@
+{
+  "proposition": "10.87",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The AI proof uses a different numerical setup from Heath's: the AI stipulates that BC:CD IS a square-to-square ratio (Step 1), whereas Heath stipulates that BC:CD is NOT a square-to-square ratio. This difference is fatal. With the AI's setup, Step 5 correctly derives that FG is commensurable in LENGTH with GH (not merely in square). But 10.73, which the AI cites to establish FH as an apotome, requires that FG and GH be 'commensurable in square only' -- that is, commensurable in square but NOT in length. The AI itself acknowledges the contradiction in Steps 9 and 12 ('since FG is commensurable in length with GH, FH is not formed as in 10.73 directly') but never provides a valid alternative justification. With FG and GH commensurable in length and both rational, FH = FG - GH would itself be rational, not an apotome. Since FH is never validly shown to be an apotome, it cannot be classified as a third apotome. This is a genuine invalid inference -- the AI infers a conclusion (FH is an apotome via 10.73) from premises that contradict the cited proposition's hypothesis -- not mere brevity or compression.",
+  "jaccard": 0.625,
+  "ai_citations": "10.17|10.6|10.73|10.9|5.22|D10.1.3|D10.3.3",
+  "heath_citations": "10.6|10.73|10.9|5.19|5.22|D10.3.3",
+  "ai_only": "10.17|D10.1.3",
+  "heath_only": "5.19",
+  "audit_record": "CANDIDATE E — 10.87\n  violated_claim : FH is an apotome (cited as following from 10.73 in Steps 9 and 12)\n  failure_mode   : invalid_inference\n  missing_is     : support\n  evidence       : AI Step 1 sets BC:CD as a square-to-square ratio. AI Step 5 derives FG commensurable in length with GH from this. AI Steps 9 and 12 cite 10.73, which requires 'commensurable in square only,' but the AI's own construction gives commensurable in length. The AI explicitly notes the problem ('FG and GH are commensurable in length, so we must verify the apotome structure differently' in Step 9; 'since FG is commensurable in length with GH, FH is not formed as in 10.73 directly' in Step 12) but never resolves it.\n  why_not_terse  : This is not brevity -- the AI's own construction produces premises (FG comm. in length with GH) that contradict the hypothesis of the theorem it cites (10.73 requires comm. in square only). The AI acknowledges the contradiction but provides no resolution. With FG and GH commensurable in length and both rational, FH would be rational, not an apotome."
+}

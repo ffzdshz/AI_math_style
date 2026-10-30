@@ -1,0 +1,41 @@
+{
+  "proposition": "10.26",
+  "book": 10,
+  "statement": "A medial area does not exceed a medial area by a rational area.",
+  "heath_proof": "For, if possible, let the medial area AB exceed the medial area AC by the rational area DB, and let a rational straight line EF be set out; to EF let there be applied the rectangular parallelogram FH equal to AB, producing EH as breadth, and let the rectangle FG equal to AC be subtracted; therefore the remainder BD is equal to the remainder KH. But DB is rational; therefore KH is also rational. Since, then, each of the rectangles AB, AC is medial, and AB is equal to FH, and AC to FG, therefore each of the rectangles FH, FG is also medial. And they are applied to the rational straight line EF; therefore each of the straight lines HE, EG is rational and incommensurable in length with EF. [X. 22] And, since [DB is rational and is equal to KH, therefore]KH is [also]rational; and it is applied to the rational straight line EF; therefore GH is rational and commensurable in length with EF. [X. 20] But EG is also rational, and is incommensurable in length with EF; therefore EG is incommensurable in length with GH. [X. 13] And, as EG is to GH, so is the square on EG to the rectangle EG, GH; therefore the square on EG is incommensurable with the rectangle EG, GH. [X. 11] But the squares on EG, GH are commensurable with the square on EG, for both are rational; and twice the rectangle EG, GH is commensurable with the rectangle EG, GH, for it is double of it; [X. 6] therefore the squares on EG, GH are incommensurable with twice the rectangle EG, GH; [X. 13] therefore also the sum of the squares on EG, GH and twice the rectangle EG, GH, that is, the square on EH [II. 4], is incommensurable with the squares on EG, GH. [X. 16] But the squares on EG, GH are rational; therefore the square on EH is irrational. [X. Def. 4] Therefore EH is irrational. But it is also rational: which is impossible.",
+  "ai_proof_text": "10.26\n**Statement:** A medial area does not exceed a medial area by a rational area.\n\n**Step 1.** Suppose, for the sake of contradiction, that AB and CD are medial areas with AB greater than CD, and that their difference AB minus CD is a rational area.\n\n**Step 2.** Let EF be a rational straight line. Apply the area AB to EF, producing as breadth the straight line FH, so that the rectangle EF times FH equals AB. Apply the area CD to EF, producing as breadth FG, so that the rectangle EF times FG equals CD, where G falls between F and H (since CD is less than AB). Then the rectangle EF times GH equals AB minus CD, where GH equals FH minus FG.\n\n**Step 3.** Since AB is a medial area applied to the rational straight line EF, the breadth FH is rational and incommensurable in length with EF [10.22]. Similarly, since CD is a medial area applied to the rational straight line EF, the breadth FG is rational and incommensurable in length with EF [10.22].\n\n**Step 4.** Since AB minus CD is a rational area (by hypothesis) applied to the rational straight line EF, the breadth GH is rational and commensurable in length with EF [10.20].\n\n**Step 5.** Since FH is rational, FH is commensurable in square with EF [D10.1.3], so the square on FH is commensurable with the square on EF. Since FG is rational, likewise the square on FG is commensurable with the square on EF. Therefore the square on FH and the square on FG are commensurable with one another [10.12]. Since the square on FH is commensurable with the square on FG, the difference of the square on FH and the square on FG is commensurable with the square on FG [10.15], and hence commensurable with the square on EF [10.12]. Therefore the difference of the squares on FH and FG is a rational area [D10.1.4].\n\n**Step 6.** Now, by repeated application of the distributive property of rectangles [2.1], the rectangle contained by the sum FH plus FG and the difference FH minus FG equals the square on FH minus the square on FG. Since FH minus FG equals GH, the rectangle contained by FH plus FG and GH equals the difference of the squares on FH and FG, which is a rational area by Step 5.\n\n**Step 7.** The rectangle contained by FH plus FG and GH is thus a rational area, and GH is a rational straight line commensurable in length with EF (from Step 4). Applying this rational area to the rational straight line GH, the breadth is FH plus FG. By the property that a rational area applied to a rational straight line produces a breadth rational and commensurable in length with that line [10.20], the straight line FH plus FG is rational and commensurable in length with GH. Since GH is commensurable in length with EF, the straight line FH plus FG is commensurable in length with EF [10.12].\n\n**Step 8.** We now have that FH plus FG is commensurable in length with EF, and GH (which equals FH minus FG) is commensurable in length with EF. Since both are commensurable with EF, they are commensurable with one another [10.12]. Therefore their sum, which equals (FH plus FG) plus (FH minus FG) equals twice FH, is commensurable with each of them [10.15], and hence commensurable in length with EF [10.12].\n\n**Step 9.** Since twice FH is commensurable in length with EF, and FH has to twice FH the ratio 1 to 2 (which is a ratio of numbers), FH and twice FH are commensurable [10.6]. Since FH is commensurable with twice FH and twice FH is commensurable with EF, it follows that FH is commensurable in length with EF [10.12].\n\n**Step 10.** But this contradicts Step 3, which established that FH is incommensurable in length with EF [10.22]. Therefore the supposition that AB minus CD is rational is false, and a medial area does not exceed a medial area by a rational area. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.20, 10.22, 10.6, 2.1, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.13, 10.16, 10.20, 10.22, 10.6, 2.4, D10.1.4\n**Jaccard:** 0.333 — AI adds ['10.12', '10.15', '2.1', 'D10.1.3']; Human adds ['10.11', '10.13', '10.16', '2.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.6",
+    "2.1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.16",
+    "10.20",
+    "10.22",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.1",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.13",
+    "10.16",
+    "2.4"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Suppose, for the sake of contradiction, that AB and CD are medial areas with AB greater than CD, and that their difference AB minus CD is a rational area.  **Step 2.** Let EF be a rational"
+}

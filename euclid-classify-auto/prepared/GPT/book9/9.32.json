@@ -1,0 +1,37 @@
+{
+  "proposition": "9.32",
+  "book": 9,
+  "statement": "Each of the numbers which are continually doubled beginning from a dyad is even-times even only.",
+  "heath_proof": "For let as many numbers as we please, B, C, D, have been continually doubled beginning from the dyad A; I say that B, C, D are eventimes even only. Now that each of the numbers B, C, D is even-times even is manifest; for it is doubled from a dyad. I say that it is also even-times even only. For let an unit be set out. Since then as many numbers as we please beginning from an unit are in continued proportion, and the number A after the unit is prime, therefore D, the greatest of the numbers A, B, C, D, will not be measured by any other number except A, B, C. [IX. 13] And each of the numbers A, B, C is even; therefore D is even-times even only. [VII. Def. 8] Similarly we can prove that each of the numbers B, C is even-times even only.",
+  "ai_proof_text": "9.32\n**Statement:** Each of the numbers which are continually doubled beginning from a dyad is even-times even only.\n\n**Step 1.** Let u be the unit and A₀ the dyad, u + u. Let A₁, A₂, …, Aᵣ be its successive doubles, so that Aᵢ = Aᵢ₋₁ + Aᵢ₋₁. Here A₀ is the starting dyad, and A₁, …, Aᵣ are the numbers obtained by doubling it. The dyad is even because it consists of two equal units; every subsequent term is even because it consists of two equal parts. [D7.1, D7.2, D7.6]\n\n**Step 2.** Choose any of these doubled numbers, N = Aₖ, where k ≥ 1. Its predecessor Aₖ₋₁ measures N according to the dyad, since two copies of Aₖ₋₁ make N. Both the predecessor and the dyad are even by Step 1. Therefore N is even-times even. [D7.15, D7.8]\n\n**Step 3.** To establish exclusivity, use descent by halves: proposition 9.30 applies directly to the given doubling chain. Suppose an odd number O measures N. Since N is even, O also measures its half Aₖ₋₁. Repeating 9.30 along the chain shows that O measures A₀, the dyad. Applying 9.30 once more shows that O measures its half, the unit. This is impossible: a number is a multitude of units and therefore exceeds a single unit, whereas even one copy of it cannot be contained in the unit. Thus no odd number measures N. [9.30, D7.1, D7.2, CN5]\n\n**Step 4.** Suppose N were also even-times odd. Then an even number E would measure N according to an odd number O; that is, O multiplying E would produce N. By commutativity of multiplication, E multiplying O would also produce N, so O would measure N. This contradicts Step 3. Hence N is not even-times odd. [D7.9, D7.15, 7.16]\n\n**Step 5.** Thus N is even-times even, but not even-times odd: it is even-times even only. Since N was any number obtained by successive doubling from the dyad, each of the stated numbers is even-times even only. [D7.8, D7.9]\n\n**USED:** 7.16, 9.30, CN5, D7.1, D7.15, D7.2, D7.6, D7.8, D7.9\n**Human refs (from References field):** 9.13, D7.8\n**Jaccard:** 0.100 — AI adds ['7.16', '9.30', 'CN5', 'D7.1', 'D7.15', 'D7.2', 'D7.6', 'D7.9']; Human adds ['9.13']",
+  "ai_used": [
+    "7.16",
+    "9.30",
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.2",
+    "D7.6",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "9.13",
+    "D7.8"
+  ],
+  "ai_only": [
+    "7.16",
+    "9.30",
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.2",
+    "D7.6",
+    "D7.9"
+  ],
+  "heath_only": [
+    "9.13"
+  ],
+  "jaccard": 0.1,
+  "proof_summary": "**Step 1.** Let u be the unit and A₀ the dyad, u + u. Let A₁, A₂, …, Aᵣ be its successive doubles, so that Aᵢ = Aᵢ₋₁ + Aᵢ₋₁. Here A₀ is the starting dyad, and A₁, …, Aᵣ are the numbers obtained by dou"
+}

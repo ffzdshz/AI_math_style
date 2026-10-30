@@ -1,0 +1,1014 @@
+# Book 7 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 7.1
+**Statement:** Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is left, the original numbers will be prime to one another.
+
+**Step 1.** Let AB and CD be two unequal numbers, AB the greater, and let the less be continually subtracted in turn from the greater, the remainder never measuring the one before it until a unit is left. Thus let CD, measuring BF, leave FA less than itself; let AF, measuring DG, leave GC less than itself; and let GC, measuring FH, leave the unit HA. (Three stages are set out for definiteness; the argument that follows is repeated verbatim at every stage, however many there are.) I say that AB and CD are prime to one another.
+
+**Step 2.** Suppose, on the contrary, that AB and CD are not prime to one another. By D7.12, numbers prime to one another are those which are measured by a unit alone as a common measure; hence there exists a common measure of AB and CD which is not a unit. Call it E. Since E is not a unit, E is a number, that is, a multitude composed of units (D7.2). A single unit (D7.1) is therefore a part of E, so E is greater than a unit (CN5).
+
+**Step 3.** E measures CD, and CD measures BF. By D7.5, BF is a multiple of CD, i.e. BF is CD taken some number of times, and CD is E taken some number of times. Hence BF is E taken some number of times, so that E measures BF.
+
+**Step 4.** E measures the whole BA (by supposition) and the part BF (Step 3). BA is composed of a certain multitude of E's, and BF of a smaller multitude of E's. Taking away from BA the E's composing BF, equals taken from equals leave the remainder AF composed of the remaining E's (CN3). Therefore E measures AF.
+
+**Step 5.** Again, E measures AF (Step 4), and AF measures DG; hence, exactly as in Step 3, E measures DG. But E also measures the whole DC; hence, exactly as in Step 4, E measures the remainder CG.
+
+**Step 6.** Again, E measures CG (Step 5), and CG measures FH; hence, as in Step 3, E measures FH. But E also measures the whole FA (Step 4); hence, as in Step 4, E measures the remainder AH.
+
+**Step 7.** But AH is a unit. If E measures AH, then by D7.5 AH is E taken some number of times, and so AH is not less than E. Yet E is greater than a unit (Step 2), that is, greater than AH. This is impossible: a number cannot measure a unit.
+
+**Step 8.** Therefore no number measures both AB and CD. On the other hand, the unit does measure each of them, since each is a multitude composed of units (D7.2). Hence AB and CD are measured by a unit alone as a common measure, that is, AB and CD are prime to one another (D7.12).
+
+**Step 9.** Therefore, two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until a unit is left, the original numbers are prime to one another. Q.E.D.
+
+**USED:** CN3, CN5, D7.1, D7.12, D7.2, D7.5
+**Human refs (from References field):** D7.12
+**Jaccard:** 0.167 — AI adds ['CN3', 'CN5', 'D7.1', 'D7.2', 'D7.5']
+
+## Proposition 7.2
+**Statement:** Given two numbers not prime to one another, to find their greatest common measure.
+
+## Proposition 7.2
+**Statement:** Given two numbers not prime to one another, to find their greatest common measure.
+
+**Step 1.** Let AB and CD be the two given numbers, not prime to one another, and let CD be not greater than AB. It is required to find the greatest common measure of AB and CD.
+
+**Step 2.** Throughout, the following facts about measuring are used. A number measures another when the latter is the former taken a certain number of times, i.e. is a multiple of it (D7.5). Hence: (a) if a number measures a second number which in turn measures a third, the first measures the third; (b) a number which measures two numbers measures their sum; (c) a number which measures a whole and also one part of it measures the remaining part. Moreover (d) a number which measures another is either equal to it or is a part of it (D7.3), and a part is less than the whole (CN5); therefore no number measures a number less than itself.
+
+**Step 3.** First, suppose CD measures AB. Since CD also measures itself, CD is a common measure of AB and CD. It is also the greatest: by (d) no number greater than CD measures CD, so no number greater than CD can be a common measure of AB and CD. In this case CD is the greatest common measure required.
+
+**Step 4.** Next, suppose CD does not measure AB. Let the less be continually subtracted in turn from the greater: CD from AB as often as possible, leaving a remainder less than CD; then that remainder from CD as often as possible, leaving a remainder less than it; and so on. Each number left is less than the one before it, and a number is a finite multitude of units (D7.2); so the subtraction cannot go on without end, and it stops when some number left measures the one before it.
+
+**Step 5.** The number at which the process stops is not a unit. For if the numbers left never measured the one before until a unit was left, then by 7.1 the numbers AB and CD would be prime to one another, which is contrary to the hypothesis. Therefore some number greater than a unit is left which measures the one before it.
+
+**Step 6.** For definiteness let the process run as follows (the reasoning is identical for any number of steps): CD, measuring BE, leaves EA less than CD; EA, measuring DF, leaves FC less than EA; and CF measures AE. Thus BA is made up of BE and EA, and DC is made up of DF and FC.
+
+**Step 7.** Since CF measures AE, and AE measures DF, CF measures DF by (a). But CF also measures itself, that is, FC; therefore by (b) CF measures the whole CD.
+
+**Step 8.** Since CF measures CD, and CD measures BE, CF measures BE by (a). But CF also measures EA; therefore by (b) CF measures the whole BA. Hence CF measures both AB and CD, and CF is a common measure of AB and CD.
+
+**Step 9.** I say that CF is also the greatest common measure. For if not, some number greater than CF measures both AB and CD; let such a number be G.
+
+**Step 10.** Since G measures CD, and CD measures BE, G measures BE by (a). But G also measures the whole BA; therefore by (c) G measures the remainder AE.
+
+**Step 11.** Since G measures AE, and AE measures DF, G measures DF by (a). But G also measures the whole DC; therefore by (c) G measures the remainder CF.
+
+**Step 12.** Thus G, which is greater than CF, measures CF; but by (d) no number measures a number less than itself. This is impossible. Therefore no number greater than CF measures both AB and CD, and CF is the greatest common measure of AB and CD. Q.E.F.
+
+**Step 13.** Porism. From Steps 10 and 11 it is manifest that any number which measures both AB and CD also measures CF; that is, if a number measures two numbers, it also measures their greatest common measure.
+
+**USED:** D7.2, D7.3, D7.5, CN5, 7.1
+
+**USED:** 7.1, CN5, D7.2, D7.3, D7.5
+**Human refs (from References field):** 7.1
+**Jaccard:** 0.200 — AI adds ['CN5', 'D7.2', 'D7.3', 'D7.5']
+
+## Proposition 7.3
+**Statement:** Given three numbers not prime to one another, to find their greatest common measure.
+
+**Step 1.** Let A, B, C be the three given numbers not prime to one another. It is required to find the greatest common measure of A, B, C.
+
+**Step 2.** Since A, B, C are not prime to one another, they are not measured by an unit alone as a common measure [D7.12]; hence some number H, other than an unit, measures each of A, B, C. In particular H measures A and B, so A and B are measured by a number other than an unit as a common measure, and therefore A and B are not prime to one another [D7.12].
+
+**Step 3.** Accordingly, by 7.2, let D be taken as the greatest common measure of A and B. Then D either measures C or does not measure it.
+
+**Step 4.** First, let D measure C. Since D also measures A and B, D is a common measure of A, B, C.
+
+**Step 5.** I say that D is also the greatest. For, if D is not the greatest common measure of A, B, C, some number E greater than D will measure A, B, C. Since E measures A and B, it also measures the greatest common measure of A and B [7.2, Porism]; but that greatest common measure is D, so E measures D. Thus the greater E measures the less D: which is impossible. Therefore no number greater than D measures A, B, C, and D is the greatest common measure of A, B, C.
+
+**Step 6.** Next, let D not measure C. I say first that C and D are not prime to one another. For, by Step 2, the number H (not an unit) measures A, B, C. Since H measures A and B, it also measures D, the greatest common measure of A and B [7.2, Porism]. But H also measures C. Therefore H, a number other than an unit, is a common measure of C and D, so that C and D are not measured by an unit alone as a common measure; hence C and D are not prime to one another [D7.12].
+
+**Step 7.** Accordingly, by 7.2, let F be taken as the greatest common measure of C and D.
+
+**Step 8.** Since F measures D, and D measures A and B, F also measures A and B. But F also measures C. Therefore F is a common measure of A, B, C.
+
+**Step 9.** I say that F is also the greatest. For, if F is not the greatest common measure of A, B, C, some number G greater than F will measure A, B, C. Since G measures A and B, it also measures D, the greatest common measure of A and B [7.2, Porism]. But G also measures C; therefore G measures both C and D, and so it measures F, the greatest common measure of C and D [7.2, Porism]. Thus the greater G measures the less F: which is impossible. Therefore no number greater than F measures A, B, C, and F is the greatest common measure of A, B, C.
+
+**Step 10.** Therefore, in either case, the greatest common measure of the three given numbers A, B, C has been found. Q.E.F.
+
+**Step 11.** Porism. From this it is manifest that, if a number measures three numbers, it also measures their greatest common measure: for in Step 5 and Step 9 any number measuring A, B, C was shown to measure D, respectively F, which is the greatest common measure found.
+
+**USED:** 7.2, D7.12
+**Human refs (from References field):** 7.2
+**Jaccard:** 0.500 — AI adds ['D7.12']
+
+## Proposition 7.4
+**Statement:** Any number is either a part or parts of any number, the less of the greater.
+
+**Step 1.** Let A and BC be two numbers, and let BC be the less. It is required to prove that BC is either a part or parts of A.
+
+**Step 2.** The number BC either measures A or does not measure A.
+
+**Step 3.** First, let BC measure A. Then, since BC is a number which measures the greater number A, BC is a part of A [D7.3]. In this case the proposition holds.
+
+**Step 4.** Next, let BC not measure A. Then A and BC are either prime to one another or not prime to one another, according as they are, or are not, measured by an unit alone as a common measure [D7.12].
+
+**Step 5.** Suppose A and BC are prime to one another. Since BC is a number, it is a multitude composed of units [D7.2]; let BC be divided into the units contained in it. Since A is also a multitude composed of units [D7.2], each unit measures A, and therefore each of the units into which BC has been divided is a part of A [D7.3].
+
+**Step 6.** Thus BC is made up of units each of which is a part of A, while BC itself does not measure A (Step 4); therefore BC is parts of A [D7.4].
+
+**Step 7.** Now suppose A and BC are not prime to one another. Then their greatest common measure can be found; let it be D [7.2].
+
+**Step 8.** Since D measures BC, let BC be divided into the numbers equal to D, namely BE, EF, FC. Here D is less than BC, for D measures A whereas BC does not measure A (Step 4); hence BC is divided into at least two such numbers.
+
+**Step 9.** Since D measures A, D is a part of A [D7.3]. But each of BE, EF, FC is equal to D; therefore each of BE, EF, FC also measures A, and so each of them is a part of A [D7.3].
+
+**Step 10.** Thus BC is made up of the numbers BE, EF, FC, each of which is a part of A, while BC itself does not measure A (Step 4); therefore BC is parts of A [D7.4].
+
+**Step 11.** Therefore, whether BC measures A or not, and whether A and BC are prime to one another or not, BC is either a part or parts of A. Hence any number is either a part or parts of any number, the less of the greater. Q.E.D.
+
+**USED:** 7.2, D7.12, D7.2, D7.3, D7.4
+**Human refs (from References field):** 7.2
+**Jaccard:** 0.200 — AI adds ['D7.12', 'D7.2', 'D7.3', 'D7.4']
+
+## Proposition 7.5
+**Statement:** If a number be a part of a number, and another be the same part of another, the sum will also be the same part of the sum that the one is of the one.
+
+## Proposition 7.5
+**Statement:** If a number be a part of a number, and another be the same part of another, the sum will also be the same part of the sum that the one is of the one.
+
+Let the number A be a part of the number BC, and let another number D be the same part of another number EF that A is of BC. I say that the sum of A and D is also the same part of the sum of BC and EF that A is of BC.
+
+**Step 1.** Since A is a part of BC, A measures BC (D7.3). Since D is the same part of EF that A is of BC, D measures EF the same number of times that A measures BC. Therefore, as many numbers as there are in BC equal to A, so many numbers are there also in EF equal to D.
+
+**Step 2.** Let BC be divided into the numbers equal to A, namely BG, GC, and let EF be divided into the numbers equal to D, namely EH, HF. Then the multitude of BG, GC is equal to the multitude of EH, HF.
+
+**Step 3.** Since BG is equal to A and EH is equal to D, therefore BG together with EH is equal to A together with D (CN2). For the same reason, since GC is equal to A and HF is equal to D, GC together with HF is equal to A together with D (CN2).
+
+**Step 4.** Therefore the sum BC + EF is composed of the numbers BG + EH and GC + HF, each of which is equal to A + D, and their multitude is the same as the multitude of the numbers BG, GC into which BC was divided. Hence, as many numbers as there are in BC equal to A, so many numbers are there also in BC + EF equal to A + D.
+
+**Step 5.** Therefore A + D measures BC + EF the same number of times that A measures BC. Consequently, whatever part A is of BC, the same part also is the sum A + D of the sum BC + EF (D7.3).
+
+Therefore, if a number be a part of a number, and another be the same part of another, the sum will also be the same part of the sum that the one is of the one. Q.E.D.
+
+**USED:** D7.3, CN2
+
+**USED:** CN2, D7.3
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['CN2', 'D7.3']
+
+## Proposition 7.6
+**Statement:** If a number be parts of a number, and another be the same parts of another, the sum will also be the same parts of the sum that the one is of the one.
+
+## Proposition 7.6
+**Statement:** If a number be parts of a number, and another be the same parts of another, the sum will also be the same parts of the sum that the one is of the one.
+
+**Step 1.** Let the number AB be parts of the number C, and let another number DE be the same parts of another number F that AB is of C. I say that the sum of AB and DE is also the same parts of the sum of C and F that AB is of C.
+
+**Step 2.** Since AB is parts of C [D7.4], AB is made up of some multitude of numbers each of which is one and the same part of C [D7.3]. Let AB be divided into these parts of C, namely AG and GB (the argument is identical for any multitude of such parts). Then each of AG, GB is the same part of C.
+
+**Step 3.** Since DE is the same parts of F that AB is of C, DE is made up of the same multitude of numbers, each of which is the same part of F that AG is of C. Let DE be divided into these parts of F, namely DH and HE. Thus the multitude of AG, GB is equal to the multitude of DH, HE, and whatever part AG is of C, the same part is DH of F; and whatever part GB is of C, the same part is HE of F.
+
+**Step 4.** Since AG is a part of C, and DH is the same part of F that AG is of C, therefore the sum of AG and DH is the same part of the sum of C and F that AG is of C [7.5].
+
+**Step 5.** For the same reason, since GB is a part of C and HE is the same part of F, the sum of GB and HE is the same part of the sum of C and F that GB is of C [7.5]; and this is the same part that AG is of C, so the sum of GB and HE is the same part of the sum of C and F that the sum of AG and DH is of it.
+
+**Step 6.** Now the sum of AB and DE consists of AG, GB, DH, HE together, and is therefore the same as the sum of (AG together with DH) and (GB together with HE). Hence the sum of AB and DE is made up of the numbers AG + DH and GB + HE, each of which is the same part of the sum of C and F, and these are as many in multitude as the parts AG, GB of C that make up AB.
+
+**Step 7.** Therefore the sum of AB and DE contains as many parts of the sum of C and F, and the same part, as AB contains parts of C; that is, whatever parts AB is of C, the same parts also is the sum of AB and DE of the sum of C and F [D7.4].
+
+Therefore, if a number be parts of a number, and another be the same parts of another, the sum will also be the same parts of the sum that the one is of the one. Q.E.D.
+
+**USED:** D7.3, D7.4, 7.5
+
+**USED:** 7.5, D7.3, D7.4
+**Human refs (from References field):** 7.5
+**Jaccard:** 0.333 — AI adds ['D7.3', 'D7.4']
+
+## Proposition 7.7
+**Statement:** If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder will also be the same part of the remainder that the whole is of the whole.
+
+**Step 1.** Let the number AB be that part of the number CD which AE, subtracted from AB, is of CF, subtracted from CD. That is, AE is some part of CF, so that AE measures CF according to a certain number, and AB is the same part of CD, so that AB measures CD according to that same number [D7.3]. Let EB be the remainder when AE is subtracted from AB, and let FD be the remainder when CF is subtracted from CD. I say that EB is the same part of FD that AB is of CD.
+
+**Step 2.** Whatever part AE is of CF, let EB be made the same part of a number CG; that is, take the number CG so that EB measures CG according to the same number by which AE measures CF [D7.3].
+
+**Step 3.** Since AE is a part of CF, and EB is the same part of CG, therefore the sum of AE and EB, namely AB, is the same part of the sum of CF and CG, namely GF, that AE is of CF [7.5].
+
+**Step 4.** But by hypothesis AE is the same part of CF that AB is of CD (Step 1). Therefore AB is the same part of GF that it is of CD; that is, AB measures GF and CD according to one and the same number [D7.3].
+
+**Step 5.** Hence GF and CD are each the same multiple of AB, so each is equal to the same thing; therefore GF is equal to CD [CN1].
+
+**Step 6.** From the equals GF and CD subtract the common number CF; the remainders CG and FD are equal [CN3].
+
+**Step 7.** Now EB is the same part of CG that AE is of CF (Step 2), and CG is equal to FD (Step 6). Therefore EB is the same part of FD that AE is of CF.
+
+**Step 8.** But AE is the same part of CF that AB is of CD (Step 1). Therefore EB is the same part of FD that AB is of CD.
+
+**Step 9.** Therefore, if a number be that part of a number which a number subtracted is of a number subtracted, the remainder is also the same part of the remainder that the whole is of the whole. Q.E.D.
+
+**USED:** 7.5, CN1, CN3, D7.3
+**Human refs (from References field):** 7.5
+**Jaccard:** 0.250 — AI adds ['CN1', 'CN3', 'D7.3']
+
+## Proposition 7.8
+**Statement:** If a number be the same parts of a number that a number subtracted is of a number subtracted, the remainder will also be the same parts of the remainder that the whole is of the whole.
+
+**Step 1.** Let the number AB be the same parts of the number CD that AE, subtracted from AB, is of CF, subtracted from CD. It is to be proved that the remainder EB is the same parts of the remainder FD that the whole AB is of the whole CD.
+
+**Step 2.** Since AB is parts of CD, AB is composed of a certain multitude of numbers each of which is one and the same part of CD; and since AE is the same parts of CF, AE is composed of an equal multitude of numbers each of which is that same part of CF (D7.3, D7.4). Set out GH equal to AB, and let GH be divided into the parts of CD, namely GK and KH, and AE into the parts of CF, namely AL and LE, so that the multitude of GK, KH is equal to the multitude of AL, LE. (Two parts are taken for definiteness; the argument is identical for any multitude.)
+
+**Step 3.** GK is the same part of CD that AL is of CF; that is, GK measures CD as many times as AL measures CF (D7.3). Now CF, being the number subtracted from CD, is less than CD (CN5). Since GK measures CD as many times as AL measures CF, and CD is greater than CF, GK is greater than AL; for if GK were equal to or less than AL, then CD, being made up of as many numbers each equal to GK as CF is of numbers each equal to AL, would be equal to or less than CF, which is not the case. Let GM be cut off from GK equal to AL.
+
+**Step 4.** Since GM is equal to AL, GM measures CF exactly as AL does; hence GM is the same part of CF that GK is of CD. Thus GK is that part of CD which GM, subtracted from GK, is of CF, subtracted from CD. Therefore, by 7.7, the remainder MK is the same part of the remainder FD that the whole GK is of the whole CD.
+
+**Step 5.** Again, KH is the same part of CD that LE is of CF, and CD is greater than CF; hence, exactly as in Step 3, KH is greater than LE. Let KN be cut off from KH equal to LE. Then KN is the same part of CF that KH is of CD, and therefore, by 7.7, the remainder NH is the same part of the remainder FD that the whole KH is of the whole CD.
+
+**Step 6.** Thus each of MK, NH is that part of FD which each of GK, KH is of CD, and the multitude of MK, NH is the same as the multitude of GK, KH. Hence MK and NH taken together are the same parts of FD that GK and KH taken together, that is GH, are of CD (D7.4).
+
+**Step 7.** Now GM and KN are equal to AL and LE respectively; therefore GM together with KN is equal to AL together with LE, that is, to AE (CN2). And GH is equal to AB. Subtracting these equals from these equals, the remainder of GH after GM and KN are taken away, namely MK together with NH, is equal to the remainder of AB after AE is taken away, namely EB (CN3).
+
+**Step 8.** Therefore EB, being equal to MK together with NH, is the same parts of FD that GH, being equal to AB, is of CD; that is, the remainder EB is the same parts of the remainder FD that the whole AB is of the whole CD. Which was to be proved.
+
+**USED:** 7.7, CN2, CN3, CN5, D7.3, D7.4
+**Human refs (from References field):** 7.7
+**Jaccard:** 0.167 — AI adds ['CN2', 'CN3', 'CN5', 'D7.3', 'D7.4']
+
+## Proposition 7.9
+**Statement:** If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.
+
+**Step 1.** Let the number A be a part of the number BC, and let another number D be the same part of another number EF that A is of BC. I say that, alternately also, whatever part or parts A is of D, the same part or the same parts is BC of EF.
+
+**Step 2.** Since A is a part of BC, A measures BC [D7.3]; and since D is the same part of EF that A is of BC, D measures EF according to the same number that A measures BC. Therefore there are as many numbers in BC equal to A as there are numbers in EF equal to D.
+
+**Step 3.** Let BC be divided into the numbers equal to A, namely BG, GC, and let EF be divided into the numbers equal to D, namely EH, HF. Then the multitude of BG, GC is equal to the multitude of EH, HF.
+
+**Step 4.** Since BG and GC are each equal to A, BG is equal to GC [CN1]; and since EH and HF are each equal to D, EH is equal to HF [CN1].
+
+**Step 5.** Since BG is equal to GC and EH is equal to HF, whatever part or parts BG is of EH, the same part or the same parts is GC of HF. For if BG is a part of EH, BG measures EH a certain number of times [D7.3], and GC, being equal to BG, measures HF, being equal to EH, the same number of times, so that GC is the same part of HF; and if BG is parts of EH, BG is made up of a certain multitude of a part of EH [D7.4], and GC, being equal to BG, is made up of the same multitude of the equal part of HF, so that GC is the same parts of HF.
+
+**Step 6.** If, then, BG is a part of EH, GC is the same part of HF; therefore the sum BC of BG, GC is the same part of the sum EF of EH, HF that BG is of EH [7.5], the pieces being added in succession when BC and EF are divided into more than two.
+
+**Step 7.** And if BG is parts of EH, GC is the same parts of HF; therefore the sum BC is the same parts of the sum EF that BG is of EH [7.6], again adding the pieces in succession when there are more than two.
+
+**Step 8.** But BG is equal to A, and EH is equal to D. Therefore whatever part or parts A is of D, the same part or the same parts is BC of EF.
+
+**Step 9.** Therefore, if a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part or the same parts will the second also be of the fourth. Q.E.D.
+
+**USED:** 7.5, 7.6, CN1, D7.3, D7.4
+**Human refs (from References field):** 7.5, 7.6
+**Jaccard:** 0.400 — AI adds ['CN1', 'D7.3', 'D7.4']
+
+## Proposition 7.10
+**Statement:** If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will the second also be of the fourth.
+
+**Step 1.** Let the number AB be parts of the number C, and let another number DE be the same parts of another number F [D7.4]. It is to be proved that, alternately, whatever parts or part AB is of DE, the same parts or the same part is C also of F.
+
+**Step 2.** Since AB is parts of C, and DE is the same parts of F, as many parts of C as there are in AB, so many parts of F are there also in DE. Let AB be divided into the parts of C, namely AG, GB, and let DE be divided into the parts of F, namely DH, HE. Then each of AG, GB is a part of C, each of DH, HE is the same part of F [D7.3, D7.4], and the multitude of AG, GB is equal to the multitude of DH, HE.
+
+**Step 3.** Since AG is a part of C, and DH is the same part of F, therefore, alternately, whatever part or parts AG is of DH, the same part or the same parts is C also of F [7.9].
+
+**Step 4.** For the same reason, since GB is a part of C, and HE is the same part of F, alternately, whatever part or parts GB is of HE, the same part or the same parts is C also of F [7.9].
+
+**Step 5.** Hence AG is of DH the same part or the same parts that GB is of HE, since each of them is the same part or the same parts that C is of F [Steps 3, 4].
+
+**Step 6.** If C is a part of F, then AG is that part of DH, and GB is the same part of HE [Steps 3, 4]; therefore the sum AB is also the same part of the sum DE that AG is of DH [7.5], that is, the same part that C is of F [Step 3].
+
+**Step 7.** If C is parts of F, then AG is those parts of DH, and GB is the same parts of HE [Steps 3, 4]; therefore the sum AB is also the same parts of the sum DE that AG is of DH [7.6], that is, the same parts that C is of F [Step 3].
+
+**Step 8.** Therefore, in either case, whatever parts or part AB is of DE, the same parts or the same part is C also of F. Q.E.D.
+
+**USED:** 7.5, 7.6, 7.9, D7.3, D7.4
+**Human refs (from References field):** 7.5, 7.6, 7.9
+**Jaccard:** 0.600 — AI adds ['D7.3', 'D7.4']
+
+## Proposition 7.11
+**Statement:** If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder will also be to the remainder as whole to whole.
+
+## Proposition 7.11
+**Statement:** If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder will also be to the remainder as whole to whole.
+
+**Setting out.** Let AB and CD be two numbers (the wholes). Let AE be a number subtracted from AB and CF a number subtracted from CD, so that the remainders are EB and FD respectively. Let it be supposed that, as the whole AB is to the whole CD, so is the subtracted AE to the subtracted CF. I say that, as the remainder EB is to the remainder FD, so is the whole AB to the whole CD.
+
+**Step 1.** Since AB : CD :: AE : CF, by the definition of proportional numbers [D7.20] the first, AB, is the same multiple, or the same part, or the same parts, of the second, CD, that the third, AE, is of the fourth, CF. There are therefore three cases to consider.
+
+**Step 2.** *Case A: AB is a part of CD.* Then AB is that part of CD which AE is of CF. Thus the whole AB is that part of the whole CD which the subtracted number AE is of the subtracted number CF. Therefore, by 7.7, the remainder EB is the same part of the remainder FD that the whole AB is of the whole CD. Hence EB is the same part of FD that AB is of CD, and so, by D7.20, EB : FD :: AB : CD.
+
+**Step 3.** *Case B: AB is parts of CD.* Then AB is the same parts of CD that AE is of CF. Thus the whole AB is the same parts of the whole CD that the subtracted number AE is of the subtracted number CF. Therefore, by 7.8, the remainder EB is the same parts of the remainder FD that the whole AB is of the whole CD. Hence EB is the same parts of FD that AB is of CD, and so, by D7.20, EB : FD :: AB : CD.
+
+**Step 4.** *Case C: AB is a multiple of CD.* Then AB is the same multiple of CD that AE is of CF. By D7.5, AB is measured by CD, and AE is measured by CF, and CD measures AB the same number of times that CF measures AE. Hence, by D7.3, CD is a part of AB, and CF is the same part of AE. Thus the whole CD is that part of the whole AB which the subtracted number CF is of the subtracted number AE. Therefore, by 7.7, the remainder FD is the same part of the remainder EB that the whole CD is of the whole AB; that is, FD measures EB the same number of times that CD measures AB. Hence, by D7.5, EB is the same multiple of FD that AB is of CD, and so, by D7.20, EB : FD :: AB : CD.
+
+**Step 5.** In every case, therefore, EB is the same multiple, or the same part, or the same parts, of FD that AB is of CD; that is, as the remainder EB is to the remainder FD, so is the whole AB to the whole CD. Therefore, if, as whole is to whole, so is a number subtracted to a number subtracted, the remainder will also be to the remainder as whole to whole. Q.E.D.
+
+*Path note.* The most direct route is to unfold the numerical proportion by D7.20 into the part/parts relation, apply 7.7 (part) or 7.8 (parts), and fold back by D7.20. Case C (multiple) is handled by the same 7.7 argument with the roles of the greater and less interchanged, requiring only D7.3 and D7.5 to translate between "multiple" and "part". No Book V result is needed, since Book VII proportion is defined arithmetically by D7.20.
+
+**USED:** D7.3, D7.5, D7.20, 7.7, 7.8
+
+**USED:** 7.7, 7.8, D7.20, D7.3, D7.5
+**Human refs (from References field):** 7.7, 7.8, D7.20
+**Jaccard:** 0.600 — AI adds ['D7.3', 'D7.5']
+
+## Proposition 7.12
+**Statement:** If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
+
+**Step 1.** Let A, B, C, D be as many numbers as we please in proportion, so that, as A is to B, so is C to D. I say that, as A is to B, so are A, C together to B, D together.
+
+**Step 2.** Since, as A is to B, so is C to D, by D7.20 A is the same multiple, or the same part, or the same parts, of B that C is of D. Three cases arise.
+
+**Step 3.** First, let A be a part of B; then C is the same part of D. Therefore, by 7.5, the sum of A, C is the same part of the sum of B, D that A is of B.
+
+**Step 4.** Second, let A be parts of B; then C is the same parts of D. Therefore, by 7.6, the sum of A, C is the same parts of the sum of B, D that A is of B.
+
+**Step 5.** Third, let A be a multiple of B; then C is the same multiple of D. By D7.5, A is measured by B and C is measured by D, and the same number of times; hence, by D7.3, B is a part of A and D is the same part of C. Therefore, by 7.5, the sum of B, D is the same part of the sum of A, C that B is of A; that is, the sum of B, D measures the sum of A, C the same number of times that B measures A. Hence, by D7.5, the sum of A, C is the same multiple of the sum of B, D that A is of B.
+
+**Step 6.** In every case, therefore, the sum of A, C is the same multiple, or the same part, or the same parts, of the sum of B, D that A is of B. Hence, by D7.20, as A is to B, so is the sum of A, C to the sum of B, D.
+
+**Step 7.** Now let further numbers E, F be in the same proportion, so that, as A is to B, so is E to F. By D7.20, E is the same multiple, or part, or parts, of F that A is of B; and by Step 6 the sum of A, C is the same multiple, or part, or parts, of the sum of B, D that A is of B. Therefore, by D7.20, as the sum of A, C is to the sum of B, D, so is E to F. Applying Steps 2 to 6 to this proportion, the sum of A, C, E is the same multiple, or part, or parts, of the sum of B, D, F that the sum of A, C is of the sum of B, D, and hence that A is of B; so, by D7.20, as A is to B, so is the sum of A, C, E to the sum of B, D, F.
+
+**Step 8.** Repeating the same argument for each further pair of numbers in the proportion, however many there be, we obtain that, as A is to B, so are all the antecedents together to all the consequents together. And since, by D7.20, every antecedent is the same multiple, or part, or parts, of its consequent that A is of B, the same holds with any one of the antecedents and its consequent in place of A and B. Therefore, if there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents. Q.E.D.
+
+**USED:** D7.20, 7.5, 7.6, D7.3, D7.5
+
+**USED:** 7.5, 7.6, D7.20, D7.3, D7.5
+**Human refs (from References field):** 7.5, 7.6, D7.20
+**Jaccard:** 0.600 — AI adds ['D7.3', 'D7.5']
+
+## Proposition 7.13
+**Statement:** If four numbers be proportional, they will also be proportional alternately.
+
+**Step 1.** Let A, B, C, D be four numbers in proportion, so that, as A is to B, so is C to D. I say that they are also proportional alternately, that is, as A is to C, so is B to D.
+
+**Step 2.** Since, as A is to B, so is C to D, A is the same multiple, or the same part, or the same parts, of B that C is of D [D7.20]. Three cases therefore arise, according as A is a part, parts, or a multiple of B.
+
+**Step 3.** Case (i): A is a part of B, and C is the same part of D. Then, alternately, whatever part or parts A is of C, the same part or the same parts is B of D [7.9].
+
+**Step 4.** Case (ii): A is parts of B, and C is the same parts of D. Then, alternately, whatever parts or part A is of C, the same parts or the same part is B of D [7.10].
+
+**Step 5.** Case (iii): A is a multiple of B, and C is the same multiple of D. Then B measures A, and D measures C, according to the same number [D7.5]; hence B is a part of A, and D is the same part of C [D7.3]. Applying 7.9 to the four numbers B, A, D, C: alternately, whatever part or parts B is of D, the same part or the same parts is A of C.
+
+**Step 6.** In cases (i) and (ii) A is the same part, or the same parts, of C that B is of D; in case (iii) B is the same part, or the same parts, of D that A is of C, which is the same relation between the pair A, C and the pair B, D. In every case, therefore, the four numbers A, C, B, D are proportional [D7.20]: as A is to C, so is B to D.
+
+**Step 7.** Therefore, if four numbers be proportional, they will also be proportional alternately. Q.E.D.
+
+**USED:** 7.10, 7.9, D7.20, D7.3, D7.5
+**Human refs (from References field):** 7.10, D7.20
+**Jaccard:** 0.400 — AI adds ['7.9', 'D7.3', 'D7.5']
+
+## Proposition 7.14
+**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.
+
+**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.
+
+Let A, B, C be as many numbers as we please, and D, E, F others equal to them in multitude, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F. I say that, ex aequali, as A is to C, so is D to F.
+
+**Step 1.** Since, as A is to B, so is D to E, the four numbers A, B, D, E are proportional; therefore, alternately, as A is to D, so is B to E [7.13].
+
+**Step 2.** Again, since, as B is to C, so is E to F, the four numbers B, C, E, F are proportional; therefore, alternately, as B is to E, so is C to F [7.13].
+
+**Step 3.** Now, as A is to D, so is B to E (Step 1); that is, A is the same multiple, or the same part, or the same parts of D that B is of E [D7.20]. And, as B is to E, so is C to F (Step 2); that is, B is the same multiple, or the same part, or the same parts of E that C is of F [D7.20]. Therefore A is the same multiple, or the same part, or the same parts of D that C is of F; that is, as A is to D, so is C to F [D7.20].
+
+**Step 4.** Since, then, as A is to D, so is C to F, the four numbers A, D, C, F are proportional; therefore, alternately, as A is to C, so is D to F [7.13].
+
+**Step 5.** The same argument holds for any multitude of numbers. Let A, B, C, G, ... be the first set and D, E, F, H, ... the second, equal in multitude, with each consecutive pair in the same ratio: A to B as D to E, B to C as E to F, C to G as F to H, and so on. Applying Step 1 to each of these proportions in turn, alternately A is to D as B is to E, B is to E as C is to F, C is to F as G is to H, and so on [7.13]. By Step 3, each of these ratios is the same as the one before it, so the ratio of the first number to the first, A to D, is the same as the ratio of the last number of the first set to the last number of the second set [D7.20]. Alternately, therefore, the first is to the last among the first numbers as the first is to the last among the second numbers [7.13].
+
+Therefore, if there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali. Q.E.D.
+
+**USED:** 7.13, D7.20
+**Human refs (from References field):** 7.13
+**Jaccard:** 0.500 — AI adds ['D7.20']
+
+## Proposition 7.15
+**Statement:** If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of times that the second measures the fourth.
+
+**Step 1.** Let the unit A measure the number BC, and let another number D measure another number EF the same number of times. We must show that, alternately, the unit A measures the number D the same number of times that BC measures EF.
+
+**Step 2.** Since the unit A measures BC the same number of times that D measures EF, as many units as there are in BC, so many numbers equal to D are there in EF. Since BC is a multitude composed of units [D7.2], let BC be divided into the units in it, BG, GH, HC; and let EF be divided into the numbers EK, KL, LF, each equal to D. Then the multitude of the units BG, GH, HC is equal to the multitude of the numbers EK, KL, LF.
+
+**Step 3.** The units BG, GH, HC are equal to one another, each being an unit [D7.1]; and the numbers EK, KL, LF, each being equal to D, are equal to one another [CN1].
+
+**Step 4.** The unit BG measures the number EK, so it is a part of EK, namely the part named by the multitude of units in EK [D7.3]. Likewise the unit GH is a part of KL, and the unit HC is a part of LF. Since the units BG, GH, HC are equal and the numbers EK, KL, LF are equal, each unit is the same part of its number that BG is of EK. Therefore, as the unit BG is to the number EK, so is the unit GH to the number KL, and so is the unit HC to the number LF [D7.20].
+
+**Step 5.** There are thus several numbers in proportion, BG, GH, HC being the antecedents and EK, KL, LF the consequents. Therefore, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents [7.12]: as the unit BG is to the number EK, so is the sum of BG, GH, HC, which is BC, to the sum of EK, KL, LF, which is EF.
+
+**Step 6.** But the unit BG is equal to the unit A, and the number EK is equal to the number D. Substituting these equals, as the unit A is to the number D, so is BC to EF.
+
+**Step 7.** Now the unit A measures D, so A is a part of D [D7.3]. Since A is to D as BC is to EF, BC is the same part of EF that A is of D [D7.20]; that is, BC measures EF according to the same multitude of units by which the unit A measures D.
+
+**Step 8.** Therefore the unit A measures the number D the same number of times that BC measures EF. Which was to be shown.
+
+**USED:** 7.12, CN1, D7.1, D7.2, D7.20, D7.3
+**Human refs (from References field):** 7.12
+**Jaccard:** 0.167 — AI adds ['CN1', 'D7.1', 'D7.2', 'D7.20', 'D7.3']
+
+## Proposition 7.16
+**Statement:** If two numbers by multiplying one another make certain numbers, the numbers so produced will be equal to one another.
+
+## Proposition 7.16
+**Statement:** If two numbers by multiplying one another make certain numbers, the numbers so produced will be equal to one another.
+
+**Step 1.** Let A, B be two numbers, and let A by multiplying B make C, and let B by multiplying A make D. We must show that C is equal to D.
+
+**Step 2.** Let E be a unit (D7.1). Since A is a number, it is a multitude composed of units (D7.2); hence the unit E measures A exactly as many times as there are units in A.
+
+**Step 3.** Since A by multiplying B has made C, C is B added to itself as many times as there are units in A (D7.15). Therefore B measures C as many times as there are units in A; that is, B measures C the same number of times that the unit E measures A (Step 2).
+
+**Step 4.** Thus the unit E measures the number A, and the number B measures the number C the same number of times. Therefore, alternately, the unit E measures B the same number of times that A measures C (7.15).
+
+**Step 5.** Again, since B by multiplying A has made D, D is A added to itself as many times as there are units in B (D7.15). Therefore A measures D as many times as there are units in B.
+
+**Step 6.** But B is a multitude composed of units (D7.2), so the unit E measures B exactly as many times as there are units in B. Hence A measures D the same number of times that the unit E measures B.
+
+**Step 7.** By Step 4, A measures C the same number of times that the unit E measures B; by Step 6, A measures D the same number of times that the unit E measures B. Therefore A measures each of C and D the same number of times.
+
+**Step 8.** Hence C and D are each equal to A added to itself the same number of times, so each is equal to the same thing; therefore C is equal to D (CN1).
+
+Therefore, if two numbers by multiplying one another make certain numbers, the numbers so produced are equal to one another. Q.E.D.
+
+**USED:** D7.1, D7.2, D7.15, 7.15, CN1
+
+**USED:** 7.15, CN1, D7.1, D7.15, D7.2
+**Human refs (from References field):** 7.15
+**Jaccard:** 0.200 — AI adds ['CN1', 'D7.1', 'D7.15', 'D7.2']
+
+## Proposition 7.17
+**Statement:** If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.
+
+**Step 1.** Let the number A by multiplying the two numbers B and C make the numbers D and E respectively. It is to be shown that, as B is to C, so is D to E.
+
+**Step 2.** Since A by multiplying B has made D, by D7.15 the number D is produced by adding B to itself as many times as there are units in A. Hence B measures D, and the number of times that B measures D is the number of units in A.
+
+**Step 3.** Likewise, since A by multiplying C has made E, by D7.15 the number E is produced by adding C to itself as many times as there are units in A. Hence C measures E, and the number of times that C measures E is the number of units in A.
+
+**Step 4.** The number of times that B measures D (Step 2) and the number of times that C measures E (Step 3) are each equal to the same thing, namely the number of units in A; therefore they are equal to one another (CN1). That is, B measures D the same number of times that C measures E.
+
+**Step 5.** Since B measures D, B is a part of D (D7.3); and since C measures E, C is a part of E (D7.3). And because B measures D the same number of times that C measures E (Step 4), B is the same part of D that C is of E.
+
+**Step 6.** Therefore, by D7.20, the four numbers B, D, C, E are proportional: as B is to D, so is C to E.
+
+**Step 7.** Since B, D, C, E are proportional, by 7.13 they are also proportional alternately: as B is to C, so is D to E.
+
+**Step 8.** Therefore, if a number by multiplying two numbers make certain numbers, the numbers so produced have the same ratio as the numbers multiplied. Q.E.D.
+
+*Path note:* One could instead pass through the unit (the unit measures A the same number of times that B measures D, so unit : A = B : D, and likewise unit : A = C : E, whence B : D = C : E), but that route needs an extra transitivity-of-ratio step; comparing B-in-D and C-in-E directly under D7.20 is the more direct route and was chosen.
+
+**USED:** 7.13, CN1, D7.15, D7.20, D7.3
+**Human refs (from References field):** 7.13, D7.20
+**Jaccard:** 0.400 — AI adds ['CN1', 'D7.15', 'D7.3']
+
+## Proposition 7.18
+**Statement:** If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.
+
+**Step 1.** Let A and B be two numbers, and let C be any number. Let A by multiplying C make D, and let B by multiplying C make E. I say that, as A is to B, so is D to E.
+
+**Step 2.** Since A by multiplying C has made D, therefore also C by multiplying A has made D; for when two numbers multiply one another, the numbers so produced are equal to one another [7.16].
+
+**Step 3.** For the same reason, since B by multiplying C has made E, therefore also C by multiplying B has made E [7.16].
+
+**Step 4.** Therefore the single number C, by multiplying the two numbers A and B, has made the numbers D and E respectively.
+
+**Step 5.** But if a number by multiplying two numbers make certain numbers, the numbers so produced have the same ratio as the numbers multiplied [7.17]. Therefore, since C by multiplying A and B has made D and E, as A is to B, so is D to E.
+
+**Step 6.** Therefore, if two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers. Q.E.D.
+
+**USED:** 7.16, 7.17
+
+**USED:** 7.16, 7.17
+**Human refs (from References field):** 7.16, 7.17
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 7.19
+**Statement:** If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional.
+
+**Step 1.** Let A, B, C, D be four numbers in proportion, so that as A is to B, so is C to D. Let A multiplied by D make E, and let B multiplied by C make F. We first show that E is equal to F. For this, let A multiplied by C make G.
+
+**Step 2.** Since the one number A, multiplying the two numbers C and D, makes G and E respectively, by 7.17 the products have the same ratio as the numbers multiplied: as C is to D, so is G to E.
+
+**Step 3.** But by hypothesis, as A is to B, so is C to D. Ratios which are the same with the same ratio are the same with one another [5.11]; therefore, as A is to B, so is G to E.
+
+**Step 4.** Again, since the two numbers A and B, multiplying the one number C, make G and F respectively, by 7.18 the products have the same ratio as the multipliers: as A is to B, so is G to F.
+
+**Step 5.** From Steps 3 and 4, the ratio G : E and the ratio G : F are each the same as the ratio A : B; therefore, as G is to E, so is G to F [5.11].
+
+**Step 6.** Now G has the same ratio to E and to F. Magnitudes to which the same has the same ratio are equal [5.9]; therefore E is equal to F. That is, the number produced from the first and fourth equals the number produced from the second and third.
+
+**Step 7.** Conversely, let A multiplied by D make E, let B multiplied by C make F, and suppose E is equal to F. We show that as A is to B, so is C to D. Again let A multiplied by C make G.
+
+**Step 8.** As in Step 2, since A multiplying C and D makes G and E, by 7.17, as C is to D, so is G to E. As in Step 4, since A and B multiplying C make G and F, by 7.18, as A is to B, so is G to F.
+
+**Step 9.** Since E is equal to F, the same number G has to the equal numbers E and F the same ratio [5.7]; therefore, as G is to E, so is G to F.
+
+**Step 10.** Hence, as A is to B, so is G to F (Step 8); as G is to F, so is G to E (Step 9); and as G is to E, so is C to D (Step 8). Ratios which are the same with the same ratio are the same with one another [5.11]; therefore, as A is to B, so is C to D. So the four numbers are proportional.
+
+**Step 11.** Therefore, if four numbers be proportional, the number produced from the first and fourth is equal to the number produced from the second and third; and if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers are proportional. Q.E.D.
+
+**Note (path choice).** The two multiplication proportions come from 7.17 and 7.18 without any need for 7.16, because the products are formed as A×C, A×D and A×C, B×C. The three ratio manipulations (combining equal ratios, equal consequents from a common antecedent, and the converse) are cited from Book 5 (5.11, 5.9, 5.7), treating the numbers as magnitudes; these steps could instead be unfolded case-by-case from D7.20, but the Book 5 propositions state exactly what is needed and give the most direct route.
+
+**USED:** 5.11, 5.7, 5.9, 7.17, 7.18
+**Human refs (from References field):** 5.7, 5.9, 7.17, 7.18
+**Jaccard:** 0.800 — AI adds ['5.11']
+
+## Proposition 7.20
+**Statement:** The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.
+
+**Step 1.** Let A, B be two numbers, and let CD, EF be the least numbers of those which have the same ratio with A, B; that is, CD is to EF as A is to B, and no two numbers having the same ratio as A, B are less than CD, EF respectively. I say that CD measures A the same number of times that EF measures B.
+
+**Step 2.** Since A, B themselves have the same ratio as A, B, and CD, EF are the least numbers having that ratio, CD is not greater than A, nor is EF greater than B.
+
+**Step 3.** Since CD is to EF as A is to B, alternately CD is to A as EF is to B [7.13]. Hence, by the definition of proportional numbers, CD is the same multiple, or the same part, or the same parts, of A that EF is of B [D7.20].
+
+**Step 4.** I say that CD measures A. For suppose it does not. Then CD is not equal to A, since every number measures itself; so by Step 2 CD is less than A. Now CD, being less than A and not measuring it, is not a part of A [D7.3]; therefore, since any number is either a part or parts of any greater number, CD is parts of A [7.4, D7.4]; that is, CD is composed of a multitude of equal numbers each of which is a part of A.
+
+**Step 5.** Since CD is to A as EF is to B (Step 3) and CD is parts of A, EF is the same parts of B [D7.20]. Let CD be divided into the parts of A, namely CG, GD, ..., and EF into the parts of B, namely EH, HF, ...; then the multitude of CG, GD, ... is equal to the multitude of EH, HF, ..., and each of CG, GD, ... is the same part of A that each of EH, HF, ... is of B.
+
+**Step 6.** The multitude of these parts is more than one; for if CD consisted of a single part of A, CD would itself be a part of A and would measure it, contrary to the supposition. Therefore CG is a proper part of the whole CD and EH a proper part of the whole EF, so that CG is less than CD and EH is less than EF [CN5].
+
+**Step 7.** Since CG is the same part of A that EH is of B, CG is to A as EH is to B [D7.20]; and alternately, CG is to EH as A is to B [7.13].
+
+**Step 8.** Thus CG, EH are two numbers having the same ratio as A, B, and CG is less than CD while EH is less than EF: which is impossible, since by hypothesis CD, EF are the least numbers having the same ratio as A, B. Therefore CD measures A.
+
+**Step 9.** Let CD measure A according to the units in some number N, so that CD is a part of A, namely the Nth part [D7.3] (if CD is equal to A, N is an unit and CD measures A once). Since CD is to A as EF is to B (Step 3), EF is the same part of B that CD is of A [D7.20]; that is, EF is the Nth part of B, so EF measures B according to the units in N.
+
+**Step 10.** Therefore CD measures A the same number of times that EF measures B, the greater the greater and the less the less. Q.E.D.
+
+*Path note:* the contradiction in Steps 7–8 is reached by taking a single part CG, EH of CD, EF and applying the definition of proportion with alternation directly, rather than by summing all the antecedent parts and consequent parts; this reuses the tools already invoked and is the shorter route.
+
+**USED:** 7.13, 7.4, CN5, D7.20, D7.3, D7.4
+**Human refs (from References field):** 7.12, 7.13, 7.4, D7.20
+**Jaccard:** 0.429 — AI adds ['CN5', 'D7.3', 'D7.4']; Human adds ['7.12']
+
+## Proposition 7.21
+**Statement:** Numbers prime to one another are the least of those which have the same ratio with them.
+
+## Proposition 7.21
+**Statement:** Numbers prime to one another are the least of those which have the same ratio with them.
+
+**Step 1.** Let A, B be numbers prime to one another, so that A, B are measured by an unit alone as a common measure (D7.12). I say that A, B are the least of those numbers which have the same ratio with them.
+
+**Step 2.** For suppose that they are not. Among all the pairs of numbers which have the same ratio with A, B there is a least pair; let it be C, D, so that, as C is to D, so is A to B, and C, D are the least of those which have the same ratio with A, B. Since A, B are by supposition not the least pair, C, D are not the same numbers as A, B.
+
+**Step 3.** Now the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent (7.20). Therefore C measures A the same number of times that D measures B. Let E be the number which contains as many units as the times that C measures A; then C measures A according to the units in E, and D also measures B according to the units in E.
+
+**Step 4.** E is not an unit. For if E were an unit, C would measure A once only, so that C would be equal to A; and likewise D, measuring B once only, would be equal to B. Then A, B would be the very numbers C, D, that is, the least of those which have the same ratio with them, contrary to the supposition of Step 2. Therefore E is a number containing more than one unit.
+
+**Step 5.** Since an unit measures E according to the units in E, and C measures A the same number of times, namely according to the units in E, therefore, alternately, an unit measures C the same number of times that E measures A (7.15); that is, E measures A according to the units in C. In the same way, since an unit measures E and D measures B the same number of times, alternately an unit measures D the same number of times that E measures B (7.15); that is, E measures B according to the units in D.
+
+**Step 6.** Therefore the number E measures both A and B, so that A, B have the number E as a common measure. But A, B are prime to one another, and are therefore measured by an unit alone as a common measure (D7.12); and E is not an unit (Step 4). This is impossible.
+
+**Step 7.** Therefore the supposition of Step 2 is false: there are no numbers less than A, B which are in the same ratio with A, B, and A, B are the least of those which have the same ratio with them. Q.E.D.
+
+*Path note:* The passage in Step 5 from "C measures A according to the units in E" to "E measures A according to the units in C" could equally be made by 7.16 (the number produced by E multiplying C is equal to that produced by C multiplying E), read through the definition of multiplying (D7.15). 7.15 is chosen because its hypothesis is stated in exactly the "measures the same number of times" language supplied by 7.20, so it applies at once without translating measuring into multiplying. The existence of a least pair among the numbers having a given ratio is taken for granted, as it is in 7.20.
+
+**USED:** D7.12, 7.15, 7.20
+
+**USED:** 7.15, 7.20, D7.12
+**Human refs (from References field):** 7.16, 7.20, D7.12
+**Jaccard:** 0.500 — AI adds ['7.15']; Human adds ['7.16']
+
+## Proposition 7.22
+**Statement:** The least numbers of those which have the same ratio with them are prime to one another.
+
+**Step 1.** Let A, B be the least numbers of those which have the same ratio with them. I say that A, B are prime to one another. Suppose, if possible, that they are not. Then A, B are not measured by a unit alone as a common measure (D7.12), so some number C, other than a unit, measures both A and B.
+
+**Step 2.** Let C measure A according to the units in D, and let C measure B according to the units in E; that is, A is C added to itself as many times as there are units in D, and B is C added to itself as many times as there are units in E. (If C measures A or B only once, the corresponding D or E is a unit, which, as usual in Book VII, is here reckoned among the numbers.)
+
+**Step 3.** Therefore, by the definition of multiplication (D7.15), D by multiplying C has made A, and E by multiplying C has made B.
+
+**Step 4.** Thus the two numbers D, E by multiplying the one number C have made A, B. Therefore, by 7.18, as D is to E, so is A to B; that is, D, E have the same ratio as A, B.
+
+**Step 5.** Again, since D by multiplying C has made A, C by multiplying D also makes A (7.16); that is, A is D added to itself as many times as there are units in C (D7.15). Since C is a number and not a unit, it is a multitude of units (D7.2), so that D is added to itself more than once in making A. Hence D measures A and is a part of it (D7.3), and A, being the whole, is greater than its part D (CN5): D is less than A.
+
+**Step 6.** In the same way, since E by multiplying C has made B, C by multiplying E also makes B (7.16), so that B is E added to itself more than once; E is a part of B (D7.3), and B is greater than E (CN5).
+
+**Step 7.** Therefore D, E are numbers having the same ratio as A, B (Step 4), while D is less than A and E is less than B (Steps 5, 6). But A, B were supposed to be the least numbers of those which have the same ratio with them, so that no numbers less than A and B respectively can have the same ratio. This is impossible.
+
+**Step 8.** Therefore no number other than a unit measures both A and B; that is, A, B are measured by a unit alone as a common measure. Hence A, B are prime to one another (D7.12). Q.E.D.
+
+Path note: the proportion in Step 4 could equally be obtained from 7.17 after first commuting the products by 7.16 (C multiplying D, E makes A, B); 7.18 is chosen because, under D7.15, D and E are the multipliers of C exactly as the measurement is set up, so it is reached first.
+
+**USED:** 7.16, 7.18, CN5, D7.12, D7.15, D7.2, D7.3
+**Human refs (from References field):** 7.17, D7.15
+**Jaccard:** 0.125 — AI adds ['7.16', '7.18', 'CN5', 'D7.12', 'D7.2', 'D7.3']; Human adds ['7.17']
+
+## Proposition 7.23
+**Statement:** If two number be prime to one another, the number which measures the one of them will be prime to the remaining number.
+
+**Step 1.** Let A and B be two numbers prime to one another, and let some number C measure A. I say that C and B are prime to one another.
+
+**Step 2.** For suppose, if possible, that C and B are not prime to one another. Then, by D7.12, C and B are not measured by the unit alone as a common measure; hence some number D, other than the unit, measures both C and B.
+
+**Step 3.** Since D measures C, and C measures A, D also measures A: for A is composed of C taken a certain number of times, and each such C is composed of D taken a certain number of times, so that A is composed of D taken some number of times, that is, D measures A.
+
+**Step 4.** But D also measures B (Step 2). Therefore the number D, which is not the unit, is a common measure of A and B.
+
+**Step 5.** But A and B are prime to one another, so by D7.12 they are measured by the unit alone as a common measure; therefore no number other than the unit measures both A and B. This contradicts Step 4.
+
+**Step 6.** Therefore no number other than the unit measures both C and B; hence C and B are measured by the unit alone as a common measure, that is, by D7.12, C and B are prime to one another.
+
+Therefore, if two numbers be prime to one another, the number which measures the one of them will be prime to the remaining number. Q.E.D.
+
+**USED:** D7.12
+**Human refs (from References field):** D7.12
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 7.24
+**Statement:** If two numbers be prime to any number, their product also will be prime to the same.
+
+**Step 1.** Let the two numbers A, B be each prime to the number C, and let A by multiplying B make D (D7.15). I say that D and C are prime to one another.
+
+**Step 2.** For suppose D and C are not prime to one another. Then, by D7.12, D and C are not measured by an unit alone as a common measure; hence some number E, which is not an unit, measures both D and C.
+
+**Step 3.** Since E measures C, and C and A are prime to one another, therefore E and A are prime to one another [7.23].
+
+**Step 4.** Since E measures D, let F be the number according to which E measures D, so that as many units as there are in F, so many times E measures D; therefore E multiplied by F makes D (D7.15).
+
+**Step 5.** But A multiplied by B also makes D (Step 1). Therefore the product of E and F is equal to the product of A and B, each being D.
+
+**Step 6.** Consider the four numbers A, E, F, B. The product of the first and fourth (A and B) is equal to the product of the second and third (E and F); therefore the four numbers are proportional [7.19], that is, as A is to E, so is F to B.
+
+**Step 7.** Since A and E are prime to one another (Step 3), A and E are the least of the numbers which have the same ratio with them [7.21].
+
+**Step 8.** But the least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent [7.20]. Since as A is to E, so is F to B, and A, E are the least, therefore A measures F and E measures B.
+
+**Step 9.** Thus E measures B; but E also measures C (Step 2). Therefore E, which is not an unit, is a common measure of B and C, so that B and C are not measured by an unit alone as a common measure; hence B and C are not prime to one another [D7.12].
+
+**Step 10.** But B and C were by hypothesis prime to one another: which is absurd. Therefore no number other than an unit measures both D and C; hence D and C are measured by an unit alone as a common measure, that is, D and C are prime to one another [D7.12]. Therefore, if two numbers be prime to any number, their product also will be prime to the same. Q.E.D.
+
+**USED:** 7.19, 7.20, 7.21, 7.23, D7.12, D7.15
+**Human refs (from References field):** 7.16, 7.19, 7.20, 7.21, 7.23, D7.12, D7.15
+**Jaccard:** 0.857 — Human adds ['7.16']
+
+## Proposition 7.25
+**Statement:** If two numbers be prime to one another, the product of one of them into itself will be prime to the remaining one.
+
+## Proposition 7.25
+**Statement:** If two numbers be prime to one another, the product of one of them into itself will be prime to the remaining one.
+
+**Step 1.** Let A, B be two numbers prime to one another, and let A by multiplying itself make C. It is to be shown that B, C are prime to one another.
+
+**Step 2.** Let D be taken equal to A. Since A, B are prime to one another, they are measured by an unit alone as a common measure [D7.12]. But D is equal to A, so any number measuring D also measures A; hence D, B are likewise measured by an unit alone as a common measure, that is, D, B are prime to one another [D7.12].
+
+**Step 3.** Therefore each of the two numbers D, A is prime to B. Hence, by 7.24, the product of D and A is also prime to B.
+
+**Step 4.** But D is equal to A, so the product of D and A is the same number as the product of A into itself, namely C. Therefore C is prime to B; that is, B, C are prime to one another.
+
+Therefore, if two numbers be prime to one another, the product of one of them into itself will be prime to the remaining one. Q.E.D.
+
+**USED:** D7.12, 7.24
+
+**USED:** 7.24, D7.12
+**Human refs (from References field):** 7.24
+**Jaccard:** 0.500 — AI adds ['D7.12']
+
+## Proposition 7.26
+**Statement:** If two numbers be prime to two numbers, both to each, their products also will be prime to one another.
+
+**Step 1.** Let A, B be two numbers, and C, D two other numbers, such that A and B are prime to C and D, both to each; that is, A is prime to C and to D, and B is prime to C and to D. Let A by multiplying B make E, and let C by multiplying D make F. It is required to show that E, F are prime to one another.
+
+**Step 2.** Since each of the numbers A, B is prime to the number C, the product of A and B is also prime to C [7.24]. But the product of A and B is E; therefore E, C are prime to one another.
+
+**Step 3.** Again, since each of the numbers A, B is prime to the number D, the product of A and B, that is E, is also prime to D [7.24]; therefore E, D are prime to one another.
+
+**Step 4.** Hence each of the numbers C, D is prime to the number E. Therefore the product of C and D is also prime to E [7.24]. But the product of C and D is F; therefore E, F are prime to one another.
+
+**Step 5.** Therefore, if two numbers be prime to two numbers, both to each, their products also will be prime to one another. Q.E.D.
+
+**USED:** 7.24
+**Human refs (from References field):** 7.24
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 7.27
+**Statement:** If two numbers be prime to one another, and each by multiplying itself make a certain number, the products will be prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter will also be prime to one another [and this is always the case with the extremes].
+
+**Step 1.** Let A, B be two numbers prime to one another. Let A by multiplying itself make C, and let B by multiplying itself make D; further, let A by multiplying C make E, and let B by multiplying D make F. I say that C, D are prime to one another, and that E, F are prime to one another.
+
+**Step 2.** Since A, B are prime to one another, and A by multiplying itself has made C, the product C of A into itself is prime to the remaining number B [7.25]. Therefore C, B are prime to one another.
+
+**Step 3.** Since C, B are prime to one another, and B by multiplying itself has made D, the product D of B into itself is prime to the remaining number C [7.25]. Therefore C, D are prime to one another, which was the first thing to be proved.
+
+**Step 4.** Again, A is prime to B by hypothesis, and C is prime to B by Step 2; thus the two numbers A, C are each prime to the same number B. Therefore their product, which is E, is also prime to B [7.24]. Hence E, B are prime to one another.
+
+**Step 5.** Since E, B are prime to one another, and B by multiplying itself has made D, the product D of B into itself is prime to the remaining number E [7.25]. Hence E, D are prime to one another.
+
+**Step 6.** Thus the two numbers B, D are each prime to the same number E (B by Step 4, D by Step 5). Therefore their product, which is F, is also prime to E [7.24]. Hence E, F are prime to one another, which was the second thing to be proved.
+
+**Step 7.** Therefore, if A, B are prime to one another, the squares C, D are prime to one another, and the cubes E, F are prime to one another. The same argument, applied afresh with E, F in place of A, B and using Steps 4 through 6 with the products of A into E and B into F, shows that at each further stage the extreme terms remain prime to one another. Q.E.D.
+
+**USED:** 7.24, 7.25
+**Human refs (from References field):** 7.25, 7.26
+**Jaccard:** 0.333 — AI adds ['7.24']; Human adds ['7.26']
+
+## Proposition 7.28
+**Statement:** If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.
+
+**Step 1.** Let AB and BC be two numbers prime to one another, and let them be placed end to end so that AC is their sum, AB and BC being its two parts. I say first that AC is prime to each of AB and BC.
+
+**Step 2.** Suppose, if possible, that AC and AB are not prime to one another. Numbers prime to one another are those which are measured by an unit alone as a common measure [D7.12]; so, since AC and AB are not so measured, they are measured by some number as a common measure, that is, they are composite to one another [D7.14]. Let D be a number, other than an unit, which measures both AC and AB.
+
+**Step 3.** Since D measures AC, AC is D taken a certain number of times; since D measures AB, AB is D taken a certain number of times. Subtracting the equal AB from the equal AC, the remainder BC is D taken the difference of those two multitudes of times [CN3]. Therefore D measures BC.
+
+**Step 4.** Thus the number D, which is not an unit, measures both AB and BC. But AB and BC are prime to one another, so they are measured by an unit alone as a common measure [D7.12]. This is impossible.
+
+**Step 5.** Therefore no number other than an unit measures both AC and AB, so AC and AB are prime to one another [D7.12]. Exchanging the roles of AB and BC in Steps 2 through 5, AC and BC are likewise prime to one another. Hence the sum AC is prime to each of the original numbers.
+
+**Step 6.** Next, let the sum AC be prime to one of the original numbers, say AB. I say that AB and BC are prime to one another.
+
+**Step 7.** Suppose, if possible, that AB and BC are not prime to one another. Then, as in Step 2, they are measured by some number as a common measure [D7.12, D7.14]. Let D be a number, other than an unit, which measures both AB and BC.
+
+**Step 8.** Since D measures AB, AB is D taken a certain number of times; since D measures BC, BC is D taken a certain number of times. Adding these equals to equals, the whole AC is D taken the sum of those two multitudes of times [CN2]. Therefore D measures AC.
+
+**Step 9.** Thus the number D, which is not an unit, measures both AC and AB. But AC and AB are prime to one another, so they are measured by an unit alone as a common measure [D7.12]. This is impossible.
+
+**Step 10.** Therefore no number other than an unit measures both AB and BC, so AB and BC are prime to one another [D7.12]. The same argument, with BC in place of AB, shows that if AC is prime to BC then AB and BC are prime to one another. Therefore, if two numbers be prime to one another, the sum is prime to each of them; and if the sum be prime to either of them, the original numbers are prime to one another. Q.E.D.
+
+**USED:** CN2, CN3, D7.12, D7.14
+**Human refs (from References field):** D7.12
+**Jaccard:** 0.250 — AI adds ['CN2', 'CN3', 'D7.14']
+
+## Proposition 7.29
+**Statement:** Any prime number is prime to any number which it does not measure.
+
+## Proposition 7.29
+**Statement:** Any prime number is prime to any number which it does not measure.
+
+**Step 1.** Let A be a prime number, and let B be any number which A does not measure. I say that A and B are prime to one another.
+
+**Step 2.** For suppose that A and B are not prime to one another. Then A and B are not measured by an unit alone as a common measure [D7.12]; hence some number C, other than an unit, measures both A and B.
+
+**Step 3.** Since C measures B, while by hypothesis A does not measure B, C is not the same number as A.
+
+**Step 4.** But C also measures A. Thus A, being prime, is measured by a number C which is neither an unit nor A itself; this is impossible, since a prime number is that which is measured by an unit alone [D7.11].
+
+**Step 5.** Therefore no number other than an unit measures both A and B; that is, A and B are measured by an unit alone as a common measure. Hence A and B are prime to one another [D7.12]. Q.E.D.
+
+**USED:** D7.11, D7.12
+
+**USED:** D7.11, D7.12
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['D7.11', 'D7.12']
+
+## Proposition 7.30
+**Statement:** If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.
+
+**Step 1.** Let A and B be two numbers, let A multiplied by B make the number C, and let the prime number D measure C. It is required to show that D measures one of the numbers A, B. If D measures A, the proposition already holds; so suppose that D does not measure A, and let us show that D then measures B.
+
+**Step 2.** Since D is prime and does not measure A, D and A are prime to one another [7.29].
+
+**Step 3.** Since D measures C, let D measure C according to E, so that C is made up of D taken as many times as there are units in E; that is, E multiplied by D makes C [D7.15].
+
+**Step 4.** Since E multiplied by D makes C, D multiplied by E also makes C, because two numbers multiplying one another produce equal numbers [7.16]. Thus the number produced from D and E is C.
+
+**Step 5.** But A multiplied by B also makes C. Therefore the number produced from D and E is equal to the number produced from A and B, each being equal to C [CN1].
+
+**Step 6.** Consider the four numbers D, A, B, E. The number produced from the first and fourth (D and E) is equal to the number produced from the second and third (A and B). Therefore the four numbers are proportional: as D is to A, so is B to E [7.19].
+
+**Step 7.** Now D and A are prime to one another (Step 2), and numbers prime to one another are the least of those which have the same ratio with them [7.21]. Therefore D, A are the least numbers among those having the ratio D : A.
+
+**Step 8.** The least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent measures the antecedent and the consequent the consequent [7.20]. Since B, E have the same ratio as D, A (Step 6), D measures B (and A measures E).
+
+**Step 9.** Therefore, if D does not measure A, D measures B. Hence in every case the prime number D measures one of the original numbers A, B. Which was to be proved.
+
+**USED:** 7.16, 7.19, 7.20, 7.21, 7.29, CN1, D7.15
+**Human refs (from References field):** 7.19, 7.20, 7.21, 7.29, D7.15
+**Jaccard:** 0.714 — AI adds ['7.16', 'CN1']
+
+## Proposition 7.31
+**Statement:** Any composite number is measured by some prime number.
+
+**Step 1.** Let A be a composite number. By D7.13, A is measured by some number; let B be such a number measuring A. B is a number, hence not the unit; and B is a measure of A other than A itself, for a number having no measure other than the unit and itself is prime (D7.11), not composite. Therefore B is a part of A, the less of the greater (D7.3), so that B is less than A.
+
+**Step 2.** If B is prime (D7.11), then A is measured by the prime number B, and the proposition is established.
+
+**Step 3.** If B is not prime, then B is measured by some number other than the unit (D7.11), so that B is composite (D7.13). Let C be a number measuring B; then, exactly as in Step 1, C is less than B (D7.3).
+
+**Step 4.** C measures A. For since B measures A, A is a multiple of B (D7.5), that is, A is made up of B taken a certain number of times; and since C measures B, B is made up of C taken a certain number of times. Replacing each B composing A by the C's that compose that B, A is made up of C taken a certain number of times; therefore C measures A.
+
+**Step 5.** If C is prime (D7.11), then A is measured by the prime number C, and the proposition is established. If C is not prime, then C is composite (D7.11, D7.13) and is measured by some number D less than C (D7.3), and D measures A by the argument of Step 4 applied to D, C and A.
+
+**Step 6.** Continuing the investigation in this way, every number obtained measures A, and each is less than the one before it: A is greater than B, B greater than C, C greater than D, and so on. Now A is a multitude composed of units (D7.2), and each number in this sequence falls short of the preceding one by at least one unit; hence no more numbers can be obtained in the sequence than there are units in A. Therefore the sequence cannot continue indefinitely: an infinite succession of numbers each less than the one before, all measuring A, is impossible in numbers.
+
+**Step 7.** But the investigation stops only when a number is reached which is not composite, that is to say, a number which is prime (D7.11). Therefore some prime number is reached which measures the number before it, and which therefore, by Step 4, also measures A.
+
+**Step 8.** Therefore any composite number is measured by some prime number. Q.E.D.
+
+**USED:** D7.11, D7.13, D7.2, D7.3, D7.5
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['D7.11', 'D7.13', 'D7.2', 'D7.3', 'D7.5']
+
+## Proposition 7.32
+**Statement:** Any number either is prime or is measured by some prime number.
+
+**Step 1.** Let A be any number. By D7.11 a prime number is that which is measured by an unit alone, and by D7.13 a composite number is that which is measured by some number. Hence every number A falls under one of two cases: either no number measures A, so that A is measured by an unit alone and is prime (D7.11); or some number measures A, so that A is composite (D7.13).
+
+**Step 2.** Case 1: A is prime. Then the required conclusion holds for A at once, since A is itself prime.
+
+**Step 3.** Case 2: A is composite. By 7.31, any composite number is measured by some prime number; therefore A is measured by some prime number.
+
+**Step 4.** Accordingly, in either case A either is prime or is measured by some prime number. Therefore any number either is prime or is measured by some prime number. Q.E.D.
+
+**USED:** 7.31, D7.11, D7.13
+**Human refs (from References field):** 7.31
+**Jaccard:** 0.333 — AI adds ['D7.11', 'D7.13']
+
+## Proposition 7.33
+**Statement:** Given as many numbers as we please, to find the least of those which have the same ratio with them.
+
+## Proposition 7.33
+**Statement:** Given as many numbers as we please, to find the least of those which have the same ratio with them.
+
+**Step 1.** Let A, B, C be the given numbers. Numbers E, F, G are said to have the same ratio with A, B, C when A:B = E:F and B:C = F:G. It is required to find the least of the numbers which have the same ratio with A, B, C. Now A, B, C are either prime to one another or not (D7.12). If they are prime to one another, take E, F, G to be A, B, C themselves. If they are not, let D be the greatest common measure of A, B, C (7.3), and let E, F, G be the numbers containing as many units as the times that D measures A, B, C respectively. Then A is D added to itself as many times as there are units in E, that is, E multiplying D makes A; likewise F multiplying D makes B, and G multiplying D makes C (D7.15).
+
+**Step 2.** E, F, G have the same ratio with A, B, C. In the first case this holds at once, E, F, G being A, B, C. In the second case, since the two numbers E, F multiplying D make A, B, the products have the same ratio as the multipliers, so that A:B = E:F; and since F, G multiplying D make B, C, likewise B:C = F:G (7.18).
+
+**Step 3.** I say that E, F, G are the least of the numbers having the same ratio with A, B, C. For if not, let H, K, L have the same ratio with A, B, C, so that A:B = H:K and B:C = K:L, and let one of H, K, L be less than the corresponding one of E, F, G. The argument is the same whichever place is concerned; let H be less than E.
+
+**Step 4.** E:F and H:K are each the same ratio as A:B, so E:F = H:K; likewise F:G and K:L are each the same ratio as B:C, so F:G = K:L (D7.20). Taking these proportions alternately, E:H = F:K and F:K = G:L (7.13). Hence the pairs E, H; F, K; G, L all have the same ratio.
+
+**Step 5.** Of the numbers which have the same ratio as E, H let P, Q be the least (among any numbers whatever there are least). Since P, Q are the least numbers of those having their ratio, and each of the pairs E, H; F, K; G, L has that ratio, P measures E, F, G the same number of times that Q measures H, K, L respectively, the antecedent measuring the antecedent and the consequent the consequent (7.20). In particular P measures each of E, F, G.
+
+**Step 6.** P is not an unit. For if P were an unit, it would measure E as many times as there are units in E (D7.2); then Q would measure H the same number of times (7.20), so that H would be Q added to itself as many times as there are units in E (D7.15); the E units taken one from each of these E summands are a part of H or the whole of it, so H would not be less than E (CN5), contrary to Step 3. Therefore P is a number containing more than one unit (D7.2).
+
+**Step 7.** Suppose first that A, B, C are prime to one another, so that E, F, G are A, B, C. Then by Step 5 the number P, which is not an unit, measures A, B, C; thus A, B, C are not measured by an unit alone as a common measure, which contradicts their being prime to one another (D7.12).
+
+**Step 8.** Suppose next that A, B, C are not prime to one another, D being their greatest common measure. Let T be the number made by P multiplying D. Since the two numbers P, E multiplying D make T, A, the products have the same ratio as the multipliers, so that T:A = P:E (7.18). Now P measures E, so P is either E itself or a part of E (D7.3); hence T is either A itself or the same part of A (D7.20), and in either case T measures A. In the same way, since P measures F and F multiplying D makes B, T measures B; and since P measures G and G multiplying D makes C, T measures C. So T is a common measure of A, B, C. But T is D added to itself as many times as there are units in P (D7.15), and P contains more than one unit (Step 6), so D is a part of T and T is greater than D (CN5). Thus a number greater than D measures A, B, C, which is impossible, D being the greatest common measure of A, B, C (7.3).
+
+**Step 9.** In either case the supposition of Step 3 leads to an impossibility. Therefore no numbers having the same ratio with A, B, C have any term less than the corresponding one of E, F, G; that is, E, F, G are the least of those which have the same ratio with A, B, C. The same construction and argument apply to any multitude of given numbers: for two numbers the greatest common measure is found by 7.2, and for more than three by repeated application of 7.3, the rest of the argument being unchanged. Which was to be done.
+
+**USED:** D7.12, 7.3, D7.15, 7.18, D7.20, 7.13, 7.20, D7.2, CN5, D7.3, 7.2
+
+**USED:** 7.13, 7.18, 7.2, 7.20, 7.3, CN5, D7.12, D7.15, D7.2, D7.20, D7.3
+**Human refs (from References field):** 7.16, 7.19, 7.21, 7.3, D7.15, D7.20
+**Jaccard:** 0.214 — AI adds ['7.13', '7.18', '7.2', '7.20', 'CN5', 'D7.12', 'D7.2', 'D7.3']; Human adds ['7.16', '7.19', '7.21']
+
+## Proposition 7.34
+**Statement:** Given two numbers, to find the least number which they measure.
+
+## Proposition 7.34
+**Statement:** Given two numbers, to find the least number which they measure.
+
+Let A, B be the two given numbers. It is required to find the least number which A, B measure.
+
+**Step 1.** Preliminary convention. By D7.15, to say that A measures a number D "according to the units in G" is to say that A added to itself as many times as there are units in G makes D, that is, G multiplying A makes D. By 7.16 the number produced by two numbers multiplying one another is the same whichever of them multiplies the other; so this is the same as saying that A multiplying G makes D, which I write A × G = D. On the strength of 7.16, I treat every product below without regard to the order of the factors, and every statement "X measures Y according to the units in Z" is thus equivalent to X × Z = Y.
+
+**Step 2.** A, B are either prime to one another, i.e. measured by an unit alone as a common measure (D7.12), or they are not. I treat the two cases separately.
+
+**Case 1: A, B prime to one another.**
+
+**Step 3.** Let A multiplying B make C, so that A × B = C. Then B added to itself A times makes C, so B measures C according to the units in A (D7.15); and since also B × A = C (7.16), A measures C according to the units in B. Therefore A, B both measure C.
+
+**Step 4.** I say that C is the least number which A, B measure. For, if not, some number D less than C is measured by both A and B. Let A measure D according to the units in E, and let B measure D according to the units in F; then by Step 1, A × E = D and B × F = D.
+
+**Step 5.** Therefore A × E = B × F, the number produced from A and E being equal to the number produced from B and F. Hence by 7.19 the four numbers A, B, F, E are proportional: as A is to B, so is F to E.
+
+**Step 6.** Now A, B are prime to one another, and numbers prime to one another are the least of those which have the same ratio with them (7.21). But the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent (7.20). Since A : B = F : E with A, B least, B measures E.
+
+**Step 7.** Since A multiplying the two numbers B, E makes C, D respectively (A × B = C by Step 3, A × E = D by Step 4), the numbers produced have the same ratio as the numbers multiplied (7.17): as B is to E, so is C to D.
+
+**Step 8.** B measures E, so B is a part of E (D7.3). Since B : E = C : D, C is the same part of D that B is of E (D7.20); therefore C measures D (D7.3).
+
+**Step 9.** But D was taken less than C. A number which measures another is either equal to it, or is a part of it and so less than it, the whole being greater than the part (D7.3, CN5); so the greater C cannot measure the less D. This is impossible. Therefore no number less than C is measured by both A and B, and C, the product of A and B, is the least number which A, B measure.
+
+**Case 2: A, B not prime to one another.**
+
+**Step 10.** By 7.33 let F, E be the least numbers of those which have the same ratio with A, B, so that as A is to B, so is F to E.
+
+**Step 11.** Since A, B, F, E are proportional, the number produced from the first and fourth equals the number produced from the second and third (7.19): A × E = B × F. Let this common product be C, so that A × E = C and B × F = C.
+
+**Step 12.** Then by Step 1, A measures C according to the units in E, and B measures C according to the units in F. Therefore A, B both measure C.
+
+**Step 13.** I say that C is the least number which A, B measure. For, if not, some number D less than C is measured by both A and B. Let A measure D according to the units in G, and B measure D according to the units in H; then A × G = D and B × H = D (Step 1).
+
+**Step 14.** Therefore A × G = B × H, and by 7.19 the numbers A, B, H, G are proportional: as A is to B, so is H to G.
+
+**Step 15.** Also, by Step 10, as A is to B, so is F to E. By D7.20, A is the same part, or the same parts, or the same multiple of B that F is of E; and A is likewise the same part, or the same parts, or the same multiple of B that H is of G. Therefore F is the same part, or the same parts, or the same multiple of E that H is of G; that is, as F is to E, so is H to G (D7.20).
+
+**Step 16.** But F, E are the least numbers of those which have the same ratio with them (Step 10), and the least measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent (7.20). Therefore F measures H, and E measures G.
+
+**Step 17.** Since A multiplying the two numbers E, G makes C, D respectively (A × E = C by Step 11, A × G = D by Step 13), by 7.17 the products have the same ratio as the numbers multiplied: as E is to G, so is C to D.
+
+**Step 18.** E measures G, so E is a part of G (D7.3). Since E : G = C : D, C is the same part of D that E is of G (D7.20); therefore C measures D (D7.3).
+
+**Step 19.** But D is less than C, and the greater cannot measure the less, since a number measuring another is either equal to it or a part of it and therefore not greater than it (D7.3, CN5). This is impossible. Therefore no number less than C is measured by both A and B, and C is the least number which A, B measure.
+
+**Step 20.** Accordingly, in either case the least number which the two given numbers A, B measure has been found: in Case 1 it is the product A × B, and in Case 2 it is A × E = B × F, where F, E are the least numbers in the ratio of A to B. Q.E.F.
+
+*Path note.* The construction of Case 2 (via 7.33) would also cover Case 1, since for numbers prime to one another the least numbers in their ratio are the numbers themselves (7.21). I have nevertheless separated Case 1 because the product A × B is the number reached first and its minimality follows directly from 7.21 and 7.20 without invoking 7.33. In Step 15, the transitivity of "same ratio" is obtained directly from the Book VII definition of proportion (D7.20) rather than from V.11, since the latter concerns magnitudes in the sense of D5.5.
+
+**USED:** D7.3, D7.12, D7.15, D7.20, CN5, 7.16, 7.17, 7.19, 7.20, 7.21, 7.33
+
+**USED:** 7.16, 7.17, 7.19, 7.20, 7.21, 7.33, CN5, D7.12, D7.15, D7.20, D7.3
+**Human refs (from References field):** 7.16, 7.17, 7.19, 7.20, 7.21, 7.33, D7.15
+**Jaccard:** 0.636 — AI adds ['CN5', 'D7.12', 'D7.20', 'D7.3']
+
+## Proposition 7.35
+**Statement:** If two numbers measure any number, the least number measured by them will also measure the same.
+
+**Step 1.** Let the two numbers A, B measure the number CD, and let E be the least number measured by A and B; such a least number exists by 7.34. I say that E also measures CD.
+
+**Step 2.** For suppose E does not measure CD. Then, E being subtracted continually from CD as many times as possible, let E, measuring DF, leave a remainder CF less than E. The remainder CF is a number and not nothing, since E does not measure CD; and CF is less than E, since E has been subtracted as often as it can be.
+
+**Step 3.** Since A measures E, E is a multiple of A, that is, E is A taken a certain number of times [D7.5]; and since E measures DF, DF is E taken a certain number of times. Hence DF, being E taken so many times, and E being A taken so many times, is itself A taken a certain number of times; that is, A measures DF. In the same way, since B measures E and E measures DF, B also measures DF.
+
+**Step 4.** But A measures the whole CD by hypothesis, and A measures the part DF by Step 3. Now CD is A taken a certain number of times, and DF is A taken a smaller number of times; subtracting DF from CD, the remainder CF is A taken the difference of those numbers of times [CN3]. Therefore A measures the remainder CF. In the same way B, measuring the whole CD and the part DF, measures the remainder CF.
+
+**Step 5.** Thus A and B both measure CF, and CF is less than E by Step 2. But E was taken as the least number measured by A and B (Step 1); so a number less than E is measured by A and B, which is impossible.
+
+**Step 6.** Therefore the supposition that E does not measure CD is false; hence E measures CD. Therefore, if two numbers measure any number, the least number measured by them also measures the same. Q.E.D.
+
+**USED:** 7.34, CN3, D7.5
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['7.34', 'CN3', 'D7.5']
+
+## Proposition 7.36
+**Statement:** Given three numbers, to find the least number which they measure.
+
+**Step 1.** Let A, B, C be the three given numbers. It is required to find the least number which A, B, C measure.
+
+**Step 2.** Let D be the least number measured by the two numbers A and B. [7.34]
+
+**Step 3.** Then C either measures D or does not measure it.
+
+**Step 4.** First, let C measure D. But A and B also measure D; therefore A, B, C all measure D.
+
+**Step 5.** I say that D is also the least number which A, B, C measure. For, if not, A, B, C will measure some number E which is less than D.
+
+**Step 6.** Since A and B measure E, the least number measured by A and B, namely D, will also measure E. [7.35]
+
+**Step 7.** But D is greater than E, so the greater would measure the less; this is impossible. Therefore A, B, C do not measure any number less than D, and D is the least number which A, B, C measure.
+
+**Step 8.** Next, let C not measure D. Let E be the least number measured by the two numbers C and D. [7.34]
+
+**Step 9.** Since A and B measure D, and D measures E, therefore A and B also measure E. But C also measures E; therefore A, B, C all measure E.
+
+**Step 10.** I say that E is also the least number which A, B, C measure. For, if not, A, B, C will measure some number F which is less than E.
+
+**Step 11.** Since A and B measure F, the least number measured by A and B, namely D, will also measure F. [7.35] But C also measures F; therefore C and D both measure F.
+
+**Step 12.** Therefore the least number measured by C and D, namely E, will also measure F. [7.35]
+
+**Step 13.** But E is greater than F, so the greater would measure the less; this is impossible. Therefore A, B, C do not measure any number less than E, and E is the least number which A, B, C measure.
+
+**Step 14.** Therefore in either case the least number which the three given numbers A, B, C measure has been found. Q.E.F.
+
+**USED:** 7.34, 7.35
+
+**USED:** 7.34, 7.35
+**Human refs (from References field):** 7.34, 7.35
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 7.37
+**Statement:** If a number be measured by any number, the number which is measured will have a part called by the same name as the measuring number.
+
+**Step 1.** Let the number A be measured by the number B; I say that A has a part called by the same name as B. A part of a number is named after the number of times it measures the whole: the part which measures the whole as many times as there are units in a number N is called the part named after N (as the "third part" is named after three). Let D be an unit. Since every number is a multitude composed of units (D7.2), the unit D measures any number according to the units in it; in particular, D measures B as many times as there are units in B, so that the unit D is the part of B called by the same name as B.
+
+**Step 2.** If B is equal to A, then B measures A once, and the unit D, which measures A as many times as there are units in A, that is, in B, is itself a part of A called by the same name as B; the proposition then holds at once. Let B therefore be less than A, so that B measures A more than once.
+
+**Step 3.** As many times as B measures A, so many units let there be in C; C is a number, since B measures A more than once. Thus B measures A according to the units in C.
+
+**Step 4.** Again, since C is a multitude composed of units (D7.2), the unit D measures C according to the units in C. Hence the unit D measures the number C the same number of times that the number B measures the number A.
+
+**Step 5.** Therefore, since an unit D measures the number C, and another number B measures another number A the same number of times, alternately also the unit D measures the number B the same number of times that C measures A (7.15).
+
+**Step 6.** But the unit D measures B as many times as there are units in B (Step 1). Therefore C measures A as many times as there are units in B; and since B contains more than one unit, C measures A more than once, so that C is less than A.
+
+**Step 7.** Since C, the less, measures A, the greater, C is a part of A (D7.3). And C measures A as many times as there are units in B; that is, whatever part the unit D is of B, the same part is C of A (Steps 1 and 5).
+
+**Step 8.** But the unit D is the part of B called by the same name as B (Step 1). Therefore C is a part of A called by the same name as B; that is, the number A, which is measured by B, has a part C called by the same name as the measuring number B. Q.E.D.
+
+**USED:** 7.15, D7.2, D7.3
+**Human refs (from References field):** 7.15
+**Jaccard:** 0.333 — AI adds ['D7.2', 'D7.3']
+
+## Proposition 7.38
+**Statement:** If a number have any part whatever, it will be measured by a number called by the same name as the part.
+
+**Step 1.** Let A be a number having a part B, and let C be the number called by the same name as the part B; that is, B is the C-th part of A. I say that A is measured by C.
+
+**Step 2.** Since B is a part of A, by D7.3 B measures A. That the part B is called by the same name as the number C means precisely that B measures A according to the units in C; that is, B measures A as many times as there are units in C.
+
+**Step 3.** Let D be an unit (D7.1). Since C is a number, it is a multitude composed of units (D7.2); hence the unit D measures C according to the units in C, that is, D measures C as many times as there are units in C.
+
+**Step 4.** Therefore, from Steps 2 and 3, the unit D measures the number C the same number of times that the number B measures the number A, each doing so according to the units in C.
+
+**Step 5.** Hence, by 7.15, alternately the unit D measures the number B the same number of times that the number C measures the number A.
+
+**Step 6.** But the unit D does measure B, namely as many times as there are units in B (D7.2). Therefore C measures A the same number of times, that is, C measures A according to the units in B; so C measures A.
+
+**Step 7.** Therefore A, which has the part B, is measured by C, the number called by the same name as the part B. Q.E.D.
+
+**USED:** 7.15, D7.1, D7.2, D7.3
+**Human refs (from References field):** 7.15
+**Jaccard:** 0.250 — AI adds ['D7.1', 'D7.2', 'D7.3']
+
+## Proposition 7.39
+**Statement:** To find the number which is the least that will have given parts.
+
+**Step 1.** Let A, B, C be the given parts (for example a third part, a fourth part, a fifth part). It is required to find the least number which will have the parts A, B, C.
+
+**Step 2.** Let D, E, F be the numbers called by the same name as the parts A, B, C respectively; that is, D is the number such that A is the D-th part, E the number such that B is the E-th part, and F the number such that C is the F-th part.
+
+**Step 3.** Let G be the least number which is measured by the three numbers D, E, F [7.36].
+
+**Step 4.** Since G is measured by D, G has a part called by the same name as D [7.37]; and the part called by the same name as D is A. Therefore G has the part A. In the same way, since G is measured by E and by F, G has the parts called by the same name as E and as F [7.37], which are B and C. Therefore G has the parts A, B, C.
+
+**Step 5.** I say next that G is also the least number having the parts A, B, C. For, if not, there will be some number H less than G which has the parts A, B, C.
+
+**Step 6.** Since H has the part A, H is measured by the number called by the same name as the part A [7.38], that is, by D. Similarly, since H has the parts B and C, H is measured by the numbers called by the same name as B and as C [7.38], that is, by E and by F. Therefore H is measured by D, E, F.
+
+**Step 7.** But H is less than G, whereas G was taken to be the least number measured by D, E, F [7.36]; hence a number less than the least number measured by D, E, F is itself measured by D, E, F, which is impossible.
+
+**Step 8.** Therefore no number less than G has the parts A, B, C, and G is the least number which has the given parts A, B, C. Q.E.F.
+
+Path note: the proof follows the three-part case exactly as the construction of 7.36 does; with only two given parts the same argument runs with 7.34 in place of 7.36, so 7.34 is not cited here.
+
+**USED:** 7.36, 7.37, 7.38
+**Human refs (from References field):** 7.36, 7.37, 7.38
+**Jaccard:** 1.000 — Perfect match.

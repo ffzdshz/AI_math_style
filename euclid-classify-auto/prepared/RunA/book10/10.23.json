@@ -1,0 +1,34 @@
+{
+  "proposition": "10.23",
+  "book": 10,
+  "statement": "A straight line commensurable with a medial straight line is medial.",
+  "heath_proof": "Let A be medial, and let B be commensurable with A; I say that B is also medial. For let a rational straight line CD be set out, and to CD let the rectangular area CE equal to the square on A be applied, producing ED as breadth; therefore ED is rational and incommensurable in length with CD. [X. 22] And let the rectangular area CF equal to the square on B be applied to CD, producing DF as breadth. Since then A is commensurable with B, the square on A is also commensurable with the square on B. But EC is equal to the square on A, and CF is equal to the square on B; therefore EC is commensurable with CF. And, as EC is to CF, so is ED to DF; [VI. 1] therefore ED is commensurable in length with DF. [X. 11] But ED is rational and incommensurable in length with DC; therefore DF is also rational [X. Def. 3] and incommensurable in length with DC. [X. 13] Therefore CD, DF are rational and commensurable in square only. But the straight line the square on which is equal to the rectangle contained by rational straight lines commensurable in square only is medial; [X. 21] therefore the side of the square equal to the rectangle CD, DF is medial. And B is the side of the square equal to the rectangle CD, DF; therefore B is medial.",
+  "ai_proof_text": "10.23\n**Statement:** A straight line commensurable with a medial straight line is medial.\n\n**Step 1.** Let A be a medial straight line, and let B be commensurable in length with A. We are to show that B is also medial.\n\n**Step 2.** Set out a rational straight line CD [D10.1.3].\n\n**Step 3.** To CD apply a rectangular area equal to the square on A, producing CE as breadth, so that CD * CE = sq(A). Since A is medial, by 10.22 the breadth CE is rational and incommensurable in length with CD.\n\n**Step 4.** To CD apply a rectangular area equal to the square on B, producing CF as breadth, so that CD * CF = sq(B).\n\n**Step 5.** Since A and B are commensurable in length, the squares on them have to one another the ratio which a square number has to a square number [10.9]. Therefore sq(A) and sq(B) are commensurable [10.6].\n\n**Step 6.** Now sq(A) = CD * CE and sq(B) = CD * CF. Since these rectangles share the same side CD, by 6.1 we have CD * CE : CD * CF = CE : CF, that is, sq(A) : sq(B) = CE : CF.\n\n**Step 7.** Since sq(A) is commensurable with sq(B), and sq(A) : sq(B) = CE : CF, it follows that CE is commensurable with CF [10.11].\n\n**Step 8.** Since CE is rational and CF is commensurable with CE, CF is also rational [D10.1.3, 10.12].\n\n**Step 9.** Since CE is incommensurable in length with CD (Step 3), and CF is commensurable with CE (Step 7), it follows that CF is also incommensurable in length with CD [10.13].\n\n**Step 10.** Therefore CD and CF are both rational straight lines commensurable in square only (they are each rational, hence commensurable in square with the assigned rational line and therefore with each other, yet incommensurable in length with each other). By 10.21, the rectangle CD * CF is irrational, and the side of the square equal to it is medial.\n\n**Step 11.** But CD * CF = sq(B), so B is the side of a square equal to the rectangle contained by the rational straight lines CD and CF which are commensurable in square only. Therefore B is medial [10.21]. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.21, 10.22, 10.6, 10.9, 6.1, D10.1.3\n**Human refs (from References field):** 10.11, 10.13, 10.21, 10.22, 6.1, D10.1.3\n**Jaccard:** 0.667 — AI adds ['10.12', '10.6', '10.9']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.21",
+    "10.22",
+    "10.6",
+    "10.9",
+    "6.1",
+    "D10.1.3"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.21",
+    "10.22",
+    "6.1",
+    "D10.1.3"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.6",
+    "10.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let A be a medial straight line, and let B be commensurable in length with A. We are to show that B is also medial.  **Step 2.** Set out a rational straight line CD [D10.1.3].  **Step 3.**"
+}

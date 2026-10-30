@@ -1,0 +1,61 @@
+{
+  "proposition": "10.66",
+  "book": 10,
+  "statement": "A straight line commensurable in length with a binomial straight line is itself also binomial and the same in order.",
+  "heath_proof": "Let AB be binomial, and let CD be commensurable in length with AB; I say that CD is binomial and the same in order with AB. For, since AB is binomial, let it be divided into its terms at E, and let AE be the greater term; therefore AE, EB are rational straight lines commensurable in square only. [X. 36] Let it be contrived that, as AB is to CD, so is AE to CF; [VI. 12] therefore also the remainder EB is to the remainder FD as AB is to CD. [V. 19] But AB is commensurable in length with CD; therefore AE is also commensurable with CF, and EB with FD. [X. 11] And AE, EB are rational; therefore CF, FD are also rational. And, as AE is to CF, so is EB to FD. [V. 11] Therefore, alternately, as AE is to EB, so is CF to FD. [V. 16] But AE, EB are commensurable in square only; therefore CF, FD are also commensurable in square only. [X. 11] And they are rational; therefore CD is binomial. [X. 36] I say next that it is the same in order with AB. For the square on AE is greater than the square on EB either by the square on a straight line commensurable with AE or by the square on a straight line incommensurable with it. If then the square on AE is greater than the square on EB by the square on a straight line commensurable with AE, the square on CF will also be greater than the square on FD by the square on a straight line commensurable with CF. [X. 14] And, if AE is commensurable with the rational straight line set out, CF will also be commensurable with it, [X. 12] and for this reason each of the straight lines AB, CD is a first binomial, that is, the same in order. [X. Deff. II. 1] But, if EB is commensurable with the rational straight line set out, FD is also commensurable with it, [X. 12] and for this reason again CD will be the same in order with AB, for each of them will be a second binomial. [X. Deff. II. 2] But, if neither of the straight lines AE, EB is commensurable with the rational straight line set out, neither of the straight lines CF, FD will be commensurable with it, [X. 13] and each of the straight lines AB, CD is a third binomial. [X. Deff. II. 3] But, if the square on AE is greater than the square on EB by the square on a straight line incommensurable with AE, the square on CF is also greater than the square on FD by the square on a straight line incommensurable with CF. [X. 14] And, if AE is commensurable with the rational straight line set out, CF is also commensurable with it, and each of the straight lines AB, CD is a fourth binomial. [X. Deff. II. 4] But, if EB is so commensurable, so is FD also, and each of the straight lines AB, CD will be a fifth binomial. [X. Deff. II. 5] But, if neither of the straight lines AE, EB is so commensurable, neither of the straight lines CF, FD is commensurable with the rational straight line set out, and each of the straight lines AB, CD will be a sixth binomial. [X. Deff. II. 6] Hence a straight line commensurable in length with a binomial straight line is binomial and the same in order.",
+  "ai_proof_text": "10.66\n**Statement:** A straight line commensurable in length with a binomial straight line is itself also binomial and the same in order.\n\n**Step 1.** Let L be a binomial straight line, and let M be commensurable in length with L. Fix the assigned rational straight line r relative to which the order is determined. Write L = a + b, where a > b and a, b are rational straight lines commensurable in square only [10.36; D10.1.3]. Throughout, x² denotes the square on a straight line x.\n\n**Step 2.** We take the direct route of transferring the two terms proportionally. Divide M into c + d in the same ratio as L is divided into a + b, so that a:b = c:d [6.10]. By alternation and the proposition on sums of antecedents and consequents,\n\na:c = b:d = (a + b):(c + d) = L:M [5.16; 5.12].\n\nSince a > b, the proportion a:c = b:d gives c > d [5.14].\n\n**Step 3.** Since L and M are commensurable in length, the proportions in Step 2 show that a and c are commensurable in length, and likewise b and d [10.11]. Moreover, since a and b are incommensurable in length and a:b = c:d, c and d are incommensurable in length [10.11].\n\n**Step 4.** Because a and c are commensurable in length, a²:c² is the ratio of a square number to a square number; hence a² and c² are commensurable areas [10.9; 10.6]. Similarly, b² and d² are commensurable. Since a and b are rational, a² and b² are each commensurable with r² [D10.1.3; D10.1.2]. Therefore c² and d² are each commensurable with r² [10.12], and consequently c and d are rational straight lines [D10.1.3].\n\n**Step 5.** Since c² and d² are commensurable with the same area r², they are commensurable with one another [10.12]. Thus c and d are commensurable in square, but, by Step 3, not in length [D10.1.2]. They are therefore rational straight lines commensurable in square only, so their sum M is binomial [10.36].\n\n**Step 6.** The length-commensurability of each term with the assigned line r is preserved. Indeed, a and c are commensurable in length; therefore, if a is commensurable in length with r, so is c [10.12], while if a is incommensurable in length with r, so is c [10.13]. The same argument applies to b and d. Hence the alternatives that the greater term, the lesser term, or neither term is commensurable in length with r are the same for L and M [10.12; 10.13].\n\n**Step 7.** For the square-excess condition, apply 10.14 directly to a:b = c:d; this is the natural choice because it transfers exactly the condition appearing in the definitions of the orders. If a² exceeds b² by the square on a straight line commensurable in length with a, then c² exceeds d² by the square on a straight line commensurable in length with c. If instead the former excess-square side is incommensurable in length with a, then the latter is incommensurable in length with c [10.14].\n\n**Step 8.** When the excess-square side is commensurable in length with the greater term, the greater-term, lesser-term, and neither-term alternatives of Step 6 define respectively the first, second, and third binomials [D10.2.1; D10.2.2; D10.2.3]. When the excess-square side is incommensurable in length with the greater term, those same alternatives define respectively the fourth, fifth, and sixth binomials [D10.2.4; D10.2.5; D10.2.6]. Steps 6 and 7 preserve both defining conditions. Therefore M is itself binomial and has the same order as L.\n\n**USED:** 10.11, 10.12, 10.13, 10.14, 10.36, 10.6, 10.9, 5.12, 5.14, 5.16, 6.10, D10.1.2, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6\n**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.36, 5.11, 5.16, 5.19, 6.12, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6\n**Jaccard:** 0.545 — AI adds ['10.6', '10.9', '5.12', '5.14', '6.10', 'D10.1.2', 'D10.1.3']; Human adds ['5.11', '5.19', '6.12']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.36",
+    "10.6",
+    "10.9",
+    "5.12",
+    "5.14",
+    "5.16",
+    "6.10",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.2.1",
+    "D10.2.2",
+    "D10.2.3",
+    "D10.2.4",
+    "D10.2.5",
+    "D10.2.6"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.36",
+    "5.11",
+    "5.16",
+    "5.19",
+    "6.12",
+    "D10.2.1",
+    "D10.2.2",
+    "D10.2.3",
+    "D10.2.4",
+    "D10.2.5",
+    "D10.2.6"
+  ],
+  "ai_only": [
+    "10.6",
+    "10.9",
+    "5.12",
+    "5.14",
+    "6.10",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "5.11",
+    "5.19",
+    "6.12"
+  ],
+  "jaccard": 0.545,
+  "proof_summary": "**Step 1.** Let L be a binomial straight line, and let M be commensurable in length with L. Fix the assigned rational straight line r relative to which the order is determined. Write L = a + b, where "
+}

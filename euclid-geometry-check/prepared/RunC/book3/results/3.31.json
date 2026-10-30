@@ -1,0 +1,66 @@
+{
+  "proposition": "3.31",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A is on semicircle BAC with diameter BC; E is the centre of the circle, lying on BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EB = EA (radii), so triangle ABE is isosceles",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EA = EC (radii), so triangle AEC is isosceles",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle BAC = angle EAB + angle EAC: ray AE falls between rays AB and AC (E is between B and C on segment BC)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "In triangle ABC, angles sum to two right angles",
+      "type": "angle_sum"
+    },
+    {
+      "step": "Step 10",
+      "claim": "For chord AC (not diameter), the segment containing the centre is the greater segment",
+      "type": "segment_classification"
+    },
+    {
+      "step": "Step 12",
+      "claim": "B in greater segment implies arc ADC is the minor arc",
+      "type": "arc_classification"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Inscribed angle ABC subtends minor arc ADC; central angle on minor arc < two right angles",
+      "type": "arc_angle_relationship"
+    },
+    {
+      "step": "Step 21",
+      "claim": "Diameter AD drawn through centre from A passes through interior of greater segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 21",
+      "claim": "angle DAC claimed to equal a right angle by semicircle theorem (misapplication: A is endpoint of diameter AD, not on the arc)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 22",
+      "claim": "Angle of lesser segment at A is contained within the angle of the semicircle at A",
+      "type": "angle_containment"
+    }
+  ],
+  "configuration_map": "Circle with centre E (or O). Diameter BC with E as midpoint. Point A on semicircle BAC. Ray AE from A to centre E falls between rays AB and AC because E lies between B and C on segment BC -- this validates the angle decomposition in Step 4. For the greater/lesser segment part: chord AC divides circle into major arc (containing B, the greater segment) and minor arc (containing D, the lesser segment). The centre lies in the greater segment. Inscribed angle at B subtends minor arc, inscribed angle at D subtends major arc. In Step 21, a diameter AD is drawn from A through the centre; this diameter passes through the greater segment's interior since it contains the centre. All point positions are mutually consistent throughout the proof.",
+  "pass_reason": "All spatial claims (point positions, angle decompositions, arc classifications) are mutually consistent. The Step 4 angle decomposition (angle BAC = angle EAB + angle EAC) is valid because E lies between B and C on the diameter, so ray AE falls between rays AB and AC. The arc and inscribed angle reasoning in Steps 18-19 is spatially sound. The issues in Steps 20-22 (claiming angle DAC is a right angle by the semicircle theorem when A is an endpoint of the diameter, not a point on the arc) are theorem misapplications (logical errors in citation), not spatial configuration contradictions -- the underlying point positions remain consistent."
+}

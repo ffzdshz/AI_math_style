@@ -1,0 +1,67 @@
+{
+  "proposition": "3.25",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "B is a point on the arc of segment ABC; AC is the base chord of the segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is the midpoint of segment AC, lying on AC with AD = DC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DB is perpendicular to AC; B is at the intersection of the perpendicular from D with the arc",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Case (i): angle ABD = angle BAD implies BD = DA = DC; E coincides with D on AC (semicircle case)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Case (ii): angle ABD > angle BAD; E lies on line BD between D and B (same side of AC as B)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangles ADE and CDE share vertex D on AC and vertex E above AC; angles ADE and CDE are both right angles",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Case (iii): angle ABD < angle BAD; E lies on line BD produced beyond D, on the opposite side of AC from B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Triangles ADE and CDE share vertex D on AC and vertex E below AC; angles ADE and CDE are both right angles",
+      "type": "triangle_configuration"
+    }
+  ],
+  "configuration_map": "Points A and C are endpoints of the base chord. D is the midpoint of AC on the chord. B is above AC on the arc, at the intersection of the perpendicular from D with the arc. Line BD is perpendicular to AC. In right triangle ABD (right angle at D), angle ABD + angle BAD = 90 degrees. Point E is determined by constructing angle BAE = angle ABD at A, with E on line BD. Using coordinates A=(0,0), C=(2,0), D=(1,0), B=(1,h): when h < 1 (Case ii, angle ABD > angle BAD), the angle construction forces E below AC at (1, -0.75) for h=0.5 -- E is on BD extended beyond D, not between D and B. When h > 1 (Case iii, angle ABD < angle BAD), the angle construction forces E between D and B at (1, 0.75) for h=2 -- E is between D and B, not beyond D. The AI proof has the positions of E in Cases (ii) and (iii) swapped relative to what the geometry requires.",
+  "contradictory_steps": [
+    "Step 7",
+    "Step 10"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 7",
+    "claim": "In Case (ii) where angle ABD > angle BAD, E lies on line BD between D and B (on the same side of AC as B)",
+    "required_by": "Determines the geometric configuration for the SAS congruence in Step 8 and establishes E as center inside the arc"
+  },
+  "spatial_claim_2": {
+    "step": "Step 10",
+    "claim": "In Case (iii) where angle ABD < angle BAD, E lies on line BD produced beyond D on the opposite side of AC from B",
+    "required_by": "Determines the geometric configuration for the SAS congruence in Step 11 and establishes E as center outside the arc"
+  },
+  "contradiction": "The positions of E in Cases (ii) and (iii) are swapped. Coordinate verification: with A=(0,0), C=(2,0), D=(1,0), B=(1,h), in Case (ii) (h<1, angle ABD > angle BAD), constructing angle BAE = angle ABD at A forces the ray AE below AC, placing E on BD extended beyond D at (1,-0.75) for h=0.5 -- not between D and B as claimed. In Case (iii) (h>1, angle ABD < angle BAD), the construction places E between D and B at (1,0.75) for h=2 -- not beyond D as claimed. Heath confirms: Case (ii) has center outside the segment (less than semicircle), Case (iii) has center within the segment (greater than semicircle). The AI proof reverses these positions.",
+  "fixable": true,
+  "fix_note": "Swap the position descriptions between Cases (ii) and (iii). In Case (ii) (angle ABD > angle BAD, segment less than semicircle), E should be on BD produced beyond D on the opposite side of AC from B. In Case (iii) (angle ABD < angle BAD, segment greater than semicircle), E should be between D and B within the segment. The downstream SAS congruence arguments are valid regardless of E's position because DE is perpendicular to AC in either direction, so the proof conclusions are correct despite the spatial error."
+}

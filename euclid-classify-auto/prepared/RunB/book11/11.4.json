@@ -1,0 +1,36 @@
+{
+  "proposition": "11.4",
+  "book": 11,
+  "statement": "If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it will also be at right angles to the plane through them.",
+  "heath_proof": "For let a straight line EF be set up at right angles to the two straight lines AB, CD, which cut one another at the point E, from E; I say that EF is also at right angles to the plane through AB, CD. For let AE, EB, CE, ED be cut off equal to one another, and let any straight line GEH be drawn across through E, at random; let AD, CB be joined, and further let FA, FG, FD, FC, FH, FB be joined from the point F taken at random <on EF >. Now, since the two straight lines AE, ED are equal to the two straight lines CE, EB, and contain equal angles, [I. 15] therefore the base AD is equal to the base CB, and the triangle AED will be equal to the triangle CEB; [I. 4] so that the angle DAE is also equal to the angle EBC. But the angle AEG is also equal to the angle BEH; [I. 15] therefore AGE, BEH are two triangles which have two angles equal to two angles respectively, and one side equal to one side, namely that adjacent to the equal angles, that is to say, AE to EB; therefore they will also have the remaining sides equal to the remaining sides. [I. 26] Therefore GE is equal to EH, and AG to BH. And, since AE is equal to EB, while FE is common and at right angles, therefore the base FA is equal to the base FB. [I. 4] For the same reason FC is also equal to FD. And, since AD is equal to CB, and FA is also equal to FB, the two sides FA, AD are equal to the two sides FB, BC respectively; and the base FD was proved equal to the base FC; therefore the angle FAD is also equal to the angle FBC. [I. 8] And since, again, AG was proved equal to BH, and further FA also equal to FB, the two sides FA, AG are equal to the two sides FB, BH. And the angle FAG was proved equal to the angle FBH; therefore the base FG is equal to the base FH. [I. 4] Now since, again, GE was proved equal to EH, and EF is common, the two sides GE, EF are equal to the two sides HE, EF; and the base FG is equal to the base FH; therefore the angle GEF is equal to the angle HEF. [I. 8] Therefore each of the angles GEF, HEF is right. Therefore FE is at right angles to GH drawn at random through E. Similarly we can prove that FE will also make right angles with all the straight lines which meet it and are in the plane of reference. But a straight line is at right angles to a plane when it makes right angles with all the straight lines which meet it and are in that same plane; [XI. Def. 3] therefore FE is at right angles to the plane of reference. But the plane of reference is the plane through the straight lines AB, CD. Therefore FE is at right angles to the plane through AB, CD.",
+  "ai_proof_text": "11.4\n**Statement:** If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it will also be at right angles to the plane through them.\n\n**Step 1.** Let the straight line EF be set up at right angles to two straight lines AB and CD, which cut one another at the point E. We must prove that EF is at right angles to the plane through AB and CD. [Setup from hypothesis; D11.3]\n\n**Step 2.** Cut off EA, EB, EC, ED all equal to one another from the four segments of AB and CD at E, using Proposition 1.3. [1.3]\n\n**Step 3.** Through E, draw any straight line GH in the plane through AB and CD, by Postulate P1. [P1]\n\n**Step 4.** Join the straight lines AD and CB by Postulate P1. [P1]\n\n**Step 5.** Join FA, FG, FD, FC, FH, and FB by Postulate P1. [P1]\n\n**Step 6.** Since EA equals EB and ED equals EC (by construction in Step 2), and the angle AED equals the angle BEC (for they are vertical angles by Proposition 1.15), triangle AED is congruent to triangle BEC by Proposition 1.4. Therefore AD equals BC and angle DAE equals angle EBC. [1.15, 1.4, CN1]\n\n**Step 7.** Since the angle AEG equals the angle BEH (for they are vertical angles by Proposition 1.15), and EA equals EB (by construction), and angle DAE equals angle EBC (from Step 6), it follows by considering triangles AEG and BEH that angle AGE equals angle BHE and EG equals EH by Proposition 1.26 (AAS congruence: angle GAE equals angle HBE, angle AEG equals angle BEH, and EA equals EB). Also AG equals BH. [1.15, 1.26]\n\n**Step 8.** Since EA equals EB, and EF is common, and the angle AEF is a right angle and the angle BEF is a right angle (by hypothesis), the angle AEF equals the angle BEF by Postulate P4. Therefore triangle AEF is congruent to triangle BEF by Proposition 1.4. Hence FA equals FB. [P4, 1.4]\n\n**Step 9.** Since ED equals EC, and EF is common, and the angle DEF is a right angle and the angle CEF is a right angle (by hypothesis), the angle DEF equals the angle CEF by Postulate P4. Therefore triangle DEF is congruent to triangle CEF by Proposition 1.4. Hence FD equals FC. [P4, 1.4]\n\n**Step 10.** Now in triangles FAD and FBC: AD equals BC (from Step 6), FA equals FB (from Step 8), and FD equals FC (from Step 9). Therefore triangle FAD is congruent to triangle FBC by Proposition 1.8. Hence the angle FAD equals the angle FBC. [1.8]\n\n**Step 11.** Now in triangles FAG and FBH: FA equals FB (from Step 8), AG equals BH (from Step 7), and the angle FAG equals the angle FBH (from Step 10). Therefore triangle FAG is congruent to triangle FBH by Proposition 1.4. Hence FG equals FH. [1.4]\n\n**Step 12.** Since EG equals EH (from Step 7), EF is common, and FG equals FH (from Step 11), triangle FEG is congruent to triangle FEH by Proposition 1.8. Hence the angle FEG equals the angle FEH. [1.8]\n\n**Step 13.** Since the angle FEG equals the angle FEH, and these are adjacent angles formed by EF standing on GH, and they are equal to one another, each of them is a right angle by Definition D1.10. Therefore EF is at right angles to GH. [D1.10]\n\n**Step 14.** Since GH was drawn as an arbitrary straight line through E in the plane through AB and CD, EF makes right angles with every straight line which meets it and lies in that plane. Therefore, by Definition D11.3, EF is at right angles to the plane through AB and CD. [D11.3]\n\n**USED:** 1.15, 1.26, 1.3, 1.4, 1.8, CN1, D1.10, D11.3, P1, P4\n**Human refs (from References field):** 1.15, 1.26, 1.4, 1.8, D11.3\n**Jaccard:** 0.500 — AI adds ['1.3', 'CN1', 'D1.10', 'P1', 'P4']",
+  "ai_used": [
+    "1.15",
+    "1.26",
+    "1.3",
+    "1.4",
+    "1.8",
+    "CN1",
+    "D1.10",
+    "D11.3",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.15",
+    "1.26",
+    "1.4",
+    "1.8",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.3",
+    "CN1",
+    "D1.10",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let the straight line EF be set up at right angles to two straight lines AB and CD, which cut one another at the point E. We must prove that EF is at right angles to the plane through AB a"
+}

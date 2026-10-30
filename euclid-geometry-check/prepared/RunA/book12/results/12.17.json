@@ -1,0 +1,66 @@
+{
+  "proposition": "12.17",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two concentric spheres with common center O; a plane through diameter d cuts both in great circles ABCD (greater) and EFGH (lesser), both centered at O with diameter along AC",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diameter BD drawn perpendicular to AC through center O, dividing the great circle into four quadrants",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Equilateral polygon with even sides inscribed in circle ABCD not touching circle EFGH; vertices on semicircle BAD are B, K, L, M, A; symmetric about AC",
+      "type": "circle_inside_outside"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Perpendicular OS from center O to polygon side KL satisfies OS > OE (the lesser sphere radius)",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Multiple planes through axis AC divide the full angle around AC into equal parts corresponding to the polygon angular subdivisions",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The same equilateral polygon is inscribed in each great circle through AC, with vertices at A and C on the sphere",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Near each pole A, vertices adjacent to A in each great-circle polygon form a regular polygon in a plane perpendicular to AC",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "All vertices of the polyhedron lie on the surface of the greater sphere",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Faces in great-circle planes are sides of the inscribed polygon; perpendicular from O to each exceeds OE",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 14",
+      "claim": "For inter-plane faces, the perpendicular from O to the face plane is at least as great as the perpendicular from O to line KL",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 16",
+      "claim": "For any face plane, OT^2 + r^2 = R^2 where OT is perpendicular distance from O, and OT >= OS > OE",
+      "type": "distance_comparison"
+    }
+  ],
+  "configuration_map": "O: Common center of both spheres, center of all great circles. Fixed at origin throughout all steps (Steps 1-17). A, C: Poles of the axis, diametrically opposite on both spheres. Serve as endpoints of the axis of symmetry, vertices of every polygon copy, and apices of pyramidal caps (Steps 1, 2, 5, 6, 8). B, D: Endpoints of a diameter perpendicular to AC in the initial great-circle plane (Step 2). K, L, M: Polygon vertices on semicircle BAD between B and A, on the greater circle (Step 3). Copies of these vertices appear at corresponding angular positions in all other great-circle planes (Steps 6-9). E (and OE): Representative point on the lesser circle defining the lesser sphere radius. OE < OS maintained throughout (Steps 4, 16, 17). S: Foot of perpendicular from O to polygon side KL within the great-circle plane, with OS > OE (Step 4). Used as the critical threshold distance. Vertex rings: At each height along axis AC, corresponding vertices from different great-circle planes form regular polygons in planes perpendicular to AC (Step 8). All ring vertices lie on the greater sphere. Polyhedron faces: Triangular faces near poles A and C (pyramidal caps), quadrilateral faces between vertex rings. All faces have vertices on the greater sphere surface.",
+  "pass_reason": "All spatial claims in the AI proof are mutually consistent. The construction of the polyhedron (polygon replicated in multiple great-circle planes through axis AC, vertices connected between adjacent planes) is geometrically valid with all vertices on the greater sphere. The center O is consistently positioned throughout. The key inside/outside relationship (lesser sphere inside greater sphere, polygon not touching inner circle) is maintained without contradiction. There are no angle decomposition claims that could introduce hidden contradictions. Steps 14-16 contain logical gaps in the argument that inter-plane face distances exceed OE (the reasoning is hand-wavy rather than rigorous), but these are proof completeness issues, not spatial configuration contradictions -- no two spatial claims about the same geometric element conflict with each other."
+}

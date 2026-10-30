@@ -1,0 +1,13 @@
+{
+  "proposition": "3.15",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals fundamentally different backbones in both parts of the proof. For part (i), Heath constructs an auxiliary chord MN equal to BC via III.14, then applies I.20 to triangle MEN to show AD > MN = BC; the AI instead applies I.20 directly to triangle EAD and substitutes radii to get BC > AD without needing III.14. For part (ii), Heath uses I.24 (the hinge theorem) to compare bases MN and FG via unequal included angles; the AI uses I.47 (Pythagorean theorem) on right triangles formed by radii, perpendicular distances, and half-chords, comparing squares to deduce the nearer chord is greater. The heath_only citations (1.24, 3.14) are not contained within the proof trees of the AI's citations — rather, the AI employs an entirely different metric/algebraic method (I.47, III.3) versus Heath's purely synthetic geometric approach (I.24, III.14). Both proofs are logically complete, establishing the same conclusion by genuinely different intermediate reasoning, so this is classified as D.",
+  "jaccard": 0.154,
+  "ai_citations": "1.20|1.47|3.3|CN1|CN2|CN4|D1.15|D1.17|D3.4|D3.5|P1",
+  "heath_citations": "1.20|1.24|3.14|D3.5",
+  "ai_only": "1.47|3.3|CN1|CN2|CN4|D1.15|D1.17|D3.4|P1",
+  "heath_only": "1.24|3.14",
+  "audit_record": ""
+}

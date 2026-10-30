@@ -1,0 +1,26 @@
+{
+  "proposition": "6.30",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is an interior point of AB, lying strictly between A and B on the line segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "rect(AB, CB) = sq(AC) — area equality from 2.11 construction",
+      "type": "area_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC < AB since AC is a proper part of AB (C between A and B)",
+      "type": "magnitude_comparison"
+    }
+  ],
+  "configuration_map": "Three collinear points A-C-B on a single line segment. Point C is constructed by Proposition 2.11 as an interior point of segment AB such that the rectangle contained by AB and CB equals the square on AC. No triangles, circles, or off-line points are involved. The entire configuration is one-dimensional.",
+  "pass_reason": "The proof's spatial content is minimal — a single collinear point C between A and B on a line segment. All subsequent reasoning (proportion from 6.17 converse, magnitude comparison from 5.14) is algebraic/proportional and fully consistent with C lying between A and B. No angle decompositions, no inside/outside claims, no ray orderings. No pair of spatial claims contradicts any other."
+}

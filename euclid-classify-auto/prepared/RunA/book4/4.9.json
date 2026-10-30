@@ -1,0 +1,42 @@
+{
+  "proposition": "4.9",
+  "book": 4,
+  "statement": "About a given square to circumscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to circumscribe a circle about the square ABCD. For let AC, BD be joined, and let them cut one another at E. Then, since DA is equal to AB, and AC is common, therefore the two sides DA, AC are equal to the two sides BA, AC; and the base DC is equal to the base BC; therefore the angle DAC is equal to the angle BAC. [I. 8]  Therefore the angle DAB is bisected by AC. Similarly we can prove that each of the angles ABC, BCD, CDA is bisected by the straight lines AC, DB. Now, since the angle DAB is equal to the angle ABC, and the angle EAB is half the angle DAB, and the angle EBA half the angle ABC, therefore the angle EAB is also equal to the angle EBA; so that the side EA is also equal to EB. [I. 6] Similarly we can prove that each of the straight lines EA, EB is equal to each of the straight lines EC, ED. Therefore the four straight lines EA, EB, EC, ED are equal to one another. Therefore the circle described with centre E and distance one of the straight lines EA, EB, EC, ED will pass also through the remaining points; and it will have been circumscribed about the square ABCD. Let it be circumscribed, as ABCD. Therefore about the given square a circle has been circumscribed.",
+  "ai_proof_text": "4.9\n**Statement:** About a given square to circumscribe a circle.\n\n**Step 1.** Let ABCD be the given square. By D1.22, all four sides are equal (AB = BC = CD = DA) and all four angles are right angles.\n\n**Step 2.** Draw diagonals AC and BD by P1. Let E be the point at which they intersect.\n\n**Step 3.** Since angle DAB and angle ABC are both right angles (Step 1), the co-interior angles formed by lines DA and CB with transversal AB sum to two right angles. By 1.28, DA is parallel to CB. Similarly, since angle ABC and angle BCD are both right angles, the co-interior angles formed by lines AB and DC with transversal BC sum to two right angles, so AB is parallel to DC by 1.28.\n\n**Step 4.** Since AB is parallel to DC and BD is a transversal, angle ABD = angle BDC as alternate interior angles by 1.29. That is, angle ABE = angle CDE. Similarly, since AB is parallel to DC and AC is a transversal, angle BAC = angle DCA by 1.29. That is, angle BAE = angle DCE.\n\n**Step 5.** In triangles AEB and CED: angle BAE = angle DCE (Step 4), AB = CD (D1.22), and angle ABE = angle CDE (Step 4). By 1.26 (ASA), triangle AEB is congruent to triangle CED. Therefore AE = CE and BE = DE.\n\n**Step 6.** In triangles AEB and AED: AB = AD (D1.22), BE = DE (Step 5), and AE is common. By 1.8 (SSS), triangle AEB is congruent to triangle AED. Therefore angle AEB = angle AED.\n\n**Step 7.** Since E lies on line BD, angles AEB and AED together make the angles on one side of line BD at point E. By 1.13, angle AEB + angle AED equals two right angles. Since angle AEB = angle AED (Step 6), each equals a right angle.\n\n**Step 8.** From the congruence in Step 6, angle EAB = angle EAD. Since angle EAB + angle EAD = angle BAD = a right angle (D1.22), and angle EAB = angle EAD, we have angle EAB + angle EAB equals a right angle, by CN1.\n\n**Step 9.** In triangle AEB, angle AEB is a right angle (Step 7). By 1.32, the three angles of triangle AEB equal two right angles, so angle EAB + angle ABE = two right angles minus one right angle = one right angle. That is, angle EAB + angle ABE equals a right angle.\n\n**Step 10.** From Step 8, angle EAB + angle EAB equals a right angle. From Step 9, angle EAB + angle ABE equals a right angle. By CN1, angle ABE = angle EAB.\n\n**Step 11.** In triangle AEB, since angle EAB = angle ABE (Step 10), the side opposite angle ABE equals the side opposite angle EAB. By 1.6, AE = BE.\n\n**Step 12.** From Step 5, AE = CE and BE = DE. From Step 11, AE = BE. Therefore EA = EB = EC = ED, so all four vertices of the square are equidistant from E.\n\n**Step 13.** With center E and radius EA, describe a circle ABCD by P3. Since EA = EB = EC = ED (Step 12), this circle passes through all four vertices A, B, C, D. By D1.15, all straight lines from E to the circumference are equal, confirming A, B, C, D lie on the circle.\n\n**Step 14.** Since the circumference of the circle passes through each angle of the square ABCD, the circle is circumscribed about the square by D4.6.\n\nTherefore, about the given square ABCD, a circle has been circumscribed, which is what was required to do.\n\n**USED:** 1.13, 1.26, 1.28, 1.29, 1.32, 1.6, 1.8, CN1, D1.15, D1.22, D4.6, P1, P3\n**Human refs (from References field):** 1.6, 1.8\n**Jaccard:** 0.154 — AI adds ['1.13', '1.26', '1.28', '1.29', '1.32', 'CN1', 'D1.15', 'D1.22', 'D4.6', 'P1', 'P3']",
+  "ai_used": [
+    "1.13",
+    "1.26",
+    "1.28",
+    "1.29",
+    "1.32",
+    "1.6",
+    "1.8",
+    "CN1",
+    "D1.15",
+    "D1.22",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6",
+    "1.8"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.26",
+    "1.28",
+    "1.29",
+    "1.32",
+    "CN1",
+    "D1.15",
+    "D1.22",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.154,
+  "proof_summary": "**Step 1.** Let ABCD be the given square. By D1.22, all four sides are equal (AB = BC = CD = DA) and all four angles are right angles.  **Step 2.** Draw diagonals AC and BD by P1. Let E be the point a"
+}

@@ -1,0 +1,37 @@
+{
+  "proposition": "8.23",
+  "book": 8,
+  "statement": "If four numbers be in continued proportion, and the first be cube, the fourth will also be cube.",
+  "heath_proof": "Let A, B, C, D be four numbers in continued proportion, and let A be cube; I say that D is also cube. For, since between A, D there are two mean proportional numbers B, C, therefore A, D are similar solid numbers. [VIII. 21] But A is cube; therefore D is also cube.",
+  "ai_proof_text": "8.23\n**Statement:** If four numbers be in continued proportion, and the first be cube, the fourth will also be cube.\n\n**Step 1.** Let A, B, C, D be four numbers in continued proportion, so that A : B = B : C = C : D, and let A be a cube number.\n\n**Step 2.** Since A is a cube, there exists a number a such that A = a * a * a [D7.19].\n\n**Step 3.** By 7.33, reduce the ratio A : B to least terms, and let the ratio in least terms be e : f. Then A : B = e : f, where e and f are prime to one another [7.22].\n\n**Step 4.** By 8.2, we can find the least four numbers in continued proportion having the ratio e : f. These least four numbers are e^3, e^2 * f, e * f^2, f^3 [8.2]. Call them E, F, G, H respectively.\n\n**Step 5.** Since A, B, C, D are four numbers in continued proportion with the same ratio as E, F, G, H (which are the least such), and E, F, G, H are the least of those having the same ratio with them, E measures A, that is, e^3 measures A [7.20]. Let A = k * e^3 for some number k. Likewise D = k * f^3.\n\n**Step 6.** Now A = a^3 and A = k * e^3, so a^3 = k * e^3. Therefore e^3 measures a^3 [from the equality].\n\n**Step 7.** Since e^3 is a cube and a^3 is a cube, and e^3 measures a^3, by 8.15 the side e measures the side a. Let a = e * m for some number m.\n\n**Step 8.** Then A = a^3 = (e * m)^3 = e^3 * m^3 [by 7.17, 7.18 applied repeatedly]. Since A = k * e^3, we have k * e^3 = m^3 * e^3, whence k = m^3 [CN3, dividing both sides by e^3, equivalently by 7.17 and the uniqueness of the product].\n\n**Step 9.** Therefore D = k * f^3 = m^3 * f^3. Now m * f is a number; and m^3 * f^3 = (m * f) * (m * f) * (m * f) [by 7.17, 7.18 applied repeatedly]. Thus D is equal multiplied by equal and again by equal, so D is a cube [D7.19].\n\n**Step 10.** Therefore, if four numbers be in continued proportion and the first be cube, the fourth will also be cube. Q.E.D.\n\n**USED:** 7.17, 7.18, 7.20, 7.22, 7.33, 8.15, 8.2, CN3, D7.19\n**Human refs (from References field):** 8.21\n**Jaccard:** 0.000 — AI adds ['7.17', '7.18', '7.20', '7.22', '7.33', '8.15', '8.2', 'CN3', 'D7.19']; Human adds ['8.21']",
+  "ai_used": [
+    "7.17",
+    "7.18",
+    "7.20",
+    "7.22",
+    "7.33",
+    "8.15",
+    "8.2",
+    "CN3",
+    "D7.19"
+  ],
+  "heath_refs": [
+    "8.21"
+  ],
+  "ai_only": [
+    "7.17",
+    "7.18",
+    "7.20",
+    "7.22",
+    "7.33",
+    "8.15",
+    "8.2",
+    "CN3",
+    "D7.19"
+  ],
+  "heath_only": [
+    "8.21"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A, B, C, D be four numbers in continued proportion, so that A : B = B : C = C : D, and let A be a cube number.  **Step 2.** Since A is a cube, there exists a number a such that A = a *"
+}

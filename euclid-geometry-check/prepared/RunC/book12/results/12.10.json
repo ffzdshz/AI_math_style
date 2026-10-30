@@ -1,0 +1,56 @@
+{
+  "proposition": "12.10",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cone K and cylinder C share the same circular base (center E) and the same height h. Cone apex is directly above E at height h.",
+      "type": "containment/setup"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Square inscribed in the base circle; square is greater than half the circle. Successive arc bisections produce inscribed polygons where each new triangle exceeds half its circular segment.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Inscribed polygon Q in the circle yields prism Pr(Q) inside cylinder C, with C - Pr(Q) < S.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Polygon Q is divided into triangles from center E; E is interior to Q. Each triangular prism has height h equal to the cylinder height.",
+      "type": "decomposition"
+    },
+    {
+      "step": "Step 5-6",
+      "claim": "Each triangular prism decomposes into three equal pyramids by 12.7. The pyramid on each triangle with apex at cone vertex (E,h) has height h, so Prism(T,h) = 3 * Pyramid(T,h). Summing: Pr(Q) = 3 * Pyr(Q).",
+      "type": "volume decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Pyr(Q) is contained within cone K because Q is inscribed in the base circle and the pyramid shares the cone's apex. Hence Pyr(Q) < K.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Circumscribed polygon Q' about the base circle. Excess of Q' over circle, times height, is less than S.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Cylinder C is contained within prism Pr(Q') since Q' contains the base circle. Cone K is contained within pyramid Pyr(Q') since Q' contains the base circle and they share the same apex. Hence Pyr(Q') > K.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Pr(Q') = 3 * Pyr(Q') by 12.7 applied to constituent triangles of Q' (formed from center E). E is interior to Q'. Each triangular prism decomposes into three equal pyramids, pyramid height equals prism height h.",
+      "type": "volume decomposition"
+    }
+  ],
+  "configuration_map": "The configuration consists of a cone K and cylinder C sharing a circular base (center E) and height h. The cone apex is at point (E, h) directly above center E. In Case 1, an inscribed polygon Q lies inside the circle, so the prism Pr(Q) lies inside C and the pyramid Pyr(Q) (apex at cone vertex) lies inside K. In Case 2, a circumscribed polygon Q' contains the circle, so C lies inside Pr(Q') and K lies inside Pyr(Q'). In both cases, Q (or Q') is decomposed into triangles from center E, which is interior to both Q and Q'. Each triangular prism of height h decomposes by 12.7 into three pyramids, and the pyramid with the same triangular base and apex at (E, h) has the same height h as the prism. All containment relations are mutually consistent throughout the proof.",
+  "pass_reason": "All spatial claims are straightforward containment relations (inscribed/circumscribed polygons, prisms inside/outside cylinders, pyramids inside/outside cones) that are mutually consistent. The 12.7 volume decomposition (prism = 3 * pyramid) is correctly applied in both the inscribed and circumscribed cases, with the pyramid height matching the prism height in each case. No angle decompositions, no interior/exterior point ambiguities, and no ray-ordering claims are present. The proof uses a standard double exhaustion argument with no spatial configuration contradictions."
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "6.4",
+  "run": "RunB",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G is placed on ray BA such that BG = DE; H is placed on ray BC such that BH = EF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Side BH falls along BC and side BG falls along BA, confirming the placement within triangle ABC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Line BA is a transversal falling on lines GH and AC; angle BGH (at G) equals angle BAC (at A) as corresponding angles, implying GH parallel to AC by I.28",
+      "type": "parallel_line"
+    },
+    {
+      "step": "Step 5",
+      "claim": "G lies on side BA (between B and A) and H lies on side BC (between B and C); GH is parallel to AC and cuts both sides internally",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "G' is placed on ray AB such that AG' = DE; H' is placed on ray AC such that AH' = DF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Line AB is a transversal falling on lines G'H' and BC; angle AG'H' (at G') equals angle ABC (at B) as corresponding angles, implying G'H' parallel to BC by I.28",
+      "type": "parallel_line"
+    },
+    {
+      "step": "Step 9",
+      "claim": "G' lies on side AB (between A and B) and H' lies on side AC (between A and C); G'H' is parallel to BC and cuts both sides internally",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "First placement (Steps 2-6): Triangle ABC is the reference. Point G lies on segment BA (between B and A) with BG = DE. Point H lies on segment BC (between B and C) with BH = EF. Triangle BGH is congruent to DEF. Line GH is parallel to AC, cutting both sides of triangle BAC internally. This enables application of VI.2 for proportionality BG:GA = BH:HC.\n\nSecond placement (Steps 7-10): Same triangle ABC. Point G' lies on segment AB (between A and B) with AG' = DE. Point H' lies on segment AC (between A and C) with AH' = DF. Triangle AG'H' is congruent to DEF. Line G'H' is parallel to BC, cutting both sides of triangle ABC internally. This enables application of VI.2 for proportionality AG':G'B = AH':H'C.\n\nThe two placements are independent constructions on the same triangle ABC, each establishing one proportional relationship. Both implicitly assume triangle DEF has sides no larger than corresponding sides of ABC (so constructed points fall between vertices). No spatial conflict arises between the two constructions.",
+  "pass_reason": "All spatial claims are mutually consistent. The two superposition constructions (at vertex B and vertex A) are independent and each produces a valid parallel line cutting the sides of triangle ABC internally. The transversal arguments for I.28 are geometrically sound (the transversal properly intersects both the parallel candidate and the base side). Applications of VI.2 are valid since the parallel lines cut the sides internally. No angle decomposition contradictions or inside/outside conflicts exist."
+}

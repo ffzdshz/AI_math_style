@@ -1,0 +1,56 @@
+{
+  "proposition": "12.16",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is the greater circle and EFGH is the lesser circle, both with the same centre K (concentric circles)",
+      "type": "circle_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diameter AC passes through K and cuts lesser circle at E (near A, between K and A) and F (near C, between K and C)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Diameter BD perpendicular to AC; ABCD forms an inscribed square with equally spaced vertices on the greater circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Perpendicular from K to side AB meets AB at midpoint M; KM is the perpendicular distance from centre to side",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Arc AB bisected at N on the greater circle; chord AN subtends a smaller arc than AB; perpendicular from K to AN exceeds KM",
+      "type": "distance_ordering"
+    },
+    {
+      "step": "Step 9",
+      "claim": "N is midpoint of arc AB; radius KN meets chord AB at P; perpendicular from K to chord AN exceeds KP; P claimed to be midpoint of segment MA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Arc AN = (1/4)(1/2^n) of full circumference; circle divided into 4*2^n equal arcs",
+      "type": "arc_division"
+    },
+    {
+      "step": "Step 14",
+      "claim": "All sides subtend equal arcs so perpendicular distances from K to each side are equal",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Perpendicular distance from K to every side exceeds KE (radius of lesser circle); no side touches the lesser circle",
+      "type": "circle_inside_outside"
+    }
+  ],
+  "configuration_map": "K: Center of both circles, fixed throughout all steps. A, C: Endpoints of a diameter of the greater circle (radius KA = R). E, F: Points where diameter AC intersects the lesser circle; E on segment KA, F on segment KC (radius KE = r < R). B, D: Endpoints of a second diameter perpendicular to AC; together with A, C they form inscribed square ABCD. M: Foot of perpendicular from K to chord AB; equivalently, midpoint of AB. Lies inside the greater circle at distance KM = R/sqrt(2) from K. N: Midpoint of arc AB on the greater circle. The radius KN is perpendicular to chord AB and passes through M, so the intersection P of KN with AB is actually M (P = M). After repeated bisections, N represents increasingly small sub-arcs, with corresponding chords increasingly far from K. The polygon is formed by replicating the final sub-arc around the full circle, producing 4*2^n equal sides all equidistant from K.",
+  "pass_reason": "All spatial claims are mutually consistent. The concentric circle configuration, inscribed square, arc bisection process, and perpendicular distance arguments are geometrically sound and compatible across all steps. No angle decompositions, no interior/exterior point contradictions, and no ray-ordering issues are present. The only notable issue (Step 9 claiming P is the midpoint of segment MA when in fact P = M) is a logical error within a single step's justification, not a spatial configuration contradiction between steps; the overall conclusion via Proposition 10.1 remains valid."
+}

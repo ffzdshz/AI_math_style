@@ -1,0 +1,91 @@
+{
+  "proposition": "4.12",
+  "run": "Fable",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A, B, C, D, E are vertices of a regular inscribed pentagon in order on the circumference, with AB = BC = CD = DE = EA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "F is the center of the circle ABCDE",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Tangent lines at A, B, C, D, E are perpendicular to the radii FA, FB, FC, FD, FE respectively",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "G is intersection of tangents at E and A; H at A and B; K at B and C; L at C and D; M at D and E — all outside the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A lies on GH between G and H; B on HK; C on KL; D on LM; E on MG",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle KBC (tangent HK at B with chord BC) equals inscribed angle BDC in the alternate segment containing D",
+      "type": "tangent_chord_angle"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle KCB (tangent KL at C with chord CB) equals inscribed angle BDC in the alternate segment containing D",
+      "type": "tangent_chord_angle"
+    },
+    {
+      "step": "Step 3",
+      "claim": "KB = KC (triangle KBC is isosceles)",
+      "type": "equal_segments"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle LCD (tangent KL at C with chord CD) equals inscribed angle CBD in the alternate segment containing B",
+      "type": "tangent_chord_angle"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle LDC (tangent LM at D with chord DC) equals inscribed angle CBD in the alternate segment containing B",
+      "type": "tangent_chord_angle"
+    },
+    {
+      "step": "Step 4",
+      "claim": "LC = LD (triangle LCD is isosceles)",
+      "type": "equal_segments"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In triangle BCD with BC = CD, angle CBD = angle CDB",
+      "type": "isosceles_triangle"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangles KBC and LCD are congruent by ASA: KB = LC, KC = LD, angle BKC = angle CLD",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "All ten half-segments equal: HA = HB = KB = KC = LC = LD = MD = ME = GE = GA",
+      "type": "equal_segments"
+    },
+    {
+      "step": "Step 7",
+      "claim": "All five vertex angles equal: angle AHB = angle BKC = angle CLD = angle DME = angle EGA",
+      "type": "equal_angles"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Each side is the sum of two equal half-segments (e.g., GH = GA + AH), so all five sides are equal",
+      "type": "segment_composition"
+    }
+  ],
+  "configuration_map": "Circle with center F and inscribed regular pentagon ABCDE (vertices in order on circumference). At each vertex, a tangent line perpendicular to the radius is drawn. Consecutive tangent lines meet at points G (tangents at E,A), H (tangents at A,B), K (tangents at B,C), L (tangents at C,D), M (tangents at D,E), all outside the circle. Each tangent point lies between the two outer pentagon vertices on that side (A between G and H, B between H and K, etc.). The tangent-chord angle theorem (III.32) is applied at each tangent point to show that the two half-segments meeting at each tangent point are equal (e.g., KB = KC at B). Congruence of adjacent tangent triangles (e.g., KBC and LCD) via ASA (I.26) then chains all ten half-segments into equality. No point is placed inside any triangle; no angle is decomposed as a sum of sub-angles; all auxiliary points remain outside the circle.",
+  "pass_reason": "All spatial claims are mutually consistent. The tangent-chord angle theorem (III.32) is correctly applied at each vertex: the alternate segments are correctly identified (the segment on the far side of the chord from the external tangent intersection point, containing the appropriate inscribed pentagon vertices). Equal arcs from the regular inscribed pentagon correctly yield equal inscribed angles via III.27/III.21. The ASA congruences chain correctly to establish all ten half-segments equal. No angle decomposition, betweenness, or inside/outside contradictions exist. The proof takes a different path from Heath (tangent-chord angles instead of Pythagorean theorem on radii and tangent segments) but the spatial configuration is sound throughout."
+}

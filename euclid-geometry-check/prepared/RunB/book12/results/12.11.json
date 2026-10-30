@@ -1,0 +1,51 @@
+{
+  "proposition": "12.11",
+  "run": "RunB",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two cones and cylinders share the same height h with circular bases B1 and B2",
+      "type": "solid geometry setup"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Polygon inscribed in circle B2 by bisecting arcs and joining chords (polygon contained within circle)",
+      "type": "inscribed figure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Similar polygon P1 inscribed in circle B1; polygon P2 inscribed in circle B2",
+      "type": "inscribed figure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Prism1 (height h on P1) is inside Cylinder1; Prism2 (height h on P2) is inside Cylinder2",
+      "type": "containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Each polygonal prism decomposed into triangular prisms by diagonals from one vertex",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Each triangular prism decomposed into three pyramids of equal volume (same height h)",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Prism1 contained within Cylinder1 (Prism1 < Cylinder1) since P1 strictly inside B1",
+      "type": "containment"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Prism2 contained within Cylinder2 and exceeds S by construction (S < Prism2)",
+      "type": "containment"
+    }
+  ],
+  "configuration_map": "B1, B2: circular bases of the two cylinders/cones. P1: polygon inscribed in B1 (all vertices on circle B1, polygon area strictly less than B1). P2: polygon inscribed in B2 (all vertices on circle B2, polygon area strictly less than B2). P1 and P2 are similar polygons. Prism1: right prism of height h on base P1, entirely contained within Cylinder1 (since P1 is contained in B1 and both have height h). Prism2: right prism of height h on base P2, entirely contained within Cylinder2. All solids share the same height h. The decomposition of prisms into triangular prisms and then into pyramids is purely internal subdivision with no change to containment relationships.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof is primarily a proportionality argument using the method of exhaustion. The geometric claims (polygons inscribed in circles, prisms contained in cylinders, decomposition of prisms into pyramids) are all standard, non-conflicting configurations. No point is placed in contradictory positions across steps, no angle decomposition issues arise, and no containment or betweenness claims conflict with each other."
+}

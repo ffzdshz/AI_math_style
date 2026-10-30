@@ -1,0 +1,13 @@
+{
+  "proposition": "9.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same key intermediate conclusions: (1) using 9.35 to establish the sum of the geometric series, (2) enumerating all divisors of the product P = S * A(n-1) using the primality of S and 9.13, (3) summing all proper divisors to show they equal P, and (4) concluding P is perfect by D7.22. The large symmetric difference (Jaccard 0.25) is explained by citation-depth differences: the AI cites 7.24 as a unit, while Heath re-derives the same reasoning inline using 7.19, 7.20, and 7.21 — all three of which appear inside Heath's own proof of 7.24, satisfying the proof-tree containment test. Similarly, Heath uses 7.14 (ex aequali) for proportion manipulation where the AI uses direct algebraic reasoning, and the AI cites 9.11, 7.16, and several definitions (D7.11, D7.15, D7.3, D7.5) that Heath leaves implicit. These are all citation-granularity differences, not backbone differences, yielding G.",
+  "jaccard": 0.25,
+  "ai_citations": "7.16|7.24|7.29|9.11|9.13|9.35|D7.11|D7.15|D7.22|D7.3|D7.5",
+  "heath_citations": "7.14|7.19|7.20|7.21|7.29|9.13|9.35|D7.20|D7.22",
+  "ai_only": "7.16|7.24|9.11|D7.11|D7.15|D7.3|D7.5",
+  "heath_only": "7.14|7.19|7.20|7.21|D7.20",
+  "audit_record": ""
+}

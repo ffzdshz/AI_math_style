@@ -1,0 +1,30 @@
+{
+  "proposition": "3.20",
+  "book": 3,
+  "statement": "In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.",
+  "heath_proof": "Let ABC be a circle, let the angle BEC be an angleat its centre, and the angle BAC an angle at the circumference, and let them have the same circumference BC as base; I say that the angle BEC is double ofthe angle BAC. For let AE be joined and drawn through to F. Then, since EA is equal to EB, the angle EAB is also equal to the angle EBA; [I. 5]therefore the angles EAB, EBA are double of the angle EAB. But the angle BEF is equal to the angles EAB, EBA; [I. 32] therefore the angle BEF is also double of the angleEAB. For the same reason the angle FEC is also double of the angle EAC. Therefore the whole angle BEC is double of the whole angle BAC. Again let another straight line be inflected, and let there be another angle BDC; let DE be joined and produced to G. Similarly then we can prove that the angle GEC is double of the angle EDC,of which the angle GEB is double of the angle EDB; therefore the angle BEC which remains is double of the angle BDC.",
+  "ai_proof_text": "3.20\n**Statement:** In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.\n\n**Step 1.** Let ABDC be a circle with center E, and let angle BEC be an angle at the center and angle BAC an angle at the circumference, both standing on the same arc BC. We must show that angle BEC is double angle BAC.\n\n**Step 2.** Join AE and produce it to a point F on the circumference [P1, P2]. We consider three cases according to the position of the center E relative to angle BAC.\n\n**Step 3.** CASE 1: Suppose AE passes through the center so that the line AF is a diameter and one side of the inscribed angle lies along it. Consider triangle ABE. Since E is the center and A, B lie on the circle, EA = EB [D1.15]. Therefore triangle ABE is isosceles, and by Proposition 1.5, angle EAB = angle EBA.\n\n**Step 4.** Now angle BEF is an exterior angle of triangle ABE. By Proposition 1.32, angle BEF equals the sum of the two remote interior angles, that is, angle BEF = angle EAB + angle EBA. Since angle EAB = angle EBA, we have angle BEF = 2 times angle EAB. But angle BEF is the angle at the center and angle EAB is the angle at the circumference, both standing on the same arc. Therefore the angle at the center is double the angle at the circumference.\n\n**Step 5.** CASE 2: Suppose the center E falls within the angle BAC. Join AE and produce it to F on the circumference [P1, P2]. Consider triangle ABE. Since EA = EB [D1.15], by Proposition 1.5, angle EAB = angle EBA. The exterior angle BEF of triangle ABE equals angle EAB + angle EBA [1.32], so angle BEF = 2 times angle EAB.\n\n**Step 6.** Similarly, consider triangle ACE. Since EA = EC [D1.15], by Proposition 1.5, angle EAC = angle ECA. The exterior angle CEF of triangle ACE equals angle EAC + angle ECA [1.32], so angle CEF = 2 times angle EAC.\n\n**Step 7.** Adding angle BEF and angle CEF, we obtain angle BEC = angle BEF + angle CEF = 2 times angle EAB + 2 times angle EAC = 2 times (angle EAB + angle EAC) = 2 times angle BAC [CN2].\n\n**Step 8.** CASE 3: Suppose the center E falls outside the angle BAC. Again join AE and produce it to F on the circumference [P1, P2]. Consider triangle ABE. Since EA = EB [D1.15], by Proposition 1.5, angle EAB = angle EBA. The exterior angle BEF of triangle ABE equals angle EAB + angle EBA [1.32], so angle BEF = 2 times angle EAB.\n\n**Step 9.** Similarly, consider triangle ACE. Since EA = EC [D1.15], by Proposition 1.5, angle EAC = angle ECA. The exterior angle CEF of triangle ACE equals angle EAC + angle ECA [1.32], so angle CEF = 2 times angle EAC.\n\n**Step 10.** Subtracting angle CEF from angle BEF, we obtain angle BEC = angle BEF - angle CEF = 2 times angle EAB - 2 times angle EAC = 2 times (angle EAB - angle EAC) = 2 times angle BAC [CN3].\n\n**Step 11.** Therefore, in all cases, the angle at the center BEC is double the angle at the circumference BAC, when both stand on the same arc BC. Q.E.F.\n\n**USED:** 1.32, 1.5, CN2, CN3, D1.15, P1, P2\n**Human refs (from References field):** 1.32, 1.5\n**Jaccard:** 0.286 — AI adds ['CN2', 'CN3', 'D1.15', 'P1', 'P2']",
+  "ai_used": [
+    "1.32",
+    "1.5",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.5"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "D1.15",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let ABDC be a circle with center E, and let angle BEC be an angle at the center and angle BAC an angle at the circumference, both standing on the same arc BC. We must show that angle BEC i"
+}

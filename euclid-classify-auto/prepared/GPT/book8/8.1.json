@@ -1,0 +1,30 @@
+{
+  "proposition": "8.1",
+  "book": 8,
+  "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, in continued proportion, and let the extremes of them A, D be prime to one another; I say that A, B, C, D are the least of those which have the same ratio with them. For, if not, let E, F, G, H be less than A, B, C, D, and in the same ratio with them. Now, since A, B, C, D are in the same ratio with E, F, G, H, and the multitude of the numbers A, B, C, D is equal to the multitude of the numbers E, F, G, H, therefore, ex aequali, as A is to D, so is E to H. [VII. 14]  But A, D are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore A measures E, the greater the less: which is impossible. Therefore E, F, G, H which are less than A, B, C, D are not in the same ratio with them. Therefore A, B, C, D are the least of those which have the same ratio with them.",
+  "ai_proof_text": "8.1\n**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.\n\n**Step 1.** Let A₁, …, Aₙ be the given numbers in continued proportion, with A₁ and Aₙ prime to one another. Let B₁, …, Bₙ be any numbers having the same corresponding ratios, so that Aᵢ:Aᵢ₊₁ = Bᵢ:Bᵢ₊₁ for every i < n. We shall show that each Aᵢ is no greater than Bᵢ. (Hypotheses; D7.12, D7.20.)\n\n**Step 2.** Taking the corresponding ratios ex aequali gives A₁:Aₙ = B₁:Bₙ. (7.14.) Since A₁ and Aₙ are prime to one another, they are the least numbers having their ratio. (7.21.) This is the direct path: apply the coprimality hypothesis to the extremes, without constructing a least proportional sequence.\n\n**Step 3.** The least numbers having a given ratio measure any numbers having that ratio the same number of times. Hence A₁ measures B₁ and Aₙ measures Bₙ with the same measurement count. Write this count as k ≥ 1, so B₁ = kA₁, where k = 1 means equality. (7.20.)\n\n**Step 4.** For any i with 2 ≤ i ≤ n, apply ex aequali to the first i terms to obtain B₁:Bᵢ = A₁:Aᵢ. (7.14.) Alternately, B₁:A₁ = Bᵢ:Aᵢ. (7.13.) Therefore Bᵢ is the same multiple of Aᵢ that B₁ is of A₁: namely, Bᵢ = kAᵢ. (D7.20.)\n\n**Step 5.** Thus every Bᵢ consists of the same positive number k of copies of Aᵢ. If k = 1, all corresponding terms are equal; if k > 1, each Bᵢ is greater than Aᵢ, since the whole is greater than its part. (CN5.) Since the comparison sequence was arbitrary, A₁, …, Aₙ are the least numbers having the same ratios with them, as required.\n\n**USED:** 7.13, 7.14, 7.20, 7.21, CN5, D7.12, D7.20\n**Human refs (from References field):** 7.14, 7.20, 7.21\n**Jaccard:** 0.429 — AI adds ['7.13', 'CN5', 'D7.12', 'D7.20']",
+  "ai_used": [
+    "7.13",
+    "7.14",
+    "7.20",
+    "7.21",
+    "CN5",
+    "D7.12",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "7.13",
+    "CN5",
+    "D7.12",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let A₁, …, Aₙ be the given numbers in continued proportion, with A₁ and Aₙ prime to one another. Let B₁, …, Bₙ be any numbers having the same corresponding ratios, so that Aᵢ:Aᵢ₊₁ = Bᵢ:Bᵢ₊"
+}

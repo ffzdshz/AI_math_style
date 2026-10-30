@@ -1,0 +1,49 @@
+{
+  "proposition": "10.26",
+  "book": 10,
+  "statement": "A medial area does not exceed a medial area by a rational area.",
+  "heath_proof": "For, if possible, let the medial area AB exceed the medial area AC by the rational area DB, and let a rational straight line EF be set out; to EF let there be applied the rectangular parallelogram FH equal to AB, producing EH as breadth, and let the rectangle FG equal to AC be subtracted; therefore the remainder BD is equal to the remainder KH. But DB is rational; therefore KH is also rational. Since, then, each of the rectangles AB, AC is medial, and AB is equal to FH, and AC to FG, therefore each of the rectangles FH, FG is also medial. And they are applied to the rational straight line EF; therefore each of the straight lines HE, EG is rational and incommensurable in length with EF. [X. 22] And, since [DB is rational and is equal to KH, therefore]KH is [also]rational; and it is applied to the rational straight line EF; therefore GH is rational and commensurable in length with EF. [X. 20] But EG is also rational, and is incommensurable in length with EF; therefore EG is incommensurable in length with GH. [X. 13] And, as EG is to GH, so is the square on EG to the rectangle EG, GH; therefore the square on EG is incommensurable with the rectangle EG, GH. [X. 11] But the squares on EG, GH are commensurable with the square on EG, for both are rational; and twice the rectangle EG, GH is commensurable with the rectangle EG, GH, for it is double of it; [X. 6] therefore the squares on EG, GH are incommensurable with twice the rectangle EG, GH; [X. 13] therefore also the sum of the squares on EG, GH and twice the rectangle EG, GH, that is, the square on EH [II. 4], is incommensurable with the squares on EG, GH. [X. 16] But the squares on EG, GH are rational; therefore the square on EH is irrational. [X. Def. 4] Therefore EH is irrational. But it is also rational: which is impossible.",
+  "ai_proof_text": "10.26\n**Statement:** A medial area does not exceed a medial area by a rational area.\n\n**Step 1.** Let AB and CD be medial areas with AB greater than CD. Suppose, for the sake of contradiction, that AB exceeds CD by a rational area, so that AB minus CD is rational.\n\n**Step 2.** Let e be a rational straight line. Apply AB to e, producing breadth p, so that the rectangle contained by e and p equals AB. Apply CD to e, producing breadth q, so that the rectangle contained by e and q equals CD.\n\n**Step 3.** Since AB is a medial area, it is equal to the square on some medial straight line [10.21]. By 10.22, since the square on a medial straight line applied to a rational straight line produces as breadth a straight line rational and incommensurable in length with that to which it is applied, p is rational and incommensurable in length with e.\n\n**Step 4.** Since CD is likewise a medial area, by the same reasoning [10.21, 10.22], q is rational and incommensurable in length with e.\n\n**Step 5.** Now the rectangle contained by e and p minus the rectangle contained by e and q equals the rectangle contained by e and the line p minus q [CN3, since both rectangles share the same base e]. Thus AB minus CD equals the rectangle contained by e and the line p minus q. Since AB minus CD is rational by hypothesis, and e is rational, by 10.20 the breadth p minus q is rational and commensurable in length with e.\n\n**Step 6.** Since p is rational, p is commensurable in square with e [D10.1.3], meaning the square on p is commensurable with the square on e [D10.1.2]. Similarly, the square on q is commensurable with the square on e. By 10.12, the square on p and the square on q are commensurable with each other.\n\n**Step 7.** Since the square on p is commensurable with the square on q, we may write the square on p equals the square on q together with the difference of the squares on p and q. By 10.15, since the square on p is commensurable with the square on q, the difference of the squares (that is, the square on p minus the square on q) is commensurable with the square on q, and hence by 10.12, commensurable with the square on e. Thus the area equal to the square on p minus the square on q is a rational area [D10.1.4].\n\n**Step 8.** By 2.1, the rectangle contained by the sum p plus q and the difference p minus q equals the square on p minus the square on q. For: cutting the line p plus q into segments p and q, the rectangle contained by p plus q and p minus q equals the rectangle contained by p and p minus q together with the rectangle contained by q and p minus q [2.1]. Again by 2.1, the rectangle contained by p and p minus q equals the square on p minus the rectangle contained by p and q, and the rectangle contained by q and p minus q equals the rectangle contained by p and q minus the square on q [CN2, CN3]. Adding these, the rectangle contained by p plus q and p minus q equals the square on p minus the square on q.\n\n**Step 9.** Since the rectangle contained by p plus q and p minus q is rational [Steps 7 and 8], and since p minus q is a rational straight line [Step 5], by 10.20, the breadth p plus q is rational and commensurable in length with p minus q.\n\n**Step 10.** Since p minus q is commensurable in length with e [Step 5], and p plus q is commensurable in length with p minus q [Step 9], by 10.12, p plus q is commensurable in length with e.\n\n**Step 11.** Now the lines p plus q and p minus q are both commensurable in length with e [Steps 5 and 10], hence commensurable in length with each other [10.12]. Their sum equals twice p, that is, p plus q together with p minus q equals p plus p. By 10.15, since p plus q and p minus q are commensurable, their sum (which is twice p) is commensurable in length with each of them, and hence commensurable in length with e.\n\n**Step 12.** But twice p is commensurable in length with p, since p together with p equals twice p and p is commensurable with itself, so by 10.15, twice p is commensurable with p. Since twice p is commensurable in length with e [Step 11], and twice p is commensurable in length with p, by 10.12, p is commensurable in length with e.\n\n**Step 13.** This contradicts Step 3, which established that p is incommensurable in length with e.\n\n**Step 14.** Therefore the assumption is false, and a medial area does not exceed a medial area by a rational area. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.20, 10.21, 10.22, 2.1, CN2, CN3, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.13, 10.16, 10.20, 10.22, 10.6, 2.4, D10.1.4\n**Jaccard:** 0.188 — AI adds ['10.12', '10.15', '10.21', '2.1', 'CN2', 'CN3', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.13', '10.16', '10.6', '2.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.20",
+    "10.21",
+    "10.22",
+    "2.1",
+    "CN2",
+    "CN3",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.16",
+    "10.20",
+    "10.22",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "10.21",
+    "2.1",
+    "CN2",
+    "CN3",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.13",
+    "10.16",
+    "10.6",
+    "2.4"
+  ],
+  "jaccard": 0.188,
+  "proof_summary": "**Step 1.** Let AB and CD be medial areas with AB greater than CD. Suppose, for the sake of contradiction, that AB exceeds CD by a rational area, so that AB minus CD is rational.  **Step 2.** Let e be"
+}

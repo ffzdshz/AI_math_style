@@ -1,0 +1,32 @@
+{
+  "proposition": "3.23",
+  "book": 3,
+  "statement": "On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.",
+  "heath_proof": "For, if possible, on the same straight line AB let two similar and unequal segments of circles ACB, ADB be constructed on the same side; let ACD be drawn through, and let CB, DB be joined. Then, since the segment ACB is similar to the segment ADB, and similar segments of circles are those which admit equal angles, [III. Def. 11] the angle ACB is equal to the angle ADB, the exterior to the interior: which is impossible. [I. 16]",
+  "ai_proof_text": "3.23\n**Statement:** On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.\n\n**Step 1.** Suppose, for a contradiction, that two similar but unequal segments of circles are constructed on the same straight line AB and on the same side of it. Each segment is bounded by AB and a circular arc (D3.6). Their circles must be distinct: otherwise the arcs on the specified side, and hence the segments, would coincide and be equal (D3.6, CN4).\n\n**Step 2.** The circles already have A and B in common, so their arcs cannot cross at any further point (3.10). Consequently, the segments on the specified side of AB are nested. Relabel them as the inner and outer segments. Since they are unequal, choose a point D, other than A and B, on the inner arc and strictly inside the outer segment (D3.6).\n\n**Step 3.** Join AD and produce it beyond D until it meets the outer arc at C; join DB and CB (P1, P2). Thus A, D, C lie on one straight line in that order. This secant construction makes an exterior-angle comparison directly available.\n\n**Step 4.** The angle ADB is an angle in the inner segment, and ACB is an angle in the outer segment (D3.8). Since the two segments are similar, ∠ADB = ∠ACB (D3.11).\n\n**Step 5.** In triangle DBC, the side CD is produced through D to A. Therefore its exterior angle ADB is greater than its interior opposite angle DCB (1.16, the direct choice because the construction supplies an exterior angle). But the rays CD and CA coincide, so ∠DCB = ∠ACB (CN4). Hence ∠ADB > ∠ACB, contradicting Step 4. Therefore, on the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.\n\n**USED:** 1.16, 3.10, CN4, D3.11, D3.6, D3.8, P1, P2\n**Human refs (from References field):** 1.16, D3.11\n**Jaccard:** 0.250 — AI adds ['3.10', 'CN4', 'D3.6', 'D3.8', 'P1', 'P2']",
+  "ai_used": [
+    "1.16",
+    "3.10",
+    "CN4",
+    "D3.11",
+    "D3.6",
+    "D3.8",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.16",
+    "D3.11"
+  ],
+  "ai_only": [
+    "3.10",
+    "CN4",
+    "D3.6",
+    "D3.8",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Suppose, for a contradiction, that two similar but unequal segments of circles are constructed on the same straight line AB and on the same side of it. Each segment is bounded by AB and a "
+}

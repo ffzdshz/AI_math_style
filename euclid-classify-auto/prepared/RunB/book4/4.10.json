@@ -1,0 +1,40 @@
+{
+  "proposition": "4.10",
+  "book": 4,
+  "statement": "To construct an isosceles triangle having each of the angles at the base double of the remaining one.",
+  "heath_proof": "Let any straight line AB be set out, and let it be cut at the point C so that the rectangle contained by AB, BC is equal to the square on CA; [II. 11] with centre A and distance AB let the circle BDE be described, and let there be fitted in the circle BDE the straight line BD equal to the straight line AC which is not greater than the diameter of the circle BDE. [IV. 1] Let AD, DC be joined, and let the circle ACD be circumscribed about the triangle ACD. [IV. 5] Then, since the rectangle AB, BC is equal to the square on AC, and AC is equal to BD, therefore the rectangle AB, BC is equal to the square on BD. And, since a point B has been taken outside the circle ACD, and from B the two straight lines BA, BD have fallen on the circle ACD, and one of them cuts it, while the other falls on it, and the rectangle AB, BC is equal to the square on BD, therefore BD touches the circle ACD. [III. 37]  Since, then, BD touches it, and DC is drawn across from the point of contact at D, therefore the angle BDC is equal to the angle DAC in the alternate segment of the circle. [III. 32] Since, then, the angle BDC is equal to the angle DAC, let the angle CDA be added to each; therefore the whole angle BDA is equal to the two angles CDA, DAC. But the exterior angle BCD is equal to the angles CDA, DAC; [I. 32] therefore the angle BDA is also equal to the angle BCD. But the angle BDA is equal to the angle CBD, since the side AD is also equal to AB; [I. 5] so that the angle DBA is also equal to the angle BCD. Therefore the three angles BDA, DBA, BCD are equal to one another. And, since the angle DBC is equal to the angle BCD, the side BD is also equal to the side DC. [I. 6]  But BD is by hypothesis equal to CA; therefore CA is also equal to CD, so that the angle CDA is also equal to the angle DAC; [I. 5] therefore the angles CDA, DAC are double of the angle DAC. But the angle BCD is equal to the angles CDA, DAC; therefore the angle BCD is also double of the angle CAD. But the angle BCD is equal to each of the angles BDA, DBA; therefore each of the angles BDA, DBA is also double of the angle DAB. Therefore the isosceles triangle ABD has been constructed having each of the angles at the base DB double of the remaining one.",
+  "ai_proof_text": "4.10\n**Statement:** To construct an isosceles triangle having each of the angles at the base double of the remaining one.\n\n**Step 1.** Take any straight line AB and cut it at C so that the rectangle AB times BC equals the square on AC [2.11]. That is, AB·BC = AC².\n\n**Step 2.** With center A and radius AB, describe circle BDE [P3]. Since AC is less than AB (being a segment of AB), and therefore less than the diameter of circle BDE, fit into circle BDE a straight line BD equal to AC [4.1].\n\n**Step 3.** Join AD and DC [P1]. Then since AB = AD (both are radii of circle BDE), triangle ABD is isosceles [D1.20].\n\n**Step 4.** Circumscribe a circle ACD about triangle ACD [4.5].\n\n**Step 5.** Since AB·BC = AC² (Step 1) and BD = AC (Step 2), it follows that AB·BC = BD². Equivalently, BC·BA = BD². Now B is a point outside circle ACD, line BCA is a secant through B meeting circle ACD at C and A, and BD meets circle ACD at D. Since BD² = BC·BA, the line BD touches circle ACD at D [3.37].\n\n**Step 6.** Since BD touches circle ACD at D, and from the point of contact D the chord DC is drawn across the circle, the angle BDC equals the angle in the alternate segment, namely angle DAC [3.32].\n\n**Step 7.** Since AB = AD (radii of circle BDE), angle ABD = angle ADB [1.5]. Denote angle DAC = angle BDC = phi, and angle ABD = angle ADB = psi.\n\n**Step 8.** In triangle ABD, angle BAD + angle ABD + angle ADB = two right angles [1.32]. Since C lies on segment AB between A and B, angle BAD = angle DAC = phi. Therefore phi + 2*psi = two right angles.\n\n**Step 9.** Now angle ADB = angle ADC + angle CDB. Since angle ADB = psi and angle CDB = angle BDC = phi, we obtain angle ADC = psi - phi.\n\n**Step 10.** In triangle ACD, angle DAC + angle ACD + angle ADC = two right angles [1.32]. Substituting, phi + angle ACD + (psi - phi) = two right angles, so angle ACD = two right angles - psi.\n\n**Step 11.** Since A, C, B are collinear (C lies on AB), angles ACD and DCB together equal two right angles [1.13]. Therefore angle DCB = two right angles - angle ACD = two right angles - (two right angles - psi) = psi.\n\n**Step 12.** In triangle BDC, angle DBC = angle ABD = psi (same angle, since C lies on segment AB). From Step 11, angle BCD = angle DCB = psi. Therefore angle DBC = angle BCD, so triangle BDC is isosceles and BD = DC [1.6].\n\n**Step 13.** Since BD = AC (by construction, Step 2) and BD = DC (Step 12), we have DC = AC. Therefore triangle DCA is isosceles with DC = CA, and angle CDA = angle DAC = phi [1.5].\n\n**Step 14.** From Step 9, angle ADC = psi - phi, and from Step 13, angle CDA = phi. Since angle ADC = angle CDA, we have psi - phi = phi, so psi = 2*phi. That is, each base angle of triangle ABD equals twice the vertex angle.\n\n**Step 15.** Therefore triangle ABD is isosceles (AB = AD) and each of the base angles ABD and ADB equals 2*phi = twice the vertex angle BAD = phi. This is the required triangle: an isosceles triangle having each of the angles at the base double of the remaining one.\n\n**USED:** 1.13, 1.32, 1.5, 1.6, 2.11, 3.32, 3.37, 4.1, 4.5, D1.20, P1, P3\n**Human refs (from References field):** 1.32, 1.5, 1.6, 2.11, 3.32, 3.37, 4.5\n**Jaccard:** 0.583 — AI adds ['1.13', '4.1', 'D1.20', 'P1', 'P3']",
+  "ai_used": [
+    "1.13",
+    "1.32",
+    "1.5",
+    "1.6",
+    "2.11",
+    "3.32",
+    "3.37",
+    "4.1",
+    "4.5",
+    "D1.20",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.5",
+    "1.6",
+    "2.11",
+    "3.32",
+    "3.37",
+    "4.5"
+  ],
+  "ai_only": [
+    "1.13",
+    "4.1",
+    "D1.20",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.583,
+  "proof_summary": "**Step 1.** Take any straight line AB and cut it at C so that the rectangle AB times BC equals the square on AC [2.11]. That is, AB·BC = AC².  **Step 2.** With center A and radius AB, describe circle "
+}

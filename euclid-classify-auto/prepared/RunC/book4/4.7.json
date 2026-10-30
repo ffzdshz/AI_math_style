@@ -1,0 +1,41 @@
+{
+  "proposition": "4.7",
+  "book": 4,
+  "statement": "About a given circle to circumscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to circumscribe a square about the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and through the points A, B, C, D let FG, GH, HK, KF be drawn touching the circle ABCD. [III. 16] Then, since FG touches the circle ABCD, and EA has been joined from the centre E to the point of contact at A, therefore the angles at A are right. [III. 18]  For the same reason the angles at the points B, C, D are also right. Now, since the angle AEB is right, and the angle EBG is also right, therefore GH is parailel to AC. [I. 28]  For the same reason AC is also parallel to FK, so that GH is also parallel to FK. [I. 30]  Similarly we can prove that each of the straight lines GF, HK is parallel to BED. Therefore GK, GC, AK, FB, BK are parallelograms; therefore GF is equal to HK, and GH to FK. [I. 34] And, since AC is equal to BD, and AC is also equal to each of the straight lines GH, FK, while BD is equal to each of the straight lines GF, HK, [I. 34]therefore the quadrilateral FGHK is equilateral. I say next that it is also right-angled. For, since GBEA is a parallelogram, and the angle AEB is right, therefore the angle AGB is also right. [I. 34] Similarly we can prove that the angles at H, K, F are also right. Therefore FGHK is right-angled. But it was also proved equilateral; therefore it is a square; and it has been circumscribed about the circle ABCD. Therefore about the given circle a square has been circumscribed.",
+  "ai_proof_text": "4.7\n**Statement:** About a given circle to circumscribe a square.\n\n**Step 1.** Let ABCD be the given circle with center E. Draw diameter AC through E, and draw diameter BD through E perpendicular to AC, using 1.11 to erect a perpendicular to AC at E. Then angle AEB is a right angle.\n\n**Step 2.** Through A, draw line FG perpendicular to EA (1.11). Through B, draw line GH perpendicular to EB (1.11). Through C, draw line HK perpendicular to EC (1.11). Through D, draw line FK perpendicular to ED (1.11). Let F be the intersection of the line through A and the line through D, G the intersection of the line through A and the line through B, H the intersection of the line through B and the line through C, and K the intersection of the line through C and the line through D.\n\n**Step 3.** Since FG is perpendicular to EA and HK is perpendicular to EC, and A, E, C are collinear (AC being a diameter), FG and HK each make right angles with line AC. Thus the interior angles on the same side of transversal AC sum to two right angles, so FG is parallel to HK (1.28). Similarly, since GH is perpendicular to EB and FK is perpendicular to ED, and B, E, D are collinear (BD being a diameter), GH is parallel to FK (1.28).\n\n**Step 4.** Since FG is parallel to HK and GH is parallel to FK, quadrilateral FGHK is a parallelogram. By 1.34, opposite sides are equal: FG = HK and GH = FK.\n\n**Step 5.** Consider quadrilateral AGBE. By construction, angle GAE is right (FG perpendicular to AE), angle AEB is right (BD perpendicular to AC), and angle EBG is right (GH perpendicular to EB). Draw diagonal AB. In triangle ABE, the angles sum to two right angles (1.32), and angle AEB is right, so angle BAE + angle ABE equals one right angle. In triangle ABG, the angles sum to two right angles (1.32). Now angle GAB = angle GAE minus angle BAE = one right angle minus angle BAE, and angle GBA = angle GBE minus angle ABE = one right angle minus angle ABE. So angle GAB + angle GBA = two right angles minus (angle BAE + angle ABE) = two right angles minus one right angle = one right angle. Therefore angle AGB = two right angles minus one right angle = one right angle (1.32).\n\n**Step 6.** By an identical argument applied to quadrilateral BECH (with angle EBH right, angle BEC right, angle ECH right), angle BHC is right. Similarly, applied to quadrilateral CEDK, angle CKD is right, and applied to quadrilateral DEAF, angle DFA is right. Thus all four angles of FGHK are right angles.\n\n**Step 7.** Since AGBE has all four angles right (angles at A, E, B each right by construction, and angle G right by Step 5), and its opposite sides are parallel (AG parallel to EB since both perpendicular to AE, and AE parallel to BG since both perpendicular to EB, by 1.28), AGBE is a parallelogram. By 1.34, AG = EB and BG = AE. Since AE and EB are both radii of circle ABCD, AE = EB (D1.15). By CN1, AG = AE = EB = BG.\n\n**Step 8.** Similarly, in parallelogram AFED (all right angles, opposite sides parallel by 1.28), AF = ED and FD = AE (1.34). Since ED is a radius and AE is a radius, AE = ED (D1.15), so AF = AE (CN1). Likewise, in parallelogram BECH, BH = EC and CH = BE (1.34), and since BE = EC (D1.15), BH = BE (CN1). In parallelogram CEDK, CK = ED and DK = CE (1.34), and since CE = ED (D1.15), CK = CE (CN1).\n\n**Step 9.** Now FG = FA + AG (F, A, G being collinear on the tangent through A). We have FA = AE and AG = AE (from Steps 7 and 8), so FG = AE + AE (CN2). Similarly, GH = GB + BH = BE + BE (CN2), HK = KC + CH = CE + CE (CN2), and KF = KD + DF = ED + ED (CN2). Since AE = BE = CE = DE (all radii, D1.15 and CN1), we conclude FG = GH = HK = KF (CN1).\n\n**Step 10.** FGHK is equilateral (all sides equal by Step 9) and right-angled (all angles right by Step 6). Therefore FGHK is a square (D1.22).\n\n**Step 11.** Each side of FGHK touches the circle at exactly one point: FG touches at A, GH touches at B, HK touches at C, and FK touches at D. This is because each side is perpendicular to the radius at the point where it meets the circle, so by 3.16, each side is tangent to the circle. Therefore the square FGHK is circumscribed about the given circle (D4.4).\n\n**Step 12.** Therefore, about the given circle, a square has been circumscribed, which is what was required to do. Q.E.F.\n\n**USED:** 1.11, 1.28, 1.32, 1.34, 3.16, CN1, CN2, D1.15, D1.22, D4.4\n**Human refs (from References field):** 1.28, 1.30, 1.34, 3.16, 3.18\n**Jaccard:** 0.250 — AI adds ['1.11', '1.32', 'CN1', 'CN2', 'D1.15', 'D1.22', 'D4.4']; Human adds ['1.30', '3.18']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.32",
+    "1.34",
+    "3.16",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.22",
+    "D4.4"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.30",
+    "1.34",
+    "3.16",
+    "3.18"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.32",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.22",
+    "D4.4"
+  ],
+  "heath_only": [
+    "1.30",
+    "3.18"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let ABCD be the given circle with center E. Draw diameter AC through E, and draw diameter BD through E perpendicular to AC, using 1.11 to erect a perpendicular to AC at E. Then angle AEB i"
+}

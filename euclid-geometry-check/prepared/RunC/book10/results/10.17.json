@@ -1,0 +1,41 @@
+{
+  "proposition": "10.17",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E is a point on line segment A, dividing it into segments AE and EB with AE + EB = A",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C is the midpoint of segment A (AC = CB = A/2)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "F is the midpoint of segment B (BF = B/2)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "C and E are both interior to segment A; C bisects equally, E divides unequally (E is distinct from C)",
+      "type": "point_ordering"
+    },
+    {
+      "step": "Step 8",
+      "claim": "2CE = AE - EB, implying AE > EB (labeling convention for the larger segment)",
+      "type": "point_ordering"
+    },
+    {
+      "step": "Step 10",
+      "claim": "2AC + 2CE = 2*AE and 2AC - 2CE = 2*EB, consistent with C as midpoint and E as division point",
+      "type": "point_ordering"
+    }
+  ],
+  "configuration_map": "Line segment A has two interior points: C (midpoint) and E (division point from the area application). Both lie on the same segment. F is the midpoint of the separate line segment B. The proof reasons algebraically about squares and rectangles (areas) formed by these segments, and about commensurability of the resulting lengths. No triangles, circles, angles, or complex geometric figures are constructed. The entire argument is algebraic manipulation of identities from Book II (2.4, 2.5) combined with commensurability results from Book 10.",
+  "pass_reason": "The proof is primarily algebraic, dealing with commensurability of line segments. The only spatial claims concern points on a line segment (C as midpoint, E as division point, F as midpoint of another segment), which are trivially mutually consistent. There are no angle decompositions, no triangle interior/exterior arguments, no circle configurations, and no complex geometric constructions that could harbor a spatial contradiction."
+}

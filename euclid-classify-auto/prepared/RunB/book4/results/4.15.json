@@ -1,0 +1,13 @@
+{
+  "proposition": "4.15",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: construct equilateral triangles at the center to establish that all six central angles equal one-third of two right angles, then use III.26 to get equal arcs, III.29 for equal sides (equilateral), and III.27 for equal inscribed angles (equiangular). The proofs differ only in the sub-method used to establish all six central angles as equal. Heath proves three angles directly via two equilateral triangles (EGD, DGC) and supplementary angles, then applies I.15 (vertical angles) to obtain the other three. The AI instead constructs an additional circle centered at A (beyond Heath's circle at D), directly proving four equilateral triangles (EGD, DGC, AGB, AGF) and then uses I.13 (supplementary angles on a line) to derive the remaining two angles (BGC, FGE) by subtraction. This substitution of I.13 for I.15 represents a minor variation in the sub-argument for one key step, not a different backbone. The ai_only set consists entirely of definitions, postulates, common notions, and proposition I.13 — all representing over-citation or the I.13-for-I.15 substitution. The key intermediate conclusions are identical in both proofs.",
+  "jaccard": 0.312,
+  "ai_citations": "1.13|1.32|1.5|3.26|3.27|3.29|CN1|CN2|CN3|D1.15|D1.17|D1.20|D4.3|P1|P3",
+  "heath_citations": "1.15|1.32|1.5|3.26|3.27|3.29",
+  "ai_only": "1.13|CN1|CN2|CN3|D1.15|D1.17|D1.20|D4.3|P1|P3",
+  "heath_only": "1.15",
+  "audit_record": ""
+}

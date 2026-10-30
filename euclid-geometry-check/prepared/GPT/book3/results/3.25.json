@@ -1,0 +1,76 @@
+{
+  "proposition": "3.25",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A and B are endpoints of the chord bounding the segment, lying on the circumference of circle Gamma",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "C is a point on the circular arc of the segment, on the circumference of Gamma",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A, B, C are not collinear (if collinear, the middle point would be inside Gamma by 3.2, contradicting being on circumference)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "M is the midpoint of segment AB, lying on AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "N is the midpoint of segment AC, lying on AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line l is perpendicular to AB at M",
+      "type": "line_orientation"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line m is perpendicular to AC at N",
+      "type": "line_orientation"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Center O lies on line l (case 1: if O on AB then O=M; case 2: if O not on AB then OM perpendicular to AB at M by 3.3, so OM coincides with l)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Center O lies on line m (same argument applied to chord AC)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "M and N are distinct points (otherwise A, B, C would be collinear)",
+      "type": "point_distinction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Lines l and m are distinct (if coincident, AB and AC would be parallel by 1.28, but they meet at A)",
+      "type": "line_distinction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Intersection point X of l and m equals O (unique intersection of two distinct lines both containing O)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Circle with center X=O and radius XA has the same center and radius as Gamma",
+      "type": "circle_identity"
+    }
+  ],
+  "configuration_map": "Points A, B lie on the circumference of circle Gamma as endpoints of the bounding chord of the segment. Point C lies on the arc of the segment, also on the circumference. M is the midpoint of AB (on the segment AB), N is the midpoint of AC (on the segment AC). Line l passes through M perpendicular to AB; line m passes through N perpendicular to AC. The center O of Gamma is shown to lie on both l and m. Since l and m are distinct (proven via 1.28 and the non-collinearity of A, B, C), their unique intersection X equals O. Throughout the proof, M stays on AB, N stays on AC, O stays on both l and m, and no point changes its relative position.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses perpendicular bisectors of chords AB and AC to locate the center, which is a standard geometrically valid construction. The case analysis for O on vs. off chord AB is correct, the distinctness of the perpendicular bisectors is properly justified via 1.28 and non-collinearity, and no angle decomposition or interior/exterior point arguments are employed. There are no contradictory spatial assumptions between any pair of steps."
+}

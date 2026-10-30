@@ -1,0 +1,41 @@
+{
+  "proposition": "2.8",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB, between A and B (random cut point)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies on extension of AB beyond B, with BD = BC; collinear order is A-C-B-D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AD = AB + BD by segment addition (D beyond B)",
+      "type": "segment_relation"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B lies between A and D on segment AD (AD cut at B for Prop 2.4)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "C lies between A and B on segment AB (AB cut at C for Prop 2.7)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 8",
+      "claim": "AD is composed of AB and BC as one straight line since BD = BC",
+      "type": "segment_relation"
+    }
+  ],
+  "configuration_map": "All points are collinear in the order A-C-B-D. Point A is the left endpoint of the original segment. Point C is an interior point of AB (the random cut). Point B is the right endpoint of AB and also an interior point of AD. Point D is on the extension of AB beyond B with BD = BC. The entire proof operates on this single line with algebraic identities (Prop 2.4 and 2.7) applied to different cut points on the line.",
+  "pass_reason": "The proof makes only simple collinear betweenness claims (A-C-B-D ordering) that are all mutually consistent. Prop 2.4 is correctly applied to AD cut at B (B is between A and D), and Prop 2.7 is correctly applied to AB cut at C (C is between A and B). The remaining steps are pure algebraic substitution with no spatial content. No angle decompositions, interior/exterior claims, or circle arguments are involved."
+}

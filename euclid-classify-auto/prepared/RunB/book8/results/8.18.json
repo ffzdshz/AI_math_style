@@ -1,0 +1,13 @@
+{
+  "proposition": "8.18",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: they set up similar plane numbers with proportional sides, construct a mean proportional number (Heath constructs G = D*E; the AI constructs M = c*f and uses 7.19 to show c*f = d*e, which is the same number), apply 7.17 twice to establish the continued proportion A:mean::mean:B, and then invoke V.Def.9 for the duplicate ratio. The difference lies in how a sub-step is justified: Heath uses 7.13 (alternation) to rearrange the proportion c:d = e:f into c:e = d:f, while the AI uses 7.19 (cross-multiplication property) to establish c*f = d*e directly, bypassing the need for alternation. The ai_only citation D7.16 is simply the definition of plane number (over-citation). Since the key intermediate conclusions are identical and only the justification technique for one sub-step differs, this is a same-backbone, different-depth case under Q2 Case A.",
+  "jaccard": 0.5,
+  "ai_citations": "7.17|7.19|D5.9|D7.16|D7.21",
+  "heath_citations": "7.13|7.17|D5.9|D7.21",
+  "ai_only": "7.19|D7.16",
+  "heath_only": "7.13",
+  "audit_record": ""
+}

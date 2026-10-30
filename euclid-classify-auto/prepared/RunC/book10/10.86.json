@@ -1,0 +1,41 @@
+{
+  "proposition": "10.86",
+  "book": 10,
+  "statement": "To find the second apotome.",
+  "heath_proof": "Let a rational straight line A be set out, and GC commensurable in length with A; therefore GC is rational. Let two square numbers DE, EF be set out, and let their difference DF not be square. Now let it be contrived that, as FD is to DE, so is the square on CG to the square on GB. [X. 6] Therefore the square on CG is commensurable with the square on GB. [X. 6] But the square on CG is rational; therefore the square on GB is also rational; therefore BG is rational. And, since the square on GC has not to the square on GB the ratio which a square number has to a square number, CG is incommensurable in length with GB. [X. 9] And both are rational; therefore CG, GB are rational straight lines commensurable in square only; therefore BC is an apotome. [X. 73] I say next that it is also a second apotome. For let the square on H be that by which the square on BG is greater than the square on GC. Since then, as the square on BG is to the square on GC, so is the number ED to the number DF, therefore, convertendo, as the square on BG is to the square on H, so is DE to EF. [V. 19] And each of the numbers DE, EF is square; therefore the square on BG has to the square on H the ratio which a square number has to a square number; therefore BG is commensurable in length with H. [X. 9] And the square on BG is greater than the square on GC by the square on H; therefore the square on BG is greater than the square on GC  by the square on a straight line commensurable in length with BG. And CG, the annex, is commensurable with the rational straight line A set out. Therefore BC is a second apotome. [X. Deff. III. 2] Therefore the second apotome BC has been found.",
+  "ai_proof_text": "10.86\n**Statement:** To find the second apotome.\n\n**Step 1.** Let the rational straight line A be set out. Take three numbers 4, 3, and 1, where 4 = 3 + 1. Observe that 4:3 is not the ratio of a square number to a square number, while 4:1 = 2^2 : 1^2, which is the ratio of a square number to a square number.\n\n**Step 2.** Let the straight line FG be found such that sq(FG) : sq(A) = 4 : 3. Since 4 and 3 are numbers, sq(FG) and sq(A) have the ratio of a number to a number, so by 10.6, sq(FG) and sq(A) are commensurable. Since A is rational, sq(A) is a rational area by D10.1.4, hence sq(FG) is also rational, and therefore FG is rational by D10.1.3. Since 4:3 is not the ratio of a square number to a square number, by 10.9, FG is incommensurable in length with A.\n\n**Step 3.** Since 4 > 3, we have sq(FG) > sq(A), and therefore FG > A. Let GH be cut off equal to A by 1.3 and P1. Then GH is rational and commensurable in length with A.\n\n**Step 4.** Since GH = A, we have sq(FG) : sq(GH) = sq(FG) : sq(A) = 4 : 3. Since 4:3 is not the ratio of a square number to a square number, by 10.9, FG and GH are incommensurable in length. Both FG and GH are rational (FG by Step 2; GH because GH = A and A is rational). Hence FG and GH are rational straight lines commensurable in square only.\n\n**Step 5.** Since FG and GH are rational straight lines commensurable in square only with FG > GH, by 10.73, the straight line FG - GH is an apotome, with FG as the whole and GH as the annex.\n\n**Step 6.** Since sq(FG) > sq(GH), by 1.47 there exists a straight line L such that sq(L) = sq(FG) - sq(GH). Since sq(FG) : sq(GH) = 4 : 3, we may write sq(FG) = 4k and sq(GH) = 3k for some magnitude k. Then sq(L) = sq(FG) - sq(GH) = 4k - 3k = k, by CN3. Therefore sq(FG) : sq(L) = 4k : k = 4 : 1 = 2^2 : 1^2, which is the ratio of a square number to a square number. By 10.9, FG is commensurable in length with L. Hence the square on FG exceeds the square on GH by the square on a straight line L commensurable in length with FG.\n\n**Step 7.** Now we verify the conditions of D10.3.2 for a second apotome. The annex GH is commensurable in length with the rational straight line A (since GH = A). The square on the whole FG exceeds the square on the annex GH by the square on a straight line commensurable in length with FG (Step 6). The whole FG is incommensurable in length with A (Step 2), so this is not a first apotome. By D10.3.2, the apotome FG - GH is a second apotome.\n\n**Step 8.** Therefore the second apotome FG - GH has been found. Q.E.F.\n\n**USED:** 1.3, 1.47, 10.6, 10.73, 10.9, CN3, CN5, D10.1.3, D10.1.4, D10.3.2, P1\n**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.2\n**Jaccard:** 0.333 — AI adds ['1.3', '1.47', 'CN3', 'CN5', 'D10.1.3', 'D10.1.4', 'P1']; Human adds ['5.19']",
+  "ai_used": [
+    "1.3",
+    "1.47",
+    "10.6",
+    "10.73",
+    "10.9",
+    "CN3",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.2",
+    "P1"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.19",
+    "D10.3.2"
+  ],
+  "ai_only": [
+    "1.3",
+    "1.47",
+    "CN3",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "P1"
+  ],
+  "heath_only": [
+    "5.19"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let the rational straight line A be set out. Take three numbers 4, 3, and 1, where 4 = 3 + 1. Observe that 4:3 is not the ratio of a square number to a square number, while 4:1 = 2^2 : 1^2"
+}

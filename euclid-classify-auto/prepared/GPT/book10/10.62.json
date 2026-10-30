@@ -1,0 +1,61 @@
+{
+  "proposition": "10.62",
+  "book": 10,
+  "statement": "The square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial.",
+  "heath_proof": "Let AB be a second bimedial straight line divided into its medials at C, so that AC is the greater segment; let DE be any rational straight line, and to DE let there be applied the parallelogram DF equal to the square on AB and producing DG as its breadth; I say that DG is a third binomial straight line. Let the same construction be made as before shown. Then, since AB is a second bimedial divided at C, therefore AC, CB are medial straight lines commensurable in square only and containing a medial rectangle, [X. 38] so that the sum of the squares on AC, CB is also medial. [X. 15 and 23 Por.] And it is equal to DL; therefore DL is also medial. And it is applied to the rational straight line DE; therefore MD is also rational and incommensurable in length with DE. [X. 22] For the same reason, MG is also rational and incommensurable in length with ML, that is, with DE; therefore each of the straight lines DM, MG is rational and incommensurable in length with DE. And, since AC is incommensurable in length with CB, and, as AC is to CB, so is the square on AC to the rectangle AC, CB, therefore the square on AC is also incommensurable with the rectangle AC, CB. [X. 11] Hence the sum of the squares on AC, CB is incommensurable with twice the rectangle AC, CB, [X. 12, 13] that is, DL is incommensurable with MF, so that DM is also incommensurable with MG. [VI. 1, X. 11] And they are rational; therefore DG is binomial. [X. 36] It is to be proved that it is also a third binomial straight line. In manner similar to the foregoing we may conclude that DM is greater than MG, and that DK is commensurable with KM. And the rectangle DK, KM is equal to the square on MN; therefore the square on DM is greater than the square on MG by the square on a straight line commensurable with DM. And neither of the straight lines DM, MG is commensurable in length with DE. Therefore DG is a third binomial straight line. [X. Deff. II. 3]",
+  "ai_proof_text": "10.62\n**Statement:** The square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial.\n\n**Step 1.** Let s be a second bimedial straight line, and let r be the rational straight line to which its square is to be applied. By 10.38, write s=a+b, where a>b are medial straight lines commensurable in square only, and the rectangle ab is medial—that is, equal to a square on a medial straight line. Throughout, u² denotes the square on u and uv the rectangle contained by u and v. [10.38]\n\n**Step 2.** Construct breadths x, y, z such that\nrx=a², ry=b², rz=ab.\nThese constructions are possible by taking fourth proportionals and using the equality of the rectangles contained by the extremes and the means. Since each of the three applied areas is a square on a medial straight line, x, y, z are rational and each is incommensurable in length with r. [6.12, 6.16, 10.22]\n\n**Step 3.** Rectangles of the same height are proportional to their bases. Consequently,\nx:y=a²:b²,\nx:z=a²:ab=a:b,\nz:y=ab:b²=a:b.\nSince a and b are commensurable in square, x and y are commensurable in length. Since a and b are incommensurable in length, x and z are incommensurable in length. Also x>y, because a²>b². [6.1, D10.1.2, 10.11]\n\n**Step 4.** Put p=x+y and q=2z. Because x and y are commensurable, p is commensurable in length with x; and q is commensurable in length with z, since z measures q twice. Lines commensurable in length have commensurable squares: their squares have a numerical ratio by 10.9 and hence are commensurable by 10.6. Therefore p and q are rational, since their squares are respectively commensurable with the squares on the rational lines x and z, and thus with the assigned rational square. [10.15, D10.1.1, 10.9, 10.6, 10.12, D10.1.3]\n\n**Step 5.** Since p is commensurable in length with x, while x is incommensurable in length with r, p is incommensurable in length with r. Likewise, q is incommensurable in length with r. Moreover, x and z are incommensurable in length; hence p and z are incommensurable in length, and, because q and z are commensurable in length, p and q are incommensurable in length. [10.13]\n\n**Step 6.** The proportion already obtained, x:z=z:y, gives xy=z² by 6.16. Since q=2z, the square on q is four times the square on z; hence\nq²=4xy.\nBecause x and y are unequal parts of p, 2.5 shows that xy is less than one-quarter of p². Thus q²<p², and therefore p>q. [6.16, 2.4, 2.5]\n\n**Step 7.** Use the commensurable-partition criterion 10.17: it is the natural direct choice because the required partition is already supplied by x and y. Indeed, the rectangle xy, applied to p=x+y with height y, is deficient by the square y². Its area is one-quarter of q², and it divides p into the commensurable lengths x and y. Therefore the square on p exceeds the square on q by the square on a straight line commensurable in length with p. [10.17]\n\n**Step 8.** By distribution of rectangles and the square-of-a-sum identity,\nr(p+q)=rx+ry+2rz=a²+b²+2ab=(a+b)²=s².\nThus p+q is precisely the breadth produced when the square on s is applied to r; equality of rectangles on the same base gives equality of their breadths. [2.1, 2.4, 6.1]\n\n**Step 9.** The rational lines p and q are commensurable in square, since their squares are each commensurable with the assigned rational square; but they are incommensurable in length by Step 5. Hence p+q is a binomial. Its greater term is p; the square on p exceeds that on q by the square on a line commensurable in length with p; and neither p nor q is commensurable in length with r. Therefore p+q is the third binomial relative to r. Accordingly, the square on the second bimedial straight line, applied to a rational straight line, produces as breadth the third binomial. [10.12, D10.1.3, D10.1.2, 10.36, D10.2.1, D10.2.3]\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.22, 10.36, 10.38, 10.6, 10.9, 2.1, 2.4, 2.5, 6.1, 6.12, 6.16, D10.1.1, D10.1.2, D10.1.3, D10.2.1, D10.2.3\n**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.22, 10.23, 10.36, 10.38, 6.1, D10.2.3\n**Jaccard:** 0.409 — AI adds ['10.17', '10.6', '10.9', '2.1', '2.4', '2.5', '6.12', '6.16', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.2.1']; Human adds ['10.23']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.17",
+    "10.22",
+    "10.36",
+    "10.38",
+    "10.6",
+    "10.9",
+    "2.1",
+    "2.4",
+    "2.5",
+    "6.1",
+    "6.12",
+    "6.16",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.2.1",
+    "D10.2.3"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.38",
+    "6.1",
+    "D10.2.3"
+  ],
+  "ai_only": [
+    "10.17",
+    "10.6",
+    "10.9",
+    "2.1",
+    "2.4",
+    "2.5",
+    "6.12",
+    "6.16",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.2.1"
+  ],
+  "heath_only": [
+    "10.23"
+  ],
+  "jaccard": 0.409,
+  "proof_summary": "**Step 1.** Let s be a second bimedial straight line, and let r be the rational straight line to which its square is to be applied. By 10.38, write s=a+b, where a>b are medial straight lines commensur"
+}

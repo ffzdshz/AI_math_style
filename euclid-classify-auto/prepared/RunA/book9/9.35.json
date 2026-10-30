@@ -1,0 +1,26 @@
+{
+  "proposition": "9.35",
+  "book": 9,
+  "statement": "If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.",
+  "heath_proof": "Let there be as many numbers as we please in continued proportion, A, BC, D, EF, beginning from A as least, and let there be subtracted from BC and EF the numbers BG, FH, each equal to A; I say that, as GC is to A, so is EH to A, BC, D. For let FK be made equal to BC, and FL equal to D. Then, since FK is equal to BC, and of these the part FH is equal to the part BG, therefore the remainder HK is equal to the remainder GC. And since, as EF is to D, so is D to BC, and BC to A, while D is equal to FL, BC to FK, and A to FH, therefore, as EF is to FL, so is LF to FK, and FK to FH.  Separando, as EL is to LF, so is LK to FK, and KH to FH. [VII. 11, 13] Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; [VII. 12] therefore, as KH is to FH, so are EL, LK. KH to LF, FK, HF. But KH is equal to CG, FH to A, and LF, FK, HF to D, BC, A; therefore, as CG is to A, so is EH to D, BC, A. Therefore, as the excess of the second is to the first, so is the excess of the last to all those before it.",
+  "ai_proof_text": "9.35\n**Statement:** If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.\n\n**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An. From A2 subtract a number equal to A1, giving the excess A2 - A1, and from An subtract a number equal to A1, giving the excess An - A1. We are to show that (A2 - A1) : A1 = (An - A1) : (A1 + A2 + ... + A(n-1)).\n\n**Step 2.** Since the numbers are in continued proportion, we have A2:A1 = A3:A2 = A4:A3 = ... = An:A(n-1). Consider any two consecutive equal ratios A(k+1):Ak = A(k+2):A(k+1). Since A(k+2):A(k+1) = A(k+1):Ak, and Ak is less than A(k+1) which is less than A(k+2), by 7.11 the remainder after subtracting corresponds: (A(k+2) - A(k+1)) : (A(k+1) - Ak) = A(k+2) : A(k+1).\n\n**Step 3.** In particular, applying 7.11 to A3:A2 = A2:A1, we obtain (A3 - A2) : (A2 - A1) = A3 : A2 = A2 : A1. By 7.13 (alternando), since (A3 - A2) : (A2 - A1) = A2 : A1, we deduce (A3 - A2) : A2 = (A2 - A1) : A1.\n\n**Step 4.** Similarly, applying 7.11 to A4:A3 = A3:A2 gives (A4 - A3) : (A3 - A2) = A3 : A2 = A2 : A1. By 7.13, (A4 - A3) : A3 = (A3 - A2) : A2 = (A2 - A1) : A1. Repeating this argument for each successive pair of terms in the continued proportion, we establish that (A2 - A1) : A1 = (A3 - A2) : A2 = (A4 - A3) : A3 = ... = (An - A(n-1)) : A(n-1).\n\n**Step 5.** We now have as many equal ratios as there are terms before An, namely (A2 - A1) : A1 = (A3 - A2) : A2 = ... = (An - A(n-1)) : A(n-1). By 7.12, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents. Therefore (A2 - A1) : A1 = [(A2 - A1) + (A3 - A2) + (A4 - A3) + ... + (An - A(n-1))] : [A1 + A2 + A3 + ... + A(n-1)].\n\n**Step 6.** Consider the sum of the antecedents: (A2 - A1) + (A3 - A2) + (A4 - A3) + ... + (An - A(n-1)). Adding equals to equals successively by CN2, and observing that each intermediate term is both added and subtracted, the sum telescopes. Specifically, (A2 - A1) + (A3 - A2) = A3 - A1 by CN2 and CN3. Continuing, (A3 - A1) + (A4 - A3) = A4 - A1, and so on. Therefore the entire sum of antecedents equals An - A1.\n\n**Step 7.** Substituting back into the proportion from Step 5, we obtain (A2 - A1) : A1 = (An - A1) : (A1 + A2 + ... + A(n-1)). That is, as the excess of the second over the first is to the first, so is the excess of the last over the first to the sum of all terms before the last. This is what was to be proved.\n\n**USED:** 7.11, 7.12, 7.13, CN2, CN3\n**Human refs (from References field):** 7.11, 7.12, 7.13\n**Jaccard:** 0.600 — AI adds ['CN2', 'CN3']",
+  "ai_used": [
+    "7.11",
+    "7.12",
+    "7.13",
+    "CN2",
+    "CN3"
+  ],
+  "heath_refs": [
+    "7.11",
+    "7.12",
+    "7.13"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An. From A2 subtract a number equal to A1, giving the excess A2 - A1, "
+}

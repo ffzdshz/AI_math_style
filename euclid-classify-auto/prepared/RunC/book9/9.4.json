@@ -1,0 +1,37 @@
+{
+  "proposition": "9.4",
+  "book": 9,
+  "statement": "If a cube number by multiplying a cube number make some number, the product will be cube.",
+  "heath_proof": "For let the cube number A by multiplying the cube number B make C; I say that C is cube. For let A by multiplying itself make D; therefore D is cube. [IX. 3] And, since A by multiplying itself has made D, and by multiplying B has made C therefore, as A is to B, so is D to C. [VII. 17] And, since A, B are cube numbers, A, B are similar solid numbers. Therefore two mean proportional numbers fall between A, B; [VIII. 19] so that two mean proportional numbers will fall between D, C also. [VIII. 8] And D is cube; therefore C is also cube [VIII. 23]",
+  "ai_proof_text": "9.4\n**Statement:** If a cube number by multiplying a cube number make some number, the product will be cube.\n\n**Step 1.** Let A be a cube number with side a, so that a multiplied by a and again by a gives A, that is, a*a*a = A [D7.19]. Let B be a cube number with side b, so that b*b*b = B [D7.19]. Let C be the product A multiplied by B [D7.15]. We must show that C is cube.\n\n**Step 2.** Let G = b*b [D7.15]. Then G*b = b*b*b = B [D7.19]. Define D = A*b [D7.15], E = D*b [D7.15], and F = E*b [D7.15].\n\n**Step 3.** Since b multiplies A and D, by 7.17 the products b*A and b*D have the same ratio as A and D. Now b*A = D and b*D = E, so D : E = A : D, that is, A : D = D : E.\n\n**Step 4.** Since b multiplies D and E, by 7.17 the products b*D and b*E have the same ratio as D and E. Now b*D = E and b*E = F, so E : F = D : E, that is, D : E = E : F.\n\n**Step 5.** From Steps 3 and 4, A : D = D : E = E : F, so A, D, E, F are four numbers in continued proportion.\n\n**Step 6.** We now show that F equals A*B. Since b and A each multiply the number b, by 7.18 the products b*b and A*b are in the same ratio as the multipliers: b*b : A*b = b : A, that is, G : D = b : A. By 7.19 applied to the proportion G : D = b : A, the product of the extremes equals the product of the means: G*A = D*b. By 7.16, A*G = G*A. Therefore A*G = D*b = E.\n\n**Step 7.** Since b and A each multiply G, by 7.18 the products b*G and A*G are in the same ratio as the multipliers: b*G : A*G = b : A. Now b*G = b*(b*b) = b*b*b = B [D7.19], and A*G = E [Step 6]. So B : E = b : A. By 7.19 applied to B : E = b : A, we get B*A = E*b. By 7.16, A*B = B*A. Therefore A*B = E*b = F. Since C = A*B by definition, F = C.\n\n**Step 8.** Since A, D, E, F are four numbers in continued proportion [Step 5] and A is cube [given], by 8.23 the fourth number F is also cube. Since F = C = A*B [Step 7], the product C is cube. Q.E.D.\n\n**USED:** 7.16, 7.17, 7.18, 7.19, 8.23, D7.15, D7.19\n**Human refs (from References field):** 7.17, 8.19, 8.23, 8.8, 9.3\n**Jaccard:** 0.200 — AI adds ['7.16', '7.18', '7.19', 'D7.15', 'D7.19']; Human adds ['8.19', '8.8', '9.3']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.18",
+    "7.19",
+    "8.23",
+    "D7.15",
+    "D7.19"
+  ],
+  "heath_refs": [
+    "7.17",
+    "8.19",
+    "8.23",
+    "8.8",
+    "9.3"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.18",
+    "7.19",
+    "D7.15",
+    "D7.19"
+  ],
+  "heath_only": [
+    "8.19",
+    "8.8",
+    "9.3"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A be a cube number with side a, so that a multiplied by a and again by a gives A, that is, a*a*a = A [D7.19]. Let B be a cube number with side b, so that b*b*b = B [D7.19]. Let C be th"
+}

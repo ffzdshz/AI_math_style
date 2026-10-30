@@ -1,0 +1,66 @@
+{
+  "proposition": "12.17",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the common centre of both spheres; R > r > 0; mean proportional s satisfies s^2 = Rr with r < s < R",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Polygon G inscribed in circle of radius R in plane E, with sides wholly outside the circle of radius s; apothem a satisfies s < a < R",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "k = a/R with 0 < k < 1",
+      "type": "algebraic_bound"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Axis NS perpendicular to plane E through O; vertices A_{i,j} lie on the greater sphere, arranged in rings perpendicular to NS with center H_i and circumradius rho_i",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Midpoint U_i of ring edge lies in bisecting plane B; H_iU_i/rho_i = a/R = k by similar triangles",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Each ring edge A_{i,j}A_{i,j+1} is perpendicular to bisecting plane B; consecutive ring edges are parallel; faces are plane trapezia or polar triangles",
+      "type": "line_perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "O is in the interior of the polyhedral solid K; K is inscribed in the greater sphere (all vertices on sphere, all faces inside)",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Projection of any face point P onto B yields Q on segment U_iU_{i+1}; OP >= OQ by Pythagoras",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "U_iU_{i+1} is obtained from C_iC_{i+1} by scaling perpendicular distances from NS by factor k; for every Q on U_iU_{i+1} there is Y on C_iC_{i+1} with TQ = k*TY",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 9",
+      "claim": "OQ^2 = OT^2 + k^2*TY^2 >= k^2*(OT^2+TY^2) = k^2*OY^2 >= k^2*a^2, so OP >= OQ >= ka",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "ka = a^2/R > s^2/R = r since a > s; therefore every face point P satisfies OP > r, so the lesser sphere lies strictly inside K",
+      "type": "inside_outside"
+    }
+  ],
+  "configuration_map": "O: center of both spheres, lies in plane E and on axis NS. Plane E: through O, contains concentric circles of radii R (greater sphere cross-section) and s (mean proportional). Polygon G: regular 2m-gon inscribed in circle of radius R in plane E, apothem a with s < a < R, k = a/R. Axis NS: diameter perpendicular to E through O. Vertices A_{i,j}: on greater sphere, at height H_i on NS, circumradius rho_i from NS; for fixed i they form a regular 2m-gon in the horizontal plane through H_i. Midpoints U_i: midpoint of ring edge A_{i,j}A_{i,j+1}, in bisecting plane B, at distance k*rho_i from NS. Plane B: through NS and midpoint M of V_jV_{j+1}. Semicircle C_i in B: copy of the meridian semicircle, H_iC_i = rho_i. Solid K: bounded by trapezia (between consecutive non-degenerate rings) and polar triangles (at poles), with O interior. All vertices on greater sphere, all faces inside it. Every face point at distance > r from O.",
+  "pass_reason": "All spatial claims are mutually consistent. The 3D construction (meridian rotation of polygon G, ring polygons, bisecting plane projection, scaling by factor k) is geometrically coherent. The key inequality chain OP >= OQ >= ka > r is valid: the projection step (Step 7) correctly reduces 3D distance to 2D distance in the bisecting plane; the scaling relationship (Step 8) correctly relates midpoint distances to semicircle distances; the bound OQ >= ka (Step 9) follows from k < 1 and perpendicular distance a; and the final comparison ka > r (Step 10) follows from a > s and s^2 = Rr. No contradictory point positions, no invalid angle decompositions, no inconsistent inside/outside claims."
+}

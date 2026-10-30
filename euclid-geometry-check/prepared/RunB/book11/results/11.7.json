@@ -1,0 +1,76 @@
+{
+  "proposition": "11.7",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "AB and CD lie in the same plane P (by definition of parallel lines, D1.23)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is in plane P (since E is on AB)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "F is in plane P (since F is on CD)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "G is on segment EF between E and F",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "E, G, F are collinear (G lies on EF)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "H is on AB, distinct from E",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "F is not on line AB (AB parallel to CD prevents intersection)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle EHF lies in some plane Q (by 11.2)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Segment EH lies in plane Q; by 11.1, entire line AB lies in plane Q",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 8",
+      "claim": "F is in plane Q (vertex of triangle EHF)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EF lies in plane Q (side of triangle EHF)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 11",
+      "claim": "H, E, F are non-collinear (F not on line AB) and determine plane Q uniquely",
+      "type": "non_collinearity"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Plane P contains H, E, F; since these are non-collinear and determine a unique plane, P = Q",
+      "type": "plane_identity"
+    }
+  ],
+  "configuration_map": "Plane P: defined as the plane containing parallel lines AB and CD (D1.23). Points E (on AB) and F (on CD) are both in P. Point H is on AB, distinct from E, also in P. Triangle EHF has all three vertices in P. Plane Q is defined as the plane of triangle EHF (by 11.2). Since segment EH is in Q, line AB is in Q (by 11.1). Since EF is a side of triangle EHF, EF is in Q. Both P and Q contain the three non-collinear points H, E, F (non-collinear because F is not on line AB). Three non-collinear points determine a unique plane, so P = Q. Therefore EF lies in P, the plane of the parallel lines.",
+  "pass_reason": "All spatial claims concern plane membership and are mutually consistent. The key argument (P = Q via shared non-collinear points H, E, F) is valid. There are no angle decompositions, no interior/exterior point arguments, and no contradictory betweenness or ray-ordering claims. The abandoned contradiction attempt in Steps 3-5 introduces no binding claims used in the final proof."
+}

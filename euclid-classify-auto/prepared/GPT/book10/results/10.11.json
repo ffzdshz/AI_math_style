@@ -1,0 +1,13 @@
+{
+  "proposition": "10.11",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. For the commensurable case, both proofs share the same backbone: apply 10.5 to get a numerical ratio, transfer it to C:D, then apply 10.6 to conclude commensurability. However, for the incommensurable case the backbones diverge. Heath uses a direct argument via 10.7 (incommensurable magnitudes do not have a numerical ratio) and 10.8 (magnitudes without a numerical ratio are incommensurable). The AI instead proves this case by contradiction: assuming C is commensurable with D, it applies 10.5 to obtain a numerical ratio for C:D, uses 5.11 (ratio transitivity) to transfer that ratio to A:B, then applies 10.6 to conclude A is commensurable with B, contradicting the hypothesis. This is a genuinely different logical path that avoids 10.7 and 10.8 entirely, substituting a valid reductio argument that reuses the commensurable-case machinery. The contradiction argument is logically complete and sound, so Q3 confirms D.",
+  "jaccard": 0.286,
+  "ai_citations": "10.5|10.6|5.11|D10.1.1|D5.6",
+  "heath_citations": "10.5|10.6|10.7|10.8",
+  "ai_only": "5.11|D10.1.1|D5.6",
+  "heath_only": "10.7|10.8",
+  "audit_record": ""
+}

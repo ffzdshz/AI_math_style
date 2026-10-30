@@ -1,0 +1,53 @@
+{
+  "proposition": "3.25",
+  "book": 3,
+  "statement": "Given a segment of a circle, to describe the complete circle of which it is a segment.",
+  "heath_proof": "Let ABC be the given segment of a circle; thus it is required to describe the complete circle belonging to the segment ABC, that is, of which it is a segment. For let AC be bisected at D, let DB be drawn from the point D at right angles to AC, and let AB. be joined; the angle ABD is then greater than, equal to, or less than the angle BAD. First let it be greater; and on the straight line BA, and at the point A on it, let the angle BAE be constructed equal to the angle ABD; let DB be drawn through to E, and let EC be joined. Then, since the angle ABE is equal to the angle BAE, the straight line EB is also equal to EA. [I. 6]  And, since AD is equal to DC, and DE is common, the two sides AD, DE are equal to the two sides CD, DE respectively; and the angle ADE is equal to the angle CDE, for each is right; therefore the base AE is equal to the base CE. But AE was proved equal to BE; therefore BE is also equal to CE; therefore the three straight lines AE, EB, EC are equal to one another. Therefore the circle drawn with centre E and distance one of the straight lines AE, EB, EC will also pass through the remaining points and will have been completed. [III. 9] Therefore, given a segment of a circle, the complete circle has been described. And it is manifest that the segment ABC is less than a semicircle, because the centre E happens to be outside it. Similarly, even if the angle ABD be equal to the angle BAD, AD being equal to each of the two BD, DC, the three straight lines DA, DB, DC will be equal to one another, D will be the centre of the completed circle, and ABC will clearly be a semicircle. But, if the angle ABD be less than the angle BAD, and if we construct, on the straight line BA and at the point A on it, an angle equal to the angle ABD, the centre will fall on DB within the segment ABC, and the segment ABC will clearly be greater than a semicircle. Therefore, given a segment of a circle, the complete circle has been described.",
+  "ai_proof_text": "3.25\n**Statement:** Given a segment of a circle, to describe the complete circle of which it is a segment.\n\n**Step 1.** Let ABC be the given segment of a circle, AC its base and ABC its circumference. Bisect AC at the point D (1.10); from D draw DB at right angles to AC (1.11), and let it meet the circumference of the segment at B; join AB (P1).\n\n**Step 2.** In the triangle ABD the angle ADB is right (Step 1), and any two angles of a triangle are together less than two right angles (1.17); hence each of the angles ABD, BAD is less than a right angle. Now the angle ABD is either greater than, equal to, or less than the angle BAD, and we treat the three cases in turn.\n\n**Step 3.** (Case I: angle ABD greater than angle BAD.) On the straight line BA, at the point A on it, construct the angle BAE equal to the angle ABD (1.23), on the same side of AB as D. The angles BAE, ABD are together equal to twice the angle ABD, which is less than two right angles (Step 2); therefore the straight lines AE and BD, produced if necessary (P2), meet on the side of D (P5). Let them meet at E, and join EC (P1). Since the angle BAE is greater than the angle BAD, the line AE falls outside the angle BAD, on the other side of AC from B; so E lies on DB produced beyond D, outside the segment.\n\n**Step 4.** In the triangle ABE the angle ABE is equal to the angle BAE (Step 3); therefore the side AE, which subtends the angle ABE, is equal to the side BE, which subtends the angle BAE (1.6).\n\n**Step 5.** Because B, D, E lie in one straight line, the straight line DA set up on BE makes the angles ADE, ADB together equal to two right angles (1.13); the angle ADB is right (Step 1), so the angle ADE is right. In the same way DC set up on BE makes the angles CDE, CDB together equal to two right angles (1.13), and CDB is right, so CDE is right. Hence the angle ADE is equal to the angle CDE (P4).\n\n**Step 6.** In the triangles ADE, CDE, the side AD is equal to the side DC (Step 1), the side DE is common, and the angle ADE is equal to the angle CDE (Step 5); therefore the base AE is equal to the base CE (1.4).\n\n**Step 7.** AE is equal to BE (Step 4) and AE is equal to CE (Step 6); therefore the three straight lines EA, EB, EC are equal to one another (CN1). With centre E and distance EA describe a circle (P3); since EB and EC are each equal to EA, this circle passes also through B and C (D1.15). Its centre E lies outside the segment, so in this case the segment ABC is less than a semicircle.\n\n**Step 8.** (Case II: angle ABD equal to angle BAD.) Then in the triangle ABD the side DA, subtending the angle ABD, is equal to the side DB, subtending the angle BAD (1.6). But DA is equal to DC (Step 1); therefore DA, DB, DC are equal to one another (CN1). With centre D and distance DA describe a circle (P3); since DB and DC are each equal to DA, it passes through B and C (D1.15). Since AC passes through the centre D, it is a diameter (D1.17), and the segment ABC is a semicircle (D1.18).\n\n**Step 9.** (Case III: angle ABD less than angle BAD.) On the straight line BA, at the point A on it, construct the angle BAE equal to the angle ABD (1.23), on the same side of AB as D. Exactly as in Step 3, the angles BAE, ABD are together less than two right angles, so AE meets BD at a point E on the side of D (P5); and since the angle BAE is now less than the angle BAD, AE falls within the angle BAD and meets BD between B and D, so E lies within the segment. Join EC (P1).\n\n**Step 10.** As in Step 4, since the angle ABE is equal to the angle BAE, AE is equal to BE (1.6). Here the angles ADE, CDE are the right angles ADB, BDC themselves (Step 1), and so are equal (P4); hence, as in Step 6, since AD is equal to DC, DE is common, and the angle ADE is equal to the angle CDE, the base AE is equal to the base CE (1.4). Therefore EA, EB, EC are equal to one another (CN1); with centre E and distance EA describe a circle (P3), which passes through B and C as well as A (D1.15). Its centre E lies within the segment, so in this case the segment ABC is greater than a semicircle.\n\n**Step 11.** In every case a circle has been described which passes through the three points A, B, C, all of which lie on the circumference of the given segment. Two distinct circles cannot have three points in common, for a circle does not cut a circle at more points than two (3.10); therefore the circle described is the very circle of which ABC is a segment. Given the segment ABC, the complete circle of which it is a segment has therefore been described. Q.E.F.\n\n**USED:** 1.10, 1.11, 1.13, 1.17, 1.23, 1.4, 1.6, 3.10, CN1, D1.15, D1.17, D1.18, P1, P2, P3, P4, P5\n**Human refs (from References field):** 1.6, 3.9\n**Jaccard:** 0.056 — AI adds ['1.10', '1.11', '1.13', '1.17', '1.23', '1.4', '3.10', 'CN1', 'D1.15', 'D1.17', 'D1.18', 'P1', 'P2', 'P3', 'P4', 'P5']; Human adds ['3.9']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.17",
+    "1.23",
+    "1.4",
+    "1.6",
+    "3.10",
+    "CN1",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.6",
+    "3.9"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.17",
+    "1.23",
+    "1.4",
+    "3.10",
+    "CN1",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "heath_only": [
+    "3.9"
+  ],
+  "jaccard": 0.056,
+  "proof_summary": "**Step 1.** Let ABC be the given segment of a circle, AC its base and ABC its circumference. Bisect AC at the point D (1.10); from D draw DB at right angles to AC (1.11), and let it meet the circumfer"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "13.6",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs agree on the first half: AC is shown to be an apotome via XIII.1 (sq(CD) = 5 sq(DA)), establishing CD and DA as rational lines commensurable in square only, then applying X.73. However, the proofs diverge fundamentally on the second half (showing CB is an apotome). Heath uses the application-of-areas technique: since AB is cut in extreme and mean ratio, rect(AB,BC) = sq(AC) by VI.Def.3 and VI.17, and then X.97 shows that applying the square on an apotome to a rational line produces a first apotome, so CB is a first apotome. The AI instead takes a direct algebraic path: computing CB = 3D - F (where D = AB/2 and F = AC + D), proving 3D is rational and that 3D and F are commensurable in square only (since sq(3D):sq(F) = 9:5, not a ratio of square numbers), then applying X.73 to conclude CB is an apotome. These represent genuinely different key intermediate conclusions -- Heath's route through application of areas (VI.17) and X.97 versus the AI's direct commensurability argument via X.73. The AI's path is logically valid (Q3 confirmed), yielding classification D.",
+  "jaccard": 0.545,
+  "ai_citations": "1.10|10.6|10.73|10.9|13.1|CN5|D10.1.3|D10.1.4|D6.3",
+  "heath_citations": "10.6|10.73|10.9|10.97|13.1|6.17|D10.1.4|D6.3",
+  "ai_only": "1.10|CN5|D10.1.3",
+  "heath_only": "10.97|6.17",
+  "audit_record": ""
+}

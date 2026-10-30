@@ -1,0 +1,42 @@
+{
+  "proposition": "1.44",
+  "book": 1,
+  "statement": "To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+  "heath_proof": "Let AB be the given straight line, C the given triangle and D the given rectilineal angle;thus it is required to apply to the given straight line AB, in an angle equal to the angle D, a parallelogram equal to the given triangle C. Let the parallelogram BEFG be constructed equal to the triangle C, in the angle EBG which is equal to D [I. 42];let it be placed so that BE is in a straight line with AB; let FG be drawn through to H, and let AH be drawn through A parallel to either BG or EF. [I. 31] Let HB be joined. Then, since the straight line HF falls upon the parallelsAH, EF, the angles AHF, HFE are equal to two right angles. [I. 29]Therefore the angles BHG, GFE are less than two right angles; and straight lines produced indefinitely from angles less thantwo right angles meet; [Post. 5] therefore HB, FE, when produced, will meet. Let them be produced and meet at K; through the point K let KL be drawn parallel to either EA or FH, [I. 31] and let HA, GB be produced to the points L, M. Then HLKF is a parallelogram, HK is its diameter, and AG, ME are parallelograms. and LB, BF the so-called complements, about HK; therefore LB is equal to BF. [I. 43] But BF is equal to the triangle C;therefore LB is also equal to C. [C. N. 1] And, since the angle GBE is equal to the angle ABM, [I. 15] while the angle GBE is equal to D, the angle ABM is also equal to the angle D. Therefore the parallelogram LB equal to the given triangleC has been applied to the given straight line AB, in the angle ABM which is equal to D.",
+  "ai_proof_text": "1.44\n**Statement:** To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.\n\n**Step 1.** Let AB be the given straight line, T the given triangle, and θ the given rectilineal angle. The direct construction is to obtain the required area and angle by 1.42, then transfer the area to a parallelogram on AB by 1.43. Produce AB beyond B and, at B, construct an angle equal to θ with one arm along this continuation. (P2, 1.23)\n\n**Step 2.** In this angle construct the parallelogram BEFG equal in area to T, with A, B, E in that order on one straight line and ∠EBG = θ. Thus BE ∥ GF and BG ∥ EF. No length is prescribed for the auxiliary side BE. (1.42)\n\n**Step 3.** Through A draw a straight line parallel to BG, meeting FG produced beyond G at H; thus H, G, F are in that order. The intersection on this extension follows from the parallel-angle relations and the parallel postulate. Since AH ∥ BG and BG ∥ EF, also AH ∥ EF. Join HB. (1.31, P2, 1.29, P5, 1.30, P1)\n\n**Step 4.** Produce HB beyond B to X, and FE beyond E to Y. In triangle HAB, the two angles ∠ABH and ∠HAB together are less than two right angles. This is precisely the two-angle inequality needed to establish the next intersection. Moreover, ∠EBX = ∠ABH, being vertical angles, and ∠BEY = ∠HAB, being alternate angles between AH and EF. Consequently, ∠EBX and ∠BEY together are less than two right angles. (P2, 1.17, 1.15, 1.29, CN2)\n\n**Step 5.** Therefore the straight lines BX and EY, produced, meet at K on the side of BE containing those rays. In particular, H, B, K are in that order, as are F, E, K. (P5)\n\n**Step 6.** Through K draw a straight line parallel to AB, meeting HA produced beyond A at L and GB produced beyond B at M. These intersections follow from the parallel-angle relations and P5. Now HF ∥ LK and HL ∥ FK, so HFKL is a parallelogram. Also AB ∥ LM and AL ∥ BM, so ABML is a parallelogram having the given segment AB as a whole side. (1.31, P2, 1.29, P5, 1.30)\n\n**Step 7.** The diameter HK of HFKL passes through B. The straight lines ABE and GBM through B are parallel to its respective pairs of opposite sides. Hence HGBA and BEKM are the two parallelograms about this diameter, while BEFG and ABML are their complements. The complements are equal; therefore ABML equals BEFG in area. Since BEFG equals T, ABML also equals T. (1.43, CN1)\n\n**Step 8.** Since BA and BE are opposite rays, and BM and BG are opposite rays, ∠ABM and ∠EBG are vertical angles. Thus ∠ABM = ∠EBG = θ. Therefore ABML is a parallelogram applied to the given straight line AB, in an angle equal to the given angle, and equal in area to the given triangle, as required. (1.15, CN1)\n\n**USED:** 1.15, 1.17, 1.23, 1.29, 1.30, 1.31, 1.42, 1.43, CN1, CN2, P1, P2, P5\n**Human refs (from References field):** 1.15, 1.29, 1.31, 1.42, 1.43, CN1, P5\n**Jaccard:** 0.538 — AI adds ['1.17', '1.23', '1.30', 'CN2', 'P1', 'P2']",
+  "ai_used": [
+    "1.15",
+    "1.17",
+    "1.23",
+    "1.29",
+    "1.30",
+    "1.31",
+    "1.42",
+    "1.43",
+    "CN1",
+    "CN2",
+    "P1",
+    "P2",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.15",
+    "1.29",
+    "1.31",
+    "1.42",
+    "1.43",
+    "CN1",
+    "P5"
+  ],
+  "ai_only": [
+    "1.17",
+    "1.23",
+    "1.30",
+    "CN2",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.538,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, T the given triangle, and θ the given rectilineal angle. The direct construction is to obtain the required area and angle by 1.42, then transfer the area"
+}

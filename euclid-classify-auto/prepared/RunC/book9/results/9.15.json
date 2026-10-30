@@ -1,0 +1,13 @@
+{
+  "proposition": "9.15",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The forward dependency gate passed (all citations are from Books 7-8, prior to 9.15). Q1 found no logical errors: all three cases are addressed and each step is valid. Q2 revealed that while cases 1 (A+B prime to C) and 2 (B+C prime to A) share the same backbone in both proofs, case 3 (A+C prime to B) follows genuinely different intermediate conclusions. Heath uses algebraic identities II.3 and II.4 to expand DF^2 and then applies separando twice to strip away terms, establishing that A+C is prime to B. The AI instead uses VII.26 to show A is prime to C, then VII.28 to get A+C prime to both A and C, then first-principles divisibility arguments to show A+C is prime to each of p and q individually, and finally VII.24 to conclude A+C is prime to pq=B. These are substantively different logical paths through different intermediate conclusions, so Case B (different backbone) applies. Q3 confirms the AI path is logically valid: each step is properly justified and the chain runs from premises to conclusion without gaps. Classification is D (path difference).",
+  "jaccard": 0.556,
+  "ai_citations": "7.22|7.24|7.25|7.26|7.28|8.2|D7.12",
+  "heath_citations": "2.3|2.4|7.22|7.24|7.25|7.28|8.2",
+  "ai_only": "7.26|D7.12",
+  "heath_only": "2.3|2.4",
+  "audit_record": ""
+}

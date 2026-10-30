@@ -1,0 +1,31 @@
+{
+  "proposition": "2.6",
+  "run": "GPT",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, B, D are collinear in the order A-C-B-D, with AC = CB (bisection hypothesis)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Segment AD is decomposed into three consecutive parts AC, CB, BD (used to apply Prop 2.1)",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC = CB implies R(AC,BD) = R(CB,BD) — equal segments yield equal rectangles",
+      "type": "equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Point B lies between C and D on the line, so CD is cut at B into CB and BD (used to apply Prop 2.4)",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Single line with four collinear points in order A-C-B-D, where AC = CB. All constructions stay on this line. AD = AC + CB + BD is the whole with the added straight line. CD = CB + BD is the half plus the added straight line. No auxiliary points off the line, no angles, no circles, no triangles are introduced. The segment decompositions (AD into three parts, CD into two parts at B) are consistent with the collinear ordering throughout.",
+  "pass_reason": "The proof is essentially algebraic, applying Props 2.1 and 2.4 to segments of a single line. The only spatial claims are the collinear ordering A-C-B-D and two segment decompositions (AD = AC + CB + BD, and CD = CB + BD), all of which are mutually consistent with the given configuration. No angle decompositions, interior/exterior arguments, or circle constructions appear."
+}

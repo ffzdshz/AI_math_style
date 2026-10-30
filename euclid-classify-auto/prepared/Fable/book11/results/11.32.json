@@ -1,0 +1,13 @@
+{
+  "proposition": "11.32",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone: (1) construct a parallelogram equal to base AE adjacent to base CF, (2) complete a parallelepipedal solid on that parallelogram with the same height as CD, (3) invoke XI.31 to establish that the new solid equals AB, (4) invoke XI.25 on the cutting plane to obtain the ratio CF:new-base = CD:new-solid, and (5) substitute to conclude AE:CF = AB:CD. The sole structural difference is how step (1) is accomplished: Heath cites I.45 in a single step, while the AI first converts the parallelogram AE into an equal triangle (via I.38, I.34, CN1, CN2) and then applies I.44 to the given line GF, followed by collinearity verification (I.29, I.14) and parallelogram completion (I.30, I.31). Since I.45's own proof uses I.44 internally along with I.29, I.14, I.30, I.34, CN1, and CN2, the AI is re-deriving the internals of I.45 rather than citing it as a unit. The additional ai_only citations 5.7 and 5.11 make explicit the ratio substitution that Heath handles informally. All key intermediate conclusions match at the same logical positions, making this a citation-depth difference (Case A), hence G.",
+  "jaccard": 0.118,
+  "ai_citations": "1.14|1.29|1.3|1.30|1.31|1.34|1.38|1.44|11.25|11.31|5.11|5.7|CN1|CN2|P1|P2",
+  "heath_citations": "1.45|11.25|11.31",
+  "ai_only": "1.14|1.29|1.3|1.30|1.31|1.34|1.38|1.44|5.11|5.7|CN1|CN2|P1|P2",
+  "heath_only": "1.45",
+  "audit_record": ""
+}

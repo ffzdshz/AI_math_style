@@ -1,0 +1,22 @@
+{
+  "proposition": "5.6",
+  "book": 5,
+  "statement": "If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.",
+  "heath_proof": "For let two magnitudes AB, CD be equimultiples of two magnitudes E, F, and let AG, CH subtracted from them be equimultiples of the same two E, F; I say that the remainders also, GB, HD, are either equal to E, F or equimultiples of them. For, first, let GB be equal to E; I say that HD is also equal to F. For let CK be made equal to F. Since AG is the same multiple of E that CH is of F, while GB is equal to E and KC to F, therefore AB is the same multiple of E that KH is of F. [V. 2] But, by hypothesis, AB is the same multiple of E that CD is of F; therefore KH is the same multiple of F that CD is of F. Since then each of the magnitudes KH, CD is the same multiple of F, therefore KH is equal to CD. Let CH be subtracted from each; therefore the remainder KC is equal to the remainder HD. But F is equal to KC; therefore HD is also equal to F. Hence, if GB is equal to E, HD is also equal to F. Similarly we can prove that, even if GB be a multiple of E, HD is also the same multiple of F.",
+  "ai_proof_text": "5.6\n**Statement:** If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.\n\n**Step 1.** Let AB and DE be equimultiples of two magnitudes C and F respectively, so that AB = mC and DE = mF for some multiplier m (by D5.2, definition of multiple/equimultiple).\n\n**Step 2.** Let AG be subtracted from AB and DH be subtracted from DE, where AG and DH are equimultiples of C and F respectively, so that AG = nC and DH = nF for some multiplier n with n < m (by D5.2).\n\n**Step 3.** Let GB be the remainder AB - AG, and let HE be the remainder DE - DH. We must show that GB and HE are either equal to C and F, or are equimultiples of C and F.\n\n**Step 4.** Since n < m, the difference m - n is at least 1. Consider the magnitude (m - n)C. If m - n = 1, then (m - n)C = C. If m - n > 1, then (m - n)C is a (m - n)-multiple of C (by D5.2).\n\n**Step 5.** Now, AG = nC is an n-multiple of C, and (m - n)C is a (m - n)-multiple of C. By 5.2, the sum of two equimultiples of the same magnitude is also an equimultiple: nC + (m - n)C = (n + (m - n))C = mC.\n\n**Step 6.** But AB = mC. Therefore AG + (m - n)C = nC + (m - n)C = mC = AB.\n\n**Step 7.** Also, AG + GB = AB, since GB is the remainder when AG is subtracted from AB.\n\n**Step 8.** From Steps 6 and 7, AG + (m - n)C = AG + GB. Since AG = nC is equal in both sums, subtracting the equal magnitude AG from both equal wholes, the remainders are equal (by CN3). Therefore GB = (m - n)C.\n\n**Step 9.** By the same reasoning applied to DE and DH: DH = nF is an n-multiple of F, and (m - n)F is a (m - n)-multiple of F. By 5.2, nF + (m - n)F = mF = DE.\n\n**Step 10.** Also, DH + HE = DE. Therefore DH + (m - n)F = DH + HE. Subtracting the equal magnitude DH from both equal wholes, the remainders are equal (by CN3). Therefore HE = (m - n)F.\n\n**Step 11.** Now, if m - n = 1, then GB = C and HE = F, so the remainders are equal to C and F respectively.\n\n**Step 12.** If m - n > 1, then GB = (m - n)C and HE = (m - n)F, so the remainders are equimultiples of C and F with the same multiplier m - n (by D5.2).\n\n**Step 13.** Therefore, in either case, the remainders GB and HE are either equal to C and F, or are equimultiples of them. Q.E.D.\n\n**USED:** 5.2, CN3, D5.2\n**Human refs (from References field):** 5.2\n**Jaccard:** 0.333 — AI adds ['CN3', 'D5.2']",
+  "ai_used": [
+    "5.2",
+    "CN3",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "5.2"
+  ],
+  "ai_only": [
+    "CN3",
+    "D5.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AB and DE be equimultiples of two magnitudes C and F respectively, so that AB = mC and DE = mF for some multiplier m (by D5.2, definition of multiple/equimultiple).  **Step 2.** Let AG"
+}

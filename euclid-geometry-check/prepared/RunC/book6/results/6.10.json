@@ -1,0 +1,46 @@
+{
+  "proposition": "6.10",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is a straight line with points C and D on it, giving ordered segments A-C-D-B. EF is a separate uncut straight line.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Points E, H, K, G are collinear on an auxiliary line from E at an angle to EF, in order E-H-K-G, with EH=AC, HK=CD, KG=DB.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "G and F are joined, forming segment GF connecting the auxiliary line to line EF.",
+      "type": "line_construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "HL is drawn parallel to GF, meeting EF at L; KM is drawn parallel to GF, meeting EF at M. L and M are on line EF.",
+      "type": "parallel_line"
+    },
+    {
+      "step": "Step 5",
+      "claim": "HL is parallel to KM (both parallel to GF, by 1.30). In triangle EKM, HL is parallel to side KM, with H on side EK and L on side EM. This implies E-L-M ordering on EF.",
+      "type": "triangle_intercept"
+    },
+    {
+      "step": "Step 6",
+      "claim": "In triangle EGF, KM is parallel to side GF, with K on side EG and M on side EF. This implies E-M-F ordering on EF.",
+      "type": "triangle_intercept"
+    },
+    {
+      "step": "Steps 7-11",
+      "claim": "Purely algebraic ratio manipulations (componendo, alternando, transitivity). No spatial claims.",
+      "type": "algebraic"
+    }
+  ],
+  "configuration_map": "Auxiliary line from E: contains E, H, K, G in order E-H-K-G. Line EF: contains E, L, M, F in order E-L-M-F. Triangle EGF has vertices at E (common vertex), G (end of auxiliary line), F (end of target line). Triangle EKM is nested inside triangle EGF, with K between E and G, and M between E and F. Line HL (through H parallel to GF) intersects EF at L, which falls between E and M. Line KM (through K parallel to GF) intersects EF at M, which falls between E and F. The two parallel intercept lines create a consistent nested configuration where the proportional divisions are well-defined.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places points in well-defined orders on two lines from a common vertex E, with parallel lines creating valid triangle intercepts. The two applications of Proposition 6.2 are geometrically justified: in each case the parallel line cuts two sides of a non-degenerate triangle at interior points. The ordering E-L-M-F on line EF is consistent with the ordering E-H-K-G on the auxiliary line via the parallel intercept property. Steps 7-12 involve only algebraic ratio manipulations with no additional spatial claims."
+}

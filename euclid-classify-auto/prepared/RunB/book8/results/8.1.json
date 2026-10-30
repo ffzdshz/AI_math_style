@@ -1,0 +1,13 @@
+{
+  "proposition": "8.1",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as D (Path difference). Heath's proof works by assuming a smaller set in the same ratio, applying ex aequali (7.14) to reduce to the ratio of extremes A:D = E:H, invoking 7.21 to conclude A,D are the least in that ratio, then using 7.20 to derive that A measures E, which contradicts E < A. The AI proof takes a fundamentally different approach: it invokes 7.33 to guarantee the existence of a least set B with the same ratios, then applies 7.20 to show that the least set measures the original with a common multiplier m (so A_i = m*B_i for all i), then uses D7.12 (definition of coprimality) to conclude m must be a unit since it is a common measure of the coprime extremes, yielding A_i = B_i, which contradicts the assumption that the A's are not the least. The key intermediates differ: Heath establishes a ratio equality of extremes and uses the 'primes are least' theorem, while the AI establishes a uniform multiplier relationship and uses the definition of coprimality directly. Both paths are logically valid but arrive at the contradiction through genuinely different intermediate conclusions.",
+  "jaccard": 0.2,
+  "ai_citations": "7.20|7.33|D7.12",
+  "heath_citations": "7.14|7.20|7.21",
+  "ai_only": "7.33|D7.12",
+  "heath_only": "7.14|7.21",
+  "audit_record": ""
+}

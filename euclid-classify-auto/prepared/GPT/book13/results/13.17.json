@@ -1,0 +1,13 @@
+{
+  "proposition": "13.17",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone of key intermediate conclusions: constructing a dodecahedron from a cube, proving each face is an equilateral equiangular pentagon in one plane, verifying all twenty vertices lie on the circumsphere, and proving the side is an apotome. The differences lie entirely in subsidiary methods at each juncture. For coplanarity, Heath uses VI.32 and XI.6 while the AI uses proportional right triangles (VI.6) and supplementary angles (I.14) with XI.4 and XI.8. For equiangularity, Heath invokes XIII.7 (three equal angles of an equilateral pentagon imply equiangularity) while the AI proves all five angles equal directly via diagonal computation and SSS congruence (I.8), bypassing XIII.7 entirely. For the circumsphere, Heath uses XI.38 while the AI derives the same from its coordinate framework. The AI's very large ai_only set (25 items) reflects its more explicit citation style, including many definitions, postulates, common notions, and basic construction propositions, alongside alternative substantive lemmas used in place of Heath's shortcuts. The four heath_only items (XI.38, XI.6, XIII.7, VI.32) are propositions Heath uses as convenient tools whose underlying conclusions are nonetheless present in the AI proof, established by different means. Since the key intermediate conclusions are identical and the differences are in citation depth and subsidiary proof methods, this is a granularity difference.",
+  "jaccard": 0.216,
+  "ai_citations": "1.10|1.14|1.3|1.31|1.32|1.47|1.8|11.1|11.12|11.4|11.8|11.9|13.15|13.4|13.5|13.6|2.4|3.2|5.15|6.16|6.2|6.30|6.6|CN2|D1.23|D10.1.2|D10.1.3|D11.12|D11.14|D11.16|D11.28|D6.3|P1",
+  "heath_citations": "1.47|1.8|11.1|11.38|11.6|13.15|13.4|13.5|13.6|13.7|5.15|6.32",
+  "ai_only": "1.10|1.14|1.3|1.31|1.32|11.12|11.4|11.8|11.9|2.4|3.2|6.16|6.2|6.30|6.6|CN2|D1.23|D10.1.2|D10.1.3|D11.12|D11.14|D11.16|D11.28|D6.3|P1",
+  "heath_only": "11.38|11.6|13.7|6.32",
+  "audit_record": ""
+}

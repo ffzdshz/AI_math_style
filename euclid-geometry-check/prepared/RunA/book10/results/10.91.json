@@ -1,0 +1,31 @@
+{
+  "proposition": "10.91",
+  "run": "RunA",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "DG is the annex to AD, so AG = AD + DG; points A, D, G are collinear with D between A and G",
+      "type": "collinear points on segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E bisects DG, so E is the midpoint of segment DG",
+      "type": "collinear point on segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "F lies on AG such that AF * FG = EG^2 (application of areas by 6.28); F is between A and G",
+      "type": "collinear point on segment"
+    },
+    {
+      "step": "Step 8",
+      "claim": "H and K are introduced as abstract lengths (sides of squares equal to AC*AF and AC*FG respectively), not as points in a geometric configuration",
+      "type": "abstract length definition"
+    }
+  ],
+  "configuration_map": "All constructed points lie on a single line or are abstract lengths. A, F, G are collinear with F between A and G (guaranteed by 6.28). D, E, G are collinear with E the midpoint of DG. H and K are not geometric points but abstract line segments defined as sides of squares equal to certain rectangular areas. There is no 2D or 3D spatial configuration.",
+  "skip_reason": "This Book 10 proof is purely algebraic/proportional. It reasons entirely about commensurability relations between line segments and areas, using algebraic identities (e.g., (H-K)^2 = H^2 + K^2 - 2HK). The only geometric constructions are placing points on a line segment (bisection and application of areas), which are trivially consistent. There are no angle decompositions, no triangle interior/exterior arguments, no circle configurations, no ray ordering claims, and no 2D/3D spatial reasoning of the kind the protocol targets."
+}

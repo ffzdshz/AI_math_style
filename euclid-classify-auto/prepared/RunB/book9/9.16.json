@@ -1,0 +1,31 @@
+{
+  "proposition": "9.16",
+  "book": 9,
+  "statement": "If two numbers be prime to one another, the second will not be to any other number as the first is to the second.",
+  "heath_proof": "For let the two numbers A, B be prime to one another; I say that B is not to any other number as A is to B. For, if possible, as A is to B, so let B be to C. Now A, B are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent; [VII. 20] therefore A measures B as antecedent antecedent. But it also measures itself; therefore A measures A, B which are prime to one another: which is absurd. Therefore B will not be to C, as A is to B.",
+  "ai_proof_text": "9.16\n**Statement:** If two numbers be prime to one another, the second will not be to any other number as the first is to the second.\n\n**Step 1.** Let A and B be two numbers prime to one another (D7.12). Suppose, for the sake of contradiction, that there exists some number C such that A:B = B:C.\n\n**Step 2.** Since A:B = B:C, the numbers A, B, C are in continued proportion. By 7.19, since four numbers are proportional (here A:B = B:C, so the first is A, the second and third are both B, and the fourth is C), the product of the first and fourth equals the product of the second and third. That is, A multiplied by C equals B multiplied by B, so A * C = B * B (7.19).\n\n**Step 3.** Since A and B are prime to one another, by 7.25, the product of B into itself (that is, B * B) is prime to A. In other words, A and B * B have no common measure other than the unit (7.25).\n\n**Step 4.** From Step 2, A * C = B * B, which means A measures B * B (since B * B is the product A * C, so A measures B * B according to C). Thus A is a common measure of both A and B * B.\n\n**Step 5.** But from Step 3, A and B * B are prime to one another, meaning their only common measure is the unit (D7.12). Since A is a common measure of A and B * B (Step 4), it follows that A must be the unit.\n\n**Step 6.** However, A is a number (given in the hypothesis). By D7.1, an unit is that by virtue of which each of the things that exist is called one, and by D7.2, a number is a multitude composed of units. The unit is not itself a number. Therefore A cannot be the unit, which contradicts Step 5.\n\n**Step 7.** This contradiction shows that our assumption in Step 1 is false. Therefore, if A and B are prime to one another, there is no number C such that A:B = B:C. That is, the second number B will not be to any other number as the first A is to the second B. Q.E.D.\n\n**USED:** 7.19, 7.25, D7.1, D7.12, D7.2\n**Human refs (from References field):** 7.20, 7.21\n**Jaccard:** 0.000 — AI adds ['7.19', '7.25', 'D7.1', 'D7.12', 'D7.2']; Human adds ['7.20', '7.21']",
+  "ai_used": [
+    "7.19",
+    "7.25",
+    "D7.1",
+    "D7.12",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "7.19",
+    "7.25",
+    "D7.1",
+    "D7.12",
+    "D7.2"
+  ],
+  "heath_only": [
+    "7.20",
+    "7.21"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be two numbers prime to one another (D7.12). Suppose, for the sake of contradiction, that there exists some number C such that A:B = B:C.  **Step 2.** Since A:B = B:C, the numb"
+}

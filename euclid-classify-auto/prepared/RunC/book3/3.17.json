@@ -1,0 +1,39 @@
+{
+  "proposition": "3.17",
+  "book": 3,
+  "statement": "From a given point to draw a straight line touching a given circle.",
+  "heath_proof": "Let A be the given point, and BCD the given circle; thus it is required to draw from the point A a straight line touching the circle BCD. For let the centre E of the circle be taken; [III. 1] let AE be joined, and with centre E and distance EA let the circle AFG be described; from D let DF be drawn at right angles to EA, and let EF, AB be joined; I say that AB has been drawn from the point A touching the circle BCD. For, since E is the centre of the circles BCD, AFG, EA is equal to EF, and ED to EB; therefore the two sides AE, EB are equal to the two sides FE, ED: and they contain a common angle, the angle at E; therefore the base DF is equal to the base AB, and the triangle DEF is equal to the triangle BEA, and the remaining angles to the remaining angles; [I. 4]therefore the angle EDF is equal to the angle EBA. But the angle EDF is right; therefore the angle EBA is also right. Now EB is a radius; and the straight line drawn at right angles to the diameter of a circle, from its extremity, touches the circle; [III. 16] therefore AB touches the circle BCD. Therefore from the given point A the straight line AB has been drawn touching the circle BCD.",
+  "ai_proof_text": "3.17\n**Statement:** From a given point to draw a straight line touching a given circle.\n\n**Step 1.** Let A be the given point and let the given circle have circumference BCD. We consider two cases: either A lies on the circle, or A lies outside the circle.\n\n**Step 2.** Case 1: Suppose A lies on the circumference of circle BCD. Find the centre E of circle BCD [3.1]. Join AE [P1].\n\n**Step 3.** At point A on line AE, draw the straight line AF at right angles to AE [1.11].\n\n**Step 4.** Since AE is a radius of the circle and AF is drawn at right angles to it at the extremity A on the circumference, by 3.16 the line AF falls outside the circle and touches circle BCD at A. Thus AF is the required tangent in this case.\n\n**Step 5.** Case 2: Suppose A lies outside circle BCD. Find the centre E of the circle [3.1]. Join AE [P1], and let AE meet the circumference at D.\n\n**Step 6.** Bisect AE at the point M [1.10]. With centre M and radius MA, describe circle ABF [P3]. Since A is outside the given circle, AE is greater than the radius ED, so the circle with centre M and radius MA (equal to half of AE) intersects the given circle. Let B be a point of intersection of circle ABF with circle BCD.\n\n**Step 7.** Join AB and EB [P1].\n\n**Step 8.** Since M is the midpoint of AE, we have MA = ME. And since B lies on circle ABF (centre M, radius MA), we have MB = MA. Therefore MA = MB = ME.\n\n**Step 9.** In triangle MAB, since MA = MB, the angles opposite these equal sides are equal, so angle MAB = angle MBA [1.5].\n\n**Step 10.** In triangle MEB, since ME = MB, the angles opposite these equal sides are equal, so angle MEB = angle MBE [1.5].\n\n**Step 11.** Since A, M, E are collinear and B does not lie on line AE, angles AMB and EMB are supplementary, that is, angle AMB + angle EMB = two right angles [1.13].\n\n**Step 12.** In triangle MAB, the sum of the interior angles equals two right angles [1.32], so angle MAB + angle MBA + angle AMB = two right angles, and since angle MAB = angle MBA (Step 9), we obtain 2 times angle MAB + angle AMB = two right angles.\n\n**Step 13.** In triangle MEB, the sum of the interior angles equals two right angles [1.32], so angle MEB + angle MBE + angle EMB = two right angles, and since angle MEB = angle MBE (Step 10), we obtain 2 times angle MEB + angle EMB = two right angles.\n\n**Step 14.** Adding the results of Steps 12 and 13: 2 times angle MAB + angle AMB + 2 times angle MEB + angle EMB = four right angles. By Step 11, angle AMB + angle EMB = two right angles, so substituting: 2 times angle MAB + 2 times angle MEB + two right angles = four right angles. Therefore 2 times angle MAB + 2 times angle MEB = two right angles, whence angle MAB + angle MEB = one right angle.\n\n**Step 15.** In triangle ABE, the sum of the interior angles equals two right angles [1.32], so angle BAE + angle ABE + angle AEB = two right angles. Now angle BAE = angle MAB and angle AEB = angle MEB, so angle MAB + angle ABE + angle MEB = two right angles.\n\n**Step 16.** By Step 14, angle MAB + angle MEB = one right angle. Substituting into Step 15: one right angle + angle ABE = two right angles. Therefore angle ABE = one right angle.\n\n**Step 17.** Since angle ABE is a right angle, EB is perpendicular to AB at B. Since B lies on circle BCD and EB is a radius of circle BCD, the line AB is at right angles to the radius EB at the point B on the circumference. By 3.16, the line AB falls outside the circle and touches circle BCD at B [D3.2].\n\n**Step 18.** Therefore in both cases, from the given point A a straight line has been drawn touching the given circle. Q.E.F.\n\n**USED:** 1.10, 1.11, 1.13, 1.32, 1.5, 3.1, 3.16, D3.2, P1, P3\n**Human refs (from References field):** 1.4, 3.1, 3.16\n**Jaccard:** 0.182 — AI adds ['1.10', '1.11', '1.13', '1.32', '1.5', 'D3.2', 'P1', 'P3']; Human adds ['1.4']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.32",
+    "1.5",
+    "3.1",
+    "3.16",
+    "D3.2",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.1",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.32",
+    "1.5",
+    "D3.2",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "1.4"
+  ],
+  "jaccard": 0.182,
+  "proof_summary": "**Step 1.** Let A be the given point and let the given circle have circumference BCD. We consider two cases: either A lies on the circle, or A lies outside the circle.  **Step 2.** Case 1: Suppose A l"
+}

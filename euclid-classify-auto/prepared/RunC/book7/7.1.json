@@ -1,0 +1,32 @@
+{
+  "proposition": "7.1",
+  "book": 7,
+  "statement": "Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is left, the original numbers will be prime to one another.",
+  "heath_proof": "For, if AB, CD are not prime to one another, some number will measure them. Let a number measure them, and let it be E; let CD, measuring BF, leave FA less than itself, let AF, measuring DG, leave GC less than itself, and let GC, measuring FH, leave an unit HA. Since, then, E measures CD, and CD measures BF, therefore E also measures BF. But it also measures the whole BA; therefore it will also measure the remainder AF. But AF measures DG; therefore E also measures DG. But it also measures the whole DC therefore it will also measure the remainder CG. But CG measures FH; therefore E also measures FH. But it also measures the whole FA; therefore it will also measure the remainder, the unit AH, though it is a number: which is impossible. Therefore no number will measure the numbers AB, CD; therefore AB, CD are prime to one another. [VII. Def. 12]",
+  "ai_proof_text": "7.1\n**Statement:** Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is left, the original numbers will be prime to one another.\n\n**Step 1.** Let A and B be two unequal numbers such that when the less is continually subtracted from the greater in turn, the number which is left never measures the one before it until a unit is left. We must prove that A and B are prime to one another.\n\n**Step 2.** Suppose, for the sake of contradiction, that A and B are not prime to one another. Then by D7.12, they are not measured by a unit alone as a common measure. Hence by D7.14, some number C, which is greater than a unit, measures both A and B.\n\n**Step 3.** Since C measures A and C measures B, we may assume without loss of generality that A > B (if B > A, relabel). Because C measures B, B is a multiple of C by D7.5, so B = p * C for some number p, by D7.15. Similarly, C measures A, so A = q * C for some number q.\n\n**Step 4.** Consider the first step of the subtraction process. We subtract B from A as many times as possible. The remainder after subtracting B from A is A - B = q * C - p * C = (q - p) * C, by D7.15 and CN3. Since (q - p) is either a unit or a number (the process has not yet terminated at a unit, so A - B does not measure B or further remainders continue), C measures this remainder. If we subtract B multiple times, each intermediate result A - k*B = (q - k*p) * C is likewise measured by C, by repeated application of CN3 and D7.15. Hence C measures whatever remainder is left after B has been subtracted from A as many times as possible without the remainder becoming negative.\n\n**Step 5.** Call this remainder R1. We have shown C measures R1. Now the process continues: we subtract R1 from B continually. By the same reasoning as in Step 4, since C measures both B and R1, C measures every remainder produced by subtracting R1 from B repeatedly. Call the final remainder R2. Then C measures R2.\n\n**Step 6.** Continuing in this manner through every stage of the successive subtraction process, at each stage C measures both the number being subtracted and the number from which it is subtracted, and therefore C measures the remainder at each step, by the same argument using D7.5, D7.15, and CN3.\n\n**Step 7.** By hypothesis, this process of continual subtraction terminates when a unit is left. Therefore C must measure this unit. But by D7.1, a unit is that by which each thing is called one, and by D7.3, for C to measure the unit, C would have to be a part of the unit with the unit being a multiple of C. By D7.5, the unit would then be a multiple of C, meaning the unit equals some number times C. But C is greater than a unit (Step 2), so any multiple of C by a number (which is at least a unit, i.e., at least one) is at least C, which is greater than a unit. This means C cannot measure the unit. We have a contradiction.\n\n**Step 8.** Since the assumption that A and B are not prime to one another leads to a contradiction, we conclude that A and B are prime to one another, which is what was to be proved. Q.E.D.\n\n**USED:** CN3, CN5, D7.1, D7.12, D7.14, D7.15, D7.3, D7.5\n**Human refs (from References field):** D7.12\n**Jaccard:** 0.125 — AI adds ['CN3', 'CN5', 'D7.1', 'D7.14', 'D7.15', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "CN3",
+    "CN5",
+    "D7.1",
+    "D7.12",
+    "D7.14",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "D7.12"
+  ],
+  "ai_only": [
+    "CN3",
+    "CN5",
+    "D7.1",
+    "D7.14",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let A and B be two unequal numbers such that when the less is continually subtracted from the greater in turn, the number which is left never measures the one before it until a unit is lef"
+}

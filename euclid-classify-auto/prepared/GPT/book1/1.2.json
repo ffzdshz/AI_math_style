@@ -1,0 +1,34 @@
+{
+  "proposition": "1.2",
+  "book": 1,
+  "statement": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+  "heath_proof": "Let A be the given point, and BC the given straight line. Thus it is required to place at the point A (as an extremity)a straight line equal to the given straight line BC. From the point A to the point B let the straight line AB be joined; [Post. 1] and on it let the equilateral triangleDAB be constructed. [I. 1] Let the straight lines AE, BF be produced in a straight line with DA, DB; [Post. 2] with centre B and distance BC let thecircle CGH be described; [Post. 3] and again, with centre D and distance DG let the circle GKL be described. [Post. 3] Then, since the point B is the centre of the circle CGH, BC is equal to BG. Again, since the point D is the centre of the circle GKL, DL is equal to DG. And in these DA is equal to DB; therefore the remainder AL is equal to the remainder BG. [C. N. 3]  But BC was also proved equal to BG; therefore each of the straight lines AL, BC is equal to BG. And things which are equal to the same thing are also equal to one another; [C. N. 1]therefore AL is also equal to BC. Therefore at the given point A the straight line AL is placed equal to the given straight line BC.",
+  "ai_proof_text": "1.2\n**Statement:** To place at a given point (as an extremity) a straight line equal to a given straight line.\n\n**Step 1.** Let A be the given point and BC the given straight line, naming its endpoints so that B is distinct from A. Join AB. [P1]\n\n**Step 2.** Construct an equilateral triangle DAB on AB. Then DA = DB. This construction supplies equal parts that can later be subtracted from equal wholes. [1.1, D1.20]\n\n**Step 3.** Describe the circle with centre B passing through C. Produce DB beyond B to meet this circle at G, choosing the intersection for which D, B, G occur in that order. Since BG and BC are radii of this circle, BG = BC. [P3, P2, D1.15]\n\n**Step 4.** Since DB is a proper part of DG, DG > DB; and DB = DA by Step 2, so DG > DA. Describe the circle with centre D passing through G, and produce DA beyond A to meet it at L. Thus D, A, L occur in that order. The outward extensions are chosen so that the required segments are remainders of the larger segments. [CN5, P3, P2]\n\n**Step 5.** The radii DL and DG of the circle with centre D are equal. Subtract the equal parts DA and DB established in Step 2. Because D, A, L and D, B, G respectively occur in those orders, the remainders are AL and BG. Therefore AL = BG. [D1.15, CN3]\n\n**Step 6.** Since AL = BG and BG = BC, it follows that AL = BC. Thus AL is a straight line equal to the given straight line BC and has the given point A as an extremity, as required. [CN1]\n\n**USED:** 1.1, CN1, CN3, CN5, D1.15, D1.20, P1, P2, P3\n**Human refs (from References field):** 1.1, CN1, CN3, P1, P2, P3\n**Jaccard:** 0.667 — AI adds ['CN5', 'D1.15', 'D1.20']",
+  "ai_used": [
+    "1.1",
+    "CN1",
+    "CN3",
+    "CN5",
+    "D1.15",
+    "D1.20",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.1",
+    "CN1",
+    "CN3",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "ai_only": [
+    "CN5",
+    "D1.15",
+    "D1.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let A be the given point and BC the given straight line, naming its endpoints so that B is distinct from A. Join AB. [P1]  **Step 2.** Construct an equilateral triangle DAB on AB. Then DA "
+}

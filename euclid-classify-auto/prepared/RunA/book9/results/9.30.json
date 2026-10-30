@@ -1,0 +1,13 @@
+{
+  "proposition": "9.30",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone: given odd A measures even B via C, they prove C must be even by contradiction (if C were odd, the product of two odd numbers would be odd, contradicting B being even), then conclude A measures B/2. The only substantive citation difference is that the AI uses 9.29 (product of two odds is odd) while Heath uses 9.23 (sum of an odd count of odds is odd). The proof-tree containment test confirms this is a depth difference: Heath's own proof of 9.29 cites 9.23 as its key step, so the AI is citing 9.29 as a packaged unit while Heath effectively re-derives the reasoning of 9.29 inline using 9.23. The remaining ai_only items (D7.3, D7.6, D7.7, D7.15) are all Book 7 definitions representing over-citation by the AI. This is a citation-depth difference with identical logical backbones, yielding G.",
+  "jaccard": 0.0,
+  "ai_citations": "9.29|D7.15|D7.3|D7.6|D7.7",
+  "heath_citations": "9.23",
+  "ai_only": "9.29|D7.15|D7.3|D7.6|D7.7",
+  "heath_only": "9.23",
+  "audit_record": ""
+}

@@ -1,0 +1,41 @@
+{
+  "proposition": "12.12",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C1 and C2 are similar cylinders with h:k = a:b (proportional axes and diameters). Auxiliary cylinder T constructed with same base as C2 (base B2) and height h (same as C1).",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Stacking m congruent copies of T along one axis produces a cylinder on base B2 with height mh; stacking n copies of C2 produces a cylinder on base B2 with height nk.",
+      "type": "solid_geometry_stacking"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Placing both stacks with lower bases together and axes aligned: if mh > nk, the shorter stack (nk) is a proper part of the taller stack (mh), since both share base B2.",
+      "type": "containment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "C1 and T have equal height h. C1 has base B1, T has base B2. Application of 12.11 (equal-height cylinders are as their bases) yields C1:T = B1:B2.",
+      "type": "equal_height_comparison"
+    },
+    {
+      "step": "Step 6",
+      "claim": "U1 and U2 are cylinders sharing bases and heights with similar cones K1 and K2 respectively; since the axis:diameter ratios are preserved, U1 and U2 are similar cylinders.",
+      "type": "similarity_transfer"
+    },
+    {
+      "step": "Step 6",
+      "claim": "By 12.10, U1 = 3*K1 and U2 = 3*K2 (each cylinder is triple its inscribed cone with same base and height).",
+      "type": "cone_cylinder_relation"
+    }
+  ],
+  "configuration_map": "The configuration involves two similar cylinders C1 (base diameter a, height h) and C2 (base diameter b, height k) with h:k = a:b. An auxiliary cylinder T is constructed sharing C2's base (B2) and C1's height (h), serving as an intermediary for ratio comparison. T connects to C2 via the stacking/Archimedean argument (same base, different heights, giving T:C2 = h:k), and to C1 via 12.11 (same height, different bases, giving C1:T = B1:B2). For cones, K1 and K2 are similar cones, and U1, U2 are their corresponding cylinders (same base and height), which inherit similarity. All constructed objects maintain consistent dimensional relationships throughout.",
+  "pass_reason": "The proof is predominantly a ratio-and-proportion argument with minimal spatial claims. The spatial constructions (auxiliary cylinder T, cylinder stacking, cone-cylinder correspondence) are all standard solid geometry facts used in mutually consistent configurations. There are no angle decompositions, no interior/exterior point claims, no ray-ordering claims, and no betweenness arguments that could produce contradictions. Every spatial claim is compatible with every other."
+}

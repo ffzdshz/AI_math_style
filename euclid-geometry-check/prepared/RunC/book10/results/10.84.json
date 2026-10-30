@@ -1,0 +1,31 @@
+{
+  "proposition": "10.84",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 3",
+      "claim": "Rectangle EG equal to sum of squares on AB,BC is applied to rational line EF, producing breadth EH; rectangle HI equal to twice rect(AB,BC) is subtracted, remainder EI equals sq(AC)",
+      "type": "area_application"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Rectangle EK equal to sum of squares on AB,BD is applied to EF, producing breadth EL; rectangle LM equal to twice rect(AB,BD) is subtracted, remainder EM equals sq(AD)",
+      "type": "area_application"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Breadth of EI along EF is EH minus HN, which is the difference of two rational lines commensurable in square only, making it an apotome",
+      "type": "breadth_arithmetic"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Breadth of EM along EF is similarly an apotome",
+      "type": "breadth_arithmetic"
+    }
+  ],
+  "configuration_map": "All geometric content consists of rectangular areas applied along a single rational line EF. EG (with breadth EH) and HI (with breadth HN) are rectangles along EF whose difference EI has breadth EH-HN. Similarly EK (breadth EL) and LM produce remainder EM. These are purely algebraic area-to-length operations (Euclid's equivalent of division). No points are placed inside/outside figures, no rays are ordered, no angles are decomposed. The entire proof operates in the domain of commensurability theory and irrational line classification.",
+  "skip_reason": "Proposition 10.84 is a purely algebraic proof about the uniqueness of annexed lines for irrational line classification. All reasoning involves commensurability, medial areas, rational lines, and apotomes. The only geometric element is the standard Book 10 technique of applying rectangular areas to a rational line to produce breadths, which is Euclid's algebraic machinery with no genuine spatial configuration claims (no angle decompositions, no point-inside-figure claims, no ray orderings). There are no geometric configuration claims that could harbor a spatial contradiction."
+}

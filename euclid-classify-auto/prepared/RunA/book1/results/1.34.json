@@ -1,0 +1,13 @@
+{
+  "proposition": "1.34",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as G (granularity difference). Both proofs share the same backbone: (1) use I.29 for alternate angles, (2) apply I.26 (ASA) to prove triangle congruence and derive opposite sides equal, (3) combine angles via CN2 to show one pair of opposite angles equal, (4) establish the second pair of opposite angles equal, and (5) conclude the diameter bisects from triangle equality. The heath_only citation I.4 is used by Heath to re-prove triangle equality for the bisection claim via SAS, while the AI reuses the triangle equality already established by I.26; since I.4 appears inside Heath's own proof of I.26, the proof-tree containment test confirms this is a citation-depth difference. The ai_only citations CN1 and CN3 are common notions used by the AI in an explicit algebraic step (co-interior angles) to show the second pair of opposite angles equal, where Heath instead extracts this directly from the remaining angle equality given by I.26. The key intermediate conclusions are identical in both proofs — only the granularity of citation and the level of detail in intermediate algebraic steps differ.",
+  "jaccard": 0.5,
+  "ai_citations": "1.26|1.29|CN1|CN2|CN3",
+  "heath_citations": "1.26|1.29|1.4|CN2",
+  "ai_only": "CN1|CN3",
+  "heath_only": "1.4",
+  "audit_record": ""
+}

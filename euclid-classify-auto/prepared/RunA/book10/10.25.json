@@ -1,0 +1,41 @@
+{
+  "proposition": "10.25",
+  "book": 10,
+  "statement": "The rectangle contained by medial straight lines commensurable in square only is either rational or medial.",
+  "heath_proof": "For let the rectangle AC be contained by the medial straight lines AB, BC which are commensurable in square only; I say that AC is either rational or medial. For on AB, BC let the squares AD, BE be described; therefore each of the squares AD, BE is medial. Let a rational straight line FG be set out, to FG let there be applied the rectangular parallelogram GH equal to AD, producing FH as breadth, to HM let there be applied the rectangular parallelogram MK equal to AC, producing HK as breadth, and further to KN let there be similarly applied NL equal to BE, producing KL as breadth; therefore FH, HK, KL are in a straight line. Since then each of the squares AD, BE is medial, and AD is equal to GH, and BE to NL, therefore each of the rectangles GH, NL is also medial. And they are applied to the rational straight line FG; therefore each of the straight lines FH, KL is rational and incommensurable in length with FG. [X. 22] And, since AD is commensurable with BE, therefore GH is also commensurable with NL. And, as GH is to NL, so is FH to KL; [VI. 1] therefore FH is commensurable in length with KL. [X. 11] Therefore FH, KL are rational straight lines commensurable in length; therefore the rectangle FH, KL is rational. [X. 19] And, since DB is equal to BA, and OB to BC, therefore, as DB is to BC, so is AB to BO. But, as DB is to BC, so is DA to AC, [VI. 1] and, as AB is to BO, so is AC to CO; [id.]therefore, as DA is to AC, so is AC to CO. But AD is equal to GH, AC to MK and CO to NL; therefore, as GH is to MK, so is MK to NL; therefore also, as FH is to HK, so is HK to KL; [VI. 1, V. 11] therefore the rectangle FH, KL is equal to the square on HK. [VI. 17] But the rectangle FH, KL is rational; therefore the square on HK is also rational. Therefore HK is rational. And, if it is commensurable in length with FG, HN is rational; [X. 19] but, if it is incommensurable in length with FG, KH, HM are rational straight lines commensurable in square only, and therefore HN is medial. [X. 21] Therefore HN is either rational or medial. But HN is equal to AC; therefore AC is either rational or medial.",
+  "ai_proof_text": "10.25\n**Statement:** The rectangle contained by medial straight lines commensurable in square only is either rational or medial.\n\n**Step 1.** Let A and B be medial straight lines commensurable in square only. We must show that the rectangle contained by A and B is either rational or medial.\n\n**Step 2.** Let C be a rational straight line set out. Since A is medial, the square on A is medial [by D10.1.4 and 10.21]. Apply the square on A to C, producing breadth D, so that the rectangle C times D equals the square on A. By 10.22, since the square on a medial straight line applied to a rational straight line produces as breadth a straight line rational and incommensurable in length with the line to which it is applied, D is rational and incommensurable in length with C.\n\n**Step 3.** Now apply the rectangle A times B to the rational straight line C, producing breadth E, so that the rectangle C times E equals the rectangle A times B.\n\n**Step 4.** Since the rectangle C times D equals A times A, and the rectangle C times E equals A times B, we have C times D is to C times E as A times A is to A times B. But rectangles sharing side A satisfy A times A : A times B = A : B [by 6.1]. Also, since both C times D and C times E lie on the same base C, we have C times D : C times E = D : E [by 6.1]. Therefore D : E = A : B.\n\n**Step 5.** Since D : E = A : B, the duplicate ratio of D to E equals the duplicate ratio of A to B. By 6.20, the squares on proportional straight lines are in the duplicate ratio of the lines, so the square on D is to the square on E as the square on A is to the square on B.\n\n**Step 6.** Since A and B are commensurable in square, the square on A is commensurable with the square on B [by D10.1.2]. Therefore, since the square on D is to the square on E as the square on A is to the square on B, and the square on A is commensurable with the square on B, the square on D is commensurable with the square on E [by 10.11]. Hence D and E are commensurable in square [by D10.1.2].\n\n**Step 7.** Since D : E = A : B, and A and B are incommensurable in length (being commensurable in square only), D and E are also incommensurable in length [by 10.11].\n\n**Step 8.** From Step 2, D is rational. From Step 6, E is commensurable in square with D. Since D is rational and E is commensurable in square with D, E is also rational [by D10.1.3]. Thus D and E are both rational and, by Step 7, incommensurable in length. Therefore D and E are either commensurable in length or commensurable in square only with the rational straight line C.\n\n**Step 9.** Now C is rational and E is rational. There are two cases. Case 1: If C and E are commensurable in length, then the rectangle C times E is rational [by 10.19]. Since C times E equals the rectangle A times B, the rectangle A times B is rational.\n\n**Step 10.** Case 2: If C and E are incommensurable in length, then since C and E are both rational, they are commensurable in square only. Therefore the rectangle C times E is irrational, and the side of the square equal to it is medial [by 10.21]. Hence the rectangle A times B, being equal to C times E, is medial.\n\n**Step 11.** Since C and E are both rational, they are commensurable at least in square [by D10.1.3], so one of these two cases must hold: either they are commensurable in length or they are commensurable in square only. Therefore the rectangle contained by the medial straight lines A and B, commensurable in square only, is either rational or medial. Q.E.D.\n\n**USED:** 10.11, 10.19, 10.21, 10.22, 6.1, 6.20, D10.1.2, D10.1.3, D10.1.4, D5.9\n**Human refs (from References field):** 10.11, 10.19, 10.21, 10.22, 5.11, 6.1, 6.17\n**Jaccard:** 0.417 — AI adds ['6.20', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D5.9']; Human adds ['5.11', '6.17']",
+  "ai_used": [
+    "10.11",
+    "10.19",
+    "10.21",
+    "10.22",
+    "6.1",
+    "6.20",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4",
+    "D5.9"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.19",
+    "10.21",
+    "10.22",
+    "5.11",
+    "6.1",
+    "6.17"
+  ],
+  "ai_only": [
+    "6.20",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4",
+    "D5.9"
+  ],
+  "heath_only": [
+    "5.11",
+    "6.17"
+  ],
+  "jaccard": 0.417,
+  "proof_summary": "**Step 1.** Let A and B be medial straight lines commensurable in square only. We must show that the rectangle contained by A and B is either rational or medial.  **Step 2.** Let C be a rational strai"
+}

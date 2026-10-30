@@ -1,0 +1,61 @@
+{
+  "proposition": "3.19",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Line t is tangent to the circle at T; line n passes through T perpendicular to t; O is the centre of the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "OT is perpendicular to t (by 3.18, since t is tangent at T and O is the centre)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B is on n on the opposite side of t from O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "A is on t distinct from T; ray TA lies along t",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle OTA is a right angle (OT perpendicular to t)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle ATB is a right angle (n perpendicular to t, B on n)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "TO and TB lie on opposite sides of line TA",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Adjacent angles OTA + ATB = two right angles",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "By 1.14, TO and TB lie in one straight line (collinear)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Since TB lies on n and T,O,B are collinear, O lies on n",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "T is the point of tangency on the circle and on line t. Line n passes through T perpendicular to t, extending to both sides of t. O is the centre of the circle, not on t (since OT perp t with O distinct from T by positive radius). O lies on one side of t. A is a point on t distinct from T, so ray TA lies along t. B is a point on n on the opposite side of t from O, distinct from T. Rays TO and TB emanate from T to opposite sides of line t. Both angles OTA and ATB are right angles (90 degrees each), summing to 180 degrees (two right angles). By 1.14, T-O-B are collinear. Since T and B both lie on n and are distinct, the line through them is n, so O lies on n.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses a direct approach via 1.14 (collinearity from adjacent angles summing to two right angles) rather than Heath's proof by contradiction. The key spatial facts — O and B on opposite sides of t, both angles being right angles, 1.14 applicability — are all compatible. No angle decomposition errors, no interior/exterior contradictions, and no conflicting implicit assumptions."
+}

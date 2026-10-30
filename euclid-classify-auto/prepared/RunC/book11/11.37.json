@@ -1,0 +1,38 @@
+{
+  "proposition": "11.37",
+  "book": 11,
+  "statement": "If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described will also be proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.",
+  "heath_proof": "Let AB, CD, EF, GH be four straight lines in proportion, so that, as AB is to CD, so is EF to GH; and let there be described on AB, CD, EF, GH the similar and similarly situated parallelepipedal solids KA, LC, ME, NG; I say that, as KA is to LC, so is ME to NG. For, since the parallelepipedal solid KA is similar to LC, therefore KA has to LC the ratio triplicate of that which AB has to CD. [XI. 33] For the same reason ME also has to NG the ratio triplicate of that which EF has to GH. And, as AB is to CD, so is EF to GH. Therefore also, as AK is to LC, so is ME to NG. Next, as the solid AK is to the solid LC, so let the solid ME be to the solid NG; I say that, as the straight line AB is to CD, so is EF to GH. For since, again, KA has to LC the ratio triplicate of that which AB has to CD, [XI. 33] and ME also has to NG the ratio triplicate of that which EF has to GH, and, as KA is to LC, so is ME to NG, therefore also, as AB is to CD, so is EF to GH.",
+  "ai_proof_text": "11.37\n**Statement:** If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described will also be proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.\n\n**Step 1.** Let A, B, C, D be four straight lines such that A : B :: C : D, and let SA, SB, SC, SD be parallelepipedal solids described on A, B, C, D respectively, where SA is similar and similarly situated to SB, and SC is similar and similarly situated to SD. We must show SA : SB :: SC : SD.\n\n**Step 2.** By 6.12, construct E as the third proportional to A and B, so that A : B :: B : E. By 6.12 again, construct F as the third proportional to B and E, so that B : E :: E : F. Since A : B :: B : E :: E : F, the four magnitudes A, B, E, F are continuously proportional with common ratio A : B. By D5.10, A : F is the triplicate ratio of A : B.\n\n**Step 3.** By 6.12, construct G as the third proportional to C and D, so that C : D :: D : G. By 6.12 again, construct H as the third proportional to D and G, so that D : G :: G : H. Since C : D :: D : G :: G : H, the four magnitudes C, D, G, H are continuously proportional with common ratio C : D. By D5.10, C : H is the triplicate ratio of C : D.\n\n**Step 4.** Since A : B :: C : D (given), and A : B :: B : E (Step 2) and C : D :: D : G (Step 3), it follows that B : E :: D : G. Similarly, since A : B :: E : F and C : D :: G : H, we have E : F :: G : H.\n\n**Step 5.** From A : B :: C : D and B : E :: D : G, by 5.22 (ex aequali), A : E :: C : G. From A : E :: C : G and E : F :: G : H, by 5.22 again, A : F :: C : H.\n\n**Step 6.** By 11.33, since SA and SB are similar parallelepipedal solids, SA : SB is the triplicate ratio of the corresponding side A to B. That is, SA : SB :: A : F (the triplicate of A : B established in Step 2). Similarly, by 11.33, SC : SD :: C : H (the triplicate of C : D established in Step 3).\n\n**Step 7.** Since A : F :: C : H (Step 5), and SA : SB :: A : F and SC : SD :: C : H (Step 6), by 5.11, SA : SB :: SC : SD. This completes the forward direction.\n\n**Step 8.** For the converse, suppose that SA : SB :: SC : SD, where the solids are similar and similarly described on A, B, C, D respectively. We must show A : B :: C : D.\n\n**Step 9.** By 6.12, construct E as the fourth proportional to B, A, and D, so that B : A :: D : E. Then by the properties of proportion (invertendo from D5.5), A : B :: E : D.\n\n**Step 10.** By 11.27, describe on E a parallelepipedal solid SE similar and similarly situated to SC (and SD). Since A : B :: E : D, by the forward direction proved above, SA : SB :: SE : SD.\n\n**Step 11.** But SA : SB :: SC : SD by hypothesis. Therefore SE : SD :: SC : SD by 5.11.\n\n**Step 12.** By 5.9, since SE and SC have the same ratio to SD, SE = SC.\n\n**Step 13.** Now suppose E is not equal to C. Then E is either greater than or less than C. If E > C, then since SE and SC are similar parallelepipedal solids described on E and C respectively, by 11.33, SE : SC is the triplicate ratio of E : C. Since E > C, by 5.8, E has a greater ratio to C than C has to C, meaning E : C is a ratio of a greater to a lesser. The triplicate of such a ratio is likewise a ratio of a greater to a lesser, so SE > SC. This contradicts SE = SC from Step 12.\n\n**Step 14.** Similarly, if E < C, then by the same reasoning with 11.33 and 5.8, SC > SE, again contradicting SE = SC.\n\n**Step 15.** Therefore E = C. Since A : B :: E : D (Step 9) and E = C, we conclude A : B :: C : D.\n\n**Step 16.** Therefore, if four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described are also proportional; and conversely, if the similar and similarly described parallelepipedal solids are proportional, the straight lines are themselves proportional. Q.E.F.\n\n**USED:** 11.27, 11.33, 5.11, 5.16, 5.22, 5.8, 5.9, 6.12, D11.9, D5.10, D5.5\n**Human refs (from References field):** 11.33\n**Jaccard:** 0.091 — AI adds ['11.27', '5.11', '5.16', '5.22', '5.8', '5.9', '6.12', 'D11.9', 'D5.10', 'D5.5']",
+  "ai_used": [
+    "11.27",
+    "11.33",
+    "5.11",
+    "5.16",
+    "5.22",
+    "5.8",
+    "5.9",
+    "6.12",
+    "D11.9",
+    "D5.10",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "11.33"
+  ],
+  "ai_only": [
+    "11.27",
+    "5.11",
+    "5.16",
+    "5.22",
+    "5.8",
+    "5.9",
+    "6.12",
+    "D11.9",
+    "D5.10",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let A, B, C, D be four straight lines such that A : B :: C : D, and let SA, SB, SC, SD be parallelepipedal solids described on A, B, C, D respectively, where SA is similar and similarly si"
+}

@@ -1,0 +1,31 @@
+{
+  "proposition": "10.78",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Rational line DI is set out; area DE (sum of squares on AB,BC) applied to DI produces breadth DG; area DF (twice rect AB,BC) applied to DI produces breadth DH; H falls between D and G on the breadth line; remaining area HG applied to DI has breadth HG equal to square on AC.",
+      "type": "area_application_and_point_betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Area DE = Area DF + Area HG, corresponding to the segment decomposition DG = DH + HG along the breadth direction (from identity 2.7).",
+      "type": "area_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "HG = DG - DH as a segment subtraction along the breadth line, with HG identified as an apotome by 10.73.",
+      "type": "segment_subtraction"
+    },
+    {
+      "step": "Step 13",
+      "claim": "DG = DH + HG (segment addition along the same line, used in the contradiction argument showing AC squared is not medial).",
+      "type": "segment_addition"
+    }
+  ],
+  "configuration_map": "The configuration consists of a rational line DI and a perpendicular breadth line with collinear points D, H, G (in that order). DG is the breadth for the area equal to the sum of squares on AB and BC. DH is the breadth for the area equal to twice the rectangle AB,BC. HG = DG - DH is the breadth for the area equal to the square on AC. The ordering D-H-G is justified because AB^2 + BC^2 > 2*AB*BC (since (AB-BC)^2 > 0), so DG > DH. All subsequent reasoning involves commensurability properties of these breadths (rational, irrational, commensurable in square only, apotome) rather than any further geometric configuration. No angles, triangles, circles, or interior/exterior arguments appear.",
+  "pass_reason": "The proof is predominantly algebraic/commensurability-based. Its only spatial claims concern the area-application construction: rectangles applied to rational line DI with breadths DG, DH, and HG along a single line, with H between D and G. These claims are mutually consistent (segment addition DG = DH + HG, and H between D and G both follow from DE > DF). No angle decompositions, interior/exterior arguments, ray-between claims, or other configuration-sensitive reasoning appears. All spatial claims are straightforwardly valid."
+}

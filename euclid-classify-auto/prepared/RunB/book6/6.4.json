@@ -1,0 +1,39 @@
+{
+  "proposition": "6.4",
+  "book": 6,
+  "statement": "In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.",
+  "heath_proof": "Let ABC, DCE be equiangular triangles having the angle ABC equal to the angle DCE, the angle BAC to the angle CDE, and further the angle ACB to the angle CED; I say that in the triangles ABC, DCE the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles. For let BC be placed in a straight line with CE. Then, since the angles ABC, ACB are less than two right angles, [I. 17] and the angle ACB is equal to the angle DEC, therefore the angles ABC, DEC are less than two right angles; therefore BA, ED, when produced, will meet. [I. Post. 5] Let them be produced and meet at F. Now, since the angle DCE is equal to the angle ABC, BF is parallel to CD. [I. 28]  Again, since the angle ACB is equal to the angle DEC, AC is parallel to FE. [I. 28]  Therefore FACD is a parallelogram; therefore FA is equal to DC, and AC to FD. [I. 34] And, since AC has been drawn parallel to FE, one side of the triangle FBE, therefore, as BA is to AF, so is BC to CE. [VI. 2] But AF is equal to CD; therefore, as BA is to CD, so is BC to CE, and alternately, as AB is to BC, so is DC to CE. [V. 16] Again, since CD is parallel to BF, therefore, as BC is to CE, so is FD to DE. [VI. 2] But FD is equal to AC; therefore, as BC is to CE, so is AC to DE, and alternately, as BC is to CA, so is CE to ED. [V. 16] Since then it was proved that, as AB is to BC, so is DC to CE, and, as BC is to CA, so is CE to ED; therefore, ex aequali, as BA is to AC, so is CD to DE. [V. 22]",
+  "ai_proof_text": "6.4\n**Statement:** In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.\n\n**Step 1.** Let ABC and DEF be two equiangular triangles such that angle BAC equals angle EDF, angle ABC equals angle DEF, and angle ACB equals angle DFE. We must show that the sides about the equal angles are proportional: AB:DE = BC:EF = AC:DF.\n\n**Step 2.** Place triangle DEF upon triangle ABC so that vertex E coincides with vertex B, side ED falls along ray BA, and side EF falls along ray BC. Let G be the point on ray BA such that BG = DE, and let H be the point on ray BC such that BH = EF. Then triangle BGH is equal in all respects to triangle DEF, with angle GBH = angle DEF and GH = DF.\n\n**Step 3.** Since angle GBH = angle DEF = angle ABC by hypothesis, side BH falls along BC and side BG falls along BA, confirming the placement. Now angle BGH = angle EDF (since triangle BGH is the repositioned triangle DEF). But angle EDF = angle BAC by hypothesis. Therefore angle BGH = angle BAC.\n\n**Step 4.** The straight line BA falls on the two straight lines GH and AC, making the angle BGH at G equal to the angle BAC at A. These are corresponding angles on the same side of the transversal. Therefore, by 1.28, GH is parallel to AC.\n\n**Step 5.** In triangle BAC, since GH is parallel to side AC, with G on side BA and H on side BC, by 6.2 the sides are cut proportionally: BG:GA = BH:HC.\n\n**Step 6.** From BG:GA = BH:HC, by the definition of inverse ratio (D5.13 applied through D5.5), GA:BG = HC:BH. By 5.18 (if magnitudes be proportional separando, they will be proportional componendo): (GA + BG):BG = (HC + BH):BH, that is, BA:BG = BC:BH. Since BG = DE and BH = EF, we conclude BA:DE = BC:EF.\n\n**Step 7.** Now perform a second placement. Place triangle DEF upon triangle ABC so that vertex D coincides with vertex A, side DE falls along ray AB, and side DF falls along ray AC. Let G' be the point on ray AB such that AG' = DE, and let H' be the point on ray AC such that AH' = DF. Then triangle AG'H' is equal in all respects to triangle DEF, with angle G'AH' = angle EDF = angle BAC and G'H' = EF.\n\n**Step 8.** Now angle AG'H' = angle DEF (since triangle AG'H' replicates triangle DEF). But angle DEF = angle ABC by hypothesis. Therefore angle AG'H' = angle ABC. The straight line AB falls on lines G'H' and BC, making the angle AG'H' at G' equal to the angle ABC at B, which are corresponding angles on the same side. By 1.28, G'H' is parallel to BC.\n\n**Step 9.** In triangle ABC, since G'H' is parallel to side BC, with G' on side AB and H' on side AC, by 6.2: AG':G'B = AH':H'C.\n\n**Step 10.** From AG':G'B = AH':H'C, by inverse ratio (D5.13 through D5.5), G'B:AG' = H'C:AH'. By 5.18 (componendo): (G'B + AG'):AG' = (H'C + AH'):AH', that is, AB:AG' = AC:AH'. Since AG' = DE and AH' = DF, we conclude AB:DE = AC:DF.\n\n**Step 11.** From Step 6 we have AB:DE = BC:EF, and from Step 10 we have AB:DE = AC:DF. By 5.11 (ratios which are the same with a given ratio are the same with one another), BC:EF = AC:DF. Therefore AB:DE = BC:EF = AC:DF.\n\n**Step 12.** The corresponding sides are those which subtend the equal angles: AB and DE subtend the equal angles ACB and DFE respectively; BC and EF subtend the equal angles BAC and EDF respectively; AC and DF subtend the equal angles ABC and DEF respectively. Thus in equiangular triangles the sides about the equal angles are proportional, and the corresponding sides are those which subtend the equal angles. Q.E.D.\n\n**USED:** 1.28, 5.11, 5.18, 6.2, D5.13, D5.5\n**Human refs (from References field):** 1.17, 1.28, 1.34, 5.16, 5.22, 6.2, P5\n**Jaccard:** 0.182 — AI adds ['5.11', '5.18', 'D5.13', 'D5.5']; Human adds ['1.17', '1.34', '5.16', '5.22', 'P5']",
+  "ai_used": [
+    "1.28",
+    "5.11",
+    "5.18",
+    "6.2",
+    "D5.13",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "1.17",
+    "1.28",
+    "1.34",
+    "5.16",
+    "5.22",
+    "6.2",
+    "P5"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.18",
+    "D5.13",
+    "D5.5"
+  ],
+  "heath_only": [
+    "1.17",
+    "1.34",
+    "5.16",
+    "5.22",
+    "P5"
+  ],
+  "jaccard": 0.182,
+  "proof_summary": "**Step 1.** Let ABC and DEF be two equiangular triangles such that angle BAC equals angle EDF, angle ABC equals angle DEF, and angle ACB equals angle DFE. We must show that the sides about the equal a"
+}

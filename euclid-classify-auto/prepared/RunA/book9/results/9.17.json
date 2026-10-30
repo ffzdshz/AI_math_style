@@ -1,0 +1,13 @@
+{
+  "proposition": "9.17",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof uses alternation (7.13) to get A:D = B:E, then the coprimality/least-ratio facts (7.21, 7.20) to conclude A measures B, and chains divisibility through the continued proportion (A|B, B|C implies A|C, then A|D) to reach a contradiction with gcd(A,D)=1. The AI takes an entirely different route: it invokes 8.1 to establish the terms are the least in their ratio, then uses 8.2 to express the first and last terms as powers of the base ratio p:q (A_1 = p^(n-1), A_n = q^(n-1)), sets up a cross-multiplication via 7.19, and derives that p divides q^n. Since 7.27 guarantees p^n and q^n are coprime, p must be a unit, making A_1 a unit and contradicting it being a number. The two proofs share zero citations (Jaccard = 0.0) and their key intermediate conclusions are completely different: Heath argues through a divisibility chain along the terms, while the AI argues through the explicit power structure of the least continued proportion. Although the heath_only items 7.20 and 7.21 appear inside Heath's proof of 8.1 (which the AI cites), the AI does not merely subsume Heath's argument under 8.1; rather, 8.1 serves as the launching point for a fundamentally different algebraic strategy. This is a genuine path difference.",
+  "jaccard": 0.0,
+  "ai_citations": "7.19|7.22|7.27|7.33|8.1|8.2|D7.12|D7.2",
+  "heath_citations": "7.13|7.20|7.21",
+  "ai_only": "7.19|7.22|7.27|7.33|8.1|8.2|D7.12|D7.2",
+  "heath_only": "7.13|7.20|7.21",
+  "audit_record": ""
+}

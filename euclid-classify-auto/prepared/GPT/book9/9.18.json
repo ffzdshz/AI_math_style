@@ -1,0 +1,31 @@
+{
+  "proposition": "9.18",
+  "book": 9,
+  "statement": "Given two numbers, to investigate whether it is possible to find a third proportional to them.",
+  "heath_proof": "Let A, B be the given two numbers, and let it be required to investigate whether it is possible to find a third proportional to them. Now A, B are either prime to one another or not. And, if they are prime to one another, it has been proved that it is impossible to find a third proportional to them. [IX. 16] Next, let A, B not be prime to one another, and let B by multiplying itself make C. Then A either measures C or does not measure it. First, let it measure it according to D; therefore A by multiplying D has made C. But, further, B has also by multiplying itself made C; therefore the product of A, D is equal to the square on B. Therefore, as A is to B, so is B to D; [VII. 19] therefore a third proportional number D has been found to A, B. Next, let A not measure C; I say that it is impossible to find a third proportional number to A, B. For, if possible, let D, such third proportional, have been found. Therefore the product of A, D is equal to the square on B. But the square on B is C; therefore the product of A, D is equal to C. Hence A by multiplying D has made C; therefore A measures C according to D. But, by hypothesis, it also does not measure it: which is absurd. Therefore it is not possible to find a third proportional number to A, B when A does not measure C.",
+  "ai_proof_text": "9.18\n**Statement:** Given two numbers, to investigate whether it is possible to find a third proportional to them.\n\n**Step 1.** Let the given numbers, in their assigned order, be A and B. Form S = B·B by repeated addition [D7.15, D7.18]. By 7.19, a number C satisfies A:B = B:C if and only if A·C = S. **Path choice:** use this product criterion directly, rather than first reducing the ratio to least terms, because it immediately supplies a measurement test [7.19].\n\n**Step 2.** Starting with S, repeatedly subtract A while possible, counting the copies removed. Stop when nothing remains or when the remainder is smaller than A. This process terminates: S consists of finitely many units, and each subtraction removes units and leaves a strictly smaller remainder [D7.2, CN5].\n\n**Step 3.** Suppose S is exhausted after at least two copies of A have been removed. Let C be the number containing as many units as there were copies removed [D7.2]. Then A·C = S by the definition of multiplication [D7.15]. Since S = B·B, proposition 7.19 gives A:B = B:C. Thus C is the required third proportional [7.19].\n\n**Step 4.** Suppose instead that a nonempty remainder is left, or that S is exhausted after only one copy of A. If a third proportional number C existed, 7.19 would give S = A·C. By the definition of multiplication, S would therefore consist of exactly as many copies of A as there are units in C [D7.15]. Since C is a number, not merely a unit, the subtraction would exhaust S after at least two copies, contrary to the outcome of the test [D7.1, D7.2]. Hence no third proportional number exists in these cases. Consequently, a third proportional exists exactly when B·B consists of whole copies of A whose count is a number rather than a single unit; the finite test above both decides the question and constructs the third proportional whenever possible [7.19, D7.15].\n\n**USED:** 7.19, CN5, D7.1, D7.15, D7.18, D7.2\n**Human refs (from References field):** 7.19, 9.16\n**Jaccard:** 0.143 — AI adds ['CN5', 'D7.1', 'D7.15', 'D7.18', 'D7.2']; Human adds ['9.16']",
+  "ai_used": [
+    "7.19",
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.18",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "7.19",
+    "9.16"
+  ],
+  "ai_only": [
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.18",
+    "D7.2"
+  ],
+  "heath_only": [
+    "9.16"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let the given numbers, in their assigned order, be A and B. Form S = B·B by repeated addition [D7.15, D7.18]. By 7.19, a number C satisfies A:B = B:C if and only if A·C = S. **Path choice:"
+}

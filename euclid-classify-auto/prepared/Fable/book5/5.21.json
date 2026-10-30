@@ -1,0 +1,38 @@
+{
+  "proposition": "5.21",
+  "book": 5,
+  "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth will also be greater than the sixth; if equal, equal; and if less, less.",
+  "heath_proof": "Let there be three magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two are in the same ratio, and let the proportion of them be perturbed, so that, as A is to B, so is E to F, and, as B is to C, so is D to E, and let A be greater than C   ex aequali; I say that D will also be greater than F; if A is equal to C, equal; and if less, less. For, since A is greater than C, and B is some other magnitude, therefore A has to B a greater ratio than C has to B. [V. 8] But, as A is to B, so is E to F, and, as C is to B, inversely, so is E to D. Therefore also E has to F a greater ratio than E has to D. [V. 13] But that to which the same has a greater ratio is less; [V. 10] therefore F is less than D; therefore D is greater than F.  Similarly we can prove that, if A be equal to C, D will also be equal to F; and if less, less.",
+  "ai_proof_text": "5.21\n**Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth will also be greater than the sixth; if equal, equal; and if less, less.\n\n**Step 1.** Let A, B, C be three magnitudes, and D, E, F three others equal to them in multitude, which taken two and two together are in the same ratio, the proportion being perturbed (D5.18): as A is to B, so is E to F; and as B is to C, so is D to E. The comparison ex aequali concerns the extreme terms of each set, A with C and D with F (D5.17). We must show that if A > C then D > F; if A = C then D = F; and if A < C then D < F.\n\n**Step 2.** Since as B is to C, so is D to E, therefore inversely (D5.13), as C is to B, so is E to D [5.7, Porism].\n\n**Step 3.** (Case A > C.) Since A is greater than C, and B is another magnitude of the same kind, A has to B a greater ratio than C has to B [5.8].\n\n**Step 4.** Since as E is to F, so is A to B, and A has to B a greater ratio than C has to B, therefore E has to F a greater ratio than C has to B [5.13].\n\n**Step 5.** Since E has to F a greater ratio than C has to B, by D5.7 there are equimultiples mE, mC of E, C and equimultiples nF, nB of F, B such that mE exceeds nF but mC does not exceed nB. Now as C is to B, so is E to D (Step 2); taking the equimultiples mC, mE of C, E and the equimultiples nB, nD of B, D, since mC does not exceed nB, by D5.5 mE does not exceed nD. Thus mE exceeds nF while mE does not exceed nD; therefore, by D5.7, E has to F a greater ratio than E has to D. (This replacement of the lesser ratio C:B by the equal ratio E:D is justified directly from the definitions, since 5.13 as enunciated covers only the replacement of the greater ratio.)\n\n**Step 6.** Since E has to F a greater ratio than E has to D, that to which the same has the greater ratio is less; therefore F is less than D [5.10], that is, D is greater than F.\n\n**Step 7.** (Case A = C.) Since A is equal to C, A has to B the same ratio as C has to B [5.7]. But as A is to B, so is E to F; therefore as E is to F, so is C to B [5.11]. And as C is to B, so is E to D (Step 2); therefore as E is to F, so is E to D [5.11].\n\n**Step 8.** Since E has to F the same ratio as E has to D, magnitudes to which the same has the same ratio are equal; therefore F is equal to D [5.9].\n\n**Step 9.** (Case A < C.) Since C is greater than A, C has to B a greater ratio than A has to B [5.8]. Since as E is to D, so is C to B (Step 2), and C has to B a greater ratio than A has to B, therefore E has to D a greater ratio than A has to B [5.13].\n\n**Step 10.** Since E has to D a greater ratio than A has to B, by D5.7 there are equimultiples mE, mA of E, A and equimultiples nD, nB of D, B such that mE exceeds nD but mA does not exceed nB. Now as A is to B, so is E to F; taking the equimultiples mA, mE of A, E and the equimultiples nB, nF of B, F, since mA does not exceed nB, by D5.5 mE does not exceed nF. Thus mE exceeds nD while mE does not exceed nF; therefore, by D5.7, E has to D a greater ratio than E has to F.\n\n**Step 11.** Since E has to D a greater ratio than E has to F, D is less than F [5.10].\n\n**Step 12.** Therefore, if ex aequali A is greater than C, D is also greater than F; if equal, equal; and if less, less. Q.E.D.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.13, D5.17, D5.18, D5.5, D5.7\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.273 — AI adds ['5.11', '5.7', '5.9', 'D5.13', 'D5.17', 'D5.18', 'D5.5', 'D5.7']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.13",
+    "D5.17",
+    "D5.18",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.13",
+    "D5.17",
+    "D5.18",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_only": [],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let A, B, C be three magnitudes, and D, E, F three others equal to them in multitude, which taken two and two together are in the same ratio, the proportion being perturbed (D5.18): as A i"
+}

@@ -1,0 +1,61 @@
+{
+  "proposition": "13.9",
+  "run": "GPT",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the center of the circle; A, B are adjacent vertices of the inscribed regular decagon on the circle; OA = OB = radius = hexagon side (by 4.15)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle AOB = theta = 36 degrees (10 central angles sum to 360 degrees); angles OAB = ABO = 2*theta = 72 degrees (isosceles triangle angle sum)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D lies on segment OB between O and B, where the bisector of angle OAB meets OB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle decomposition: angle OAB = angle OAD + angle DAB, with angle OAD = angle DAB = theta (ray AD between rays AO and AB)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "In triangle OAD: angle AOD = angle OAD = theta, so OD = AD (I.6)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "In triangle ADB: angle ADB = angle ABD = 2*theta, so AD = AB (I.6); therefore OD = AD = AB",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 4",
+      "claim": "OD > DB: in triangle ADB, angle ABD = 2*theta > angle BAD = theta, so AD > DB (I.19), and OD = AD",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle bisector proportion (VI.3): OD : DB = OA : AB; substituting OA = OB and AB = OD gives OB : OD = OD : DB (extreme and mean ratio)",
+      "type": "proportion"
+    },
+    {
+      "step": "Step 6",
+      "claim": "C is on extension of OB beyond B, with BC = BA = OD; point order on line is O-D-B-C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "By XIII.5, OC is cut in EMR at B with greater segment OB (hexagon side); OC = hexagon side + decagon side",
+      "type": "proportion"
+    }
+  ],
+  "configuration_map": "Points on circle: A, B (adjacent decagon vertices). Center: O. Line OB contains D (between O and B) and C (beyond B). Order on line: O --- D --- B --- C. Distances: OA = OB = radius = hexagon side; OD = AD = AB = decagon side; DB = OB - OD (lesser segment); BC = OD = decagon side; OC = OB + BC = hexagon side + decagon side. Triangle OAB is isosceles (OA = OB) with angles theta, 2*theta, 2*theta where theta = 36 degrees. D is where the bisector of angle OAB meets OB. Triangle OAD is isosceles (OD = AD). Triangle ADB is isosceles (AD = AB).",
+  "pass_reason": "All spatial claims are mutually consistent. The single angle decomposition (bisection of angle OAB) has the middle ray AD properly between the outer rays AO and AB since D lies between O and B on segment OB. All applications of propositions (I.5, I.6, I.19, VI.3, XIII.5) have their spatial hypotheses satisfied. No inside/outside contradictions or betweenness violations exist. Numerical verification confirms OB : OD = OD : DB = phi (golden ratio) and OC : OB = OB : BC = phi."
+}

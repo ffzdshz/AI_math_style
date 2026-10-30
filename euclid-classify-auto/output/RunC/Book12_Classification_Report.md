@@ -1,0 +1,122 @@
+# Book 12 — Classification Report (RunC)
+
+## Summary
+
+| Category | Count | Propositions |
+|---|---|---|
+| Perfect match (P) | 0 |  |
+| Granularity difference (G) | 9 | 12.1, 12.2, 12.5, 12.8, 12.9, 12.13, 12.14, 12.15, 12.18 |
+| Path difference (D) | 8 | 12.3, 12.4, 12.6, 12.7, 12.10, 12.11, 12.12, 12.16 |
+| AI proof error (E) | 1 | 12.17 |
+
+**Total**: 18 propositions
+
+## Error Details
+
+| Proposition | Error type | Details |
+|---|---|---|
+| 12.17 | Invalid inference | CANDIDATE E — 12.17   violated_claim : "The perpendicular distance from A to the plane of any face of the polyhedron is at least as great as the perpendicular distance from A to any edge of that face, |
+
+## Per-Proposition Analysis
+
+### 12.1
+**Category**: Granularity difference
+**Jaccard**: 0.500
+**Analysis**: Q2 decided the classification. Both proofs follow the same logical backbone: from the similarity of the inscribed polygons, they derive equiangular triangles (BAE/GFL via VI.6), then use inscribed angle theorems to transfer angle equalities to triangles involving the diameters (ABM/FGN), establish equiangularity of those triangles via the right angle from III.31 and the angle sum from I.32, extract the proportionality BM:GN = BA:GF via VI.4, and conclude using duplicate ratios from VI.20. The key citation difference is that the AI cites 3.21 (angles in the same segment are equal) where Heath cites 3.27 (angles on equal circumferences in equal circles are equal) for the same logical step; both justify the equality of inscribed angles in a single circle, making this a citation-level rather than backbone-level difference. The remaining ai_only items (5.11, CN1, D5.9, P4) are auxiliary citations that Heath leaves implicit, representing over-citation at a finer granularity. Since the key intermediate conclusions are identical and only the citation depth differs, this is a granularity difference.
+
+### 12.2
+**Category**: Granularity difference
+**Jaccard**: 0.182
+**Analysis**: Q2 decided the classification as G (Granularity difference). Both proofs follow the same backbone: a double reductio ad absurdum using the method of exhaustion. In Case I (S < circle EFGH), both inscribe successively refined polygons to exhaust the gap between the circle and S (using 10.1), invoke 12.1 to relate similar inscribed polygons as squares on diameters, then derive a contradiction showing S is simultaneously greater than and less than the polygon. In Case II (S > circle EFGH), both reduce to Case I by inverting the ratio. The sole heath_only citation, 5.16 (alternando), is used by Heath to rearrange the proportion before concluding the contradiction, while the AI instead applies 5.14 directly to the unrearranged proportion to reach the same contradiction — an equivalent proportional reasoning step yielding the same key intermediate conclusion. The ai_only citations (1.41, 10.1, 4.6, 5.14, 5.7, CN1, CN5, D5.13) are explicit citations of foundational steps that Heath employs implicitly: 4.6 for inscribing the square, 10.1 for the exhaustion principle, 1.41 for the area comparison, and various Book 5 results and common notions for proportional reasoning. This is a citation-depth difference within the same logical backbone.
+
+### 12.3
+**Category**: Path difference
+**Jaccard**: 0.278
+**Analysis**: Q2 decides the classification. Both proofs establish the same key intermediate conclusions: the two sub-pyramids are equal, similar to each other, and similar to the whole; the remainder consists of two equal prisms; and the two prisms exceed half the whole pyramid. However, they reach the face-congruence and similarity conclusions by substantively different subsidiary methods. Heath uses XI.10 (equal angles from parallel lines in different planes) and I.4 (SAS congruence) to prove triangle congruences, while the AI uses VI.2 to establish that all six edges of each sub-pyramid are half the corresponding edges of the original, then applies I.8 (SSS congruence) to prove face congruences directly. The heath_only proposition XI.10 is not contained in the proof tree of any AI-cited proposition and represents a genuinely different geometric technique (angle-based vs. edge-length-based), so Case A of Q2 fails for this item, pushing to Case B and Q3. Under Q3, the AI's SSS-based path is fully valid, yielding classification D.
+
+### 12.4
+**Category**: Path difference
+**Jaccard**: 0.200
+**Analysis**: Q2 determined the classification. Heath's proof establishes the prism ratio through proportionality of similar figures on proportional lines (6.22) followed by alternando (5.16) to derive that base_1 : base_2 equals the sub-triangle ratio. The AI's proof takes a genuinely different path: it argues that prisms of equal height are proportional to their bases (via 11.28, 11.32, 11.39), then computes that each prism base is one-fourth of the original triangle base using 6.19 directly, and uses 5.15 to conclude the ratio of prisms equals the ratio of original bases. The heath_only citations 5.16 and 6.22 are substantive backbone propositions in Heath's approach that are not merely compressed but entirely absent from the AI's logical chain, which substitutes a direct area-computation route. Both paths are logically complete and valid, yielding classification D.
+
+### 12.5
+**Category**: Granularity difference
+**Jaccard**: 0.273
+**Analysis**: Q2 decided the classification. Both proofs follow the same double reductio ad absurdum structure: they assume the ratio of pyramids to bases fails, subdivide one pyramid using XII.3, apply the exhaustion principle (X.1), establish prism ratios via XII.4, derive a contradiction using Book V proportion results, then reduce the second case (W greater) to the first (W less). The key geometric intermediate conclusions are identical in both proofs. The differences lie entirely in which Book V proportion lemmas are invoked: Heath uses V.16 (alternation) and the XII.2 Lemma to manipulate the proportions and handle the second case, while the AI uses 5.14 (ratio comparison), 5.7 (inversion), 5.11 (transitivity), and 5.9 (equality from equal ratios). These are alternative proportion tools applied at the same logical junctures to reach the same geometric conclusions, making this a citation-depth difference rather than a path difference.
+
+### 12.6
+**Category**: Path difference
+**Jaccard**: 0.400
+**Analysis**: Q2 reveals genuinely different logical backbones. Heath builds up the polygonal base ratio incrementally using componendo (5.18): he adds one triangle at a time to the polygon, alternating between 5.18 and ex aequali (5.22) to progressively enlarge the base. The AI instead adopts a common-denominator strategy, comparing every sub-pyramid of both polygonal pyramids to a single reference pyramid (L-GHI) using 12.5, then summing all the ratios at once via 5.24 (addition of ratios with a common second term), and finally chaining with invertendo (5.7) and ex aequali (5.22). The key intermediate conclusions differ: Heath's intermediates are cumulative partial-polygon ratios (ABCD:ACD, ABCDE:ADE), while the AI's intermediates are whole-polygon-to-single-triangle ratios (P1:L-GHI, P2:L-GHI). Both paths are logically complete, so the classification is D.
+
+### 12.7
+**Category**: Path difference
+**Jaccard**: 0.400
+**Analysis**: Q2 decided the classification. Heath decomposes the prism ABCDEF into three pyramids by drawing diagonals BD, EC, CD and argues equality via parallelogram faces ABED (diagonal BD) and FCBE (diagonal CE), using a same-planes identification to link the first two pyramids. The AI instead decomposes the prism by drawing diagonal AC and cutting planes through ACE and ACD, producing a different set of three pyramids (T1=ABCE, T2=ACDE, T3=ACEF). The AI argues equality by pairing pyramids whose bases are the two triangles formed by the diagonal of a parallelogram face (ABED with diagonal AE for T1=T2, ADFC with diagonal AC for T2=T3), applying XII.5 in each case. Because the decompositions use different cutting diagonals and yield different intermediate pyramids with different key intermediate conclusions (different parallelogram faces, different equal-triangle pairs), this is Case B (different backbone). The AI's alternative path is logically complete and valid, so this is classified as D.
+
+### 12.8
+**Category**: Granularity difference
+**Jaccard**: 0.375
+**Analysis**: Q2 decided the classification as G (Granularity difference). Both proofs follow the same backbone: construct parallelepipeds around the similar pyramids, show the parallelepipeds are similar, apply XI.33 for the triplicate ratio of corresponding sides, establish that each pyramid is one-sixth of its parallelepiped via XI.28 and XII.7, and conclude the pyramids are in the triplicate ratio. The citation differences are all matters of depth: Heath cites XI.24 (opposite faces of a parallelepiped are equal and parallelogrammic) to help establish similarity of the solids, while the AI omits this and argues directly from the definition of similar solids (D11.9). The AI's additional citations (5.15 for the ratio step, D11.9, D5.10, D6.1 as definitions) make explicit what Heath leaves implicit or handles without explicit citation. No logical gap or error was identified in the AI proof.
+
+### 12.9
+**Category**: Granularity difference
+**Jaccard**: 0.250
+**Analysis**: Q2 decided the classification as G. Both proofs share the same logical backbone: complete parallelepipedal solids from the given pyramids, apply 11.34 to establish reciprocal proportionality of the parallelepiped bases and heights, then convert the parallelogram base ratio to a triangle base ratio using proportion theory (5.11). The difference is purely in citation depth. Heath goes directly from pyramids to parallelepipeds (citing 1.34 to relate parallelogram bases to triangle bases), while the AI takes more explicit intermediate steps through prisms (12.7: prism = 3x pyramid), then constructs parallelepipeds from them (1.42 to build double-parallelogram bases, 11.39 to equate parallelepiped and prism), and uses 5.15 and CN1 for the equimultiple and equality reasoning. The ai_only items (12.7, 11.39, 1.42, 5.15, CN1) represent finer-grained construction steps, and the heath_only item (1.34) is replaced by the AI's equivalent use of 1.42 plus 5.15 at the same logical position. The key intermediate conclusions are identical in both proofs.
+
+### 12.10
+**Category**: Path difference
+**Jaccard**: 0.300
+**Analysis**: Q2 reveals a genuinely different backbone in Case 2 of this double-reductio proof. Both proofs share the same structure for Case 1 (cylinder > 3*cone): inscribe a polygon, build prisms, apply exhaustion via X.1, use XII.7 to relate prism and pyramid, and derive a contradiction from the inscribed pyramid being both greater than and less than the cone. However, for Case 2 (cylinder < 3*cone), Heath exhausts the cone with inscribed pyramids, showing the inscribed pyramid exceeds one-third of the cylinder while the corresponding prism (inscribed in the cylinder) must be less than the cylinder. The AI instead switches to circumscribed figures: it circumscribes a polygon about the base circle, builds a circumscribed prism and pyramid, and derives a contradiction from the circumscribed pyramid being simultaneously greater than the cone (by containment) and less than the cone (from the exhaustion bound). This is a valid alternative approach with different key intermediate conclusions. Additionally, the AI uses I.41 (parallelogram-triangle area relation) to justify the greater-than-half lemma where Heath references XII.2, and the AI explicitly cites CN5 and definitions D11.18 and D11.21 that Heath leaves implicit. Q3 confirms the AI's circumscribed-figure path is logically sound, yielding classification D.
+
+### 12.11
+**Category**: Path difference
+**Jaccard**: 0.429
+**Analysis**: Q2 identified a genuine backbone difference between the two proofs, leading to classification D via Q3. Heath proves the result for cones first using inscribed pyramids and the exhaustion method, then extends to cylinders via XII.10 (cone = 1/3 cylinder). The AI reverses this order: it proves the result for cylinders first using inscribed prisms (justified via XII.7 reducing prisms to pyramids, then XII.6 for proportionality of pyramids to bases), establishes the cylinder ratio directly, and then derives the cone result from the cylinder result using XII.10 and V.15. Additionally, the proportion-manipulation techniques differ: Heath uses V.16 (alternation) to reach the contradiction, while the AI uses V.14 (comparison via proportion) and V.7 (inversion) for corresponding steps. These constitute substantive differences in both the order of key intermediate conclusions and the specific logical tools employed, placing this firmly in path-difference territory. Q3 confirms the AI's alternative path is logically valid.
+
+### 12.12
+**Category**: Path difference
+**Jaccard**: 0.150
+**Analysis**: Q2 determined the classification. Heath proves this proposition using the method of exhaustion (double reductio ad absurdum): he assumes the triplicate ratio maps to a solid less than (then greater than) the second cone, inscribes polygons in the circular bases, builds similar pyramids with the same vertex as the cones, applies 12.8 (similar pyramids in triplicate ratio of corresponding sides) and 10.1 (exhaustion principle) to derive a contradiction. The AI takes a fundamentally different direct approach: it introduces an intermediate cone sharing the first cone's base and the second cone's height, then shows (1) the intermediate cone to the second cone is in the duplicate ratio of the diameters via 12.11 and 12.2, and (2) the first cone to the intermediate cone is as the ratio of diameters (via an informal argument about cones on the same base being as their heights, using 12.10, 11.25, and 6.1). The AI then compounds these ratios via 5.22 to obtain the triplicate ratio. The key intermediate conclusions are entirely different: Heath's backbone involves inscribed similar pyramids and exhaustion, while the AI's backbone involves ratio composition through an intermediate cone. E was considered for Step 6 where the AI cites 12.11 for a claim about cones on the same base being as their heights (12.11 actually proves the converse), but the audit record shows missing_is = expansion since the AI provides informal reasoning through 12.10 and 11.25 that could be expanded, so the lenience rule applies and the verdict is NOT-E. Since the backbones differ and the AI's path is valid under the hardened standard, the classification is D.
+**Audit Record**: CANDIDATE E — 12.12
+  violated_claim : "the first cone is to the intermediate cone as KL is to MN" (cones on the same base are to one another as their heights)
+  failure_mode   : invalid_inference
+  missing_is     : expansion (the AI provides informal reasoning via 12.10, 11.25, 6.1 that could be expanded to a full proof of this claim)
+  evidence       : Step 6: "By 12.11, cones on the same base (which is a special case of equal bases) are to one another as their heights... we apply 11.25 and the general principle: by 12.10, cone = (1/3) cylinder, and cylinders on the same base are as their heights (since a cylinder on a given base with height h equals the base times h, by the reasoning underlying 12.11 and 6.1)"
+  why_not_terse  : 12.11 proves cones of same height are as their bases, not the converse; the informal chain through 11.25 is about parallelepipeds not cylinders. However, missing_is = expansion because the reasoning chain (12.10 reducing cones to cylinders, 11.25 giving proportionality for parallelepipeds, extending to cylinders) is an expansion of a supported step rather than an entirely missing support relation. Lenience rule applies: NOT-E.
+
+### 12.13
+**Category**: Granularity difference
+**Jaccard**: 0.167
+**Analysis**: Both proofs follow the same equimultiple strategy to establish the proportion between cylinder segments and axis segments via V. Def. 5 (D5.5). The key intermediate conclusions are identical: (1) cross-sections cut by parallel planes are equal circles, (2) cylinders on equal axis segments with equal bases are equal, establishing the equimultiple relationship, (3) the equimultiple comparison transfers between axes and cylinders, and (4) the definition of proportion yields the result. The difference is purely in citation depth: Heath invokes 12.11 (cylinders of the same height are as their bases) to formally justify that cylinders on equal segments are equal, while the AI argues this directly from definitions of cylinders (D11.21, D11.22, D11.23) and 11.14 (planes perpendicular to the same line are parallel). The AI goes to a lower level of justification rather than citing the composite theorem. Since the backbone is the same and the difference is only in what level of the dependency tree each proof cites, this is a granularity difference (G).
+
+### 12.14
+**Category**: Granularity difference
+**Jaccard**: 0.600
+**Analysis**: Q2 decided this classification. Both proofs share the same logical backbone: construct a cylinder with the same base and matching height, use 12.11 to establish equality of cylinders on equal bases with equal heights, use 12.13 to establish that cutting a cylinder by a parallel plane yields cylinders proportional to their axes, substitute the equal cylinder to obtain the height ratio, then use 12.10 to extend the result from cylinders to cones. The AI adds explicit citations to 5.15 (parts have the same ratio as multiples) and 5.11 (transitivity of equal ratios) when deriving the cone case from the cylinder case, whereas Heath handles this ratio reasoning implicitly. Since heath_only is empty and ai_only contains only Book 5 ratio-algebra lemmas supporting the same logical step Heath performs without citation, this is Case A of Q2: same backbone, different citation depth, yielding G.
+
+### 12.15
+**Category**: Granularity difference
+**Jaccard**: 0.571
+**Analysis**: Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: they construct an auxiliary cone or cylinder sharing one base and one height from the two originals, establish a ratio via equal heights using 12.11, establish a ratio via equal bases (Heath uses 12.13 on a cut cylinder; the AI uses the higher-level 12.14), apply 5.7 from the equality of the original solids, and combine ratios via 5.11 to reach the reciprocal proportionality. The converse directions are similarly parallel. The proof-tree containment test confirms that heath_only item 12.13 appears inside Heath's proof of 12.14, so the AI is citing 12.14 as a packaged unit while Heath re-derives its internals inline. The ai_only item D5.13 is a definition (inverse ratio) representing over-citation. The AI also unifies Heath's two sub-cases (equal and unequal heights) into a single general argument, which is a presentational difference rather than a backbone difference. All key intermediate conclusions match, with only citation depth differing.
+
+### 12.16
+**Category**: Path difference
+**Jaccard**: 0.062
+**Analysis**: Q2 reveals different backbones: Heath's proof constructs a tangent to the lesser circle (3.16), then repeatedly bisects the circumference (10.1) to produce a chord LN parallel to that tangent, concluding via parallelism that LN cannot touch the lesser circle, and uses 3.3 and 1.4 to show LD = DN. The AI proof instead inscribes a square (using 1.11 and 3.29), then repeatedly bisects arcs (3.30) while tracking perpendicular distances from the center to each side via 3.15, showing that these distances strictly increase with each bisection, and applies 10.1 to conclude that after sufficiently many bisections the perpendicular distance exceeds the lesser circle's radius. The key intermediate conclusions differ: Heath relies on tangent-parallelism, while the AI relies on perpendicular-distance monotonicity and 3.15. Under Q3, the AI's alternative path is logically complete — each step is supported by valid citations (3.15 for the distance comparison, 10.1 for the exhaustion argument, 3.30 for arc bisection), and no unsupported assertions, circular citations, or invalid inferences are present under the hardened 1(b) standard.
+
+### 12.17
+**Category**: AI proof error
+**Jaccard**: 0.097
+**Analysis**: The AI proof contains an invalid inference in Step 13 that is central to its conclusion. The AI claims 'The perpendicular distance from A to the plane of any face of the polyhedron is at least as great as the perpendicular distance from A to any edge of that face, which in turn is at least AK.' This inequality is reversed: the perpendicular from a point to a plane is the MINIMUM distance to any point in the plane, so dist(A, plane) <= dist(A, edge), not >=. The AI's chain dist(A,plane) >= dist(A,edge) >= AK is mathematically false. Correcting the inequality direction yields dist(A,plane) <= AK, which does not establish the desired conclusion that every face is farther from A than the lesser sphere's radius. Heath requires an elaborate argument using Pythagorean theorem (I.47), properties of circles (III.31), and similar triangles (VI.8) to show that the perpendicular from A to the face plane exceeds the lesser sphere radius. The AI bypasses this entirely through a reversed inequality. The cited references (1.19 about triangle sides, 11.38 about cube bisection) do not support the claim. This is not a matter of terseness but a positive logical error: the stated mathematical relationship is the opposite of the true one, and the conclusion does not follow.
+**Audit Record**: CANDIDATE E — 12.17
+  violated_claim : "The perpendicular distance from A to the plane of any face of the polyhedron is at least as great as the perpendicular distance from A to any edge of that face, which in turn is at least AK" (Step 13)
+  failure_mode   : invalid_inference
+  missing_is     : support — the inequality is reversed; the perpendicular from a point to a plane is the MINIMUM distance to any point in the plane, so it is LESS than or equal to the distance to any edge line, not greater. The AI's chain dist(A,plane) >= dist(A,edge) >= AK is backwards.
+  evidence       : AI Step 13 text: "The perpendicular distance from A to the plane of any face of the polyhedron is at least as great as the perpendicular distance from A to any edge of that face, which in turn is at least AK [1.19, 11.38]." The cited refs (1.19 — greater angle subtends greater side; 11.38 — about cube bisection) do not support this claim. Correcting the inequality gives dist(A,plane) <= AK, which fails to establish the desired conclusion.
+  why_not_terse  : This is not brevity — the AI makes an explicit mathematical claim (dist to plane >= dist to edge) that is the exact opposite of the geometric fact (dist to plane <= dist to edge). The correct direction would not yield the desired conclusion without Heath's detailed argument involving I.47, III.31, VI.8.
+
+### 12.18
+**Category**: Granularity difference
+**Jaccard**: 0.154
+**Analysis**: Both proofs follow the same double reductio ad absurdum backbone: assume the spheres do not have the triplicate ratio of diameters, derive a contradiction for the less-than case by inscribing polyhedra (via 12.17) whose triplicate ratio equals the assumed ratio, then using alternando (5.16) to show the inner sphere must be both greater and less than the inscribed polyhedron, then handle the greater-than case to complete the exhaustion. The key intermediate conclusions are identical in both proofs. The citation differences are granularity-level: the AI explicitly cites 12.8 for the triplicate ratio of similar pyramids (which Heath subsumes under 12.17), and the AI enumerates Book 5 ratio propositions (5.11, 5.13, 5.14, 5.22) plus definitions and common notions (CN1, CN5, D11.14, D11.17, D5.10) that Heath leaves implicit. The sole heath_only citation, 12.2 (its Lemma), is used by Heath to formally justify that if a greater sphere has a certain ratio to a third sphere, then the original sphere has that ratio to something smaller; the AI handles this same step by inversion (5.13) and appeal to symmetry of the argument, which is a different justification mechanism for the same conclusion rather than a different backbone. Since Q2 Case A holds with the same key intermediate conclusions throughout, the classification is G.

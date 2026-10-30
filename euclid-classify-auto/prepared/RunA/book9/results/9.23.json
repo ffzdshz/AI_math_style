@@ -1,0 +1,13 @@
+{
+  "proposition": "9.23",
+  "category": "P",
+  "category_label": "Perfect match",
+  "error_type": "",
+  "analysis": "The forward dependency gate found no issues (9.21, 9.22, and D7.7 are all prior to 9.23). Q1 found no logical defects: the AI proof correctly separates the last odd number from the rest, shows the remaining even-count sum is even via 9.22, decomposes the last odd number into an even number plus a unit via D7.7, combines the even parts via 9.21, and concludes oddness by D7.7. Q2 confirmed both proofs share the same logical backbone: isolate the last odd number, show the partial sum is even, then show adding the last odd number produces an odd total. The citation sets are identical (ai_used = heath_refs = {9.21, 9.22, D7.7}, Jaccard = 1.0), and the key intermediate conclusions match, so the perfect match check assigns category P.",
+  "jaccard": 1.0,
+  "ai_citations": "9.21|9.22|D7.7",
+  "heath_citations": "9.21|9.22|D7.7",
+  "ai_only": "",
+  "heath_only": "",
+  "audit_record": ""
+}

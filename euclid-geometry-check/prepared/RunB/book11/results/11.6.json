@@ -1,0 +1,81 @@
+{
+  "proposition": "11.6",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is perpendicular to plane P at point B; CD is perpendicular to plane P at point D",
+      "type": "perpendicularity_to_plane"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BD lies in plane P (connecting two points in the plane)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle ABD is a right angle (AB perp to plane P, BD in plane P)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle CDB is a right angle (CD perp to plane P, BD in plane P)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DE lies in plane P, perpendicular to BD at D; angle BDE = 90",
+      "type": "construction_in_plane"
+    },
+    {
+      "step": "Step 6",
+      "claim": "BE lies in plane P; angle ABE = 90 (AB perp plane, BE in plane); angle CDE = 90 (CD perp plane, DE in plane)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle ABD has right angle at B; AD^2 = AB^2 + BD^2",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle BDE has right angle at D; BE^2 = BD^2 + DE^2",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle ABE has right angle at B; AE^2 = AB^2 + BE^2",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Angle ADE = 90 degrees (by converse Pythagorean theorem)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 12",
+      "claim": "DE perpendicular to BD, AD, and CD at point D",
+      "type": "perpendicularity_triple"
+    },
+    {
+      "step": "Step 13",
+      "claim": "BD, AD, CD are coplanar (in plane Q) by XI.5",
+      "type": "coplanarity"
+    },
+    {
+      "step": "Step 14",
+      "claim": "AB lies in plane Q (since A on AD in Q, B on BD in Q); CD lies in plane Q",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Angles ABD and BDC identified as alternate angles formed by transversal BD on lines AB and CD",
+      "type": "alternate_angles"
+    }
+  ],
+  "configuration_map": "Configuration in 3D: Plane P is the base plane. B and D are points in P. AB rises from B perpendicular to P. CD rises from (or descends below) D perpendicular to P. BD is a horizontal segment in P. DE is constructed in P perpendicular to BD at D. E is a point along DE in P. In the derived plane Q (containing AB, BD, CD): B and D lie on a horizontal line. AB is vertical at B. CD is vertical at D. The Pythagorean chain (Steps 7-11) works in the triangles ABD (right angle at B in 3D), BDE (right angle at D in P), and ABE (right angle at B in 3D) to establish that angle ADE = 90. This makes DE perpendicular to three lines (BD, AD, CD) at D, proving coplanarity by XI.5. In plane Q, both AB and CD are perpendicular to BD, establishing parallelism.",
+  "pass_reason": "All spatial claims are mutually consistent. The perpendicularity relationships, plane memberships, and the Pythagorean derivation chain are geometrically valid. The identification of angles ABD and BDC as alternate angles is valid for the configuration where A and C are on opposite sides of plane P (a legitimate case for the proposition). Even if interpreted as co-interior angles (same side), both equal 90 degrees and parallelism follows. No spatial configuration contradiction exists."
+}

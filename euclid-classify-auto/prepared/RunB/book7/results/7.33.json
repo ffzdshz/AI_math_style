@@ -1,0 +1,13 @@
+{
+  "proposition": "7.33",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides: both proofs share the same two-case backbone (Case 1: prime-to-one-another implies already least; Case 2: find GCD D, divide to get E,F,G, show same ratio, prove minimality by contradiction with the GCD). The differences are purely in citation depth and lemma selection. For Case 1, Heath cites 7.21 directly while the AI re-derives 7.21's content inline. For the ratio step, Heath uses D7.20 and 7.16 while the AI uses 7.17. For the contradiction, Heath uses 7.19 (equal products imply proportion) to show M > D, while the AI uses 7.16 (commutativity), 7.20, and CN5 to reach the same conclusion that D times M exceeds D. The AI's citation of 7.20 in Step 7 is imprecise (7.20 requires the numbers to be the least, not merely smaller), but under the lenience rule the overall inference is compressed-but-sound rather than invalid. All key intermediate conclusions are identical across both proofs, making this a granularity difference.",
+  "jaccard": 0.333,
+  "ai_citations": "7.16|7.17|7.20|7.3|CN5|D7.12|D7.15|D7.20|D7.3|D7.4",
+  "heath_citations": "7.16|7.19|7.21|7.3|D7.15|D7.20",
+  "ai_only": "7.17|7.20|CN5|D7.12|D7.3|D7.4",
+  "heath_only": "7.19|7.21",
+  "audit_record": ""
+}

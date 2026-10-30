@@ -1,0 +1,43 @@
+{
+  "proposition": "3.15",
+  "book": 3,
+  "statement": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+  "heath_proof": "Let ABCD be a circle, let AD be its diameter and E the centre; and let BC be nearer to the diameter AD, and FG more remote; I say that AD is greatest and BC greater than FG. For from the centre E let EH, EK  be drawn perpendicular to BC, FG. Then, since BC is nearer to the centre and FG more remote, EK is greater than EH. [III. Def. 5] Let EL be made equal to EH, through L let LM be drawn at right angles to EK and carried through to N, and let ME, EN, FE, EG be joined. Then, since EH is equal to EL, BC is also equal to MN. [III. 14]  Again, since AE is equal to EM, and ED to EN, AD is equal to ME, EN. But ME, EN are greater than MN, [I. 20] and MN is equal to BC; therefore AD is greater than BC. And, since the two sides ME, EN are equal to the two sides FE, EG, and the angle MEN greater than the angle FEG, therefore the base MN is greater than the base FG. [I. 24] But MN was proved equal to BC. Therefore the diameter AD is greatest and BC greater than FG.",
+  "ai_proof_text": "3.15\n**Statement:** Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.\n\n**Step 1.** Let ABDC be a circle with center E, and let BC be a diameter. Let AD be any chord that is not a diameter. We are to show first that BC is greater than AD, and second that among non-diameter chords, the one nearer to the center is greater than the one more remote.\n\n**Step 2.** Since E is the center of the circle, join EA and ED [P1]. Since E is the center, EA, EB, EC, and ED are all radii, so EA = EB and ED = EC [D1.15].\n\n**Step 3.** Since AD is not a diameter, it does not pass through E [D1.17], so E, A, D form a triangle. By the triangle inequality, EA + ED > AD [1.20].\n\n**Step 4.** Since E lies on the diameter BC between B and C, we have BC = BE + EC. But BE = EA and EC = ED [D1.15, CN1]. Therefore BC = EA + ED.\n\n**Step 5.** Since EA + ED > AD [Step 3] and BC = EA + ED [Step 4], we conclude BC > AD. Thus the diameter is the greatest straight line in the circle.\n\n**Step 6.** Now for the second part, let AD and FG be two chords neither of which is a diameter, with AD nearer to the center than FG. Draw EH perpendicular to AD and EK perpendicular to FG from center E [1.12, P1].\n\n**Step 7.** Since EH is drawn from the center perpendicular to chord AD, it bisects AD, so AH = HD [3.3]. Similarly, since EK is drawn from the center perpendicular to chord FG, it bisects FG, so FK = KG [3.3].\n\n**Step 8.** Since AD is nearer to the center than FG, the perpendicular EH is less than the perpendicular EK, that is, EH < EK [D3.4, D3.5].\n\n**Step 9.** Since angle EHA is a right angle, triangle EHA is right-angled at H. By the Pythagorean theorem, the square on AE equals the sum of the squares on AH and HE, that is, AE^2 = AH^2 + HE^2 [1.47].\n\n**Step 10.** Since angle EKF is a right angle, triangle EKF is right-angled at K. By the Pythagorean theorem, EF^2 = FK^2 + KE^2 [1.47].\n\n**Step 11.** Since AE and EF are both radii of the circle, AE = EF [D1.15, CN1]. Therefore AE^2 = EF^2, and so AH^2 + HE^2 = FK^2 + KE^2 [CN1].\n\n**Step 12.** Since EH < EK [Step 8], the square on EH is less than the square on EK, that is, HE^2 < KE^2. From the equality AH^2 + HE^2 = FK^2 + KE^2 [Step 11], since HE^2 < KE^2, it follows that AH^2 > FK^2, and therefore AH > FK.\n\n**Step 13.** Since AH = HD [Step 7], we have AD = AH + HD = AH + AH. Since FK = KG [Step 7], we have FG = FK + KG = FK + FK. Since AH > FK [Step 12], adding equals to equals (AH > FK added to AH > FK), we obtain AH + AH > FK + FK [CN2], that is, AD > FG.\n\n**Step 14.** Therefore, of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote. Q.E.F.\n\n**USED:** 1.12, 1.20, 1.47, 3.3, CN1, CN2, D1.15, D1.17, D3.4, D3.5, P1\n**Human refs (from References field):** 1.20, 1.24, 3.14, D3.5\n**Jaccard:** 0.154 — AI adds ['1.12', '1.47', '3.3', 'CN1', 'CN2', 'D1.15', 'D1.17', 'D3.4', 'P1']; Human adds ['1.24', '3.14']",
+  "ai_used": [
+    "1.12",
+    "1.20",
+    "1.47",
+    "3.3",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.17",
+    "D3.4",
+    "D3.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.24",
+    "3.14",
+    "D3.5"
+  ],
+  "ai_only": [
+    "1.12",
+    "1.47",
+    "3.3",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.17",
+    "D3.4",
+    "P1"
+  ],
+  "heath_only": [
+    "1.24",
+    "3.14"
+  ],
+  "jaccard": 0.154,
+  "proof_summary": "**Step 1.** Let ABDC be a circle with center E, and let BC be a diameter. Let AD be any chord that is not a diameter. We are to show first that BC is greater than AD, and second that among non-diamete"
+}

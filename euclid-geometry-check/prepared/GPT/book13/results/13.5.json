@@ -1,0 +1,31 @@
+{
+  "proposition": "13.5",
+  "run": "GPT",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies between A and B on segment AB, with AC the greater segment and CB the lesser segment",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is placed beyond B on the extension of AB, with BD = AC, giving collinear order A-C-B-D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC + CB = AB, confirming C between A and B (segment addition)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB + BD = AD, confirming D beyond B on the line (segment addition)",
+      "type": "segment_addition"
+    }
+  ],
+  "configuration_map": "Points A, C, B, D are collinear in the order A—C—B—D. C divides segment AB into AC (greater segment) and CB (lesser segment). D lies on the ray from A through B, beyond B, with BD = AC. The enlarged line AD = AB + BD = AB + AC. The configuration is a single straight line with four marked points; no triangles, circles, or plane figures are constructed.",
+  "pass_reason": "The proof's spatial configuration consists solely of four collinear points A, C, B, D in a fixed linear order, used consistently in every step. The core argument is proportional (applying V.12 and algebraic substitution), and the few spatial claims (point betweenness and segment addition on a single line) are mutually consistent with no contradictions."
+}

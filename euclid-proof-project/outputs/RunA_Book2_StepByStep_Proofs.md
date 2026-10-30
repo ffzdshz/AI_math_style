@@ -1,0 +1,377 @@
+# Book 2 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 2.1
+**Statement:** If there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments.
+
+**Step 1.** Let A and BC be two straight lines, and let BC be cut at any points D and E, so that BC is divided into the segments BD, DE, and EC. We must show that the rectangle contained by A and BC is equal to the rectangle contained by A and BD, together with the rectangle contained by A and DE, and the rectangle contained by A and EC.
+
+**Step 2.** From the point B, draw BF at right angles to BC [1.11]. Cut off BG from BF equal to A [1.3].
+
+**Step 3.** Through G, draw GH parallel to BC [1.31]. Through D, E, and C, draw DK, EL, and CH parallel to BG, meeting GH at K, L, and H respectively [1.31].
+
+**Step 4.** Now BGKD is a parallelogram, for BG is parallel to DK (by construction) and GK is parallel to BD (since GK is part of GH which is parallel to BC). Since the angle GBD is a right angle (by construction in Step 2), BGKD is a rectangle. Moreover, BG is equal to A (by construction). Therefore, by the definition of a rectangular parallelogram [D2.1], BGKD is the rectangle contained by A and BD.
+
+**Step 5.** Similarly, DKLE is a parallelogram with DK parallel to EL and KL parallel to DE. Since DK is parallel to BG and BG is perpendicular to BC, DK is also perpendicular to BC [1.29], so the angle KDE is a right angle. Therefore DKLE is a rectangle. Now DK is equal to BG [1.34], and BG is equal to A, so DK is equal to A. Therefore DKLE is the rectangle contained by A and DE [D2.1].
+
+**Step 6.** Similarly, ELHC is a rectangle. EL is equal to BG [1.34], and BG is equal to A, so EL is equal to A. Therefore ELHC is the rectangle contained by A and EC [D2.1].
+
+**Step 7.** Now BGHC is the rectangle contained by A and BC, since BG equals A and BC is the base [D2.1], and the angle at B is a right angle.
+
+**Step 8.** The rectangle BGHC is made up of the rectangles BGKD, DKLE, and ELHC. Therefore the rectangle contained by A and BC is equal to the rectangle contained by A and BD, together with the rectangle contained by A and DE, and the rectangle contained by A and EC [CN2].
+
+**Step 9.** Therefore, if there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments. Q.E.D.
+
+**USED:** 1.11, 1.29, 1.3, 1.31, 1.34, CN2, D2.1
+**Human refs (from References field):** 1.11, 1.3, 1.31, 1.34
+**Jaccard:** 0.571 — AI adds ['1.29', 'CN2', 'D2.1']
+
+## Proposition 2.2
+**Statement:** If a straight line be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.
+
+**Step 1.** Let AB be a straight line cut at random at the point C, so that the segments are AC and CB. We are to show that the rectangle contained by AB and AC together with the rectangle contained by AB and CB is equal to the square on AB.
+
+**Step 2.** Consider two straight lines, both equal to AB. Let one of them be cut at the point C into the segments AC and CB. By Proposition 2.1, the rectangle contained by the two straight lines (that is, the rectangle contained by AB and AB) is equal to the sum of the rectangles contained by the uncut straight line and each of the segments; that is, rect(AB, AB) = rect(AB, AC) + rect(AB, CB). [2.1]
+
+**Step 3.** Now, the rectangle contained by AB and AB is the rectangle contained by two equal straight lines meeting at a right angle, which by Definition D2.1 (a rectangular parallelogram is contained by the two straight lines containing the right angle) and Definition D1.22 (a square is both equilateral and right-angled) is the square on AB. That is, rect(AB, AB) = sq(AB). [D2.1, D1.22]
+
+**Step 4.** Substituting into the equality from Step 2, we obtain: sq(AB) = rect(AB, AC) + rect(AB, CB). [CN1]
+
+**Step 5.** Therefore, the rectangle contained by the whole AB and the segment AC, together with the rectangle contained by the whole AB and the segment CB, is equal to the square on AB. This is what was to be proved.
+
+**USED:** 2.1, CN1, D1.22, D2.1
+**Human refs (from References field):** 1.31, 1.46
+**Jaccard:** 0.000 — AI adds ['2.1', 'CN1', 'D1.22', 'D2.1']; Human adds ['1.31', '1.46']
+
+## Proposition 2.3
+**Statement:** If a straight line be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.
+
+**Step 1.** Let AB be a straight line cut at random at the point C. We are to show that the rectangle contained by AB and BC is equal to the rectangle contained by AC and CB together with the square on BC.
+
+**Step 2.** Since the straight line AB has been cut at the point C, it is divided into the segments AC and CB.
+
+**Step 3.** Take BC as a separate straight line, and consider AB as a straight line cut into the segments AC and CB. By Proposition 2.1, the rectangle contained by BC and AB is equal to the rectangle contained by BC and AC together with the rectangle contained by BC and CB. That is, rect(BC, AB) = rect(BC, AC) + rect(BC, CB).
+
+**Step 4.** Now the rectangle contained by BC and CB is the rectangle contained by two equal straight lines, both equal to BC. By the definition of a square (D1.22), a square is a quadrilateral that is both equilateral and right-angled; the square on BC is precisely the rectangle contained by BC and BC (D2.1). Therefore rect(BC, CB) = sq(BC).
+
+**Step 5.** Substituting into the equation from Step 3, we obtain: rect(AB, BC) = rect(AC, CB) + sq(BC).
+
+**Step 6.** Therefore, if a straight line be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments together with the square on the aforesaid segment, which is what was to be proved. Q.E.F.
+
+**USED:** 2.1, D1.22, D2.1
+**Human refs (from References field):** 1.31, 1.46
+**Jaccard:** 0.000 — AI adds ['2.1', 'D1.22', 'D2.1']; Human adds ['1.31', '1.46']
+
+## Proposition 2.4
+**Statement:** If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
+
+**Step 1.** Let AB be a straight line cut at random at the point C. We are to show that the square on AB equals the squares on AC and CB together with twice the rectangle contained by AC and CB.
+
+**Step 2.** Since AB is cut at C, by Proposition 2.2, the square on AB is equal to the sum of the rectangle contained by AB and AC together with the rectangle contained by AB and CB. That is, sq(AB) = rect(AB, AC) + rect(AB, CB).
+
+**Step 3.** Since AB is cut at C, apply Proposition 2.3 taking AC as the aforesaid segment. Then the rectangle contained by AB and AC is equal to the rectangle contained by AC and CB together with the square on AC. That is, rect(AB, AC) = rect(AC, CB) + sq(AC).
+
+**Step 4.** Again, since AB is cut at C, apply Proposition 2.3 taking CB as the aforesaid segment. Then the rectangle contained by AB and CB is equal to the rectangle contained by AC and CB together with the square on CB. That is, rect(AB, CB) = rect(AC, CB) + sq(CB).
+
+**Step 5.** From Step 2, sq(AB) = rect(AB, AC) + rect(AB, CB). Substituting the equals established in Steps 3 and 4 by Common Notion 1, we obtain sq(AB) = rect(AC, CB) + sq(AC) + rect(AC, CB) + sq(CB).
+
+**Step 6.** Collecting terms by Common Notion 2, this gives sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB). Therefore the square on the whole AB is equal to the squares on the segments AC and CB together with twice the rectangle contained by AC and CB, which was to be proved.
+
+Note: This proof takes an algebraic route via 2.2 and 2.3 rather than Euclid's geometric construction (which builds the square on AB, draws the diagonal, constructs parallels, and identifies sub-squares and complements using 1.43, 1.46, etc.). The algebraic path is more direct, requiring fewer steps and fewer citations.
+
+**USED:** 2.2, 2.3, CN1, CN2
+**Human refs (from References field):** 1.29, 1.31, 1.34, 1.46, 1.5, 1.6
+**Jaccard:** 0.000 — AI adds ['2.2', '2.3', 'CN1', 'CN2']; Human adds ['1.29', '1.31', '1.34', '1.46', '1.5', '1.6']
+
+## Proposition 2.5
+**Statement:** If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half.
+
+**Step 1.** Let AB be the given straight line cut into equal segments at C, so that AC equals CB, and cut into unequal segments at D (with D between C and B, without loss of generality). We are to prove that the rectangle contained by AD and DB together with the square on CD equals the square on CB.
+
+**Step 2.** Since CB is cut at D, by Proposition 2.3 the rectangle contained by CB and DB equals the rectangle contained by CD and DB together with the square on DB. That is, rect(CB, DB) = rect(CD, DB) + sq(DB).
+
+**Step 3.** Since AD is composed of AC and CD, and AC equals CB (because C bisects AB), it follows that AD equals CB together with CD. By Common Notion 2, since AC = CB, we have AD = AC + CD = CB + CD.
+
+**Step 4.** Consider the rectangle contained by AD and DB. Since AD equals the sum of CB and CD (Step 3), the line AD is cut into segments CB and CD. By Proposition 2.1, the rectangle contained by AD and DB equals the rectangle contained by CB and DB together with the rectangle contained by CD and DB. That is, rect(AD, DB) = rect(CB, DB) + rect(CD, DB).
+
+**Step 5.** Substituting the result of Step 2 into Step 4: rect(AD, DB) = [rect(CD, DB) + sq(DB)] + rect(CD, DB). Therefore rect(AD, DB) = sq(DB) + 2*rect(CD, DB).
+
+**Step 6.** Now consider the square on CB. Since CB is cut at D into segments CD and DB, by Proposition 2.4, the square on CB equals the squares on CD and DB together with twice the rectangle contained by CD and DB. That is, sq(CB) = sq(CD) + sq(DB) + 2*rect(CD, DB).
+
+**Step 7.** From Step 5, sq(DB) + 2*rect(CD, DB) = rect(AD, DB). Substituting this into Step 6: sq(CB) = sq(CD) + rect(AD, DB).
+
+**Step 8.** Therefore the rectangle contained by AD and DB together with the square on CD equals the square on CB. By Common Notion 1 (applied in the substitution equalities throughout), this is what was to be proved. Q.E.D.
+
+**USED:** 2.1, 2.3, 2.4, CN1, CN2
+**Human refs (from References field):** 1.31, 1.36, 1.43, 1.46
+**Jaccard:** 0.000 — AI adds ['2.1', '2.3', '2.4', 'CN1', 'CN2']; Human adds ['1.31', '1.36', '1.43', '1.46']
+
+## Proposition 2.6
+**Statement:** If a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line.
+
+**Step 1.** Let AB be a straight line bisected at C, and let BD be added to it in a straight line. We must show that the rectangle AD·BD together with the square on CB equals the square on CD.
+
+**Step 2.** Since AB is bisected at C, we have AC = CB. The line AD consists of AC, CB, and BD, so AD = AC + CB + BD. Since AC = CB, it follows that AD = AB + BD, where AB = AC + CB.
+
+**Step 3.** Consider the straight line AD, which is cut at B into segments AB and BD. By Proposition 2.3, the rectangle contained by the whole AD and the segment BD equals the rectangle contained by the segments AB and BD together with the square on BD. That is, rect(AD, BD) = rect(AB, BD) + sq(BD).
+
+**Step 4.** Now consider the straight line AB, which is cut at C into segments AC and CB. By Proposition 2.1, the rectangle contained by the uncut line BD and the whole AB equals the sum of the rectangles contained by BD and each segment. That is, rect(AB, BD) = rect(AC, BD) + rect(CB, BD).
+
+**Step 5.** Since AC = CB (AB being bisected at C), by Common Notion 1, rect(AC, BD) = rect(CB, BD). Therefore rect(AB, BD) = rect(CB, BD) + rect(CB, BD) = 2·rect(CB, BD).
+
+**Step 6.** Substituting back into Step 3: rect(AD, BD) = 2·rect(CB, BD) + sq(BD).
+
+**Step 7.** Adding the square on CB to both sides (Common Notion 2): rect(AD, BD) + sq(CB) = 2·rect(CB, BD) + sq(BD) + sq(CB).
+
+**Step 8.** Now consider the straight line CD, which equals CB + BD. By Proposition 2.4, the square on the whole CD equals the squares on CB and BD together with twice the rectangle contained by CB and BD. That is, sq(CD) = sq(CB) + sq(BD) + 2·rect(CB, BD).
+
+**Step 9.** The right-hand side of Step 7 is sq(CB) + sq(BD) + 2·rect(CB, BD), which equals sq(CD) by Step 8 and Common Notion 1. Therefore rect(AD, BD) + sq(CB) = sq(CD).
+
+**Step 10.** Therefore, if a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line. Q.E.F.
+
+**USED:** 2.1, 2.3, 2.4, CN1, CN2
+**Human refs (from References field):** 1.31, 1.36, 1.43, 1.46
+**Jaccard:** 0.000 — AI adds ['2.1', '2.3', '2.4', 'CN1', 'CN2']; Human adds ['1.31', '1.36', '1.43', '1.46']
+
+## Proposition 2.7
+**Statement:** If a straight line be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment and the square on the remaining segment.
+
+**Step 1.** Let AB be a straight line cut at random at the point C. We must show that the square on AB together with the square on BC equals twice the rectangle contained by AB and BC together with the square on AC.
+
+**Step 2.** Since the straight line AB has been cut at random at C, by Proposition 2.4 the square on AB is equal to the squares on AC and CB together with twice the rectangle contained by AC and CB. That is, sq(AB) = sq(AC) + sq(BC) + 2·rect(AC,BC).
+
+**Step 3.** Adding the square on BC to both sides, by Common Notion 2, sq(AB) + sq(BC) = sq(AC) + sq(BC) + sq(BC) + 2·rect(AC,BC) = sq(AC) + 2·sq(BC) + 2·rect(AC,BC).
+
+**Step 4.** Since the straight line AB has been cut at random at C, by Proposition 2.3 the rectangle contained by AB and BC is equal to the rectangle contained by AC and BC together with the square on BC. That is, rect(AB,BC) = rect(AC,BC) + sq(BC).
+
+**Step 5.** Therefore twice the rectangle contained by AB and BC equals twice the rectangle contained by AC and BC together with twice the square on BC, by Common Notion 2 applied to equal magnitudes doubled. That is, 2·rect(AB,BC) = 2·rect(AC,BC) + 2·sq(BC).
+
+**Step 6.** Adding the square on AC to both sides, by Common Notion 2, 2·rect(AB,BC) + sq(AC) = 2·rect(AC,BC) + 2·sq(BC) + sq(AC).
+
+**Step 7.** But from Step 3, sq(AB) + sq(BC) = sq(AC) + 2·sq(BC) + 2·rect(AC,BC), and from Step 6, 2·rect(AB,BC) + sq(AC) = sq(AC) + 2·sq(BC) + 2·rect(AC,BC). The right-hand sides are identical.
+
+**Step 8.** Therefore, by Common Notion 1, sq(AB) + sq(BC) = 2·rect(AB,BC) + sq(AC).
+
+**Step 9.** That is, if a straight line be cut at random, the square on the whole and the square on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment together with the square on the remaining segment. Q.E.D.
+
+**USED:** 2.3, 2.4, CN1, CN2
+**Human refs (from References field):** 1.43, 1.46
+**Jaccard:** 0.000 — AI adds ['2.3', '2.4', 'CN1', 'CN2']; Human adds ['1.43', '1.46']
+
+## Proposition 2.8
+**Statement:** If a straight line be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one straight line.
+
+**Step 1.** Let AB be a straight line cut at random at the point C. We are to show that four times the rectangle contained by AB and CB together with the square on AC is equal to the square on the straight line AD, where AD is composed of AB and CB taken together as one straight line.
+
+**Step 2.** Produce the straight line AB to D, making BD equal to CB [P2, 1.3]. Then AD is the straight line composed of the whole AB and the segment CB as one straight line, so the square on AD is the square described on AB and CB as on one straight line.
+
+**Step 3.** Since the straight line AD has been cut at B, by Proposition 2.4, the square on AD is equal to the square on AB together with the square on BD and twice the rectangle contained by AB and BD. That is, sq(AD) = sq(AB) + sq(BD) + 2*rect(AB, BD) [2.4].
+
+**Step 4.** Since BD equals CB [by construction], the square on BD equals the square on CB, and the rectangle contained by AB and BD equals the rectangle contained by AB and CB [CN1]. Substituting, sq(AD) = sq(AB) + sq(CB) + 2*rect(AB, CB).
+
+**Step 5.** Now consider the straight line AB cut at C. By Proposition 2.7, the square on AB together with the square on CB is equal to twice the rectangle contained by AB and CB together with the square on AC. That is, sq(AB) + sq(CB) = 2*rect(AB, CB) + sq(AC) [2.7].
+
+**Step 6.** Substituting the result of Step 5 into the equation of Step 4: sq(AD) = 2*rect(AB, CB) + sq(AC) + 2*rect(AB, CB) = 4*rect(AB, CB) + sq(AC) [CN2].
+
+**Step 7.** Therefore four times the rectangle contained by AB and CB together with the square on AC is equal to the square on AD, that is, the square described on AB and CB as on one straight line. This is what was to be proved.
+
+**USED:** 1.3, 2.4, 2.7, CN1, CN2, P2
+**Human refs (from References field):** 1.36, 1.43
+**Jaccard:** 0.000 — AI adds ['1.3', '2.4', '2.7', 'CN1', 'CN2', 'P2']; Human adds ['1.36', '1.43']
+
+## Proposition 2.9
+**Statement:** If a straight line be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the straight line between the points of section.
+
+**Step 1.** Let AB be a straight line cut into equal segments at C and into unequal segments at D, where D lies between C and B. We must show that the squares on AD and DB together are double of the square on AC together with the square on CD.
+
+**Step 2.** From C, draw CE at right angles to AB [1.11], and set CE equal to AC (equivalently, to CB) [1.3]. Join EA and EB [P1].
+
+**Step 3.** Through D, draw DF parallel to CE, meeting EB at F [1.31]. Through F, draw FG parallel to AB, meeting CE at G [1.31].
+
+**Step 4.** Since CE is parallel to DF and GF is parallel to CD, the figure CGFD is a parallelogram. By 1.34, GF = CD and CG = DF. Also, opposite angles are equal, so angle GFD = angle GCD = a right angle (since CE is perpendicular to AB) [1.34].
+
+**Step 5.** In triangle ACE, angle ACE is a right angle, and AC = CE by construction. Since the triangle is isosceles, angle CAE = angle CEA [1.5]. The sum of the angles equals two right angles [1.32], so angle ACE + angle CAE + angle CEA = two right angles. Since angle ACE is one right angle, angles CAE and CEA together equal one right angle, and since they are equal, each is half of a right angle.
+
+**Step 6.** In triangle ECB, angle ECB is a right angle, and EC = CB (since EC = AC = CB). By the same reasoning as Step 5 [1.5, 1.32], angle CEB = angle CBE = half of a right angle.
+
+**Step 7.** Therefore angle AEB = angle AEC + angle CEB = half a right angle + half a right angle = one right angle [CN2].
+
+**Step 8.** Since G lies between C and E on line CE, and angle FGC is a right angle (from the parallelogram, Step 4), angle FGE is supplementary to angle FGC and therefore also a right angle [1.13].
+
+**Step 9.** In triangle EGF, angle EGF is a right angle (Step 8), and angle GEF = angle CEB = half a right angle (since G is on CE and F is on EB, so angle GEF is the same angle as angle CEB, from Step 6). By 1.32, angle EGF + angle GEF + angle GFE = two right angles. So one right angle + half a right angle + angle GFE = two right angles, giving angle GFE = half a right angle.
+
+**Step 10.** Since angle GEF = angle GFE = half a right angle, triangle EGF is isosceles with EG = GF [1.6]. But GF = CD [1.34, from Step 4]. Therefore EG = CD [CN1].
+
+**Step 11.** Now, DF is parallel to CE, and CE is perpendicular to AB. Since parallel lines make equal corresponding angles with a transversal [1.29], DF is also perpendicular to AB. Thus angle FDA and angle FDB are each right angles.
+
+**Step 12.** We show that DF = DB. From Step 4, DF = CG [1.34]. Now CG = CE - EG = AC - CD (since CE = AC and EG = CD from Steps 2 and 10) [CN3]. Also DB = CB - CD = AC - CD (since CB = AC). Therefore DF = DB [CN1].
+
+**Step 13.** Apply 1.47 to the right triangle ACE (right angle at C): the square on AE equals the sum of the squares on AC and CE. Since AC = CE, the square on AE equals twice the square on AC [1.47].
+
+**Step 14.** Apply 1.47 to the right triangle EGF (right angle at G): the square on EF equals the sum of the squares on EG and GF. Since EG = GF = CD (Step 10), the square on EF equals twice the square on CD [1.47].
+
+**Step 15.** Since F lies on segment EB and angle AEB is a right angle (Step 7), angle AEF is also a right angle. Apply 1.47 to the right triangle AEF (right angle at E): the square on AF equals the sum of the squares on AE and EF. From Steps 13 and 14, the square on AF equals twice the square on AC together with twice the square on CD, that is, double of the square on AC and the square on CD [1.47, CN2].
+
+**Step 16.** Apply 1.47 to the right triangle ADF (right angle at D, from Step 11): the square on AF equals the sum of the squares on AD and DF [1.47].
+
+**Step 17.** From Steps 15 and 16, the sum of the squares on AD and DF equals double of the square on AC together with the square on CD [CN1]. Since DF = DB (Step 12), the square on DF equals the square on DB. Therefore the sum of the squares on AD and DB equals double of the square on AC together with the square on CD [CN1].
+
+**Step 18.** Therefore, if a straight line be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the straight line between the points of section. Q.E.F.
+
+**USED:** 1.11, 1.13, 1.29, 1.3, 1.31, 1.32, 1.34, 1.47, 1.5, 1.6, CN1, CN2, CN3, P1
+**Human refs (from References field):** 1.29, 1.32, 1.34, 1.47, 1.6
+**Jaccard:** 0.357 — AI adds ['1.11', '1.13', '1.3', '1.31', '1.5', 'CN1', 'CN2', 'CN3', 'P1']
+
+## Proposition 2.10
+**Statement:** If a straight line be bisected, and a straight line be added to it in a straight line, the square on the whole with the added straight line and the square on the added straight line both together are double of the square on the half and of the square described on the straight line made up of the half and the added straight line as on one straight line.
+
+**Step 1.** Let AB be the given straight line bisected at C, so that AC = CB. Let BD be added to AB in a straight line. We are to show that sq(AD) + sq(DB) = 2*sq(AC) + 2*sq(CD).
+
+**Step 2.** Apply Proposition 2.7 to the straight line AD cut at B. The square on the whole AD and the square on the segment BD together equal twice the rectangle contained by AD and BD together with the square on the remaining segment AB. That is, sq(AD) + sq(BD) = 2*rect(AD, BD) + sq(AB) [2.7].
+
+**Step 3.** Apply Proposition 2.6 to the straight line AB bisected at C with BD added in a straight line. The rectangle contained by the whole with the added straight line (AD) and the added straight line (BD), together with the square on the half (CB), equals the square on the line made up of the half and the added straight line (CD). That is, rect(AD, DB) + sq(CB) = sq(CD) [2.6].
+
+**Step 4.** From Step 3, by subtracting sq(CB) from both sides, rect(AD, DB) = sq(CD) - sq(CB) [CN3]. Doubling both sides, 2*rect(AD, DB) = 2*sq(CD) - 2*sq(CB) [CN2].
+
+**Step 5.** Substituting this into the equation from Step 2: sq(AD) + sq(BD) = (2*sq(CD) - 2*sq(CB)) + sq(AB).
+
+**Step 6.** Now we evaluate sq(AB). Apply Proposition 2.4 to the straight line AB cut at C: the square on AB equals the squares on the segments AC and CB together with twice the rectangle contained by AC and CB. That is, sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB) [2.4].
+
+**Step 7.** Since AC = CB, the rectangle contained by AC and CB equals the square on CB, so rect(AC, CB) = sq(CB). Also sq(AC) = sq(CB) [CN1]. Therefore sq(AB) = sq(CB) + sq(CB) + 2*sq(CB) = 4*sq(CB) [CN2].
+
+**Step 8.** Substituting into the result of Step 5: sq(AD) + sq(BD) = 2*sq(CD) - 2*sq(CB) + 4*sq(CB) = 2*sq(CD) + 2*sq(CB) [CN2].
+
+**Step 9.** Since AC = CB, we have sq(AC) = sq(CB) [CN1], and therefore 2*sq(CB) = 2*sq(AC).
+
+**Step 10.** Hence sq(AD) + sq(DB) = 2*sq(AC) + 2*sq(CD), which is what was to be demonstrated.
+
+**USED:** 2.4, 2.6, 2.7, CN1, CN2, CN3
+**Human refs (from References field):** 1.11, 1.15, 1.29, 1.3, 1.31, 1.32, 1.34, 1.47, 1.5, 1.6, CN1, P5
+**Jaccard:** 0.059 — AI adds ['2.4', '2.6', '2.7', 'CN2', 'CN3']; Human adds ['1.11', '1.15', '1.29', '1.3', '1.31', '1.32', '1.34', '1.47', '1.5', '1.6', 'P5']
+
+## Proposition 2.11
+**Statement:** To cut a given straight line so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.
+
+**Step 1.** Let AB be the given straight line. Construct the square ABDC on AB [1.46], so that AB = BD = DC = CA and all angles are right.
+
+**Step 2.** Bisect AC at E [1.10], so that AE = EC.
+
+**Step 3.** Join BE [P1].
+
+**Step 4.** Produce CA beyond A to a point F such that EF = EB [P2, P3]. This is done by drawing a circle with center E and radius EB; it meets CA produced at F.
+
+**Step 5.** Construct the square FGHA on FA [1.46], so that FA = AG = GH = HF and all angles of FGHA are right. The point H falls on AB.
+
+**Step 6.** We claim that H is the required point, i.e., that rect(AB, HB) = sq(AH).
+
+**Step 7.** Since E bisects AC, and FA is added to CA in a straight line (F lying beyond A), we may apply Proposition 2.6 to the line AC bisected at E with the added segment FA. This gives: rect(CF, FA) + sq(AE) = sq(EF).
+
+**Step 8.** But EF = EB by construction, so sq(EF) = sq(EB). Therefore rect(CF, FA) + sq(AE) = sq(EB).
+
+**Step 9.** Since angle EAB is a right angle (being an angle of the square ABDC), triangle EAB is right-angled at A. By Proposition 1.47: sq(EB) = sq(EA) + sq(AB).
+
+**Step 10.** Substituting into the result of Step 8: rect(CF, FA) + sq(AE) = sq(EA) + sq(AB). Since AE = EA, subtracting sq(AE) from both sides [CN3] yields: rect(CF, FA) = sq(AB).
+
+**Step 11.** Now the line CF is cut at A (since F, A, C are collinear with A between F and C). By Proposition 2.3 applied to CF cut at A: rect(CF, FA) = rect(CA, FA) + sq(FA).
+
+**Step 12.** Substituting into the result of Step 10: rect(CA, FA) + sq(FA) = sq(AB).
+
+**Step 13.** Since ABDC is a square, CA = AB. Since FGHA is a square, FA = AH and sq(FA) = sq(AH). Therefore: rect(AB, AH) + sq(AH) = sq(AB).
+
+**Step 14.** Since H lies on AB, the line AB is cut at H into segments AH and HB. By Proposition 2.2: rect(AB, AH) + rect(AB, HB) = sq(AB).
+
+**Step 15.** From Steps 13 and 14: rect(AB, AH) + sq(AH) = rect(AB, AH) + rect(AB, HB). Subtracting rect(AB, AH) from both sides [CN3]: sq(AH) = rect(AB, HB).
+
+**Step 16.** Therefore the given straight line AB has been cut at H so that the rectangle contained by the whole AB and the segment HB is equal to the square on the remaining segment AH. Q.E.F.
+
+**USED:** 1.10, 1.46, 1.47, 2.2, 2.3, 2.6, CN3, P1, P2, P3
+**Human refs (from References field):** 1.46, 1.47, 2.6
+**Jaccard:** 0.300 — AI adds ['1.10', '2.2', '2.3', 'CN3', 'P1', 'P2', 'P3']
+
+## Proposition 2.12
+**Statement:** In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
+
+**Step 1.** Let ABC be an obtuse-angled triangle having the angle ABC obtuse. From point A, draw AD perpendicular to BC produced, so that D falls on the extension of BC beyond B [1.12]. Since the angle at B is obtuse, the perpendicular from A to line BC falls outside the triangle, with D on the side of B away from C.
+
+**Step 2.** Since D lies on BC produced beyond B, the segment DC is composed of DB and BC. That is, DC = DB + BC, meaning the straight line DC has been cut at point B into segments DB and BC.
+
+**Step 3.** Apply Proposition 2.4 to the straight line DC cut at B. The square on the whole DC equals the squares on the segments DB and BC together with twice the rectangle contained by DB and BC. That is, sq(DC) = sq(DB) + sq(BC) + 2*rect(BC, BD) [2.4].
+
+**Step 4.** Add the square on DA to both sides of this equality [CN2]. We obtain: sq(DC) + sq(DA) = sq(DB) + sq(DA) + sq(BC) + 2*rect(BC, BD).
+
+**Step 5.** Since AD is perpendicular to DC, the angle ADC is a right angle. In the right-angled triangle ADC with the right angle at D, by the Pythagorean theorem, the square on AC (the side subtending the right angle) equals the sum of the squares on AD and DC. That is, sq(AC) = sq(AD) + sq(DC) [1.47].
+
+**Step 6.** Similarly, since the angle ADB is also a right angle (AD is perpendicular to the line BDC), in the right-angled triangle ADB with the right angle at D, by the Pythagorean theorem, the square on AB equals the sum of the squares on AD and DB. That is, sq(AB) = sq(AD) + sq(DB) [1.47].
+
+**Step 7.** Substituting the results of Steps 5 and 6 into the equation from Step 4: the left side sq(DC) + sq(DA) equals sq(AC) by Step 5, and the term sq(DB) + sq(DA) on the right side equals sq(AB) by Step 6. Therefore, sq(AC) = sq(AB) + sq(BC) + 2*rect(BC, BD).
+
+**Step 8.** This shows that in the obtuse-angled triangle ABC, the square on AC (the side subtending the obtuse angle) is greater than the squares on AB and BC (the sides containing the obtuse angle) by twice the rectangle contained by BC and BD, where BC is the side about the obtuse angle on which the perpendicular falls, and BD is the straight line cut off outside by the perpendicular towards the obtuse angle. This is what was to be proved. Q.E.D.
+
+**USED:** 1.12, 1.47, 2.4, CN2
+**Human refs (from References field):** 1.47, 2.4
+**Jaccard:** 0.500 — AI adds ['1.12', 'CN2']
+
+## Proposition 2.13
+**Statement:** In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
+
+**Step 1.** Let ABC be an acute-angled triangle with all three angles acute [D1.21, D1.12]. Let the angle at B be acute, and let BC be the side about the acute angle on which we shall drop the perpendicular. We wish to show that the square on AC (the side subtending the acute angle at B) is less than the squares on AB and BC together by twice the rectangle contained by BC and the straight line cut off within by the perpendicular towards the acute angle.
+
+**Step 2.** From point A, draw AD perpendicular to BC [1.12]. Since angle ABD is acute (being angle ABC which is acute), the foot D of the perpendicular falls between B and C, so that D lies on BC itself (not on BC produced). Thus BC is cut at the point D.
+
+**Step 3.** Consider the straight line BC cut at the point D. By Proposition 2.7, the square on BC together with the square on BD is equal to twice the rectangle contained by BC and BD together with the square on DC. That is: sq(BC) + sq(BD) = 2*rect(BC, BD) + sq(DC) [2.7].
+
+**Step 4.** In the right-angled triangle ABD (right angle at D), by the Pythagorean theorem, the square on AB is equal to the squares on AD and BD: sq(AB) = sq(AD) + sq(BD) [1.47]. Therefore sq(BD) = sq(AB) - sq(AD) [CN3].
+
+**Step 5.** In the right-angled triangle ACD (right angle at D), by the Pythagorean theorem, the square on AC is equal to the squares on AD and DC: sq(AC) = sq(AD) + sq(DC) [1.47]. Therefore sq(DC) = sq(AC) - sq(AD) [CN3].
+
+**Step 6.** Substitute the expressions from Steps 4 and 5 into the equation from Step 3. Replacing sq(BD) with sq(AB) - sq(AD), and sq(DC) with sq(AC) - sq(AD), we obtain: sq(BC) + sq(AB) - sq(AD) = 2*rect(BC, BD) + sq(AC) - sq(AD) [CN1].
+
+**Step 7.** Since sq(AD) appears on both sides of the equation, subtract it from both sides (or equivalently, since the same quantity sq(AD) is subtracted on each side, the remainders are equal). We obtain: sq(BC) + sq(AB) = 2*rect(BC, BD) + sq(AC) [CN3].
+
+**Step 8.** Rearranging, sq(AC) = sq(AB) + sq(BC) - 2*rect(BC, BD) [CN3]. That is, the square on AC is less than the squares on AB and BC together by twice the rectangle contained by BC and BD.
+
+**Step 9.** Here BD is the straight line cut off within BC by the perpendicular AD towards the acute angle at B. Therefore, in the acute-angled triangle ABC, the square on the side AC subtending the acute angle at B is less than the squares on the sides AB and BC containing the acute angle by twice the rectangle contained by BC (one of the sides about the acute angle, namely that on which the perpendicular falls) and BD (the straight line cut off within by the perpendicular towards the acute angle). This is what was to be proved.
+
+**USED:** 1.12, 1.47, 2.7, CN1, CN3, D1.12, D1.21
+**Human refs (from References field):** 1.47, 2.7
+**Jaccard:** 0.286 — AI adds ['1.12', 'CN1', 'CN3', 'D1.12', 'D1.21']
+
+## Proposition 2.14
+**Statement:** To construct a square equal to a given rectilineal figure.
+
+**Step 1.** Let A be the given rectilineal figure. By 1.45, construct a rectangular parallelogram BCDE equal to the rectilineal figure A, where angle BED is a right angle. [1.45]
+
+**Step 2.** If BE = ED, then BCDE is a square equal to A (by D1.22), and the construction is complete. Suppose instead that BE is not equal to ED.
+
+**Step 3.** Produce the side BE to F so that EF = ED. This is done by extending BE in a straight line (P2) and cutting off EF equal to ED (1.3). [P2, 1.3]
+
+**Step 4.** Bisect BF at G (1.10). [1.10]
+
+**Step 5.** With centre G and radius GF, describe a semicircle BHF (P3, D1.17). [P3, D1.17]
+
+**Step 6.** Produce DE beyond E to meet the semicircle at H (P2). Since DE is perpendicular to BF (because angle BED is right from the rectangle BCDE), and the semicircle passes from B to F with its diameter along BF, the line DE produced will meet the semicircle at some point H. [P2]
+
+**Step 7.** Join GH (P1). [P1]
+
+**Step 8.** Since BF has been bisected at G and cut into unequal segments at E, the rectangle contained by BE and EF, together with the square on GE, equals the square on GF (2.5). [2.5]
+
+**Step 9.** But GF = GH, since both are radii of the semicircle BHF (D1.15). Therefore the square on GF equals the square on GH.
+
+**Step 10.** Now in triangle GEH, the angle GEH is a right angle. This is because angle BED is a right angle (from the rectangle BCDE), G lies on line BF (i.e., on line BE produced), and H lies on line DE produced, so angle GEH equals angle BED, which is right.
+
+**Step 11.** Therefore, by 1.47, the square on GH equals the sum of the squares on GE and EH. That is, GH² = GE² + EH². [1.47]
+
+**Step 12.** From Steps 8 and 9, BE · EF + GE² = GH². From Step 11, GH² = GE² + EH². Therefore BE · EF + GE² = GE² + EH².
+
+**Step 13.** Subtracting the square on GE from both sides (CN3), the rectangle BE · EF equals the square on EH. [CN3]
+
+**Step 14.** But EF = ED (by construction in Step 3), so the rectangle contained by BE and EF equals the rectangle contained by BE and ED (CN1). The rectangle contained by BE and ED is the parallelogram BCDE (D2.1). [CN1, D2.1]
+
+**Step 15.** But the parallelogram BCDE equals the rectilineal figure A (by Step 1). Therefore the square on EH equals the rectilineal figure A.
+
+**Step 16.** Construct the square EHKL on EH (1.46). Then the square EHKL is equal to the given rectilineal figure A. [1.46]
+
+**Step 17.** Therefore a square has been constructed equal to the given rectilineal figure, which is what was required to do. [Q.E.F.]
+
+**USED:** 1.10, 1.3, 1.45, 1.46, 1.47, 2.5, CN1, CN3, D1.15, D1.17, D1.22, D2.1, P1, P2, P3
+**Human refs (from References field):** 1.45, 1.47, 2.5
+**Jaccard:** 0.200 — AI adds ['1.10', '1.3', '1.46', 'CN1', 'CN3', 'D1.15', 'D1.17', 'D1.22', 'D2.1', 'P1', 'P2', 'P3']

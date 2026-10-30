@@ -1,0 +1,32 @@
+{
+  "proposition": "11.24",
+  "book": 11,
+  "statement": "If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.",
+  "heath_proof": "For let the solid CDHG be contained by the parallel planes AC, GF, AH, DF, BF, AE; I say that the opposite planes in it are equal and parallelogrammic. For, since the two parallel planes BG, CE are cut by the plane AC, their common sections are parallel. [XI. 16] Therefore AB is parallel to DC. Again, since the two parallel planes BF, AE are cut by the plane AC, their common sections are parallel. [XI. 16] Therefore BC is parallel to AD. But AB was also proved parallel to DC; therefore AC is a parallelogram. Similarly we can prove that each of the planes DF, FG, GB, BF, AE is a parallelogram. Let AH, DF be joined. Then, since AB is parallel to DC, and BH to CF, the two straight lines AB, BH which meet one another are parallel to the two straight lines DC, CF which meet one another, not in the same plane; therefore they will contain equal angles; [XI. 10] therefore the angle ABH is equal to the angle DCF. And, since the two sides AB, BH are equal to the two sides DC, CF, [I. 34] and the angle ABH is equal to the angle DCF, therefore the base AH is equal to the base DF, and the triangle ABH is equal to the triangle DCF. [I. 4] And the parallelogram BG is double of the triangle ABH, and the parallelogram CE double of the triangle DCF; [I. 34] therefore the parallelogram BG is equal to the parallelogram CE. Similarly we can prove that AC is also equal to GF, and AE to BF.",
+  "ai_proof_text": "11.24\n**Statement:** If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.\n\n**Step 1.** Label the solid so that its opposite face-pairs are ABCD and EFGH, ABFE and DCGH, and BCGF and ADHE; the planes of each pair are parallel by hypothesis. The edges are straight lines, being common sections of the bounding planes [11.3]. We shall prove equality for the opposite pair ABCD, EFGH, chosen arbitrarily.\n\n**Step 2.** Use the theorem on sections of parallel planes, since it directly determines the directions of the edges. The plane ABCD cuts the parallel planes ABFE and DCGH in AB and DC, so AB is parallel to DC. It cuts the parallel planes ADHE and BCGF in AD and BC, so AD is parallel to BC [11.16]. Thus ABCD is a parallelogram. Likewise, the plane of every other face cuts the other two pairs of parallel bounding planes in its opposite sides; these sides are therefore parallel [11.16]. Consequently all six faces are parallelogrammic.\n\n**Step 3.** In the parallelogram ABFE, opposite sides AB and EF are equal. In the parallelogram ADHE, opposite sides AD and EH are equal [1.34]. Thus AB = EF and AD = EH.\n\n**Step 4.** Also AB is parallel to EF, and AD is parallel to EH, by Step 2. These corresponding sides, taken from A and E respectively, contain equal angles: ∠BAD = ∠FEH [11.10]. This is the applicable angle theorem because the two pairs of intersecting lines lie in different planes.\n\n**Step 5.** Join BD and FH [P1]. The triangles BAD and FEH have two sides respectively equal and their included angles equal, by Steps 3–4. Therefore these triangles are equal [1.4]. Side-angle-side is the direct choice, since precisely its hypotheses have already been established.\n\n**Step 6.** The diagonal BD bisects the parallelogram ABCD, so triangle BAD equals triangle BCD. Likewise FH bisects EFGH, so triangle FEH equals triangle FGH [1.34]. Together with Step 5, these equalities give triangle BCD equal to triangle FGH [CN1]. Adding the equal triangles in corresponding pairs, the whole parallelogram ABCD equals the whole parallelogram EFGH [CN2].\n\n**Step 7.** The opposite pair chosen in Step 1 was arbitrary, so Steps 3–6 establish equality for each opposite pair. Step 2 establishes that every face is parallelogrammic. Therefore the opposite planes of the solid are equal and parallelogrammic.\n\n**USED:** 1.34, 1.4, 11.10, 11.16, 11.3, CN1, CN2, P1\n**Human refs (from References field):** 1.34, 1.4, 11.10, 11.16\n**Jaccard:** 0.500 — AI adds ['11.3', 'CN1', 'CN2', 'P1']",
+  "ai_used": [
+    "1.34",
+    "1.4",
+    "11.10",
+    "11.16",
+    "11.3",
+    "CN1",
+    "CN2",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.34",
+    "1.4",
+    "11.10",
+    "11.16"
+  ],
+  "ai_only": [
+    "11.3",
+    "CN1",
+    "CN2",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Label the solid so that its opposite face-pairs are ABCD and EFGH, ABFE and DCGH, and BCGF and ADHE; the planes of each pair are parallel by hypothesis. The edges are straight lines, being"
+}

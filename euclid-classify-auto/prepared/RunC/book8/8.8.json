@@ -1,0 +1,37 @@
+{
+  "proposition": "8.8",
+  "book": 8,
+  "statement": "If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.",
+  "heath_proof": "Let the numbers C, D fall between the two numbers A, B in continued proportion with them, and let E be made in the same ratio to F as A is to B; I say that, as many numbers as have fallen between A, B in continued proportion, so many will also fall between E, F in continued proportion. For, as many as A, B, C, D are in multitude, let so many numbers G, H, K, L, the least of those which have the same ratio with A, C, D, B, be taken; [VII. 33] therefore the extremes of them G, L are prime to one another. [VIII. 3] Now, since A, C, D, B are in the same ratio with G, H, K, L, and the multitude of the numbers A, C, D, B is equal to the multitude of the numbers G, H, K, L, therefore, ex aequali, as A is to B, so is G to L. [VII. 14] But, as A is to B, so is E to F; therefore also, as G is to L, so is E to F. But G, L are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore G measures E the same number of times as L measures F. Next, as many times as G measures E, so many times let H, K also measure M, N respectively; therefore G, H, K, L measure E, M, N, F the same number of times. Therefore G, H, K, L are in the same ratio with E, M, N, F. [VII. Def. 20] But G, H, K, L are in the same ratio with A, C, D, B; therefore A, C, D, B are also in the same ratio with E, M, N, F. But A, C, D, B are in continued proportion; therefore E, M, N, F are also in continued proportion. Therefore, as many numbers as have fallen between A, B in continued proportion with them, so many numbers have also fallen between E, F in continued proportion.",
+  "ai_proof_text": "8.8\n**Statement:** If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.\n\n**Step 1.** Let A and B be two numbers, and let C1, C2, ..., Cn fall between them in continued proportion, so that A, C1, C2, ..., Cn, B are all in continued proportion (n+2 terms total). Let D and E be numbers such that A:B = D:E. We must show that there also fall n numbers in continued proportion between D and E.\n\n**Step 2.** Since A, C1, C2, ..., Cn, B are in continued proportion, the ratio A:C1 = C1:C2 = ... = Cn:B. By 7.33, take F and G, the least numbers in the ratio A:C1.\n\n**Step 3.** By 8.2, find the least numbers in continued proportion with n+2 terms in the ratio F:G. Call these F0, F1, F2, ..., Fn, F(n+1), so that F0:F1 = F1:F2 = ... = Fn:F(n+1) = F:G = A:C1.\n\n**Step 4.** Since F0, F1, ..., F(n+1) are the least numbers in continued proportion in the ratio F:G, by 8.1 the extremes F0 and F(n+1) are prime to one another.\n\n**Step 5.** Now A, C1, C2, ..., Cn, B are in continued proportion in the same ratio F:G, and F0, F1, ..., F(n+1) are the least such. Since A:C1 = F0:F1, and A:B is the ratio compounded of the n+1 equal ratios A:C1, while F0:F(n+1) is the ratio compounded of the n+1 equal ratios F0:F1, and these individual ratios are equal, it follows that A:B = F0:F(n+1). Similarly, the terms A, C1, ..., Cn, B are equimultiples of F0, F1, ..., F(n+1) respectively. By 7.20, since F0 and F(n+1) are the least numbers in the ratio A:B, they measure A and B the same number of times. Let A = m * F0 and B = m * F(n+1) for some number m, and correspondingly Ci = m * Fi for each i.\n\n**Step 6.** Since A:B = D:E (given) and A:B = F0:F(n+1) (from Step 5), we have F0:F(n+1) = D:E by CN1. Since F0 and F(n+1) are prime to one another (Step 4), and F0, F(n+1) are the least numbers in the ratio D:E, by 7.20 F0 measures D and F(n+1) measures E the same number of times. Let D = p * F0 and E = p * F(n+1) for some number p.\n\n**Step 7.** Define the numbers G1 = p * F1, G2 = p * F2, ..., Gn = p * Fn. We claim that D, G1, G2, ..., Gn, E are in continued proportion.\n\n**Step 8.** For each consecutive pair in the sequence F0, F1, F2, ..., F(n+1), we have the ratio Fi:F(i+1) = F:G. By 7.17, since the number p multiplies both Fi and F(i+1), we have p * Fi : p * F(i+1) = Fi : F(i+1). Therefore D:G1 = p*F0:p*F1 = F0:F1 = F:G, and G1:G2 = p*F1:p*F2 = F1:F2 = F:G, and so on through Gn:E = p*Fn:p*F(n+1) = Fn:F(n+1) = F:G.\n\n**Step 9.** Thus D, G1, G2, ..., Gn, E are all in continued proportion, and the count of numbers falling between D and E is n, which is the same as the count of numbers that fell between A and B.\n\n**Step 10.** Therefore, if between two numbers there fall numbers in continued proportion with them, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between numbers which have the same ratio with the original numbers. Q.E.D.\n\n**USED:** 7.17, 7.20, 7.33, 8.1, 8.2, CN1\n**Human refs (from References field):** 7.14, 7.20, 7.21, 7.33, 8.3, D7.20\n**Jaccard:** 0.200 — AI adds ['7.17', '8.1', '8.2', 'CN1']; Human adds ['7.14', '7.21', '8.3', 'D7.20']",
+  "ai_used": [
+    "7.17",
+    "7.20",
+    "7.33",
+    "8.1",
+    "8.2",
+    "CN1"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.20",
+    "7.21",
+    "7.33",
+    "8.3",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "8.1",
+    "8.2",
+    "CN1"
+  ],
+  "heath_only": [
+    "7.14",
+    "7.21",
+    "8.3",
+    "D7.20"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A and B be two numbers, and let C1, C2, ..., Cn fall between them in continued proportion, so that A, C1, C2, ..., Cn, B are all in continued proportion (n+2 terms total). Let D and E "
+}

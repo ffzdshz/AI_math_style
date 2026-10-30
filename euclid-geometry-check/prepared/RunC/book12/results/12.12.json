@@ -1,0 +1,41 @@
+{
+  "proposition": "12.12",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two similar cones have circular bases on diameters ABCD and EFGH with axes (heights) KL and MN respectively, and similarity gives ABCD : EFGH :: KL : MN",
+      "type": "solid_geometry_setup"
+    },
+    {
+      "step": "Step 4",
+      "claim": "An intermediate cone is constructed with the same base as the first cone (circle on diameter ABCD) and height equal to MN (the height of the second cone)",
+      "type": "solid_construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "The intermediate cone and the second cone share the same height MN",
+      "type": "shared_dimension"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The first cone (base ABCD, height KL) and the intermediate cone (base ABCD, height MN) share the same base (circle on diameter ABCD)",
+      "type": "shared_dimension"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Cones on equal bases are to one another as their heights, justified via 12.10 (cone = 1/3 cylinder) and reasoning about cylinders",
+      "type": "volume_proportion"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Each cone is one-third of the corresponding cylinder with the same base and height (by 12.10)",
+      "type": "volume_relation"
+    }
+  ],
+  "configuration_map": "Three solids are constructed: (1) First cone with base = circle on diameter ABCD and height = KL; (2) Second cone with base = circle on diameter EFGH and height = MN; (3) Intermediate cone with base = circle on diameter ABCD and height = MN. The intermediate cone serves as a bridge, sharing its base with the first cone and its height with the second cone. This allows the ratio First:Second to be decomposed into (First:Intermediate) x (Intermediate:Second), where the first factor uses the shared base and the second factor uses the shared height. All three solids are well-defined cones with circular bases and finite heights. No points are placed inside or outside any figure, no angle decompositions occur, and no betweenness or ray-ordering claims are made.",
+  "pass_reason": "The proof is primarily proportional/algebraic in nature. The only spatial constructions are three cones (first, second, intermediate) whose configurations are mutually consistent: two cones can share a base with different heights, and two cones can share a height with different bases. No angle decompositions, inside/outside claims, ray orderings, or other subtle spatial assumptions appear. The different approach from Heath (direct proportion vs. exhaustion) introduces no spatial contradictions."
+}

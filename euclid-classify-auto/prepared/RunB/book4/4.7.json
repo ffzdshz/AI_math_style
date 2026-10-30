@@ -1,0 +1,43 @@
+{
+  "proposition": "4.7",
+  "book": 4,
+  "statement": "About a given circle to circumscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to circumscribe a square about the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and through the points A, B, C, D let FG, GH, HK, KF be drawn touching the circle ABCD. [III. 16] Then, since FG touches the circle ABCD, and EA has been joined from the centre E to the point of contact at A, therefore the angles at A are right. [III. 18]  For the same reason the angles at the points B, C, D are also right. Now, since the angle AEB is right, and the angle EBG is also right, therefore GH is parailel to AC. [I. 28]  For the same reason AC is also parallel to FK, so that GH is also parallel to FK. [I. 30]  Similarly we can prove that each of the straight lines GF, HK is parallel to BED. Therefore GK, GC, AK, FB, BK are parallelograms; therefore GF is equal to HK, and GH to FK. [I. 34] And, since AC is equal to BD, and AC is also equal to each of the straight lines GH, FK, while BD is equal to each of the straight lines GF, HK, [I. 34]therefore the quadrilateral FGHK is equilateral. I say next that it is also right-angled. For, since GBEA is a parallelogram, and the angle AEB is right, therefore the angle AGB is also right. [I. 34] Similarly we can prove that the angles at H, K, F are also right. Therefore FGHK is right-angled. But it was also proved equilateral; therefore it is a square; and it has been circumscribed about the circle ABCD. Therefore about the given circle a square has been circumscribed.",
+  "ai_proof_text": "4.7\n**Statement:** About a given circle to circumscribe a square.\n\n**Step 1.** Let ABCD be the given circle with center E. Draw two diameters AC and BD perpendicular to one another [1.11, P1]. The four radii EA, EB, EC, ED are all equal [D1.15].\n\n**Step 2.** Through each of the points A, B, C, D draw a straight line tangent to the circle [3.16]. Specifically, draw line FG through A perpendicular to EA, line GH through B perpendicular to EB, line HK through C perpendicular to EC, and line KF through D perpendicular to ED [1.11, 3.16].\n\n**Step 3.** Since FG is tangent to the circle at A, the line EA is perpendicular to FG [3.18]. Similarly, GH is perpendicular to EB at B, HK is perpendicular to EC at C, and KF is perpendicular to ED at D.\n\n**Step 4.** Consider the line GH passing through B perpendicular to EB, and the line KF passing through D perpendicular to ED. Since BD is a diameter, EB and ED lie along the same straight line BD. Thus GH is perpendicular to BD at B, and KF is perpendicular to BD at D. Since GH and KF are both perpendicular to the same straight line BD, they are parallel to one another [1.28].\n\n**Step 5.** Similarly, FG passes through A perpendicular to EA, and HK passes through C perpendicular to EC. Since AC is a diameter, EA and EC lie along the same straight line AC. Thus FG is perpendicular to AC at A, and HK is perpendicular to AC at C. Since FG and HK are both perpendicular to the same straight line AC, they are parallel to one another [1.28].\n\n**Step 6.** Since GH is perpendicular to BD at B, the angle GBE is a right angle. Since FG is perpendicular to AC at A, the angle FAE is a right angle. But the angle AEB is also a right angle (since the diameters AC and BD are perpendicular). In triangle AEB, the angles AEB, EBG (which is the same as GBE), and EAF (which is the same as FAE) are each right angles. Consider the figure AEBG: angle AEB is right, angle EBG is right, and angle EAF (i.e., angle GAE) is right. Since three angles of the quadrilateral GAEB are right angles, the fourth angle AGB must also be a right angle, because the sum of the angles of a quadrilateral equals four right angles [1.32]. Therefore angle AGB is a right angle.\n\n**Step 7.** By the same reasoning applied to each of the other three quadrilaterals formed at corners H, K, and F, we conclude that angles GHC (at H), HKD (at K), and KFA (at F) are each right angles. Hence the quadrilateral FGHK has all four angles right angles.\n\n**Step 8.** Now we show the sides are equal. Since GH is parallel to KF (Step 4), and AC meets them (being perpendicular to both GH and KF since it passes through A on FG and C on HK, and the tangent lines FG, GH, HK, KF bound the figure), consider that EA is perpendicular to FG and EC is perpendicular to HK, while GH is parallel to KF. In the parallelogram GBHK... let us reason more directly. Since AEBG is a quadrilateral with angle AEB = angle EBG = angle BAG = 90 degrees, and since EA = EB (both radii), then AG = BG [1.34 applied after noting AEBG is a rectangle, so AG = EB and BG = EA by 1.34]. Thus AG = BG = EA = EB.\n\n**Step 9.** Since EA = EB = EC = ED (all radii), and by similar reasoning in each corner rectangle: AG = BG = BH = CH = CK = DK = DF = AF, each equal to the radius. Therefore GF = GA + AF = 2·EA, GH = GB + BH = 2·EB, HK = HC + CK = 2·EC, and KF = KD + DF = 2·ED. Since EA = EB = EC = ED, we have GF = GH = HK = KF [CN1, CN2].\n\n**Step 10.** The quadrilateral FGHK has all four sides equal (Step 9) and all four angles right angles (Step 7). Therefore FGHK is a square [D1.22].\n\n**Step 11.** Each side of FGHK touches the circle ABCD (by construction, each side is a tangent line to the circle at one of the points A, B, C, D). Therefore the square FGHK is circumscribed about the circle ABCD [D4.4].\n\n**Step 12.** Therefore, about the given circle, a square has been circumscribed, which is what was required to do.\n\n**USED:** 1.11, 1.28, 1.32, 1.34, 3.16, 3.18, CN1, CN2, D1.15, D1.22, D4.4, P1\n**Human refs (from References field):** 1.28, 1.30, 1.34, 3.16, 3.18\n**Jaccard:** 0.308 — AI adds ['1.11', '1.32', 'CN1', 'CN2', 'D1.15', 'D1.22', 'D4.4', 'P1']; Human adds ['1.30']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.32",
+    "1.34",
+    "3.16",
+    "3.18",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.22",
+    "D4.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.30",
+    "1.34",
+    "3.16",
+    "3.18"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.32",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D1.22",
+    "D4.4",
+    "P1"
+  ],
+  "heath_only": [
+    "1.3"
+  ],
+  "jaccard": 0.308,
+  "proof_summary": "**Step 1.** Let ABCD be the given circle with center E. Draw two diameters AC and BD perpendicular to one another [1.11, P1]. The four radii EA, EB, EC, ED are all equal [D1.15].  **Step 2.** Through "
+}

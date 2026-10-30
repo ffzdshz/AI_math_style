@@ -1,0 +1,26 @@
+{
+  "proposition": "10.77",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A, C, B are collinear with C between A and B (AC is the remainder when BC is subtracted from AB)",
+      "type": "collinearity/betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Rectangles DG and GK are constructed on rational line DI with breadths DH and HK respectively",
+      "type": "rectangle construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DH > HK so that the breadth (DH - HK) is positive, corresponding to sq(AC) > 0",
+      "type": "magnitude ordering"
+    }
+  ],
+  "configuration_map": "Points A, C, B lie on a single straight line with C between A and B. A separate rational line DI serves as the base for two rectangles: DG (area = sq(AB)+sq(BC), breadth DH) and GK (area = 2*rect(AB,BC), breadth HK). All points are in trivial linear arrangements on their respective lines. The remainder of the proof operates entirely on commensurability properties of these lengths and areas, with no non-trivial geometric configuration.",
+  "skip_reason": "The proof is purely algebraic, dealing with commensurability relations (rational, irrational, medial magnitudes) and application of areas. All cited propositions (10.13, 10.15, 10.20, 10.22, 10.73, D10.1.4) concern algebraic properties of magnitudes, not spatial geometry. The only geometric elements are trivial linear arrangements of points and rectangles on a line, with no angles, triangles, circles, or interior/exterior claims that could produce a spatial configuration contradiction. This is a standard Book 10 irrationals-theory proposition."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "13.9",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as D. Heath proves the result directly by showing triangles EBD and EBC are equiangular (using VI.33 for arc-angle proportionality and VI.4 for similar-triangle proportions), obtaining BD:DC = DC:CB in one step from the compound segment BD = BC + CD. The AI takes a fundamentally different route: it constructs an angle bisector in the isosceles triangle formed by two radii and the decagon side, uses angle chasing (I.5, I.6, I.32) to show the bisector foot D satisfies OD = AB (decagon side), applies the angle bisector theorem (VI.3) to establish OB:OD = OD:DB (i.e., the radius is cut in extreme and mean ratio with the decagon side as greater segment), and then invokes XIII.5 to derive that the sum of the hexagon and decagon sides is cut in extreme and mean ratio with the hexagon side as greater segment. The two proofs share no key intermediate conclusions: Heath never establishes that the radius is cut in EMR, and the AI never constructs equiangular triangles or uses arc-angle proportionality. The Jaccard similarity of 0.158 reflects this deep divergence. The AI proof is logically complete and sound throughout, so this is a valid different path.",
+  "jaccard": 0.158,
+  "ai_citations": "1.13|1.19|1.32|1.5|1.6|1.8|1.9|13.5|4.15|6.3|CN1|CN5|D1.15|D6.3|P1|P2|P3",
+  "heath_citations": "1.32|1.5|4.15|6.33|6.4",
+  "ai_only": "1.13|1.19|1.6|1.8|1.9|13.5|6.3|CN1|CN5|D1.15|D6.3|P1|P2|P3",
+  "heath_only": "6.33|6.4",
+  "audit_record": ""
+}

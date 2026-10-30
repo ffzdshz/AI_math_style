@@ -1,0 +1,55 @@
+{
+  "proposition": "3.14",
+  "book": 3,
+  "statement": "In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.",
+  "heath_proof": "Let ABDC be a circle, and let AB, CD be equal straight lines in it; I say that AB, CD are equally distant from the centre. For let the centre of the circle ABDC be taken [III. 1], and let it be E; from E let EF, EG be drawn perpendicular to AB, CD, and let AE, EC be joined. Then, since a straight line EF through the centre cuts a straight line AB not through the centre at right angles, it also bisects it. [III. 3] Therefore AF is equal to FB; therefore AB is double of AF. For the same reason CD is also double of CG; and AB is equal to CD; therefore AF is also equal to CG. And, since AE is equal to EC, the square on AE is also equal to the square on EC. But the squares on AF, EF are equal to the square on AE, for the angle at F is right; and the squares on EG, GC are equal to the square on EC, for the angle at G is right; [I. 47] therefore the squares on AF, FE are equal to the squares on CG, GE, of which the square on AF is equal to the square on CG, for AF is equal to CG; therefore the square on FE which remains is equal to the square on EG, therefore EF is equal to EG. But in a circle straight lines are said to be equally distant from the centre when the perpendiculars drawn to them from the centre are equal; [III. Def. 4] therefore AB, CD are equally distant from the centre. Next, let the straight lines AB, CD be equally distant from the centre; that is, let EF be equal to EG. I say that AB is also equal to CD. For, with the same construction, we can prove, similarly, that AB is double of AF, and CD of CG. And, since AE is equal to CE, the square on AE is equal to the square on CE. But the squares on EF, FA are equal to the square on AE, and the squares on EG, GC equal to the square on CE. [I. 47] Therefore the squares on EF, FA are equal to the squares on EG, GC, of which the square on EF is equal to the square on EG, for EF is equal to EG; therefore the square on AF which remains is equal to the square on CG; therefore AF is equal to CG. And AB is double of AF, and CD double of CG; therefore AB is equal to CD.",
+  "ai_proof_text": "3.14\n**Statement:** In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.\n\n**Step 1.** Let O be the centre of the circle, and first let AB and CD be chords neither of which passes through O. Bisect AB at M and CD at N (1.10), and join OM, ON, OA, and OC (P1). Since the lines through the centre bisect the chords, OM is perpendicular to AB and ON is perpendicular to CD (3.3). Thus OMA and ONC are right angles (D1.10), while OA = OC because they are radii (D1.15). Path choice: bisecting first ensures that the perpendicular feet lie on the chords; 3.3 then supplies exactly the right triangles needed for 1.47.\n\n**Step 2.** Write S(XY) for the square on the segment XY. Squares on equal segments are equal: their equal sides and equal right angles allow them to coincide upon superposition (D1.22, P4, CN4). Conversely, equal squares have equal sides. Indeed, if one side were greater, cut off from it a segment equal to the smaller side (1.3). By 2.4, the square on the greater side equals the square on the smaller side together with the square on the positive remainder and twice the rectangle contained by the smaller side and that remainder. It therefore exceeds the smaller square, contrary to their equality (CN5).\n\n**Step 3.** Applying 1.47 to the two right-angled triangles gives\nS(OA) = S(OM) + S(AM),\nand\nS(OC) = S(ON) + S(CN).\nSince OA = OC, Step 2 gives S(OA) = S(OC). Consequently,\nS(OM) + S(AM) = S(ON) + S(CN) (CN1).\n\n**Step 4.** Suppose first that AB = CD. Since M and N bisect these chords, AB consists of two copies of AM and CD of two copies of CN. Therefore AM = CN: if either half were greater, its two copies would together exceed the two copies of the other half, contradicting AB = CD (CN2, CN5). Hence S(AM) = S(CN) by Step 2.\n\n**Step 5.** Subtract these equal squares from the equal sums in Step 3. The remaining squares S(OM) and S(ON) are equal (CN3), and therefore OM = ON by Step 2. Since OM and ON are the perpendiculars from the centre to the chords, AB and CD are equally distant from the centre (D3.4).\n\n**Step 6.** Conversely, suppose that AB and CD are equally distant from O. Their perpendiculars OM and ON are then equal (D3.4), so S(OM) = S(ON) by Step 2. Subtracting these from the equality in Step 3 gives S(AM) = S(CN) (CN3), and hence AM = CN by Step 2. Since MB = AM and ND = CN, adding the equal halves gives AB = CD (CN1, CN2).\n\n**Step 7.** The case of chords through the centre also satisfies both conclusions. Such chords are diameters (D1.17); each consists of two radii, so all are equal (D1.15, CN2), and each has zero distance from the centre. A chord XY not through O has positive perpendicular distance, and it is shorter than any diameter: in triangle OXY, XY < OX + OY (1.20), while OX + OY equals a diameter (D1.15, D1.17, CN2). Thus a diameter and a non-diametral chord are neither equal nor equally distant from the centre; two diameters are both equal and equally distant (D3.4).\n\n**Step 8.** Therefore, in a circle, equal straight lines are equally distant from the centre, and straight lines equally distant from the centre are equal to one another (Steps 5–7; D3.4).\n\n**USED:** 1.10, 1.20, 1.3, 1.47, 2.4, 3.3, CN1, CN2, CN3, CN4, CN5, D1.10, D1.15, D1.17, D1.22, D3.4, P1, P4\n**Human refs (from References field):** 1.47, 3.1, 3.3, D3.4\n**Jaccard:** 0.158 — AI adds ['1.10', '1.20', '1.3', '2.4', 'CN1', 'CN2', 'CN3', 'CN4', 'CN5', 'D1.10', 'D1.15', 'D1.17', 'D1.22', 'P1', 'P4']; Human adds ['3.1']",
+  "ai_used": [
+    "1.10",
+    "1.20",
+    "1.3",
+    "1.47",
+    "2.4",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D3.4",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.47",
+    "3.1",
+    "3.3",
+    "D3.4"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.20",
+    "1.3",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [
+    "3.1"
+  ],
+  "jaccard": 0.158,
+  "proof_summary": "**Step 1.** Let O be the centre of the circle, and first let AB and CD be chords neither of which passes through O. Bisect AB at M and CD at N (1.10), and join OM, ON, OA, and OC (P1). Since the lines"
+}

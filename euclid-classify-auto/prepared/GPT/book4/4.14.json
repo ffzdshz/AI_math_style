@@ -1,0 +1,44 @@
+{
+  "proposition": "4.14",
+  "book": 4,
+  "statement": "About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.",
+  "heath_proof": "Let ABCDE be the given pentagon, which is equilateral and equiangular; thus it is required to circumscribe a circle about the pentagon ABCDE. Let the angles BCD, CDE be bisected by the straight lines CF, DF respectively, and from the point F, at which the straight lines meet, let the straight lines FB, FA, FE be joined to the points B, A, E. Then in manner similar to the preceding it can be proved that the angles CBA, BAE, AED have also been bisected by the straight lines FB, FA, FE respectively. Now, since the angle BCD is equal to the angle CDE, and the angle FCD is half of the angle BCD, and the angle CDF half of the angle CDE, therefore the angle FCD is also equal to the angle CDF, so that the side FC is also equal to the side FD. [I. 6]  Similarly it can be proved that each of the straight lines FB, FA, FE is also equal to each of the straight lines FC, FD; therefore the five straight lines FA, FB, FC, FD, FE are equal to one another. Therefore the circle described with centre F and distance one of the straight lines FA, FB, FC, FD, FE will pass also through the remaining points, and will have been circumscribed. Let it be circumscribed, and let it be ABCDE. Therefore about the given pentagon, which is equilateral and equiangular, a circle has been circumscribed.",
+  "ai_proof_text": "4.14\n**Statement:** About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.\n\n**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices named in order. Our path is to construct a centre from two adjacent internal angle bisectors, then establish equal distances to all five vertices by side-angle-side congruence. Join AC (P1). By 1.17 and CN5, ∠ABC is less than two right angles. Bisect ∠ABC and ∠BCD internally (1.9). Since the original angles are equal, their halves are equal; denote each half by h (CN2, CN5).\n\n**Step 2.** The two bisectors make with BC, on the interior side of that line, angles h and h. Their sum equals ∠ABC and is therefore less than two right angles. Consequently, producing the bisectors if necessary, they meet at a point O on that side of BC (P2, P5). Thus ∠ABO = ∠OBC = ∠BCO = ∠OCD = h.\n\n**Step 3.** Join OA, OD and OE (P1). In triangle BOC, the angles ∠OBC and ∠BCO are equal. Therefore OB = OC (1.6).\n\n**Step 4.** Compare triangles ABO and CBO. We have AB = CB by hypothesis, BO is common, and ∠ABO = ∠CBO by construction. The immediately available data are two sides and their included angle, so 1.4 gives OA = OC and ∠BAO = ∠BCO = h.\n\n**Step 5.** Compare triangles DCO and BCO. We have CD = CB by hypothesis, CO is common, and ∠DCO = ∠BCO by construction. Hence OD = OB (1.4).\n\n**Step 6.** Because BO lies inside ∠ABC, O lies on the same side of AB as the interior of the pentagon, and hence on the same side of AB as E. Now ∠BAO = h, whereas ∠BAE = 2h. Since h is less than 2h, AO lies inside ∠BAE (CN5). Subtracting ∠BAO from ∠BAE therefore gives ∠EAO = h = ∠BAO (CN3).\n\n**Step 7.** In triangles EAO and BAO, EA = BA by hypothesis, AO is common, and ∠EAO = ∠BAO by Step 6. Therefore OE = OB (1.4). Together with Steps 3–5, this gives OA = OB = OC = OD = OE (CN1).\n\n**Step 8.** Describe the circle with centre O and distance OA (P3). Since all five vertices are at this same distance from O, the circumference passes through A, B, C, D and E (D1.15). It is therefore a circle circumscribed about the given pentagon (D4.6), as required.\n\n**USED:** 1.17, 1.4, 1.6, 1.9, CN1, CN2, CN3, CN5, D1.15, D4.6, P1, P2, P3, P5\n**Human refs (from References field):** 1.6\n**Jaccard:** 0.071 — AI adds ['1.17', '1.4', '1.9', 'CN1', 'CN2', 'CN3', 'CN5', 'D1.15', 'D4.6', 'P1', 'P2', 'P3', 'P5']",
+  "ai_used": [
+    "1.17",
+    "1.4",
+    "1.6",
+    "1.9",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.15",
+    "D4.6",
+    "P1",
+    "P2",
+    "P3",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.6"
+  ],
+  "ai_only": [
+    "1.17",
+    "1.4",
+    "1.9",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.15",
+    "D4.6",
+    "P1",
+    "P2",
+    "P3",
+    "P5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.071,
+  "proof_summary": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices named in order. Our path is to construct a centre from two adjacent internal angle bisectors, then establish "
+}

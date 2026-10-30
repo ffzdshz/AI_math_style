@@ -1,0 +1,13 @@
+{
+  "proposition": "9.12",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined this classification. Heath's proof uses proof by contradiction with iterative application of proportion theory (7.29 to establish coprimality, then 7.19/7.21/7.20 to show the prime must measure each successive term in the sequence, reaching a contradiction). The AI proof takes an entirely different approach: it uses 7.30 (a prime dividing a product must divide one of its factors) combined with direct finite descent. The AI establishes that An = A2 * A(n-1) from the continued proportion, applies 7.30 to conclude p divides A2 or A(n-1), and descends through shorter sequences until reaching the base case A3 = A2^2 where 7.30 yields p divides A2. The key intermediate conclusions differ completely: Heath's backbone involves coprimality assumptions, proportion equalities, and least-ratio arguments, while the AI's backbone involves product decomposition and the prime factor property. This is a genuine path difference. The AI's path is logically complete and valid, so Q3 confirms classification as D.",
+  "jaccard": 0.1,
+  "ai_citations": "7.30|9.11|D7.15|D7.20",
+  "heath_citations": "7.19|7.20|7.21|7.29|9.11|9.8|D7.14",
+  "ai_only": "7.30|D7.15|D7.20",
+  "heath_only": "7.19|7.20|7.21|7.29|9.8|D7.14",
+  "audit_record": ""
+}

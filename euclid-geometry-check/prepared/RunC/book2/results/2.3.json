@@ -1,0 +1,26 @@
+{
+  "proposition": "2.3",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Point C lies on segment AB, dividing it into segments AC and CB",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BC is treated as an uncut line; AB is the line cut into segments AC and CB at C",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Segment addition: AB consists of AC + CB (implicit from applying Prop 2.1 with AB cut at C)",
+      "type": "segment_addition"
+    }
+  ],
+  "configuration_map": "Minimal configuration: a single line segment AB with an interior point C. Point A is the left endpoint, point B is the right endpoint, and C lies between them on the segment. This creates two sub-segments AC and CB such that AB = AC + CB. No auxiliary points or geometric figures are constructed. The proof operates entirely on rectangle and square areas derived from these segments.",
+  "pass_reason": "The proof is primarily algebraic, applying Proposition 2.1 (a distributive identity for rectangles over segment sums) and the definition of a square. The only spatial claim is the given condition that C lies on AB, which is never contradicted. No geometric constructions, angle decompositions, inside/outside claims, or ray orderings appear. All spatial claims are trivially consistent."
+}

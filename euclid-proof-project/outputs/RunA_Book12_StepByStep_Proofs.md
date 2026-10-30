@@ -1,0 +1,607 @@
+# Book 12 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 12.1
+**Statement:** Similar polygons inscribed in circles are to one another as the squares on the diameters.
+
+**Step 1.** Let ABCDE and FGHKL be similar polygons inscribed in circles, and let BM and GN be diameters of the respective circles. We are to show that polygon ABCDE is to polygon FGHKL as the square on BM is to the square on GN.
+
+**Step 2.** Join BE and GL. Since ABCDE and FGHKL are similar polygons, by D6.1 the angles at corresponding vertices are equal and the sides about equal angles are proportional. In particular, angle BAE equals angle GFL, and BA is to AE as GF is to FL.
+
+**Step 3.** Since in triangles ABE and FGL we have angle BAE equal to angle GFL, and the sides about these equal angles proportional (BA:AE = GF:FL), by 6.6 the triangles ABE and FGL are equiangular. Therefore angle AEB equals angle FLG.
+
+**Step 4.** Join AM and FN, where M and N are the endpoints of the diameters BM and GN respectively. Since angle AEB and angle AMB are angles in the same segment of the first circle (both standing on arc AB), by 3.21 angle AEB equals angle AMB. Similarly, angle FLG equals angle FNG by 3.21 applied to the second circle (both angles standing on arc FG).
+
+**Step 5.** Since angle AEB equals angle AMB, and angle FLG equals angle FNG, and angle AEB equals angle FLG (from Step 3), it follows that angle AMB equals angle FNG by CN1.
+
+**Step 6.** Since BM is a diameter of the first circle, by 3.31 angle BAM (the angle in the semicircle on BM) is a right angle. Similarly, angle GFN is a right angle by 3.31 applied to the second circle with diameter GN.
+
+**Step 7.** In triangles ABM and FGN, angle BAM equals angle GFN (both right angles, by Step 6 and P4), and angle AMB equals angle FNG (Step 5). Therefore by 1.32 the remaining angles are also equal: angle ABM equals angle FGN. Hence triangles ABM and FGN are equiangular.
+
+**Step 8.** Since triangles ABM and FGN are equiangular, by 6.4 the sides about equal angles are proportional. In particular, BA is to GF as BM is to GN (the sides opposite the right angles, which are the hypotenuses, are proportional to the corresponding legs).
+
+**Step 9.** Since ABCDE and FGHKL are similar polygons, by 6.20 the ratio of polygon ABCDE to polygon FGHKL is the duplicate ratio of that which corresponding side BA has to corresponding side GF (D5.9).
+
+**Step 10.** By 6.20 applied to the squares on BM and GN (which are similar rectilineal figures on BM and GN respectively), the square on BM is to the square on GN in the duplicate ratio of BM to GN. Alternatively, this follows directly since the square on BM to the square on GN is BM squared to GN squared, which is the duplicate ratio of BM to GN by D5.9.
+
+**Step 11.** From Step 8, BA:GF = BM:GN. Therefore the duplicate ratio of BA to GF is the same as the duplicate ratio of BM to GN, by 5.11 (ratios that are the same as the same ratio are the same as one another, applied to their duplicates; since BA:GF and BM:GN are the same ratio, any equimultiple condition satisfied by one pair is satisfied by the other, so their duplicate ratios coincide).
+
+**Step 12.** From Step 9, polygon ABCDE is to polygon FGHKL in the duplicate ratio of BA to GF. From Steps 10 and 11, the square on BM is to the square on GN in the same duplicate ratio. Therefore by 5.11, polygon ABCDE is to polygon FGHKL as the square on BM is to the square on GN.
+
+**Step 13.** Therefore similar polygons inscribed in circles are to one another as the squares on the diameters. Q.E.D.
+
+**USED:** 1.32, 3.21, 3.31, 5.11, 6.20, 6.4, 6.6, CN1, D5.9, D6.1, P4
+**Human refs (from References field):** 1.32, 3.27, 3.31, 6.20, 6.4, 6.6, D6.1
+**Jaccard:** 0.500 — AI adds ['3.21', '5.11', 'CN1', 'D5.9', 'P4']; Human adds ['3.27']
+
+## Proposition 12.2
+**Statement:** Circles are to one another as the squares on the diameters.
+
+**Step 1.** Let ABCD and EFGH be two circles with diameters BD and FH respectively. I say that circle ABCD is to circle EFGH as the square on BD is to the square on FH.
+
+**Step 2.** Suppose this is not so. Then the square on BD is to the square on FH as circle ABCD is to some area S, where S is either less than circle EFGH or greater than it.
+
+**Step 3.** First, suppose S is less than circle EFGH. Inscribe a square EFGH in circle EFGH [4.6]. This inscribed square is greater than half the circle, since, if we circumscribe a square about the circle, the inscribed square is half the circumscribed square, and the circle is less than the circumscribed square; hence the inscribed square is greater than half the circle.
+
+**Step 4.** Bisect the arcs EF, FG, GH, HE at points K, L, M, N respectively, and join EK, KF, FL, LG, GM, MH, HN, NE. Each of the triangles EKF, FLG, GMH, HNE is greater than half the segment of the circle in which it stands, since if we draw tangents to the circle at the midpoints and complete the rectangles, each triangle is half the corresponding rectangle, and the segment is less than the rectangle. Thus each triangle is greater than half the segment [1.41, 3.2].
+
+**Step 5.** By repeatedly bisecting the remaining arcs and joining straight lines, and doing this continually, we shall eventually leave segments of the circle EFGH which are together less than the excess of circle EFGH over S [10.1]. For by 10.1, if from any magnitude there is subtracted more than its half, and from the remainder more than its half, and so on continually, there will eventually remain a magnitude less than any assigned magnitude.
+
+**Step 6.** Let these segments be left, and let the resulting inscribed polygon in circle EFGH be EKFLGMHN. Then the polygon EKFLGMHN is greater than S, since the circle EFGH exceeds the polygon EKFLGMHN by the segments, and these segments are together less than the excess of circle EFGH over S. Therefore the polygon is greater than S.
+
+**Step 7.** Now inscribe in circle ABCD a polygon similar to the polygon EKFLGMHN inscribed in circle EFGH. Then, by 12.1, the polygon inscribed in circle ABCD is to the polygon EKFLGMHN as the square on BD is to the square on FH.
+
+**Step 8.** But the square on BD is to the square on FH as circle ABCD is to S (by our assumption in Step 2). Therefore, by 5.11, the polygon inscribed in circle ABCD is to the polygon EKFLGMHN as circle ABCD is to S.
+
+**Step 9.** By 5.16 (alternando), the polygon inscribed in ABCD is to circle ABCD as the polygon EKFLGMHN is to S.
+
+**Step 10.** But the polygon inscribed in circle ABCD is less than circle ABCD, since it is contained within it [CN5]. Therefore, by 5.14, the polygon EKFLGMHN is also less than S.
+
+**Step 11.** But the polygon EKFLGMHN was proved greater than S in Step 6. This is a contradiction. Therefore S is not less than circle EFGH.
+
+**Step 12.** Now suppose S is greater than circle EFGH. Then by inversion, the square on FH is to the square on BD as S is to circle ABCD [5.7.cor, by rearranging the original proportion]. That is, the square on FH is to the square on BD as circle EFGH is to some area T where T is less than circle ABCD (since S is greater than circle EFGH means, by alternation of the proportion, the fourth term T must be less than circle ABCD).
+
+**Step 13.** More precisely: since sq(BD) : sq(FH) :: circle ABCD : S and S > circle EFGH, we can similarly set up sq(FH) : sq(BD) :: circle EFGH : T for some area T. By the same argument as Steps 3-11 applied to circle ABCD and T (with T less than circle ABCD), we reach a contradiction in the same way. Namely, by inscribing polygons of sufficient sides in circle ABCD that leave segments less than the excess of circle ABCD over T, we get a polygon greater than T; but by 12.1 and the assumed proportion, the corresponding similar polygon in circle EFGH would have to be both less than circle EFGH (since it is inscribed in it) and greater than circle EFGH, which is impossible.
+
+**Step 14.** Therefore S is neither less than nor greater than circle EFGH, so S equals circle EFGH.
+
+**Step 15.** Hence the square on BD is to the square on FH as circle ABCD is to circle EFGH. That is, circles are to one another as the squares on their diameters. Q.E.D.
+
+**USED:** 1.41, 10.1, 12.1, 4.6, 5.11, 5.14, 5.16, CN5
+**Human refs (from References field):** 12.1, 5.11, 5.16
+**Jaccard:** 0.375 — AI adds ['1.41', '10.1', '4.6', '5.14', 'CN5']
+
+## Proposition 12.3
+**Statement:** Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; and the two prisms are greater than the half of the whole pyramid.
+
+**Step 1.** Let ABCD be a pyramid with triangular base BCD and apex A. Bisect each of the six edges at its midpoint: let E be the midpoint of BC, F the midpoint of CA, G the midpoint of AB, H the midpoint of DA, I the midpoint of DB, and K the midpoint of DC. [1.10]
+
+**Step 2.** In triangle ABC, since G and E are the midpoints of AB and BC respectively, by 6.2 the segment GE is parallel to AC and equal to half of AC. Similarly, GF (midpoints of AB and CA in triangle ABC) is parallel to BC and equal to half BC; EF (midpoints of BC and CA) is parallel to AB and equal to half AB. Applying the same reasoning to every face of the tetrahedron, every segment joining midpoints of two edges of the same face is parallel to and half of the third edge of that face. [6.2]
+
+**Step 3.** Consider the pyramid AGFH, where G = mid(AB), F = mid(CA), H = mid(DA). Its six edges are: AG = AB/2, AF = CA/2, AH = DA/2, GF = BC/2 (midsegment of face ABC), FH = CD/2 (midsegment of face ACD), GH = BD/2 (midsegment of face ABD). Every edge of AGFH is exactly half the corresponding edge of ABCD. Therefore the four triangular faces of AGFH are respectively similar to the four faces of ABCD, with each pair of corresponding sides in the ratio 1:2. By the definition of similar solid figures, AGFH is similar to ABCD. [6.2, 6.4, D11.9]
+
+**Step 4.** Consider the pyramid BEGI, where E = mid(BC), G = mid(AB), I = mid(DB). Its edges are: BE = BC/2, BG = AB/2, BI = BD/2, EG = AC/2 (midsegment of ABC), GI = AD/2 (midsegment of ABD), EI = DC/2 (midsegment of BCD). Every edge is half the corresponding edge of ABCD. So BEGI is also similar to ABCD, with the same ratio 1:2. [6.2, 6.4, D11.9]
+
+**Step 5.** The edge-length multisets of AGFH and BEGI are identical: {AB/2, AC/2, AD/2, BC/2, BD/2, CD/2}. Hence corresponding faces of AGFH and BEGI are congruent by 1.8, and by D11.10 the two pyramids are equal and similar to one another. [1.8, D11.10]
+
+**Step 6.** Now consider the four segments GF, IK, GI, FK. Since GF is a midsegment of triangle ABC it is parallel to BC with length BC/2, and IK is a midsegment of triangle BCD also parallel to BC with length BC/2. So GF and IK are equal and parallel. Likewise GI is a midsegment of triangle ABD parallel to AD with length AD/2, and FK is a midsegment of triangle ACD parallel to AD with length AD/2, so GI and FK are equal and parallel. By 1.33, the quadrilateral GFKI (with GF parallel and equal to IK, and GI parallel and equal to FK) is a parallelogram lying in a plane that we call plane P. [6.2, 1.33]
+
+**Step 7.** By 1.34 and 1.26, the diagonals GK and FI of parallelogram GFKI bisect each other at a point M. Computing, M is the common midpoint of both diagonals and equals the point (A + B + C + D)/4 in position, that is, the centroid of the tetrahedron. [1.34, 1.26]
+
+**Step 8.** Now consider the segment EH, where E = mid(BC) and H = mid(DA). The midpoint of EH is ((B+C)/2 + (D+A)/2)/2 = (A+B+C+D)/4 = M. So M, which lies in plane P, is the midpoint of EH. Therefore E and H lie on opposite sides of plane P at equal perpendicular distances from it. [1.10]
+
+**Step 9.** Remove the two small pyramids AGFH and BEGI from pyramid ABCD. The remaining solid has vertices C, D, E, F, G, H, I, K. Plane P (containing parallelogram GFKI) divides this solid into two pieces. We now show each piece is a prism. [D11.13]
+
+**Step 10.** Consider the piece on the side of E (which contains vertex C). Its faces are as follows. On the plane of face ABC: triangles GEF (the medial triangle of ABC) and CEF (with vertex C) share edge EF; since GE is parallel to CF (both parallel to AC, both of length AC/2) and EC is parallel to FG (both parallel to BC, both of length BC/2), the combined quadrilateral GECF is a parallelogram by 1.33. On the plane of face BCD: triangles EIK (medial triangle of BCD) and CEK share edge EK; since CE is parallel to IK (both parallel to BC, both BC/2) and EI is parallel to KC (both parallel to DC, both DC/2), the combined quadrilateral CEIK is a parallelogram. The cutting plane contributes the parallelogram GFKI. The remaining faces are triangle CFK (on face ACD, with sides CF = AC/2, CK = DC/2, FK = AD/2) and triangle EGI (an internal face, with sides EG = AC/2, GI = AD/2, EI = DC/2). The triangles CFK and EGI are congruent by 1.8 (three pairs of equal sides). Since CFK lies in the plane of face ACD while EGI is parallel to this plane (being formed by midpoints of the three edges from B), they are parallel congruent triangles. The solid is bounded by two congruent parallel triangles and three parallelograms, so by D11.13 it is a prism. Call it Prism 1. [1.33, 1.8, 1.29, D11.13]
+
+**Step 11.** Consider the piece on the side of H (containing vertex D). On the plane of face ABD: triangles GIH and DHI share edge HI; since GI is parallel to DH (both parallel to AD, both AD/2) and ID is parallel to HG (both parallel to BD, both BD/2), the combined quadrilateral GIDH is a parallelogram. On the plane of face ACD: triangles FKH and DHK share edge HK; since FK is parallel to DH (both parallel to AD, both AD/2) and KD is parallel to HF (both parallel to DC, both DC/2), the combined quadrilateral FKDH is a parallelogram. The cutting plane contributes GFKI. The remaining faces are triangle DIK (on face BCD, sides DI = BD/2, DK = DC/2, IK = BC/2) and triangle GFH (internal, sides GF = BC/2, FH = DC/2, GH = BD/2). These are congruent by 1.8, with DIK in the plane of face BCD and GFH parallel to it. Thus this solid is also a prism by D11.13. Call it Prism 2. [1.33, 1.8, 1.29, D11.13]
+
+**Step 12.** We now show the two prisms are equal. By 11.28, each triangular prism is half of a parallelepiped obtained by doubling it across one of its triangular bases. Complete Prism 1 (base triangle CFK in the plane of face ACD) to a parallelepiped P1 whose base is the parallelogram CFKH' in the plane of ACD, where H' completes the parallelogram (with CF and CK as adjacent sides, giving H' = C + (F - C) + (K - C), which lies at the point H = mid(DA) since CF is along CA and CK along CD with FH being a midsegment). In fact the parallelogram base of P1 is CFHK (vertices C, F = mid(CA), H = mid(DA), K = mid(DC)), which lies in the plane of face ACD. Its area equals twice the area of triangle CFK, which equals half the area of triangle ACD. The height of P1 is the perpendicular distance from its top face to the plane of ACD, which equals half the distance from B to the plane of ACD, since the top face passes through the midpoints E, G, I of the three edges from B. [11.28]
+
+**Step 13.** Similarly, complete Prism 2 (base triangle DIK in the plane of face BCD) to a parallelepiped P2 whose base is the parallelogram DIKE' in the plane of BCD, where the parallelogram has vertices D, I = mid(DB), E = mid(BC), K = mid(DC). This parallelogram lies in the plane of face BCD with area equal to half the area of triangle BCD. The height of P2 is half the distance from A to the plane of BCD. [11.28]
+
+**Step 14.** The volume of P1 is proportional to (area of ACD) times (distance from B to plane ACD), and the volume of P2 is proportional to (area of BCD) times (distance from A to plane BCD), with the same proportionality constants (1/2 for base, 1/2 for height, giving 1/4 each). Now, area(ACD) times dist(B, ACD) equals area(BCD) times dist(A, BCD), because each product, when divided by 3, gives the volume of the same tetrahedron ABCD: this follows from 11.32, since the parallelepiped circumscribing ABCD with base on ACD and the parallelepiped circumscribing ABCD with base on BCD contain the same tetrahedron. By 11.34 (parallelepipeds with reciprocally proportional bases and heights are equal), P1 equals P2. Since Prism 1 is half of P1 and Prism 2 is half of P2, the two prisms are equal. [11.32, 11.34, 11.28]
+
+**Step 15.** It remains to show that the two prisms together are greater than half the whole pyramid. Since AGFH and BEGI are equal pyramids (Step 5), and AGFH together with Prism 2 compose the sub-solid on one side while BEGI together with Prism 1 compose the sub-solid on the other, the four pieces AGFH, BEGI, Prism 1, Prism 2 exhaust the whole pyramid ABCD.
+
+**Step 16.** Prism 1 is the union of the small pyramid CEFK (at vertex C, congruent to AGFH by the same edge-halving argument) together with additional solid volume from the octahedral interior. Therefore Prism 1 is greater than pyramid CEFK, which equals AGFH. By the same argument, Prism 2 is greater than pyramid DHIK (at vertex D), which also equals AGFH. [CN5]
+
+**Step 17.** Hence Prism 1 + Prism 2 > AGFH + BEGI. Since the whole pyramid ABCD = AGFH + BEGI + Prism 1 + Prism 2, and Prism 1 + Prism 2 > AGFH + BEGI, it follows that Prism 1 + Prism 2 is greater than the remaining part AGFH + BEGI, which means 2(Prism 1 + Prism 2) > ABCD, that is, Prism 1 + Prism 2 > half of pyramid ABCD. [CN5]
+
+**Step 18.** Therefore any pyramid with a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; and the two prisms are greater than the half of the whole pyramid. Q.E.D.
+
+**USED:** 1.10, 1.26, 1.29, 1.33, 1.34, 1.8, 11.28, 11.32, 11.34, 6.2, 6.4, CN5, D11.10, D11.13, D11.9
+**Human refs (from References field):** 1.29, 1.34, 1.4, 11.10, 11.39, 6.2, D11.10, D6.1
+**Jaccard:** 0.211 — AI adds ['1.10', '1.26', '1.33', '1.8', '11.28', '11.32', '11.34', '6.4', 'CN5', 'D11.13', 'D11.9']; Human adds ['1.4', '11.10', '11.39', 'D6.1']
+
+## Proposition 12.4
+**Statement:** If there be two pyramids of the same height which have triangular bases, and cach of them be divided into two pyramids equal to one another and similar to the whole, and into two equal prisms, then, as the base of the one pyramid is to the base of the other pyramid, so will all the prisms in the one pyramid be to all the prisms, being equal in multitude, in the other pyramid.
+
+**Step 1.** Let there be two pyramids of the same height with triangular bases, namely pyramid ABCD with base ABC and vertex D, and pyramid EFGH with base EFG and vertex H, the heights from D to plane ABC and from H to plane EFG being equal. Suppose each is divided according to 12.3 into two pyramids equal to one another and similar to the whole, and into two equal prisms. We must show that as triangle ABC is to triangle EFG, so are all the prisms in ABCD to all the prisms, being equal in multitude, in EFGH. [12.3]
+
+**Step 2.** By 12.3, divide pyramid ABCD: bisect edges AB, BC, CA, DA, DB, DC at their midpoints. Let the midpoints of AB, BC, CA be K, L, M respectively, and the midpoints of DA, DB, DC be N, O, P respectively. Then ABCD is divided into two pyramids (AKND and LOBC, each equal and similar to the whole) and two equal prisms (with triangular bases KLM and LOC, and corresponding upper faces). Similarly, divide EFGH at midpoints of its edges into two pyramids and two equal prisms. [12.3, 1.10]
+
+**Step 3.** Consider the two prisms obtained from pyramid ABCD. By the midpoint construction, triangle KLM (the medial triangle of ABC) is similar to triangle ABC with ratio of similarity 1:2. By 6.19, triangle KLM is one-fourth of triangle ABC. Likewise, each of the four sub-triangles AKM, KBL, LCM, KLM into which the medial triangle divides ABC are equal to one another. The two prisms from ABCD have bases that are triangles equal to KLM (one-fourth of ABC). [1.10, 1.38, 6.19]
+
+**Step 4.** Similarly, the two prisms obtained from pyramid EFGH have bases that are each one-fourth of triangle EFG. The prisms from ABCD have the same height as the prisms from EFGH (namely half the common height of the original pyramids, since the midpoints of the lateral edges give half the original height). [12.3]
+
+**Step 5.** Since the prisms are of equal height, each prism from ABCD is to the corresponding prism from EFGH as the base of the first prism to the base of the second. The base of each prism from ABCD is one-fourth of triangle ABC, and the base of each prism from EFGH is one-fourth of triangle EFG. Therefore each prism from ABCD is to the corresponding prism from EFGH as (one-fourth of ABC) is to (one-fourth of EFG), which is as triangle ABC is to triangle EFG. [11.39, 5.15, 5.11]
+
+**Step 6.** There are two prisms from ABCD and two prisms from EFGH. Since each prism from ABCD is to its corresponding prism from EFGH in the same ratio (namely ABC to EFG), the sum of the two prisms from ABCD is to the sum of the two prisms from EFGH also as ABC to EFG. [5.12]
+
+**Step 7.** Now, the division of ABCD also produces two smaller pyramids, each similar to the whole and equal to one another, with bases that are one-fourth of ABC and height half the original. Likewise, the division of EFGH produces two smaller pyramids similar to the whole, with bases one-fourth of EFG and the same (halved) height. Each smaller pyramid from ABCD is paired with a corresponding smaller pyramid from EFGH, and each such pair has equal heights and triangular bases that are in the ratio of one-fourth of ABC to one-fourth of EFG, which is as ABC to EFG. [12.3, 5.15]
+
+**Step 8.** Apply 12.3 again to each of these smaller pyramids. Each smaller pyramid is divided into two yet-smaller pyramids and two equal prisms. The prisms from each smaller pyramid of ABCD correspond to prisms from the corresponding smaller pyramid of EFGH. By the same argument as in Steps 3-6, the bases of these new prisms maintain the ratio of their parent pyramids' bases, which is ABC to EFG. The heights of corresponding prisms are again equal (being half the height of the smaller pyramids, hence one-fourth the original height, which is the same for both). Therefore these new prisms from the ABCD subdivision are to the corresponding prisms from the EFGH subdivision as ABC to EFG. [12.3, 11.39, 5.15, 5.11]
+
+**Step 9.** At this second stage of division, we obtain four prisms from the ABCD side and four from the EFGH side. Each prism from the ABCD side is to its corresponding prism on the EFGH side as ABC to EFG. Therefore the sum of all four prisms from the ABCD subdivision is to the sum of all four prisms from the EFGH subdivision as ABC to EFG. [5.12]
+
+**Step 10.** This process continues for any number of successive divisions. At each stage, every new pair of corresponding prisms (one from the ABCD side, one from the EFGH side) has the same ratio ABC to EFG, because: (a) the bases of corresponding prisms are always in the same ratio as the bases of the parent pyramids from which they are derived, which traces back to ABC : EFG by repeated application of 5.15; and (b) the corresponding prisms always have equal heights since the parent pyramids always have equal heights (the original pyramids had equal heights, and 12.3 always halves the height equally for both). [12.3, 5.15, 5.11, 11.39]
+
+**Step 11.** Therefore, at any stage of the repeated division, all the prisms in the one pyramid (those arising from ABCD) are to all the prisms, being equal in multitude, in the other pyramid (those arising from EFGH) as triangle ABC is to triangle EFG. [5.12, CN2]
+
+**Step 12.** Hence, as the base of the one pyramid is to the base of the other pyramid, so are all the prisms in the one pyramid to all the prisms, being equal in multitude, in the other pyramid. This is what was to be proved.
+
+**USED:** 1.10, 1.38, 11.39, 12.3, 5.11, 5.12, 5.15, 6.19, CN2
+**Human refs (from References field):** 11.39, 12.3, 5.12, 5.16, 6.22
+**Jaccard:** 0.273 — AI adds ['1.10', '1.38', '5.11', '5.15', '6.19', 'CN2']; Human adds ['5.16', '6.22']
+
+## Proposition 12.5
+**Statement:** Pyramids which are of the same height and have triangular bases are to one another as the bases.
+
+**Step 1.** Let there be two pyramids of the same height with triangular bases, the first having base ABC and apex D, and the second having base EFG and apex H, where both pyramids have the same height. We must prove that pyramid ABCD is to pyramid EFGH as triangle ABC is to triangle EFG.
+
+**Step 2.** Suppose, for contradiction, that pyramid ABCD is not to pyramid EFGH as base ABC is to base EFG. Then base ABC is to base EFG as pyramid ABCD is to some magnitude either less than or greater than pyramid EFGH. First, let it be to a magnitude W less than pyramid EFGH, so that ABC : EFG = ABCD : W, where W < EFGH.
+
+**Step 3.** Let the excess of pyramid EFGH over W be S, so that S = EFGH - W > 0.
+
+**Step 4.** By Proposition 12.3, divide pyramid EFGH into two pyramids equal to one another and similar to the whole, with triangular bases, and into two equal prisms. The two prisms together are greater than half of pyramid EFGH.
+
+**Step 5.** Similarly divide each of the two sub-pyramids that resulted from the previous step by 12.3, and continue this process of successive bisection of the remaining pyramids. By Proposition 10.1, since the prisms removed at each stage are greater than half the pyramids from which they are taken, by repeatedly removing more than half, we will eventually be left with pyramids whose sum is less than S. That is, after sufficiently many divisions, the sum of the remaining sub-pyramids of EFGH is less than S.
+
+**Step 6.** Perform exactly the same number of divisions on pyramid ABCD, so that both pyramids are divided the same number of times. We now have a collection of prisms in pyramid ABCD and a collection of prisms in pyramid EFGH, equal in multitude.
+
+**Step 7.** By Proposition 12.4, the prisms in pyramid ABCD taken together are to the prisms in pyramid EFGH taken together as base ABC is to base EFG. This is because at each stage of division, 12.4 establishes that the set of all prisms arising from repeated subdivision of the first pyramid is to the corresponding set in the second pyramid as the base of the first is to the base of the second.
+
+**Step 8.** Therefore ABC : EFG = (sum of prisms in ABCD) : (sum of prisms in EFGH), by 12.4.
+
+**Step 9.** But by our assumption, ABC : EFG = ABCD : W. Therefore ABCD : W = (sum of prisms in ABCD) : (sum of prisms in EFGH), by Common Notion 1 applied to the equal ratios.
+
+**Step 10.** Now, pyramid ABCD is greater than the sum of prisms contained in it (since the prisms are only a part of the pyramid, by Common Notion 5). Therefore, by Proposition 5.8 (and the properties of proportions from Book 5), W must be greater than the sum of prisms in EFGH. More precisely, since ABCD > sum of prisms in ABCD and the ratios are equal, by Proposition 5.14, W > sum of prisms in EFGH.
+
+**Step 11.** But the sum of prisms in EFGH equals EFGH minus the sum of the remaining sub-pyramids. Since the sum of the remaining sub-pyramids is less than S = EFGH - W (by Step 5), we have: sum of prisms in EFGH = EFGH - (remaining sub-pyramids) > EFGH - S = EFGH - (EFGH - W) = W.
+
+**Step 12.** Thus the sum of prisms in EFGH is greater than W. But from Step 10, W is greater than the sum of prisms in EFGH. This is a contradiction.
+
+**Step 13.** Now consider the other case: suppose ABC : EFG = ABCD : W where W > EFGH. Then by inversion (Proposition 5.7 or D5.13), EFG : ABC = W : ABCD. Since W > EFGH and the pyramids ABCD and EFGH have the same height, we can apply the same argument with the pyramids interchanged. By the same reasoning as above, we obtain EFG : ABC = EFGH : W' for some W' < ABCD (this follows from the symmetry of the setup). Applying the argument of Steps 4 through 12 to this case with the roles of the two pyramids exchanged, we again reach a contradiction.
+
+**Step 14.** Since neither case is possible, we conclude that pyramid ABCD is to pyramid EFGH as base ABC is to base EFG.
+
+**Step 15.** Therefore, pyramids which are of the same height and have triangular bases are to one another as the bases. Q.E.D.
+
+**USED:** 10.1, 12.3, 12.4, 5.14, CN1, CN5, D11.12, D5.13, D5.5
+**Human refs (from References field):** 10.1, 12.2, 12.3, 12.4, 5.16, 5.2
+**Jaccard:** 0.250 — AI adds ['5.14', 'CN1', 'CN5', 'D11.12', 'D5.13', 'D5.5']; Human adds ['12.2', '5.16', '5.2']
+
+## Proposition 12.6
+**Statement:** Pyramids which are of the same height and have polygonal bases are to one another as the bases.
+
+**Step 1.** Let there be two pyramids of the same height, the first having the polygonal base ABCDE with apex M, and the second having the polygonal base FGHKL with apex N. We must show that pyramid ABCDEM is to pyramid FGHKLN as polygon ABCDE is to polygon FGHKL.
+
+**Step 2.** Divide the polygonal base ABCDE into triangles by joining vertex A to each non-adjacent vertex, drawing AC and AD [P1]. This decomposes the base into triangles ABC, ACD, and ADE. Similarly, divide the polygonal base FGHKL into triangles by joining vertex F to each non-adjacent vertex, drawing FH and FK [P1]. This decomposes the base into triangles FGH, FHK, and FKL. (The argument works for any number of sides; we illustrate with pentagons.)
+
+**Step 3.** These diagonal lines also divide each pyramid into pyramids with triangular bases sharing the same apex and height. Pyramid ABCDEM is divided into the triangular-based pyramids ABCM, ACDM, and ADEM. Pyramid FGHKLN is divided into the triangular-based pyramids FGHN, FHKN, and FKLN. The whole pyramid equals the sum of its constituent triangular-based pyramids [CN2].
+
+**Step 4.** All six triangular-based pyramids have the same height (the common height of the two original pyramids, measured from the apex perpendicularly to the plane of the respective base). By Proposition 12.5, pyramids of the same height with triangular bases are to one another as their bases. Consider any two triangular pyramids from the first group with any triangular pyramid from the second group, all having this same height. In particular, pyramid ABCM is to pyramid FGHN as triangle ABC is to triangle FGH [12.5]; pyramid ACDM is to pyramid FGHN as triangle ACD is to triangle FGH [12.5]; and pyramid ADEM is to pyramid FGHN as triangle ADE is to triangle FGH [12.5].
+
+**Step 5.** Since pyramid ABCM : pyramid FGHN = triangle ABC : triangle FGH, and pyramid ACDM : pyramid FGHN = triangle ACD : triangle FGH, and pyramid ADEM : pyramid FGHN = triangle ADE : triangle FGH, it follows by Proposition 5.12 that the sum (pyramid ABCM + pyramid ACDM + pyramid ADEM) is to pyramid FGHN as (triangle ABC + triangle ACD + triangle ADE) is to triangle FGH. That is, pyramid ABCDEM : pyramid FGHN = polygon ABCDE : triangle FGH [5.12].
+
+**Step 6.** By the same reasoning applied to the second pyramid's triangular decomposition: pyramid FGHN is to pyramid ABCM as triangle FGH is to triangle ABC [12.5]; pyramid FHKN is to pyramid ABCM as triangle FHK is to triangle ABC [12.5]; and pyramid FKLN is to pyramid ABCM as triangle FKL is to triangle ABC [12.5]. By Proposition 5.12, the sum (pyramid FGHN + pyramid FHKN + pyramid FKLN) is to pyramid ABCM as (triangle FGH + triangle FHK + triangle FKL) is to triangle ABC. That is, pyramid FGHKLN : pyramid ABCM = polygon FGHKL : triangle ABC [5.12].
+
+**Step 7.** By inversion of the ratio in Step 6, pyramid ABCM : pyramid FGHKLN = triangle ABC : polygon FGHKL [5.7.Cor, i.e., from 5.7 applied inversely].
+
+**Step 8.** From Step 5 we also have: pyramid ABCDEM : pyramid FGHN = polygon ABCDE : triangle FGH. Now, by 12.5, pyramid ABCM : pyramid FGHN = triangle ABC : triangle FGH. From Step 5, pyramid ABCDEM : pyramid FGHN = polygon ABCDE : triangle FGH. Therefore pyramid ABCDEM has to pyramid FGHN the ratio of polygon ABCDE to triangle FGH. But also, pyramid FGHKLN has to pyramid FGHN the ratio of polygon FGHKL to triangle FGH (by applying 5.12 to the decomposition of the second pyramid, since pyramid FGHN : pyramid FGHN = triangle FGH : triangle FGH, pyramid FHKN : pyramid FGHN = triangle FHK : triangle FGH, and pyramid FKLN : pyramid FGHN = triangle FKL : triangle FGH; summing the antecedents and consequents by 5.12 gives pyramid FGHKLN : pyramid FGHN = polygon FGHKL : triangle FGH).
+
+**Step 9.** We now have two ratios with the same consequent: pyramid ABCDEM : pyramid FGHN = polygon ABCDE : triangle FGH, and pyramid FGHKLN : pyramid FGHN = polygon FGHKL : triangle FGH. By Proposition 5.22 (equality of ratios ex aequali applied to a common term), since X : Z = A : C and Y : Z = B : C implies X : Y = A : B, we obtain pyramid ABCDEM : pyramid FGHKLN = polygon ABCDE : polygon FGHKL. More precisely, from pyramid ABCDEM : pyramid FGHN = polygon ABCDE : triangle FGH and pyramid FGHKLN : pyramid FGHN = polygon FGHKL : triangle FGH, we invert the second to get pyramid FGHN : pyramid FGHKLN = triangle FGH : polygon FGHKL [by the property of inverse ratios]. Then compounding with the first ratio via ex aequali (5.22): pyramid ABCDEM : pyramid FGHKLN = polygon ABCDE : polygon FGHKL.
+
+**Step 10.** Therefore, pyramids of the same height with polygonal bases are to one another as their bases. Q.E.D.
+
+**USED:** 12.5, 5.12, 5.22, 5.7, CN2, P1
+**Human refs (from References field):** 12.5, 5.18, 5.22
+**Jaccard:** 0.286 — AI adds ['5.12', '5.7', 'CN2', 'P1']; Human adds ['5.18']
+
+## Proposition 12.7
+**Statement:** Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.
+
+**Step 1.** Let there be a prism ABCDEF with triangular base ABC and opposite triangular face DEF, where AD, BE, CF are the lateral edges. By D11.13, the opposite faces ABC and DEF are equal, similar, and parallel triangles, and the faces ABED, BCFE, and ACFD are parallelograms.
+
+**Step 2.** Join BD, the diagonal of parallelogram ABED, and join EC, the diagonal of parallelogram BCFE. Also join CD. These three line segments divide the prism into three tetrahedra (pyramids with triangular bases, per D11.12): namely, pyramid ABCD, pyramid BCDE, and pyramid CDEF.
+
+**Step 3.** Consider the parallelogram ABED with diagonal BD. By 1.34, the diagonal of a parallelogram bisects it into two equal triangles. Therefore triangle ABD equals triangle BDE.
+
+**Step 4.** Now consider pyramid ABCD as having base ABD and apex C, and pyramid BCDE as having base BDE and apex C. These two pyramids share the same apex C, and their bases ABD and BDE lie in the same plane (the plane of parallelogram ABED). Since the bases lie in the same plane, both pyramids have the same height, namely the perpendicular distance from C to the plane ABED.
+
+**Step 5.** Since pyramids ABCD and BCDE have triangular bases ABD and BDE that are equal (Step 3) and are of the same height (Step 4), by 12.5 they are to one another as their bases. Since the bases are equal, pyramid ABCD equals pyramid BCDE.
+
+**Step 6.** Consider the parallelogram BCFE with diagonal CE. By 1.34, the diagonal of a parallelogram bisects it into two equal triangles. Therefore triangle BCE equals triangle CEF.
+
+**Step 7.** Now consider pyramid BCDE as having base BCE and apex D, and pyramid CDEF as having base CEF and apex D. These two pyramids share the same apex D, and their bases BCE and CEF lie in the same plane (the plane of parallelogram BCFE). Since the bases lie in the same plane, both pyramids have the same height, namely the perpendicular distance from D to the plane BCFE.
+
+**Step 8.** Since pyramids BCDE and CDEF have triangular bases BCE and CEF that are equal (Step 6) and are of the same height (Step 7), by 12.5 they are to one another as their bases. Since the bases are equal, pyramid BCDE equals pyramid CDEF.
+
+**Step 9.** From Steps 5 and 8, pyramid ABCD equals pyramid BCDE, and pyramid BCDE equals pyramid CDEF. By CN1, pyramid ABCD equals pyramid CDEF as well. Therefore all three pyramids ABCD, BCDE, and CDEF are equal to one another.
+
+**Step 10.** Since the prism ABCDEF is composed of exactly the three pyramids ABCD, BCDE, and CDEF, and each of these is a pyramid with a triangular base, the prism has been divided into three pyramids equal to one another which have triangular bases. Q.E.F.
+
+**USED:** 1.34, 12.5, CN1, D11.12, D11.13
+**Human refs (from References field):** 1.34, 12.5
+**Jaccard:** 0.400 — AI adds ['CN1', 'D11.12', 'D11.13']
+
+## Proposition 12.8
+**Statement:** Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.
+
+**Step 1.** Let ABCD and EFGH be similar pyramids with triangular bases BCD and FGH respectively, where A and E are the apices. Since the pyramids are similar, by D11.9 their four triangular faces are respectively similar. By D6.1, the corresponding face triangles have their angles severally equal and the sides about the equal angles proportional. In particular, all corresponding edges are in the same ratio: AB:EF = AC:EG = AD:EH = BC:FG = CD:GH = BD:FH.
+
+**Step 2.** Complete the parallelepiped on the three edges AB, AC, AD meeting at vertex A. To do this, through each of B, C, D draw lines parallel to the two edges from A that do not contain that vertex, using 1.31. The resulting solid is a parallelepiped whose three edges at A are AB, AC, AD, with six parallelogram faces. Similarly, complete the parallelepiped on the three edges EF, EG, EH meeting at vertex E. Call these parallelepipeds P1 and P2 respectively.
+
+**Step 3.** The parallelepipeds P1 and P2 are similar. Each face of P1 at vertex A is a parallelogram determined by two of the edges AB, AC, AD with their included angle. For instance, the face determined by AB and AC is a parallelogram with sides AB, AC and included angle BAC. The corresponding face of P2 is the parallelogram with sides EF, EG and included angle FEG. Since the face triangle ABC of pyramid ABCD is similar to the face triangle EFG of pyramid EFGH (by D11.9), we have angle BAC = angle FEG (by D6.1), and AB:EF = AC:EG. Therefore the two parallelograms have their angles severally equal and sides about the equal angles proportional, so they are similar by D6.1. The same argument applies to the other two pairs of faces at A and E (those determined by edges AB, AD and by edges AC, AD, compared with their counterparts at E). The opposite faces of each parallelepiped are equal to those at A and E respectively, by 1.34. Hence all six faces of P1 are similar to the corresponding six faces of P2, so P1 and P2 are similar parallelepipedal solids by D11.9.
+
+**Step 4.** Since P1 and P2 are similar parallelepipeds, by 11.33, P1 is to P2 in the triplicate ratio of the corresponding side AB to the corresponding side EF.
+
+**Step 5.** Now consider P1. By 11.28, the diagonal plane through the diagonal of one face and the diagonal of the opposite face bisects P1 into two equal prisms. Specifically, take the diagonal plane that passes through vertices B, C, and the vertices obtained by translating B and C by the vector AD. This plane divides P1 into two equal triangular prisms, one of which has triangular base ABC with lateral edges in the direction AD. Call this prism Q1. Similarly, the corresponding diagonal plane divides P2 into two equal prisms, one of which has triangular base EFG with lateral edges in the direction EH. Call this prism Q2. Thus P1 = 2Q1 and P2 = 2Q2.
+
+**Step 6.** By 12.7, the prism Q1 with triangular base ABC is divided into three pyramids equal to one another which have triangular bases. One of these three pyramids has base ABC and its apex at the vertex D (which is the translation of A by the vector AD). This pyramid on base ABC with apex D is precisely the pyramid ABCD (being the same tetrahedron with vertices A, B, C, D). Therefore pyramid ABCD is one-third of Q1, giving Q1 = 3 times pyramid ABCD. By the same reasoning, Q2 = 3 times pyramid EFGH.
+
+**Step 7.** From Steps 5 and 6, P1 = 2Q1 = 6 times pyramid ABCD, and P2 = 2Q2 = 6 times pyramid EFGH. That is, P1 and P2 are equimultiples of pyramids ABCD and EFGH respectively (both being six times their respective pyramids). By 5.15, equimultiples have the same ratio as the magnitudes themselves. Therefore pyramid ABCD is to pyramid EFGH as P1 is to P2.
+
+**Step 8.** But by Step 4, P1 is to P2 in the triplicate ratio of AB to EF, which by D5.10 is the triplicate ratio of their corresponding sides. Therefore pyramid ABCD is to pyramid EFGH in the triplicate ratio of their corresponding sides, which is the triplicate ratio of BC to FG (since AB:EF = BC:FG). This is what was to be proved.
+
+**USED:** 1.31, 1.34, 11.28, 11.33, 12.7, 5.15, D11.9, D5.10, D6.1
+**Human refs (from References field):** 11.24, 11.28, 11.33, 12.7
+**Jaccard:** 0.300 — AI adds ['1.31', '1.34', '5.15', 'D11.9', 'D5.10', 'D6.1']; Human adds ['11.24']
+
+## Proposition 12.9
+**Statement:** In equal pyramids which have triangular bases the bases are reciprocally proportional to the heights; and those pyramids in which the bases are reciprocally proportional to the heights are equal.
+
+Let ABCG and DEFH be two pyramids with triangular bases ABC and DEF, and let their respective heights be h1 and h2 (the perpendicular distances from vertices G and H to the planes of their respective bases).
+
+**Part I: If the pyramids are equal, then base ABC : base DEF = h2 : h1.**
+
+**Step 1.** Complete triangle ABC to parallelogram ABCL by producing sides AB and BC and drawing lines through C and A parallel to BA and BC respectively, so that ABCL is a parallelogram with diagonal AC. By 1.34, the diagonal AC bisects the parallelogram, so triangle ABC is half of parallelogram ABCL. Similarly, complete triangle DEF to parallelogram DEFM, so triangle DEF is half of parallelogram DEFM.
+
+**Step 2.** Construct the prism with triangular base ABC and the same height h1 as pyramid ABCG. By 12.7, this prism is divided into three equal pyramids with triangular bases, one of which is pyramid ABCG. Hence the prism on base ABC with height h1 equals three times pyramid ABCG. Similarly, the prism on base DEF with height h2 equals three times pyramid DEFH.
+
+**Step 3.** By 11.28, the parallelepiped on base ABCL with height h1 is bisected by the diagonal plane through AC into two equal prisms, one of which is the prism on triangular base ABC with height h1. Hence the parallelepiped on ABCL with height h1 equals twice the prism on ABC with height h1, which equals six times pyramid ABCG. Similarly, the parallelepiped on DEFM with height h2 equals six times pyramid DEFH.
+
+**Step 4.** Since pyramid ABCG equals pyramid DEFH (given), multiplying both by six (using CN2 applied repeatedly, or equivalently 5.15 on equal magnitudes), the parallelepiped on ABCL with height h1 equals the parallelepiped on DEFM with height h2.
+
+**Step 5.** Since these two parallelepipeds are equal, by 11.34, their bases are reciprocally proportional to their heights: base ABCL : base DEFM = h2 : h1.
+
+**Step 6.** Since triangle ABC is half of parallelogram ABCL and triangle DEF is half of parallelogram DEFM, by 5.15, base ABCL : base DEFM = base ABC : base DEF. (Halves of magnitudes are in the same ratio as the magnitudes themselves.)
+
+**Step 7.** Therefore, by CN1, base ABC : base DEF = h2 : h1. That is, the bases of the equal pyramids are reciprocally proportional to their heights.
+
+**Part II: If base ABC : base DEF = h2 : h1, then the pyramids are equal.**
+
+**Step 8.** Assume that for pyramids ABCG and DEFH with triangular bases ABC and DEF and heights h1 and h2 respectively, base ABC : base DEF = h2 : h1. Using the same constructions as before, complete the triangular bases to parallelograms ABCL and DEFM, and construct the corresponding parallelepipeds with heights h1 and h2.
+
+**Step 9.** Since base ABC : base DEF = h2 : h1 (given), and base ABCL : base DEFM = base ABC : base DEF (by 5.15, as each parallelogram is double its respective triangle), it follows that base ABCL : base DEFM = h2 : h1 (by CN1).
+
+**Step 10.** Since the bases of the parallelepipeds on ABCL and DEFM are reciprocally proportional to their heights, by the converse part of 11.34, the two parallelepipeds are equal.
+
+**Step 11.** Since the parallelepiped on ABCL with height h1 equals six times pyramid ABCG, and the parallelepiped on DEFM with height h2 equals six times pyramid DEFH (by Steps 2 and 3), and the two parallelepipeds are equal (Step 10), it follows that six times pyramid ABCG equals six times pyramid DEFH. Therefore pyramid ABCG equals pyramid DEFH (by CN3, subtracting five copies from each side, or equivalently since equal multiples of magnitudes are equal if and only if the magnitudes are equal, by 5.9 applied inversely with 5.11).
+
+**Step 12.** Therefore, in equal pyramids which have triangular bases, the bases are reciprocally proportional to the heights; and those pyramids in which the bases are reciprocally proportional to the heights are equal. Q.E.D.
+
+**USED:** 1.34, 11.28, 11.34, 12.7, 5.15, CN1, CN2, CN3
+**Human refs (from References field):** 1.34, 11.34, 5.11
+**Jaccard:** 0.222 — AI adds ['11.28', '12.7', '5.15', 'CN1', 'CN2', 'CN3']; Human adds ['5.11']
+
+## Proposition 12.10
+**Statement:** Any cone is a third part of the cylinder which has the same base with it and equal height.
+
+**Step 1.** Let there be a cone with circular base ABCD and apex E, and let there be a cylinder with the same base ABCD and equal height. We are to prove that the cone is one-third of the cylinder. [D11.18, D11.20, D11.21, D11.23]
+
+**Step 2.** Suppose, for contradiction, that the cone is not one-third of the cylinder. Then the cylinder is either greater than or less than three times the cone.
+
+**Step 3.** Case 1: Suppose the cylinder is greater than three times the cone. Let S = cylinder - 3*cone, so S > 0.
+
+**Step 4.** Inscribe square ABCD in the base circle by 4.6. The inscribed square is greater than half the circle, since it is half the circumscribed square and the circle is less than the circumscribed square. [4.6]
+
+**Step 5.** Bisect arcs AB, BC, CD, DA and join the new points to form an inscribed octagon. Each new triangle erected on a side of the square is greater than half the circular segment it lies in (since it is half the rectangle circumscribing that segment). Continue bisecting arcs and joining successive points, doubling the number of sides at each stage. By 10.1, since at each stage more than half of the remaining segments are exhausted, we can continue until the sum of the remaining circular segments (the difference between the circle and the inscribed polygon) is less than S. Let P be the inscribed polygon so obtained, with circle - area(P) < S. [10.1]
+
+**Step 6.** Erect on polygon P a prism of the same height as the cylinder. This prism is inscribed in the cylinder. Similarly, form the pyramid with base P and apex E (the apex of the cone); this pyramid is inscribed in the cone. [D11.13, D11.12]
+
+**Step 7.** Since the prism on P and the cylinder have the same height and their bases are the polygon P and the full circle respectively, the difference cylinder - prism(P) equals the solid above the circular segments (between the polygon and the circle) at the same height. Since the base area difference circle - area(P) < S, and the cylinder above these segments has the same height, the solid cylinder - prism(P) is exactly the cylinder-like solid on base (circle - P), which is less than the solid on area S at the same height. Because the cylinder has uniform cross-section, cylinder - prism(P) is proportional to circle - area(P), so cylinder - prism(P) < S. [11.32]
+
+**Step 8.** Since cylinder - prism(P) < S = cylinder - 3*cone, subtracting the cylinder from both sides and multiplying by -1, we get prism(P) > 3*cone.
+
+**Step 9.** Now decompose polygon P into triangles by drawing diagonals from one vertex. This decomposes P into triangles T_1, T_2, ..., T_n. The prism on P decomposes into prisms on each T_i, all of the same height. Similarly, the pyramid on P with apex E decomposes into pyramids on each T_i with the same apex E. [1.32]
+
+**Step 10.** By 12.7, each triangular prism on T_i (with the full height of the cylinder) divides into three equal pyramids with triangular bases. The three pyramids have the same base T_i and the same height as the prism. Since the cone and cylinder have equal heights, these pyramids have the same height as the pyramid on T_i with apex E. By 12.5, pyramids of the same height with triangular bases are to one another as their bases. Since the three pyramids from the prism decomposition all have base T_i and the same height, and one of them has base T_i and the full height, each triangular prism equals three times the corresponding pyramid on T_i with the same height. [12.7, 12.5]
+
+**Step 11.** Summing over all triangles T_i, the total prism on P equals three times the total pyramid on P with apex E. That is, prism(P) = 3 * pyramid(P, E). [CN2]
+
+**Step 12.** From Step 8, prism(P) > 3*cone. Substituting from Step 11, 3*pyramid(P, E) > 3*cone, hence pyramid(P, E) > cone.
+
+**Step 13.** But pyramid(P, E) is inscribed in the cone (since polygon P is inscribed in the circular base and E is the common apex), so the cone is greater than pyramid(P, E). This means pyramid(P, E) < cone, contradicting Step 12. Therefore the cylinder is not greater than three times the cone. [CN5]
+
+**Step 14.** Case 2: Suppose the cylinder is less than three times the cone, so 3*cone > cylinder. Let S = 3*cone - cylinder > 0.
+
+**Step 15.** By the same method as in Steps 4-5, circumscribe successive regular polygons about the base circle. Starting with a circumscribed square (by erecting tangent lines at the endpoints of two perpendicular diameters), and repeatedly bisecting the arcs and drawing tangent lines, we obtain circumscribed polygons whose area approaches the circle from above. By 10.1, we can find a circumscribed polygon Q such that area(Q) - circle < S. [10.1, 3.16, 1.12]
+
+**Step 16.** Erect on polygon Q a prism of the same height as the cylinder. This prism circumscribes the cylinder. Similarly, form the pyramid with base Q and apex E; this pyramid circumscribes the cone.
+
+**Step 17.** Since area(Q) - circle < S, by the same proportional reasoning as in Step 7, prism(Q) - cylinder < S = 3*cone - cylinder, so prism(Q) < 3*cone.
+
+**Step 18.** Decomposing Q into triangles and applying 12.7 and 12.5 as in Steps 9-11, we obtain prism(Q) = 3*pyramid(Q, E). [12.7, 12.5, CN2]
+
+**Step 19.** From Step 17, 3*pyramid(Q, E) = prism(Q) < 3*cone, hence pyramid(Q, E) < cone.
+
+**Step 20.** But the cone is inscribed in pyramid(Q, E) (since the base circle is inscribed in polygon Q, every slant line from E to the circle lies within the pyramid from E to Q). Therefore pyramid(Q, E) > cone, contradicting Step 19. So the cylinder is not less than three times the cone. [CN5]
+
+**Step 21.** Since the cylinder is neither greater than nor less than three times the cone (by Cases 1 and 2), the cylinder equals exactly three times the cone. Therefore the cone is one-third of the cylinder with the same base and equal height. [CN1]
+
+**USED:** 1.12, 1.32, 10.1, 11.32, 12.5, 12.7, 3.16, 4.6, CN1, CN2, CN5, D11.12, D11.13, D11.18, D11.20, D11.21, D11.23
+**Human refs (from References field):** 10.1, 11.32, 12.2, 12.7, 4.6, 4.7
+**Jaccard:** 0.211 — AI adds ['1.12', '1.32', '12.5', '3.16', 'CN1', 'CN2', 'CN5', 'D11.12', 'D11.13', 'D11.18', 'D11.20', 'D11.21', 'D11.23']; Human adds ['12.2', '4.7']
+
+## Proposition 12.11
+**Statement:** Cones and cylinders which are of the same height are to one another as their bases.
+
+**Step 1.** Let there be two cylinders CD and EF of the same height, with circular bases B1 and B2 respectively. We must show that cylinder CD is to cylinder EF as base B1 is to base B2. We treat the cone case afterward.
+
+**Step 2.** Suppose, for the sake of contradiction, that base B1 is to base B2 not as cylinder CD is to cylinder EF, but rather as cylinder CD is to some magnitude S. First, let S be less than cylinder EF [D5.5].
+
+**Step 3.** Since S is less than cylinder EF, there is a solid difference by which cylinder EF exceeds S [CN5]. By repeatedly bisecting the circular segments between an inscribed polygon and circle B2, we can inscribe a polygon Q2 in circle B2 such that the cylindrical segments between the prism on Q2 and cylinder EF are together less than the excess of cylinder EF over S [10.1]. Thus the prism on Q2 with the same height as the cylinders is greater than S.
+
+**Step 4.** Inscribe in circle B1 a polygon Q1 similar to Q2 [6.18]. Since Q1 and Q2 are similar polygons inscribed in circles B1 and B2, by 12.1 we have Q1 : Q2 = (square on diameter of B1) : (square on diameter of B2). By 12.2, circles B1 and B2 are as the squares on their diameters, hence Q1 : Q2 = B1 : B2 [5.11].
+
+**Step 5.** Consider the prisms P1 and P2 erected on the polygonal bases Q1 and Q2 respectively, both having the same height as the cylinders. Decompose each polygon into triangles from one vertex. The prisms on the resulting triangular bases have equal heights and, by 12.7, each such triangular prism equals three pyramids of equal height with the same triangular base. By 12.5, pyramids of the same height with triangular bases are as their bases, hence the triangular prisms of the same height are as their triangular bases. Summing these proportionally by 5.24, prism P1 is to prism P2 as the total polygonal base Q1 is to Q2.
+
+**Step 6.** From Steps 4 and 5, P1 : P2 = Q1 : Q2 = B1 : B2 [5.11, CN1]. But by hypothesis B1 : B2 = CD : S, so P1 : P2 = CD : S [5.11].
+
+**Step 7.** Now prism P1 is contained in cylinder CD, so P1 is less than or equal to CD [CN5]. Since P1 : P2 = CD : S and P1 < CD (or P1 = CD), it follows that P2 < S [5.14]. But we established in Step 3 that P2 > S. This is a contradiction.
+
+**Step 8.** Now suppose S is greater than cylinder EF. Then by inverting the proportion, B2 : B1 = EF : S' where S' is less than cylinder CD [5.7.corollary, D5.13]. Applying the same argument as above with the roles of the two cylinders interchanged, we again reach a contradiction by Steps 3 through 7.
+
+**Step 9.** Since S can be neither less than nor greater than cylinder EF, we conclude S equals cylinder EF. Therefore base B1 is to base B2 as cylinder CD is to cylinder EF [D5.5].
+
+**Step 10.** Now for the cones. Let cones G and H have the same circular bases B1 and B2 respectively, and the same height as the cylinders CD and EF. By 12.10, cone G is one-third of cylinder CD, and cone H is one-third of cylinder EF.
+
+**Step 11.** Since cylinder CD is to cylinder EF as B1 is to B2 (proved above), and cone G is one-third of cylinder CD while cone H is one-third of cylinder EF, we have cone G is to cone H as cylinder CD is to cylinder EF [5.15]. Therefore cone G is to cone H as base B1 is to base B2 [5.11].
+
+**Step 12.** Hence cones and cylinders which are of the same height are to one another as their bases. Q.E.D.
+
+**USED:** 10.1, 12.1, 12.10, 12.2, 12.5, 12.7, 5.11, 5.14, 5.15, 5.24, 5.7, 6.18, CN1, CN5, D5.13, D5.5
+**Human refs (from References field):** 10.1, 12.1, 12.10, 12.2, 12.6, 5.11, 5.16
+**Jaccard:** 0.278 — AI adds ['12.5', '12.7', '5.14', '5.15', '5.24', '5.7', '6.18', 'CN1', 'CN5', 'D5.13', 'D5.5']; Human adds ['12.6', '5.16']
+
+## Proposition 12.12
+**Statement:** Similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases.
+
+**Step 1.** Let A be a cone (or cylinder) with base circle having diameter d1 and height h1, and let B be a cone (or cylinder) similar to A with base circle having diameter d2 and height h2. By D11.24, since A and B are similar, the axes and the diameters of the bases are proportional, so d1:d2 = h1:h2.
+
+**Step 2.** By 6.11, construct a third proportional e1 to d1 and d2 so that d1:d2 = d2:e1. Again by 6.11, construct a third proportional e2 to d2 and e1 so that d2:e1 = e1:e2. Then d1, d2, e1, e2 are in continued proportion: d1:d2 = d2:e1 = e1:e2. By D5.9, d1:e1 is the duplicate ratio of d1:d2, and by D5.10, d1:e2 is the triplicate ratio of d1:d2.
+
+**Step 3.** Construct a cone (or cylinder) C having the same base as B (with diameter d2) and the same height as A (namely h1). Since A and C have the same height h1, by 12.11, A:C = (circle with diameter d1):(circle with diameter d2). By 12.2, circles are to one another as the squares on their diameters, so (circle with diameter d1):(circle with diameter d2) = d1^2:d2^2. Since d1:d2 = d2:e1, we have d1^2:d2^2 = d1:e1 by D5.9. Therefore A:C = d1:e1.
+
+**Step 4.** We now show C:B = e1:e2. Since C is the cone (or cylinder) with base circle of diameter d2 and height h1, and B has the same base circle of diameter d2 but height h2, we must establish that C:B = h1:h2. Consider first the case where A and B are cones. By 12.10, each cone is one-third of the cylinder on the same base with the same height, so cone C = (1/3) of cylinder(d2, h1) and cone B = (1/3) of cylinder(d2, h2). Therefore C:B = cylinder(d2, h1):cylinder(d2, h2). It suffices to show that cylinders on the same base are as their heights.
+
+**Step 5.** We establish that cylinders on the same base are proportional to their heights by applying D5.5 directly. Let K1 = cylinder(d2, h1) and K2 = cylinder(d2, h2). Take any positive integers m and n. The cylinder of base d2 and height m*h1 can be decomposed into m cylinders each congruent to K1 (by stacking along the axis), so it equals m times K1. Similarly, the cylinder of height n*h2 equals n times K2. By 5.15, m*K1 and n*K2 are equimultiples of K1 and K2 respectively. Now m*K1 = cylinder(d2, m*h1) and n*K2 = cylinder(d2, n*h2). Since cylinders on the same base and of the same height are equal, m*K1 > n*K2 precisely when m*h1 > n*h2, and m*K1 = n*K2 precisely when m*h1 = n*h2, and m*K1 < n*K2 precisely when m*h1 < n*h2. By D5.5, K1:K2 = h1:h2.
+
+**Step 6.** Therefore C:B = h1:h2. Since d1:d2 = h1:h2 by the similarity condition (Step 1), we have C:B = d1:d2. Since d1:d2 = e1:e2 (from the continued proportion in Step 2), it follows that C:B = e1:e2.
+
+**Step 7.** We now have A:C = d1:e1 (Step 3) and C:B = e1:e2 (Step 6). The intermediate terms match: the consequent of the first ratio (e1) equals the antecedent of the second (e1). By 5.22 (ex aequali), A:B = d1:e2. Since d1:e2 is the triplicate ratio of d1:d2 (Step 2, by D5.10), we conclude A:B = triplicate ratio of d1:d2.
+
+**Step 8.** The argument applies whether A and B are both cones or both cylinders. For cones, Step 4 reduces the same-base comparison to cylinders via 12.10. For cylinders, Step 5 applies directly without the reduction. In either case, similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases. Q.E.D.
+
+**USED:** 12.10, 12.11, 12.2, 5.15, 5.22, 6.11, D11.24, D5.10, D5.5, D5.9
+**Human refs (from References field):** 10.1, 12.10, 12.8, 4.6, 5.12, 5.16, 5.22, 6.5, 6.6, D11.24, D11.9, D6.1
+**Jaccard:** 0.158 — AI adds ['12.11', '12.2', '5.15', '6.11', 'D5.10', 'D5.5', 'D5.9']; Human adds ['10.1', '12.8', '4.6', '5.12', '5.16', '6.5', '6.6', 'D11.9', 'D6.1']
+
+## Proposition 12.13
+**Statement:** If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis.
+
+**Step 1.** Let there be a cylinder with opposite planes (bases) as circles, and let its axis be AB. Let the cylinder be cut by a plane GH parallel to its opposite planes, meeting the axis at C. This produces two cylinders: one with axis AC and bases equal to the original bases, and one with axis CB and bases equal to the original bases. We must show that (cylinder with axis AC) : (cylinder with axis CB) = AC : CB.
+
+**Step 2.** Since the cutting plane GH is parallel to the base planes of the cylinder, and the axis AB is perpendicular to the base planes, the cross-section at C is a circle equal to both bases of the cylinder [D11.21, D11.23, 11.16]. Therefore all three circles -- the two original bases and the cross-section -- are equal.
+
+**Step 3.** Consequently, the cylinder with axis AC and the cylinder with axis CB both stand on bases equal to each other and equal to the original bases of the whole cylinder.
+
+**Step 4.** Take any equimultiple of axis AC: lay off from A along the axis, on the same side, m segments each equal to AC, producing a total axis-length m times AC. At each division point, the plane perpendicular to the axis cuts the cylinder in a circle equal to the base [by the same reasoning as Step 2]. This decomposes the extended cylinder into m smaller cylinders, each having a base equal to the base of the original cylinder and height equal to AC.
+
+**Step 5.** Each of these m smaller cylinders has the same base and the same height as the cylinder with axis AC. By XII.11, cylinders which are of the same height are to one another as their bases; since the bases are equal, each smaller cylinder equals the cylinder with axis AC [12.11, D5.5]. Therefore the cylinder standing on the combined axis of length m times AC equals m times the cylinder with axis AC [CN2].
+
+**Step 6.** Similarly, take any equimultiple of axis CB: lay off from C along the axis n segments each equal to CB, producing a total axis-length n times CB. By the same reasoning, the cylinder on this combined axis equals n times the cylinder with axis CB [12.11, CN2].
+
+**Step 7.** Now suppose m times AC is greater than n times CB. Then the axis of length m times AC exceeds the axis of length n times CB. The cylinder on m times AC has the same base as the cylinder on n times CB (both have bases equal to the original base), and its height (m times AC) is greater. A cylinder with the same base but greater height is greater than one with lesser height, since it contains the other as a part [CN5, 12.11]. Therefore m times (cylinder AC) is greater than n times (cylinder CB).
+
+**Step 8.** By the same reasoning, if m times AC equals n times CB, then the cylinders on these axes have equal bases and equal heights, hence m times (cylinder AC) equals n times (cylinder CB) [12.11].
+
+**Step 9.** And if m times AC is less than n times CB, then by the same argument, m times (cylinder AC) is less than n times (cylinder CB).
+
+**Step 10.** Since for arbitrary positive integers m and n, the equimultiple m times (cylinder AC) exceeds, equals, or falls short of the equimultiple n times (cylinder CB) precisely when m times AC exceeds, equals, or falls short of n times CB, respectively, it follows by the definition of proportion [D5.5] that:
+
+(cylinder with axis AC) : (cylinder with axis CB) = AC : CB.
+
+**Step 11.** That is, as the cylinder is to the cylinder, so is the axis to the axis, which is what was to be proved.
+
+**USED:** 11.16, 12.11, CN2, CN5, D11.21, D11.23, D5.5
+**Human refs (from References field):** 12.11, D5.5
+**Jaccard:** 0.286 — AI adds ['11.16', 'CN2', 'CN5', 'D11.21', 'D11.23']
+
+## Proposition 12.14
+**Statement:** Cones and cylinders which are on equal bases are to one another as their heights.
+
+**Step 1.** Let there be any two cylinders, the first with base circle S and height H1, and the second with base circle S' and height H2, where S is equal to S'. We must show that the first cylinder is to the second cylinder as H1 is to H2.
+
+**Step 2.** Without loss of generality, suppose H1 is less than or equal to H2. Cut the second cylinder by a plane parallel to its base at a distance H1 from the base. This produces a cylinder R that shares the base S' with the second cylinder and has height equal to H1 [by the definition of cylinder, D11.21, and the cutting plane being parallel to the base].
+
+**Step 3.** By 12.13, since the second cylinder is cut by a plane parallel to its opposite planes, the second cylinder is to R as the full axis H2 is to the partial axis H1. That is, (second cylinder) : R = H2 : H1.
+
+**Step 4.** Now consider the first cylinder (base S, height H1) and R (base S', height H1). These are two cylinders of the same height H1. By 12.11, cylinders of the same height are to one another as their bases. Since S equals S', the first cylinder and R have equal bases, so their ratio is the ratio of equal to equal. Therefore the first cylinder equals R [by D5.5 and CN1, since equal bases yield equal ratios, i.e., ratio 1:1].
+
+**Step 5.** Since the first cylinder equals R, we may substitute the first cylinder for R in the proportion from Step 3. Thus (second cylinder) : (first cylinder) = H2 : H1 [by 5.7, since equal magnitudes have the same ratio to the same magnitude].
+
+**Step 6.** Taking the inverse ratio [by 5.7, invertendo], (first cylinder) : (second cylinder) = H1 : H2. This is what was required for cylinders.
+
+**Step 7.** Now let there be two cones, the first with base circle S and height H1, and the second with base circle S' and height H2, where S equals S'. By 12.10, each cone is one-third of the cylinder that has the same base and equal height. Thus the first cone is one-third of the cylinder on S with height H1, and the second cone is one-third of the cylinder on S' with height H2.
+
+**Step 8.** From Steps 1 through 6, the cylinder on S with height H1 is to the cylinder on S' with height H2 as H1 is to H2.
+
+**Step 9.** Since the first cone is one-third of the first cylinder and the second cone is one-third of the second cylinder, by 5.15, equimultiples (here, equal submultiples — the thirds) have the same ratio to one another as the magnitudes themselves. Therefore (first cone) : (second cone) = (first cylinder) : (second cylinder) = H1 : H2.
+
+**Step 10.** Therefore cones and cylinders which are on equal bases are to one another as their heights. Q.E.D.
+
+**USED:** 12.10, 12.11, 12.13, 5.15, 5.7, CN1, D11.21, D5.5
+**Human refs (from References field):** 12.10, 12.11, 12.13
+**Jaccard:** 0.375 — AI adds ['5.15', '5.7', 'CN1', 'D11.21', 'D5.5']
+
+## Proposition 12.15
+**Statement:** In equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights are equal.
+
+**Step 1.** Let there be equal cones or cylinders, with the first having base B1 and height H1, and the second having base B2 and height H2. We are to prove that B1:B2 :: H2:H1. Conversely, given cones or cylinders in which B1:B2 :: H2:H1, we are to prove them equal.
+
+**Step 2.** [Forward direction] Construct a third cone or cylinder C3 having base B2 and height H1 (of the same kind as the given solids, i.e., if the given solids are cones, C3 is a cone; if cylinders, C3 is a cylinder).
+
+**Step 3.** Since the first cone or cylinder C1 (base B1, height H1) and C3 (base B2, height H1) have the same height H1, by 12.11, C1:C3 :: B1:B2.
+
+**Step 4.** Since the second cone or cylinder C2 (base B2, height H2) and C3 (base B2, height H1) are on equal bases (both having base B2), by 12.14, C2:C3 :: H2:H1.
+
+**Step 5.** Since C1 = C2 (given), C1 has the same ratio to C3 that C2 has to C3, by 5.7.
+
+**Step 6.** Therefore C1:C3 :: C2:C3. But C1:C3 :: B1:B2 (Step 3), and C2:C3 :: H2:H1 (Step 4). By 5.11, since C1:C3 equals both B1:B2 and H2:H1, we conclude B1:B2 :: H2:H1. This completes the forward direction.
+
+**Step 7.** [Converse] Now suppose that in two cones or cylinders C1 (base B1, height H1) and C2 (base B2, height H2), the bases are reciprocally proportional to the heights, that is, B1:B2 :: H2:H1. We are to prove C1 = C2.
+
+**Step 8.** Using the same construction, let C3 be a cone or cylinder with base B2 and height H1.
+
+**Step 9.** By 12.11 (same height H1), C1:C3 :: B1:B2.
+
+**Step 10.** By hypothesis, B1:B2 :: H2:H1.
+
+**Step 11.** By 5.11, C1:C3 :: H2:H1.
+
+**Step 12.** By 12.14 (same base B2), C2:C3 :: H2:H1.
+
+**Step 13.** By 5.11, since C1:C3 :: H2:H1 (Step 11) and C2:C3 :: H2:H1 (Step 12), we have C1:C3 :: C2:C3.
+
+**Step 14.** Therefore C1 = C2, by 5.9, since magnitudes that have the same ratio to the same magnitude are equal.
+
+**Step 15.** Therefore, in equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights are equal. Q.E.D.
+
+**USED:** 12.11, 12.14, 5.11, 5.7, 5.9
+**Human refs (from References field):** 12.11, 12.13, 5.11, 5.7, 5.9
+**Jaccard:** 0.667 — AI adds ['12.14']; Human adds ['12.13']
+
+## Proposition 12.16
+**Statement:** Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.
+
+**Step 1.** Let ABCD be the greater circle and EFGH the lesser circle, both having the same centre K. We are required to inscribe in circle ABCD an equilateral polygon with an even number of sides that does not touch circle EFGH.
+
+**Step 2.** Draw a diameter AC of circle ABCD through the centre K [D1.17]. Let this diameter cut circle EFGH at points E and F, so that E lies on the same side as A and F on the same side as C.
+
+**Step 3.** Since K is the centre of both circles, KE is a radius of the lesser circle. The distance from K to any chord of the greater circle inscribed in the polygon must exceed KE for the polygon not to touch the lesser circle. Our task reduces to constructing an inscribed equilateral polygon whose sides are all at a distance from K greater than KE.
+
+**Step 4.** Draw the diameter BD of the greater circle perpendicular to AC [3.1, 1.11]. Then ABCD is a square inscribed in the greater circle, with vertices A, B, C, D on the circle equally spaced. Each side of this square subtends a quarter of the circumference.
+
+**Step 5.** Consider side AB of this inscribed square. Drop a perpendicular from K to AB, meeting AB at its midpoint M [3.3]. The distance KM is the perpendicular distance from the centre to the side AB.
+
+**Step 6.** If KM is greater than KE (the radius of the lesser circle), then the square ABCD is an equilateral polygon with an even number of sides (4) inscribed in the greater circle that does not touch the lesser circle, and we are done.
+
+**Step 7.** If KM is not greater than KE, then we proceed by successive bisection. Bisect arc AB at point N [3.30]. Join AN and NB [P1]. The chord AN subtends a smaller arc than AB, and the perpendicular from K to AN is greater than KM, since a chord subtending a smaller arc lies farther from the centre [3.15].
+
+**Step 8.** Now consider the magnitude by which KA (the radius of the greater circle) exceeds KE (the radius of the lesser circle). This excess KA - KE is a definite positive magnitude. At each bisection of an arc, the perpendicular distance from K to the resulting chord increases. More precisely, we compare KA - KM (the deficit of the perpendicular distance from the radius) at each stage.
+
+**Step 9.** When the arc is bisected, the new perpendicular distance from K to the half-chord is greater than KM. In fact, the segment from M to A along the radius (that is, KA - KM) is more than halved at each bisection. To see this: let N be the midpoint of arc AB, and let KN meet chord AB at point P. Then KN = KA (both radii) [D1.15]. The perpendicular from K to chord AN has length greater than KP. Since P is the midpoint of the segment from M to A along the chord direction, and the perpendicular to AN exceeds KP, the deficit from KA is reduced by more than half at each step.
+
+**Step 10.** By 10.1 (if from the greater of two unequal magnitudes there be subtracted more than its half, and from the remainder more than its half, and this is done continually, there will eventually remain a magnitude less than the lesser), after a finite number of bisections of the arc, the deficit KA minus the perpendicular distance from K to the resulting chord becomes less than KA - KE. That is, the perpendicular distance from K to the chord exceeds KE.
+
+**Step 11.** Let this bisection process terminate when we have bisected enough times so that the perpendicular from K to each chord exceeds KE. Without loss of generality, suppose that after bisecting arc AB we arrive at arc AN (possibly after several bisections) such that the perpendicular from K to chord AN is greater than KE.
+
+**Step 12.** Starting from arc AN, replicate this arc around the entire circle. Since arc AB was one quarter of the circle and we bisected it a whole number of times, the arc AN measures (1/4) * (1/2^n) of the full circumference for some positive integer n. Therefore the full circle is divided into 4 * 2^n equal arcs, each equal to arc AN. The number of sides is 4 * 2^n, which is an even number [D7.6].
+
+**Step 13.** Join the successive division points around the circle to form the inscribed polygon [P1]. Since all arcs are equal, all chords are equal [3.29], so the polygon is equilateral.
+
+**Step 14.** Since each side of this polygon subtends an arc equal to arc AN, the perpendicular distance from K to each side is the same as the perpendicular distance from K to AN [3.14], which is greater than KE.
+
+**Step 15.** Since the perpendicular distance from K to every side of the polygon exceeds KE, and KE is the radius of the lesser circle, no side of the polygon meets or crosses the lesser circle. For if any side touched the lesser circle, the perpendicular from the centre to that side would equal or be less than KE [3.16, 3.18], contradicting the established inequality.
+
+**Step 16.** Therefore, in the greater circle ABCD we have inscribed an equilateral polygon with an even number of sides (namely 4 * 2^n sides) which does not touch the lesser circle EFGH. This is what was required to construct. Q.E.F.
+
+**USED:** 1.11, 10.1, 3.1, 3.14, 3.15, 3.16, 3.18, 3.29, 3.3, 3.30, D1.15, D1.17, D7.6, P1
+**Human refs (from References field):** 1.4, 10.1, 3.16, 3.3
+**Jaccard:** 0.200 — AI adds ['1.11', '3.1', '3.14', '3.15', '3.18', '3.29', '3.30', 'D1.15', 'D1.17', 'D7.6', 'P1']; Human adds ['1.4']
+
+## Proposition 12.17
+**Statement:** Given two spheres about the same centre, to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface.
+
+**Step 1.** Let there be two spheres about the same centre O, with the lesser sphere inside the greater. Let d be a diameter of the greater sphere. The plane through d cuts both spheres in great circles; let the great circle of the greater sphere be ABCD and the great circle of the lesser sphere be EFGH, both having centre O and diameter d lying along AC.
+
+**Step 2.** Draw the diameter BD of circle ABCD at right angles to AC, so that AC and BD are two diameters perpendicular to one another [1.11]. These two diameters divide the great circle into four quadrants.
+
+**Step 3.** Since circle EFGH lies inside circle ABCD and both are about centre O, by Proposition 12.16, we can inscribe in circle ABCD an equilateral polygon with an even number of sides that does not touch circle EFGH [12.16]. Let this polygon have its sides in the semicircle on one side of AC; label the vertices of the polygon on the semicircle BAD as B, K, L, M, A (and symmetrically on the other semicircle as B, N, P, Q, A on the semicircle BCD, so that the polygon is symmetric about diameter AC).
+
+**Step 4.** Since the polygon does not touch the lesser circle EFGH, the perpendicular from O to any side of the polygon is greater than the radius of the lesser sphere. In particular, let OS be the perpendicular drawn from centre O to side KL (or any side of the polygon). Then OS is greater than the radius OE of the lesser sphere [12.16, by construction].
+
+**Step 5.** Now consider the entire sphere. Let AC be taken as an axis. Through AC, pass planes that divide the full angle around AC into equal parts. Specifically, pass planes through AC that create angles at AC equal to the angles subtended at the centre by the sides of the inscribed polygon. Each such plane cuts the greater sphere in a great circle passing through A and C.
+
+**Step 6.** In each of these great circles through AC, inscribe the same equilateral polygon with the same number of sides as was inscribed in circle ABCD, positioned so that vertices fall at A and C, and the remaining vertices lie on the great circle [4.1, using the equal side lengths fitted into equal circles].
+
+**Step 7.** Consider the solid figure formed by connecting corresponding vertices of adjacent polygons in adjacent great-circle planes. Between each pair of adjacent great-circle planes, the corresponding polygon vertices are joined by straight lines, forming quadrilateral faces (and triangular faces near the poles A and C) [P1].
+
+**Step 8.** More precisely, near each pole (say A), the vertices adjacent to A in each great-circle polygon form a regular polygon in a plane perpendicular to AC. Connect consecutive such vertices to form the base of a pyramid with apex A [P1, 1.4]. This creates triangular faces at each pole.
+
+**Step 9.** Between consecutive rings of vertices (say the ring at the level of K-type vertices and the ring at the level of L-type vertices), connect corresponding and adjacent vertices to form quadrilateral faces. Each such quadrilateral can be divided into two triangles by a diagonal [P1].
+
+**Step 10.** The resulting solid figure is a polyhedron inscribed in the greater sphere, since all its vertices lie on the surface of the greater sphere [D11.14, as all vertices are on great circles of the sphere].
+
+**Step 11.** It remains to show that no face of this polyhedron touches the lesser sphere. Consider any face of the polyhedron. This face is a triangle or quadrilateral whose vertices lie on the greater sphere.
+
+**Step 12.** Each face of the polyhedron lies in a plane. Consider the perpendicular distance from centre O to the plane of any face. We must show this distance is greater than the radius of the lesser sphere.
+
+**Step 13.** For faces that lie within one of the great-circle planes through AC: these faces are sides of the inscribed polygon, and by Step 4, the perpendicular from O to each such side exceeds the radius of the lesser sphere.
+
+**Step 14.** For faces that connect vertices between adjacent great-circle planes: consider such a face, say triangle with vertices K, K', L where K and K' are corresponding vertices in adjacent great-circle planes at the same height, and L is a vertex in one of these planes at the next level. The plane of this face intersects the sphere, and the perpendicular from O to this plane is at least as great as the perpendicular from O to the line KL (which is a side of the inscribed polygon) [11.38, since the perpendicular to a plane is less than or equal to oblique lines, but here the face plane is no closer to O than the great-circle polygon sides].
+
+**Step 15.** More precisely, the perpendicular from O to the plane of any face of the polyhedron is the shortest distance from O to that plane [11.11]. The plane of any face cuts the sphere in a circle, and the face is a chord figure of that circle. Since every edge of the polyhedron is a chord subtending at most the same angle as a side of the original inscribed polygon, and since the perpendicular from O to any such face plane cannot be less than the perpendicular from O to a side of the original polygon (because the face planes are further constrained by the three-dimensional geometry), the perpendicular distance from O to each face exceeds OE.
+
+**Step 16.** To see this rigorously: take any face of the polyhedron and the plane containing it. This plane intersects the greater sphere in a circle. The face is inscribed in this circle. The perpendicular from O to this plane, call it OT, satisfies OT^2 + r^2 = R^2 where R is the radius of the greater sphere and r is the radius of the circle of intersection [1.47]. The sides of the face subtend the same or smaller angles than sides of the polygon in the great circle. Since the polygon in the great circle does not touch the lesser sphere, and since any plane section through the polyhedron's face is at distance OT from O where OT >= OS > OE (the radius of the lesser sphere), the face does not touch the lesser sphere.
+
+**Step 17.** Since the perpendicular from O to the plane of each face of the polyhedron exceeds the radius OE of the lesser sphere, no face of the polyhedron touches the surface of the lesser sphere [D3.4, as the perpendicular distance exceeds the radius].
+
+**Step 18.** Therefore, we have inscribed in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface, which is what was required to be done. Q.E.F.
+
+**USED:** 1.11, 1.4, 1.47, 11.11, 11.38, 12.16, 4.1, D11.14, D3.4, P1
+**Human refs (from References field):** 1.26, 1.33, 1.47, 11.11, 11.18, 11.2, 11.6, 11.7, 11.9, 3.27, 3.31, 6.2, 6.8, D11.14, D11.3, D11.4
+**Jaccard:** 0.130 — AI adds ['1.11', '1.4', '11.38', '12.16', '4.1', 'D3.4', 'P1']; Human adds ['1.26', '1.33', '11.18', '11.2', '11.6', '11.7', '11.9', '3.27', '3.31', '6.2', '6.8', 'D11.3', 'D11.4']
+
+## Proposition 12.18
+**Statement:** Spheres are to one another in the triplicate ratio of their respective diameters.
+
+**Step 1.** Let there be two spheres with centres A and B, and let their diameters be CD and EF respectively. We must prove that sphere CD is to sphere EF in the triplicate ratio of CD to EF.
+
+**Step 2.** Suppose, for the sake of contradiction, that sphere CD is not to sphere EF in the triplicate ratio of CD to EF. Then sphere CD has to some magnitude either less than or greater than sphere EF the triplicate ratio of CD to EF. First, let it have that ratio to a magnitude G less than sphere EF.
+
+**Step 3.** Let sphere EF be conceived as having centre B. Then there exists a sphere concentric with sphere EF and having a smaller radius, such that G corresponds to this inner region. Since G is less than sphere EF, we can find a sphere concentric with sphere EF whose volume equals or bounds G. Construct two concentric spheres about centre B, with the outer sphere being sphere EF, and consider the difference between sphere EF and the magnitude G.
+
+**Step 4.** By Proposition 12.17, we can inscribe in sphere EF a polyhedral solid that does not touch a lesser sphere concentric with it. Specifically, choose the inner sphere so that sphere EF exceeds the inscribed polyhedron by less than sphere EF exceeds G. This means the inscribed polyhedral solid in sphere EF is greater than G.
+
+**Step 5.** Now inscribe in sphere CD a polyhedral solid similar to the polyhedral solid inscribed in sphere EF. By the construction in 12.17, this is achieved by using similar polygonal cross-sections.
+
+**Step 6.** Similar polyhedral solids inscribed in spheres are to one another in the triplicate ratio of the diameters of the spheres in which they are inscribed. To see this: the polyhedral solids are bounded by similar pyramids equal in multitude, having their vertices at the centres of the respective spheres. Each pair of corresponding pyramids has a triangular base (after decomposition of the polygonal faces into triangles). By Proposition 12.8, similar pyramids with triangular bases are in the triplicate ratio of their corresponding sides. Since the corresponding sides (the edges from centre to surface) are proportional to the diameters of the spheres, and all corresponding pyramids share this same ratio, the total polyhedral solids, being sums of the same number of similarly-proportioned pyramids, are in the triplicate ratio of the diameters, using Proposition 5.12 (ratios of equimultiples).
+
+**Step 7.** Therefore the polyhedral solid in sphere CD is to the polyhedral solid in sphere EF in the triplicate ratio of CD to EF. But by our supposition, sphere CD is to G in the triplicate ratio of CD to EF. Therefore, as the polyhedral solid in CD is to the polyhedral solid in EF, so is sphere CD to G, by Proposition 5.11 (things having the same ratio to the same are equal, applied via proportion).
+
+**Step 8.** By alternation (Proposition 5.16), as sphere CD is to the polyhedral solid inscribed in it, so is G to the polyhedral solid inscribed in sphere EF. But sphere CD is greater than the polyhedral solid inscribed in it, since the polyhedron is contained within the sphere (by CN5, the whole is greater than the part). Therefore G is greater than the polyhedral solid inscribed in sphere EF, by Proposition 5.14.
+
+**Step 9.** But in Step 4 we established that the polyhedral solid inscribed in sphere EF is greater than G. This is a contradiction. Therefore the assumption that sphere CD is to a magnitude G less than sphere EF in the triplicate ratio of CD to EF is impossible.
+
+**Step 10.** Now suppose sphere CD is to a magnitude G greater than sphere EF in the triplicate ratio of CD to EF. Then by inversion, G is to sphere CD in the triplicate ratio of EF to CD. But since G is greater than sphere EF, and G has to sphere CD the triplicate ratio of EF to CD, by a parallel argument: sphere EF would be to a magnitude less than sphere CD in the triplicate ratio of EF to CD. But this has been shown in Steps 2-9 to be impossible. Therefore this case also leads to a contradiction.
+
+**Step 11.** Since sphere CD can be in the triplicate ratio of CD to EF neither to a magnitude less than sphere EF nor to one greater, it must be that sphere CD is to sphere EF itself in the triplicate ratio of CD to EF.
+
+**Step 12.** Therefore spheres are to one another in the triplicate ratio of their respective diameters. Q.E.D.
+
+**USED:** 12.17, 12.8, 5.11, 5.12, 5.14, 5.16, CN5, D11.14, D11.17, D5.10
+**Human refs (from References field):** 12.17, 12.2, 5.16
+**Jaccard:** 0.182 — AI adds ['12.8', '5.11', '5.12', '5.14', 'CN5', 'D11.14', 'D11.17', 'D5.10']; Human adds ['12.2']

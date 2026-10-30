@@ -1,0 +1,24 @@
+{
+  "proposition": "1.7",
+  "book": 1,
+  "statement": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+  "heath_proof": "For, if possible, given two straight lines AC, CB constructed on the straight line AB and meeting at the point C, let two other straight linesAD, DB be constructed on the same straight line AB, on the same side of it, meeting in another point D and equal to the former two respectively, namely each to that which has the same extremity with it, so that CA isequal to DA which has the same extremity A with it, and CB to DB which has the same extremity B with it; and let CD be joined. Then, since AC is equal to AD, the angle ACD is also equal to the angle ADC; [I. 5]therefore the angle ADC is greater than the angle DCB; therefore the angle CDB is much greater than the angle DCB. Again, since CB is equal to DB, the angle CDB is also equal to the angle DCB. But it was also proved much greater than it: which is impossible.",
+  "ai_proof_text": "1.7\n**Statement:** Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.\n\n**Step 1.** Let AB be the given straight line. Suppose, contrary to the assertion, that distinct points C and D lie on the same side of AB and satisfy AC = AD and BC = BD. Join CD. [P1]\n\n**Step 2.** The points A, C, D cannot be collinear: because C and D are on the same side of AB, they would lie on the same ray from A, making one of AC and AD a proper part of the other, contrary to their equality. Similarly, B, C, D cannot be collinear. Thus neither vertex lies on a side of the triangle formed by AB and the other vertex. [CN5]\n\n**Step 3.** The direct route is to apply 1.5 to the given equal-side pairs. In triangles ACD and BCD respectively, it gives\n∠ACD = ∠CDA and ∠BCD = ∠CDB.\nWe consider separately the exterior and nested placements of the two vertices; the under-base clause of the same theorem will handle the nested placement. [1.5]\n\n**Step 4.** First suppose neither vertex lies inside the triangle formed by AB and the other vertex. Interchanging C and D if necessary, the four points form a convex quadrilateral in boundary order A, B, D, C. Consequently, ray CB lies strictly inside ∠ACD, and ray DA lies strictly inside ∠CDB. The whole angles are greater than their respective parts, so\n∠ACD > ∠BCD and ∠CDB > ∠CDA.\nUsing Step 3, we obtain\n∠CDB > ∠CDA = ∠ACD > ∠BCD,\ncontrary to ∠CDB = ∠BCD. This placement is therefore impossible. [CN5; 1.5]\n\n**Step 5.** In the remaining noncollinear placement, one vertex lies inside the triangle formed by AB and the other vertex. Interchanging their names if necessary, let D lie inside triangle ABC. Produce AC beyond C to E, and AD beyond D to F. Since AC = AD, the equality of the angles under the base of triangle ACD gives\n∠ECD = ∠CDF. [P2; 1.5]\n\n**Step 6.** Because D is inside triangle ABC, ray CB lies strictly inside ∠ECD, while ray DF lies strictly inside ∠CDB. Hence\n∠ECD > ∠BCD and ∠CDB > ∠CDF.\nTogether with Step 5, these yield\n∠CDB > ∠CDF = ∠ECD > ∠BCD.\nBut Step 3 gives ∠CDB = ∠BCD, again a contradiction. Thus the nested placement is also impossible. [CN5; 1.5]\n\n**Step 7.** The collinear boundary placements were excluded in Step 2, and the exterior and nested placements were excluded in Steps 4–6. These exhaust the placements of two distinct vertices on the same side of AB. Therefore no second point D on that side can satisfy both AC = AD and BC = BD, which proves the proposition. [Steps 2–6]\n\n**USED:** 1.5, CN5, P1, P2\n**Human refs (from References field):** 1.5\n**Jaccard:** 0.250 — AI adds ['CN5', 'P1', 'P2']",
+  "ai_used": [
+    "1.5",
+    "CN5",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.5"
+  ],
+  "ai_only": [
+    "CN5",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let AB be the given straight line. Suppose, contrary to the assertion, that distinct points C and D lie on the same side of AB and satisfy AC = AD and BC = BD. Join CD. [P1]  **Step 2.** T"
+}

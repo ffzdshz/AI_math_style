@@ -1,0 +1,13 @@
+{
+  "proposition": "1.18",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: construct AD equal to AB on AC (I.3), join BD, establish that triangle ABD is isosceles so angle ABD equals angle ADB, apply the exterior angle theorem (I.16) to show angle ADB is greater than angle DCB, conclude angle ABD is greater than angle ACB, and finally conclude angle ABC is greater than angle ACB. The AI proof adds explicit citations for steps Heath leaves implicit: I.5 for the isosceles triangle base angles, CN5 for the whole-greater-than-part inference, and P1 for joining BD. Since heath_only is empty and ai_only contains only a postulate (P1), a common notion (CN5), and a foundational theorem (I.5) that make explicit what Heath assumes, this is a citation-depth difference with identical backbone, yielding G.",
+  "jaccard": 0.4,
+  "ai_citations": "1.16|1.3|1.5|CN5|P1",
+  "heath_citations": "1.16|1.3",
+  "ai_only": "1.5|CN5|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

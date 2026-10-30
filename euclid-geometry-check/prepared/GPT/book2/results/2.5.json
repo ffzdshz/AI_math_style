@@ -1,0 +1,36 @@
+{
+  "proposition": "2.5",
+  "run": "GPT",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points lie in order A, C, D, B on line AB, with AC = CB (C is the midpoint)",
+      "type": "collinear ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CB = CD + DB, segment decomposition from ordering C, D, B",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "CB = CD + DB used again to distribute R(CB, CD) via Prop 2.1",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AD = AC + CD, segment decomposition from ordering A, C, D",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AC = CB substituted into R(AD, DB) decomposition",
+      "type": "equality substitution"
+    }
+  ],
+  "configuration_map": "All points are collinear on line AB with ordering A--C--D--B. C is the midpoint of AB (AC = CB). D lies between C and B. Segments decompose as: AB = AC + CD + DB, CB = CD + DB, AD = AC + CD. No 2D or 3D geometric constructions are made; the entire proof operates on segment relationships along a single line, using Proposition 2.1 (rectangle distribution / distributive property) to manipulate rectangle and square areas algebraically.",
+  "pass_reason": "The proof is purely algebraic, using Proposition 2.1 (distributive property of rectangles) applied to segments on a single line. The only spatial claims concern collinear point ordering (A, C, D, B) and segment addition, all of which are mutually consistent. No angle decompositions, no interior/exterior claims, no 2D configuration issues arise."
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "12.4",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pyramid ABCD has triangular base ABC and vertex D; pyramid EFGH has triangular base EFG and vertex H; both pyramids have the same height h.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "K, L, M are midpoints of AB, AC, AD respectively; N, O, P are midpoints of BC, BD, CD respectively. Prisms have triangular cross-sections determined by these midpoints.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "The two prisms from ABCD each have the same height as the two prisms from EFGH because the subdivision bisects the height uniformly for both pyramids.",
+      "type": "solid_geometry_height"
+    },
+    {
+      "step": "Step 5",
+      "claim": "A prism on a triangular base equals half the parallelepiped on the same base and height; prisms of equal height are to one another as their bases.",
+      "type": "solid_geometry_volume"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The base of the prism from ABCD is the medial triangle of ABC (formed by joining midpoints of sides), which has area one-fourth that of triangle ABC. Similarly for EFGH.",
+      "type": "area_relationship"
+    },
+    {
+      "step": "Step 8",
+      "claim": "The two smaller pyramids from each original pyramid are equal, similar to each other and to the original. Corresponding sub-pyramids from ABCD and EFGH have the same height because the subdivision halves the height uniformly.",
+      "type": "solid_geometry_similarity"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Bases of smaller pyramids from ABCD are similar to ABC and have area one-fourth of the parent triangle. The same ratio ABC:EFG is maintained at every subdivision level.",
+      "type": "area_relationship"
+    }
+  ],
+  "configuration_map": "Pyramid ABCD: base triangle ABC in a plane, vertex D above at height h. Midpoints K(AB), L(AC), M(AD), N(BC), O(BD), P(CD). The 12.3 construction produces two equal prisms (one with medial triangle KLN as base, area = (1/4)ABC; one with parallelogram base, equal in volume) and two smaller similar pyramids each with linear scale 1/2, height h/2, and base area (1/4)ABC. Pyramid EFGH: analogous construction with same height h, producing corresponding prisms and sub-pyramids with matching heights at every level. At each recursive subdivision level, all corresponding sub-pyramids from ABCD and EFGH have equal heights (h/2^n at level n), and all prism base ratios reduce to ABC:EFG.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof is a proportional argument about prisms from recursive pyramid subdivision. The spatial claims (equal heights preserved by uniform halving, midpoint constructions producing medial triangles with 1/4 area, similar sub-pyramids maintaining the base ratio) are all compatible. There are no angle decompositions, no interior/exterior point conflicts, and no ray ordering issues. Each height, area, and similarity claim follows correctly from the established 3D configuration."
+}

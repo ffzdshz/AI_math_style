@@ -1,0 +1,31 @@
+{
+  "proposition": "2.8",
+  "run": "RunA",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on line segment AB, lying between A and B",
+      "type": "point_position_on_line"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is produced on line AB beyond B, with BD = CB, establishing collinear order A-C-B-D",
+      "type": "point_position_on_line"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line AD is cut at B, requiring B between A and D (consistent with A-C-B-D order)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Line AB is cut at C, requiring C between A and B (consistent with A-C-B-D order)",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Four collinear points in order A-C-B-D on a single straight line. C is between A and B (given). D is beyond B with BD = CB (constructed). All spatial references in the proof concern only the relative positions of these four points on the line. No off-line points, no angles, no triangles, no circles, no interior/exterior claims.",
+  "pass_reason": "All spatial claims concern the collinear ordering of four points A-C-B-D on a single line. The ordering is established consistently in Steps 1-2 and used consistently in Steps 3 and 5. The applications of Propositions 2.4 (to AD cut at B) and 2.7 (to AB cut at C) both require betweenness conditions that are satisfied by the A-C-B-D arrangement. The remainder of the proof is pure algebraic substitution with no additional geometric claims. No angle decompositions, ray orderings, or interior/exterior arguments appear."
+}

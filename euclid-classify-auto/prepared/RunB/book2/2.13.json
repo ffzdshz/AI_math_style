@@ -1,0 +1,36 @@
+{
+  "proposition": "2.13",
+  "book": 2,
+  "statement": "In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.",
+  "heath_proof": "Let ABC be an acute-angled triangle having the angle at B acute, and let AD be drawn from the point A perpendicular to BC;  I say that the square on AC is less than the squares on CB, BA by twice the rectangle contained by CB, BD. For, since the straight line CB has been cut at random at D, the squares on CB, BD are equal to twice the rectangle contained by CB, BD and the square on DC. [II. 7] Let the square on DA be added to each; therefore the squares on CB, BD, DA are equal to twice the rectangle contained by CB, BD and the squares on AD, DC. But the square on AB is equal to the squares on BD, DA, for the angle at D is right; [I. 47] and the square on AC is equal to the squares on AD, DC; therefore the squares on CB, BA are equal to the square on AC and twice the rectangle CB, BD,  so that the square on AC alone is less than the squares on CB, BA by twice the rectangle contained by CB, BD.",
+  "ai_proof_text": "2.13\n**Statement:** In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.\n\n**Step 1.** Let ABC be an acute-angled triangle, with all three angles acute [D1.21]. Let the angle at C be the acute angle in question, and let BC be the side about the acute angle on which the perpendicular will fall. We wish to show that the square on AB (the side subtending angle C) is less than the squares on BC and AC together by twice the rectangle contained by BC and the straight line cut off within by the perpendicular towards the acute angle.\n\n**Step 2.** From A, draw AD perpendicular to BC [1.12], so that the angle ADB is right [D1.10]. Since the triangle ABC is acute-angled, angle ABC is acute and angle ACB is acute. The foot D of the perpendicular from A falls between B and C on the segment BC. For if D fell on B, angle ABC would be right, and if D fell outside segment BC beyond B, angle ABC would be obtuse, both contradicting the hypothesis that triangle ABC is acute-angled [D1.10, D1.11, D1.12]. Thus D lies between B and C, and BD is the straight line cut off within by the perpendicular towards the acute angle at B.\n\n**Step 3.** Since BC is a straight line cut at the point D, by Proposition 2.7 the square on BC together with the square on CD is equal to twice the rectangle contained by BC and CD together with the square on BD. That is: sq(BC) + sq(CD) = 2*rect(BC, CD) + sq(BD) [2.7].\n\n**Step 4.** In triangle ADC, the angle at D is right. Therefore by Proposition 1.47, the square on AC is equal to the squares on AD and DC: sq(AC) = sq(AD) + sq(DC) [1.47].\n\n**Step 5.** Adding the square on BC to both sides: sq(AC) + sq(BC) = sq(AD) + sq(DC) + sq(BC) [CN2].\n\n**Step 6.** But by Step 3 (from 2.7), sq(BC) + sq(CD) = 2*rect(BC, CD) + sq(BD). Substituting into Step 5: sq(AC) + sq(BC) = sq(AD) + 2*rect(BC, CD) + sq(BD) [CN1].\n\n**Step 7.** In triangle ADB, the angle at D is right. Therefore by Proposition 1.47, the square on AB is equal to the squares on AD and BD: sq(AB) = sq(AD) + sq(BD) [1.47].\n\n**Step 8.** Substituting into Step 6, since sq(AD) + sq(BD) = sq(AB): sq(AC) + sq(BC) = sq(AB) + 2*rect(BC, CD) [CN1].\n\n**Step 9.** Therefore the square on AB is less than the squares on AC and BC together by twice the rectangle contained by BC and CD, where CD is the straight line cut off within by the perpendicular towards the acute angle at C [CN3].\n\n**Step 10.** This is precisely what was to be proved: in the acute-angled triangle ABC, the square on the side AB subtending the acute angle at C is less than the squares on the sides BC and AC containing that angle by twice the rectangle contained by BC (the side on which the perpendicular falls) and CD (the straight line cut off within by the perpendicular towards the acute angle). Q.E.D.\n\n**USED:** 1.12, 1.47, 2.7, CN1, CN2, CN3, D1.10, D1.11, D1.12, D1.21\n**Human refs (from References field):** 1.47, 2.7\n**Jaccard:** 0.200 — AI adds ['1.12', 'CN1', 'CN2', 'CN3', 'D1.10', 'D1.11', 'D1.12', 'D1.21']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.10",
+    "D1.11",
+    "D1.12",
+    "D1.21"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.7"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.10",
+    "D1.11",
+    "D1.12",
+    "D1.21"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let ABC be an acute-angled triangle, with all three angles acute [D1.21]. Let the angle at C be the acute angle in question, and let BC be the side about the acute angle on which the perpe"
+}

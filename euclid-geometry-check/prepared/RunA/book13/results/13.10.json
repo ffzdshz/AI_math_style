@@ -1,0 +1,51 @@
+{
+  "proposition": "13.10",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pentagon ABCDE inscribed in circle with center O, radius r; h = r (hexagon side equals radius)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Five sides of pentagon cut circumference into five equal arcs, each 1/5 of whole circumference",
+      "type": "arc_division"
+    },
+    {
+      "step": "Step 3",
+      "claim": "N is midpoint of minor arc BC; arc BN = arc NC = 1/10 of circumference; BN = d (decagon side)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "M is foot of perpendicular from O to BC, lying on chord BC; BM = MC = s/2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "O, M, N are collinear; MN is perpendicular to BC at M",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "N is on opposite side of BC from O (minor arc side); M lies between O and N; ON = r, so MN = r - OM",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Right triangle OBM with right angle at M; r^2 = OM^2 + (s/2)^2",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Right triangle BMN with right angle at M; d^2 = (s/2)^2 + (r - OM)^2",
+      "type": "right_triangle"
+    }
+  ],
+  "configuration_map": "O is the center of the circle, inside the pentagon, on the major-arc side of chord BC. M is the midpoint of chord BC (foot of perpendicular from O). N is the midpoint of the minor arc BC, on the circle, on the opposite side of BC from O. The perpendicular bisector of BC passes through both O and N (O as center, N as arc midpoint), making O, M, N collinear. Since O is inside the circle on the major-arc side and N is on the circle on the minor-arc side, M lies between O and N on this line, giving ON = OM + MN = r. Two right triangles share vertex M with right angle at M: triangle OBM (hypotenuse OB = r, leg BM = s/2) and triangle BMN (hypotenuse BN = d, leg BM = s/2, leg MN = r - OM).",
+  "pass_reason": "All spatial claims are mutually consistent. The collinearity of O, M, N follows from both lying on the perpendicular bisector of BC. The betweenness of M between O and N is correct since O is on the major-arc side and N on the minor-arc side of BC. The two right triangles OBM and BMN are validly constructed with right angles at M. No angle decomposition issues arise -- the proof uses only the Pythagorean theorem on right triangles and algebraic manipulation of the golden ratio property from 13.9. The algebraic steps (9-16) are purely computational with no additional spatial assumptions."
+}

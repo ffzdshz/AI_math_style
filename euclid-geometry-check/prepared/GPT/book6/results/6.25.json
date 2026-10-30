@@ -1,0 +1,36 @@
+{
+  "proposition": "6.25",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Squares Q (side p) and R (side q) are constructed with areas equal to F and G respectively",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Fourth proportional b is constructed such that p : q = a : b",
+      "type": "proportion/construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Figure H is constructed similar and similarly situated to F, with b corresponding to side a",
+      "type": "similarity construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Q and R are similar figures (both squares) described on p and q; F and H are similar figures described on a and b",
+      "type": "similarity relation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "By 6.22, the proportion p : q = a : b yields Q : R = F : H",
+      "type": "proportional relation"
+    }
+  ],
+  "configuration_map": "p and q are sides of squares Q and R (areas equal to F and G). a is a chosen side of F. b is the fourth proportional satisfying p : q = a : b. H is a figure similar to F constructed on side b via 6.18. No point positions, interior/exterior claims, ray orderings, or angle decompositions are involved. All objects exist independently as constructed figures and line segments used only in proportional reasoning.",
+  "pass_reason": "The proof is a clean proportional/algebraic argument. All geometric constructions (squares via 2.14, fourth proportional via 6.12, similar figure via 6.18) are standard applications with no conflicting spatial configuration requirements. The core reasoning chain (6.22 ratio transfer, then 5.9 equality) involves no angle decompositions, no interior/exterior claims, and no betweenness claims. All spatial claims are mutually consistent."
+}

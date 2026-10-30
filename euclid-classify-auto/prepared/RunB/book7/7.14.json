@@ -1,0 +1,24 @@
+{
+  "proposition": "7.14",
+  "book": 7,
+  "statement": "If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.",
+  "heath_proof": "Let there be as many numbers as we please A, B, C, and others equal to them in multitude D, E, F, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F; I say that, ex aequali, as A is to C, so also is D to F.  For, since, as A is to B, so is D to E, therefore, alternately, as A is to D, so is B to E. [VII. 13] Again, since, as B is to C, so is E to F, therefore, alternately, as B is to E, so is C to F. [VII. 13]  But, as B is to E, so is A to D; therefore also, as A is to D, so is C to F. Therefore, alternately, as A is to C, so is D to F.",
+  "ai_proof_text": "7.14\n**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.\n\n**Step 1.** Let there be as many numbers as we please: A1, A2, ..., An, and others equal to them in multitude: B1, B2, ..., Bn, such that A1:A2 = B1:B2, A2:A3 = B2:B3, ..., A(n-1):An = B(n-1):Bn. We must show that A1:An = B1:Bn (ex aequali) [D5.17, D7.20].\n\n**Step 2.** First consider the base case of three numbers in each sequence: let A, B, C and D, E, F satisfy A:B = D:E and B:C = E:F. We show A:C = D:F.\n\n**Step 3.** Since A:B = D:E, by alternate proportion [7.13], A:D = B:E.\n\n**Step 4.** Since B:C = E:F, by alternate proportion [7.13], B:E = C:F.\n\n**Step 5.** From Steps 3 and 4, A:D = B:E and B:E = C:F, so A:D = C:F [CN1].\n\n**Step 6.** Since A:D = C:F, by alternate proportion [7.13], A:C = D:F. This establishes the result for the base case of three terms in each sequence.\n\n**Step 7.** Now consider the general case. Suppose the result holds for any two sequences of (n-1) terms taken two and two in the same ratio. Given sequences A1, A2, ..., An and B1, B2, ..., Bn with consecutive pairs in the same ratio, consider the subsequences A1, A2, ..., A(n-1) and B1, B2, ..., B(n-1). These satisfy the same pairwise ratio conditions, and by the inductive hypothesis, A1:A(n-1) = B1:B(n-1).\n\n**Step 8.** We also have A(n-1):An = B(n-1):Bn as given. Together with A1:A(n-1) = B1:B(n-1) from Step 7, we have three terms A1, A(n-1), An and B1, B(n-1), Bn satisfying A1:A(n-1) = B1:B(n-1) and A(n-1):An = B(n-1):Bn.\n\n**Step 9.** Applying the base case (Steps 2-6) to these three terms in each sequence, we conclude A1:An = B1:Bn.\n\n**Step 10.** Therefore, by induction from the base case of three terms, the result holds for any number of terms: A1:An = B1:Bn, which is the ratio ex aequali [D5.17]. Q.E.D.\n\n**USED:** 7.13, CN1, D5.17, D7.20\n**Human refs (from References field):** 7.13\n**Jaccard:** 0.250 — AI adds ['CN1', 'D5.17', 'D7.20']",
+  "ai_used": [
+    "7.13",
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.13"
+  ],
+  "ai_only": [
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please: A1, A2, ..., An, and others equal to them in multitude: B1, B2, ..., Bn, such that A1:A2 = B1:B2, A2:A3 = B2:B3, ..., A(n-1):An = B(n-1):Bn. We m"
+}

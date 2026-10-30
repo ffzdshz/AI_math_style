@@ -1,0 +1,13 @@
+{
+  "proposition": "9.10",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Missing case",
+  "analysis": "Proposition 9.10 is a compound proposition with two independent parts: (1) if the number after the unit is not square, then no other term besides the third from the unit and those leaving out one is square; and (2) if the number after the unit is not cube, then no other term besides the fourth from the unit and those leaving out two is cube. Heath's proof addresses both parts fully: the square case via contradiction using 9.8 and 8.26 converse, and the cube case via contradiction using 9.8, 8.25, and 9.6. The AI proof (Steps 1-12) addresses only the square part, proving that no odd power of A is square, and concludes 'This is what was to be proved' without any mention of cubes whatsoever. The cube case is an entirely separate assertion with its own hypothesis and conclusion, not a mere expansion or restatement of the square case. This constitutes a genuinely missing case under Q1(a), warranting classification E.",
+  "jaccard": 0.143,
+  "ai_citations": "9.2|9.8|D7.18|D7.21",
+  "heath_citations": "8.25|8.26|9.6|9.8",
+  "ai_only": "9.2|D7.18|D7.21",
+  "heath_only": "8.25|8.26|9.6",
+  "audit_record": "CANDIDATE E — 9.10\n  violated_claim : The second part of the proposition — 'if the number after the unit be not cube, neither will any other be cube except the fourth from the unit and all those which leave out two' — is entirely unaddressed by the AI proof.\n  failure_mode   : missing_case\n  missing_is     : support   # The cube case is an independent part of the proposition, not an expansion of the square case.\n  evidence       : The AI proof text covers Steps 1-12 dealing only with squares (odd vs even powers of A) and concludes 'This is what was to be proved' without any mention of cubes. Heath's proof has a second section beginning 'Next, let A not be cube' that proves the cube case using 9.8, 8.25, and 9.6.\n  why_not_terse  : This is not a brevity issue — the cube case is an entirely separate assertion of the proposition with its own hypothesis ('let A not be cube') and its own conclusion ('neither will any other be cube except the fourth from the unit'), and the AI proof contains zero text addressing it."
+}

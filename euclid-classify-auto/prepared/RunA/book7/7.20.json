@@ -1,0 +1,37 @@
+{
+  "proposition": "7.20",
+  "book": 7,
+  "statement": "The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.",
+  "heath_proof": "For let CD, EF be the least numbers of those which have the same ratio with A, B; I say that CD measures A the same number of times that EF measures B. Now CD is not parts of A. For, if possible, let it be so; therefore EF is also the same parts of B that CD is of A. [VII. 13 and Def. 20] Therefore, as many parts of A as there are in CD, so many parts of B are there also in EF. Let CD be divided into the parts of A, namely CG, GD, and EF into the parts of B, namely EH, HF; thus the multitude of CG, GD will be equal to the multitude of EH, HF. Now, since the numbers CG, GD are equal to one another, and the numbers EH, HF are also equal to one another, while the multitude of CG, GD is equal to the multitude of EH, HF, therefore, as CG is to EH, so is GD to HF. Therefore also, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents. [VII. 12] Therefore, as CG is to EH, so is CD to EF. Therefore CG, EH are in the same ratio with CD, EF, being less than they: which is impossible, for by hypothesis CD, EF are the least numbers of those which have the same ratio with them. Therefore CD is not parts of A; therefore it is a part of it. [VII. 4] And EF is the same part of B that CD is of A; [VII. 13 and Def. 20] therefore CD measures A the same number of times that EF measures B.",
+  "ai_proof_text": "7.20\n**Statement:** The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.\n\n**Step 1.** Let C, D be the least numbers of those which have the same ratio, and let A, B be any other numbers having the same ratio with them, so that C:D = A:B, where A is the greater and B is the less. We must show that C measures A and D measures B the same number of times.\n\n**Step 2.** Since C, D are the least numbers in their ratio and A, B are in the same ratio, we have C is not greater than A and D is not greater than B (for if C were greater than A, then since C:D = A:B, C and D would not be the least such numbers). Thus C is less than or equal to A.\n\n**Step 3.** If C equals A, then since C:D = A:B, we have A:D = A:B, so D = B. In this case C measures A once and D measures B once, and the proposition holds.\n\n**Step 4.** Suppose C is less than A. By Proposition 7.4, C is either a part of A (i.e., C measures A) or parts of A (i.e., C does not measure A).\n\n**Step 5.** Assume for contradiction that C is parts of A and does not measure A. Then by Definition 7.20, since C:D = A:B, D is the same parts of B that C is of A. That is, there exist numbers p and q with p greater than 1 and q greater than p, and a number G such that A = qG and C = pG, and likewise a number H such that B = qH and D = pH.\n\n**Step 6.** By Proposition 7.17, since p multiplies G and H to produce pG and pH respectively, we have pG:pH = G:H. That is, C:D = G:H.\n\n**Step 7.** Now since q is greater than 1, G is less than A, and since q is greater than p and p is greater than 1, G = A/q is less than C = pG only when considered alongside the fact that p is less than q. Moreover, since p is greater than 1 and G is at least 1, we have G is less than pG = C. Similarly H is less than pH = D. Therefore G is less than C and H is less than D.\n\n**Step 8.** But from Step 6, G:H = C:D, and G is less than C and H is less than D. This means G and H are numbers in the same ratio as C and D, yet both are smaller than C and D respectively. This contradicts the hypothesis that C, D are the least numbers having this ratio.\n\n**Step 9.** Therefore the assumption in Step 5 is false, and C is not merely parts of A. By Step 4, C must be a part of A, meaning C measures A. Let A = nC for some number n.\n\n**Step 10.** By Proposition 7.17, since n multiplies C and D, the products have the same ratio as the numbers multiplied: nC:nD = C:D.\n\n**Step 11.** Therefore A:nD = C:D. But C:D = A:B. So A:nD = A:B.\n\n**Step 12.** By Proposition 7.19, since A:nD = A:B, we have A times B equals nD times A (the product of the first and fourth equals the product of the second and third). By Proposition 7.16, nD times A equals A times nD. Therefore A times B equals A times nD.\n\n**Step 13.** Since A times B equals A times nD, it follows that B = nD. For if B were not equal to nD, say B were greater, then A times B would be greater than A times nD (by Common Notion 5 applied to multiples), which contradicts their equality; and similarly if B were less. Therefore B = nD, and D measures B.\n\n**Step 14.** Since A = nC and B = nD, C measures A exactly n times and D measures B exactly n times. Therefore the least numbers C, D measure the numbers A, B having the same ratio the same number of times, the greater the greater and the less the less. Q.E.D.\n\n**USED:** 7.16, 7.17, 7.19, 7.4, CN5, D7.20, D7.3, D7.4\n**Human refs (from References field):** 7.12, 7.13, 7.4, D7.20\n**Jaccard:** 0.200 — AI adds ['7.16', '7.17', '7.19', 'CN5', 'D7.3', 'D7.4']; Human adds ['7.12', '7.13']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.19",
+    "7.4",
+    "CN5",
+    "D7.20",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_refs": [
+    "7.12",
+    "7.13",
+    "7.4",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.17",
+    "7.19",
+    "CN5",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_only": [
+    "7.12",
+    "7.13"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let C, D be the least numbers of those which have the same ratio, and let A, B be any other numbers having the same ratio with them, so that C:D = A:B, where A is the greater and B is the "
+}

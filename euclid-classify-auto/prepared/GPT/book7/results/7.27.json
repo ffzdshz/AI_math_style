@@ -1,0 +1,13 @@
+{
+  "proposition": "7.27",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Heath proves squares coprime using 7.25 (squaring preserves coprimality) and then cubes coprime by combining four pairwise coprimality relations via 7.26 (products of pairwise coprime numbers are coprime). The AI instead uses 7.24 (the product rule) directly in a general inductive argument: first establishing that all powers of B are coprime to A by repeated application of 7.24, then for a fixed power B^n, building up A, A^2, ..., A^n each coprime to B^n by the same rule. While both 7.25 and 7.26 are proved from 7.24, the AI does not merely re-derive them inline; it applies 7.24 in a structurally different inductive pattern that entirely avoids the pairwise-product principle of 7.26. For the cubes result, Heath's intermediates are A^3 coprime to B and A^3 coprime to B^2 (inside 7.26's logic), while the AI's intermediates are A coprime to B^3 and A^2 coprime to B^3 — a genuinely different sequence of key conclusions. Since the backbones diverge (Q2 Case B) and the AI's inductive path is logically valid (Q3), the classification is D.",
+  "jaccard": 0.0,
+  "ai_citations": "7.24|D7.12|D7.15|D7.18|D7.19",
+  "heath_citations": "7.25|7.26",
+  "ai_only": "7.24|D7.12|D7.15|D7.18|D7.19",
+  "heath_only": "7.25|7.26",
+  "audit_record": ""
+}

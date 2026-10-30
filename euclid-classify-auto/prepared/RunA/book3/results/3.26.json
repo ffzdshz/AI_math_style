@@ -1,0 +1,13 @@
+{
+  "proposition": "3.26",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Unsupported assertion",
+  "analysis": "The AI proof's reductio argument for the central angles case (Steps 4-8) contains an unsupported assertion in Step 6: 'Since circumference BMC equals circumference ELF in equal circles, we would have angle BGM equal to angle EHF.' This claim that equal arcs in equal circles yield equal central angles is precisely the content of Proposition 3.27, the converse of the theorem being proved (3.26). No citation is given, and no earlier proposition in Euclid establishes this result. The inference is therefore unsupported: the only justification would be the converse of the theorem under proof (circular) or the forward proposition 3.27. Heath's proof avoids this entirely by using a direct approach via segment similarity (D3.11) and III.24 rather than reductio. The audit record completes convincingly because the missing element is genuine support (not mere expansion of a supported step), making this a clear unsupported assertion under the hardened 1(b) standard.",
+  "jaccard": 0.125,
+  "ai_citations": "1.4|3.20|CN1|CN2|CN5|D3.1",
+  "heath_citations": "1.4|3.24|D3.11",
+  "ai_only": "3.20|CN1|CN2|CN5|D3.1",
+  "heath_only": "3.24|D3.11",
+  "audit_record": "CANDIDATE E — 3.26\n  violated_claim : \"Since circumference BMC equals circumference ELF in equal circles, we would have angle BGM equal to angle EHF\" (Step 6)\n  failure_mode   : unsupported_assertion\n  missing_is     : support — there is no cited or invoked proposition that licenses the inference from equal arcs to equal angles. The result that would license it (3.27) is the converse of the theorem being proved and is a forward dependency.\n  evidence       : Step 6 text: \"Since circumference BMC equals circumference ELF in equal circles, we would have angle BGM equal to angle EHF.\" No citation is provided. The needed result is 3.27 (equal arcs -> equal angles in equal circles), which is the next proposition (forward).\n  why_not_terse  : This is not mere brevity — the step invokes the converse of the very theorem being proved. No earlier proposition in Euclid establishes that equal arcs in equal circles yield equal central angles. The logical gap is circular/forward reasoning, not a skipped algebraic step."
+}

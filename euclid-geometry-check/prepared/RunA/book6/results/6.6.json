@@ -1,0 +1,41 @@
+{
+  "proposition": "6.6",
+  "run": "RunA",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "G lies on ray DE with DG = AB; H lies on ray DF with DH = AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "G is between D and E (GE = DE - DG); H is between D and F (HF = DF - DH)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 8",
+      "claim": "G and H cut sides DE and DF proportionally; GH is parallel to EF by converse of 6.2",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angles DGH and DEF are alternate interior angles (transversal DE, parallels GH and EF)",
+      "type": "alternate_angles"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angles DHG and DFE are alternate interior angles (transversal DF, parallels GH and EF)",
+      "type": "alternate_angles"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Angle GDH is the same angle as angle EDF since G is on ray DE and H is on ray DF",
+      "type": "angle_identity"
+    }
+  ],
+  "configuration_map": "Triangle DEF is given. Point G is constructed on segment DE between D and E with DG = AB. Point H is constructed on segment DF between D and F with DH = AC. Line GH connects these two interior points, forming sub-triangle DGH sharing vertex D with triangle DEF. The proportional cutting (DG/GE = DH/HF) ensures GH is parallel to base EF. Ray DG coincides with ray DE, and ray DH coincides with ray DF, so angle GDH is identical to angle EDF. Triangle DGH is congruent to triangle ABC by SAS (1.4).",
+  "pass_reason": "All spatial claims are mutually consistent. Points G and H are consistently treated as interior points on sides DE and DF throughout. The parallelism of GH to EF correctly follows from proportional cutting via converse of 6.2. The alternate angle claims in Step 9 are valid given the established parallelism and betweenness. The angle identity at D (angle GDH = angle EDF) is trivially correct since G and H lie on rays DE and DF. No angle decomposition issues arise. The proof takes a different but geometrically valid path from Heath."
+}

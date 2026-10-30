@@ -1,0 +1,30 @@
+{
+  "proposition": "3.2",
+  "book": 3,
+  "statement": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+  "heath_proof": "Let ABC be a circle, and let two points A, B be taken at random on its circumference; I say that the straight line joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as AEB; let the centre of the circle ABC be taken [III. 1], and let it be D; let DA, DB be joined, and let DFE be drawn through. Then, since DA is equal to DB, the angle DAE is also equal to the angle DBE. [I. 5]And, since one side AEB of the triangle DAE is produced, the angle DEB is greater than the angle DAE. [I. 16]  But the angle DAE is equal to the angle DBE; therefore the angle DEB is greater than the angle DBE. And the greater angle is subtended by the greater side; [I. 19] therefore DB is greater than DE. But DB is equal to DF;  therefore DF is greater than DE,   the less than the greater: which is impossible. Therefore the straight line joined from A to B will not fall outside the circle. Similarly we can prove that neither will it fall on the circumference itself; therefore it will fall within.",
+  "ai_proof_text": "3.2\n**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.\n\n**Step 1.** Let ABC be a circle, and let A and B be two points taken at random on its circumference. Join the straight line AB (P1). I say that AB falls within the circle.\n\n**Step 2.** Suppose it does not. Then some point E of AB, lying between A and B, does not fall within the circle; so E lies either on the circumference or outside the circle.\n\n**Step 3.** Take the centre D of the circle ABC (3.1), and join DA, DB, DE (P1).\n\n**Step 4.** Since D is the centre, the straight lines DA and DB, falling upon the circumference from the centre, are equal to one another (D1.15). Therefore triangle DAB is isosceles, and the angles at its base are equal: angle DAB = angle DBA (1.5).\n\n**Step 5.** Since E lies on AB between A and B, angle DAE is the same angle as angle DAB, and angle DBE is the same angle as angle DBA. Hence angle DAE = angle DBE.\n\n**Step 6.** In triangle DAE, the side AE is produced to B; hence the exterior angle DEB is greater than the interior and opposite angle DAE (1.16).\n\n**Step 7.** Combining Steps 5 and 6, angle DEB is greater than angle DBE.\n\n**Step 8.** In triangle DEB, the greater angle is subtended by the greater side (1.19): angle DEB is subtended by DB, and angle DBE is subtended by DE. Therefore DB is greater than DE.\n\n**Step 9.** Case (i): E lies on the circumference. Then DE, falling upon the circumference from the centre, is equal to DB (D1.15). This contradicts Step 8, in which DB is greater than DE.\n\n**Step 10.** Case (ii): E lies outside the circle. Since D is within the circle and E is outside it, the straight line DE crosses the circumference at some point F lying between D and E. Then DF is equal to DB (D1.15); but DF is a part of DE, so DF is less than DE (CN5); hence DB is less than DE. This again contradicts Step 8.\n\n**Step 11.** Both cases are impossible. Therefore no point of AB between A and B lies on or outside the circle, and so the straight line AB falls within the circle. Q.E.D.\n\n**USED:** 1.16, 1.19, 1.5, 3.1, CN5, D1.15, P1\n**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1\n**Jaccard:** 0.571 — AI adds ['CN5', 'D1.15', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1",
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1"
+  ],
+  "ai_only": [
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let ABC be a circle, and let A and B be two points taken at random on its circumference. Join the straight line AB (P1). I say that AB falls within the circle.  **Step 2.** Suppose it does"
+}

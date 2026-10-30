@@ -1,0 +1,72 @@
+{
+  "proposition": "11.35",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Angles BAC and EDF are equal plane angles in planes P1, P2; AG and DM are elevated lines at A and D respectively, not lying in the planes, with angle BAG = angle EDM, angle CAG = angle FDM, and AG = DM.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GH is perpendicular to plane P1 with foot H in P1; MK is perpendicular to plane P2 with foot K in P2. H is the orthogonal projection of G onto P1.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle GHA = 90 degrees and angle MKD = 90 degrees, since GH and MK are perpendicular to their respective planes.",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "J is the foot of perpendicular from G to line AB; J is also the foot of perpendicular from H to AB. Angle GJA = 90 degrees and angle HJA = 90 degrees (HJ perpendicular to AB).",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "I is foot of perpendicular from G and H to AC; L is foot of perpendicular from M and K to DE; N is foot of perpendicular from M and K to DF. Angles GIA, HIA, GNF-equivalent, etc. are all right angles.",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangles AJI and DLN are congruent (SAS via I.4): AJ = DL, AI = DN, angle JAI = angle BAC = angle EDF = angle LDN. Gives JI = LN, angle AJI = angle DLN, angle AIJ = angle DNL.",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 9",
+      "claim": "H and I are both in the interior of angle BAC on the same side of line AB; ray JI lies in the interior of the right angle HJA; angle HJA decomposes as angle HJI + angle IJA.",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Ray IJ lies in the interior of angle HIA; angle HIA decomposes as angle HIJ + angle JIA.",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Right triangles GAH and MDK are congruent by SAS (I.4), giving angle GAH = angle MDK.",
+      "type": "congruence"
+    }
+  ],
+  "configuration_map": "Point G: Elevated above plane P1 at vertex A along line AG. Direction determined by angles BAG (beta) and CAG (gamma) with the plane angle BAC (alpha). Position is valid when the spherical triangle inequality holds: |beta - gamma| <= alpha <= beta + gamma.\n\nPoint H: Foot of perpendicular from G to plane P1 (orthogonal projection of G onto P1). Direction AH in the plane is determined by the projection of AG onto P1, at angle arctan(g_y/g_x) from AB. For symmetric configurations (beta = gamma), H lies on the bisector of angle BAC, inside angle BAC. For asymmetric configurations (e.g., beta = 70, gamma = 20, alpha = 60), H can fall outside angle BAC (at ~69 degrees when AC is at 60 degrees).\n\nPoint J: Foot of perpendicular from G (and H) to line AB. Lies on AB at distance AG*cos(beta) from A. HJ is perpendicular to AB, so angle HJA = 90 degrees.\n\nPoint I: Foot of perpendicular from G (and H) to line AC. Lies on AC at distance AG*cos(gamma) from A. HI is perpendicular to AC, so angle HIA = 90 degrees.\n\nCritical configuration issue: For the counterexample (alpha=60, beta=70, gamma=20), coordinate computation gives J=(0.342,0), H=(0.342,0.888), I=(0.470,0.814). The ray JI points at 81 degrees from the x-axis, while JH points at 90 degrees and JA points at 180 degrees. The angle HJA spans 90-to-180 degrees, but JI at 81 degrees falls OUTSIDE this range (on the wrong side of JH). The proof's angle decomposition angle HJA = angle HJI + angle IJA is geometrically invalid; instead angle IJA = angle IJH + angle HJA.",
+  "contradictory_steps": [
+    "Step 2 (H is projection of G onto P1, implicitly determining H's position)",
+    "Step 9 (claims H is in interior of angle BAC and ray JI lies in interior of angle HJA)"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 2",
+    "claim": "H is the orthogonal projection of G onto plane P1. For asymmetric angle configurations (e.g., angle BAG=70, angle CAG=20, angle BAC=60), the direction AH in the plane makes angle ~69 degrees with AB, placing H outside angle BAC (past line AC).",
+    "required_by": "Construction of the perpendicular foot, used throughout Steps 3-13"
+  },
+  "spatial_claim_2": {
+    "step": "Step 9",
+    "claim": "Both H and I are in the interior of angle BAC on the same side of line AB, and ray JI lies in the interior of the right angle HJA, so angle HJA = angle HJI + angle IJA.",
+    "required_by": "Derivation of angle HJI = 90 - angle AJI, leading to angle HJI = angle KLN in Step 9, and triangle congruence in Step 11"
+  },
+  "contradiction": "For valid asymmetric configurations (e.g., angle BAC=60, angle BAG=70, angle CAG=20, which satisfies the spherical triangle inequality |70-20|=50 <= 60 <= 90), coordinate analysis shows: (1) H falls at angle 69 degrees from AB, which is OUTSIDE angle BAC (past line AC at 60 degrees), falsifying the claim that H is in the interior of angle BAC. (2) At point J, the ray JI is at 81 degrees, JH is at 90 degrees, and JA is at 180 degrees from the positive x-axis. Since JI (81) is on the opposite side of JH (90) from JA (180), ray JI does NOT lie in the interior of angle HJA. The correct decomposition is angle IJA = angle IJH + angle HJA (not angle HJA = angle HJI + angle IJA). Additionally, I lies ON line AC (not in the interior of angle BAC as claimed). The step's conclusion (angle HJI = angle KLN) happens to survive because the same configuration issue applies symmetrically to both angle systems, but the stated reasoning and spatial claims are invalid.",
+  "fixable": true,
+  "fix_note": "Heath's proof avoids this issue entirely by using Proposition I.8 (SSS triangle congruence) for the final step rather than angle decomposition, never requiring H to lie inside angle BAC or ray JI to lie inside angle HJA. Alternatively, the AI proof could be fixed by: (1) handling both cases (JI inside or outside angle HJA) separately, noting that either way angle HJI = |90 - angle AJI|, and by symmetry the same formula applies to angle KLN; or (2) replacing the angle decomposition approach in Steps 9-11 with a direct distance-based argument using I.47 and I.8 as Heath does."
+}

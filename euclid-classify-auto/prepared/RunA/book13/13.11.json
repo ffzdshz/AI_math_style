@@ -1,0 +1,63 @@
+{
+  "proposition": "13.11",
+  "book": 13,
+  "statement": "If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.",
+  "heath_proof": "For in the circle ABCDE which has its diameter rational let the equilateral pentagon ABCDE be inscribed; I say that the side of the pentagon is the irrational straight line called minor. For let the centre of the circle, the point F, be taken, let AF, FB be joined and carried through to the points, G, H, let AC be joined, and let FK be made a fourth part of AF. Now AF is rational; therefore FK is also rational. But BF is also rational; therefore the whole BK is rational. And, since the circumference ACG is equal to the circumference ADG, and in them ABC is equal to AED, therefore the remainder CG is equal to the remainder GD. And, if we join AD, we conclude that the angles at L are right, and CD is double of CL. For the same reason the angles at M are also right, and AC is double of CM. Since then the angle ALC is equal to the angle AMF, and the angle LAC is common to the two triangles ACL and AMF, therefore the remaining angle ACL is equal to the remaining angle MFA; [I. 32] therefore the triangle ACL is equiangular with the triangle AMF; therefore, proportionally, as LC is to CA, so is MF to FA. And the doubles of the antecedents may be taken; therefore, as the double of LC is to CA, so is the double of MF to FA. But, as the double of MF is to FA, so is MF to the half of FA; therefore also, as the double of LC is to CA, so is MF to the half of FA. And the halves of the consequents may be taken; therefore, as the double of LC is to the half of CA, so is MF to the fourth of FA. And DC is double of LC, CM is half of CA, and FK a fourth part of FA; therefore, as DC is to CM, so is MF to FK. Componendo also, as the sum of DC, CM is to CM, so is MK to KF; [V. 18] therefore also, as the square on the sum of DC, CM is to the square on CM, so is the square on MK to the square on KF. And since, when the straight line subtending two sides of the pentagon, as AC, is cut in extreme and mean ratio, the greater segment is equal to the side of the pentagon, that is, to DC, [XIII. 8] while the square on the greater segment added to the half of the whole is five times the square on the half of the whole, [XIII. 1] and CM is half of the whole AC, therefore the square on DC, CM taken as one straight line is five times the square on CM. But it was proved that, as the square on DC, CM taken as one straight line is to the square on CM, so is the square on MK to the square on KF; therefore the square on MK is five times the square on KF. But the square on KF is rational, for the diameter is rational; therefore the square on MK is also rational; therefore MK is rational And, since BF is quadruple of FK, therefore BK is five times KF; therefore the square on BK is twenty-five times the square on KF. But the square on MK is five times the square on KF; therefore the square on BK is five times the square on KM; therefore the square on BK has not to the square on KM the ratio which a square number has to a square number; therefore BK is incommensurable in length with KM. [X. 9] And each of them is rational. Therefore BK, KM are rational straight lines commensurable in square only. But, if from a rational straight line there be subtracted a rational straight line which is commensurable with the whole in square only, the remainder is irrational, namely an apotome; therefore MB is an apotome and MK the annex to it. [X. 73] I say next that MB is also a fourth apotome. Let the square on N be equal to that by which the square on BK is greater than the square on KM; therefore the square on BK is greater than the square on KM by the square on N. And, since KF is commensurable with FB, componendo also, KB is commensurable with FB. [X. 15] But BF is commensurable with BH; therefore BK is also commensurable with BH. [X. 12] And, since the square on BK is five times the square on KM, therefore the square on BK has to the square on KM the ratio which 5 has to 1. Therefore, convertendo, the square on BK has to the square on N the ratio which 5 has to 4 [V. 19], and this is not the ratio which a square number has to a square number; therefore BK is incommensurable with N; [X. 9] therefore the square on BK is greater than the square on KM by the square on a straight line incommensurable with BK. Since then the square on the whole BK is greater than the square on the annex KM by the square on a straight line incommensurable with BK, and the whole BK is commensurable with the rational straight line, BH, set out, therefore MB is a fourth apotome. [X. Deff. III. 4] But the rectangle contained by a rational straight line and a fourth apotome is irrational, and its square root is irrational, and is called minor. [X. 94] But the square on AB is equal to the rectangle HB, BM, because, when AH is joined, the triangle ABH is equiangular with the triangle ABM, and, as HB is to BA, so is AB to BM. Therefore the side AB of the pentagon is the irrational straight line called minor.",
+  "ai_proof_text": "13.11\n**Statement:** If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.\n\n**Step 1.** Let ABCDE be an equilateral pentagon inscribed in a circle with center O, and let the diameter of the circle be rational. Let r denote the radius OA. Since the diameter d is rational and r is half of d, the ratio d : r equals 2 : 1, so r is commensurable in length with d and is therefore rational [10.6, D10.1.3].\n\n**Step 2.** By 4.15, the side of the regular hexagon inscribed in the same circle equals the radius r. Since r is rational, the side of the hexagon is rational.\n\n**Step 3.** Let s denote the side of the regular decagon inscribed in the same circle. By 13.9, the straight line composed of the hexagon side and the decagon side (that is, r + s) has been cut in extreme and mean ratio, and the greater segment is the side of the hexagon, which is r. Therefore (r + s) : r = r : s [D6.3].\n\n**Step 4.** From the proportion in Step 3, since (r + s) : r = r : s, the rectangle contained by the extremes equals the rectangle contained by the means [6.17]. That is, rect(r + s, s) = sq(r). Expanding the left side, rect(r, s) + sq(s) = sq(r) [2.3]. Therefore sq(s) = sq(r) - rect(r, s) [CN3].\n\n**Step 5.** From the proportion r : s = s : (r - s), which follows from Step 3 by separation of the ratio, r is itself cut in extreme and mean ratio at the point yielding greater segment s and lesser segment r - s. Since r is rational, by 13.6 both s and r - s are apotomes.\n\n**Step 6.** By 13.10, the square on the side BC of the pentagon equals the sum of the square on the side of the hexagon and the square on the side of the decagon, both inscribed in the same circle. That is, sq(BC) = sq(r) + sq(s).\n\n**Step 7.** Substituting the result of Step 4 into Step 6: sq(BC) = sq(r) + sq(r) - rect(r, s) [CN2, CN3]. Since sq(r) + sq(r) = rect(r, 2r) = rect(r, d), we have sq(BC) = rect(r, d) - rect(r, s) = rect(r, d - s) [2.1, CN3]. Set q = d - s, so that sq(BC) = rect(r, q).\n\n**Step 8.** We now show that q is a fourth apotome with respect to the rational line r. By 13.1, since r is cut in extreme and mean ratio with s as the greater segment (Step 5), the square on s together with the half of r equals five times the square on the half of r. That is, sq(s + r/2) = 5 times sq(r/2).\n\n**Step 9.** Set N = r/2. Then N is rational since r is rational and N : r = 1 : 2 [10.6]. Define a = d + N = 2r + r/2 = 5N, and b = s + N. Then q = d - s = (d + N) - (s + N) = a - b. Note that a = 5N, which is commensurable in length with r since a : r = 5 : 2 [10.6], and commensurable with N since a : N = 5 : 1 [10.6]. By 10.15, since d and N are each commensurable with r, the sum a = d + N is commensurable with r.\n\n**Step 10.** By Step 8, sq(b) = sq(s + N) = 5 times sq(N). And sq(a) = sq(5N) = 25 times sq(N). Therefore sq(a) : sq(b) = 25 : 5 = 5 : 1. Since 5 is not a square number, a and b are incommensurable in length [10.9]. Since sq(a) and sq(b) are in the ratio 5 : 1 (a ratio of numbers), a and b are commensurable in square [10.6]. Hence a and b are commensurable in square only.\n\n**Step 11.** Now sq(a) - sq(b) = 25 times sq(N) - 5 times sq(N) = 20 times sq(N) = 5 times 4 times sq(N) = 5 times sq(2N) = 5 times sq(r) [CN3]. Let c be the straight line such that sq(c) = 5 times sq(r). Then sq(c) : sq(a) = 5 times sq(r) : 25 times sq(N) = 5 times sq(2N) : 25 times sq(N) = 20 : 25 = 4 : 5. Since 4 : 5 is not a ratio of square numbers, c and a are incommensurable in length [10.9].\n\n**Step 12.** Therefore q = a - b satisfies all conditions of a fourth apotome with respect to the rational line r [D10.3.4]: the terms a and b are commensurable in square only (Step 10); the square on a exceeds the square on b by the square on a straight line c incommensurable in length with a (Step 11); and a is commensurable in length with the assigned rational line r (Step 9).\n\n**Step 13.** Since sq(BC) = rect(r, q), where r is a rational straight line and q is a fourth apotome, by 10.94 the straight line BC (the side of the square equal to rect(r, q)) is the irrational straight line called minor.\n\n**Step 14.** Therefore, if in a circle with rational diameter an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor. Q.E.D.\n\n**USED:** 10.15, 10.6, 10.9, 10.94, 13.1, 13.10, 13.6, 13.9, 2.1, 2.3, 4.15, 6.17, CN2, CN3, D10.1.3, D10.3.4, D6.3\n**Human refs (from References field):** 1.32, 10.12, 10.15, 10.73, 10.9, 10.94, 13.1, 13.8, 5.18, 5.19, D10.3.4\n**Jaccard:** 0.217 — AI adds ['10.6', '13.10', '13.6', '13.9', '2.1', '2.3', '4.15', '6.17', 'CN2', 'CN3', 'D10.1.3', 'D6.3']; Human adds ['1.32', '10.12', '10.73', '13.8', '5.18', '5.19']",
+  "ai_used": [
+    "10.15",
+    "10.6",
+    "10.9",
+    "10.94",
+    "13.1",
+    "13.10",
+    "13.6",
+    "13.9",
+    "2.1",
+    "2.3",
+    "4.15",
+    "6.17",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D10.3.4",
+    "D6.3"
+  ],
+  "heath_refs": [
+    "1.32",
+    "10.12",
+    "10.15",
+    "10.73",
+    "10.9",
+    "10.94",
+    "13.1",
+    "13.8",
+    "5.18",
+    "5.19",
+    "D10.3.4"
+  ],
+  "ai_only": [
+    "10.6",
+    "13.10",
+    "13.6",
+    "13.9",
+    "2.1",
+    "2.3",
+    "4.15",
+    "6.17",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D6.3"
+  ],
+  "heath_only": [
+    "1.32",
+    "10.12",
+    "10.73",
+    "13.8",
+    "5.18",
+    "5.19"
+  ],
+  "jaccard": 0.217,
+  "proof_summary": "**Step 1.** Let ABCDE be an equilateral pentagon inscribed in a circle with center O, and let the diameter of the circle be rational. Let r denote the radius OA. Since the diameter d is rational and r"
+}

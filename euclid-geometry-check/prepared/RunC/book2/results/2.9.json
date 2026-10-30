@@ -1,0 +1,36 @@
+{
+  "proposition": "2.9",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, D, B are collinear on line AB, with C bisecting AB and D cutting AB unequally",
+      "type": "collinear arrangement"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AC = CB (C is the midpoint of AB)",
+      "type": "segment equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D lies on segment CB, giving collinear order A-C-D-B, so AD = AC + CD",
+      "type": "betweenness/segment addition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Line AD is cut at C into segments AC and CD (C between A and D)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Line CB is cut at D into segments CD and DB (D between C and B)",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Four collinear points on a straight line in order A-C-D-B. C is the midpoint of AB (AC = CB). D is between C and B, creating the unequal cut. No auxiliary points, no angles, no triangles or circles are constructed. The entire proof operates algebraically on segments of this single line, applying Props 2.4 and 2.7 as algebraic identities and then performing arithmetic substitution and cancellation.",
+  "pass_reason": "The proof is purely algebraic, applying Props 2.4 and 2.7 as segment-arithmetic identities to a line with four collinear points A-C-D-B. The only spatial claims concern collinear point ordering (betweenness), which are trivially consistent. No angle decompositions, no interior/exterior arguments, no auxiliary geometric constructions that could create configuration contradictions. All algebraic steps (addition, substitution via AC=CB, cancellation) are valid."
+}

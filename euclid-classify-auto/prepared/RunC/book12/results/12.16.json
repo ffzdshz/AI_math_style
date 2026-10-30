@@ -1,0 +1,13 @@
+{
+  "proposition": "12.16",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals different backbones: Heath's proof constructs a tangent to the lesser circle (3.16), then repeatedly bisects the circumference (10.1) to produce a chord LN parallel to that tangent, concluding via parallelism that LN cannot touch the lesser circle, and uses 3.3 and 1.4 to show LD = DN. The AI proof instead inscribes a square (using 1.11 and 3.29), then repeatedly bisects arcs (3.30) while tracking perpendicular distances from the center to each side via 3.15, showing that these distances strictly increase with each bisection, and applies 10.1 to conclude that after sufficiently many bisections the perpendicular distance exceeds the lesser circle's radius. The key intermediate conclusions differ: Heath relies on tangent-parallelism, while the AI relies on perpendicular-distance monotonicity and 3.15. Under Q3, the AI's alternative path is logically complete — each step is supported by valid citations (3.15 for the distance comparison, 10.1 for the exhaustion argument, 3.30 for arc bisection), and no unsupported assertions, circular citations, or invalid inferences are present under the hardened 1(b) standard.",
+  "jaccard": 0.062,
+  "ai_citations": "1.11|1.12|10.1|3.15|3.29|3.30|CN5|D1.15|D1.16|D1.17|D4.3|P1|P2",
+  "heath_citations": "1.4|10.1|3.16|3.3",
+  "ai_only": "1.11|1.12|3.15|3.29|3.30|CN5|D1.15|D1.16|D1.17|D4.3|P1|P2",
+  "heath_only": "1.4|3.16|3.3",
+  "audit_record": ""
+}

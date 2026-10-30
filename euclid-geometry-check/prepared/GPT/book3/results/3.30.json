@@ -1,0 +1,66 @@
+{
+  "proposition": "3.30",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A and B are endpoints of the given arc, lying on the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AB is a chord; D is the midpoint of AB, so AD = DB; D lies on segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is an interior point of the circle (since chord AB lies within the circle by 3.2)",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Perpendicular to AB at D is drawn toward the given arc, meeting the arc at C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C is on the given arc (on the circle)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangles ADC and BDC share side DC, with AD = DB and angles ADC = BDC = 90 degrees (SAS configuration)",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "By I.4 (SAS), angle DAC = angle DBC",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "D lies between A and B on segment AB, so ray AD = ray AB and ray BD = ray BA",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle DAC coincides with angle BAC; angle DBC coincides with angle ABC",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Inscribed angle BAC at vertex A stands on arc BC (not containing A); inscribed angle ABC at vertex B stands on arc AC (not containing B)",
+      "type": "inscribed_angle"
+    },
+    {
+      "step": "Step 5",
+      "claim": "By 3.26, equal inscribed angles in the same circle subtend equal arcs, so arc BC = arc AC",
+      "type": "arc_equality"
+    }
+  ],
+  "configuration_map": "Points A and B are the endpoints of the given arc, both on the circle. D is the midpoint of chord AB, lying on segment AB and hence interior to the circle. C is the point where the perpendicular to AB at D (directed toward the given arc) meets the arc, so C is on the circle between A and B along the given arc. Triangles ADC and BDC share the perpendicular segment DC, with AD = DB and right angles at D. Throughout the proof, D remains on segment AB (interior to the circle), and C remains on the given arc. The angles BAC and ABC are inscribed angles in the circle at vertices A and B respectively, subtending arcs BC and AC (the two portions of the given arc separated by C).",
+  "pass_reason": "All spatial claims are mutually consistent. The configuration is straightforward: perpendicular from midpoint of chord to arc. D's position on segment AB correctly implies ray coincidences (DAC=BAC, DBC=ABC). The SAS congruence is standard. The application of 3.26 to equal inscribed angles yielding equal arcs is geometrically valid. No angle decomposition issues, no inside/outside contradictions, no betweenness conflicts."
+}

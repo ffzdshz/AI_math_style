@@ -1,0 +1,53 @@
+{
+  "proposition": "12.11",
+  "book": 12,
+  "statement": "Cones and cylinders which are of the same height are to one another as their bases.",
+  "heath_proof": "Let there be cones and cylinders of the same height, let the circles ABCD, EFGH be their bases, KL, MN their axes and AC, EG the diameters of their bases; I say that, as the circle ABCD is to the circle EFGH, so is the cone AL to the cone EN. For, if not, then, as the circle ABCD is to the circle EFGH, so will the cone AL be either to some solid less than the cone EN or to a greater. First, let it be in that ratio to a less solid O, and let the solid X be equal to that by which the solid O is less than the cone EN; therefore the cone EN is equal to the solids O, X. Let the square EFGH be inscribed in the circle EFGH; therefore the square is greater than the half of the circle. Let there be set up from the square EFGH a pyramid of equal height with the cone; therefore the pyramid so set up is greater than the half of the cone, inasmuch as, if we circumscribe a square about the circle, and set up from it a pyramid of equal height with the cone, the inscribed pyramid is half of the circumscribed pyramid, for they are to one another as their bases, [XII. 6] while the cone is less than the circumscribed pyramid. Let the circumferences EF, FG, GH, HE be bisected at the points P, Q, R, S, and let HP, PE, EQ, QF, FR, RG, GS, SH be joined. Therefore each of the triangles HPE, EQF, FRG, GSH is greater than the half of that segment of the circle which is about it. On each of the triangles HPE, EQF, FRG, GSH let there be set up a pyramid of equal height with the cone; therefore, also, each of the pyramids so set up is greater than the half of that segment of the cone which is about it. Thus, bisecting the circumferences which are left, joining straight lines, setting up on each of the triangles pyramids of equal height with the cone, and doing this continually, we shall leave some segments of the cone which will be less than the solid X. [X. 1] Let such be left, and let them be the segments on HP, PE, EQ, QF, FR, RG, GS, SH; therefore the remainder, the pyramid of which the polygon HPEQFRGS is the base and the height the same with that of the cone, is greater than the solid O. Let there also be inscribed in the circle ABCD the polygon DTAUBVCW similar and similarly situated to the polygon HPEQFRGS, and on it let a pyramid be set up of equal height with the cone AL. Since then, as the square on AC is to the square on EG, so is the polygon DTAUBVCW to the polygon HPEQFRGS, [XII. 1] while, as the square on AC is to the square on EG, so is the circle ABCD to the circle EFGH, [XII. 2] therefore also, as the circle ABCD is to the circle EFGH, so is the polygon DTAUBVCW to the polygon HPEQFRGS. But, as the circle ABCD is to the circle EFGH, so is the cone AL to the solid O, and, as the polygon DTAUBVCW is to the polygon HPEQFRGS, so is the pyramid of which the polygon DTAUBVCW is the base and the point L the vertex to the pyramid of which the polygon HPEQFRGS is the base and the point N the vertex. [XII. 6] Therefore also, as the cone AL is to the solid O, so is the pyramid of which the polygon DTAUBVCW is the base and the point L the vertex to the pyramid of which the polygon HPEQFRGS is the base and the point N the vertex; [V. 11] therefore, alternately, as the cone AL is to the pyramid in it, so is the solid O to the pyramid in the cone EN. [V. 16] But the cone AL is greater than the pyramid in it; therefore the solid O is also greater than the pyramid in the cone EN. But it is also less: which is absurd. Therefore the cone AL is not to any solid less than the cone EN as the circle ABCD is to the circle EFGH. Similarly we can prove that neither is the cone EN to any solid less than the cone AL as the circle EFGH is to the circle ABCD. I say next that neither is the cone AL to any solid greater than the cone EN as the circle ABCD is to the circle EFGH. For, if possible, let it be in that ratio to a greater solid O; therefore, inversely, as the circle EFGH is to the circle ABCD, so is the solid O to the cone AL. But, as the solid O is to the cone AL, so is the cone EN to some solid less than the cone AL; therefore also, as the circle EFGH is to the circle ABCD, so is the cone EN to some solid less than the cone AL: which was proved impossible. Therefore the cone AL is not to any solid greater than the cone EN as the circle ABCD is to the circle EFGH. But it was proved that neither is it in this ratio to a less solid; therefore, as the circle ABCD is to the circle EFGH, so is the cone AL to the cone EN. But, as the cone is to the cone, so is the cylinder to the cylinder, for each is triple of each; [XII. 10] Therefore also, as the circle ABCD is to the circle EFGH, so are the cylinders on them which are of equal height.",
+  "ai_proof_text": "12.11\n**Statement:** Cones and cylinders which are of the same height are to one another as their bases.\n\n**Step 1.** Let there be two cylinders CD and EF of the same height, with circular bases B1 and B2 respectively. We must show that cylinder CD is to cylinder EF as base B1 is to base B2. We treat the cone case afterward.\n\n**Step 2.** Suppose, for the sake of contradiction, that base B1 is to base B2 not as cylinder CD is to cylinder EF, but rather as cylinder CD is to some magnitude S. First, let S be less than cylinder EF [D5.5].\n\n**Step 3.** Since S is less than cylinder EF, there is a solid difference by which cylinder EF exceeds S [CN5]. By repeatedly bisecting the circular segments between an inscribed polygon and circle B2, we can inscribe a polygon Q2 in circle B2 such that the cylindrical segments between the prism on Q2 and cylinder EF are together less than the excess of cylinder EF over S [10.1]. Thus the prism on Q2 with the same height as the cylinders is greater than S.\n\n**Step 4.** Inscribe in circle B1 a polygon Q1 similar to Q2 [6.18]. Since Q1 and Q2 are similar polygons inscribed in circles B1 and B2, by 12.1 we have Q1 : Q2 = (square on diameter of B1) : (square on diameter of B2). By 12.2, circles B1 and B2 are as the squares on their diameters, hence Q1 : Q2 = B1 : B2 [5.11].\n\n**Step 5.** Consider the prisms P1 and P2 erected on the polygonal bases Q1 and Q2 respectively, both having the same height as the cylinders. Decompose each polygon into triangles from one vertex. The prisms on the resulting triangular bases have equal heights and, by 12.7, each such triangular prism equals three pyramids of equal height with the same triangular base. By 12.5, pyramids of the same height with triangular bases are as their bases, hence the triangular prisms of the same height are as their triangular bases. Summing these proportionally by 5.24, prism P1 is to prism P2 as the total polygonal base Q1 is to Q2.\n\n**Step 6.** From Steps 4 and 5, P1 : P2 = Q1 : Q2 = B1 : B2 [5.11, CN1]. But by hypothesis B1 : B2 = CD : S, so P1 : P2 = CD : S [5.11].\n\n**Step 7.** Now prism P1 is contained in cylinder CD, so P1 is less than or equal to CD [CN5]. Since P1 : P2 = CD : S and P1 < CD (or P1 = CD), it follows that P2 < S [5.14]. But we established in Step 3 that P2 > S. This is a contradiction.\n\n**Step 8.** Now suppose S is greater than cylinder EF. Then by inverting the proportion, B2 : B1 = EF : S' where S' is less than cylinder CD [5.7.corollary, D5.13]. Applying the same argument as above with the roles of the two cylinders interchanged, we again reach a contradiction by Steps 3 through 7.\n\n**Step 9.** Since S can be neither less than nor greater than cylinder EF, we conclude S equals cylinder EF. Therefore base B1 is to base B2 as cylinder CD is to cylinder EF [D5.5].\n\n**Step 10.** Now for the cones. Let cones G and H have the same circular bases B1 and B2 respectively, and the same height as the cylinders CD and EF. By 12.10, cone G is one-third of cylinder CD, and cone H is one-third of cylinder EF.\n\n**Step 11.** Since cylinder CD is to cylinder EF as B1 is to B2 (proved above), and cone G is one-third of cylinder CD while cone H is one-third of cylinder EF, we have cone G is to cone H as cylinder CD is to cylinder EF [5.15]. Therefore cone G is to cone H as base B1 is to base B2 [5.11].\n\n**Step 12.** Hence cones and cylinders which are of the same height are to one another as their bases. Q.E.D.\n\n**USED:** 10.1, 12.1, 12.10, 12.2, 12.5, 12.7, 5.11, 5.14, 5.15, 5.24, 5.7, 6.18, CN1, CN5, D5.13, D5.5\n**Human refs (from References field):** 10.1, 12.1, 12.10, 12.2, 12.6, 5.11, 5.16\n**Jaccard:** 0.278 — AI adds ['12.5', '12.7', '5.14', '5.15', '5.24', '5.7', '6.18', 'CN1', 'CN5', 'D5.13', 'D5.5']; Human adds ['12.6', '5.16']",
+  "ai_used": [
+    "10.1",
+    "12.1",
+    "12.10",
+    "12.2",
+    "12.5",
+    "12.7",
+    "5.11",
+    "5.14",
+    "5.15",
+    "5.24",
+    "5.7",
+    "6.18",
+    "CN1",
+    "CN5",
+    "D5.13",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "10.1",
+    "12.1",
+    "12.10",
+    "12.2",
+    "12.6",
+    "5.11",
+    "5.16"
+  ],
+  "ai_only": [
+    "12.5",
+    "12.7",
+    "5.14",
+    "5.15",
+    "5.24",
+    "5.7",
+    "6.18",
+    "CN1",
+    "CN5",
+    "D5.13",
+    "D5.5"
+  ],
+  "heath_only": [
+    "12.6",
+    "5.16"
+  ],
+  "jaccard": 0.278,
+  "proof_summary": "**Step 1.** Let there be two cylinders CD and EF of the same height, with circular bases B1 and B2 respectively. We must show that cylinder CD is to cylinder EF as base B1 is to base B2. We treat the "
+}

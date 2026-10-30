@@ -1,0 +1,36 @@
+{
+  "proposition": "10.83",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, B are collinear with C between A and B; BC is an annex to AB so AC + CB = AB",
+      "type": "collinear"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Points A, D, B are collinear with D between A and B; BD is another annex to AB so AD + DB = AB",
+      "type": "collinear"
+    },
+    {
+      "step": "Step 8",
+      "claim": "AB = AC + BC used in Prop 2.7 algebraic identity; collinear arrangement assumed",
+      "type": "collinear"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AC = AB - BC and AD = AB - BD; collinear subtraction",
+      "type": "collinear"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Difference of squares identity sq(BC) - sq(BD) = (BC+BD)(BC-BD); purely algebraic",
+      "type": "algebraic_identity"
+    }
+  ],
+  "configuration_map": "All points A, C, D, B lie on a single straight line, with C and D between A and B. BC and BD are annexes to AB. The entire proof operates on commensurability relations between lengths (AB, BC, BD, AC, AD, BC-BD, BC+BD) and areas (squares on these lines and rectangles contained by pairs of them). No triangles, circles, angles, or other geometric figures are constructed. The configuration is trivially consistent throughout.",
+  "skip_reason": "Proposition 10.83 is a purely algebraic/commensurability proof from the algebraic portion of Book 10. The proof establishes uniqueness of an annex by contradiction, reasoning entirely about whether areas are rational or medial and whether magnitudes are commensurable or incommensurable. The only geometric structure is collinear points on a single line. There are no geometric configuration claims (no triangles, circles, angles, inside/outside relationships, ray orderings, or angle decompositions) to check for consistency."
+}

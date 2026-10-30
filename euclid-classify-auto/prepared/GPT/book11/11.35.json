@@ -1,0 +1,59 @@
+{
+  "proposition": "11.35",
+  "book": 11,
+  "statement": "If there be two equal plane angles, and on their vertices there be set up elevated straight lines containing equal angles with the original straight lines respectively, if on the elevated straight lines points be taken at random and perpendiculars be drawn from them to the planes in which the original angles are, and if from the points so arising in the planes straight lines be joined to the vertices of the original angles, they will contain, with the elevated straight lines, equal angles.",
+  "heath_proof": "Let the angles BAC, EDF be two equal rectilineal angles, and from the points A, D let the elevated straight lines AG, DM be set up containing, with the original straight lines, equal angles respectively, namely, the angle MDE to the angle GAB and the angle MDF to the angle GAC, let points G, M be taken at random on AG, DM, let GL, MN be drawn from the points G, M perpendicular to the planes through BA, AC and ED, DF, and let them meet the planes at L, N, and let LA, ND be joined; I say that the angle GAL is equal to the angle MDN. Let AH be made equal to DM, and let HK be drawn through the point H parallel to GL. But GL is perpendicular to the plane through BA, AC; therefore HK is also perpendicular to the plane through. BA, AC. [XI. 8] From the points K, N let KC, NF, KB, NE be drawn perpendicular to the straight lines AC, DF, AB, DE, and let HC, CB, MF, FE be joined. Since the square on HA is equal to the squares on HK, KA, and the squares on KC, CA are equal to the square on KA, [I. 47] therefore the square on HA is also equal to the squares on HK, KC, CA. But the square on HC is equal to the squares on HK, KC; [I. 47] therefore the square on HA is equal to the squares on HC, CA. Therefore the angle HCA is right. [I. 48] For the same reason the angle DFM is also right. Therefore the angle ACH is equal to the angle DFM. But the angle HAC is also equal to the angle MDF. Therefore MDF, HAC are two triangles which have two angles equal to two angles respectively, and one side equal to one side, namely, that subtending one of the equal angles, that is, HA equal to MD; therefore they will also have the remaining sides equal to the remaining sides respectively. [I. 26] Therefore AC is equal to DF. Similarly we can prove that AB is also equal to DE. Since then AC is equal to DF, and AB to DE, the two sides CA, AB are equal to the two sides FD, DE. But the angle CAB is also equal to the angle FDE; therefore the base BC is equal to the base EF, the triangle to the triangle, and the remaining angles to the remaining angles; [I. 4] therefore the angle ACB is equal to the angle DFE. But the right angle ACK is also equal to the right angle DFN; therefore the remaining angle BCK is also equal to the remaining angle EFN. For the same reason the angle CBK is also equal to the angle FEN. Therefore BCK, EFN are two triangles which have two angles equal to two angles respectively, and one side equal to one side, namely, that adjacent to the equal angles, that is, BC equal to EF; therefore they will also have the remaining sides equal to the remaining sides. [I. 26] Therefore CK is equal to FN. But AC is also equal to DF; therefore the two sides AC, CK are equal to the two sides DF, FN; and they contain right angles. Therefore the base AK is equal to the base DN. [I. 4] And, since AH is equal to DM, the square on AH is also equal to the square on DM. But the squares on AK, KH are equal to the square on AH, for the angle AKH is right; [I. 47] and the squares on DN, NM are equal to the square on DM, for the angle DNM is right; [I. 47] therefore the squares on AK, KH are equal to the squares on DN, NM; and of these the square on AK is equal to the square on DN; therefore the remaining square on KH is equal to the square on NM; therefore HK is equal to MN. And, since the two sides HA, AK are equal to the two sides MD, DN respectively, and the base HK was proved equal to the base MN, therefore the angle HAK is equal to the angle MDN. [I. 8]",
+  "ai_proof_text": "11.35\n**Statement:** If there be two equal plane angles, and on their vertices there be set up elevated straight lines containing equal angles with the original straight lines respectively, if on the elevated straight lines points be taken at random and perpendiculars be drawn from them to the planes in which the original angles are, and if from the points so arising in the planes straight lines be joined to the vertices of the original angles, they will contain, with the elevated straight lines, equal angles.\n\n**Step 1.** Let the equal plane angles be ∠B₀AC₀ and ∠E₀DF₀, in planes α and β. Let X and Y be the arbitrary points on the elevated rays, so that ∠B₀AX = ∠E₀DY and ∠C₀AX = ∠F₀DY. Let XU and YV be their perpendiculars to α and β. Draw the joins required below by P1; every triangle used is planar by 11.2. We must prove ∠XAU = ∠YDV. If either elevated ray is perpendicular to its base plane, the given angle equalities and 11.4 make the other perpendicular also, and both inclinations are right (D11.3, P4). Thus consider the nonperpendicular case, in which U ≠ A and V ≠ D.\n\n**Step 2.** Our route is to make the elevated segments equal and then compare triangles on a transversal through one perpendicular foot. By cutting the longer of AX and DY, choose G on AX and H on DY with AG = DH (1.3). In triangles AXU and DYV, draw GP parallel to XU and HQ parallel to YV, meeting AU and DV at P and Q respectively; retain the original perpendicular wherever the endpoint was not changed (1.31). These intersections lie on the corresponding segments, by the parallel-side construction and 6.2. Moreover, GP is perpendicular to α and HQ to β (11.8). Since the respective rays have not changed, ∠GAP = ∠XAU and ∠HDQ = ∠YDV (D1.9). It therefore suffices to prove ∠GAP = ∠HDQ.\n\n**Step 3.** Through P draw a straight line in α which does not pass through A and is not parallel to either original arm. Let it meet the complete straight lines AB₀ and AC₀ at B and C respectively (P1, P2, D1.23). Thus A, B, C are not collinear. Interchange the names of the two arms in both configurations if necessary so that B ≠ P; this is possible because P ≠ A and the two arms meet only at A.\n\n**Step 4.** On the corresponding complete lines DE₀ and DF₀ take E and F with DE = AB and DF = AC, choosing the original or opposite ray according as B and C lie on the original or opposite rays from A (P2, 1.3). We then have\n∠BAC = ∠EDF,  ∠BAG = ∠EDH,  and  ∠CAG = ∠FDH.\nIndeed, reversing an arm replaces the relevant angle by its supplement; doing so in both configurations preserves equality, since all right angles are equal and equal angles subtracted from two right angles leave equal remainders (1.13, P4, CN3).\n\n**Step 5.** Apply 1.4 to triangles ABC and DEF, using AB = DE, AC = DF, and ∠BAC = ∠EDF. Thus BC = EF and ∠ABC = ∠DEF. Apply 1.4 also to triangles ABG and DEH, and to triangles ACG and DFH, using AG = DH and the corresponding equal angles from Step 4. This gives BG = EH and CG = FH.\n\n**Step 6.** The three sides of triangle GBC are now respectively equal to those of triangle HEF. Therefore 1.8, naturally applicable because all three side equalities are known, gives ∠GBC = ∠HEF.\n\n**Step 7.** On the complete line EF choose R with ER = BP. Choose R on the ray EF if P is on the ray BC, and on the opposite ray from E otherwise (P2, 1.3). Since B ≠ P, also E ≠ R. The angle equalities in Steps 5 and 6 now give\n∠ABP = ∠DER  and  ∠GBP = ∠HER.\nWhen P is on the ray BC these are the equalities already obtained; otherwise they are equal supplements of those angles (1.13, P4, CN3). This construction therefore covers an exterior perpendicular foot as well as an interior one.\n\n**Step 8.** In triangles ABP and DER, we have AB = DE, BP = ER, and the equal included angles established in Step 7. Hence AP = DR (1.4). Similarly, triangles GBP and HER have GB = HE, BP = ER, and equal included angles; consequently GP = HR and ∠GPB = ∠HRE (1.4). Since GP is perpendicular to α and PB lies in α, ∠GPB is right (D11.3). Thus HR is perpendicular to EF.\n\n**Step 9.** Compare triangles AGP and DHR. Their three corresponding sides are equal: AG = DH by construction, AP = DR by Step 8, and GP = HR by Step 8. Therefore ∠GPA = ∠HRD and ∠GAP = ∠HDR (1.8). But ∠GPA is right because GP is perpendicular to α (D11.3). Hence HR is perpendicular to DR also.\n\n**Step 10.** The lines RE and RD are distinct intersecting lines in β: E and R lie on EF, whereas D does not. Since HR is perpendicular to both, it is perpendicular to β (11.4). The given auxiliary perpendicular HQ is also perpendicular to β. If R and Q were distinct, triangle HRQ would have right angles at both R and Q (D11.3), contradicting 1.17, which says that any two angles of a triangle are together less than two right angles. Therefore R = Q.\n\n**Step 11.** Substituting R = Q in the equality from Step 9 yields ∠GAP = ∠HDQ. By Step 2 these are respectively ∠XAU and ∠YDV. Hence ∠XAU = ∠YDV (CN1): the joins from the perpendicular feet to the original vertices contain equal angles with the elevated straight lines, as required.\n\n**USED:** 1.13, 1.17, 1.3, 1.31, 1.4, 1.8, 11.2, 11.4, 11.8, 6.2, CN1, CN3, D1.23, D1.9, D11.3, P1, P2, P4\n**Human refs (from References field):** 1.26, 1.4, 1.47, 1.48, 1.8, 11.8\n**Jaccard:** 0.143 — AI adds ['1.13', '1.17', '1.3', '1.31', '11.2', '11.4', '6.2', 'CN1', 'CN3', 'D1.23', 'D1.9', 'D11.3', 'P1', 'P2', 'P4']; Human adds ['1.26', '1.47', '1.48']",
+  "ai_used": [
+    "1.13",
+    "1.17",
+    "1.3",
+    "1.31",
+    "1.4",
+    "1.8",
+    "11.2",
+    "11.4",
+    "11.8",
+    "6.2",
+    "CN1",
+    "CN3",
+    "D1.23",
+    "D1.9",
+    "D11.3",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.26",
+    "1.4",
+    "1.47",
+    "1.48",
+    "1.8",
+    "11.8"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.17",
+    "1.3",
+    "1.31",
+    "11.2",
+    "11.4",
+    "6.2",
+    "CN1",
+    "CN3",
+    "D1.23",
+    "D1.9",
+    "D11.3",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [
+    "1.26",
+    "1.47",
+    "1.48"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let the equal plane angles be ∠B₀AC₀ and ∠E₀DF₀, in planes α and β. Let X and Y be the arbitrary points on the elevated rays, so that ∠B₀AX = ∠E₀DY and ∠C₀AX = ∠F₀DY. Let XU and YV be thei"
+}

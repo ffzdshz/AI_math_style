@@ -1,0 +1,37 @@
+{
+  "proposition": "10.5",
+  "book": 10,
+  "statement": "Commensurable magnitudes have to one another the ratio which a number has to a number.",
+  "heath_proof": "Let A, B be commensurable magnitudes; I say that A has to B the ratio which a number has to a number. For, since A, B are commensurable, some magnitude will measure them. Let it measure them, and let it be C. And, as many times as C measures A, so many units let there be in D; and, as many times as C measures B, so many units let there be in E. Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [VII. Def. 20] therefore, inversely, as A is to C, so is D to the unit. [cf. V. 7] Again, since C measures B according to the units in E, while the unit also measures E according to the units in it, therefore the unit measures E the same number of times as C measures B; therefore, as C is to B, so is the unit to E. But it was also proved that, as A is to C, so is D to the unit; therefore, ex aequali, as A is to B, so is the number D to E. [V. 22]  Therefore the commensurable magnitudes A, B have to one another the ratio which the number D has to the number E.",
+  "ai_proof_text": "10.5\n**Statement:** Commensurable magnitudes have to one another the ratio which a number has to a number.\n\n**Step 1.** Let A and B be commensurable magnitudes. By D10.1.1, there exists a magnitude C which measures both A and B.\n\n**Step 2.** Since C measures A, by D5.1 and D5.2, A is a multiple of C. Let A be the m-th multiple of C, that is, A = mC, where m is a number (D7.2). Similarly, since C measures B, let B be the n-th multiple of C, that is, B = nC, where n is a number.\n\n**Step 3.** We must show that A : B :: m : n. By D5.5, this requires that for any positive integers s and t: if s*m > t*n then sA > tB; if s*m = t*n then sA = tB; and if s*m < t*n then sA < tB.\n\n**Step 4.** Since A = mC (that is, A is the m-th multiple of C), by 5.3 the s-th equimultiple of A equals the (s*m)-th multiple of C, so sA = (sm)C. Similarly, since B = nC, the t-th equimultiple of B equals the (t*n)-th multiple of C, so tB = (tn)C.\n\n**Step 5.** Suppose sm > tn. Then sm = tn + r for some positive remainder r. Hence (sm)C = (tn)C + rC, and by CN5 the whole (sm)C is greater than the part (tn)C. Therefore sA > tB.\n\n**Step 6.** Suppose sm = tn. Then (sm)C and (tn)C are the same multiple of C, so sA = tB.\n\n**Step 7.** Suppose sm < tn. By the same reasoning as Step 5 (with roles exchanged), (tn)C > (sm)C, so tB > sA, that is, sA < tB.\n\n**Step 8.** Since for every pair of positive integers s and t, the multiples sA and tB compare in the same way as the numbers sm and tn respectively, by D5.5 the ratio A : B is the same as the ratio m : n.\n\n**Step 9.** Since m and n are numbers (D7.2), A and B have to one another the ratio which a number has to a number. Q.E.D.\n\n**USED:** 5.3, CN5, D10.1.1, D5.1, D5.2, D5.5, D7.2\n**Human refs (from References field):** 5.22, 5.7, D7.20\n**Jaccard:** 0.000 — AI adds ['5.3', 'CN5', 'D10.1.1', 'D5.1', 'D5.2', 'D5.5', 'D7.2']; Human adds ['5.22', '5.7', 'D7.20']",
+  "ai_used": [
+    "5.3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2",
+    "D5.5",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "5.22",
+    "5.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "5.3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2",
+    "D5.5",
+    "D7.2"
+  ],
+  "heath_only": [
+    "5.22",
+    "5.7",
+    "D7.20"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be commensurable magnitudes. By D10.1.1, there exists a magnitude C which measures both A and B.  **Step 2.** Since C measures A, by D5.1 and D5.2, A is a multiple of C. Let A "
+}

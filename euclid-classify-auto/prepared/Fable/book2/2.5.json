@@ -1,0 +1,40 @@
+{
+  "proposition": "2.5",
+  "book": 2,
+  "statement": "If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half.",
+  "heath_proof": "For let a straight line AB be cut into equal segments at C and into unequal segments at D; I say that the rectangle contained by AD, DB together with the square on CD is equal to the square on CB. For let the square CEFB be described on CB, [I. 46] and let BE be joined; through D let DG be drawn parallel to either CE or BF, through H again let KM be drawn parallel to either AB or EF, and again through A let AK be drawn parallel to either CL or BM. [I. 31]  Then, since the complement CH is equal to the complement HF, [I. 43] let DM be added to each; therefore the whole CM is equal to the whole DF. But CM is equal to AL, since AC is also equal to CB; [I. 36]therefore AL is also equal to DF. Let CH be added to each; therefore the whole AH is equal to the gnomon NOP. But AH is the rectangle AD, DB, for DH is equal to DB, therefore the gnomon NOP is also equal to the rectangle AD, DB. Let LG, which is equal to the square on CD, be added to each; therefore the gnomon NOP and LG are equal to the rectangle contained by AD, DB and the square on CD. But the gnomon NOP and LG are the whole square CEFB, which is described on CB; therefore the rectangle contained by AD, DB together with the square on CD is equal to the square on CB.",
+  "ai_proof_text": "2.5\n**Statement:** If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half.\n\n**Step 1.** Let the straight line AB be cut into equal segments at C, so that AC = CB, and into unequal segments at D, so that AD is not equal to DB; then D is a point of AB other than C. If D lies between A and C, interchange the names of A and B; so we may suppose that D lies between C and B. We must show that the rectangle contained by AD, DB together with the square on CD is equal to the square on CB.\n\n**Step 2.** On CB describe the square CEFB [1.46], with CE and BF the sides at right angles to CB and EF the side opposite to CB; by the construction of 1.46, CE is parallel to BF and CB is parallel to EF. Join BE [P1]; BE is a diameter of the square CEFB.\n\n**Step 3.** Through D draw DG parallel to CE [1.31]. Since D lies between C and B, DG runs across the square from the side CB to the side EF and cuts the diameter BE; let H be the point where DG cuts BE, and G the point where it meets EF. Through H draw the straight line KM parallel to AB [1.31], meeting CE at L and BF at M. Through A draw AK parallel to CE [1.31], meeting KM at K.\n\n**Step 4.** By construction DG and AK are parallel to CE, and KM is parallel to AB, while CE and BF are at right angles to CB; hence the quadrilaterals CDHL, DBMH, LHGE, HMFG, ACLK and ADHK cut off in the figure are all parallelograms, and their angles, like those of the square, are right angles. In the square CEFB with diameter BE, the parallelograms DBMH (call it DM) and LHGE (call it LG) are the parallelograms about the diameter, since their diameters HB and HE lie along BE; and CDHL (call it CH) and HMFG (call it HF) are their complements.\n\n**Step 5.** Since CH and HF are the complements of the parallelograms about the diameter BE of the parallelogram CEFB, the complement CH is equal to the complement HF [1.43].\n\n**Step 6.** Add the parallelogram DM to each. CH together with DM is the whole parallelogram CBML (call it CM), and HF together with DM is the whole parallelogram DBFG (call it DF). Therefore CM = DF [CN2].\n\n**Step 7.** The parallelograms ACLK (call it AL) and CBML (that is, CM) stand on the equal bases AC, CB and lie in the same parallels AB, KM. Therefore AL = CM [1.36].\n\n**Step 8.** Since AL = CM and CM = DF, AL = DF [CN1].\n\n**Step 9.** Add CH to each. AL together with CH is the whole parallelogram ADHK (call it AH). DF together with CH consists of the parallelogram DM about the diameter together with its two complements CH and HF, which is a gnomon [D2.2]; call it the gnomon NOP. It is the square CEFB with LG removed. Therefore AH = gnomon NOP [CN2].\n\n**Step 10.** DM is a parallelogram about the diameter BE of the square CEFB; therefore DM is itself a square [2.4, Porism: in square areas the parallelograms about the diameter are squares]. A square is equilateral [D1.22]; hence DH = DB.\n\n**Step 11.** AH is a rectangular parallelogram whose right angle at D is contained by AD and DH; so AH is the rectangle contained by AD, DH [D2.1]. Since DH = DB, AH is the rectangle contained by AD, DB. Consequently, by Step 9, the gnomon NOP is equal to the rectangle contained by AD, DB.\n\n**Step 12.** LG is also a parallelogram about the diameter BE of the square CEFB, so LG is a square [2.4, Porism]. Its side LH is equal to CD, because CD and LH are opposite sides of the parallelogram CH [1.34]. Therefore LG is a square described on a straight line equal to CD, that is, LG is equal to the square on CD.\n\n**Step 13.** Add LG to each of the equals in Step 11. Then the gnomon NOP together with LG is equal to the rectangle contained by AD, DB together with the square on CD [CN2].\n\n**Step 14.** But the gnomon NOP together with LG is the whole square CEFB, which is the square described on CB. Therefore the rectangle contained by AD, DB together with the square on CD is equal to the square on CB [CN1].\n\nTherefore, if a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half. Q.E.D.\n\n**USED:** 1.31, 1.34, 1.36, 1.43, 1.46, 2.4, CN1, CN2, D1.22, D2.1, D2.2, P1\n**Human refs (from References field):** 1.31, 1.36, 1.43, 1.46\n**Jaccard:** 0.333 — AI adds ['1.34', '2.4', 'CN1', 'CN2', 'D1.22', 'D2.1', 'D2.2', 'P1']",
+  "ai_used": [
+    "1.31",
+    "1.34",
+    "1.36",
+    "1.43",
+    "1.46",
+    "2.4",
+    "CN1",
+    "CN2",
+    "D1.22",
+    "D2.1",
+    "D2.2",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.31",
+    "1.36",
+    "1.43",
+    "1.46"
+  ],
+  "ai_only": [
+    "1.34",
+    "2.4",
+    "CN1",
+    "CN2",
+    "D1.22",
+    "D2.1",
+    "D2.2",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "## Proposition 2.5 **Statement:** If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line "
+}

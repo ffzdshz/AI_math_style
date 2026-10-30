@@ -1,0 +1,31 @@
+{
+  "proposition": "5.15",
+  "book": 5,
+  "statement": "Parts have the same ratio as the same multiples of them taken in corresponding order.",
+  "heath_proof": "For let AB be the same multiple of C that DE is of F; I say that, as C is to F, so is AB to DE. For, since AB is the same multiple of C that DE is of F, as many magnitudes as there are in AB equal to C, so many are there also in DE equal to F. Let AB be divided into the magnitudes AG, GH, HB equal to C, and DE into the magnitudes DK, KL, LE equal to F; then the multitude of the magnitudes AG, GH, HB will be equal to the multitude of the magnitudes DK, KL, LE. And, since AG. GH, HB are equal to one another, and DK, KL, LE are also equal to one another, therefore, as AG is to DK, so is GH to KL, and HB to LE. [V. 7] Therefore, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents; [V. 12] therefore, as AG is to DK, so is AB to DE. But AG is equal to C and DK to F; therefore, as C is to F, so is AB to DE.",
+  "ai_proof_text": "5.15\n**Statement:** Parts have the same ratio as the same multiples of them taken in corresponding order.\n\n**Step 1.** Let A and B be magnitudes, and let C = mA and D = mB be equimultiples of A and B respectively, where m is a positive integer. We must show that A : B = C : D.\n\n**Step 2.** By Definition 5.5, to prove A : B = C : D, we must show that for any positive integers n and p, if we take equimultiples nA and nC of A and C, and equimultiples pB and pD of B and D, then nA and pB stand in the same order relation (greater, equal, or less) as nC and pD.\n\n**Step 3.** Take any positive integers n and p. Form the equimultiples nA, nC of A and C, and pB, pD of B and D. Since C = mA, by Proposition 5.3, nC = n(mA) = (nm)A. Similarly, since D = mB, by Proposition 5.3, pD = p(mB) = (pm)B.\n\n**Step 4.** Now by Proposition 5.3 applied in the reverse order, (nm)A = m(nA), since nA is the n-fold multiple of A and taking the m-fold multiple of nA yields the (mn)-fold multiple of A, which equals the (nm)-fold multiple as mn = nm. Similarly, (pm)B = m(pB). Therefore nC = m(nA) and pD = m(pB).\n\n**Step 5.** Case 1: Suppose nA = pB. Then nC = m(nA) = m(pB) = pD, where the middle equality follows from CN2 applied repeatedly: since nA = pB, adding nA to nA yields the same result as adding pB to pB, and continuing for all m copies, we obtain m(nA) = m(pB). Thus nA = pB implies nC = pD.\n\n**Step 6.** Case 2: Suppose nA > pB. Then nA exceeds pB by some magnitude E, so nA = pB + E where E is a positive magnitude. Now nC = m(nA) = m(pB + E). Since m(pB + E) consists of m copies of (pB + E) added together, by repeated application of CN2, this equals m(pB) + m(E), grouping the m copies of pB together and the m copies of E together. Since E is a positive magnitude, m(E) is also a positive magnitude. Therefore m(nA) = m(pB) + m(E) > m(pB) by CN5, since the whole m(pB) + m(E) is greater than the part m(pB). Hence nC > pD.\n\n**Step 7.** Case 3: Suppose nA < pB. By the same reasoning as Case 2 with the roles of nA and pB interchanged, pB exceeds nA by some magnitude F, and m(pB) = m(nA) + m(F) > m(nA) by CN5. Therefore pD > nC, that is, nC < pD.\n\n**Step 8.** In all three cases, the order relation between nA and pB is the same as the order relation between nC and pD. Since n and p were arbitrary positive integers, the condition of Definition 5.5 is satisfied. Therefore A : B = C : D, that is, parts have the same ratio as the same multiples of them taken in corresponding order.\n\n**USED:** 5.3, CN2, CN5, D5.2, D5.5\n**Human refs (from References field):** 5.12, 5.7\n**Jaccard:** 0.000 — AI adds ['5.3', 'CN2', 'CN5', 'D5.2', 'D5.5']; Human adds ['5.12', '5.7']",
+  "ai_used": [
+    "5.3",
+    "CN2",
+    "CN5",
+    "D5.2",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.12",
+    "5.7"
+  ],
+  "ai_only": [
+    "5.3",
+    "CN2",
+    "CN5",
+    "D5.2",
+    "D5.5"
+  ],
+  "heath_only": [
+    "5.12",
+    "5.7"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be magnitudes, and let C = mA and D = mB be equimultiples of A and B respectively, where m is a positive integer. We must show that A : B = C : D.  **Step 2.** By Definition 5."
+}

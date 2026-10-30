@@ -1,0 +1,13 @@
+{
+  "proposition": "8.4",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as Granularity difference (G). Both proofs share the same logical backbone: construct the continued proportion using LCM (7.34), establish proportionality of the constructed terms, and prove minimality via 7.20 and 7.35. The key citation difference is that Heath uses 7.13 (alternate proportion) and D7.20 (definition of proportional) to establish the ratio relationships, while the AI uses 7.17 (multiplication preserves ratios) as a higher-level result. The proof-tree containment test confirms that 7.13 appears inside Heath's own proof of 7.17, so the AI is citing 7.17 as a unit while Heath re-derives its internals inline. The remaining differences (D7.15, D7.2, D7.5 in ai_only; D7.20 in heath_only) are all definitions reflecting different but equivalent definitional grounding. The AI's approach of using a single general LCM-based construction rather than Heath's two separate cases (E measures K vs E does not measure K) is a presentational choice that does not alter the backbone. This is a same-backbone, different-depth situation characteristic of G.",
+  "jaccard": 0.333,
+  "ai_citations": "7.17|7.20|7.34|7.35|D7.15|D7.2|D7.5",
+  "heath_citations": "7.13|7.20|7.34|7.35|D7.20",
+  "ai_only": "7.17|D7.15|D7.2|D7.5",
+  "heath_only": "7.13|D7.20",
+  "audit_record": ""
+}

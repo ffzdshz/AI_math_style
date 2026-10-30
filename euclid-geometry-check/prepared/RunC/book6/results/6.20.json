@@ -1,0 +1,51 @@
+{
+  "proposition": "6.20",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Diagonals BE and EC from vertex E partition convex pentagon ABCDE into three non-overlapping triangles ABE, BCE, CDE",
+      "type": "polygon_triangulation"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diagonals GL and LH from vertex L partition convex pentagon FGHKL into three non-overlapping triangles FGL, GHL, HKL",
+      "type": "polygon_triangulation"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Ray BE falls between rays BA and BC at vertex B, so angle ABC = angle ABE + angle EBC",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Ray GL falls between rays GF and GH at vertex G, so angle FGH = angle FGL + angle LGH",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Ray CE falls between rays CB and CD at vertex C, so angle BCD = angle BCE + angle ECD",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Ray HL falls between rays HG and HK at vertex H, so angle GHK = angle GHL + angle LHK",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Steps 20-21",
+      "claim": "BE and GL are corresponding sides in both similarity pairs ABE~FGL and EBC~LGH, so the duplicate ratio of BE:GL gives both area ratios",
+      "type": "corresponding_side_identification"
+    },
+    {
+      "step": "Steps 23-24",
+      "claim": "EC and LH are corresponding sides in both similarity pairs EBC~LGH and ECD~LHK, so the duplicate ratio of EC:LH gives both area ratios",
+      "type": "corresponding_side_identification"
+    }
+  ],
+  "configuration_map": "Pentagon ABCDE with vertices in order A, B, C, D, E. Diagonals drawn from vertex E to non-adjacent vertices B and C, creating triangles ABE, EBC, ECD. At vertex B, diagonal BE lies inside the polygon (convex), so ray BE is between rays BA and BC. At vertex C, diagonal CE lies inside the polygon, so ray CE is between rays CB and CD. Pentagon FGHKL with vertices in order F, G, H, K, L. Diagonals drawn from vertex L to non-adjacent vertices G and H, creating triangles FGL, GLH, LHK. At vertex G, diagonal GL is between rays GF and GH. At vertex H, diagonal HL is between rays HG and HK. The triangle correspondences are: ABE~FGL (A-F, B-G, E-L), EBC~LGH (E-L, B-G, C-H), ECD~LHK (E-L, C-H, D-K). Shared corresponding sides BE=GL bridge the first two pairs; shared corresponding sides EC=LH bridge the second two pairs.",
+  "pass_reason": "All spatial claims are mutually consistent. The angle decompositions at vertices B and C (Steps 7 and 14) are valid because diagonals of a convex polygon lie in its interior, so the relevant rays fall between the outer rays as required. The corresponding-side identifications across similarity pairs (Steps 20-24) are verified correct by the triangle correspondences. The proof is predominantly proportional reasoning with straightforward, standard geometric constructions that introduce no configuration contradictions."
+}

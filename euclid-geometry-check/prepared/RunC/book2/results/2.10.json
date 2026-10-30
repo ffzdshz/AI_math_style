@@ -1,0 +1,31 @@
+{
+  "proposition": "2.10",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is a straight line bisected at C, and BD is added to it in a straight line, giving collinear points in order A, C, B, D",
+      "type": "collinear point arrangement"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line AD is composed of segments AB and BD, so AD is cut at B — B lies between A and D",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB is composed of segments AC and CB with AC = CB — C lies between A and B as midpoint",
+      "type": "betweenness and bisection"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AB is bisected at C and BD is added in a straight line — reaffirms collinear arrangement A-C-B-D",
+      "type": "collinear point arrangement"
+    }
+  ],
+  "configuration_map": "All four points A, C, B, D lie on a single straight line in the order A-C-B-D. Point C is the midpoint of segment AB (so AC = CB). Point D is an extension beyond B. This collinear arrangement is established in Step 1 and used consistently in all subsequent steps. No auxiliary constructions are made; the proof proceeds entirely by applying algebraic identities from Book 2 (Propositions 2.4, 2.6, 2.7) to this configuration.",
+  "pass_reason": "The proof is purely algebraic, applying Book 2 identities (2.4, 2.6, 2.7) to a simple collinear point arrangement A-C-B-D. The only spatial claims concern the collinear ordering and bisection of these points, which are trivially consistent with each other and with the proposition hypothesis. There are no angle decompositions, no interior/exterior claims, no auxiliary geometric constructions, and no ray orderings to create potential contradictions."
+}

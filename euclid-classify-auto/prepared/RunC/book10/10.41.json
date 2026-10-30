@@ -1,0 +1,41 @@
+{
+  "proposition": "10.41",
+  "book": 10,
+  "statement": "If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.",
+  "heath_proof": "For let two straight lines AB, BC incommensurable in square and satisfying the given conditions [X. 35] be added together; I say that AC is irrational. Let a rational straight line DE be set out, and let there be applied to DE the rectangle DF equal to the squares on AB, BC, and the rectangle GH equal to twice the rectangle AB, BC; therefore the whole DH is equal to the square on AC. [II. 4] Now, since the sum of the squares on AB, BC is medial, and is equal to DF, therefore DF is also medial. And it is applied to the rational straight line DE; therefore DG is rational and incommensurable in length with DE. [X. 22] For the same reason GK is also rational and incommensurable in length with GF, that is, DE. And, since the squares on AB, BC are incommensurable with twice the rectangle AB, BC, DF is incommensurable with GH; so that DG is also incommensurable with GK. [VI. 1, X. 11] And they are rational; therefore DG, GK are rational straight lines commensurable in square only; therefore DK is irrational and what is called binomial. [X. 36] But DE is rational; therefore DH is irrational, and the side of the square which is equal to it is irrational. [X. Def. 4] But AC is the side of the square equal to HD; therefore AC is irrational. And let it be called the side of the sum of two medial areas.",
+  "ai_proof_text": "10.41\n**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.\n\n**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, sq(AB) + sq(BC), is medial, the rectangle rect(AB, BC) is medial, and sq(AB) + sq(BC) is incommensurable with rect(AB, BC). Let AC = AB + BC. We must show that AC is irrational.\n\n**Step 2.** By 2.4, sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC). Thus sq(AC) is the sum of the area sq(AB) + sq(BC) and the area 2*rect(AB, BC).\n\n**Step 3.** Since rect(AB, BC) is medial, and 2*rect(AB, BC) has to rect(AB, BC) the ratio 2:1, which is the ratio of a number to a number, 2*rect(AB, BC) is commensurable with rect(AB, BC) by 10.6. Since rect(AB, BC) is medial and 2*rect(AB, BC) is commensurable with it, 2*rect(AB, BC) is also medial by 10.23 (applied to areas via D10.1.4, since the sides of squares equal to commensurable areas are commensurable).\n\n**Step 4.** Since sq(AB) + sq(BC) is incommensurable with rect(AB, BC), and 2*rect(AB, BC) is commensurable with rect(AB, BC) (Step 3), it follows by 10.13 that sq(AB) + sq(BC) is incommensurable with 2*rect(AB, BC).\n\n**Step 5.** Set out a rational straight line DE. Apply to DE a rectangle equal to sq(AB) + sq(BC), producing breadth DH, so that rect(DE, DH) = sq(AB) + sq(BC). Then apply to DE a rectangle equal to 2*rect(AB, BC), producing breadth HG, so that rect(DE, HG) = 2*rect(AB, BC). Then rect(DE, DG) = sq(AB) + sq(BC) + 2*rect(AB, BC) = sq(AC), where DG = DH + HG.\n\n**Step 6.** Since sq(AB) + sq(BC) is medial and rect(DE, DH) = sq(AB) + sq(BC), and DE is rational, by 10.22 the breadth DH is rational and incommensurable in length with DE.\n\n**Step 7.** Since 2*rect(AB, BC) is medial and rect(DE, HG) = 2*rect(AB, BC), and DE is rational, by 10.22 the breadth HG is rational and incommensurable in length with DE.\n\n**Step 8.** Since sq(AB) + sq(BC) is incommensurable with 2*rect(AB, BC) (Step 4), and rect(DE, DH) = sq(AB) + sq(BC) while rect(DE, HG) = 2*rect(AB, BC), these two rectangles sharing the common side DE are incommensurable. Therefore by 10.11, DH is incommensurable in length with HG.\n\n**Step 9.** DH and HG are each rational (Steps 6 and 7), meaning each is commensurable in square with the rational line DE. Since sq(DH) is commensurable with sq(DE) and sq(HG) is commensurable with sq(DE), by 10.12, sq(DH) is commensurable with sq(HG). Thus DH and HG are commensurable in square.\n\n**Step 10.** Since DH and HG are rational and commensurable in square (Step 9), yet incommensurable in length (Step 8), they are rational straight lines commensurable in square only. Therefore by 10.36, DG = DH + HG is irrational (a binomial straight line).\n\n**Step 11.** Since DE is rational and DG is irrational, DG is not commensurable with DE. If sq(AC) = rect(DE, DG) were rational, then by 10.20, DG would be rational and commensurable in length with DE, contradicting the fact that DG is irrational. Therefore sq(AC) is not rational, hence sq(AC) is irrational.\n\n**Step 12.** Since sq(AC) is irrational, AC is irrational by D10.1.4. And since sq(AC) = (medial area) + (medial area), namely the sum of two medial areas sq(AB) + sq(BC) and 2*rect(AB, BC), let AC be called the side of the sum of two medial areas. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.20, 10.22, 10.23, 10.36, 10.6, 2.4, D10.1.4\n**Human refs (from References field):** 10.11, 10.22, 10.35, 10.36, 2.4, 6.1, D10.1.4\n**Jaccard:** 0.417 — AI adds ['10.12', '10.13', '10.20', '10.23', '10.6']; Human adds ['10.35', '6.1']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.35",
+    "10.36",
+    "2.4",
+    "6.1",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.20",
+    "10.23",
+    "10.6"
+  ],
+  "heath_only": [
+    "10.35",
+    "6.1"
+  ],
+  "jaccard": 0.417,
+  "proof_summary": "**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, sq(AB) + sq(BC), is medial, the rectangle rect(AB, BC) is medial, and sq(AB) + sq(BC"
+}

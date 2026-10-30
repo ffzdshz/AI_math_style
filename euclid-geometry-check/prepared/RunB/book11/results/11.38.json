@@ -1,0 +1,76 @@
+{
+  "proposition": "11.38",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCDEFGH is a cube with ABCD and EFGH as opposite faces connected by edges AE, BF, CG, DH; AG is a space diagonal",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "K midpoint of AB, L midpoint of DC, M midpoint of EF, N midpoint of HG, O midpoint of AD, P midpoint of BC, R midpoint of FG, Q midpoint of EH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Plane alpha passes through K, L, N, M; plane beta passes through O, P, R, Q",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "KL is parallel to AD within face ABCD; KM is parallel to AE on face ABFE; LN is parallel to DH on face DCGH; KLNM is a parallelogram",
+      "type": "parallelism_and_figure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "OP is parallel to AB within face ABCD; OQ is parallel to AE on face ADHE; PR is parallel to BF on face BCGF; OPRQ is a parallelogram",
+      "type": "parallelism_and_figure"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Common section ST of planes alpha and beta is a straight line with S on face ABCD and T on face EFGH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "S is the intersection of KL and OP within face ABCD, hence S is the center of square ABCD and midpoint of diagonal AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "T is the intersection of MN and QR within face EFGH, hence T is the center of square EFGH and midpoint of diagonal EG",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "ACGE is a parallelogram (AE parallel and equal to CG implies AC parallel and equal to EG)",
+      "type": "parallelism_and_figure"
+    },
+    {
+      "step": "Step 11",
+      "claim": "In parallelogram ACGE, S is midpoint of AC, T is midpoint of EG; AS equals TG (both half of equal sides)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AS is parallel to TG (corresponding halves of parallel equal segments AC and EG in parallelogram ACGE)",
+      "type": "parallelism_and_figure"
+    },
+    {
+      "step": "Step 13",
+      "claim": "ASTG (vertex order A-S-G-T around boundary) is a parallelogram with AS and GT as opposite sides",
+      "type": "parallelism_and_figure"
+    },
+    {
+      "step": "Step 14",
+      "claim": "AG and ST are diagonals of parallelogram ASGT; they intersect at point U which bisects both",
+      "type": "ray_between"
+    }
+  ],
+  "configuration_map": "Cube with coordinates A=(0,0,0), B=(1,0,0), C=(1,1,0), D=(0,1,0), E=(0,0,1), F=(1,0,1), G=(1,1,1), H=(0,1,1). Midpoints: K=(0.5,0,0), L=(0.5,1,0), M=(0.5,0,1), N=(0.5,1,1), O=(0,0.5,0), P=(1,0.5,0), Q=(0,0.5,1), R=(1,0.5,1). Plane alpha is x=0.5; plane beta is y=0.5. Their intersection line ST goes from S=(0.5,0.5,0) to T=(0.5,0.5,1). S is confirmed as center of ABCD (midpoint of AC). T is confirmed as center of EFGH (midpoint of EG). The four points A, S, G, T are coplanar (scalar triple product = 0) and form parallelogram ASGT with sides AS||GT and SG||TA. Diagonals AG and ST of this parallelogram intersect at U=(0.5,0.5,0.5), the midpoint of both.",
+  "pass_reason": "All spatial claims are mutually consistent when verified with coordinates. The midpoints, planes, intersection points, parallelism claims, and the key parallelogram ASGT are all geometrically valid. The notation ASTG for the parallelogram is unconventional (boundary order is A-S-G-T) but the proof correctly identifies AG and ST as diagonals and the bisection conclusion follows validly from the parallelogram diagonal property."
+}

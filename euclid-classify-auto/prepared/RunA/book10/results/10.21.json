@@ -1,0 +1,13 @@
+{
+  "proposition": "10.21",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: they establish that the ratio of the square on a rational line to the rectangle equals the ratio of the two lines (via 6.1), deduce incommensurability of the square and rectangle, conclude the rectangle is irrational since the square is rational, and then conclude the side of the equal square is irrational. The key difference is that Heath cites 10.11 to pass from proportional incommensurability to area incommensurability in one step, while the AI breaks this into its constituent parts by citing 10.7 (incommensurable magnitudes do not have a number-to-number ratio) and 10.8 (magnitudes without such a ratio are incommensurable). The proof-tree containment test confirms this is a depth difference: Heath's own proof of 10.11 explicitly uses 10.7 and 10.8 internally. The AI's additional citations of 6.13, 6.17, D10.1.2, and D10.1.3 represent further over-citation where the AI explicitly constructs the mean proportional and cites definitions that Heath leaves implicit. Same backbone, different citation depth yields G.",
+  "jaccard": 0.222,
+  "ai_citations": "10.7|10.8|6.1|6.13|6.17|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|6.1|D10.1.4",
+  "ai_only": "10.7|10.8|6.13|6.17|D10.1.2|D10.1.3",
+  "heath_only": "10.11",
+  "audit_record": ""
+}

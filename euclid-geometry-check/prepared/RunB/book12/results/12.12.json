@@ -1,0 +1,36 @@
+{
+  "proposition": "12.12",
+  "run": "RunB",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A is a cone/cylinder with base diameter d_A and height h_A; B is similar with base diameter d_B and height h_B; similarity gives d_A:d_B = h_A:h_B",
+      "type": "dimensional_relationship"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Construct solid C with same base as A (diameter d_A) and same height as B (height h_B)",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "C and B have the same height h_B, so by 12.11 their ratio equals the ratio of their bases",
+      "type": "dimensional_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "A and C share the same base circle of diameter d_A; inscribed prisms with regular polygonal bases approximate the cylinders",
+      "type": "dimensional_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Cyl_A and Cyl_C share the same base as their respective cones A and C",
+      "type": "dimensional_relationship"
+    }
+  ],
+  "configuration_map": "Three solids in the configuration: A (base diameter d_A, height h_A), B (base diameter d_B, height h_B), and auxiliary solid C (base diameter d_A, height h_B). C is constructed to share one dimension with each of A and B: it has A's base and B's height. This allows comparison A:C via equal bases (ratio of heights) and C:B via equal heights (ratio of bases). The similarity condition d_A:d_B = h_A:h_B links the two comparisons. No complex spatial positioning is involved - only dimensional relationships between solids.",
+  "pass_reason": "The proof is predominantly proportional/algebraic. Its spatial claims are limited to dimensional relationships between three solids (shared bases and heights) which are all mutually consistent. There are no angle decompositions, point-inside-figure claims, ray orderings, or complex spatial arrangements that could produce configuration contradictions."
+}

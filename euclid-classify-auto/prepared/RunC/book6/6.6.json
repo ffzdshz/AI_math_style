@@ -1,0 +1,43 @@
+{
+  "proposition": "6.6",
+  "book": 6,
+  "statement": "If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.",
+  "heath_proof": "Let ABC, DEF be two triangles having one angle BAC equal to one angle EDF and the sides about the equal angles proportional, so that, as BA is to AC, so is ED to DF; I say that the triangle ABC is equiangular with the triangle DEF, and will have the angle ABC equal to the angle DEF, and the angle ACB to the angle DFE. For on the straight line DF, and at the points D, F on it, let there be constructed the angle FDG equal to either of the angles BAC, EDF, and the angle DFG equal to the angle ACB; [I. 23] therefore the remaining angle at B is equal to the remaining angle at G. [I. 32]  Therefore the triangle ABC is equiangular with the triangle DGF. Therefore, proportionally, as BA is to AC, so is GD to DF. [VI. 4] But, by hypothesis, as BA is to AC, so also is ED to DF; therefore also, as ED is to DF, so is GD to DF. [V. 11] Therefore ED is equal to DG; [V. 9] and DF is common; therefore the two sides ED, DF are equal to the two sides GD, DF; and the angle EDF is equal to the angle GDF; therefore the base EF is equal to the base GF, and the triangle DEF is equal to the triangle DGF, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend. [I. 4] Therefore the angle DFG is equal to the angle DFE, and the angle DGF to the angle DEF. But the angle DFG is equal to the angle ACB; therefore the angle ACB is also equal to the angle DFE. And, by hypothesis, the angle BAC is also equal to the angle EDF; therefore the remaining angle at B is also equal to the remaining angle at E; [I. 32] therefore the triangle ABC is equiangular with the triangle DEF.",
+  "ai_proof_text": "6.6\n**Statement:** If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.\n\n**Step 1.** Let triangles ABC and DEF have angle BAC equal to angle EDF, and let BA be to AC as ED is to DF. We are to show the triangles are equiangular with equal angles subtending corresponding sides.\n\n**Step 2.** On ray DE, cut off DG equal to AB (1.3). On ray DF, cut off DH equal to AC (1.3). Join GH (P1).\n\n**Step 3.** In triangles ABC and DGH, we have AB equal to DG (construction), AC equal to DH (construction), and angle BAC equal to angle GDH (since angle GDH is the same angle as angle EDF, which equals angle BAC by hypothesis). Therefore by 1.4 (SAS congruence), triangle ABC is congruent to triangle DGH. Hence BC equals GH, angle ABC equals angle DGH, and angle ACB equals angle DHG.\n\n**Step 4.** Since BA is to AC as ED is to DF (given), and DG equals BA while DH equals AC (construction), we have DG is to DH as ED is to DF (CN1, substituting equals).\n\n**Step 5.** By alternando (5.16), DG is to ED as DH is to DF.\n\n**Step 6.** Case 1: Suppose DG equals DE. Then from Step 5, since DG is to ED as DH is to DF, and DG equals ED, we have ED is to ED as DH is to DF. By 5.9, since ED has the same ratio to ED as it has to DF through DH, we conclude DH equals DF. Therefore triangle DGH coincides with triangle DEF, and since triangle ABC is congruent to triangle DGH (Step 3), the triangles ABC and DEF are equiangular: angle BAC equals angle EDF, angle ABC equals angle DEF, and angle ACB equals angle DFE.\n\n**Step 7.** Case 2: Suppose DG is not equal to DE. Since DG is to DH as ED is to DF (Step 4), if DG is less than DE then DH is less than DF, so G lies between D and E while H lies between D and F.\n\n**Step 8.** From Step 4, DG is to DH as ED is to DF. Equivalently, ED is to DF as DG is to DH (5.11, symmetry of equal ratios). Since DG is less than DE and DH is less than DF, by 5.19 the remainder GE is to the remainder HF as DE is to DF. That is, GE is to HF as DE is to DF.\n\n**Step 9.** Since DG is to DH as DE is to DF (Step 4) and GE is to HF as DE is to DF (Step 8), by 5.11 we have DG is to DH as GE is to HF. Applying alternando (5.16), DG is to GE as DH is to HF.\n\n**Step 10.** In triangle DEF, the point G lies on side DE and the point H lies on side DF, with DG being to GE as DH is to HF (Step 9). By the converse part of 6.2, the straight line GH is parallel to the remaining side EF.\n\n**Step 11.** Since GH is parallel to EF, and the straight line DE falls upon them, angle DGH equals angle DEF (1.29, alternate angles or corresponding angles with parallel lines). Similarly, since the straight line DF falls upon GH and EF, angle DHG equals angle DFE (1.29).\n\n**Step 12.** From Step 3, angle ABC equals angle DGH and angle ACB equals angle DHG. Combined with Step 11, angle ABC equals angle DEF and angle ACB equals angle DFE. Together with angle BAC equal to angle EDF (given), the two triangles ABC and DEF are equiangular, and the equal angles are precisely those which the corresponding sides subtend.\n\n**Step 13.** The case where DG is greater than DE is handled analogously: G falls on DE produced beyond E and H on DF produced beyond F, and the same proportional argument yields GH parallel to EF, leading to the same conclusion by 1.29.\n\n**Step 14.** Therefore, if two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles are equiangular and have those angles equal which the corresponding sides subtend. Q.E.F.\n\n**USED:** 1.29, 1.3, 1.4, 5.11, 5.16, 5.19, 5.9, 6.2, CN1, P1\n**Human refs (from References field):** 1.23, 1.32, 1.4, 5.11, 5.9, 6.4\n**Jaccard:** 0.231 — AI adds ['1.29', '1.3', '5.16', '5.19', '6.2', 'CN1', 'P1']; Human adds ['1.23', '1.32', '6.4']",
+  "ai_used": [
+    "1.29",
+    "1.3",
+    "1.4",
+    "5.11",
+    "5.16",
+    "5.19",
+    "5.9",
+    "6.2",
+    "CN1",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.23",
+    "1.32",
+    "1.4",
+    "5.11",
+    "5.9",
+    "6.4"
+  ],
+  "ai_only": [
+    "1.29",
+    "1.3",
+    "5.16",
+    "5.19",
+    "6.2",
+    "CN1",
+    "P1"
+  ],
+  "heath_only": [
+    "1.23",
+    "1.32",
+    "6.4"
+  ],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Let triangles ABC and DEF have angle BAC equal to angle EDF, and let BA be to AC as ED is to DF. We are to show the triangles are equiangular with equal angles subtending corresponding sid"
+}

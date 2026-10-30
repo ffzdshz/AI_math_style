@@ -1,0 +1,31 @@
+{
+  "proposition": "3.13",
+  "book": 3,
+  "statement": "A circle does not touch a circle at more points than one, whether it touch it internally or externally.",
+  "heath_proof": "For, if possible, let the circle ABDC touch the circle EBFD, first internally, at morepoints than one, namely D, B. Let the centre G of the circle ABDC, and the centre H of EBFD, be taken. Therefore the straight linejoined from G to H will fall on B, D. [III. 11] Let it so fall, as BGHD. Then, since the point G is the centre of the circle ABCD,BG is equal to GD;  therefore BG is greater than HD; therefore BH is much greater than HD. Again, since the point H is the centre of the circle EBFD,BH is equal to HD;  but it was also proved much greater than it: which is impossible. Therefore a circle does not touch a circle internally at more points than one. I say further that neither does it so touch it externally. For, if possible, let the circle ACK touch the circle ABDC at more points than one, namely A, C, and let AC be joined. Then, since on the circumference of each of the circlesABDC, ACK two points A, C have been taken at random, the straight line joining the points will fall within each circle; [III. 2] but it fell within the circle ABCD and outside ACK [III. Def. 3]: which is absurd. Therefore a circle does not touch a circle externally at more points than one. And it was proved that neither does it so touch it internally.",
+  "ai_proof_text": "3.13\n**Statement:** A circle does not touch a circle at more points than one, whether it touch it internally or externally.\n\n**Step 1.** Suppose, for the sake of contradiction, that a circle ABDC touches a circle ABEC at more than one point, namely at the points A and B. We consider two cases: internal and external tangency.\n\n**Step 2.** Case I: Suppose the circles touch one another internally at the two points A and B. By 3.1, find the centre G of circle ABDC and the centre H of circle ABEC.\n\n**Step 3.** By 3.11, if two circles touch one another internally, the straight line joining their centres, if produced, will fall on the point of contact. Therefore the line GH produced passes through the point of contact A, and by the same proposition applied to the point of contact B, the line GH produced also passes through B.\n\n**Step 4.** Thus A and B both lie on the straight line GH (produced if necessary). Since A and B are both on circle ABDC with centre G, we have GA = GB (by D1.15, all radii of a circle are equal).\n\n**Step 5.** Since A and B are distinct points both lying on the line through G, and GA = GB, the points A and B must lie on opposite sides of G along this line, each at distance GA from G.\n\n**Step 6.** Similarly, since A and B are both on circle ABEC with centre H, we have HA = HB (by D1.15).\n\n**Step 7.** Now H lies on line GH. Let GA = GB = r. Since A and B are on opposite sides of G along line GH, if H is at distance d from G along this line (with H on the same side as A, as required by internal tangency where one centre is inside the other circle), then HA = r - d and HB = r + d (or vice versa, taking unsigned distances along the line).\n\n**Step 8.** Since HA = HB (Step 6), we have r - d = r + d, which gives 2d = 0, so d = 0. This means G = H, that is, the two circles have the same centre.\n\n**Step 9.** But by 3.6, if two circles touch one another, they will not have the same centre. This contradicts the conclusion of Step 8. Therefore the assumption that the circles touch internally at two points is false.\n\n**Step 10.** Case II: Suppose the circles touch one another externally at the two points A and B. By 3.1, find the centre G of one circle and the centre H of the other.\n\n**Step 11.** By 3.12, if two circles touch one another externally, the straight line joining their centres will pass through the point of contact. Therefore line GH passes through A, and by the same proposition applied to B, line GH also passes through B.\n\n**Step 12.** Thus A and B both lie on segment GH. Since the tangency is external, each contact point lies between the two centres G and H (by 3.12). Therefore A and B are both between G and H on the line GH, meaning they are on the same side of G.\n\n**Step 13.** Since A and B are both on one circle with centre G, we have GA = GB (by D1.15). But A and B lie on the same ray from G (both between G and H). Two points on the same ray from a point at the same distance from that point must be the same point, so A = B.\n\n**Step 14.** This contradicts the assumption that A and B are two distinct points of tangency. Therefore the assumption that the circles touch externally at two points is false.\n\n**Step 15.** In both cases, the assumption that the circles touch at more than one point leads to a contradiction. Therefore a circle does not touch a circle at more points than one, whether it touch it internally or externally. Q.E.D.\n\n**USED:** 3.1, 3.11, 3.12, 3.6, D1.15\n**Human refs (from References field):** 3.11, 3.2, D3.3\n**Jaccard:** 0.143 — AI adds ['3.1', '3.12', '3.6', 'D1.15']; Human adds ['3.2', 'D3.3']",
+  "ai_used": [
+    "3.1",
+    "3.11",
+    "3.12",
+    "3.6",
+    "D1.15"
+  ],
+  "heath_refs": [
+    "3.11",
+    "3.2",
+    "D3.3"
+  ],
+  "ai_only": [
+    "3.1",
+    "3.12",
+    "3.6",
+    "D1.15"
+  ],
+  "heath_only": [
+    "3.2",
+    "D3.3"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Suppose, for the sake of contradiction, that a circle ABDC touches a circle ABEC at more than one point, namely at the points A and B. We consider two cases: internal and external tangency"
+}

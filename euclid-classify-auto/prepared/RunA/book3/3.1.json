@@ -1,0 +1,34 @@
+{
+  "proposition": "3.1",
+  "book": 3,
+  "statement": "To find the centre of a given circle.",
+  "heath_proof": "Let ABC be the given circle; thus it is required to find the centre of the circle ABC. Let a straight line AB be drawnthrough it at random, and let it be bisected at the point D; from D let DC be drawn at right angles to AB and let it be drawn through to E; let CE be bisected at F;I say that F is the centre of the circle ABC. For suppose it is not, but, if possible, let G be the centre, and let GA, GD, GB be joined. Then, since AD is equal to DB, and DG is common, the two sides AD, DG are equal to the two sides BD, DG respectively; and the base GA is equal to the base GB, for they areradii; therefore the angle ADG is equal to the angle GDB. [I. 8]  But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right; [I. Def. 10]therefore the angle GDB is right. But the angle FDB is also right; therefore the angle FDB is equal to the angle GDB, the greater to the less: which is impossible. Therefore G is not the centre of the circle ABC. Similarly we can prove that neither is any other point except F. Therefore the point F is the centre of the circle ABC.",
+  "ai_proof_text": "3.1\n**Statement:** To find the centre of a given circle.\n\n**Step 1.** Let ABC be the given circle. We wish to find its centre.\n\n**Step 2.** Draw any chord AB in the circle [P1]. Bisect AB at the point D [1.10].\n\n**Step 3.** From D, draw DC at right angles to AB [1.11]. Produce DC to meet the circle at E [P2]. Bisect CE at F [1.10].\n\n**Step 4.** I say that F is the centre of the circle ABC. Suppose it is not. If possible, let G, a point not on CE, be the centre. Join GA, GD, and GB [P1].\n\n**Step 5.** Since D is the midpoint of AB, we have DA = DB [D1.15, by construction in Step 2].\n\n**Step 6.** Since G is assumed to be the centre of the circle, GA = GB [D1.15].\n\n**Step 7.** In triangles GDA and GDB, we have DA = DB (Step 5), GA = GB (Step 6), and GD is common.\n\n**Step 8.** Therefore triangle GDA is congruent to triangle GDB, and hence angle GDA = angle GDB [1.8].\n\n**Step 9.** When a straight line standing on another straight line makes the adjacent angles equal to one another, each of the equal angles is a right angle [D1.10]. Therefore angle GDA is a right angle.\n\n**Step 10.** But angle FDA is also a right angle, since DC was drawn at right angles to AB at D (Step 3).\n\n**Step 11.** Therefore angle GDA = angle FDA [P4, since all right angles are equal].\n\n**Step 12.** But angle GDA is a part of angle FDA (since G is not on line CE, the angle GDA is less than or equal to FDA only if G lies on the same side; however, if G is off the line CE, then one of these angles is a proper part of the other). Since they are equal, yet the whole equals the part, this contradicts CN5, which states that the whole is greater than the part.\n\n**Step 13.** Therefore G cannot be the centre of the circle unless G lies on CE. Since the same argument applies for any point off the line CE, the centre must lie on CE.\n\n**Step 14.** By the same construction, if we were to draw another chord and its perpendicular bisector, the centre would have to lie on that perpendicular bisector as well. But we can establish that F is the centre directly: since F is the midpoint of the diameter CE (a chord through the centre lies on CE by the argument above), F is equidistant from C and E, and any chord through F would be bisected by the perpendicular from F, which is the defining property of the centre.\n\n**Step 15.** More precisely, suppose the centre is some other point F' on CE, with F' different from F. Since F' is the centre, F'C = F'E [D1.15]. But F is the midpoint of CE, so FC = FE. If F' is different from F and also on segment CE, then F'C and F'E cannot both be equal unless F' = F (for if F' is closer to C than F, then F'C < FC = FE < F'E, contradicting F'C = F'E). Therefore F' = F.\n\n**Step 16.** Therefore F is the centre of the circle ABC, which is what was required to find.\n\n**USED:** 1.10, 1.11, 1.8, CN5, D1.10, D1.15, P1, P2, P4\n**Human refs (from References field):** 1.8, D1.10\n**Jaccard:** 0.222 — AI adds ['1.10', '1.11', 'CN5', 'D1.15', 'P1', 'P2', 'P4']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.8",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.8",
+    "D1.10"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "CN5",
+    "D1.15",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let ABC be the given circle. We wish to find its centre.  **Step 2.** Draw any chord AB in the circle [P1]. Bisect AB at the point D [1.10].  **Step 3.** From D, draw DC at right angles to"
+}

@@ -1,0 +1,71 @@
+{
+  "proposition": "13.15",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB with AC = 2*CB, dividing AB in ratio 2:1",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies on semicircle ADB; CD is perpendicular to AB at C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle ADB is a right angle (angle in semicircle); CD perpendicular to hypotenuse AB; triangles BDC and BDA are similar",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Square EFGH lies in a plane with side EF = BD",
+      "type": "figure_construction"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Perpendiculars from E, F, G, H to the plane of EFGH are parallel to one another",
+      "type": "line_direction"
+    },
+    {
+      "step": "Step 7",
+      "claim": "K above E, L above F, M above G, N above H, each at perpendicular distance EF from the base plane",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EK parallel to FL (both perpendicular to same plane); KL parallel and equal to EF; KLMN is a square equal to EFGH; solid is a cube",
+      "type": "figure_construction"
+    },
+    {
+      "step": "Step 9",
+      "claim": "EG is diagonal of base square EFGH; angle EFG is right",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 10",
+      "claim": "GM perpendicular to plane EFGH implies angle EGM is a right angle; EM is the space diagonal",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 12",
+      "claim": "EGMK is a rectangle (EK parallel and equal to GM, both perpendicular to base); diagonals EM and GK bisect each other at O",
+      "type": "figure_construction"
+    },
+    {
+      "step": "Step 13",
+      "claim": "FHNL is a rectangle; diagonals FN and HL bisect each other at the same center O; O is equidistant from all 8 vertices",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Sphere centered at O with radius OE passes through all 8 vertices of the cube",
+      "type": "figure_construction"
+    }
+  ],
+  "configuration_map": "A, B are endpoints of the sphere diameter on a line. C is on AB with AC = 2*CB (one-third from B). D is on the semicircle above AB with CD perpendicular to AB. Square EFGH is the base of the cube in a plane, with side BD. K is directly above E, L above F, M above G, N above H, each at height EF perpendicular to the base plane. KLMN is the top square. The cube has 8 vertices: E, F, G, H (base) and K, L, M, N (top). O is the center of the cube, at the intersection of space diagonals EM, GK, FN, and HL. All vertices are equidistant from O. The space diagonal EM equals the sphere diameter AB.",
+  "pass_reason": "All spatial claims are mutually consistent. The cube construction is standard with perpendiculars from a square base. The space diagonal is correctly computed via two applications of the Pythagorean theorem (I.47) using right angles established by perpendicularity to a plane. The center O is correctly identified as the intersection of space diagonals of the cube, which is equidistant from all 8 vertices. No angle decomposition issues arise since no angle is written as a sum requiring ray-betweenness. No point is claimed in contradictory positions across different steps."
+}

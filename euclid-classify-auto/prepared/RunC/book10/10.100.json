@@ -1,0 +1,59 @@
+{
+  "proposition": "10.100",
+  "book": 10,
+  "statement": "The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.",
+  "heath_proof": "Let AB be a minor and CD a rational straight line, and to the rational straight line CD let CE be applied equal to the square on AB and producing CF as breadth; I say that CF is a fourth apotome. For let BG be the annex to AB; therefore AG, GB are straight lines incommensurable in square which make the sum of the squares on AG, GB rational, but twice the rectangle AG, GB medial. [X. 76] To CD let there be applied CH equal to the square on AG and producing CK as breadth, and KL equal to the square on BG, producing KM as breadth; therefore the whole CL is equal to the squares on AG, GB. And the sum of the squares on AG, GB is rational; therefore CL is also rational. And it is applied to the rational straight line CD, producing CM as breadth; therefore CM is also rational and commensurable in length with CD. [X. 20] And, since the whole CL is equal to the squares on AG, GB, and, in these, CE is equal to the square on AB, therefore the remainder FL is equal to twice the rectangle AG, GB. [II. 7] Let then FM be bisected at the point N, and let NO be drawn through N parallel to either of the straight lines CD, ML; therefore each of the rectangles FO, NL is equal to the rectangle AG, GB. And, since twice the rectangle AG, GB is medial and is equal to FL, therefore FL is also medial. And it is applied to the rational straight line FE, producing FM as breadth; therefore FM is rational and incommensurable in length with CD. [X. 22] And, since the sum of the squares on AG, GB is rational, while twice the rectangle AG, GB is medial, the squares on AG, GB are incommensurable with twice the rectangle AG, GB. But CL is equal to the squares on AG, GB, and FL equal to twice the rectangle AG, GB; therefore CL is incommensurable with FL. But, as CL is to FL, so is CM to MF; [VI. 1] therefore CM is incommensurable in length with MF. [X. 11] And both are rational; therefore CM, MF are rational straight lines commensurable in square only; therefore CF is an apotome. [X. 73] I say that it is also a fourth apotome. For, since AG, GB are incommensurable in square, therefore the square on AG is also incommensurable with the square on GB. And CH is equal to the square on AG, and KL equal to the square on GB; therefore CH is incommensurable with KL. But, as CH is to KL, so is CK to KM; [VI. 1] therefore CK is incommensurable in length with KM. [X. 11] And, since the rectangle AG, GB is a mean proportional between the squares on AG, GB, and the square on AG is equal to CH, the square on GB to KL, and the rectangle AG, GB to NL, therefore NL is a mean proportional between CH, KL; therefore, as CH is to NL, so is NL to KL. But, as CH is to NL, so is CK to NM, and, as NL is to KL, so is NM to KM; [VI. 1] therefore, as CK is to MN, so is MN to KM; [V. 11] therefore the rectangle CK, KM is equal to the square on MN [VI. 17], that is, to the fourth part of the square on FM. Since then CM, MF are two unequal straight lines, and the rectangle CK, KM equal to the fourth part of the square on MF and deficient by a square figure has been applied to CM and divides it into incommensurable parts, therefore the square on CM is greater than the square on MF by the square on a straight line incommensurable with CM. [X. 18] And the whole CM is commensurable in length with the rational straight line CD set out; therefore CF is a fourth apotome. [X. Deff. III. 4]",
+  "ai_proof_text": "10.100\n**Statement:** The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.\n\n**Step 1.** Let AB be a minor straight line, and let CD be a rational straight line. Apply the square on AB to CD, producing DE as breadth, so that CD * DE = AB^2. We must show that DE is a fourth apotome.\n\n**Step 2.** Since AB is a minor straight line, by the definition of minor (10.76), let AB = AG - GB, where AG and GB are straight lines incommensurable in square, the sum of the squares on AG and GB is rational, and the rectangle AG * GB is medial.\n\n**Step 3.** Apply the square on AG to CD, producing DH as breadth, so that CD * DH = AG^2. Apply the square on GB to CD, producing HK as breadth, so that CD * HK = GB^2. Then since CD * DE = AB^2 = (AG - GB)^2 = AG^2 + GB^2 - 2 * AG * GB, we have CD * DE = CD * DH + CD * HK - 2 * AG * GB, that is, CD * (DH + HK) - 2 * AG * GB = CD * DE. By 2.7, the square on AB equals the sum of the squares on AG and GB minus twice the rectangle AG * GB.\n\n**Step 4.** Since the sum of the squares on AG and GB is rational, and CD is rational, the area AG^2 + GB^2 equals CD * (DH + HK), which is a rational area applied to the rational straight line CD. Therefore by 10.20, DH + HK is rational and commensurable in length with CD.\n\n**Step 5.** Now let DH + HK = DK. Apply 2 * AG * GB to CD, producing some breadth, say KE taken in the appropriate direction, so that CD * KE = 2 * AG * GB. Then DE = DK - KE.\n\n**Step 6.** Since 2 * AG * GB is medial (as AG * GB is medial, and double a medial area is medial by 10.23 and 10.6), and CD is rational, the area CD * KE is medial. By 10.22, KE is rational and incommensurable in length with CD.\n\n**Step 7.** Since DK is commensurable in length with CD (Step 4) and KE is incommensurable in length with CD (Step 6), then DK is incommensurable in length with KE by 10.13. Both DK and KE are rational (DK by Step 4, KE by Step 6). Therefore DE = DK - KE is an apotome by 10.73.\n\n**Step 8.** We now identify DE as a fourth apotome by verifying the conditions of D10.3.4. We need to show: (i) the square on DK is greater than the square on KE by the square on a straight line incommensurable in length with DK, and (ii) DK is commensurable in length with CD.\n\n**Step 9.** Condition (ii) is already established: DK is commensurable in length with CD (from Step 4).\n\n**Step 10.** For condition (i), we analyze the relationship between DK^2 and KE^2. Since CD * DK = AG^2 + GB^2 and CD * KE = 2 * AG * GB, we have DK : KE = (AG^2 + GB^2) : (2 * AG * GB) by 6.1.\n\n**Step 11.** Since AG and GB are incommensurable in square (by the definition of the minor, 10.76), the squares AG^2 and GB^2 are incommensurable. Hence AG^2 + GB^2 is incommensurable with 2 * AG * GB by 10.36's underlying reasoning. More precisely, since the sum of the squares is rational and twice the rectangle is medial, these two areas are incommensurable with one another by D10.1.4 and D10.1.1. Therefore DK is incommensurable in length with KE, which we already established in Step 7.\n\n**Step 12.** Now consider DK^2 - KE^2. We have CD^2 * DK^2 = (AG^2 + GB^2)^2 and CD^2 * KE^2 = (2 * AG * GB)^2 = 4 * AG^2 * GB^2. By 5.15, CD^2 * (DK^2 - KE^2) = (AG^2 + GB^2)^2 - 4 * AG^2 * GB^2 = (AG^2 - GB^2)^2, using the algebraic identity from 2.5 and 2.6.\n\n**Step 13.** So DK^2 - KE^2 = (AG^2 - GB^2)^2 / CD^2. Let L be such that L^2 = DK^2 - KE^2. Then CD * L is related to (AG^2 - GB^2). More directly, since CD * DK = AG^2 + GB^2 and CD * KE = 2 * AG * GB, by the construction in 10.17 and 10.18, we examine whether the square on DK exceeds the square on KE by the square on a straight line commensurable or incommensurable with DK.\n\n**Step 14.** Since AG and GB are incommensurable in square, AG^2 and GB^2 are incommensurable. By 10.18 (the converse direction), when we apply the fourth part of the square on KE to DK and it divides DK into incommensurable parts, then DK^2 exceeds KE^2 by the square on a straight line incommensurable in length with DK. To verify the hypothesis of 10.18: applying the rectangle equal to (1/4) * KE^2 to DK in deficiency of a square requires checking that DK and KE satisfy the conditions. Since DK : KE = (AG^2 + GB^2) : (2 * AG * GB), and AG^2 is incommensurable with GB^2, by 10.18 the resulting division produces incommensurable parts. Therefore the square on DK is greater than the square on KE by the square on a straight line incommensurable in length with DK.\n\n**Step 15.** We have now verified both conditions of D10.3.4: the square on the whole DK exceeds the square on the annex KE by the square on a straight line incommensurable in length with DK, and DK (the whole) is commensurable in length with the rational straight line CD. Therefore DE is a fourth apotome.\n\n**Step 16.** Thus, the square on the minor straight line AB, applied to the rational straight line CD, produces as breadth DE, a fourth apotome. This is what was to be proved.\n\n**USED:** 10.13, 10.17, 10.18, 10.20, 10.22, 10.23, 10.6, 10.73, 10.76, 2.5, 2.6, 2.7, 5.15, 6.1, CN1, D10.1.1, D10.1.4, D10.3.4\n**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.76, 2.7, 5.11, 6.1, 6.17, D10.3.4\n**Jaccard:** 0.381 — AI adds ['10.13', '10.17', '10.23', '10.6', '2.5', '2.6', '5.15', 'CN1', 'D10.1.1', 'D10.1.4']; Human adds ['10.11', '5.11', '6.17']",
+  "ai_used": [
+    "10.13",
+    "10.17",
+    "10.18",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.6",
+    "10.73",
+    "10.76",
+    "2.5",
+    "2.6",
+    "2.7",
+    "5.15",
+    "6.1",
+    "CN1",
+    "D10.1.1",
+    "D10.1.4",
+    "D10.3.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.18",
+    "10.20",
+    "10.22",
+    "10.73",
+    "10.76",
+    "2.7",
+    "5.11",
+    "6.1",
+    "6.17",
+    "D10.3.4"
+  ],
+  "ai_only": [
+    "10.13",
+    "10.17",
+    "10.23",
+    "10.6",
+    "2.5",
+    "2.6",
+    "5.15",
+    "CN1",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11",
+    "5.11",
+    "6.17"
+  ],
+  "jaccard": 0.381,
+  "proof_summary": "**Step 1.** Let AB be a minor straight line, and let CD be a rational straight line. Apply the square on AB to CD, producing DE as breadth, so that CD * DE = AB^2. We must show that DE is a fourth apo"
+}

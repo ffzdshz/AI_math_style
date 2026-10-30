@@ -1,0 +1,38 @@
+{
+  "proposition": "3.7",
+  "book": 3,
+  "statement": "If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that will be greatest on which the centre is, the remainder of the same diameter will be least, and of the rest  the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.",
+  "heath_proof": "Let ABCD be a circle, and let AD be a diameter of it;on AD let a point F be taken which is not the centre of the circle, let E be the centre of the circle, and from F let straight lines FB, FC, FG fall upon the circle ABCD; I say that FA is greatest, FD is least, and of the rest FB isgreater than FC, and FC than FG. For let BE, CE, GE be joined. Then, since in any triangle two sides are greater than the remaining one, [I. 20]EB, EF are greater than BF. But AE is equal to BE; therefore AF is greater than BF. Again, since BE is equal to CE, and FE is common,the two sides BE, EF are equal to the two sides CE, EF. But the angle BEF is also greater than the angle CEF; therefore the base BF is greater than the base CF. [I. 24] For the same reason CF is also greater than FG. Again, since GF, FE are greater than EG, and EG is equal to ED, GF, FE are greater than ED. Let EF be subtracted from each; therefore the remainder GF is greater than the remainder FD.  Therefore FA is greatest, FD is least, and FB is greater than FC, and FC than FG. I say also that from the point F only two equal straight lines will fall on the circle ABCD, one on each side of theleast FD. For on the straight line EF, and at the point E on it, let the angle FEH be constructed equal to the angle GEF [I. 23], and let FH be joined. Then, since GE is equal to EH,and EF is common, the two sides GE, EF are equal to the two sides HE, EF; and the angle GEF is equal to the angle HEF;  therefore the base FG is equal to the base FH. [I. 4]  I say again that another straight line equal to FG will notfall on the circle from the point F. For, if possible, let FK so fall. Then, since FK is equal to FG, and FH to FG, FK is also equal to FH, the nearer to the straight line through the centre being thus equal to the more remote: which is impossible. Therefore another straight line equal to GF will not fall from the point F upon the circle; therefore only one straight line will so fall.",
+  "ai_proof_text": "3.7\n**Statement:** If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that will be greatest on which the centre is, the remainder of the same diameter will be least, and of the rest  the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.\n\n**Step 1.** Let AB be the diameter, O its centre, and P the given point. Name the endpoints so that their order is A, O, P, B. Thus PA passes through the centre, while PB is the remainder of the diameter. Join O to any circumference points used below. All such radii are equal to OA and OB. (D1.17, P1, D1.15.)\n\n**Step 2.** First prove the greatest-line assertion directly by the triangle inequality. For any circumference point X other than A or B, triangle OPX gives\nOP + OX > PX. (1.20.)\nSince OX = OA, it follows that\nPA = PO + OA = PO + OX > PX. (D1.15, CN2.)\nAlso PA > OA = OB > PB, because each whole segment exceeds its indicated part. Therefore PA is strictly greater than every other line from P to the circumference. (D1.15, CN5.)\n\n**Step 3.** In the same triangle,\nOP + PX > OX = OB = OP + PB. (1.20, D1.15.)\nRemoving the common segment OP gives PX > PB. Together with PA > PB from Step 2, this proves that PB is strictly the least of all the lines. (CN3, CN5.)\n\n**Step 4.** Take two points X and Y on either open semicircle, occurring in the order A, X, Y, B along its circumference. This is the order in which PX is nearer to PA than PY: within that half-plane, PX makes the smaller angle with PA. Since OP points towards B, the angle XOP contains the angle YOP as a proper part; hence ∠XOP > ∠YOP. (D1.17, CN5.) In triangles XOP and YOP, OX = OY and OP is common. Therefore PX > PY by the comparison of the sides opposite unequal included angles. (D1.15, 1.24.) This is the direct comparison to use, since the equal radii and the common side already supply its hypotheses.\n\n**Step 5.** Let X be any circumference point off AB. On the opposite side of AB construct a ray OX′ such that ∠POX′ = ∠POX, and produce it to meet the circumference at X′. (1.23, P2.) Now OX′ = OX, OP is common, and the included angles at O are equal. Consequently triangles OPX′ and OPX have PX′ = PX and ∠OPX′ = ∠OPX. (D1.15, 1.4.) Since PO and PA are the same ray, PX and PX′ also make equal angles with PA. They lie on opposite sides of the line containing PB.\n\n**Step 6.** The comparison in Step 4 also covers lines on opposite sides of AB. Indeed, replace either line by its equal partner from Step 5 on the side of the other. Both its length and its angle with PA are preserved. Step 4 then shows that the line making the smaller angle with PA is greater. Thus, among the non-diametral lines, the nearer to PA is always greater than the more remote. (Steps 4–5.)\n\n**Step 7.** Finally, Step 4 shows that no two distinct lines ending on the same open semicircle can be equal. Step 5 supplies, for each non-diametral line, an equal line ending on the opposite semicircle. There can be no third equal line, since two of three would end on the same semicircle; nor can either diametral line belong to such an equal pair, by their strict extremality in Steps 2–3. Hence each non-diametral line has exactly one distinct equal partner, one on each side of the least line PB. Together with Steps 2, 3, and 6, this proves every assertion. (Steps 2–6.)\n\n**USED:** 1.20, 1.23, 1.24, 1.4, CN2, CN3, CN5, D1.15, D1.17, P1, P2\n**Human refs (from References field):** 1.20, 1.23, 1.24, 1.4\n**Jaccard:** 0.364 — AI adds ['CN2', 'CN3', 'CN5', 'D1.15', 'D1.17', 'P1', 'P2']",
+  "ai_used": [
+    "1.20",
+    "1.23",
+    "1.24",
+    "1.4",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.15",
+    "D1.17",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.23",
+    "1.24",
+    "1.4"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.15",
+    "D1.17",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let AB be the diameter, O its centre, and P the given point. Name the endpoints so that their order is A, O, P, B. Thus PA passes through the centre, while PB is the remainder of the diame"
+}

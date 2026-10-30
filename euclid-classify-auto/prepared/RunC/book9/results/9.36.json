@@ -1,0 +1,13 @@
+{
+  "proposition": "9.36",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals genuinely different backbones. Heath's proof uses proportional reasoning (7.14 ex aequali, 7.19 product-proportion) to establish the geometric series relationships, then employs an elaborate uniqueness argument via the 'least numbers' chain (7.21 primes-are-least, 7.20 least-measure-proportionals) to show no other number can divide FG. The AI takes a structurally different approach: it uses 9.35 to derive the closed-form sum S = 2*A_n - 1, enumerates divisors of A_n via 9.13 and 9.11, then determines divisors of P = S*A_n directly using 7.29 (prime-to-non-multiple) and 7.30 (prime dividing product divides factor). While both proofs share 9.13, 9.35, 7.29, and D7.22, the key intermediate conclusions differ: Heath reasons through proportional sequences and the least-numbers argument, while the AI reasons through direct divisor enumeration and algebraic summation. The proof-tree containment test shows that 7.19, 7.20, 7.21 do appear inside Heath's proof of 7.30, but in Heath's 9.36 proof these propositions are used independently in a different logical chain (not re-deriving 7.30), so this is genuine path divergence rather than citation-depth difference. The AI's path is logically valid under Q3, yielding classification D.",
+  "jaccard": 0.211,
+  "ai_citations": "7.15|7.16|7.18|7.29|7.30|9.11|9.13|9.35|CN2|CN3|D7.11|D7.15|D7.22|D7.3",
+  "heath_citations": "7.14|7.19|7.20|7.21|7.29|9.13|9.35|D7.20|D7.22",
+  "ai_only": "7.15|7.16|7.18|7.30|9.11|CN2|CN3|D7.11|D7.15|D7.3",
+  "heath_only": "7.14|7.19|7.20|7.21|D7.20",
+  "audit_record": ""
+}

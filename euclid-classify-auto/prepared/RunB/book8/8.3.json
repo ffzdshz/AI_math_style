@@ -1,0 +1,27 @@
+{
+  "proposition": "8.3",
+  "book": 8,
+  "statement": "If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.",
+  "heath_proof": "Let as many numbers as we please, A, B, C, D, in continued proportion be the least of those which have the same ratio with them; I say that the extremes of them A, D are prime to one another. For let two numbers E, F, the least that are in the ratio of A, B, C, D, be taken, [VII. 33] then three others G, H, K with the same property; and others, more by one continually, [VIII. 2] until the multitude taken becomes equal to the multitude of the numbers A, B, C, D. Let them be taken, and let them be L, M, N, O. Now, since E, F are the least of those which have the same ratio with them, they are prime to one another. [VII. 22] And, since the numbers E, F by multiplying themselves respectively have made the numbers G, K, and by multiplying the numbers G, K respectively have made the numbers L, O, [VIII. 2] therefore both G, K and L, O are prime to one another. [VII. 27] And, since A, B, C, D are the least of those which have the same ratio with them, while L, M, N, O are the least that are in the same ratio with A, B, C, D, and the multitude of the numbers A, B, C, D is equal to the multitude of the numbers L, M, N, O, therefore the numbers A, B, C, D are equal to the numbers L, M, N, O respectively; therefore A is equal to L, and D to O. And L, O are prime to one another. Therefore A, D are also prime to one another.",
+  "ai_proof_text": "8.3\n**Statement:** If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.\n\n**Step 1.** Let A1, A2, ..., An be as many numbers as we please in continued proportion, and let them be the least of those which have the same ratio with them. We must show that the extremes A1 and An are prime to one another.\n\n**Step 2.** Since A1, A2, ..., An are in continued proportion, they share a common ratio A1:A2. Take D, E to be the least numbers having the same ratio as A1:A2. By 7.22, since D and E are the least numbers in their ratio, D and E are prime to one another.\n\n**Step 3.** Since D:E is the same ratio as A1:A2, by 8.2 we can find the least numbers in continued proportion, as many as A1, A2, ..., An (that is, n terms), having the ratio D:E. Call these C1, C2, ..., Cn. By 8.2, C1, C2, ..., Cn are the least numbers in continued proportion of n terms with ratio D:E.\n\n**Step 4.** Now, A1, A2, ..., An are in continued proportion with ratio A1:A2 = D:E, and they are the least such (by hypothesis). Also C1, C2, ..., Cn are in continued proportion with the same ratio D:E, and they too are the least such (by 8.2). By 7.20, the least numbers measure all others having the same ratio the same number of times. Since C1, ..., Cn are the least and A1, ..., An have the same ratio, the C's measure the A's: for each i, Ci divides Ai. Conversely, since A1, ..., An are the least and C1, ..., Cn have the same ratio, the A's measure the C's: for each i, Ai divides Ci. Since Ai divides Ci and Ci divides Ai, we have Ai = Ci for each i. In particular, A1 = C1 and An = Cn.\n\n**Step 5.** By the construction in 8.2, the continued proportion C1, C2, ..., Cn with ratio D:E has its extremes as powers of D and E: specifically C1 = D^(n-1) and Cn = E^(n-1), where n is the number of terms. (For two terms: C1 = D, C2 = E. For three terms: C1 = D*D, C2 = D*E, C3 = E*E. And so on, each subsequent case multiplying the previous sequence by D and E respectively.)\n\n**Step 6.** Since D and E are prime to one another (Step 2), by 7.27, the products of D with itself (D^2) and E with itself (E^2) are prime to one another. Continuing by 7.27, D^(n-1) and E^(n-1) are also prime to one another. (Proposition 7.27 establishes that if two numbers are prime to one another, their squares are prime to one another, and if the original numbers multiplied by their squares make certain numbers, these are also prime to one another, and this holds always for the extremes — that is, all corresponding powers of coprime numbers are coprime.)\n\n**Step 7.** Therefore A1 = C1 = D^(n-1) and An = Cn = E^(n-1) are prime to one another. Hence the extremes of numbers in continued proportion that are the least with their ratio are prime to one another. Q.E.D.\n\n**USED:** 7.20, 7.22, 7.27, 8.2\n**Human refs (from References field):** 7.22, 7.27, 7.33, 8.2\n**Jaccard:** 0.600 — AI adds ['7.20']; Human adds ['7.33']",
+  "ai_used": [
+    "7.20",
+    "7.22",
+    "7.27",
+    "8.2"
+  ],
+  "heath_refs": [
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.2"
+  ],
+  "ai_only": [
+    "7.20"
+  ],
+  "heath_only": [
+    "7.33"
+  ],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let A1, A2, ..., An be as many numbers as we please in continued proportion, and let them be the least of those which have the same ratio with them. We must show that the extremes A1 and A"
+}

@@ -1,0 +1,48 @@
+{
+  "proposition": "10.102",
+  "book": 10,
+  "statement": "The square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome.",
+  "heath_proof": "Let AB be the straight line which produces with a medial area a medial whole, and CD a rational straight line, and to CD let CE be applied equal to the square on AB and producing CF as breadth; I say that CF is a sixth apotome. For let BG be the annex to AB; therefore AG, GB are straight lines incommensurable in square which make the sum of the squares on them medial, twice the rectangle AG, GB medial, and the squares on AG, GB incommensurable with twice the rectangle AG, GB. [X. 78] Now to CD let there be applied CH equal to the square on AG and producing CK as breadth, and KL equal to the square on BG; therefore the whole CL is equal to the squares on AG, GB; therefore CL is also medial. And it is applied to the rational straight line CD, producing CM as breadth; therefore CM is rational and incommensurable in length with CD. [X. 22] Since now CL is equal to the squares on AG, GB, and, in these, CE is equal to the square on AB, therefore the remainder FL is equal to twice the rectangle AG, GB. [II. 7] And twice the rectangle AG, GB is medial; therefore FL is also medial. And it is applied to the rational straight line FE, producing FM as breadth; therefore FM is rational and incommensurable in length with CD. [X. 22] And, since the squares on AG, GB are incommensurable with twice the rectangle AG, GB, and CL is equal to the squares on AG, GB, and FL equal to twice the rectangle AG, GB, therefore CL is incommensurable with FL. But, as CL is to FL, so is CM to MF; [VI. 1] therefore CM is incommensurable in length with MF. [X. 11] And both are rational. Therefore CM, MF are rational straight lines commensurable in square only; therefore CF is an apotome. [X. 73] I say next that it is also a sixth apotome. For, since FL is equal to twice the rectangle AG, GB, let FM be bisected at N, and let NO be drawn through N parallel to CD; therefore each of the rectangles FO, NL is equal to the rectangle AG, GB. And, since AG, GB are incommensurable in square, therefore the square on AG is incommensurable with the square on GB. But CH is equal to the square on AG, and KL is equal to the square on GB; therefore CH is incommensurable with KL. But, as CH is to KL, so is CK to KM; [VI. 1] therefore CK is incommensurable with KM. [X. 11] And, since the rectangle AG, GB is a mean proportional between the squares on AG, GB, and CH is equal to the square on AG, KL equal to the square on GB, and NL equal to the rectangle AG, GB, therefore NL is also a mean proportional between CH, KL; therefore, as CH is to NL, so is NL to KL. And for the same reason as before the square on CM is greater than the square on MF by the square on a straight line incommensurable with CM. [X. 18] And neither of them is commensurable with the rational straight line CD set out; therefore CF is a sixth apotome. [X. Deff. III. 6]",
+  "ai_proof_text": "10.102\n**Statement:** The square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome.\n\n**Step 1.** Let x be the given straight line and r the rational straight line to which its square is to be applied. Write s² for the square on s and st for the rectangle contained by s and t. By 10.78, write x = a − b, where a > b, the squares a² and b² are incommensurable, and the areas M = a² + b² and N = 2ab are medial and incommensurable with one another. [10.78, D10.1.2]\n\n**Step 2.** Apply a², b², and ab to r as rectangles, obtaining respective breadths p, q, and h; these applications may be made by successive applications of 1.44 to triangular pieces of the areas. Thus rp = a², rq = b², and rh = ab. Put u = p + q and v = 2h. By addition of rectangles on the same base, ru = M and rv = N. [1.44, 2.1]\n\n**Step 3.** By 2.7, a² + b² = 2ab + (a − b)², so M = N + x². Consequently M > N, and therefore u > v, since rectangles on the same base are proportional to their breadths. Subtracting rv = N from ru = M now gives r(u − v) = x². Thus the breadth whose classification is required is u − v. [2.7, 6.1, 2.1, CN3]\n\n**Step 4.** Since M and N are medial areas applied to the rational straight line r, both u and v are rational and incommensurable in length with r. Their squares are therefore commensurable with one another. Moreover, M:N = u:v; hence the incommensurability of M and N implies that u and v are incommensurable in length. Thus u and v are rational straight lines commensurable in square only, and u − v is an apotome, with whole u and annex v. [10.22, D10.1.3, 10.12, 6.1, 10.11, 10.73]\n\n**Step 5.** Similarly, p:q = a²:b². Since a² and b² are incommensurable, p and q are incommensurable in length. Also, comparison of rectangles with a common side gives\np:h = a²:ab = a:b = ab:b² = h:q.\nTherefore p, h, q are proportional, and the rectangle pq equals h². Since v = 2h, this rectangle equals the fourth part of v². [6.1, 10.11, 6.17, 2.4]\n\n**Step 6.** The rectangle with sides p and q is an application to u = p + q deficient by the square on q: completing it to the rectangle uq adds precisely q². It therefore applies the fourth part of v² to u, deficient by a square, and divides u into the incommensurable parts p and q. We use 10.18 directly because this incommensurable division is already established. It follows that u² exceeds v² by the square on a straight line incommensurable in length with u. [2.1, 10.18]\n\n**Step 7.** The apotome u − v has whole u and annex v, neither commensurable in length with the rational straight line r; moreover, the square on its whole exceeds the square on its annex by the square on a straight line incommensurable in length with the whole. Hence u − v is a sixth apotome. Since r(u − v) = x² by Step 3, the square on the given straight line, applied to r, produces a sixth apotome as breadth, as required. [D10.3.6]\n\n**USED:** 1.44, 10.11, 10.12, 10.18, 10.22, 10.73, 10.78, 2.1, 2.4, 2.7, 6.1, 6.17, CN3, D10.1.2, D10.1.3, D10.3.6\n**Human refs (from References field):** 10.11, 10.18, 10.22, 10.73, 10.78, 2.7, 6.1, D10.3.6\n**Jaccard:** 0.500 — AI adds ['1.44', '10.12', '2.1', '2.4', '6.17', 'CN3', 'D10.1.2', 'D10.1.3']",
+  "ai_used": [
+    "1.44",
+    "10.11",
+    "10.12",
+    "10.18",
+    "10.22",
+    "10.73",
+    "10.78",
+    "2.1",
+    "2.4",
+    "2.7",
+    "6.1",
+    "6.17",
+    "CN3",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.3.6"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.18",
+    "10.22",
+    "10.73",
+    "10.78",
+    "2.7",
+    "6.1",
+    "D10.3.6"
+  ],
+  "ai_only": [
+    "1.44",
+    "10.12",
+    "2.1",
+    "2.4",
+    "6.17",
+    "CN3",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let x be the given straight line and r the rational straight line to which its square is to be applied. Write s² for the square on s and st for the rectangle contained by s and t. By 10.78"
+}

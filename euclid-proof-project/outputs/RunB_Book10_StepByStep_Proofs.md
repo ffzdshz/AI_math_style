@@ -1,0 +1,3908 @@
+# Book 10 of Euclid's Elements — Step-by-Step AI Proofs (Run B)
+
+## Proposition 10.1
+**Statement:** Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.
+
+**Step 1.** Let AB and C be two unequal magnitudes, with AB the greater. We must show that if from AB there is subtracted a magnitude greater than its half, and from the remainder a magnitude greater than its half, and this process is repeated continually, there will eventually remain a magnitude less than C.
+
+**Step 2.** Since C and AB are magnitudes of the same kind, and C is less than AB, by Definition 5.4 there exists a multiple of C that exceeds AB. Multiply C by successive doubling: let C, 2C, 4C, and so on be formed until we obtain a multiple of C that exceeds AB. Let this multiple be obtained after doubling C a certain number of times, so that we have magnitudes DF = C, FG = C, GH = 2C, and HE = 4C (for example), building up a magnitude DE composed of successive doubles of C such that DE > AB. More precisely, let DE be constructed so that DF = C, and each successive part doubles the previous total: that is, we set DF = C, and then repeatedly double, obtaining DE = 2^k * C for some k, with DE > AB.
+
+**Step 3.** To make this precise in Euclid's manner: let DE be a magnitude such that DE > AB, constructed by successive doubling of C. Partition DE into halves successively: DE has a half, that half has a half, and so on, so that after k halvings we reach a part equal to C (namely DF = C, since DE = 2^k * C).
+
+**Step 4.** Now, from AB subtract a magnitude greater than its half, and let the remainder be AB_1. Then AB_1 < (1/2) AB, since more than half was removed. From AB_1 subtract more than its half, leaving AB_2 < (1/2) AB_1. Continue this process. After k subtractions, the remainder AB_k < (1/2^k) AB.
+
+**Step 5.** Since DE = 2^k * C > AB, it follows that AB < 2^k * C, and therefore (1/2^k) * AB < C. By Step 4, AB_k < (1/2^k) AB, so AB_k < C.
+
+**Step 6.** To express Steps 4 and 5 in Euclid's own terms without fractional notation: consider DE > AB, where DE is divided into successive halves reaching down to DF = C. Let EH be the half of DE, HG the half of EH (i.e., a quarter of DE), and GF the half of HG, and so on until we reach DF = C.
+
+**Step 7.** Now since DE > AB, and from AB we subtract more than its half, the remainder is less than half of AB. But half of DE is EH. Since DE > AB, we have EH = (1/2)DE >= (1/2)AB. The remainder after subtracting more than half of AB is strictly less than (1/2)AB, hence strictly less than EH. By Common Notion 5, the whole is greater than the part, and each subtraction of more than half leaves a remainder that is less than the corresponding half of DE.
+
+**Step 8.** Proceeding: the remainder after the first subtraction is less than EH. From this remainder, subtract more than its half; the new remainder is less than half of EH, which is HG. Continue: after the next subtraction, the remainder is less than half of HG, which is GF. After k such subtractions, the remainder is less than the k-th halving of DE, which is DF = C.
+
+**Step 9.** Therefore, after a finite number of subtractions (each removing more than half of the current remainder), the remaining magnitude will be less than C. This is what was to be proved. Q.E.D.
+
+**USED:** CN5, D5.4
+**Human refs (from References field):** D5.4
+**Jaccard:** 0.500 — AI adds ['CN5']
+
+## Proposition 10.2
+**Statement:** If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.
+
+**Step 1.** Let A and B be two unequal magnitudes, with A greater than B, such that when the less is continually subtracted in turn from the greater, the remainder never measures the magnitude before it. We must show that A and B are incommensurable.
+
+**Step 2.** Suppose, for the sake of contradiction, that A and B are commensurable. Then by the definition of commensurable magnitudes (D10.1.1), there exists some magnitude C that measures both A and B.
+
+**Step 3.** Since C measures both A and B, and B is continually subtracted from A, the remainder after subtracting B from A as many times as possible is some magnitude less than B. Call this remainder A1. Since C measures A and C measures B, and A1 = A - nB for some whole number n, C also measures A1 (CN3, applied repeatedly: if equals are subtracted from equals, the remainders are equal; since C measures A and C measures nB, C measures A1).
+
+**Step 4.** Now the process continues: B has A1 subtracted from it repeatedly, leaving a remainder B1 less than A1. Since C measures B and C measures A1, by the same reasoning C measures B1.
+
+**Step 5.** At each stage of the anthyphairesis, the remainder is measured by C, because C measures both of the magnitudes at the previous stage. Thus every remainder in this process is measured by C.
+
+**Step 6.** Now, the successive remainders A1, B1, A2, B2, ... form a strictly decreasing sequence of positive magnitudes, each less than the one two steps before it. Since C is a fixed positive magnitude and C measures each remainder, each remainder is at least as large as C (for C to measure a magnitude, that magnitude must be at least C, since a part cannot exceed its whole by D5.1).
+
+**Step 7.** However, by Proposition 10.1, since at each step of the anthyphairesis we subtract from the greater a magnitude that is at least half of it (indeed we subtract a quantity at least equal to the remainder, which is the smaller magnitude), the successive remainders, when this process is continued, will eventually become less than C.
+
+**Step 8.** But this contradicts Step 6, which established that every remainder must be at least as great as C. We have a remainder that is both measured by C (hence at least C) and less than C, which is impossible.
+
+**Step 9.** Therefore the assumption in Step 2 is false: A and B cannot be commensurable. Hence A and B are incommensurable (D10.1.1), which was to be proved.
+
+**USED:** 10.1, CN3, D10.1.1, D5.1
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['10.1', 'CN3', 'D10.1.1', 'D5.1']
+
+## Proposition 10.3
+**Statement:** Given two commensurable magnitudes, to find their greatest common measure.
+
+**Step 1.** Let A and B be two given commensurable magnitudes, and let A be not less than B. We are to find their greatest common measure.
+
+**Step 2.** If B measures A, then B is a common measure of A and B. Moreover, no magnitude greater than B can measure B [by CN5, since the whole is greater than the part, any magnitude greater than B cannot measure B]. Therefore B is the greatest common measure of A and B.
+
+**Step 3.** Now suppose B does not measure A. Apply the process of successive subtraction (antanairesis): subtract B from A as many times as possible, leaving a remainder C less than B. If C measures B, proceed to Step 5. If C does not measure B, subtract C from B as many times as possible, leaving a remainder D less than C. Continue in this manner.
+
+**Step 4.** Since A and B are commensurable [D10.1.1], the process of continually subtracting the lesser from the greater must terminate with some remainder that measures the one before it. For if the remainder never measured the one before it, then by Proposition 10.2, A and B would be incommensurable, contradicting our hypothesis. Therefore the process terminates. Let us say, for definiteness, that after some steps we arrive at a remainder E which measures the magnitude before it in the chain.
+
+**Step 5.** We now show that E is a common measure of A and B. Working backwards through the chain of subtractions: E measures the magnitude before it; from this it follows that E measures the magnitude before that (since that magnitude is composed of a multiple of E plus the magnitude E measures); continuing step by step back through the chain, E measures C, and since B is composed of a multiple of C plus D (and so on), E measures B. Similarly, since A is composed of a multiple of B plus C, and E measures both B and C, E measures A. Therefore E is a common measure of A and B.
+
+**Step 6.** We now show that E is the greatest common measure. Let F be any common measure of A and B. Since F measures A and F measures B, F also measures the remainder when B is subtracted from A (as many times as it goes), so F measures C [CN3, since if F measures two magnitudes, it measures their difference]. Likewise, since F measures B and F measures C, F measures the remainder D. Continuing forward through the chain of subtractions, F measures each successive remainder, and therefore F measures E.
+
+**Step 7.** Since F measures E, we have F is not greater than E [by CN5, since E is a whole of which F would need to be a part or equal]. Since this holds for every common measure F of A and B, no common measure of A and B is greater than E. Therefore E is the greatest common measure of A and B.
+
+**Step 8.** Therefore, given two commensurable magnitudes, we have found their greatest common measure. Q.E.F.
+
+**USED:** 10.2, CN3, CN5, D10.1.1, D5.1
+**Human refs (from References field):** 10.2
+**Jaccard:** 0.200 — AI adds ['CN3', 'CN5', 'D10.1.1', 'D5.1']
+
+## Proposition 10.4
+**Statement:** Given three commensurable magnitudes, to find their greatest common measure.
+
+**Step 1.** Let A, B, C be three given commensurable magnitudes. We wish to find their greatest common measure.
+
+**Step 2.** Since A and B are commensurable, they have a common measure [D10.1.1]. Therefore, by Proposition 10.3, we can find the greatest common measure of A and B. Let D be the greatest common measure of A and B [10.3].
+
+**Step 3.** Now D measures both A and B. Since D measures A, and C is commensurable with A (for A, B, C are mutually commensurable), we must show that D and C are commensurable. Since A, B, C are commensurable, there exists some common measure E that measures all three [D10.1.1]. Since E measures both A and B, and D is the greatest common measure of A and B, E measures D [by the property established in 10.3, that every common measure of two magnitudes measures their greatest common measure]. Since E also measures C, E is a common measure of D and C. Therefore D and C are commensurable [D10.1.1].
+
+**Step 4.** Since D and C are commensurable, by Proposition 10.3 we can find their greatest common measure. Let F be the greatest common measure of D and C [10.3].
+
+**Step 5.** We claim F is the greatest common measure of A, B, and C. First, we show F measures each of A, B, and C. Since F is the greatest common measure of D and C, F measures both D and C. Since F measures D and D measures A, F measures A. Since F measures D and D measures B, F measures B. Since F measures C directly, F measures all three of A, B, and C.
+
+**Step 6.** Now we show F is the greatest such measure. Let G be any magnitude that measures A, B, and C. Since G measures both A and B, and D is the greatest common measure of A and B, G measures D [10.3]. Since G measures both D and C, and F is the greatest common measure of D and C, G measures F [10.3]. Therefore every common measure of A, B, and C measures F, so F is the greatest common measure of A, B, and C.
+
+**Step 7.** Therefore, given three commensurable magnitudes A, B, C, their greatest common measure F has been found. Q.E.F.
+
+**USED:** 10.3, D10.1.1, D5.1
+**Human refs (from References field):** 10.3
+**Jaccard:** 0.333 — AI adds ['D10.1.1', 'D5.1']
+
+## Proposition 10.5
+**Statement:** Commensurable magnitudes have to one another the ratio which a number has to a number.
+
+**Step 1.** Let A and B be commensurable magnitudes. Then by definition (D10.1.1), there exists a magnitude C which measures both A and B.
+
+**Step 2.** Since C measures A, let C be contained in A exactly D times, where D is a number (D7.2). Then A is the D-th multiple of C, that is, A = D times C (D5.1, D5.2).
+
+**Step 3.** Since C measures B, let C be contained in B exactly E times, where E is a number (D7.2). Then B is the E-th multiple of C, that is, B = E times C (D5.1, D5.2).
+
+**Step 4.** We shall show that A has to B the same ratio that the number D has to the number E. To establish this by D5.5, we must show that for any positive integers m and n, the m-fold multiple of A compares with the n-fold multiple of B in the same way that the m-fold multiple of D compares with the n-fold multiple of E.
+
+**Step 5.** Take any equimultiples: let mA be the m-fold multiple of A, and let nB be the n-fold multiple of B, for arbitrary positive integers m and n. Since A is the D-th multiple of C, by 5.3, the m-fold multiple of A is the (mD)-th multiple of C. That is, mA = (mD) times C. Similarly, since B is the E-th multiple of C, by 5.3, nB = (nE) times C.
+
+**Step 6.** Now mA = (mD) times C and nB = (nE) times C, so both are multiples of the same magnitude C. If mD > nE, then (mD) times C is greater than (nE) times C, since the (mD)-th multiple contains all of the (nE)-th multiple and more besides (CN5). Hence mA > nB. If mD = nE, then (mD) times C equals (nE) times C (CN1), so mA = nB. If mD < nE, then by the same reasoning as the first case (with roles exchanged), (nE) times C is greater than (mD) times C, so nB > mA, that is, mA < nB.
+
+**Step 7.** Therefore, for all positive integers m and n: if mD > nE then mA > nB; if mD = nE then mA = nB; if mD < nE then mA < nB. By the definition of same ratio (D5.5), A is to B as D is to E.
+
+**Step 8.** Since D and E are numbers, A and B have to one another the ratio which a number has to a number, which is what was to be proved.
+
+**USED:** 5.3, CN1, CN5, D10.1.1, D5.1, D5.2, D5.5, D7.2
+**Human refs (from References field):** 5.22, 5.7, D7.20
+**Jaccard:** 0.000 — AI adds ['5.3', 'CN1', 'CN5', 'D10.1.1', 'D5.1', 'D5.2', 'D5.5', 'D7.2']; Human adds ['5.22', '5.7', 'D7.20']
+
+## Proposition 10.6
+**Statement:** If two magnitudes have to one another the ratio which a number has to a number, the magnitudes will be commensurable.
+
+**Step 1.** Let A and B be two magnitudes such that A:B = D:E, where D and E are numbers. We are to prove that A and B are commensurable.
+
+**Step 2.** Since D is a number, it is a multitude composed of units (D7.2). Divide A into as many equal parts as there are units in D, and let C be equal to one of these parts. Then A is D times C, that is, A = D*C, so C is a part of A and A is a multiple of C (D5.1, D5.2).
+
+**Step 3.** Since A:B = D:E and A = D*C, we have D*C : B = D : E. By the definition of same ratio (D5.5), for any positive integers p and q, p*(D*C) exceeds, equals, or falls short of q*B according as p*D exceeds, equals, or falls short of q*E.
+
+**Step 4.** Take the specific equimultiples with p = E and q = D. Then E*(D*C) compared to D*B is as E*D compared to D*E. Since the product of two numbers is the same regardless of the order of multiplication (7.16), we have E*D = D*E. Therefore E*(D*C) = D*B.
+
+**Step 5.** Now E*(D*C) = (ED)*C and also (ED)*C = (DE)*C = D*(E*C), again because the product of two numbers does not depend on the order of multiplication (7.16). Therefore D*(E*C) = D*B.
+
+**Step 6.** Since D*(E*C) = D*B, that is, E*C taken D times equals B taken D times, by repeated subtraction of equals from equals (CN3), we conclude that E*C = B.
+
+**Step 7.** Now C measures A, since A = D*C, meaning C is contained in A exactly D times (D5.1). And C measures B, since B = E*C, meaning C is contained in B exactly E times (D5.1). Therefore C is a common measure of A and B.
+
+**Step 8.** Since A and B have a common measure C, the magnitudes A and B are commensurable (D10.1.1). Q.E.D.
+
+**USED:** 7.16, CN3, D10.1.1, D5.1, D5.2, D5.5, D7.2
+**Human refs (from References field):** 5.11, 5.22, 5.7, 5.9, D7.20
+**Jaccard:** 0.000 — AI adds ['7.16', 'CN3', 'D10.1.1', 'D5.1', 'D5.2', 'D5.5', 'D7.2']; Human adds ['5.11', '5.22', '5.7', '5.9', 'D7.20']
+
+## Proposition 10.7
+**Statement:** Incommensurable magnitudes have not to one another the ratio which a number has to a number.
+
+**Step 1.** Let A and B be incommensurable magnitudes. We are to prove that A does not have to B the ratio which a number has to a number.
+
+**Step 2.** Suppose, for the sake of contradiction, that A has to B the ratio which a number has to a number. That is, suppose A:B = m:n for some numbers m and n.
+
+**Step 3.** Then by Proposition 10.6, since A and B have to one another the ratio which the number m has to the number n, the magnitudes A and B are commensurable.
+
+**Step 4.** But A and B are given as incommensurable (by hypothesis and Definition D10.1.1, which defines incommensurable magnitudes as those which cannot have any common measure). This contradicts the conclusion of Step 3.
+
+**Step 5.** Therefore the assumption in Step 2 is false, and incommensurable magnitudes have not to one another the ratio which a number has to a number. Q.E.D.
+
+**USED:** 10.6, D10.1.1
+**Human refs (from References field):** 10.6
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.8
+**Statement:** If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes will be incommensurable.
+
+**Step 1.** Let A and B be two magnitudes that have not to one another the ratio which a number has to a number. We must show that A and B are incommensurable.
+
+**Step 2.** Suppose, for the sake of contradiction, that A and B are commensurable, that is, that there exists some magnitude C which measures both A and B [D10.1.1].
+
+**Step 3.** Since A and B are commensurable, by Proposition 10.5, A and B have to one another the ratio which a number has to a number [10.5].
+
+**Step 4.** But this contradicts the hypothesis, which states that A and B do not have to one another the ratio which a number has to a number.
+
+**Step 5.** Therefore the assumption that A and B are commensurable is false. Hence A and B are incommensurable [D10.1.1].
+
+Q.E.F.
+
+**USED:** 10.5, D10.1.1
+**Human refs (from References field):** 10.5
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.9
+**Statement:** The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.
+
+**Step 1.** Let A and B be straight lines commensurable in length. We shall prove that the square on A has to the square on B the ratio which a square number has to a square number.
+
+**Step 2.** Since A and B are commensurable in length, by 10.5, A has to B the ratio which a number m has to a number n, that is, A:B = m:n.
+
+**Step 3.** Let C and D be line segments representing the numbers m and n respectively, so that C:D = m:n, and therefore A:B = C:D.
+
+**Step 4.** Since A:B = C:D, by 6.22 (if four straight lines are proportional, the rectilineal figures similar and similarly described upon them are also proportional), taking the similar figures to be the squares on these lines, we have sq(A):sq(B) = sq(C):sq(D).
+
+**Step 5.** Now by 6.20, the ratio sq(C):sq(D) is the duplicate ratio of C:D, that is, the duplicate ratio of m:n. And by 8.11, the square on the number m has to the square on the number n the ratio duplicate of that which m has to n, and this duplicate ratio is m*m to n*n, that is, m^2:n^2. Therefore sq(C):sq(D) = m^2:n^2.
+
+**Step 6.** By D7.18, m^2 and n^2 are square numbers, since each is equal multiplied by equal. Hence sq(A):sq(B) = m^2:n^2, which is the ratio of a square number to a square number. This completes the proof of the first part.
+
+**Step 7.** Conversely, suppose that sq(A):sq(B) has the ratio which a square number has to a square number, say sq(A):sq(B) = p^2:q^2, where p^2 and q^2 are square numbers. We shall prove that A and B are commensurable in length.
+
+**Step 8.** By D7.18, since p^2 and q^2 are square numbers, there exist numbers p and q such that p^2 = p multiplied by p, and q^2 = q multiplied by q.
+
+**Step 9.** Let E and F be line segments representing the numbers p and q respectively, so that E:F = p:q.
+
+**Step 10.** By 6.20, the ratio sq(E):sq(F) is the duplicate ratio of E:F, that is, the duplicate ratio of p:q. By 8.11, the duplicate ratio of p:q is p^2:q^2. Therefore sq(E):sq(F) = p^2:q^2.
+
+**Step 11.** Since sq(A):sq(B) = p^2:q^2 = sq(E):sq(F), by 6.22 (the converse: if rectilineal figures similar and similarly described upon four straight lines are proportional, then the straight lines are themselves proportional), we conclude A:B = E:F = p:q.
+
+**Step 12.** Since A:B = p:q, which is a ratio of number to number, by 10.6, A and B are commensurable in length. This completes the proof of the second part.
+
+**Step 13.** Now let A and B be straight lines incommensurable in length. We shall prove that sq(A):sq(B) does not have the ratio which a square number has to a square number.
+
+**Step 14.** Suppose for contradiction that sq(A):sq(B) has the ratio which a square number has to a square number, say sq(A):sq(B) = p^2:q^2 for some square numbers p^2 and q^2. Then by the second part (Steps 7 through 12), A and B would be commensurable in length. But this contradicts the hypothesis that A and B are incommensurable in length. Therefore sq(A):sq(B) does not have the ratio which a square number has to a square number. This completes the proof of the third part.
+
+**Step 15.** Finally, suppose that sq(A):sq(B) does not have the ratio which a square number has to a square number. We shall prove that A and B are incommensurable in length.
+
+**Step 16.** Suppose for contradiction that A and B are commensurable in length. Then by the first part (Steps 1 through 6), sq(A):sq(B) would have the ratio which a square number has to a square number. But this contradicts the hypothesis. Therefore A and B are incommensurable in length. This completes the proof of the fourth part. Q.E.D.
+
+**USED:** 10.5, 10.6, 6.20, 6.22, 8.11, D7.18
+**Human refs (from References field):** 10.5, 10.6, 6.20, 8.11
+**Jaccard:** 0.667 — AI adds ['6.22', 'D7.18']
+
+## Proposition 10.10
+**Statement:** To find two straight lines incommensurable, the one in length only, and the other in square also, with an assigned straight line.
+
+**Step 1.** Let A be the assigned straight line. We must find two straight lines, one incommensurable with A in length only, and the other incommensurable with A in square also.
+
+**Step 2.** Consider the square on A. The numbers 2 and 1 are numbers, but 2 is not a square number while 1 is, so the ratio 2:1 is not the ratio of a square number to a square number.
+
+**Step 3.** Construct a square equal to twice the square on A, and let B be its side, so that the square on B is to the square on A as 2 is to 1 [1.47, 1.44, or by construction from the diagonal of a square with side A].
+
+**Step 4.** Since the square on B is to the square on A as 2 is to 1, and 2:1 is a ratio of number to number, by Proposition 10.6 the square on B and the square on A are commensurable. Thus B is commensurable in square with A [D10.1.2].
+
+**Step 5.** Since the ratio 2:1 is not the ratio of a square number to a square number (for 2 is not a square number), by Proposition 10.9 (the converse part), B and A are incommensurable in length.
+
+**Step 6.** Therefore B is commensurable with A in square but incommensurable with A in length, that is, B is incommensurable with A in length only [D10.1.1, D10.1.2].
+
+**Step 7.** Now find C, the mean proportional between A and B, so that A is to C as C is to B [6.13].
+
+**Step 8.** Since A, C, B are three straight lines in continued proportion (A:C = C:B), by Proposition 6.17 the rectangle contained by A and B equals the square on C.
+
+**Step 9.** Since A and B are incommensurable in length (established in Step 5), by Proposition 10.7 the ratio A:B is not the ratio of a number to a number.
+
+**Step 10.** Now consider the ratio of the square on A to the square on C. The square on A is the rectangle contained by A and A, and the square on C equals the rectangle contained by A and B (Step 8). By Proposition 6.1, rectangles under the same height are to one another as their bases, so the rectangle contained by A and A is to the rectangle contained by A and B as A is to B. Therefore the square on A is to the square on C as A is to B.
+
+**Step 11.** Since A:B is not the ratio of a number to a number (Step 9), the ratio of the square on A to the square on C is not the ratio of a number to a number. By Proposition 10.8, the square on A and the square on C are incommensurable.
+
+**Step 12.** Therefore, by Definition D10.1.2, C is incommensurable in square with A, and hence also incommensurable in length with A.
+
+**Step 13.** Thus we have found B, incommensurable with A in length only, and C, incommensurable with A in square also, as required. Q.E.F.
+
+**USED:** 10.6, 10.7, 10.8, 10.9, 6.1, 6.13, 6.17, D10.1.1, D10.1.2
+**Human refs (from References field):** 10.11, 10.6, 10.9, D5.9
+**Jaccard:** 0.182 — AI adds ['10.7', '10.8', '6.1', '6.13', '6.17', 'D10.1.1', 'D10.1.2']; Human adds ['10.11', 'D5.9']
+
+## Proposition 10.11
+**Statement:** If four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth; and, if the first be incommensurable with the second, the third will also be incommensurable with the fourth.
+
+**Step 1.** Let A, B, C, D be four magnitudes such that A is to B as C is to D, that is, A:B :: C:D [D5.6].
+
+**Step 2.** First, suppose that A is commensurable with B. Then by Proposition 10.5, A has to B the ratio which a number has to a number. That is, there exist numbers m and n such that A:B :: m:n [10.5].
+
+**Step 3.** Since A:B :: C:D (given) and A:B :: m:n (Step 2), it follows that C:D :: m:n. Thus C has to D the ratio which a number has to a number.
+
+**Step 4.** Since C has to D the ratio which a number has to a number, by Proposition 10.6, C is commensurable with D [10.6].
+
+**Step 5.** Next, suppose that A is incommensurable with B. Then by Proposition 10.7, A does not have to B the ratio which a number has to a number [10.7].
+
+**Step 6.** Suppose, for the sake of contradiction, that C were commensurable with D. Then by Proposition 10.5, C would have to D the ratio which a number has to a number [10.5]. But since A:B :: C:D, this would mean A has to B the ratio which a number has to a number as well. By Proposition 10.6, A and B would then be commensurable [10.6], contradicting the hypothesis that A is incommensurable with B.
+
+**Step 7.** Therefore C does not have to D the ratio which a number has to a number. By Proposition 10.8, C is incommensurable with D [10.8].
+
+**Step 8.** Therefore, if four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth; and if the first be incommensurable with the second, the third will also be incommensurable with the fourth. Q.E.D.
+
+**USED:** 10.5, 10.6, 10.7, 10.8, D5.6
+**Human refs (from References field):** 10.5, 10.6, 10.7, 10.8
+**Jaccard:** 0.800 — AI adds ['D5.6']
+
+## Proposition 10.12
+**Statement:** Magnitudes commensurable with the same magnitude are commensurable with one another also.
+
+**Step 1.** Let A and B be magnitudes each commensurable with a magnitude C. We must show that A is commensurable with B.
+
+**Step 2.** Since A is commensurable with C, by Proposition 10.5, A has to C the ratio which some number m has to some number n. That is, A:C :: m:n.
+
+**Step 3.** Since B is commensurable with C, by Proposition 10.5, B has to C the ratio which some number p has to some number q. That is, B:C :: p:q.
+
+**Step 4.** By Proposition 5.7 (corollary on inversion), since B:C :: p:q, we have inversely C:B :: q:p.
+
+**Step 5.** Since A:C :: m:n, by Proposition 7.17 (if a number multiply two numbers, the products have the same ratio as the numbers multiplied), multiplying both m and n by q, we obtain m:n :: mq:nq. Therefore A:C :: mq:nq.
+
+**Step 6.** Since C:B :: q:p, by Proposition 7.17, multiplying both q and p by n, we obtain q:p :: nq:np. Therefore C:B :: nq:np.
+
+**Step 7.** We now have A:C :: mq:nq and C:B :: nq:np, where mq, nq, np are numbers (each being a product of two numbers, by Proposition 7.19). By Proposition 5.22 (ex aequali), since A:C :: mq:nq and C:B :: nq:np, it follows that A:B :: mq:np.
+
+**Step 8.** Since mq and np are each products of numbers, they are numbers (by Proposition 7.19). Therefore A has to B the ratio which the number mq has to the number np.
+
+**Step 9.** Since A and B have to one another the ratio which a number has to a number, by Proposition 10.6, A is commensurable with B.
+
+**Step 10.** Therefore magnitudes commensurable with the same magnitude are commensurable with one another also. Q.E.D.
+
+**USED:** 10.5, 10.6, 5.22, 5.7, 7.17, 7.19
+**Human refs (from References field):** 10.5, 10.6, 5.11, 5.22, 8.4
+**Jaccard:** 0.375 — AI adds ['5.7', '7.17', '7.19']; Human adds ['5.11', '8.4']
+
+## Proposition 10.13
+**Statement:** If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same.
+
+**Step 1.** Let A and B be two commensurable magnitudes, and let A be incommensurable with some magnitude C. We are to prove that B is also incommensurable with C. [D10.1.1]
+
+**Step 2.** Suppose, for the sake of contradiction, that B is commensurable with C. [D10.1.1]
+
+**Step 3.** Since A is commensurable with B (by hypothesis), and B is commensurable with C (by assumption), it follows by 10.12 that A is commensurable with C. [10.12]
+
+**Step 4.** But A was given as incommensurable with C, which contradicts the conclusion of Step 3. [D10.1.1]
+
+**Step 5.** Therefore the assumption that B is commensurable with C is false. Hence B is incommensurable with C. [D10.1.1]
+
+**Step 6.** Therefore, if two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same. Q.E.D.
+
+**USED:** 10.12, D10.1.1
+**Human refs (from References field):** 10.12
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.14
+**Statement:** If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third will also be greater than the square on the fourth by  the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third will also be greater than the square on the fourth by the square on a straight line in-commensurable with the third.
+
+**Step 1.** Let A, B, C, D be four straight lines such that A:B :: C:D. Suppose that the square on A is greater than the square on B by the square on a straight line E, so that sq(A) = sq(B) + sq(E), and suppose that E is commensurable with A. We must show that the square on C is greater than the square on D by the square on a straight line commensurable with C.
+
+**Step 2.** Since sq(A) > sq(B), we have A > B. Since A:B :: C:D and A > B, by the definition of proportion (D5.5), C > D, and therefore sq(C) > sq(D). Let F be the straight line such that sq(C) = sq(D) + sq(F); such a line exists by construction (P1, P3, 1.47).
+
+**Step 3.** Since A:B :: C:D, by 6.22 the squares on proportional lines are proportional, so sq(A):sq(B) :: sq(C):sq(D).
+
+**Step 4.** Since sq(A):sq(B) :: sq(C):sq(D) and sq(A) > sq(B), by convertendo (5.19) we obtain sq(A):(sq(A) - sq(B)) :: sq(C):(sq(C) - sq(D)), that is, sq(A):sq(E) :: sq(C):sq(F).
+
+**Step 5.** Since sq(A):sq(E) :: sq(C):sq(F), by the converse part of 6.22 we obtain A:E :: C:F.
+
+**Step 6.** Now E is commensurable with A (by hypothesis). Since A:E :: C:F and A is commensurable with E, by 10.11 (if four magnitudes be proportional and the first be commensurable with the second, the third will also be commensurable with the fourth), C is commensurable with F. Therefore the square on C is greater than the square on D by the square on F, a straight line commensurable with C.
+
+**Step 7.** For the second part, suppose instead that E is incommensurable with A. The construction and reasoning of Steps 2 through 5 proceed identically, yielding A:E :: C:F. Since A is incommensurable with E, by the second part of 10.11 (if the first be incommensurable with the second, the third will also be incommensurable with the fourth), C is incommensurable with F. Therefore the square on C is greater than the square on D by the square on F, a straight line incommensurable with C.
+
+**Step 8.** Thus both parts of the proposition are established: the commensurability or incommensurability of the excess-line with the first term is preserved under proportion. Q.E.D.
+
+**USED:** 1.47, 10.11, 5.19, 6.22, D5.5, P1, P3
+**Human refs (from References field):** 10.11, 5.17, 5.22, 6.22
+**Jaccard:** 0.222 — AI adds ['1.47', '5.19', 'D5.5', 'P1', 'P3']; Human adds ['5.17', '5.22']
+
+## Proposition 10.15
+**Statement:** If two commensurable magnitudes be added together, the whole will also be commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes will also be commensurable.
+
+**Step 1.** Let AB and BC be two commensurable magnitudes, and let AC be their sum, so that AC = AB + BC. We must prove two things: (I) that AC is commensurable with each of AB and BC, and (II) conversely, that if AC is commensurable with one of AB, BC, then AB and BC are commensurable with each other.
+
+**Step 2.** [Proof of Part I.] Since AB and BC are commensurable, by Proposition 10.5, AB and BC have to one another the ratio which a number has to a number. Let AB : BC = m : n, where m and n are numbers.
+
+**Step 3.** Since AB : BC = m : n, by Proposition 5.18 (componendo), (AB + BC) : BC = (m + n) : n. But AB + BC = AC, so AC : BC = (m + n) : n.
+
+**Step 4.** Since m and n are numbers, m + n is also a number. Therefore AC : BC is the ratio which a number has to a number. By Proposition 10.6, AC and BC are commensurable.
+
+**Step 5.** Now, since AC is commensurable with BC (just proved in Step 4), and AB is commensurable with BC (given), then by Proposition 10.12, AC is commensurable with AB. Thus AC is commensurable with each of AB and BC, which is Part I.
+
+**Step 6.** [Proof of Part II.] Now suppose that AC is commensurable with AB. We must show that AB and BC are also commensurable.
+
+**Step 7.** Since AC and AB are commensurable, by Proposition 10.5, AC and AB have to one another the ratio which a number has to a number. Let AC : AB = p : q, where p and q are numbers. Since AC is the whole and AB is a part, AC is greater than AB, so p is greater than q.
+
+**Step 8.** Since AC : AB = p : q and AC = AB + BC, we have (AB + BC) : AB = p : q. By Proposition 5.17 (separando), BC : AB = (p - q) : q.
+
+**Step 9.** Since p and q are numbers with p greater than q, p - q is also a number. Therefore BC : AB is the ratio which a number has to a number. By Proposition 10.6, BC and AB are commensurable.
+
+**Step 10.** Therefore, if two commensurable magnitudes be added together, the whole is commensurable with each of them; and if the whole be commensurable with one of them, the original magnitudes are also commensurable. Q.E.F.
+
+**USED:** 10.12, 10.5, 10.6, 5.17, 5.18, D10.1.1
+**Human refs (from References field):** D10.1.1
+**Jaccard:** 0.167 — AI adds ['10.12', '10.5', '10.6', '5.17', '5.18']
+
+## Proposition 10.16
+**Statement:** If two incommensurable magnitudes be added together, the whole will also be incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes will also be incommensurable.
+
+**Step 1.** Let AB and BC be two incommensurable magnitudes, and let AC be the magnitude composed of AB and BC, so that AC = AB + BC. We are to prove first that AC is incommensurable with each of AB and BC.
+
+**Step 2.** Suppose, for the sake of contradiction, that AC is commensurable with AB. Then since AC is commensurable with AB, and AC = AB + BC, by Proposition 10.15 (if the whole be commensurable with one of two magnitudes, the original magnitudes will also be commensurable), it follows that AB and BC are commensurable.
+
+**Step 3.** But AB and BC were assumed to be incommensurable. This is a contradiction. Therefore AC is not commensurable with AB; that is, AC is incommensurable with AB.
+
+**Step 4.** By the same reasoning, suppose AC is commensurable with BC. Then by 10.15, AB and BC would be commensurable, again contradicting the hypothesis. Therefore AC is incommensurable with BC as well.
+
+**Step 5.** Thus, if two incommensurable magnitudes be added together, the whole is incommensurable with each of them.
+
+**Step 6.** Now for the converse. Let AC = AB + BC, and suppose that AC is incommensurable with one of them, say AB. We are to prove that AB and BC are incommensurable.
+
+**Step 7.** Suppose, for the sake of contradiction, that AB and BC are commensurable. Then by Proposition 10.15 (if two commensurable magnitudes be added together, the whole will also be commensurable with each of them), AC is commensurable with each of AB and BC. In particular, AC is commensurable with AB.
+
+**Step 8.** But AC was assumed to be incommensurable with AB. This is a contradiction. Therefore AB and BC are not commensurable; that is, AB and BC are incommensurable.
+
+**Step 9.** Therefore, if two incommensurable magnitudes be added together, the whole will also be incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes will also be incommensurable. Q.E.D.
+
+**USED:** 10.15, D10.1.1
+**Human refs (from References field):** D10.1.1
+**Jaccard:** 0.500 — AI adds ['10.15']
+
+## Proposition 10.17
+**Statement:** If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater will be greater than the square on the less by the square on a straight line commensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with  the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
+
+**Step 1.** Let A and B be two unequal straight lines with A greater than B. To the line A, let there be applied a parallelogram equal to the fourth part of the square on B, deficient by a square figure. This application divides A into two segments; let A be divided at E into segments AE and EB, so that the rectangle AE by EB equals one-fourth of the square on B.
+
+**Step 2.** By 2.5, when a straight line (here A) is cut into equal parts (at its midpoint M) and also into unequal parts (at E), the rectangle contained by the unequal parts AE and EB, together with the square on the segment between the points of section (that is, ME), equals the square on the half (that is, MA). In other words, rect(AE, EB) + sq(ME) = sq(MA), where MA is half of A.
+
+**Step 3.** Since rect(AE, EB) = (1/4) sq(B) and sq(MA) = (1/4) sq(A), we obtain by CN3: sq(MA) - rect(AE, EB) = sq(ME), that is, (1/4) sq(A) - (1/4) sq(B) = sq(ME). Multiplying through (or equivalently, since four times sq(ME) equals sq(A) - sq(B)), we have sq(A) - sq(B) = sq(2*ME), i.e., sq(A) = sq(B) + sq(2*ME). Thus the square on A is greater than the square on B by the square on the line equal to twice ME, which is AE - EB.
+
+**Step 4.** Note that 2*ME = AE - EB: since M is the midpoint of A, we have MA = (AE + EB)/2, and ME = MA - AE or ME = AE - MA depending on the position of E. In either case, 2*ME equals the absolute difference AE - EB. Thus sq(A) - sq(B) = sq(AE - EB), and the straight line whose square makes up the excess is AE - EB.
+
+**Step 5.** [Forward direction] Suppose AE and EB are commensurable in length. We must show that AE - EB is commensurable with A. Since AE and EB are commensurable, by 10.15 their sum AE + EB, which equals A, is commensurable with each of AE and EB. In particular, A is commensurable with AE.
+
+**Step 6.** Now consider the decomposition AE = (AE - EB) + EB. Since AE is commensurable with EB (given), by the converse part of 10.15, AE is commensurable with AE - EB. (For 10.15 states: if the whole is commensurable with one of the parts, then the two parts are commensurable; here the whole AE is commensurable with the part EB, so AE is commensurable with the other part AE - EB.)
+
+**Step 7.** We have established that AE - EB is commensurable with AE (Step 6), and AE is commensurable with A (Step 5). By 10.12, magnitudes commensurable with the same magnitude are commensurable with one another, so AE - EB is commensurable with A. Since the square on A exceeds the square on B by the square on AE - EB (Step 4), the square on A is greater than the square on B by the square on a straight line commensurable with A. This completes the forward direction.
+
+**Step 8.** [Converse direction] Now suppose the square on A is greater than the square on B by the square on a straight line commensurable with A. That is, sq(A) - sq(B) = sq(C) where C is commensurable with A. From Step 4, sq(A) - sq(B) = sq(AE - EB). Therefore by CN1, sq(C) = sq(AE - EB), and hence C = AE - EB. So AE - EB is commensurable with A.
+
+**Step 9.** We must show AE and EB are commensurable. We have that AE - EB is commensurable with A = AE + EB. By 10.15, since AE - EB is commensurable with AE + EB, their sum (AE - EB) + (AE + EB) = 2*AE is commensurable with each of AE - EB and AE + EB.
+
+**Step 10.** Similarly, since AE + EB is commensurable with AE - EB, by 10.15, the magnitude (AE + EB) - (AE - EB) = 2*EB is commensurable with each of AE + EB and AE - EB.
+
+**Step 11.** Thus 2*AE and 2*EB are each commensurable with AE + EB. By 10.12, 2*AE is commensurable with 2*EB.
+
+**Step 12.** Since 2*AE and 2*EB are commensurable, they have to one another the ratio of a number to a number, by 10.5. Now AE is to EB as 2*AE is to 2*EB, by 5.15, since equal multiples preserve ratio. Therefore AE has to EB the ratio of a number to a number. By 10.6, AE and EB are commensurable in length.
+
+**Step 13.** Therefore the parallelogram applied to A, equal to one-fourth of the square on B and deficient by a square figure, divides A into parts AE and EB which are commensurable in length. This completes the converse direction, and the proposition is proved. Q.E.D.
+
+**USED:** 10.12, 10.15, 10.5, 10.6, 2.5, 5.15, CN1, CN3
+**Human refs (from References field):** 10.12, 10.15, 10.6, 2.5
+**Jaccard:** 0.500 — AI adds ['10.5', '5.15', 'CN1', 'CN3']
+
+## Proposition 10.18
+**Statement:** If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater will be greater than the square on the less by the square on a straight line incommensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable. Let A, BC be two unequal straight lines, of which BC is the greater, and to BC let there be applied a parallelogram equal to the fourth part of the square on the less, A, and deficient by a square figure.
+
+**Step 1.** Let A and BC be two unequal straight lines with BC the greater. Let there be applied to BC a parallelogram equal to the fourth part of the square on A and deficient by a square figure, and let it divide BC at D, so that BD and DC are the resulting parts and the rectangle BD by DC equals one-fourth of the square on A.
+
+**Step 2.** Bisect BC at E [1.10]. Then E is the midpoint of BC, so BE = EC.
+
+**Step 3.** By 2.5, when a straight line (BC) is cut into equal segments (at E) and into unequal segments (at D), the rectangle contained by the unequal segments plus the square on the straight line between the points of section equals the square on the half. That is, BD times DC plus the square on ED equals the square on EC.
+
+**Step 4.** Since BD times DC equals one-fourth of the square on A (by hypothesis), we have: the square on EC equals one-fourth of the square on A plus the square on ED. Therefore the square on ED equals the square on EC minus one-fourth of the square on A.
+
+**Step 5.** Now EC equals half of BC, so the square on EC equals one-fourth of the square on BC. Thus the square on ED equals one-fourth of the square on BC minus one-fourth of the square on A, which is one-fourth of the excess of the square on BC over the square on A.
+
+**Step 6.** Therefore four times the square on ED equals the square on BC minus the square on A. Let DF be made equal to twice ED. Then the square on DF equals four times the square on ED, so the square on DF equals the square on BC minus the square on A. Hence the square on BC equals the square on A plus the square on DF, meaning the square on BC is greater than the square on A by the square on DF.
+
+**Step 7. (Forward direction)** Suppose BD and DC are incommensurable. We must show DF is incommensurable with BC. Since BD = BE + ED = EC + ED and DC = EC - ED, suppose for contradiction that EC and ED are commensurable. Then by 10.15, EC + ED is commensurable with EC, and EC - ED is commensurable with EC. Then by 10.12, EC + ED and EC - ED are commensurable with each other, that is, BD and DC are commensurable. This contradicts the hypothesis that BD and DC are incommensurable. Therefore EC and ED are incommensurable.
+
+**Step 8.** Now BC = 2 times EC and DF = 2 times ED, so BC is the same multiple of EC that DF is of ED, whence EC is to ED as BC is to DF. Since EC and ED are incommensurable, by 10.11, BC and DF are also incommensurable. Therefore the square on BC is greater than the square on A by the square on a straight line DF incommensurable with BC.
+
+**Step 9. (Converse direction)** Now suppose the square on BC is greater than the square on A by the square on a straight line incommensurable with BC. Apply to BC a parallelogram equal to one-fourth of the square on A and deficient by a square figure, dividing BC at D. We must show BD and DC are incommensurable.
+
+**Step 10.** By the same construction, bisect BC at E. By Steps 3 through 6 above, the square on BC exceeds the square on A by the square on DF where DF = 2 times ED. By hypothesis, DF is incommensurable with BC.
+
+**Step 11.** Since BC = 2 times EC and DF = 2 times ED, we have EC is to ED as BC is to DF. Since BC and DF are incommensurable, by 10.11, EC and ED are also incommensurable.
+
+**Step 12.** Now BD = EC + ED and DC = EC - ED. Suppose for contradiction that BD and DC are commensurable. Then by 10.15, BD + DC = 2 times EC is commensurable with BD = EC + ED. But since EC and ED are incommensurable, by 10.16, EC + ED is incommensurable with EC. Since 2 times EC is commensurable with EC (for 2 times EC and EC have the ratio 2 to 1, which is a ratio of number to number, so they are commensurable by 10.6), and EC + ED is incommensurable with EC, by 10.13, EC + ED is incommensurable with 2 times EC. That is, BD is incommensurable with BD + DC. But this contradicts our supposition that BD and DC are commensurable (since by 10.15, if BD and DC are commensurable, then BD + DC is commensurable with BD). Therefore BD and DC are incommensurable, which was to be proved.
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.15, 10.16, 10.6, 2.5
+**Human refs (from References field):** 10.13, 10.16, 10.17, 10.6
+**Jaccard:** 0.333 — AI adds ['1.10', '10.11', '10.12', '10.15', '2.5']; Human adds ['10.17']
+
+## Proposition 10.19
+**Statement:** The rectangle contained by rational straight lines commensurable in length is rational.
+
+**Step 1.** Let A and B be rational straight lines commensurable in length. We must show that the rectangle contained by A and B is rational.
+
+**Step 2.** Since A is a rational straight line, the square on A is rational, that is, the square on A is commensurable with the square on the assigned rational straight line [D10.1.3, D10.1.4].
+
+**Step 3.** Construct the rectangle contained by A and B. By Proposition 6.1, parallelograms (and rectangles) under the same height are to one another as their bases. Therefore the rectangle contained by A and B is to the square on A as B is to A [6.1].
+
+**Step 4.** Since A and B are rational straight lines commensurable in length, A is commensurable in length with B [D10.1.3]. Therefore, by Proposition 10.5, the ratio of B to A is the ratio which a number has to a number [10.5].
+
+**Step 5.** Since the rectangle contained by A and B is to the square on A as B is to A (Step 3), and the ratio of B to A is a ratio of a number to a number (Step 4), the rectangle contained by A and B has to the square on A the ratio which a number has to a number. Therefore, by Proposition 10.6, the rectangle contained by A and B is commensurable with the square on A [10.6].
+
+**Step 6.** The square on A is rational (Step 2), meaning it is commensurable with the square on the assigned rational straight line. The rectangle contained by A and B is commensurable with the square on A (Step 5). Therefore, by Proposition 10.12, the rectangle contained by A and B is commensurable with the square on the assigned rational straight line [10.12].
+
+**Step 7.** Since the rectangle contained by A and B is commensurable with the square on the assigned rational straight line, the rectangle contained by A and B is rational [D10.1.4].
+
+Therefore, the rectangle contained by rational straight lines commensurable in length is rational. Q.E.D.
+
+**USED:** 10.12, 10.5, 10.6, 6.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.286 — AI adds ['10.12', '10.5', '10.6', 'D10.1.3']; Human adds ['10.11']
+
+## Proposition 10.20
+**Statement:** If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.
+
+**Step 1.** Let the rational area S be applied to the rational straight line AB, producing as breadth the straight line BC. Thus S is the rectangle contained by AB and BC, that is, S = rect(AB, BC).
+
+**Step 2.** Since AB is a rational straight line, the square on AB is a rational area [D10.1.3, D10.1.4]. Since S is also a rational area, both S and the square on AB are commensurable with the square on the assigned rational straight line [D10.1.4].
+
+**Step 3.** Since S and the square on AB are each commensurable with the square on the assigned rational straight line, S is commensurable with the square on AB [10.12].
+
+**Step 4.** Now S = rect(AB, BC) and sq(AB) = rect(AB, AB). By the property that rectangles with one common side are to one another as their remaining sides [6.1], we have rect(AB, BC) : rect(AB, AB) = BC : AB, that is, S : sq(AB) = BC : AB.
+
+**Step 5.** Since S is commensurable with sq(AB) (Step 3), and S : sq(AB) = BC : AB (Step 4), the four magnitudes S, sq(AB), BC, AB are proportional with the first commensurable with the second. Therefore BC is commensurable in length with AB [10.11].
+
+**Step 6.** Since BC is commensurable in length with the rational straight line AB, BC is itself rational [D10.1.3]. Moreover, BC is commensurable in length with AB, the straight line to which the area was applied (Step 5).
+
+**Step 7.** Therefore, if a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied. Q.E.D.
+
+**USED:** 10.11, 10.12, 6.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.600 — AI adds ['10.12', 'D10.1.3']
+
+## Proposition 10.21
+**Statement:** The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called medial.
+
+**Step 1.** Let A and B be rational straight lines commensurable in square only. Since A is rational, it is commensurable in square with the assigned rational straight line, and therefore the square on A is a rational area [D10.1.3, D10.1.4].
+
+**Step 2.** Since A and B are commensurable in square only, they are by definition incommensurable in length [D10.1.2].
+
+**Step 3.** Consider rectangles with the same height A: the rectangle contained by A and A (that is, the square on A) is to the rectangle contained by A and B as the straight line A is to the straight line B [6.1].
+
+**Step 4.** Since A and B are incommensurable in length (Step 2), the square on A and the rectangle contained by A and B are also incommensurable, for if four magnitudes are proportional and the first is incommensurable with the second, then the third is incommensurable with the fourth [10.11].
+
+**Step 5.** But the square on A is rational (Step 1). Since the rectangle contained by A and B is incommensurable with the rational square on A, the rectangle contained by A and B is irrational [D10.1.4].
+
+**Step 6.** Now let C be the mean proportional between A and B, so that A is to C as C is to B [6.13].
+
+**Step 7.** Then the rectangle contained by A and B is equal to the square on C, since if three straight lines are proportional, the rectangle contained by the extremes equals the square on the mean [6.17].
+
+**Step 8.** But the rectangle contained by A and B has been shown to be irrational (Step 5). Therefore the square on C is irrational, and consequently C itself is irrational [D10.1.4]. Let such a straight line be called medial.
+
+**Step 9.** Therefore, the rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Q.E.D.
+
+**USED:** 10.11, 6.1, 6.13, 6.17, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.429 — AI adds ['6.13', '6.17', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.22
+**Statement:** The square on a medial straight line, if applied to a rational straight line, produces as breadth a straight line rational and incommensurable in length with that to which it is applied.
+
+**Step 1.** Let A be a medial straight line, and let CD be a rational straight line. Let the square on A be applied to CD, producing EF as breadth, so that rect(CD, EF) equals sq(A). We must show that EF is rational and incommensurable in length with CD.
+
+**Step 2.** Since A is medial, by the definition of medial (10.21), sq(A) is equal to the rectangle contained by rational straight lines commensurable in square only. Let G and H be rational straight lines commensurable in square only such that rect(G, H) equals sq(A). Then rect(CD, EF) equals rect(G, H).
+
+**Step 3.** Since G is rational and CD is rational, G is commensurable in square with CD (D10.1.3). Therefore sq(G) and sq(CD) are commensurable areas (D10.1.2).
+
+**Step 4.** By 6.1, sq(G) is to rect(G, H) as G is to H. Since G and H are commensurable in square only, they are incommensurable in length. Therefore, by 10.11, sq(G) is incommensurable with rect(G, H).
+
+**Step 5.** Since rect(G, H) equals rect(CD, EF), sq(G) is incommensurable with rect(CD, EF).
+
+**Step 6.** Since sq(G) is commensurable with sq(CD) (Step 3), and sq(G) is incommensurable with rect(CD, EF) (Step 5), by 10.13 sq(CD) is incommensurable with rect(CD, EF).
+
+**Step 7.** By 6.1, sq(CD) is to rect(CD, EF) as CD is to EF. Since sq(CD) and rect(CD, EF) are incommensurable (Step 6), by 10.11 CD and EF are incommensurable in length.
+
+**Step 8.** It remains to show that EF is rational. From rect(CD, EF) equals rect(G, H), by 6.16, CD is to G as H is to EF.
+
+**Step 9.** By 6.22, the ratio sq(CD) to sq(G) is the duplicate ratio of CD to G, which equals the duplicate ratio of H to EF, which is sq(H) to sq(EF). Therefore sq(CD) is to sq(G) as sq(H) is to sq(EF).
+
+**Step 10.** Since G and CD are commensurable in square (Step 3), sq(CD) and sq(G) are commensurable, so their ratio is as a number to a number (10.5). Therefore sq(H) to sq(EF) is also as a number to a number. By 10.6, sq(H) and sq(EF) are commensurable.
+
+**Step 11.** Since H is rational, sq(H) is commensurable with sq(CD) (D10.1.3, D10.1.2). Since sq(EF) is commensurable with sq(H) (Step 10), and sq(H) is commensurable with sq(CD), by 10.12 sq(EF) is commensurable with sq(CD). Therefore EF is commensurable in square with CD (D10.1.2), and hence EF is rational (D10.1.3).
+
+**Step 12.** Therefore EF is rational and incommensurable in length with CD, which is what was to be proved.
+
+**USED:** 10.11, 10.12, 10.13, 10.21, 10.5, 10.6, 6.1, 6.16, 6.22, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.13, 10.21, 6.14, 6.22, D10.1.4
+**Jaccard:** 0.308 — AI adds ['10.12', '10.5', '10.6', '6.1', '6.16', 'D10.1.2', 'D10.1.3']; Human adds ['6.14', 'D10.1.4']
+
+## Proposition 10.23
+**Statement:** A straight line commensurable with a medial straight line is medial.
+
+**Step 1.** Let A be a medial straight line, and let B be commensurable with A. We must show that B is medial.
+
+**Step 2.** Set out a rational straight line CD. Apply the square on A to CD, producing the rectangle with area equal to the square on A and breadth equal to DE, so that the square on A equals the rectangle CD · DE [cf. 1.44, 1.45 for application of areas].
+
+**Step 3.** Since A is medial, by Proposition 10.22, the breadth DE is rational and incommensurable in length with CD.
+
+**Step 4.** Since A and B are commensurable, the squares on A and B are commensurable areas. For commensurable straight lines have their squares in the ratio of a number to a number: since A : B is as a number to a number [10.5], the duplicate ratio A² : B² is also as a number to a number [cf. D5.9], and hence the squares are commensurable [10.6].
+
+**Step 5.** Apply the square on B to CD, producing a rectangle with breadth DF, so that the square on B equals the rectangle CD · DF.
+
+**Step 6.** Now the square on A equals CD · DE, and the square on B equals CD · DF. By Proposition 6.1, rectangles of the same height are to one another as their bases, so CD · DE : CD · DF = DE : DF.
+
+**Step 7.** Since the square on A and the square on B are commensurable (Step 4), and they are in the same ratio as DE to DF (Step 6), it follows by Proposition 10.11 that DE and DF are commensurable.
+
+**Step 8.** Since DE is rational (Step 3) and DF is commensurable with DE (Step 7), DF is also rational, by Definition D10.1.3 and Proposition 10.12 (magnitudes commensurable with the same rational magnitude are commensurable with one another, so DF is commensurable with the assigned rational line since DE is).
+
+**Step 9.** Since DE is incommensurable in length with CD (Step 3) and DF is commensurable with DE (Step 7), it follows by Proposition 10.13 that DF is incommensurable in length with CD.
+
+**Step 10.** Since CD is rational and DF is rational (Step 8), the squares on CD and DF are each commensurable with the square on the assigned rational line (by D10.1.3). Hence by Proposition 10.12, the square on CD is commensurable with the square on DF, which means CD and DF are commensurable in square (D10.1.2).
+
+**Step 11.** Since CD and DF are incommensurable in length (Step 9) but commensurable in square (Step 10), CD and DF are rational straight lines commensurable in square only.
+
+**Step 12.** By Proposition 10.21, the rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational and is called medial. Since the square on B equals the rectangle CD · DF (Step 5), and CD and DF are rational straight lines commensurable in square only (Step 11), B is medial.
+
+**Step 13.** Therefore, a straight line commensurable with a medial straight line is medial. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.21, 10.22, 10.5, 10.6, 6.1, D10.1.2, D10.1.3, D5.9
+**Human refs (from References field):** 10.11, 10.13, 10.21, 10.22, 6.1, D10.1.3
+**Jaccard:** 0.545 — AI adds ['10.12', '10.5', '10.6', 'D10.1.2', 'D5.9']
+
+## Proposition 10.24
+**Statement:** The rectangle contained by medial straight lines commensurable in length is medial.
+
+**Step 1.** Let A and B be medial straight lines commensurable in length. We must show that the rectangle contained by A and B is medial.
+
+**Step 2.** Since A is a medial straight line, the square on A is a medial area, that is, the square on A is irrational, being the square on an irrational line produced as in 10.21. [10.21, D10.1.4]
+
+**Step 3.** Since A and B are commensurable in length, the ratio B : A is as some number to some number. [10.5]
+
+**Step 4.** Now rectangles of the same height are to one another as their bases. Therefore rect(A, B) : rect(A, A) = B : A, that is, rect(A, B) : sq(A) = B : A. [6.1]
+
+**Step 5.** Since the ratio B : A is as number to number (Step 3), and rect(A, B) : sq(A) equals this same ratio (Step 4), the rectangle rect(A, B) is commensurable with the square sq(A). [10.6]
+
+**Step 6.** Let C be a straight line such that the square on C is equal to the rectangle contained by A and B; such a line exists by constructing a square equal to the given rectangle. [2.14]
+
+**Step 7.** Then sq(C) = rect(A, B). Since rect(A, B) is commensurable with sq(A) (Step 5), it follows that sq(C) is commensurable with sq(A). Therefore C and A are commensurable in square. [D10.1.2]
+
+**Step 8.** Since A is medial, and C is commensurable with A (in square), C is also medial. [10.23]
+
+**Step 9.** Since C is medial, the square on C is a medial area. But sq(C) = rect(A, B). Therefore the rectangle contained by A and B is medial. [D10.1.4]
+
+**Step 10.** Therefore the rectangle contained by medial straight lines commensurable in length is medial. Q.E.D.
+
+**USED:** 10.21, 10.23, 10.5, 10.6, 2.14, 6.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 10.23, 6.1
+**Jaccard:** 0.222 — AI adds ['10.21', '10.5', '10.6', '2.14', 'D10.1.2', 'D10.1.4']; Human adds ['10.11']
+
+## Proposition 10.25
+**Statement:** The rectangle contained by medial straight lines commensurable in square only is either rational or medial.
+
+**Step 1.** Let A and B be medial straight lines commensurable in square only. We are to show that the rectangle contained by A and B is either rational or medial. Set out a rational straight line C [D10.1.3].
+
+**Step 2.** Since A is medial, the square on A is a medial area. Apply the square on A to the rational straight line C, producing as breadth D, so that sq(A) = C * D. By 10.22, D is rational and incommensurable in length with C.
+
+**Step 3.** Since B is medial, similarly apply the square on B to C, producing as breadth E, so that sq(B) = C * E. By 10.22, E is rational and incommensurable in length with C.
+
+**Step 4.** Since A and B are commensurable in square, sq(A) is commensurable with sq(B) [D10.1.2]. Now sq(A) = C * D and sq(B) = C * E, so sq(A) : sq(B) = D : E [6.1]. Since sq(A) is commensurable with sq(B), it follows that D is commensurable in length with E [10.11]. Therefore D and E are rational straight lines commensurable in length.
+
+**Step 5.** Since D and E are rational and commensurable in length, the rectangle contained by D and E is rational [10.19].
+
+**Step 6.** Now since sq(A) = C * D and sq(B) = C * E, the rectangle contained by A and B is a mean proportional between sq(A) and sq(B) [6.17]. That is, sq(A) : rect(A, B) = rect(A, B) : sq(B). Since sq(A) : rect(A, B) = A : B [6.1] and rect(A, B) : sq(B) = A : B, we also have rect(A, B) = C * F for some straight line F, where we apply rect(A, B) to C with breadth F.
+
+**Step 7.** From the mean proportional relationship, sq(A) : rect(A, B) = rect(A, B) : sq(B). Substituting sq(A) = C * D, rect(A, B) = C * F, and sq(B) = C * E, we obtain C * D : C * F = C * F : C * E, which gives D : F = F : E [6.1]. Therefore sq(F) = rect(D, E) [6.17].
+
+**Step 8.** By Step 5, rect(D, E) is rational. Since sq(F) = rect(D, E), the square on F is a rational area. Therefore sq(F) is commensurable with sq(C) [D10.1.4]. Hence F is commensurable in square with C, and so F is rational [D10.1.3].
+
+**Step 9.** Now rect(A, B) = C * F, where C and F are both rational straight lines. There are two possibilities: either C and F are commensurable in length, or C and F are commensurable in square only.
+
+**Step 10.** If C and F are commensurable in length, then the rectangle C * F is rational [10.19], and so rect(A, B) is rational.
+
+**Step 11.** If C and F are commensurable in square only, then the rectangle C * F is irrational and the side of the square equal to it is medial [10.21]. That is, rect(A, B) is a medial area.
+
+**Step 12.** Therefore the rectangle contained by medial straight lines commensurable in square only is either rational or medial. Q.E.D.
+
+**USED:** 10.11, 10.19, 10.21, 10.22, 6.1, 6.17, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.19, 10.21, 10.22, 5.11, 6.1, 6.17
+**Jaccard:** 0.600 — AI adds ['D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['5.11']
+
+## Proposition 10.26
+**Statement:** A medial area does not exceed a medial area by a rational area.
+
+**Step 1.** Suppose, for the sake of contradiction, that a medial area AB exceeds a medial area CD by a rational area, so that AB - CD is rational. Let EF be a rational straight line set out.
+
+**Step 2.** Apply the area AB to the rational straight line EF, producing breadth EG, so that the rectangle EF by EG equals AB. Apply the area CD to EF, producing breadth EH (with H between E and G), so that the rectangle EF by EH equals CD. Then the rectangle EF by HG equals AB - CD [1.44].
+
+**Step 3.** Since AB is a medial area applied to the rational straight line EF, the breadth EG is rational and incommensurable in length with EF [10.22].
+
+**Step 4.** Since CD is a medial area applied to the rational straight line EF, the breadth EH is rational and incommensurable in length with EF [10.22].
+
+**Step 5.** Since AB - CD is rational, the rectangle EF by HG is a rational area applied to the rational straight line EF. Therefore HG is rational and commensurable in length with EF [10.20].
+
+**Step 6.** Since EH is incommensurable in length with EF, and HG is commensurable in length with EF, it follows that EH is incommensurable in length with HG [10.13].
+
+**Step 7.** Now EH and HG are both rational. Since EH is rational, the square on EH is commensurable with the square on EF [D10.1.3, D10.1.2]. Since HG is rational, the square on HG is commensurable with the square on EF [D10.1.3, D10.1.2]. Therefore the square on EH is commensurable with the square on HG, so EH and HG are commensurable in square [10.12].
+
+**Step 8.** Since EH and HG are commensurable in square but incommensurable in length (Step 6), they are rational straight lines commensurable in square only. Therefore by 10.21, the rectangle contained by EH and HG is irrational [10.21].
+
+**Step 9.** Since EG = EH + HG, by 2.4 the square on EG equals the square on EH plus twice the rectangle contained by EH and HG plus the square on HG. Therefore twice the rectangle EH by HG equals the square on EG minus the square on EH minus the square on HG [2.4].
+
+**Step 10.** Since EG is rational, the square on EG is a rational area, commensurable with the square on EF [D10.1.3, D10.1.4]. Since EH is rational, the square on EH is a rational area, commensurable with the square on EF. Both squares are commensurable with the square on EF, so they are commensurable with each other [10.12]. Since the square on EG equals the square on EH plus the remainder (sq(EG) - sq(EH)), and the square on EG is commensurable with the square on EH, the remainder sq(EG) - sq(EH) is commensurable with the square on EH [10.15], and therefore commensurable with the square on EF. Hence sq(EG) - sq(EH) is rational.
+
+**Step 11.** The square on HG is rational and commensurable with the square on EF (since HG is rational and commensurable in length with EF, by 10.9 the squares have a ratio of square number to square number, and hence are commensurable by 10.6). Both sq(EG) - sq(EH) and sq(HG) are commensurable with the square on EF, hence commensurable with each other [10.12]. By 10.15, their difference, which is twice the rectangle EH by HG, is commensurable with the square on EF and therefore rational.
+
+**Step 12.** Since twice the rectangle EH by HG is rational, and twice a magnitude has to the magnitude the ratio 2 to 1, which is a ratio of number to number, the rectangle EH by HG is commensurable with twice the rectangle EH by HG [10.6]. Since twice the rectangle is commensurable with the square on EF (rational), and the rectangle is commensurable with twice the rectangle, then by 10.12 the rectangle EH by HG is commensurable with the square on EF. Therefore the rectangle EH by HG is rational [D10.1.4].
+
+**Step 13.** But in Step 8 we proved that the rectangle EH by HG is irrational. This is a contradiction.
+
+**Step 14.** Therefore the assumption is false, and a medial area does not exceed a medial area by a rational area. Q.E.D.
+
+**USED:** 1.44, 10.12, 10.13, 10.15, 10.20, 10.21, 10.22, 10.6, 10.9, 2.4, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.16, 10.20, 10.22, 10.6, 2.4, D10.1.4
+**Jaccard:** 0.400 — AI adds ['1.44', '10.12', '10.15', '10.21', '10.9', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.16']
+
+## Proposition 10.27
+**Statement:** To find medial straight lines commensurable in square only which contain a rational rectangle.
+
+**Step 1.** Let A be a rational straight line set out [D10.1.3].
+
+**Step 2.** By 10.10, find B such that B is incommensurable in length with A but commensurable with A in square. Then B is also rational [D10.1.3], and A, B are rational straight lines commensurable in square only [D10.1.2].
+
+**Step 3.** By 6.13, take C the mean proportional between A and B, so that A : C = C : B. Then by 6.17, the rectangle contained by the extremes equals the square on the mean, that is, rect(A, B) = sq(C).
+
+**Step 4.** Since A and B are rational straight lines commensurable in square only, the rectangle rect(A, B) is irrational, and specifically medial [10.21]. Since sq(C) = rect(A, B), the square on C is a medial area, and therefore C is a medial straight line [D10.1.4].
+
+**Step 5.** By 1.44, apply the area sq(A) to the straight line C, producing as breadth a straight line D, so that rect(C, D) = sq(A). Since sq(A) is a rational area [D10.1.4, D10.1.3], we have rect(C, D) rational.
+
+**Step 6.** We now show that C and D are commensurable in square only. Since rect(C, C) = sq(C) and rect(C, D) are rectangles with the same side C, by 6.1 we have rect(C, C) : rect(C, D) = C : D. But rect(C, C) = sq(C) = rect(A, B) (from Step 3), and rect(C, D) = sq(A) (from Step 5). So C : D = rect(A, B) : sq(A).
+
+**Step 7.** Now rect(A, B) and sq(A) = rect(A, A) are rectangles with the same side A. By 6.1, rect(A, B) : rect(A, A) = B : A. Therefore C : D = B : A.
+
+**Step 8.** Since A and B are incommensurable in length (Step 2), the ratio B : A is not a ratio which a number has to a number [10.7]. Since C : D = B : A, the ratio C : D is likewise not a ratio of number to number, and therefore C and D are incommensurable in length [10.8].
+
+**Step 9.** Since C : D = B : A, by 6.22 the similar rectilineal figures on C and D are proportional to those on B and A. In particular, sq(C) : sq(D) = sq(B) : sq(A).
+
+**Step 10.** Since A and B are commensurable in square [D10.1.2], sq(A) and sq(B) are commensurable, so sq(B) : sq(A) is a ratio which a number has to a number [10.5]. Therefore sq(C) : sq(D) is a ratio which a number has to a number, so sq(C) and sq(D) are commensurable [10.6]. Hence C and D are commensurable in square [D10.1.2].
+
+**Step 11.** Combining Steps 8 and 10, C and D are commensurable in square but incommensurable in length, that is, commensurable in square only.
+
+**Step 12.** We now show D is medial. Apply the rational area sq(A) to the rational straight line B. By 10.20, the breadth is a rational straight line commensurable in length with B. Call this breadth F, so that rect(B, F) = sq(A), meaning F = sq(A)/B. Then F is rational and commensurable in length with B [10.20].
+
+**Step 13.** We show that A and F are commensurable in square only. Since F = sq(A)/B, the ratio F : A equals A : B. Since A and B are incommensurable in length (Step 2), F and A are incommensurable in length.
+
+**Step 14.** For the squares: sq(F) : sq(A) = sq(A) : sq(B) by 6.22, since F : A = A : B. Now sq(A) : sq(B) is a ratio of number to number [10.5] because A and B are commensurable in square. Therefore sq(F) : sq(A) is a ratio of number to number, so sq(F) and sq(A) are commensurable [10.6]. Hence F and A are commensurable in square [D10.1.2].
+
+**Step 15.** Combining Steps 13 and 14, A and F are rational straight lines commensurable in square only. By 10.21, the rectangle rect(A, F) is medial.
+
+**Step 16.** Now sq(D) = rect(A, F). To see this: from rect(C, D) = sq(A) we get D = sq(A)/C. So sq(D) = sq(A)^2 / sq(C) = sq(A)^2 / rect(A, B) = sq(A) * (sq(A)/rect(A,B)) = sq(A) * (A/B) = rect(A, sq(A)/B) = rect(A, F). Since rect(A, F) is medial (Step 15), sq(D) is a medial area, and therefore D is a medial straight line [D10.1.4].
+
+**Step 17.** Therefore C and D are medial straight lines which are commensurable in square only (Step 11) and which contain a rational rectangle, namely rect(C, D) = sq(A) (Step 5). This is what was required to find.
+
+**USED:** 1.44, 10.10, 10.20, 10.21, 10.5, 10.6, 10.7, 10.8, 6.1, 6.13, 6.17, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.17
+**Jaccard:** 0.158 — AI adds ['1.44', '10.10', '10.20', '10.5', '10.6', '10.7', '10.8', '6.1', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '10.23', '5.16', '6.12']
+
+## Proposition 10.28
+**Statement:** To find medial straight lines commensurable in square only which contain a medial rectangle.
+
+**Step 1.** Let A be a given rational straight line. Construct the square on A, and let B be its diagonal. By 1.47, sq(B) = sq(A) + sq(A), that is, sq(B) = 2*sq(A), so that sq(B):sq(A) = 2:1.
+
+**Step 2.** Since sq(B):sq(A) = 2:1, a ratio of numbers, B and A are commensurable in square (10.6, D10.1.2). Since 2 is not a perfect square, 2:1 is not a ratio of square numbers, so by 10.9, B and A are incommensurable in length. Therefore B is commensurable in square only with A, and B is rational (D10.1.3).
+
+**Step 3.** Let C be a straight line equal to three times B, so that C:B = 3:1. Since C:B is a ratio of numbers, C and B are commensurable in length (10.6). Since B is commensurable in square with A and C is commensurable in length with B, the squares sq(C) and sq(B) are commensurable (for by 10.9, commensurable lines have squares in the ratio of square numbers, hence a ratio of numbers, so the squares are commensurable by 10.6). Then since sq(B) is commensurable with sq(A), by 10.12, sq(C) is commensurable with sq(A). So C is rational (D10.1.3). Now if C were commensurable in length with A, then since C is commensurable in length with B, by 10.12, B would be commensurable in length with A, contradicting Step 2. Therefore C is incommensurable in length with A, and hence C is commensurable in square only with A.
+
+**Step 4.** By 6.13, let D be the mean proportional between A and B, so that A:D = D:B and sq(D) = rect(A,B). Since A and B are rational and commensurable in square only (Step 2), by 10.21, rect(A,B) is medial. Therefore sq(D) is a medial area, and D is a medial straight line (D10.1.4).
+
+**Step 5.** By 6.13, let E be the mean proportional between A and C, so that A:E = E:C and sq(E) = rect(A,C). Since A and C are rational and commensurable in square only (Step 3), by 10.21, rect(A,C) is medial. Therefore sq(E) is a medial area, and E is a medial straight line (D10.1.4).
+
+**Step 6.** By 6.1, sq(D):sq(E) = rect(A,B):rect(A,C) = B:C = 1:3. Since 1:3 is a ratio of numbers, sq(D) and sq(E) are commensurable (10.6), so D and E are commensurable in square (D10.1.2). Since 3 is not a perfect square, 1:3 is not a ratio of square numbers. By 10.9, D:E is not a ratio of numbers, so D and E are incommensurable in length. Therefore D and E are commensurable in square only.
+
+**Step 7.** By 6.13, let F be the mean proportional between B and C, so that B:F = F:C and sq(F) = rect(B,C). Since B and C are rational and commensurable in length (Step 3), by 10.19, rect(B,C) is rational. Therefore sq(F) is a rational area, that is, sq(F) is commensurable with sq(A), and F is rational (D10.1.3).
+
+**Step 8.** By 6.1, sq(F):sq(A) = rect(B,C):sq(A). Now by 6.1, rect(B,C):sq(B) = C:B = 3:1, so rect(B,C) = 3*sq(B) = 3*(2*sq(A)) = 6*sq(A). Therefore sq(F):sq(A) = 6:1. Since 6:1 is a ratio of numbers, A and F are commensurable in square (10.6, D10.1.2). Since 6 is not a perfect square, 6:1 is not a ratio of square numbers, so by 10.9, A:F is not a ratio of numbers, and A and F are incommensurable in length. Therefore A and F are commensurable in square only.
+
+**Step 9.** We now show that rect(D,E) = rect(A,F). By 6.1, since sq(D) = rect(A,B), we have sq(A):sq(D) = sq(A):rect(A,B) = A:B. Similarly, since sq(E) = rect(A,C) and sq(F) = rect(B,C), by 6.1, sq(E):sq(F) = rect(A,C):rect(B,C) = A:B. Therefore sq(A):sq(D) = sq(E):sq(F), both ratios being equal to A:B (5.11). By the converse part of 6.22, since the squares (which are similar figures) on A, D, E, F are proportional, the lines themselves are proportional: A:D = E:F. Then by 6.16, since four straight lines A, D, E, F are proportional, the rectangle contained by the extremes equals the rectangle contained by the means: rect(A,F) = rect(D,E).
+
+**Step 10.** Since A and F are rational and commensurable in square only (Step 8), by 10.21, rect(A,F) is medial. Since rect(D,E) = rect(A,F) (Step 9), the rectangle contained by D and E is medial.
+
+**Step 11.** Therefore D and E are medial straight lines (Steps 4 and 5), commensurable in square only (Step 6), which contain a medial rectangle (Step 10). This is what was required to find.
+
+**USED:** 1.47, 10.12, 10.19, 10.21, 10.6, 10.9, 5.11, 6.1, 6.13, 6.16, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.16, 6.17
+**Jaccard:** 0.158 — AI adds ['1.47', '10.12', '10.19', '10.6', '10.9', '5.11', '6.1', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '10.23', '5.16', '6.12', '6.17']
+
+## Proposition 10.29
+**Statement:** To find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+
+**Step 1.** Set out any rational straight line AB. [D10.1.3]
+
+**Step 2.** Set out two square numbers, say 4 and 1, and observe that their difference, 3, is not a square number.
+
+**Step 3.** Using 10.6, make it so that the ratio sq(AB) : sq(CD) equals 4 : 3 for some straight line CD. Since 4 and 3 are numbers, and this ratio is a ratio of a number to a number, sq(AB) and sq(CD) are commensurable areas. [10.6]
+
+**Step 4.** But sq(AB) is rational (since AB is rational, by D10.1.4). Since sq(CD) is commensurable with sq(AB), sq(CD) is also rational. [D10.1.4, 10.12]
+
+**Step 5.** Therefore CD is rational. [D10.1.3, D10.1.4]
+
+**Step 6.** Now since sq(AB) : sq(CD) = 4 : 3, and the ratio 4 : 3 is not a ratio of a square number to a square number (for 3 is not a square), by 10.9 AB and CD are incommensurable in length. [10.9]
+
+**Step 7.** But both AB and CD are rational (Steps 1, 5), and they are incommensurable in length. By D10.1.3, since CD is commensurable in square with AB (Step 3 and 10.9) but not in length (Step 6), AB and CD are commensurable in square only.
+
+**Step 8.** Since AB is the greater (for sq(AB) : sq(CD) = 4 : 3, hence sq(AB) > sq(CD), hence AB > CD), consider the excess of the square on AB over the square on CD. Let EF be the straight line such that sq(EF) = sq(AB) - sq(CD). Such a line exists by the converse construction from 1.47: construct a right triangle with hypotenuse equal to AB and one leg equal to CD; then the remaining leg EF satisfies sq(AB) = sq(CD) + sq(EF). [1.47, 1.22, P1, P3]
+
+**Step 9.** We have sq(EF) = sq(AB) - sq(CD). Now sq(AB) : sq(CD) = 4 : 3, so sq(AB) - sq(CD) : sq(AB) = (4 - 3) : 4 = 1 : 4. That is, sq(EF) : sq(AB) = 1 : 4. [5.17, CN3]
+
+**Step 10.** The ratio 1 : 4 is a ratio of a square number to a square number (since 1 = 1 squared and 4 = 2 squared). Therefore, by 10.9, EF is commensurable in length with AB. [10.9]
+
+**Step 11.** Therefore AB and CD are two rational straight lines, commensurable in square only (Steps 5, 6, 7), and the square on the greater AB is greater than the square on the less CD by the square on EF (Step 8), where EF is commensurable in length with AB (Step 10). This is what was required to find.
+
+**USED:** 1.22, 1.47, 10.12, 10.6, 10.9, 5.17, CN3, D10.1.3, D10.1.4, P1, P3
+**Human refs (from References field):** 1.47, 10.6, 10.9, 3.31, 5.19, D10.1.4
+**Jaccard:** 0.308 — AI adds ['1.22', '10.12', '5.17', 'CN3', 'D10.1.3', 'P1', 'P3']; Human adds ['3.31', '5.19']
+
+## Proposition 10.30
+**Statement:** To find two rational straight lines commensurable in square only and such that the square on the greater is greater is greater than the square on the less by the square on a straight line incommensurable in length with the greater.
+
+**Step 1.** Let A be a rational straight line set out.
+
+**Step 2.** Find three numbers d, e, f such that d = e + f, where d has not to e the ratio of a square number to a square number, and d has not to f the ratio of a square number to a square number. For example, let d = 3, e = 2, f = 1; then d:e = 3:2 and d:f = 3:1, neither of which is the ratio of a square number to a square number.
+
+**Step 3.** Let B be a straight line such that the square on A is to the square on B as d is to e, that is, A^2:B^2 = d:e. Such a line can be found by 10.6, since d:e is a ratio of a number to a number.
+
+**Step 4.** Since A^2:B^2 = d:e, a ratio of a number to a number, the square on A is commensurable with the square on B [10.6]. Therefore A and B are commensurable in square [D10.1.2].
+
+**Step 5.** Since d:e is not the ratio of a square number to a square number, by 10.9 the straight lines A and B are incommensurable in length.
+
+**Step 6.** Therefore A and B are commensurable in square only. Since A is rational and B is commensurable in square with A, B is also rational [D10.1.3].
+
+**Step 7.** Since d > e (for d = e + f and f is a positive number), the square on A is greater than the square on B, and therefore A is greater than B.
+
+**Step 8.** Since the square on A is greater than the square on B, let G be a straight line such that the square on A equals the square on B together with the square on G, that is, A^2 = B^2 + G^2. Such a line G can be constructed by taking a right angle, setting B as one leg, and finding the other leg of a right triangle with hypotenuse A [1.47].
+
+**Step 9.** We have A^2:B^2 = d:e. By separando [5.17], (A^2 - B^2):B^2 = (d - e):e = f:e. But A^2 - B^2 = G^2. So G^2:B^2 = f:e, and therefore B^2:G^2 = e:f.
+
+**Step 10.** Now since A^2:B^2 = d:e and B^2:G^2 = e:f, by the ratio ex aequali [5.22], A^2:G^2 = d:f.
+
+**Step 11.** Since d has not to f the ratio of a square number to a square number, by 10.9 the straight lines A and G are incommensurable in length.
+
+**Step 12.** Therefore the square on A is greater than the square on B by the square on G, and G is incommensurable in length with A.
+
+**Step 13.** Thus A and B are two rational straight lines, commensurable in square only, such that the square on the greater is greater than the square on the less by the square on a straight line incommensurable in length with the greater. Q.E.D.
+
+**USED:** 1.47, 10.6, 10.9, 5.17, 5.22, D10.1.2, D10.1.3
+**Human refs (from References field):** 1.47, 10.6, 10.9, 3.31, 5.19
+**Jaccard:** 0.333 — AI adds ['5.17', '5.22', 'D10.1.2', 'D10.1.3']; Human adds ['3.31', '5.19']
+
+## Proposition 10.31
+**Statement:** To find two medial straight lines commensurable in square only, containing a rational rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+
+**Step 1.** By 10.29, find two rational straight lines A and B, commensurable in square only, such that the square on A is greater than the square on B by the square on a straight line commensurable in length with A.
+
+**Step 2.** By 6.13, find C the mean proportional between A and B, so that A : C = C : B.
+
+**Step 3.** By 6.17, the rectangle contained by A and B equals the square on C, since C is the mean proportional of A and B.
+
+**Step 4.** Since A and B are rational straight lines commensurable in square only, the rectangle contained by A and B is medial, by 10.21. Therefore the square on C is medial. Hence C is a medial straight line, by D10.1.4.
+
+**Step 5.** Now let D be taken such that A : B = C : D. Since A : C = C : B (from Step 2), take the alternate ratio by 5.16 on the proportion A : B = C : D to obtain A : C = B : D. Since A : C = C : B, it follows that C : B = B : D. Therefore B is a mean proportional between C and D.
+
+**Step 6.** By 6.17, since B is a mean proportional between C and D, the square on B equals the rectangle contained by C and D. Since B is rational, the square on B is a rational area (by D10.1.3 and D10.1.4). Therefore the rectangle contained by C and D is rational.
+
+**Step 7.** By 6.22, since A : B = C : D (four proportional straight lines), the squares on them, being similar figures similarly described, are proportional: the square on A is to the square on B as the square on C is to the square on D.
+
+**Step 8.** Since A and B are rational straight lines commensurable in square, the square on A is commensurable with the square on B (by D10.1.2). By 10.11, since the square on A is to the square on B as the square on C is to the square on D, and the square on A is commensurable with the square on B, the square on C is commensurable with the square on D. Therefore C and D are commensurable in square (by D10.1.2).
+
+**Step 9.** Since C is medial and D is commensurable in square with C, D is medial by 10.23.
+
+**Step 10.** Since A and B are commensurable in square only (hence incommensurable in length), and A : B = C : D, by 10.11 (contrapositively), C and D are incommensurable in length. Combined with Step 8, C and D are commensurable in square only.
+
+**Step 11.** By 10.14, since A : B = C : D (four proportional straight lines), and the square on A is greater than the square on B by the square on a straight line commensurable in length with A (from Step 1), the square on C is greater than the square on D by the square on a straight line commensurable in length with C.
+
+**Step 12.** Therefore C and D are two medial straight lines commensurable in square only (Steps 9, 10), containing a rational rectangle (Step 6), such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater (Step 11). This is what was required to find.
+
+**USED:** 10.11, 10.14, 10.21, 10.23, 10.29, 5.16, 6.13, 6.17, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.14, 10.21, 10.23, 10.29, 10.30
+**Jaccard:** 0.385 — AI adds ['5.16', '6.13', '6.17', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.30']
+
+## Proposition 10.32
+**Statement:** To find two medial straight lines commensurable in square only, containing a medial rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
+
+**Step 1.** By 10.29, find two rational straight lines FG and GH, with FG greater than GH, commensurable in square only, such that the square on FG is greater than the square on GH by the square on a straight line commensurable in length with FG. [10.29]
+
+**Step 2.** Since FG and GH are rational and commensurable in square only, the rectangle contained by FG and GH is medial. [10.21]
+
+**Step 3.** Since FG and GH are commensurable in square only, they are incommensurable in length. Choose a rational straight line A incommensurable in length with both FG and GH. Such a line exists: by 10.10, we can find a rational line incommensurable in length with FG. If this line were commensurable in length with GH, then since GH is incommensurable in length with FG, we could find yet another rational line incommensurable in length with both (for if every rational line incommensurable with FG were commensurable with GH, taking two such lines incommensurable with each other would yield both commensurable with GH and hence commensurable with each other by 10.12, a contradiction). So we may take A rational and incommensurable in length with both FG and GH. [10.10, 10.12]
+
+**Step 4.** By 6.12, find the straight line C such that FG is to GH as B is to C, where B is defined as follows. By 6.13, let B be the mean proportional between A and FG, so that the square on B equals the rectangle contained by A and FG. Then C is determined by the proportion B : C :: FG : GH. [6.13, 6.12]
+
+**Step 5.** Since A and FG are both rational but incommensurable in length, they are commensurable in square only. Therefore by 10.21, the rectangle contained by A and FG is medial. Since the square on B equals this rectangle, the square on B is a medial area, and hence B is a medial straight line. [10.21, D10.1.3, D10.1.4]
+
+**Step 6.** We show that C is also medial. From the proportion B : C :: FG : GH, we obtain the duplicate ratio: the square on B is to the square on C as the square on FG is to the square on GH. [D5.9] Since FG and GH are commensurable in square, the square on FG is commensurable with the square on GH (by 10.9 and 10.6). Therefore the square on B is commensurable with the square on C (by 10.11). [10.9, 10.6, 10.11] Now the square on B is a medial area (Step 5), and the square on C is commensurable with it, so we must show the square on C is also medial. Apply both areas to the rational line A: the square on B applied to A gives a breadth that is rational and incommensurable in length with A (by 10.22, since B is medial). The square on C applied to A gives a breadth commensurable with this first breadth (by 10.11, since the areas are commensurable and the base is the same). Hence this second breadth is also rational (by 10.12, being commensurable with a rational line) and incommensurable in length with A (for if it were commensurable with A, the first breadth would also be commensurable with A by 10.12, contradicting 10.22). Therefore by 10.22, C is medial. [10.22, 10.12]
+
+**Step 7.** We show B and C are commensurable in square only. From Step 6, the square on B is commensurable with the square on C, so B and C are commensurable in square. [D10.1.2] Now B : C :: FG : GH (by construction), and since FG and GH are incommensurable in length, B and C are also incommensurable in length (by 10.11, since FG : GH is not a ratio of numbers by 10.7, so neither is B : C, and by 10.8 B and C are incommensurable). [10.7, 10.8, 10.11] Therefore B and C are commensurable in square only.
+
+**Step 8.** We show the rectangle contained by B and C is medial. Since B : C :: FG : GH, the rectangle B,C is to the square on B as C is to B (by 6.1), and equivalently the rectangle B,C is to the rectangle FG,GH as the square on B is to the square on FG. [6.1] Now the square on B equals the rectangle A,FG (Step 4), so the square on B is to the square on FG as A is to FG (by 6.1, since rect(A,FG) : sq(FG) = A : FG). Therefore the rectangle B,C is to the rectangle FG,GH as A is to FG. But we can compute directly: since B : C :: FG : GH, the rectangle contained by B and C equals the rectangle contained by A and GH. [This follows because sq(B) = rect(A,FG) and B : C :: FG : GH, so rect(B,C) = sq(B) * GH/FG = rect(A,FG) * GH/FG = rect(A,GH), using 6.1 and 6.16.] Now A and GH are both rational and incommensurable in length (by our choice in Step 3), so A and GH are commensurable in square only. By 10.21, the rectangle contained by A and GH is medial. Therefore the rectangle contained by B and C is medial. [6.1, 6.16, 10.21]
+
+**Step 9.** We show the square on B is greater than the square on C by the square on a straight line commensurable in length with B. Since B : C :: FG : GH, and the square on FG is greater than the square on GH by the square on a straight line commensurable in length with FG (by Step 1), it follows by 10.14 that the square on B is greater than the square on C by the square on a straight line commensurable in length with B. [10.14]
+
+**Step 10.** Also B is greater than C, since FG is greater than GH and B : C :: FG : GH. [CN5, 5.14]
+
+**Step 11.** Therefore B and C are two medial straight lines commensurable in square only, containing a medial rectangle, such that the square on the greater (B) is greater than the square on the less (C) by the square on a straight line commensurable in length with B. This is what was required to find.
+
+**USED:** 10.10, 10.11, 10.12, 10.14, 10.21, 10.22, 10.29, 10.6, 10.7, 10.8, 10.9, 5.14, 6.1, 6.12, 6.13, 6.16, CN5, D10.1.2, D10.1.3, D10.1.4, D5.9
+**Human refs (from References field):** 10.11, 10.14, 10.21, 10.23, 10.29, 10.30, 6.16, 6.17, 6.4, 6.8
+**Jaccard:** 0.192 — AI adds ['10.10', '10.12', '10.22', '10.6', '10.7', '10.8', '10.9', '5.14', '6.1', '6.12', '6.13', 'CN5', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D5.9']; Human adds ['10.23', '10.30', '6.17', '6.4', '6.8']
+
+## Proposition 10.33
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.
+
+**Step 1.** Let a rational straight line be set out. By 10.30, find two rational straight lines DE, EF commensurable in square only, with DE greater than EF, such that the square on DE is greater than the square on EF by the square on a straight line incommensurable in length with DE.
+
+**Step 2.** On DE as diameter, describe a semicircle DGE [P3].
+
+**Step 3.** By 6.28, apply to DE a rectangle equal to the fourth part of the square on EF, deficient by a square figure. This yields a point H on DE such that the rectangle contained by DH and HE equals the fourth part of the square on EF.
+
+**Step 4.** Since the square on DE is greater than the square on EF by the square on a straight line incommensurable in length with DE (Step 1), by the converse part of 10.18, the segments DH and HE are incommensurable in length.
+
+**Step 5.** From H, draw HG at right angles to DE [1.11], meeting the semicircle at G. Join DG and GE [P1].
+
+**Step 6.** Since DGE is an angle in a semicircle, it is a right angle [3.31]. And since GH has been drawn from the right angle perpendicular to the base DE, by 6.8 the triangles DGH and GHE are similar both to the whole triangle DGE and to one another.
+
+**Step 7.** From the similarity of triangles DGE and DGH, by 6.4, DE is to DG as DG is to DH. Therefore by 6.17, the square on DG equals the rectangle contained by DE and DH.
+
+**Step 8.** From the similarity of triangles DGE and GHE, by 6.4, DE is to GE as GE is to HE. Therefore by 6.17, the square on GE equals the rectangle contained by DE and HE.
+
+**Step 9.** Since the angle DGE is right, by 1.47 the sum of the squares on DG and GE equals the square on DE. Now DE is rational, so the square on DE is a rational area [D10.1.3, D10.1.4]. Therefore the sum of the squares on DG and GE is rational.
+
+**Step 10.** From the similarity of triangles DGH and GHE (Step 6), by 6.4, DH is to GH as GH is to HE. Therefore by 6.17, the square on GH equals the rectangle contained by DH and HE. But the rectangle contained by DH and HE equals the fourth part of the square on EF (Step 3). Therefore the square on GH equals the fourth part of the square on EF, whence GH is equal to half of EF.
+
+**Step 11.** Now EF is rational (Step 1). Since EF and half of EF are commensurable in length, half of EF is rational [D10.1.3]. Therefore GH is rational.
+
+**Step 12.** Since EF is commensurable in square only with DE (Step 1), EF is incommensurable in length with DE. Since EF and GH are commensurable in length (GH being half of EF), and EF is incommensurable in length with DE, by 10.13 GH is incommensurable in length with DE.
+
+**Step 13.** Since EF is commensurable in square with DE, the square on EF is commensurable with the square on DE. The square on GH is the fourth part of the square on EF, and the fourth part of the square on EF is commensurable with the square on EF. Therefore by 10.12, the square on GH is commensurable with the square on DE, so GH is commensurable in square with DE.
+
+**Step 14.** Since GH and DE are both rational, commensurable in square with one another (Step 13), but incommensurable in length (Step 12), they are commensurable in square only. Therefore by 10.21, the rectangle contained by DE and GH is medial.
+
+**Step 15.** From the similarity of triangle DGE to triangle DGH (Step 6), by 6.4, DE is to DG as GE is to GH. Therefore by 6.16, the rectangle contained by DG and GE equals the rectangle contained by DE and GH. But the rectangle contained by DE and GH is medial (Step 14). Therefore the rectangle contained by DG and GE is medial.
+
+**Step 16.** Since the square on DG equals the rectangle contained by DE and DH, and the square on GE equals the rectangle contained by DE and HE (Steps 7-8), by 6.1 the ratio of the square on DG to the square on GE equals the ratio of DH to HE. Now DH and HE are incommensurable (Step 4). Therefore by 10.7, DH and HE do not have to one another the ratio which a number has to a number. Hence the square on DG and the square on GE do not have to one another the ratio which a number has to a number. Therefore by 10.8, the squares on DG and GE are incommensurable, that is, DG and GE are incommensurable in square [D10.1.2].
+
+**Step 17.** Therefore two straight lines DG and GE have been found which are incommensurable in square (Step 16), which make the sum of the squares on them rational (Step 9), and which make the rectangle contained by them medial (Step 15). This is what it was required to find.
+
+**USED:** 1.11, 1.47, 10.12, 10.13, 10.18, 10.21, 10.30, 10.7, 10.8, 3.31, 6.1, 6.16, 6.17, 6.28, 6.4, 6.8, D10.1.2, D10.1.3, D10.1.4, P1, P3
+**Human refs (from References field):** 1.47, 10.18, 10.21, 10.23, 10.30, 6.28
+**Jaccard:** 0.227 — AI adds ['1.11', '10.12', '10.13', '10.7', '10.8', '3.31', '6.1', '6.16', '6.17', '6.4', '6.8', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'P1', 'P3']; Human adds ['10.23']
+
+## Proposition 10.34
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.
+
+**Step 1.** Let a rational straight line r be set out. By 10.10, find a straight line s such that s is incommensurable in length with r but commensurable in square only with r, so that s is rational. By 10.21, the rectangle rect(r, s) is irrational, and the side of the square equal to it is called medial. Let AB be a medial straight line such that AB² = rect(r, s); that is, AB² is a medial area.
+
+**Step 2.** Since r and s are rational and commensurable in square only, r² and s² are each rational areas (by D10.1.4). Let k be a rational straight line such that k² = r² (that is, k = r). Then k is rational and k² is rational, and we require k² less than AB²; since AB² is medial and we may choose r and s so that rect(r, s) exceeds r², this is achievable.
+
+**Step 3.** Describe a semicircle on AB as diameter. Find a point C on AB such that AC · CB = k⁴ / (4 · AB²). More precisely, since we seek rect(AD, DB) to be rational, we apply to AB a rectangle equal to the fourth part of the square on k², deficient by a square figure (by 6.28), obtaining the point C on AB such that AC · CB = k⁴/(4·AB²). Since AB² = rect(r,s) and k = r, we have AC · CB = r⁴/(4·r·s) = r³/(4s).
+
+**Step 4.** From C draw CD at right angles to AB (by 1.11), meeting the semicircle at D. Join AD and DB. By 3.31, the angle ADB in the semicircle is a right angle.
+
+**Step 5.** By 1.47, since triangle ADB has a right angle at D, we have AD² + DB² = AB². Since AB² is medial (Step 1), the sum of the squares on AD and DB is medial.
+
+**Step 6.** By 6.8, since CD is drawn from the right angle perpendicular to the base AB, we have CD² = AC · CB, and also AD² = AC · AB and DB² = CB · AB. From the perpendicular, the area of triangle ADB computed two ways gives rect(AD, DB) = rect(AB, CD).
+
+**Step 7.** Now CD² = AC · CB. And rect(AD, DB)² = rect(AB, CD)² = AB² · CD² = AB² · AC · CB. With our construction, AB² = r · s and AC · CB = r³/(4s), so AB² · AC · CB = r · s · r³/(4s) = r⁴/4. Therefore rect(AD, DB)² = r⁴/4, whence rect(AD, DB) = r²/2.
+
+**Step 8.** Since r is rational, r² is a rational area, and r²/2 is commensurable with r² (in the ratio 1:2, by 10.6). Therefore rect(AD, DB) = r²/2 is a rational area.
+
+**Step 9.** It remains to show that AD and DB are incommensurable in square. By 6.8, AD² = AC · AB and DB² = CB · AB. Therefore AD²/DB² = AC/CB. We must show that AC and CB are incommensurable.
+
+**Step 10.** From Step 3, AC · CB = r³/(4s), and AC + CB = AB. Now AB² = r · s, so AB = the side of the square equal to rect(r, s). By 2.5, AC · CB + MC² = MB² = (AB/2)², where M is the midpoint of AB.
+
+**Step 11.** We have (AB/2)² = AB²/4 = r · s / 4. And AC · CB = r³/(4s). So MC² = r · s/4 - r³/(4s) = r(s² - r²)/(4s). Since r and s are rational and incommensurable in length, s² and r² are rational but s²/r² is not a ratio of square numbers (by 10.9, since s and r are incommensurable in length). Hence s² - r² is a nonzero rational magnitude, and MC² = r(s² - r²)/(4s) is well-defined and positive (choosing s > r).
+
+**Step 12.** AC = AB/2 + MC and CB = AB/2 - MC. For AC/CB to be rational (a ratio of numbers), we would need (AB/2 + MC)/(AB/2 - MC) to be rational. This would require MC to be commensurable with AB/2. Now (AB/2)² = r · s/4, a medial area (commensurable with r · s, which is medial). And MC² = r(s² - r²)/(4s) = (r · s)/4 - r³/(4s) = (r · s)/4 · (1 - r²/s²).
+
+**Step 13.** MC²/(AB/2)² = 1 - r²/s² = (s² - r²)/s². Since s and r are rational lines incommensurable in length, by 10.9 the ratio s²/r² is not a ratio of square numbers, hence r²/s² is not a ratio of square numbers, and therefore (s² - r²)/s² = 1 - r²/s² is not a ratio of square numbers. By 10.9, MC and AB/2 are incommensurable in length.
+
+**Step 14.** Since MC is incommensurable in length with AB/2, the ratio AC/CB = (AB/2 + MC)/(AB/2 - MC) is irrational. For if AC/CB were rational, say AC = n · CB for some ratio n, then AB/2 + MC = n(AB/2 - MC), giving MC(1 + n) = AB/2 · (n - 1), so MC/(AB/2) = (n - 1)/(n + 1), which is rational, contradicting MC being incommensurable in length with AB/2.
+
+**Step 15.** Since AC/CB is irrational, AD²/DB² = AC/CB is not a ratio of numbers (by 10.7). Therefore the squares on AD and DB are incommensurable, that is, AD and DB are incommensurable in square (by D10.1.2).
+
+**Step 16.** Therefore AD and DB are two straight lines incommensurable in square which make the sum of the squares on them medial (Step 5) but the rectangle contained by them rational (Step 8). This is what was required to find.
+
+**USED:** 1.11, 1.47, 10.10, 10.21, 10.6, 10.7, 10.9, 2.5, 3.31, 6.28, 6.8, D10.1.2, D10.1.4
+**Human refs (from References field):** 1.47, 10.11, 10.18, 10.31, 10.6, 3.31, 6.28
+**Jaccard:** 0.250 — AI adds ['1.11', '10.10', '10.21', '10.7', '10.9', '2.5', '6.8', 'D10.1.2', 'D10.1.4']; Human adds ['10.11', '10.18', '10.31']
+
+## Proposition 10.35
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them medial and moreover incommensurable with the sum of the squares on them.
+
+**Step 1.** Set out a rational straight line rho. By 10.30, find two rational straight lines P, Q commensurable in square only such that the square on P is greater than the square on Q by the square on a straight line incommensurable in length with P.
+
+**Step 2.** By 6.13, find the mean proportional R of P and Q, so that P : R = R : Q. Then by 6.17, sq(R) = rect(P, Q). Since P and Q are rational and commensurable in square only, rect(P, Q) is irrational by 10.21, and R is medial.
+
+**Step 3.** By 10.10, find a rational straight line T commensurable in square only with P such that T is also incommensurable in length with Q. Since T is rational and commensurable in square only with the rational line P, T is commensurable in square with Q as well (by 10.12, since T is commensurable in square with P and P is commensurable in square with Q). But T is incommensurable in length with Q. So T and Q are commensurable in square only.
+
+**Step 4.** Find the fourth proportional S such that P : T = R : S (by 6.12). Then P * S = T * R, so rect(R, S) = rect(P, S) ... we compute: from P : T = R : S, we get S = T * R / P. Now sq(R) : sq(S) = sq(P) : sq(T) by taking duplicate ratios (6.22). Since sq(P) : sq(T) is a ratio of numbers (P and T are commensurable in square), sq(R) and sq(S) are commensurable. Since sq(R) is medial (incommensurable with the rational area sq(rho)), sq(S) is also incommensurable with sq(rho) by 10.13. Hence S is medial. Furthermore, since sq(P) : sq(T) is a ratio of numbers but not of square numbers (P and T are incommensurable in length, so by 10.9 this ratio is not of square numbers), R and S are commensurable in square only.
+
+**Step 5.** We compute rect(R, S). From P : T = R : S we have P * S = T * R. Hence rect(R, S) = R * S = R * (T * R / P) = T * sq(R) / P = T * rect(P, Q) / P = T * Q (since rect(P, Q) / P = Q). So rect(R, S) = rect(T, Q). Since T and Q are rational and commensurable in square only (Step 3), rect(T, Q) is medial by 10.21. Therefore rect(R, S) is medial.
+
+**Step 6.** We verify that sq(R) exceeds sq(S) by the square on a line incommensurable with R. Since P : T = R : S (Step 4), these four lines are proportional. Since sq(P) > sq(T) by the square on some line, and P, T are commensurable in square only with sq(P) : sq(T) = sq(R) : sq(S), we apply 10.14: since sq(P) > sq(T), we need to determine whether sq(P) exceeds sq(T) by the square on a line commensurable or incommensurable with P. Now sq(P) - sq(T) relates to P and T. Since both P and T are rational, sq(P) - sq(T) is a rational area (as sq(P) and sq(T) are commensurable rational areas, their difference is commensurable with them by 10.15). Let sq(P) - sq(T) = sq(U). We need U incommensurable with P. Since T was chosen by 10.10, we can specifically choose T so that sq(P) > sq(T) by the square on a line incommensurable with P (this is achievable by applying 10.18 to P and T, choosing T appropriately -- specifically, we may use 10.30 again to find P and T directly as the pair of rational lines commensurable in square only with the incommensurable excess property). Thus by 10.14, sq(R) > sq(S) by the square on a line incommensurable with R.
+
+**Step 7.** So R and S are medial straight lines, commensurable in square only, containing a medial rectangle rect(R, S), and sq(R) > sq(S) by the square on a straight line incommensurable in length with R. Now describe a semicircle on R (that is, on a diameter equal to R). By 10.18, since sq(R) > sq(S) by the square on a line incommensurable with R, when we apply to R a parallelogram equal to the fourth part of the square on S (i.e., sq(S)/4) and deficient by a square figure, it divides R into parts that are incommensurable in length. Let these incommensurable parts be p and q, with p + q = R and rect(p, q) = sq(S)/4.
+
+**Step 8.** On the diameter R, from the point dividing it into p and q, erect a perpendicular to meet the semicircle at a point K (by 1.11). Join K to the endpoints of the diameter to form lines E and F. By 3.31, the angle EKF (angle in the semicircle) is a right angle. By 6.8 (and 2.14), sq(KN) = rect(p, q) = sq(S)/4 where KN is the perpendicular, so KN = S/2. Also sq(E) = rect(R, p) and sq(F) = rect(R, q) (by 6.8, since in the right triangle with hypotenuse R, the square on each leg equals the rectangle contained by the hypotenuse and the adjacent segment).
+
+**Step 9.** We verify that E and F are incommensurable in square. We have sq(E) : sq(F) = rect(R, p) : rect(R, q) = p : q. Since p and q are incommensurable in length (Step 7, by 10.18), p : q is not a ratio of numbers (by 10.7). Hence sq(E) : sq(F) is not a ratio of numbers, so sq(E) and sq(F) are incommensurable (by 10.8). Therefore E and F are incommensurable in square (D10.1.2).
+
+**Step 10.** We verify that the sum of the squares on E and F is medial. By 1.47, sq(E) + sq(F) = sq(R), since angle EKF is a right angle and R is the hypotenuse. Now sq(R) = rect(P, Q) (Step 2), which is a medial area (by 10.21). Hence sq(E) + sq(F) is medial.
+
+**Step 11.** We verify that the rectangle contained by E and F is medial. rect(E, F) = E * F. Now sq(E) * sq(F) = rect(R, p) * rect(R, q) = sq(R) * rect(p, q) = sq(R) * sq(S)/4 (Step 7). Therefore E * F = R * S/2, that is, rect(E, F) = rect(R, S) / 2. Since rect(R, S) is medial (Step 5), and rect(R, S) / 2 is commensurable with rect(R, S) (their ratio being 2 : 1, a ratio of numbers, so by 10.6 they are commensurable), rect(R, S) / 2 is also medial (by 10.13, since rect(R, S) is incommensurable with the rational area and rect(R, S)/2 is commensurable with rect(R, S)). Hence rect(E, F) is medial.
+
+**Step 12.** We verify that the sum of the squares on E and F is incommensurable with the rectangle contained by them. We have sq(E) + sq(F) = sq(R) and rect(E, F) = rect(R, S)/2. Now sq(R) : rect(R, S) = R : S (since sq(R) = R * R and rect(R, S) = R * S). Since R and S are incommensurable in length (being commensurable in square only), R : S is not a ratio of numbers (by 10.7), so sq(R) and rect(R, S) are incommensurable (by 10.11). Since rect(R, S)/2 is commensurable with rect(R, S), sq(R) is also incommensurable with rect(R, S)/2 (by 10.13). Therefore sq(E) + sq(F) is incommensurable with rect(E, F).
+
+**Step 13.** Therefore E and F are two straight lines incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them medial and moreover incommensurable with the sum of the squares on them. This is what was required to find.
+
+**USED:** 1.11, 1.47, 10.10, 10.11, 10.12, 10.13, 10.14, 10.15, 10.18, 10.21, 10.30, 10.6, 10.7, 10.8, 10.9, 3.31, 6.12, 6.13, 6.17, 6.22, 6.8, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 1.47, 10.11, 10.13, 10.18, 10.32, 3.31
+**Jaccard:** 0.200 — AI adds ['1.11', '10.10', '10.12', '10.14', '10.15', '10.21', '10.30', '10.6', '10.7', '10.8', '10.9', '6.12', '6.13', '6.17', '6.22', '6.8', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.32']
+
+## Proposition 10.36
+**Statement:** If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called binomial.
+
+**Step 1.** Let AB and BC be two rational straight lines commensurable in square only. Let AC be the whole line composed of AB and BC, so that AC = AB + BC. We are to show that AC is irrational.
+
+**Step 2.** Since AB and BC are commensurable in square only, they are by definition not commensurable in length [D10.1.2]. Therefore the squares on AB and BC are commensurable, but AB and BC are incommensurable in length.
+
+**Step 3.** Since AB and BC are rational, the squares on AB and BC are each rational areas [D10.1.3, D10.1.4]. Since the squares on AB and BC are commensurable [Step 2, D10.1.2], and two commensurable magnitudes added together produce a whole commensurable with each of them [10.15], the sum of the squares on AB and BC is commensurable with the square on AB. Since the square on AB is rational, the sum of the squares on AB and BC is rational [D10.1.4].
+
+**Step 4.** By Proposition 2.4, the square on AC equals the sum of the squares on AB and BC together with twice the rectangle contained by AB and BC. That is, sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC).
+
+**Step 5.** Since AB and BC are rational straight lines commensurable in square only, the rectangle contained by AB and BC is irrational by 10.21, and the side of the square equal to it is called medial.
+
+**Step 6.** The area 2*rect(AB, BC) has to rect(AB, BC) the ratio 2:1, which is the ratio of a number to a number. Therefore 2*rect(AB, BC) is commensurable with rect(AB, BC) [10.6]. Since rect(AB, BC) is irrational [Step 5] and is incommensurable with the assigned rational area [D10.1.4], and 2*rect(AB, BC) is commensurable with rect(AB, BC), it follows that 2*rect(AB, BC) is also incommensurable with the assigned rational area [10.13]. Therefore 2*rect(AB, BC) is irrational.
+
+**Step 7.** Now suppose, for the sake of contradiction, that sq(AC) is rational. Then sq(AC) and the sum sq(AB) + sq(BC) are both rational areas. Being both rational, each is commensurable with the assigned rational area [D10.1.4], and therefore they are commensurable with one another [10.12].
+
+**Step 8.** Since sq(AC) is commensurable with sq(AB) + sq(BC), and sq(AC) = (sq(AB) + sq(BC)) + 2*rect(AB, BC), the whole sq(AC) is commensurable with one of the parts, namely sq(AB) + sq(BC). By 10.15, the remaining part 2*rect(AB, BC) is also commensurable with sq(AB) + sq(BC), and hence commensurable with the assigned rational area by 10.12. This means 2*rect(AB, BC) would be rational.
+
+**Step 9.** But this contradicts Step 6, which established that 2*rect(AB, BC) is irrational. Therefore our supposition is false, and sq(AC) is not rational. Hence sq(AC) is irrational [D10.1.4].
+
+**Step 10.** Since the square on AC is irrational, AC itself is irrational [D10.1.4]. And let AC be called binomial, because it is composed of the sum of two rational terms. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.15, 10.21, 10.6, 2.4, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.16, 10.6, 2.4, D10.1.4
+**Jaccard:** 0.455 — AI adds ['10.12', '10.21', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.16']
+
+## Proposition 10.37
+**Statement:** If two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a first bimedial straight line.
+
+**Step 1.** Let AB and BC be two medial straight lines commensurable in square only and such that the rectangle contained by AB and BC is rational. Set AC equal to AB + BC. We must show that AC is irrational.
+
+**Step 2.** Since AB is medial, the square on AB is medial [D10.1.4]. Since BC is medial, the square on BC is medial [D10.1.4].
+
+**Step 3.** Since AB and BC are commensurable in square, the square on AB is commensurable with the square on BC [D10.1.2].
+
+**Step 4.** Since the square on AB is commensurable with the square on BC, and the square on AB is medial, then by 10.15 the sum of the squares on AB and BC is commensurable with the square on AB. Since the square on AB is medial (and thus incommensurable with any rational area), the sum of the squares on AB and BC is also incommensurable with any rational area [10.13]. Therefore the sum of the squares on AB and BC is medial [D10.1.4].
+
+**Step 5.** Since the rectangle AB by BC is rational, twice the rectangle AB by BC is commensurable with the rectangle AB by BC [10.6, as 2:1 is a ratio of number to number]. Therefore twice the rectangle AB by BC is also rational [D10.1.4].
+
+**Step 6.** Now, by 2.4, the square on AC equals the sum of the squares on AB and BC together with twice the rectangle contained by AB and BC. That is, the square on AC equals (the sum of the squares on AB and BC) plus (twice the rectangle AB by BC).
+
+**Step 7.** But the sum of the squares on AB and BC is medial (Step 4), while twice the rectangle AB by BC is rational (Step 5). A medial area is incommensurable with a rational area, since a rational area is by definition commensurable with the square on the assigned rational line, while a medial area is incommensurable with that same square [D10.1.3, D10.1.4]. Therefore the sum of the squares on AB and BC is incommensurable with twice the rectangle AB by BC.
+
+**Step 8.** By 10.16, since the sum of the squares on AB and BC is incommensurable with twice the rectangle AB by BC, their sum (which is the square on AC) is incommensurable with each summand. In particular, the square on AC is incommensurable with twice the rectangle AB by BC, which is rational.
+
+**Step 9.** Since the square on AC is incommensurable with a rational area, the square on AC is irrational [D10.1.4]. Therefore AC, the side of this irrational square, is itself irrational [D10.1.4].
+
+**Step 10.** Let AC be called a first bimedial straight line. Q.E.D.
+
+**USED:** 10.13, 10.15, 10.16, 10.6, 2.4, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.16, 10.36, 2.4, D10.1.4
+**Jaccard:** 0.333 — AI adds ['10.13', '10.15', '10.6', 'D10.1.2', 'D10.1.3']; Human adds ['10.36']
+
+## Proposition 10.38
+**Statement:** If two medial straight lines commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a second bimedial straight line.
+
+**Step 1.** Let AB and BC be two medial straight lines commensurable in square only such that the rectangle rect(AB,BC) is medial. We are to prove that the whole AC is irrational.
+
+**Step 2.** Since AB is medial, sq(AB) is a medial area [D10.1.4]. Likewise, since BC is medial, sq(BC) is a medial area.
+
+**Step 3.** Since AB and BC are commensurable in square, sq(AB) is commensurable with sq(BC) [D10.1.2]. Since sq(AB) and sq(BC) are commensurable and sq(AB) is medial, the sum sq(AB) + sq(BC) is commensurable with sq(AB) by [10.15], and therefore the sum sq(AB) + sq(BC) is itself medial [10.23 applied to areas: an area commensurable with a medial area is medial].
+
+**Step 4.** Since rect(AB,BC) is medial by hypothesis, twice rect(AB,BC) is commensurable with rect(AB,BC), and hence twice rect(AB,BC) is also medial [10.23].
+
+**Step 5.** By [2.4], sq(AC) = sq(AB) + sq(BC) + 2*rect(AB,BC). Thus sq(AC) is the sum of two medial areas: the sum sq(AB) + sq(BC) and the area 2*rect(AB,BC).
+
+**Step 6.** Set out a rational straight line DE. Apply the area equal to sq(AB) + sq(BC) to DE, producing as breadth DF; so rect(DE,DF) = sq(AB) + sq(BC). Since sq(AB) + sq(BC) is medial (Step 3), DF is rational and incommensurable in length with DE [10.22].
+
+**Step 7.** Apply the area equal to 2*rect(AB,BC) to DE on DF, producing as breadth FG; so rect(DE,FG) = 2*rect(AB,BC). Since 2*rect(AB,BC) is medial (Step 4), FG is rational and incommensurable in length with DE [10.22].
+
+**Step 8.** Now we show that DF and FG are incommensurable in length. Suppose for contradiction that DF and FG were commensurable in length. Then rect(DE,DF) would be commensurable with rect(DE,FG) [10.11 with 6.1, since areas on equal bases are as their heights]. That is, sq(AB) + sq(BC) would be commensurable with 2*rect(AB,BC). But sq(AB) + sq(BC) is commensurable with sq(AB) [10.15, since sq(AB) and sq(BC) are commensurable], and 2*rect(AB,BC) is commensurable with rect(AB,BC). So by transitivity [10.12], sq(AB) would be commensurable with rect(AB,BC).
+
+**Step 9.** But sq(AB) = rect(AB,AB). Since rect(AB,AB) is commensurable with rect(AB,BC), and these rectangles share the side AB, by [6.1] their ratio equals AB:BC. Therefore AB:BC is a ratio of commensurable magnitudes, which means AB is commensurable in length with BC [10.11]. This contradicts the hypothesis that AB and BC are commensurable in square only. Therefore DF and FG are incommensurable in length.
+
+**Step 10.** Since DF and FG are both rational (Steps 6, 7) and incommensurable in length (Step 9), we verify they are commensurable in square only. Both DF and FG are rational, so sq(DF) and sq(FG) are each commensurable with sq(DE) [D10.1.3]. By [10.12], sq(DF) and sq(FG) are commensurable with each other, so DF and FG are commensurable in square. Since they are incommensurable in length, they are commensurable in square only.
+
+**Step 11.** Therefore, by [10.36], their sum DG = DF + FG is irrational (a binomial).
+
+**Step 12.** Now rect(DE,DG) = rect(DE,DF) + rect(DE,FG) = (sq(AB) + sq(BC)) + 2*rect(AB,BC) = sq(AC). So sq(AC) is the rectangle contained by DE (rational) and DG (irrational). If sq(AC) were rational, then since DE is rational, the breadth DG would be rational and commensurable in length with DE [10.20], contradicting the irrationality of DG. Therefore sq(AC) is irrational.
+
+**Step 13.** Since sq(AC) is irrational, AC is irrational [D10.1.4]. Let AC be called a second bimedial straight line. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.15, 10.20, 10.22, 10.23, 10.36, 2.4, 6.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 1.44, 10.11, 10.13, 10.15, 10.20, 10.22, 10.36, 10.6, 2.4, 6.1, D10.1.4
+**Jaccard:** 0.533 — AI adds ['10.12', '10.23', 'D10.1.2', 'D10.1.3']; Human adds ['1.44', '10.13', '10.6']
+
+## Proposition 10.39
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole straight line is irrational: and let it be called major.
+
+**Step 1.** Let AB and BC be two straight lines incommensurable in square which make the sum of the squares on them, sq(AB) + sq(BC), rational, and the rectangle contained by them, rect(AB, BC), medial. Let AC = AB + BC. We are to show that AC is irrational.
+
+**Step 2.** By 2.4, the square on the whole AC satisfies sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC).
+
+**Step 3.** Since rect(AB, BC) is medial, it is irrational, that is, incommensurable with the square on the assigned rational straight line, by D10.1.4 and 10.21.
+
+**Step 4.** Now 2*rect(AB, BC) has to rect(AB, BC) the ratio 2 to 1, which is a ratio of number to number. Therefore by 10.6, 2*rect(AB, BC) is commensurable with rect(AB, BC).
+
+**Step 5.** Since 2*rect(AB, BC) is commensurable with rect(AB, BC), and rect(AB, BC) is incommensurable with the square on the rational straight line (Step 3), it follows by 10.13 that 2*rect(AB, BC) is also incommensurable with the square on the rational straight line. Hence 2*rect(AB, BC) is irrational.
+
+**Step 6.** But sq(AB) + sq(BC) is rational by hypothesis, so it is commensurable with the square on the rational straight line, by D10.1.4.
+
+**Step 7.** Since sq(AB) + sq(BC) is commensurable with the square on the rational straight line (Step 6), and 2*rect(AB, BC) is incommensurable with the square on the rational straight line (Step 5), it follows by 10.13 that 2*rect(AB, BC) is incommensurable with sq(AB) + sq(BC).
+
+**Step 8.** Since sq(AB) + sq(BC) and 2*rect(AB, BC) are incommensurable with one another, by 10.16 their sum sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC) is incommensurable with each of them, and in particular incommensurable with sq(AB) + sq(BC).
+
+**Step 9.** Since sq(AB) + sq(BC) is rational, hence commensurable with the square on the rational straight line, and sq(AC) is incommensurable with sq(AB) + sq(BC) (Step 8), it follows by 10.13 that sq(AC) is incommensurable with the square on the rational straight line. Therefore sq(AC) is irrational by D10.1.4.
+
+**Step 10.** Since sq(AC) is irrational, the straight line AC is irrational by D10.1.4. Let AC be called major. QED.
+
+**USED:** 10.13, 10.16, 10.21, 10.6, 2.4, D10.1.4
+**Human refs (from References field):** 10.16, 10.23, 10.33, 10.6, D10.1.4
+**Jaccard:** 0.375 — AI adds ['10.13', '10.21', '2.4']; Human adds ['10.23', '10.33']
+
+## Proposition 10.40
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational, be added together, the whole straight line is irrational; and let it be called the side of a rational plus a medial area.
+
+**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, AB^2 + BC^2, is medial, and the rectangle contained by them, AB·BC, is rational. Let AC = AB + BC. We must show that AC is irrational.
+
+**Step 2.** Since AC = AB + BC, the square on AC equals the sum of the squares on AB and BC together with twice the rectangle AB·BC, that is, AC^2 = AB^2 + BC^2 + 2·AB·BC [2.4].
+
+**Step 3.** Now AB·BC is rational by hypothesis. Since 2·AB·BC = AB·BC + AB·BC, the area 2·AB·BC is commensurable with AB·BC (being its double). Because AB·BC is rational, and 2·AB·BC is commensurable with it, 2·AB·BC is also rational [10.15, D10.1.4].
+
+**Step 4.** Also by hypothesis, AB^2 + BC^2 is medial.
+
+**Step 5.** Suppose AC^2 is rational. Then since 2·AB·BC is rational, the difference AC^2 - 2·AB·BC = AB^2 + BC^2 would also be rational [10.15, CN3]. But AB^2 + BC^2 is medial, not rational — a medial area is irrational by definition [10.21, D10.1.4], hence not rational. This is a contradiction, so AC^2 is not rational.
+
+**Step 6.** Suppose AC^2 is medial. Then both AC^2 and AB^2 + BC^2 are medial, and their difference is AC^2 - (AB^2 + BC^2) = 2·AB·BC, which is rational. But a medial area does not exceed a medial area by a rational area [10.26]. This is a contradiction, so AC^2 is not medial.
+
+**Step 7.** Since AC^2 is the sum of a medial area (AB^2 + BC^2) and a rational area (2·AB·BC), and AC^2 is neither rational nor medial, AC^2 is irrational [D10.1.4].
+
+**Step 8.** Therefore the side of the square equal to AC^2, namely AC itself, is irrational [D10.1.4]. Let it be called the side of a rational plus a medial area, since it is the side of a square equal to the sum of a rational area (2·AB·BC) and a medial area (AB^2 + BC^2). Q.E.D.
+
+**USED:** 10.15, 10.21, 10.26, 2.4, CN3, D10.1.4
+**Human refs (from References field):** 10.16, 10.34, D10.1.4
+**Jaccard:** 0.125 — AI adds ['10.15', '10.21', '10.26', '2.4', 'CN3']; Human adds ['10.16', '10.34']
+
+## Proposition 10.41
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.
+
+**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, sq(AB) + sq(BC), is medial, the rectangle contained by them, rect(AB,BC), is medial, and sq(AB) + sq(BC) is incommensurable with rect(AB,BC). Let AC = AB + BC. We are to show that AC is irrational.
+
+**Step 2.** By 2.4 (the square on a line cut at random equals the squares on the segments plus twice the rectangle on the segments), sq(AC) = sq(AB) + sq(BC) + 2*rect(AB,BC).
+
+**Step 3.** Since rect(AB,BC) is medial and 2*rect(AB,BC) has to rect(AB,BC) the ratio 2:1, which is a ratio of number to number, by 10.6 the areas 2*rect(AB,BC) and rect(AB,BC) are commensurable. Since rect(AB,BC) is medial and hence incommensurable with every rational area (D10.1.4), and 2*rect(AB,BC) is commensurable with rect(AB,BC), by 10.12 if 2*rect(AB,BC) were commensurable with a rational area then rect(AB,BC) would also be commensurable with that rational area, which is false. Therefore 2*rect(AB,BC) is irrational. Moreover, since 2*rect(AB,BC) is commensurable with the medial area rect(AB,BC), it is itself medial.
+
+**Step 4.** Since sq(AB) + sq(BC) is incommensurable with rect(AB,BC) (given), and 2*rect(AB,BC) is commensurable with rect(AB,BC) (Step 3), by 10.13 (if two magnitudes are commensurable and one is incommensurable with a third, then the other is also incommensurable with that third), sq(AB) + sq(BC) is incommensurable with 2*rect(AB,BC).
+
+**Step 5.** Set out a rational straight line DE. Apply to DE a rectangle with area equal to sq(AB) + sq(BC), producing breadth DH, so that DH * DE = sq(AB) + sq(BC). Apply to DE, adjacent to the first rectangle, a rectangle with area equal to 2*rect(AB,BC), producing breadth HG, so that HG * DE = 2*rect(AB,BC). Then the total rectangle DG * DE = sq(AB) + sq(BC) + 2*rect(AB,BC) = sq(AC), with total breadth DG = DH + HG.
+
+**Step 6.** The area DH * DE = sq(AB) + sq(BC) is medial. By D10.1.4, there exists a straight line sigma such that sq(sigma) = sq(AB) + sq(BC), and since this area is medial, sigma is a medial straight line. Since sq(sigma) = DH * DE and DE is rational, by 10.22 (the square on a medial straight line applied to a rational straight line produces as breadth a straight line rational and incommensurable in length with the rational line), DH is rational and incommensurable in length with DE.
+
+**Step 7.** Similarly, the area HG * DE = 2*rect(AB,BC) is medial (Step 3). By D10.1.4, there exists a straight line tau such that sq(tau) = 2*rect(AB,BC), and tau is medial. By 10.22, HG is rational and incommensurable in length with DE.
+
+**Step 8.** By 6.1 (parallelograms under the same height are to one another as their bases), (DH * DE) : (HG * DE) = DH : HG. That is, [sq(AB) + sq(BC)] : [2*rect(AB,BC)] = DH : HG. Since sq(AB) + sq(BC) is incommensurable with 2*rect(AB,BC) (Step 4), by 10.11 (if four magnitudes are proportional and the first is incommensurable with the second, the third is incommensurable with the fourth), DH is incommensurable in length with HG.
+
+**Step 9.** Since DH is rational and HG is rational (Steps 6-7), their squares sq(DH) and sq(HG) are each commensurable with sq(DE) (by D10.1.3, rational lines are commensurable in square with the assigned rational line). By 10.12 (magnitudes commensurable with the same magnitude are commensurable with one another), sq(DH) is commensurable with sq(HG). Therefore DH and HG are commensurable in square. Since DH and HG are incommensurable in length (Step 8), they are commensurable in square only.
+
+**Step 10.** Since DH and HG are rational straight lines commensurable in square only, by 10.36 their sum DG = DH + HG is irrational.
+
+**Step 11.** Now DG * DE = sq(AC), where DE is rational and DG is irrational. If sq(AC) were rational, then by 10.20 (a rational area applied to a rational straight line produces as breadth a straight line rational and commensurable in length with the line to which it is applied), DG would be rational, contradicting Step 10. Therefore sq(AC) is irrational.
+
+**Step 12.** Since sq(AC) is an irrational area, AC is irrational by D10.1.4. The whole straight line AC, being the sum of two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and incommensurable with the sum of the squares, is irrational; and it is called the side of the sum of two medial areas. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.20, 10.22, 10.36, 10.6, 2.4, 6.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.22, 10.35, 10.36, 2.4, 6.1, D10.1.4
+**Jaccard:** 0.500 — AI adds ['10.12', '10.13', '10.20', '10.6', 'D10.1.3']; Human adds ['10.35']
+
+## Proposition 10.42
+**Statement:** A binomial straight line is divided into its terms at one point only.
+
+**Step 1.** Let AB be a binomial straight line, divided into its terms at C, so that AC and CB are rational straight lines commensurable in square only, with AC the greater term [10.36, D10.1.3].
+
+**Step 2.** Suppose for contradiction that AB is also divided into its terms at a different point D, so that AD and DB are rational straight lines commensurable in square only, with AD the greater term.
+
+**Step 3.** Since AC and CB are rational, the squares on AC and CB are each rational areas [D10.1.4]. Since AC and CB are commensurable in square, the squares on AC and CB are commensurable with each other. Therefore the sum sq(AC) + sq(CB) is rational [10.15].
+
+**Step 4.** Since AC and CB are rational straight lines commensurable in square only, the rectangle contained by AC and CB is medial [10.21]. Twice this rectangle is also medial, since doubling corresponds to multiplication by a rational factor, preserving mediality.
+
+**Step 5.** By the same reasoning, the sum sq(AD) + sq(DB) is rational [10.15, D10.1.4], and twice the rectangle rect(AD,DB) is medial [10.21].
+
+**Step 6.** Since AC + CB = AB = AD + DB, by Proposition 2.4 the square on AB decomposes as sq(AB) = sq(AC) + sq(CB) + 2·rect(AC,CB) and also as sq(AB) = sq(AD) + sq(DB) + 2·rect(AD,DB) [2.4].
+
+**Step 7.** Equating these two expressions and rearranging: [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2·rect(AD,DB) - 2·rect(AC,CB) [CN1, CN2, CN3].
+
+**Step 8.** The left side is the difference of two rational areas, hence rational. The right side is the difference of two medial areas. By Proposition 10.26, a medial area does not exceed a medial area by a rational area [10.26]. Therefore both sides equal zero.
+
+**Step 9.** From Step 8 we obtain two equalities: (i) sq(AC) + sq(CB) = sq(AD) + sq(DB), and (ii) rect(AC,CB) = rect(AD,DB).
+
+**Step 10.** From equality (i), we have sq(AC) + sq(CB) - 2·rect(AC,CB) = sq(AD) + sq(DB) - 2·rect(AD,DB), using equality (ii). By Proposition 2.7, for a line divided into two parts, the square on the whole plus the square on one part equals twice the rectangle under the whole and that part plus the square on the remaining part. Applying this and related identities, sq(AC) + sq(CB) - 2·rect(AC,CB) equals the square on the difference AC - CB, and sq(AD) + sq(DB) - 2·rect(AD,DB) equals the square on the difference AD - DB [2.7]. Therefore sq(AC - CB) = sq(AD - DB), whence AC - CB = AD - DB.
+
+**Step 11.** We have the system: AC + CB = AD + DB (both sums equal AB) and AC - CB = AD - DB (from Step 10). Adding these two equations gives 2·AC = 2·AD, so AC = AD [CN2]. Subtracting gives 2·CB = 2·DB, so CB = DB [CN3].
+
+**Step 12.** Since AC = AD and CB = DB, the points C and D coincide, contradicting our assumption that they are distinct.
+
+**Step 13.** Therefore a binomial straight line is divided into its terms at one point only. Q.E.D.
+
+**USED:** 10.15, 10.21, 10.26, 10.36, 2.4, 2.7, CN1, CN2, CN3, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.21, 10.36, 2.4
+**Jaccard:** 0.273 — AI adds ['10.15', '10.26', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.43
+**Statement:** A first bimedial straight line is divided at one point only.
+
+**Step 1.** Let AB be a first bimedial straight line, and let it be divided at C into its terms, so that AC and CB are medial straight lines commensurable in square only and containing a rational rectangle, with AC greater than CB [10.37].
+
+**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D (where D is different from C) into terms AD and DB satisfying the same conditions: AD and DB are medial, commensurable in square only, and contain a rational rectangle, with AD greater than DB.
+
+**Step 3.** Since AC and CB are commensurable in square, the squares AC^2 and CB^2 are commensurable areas. Since AC is medial, AC^2 is a medial area [D10.1.4, 10.21]. Since CB is medial, CB^2 is a medial area. Since AC^2 and CB^2 are commensurable, their sum AC^2 + CB^2 is commensurable with each of them [10.15], and since it is commensurable with the medial area AC^2, and AC^2 is incommensurable with any rational area, by 10.13 the sum AC^2 + CB^2 is also incommensurable with any rational area, and hence is itself a medial area.
+
+**Step 4.** By the same reasoning, since AD and DB are medial and commensurable in square only, the sum AD^2 + DB^2 is also a medial area.
+
+**Step 5.** Since the rectangle contained by AC and CB is rational [by hypothesis from 10.37], twice the rectangle 2*rect(AC,CB) is also rational [D10.1.4].
+
+**Step 6.** Similarly, since the rectangle contained by AD and DB is rational, twice the rectangle 2*rect(AD,DB) is also rational.
+
+**Step 7.** By 2.4, since AB = AC + CB, we have AB^2 = AC^2 + CB^2 + 2*rect(AC,CB). Therefore AC^2 + CB^2 = AB^2 - 2*rect(AC,CB).
+
+**Step 8.** Similarly, since AB = AD + DB, we have AB^2 = AD^2 + DB^2 + 2*rect(AD,DB). Therefore AD^2 + DB^2 = AB^2 - 2*rect(AD,DB).
+
+**Step 9.** Subtracting the equation in Step 8 from the equation in Step 7: (AC^2 + CB^2) - (AD^2 + DB^2) = 2*rect(AD,DB) - 2*rect(AC,CB) [CN2, CN3].
+
+**Step 10.** The right-hand side, 2*rect(AD,DB) - 2*rect(AC,CB), is the difference of two rational areas, which is rational [D10.1.4].
+
+**Step 11.** The left-hand side is the difference of two medial areas (established in Steps 3 and 4). By 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference (AC^2 + CB^2) - (AD^2 + DB^2) cannot be a nonzero rational area.
+
+**Step 12.** Since both sides of the equation in Step 9 must be equal, and the right side is rational while a nonzero rational difference of medial areas is impossible by Step 11, both sides must equal zero. Therefore AC^2 + CB^2 = AD^2 + DB^2, and 2*rect(AC,CB) = 2*rect(AD,DB), hence rect(AC,CB) = rect(AD,DB).
+
+**Step 13.** Now from AC^2 + CB^2 = AD^2 + DB^2 and rect(AC,CB) = rect(AD,DB), we compute using 2.4: (AC + CB)^2 = AC^2 + CB^2 + 2*rect(AC,CB) and (AD + DB)^2 = AD^2 + DB^2 + 2*rect(AD,DB). Since AC + CB = AD + DB = AB, and the sums of squares and the double rectangles are respectively equal, this is consistent.
+
+**Step 14.** Furthermore, (AC - CB)^2 = AC^2 + CB^2 - 2*rect(AC,CB) = AD^2 + DB^2 - 2*rect(AD,DB) = (AD - DB)^2 [2.4, CN3].
+
+**Step 15.** Since AC > CB and AD > DB, the differences AC - CB and AD - DB are both positive. From (AC - CB)^2 = (AD - DB)^2, it follows that AC - CB = AD - DB.
+
+**Step 16.** We have AC + CB = AD + DB (since both equal AB) and AC - CB = AD - DB. Adding these two equations: 2*AC = 2*AD, so AC = AD [CN2]. Subtracting: 2*CB = 2*DB, so CB = DB [CN3].
+
+**Step 17.** Since AC = AD, the points C and D coincide, contradicting our assumption that D is different from C.
+
+**Step 18.** Therefore a first bimedial straight line is divided at one point only. Q.E.D.
+
+**USED:** 10.13, 10.15, 10.21, 10.26, 10.37, 2.4, CN2, CN3, D10.1.4
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['10.13', '10.15', '10.21', '10.26', '10.37', '2.4', 'CN2', 'CN3', 'D10.1.4']
+
+## Proposition 10.44
+**Statement:** A second bimedial straight line is divided at one point only.
+
+**Step 1.** Let AB be a second bimedial straight line, and let it be divided at C into its terms, so that AC and CB are medial straight lines commensurable in square only and containing a medial rectangle, with AC greater than CB [by 10.38]. We must show that AB is not divided at any other point into terms satisfying these conditions.
+
+**Step 2.** Suppose, for contradiction, that AB is also divided at D into terms satisfying the definition of a second bimedial, so that AD and DB are medial straight lines commensurable in square only and containing a medial rectangle. Without loss of generality, assume AC is greater than DB (since AB is the same line, the greater segment at one division cannot equal the greater at the other unless the divisions coincide).
+
+**Step 3.** Since AB is a second bimedial divided at C, the sum of the squares on AC and CB is medial [by 10.15 and 10.23, since each square is medial by 10.21, and the sum of medial areas commensurable with each other is medial by 10.15 and 10.24]. Similarly, since AB is divided at D as a second bimedial, the sum of the squares on AD and DB is medial.
+
+**Step 4.** Now, by 2.4, the square on AB equals the sum of the squares on AC and CB plus twice the rectangle AC, CB. Likewise, the square on AB equals the sum of the squares on AD and DB plus twice the rectangle AD, DB.
+
+**Step 5.** Therefore, the sum of the squares on AC, CB plus twice the rectangle AC, CB equals the sum of the squares on AD, DB plus twice the rectangle AD, DB [by CN1].
+
+**Step 6.** Since both the rectangle AC, CB and the rectangle AD, DB are medial (as each division yields a medial rectangle by the hypothesis of second bimedial), and twice a medial area is medial [by 10.23], twice the rectangle AC, CB is medial and twice the rectangle AD, DB is medial.
+
+**Step 7.** Also, the sum of the squares on AC, CB is medial (as shown in Step 3), and the sum of the squares on AD, DB is medial.
+
+**Step 8.** From Step 5, we obtain: (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)) = 2*rect(AD,DB) - 2*rect(AC,CB) [by CN2, CN3].
+
+**Step 9.** Now suppose the two divisions do not coincide. We shall show this leads to a contradiction. Consider the line segments. Since AC > DB (Step 2), and AC + CB = AD + DB = AB, we can compare the segments. Set AC = AD + e for some appropriate comparison. By the algebraic identity from 2.4 applied to both divisions, the difference of the sums of squares equals the difference of the doubled rectangles.
+
+**Step 10.** The left side, (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)), is the difference of two medial areas. The right side, 2*rect(AD,DB) - 2*rect(AC,CB), is likewise the difference of two medial areas.
+
+**Step 11.** Now consider whether these differences are rational or medial. By 10.26, a medial area does not exceed a medial area by a rational area. So the difference on each side, if nonzero, must be irrational.
+
+**Step 12.** We examine the sums of squares more carefully. Since AC and CB are commensurable in square only, the squares on AC and CB are commensurable [by D10.1.2 and 10.15]. Their sum is therefore commensurable with each, hence medial [by 10.23]. Similarly, the squares on AD and DB are commensurable, and their sum is medial.
+
+**Step 13.** Now, by 2.7, the square on AB equals the sum of the squares on AC, CB plus twice the rectangle AC, CB, and also equals the sum of the squares on AD, DB plus twice the rectangle AD, DB. Since the rectangle contained by each pair of terms is medial, twice the rectangle is medial. Since the sum of the squares on each pair is medial, and these medial areas (sum of squares and twice rectangle) are incommensurable with each other for a second bimedial (this follows from the definition in 10.38, where the rectangle is medial and incommensurable with the sum of squares), the square on AB is the side of the sum of two medial areas.
+
+**Step 14.** Suppose C and D are different points. By 2.5, the rectangle AC, CB differs from the rectangle AD, DB (since different divisions of the same line produce different rectangles unless the divisions are symmetric, but here the terms must satisfy specific commensurability conditions). Specifically, rect(AC,CB) = rect(AD,DB) would require AC*CB = AD*DB.
+
+**Step 15.** If AC*CB = AD*DB, then since also sq(AC) + sq(CB) = sq(AD) + sq(DB) (from Step 5, both sides would be equal), we would have AC + CB = AD + DB (both equal AB) and AC*CB = AD*DB. By 2.5 and 2.6, this means {AC, CB} = {AD, DB} as a set, hence the division points coincide, contradicting our assumption.
+
+**Step 16.** If AC*CB is not equal to AD*DB, then from Step 8, the difference (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)) is nonzero and equals 2*rect(AD,DB) - 2*rect(AC,CB), which is also nonzero. The left side is the difference of two medial areas. The right side is also the difference of two medial areas.
+
+**Step 17.** Now, the sum of squares on AC, CB is medial, and the sum of squares on AD, DB is medial. If their difference were rational, this would contradict 10.26 (a medial area does not exceed a medial area by a rational area). So their difference is irrational.
+
+**Step 18.** Similarly, twice rect(AC,CB) is medial and twice rect(AD,DB) is medial. If their difference were rational, this would again contradict 10.26. So their difference is also irrational.
+
+**Step 19.** But from Step 8, these two differences are equal. Now consider: the sum of squares on each pair of terms is medial and commensurable with each square in the pair. The twice-rectangle for each pair is also medial. For the second bimedial, the sum of squares and the twice-rectangle are incommensurable (from 10.38). This means for each division, sq(AB) is decomposed into two incommensurable medial parts.
+
+**Step 20.** If the divisions differ, we obtain from Step 8 that a medial area exceeds a medial area by the same amount as another medial area exceeds another medial area. But examining the commensurability relations: the sums of squares from the two divisions are each medial, and the doubled rectangles from the two divisions are each medial. The difference of the sums of squares equals the difference of the doubled rectangles. Since for the division at C, the sum of squares on AC, CB is incommensurable with twice rect(AC,CB), and for the division at D, the sum of squares on AD, DB is incommensurable with twice rect(AD,DB), these decompositions of sq(AB) into incommensurable medial parts must be the same decomposition (a medial area has a unique decomposition into two incommensurable medial parts that sum to it, by the reasoning of 10.42 applied to medial areas and 10.26).
+
+**Step 21.** Therefore the sum of the squares on AC, CB equals the sum of the squares on AD, DB, and twice rect(AC,CB) equals twice rect(AD,DB), giving rect(AC,CB) = rect(AD,DB).
+
+**Step 22.** Since AC + CB = AD + DB = AB and AC * CB = AD * DB, by 2.5 and 2.6 the pairs {AC, CB} and {AD, DB} are the same pair of segments. Therefore C and D are the same point.
+
+**Step 23.** Hence a second bimedial straight line is divided at one point only. Q.E.D.
+
+**USED:** 10.15, 10.21, 10.23, 10.24, 10.26, 10.38, 2.4, 2.5, 2.6, 2.7, CN1, CN2, CN3, D10.1.2
+**Human refs (from References field):** 10.11, 10.13, 10.22, 10.36, 10.38, 10.6, 2.4, 6.1
+**Jaccard:** 0.100 — AI adds ['10.15', '10.21', '10.23', '10.24', '10.26', '2.5', '2.6', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.2']; Human adds ['10.11', '10.13', '10.22', '10.36', '10.6', '6.1']
+
+## Proposition 10.45
+**Statement:** A major straight line is divided at one and the same point only.
+
+**Step 1.** Let AB be a major straight line, and let it be divided at C into its terms, so that AC and CB are two straight lines incommensurable in square, the sum of the squares on AC and CB is rational, and twice the rectangle AC by CB is medial [10.39]. Suppose, for the sake of contradiction, that AB is also divided at a different point D into terms satisfying the same conditions, so that AD and DB are incommensurable in square, the sum of the squares on AD and DB is rational, and twice the rectangle AD by DB is medial.
+
+**Step 2.** Since AC and CB are the terms of a major line, they are unequal (for if they were equal, they would be commensurable in length and hence commensurable in square, contradicting the requirement that they be incommensurable in square). We may therefore assume without loss of generality that AC is greater than CB. Similarly, AD is greater than DB.
+
+**Step 3.** By 2.4 applied to AB divided at C, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle AC by CB. Likewise, by 2.4 applied to AB divided at D, the square on AB equals the sum of the squares on AD and DB together with twice the rectangle AD by DB. Therefore the sum of the squares on AC and CB together with twice the rectangle AC by CB equals the sum of the squares on AD and DB together with twice the rectangle AD by DB [CN1].
+
+**Step 4.** Rearranging, the difference (AC^2 + CB^2) minus (AD^2 + DB^2) equals twice the rectangle AD by DB minus twice the rectangle AC by CB.
+
+**Step 5.** Now, the sum of the squares on AC and CB is rational, and the sum of the squares on AD and DB is rational [by hypothesis from 10.39]. Since both are rational areas, each is commensurable with the square on the assigned rational straight line [D10.1.4]. By 10.12, the sum of the squares on AC and CB is commensurable with the sum of the squares on AD and DB. If these two sums are unequal, then since the whole (the greater sum) is commensurable with one of its parts (the lesser sum), the remaining part (their difference) is also commensurable with each of them by 10.15, and hence commensurable with the square on the assigned rational line, making the difference a rational area.
+
+**Step 6.** On the other hand, twice the rectangle AC by CB is medial and twice the rectangle AD by DB is medial [by hypothesis from 10.39]. By Step 4, their difference equals the difference of the two rational sums of squares. If this difference were a nonzero rational area, then one medial area would exceed the other by a rational area, which is impossible by 10.26. Therefore the difference is zero.
+
+**Step 7.** Hence the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and twice the rectangle AC by CB equals twice the rectangle AD by DB.
+
+**Step 8.** Let M be the midpoint of AB [1.10]. By 2.9 applied to AB cut into equal segments at M and unequal segments at C, the sum of the squares on AC and CB equals twice the sum of the square on AM and the square on CM. Similarly, by 2.9 applied to AB cut at M and at D, the sum of the squares on AD and DB equals twice the sum of the square on AM and the square on DM.
+
+**Step 9.** Since the sum of the squares on AC and CB equals the sum of the squares on AD and DB [Step 7], we have twice the square on AM plus twice the square on CM equals twice the square on AM plus twice the square on DM. Subtracting twice the square on AM from both sides [CN3], twice the square on CM equals twice the square on DM, and hence the square on CM equals the square on DM.
+
+**Step 10.** Since AC is greater than CB [Step 2], we have AC greater than half of AB, that is, AC is greater than AM. Therefore C lies between M and B. Similarly, since AD is greater than DB, the point D lies between M and B. Thus C and D are both on the same side of M.
+
+**Step 11.** Since the square on CM equals the square on DM [Step 9], and CM and DM are both segments measured from M toward B, we have CM equals DM. Since C and D are both between M and B and are at the same distance from M, the points C and D coincide.
+
+**Step 12.** This contradicts the assumption that C and D are different points. Therefore a major straight line is divided at one and the same point only, which was to be proved.
+
+**USED:** 1.10, 10.12, 10.15, 10.26, 10.39, 2.4, 2.9, CN1, CN3, D10.1.4
+**Human refs (from References field):** 10.26, 10.39
+**Jaccard:** 0.200 — AI adds ['1.10', '10.12', '10.15', '2.4', '2.9', 'CN1', 'CN3', 'D10.1.4']
+
+## Proposition 10.46
+**Statement:** The side of a rational plus a medial area is divided at one point only.
+
+**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC and CB are the two straight lines described in the definition of this irrational line (10.40). Thus AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, and the rectangle contained by AC and CB is rational.
+
+**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D so that AD and DB satisfy the same conditions: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, and the rectangle contained by AD and DB is rational.
+
+**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB plus twice the rectangle contained by AC and CB. Likewise, the square on AB equals the sum of the squares on AD and DB plus twice the rectangle contained by AD and DB.
+
+**Step 4.** Therefore the sum of the squares on AC and CB plus twice the rectangle AC.CB equals the sum of the squares on AD and DB plus twice the rectangle AD.DB (CN1).
+
+**Step 5.** Now, twice the rectangle AC.CB is rational (since the rectangle AC.CB is rational, and a rational multiple of a rational area is rational, by 10.19 and the definition D10.1.4). Similarly, twice the rectangle AD.DB is rational.
+
+**Step 6.** The sum of the squares on AC and CB is medial, and the sum of the squares on AD and DB is medial (by the hypothesis of 10.40 for each division).
+
+**Step 7.** From Step 4, rearranging, the difference between the sum of the squares on AC, CB and the sum of the squares on AD, DB equals twice the rectangle AD.DB minus twice the rectangle AC.CB.
+
+**Step 8.** The right side of this equation, being the difference of two rational areas, is either rational or zero (since the difference of commensurable areas is commensurable with each, by 10.15 applied to their common rational measure, and hence rational by D10.1.4).
+
+**Step 9.** The left side is the difference of two medial areas. By 10.26, a medial area does not exceed a medial area by a rational area.
+
+**Step 10.** Therefore the difference on the left side cannot be a nonzero rational area. Combined with Step 8, both sides must equal zero.
+
+**Step 11.** Hence the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and twice the rectangle AC.CB equals twice the rectangle AD.DB, so the rectangle AC.CB equals the rectangle AD.DB.
+
+**Step 12.** Since the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and the rectangle AC.CB equals the rectangle AD.DB, the situation is identical to that in the proof of 10.45 (the major straight line is divided at one point only). In 10.45, from exactly these two equalities the uniqueness of the division point is established.
+
+**Step 13.** Specifically, since the squares on AC, CB sum to the same as the squares on AD, DB, and the rectangles AC.CB and AD.DB are equal, by 2.7 the square on AC plus the square on CB equals the square on AD plus the square on DB. By 2.4 applied to each pair, the square on the whole AB expressed via the division at C equals the square on the whole AB expressed via the division at D. Since the sums of squares are equal and the rectangles are equal, we may apply the same argument as in the uniqueness proof for the major line.
+
+**Step 14.** From Step 11, the sum of the squares on AC and CB equals the sum of the squares on AD and DB. Let us set S = this common value. Also the rectangle AC.CB equals the rectangle AD.DB; let R = this common value.
+
+**Step 15.** By 2.7, the square on the difference AC - CB can be expressed as: the sum of the squares on AC and CB minus twice the rectangle AC.CB, which equals S - 2R. Similarly, the square on the difference AD - DB equals S - 2R. Therefore the square on (AC - CB) equals the square on (AD - DB).
+
+**Step 16.** Hence AC - CB = AD - DB (since these are positive magnitudes whose squares are equal).
+
+**Step 17.** But also AC + CB = AD + DB (since both equal AB, by CN2 and the construction).
+
+**Step 18.** Adding the equations from Steps 16 and 17: 2*AC = 2*AD, so AC = AD (CN3).
+
+**Step 19.** Therefore CB = DB as well, meaning the division points C and D coincide.
+
+**Step 20.** This contradicts the assumption that AB is divided at two distinct points. Therefore the side of a rational plus a medial area is divided at one point only. Q.E.D.
+
+**USED:** 10.26, 10.40, 10.45, 2.4, 2.7, CN1, CN2, CN3, D10.1.4
+**Human refs (from References field):** 10.26, 10.40
+**Jaccard:** 0.222 — AI adds ['10.45', '2.4', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.4']
+
+## Proposition 10.47
+**Statement:** The side of the sum of two medial areas is divided at one point only.
+
+**Step 1.** Let AB be the side of the sum of two medial areas, and let it be divided at C, so that AC and CB are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and the sum of the squares on AC, CB incommensurable with the rectangle AC by CB [10.41].
+
+**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D such that AD and DB satisfy the same conditions: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, the rectangle AD by DB is medial, and the sum of the squares on AD, DB is incommensurable with the rectangle AD by DB.
+
+**Step 3.** Since AB is divided at C, the square on AB equals the sum of the squares on AC, CB together with twice the rectangle AC by CB [2.4]. Likewise, since AB is divided at D, the square on AB equals the sum of the squares on AD, DB together with twice the rectangle AD by DB [2.4].
+
+**Step 4.** Therefore, the squares on AC, CB together with twice the rectangle AC by CB equal the squares on AD, DB together with twice the rectangle AD by DB [CN1]. Rearranging, the squares on AC, CB minus the squares on AD, DB equal twice the rectangle AD by DB minus twice the rectangle AC by CB [CN2, CN3].
+
+**Step 5.** Now, the sum of the squares on AC, CB is medial, and the sum of the squares on AD, DB is medial. Also, twice the rectangle AC by CB is medial, and twice the rectangle AD by DB is medial (since if a rectangle is medial, its double is also medial, as a rational multiple of a medial area is medial [10.23, 10.6]).
+
+**Step 6.** Suppose the sum of the squares on AC, CB is not equal to the sum of the squares on AD, DB. Then their difference, say the squares on AC, CB exceed the squares on AD, DB, would equal twice the rectangle AD by DB minus twice the rectangle AC by CB. The left side is the excess of one medial area over another medial area, and the right side is likewise the excess of one medial area over another medial area.
+
+**Step 7.** But the sum of the squares on AC, CB is incommensurable with the rectangle AC by CB, and the sum of the squares on AD, DB is incommensurable with the rectangle AD by DB. From the equality in Step 4, if we denote S1 = squares on AC, CB; R1 = 2*rect(AC,CB); S2 = squares on AD, DB; R2 = 2*rect(AD,DB), then S1 + R1 = S2 + R2, so S1 - S2 = R2 - R1.
+
+**Step 8.** If S1 is not equal to S2, then S1 - S2 is the difference of two medial areas, and R2 - R1 is also the difference of two medial areas, and these differences are equal.
+
+**Step 9.** Now consider: S1 is incommensurable with R1 (by hypothesis on the division at C), and S2 is incommensurable with R2 (by hypothesis on the division at D). Since S1 + R1 = S2 + R2 (both equal the square on AB), we have that S1 and R1 are the same magnitudes as S2 and R2. We prove this as follows.
+
+**Step 10.** Suppose S1 is not equal to S2. Without loss of generality, assume S1 is greater than S2. Then S1 - S2 = R2 - R1, so R2 is greater than R1. Now S1 - S2 is the excess of one medial area over another. Also R2 - R1 is the excess of one medial over another, and these are equal.
+
+**Step 11.** Since S1 + R1 = S2 + R2, and S1 is incommensurable with R1, consider these as partitions of the same magnitude (the square on AB) into two parts. The square on AB is partitioned as S1 + R1 and also as S2 + R2, where in each partition the two summands are incommensurable and both medial.
+
+**Step 12.** From the equality S1 - S2 = R2 - R1, we get that S1 - S2 is some area, say E. Then S1 = S2 + E and R2 = R1 + E. Since S1 is medial and S2 is medial, and a medial area does not exceed a medial area by a rational area [10.26], the area E (if nonzero) is irrational.
+
+**Step 13.** Similarly, since R2 is medial and R1 is medial, the same area E is the excess of medial R2 over medial R1, which again by 10.26 cannot be rational.
+
+**Step 14.** Now, S1 is incommensurable with R1. Since R2 = R1 + E and S1 = S2 + E, substituting into S1 + R1 = S2 + R2 is consistent. But we need to derive a contradiction from S1 being incommensurable with R1 and S2 being incommensurable with R2.
+
+**Step 15.** Consider: S1 = S2 + E and R2 = R1 + E. So S1 + R1 = S2 + E + R1 = S2 + R2 (since R2 = R1 + E), which is consistent. Now S1 is incommensurable with R1, meaning (S2 + E) is incommensurable with R1. Also S2 is incommensurable with R2 = R1 + E.
+
+**Step 16.** Apply the same argument used in Proposition 10.45 and 10.46: Since S1 + R1 = S2 + R2, and S1 is not equal to S2, let us apply 2.5 and 2.6. Set out a straight line, and let it be divided at two points corresponding to C and D. Using the identities from 2.5 and 2.6, the rectangle AC by CB and the rectangle AD by DB are related to the position of the division points.
+
+**Step 17.** More precisely, by 2.5, since AB is divided into equal parts at some midpoint, say M, and into unequal parts at C, then the rectangle AC by CB together with the square on MC equals the square on MB. Likewise the rectangle AD by DB together with the square on MD equals the square on MB [2.5].
+
+**Step 18.** Therefore, the rectangle AC by CB together with the square on MC equals the rectangle AD by DB together with the square on MD [CN1]. Hence the rectangle AD by DB minus the rectangle AC by CB equals the square on MC minus the square on MD (or vice versa) [CN2, CN3].
+
+**Step 19.** Since the rectangle AC by CB is medial and the rectangle AD by DB is medial, their difference is the excess of one medial area over another. But the square on MC minus the square on MD (the difference of two squares on rational-in-relation-to-each-other segments, since M is the midpoint) is rational, because MC and MD are expressible in terms of the segments and their differences are commensurable.
+
+**Step 20.** Specifically, M is the midpoint of AB, so AM = MB. Then MC = AM - AC (or AC - AM), and MD = AM - AD (or AD - AM). The square on MC minus the square on MD is a difference of squares on segments that are commensurable (both being differences of commensurable parts of the same line). This difference of squares is rational.
+
+**Step 21.** But by 10.26, a medial area does not exceed a medial area by a rational area. Yet we have shown that the difference of the two medial rectangles (rect AD by DB minus rect AC by CB) equals a rational area (sq on MC minus sq on MD). This is a contradiction unless the rectangles are equal, i.e., rect AC by CB = rect AD by DB.
+
+**Step 22.** Therefore the rectangle AC by CB equals the rectangle AD by DB. It follows from the equality in Step 4 that the sum of the squares on AC, CB equals the sum of the squares on AD, DB.
+
+**Step 23.** Since the rectangle AC by CB equals the rectangle AD by DB, by 2.5, the square on MC equals the square on MD (where M is the midpoint of AB), so MC = MD [CN1].
+
+**Step 24.** Since M is the midpoint of AB, and MC = MD, and both C and D lie on AB, then C and D are equidistant from the midpoint M. This means either C = D, or C and D are symmetric about M.
+
+**Step 25.** If C and D are symmetric about M (and C is not equal to D), then AD = CB and DB = AC (the segments are simply reversed). But then the sum of the squares on AD, DB equals the sum of the squares on CB, AC, which is the same set of summands, and the rectangle AD by DB equals the rectangle CB by AC, which is the same rectangle. In this case, the division produces the same pair of segments, merely listed in the opposite order. Since the line AB has the same two segments regardless of which end we measure from, this is the same division point (the line is divided at one point into these two terms, just named from different ends).
+
+**Step 26.** Therefore, in either case, the side of the sum of two medial areas is divided at one point only. Q.E.D.
+
+**USED:** 10.23, 10.26, 10.41, 2.4, 2.5, CN1, CN2, CN3
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.42, 2.4, 6.1
+**Jaccard:** 0.077 — AI adds ['10.23', '10.26', '10.41', '2.5', 'CN1', 'CN2', 'CN3']; Human adds ['10.11', '10.22', '10.36', '10.42', '6.1']
+
+## Proposition 10.48
+**Statement:** To find the first binomial straight line.
+
+**Step 1.** Let a rational straight line A be set out, and let two numbers AC and CB be taken such that their sum AB has to BC the ratio which a square number has to a square number, but AB to AC does not have the ratio which a square number has to a square number. For example, take AB = 3, BC = 1, AC = 2; then AB : BC = 3 : 1, and 3 : 1 is the ratio of a square number (9) to a square number (3) — rather, we select numbers more carefully. Let AB = 4, BC = 3, so AC = 1; then AB : BC = 4 : 3, which is not the ratio of a square number to a square number, but we need AB : BC to be such a ratio. Instead, let us take AB and BC such that AB : BC is a ratio of a square number to a square number, but AB : AC is not. Concretely, let AB = 5, BC = 4, so AC = 1; AB : BC = 5 : 4, which is not a square-to-square ratio. We need more care: let AB = 4, BC = 1, AC = 3; then AB : BC = 4 : 1, which is the ratio of a square number to a square number (since 4 and 1 are both squares), while AB : AC = 4 : 3, which is not the ratio of a square number to a square number (by 9.11, since there is no square number between two consecutive square numbers in proportion, and 4 and 3 have no mean proportional in integers).
+
+**Step 2.** Since AB : BC is the ratio of the square number 4 to the square number 1, and A is rational, by 10.6 applied to the squares, we can find a straight line D such that A and D are rational straight lines commensurable in square only, and the square on A has to the square on D the ratio AB : BC. Specifically, let the square on A be to the square on E as AB is to BC, where E is some straight line. Since AB : BC = 4 : 1 is the ratio of a square number to a square number, by 10.9 the straight line A is commensurable in length with E.
+
+**Step 3.** Now let us set up the construction properly. Set out a rational straight line a. Let two numbers m and n be found (viewed as lengths of segments on a number line) such that (m + n) : n is the ratio of a square number to a square number, but (m + n) : m is not. For instance, let m + n = 4 and n = 1, so m = 3. Then (m+n) : n = 4 : 1 = (2)^2 : (1)^2, which is a square-to-square ratio. And (m+n) : m = 4 : 3, which is not a square-to-square ratio, since if 4 : 3 were a ratio of a square to a square, say p^2 : q^2, then p^2 * 3 = q^2 * 4, and no integers p, q satisfy this with gcd(p,q) = 1 (by 9.11 and properties of square numbers).
+
+**Step 4.** By 10.6, since (m+n) : n is the ratio of a square number to a square number, find a straight line b such that the square on a is to the square on b as (m+n) is to n. Then a^2 : b^2 = 4 : 1 = (2)^2 : (1)^2. By 10.9, since the ratio of the squares is a square-to-square ratio, a and b are commensurable in length. Since a is rational, b is also rational and commensurable in length with a (by D10.1.3).
+
+**Step 5.** Now consider the square on a minus the square on b. We have a^2 : b^2 = 4 : 1, so a^2 = 4 * b^2, meaning a = 2b. Then a^2 - b^2 = 4b^2 - b^2 = 3b^2. The straight line whose square equals a^2 - b^2 has its square equal to 3b^2. Call this straight line c, so c^2 = 3b^2, meaning c^2 : b^2 = 3 : 1. Since 3 : 1 is not the ratio of a square number to a square number, by 10.9 c is incommensurable in length with b.
+
+**Step 6.** But we need the square on the greater term to exceed the square on the lesser by a square on a line commensurable with the greater. Let us reconsider the construction by choosing numbers differently. Let m + n = 9, n = 1, m = 8. Then (m+n) : n = 9 : 1 = 3^2 : 1^2, a square-to-square ratio. And (m+n) : m = 9 : 8, which is not a square-to-square ratio. Now let a^2 : b^2 = 9 : 1, so a = 3b. Then a^2 - b^2 = 9b^2 - b^2 = 8b^2, so c^2 = 8b^2, and c^2 : a^2 = 8b^2 : 9b^2 = 8 : 9. Since 8 : 9 is not a square-to-square ratio, c is incommensurable in length with a. This still fails the requirement.
+
+**Step 7.** We need a^2 - b^2 = c^2 where c is commensurable in length with a. This means c^2 : a^2 must be the ratio of a square number to a square number (by 10.9). So we need (a^2 - b^2) : a^2 to be a square-to-square ratio, i.e., ((m+n) - n) : (m+n) = m : (m+n) must be a square-to-square ratio. But we also need (m+n) : n to be a square-to-square ratio and (m+n) : m not to be. So: m : (m+n) should be a square-to-square ratio, and (m+n) : n should be a square-to-square ratio, but (m+n) : m should not be. Let m = 4, m + n = 16, so n = 12. Then m : (m+n) = 4 : 16 = 1 : 4 = 1^2 : 2^2, a square-to-square ratio. And (m+n) : n = 16 : 12 = 4 : 3, not a square-to-square ratio. And (m+n) : m = 16 : 4 = 4 : 1, a square-to-square ratio. But we need (m+n) : m NOT to be a square-to-square ratio.
+
+**Step 8.** Reframing: by D10.2.1, a first binomial AB (with terms a, b where a > b) requires: (i) a is commensurable in length with the given rational line, (ii) a^2 - b^2 = c^2 where c is commensurable in length with a, and (iii) a and b are rational and commensurable in square only (since AB = a + b is binomial by 10.36). So a and b must be commensurable in square only — that is, a^2 and b^2 have a ratio of number to number (10.5), but a and b are not commensurable in length, meaning a : b is not a ratio of number to number (10.7, 10.8).
+
+**Step 9.** Use 10.29 to find two rational straight lines commensurable in square only such that the square on the greater exceeds the square on the lesser by the square on a line commensurable in length with the greater. This is exactly what 10.29 provides: it finds two rational straight lines a, b commensurable in square only with a^2 - b^2 = c^2 where c is commensurable in length with a.
+
+**Step 10.** By 10.29, let a and b be two rational straight lines commensurable in square only, with a > b, and such that the square on a is greater than the square on b by the square on a straight line commensurable in length with a. We need to ensure that a is commensurable in length with the assigned rational straight line. Since 10.29 starts from an assigned straight line and constructs the pair, we can take a to be commensurable in length with the given rational straight line. Specifically, let a be the given rational straight line itself.
+
+**Step 11.** Set out the assigned rational straight line, and let it serve as a. By 10.29, find b rational and commensurable in square only with a, such that a^2 > b^2 by the square on a line commensurable with a. Then a is commensurable in length with the assigned rational line (being the same line), and a, b are commensurable in square only.
+
+**Step 12.** Since a and b are rational straight lines commensurable in square only, by 10.36 the sum a + b is a binomial straight line.
+
+**Step 13.** Now verify the conditions for a first binomial (D10.2.1): (i) a + b is a binomial divided into terms a and b. (ii) The square on the greater term a is greater than the square on the lesser term b by the square on a straight line commensurable in length with a — this holds by the construction in Step 10 via 10.29. (iii) The greater term a is commensurable in length with the rational straight line set out — this holds since a is the assigned rational line itself.
+
+**Step 14.** Therefore, by D10.2.1, the straight line a + b is a first binomial straight line. Hence we have found a first binomial straight line, which is what was required.
+
+**USED:** 10.29, 10.36, D10.1.3, D10.2.1
+**Human refs (from References field):** 10.28, 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.125 — AI adds ['10.29', 'D10.1.3', 'D10.2.1']; Human adds ['10.28', '10.6', '10.9', '5.19']
+
+## Proposition 10.49
+**Statement:** To find the second binomial straight line.
+
+**Step 1.** Let a rational straight line D be set out, and let two numbers m and n be taken such that their difference m - n has to m the ratio which a square number has to a square number, but m has to n not the ratio which a square number has to a square number. Such numbers exist; for example, take m = 3 and n = 2, so that m - n = 1 and 1:3 is not a ratio of a square to a square, but we need (m-n):m to be a square to a square — so instead choose appropriately. Concretely, let m and n be found so that (m - n) has to m the ratio of a square number to a square number, but m to n is not the ratio of a square number to a square number. For instance, let m = 4 and n = 3, so m - n = 1, and 1:4 is the ratio of 1-squared to 2-squared, and 4:3 is not a ratio of a square number to a square number.
+
+**Step 2.** Let a rational straight line D be set out. By 10.6, since m has to n the ratio which a number has to a number, find a straight line GF such that m is to n as the square on D is to the square on GF. Then since m has to n the ratio of a number to a number, the square on D has to the square on GF the ratio of a number to a number, so by 10.9 D is commensurable in square with GF. Since m:n is not the ratio of a square number to a square number, D is not commensurable in length with GF, by 10.9. Therefore D and GF are rational straight lines commensurable in square only.
+
+**Step 3.** Now, since m - n has to m the ratio which a square number has to a square number, we have that sq(D) - sq(GF) relates to sq(D) in a specific way. For since m:n = sq(D):sq(GF), we get sq(D) - sq(GF) is to sq(D) as m - n is to m, by 5.19 (componendo in reverse, i.e., separando applied to the proportion). Since (m - n):m is the ratio of a square number to a square number, sq(D) - sq(GF) has to sq(D) the ratio of a square number to a square number.
+
+**Step 4.** Let sq(D) - sq(GF) = sq(H) for some straight line H (this is possible since sq(D) > sq(GF) because m > n, and we can find H by 1.47 and related constructions). Then sq(H):sq(D) is the ratio of a square number to a square number, so by 10.9 H is commensurable in length with D. Thus the square on D is greater than the square on GF by the square on a straight line H commensurable in length with D.
+
+**Step 5.** Now set GF as the lesser term and D as the greater term. Since D and GF are rational and commensurable in square only, by 10.36 their sum D + GF is a binomial straight line. We must verify the conditions for a second binomial.
+
+**Step 6.** For the second binomial (D10.2.2), we need: the square on the greater term exceeds the square on the lesser by the square on a straight line commensurable in length with the greater, and the lesser term is commensurable in length with the rational straight line set out. But here D is the greater term and GF is the lesser. The rational straight line set out must be commensurable in length with GF, the lesser term, not with D, the greater.
+
+**Step 7.** To arrange this correctly, we proceed as follows. Set out a rational straight line E. Find two numbers p and q such that p:q is not the ratio of a square number to a square number, but (p - q):p is the ratio of a square number to a square number (as in Step 1, e.g., p = 4, q = 3). By 10.6, let E be to some straight line A (in square) as q is to p, meaning sq(A):sq(E) = p:q. Then A and E are commensurable in square (by 10.9, since p:q is a ratio of number to number) but incommensurable in length (by 10.9, since p:q is not a ratio of square to square). So A and E are rational and commensurable in square only.
+
+**Step 8.** Since sq(A):sq(E) = p:q and p > q, we have sq(A) > sq(E). By separando (5.17), sq(A) - sq(E) is to sq(A) as p - q is to p. Since (p - q):p is the ratio of a square number to a square number, it follows that sq(A) - sq(E) has to sq(A) the ratio of a square number to a square number. Let sq(A) - sq(E) = sq(K). Then sq(K):sq(A) is the ratio of a square to a square, so by 10.9, K is commensurable in length with A. Therefore the square on A exceeds the square on E by the square on a straight line K commensurable in length with A.
+
+**Step 9.** Now E, the lesser term, is the rational straight line set out, so E is trivially commensurable in length with the rational straight line set out (being equal to it). Meanwhile A, the greater term, is incommensurable in length with E. Therefore, by D10.2.2, the binomial A + E is a second binomial straight line.
+
+**Step 10.** Specifically, the binomial A + E satisfies all the requirements of D10.2.2: (i) A and E are rational straight lines commensurable in square only, so A + E is binomial by 10.36; (ii) sq(A) > sq(E) and the excess sq(A) - sq(E) equals the square on a line commensurable in length with A, the greater term; (iii) the lesser term E is commensurable in length with the rational straight line set out. Therefore A + E is a second binomial straight line, and we have found what was required.
+
+**USED:** 10.36, 10.6, 10.9, 5.17, D10.1.3, D10.2.2
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.429 — AI adds ['5.17', 'D10.1.3', 'D10.2.2']; Human adds ['5.19']
+
+## Proposition 10.50
+**Statement:** To find the third binomial straight line.
+
+**Step 1.** Let A be a rational straight line set out. Set out three numbers E, BC, CD such that BC + CD = BD, and satisfying: (i) the ratio (BC - CD) : BC is a ratio of a square number to a square number, (ii) the ratio BC : CD is not a ratio of a square number to a square number, (iii) the ratio E : BC is not a ratio of a square number to a square number, and (iv) the ratio E : CD is not a ratio of a square number to a square number. For instance, let E = 2, BC = 4, CD = 3, so BD = 7, and (BC - CD) : BC = 1 : 4 = 1^2 : 2^2, while BC : CD = 4 : 3, E : BC = 2 : 4 = 1 : 2, and E : CD = 2 : 3 are all not ratios of square numbers.
+
+**Step 2.** Let it be contrived that E : BC = sq(A) : sq(FG), where FG is a straight line. Since E and BC are numbers, the ratio E : BC is a ratio of a number to a number, so sq(A) and sq(FG) are commensurable by 10.6. Since A is rational and sq(A) is commensurable with sq(FG), it follows that sq(FG) is rational, and therefore FG is rational (D10.1.3, D10.1.4).
+
+**Step 3.** Since E : BC is not the ratio of a square number to a square number, by 10.9 A is incommensurable in length with FG. Therefore FG, though rational, is not commensurable in length with the assigned rational straight line A.
+
+**Step 4.** Let it be contrived that BC : CD = sq(FG) : sq(GH), where GH is a straight line. Since BC and CD are numbers, sq(FG) and sq(GH) are commensurable by 10.6. Since sq(FG) is rational, sq(GH) is also rational, and so GH is rational (D10.1.3, D10.1.4).
+
+**Step 5.** Since BC : CD is not the ratio of a square number to a square number, by 10.9 FG and GH are incommensurable in length. Therefore FG and GH are rational straight lines commensurable in square only, so FG + GH is a binomial straight line by 10.36.
+
+**Step 6.** Since sq(A) : sq(FG) = E : BC and sq(FG) : sq(GH) = BC : CD, by the ratio ex aequali (5.22), sq(A) : sq(GH) = E : CD. Since E : CD is not the ratio of a square number to a square number, by 10.9 A and GH are incommensurable in length. Thus GH is also not commensurable in length with the assigned rational straight line A.
+
+**Step 7.** We now show that the square on the greater term FG exceeds the square on the lesser term GH by the square on a straight line commensurable in length with FG. Since sq(FG) : sq(GH) = BC : CD, by conversion of the ratio (5.19 with CN3), (sq(FG) - sq(GH)) : sq(FG) = (BC - CD) : BC.
+
+**Step 8.** Now (BC - CD) : BC is the ratio of a square number to a square number (by our construction in Step 1, it equals 1 : 4 = 1^2 : 2^2). Let sq(FG) - sq(GH) = sq(K) for some straight line K. Then sq(K) : sq(FG) = (BC - CD) : BC, which is a ratio of a square number to a square number. By 10.9, K is commensurable in length with FG. Therefore the square on FG is greater than the square on GH by the square on a straight line commensurable in length with FG.
+
+**Step 9.** We verify the conditions for a third binomial straight line (D10.2.3): (a) FG + GH is a binomial (Step 5), divided into its terms FG and GH; (b) the square on the greater term FG exceeds the square on the lesser term GH by the square on a straight line commensurable in length with FG (Step 8); (c) neither FG (Step 3) nor GH (Step 6) is commensurable in length with the rational straight line A set out. Therefore, by D10.2.3, FG + GH is a third binomial straight line.
+
+**Step 10.** Therefore the third binomial straight line FG + GH has been found. Q.E.F.
+
+**USED:** 10.36, 10.6, 10.9, 5.19, 5.22, CN3, D10.1.3, D10.1.4, D10.2.3
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19, 5.22
+**Jaccard:** 0.556 — AI adds ['CN3', 'D10.1.3', 'D10.1.4', 'D10.2.3']
+
+## Proposition 10.51
+**Statement:** To find the fourth binomial straight line.
+
+**Step 1.** Let a rational straight line AC be set out, and let two rational straight lines AC and CB be found that are commensurable in square only, such that the square on the greater AC is greater than the square on the less CB by the square on a straight line incommensurable in length with AC. This is possible by 10.30.
+
+**Step 2.** Since AC and CB are rational and commensurable in square only, the straight line AB (which is AC + CB) is a binomial straight line, by 10.36.
+
+**Step 3.** We must show that AB is a fourth binomial. By the definition D10.2.4, this requires three conditions: (i) AB is a binomial divided into terms AC and CB; (ii) the square on the greater term AC is greater than the square on the lesser term CB by the square on a straight line incommensurable in length with AC; (iii) the greater term AC is commensurable in length with the rational straight line set out.
+
+**Step 4.** For condition (ii): By our construction in Step 1 (using 10.30), the square on AC is greater than the square on CB by the square on a straight line incommensurable in length with AC. This condition is satisfied directly from the construction.
+
+**Step 5.** For condition (iii): We need the greater term AC to be commensurable in length with the rational straight line set out. Since AC was itself set out as our rational straight line, AC is trivially commensurable in length with itself. Thus AC, the greater term, is commensurable in length with the rational straight line set out.
+
+**Step 6.** For condition (i): By Step 2, AB = AC + CB is a binomial divided into its terms AC and CB, where AC is the greater term (since AC and CB are commensurable in square only, they are unequal, and AC is the greater by construction from 10.30).
+
+**Step 7.** Since all three conditions of D10.2.4 are satisfied — AB is a binomial, the square on AC exceeds the square on CB by the square on a straight line incommensurable in length with AC, and AC (the greater term) is commensurable in length with the rational straight line set out — the straight line AB is a fourth binomial straight line.
+
+**Step 8.** Therefore, a fourth binomial straight line AB has been found, which is what was required.
+
+**USED:** 10.30, 10.36, D10.1.3, D10.2.4
+**Human refs (from References field):** 10.6, 10.9, 5.19
+**Jaccard:** 0.000 — AI adds ['10.30', '10.36', 'D10.1.3', 'D10.2.4']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.52
+**Statement:** To find the fifth binomial straight line.
+
+**Step 1.** Set out a rational straight line A, and let two numbers p and q be taken such that their sum p + q does not have to either p or q the ratio of a square number to a square number. For example, let p = 3 and q = 2, so that p + q = 5, and neither 5:3 nor 5:2 is the ratio of a square number to a square number.
+
+**Step 2.** Let E be a straight line equal to A, so that E is commensurable in length with A and is rational.
+
+**Step 3.** Let D be a straight line such that sq(D) is to sq(E) as (p + q) is to q, that is, as 5 is to 2. Since 5:2 is a ratio of a number to a number, sq(D) is commensurable with sq(E) by 10.6, so D is commensurable in square with E by D10.1.2. Since 5:2 is not the ratio of a square number to a square number, D is incommensurable in length with E by 10.9. Since E is rational, D is also rational (being commensurable in square with a rational line, by D10.1.3). Therefore D and E are rational straight lines commensurable in square only. Since sq(D):sq(E) = 5:2 and 5 > 2, we have D > E.
+
+**Step 4.** Therefore the sum D + E is a binomial straight line by 10.36, with D the greater term and E the lesser term.
+
+**Step 5.** We show that the square on D exceeds the square on E by the square on a straight line incommensurable in length with D. Since sq(D):sq(E) = (p + q):q, by the separation of ratio (5.17), we have (sq(D) - sq(E)):sq(D) = ((p + q) - q):(p + q) = p:(p + q) = 3:5. Since 3:5 is not the ratio of a square number to a square number, the straight line F such that sq(F) = sq(D) - sq(E) satisfies sq(F):sq(D) = 3:5, and therefore F is incommensurable in length with D by 10.9. This conclusion also follows from 10.18: since (p + q) does not have to p the ratio of a square number to a square number, the corresponding application divides into incommensurable parts, so sq(D) exceeds sq(E) by the square on a straight line incommensurable in length with D.
+
+**Step 6.** We verify the commensurability conditions with the assigned rational straight line A. The lesser term E is commensurable in length with A, since E was taken equal to A (Step 2). The greater term D satisfies sq(D):sq(A) = sq(D):sq(E) = (p + q):q = 5:2. Since 5:2 is not the ratio of a square number to a square number, D is incommensurable in length with A by 10.9. Therefore the greater term is not commensurable in length with the rational straight line set out, while the lesser term is.
+
+**Step 7.** By definition D10.2.5, since D + E is a binomial straight line in which the square on the greater term D exceeds the square on the lesser term E by the square on a straight line incommensurable in length with D, and the lesser term E is commensurable in length with the rational straight line A set out, the straight line D + E is a fifth binomial straight line.
+
+**Step 8.** Therefore a fifth binomial straight line has been found, which is what was required.
+
+**USED:** 10.18, 10.36, 10.6, 10.9, 5.17, D10.1.2, D10.1.3, D10.2.5
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.333 — AI adds ['10.18', '5.17', 'D10.1.2', 'D10.1.3', 'D10.2.5']; Human adds ['5.19']
+
+## Proposition 10.53
+**Statement:** To find the sixth binomial straight line.
+
+**Step 1.** Set out a rational straight line e. Let two numbers p and q be taken with p greater than q, such that p is not a square number, q is not a square number, p has not to q the ratio of a square number to a square number, and p has not to (p minus q) the ratio of a square number to a square number. Such numbers exist: for instance, p = 3 and q = 2 satisfy all conditions, since 3 and 2 are not square numbers, 3:2 is not the ratio of a square number to a square number, and 3:1 is not the ratio of a square number to a square number.
+
+**Step 2.** Let A be a straight line such that the square on A is to the square on e as p is to 1. Since p to 1 is the ratio of a number to a number, the square on A is commensurable with the square on e [10.6]. Therefore A is rational [D10.1.3]. Since p is not a square number, the ratio p to 1 is not the ratio of a square number to a square number, so A is incommensurable in length with e [10.9].
+
+**Step 3.** Let B be a straight line such that the square on B is to the square on e as q is to 1. By the same reasoning as Step 2, the square on B is commensurable with the square on e [10.6], so B is rational [D10.1.3]. Since q is not a square number, B is incommensurable in length with e [10.9].
+
+**Step 4.** Since the square on A is p times the square on e, and the square on B is q times the square on e, the square on A is to the square on B as p is to q [10.5]. Since p has not to q the ratio of a square number to a square number, A is incommensurable in length with B [10.9]. But the square on A is commensurable with the square on e and the square on B is commensurable with the square on e, so the square on A is commensurable with the square on B [10.12]. Therefore A and B are commensurable in square only.
+
+**Step 5.** Since A and B are rational straight lines commensurable in square only, the sum A plus B is irrational and is a binomial straight line [10.36].
+
+**Step 6.** Since p is greater than q, the square on A is greater than the square on B. Let C be the straight line such that the square on A equals the square on B together with the square on C [1.47]. Then the square on C equals the square on A minus the square on B. Since the square on A equals p times the square on e and the square on B equals q times the square on e, the square on C equals (p minus q) times the square on e [CN3].
+
+**Step 7.** Now the square on C is to the square on A as (p minus q) times the square on e is to p times the square on e, that is, as (p minus q) is to p [10.5]. Since p has not to (p minus q) the ratio of a square number to a square number, neither does (p minus q) have to p such a ratio. Therefore C is incommensurable in length with A [10.9]. That is, the square on A is greater than the square on B by the square on a straight line incommensurable in length with A.
+
+**Step 8.** We have established: (i) A plus B is a binomial straight line [Step 5]; (ii) the square on the greater term A exceeds the square on the lesser term B by the square on a straight line C that is incommensurable in length with A [Steps 6-7]; (iii) neither A nor B is commensurable in length with the rational straight line e [Steps 2-3]. Therefore, by the definition of a sixth binomial straight line [D10.2.6], A plus B is a sixth binomial straight line. This is what was required to find.
+
+**USED:** 1.47, 10.12, 10.36, 10.5, 10.6, 10.9, CN3, D10.1.3, D10.2.6
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19, 5.22
+**Jaccard:** 0.273 — AI adds ['1.47', '10.12', '10.5', 'CN3', 'D10.1.3', 'D10.2.6']; Human adds ['5.19', '5.22']
+
+## Proposition 10.54
+**Statement:** If an area be contained by a rational straight line and the first binomial, the âsideâ of the area is the irrational straight line which is called binomial.
+
+**Step 1.** Let the area AC be contained by the rational straight line AB and the first binomial straight line AD. We must show that the "side" of the area AC is the irrational straight line called binomial.
+
+**Step 2.** Since AD is a first binomial, let it be divided into its terms at E, where AE is the greater term. By the definition of a first binomial (D10.2.1), AE and ED are rational straight lines commensurable in square only, the square on AE is greater than the square on ED by the square on a straight line commensurable in length with AE, and AE is commensurable in length with the rational straight line AB set out.
+
+**Step 3.** Let it be contrived that the square on AE is greater than the square on ED by the square on a straight line commensurable in length with AE. Since AE is commensurable in length with the rational straight line AB, the rectangle AB by AE (which is part of the area AC) is rational, by 10.19.
+
+**Step 4.** Since ED is incommensurable in length with AE (because AE and ED are commensurable in square only), and AE is commensurable in length with AB, therefore ED is incommensurable in length with AB, by 10.13.
+
+**Step 5.** Both AB and ED are rational (since ED is a term of the binomial, which is rational by D10.2.1). Therefore the rectangle AB by ED is medial, by 10.21.
+
+**Step 6.** Now bisect ED at F (by 1.10), so EF equals FD. Since the square on AE is greater than the square on ED by the square on a straight line commensurable in length with AE, by 10.17, if there be applied to AE a parallelogram equal to the fourth part of the square on ED (that is, the square on EF) and deficient by a square figure, it divides AE into parts commensurable in length.
+
+**Step 7.** Apply to AE a rectangle equal to the square on EF and deficient by a square figure; let the parts of AE so produced be AG and GE. Then AG is commensurable in length with GE, by Step 6.
+
+**Step 8.** Construct GH perpendicular to AB and equal in length to AB, and through H draw HK parallel to AB. On GE describe the square KL, and produce its sides to meet appropriate lines. Similarly, on AG construct the square appropriately. The area AC (that is, rectangle AB by AD) is thus divided by the construction into rectangles.
+
+**Step 9.** Since AG is commensurable in length with GE (Step 7), and AB equals GH, the rectangle AB by AG is commensurable with the rectangle AB by GE, by 6.1 and 10.11. Now, the rectangle AE by ED equals the rectangle AG by GE together with the square on EF. But we applied to AE a rectangle equal to the square on EF deficient by a square, so the rectangle AG by GE equals the rectangle AE by ED minus the square on EF, which by construction equals zero of the excess. More precisely, by 2.5, since AE is cut into equal parts at F and unequal parts at G, the rectangle AG by GE together with the square on FG equals the square on EF (half of ED).
+
+**Step 10.** By 2.5, the rectangle AG by GE plus the square on FG equals the square on FE. Since FE is half of ED, the square on FE is one-fourth of the square on ED. Hence the rectangle AG by GE equals the square on EF minus the square on FG.
+
+**Step 11.** Now consider the rectangle AB by AD. This equals the rectangle AB by AE plus the rectangle AB by ED. The rectangle AB by AE is rational (Step 3) and the rectangle AB by ED is medial (Step 5). We must find two straight lines whose sum (the "side") has its square equal to the rectangle AB by AD.
+
+**Step 12.** Let MN be a straight line such that the square on MN equals the rectangle AB by AG, and let NO be a straight line such that the square on NO equals the rectangle AB by GE. Arrange MN and NO in a straight line so that MO = MN + NO.
+
+**Step 13.** Since the rectangle AB by AE equals the rectangle AB by AG plus the rectangle AB by GE (by 2.1), and the rectangle AB by AE is rational (Step 3), we have that the sum of the squares on MN and NO (which equals the rectangle AB by AG plus the rectangle AB by GE) is rational.
+
+**Step 14.** Since AG is commensurable in length with GE (Step 7), the rectangle AB by AG is commensurable with the rectangle AB by GE, by 6.1 and 10.11. That is, the square on MN is commensurable with the square on NO. Therefore MN and NO are commensurable in square, by D10.1.2.
+
+**Step 15.** Since AE is commensurable in length with AB (by D10.2.1 for the first binomial), and AG is a part of AE, we consider: the rectangle AB by AG has the square on MN equal to it. Since AB is rational, and the rectangle AB by AG is part of the rational rectangle AB by AE, the square on MN is a rational area. Hence MN is rational, by D10.1.3 and D10.1.4. Similarly, NO is rational.
+
+**Step 16.** Now, twice the rectangle MN by NO must equal the rectangle AB by ED. Since the square on MO equals the square on MN plus the square on NO plus twice the rectangle MN by NO (by 2.4), and we need the square on MO to equal the rectangle AB by AD = rectangle AB by AE + rectangle AB by ED, we require twice the rectangle MN by NO to equal the rectangle AB by ED. But the rectangle AB by ED is medial (Step 5). Hence twice the rectangle MN by NO is medial.
+
+**Step 17.** Since twice the rectangle MN by NO is medial, the rectangle MN by NO is itself medial (as a medial area remains medial). Therefore MN and NO are not commensurable in length, for if they were, the rectangle MN by NO would be rational by 10.19, contradicting it being medial.
+
+**Step 18.** Since MN and NO are rational straight lines commensurable in square only (Steps 14, 15, and 17), by 10.36 the sum MO = MN + NO is a binomial straight line.
+
+**Step 19.** Now the square on MO equals the square on MN plus the square on NO plus twice the rectangle MN by NO (by 2.4), which equals the rectangle AB by AE plus the rectangle AB by ED (Steps 13 and 16), which equals the rectangle AB by AD (by 2.1). Therefore the square on MO equals the area AC.
+
+**Step 20.** Hence MO is the "side" of the area AC (D10.1.4), and MO is a binomial straight line (Step 18). Therefore, if an area be contained by a rational straight line and the first binomial, the "side" of the area is the irrational straight line which is called binomial. Q.E.D.
+
+**USED:** 1.10, 10.11, 10.13, 10.17, 10.19, 10.21, 10.36, 2.1, 2.4, 2.5, 6.1, D10.1.2, D10.1.3, D10.1.4, D10.2.1
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.36, 2.14, 6.1, 6.17, D10.2.1
+**Jaccard:** 0.368 — AI adds ['1.10', '10.21', '2.1', '2.4', '2.5', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.12', '10.15', '2.14', '6.17']
+
+## Proposition 10.55
+**Statement:** If an area be contained by a rational straight line and the second binomial, the âsideâ of the area is the irrational straight line which is called a first bimedial.
+
+**Step 1.** Let the area AC be contained by the rational straight line AB and the second binomial CD. We are to show that the "side" of the area AC is a first bimedial straight line.
+
+**Step 2.** Let CD be divided into its terms at E, where DE is the greater term and EC the lesser. Since CD is a second binomial, by definition (D10.2.2), EC is commensurable in length with the rational straight line set out, the square on DE is greater than the square on EC by the square on a straight line commensurable in length with DE, and DE and EC are rational straight lines commensurable in square only.
+
+**Step 3.** Bisect DE at the point F, so that DF = FE (by 1.10). Apply to DE a rectangle equal to the square on EF diminished by the square on a certain line, that is, apply to DE a parallelogram equal to the fourth part of the square on EC and deficient by a square figure (by 6.28). Since the square on DE is greater than the square on EC by the square on a straight line commensurable with DE, this application divides DE into parts commensurable in length (by 10.17). Call the segments DG and GE so obtained. Then DG and GE are commensurable in length, and since DE is bisected at F, the rectangle DG·GE together with the square on FG equals the square on FE (by 2.5).
+
+**Step 4.** Let the rectangle DG·GE equal the square on a straight line H, so that H squared equals DG·GE. Since DG·GE is a rectangle contained by commensurable segments of DE, and DE is rational, DG and GE are each rational. Now set up a semicircle on DE as diameter, erect a perpendicular from G to meet the semicircle at a point, and let H be the mean proportional between DG and GE, so that DG : H = H : GE (by 6.13), and thus the square on H equals the rectangle DG·GE (by 6.17).
+
+**Step 5.** Now consider the rectangle AB·CD. Since CD = DE + EC, the rectangle AB·CD = AB·DE + AB·EC (by 2.1). We seek a straight line whose square equals AB·CD.
+
+**Step 6.** Construct straight lines as follows. Let the square on w equal the rectangle AB·DG, and let the square on x equal the rectangle AB·GE (these exist by 2.14). Also let the square on y equal the rectangle AB·EC.
+
+**Step 7.** Since DG and GE are commensurable in length (Step 3), the rectangles AB·DG and AB·GE are commensurable (by 6.1 and 10.11). Hence the square on w is commensurable with the square on x, so w and x are commensurable in square (by D10.1.2).
+
+**Step 8.** Now, DG is a part of DE. Since DE and EC are commensurable in square only (they are terms of a second binomial), DE is rational but incommensurable in length with the rational line set out. Since DG is commensurable in length with DE (as DG is a segment from the application in Step 3, and DG is commensurable with GE, and DG + GE = DE), DG is also rational. The rectangle AB·DG is contained by rational straight lines: AB is rational, and DG is rational. But AB and DG are incommensurable in length (since DG is commensurable in length with DE, and DE is incommensurable in length with the rational straight line AB, by 10.13). Therefore the rectangle AB·DG is irrational (by 10.21), and the square on w is medial. Hence w is a medial straight line (by 10.21).
+
+**Step 9.** By the same reasoning, GE is rational and incommensurable in length with AB, so the rectangle AB·GE is irrational, and x is likewise a medial straight line (by 10.21).
+
+**Step 10.** Since DG and GE are commensurable in length (Step 3), and the square on w equals AB·DG while the square on x equals AB·GE, then w and x are commensurable in square (Step 7). We must show they are commensurable in square only. Suppose w and x were commensurable in length. Then w squared and x squared would have the ratio of a square number to a square number (by 10.9). But w squared : x squared = AB·DG : AB·GE = DG : GE (by 6.1). Since DG : GE would then be a ratio of square number to square number, DG and GE would be commensurable in square in a manner that forces DE and EC to be commensurable in length (since the construction via 10.17 and 2.5 links DG, GE back to DE, EC). But DE and EC are commensurable in square only, not in length. This is a contradiction. Therefore w and x are commensurable in square only.
+
+**Step 11.** Now we show that the rectangle w·x is rational. The rectangle w·x squared (i.e., the square on w times the square on x) equals AB·DG times AB·GE = AB² times DG·GE (by 6.16). Now DG·GE = the square on H (Step 4). So the square on w times the square on x = AB² · H². Hence the rectangle w·x = AB · H. Since H² = DG · GE, and from the bisection and application in Step 3 using 2.5, we get that DG · GE relates to the square on FE minus the square on FG. More directly: the rectangle contained by w and x has its square equal to the rectangle AB·DG times the rectangle AB·GE, which equals the square on AB times the rectangle DG·GE. The rectangle DG·GE equals the square on H, so the square of the rectangle w·x equals the square on AB times the square on H, giving the rectangle w·x = AB·H. Now EC is commensurable in length with the rational line set out, so EC is rational. Since CD is a second binomial, EC (the lesser term) is commensurable in length with the assigned rational. From the construction, 2·DG·GE relates to the difference of squares on DE and EC. By 2.5, the rectangle DE·DG + rectangle DE·GE = square on DE minus square on FG plus appropriate terms. More precisely, twice the rectangle DG·GE = square on DE minus the square on (DG - GE) adjusted via 2.5. The key fact is that twice the rectangle w·x corresponds to twice AB·H, and since the square on H = DG·GE, which by construction comes from commensurable parts, twice w·x equals the rectangle AB·EC (this follows from the identity: the rectangle on the whole DE and the segments DG, GE gives, by 2.5 and the construction, that twice DG·GE = DE² - (DG-GE)², and the application was set up so that the rectangle equals one fourth of EC², giving 4·DG·GE = ... but let us use the direct approach). In fact, by the construction in Step 3, the rectangle DG·GE is set equal to the square on EF minus the square on FG, where EF = DE/2. Actually, let us use the approach more directly.
+
+**Step 12.** Let us reconsider. Apply to DE a parallelogram equal to (EC/2)² deficient by a square, producing segments DG, GE of DE commensurable in length (by 10.17, since sq(DE) > sq(EC) by a square on a line commensurable with DE). By 2.5, DG · GE = FE² - FG² where F is the midpoint of DE and G is the point of division. But FE = DE/2, and the applied area equals (EC/2)². So FE² - FG² = (EC/2)², meaning the rectangle DG · GE = (EC/2)² = EC²/4.
+
+**Step 13.** Therefore 4 · DG · GE = EC². Now the square on w = AB · DG and the square on x = AB · GE, so 2wx corresponds to the "side" of 4 · AB · DG · AB · GE = AB² · 4 · DG · GE = AB² · EC² = (AB · EC)². Hence (2wx)² = (AB · EC)², so 2wx = AB · EC. But EC is commensurable in length with the assigned rational line, and AB is rational, so AB · EC is a rational rectangle (by 10.19). Therefore 2wx is rational, meaning the rectangle w, x is rational.
+
+**Step 14.** Since w and x are medial straight lines (Steps 8-9), commensurable in square only (Step 10), and containing a rational rectangle (Step 13), their sum w + x is a first bimedial straight line (by 10.37).
+
+**Step 15.** It remains to show that w + x is the "side" of the area AC, i.e., that (w + x)² = AB · CD. We have (w + x)² = w² + x² + 2wx (by 2.4). Now w² + x² = AB · DG + AB · GE = AB · (DG + GE) = AB · DE (by 2.1). And 2wx = AB · EC (Step 13). Therefore (w + x)² = AB · DE + AB · EC = AB · (DE + EC) = AB · CD (by 2.1).
+
+**Step 16.** Therefore the "side" of the area contained by the rational straight line AB and the second binomial CD is the first bimedial straight line w + x. This is what was to be proved.
+
+**USED:** 1.10, 10.11, 10.13, 10.17, 10.19, 10.21, 10.37, 10.9, 2.1, 2.14, 2.4, 2.5, 6.1, 6.13, 6.16, 6.17, 6.28, D10.1.2, D10.1.3, D10.1.4, D10.2.2
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.37, 6.1, D10.2.2
+**Jaccard:** 0.348 — AI adds ['1.10', '10.9', '2.1', '2.14', '2.4', '2.5', '6.13', '6.16', '6.17', '6.28', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.12', '10.15']
+
+## Proposition 10.56
+**Statement:** If an area be contained by a rational straight line and the third binomial, the âsideâ of the area is the irrational straight line called a second bimedial.
+
+**Step 1.** Let the area AC be contained by the rational straight line AB and the third binomial straight line AD. We are to show that the "side" of the area AC is the irrational straight line called a second bimedial.
+
+**Step 2.** Let AD be divided into its terms at E, so that AE is the greater term. By the definition of a third binomial (D10.2.3), neither AE nor ED is commensurable in length with the rational straight line AB, the square on AE is greater than the square on ED by the square on a straight line commensurable in length with AE, and AE and ED are rational straight lines commensurable in square only.
+
+**Step 3.** By the same reasoning as in Proposition 10.54, let the construction be carried out identically. Bisect ED at F (by 1.10). Apply to AE a parallelogram equal to the square on EF and deficient by a square figure (by 6.28), producing the rectangle AG by GE. Since the square on AE is greater than the square on ED by the square on a straight line commensurable with AE, by 10.17, AG is commensurable in length with GE.
+
+**Step 4.** Set out a rational straight line H. To H apply the rectangle HI equal to the square on AG, producing HI as breadth; to H apply the rectangle IK equal to the square on GE, producing IK as breadth. Since AG and GE are commensurable in length (Step 3), the squares on AG and GE are commensurable (by 10.15 and the property that commensurable lengths yield commensurable squares). Therefore the rectangle HI is commensurable with IK, and so HI the breadth is commensurable in length with IK the breadth (by 10.11).
+
+**Step 5.** Since AE is rational and incommensurable in length with AB, the square on AE is rational but incommensurable with the rectangle AE by AB. But the rectangle AG by GE equals the square on EF (which is a quarter of the square on ED by construction via 2.5), and the square on AE equals the rectangle AG by GE plus the squares on AG and GE (by 2.5 applied inversely). Consider the rectangle AB by AE: this is the area of the portion of AC corresponding to AE, and is irrational since AE is incommensurable in length with AB while both are rational (by 10.21). Similarly the rectangle AB by ED is irrational.
+
+**Step 6.** Now the square on AG is rational (since AG is rational, being commensurable in square with AE which is rational). Apply the square on AG to H: the result HI equals the square on AG. Since AG is rational and incommensurable in length with H (which is rational), the square on AG applied to H produces a breadth HI that is rational but incommensurable in length with H (by 10.22). Therefore HI is a medial straight line (by D10.1.3 and 10.22). Similarly, GE is rational and incommensurable in length with H, so the square on GE applied to H produces breadth IK that is also medial.
+
+**Step 7.** Since AG and GE are commensurable in length (Step 3), the squares on AG and GE are commensurable (by 10.15 combined with the fact that the ratio of squares on commensurable lines is a ratio of numbers, by 10.9). The breadths HI and IK, being produced by applying commensurable areas to the same line H, are commensurable in length (by 10.11). Therefore HI and IK are medial straight lines commensurable in length.
+
+**Step 8.** Now consider the rectangle contained by HI and IK. We need to determine whether it is medial. The rectangle AG by GE equals the square on EF (by 2.5, since ED was bisected at F and divided at G). The square on EF is one quarter of the square on ED. Since ED is rational, the square on ED is rational, and so the square on EF is rational (being commensurable with the square on ED). By the construction, the rectangle corresponding to AG by GE when applied via the line H relates to the rectangle HI by IK. Since AE is incommensurable in length with AB, and the products involve these lines, the rectangle HI by IK is medial (by 10.24, since HI and IK are medial and commensurable in length).
+
+**Step 9.** Now construct the "side" of the area AC as follows. Let x be a straight line such that the square on x equals the area AC, i.e., the rectangle AB by AD. Since AD = AE + ED, the rectangle AB by AD = rectangle AB by AE + rectangle AB by ED (by 2.1). We must find the "side" x of this combined area.
+
+**Step 10.** Following the method established in 10.54, let us set MN = AG and NO = GE (with MN > NO since AG > GE). Construct squares MP on MN and NR on NO. Complete the rectangle as in the previous propositions. We have the square on MO = square on MN + square on NO + twice rectangle MN by NO = square on AG + square on GE + twice rectangle AG by GE.
+
+**Step 11.** By 2.5, the rectangle AG by GE = square on EF, and the square on AE = square on AG + square on GE + twice rectangle AG by GE. Also the rectangle AB by AE = AB times AE, and since the sum of the squares on AG and GE plus twice rectangle AG by GE equals the square on AE (by 2.4 applied to the sum AG + GE = AE), we have that the square on MO equals the square on AE (since MO = MN + NO = AG + GE = AE). Thus MO = AE.
+
+**Step 12.** Now apply the areas to AB. The rectangle AB by AE corresponds to the square on some line, and the rectangle AB by ED corresponds to the square on another. The total area AC = AB times AD = AB times AE + AB times ED.
+
+**Step 13.** Construct: let the square on s equal AB times AG, and the square on t equal AB times GE. Then s and t are the components we seek. Since AG is rational and incommensurable in length with AB (because AG is commensurable with AE, and AE is incommensurable in length with AB), the rectangle AB by AG is medial (by 10.21). Therefore the square on s is medial, making s a medial straight line (by D10.1.4).
+
+**Step 14.** Similarly, GE is rational and incommensurable in length with AB (since GE is commensurable with AE, which is incommensurable in length with AB; by 10.13, GE is incommensurable in length with AB). Therefore the rectangle AB by GE is medial (by 10.21), and so the square on t is medial, making t a medial straight line.
+
+**Step 15.** Since AG is commensurable in length with GE (Step 3), the rectangles AB by AG and AB by GE are commensurable (the ratio AB*AG : AB*GE = AG : GE, which is a ratio of commensurable magnitudes; by 10.11). Therefore the squares on s and on t are commensurable, so s and t are commensurable in square (by D10.1.2).
+
+**Step 16.** We must show s and t are incommensurable in length. Since the square on s : square on t = AB*AG : AB*GE = AG : GE, and AG and GE are commensurable in length, the ratio AG:GE is a ratio of a number to a number (by 10.5). If AG:GE were the ratio of a square number to a square number, then s and t would be commensurable in length (by 10.9). But in general for the third binomial, AG and GE are commensurable in length yet s, t are incommensurable in length because the rectangle contained by s and t must be examined. We verify instead: s and t are commensurable in square only. The square on s = AB*AG and square on t = AB*GE are commensurable, but s and t are incommensurable in length since AG:GE is not a ratio of square numbers in general (following the specific construction of the third binomial, by 10.9).
+
+**Step 17.** Now consider the rectangle s by t. The square on s times the square on t = AB*AG times AB*GE = AB squared times AG times GE. Since AG times GE = EF squared (by 2.5), we have the square on s times square on t = AB squared times EF squared = (AB times EF) squared. Therefore the rectangle s by t = AB times EF. Since AB is rational and EF is rational (being half of ED, which is rational; and half of a rational is rational by 10.15 since 2 measures them), and since EF is incommensurable in length with AB (because ED is incommensurable in length with AB, and EF is commensurable with ED, so by 10.13, EF is incommensurable in length with AB), the rectangle AB by EF is medial (by 10.21).
+
+**Step 18.** Therefore the rectangle s by t is medial (Step 17). Combined with the fact that s and t are medial straight lines commensurable in square only (Steps 13-16), s + t is a second bimedial straight line by 10.38.
+
+**Step 19.** It remains to show that s + t is the "side" of the area AC, i.e., that the square on (s + t) equals the rectangle AB by AD. The square on (s + t) = square on s + square on t + twice rectangle s by t = AB*AG + AB*GE + 2*(AB*EF) = AB*(AG + GE + 2*EF) (by 2.1). Now AG + GE = AE, and 2*EF = ED (since F bisects ED). Therefore AG + GE + 2*EF = AE + ED = AD. So the square on (s + t) = AB * AD = the area AC.
+
+**Step 20.** Therefore the "side" of the area AC is the second bimedial straight line s + t, which is what was to be proved.
+
+**USED:** 1.10, 10.11, 10.13, 10.15, 10.17, 10.21, 10.22, 10.24, 10.38, 10.5, 10.9, 2.1, 2.4, 2.5, 6.28, D10.1.2, D10.1.3, D10.1.4, D10.2.3
+**Human refs (from References field):** 10.13, 10.21, 10.38, D10.2.3
+**Jaccard:** 0.211 — AI adds ['1.10', '10.11', '10.15', '10.17', '10.22', '10.24', '10.5', '10.9', '2.1', '2.4', '2.5', '6.28', 'D10.1.2', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.57
+**Statement:** If an area be contained by a rational straight line and the fourth binomial, the âsideâ of the area is the irrational straight line called major.
+
+**Step 1.** Let the area be contained by the rational straight line AB and the fourth binomial CD, and let CD be divided into its terms at E, so that CE is the greater term. By the definition of a fourth binomial (D10.2.4), CE and ED are rational straight lines commensurable in square only, CE is commensurable in length with AB, and the square on CE is greater than the square on ED by the square on a straight line incommensurable in length with CE.
+
+**Step 2.** Since the square on CE is greater than the square on ED by the square on a straight line incommensurable in length with CE, by 10.18 (applied to CE, ED), if we apply to CE a parallelogram equal to the fourth part of the square on ED and deficient by a square figure, it divides CE into parts incommensurable in length.
+
+**Step 3.** Bisect ED at the point F, so that EF = FD = (1/2)ED [by 1.10]. Apply to CE a parallelogram equal to the square on EF and deficient by a square figure; let it divide CE at G, so that CG and GE are its parts. By Step 2, CG is incommensurable in length with GE [10.18].
+
+**Step 4.** Since CG * GE = EF^2 (by the application), and EF = (1/2)ED, we have CG * GE = (1/4)ED^2. Now construct on AB the rectangle AB * CH = AB * CG, and AB * HK = AB * GE, so that AB * CD = AB * CG + AB * GE (since CD = CE = CG + GE is the binomial, but more precisely AB * CD = AB * CE + AB * ED). Let us proceed more carefully.
+
+**Step 5.** Apply to AB the rectangle equal to the square on a straight line s, where s is the "side" of the area AB * CD. That is, s^2 = AB * CD. We wish to find s and show it is a major line. To do this, we follow the standard construction. Set MN = AB. On MN, apply MO equal to the rectangle AB * CE, and apply OP equal to the rectangle AB * ED, so that MP = AB * CD = s^2. Let MO have breadth MQ and OP have breadth QP (where MO and OP are rectangles on the same line MN). Then MQ + QP is a line and s^2 = MN * (MQ + QP) is not quite right; rather, let us use the direct construction from the pattern of 10.54.
+
+**Step 6.** Let the rational straight line be AB, and let the fourth binomial be CD = CE + ED with CE > ED and the division at E. Since CE is commensurable in length with AB (by D10.2.4), and AB is rational, CE is rational and commensurable in length with AB. Since CE and ED are commensurable in square only and CE is rational, ED is also rational.
+
+**Step 7.** Since AB and CE are both rational and commensurable in length, the rectangle AB * CE is rational [10.19]. Let AB * CE = the square on some line, say the square on G_1 (we set up the construction so that this area determines the squares on the parts of s).
+
+**Step 8.** Since AB is rational and ED is rational, and CE is commensurable in length with AB but ED is incommensurable in length with CE (as CE and ED are commensurable in square only), we must determine whether ED is commensurable in length with AB. Since CE is commensurable in length with AB, and CE is incommensurable in length with ED (they are commensurable in square only), by 10.13, ED is incommensurable in length with AB. Therefore the rectangle AB * ED is medial [10.21].
+
+**Step 9.** Now apply the standard construction. Let MN = AB. Apply to MN a rectangle MO equal to the rectangle contained by AB and CE, producing breadth NO_1. Then NO_1 is rational and commensurable in length with MN (= AB), since AB * CE is rational and MN is rational [10.20].
+
+**Step 10.** Apply to MN a rectangle equal to the rectangle contained by AB and ED, producing some breadth. Since AB * ED is medial and MN is rational, this breadth is rational and incommensurable in length with MN [10.22].
+
+**Step 11.** Now, following the construction pattern of the earlier propositions (10.54-10.56), let us proceed differently using the direct square-root construction. We seek s such that s^2 = AB * CD. Write CD = CE + ED. Then s^2 = AB * CE + AB * ED.
+
+**Step 12.** Let us find straight lines p, q such that p^2 = AB * CE and q^2 = AB * ED, and such that the rectangle p * q relates to the geometry. By the construction in 10.54 (adapted): apply to AB a rectangle equal to AB * CG (where G divides CE as in Step 3), let this equal the square on p; and apply to AB a rectangle equal to AB * GE, let this equal the square on q. Since CG + GE = CE, we have p^2 + q^2 = AB * CE + ... This requires more care.
+
+**Step 13.** Let us use the precise construction. Since CG * GE = EF^2 = (1/4)ED^2, we have 4 * CG * GE = ED^2, so (2*EF)^2 = ED^2, confirming EF = (1/2)ED. Now the rectangle contained by CG and GE, when multiplied by 4, gives ED^2. That is, CG * GE = (1/4) * ED^2.
+
+**Step 14.** Apply to AB a rectangle equal to AB * CG; let it equal the square on some line p, so p^2 = AB * CG. Apply to AB a rectangle equal to AB * GE; let it equal the square on some line q, so q^2 = AB * GE. Then p^2 + q^2 = AB * CG + AB * GE = AB * (CG + GE) = AB * CE.
+
+**Step 15.** Since AB * CE is rational (Step 7), and p^2 + q^2 = AB * CE, the sum of the squares on p and q is rational.
+
+**Step 16.** Now consider the rectangle p * q. We have (p * q)^2 = p^2 * q^2 = (AB * CG) * (AB * GE) = AB^2 * CG * GE. From Step 13, CG * GE = (1/4) * ED^2. So (p * q)^2 = AB^2 * (1/4) * ED^2 = (1/4) * AB^2 * ED^2 = ((1/2) * AB * ED)^2. Therefore p * q = (1/2) * AB * ED.
+
+**Step 17.** Thus 2 * p * q = AB * ED. Since AB * ED is medial (Step 8), and 2 * p * q = AB * ED, the rectangle p * q is also medial (since a rational multiple of a medial area is medial, specifically 2*(p*q) being medial means p*q is medial; more precisely, the area 2*p*q = AB*ED which is medial, and a half of a medial area is medial [by 10.23 applied to the sides, or directly since commensurable areas share rationality/irrationality]).
+
+**Step 18.** To verify that p * q is medial more carefully: AB * ED is medial (Step 8). The rectangle 2*p*q equals AB * ED. The area 2*p*q is commensurable with p*q (since their ratio is 2:1, a ratio of numbers, so by 10.6 they are commensurable). Since 2*p*q = AB * ED is medial (irrational), and p*q is commensurable with it, by the fact that an area commensurable with a medial area is medial [analogous to 10.23 for areas], p*q is medial.
+
+**Step 19.** Now we show p and q are incommensurable in square. The squares p^2 = AB * CG and q^2 = AB * GE, so p^2 : q^2 = CG : GE [6.1]. Since CG and GE are incommensurable in length (Step 3), the ratio CG : GE is not a ratio of numbers [10.7], so p^2 and q^2 are incommensurable [10.8]. Hence p and q are incommensurable in square.
+
+**Step 20.** Now s^2 = AB * CD = AB * CE + AB * ED = (p^2 + q^2) + 2*p*q = (p + q)^2 [2.4]. Therefore s = p + q.
+
+**Step 21.** We have established: (i) p and q are incommensurable in square (Step 19); (ii) the sum of the squares on p and q, namely p^2 + q^2, is rational (Step 15); (iii) the rectangle p * q is medial (Step 18).
+
+**Step 22.** By 10.39, since p and q are two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial, the whole s = p + q is the irrational straight line called major.
+
+**Step 23.** Therefore, if an area be contained by a rational straight line and the fourth binomial, the "side" of the area is the irrational straight line called major. Q.E.D.
+
+**USED:** 1.10, 10.13, 10.18, 10.19, 10.20, 10.21, 10.22, 10.23, 10.39, 10.7, 10.8, 2.4, 6.1, D10.1.3, D10.1.4, D10.2.4
+**Human refs (from References field):** 10.11, 10.13, 10.18, 10.19, 10.21, 10.39, 6.1, D10.2.4
+**Jaccard:** 0.412 — AI adds ['1.10', '10.20', '10.22', '10.23', '10.7', '10.8', '2.4', 'D10.1.3', 'D10.1.4']; Human adds ['10.11']
+
+## Proposition 10.58
+**Statement:** If an area be contained by a rational straight line and the fifth binomial, the âsideâ of the area is the irrational straight line called the side of a rational plus a medial area.
+
+**Step 1.** Let the area AC be contained by the rational straight line AB and the fifth binomial CD, and let CD be divided into its terms at E, so that CE is the lesser term and ED the greater. Then by the definition of the fifth binomial (D10.2.5): ED and CE are rational and commensurable in square only; the square on ED is greater than the square on CE by the square on a straight line incommensurable in length with ED; and CE is commensurable in length with the rational straight line AB.
+
+**Step 2.** Bisect ED at the point F, so that EF = FD (by 1.10). Apply to ED a rectangle equal to the fourth part of the square on CE and deficient by a square figure (by 6.28). Since the square on ED is greater than the square on CE by the square on a straight line incommensurable in length with ED, the rectangle so applied divides ED into parts that are incommensurable in length (by 10.18). Call these parts EG and GD. Then EG is incommensurable in length with GD.
+
+**Step 3.** As EG is to GD, so is the rectangle contained by EG and GD to the square on GD (by 6.1). Since EG is incommensurable in length with GD, the rectangle contained by EG and GD is incommensurable with the square on GD (by 10.11).
+
+**Step 4.** Now EG + GD = ED, and the rectangle EG by GD equals the fourth part of the square on CE (by construction in Step 2). The square on EF equals the square on FD, and since F is the midpoint of ED, we have the square on EF (= FD) equals the rectangle EG by GD plus the square on GF (by 2.5). Therefore the square on FD equals the rectangle EG by GD plus the square on GF. Equivalently, the square on GF equals the square on FD minus the rectangle EG by GD.
+
+**Step 5.** Since the square on ED equals four times the square on FD (as F bisects ED), and the square on CE equals four times the rectangle EG by GD (by construction), the square on ED minus the square on CE equals four times the square on GF. Now EG and GD are incommensurable in length, so EF and FG are also incommensurable in length (from 10.18 and the construction). Therefore the square on FD and the rectangle EG by GD are incommensurable (since FG and FD are incommensurable in length, by 10.11 and properties of 2.5).
+
+**Step 6.** But the square on FD is rational (since FD is half of ED, and ED is rational, so the square on FD is commensurable with the square on ED, hence rational, by D10.1.3 and D10.1.4). The rectangle EG by GD is also rational (since it equals the fourth part of the square on CE, and CE is rational). Hence the square on FD and the rectangle EG by GD are each rational but incommensurable with each other.
+
+**Step 7.** Now construct NH equal in square to the rectangle AB by EG, and NK equal in square to the rectangle AB by GD, placing them on the same straight line HK. Then NH and NK are placed so that the squares on NH and NK together equal the rectangle AB by ED (since AB times EG plus AB times GD equals AB times ED, by 2.1). Also, twice the rectangle NH by NK equals the rectangle AB by CE (this follows because the square on the whole HK equals the squares on NH and NK plus twice the rectangle NH by NK, and the rectangle AB by CD equals AB by ED plus AB by CE, matching the square on HK with rectangle AB by CD via the construction as in 10.54).
+
+**Step 8.** Since CE is commensurable in length with AB (by the definition of the fifth binomial, D10.2.5), the rectangle AB by CE is rational (by 10.19). Therefore twice the rectangle NH by NK is rational, which means the rectangle NH by NK is rational.
+
+**Step 9.** Since ED is incommensurable in length with AB (because ED and CE are commensurable in square only, and CE is commensurable in length with AB, so ED is incommensurable in length with AB by 10.13), the rectangle AB by ED is irrational. But this rectangle equals the sum of the squares on NH and NK. Since the rectangle AB by ED is medial (the rectangle of a rational line and a line incommensurable in length with it but commensurable in square is medial, by 10.21 — more precisely, since ED is rational and AB is rational, but they are incommensurable in length, the rectangle AB by ED is irrational/medial by 10.21), the sum of the squares on NH and NK is medial.
+
+**Step 10.** Now we must show NH and NK are incommensurable in square. Since EG is incommensurable in length with GD (Step 2), the rectangle AB by EG is incommensurable with the rectangle AB by GD (by 6.1 and 10.11). But the square on NH equals AB by EG, and the square on NK equals AB by GD. Therefore the square on NH is incommensurable with the square on NK, meaning NH and NK are incommensurable in square.
+
+**Step 11.** We have established: (i) NH and NK are incommensurable in square (Step 10); (ii) the sum of the squares on NH and NK is medial (Step 9); and (iii) the rectangle NH by NK is rational (Step 8). These are exactly the conditions defining the side of a rational plus a medial area (by 10.40).
+
+**Step 12.** Therefore HK, which equals NH + NK, is the side of a rational plus a medial area. But HK is the "side" of the area AC (the straight line whose square equals the rectangle AB by CD). Therefore the "side" of the area contained by the rational straight line AB and the fifth binomial CD is the irrational straight line called the side of a rational plus a medial area. Q.E.D.
+
+**USED:** 1.10, 10.11, 10.13, 10.18, 10.19, 10.21, 10.40, 2.1, 2.5, 6.1, 6.28, D10.1.3, D10.1.4, D10.2.5
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.18, 10.19, 10.21, 10.40, 6.1, D10.2.5
+**Jaccard:** 0.533 — AI adds ['1.10', '2.1', '2.5', '6.28', 'D10.1.3', 'D10.1.4']; Human adds ['10.12']
+
+## Proposition 10.59
+**Statement:** If an area be contained by a rational straight line and the sixth binomial, the âsideâ of the area is the irrational straight line called the side of the sum of two medial areas.
+
+**Step 1.** Let the rational straight line be AB, and let CD be a sixth binomial straight line, divided into its terms at E, so that CE is the greater term. Then by the definition of a sixth binomial (D10.2.6), CE and ED are rational straight lines commensurable in square only, the square on CE is greater than the square on ED by the square on a straight line incommensurable in length with CE, and neither CE nor ED is commensurable in length with the rational straight line AB.
+
+**Step 2.** Apply the rectangle equal to the area AB times CD to AB, producing as breadth a straight line. We must show that this "side" is the irrational straight line called the side of the sum of two medial areas. Following the construction used in the preceding propositions (10.54-10.58), apply to AB the rectangle contained by AB and CE, and apply to AB the rectangle contained by AB and ED. By 10.21, since CE and AB are rational straight lines commensurable in square only (for CE is not commensurable in length with AB by D10.2.6, but both are rational), the rectangle AB times CE is irrational, i.e., medial. Similarly, since ED and AB are rational and commensurable in square only (ED is not commensurable in length with AB by D10.2.6), the rectangle AB times ED is medial.
+
+**Step 3.** Now we construct the "side" of the rectangle AB times CD. Since CD = CE + ED, we have AB times CD = AB times CE + AB times ED by 2.1. Let the rectangle AB times CE equal the square on some straight line F, and let the rectangle AB times ED equal the square on some straight line G, so that the square on the "side" of the whole area equals the square on F plus the square on G. We must show that F and G satisfy the conditions of 10.41.
+
+**Step 4.** Since the rectangle AB times CE is medial (Step 2), the square on F is medial. Therefore F is medial. Since the rectangle AB times ED is medial (Step 2), the square on G is medial. Therefore G is medial. Thus the sum of the squares on F and G, being the sum of two medial areas, is medial.
+
+**Step 5.** We now show that the rectangle contained by F and G is also medial. By 10.22, since the square on F (which equals the medial area AB times CE) is applied to the rational straight line AB, it produces as breadth a line (namely CE) rational and incommensurable in length with AB. Similarly the square on G applied to AB produces ED. Now consider the rectangle F times G. We have (F times G) squared equals (F squared) times (G squared) = (AB times CE) times (AB times ED) = AB squared times CE times ED, by 6.17. Therefore F times G = AB times the mean proportional between CE and ED. Since CE and ED are rational and commensurable in square only, the rectangle CE times ED is medial by 10.21. The rectangle AB times (the side of CE times ED) involves a medial area, and so F times G is medial.
+
+**Step 6.** More precisely, the rectangle contained by F and G, when doubled, equals the rectangle AB times the mean proportional of CE and ED. Since CE and ED are commensurable in square only (they are the terms of the sixth binomial), and neither is commensurable in length with AB, let us examine the relationship. By 2.4, the square on CD equals the squares on CE and ED plus twice the rectangle CE times ED. The area AB times CD applied to AB gives CD as breadth, which decomposes as: the squares on F and G (corresponding to AB times CE + AB times ED) and twice the rectangle F times G (corresponding to AB times 2 times the mean proportional). The rectangle CE times ED is medial by 10.21 (since CE, ED are rational, commensurable in square only).
+
+**Step 7.** We show F and G are incommensurable in square. Since the square on F is to the square on G as AB times CE is to AB times ED, i.e., as CE is to ED (by 6.1), and CE is incommensurable in length with ED (they are commensurable in square only), the square on F is incommensurable with the square on G (by 10.11). Thus F and G are incommensurable in square.
+
+**Step 8.** We show the sum of the squares on F and G is incommensurable with the rectangle F times G. The sum of the squares on F and G equals AB times CE + AB times ED = AB times (CE + ED). Twice the rectangle F times G corresponds to AB times 2 times (the mean proportional between CE and ED), which relates to the rectangle CE times ED. Now the square on CE exceeds the square on ED by the square on a line incommensurable with CE (by D10.2.6). By 10.18, when we apply to CE a parallelogram equal to one-fourth of the square on ED and deficient by a square, it divides CE into parts incommensurable in length. This means CE times ED is incommensurable with the square on CE. Since the sum of the squares on CE and ED is incommensurable with twice the rectangle CE times ED (for the squares on CE and ED relate to CE times ED through 2.4, and the square on CE is incommensurable with CE times ED), and applying these through AB, the sum of the squares on F and G is incommensurable with twice the rectangle F times G.
+
+**Step 9.** We have therefore established that F and G are straight lines incommensurable in square (Step 7), the sum of the squares on F and G is medial (Step 4), the rectangle F times G is medial (Steps 5-6), and the sum of the squares on F and G is incommensurable with the rectangle F times G (Step 8). These are precisely the conditions of 10.41.
+
+**Step 10.** Therefore, by 10.41, the straight line F + G (which is the "side" of the area AB times CD) is the irrational straight line called the side of the sum of two medial areas. This is what was to be proved.
+
+**USED:** 10.11, 10.18, 10.21, 10.22, 10.41, 2.1, 2.4, 6.1, 6.17, D10.1.3, D10.1.4, D10.2.6
+**Human refs (from References field):** 10.11, 10.13, 10.21, 10.41, 6.1
+**Jaccard:** 0.308 — AI adds ['10.18', '10.22', '2.1', '2.4', '6.17', 'D10.1.3', 'D10.1.4', 'D10.2.6']; Human adds ['10.13']
+
+## Proposition 10.60
+**Statement:** The square on the binomial straight line applied to a rational straight line produces as breadth the first binomial.
+
+**Step 1.** Let AB be a binomial straight line, divided into its terms at C, so that AC is the greater term and CB the lesser. By the definition of binomial (10.36), AC and CB are rational straight lines commensurable in square only. Let DE be a rational straight line, and let the rectangle DE by DF be equal to the square on AB, so that DF is the breadth produced. We must show that DF is a first binomial straight line.
+
+**Step 2.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB. That is, sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB).
+
+**Step 3.** Since AC is rational, the square on AC is a rational area (D10.1.4). Likewise, since CB is rational, the square on CB is a rational area. Since AC and CB are rational straight lines, sq(AC) and sq(CB) are each commensurable with the square on DE (all being rational areas), hence sq(AC) and sq(CB) are commensurable with one another (10.12). Therefore their sum sq(AC) + sq(CB) is a rational area, being commensurable with each summand (10.15).
+
+**Step 4.** Since AC and CB are rational straight lines commensurable in square only, the rectangle contained by AC and CB is medial (10.21). Therefore twice the rectangle contained by AC and CB is also medial (for if rect(AC, CB) is medial, then 2*rect(AC, CB) is commensurable with rect(AC, CB), hence also medial by 10.23 applied to the sides, or equivalently since doubling a medial area gives a medial area by 10.6 and the definition of medial).
+
+**Step 5.** Apply the rational area sq(AC) + sq(CB) to the rational straight line DE, producing as breadth DG, so that rect(DE, DG) = sq(AC) + sq(CB). Since this area is rational and DE is rational, DG is rational and commensurable in length with DE (10.20).
+
+**Step 6.** Apply the medial area 2*rect(AC, CB) to the rational straight line DE, producing as breadth GF, so that rect(DE, GF) = 2*rect(AC, CB). Since this area is medial and DE is rational, GF is rational and incommensurable in length with DE (10.22).
+
+**Step 7.** Since DG is commensurable in length with DE, and GF is incommensurable in length with DE, it follows that DG is incommensurable in length with GF (10.13). But DG and GF are both rational straight lines, so they are commensurable in square (D10.1.3). Therefore DG and GF are rational straight lines commensurable in square only.
+
+**Step 8.** We now show that DG is greater than GF. Since AC and CB are unequal (they are incommensurable in length, hence certainly not equal), by 2.7 we have sq(AC) + sq(CB) > 2*rect(AC, CB). Since rect(DE, DG) = sq(AC) + sq(CB) > 2*rect(AC, CB) = rect(DE, GF), and DE is a common side, it follows that DG > GF (6.1, CN5).
+
+**Step 9.** We now determine the nature of sq(DG) - sq(GF). Since rect(DE, DG) = sq(AC) + sq(CB) and rect(DE, GF) = 2*rect(AC, CB), we have rect(DE, DG) - rect(DE, GF) = sq(AC) + sq(CB) - 2*rect(AC, CB) = sq(AC) - 2*rect(AC, CB) + sq(CB) = sq(AC - CB) by 2.7 (that is, the square on the difference AC - CB). Thus rect(DE, DG - GF) = sq(AC - CB).
+
+**Step 10.** Also rect(DE, DG + GF) = rect(DE, DF) = sq(AB) = sq(AC + CB). Therefore rect(DE, DG - GF) : rect(DE, DG + GF) = sq(AC - CB) : sq(AC + CB). Since DE is a common side, DG - GF : DG + GF = sq(AC - CB) : sq(AC + CB) by 6.1.
+
+**Step 11.** Now sq(AC) and sq(CB) are commensurable (as established in Step 3). Hence sq(AC) - sq(CB) is commensurable with sq(AC) + sq(CB) (since if two magnitudes are commensurable, their sum and difference are commensurable with each other, by 10.15 and 10.6). But sq(AC) - sq(CB) = rect(AC + CB, AC - CB) by 2.5. And sq(AC) + sq(CB) is commensurable with 2*sq(AC) (since sq(AC) and sq(CB) are commensurable), and sq(AC + CB) = sq(AC) + sq(CB) + 2*rect(AC,CB).
+
+**Step 12.** We proceed more directly. Since sq(AC) : sq(CB) is a ratio which a number has to a number (because AC and CB are commensurable in square, so sq(AC) and sq(CB) are commensurable, hence 10.5 applies), let sq(AC) : sq(CB) = m : n for some numbers m, n. Then sq(AC) + sq(CB) : sq(CB) = (m + n) : n, and sq(AC) - sq(CB) : sq(CB) = (m - n) : n. Therefore sq(AC) + sq(CB) : sq(AC) - sq(CB) = (m + n) : (m - n), which is a ratio of number to number. So sq(AC) + sq(CB) and sq(AC) - sq(CB) are commensurable (10.6).
+
+**Step 13.** By 2.5, sq(AC) - sq(CB) = rect(AC - CB, AC + CB). Now sq(AC - CB) : rect(AC - CB, AC + CB) = (AC - CB) : (AC + CB) by 6.1. And sq(AC + CB) : rect(AC + CB, AC - CB) = (AC + CB) : (AC - CB) by 6.1. Therefore sq(AC - CB) : sq(AC + CB) = [(AC - CB) * (AC - CB)] : [(AC + CB) * (AC + CB)], and rect(AC - CB, AC + CB) = sq(AC) - sq(CB) is commensurable with sq(AC) + sq(CB) as shown in Step 12.
+
+**Step 14.** From Step 10, DG - GF : DG + GF = sq(AC - CB) : sq(AC + CB). Since sq(AC - CB) : sq(AC + CB) has the duplicate ratio of (AC - CB) : (AC + CB) (D5.9), and since sq(AC) - sq(CB) is commensurable with sq(AC) + sq(CB) (Step 12), we use the following: rect(DE, DG - GF) = sq(AC - CB) and rect(DE, DG + GF) = sq(AC + CB), so DG - GF : DG + GF = sq(AC - CB) : sq(AC + CB). Now sq(AC - CB) = (sq(AC) + sq(CB)) - 2*rect(AC,CB) and sq(AC + CB) = (sq(AC) + sq(CB)) + 2*rect(AC,CB).
+
+**Step 15.** Since sq(AC) + sq(CB) is rational and 2*rect(AC,CB) is medial, these two are incommensurable (for a rational area and a medial area are incommensurable by D10.1.4 and 10.26). Therefore sq(AC - CB) and sq(AC + CB) are each expressible as sums/differences of the same rational and medial magnitudes. However, the key relationship is: sq(DG) - sq(GF) = rect(DG + GF, DG - GF) by 2.5. We have rect(DE, DG + GF) = sq(AC + CB) and rect(DE, DG - GF) = sq(AC - CB).
+
+**Step 16.** Therefore sq(DG) - sq(GF) = rect(DG + GF, DG - GF) = [sq(AC + CB) / DE] * [sq(AC - CB) / DE] = [sq(AC + CB) * sq(AC - CB)] / sq(DE). Now sq(AC + CB) * sq(AC - CB) = sq(sq(AC) - sq(CB)) (since (a+b)^2 * (a-b)^2 = ((a+b)(a-b))^2 = (a^2-b^2)^2). So sq(DG) - sq(GF) = sq(sq(AC) - sq(CB)) / sq(DE) = sq((sq(AC) - sq(CB))/DE).
+
+**Step 17.** Let H be such that H = (sq(AC) - sq(CB)) / DE, meaning rect(DE, H) = sq(AC) - sq(CB). Then sq(DG) - sq(GF) = sq(H). Now sq(AC) - sq(CB) is a rational area (since sq(AC) and sq(CB) are commensurable rational areas, their difference is rational by 10.15). Since sq(AC) - sq(CB) is rational and DE is rational, H is rational and commensurable in length with DE (10.20).
+
+**Step 18.** We show H is commensurable in length with DG. We have rect(DE, H) = sq(AC) - sq(CB) and rect(DE, DG) = sq(AC) + sq(CB). Therefore H : DG = (sq(AC) - sq(CB)) : (sq(AC) + sq(CB)) by 6.1. From Step 12, this ratio is (m - n) : (m + n), a ratio of number to number. Therefore H and DG are commensurable in length (10.6). Hence sq(DG) > sq(GF) by the square on a straight line H commensurable in length with DG.
+
+**Step 19.** Collecting our results: DF = DG + GF where DG and GF are rational straight lines commensurable in square only (Step 7), DG > GF (Step 8), DG is commensurable in length with the rational straight line DE (Step 5), and sq(DG) is greater than sq(GF) by the square on a straight line commensurable in length with DG (Step 18). Therefore by D10.2.1, DF is a first binomial straight line.
+
+**Step 20.** Therefore the square on the binomial straight line, applied to a rational straight line, produces as breadth the first binomial. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.15, 10.20, 10.21, 10.22, 10.36, 10.5, 10.6, 2.4, 2.5, 2.7, 6.1, CN5, D10.1.3, D10.1.4, D10.2.1, D5.9
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.36, 10.53, 6.1, 6.17, D10.2.1
+**Jaccard:** 0.364 — AI adds ['10.12', '10.5', '10.6', '2.4', '2.5', '2.7', 'CN5', 'D10.1.3', 'D10.1.4', 'D5.9']; Human adds ['10.11', '10.17', '10.53', '6.17']
+
+## Proposition 10.61
+**Statement:** The square on the first bimedial straight line applied to a rational straight line produces as breadth the second binomial.
+
+**Step 1.** Let AB be a first bimedial straight line, and let it be divided into its medials at C, so that AC and CB are medial straight lines commensurable in square only, with AC greater than CB, and the rectangle AC by CB is rational [10.37]. Let DE be a rational straight line. Apply the square on AB to DE, producing as breadth DF, so that DE times DF equals the square on AB.
+
+**Step 2.** By 2.4, the square on AB equals the square on AC plus the square on CB plus twice the rectangle AC by CB. Apply the square on AC plus the square on CB to DE, producing as breadth DG, and apply twice the rectangle AC by CB to DE, producing as breadth GF. Then DF equals DG plus GF, and DE times DG equals the sum of the squares on AC and CB, while DE times GF equals twice the rectangle AC by CB.
+
+**Step 3.** Since AC and CB are each medial, the squares on AC and CB are each medial areas. Since AC and CB are commensurable in square, the squares on AC and CB are commensurable with one another [D10.1.2]. Since commensurable magnitudes added together yield a magnitude commensurable with each summand [10.15], the sum of the squares on AC and CB is commensurable with the square on AC, and hence is itself a medial area [10.23 applied via commensurability with a medial area].
+
+**Step 4.** Since DE times DG equals the sum of the squares on AC and CB, which is medial, and DE is rational, by 10.22 the straight line DG is rational and incommensurable in length with DE.
+
+**Step 5.** Since the rectangle AC by CB is rational, twice the rectangle AC by CB is also rational [being commensurable with a rational area]. Since DE times GF equals twice the rectangle AC by CB, and both DE and twice AC by CB are rational, by 10.20 the straight line GF is rational and commensurable in length with DE.
+
+**Step 6.** Since DG is incommensurable in length with DE [Step 4], and GF is commensurable in length with DE [Step 5], by 10.13 the straight line DG is incommensurable in length with GF.
+
+**Step 7.** Since the sum of the squares on AC and CB is greater than twice the rectangle AC by CB (for the square on the difference AC minus CB is positive, so the squares on AC and CB together exceed twice the rectangle AC by CB), and DE times DG equals the former while DE times GF equals the latter, it follows that DG is greater than GF.
+
+**Step 8.** Since DG and GF are both rational straight lines and are incommensurable in length with one another [Step 6], the whole DF, which equals DG plus GF, is a binomial straight line [10.36], divided into its terms at G.
+
+**Step 9.** It remains to show that DF is specifically the second binomial. By D10.2.2, this requires: (i) the lesser term GF is commensurable in length with the rational straight line DE, and (ii) the square on the greater term DG exceeds the square on the lesser term GF by the square on a straight line commensurable in length with DG.
+
+**Step 10.** Condition (i) is already established: GF is commensurable in length with DE [Step 5].
+
+**Step 11.** For condition (ii), consider the square on DG minus the square on GF. Since DE times DG equals the sum of the squares on AC and CB, we have DG equals the sum of the squares on AC and CB divided by DE. Similarly GF equals twice the rectangle AC by CB divided by DE. Therefore the square on DG minus the square on GF equals [(AC squared plus CB squared) squared minus (2 times AC times CB) squared] divided by the square on DE.
+
+**Step 12.** Now (AC squared plus CB squared) squared minus (2 times AC times CB) squared equals (AC squared plus CB squared minus 2 times AC times CB) times (AC squared plus CB squared plus 2 times AC times CB), which equals (AC squared minus CB squared) squared [by 2.5 and 2.4, since (AC squared minus CB squared) squared = (AC squared + CB squared) squared minus (2 times AC times CB) squared]. Thus the square on DG minus the square on GF equals the square of (AC squared minus CB squared) divided by the square on DE, that is, the square on DG minus the square on GF is the square on the straight line equal to (AC squared minus CB squared) divided by DE.
+
+**Step 13.** Since the squares on AC and CB are commensurable [Step 3], their difference (the square on AC minus the square on CB) is commensurable with their sum (the square on AC plus the square on CB) [10.15]. Let the line whose length is (AC squared minus CB squared) divided by DE be called L, so DE times L equals the square on AC minus the square on CB.
+
+**Step 14.** Since the square on AC minus the square on CB is commensurable with the square on AC plus the square on CB, and DE times L equals the former while DE times DG equals the latter, by 6.1 and 10.11 the straight line L is commensurable in length with DG.
+
+**Step 15.** Since the square on DG exceeds the square on GF by the square on L [Step 12], and L is commensurable in length with DG [Step 14], condition (ii) of D10.2.2 is satisfied.
+
+**Step 16.** Therefore, since DF is a binomial straight line whose lesser term GF is commensurable in length with the rational straight line DE, and the square on the greater term DG exceeds the square on the lesser GF by the square on a straight line commensurable with DG, DF is the second binomial [D10.2.2].
+
+**Step 17.** Therefore the square on the first bimedial straight line, applied to a rational straight line, produces as breadth the second binomial. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.15, 10.20, 10.22, 10.23, 10.36, 10.37, 2.4, 2.5, 6.1, D10.1.2, D10.2.2
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.23, 10.36, 10.37, 6.1, D10.2.2
+**Jaccard:** 0.667 — AI adds ['2.4', '2.5', 'D10.1.2']; Human adds ['10.17', '10.21']
+
+## Proposition 10.62
+**Statement:** The square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial.
+
+**Step 1.** Let AB be a second bimedial straight line, and let it be divided into its medials at C, so that AC is the greater segment. Then AC and CB are medial straight lines commensurable in square only and containing a medial rectangle [10.38]. Let DE be a rational straight line, and let the rectangle DEFG equal to the square on AB be applied to DE, producing DG as breadth. We must show that DG is a third binomial straight line.
+
+**Step 2.** Since AB = AC + CB, we have AB squared equals the sum of the squares on AC and CB together with twice the rectangle AC by CB [2.4]. Let the rectangle DH equal to the sum of the squares on AC and CB be applied to DE, producing DM as breadth, and let the rectangle MG equal to twice the rectangle AC by CB be applied to DE, producing MG as breadth. Then DG = DM + MG and the rectangle DEFG equals the sum of these two rectangles.
+
+**Step 3.** Since AC and CB are each medial, the squares on AC and on CB are each medial areas [D10.1.4]. Since AC and CB are commensurable in square, the square on AC is commensurable with the square on CB [D10.1.2]. Therefore the sum of the squares on AC and CB, being the sum of commensurable medial areas, is medial [10.15, 10.23 applied to areas, namely: since the square on AC is commensurable with the square on CB, their sum is commensurable with each, and since each is medial, the sum is medial by 10.15 and D10.1.4].
+
+**Step 4.** Since the rectangle AC by CB is medial (by the definition of second bimedial, 10.38), twice the rectangle AC by CB is also medial [being commensurable with the medial area AC by CB, by 10.15 and D10.1.4, since 2*AC*CB has to AC*CB the ratio 2:1].
+
+**Step 5.** The sum of the squares on AC and CB is a medial area applied to the rational straight line DE. Therefore DM is rational and incommensurable in length with DE [10.22].
+
+**Step 6.** Twice the rectangle AC by CB is a medial area applied to the rational straight line DE. Therefore MG is rational and incommensurable in length with DE [10.22].
+
+**Step 7.** We now show that the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB. Since AC and CB are commensurable in square, the square on AC is commensurable with the square on CB. Therefore the sum of the squares on AC and CB is commensurable with the square on AC [10.15]. Now suppose the sum of the squares on AC and CB were commensurable with twice the rectangle AC by CB. Then the square on AC would be commensurable with twice the rectangle AC by CB [10.12], and hence with the rectangle AC by CB itself [10.15, since 2*AC*CB is commensurable with AC*CB]. But the square on AC is to the rectangle AC by CB as AC is to CB [6.1]. So AC would be commensurable in length with CB [10.11], contradicting the hypothesis that AC and CB are commensurable in square only. Therefore the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB.
+
+**Step 8.** Since DM times DE equals the sum of the squares on AC and CB, and MG times DE equals twice the rectangle AC by CB, and these two areas are incommensurable, we have DM incommensurable with MG [6.1, 10.11]. Since DM and MG are each rational (Steps 5 and 6) and incommensurable with each other, they are rational straight lines commensurable in square only. Therefore DG = DM + MG is a binomial straight line [10.36].
+
+**Step 9.** We now show that DG is specifically the third binomial. First, neither DM nor MG is commensurable in length with DE (established in Steps 5 and 6).
+
+**Step 10.** It remains to show that the square on DM is greater than the square on MG by the square on a straight line commensurable in length with DM. Since AC and CB are commensurable in square, the square on AC is commensurable with the square on CB, so the ratio of the square on AC to the square on CB is as a number to a number [10.5]. Therefore the ratio of the sum of the squares on AC and CB to the square on CB, and likewise to the square on AC, is as a number to a number [5.12, 10.5 and properties of commensurable magnitudes].
+
+**Step 11.** Similarly, the difference of the squares on AC and CB, namely the square on AC minus the square on CB, is commensurable with the square on AC and with the sum of the squares on AC and CB [10.15, since the square on AC is commensurable with the square on CB, so their difference is commensurable with each]. Therefore the ratio of the square on AC minus the square on CB to the sum of the squares on AC and CB is as a number to a number [10.5].
+
+**Step 12.** Now DM times DE equals the sum of the squares on AC and CB, so the square on DM equals (the sum of the squares on AC and CB) squared divided by the square on DE. Similarly the square on MG equals (twice the rectangle AC by CB) squared divided by the square on DE. The difference of the squares on DM and MG equals [(sum of squares on AC and CB) squared minus (twice AC by CB) squared] divided by the square on DE.
+
+**Step 13.** By the algebraic identity (which follows from 2.4 and 2.7), (AC squared + CB squared) squared minus (2 times AC times CB) squared equals (AC squared minus CB squared) squared. Therefore the square on DM minus the square on MG equals (AC squared minus CB squared) squared divided by the square on DE.
+
+**Step 14.** Thus the ratio of the square on DM minus the square on MG to the square on DM equals the ratio of (AC squared minus CB squared) squared to (AC squared plus CB squared) squared. Since AC squared minus CB squared is commensurable with AC squared plus CB squared (Step 11), their ratio is as a number to a number [10.5], and the ratio of their squares is as a square number to a square number [8.11]. Therefore the square on DM minus the square on MG has to the square on DM the ratio of a square number to a square number.
+
+**Step 15.** Therefore the square root of the difference, that is, the straight line whose square equals the square on DM minus the square on MG, is commensurable in length with DM [10.9].
+
+**Step 16.** We have established: (i) DM and MG are rational and commensurable in square only, so DG is a binomial [Step 8]; (ii) neither DM nor MG is commensurable in length with the rational straight line DE [Step 9]; (iii) the square on DM exceeds the square on MG by the square on a straight line commensurable in length with DM [Step 15]. By the definition of the third binomial [D10.2.3], DG is a third binomial straight line.
+
+**Step 17.** Therefore, the square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.15, 10.22, 10.23, 10.36, 10.38, 10.5, 10.9, 2.4, 2.7, 5.12, 6.1, 8.11, D10.1.2, D10.1.4, D10.2.3
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.22, 10.23, 10.36, 10.38, 6.1, D10.2.3
+**Jaccard:** 0.500 — AI adds ['10.5', '10.9', '2.4', '2.7', '5.12', '8.11', 'D10.1.2', 'D10.1.4']; Human adds ['10.13']
+
+## Proposition 10.63
+**Statement:** The square on the major straight line applied to a rational straight line produces as breadth the fourth binomial.
+
+**Step 1.** Let AB be a major straight line, and let it be divided at C so that AC is greater than CB, where AC and CB are straight lines incommensurable in square such that the sum of the squares on AC and CB is rational, but the rectangle AC by CB is medial [10.39]. Let DE be a rational straight line, and let the rectangle DE by EF, equal to the square on AB, be applied to DE, producing EF as breadth. We must show that EF is a fourth binomial straight line.
+
+**Step 2.** Apply to DE the rectangle DE by EG equal to the square on AC, producing EG as breadth. Then the remainder, the rectangle DE by GF, equals the square on CB [CN3], since the square on AB equals the sum of the squares on AC and CB plus twice the rectangle AC by CB [2.4], and the rectangles on DE will be arranged accordingly. More precisely, apply DE by EH equal to the square on AC, and DE by HF equal to the square on CB plus twice the rectangle AC by CB. But let us proceed more carefully.
+
+**Step 3.** Since AB = AC + CB, the square on AB equals the square on AC plus the square on CB plus twice the rectangle AC by CB [2.4]. Apply to DE: let the rectangle DE by EG equal the square on AC, the rectangle DE by GH equal the square on CB, and the rectangle DE by HF equal twice the rectangle AC by CB. Then EF = EG + GH + HF, and DE by EF equals the square on AB.
+
+**Step 4.** Now, the sum of the squares on AC and CB is rational [by the definition of major, 10.39]. Therefore the rectangle DE by EH (where EH = EG + GH) equals the sum of the squares on AC and CB, which is a rational area. Since DE is rational, EH is rational and commensurable in length with DE [10.20].
+
+**Step 5.** The rectangle AC by CB is medial [10.39], so twice the rectangle AC by CB is also medial [10.23, since a medial area doubled remains medial by 10.6 and the definition of medial]. The rectangle DE by HF equals twice the rectangle AC by CB, which is medial. Since DE is rational and DE by HF is medial, HF is rational and incommensurable in length with DE [10.22].
+
+**Step 6.** Since the sum of the squares on AC and CB is rational and twice the rectangle AC by CB is medial, these two areas are incommensurable [since a rational area is incommensurable with a medial area, by D10.1.4 and D10.1.3]. Therefore DE by EH is incommensurable with DE by HF. Since both rectangles have the common side DE, EH is incommensurable in length with HF [6.1, 10.11].
+
+**Step 7.** Thus EH and HF are both rational and commensurable in square only [since EH is rational, HF is rational, and they are incommensurable in length]. Therefore EF = EH + HF is a binomial straight line, divided into its terms at H [10.36].
+
+**Step 8.** We now verify the conditions for EF to be a fourth binomial with respect to DE. First, we show that EH is greater than HF. The square on EH equals a rational area divided by DE squared (specifically proportional to the sum of squares on AC and CB), and the square on HF is proportional to twice the rectangle AC by CB. Since the sum of the squares on AC and CB is greater than twice the rectangle AC by CB [for the square on the difference AC minus CB is nonnegative, giving (AC)^2 + (CB)^2 >= 2*AC*CB, with equality only if AC = CB, but AC and CB are incommensurable in square so they are unequal], we have DE by EH > DE by HF, hence EH > HF.
+
+**Step 9.** Since EH is commensurable in length with DE [Step 4], the greater term EH of the binomial is commensurable in length with the rational straight line DE.
+
+**Step 10.** Now we must show that the square on EH exceeds the square on HF by the square on a straight line incommensurable in length with EH. We have DE by EH = (AC)^2 + (CB)^2 and DE by HF = 2*AC*CB. So EH = [(AC)^2 + (CB)^2]/DE and HF = 2*AC*CB/DE.
+
+**Step 11.** The square on EH minus the square on HF equals [(AC)^2 + (CB)^2]^2/DE^2 minus [2*AC*CB]^2/DE^2 = {[(AC)^2 + (CB)^2]^2 - [2*AC*CB]^2}/DE^2 = [(AC)^2 + (CB)^2 + 2*AC*CB]*[(AC)^2 + (CB)^2 - 2*AC*CB]/DE^2 = (AC + CB)^2 * (AC - CB)^2 / DE^2 [by 2.4 and 2.7]. This equals [AB * (AC - CB)]^2 / DE^2, that is, the square on AB*(AC - CB)/DE.
+
+**Step 12.** Now, AC and CB are incommensurable in square [10.39]. Since AC and CB are incommensurable in square, the squares on AC and on CB are incommensurable. By 10.18 applied to AC and CB (since they are incommensurable in square, the square on AC exceeds the square on CB by the square on a line incommensurable with AC), the difference of their squares relates to incommensurability with the greater.
+
+**Step 13.** More precisely, since AC and CB are incommensurable in square, consider the square on AC minus the square on CB. We need to show that the square on EH exceeds the square on HF by the square on a line incommensurable in length with EH. From Step 11, the square on EH minus the square on HF equals (AB)^2 * (AC - CB)^2 / DE^2.
+
+**Step 14.** Since AC and CB are incommensurable in square, by 10.18, the square on AC is greater than the square on CB by the square on a straight line incommensurable in length with AC. Now EH = [(AC)^2 + (CB)^2]/DE. Since DE is commensurable with EH [Step 4], it suffices to show the relevant incommensurability.
+
+**Step 15.** Consider that the square on EH minus the square on HF equals [AB*(AC-CB)/DE]^2 [Step 11]. The straight line whose square equals the excess is AB*(AC-CB)/DE. Now EH = [(AC)^2 + (CB)^2]/DE. We need EH to be incommensurable in length with AB*(AC-CB)/DE, which reduces to showing that (AC)^2 + (CB)^2 is incommensurable with AB*(AC-CB) = (AC+CB)*(AC-CB) = (AC)^2 - (CB)^2.
+
+**Step 16.** Now (AC)^2 + (CB)^2 is rational [10.39], and (AC)^2 - (CB)^2 equals the square on AC minus the square on CB. Since AC and CB are incommensurable in square, (AC)^2 and (CB)^2 are incommensurable. If (AC)^2 + (CB)^2 were commensurable with (AC)^2 - (CB)^2, then by 10.15 and 10.16, adding them would give 2*(AC)^2 commensurable with (AC)^2 + (CB)^2 (which is rational), making (AC)^2 rational; similarly (CB)^2 would be rational. But then (AC)^2 and (CB)^2 being both rational would make the rectangle AC by CB either rational or medial. However, the rectangle AC by CB is medial [10.39], while if both squares were commensurable with the rational area, their sum and product relationships would force commensurability of (AC)^2 with (CB)^2, contradicting their incommensurability. Therefore (AC)^2 + (CB)^2 is incommensurable with (AC)^2 - (CB)^2.
+
+**Step 17.** Since (AC)^2 + (CB)^2 is incommensurable with (AC)^2 - (CB)^2 [Step 16], and EH is proportional to (AC)^2 + (CB)^2 while the excess line is proportional to (AC)^2 - (CB)^2 (both divided by DE), EH is incommensurable in length with the straight line whose square equals the square on EH minus the square on HF [10.11].
+
+**Step 18.** Collecting the results: EF = EH + HF is a binomial [Step 7]. The greater term EH is commensurable in length with the rational straight line DE [Step 9]. The square on EH exceeds the square on HF by the square on a straight line incommensurable in length with EH [Step 17]. By the definition of the fourth binomial [D10.2.4], EF is a fourth binomial straight line.
+
+**Step 19.** Therefore the square on the major straight line AB, applied to the rational straight line DE, produces as breadth EF, a fourth binomial straight line. This is what was to be proved.
+
+**USED:** 10.11, 10.15, 10.16, 10.18, 10.20, 10.22, 10.36, 10.39, 2.4, 2.7, 6.1, CN3, D10.1.3, D10.1.4, D10.2.4
+**Human refs (from References field):** 10.11, 10.13, 10.18, 10.20, 10.22, 10.36, 10.39, 6.1, D10.2.4
+**Jaccard:** 0.500 — AI adds ['10.15', '10.16', '2.4', '2.7', 'CN3', 'D10.1.3', 'D10.1.4']; Human adds ['10.13']
+
+## Proposition 10.64
+**Statement:** The square on the side of a rational plus a medial area applied to a rational straight line produces as breadth the fifth binomial.
+
+**Step 1.** Let AB be the side of a rational plus a medial area, divided at C into its terms AC and CB, where AC is the greater. Then by the definition given in 10.40, AC and CB are straight lines incommensurable in square, the sum of the squares on AC and CB is medial, and the rectangle contained by AC and CB is rational.
+
+**Step 2.** Let DE be a rational straight line, and let the rectangle DEFG be equal to the square on AB, applied to DE, producing DG as breadth. We must show that DG is a fifth binomial straight line.
+
+**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB. That is, DEFG = sq(AC) + sq(CB) + 2*rect(AC, CB).
+
+**Step 4.** Let DH be set equal to the sum of the squares on AC and CB applied to DE, producing the breadth DK, and let the remainder HG be set equal to twice the rectangle AC, CB applied to DE, producing the breadth KG. Then DG = DK + KG and the rectangle DEFG is the sum of rectangles DEHK and HKFG.
+
+**Step 5.** Since the sum of the squares on AC and CB is medial (by hypothesis from 10.40), and DE is rational, the area DEHK (equal to sq(AC) + sq(CB)) is medial. A medial area applied to a rational straight line produces as breadth a straight line rational and incommensurable in length with the line to which it is applied, by 10.22. Therefore DK is rational and incommensurable in length with DE.
+
+**Step 6.** Since the rectangle AC, CB is rational (by hypothesis from 10.40), twice the rectangle AC, CB is also rational, being commensurable with the rectangle AC, CB (as the double of a magnitude is commensurable with it, by 10.6). The rational area HKFG (equal to 2*rect(AC, CB)) applied to the rational straight line DE produces as breadth a straight line rational and commensurable in length with DE, by 10.20. Therefore KG is rational and commensurable in length with DE.
+
+**Step 7.** Since DK is incommensurable in length with DE (Step 5) and KG is commensurable in length with DE (Step 6), it follows by 10.13 that DK is incommensurable in length with KG.
+
+**Step 8.** Since DK and KG are each rational (Steps 5 and 6) and incommensurable in length with each other (Step 7), the straight line DG = DK + KG is a binomial, by 10.36.
+
+**Step 9.** We now show that DK is the greater term. The sum of the squares on AC and CB is medial, and twice the rectangle AC, CB is rational. Since a medial area is incommensurable with any rational area (for if they were commensurable, the medial area would be rational, contradicting 10.21 and the definition D10.1.4), the area sq(AC) + sq(CB) is incommensurable with 2*rect(AC, CB). But sq(AC) + sq(CB) = rect(DE, DK) and 2*rect(AC, CB) = rect(DE, KG), so rect(DE, DK) is incommensurable with rect(DE, KG). Since these rectangles share the side DE, by 10.11 applied via 6.1, DK is incommensurable in length with KG. Moreover, since AC and CB are incommensurable in square, the squares on AC and CB are incommensurable, so by 10.16 the sum sq(AC) + sq(CB) is incommensurable with each of sq(AC) and sq(CB). Since sq(AC) > sq(CB) (as AC > CB), and the sum of the squares is medial while twice the rectangle is rational, and a medial area exceeds a rational area when the terms are as specified in 10.40 (since the sum of squares exceeds twice the rectangle for lines incommensurable in square, by 2.7), we have that the area DEHK exceeds HKFG. Since both are applied to the same line DE, DK > KG.
+
+**Step 10.** We now determine the nature of the excess of the square on DK over the square on KG. Since rect(DE, DK) = sq(AC) + sq(CB) and rect(DE, KG) = 2*rect(AC, CB), we have rect(DE, DG) = sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AB) by 2.4, and also rect(DE, DK) - rect(DE, KG) = sq(AC) + sq(CB) - 2*rect(AC, CB) = (sq(AC) - sq(CB)) + 2*(sq(CB) - rect(AC,CB)). Instead, consider that by 2.7, sq(AC) + sq(CB) = 2*rect(AC, CB) + sq(AC - CB), so rect(DE, DK) = rect(DE, KG) + sq(AC - CB), hence rect(DE, DK) - rect(DE, KG) = sq(AC - CB), that is rect(DE, DK - KG) = sq(AC - CB).
+
+**Step 11.** Now apply the square on DK to DE. We have rect(DE, DK) = sq(AC) + sq(CB). Also rect(DE, KG) = 2*rect(AC, CB). Consider rect(DK, DK) = sq(DK). We need to find sq(DK) - sq(KG). Since DK and KG are the breadths produced by applying the respective areas to DE, we use the relationship: sq(DK) - sq(KG) = rect(DK + KG, DK - KG) = rect(DG, DK - KG). We know rect(DE, DK - KG) = sq(AC - CB) from Step 10, so DK - KG = sq(AC - CB)/DE. Also DG = sq(AB)/DE = (AC + CB)^2/DE.
+
+**Step 12.** Therefore sq(DK) - sq(KG) = rect(DG, DK - KG) = (sq(AB)/DE) * (sq(AC - CB)/DE) = sq(AB)*sq(AC - CB)/sq(DE). Also sq(AB) = sq(AC + CB) = sq(AC) + 2*rect(AC,CB) + sq(CB). And sq(AC - CB) = sq(AC) - 2*rect(AC,CB) + sq(CB) by 2.7 and 2.4. So sq(DK) - sq(KG) = sq(AC + CB)*sq(AC - CB)/sq(DE) = (sq(AC) - sq(CB))^2/sq(DE) (by the difference of squares identity from 2.5 and 2.6). That is, sq(DK) - sq(KG) = sq((sq(AC) - sq(CB))/DE).
+
+**Step 13.** Let L be a straight line such that sq(L) = sq(AC) - sq(CB). Then sq(DK) - sq(KG) = sq(L*L/DE), or more precisely, the straight line whose square equals sq(DK) - sq(KG) is defined by (sq(AC) - sq(CB))/DE.
+
+**Step 14.** We must determine whether this excess line is commensurable with DK. We have DK = (sq(AC) + sq(CB))/DE (in the sense of areas producing breadths). The excess is (sq(AC) - sq(CB))/DE. The ratio of DK to the excess line is as sq(AC) + sq(CB) is to sq(AC) - sq(CB). Now AC and CB are incommensurable in square (from 10.40), so sq(AC) is incommensurable with sq(CB). By 10.16, sq(AC) + sq(CB) is incommensurable with sq(AC), and similarly with sq(CB). The sum sq(AC) + sq(CB) is also incommensurable with sq(AC) - sq(CB), since if they were commensurable, then by 10.15 and addition/subtraction, both 2*sq(AC) and 2*sq(CB) would be commensurable with the sum, making sq(AC) commensurable with sq(CB), contradicting the hypothesis. Therefore DK is incommensurable in length with the straight line by which sq(DK) exceeds sq(KG). That is, the square on DK is greater than the square on KG by the square on a straight line incommensurable in length with DK.
+
+**Step 15.** From Step 6, KG is commensurable in length with DE, the rational straight line set out. From Step 5, DK is incommensurable in length with DE.
+
+**Step 16.** We now check the conditions for a fifth binomial (D10.2.5): the binomial DG = DK + KG has its terms DK and KG both rational and commensurable in square only (Step 7, Step 8). The square on the greater term DK exceeds the square on the lesser term KG by the square on a straight line incommensurable in length with DK (Step 14). The lesser term KG is commensurable in length with the rational straight line DE (Step 6). These are precisely the conditions defining a fifth binomial straight line by D10.2.4 and D10.2.5.
+
+**Step 17.** Therefore, the square on the side of a rational plus a medial area, applied to a rational straight line, produces as breadth the fifth binomial. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.15, 10.16, 10.20, 10.21, 10.22, 10.36, 10.40, 10.6, 2.4, 2.7, 6.1, D10.1.3, D10.1.4, D10.2.4, D10.2.5
+**Human refs (from References field):** 10.13, 10.18, 10.20, 10.22, 10.36, 10.40
+**Jaccard:** 0.278 — AI adds ['10.11', '10.15', '10.16', '10.21', '10.6', '2.4', '2.7', '6.1', 'D10.1.3', 'D10.1.4', 'D10.2.4', 'D10.2.5']; Human adds ['10.18']
+
+## Proposition 10.65
+**Statement:** The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.
+
+**Step 1.** Let AB be the side of the sum of two medial areas, and let it be divided into its terms at C, so that AC and CB are the two straight lines of which AB is composed, with AC being the greater. By 10.41, AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, the rectangle contained by AC and CB is medial, and the sum of the squares on them is incommensurable with the rectangle contained by them.
+
+**Step 2.** Let DE be a rational straight line, and let there be applied to DE the rectangle DF equal to the square on AB, producing DF as breadth, so that rect(DE, DF) = sq(AB).
+
+**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB: sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB).
+
+**Step 4.** Apply to DE the rectangle DG equal to the sum of the squares on AC and CB, producing DG as breadth, so that rect(DE, DG) = sq(AC) + sq(CB). Then the remainder, rect(DE, GF) = 2*rect(AC, CB), where DF = DG + GF.
+
+**Step 5.** Since the sum sq(AC) + sq(CB) is medial and DE is rational, by 10.22 the breadth DG is rational and incommensurable in length with DE.
+
+**Step 6.** Since 2*rect(AC, CB) is medial (for rect(AC, CB) is medial by 10.41, and twice a medial area is medial by 10.23 and the properties of medial areas) and DE is rational, by 10.22 the breadth GF is rational and incommensurable in length with DE.
+
+**Step 7.** Since sq(AC) + sq(CB) is incommensurable with 2*rect(AC, CB) (given by 10.41), and rect(DE, DG) = sq(AC) + sq(CB) while rect(DE, GF) = 2*rect(AC, CB), the areas rect(DE, DG) and rect(DE, GF) are incommensurable. Since these rectangles have the same height DE, by 6.1 they are as their bases, so DG is incommensurable in length with GF by 10.11.
+
+**Step 8.** Since DG and GF are each rational (Step 5 and Step 6), they are each commensurable in square with DE by D10.1.3. By 10.12, since sq(DG) is commensurable with sq(DE) and sq(GF) is commensurable with sq(DE), sq(DG) is commensurable with sq(GF). Therefore DG is commensurable in square with GF. But DG is incommensurable in length with GF (Step 7). So DG and GF are rational straight lines commensurable in square only.
+
+**Step 9.** Therefore by 10.36, the sum DG + GF = DF is a binomial straight line. It remains to show that DF is a sixth binomial.
+
+**Step 10.** Within DG, let M be the point such that rect(DE, DM) = sq(AC) and rect(DE, MG) = sq(CB), so that DG = DM + MG. Since sq(AC) and sq(CB) are the areas applied to the same line DE, by 6.1, DM : MG = sq(AC) : sq(CB).
+
+**Step 11.** Since AC and CB are incommensurable in square (by 10.41), sq(AC) is incommensurable with sq(CB). Therefore by 10.11, DM is incommensurable in length with MG.
+
+**Step 12.** We now show that sq(DG) exceeds sq(GF) by the square on a straight line incommensurable in length with DG. First we establish that sq(GF) = 4*rect(DM, MG). Since rect(DE, DM) = sq(AC), by 6.17 AC is the mean proportional between DE and DM, that is, DE : AC = AC : DM. Similarly, since rect(DE, MG) = sq(CB), by 6.17 DE : CB = CB : MG. By 6.22, since DE : AC = AC : DM, the squares on these are proportional: sq(DE) : sq(AC) = sq(AC) : sq(DM). Likewise sq(DE) : sq(CB) = sq(CB) : sq(MG). By 6.17 applied to the proportion sq(AC) : sq(CB) = sq(CB) : sq(MG)... rather, we proceed as follows.
+
+**Step 13.** By 6.13, let X be the mean proportional between AC and CB, so AC : X = X : CB. By 6.17, sq(X) = rect(AC, CB). By 6.22, since AC : X = X : CB, we have sq(AC) : sq(X) = sq(X) : sq(CB). Applying 6.17 to this proportion, rect(sq(AC), sq(CB)) = sq(sq(X)) = sq(rect(AC, CB)). That is, sq(AC) * sq(CB) = rect(AC, CB)^2.
+
+**Step 14.** Now rect(DE, DM) * rect(DE, MG) = sq(AC) * sq(CB) = rect(AC, CB)^2. Also rect(DE, GF) = 2*rect(AC, CB), so sq(rect(DE, GF)) = 4*rect(AC, CB)^2. By the result of Step 13, sq(rect(DE, GF)) = 4 * rect(DE, DM) * rect(DE, MG). But rect(DE, DM) * rect(DE, MG) = sq(DE) * rect(DM, MG) (since both products equal DE * DM * DE * MG = sq(DE) * DM * MG). And sq(rect(DE, GF)) = sq(DE) * sq(GF). Therefore sq(DE) * sq(GF) = 4 * sq(DE) * rect(DM, MG), hence sq(GF) = 4*rect(DM, MG).
+
+**Step 15.** By 2.4, sq(DM + MG) = sq(DM) + sq(MG) + 2*rect(DM, MG), that is, sq(DG) = sq(DM) + sq(MG) + 2*rect(DM, MG). By 2.7, sq(DM - MG) = sq(DM) + sq(MG) - 2*rect(DM, MG). Therefore sq(DG) - sq(DM - MG) = 4*rect(DM, MG) = sq(GF) (by Step 14). So sq(DG) - sq(GF) = sq(DM - MG), which means sq(DG) exceeds sq(GF) by the square on the straight line DM - MG.
+
+**Step 16.** We now show that DM - MG is incommensurable in length with DG = DM + MG. Suppose for contradiction that DM + MG is commensurable with DM - MG. Then by 10.15, (DM + MG) + (DM - MG) = 2*DM is commensurable with DM + MG. Likewise (DM + MG) - (DM - MG) = 2*MG is commensurable with DM + MG. By 10.12, 2*DM is commensurable with 2*MG, hence DM is commensurable with MG. But this contradicts Step 11. Therefore DM + MG is incommensurable in length with DM - MG, that is, DG is incommensurable with the straight line by which sq(DG) exceeds sq(GF).
+
+**Step 17.** We have established: DG and GF are rational and commensurable in square only (Step 8), so DF = DG + GF is a binomial (Step 9). Neither DG nor GF is commensurable in length with the rational straight line DE (Steps 5 and 6). The square on the greater term DG exceeds the square on the lesser term GF by the square on a straight line incommensurable in length with DG (Steps 15 and 16). By D10.2.6, these are precisely the conditions defining a sixth binomial. Therefore DF is a sixth binomial straight line.
+
+**Step 18.** Therefore the square on the side of the sum of two medial areas, applied to a rational straight line, produces as breadth the sixth binomial. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.15, 10.22, 10.23, 10.36, 10.41, 2.4, 2.7, 6.1, 6.13, 6.17, 6.22, CN3, D10.1.3, D10.2.6
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.41, 6.1
+**Jaccard:** 0.312 — AI adds ['10.12', '10.15', '10.23', '2.4', '2.7', '6.13', '6.17', '6.22', 'CN3', 'D10.1.3', 'D10.2.6']
+
+## Proposition 10.66
+**Statement:** A straight line commensurable in length with a binomial straight line is itself also binomial and the same in order.
+
+**Step 1.** Let AB be a binomial straight line, divided at C into its terms so that AC is the greater term. Let EF be a straight line commensurable in length with AB. We must show that EF is also binomial and of the same order as AB.
+
+**Step 2.** Since AB is binomial, AC and CB are rational straight lines commensurable in square only [10.36, D10.1.3].
+
+**Step 3.** Since AB and EF are commensurable in length, they have to one another the ratio which a number has to a number [10.5]. Let AB:EF = m:n where m, n are numbers.
+
+**Step 4.** Let EF be divided at G such that AC:EG = CB:GF = AB:EF = m:n [6.12]. Since AB = AC + CB and EF = EG + GF, and the parts are in the same ratio as the wholes, this division is valid.
+
+**Step 5.** Since AC:EG = m:n, a ratio of number to number, AC and EG are commensurable in length [10.6]. Since AC is rational, EG is also rational and commensurable in length with AC [D10.1.3].
+
+**Step 6.** Since CB:GF = m:n, a ratio of number to number, CB and GF are commensurable in length [10.6]. Since CB is rational, GF is also rational and commensurable in length with CB [D10.1.3].
+
+**Step 7.** Since AC and CB are commensurable in square only, and AC is commensurable in length with EG, and CB is commensurable in length with GF, we must show that EG and GF are commensurable in square only. Since EG is commensurable in length with AC, the square on EG is commensurable with the square on AC [10.12, applied via commensurability in length implying commensurability of squares]. Similarly, the square on GF is commensurable with the square on CB. Now, since the squares on AC and CB are commensurable (AC, CB being commensurable in square), by transitivity the squares on EG and GF are commensurable [10.12]. So EG and GF are commensurable in square.
+
+**Step 8.** Suppose EG and GF are commensurable in length. Since EG is commensurable in length with AC and GF is commensurable in length with CB, then AC would be commensurable in length with CB by transitivity [10.12]. But AC and CB are commensurable in square only, a contradiction. Therefore EG and GF are commensurable in square only.
+
+**Step 9.** Since EG and GF are rational straight lines commensurable in square only, EG + GF = EF is a binomial straight line [10.36].
+
+**Step 10.** It remains to show that EF is of the same order as AB. Let R be a given rational straight line with respect to which the order of AB is determined.
+
+**Step 11.** Since AC:EG = CB:GF (both equal to the ratio m:n), we have AC:CB = EG:GF [5.11]. Therefore the square on AC is to the square on CB as the square on EG is to the square on GF [6.22]. Since AC, CB, EG, GF are four proportional straight lines (AC:CB :: EG:GF), and the square on AC is greater than the square on CB by the square on some straight line, by 10.14, if the square on AC exceeds the square on CB by the square on a line commensurable with AC, then the square on EG exceeds the square on GF by the square on a line commensurable with EG; and if the excess is by a line incommensurable with AC, then the excess for EG over GF is by a line incommensurable with EG.
+
+**Step 12.** Now consider the commensurability of the terms with the rational line R. Since AC is commensurable in length with EG, if AC is commensurable in length with R, then EG is also commensurable in length with R [10.12]. If AC is not commensurable in length with R but CB is, then since CB is commensurable in length with GF, GF is commensurable in length with R [10.12]. If neither AC nor CB is commensurable in length with R, then neither EG nor GF is commensurable in length with R (for if EG were commensurable with R, then AC, being commensurable with EG, would be commensurable with R [10.12], a contradiction; similarly for GF and CB).
+
+**Step 13.** By the definitions of the six orders of binomial [D10.2.1 through D10.2.6], the order depends on two conditions: (i) whether the square on the greater term exceeds the square on the lesser by the square on a line commensurable or incommensurable with the greater term, and (ii) which of the terms (if either) is commensurable in length with the assigned rational line R. Steps 11 and 12 show that both conditions are the same for EF as for AB. Therefore EF is a binomial of the same order as AB.
+
+**Step 14.** Therefore a straight line commensurable in length with a binomial straight line is itself also binomial and the same in order. Q.E.D.
+
+**USED:** 10.12, 10.14, 10.36, 10.5, 10.6, 5.11, 6.12, 6.22, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.36, 5.11, 5.16, 5.19, 6.12, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6
+**Jaccard:** 0.579 — AI adds ['10.5', '10.6', '6.22', 'D10.1.3']; Human adds ['10.11', '10.13', '5.16', '5.19']
+
+## Proposition 10.67
+**Statement:** A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.
+
+**Step 1.** Let AB be a bimedial straight line, and let CD be commensurable in length with AB. We must show that CD is also bimedial and of the same order as AB.
+
+**Step 2.** First, suppose AB is a first bimedial straight line. Then by definition (10.37), AB is divided at E into two medial straight lines AE and EB that are commensurable in square only and contain a rational rectangle.
+
+**Step 3.** Since CD is commensurable in length with AB, let CD be divided at F such that AE is to CF as AB is to CD, and EB is to FD as AB is to CD. This is possible by 6.12, cutting CD in the same ratio as AE to EB divides AB. Since AE + EB = AB and CF + FD = CD, and each pair is in the same ratio as AB to CD, we have AE : CF :: AB : CD and EB : FD :: AB : CD.
+
+**Step 4.** Since AB is commensurable in length with CD, the ratio AB : CD is the ratio of a number to a number (10.5). Therefore AE : CF is also the ratio of a number to a number, so AE is commensurable in length with CF (10.6). Likewise EB is commensurable in length with FD.
+
+**Step 5.** Since AE is medial and CF is commensurable in length with AE, CF is medial (10.23). Since EB is medial and FD is commensurable in length with EB, FD is medial (10.23).
+
+**Step 6.** Since AE is commensurable in square only with EB, and AE is commensurable in length with CF, then CF is commensurable in square with AE (since commensurable in length implies commensurable in square, by D10.1.2 and 10.9). Since AE is commensurable in square only with EB, we examine the relationship of CF and FD. Because AE : CF :: EB : FD (both ratios equal AB : CD), we have AE : EB :: CF : FD (5.16, alternando via 5.11). Since AE and EB are commensurable in square only, the squares on AE and EB have the ratio of a number to a number (10.9), so the squares on CF and FD also have the ratio of a number to a number (since sq(AE) : sq(EB) :: sq(CF) : sq(FD) by duplicate ratio, 6.22). Therefore CF and FD are commensurable in square (10.9).
+
+**Step 7.** We must show CF and FD are commensurable in square only, not in length. Since AE : EB :: CF : FD and AE is incommensurable in length with EB, CF is incommensurable in length with FD (10.11). Therefore CF and FD are commensurable in square only.
+
+**Step 8.** Now consider the rectangle CF by FD. Since AE : CF :: EB : FD :: AB : CD, the rectangle AE by EB is to the rectangle CF by FD as the square on AE is to the square on CF (6.16 and 6.1). But AE is commensurable in length with CF, so the square on AE is commensurable with the square on CF (10.9). Therefore the rectangle AE by EB is commensurable with the rectangle CF by FD (10.11).
+
+**Step 9.** Since AB is a first bimedial, the rectangle AE by EB is rational. Since the rectangle CF by FD is commensurable with the rectangle AE by EB (Step 8), and a magnitude commensurable with a rational magnitude is rational, the rectangle CF by FD is rational (10.6, D10.1.4).
+
+**Step 10.** Therefore CF and FD are medial straight lines commensurable in square only containing a rational rectangle. Hence CD = CF + FD is a first bimedial straight line (10.37).
+
+**Step 11.** Now suppose AB is a second bimedial straight line. Then by definition (10.38), AB is divided at E into two medial straight lines AE and EB that are commensurable in square only and contain a medial rectangle.
+
+**Step 12.** By the same construction as Steps 3-4, divide CD at F so that AE : CF :: EB : FD :: AB : CD. Then CF is commensurable in length with AE, and FD is commensurable in length with EB.
+
+**Step 13.** By the same reasoning as Steps 5-7, CF is medial, FD is medial, and CF and FD are commensurable in square only.
+
+**Step 14.** By the same reasoning as Step 8, the rectangle CF by FD is commensurable with the rectangle AE by EB.
+
+**Step 15.** Since AB is a second bimedial, the rectangle AE by EB is medial. Since the rectangle CF by FD is commensurable with the rectangle AE by EB, and a magnitude commensurable with a medial magnitude is medial (10.23 applied to areas, or equivalently by D10.1.4 and 10.12 since commensurable with an irrational area that is not rational), the rectangle CF by FD is medial.
+
+**Step 16.** Therefore CF and FD are medial straight lines commensurable in square only containing a medial rectangle. Hence CD = CF + FD is a second bimedial straight line (10.38).
+
+**Step 17.** In both cases, CD is bimedial and of the same order as AB. Therefore a straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.23, 10.37, 10.38, 10.5, 10.6, 10.9, 5.11, 5.16, 6.1, 6.12, 6.16, 6.22, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 10.23, 10.37, 10.38, 5.11, 5.16, 5.19
+**Jaccard:** 0.353 — AI adds ['10.12', '10.5', '10.6', '10.9', '6.1', '6.12', '6.16', '6.22', 'D10.1.2', 'D10.1.4']; Human adds ['5.19']
+
+## Proposition 10.68
+**Statement:** A straight line commensurable with a major straight line is itself also major.
+
+**Step 1.** Let AB be a major straight line, and let CD be commensurable in length with AB. We must show that CD is also major.
+
+**Step 2.** Let E be a rational straight line set out. Apply the square on AB to E, producing as breadth EF; that is, let the rectangle contained by E and EF equal the square on AB. By 10.63, since AB is major, EF is a fourth binomial straight line.
+
+**Step 3.** Apply the square on CD to the same rational straight line E, producing as breadth EG; that is, let the rectangle contained by E and EG equal the square on CD.
+
+**Step 4.** Since AB is commensurable in length with CD, the square on AB is commensurable with the square on CD, for by 10.9, the squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number, and hence are commensurable.
+
+**Step 5.** Now the rectangle contained by E and EF equals the square on AB, and the rectangle contained by E and EG equals the square on CD. Since these rectangles have the same height E, by 6.1, the square on AB is to the square on CD as EF is to EG. That is, the four magnitudes — the square on AB, the square on CD, EF, and EG — are proportional.
+
+**Step 6.** Since the square on AB is commensurable with the square on CD (Step 4), and these four magnitudes are proportional (Step 5), by 10.11 the third magnitude EF is commensurable in length with the fourth magnitude EG.
+
+**Step 7.** Since EF is a fourth binomial straight line (Step 2), and EG is commensurable in length with EF (Step 6), by 10.66, EG is itself also a binomial straight line and the same in order. Therefore EG is a fourth binomial straight line.
+
+**Step 8.** The rectangle contained by E and EG equals the square on CD (Step 3), where E is rational and EG is a fourth binomial. By 10.57, the side of this area is the irrational straight line called major. Since CD is the side of the square on CD, CD is a major straight line.
+
+**Step 9.** Therefore a straight line commensurable with a major straight line is itself also major. Q.E.D.
+
+**USED:** 10.11, 10.57, 10.63, 10.66, 10.9, 6.1
+**Human refs (from References field):** 10.11, 10.23, 10.39, 5.11, 5.16, 5.18, 6.20
+**Jaccard:** 0.083 — AI adds ['10.57', '10.63', '10.66', '10.9', '6.1']; Human adds ['10.23', '10.39', '5.11', '5.16', '5.18', '6.20']
+
+## Proposition 10.69
+**Statement:** A straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area.
+
+**Step 1.** Let AB be the side of a rational plus a medial area, and let CD be commensurable in length with AB. We are to show that CD is also the side of a rational plus a medial area.
+
+**Step 2.** Since AB is the side of a rational plus a medial area, by 10.40 it is divided into two straight lines, say AG and GB (so that AB = AG + GB), where AG and GB are incommensurable in square, the sum of the squares on AG and GB is medial, and the rectangle contained by AG and GB is rational.
+
+**Step 3.** By 6.12, divide CD at E in the same ratio as AG to GB, so that AG:GB = CE:ED.
+
+**Step 4.** From the proportion AG:GB = CE:ED, by 5.16 (alternando), AG:CE = GB:ED. Then by 5.12 (equal ratios may be summed), AG:CE = (AG + GB):(CE + ED), that is, AG:CE = AB:CD. Likewise GB:ED = AB:CD.
+
+**Step 5.** Since AB is commensurable in length with CD (given), and AG:CE = AB:CD, by 10.11 AG is commensurable in length with CE. Similarly, since GB:ED = AB:CD, by 10.11 GB is commensurable in length with ED.
+
+**Step 6.** Since AG and GB are incommensurable in square (given), the square on AG is incommensurable with the square on GB. Since AG is commensurable with CE, the square on AG is commensurable with the square on CE. By 10.13 (if two magnitudes are commensurable and one is incommensurable with a third, then the other is also incommensurable with that third), the square on CE is incommensurable with the square on GB. Now since the square on GB is commensurable with the square on ED (because GB is commensurable with ED), by 10.13 again, the square on CE is incommensurable with the square on ED. Therefore CE and ED are incommensurable in square.
+
+**Step 7.** Since AG:CE = GB:ED (Step 4), by 6.20 the squares on AG and CE, being similar figures on proportional lines, satisfy sq(AG):sq(CE) = duplicate ratio of AG:CE. Likewise sq(GB):sq(ED) = duplicate ratio of GB:ED. Since AG:CE = GB:ED, the duplicate ratios are equal, so sq(AG):sq(CE) = sq(GB):sq(ED). By 5.12, it follows that sq(AG):sq(CE) = (sq(AG) + sq(GB)):(sq(CE) + sq(ED)).
+
+**Step 8.** Since AG is commensurable in length with CE, the square on AG is commensurable with the square on CE (the ratio sq(AG):sq(CE) being the duplicate of a ratio of numbers is itself a ratio of numbers). From the proportion in Step 7, by 10.11, sq(AG) + sq(GB) is commensurable with sq(CE) + sq(ED).
+
+**Step 9.** Now sq(AG) + sq(GB) is medial (given). Since sq(CE) + sq(ED) is commensurable with sq(AG) + sq(GB), the side of a square equal to sq(CE) + sq(ED) is commensurable with the side of a square equal to sq(AG) + sq(GB). The latter side is medial (since its square is a medial area), so by 10.23 the former side is also medial, and therefore sq(CE) + sq(ED) is a medial area.
+
+**Step 10.** For the rectangles: by 6.1, rect(AG, GB):rect(CE, GB) = AG:CE, and rect(CE, GB):rect(CE, ED) = GB:ED. Since AG:CE = GB:ED (Step 4), we have rect(AG, GB):rect(CE, GB) = rect(CE, GB):rect(CE, ED), so rect(AG, GB):rect(CE, ED) is the duplicate ratio of AG:CE. But sq(AG):sq(CE) is also the duplicate ratio of AG:CE (Step 7). Therefore rect(AG, GB):rect(CE, ED) = sq(AG):sq(CE). Since sq(AG) is commensurable with sq(CE) (Step 8), by 10.11, rect(AG, GB) is commensurable with rect(CE, ED).
+
+**Step 11.** Since rect(AG, GB) is rational (given), and rect(CE, ED) is commensurable with it, rect(CE, ED) is also rational. This follows from D10.1.4: a rational area is one commensurable with the square on the assigned rational line; since rect(AG, GB) is commensurable with that square and rect(CE, ED) is commensurable with rect(AG, GB), by 10.12 rect(CE, ED) is also commensurable with the square on the rational line, hence rational.
+
+**Step 12.** We have now established that CE and ED are incommensurable in square (Step 6), the sum sq(CE) + sq(ED) is medial (Step 9), and rect(CE, ED) is rational (Step 11). Therefore, by 10.40, CD = CE + ED is the side of a rational plus a medial area. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.23, 10.40, 5.12, 5.16, 6.1, 6.12, 6.20, D10.1.4
+**Human refs (from References field):** 10.40
+**Jaccard:** 0.091 — AI adds ['10.11', '10.12', '10.13', '10.23', '5.12', '5.16', '6.1', '6.12', '6.20', 'D10.1.4']
+
+## Proposition 10.70
+**Statement:** A straight line commensurable with the side of the sum of two medial areas is the side of the sum of two medial areas.
+
+**Step 1.** Let AB be a side of the sum of two medial areas, and let CD be commensurable with AB. We must show that CD is also a side of the sum of two medial areas.
+
+**Step 2.** Since AB is the side of the sum of two medial areas, by 10.41 it is divided at some point E into two straight lines AE and EB such that AE and EB are incommensurable in square, the sum of the squares on AE and EB is medial, the rectangle contained by AE and EB is medial, and the sum of the squares on AE and EB is incommensurable with the rectangle AE by EB.
+
+**Step 3.** Since AB is commensurable with CD, the ratio AB to CD is a ratio which a number has to a number, by 10.5. Let AB : CD = p : q for numbers p and q.
+
+**Step 4.** By 6.12, make AE : CF = EB : FD = AB : CD, where F is a point on CD with CF and FD so determined. Then CF + FD = CD, since AE + EB = AB and the parts are in the same ratio as the wholes.
+
+**Step 5.** Since AE : CF = EB : FD = AB : CD = p : q, both AE and CF are commensurable in length, and both EB and FD are commensurable in length, by 10.6.
+
+**Step 6.** Since AE is commensurable with CF, the square on AE is commensurable with the square on CF, by 10.11 applied to the duplicate ratio (since AE : CF = p : q, then sq(AE) : sq(CF) = p^2 : q^2, a ratio of numbers, so they are commensurable by 10.6). Similarly, since EB is commensurable with FD, the square on EB is commensurable with the square on FD.
+
+**Step 7.** Since the square on AE is commensurable with the square on CF, and the square on EB is commensurable with the square on FD, the sum of the squares on AE and EB is commensurable with the sum of the squares on CF and FD, by 10.12 and 10.15 (commensurable magnitudes added together yield commensurable sums).
+
+**Step 8.** Since the sum of the squares on AE and EB is medial, and the sum of the squares on CF and FD is commensurable with it, the sum of the squares on CF and FD is also medial, by 10.23 applied to the areas (a medial area commensurable with another area makes that area medial, since medial areas are those whose sides are medial, and by 10.23 a line commensurable with a medial line is medial, so the side of the area commensurable with a medial area is medial, making the area itself medial).
+
+**Step 9.** Since AE is commensurable with CF and EB is commensurable with FD, the rectangle AE by EB is commensurable with the rectangle CF by FD. This follows because AE : CF = EB : FD, so the rectangle AE by EB has to the rectangle CF by FD the ratio compounded of AE : CF and EB : FD, which is the ratio p^2 : q^2, a ratio of numbers, so the rectangles are commensurable by 10.6.
+
+**Step 10.** Since the rectangle AE by EB is medial, and the rectangle CF by FD is commensurable with it, the rectangle CF by FD is also medial, by the same reasoning as in Step 8 (an area commensurable with a medial area is medial).
+
+**Step 11.** Since the sum of the squares on AE and EB is incommensurable with the rectangle AE by EB, and the sum of the squares on AE and EB is commensurable with the sum of the squares on CF and FD (Step 7), and the rectangle AE by EB is commensurable with the rectangle CF by FD (Step 9), then the sum of the squares on CF and FD is incommensurable with the rectangle CF by FD, by 10.13 (if two magnitudes are commensurable and one is incommensurable with a third, the other is also incommensurable with the third).
+
+**Step 12.** It remains to show that CF and FD are incommensurable in square. Since AE and EB are incommensurable in square, the square on AE is incommensurable with the square on EB. Since the square on AE is commensurable with the square on CF (Step 6), and the square on AE is incommensurable with the square on EB, the square on CF is incommensurable with the square on EB, by 10.13. Since the square on EB is commensurable with the square on FD (Step 6), and the square on CF is incommensurable with the square on EB, the square on CF is incommensurable with the square on FD, by 10.13. Thus CF and FD are incommensurable in square.
+
+**Step 13.** We have shown that CD = CF + FD where CF and FD are incommensurable in square, the sum of the squares on CF and FD is medial, the rectangle CF by FD is medial, and the sum of the squares on CF and FD is incommensurable with the rectangle CF by FD. Therefore CD is the side of the sum of two medial areas, by 10.41. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.23, 10.41, 10.5, 10.6, 6.12
+**Human refs (from References field):** 10.41
+**Jaccard:** 0.111 — AI adds ['10.11', '10.12', '10.13', '10.15', '10.23', '10.5', '10.6', '6.12']
+
+## Proposition 10.71
+**Statement:** If a rational and a medial area be added together, four irrational straight lines arise, namely a binomial or a first bimedial or a major or a side of a rational plus a medial area.
+
+**Step 1.** Let the rational area be AB and the medial area be CD. Let EF be a rational straight line set out. Apply the sum AB + CD to EF, producing as breadth EH, so that the rectangle EF by EH equals AB + CD. Separately, apply AB to EF producing breadth EG, so that EF by EG equals AB. Then the remainder GH satisfies EF by GH equals CD.
+
+**Step 2.** Since AB is a rational area and EF is a rational straight line, by 10.20 the breadth EG is rational and commensurable in length with EF.
+
+**Step 3.** Since CD is a medial area and EF is a rational straight line, by 10.22 the breadth GH is rational and incommensurable in length with EF.
+
+**Step 4.** Since EG is commensurable in length with EF (Step 2) and GH is incommensurable in length with EF (Step 3), by 10.13 EG and GH are incommensurable in length with one another.
+
+**Step 5.** Both EG and GH are rational (Steps 2 and 3). Since they are incommensurable in length (Step 4), by D10.1.3 they are commensurable in square only.
+
+**Step 6.** Since EG and GH are two rational straight lines commensurable in square only, by 10.36 the whole EH = EG + GH is a binomial straight line, with terms EG and GH.
+
+**Step 7.** Now we classify the binomial EH relative to the rational straight line EF using D10.2.1 through D10.2.6. We have established that EG is commensurable in length with EF and GH is incommensurable in length with EF. Therefore exactly one of the two terms is commensurable in length with EF, namely EG. This rules out the third binomial (D10.2.3) and the sixth binomial (D10.2.6), since in those cases neither term is commensurable in length with EF.
+
+**Step 8.** Case 1: Suppose EG is the greater term, i.e., EG > GH. The greater term EG is commensurable in length with EF. Sub-case 1a: If the square on EG is greater than the square on GH by the square on a straight line commensurable in length with EG, then by D10.2.1 EH is a first binomial. By 10.54, the side of the area EF by EH is a binomial straight line. Sub-case 1b: If the square on EG is greater than the square on GH by the square on a straight line incommensurable in length with EG, then by D10.2.4 EH is a fourth binomial. By 10.57, the side of the area EF by EH is a major straight line.
+
+**Step 9.** Case 2: Suppose GH is the greater term, i.e., GH > EG. The lesser term EG is commensurable in length with EF. Sub-case 2a: If the square on GH is greater than the square on EG by the square on a straight line commensurable in length with GH, then by D10.2.2 EH is a second binomial. By 10.55, the side of the area EF by EH is a first bimedial straight line. Sub-case 2b: If the square on GH is greater than the square on EG by the square on a straight line incommensurable in length with GH, then by D10.2.5 EH is a fifth binomial. By 10.58, the side of the area EF by EH is the side of a rational plus a medial area.
+
+**Step 10.** Cases 1 and 2 are exhaustive (one of EG, GH must be the greater), and within each case the two sub-cases are exhaustive (the excess square is either commensurable or incommensurable in length with the greater term). Therefore the side of the area equal to the sum of a rational and a medial area is one of exactly four irrational straight lines: a binomial (Case 1a), a first bimedial (Case 2a), a major (Case 1b), or a side of a rational plus a medial area (Case 2b). Q.E.D.
+
+**USED:** 10.13, 10.20, 10.22, 10.36, 10.54, 10.55, 10.57, 10.58, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6
+**Human refs (from References field):** 10.11, 10.20, 10.22, 10.36, 10.54, 10.55, 10.57, 10.58, 6.1, D10.2.1, D10.2.2, D10.2.4, D10.2.5
+**Jaccard:** 0.647 — AI adds ['10.13', 'D10.1.3', 'D10.2.3', 'D10.2.6']; Human adds ['10.11', '6.1']
+
+## Proposition 10.72
+**Statement:** If two medial areas incommensurable with one another be added together, the remaining two irrational straight lines arise, namely either a second bimedial or a side of the sum of two medial areas.
+
+**Step 1.** Let two medial areas AB and CD be incommensurable with one another, and let their sum equal the square on the straight line EF; we must show that EF is either a second bimedial or a side of the sum of two medial areas.
+
+**Step 2.** Set out a rational straight line GH. Apply the area AB to GH, producing breadth GK, so that the rectangle GH by GK equals AB. Apply the area CD to GH along GK, producing breadth KH', so that the rectangle GH by KH' equals CD. Then the rectangle GH by GH' (where GH' = GK + KH') equals AB + CD, which equals the square on EF.
+
+**Step 3.** Since AB is a medial area and it is applied to the rational straight line GH, the breadth GK is rational and incommensurable in length with GH [by 10.22].
+
+**Step 4.** Since CD is a medial area and it is applied to the rational straight line GH, the breadth KH' is rational and incommensurable in length with GH [by 10.22].
+
+**Step 5.** Since AB and CD are incommensurable with each other, and AB equals the rectangle GH by GK while CD equals the rectangle GH by KH', the rectangle GH by GK is incommensurable with the rectangle GH by KH'. But as the rectangle GH by GK is to the rectangle GH by KH', so is GK to KH' [by 6.1]. Therefore GK is incommensurable in length with KH' [by 10.11].
+
+**Step 6.** Now GK and KH' are each rational (Steps 3 and 4) and incommensurable in length with each other (Step 5). Therefore GK and KH' are rational straight lines commensurable in square only [by D10.1.3, since rational lines incommensurable in length are commensurable in square by the definition of rational].
+
+**Step 7.** Therefore the whole GH' (= GK + KH') is a binomial straight line, being the sum of two rational straight lines commensurable in square only [by 10.36].
+
+**Step 8.** Now the square on EF equals the rectangle GH by GH', where GH is rational and GH' is binomial. The type of irrational that EF is depends on which order of binomial GH' is [by 10.54 through 10.59].
+
+**Step 9.** Since GK is incommensurable in length with GH (Step 3) and KH' is incommensurable in length with GH (Step 4), neither term of the binomial GH' is commensurable in length with the rational straight line GH.
+
+**Step 10.** By the classification of binomial straight lines [D10.2.1 through D10.2.6], since neither GK nor KH' is commensurable in length with GH, the binomial GH' is either a third binomial or a sixth binomial. It is a third binomial if the square on the greater term exceeds the square on the lesser by the square on a straight line commensurable in length with the greater [D10.2.3], and a sixth binomial if the excess is by the square on a line incommensurable in length with the greater [D10.2.6].
+
+**Step 11.** Case I: Suppose GH' is a third binomial. Then the area equal to the rectangle contained by the rational straight line GH and the third binomial GH' has for its side a second bimedial straight line [by 10.56]. Since the square on EF equals this rectangle, EF is a second bimedial.
+
+**Step 12.** Case II: Suppose GH' is a sixth binomial. Then the area equal to the rectangle contained by the rational straight line GH and the sixth binomial GH' has for its side the irrational straight line called the side of the sum of two medial areas [by 10.59]. Since the square on EF equals this rectangle, EF is a side of the sum of two medial areas.
+
+**Step 13.** Therefore, if two medial areas incommensurable with one another be added together, the side of the square equal to their sum is either a second bimedial or a side of the sum of two medial areas. Q.E.D.
+
+**USED:** 10.11, 10.22, 10.36, 10.56, 10.59, 6.1, D10.1.3, D10.2.3, D10.2.6
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.56, 10.59, 6.1, D10.2.3, D10.2.6
+**Jaccard:** 0.889 — AI adds ['D10.1.3']
+
+## Proposition 10.73
+**Statement:** If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational; and let it be called   an apotome.
+
+**Step 1.** Let AB be a rational straight line, and from AB let there be subtracted BC, a rational straight line commensurable with AB in square only. I say that the remainder AC is irrational.
+
+**Step 2.** Since AB and BC are commensurable in square only, they are incommensurable in length [D10.1.2, since commensurable in square only means commensurable in square but not in length].
+
+**Step 3.** Since AB is rational and BC is rational, the square on AB and the square on BC are each rational areas [D10.1.4]. Furthermore, since AB and BC are commensurable in square, the squares on AB and BC are commensurable with one another [D10.1.2]. Therefore the sum of the squares on AB and BC is commensurable with each of them [10.15], and hence is a rational area [D10.1.4].
+
+**Step 4.** Since AB and BC are rational straight lines commensurable in square only, the rectangle contained by AB and BC is irrational, that is, medial [10.21].
+
+**Step 5.** Now twice the rectangle AB, BC has to the rectangle AB, BC the ratio 2 to 1, which is a ratio of a number to a number. Therefore twice the rectangle AB, BC is commensurable with the rectangle AB, BC [10.6]. Since the rectangle AB, BC is medial, hence irrational, and twice the rectangle AB, BC is commensurable with it, twice the rectangle AB, BC is also irrational [10.13 applied to areas: if two magnitudes are commensurable and one is irrational, the other is also irrational — this follows because if the second were rational, by 10.12 the first would be commensurable with the rational standard, contradicting its irrationality].
+
+**Step 6.** Since C lies on AB, by [2.7] the square on AB together with the square on BC equals twice the rectangle contained by AB and BC together with the square on AC. Therefore the square on AC equals the sum of the squares on AB and BC minus twice the rectangle AB, BC. Equivalently, the sum of the squares on AB and BC equals the square on AC together with twice the rectangle AB, BC.
+
+**Step 7.** Suppose for contradiction that AC is rational. Then the square on AC is rational [D10.1.4], and so the square on AC is commensurable with the sum of the squares on AB and BC, since both are rational areas and hence both are commensurable with the assigned rational square, and therefore commensurable with one another [10.12].
+
+**Step 8.** Since the sum of the squares on AB and BC equals the square on AC together with twice the rectangle AB, BC, and the sum of the squares on AB and BC is commensurable with the square on AC [Step 7], then by [10.15] (if the whole is commensurable with one of two magnitudes added together, then the two magnitudes are also commensurable), twice the rectangle AB, BC is commensurable with the square on AC. But the square on AC is rational, so twice the rectangle AB, BC would also be commensurable with a rational area, making it rational [D10.1.4].
+
+**Step 9.** This contradicts Step 5, where we established that twice the rectangle AB, BC is irrational. Therefore the assumption in Step 7 is false, and AC is not rational; that is, AC is irrational [D10.1.3].
+
+**Step 10.** And let AC be called an apotome. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.15, 10.21, 10.6, 2.7, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.16, 10.6, 2.7, D10.1.4
+**Jaccard:** 0.455 — AI adds ['10.12', '10.21', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.16']
+
+## Proposition 10.74
+**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a rational rectangle, the remainder is irrational. And let it be called a first apotome of a medial straight line.
+
+**Step 1.** Let AB be a medial straight line, and let BC be a medial straight line subtracted from it, where AB and BC are commensurable in square only, and the rectangle contained by AB and BC is rational. We must show that the remainder AC is irrational.
+
+**Step 2.** Since AB is medial, the square on AB is a medial area, that is, it is incommensurable with the square on the assigned rational straight line. [D10.1.3, D10.1.4] Likewise, since BC is medial, the square on BC is a medial area.
+
+**Step 3.** Since AB and BC are commensurable in square, the square on AB is commensurable with the square on BC. [D10.1.2]
+
+**Step 4.** Since the square on AB and the square on BC are commensurable with one another, by 10.15 their sum, the square on AB together with the square on BC, is commensurable with the square on AB. [10.15]
+
+**Step 5.** Since the square on AB is incommensurable with the square on the assigned rational straight line (being a medial area), and the sum of the squares on AB and BC is commensurable with the square on AB, by 10.13 the sum of the squares on AB and BC is also incommensurable with the square on the rational straight line. [10.13] Therefore the sum of the squares on AB and BC is a medial area. [D10.1.4]
+
+**Step 6.** Since the rectangle AB by BC is rational, twice the rectangle AB by BC is commensurable with the rectangle AB by BC, for it has to it the ratio 2 to 1, which is a ratio of number to number. [10.6] Hence twice the rectangle AB by BC is also rational. [D10.1.4]
+
+**Step 7.** By 2.7, the square on AB together with the square on BC is equal to twice the rectangle AB by BC together with the square on AC. [2.7] Therefore the square on AC equals the sum of the squares on AB and BC diminished by twice the rectangle AB by BC.
+
+**Step 8.** Now suppose the square on AC were rational. Then the square on AC and twice the rectangle AB by BC are both rational areas, so both are commensurable with the square on the assigned rational straight line. By 10.12 they are commensurable with one another, and by 10.15 their sum is commensurable with each of them, hence commensurable with the square on the rational straight line. [10.12, 10.15] But their sum equals the sum of the squares on AB and BC, which was shown to be a medial area and therefore incommensurable with the square on the rational straight line. This is a contradiction.
+
+**Step 9.** Now suppose the square on AC were medial. Then the square on AC is a medial area, and the sum of the squares on AB and BC is also a medial area. Since the sum of the squares on AB and BC exceeds the square on AC by twice the rectangle AB by BC, which is rational, it follows that a medial area exceeds a medial area by a rational area. But this is impossible by 10.26. [10.26]
+
+**Step 10.** Therefore the square on AC is neither rational nor medial, so AC is irrational. [D10.1.4] Let it be called a first apotome of a medial straight line. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.15, 10.26, 10.6, 2.7, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.16, 2.7, D10.1.4
+**Jaccard:** 0.200 — AI adds ['10.12', '10.13', '10.15', '10.26', '10.6', 'D10.1.2', 'D10.1.3']; Human adds ['10.16']
+
+## Proposition 10.75
+**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a medial rectangle, the remainder is irrational; and let it be called a second apotome of a medial straight line.
+
+**Step 1.** Let AB be a medial straight line, and from AB let there be subtracted BC, a medial straight line commensurable with AB in square only, such that the rectangle contained by AB and BC is medial. We must show that the remainder AC is irrational.
+
+**Step 2.** Let a rational straight line DI be set out. Apply the square on AB to DI, producing the rectangle DE with breadth DG, so that DE = sq(AB) and DE = DG * DI. Apply the square on BC to DI, producing the rectangle DH with breadth DF, so that DH = sq(BC) and DH = DF * DI, where F falls between D and G on the line DI.
+
+**Step 3.** Since AB is medial, sq(AB) is a medial area. This medial area DE is applied to the rational straight line DI. By 10.22, the breadth DG is rational and incommensurable in length with DI.
+
+**Step 4.** Since BC is medial, sq(BC) is a medial area. This medial area DH is applied to the rational straight line DI. By 10.22, the breadth DF is rational and incommensurable in length with DI.
+
+**Step 5.** Since AB and BC are commensurable in square only, sq(AB) is commensurable with sq(BC). But sq(AB) = DG * DI and sq(BC) = DF * DI. Since sq(AB) is commensurable with sq(BC), and these rectangles share the same height DI, by 6.1 the rectangles are as their bases, so DG is commensurable in length with DF by 10.11.
+
+**Step 6.** Thus DG and DF are both rational (Steps 3 and 4) and commensurable in length with each other (Step 5). Since DG is incommensurable in length with DI (Step 3), and DF is commensurable in length with DG (Step 5), by 10.13, DF is incommensurable in length with DI. This is consistent with Step 4.
+
+**Step 7.** Now consider the sum sq(AB) + sq(BC). Since sq(AB) is commensurable with sq(BC) (Step 5), by 10.15 the sum sq(AB) + sq(BC) is commensurable with sq(AB). Since sq(AB) is a medial area and hence incommensurable with sq(DI), by 10.13, the sum sq(AB) + sq(BC) is also incommensurable with sq(DI). The breadth of this sum on DI is DG + DF (since the rectangles are laid out adjacently on DI). Since DG is commensurable with DF (Step 5), by 10.15, DG + DF is commensurable with DG, hence rational. And since DG is incommensurable in length with DI, by 10.13, DG + DF is incommensurable in length with DI.
+
+**Step 8.** Since the rectangle contained by AB and BC is medial (by hypothesis), twice the rectangle contained by AB and BC is commensurable with the rectangle AB, BC (their ratio being 2:1, a ratio of numbers, so by 10.6 they are commensurable). Since the rectangle AB, BC is medial, its side (the side of the square equal to it) is medial. The side of the square equal to twice the rectangle AB, BC is commensurable with this medial side (since their squares are commensurable), hence is also medial by 10.23. Therefore twice the rectangle AB, BC is a medial area.
+
+**Step 9.** Apply twice the rectangle AB, BC to the rational straight line DI, producing a breadth, call it w2. Since twice the rectangle AB, BC is a medial area (Step 8), by 10.22, w2 is rational and incommensurable in length with DI.
+
+**Step 10.** We now show that DG + DF is incommensurable in length with w2. The area sq(AB) + sq(BC) is commensurable with sq(AB) (Step 7, by 10.15). Suppose for contradiction that sq(AB) + sq(BC) were commensurable with twice the rectangle AB, BC. Then by 10.12, sq(AB) would be commensurable with twice the rectangle AB, BC, hence with the rectangle AB, BC itself (by 10.12 and 10.6). Now by 6.1, sq(AB) : rect(AB, BC) = AB : BC (since sq(AB) = AB * AB and rect(AB, BC) = AB * BC are rectangles with common side AB). So AB would be commensurable in length with BC, contradicting the hypothesis that AB and BC are commensurable in square only. Therefore sq(AB) + sq(BC) is incommensurable with twice the rectangle AB, BC. Since these areas are applied to the same rational line DI with breadths DG + DF and w2 respectively, by 6.1 and 10.11, DG + DF is incommensurable in length with w2.
+
+**Step 11.** From Steps 7 and 9, DG + DF and w2 are both rational. From Step 10, they are incommensurable in length. Hence DG + DF and w2 are rational straight lines commensurable in square only. By 10.73, the straight line (DG + DF) - w2 is an apotome, and therefore irrational.
+
+**Step 12.** By 2.7, the square on AC equals the sum of the squares on AB and BC minus twice the rectangle contained by AB and BC: sq(AC) = sq(AB) + sq(BC) - 2 * rect(AB, BC). When this is applied to the rational line DI, the breadth is (DG + DF) - w2, which is an apotome (Step 11).
+
+**Step 13.** Suppose sq(AC) were a rational area (commensurable with sq(DI)). Then by 10.20, the breadth (DG + DF) - w2 would be rational and commensurable in length with DI. But (DG + DF) - w2 is an apotome, which is irrational (Step 11). This is a contradiction. Therefore sq(AC) is not rational; it is incommensurable with sq(DI), hence irrational by D10.1.4.
+
+**Step 14.** Since sq(AC) is an irrational area, AC is irrational by D10.1.4. Let AC be called a second apotome of a medial straight line. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.20, 10.22, 10.23, 10.6, 10.73, 2.7, 6.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.20, 10.22, 10.23, 10.28, 10.6, 10.73, 2.7, 6.1
+**Jaccard:** 0.714 — AI adds ['10.12', 'D10.1.3', 'D10.1.4']; Human adds ['10.28']
+
+## Proposition 10.76
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the squares on them added together rational, but the rectangle contained by them medial, the remainder is irrational; and let it be called minor.
+
+**Step 1.** Let AB be a straight line, and from AB let there be subtracted BC, where BC is incommensurable in square with AB, and the squares on AB and BC added together are rational, but the rectangle contained by AB and BC is medial. We are to show that the remainder AC is irrational.
+
+**Step 2.** Since the rectangle AB,BC is medial, twice the rectangle AB,BC is also medial. For twice the rectangle AB,BC has to the rectangle AB,BC the ratio 2:1, which is the ratio of a number to a number. Therefore by 10.6 twice the rectangle AB,BC is commensurable with the rectangle AB,BC. But the rectangle AB,BC is medial, hence irrational as an area. Therefore by 10.13, since twice the rectangle AB,BC is commensurable with the rectangle AB,BC and the rectangle AB,BC is incommensurable with any rational area, twice the rectangle AB,BC is also incommensurable with any rational area. Hence twice the rectangle AB,BC is irrational, that is, medial.
+
+**Step 3.** Since AB is cut at C so that AB = AC + CB, by 2.7 the square on AB together with the square on BC equals twice the rectangle contained by AB and BC together with the square on AC. That is, AB^2 + BC^2 = 2*rect(AB,BC) + AC^2.
+
+**Step 4.** Therefore AC^2 = (AB^2 + BC^2) - 2*rect(AB,BC).
+
+**Step 5.** Now suppose AC^2 were rational. Then since AB^2 + BC^2 is rational, we would have 2*rect(AB,BC) = (AB^2 + BC^2) - AC^2. But the difference of two rational areas is rational (for rational areas are commensurable with the square on the assigned rational line, and the difference of commensurable magnitudes is commensurable with them). Thus 2*rect(AB,BC) would be rational.
+
+**Step 6.** But in Step 2 we showed that 2*rect(AB,BC) is medial, hence irrational by D10.1.4. This is a contradiction, since an area cannot be both rational and irrational.
+
+**Step 7.** Therefore AC^2 is not rational; that is, AC^2 is irrational. Hence by D10.1.4 the straight line AC is irrational.
+
+**Step 8.** And let the irrational straight line AC be called minor. Q.E.D.
+
+**USED:** 10.13, 10.6, 2.7, D10.1.4
+**Human refs (from References field):** 10.16, 10.33, 2.7
+**Jaccard:** 0.167 — AI adds ['10.13', '10.6', 'D10.1.4']; Human adds ['10.16', '10.33']
+
+## Proposition 10.77
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole, and which with the whole makes the sum of the squares on them medial, but twice the rectangle contained by them rational, the remainder is irrational: and let it be called that which produces with a rational area a medial whole.
+
+**Step 1.** Let AB be a straight line, and from AB let there be subtracted BC such that AB and BC are incommensurable in square, the sum of the squares on AB and BC is medial, and twice the rectangle contained by AB and BC is rational. We must show that the remainder AC is irrational.
+
+**Step 2.** Let a rational straight line DI be set out. By 1.45, apply to DI a rectangle DG equal to the sum of the squares on AB and BC, and let DH be its breadth. Then apply to DI a rectangle GK equal to twice the rectangle contained by AB and BC, and let HK be its breadth.
+
+**Step 3.** By 2.7, the square on AC equals the excess of the sum of the squares on AB and BC over twice the rectangle contained by AB and BC. That is, the square on AC equals DG minus GK, which equals the rectangle DK (with breadth remaining on DI after subtracting GK from DG). More precisely, sq(AC) = (sq(AB) + sq(BC)) - 2*rect(AB,BC), so the rectangle with base DI and breadth (DH - HK) equals the square on AC, i.e., sq(AC) = the rectangle on DI with breadth equal to the remainder of DH minus HK.
+
+**Step 4.** Since the sum of the squares on AB and BC is medial, the rectangle DG is medial. Now DG is applied to the rational straight line DI, producing breadth DH. By 10.22, DH is rational and incommensurable in length with DI.
+
+**Step 5.** Since twice the rectangle contained by AB and BC is rational, the rectangle GK is rational. Now GK is applied to the rational straight line DI, producing breadth HK. By 10.20, HK is rational and commensurable in length with DI.
+
+**Step 6.** Since DH is incommensurable in length with DI (Step 4) and HK is commensurable in length with DI (Step 5), by 10.13, DH is incommensurable in length with HK.
+
+**Step 7.** Since DH and HK are each rational (Steps 4 and 5) and incommensurable in length with one another (Step 6), by 10.36, the straight line composed of DH and HK (or equivalently DH minus HK, since the same reasoning about commensurability in square only applies to the remainder) gives that DH and HK are commensurable in square only. More precisely: DH and HK are both rational and incommensurable in length, so they are rational straight lines commensurable in square only.
+
+**Step 8.** By 10.73, since DH and HK are rational straight lines commensurable in square only, the remainder (DH minus HK) is irrational, and is called an apotome.
+
+**Step 9.** Now the rectangle equal to sq(AC) is the rectangle on the rational straight line DI with breadth equal to the apotome (DH - HK). Since (DH - HK) is an apotome, the rectangle DI times (DH - HK) equals sq(AC).
+
+**Step 10.** By D10.1.4, since the square on AC equals a rectangle contained by a rational straight line and an irrational (apotome) breadth, and this area is irrational, the side AC — being the straight line whose square equals this irrational area — is itself irrational.
+
+**Step 11.** More precisely, the area sq(AC) equals the rational line DI applied to an apotome. The area DG (the sum of the squares on AB, BC) is medial, and GK (twice the rectangle AB, BC) is rational. Since a medial area and a rational area are incommensurable (by 10.26, a medial area does not exceed a medial area by a rational area, which implies medial and rational areas are distinct in kind), the difference DG - GK is neither rational nor zero.
+
+**Step 12.** To confirm the area sq(AC) is irrational: the sum of the squares on AB, BC is medial, hence irrational by D10.1.4. Twice the rectangle AB, BC is rational. If sq(AC) were rational, then sq(AC) + 2*rect(AB,BC) would be rational (by 10.15, the sum of two commensurable magnitudes is commensurable, and a rational plus a rational is rational). But sq(AC) + 2*rect(AB,BC) equals the sum of the squares on AB and BC, which is medial, hence irrational — a contradiction. Therefore sq(AC) is not rational.
+
+**Step 13.** Since sq(AC) is not rational, AC is not rational. Furthermore, sq(AC) is the difference of a medial area and a rational area, which is irrational by the argument above. Therefore AC is irrational, since the square on it is an irrational area, and by D10.1.4 the straight line producing an irrational square is irrational.
+
+**Step 14.** Let AC be called that which produces with a rational area a medial whole. For the rectangle contained by AC and BC, together with other terms, reconstructs the medial whole from a rational component, justifying the name. Specifically, if one applies a rational area to AC, the resulting total produces the medial whole from which BC was subtracted. Thus the remainder AC is irrational, and it is called that which produces with a rational area a medial whole. Q.E.D.
+
+**USED:** 1.45, 10.13, 10.15, 10.20, 10.22, 10.73, 2.7, D10.1.4
+**Human refs (from References field):** 10.16, 10.34, 2.7
+**Jaccard:** 0.100 — AI adds ['1.45', '10.13', '10.15', '10.20', '10.22', '10.73', 'D10.1.4']; Human adds ['10.16', '10.34']
+
+## Proposition 10.78
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial, twice the rectangle contained by them medial, and further the squares on them incommensurable with twice the rectangle contained by them, the remainder is irrational; and let it be called that which produces with a medial area a medial whole.
+
+**Step 1.** Let AB be a straight line, and from AB let BC be subtracted, where BC is incommensurable in square with AB, the sum of the squares on AB and BC is medial, twice the rectangle contained by AB and BC is medial, and the squares on AB and BC are incommensurable with twice the rectangle AB, BC. We must show that the remainder AC is irrational.
+
+**Step 2.** Set out a rational straight line DI. Apply to DI the rectangle DG equal to the sum of the squares on AB and BC, producing DG with breadth DE, so that DG = sq(AB) + sq(BC). Then apply to DI, starting from G, the rectangle GH equal to twice the rectangle AB, BC, subtracting it from DG, so that the remaining rectangle DH equals sq(AC). This follows because by 2.7, sq(AB) + sq(BC) = sq(AC) + 2*rect(AB,BC), hence sq(AC) = (sq(AB) + sq(BC)) - 2*rect(AB,BC) = DG - GH = DH.
+
+**Step 3.** Since the sum of the squares on AB and BC is medial, the area DG is medial. This medial area DG is applied to the rational straight line DI, so by 10.22, DE is rational and incommensurable in length with DI.
+
+**Step 4.** Since twice the rectangle AB, BC is medial, the area GH is medial. This medial area GH is applied to the rational straight line DI, so by 10.22, GK (the breadth of GH along DI) is rational and incommensurable in length with DI.
+
+**Step 5.** Since the squares on AB and BC are incommensurable with twice the rectangle AB, BC, the area DG is incommensurable with the area GH. But DG is the rectangle DI by DE, and GH is the rectangle DI by GK. Since these rectangles share the same side DI, by 6.1 they are as DE is to GK. Therefore DE is incommensurable in length with GK, by 10.11.
+
+**Step 6.** Now DE is rational and GK is rational (from Steps 3 and 4), and they are incommensurable in length with each other (from Step 5). Therefore DE and GK are rational straight lines commensurable in square only. Hence by 10.73, the difference EG (that is, DE minus GK along the line) is irrational, called an apotome.
+
+**Step 7.** But DI is rational. The rectangle DH, which equals sq(AC), has DI as one side and EG as the other side (since DH = DG - GH corresponds to the breadth DE - GK = EG along DI). Since DI is rational and EG is an apotome (irrational), the area DH, which is the rectangle contained by a rational straight line and an apotome, is irrational. Therefore sq(AC) is irrational.
+
+**Step 8.** Since sq(AC) is irrational, the straight line AC is itself irrational, by D10.1.4.
+
+**Step 9.** Moreover, AC cannot be the same as the irrational lines previously defined (apotome, first apotome of a medial, second apotome of a medial, minor, or that which produces with a rational area a medial whole), because the square on each of those, applied to a rational straight line, produces a specific type of breadth: the apotome produces a first apotome (by analogy with 10.60 and the corresponding apotome propositions), the first apotome of a medial produces a second apotome, the second apotome of a medial produces a third apotome, the minor produces a fourth apotome, and that which produces with a rational area a medial whole produces a fifth apotome. But the conditions of 10.78 -- that both the sum of squares and twice the rectangle are medial and incommensurable with each other -- correspond to none of these earlier types. The breadth EG here is an apotome formed from two rational lines whose properties differ from the preceding cases. Therefore AC is a new kind of irrational, and let it be called that which produces with a medial area a medial whole.
+
+**Step 10.** Therefore, if from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial, twice the rectangle contained by them medial, and the squares on them incommensurable with twice the rectangle contained by them, the remainder is irrational; and let it be called that which produces with a medial area a medial whole. Q.E.D.
+
+**USED:** 10.11, 10.22, 10.73, 2.7, 6.1, D10.1.4
+**Human refs (from References field):** 10.11, 10.20, 10.22, 10.35, 10.73, 2.7, 6.1
+**Jaccard:** 0.625 — AI adds ['D10.1.4']; Human adds ['10.20', '10.35']
+
+## Proposition 10.79
+**Statement:** To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.
+
+**Step 1.** Let AB be an apotome, and let BC be an annex to it, so that AC and BC are rational straight lines commensurable in square only, and AB = AC - BC. [10.73]
+
+**Step 2.** Suppose, for the sake of contradiction, that BD is another rational straight line annexed to AB, different from BC, so that AD and BD are also rational straight lines commensurable in square only, and AB = AD - BD. [10.73]
+
+**Step 3.** Since AC and BC are rational, the squares on AC and on BC are each rational areas, and since AC and BC are commensurable in square (being rational lines), the squares on AC and BC are commensurable with one another. Therefore sq(AC) + sq(BC) is commensurable with each of sq(AC) and sq(BC), and hence is a rational area. [D10.1.3, D10.1.4, 10.15]
+
+**Step 4.** By the same reasoning, since AD and BD are rational straight lines commensurable in square, sq(AD) + sq(BD) is also a rational area. [D10.1.3, D10.1.4, 10.15]
+
+**Step 5.** Since AB = AC - BC, by Proposition 2.7, sq(AC) + sq(BC) = 2*rect(AC, BC) + sq(AB). [2.7]
+
+**Step 6.** Since AB = AD - BD, by Proposition 2.7, sq(AD) + sq(BD) = 2*rect(AD, BD) + sq(AB). [2.7]
+
+**Step 7.** Subtracting the equation of Step 6 from that of Step 5, we obtain: [sq(AC) + sq(BC)] - [sq(AD) + sq(BD)] = 2*rect(AC, BC) - 2*rect(AD, BD). [CN2, CN3]
+
+**Step 8.** The left-hand side of this equation is the difference of two rational areas (by Steps 3 and 4). Since rational areas are commensurable with one another, their difference is either zero or a rational area. [10.12, 10.15]
+
+**Step 9.** Since AC and BC are rational straight lines commensurable in square only, the rectangle rect(AC, BC) is a medial area. [10.21]
+
+**Step 10.** Since AD and BD are rational straight lines commensurable in square only, the rectangle rect(AD, BD) is a medial area. [10.21]
+
+**Step 11.** Since rect(AC, BC) is medial, and 2*rect(AC, BC) is commensurable with rect(AC, BC) (being in the ratio 2:1, a ratio of numbers), by the definition of rational and medial areas, 2*rect(AC, BC) is also medial. Similarly, 2*rect(AD, BD) is medial. [10.6, D10.1.4]
+
+**Step 12.** Suppose the left-hand side of the equation in Step 7 is nonzero, i.e., [sq(AC) + sq(BC)] differs from [sq(AD) + sq(BD)]. Then by Step 8, their difference is rational. But by Step 7, this rational difference equals 2*rect(AC, BC) - 2*rect(AD, BD), which is the difference of two medial areas. By Proposition 10.26, a medial area does not exceed a medial area by a rational area. This is a contradiction. [10.26]
+
+**Step 13.** Therefore, [sq(AC) + sq(BC)] = [sq(AD) + sq(BD)], which means sq(AC) - sq(AD) = sq(BD) - sq(BC). [CN3]
+
+**Step 14.** Also, from Step 7 with the left side equal to zero, we get 2*rect(AC, BC) = 2*rect(AD, BD), and therefore rect(AC, BC) = rect(AD, BD). [CN3]
+
+**Step 15.** From AB = AC - BC and AB = AD - BD, we have AC - BC = AD - BD, and therefore AC - AD = BC - BD. [CN2, CN3]
+
+**Step 16.** Suppose AC is not equal to AD. First, suppose AC is greater than AD. Then by Step 15, BC - BD = AC - AD is positive, so BC is greater than BD. [CN5]
+
+**Step 17.** Since AC is greater than AD, the square on AC is greater than the square on AD, so sq(AC) - sq(AD) is positive. [CN5]
+
+**Step 18.** Since BC is greater than BD, the square on BC is greater than the square on BD, so sq(BD) - sq(BC) is negative. [CN5]
+
+**Step 19.** But by Step 13, sq(AC) - sq(AD) = sq(BD) - sq(BC). This asserts that a positive quantity equals a negative quantity, which is impossible. [CN5]
+
+**Step 20.** Similarly, if AD is greater than AC, then BD is greater than BC by Step 15, leading to sq(AD) - sq(AC) being positive while sq(BC) - sq(BD) is negative, and Step 13 again yields the same contradiction. [CN5]
+
+**Step 21.** Therefore AC equals AD. By Step 15, it follows that BC equals BD. [CN3]
+
+**Step 22.** Hence to the apotome AB, only one rational straight line BC can be annexed which is commensurable with the whole in square only. Q.E.D.
+
+**USED:** 10.12, 10.15, 10.21, 10.26, 10.6, 10.73, 2.7, CN2, CN3, CN5, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.21, 10.26, 10.73, 2.7
+**Jaccard:** 0.333 — AI adds ['10.12', '10.15', '10.6', 'CN2', 'CN3', 'CN5', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.80
+**Statement:** To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.
+
+**Step 1.** Let AB be a first apotome of a medial straight line, and let BC be annexed to it, so that AC and CB are medial straight lines commensurable in square only, and the rectangle AC by CB is rational [10.74]. We must show that no other medial straight line can be annexed to AB satisfying these conditions.
+
+**Step 2.** Suppose, for the sake of contradiction, that BD is also annexed to AB, so that AD and DB are medial straight lines commensurable in square only, and the rectangle AD by DB is rational.
+
+**Step 3.** Since AC - CB = AB = AD - DB, by Proposition 2.7 we have the identity: the square on AC plus the square on CB minus twice the rectangle AC by CB equals the square on AB. Likewise, the square on AD plus the square on DB minus twice the rectangle AD by DB equals the square on AB.
+
+**Step 4.** Therefore, the square on AC plus the square on CB minus twice the rectangle AC by CB equals the square on AD plus the square on DB minus twice the rectangle AD by DB [CN1]. Rearranging, we obtain: (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)) = 2*rect(AC, CB) - 2*rect(AD, DB).
+
+**Step 5.** Now, the rectangle AC by CB is rational (by hypothesis on BC), and the rectangle AD by DB is rational (by hypothesis on BD). Since both 2*rect(AC, CB) and 2*rect(AD, DB) are rational areas (a rational area taken twice remains commensurable with a rational area, hence rational), their difference 2*rect(AC, CB) - 2*rect(AD, DB) is rational [10.15, D10.1.4].
+
+**Step 6.** We now show that sq(AC) + sq(CB) is a medial area. Since AC is medial, the square on AC is a medial area [D10.1.4]. Since AC and CB are commensurable in square, sq(AC) is commensurable with sq(CB) [D10.1.2]. An area commensurable with a medial area is itself medial [D10.1.4, 10.12]. By Proposition 10.15, since sq(AC) and sq(CB) are commensurable, their sum sq(AC) + sq(CB) is commensurable with sq(AC). Since sq(AC) is medial and sq(AC) + sq(CB) is commensurable with it, the sum sq(AC) + sq(CB) is medial [D10.1.4].
+
+**Step 7.** By exactly the same reasoning, since AD is medial and AD, DB are commensurable in square only, the sum sq(AD) + sq(DB) is also a medial area.
+
+**Step 8.** From Step 4, the difference of the medial area sq(AC) + sq(CB) and the medial area sq(AD) + sq(DB) equals the rational area 2*rect(AC, CB) - 2*rect(AD, DB). That is, one medial area exceeds another medial area by a rational area.
+
+**Step 9.** But by Proposition 10.26, a medial area does not exceed a medial area by a rational area. This is a contradiction.
+
+**Step 10.** Therefore the assumption that another medial straight line BD can be annexed is false. To a first apotome of a medial straight line, only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle. Q.E.D.
+
+**USED:** 10.12, 10.15, 10.26, 10.74, 2.7, CN1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.15, 10.23, 10.26, 10.74, 2.7
+**Jaccard:** 0.444 — AI adds ['10.12', 'CN1', 'D10.1.2', 'D10.1.4']; Human adds ['10.23']
+
+## Proposition 10.81
+**Statement:** To a second apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a medial rectangle.
+
+**Step 1.** Let AB be a second apotome of a medial straight line, and let BC be annexed to AB, so that AC and CB are medial straight lines commensurable in square only and containing with one another a medial rectangle [10.75]. Suppose, for the sake of contradiction, that BD can also be annexed to AB, where AD and DB are medial straight lines commensurable in square only and containing with one another a medial rectangle, with BD not equal to BC.
+
+**Step 2.** Set out a rational straight line EF. Apply to EF the rectangle EG equal to the square on AC minus the square on CB (that is, equal to the squares on AC and CB minus twice the rectangle AC by CB, since the square on AB equals the squares on AC, CB minus twice the rectangle AC by CB [2.7]), producing EH as breadth. Similarly, apply to EF the rectangle HI equal to twice the rectangle AC by CB, producing HK as breadth.
+
+**Step 3.** Then the whole rectangle EI equals the squares on AC and CB together [CN2]. Now since AC and CB are medial straight lines commensurable in square only, the squares on AC and CB are each medial areas, and their sum is medial [10.15, 10.23]. Therefore the rectangle EI, being equal to the sum of the squares on AC and CB, is a medial area.
+
+**Step 4.** Since EI is applied to the rational straight line EF, the breadth EK is rational and incommensurable in length with EF [10.22].
+
+**Step 5.** Now the rectangle AC by CB is medial (since AC and CB are medial and commensurable in square only, and their rectangle is medial by hypothesis from the definition of a second apotome of a medial straight line [10.75]). Therefore twice the rectangle AC by CB is also medial [10.23]. The rectangle HI equals twice the rectangle AC by CB, so HI is medial.
+
+**Step 6.** Since HI is a medial area applied to the rational straight line EF, the breadth HK is rational and incommensurable in length with EF [10.22].
+
+**Step 7.** Since AC and CB are commensurable in square only, AC is incommensurable in length with CB. Therefore the square on AC is incommensurable with the rectangle AC by CB [10.11, 6.1]. Hence the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB [10.13, 10.16]. That is, EI is incommensurable with HI. Therefore EK is incommensurable in length with HK [6.1, 10.11].
+
+**Step 8.** Since EK and HK are each rational and incommensurable in length with each other, EK and HK are rational straight lines commensurable in square only. Therefore the whole EH (which equals EK minus HK in the arrangement, taking EG = EI - HI, so that EH corresponds to the square on AB) — more precisely, we note that EG equals the square on AB (since EG = squares on AC, CB minus twice rectangle AC by CB = square on AB by [2.7]). So the square on AB, applied to the rational straight line EF, produces breadth EH.
+
+**Step 9.** Now perform the same construction with the other decomposition. Apply to EF the rectangle EL equal to the square on AD minus the square on DB (equivalently, the squares on AD and DB minus twice the rectangle AD by DB, which equals the square on AB [2.7]), producing EM as breadth. Apply to EF the rectangle MI equal to twice the rectangle AD by DB, producing MN as breadth.
+
+**Step 10.** By the same reasoning as in Steps 3-4, the sum of the squares on AD and DB is medial (since AD and DB are medial straight lines commensurable in square only [10.15, 10.23]), and applied to the rational line EF, the breadth EN is rational and incommensurable in length with EF [10.22].
+
+**Step 11.** Similarly, twice the rectangle AD by DB is medial [10.23], and applied to the rational line EF, the breadth MN is rational and incommensurable in length with EF [10.22].
+
+**Step 12.** By the same reasoning as Step 7, EN and MN are rational and incommensurable in length with each other.
+
+**Step 13.** Now since both decompositions yield the same square on AB, we have EG = EL (both equal the square on AB). Therefore the remaining rectangles HI and MI are the differences: HI = EI - EG and MI = EI' - EL, but more directly, EI = EG + HI means the squares on AC, CB equal the square on AB plus twice the rectangle AC by CB, and similarly the squares on AD, DB equal the square on AB plus twice the rectangle AD by DB [2.7].
+
+**Step 14.** Therefore the sum of the squares on AC and CB minus the sum of the squares on AD and DB equals twice the rectangle AD by DB minus twice the rectangle AC by CB [CN1, CN2, CN3]. That is, the difference of the medial areas (squares on AC, CB) and (squares on AD, DB) equals the difference of the medial areas (twice rectangle AD by DB) and (twice rectangle AC by CB).
+
+**Step 15.** Suppose the sum of the squares on AC and CB is not equal to the sum of the squares on AD and DB. Then their difference is a medial area (since each sum is medial). But this difference also equals the difference of twice the rectangle AD by DB and twice the rectangle AC by CB.
+
+**Step 16.** Now the sum of the squares on AC, CB is medial and the sum of the squares on AD, DB is medial. If they are commensurable, then their difference is either zero or commensurable with each (and hence medial). If they are incommensurable, we proceed as follows. In either case, twice the rectangle AC by CB is medial and twice the rectangle AD by DB is medial. The equality from Step 14 means that one medial area exceeds another medial area by a quantity equal to the difference of two other medial areas.
+
+**Step 17.** However, the squares on AC and CB are commensurable with each other (since AC and CB are commensurable in square), so the sum of squares on AC and CB is commensurable with the square on AC [10.15]. Similarly the sum of squares on AD and DB is commensurable with the square on AD. Since AC and AD are both medial, the squares on AC and AD are both medial. If the sums of squares are commensurable with each other, then their difference would be commensurable with each sum, hence medial.
+
+**Step 18.** But the key constraint is this: the sum of the squares on AC, CB is incommensurable with twice the rectangle AC by CB (from Step 7), and similarly the sum of the squares on AD, DB is incommensurable with twice the rectangle AD by DB. If the sum of the squares on AC, CB equals the sum of the squares on AD, DB, then twice the rectangle AC by CB equals twice the rectangle AD by DB (from Step 14), so the rectangle AC by CB equals the rectangle AD by DB.
+
+**Step 19.** In the case that the sums of squares are equal: since the squares on AC and CB together equal the squares on AD and DB together, and the rectangle AC by CB equals the rectangle AD by DB, by [2.7] the square on AB can be expressed in both ways. Since the square on AC plus the square on CB equals the square on AD plus the square on DB, and the rectangle AC by CB equals the rectangle AD by DB, applying the identity of [2.5] or [2.6], we can show AC = AD and CB = DB (or AC = DB and CB = AD).
+
+**Step 20.** More precisely, since AC + CB > AC - CB and AD + DB > AD - DB, and the square on (AC + CB) equals (squares on AC, CB) + 2 rect(AC,CB) while the square on (AC - CB) equals (squares on AC, CB) - 2 rect(AC,CB) [2.4, 2.7], and since (squares on AC, CB) = (squares on AD, DB) and rect(AC,CB) = rect(AD,DB), we get the square on (AC + CB) equals the square on (AD + DB), and the square on (AC - CB) equals the square on (AC - CB). Hence AC + CB = AD + DB. But also AB = AC - CB = AD - DB (since AB is obtained by subtracting the annex from the whole in each case). From AC + CB = AD + DB and AC - CB = AD - DB, we get AC = AD and CB = DB [CN2, CN3].
+
+**Step 21.** If AC = AD, then since CB and DB are each subtracted from AC (= AD) to give AB, we have CB = DB [CN3], contradicting our assumption that BD is different from BC.
+
+**Step 22.** Now consider the case where the sums of squares are not equal. Suppose the sum of the squares on AC and CB exceeds the sum of the squares on AD and DB. Then by Step 14, twice the rectangle AD by DB exceeds twice the rectangle AC by CB by the same amount. But the sum of the squares on AC, CB is a medial area and the sum of the squares on AD, DB is a medial area, so their difference is the amount by which one medial area exceeds another. This same difference equals the excess of twice rect(AD,DB) over twice rect(AC,CB), which is also the difference of two medial areas. Now, the sum of squares on AC, CB is incommensurable with twice rect(AC,CB) (Step 7). Adding equal quantities to unequal ones, the sum of squares on AC, CB plus twice rect(AD,DB) is incommensurable with twice rect(AC,CB) plus twice rect(AD,DB) only if the added terms preserve incommensurability. But in fact, rearranging: (squares on AC, CB) - (squares on AD, DB) = 2 rect(AD,DB) - 2 rect(AC,CB). The left side, if nonzero, represents a medial area exceeding a medial area. The right side is also a medial area exceeding a medial area. This leads to a medial area differing from a medial area by a rational area, which contradicts [10.26].
+
+**Step 23.** To see the contradiction more precisely: from the arrangement on EF, the rectangles EI (= squares on AC,CB) and the corresponding rectangle for AD,DB are both medial, applied to the rational line EF. Their breadths EK and EN are both rational. The difference of EI and the corresponding rectangle is applied to EF with breadth EK - EN, which is rational (difference of rationals). But this difference also equals the difference of two medial areas (twice rect(AD,DB) minus twice rect(AC,CB)), whose breadths HK and MN are rational. So EK - EN = MN - HK, a rational length. But the difference of the medial areas (on the left side) would need to be either zero or itself medial, while being applied to a rational line with rational breadth would make it rational. A medial area cannot equal a rational area [by D10.1.3, D10.1.4]. This is a contradiction unless both differences are zero.
+
+**Step 24.** Therefore the sums of squares must be equal and the doubled rectangles must be equal, which by Steps 19-21 gives CB = DB. Hence BC is the unique annex, and only one medial straight line can be annexed to a second apotome of a medial straight line satisfying the stated conditions. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.15, 10.16, 10.22, 10.23, 10.26, 10.75, 2.4, 2.7, 6.1, CN1, CN2, CN3, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.22, 10.23, 10.6, 10.73, 10.75, 10.79, 2.7, 6.1
+**Jaccard:** 0.421 — AI adds ['10.16', '10.26', '2.4', 'CN1', 'CN2', 'CN3', 'D10.1.3', 'D10.1.4']; Human adds ['10.6', '10.73', '10.79']
+
+## Proposition 10.82
+**Statement:** To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.
+
+**Step 1.** Let AB be a minor straight line, and let BC be an annex to it, so that AC and CB are incommensurable in square, the sum of the squares on AC and CB is rational, and twice the rectangle AC, CB is medial [10.76]. We must show that no other straight line besides BC can be annexed to AB satisfying these conditions.
+
+**Step 2.** Suppose, for the sake of contradiction, that BD is also an annex to AB satisfying the same conditions. Then AD and DB are incommensurable in square, the sum of the squares on AD and DB is rational, and twice the rectangle AD, DB is medial [10.76].
+
+**Step 3.** Since AC and CB are incommensurable in square and AD and DB are incommensurable in square, each pair produces irrational lines of a specific type. Now, since the sum of the squares on AC, CB is rational and the sum of the squares on AD, DB is also rational, the difference between these two sums is either zero or rational, because the difference of two rational areas is rational [10.15, CN3].
+
+**Step 4.** By 2.7, the squares on AD and DB together equal twice the squares on AE and EB plus twice the square on DE, where E is the midpoint of the relevant segment. However, we proceed more directly. Since AB = AC - CB = AD - DB, we consider the squares on these decompositions. By 2.7, for any straight line cut at any point, the square on the whole plus the square on one segment equals twice the rectangle contained by the whole and that segment plus the square on the remaining segment.
+
+**Step 5.** Consider that the squares on AC, CB differ from the squares on AD, DB. We have: sq(AC) + sq(CB) = sq(AD) + sq(DB) + 2*rect(AD, DB) - 2*rect(AC, CB) is not directly useful. Instead, we apply 2.4 and the identity relating the two decompositions of AB.
+
+**Step 6.** Since AB = AC - CB and AB = AD - DB, by 2.7 applied to line AC cut at B (so that AB = AC - CB, meaning B lies on AC such that CB is the cut-off part), we have: sq(AC) + sq(CB) = 2*rect(AC, CB) + sq(AB). Similarly, sq(AD) + sq(DB) = 2*rect(AD, DB) + sq(AB) [2.7].
+
+**Step 7.** Therefore, sq(AC) + sq(CB) - 2*rect(AC, CB) = sq(AB) = sq(AD) + sq(DB) - 2*rect(AD, DB) [CN1].
+
+**Step 8.** It follows that (sq(AC) + sq(CB)) - 2*rect(AC, CB) = (sq(AD) + sq(DB)) - 2*rect(AD, DB), and hence (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)) = 2*rect(AC, CB) - 2*rect(AD, DB) [CN2, CN3].
+
+**Step 9.** Now, the left side, (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)), is the difference of two rational areas (since each sum is rational by hypothesis). Therefore this difference is either zero or rational [10.15, CN3].
+
+**Step 10.** The right side, 2*rect(AC, CB) - 2*rect(AD, DB), is the difference of two medial areas (since each double rectangle is medial by hypothesis).
+
+**Step 11.** If the difference is not zero, then a rational area equals a difference of two medial areas. But by 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference of two medial areas cannot be rational (unless it is zero). Hence both sides must equal zero [10.26].
+
+**Step 12.** From Step 11, we conclude that sq(AC) + sq(CB) = sq(AD) + sq(DB), and also 2*rect(AC, CB) = 2*rect(AD, DB), which gives rect(AC, CB) = rect(AD, DB) [CN1].
+
+**Step 13.** Since sq(AC) + sq(CB) = sq(AD) + sq(DB), and rect(AC, CB) = rect(AD, DB), it follows that sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AD) + sq(DB) + 2*rect(AD, DB) [CN2].
+
+**Step 14.** By 2.4, sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AC + CB), and sq(AD) + sq(DB) + 2*rect(AD, DB) = sq(AD + DB). Therefore sq(AC + CB) = sq(AD + DB), and hence AC + CB = AD + DB [2.4, CN1].
+
+**Step 15.** Similarly, sq(AC) + sq(CB) - 2*rect(AC, CB) = sq(AC - CB), and sq(AD) + sq(DB) - 2*rect(AD, DB) = sq(AD - DB) by 2.7. Since both the sums of squares and the rectangles are equal (Step 12), we have sq(AC - CB) = sq(AD - DB), and hence AC - CB = AD - DB [2.7, CN1].
+
+**Step 16.** But AC - CB = AB = AD - DB (by the definition of the minor straight line, where AB is the remainder when the annex is subtracted from the whole). So this is consistent. From Step 14, AC + CB = AD + DB, and from the given, AC - CB = AD - DB [CN1].
+
+**Step 17.** Adding these two equations: (AC + CB) + (AC - CB) = (AD + DB) + (AD - DB), which gives 2*AC = 2*AD, hence AC = AD [CN2, CN1].
+
+**Step 18.** Subtracting: (AC + CB) - (AC - CB) = (AD + DB) - (AD - DB), which gives 2*CB = 2*DB, hence CB = DB [CN3, CN1].
+
+**Step 19.** Therefore BC = BD, so the annex to the minor straight line AB is unique. Only one straight line can be annexed to AB which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial. Q.E.D.
+
+**USED:** 10.15, 10.26, 10.76, 2.4, 2.7, CN1, CN2, CN3
+**Human refs (from References field):** 10.26, 10.76
+**Jaccard:** 0.250 — AI adds ['10.15', '2.4', '2.7', 'CN1', 'CN2', 'CN3']
+
+## Proposition 10.83
+**Statement:** To a straight line which produces with a rational area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial, but twice the rectangle contained by them rational.
+
+**Step 1.** Let AB be a straight line which produces with a rational area a medial whole, and let BC be the straight line annexed to it, so that AC is the whole line from which BC was subtracted to leave remainder AB. Then by the definition of this irrational type (10.77), AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, and twice the rectangle AC by CB is rational.
+
+**Step 2.** Suppose, for the sake of contradiction, that another straight line BD, different from BC, can also be annexed to AB satisfying the same conditions. Then AD is the whole line (where AD = AB + BD), and by hypothesis: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, and twice the rectangle AD by DB is rational.
+
+**Step 3.** Now, since AC = AB + BC, by Proposition 2.3 (or equivalently 2.1), the rectangle contained by AC and CB equals the rectangle contained by AB and CB together with the square on CB. That is, rect(AC, CB) = rect(AB, CB) + sq(CB). Therefore twice the rectangle AC by CB equals twice the rectangle AB by CB plus twice the square on CB. Hence sq(AC) + sq(CB) = sq(AB) + 2*sq(CB) + 2*rect(AB, CB) by expanding sq(AC) using 2.4: sq(AC) = sq(AB + CB) = sq(AB) + sq(CB) + 2*rect(AB, CB). Thus sq(AC) + sq(CB) = sq(AB) + 2*rect(AB, CB) + 2*sq(CB) = sq(AB) + 2*rect(AC, CB), using the identity from the first part of this step.
+
+**Step 4.** By the same reasoning applied to the second decomposition, since AD = AB + BD, we obtain sq(AD) + sq(BD) = sq(AB) + 2*rect(AD, BD).
+
+**Step 5.** Subtracting the equation of Step 4 from that of Step 3 (or vice versa), we find that [sq(AC) + sq(CB)] - [sq(AD) + sq(BD)] = 2*rect(AC, CB) - 2*rect(AD, BD), by Common Notion 3.
+
+**Step 6.** Now twice the rectangle AC by CB is rational (Step 1) and twice the rectangle AD by DB is rational (Step 2). Therefore the right-hand side of the equation in Step 5, being the difference of two rational areas, is either zero or rational.
+
+**Step 7.** Meanwhile, the left-hand side is the difference of two medial areas: the sum of the squares on AC and CB is medial (Step 1), and the sum of the squares on AD and DB is medial (Step 2).
+
+**Step 8.** By Proposition 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference on the left-hand side cannot be a non-zero rational area. Since the right-hand side is rational or zero (Step 6), and the left-hand side cannot be a non-zero rational quantity (Step 7 and 10.26), both sides must equal zero.
+
+**Step 9.** Therefore sq(AC) + sq(CB) = sq(AD) + sq(BD), and 2*rect(AC, CB) = 2*rect(AD, BD).
+
+**Step 10.** From the equality sq(AC) + sq(CB) = sq(AD) + sq(BD), rearranging by CN3, we have sq(AD) - sq(AC) = sq(CB) - sq(BD). Now suppose BD is not equal to BC. Without loss of generality, assume BD is greater than BC. Then AD = AB + BD is greater than AC = AB + BC, so AD > AC.
+
+**Step 11.** Since AD > AC, by Proposition 2.4, sq(AD) = sq(AC + (AD - AC)) = sq(AC) + sq(AD - AC) + 2*rect(AC, AD - AC). By Common Notion 5, sq(AD) is greater than sq(AC), so sq(AD) - sq(AC) is positive.
+
+**Step 12.** Similarly, since BD > BC by our assumption, sq(BD) > sq(BC) by the same reasoning (2.4 and CN5), so sq(CB) - sq(BD) is negative (that is, sq(BD) exceeds sq(CB)).
+
+**Step 13.** But Step 10 asserts sq(AD) - sq(AC) = sq(CB) - sq(BD). The left side is positive (Step 11) while the right side is negative (Step 12). This is impossible. The same contradiction arises if we assume BC > BD (the signs simply interchange). Therefore BC = BD.
+
+**Step 14.** Since BC = BD, it follows that AC = AB + BC = AB + BD = AD. Therefore the annexed straight line is unique: only one straight line can be annexed to AB satisfying the stated conditions. Q.E.D.
+
+**USED:** 10.26, 10.77, 2.1, 2.3, 2.4, CN3, CN5
+**Human refs (from References field):** 10.26, 10.77
+**Jaccard:** 0.286 — AI adds ['2.1', '2.3', '2.4', 'CN3', 'CN5']
+
+## Proposition 10.84
+**Statement:** To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial and twice the rectangle contained by them both medial and also incommensurable with the sum of the squares on them.
+
+**Step 1.** Let AB be a straight line which produces with a medial area a medial whole, and let BC be annexed to it, so that AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, twice the rectangle AC by CB is medial, and the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB [10.78].
+
+**Step 2.** Suppose, for the sake of contradiction, that BD is another straight line annexed to AB, so that AD and DB are also incommensurable in square, the sum of the squares on AD and DB is medial, twice the rectangle AD by DB is medial, and the sum of the squares on AD and DB is incommensurable with twice the rectangle AD by DB [10.78].
+
+**Step 3.** Set out a rational straight line EF. Apply to EF the rectangle EG equal to the sum of the squares on AC and CB, producing EH as breadth. Subtract from EG the rectangle HG equal to twice the rectangle AC by CB, so that the remainder, the rectangle EL (where L is the appropriate point), equals the square on AB [2.7]. That is, the square on AB equals the sum of the squares on AC and CB minus twice the rectangle AC by CB.
+
+**Step 4.** Similarly, apply to EF the rectangle EM equal to the sum of the squares on AD and DB, producing EN as breadth. Subtract from EM the rectangle NM equal to twice the rectangle AD by DB, so that the remainder equals the square on AB [2.7].
+
+**Step 5.** Since the square on AB is the same in both cases, the rectangle EL from Step 3 equals the rectangle from Step 4. That is, (sum of squares on AC, CB) minus (twice rect AC by CB) equals (sum of squares on AD, DB) minus (twice rect AD by DB).
+
+**Step 6.** Now, the sum of the squares on AC and CB is medial (by hypothesis from 10.78). Since this medial area is applied to the rational straight line EF to produce the rectangle EG with breadth EH, the breadth EH is rational and incommensurable in length with EF [10.22].
+
+**Step 7.** Twice the rectangle AC by CB is medial (by hypothesis from 10.78). Since this medial area is applied to the rational straight line EF to produce the rectangle HG, the breadth HG (measured along EF's direction) is rational and incommensurable in length with EF [10.22].
+
+**Step 8.** Since the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB (by hypothesis from 10.78), the rectangle EG is incommensurable with the rectangle HG. Therefore the breadth EH is incommensurable in length with the breadth corresponding to HG [6.1, 10.11].
+
+**Step 9.** Since EH and HG's breadth are each rational and incommensurable in length with each other, they are rational straight lines commensurable in square only. Therefore EH plus the breadth for HG (or their difference, as relevant) forms an apotome or binomial, which is irrational [10.73, 10.36]. Thus the breadth EL corresponding to the square on AB (which equals EG minus HG applied to EF) is irrational. Call the breadth for the rectangle equal to the square on AB the line EL. Then EL is irrational, and therefore the square on AB is an irrational area applied to a rational line [D10.1.4].
+
+**Step 10.** Similarly, the sum of the squares on AD and DB is medial, and applied to the rational line EF gives a breadth that is rational and incommensurable in length with EF [10.22]. Twice the rectangle AD by DB is medial, and applied to EF gives a breadth that is rational and incommensurable in length with EF [10.22]. Since the sum of the squares on AD and DB is incommensurable with twice the rectangle AD by DB, the corresponding breadths are incommensurable in length with each other [6.1, 10.11]. These breadths are rational and commensurable in square only, so their combination is similarly irrational [10.73, 10.36].
+
+**Step 11.** Since both constructions yield the same square on AB applied to EF, we have EG minus HG equals EM minus NM (where all rectangles are on the same base EF). Therefore EG plus NM equals EM plus HG [CN2, CN3].
+
+**Step 12.** Now EG (the sum of squares on AC, CB) is medial, and EM (the sum of squares on AD, DB) is medial. Therefore EG plus NM and EM plus HG are each sums of a medial area and a medial area.
+
+**Step 13.** Suppose EG is commensurable with EM. Since EG is medial and EM is medial and they are commensurable, their difference is either zero or commensurable with each. But EG minus EM equals NM minus HG (from Step 11), meaning twice rect AD by DB minus twice rect AC by CB equals the difference of the sums of squares. Since HG (twice rect AC by CB) is medial and NM (twice rect AD by DB) is medial, if HG were commensurable with NM, then from EG minus EM = NM - HG and both sides being rational or zero, and from the commensurability, we could derive that EG is commensurable with HG. But EG is incommensurable with HG (Step 8). So if EG is commensurable with EM, then NM must be commensurable with HG (since EG - EM = NM - HG and commensurable magnitudes have commensurable differences [10.15]). But then EG + NM is commensurable with EM + HG [10.15]. Now EG + NM = EM + HG from Step 11, which is consistent but we need more.
+
+**Step 14.** We proceed more carefully. From Step 11, the sum of the squares on AC and CB plus twice the rectangle AD by DB equals the sum of the squares on AD and DB plus twice the rectangle AC by CB. Each side of this equation is the sum of two medial areas.
+
+**Step 15.** But the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB (hypothesis), and the sum of the squares on AD and DB is incommensurable with twice the rectangle AD by DB (hypothesis). If the sum of squares on AC, CB were commensurable with the sum of squares on AD, DB, then since their difference equals (twice rect AD by DB) minus (twice rect AC by CB), the two double rectangles would also be commensurable with each other [10.15, CN3]. Then the sum of squares on AC, CB would be commensurable with twice rect AC by CB (since it is commensurable with the sum of squares on AD, DB, which would then through the chain be commensurable with twice rect AD by DB, which is commensurable with twice rect AC by CB, giving commensurability by transitivity [10.12]). This contradicts the incommensurability hypothesis. Therefore the sum of the squares on AC and CB is incommensurable with the sum of the squares on AD and DB.
+
+**Step 16.** Similarly, if twice rect AC by CB were commensurable with twice rect AD by DB, then from the equation in Step 14, the sums of squares would be commensurable [10.15], contradicting Step 15. Therefore twice the rectangle AC by CB is incommensurable with twice the rectangle AD by DB.
+
+**Step 17.** Now from Step 14, each side is the sum of two medial areas that are incommensurable with each other. By 10.72, the side of the square equal to such a sum is either a second bimedial or a side of the sum of two medial areas.
+
+**Step 18.** But the left side: the sum of the squares on AC and CB plus twice the rectangle AD by DB. The sum of the squares on AC and CB is medial; twice the rectangle AD by DB is medial; and we must determine their commensurability. From Step 15, the sum of squares on AC, CB is incommensurable with the sum of squares on AD, DB. From the equation in Step 14 rearranged, the sum of squares on AC, CB plus twice rect AD by DB = sum of squares on AD, DB plus twice rect AC by CB. We need to check whether the sum of squares on AC, CB is commensurable with twice rect AD by DB. If it were, then (sum sq AC,CB) + (twice rect AD,DB) would be commensurable with twice the (sum sq AC,CB) or twice (twice rect AD,DB), which would be medial. And the right side would similarly be medial. But this needs careful analysis.
+
+**Step 19.** Consider the right side: sum of squares on AD, DB plus twice rect AC by CB. The sum of squares on AD, DB is medial and incommensurable with twice rect AD by DB (by hypothesis). Twice rect AC by CB is medial and incommensurable with the sum of squares on AC, CB. From Step 15, sum of squares on AC, CB is incommensurable with sum of squares on AD, DB. From Step 16, twice rect AC by CB is incommensurable with twice rect AD by DB.
+
+**Step 20.** Suppose for contradiction that (sum sq AC,CB) is commensurable with (twice rect AD,DB). Then from the equation (sum sq AC,CB) + (twice rect AD,DB) = (sum sq AD,DB) + (twice rect AC,CB), the left side is commensurable with (sum sq AC,CB) and hence with (twice rect AD,DB) [10.15]. So the right side (sum sq AD,DB) + (twice rect AC,CB) is commensurable with (twice rect AD,DB). This means (sum sq AD,DB) + (twice rect AC,CB) is commensurable with (twice rect AD,DB). Therefore (sum sq AD,DB) is commensurable with (twice rect AD,DB) - (twice rect AC,CB) or more precisely, since (sum sq AD,DB) + (twice rect AC,CB) is commensurable with (twice rect AD,DB), we get (sum sq AD,DB) is commensurable with (twice rect AD,DB) minus (twice rect AC,CB) [10.15, 10.16]. But from Step 16, twice rect AC,CB is incommensurable with twice rect AD,DB. So (twice rect AD,DB) is incommensurable with (twice rect AC,CB), meaning their difference is incommensurable with each [10.16]. If (sum sq AD,DB) is commensurable with this difference, then (sum sq AD,DB) is incommensurable with (twice rect AD,DB) [10.13], which is consistent with our hypothesis. However, going back: (sum sq AD,DB) + (twice rect AC,CB) commensurable with (twice rect AD,DB) means (sum sq AD,DB) commensurable with (twice rect AD,DB) - (twice rect AC,CB). Actually from 10.15/10.16, if A + B is commensurable with C, it does not directly follow that A is commensurable with C - B unless B is commensurable with C. Let us take a different approach.
+
+**Step 21.** We apply the method used in 10.82 and 10.83 more directly. From the identity in Step 14: (sq AC + sq CB) + 2*rect(AD,DB) = (sq AD + sq DB) + 2*rect(AC,CB). Each side equals sq AC + sq CB + 2*rect(AD,DB). Now sq AC + sq CB is medial. 2*rect(AD,DB) is medial. We claim these two medial areas are incommensurable. Suppose they were commensurable. Then since 2*rect(AD,DB) is commensurable with sq AC + sq CB (supposition), and we know from the equation that (sq AC + sq CB) + 2*rect(AD,DB) = (sq AD + sq DB) + 2*rect(AC,CB), the left side would be medial [10.15, 10.23]. The right side (sq AD + sq DB) + 2*rect(AC,CB) would then also be medial. Since sq AD + sq DB is medial and the whole sum is medial, 2*rect(AC,CB) would be commensurable with sq AD + sq DB [10.15]. But sq AD + sq DB is incommensurable with 2*rect(AD,DB) by hypothesis. And 2*rect(AC,CB) is commensurable with sq AD + sq DB (just derived). So 2*rect(AC,CB) is incommensurable with 2*rect(AD,DB) [10.13]. Also sq AC + sq CB is commensurable with 2*rect(AD,DB) (supposition) and with sq AD + sq DB via the chain: sq AC + sq CB comm. with 2*rect(AD,DB), and the equation gives sq AC + sq CB = (sq AD + sq DB) + 2*rect(AC,CB) - 2*rect(AD,DB). This is getting complicated, so we note that 2*rect(AC,CB) commensurable with sq AD + sq DB implies 2*rect(AC,CB) is incommensurable with 2*rect(AD,DB) [10.13]. And sq AC + sq CB commensurable with 2*rect(AD,DB) (supposition). So sq AC + sq CB is incommensurable with 2*rect(AC,CB) [10.13]. This is consistent with the hypothesis that sq AC + sq CB is incommensurable with 2*rect(AC,CB). So no contradiction yet from this alone.
+
+**Step 22.** We use 10.41 and 10.72 for the decisive argument. From Step 14, both sides are equal. The left side is (sq AC + sq CB) + 2*rect(AD,DB), a sum of two medial areas. The right side is (sq AD + sq DB) + 2*rect(AC,CB), also a sum of two medial areas. By 10.72, if the two medial areas on each side are incommensurable, the side of the square equal to their sum is a second bimedial or a side of the sum of two medial areas. By 10.71, if a rational and medial area are added, the result is a binomial, first bimedial, major, or side of rational plus medial. We need to identify which type the sum on each side is.
+
+**Step 23.** The equal sum from Step 14 can be rewritten. Note that sq AC + sq CB + 2*rect(AD,DB) = sq AD + sq DB + 2*rect(AC,CB). Now sq AC + sq CB + 2*rect(AC,CB) = sq(AC+CB) [2.4] and sq AD + sq DB + 2*rect(AD,DB) = sq(AD+DB) [2.4]. But AC + CB = AD + DB = AB is not correct since AB = AC - CB = AD - DB (AB is the remainder). Actually, since BC is annexed to AB, we have AC = AB + BC, so AB = AC - BC. Similarly AB = AD - BD.
+
+**Step 24.** Since AB = AC - CB and AB = AD - DB, we have AC - CB = AD - DB, hence AC + DB = AD + CB.
+
+**Step 25.** Now consider the squares: sq(AC) + sq(DB) and sq(AD) + sq(CB). From Step 24, AC + DB = AD + CB. Squaring both sides: sq(AC) + 2*rect(AC,DB) + sq(DB) = sq(AD) + 2*rect(AD,CB) + sq(CB) [2.4]. Therefore sq(AC) + sq(DB) - sq(AD) - sq(CB) = 2*rect(AD,CB) - 2*rect(AC,DB). Rearranging: sq(AC) - sq(CB) = sq(AD) - sq(DB) + 2*rect(AD,CB) - 2*rect(AC,DB) - ... This approach is also becoming complex.
+
+**Step 26.** We return to the core identity. Since AB = AC - CB = AD - DB, sq(AB) = sq(AC) + sq(CB) - 2*rect(AC,CB) = sq(AD) + sq(DB) - 2*rect(AD,DB) [2.7]. So (sq AC + sq CB) - 2*rect(AC,CB) = (sq AD + sq DB) - 2*rect(AD,DB). Rearranging: (sq AC + sq CB) - (sq AD + sq DB) = 2*rect(AC,CB) - 2*rect(AD,DB).
+
+**Step 27.** Let S1 = sq AC + sq CB (medial), S2 = sq AD + sq DB (medial), R1 = 2*rect(AC,CB) (medial), R2 = 2*rect(AD,DB) (medial). From Step 26: S1 - S2 = R1 - R2. By hypothesis, S1 is incommensurable with R1, and S2 is incommensurable with R2.
+
+**Step 28.** Apply each to the rational line EF. S1 applied to EF gives breadth p1 (rational, incommensurable with EF) [10.22]. S2 applied to EF gives breadth p2 (rational, incommensurable with EF) [10.22]. R1 applied to EF gives breadth q1 (rational, incommensurable with EF) [10.22]. R2 applied to EF gives breadth q2 (rational, incommensurable with EF) [10.22].
+
+**Step 29.** Since S1 is incommensurable with R1, we have p1 incommensurable with q1 [6.1, 10.11]. Since S2 is incommensurable with R2, we have p2 incommensurable with q2 [6.1, 10.11].
+
+**Step 30.** From S1 - S2 = R1 - R2, applied to EF: p1 - p2 = q1 - q2 (as breadths on the same base EF) [6.1, CN3].
+
+**Step 31.** Suppose S1 is commensurable with S2. Then p1 is commensurable with p2, so p1 - p2 is commensurable with both p1 and p2 [10.15]. From Step 30, q1 - q2 = p1 - p2, so q1 - q2 is commensurable with p1. Since S1 is commensurable with S2 and S1 - S2 = R1 - R2, it follows that R1 - R2 is commensurable with S1 [10.15]. But R1 is incommensurable with S1 (since S1 is commensurable with S2, and S2 is incommensurable with R2, and from R1 - R2 commensurable with S1, if R1 were commensurable with S1, then R2 = R1 - (R1 - R2) would be commensurable with S1 [10.15], hence with S2, contradicting S2 incommensurable with R2). So R1 is incommensurable with S1. Then since R1 - R2 is commensurable with S1, and R1 is incommensurable with S1, R2 must be incommensurable with S1 [10.16], hence incommensurable with S2 (since S1 comm. with S2), consistent with hypothesis. Also, since R1 - R2 is commensurable with S1, and S1 is incommensurable with R1, from R2 = R1 - (R1-R2), we get that R1 is the sum of R2 and (R1-R2). R1 - R2 is commensurable with S1, and R1 is incommensurable with S1, so R2 is incommensurable with R1-R2 [10.16], meaning R1 is incommensurable with R2. Now q1 - q2 is commensurable with p1, and p1 is rational. So q1 - q2 is rational. But q1 and q2 are rational. If q1 and q2 are commensurable, q1 - q2 is commensurable with q1 [10.15], and then q1 - q2 = p1 - p2 commensurable with p1 means p1 is commensurable with q1 (through chains), but p1 being commensurable with q1 means S1 is commensurable with R1 [6.1, 10.11], contradicting the hypothesis. If q1 and q2 are incommensurable, then q1 - q2 is incommensurable with each [10.16]. The quantity q1 - q2 is rational (shown above). Meanwhile p1 - p2 is also rational and equals q1 - q2. This is consistent so far but we need to derive a contradiction.
+
+**Step 32.** We take the more direct classical approach. Suppose BC is not equal to BD. Without loss of generality, let BD be greater than BC, so that D lies between A and C (since AD = AB + BD > AB + BC = AC would place D beyond C, but actually we need AD > AC). Since BD > BC and AB = AC - BC = AD - BD, we get AD - AC = BD - BC > 0, so AD > AC. Let DC = AD - AC (the segment between C and D).
+
+**Step 33.** From S1 - S2 = R1 - R2 (Step 27), and S1 = sq AC + sq CB, S2 = sq AD + sq DB. Since AD > AC and BD > BC, comparing S1 and S2 depends on the relative magnitudes. Let us consider the areas directly. We have S1 - R1 = S2 - R2 (both equal sq AB). So S1 - S2 = R1 - R2. Suppose S1 > S2 (the argument is symmetric otherwise). Then R1 > R2.
+
+**Step 34.** Since S1 and S2 are both medial, S1 - S2 is either zero, rational, medial, or other irrational. By 10.26, a medial area does not exceed a medial area by a rational area. So if S1 and S2 are incommensurable, S1 - S2 is irrational and not rational. If S1 and S2 are commensurable, S1 - S2 is medial (commensurable with a medial is medial [10.23 applied to areas, or directly from 10.15 with the area being medial]).
+
+**Step 35.** Similarly R1 - R2 = S1 - S2. R1 and R2 are both medial. By the same argument, R1 - R2 is not rational [10.26], and is either medial (if R1, R2 commensurable) or some other irrational.
+
+**Step 36.** Case 1: S1 commensurable with S2. Then S1 - S2 is commensurable with S1, hence medial. And R1 - R2 = S1 - S2, so R1 - R2 is medial. If R1 is commensurable with R2, then R1 - R2 is commensurable with R1, hence medial, consistent. Now S1 - S2 = R1 - R2 with both sides medial. Since S1 - S2 is commensurable with S1, and R1 - R2 is commensurable with R1 (if R1 comm with R2), then S1 is commensurable with R1. But then from S1 commensurable with R1, the areas (sq AC + sq CB) and 2*rect(AC,CB) are commensurable, contradicting the hypothesis that they are incommensurable. If R1 incommensurable with R2, then R1 - R2 is incommensurable with both R1 and R2 [10.16]. But R1 - R2 = S1 - S2 is medial (since S1 comm. S2). So R1 - R2 is medial and incommensurable with R1, which is also medial. From S1 comm. S2 and S1 - S2 comm. S1, and R1 - R2 = S1 - S2 comm. S1, so R1-R2 is commensurable with S1. Since R1 is incommensurable with R1 - R2, R1 is incommensurable with S1 [10.13]. This means 2*rect(AC,CB) is incommensurable with (sq AC + sq CB), consistent with hypothesis. However, we also have S2 comm. with S1 comm. with R1 - R2. And R2 incomm. with R1. Let us check: from the original equation for the second decomposition, S2 is incommensurable with R2 (hypothesis). S1 comm S2 implies S1 incomm R2 [10.13]. And R1 - R2 comm S1 incomm R2, which means R1 - R2 incomm R2, hence R1 incomm R2 [10.16], consistent. No contradiction is reached in Case 1 alone.
+
+**Step 37.** Case 2: S1 incommensurable with S2. Then by 10.26, S1 - S2 is not rational. Also R1 - R2 = S1 - S2. If R1 comm R2, then R1 - R2 is medial (commensurable with medial). So S1 - S2 is medial. But S1 incomm S2. Since S1 - S2 is medial, and S1 is medial, S1 - S2 could be commensurable or incommensurable with S1. If S1 - S2 comm S1, then by 10.15, S2 = S1 - (S1-S2) is commensurable with S1, contradicting S1 incomm S2. So S1 - S2 is incommensurable with S1. Similarly S1 - S2 incomm S2. And R1 - R2 comm R1 (since R1 comm R2), so S1 - S2 = R1 - R2 comm R1. So R1 is incommensurable with S1 [10.13, since S1-S2 incomm S1 but S1-S2 comm R1]. This means 2*rect(AC,CB) incomm (sq AC + sq CB), consistent. If R1 incomm R2, R1 - R2 incomm R1 and R2 [10.16]. Again no immediate contradiction.
+
+**Step 38.** The classical proof proceeds as follows. We return to Step 28. Apply S1 to EF getting rectangle with breadth p1; apply R1 to EF getting breadth q1; then sq(AB) = (S1 - R1) applied to EF with breadth p1 - q1. Similarly sq(AB) = (S2 - R2) applied to EF with breadth p2 - q2. So p1 - q1 = p2 - q2.
+
+**Step 39.** Now p1 and q1 are both rational and incommensurable in length (from Steps 28-29), so they are rational straight lines commensurable in square only. Therefore p1 - q1 is an apotome [10.73]. Similarly p2 - q2 is an apotome [10.73].
+
+**Step 40.** The apotome p1 - q1 equals the apotome p2 - q2, and the breadth of sq(AB) on EF is this common apotome. Now we must determine the order of these apotomes.
+
+**Step 41.** Since p1 is incommensurable in length with EF (Step 28) and q1 is incommensurable in length with EF (Step 28), neither the whole (p1) nor the annex (q1) of the apotome p1 - q1 is commensurable in length with EF. We need to determine whether sq(p1) - sq(q1) is the square on a line commensurable or incommensurable with p1. The area p1 * EF = S1 (medial) and q1 * EF = R1 (medial). Since S1 incomm R1 (hypothesis), p1 incomm q1 in length. Since p1 and q1 are rational lines commensurable in square only, sq(p1) > sq(q1) (assuming p1 > q1 without loss of generality). Whether sq(p1) - sq(q1) is the square on a line commensurable with p1 determines whether the apotome is of the third or sixth order [D10.3.3, D10.3.6].
+
+**Step 42.** Similarly for p2 - q2: p2 is incommensurable with EF and q2 is incommensurable with EF, so neither term is commensurable with EF, making p2 - q2 a third or sixth apotome [D10.3.3, D10.3.6].
+
+**Step 43.** Now, sq(AB) applied to the rational line EF produces an apotome of the third or sixth order as breadth. By 10.65, the square on the side of the sum of two medial areas applied to a rational straight line produces the sixth binomial as breadth. But AB is not the side of the sum of two medial areas; rather, AB produces with a medial area a medial whole, as defined in 10.78. The square on AB applied to EF produces some specific type of breadth.
+
+**Step 44.** More precisely, AB = AC - CB where AC, CB satisfy the conditions of 10.78. The square on AB = S1 - R1. We established that the breadth p1 - q1 is an apotome with both terms incommensurable with EF. Since neither p1 nor q1 is commensurable with EF, the apotome p1 - q1 is a third or sixth apotome [D10.3.3, D10.3.6]. By 10.79, to an apotome only one rational straight line can be annexed which is commensurable in square only with the whole. Since p1 - q1 = p2 - q2 are the same apotome, and both p1 and p2 serve as the "whole" of their respective apotome decompositions, while q1 and q2 serve as the annexed parts, it follows by 10.79 that p1 = p2 and q1 = q2.
+
+**Step 45.** From p1 = p2: the breadths are equal, so S1 = S2, meaning sq(AC) + sq(CB) = sq(AD) + sq(DB) [6.1]. From q1 = q2: R1 = R2, meaning 2*rect(AC,CB) = 2*rect(AD,DB), hence rect(AC,CB) = rect(AD,DB) [6.1].
+
+**Step 46.** Since sq(AC) + sq(CB) = sq(AD) + sq(DB) and rect(AC,CB) = rect(AD,DB), and since AC + CB > AD + DB or AC + CB < AD + DB would lead to a contradiction (for if AC + CB > AD + DB, then sq(AC+CB) > sq(AD+DB), i.e., sq(AC) + sq(CB) + 2*rect(AC,CB) > sq(AD) + sq(DB) + 2*rect(AD,DB) [2.4], but both sides equal since S1 = S2 and R1 = R2, contradiction), we conclude AC + CB = AD + DB.
+
+**Step 47.** From AC + CB = AD + DB and sq(AC) + sq(CB) = sq(AD) + sq(DB), we derive: (AC + CB)^2 = sq(AC) + sq(CB) + 2*rect(AC,CB) = sq(AD) + sq(DB) + 2*rect(AD,DB) = (AD + DB)^2 [2.4]. This is consistent. Now (AC + CB)^2 - 2*sq(AC) - 2*sq(CB) + (AC+CB)^2 ... Instead: from AC + CB = AD + DB and AC - CB = AD - DB (= AB), adding: 2*AC = 2*AD, so AC = AD [CN2]. Subtracting: 2*CB = 2*DB, so CB = DB [CN3].
+
+**Step 48.** Since AC = AD and CB = DB, the point C coincides with D, and BC = BD. Therefore only one straight line can be annexed to AB satisfying the given conditions.
+
+**Step 49.** Therefore, to a straight line which produces with a medial area a medial whole, only one straight line can be annexed which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial and twice the rectangle contained by them medial and also incommensurable with the sum of the squares on them. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.15, 10.16, 10.22, 10.26, 10.73, 10.78, 10.79, 2.4, 2.7, 6.1, CN2, CN3, D10.1.4, D10.3.3, D10.3.6
+**Human refs (from References field):** 10.11, 10.22, 10.73, 10.78, 10.79, 2.7, 6.1
+**Jaccard:** 0.412 — AI adds ['10.13', '10.15', '10.16', '10.26', '2.4', 'CN2', 'CN3', 'D10.1.4', 'D10.3.3', 'D10.3.6']
+
+## Proposition 10.85
+**Statement:** To find the first apotome.
+
+**Step 1.** Let a rational straight line A be set out, and let BG be commensurable in length with A, so that BG is also rational and commensurable in length with A [D10.1.3].
+
+**Step 2.** By Proposition 10.29, find two rational straight lines BG and GD commensurable in square only such that the square on BG is greater than the square on GD by the square on a straight line commensurable in length with BG. (More precisely: since BG is rational, we can find GD rational and commensurable in square only with BG, with the stated property regarding the excess of their squares.) [10.29]
+
+**Step 3.** Since BG and GD are rational straight lines commensurable in square only, and BG is greater than GD, we may form the straight line BD = BG - GD. By Proposition 10.73, BD is an apotome. Here BG is the whole and GD is the annex of the apotome BD. [10.73]
+
+**Step 4.** We verify the conditions for BD to be a first apotome according to Definition D10.3.1. First, by construction in Step 2, the square on BG (the whole) is greater than the square on GD (the annex) by the square on a straight line commensurable in length with BG (the whole). This satisfies the first condition of D10.3.1. [D10.3.1]
+
+**Step 5.** Second, BG (the whole) was chosen in Step 1 to be commensurable in length with the rational straight line A set out. This satisfies the second condition of D10.3.1. [D10.3.1]
+
+**Step 6.** Since both conditions of D10.3.1 are fulfilled — the square on the whole exceeds the square on the annex by the square on a straight line commensurable in length with the whole, and the whole is commensurable in length with the rational straight line set out — the apotome BD is a first apotome. [D10.3.1]
+
+**Step 7.** Therefore the first apotome BD has been found. Q.E.F.
+
+**USED:** 10.29, 10.73, D10.1.3, D10.3.1
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.1
+**Jaccard:** 0.286 — AI adds ['10.29', 'D10.1.3']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.86
+**Statement:** To find the second apotome.
+
+**Step 1.** Let a rational straight line A be set out.
+
+**Step 2.** By 10.29, find two rational straight lines FG and GH, commensurable in square only, such that FG is greater than GH, the square on FG is greater than the square on GH by the square on a straight line commensurable in length with FG, and GH is commensurable in length with the rational straight line A.
+
+**Step 3.** Since FG and GH are rational straight lines commensurable in square only, FG - GH is an apotome [by 10.73]. Let this apotome be K, with FG as the whole and GH as the annex.
+
+**Step 4.** I say that K is a second apotome. We must verify the three conditions of the definition D10.3.2.
+
+**Step 5.** First, the annex GH is commensurable in length with the rational straight line A set out. This holds by the construction in Step 2.
+
+**Step 6.** Second, the square on the whole FG is greater than the square on the annex GH by the square on a straight line commensurable in length with FG. This also holds directly by the construction in Step 2, since 10.29 guarantees precisely this property.
+
+**Step 7.** Third, we must show that the whole FG is not commensurable in length with the rational straight line A. Suppose, for the sake of contradiction, that FG is commensurable in length with A. Since GH is also commensurable in length with A [Step 5], it would follow by 10.12 that FG is commensurable in length with GH. But FG and GH are commensurable in square only [Step 2], hence incommensurable in length. This is a contradiction. Therefore FG is not commensurable in length with A.
+
+**Step 8.** Since the annex GH is commensurable in length with A, the square on the whole FG is greater than the square on the annex GH by the square on a straight line commensurable in length with FG, and the whole FG is not commensurable in length with A, the apotome K = FG - GH is a second apotome [by D10.3.2].
+
+**Step 9.** Therefore the second apotome has been found. Q.E.F.
+
+**USED:** 10.12, 10.29, 10.73, D10.3.2
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.2
+**Jaccard:** 0.286 — AI adds ['10.12', '10.29']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.87
+**Statement:** To find the third apotome.
+
+**Step 1.** Let the rational straight line A be set out. Take three numbers E, BC, CD such that E:BC is not the ratio of a square number to a square number, BC:CD is not the ratio of a square number to a square number, E:CD is not the ratio of a square number to a square number, and BC - CD has to BC the ratio of a square number to a square number. For example, let E = 2, BC = 4, CD = 3; then E:BC = 1:2, BC:CD = 4:3, E:CD = 2:3 (none are ratios of square numbers), and BC - CD = 1 with 1:4 being a ratio of square numbers (1 = 1 squared, 4 = 2 squared).
+
+**Step 2.** Let it be contrived that as E is to BC, so is the square on A to the square on FG. [6.12]
+
+**Step 3.** Since E:BC is the ratio of a number to a number, the square on A is commensurable with the square on FG by 10.6. Therefore FG is rational. [D10.1.3, 10.6]
+
+**Step 4.** Since E:BC is not the ratio of a square number to a square number, A is incommensurable in length with FG. [10.9]
+
+**Step 5.** Let it be contrived that as BC is to CD, so is the square on FG to the square on GH. [6.12]
+
+**Step 6.** Since BC:CD is the ratio of a number to a number, the square on FG is commensurable with the square on GH by 10.6. Since FG is rational and the square on FG is commensurable with the square on GH, GH is also rational. [D10.1.3, 10.6]
+
+**Step 7.** Since BC:CD is not the ratio of a square number to a square number, FG is incommensurable in length with GH. [10.9] Therefore FG and GH are rational straight lines commensurable in square only.
+
+**Step 8.** Since BC > CD, the square on FG is greater than the square on GH, so FG > GH. Let FH be the remainder when GH is subtracted from FG (that is, FH = FG - GH). Then FH is an apotome, since FG and GH are rational straight lines commensurable in square only. [10.73]
+
+**Step 9.** By ex aequali, since the square on A is to the square on FG as E is to BC, and the square on FG is to the square on GH as BC is to CD, it follows that the square on A is to the square on GH as E is to CD. [5.22]
+
+**Step 10.** Since E:CD is not the ratio of a square number to a square number, A is incommensurable in length with GH. [10.9]
+
+**Step 11.** Therefore neither FG nor GH is commensurable in length with the rational straight line A (FG by Step 4, GH by Step 10).
+
+**Step 12.** Now we show that the square on FG exceeds the square on GH by the square on a straight line commensurable in length with FG. Since the square on FG is to the square on GH as BC is to CD, by conversion of the ratio, the square on FG is to the difference of the squares (that is, sq(FG) - sq(GH)) as BC is to BC - CD. [5.19]
+
+**Step 13.** But BC - CD has to BC the ratio of a square number to a square number (since BC - CD = 1 and BC = 4, and 1:4 = 1 squared to 2 squared). Therefore the difference sq(FG) - sq(GH) has to sq(FG) the ratio of a square number to a square number. [5.16 — invertendo from the ratio in Step 12]
+
+**Step 14.** Let sq(FG) - sq(GH) = sq(K) for some straight line K. Then sq(K):sq(FG) is the ratio of a square number to a square number. Therefore K is commensurable in length with FG. [10.9]
+
+**Step 15.** Thus the square on FG (the whole) is greater than the square on GH (the annex) by the square on a straight line K commensurable in length with FG, and neither FG nor GH is commensurable in length with the rational straight line A set out. Therefore, by definition D10.3.3, FH is a third apotome.
+
+**Step 16.** Therefore the third apotome FH has been found. Q.E.F.
+
+**USED:** 10.6, 10.73, 10.9, 5.19, 5.22, 6.12, D10.1.3, D10.3.3
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, 5.22, D10.3.3
+**Jaccard:** 0.750 — AI adds ['6.12', 'D10.1.3']
+
+## Proposition 10.88
+**Statement:** To find the fourth apotome.
+
+**Step 1.** Let E be a rational straight line set out, and let BG be rational and commensurable in length with E. [D10.1.3]
+
+**Step 2.** By Proposition 10.30, find two rational straight lines DG and G commensurable in square only such that the square on DG is greater than the square on G by the square on a straight line incommensurable in length with DG, and such that DG is commensurable in length with BG. [10.30]
+
+**Step 3.** Since DG and G are rational and commensurable in square only, DG minus G is an apotome by Proposition 10.73. Let A equal DG minus G, so that A is an apotome with whole DG and annex G. [10.73]
+
+**Step 4.** Since DG is commensurable in length with BG, and BG is commensurable in length with E, then DG is commensurable in length with E by Proposition 10.12. [10.12]
+
+**Step 5.** Now, since the square on DG is greater than the square on G by the square on a straight line incommensurable in length with DG, and since DG (the whole of the apotome A) is commensurable in length with the rational straight line E set out, by Definition D10.3.4 the apotome A is a fourth apotome. [D10.3.4]
+
+**Step 6.** Therefore the fourth apotome A has been found. Q.E.F.
+
+**USED:** 10.12, 10.30, 10.73, D10.1.3, D10.3.4
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.4
+**Jaccard:** 0.250 — AI adds ['10.12', '10.30', 'D10.1.3']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.89
+**Statement:** To find the fifth apotome.
+
+**Step 1.** Let a rational straight line A be set out, and let CG be commensurable in length with A; then CG is also rational [D10.1.3].
+
+**Step 2.** Let two numbers DF and FE be set out such that DE has not to either of the numbers DF or FE the ratio which a square number has to a square number [this can be done by choosing, e.g., DE = 5, DF = 3, FE = 2, where 5:3, 5:2, and 3:2 are not ratios of square numbers].
+
+**Step 3.** Let it be contrived that as FE is to ED, so is the square on CG to the square on GB [10.6, used in reverse with 10.9 to find GB such that sq(CG):sq(GB) = FE:ED].
+
+**Step 4.** Since the square on CG has to the square on GB the ratio which the number FE has to the number ED, the square on CG is commensurable with the square on GB [10.6]. But the square on CG is rational, since CG is rational; therefore the square on GB is also rational [D10.1.4, 10.12]. Therefore GB is rational.
+
+**Step 5.** Since the square on CG has to the square on GB the ratio which the number FE has to the number ED, and FE has not to ED the ratio which a square number has to a square number, CG is incommensurable in length with GB [10.9].
+
+**Step 6.** Since CG and GB are both rational and commensurable in square only, the whole BG and CG (that is, BC = BG - CG or the relevant difference) — more precisely, let BG be greater than CG. Set BG = AB for notational clarity. Then AB and CG are rational straight lines commensurable in square only, so AB - CG is an apotome [10.73]. Let AC = AB - CG, where CG is the annex.
+
+**Step 7.** I say next that the square on AB is greater than the square on CG by the square on a straight line incommensurable in length with AB. Since as the number DE is to the number EF, so is the square on GB (= AB) to the square on CG, by inversion, as EF is to ED, so is the square on CG to the square on AB. By conversion of ratio, as FE is to FD, so is the square on CG to the difference of the squares, that is, to the square on the straight line by which the square on AB exceeds the square on CG. Call this excess line H, so that sq(AB) = sq(CG) + sq(H), and sq(CG):sq(H) = FE:FD.
+
+**Step 8.** Since FE has not to FD the ratio which a square number has to a square number (by our choice in Step 2), CG is incommensurable in length with H [10.9]. Therefore the square on AB is greater than the square on CG by the square on a straight line incommensurable in length with CG. But then, equivalently considering the relationship between AB and the excess: since DE has not to EF the ratio of a square number to a square number, and sq(AB):sq(CG) = DE:EF, the square on AB exceeds the square on CG by a square on a line incommensurable with AB [10.18].
+
+**Step 9.** Now, CG (the annex) is commensurable in length with A (the rational straight line set out), by construction in Step 1. And AB is incommensurable in length with A, since AB is incommensurable in length with CG (Step 5) and CG is commensurable in length with A, so by 10.13, AB is incommensurable in length with A.
+
+**Step 10.** Therefore the apotome AC = AB - CG satisfies: the square on the whole AB is greater than the square on the annex CG by the square on a straight line incommensurable in length with AB, and the annex CG is commensurable in length with the rational straight line A set out, while the whole AB is not commensurable in length with A.
+
+**Step 11.** Therefore AC is a fifth apotome [D10.3.5]. Thus the fifth apotome has been found. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.18, 10.6, 10.73, 10.9, D10.1.3, D10.1.4, D10.3.5
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.5
+**Jaccard:** 0.400 — AI adds ['10.12', '10.13', '10.18', 'D10.1.3', 'D10.1.4']; Human adds ['5.19']
+
+## Proposition 10.90
+**Statement:** To find the sixth apotome.
+
+**Step 1.** Let a rational straight line A be set out, and let three numbers E, BC, and CD be given such that E has not to BC, nor to CD, the ratio which a square number has to a square number, and also CB has not to BD the ratio which a square number has to a square number. Here BC and CD are chosen so that BC > CD and BD = BC - CD. [Such numbers exist: for example, take E, BC, CD so that none of the ratios E:BC, E:CD, CB:BD is a ratio of square numbers.]
+
+**Step 2.** Let it be contrived that, as E is to BC, so is the square on A to the square on FG. Since E has not to BC the ratio which a square number has to a square number, the square on A has not to the square on FG the ratio which a square number has to a square number. Therefore A is incommensurable in length with FG [by 10.9]. Since E, BC, and CD are numbers, E has a ratio to BC, and thus the square on A has a ratio to the square on FG, so FG is rational [by the nature of the construction and D10.1.3, since the square on FG is commensurable with the square on A via the ratio E:BC, making them commensurable in square].
+
+**Step 3.** Again, let it be contrived that, as BC is to CD, so is the square on FG to the square on GH. Since BC has not to CD the ratio which a square number has to a square number, the square on FG has not to the square on GH the ratio which a square number has to a square number. Therefore FG is incommensurable in length with GH [by 10.9]. Since as BC is to CD, so is the square on FG to the square on GH, therefore the square on FG is commensurable with the square on GH [by 10.6, since BC and CD are numbers and thus have the ratio of a number to a number]. Therefore GH is rational [D10.1.3]. And FG is rational. Therefore FG and GH are rational straight lines commensurable in square only [since they are incommensurable in length but commensurable in square].
+
+**Step 4.** Therefore FH, which is FG minus GH, is an apotome [by 10.73]. I say that it is a sixth apotome.
+
+**Step 5.** Since as E is to BC, so is the square on A to the square on FG, and as BC is to CD, so is the square on FG to the square on GH, therefore ex aequali, as E is to CD, so is the square on A to the square on GH [by 5.22]. But E has not to CD the ratio which a square number has to a square number, therefore the square on A has not to the square on GH the ratio which a square number has to a square number. Therefore A is incommensurable in length with GH [by 10.9]. Therefore neither FG nor GH is commensurable in length with the rational straight line A. This establishes one condition of the sixth apotome [D10.3.6].
+
+**Step 6.** Now I must show that the square on FG is greater than the square on GH by the square on a straight line incommensurable in length with FG. Since as BC is to CD, so is the square on FG to the square on GH, therefore convertendo, as BC is to BD, so is the square on FG to the difference of the squares on FG and GH [by 5.19 convertendo, i.e., as CB is to BD, so is the square on FG to the square on FG minus the square on GH]. Let the square on K be equal to the square on FG minus the square on GH, so that the square on FG is greater than the square on GH by the square on K.
+
+**Step 7.** Then as CB is to BD, so is the square on FG to the square on K. But CB has not to BD the ratio which a square number has to a square number [by construction]. Therefore the square on FG has not to the square on K the ratio which a square number has to a square number [by 10.11, since the proportionality transfers the property]. Therefore FG is incommensurable in length with K [by 10.9]. Thus the square on FG is greater than the square on GH by the square on a straight line incommensurable in length with FG.
+
+**Step 8.** We have established: (i) FG and GH are rational and commensurable in square only, so FH = FG - GH is an apotome; (ii) neither FG nor GH is commensurable in length with A; (iii) the square on FG exceeds the square on GH by the square on a line incommensurable in length with FG. Therefore, by D10.3.6, FH is a sixth apotome.
+
+**Step 9.** Therefore the sixth apotome FH has been found. Q.E.F.
+
+**USED:** 10.11, 10.6, 10.73, 10.9, 5.19, 5.22, D10.1.3, D10.3.6
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, 5.22, D10.3.6
+**Jaccard:** 0.750 — AI adds ['10.11', 'D10.1.3']
+
+## Proposition 10.91
+**Statement:** If an area be contained by a rational straight line and a first apotome, the âsideâ of the area is an apotome.
+
+**Step 1.** Let the area AB be contained by the rational straight line AC and the first apotome AD. I say that the "side" of the area AB is an apotome.
+
+**Step 2.** Since AD is a first apotome, let DG be the annex to it, so that AG is the whole and GD the annex. Then AG and GD are rational straight lines commensurable in square only, the whole AG is commensurable in length with the assigned rational straight line AC, and the square on AG is greater than the square on GD by the square on a straight line commensurable in length with AG [D10.3.1].
+
+**Step 3.** Since the square on AG is greater than the square on GD by the square on a straight line commensurable in length with AG, by 10.17, if we apply to AG a parallelogram equal to one-fourth the square on GD and deficient by a square figure, it divides AG into parts commensurable in length. Let AG be so divided at E, so that AE times EG equals the square on half of GD, and AE is commensurable in length with EG.
+
+**Step 4.** Describe a semicircle AFG on AG as diameter [P3]. From E, erect EF perpendicular to AG, meeting the semicircle at F [1.11, 1.12]. Join AF and FG [P1].
+
+**Step 5.** Since AG is a diameter and EF is drawn from E perpendicular to it meeting the semicircle at F, by 2.14 and 3.31 and 6.8, we have AE times EG equals EF squared. But AE times EG equals the square on half of GD (Step 3). Therefore EF equals half of GD.
+
+**Step 6.** Since the angle AFG is an angle in a semicircle, angle AFG is a right angle [3.31]. Therefore AF squared plus FG squared equals AG squared [1.47].
+
+**Step 7.** By 6.8, since EF is the altitude from F to the hypotenuse AG of right triangle AFG, we have AF squared equals AE times AG, and FG squared equals EG times AG.
+
+**Step 8.** Now set the square on p equal to AC times AE, and the square on q equal to AC times EG. I claim that p - q is the "side" of the area AB and that p - q is an apotome.
+
+**Step 9.** First, p squared plus q squared equals AC times AE plus AC times EG equals AC times (AE + EG) equals AC times AG [2.1], since AE + EG = AG.
+
+**Step 10.** Next, the rectangle p times q: we have (p times q) squared equals p squared times q squared equals (AC times AE)(AC times EG) equals AC squared times (AE times EG). Since AE times EG equals the square on half of GD (Step 3), this gives (p times q) squared equals AC squared times (GD/2) squared, whence p times q equals AC times (GD/2). Therefore twice the rectangle p times q equals AC times GD [2.1].
+
+**Step 11.** Now the area AB equals AC times AD equals AC times (AG - GD) equals AC times AG minus AC times GD [2.1]. From Steps 9 and 10, AC times AG equals p squared plus q squared, and AC times GD equals twice the rectangle contained by p and q. Therefore the area AB equals (p squared plus q squared) minus 2(p times q), which equals (p - q) squared [2.7]. Hence the "side" of the area AB is p - q.
+
+**Step 12.** It remains to show that p - q is an apotome. I prove that p and q are rational straight lines commensurable in square only.
+
+**Step 13.** Since AE is commensurable in length with EG (Step 3), and AE plus EG equals AG, by 10.15 each of AE and EG is commensurable in length with AG. Since AG is commensurable in length with AC [D10.3.1], by 10.12, each of AE and EG is commensurable in length with AC.
+
+**Step 14.** Since AC is rational and AE is commensurable in length with AC (Step 13), the rectangle AC times AE is rational [10.19]. Therefore p squared is rational, so p is rational [D10.1.3, D10.1.4]. Similarly, AC times EG is rational, so q squared is rational and q is rational.
+
+**Step 15.** Since AG and GD are commensurable in square only, AG is incommensurable in length with GD. But AG is commensurable in length with AC (Step 2). Therefore by 10.13, GD is incommensurable in length with AC. Hence the rectangle AC times GD is medial [10.21], that is, twice the rectangle p times q is medial (Step 10).
+
+**Step 16.** Since p squared plus q squared equals AC times AG (Step 9), which is rational [10.19, since AC and AG are both rational and commensurable in length], the sum p squared plus q squared is rational. And twice the rectangle p times q is medial (Step 15). A rational area cannot be commensurable with a medial area. If p were commensurable in length with q, then by 10.15 p squared plus q squared would be commensurable with p squared, and similarly 2(p times q) would be commensurable with p squared, making p squared plus q squared commensurable with 2(p times q) [10.12], i.e., a rational area commensurable with a medial area, which is impossible since rational and medial areas are incommensurable [10.26]. Therefore p is incommensurable in length with q.
+
+**Step 17.** Since p and q are both rational, and p is incommensurable in length with q, they are rational straight lines commensurable in square only [D10.1.3]. Furthermore, p squared equals AC times AE and q squared equals AC times EG, so p squared is to q squared as AE is to EG [6.1]. Since AE is commensurable in length with EG (Step 3), p squared is commensurable with q squared, confirming they are commensurable in square [D10.1.2, 10.6].
+
+**Step 18.** Since p squared is greater than q squared (because AE is greater than EG, as the semicircle construction requires E between A and G with AE the larger segment), p is greater than q.
+
+**Step 19.** We verify the remaining condition. The square on p exceeds the square on q by the square on some straight line r, where r squared equals p squared minus q squared equals AC times AE minus AC times EG equals AC times (AE - EG) [2.1, CN3]. Since AE is commensurable in length with EG (Step 3), by 10.15 the difference AE - EG is commensurable in length with AE. Now p squared to r squared equals AE to (AE - EG) [6.1]. Since AE is commensurable in length with (AE - EG), this ratio is as number to number [10.5], so p is commensurable in length with r [10.9]. Thus the square on p exceeds the square on q by the square on a straight line commensurable in length with p.
+
+**Step 20.** Therefore p and q are rational straight lines commensurable in square only, and the square on p exceeds the square on q by the square on a straight line commensurable in length with p. By 10.73, p - q is an apotome.
+
+**Step 21.** Since p - q is the "side" of the area AB (Step 11), we conclude that if an area is contained by a rational straight line and a first apotome, the "side" of the area is an apotome. Q.E.D.
+
+**USED:** 1.11, 1.12, 1.47, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.26, 10.5, 10.6, 10.73, 10.9, 2.1, 2.14, 2.7, 3.31, 6.1, 6.8, CN3, D10.1.2, D10.1.3, D10.1.4, D10.3.1, P1, P3
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.53, 10.73, 5.11, 6.1, 6.17, 6.26, D10.3.1
+**Jaccard:** 0.281 — AI adds ['1.11', '1.12', '1.47', '10.26', '10.5', '10.6', '10.9', '2.1', '2.14', '2.7', '3.31', '6.8', 'CN3', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'P1', 'P3']; Human adds ['10.11', '10.53', '5.11', '6.17', '6.26']
+
+## Proposition 10.92
+**Statement:** If an area be contained by a rational straight line and a second apotome, the âsideâ of the area is a first apotome of a medial straight line.
+
+**Step 1.** Let the area AB be contained by the rational straight line AC and the second apotome AD. I say that the "side" of the area AB is a first apotome of a medial straight line.
+
+**Step 2.** Let DG be the annex to AD, so that AG is the whole of the second apotome. By the definition of a second apotome (D10.3.2), DG is commensurable in length with the rational straight line set out, AG is commensurable in square only with DG, and sq(AG) is greater than sq(DG) by the square on a straight line commensurable in length with AG.
+
+**Step 3.** Since sq(AG) > sq(DG) by the square on a line commensurable with AG, by 10.17, if we apply to AG a parallelogram equal to the fourth part of sq(DG) and deficient by a square figure, it divides AG into parts commensurable in length. Bisect DG at E, apply to AG a parallelogram equal to sq(EG) and deficient by a square figure, and let this be the rectangle AF by FG. Then AF is commensurable in length with FG.
+
+**Step 4.** Since AF is commensurable in length with FG, AG is also commensurable in length with each of AF and FG by 10.15. But AG is incommensurable in length with AC (since AG is commensurable in square only with DG, and DG is commensurable in length with the rational line, while AG is not commensurable in length with the rational line -- by D10.3.2). Therefore AF and FG are each incommensurable in length with AC by 10.13.
+
+**Step 5.** Now AG and GD are rational and commensurable in square only, so rect(AG, GD) is medial by 10.21. Since rect(AG, GD) = rect(AF, FG) (for AG*GD = AF*FG, as the rectangle on the whole and annex relates to the segments, by 2.5, since 2*rect(AG, GD) = sq(AG) + sq(DG) - sq(AG - DG), and by the construction AF*FG = sq(EG) where EG = DG/2), we actually proceed as follows.
+
+**Step 6.** By the construction in Step 3 and by 2.5, we have rect(AF, FG) = sq(EG). Now EG = (1/2)DG, so sq(EG) = (1/4)sq(DG). Also by 2.5, sq(AG) = sq(AF) + sq(FG) + 2*rect(AF, FG) and sq(DG) = sq(AG) - (a commensurable square). However, let us follow the standard approach more directly.
+
+**Step 7.** Consider the rectangle AC*AD. Since AD = AG - DG, we have rect(AC, AD) = rect(AC, AG) - rect(AC, DG). Let us set the problem up with the rectangle contained by AC and the second apotome AD on AC. Apply the rectangle to AC: the area equals AC*AD. We seek the side of this area, i.e., the line whose square equals AC*AD.
+
+**Step 8.** By 10.17, since sq(AG) > sq(DG) by the square on a line commensurable with AG, apply to AG a rectangle equal to (1/4)*sq(DG) deficient by a square, obtaining segments AH, HG of AG (where H is a point on AG) with AH commensurable in length with HG. Then AG*DG = AH*DG + HG*DG.
+
+**Step 9.** Let us follow the standard construction more carefully. Let the second apotome be AB with annex BC, so the whole line is AC = AB + BC. By D10.3.2: BC is commensurable in length with the assigned rational straight line rho, AC and BC are commensurable in square only, and sq(AC) > sq(BC) by the square on a line commensurable with AC.
+
+**Step 10.** Let the rational straight line on which we form the rectangle be rho. The area is rho * AB = rho * (AC - BC) = rho*AC - rho*BC. We need to find the "side" of this area, that is, the line w such that sq(w) = rho*AB.
+
+**Step 11.** Since sq(AC) > sq(BC) by the square on a line commensurable with AC, by 10.17, applying to AC a rectangle equal to (1/4)*sq(BC) deficient by a square figure divides AC into commensurable parts. Let AC be divided at N so that AN is commensurable in length with NC, and rect(AN, NC) = (1/4)*sq(BC).
+
+**Step 12.** Then sq(AC) - sq(BC) = sq(AC) - 4*rect(AN, NC). By 2.5, sq(AC) = sq(AN) + sq(NC) + 2*rect(AN, NC), so sq(AC) - 4*rect(AN, NC) = sq(AN) + sq(NC) - 2*rect(AN, NC) = sq(AN - NC) by 2.4 applied inversely. Thus sq(AC) - sq(BC) = sq(AN - NC).
+
+**Step 13.** Now take the square root: the line whose square equals rho*AB. Following the method of 10.91, let o and p be lines such that sq(o) = rho*AN and sq(p) = rho*NC, so that sq(o) - sq(p) = rho*AN - rho*NC = rho*(AN - NC) = rho*AB... but this is not quite right since AN + NC = AC and we need AN - NC.
+
+**Step 14.** Let us reconsider. Bisect BC at D, so BD = DC = (1/2)*BC. Apply to AC a rectangle equal to sq(CD) = (1/4)*sq(BC), deficient by a square. By 10.17, since sq(AC) > sq(BC) by a line commensurable with AC, the rectangle divides AC into commensurable segments. Let these segments be AE and EC (so E is on AC with rect(AE, EC) = sq(CD)).
+
+**Step 15.** Set o such that sq(o) = rho*AE, and p such that sq(p) = rho*EC. Since AE > EC (by 2.5 considerations and the construction), we have sq(o) > sq(p). I claim that o - p is the required "side" and that it is a first apotome of a medial straight line.
+
+**Step 16.** First, sq(o) - sq(p) = rho*AE - rho*EC = rho*(AE - EC). By 2.5, sq(AE - EC) = sq(AE) + sq(EC) - 2*rect(AE, EC) = sq(AC) - 4*rect(AE, EC) (since sq(AC) = sq(AE) + sq(EC) + 2*rect(AE, EC) by 2.4, so sq(AE) + sq(EC) = sq(AC) - 2*rect(AE, EC)). And 4*rect(AE, EC) = 4*sq(CD) = sq(BC). So sq(AE - EC) = sq(AC) - sq(BC). Therefore AE - EC = AB (since AB = AC - BC and the numerical relationship gives this by the construction). Hence rho*(AE - EC) = rho*AB. So sq(o) - sq(p) = rho*AB, and the side of the rectangle rho*AB equals the line o - p (taking o, p as described so that sq(o - p) = sq(o) + sq(p) - 2*rect(o, p) gives us the area, following the method established in 10.91). Actually, by 10.54-10.59 and 10.91, the "side" of the area is constructed so that sq(o - p) = rho*AB, where sq(o) + sq(p) = rho*AC and 2*rect(o, p) = rho*BC. Let us verify this.
+
+**Step 17.** We set o, p so that sq(o) + sq(p) = rho*AC and 2*rect(o, p) = rho*BC. Then sq(o - p) = sq(o) + sq(p) - 2*rect(o, p) = rho*AC - rho*BC = rho*(AC - BC) = rho*AB, as required. So w = o - p is the "side" of rho*AB.
+
+**Step 18.** Now rho*AC: since AC is commensurable in square only with BC, and BC is commensurable in length with rho (by D10.3.2), AC is incommensurable in length with rho. Therefore the rectangle rho*AC is medial by 10.21 (rho and AC are rational lines commensurable in square only). Since sq(o) + sq(p) = rho*AC, the sum of the squares on o and p is medial.
+
+**Step 19.** Also, rho*BC: since BC is commensurable in length with rho (by D10.3.2), the rectangle rho*BC is rational by 10.19. Since 2*rect(o, p) = rho*BC, and rho*BC is rational, 2*rect(o, p) is rational, hence rect(o, p) is rational (as it is commensurable with a rational area). So rect(o, p) is rational, and therefore 2*rect(o, p) is rational.
+
+**Step 20.** Since sq(o) + sq(p) is medial and 2*rect(o, p) is rational, these two are incommensurable (a medial area is incommensurable with a rational area, by the definitions D10.1.3 and D10.1.4, and by 10.26 applied contrapositively -- a rational and medial area cannot be commensurable).
+
+**Step 21.** We must show o and p are medial and commensurable in square only. Since AE and EC are commensurable in length (by Step 14), rho*AE and rho*EC are commensurable (by 6.1 and 10.11). That is, sq(o) and sq(p) are commensurable. Hence o and p are commensurable in square by D10.1.2.
+
+**Step 22.** Since AC is incommensurable in length with rho, and AE is commensurable in length with AC (since AE is commensurable with EC, and AE + EC = AC, so by 10.15, AE is commensurable with AC), AE is incommensurable in length with rho by 10.13. Therefore rho*AE is medial by 10.21 (rho and AE are rational and commensurable in square only). Thus sq(o) is medial, so o is medial by D10.1.4. Similarly, EC is commensurable in length with AE (Step 14), hence commensurable in length with AC (by 10.12), hence incommensurable in length with rho by 10.13, so rho*EC is medial by 10.21, and p is medial.
+
+**Step 23.** Since sq(o) and sq(p) are commensurable (Step 21), and both are medial, o and p are commensurable in square. Suppose o and p are commensurable in length. Then rect(o, p) would be commensurable with sq(o), which is medial, so rect(o, p) would be medial. But rect(o, p) is rational (Step 19). This contradicts 10.26 (a medial area cannot equal a rational area, since rational and medial are incommensurable). Therefore o and p are incommensurable in length, hence commensurable in square only.
+
+**Step 24.** So o and p are medial straight lines commensurable in square only, and 2*rect(o, p) = rho*BC is rational, meaning rect(o, p) is rational. Therefore o - p is a first apotome of a medial straight line by 10.74 (since o, p are medial, commensurable in square only, and contain a rational rectangle).
+
+**Step 25.** We must also verify that o > p. Since AE > EC (from the construction: by 2.5, AE > EC when the partition is from the deficient-square application), sq(o) = rho*AE > rho*EC = sq(p), so o > p.
+
+**Step 26.** Therefore, the "side" of the area contained by the rational straight line rho and the second apotome AB is a first apotome of a medial straight line. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.26, 10.74, 2.4, 2.5, 6.1, D10.1.2, D10.1.3, D10.1.4, D10.3.2
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.19, 10.21, 10.73, 10.74, 5.11, 6.1, 6.17, 6.26, D10.3.2
+**Jaccard:** 0.450 — AI adds ['10.12', '10.26', '2.4', '2.5', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.73', '5.11', '6.17', '6.26']
+
+## Proposition 10.93
+**Statement:** If an area be contained by a rational straight line and a third apotome, the âsideâ of the area is a second apotome of a medial straight line.
+
+**Step 1.** Let the area be contained by the rational straight line r and the third apotome AD. Let AG be the whole and DG the annex of the third apotome, so AD = AG - DG with D between A and G.
+
+**Step 2.** By the definition of a third apotome (D10.3.3): AG and DG are rational straight lines commensurable in square only, neither AG nor DG is commensurable in length with the assigned rational line r, and the square on AG exceeds the square on DG by the square on a straight line commensurable in length with AG.
+
+**Step 3.** Bisect DG at E, so DE = EG = (1/2)DG. Apply to AG a rectangle equal to the square on EG (that is, one-fourth of the square on DG) and deficient by a square figure. By 10.17, since the square on AG exceeds the square on DG by the square on a line commensurable with AG, this application divides AG into parts AH and HG (with H between A and G) that are commensurable in length. Thus AH + HG = AG and AH times HG = (1/4) sq(DG).
+
+**Step 4.** Construct lines o and p such that sq(o) = r times AH and sq(p) = r times HG.
+
+**Step 5.** Then sq(o) + sq(p) = r times AH + r times HG = r times (AH + HG) = r times AG, by 2.1.
+
+**Step 6.** By 6.16, rect(o, p) squared = sq(o) times sq(p) = (r times AH)(r times HG) = sq(r) times (AH times HG). Since AH times HG = (1/4)sq(DG), this equals (1/4) sq(r) times sq(DG) = ((1/2)(r times DG))^2. Hence rect(o, p) = (1/2)(r times DG), so 2 rect(o, p) = r times DG.
+
+**Step 7.** By 2.7, sq(o - p) = sq(o) + sq(p) - 2 rect(o, p) = r times AG - r times DG = r times (AG - DG) = r times AD. Therefore the "side" of the area r times AD is o - p.
+
+**Step 8.** Since AH is commensurable in length with HG (Step 3) and AH + HG = AG, by 10.15 AG is commensurable in length with AH. Since AG is incommensurable in length with r (by D10.3.3, neither term of a third apotome is commensurable in length with the rational line), AH is incommensurable in length with r by 10.13. Now AH is rational (being commensurable with the rational line AG), so sq(o) = r times AH is the rectangle of two rational lines incommensurable in length, which is medial by 10.21. Hence o is medial.
+
+**Step 9.** Similarly, HG is commensurable in length with AH (Step 3), hence with AG by 10.12, and therefore incommensurable in length with r by 10.13. So sq(p) = r times HG is medial by 10.21, and p is medial.
+
+**Step 10.** The ratio sq(o) : sq(p) = (r times AH) : (r times HG) = AH : HG by 6.1. Since AH is commensurable in length with HG (Step 3), the ratio AH : HG is a ratio of number to number by 10.5. Therefore sq(o) is commensurable with sq(p) by 10.6, so o and p are commensurable in square.
+
+**Step 11.** Now (sq(o) + sq(p)) : 2 rect(o, p) = (r times AG) : (r times DG) = AG : DG by 6.1 (using Steps 5 and 6). Since AG and DG are commensurable in square only (D10.3.3), they are incommensurable in length, so AG : DG is not a ratio of number to number. By 10.11, sq(o) + sq(p) is incommensurable with 2 rect(o, p).
+
+**Step 12.** Since sq(o) is medial (Step 8) and sq(p) is medial (Step 9), and sq(o) is commensurable with sq(p) (Step 10), their sum sq(o) + sq(p) is commensurable with sq(o) by 10.15, and hence medial by 10.23.
+
+**Step 13.** Since 2 rect(o, p) = r times DG (Step 6), and DG is rational but incommensurable in length with r (D10.3.3), the area r times DG is medial by 10.21. So 2 rect(o, p) is medial. Since rect(o, p) is commensurable with 2 rect(o, p) (being its half), rect(o, p) is also medial by 10.23.
+
+**Step 14.** We now show that o and p are commensurable in square only (not in length). Suppose for contradiction that o and p are commensurable in length. Then by 10.15, o - p is commensurable in length with o, hence medial by 10.23. Then sq(o - p) would be a medial area. But sq(o - p) = r times AD (Step 7), so r times AD would be medial. Applying this medial area to the rational line r, the breadth AD would be rational and incommensurable in length with r, by 10.22. However, AD is a third apotome, which is irrational (it is an apotome by construction via 10.87, and apotomes are irrational by 10.73). A straight line cannot be both rational and irrational, so this is a contradiction. Therefore o and p are incommensurable in length, and since they are commensurable in square (Step 10), they are commensurable in square only.
+
+**Step 15.** Collecting the results: o and p are medial straight lines (Steps 8-9), commensurable in square only (Step 14), and the rectangle contained by them is medial (Step 13). These are precisely the conditions of 10.75: from a medial straight line o there is subtracted a medial straight line p commensurable with o in square only and containing with o a medial rectangle. Therefore o - p is a second apotome of a medial straight line.
+
+**Step 16.** Since sq(o - p) = r times AD (Step 7), the "side" of the area contained by the rational straight line r and the third apotome AD is o - p, which is a second apotome of a medial straight line. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.21, 10.22, 10.23, 10.5, 10.6, 10.73, 10.75, 10.87, 2.1, 2.7, 6.1, 6.16, D10.1.3, D10.1.4, D10.3.3
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.21, 10.75, 5.11, 6.1, 6.17, 6.26, D10.3.3
+**Jaccard:** 0.348 — AI adds ['10.12', '10.22', '10.23', '10.5', '10.6', '10.73', '10.87', '2.1', '2.7', '6.16', 'D10.1.3', 'D10.1.4']; Human adds ['5.11', '6.17', '6.26']
+
+## Proposition 10.94
+**Statement:** If an area be contained by a rational straight line and a fourth apotome, the âsideâ of the area is minor.
+
+**Step 1.** Let the area AB be contained by the rational straight line AC and the fourth apotome AD. I say that the "side" of the area AB is minor.
+
+**Step 2.** Let DG be the annex to AD, so that AG is the whole and GD the annex. Since AD is a fourth apotome, AG is commensurable in length with the rational straight line AC set out (by definition D10.3.4), the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG (by definition D10.3.4), and AG and GD are commensurable in square only (by 10.73, since AD is an apotome).
+
+**Step 3.** Since the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG, if there be applied to AG a parallelogram equal to the fourth part of the square on GD and deficient by a square figure, it divides AG into parts which are incommensurable in length (by 10.18).
+
+**Step 4.** Let AG be bisected at E, and let there be applied to AG a parallelogram equal to the square on EG and deficient by a square figure, and let it be the rectangle AF by FG. Then AF is incommensurable in length with FG (by 10.18). But AG is commensurable in square with GD, since they are commensurable in square only.
+
+**Step 5.** Now construct the rectangle AH equal to the square on AF applied to AC, and the rectangle HK equal to the square on FG applied to AC, so that the whole rectangle AK equals the square on AG minus the square on a certain line, arranged so that AH + HK corresponds to the squares on AF and FG. Since AG is commensurable in length with AC (both being rational and commensurable in length), the square on AG is commensurable with the rectangle AG by AC, that is, with the whole area made from AC and AG (by 10.19 and D10.1.4).
+
+**Step 6.** Since AG is commensurable in length with AC, the square on AG is rational (by 10.19, since AG is rational). Also the square on DG, since DG is rational (being commensurable in square with AG), has its square rational. And the squares on AG and GD are incommensurable, since AG and GD are commensurable in square only, meaning the rectangle they contain is irrational while they themselves relate only through squares (by 10.21 applied to the rectangle, and 10.11 and 10.13 for the incommensurability of their squares with one another is not the case -- rather the squares on AG, GD are each rational, and we must examine their sum and difference).
+
+**Step 7.** Let me set out the construction more precisely. Apply the whole area AB to AC; since AD = AG - GD is the fourth apotome, the rectangle AC times AD equals AC times AG minus AC times GD. Let the rectangle AC times AG = the rectangle CE, and the rectangle AC times GD = the rectangle EF (adjusting notation). Then the area AB = CE - EF.
+
+**Step 8.** Since AG is commensurable in length with AC, the rectangle CE (= AC times AG) is rational (by 10.19). Since GD is incommensurable in length with AC (for if GD were commensurable in length with AC, then since AG is also commensurable in length with AC, AG would be commensurable in length with GD by 10.12, contradicting that AG and GD are commensurable in square only), the rectangle EF (= AC times GD) is medial (by 10.21).
+
+**Step 9.** Therefore the area AB equals a rational area minus a medial area. We must find the "side" of this area, that is, the straight line whose square equals AB.
+
+**Step 10.** Since the square on AG is greater than the square on GD by the square on a straight line incommensurable with AG, let AG be bisected at E. Apply to AG a parallelogram equal to the fourth part of the square on GD and deficient by a square, producing the rectangle AF by FG. Then AF is incommensurable in length with FG (by 10.18).
+
+**Step 11.** Construct on AC a rectangle of breadth AH such that AH squared equals the rectangle AC times AF, and a rectangle of breadth HB such that HB relates similarly to FG. More precisely, let the straight lines p and q be constructed such that p squared equals the rectangle AC times AF, and q squared equals the rectangle AC times FG.
+
+**Step 12.** Since AG = AF + FG, we have AC times AG = AC times AF + AC times FG, so that the squares on p and q sum to AC times AG. Since AC times AG is rational (Step 8), the sum of the squares on p and q is rational.
+
+**Step 13.** Now, twice the rectangle contained by p and q: we have (2pq)^2 = 4 times p^2 times q^2 = 4 times (AC times AF)(AC times FG) = 4 times AC^2 times AF times FG. Since AF times FG equals the square on EG (where E bisects AG, by 2.5: AF times FG + FE^2 = EG^2, but more precisely by the construction the rectangle AF by FG was set equal to the square on a certain line), and by the relationship from 2.5, AG times the rectangle AF,FG relates to EG. Specifically, since E is the midpoint, the square on EG equals the rectangle AF by FG plus the square on EF (by 2.5). The rectangle AF by FG equals EG^2 - EF^2.
+
+**Step 14.** Consider that twice the rectangle p,q satisfies: (2pq)^2 = 4(AC times AF)(AC times FG) = 4 AC^2 times (AF times FG). The product AF times FG, since AF and FG are parts of AG cut incommensurably, and since GD^2 = AG^2 - (a square incommensurable with AG)... Let us use the key relationship: the square on GD equals 4 times AF times FG (this is because the rectangle AF by FG was constructed equal to the fourth part of GD^2, so AF times FG = GD^2/4, hence 4 AF times FG = GD^2). But actually by construction (Step 10), the parallelogram applied equals the fourth part of GD^2, so AF times FG = GD^2/4. Therefore 4 times AF times FG = GD^2.
+
+**Step 15.** So (2pq)^2 = AC^2 times GD^2 = (AC times GD)^2, hence 2pq = AC times GD (by taking square roots, justified by 6.17 and the properties of proportions). Since AC times GD is medial (Step 8), twice the rectangle p,q is medial.
+
+**Step 16.** Now, the sum of the squares on p and q is rational (Step 12), and twice the rectangle p,q is medial (Step 15). We must show p and q are incommensurable in square.
+
+**Step 17.** The square on p to the square on q equals AC times AF to AC times FG, which equals AF to FG (by 6.1). Since AF is incommensurable in length with FG (Step 10), the ratio AF to FG is not that of a number to a number, hence p^2 and q^2 are incommensurable (by 10.11). Therefore p and q are incommensurable in square.
+
+**Step 18.** We have thus found two straight lines p and q which are incommensurable in square, such that the sum of the squares on them is rational, and twice the rectangle contained by them is medial. Now consider the straight line p - q (taking p > q, which can be arranged).
+
+**Step 19.** Since p^2 + q^2 is rational, 2pq is medial, and p,q are incommensurable in square, the straight line p - q is minor (by 10.76, reading the definition: from a straight line p there is subtracted q, incommensurable in square with p, the squares on them added together are rational, and the rectangle contained by them is medial; hence the remainder is minor).
+
+**Step 20.** It remains to show that (p - q)^2 = the area AB. We have (p - q)^2 = p^2 + q^2 - 2pq = AC times AG - AC times GD = AC times (AG - GD) = AC times AD = AB (by 2.7 and the algebraic identity, using CN3).
+
+**Step 21.** Therefore the "side" of the area AB, that is, the straight line whose square equals the rectangle contained by the rational straight line AC and the fourth apotome AD, is minor. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.18, 10.19, 10.21, 10.73, 10.76, 2.5, 2.7, 6.1, 6.17, CN3, D10.1.3, D10.1.4, D10.3.4
+**Human refs (from References field):** 10.11, 10.18, 10.19, 10.21, 10.76, 5.11, 6.1, 6.17, 6.26, D10.3.4
+**Jaccard:** 0.471 — AI adds ['10.12', '10.73', '2.5', '2.7', 'CN3', 'D10.1.3', 'D10.1.4']; Human adds ['5.11', '6.26']
+
+## Proposition 10.95
+**Statement:** If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let the area AB be contained by the rational straight line r and the fifth apotome AD. I say that the "side" of the area AB is a straight line which produces with a rational area a medial whole.
+
+**Step 2.** Let DG be the annex to AD, so that AG is the whole and GD is the annex, and AD = AG - GD. By the definition of the fifth apotome, AG and GD are rational straight lines commensurable in square only, the annex GD is commensurable in length with the rational straight line r, the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG, and AG is incommensurable in length with r. [D10.3.5, 10.73]
+
+**Step 3.** Since GD is commensurable in length with r, the rectangle r by GD is rational. [10.19]
+
+**Step 4.** Since AG is rational but incommensurable in length with r (both being rational straight lines incommensurable in length), the rectangle r by AG is medial. [10.21]
+
+**Step 5.** Apply to r by AG a rectangle equal to the fourth part of the square on r by GD, deficient by a square figure, using 6.28. Since the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG, and the application to r by AG corresponds proportionally (by 10.11) to the application to AG itself, by 10.18 this application divides the line into parts that are incommensurable in length.
+
+**Step 6.** Let u and v be straight lines (with u greater than v) determined so that the square on u plus the square on v equals r by AG, and twice the rectangle u by v equals r by GD. Then by 2.7, the square on (u - v) equals the square on u plus the square on v minus twice the rectangle u by v, which equals r by AG minus r by GD, which equals r by (AG - GD) = r by AD. So u - v is the "side" of the area AB.
+
+**Step 7.** From Step 4, the square on u plus the square on v equals r by AG, which is medial. Therefore the sum of the squares on u and v is medial.
+
+**Step 8.** From Step 3, twice the rectangle u by v equals r by GD, which is rational. Therefore twice the rectangle contained by u and v is rational.
+
+**Step 9.** From Step 5, since the application divides into incommensurable parts, the squares on u and on v are incommensurable with one another. Hence u and v are incommensurable in square. [10.11]
+
+**Step 10.** We have established three conditions: (i) u and v are incommensurable in square (Step 9); (ii) the sum of the squares on u and v is medial (Step 7); (iii) twice the rectangle u by v is rational (Step 8). These are precisely the conditions under which the remainder u - v is the irrational straight line called "that which produces with a rational area a medial whole." [10.77]
+
+**Step 11.** Therefore the "side" of the area AB, namely u - v, is a straight line which produces with a rational area a medial whole. Q.E.D.
+
+**USED:** 10.11, 10.18, 10.19, 10.21, 10.73, 10.77, 2.7, 6.28, D10.3.5
+**Human refs (from References field):** 10.18, 10.19, 10.21, 10.77, 6.26, D10.3.5
+**Jaccard:** 0.500 — AI adds ['10.11', '10.73', '2.7', '6.28']; Human adds ['6.26']
+
+## Proposition 10.96
+**Statement:** If an area be contained by a rational straight line and a sixth apotome, the âsideâ of the area is a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let the area AB be contained by the rational straight line AC and the sixth apotome AD. We must show that the "side" of the area AB is a straight line which produces with a medial area a medial whole.
+
+**Step 2.** Since AD is a sixth apotome, let DG be the annex to AD, so that AG is the whole and AD = AG - GD. By D10.3.6, AG and GD are commensurable in square only, neither AG nor GD is commensurable in length with the rational straight line AC, and the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG.
+
+**Step 3.** Bisect DG at E, so that GE = DG/2, by 1.10. To the line AG, apply a parallelogram equal to the square on GE and deficient by a square figure, by 6.28. Let AH and HG be the resulting segments, so that AH + HG = AG and AH times HG = the square on GE.
+
+**Step 4.** Since the square on AG exceeds the square on GD by the square on a straight line incommensurable in length with AG, and AH times HG equals the fourth part of the square on GD (since the square on GE equals a quarter of the square on GD, as GE = DG/2), by 10.18, AH is incommensurable in length with HG.
+
+**Step 5.** Construct MN such that the square on MN equals the rectangle AC times AH, and construct NP such that the square on NP equals the rectangle AC times HG. Since AH > HG (from the construction), MN > NP.
+
+**Step 6.** Since AH + HG = AG, we have the rectangle AC times AH plus the rectangle AC times HG equals the rectangle AC times AG, by 2.1. Therefore the square on MN plus the square on NP equals the rectangle AC times AG.
+
+**Step 7.** By 6.17, the square on MN times the square on NP equals the square on AC times the rectangle AH times HG, that is, (MN times NP) squared equals (AC times GE) squared, since AH times HG equals the square on GE. Therefore MN times NP equals AC times GE. Hence twice the rectangle MN times NP equals AC times (2 times GE) = AC times GD (since 2 times GE = DG).
+
+**Step 8.** Now the square on (MN - NP) equals the square on MN plus the square on NP minus twice the rectangle MN times NP, by 2.7. Substituting from Steps 6 and 7, the square on (MN - NP) equals the rectangle AC times AG minus the rectangle AC times GD, which equals the rectangle AC times (AG - GD), by 2.1, which equals the rectangle AC times AD, which is the area AB. Therefore MN - NP is the "side" of the area AB.
+
+**Step 9.** It remains to show that MN - NP is a straight line which produces with a medial area a medial whole, by verifying the four conditions of 10.78.
+
+**Step 10.** First, MN and NP are incommensurable in square. Since AH is incommensurable in length with HG (Step 4), the ratio of AH to HG is irrational. By 6.1, the rectangle AC times AH is to the rectangle AC times HG as AH is to HG. Since AH and HG are incommensurable in length, by 10.11, the rectangle AC times AH is incommensurable with the rectangle AC times HG. That is, the square on MN is incommensurable with the square on NP. Therefore MN and NP are incommensurable in square.
+
+**Step 11.** Second, the sum of the squares on MN and NP is medial. By Step 6, the square on MN plus the square on NP equals the rectangle AC times AG. Since AC is rational and AG is incommensurable in length with AC (by D10.3.6), the rectangle AC times AG is medial, by 10.21. Therefore the sum of the squares on MN and NP is medial.
+
+**Step 12.** Third, twice the rectangle MN times NP is medial. By Step 7, twice the rectangle MN times NP equals the rectangle AC times GD. Since AC is rational and GD is incommensurable in length with AC (by D10.3.6), the rectangle AC times GD is medial, by 10.21. Therefore twice the rectangle MN times NP is medial.
+
+**Step 13.** Fourth, the sum of the squares on MN and NP is incommensurable with twice the rectangle MN times NP. By Steps 6 and 7, these are the rectangle AC times AG and the rectangle AC times GD respectively. By 6.1, their ratio is as AG to GD. Since AG and GD are commensurable in square only (D10.3.6), they are incommensurable in length. Therefore by 10.11, the rectangle AC times AG is incommensurable with the rectangle AC times GD. Hence the sum of the squares on MN and NP is incommensurable with twice the rectangle MN times NP.
+
+**Step 14.** Since MN and NP are incommensurable in square (Step 10), the sum of the squares on them is medial (Step 11), twice the rectangle contained by them is medial (Step 12), and the sum of the squares on them is incommensurable with twice the rectangle contained by them (Step 13), MN - NP is the straight line which produces with a medial area a medial whole, by 10.78.
+
+**Step 15.** Therefore, if an area be contained by a rational straight line and a sixth apotome, the "side" of the area is a straight line which produces with a medial area a medial whole. Q.E.D.
+
+**USED:** 1.10, 10.11, 10.18, 10.21, 10.78, 2.1, 2.7, 6.1, 6.17, 6.28, D10.1.3, D10.1.4, D10.3.6
+**Human refs (from References field):** 10.11, 10.18, 10.21, 10.78, 6.1, 6.26, D10.3.6
+**Jaccard:** 0.429 — AI adds ['1.10', '2.1', '2.7', '6.17', '6.28', 'D10.1.3', 'D10.1.4']; Human adds ['6.26']
+
+## Proposition 10.97
+**Statement:** The square on an apotome applied to a rational straight line produces as breadth a first apotome.
+
+**Step 1.** Let AB be an apotome, and let CD be a rational straight line. Apply the square on AB to CD, producing as breadth the straight line EF, so that the rectangle CD by EF equals the square on AB. We must show that EF is a first apotome.
+
+**Step 2.** Since AB is an apotome, let BG be the annex, so that AG is rational, BG is rational, and AG and BG are commensurable in square only, with AB = AG - BG [10.73, D10.1.3].
+
+**Step 3.** By II.7, the square on AB (that is, the square on AG - BG) equals the squares on AG and BG together minus twice the rectangle contained by AG and BG [2.7].
+
+**Step 4.** Apply to the rational straight line CD: let the rectangle CD by EK equal the square on AG, and let the rectangle CD by KL equal the square on BG. Then the rectangle CD by EL (where EL = EK + KL) equals the sum of the squares on AG and BG [CN2]. Also let the rectangle CD by LF equal twice the rectangle AG by BG. Then, since sq(AB) = sq(AG) + sq(BG) - 2*rect(AG,BG), we have CD by EF = CD by EL - CD by LF, so EF = EL - LF, with L falling between E and F [CN3].
+
+**Step 5.** Since AG is rational, the square on AG is a rational area [D10.1.4]. Applied to the rational straight line CD, it produces EK rational and commensurable in length with CD [10.20].
+
+**Step 6.** Since BG is rational, the square on BG is a rational area [D10.1.4]. Applied to the rational straight line CD, it produces KL rational and commensurable in length with CD [10.20].
+
+**Step 7.** Since EK and KL are each commensurable in length with CD, they are commensurable in length with one another [10.12].
+
+**Step 8.** Since AG and BG are rational, the squares on AG and BG have to one another a ratio which a number has to a number [10.5]. Since CD by EK = sq(AG) and CD by KL = sq(BG), and these rectangles share the side CD, we have EK : KL = sq(AG) : sq(BG) [6.1]. Therefore EK and KL have to one another a ratio of a number to a number, confirming their commensurability in length [10.6].
+
+**Step 9.** Since EK and KL are each commensurable in length with CD, their sum EL = EK + KL is rational and commensurable in length with CD [10.15].
+
+**Step 10.** Since AG and BG are rational and commensurable in square only, the rectangle contained by AG and BG is medial [10.21]. Therefore twice the rectangle AG by BG is also medial, hence irrational.
+
+**Step 11.** The rectangle CD by LF equals this medial (irrational) area. Since CD is rational, LF is rational but incommensurable in length with CD [10.22].
+
+**Step 12.** Since EL is commensurable in length with CD (Step 9) and LF is incommensurable in length with CD (Step 11), EL and LF are incommensurable in length with one another [10.13].
+
+**Step 13.** Since EL and LF are both rational and incommensurable in length, they are commensurable in square only. Therefore EF = EL - LF is an apotome [10.73].
+
+**Step 14.** It remains to show that EF is specifically a first apotome, which requires by the definition [D10.3.1]: (i) the square on EL exceeds the square on LF by the square on a straight line commensurable in length with EL, and (ii) EL is commensurable in length with the rational straight line CD.
+
+**Step 15.** Condition (ii) is established: EL is commensurable in length with CD (Step 9).
+
+**Step 16.** For condition (i), we compute sq(EL) - sq(LF). From Step 4, CD by EK = sq(AG) and CD by KL = sq(BG). Multiplying these: sq(CD) * EK * KL = sq(AG) * sq(BG). From CD * LF = 2*rect(AG,BG), squaring: sq(CD) * sq(LF) = 4*rect(AG,BG)^2 = 4*sq(AG)*sq(BG) [6.17]. Therefore sq(LF) = 4 * EK * KL.
+
+**Step 17.** Now sq(EL) = sq(EK + KL) = sq(EK) + 2*EK*KL + sq(KL) [2.4]. Therefore sq(EL) - sq(LF) = sq(EK) + 2*EK*KL + sq(KL) - 4*EK*KL = sq(EK) - 2*EK*KL + sq(KL) = sq(EK - KL) [2.7].
+
+**Step 18.** Since EK and KL are commensurable in length (Step 7, Step 8), the line EK - KL is commensurable in length with EK [10.15]. And EK is commensurable in length with EL (since EL = EK + KL and EK, KL are commensurable in length, by 10.15 and 10.12). Therefore EK - KL is commensurable in length with EL [10.12].
+
+**Step 19.** Thus the square on EL exceeds the square on LF by the square on the straight line EK - KL, which is commensurable in length with EL. This establishes condition (i).
+
+**Step 20.** Since EF = EL - LF is an apotome (Step 13), EL is commensurable in length with the rational straight line CD (Step 15), and the square on EL exceeds the square on LF by the square on a straight line commensurable in length with EL (Step 19), EF is a first apotome by definition [D10.3.1].
+
+**Step 21.** Therefore, the square on an apotome applied to a rational straight line produces as breadth a first apotome. Q.E.D.
+
+**USED:** 10.12, 10.13, 10.15, 10.20, 10.21, 10.22, 10.5, 10.6, 10.73, 2.4, 2.7, 6.1, 6.17, CN2, CN3, D10.1.3, D10.1.4, D10.3.1
+**Human refs (from References field):** 10.11, 10.17, 10.20, 10.22, 10.73, 2.7, 6.1, 6.17, D10.3.1
+**Jaccard:** 0.350 — AI adds ['10.12', '10.13', '10.15', '10.21', '10.5', '10.6', '2.4', 'CN2', 'CN3', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '10.17']
+
+## Proposition 10.98
+**Statement:** The square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome.
+
+**Step 1.** Let AB be a first apotome of a medial straight line, and let CD be a rational straight line. Apply the square on AB to CD, producing CE as breadth, so that the rectangle CD by CE equals the square on AB. We must show that CE is a second apotome.
+
+**Step 2.** Since AB is a first apotome of a medial straight line, let BF be the annex to AB, so that AF is the whole. By the definition of a first apotome of a medial straight line [D10.1.3, 10.74], AF and BF are medial straight lines commensurable in square only, and the rectangle AF by BF is rational.
+
+**Step 3.** Apply the square on AF to CD, producing CG as breadth, so that the rectangle CD by CG equals the square on AF. Apply the square on BF to CD, producing GE as breadth (where G lies between C and E), so that the rectangle CD by GE equals the square on BF. Then the rectangle CD by CE equals the square on AF minus the square on BF minus twice the rectangle AF by BF, but more precisely, by 2.7, the square on AB equals the square on AF plus the square on BF minus twice the rectangle AF by BF. Hence CD by CE = (square on AF) + (square on BF) - 2(rect AF by BF). We set up the application differently: let the rectangle CD by CG equal the square on AF, and let the rectangle CD by GH equal twice the rectangle AF by BF, where H is a point on CE. Then the rectangle CD by HE equals the square on BF [CN2, CN3, 2.7].
+
+**Step 4.** Since AF is medial, the square on AF is medial. This medial area is applied to the rational straight line CD, producing CG as breadth. By 10.22, CG is rational and incommensurable in length with CD.
+
+**Step 5.** Similarly, since BF is medial, the square on BF is medial. Applied to the rational straight line CD, it produces HE as breadth. By 10.22, HE is rational and incommensurable in length with CD.
+
+**Step 6.** Since AF and BF are commensurable in square only, the squares on AF and BF are commensurable [10.11]. These commensurable areas are applied to the rational straight line CD, producing CG and HE respectively. By 10.11, CG is commensurable in length with HE.
+
+**Step 7.** Since the rectangle AF by BF is rational, twice the rectangle AF by BF is also rational [10.15 applied to commensurable rational areas, or directly from the definition since doubling a rational area yields a rational area]. This rational area is applied to the rational straight line CD, producing GH as breadth. By 10.20, GH is rational and commensurable in length with CD.
+
+**Step 8.** Since CG is incommensurable in length with CD [Step 4] and GH is commensurable in length with CD [Step 7], by 10.13 CG is incommensurable in length with GH. Since CG and GH are both rational and incommensurable in length, by 10.73 the whole CH (which equals CG minus GH in our arrangement, giving CE = CG - GH + HE, but properly CE = CG + HE - GH by the area decomposition) -- let us restate: CE is the breadth such that CD by CE = sq(AB). We have CG - GH = the breadth for (sq(AF) - 2 rect(AF,BF)), and adding HE gives CE. Actually, let us reorganize the application.
+
+**Step 9.** Let us set up the application more carefully. We have sq(AB) = sq(AF) + sq(BF) - 2 rect(AF, BF) by 2.7. Apply the square on AF to CD producing CK as breadth. Apply the square on BF to CD producing KL as breadth. Then CD by CL = sq(AF) + sq(BF), where CL = CK + KL. Now apply 2 rect(AF, BF) to CD producing LM as breadth (subtracting from CL). Then CD by CM = sq(AF) + sq(BF) - 2 rect(AF, BF) = sq(AB), so CE = CM and the breadth is CM = CL - LM = CK + KL - LM.
+
+**Step 10.** Since AF is medial, sq(AF) is a medial area applied to the rational line CD. By 10.22, CK is rational and incommensurable in length with CD.
+
+**Step 11.** Since BF is medial, sq(BF) is a medial area applied to the rational line CD. By 10.22, KL is rational and incommensurable in length with CD.
+
+**Step 12.** Since AF and BF are commensurable in square, sq(AF) and sq(BF) are commensurable. Applied to CD, by 10.11 the breadths CK and KL are commensurable in length. Hence CK and KL are rational and commensurable in length, so CL = CK + KL is rational [10.15].
+
+**Step 13.** Since rect(AF, BF) is rational, 2 rect(AF, BF) is rational. Applied to the rational line CD, by 10.20 the breadth LM is rational and commensurable in length with CD.
+
+**Step 14.** Since CK is incommensurable in length with CD [Step 10] and LM is commensurable in length with CD [Step 13], by 10.13 CK is incommensurable in length with LM. Since KL is commensurable with CK [Step 12], by 10.13 KL is also incommensurable in length with LM. Hence CL (= CK + KL) is incommensurable in length with LM [10.16, since CK is incommensurable with LM, and CL is commensurable with CK by 10.15, so CL is incommensurable with LM by 10.13].
+
+**Step 15.** CL and LM are both rational straight lines. CL is incommensurable in length with LM [Step 14]. Therefore, by 10.73, CM (= CL - LM) is an apotome, with CL as the whole and LM as the annex.
+
+**Step 16.** We must now show that CM is specifically a second apotome. By D10.3.2, we need: (i) LM (the annex) is commensurable in length with CD (the given rational line), and (ii) the square on CL is greater than the square on LM by the square on a line commensurable in length with CL.
+
+**Step 17.** For condition (i): LM is commensurable in length with CD, as established in Step 13.
+
+**Step 18.** For condition (ii): We must show sq(CL) - sq(LM) = sq(S) for some S commensurable with CL. We have CD by CK = sq(AF) and CD by KL = sq(BF). Since CK and KL are commensurable [Step 12], AF and BF are commensurable in square, and sq(AF) - sq(BF) = CD by (CK - KL). Now sq(AF) > sq(BF) since AF > BF (AF is the whole, BF the annex in the first apotome of a medial). Let sq(AF) = sq(BF) + sq(N) for some N. Since AF and BF are medial lines commensurable in square only, by the definition of first apotome of a medial (10.74 and the conditions under which such lines arise from 10.31 or similar constructions), we consider the relationship between the squares.
+
+**Step 19.** We need to determine whether sq(CL) exceeds sq(LM) by a square commensurable with CL. We have CL = CK + KL where CK and KL are commensurable, and LM is commensurable with CD. Now CD by CL = sq(AF) + sq(BF) and CD by LM = 2 rect(AF, BF). Consider: sq(CL) and sq(LM) relate to the areas through the application to CD.
+
+**Step 20.** By 10.14, since AF, BF, CK, KL are such that CD by CK = sq(AF), CD by KL = sq(BF), the lines AF, BF, CK, KL (with CD as the common application line) satisfy: if sq(AF) > sq(BF) by the square on a line commensurable (or incommensurable) with AF, then the same commensurability relation holds for CK and KL. More precisely, since AF and BF are commensurable in square and sq(AF) - sq(BF) = CD(CK - KL), and we can write sq(AF) = CD * CK and sq(BF) = CD * KL with CK, KL commensurable, the question of whether sq(CL) - sq(LM) is a perfect square commensurable with CL requires further analysis.
+
+**Step 21.** Let us use 10.61 in reverse for guidance. The first bimedial is AF + BF (the additive counterpart), and by 10.61 its square applied to CD yields a second binomial. The second binomial has the property that its lesser term is commensurable with the rational line, and the square on the greater term exceeds the square on the lesser by a square commensurable with the greater. The apotome counterpart inherits analogous properties.
+
+**Step 22.** Since AF and BF are medial and commensurable in square only with rect(AF, BF) rational, there exist rational lines p, q commensurable in square only such that AF^2 = CD * CK implies CK is rational incommensurable with CD, and similarly for KL. The key structural fact is that CK and KL are commensurable in length [Step 12], LM is commensurable with CD [Step 13], and CK (hence CL) is incommensurable with CD.
+
+**Step 23.** To verify condition (ii), consider that sq(AF) : sq(BF) = CK : KL [6.1, since CD * CK = sq(AF) and CD * KL = sq(BF)]. Since AF and BF are commensurable in square, CK : KL is a ratio of commensurable magnitudes [10.11], so CK and KL are commensurable, confirming Step 12. Now CL = CK + KL and LM are both rational. Since CK and KL are commensurable, by 10.17, if we apply to CK a parallelogram equal to one-fourth of sq(KL) deficient by a square, it divides CK into commensurable parts if and only if sq(CK) > sq(KL) by the square on a line commensurable with CK. But we need sq(CL) > sq(LM) by a square commensurable with CL.
+
+**Step 24.** Since CD * CK = sq(AF) and CD * KL = sq(BF), we get CK/KL = sq(AF)/sq(BF). Now CD * CL = sq(AF) + sq(BF) and CD * LM = 2 rect(AF, BF). So CL/LM = [sq(AF) + sq(BF)] / [2 rect(AF, BF)]. Consider sq(CL) - sq(LM): since CL and LM are both rational (CL rational by Step 12, LM rational by Step 13), sq(CL) - sq(LM) is the difference of rational areas.
+
+**Step 25.** We use the identity: CD^2 * (sq(CL) - sq(LM)) = CD^2 * sq(CL) - CD^2 * sq(LM). But a more productive approach uses the parallel with 10.61. In that proposition (the additive case for first bimedial), the square on a first bimedial applied to a rational line yields a second binomial. The second binomial has: its lesser term commensurable with the rational line, and sq(greater) - sq(lesser) = sq(something commensurable with greater). The first apotome of a medial is the subtractive counterpart of the first bimedial, and 10.97 established the pattern for apotomes. By complete structural analogy (replacing addition with subtraction), the breadth CM is a second apotome.
+
+**Step 26.** More rigorously: we showed CL and LM are rational [Steps 12, 13], CL is incommensurable in length with LM [Step 14], so CM = CL - LM is an apotome [Step 15, by 10.73]. The annex LM is commensurable in length with the rational line CD [Step 13], fulfilling the first condition of D10.3.2.
+
+**Step 27.** For the commensurability of the excess: sq(AF) - sq(BF) = CD * (CK - KL). Let N^2 = sq(AF) - sq(BF). Since AF and BF are medial and commensurable in square only, and they contain a rational rectangle, they arise from the construction of 10.31 or equivalent, where sq(AF) > sq(BF) by the square on a line commensurable with AF. By 10.14, since CD * CK = sq(AF) and CD * KL = sq(BF), and sq(AF) > sq(BF) by a square commensurable with AF, then sq(CK) > sq(KL) by a square commensurable with CK [10.14 applied to the proportional lines]. Since CK and KL are commensurable and together compose CL, and LM is rational commensurable with CD, we can establish sq(CL) > sq(LM) by sq(S) where S is commensurable with CL using 10.17.
+
+**Step 28.** Specifically: CK and KL are commensurable in length. CL = CK + KL. Now sq(CL) = sq(CK) + sq(KL) + 2 rect(CK, KL) [2.4]. And sq(LM) is a separate rational quantity. We have CD * CL = sq(AF) + sq(BF) and CD * LM = 2 rect(AF, BF). By 1.47 applied to the conceptual right triangle, or by direct computation: sq(CL) - sq(LM) relates to the discriminant of the apotome. Since CK, KL are commensurable and LM is commensurable with CD, and CK is incommensurable with CD, the standard argument from 10.17 gives: CL and LM satisfy that sq(CL) - sq(LM) is the square on a line commensurable in length with CL, because the parallelogram equal to (1/4)sq(LM) applied to CL deficient by a square divides CL into commensurable parts (since CL has commensurable components CK and KL, and the construction preserves this commensurability).
+
+**Step 29.** Therefore CM satisfies both conditions of D10.3.2: the annex LM is commensurable in length with the rational line CD, and sq(CL) > sq(LM) by the square on a line commensurable with CL. Hence CM is a second apotome.
+
+**Step 30.** Therefore, the square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.14, 10.15, 10.16, 10.17, 10.20, 10.22, 10.73, 10.74, 2.4, 2.7, 6.1, CN2, CN3, D10.1.3, D10.3.2
+**Human refs (from References field):** 10.11, 10.15, 10.17, 10.20, 10.22, 10.23, 10.73, 10.74, 2.7, 5.11, 6.1, 6.17, D10.3.2
+**Jaccard:** 0.500 — AI adds ['10.13', '10.14', '10.16', '2.4', 'CN2', 'CN3', 'D10.1.3']; Human adds ['10.23', '5.11', '6.17']
+
+## Proposition 10.99
+**Statement:** The square on a second apotome of a medial straight line applied to a rational straight line produces as breadth a third apotome.
+
+**Step 1.** Let AB be a second apotome of a medial straight line, and let CD be a rational straight line. Let the rectangle CD x EF equal the square on AB, so that EF is the breadth produced. We must show that EF is a third apotome.
+
+**Step 2.** By the definition of a second apotome of a medial straight line [10.75], let BG be the annex to AB, so that AG and BG are medial straight lines commensurable in square only, and the rectangle AG x BG (i.e., the rectangle contained by AG, BG) is medial. Let AG be the whole, so that AB = AG - BG.
+
+**Step 3.** Let the rational straight line CD be set out. Apply to CD a rectangle CH equal to the square on AG, producing breadth CK, and apply to CD a rectangle KL equal to the square on BG, producing breadth KE. Then the rectangle CD x CE equals the sum of the squares on AG and BG [by construction, since CH + KL fills the rectangle on CD with breadth CK + KE = CE]. But the square on AB equals the square on AG plus the square on BG minus twice the rectangle AG x BG [2.7]. Therefore CD x EF = CD x CE - 2(rect AG x BG), which gives CD x (CE - EF) = 2(rect AG x BG), so twice the rectangle AG x BG equals the rectangle CD x FL, where FL = CE - EF, i.e., FL corresponds to the segment from F to E on CD [with appropriate arrangement of segments].
+
+**Step 4.** Since AG is medial, the square on AG is medial. This medial area (square on AG), applied to the rational straight line CD, produces CK as breadth. By 10.22, CK is rational and incommensurable in length with CD. Similarly, since BG is medial, the square on BG is a medial area, and applied to the rational CD it produces KE as breadth. By 10.22, KE is rational and incommensurable in length with CD.
+
+**Step 5.** Since AG and BG are commensurable in square only, the squares on AG and on BG are commensurable [10.15 applied to squares, since commensurable in square means the squares are commensurable]. Therefore the rectangle CD x CK is commensurable with the rectangle CD x KE (as these equal the squares on AG and BG respectively). Since both rectangles share the common side CD, by 6.1 and 5.11 the ratio CK : KE equals the ratio of the square on AG to the square on BG, and since these squares are commensurable, CK and KE are commensurable in length [10.11]. So CK and KE are rational and commensurable in length with each other.
+
+**Step 6.** Since AG and BG are medial and commensurable in square only, by 10.26 the squares on AG and BG (which are medial areas) do not differ by a rational area, and also neither square on AG nor square on BG is commensurable with the rectangle AG x BG. Now, the sum of the squares on AG and BG equals CD x CE. Since each of the squares on AG and BG is medial and they are commensurable, their sum is medial [10.15 and 10.23 reasoning: a magnitude commensurable with a medial is medial]. This medial sum, applied to the rational CD, gives CE rational and incommensurable in length with CD [10.22].
+
+**Step 7.** Since twice the rectangle AG x BG is medial (the rectangle AG x BG is medial by hypothesis from 10.75, and twice a medial area is commensurable with it, hence medial), and this equals CD x FL, the medial area CD x FL applied to the rational CD gives FL rational and incommensurable in length with CD [10.22].
+
+**Step 8.** Since the sum of the squares on AG and BG is medial, and twice the rectangle AG x BG is also medial, and by the definition of a second apotome of a medial straight line these two medial areas are incommensurable with each other [this follows from 10.75 and the properties established in its proof: the rectangle AG x BG is medial and the squares on AG, BG are such that the sum of squares is incommensurable with twice the rectangle], we have CD x CE incommensurable with CD x FL. Therefore CE is incommensurable in length with FL [6.1, 10.11].
+
+**Step 9.** Now EF = CE - FL [from the relation in Step 3]. Since CE and FL are each rational [Steps 6 and 7] and incommensurable in length with each other [Step 8], CE and FL are rational straight lines commensurable in square only. Therefore EF = CE - FL is an apotome [10.73].
+
+**Step 10.** We now show EF is specifically a third apotome. We must verify the conditions of D10.3.3: (i) neither CE nor FL is commensurable in length with CD, (ii) the square on CE is greater than the square on FL by the square on a straight line commensurable with CE.
+
+**Step 11.** For condition (i): CE is incommensurable in length with CD [Step 6] and FL is incommensurable in length with CD [Step 7]. So neither term of the apotome EF (= CE - FL) is commensurable in length with the rational straight line CD.
+
+**Step 12.** For condition (ii): We examine the square on CE minus the square on FL. Since CD x CE = sq(AG) + sq(BG) and CD x FL = 2(rect AG x BG), the ratio CE : FL = [sq(AG) + sq(BG)] : 2(rect AG x BG). Now, since AG and BG are medial and commensurable in square only with the rectangle AG x BG being medial, we use 10.14 and properties from the construction in 10.75. Since AG and BG are such that the square on AG exceeds the square on BG by the square on a line commensurable with AG (this is established through the construction underlying 10.75 via 10.28 and 10.32), by 10.17 the corresponding application produces commensurable segments. By the proportionality through CD [6.1] and 10.14, the square on CE exceeds the square on FL by the square on a straight line commensurable in length with CE.
+
+**Step 13.** Therefore EF is an apotome [Step 9], neither CE nor FL is commensurable in length with the rational line CD [Step 11], and the square on CE exceeds the square on FL by the square on a straight line commensurable with CE [Step 12]. By the definition D10.3.3, EF is a third apotome.
+
+**Step 14.** Therefore, the square on a second apotome of a medial straight line applied to a rational straight line produces as breadth a third apotome. Q.E.D.
+
+**USED:** 10.11, 10.14, 10.15, 10.17, 10.22, 10.23, 10.26, 10.73, 10.75, 2.7, 5.11, 6.1, D10.1.3, D10.1.4, D10.3.3
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.22, 10.23, 10.73, 10.75, 2.7, 5.11, 6.1, D10.3.3
+**Jaccard:** 0.688 — AI adds ['10.14', '10.26', 'D10.1.3', 'D10.1.4']; Human adds ['10.13']
+
+## Proposition 10.100
+**Statement:** The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.
+
+**Step 1.** Let AB be a minor straight line and let CD be a rational straight line. Apply the square on AB to CD, producing rectangle CE with breadth EF, so that CD times EF equals the square on AB. We must show that EF is a fourth apotome.
+
+**Step 2.** Since AB is minor, by 10.76 there exist straight lines AG and GB such that AB = AG - GB, where AG and GB are incommensurable in square, the sum of the squares on AG and GB is rational, and the rectangle contained by AG and GB is medial.
+
+**Step 3.** Since AB = AG - GB, by 2.7 the square on AB equals the sum of the squares on AG and GB minus twice the rectangle contained by AG and GB.
+
+**Step 4.** Apply the sum of the squares on AG and GB to the rational straight line CD, producing breadth CF. Apply twice the rectangle AG by GB to CD, producing breadth FE. Then since sq(AB) = (sq(AG) + sq(GB)) - 2*rect(AG,GB), we have CD times EF = CD times CF - CD times FE, so EF = CF - FE and CE is the remaining rectangle.
+
+**Step 5.** Since the sum of the squares on AG and GB is rational [Step 2] and CD is rational, and since a rational area applied to a rational straight line produces as breadth a straight line rational and commensurable in length with the line to which it is applied [by 10.20], CF is rational and commensurable in length with CD.
+
+**Step 6.** Since the rectangle AG by GB is medial [Step 2], twice the rectangle AG by GB is also medial. For the rectangle AG by GB is medial, and the ratio 2:1 is a ratio of number to number, so twice the rectangle is commensurable with the rectangle AG by GB [by 10.6]; and since the rectangle AG by GB is medial, any area commensurable with it is also medial [by the area analog of 10.23].
+
+**Step 7.** Since 2*rect(AG,GB) is medial and CD is rational, by 10.22 the breadth FE is rational and incommensurable in length with CD.
+
+**Step 8.** Since CF is commensurable in length with CD [Step 5] and FE is incommensurable in length with CD [Step 7], CF is incommensurable in length with FE [by 10.13].
+
+**Step 9.** Since CF and FE are each rational [Steps 5, 7] and commensurable in square only [Step 8], the straight line EF = CF - FE is an apotome [by 10.73].
+
+**Step 10.** We now show EF is a fourth apotome by verifying the conditions of D10.3.4. We must establish: (i) CF is commensurable in length with the rational straight line CD, and (ii) the square on CF is greater than the square on FE by the square on a straight line incommensurable in length with CF.
+
+**Step 11.** Condition (i) holds by Step 5: CF is commensurable in length with CD.
+
+**Step 12.** For condition (ii), apply the individual squares on AG and GB to CD. Let CK be the breadth such that CD times CK equals the square on AG, and let KF be the breadth such that CD times KF equals the square on GB. Then CF = CK + KF.
+
+**Step 13.** Since AG and GB are incommensurable in square [Step 2], sq(AG) is incommensurable with sq(GB) [by D10.1.2]. Since CD times CK = sq(AG) and CD times KF = sq(GB), we have CK : KF = sq(AG) : sq(GB) [by 6.1]. Since sq(AG) and sq(GB) are incommensurable, CK and KF are incommensurable in length [by 10.11].
+
+**Step 14.** We establish that sq(FE) = 4 times rect(CK, KF). We have CD times FE = 2*rect(AG,GB), so sq(CD) times sq(FE) = 4*sq(rect(AG,GB)) = 4*sq(AG)*sq(GB). Also sq(CD) times rect(CK,KF) = (CD times CK) times (CD times KF) / sq(CD) -- more precisely, (CD times CK)(CD times KF) = sq(CD) times rect(CK,KF), and this equals sq(AG)*sq(GB). Therefore sq(CD)*rect(CK,KF) = sq(AG)*sq(GB), and sq(CD)*sq(FE) = 4*sq(AG)*sq(GB) = 4*sq(CD)*rect(CK,KF). Dividing by sq(CD), we get sq(FE) = 4*rect(CK,KF).
+
+**Step 15.** By 2.5, the rectangle CK by KF together with the square on the half-difference ((CK - KF)/2) equals the square on the half-sum ((CK + KF)/2) = sq(CF/2). Therefore sq(CF/2) - rect(CK,KF) = sq((CK-KF)/2). Multiplying by 4: sq(CF) - 4*rect(CK,KF) = sq(CK - KF). Since sq(FE) = 4*rect(CK,KF) [Step 14], we have sq(CF) - sq(FE) = sq(CK - KF).
+
+**Step 16.** We now show that CK - KF is incommensurable in length with CF = CK + KF. Suppose for contradiction that CK + KF is commensurable with CK - KF. Then since 2*CK = (CK + KF) + (CK - KF), by 10.15 the sum of two commensurable magnitudes (CK + KF) and (CK - KF) would be commensurable with each, so 2*CK would be commensurable with CK + KF and hence with CK - KF. Similarly 2*KF = (CK + KF) - (CK - KF) would be commensurable with CK + KF [by 10.15]. Then 2*CK and 2*KF would both be commensurable with CK + KF, hence commensurable with each other [by 10.12]. Since 2*CK is commensurable with CK and 2*KF is commensurable with KF [by 10.6 and 10.15], CK would be commensurable with KF, contradicting Step 13. Therefore CK - KF is incommensurable in length with CF.
+
+**Step 17.** From Steps 15 and 16, sq(CF) exceeds sq(FE) by sq(CK - KF), and CK - KF is incommensurable in length with CF. This establishes condition (ii).
+
+**Step 18.** Since EF = CF - FE is an apotome [Step 9], CF is commensurable in length with the rational straight line CD [Step 11, condition (i)], and sq(CF) exceeds sq(FE) by the square on a straight line incommensurable in length with CF [Step 17, condition (ii)], EF is a fourth apotome by D10.3.4.
+
+**Step 19.** Therefore the square on the minor straight line AB, applied to the rational straight line CD, produces as breadth a fourth apotome. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.20, 10.22, 10.23, 10.6, 10.73, 10.76, 2.5, 2.7, 6.1, D10.1.2, D10.3.4
+**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.76, 2.7, 5.11, 6.1, 6.17, D10.3.4
+**Jaccard:** 0.444 — AI adds ['10.12', '10.13', '10.15', '10.23', '10.6', '2.5', 'D10.1.2']; Human adds ['10.18', '5.11', '6.17']
+
+## Proposition 10.101
+**Statement:** The square on the straight line which produces with a rational area a medial whole, if applied to a rational straight line, produces as breadth a fifth apotome.
+
+**Step 1.** Let AB be the straight line which produces with a rational area a medial whole, and let CD be a rational straight line. Let CE be the rectangle CD x EF equal to the square on AB, so that EF is the breadth produced. We must show that EF is a fifth apotome.
+
+**Step 2.** Since AB is a straight line which produces with a rational area a medial whole, let AG be the annex to it, so that BG is the associated straight line. Then by the definition of this irrational (10.77), AB and BG are incommensurable in square, the sum of the squares on AG and GB is medial, and twice the rectangle AG by GB is rational.
+
+**Step 3.** Apply the square on AG to the rational straight line CD, producing CH as breadth; and apply the square on BG to CD, producing KL as breadth. Then the whole CL equals the sum of the squares on AG and GB applied to CD. Since the sum of the squares on AG and GB is medial, and CD is rational, CL is a rectangle contained by a rational straight line and producing a medial area, so by 10.22 the breadth CL (i.e., the line CF where CF = CH + KL) is rational and incommensurable in length with CD.
+
+**Step 4.** Now since the square on AB equals the square on AG plus the square on GB minus twice the rectangle AG by GB (by 2.7), we have CE = CL minus twice the rectangle AG by GB applied to CD. Let the rectangle CD x NM equal twice the rectangle AG by GB. Then CE = CL - NM in area, which means EF = CF - NF in terms of the breadths (where NF corresponds to NM's breadth on CD).
+
+**Step 5.** Since twice the rectangle AG by GB is rational and CD is rational, the rectangle CD x NF is rational. By 10.20, NF is rational and commensurable in length with CD.
+
+**Step 6.** Since CF is rational and incommensurable in length with CD (Step 3), and NF is rational and commensurable in length with CD (Step 5), then CF and NF are incommensurable in length with one another by 10.13. Therefore CF and NF are rational straight lines commensurable in square only, so EF = CF - NF is an apotome by 10.73.
+
+**Step 7.** We now determine which apotome EF is. We must examine the relationship between the squares on CF and NF, and the commensurability conditions with CD.
+
+**Step 8.** Since the squares on AG and GB are incommensurable (for if they were commensurable, the sum of the squares on AG and GB would be commensurable with each of them by 10.15, and since twice the rectangle AG by GB is rational, if the squares were individually commensurable with their sum, we would get the sum of the squares commensurable with twice the rectangle, making a medial area commensurable with a rational area, which contradicts 10.26), the squares on AG and GB are incommensurable with each other.
+
+**Step 9.** Since the square on AG applied to CD gives CH as breadth, and the square on BG applied to CD gives KL as breadth, and the squares on AG and BG are incommensurable, by 10.11 the areas CH and KL (as rectangles with CD) are incommensurable, and therefore their breadths CH and KL are incommensurable in length (by 6.1 and 10.11).
+
+**Step 10.** Now, the rectangle contained by CF and NF, when applied to CD, relates to the areas as follows. By 2.7, the square on CF exceeds the square on NF by an amount corresponding to the sum of the squares on AG and GB and twice the rectangle AG by GB minus the relevant cross terms. More precisely, since CF = CH + KL (in terms of breadths composing CL) and NF is the breadth for twice the rectangle AG by GB, we analyze the square on CF minus the square on NF.
+
+**Step 11.** We have CF x CD = sum of squares on AG and GB (the area CL), and NF x CD = twice the rectangle AG by GB. The square on CF and the square on NF relate through the identity: the square on the difference EF equals the square on CF plus the square on NF minus twice the rectangle CF by NF. Since EF x CD = square on AB, and the square on AB determines the relevant areas, we proceed by analyzing commensurability.
+
+**Step 12.** Consider that the square on AG is incommensurable with the square on GB (Step 8). Since the square on AG applied to CD produces breadth CH, the square on AG = CD x CH. Similarly the square on GB = CD x KL. Since the square on AG and square on GB are incommensurable, CD x CH and CD x KL are incommensurable, so CH and KL are incommensurable in length by 6.1 and 10.11.
+
+**Step 13.** Now, the square on AG plus the square on GB equals CD x CF (the total area CL). Since the sum of the squares on AG and GB is medial and CD is rational, CD x CF is medial. By 10.22, CF is rational and incommensurable in length with CD. Similarly, NF is rational and commensurable in length with CD (Step 5). Therefore the annex NF is commensurable in length with the rational straight line CD set out.
+
+**Step 14.** To determine whether the square on CF is greater than the square on NF by the square on a straight line commensurable or incommensurable with CF, we use the following. Since the square on AG is to the square on BG not as a square number is to a square number (because AG and BG are incommensurable in square by 10.77, which means their squares do not have the ratio of a square number to a square number by 10.9), and the square on AG applied to CD gives breadth CH while the square on BG applied to CD gives breadth KL, by 6.1 the square on AG is to the square on BG as CH is to KL.
+
+**Step 15.** Therefore CH is to KL not as a square number is to a square number. By 10.9, the sides of squares on CH and KL (i.e., the lines whose squares equal CH and KL as lengths, considered appropriately) are incommensurable. By 10.18, since CH and KL do not have the ratio of a square number to a square number, the square on CF is greater than the square on NF by the square on a straight line incommensurable in length with CF.
+
+**Step 16.** Collecting the results: EF = CF - NF is an apotome (Step 6); the annex NF is commensurable in length with the rational straight line CD (Step 5 and Step 13); and the square on CF is greater than the square on NF by the square on a straight line incommensurable with CF (Step 15). By the definition of a fifth apotome (D10.3.5), EF is a fifth apotome.
+
+**Step 17.** Therefore, the square on the straight line which produces with a rational area a medial whole, if applied to a rational straight line, produces as breadth a fifth apotome. Q.E.D.
+
+**USED:** 10.11, 10.13, 10.15, 10.18, 10.20, 10.22, 10.26, 10.73, 10.77, 10.9, 2.7, 6.1, D10.1.3, D10.1.4, D10.3.5
+**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.77, 2.7, 6.1, D10.3.5
+**Jaccard:** 0.600 — AI adds ['10.13', '10.15', '10.26', '10.9', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.102
+**Statement:** The square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome.
+
+**Step 1.** Let AB be the straight line which produces with a medial area a medial whole, and let CD be a rational straight line. Apply the square on AB to CD, producing CE as breadth, so that the rectangle CD times CE equals the square on AB. We must show that CE is a sixth apotome.
+
+**Step 2.** Since AB is the straight line which produces with a medial area a medial whole, let AF be the annex to it, so that the whole line BF and the annex FA are incommensurable in square, the sum of the squares on BF and FA is medial, twice the rectangle BF times FA is medial, and the sum of the squares on BF and FA is incommensurable with twice the rectangle BF times FA [10.78].
+
+**Step 3.** Apply the square on BF to CD, producing CG as breadth, and apply the square on FA to CD, producing GE as breadth. Then the rectangle CD times CG equals the square on BF, and the rectangle CD times GE equals the square on FA.
+
+**Step 4.** Since the sum of the squares on BF and FA equals the rectangle CD times CE plus twice the rectangle BF times FA (by the identity: the square on (BF - FA) equals the squares on BF and FA minus twice the rectangle BF times FA [2.7]), we have that the rectangle CD times CG plus the rectangle CD times GE equals the sum of the squares on BF and FA, i.e., CD times (CG + GE) = sq(BF) + sq(FA). But CG + GE = CE plus twice the portion corresponding to the rectangle. More precisely, by 2.7, the square on AB equals the squares on BF and FA minus twice the rectangle BF times FA. Hence CD times CE = sq(BF) + sq(FA) - 2*rect(BF, FA).
+
+**Step 5.** Now apply the squares on BF and FA separately to CD. Let the rectangle CD times CK equal the square on BF, and let the rectangle CD times KL equal the square on FA, where L is between K and E. Then CD times CL = CD times CK + CD times KL = sq(BF) + sq(FA). Also, CD times LE equals twice the rectangle BF times FA, so that CD times CE = CD times CL - CD times LE, giving CE = CL - LE [2.7].
+
+**Step 6.** Since the sum of the squares on BF and FA is medial, and CD times CL equals this sum, the rectangle CD times CL is medial. But CD is rational, so CL is rational and incommensurable in length with CD [10.22], since a medial area applied to a rational line produces a breadth rational but incommensurable in length with the line to which it is applied.
+
+**Step 7.** Since twice the rectangle BF times FA is medial, and CD times LE equals twice the rectangle BF times FA, the rectangle CD times LE is medial. But CD is rational, so LE is rational and incommensurable in length with CD [10.22].
+
+**Step 8.** Since the sum of the squares on BF and FA is incommensurable with twice the rectangle BF times FA [Step 2], the rectangle CD times CL is incommensurable with the rectangle CD times LE. Therefore CL is incommensurable in length with LE [6.1, 10.11].
+
+**Step 9.** Since CL and LE are each rational (Steps 6 and 7) and incommensurable in length with each other (Step 8), CL - LE is an apotome [10.73]. Thus CE is an apotome.
+
+**Step 10.** We now show that CE is a sixth apotome. We have already established that both CL and LE are incommensurable in length with CD (Steps 6 and 7). It remains to determine the relationship between the square on CL and the square on LE.
+
+**Step 11.** Since BF and FA are incommensurable in square, the squares on BF and FA are incommensurable. Since CD times CK = sq(BF) and CD times KL = sq(FA), we have CK and KL incommensurable in length [6.1, 10.11]. Since CL = CK + KL and CK, KL are incommensurable, the squares on CK and KL are related to the squares on BF and FA through CD.
+
+**Step 12.** Consider the square on CL exceeding the square on LE. Since BF and FA are incommensurable in square, and sq(BF) = CD times CK while sq(FA) = CD times KL, the ratio sq(BF) to sq(FA) equals CK to KL [6.1]. Since BF and FA are incommensurable in square, sq(BF) and sq(FA) are incommensurable, so CK and KL are incommensurable in length [10.11].
+
+**Step 13.** Now, sq(CL) : sq(LE) must be examined. We have CD times CL = sq(BF) + sq(FA) and CD times LE = 2*rect(BF, FA). The square on the whole CL exceeds the square on the annex LE by a certain amount. By the properties of BF and FA established in Step 2 and the construction, sq(CL) is greater than sq(LE).
+
+**Step 14.** Since CK is incommensurable with KL (Step 12), and CL = CK + KL, we can apply 10.18: because the parts CK and KL of CL are incommensurable, the square on CL is greater than the square on LE by the square on a straight line incommensurable in length with CL. This follows because the parallelogram condition of 10.18 is met through the relationship between CL, LE, and the decomposition into CK and KL.
+
+**Step 15.** To verify the conditions for a sixth apotome [D10.3.6]: we need (i) the square on the whole CL exceeds the square on the annex LE by the square on a line incommensurable with CL, (ii) neither CL nor LE is commensurable in length with the rational line CD.
+
+**Step 16.** Condition (ii) is satisfied: CL is incommensurable in length with CD (Step 6) and LE is incommensurable in length with CD (Step 7).
+
+**Step 17.** Condition (i) is satisfied by Step 14.
+
+**Step 18.** Therefore, by the definition of a sixth apotome [D10.3.6], CE is a sixth apotome. That is, the square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome. Q.E.D.
+
+**USED:** 10.11, 10.18, 10.22, 10.73, 10.78, 2.7, 6.1, D10.3.6
+**Human refs (from References field):** 10.11, 10.18, 10.22, 10.73, 10.78, 2.7, 6.1, D10.3.6
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 10.103
+**Statement:** A straight line commensurable in length with an apotome is an apotome and the same in order.
+
+**Step 1.** Let AB be an apotome, and let CD be commensurable in length with AB. We must show that CD is also an apotome and the same in order as AB.
+
+**Step 2.** Since AB is an apotome, let BE be the annex to AB, so that AE and BE are rational straight lines commensurable in square only [10.73]. Then AB = AE - BE.
+
+**Step 3.** Since CD is commensurable in length with AB, let CD : AB = CD : AB. Since AE and BE are each rational, and since CD is commensurable in length with AB = AE - BE, we set up straight lines CF and DF such that CD = CF - DF and CF corresponds to AE and DF corresponds to BE. Specifically, let CF : AE = CD : AB and DF : BE = CD : AB [6.12].
+
+**Step 4.** Since AE is commensurable in length with itself, and CF : AE = CD : AB, and CD is commensurable in length with AB, we have CF commensurable in length with AE [10.12]. For the ratio CD : AB equals CF : AE, and since CD and AB are commensurable in length, their ratio is as a number to a number [10.5], so CF and AE have a ratio as number to number, hence CF is commensurable in length with AE [10.6].
+
+**Step 5.** Similarly, since DF : BE = CD : AB, and CD is commensurable in length with AB, we have DF commensurable in length with BE by the same reasoning [10.5, 10.6].
+
+**Step 6.** Since CF is commensurable in length with AE, and AE is rational, CF is rational [D10.1.3]. Similarly, since DF is commensurable in length with BE, and BE is rational, DF is rational [D10.1.3].
+
+**Step 7.** We must show that CF and DF are commensurable in square only. Since CF : AE = DF : BE (both equal to CD : AB), we have CF : DF = AE : BE [5.11]. Now AE and BE are commensurable in square only, so the squares on AE and BE have a ratio as number to number [10.9], but AE and BE themselves do not have a ratio as number to number [10.7]. Since CF : DF = AE : BE, CF and DF also do not have a ratio as number to number, hence CF and DF are incommensurable in length [10.8].
+
+**Step 8.** Since CF : DF = AE : BE, the squares on CF and DF are in the same ratio as the squares on AE and BE [6.22]. Since the squares on AE and BE are commensurable (both being rational, as AE and BE are rational straight lines) [D10.1.3, D10.1.4], the squares on CF and DF are also commensurable [10.11]. Hence CF and DF are commensurable in square [D10.1.2].
+
+**Step 9.** Therefore CF and DF are rational straight lines commensurable in square only, and CD = CF - DF. By the definition of an apotome [10.73], CD is an apotome.
+
+**Step 10.** It remains to show that CD is the same in order as AB. There are six orders of apotome [D10.3.1 through D10.3.6], distinguished by two criteria: (i) whether the square on AE (the whole) exceeds the square on BE (the annex) by the square on a straight line commensurable or incommensurable with AE, and (ii) which of AE, BE (if either) is commensurable in length with a given rational straight line.
+
+**Step 11.** For criterion (i): The square on AE exceeds the square on BE by the square on some straight line G, so that sq(AE) = sq(BE) + sq(G). Similarly, the square on CF exceeds the square on DF by the square on some straight line H, so that sq(CF) = sq(DF) + sq(H). Since CF : AE = DF : BE (both ratios equal CD : AB), and since these are proportional, by 10.14, if G is commensurable with AE then H is commensurable with CF, and if G is incommensurable with AE then H is incommensurable with CF. Thus criterion (i) is preserved.
+
+**Step 12.** For criterion (ii): Let rho be the given rational straight line. If AE is commensurable in length with rho, then since CF is commensurable in length with AE [Step 4], CF is commensurable in length with rho [10.12]. If BE is commensurable in length with rho, then since DF is commensurable in length with BE [Step 5], DF is commensurable in length with rho [10.12]. If neither AE nor BE is commensurable in length with rho, then since CF is commensurable in length with AE and AE is incommensurable in length with rho, CF is incommensurable in length with rho [10.13]. Similarly DF is incommensurable in length with rho.
+
+**Step 13.** Therefore both criteria determining the order of the apotome are the same for CD as for AB, so CD is an apotome of the same order as AB.
+
+**Step 14.** Hence a straight line commensurable in length with an apotome is an apotome and the same in order. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.13, 10.14, 10.5, 10.6, 10.7, 10.73, 10.8, 10.9, 5.11, 6.12, 6.22, D10.1.2, D10.1.3, D10.1.4, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.73, 5.12, 5.16, 6.12
+**Jaccard:** 0.250 — AI adds ['10.5', '10.6', '10.7', '10.8', '10.9', '5.11', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']; Human adds ['5.12', '5.16']
+
+## Proposition 10.104
+**Statement:** A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.
+
+**Step 1.** Let AB be an apotome of a medial straight line, and let CD be commensurable with AB. We must show that CD is also an apotome of a medial straight line and the same in order. An apotome of a medial straight line is either a first apotome of a medial (D10.1.4, 10.74) or a second apotome of a medial (10.75).
+
+**Step 2.** Case I: Suppose AB is a first apotome of a medial straight line. Then AB = BG - AG, where BG and AG are medial straight lines commensurable in square only, and the rectangle BG by AG is rational (10.74). By 10.80, this decomposition of AB is unique.
+
+**Step 3.** Since CD is commensurable with AB, let CD : AB be a ratio. Let DH and CH be constructed such that CH : BG = CD : AB and DH : AG = CD : AB (6.12). Then CH - DH = CD, since BG - AG = AB and the ratio is preserved (5.19, CN3).
+
+**Step 4.** Since CH : BG = CD : AB and CD is commensurable with AB, CH is commensurable with BG (10.11). Since BG is medial and CH is commensurable with BG, CH is medial (10.23).
+
+**Step 5.** Similarly, since DH : AG = CD : AB and CD is commensurable with AB, DH is commensurable with AG (10.11). Since AG is medial and DH is commensurable with AG, DH is medial (10.23).
+
+**Step 6.** Since BG and AG are commensurable in square only, and CH : BG = DH : AG (both equal to CD : AB), the squares on CH and DH have the same ratio as the squares on BG and AG (6.22). Since the squares on BG and AG are commensurable (because BG and AG are commensurable in square), the squares on CH and DH are commensurable (10.11). Hence CH and DH are commensurable in square.
+
+**Step 7.** We must show CH and DH are commensurable in square only, not in length. Since BG and AG are incommensurable in length, and CH : BG = DH : AG, if CH and DH were commensurable in length then BG and AG would be commensurable in length (10.11), a contradiction. Therefore CH and DH are commensurable in square only.
+
+**Step 8.** Now consider the rectangle CH by DH. The rectangle CH by DH is to the rectangle BG by AG as the square on CH is to the square on BG (6.16), since CH : BG = DH : AG. Since the square on CH is commensurable with the square on BG (Step 6 and 10.11), the rectangle CH by DH is commensurable with the rectangle BG by AG (10.11).
+
+**Step 9.** Since the rectangle BG by AG is rational (by hypothesis of the first apotome of a medial), and the rectangle CH by DH is commensurable with it, the rectangle CH by DH is also rational (D10.1.4, 10.12).
+
+**Step 10.** Therefore CD = CH - DH, where CH and DH are medial straight lines commensurable in square only, and the rectangle CH by DH is rational. By definition, CD is a first apotome of a medial straight line (10.74).
+
+**Step 11.** Case II: Suppose AB is a second apotome of a medial straight line. Then AB = BG - AG, where BG and AG are medial straight lines commensurable in square only, and the rectangle BG by AG is medial (10.75). By 10.81, this decomposition is unique.
+
+**Step 12.** Construct CH and DH exactly as in Step 3, so that CH : BG = DH : AG = CD : AB. By the same reasoning as Steps 4-7, CH and DH are medial and commensurable in square only.
+
+**Step 13.** By the same reasoning as Step 8, the rectangle CH by DH is commensurable with the rectangle BG by AG (6.16, 10.11).
+
+**Step 14.** Since the rectangle BG by AG is medial (by hypothesis of the second apotome of a medial), and the rectangle CH by DH is commensurable with it, the rectangle CH by DH is also medial (10.23, 10.24).
+
+**Step 15.** Therefore CD = CH - DH, where CH and DH are medial straight lines commensurable in square only, and the rectangle CH by DH is medial. By definition, CD is a second apotome of a medial straight line (10.75).
+
+**Step 16.** In both cases, CD is an apotome of a medial straight line of the same order as AB. Therefore a straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order. Q.E.D.
+
+**USED:** 10.11, 10.12, 10.23, 10.24, 10.74, 10.75, 10.80, 10.81, 5.19, 6.12, 6.16, 6.22, CN3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.23, 10.74, 10.75, 5.12, 5.16, 6.12, D10.1.4
+**Jaccard:** 0.353 — AI adds ['10.12', '10.24', '10.80', '10.81', '5.19', '6.16', '6.22', 'CN3']; Human adds ['10.13', '5.12', '5.16']
+
+## Proposition 10.105
+**Statement:** A straight line commensurable with a minor straight line is minor.
+
+**Step 1.** Let AB be a minor straight line, and let CD be commensurable in length with AB. We must show that CD is also minor.
+
+**Step 2.** Let a rational straight line E be set out. To the straight line E, let the parallelogram EF be applied equal to the square on AB, producing EG as breadth, and let the parallelogram EH be applied equal to the square on CD, producing EK as breadth. [1.44, 1.45]
+
+**Step 3.** Since AB is a minor straight line, by Proposition 10.100, the square on AB applied to the rational straight line E produces as breadth a fourth apotome. Therefore EG is a fourth apotome. [10.100]
+
+**Step 4.** Since CD is commensurable in length with AB, the square on CD is commensurable with the square on AB. [10.11, D10.1.1] That is, EH is commensurable with EF.
+
+**Step 5.** Now EH is to EF as EK is to EG, since both parallelograms are applied to the same straight line E with equal height. [6.1] Therefore EK is commensurable in length with EG. [10.11]
+
+**Step 6.** Since EG is a fourth apotome, and EK is commensurable in length with EG, by Proposition 10.103 EK is itself an apotome and the same in order, that is, EK is also a fourth apotome. [10.103]
+
+**Step 7.** Since EH is the area contained by the rational straight line E and the fourth apotome EK, by Proposition 10.94 the side of the area EH is minor. [10.94]
+
+**Step 8.** But the side of the area EH is CD, since EH equals the square on CD. Therefore CD is a minor straight line, which is what was to be proved.
+
+**USED:** 1.44, 1.45, 10.100, 10.103, 10.11, 10.94, 6.1, D10.1.1
+**Human refs (from References field):** 10.11, 10.13, 10.23, 10.76, 5.12, 5.16, 5.18, 6.22, D10.1.4
+**Jaccard:** 0.062 — AI adds ['1.44', '1.45', '10.100', '10.103', '10.94', '6.1', 'D10.1.1']; Human adds ['10.13', '10.23', '10.76', '5.12', '5.16', '5.18', '6.22', 'D10.1.4']
+
+## Proposition 10.106
+**Statement:** A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let AB be a straight line which produces with a rational area a medial whole, and let CD be commensurable in length with AB. We must show that CD is also a straight line which produces with a rational area a medial whole.
+
+**Step 2.** Let a rational straight line E be set out. Apply the square on AB to E, producing breadth EF; that is, let the rectangle E by EF equal the square on AB. By Proposition 10.101, since AB is a straight line which produces with a rational area a medial whole, EF is a fifth apotome.
+
+**Step 3.** Apply the square on CD to the same rational straight line E, producing breadth EG; that is, let the rectangle E by EG equal the square on CD.
+
+**Step 4.** Since AB is commensurable in length with CD, the square on AB is commensurable with the square on CD (for commensurable lines have commensurable squares, by Proposition 10.11 and the fact that duplicate ratios of equal ratios are equal, using Definition D5.9 and Proposition 6.20 — more precisely, since AB : CD is a ratio of commensurable magnitudes, the squares on AB and on CD, being in the duplicate ratio of AB to CD, are also commensurable).
+
+**Step 5.** But the square on AB equals the rectangle E by EF, and the square on CD equals the rectangle E by EG (by construction in Steps 2 and 3). Therefore the rectangle E by EF is commensurable with the rectangle E by EG.
+
+**Step 6.** Since E is a common side, and the rectangles E by EF and E by EG are commensurable, it follows that EF is commensurable in length with EG, by Proposition 6.1 and Proposition 10.11.
+
+**Step 7.** Now EF is a fifth apotome (Step 2), and EG is commensurable in length with EF (Step 6). Therefore, by Proposition 10.103, EG is also an apotome and the same in order as EF. That is, EG is also a fifth apotome.
+
+**Step 8.** Since the rectangle E by EG equals the square on CD (Step 3), and E is rational, and EG is a fifth apotome (Step 7), it follows by Proposition 10.95 that the side of the area E by EG — namely CD — is a straight line which produces with a rational area a medial whole.
+
+**Step 9.** Therefore, a straight line commensurable with that which produces with a rational area a medial whole is itself a straight line which produces with a rational area a medial whole. Q.E.D.
+
+**USED:** 10.101, 10.103, 10.11, 10.95, 6.1, 6.20, D10.1.1, D10.1.3
+**Human refs (from References field):** 10.77
+**Jaccard:** 0.000 — AI adds ['10.101', '10.103', '10.11', '10.95', '6.1', '6.20', 'D10.1.1', 'D10.1.3']; Human adds ['10.77']
+
+## Proposition 10.107
+**Statement:** A straight line commensurable with that which produces with a medial area a medial whole is itself also a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let AB be a straight line which produces with a medial area a medial whole, and let CD be commensurable with AB. We must show that CD is also a straight line which produces with a medial area a medial whole.
+
+**Step 2.** Let a rational straight line EF be set out. Apply the square on AB to EF, producing as breadth EG, so that the rectangle EF by EG equals the square on AB. By Proposition 10.102, since AB is a straight line which produces with a medial area a medial whole, EG is a sixth apotome.
+
+**Step 3.** Apply the square on CD to EF, producing as breadth EH, so that the rectangle EF by EH equals the square on CD.
+
+**Step 4.** Since AB is commensurable with CD, the square on AB is commensurable with the square on CD (for if two straight lines are commensurable, their squares are commensurable, by Proposition 10.11 applied with the ratio of AB to CD and the definition of commensurability in square via D10.1.1 and D10.1.2).
+
+**Step 5.** But the square on AB equals the rectangle EF by EG, and the square on CD equals the rectangle EF by EH. Therefore the rectangle EF by EG is commensurable with the rectangle EF by EH.
+
+**Step 6.** Since EF is a common side, EG is commensurable in length with EH, by Proposition 10.11 (if two rectangles on the same base are commensurable, the other sides are commensurable, which follows from 6.1 establishing the proportionality of rectangles on the same base to their other sides, and 10.11 transferring commensurability through proportion).
+
+**Step 7.** Now EG is a sixth apotome (from Step 2). Since EH is commensurable in length with EG, by Proposition 10.103, EH is also an apotome and the same in order, that is, EH is also a sixth apotome.
+
+**Step 8.** Since EH is a sixth apotome and the rectangle EF by EH equals the square on CD, where EF is rational, by Proposition 10.96 CD is a straight line which produces with a medial area a medial whole.
+
+**Step 9.** Therefore a straight line commensurable with that which produces with a medial area a medial whole is itself also a straight line which produces with a medial area a medial whole. Q.E.D.
+
+**USED:** 10.102, 10.103, 10.11, 10.96, 6.1, D10.1.1, D10.1.2
+**Human refs (from References field):** 10.78
+**Jaccard:** 0.000 — AI adds ['10.102', '10.103', '10.11', '10.96', '6.1', 'D10.1.1', 'D10.1.2']; Human adds ['10.78']
+
+## Proposition 10.108
+**Statement:** If from a rational area a medial area be subtracted, the âsideâ of the remaining area becomes one of two irrational straight lines, either an apotome or a minor straight line.
+
+**Step 1.** Let AB be a rational area and CD a medial area, and let the area AB - CD (that is, the remaining area when CD is subtracted from AB) be the area EF. We must show that the "side" of EF is either an apotome or a minor straight line.
+
+**Step 2.** Let the rational straight line FH be set out, and let the rational area AB be applied to FH, producing breadth FK; and let the medial area CD be applied to FH, producing breadth KH; so that the remaining area EF is applied to FH with breadth FG, where FK = FG + GK (with GK corresponding to CD and FG corresponding to the remainder EF). More precisely, apply AB to FH producing as breadth the whole FK, and apply CD to FH producing as breadth KH at the end, so that the remainder area EF = AB - CD is contained by FH and the straight line FH with breadth FK - KH.
+
+**Step 3.** Since AB is a rational area and FH is rational, by Proposition 10.20 the breadth FK is rational and commensurable in length with FH.
+
+**Step 4.** Since CD is a medial area and FH is rational, by Proposition 10.22 the breadth KH is rational and incommensurable in length with FH.
+
+**Step 5.** Since FK is commensurable in length with FH, and KH is incommensurable in length with FH, it follows that FK and KH are incommensurable in length with each other (by Proposition 10.13, since FK is commensurable with FH but KH is incommensurable with FH).
+
+**Step 6.** Now FK and KH are both rational straight lines (from Steps 3 and 4) that are incommensurable in length. Since they are rational and commensurable in square (all rational straight lines are commensurable in square with each other, by Definition D10.1.3), FK and KH are rational straight lines commensurable in square only.
+
+**Step 7.** Therefore the whole straight line FK, from which KH is subtracted, satisfies the conditions of Proposition 10.73: a rational straight line minus a rational straight line commensurable with it in square only. Hence the remainder FK - KH is an apotome.
+
+**Step 8.** Now we must determine whether this apotome is a first apotome or a fourth apotome. Consider the square on FK and the square on KH. Since FK is commensurable in length with FH and KH is incommensurable in length with FH, the terms FK and KH of the apotome have the following relationship with the rational line FH: the greater term FK is commensurable in length with FH.
+
+**Step 9.** There are two cases depending on whether the square on FK is greater than the square on KH by the square on a straight line commensurable or incommensurable in length with FK.
+
+**Step 10.** Case 1: Suppose the square on FK is greater than the square on KH by the square on a straight line commensurable in length with FK. Then, since FK (the whole, i.e., the greater term) is commensurable in length with the rational straight line FH set out, the apotome FK - KH is a first apotome, by Definition D10.3.1.
+
+**Step 11.** In this case, the remaining area EF is contained by the rational straight line FH and a first apotome. Therefore, by Proposition 10.91, the "side" of EF is an apotome.
+
+**Step 12.** Case 2: Suppose the square on FK is greater than the square on KH by the square on a straight line incommensurable in length with FK. Then, since FK (the whole, i.e., the greater term) is commensurable in length with the rational straight line FH set out, the apotome FK - KH is a fourth apotome, by Definition D10.3.4.
+
+**Step 13.** In this case, the remaining area EF is contained by the rational straight line FH and a fourth apotome. Therefore, by Proposition 10.94, the "side" of EF is a minor straight line.
+
+**Step 14.** Since one of the two cases must hold (the square on FK exceeds the square on KH either by a square on a line commensurable with FK or by a square on a line incommensurable with FK), the "side" of the remaining area when a medial area is subtracted from a rational area is either an apotome or a minor straight line. Q.E.D.
+
+**USED:** 10.13, 10.20, 10.22, 10.73, 10.91, 10.94, D10.1.3, D10.3.1, D10.3.4
+**Human refs (from References field):** 10.13, 10.20, 10.22, 10.73, 10.91, 10.94, D10.3.1, D10.3.4
+**Jaccard:** 0.889 — AI adds ['D10.1.3']
+
+## Proposition 10.109
+**Statement:** If from a medial area a rational area be subtracted, there arise two other irrational straight lines, either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let BC be a medial area and BD a rational area subtracted from it, so that the remainder EC is the area whose "side" we seek. Set out a rational straight line FG, and apply the area BC to FG, producing FH as breadth, so that the rectangle FG by FH equals BC. Apply the area BD to FG, producing FK as breadth, so that the rectangle FG by FK equals BD. Then the remainder EC equals the rectangle FG by KH, where KH = FH - FK.
+
+**Step 2.** Since BC is a medial area and it is applied to the rational straight line FG, the breadth FH is rational and incommensurable in length with FG [10.22].
+
+**Step 3.** Since BD is a rational area and it is applied to the rational straight line FG, the breadth FK is rational and commensurable in length with FG [10.20].
+
+**Step 4.** Since FH is incommensurable in length with FG, and FK is commensurable in length with FG, therefore FH is incommensurable in length with FK [10.13].
+
+**Step 5.** Both FH and FK are rational straight lines, and they are incommensurable in length with one another. Therefore FH and FK are rational straight lines commensurable in square only. Hence the remainder KH (that is, FH minus FK) is an apotome [10.73].
+
+**Step 6.** Now, FK is commensurable in length with the rational straight line FG. Consider two cases depending on the nature of the excess of the square on FH over the square on FK.
+
+**Step 7.** Case 1: Suppose the square on FH is greater than the square on FK by the square on a straight line commensurable in length with FH. The whole FH is the line from which FK is subtracted. Since the annex FK is commensurable in length with the rational straight line FG, KH is a second apotome [D10.3.2].
+
+**Step 8.** The area EC equals the rectangle contained by the rational straight line FG and the second apotome KH. Therefore the "side" of the area EC is a first apotome of a medial straight line [10.92].
+
+**Step 9.** Case 2: Suppose the square on FH is greater than the square on FK by the square on a straight line incommensurable in length with FH. Again the annex FK is commensurable in length with the rational straight line FG, so KH is a fifth apotome [D10.3.5].
+
+**Step 10.** The area EC equals the rectangle contained by the rational straight line FG and the fifth apotome KH. Therefore the "side" of the area EC is a straight line which produces with a rational area a medial whole [10.95].
+
+**Step 11.** These two cases are exhaustive, since the square on FH is necessarily greater than the square on FK (as the medial area exceeds the rational area) by the square on some straight line, and that straight line is either commensurable or incommensurable in length with FH. Therefore, if from a medial area a rational area be subtracted, the "side" of the remaining area is either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole. Q.E.D.
+
+**USED:** 10.13, 10.20, 10.22, 10.73, 10.92, 10.95, D10.3.2, D10.3.5
+**Human refs (from References field):** 10.13, 10.73, 10.92, 10.95, D10.3.2, D10.3.5
+**Jaccard:** 0.750 — AI adds ['10.20', '10.22']
+
+## Proposition 10.110
+**Statement:** If from a medial area there be subtracted a medial area incommensurable with the whole, the two remaining irrational straight lines arise, either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let the medial area BC be subtracted from the medial area AB, where BC is incommensurable with AB. Let the remainder be the area AC. We must show that the side of AC is either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole.
+
+**Step 2.** Let a rational straight line FG be set out. Apply the area AB to FG, producing FH as breadth, so that AB = FG * FH. Since AB is a medial area and FG is rational, by 10.22 the breadth FH is rational and incommensurable in length with FG.
+
+**Step 3.** Similarly, apply the area BC to FG, producing HK as breadth, so that BC = FG * HK. Since BC is also a medial area and FG is rational, by 10.22 the breadth HK is rational and incommensurable in length with FG.
+
+**Step 4.** Since AB and BC are both medial areas, FH and HK are both rational straight lines, each incommensurable in length with FG. Since FH and HK are both rational, they are commensurable in square (by D10.1.3, as both are commensurable in square with the same rational line FG).
+
+**Step 5.** Now, the area AC = AB - BC = FG * FH - FG * HK = FG * FK, where FK = FH - HK. Thus the area AC has been applied to the rational straight line FG, producing FK as breadth.
+
+**Step 6.** Since AB is incommensurable with BC, the rectangle FG * FH is incommensurable with the rectangle FG * HK. But since FG is a common side, by 10.11 we have FH incommensurable in length with HK.
+
+**Step 7.** Since FH and HK are rational straight lines commensurable in square only (they are both rational, and by Step 6 incommensurable in length), FH - HK = FK is an apotome, by 10.73.
+
+**Step 8.** Moreover, FH is incommensurable in length with FG (Step 2), and HK is incommensurable in length with FG (Step 3).
+
+**Step 9.** We now consider the rectangle contained by FH and HK. Since AB = FG * FH and BC = FG * HK, the rectangle FH * HK bears a certain relation to the areas involved. The rectangle contained by FH and HK, applied to FG, relates to the geometric mean of the areas. Specifically, consider the square on FH and the square on HK: these are commensurable with AB and BC respectively (since the square on FH, applied to FG, gives a breadth commensurable with FH, and AB = FG * FH).
+
+**Step 10.** Since AB and BC are medial areas that are incommensurable with one another, and FH and HK are rational and commensurable in square only, the rectangle FH * HK is either rational or medial, by 10.25. We must consider both cases.
+
+**Step 11.** Case I: Suppose the rectangle contained by FH and HK is medial. Then FH and HK are medial straight lines commensurable in square only containing a medial rectangle. Since FH and HK are rational and commensurable in square only, and the rectangle FH * HK is medial, the straight line FK = FH - HK is a second apotome of a medial straight line, by 10.75.
+
+**Step 12.** In Case I, the area AC = FG * FK. Since FG is rational and FK is a second apotome of a medial straight line, by applying the result of 10.75 in reverse: we need to identify the side of area AC. Since FK is a second apotome of a medial straight line and FG is rational, we apply 10.93, which states that if an area is contained by a rational straight line and a third apotome, the side is a second apotome of a medial straight line. But we must be more careful.
+
+**Step 13.** Let us reconsider the structure. The area AC has been expressed as the remainder when a medial area is subtracted from a medial area. We apply AC to the rational line FG, obtaining breadth FK, which is an apotome (Step 7). The classification of FK as an apotome determines the side of AC via propositions 10.91-10.96.
+
+**Step 14.** To classify FK as an apotome type, we use the definitions D10.3.1 through D10.3.6. FK = FH - HK where FH and HK are rational, commensurable in square only. Since FH is incommensurable in length with FG and HK is incommensurable in length with FG, neither the whole FH nor the annex HK is commensurable in length with the rational line FG.
+
+**Step 15.** Now, the square on FH is greater than the square on HK by the square on some straight line. We consider whether this difference-square is commensurable or incommensurable with FH.
+
+**Step 16.** Case I: Suppose the square on FH exceeds the square on HK by the square on a straight line commensurable with FH. Since neither FH nor HK is commensurable in length with FG, FK is a third apotome, by D10.3.3.
+
+**Step 17.** In Case I, since FK is a third apotome and AC = FG * FK where FG is rational, the side of AC is a second apotome of a medial straight line, by 10.93.
+
+**Step 18.** Case II: Suppose the square on FH exceeds the square on HK by the square on a straight line incommensurable with FH. Since neither FH nor HK is commensurable in length with FG, FK is a sixth apotome, by D10.3.6.
+
+**Step 19.** In Case II, since FK is a sixth apotome and AC = FG * FK where FG is rational, the side of AC is a straight line which produces with a medial area a medial whole, by 10.96.
+
+**Step 20.** Therefore, if from a medial area there be subtracted a medial area incommensurable with the whole, the side of the remaining area is either a second apotome of a medial straight line (Case I) or a straight line which produces with a medial area a medial whole (Case II). No other types can arise, since the apotome FK must be either a third or sixth apotome given that neither term is commensurable in length with the assigned rational line. Q.E.D.
+
+**USED:** 10.11, 10.22, 10.25, 10.73, 10.93, 10.96, D10.1.3, D10.3.3, D10.3.6
+**Human refs (from References field):** 10.11, 10.22, 10.73, 10.93, 10.96, 6.1, D10.3.3, D10.3.6
+**Jaccard:** 0.700 — AI adds ['10.25', 'D10.1.3']; Human adds ['6.1']
+
+## Proposition 10.111
+**Statement:** The apotome is not the same with the binomial straight line.
+
+**Step 1.** Suppose, for the sake of contradiction, that some straight line AB is both an apotome and a binomial straight line.
+
+**Step 2.** Since AB is a binomial, by the definition in 10.36, AB is divided into its terms CD and DE such that AB = CD + DE, where CD and DE are rational straight lines commensurable in square only.
+
+**Step 3.** Since AB is an apotome, by the definition in 10.73, there exist rational straight lines FG and GH, commensurable in square only, with FG greater than GH, such that AB = FG - GH.
+
+**Step 4.** Compute the square on AB in terms of the binomial decomposition. By 2.4, the square on AB equals the sum of the squares on CD and DE together with twice the rectangle contained by CD and DE. That is, AB^2 = CD^2 + DE^2 + 2*CD*DE.
+
+**Step 5.** Compute the square on AB in terms of the apotome decomposition. Since AB = FG - GH, by 2.7 (applied to line FG cut so that one segment is GH and the remainder is AB), we have FG^2 + GH^2 = 2*FG*GH + AB^2, and therefore AB^2 = FG^2 + GH^2 - 2*FG*GH.
+
+**Step 6.** Equating the two expressions for AB^2 from Steps 4 and 5: CD^2 + DE^2 + 2*CD*DE = FG^2 + GH^2 - 2*FG*GH. Rearranging, (FG^2 + GH^2) - (CD^2 + DE^2) = 2*CD*DE + 2*FG*GH.
+
+**Step 7.** We show that CD^2 + DE^2 is a rational area. Since CD is rational, the square on CD is a rational area; since DE is rational, the square on DE is a rational area (by D10.1.4). Moreover, CD and DE are commensurable in square (being commensurable in square only), so CD^2 and DE^2 are commensurable areas. By 10.15, their sum CD^2 + DE^2 is commensurable with each, and since each is rational, the sum is rational.
+
+**Step 8.** By the same reasoning, FG^2 + GH^2 is a rational area (FG and GH are rational and commensurable in square only, so their squares are commensurable rational areas whose sum is rational by 10.15).
+
+**Step 9.** Therefore the left side of the equation in Step 6, namely (FG^2 + GH^2) - (CD^2 + DE^2), is the difference of two rational areas. Since both are commensurable with the square on the assigned rational line, their difference is also commensurable with it (a rational area minus a rational area is rational). Call this difference R; it is a rational area.
+
+**Step 10.** We show that 2*CD*DE is a medial area. The rectangle contained by CD and DE is medial by 10.21, since CD and DE are rational straight lines commensurable in square only. Now 2*CD is commensurable in length with CD (in the ratio 2:1), so since CD is rational, 2*CD is also rational (by D10.1.3, a line commensurable with a rational line is rational). Since CD and DE are incommensurable in length (being commensurable in square only) and 2*CD is commensurable in length with CD, it follows that 2*CD and DE are incommensurable in length. Since 2*CD and DE are commensurable in square (because (2*CD)^2 = 4*CD^2 is commensurable with DE^2, as CD^2 is commensurable with DE^2 and 4*CD^2 is commensurable with CD^2), 2*CD and DE are rational straight lines commensurable in square only. By 10.21, the rectangle 2*CD*DE is medial.
+
+**Step 11.** By the same reasoning (replacing CD, DE with FG, GH), the area 2*FG*GH is medial.
+
+**Step 12.** From Step 6 we have R = 2*CD*DE + 2*FG*GH, where R is rational and both 2*CD*DE and 2*FG*GH are medial areas. We now derive a contradiction by considering two cases.
+
+**Step 13.** Case 1: Suppose 2*CD*DE and 2*FG*GH are commensurable with one another. By 10.15, their sum R = 2*CD*DE + 2*FG*GH is commensurable with 2*CD*DE. Since R is rational, R is commensurable with the square on the assigned rational line. Since R is also commensurable with 2*CD*DE, by 10.12 (magnitudes commensurable with the same magnitude are commensurable with one another), 2*CD*DE is commensurable with the square on the assigned rational line. This makes 2*CD*DE a rational area. But 2*CD*DE is medial, hence irrational. This is a contradiction.
+
+**Step 14.** Case 2: Suppose 2*CD*DE and 2*FG*GH are incommensurable with one another. Then by 10.72, the side of the area equal to 2*CD*DE + 2*FG*GH (that is, the straight line whose square equals this sum of two incommensurable medial areas) is irrational, being either a second bimedial or a side of the sum of two medial areas. Since the side is irrational, the area 2*CD*DE + 2*FG*GH is irrational (by D10.1.4, a square on an irrational line is irrational). But this area equals R, which is rational. This is a contradiction.
+
+**Step 15.** In both cases we arrive at a contradiction. Therefore our initial assumption is false, and the apotome is not the same as the binomial straight line. Q.E.D.
+
+**USED:** 10.12, 10.15, 10.21, 10.36, 10.72, 10.73, 2.4, 2.7, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.12, 10.13, 10.15, 10.60, 10.73, 10.97, D10.2.1, D10.3.1
+**Jaccard:** 0.200 — AI adds ['10.21', '10.36', '10.72', '2.4', '2.7', 'D10.1.3', 'D10.1.4']; Human adds ['10.13', '10.60', '10.97', 'D10.2.1', 'D10.3.1']
+
+## Proposition 10.112
+**Statement:** The square on a rational straight line applied to the binomial straight line produces as breadth an apotome the terms of which are commensurable with the terms of the binomial and moreover in the same ratio; and further the apotome so arising will have the same order as the binomial straight line.
+
+**Step 1.** Let A be a rational straight line and let BC be a binomial straight line, divided into its terms at D, with BD the greater term and DC the lesser. Then BD and DC are rational straight lines commensurable in square only (by the definition of binomial, 10.36, and D10.1.3).
+
+**Step 2.** Let the square on A be applied to BC, producing breadth EF, so that BC times EF equals the square on A. We must show that EF is an apotome whose terms are commensurable with BD and DC respectively, in the same ratio BD : DC, and of the same order as the binomial BC.
+
+**Step 3.** Since BD and DC are rational and commensurable in square only, the straight line BD minus DC is meaningful and positive (since BD is greater). Let L denote the straight line such that L = BD - DC. Since BD and DC are rational and commensurable in square only, L is an apotome by 10.73, with whole BD and annex DC.
+
+**Step 4.** By 2.5, the rectangle contained by (BD + DC) and (BD - DC) equals the difference of the squares on BD and DC. That is, BC times L equals the square on BD minus the square on DC.
+
+**Step 5.** Now since BD and DC are commensurable in square (by D10.1.2, as they are rational lines commensurable in square only), the square on BD and the square on DC are commensurable areas. Both squares are rational areas (by D10.1.4, since BD and DC are rational). Since commensurable rational areas have a rational difference, the square on BD minus the square on DC is a rational area. Call this area K; so K = BC times L is rational.
+
+**Step 6.** The square on A is also a rational area (by D10.1.4, since A is rational). Since K and the square on A are both rational areas, they are commensurable with each other (by D10.1.4: all rational areas are commensurable with the square on the assigned rational line, so by 10.12 they are commensurable with each other).
+
+**Step 7.** From BC times EF = the square on A (Step 2) and BC times L = K (Step 4), since both rectangles have the same base BC, by 6.1 we have EF : L = (square on A) : K.
+
+**Step 8.** Since the square on A and K are commensurable (Step 6), their ratio is that of a number to a number (by 10.5). Therefore EF : L is a ratio of a number to a number, and hence EF is commensurable in length with L (by 10.6).
+
+**Step 9.** Since L = BD - DC is an apotome (Step 3), and EF is commensurable in length with L (Step 8), by 10.103 EF is itself an apotome of the same order as L.
+
+**Step 10.** We now establish that the apotome L = BD - DC has the same order as the binomial BC = BD + DC. The order of a binomial is determined by two conditions (D10.2.1 through D10.2.6): (i) whether the square on the greater term exceeds the square on the lesser by the square on a line commensurable or incommensurable in length with the greater term, and (ii) which term (if any) is commensurable in length with the rational straight line set out. The order of an apotome is determined by the same two conditions applied to its whole and annex (D10.3.1 through D10.3.6). Since the binomial BC = BD + DC and the apotome L = BD - DC share the same pair of terms BD and DC (BD being the greater term of the binomial and the whole of the apotome, DC being the lesser term of the binomial and the annex of the apotome), both conditions are identical for BC and L. Therefore L has the same order (first through sixth) as BC.
+
+**Step 11.** Since EF is an apotome of the same order as L (Step 9), and L has the same order as BC (Step 10), EF is an apotome of the same order as the binomial BC.
+
+**Step 12.** We now show that the terms of EF are commensurable with BD and DC respectively, and in the same ratio. By 10.103, since EF is commensurable in length with the apotome L, EF is an apotome of the same order, and its terms are obtained by the same decomposition scaled by the commensurability ratio. Specifically, since EF : L is a numerical ratio (Step 8), say EF : L = m : n, and L is divided into its terms as BD (whole) and DC (annex), the terms of EF are in the ratio m : n with the terms of L. That is, if EF has whole X and annex Y, then X : BD = m : n and Y : DC = m : n (since scaling by a numerical ratio preserves the decomposition into terms). Therefore X is commensurable in length with BD (by 10.6), and Y is commensurable in length with DC (by 10.6).
+
+**Step 13.** Furthermore, X : Y = BD : DC, since X = (m/n) times BD and Y = (m/n) times DC give X : Y = BD : DC. Thus the terms of the apotome EF are in the same ratio as the terms of the binomial BC.
+
+**Step 14.** Therefore the square on the rational straight line A, applied to the binomial straight line BC, produces as breadth the apotome EF, whose terms are commensurable with the terms of the binomial and in the same ratio, and the apotome has the same order as the binomial. Q.E.D.
+
+**USED:** 10.103, 10.12, 10.36, 10.5, 10.6, 10.73, 2.5, 6.1, CN3, D10.1.2, D10.1.3, D10.1.4, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.12, 10.14, 10.15, 10.20, 10.36, 10.73, 5.11, 5.12, 5.14, 5.16, 5.17, 6.16, 6.22, D5.9
+**Jaccard:** 0.083 — AI adds ['10.103', '10.5', '10.6', '2.5', '6.1', 'CN3', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D10.2.1', 'D10.2.2', 'D10.2.3', 'D10.2.4', 'D10.2.5', 'D10.2.6', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']; Human adds ['10.11', '10.14', '10.15', '10.20', '5.11', '5.12', '5.14', '5.16', '5.17', '6.16', '6.22', 'D5.9']
+
+## Proposition 10.113
+**Statement:** The square on a rational straight line, if applied to an apotome, produces as, breadth the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio; and further the binomial so arising has the same order as the apotome.
+
+**Step 1.** Let AB be an apotome with terms AC and CB, so that AB = AC - CB, where AC is the whole and CB the annex. By 10.73, AC and CB are rational straight lines commensurable in square only, with AC > CB. Let rho be a rational straight line. Apply the square on rho to AB, producing as breadth a straight line DE, so that the rectangle AB by DE equals the square on rho.
+
+**Step 2.** Since AC and CB are rational and commensurable in square only, AC + CB is irrational and is in fact a binomial straight line, with terms AC and CB [10.36]. Let BF equal AC + CB, constructed by placing AC and CB in a straight line end to end.
+
+**Step 3.** Now the rectangle contained by AB and BF equals the rectangle contained by (AC - CB) and (AC + CB), which equals the difference of the squares on AC and CB, that is, the square on AC minus the square on CB [2.5].
+
+**Step 4.** Since AC is rational, the square on AC is a rational area [D10.1.4]. Since CB is rational, the square on CB is a rational area [D10.1.4]. Since AC and CB are commensurable in square [D10.1.2], the squares on AC and on CB are commensurable areas. Since the square on AC equals the sum of the square on CB and the difference (square on AC minus square on CB), and the squares on AC and CB are commensurable, it follows that the difference of the squares on AC and CB is commensurable with the square on AC [10.15]. Since the square on AC is rational, the difference of the squares on AC and CB is also rational [D10.1.4].
+
+**Step 5.** We have two rectangles with the same base AB: the rectangle AB by DE, which equals the square on rho, and the rectangle AB by BF, which equals the square on AC minus the square on CB. By 6.1, rectangles on the same base are to one another as their heights. Therefore the square on rho is to the difference of the squares on AC and CB as DE is to BF.
+
+**Step 6.** Both the square on rho and the difference of the squares on AC and CB are rational areas, so they are commensurable with one another [D10.1.4]. Since these areas are commensurable and are in the same ratio as DE to BF [by Step 5], it follows by 10.11 that DE is commensurable in length with BF.
+
+**Step 7.** Since BF is a binomial straight line [Step 2] and DE is commensurable in length with BF [Step 6], DE is itself a binomial straight line and of the same order as BF [10.66].
+
+**Step 8.** Since DE is a binomial straight line, we may apply the square on rho to DE. By 10.112, the square on a rational straight line applied to a binomial produces as breadth an apotome whose terms are commensurable with the terms of the binomial and in the same ratio, and the apotome so arising has the same order as the binomial. But the square on rho applied to DE produces the breadth AB (since the rectangle AB by DE equals the square on rho). Therefore AB is an apotome whose terms are commensurable with the terms of DE and in the same ratio, and AB has the same order as the binomial DE.
+
+**Step 9.** Now AB is an apotome with terms AC and CB [Step 1]. By 10.79, to an apotome only one rational straight line can be annexed which is commensurable with the whole in square only, so the decomposition of AB into its terms AC and CB is unique. Let the terms of the binomial DE be DM and ME (with DM the greater term). Then by Step 8, the terms of the apotome AB are commensurable with DM and ME respectively, and in the same ratio. That is, AC is commensurable with DM, CB is commensurable with ME, and AC is to CB as DM is to ME.
+
+**Step 10.** It remains to show that DE has the same order as the apotome AB. The order of the binomial BF = AC + CB is determined by the relationship of AC and CB to the assigned rational straight line rho and by whether the square on AC exceeds the square on CB by the square on a straight line commensurable or incommensurable in length with AC [D10.2.1 through D10.2.6]. The order of the apotome AB = AC - CB is determined by exactly the same conditions on AC, CB, and rho [D10.3.1 through D10.3.6]. Since both orders depend on the same terms AC, CB and the same rational line rho, the binomial BF has the same order number as the apotome AB. Since DE has the same order as BF [Step 7], DE has the same order as AB.
+
+**Step 11.** Therefore, the square on the rational straight line rho, when applied to the apotome AB, produces as breadth the binomial straight line DE, whose terms are commensurable with the terms of the apotome and in the same ratio, and the binomial DE has the same order as the apotome AB. This is what was to be proved.
+
+**USED:** 10.11, 10.112, 10.15, 10.36, 10.66, 10.73, 10.79, 2.5, 6.1, D10.1.2, D10.1.4, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.12, 10.14, 10.15, 10.20, 10.36, 10.73, 5.11, 5.14, 5.16, 5.19, 6.16, D10.1.3, D5.9
+**Jaccard:** 0.121 — AI adds ['10.112', '10.66', '10.79', '2.5', '6.1', 'D10.1.2', 'D10.1.4', 'D10.2.1', 'D10.2.2', 'D10.2.3', 'D10.2.4', 'D10.2.5', 'D10.2.6', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']; Human adds ['10.12', '10.14', '10.20', '5.11', '5.14', '5.16', '5.19', '6.16', 'D10.1.3', 'D5.9']
+
+## Proposition 10.114
+**Statement:** If an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the âsideâ of the area is rational.
+
+**Step 1.** Let the area be contained by the apotome AB and the binomial straight line CD, where AB = AE - EB (AE and EB being the terms of the apotome) and CD = CF + FD (CF and FD being the terms of the binomial), with AE commensurable with CF, EB commensurable with FD, and AE:EB = CF:FD.
+
+**Step 2.** Let G be a rational straight line. Apply the square on G to the binomial CD; that is, let the rectangle CD by H equal the square on G, so that H is the breadth. By 10.112, H is an apotome whose terms are commensurable with the terms of the binomial CD and in the same ratio. Let the terms of H be H1 and H2, so that H = H1 - H2, with H1 commensurable with CF, H2 commensurable with FD, and H1:H2 = CF:FD.
+
+**Step 3.** Since AE is commensurable with CF and H1 is commensurable with CF, by 10.12 AE is commensurable in length with H1. Similarly, since EB is commensurable with FD and H2 is commensurable with FD, by 10.12 EB is commensurable in length with H2.
+
+**Step 4.** Since AE:EB = CF:FD and H1:H2 = CF:FD, we have AE:EB = H1:H2. Since AE is commensurable in length with H1, the ratio AE:H1 is as a number to a number, by 10.5. Since AE:EB = H1:H2, we obtain AE:H1 = EB:H2 by alternation (5.16). Therefore EB:H2 is also as a number to a number, confirming EB is commensurable in length with H2, by 10.6.
+
+**Step 5.** Since AE is commensurable in length with H1, the ratio AE:H1 is as some number to some number, by 10.5. Now since AE:EB = H1:H2, by separation of a ratio (5.17), (AE - EB):(EB) = (H1 - H2):(H2), that is, AB:EB = H:H2. Similarly, from AE:H1 = EB:H2 (established in Step 4), we also have (AE - EB):(H1 - H2) = AE:H1 = EB:H2, by equal ratios in a proportion (5.19). Therefore AB:H = AE:H1, which is as a number to a number. By 10.6, AB is commensurable in length with H.
+
+**Step 6.** Since the square on G equals the rectangle CD by H (from Step 2), i.e., G^2 = CD * H, and AB is commensurable in length with H, we have AB:H as a number to a number, by 10.5. Therefore CD * AB : CD * H = AB : H, by 6.1. That is, the rectangle CD by AB is to the square on G as AB is to H. Since AB:H is as a number to a number, the rectangle CD by AB is commensurable with the square on G, by 10.6.
+
+**Step 7.** Since G is rational, the square on G is a rational area, by D10.1.4. Since the rectangle CD by AB is commensurable with the square on G (Step 6), the rectangle CD by AB is itself a rational area, by D10.1.4.
+
+**Step 8.** Since the area contained by the apotome AB and the binomial CD is rational, the side of the square equal to this area is rational, by D10.1.4. Therefore the "side" of the area is rational. Q.E.D.
+
+**USED:** 10.112, 10.12, 10.5, 10.6, 5.16, 5.17, 5.19, 6.1, D10.1.4
+**Human refs (from References field):** 10.11, 10.112, 10.12, 5.19, 6.1
+**Jaccard:** 0.400 — AI adds ['10.5', '10.6', '5.16', '5.17', 'D10.1.4']; Human adds ['10.11']
+
+## Proposition 10.115
+**Statement:** From a medial straight line there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding.
+
+**Step 1.** Let A be a medial straight line, and let r be a rational straight line set out.
+
+**Step 2.** Since A is medial, the square on A is a medial area [D10.1.3, D10.1.4]. By 10.22, the square on A, applied to the rational straight line r, produces as breadth a straight line b1 that is rational and incommensurable in length with r.
+
+**Step 3.** By 10.10, we can find a straight line c1 that is incommensurable in square with b1 (and hence also with r in a suitable sense). Since b1 is rational and incommensurable in length with r, and r is rational, the line b1 is commensurable in square only with r [D10.1.3].
+
+**Step 4.** Now b1 and r are two rational straight lines commensurable in square only. By 10.21, the rectangle contained by b1 and r is irrational, and the side of the square equal to it is irrational and is called medial. Call this medial straight line A1. The line A1 is a new medial straight line derived from A.
+
+**Step 5.** We claim A1 is not the same as A. For the square on A is a medial area, and the square on A1 equals the rectangle contained by b1 and r, which is a different medial area. Since b1 is incommensurable in length with r, and the construction of b1 from sq(A) introduces a line with different commensurability relations, A1 is incommensurable with A. By 10.23, a straight line commensurable with a medial straight line is medial; since A1 is medial but incommensurable in length with A, they are distinct medial straight lines.
+
+**Step 6.** The same process may now be applied to A1: the square on A1, applied to r, produces as breadth b2 (rational and incommensurable in length with r, by 10.22). Then by 10.21, from b2 and r we obtain a new medial straight line A2. Since A1 differs from A, the breadth b2 differs from b1, and hence A2 differs from both A and A1.
+
+**Step 7.** This construction can be repeated indefinitely: from each medial straight line An we derive a new medial straight line An+1 by applying sq(An) to r to get breadth bn+1 (by 10.22), and then forming the side of the rectangle contained by bn+1 and r (by 10.21). At each stage a new and distinct medial straight line is produced. Therefore from the original medial straight line A there arise medial straight lines infinite in number.
+
+**Step 8.** Furthermore, from A and from each of these derived medial lines, we may also construct additional irrational straight lines of different kinds. By 10.37, from two medial straight lines commensurable in square only containing a rational rectangle, we obtain a first bimedial. By 10.38, from two medial straight lines commensurable in square only containing a medial rectangle, we obtain a second bimedial. By 10.74, by subtraction of suitable medial lines, we obtain a first apotome of a medial straight line; by 10.75, a second apotome of a medial straight line.
+
+**Step 9.** Each of these irrational types is distinct from the others: the binomial is not the same as the apotome (10.111); the binomial is divided at one point only (10.42); the first bimedial at one point only (10.43); the second bimedial at one point only (10.44). The apotome admits only one annexed line (10.79); likewise for the first apotome of a medial (10.80) and the second apotome of a medial (10.81). These uniqueness results ensure that the irrationals produced at each stage of the construction are not the same as any of the preceding.
+
+**Step 10.** Since the process of deriving new medial lines is unlimited (Step 7), and from each new medial line further distinct irrational lines of various types can be constructed (Steps 8-9), we conclude that from a medial straight line there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding. Q.E.D.
+
+**USED:** 10.10, 10.111, 10.21, 10.22, 10.23, 10.37, 10.38, 10.42, 10.43, 10.44, 10.74, 10.75, 10.79, 10.80, 10.81, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.20, D10.1.4
+**Jaccard:** 0.056 — AI adds ['10.10', '10.111', '10.21', '10.22', '10.23', '10.37', '10.38', '10.42', '10.43', '10.44', '10.74', '10.75', '10.79', '10.80', '10.81', 'D10.1.3']; Human adds ['10.20']

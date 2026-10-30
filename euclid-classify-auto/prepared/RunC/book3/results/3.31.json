@@ -1,0 +1,13 @@
+{
+  "proposition": "3.31",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The classification is decided at Q2/Q3. Both proofs share the same backbone for the semicircle-right-angle case (I.5 twice for isosceles triangles, then I.32 and D1.10) and for the lesser-segment-obtuse case (III.22). However, for the greater-segment-acute case, the proofs diverge substantively: Heath uses I.17 (two angles of a triangle are less than two right angles) to conclude directly that angle ABC is less than a right angle given that BAC is right, while the AI uses III.20 (the inscribed angle theorem relating central and inscribed angles) to show that the inscribed angle standing on the minor arc must be less than a right angle. Since I.17 does not appear inside the proof of III.20, this is a genuinely different logical path, not a containment/granularity difference. Additionally, for the angle-of-segment parts (4 and 5), the AI explicitly invokes III.16 where Heath treats the result as manifest. The AI's alternative path via III.20 is logically valid, so Q3(b) holds, yielding classification D.",
+  "jaccard": 0.25,
+  "ai_citations": "1.32|1.5|3.16|3.20|3.22|D1.10|D1.11|D1.12|D1.15|D1.17|D1.18|D3.7|D3.8|D3.9|P1",
+  "heath_citations": "1.17|1.32|1.5|3.22|D1.10",
+  "ai_only": "3.16|3.20|D1.11|D1.12|D1.15|D1.17|D1.18|D3.7|D3.8|D3.9|P1",
+  "heath_only": "1.17",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "10.26",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same initial setup (contradiction assumption, application to rational line EF, establishing two rational lines incommensurable with EF and one rational line commensurable with EF via 10.22 and 10.20, then deriving incommensurability via 10.13), but they diverge fundamentally in how they reach contradiction. Heath uses 10.11 (proportion-based incommensurability transfer) to show sq(EG) is incommensurable with rect(EG,GH), then builds up via 10.6 and 10.13 to show sq(EG)+sq(GH) incommensurable with 2*rect(EG,GH), then uses 10.16 to conclude sq(EH) is irrational while EH is rational. The AI instead uses 10.21 to establish that rect(EH,HG) is irrational (since EH and HG are rational and commensurable in square only), then independently shows via II.4 expansion and commensurability arithmetic (10.12, 10.15, 10.9, 10.6) that rect(EH,HG) must also be rational, yielding contradiction. The key intermediate conclusions after step 3 are entirely different (Heath: sq(EH) irrational; AI: rect(EH,HG) both irrational and rational), constituting a genuine path difference decided at Q2 Case B. The AI's path is logically complete under the hardened Q1(b) standard.",
+  "jaccard": 0.4,
+  "ai_citations": "1.44|10.12|10.13|10.15|10.20|10.21|10.22|10.6|10.9|2.4|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|10.13|10.16|10.20|10.22|10.6|2.4|D10.1.4",
+  "ai_only": "1.44|10.12|10.15|10.21|10.9|D10.1.2|D10.1.3",
+  "heath_only": "10.11|10.16",
+  "audit_record": ""
+}

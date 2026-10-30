@@ -1,0 +1,13 @@
+{
+  "proposition": "3.16",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. The two proofs establish the same three assertions (tangent outside, no interposition, angle comparisons) but through genuinely different key intermediate conclusions at every stage. For Part 1, Heath uses the isosceles triangle theorem (I.5) in a contradiction proof, while the AI uses a direct distance comparison via I.17 and I.19. For Part 2, Heath drops a perpendicular from the center to the interposed line and derives a contradiction from radius vs perpendicular-distance inequality, whereas the AI constructs a symmetric point across a perpendicular foot using SAS congruence (I.4) and then invokes chord containment (3.2) to show every ray inside the angle immediately enters the circle. For Part 3, Heath argues indirectly from part 2, while the AI directly constructs rays at any given acute angle using I.23. These different backbones, confirmed by the very low Jaccard similarity (0.1) and the large set of substantive ai_only propositions (1.4, 1.12, 1.16, 1.23, 3.2), constitute a genuine path difference. The AI proof is logically complete under the hardened Q1(b) standard, so Q3(b) confirms a valid alternative path.",
+  "jaccard": 0.1,
+  "ai_citations": "1.12|1.16|1.17|1.19|1.23|1.3|1.4|3.2|CN5|D1.10|D1.12|D1.15|D1.17|D1.18|D1.8|D3.7|P1|P2|P4",
+  "heath_citations": "1.17|1.19|1.5",
+  "ai_only": "1.12|1.16|1.23|1.3|1.4|3.2|CN5|D1.10|D1.12|D1.15|D1.17|D1.18|D1.8|D3.7|P1|P2|P4",
+  "heath_only": "1.5",
+  "audit_record": ""
+}

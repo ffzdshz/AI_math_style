@@ -1,0 +1,26 @@
+{
+  "proposition": "10.20",
+  "book": 10,
+  "statement": "If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.",
+  "heath_proof": "For let the rational area AC be applied to AB, a straight line once more rational in any of the aforesaid ways, producing BC as breadth; I say that BC is rational and commensurable in length with BA. For on AB let the square AD be described; therefore AD is rational. [X. Def. 4] But AC is also rational; therefore DA is commensurable with AC. And, as DA is to AC, so is DB to BC. [VI. 1] Therefore DB is also commensurable with BC; [X. 11] and DB is equal to BA; therefore AB is also commensurable with BC. But AB is rational; therefore BC is also rational and commensurable in length with AB.",
+  "ai_proof_text": "10.20\n**Statement:** If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.\n\n**Step 1.** Let the rational area S be applied to the rational straight line AB, producing as breadth the straight line BC. Thus S is the rectangle contained by AB and BC, that is, S = rect(AB, BC).\n\n**Step 2.** Since AB is a rational straight line, the square on AB is a rational area [D10.1.3, D10.1.4]. Since S is also a rational area, both S and the square on AB are commensurable with the square on the assigned rational straight line [D10.1.4].\n\n**Step 3.** Since S and the square on AB are each commensurable with the square on the assigned rational straight line, S is commensurable with the square on AB [10.12].\n\n**Step 4.** Now S = rect(AB, BC) and sq(AB) = rect(AB, AB). By the property that rectangles with one common side are to one another as their remaining sides [6.1], we have rect(AB, BC) : rect(AB, AB) = BC : AB, that is, S : sq(AB) = BC : AB.\n\n**Step 5.** Since S is commensurable with sq(AB) (Step 3), and S : sq(AB) = BC : AB (Step 4), the four magnitudes S, sq(AB), BC, AB are proportional with the first commensurable with the second. Therefore BC is commensurable in length with AB [10.11].\n\n**Step 6.** Since BC is commensurable in length with the rational straight line AB, BC is itself rational [D10.1.3]. Moreover, BC is commensurable in length with AB, the straight line to which the area was applied (Step 5).\n\n**Step 7.** Therefore, if a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied. Q.E.D.\n\n**USED:** 10.11, 10.12, 6.1, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 6.1, D10.1.4\n**Jaccard:** 0.600 — AI adds ['10.12', 'D10.1.3']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "6.1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "6.1",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "D10.1.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let the rational area S be applied to the rational straight line AB, producing as breadth the straight line BC. Thus S is the rectangle contained by AB and BC, that is, S = rect(AB, BC).  "
+}

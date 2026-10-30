@@ -1,0 +1,31 @@
+{
+  "proposition": "3.17",
+  "book": 3,
+  "statement": "From a given point to draw a straight line touching a given circle.",
+  "heath_proof": "Let A be the given point, and BCD the given circle; thus it is required to draw from the point A a straight line touching the circle BCD. For let the centre E of the circle be taken; [III. 1] let AE be joined, and with centre E and distance EA let the circle AFG be described; from D let DF be drawn at right angles to EA, and let EF, AB be joined; I say that AB has been drawn from the point A touching the circle BCD. For, since E is the centre of the circles BCD, AFG, EA is equal to EF, and ED to EB; therefore the two sides AE, EB are equal to the two sides FE, ED: and they contain a common angle, the angle at E; therefore the base DF is equal to the base AB, and the triangle DEF is equal to the triangle BEA, and the remaining angles to the remaining angles; [I. 4]therefore the angle EDF is equal to the angle EBA. But the angle EDF is right; therefore the angle EBA is also right. Now EB is a radius; and the straight line drawn at right angles to the diameter of a circle, from its extremity, touches the circle; [III. 16] therefore AB touches the circle BCD. Therefore from the given point A the straight line AB has been drawn touching the circle BCD.",
+  "ai_proof_text": "3.17\n**Statement:** From a given point to draw a straight line touching a given circle.\n\n**Step 1.** Let A be the given point and let the given circle have centre C and radius CB. We must draw from A a straight line touching the circle. First, if A lies on the circumference of the circle, draw the straight line from A at right angles to CA by 1.11. By 3.16, this line, being drawn at right angles to the diameter from its extremity, falls outside the circle and therefore touches the circle at A, and we are done.\n\n**Step 2.** Now suppose A lies outside the circle. Join A to the centre C by P1. Let D be the point where segment AC meets the circumference of the given circle (so CD is a radius, and CD = CB by D1.15).\n\n**Step 3.** With centre C and radius CA, describe a circle passing through A by P3. Since A is outside the given circle, CA is greater than CD, so this new circle is larger than the given one.\n\n**Step 4.** From the point D, draw the straight line DE at right angles to CA by 1.11, and produce it to meet the larger circle at E. Join CE by P1.\n\n**Step 5.** Since CE is a radius of the larger circle, CE = CA (by D1.15). Since CD and CB are both radii of the given circle, CD = CB (by D1.15).\n\n**Step 6.** Now let B be the point where the straight line CE meets the circumference of the given circle, so that CB is a radius of the given circle. Join AB by P1.\n\n**Step 7.** Consider triangles CDE and CAB. We have CE = CA (both radii of the larger circle, Step 5), CD = CB (both radii of the given circle, Step 5), and angle DCE equals angle BCA since these are the same angle at vertex C (the angle between line CA and line CE is common to both triangles).\n\n**Step 8.** Therefore, by 1.4 (SAS congruence), triangle CDE is congruent to triangle CAB. Hence the remaining angles are respectively equal: in particular, angle CDE equals angle CBA.\n\n**Step 9.** But angle CDE is a right angle, since DE was drawn at right angles to CA at D (Step 4). Therefore angle CBA is also a right angle.\n\n**Step 10.** Since CB is a radius of the given circle and B is on its circumference, CB lies along a diameter through C. The line BA makes a right angle with CB at B, which is an extremity of the diameter. By 3.16, the straight line drawn at right angles to the diameter of a circle from its extremity falls outside the circle and therefore touches it. Hence BA touches the given circle at B.\n\n**Step 11.** Therefore, from the given point A, the straight line AB has been drawn touching the given circle. Q.E.F.\n\n**USED:** 1.11, 1.4, 3.16, D1.15, P1, P3\n**Human refs (from References field):** 1.4, 3.1, 3.16\n**Jaccard:** 0.286 — AI adds ['1.11', 'D1.15', 'P1', 'P3']; Human adds ['3.1']",
+  "ai_used": [
+    "1.11",
+    "1.4",
+    "3.16",
+    "D1.15",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.1",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.11",
+    "D1.15",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "3.1"
+  ],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let A be the given point and let the given circle have centre C and radius CB. We must draw from A a straight line touching the circle. First, if A lies on the circumference of the circle,"
+}

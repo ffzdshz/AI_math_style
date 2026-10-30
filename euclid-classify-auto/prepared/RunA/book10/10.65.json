@@ -1,0 +1,46 @@
+{
+  "proposition": "10.65",
+  "book": 10,
+  "statement": "The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.",
+  "heath_proof": "Let AB be the side of the sum of two medial areas, divided at C, let DE be a rational straight line, and let there be applied to DE the parallelogram DF equal to the square on AB, producing DG as its breadth; I say that DG is a sixth binomial straight line. For let the same construction be made as before. Then, since AB is the side of the sum of two medial areas, divided at C, therefore AC, CB are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and moreover the sum of the squares on them incommensurable with the rectangle contained by them, [X. 41] so that, in accordance with what was before proved, each of the rectangles DL, MF is medial. And they are applied to the rational straight line DE; therefore each of the straight lines DM, MG is rational and incommensurable in length with DE. [X. 22] And, since the sum of the squares on AC, CB is incommensurable with twice the rectangle AC, CB, therefore DL is incommensurable with MF. Therefore DM is also incommensurable with MG; [VI. 1, X. 11] therefore DM, MG are rational straight lines commensurable in square only; therefore DG is binomial. [X. 36] I say next that it is also a sixth binomial straight line. Similarly again we can prove that the rectangle DK, KM is equal to the square on MN, and that DK is incommensurable in length with KM; and, for the same reason, the square on DM is greater than the square on MG by the square on a straight line incommensurable in length with DM. And neither of the straight lines DM, MG is commensurable in length with the rational straight line DE set out. Therefore DG is a sixth binomial straight line.",
+  "ai_proof_text": "10.65\n**Statement:** The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.\n\n**Step 1.** Let AB be the side of the sum of two medial areas, divided at C into its terms, so that AC is the greater term. By the definition in 10.41, AC and CB are straight lines incommensurable in square, the sum of the squares on AC and CB is medial, the rectangle contained by AC and CB is medial, and the sum of the squares on AC and CB is incommensurable with the rectangle AC by CB.\n\n**Step 2.** Let DE be a rational straight line, and let the rectangle DE by DF be equal to the square on AB, where DF is the breadth produced. We must show that DF is a sixth binomial straight line.\n\n**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle AC by CB. Apply the sum of the squares on AC and CB to DE, producing breadth DG, so that the rectangle DE by DG equals the sum of the squares on AC and CB. Apply twice the rectangle AC by CB to DE, producing breadth GF, so that the rectangle DE by GF equals twice the rectangle AC by CB. Then DF equals DG plus GF.\n\n**Step 4.** Since the sum of the squares on AC and CB is medial and DE is rational, the rectangle DE by DG is medial. By 10.22, DG is rational and incommensurable in length with DE.\n\n**Step 5.** Since the rectangle AC by CB is medial, twice the rectangle AC by CB is also medial. For the rectangle AC by CB is medial, so the square equal to it has a medial side; twice the rectangle is commensurable with the rectangle (having to it the ratio 2:1, a ratio of number to number), hence by 10.23 (a straight line commensurable with a medial is medial, applied to areas via 10.6 and 10.12), twice the rectangle AC by CB is medial. Applied to the rational straight line DE, the rectangle DE by GF is medial. By 10.22, GF is rational and incommensurable in length with DE.\n\n**Step 6.** Since the sum of the squares on AC and CB is incommensurable with the rectangle AC by CB (by 10.41), and twice the rectangle AC by CB is commensurable with the rectangle AC by CB, the sum of the squares on AC and CB is incommensurable with twice the rectangle AC by CB, by 10.13. That is, the rectangle DE by DG is incommensurable with the rectangle DE by GF. Since these rectangles have the common side DE, by 6.1 and 10.11, DG is incommensurable in length with GF.\n\n**Step 7.** Since DG and GF are each rational (Steps 4 and 5) and incommensurable in length with each other (Step 6), they are commensurable in square only. Therefore, by 10.36, DF equals DG plus GF is a binomial straight line.\n\n**Step 8.** We now show that DF is specifically a sixth binomial. First, neither DG nor GF is commensurable in length with DE: DG is incommensurable in length with DE by Step 4, and GF is incommensurable in length with DE by Step 5.\n\n**Step 9.** Next we show that the square on DG is greater than the square on GF by the square on a straight line incommensurable in length with DG. Apply the square on AC to DE producing breadth DK, so that the rectangle DE by DK equals the square on AC. Apply the square on CB to DE producing breadth KG, so that the rectangle DE by KG equals the square on CB. Then DK plus KG equals DG.\n\n**Step 10.** Since AC and CB are incommensurable in square (by 10.41), the square on AC is incommensurable with the square on CB. Thus the rectangle DE by DK is incommensurable with the rectangle DE by KG. Since these rectangles share the common side DE, by 6.1 and 10.11, DK is incommensurable in length with KG.\n\n**Step 11.** Now, the square on DG minus the square on GF equals the square on some straight line, say L. We compute: the rectangle DE by DG equals the sum of the squares on AC and CB, and the rectangle DE by GF equals twice the rectangle AC by CB. By algebra confirmed through 2.4 and 2.7, (the sum of the squares on AC and CB) squared minus (twice the rectangle AC by CB) squared equals (the square on AC minus the square on CB) squared. Therefore the square on DE times (the square on DG minus the square on GF) equals (the square on AC minus the square on CB) squared divided by... more precisely, since rect(DE, DG) = sq(AC) + sq(CB) and rect(DE, GF) = 2*rect(AC,CB), we have sq(DG) - sq(GF) = [(sq(AC)+sq(CB))^2 - 4*sq(AC)*sq(CB)] / sq(DE) = (sq(AC) - sq(CB))^2 / sq(DE). Let rect(DE, L) = sq(AC) - sq(CB), so that sq(L) = sq(DG) - sq(GF). Thus the square on DG exceeds the square on GF by the square on L.\n\n**Step 12.** It remains to show that L is incommensurable in length with DG. Since sq(AC) is incommensurable with sq(CB) (Step 10), we show that sq(AC) + sq(CB) is incommensurable with sq(AC) - sq(CB). Suppose for contradiction they were commensurable. Then their sum, 2*sq(AC), and their difference, 2*sq(CB), would also be commensurable (by 10.15 and 10.12). Hence sq(AC) would be commensurable with sq(CB), contradicting the incommensurability of AC and CB in square. Therefore sq(AC) + sq(CB) is incommensurable with sq(AC) - sq(CB).\n\n**Step 13.** Since rect(DE, DG) = sq(AC) + sq(CB) and rect(DE, L) = sq(AC) - sq(CB), and sq(AC) + sq(CB) is incommensurable with sq(AC) - sq(CB) (Step 12), we have rect(DE, DG) incommensurable with rect(DE, L). Since these rectangles share the side DE, by 6.1 and 10.11, DG is incommensurable in length with L.\n\n**Step 14.** Therefore the square on DG is greater than the square on GF by the square on a straight line L incommensurable in length with DG (Steps 11 and 13), and neither DG nor GF is commensurable in length with the rational straight line DE (Step 8). By Definition D10.2.6, DF is a sixth binomial straight line.\n\n**Step 15.** Therefore, the square on the side of the sum of two medial areas, applied to a rational straight line, produces as breadth the sixth binomial. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.22, 10.23, 10.36, 10.41, 10.6, 2.4, 2.7, 6.1, D10.1.3, D10.1.4, D10.2.6\n**Human refs (from References field):** 10.11, 10.22, 10.36, 10.41, 6.1\n**Jaccard:** 0.333 — AI adds ['10.12', '10.13', '10.15', '10.23', '10.6', '2.4', '2.7', 'D10.1.3', 'D10.1.4', 'D10.2.6']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.41",
+    "10.6",
+    "2.4",
+    "2.7",
+    "6.1",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.6"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.36",
+    "10.41",
+    "6.1"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.23",
+    "10.6",
+    "2.4",
+    "2.7",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.6"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AB be the side of the sum of two medial areas, divided at C into its terms, so that AC is the greater term. By the definition in 10.41, AC and CB are straight lines incommensurable in "
+}

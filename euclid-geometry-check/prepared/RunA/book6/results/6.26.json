@@ -1,0 +1,51 @@
+{
+  "proposition": "6.26",
+  "run": "RunA",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E lies on AB between A and B; G lies on AD between A and D. AEFG is a parallelogram similar and similarly situated to ABCD sharing angle A.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AC is the diagonal of ABCD. Assumption for contradiction: F (opposite vertex to A in AEFG) does not lie on AC.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC passes through the interior of parallelogram AEFG and meets side EF or GF. A point on AC within AEFG is used to construct parallelogram AKHL about the diameter AC, with K on AB, H on AD, L on AC.",
+      "type": "line_interior_crossing"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AKHL is a parallelogram about the diameter AC of ABCD, hence similar to ABCD by 6.24.",
+      "type": "parallelogram_about_diameter"
+    },
+    {
+      "step": "Step 9",
+      "claim": "E lies on ray AK (both on AB). Line through E parallel to KL meets line AL at F'. Proportionality AE:AK = AF':AL by 6.2 applied to triangle AKL.",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G lies on ray AH (both on AD). Line through G parallel to HL meets line AL at F''. Proportionality AG:AH = AF'':AL by 6.2 applied to triangle AHL.",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 12",
+      "claim": "KL is parallel to AH (along AD), so line through E parallel to AD equals line through E parallel to KL. HL is parallel to AK (along AB), so line through G parallel to AB equals line through G parallel to HL.",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 13",
+      "claim": "F is the intersection of line through E parallel to AD and line through G parallel to AB. These are the same lines that define F' and F''. Since F' = F'', F lies on AC.",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "ABCD is a parallelogram with diagonal AC. E lies on segment AB and G lies on segment AD, forming a smaller parallelogram AEFG similar and similarly situated to ABCD at corner A. The diagonal AC enters angle EAG (= angle BAD) from vertex A and passes through the interior of AEFG, exiting through side EF or GF. A parallelogram AKHL is constructed about diameter AC with K on AB, H on AD, and L on AC. The parallelism structure of AKHL ensures KL is parallel to AD and HL is parallel to AB. Points F' and F'' are defined as intersections of certain parallel lines with line AC, and are shown to coincide. The vertex F of AEFG, being the intersection of the same two parallel lines, must equal this common point and therefore lies on AC.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly establishes that AC passes through the interior of AEFG, constructs AKHL about the diameter AC with valid parallelism relationships (KL parallel to AD, HL parallel to AB), applies proportionality via similar triangles to locate points F' and F'' on line AC, shows they coincide, and correctly identifies their common location with vertex F. No angle decomposition issues arise. No point is placed in contradictory positions across different steps. The proof by contradiction is geometrically sound."
+}

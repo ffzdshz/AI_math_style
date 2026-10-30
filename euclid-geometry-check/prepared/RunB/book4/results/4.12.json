@@ -1,0 +1,71 @@
+{
+  "proposition": "4.12",
+  "run": "RunB",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pentagon ABCDE inscribed in circle with center O; arcs AB, BC, CD, DE, EA are all equal",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "F is midpoint of arc AB, G midpoint of arc BC, H midpoint of arc CD, K midpoint of arc DE, L midpoint of arc EA; order on circle is A, F, B, G, C, H, D, K, E, L",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Tangent at each of F, G, H, K, L is perpendicular to the radius at that point",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "M is intersection of tangents at F and G (outside circle); N is intersection of tangents at G and H; P is intersection of tangents at H and K; Q is intersection of tangents at K and L; R is intersection of tangents at L and F",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Arc FG = arc FB + arc BG (F and G on opposite sides of B on circle); all five arcs FG, GH, HK, KL, LF are equal",
+      "type": "arc_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Central angles FOG = GOH = HOK = KOL = LOF = 4/5 right angle (72 degrees); five angles sum to full revolution",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 7",
+      "claim": "OF perpendicular to tangent at F (angle OFM = 90 degrees); OG perpendicular to tangent at G (angle OGM = 90 degrees); quadrilateral OFMG has angle sum 360 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle FMG = 4 right angles - 1 - 1 - 4/5 = 6/5 right angles (108 degrees)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "OM is hypotenuse of right triangles OFM and OGM; FM = GM (equal tangent lengths from external point M)",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Angle OGM = angle OGN = right angle (M and N both on tangent line at G, on opposite sides of G; OG perpendicular to tangent)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Angle GOM = angle GON = 2/5 right angle (36 degrees); triangles OGM and OGN congruent by AAS",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 13",
+      "claim": "G lies on segment MN (between M and N), as M and N are on opposite sides of G along the tangent line at G",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "Circle with center O. Five equally-spaced points F, G, H, K, L on the circle (each pair separated by 72-degree arc), obtained by bisecting the arcs of inscribed regular pentagon ABCDE. Order around circle: A, F, B, G, C, H, D, K, E, L. Tangent lines drawn at each of F, G, H, K, L. Adjacent tangents meet at points M, N, P, Q, R respectively, all outside the circle. Each tangent point (e.g., G) lies on the side of pentagon MNPQR connecting its two adjacent vertices (M and N), between them. The radius to each tangent point is perpendicular to the tangent line (and hence to the side of the circumscribed pentagon). Each vertex (e.g., M) is the apex of an isoceles configuration with two equal tangent segments (FM = GM) to adjacent tangent points. The quadrilateral formed by center O, two adjacent tangent points, and the vertex between them (e.g., OFMG) has two right angles at the tangent points, one 72-degree angle at O, and one 108-degree angle at the vertex.",
+  "pass_reason": "All spatial claims are mutually consistent. The tangent point ordering on the circle, the perpendicularity of radii to tangents, the positions of pentagon vertices as tangent intersections outside the circle, the betweenness of tangent points on pentagon sides, and all angle decompositions (quadrilateral angle sums, congruent triangle arguments) are geometrically compatible. No claim about point position, ray ordering, or angle decomposition contradicts any other claim in the proof."
+}

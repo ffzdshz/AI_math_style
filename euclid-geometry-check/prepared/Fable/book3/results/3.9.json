@@ -1,0 +1,46 @@
+{
+  "proposition": "3.9",
+  "run": "Fable",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is a point within circle ABC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "DA, DB, DC are straight lines from D to the circumference with DA = DB = DC",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is the centre of circle ABC, distinct from D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line DE is produced in both directions to meet the circumference at F and G",
+      "type": "line_construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "FG passes through centre E, so FG is a diameter of circle ABC",
+      "type": "line_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "D lies on diameter FG and is not the centre of the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "From D on diameter FG (not the centre), only two equal straight lines can fall from D on the circle (by 3.7)",
+      "type": "proposition_application"
+    }
+  ],
+  "configuration_map": "D: inside circle ABC (Step 1); lies on line DE which is extended to diameter FG, so D is on diameter FG strictly between F and G (Step 3); D is not the centre E (Step 2). E: centre of circle ABC (Step 2); lies on diameter FG (Step 3); distinct from D. F, G: on circumference of circle ABC; endpoints of diameter FG (Step 3). A, B, C: on circumference of circle ABC; equidistant from D (Step 1). The key spatial fact is that D lies on diameter FG but is not the centre, which is exactly the configuration required for Proposition 3.7 to apply.",
+  "pass_reason": "All spatial claims are mutually consistent. D is inside the circle and on diameter FG (since line DE through the centre is extended to the circumference). The application of 3.7 to point D on diameter FG (not the centre) is geometrically valid. The reductio correctly derives a contradiction between 3.7's conclusion (at most two equal lines from D to the circle) and the hypothesis (three equal lines). No angle decompositions, no interior/exterior conflicts, no conflicting point positions."
+}

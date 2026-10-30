@@ -1,0 +1,53 @@
+{
+  "proposition": "11.38",
+  "book": 11,
+  "statement": "If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.",
+  "heath_proof": "For let the sides of the opposite planes CF, AH of the cube AF be bisected at the points K, L, M, N, O, Q, P, R, and through the points of section let the planes KN, OR be carried; let US be the common section of the planes, and DG the diameter of the cube AF. I say that UT is equal to TS, and DT to TG. For let DU, UE, BS, SG be joined. Then, since DO is parallel to PE, the alternate angles DOU, UPE are equal to one another. [I. 29] And, since DO is equal to PE, and OU to UP, and they contain equal angles, therefore the base DU is equal to the base UE, the triangle DOU is equal to the triangle PUE, and the remaining angles are equal to the remaining angles; [I. 4] therefore the angle OUD is equal to the angle PUE. For this reason DUE is a straight line. [I. 14] For the same reason, BSG is also a straight line, and BS is equal to SG. Now, since CA is equal and parallel to DB, while CA is also equal and parallel to EG, therefore DB is also equal and parallel to EG. [XI. 9] And the straight lines DE, BG join their extremities; therefore DE is parallel to BG. [I. 33] Therefore the angle EDT is equal to the angle BGT, for they are alternate; [I. 29] and the angle DTU is equal to the angle GTS. [I. 15] Therefore DTU, GTS are two triangles which have two angles equal to two angles, and one side equal to one side, namely that subtending one of the equal angles, that is, DU equal to GS, for they are the halves of DE, BG; therefore they will also have the remaining sides equal to the remaining sides. [I. 26] Therefore DT is equal to TG, and UT to TS.",
+  "ai_proof_text": "11.38\n**Statement:** If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.\n\n**Step 1.** Let ABCDEFGH be a cube, where ABCD is one face and EFGH is the opposite face, with edges AE, BF, CG, DH joining corresponding vertices, so that A is below E, B below F, C below G, and D below H. By D11.25, all six faces are equal squares. Let the diameter (space diagonal) of the cube be AG, joining vertex A to the opposite vertex G. [D11.25, P1]\n\n**Step 2.** By 11.24, since the cube is a parallelepipedal solid, its opposite faces are equal parallelograms. In particular, face ABCD and face EFGH are equal parallelograms, face ABFE and face DCGH are equal parallelograms, and face ADHE and face BCGF are equal parallelograms. By 1.34, opposite sides of each face are equal and parallel. [11.24, 1.34]\n\n**Step 3.** Bisect the sides of opposite faces ABCD and EFGH. By 1.10, bisect AB at K, BC at L, CD at M, DA at N on face ABCD, and bisect EF at O, FG at P, GH at Q, HE at R on face EFGH. [1.10]\n\n**Step 4.** The first cutting plane passes through K, O, Q, M (midpoints of corresponding edges AB, EF, GH, CD). The second cutting plane passes through L, P, R, N (midpoints of corresponding edges BC, FG, HE, DA). We must show the common section of these two planes and the diagonal AG bisect one another. [P1]\n\n**Step 5.** In face ABCD, which is a parallelogram, the diagonals AC and BD bisect each other at a point S by 1.34. Thus S is the midpoint of diagonal AC and also the midpoint of diagonal BD. [1.34]\n\n**Step 6.** We show that K, S, M are collinear, so that S lies on the first cutting plane. In triangle ABC, K is the midpoint of AB and S is the midpoint of AC. By 6.2 (converse), since AB and AC are cut proportionally at K and S respectively, the line KS is parallel to BC. In triangle ACD, S is the midpoint of AC and M is the midpoint of CD. By 6.2 (converse), the line SM is parallel to AD. Since BC is parallel to AD (opposite sides of parallelogram ABCD, by 1.34), lines KS and SM are each parallel to BC. By 1.30, lines parallel to the same line are parallel to one another; but KS and SM share the point S, and by D1.23 parallel lines do not meet. Therefore KS and SM cannot be distinct parallel lines, so they form one and the same straight line, and K, S, M are collinear. Hence S lies on line KM in the first cutting plane. [6.2, 1.34, 1.30, D1.23]\n\n**Step 7.** By the same reasoning applied to triangles ABD and BCD: L is the midpoint of BC, S is the midpoint of BD, and N is the midpoint of DA. In triangle ABD, S (midpoint of BD) and N (midpoint of DA) give SN parallel to AB by 6.2. In triangle BCD, S (midpoint of BD) and L (midpoint of BC) give SL parallel to CD by 6.2. Since AB is parallel to CD (by 1.34), both SL and SN are parallel to AB. By the same argument as Step 6 (using 1.30 and D1.23), L, S, N are collinear. Hence S lies on line LN in the second cutting plane. [6.2, 1.34, 1.30, D1.23]\n\n**Step 8.** By entirely analogous reasoning on face EFGH, the diagonals EG and FH bisect each other at point T by 1.34. The midpoints O, P, Q, R of sides EF, FG, GH, HE satisfy: O, T, Q are collinear (so T lies on line OQ in the first cutting plane) and P, T, R are collinear (so T lies on line PR in the second cutting plane). [1.34, 6.2, 1.30, D1.23]\n\n**Step 9.** Since S lies on both the first and second cutting planes, and T lies on both the first and second cutting planes, the line ST is the common section of the two cutting planes within the cube, by 11.3. [11.3]\n\n**Step 10.** We now establish that ACGE is a parallelogram. From face ABFE (a parallelogram by 11.24), AE is parallel to BF and AE equals BF, by 1.34. From face BCGF (a parallelogram by 11.24), BF is parallel to CG and BF equals CG, by 1.34. By 1.30, since AE and CG are each parallel to BF, AE is parallel to CG. By CN1, since AE equals BF and BF equals CG, AE equals CG. [11.24, 1.34, 1.30, CN1]\n\n**Step 11.** Since AE and CG are equal and parallel, and A, C are at one pair of extremities while E, G are at the other pair, with AC and EG joining corresponding extremities in the same direction, by 1.33 the line AC is equal and parallel to the line EG. [1.33]\n\n**Step 12.** By 11.7, since AE and CG are parallel, any line joining a point on AE to a point on CG lies in the same plane as AE and CG. In particular, the points A, C (on lines AE and CG respectively, taking A on AE and C on CG) and E, G all lie in one plane. Therefore the quadrilateral ACGE lies entirely in one plane. Since AC is parallel to EG and AE is parallel to CG (both pairs being also equal), ACGE is a parallelogram. [11.7]\n\n**Step 13.** In parallelogram ACGE, S is the midpoint of side AC (from Step 5) and T is the midpoint of side EG (from Step 8). Since AC is parallel to EG and AC equals EG (from Step 11), the half-segments AS and TG are equal (each being half of equal segments, by CN1) and parallel (being corresponding halves of parallel lines in the same direction). [CN1]\n\n**Step 14.** Since AS and TG are equal and parallel, with the joins AT and SG connecting their extremities in the same direction, by 1.33 the line AT is equal and parallel to the line SG. Thus ASTG is a parallelogram (having both pairs of opposite sides equal and parallel). [1.33]\n\n**Step 15.** We verify that ASTG lies in a plane. Since AS and TG are parallel, by 11.7 any line joining a point on AS to a point on TG lies in the same plane. The points A, S, T, G all lie in this plane, so ASTG is a planar parallelogram. [11.7]\n\n**Step 16.** In parallelogram ASTG, the diagonals are AG and ST. By 1.34, the diagonals of a parallelogram bisect each other. Therefore AG and ST bisect each other at their common point of intersection. [1.34]\n\n**Step 17.** But AG is the diameter of the cube, and ST is the common section of the two cutting planes (from Step 9). Therefore the common section of the planes and the diameter of the cube bisect one another, which is what was to be proved.\n\n**USED:** 1.10, 1.30, 1.33, 1.34, 11.24, 11.3, 11.7, 6.2, CN1, D1.23, D11.25, P1\n**Human refs (from References field):** 1.14, 1.15, 1.26, 1.29, 1.33, 1.4, 11.9\n**Jaccard:** 0.056 — AI adds ['1.10', '1.30', '1.34', '11.24', '11.3', '11.7', '6.2', 'CN1', 'D1.23', 'D11.25', 'P1']; Human adds ['1.14', '1.15', '1.26', '1.29', '1.4', '11.9']",
+  "ai_used": [
+    "1.10",
+    "1.30",
+    "1.33",
+    "1.34",
+    "11.24",
+    "11.3",
+    "11.7",
+    "6.2",
+    "CN1",
+    "D1.23",
+    "D11.25",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.15",
+    "1.26",
+    "1.29",
+    "1.33",
+    "1.4",
+    "11.9"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.30",
+    "1.34",
+    "11.24",
+    "11.3",
+    "11.7",
+    "6.2",
+    "CN1",
+    "D1.23",
+    "D11.25",
+    "P1"
+  ],
+  "heath_only": [
+    "1.14",
+    "1.15",
+    "1.26",
+    "1.29",
+    "1.4",
+    "11.9"
+  ],
+  "jaccard": 0.056,
+  "proof_summary": "**Step 1.** Let ABCDEFGH be a cube, where ABCD is one face and EFGH is the opposite face, with edges AE, BF, CG, DH joining corresponding vertices, so that A is below E, B below F, C below G, and D be"
+}

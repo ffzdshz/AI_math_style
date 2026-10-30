@@ -1,0 +1,63 @@
+{
+  "proposition": "10.54",
+  "book": 10,
+  "statement": "If an area be contained by a rational straight line and the first binomial, the âsideâ of the area is the irrational straight line which is called binomial.",
+  "heath_proof": "For let the area AC be contained by the rational straight line AB and the first binomial AD; I say that the “side” of the area AC is the irrational straight line which is called binomial. For, since AD is a first binomial straight line, let it be divided into its terms at E, and let AE be the greater term. It is then manifest that AE, ED are rational straight lines commensurable in square only, the square on AE is greater than the square on ED by the square on a straight line commensurable with AE, and AE is commensurable in length with the rational straight line AB set out. [X. Deff. II. 1] Let ED be bisected at the point F. Then, since the square on AE is greater than the square on ED by the square on a straight line commensurable with AE, therefore, if there be applied to the greater AE a parallelogram equal to the fourth part of the square on the less, that is, to the square on EF, and deficient by a square figure, it divides it into commensurable parts. [X. 17] Let then the rectangle AG, GE equal to the square on EF be applied to AE; therefore AG is commensurable in length with EG. Let GH, EK, FL be drawn from G, E, F parallel to either of the straight lines AB, CD; let the square SN be constructed equal to the parallelogram AH, and the square NQ equal to GK, [II. 14] and let them be placed so that MN is in a straight line with NO; therefore RN is also in a straight line with NP. And let the parallelogram SQ be completed; therefore SQ is a square. [Lemma] Now, since the rectangle AG, GE is equal to the square on EF, therefore, as AG is to EF, so is FE to EG; [VI. 17] therefore also, as AH is to EL, so is EL to KG; [VI. 1] therefore EL is a mean proportional between AH, GK. But AH is equal to SN, and GK to NQ; therefore EL is a mean proportional between SN, NQ. But MR is also a mean proportional between the same SN, NQ; [Lemma]therefore EL is equal to MR, so that it is also equal to PO. But AH, GK are also equal to SN, NQ; therefore the whole AC is equal to the whole SQ, that is, to the square on MO; therefore MO is the “side” of AC. I say next that MO is binomial. For, since AG is commensurable with GE, therefore AE is also commensurable with each of the straight lines AG, GE. [X. 15] But AE is also, by hypothesis, commensurable with AB; therefore AG, GE are also commensurable with AB. [X. 12] And AB is rational; therefore each of the straight lines AG, GE is also rational; therefore each of the rectangles AH, GK is rational, [X. 19] and AH is commensurable with GK. But AH is equal to SN, and GK to NQ; therefore SN, NQ, that is, the squares on MN, NO, are rational and commensurable. And, since AE is incommensurable in length with ED, while AE is commensurable with AG, and DE is commensurable with EF, therefore AG is also incommensurable with EF, [X. 13] so that AH is also incommensurable with EL. [VI. 1, X. 11] But AH is equal to SN, and EL to MR; therefore SN is also incommensurable with MR. But, as SN is to MR, so is PN to NR; [VI. 1] therefore PN is incommensurable with NR. [X. 11] But PN is equal to MN, and NR to NO; therefore MN is incommensurable with NO. And the square on MN is commensurable with the square on NO, and each is rational; therefore MN, NO are rational straight lines commensurable in square only. Therefore MO is binomial [X. 36] and the “side” of AC.",
+  "ai_proof_text": "10.54\n**Statement:** If an area be contained by a rational straight line and the first binomial, the âsideâ of the area is the irrational straight line which is called binomial.\n\n**Step 1.** Let r be the rational straight line set out, and let a+b be the first binomial relative to it, with a>b. Write pq for the rectangle contained by p and q, and p² for the square on p. By the meaning of binomial in 10.36 and by D10.2.1, a and b are rational and commensurable in square only; moreover, a is commensurable in length with r, and a²=b²+c² for some straight line c commensurable in length with a. We must identify the side of r(a+b). [10.36, D10.2.1]\n\n**Step 2.** Bisect b, and call its half t. Thus b=2t and t² is one fourth of b². Apply to a a rectangle equal to t² and deficient by a square. This construction is possible because b<a, so t² is less than the square on half of a. Denote the resulting parts of a by u and v; then u+v=a and uv=t². [1.10, 2.4, 6.28]\n\n**Step 3.** Since a² exceeds b² by the square on a line commensurable in length with a, the converse direction of 10.17 shows that u and v are commensurable in length. This is the direct path supplied by the defining square-excess condition of a first binomial. Each of u and v is therefore commensurable with u+v=a, and consequently with r. [10.17, 10.15, 10.12]\n\n**Step 4.** Construct straight lines x and y such that x²=ru and y²=rv. Since u and v are commensurable in length with the rational line r, they are rational; hence ru and rv are rational areas. Their square sides x and y are therefore rational. Furthermore, their squares are commensurable, since both are commensurable with the assigned rational square. Thus x and y are commensurable in square. [2.14, D10.1.3, 10.19, D10.1.4, 10.12, D10.1.2]\n\n**Step 5.** The lines u and t are incommensurable in length. For t is commensurable with b, since b=2t. If u were commensurable with t, then, because a is commensurable with u, repeated application of 10.12 would make a commensurable with b, contrary to Step 1. [D10.1.1, 10.12]\n\n**Step 6.** Rectangles of equal height are proportional to their bases. Therefore, using uv=t²,\n\nx²:y² = ru:rv = u:v = u²:uv = u²:t².\n\nThe converse of 6.22, applied to squares, now gives x:y=u:t. Since u and t are incommensurable in length, so are x and y. Together with Step 4, this proves that x and y are rational straight lines commensurable in square only. [6.1, 5.11, 6.22, 10.11]\n\n**Step 7.** Again by the ratios of rectangles of equal height,\n\nx²:xy = x:y = u:t = ru:rt.\n\nBut x²=ru. Consequently the equal antecedents have the same ratio to xy and rt, so xy=rt. [6.1, 5.11, 5.9]\n\n**Step 8.** The square on x+y is therefore\n\n(x+y)² = x²+y²+2xy\n= ru+rv+2rt\n= r(u+v)+r(2t)\n= ra+rb\n= r(a+b).\n\nHere the square of a sum is expanded by 2.4, rectangles are distributed by 2.1, and the established equalities are added. Thus x+y is a side of the given area. [2.4, 2.1, CN2]\n\n**Step 9.** Since x and y are rational and commensurable in square only, 10.36 states that their sum x+y is irrational and is called binomial. By Step 8, this sum is precisely the side of the area contained by r and the first binomial a+b. Hence the side of the given area is the irrational straight line called binomial. [10.36]\n\n**USED:** 1.10, 10.11, 10.12, 10.15, 10.17, 10.19, 10.36, 2.1, 2.14, 2.4, 5.11, 5.9, 6.1, 6.22, 6.28, CN2, D10.1.1, D10.1.2, D10.1.3, D10.1.4, D10.2.1\n**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.36, 2.14, 6.1, 6.17, D10.2.1\n**Jaccard:** 0.391 — AI adds ['1.10', '2.1', '2.4', '5.11', '5.9', '6.22', '6.28', 'CN2', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.13', '6.17']",
+  "ai_used": [
+    "1.10",
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.17",
+    "10.19",
+    "10.36",
+    "2.1",
+    "2.14",
+    "2.4",
+    "5.11",
+    "5.9",
+    "6.1",
+    "6.22",
+    "6.28",
+    "CN2",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.1"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.17",
+    "10.19",
+    "10.36",
+    "2.14",
+    "6.1",
+    "6.17",
+    "D10.2.1"
+  ],
+  "ai_only": [
+    "1.10",
+    "2.1",
+    "2.4",
+    "5.11",
+    "5.9",
+    "6.22",
+    "6.28",
+    "CN2",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.13",
+    "6.17"
+  ],
+  "jaccard": 0.391,
+  "proof_summary": "**Step 1.** Let r be the rational straight line set out, and let a+b be the first binomial relative to it, with a>b. Write pq for the rectangle contained by p and q, and p² for the square on p. By the"
+}

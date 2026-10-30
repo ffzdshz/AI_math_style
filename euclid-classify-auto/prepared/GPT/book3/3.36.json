@@ -1,0 +1,46 @@
+{
+  "proposition": "3.36",
+  "book": 3,
+  "statement": "If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.",
+  "heath_proof": "For let a point D be taken outside the circle ABC, and from D let the two straight lines DCA, DB fall on the circle ABC; let DCA cut the circle ABC and let BD touch it; I say that the rectangle contained by AD, DC is equal to the square on DB. Then DCA is either through the centre or not through the centre. First let it be through the centre, and let F be the centre of the circle ABC; let FB be joined; therefore the angle FBD is right. [III. 18]  And, since AC has been bisected at F, and CD is added to it, the rectangle AD, DC together with the square on FC is equal to the square on FD. [II. 6] But FC is equal to FB; therefore the rectangle AD, DC together with the square on FB is equal to the square on FD. And the squares on FB, BD are equal to the square on FD; [I. 47] therefore the rectangle AD, DC together with the square on FB is equal to the squares on FB, BD. Let the square on FB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on the tangent DB. Again, let DCA not be through the centre of the circle ABC; let the centre E be taken, and from E let EF be drawn perpendicular to AC; let EB, EC, ED be joined. Then the angle EBD is right. [III. 18] And, since a straight line EF through the centre cuts a straight line AC not through the centre at right angles, it also bisects it; [III. 3]therefore AF is equal to FC. Now, since the straight line AC has been bisected at the point F, and CD is added to it, the rectangle contained by AD, DC together with the square on FC is equal to the square on FD. [II. 6] Let the square on FE be added to each; therefore the rectangle AD, DC together with the squares on CF, FE is equal to the squares on FD, FE. But the square on EC is equal to the squares on CF, FE, for the angle EFC is right; [I. 47] and the square on ED is equal to the squares on DF, FE; therefore the rectangle AD, DC together with the square on EC is equal to the square on ED. And EC is equal to EB; therefore the rectangle AD, DC together with the square on EB is equal to the square on ED. But the squares on EB, BD are equal to the square on ED, for the angle EBD is right; [I. 47] therefore the rectangle AD, DC together with the square on EB is equal to the squares on EB, BD. Let the square on EB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on DB.",
+  "ai_proof_text": "3.36\n**Statement:** If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.\n\n**Step 1.** Let P be the exterior point, let the secant meet the circle first at A and then at B, and let PT touch the circle at T. Write S(x) for the square on a segment x and R(x,y) for the rectangle contained by segments x and y (D1.22, D2.1). Find the centre O and join OP, OT, and OB (3.1, P1).\n\n**Step 2.** The radius OT is perpendicular to the tangent PT (3.18). Consequently, in the right-angled triangle OTP,\nS(OP) = S(OT) + S(PT) (1.47).\nHere 3.18 is the direct choice because the centre and the radius to the point of contact are already available.\n\n**Step 3.** Bisect AB at M (1.10). The points lie in the order B, M, A, P. Apply 2.6 to AB, bisected at M and produced beyond A to P. Since MA = MB, it gives\nR(PB,PA) + S(MB) = S(PM) (2.6, CN4).\nThe relevant path choice is the midpoint-and-squares route: 2.6 applies directly to this externally extended, bisected chord. We distinguish whether the secant passes through O.\n\n**Step 4.** Suppose first that the secant passes through O. Then AB is a diameter, and OA = OB because they are radii (D1.17, D1.15). Thus O is its midpoint M. The identity in Step 3 therefore becomes\nR(PB,PA) + S(OB) = S(OP) (CN4).\n\n**Step 5.** Suppose instead that the secant does not pass through O. Join OM (P1). Since the straight line through O bisects the chord AB at M, it is perpendicular to AB (3.3). Applying 1.47 to the right-angled triangles OMB and OMP gives\nS(OB) = S(OM) + S(MB),\nand\nS(OP) = S(OM) + S(PM).\n\n**Step 6.** Add S(OM) to both sides of the identity in Step 3 (CN2):\nR(PB,PA) + S(MB) + S(OM) = S(PM) + S(OM).\nSubstituting the equal areas established in Step 5 yields\nR(PB,PA) + S(OB) = S(OP) (CN1).\nTogether with Step 4, this establishes the same identity in both cases.\n\n**Step 7.** Since OB and OT are radii, OB = OT, and hence S(OB) = S(OT) (D1.15, CN4). Combining this equality with Steps 2, 4, and 6 gives\nR(PB,PA) + S(OB) = S(PT) + S(OB) (CN2, CN1).\nSubtract the common square S(OB) (CN3). Therefore\nR(PB,PA) = S(PT).\nThus the rectangle contained by the whole secant PB and its exterior portion PA equals the square on the tangent PT, as required.\n\n**USED:** 1.10, 1.47, 2.6, 3.1, 3.18, 3.3, CN1, CN2, CN3, CN4, D1.15, D1.17, D1.22, D2.1, P1\n**Human refs (from References field):** 1.47, 2.6, 3.18, 3.3\n**Jaccard:** 0.267 — AI adds ['1.10', '3.1', 'CN1', 'CN2', 'CN3', 'CN4', 'D1.15', 'D1.17', 'D1.22', 'D2.1', 'P1']",
+  "ai_used": [
+    "1.10",
+    "1.47",
+    "2.6",
+    "3.1",
+    "3.18",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D2.1",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.6",
+    "3.18",
+    "3.3"
+  ],
+  "ai_only": [
+    "1.10",
+    "3.1",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D2.1",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.267,
+  "proof_summary": "**Step 1.** Let P be the exterior point, let the secant meet the circle first at A and then at B, and let PT touch the circle at T. Write S(x) for the square on a segment x and R(x,y) for the rectangl"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "8.4",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. The two proofs have entirely different backbones (Jaccard 0.0 with zero citation overlap). Heath constructs the continued proportion iteratively using LCM (7.34), scales terms proportionally via 7.13 and Def. 20, handles two sub-cases depending on whether E measures K, and proves minimality by contradiction using divisibility properties (7.20, 7.35). The AI instead builds an arbitrary chain with the correct successive ratios by iterated multiplication (using 7.16 and 7.17), then applies 7.33 (find least numbers in the same ratio via GCD) as a global minimization step, and proves minimality by showing any competing chain falls within the class minimized by 7.33. The key intermediate conclusions differ fundamentally: Heath relies on LCM-based pairwise joining and divisibility-based contradiction, while the AI relies on multiplication-based chain construction and GCD-based global reduction. Since the AI's path is logically complete under Q3 — every step is supported by a cited proposition (7.17 for ratio preservation, 7.33 for minimization, 7.14 for ex aequali, 5.11 for transitivity of ratios) — the classification is D.",
+  "jaccard": 0.0,
+  "ai_citations": "5.11|7.14|7.16|7.17|7.33|D7.15",
+  "heath_citations": "7.13|7.20|7.34|7.35|D7.20",
+  "ai_only": "5.11|7.14|7.16|7.17|7.33|D7.15",
+  "heath_only": "7.13|7.20|7.34|7.35|D7.20",
+  "audit_record": ""
+}

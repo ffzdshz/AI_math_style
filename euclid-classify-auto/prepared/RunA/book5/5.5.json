@@ -1,0 +1,25 @@
+{
+  "proposition": "5.5",
+  "book": 5,
+  "statement": "If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole.",
+  "heath_proof": "For let the magnitude AB be the same multiple of the magnitude CD that the part AE subtracted is of the part CF subtracted; I say that the remainder EB is also the same multiple of the remainder FD that the whole AB is of the whole CD. For, whatever multiple AE is of CF, let EB be made that multiple of CG. Then, since AE is the same multiple of CF that EB is of GC, therefore AE is the same multiple of CF that AB is of GF. [V. 1] But, by the assumption, AE is the same multiple of CF that AB is of CD. Therefore AB is the same multiple of each of the magnitudes GF, CD; therefore GF is equal to CD. Let CF be subtracted from each; therefore the remainder GC is equal to the remainder FD. And, since AE is the same multiple of CF that EB is of GC, and GC is equal to DF,therefore AE is the same multiple of CF that EB is of FD. But, by hypothesis,  AE is the same multiple of CF that AB is of CD; therefore EB is the same multiple of FD that AB is of CD. That is, the remainder EB will be the same multiple ofthe remainder FD that the whole AB is of the whole CD.",
+  "ai_proof_text": "5.5\n**Statement:** If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole.\n\n**Step 1.** Let magnitude AB be the same multiple of magnitude CD that the part AE subtracted is of the part CF subtracted. We must show that the remainder EB is the same multiple of the remainder FD that the whole AB is of the whole CD. [Setup from the hypothesis]\n\n**Step 2.** Since AB is the same multiple of CD that AE is of CF, let this common multiplicity be m. Then AB = m times CD, and AE = m times CF, meaning AB is made up of m magnitudes each equal to CD, and AE is made up of m magnitudes each equal to CF. [D5.2]\n\n**Step 3.** Decompose AB into m parts, each equal to CD: let these be CD_1, CD_2, ..., CD_m, so that AB = CD_1 + CD_2 + ... + CD_m where each CD_i equals CD. Likewise, decompose AE into m parts, each equal to CF: let these be CF_1, CF_2, ..., CF_m, so that AE = CF_1 + CF_2 + ... + CF_m where each CF_i equals CF. [D5.2]\n\n**Step 4.** Since CF is a part of CD (CF is subtracted from CD to leave remainder FD), we have CF less than CD, and FD = CD - CF. For each i from 1 to m, let FD_i = CD_i - CF_i. Since CD_i = CD and CF_i = CF for each i, each remainder FD_i = CD - CF = FD. [CN3]\n\n**Step 5.** Now the remainder EB = AB - AE = (CD_1 + CD_2 + ... + CD_m) - (CF_1 + CF_2 + ... + CF_m). Since we subtract equals from equals in corresponding pairs, EB = (CD_1 - CF_1) + (CD_2 - CF_2) + ... + (CD_m - CF_m) = FD_1 + FD_2 + ... + FD_m. [CN3]\n\n**Step 6.** Since each FD_i equals FD (from Step 4), the sum FD_1 + FD_2 + ... + FD_m consists of m magnitudes each equal to FD. Therefore EB is the same multiple of FD as AB is of CD, namely m times FD. [D5.2]\n\n**Step 7.** Therefore the remainder EB is the same multiple of the remainder FD that the whole AB is of the whole CD, which is what was to be proved.\n\n**USED:** CN3, D5.1, D5.2\n**Human refs (from References field):** 5.1\n**Jaccard:** 0.000 — AI adds ['CN3', 'D5.1', 'D5.2']; Human adds ['5.1']",
+  "ai_used": [
+    "CN3",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "5.1"
+  ],
+  "ai_only": [
+    "CN3",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_only": [
+    "5.1"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let magnitude AB be the same multiple of magnitude CD that the part AE subtracted is of the part CF subtracted. We must show that the remainder EB is the same multiple of the remainder FD "
+}

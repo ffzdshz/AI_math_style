@@ -1,0 +1,45 @@
+{
+  "proposition": "6.6",
+  "book": 6,
+  "statement": "If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.",
+  "heath_proof": "Let ABC, DEF be two triangles having one angle BAC equal to one angle EDF and the sides about the equal angles proportional, so that, as BA is to AC, so is ED to DF; I say that the triangle ABC is equiangular with the triangle DEF, and will have the angle ABC equal to the angle DEF, and the angle ACB to the angle DFE. For on the straight line DF, and at the points D, F on it, let there be constructed the angle FDG equal to either of the angles BAC, EDF, and the angle DFG equal to the angle ACB; [I. 23] therefore the remaining angle at B is equal to the remaining angle at G. [I. 32]  Therefore the triangle ABC is equiangular with the triangle DGF. Therefore, proportionally, as BA is to AC, so is GD to DF. [VI. 4] But, by hypothesis, as BA is to AC, so also is ED to DF; therefore also, as ED is to DF, so is GD to DF. [V. 11] Therefore ED is equal to DG; [V. 9] and DF is common; therefore the two sides ED, DF are equal to the two sides GD, DF; and the angle EDF is equal to the angle GDF; therefore the base EF is equal to the base GF, and the triangle DEF is equal to the triangle DGF, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend. [I. 4] Therefore the angle DFG is equal to the angle DFE, and the angle DGF to the angle DEF. But the angle DFG is equal to the angle ACB; therefore the angle ACB is also equal to the angle DFE. And, by hypothesis, the angle BAC is also equal to the angle EDF; therefore the remaining angle at B is also equal to the remaining angle at E; [I. 32] therefore the triangle ABC is equiangular with the triangle DEF.",
+  "ai_proof_text": "6.6\n**Statement:** If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.\n\n**Step 1.** Let ABC and DEF be triangles such that ∠BAC = ∠EDF and AB:AC = DE:DF, with AB corresponding to DE and AC to DF. These are the given hypotheses.\n\n**Step 2.** At E construct a ray on the same side of DE as F, making with ED an angle equal to ∠ABC [1.23]. The sum ∠BAC + ∠ABC is less than two right angles [1.17]. Since ∠EDF = ∠BAC, the constructed ray and the ray DF therefore meet on that side of DE [P5], producing the straight lines as necessary [P2]. Call their intersection G. Thus ∠DEG = ∠ABC, and G lies on the ray DF.\n\n**Step 3.** Since DG and DF have the same direction, ∠EDG = ∠EDF [CN4], and hence ∠EDG = ∠BAC [CN1]. Together with ∠DEG = ∠ABC, this gives ∠DGE = ∠ACB: the angles of each triangle sum to two right angles, and subtracting the equal sums of the first two angles leaves equal third angles [1.32, CN2, CN3]. Thus triangles ABC and DEG are equiangular.\n\n**Step 4.** Path choice: apply 6.4 directly to these equiangular triangles, obtaining AB:AC = DE:DG [6.4]. But AB:AC = DE:DF by hypothesis. Therefore DE:DG = DE:DF, since ratios equal to the same ratio are equal to one another [5.11].\n\n**Step 5.** Since DE has the same ratio to DG and DF, the latter magnitudes are equal: DG = DF [5.9]. Both G and F lie on the same ray from D. If they were distinct, one of DG and DF would be a proper part of the other and therefore smaller, contrary to their equality [CN5]. Hence G and F coincide.\n\n**Step 6.** Consequently, the angle equalities established for DEG give ∠ABC = ∠DEF and ∠ACB = ∠DFE [CN4, CN1]. Together with the given equality ∠BAC = ∠EDF, these show that ABC and DEF are equiangular. The equal angles at C and F are opposite the corresponding sides AB and DE; those at B and E are opposite AC and DF; and those at A and D are opposite BC and EF. Thus the angles subtended by corresponding sides are equal, as required.\n\n**USED:** 1.17, 1.23, 1.32, 5.11, 5.9, 6.4, CN1, CN2, CN3, CN4, CN5, P2, P5\n**Human refs (from References field):** 1.23, 1.32, 1.4, 5.11, 5.9, 6.4\n**Jaccard:** 0.357 — AI adds ['1.17', 'CN1', 'CN2', 'CN3', 'CN4', 'CN5', 'P2', 'P5']; Human adds ['1.4']",
+  "ai_used": [
+    "1.17",
+    "1.23",
+    "1.32",
+    "5.11",
+    "5.9",
+    "6.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "P2",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.23",
+    "1.32",
+    "1.4",
+    "5.11",
+    "5.9",
+    "6.4"
+  ],
+  "ai_only": [
+    "1.17",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN4",
+    "CN5",
+    "P2",
+    "P5"
+  ],
+  "heath_only": [
+    "1.4"
+  ],
+  "jaccard": 0.357,
+  "proof_summary": "**Step 1.** Let ABC and DEF be triangles such that ∠BAC = ∠EDF and AB:AC = DE:DF, with AB corresponding to DE and AC to DF. These are the given hypotheses.  **Step 2.** At E construct a ray on the sam"
+}

@@ -1,0 +1,26 @@
+{
+  "proposition": "6.30",
+  "run": "Fable",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Point C lies on segment AB between A and B, constructed by 2.11 so that rect(AB, BC) = sq(AC)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AC is a part of AB, so AB > AC (C is interior to AB, not at an endpoint)",
+      "type": "magnitude_from_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AC > CB, so C is closer to B than to A (AC is the greater segment)",
+      "type": "segment_ordering"
+    }
+  ],
+  "configuration_map": "Single line segment AB with one interior point C. C divides AB into two segments: AC (from A to C) and CB (from C to B). No auxiliary constructions, no triangles, no circles, no angles. The entire configuration is collinear. After Step 2, all reasoning is algebraic: 6.17 converts rect(AB,BC)=sq(AC) into the proportion AB:AC=AC:CB, 5.14 deduces AC>CB from AB>AC, and CN5 establishes AB>AC from the part-whole relationship. No spatial claims beyond the initial collinear placement of C on AB.",
+  "pass_reason": "The proof makes only trivial spatial claims (C lies on segment AB) and proceeds entirely through algebraic/proportional reasoning (2.11 for construction, 6.17 for proportion, 5.14 for magnitude comparison, CN5 for part-whole). No angle decompositions, no inside/outside claims, no ray orderings, no circle arguments. The single spatial configuration (a point on a line segment) is trivially self-consistent."
+}

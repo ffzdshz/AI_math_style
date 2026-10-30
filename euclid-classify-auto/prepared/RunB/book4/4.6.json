@@ -1,0 +1,34 @@
+{
+  "proposition": "4.6",
+  "book": 4,
+  "statement": "In a given circle to inscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to inscribe a square in the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and let AB, BC, CD, DA be joined. Then, since BE is equal to ED, for E is the centre, and EA is common and at right angles, therefore the base AB is equal to the base AD. [I. 4] For the same reason each of the straight lines BC, CD is also equal to each of the straight lines AB, AD; therefore the quadrilateral ABCD is equilateral. I say next that it is also right-angled. For, since the straight line BD is a diameter of the circle ABCD, therefore BAD is a semicircle; therefore the angle BAD is right. [III. 31]  For the same reason each of the angles ABC, BCD, CDA is also right; therefore the quadrilateral ABCD is right-angled. But it was also proved equilateral; therefore it is a square; [I. Def. 22] and it has been inscribed in the circle ABCD. Therefore in the given circle the square ABCD has been inscribed.",
+  "ai_proof_text": "4.6\n**Statement:** In a given circle to inscribe a square.\n\n**Step 1.** Let ABCD be the given circle. Find its center E [3.1].\n\n**Step 2.** Draw the diameter BD through E, and draw the diameter AC through E at right angles to BD [1.11]. Join AB, BC, CD, and DA [P1].\n\n**Step 3.** Since BE, EA, and ED are all radii of circle ABCD, they are equal to one another [D1.15]. The angle BEA is a right angle by construction. Similarly, the angle AED is a right angle, and because the angles BEA and AED are both right angles, the vertically opposite angles DEC and CEB are also right angles [1.15]. Thus all four angles at E are right angles.\n\n**Step 4.** In triangles BEA and DEA, BE equals DE (both radii), EA is common, and angle BEA equals angle DEA (both right angles). Therefore triangle BEA is congruent to triangle DEA, and so BA equals DA [1.4].\n\n**Step 5.** In triangles BEA and BEC, EA equals EC (both radii), BE is common, and angle BEA equals angle BEC (both right angles). Therefore triangle BEA is congruent to triangle BEC, and so BA equals BC [1.4].\n\n**Step 6.** In triangles DEC and AED, DE equals AE (both radii), EC is common in the first and ED is common in the second — rather, in triangles DEC and BEC, EC is common, DE equals BE (both radii), and angle DEC equals angle BEC (both right angles). Therefore triangle DEC is congruent to triangle BEC, and so DC equals BC [1.4].\n\n**Step 7.** From Steps 4, 5, and 6, BA equals DA equals BC equals DC. Therefore the quadrilateral ABCD is equilateral.\n\n**Step 8.** Since AC is a diameter of circle ABCD, the semicircle ABC contains the angle ABC. By 3.31, the angle in a semicircle is a right angle, so angle ABC is a right angle [3.31].\n\n**Step 9.** Similarly, since BD is a diameter, the angle BAD is an angle in the semicircle BAD, so angle BAD is a right angle [3.31]. Likewise, angle BCD is an angle in the semicircle BCD (on diameter BD), so angle BCD is a right angle [3.31]. And angle ADC is an angle in the semicircle ADC (on diameter AC), so angle ADC is a right angle [3.31].\n\n**Step 10.** Since all four angles of quadrilateral ABCD are right angles, it is right-angled. Since it is also equilateral, ABCD is a square [D1.22].\n\n**Step 11.** Since the vertices A, B, C, D all lie on the circumference of circle ABCD, the square ABCD is inscribed in the circle [D4.3].\n\n**Step 12.** Therefore, in the given circle, a square has been inscribed, which is what was required.\n\n**USED:** 1.11, 1.15, 1.4, 3.1, 3.31, D1.15, D1.22, D4.3, P1\n**Human refs (from References field):** 1.4, 3.31, D1.22\n**Jaccard:** 0.333 — AI adds ['1.11', '1.15', '3.1', 'D1.15', 'D4.3', 'P1']",
+  "ai_used": [
+    "1.11",
+    "1.15",
+    "1.4",
+    "3.1",
+    "3.31",
+    "D1.15",
+    "D1.22",
+    "D4.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.31",
+    "D1.22"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.15",
+    "3.1",
+    "D1.15",
+    "D4.3",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let ABCD be the given circle. Find its center E [3.1].  **Step 2.** Draw the diameter BD through E, and draw the diameter AC through E at right angles to BD [1.11]. Join AB, BC, CD, and DA"
+}

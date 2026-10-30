@@ -1,0 +1,47 @@
+{
+  "proposition": "4.12",
+  "book": 4,
+  "statement": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+  "heath_proof": "Let ABCDE be the given circle; thus it is required to circumscribe an equilateral and equiangular pentagon about the circle ABCDE. Let A, B, C, D, E be conceived to be the angular points of the inscribed pentagon, so that the circumferences AB, BC, CD, DE, EA are equal; [IV. 11] through A, B, C, D, E let GH, HK, KL, LM, MG be drawn touching the circle; [III. 16] let the centre F of the circle ABCDE be taken [III. 1], and let FB, FK, FC, FL, FD be joined. Then, since the straight line KL touches the circle ABCDE at C, and FC has been joined from the centre F to the point of contact at C, therefore FC is perpendicular to KL; [III. 18] therefore each of the angles at C is right. For the same reason the angles at the points B, D are also right. And, since the angle FCK is right, therefore the square on FK is equal to the squares on FC, CK. For the same reason [I. 47] the square on FK is also equal to the squares on FB, BK; so that the squares on FC, CK are equal to the squares on FB, BK, of which the square on FC is equal to the square on FB; therefore the square on CK which remains is equal to the square on BK. Therefore BK is equal to CK. And, since FB is equal to FC, and FK common, the two sides BF, FK are equal to the two sides CF, FK; and the base BK equal to the base CK; therefore the angle BFK is equal to the angle KFC, [I. 8]and the angle BKF to the angle FKC. Therefore the angle BFC is double of the angle KFC, and the angle BKC of the angle FKC. For the same reason the angle CFD is also double of the angle CFL, and the angle DLC of the angle FLC. Now, since the circumference BC is equal to CD, the angle BFC is also equal to the angle CFD. [III. 27] And the angle BFC is double of the angle KFC, and the angle DFC of the angle LFC; therefore the angle KFC is also equal to the angle LFC. But the angle FCK is also equal to the angle FCL; therefore FKC, FLC are two triangles having two angles equal to two angles and one side equal to one side, namely FC which is common to them; therefore they will also have the remaining sides equal to the remaining sides, and the remaining angle to the remaining angle; [I. 26] therefore the straight line KC is equal to CL, and the angle FKC to the angle FLC. And, since KC is equal to CL, therefore KL is double of KC. For the same reason it can be proved that HK is also double of BK.  And BK is equal to KC; therefore HK is also equal to KL. Similarly each of the straight lines HG, GM, ML can also be proved equal to each of the straight lines HK, KL; therefore the pentagon GHKLM is equilateral. I say next that it is also equiangular. For, since the angle FKC is equal to the angle FLC, and the angle HKL was proved double of the angle FKC, and the angle KLM double of the angle FLC, therefore the angle HKL is also equal to the angle KLM. Similarly each of the angles KHG, HGM, GML can also be proved equal to each of the angles HKL, KLM; therefore the five angles GHK, HKL, KLM, LMG, MGH are equal to one another. Therefore the pentagon GHKLM is equiangular. And it was also proved equilateral; and it has been circumscribed about the circle ABCDE.",
+  "ai_proof_text": "4.12\n**Statement:** About a given circle to circumscribe an equilateral and equiangular pentagon.\n\n**Step 1.** Let the given circle have center O. By Proposition 4.11, inscribe an equilateral and equiangular pentagon ABCDE in the circle, so that AB = BC = CD = DE = EA and all interior angles of the pentagon are equal.\n\n**Step 2.** By Definition D1.15, since A, B, C, D, E lie on the circle, OA = OB = OC = OD = OE (all are radii of the given circle).\n\n**Step 3.** At each of the five vertices A, B, C, D, E, draw the straight line tangent to the circle at that point (by Proposition 3.16, the line drawn perpendicular to the radius at a point on the circle does not cut the circle, i.e., is tangent to it). By Proposition 3.18, each tangent is perpendicular to the radius drawn to the point of tangency. Thus OA is perpendicular to the tangent at A, OB is perpendicular to the tangent at B, and so on.\n\n**Step 4.** Let the tangent at A and the tangent at B meet at point G; the tangent at B and the tangent at C meet at H; the tangent at C and the tangent at D meet at K; the tangent at D and the tangent at E meet at L; and the tangent at E and the tangent at A meet at M. Then GHKLM is a pentagon circumscribed about the circle, since each of its five sides (being a segment of a tangent line) touches the circle (Definition D4.4). By Postulate P1, join OG, OH, OK, OL, OM.\n\n**Step 5.** Since the five chords AB, BC, CD, DE, EA of the inscribed pentagon are all equal (Step 1), by Proposition 3.28 the arcs AB, BC, CD, DE, EA are all equal. Then by Proposition 3.27, the central angles subtended by these equal arcs are equal: angle AOB = angle BOC = angle COD = angle DOE = angle EOA.\n\n**Step 6.** Consider the right triangle OAG (right angle at A, since OA is perpendicular to the tangent at A by Step 3) and the right triangle OBG (right angle at B, since OB is perpendicular to the tangent at B). We have OA = OB (radii, Step 2) and OG is common. By Proposition 1.47, OG^2 = OA^2 + AG^2 and OG^2 = OB^2 + BG^2. Since OA = OB, it follows that AG^2 = BG^2, and therefore AG = BG. Moreover, the right triangles OAG and OBG share hypotenuse OG with equal legs OA = OB and equal legs AG = BG, so by Proposition 1.8 (SSS), these triangles are congruent, giving angle AOG = angle BOG. Therefore OG bisects angle AOB.\n\n**Step 7.** By the same reasoning applied at each external point: from H, the tangent segments HB = HC and angle BOH = angle COH; from K, KC = KD and angle COK = angle DOK; from L, LD = LE and angle DOL = angle EOL; and from M, ME = MA and angle EOM = angle AOM.\n\n**Step 8.** Since angle AOB = angle BOC (Step 5), and OG bisects angle AOB while OH bisects angle BOC (Steps 6 and 7), we have angle BOG = (1/2) angle AOB = (1/2) angle BOC = angle BOH. Now consider the right triangles OBG and OBH: they share leg OB, have equal right angles at B (by Step 3), and have equal angles BOG = BOH at vertex O. By Proposition 1.26 (AAS), triangle OBG is congruent to triangle OBH. Therefore BG = BH.\n\n**Step 9.** Since G, B, H all lie on the tangent line at B (G and H are defined as the intersections of adjacent tangents with the tangent at B), and B lies between G and H, we have GH = GB + BH (Common Notion CN2). Similarly, HK = HC + CK, KL = KD + DL, LM = LE + EM, and MG = MA + AG.\n\n**Step 10.** From Step 8, BG = BH. By the same argument applied at each vertex: at C, using angle BOC = angle COD and the bisection by OH and OK, we obtain CH = CK. At D, DK = DL. At E, EL = EM. At A, AM = AG.\n\n**Step 11.** From Step 7, HB = HC (tangent segments from H). Combined with Step 8 (BG = BH) and Step 10 (CH = CK), we have BG = BH = HC = CK (since BG = BH and BH = HC by tangent segments, and HC = CK by Step 10). By the same chain of equalities: CK = DK, DK = DL, DL = EL, EL = EM, EM = AM, AM = AG, and AG = BG (by CN1, transitivity).\n\n**Step 12.** Therefore GH = GB + BH = BH + HC = HK (by Step 9 and the equalities from Step 11). Similarly, HK = HC + CK = CK + KD = KL, and KL = KD + DL = DL + LE = LM, and LM = LE + EM = EM + MA = MG. Hence GH = HK = KL = LM = MG, and the pentagon GHKLM is equilateral.\n\n**Step 13.** It remains to show the pentagon is equiangular. Consider angle GHK at vertex H. In right triangle OBH, angle OBH = 90 degrees and angle BOH = (1/2) angle BOC (Step 8), so angle BHO = 90 - (1/2) angle BOC (by Proposition 1.32, the angle sum of a triangle equals two right angles). Similarly, in right triangle OCH, angle OCH = 90 degrees and angle COH = (1/2) angle BOC, so angle CHO = 90 - (1/2) angle BOC.\n\n**Step 14.** Therefore angle GHK = angle BHC = angle BHO + angle CHO = [90 - (1/2) angle BOC] + [90 - (1/2) angle BOC] = 180 - angle BOC (by CN2).\n\n**Step 15.** By the same reasoning at each vertex: angle HKL = 180 - angle COD, angle KLM = 180 - angle DOE, angle LMG = 180 - angle EOA, and angle MGH = 180 - angle AOB. Since angle AOB = angle BOC = angle COD = angle DOE = angle EOA (Step 5), all five angles of pentagon GHKLM are equal.\n\n**Step 16.** Therefore GHKLM is an equilateral and equiangular pentagon circumscribed about the given circle, which is what was required.\n\n**USED:** 1.26, 1.32, 1.47, 1.8, 3.16, 3.18, 3.27, 3.28, 4.11, CN1, CN2, D1.15, D4.4, P1\n**Human refs (from References field):** 1.26, 1.47, 1.8, 3.1, 3.16, 3.18, 3.27, 4.11\n**Jaccard:** 0.467 — AI adds ['1.32', '3.28', 'CN1', 'CN2', 'D1.15', 'D4.4', 'P1']; Human adds ['3.1']",
+  "ai_used": [
+    "1.26",
+    "1.32",
+    "1.47",
+    "1.8",
+    "3.16",
+    "3.18",
+    "3.27",
+    "3.28",
+    "4.11",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D4.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.26",
+    "1.47",
+    "1.8",
+    "3.1",
+    "3.16",
+    "3.18",
+    "3.27",
+    "4.11"
+  ],
+  "ai_only": [
+    "1.32",
+    "3.28",
+    "CN1",
+    "CN2",
+    "D1.15",
+    "D4.4",
+    "P1"
+  ],
+  "heath_only": [
+    "3.1"
+  ],
+  "jaccard": 0.467,
+  "proof_summary": "**Step 1.** Let the given circle have center O. By Proposition 4.11, inscribe an equilateral and equiangular pentagon ABCDE in the circle, so that AB = BC = CD = DE = EA and all interior angles of the"
+}

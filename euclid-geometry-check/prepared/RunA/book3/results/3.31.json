@@ -1,0 +1,71 @@
+{
+  "proposition": "3.31",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a circle with diameter BC and centre F; F lies on segment BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A is on the circle, on the semicircle determined by diameter BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "BD is a chord not passing through the centre; A is on the major arc of BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E is on the minor arc of BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle BAC = angle BAF + angle FAC; ray AF lies between rays AB and AC from vertex A",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle ABC = angle ABF and angle BCA = angle ACF because F lies on segment BC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "B, F, C are collinear with F between B and C; angles BFA and AFC are supplementary (sum to 2R)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Central angle BFD = 2 times inscribed angle BAD, both subtending the minor arc BD not containing A",
+      "type": "circle_arc"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Minor arc BD is less than a semicircle, so central angle BFD < 2R and angle BAD < R",
+      "type": "circle_arc"
+    },
+    {
+      "step": "Step 14",
+      "claim": "ABDE is a cyclic quadrilateral with vertices in order B, A, D, E around the circle; opposite angles BAD and BED sum to 2R",
+      "type": "circle_arc"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Angle of the greater segment (mixed angle between major arc and chord BD at B) exceeds the angle of the semicircle because the arc is larger",
+      "type": "circle_arc"
+    },
+    {
+      "step": "Step 19",
+      "claim": "Angle of the less segment is contained within the angle of the semicircle and is therefore less than a right angle",
+      "type": "circle_arc"
+    }
+  ],
+  "configuration_map": "Circle ABCD with center F and diameter BC. F is the midpoint of BC, lying on segment BC between B and C. Point A is on the circle, positioned on the semicircle on one side of diameter BC, and also on the major arc of chord BD. Point D is on the circle such that BD is a chord not passing through the center, with A on the major arc side. Point E is on the minor arc of BD, on the opposite side of chord BD from A. From vertex A, ray AF points toward F on segment BC, falling strictly between rays AB and AC (since F is between B and C on the diameter). Triangles ABF and AFC are isosceles (radii FB=FA and FC=FA). The cyclic quadrilateral BADE has vertices in order around the circle, with A and E on opposite arcs of chord BD.",
+  "pass_reason": "All spatial claims are mutually consistent. The key angle decomposition (angle BAC = angle BAF + angle FAC) is valid because F lies on segment BC between B and C, placing ray AF between rays AB and AC from vertex A. The supplementary angle relation at F (angles BFA + AFC = 2R) is consistent with F being on line BC. The isosceles triangle properties, inscribed angle theorem (3.20), and cyclic quadrilateral theorem (3.22) are all applied with configurations matching the established positions of points. The mixed-angle arguments in Steps 16-19 are somewhat rambling in exposition but contain no contradictory spatial claims."
+}

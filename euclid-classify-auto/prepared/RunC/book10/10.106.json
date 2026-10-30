@@ -1,0 +1,40 @@
+{
+  "proposition": "10.106",
+  "book": 10,
+  "statement": "A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.",
+  "heath_proof": "Let AB be a straight line which produces with a rational area a medial whole, and CD commensurable with AB; I say that CD is also a straight line which produces with a rational area a medial whole. For let BE be the annex to AB; therefore AE, EB are straight lines incommensurable in square which make the sum of the squares on AE, EB medial, but the rectangle contained by them rational. [X. 77] Let the same construction be made. Then we can prove, in manner similar to the foregoing, that CF, FD are in the same ratio as AE, EB, the sum of the squares on AE, EB is commensurable with the sum of the squares on CF, FD, and the rectangle AE, EB with the rectangle CF, FD; so that CF, FD are also straight lines incommensurable in square which make the sum of the squares on CF, FD medial, but the rectangle contained by them rational. Therefore CD is a straight line which produces with a rational area a medial whole. [X. 77]",
+  "ai_proof_text": "10.106\n**Statement:** A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.\n\n**Step 1.** Let AB be a straight line which produces with a rational area a medial whole. Then by the definition in 10.77, AB has been divided at some point G such that AB = AG - GB, where AG and GB are incommensurable in square, the sum of the squares on AG and GB is medial, and twice the rectangle contained by AG and GB is rational. By 10.83, this decomposition is unique: only one such straight line GB can be annexed to AG to form AB with these properties.\n\n**Step 2.** Let CD be any straight line commensurable in length with AB. We must show that CD is also a straight line which produces with a rational area a medial whole.\n\n**Step 3.** Since CD is commensurable in length with AB, the ratio CD:AB is as a number to a number (by 10.5). Let CE and ED be taken on CD such that CD = CE - ED, with CE:AG = ED:GB = CD:AB. This is possible by dividing CD in the same ratio as AG to GB.\n\n**Step 4.** Since CD is commensurable in length with AB, and CE:AG = CD:AB, it follows that CE is commensurable in length with AG (by 10.6, since the ratio is as a number to a number). Similarly, ED is commensurable in length with GB.\n\n**Step 5.** Since AG and GB are incommensurable in square (by the hypothesis from 10.77), and CE is commensurable in length with AG while ED is commensurable in length with GB, it follows by 10.13 that CE and ED are incommensurable in square. For CE is commensurable with AG, but AG is incommensurable in square with GB, and GB is commensurable with ED; therefore CE is incommensurable in square with ED.\n\n**Step 6.** Since CE is commensurable in length with AG, the square on CE is commensurable with the square on AG (by 10.11 applied with 6.22, or directly since commensurable in length implies commensurable in square by D10.1.2 and 10.5/10.6). Similarly, the square on ED is commensurable with the square on GB.\n\n**Step 7.** Since the square on CE is commensurable with the square on AG, and the square on ED is commensurable with the square on GB, the sum of the squares on CE and ED is commensurable with the sum of the squares on AG and GB (by 10.15, since adding commensurable magnitudes preserves commensurability). Now the sum of the squares on AG and GB is medial (by hypothesis from 10.77). Therefore the sum of the squares on CE and ED is also medial (by 10.23, since a magnitude commensurable with a medial area is medial).\n\n**Step 8.** Since CE:AG = ED:GB, the rectangle contained by CE and ED is to the rectangle contained by AG and GB as the square on CE is to the square on AG (by 6.16, since CE:AG = ED:GB implies rect(CE,ED):rect(AG,GB) = CE*ED : AG*GB, and by the equal ratios). More precisely, since CE:AG = ED:GB, we have rect(CE,ED):rect(AG,GB) = CE:AG composed with ED:GB. But CE:AG = ED:GB = CD:AB, so rect(CE,ED):rect(AG,GB) = the duplicate ratio of CD:AB, which is as a square number to a square number (since CD:AB is as a number to a number by 10.5). Therefore rect(CE,ED) is commensurable with rect(AG,GB) (by 10.6).\n\n**Step 9.** Since twice the rectangle contained by CE and ED is commensurable with twice the rectangle contained by AG and GB, and twice the rectangle contained by AG and GB is rational (by hypothesis from 10.77), twice the rectangle contained by CE and ED is also rational (by 10.12, since a magnitude commensurable with a rational magnitude is rational, using D10.1.4).\n\n**Step 10.** We have established that CE and ED are incommensurable in square (Step 5), the sum of the squares on CE and ED is medial (Step 7), and twice the rectangle contained by CE and ED is rational (Step 9). These are precisely the conditions specified in 10.77.\n\n**Step 11.** Therefore CD = CE - ED is a straight line which produces with a rational area a medial whole, by definition (10.77). Hence a straight line commensurable with that which produces with a rational area a medial whole is itself a straight line which produces with a rational area a medial whole. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.23, 10.5, 10.6, 10.77, 10.83, 6.16, D10.1.2, D10.1.4\n**Human refs (from References field):** 10.77\n**Jaccard:** 0.083 — AI adds ['10.11', '10.12', '10.13', '10.15', '10.23', '10.5', '10.6', '10.83', '6.16', 'D10.1.2', 'D10.1.4']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.23",
+    "10.5",
+    "10.6",
+    "10.77",
+    "10.83",
+    "6.16",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.77"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.23",
+    "10.5",
+    "10.6",
+    "10.83",
+    "6.16",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.083,
+  "proof_summary": "**Step 1.** Let AB be a straight line which produces with a rational area a medial whole. Then by the definition in 10.77, AB has been divided at some point G such that AB = AG - GB, where AG and GB a"
+}

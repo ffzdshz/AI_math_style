@@ -1,0 +1,38 @@
+{
+  "proposition": "4.6",
+  "book": 4,
+  "statement": "In a given circle to inscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to inscribe a square in the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and let AB, BC, CD, DA be joined. Then, since BE is equal to ED, for E is the centre, and EA is common and at right angles, therefore the base AB is equal to the base AD. [I. 4] For the same reason each of the straight lines BC, CD is also equal to each of the straight lines AB, AD; therefore the quadrilateral ABCD is equilateral. I say next that it is also right-angled. For, since the straight line BD is a diameter of the circle ABCD, therefore BAD is a semicircle; therefore the angle BAD is right. [III. 31]  For the same reason each of the angles ABC, BCD, CDA is also right; therefore the quadrilateral ABCD is right-angled. But it was also proved equilateral; therefore it is a square; [I. Def. 22] and it has been inscribed in the circle ABCD. Therefore in the given circle the square ABCD has been inscribed.",
+  "ai_proof_text": "4.6\n**Statement:** In a given circle to inscribe a square.\n\n**Step 1.** Let ABCD be the given circle with centre E. Draw a diameter AC through E [D1.17].\n\n**Step 2.** From E, construct the straight line BD at right angles to AC [1.11], and produce it in both directions to meet the circumference of the circle at B and D [P2]. Then BD is also a diameter of the circle, since it passes through the centre E [D1.17].\n\n**Step 3.** Join AB, BC, CD, and DA [P1].\n\n**Step 4.** Since AC is a diameter, the semicircle ABC contains the angle ABC. By 3.31, the angle ABC, being an angle in a semicircle, is a right angle. Similarly, since AC is a diameter, the angle ADC is an angle in a semicircle and is therefore a right angle [3.31]. Since BD is a diameter, the angle BAD is an angle in a semicircle and is therefore a right angle [3.31]. Likewise, the angle BCD is an angle in a semicircle and is therefore a right angle [3.31].\n\n**Step 5.** Thus the quadrilateral ABCD has all four angles right angles.\n\n**Step 6.** Now, since BE and AE are both radii of the circle ABCD, we have BE = AE [D1.15]. Similarly, AE = EC, EC = BE, BE = ED, and ED = AE, since all are radii of the same circle [D1.15].\n\n**Step 7.** Consider triangle AEB and triangle AED. We have AE is common, BE = ED (both radii) [D1.15], and angle AEB is a right angle and angle AED is a right angle (since BD was constructed at right angles to AC) [1.11]. Since angle AEB equals angle AED [P4], by 1.4 (Side-Angle-Side), triangle AEB is congruent to triangle AED. Therefore AB = AD [1.4].\n\n**Step 8.** Consider triangle AEB and triangle BEC. We have BE is common, AE = EC (both radii) [D1.15], and angle AEB equals angle BEC, both being right angles [P4]. By 1.4, triangle AEB is congruent to triangle BEC. Therefore AB = BC [1.4].\n\n**Step 9.** Consider triangle BEC and triangle DEC. We have EC is common, BE = ED (both radii) [D1.15], and angle BEC equals angle DEC, both being right angles [P4]. By 1.4, triangle BEC is congruent to triangle DEC. Therefore BC = CD [1.4].\n\n**Step 10.** From Steps 7, 8, and 9, AB = AD, AB = BC, and BC = CD. Therefore AB = BC = CD = DA [CN1]. The quadrilateral ABCD is equilateral.\n\n**Step 11.** Since ABCD is both equilateral (Step 10) and right-angled (Step 5), it is a square [D1.22].\n\n**Step 12.** Each vertex A, B, C, D lies on the circumference of the circle ABCD. Therefore the square ABCD is inscribed in the given circle [D4.3].\n\nTherefore, in the given circle, a square has been inscribed, which is what was required to do. Q.E.F.\n\n**USED:** 1.11, 1.4, 3.31, CN1, D1.15, D1.17, D1.22, D4.3, P1, P2, P4\n**Human refs (from References field):** 1.4, 3.31, D1.22\n**Jaccard:** 0.273 — AI adds ['1.11', 'CN1', 'D1.15', 'D1.17', 'D4.3', 'P1', 'P2', 'P4']",
+  "ai_used": [
+    "1.11",
+    "1.4",
+    "3.31",
+    "CN1",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D4.3",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.31",
+    "D1.22"
+  ],
+  "ai_only": [
+    "1.11",
+    "CN1",
+    "D1.15",
+    "D1.17",
+    "D4.3",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let ABCD be the given circle with centre E. Draw a diameter AC through E [D1.17].  **Step 2.** From E, construct the straight line BD at right angles to AC [1.11], and produce it in both d"
+}

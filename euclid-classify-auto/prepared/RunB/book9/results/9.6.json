@@ -1,0 +1,13 @@
+{
+  "proposition": "9.6",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides this classification as G (granularity difference) via the proof-tree containment test. The AI proof reduces 9.6 to 9.5 by showing that B = A*A is cube (hypothesis), B*A = A^3 is cube (by D7.19), and then applying 9.5 (if a cube times a number gives a cube, that number is cube) to conclude A is cube. Heath's proof instead re-derives the internal machinery of 9.5 inline, establishing proportion chains (unit:A = A:B = B:C via D7.20), invoking 8.19 for mean proportionals between similar solid cubes, transferring via 8.8, and concluding via 8.23. All three substantive heath_only propositions (8.19, 8.8, 8.23) appear inside Heath's own proof of 9.5, satisfying the containment test: the AI cites 9.5 as a single higher-level unit while Heath re-derives 9.5's internals. This is a citation-depth difference, not a backbone difference.",
+  "jaccard": 0.0,
+  "ai_citations": "9.5|D7.15|D7.18|D7.19",
+  "heath_citations": "8.19|8.23|8.8|D7.20",
+  "ai_only": "9.5|D7.15|D7.18|D7.19",
+  "heath_only": "8.19|8.23|8.8|D7.20",
+  "audit_record": ""
+}

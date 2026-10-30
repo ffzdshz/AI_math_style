@@ -1,0 +1,29 @@
+{
+  "proposition": "6.32",
+  "book": 6,
+  "statement": "If two triangles having two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining sides of the triangles will be in a straight line.",
+  "heath_proof": "Let ABC, DCE be two triangles having the two sides BA, AC proportional to the two sides DC, DE, so that, as AB is to AC, so is DC to DE, and AB parallel to DC, and AC to DE; I say that BC is in a straight line with CE. For, since AB is parallel to DC, and the straight line AC has fallen upon them, the alternate angles BAC, ACD are equal to one another. [I. 29] For the same reason the angle CDE is also equal to the angle ACD; so that the angle BAC is equal to the angle CDE. And, since ABC, DCE are two triangles having one angle, the angle at A, equal to one angle, the angle at D, and the sides about the equal angles proportional, so that, as BA is to AC, so is CD to DE, therefore the triangle ABC is equiangular with the triangle DCE; [VI. 6]therefore the angle ABC is equal to the angle DCE. But the angle ACD was also proved equal to the angle BAC; therefore the whole angle ACE is equal to the two angles ABC, BAC. Let the angle ACB be added to each; therefore the angles ACE, ACB are equal to the angles BAC, ACB, CBA. But the angles BAC, ABC, ACB are equal to two right angles; [I. 32] therefore the angles ACE, ACB are also equal to two right angles. Therefore with a straight line AC, and at the point C on it, the two straight lines BC, CE not lying on the same side make the adjacent angles ACE, ACB equal to two right angles; therefore BC is in a straight line with CE. [I. 14]",
+  "ai_proof_text": "6.32\n**Statement:** If two triangles having two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining sides of the triangles will be in a straight line.\n\n**Step 1.** Let ABC and DCE be two triangles placed together at angle C, such that BC/CE = AB/DE (two sides proportional to two sides), with BC parallel to CE (so that B, C, E are collinear) and AB parallel to DE (corresponding sides parallel), and with A and D on opposite sides of line BE.\n\n**Step 2.** Since AB is parallel to DE, and line BE is a transversal cutting these parallel lines, the alternate interior angles are equal: angle ABC = angle CED. [1.29]\n\n**Step 3.** In triangles ABC and DCE, we have angle ABC = angle CED (Step 2), and the sides about these equal angles are proportional: BA/ED = BC/EC (given). Therefore, by Proposition 6.6, triangles ABC and DCE are equiangular. In particular, the angles at C correspond: angle BCA = angle DCE. [6.6]\n\n**Step 4.** Since B, C, E are collinear and the straight line CA meets line BE at C, the angles on one side of CA at point C are supplementary: angle BCA + angle ACE equals two right angles. [1.13]\n\n**Step 5.** Since angle BCA = angle DCE (Step 3), we may substitute: angle DCE + angle ACE equals two right angles. [CN1]\n\n**Step 6.** At point C on line BE, the two straight lines CA and CD lie on opposite sides of BE, and the adjacent angles they make with BE satisfy angle ACE + angle DCE = two right angles (Step 5). Therefore, by Proposition 1.14, CA and CD are in a straight line. [1.14]\n\nTherefore, the remaining sides CA and CD of the two triangles are in a straight line, which is what was to be proved.\n\n**USED:** 1.13, 1.14, 1.29, 6.6, CN1\n**Human refs (from References field):** 1.14, 1.29, 1.32, 6.6\n**Jaccard:** 0.500 — AI adds ['1.13', 'CN1']; Human adds ['1.32']",
+  "ai_used": [
+    "1.13",
+    "1.14",
+    "1.29",
+    "6.6",
+    "CN1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.29",
+    "1.32",
+    "6.6"
+  ],
+  "ai_only": [
+    "1.13",
+    "CN1"
+  ],
+  "heath_only": [
+    "1.32"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let ABC and DCE be two triangles placed together at angle C, such that BC/CE = AB/DE (two sides proportional to two sides), with BC parallel to CE (so that B, C, E are collinear) and AB pa"
+}

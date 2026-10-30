@@ -1,0 +1,13 @@
+{
+  "proposition": "6.19",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: constructing a third proportional BG to BC and EF via 6.11, establishing that AB:DE = EF:BG via transitivity (5.11), proving triangle ABG equals triangle DEF via reciprocally proportional sides about equal angles (6.15), using 6.1 to relate triangle ABC : triangle ABG to the base ratio BC:BG, and concluding that triangle ABC has to triangle DEF the duplicate ratio of BC:EF via D5.9. The citation differences are purely granularity: the AI cites 6.4 (equiangular triangles have proportional sides) to obtain AB:DE = BC:EF directly, whereas Heath derives this same proportion by applying 5.16 (alternation) to the given ratio AB:BC = DE:EF. The proof-tree containment test confirms that 5.16 appears inside Heath's proof of 6.4, so the AI is citing at a higher level while Heath re-derives the internals inline. The AI also explicitly cites 5.7 (equal magnitudes have the same ratio) for the substitution of equal triangles ABG and DEF, which Heath performs without explicit citation, and cites D6.1 (definition of similar figures) where Heath cites D5.11 (definition of corresponding magnitudes). These are all citation-depth differences with identical key intermediate conclusions.",
+  "jaccard": 0.5,
+  "ai_citations": "5.11|5.7|6.1|6.11|6.15|6.4|D5.9|D6.1",
+  "heath_citations": "5.11|5.16|6.1|6.11|6.15|D5.11|D5.9",
+  "ai_only": "5.7|6.4|D6.1",
+  "heath_only": "5.16|D5.11",
+  "audit_record": ""
+}

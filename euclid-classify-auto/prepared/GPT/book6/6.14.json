@@ -1,0 +1,37 @@
+{
+  "proposition": "6.14",
+  "book": 6,
+  "statement": "In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.",
+  "heath_proof": "Let AB, BC be equal and equiangular parallelograms having the angles at B equal, and let DB, BE be placed in a straight line; therefore FB, BG are also in a straight line. [I. 14] I say that, in AB, BC, the sides about the equal angles are reciprocally proportional, that is to say, that, as DB is to BE, so is GB to BF. For let the parallelogram FE be completed. Since, then, the parallelogram AB is equal to the parallelogram BC, and FE is another area, therefore, as AB is to FE, so is BC to FE. [V. 7] But, as AB is to FE, so is DB to BE, [VI. 1] and, as BC is to FE, so is GB to BF. [id.]therefore also, as DB is to BE, so is GB to BF. [V. 11] Therefore in the parallelograms AB, BC the sides about the equal angles are reciprocally proportional. Next, let GB be to BF as DB to BE; I say that the parallelogram AB is equal to the parallelogram BC. For since, as DB is to BE, so is GB to BF, while, as DB is to BE, so is the parallelogram AB to the parallelogram FE, [VI. 1] and, as GB is to BF, so is the parallelogram BC to the parallelogram FE, [VI. 1] therefore also, as AB is to FE, so is BC to FE; [V. 11] therefore the parallelogram AB is equal to the parallelogram BC. [V. 9]",
+  "ai_proof_text": "6.14\n**Statement:** In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.\n\n**Step 1.** Choose corresponding equal angles of the two parallelograms. Place their vertices together at O and their corresponding arms along the same two rays. Denote the parallelograms, in cyclic order, by OABC and ODEF, with A and D on one ray and C and F on the other. This placement preserves lengths and areas by coincidence (CN4). The required reciprocal proportion is OA:OD = OF:OC (D6.2).\n\n**Step 2.** Let the straight lines BC and DE, produced if necessary, meet at G (P2). This intersection exists: BC is parallel to OA, and DE is parallel to OC; if BC and DE were parallel, transitivity of parallelism would make OA and OC parallel (1.30), contrary to their meeting at O (D1.23). Now OD is parallel to CG, and OC is parallel to DG, so ODGC is an auxiliary parallelogram.\n\n**Step 3.** Write p, q, and r for the areas of OABC, ODEF, and ODGC respectively. **Path choice:** compare both given parallelograms with this single auxiliary parallelogram, using the same-height theorem 6.1. The parallelograms OABC and ODGC have bases OA and OD and lie between the same parallels OA and BC. Therefore\np:r = OA:OD. (6.1)\n\n**Step 4.** Taking OF and OC as bases, the parallelograms ODEF and ODGC lie between the same parallels OC and DE. Therefore\nq:r = OF:OC. (6.1)\n\n**Step 5.** First suppose that the given parallelograms are equal, so p = q. Equal magnitudes have the same ratio to the same magnitude; hence p:r = q:r (5.7). Combining this equality with Steps 3 and 4 gives\nOA:OD = OF:OC (5.11).\nThus the sides about the chosen equal angles are reciprocally proportional (D6.2).\n\n**Step 6.** Conversely, suppose that the sides about the corresponding equal angles are reciprocally proportional, so OA:OD = OF:OC (D6.2). Steps 3 and 4 then give p:r = q:r (5.11). Magnitudes having the same ratio to the same magnitude are equal, so p = q (5.9). Here 5.9 is the direct choice because the two area ratios have the common consequent r. Consequently the given parallelograms are equal. Both assertions are proved.\n\n**USED:** 1.30, 5.11, 5.7, 5.9, 6.1, CN4, D1.23, D6.2, P2\n**Human refs (from References field):** 1.14, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.400 — AI adds ['1.30', 'CN4', 'D1.23', 'D6.2', 'P2']; Human adds ['1.14']",
+  "ai_used": [
+    "1.30",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1",
+    "CN4",
+    "D1.23",
+    "D6.2",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.14",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.30",
+    "CN4",
+    "D1.23",
+    "D6.2",
+    "P2"
+  ],
+  "heath_only": [
+    "1.14"
+  ],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Choose corresponding equal angles of the two parallelograms. Place their vertices together at O and their corresponding arms along the same two rays. Denote the parallelograms, in cyclic o"
+}

@@ -1,0 +1,24 @@
+{
+  "proposition": "7.14",
+  "book": 7,
+  "statement": "If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.",
+  "heath_proof": "Let there be as many numbers as we please A, B, C, and others equal to them in multitude D, E, F, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F; I say that, ex aequali, as A is to C, so also is D to F.  For, since, as A is to B, so is D to E, therefore, alternately, as A is to D, so is B to E. [VII. 13] Again, since, as B is to C, so is E to F, therefore, alternately, as B is to E, so is C to F. [VII. 13]  But, as B is to E, so is A to D; therefore also, as A is to D, so is C to F. Therefore, alternately, as A is to C, so is D to F.",
+  "ai_proof_text": "7.14\n**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.\n\n**Step 1.** Let there be as many numbers as we please: A1, A2, ..., An, and others equal to them in multitude: B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2:A3 = B2:B3, and so on up to A(n-1):An = B(n-1):Bn. We must show that A1:An = B1:Bn (ex aequali), that is, that A1 is the same part, parts, or multiple of An as B1 is of Bn [D5.17, D7.20].\n\n**Step 2.** First consider the case of three numbers: let A, B, C and D, E, F be such that A:B = D:E and B:C = E:F. We must show A:C = D:F.\n\n**Step 3.** Since A:B = D:E, by alternation [7.13] we have A:D = B:E.\n\n**Step 4.** Since B:C = E:F, by alternation [7.13] we have B:E = C:F.\n\n**Step 5.** From Steps 3 and 4, A:D = B:E and B:E = C:F. Since A:D equals B:E, and B:E equals C:F, we have A:D = C:F [CN1].\n\n**Step 6.** Since A:D = C:F, by alternation [7.13] we have A:C = D:F. This establishes the result for the case of three numbers.\n\n**Step 7.** Now consider the general case. Suppose the result holds for any collection of (n-1) numbers taken pairwise in the same ratio. Given A1, A2, ..., An and B1, B2, ..., Bn with A1:A2 = B1:B2, A2:A3 = B2:B3, ..., A(n-1):An = B(n-1):Bn, consider the subsequences A1, A2, ..., A(n-1) and B1, B2, ..., B(n-1).\n\n**Step 8.** These (n-1) numbers taken two and two satisfy the same ratio conditions: A1:A2 = B1:B2, ..., A(n-2):A(n-1) = B(n-2):B(n-1). By the result for (n-1) numbers, A1:A(n-1) = B1:B(n-1).\n\n**Step 9.** We also have A(n-1):An = B(n-1):Bn (given). So now we have three numbers A1, A(n-1), An and three numbers B1, B(n-1), Bn with A1:A(n-1) = B1:B(n-1) and A(n-1):An = B(n-1):Bn.\n\n**Step 10.** By the result for three numbers established in Steps 2-6, we conclude A1:An = B1:Bn.\n\n**Step 11.** Therefore, if there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali. Q.E.D.\n\n**USED:** 7.13, CN1, D5.17, D7.20\n**Human refs (from References field):** 7.13\n**Jaccard:** 0.250 — AI adds ['CN1', 'D5.17', 'D7.20']",
+  "ai_used": [
+    "7.13",
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.13"
+  ],
+  "ai_only": [
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please: A1, A2, ..., An, and others equal to them in multitude: B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2"
+}

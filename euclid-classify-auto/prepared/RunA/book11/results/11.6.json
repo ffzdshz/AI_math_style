@@ -1,0 +1,13 @@
+{
+  "proposition": "11.6",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs establish the same key intermediate conclusions: (1) AD = BE, (2) angle ADE is right, (3) BD, DA, DC are coplanar via XI.5, (4) AB parallel to CD via I.28. The difference lies in citation depth: Heath uses I.4 (SAS) to show AD = BE and I.8 (SSS) to transfer the right angle, while the AI uses I.47 (Pythagorean theorem) and I.48 (its converse) to reach the same conclusions via metric computation. The proof-tree containment test confirms that I.4 appears inside Heath's proof of I.47 and I.8 appears inside Heath's proof of I.48, so the AI cites higher-level results that subsume the lower-level tools Heath deploys. The AI's remaining ai_only items (1.11, 1.3, P1, P4, CN1) are construction props, postulates, and common notions, indicating over-citation. Heath's citation of 11.2 (every triangle is in one plane) is handled informally by the AI in Step 12 without explicit citation, a minor under-citation. Since the backbone conclusions are the same and the citation differences are explained by depth, this is a granularity difference.",
+  "jaccard": 0.231,
+  "ai_citations": "1.11|1.28|1.3|1.47|1.48|11.5|CN1|D11.3|P1|P4",
+  "heath_citations": "1.28|1.4|1.8|11.2|11.5|D11.3",
+  "ai_only": "1.11|1.3|1.47|1.48|CN1|P1|P4",
+  "heath_only": "1.4|1.8|11.2",
+  "audit_record": ""
+}

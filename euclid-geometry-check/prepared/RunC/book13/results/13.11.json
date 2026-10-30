@@ -1,0 +1,46 @@
+{
+  "proposition": "13.11",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pentagon ABCDE is inscribed in a circle with rational diameter d; radius r = d/2 is rational",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The side of a regular hexagon inscribed in the same circle equals the radius r (by 4.15)",
+      "type": "length_relation"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Radius r is cut in extreme and mean ratio; the greater segment g equals the side of the inscribed decagon (side_dec), established via 13.5 and 13.9",
+      "type": "proportional_relation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "side_pent^2 = r^2 + side_dec^2, by 13.10 relating sides of inscribed pentagon, hexagon, and decagon",
+      "type": "length_relation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "From extreme-mean-ratio relation (13.9, 6.17): side_dec^2 = r^2 - r * side_dec",
+      "type": "proportional_relation"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Auxiliary square described on r (2.11 construction); side bisected at E; right triangle with legs r and r/2 gives EB^2 = 5r^2/4 by 1.47",
+      "type": "construction"
+    },
+    {
+      "step": "Step 7",
+      "claim": "side_dec = EB - r/2, so N = 2r - side_dec = 5r/2 - EB",
+      "type": "length_relation"
+    }
+  ],
+  "configuration_map": "Circle with rational diameter d and radius r = d/2. Pentagon ABCDE inscribed with vertices on the circumference. The hexagon side equals r (4.15), and the decagon side (side_dec) equals the greater segment when r is cut in extreme and mean ratio (established via 13.5 and 13.9). The relation side_pent^2 = r^2 + side_dec^2 comes from 13.10. An auxiliary construction from 2.11 produces a square on r with midpoint E of a side, yielding EB = r*sqrt(5)/2 via 1.47. The proof then works entirely algebraically, setting P = 5r/2 and Q = EB, showing N = P - Q is a fourth apotome, and concluding via 10.94 that side_pent is minor. No point is placed in conflicting positions; the auxiliary square construction is self-contained and does not interact spatially with the pentagon.",
+  "pass_reason": "The proof is overwhelmingly algebraic and number-theoretic, dealing with commensurability relations and apotome classification. The few geometric claims (pentagon inscribed in circle, hexagon side equals radius, standard 2.11 construction with Pythagorean theorem) are all well-known results applied straightforwardly. There are no angle decompositions, no inside/outside claims, no betweenness assertions, and no novel spatial constructions that could produce configuration contradictions. All spatial claims are mutually consistent."
+}

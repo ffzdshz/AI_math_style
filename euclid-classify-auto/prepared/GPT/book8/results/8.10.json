@@ -1,0 +1,13 @@
+{
+  "proposition": "8.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath's proof works with a specific illustrative case (m=2), constructing named intermediates H=D*F, K=D*H, L=F*H and chaining ratio equalities via both 7.17 (common first factor) and 7.18 (common second factor) to establish A:K=K:L=L:B. The AI takes a structurally different approach: it proves the general case directly by constructing a parametric family C_j = p^{n-j} * q^j, factors each pair as R_j*p and R_j*q, and applies only 7.17 to obtain a uniform ratio C_j:C_{j+1} = p:q across all consecutive pairs. The AI avoids 7.18 entirely by using 7.16 (commutativity) to rearrange factors so the common multiplier is always first, effectively inlining 7.18's proof. These constitute different backbones: different constructions, different intermediate conclusions, and a different generalization strategy. The AI's path is logically complete under the Q3 check, yielding D.",
+  "jaccard": 0.286,
+  "ai_citations": "7.16|7.17|CN2|D7.15|D7.2|D7.20",
+  "heath_citations": "7.17|7.18|D7.20",
+  "ai_only": "7.16|CN2|D7.15|D7.2",
+  "heath_only": "7.18",
+  "audit_record": ""
+}

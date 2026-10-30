@@ -1,0 +1,33 @@
+{
+  "proposition": "9.11",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.",
+  "heath_proof": "Let there be as many numbers as we please, B, C, D, E, beginning from the unit A and in continued proportion; I say that B, the least of the numbers B, C, D, E, measures E according to some one of the numbers C, D. For since, as the unit A is to B, so is D to E, therefore the unit A measures the number B the same number of times as D measures E; therefore, alternately, the unit A measures D the same number of times as B measures E. [VII. 15] But the unit A measures D according to the units in it; therefore B also measures E according to the units in D; so that B the less measures E the greater according to some number of those which have place among the proportional numbers.",
+  "ai_proof_text": "9.11\n**Statement:** If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.\n\n**Step 1.** Let there be as many numbers as we please beginning from a unit in continued proportion: let the sequence be U (the unit), A, B, C, ..., where U:A = A:B = B:C = ... and so on. We must show that the less measures the greater according to some one of the numbers which have place among the proportional numbers.\n\n**Step 2.** Consider any two terms in the sequence where the lesser comes before the greater. It suffices to show that A (the second term, i.e., the first number after the unit) measures every subsequent term in the sequence, and that the quotient is itself a term in the sequence. For if this is established for A, the result for any lesser term measuring any greater term follows by repeated application.\n\n**Step 3.** Since U, A, B are in continued proportion and U is the unit, we have U:A = A:B. Since U is the unit, by the definition of proportion for numbers (D7.20) and the definition of multiplication (D7.15), A multiplied by A produces B. That is, A measures B according to A, which is a number having place among the proportional numbers.\n\n**Step 4.** Again, since U:A = B:C, the unit has to A the same ratio that B has to C. Therefore A multiplied by B produces C (by D7.20 and D7.15), so A measures C according to B, which is a number having place among the proportional numbers.\n\n**Step 5.** Proceeding in this manner: for any term, say the (k+1)-th term T_{k+1} in the sequence, since U:A = T_k:T_{k+1}, it follows that A multiplied by T_k equals T_{k+1}. Thus A measures every subsequent term in the sequence, and in each case the quotient is the preceding term, which is itself among the proportional numbers.\n\n**Step 6.** Now we show the general result. Take any two terms T_i and T_j with i < j. We claim T_i measures T_j according to T_{j-i+1}, where T_{j-i+1} is the term in position (j - i + 1), which is itself among the proportional numbers. We prove this as follows.\n\n**Step 7.** Since all consecutive pairs share the same ratio (by the definition of continued proportion), the sequence from T_i onward, namely T_i, T_{i+1}, ..., T_j, is also in continued proportion with the same common ratio. There are (j - i + 1) terms in this subsequence.\n\n**Step 8.** Similarly, the sequence U, A, B, ..., T_{j-i+1} consists of (j - i + 1) terms in continued proportion beginning from the unit with the same ratio. By Proposition 8.7, if there are as many numbers as we please in continued proportion, and the first measures the last, it will measure the second also. But more directly, since these two sequences have the same number of terms and the same common ratio, by Proposition 7.14 (if there are as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali), we can relate the extreme terms.\n\n**Step 9.** By Proposition 7.17, which states that if a number multiplies two numbers and makes certain numbers, the products will have the same ratio as the multiplied numbers: since U:T_{j-i} = A:T_{j-i+1} (from the continued proportion beginning from unity), multiplying through the sequence, T_i multiplied by T_{j-i} gives a number in the same proportional relationship.\n\n**Step 10.** More precisely, we establish by the recursive property shown in Steps 3-5 that for any term T_m in the sequence, U multiplied by T_m equals T_m (since U is the unit), and A multiplied by T_m equals T_{m+1}. Extending this by Proposition 7.16 (if two numbers multiplying two numbers make certain numbers, the products will be equal), and applying the recursion: T_2 times T_m = T_{m+1}, T_3 times T_m = T_2 times T_{m+1} = T_{m+2}, and in general T_i times T_m = T_{m+i-1}.\n\n**Step 11.** Setting m = j - i + 1, we get T_i multiplied by T_{j-i+1} equals T_j. This means T_i measures T_j (by D7.5, since T_j is a multiple of T_i), and it measures it according to T_{j-i+1}, which has place among the proportional numbers (being the (j-i+1)-th term of the sequence).\n\n**Step 12.** Therefore, if as many numbers as we please beginning from a unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers. Q.E.D.\n\n**USED:** 7.14, 7.16, 7.17, 8.7, D7.15, D7.20, D7.5\n**Human refs (from References field):** 7.15\n**Jaccard:** 0.000 — AI adds ['7.14', '7.16', '7.17', '8.7', 'D7.15', 'D7.20', 'D7.5']; Human adds ['7.15']",
+  "ai_used": [
+    "7.14",
+    "7.16",
+    "7.17",
+    "8.7",
+    "D7.15",
+    "D7.20",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.15"
+  ],
+  "ai_only": [
+    "7.14",
+    "7.16",
+    "7.17",
+    "8.7",
+    "D7.15",
+    "D7.20",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.15"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please beginning from a unit in continued proportion: let the sequence be U (the unit), A, B, C, ..., where U:A = A:B = B:C = ... and so on. We must show"
+}

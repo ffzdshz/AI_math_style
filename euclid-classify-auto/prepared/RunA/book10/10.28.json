@@ -1,0 +1,61 @@
+{
+  "proposition": "10.28",
+  "book": 10,
+  "statement": "To find medial straight lines commensurable in square only which contain a medial rectangle.",
+  "heath_proof": "Let the rational straight lines A, B, C commensurable in square only be set out; let D be taken a mean proportional between A, B, [VI. 13] and let it be contrived that, as B is to C, so is D to E. [VI. 12]  Since A, B are rational straight lines commensurable in square only, therefore the rectangle A, B, that is, the square on D [VI. 17], is medial. [X. 21] Therefore D is medial. [X. 21] And since B, C are commensurable in square only, and, as B is to C, so is D to E, therefore D, E are also commensurable in square only. [X. 11] But D is medial; therefore E is also medial. [X. 23, addition] Therefore D, E are medial straight lines commensurable in square only. I say next that they also contain a medial rectangle. For since, as B is to C, so is D to E, therefore, alternately, as B is to D, so is C to E. [V. 16] But, as B is to D, so is D to A; therefore also, as D is to A, so is C to E; therefore the rectangle A, C is equal to the rectangle D, E. [VI. 16] But the rectangle A, C is medial; [X. 21] therefore the rectangle D, E is also medial. Therefore medial straight lines commensurable in square only have been found which contain a medial rectangle.",
+  "ai_proof_text": "10.28\n**Statement:** To find medial straight lines commensurable in square only which contain a medial rectangle.\n\n**Step 1.** Let A be a rational straight line. Set out three numbers d, e, f with the following properties: (a) d:e is not the ratio of a square number to a square number; (b) e:f is not the ratio of a square number to a square number; (c) d:f is the ratio of a square number to a square number, say d:f = p-squared : q-squared; (d) p:q is not the ratio of a square number to a square number; (e) ep:dq is not the ratio of a square number to a square number. Such numbers exist: take d = 2, e = 3, f = 8, giving p = 1, q = 2; then 2:3 is not a square ratio, 3:8 is not a square ratio, 2:8 = 1:4 = 1-squared : 2-squared is a square ratio, 1:2 is not a square ratio, and 3:4 is not a square ratio.\n\n**Step 2.** Let it be contrived that d:e = sq(A):sq(B) [6.12]. Since d:e is a ratio of numbers, sq(A) and sq(B) are commensurable [10.6], so A and B are commensurable in square. Since d:e is not a ratio of square numbers, A and B are incommensurable in length [10.9]. Since B is commensurable in square with the rational straight line A, B is rational [D10.1.3]. Therefore A and B are rational straight lines commensurable in square only.\n\n**Step 3.** Let it be contrived that e:f = sq(B):sq(C) [6.12]. By the same reasoning as Step 2, since e:f is a ratio of numbers but not of square numbers, B and C are rational straight lines commensurable in square only [10.6, 10.9, D10.1.3].\n\n**Step 4.** Since d:e = sq(A):sq(B) and e:f = sq(B):sq(C), by ex aequali, d:f = sq(A):sq(C) [5.22]. Since d:f = p-squared : q-squared is the ratio of a square number to a square number, A and C are commensurable in length [10.9].\n\n**Step 5.** By 6.20, sq(A):sq(C) is the duplicate ratio of A:C. By 8.11, p-squared : q-squared is the duplicate ratio of p:q. Since sq(A):sq(C) = p-squared : q-squared [Step 4], the duplicate of A:C equals the duplicate of p:q, and therefore A:C = p:q.\n\n**Step 6.** Let G be the mean proportional between A and B [6.13], so that sq(G) = rect(A, B) [6.17]. Since A and B are rational straight lines commensurable in square only, rect(A, B) is irrational and G is a medial straight line [10.21].\n\n**Step 7.** Let H be the mean proportional between B and C [6.13], so that sq(H) = rect(B, C) [6.17]. Since B and C are rational straight lines commensurable in square only, rect(B, C) is irrational and H is a medial straight line [10.21].\n\n**Step 8.** Since sq(G) = rect(A, B) and sq(H) = rect(B, C), these rectangles share the common side B. By 6.1, sq(G):sq(H) = A:C = p:q [Step 5]. Since p:q is a ratio of numbers, sq(G) is commensurable with sq(H) [10.6], so G and H are commensurable in square. Since p:q is not a ratio of square numbers [condition (d)], G and H are incommensurable in length [10.9]. Therefore G and H are commensurable in square only.\n\n**Step 9.** Let K be the mean proportional between A and C [6.13], so that sq(K) = rect(A, C) [6.17]. Since A and C are rational and commensurable in length [Step 4], rect(A, C) is rational [10.19]. Now sq(K):sq(A) = rect(A, C):rect(A, A) = C:A [6.1], and since A and C are commensurable in length, C:A is a ratio of numbers [10.5], so sq(K) is commensurable with sq(A) [10.6]. Therefore K is rational [D10.1.3].\n\n**Step 10.** Now sq(A):sq(G) = rect(A, A):rect(A, B) = A:B [6.1], and sq(K):sq(H) = rect(A, C):rect(B, C) = A:B [6.1]. Therefore sq(A):sq(G) = sq(K):sq(H) [CN1]. By alternation, sq(A):sq(K) = sq(G):sq(H) [5.16]. Since squares are similar figures described on the respective lines, by the converse of 6.22, A:K = G:H.\n\n**Step 11.** By alternation, A:G = K:H [5.16]. From the mean proportional construction, sq(G) = rect(A, B) implies A:G = G:B [6.17]. Therefore G:B = K:H [CN1]. By 6.16, since four straight lines G, B, K, H are proportional (G:B = K:H), the rectangle contained by the extremes equals the rectangle contained by the means: rect(G, H) = rect(B, K).\n\n**Step 12.** Since G and H are medial straight lines commensurable in square only [Steps 6, 7, 8], by 10.25, rect(G, H) is either rational or medial. Suppose for contradiction that rect(G, H) is rational. Then rect(B, K) is rational [Step 11]. The area rect(B, K) is the rectangle contained by B and K; applying this rational area to the rational straight line B, the breadth is K. By 10.20, K would be commensurable in length with B.\n\n**Step 13.** However, from Step 2 (inverted), sq(B):sq(A) = e:d. By 7.17, multiplying both terms by p gives ep:dp = e:d, so sq(B):sq(A) = ep:dp. From Step 9, sq(A):sq(K) = A:C = p:q [6.1, Step 5]. By 7.17, multiplying both terms by d gives dp:dq = p:q, so sq(A):sq(K) = dp:dq. Since the middle terms now agree, by ex aequali, sq(B):sq(K) = ep:dq [5.22]. Since ep:dq is not the ratio of a square number to a square number [condition (e)], B and K are incommensurable in length [10.9]. This contradicts the conclusion of Step 12 that K is commensurable in length with B.\n\n**Step 14.** Therefore rect(G, H) is not rational, and hence by 10.25 it is medial. Thus G and H are medial straight lines commensurable in square only which contain a medial rectangle, which is what was required to find. Q.E.D.\n\n**USED:** 10.19, 10.20, 10.21, 10.25, 10.5, 10.6, 10.9, 5.16, 5.22, 6.1, 6.12, 6.13, 6.16, 6.17, 6.20, 6.22, 7.17, 8.11, CN1, D10.1.3\n**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.16, 6.17\n**Jaccard:** 0.273 — AI adds ['10.19', '10.20', '10.25', '10.5', '10.6', '10.9', '5.22', '6.1', '6.20', '6.22', '7.17', '8.11', 'CN1', 'D10.1.3']; Human adds ['10.11', '10.23']",
+  "ai_used": [
+    "10.19",
+    "10.20",
+    "10.21",
+    "10.25",
+    "10.5",
+    "10.6",
+    "10.9",
+    "5.16",
+    "5.22",
+    "6.1",
+    "6.12",
+    "6.13",
+    "6.16",
+    "6.17",
+    "6.20",
+    "6.22",
+    "7.17",
+    "8.11",
+    "CN1",
+    "D10.1.3"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.21",
+    "10.23",
+    "5.16",
+    "6.12",
+    "6.13",
+    "6.16",
+    "6.17"
+  ],
+  "ai_only": [
+    "10.19",
+    "10.20",
+    "10.25",
+    "10.5",
+    "10.6",
+    "10.9",
+    "5.22",
+    "6.1",
+    "6.20",
+    "6.22",
+    "7.17",
+    "8.11",
+    "CN1",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.23"
+  ],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let A be a rational straight line. Set out three numbers d, e, f with the following properties: (a) d:e is not the ratio of a square number to a square number; (b) e:f is not the ratio of "
+}

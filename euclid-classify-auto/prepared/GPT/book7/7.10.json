@@ -1,0 +1,37 @@
+{
+  "proposition": "7.10",
+  "book": 7,
+  "statement": "If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will the second also be of the fourth.",
+  "heath_proof": "For let the number AB be parts of the number C, and another, DE, the same parts of another, F; I say that, alternately also, whatever parts or part AB is of DE, the same parts or the same part is C of F also. For since, whatever parts AB is of C, the same parts also is DE of F, therefore, as many parts of C as there are in AB, so many parts also of F are there in DE. Let AB be divided into the parts of C, namely AG, GB, and DE into the parts of F, namely DH, HE; thus the multitude of AG, GB will be equal to the multitude of DH, HE. Now since, whatever part AG is of C, the same part also is DH of F, alternately also, whatever part or parts AG is of DH, the same part or the same parts is C of F also. [VII. 9] For the same reason also, whatever part or parts GB is of HE, the same part or the same parts is C of F also; so that, in addition, whatever parts or part AB is of DE, the same parts also, or the same part, is C of F. [VII. 5, 6]",
+  "ai_proof_text": "7.10\n**Statement:** If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will the second also be of the fourth.\n\n**Step 1.** Let A be parts of B, and C the same parts of D. Suppose A is a part or parts of C, and hence A<C; we must establish the identical comparison of B with D. By the hypothesis of the same parts, there are counts r and s, with 1<r<s, and equal pieces u and v respectively, such that A consists of r copies of u, B of s copies of u, C of r copies of v, and D of s copies of v. Each of u and v may be a number or a unit. [D7.2, D7.3, D7.4]\n\n**Step 2.** Put A′=A+A, B′=B+B, C′=C+C, D′=D+D, and U=u+u, V=v+v. Counting the same units in pairs, A′ consists of r copies of U, B′ of s copies of U, C′ of r copies of V, and D′ of s copies of V. Moreover, U and V are genuine numbers even when u or v is a unit. This doubling ensures that all subsequent applications of the numerical theorems have numbers as their terms. [D7.2, CN2]\n\n**Step 3.** Since A and C contain equally many copies of u and v, respectively, A<C implies u<v: equality or the opposite inequality between the pieces would give equality or the opposite inequality between their sums. Consequently U<V and B<D, again by comparing equal counts of the respective pieces. Therefore U is either a part or parts of V. [CN2, CN5, 7.4]\n\n**Step 4.** U is the same part of A′ that V is of C′, since each measures its respective whole r times. Likewise, U is the same part of B′ that V is of D′, since each measures its respective whole s times. We use 7.9 because these decompositions give exactly its same-part hypothesis. Applied to U, A′, V, C′, it says that A′ is the same part or parts of C′ that U is of V. Applied to U, B′, V, D′, it says that B′ is the same part or parts of D′ that U is of V. Thus the two doubled comparisons have one and the same part-or-parts description. [D7.3, 7.9, CN1]\n\n**Step 5.** A is the same part of A′ that C is of C′, namely a half. Hence 7.9, applied to A, A′, C, C′, says that A′ is the same part or parts of C′ that A is of C. Similarly, B and D are halves of B′ and D′; applying 7.9 to B, B′, D, D′ says that B′ is the same part or parts of D′ that B is of D. [D7.3, 7.9]\n\n**Step 6.** By Steps 4 and 5, the part-or-parts description of A relative to C agrees with that of B relative to D. Therefore, alternately, whatever parts or part the first number A is of the third C, the same parts or the same part the second B is of the fourth D. [CN1]\n\n**USED:** 7.4, 7.9, CN1, CN2, CN5, D7.2, D7.3, D7.4\n**Human refs (from References field):** 7.5, 7.6, 7.9\n**Jaccard:** 0.100 — AI adds ['7.4', 'CN1', 'CN2', 'CN5', 'D7.2', 'D7.3', 'D7.4']; Human adds ['7.5', '7.6']",
+  "ai_used": [
+    "7.4",
+    "7.9",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D7.2",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_refs": [
+    "7.5",
+    "7.6",
+    "7.9"
+  ],
+  "ai_only": [
+    "7.4",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D7.2",
+    "D7.3",
+    "D7.4"
+  ],
+  "heath_only": [
+    "7.5",
+    "7.6"
+  ],
+  "jaccard": 0.1,
+  "proof_summary": "**Step 1.** Let A be parts of B, and C the same parts of D. Suppose A is a part or parts of C, and hence A<C; we must establish the identical comparison of B with D. By the hypothesis of the same part"
+}

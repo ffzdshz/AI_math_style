@@ -1,0 +1,13 @@
+{
+  "proposition": "8.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same logical backbone: (1) take D,E as the least numbers in ratio A:C via 7.33, (2) use 7.20 to factor A = D*F, C = E*F and C = D*G, B = E*G, establishing A and B as plane numbers, (3) show the sides are proportional (D:E = F:G), and (4) conclude A,B are similar plane numbers. The only divergence is in how step (3) is derived: Heath uses 7.17 twice to establish ratio chains and then 7.13 for alternation, while the AI uses the algebraic equality E*F = D*G, coprimality of D,E via 7.22, and the converse of 7.19 to derive D:E = F:G directly. Since the key intermediate conclusions are identical and only the sub-step justifications differ, Q2 Case A applies, yielding G. The ai_only definitions D7.16 and D7.21 are explicit citations of definitions Heath uses implicitly, confirming a citation-depth difference. The heath_only proposition 7.17 appears inside Heath's own proof of 7.19 (which the AI cites), supporting the containment interpretation for that item.",
+  "jaccard": 0.25,
+  "ai_citations": "7.19|7.20|7.22|7.33|D7.16|D7.21",
+  "heath_citations": "7.13|7.17|7.20|7.33",
+  "ai_only": "7.19|7.22|D7.16|D7.21",
+  "heath_only": "7.13|7.17",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "7.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G. Both proofs share the same logical backbone: construct D = LCM(A, B) using 7.34, then construct E = LCM(D, C) using 7.34, show all three numbers measure E, and prove minimality using 7.35 applied twice. Heath splits into two cases (C measures D vs. C does not measure D), while the AI handles only the general case which subsumes both. The ai_only citations (D7.3, D7.5) are definitions that the AI uses to make explicit the transitivity of divisibility (if A divides D and D divides E, then A divides E), which Heath leaves implicit. Since heath_only is empty and the ai_only items are purely definitional, this is a citation-depth difference with the same backbone, yielding Granularity difference (G).",
+  "jaccard": 0.5,
+  "ai_citations": "7.34|7.35|D7.3|D7.5",
+  "heath_citations": "7.34|7.35",
+  "ai_only": "D7.3|D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

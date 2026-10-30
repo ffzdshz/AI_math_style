@@ -1,0 +1,13 @@
+{
+  "proposition": "6.20",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same first part: triangulating the similar polygons and proving the component triangles are similar (using 6.6, 6.4, 5.22, D6.1). However, for the second part (proving the component triangles are proportional and the polygon ratio is duplicate of the side ratio), the proofs follow genuinely different backbones. Heath draws auxiliary diagonals AC and FH, identifies intersection points M and N, proves auxiliary triangles equiangular using 1.32, and then uses 6.1 (triangles under the same height are as their bases) to establish the proportionality chain. The AI instead leverages 6.19 directly on each pair of similar triangles to obtain duplicate ratios of shared corresponding sides (BE:GL for the first two pairs, EC:LH for the second two), then uses 5.11 (transitivity of ratio equality) to chain them together. This is a valid alternative path that reaches the same final conclusion through different key intermediate reasoning, making Q2 Case B. The AI's path is logically complete (Q3b holds), so the classification is D.",
+  "jaccard": 0.5,
+  "ai_citations": "5.11|5.12|5.22|6.19|6.4|6.6|CN3|D5.9|D6.1|P1",
+  "heath_citations": "1.32|5.12|5.22|6.1|6.19|6.4|6.6|D6.1",
+  "ai_only": "5.11|CN3|D5.9|P1",
+  "heath_only": "1.32|6.1",
+  "audit_record": ""
+}

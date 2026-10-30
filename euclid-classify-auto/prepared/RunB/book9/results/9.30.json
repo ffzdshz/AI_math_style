@@ -1,0 +1,13 @@
+{
+  "proposition": "9.30",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: (1) A (odd) measures B (even) so B = A times some multiplier, (2) proof by contradiction that the multiplier cannot be odd because that would make B odd, contradicting B being even, (3) the multiplier is therefore even, (4) A therefore measures the half of B. The only difference is citation depth. Heath cites 9.23 directly (sum of an odd count of odd numbers is odd) to establish that the product of two odd numbers is odd, while the AI cites 9.29 (product of two odd numbers is odd), which itself uses 9.23 in its proof per the proof-tree containment test. The AI's remaining ai_only citations (7.5, CN3, D7.15, D7.3, D7.6, D7.7) are definitions, common notions, and basic propositions that make explicit what Heath leaves implicit in the final steps. This is a citation-depth difference with identical backbone, confirming Case A of Q2.",
+  "jaccard": 0.0,
+  "ai_citations": "7.5|9.29|CN3|D7.15|D7.3|D7.6|D7.7",
+  "heath_citations": "9.23",
+  "ai_only": "7.5|9.29|CN3|D7.15|D7.3|D7.6|D7.7",
+  "heath_only": "9.23",
+  "audit_record": ""
+}

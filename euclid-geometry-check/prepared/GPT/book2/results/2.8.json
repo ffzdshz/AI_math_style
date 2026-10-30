@@ -1,0 +1,31 @@
+{
+  "proposition": "2.8",
+  "run": "GPT",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is an interior point of segment AB, lying between A and B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is placed on the extension of AB beyond B, with BD = BC; collinear order is A-C-B-D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B lies between A and D on line AD (required for application of Prop 2.4 to AD cut at B)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "C lies between A and B on line AB (required for application of Prop 2.7 to AB cut at C)",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "All four points A, C, B, D are collinear in the order A—C—B—D. C is given as an arbitrary interior point of AB. D is constructed on the extension of AB beyond B with BD = BC. The entire proof operates on this single line with no off-line auxiliary points, no angles, no triangles, and no circles. After the geometric setup in Steps 1-2, the proof is purely algebraic: applying identity 2.4 to AD cut at B, applying identity 2.7 to AB cut at C, and combining the results through algebraic manipulation (adding equals to equals, substitution).",
+  "pass_reason": "All spatial claims concern collinear points in the order A-C-B-D, which are mutually consistent. The proof is essentially algebraic after a minimal geometric setup, combining two Book 2 identities (2.4 and 2.7) through algebraic manipulation. No angle decompositions, no interior/exterior claims, no circle arguments — nothing that could produce a spatial configuration contradiction."
+}

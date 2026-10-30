@@ -1,0 +1,39 @@
+{
+  "proposition": "5.18",
+  "book": 5,
+  "statement": "If magnitudes be proportional separando, they will also be proportional componendo.",
+  "heath_proof": "Let AE, EB, CF, FD be magnitudes proportional separando, so that, as AE is to EB, so is CF to FD; I say that they will also be proportional componendo, that is, as AB is to BE, so is CD to FD. For, if CD be not to DF as AB to BE, then, as AB is to BE, so will CD be either to some magnitude less than DF or to a greater. First, let it be in that ratio to a less magnitude DG. Then, since, as AB is to BE, so is CD to DG, they are magnitudes proportional componendo; so that they will also be proportional separando. [V. 17]  Therefore, as AE is to EB, so is CG to GD. But also, by hypothesis, as AE is to EB, so is CF to FD. Therefore also, as CG is to GD, so is CF to FD. [V. 11] But the first CG is greater than the third CF; therefore the second GD is also greater than the fourth FD. [V. 14]  But it is also less: which is impossible. Therefore, as AB is to BE, so is not CD to a less magnitude than FD. Similarly we can prove that neither is it in that ratio to a greater; it is therefore in that ratio to FD itself.",
+  "ai_proof_text": "5.18\n**Statement:** If magnitudes be proportional separando, they will also be proportional componendo.\n\n**Step 1.** Let AE, EB, CF, FD be magnitudes such that AE : EB :: CF : FD (proportional separando), where AE is the excess of AB over BE (so AB = AE + BE), and CF is the excess of CD over DF (so CD = CF + FD). We are to show that AB : BE :: CD : DF (proportional componendo). [D5.14, D5.15]\n\n**Step 2.** By D5.5, to prove AB : BE :: CD : DF, we must show that for any equimultiples m·AB and m·CD of the first and third, and any equimultiples n·BE and n·DF of the second and fourth, the former equimultiples alike exceed, are alike equal to, or alike fall short of the latter equimultiples taken in corresponding order. That is, we must establish: (i) if m·AB > n·BE then m·CD > n·DF, (ii) if m·AB = n·BE then m·CD = n·DF, and (iii) if m·AB < n·BE then m·CD < n·DF. [D5.5]\n\n**Step 3.** Since AB = AE + BE and AE is the same multiple of AE that BE is of BE (namely, both taken m times), by 5.1, m·AE = m·AB - m·BE, which gives m·AB = m·AE + m·BE. Similarly, m·CD = m·CF + m·DF. [5.1]\n\n**Step 4.** Also, by 5.2, since (n - m)·BE and m·BE are equimultiples of BE, their sum (n - m)·BE + m·BE equals n·BE. Likewise, (n - m)·DF + m·DF = n·DF. This identity will be used when n > m. [5.2]\n\n**Step 5.** We now prove case (i). Suppose m·AB > n·BE. Then m·AE + m·BE > n·BE. If n > m, subtracting m·BE from both sides yields m·AE > (n - m)·BE (the subtraction being valid since m·BE < n·BE when n > m). Now m·AE and m·CF are equimultiples of AE and CF, and (n - m)·BE and (n - m)·DF are equimultiples of BE and DF. Since AE : EB :: CF : FD by hypothesis, D5.5 gives m·CF > (n - m)·DF. Adding m·DF to both sides, m·CF + m·DF > (n - m)·DF + m·DF, that is, m·CD > n·DF. [D5.5, CN2, CN3]\n\n**Step 6.** Still in case (i), if n is less than or equal to m, then since m is at least n, the magnitude m·DF is at least n·DF. Moreover, m·CF is a positive magnitude (as CF is a magnitude and m is at least 1). Therefore m·CD = m·CF + m·DF > n·DF. Thus in all sub-cases, m·AB > n·BE implies m·CD > n·DF. [CN5]\n\n**Step 7.** We prove case (ii). Suppose m·AB = n·BE. Then m·AE + m·BE = n·BE. Since m·AE is a positive magnitude, this requires n > m. Subtracting m·BE from both sides, m·AE = (n - m)·BE. Since AE : EB :: CF : FD by hypothesis, D5.5 gives m·CF = (n - m)·DF. Adding m·DF to both sides, m·CF + m·DF = (n - m)·DF + m·DF, that is, m·CD = n·DF. [D5.5, CN2, CN3]\n\n**Step 8.** We prove case (iii). Suppose m·AB < n·BE. Then m·AE + m·BE < n·BE, so n > m (since if n were at most m, we would have n·BE at most m·BE, and then m·AE + m·BE > m·BE, giving m·AB > n·BE, a contradiction). Subtracting m·BE from both sides, m·AE < (n - m)·BE. Since AE : EB :: CF : FD by hypothesis, D5.5 gives m·CF < (n - m)·DF. Adding m·DF to both sides, m·CF + m·DF < (n - m)·DF + m·DF, that is, m·CD < n·DF. [D5.5, CN2, CN3]\n\n**Step 9.** Since in every case the equimultiples m·AB, m·CD of the first and third alike exceed, are alike equal to, or alike fall short of the equimultiples n·BE, n·DF of the second and fourth, it follows by D5.5 that AB : BE :: CD : DF. That is, the magnitudes are proportional componendo. [D5.5, D5.14]\n\n**Step 10.** Therefore, if magnitudes be proportional separando, they will also be proportional componendo. Q.E.D.\n\n**USED:** 5.1, 5.2, CN2, CN3, CN5, D5.14, D5.15, D5.5\n**Human refs (from References field):** 5.11, 5.14, 5.17\n**Jaccard:** 0.000 — AI adds ['5.1', '5.2', 'CN2', 'CN3', 'CN5', 'D5.14', 'D5.15', 'D5.5']; Human adds ['5.11', '5.14', '5.17']",
+  "ai_used": [
+    "5.1",
+    "5.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.11",
+    "5.14",
+    "5.17"
+  ],
+  "ai_only": [
+    "5.1",
+    "5.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_only": [
+    "5.11",
+    "5.14",
+    "5.17"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AE, EB, CF, FD be magnitudes such that AE : EB :: CF : FD (proportional separando), where AE is the excess of AB over BE (so AB = AE + BE), and CF is the excess of CD over DF (so CD = "
+}

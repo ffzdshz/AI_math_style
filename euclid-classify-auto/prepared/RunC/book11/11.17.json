@@ -1,0 +1,28 @@
+{
+  "proposition": "11.17",
+  "book": 11,
+  "statement": "If two straight lines be cut by parallel planes, they will be cut in the same ratios.",
+  "heath_proof": "For let the two straight lines AB, CD be cut by the parallel planes GH, KL, MN at the points A, E, B and C, F, D; I say that, as the straight line AE is to EB, so is CF to FD. For let AC, BD, AD be joined, let AD meet the plane KL at the point O, and let EO, OF be joined. Now, since the two parallel planes KL, MN are cut by the plane EBDO, their common sections EO, BD are parallel. [XI. 16] For the same reason, since the two parallel planes GH, KL are cut by the plane AOFC, their common sections AC, OF are parallel. [id.] And, since the straight line EO has been drawn parallel to BD, one of the sides of the triangle ABD, therefore, proportionally, as AE is to EB, so is AO to OD. [VI. 2] Again, since the straight line OF has been drawn parallel to AC, one of the sides of the triangle ADC, proportionally, as AO is to OD, so is CF to FD. [id.] But it was also proved that, as AO is to OD, so is AE to EB; therefore also, as AE is to EB, so is CF to FD. [V. 11]",
+  "ai_proof_text": "11.17\n**Statement:** If two straight lines be cut by parallel planes, they will be cut in the same ratios.\n\n**Step 1.** Let the two straight lines AB and CD be cut by the three parallel planes alpha, beta, and gamma, where plane alpha passes through A and C, plane beta passes through E and F, and plane gamma passes through B and D. We must prove that AE:EB = CF:FD.\n\n**Step 2.** Join AD [P1]. Since A is in plane alpha and D is in plane gamma, and these planes are parallel with plane beta lying between them, the straight line AD must meet plane beta; let it meet plane beta at the point G.\n\n**Step 3.** Join EG and GF [P1]. Consider the triangle ABD. The points E and G both lie in plane beta (E on side AB, G on side AD). Now plane beta and plane gamma are parallel [D11.8]. The plane of triangle ABD cuts both plane beta and plane gamma. By 11.16, their common sections with the plane of triangle ABD are parallel. The common section with plane beta passes through E and G, giving line EG; the common section with plane gamma passes through B and D, giving line BD. Therefore EG is parallel to BD.\n\n**Step 4.** Since in triangle ABD the line EG is parallel to side BD, and E lies on AB while G lies on AD, by 6.2 the sides are cut proportionally: AE:EB = AG:GD.\n\n**Step 5.** Now consider the triangle ACD. The points G and F both lie in plane beta (G on side AD, F on side CD). Plane alpha and plane beta are parallel [D11.8]. The plane of triangle ACD cuts both plane alpha and plane beta. By 11.16, their common sections with the plane of triangle ACD are parallel. The common section with plane alpha passes through A and C, giving line AC; the common section with plane beta passes through G and F, giving line GF. Therefore GF is parallel to AC.\n\n**Step 6.** Since in triangle ACD the line GF is parallel to side AC, and G lies on AD while F lies on CD, by 6.2 the sides are cut proportionally: DG:GA = DF:FC.\n\n**Step 7.** By inversion of the proportion in Step 6 [5.7.Corollary], GA:GD = FC:FD, that is, AG:GD = CF:FD.\n\n**Step 8.** From Step 4, AE:EB = AG:GD, and from Step 7, AG:GD = CF:FD. Therefore, since two ratios each equal the same ratio, AE:EB = CF:FD [5.11].\n\n**Step 9.** Therefore, if two straight lines be cut by parallel planes, they will be cut in the same ratios. Q.E.D.\n\n**USED:** 11.16, 5.11, 5.7, 6.2, D11.8, P1\n**Human refs (from References field):** 11.16, 5.11, 6.2\n**Jaccard:** 0.500 — AI adds ['5.7', 'D11.8', 'P1']",
+  "ai_used": [
+    "11.16",
+    "5.11",
+    "5.7",
+    "6.2",
+    "D11.8",
+    "P1"
+  ],
+  "heath_refs": [
+    "11.16",
+    "5.11",
+    "6.2"
+  ],
+  "ai_only": [
+    "5.7",
+    "D11.8",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let the two straight lines AB and CD be cut by the three parallel planes alpha, beta, and gamma, where plane alpha passes through A and C, plane beta passes through E and F, and plane gamm"
+}

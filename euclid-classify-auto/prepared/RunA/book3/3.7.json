@@ -1,0 +1,38 @@
+{
+  "proposition": "3.7",
+  "book": 3,
+  "statement": "If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that will be greatest on which the centre is, the remainder of the same diameter will be least, and of the rest  the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.",
+  "heath_proof": "Let ABCD be a circle, and let AD be a diameter of it;on AD let a point F be taken which is not the centre of the circle, let E be the centre of the circle, and from F let straight lines FB, FC, FG fall upon the circle ABCD; I say that FA is greatest, FD is least, and of the rest FB isgreater than FC, and FC than FG. For let BE, CE, GE be joined. Then, since in any triangle two sides are greater than the remaining one, [I. 20]EB, EF are greater than BF. But AE is equal to BE; therefore AF is greater than BF. Again, since BE is equal to CE, and FE is common,the two sides BE, EF are equal to the two sides CE, EF. But the angle BEF is also greater than the angle CEF; therefore the base BF is greater than the base CF. [I. 24] For the same reason CF is also greater than FG. Again, since GF, FE are greater than EG, and EG is equal to ED, GF, FE are greater than ED. Let EF be subtracted from each; therefore the remainder GF is greater than the remainder FD.  Therefore FA is greatest, FD is least, and FB is greater than FC, and FC than FG. I say also that from the point F only two equal straight lines will fall on the circle ABCD, one on each side of theleast FD. For on the straight line EF, and at the point E on it, let the angle FEH be constructed equal to the angle GEF [I. 23], and let FH be joined. Then, since GE is equal to EH,and EF is common, the two sides GE, EF are equal to the two sides HE, EF; and the angle GEF is equal to the angle HEF;  therefore the base FG is equal to the base FH. [I. 4]  I say again that another straight line equal to FG will notfall on the circle from the point F. For, if possible, let FK so fall. Then, since FK is equal to FG, and FH to FG, FK is also equal to FH, the nearer to the straight line through the centre being thus equal to the more remote: which is impossible. Therefore another straight line equal to GF will not fall from the point F upon the circle; therefore only one straight line will so fall.",
+  "ai_proof_text": "3.7\n**Statement:** If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that will be greatest on which the centre is, the remainder of the same diameter will be least, and of the rest  the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.\n\n**Step 1.** Let there be a circle ABCD with centre E and diameter AD. Let F be a point on AD which is not the centre E. From F let various straight lines FB, FC, FG be drawn to the circle. We must show: (i) FA is greatest among all lines from F to the circle, (ii) FD is least, (iii) of the remaining lines, the nearer to FA is always greater than the more remote, and (iv) only two equal straight lines fall from F on the circle, one on each side of FD.\n\n**Step 2.** Since E is the centre and A, D are endpoints of the diameter, EA = ED [D1.15, D1.17]. Since F lies on AD between E and D (without loss of generality), the points lie in order A-E-F-D along the line. Therefore AF = AE + EF [CN2] and DF = ED - EF [CN3].\n\n**Step 3.** (FA is greatest.) Let B be any point on the circle other than A. Join EB and FB [P1]. In triangle BEF, EB + EF > BF [1.20]. Since EB = EA (both are radii) [D1.15], we have EA + EF > BF. But EA + EF = AF (from Step 2). Therefore AF > BF. Since B was an arbitrary point on the circle, FA is the greatest of all straight lines drawn from F to the circle.\n\n**Step 4.** (FD is least.) Let B be any point on the circle other than D. Join EB [P1]. In triangle BEF, EF + FB > EB [1.20]. Since EB = ED (radii) [D1.15], we have EF + FB > ED. Therefore FB > ED - EF = FD. Since B was arbitrary, FD is the least of all straight lines drawn from F to the circle.\n\n**Step 5.** (The nearer to FA is greater than the more remote.) Let B and C be points on the circle on the same side of diameter AD, with B nearer to A than C. Join EB and EC [P1]. Since B is nearer to A on the circle than C, angle AEB < angle AEC. Now since A, E, F are collinear and E lies between A and F, the angles AEB and FEB are supplementary: angle AEB + angle FEB equals two right angles [1.13]. Likewise angle AEC + angle FEC equals two right angles [1.13]. Since angle AEB < angle AEC, it follows that angle FEB > angle FEC.\n\n**Step 6.** Now consider triangles FEB and FEC. We have EF = EF (common side), EB = EC (both radii) [D1.15], and angle FEB > angle FEC (from Step 5). By Proposition 1.24, the side opposite the greater included angle is greater: FB > FC. Therefore the straight line from F to the nearer point B is greater than the straight line from F to the more remote point C. The same argument applies on the other side of the diameter.\n\n**Step 7.** (Two equal lines, one on each side.) Let FB be a line from F to a point B on the circle, where B does not lie on the diameter. At the point E, on the opposite side of line AD from B, construct angle FEG equal to angle FEB [1.23]. Let G be the point where ray EG meets the circle [D1.15]. In triangles FEB and FEG: EF = EF (common), EB = EG (radii) [D1.15], and angle FEB = angle FEG (by construction). By Proposition 1.4 (SAS), FB = FG. Thus from F there fall two equal straight lines to the circle, one on each side of FD.\n\n**Step 8.** (No more than two equal lines.) Suppose FH = FB where H is a point on the circle on the same side of diameter AD as B, with H distinct from B. In triangles FEH and FEB: EF = EF (common), EH = EB (radii) [D1.15], and FH = FB (by hypothesis). By Proposition 1.8 (SSS), angle FEH = angle FEB. Since H and B lie on the same side of line AD and the angles FEH and FEB measured from EF are equal, ray EH coincides with ray EB. Since both H and B lie on this ray and on the circle, H = B, contradicting the assumption that H is distinct from B. Therefore on each side of the diameter there falls exactly one straight line from F equal to a given line FB.\n\n**Step 9.** We have shown that FA is greatest, FD is least, among the remaining lines the nearer to FA is always greater than the more remote, and exactly two equal straight lines fall from F on the circle, one on each side of the least line FD. This is what was required to prove.\n\n**USED:** 1.13, 1.20, 1.23, 1.24, 1.4, 1.8, CN2, CN3, D1.15, D1.17, P1\n**Human refs (from References field):** 1.20, 1.23, 1.24, 1.4\n**Jaccard:** 0.364 — AI adds ['1.13', '1.8', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']",
+  "ai_used": [
+    "1.13",
+    "1.20",
+    "1.23",
+    "1.24",
+    "1.4",
+    "1.8",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.23",
+    "1.24",
+    "1.4"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.8",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let there be a circle ABCD with centre E and diameter AD. Let F be a point on AD which is not the centre E. From F let various straight lines FB, FC, FG be drawn to the circle. We must sho"
+}

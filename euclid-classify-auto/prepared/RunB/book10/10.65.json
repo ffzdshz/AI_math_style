@@ -1,0 +1,48 @@
+{
+  "proposition": "10.65",
+  "book": 10,
+  "statement": "The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.",
+  "heath_proof": "Let AB be the side of the sum of two medial areas, divided at C, let DE be a rational straight line, and let there be applied to DE the parallelogram DF equal to the square on AB, producing DG as its breadth; I say that DG is a sixth binomial straight line. For let the same construction be made as before. Then, since AB is the side of the sum of two medial areas, divided at C, therefore AC, CB are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and moreover the sum of the squares on them incommensurable with the rectangle contained by them, [X. 41] so that, in accordance with what was before proved, each of the rectangles DL, MF is medial. And they are applied to the rational straight line DE; therefore each of the straight lines DM, MG is rational and incommensurable in length with DE. [X. 22] And, since the sum of the squares on AC, CB is incommensurable with twice the rectangle AC, CB, therefore DL is incommensurable with MF. Therefore DM is also incommensurable with MG; [VI. 1, X. 11] therefore DM, MG are rational straight lines commensurable in square only; therefore DG is binomial. [X. 36] I say next that it is also a sixth binomial straight line. Similarly again we can prove that the rectangle DK, KM is equal to the square on MN, and that DK is incommensurable in length with KM; and, for the same reason, the square on DM is greater than the square on MG by the square on a straight line incommensurable in length with DM. And neither of the straight lines DM, MG is commensurable in length with the rational straight line DE set out. Therefore DG is a sixth binomial straight line.",
+  "ai_proof_text": "10.65\n**Statement:** The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.\n\n**Step 1.** Let AB be the side of the sum of two medial areas, and let it be divided into its terms at C, so that AC and CB are the two straight lines of which AB is composed, with AC being the greater. By 10.41, AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, the rectangle contained by AC and CB is medial, and the sum of the squares on them is incommensurable with the rectangle contained by them.\n\n**Step 2.** Let DE be a rational straight line, and let there be applied to DE the rectangle DF equal to the square on AB, producing DF as breadth, so that rect(DE, DF) = sq(AB).\n\n**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB: sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB).\n\n**Step 4.** Apply to DE the rectangle DG equal to the sum of the squares on AC and CB, producing DG as breadth, so that rect(DE, DG) = sq(AC) + sq(CB). Then the remainder, rect(DE, GF) = 2*rect(AC, CB), where DF = DG + GF.\n\n**Step 5.** Since the sum sq(AC) + sq(CB) is medial and DE is rational, by 10.22 the breadth DG is rational and incommensurable in length with DE.\n\n**Step 6.** Since 2*rect(AC, CB) is medial (for rect(AC, CB) is medial by 10.41, and twice a medial area is medial by 10.23 and the properties of medial areas) and DE is rational, by 10.22 the breadth GF is rational and incommensurable in length with DE.\n\n**Step 7.** Since sq(AC) + sq(CB) is incommensurable with 2*rect(AC, CB) (given by 10.41), and rect(DE, DG) = sq(AC) + sq(CB) while rect(DE, GF) = 2*rect(AC, CB), the areas rect(DE, DG) and rect(DE, GF) are incommensurable. Since these rectangles have the same height DE, by 6.1 they are as their bases, so DG is incommensurable in length with GF by 10.11.\n\n**Step 8.** Since DG and GF are each rational (Step 5 and Step 6), they are each commensurable in square with DE by D10.1.3. By 10.12, since sq(DG) is commensurable with sq(DE) and sq(GF) is commensurable with sq(DE), sq(DG) is commensurable with sq(GF). Therefore DG is commensurable in square with GF. But DG is incommensurable in length with GF (Step 7). So DG and GF are rational straight lines commensurable in square only.\n\n**Step 9.** Therefore by 10.36, the sum DG + GF = DF is a binomial straight line. It remains to show that DF is a sixth binomial.\n\n**Step 10.** Within DG, let M be the point such that rect(DE, DM) = sq(AC) and rect(DE, MG) = sq(CB), so that DG = DM + MG. Since sq(AC) and sq(CB) are the areas applied to the same line DE, by 6.1, DM : MG = sq(AC) : sq(CB).\n\n**Step 11.** Since AC and CB are incommensurable in square (by 10.41), sq(AC) is incommensurable with sq(CB). Therefore by 10.11, DM is incommensurable in length with MG.\n\n**Step 12.** We now show that sq(DG) exceeds sq(GF) by the square on a straight line incommensurable in length with DG. First we establish that sq(GF) = 4*rect(DM, MG). Since rect(DE, DM) = sq(AC), by 6.17 AC is the mean proportional between DE and DM, that is, DE : AC = AC : DM. Similarly, since rect(DE, MG) = sq(CB), by 6.17 DE : CB = CB : MG. By 6.22, since DE : AC = AC : DM, the squares on these are proportional: sq(DE) : sq(AC) = sq(AC) : sq(DM). Likewise sq(DE) : sq(CB) = sq(CB) : sq(MG). By 6.17 applied to the proportion sq(AC) : sq(CB) = sq(CB) : sq(MG)... rather, we proceed as follows.\n\n**Step 13.** By 6.13, let X be the mean proportional between AC and CB, so AC : X = X : CB. By 6.17, sq(X) = rect(AC, CB). By 6.22, since AC : X = X : CB, we have sq(AC) : sq(X) = sq(X) : sq(CB). Applying 6.17 to this proportion, rect(sq(AC), sq(CB)) = sq(sq(X)) = sq(rect(AC, CB)). That is, sq(AC) * sq(CB) = rect(AC, CB)^2.\n\n**Step 14.** Now rect(DE, DM) * rect(DE, MG) = sq(AC) * sq(CB) = rect(AC, CB)^2. Also rect(DE, GF) = 2*rect(AC, CB), so sq(rect(DE, GF)) = 4*rect(AC, CB)^2. By the result of Step 13, sq(rect(DE, GF)) = 4 * rect(DE, DM) * rect(DE, MG). But rect(DE, DM) * rect(DE, MG) = sq(DE) * rect(DM, MG) (since both products equal DE * DM * DE * MG = sq(DE) * DM * MG). And sq(rect(DE, GF)) = sq(DE) * sq(GF). Therefore sq(DE) * sq(GF) = 4 * sq(DE) * rect(DM, MG), hence sq(GF) = 4*rect(DM, MG).\n\n**Step 15.** By 2.4, sq(DM + MG) = sq(DM) + sq(MG) + 2*rect(DM, MG), that is, sq(DG) = sq(DM) + sq(MG) + 2*rect(DM, MG). By 2.7, sq(DM - MG) = sq(DM) + sq(MG) - 2*rect(DM, MG). Therefore sq(DG) - sq(DM - MG) = 4*rect(DM, MG) = sq(GF) (by Step 14). So sq(DG) - sq(GF) = sq(DM - MG), which means sq(DG) exceeds sq(GF) by the square on the straight line DM - MG.\n\n**Step 16.** We now show that DM - MG is incommensurable in length with DG = DM + MG. Suppose for contradiction that DM + MG is commensurable with DM - MG. Then by 10.15, (DM + MG) + (DM - MG) = 2*DM is commensurable with DM + MG. Likewise (DM + MG) - (DM - MG) = 2*MG is commensurable with DM + MG. By 10.12, 2*DM is commensurable with 2*MG, hence DM is commensurable with MG. But this contradicts Step 11. Therefore DM + MG is incommensurable in length with DM - MG, that is, DG is incommensurable with the straight line by which sq(DG) exceeds sq(GF).\n\n**Step 17.** We have established: DG and GF are rational and commensurable in square only (Step 8), so DF = DG + GF is a binomial (Step 9). Neither DG nor GF is commensurable in length with the rational straight line DE (Steps 5 and 6). The square on the greater term DG exceeds the square on the lesser term GF by the square on a straight line incommensurable in length with DG (Steps 15 and 16). By D10.2.6, these are precisely the conditions defining a sixth binomial. Therefore DF is a sixth binomial straight line.\n\n**Step 18.** Therefore the square on the side of the sum of two medial areas, applied to a rational straight line, produces as breadth the sixth binomial. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.15, 10.22, 10.23, 10.36, 10.41, 2.4, 2.7, 6.1, 6.13, 6.17, 6.22, CN3, D10.1.3, D10.2.6\n**Human refs (from References field):** 10.11, 10.22, 10.36, 10.41, 6.1\n**Jaccard:** 0.312 — AI adds ['10.12', '10.15', '10.23', '2.4', '2.7', '6.13', '6.17', '6.22', 'CN3', 'D10.1.3', 'D10.2.6']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.41",
+    "2.4",
+    "2.7",
+    "6.1",
+    "6.13",
+    "6.17",
+    "6.22",
+    "CN3",
+    "D10.1.3",
+    "D10.2.6"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.36",
+    "10.41",
+    "6.1"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "10.23",
+    "2.4",
+    "2.7",
+    "6.13",
+    "6.17",
+    "6.22",
+    "CN3",
+    "D10.1.3",
+    "D10.2.6"
+  ],
+  "heath_only": [],
+  "jaccard": 0.312,
+  "proof_summary": "**Step 1.** Let AB be the side of the sum of two medial areas, and let it be divided into its terms at C, so that AC and CB are the two straight lines of which AB is composed, with AC being the greate"
+}

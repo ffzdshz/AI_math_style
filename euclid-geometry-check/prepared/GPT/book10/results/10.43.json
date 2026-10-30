@@ -1,0 +1,31 @@
+{
+  "proposition": "10.43",
+  "run": "GPT",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points C and D lie on segment AB, dividing it into terms, with AC > CB and AD > DB",
+      "type": "collinear point position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "After possible interchange, the order of points along AB is A, D, C, B",
+      "type": "collinear point ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AC = AD + DC (D lies between A and C) and DB = DC + CB (C lies between D and B)",
+      "type": "segment decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AD > DB > CB (AD > DB given; DB > CB since DB = DC + CB with DC > 0)",
+      "type": "length comparison"
+    }
+  ],
+  "configuration_map": "All points are collinear on segment AB. The configuration is simply A---D---C---B on a line, with AC > CB (given for division at C), AD > DB (given for division at D). Since D is between A and C, we have AD < AC and DB > CB. The only geometric content is this linear ordering; all other reasoning operates on magnitudes (squares, rectangles, commensurability, medial/rational area classification) with no planar or spatial geometry involved.",
+  "pass_reason": "The proof is overwhelmingly algebraic, dealing with irrational magnitudes and commensurability from Book 10. The only spatial content is the trivial collinear ordering of four points on a line segment (A, D, C, B), which is handled correctly and consistently throughout. All segment decompositions and length inequalities are mutually compatible. No angle decompositions, interior/exterior claims, or other high-risk spatial patterns are present."
+}

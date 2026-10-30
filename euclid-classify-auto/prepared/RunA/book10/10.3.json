@@ -1,0 +1,30 @@
+{
+  "proposition": "10.3",
+  "book": 10,
+  "statement": "Given two commensurable magnitudes, to find their greatest common measure.",
+  "heath_proof": "Let the two given commensurable magnitudes be AB, CD of which AB is the less; thus it is required to find the greatest common measure of AB, CD. Now the magnitude AB either measures CD or it does not. If then it measures it—and it measures itself also— AB is a common measure of AB, CD. And it is manifest that it is also the greatest; for a greater magnitude than the magnitude AB will not measure AB. Next, let AB not measure CD. Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because AB, CD are not incommensurable; [cf. X. 2] let AB, measuring ED, leave EC less than itself, let EC, measuring FB, leave AF less than itself, and let AF measure CE. Since, then, AF measures CE, while CE measures FB, therefore AF will also measure FB. But it measures itself also; therefore AF will also measure the whole AB. But AB measures DE; therefore AF will also measure ED. But it measures CE also; therefore it also measures the whole CD. Therefore AF is a common measure of AB, CD. I say next that it is also the greatest. For, if not, there will be some magnitude greater than AF which will measure AB, CD. Let it be G. Since then G measures AB, while AB measures ED, therefore G will also measure ED. But it measures the whole CD also; therefore G will also measure the remainder CE. But CE measures FB; therefore G will also measure FB. But it measures the whole AB also, and it will therefore measure the remainder AF, the greater the less: which is impossible. Therefore no magnitude greater than AF will measure AB, CD; therefore AF is the greatest common measure of AB, CD. Therefore the greatest common measure of the two given commensurable magnitudes AB, CD has been found.",
+  "ai_proof_text": "10.3\n**Statement:** Given two commensurable magnitudes, to find their greatest common measure.\n\n**Step 1.** Let A and B be two given commensurable magnitudes, and let A be the greater (if they are equal, then B itself measures A, and B is the greatest common measure; so assume A is greater than B). We are to find their greatest common measure. [D10.1.1]\n\n**Step 2.** Since A and B are commensurable, by definition there exists some magnitude C that measures both A and B. [D10.1.1]\n\n**Step 3.** Now perform the process of repeated subtraction (antanairesis): subtract the less, B, from the greater, A, repeatedly. If B measures A, then B is a common measure of A and B. Since B measures itself, and B measures A, B is a common measure. Moreover, since every common measure of A and B must measure B, and B is no greater than itself, B is the greatest common measure. In this case we are done.\n\n**Step 4.** If B does not measure A, then after repeatedly subtracting B from A, some magnitude less than B is left; call this remainder R1 (where R1 = A - nB for the largest n such that nB < A, and R1 < B). [CN5, D5.1]\n\n**Step 5.** If R1 measures B, then R1 is the greatest common measure (as will be shown below). If R1 does not measure B, subtract R1 from B repeatedly, leaving some remainder R2 with R2 < R1. Continue this process.\n\n**Step 6.** We claim this process must terminate. For suppose it does not terminate, so that the less is never measured by the remainder. Then by Proposition 10.2, A and B would be incommensurable. But A and B are given as commensurable, a contradiction. Therefore the process must terminate; that is, at some stage a remainder exactly measures the one before it. [10.2]\n\n**Step 7.** Let the process terminate with the last nonzero remainder being E, so that E exactly measures the remainder before it. We shall show E is the greatest common measure of A and B.\n\n**Step 8.** First, we show E is a common measure of A and B. Since E measures the previous remainder, and the previous remainder together with multiples of E reconstitutes the remainder before that, E also measures that earlier remainder. Continuing to unwind the chain of subtractions: at each stage, the magnitude being subtracted from is equal to a multiple of the subtracted magnitude plus the next remainder, so if E measures both the subtracted magnitude and the remainder, then E measures the magnitude being subtracted from. [D5.1, D5.2, CN2]\n\n**Step 9.** Unwinding completely: E measures the last two remainders, hence it measures the one before them, and so on, until we conclude E measures B, and since E measures B and the first remainder R1, it measures A (because A equals a multiple of B plus R1). Therefore E is a common measure of A and B.\n\n**Step 10.** Now we show E is the greatest common measure. Let F be any common measure of A and B. Since F measures A and F measures B, F measures the remainder R1 = A - nB (because if F measures both A and nB, then F measures their difference). [CN3]\n\n**Step 11.** Similarly, since F measures B and F measures R1, F measures the next remainder R2 = B - mR1. Continuing down the chain of remainders, F measures every successive remainder, and in particular F measures E.\n\n**Step 12.** Since F measures E, we have F is less than or equal to E. [D5.1, CN5] Therefore every common measure of A and B measures E, and hence no common measure exceeds E.\n\n**Step 13.** Therefore E is the greatest common measure of the commensurable magnitudes A and B. Q.E.F.\n\n**USED:** 10.2, CN2, CN3, CN5, D10.1.1, D5.1, D5.2\n**Human refs (from References field):** 10.2\n**Jaccard:** 0.143 — AI adds ['CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.1', 'D5.2']",
+  "ai_used": [
+    "10.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "10.2"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A and B be two given commensurable magnitudes, and let A be the greater (if they are equal, then B itself measures A, and B is the greatest common measure; so assume A is greater than "
+}

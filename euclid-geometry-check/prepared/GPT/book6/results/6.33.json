@@ -1,0 +1,46 @@
+{
+  "proposition": "6.33",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Angles theta and phi stand at centres (or circumferences) of two equal circles, intercepting arcs a and b respectively",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Constructing angle equal to the smaller inside the greater (sharing one boundary side) places the new ray between the sides of the greater angle; its intercepted arc is a proper part of the greater arc",
+      "type": "ray_between"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Repeated bisection of theta into k equal adjacent angles with dividing rays extended to the circumference produces k equal successive sub-arcs of arc a",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Repeated bisection of phi into k equal adjacent angles with dividing rays extended to the circumference produces k equal successive sub-arcs of arc b",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Auxiliary angle Theta = m*theta_0 (m <= k) remains within original angle theta; auxiliary arc A = m*a_0 remains within arc a",
+      "type": "containment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Auxiliary angle Phi = n*phi_0 (n <= k) remains within original angle phi; auxiliary arc B = n*b_0 remains within arc b",
+      "type": "containment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Comparison between Theta and Phi agrees with comparison between A and B by the angle-arc correspondence of Step 2",
+      "type": "ordering"
+    }
+  ],
+  "configuration_map": "Two equal circles with centres (or circumference points). Angle theta in circle 1 intercepts arc a; angle phi in circle 2 intercepts arc b. Each angle is subdivided into k = 2^p equal parts by repeated bisection (I.9), with dividing rays extended to the circumference (P2), producing k equal sub-arcs (III.26). Auxiliary angles Theta = m*theta_0 and Phi = n*phi_0 are formed by taking m and n consecutive subdivisions respectively (m, n <= k), staying within the original angles and arcs. The comparison between these sub-angles reduces to comparison between corresponding sub-arcs via the angle-arc correspondence. The k-fold repetition kTheta = m*theta, kPhi = n*phi preserves ordering, completing the equimultiple criterion for V.Def.5.",
+  "pass_reason": "All spatial claims are mutually consistent. The geometric content is limited to angle bisection (always valid by I.9), ray extension to circumference (P2), and the angle-arc correspondence (III.26). No problematic angle decomposition or ray-betweenness claim exists. The bulk of the argument is algebraic/proportional using the equimultiple criterion, and the spatial claims that do exist (subdivision containment, arc correspondence) are straightforward and non-contradictory."
+}

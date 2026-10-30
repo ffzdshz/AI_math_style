@@ -1,0 +1,37 @@
+{
+  "proposition": "12.6",
+  "book": 12,
+  "statement": "Pyramids which are of the same height and have polygonal bases are to one another as the bases.",
+  "heath_proof": "Let there be pyramids of the same height of which the polygons ABCDE, FGHKL are the bases and the points M, N the vertices; I say that, as the base ABCDE is to the base FGHKL, so is the pyramid ABCDEM to the pyramid FGHKLN. For let AC, AD, FH, FK be joined. Since then ABCM, ACDM are two pyramids which have triangular bases and equal height, they are to one another as the bases; [XII. 5] therefore, as the base ABC is to the base ACD, so is the pyramid ABCM to the pyramid ACDM. And, componendo, as the base ABCD is to the base ACD, so is the pyramid ABCDM to the pyramid ACDM. [V. 18] But also, as the base ACD is to the base ADE, so is the pyramid ACDM to the pyramid ADEM. [XII. 5] Therefore, ex aequali, as the base ABCD is to the base ADE, so is the pyramid ABCDM to the pyramid ADEM. [V. 22] And again componendo, as the base ABCDE is to the base ADE, so is the pyramid ABCDEM to the pyramid ADEM. [V. 18] Similarly also it can be proved that, as the base FGHKL is to the base FGH, so is the pyramid FGHKLN to the pyramid FGHN. And, since ADEM, FGHN are two pyramids which have triangular bases and equal height, therefore, as the base ADE is to the base FGH, so is the pyramid ADEM to the pyramid FGHN. [XII. 5] But, as the base ADE is to the base ABCDE, so was the pyramid ADEM to the pyramid ABCDEM. Therefore also, ex aequali, as the base ABCDE is to the base FGH, so is the pyramid ABCDEM to the pyramid FGHN. [V. 22] But further, as the base FGH is to the base FGHKL, so also was the pyramid FGHN to the pyramid FGHKLN. Therefore also, ex aequali, as the base ABCDE is to the base FGHKL, so is the pyramid ABCDEM to the pyramid FGHKLN. [V. 22]",
+  "ai_proof_text": "12.6\n**Statement:** Pyramids which are of the same height and have polygonal bases are to one another as the bases.\n\n**Step 1.** Let P and Q be pyramids with polygonal bases A and B and equal heights. We also use these letters for their respective solid and plane magnitudes. The height is the perpendicular distance from the vertex to the base plane. [D11.12, D6.4] Path choice: triangulate the bases and apply 12.5; then use 5.24, the natural addition theorem because the component comparisons will have fixed consequents.\n\n**Step 2.** Draw noncrossing diagonals dividing A into triangles A₁, …, Aₘ and B into triangles B₁, …, Bₙ. Through each diagonal and the corresponding pyramid’s vertex take the plane determined by them. These planes divide P into triangular-based pyramids P₁, …, Pₘ with bases A₁, …, Aₘ, and Q into triangular-based pyramids Q₁, …, Qₙ with bases B₁, …, Bₙ. [P1, 11.2, D11.12] The pieces fill their respective figures without overlapping interiors, so\nA = A₁ + ⋯ + Aₘ,  B = B₁ + ⋯ + Bₙ,\nP = P₁ + ⋯ + Pₘ,  Q = Q₁ + ⋯ + Qₙ. [CN2]\n\n**Step 3.** Each component pyramid has the same vertex and base plane as its original pyramid, and therefore the same height. Consequently all the component pyramids have equal heights. [D6.4] Fix Q₁ as a reference pyramid. By the triangular-base result, for every i and j,\nPᵢ : Q₁ = Aᵢ : B₁,\nand\nQⱼ : Q₁ = Bⱼ : B₁. [12.5]\n\n**Step 4.** Add the antecedents in the first family of proportions, retaining the fixed consequents Q₁ and B₁. Repeated application of 5.24, followed by the partition identities in Step 2, gives\nP : Q₁ = A : B₁.\nDoing the same with the second family gives\nQ : Q₁ = B : B₁. [5.24, CN2]\n\n**Step 5.** Invert the latter proportion to obtain\nQ₁ : Q = B₁ : B.\nThis follows directly from the definition of equal ratios: interchanging the two groups of arbitrary equimultiples reverses both corresponding inequalities and preserves equality. [D5.5]\n\n**Step 6.** We now have\nP : Q₁ = A : B₁\nand\nQ₁ : Q = B₁ : B.\nTherefore, ex aequali,\nP : Q = A : B. [5.22]\nThus pyramids of the same height with polygonal bases are to one another as their bases.\n\n**USED:** 11.2, 12.5, 5.22, 5.24, CN2, D11.12, D5.5, D6.4, P1\n**Human refs (from References field):** 12.5, 5.18, 5.22\n**Jaccard:** 0.200 — AI adds ['11.2', '5.24', 'CN2', 'D11.12', 'D5.5', 'D6.4', 'P1']; Human adds ['5.18']",
+  "ai_used": [
+    "11.2",
+    "12.5",
+    "5.22",
+    "5.24",
+    "CN2",
+    "D11.12",
+    "D5.5",
+    "D6.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "12.5",
+    "5.18",
+    "5.22"
+  ],
+  "ai_only": [
+    "11.2",
+    "5.24",
+    "CN2",
+    "D11.12",
+    "D5.5",
+    "D6.4",
+    "P1"
+  ],
+  "heath_only": [
+    "5.18"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let P and Q be pyramids with polygonal bases A and B and equal heights. We also use these letters for their respective solid and plane magnitudes. The height is the perpendicular distance "
+}

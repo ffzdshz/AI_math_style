@@ -1,0 +1,44 @@
+{
+  "proposition": "11.37",
+  "book": 11,
+  "statement": "If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described will also be proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.",
+  "heath_proof": "Let AB, CD, EF, GH be four straight lines in proportion, so that, as AB is to CD, so is EF to GH; and let there be described on AB, CD, EF, GH the similar and similarly situated parallelepipedal solids KA, LC, ME, NG; I say that, as KA is to LC, so is ME to NG. For, since the parallelepipedal solid KA is similar to LC, therefore KA has to LC the ratio triplicate of that which AB has to CD. [XI. 33] For the same reason ME also has to NG the ratio triplicate of that which EF has to GH. And, as AB is to CD, so is EF to GH. Therefore also, as AK is to LC, so is ME to NG. Next, as the solid AK is to the solid LC, so let the solid ME be to the solid NG; I say that, as the straight line AB is to CD, so is EF to GH. For since, again, KA has to LC the ratio triplicate of that which AB has to CD, [XI. 33] and ME also has to NG the ratio triplicate of that which EF has to GH, and, as KA is to LC, so is ME to NG, therefore also, as AB is to CD, so is EF to GH.",
+  "ai_proof_text": "11.37\n**Statement:** If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described will also be proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.\n\n**Step 1.** Let a, b, c, d be the four straight lines, and let A, B, C, D be the respective parallelepipedal solids, similar and similarly described, with these lines as corresponding edges. We use 11.33 because it directly relates the ratios of these solids to those of their corresponding edges.\n\n**Step 2.** By repeated application of 6.11, construct straight lines x, y, z, w such that\n\na:b = b:x = x:y, and c:d = d:z = z:w.\n\nThus a:y is the triplicate ratio of a:b, and c:w is the triplicate ratio of c:d [D5.10]. Consequently,\n\nA:B = a:y, and C:D = c:w [11.33].\n\n**Step 3.** First suppose that a:b = c:d. The corresponding successive ratios in the two chains of Step 2 are therefore equal. Hence, ex aequali, a:y = c:w [5.22]. Combining this with Step 2 gives A:B = C:D [5.11]. Thus the solids are proportional [D5.6].\n\n**Step 4.** Conversely, suppose that A:B = C:D. Construct a fourth proportional e to a, b, c, so that a:b = c:e [6.12]. On e construct a parallelepipedal solid E similar and similarly described to C [11.27]. The corresponding faces of D and E are similar to the same faces of C, and hence are similar to one another [6.21]. Since their faces are also equal in multitude, D and E are similar solids [D11.9]. This construction reduces the converse to comparing the corresponding edges of two equal similar solids.\n\n**Step 5.** Applying the forward implication proved in Steps 2–3 to a, b, c, e and their solids gives A:B = C:E. Together with the hypothesis A:B = C:D, this yields C:D = C:E [5.11]. Therefore D = E, since magnitudes to which the same magnitude has the same ratio are equal [5.9].\n\n**Step 6.** Construct straight lines p, q such that d:e = e:p = p:q [6.11]. Since D and E are similar and d, e are their corresponding edges,\n\nD:E = d:q [11.33, D5.10].\n\nBut D = E by Step 5. Taking each of the equimultiples in the definition of equal ratios to be the magnitude itself, the equality D = E therefore implies d = q [D5.5].\n\n**Step 7.** If d were greater than e, then d:e = e:p would imply e > p, and e:p = p:q would imply p > q [5.14]. Hence d > e > p > q, contrary to d = q. If d were less than e, the same applications of 5.14 would give d < e < p < q, again contrary to d = q. Therefore d = e.\n\n**Step 8.** Since d = e, we have c:d = c:e [5.7]. Combining this with the constructed proportion a:b = c:e gives a:b = c:d [5.11]. Thus the straight lines are proportional [D5.6]. Both implications are proved.\n\n**USED:** 11.27, 11.33, 5.11, 5.14, 5.22, 5.7, 5.9, 6.11, 6.12, 6.21, D11.9, D5.10, D5.5, D5.6\n**Human refs (from References field):** 11.33\n**Jaccard:** 0.071 — AI adds ['11.27', '5.11', '5.14', '5.22', '5.7', '5.9', '6.11', '6.12', '6.21', 'D11.9', 'D5.10', 'D5.5', 'D5.6']",
+  "ai_used": [
+    "11.27",
+    "11.33",
+    "5.11",
+    "5.14",
+    "5.22",
+    "5.7",
+    "5.9",
+    "6.11",
+    "6.12",
+    "6.21",
+    "D11.9",
+    "D5.10",
+    "D5.5",
+    "D5.6"
+  ],
+  "heath_refs": [
+    "11.33"
+  ],
+  "ai_only": [
+    "11.27",
+    "5.11",
+    "5.14",
+    "5.22",
+    "5.7",
+    "5.9",
+    "6.11",
+    "6.12",
+    "6.21",
+    "D11.9",
+    "D5.10",
+    "D5.5",
+    "D5.6"
+  ],
+  "heath_only": [],
+  "jaccard": 0.071,
+  "proof_summary": "**Step 1.** Let a, b, c, d be the four straight lines, and let A, B, C, D be the respective parallelepipedal solids, similar and similarly described, with these lines as corresponding edges. We use 11"
+}

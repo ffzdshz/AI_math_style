@@ -1,0 +1,28 @@
+{
+  "proposition": "11.21",
+  "book": 11,
+  "statement": "Any solid angle is contained by plane angles less than four right angles.",
+  "heath_proof": "Let the angle at A be a solid angle contained by the plane angles BAC, CAD, DAB; I say that the angles BAC, CAD, DAB are less than four right angles. For let points B, C, D be taken at random on the straight lines AB, AC, AD respectively, and let BC, CD, DB be joined. Now, since the solid angle at B is contained by the three plane angles CBA, ABD, CBD, any two are greater than the remaining one; [XI. 20] therefore the angles CBA, ABD are greater than the angle CBD. For the same reason the angles BCA, ACD are also greater than the angle BCD, and the angles CDA, ADB are greater than the angle CDB; therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than the three angles CBD, BCD, CDB. But the three angles CBD, BDC, BCD are equal to two right angles; [I. 32] therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than two right angles. And, since the three angles of each of the triangles ABC, ACD, ADB are equal to two right angles, therefore the nine angles of the three triangles, the angles CBA, ACB, BAC, ACD, CDA, CAD, ADB, DBA, BAD are equal to six right angles; and of them the six angles ABC, BCA, ACD, CDA, ADB, DBA are greater than two right angles; therefore the remaining three angles BAC, CAD, DAB containing the solid angle are less than four right angles.",
+  "ai_proof_text": "11.21\n**Statement:** Any solid angle is contained by plane angles less than four right angles.\n\n**Step 1.** Let there be a solid angle at the point A, contained by the plane angles BAC, CAD, DAE, EAF, and FAB. (The argument applies to any solid angle contained by any number of plane angles, at least three.) We shall prove that the sum of these plane angles is less than four right angles.\n\n**Step 2.** Let the edges AB, AC, AD, AE, AF be cut by a plane, producing the polygon BCDEF as the cross-section. This yields face triangles ABC, ACD, ADE, AEF, and AFB, each sharing a vertex at A and having its base as a side of the polygon BCDEF [P1, D11.11].\n\n**Step 3.** Since the face triangles ABC, ACD, ADE, AEF, and AFB each have their angle sum equal to two right angles [1.32], and there are n such triangles (where n is the number of plane angles forming the solid angle, here n = 5), the total sum of all angles in all n face triangles equals n times two right angles.\n\n**Step 4.** This total sum can be partitioned into two parts: (i) the sum of the angles at vertex A, which is the sum of all the plane angles BAC, CAD, DAE, EAF, and FAB forming the solid angle; and (ii) the sum of all the base angles, that is, the remaining two angles in each face triangle (for instance, angles ABC and ACB in triangle ABC, and so on for each face triangle).\n\n**Step 5.** At each vertex of the polygon BCDEF, a solid angle is formed by exactly three plane angles: the two base angles of the two face triangles meeting at that vertex and the interior angle of the polygon at that vertex. For example, at vertex B, the three plane angles are angle ABF (base angle of triangle AFB), angle ABC (base angle of triangle ABC), and angle FBC (interior angle of the polygon BCDEF). By Proposition 11.20, any two of the three plane angles containing a solid angle are greater than the remaining one. Therefore angle ABF + angle ABC > angle FBC [11.20].\n\n**Step 6.** The same inequality holds at each vertex of the polygon: the sum of the two base angles of the face triangles at that vertex exceeds the interior angle of the polygon at that vertex. Therefore, adding all n such inequalities, the total sum of all base angles of the face triangles is greater than the total sum of all interior angles of the polygon BCDEF [CN2].\n\n**Step 7.** The polygon BCDEF, having n sides, can be decomposed into (n - 2) triangles by drawing diagonals from one vertex [P1]. By Proposition 1.32, the angle sum of each of these triangles is two right angles. Therefore the sum of all interior angles of the polygon BCDEF equals (n - 2) times two right angles [1.32].\n\n**Step 8.** From Step 6, the sum of all base angles of the face triangles is greater than (n - 2) times two right angles (the polygon angle sum). From Step 4, the sum of all base angles equals n times two right angles minus the sum of the plane angles at A. Therefore: n times two right angles minus the sum of the plane angles at A is greater than (n - 2) times two right angles.\n\n**Step 9.** Rearranging the inequality from Step 8: the sum of the plane angles at A is less than n times two right angles minus (n - 2) times two right angles, which equals 2 times two right angles, that is, four right angles [CN5].\n\n**Step 10.** Therefore any solid angle is contained by plane angles whose sum is less than four right angles. Q.E.D.\n\n**USED:** 1.32, 11.20, CN2, CN5, D11.11, P1\n**Human refs (from References field):** 1.32, 11.20\n**Jaccard:** 0.333 — AI adds ['CN2', 'CN5', 'D11.11', 'P1']",
+  "ai_used": [
+    "1.32",
+    "11.20",
+    "CN2",
+    "CN5",
+    "D11.11",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "11.20"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN5",
+    "D11.11",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let there be a solid angle at the point A, contained by the plane angles BAC, CAD, DAE, EAF, and FAB. (The argument applies to any solid angle contained by any number of plane angles, at l"
+}

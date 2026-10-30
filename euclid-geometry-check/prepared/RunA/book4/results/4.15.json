@@ -1,0 +1,112 @@
+{
+  "proposition": "4.15",
+  "run": "RunA",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Circle ABCDEF has center G; AD is a diameter, so A, G, D are collinear",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Circle GCH centered at D with radius DG intersects the main circle at two points (C and E) symmetric about diameter AD, hence on opposite sides of AD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Circle GFK centered at A with radius AG intersects the main circle at two points (B and F) symmetric about diameter AD, hence on opposite sides of AD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "C lies on both the main circle and circle GCH; triangle GCD is equilateral; C is on one side of diameter AD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E lies on both the main circle and circle GCH; triangle GDE is equilateral; E is on the opposite side of diameter AD from C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angles AGC, CGD, and DGE are all on the same side of line AD ('the side containing C and E'), so AGC + CGD + DGE = 180 degrees by I.13",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle CGE = angle CGD + angle DGE (ray GD between rays GC and GE)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle AGE = 60 degrees (one-third of two right angles)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "B lies on circle GFK and the main circle, above AD; triangle GAB is equilateral; angle AGB = 60 degrees",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle AGB + angle BGD = 180 degrees by I.13 (B is above AD, both angles on upper side)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle BGD = angle BGC + angle CGD, with ray GC between rays GB and GD (both B and C above AD)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "F lies on circle GFK and the main circle, below AD; triangle GAF is equilateral; angle AGF = 60 degrees",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle BGC = 60 degrees",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle AGF + angle FGD = 180 degrees by I.13 (F is below AD, both angles on lower side)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle FGD = angle FGE + angle EGD, with ray GE between rays GF and GD (both E and F below AD)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle FGE = 60 degrees",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Six central angles AGB, BGC, CGD, DGE, EGF, FGA are all 60 degrees, summing to 360 degrees",
+      "type": "angle_decomposition"
+    }
+  ],
+  "configuration_map": "Center G at origin. D at (r,0), A at (-r,0) on the diameter. Circle centered at D with radius r intersects main circle at C = (r/2, r*sqrt(3)/2) at 60 degrees ABOVE line AD, and E = (r/2, -r*sqrt(3)/2) at 300 degrees BELOW line AD. Circle centered at A with radius r intersects main circle at B = (-r/2, r*sqrt(3)/2) at 120 degrees ABOVE AD, and F = (-r/2, -r*sqrt(3)/2) at 240 degrees BELOW AD. Thus C and B are on the upper side of diameter AD, while E and F are on the lower side. Through Steps 3-4, C and E are established as the two intersection points of circle GCH with the main circle, placed symmetrically on opposite sides of AD. In Step 5, the proof treats C and E as if they are on the SAME side of AD, which contradicts their established positions. Steps 6-7 correctly handle the side-of-line relationships (B,C above; E,F below) and independently derive all six central angles correctly.",
+  "contradictory_steps": [
+    "Step 2-4 (construction)",
+    "Step 5"
+  ],
+  "spatial_claim_1": {
+    "step": "Steps 2-4",
+    "claim": "C and E are the two intersection points of circle GCH (centered at D, radius DG) with the main circle, placed symmetrically on opposite sides of diameter AD. C is above AD and E is below AD.",
+    "required_by": "Construction via Postulate 3 and the equilateral triangle arguments in Steps 3-4"
+  },
+  "spatial_claim_2": {
+    "step": "Step 5",
+    "claim": "Angles AGC, CGD, and DGE are all on one side of line AD (the side containing C and E), so by I.13 they sum to 180 degrees. This implies angle AGE = 60 degrees.",
+    "required_by": "Application of I.13 in Step 5 to derive angle AGE"
+  },
+  "contradiction": "C is above diameter AD and E is below it (from the symmetric construction). Step 5 claims angles AGC + CGD + DGE are all on one side of line AD and sum to 180 degrees by I.13. But angle AGC + angle CGD = 120 + 60 = 180 degrees accounts for the entire upper side, while angle DGE = 60 degrees is on the lower side. The three-angle sum is actually 240 degrees, not 180 degrees. The correct angle AGE is 120 degrees (spanning two hexagonal arcs A-F-E), not 60 degrees as claimed. The erroneous Step 5 conclusion is never used in subsequent steps — Steps 6-7 independently and correctly derive all six central angles — so the proof's final result is correct despite this error.",
+  "fixable": true,
+  "fix_note": "Step 5 is entirely unnecessary and should be removed. Steps 3, 4, 6, and 7 independently establish all six central angles (CGD, DGE, AGB, AGF, BGC, FGE) as 60 degrees using correct I.13 applications. Alternatively, Step 5 could be rewritten to correctly apply I.13 separately to each side: on the upper side AGC + CGD = 180 giving AGC = 120, and on the lower side DGE + EGA = 180 giving EGA = 120. But since these intermediate values are not needed for the proof, deletion is the simplest fix."
+}

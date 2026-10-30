@@ -1,0 +1,38 @@
+{
+  "proposition": "10.42",
+  "book": 10,
+  "statement": "A binomial straight line is divided into its terms at one point only.",
+  "heath_proof": "Let AB be a binomial straight line divided into its terms at C; therefore AC, CB are rational straight lines commensurable in square only. [X. 36] I say that AB is not divided at another point into two rational straight lines commensurable in square only. For, if possible, let it be divided at D also, so that AD, DB are also rational straight lines commensurable in square only. It is then manifest that AC is not the same with DB. For, if possible, let it be so. Then AD will also be the same as CB, and, as AC is to CB, so will BD be to DA; thus AB will be divided at D also in the same way as by the division at C: which is contrary to the hypothesis. Therefore AC is not the same with DB. For this reason also the points C, D are not equidistant from the point of bisection. Therefore that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, because both the squares on AC, CB together with twice the rectangle AC, CB, and the squares on AD, DB together with twice the rectangle AD, DB, are equal to the square on AB. [II. 4] But the squares on AC, CB differ from the squares on AD, DB by a rational area, for both are rational; therefore twice the rectangle AD, DB also differs from twice the rectangle AC, CB by a rational area, though they are medial [X. 21]: which is absurd, for a medial area does not exceed a medial by a rational area. [x. 26] Therefore a binomial straight line is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.42\n**Statement:** A binomial straight line is divided into its terms at one point only.\n\n**Step 1.** Let AB be a binomial straight line, divided into its terms at C, so that AC and CB are rational straight lines commensurable in square only, with AC the greater term [10.36, D10.1.3].\n\n**Step 2.** Suppose for contradiction that AB is also divided into its terms at a different point D, so that AD and DB are rational straight lines commensurable in square only, with AD the greater term.\n\n**Step 3.** Since AC and CB are rational, the squares on AC and CB are each rational areas [D10.1.4]. Since AC and CB are commensurable in square, the squares on AC and CB are commensurable with each other. Therefore the sum sq(AC) + sq(CB) is rational [10.15].\n\n**Step 4.** Since AC and CB are rational straight lines commensurable in square only, the rectangle contained by AC and CB is medial [10.21]. Twice this rectangle is also medial, since doubling corresponds to multiplication by a rational factor, preserving mediality.\n\n**Step 5.** By the same reasoning, the sum sq(AD) + sq(DB) is rational [10.15, D10.1.4], and twice the rectangle rect(AD,DB) is medial [10.21].\n\n**Step 6.** Since AC + CB = AB = AD + DB, by Proposition 2.4 the square on AB decomposes as sq(AB) = sq(AC) + sq(CB) + 2·rect(AC,CB) and also as sq(AB) = sq(AD) + sq(DB) + 2·rect(AD,DB) [2.4].\n\n**Step 7.** Equating these two expressions and rearranging: [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2·rect(AD,DB) - 2·rect(AC,CB) [CN1, CN2, CN3].\n\n**Step 8.** The left side is the difference of two rational areas, hence rational. The right side is the difference of two medial areas. By Proposition 10.26, a medial area does not exceed a medial area by a rational area [10.26]. Therefore both sides equal zero.\n\n**Step 9.** From Step 8 we obtain two equalities: (i) sq(AC) + sq(CB) = sq(AD) + sq(DB), and (ii) rect(AC,CB) = rect(AD,DB).\n\n**Step 10.** From equality (i), we have sq(AC) + sq(CB) - 2·rect(AC,CB) = sq(AD) + sq(DB) - 2·rect(AD,DB), using equality (ii). By Proposition 2.7, for a line divided into two parts, the square on the whole plus the square on one part equals twice the rectangle under the whole and that part plus the square on the remaining part. Applying this and related identities, sq(AC) + sq(CB) - 2·rect(AC,CB) equals the square on the difference AC - CB, and sq(AD) + sq(DB) - 2·rect(AD,DB) equals the square on the difference AD - DB [2.7]. Therefore sq(AC - CB) = sq(AD - DB), whence AC - CB = AD - DB.\n\n**Step 11.** We have the system: AC + CB = AD + DB (both sums equal AB) and AC - CB = AD - DB (from Step 10). Adding these two equations gives 2·AC = 2·AD, so AC = AD [CN2]. Subtracting gives 2·CB = 2·DB, so CB = DB [CN3].\n\n**Step 12.** Since AC = AD and CB = DB, the points C and D coincide, contradicting our assumption that they are distinct.\n\n**Step 13.** Therefore a binomial straight line is divided into its terms at one point only. Q.E.D.\n\n**USED:** 10.15, 10.21, 10.26, 10.36, 2.4, 2.7, CN1, CN2, CN3, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.21, 10.36, 2.4\n**Jaccard:** 0.273 — AI adds ['10.15', '10.26', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.3', 'D10.1.4']",
+  "ai_used": [
+    "10.15",
+    "10.21",
+    "10.26",
+    "10.36",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.21",
+    "10.36",
+    "2.4"
+  ],
+  "ai_only": [
+    "10.15",
+    "10.26",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.273,
+  "proof_summary": "**Step 1.** Let AB be a binomial straight line, divided into its terms at C, so that AC and CB are rational straight lines commensurable in square only, with AC the greater term [10.36, D10.1.3].  **S"
+}

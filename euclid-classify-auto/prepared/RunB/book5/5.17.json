@@ -1,0 +1,28 @@
+{
+  "proposition": "5.17",
+  "book": 5,
+  "statement": "If magnitudes be proportional componendo, they will also be proportional separando.",
+  "heath_proof": "Let AB, BE, CD, DF be magnitudes proportional componendo, so that, as AB is to BE, so is CD to DF; I say that they will also be proportional separando, that is, as AE is to EB, so is CF to DF. For of AE, EB, CF, FD let equimultiples GH, HK, LM, MN be taken, and of EB, FD other, chance, equimultiples, KO, NP. Then, since GH is the same multiple of AE that HK is of EB, therefore GH is the same multiple of AE that GK is of AB. [V. 1] But GH is the same multiple of AE that LM is of CF; therefore GK is the same multiple of AB that LM is of CF. Again, since LM is the same multiple of CF that MN is of FD, therefore LM is the same multiple of CF that LN is of CD. [V. 1] But LM was the same multiple of CF that GK is of AB; therefore GK is the same multiple of AB that LN is of CD. Therefore GK, LN are equimultiples of AB, CD. Again, since HK is the same multiple of EB that MN is of FD, and KO is also the same multiple of EB that NP is of FD, therefore the sum HO is also the same multiple of EB that MP is of FD. [V. 2]  And, since, as AB is to BE, so is CD to DF, and of AB, CD equimultiples GK, LN have been taken, and of EB, FD equimultiples HO, MP, therefore, if GK is in excess of HO, LN is also in excess of MP, if equal, equal, and if less, less. Let GK be in excess of HO; then, if HK be subtracted from each, GH is also in excess of KO. But we saw that, if GK was in excess of HO, LN was also in excess of MP; therefore LN is also in excess of MP,  and, if MN be subtracted from each, LM is also in excess of NP; so that, if GH is in excess of KO, LM is also in excess of NP. Similarly we can prove that, if GH be equal to KO, LM will also be equal to NP, and if less, less. And GH, LM are equimultiples of AE, CF, while KO, NP are other, chance, equimultiples of EB, FD; therefore, as AE is to EB, so is CF to FD.",
+  "ai_proof_text": "5.17\n**Statement:** If magnitudes be proportional componendo, they will also be proportional separando.\n\n**Step 1.** Let AE, EB, CF, FD be four magnitudes proportional componendo, so that AB:BE :: CD:DF, where AB = AE + EB and CD = CF + FD. We must show that they are proportional separando, i.e., AE:EB :: CF:FD (D5.14, D5.15).\n\n**Step 2.** Take any equimultiples mAE and mCF of AE and CF respectively, and any equimultiples nEB and nFD of EB and FD respectively (where m and n are arbitrary positive integers).\n\n**Step 3.** Since mAE is the m-th multiple of AE and mEB is the m-th multiple of EB, and since AB = AE + EB, by 5.1 we have that mAE + mEB = m(AE + EB) = mAB. That is, mAB is the m-th multiple of AB. Similarly, mCF + mFD = m(CF + FD) = mCD, so mCD is the m-th multiple of CD. Therefore mAB and mCD are equimultiples of AB and CD.\n\n**Step 4.** Since mEB is the m-th multiple of EB and nEB is the n-th multiple of EB, by 5.2 the sum mEB + nEB is the (m+n)-th multiple of EB. Similarly, mFD + nFD is the (m+n)-th multiple of FD. Therefore (m+n)EB and (m+n)FD are equimultiples of BE and DF.\n\n**Step 5.** Since AB:BE :: CD:DF by hypothesis, and mAB, mCD are equimultiples of AB, CD while (m+n)BE, (m+n)DF are equimultiples of BE, DF, by D5.5 the three cases hold simultaneously: if mAB > (m+n)BE then mCD > (m+n)DF; if mAB = (m+n)BE then mCD = (m+n)DF; if mAB < (m+n)BE then mCD < (m+n)DF.\n\n**Step 6.** Now mAB = mAE + mEB (from Step 3). So mAB > (m+n)EB, i.e., mAE + mEB > mEB + nEB, holds if and only if mAE > nEB (by CN3, subtracting the common magnitude mEB from both sides). Similarly mAB = (m+n)EB if and only if mAE = nEB, and mAB < (m+n)EB if and only if mAE < nEB.\n\n**Step 7.** Likewise, mCD = mCF + mFD (from Step 3). So mCD > (m+n)FD, i.e., mCF + mFD > mFD + nFD, holds if and only if mCF > nFD (by CN3, subtracting mFD from both sides). Similarly mCD = (m+n)FD if and only if mCF = nFD, and mCD < (m+n)FD if and only if mCF < nFD.\n\n**Step 8.** Combining Steps 5, 6, and 7: for arbitrary equimultiples mAE, mCF of AE, CF and arbitrary equimultiples nEB, nFD of EB, FD, if mAE > nEB then mCF > nFD; if mAE = nEB then mCF = nFD; if mAE < nEB then mCF < nFD.\n\n**Step 9.** Therefore, by D5.5, AE:EB :: CF:FD. That is, the magnitudes are proportional separando (D5.15). Q.E.D.\n\n**USED:** 5.1, 5.2, CN3, D5.14, D5.15, D5.5\n**Human refs (from References field):** 5.1, 5.2\n**Jaccard:** 0.333 — AI adds ['CN3', 'D5.14', 'D5.15', 'D5.5']",
+  "ai_used": [
+    "5.1",
+    "5.2",
+    "CN3",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.1",
+    "5.2"
+  ],
+  "ai_only": [
+    "CN3",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AE, EB, CF, FD be four magnitudes proportional componendo, so that AB:BE :: CD:DF, where AB = AE + EB and CD = CF + FD. We must show that they are proportional separando, i.e., AE:EB :"
+}

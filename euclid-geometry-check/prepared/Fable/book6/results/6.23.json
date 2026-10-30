@@ -1,0 +1,51 @@
+{
+  "proposition": "6.23",
+  "run": "Fable",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "BC and CG are placed in one straight line BG with C between B and G",
+      "type": "collinearity/betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D and E lie on opposite sides of line BG",
+      "type": "point position (side of line)"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DC stands on line BG at C, so adjacent angles BCD + DCG = two right angles (1.13)",
+      "type": "supplementary angles (linear pair)"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angles ECG + DCG = two right angles (since angle ECG = angle BCD, adding DCG to both sides)",
+      "type": "supplementary angles"
+    },
+    {
+      "step": "Step 5",
+      "claim": "CD and CE lie on opposite sides of line CG, with angles DCG + GCE = two right angles, so CE is in a straight line with DC by 1.14; the line is called DE",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "DH is parallel to CG and GH is parallel to CD; they meet at H forming parallelogram DCGH",
+      "type": "parallel construction"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Parallelograms AC (=ABCD) and CH (=DCGH) have bases BC, CG on line BG and share the same height (perpendicular from D to BG)",
+      "type": "same height / between parallels"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Parallelograms CH (=DCGH) and CF (=CEFG) have bases DC, CE on line DE and share the same height (perpendicular from G to DE)",
+      "type": "same height / between parallels"
+    }
+  ],
+  "configuration_map": "Point C: shared vertex of parallelograms ABCD, CEFG, and bridging parallelogram DCGH, at the intersection of lines BG and DE. Points B, G: on a horizontal line through C with C between them; B is a vertex of ABCD, G is a vertex of CEFG. Point D: vertex of ABCD on one side of line BG; also a vertex of DCGH. Point E: vertex of CEFG on the opposite side of line BG from D; collinear with D and C (D-C-E is a straight line, proved in Step 5). Point H: fourth vertex of parallelogram DCGH, on the same side of BG as D, constructed as the intersection of the line through D parallel to CG with the line through G parallel to CD. Parallelogram AC (=ABCD): base BC on line BG, opposite side AD parallel to BG at height equal to perpendicular distance from D to BG. Parallelogram CH (=DCGH): base CG on line BG and base DC on line DE; acts as the bridging parallelogram. Parallelogram CF (=CEFG): base CE on line DE, with G on line BG at perpendicular distance from line DE equal to the height of CH measured from G.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction is a standard placement of equiangular parallelograms at a shared vertex C, with sides BC-CG made collinear and D-C-E proved collinear via supplementary angles and I.14. The bridging parallelogram DCGH correctly shares a base line and height with each original parallelogram, enabling two valid applications of VI.1. No angle decompositions, no inside/outside point-position claims, and no betweenness contradictions arise. The proof follows the same geometric logic as Heath's but more directly, omitting auxiliary proportional lines."
+}

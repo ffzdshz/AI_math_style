@@ -1,0 +1,37 @@
+{
+  "proposition": "12.8",
+  "book": 12,
+  "statement": "Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.",
+  "heath_proof": "Let there be similar and similarly situated pyramids of which the triangles ABC, DEF, are the bases and the points G, H the vertices; I say that the pyramid ABCG has to the pyramid DEFH the ratio triplicate of that which BC has to EF. For let the parallelepipedal solids BGML, EHQP be completed. Now, since the pyramid ABCG is similar to the pyramid DEFH, therefore the angle ABC is equal to the angle DEF, the angle GBC to the angle HEF, and the angle ABG to the angle DEH; and, as AB is to DE, so is BC to EF, and BG to EH. And since, as AB is to DE, so is BC to EF, and the sides are proportional about equal angles, therefore the parallelogram BM is similar to the parallelogram EQ. For the same reason BN is also similar to ER, and BK to EO; therefore the three parallelograms MB, BK, BN are similar to the three EQ, EO, ER. But the three parallelograms MB, BK, BN are equal and similar to their three opposites, and the three EQ, EO, ER are equal and similar to their three opposites. [XI. 24] Therefore the solids BGML, EHQP are contained by similar planes equal in multitude. Therefore the solid BGML is similar to the solid EHQP. But similar parallelepipedal solids are in the triplicate ratio of their corresponding sides. [XI. 33] Therefore the solid BGML has to the solid EHQP the ratio triplicate of that which the corresponding side BC has to the corresponding side EF. But, as the solid BGML is to the solid EHQP, so is the pyramid ABCG to the pyramid DEFH, inasmuch as the pyramid is a sixth part of the solid, because the prism which is half of the parallelepipedal solid [XI. 28] is also triple of the pyramid. [XII. 7] Therefore the pyramid ABCG also has to the pyramid DEFH the ratio triplicate of that which BC has to EF.",
+  "ai_proof_text": "12.8\n**Statement:** Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.\n\n**Step 1.** Let ABCD and EFGH be similar pyramids with triangular bases BCD and FGH respectively, where A and E are the apices. Since the pyramids are similar, by D11.9 their four triangular faces are respectively similar. By D6.1, the corresponding face triangles have their angles severally equal and the sides about the equal angles proportional. In particular, all corresponding edges are in the same ratio: AB:EF = AC:EG = AD:EH = BC:FG = CD:GH = BD:FH.\n\n**Step 2.** Complete the parallelepiped on the three edges AB, AC, AD meeting at vertex A. To do this, through each of B, C, D draw lines parallel to the two edges from A that do not contain that vertex, using 1.31. The resulting solid is a parallelepiped whose three edges at A are AB, AC, AD, with six parallelogram faces. Similarly, complete the parallelepiped on the three edges EF, EG, EH meeting at vertex E. Call these parallelepipeds P1 and P2 respectively.\n\n**Step 3.** The parallelepipeds P1 and P2 are similar. Each face of P1 at vertex A is a parallelogram determined by two of the edges AB, AC, AD with their included angle. For instance, the face determined by AB and AC is a parallelogram with sides AB, AC and included angle BAC. The corresponding face of P2 is the parallelogram with sides EF, EG and included angle FEG. Since the face triangle ABC of pyramid ABCD is similar to the face triangle EFG of pyramid EFGH (by D11.9), we have angle BAC = angle FEG (by D6.1), and AB:EF = AC:EG. Therefore the two parallelograms have their angles severally equal and sides about the equal angles proportional, so they are similar by D6.1. The same argument applies to the other two pairs of faces at A and E (those determined by edges AB, AD and by edges AC, AD, compared with their counterparts at E). The opposite faces of each parallelepiped are equal to those at A and E respectively, by 1.34. Hence all six faces of P1 are similar to the corresponding six faces of P2, so P1 and P2 are similar parallelepipedal solids by D11.9.\n\n**Step 4.** Since P1 and P2 are similar parallelepipeds, by 11.33, P1 is to P2 in the triplicate ratio of the corresponding side AB to the corresponding side EF.\n\n**Step 5.** Now consider P1. By 11.28, the diagonal plane through the diagonal of one face and the diagonal of the opposite face bisects P1 into two equal prisms. Specifically, take the diagonal plane that passes through vertices B, C, and the vertices obtained by translating B and C by the vector AD. This plane divides P1 into two equal triangular prisms, one of which has triangular base ABC with lateral edges in the direction AD. Call this prism Q1. Similarly, the corresponding diagonal plane divides P2 into two equal prisms, one of which has triangular base EFG with lateral edges in the direction EH. Call this prism Q2. Thus P1 = 2Q1 and P2 = 2Q2.\n\n**Step 6.** By 12.7, the prism Q1 with triangular base ABC is divided into three pyramids equal to one another which have triangular bases. One of these three pyramids has base ABC and its apex at the vertex D (which is the translation of A by the vector AD). This pyramid on base ABC with apex D is precisely the pyramid ABCD (being the same tetrahedron with vertices A, B, C, D). Therefore pyramid ABCD is one-third of Q1, giving Q1 = 3 times pyramid ABCD. By the same reasoning, Q2 = 3 times pyramid EFGH.\n\n**Step 7.** From Steps 5 and 6, P1 = 2Q1 = 6 times pyramid ABCD, and P2 = 2Q2 = 6 times pyramid EFGH. That is, P1 and P2 are equimultiples of pyramids ABCD and EFGH respectively (both being six times their respective pyramids). By 5.15, equimultiples have the same ratio as the magnitudes themselves. Therefore pyramid ABCD is to pyramid EFGH as P1 is to P2.\n\n**Step 8.** But by Step 4, P1 is to P2 in the triplicate ratio of AB to EF, which by D5.10 is the triplicate ratio of their corresponding sides. Therefore pyramid ABCD is to pyramid EFGH in the triplicate ratio of their corresponding sides, which is the triplicate ratio of BC to FG (since AB:EF = BC:FG). This is what was to be proved.\n\n**USED:** 1.31, 1.34, 11.28, 11.33, 12.7, 5.15, D11.9, D5.10, D6.1\n**Human refs (from References field):** 11.24, 11.28, 11.33, 12.7\n**Jaccard:** 0.300 — AI adds ['1.31', '1.34', '5.15', 'D11.9', 'D5.10', 'D6.1']; Human adds ['11.24']",
+  "ai_used": [
+    "1.31",
+    "1.34",
+    "11.28",
+    "11.33",
+    "12.7",
+    "5.15",
+    "D11.9",
+    "D5.10",
+    "D6.1"
+  ],
+  "heath_refs": [
+    "11.24",
+    "11.28",
+    "11.33",
+    "12.7"
+  ],
+  "ai_only": [
+    "1.31",
+    "1.34",
+    "5.15",
+    "D11.9",
+    "D5.10",
+    "D6.1"
+  ],
+  "heath_only": [
+    "11.24"
+  ],
+  "jaccard": 0.3,
+  "proof_summary": "**Step 1.** Let ABCD and EFGH be similar pyramids with triangular bases BCD and FGH respectively, where A and E are the apices. Since the pyramids are similar, by D11.9 their four triangular faces are"
+}

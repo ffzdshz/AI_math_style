@@ -1,0 +1,31 @@
+{
+  "proposition": "8.19",
+  "book": 8,
+  "statement": "Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.",
+  "heath_proof": "Let A, B be two similar solid numbers, and let C, D, E be the sides of A, and F, G, H of B. Now, since similar solid numbers are those which have their sides proportional, [VII. Def. 21] therefore, as C is to D, so is F to G, and, as D is to E, so is G to H.  I say that between A, B there fall two mean proportional numbers, and A has to B the ratio triplicate of that which C has to F, D to G, and also E to H. For let C by multiplying D make K, and let F by multiplying G make L. Now, since C, D are in the same ratio with F, G, and K is the product of C, D, and L the product of F, G, K, L are similar plane numbers; [VII. Def. 21] therefore between K, L there is one mean proportional number. [VIII. 18] Let it be M   Therefore M is the product of D, F, as was proved in the theorem preceding this. [VIII. 18] Now, since D by multiplying C has made K, and by multiplying F has made M, therefore, as C is to F, so is K to M. [VII. 17] But, as K is to M, so is M to L. Therefore K, M, L are continuously proportional in the ratio of C to F. And since, as C is to D, so is F to G, alternately therefore, as C is to F, so is D to G. [VII. 13] For the same reason also, as D is to G, so is E to H.  Therefore K, M, L are continuously proportional in the ratio of C to F, in the ratio of D to G, and also in the ratio of E to H. Next, let E, H by multiplying M make N, O respectively. Now, since A is a solid number, and C, D, E are its sides, therefore E by multiplying the product of C, D has made A. But the product of C, D is K; therefore E by multiplying K has made A. For the same reason also H by multiplying L has made B.  Now, since E by multiplying K has made A, and further also by multiplying M has made N, therefore, as K is to M, so is A to N. [VII. 17] But, as K is to M, so is C to F, D to G, and also E to H; therefore also, as C is to F, D to G, and E to H, so is A to N. Again, since E, H by multiplying M have made N, O respectively, therefore, as E is to H, so is N to O. [VII. 18] But, as E is to H, so is C to F and D to G; therefore also, as C is to F, D to G, and E to H, so is A to N and N to O. Again, since H by multiplying M has made O, and further also by multiplying L has made B, therefore, as M is to L, so is O to B. [VII. 17] But, as M is to L, so is C to F, D to G, and E to H. Therefore also, as C is to F, D to G, and E to H, so not only is O to B, but also A to N and N to O. Therefore A, N, O, B are continuously proportional in the aforesaid ratios of the sides. I say that A also has to B the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number C has to F, or D to G, and also E to H. For, since A, N, O, B are four numbers in continued proportion, therefore A has to B the ratio triplicate of that which A has to N. [V. Def. 10] But, as A is to N, so it was proved that C is to F, D to G, and also E to H. Therefore A also has to B the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number C has to F, D to G, and also E to H.",
+  "ai_proof_text": "8.19\n**Statement:** Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.\n\n**Step 1.** Let A and B be similar solid numbers. Then by D7.17, A = d * e * f and B = g * h * k for some numbers d, e, f and g, h, k respectively, which are the sides of these solid numbers.\n\n**Step 2.** Since A and B are similar solid numbers, by D7.21 their sides are proportional: d:g = e:h = f:k.\n\n**Step 3.** Since d:g = e:h = f:k, consider the numbers A = d*e*f, the number d*e*k, the number d*h*k, and B = g*h*k. We shall show these four numbers are in continued proportion with common ratio f:k.\n\n**Step 4.** First, A : d*e*k = d*e*f : d*e*k. Since d*e multiplies both f and k, by 7.17, (d*e)*f : (d*e)*k = f : k.\n\n**Step 5.** Next, d*e*k : d*h*k. Since k multiplies both e and h, by 7.17 we have e*k : h*k = e : h. Then since d multiplies both e*k and h*k, by 7.17 we have d*(e*k) : d*(h*k) = e*k : h*k. Therefore d*e*k : d*h*k = e*k : h*k = e : h. But e:h = f:k by Step 2, so d*e*k : d*h*k = f : k.\n\n**Step 6.** Next, d*h*k : g*h*k. Since d and g each multiply h*k, by 7.18, d*(h*k) : g*(h*k) = d : g. But d:g = f:k by Step 2, so d*h*k : g*h*k = f : k. That is, d*h*k : B = f : k.\n\n**Step 7.** From Steps 4, 5, and 6, we have A : d*e*k = d*e*k : d*h*k = d*h*k : B = f : k. Therefore A, d*e*k, d*h*k, B are four numbers in continued proportion, so d*e*k and d*h*k are two mean proportional numbers falling between A and B.\n\n**Step 8.** Since A, d*e*k, d*h*k, B are four magnitudes in continued proportion, by D5.10 A has to B the triplicate ratio of that which A has to d*e*k.\n\n**Step 9.** But A : d*e*k = f : k (from Step 4), and f:k = d:g = e:h (from Step 2). Therefore A has to B the triplicate ratio of that which the corresponding side has to the corresponding side.\n\n**Step 10.** Therefore, between two similar solid numbers there fall two mean proportional numbers, and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side. Q.E.D.\n\n**USED:** 7.17, 7.18, D5.10, D7.17, D7.21\n**Human refs (from References field):** 7.13, 7.17, 7.18, 8.18, D5.10, D7.21\n**Jaccard:** 0.571 — AI adds ['D7.17']; Human adds ['7.13', '8.18']",
+  "ai_used": [
+    "7.17",
+    "7.18",
+    "D5.10",
+    "D7.17",
+    "D7.21"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.17",
+    "7.18",
+    "8.18",
+    "D5.10",
+    "D7.21"
+  ],
+  "ai_only": [
+    "D7.17"
+  ],
+  "heath_only": [
+    "7.13",
+    "8.18"
+  ],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let A and B be similar solid numbers. Then by D7.17, A = d * e * f and B = g * h * k for some numbers d, e, f and g, h, k respectively, which are the sides of these solid numbers.  **Step "
+}

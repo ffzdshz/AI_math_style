@@ -1,0 +1,13 @@
+{
+  "proposition": "9.4",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification via the proof-tree containment test. Both proofs share the same backbone: construct D = A*A so D is cube (9.3), establish A:B = D:C (7.17), then conclude C is cube from D being cube and the ratio being cube-to-cube. The sole difference is citation depth at the final step: Heath re-derives the internals of 8.25 inline by showing A,B are similar solid numbers with two mean proportionals between them (8.19), transferring those mean proportionals to D,C (8.8), and concluding via 8.23; the AI instead cites 8.25 directly, which is exactly the proposition whose proof uses 8.19, 8.8, and 8.23. Since all three heath_only items appear inside Heath's proof of 8.25, this is a citation-depth difference under Case A of Q2, yielding G.",
+  "jaccard": 0.333,
+  "ai_citations": "7.17|8.25|9.3",
+  "heath_citations": "7.17|8.19|8.23|8.8|9.3",
+  "ai_only": "8.25",
+  "heath_only": "8.19|8.23|8.8",
+  "audit_record": ""
+}

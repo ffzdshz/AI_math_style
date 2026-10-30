@@ -1,0 +1,51 @@
+{
+  "proposition": "13.12",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E is the center of the circle; A, B, C lie on the circle forming an equilateral triangle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Central angles AEB = BEC = CEA = 120 degrees (equal partition of 360 degrees around E)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D is diametrically opposite A; AED is a straight line with E as midpoint, AE = ED",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle AEB + angle BED = 180 degrees and angle AEC + angle CED = 180 degrees (supplementary angles on line AED)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Ray ED lies between rays EB and EC from center E, so angle BEC = angle BED + angle DEC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle BED exists with EB = ED (both radii), making it isosceles",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "BD = ED = AE (triangle BED is equilateral with all sides equal to the radius)",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Angle ABD is a right angle because B is on the circle and AD is a diameter (angle in semicircle)",
+      "type": "angle_value"
+    }
+  ],
+  "configuration_map": "Circle with center E and radius r. A at top of circle, D diametrically opposite A at bottom. B and C on the circle, symmetrically placed about diameter AD, each 120 degrees of arc from A. Using coordinates with E at origin: A=(0,r), D=(0,-r), B=(r*sqrt(3)/2, -r/2) at 330 degrees, C=(-r*sqrt(3)/2, -r/2) at 210 degrees. D lies on arc BC (not containing A) at its midpoint (270 degrees). From E, ray ED (270 deg) falls between ray EB (330 deg) and ray EC (210 deg) within the 120-degree sector. Triangle BED is equilateral with all sides equal to r. Angle ABD = 90 degrees (angle in semicircle).",
+  "pass_reason": "All spatial claims are mutually consistent. The critical angle decomposition in Step 6 is valid: D (diametrically opposite A) lies on arc BC at its midpoint, so ray ED at 270 degrees falls between ray EB at 330 degrees and ray EC at 210 degrees within the 120-degree sector of angle BEC. The right angle at B in triangle ABD (Step 11) is valid by Thales' theorem. The equality BD = ED = r (Step 10) is confirmed by coordinate calculation. All geometric claims are compatible with a single consistent configuration."
+}

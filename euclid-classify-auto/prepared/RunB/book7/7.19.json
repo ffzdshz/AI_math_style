@@ -1,0 +1,31 @@
+{
+  "proposition": "7.19",
+  "book": 7,
+  "statement": "If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional.",
+  "heath_proof": "Let A, B, C, D be four numbers in proportion, so that, as A is to B, so is C to D; and let A by multiplying D make E, and let B by multiplying C make F; I say that E is equal to F. For let A by multiplying C make G. Since, then, A by multiplying C has made G, and by multiplying D has made E, the number A by multiplying the two numbers C, D has made G, E. Therefore, as C is to D, so is G to E. [VII. 17] But, as C is to D, so is A to B; therefore also, as A is to B, so is G to E. Again, since A by multiplying C has made G, but, further, B has also by multiplying C made F, the two numbers A, B by multiplying a certain number C have made G, F. Therefore, as A is to B, so is G to F. [VII. 18] But further, as A is to B, so is G to E also; therefore also, as G is to E, so is G to F. Therefore G has to each of the numbers E, F the same ratio; therefore E is equal to F. [cf. V. 9]  Again, let E be equal to F; I say that, as A is to B, so is C to D. For, with the same construction, since E is equal to F, therefore, as G is to E, so is G to F. [cf. V. 7] But, as G is to E, so is C to D, [VII. 17] and, as G is to F, so is A to B. [VII. 18]  Therefore also, as A is to B, so is C to D.",
+  "ai_proof_text": "7.19\n**Statement:** If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional.\n\n**Step 1.** Let A, B, C, D be four numbers such that A : B :: C : D. We must first show that A * D = B * C.\n\n**Step 2.** Let A multiplying C produce E, and A multiplying D produce F. Then by 7.17, since A has multiplied C and D to produce E and F respectively, we have E : F :: C : D.\n\n**Step 3.** But A : B :: C : D by hypothesis. Therefore E : F :: A : B.\n\n**Step 4.** Now let B multiplying C produce G. Then by 7.18, since A and B have multiplied C to produce E and G respectively, we have E : G :: A : B.\n\n**Step 5.** From Steps 3 and 4, E : F :: A : B and E : G :: A : B. Therefore E : F :: E : G. By D7.20, E is the same multiple, part, or parts of F as E is of G, which requires F = G. That is, A * D = B * C.\n\n**Step 6.** Conversely, suppose A * D = B * C. We must show A : B :: C : D.\n\n**Step 7.** Let A multiplying C produce E and A multiplying D produce F. By 7.17, E : F :: C : D.\n\n**Step 8.** Let B multiplying C produce G. By 7.18, E : G :: A : B.\n\n**Step 9.** Now by 7.16, A * D = D * A and B * C = C * B. Since A * D = B * C by hypothesis, we have F = A * D = B * C = G. Therefore F = G.\n\n**Step 10.** Since F = G, from Step 7 we have E : G :: C : D (substituting G for F). From Step 8 we have E : G :: A : B. Therefore A : B :: C : D, which was to be proved.\n\n**USED:** 7.16, 7.17, 7.18, D7.15, D7.20\n**Human refs (from References field):** 5.7, 5.9, 7.17, 7.18\n**Jaccard:** 0.286 — AI adds ['7.16', 'D7.15', 'D7.20']; Human adds ['5.7', '5.9']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.18",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "5.7",
+    "5.9",
+    "7.17",
+    "7.18"
+  ],
+  "ai_only": [
+    "7.16",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_only": [
+    "5.7",
+    "5.9"
+  ],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let A, B, C, D be four numbers such that A : B :: C : D. We must first show that A * D = B * C.  **Step 2.** Let A multiplying C produce E, and A multiplying D produce F. Then by 7.17, sin"
+}

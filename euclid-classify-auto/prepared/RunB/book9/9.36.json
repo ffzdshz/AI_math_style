@@ -1,0 +1,49 @@
+{
+  "proposition": "9.36",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be set out continuously in double proportion, until the sum of all becomes prime, and if the sum multiplied into the last make some number, the product will be perfect.",
+  "heath_proof": "For let as many numbers as we please, A, B, C, D, beginning from an unit be set out in double proportion, until the sum of all becomes prime, let E be equal to the sum, and let E by multiplying D make FG; I say that FG is perfect. For, however many A, B, C, D are in multitude, let so many E, HK, L, M be taken in double proportion beginning from E; therefore, ex aequali, as A is to D, so is E to M. [VII. 14] Therefore the product of E, D is equal to the product of A, M. [VII. 19] And the product of E, D is FG; therefore the product of A, M is also FG. Therefore A by multiplying M has made FG; therefore M measures FG according to the units in A. And A is a dyad; therefore FG is double of M. But M, L, HK, E are continuously double of each other; therefore E, HK, L, M, FG are continuously proportional in double proportion. Now let there be subtracted from the second HK and the last FG the numbers HN, FO, each equal to the first E; therefore, as the excess of the second is to the first, so is the excess of the last to all those before it. [IX. 35] Therefore, as NK is to E, so is OG to M, L, KH, E. And NK is equal to E; therefore OG is also equal to M, L, HK, E. But FO is also equal to E, and E is equal to A, B, C, D and the unit. Therefore the whole FG is equal to E, HK, L, M and A, B, C, D and the unit; and it is measured by them. I say also that FG will not be measured by any other number except A, B, C, D, E, HK, L, M and the unit. For, if possible, let some number P measure FG, and let P not be the same with any of the numbers A, B, C, D, E, HK, L, M. And, as many times as P measures FG, so many units let there be in Q; therefore Q by multiplying P has made FG. But, further, E has also by multiplying D made FG; therefore, as E is to Q, so is P to D. [VII. 19] And, since A, B, C, D are continuously proportional beginning from an unit, therefore D will not be measured by any other number except A, B, C. [IX. 13] And, by hypothesis, P is not the same with any of the numbers A, B, C; therefore P will not measure D. But, as P is to D, so is E to Q; therefore neither does E measure Q. [VII. Def. 20] And E is prime; and any prime number is prime to any number which it does not measure. [VII. 29] Therefore E, Q are prime to one another. But primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent; [VII. 20] and, as E is to Q, so is P to D; therefore E measures P the same number of times that Q measures D. But D is not measured by any other number except A, B, C; therefore Q is the same with one of the numbers A, B, C. Let it be the same with B. And, however many B, C, D are in multitude, let so many E, HK, L be taken beginning from E. Now E, HK, L are in the same ratio with B, C, D; therefore, ex aequali, as B is to D, so is E to L. [VII. 14] Therefore the product of B, L is equal to the product of D, E. [VII. 19] But the product of D, E is equal to the product of Q, P; therefore the product of Q, P is also equal to the product of B, L. Therefore, as Q is to B, so is L to P. [VII. 19] And Q is the same with B; therefore L is also the same with P; which is impossible, for by hypothesis P is not the same with any of the numbers set out. Therefore no number will measure FG except A, B, C, D, E, HK, L, M and the unit. And FG was proved equal to A, B, C, D, E, HK, L, M and the unit; and a perfect number is that which is equal to its own parts; [VII. Def. 22] therefore FG is perfect.",
+  "ai_proof_text": "9.36\n**Statement:** If as many numbers as we please beginning from an unit be set out continuously in double proportion, until the sum of all becomes prime, and if the sum multiplied into the last make some number, the product will be perfect.\n\n**Step 1.** Let as many numbers as we please, A(0) = 1, A(1) = 2, A(2) = 4, ..., A(n-1) = 2^(n-1), be set out beginning from a unit continuously in double proportion. Let S = A(0) + A(1) + ... + A(n-1) be the sum of all of them, and suppose S is prime. Let P = S * A(n-1), i.e., the sum S multiplied by the last term. We must show P is perfect, that is, P equals the sum of its own parts (D7.22).\n\n**Step 2.** By 9.35 (applied to the geometric series 1, 2, 4, ..., 2^(n-1), 2^n), since the excess of the second over the first is A(1) - A(0) = 2 - 1 = 1, and the excess of the next term 2^n over the first is 2^n - 1, and as the excess of the second is to the first so is the excess of the last to the sum of all before it, we have (2 - 1) : 1 = (2^n - 1) : (1 + 2 + ... + 2^(n-1)). Therefore S = 1 + 2 + ... + 2^(n-1) = 2^n - 1. In particular, S * A(1) = S * 2 = 2S = 2^n, so S * A(1) = A(0) + A(1) + ... + A(n-1) + S, that is, 2S = S + (sum of the geometric series). More precisely, the sum of the geometric progression equals S, and the next term in the double proportion after A(n-1) would be 2^n = 2S = S + S.\n\n**Step 3.** Now consider the product P = S * A(n-1). We identify all the parts (proper divisors) of P. Since S is prime (by hypothesis), S is measured only by a unit (D7.11). Since the numbers A(0), A(1), ..., A(n-1) are in continued double proportion from a unit, and A(1) = 2 is prime, by 9.13 the number A(n-1) is not measured by any number except those which have a place among the proportional numbers A(0) = 1, A(1) = 2, ..., A(n-2).\n\n**Step 4.** We claim that every proper divisor of P is either one of the terms A(0), A(1), ..., A(n-1) of the geometric progression, or one of the products S * A(0), S * A(1), ..., S * A(n-2). First, since S is prime and A(n-1) = 2^(n-1), the numbers S and A(n-1) are prime to one another (by 7.29, since S is prime and does not measure A(n-1) -- for S = 2^n - 1 is odd and greater than A(n-1) when n >= 2, and for n = 1 the result is trivial). By 7.24, any divisor of P = S * A(n-1) that is prime to S must divide A(n-1), and any divisor prime to A(n-1) must divide S.\n\n**Step 5.** The parts of A(n-1) = 2^(n-1) are exactly A(0), A(1), ..., A(n-2), by 9.13 (since 2 is prime, A(n-1) is measured only by numbers in the geometric progression) and by 9.11 (each earlier term in the progression measures the later). Each A(i) for i = 0, 1, ..., n-2 measures A(n-1), so A(i) also measures P = S * A(n-1) by 7.16, and A(n-1) itself measures P (as P = S * A(n-1)). Similarly, S measures P. Furthermore, for each i = 0, 1, ..., n-2, the product S * A(i) measures P, since A(i) measures A(n-1) (by 9.11), say A(n-1) = A(i) * q, so P = S * A(i) * q, meaning S * A(i) measures P.\n\n**Step 6.** Thus the complete list of parts (proper divisors) of P is: A(0), A(1), ..., A(n-1), S*A(0), S*A(1), ..., S*A(n-2). Here A(n-1) is included as a part since S > 1 (S is prime, hence at least 2), so P = S * A(n-1) > A(n-1). And S * A(n-2) is a proper part since S * A(n-2) = S * (A(n-1)/2) = P/2 < P.\n\n**Step 7.** We now compute the sum of all these parts. The sum of the terms of the geometric progression is A(0) + A(1) + ... + A(n-1) = S, by the definition of S in Step 1.\n\n**Step 8.** Next, S*A(0) + S*A(1) + ... + S*A(n-2) = S * (A(0) + A(1) + ... + A(n-2)). By 9.35 again applied to the progression 1, 2, ..., 2^(n-1), we have A(0) + A(1) + ... + A(n-2) = 2^(n-1) - 1 = A(n-1) - 1. Thus S * (A(0) + ... + A(n-2)) = S * (A(n-1) - 1) = S * A(n-1) - S = P - S, by 7.16 (multiplication distributes: S multiplied by A(n-1) - 1 gives S*A(n-1) - S*1, using the relation that if a measures b and c, then a measures b - c; more precisely by the reverse of 5.1 and D7.15, or directly from repeated addition).\n\n**Step 9.** Therefore the total sum of all parts of P is S + (P - S) = P. That is, the sum of all the proper divisors of P equals P itself.\n\n**Step 10.** Since P equals the sum of its own parts, P is a perfect number by D7.22. Therefore, if as many numbers as we please beginning from a unit be set out continuously in double proportion until the sum of all becomes prime, and if that sum be multiplied by the last, the product is perfect. Q.E.D.\n\n**USED:** 7.16, 7.24, 7.29, 9.11, 9.13, 9.35, D7.11, D7.15, D7.22, D7.3, D7.5\n**Human refs (from References field):** 7.14, 7.19, 7.20, 7.21, 7.29, 9.13, 9.35, D7.20, D7.22\n**Jaccard:** 0.250 — AI adds ['7.16', '7.24', '9.11', 'D7.11', 'D7.15', 'D7.3', 'D7.5']; Human adds ['7.14', '7.19', '7.20', '7.21', 'D7.20']\n# Book 10 of Euclid's Elements — Step-by-Step AI Proofs (Run RunB)",
+  "ai_used": [
+    "7.16",
+    "7.24",
+    "7.29",
+    "9.11",
+    "9.13",
+    "9.35",
+    "D7.11",
+    "D7.15",
+    "D7.22",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.29",
+    "9.13",
+    "9.35",
+    "D7.20",
+    "D7.22"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.24",
+    "9.11",
+    "D7.11",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.14",
+    "7.19",
+    "7.20",
+    "7.21",
+    "D7.20"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let as many numbers as we please, A(0) = 1, A(1) = 2, A(2) = 4, ..., A(n-1) = 2^(n-1), be set out beginning from a unit continuously in double proportion. Let S = A(0) + A(1) + ... + A(n-1"
+}

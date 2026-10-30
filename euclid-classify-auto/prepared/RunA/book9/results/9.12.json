@@ -1,0 +1,13 @@
+{
+  "proposition": "9.12",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined this classification. Heath's proof uses proof by contradiction, assuming the prime E does not measure A, then descending through the specific chain D to C to B to A-squared using ratio and proportion arguments (7.19, 7.20, 7.21) combined with the coprimality result (7.29), ultimately reaching a contradiction. The AI proof takes a fundamentally different approach: it uses induction on the number of terms in the continued proportion, applying 7.30 (if a prime divides a product it divides a factor) at each step. The AI decomposes L = A*K via 7.19 from the proportion 1:A = K:L, then uses 7.30 to conclude p|A or p|K, descending to shorter sequences until the base case of three terms where B = A*A and 7.30 gives p|A. The key intermediate conclusions differ entirely: Heath establishes E|C, then E|B, then E|A via contradiction; the AI establishes a descent through 7.30 at each level. The proof-tree containment test confirms this is genuine path divergence rather than citation-depth difference: while 7.30 does subsume 7.29, 7.21, and 7.20 from heath_only, the remaining heath_only items 9.11 and 9.8 are not inside Heath's proof of 7.30, and more importantly the overall proof architecture (contradiction vs induction) is different. The AI proof is logically complete under the hardened 1(b) standard, so Q3 confirms category D.",
+  "jaccard": 0.111,
+  "ai_citations": "7.19|7.30|D7.15",
+  "heath_citations": "7.19|7.20|7.21|7.29|9.11|9.8|D7.14",
+  "ai_only": "7.30|D7.15",
+  "heath_only": "7.20|7.21|7.29|9.11|9.8|D7.14",
+  "audit_record": ""
+}

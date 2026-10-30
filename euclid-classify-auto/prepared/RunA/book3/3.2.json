@@ -1,0 +1,28 @@
+{
+  "proposition": "3.2",
+  "book": 3,
+  "statement": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+  "heath_proof": "Let ABC be a circle, and let two points A, B be taken at random on its circumference; I say that the straight line joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as AEB; let the centre of the circle ABC be taken [III. 1], and let it be D; let DA, DB be joined, and let DFE be drawn through. Then, since DA is equal to DB, the angle DAE is also equal to the angle DBE. [I. 5]And, since one side AEB of the triangle DAE is produced, the angle DEB is greater than the angle DAE. [I. 16]  But the angle DAE is equal to the angle DBE; therefore the angle DEB is greater than the angle DBE. And the greater angle is subtended by the greater side; [I. 19] therefore DB is greater than DE. But DB is equal to DF;  therefore DF is greater than DE,   the less than the greater: which is impossible. Therefore the straight line joined from A to B will not fall outside the circle. Similarly we can prove that neither will it fall on the circumference itself; therefore it will fall within.",
+  "ai_proof_text": "3.2\n**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.\n\n**Step 1.** Let ABC be a circle, and let A and B be two points taken on its circumference. Join AB [P1]. We must show that the straight line AB falls within the circle.\n\n**Step 2.** Find the centre D of circle ABC [3.1]. Join DA and DB [P1].\n\n**Step 3.** Take any point E on the straight line AB between A and B. Join DE [P1]. It suffices to show that DE is less than DA (a radius), for then E lies within the circle [D1.15].\n\n**Step 4.** Since DA and DB are both radii of circle ABC, we have DA = DB [D1.15]. Therefore triangle DAB is isosceles with DA = DB.\n\n**Step 5.** Since in triangle DAB the sides DA and DB are equal, the base angles are equal, that is, angle DAB = angle DBA [1.5].\n\n**Step 6.** Since E is a point on AB between A and B, the angle DEB is an exterior angle of triangle DAE (for the side AE of triangle DAE is produced to B) [1.16].\n\n**Step 7.** Therefore angle DEB is greater than the interior and opposite angle DAE [1.16]. That is, angle DEB > angle DAE.\n\n**Step 8.** Now angle DAE is the same as angle DAB (since E lies on AB), and angle DAB = angle DBA [Step 5]. Also angle DBA is the same as angle DBE (since E lies on AB). Therefore angle DAE = angle DBE.\n\n**Step 9.** From Steps 7 and 8, angle DEB > angle DBE.\n\n**Step 10.** In triangle DBE, since angle DEB is greater than angle DBE, the side opposite the greater angle is greater than the side opposite the lesser angle [1.19]. Therefore DB > DE.\n\n**Step 11.** But DB equals DA, and DA is a radius of the circle. Therefore DE is less than the radius. Hence the point E lies within the circle [D1.15].\n\n**Step 12.** Since E was taken as an arbitrary point on AB between A and B, every such point lies within the circle. Therefore the straight line AB falls within the circle. Q.E.D.\n\n**USED:** 1.16, 1.19, 1.5, 3.1, D1.15, P1\n**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1\n**Jaccard:** 0.667 — AI adds ['D1.15', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1"
+  ],
+  "ai_only": [
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let ABC be a circle, and let A and B be two points taken on its circumference. Join AB [P1]. We must show that the straight line AB falls within the circle.  **Step 2.** Find the centre D "
+}

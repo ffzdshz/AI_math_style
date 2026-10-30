@@ -1,0 +1,45 @@
+{
+  "proposition": "10.67",
+  "book": 10,
+  "statement": "A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.",
+  "heath_proof": "Let AB be bimedial, and let CD be commensurable in length with AB; I say that CD is bimedial and the same in order with AB. For, since AB is bimedial, let it be divided into its medials at E; therefore AE, EB are medial straight lines commensurable in square only. [X. 37, 38] And let it be contrived that, as AB is to CD, so is AE to CF; therefore also the remainder EB is to the remainder FD as AB is to CD. [V. 19] But AB is commensurable in length with CD; therefore AE, EB are also commensurable with CF, FD respectively. [X. 11] But AE, EB are medial; therefore CF, FD are also medial. [X. 23] And since, as AE is to EB, so is CF to FD, [V. 11] and AE, EB are commensurable in square only, CF, FD are also commensurable in square only. [X. 11] But they were also proved medial; therefore CD is bimedial. I say next that it is also the same in order with AB. For since, as AE is to EB, so is CF to FD, therefore also, as the square on AE is to the rectangle AE, EB, so is the square on CF to the rectangle CF, FD; therefore, alternately, as the square on AE is to the square on CF, so is the rectangle AE, EB to the rectangle CF, FD. [V. 16] But the square on AE is commensurable with the square on CF; therefore the rectangle AE, EB is also commensurable with the rectangle CF, FD. If therefore the rectangle AE, EB is rational, the rectangle CF, FD is also rational, [and for this reason CD is a first bimedial]; [X. 37] but if medial, medial, [X. 23] and each of the straight lines AB, CD is a second bimedial. [X. 38] And for this reason CD will be the same in order with AB.",
+  "ai_proof_text": "10.67\n**Statement:** A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.\n\n**Step 1.** Let AB be a bimedial straight line, and let CD be commensurable in length with AB. Since AB is bimedial, it is the sum of two medial straight lines commensurable in square only; let AB be divided at E into its terms AE, EB, so that AE, EB are medial and commensurable in square only, while the rectangle AE·EB is either rational (AB being a first bimedial, 10.37) or medial (AB being a second bimedial, 10.38).\n\n**Step 2.** Cut CD at F similarly to AB cut at E [6.10], so that CF : FD = AE : EB. (Path note: the division is made directly by 6.10 rather than through a fourth proportional, as this is the more direct route.)\n\n**Step 3.** Alternately, CF : AE = FD : EB [5.16]. Hence, as one antecedent is to one consequent, so are all the antecedents to all the consequents [5.12]: CD : AB = CF : AE = FD : EB.\n\n**Step 4.** Since CD is commensurable in length with AB, and CD : AB = CF : AE = FD : EB, therefore CF is commensurable in length with AE, and FD is commensurable in length with EB [10.11].\n\n**Step 5.** AE and EB are medial; therefore CF and FD, being commensurable with them, are also medial [10.23].\n\n**Step 6.** Since AE, EB are commensurable in square only, AE is incommensurable in length with EB. And since AE : EB = CF : FD, therefore CF is incommensurable in length with FD [10.11].\n\n**Step 7.** Since AE : EB = CF : FD, the squares described on them, being similar figures similarly described, are proportional: sq(AE) : sq(EB) = sq(CF) : sq(FD) [6.22]. But the square on AE is commensurable with the square on EB; therefore the square on CF is commensurable with the square on FD [10.11]. Hence CF, FD are commensurable in square only [D10.1.2].\n\n**Step 8.** Thus CD is the sum of two medial straight lines CF, FD commensurable in square only; therefore CD is bimedial [10.37, 10.38]. It remains to show that it is of the same order as AB.\n\n**Step 9.** The rectangles AE·EB and CF·EB stand under the same height EB, so rect(AE,EB) : rect(CF,EB) = AE : CF [6.1]; since AE is commensurable with CF, rect(AE,EB) is commensurable with rect(CF,EB) [10.11]. Likewise rect(CF,EB) : rect(CF,FD) = EB : FD [6.1]; since EB is commensurable with FD, rect(CF,EB) is commensurable with rect(CF,FD) [10.11]. Therefore rect(AE,EB) is commensurable with rect(CF,FD) [10.12].\n\n**Step 10.** If AB is a first bimedial, rect(AE,EB) is rational [10.37], that is, commensurable with the rational square set out [D10.1.4]; then rect(CF,FD), being commensurable with rect(AE,EB), is commensurable with that rational square [10.12], and so is itself rational [D10.1.4]. Therefore CF, FD are medial straight lines commensurable in square only which contain a rational rectangle, and CD is a first bimedial [10.37].\n\n**Step 11.** If AB is a second bimedial, rect(AE,EB) is medial [10.38]; then rect(CF,FD), being commensurable with a medial area, is medial [10.23, Porism]. Therefore CF, FD are medial straight lines commensurable in square only which contain a medial rectangle, and CD is a second bimedial [10.38].\n\n**Step 12.** Therefore a straight line CD commensurable in length with a bimedial straight line AB is itself bimedial and the same in order. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.23, 10.37, 10.38, 5.12, 5.16, 6.1, 6.10, 6.22, D10.1.2, D10.1.4\n**Human refs (from References field):** 10.11, 10.23, 10.37, 10.38, 5.11, 5.16, 5.19\n**Jaccard:** 0.357 — AI adds ['10.12', '5.12', '6.1', '6.10', '6.22', 'D10.1.2', 'D10.1.4']; Human adds ['5.11', '5.19']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.23",
+    "10.37",
+    "10.38",
+    "5.12",
+    "5.16",
+    "6.1",
+    "6.10",
+    "6.22",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.23",
+    "10.37",
+    "10.38",
+    "5.11",
+    "5.16",
+    "5.19"
+  ],
+  "ai_only": [
+    "10.12",
+    "5.12",
+    "6.1",
+    "6.10",
+    "6.22",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "5.11",
+    "5.19"
+  ],
+  "jaccard": 0.357,
+  "proof_summary": "**Step 1.** Let AB be a bimedial straight line, and let CD be commensurable in length with AB. Since AB is bimedial, it is the sum of two medial straight lines commensurable in square only; let AB be "
+}

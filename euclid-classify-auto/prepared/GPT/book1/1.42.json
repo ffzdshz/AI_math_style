@@ -1,0 +1,38 @@
+{
+  "proposition": "1.42",
+  "book": 1,
+  "statement": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+  "heath_proof": "Let ABC be the given triangle, and D the given rectilineal angle; thus it is required to construct in the rectilineal angle D a parallelogram equal to the triangle ABC. Let BC be bisected at E, and let AE be joined; on the straight line EC, and at the point E on it, let the angle CEF be constructed equal to the angle D; [I. 23] through A let AG be drawn parallel to EC, and [I. 31] through C let CG be drawn parallel to EF. Then FECG is a parallelogram. And, since BE is equal to EC, the triangle ABE is also equal to the triangle AEC, for they are on equal bases BE, EC and in the same parallels BC, AG; [I. 38]therefore the triangle ABC is double of the triangle AEC. But the parallelogram FECG is also double of the triangle AEC, for it has the same base with it and is in the same parallels with it; [I. 41] therefore the parallelogram FECG is equal to the triangle ABC. And it has the angle CEF equal to the given angle D. Therefore the parallelogram FECG has been constructed equal to the given triangle ABC, in the angle CEF which is equal to D.",
+  "ai_proof_text": "1.42\n**Statement:** To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.\n\n**Step 1.** Let ABC be the given triangle and θ the given rectilineal angle. Bisect BC at D, so that BD = DC, and join AD. [1.10, P1]\n\n**Step 2.** At D construct a ray r on the same side of BC as A, making with DC an angle equal to θ. Through A draw a straight line ℓ parallel to BC, and let r meet ℓ at E, producing the lines as necessary. [1.23, 1.31, P2] This intersection exists: otherwise the straight line containing r would be parallel to ℓ and therefore to BC, although it meets BC at D. Since r points into the side containing A, E lies on that ray. [D1.23, 1.30]\n\n**Step 3.** Through C draw a straight line parallel to DE, meeting ℓ at F, producing it as necessary. [1.31, P2] It must meet ℓ, since otherwise it would be parallel to ℓ and hence to BC, although it meets BC at C. [D1.23, 1.30] Now DC is parallel to EF, and DE is parallel to CF; therefore DCFE is a parallelogram. Its angle CDE equals θ by construction. [1.31, 1.23]\n\n**Step 4.** Triangles ABD and ADC have equal bases BD and DC and lie between the same parallels BC and ℓ. They are therefore equal in area. [1.38] This is the natural equal-base route: bisecting BC supplies two distinct equal bases, so no reduction to a common base is needed.\n\n**Step 5.** AD divides triangle ABC into triangles ABD and ADC. Adding triangle ADC to the equal areas established in Step 4 shows that triangle ABC is double triangle ADC. [CN2]\n\n**Step 6.** Parallelogram DCFE and triangle ADC have the same base DC and lie between the same parallels BC and ℓ. Hence the parallelogram is double triangle ADC. [1.41] Since triangle ABC is also double that triangle, parallelogram DCFE equals triangle ABC in area. [CN1] Its angle CDE equals the given angle θ, so the required parallelogram has been constructed. [1.23]\n\n**USED:** 1.10, 1.23, 1.30, 1.31, 1.38, 1.41, CN1, CN2, D1.23, P1, P2\n**Human refs (from References field):** 1.23, 1.31, 1.38, 1.41\n**Jaccard:** 0.364 — AI adds ['1.10', '1.30', 'CN1', 'CN2', 'D1.23', 'P1', 'P2']",
+  "ai_used": [
+    "1.10",
+    "1.23",
+    "1.30",
+    "1.31",
+    "1.38",
+    "1.41",
+    "CN1",
+    "CN2",
+    "D1.23",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.23",
+    "1.31",
+    "1.38",
+    "1.41"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.30",
+    "CN1",
+    "CN2",
+    "D1.23",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let ABC be the given triangle and θ the given rectilineal angle. Bisect BC at D, so that BD = DC, and join AD. [1.10, P1]  **Step 2.** At D construct a ray r on the same side of BC as A, m"
+}

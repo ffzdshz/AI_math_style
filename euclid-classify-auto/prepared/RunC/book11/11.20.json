@@ -1,0 +1,32 @@
+{
+  "proposition": "11.20",
+  "book": 11,
+  "statement": "If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.",
+  "heath_proof": "For let the solid angle at A be contained by the three plane angles BAC, CAD, DAB; I say that any two of the angles BAC, CAD, DAB, taken together in any manner, are greater than the remaining one. If now the angles BAC, CAD, DAB are equal to one another, it is manifest that any two are greater than the remaining one. But, if not, let BAC be greater, and on the straight line AB, and at the point A on it, let the angle BAE be constructed, in the plane through BA, AC, equal to the angle DAB; let AE be made equal to AD, and let BEC, drawn across through the point E, cut the straight lines AB, AC at the points B, C; let DB, DC be joined. Now, since DA is equal to AE, and AB is common, two sides are equal to two sides; and the angle DAB is equal to the angle BAE; therefore the base DB is equal to the base BE. [I. 4] And, since the two sides BD, DC are greater than BC, [I. 20] and of these DB was proved equal to BE, therefore the remainder DC is greater than the remainder EC. Now, since DA is equal to AE, and AC is common, and the base DC is greater than the base EC, therefore the angle DAC is greater than the angle EAC. [I. 25] But the angle DAB was also proved equal to the angle BAE; therefore the angles DAB, DAC are greater than the angle BAC. Similarly we can prove that the remaining angles also, taken together two and two, are greater than the remaining one.",
+  "ai_proof_text": "11.20\n**Statement:** If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.\n\n**Step 1.** Let the solid angle at A be contained by the three plane angles DAB, DAC, and BAC. We are to prove that any two of these angles taken together are greater than the remaining one.\n\n**Step 2.** If all three plane angles are equal, the result is immediate since any two equal angles sum to twice a single angle, which is greater than one such angle. If not all are equal, let angle BAC be not less than each of the other two angles DAB and DAC. It suffices to show that angle DAB + angle DAC > angle BAC, since the cases where the remaining angle is DAB or DAC follow immediately (each is not greater than BAC, so the sum of the other two, which includes BAC, exceeds it).\n\n**Step 3.** In the plane containing angle BAC, construct at the point A the angle BAE equal to the angle DAB, where E lies within the angle BAC on the same side of AB as C [1.23].\n\n**Step 4.** On the ray AE, cut off AE equal to AD [1.3, P1].\n\n**Step 5.** Let BDC be any straight line meeting the three rays AB, AD, AC at points B, D, C respectively (that is, take B on ray AB and C on ray AC, and let BC be drawn cutting the ray AD at D) [P1]. Through E, which lies in the plane of triangle BAC and interior to angle BAC, the line BC also passes, so that E lies on segment BC.\n\n**Step 6.** In triangles ABD and ABE, we have AB = AB, AD = AE (by construction in Step 4), and angle DAB = angle BAE (by construction in Step 3). Therefore triangle ABD is congruent to triangle ABE, and in particular BD = BE [1.4].\n\n**Step 7.** In triangle BDC, by the triangle inequality BD + DC > BC [1.20]. Since BC = BE + EC (as E lies on segment BC), we have BD + DC > BE + EC.\n\n**Step 8.** Since BD = BE (from Step 6), subtracting these equals from the respective sides gives DC > EC [CN3].\n\n**Step 9.** Now consider triangles ADC and AEC. We have AD = AE (by construction), AC = AC, and DC > EC (from Step 8). Therefore angle DAC > angle EAC [1.25].\n\n**Step 10.** Adding angle DAB to the left side and the equal angle BAE to the right side: angle DAB + angle DAC > angle BAE + angle EAC [CN2]. But angle BAE + angle EAC = angle BAC.\n\n**Step 11.** Therefore angle DAB + angle DAC > angle BAC.\n\n**Step 12.** Combined with the observation in Step 2, any two of the three plane angles taken together are greater than the remaining one. Q.E.D.\n\n**USED:** 1.20, 1.23, 1.25, 1.3, 1.4, CN2, CN3, P1\n**Human refs (from References field):** 1.20, 1.25, 1.4\n**Jaccard:** 0.375 — AI adds ['1.23', '1.3', 'CN2', 'CN3', 'P1']",
+  "ai_used": [
+    "1.20",
+    "1.23",
+    "1.25",
+    "1.3",
+    "1.4",
+    "CN2",
+    "CN3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.25",
+    "1.4"
+  ],
+  "ai_only": [
+    "1.23",
+    "1.3",
+    "CN2",
+    "CN3",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let the solid angle at A be contained by the three plane angles DAB, DAC, and BAC. We are to prove that any two of these angles taken together are greater than the remaining one.  **Step 2"
+}

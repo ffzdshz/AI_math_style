@@ -1,0 +1,13 @@
+{
+  "proposition": "4.15",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: they construct the hexagon by drawing a circle with center D and radius DG, prove that certain triangles at the center are equilateral, establish that all six central angles equal one-third of two right angles, then use III.26 (equal central angles yield equal arcs), III.29 (equal arcs yield equal chords) for equilateral, and III.27 (equal arcs yield equal inscribed angles) for equiangular. The sole substantive difference is that Heath uses I.15 (vertical angles) to obtain three of the six central angles at once, while the AI instead applies I.13 (supplementary angles) repeatedly to derive each remaining central angle individually. The key intermediate conclusions are identical in both proofs; the difference is only in citation depth. The ai_only set consists of over-citations (definitions D1.15, D1.20, D4.3; postulates P1, P3; common notion CN2; construction step 3.1) plus 1.13 as a mechanical substitute for 1.15, all consistent with granularity rather than path divergence.",
+  "jaccard": 0.357,
+  "ai_citations": "1.13|1.32|1.5|3.1|3.26|3.27|3.29|CN2|D1.15|D1.20|D4.3|P1|P3",
+  "heath_citations": "1.15|1.32|1.5|3.26|3.27|3.29",
+  "ai_only": "1.13|3.1|CN2|D1.15|D1.20|D4.3|P1|P3",
+  "heath_only": "1.15",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "7.39",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: construct the least common multiple of the numbers corresponding to the given parts, show the LCM has all the given parts (via 7.37), and prove minimality by showing any number with all the parts is measured by all the corresponding numbers (via 7.38) and hence by the LCM. The difference is citation depth: Heath cites 7.36 (find the LCM of three numbers) as a single unit, while the AI re-derives the LCM construction iteratively using 7.34 (two-number LCM) and proves minimality using 7.35 (if two numbers measure a third, their LCM does too). The proof-tree containment test confirms this: Heath's own proof of 7.36 uses exactly 7.34 and 7.35, the substantive ai_only items. The remaining ai_only citations (CN2, CN5, D7.5) are common notions and a definition, consistent with over-citation at finer granularity.",
+  "jaccard": 0.25,
+  "ai_citations": "7.34|7.35|7.37|7.38|CN2|CN5|D7.5",
+  "heath_citations": "7.36|7.37|7.38",
+  "ai_only": "7.34|7.35|CN2|CN5|D7.5",
+  "heath_only": "7.36",
+  "audit_record": ""
+}

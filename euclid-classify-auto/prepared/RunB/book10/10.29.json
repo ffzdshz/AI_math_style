@@ -1,0 +1,43 @@
+{
+  "proposition": "10.29",
+  "book": 10,
+  "statement": "To find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.",
+  "heath_proof": "For let there be set out any rational straight line AB, and two square numbers CD, DE such that their difference CE is not square; [Lemma 1] let there be described on AB the semicircle AFB, and let it be contrived that, as DC is to CE, so is the square on BA to the square on AF. [X. 6]  Let FB be joined. Since, as the square on BA is to the square on AF, so is DC to CE, therefore the square on BA has to the square on AF the ratio which the number DC has to the number CE; therefore the square on BA is commensurable with the square on AF. [X. 6] But the square on AB is rational; [X. Def. 4] therefore the square on AF is also rational; [id.] therefore AF is also rational. And, since DC has not to CE the ratio which a square number has to a square number, neither has the square on BA to the square on AF the ratio which a square number has to a square number; therefore AB is incommensurable in length with AF. [X. 9] Therefore BA, AF are rational straight lines commensurable in square only. And since, as DC is to CE, so is the square on BA to the square on AF, therefore, convertendo, as CD is to DE, so is the square on AB to the square on BF. [V. 19, III. 31, I. 47] But CD has to DE the ratio which a square number has to a square number: therefore also the square on AB has to the square on BF the ratio which a square number has to a square number; therefore AB is commensurable in length with BF. [X. 9] And the square on AB is equal to the squares on AF, FB; therefore the square on AB is greater than the square on AF by the square on BF commensurable with AB. Therefore there have been found two rational straight lines BA, AF commensurable in square only and such that the square on the greater AB is greater than the square on the less AF by the square on BF commensurable in length with AB.",
+  "ai_proof_text": "10.29\n**Statement:** To find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.\n\n**Step 1.** Set out any rational straight line AB. [D10.1.3]\n\n**Step 2.** Set out two square numbers, say 4 and 1, and observe that their difference, 3, is not a square number.\n\n**Step 3.** Using 10.6, make it so that the ratio sq(AB) : sq(CD) equals 4 : 3 for some straight line CD. Since 4 and 3 are numbers, and this ratio is a ratio of a number to a number, sq(AB) and sq(CD) are commensurable areas. [10.6]\n\n**Step 4.** But sq(AB) is rational (since AB is rational, by D10.1.4). Since sq(CD) is commensurable with sq(AB), sq(CD) is also rational. [D10.1.4, 10.12]\n\n**Step 5.** Therefore CD is rational. [D10.1.3, D10.1.4]\n\n**Step 6.** Now since sq(AB) : sq(CD) = 4 : 3, and the ratio 4 : 3 is not a ratio of a square number to a square number (for 3 is not a square), by 10.9 AB and CD are incommensurable in length. [10.9]\n\n**Step 7.** But both AB and CD are rational (Steps 1, 5), and they are incommensurable in length. By D10.1.3, since CD is commensurable in square with AB (Step 3 and 10.9) but not in length (Step 6), AB and CD are commensurable in square only.\n\n**Step 8.** Since AB is the greater (for sq(AB) : sq(CD) = 4 : 3, hence sq(AB) > sq(CD), hence AB > CD), consider the excess of the square on AB over the square on CD. Let EF be the straight line such that sq(EF) = sq(AB) - sq(CD). Such a line exists by the converse construction from 1.47: construct a right triangle with hypotenuse equal to AB and one leg equal to CD; then the remaining leg EF satisfies sq(AB) = sq(CD) + sq(EF). [1.47, 1.22, P1, P3]\n\n**Step 9.** We have sq(EF) = sq(AB) - sq(CD). Now sq(AB) : sq(CD) = 4 : 3, so sq(AB) - sq(CD) : sq(AB) = (4 - 3) : 4 = 1 : 4. That is, sq(EF) : sq(AB) = 1 : 4. [5.17, CN3]\n\n**Step 10.** The ratio 1 : 4 is a ratio of a square number to a square number (since 1 = 1 squared and 4 = 2 squared). Therefore, by 10.9, EF is commensurable in length with AB. [10.9]\n\n**Step 11.** Therefore AB and CD are two rational straight lines, commensurable in square only (Steps 5, 6, 7), and the square on the greater AB is greater than the square on the less CD by the square on EF (Step 8), where EF is commensurable in length with AB (Step 10). This is what was required to find.\n\n**USED:** 1.22, 1.47, 10.12, 10.6, 10.9, 5.17, CN3, D10.1.3, D10.1.4, P1, P3\n**Human refs (from References field):** 1.47, 10.6, 10.9, 3.31, 5.19, D10.1.4\n**Jaccard:** 0.308 — AI adds ['1.22', '10.12', '5.17', 'CN3', 'D10.1.3', 'P1', 'P3']; Human adds ['3.31', '5.19']",
+  "ai_used": [
+    "1.22",
+    "1.47",
+    "10.12",
+    "10.6",
+    "10.9",
+    "5.17",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.47",
+    "10.6",
+    "10.9",
+    "3.31",
+    "5.19",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "1.22",
+    "10.12",
+    "5.17",
+    "CN3",
+    "D10.1.3",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "3.31",
+    "5.19"
+  ],
+  "jaccard": 0.308,
+  "proof_summary": "**Step 1.** Set out any rational straight line AB. [D10.1.3]  **Step 2.** Set out two square numbers, say 4 and 1, and observe that their difference, 3, is not a square number.  **Step 3.** Using 10.6"
+}

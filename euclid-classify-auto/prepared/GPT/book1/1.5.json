@@ -1,0 +1,34 @@
+{
+  "proposition": "1.5",
+  "book": 1,
+  "statement": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+  "heath_proof": "Let ABC be an isosceles triangle having the side AB equal to the side AC; and let the straight lines BD, CE be produced further in a straight line with AB, AC. [Post. 2] I say that the angle ABC is equal to the angle ACB, and the angle CBD to the angle BCE. Let a point F be taken at random on BD; from AE the greater let AG be cut off equal to AF the less; [I. 3] and let the straight lines FC, GB be joined. [Post. 1] Then, since AF is equal to AG and AB to AC, the two sides FA, AC are equal to the two sides GA, AB, respectively; and they contain a common angle, the angle FAG.Therefore the base FC is equal to the base GB, and the triangle AFC is equal to the triangle AGB, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend, that is, the angle ACF to the angle ABG, and the angle AFC to the angle AGB. [I. 4] And, since the whole AF is equal to the whole AG, and in these AB is equal to AC, the remainder BF is equal to the remainder CG. But FC was also proved equal to GB;therefore the two sides BF, FC are equal to the two sides CG, GB respectively; and the angle BFC is equal to the angle CGB, while the base BC is common to them; therefore the triangle BFC is also equal to the triangle CGB,and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend; therefore the angle FBC is equal to the angle GCB, and the angle BCF to the angle CBG. Accordingly, since the whole angle ABG was proved equal to the angle ACF, and in these the angle CBG is equal to the angle BCF, the remaining angle ABC is equal to the remaining angle ACB;and they are at the base of the triangle ABC. But the angle FBC was also proved equal to the angle GCB; and they are under the base.",
+  "ai_proof_text": "1.5\n**Statement:** In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.\n\n**Step 1.** Let ABC be an isosceles triangle with AB = AC and base BC. We must prove that ∠ABC = ∠ACB and that the angles under BC formed by producing AB and AC beyond B and C are equal. [D1.20]\n\n**Step 2.** Produce AB beyond B to F, and produce AC beyond C to E far enough that AE > AF. [P2] Since AF > AB = AC, we also have AF > AC. [CN5] Cut off AG from AE equal to AF; consequently G lies beyond C. [1.3] Path choice: cutting off a length on the specified straight line directly supplies the equal whole lengths needed for the triangle comparison.\n\n**Step 3.** Join FC and GB. [P1]\n\n**Step 4.** Compare triangles AFC and AGB. We have AF = AG by construction and AC = AB by hypothesis. Moreover, ∠FAC = ∠GAB, since their bounding rays coincide in reverse order. [CN4] Thus the two pairs of sides and their included angles are equal, so apply 1.4 directly. It gives FC = GB, ∠ACF = ∠ABG, and ∠AFC = ∠AGB. [1.4]\n\n**Step 5.** Subtract AB = AC from AF = AG. Since B lies between A and F, and C lies between A and G, the remaining segments satisfy BF = CG. [CN3]\n\n**Step 6.** Because the rays FB and FA coincide, ∠BFC = ∠AFC; because the rays GC and GA coincide, ∠CGB = ∠AGB. [CN4] Together with ∠AFC = ∠AGB from Step 4, these equalities give ∠BFC = ∠CGB. [CN1]\n\n**Step 7.** Compare triangles BFC and CGB. Their sides BF and FC equal CG and GB respectively, by Steps 5 and 4, and their included angles ∠BFC and ∠CGB are equal by Step 6. Therefore ∠FBC = ∠GCB and ∠BCF = ∠CBG. [1.4] The first equality is precisely the equality of the angles under the base.\n\n**Step 8.** Since F lies beyond B on AB, the angle ∠ACF consists of ∠ACB together with ∠BCF. Similarly, since G lies beyond C on AC, the angle ∠ABG consists of ∠ABC together with ∠CBG. Subtract the equal angles ∠BCF and ∠CBG from the equal angles ∠ACF and ∠ABG obtained in Step 4. The remaining angles are equal: ∠ACB = ∠ABC. [CN3] Thus both the angles at the base and, by Step 7, the angles under the base are equal, as required.\n\n**USED:** 1.3, 1.4, CN1, CN3, CN4, CN5, D1.20, P1, P2\n**Human refs (from References field):** 1.3, 1.4, P1, P2\n**Jaccard:** 0.444 — AI adds ['CN1', 'CN3', 'CN4', 'CN5', 'D1.20']",
+  "ai_used": [
+    "1.3",
+    "1.4",
+    "CN1",
+    "CN3",
+    "CN4",
+    "CN5",
+    "D1.20",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.3",
+    "1.4",
+    "P1",
+    "P2"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN3",
+    "CN4",
+    "CN5",
+    "D1.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let ABC be an isosceles triangle with AB = AC and base BC. We must prove that ∠ABC = ∠ACB and that the angles under BC formed by producing AB and AC beyond B and C are equal. [D1.20]  **St"
+}

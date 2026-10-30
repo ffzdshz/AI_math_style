@@ -1,0 +1,13 @@
+{
+  "proposition": "7.34",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: find the least numbers in the ratio A:B (7.33), construct the LCM as the cross-product (7.19), then prove minimality by contradiction using the least-ratio property (7.20) to establish divisibility. The sole heath_only citation 7.17 (if a number multiplies two numbers, the products have the same ratio) is used by Heath in the final contradiction step to conclude that since E measures G, C measures D. The AI replaces this with 7.16 (commutativity of multiplication) to directly show G = E * M >= E, achieving the same contradiction by a slightly different algebraic rearrangement rather than a proportionality argument. The ai_only items are mostly definitions and common notions (CN1, D7.1, D7.2, D7.3, D7.5) representing over-citation, plus 7.22 which the AI uses to explicitly justify that least-ratio numbers are coprime before invoking 7.21, a step Heath leaves implicit. The AI also unifies Heath's two cases (coprime and non-coprime) into a single argument via 7.33, which is a presentational difference, not a backbone difference. Since the key intermediate conclusions are the same and only citation depth and the final contradiction technique differ, this is a granularity difference.",
+  "jaccard": 0.462,
+  "ai_citations": "7.16|7.19|7.20|7.21|7.22|7.33|CN1|D7.1|D7.15|D7.2|D7.3|D7.5",
+  "heath_citations": "7.16|7.17|7.19|7.20|7.21|7.33|D7.15",
+  "ai_only": "7.22|CN1|D7.1|D7.2|D7.3|D7.5",
+  "heath_only": "7.17",
+  "audit_record": ""
+}

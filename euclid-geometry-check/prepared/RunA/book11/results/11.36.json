@@ -1,0 +1,51 @@
+{
+  "proposition": "11.36",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "S is a parallelepiped with edges A, B, C and given solid angles; T is an equilateral parallelepiped with all edges B and the same solid angles as S",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Base of S is parallelogram with sides A and B at a given angle; base of T is parallelogram with sides B and B at the same angle; both base parallelograms are equiangular",
+      "type": "plane_figure_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Both base parallelograms have sides of length B at the same included angle, so their perpendicular heights are equal, each being B times sine of the common angle",
+      "type": "metric_height_claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The two base parallelograms are under the same height",
+      "type": "parallel_placement"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Height of parallelepiped T is B, measured perpendicular to its base",
+      "type": "solid_height_claim"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Height of parallelepiped S is C, measured perpendicular to its base",
+      "type": "solid_height_claim"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The perpendicular-to-base direction is the same for both solids since they are equiangular",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Bases of S and T are reciprocally proportional to their heights",
+      "type": "proportional_relationship"
+    }
+  ],
+  "configuration_map": "Two equiangular parallelepipeds S and T sharing the same solid angle structure. S has edges A, B, C; T has edges B, B, B. The base face of S is the parallelogram formed by edges A and B; the base face of T is the parallelogram formed by edges B and B. Both base parallelograms have the same included angle (from equiangularity). The third edge (C for S, B for T) determines the height direction, which is the same for both solids due to equiangularity. The actual perpendicular heights are C*sin(phi) and B*sin(phi) where phi is the angle the third edge makes with the base plane, but only the ratio B:C matters for the proof. The base parallelogram areas are A*B*sin(theta) and B^2*sin(theta) respectively, giving ratio A:B.",
+  "pass_reason": "The proof is primarily proportional/ratio-based reasoning about equiangular parallelepipeds. While Steps 3 and 6 contain imprecise metric claims (Step 3 gives a muddled justification for the same-height condition, Step 6 equates edge lengths with perpendicular heights), these are errors in individual step explanations rather than spatial configuration contradictions between steps. All ratio conclusions are correct: base(S):base(T) = A:B via areas, height(T):height(S) = B:C via the common sin factor canceling. No two spatial claims about the same geometric entity are mutually inconsistent. The application of 11.34 (converse) to equiangular solids with reciprocally proportional bases and heights is valid."
+}

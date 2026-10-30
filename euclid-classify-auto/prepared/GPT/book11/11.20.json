@@ -1,0 +1,40 @@
+{
+  "proposition": "11.20",
+  "book": 11,
+  "statement": "If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.",
+  "heath_proof": "For let the solid angle at A be contained by the three plane angles BAC, CAD, DAB; I say that any two of the angles BAC, CAD, DAB, taken together in any manner, are greater than the remaining one. If now the angles BAC, CAD, DAB are equal to one another, it is manifest that any two are greater than the remaining one. But, if not, let BAC be greater, and on the straight line AB, and at the point A on it, let the angle BAE be constructed, in the plane through BA, AC, equal to the angle DAB; let AE be made equal to AD, and let BEC, drawn across through the point E, cut the straight lines AB, AC at the points B, C; let DB, DC be joined. Now, since DA is equal to AE, and AB is common, two sides are equal to two sides; and the angle DAB is equal to the angle BAE; therefore the base DB is equal to the base BE. [I. 4] And, since the two sides BD, DC are greater than BC, [I. 20] and of these DB was proved equal to BE, therefore the remainder DC is greater than the remainder EC. Now, since DA is equal to AE, and AC is common, and the base DC is greater than the base EC, therefore the angle DAC is greater than the angle EAC. [I. 25] But the angle DAB was also proved equal to the angle BAE; therefore the angles DAB, DAC are greater than the angle BAC. Similarly we can prove that the remaining angles also, taken together two and two, are greater than the remaining one.",
+  "ai_proof_text": "11.20\n**Statement:** If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.\n\n**Step 1.** Let O be the vertex, and denote the three edge rays by OA, OB, OC, with points on these rays to be chosen below. These rays are not coplanar (D11.11). Write α = ∠AOB, β = ∠AOC, and γ = ∠BOC, relabelling so that α is greatest. The inequalities α + β > γ and α + γ > β follow immediately because each sum exceeds its summand α (CN5). It remains to prove β + γ > α.\n\n**Step 2.** If α = β, then β + γ > α by CN5. Suppose therefore that α > β. In the plane of OA and OB, construct a ray OD strictly inside ∠AOB such that ∠AOD = β (1.23). This is the chosen route: splitting the greatest face angle will reduce the required inequality to a comparison of two triangles.\n\n**Step 3.** Choose A and B on their respective edge rays and join AB; let the interior ray OD meet AB at D, so that D lies between A and B (P1). Choose C on the third edge ray so that OC = OD, producing that edge if necessary (P2, 1.3). Join AC and BC (P1). Since the three edge rays are noncoplanar, C is not on AB, so ABC is a genuine triangle (D11.11). Every triangle used below lies in a plane (11.2).\n\n**Step 4.** In triangles AOD and AOC, AO is common, OD = OC, and ∠AOD = ∠AOC by construction. Hence their bases are equal: AD = AC (1.4).\n\n**Step 5.** In triangle ABC, the two sides AC and CB together exceed AB:\nAC + CB > AB (1.20).\n\n**Step 6.** Since D lies between A and B, AB = AD + DB. Substituting AD = AC into Step 5 and removing the equal common parts gives CB > DB (CN3, CN5).\n\n**Step 7.** Compare triangles COB and DOB. They have CO = DO and OB common, while their bases satisfy CB > DB. Therefore ∠COB > ∠DOB (1.25). This proposition applies directly because equality of the corresponding pairs of sides and inequality of the bases have already been established.\n\n**Step 8.** Add ∠AOC = ∠AOD to the inequality in Step 7. Since OD lies inside ∠AOB, this gives\n∠AOC + ∠COB > ∠AOD + ∠DOB = ∠AOB\n(CN2, CN5). Thus β + γ > α. Together with the other two inequalities established in Step 1, this proves that any two of the three plane angles, taken together, are greater than the remaining one.\n\n**USED:** 1.20, 1.23, 1.25, 1.3, 1.4, 11.2, CN2, CN3, CN5, D11.11, P1, P2\n**Human refs (from References field):** 1.20, 1.25, 1.4\n**Jaccard:** 0.250 — AI adds ['1.23', '1.3', '11.2', 'CN2', 'CN3', 'CN5', 'D11.11', 'P1', 'P2']",
+  "ai_used": [
+    "1.20",
+    "1.23",
+    "1.25",
+    "1.3",
+    "1.4",
+    "11.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D11.11",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.25",
+    "1.4"
+  ],
+  "ai_only": [
+    "1.23",
+    "1.3",
+    "11.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D11.11",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let O be the vertex, and denote the three edge rays by OA, OB, OC, with points on these rays to be chosen below. These rays are not coplanar (D11.11). Write α = ∠AOB, β = ∠AOC, and γ = ∠BO"
+}

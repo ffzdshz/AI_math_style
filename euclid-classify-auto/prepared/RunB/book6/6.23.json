@@ -1,0 +1,39 @@
+{
+  "proposition": "6.23",
+  "book": 6,
+  "statement": "Equiangular parallelograms have to one another the ratio compounded of the ratios of their sides.",
+  "heath_proof": "Let AC, CF be equiangular parallelograms having the angle BCD equal to the angle ECG;I say that the parallelogram AC has to the parallelogram CF the ratio compounded of the ratios of the sides. For let them be placed so that BC is in a straight line with CG; therefore DC is also in a straight line with CE. Let the parallelogram DG be completed; let a straight line K be set out, and let it be contrived that, as BC is to CG, so is K to L, and, as DC is to CE, so is L to M. [VI. 12] Then the ratios of K to L and of L to M are the sameas the ratios of the sides, namely of BC to CG and of DC to CE. But the ratio of K to M is compounded of the ratio of K to L and of that of L to M; so that K has also to M the ratio compounded of the ratiosof the sides. Now since, as BC is to CG, so is the parallelogram AC to the parallelogram CH, [VI. 1] while, as BC is to CG, so is K to L, therefore also, as K is to L, so is AC to CH. [V. 11] Again, since, as DC is to CE, so is the parallelogram CH to CF, [VI. 1] while, as DC is to CE, so is L to M, therefore also, as L is to M, so is the parallelogram CH to the parallelogram CF. [V. 11] Since then it was proved that, as K is to L, so is the parallelogram AC to the parallelogram CH, and, as L is to M, so is the parallelogram CH to the parallelogram CF, therefore, ex aequali, as K is to M, so is AC to the parallelogram  CF. But K has to M the ratio compounded of the ratios of the sides; therefore AC also has to CF the ratio compounded of the ratios of the sides.",
+  "ai_proof_text": "6.23\n**Statement:** Equiangular parallelograms have to one another the ratio compounded of the ratios of their sides.\n\n**Step 1.** Let ABCD and CEFG be two equiangular parallelograms, with angle BCD equal to angle ECG. We must show that parallelogram ABCD has to parallelogram CEFG the ratio compounded of the ratios of their sides, namely the ratio BC:CG compounded with the ratio DC:CE.\n\n**Step 2.** Place the parallelograms so that the equal angles are at a common vertex C, with BC and CG in a straight line, and DC and CE in a straight line. This is possible because angle BCD = angle ECG; adding angle DCE to each, we obtain angle BCE = angle DCG (CN2). Since angle BCD + angle DCE = angle BCE, and these together make the angles on one side, BC and CG can be placed in a straight line, and similarly DC and CE in a straight line, by 1.14 (if a straight line standing on a straight line makes adjacent angles equal to two right angles, the lines are in a straight line), since the angles of parallelograms at C sum appropriately with the supplementary angles from 1.29.\n\n**Step 3.** Complete the parallelogram DCKH, where K is the point such that DCKH is a parallelogram with sides DC, CG and sides parallel to them (P1, 1.31). This parallelogram shares the side DC with ABCD and the side CG with CEFG.\n\n**Step 4.** Since parallelograms ABCD and DCKH are under the same height (the perpendicular distance between the parallel lines BC-AD and the line through D parallel to BCG, noting that both have bases on the line BCG and tops along the parallel through A and H respectively), we apply 6.1: parallelogram ABCD is to parallelogram DCKH as BC is to CG, since BC and CG are their respective bases along the same line, and they share the same height (the distance between the parallels through B-C-G and through A-D-H).\n\n**Step 5.** Similarly, parallelograms DCKH and CEFG are under the same height (the perpendicular distance between the parallel lines DC-CE and the line through K-G, noting that both have bases on the line DCE and tops along the parallel through H-K and G-F respectively). By 6.1, parallelogram DCKH is to parallelogram CEFG as DC is to CE.\n\n**Step 6.** We now have two ratios: parallelogram ABCD : parallelogram DCKH :: BC : CG, and parallelogram DCKH : parallelogram CEFG :: DC : CE. Since there are three magnitudes — parallelogram ABCD, parallelogram DCKH, and parallelogram CEFG — and two corresponding sets of three magnitudes — BC, CG in the first ratio and DC, CE in the second — the ratio of parallelogram ABCD to parallelogram CEFG is compounded of the ratio of parallelogram ABCD to parallelogram DCKH and the ratio of parallelogram DCKH to parallelogram CEFG (D6.5).\n\n**Step 7.** But the ratio ABCD : DCKH is the same as BC : CG (Step 4), and the ratio DCKH : CEFG is the same as DC : CE (Step 5). Therefore the ratio of parallelogram ABCD to parallelogram CEFG is compounded of the ratio BC : CG and the ratio DC : CE (5.22, ex aequali applied to the three-term sequence ABCD, DCKH, CEFG with the corresponding ratios of the sides).\n\n**Step 8.** That is, equiangular parallelograms ABCD and CEFG have to one another the ratio compounded of the ratios of their sides. This is what was to be proved.\n\n**USED:** 1.14, 1.29, 1.31, 1.34, 5.22, 6.1, CN2, D6.5, P1\n**Human refs (from References field):** 5.11, 6.1, 6.12\n**Jaccard:** 0.091 — AI adds ['1.14', '1.29', '1.31', '1.34', '5.22', 'CN2', 'D6.5', 'P1']; Human adds ['5.11', '6.12']",
+  "ai_used": [
+    "1.14",
+    "1.29",
+    "1.31",
+    "1.34",
+    "5.22",
+    "6.1",
+    "CN2",
+    "D6.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "5.11",
+    "6.1",
+    "6.12"
+  ],
+  "ai_only": [
+    "1.14",
+    "1.29",
+    "1.31",
+    "1.34",
+    "5.22",
+    "CN2",
+    "D6.5",
+    "P1"
+  ],
+  "heath_only": [
+    "5.11",
+    "6.12"
+  ],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let ABCD and CEFG be two equiangular parallelograms, with angle BCD equal to angle ECG. We must show that parallelogram ABCD has to parallelogram CEFG the ratio compounded of the ratios of"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "6.20",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The classification is decided at Q2/Q3. While both proofs share the same backbone for Part 1 (decomposing similar polygons into similar triangles via 6.6 with angle subtraction), they diverge significantly in Part 2 (establishing that the component triangles are in the same ratio as the whole polygons). Heath constructs auxiliary diagonals AC and FH, uses 1.32 to show auxiliary triangles are equiangular, applies 6.1 to relate triangle areas to their bases, and chains ratios via 5.22 (ex aequali). The AI takes a genuinely different path: it observes that adjacent pairs of similar triangles share a common side (BE/GL or EC/LH), applies 6.19 directly to obtain duplicate ratios of those shared sides, then uses 5.11 (ratio transitivity) to chain the equal ratios. The heath_only citations 1.32, 5.22, and 6.1 are not merely subsumed by an AI-cited higher-level proposition (only 6.1 appears inside 6.19's proof tree, but 1.32 and 5.22 do not), confirming this is a backbone-level divergence rather than a depth difference. The AI's alternative path is logically complete and valid, so Q3 yields D.",
+  "jaccard": 0.455,
+  "ai_citations": "5.11|5.12|6.19|6.4|6.6|CN3|D5.9|D6.1",
+  "heath_citations": "1.32|5.12|5.22|6.1|6.19|6.4|6.6|D6.1",
+  "ai_only": "5.11|CN3|D5.9",
+  "heath_only": "1.32|5.22|6.1",
+  "audit_record": ""
+}

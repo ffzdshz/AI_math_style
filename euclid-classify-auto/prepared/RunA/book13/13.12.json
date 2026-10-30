@@ -1,0 +1,47 @@
+{
+  "proposition": "13.12",
+  "book": 13,
+  "statement": "If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.",
+  "heath_proof": "Let ABC be a circle, and let the equilateral triangle ABC be inscribed in it; I say that the square on one side of the triangle ABC is triple of the square on the radius of the circle. For let the centre D of the circle ABC be taken, let AD be joined and carried through to E, and let BE be joined. Then, since the triangle ABC is equilateral, therefore the circumference BEC is a third part of the circumference of the circle ABC. Therefore the circumference BE is a sixth part of the circumference of the circle; therefore the straight line BE belongs to a hexagon; therefore it is equal to the radius DE. [IV. 15] And, since AE is double of DE, the square on AE is quadruple of the square on ED, that is, of the square on BE. But the square on AE is equal to the squares on AB, BE; [III. 31, I. 47] therefore the squares on AB, BE are quadruple of the square on BE. Therefore, separando, the square on AB is triple of the square on BE. But BE is equal to DE; therefore the square on AB is triple of the square on DE. Therefore the square on the side of the triangle is triple of the square on the radius.",
+  "ai_proof_text": "13.12\n**Statement:** If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.\n\n**Step 1.** Let ABC be an equilateral triangle inscribed in a circle with center E [D4.3, D1.20]. Let AE, BE, CE be radii of the circle, so that AE = BE = CE [D1.15].\n\n**Step 2.** Since AB = BC = CA [D1.20] and AE = BE = CE [D1.15], triangles AEB, BEC, and CEA have all three sides respectively equal. Therefore by SSS congruence [1.8], the three triangles are congruent, and in particular angle AEB = angle BEC = angle CEA.\n\n**Step 3.** Let D be the point diametrically opposite A on the circle, so that AD is a diameter passing through E [D1.17]. Then AED is a straight line and AE = ED (each being a radius).\n\n**Step 4.** Since AED is a straight line, angle AEB + angle BED = two right angles [1.13], and angle AEC + angle CED = two right angles [1.13].\n\n**Step 5.** From the equal central angles (Step 2), angle AEB = angle AEC. By Step 4, angle BED = two right angles minus angle AEB and angle CED = two right angles minus angle AEC. Since angle AEB = angle AEC, it follows that angle BED = angle CED.\n\n**Step 6.** Also from Step 2, angle BEC = angle AEB. Since D lies between rays EB and EC from center E (the equilateral triangle having B and C symmetrically placed about the diameter AD), angle BEC = angle BED + angle DEC = angle BED + angle BED = two times angle BED [Step 5]. Therefore angle AEB = two times angle BED.\n\n**Step 7.** Substituting into the relation from Step 4: two times angle BED + angle BED = two right angles, so three times angle BED = two right angles.\n\n**Step 8.** Consider triangle BED. The sum of its angles equals two right angles [1.32]. Since EB = ED (both radii) [D1.15], the base angles are equal: angle EBD = angle EDB [1.5]. Therefore angle BED + angle EBD + angle EDB = angle BED + two times angle EBD = two right angles.\n\n**Step 9.** But three times angle BED also equals two right angles [Step 7]. Hence angle BED + two times angle EBD = three times angle BED. Subtracting angle BED from both sides [CN3], two times angle EBD = two times angle BED, so angle EBD = angle BED.\n\n**Step 10.** Since angle EBD = angle BED in triangle BED, the side opposite angle EBD (namely ED) equals the side opposite angle BED (namely BD) [1.6]. Therefore BD = ED. Since ED = AE (both radii) [D1.15], BD = AE [CN1].\n\n**Step 11.** Since AD is a diameter and B lies on the circle, the angle ABD (the angle in a semicircle) is a right angle [3.31].\n\n**Step 12.** In right triangle ABD with the right angle at B, by the Pythagorean theorem the square on AD equals the square on AB together with the square on BD [1.47]. That is, sq(AD) = sq(AB) + sq(BD).\n\n**Step 13.** Since AD is bisected at E (with AE = ED), apply the identity for a bisected line [2.4]: the square on AD equals the square on AE plus the square on ED plus twice the rectangle contained by AE and ED. Since AE = ED, this gives sq(AD) = sq(AE) + sq(AE) + two times sq(AE) = four times sq(AE).\n\n**Step 14.** Since BD = AE [Step 10], the square on BD equals the square on AE. Substituting into Step 12: four times sq(AE) = sq(AB) + sq(AE).\n\n**Step 15.** Subtracting the square on AE from both sides [CN3]: sq(AB) = three times sq(AE).\n\n**Step 16.** Since AE is the radius of the circle, the square on the side of the equilateral triangle is triple of the square on the radius of the circle. Q.E.D.\n\n**USED:** 1.13, 1.32, 1.47, 1.5, 1.6, 1.8, 2.4, 3.31, CN1, CN3, D1.15, D1.17, D1.20, D4.3\n**Human refs (from References field):** 1.47, 3.31, 4.15\n**Jaccard:** 0.133 — AI adds ['1.13', '1.32', '1.5', '1.6', '1.8', '2.4', 'CN1', 'CN3', 'D1.15', 'D1.17', 'D1.20', 'D4.3']; Human adds ['4.15']",
+  "ai_used": [
+    "1.13",
+    "1.32",
+    "1.47",
+    "1.5",
+    "1.6",
+    "1.8",
+    "2.4",
+    "3.31",
+    "CN1",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.20",
+    "D4.3"
+  ],
+  "heath_refs": [
+    "1.47",
+    "3.31",
+    "4.15"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.32",
+    "1.5",
+    "1.6",
+    "1.8",
+    "2.4",
+    "CN1",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.20",
+    "D4.3"
+  ],
+  "heath_only": [
+    "4.15"
+  ],
+  "jaccard": 0.133,
+  "proof_summary": "**Step 1.** Let ABC be an equilateral triangle inscribed in a circle with center E [D4.3, D1.20]. Let AE, BE, CE be radii of the circle, so that AE = BE = CE [D1.15].  **Step 2.** Since AB = BC = CA ["
+}

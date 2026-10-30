@@ -1,0 +1,26 @@
+{
+  "proposition": "7.9",
+  "book": 7,
+  "statement": "If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.",
+  "heath_proof": "For let the number A be a part of the number BC, and another, D, the same part of another, EF, that A is of BC; I say that, alternately also, whatever part or parts A is of D, the same part or parts is BC of EF also. For since, whatever part A is of BC, the same part also is D of EF, therefore, as many numbers as there are in BC equal to A, so many also are there in EF equal to D. Let BC be divided into the numbers equal to A, namely BG, GC, and EF into those equal to D, namely EH, HF; thus the multitude of BG, GC will be equal to the multitude of EH, HF. Now, since the numbers BG, GC are equal to one another, and the numbers EH, HF are also equal to one another, while the multitude of BG, GC is equal to the multitude of EH, HF, therefore, whatever part or parts BG is of EH, the same part or the same parts is GC of HF also; so that, in addition, whatever part or parts BG is of EH, the same part also, or the same parts, is the sum BC of the sum EF. [VII. 5, 6] But BG is equal to A, and EH to D; therefore, whatever part or parts A is of D, the same part or the same parts is BC of EF also.",
+  "ai_proof_text": "7.9\n**Statement:** If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.\n\n**Step 1.** Let A be the same part of B that C is of D. By Definition 7.3, A measures B and C measures D, and A is the same part of each respectively. Then there exists a number n such that B is composed of n copies of A (B = A taken n times) and D is composed of n copies of C (D = C taken n times), where n is the same in both cases.\n\n**Step 2.** By Definition 7.4, A is either a part or parts of C. We must show that B is the same part, or the same parts, of D.\n\n**Step 3.** Case 1: Suppose A is a part of C. Then by Definition 7.3, A measures C, and A is the 1/m-th part of C for some number m. We must show that B is the same part (the 1/m-th part) of D.\n\n**Step 4.** Since A is the 1/m-th part of C, and A is the same part (the 1/m-th part) of C, by Proposition 7.5 the sum A + A is the same part (the 1/m-th part) of the sum C + C.\n\n**Step 5.** Again, since A is the 1/m-th part of C, and the sum of two copies of A is the 1/m-th part of the sum of two copies of C (by Step 4), by Proposition 7.5 the sum of three copies of A is the 1/m-th part of the sum of three copies of C.\n\n**Step 6.** Continuing in this manner by successive applications of Proposition 7.5 (applying it n - 1 times in total), we conclude that the sum of n copies of A is the 1/m-th part of the sum of n copies of C.\n\n**Step 7.** But the sum of n copies of A is B, and the sum of n copies of C is D (by Step 1). Therefore B is the 1/m-th part of D, which is to say B is the same part of D that A is of C.\n\n**Step 8.** Case 2: Suppose A is parts of C. Then by Definition 7.4, A does not measure C, but A constitutes certain parts (say p/m-ths) of C. We must show that B is the same parts of D.\n\n**Step 9.** Since A is the same parts of C, and A is the same parts of C, by Proposition 7.6 the sum A + A is the same parts of the sum C + C.\n\n**Step 10.** Again, since A is the same parts of C, and the sum of two copies of A is the same parts of the sum of two copies of C (by Step 9), by Proposition 7.6 the sum of three copies of A is the same parts of the sum of three copies of C.\n\n**Step 11.** Continuing in this manner by successive applications of Proposition 7.6 (applying it n - 1 times in total), we conclude that the sum of n copies of A is the same parts of the sum of n copies of C.\n\n**Step 12.** But the sum of n copies of A is B, and the sum of n copies of C is D (by Step 1). Therefore B is the same parts of D that A is of C.\n\n**Step 13.** Therefore, in either case, whatever part or parts A is of C, the same part or the same parts is B of D. This is what was to be proved.\n\n**USED:** 7.5, 7.6, D7.3, D7.4, D7.5\n**Human refs (from References field):** 7.5, 7.6\n**Jaccard:** 0.400 — AI adds ['D7.3', 'D7.4', 'D7.5']",
+  "ai_used": [
+    "7.5",
+    "7.6",
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.5",
+    "7.6"
+  ],
+  "ai_only": [
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let A be the same part of B that C is of D. By Definition 7.3, A measures B and C measures D, and A is the same part of each respectively. Then there exists a number n such that B is compo"
+}

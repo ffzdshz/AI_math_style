@@ -1,0 +1,36 @@
+{
+  "proposition": "10.82",
+  "book": 10,
+  "statement": "To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.",
+  "heath_proof": "Let AB be the minor straight line, and let BC be an annex to AB; therefore AC, CB are straight lines incommensurable in square which make the sum of the squares on them rational, but twice the rectangle contained by them medial. [X. 76] I say that no other straight line can be annexed to AB fulfilling the same conditions. For, if possible, let BD be so annexed; therefore AD, DB are also straight lines incommensurable in square which fulfil the aforesaid conditions. [X. 76] Now, since the excess of the squares on AD, DB over the squares on AC, CB is also the excess of twice the rectangle AD, DB over twice the rectangle AC, CB, while the squares on AD, DB exceed the squares on AC, CB by a rational area, for both are rational, therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area: which is impossible, for both are medial. [X. 26] Therefore to a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes the squares on them added together rational, but twice the rectangle contained by them medial.",
+  "ai_proof_text": "10.82\n**Statement:** To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.\n\n**Step 1.** Let AB be a minor straight line, and let BC be the annex to it, so that AC is the whole. Then by the definition of a minor straight line [10.76], AC and BC are incommensurable in square, the sum of the squares on AC and BC is rational, and the rectangle contained by AC and BC is medial (so that twice the rectangle AC, BC is also medial).\n\n**Step 2.** Suppose, for the sake of contradiction, that BD is another straight line annexed to AB, different from BC, such that AD and BD are incommensurable in square, the sum of the squares on AD and BD is rational, and twice the rectangle contained by AD and BD is medial.\n\n**Step 3.** Since AC is the whole and BC the annex, the line AC is cut at B into segments AB and BC. By 2.7, the square on AC together with the square on BC equals twice the rectangle contained by AC and BC together with the square on AB. That is, sq(AC) + sq(BC) = 2*rect(AC, BC) + sq(AB).\n\n**Step 4.** Similarly, since AD is the whole and BD the annex, the line AD is cut at B into segments AB and BD. By 2.7, sq(AD) + sq(BD) = 2*rect(AD, BD) + sq(AB).\n\n**Step 5.** Since both expressions equal sq(AB) plus their respective double rectangles, by CN1 we obtain: sq(AC) + sq(BC) - 2*rect(AC, BC) = sq(AD) + sq(BD) - 2*rect(AD, BD). Rearranging by CN3: [sq(AC) + sq(BC)] - [sq(AD) + sq(BD)] = 2*rect(AC, BC) - 2*rect(AD, BD).\n\n**Step 6.** Now, sq(AC) + sq(BC) is rational and sq(AD) + sq(BD) is rational. Since both are rational areas, each is commensurable with the square on the assigned rational straight line [D10.1.4]. Therefore by 10.12 they are commensurable with one another.\n\n**Step 7.** Suppose the two sums of squares are unequal. Without loss of generality, assume sq(AC) + sq(BC) > sq(AD) + sq(BD). Then from Step 5, 2*rect(AC, BC) > 2*rect(AD, BD), and the excess 2*rect(AC, BC) - 2*rect(AD, BD) equals the rational difference [sq(AC) + sq(BC)] - [sq(AD) + sq(BD)]. Since the two rational areas are commensurable with each other (Step 6), their difference, being the remainder when commensurable magnitudes are subtracted, is commensurable with them [10.15], and hence is itself a rational area [D10.1.4].\n\n**Step 8.** But 2*rect(AC, BC) is medial and 2*rect(AD, BD) is medial. Thus a medial area would exceed a medial area by a rational area. This contradicts 10.26, which states that a medial area does not exceed a medial area by a rational area.\n\n**Step 9.** Therefore the assumption in Step 7 is false, and sq(AC) + sq(BC) = sq(AD) + sq(BD). It follows immediately from Step 5 that 2*rect(AC, BC) = 2*rect(AD, BD), and hence rect(AC, BC) = rect(AD, BD).\n\n**Step 10.** Since sq(AC) + sq(BC) = sq(AD) + sq(BD) and rect(AC, BC) = rect(AD, BD), we apply 2.4: the square on the sum AC + BC equals sq(AC) + sq(BC) + 2*rect(AC, BC) = sq(AD) + sq(BD) + 2*rect(AD, BD) = the square on the sum AD + BD. Therefore AC + BC = AD + BD.\n\n**Step 11.** We also know from the construction that AC - BC = AB = AD - BD.\n\n**Step 12.** Adding the equalities from Steps 10 and 11 by CN2: (AC + BC) + (AC - BC) = (AD + BD) + (AD - BD), that is, twice AC = twice AD, so AC = AD.\n\n**Step 13.** Subtracting: from AC - BC = AD - BD and AC = AD, by CN3 we conclude BC = BD.\n\n**Step 14.** Therefore the annex BC is the same as BD, and to a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.26, 10.76, 2.4, 2.7, CN1, CN2, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.76\n**Jaccard:** 0.200 — AI adds ['10.12', '10.15', '2.4', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.76",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.76"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let AB be a minor straight line, and let BC be the annex to it, so that AC is the whole. Then by the definition of a minor straight line [10.76], AC and BC are incommensurable in square, t"
+}

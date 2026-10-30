@@ -1,0 +1,44 @@
+{
+  "proposition": "1.48",
+  "book": 1,
+  "statement": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+  "heath_proof": "For in the triangle ABC let the square on one side BC be equal to the squares on the sides BA, AC; I say that the angle BAC is right. For let AD be drawn from the point A at right angles to the straight line AC, let AD be made equal to BA, and let DC be joined. Since DA is equal to AB, the square on DA is also equal to the square on AB. Let the square on AC be added to each; therefore the squares on DA, AC are equal to the squares on BA, AC. But the square on DC is equal to the squares on DA, AC, for the angle DAC is right; [I. 47] and the square on BC is equal to the squares on BA, AC, for this is the hypothesis; therefore the square on DC is equal to the square on BC, so that the side DC is also equal to BC. And, since DA is equal to AB, and AC is common, the two sides DA, AC are equal to the two sides BA, AC; and the base DC is equal to the base BC; therefore the angle DAC is equal to the angle BAC. [I. 8]But the angle DAC is right; therefore the angle BAC is also right.",
+  "ai_proof_text": "1.48\n**Statement:** If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.\n\n**Step 1.** Let ABC be a triangle such that the square on BC equals the squares on AB and AC together. Write S(XY) for the area of a square on XY; any auxiliary squares required may be constructed by 1.46. Thus S(BC) = S(AB) + S(AC). We must prove that angle BAC is right. [Hypothesis; 1.46]\n\n**Step 2.** Draw a perpendicular to AC at A, choosing its ray on the opposite side of AC from B. Produce this ray sufficiently, and cut off AD equal to AB. Join DC. Then angle DAC is right. Our path is to compare ABC with this constructed right-angled triangle, so that 1.47 can be applied without assuming the desired conclusion. [1.11; P2; 1.3; P1; D1.10]\n\n**Step 3.** Since AD = AB, the squares on AD and AB are equal: on superposing their equal sides and corresponding right angles, the squares coincide, because all the sides of each square are equal and all its angles are right. Hence S(AD) = S(AB). [D1.22; P4; CN4]\n\n**Step 4.** Apply 1.47 to the triangle DAC, which is right-angled at A. It gives S(DC) = S(AD) + S(AC). [1.47]\n\n**Step 5.** Add S(AC) to the equal areas in Step 3. Then S(AD) + S(AC) = S(AB) + S(AC). Combining this equality with Step 4 and the hypothesis yields S(DC) = S(BC). [CN2; CN1]\n\n**Step 6.** Therefore DC = BC. Indeed, if these sides were unequal, superpose the squares on them with a vertex coinciding and the two side-directions through that vertex coinciding. This placement is possible because their angles are right. Since every side of each square equals its defining side, the square on the shorter segment would be a proper part of the square on the longer segment. Its area would therefore be less, contrary to Step 5. Thus the sides cannot be unequal. [D1.22; P4; CN4; CN5]\n\n**Step 7.** In triangles DAC and BAC, DA = BA by construction, AC is common, and DC = BC by Step 6. Proposition 1.8 therefore gives angle DAC equal to angle BAC. This is the direct choice because all three corresponding side equalities are now available. Since angle DAC is right, angle BAC is right also. Thus the angle contained by the remaining two sides of the given triangle is right, as required. [CN4; 1.8; D1.10]\n\n**USED:** 1.11, 1.3, 1.46, 1.47, 1.8, CN1, CN2, CN4, CN5, D1.10, D1.22, P1, P2, P4\n**Human refs (from References field):** 1.47, 1.8\n**Jaccard:** 0.143 — AI adds ['1.11', '1.3', '1.46', 'CN1', 'CN2', 'CN4', 'CN5', 'D1.10', 'D1.22', 'P1', 'P2', 'P4']\n\n# Book 2",
+  "ai_used": [
+    "1.11",
+    "1.3",
+    "1.46",
+    "1.47",
+    "1.8",
+    "CN1",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.22",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.47",
+    "1.8"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.3",
+    "1.46",
+    "CN1",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.22",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let ABC be a triangle such that the square on BC equals the squares on AB and AC together. Write S(XY) for the area of a square on XY; any auxiliary squares required may be constructed by "
+}

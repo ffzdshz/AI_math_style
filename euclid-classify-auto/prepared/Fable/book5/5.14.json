@@ -1,0 +1,30 @@
+{
+  "proposition": "5.14",
+  "book": 5,
+  "statement": "If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.",
+  "heath_proof": "For let a first magnitude A have the same ratio to a second B as a third C has to a fourth D; and let A be greater than C; I say that B is also greater than D. For, since A is greater than C, and B is another, chance, magnitude, therefore A has to B a greater ratio than C has to B. [V. 8] But, as A is to B, so is C to D; therefore C has also to D a greater ratio than C has to B. [V. 13]  But that to which the same has a greater ratio is less; [V. 10] therefore D is less than B; so that B is greater than D.  Similarly we can prove that, if A be equal to C, B will also be equal to D; and, if A be less than C, B will also be less than D.",
+  "ai_proof_text": "5.14\n**Statement:** If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.\n\n**Step 1.** Let A, B, C, D be four magnitudes such that A has to B the same ratio as C has to D; write A:B = C:D. Observe that by D5.5 this relation is symmetric between the two pairs: the defining condition (that any equimultiples whatever of A and C alike exceed, are alike equal to, or alike fall short of any equimultiples whatever of B and D, taken in corresponding order) is unchanged when the pair A, B and the pair C, D are interchanged. Hence from A:B = C:D we also have C:D = A:B, and this will be used freely below.\n\n**Step 2.** *Case 1: A > C.* Since A is greater than C, and B is a further magnitude, by 5.8 (of unequal magnitudes, the greater has to the same a greater ratio than the less has) A has to B a greater ratio than C has to B: A:B > C:B.\n\n**Step 3.** Now C:D = A:B (Step 1) and A:B > C:B (Step 2). Apply 5.13 with C, D as first and second, A, B as third and fourth, and C, B as fifth and sixth: the first has to the second the same ratio as the third to the fourth, and the third has to the fourth a greater ratio than the fifth to the sixth; therefore the first has to the second a greater ratio than the fifth to the sixth. That is, C:D > C:B.\n\n**Step 4.** Thus the same magnitude C has to D a greater ratio than it has to B. By 5.10 (that to which the same has a greater ratio is less), D is less than B. Therefore B > D, which is the first assertion.\n\n**Step 5.** *Case 2: A = C.* Since A is equal to C, by 5.7 (equal magnitudes have to the same the same ratio) A has to B the same ratio as C has to B: A:B = C:B.\n\n**Step 6.** Now C:D is the same with the ratio A:B (Step 1), and C:B is also the same with the ratio A:B (Step 5). By 5.11 (ratios which are the same with the same ratio are also the same with one another), C:D = C:B.\n\n**Step 7.** Thus the same magnitude C has to D the same ratio that it has to B. By 5.9 (magnitudes to which the same has the same ratio are equal), D = B. Therefore B = D, which is the second assertion.\n\n**Step 8.** *Case 3: A < C.* Then C is greater than A, and C:D = A:B (Step 1). So the four magnitudes C, D, A, B satisfy exactly the hypotheses of Case 1 with C, D, A, B in the roles of A, B, C, D: the first (C) has to the second (D) the same ratio as the third (A) has to the fourth (B), and the first is greater than the third. Repeating Steps 2–4 with these roles (C:D > A:D by 5.8; hence A:B > A:D by 5.13; hence B < D by 5.10), the second is greater than the fourth: D > B. Therefore B < D, which is the third assertion.\n\n**Step 9.** Hence, if a first magnitude has to a second the same ratio as a third has to a fourth, then when the first is greater than the third the second is greater than the fourth; when equal, equal; and when less, less. Q.E.D.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.5\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.429 — AI adds ['5.11', '5.7', '5.9', 'D5.5']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let A, B, C, D be four magnitudes such that A has to B the same ratio as C has to D; write A:B = C:D. Observe that by D5.5 this relation is symmetric between the two pairs: the defining co"
+}

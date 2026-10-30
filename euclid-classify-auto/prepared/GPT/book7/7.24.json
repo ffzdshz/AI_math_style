@@ -1,0 +1,34 @@
+{
+  "proposition": "7.24",
+  "book": 7,
+  "statement": "If two numbers be prime to any number, their product also will be prime to the same.",
+  "heath_proof": "For let the two numbers A, B be prime to any number C, and let A by multiplying B make D; I say that C, D are prime to one another. For, if C, D are not prime to one another, some number will measure C, D. Let a number measure them, and let it be E. Now, since C, A are prime to one another, and a certain number E measures C, therefore A, E are prime to one another. [VII. 23] As many times, then, as E measures D, so many units let there be in F; therefore F also measures D according to the units in E. [VII. 16] Therefore E by multiplying F has made D. [VII. Def. 15] But, further, A by multiplying B has also made D; therefore the product of E, F is equal to the product of A, B. But, if the product of the extremes be equal to that of the means, the four numbers are proportional; [VII. 19] therefore, as E is to A, so is B to F. But A, E are prime to one another, numbers which are prime to one another are also the least of those which have the same ratio, [VII. 21] and the least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent; [VII. 20] therefore E measures B. But it also measures C; therefore E measures B, C which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers C, D. Therefore C, D are prime to one another.",
+  "ai_proof_text": "7.24\n**Statement:** If two numbers be prime to any number, their product also will be prime to the same.\n\n**Step 1.** Let A and B each be prime to C, and let P be the product AB. Suppose, for contradiction, that P and C are not prime to one another. Then a number d, not merely the unit, measures both P and C. [D7.15, D7.12]\n\n**Step 2.** Since C and A are prime to one another and d measures C, d and A are prime to one another. The direct path is to apply 7.23 first, because the supposed common measure is already a divisor of C. [7.23]\n\n**Step 3.** The number A measures P, by the definition of multiplication and commutativity of multiplication. [D7.15, 7.16] Therefore d cannot equal P: otherwise A would measure both A and d, contrary to their being prime to one another. [D7.12] Since d measures P but is not equal to P, the multitude of repetitions of d making P is a number e, rather than the unit. Thus de = P. [D7.2, D7.15, 7.16]\n\n**Step 4.** The products AB and de are equal, since both equal P. [CN1] Apply the converse of 7.19 directly to these equal products, with the four numbers ordered as A, d, e, B. It follows that A:d = e:B. This converse is the natural choice because the equality of cross-products is already established. [7.19]\n\n**Step 5.** Since A and d are prime to one another, they are the least numbers having their ratio. [7.21] Consequently, in the proportion A:d = e:B, they measure the corresponding numbers e and B respectively. In particular, d measures B. [7.20]\n\n**Step 6.** Thus the number d measures both B and C, contradicting the hypothesis that B and C are prime to one another. Hence P and C have no common measure other than the unit: the product AB is prime to C, as required. [D7.12]\n\n**USED:** 7.16, 7.19, 7.20, 7.21, 7.23, CN1, D7.12, D7.15, D7.2\n**Human refs (from References field):** 7.16, 7.19, 7.20, 7.21, 7.23, D7.12, D7.15\n**Jaccard:** 0.778 — AI adds ['CN1', 'D7.2']",
+  "ai_used": [
+    "7.16",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.23",
+    "CN1",
+    "D7.12",
+    "D7.15",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "7.16",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.23",
+    "D7.12",
+    "D7.15"
+  ],
+  "ai_only": [
+    "CN1",
+    "D7.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.778,
+  "proof_summary": "**Step 1.** Let A and B each be prime to C, and let P be the product AB. Suppose, for contradiction, that P and C are not prime to one another. Then a number d, not merely the unit, measures both P an"
+}

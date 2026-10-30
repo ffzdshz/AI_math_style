@@ -1,0 +1,46 @@
+{
+  "proposition": "13.1",
+  "run": "Fable",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points D, A, C, B lie in that order on one straight line, with D on the extension of BA beyond A and AD = AE = EB = AB/2",
+      "type": "collinear_ordering"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E bisects AB so AE = EB, with E between A and B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "DC is a segment from D to C, cut at A into DA and AC",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C cuts AB in extreme and mean ratio with AC being the greater segment (AC > CB)",
+      "type": "segment_ratio"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DC is cut at A — A lies between D and C on the line",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AB is cut at E — E lies between A and B; rect(AC,AB) = rect(AC,AE) + rect(AC,EB)",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AB is cut at E into two equal parts AE = EB, each equal to AD",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "All points lie on a single straight line in the order D — A — E — C — B. D is on the extension of BA beyond A with AD = AB/2. E is the midpoint of AB with AE = EB = AB/2 = AD. C divides AB in extreme and mean ratio with AC the greater segment (AC approx 0.618·AB > 0.5·AB = AE), so C lies between E and B. The proof uses only segment relationships along this single line and Book II area identities (2.1, 2.2, 2.4). No triangles, circles, angles, or off-line points are constructed. Every application of a Book II proposition correctly identifies which point lies between which endpoints.",
+  "pass_reason": "The proof is essentially algebraic, using Book II area identities applied to segments on a single straight line. The only spatial claims concern the collinear ordering of points (D, A, E, C, B) and segment equalities, all of which are mutually consistent. No angle decompositions, no inside/outside claims, no triangle or circle constructions are involved. Every application of Propositions 2.1, 2.2, and 2.4 correctly identifies the segment being divided and the point of division."
+}

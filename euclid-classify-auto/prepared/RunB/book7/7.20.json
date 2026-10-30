@@ -1,0 +1,33 @@
+{
+  "proposition": "7.20",
+  "book": 7,
+  "statement": "The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.",
+  "heath_proof": "For let CD, EF be the least numbers of those which have the same ratio with A, B; I say that CD measures A the same number of times that EF measures B. Now CD is not parts of A. For, if possible, let it be so; therefore EF is also the same parts of B that CD is of A. [VII. 13 and Def. 20] Therefore, as many parts of A as there are in CD, so many parts of B are there also in EF. Let CD be divided into the parts of A, namely CG, GD, and EF into the parts of B, namely EH, HF; thus the multitude of CG, GD will be equal to the multitude of EH, HF. Now, since the numbers CG, GD are equal to one another, and the numbers EH, HF are also equal to one another, while the multitude of CG, GD is equal to the multitude of EH, HF, therefore, as CG is to EH, so is GD to HF. Therefore also, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents. [VII. 12] Therefore, as CG is to EH, so is CD to EF. Therefore CG, EH are in the same ratio with CD, EF, being less than they: which is impossible, for by hypothesis CD, EF are the least numbers of those which have the same ratio with them. Therefore CD is not parts of A; therefore it is a part of it. [VII. 4] And EF is the same part of B that CD is of A; [VII. 13 and Def. 20] therefore CD measures A the same number of times that EF measures B.",
+  "ai_proof_text": "7.20\n**Statement:** The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.\n\n**Step 1.** Let A, B be the least numbers among those which have the same ratio with them, and let C, D be numbers which have the same ratio as A to B, so that A:B = C:D. We must show that A measures C and B measures D the same number of times.\n\n**Step 2.** Since A, B are the least numbers in the ratio A:B, and C:D is the same ratio, we have C >= A and D >= B, for if C were less than A (with D correspondingly adjusted), then C, D would be a smaller pair in the same ratio, contradicting the minimality of A, B.\n\n**Step 3.** If C = A, then since A:B = C:D and C = A, we have A:B = A:D, whence D = B. In this case A measures C once and B measures D once, and the proposition holds.\n\n**Step 4.** Suppose C > A. Since A:B = C:D, by Proposition 7.19, the product of the first and fourth equals the product of the second and third, that is, A * D = B * C.\n\n**Step 5.** Now suppose, for the sake of contradiction, that A does not measure C. Then when C is divided by A, there is a remainder R such that C = qA + R for some number q and 0 < R < A.\n\n**Step 6.** Let S = D - qB. From Step 4, A * D = B * C. Substituting C = qA + R, we get A * D = B * (qA + R) = qAB + BR. Subtracting qAB from both sides (by CN3), A * D - qAB = BR, that is, A * (D - qB) = B * R. Therefore A * S = B * R.\n\n**Step 7.** Since A * S = B * R, by the converse part of Proposition 7.19, the four numbers A, B, R, S are proportional: A:B = R:S.\n\n**Step 8.** But R < A (since R is the remainder when C is divided by A). Thus R, S are numbers in the same ratio as A:B, yet R is less than A. This contradicts the hypothesis that A, B are the least numbers among those having the ratio A:B.\n\n**Step 9.** Therefore A must measure C. Let C = pA for some number p, so that A measures C exactly p times (by D7.3 and D7.5).\n\n**Step 10.** From Step 4, A * D = B * C = B * pA = p * A * B. Since A * D = p * A * B, dividing both sides by A (equivalently, since the unit measures A, and A measures both A * D and p * A * B, by repeated application of the definitions), we obtain D = pB. Therefore B measures D exactly p times.\n\n**Step 11.** Hence A measures C and B measures D each exactly p times: the greater measures the greater and the less measures the less the same number of times. This is what was to be proved.\n\n**USED:** 7.19, CN3, D7.20, D7.3, D7.5\n**Human refs (from References field):** 7.12, 7.13, 7.4, D7.20\n**Jaccard:** 0.125 — AI adds ['7.19', 'CN3', 'D7.3', 'D7.5']; Human adds ['7.12', '7.13', '7.4']",
+  "ai_used": [
+    "7.19",
+    "CN3",
+    "D7.20",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.12",
+    "7.13",
+    "7.4",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.19",
+    "CN3",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.12",
+    "7.13",
+    "7.4"
+  ],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let A, B be the least numbers among those which have the same ratio with them, and let C, D be numbers which have the same ratio as A to B, so that A:B = C:D. We must show that A measures "
+}

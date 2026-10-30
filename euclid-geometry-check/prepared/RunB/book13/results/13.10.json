@@ -1,0 +1,51 @@
+{
+  "proposition": "13.10",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCDE is an equilateral pentagon inscribed in a circle with center O; OA = OB = h (radius)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "N is the midpoint of the minor arc AB; arc AN = 1/10 of circumference, so AN = d (decagon side)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OM is perpendicular to chord AB, meeting AB at its midpoint M (AM = MB = s/2)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "O, M, N are collinear along the perpendicular bisector of AB",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "M lies between O and N on the perpendicular bisector, so MN = ON - OM = h - OM",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangle OMA has a right angle at M",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle NMA has a right angle at M (NM perpendicular to AB)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 8",
+      "claim": "By 13.9, h + d is cut in extreme and mean ratio with h as the greater segment, giving h^2 = dh + d^2",
+      "type": "proportion_from_geometry"
+    }
+  ],
+  "configuration_map": "Circle with center O, radius h. Pentagon ABCDE inscribed with side AB = s. Point M is the foot of the perpendicular from O to AB, at the midpoint of AB. Point N is the midpoint of the minor arc AB, on the circle. The perpendicular bisector of AB passes through O, M, and N in that order (O inside circle, M on chord, N on circle). Distances: OA = ON = h, AM = s/2, OM = h*cos(36deg), MN = h - OM, AN = d. Two right triangles share the right-angle vertex M: triangle OMA (hypotenuse OA = h) and triangle NMA (hypotenuse NA = d). All point positions are consistent throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The collinearity of O, M, N with M between O and N is geometrically correct for the perpendicular bisector of a non-diametral chord. Both right angles at M are valid since OM and MN lie along the same perpendicular to AB. The application of 13.9 is correct. After establishing the geometric setup, the proof proceeds through valid algebraic manipulations to reach s^2 = h^2 + d^2."
+}

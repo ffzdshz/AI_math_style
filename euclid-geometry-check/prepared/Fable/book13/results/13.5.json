@@ -1,0 +1,36 @@
+{
+  "proposition": "13.5",
+  "run": "Fable",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Setup",
+      "claim": "C lies between A and B on line AB (AB cut in extreme and mean ratio at C)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Setup",
+      "claim": "D, A, B are collinear with A between D and B; AD = AC",
+      "type": "betweenness/collinearity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AD + AB = DB because A lies between D and B",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CB + AC = AB because C lies between A and B",
+      "type": "segment addition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "DB > AB because the whole DB contains AB as a part",
+      "type": "magnitude comparison"
+    }
+  ],
+  "configuration_map": "Single straight line with four collinear points in order D-A-C-B. AD = AC (by construction). The segment AB is cut in extreme and mean ratio at C with AC the greater segment. No auxiliary points, triangles, angles, or circles are constructed. The entire proof operates on ratios between segments DA, AC, CB, AB, and DB on this single line.",
+  "pass_reason": "The proof is a chain of Book 5 proportion manipulations (inversion, componendo, transitivity, magnitude comparison) applied to segments on a single line. The only spatial claims are trivial collinearity and betweenness facts (A between D and B; C between A and B) that are given in the setup and mutually consistent. No angle decompositions, no interior/exterior arguments, no ray orderings, and none of the error patterns identified in the protocol are present."
+}

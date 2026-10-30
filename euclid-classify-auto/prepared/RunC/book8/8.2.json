@@ -1,0 +1,33 @@
+{
+  "proposition": "8.2",
+  "book": 8,
+  "statement": "To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.",
+  "heath_proof": "Let the ratio of A to B be the given ratio in least numbers; thus it is required to find numbers in continued proportion, as many as may be prescribed, and the least that are in the ratio of A to B. Let four be prescribed; let A by multiplying itself make C, and by multiplying B let it make D; let B by multiplying itself make E; further, let A by multiplying C, D, E make F, G, H, and let B by multiplying E make K. Now, since A by multiplying itself has made C, and by multiplying B has made D, therefore, as A is to B, so is C to D. [VII. 17] Again, since A by multiplying B has made D, and B by multiplying itself has made E, therefore the numbers A, B by multiplying B have made the numbers D, E respectively. Therefore, as A is to B, so is D to E. [VII. 18] But, as A is to B, so is C to D; therefore also, as C is to D, so is D to E. And, since A by multiplying C, D has made F, G, therefore, as C is to D, so is F to G. [VII. 17] But, as C is to D, so was A to B; therefore also, as A is to B, so is F to G. Again, since A by multiplying D, E has made G, H, therefore, as D is to E, so is G to H. [VII. 17] But, as D is to E, so is A to B. Therefore also, as A is to B, so is G to H. And, since A, B by multiplying E have made H, K, therefore, as A is to B, so is H to K. [VII. 18] But, as A is to B, so is F to G, and G to H. Therefore also, as F is to G, so is G to H, and H to K; therefore C, D, E, and F, G, H, K are proportional in the ratio of A to B. I say next that they are the least numbers that are so. For, since A, B are the least of those which have the same ratio with them, and the least of those which have the same ratio are prime to one another, [VII. 22] therefore A, B are prime to one another. And the numbers A, B by multiplying themselves respectively have made the numbers C, E, and by multiplying the numbers C, E respectively have made the numbers F, K; therefore C, E and F, K are prime to one another respectively. [VII. 27] But, if there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, they are the least of those which have the same ratio with them. [VIII. 1] Therefore C, D, E and F, G, H, K are the least of those which have the same ratio with A, B.",
+  "ai_proof_text": "8.2\n**Statement:** To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.\n\n**Step 1.** Let the given ratio be that of A to B, and let the number of terms in continued proportion required be n. We must find the least n numbers in continued proportion having the ratio A:B.\n\n**Step 2.** By 7.33, reduce A:B to their least terms; call these least terms a and b. Since a and b are the least numbers having the ratio A:B, they are prime to one another [7.22].\n\n**Step 3.** First consider the case n = 2. The least two numbers in the ratio a:b are a and b themselves, which are already in least terms [7.33]. So the result holds for two terms.\n\n**Step 4.** Now consider n = 3. We seek the least three numbers in continued proportion with ratio a:b. Form the products: let the first term be a multiplied by a (that is, a*a), the second term be a multiplied by b (that is, a*b), and the third term be b multiplied by b (that is, b*b) [D7.15]. Then a*a : a*b = a : b [7.17], and a*b : b*b = a : b [7.17]. So the three numbers a*a, a*b, b*b are in continued proportion with ratio a:b.\n\n**Step 5.** We must show these are the least such. Since a and b are prime to one another [Step 2], a*a and b*b are prime to one another [7.27]. Now a*a, a*b, b*b are in continued proportion, and the extremes a*a and b*b are prime to one another. Therefore, by 8.1, these are the least numbers in continued proportion having the same ratio. This establishes the case n = 3.\n\n**Step 6.** For the general case of n terms, proceed by successive multiplication. Having found the least (n-1) terms in continued proportion with ratio a:b, say c_1, c_2, ..., c_{n-1}, we construct n terms as follows: multiply each of c_1, c_2, ..., c_{n-1} by a to obtain a*c_1, a*c_2, ..., a*c_{n-1}, and adjoin b*c_{n-1} as the last term [D7.15].\n\n**Step 7.** Since c_1 : c_2 = a : b and in general c_i : c_{i+1} = a : b for each consecutive pair, multiplying each c_i by the same number a preserves all these ratios: a*c_i : a*c_{i+1} = c_i : c_{i+1} = a : b [7.17]. For the last pair, a*c_{n-1} : b*c_{n-1} = a : b [7.20], since c_{n-1} is a common factor. Therefore the n numbers a*c_1, a*c_2, ..., a*c_{n-1}, b*c_{n-1} are in continued proportion with ratio a:b.\n\n**Step 8.** Now we show these are the least such n numbers. By the construction, c_1 = a^{n-2} and c_{n-1} = b^{n-2} (in general, the sequence of (n-1) least terms consists of a^{n-2}, a^{n-3}*b, ..., b^{n-2}). So the first of the n terms is a*c_1 = a^{n-1} and the last is b*c_{n-1} = b^{n-1}. Since a and b are prime to one another [Step 2], by repeated application of 7.27, a^{n-1} and b^{n-1} are prime to one another. The n numbers are in continued proportion, and their extremes are prime to one another. Therefore, by 8.1, they are the least numbers in continued proportion having ratio a:b.\n\n**Step 9.** Thus we have found numbers in continued proportion, as many as prescribed, and the least that are in the given ratio. Q.E.F.\n\n**USED:** 7.17, 7.20, 7.22, 7.27, 7.33, 8.1, D7.15\n**Human refs (from References field):** 7.17, 7.18, 7.22, 7.27, 8.1\n**Jaccard:** 0.500 — AI adds ['7.20', '7.33', 'D7.15']; Human adds ['7.18']",
+  "ai_used": [
+    "7.17",
+    "7.20",
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.1",
+    "D7.15"
+  ],
+  "heath_refs": [
+    "7.17",
+    "7.18",
+    "7.22",
+    "7.27",
+    "8.1"
+  ],
+  "ai_only": [
+    "7.20",
+    "7.33",
+    "D7.15"
+  ],
+  "heath_only": [
+    "7.18"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let the given ratio be that of A to B, and let the number of terms in continued proportion required be n. We must find the least n numbers in continued proportion having the ratio A:B.  **"
+}

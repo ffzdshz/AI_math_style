@@ -1,0 +1,13 @@
+{
+  "proposition": "11.23",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same overall structure: construct triangle LMN from equal-arm chords, circumscribe a circle with center O, establish that AB > LO, erect a perpendicular OR at O with OR squared equal to AB squared minus OL squared, show RL = RM = RN = AB via the Pythagorean theorem, and conclude by I.8 that the angles at R equal the given angles. The key divergence is in how the critical inequality AB > LO is established in the AB < LO contradiction case. Heath constructs auxiliary points P and Q on the radii with OP = AB, uses VI.2 to show LM is parallel to PQ, then I.29, VI.4, and V.16 to establish LM > PQ, and finally I.25 to conclude angle ABC > angle POQ. The AI instead directly applies I.24/I.25 (the hinge theorems): if OL >= AB, then with equal bases LM = AC and equal side pairs, I.25 gives angle LOM <= angle ABC for each pair, so the angles at O sum to at most the sum of the given angles, contradicting the fact that angles around O sum to four right angles while the given angles sum to less. This is a substantively different and valid method for the same sub-conclusion, using triangle inequality results directly rather than proportion theory. The heath_only citations (1.29, 5.16, 6.2, 6.4) all belong to Heath's proportion-based sub-argument and are not contained in the proof tree of any AI-cited proposition, confirming a genuine path difference. Q2 Case A fails because these substantive facts are argued in Heath but absent from the AI proof. Q3 confirms the AI's path is valid, yielding classification D.",
+  "jaccard": 0.333,
+  "ai_citations": "1.13|1.15|1.24|1.25|1.4|1.47|1.8|11.12|11.22|4.5|D1.15|D11.11|P1|P3",
+  "heath_citations": "1.25|1.29|1.4|1.47|1.8|11.12|11.22|5.16|6.2|6.4",
+  "ai_only": "1.13|1.15|1.24|4.5|D1.15|D11.11|P1|P3",
+  "heath_only": "1.29|5.16|6.2|6.4",
+  "audit_record": ""
+}

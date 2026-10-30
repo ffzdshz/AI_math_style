@@ -1,0 +1,26 @@
+{
+  "proposition": "2.2",
+  "run": "RunB",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Point C lies on segment AB between A and B, creating segments AC and CB",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Square ADEB is described on line segment AB",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB is treated as being composed of segments AC and CB for application of Prop 2.1",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "Point C: Located on segment AB (Step 1), dividing it into AC and CB. Never repositioned. Square ADEB: Constructed on AB (Step 3), mentioned but never used geometrically - the proof proceeds purely through algebraic identities (Prop 2.1 distributive law) and definitions (square = rectangle with equal sides). No sub-regions of the square are referenced, no interior/exterior claims are made, and no angle decompositions occur.",
+  "pass_reason": "The proof is essentially algebraic, applying Proposition 2.1 (distributive law for rectangles) and the definition of a square. The only spatial claims are the trivial setup (C on AB, square on AB), which are mutually consistent and never contradicted. No angle decomposition, no interior/exterior reasoning, no betweenness arguments, and no competing geometric configurations exist to produce a contradiction."
+}

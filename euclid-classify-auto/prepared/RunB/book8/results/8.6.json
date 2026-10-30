@@ -1,0 +1,13 @@
+{
+  "proposition": "8.6",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals different logical backbones, leading to classification via Q3. Heath's proof takes the least numbers in the same ratio as a subsequence (e.g., A, B, C mapped to F, G, H via VII.33), then uses ex aequali (VII.14) to relate the ratio of non-adjacent terms (A:C = F:H), transfers the non-measuring property via D7.20, and concludes from VIII.3 that F, H are coprime. The AI takes a fundamentally different path: it first extracts the basic ratio e:f (VII.33), proves e is not unity via VII.20 and D7.3, then for any subsequence A_i through A_j uses VIII.2 to explicitly construct the least continued proportion, applies VIII.3 to show the extremes e^(j-i) and f^(j-i) are coprime, uses VII.20 to express A_i and A_j as coprime-coefficient multiples of a common factor m, and derives a contradiction from assuming divisibility. The AI's path through 8.2 (constructing least continued proportions) and its explicit power-based argument replaces Heath's ex aequali approach entirely. Both proofs are logically complete, so Q3 confirms D.",
+  "jaccard": 0.25,
+  "ai_citations": "7.20|7.22|7.33|8.2|8.3|D7.3",
+  "heath_citations": "7.14|7.33|8.3|D7.20",
+  "ai_only": "7.20|7.22|8.2|D7.3",
+  "heath_only": "7.14|D7.20",
+  "audit_record": ""
+}

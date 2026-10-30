@@ -1,0 +1,36 @@
+{
+  "proposition": "10.45",
+  "book": 10,
+  "statement": "A major straight line is divided at one and the same point only.",
+  "heath_proof": "Let AB be a major straight line divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB rational, but the rectangle AC, CB medial; [X. 39] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB rational, but the rectangle contained by them medial. Then, since that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, while the squares on AC, CB exceed the squares on AD, DB by a rational area—for both are rational— therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore a major straight line is not divided at different points; therefore it is only divided at one and the same point.",
+  "ai_proof_text": "10.45\n**Statement:** A major straight line is divided at one and the same point only.\n\n**Step 1.** Let AB be a major straight line, and let it be divided at C into its terms, so that AC and CB are two straight lines incommensurable in square, the sum of the squares on AC and CB is rational, and twice the rectangle AC by CB is medial [10.39]. Suppose, for the sake of contradiction, that AB is also divided at a different point D into terms satisfying the same conditions, so that AD and DB are incommensurable in square, the sum of the squares on AD and DB is rational, and twice the rectangle AD by DB is medial.\n\n**Step 2.** Since AC and CB are the terms of a major line, they are unequal (for if they were equal, they would be commensurable in length and hence commensurable in square, contradicting the requirement that they be incommensurable in square). We may therefore assume without loss of generality that AC is greater than CB. Similarly, AD is greater than DB.\n\n**Step 3.** By 2.4 applied to AB divided at C, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle AC by CB. Likewise, by 2.4 applied to AB divided at D, the square on AB equals the sum of the squares on AD and DB together with twice the rectangle AD by DB. Therefore the sum of the squares on AC and CB together with twice the rectangle AC by CB equals the sum of the squares on AD and DB together with twice the rectangle AD by DB [CN1].\n\n**Step 4.** Rearranging, the difference (AC^2 + CB^2) minus (AD^2 + DB^2) equals twice the rectangle AD by DB minus twice the rectangle AC by CB.\n\n**Step 5.** Now, the sum of the squares on AC and CB is rational, and the sum of the squares on AD and DB is rational [by hypothesis from 10.39]. Since both are rational areas, each is commensurable with the square on the assigned rational straight line [D10.1.4]. By 10.12, the sum of the squares on AC and CB is commensurable with the sum of the squares on AD and DB. If these two sums are unequal, then since the whole (the greater sum) is commensurable with one of its parts (the lesser sum), the remaining part (their difference) is also commensurable with each of them by 10.15, and hence commensurable with the square on the assigned rational line, making the difference a rational area.\n\n**Step 6.** On the other hand, twice the rectangle AC by CB is medial and twice the rectangle AD by DB is medial [by hypothesis from 10.39]. By Step 4, their difference equals the difference of the two rational sums of squares. If this difference were a nonzero rational area, then one medial area would exceed the other by a rational area, which is impossible by 10.26. Therefore the difference is zero.\n\n**Step 7.** Hence the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and twice the rectangle AC by CB equals twice the rectangle AD by DB.\n\n**Step 8.** Let M be the midpoint of AB [1.10]. By 2.9 applied to AB cut into equal segments at M and unequal segments at C, the sum of the squares on AC and CB equals twice the sum of the square on AM and the square on CM. Similarly, by 2.9 applied to AB cut at M and at D, the sum of the squares on AD and DB equals twice the sum of the square on AM and the square on DM.\n\n**Step 9.** Since the sum of the squares on AC and CB equals the sum of the squares on AD and DB [Step 7], we have twice the square on AM plus twice the square on CM equals twice the square on AM plus twice the square on DM. Subtracting twice the square on AM from both sides [CN3], twice the square on CM equals twice the square on DM, and hence the square on CM equals the square on DM.\n\n**Step 10.** Since AC is greater than CB [Step 2], we have AC greater than half of AB, that is, AC is greater than AM. Therefore C lies between M and B. Similarly, since AD is greater than DB, the point D lies between M and B. Thus C and D are both on the same side of M.\n\n**Step 11.** Since the square on CM equals the square on DM [Step 9], and CM and DM are both segments measured from M toward B, we have CM equals DM. Since C and D are both between M and B and are at the same distance from M, the points C and D coincide.\n\n**Step 12.** This contradicts the assumption that C and D are different points. Therefore a major straight line is divided at one and the same point only, which was to be proved.\n\n**USED:** 1.10, 10.12, 10.15, 10.26, 10.39, 2.4, 2.9, CN1, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.39\n**Jaccard:** 0.200 — AI adds ['1.10', '10.12', '10.15', '2.4', '2.9', 'CN1', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.39",
+    "2.4",
+    "2.9",
+    "CN1",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.39"
+  ],
+  "ai_only": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.9",
+    "CN1",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let AB be a major straight line, and let it be divided at C into its terms, so that AC and CB are two straight lines incommensurable in square, the sum of the squares on AC and CB is ratio"
+}

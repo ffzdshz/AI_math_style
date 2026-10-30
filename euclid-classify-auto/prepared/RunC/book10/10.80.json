@@ -1,0 +1,41 @@
+{
+  "proposition": "10.80",
+  "book": 10,
+  "statement": "To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.",
+  "heath_proof": "For let AB be a first apotome of a medial straight line, and let BC be an annex to AB; therefore AC, CB are medial straight lines commensurable in square only and such that the rectangle AC, CB which they contain is rational; [X. 74] I say that no other medial straight line can be annexed to AB which is commensurable with the whole in square only and which contains with the whole a rational area. For, if possible, let DB also be so annexed; therefore AD, DB are medial straight lines commensurable in square only and such that the rectangle AD, DB which they contain is rational. [X. 74] Now, since the excess of the squares on AD, DB over twice the rectangle AD, DB is also the excess of the squares on AC, CB over twice the rectangle AC, CB, for they exceed by the same, the square on AB, [II. 7] therefore, alternately, the excess of the squares on AD, DB over the squares on AC, CB is also the excess of twice the rectangle AD, DB over twice the rectangle AC, CB. But twice the rectangle AD, DB exceeds twice the rectangle AC, CB by a rational area, for both are rational. Therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area. which is impossible, for both are medial [X. 15 and 23], and a medial area does not exceed a medial by a rational area. [X. 26]",
+  "ai_proof_text": "10.80\n**Statement:** To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.\n\n**Step 1.** Let AB be a first apotome of a medial straight line, and let BC be the medial straight line annexed to it according to the definition (10.74), so that AC is medial, BC is medial, AC and BC are commensurable in square only, and the rectangle AC by BC is rational.\n\n**Step 2.** Suppose, for the sake of contradiction, that BD is another medial straight line annexed to AB, different from BC, such that AD is medial, BD is medial, AD and BD are commensurable in square only, and the rectangle AD by BD is rational. We shall show BD must equal BC.\n\n**Step 3.** Since AB equals AC minus BC, by Proposition 2.7 we have: the square on AB equals the sum of the squares on AC and BC minus twice the rectangle contained by AC and BC. That is, sq(AB) = sq(AC) + sq(BC) - 2*rect(AC,BC).\n\n**Step 4.** Similarly, since AB equals AD minus BD, we have: sq(AB) = sq(AD) + sq(BD) - 2*rect(AD,BD).\n\n**Step 5.** Therefore, sq(AC) + sq(BC) - 2*rect(AC,BC) = sq(AD) + sq(BD) - 2*rect(AD,BD), by CN1.\n\n**Step 6.** Rearranging by CN2 and CN3: [sq(AC) + sq(BC)] - [sq(AD) + sq(BD)] = 2*rect(AC,BC) - 2*rect(AD,BD).\n\n**Step 7.** Now rect(AC,BC) is rational by hypothesis, and rect(AD,BD) is rational by hypothesis. Since both are rational, they are commensurable with each other (being each commensurable with the square on the assigned rational straight line, by D10.1.4 and 10.12). Therefore 2*rect(AC,BC) and 2*rect(AD,BD) are also commensurable, and their difference is either zero or rational (by 10.15, if we add or subtract commensurable magnitudes the result is commensurable with each). Thus the right-hand side of the equation in Step 6 is rational (or zero).\n\n**Step 8.** Consider the left-hand side. Since AC and BC are commensurable in square (by hypothesis from 10.74), the squares sq(AC) and sq(BC) are commensurable areas. Since AC is medial, sq(AC) is a medial area (by D10.1.4, being incommensurable with the square on the rational straight line). Because sq(BC) is commensurable with sq(AC), and sq(AC) is incommensurable with the rational square, sq(BC) is also incommensurable with the rational square by 10.13, so sq(BC) is medial. By 10.15, the sum sq(AC) + sq(BC) is commensurable with sq(AC). Since sq(AC) is medial (incommensurable with the rational square), sq(AC) + sq(BC) is also incommensurable with the rational square by 10.13, so the sum sq(AC) + sq(BC) is a medial area.\n\n**Step 9.** By the same reasoning, since AD and BD are commensurable in square and both medial, the sum sq(AD) + sq(BD) is also a medial area.\n\n**Step 10.** Thus the left-hand side of Step 6 is the difference of two medial areas, and the right-hand side is rational. By Proposition 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference on the left-hand side cannot be a nonzero rational quantity. Since it equals the right-hand side which is rational, both sides must equal zero.\n\n**Step 11.** From the left-hand side being zero: sq(AC) + sq(BC) = sq(AD) + sq(BD). From the right-hand side being zero: 2*rect(AC,BC) = 2*rect(AD,BD), hence rect(AC,BC) = rect(AD,BD).\n\n**Step 12.** Now by Proposition 2.4, the square on the sum AC + BC equals sq(AC) + sq(BC) + 2*rect(AC,BC). Similarly, the square on the sum AD + BD equals sq(AD) + sq(BD) + 2*rect(AD,BD). Since sq(AC) + sq(BC) = sq(AD) + sq(BD) and rect(AC,BC) = rect(AD,BD) (from Step 11), we obtain sq(AC + BC) = sq(AD + BD), by CN2.\n\n**Step 13.** Since AC + BC and AD + BD are both positive magnitudes with equal squares, we have AC + BC = AD + BD.\n\n**Step 14.** We also have AC - BC = AB = AD - BD. Adding the equations AC + BC = AD + BD and AC - BC = AD - BD gives 2*AC = 2*AD, hence AC = AD. Subtracting gives 2*BC = 2*BD, hence BC = BD, by CN2 and CN3.\n\n**Step 15.** Therefore BC and BD are the same straight line, contradicting the assumption that BD is different from BC. Hence to a first apotome of a medial straight line, only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle. Q.E.D.\n\n**USED:** 10.12, 10.13, 10.15, 10.26, 10.74, 2.4, 2.7, CN1, CN2, CN3, D10.1.4\n**Human refs (from References field):** 10.15, 10.23, 10.26, 10.74, 2.7\n**Jaccard:** 0.333 — AI adds ['10.12', '10.13', '2.4', 'CN1', 'CN2', 'CN3', 'D10.1.4']; Human adds ['10.23']",
+  "ai_used": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.26",
+    "10.74",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.15",
+    "10.23",
+    "10.26",
+    "10.74",
+    "2.7"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.23"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AB be a first apotome of a medial straight line, and let BC be the medial straight line annexed to it according to the definition (10.74), so that AC is medial, BC is medial, AC and BC"
+}

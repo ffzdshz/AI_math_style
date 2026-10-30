@@ -1,0 +1,13 @@
+{
+  "proposition": "13.12",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs reach the same ultimate conclusion (AB^2 = 3DE^2) and share the final algebraic steps (angle ABE right via 3.31, Pythagorean theorem via 1.47, AE^2 = 4DE^2). However, the key intermediate lemma BE = DE is established through fundamentally different mathematical techniques: Heath uses arc reasoning and the hexagon property (4.15), showing that arc BE is 1/6 of the circle so BE equals the radius, while the AI uses angle-at-center reasoning (3.20, 1.13, 1.5, 1.6, 1.32), showing through angle-chasing that triangle BDE has all angles equal to angle ACB and therefore BE = DE. The containment test fails because the AI does not cite a higher-level proposition subsuming 4.15 but instead employs entirely different geometric concepts (central angles vs. arcs/hexagons). The AI's sub-proof tools (3.20, 1.13, 1.6) are largely absent from Heath's proof of 4.15 (which uses 3.26, 3.27, 3.29, 1.15). Since the backbones diverge in their indispensable intermediate facts, this is Case B (different backbone). Q3 confirms the AI's path is logically complete and valid, yielding D.",
+  "jaccard": 0.111,
+  "ai_citations": "1.13|1.32|1.47|1.5|1.6|2.4|3.1|3.20|3.31|CN1|CN3|D1.15|D1.17|D1.20|D4.3|P1|P2",
+  "heath_citations": "1.47|3.31|4.15",
+  "ai_only": "1.13|1.32|1.5|1.6|2.4|3.1|3.20|CN1|CN3|D1.15|D1.17|D1.20|D4.3|P1|P2",
+  "heath_only": "4.15",
+  "audit_record": ""
+}

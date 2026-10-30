@@ -1,0 +1,39 @@
+{
+  "proposition": "7.34",
+  "book": 7,
+  "statement": "Given two numbers, to find the least number which they measure.",
+  "heath_proof": "Let A, B be the two given numbers; thus it is required to find the least number which they measure. Now A, B are either prime to one another or not. First, let A, B be prime to one another, and let A by multiplying B make C; therefore also B by multiplying A has made C. [VII. 16] Therefore A, B measure C   I say next that it is also the least number they measure. For, if not, A, B will measure some number which is less than C. Let them measure D. Then, as many times as A measures D, so many units let there be in E, and, as many times as B measures D, so many units let there be in F; therefore A by multiplying E has made D, and B by multiplying F has made D; [VII. Def. 15] therefore the product of A, E is equal to the product of B, F. Therefore, as A is to B, so is F   E. [VII. 19] But A, B are prime, primes are also least, [VII. 21] and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less; [VII. 20] therefore B measures E, as consequent consequent. And, since A by multiplying B, E has made C, D, therefore, as B is to E, so is C to D. [VII. 17] But B measures E; therefore C also measures D, the greater the less: which is impossible. Therefore A, B do not measure any number less than C; therefore C is the least that is measured by A, B. Next, let A, B not be prime to one another, and let F, E, the least numbers of those which have the same ratio with A, B, be taken; [VII. 33] therefore the product of A, E is equal to the product of B, F. [VII. 19] And let A by multiplying E make C; therefore also B by multiplying F has made C; therefore A, B measure C. I say next that it is also the least number that they measure. For, if not, A, B will measure some number which is less than C. Let them measure D. And, as many times as A measures D, so many units let there be in G, and, as many times as B measures D, so many units let there be in H. Therefore A by multiplying G has made D, and B by multiplying H has made D. Therefore the product of A, G is equal to the product of B, H; therefore, as A is to B, so is H to G. [VII. 19] But, as A is to B, so is F to E. Therefore also, as F is to E, so is H to G. But F, E are least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less; [VII. 20] therefore E measures G. And, since A by multiplying E, G has made C, D, therefore, as E is to G, so is C to D. [VII. 17] But E measures G; therefore C also measures D, the greater the less: which is impossible. Therefore A, B will not measure any number which is less than C. Therefore C is the least that is measured by A, B.",
+  "ai_proof_text": "7.34\n**Statement:** Given two numbers, to find the least number which they measure.\n\n**Step 1.** Let A and B be the two given numbers. We seek the least number C such that both A and B measure C.\n\n**Step 2.** If A and B are prime to one another, set C equal to the product A times B. If A and B are not prime to one another, take their greatest common measure D by Proposition 7.2.\n\n**Step 3.** Let D measure A the number of times given by E, so that A equals D times E. Likewise let D measure B the number of times given by F, so that B equals D times F. By Proposition 7.33, since D is the greatest common measure of A and B, the numbers E and F are the least of those having the same ratio as A to B.\n\n**Step 4.** Since E and F are the least numbers in the ratio A to B, by Proposition 7.22, E and F are prime to one another.\n\n**Step 5.** Let C be the number produced by A multiplied by F, that is, C equals A times F (Definition D7.15). Since A equals D times E, we have C equals D times E times F.\n\n**Step 6.** Now consider B times E. Since B equals D times F, the product B times E equals D times F times E. By Proposition 7.16, D times E times F equals D times F times E. Therefore C equals B times E.\n\n**Step 7.** Since C equals A times F, the number A measures C, with F as the multiplicity (Definition D7.5). Since C equals B times E, the number B measures C, with E as the multiplicity (Definition D7.5). Therefore C is a common multiple of A and B.\n\n**Step 8.** Now we prove C is the least such number. Suppose for contradiction that there exists a number G less than C such that both A and B measure G.\n\n**Step 9.** Since A measures G, let A measure G according to H, so that G equals A times H (Definition D7.15). Since B measures G, let B measure G according to K, so that G equals B times K (Definition D7.15).\n\n**Step 10.** From G equals A times H and A equals D times E, we get G equals D times E times H. From G equals B times K and B equals D times F, we get G equals D times F times K. Therefore D times E times H equals D times F times K, whence E times H equals F times K.\n\n**Step 11.** The equality E times H equals F times K means that E is to F as K is to H (by Proposition 7.19, since the product of the first and fourth equals the product of the second and third, the four numbers are proportional: E, F, K, H satisfy E to F as K to H).\n\n**Step 12.** But E and F are the least numbers in their ratio (established in Step 3). By Proposition 7.20, the least numbers of those having the same ratio measure those which have the same ratio the same number of times: E measures K and F measures H.\n\n**Step 13.** Since F measures H, there exists a number such that H equals F times that number, hence H is not less than F. Therefore H is greater than or equal to F.\n\n**Step 14.** Since G equals A times H and H is greater than or equal to F, we have G is greater than or equal to A times F, that is, G is greater than or equal to C. This contradicts the assumption that G is less than C.\n\n**Step 15.** Therefore no number less than C is measured by both A and B. Hence C, equal to A times F (where D is the greatest common measure of A and B, and B equals D times F), is the least number which A and B measure. And if A and B are prime to one another, then D equals a unit, F equals B, and C equals A times B.\n\n**Step 16.** Therefore, given two numbers, we have found the least number which they measure, which is what was required to find.\n\n**USED:** 7.16, 7.19, 7.2, 7.20, 7.22, 7.33, D7.15, D7.3, D7.5\n**Human refs (from References field):** 7.16, 7.17, 7.19, 7.20, 7.21, 7.33, D7.15\n**Jaccard:** 0.455 — AI adds ['7.2', '7.22', 'D7.3', 'D7.5']; Human adds ['7.17', '7.21']",
+  "ai_used": [
+    "7.16",
+    "7.19",
+    "7.2",
+    "7.20",
+    "7.22",
+    "7.33",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.16",
+    "7.17",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.33",
+    "D7.15"
+  ],
+  "ai_only": [
+    "7.2",
+    "7.22",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.17",
+    "7.21"
+  ],
+  "jaccard": 0.455,
+  "proof_summary": "**Step 1.** Let A and B be the two given numbers. We seek the least number C such that both A and B measure C.  **Step 2.** If A and B are prime to one another, set C equal to the product A times B. I"
+}

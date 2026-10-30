@@ -1,0 +1,46 @@
+{
+  "proposition": "13.1",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB between A and B, with AC the greater segment of the extreme and mean ratio division (AC > CB)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is the midpoint of AB, so D lies between A and B with AD = DB = AB/2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2 (implicit)",
+      "claim": "Since AC > AB/2 = AD, point D lies between A and C; linear order is A...D...C...B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 9",
+      "claim": "E is constructed on the extension of DA beyond A, with AE = AD; E lies on the opposite side of A from D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Linear order of all points is E...A...D...C...B, with AE = AD = DB",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 9",
+      "claim": "CE = CA + AE = AC + AD, verified by CE = CD + DA + AE = (AC - AD) + AD + AD = AC + AD",
+      "type": "distance"
+    },
+    {
+      "step": "Step 10",
+      "claim": "A divides segment CE into parts CA and AE, so 2.4 applies: sq(CE) = sq(CA) + sq(AE) + 2*rect(CA, AE)",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "All five points are collinear on a single line. Linear order: E ... A ... D ... C ... B. Distances: AE = AD = DB = AB/2. AC is the greater segment of the golden ratio cut of AB (AC > AB/2 > CB). D is the midpoint of AB, lying between A and C. E is the reflection of D across A (AE = AD, on opposite side). CE = AC + AD. The configuration is fully determined and consistent across all steps.",
+  "pass_reason": "All spatial claims involve collinear points on a single line, and they are mutually consistent. The linear order E...A...D...C...B is maintained throughout. The key distance identity CE = AC + AD is verified from the arrangement. No angle decompositions, no inside/outside claims, and no circle arguments are present. The proof is largely algebraic (using propositions 2.1, 2.4, 6.17) with a straightforward collinear construction, leaving no room for spatial configuration contradictions."
+}

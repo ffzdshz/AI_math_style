@@ -1,0 +1,13 @@
+{
+  "proposition": "12.1",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The forward dependency gate passes (all citations are from Books 1-6). Q1 finds no logical error: the AI proof is complete and valid, with each step properly supported by citations. Q2 compares the backbones. Both proofs share the same early intermediate conclusions: equiangular triangles from polygon similarity (6.6), inscribed angle transfer (AI uses 3.21 where Heath uses 3.27 for the same geometric fact), and equiangular diameter-triangles giving side-to-diameter proportionality (6.4). However, they diverge at the final step: Heath invokes the duplicate ratio concept via 6.20 (similar polygons have to each other a ratio duplicate of corresponding sides), while the AI explicitly constructs squares on the diameters, shows they are similar, and applies 6.22 (proportional lines yield proportional similar figures). Since 6.20 and 6.22 are independent propositions -- neither contains the other in its proof tree -- and the duplicate ratio intermediate conclusion is present in Heath but absent from the AI, Case A of Q2 fails. Under Q3, the AI's different path is positionally valid and logically complete, yielding category D.",
+  "jaccard": 0.227,
+  "ai_citations": "1.17|1.32|1.46|3.1|3.21|3.31|5.16|6.22|6.4|6.6|CN1|CN3|D1.17|D1.22|D4.3|D5.5|D6.1|P1|P2|P4",
+  "heath_citations": "1.32|3.27|3.31|6.20|6.4|6.6|D6.1",
+  "ai_only": "1.17|1.46|3.1|3.21|5.16|6.22|CN1|CN3|D1.17|D1.22|D4.3|D5.5|P1|P2|P4",
+  "heath_only": "3.27|6.20",
+  "audit_record": ""
+}

@@ -1,0 +1,37 @@
+{
+  "proposition": "10.5",
+  "book": 10,
+  "statement": "Commensurable magnitudes have to one another the ratio which a number has to a number.",
+  "heath_proof": "Let A, B be commensurable magnitudes; I say that A has to B the ratio which a number has to a number. For, since A, B are commensurable, some magnitude will measure them. Let it measure them, and let it be C. And, as many times as C measures A, so many units let there be in D; and, as many times as C measures B, so many units let there be in E. Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [VII. Def. 20] therefore, inversely, as A is to C, so is D to the unit. [cf. V. 7] Again, since C measures B according to the units in E, while the unit also measures E according to the units in it, therefore the unit measures E the same number of times as C measures B; therefore, as C is to B, so is the unit to E. But it was also proved that, as A is to C, so is D to the unit; therefore, ex aequali, as A is to B, so is the number D to E. [V. 22]  Therefore the commensurable magnitudes A, B have to one another the ratio which the number D has to the number E.",
+  "ai_proof_text": "10.5\n**Statement:** Commensurable magnitudes have to one another the ratio which a number has to a number.\n\n**Step 1.** Let A and B be commensurable magnitudes. By D10.1.1, some magnitude C measures both. Thus A consists of k copies of C and B of l copies of C, where k and l are positive repetition counts, possibly one (D5.2). **Path choice:** use this common measure directly; no greatest-common-measure construction is needed.\n\n**Step 2.** Let T be the number consisting of two units. Form M from k copies of T and N from l copies of T. Both M and N are numbers composed of units, even if either repetition count is one (D7.1, D7.2).\n\n**Step 3.** Take arbitrary positive repetition counts r and s. Then rA and rM are equimultiples of A and M, while sB and sN are equimultiples of B and N. By repeated addition, rA consists of rk copies of C and sB of sl copies of C; correspondingly, rM consists of rk copies of T and sN of sl copies of T. Here rk means the total count in r groups of k copies, and similarly for sl (D5.2, D7.2, CN2).\n\n**Step 4.** If rk equals sl, the corresponding sums are equal, so rA = sB and rM = sN (CN2). If rk exceeds sl, rA contains a part equal to sB together with additional copies of C, and rM contains a part equal to sN together with additional copies of T; hence rA > sB and rM > sN (CN2, CN5). If rk falls short of sl, the same argument with the wholes and parts reversed gives rA < sB and rM < sN (CN2, CN5).\n\n**Step 5.** Therefore, for every choice of these equimultiples, rA and rM alike exceed, equal, or fall short of sB and sN respectively. By D5.5, A:B = M:N. Since M and N are numbers, commensurable magnitudes have to one another the ratio which a number has to a number.\n\n**USED:** CN2, CN5, D10.1.1, D5.2, D5.5, D7.1, D7.2\n**Human refs (from References field):** 5.22, 5.7, D7.20\n**Jaccard:** 0.000 — AI adds ['CN2', 'CN5', 'D10.1.1', 'D5.2', 'D5.5', 'D7.1', 'D7.2']; Human adds ['5.22', '5.7', 'D7.20']",
+  "ai_used": [
+    "CN2",
+    "CN5",
+    "D10.1.1",
+    "D5.2",
+    "D5.5",
+    "D7.1",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "5.22",
+    "5.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN5",
+    "D10.1.1",
+    "D5.2",
+    "D5.5",
+    "D7.1",
+    "D7.2"
+  ],
+  "heath_only": [
+    "5.22",
+    "5.7",
+    "D7.20"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be commensurable magnitudes. By D10.1.1, some magnitude C measures both. Thus A consists of k copies of C and B of l copies of C, where k and l are positive repetition counts, "
+}

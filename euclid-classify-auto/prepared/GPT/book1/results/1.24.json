@@ -1,0 +1,13 @@
+{
+  "proposition": "1.24",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof constructs angle EDG equal to angle BAC at point D, uses SAS (I.4) to establish BC = EG, then invokes isosceles triangle properties (I.5) and the angle-side relationship (I.19) to conclude EG > EF, hence BC > EF. The AI takes a fundamentally different route: it constructs a ray inside angle BAC with angle BAX = angle EDF and AX = AC, uses SAS to get BX = EF, then bisects angle XAC (I.9) to obtain XM = CM via a second SAS application, and finally applies the triangle inequality (I.20) to show BM + MX > BX, yielding BC > EF. The key intermediate conclusions differ entirely: Heath argues through angle comparison (I.5 and I.19), while the AI argues through an angle bisector and the triangle inequality (I.9 and I.20). Both proofs are logically complete, so this is a valid different path.",
+  "jaccard": 0.167,
+  "ai_citations": "1.20|1.23|1.4|1.9|CN1|CN2|CN5|D1.15|P1|P3",
+  "heath_citations": "1.19|1.23|1.4|1.5",
+  "ai_only": "1.20|1.9|CN1|CN2|CN5|D1.15|P1|P3",
+  "heath_only": "1.19|1.5",
+  "audit_record": ""
+}

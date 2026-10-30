@@ -1,0 +1,93 @@
+{
+  "proposition": "11.29",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E, E', H, H' all lie on one straight line (line 1)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 1",
+      "claim": "F, F', G, G' all lie on another straight line (line 2)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AE parallel to DH and BF parallel to CG (standing edges of parallelepiped CM)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AE' parallel to DH' and BF' parallel to CG' (standing edges of parallelepiped CN)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EE'H'H is a parallelogram with EH parallel to E'H' and EE' parallel to HH'",
+      "type": "parallelogram claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EE' = HH' and EH = E'H' (by I.34 applied to parallelogram EE'H'H)",
+      "type": "equality from parallelogram"
+    },
+    {
+      "step": "Step 4",
+      "claim": "FF'G'G is a parallelogram with FF' = GG'",
+      "type": "parallelogram claim"
+    },
+    {
+      "step": "Step 5",
+      "claim": "EF = HG as opposite sides of parallelogram EFGH",
+      "type": "equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "E'F' = H'G' as opposite sides of parallelogram E'F'G'H'",
+      "type": "equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Solid with vertices E,F,G,H,E',F',G',H' is a parallelepiped with all six faces being parallelograms",
+      "type": "solid classification"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Diagonal plane bisects parallelepiped CM (by 11.28)",
+      "type": "solid bisection"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Auxiliary parallelepiped (from Step 6) is bisected by its diagonal plane (by 11.28)",
+      "type": "solid bisection"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Prism on triangle AEE' extended to DHH' equals prism on triangle BFF' extended to CGG'",
+      "type": "prism equality"
+    }
+  ],
+  "configuration_map": "Two parallelepipeds CM and CN share base ABCD with top faces EFGH and E'F'G'H' respectively. Standing edges are all translates of a common vector: for CM, v1 (so E=A+v1, F=B+v1, G=C+v1, H=D+v1); for CN, v2 (so E'=A+v2, F'=B+v2, G'=C+v2, H'=D+v2). The proposition's condition requires the 8 top endpoints to lie on two lines. The AI proof groups them as {E,E',H,H'} on line 1 and {F,F',G,G'} on line 2. This forces v1-v2 to be parallel to D-A, making E,E',H,H' collinear and F,F',G,G' collinear. The AI proof then treats these collinear point sets as forming parallelograms (Steps 3-4) and the 8-point solid as a parallelepiped (Step 6), contradicting the collinearity established in Step 1.",
+  "contradictory_steps": [
+    "Step 1",
+    "Step 3",
+    "Step 6"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 1",
+    "claim": "E, E', H, H' all lie on one straight line. This is the proposition's given condition: the extremities of the standing edges lie on two straight lines, and the proof assigns E, E', H, H' to one of them.",
+    "required_by": "Setup of the proposition's geometric condition"
+  },
+  "spatial_claim_2": {
+    "step": "Step 3 and Step 6",
+    "claim": "EE'H'H is a parallelogram (Step 3), and the solid E,F,G,H,E',F',G',H' is a parallelepiped with all six faces being parallelograms (Step 6). Both claims require E,E',H,H' to be non-collinear so they form a proper 2D quadrilateral face.",
+    "required_by": "Steps 3-4 use I.34 on these 'parallelograms'; Step 6 classifies the solid as a parallelepiped; Step 8 applies XI.28 (bisection by diagonal plane) to this 'parallelepiped'"
+  },
+  "contradiction": "The proof establishes in Step 1 that E, E', H, H' are collinear (all on one straight line), as required by the proposition's condition. In a parallelepiped, standing edges are translates of a single vector, so E=A+v1, H=D+v1, E'=A+v2, H'=D+v2. The collinearity condition forces v1-v2 to be parallel to D-A, placing all four points on one line. But four collinear points cannot form a parallelogram (which requires a 2D quadrilateral). Therefore EE'H'H is a degenerate line segment with zero area, not a parallelogram. Similarly FF'G'G is degenerate. Consequently, the solid in Step 6 has two degenerate 'faces' (zero-area line segments) and cannot be a parallelepiped, invalidating the application of XI.28 in Step 8. The proof conflates a degenerate configuration with a proper parallelepiped.",
+  "fixable": true,
+  "fix_note": "Heath's proof avoids this error entirely by never constructing the auxiliary parallelepiped. Instead, Heath directly shows that the complementary prisms (triangular prisms formed by the difference between the two solids) are equal, using I.8, I.4, I.34, and I.36. The AI proof could be repaired by following this direct prism decomposition approach, or alternatively by correcting the point grouping so that the two straight lines contain {E,F,E',F'} and {H,G,H',G'} respectively (tops from adjacent base vertices on the same line), which would make EE'H'H a proper non-degenerate parallelogram."
+}

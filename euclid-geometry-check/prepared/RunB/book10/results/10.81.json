@@ -1,0 +1,31 @@
+{
+  "proposition": "10.81",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, B are collinear with C between A and B; points A, D, B are collinear with D between A and B (both BC and BD are annexes to AB)",
+      "type": "collinear-points"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Rational line EF is set out; rectangle EG equal to sq(AB) applied to EF with breadth EH; rectangle HI equal to 2*rect(AC,CB) applied to EF with breadth HK",
+      "type": "area-application"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Rectangle EI (= EG + HI) equals sq(AC) + sq(CB), an additive arrangement of rectangles along EF",
+      "type": "area-application"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Rectangle EL equal to sq(AB) applied to EF with breadth EM; rectangle MI equal to 2*rect(AD,DB) applied to EF with breadth MN",
+      "type": "area-application"
+    }
+  ],
+  "configuration_map": "The proof operates in two one-dimensional spaces: (1) a line containing collinear points A, D, B, C where AB is the second apotome of a medial and BC, BD are candidate annexes; (2) a rational line EF on which various areas (squares and doubled rectangles) are applied as rectangles, producing breadths that are then analyzed for commensurability. There are no two-dimensional geometric constructions, no triangles, no circles, no angles, no interior/exterior claims. Every operation is either a collinear point arrangement or the standard Book 10 technique of applying areas to a rational line to deduce commensurability properties of their breadths.",
+  "skip_reason": "This is a purely algebraic/proportional proof in Book 10 commensurability theory. The proof deals entirely with medial lines, rational lines, commensurability/incommensurability relations, and the technique of applying areas to a rational line. There are no geometric configuration claims (no triangles, circles, angle decompositions, ray orderings, or interior/exterior arguments) that could harbor spatial contradictions. The only spatial content is trivial collinear point arrangements and standard area applications."
+}

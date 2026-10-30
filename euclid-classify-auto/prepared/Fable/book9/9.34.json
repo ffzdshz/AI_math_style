@@ -1,0 +1,36 @@
+{
+  "proposition": "9.34",
+  "book": 9,
+  "statement": "If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.",
+  "heath_proof": "For let the number A neither be one of those doubled from a dyad, nor have its half odd; I say that A is both even-times even and even-times odd. Now that A is even-times even is manifest; for it has not its half odd. [VII. Def. 8] I say next that it is also even-times odd. For, if we bisect A, then bisect its half, and do this continually, we shall come upon some odd number which will measure A according to an even number. For, if not, we shall come upon a dyad, and A will be among those which are doubled from a dyad: which is contrary to the hypothesis. Thus A is even-times odd. But it was also proved even-times even. Therefore A is both even-times even and even-times odd.",
+  "ai_proof_text": "9.34\n**Statement:** If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.\n\n**Step 1.** Let A be a number which is neither one of those continually doubled from a dyad nor has its half odd; I say that A is both even-times even and even-times odd. Since the hypothesis speaks of the half of A and of its being odd or not, A is divisible into two equal parts, that is, A is even [D7.6], and its half B is a number [D7.2], the distinction of odd and even applying to numbers and not to the unit. Thus A = B + B.\n\n**Step 2.** By hypothesis B is not odd. Now an odd number is one which is not divisible into two equal parts [D7.7]; hence B, not being odd, is divisible into two equal parts, that is, B is even [D7.6].\n\n**Step 3.** Since A = B + B, B added to itself as many times as there are units in the dyad makes A; that is, B measures A according to the dyad [D7.3, D7.15]. The dyad is even, being divisible into two equal parts, each a unit [D7.6], and B is even (Step 2). Therefore A is measured by an even number according to an even number, so that A is even-times even [D7.8].\n\n**Step 4.** I say next that A is also even-times odd. Bisect A into B, B; since B is even (Step 2), bisect B into C, C; if C is even, bisect C likewise; and continue in this way. At each stage the number reached is either odd [D7.7], in which case it cannot be bisected into two equal parts and the process ends; or even [D7.6], in which case either its two equal parts are units, so that it is the dyad and the process ends (a unit not being a number [D7.2]), or its two equal parts are numbers and we bisect again.\n\n**Step 5.** The process cannot go on without end. For each half is less than its whole [CN5], so the numbers A, B, C, ... obtained by the successive bisections continually decrease; and since A is a finite multitude of units [D7.2], there cannot be a series of numbers, each less than the one before, going on without limit: which is impossible in numbers. Hence the bisection comes to an end, either at the dyad or at an odd number.\n\n**Step 6.** It does not end at the dyad. For suppose the last number reached were the dyad. Each number of the series is the sum of two equal parts, each of which is the next number of the series; that is, each is the double of the next. Hence, starting from the dyad and doubling continually, we obtain in turn all the numbers of the series taken backwards, ending with A. Thus A would be one of those continually doubled from a dyad, which is contrary to the hypothesis. Therefore the process ends at an odd number; let it be D.\n\n**Step 7.** D measures A. For D measures the number before it in the series (which is D + D), that number measures the one before it, and so on up to B, which measures A (Step 3); and a number which measures a number that measures a third number measures the third also [D7.3]. Moreover D is less than A, since A is even and D is odd; hence D measures A according to the units in some number E, that is, D added to itself as many times as there are units in E makes A, so that E multiplied by D makes A [D7.15].\n\n**Step 8.** E is even. For, if E were odd, then, D being odd and E odd, E by multiplying D would make an odd product [9.29]; but that product is A, which is even (Step 1); and a number cannot be both even and odd, since an odd number is precisely one which is not divisible into two equal parts [D7.6, D7.7]. Hence E is not odd, and therefore E is even [D7.7, D7.6].\n\n**Step 9.** Since E multiplied by D makes A, D multiplied by E also makes A [7.16]; that is, E added to itself as many times as there are units in D makes A, so that E measures A according to the units in D [D7.15, D7.3]. Thus A is measured by an even number E according to an odd number D; therefore A is even-times odd [D7.9].\n\n**Step 10.** Therefore A is both even-times even (Step 3) and even-times odd (Step 9). Q.E.D.\n\nPath note: the multiplicity E could alternatively be identified directly as the dyad doubled once for each bisection beyond the first, which is even by construction; the route through 9.29 was chosen as more direct, since it avoids counting the bisections.\n\n**USED:** 7.16, 9.29, CN5, D7.15, D7.2, D7.3, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8\n**Jaccard:** 0.100 — AI adds ['7.16', '9.29', 'CN5', 'D7.15', 'D7.2', 'D7.3', 'D7.6', 'D7.7', 'D7.9']",
+  "ai_used": [
+    "7.16",
+    "9.29",
+    "CN5",
+    "D7.15",
+    "D7.2",
+    "D7.3",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8"
+  ],
+  "ai_only": [
+    "7.16",
+    "9.29",
+    "CN5",
+    "D7.15",
+    "D7.2",
+    "D7.3",
+    "D7.6",
+    "D7.7",
+    "D7.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.1,
+  "proof_summary": "**Step 1.** Let A be a number which is neither one of those continually doubled from a dyad nor has its half odd; I say that A is both even-times even and even-times odd. Since the hypothesis speaks o"
+}

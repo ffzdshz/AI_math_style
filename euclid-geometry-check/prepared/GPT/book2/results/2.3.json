@@ -1,0 +1,31 @@
+{
+  "proposition": "2.3",
+  "run": "GPT",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is an arbitrary interior point of segment AB, so C lies between A and B on line AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "BC is a segment of the line AB",
+      "type": "segment_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AB is cut at C into segments AC and CB; BC is the uncut line in the application of Prop 2.1",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "R(BC,BC) is a rectangle whose sides both equal BC, hence a square on BC",
+      "type": "figure_identification"
+    }
+  ],
+  "configuration_map": "Three collinear points A, C, B with C between A and B on line AB. No auxiliary points are constructed. The proof works entirely with rectangles and squares formed by the segments AC, CB, and AB. Step 1 establishes C between A and B. Step 2 uses this to apply 2.1, decomposing the rectangle R(AB,BC) into R(AC,BC) + R(BC,BC). Step 3 identifies R(BC,BC) as the square on BC. Step 4 performs algebraic substitution. No point changes position or role throughout the proof.",
+  "pass_reason": "The proof is essentially algebraic, applying Prop 2.1 as a rectangle-area identity and performing substitution. The only spatial content is the trivially consistent claim that C divides AB into two segments (AC and CB). No angle decompositions, no interior/exterior point arguments, no ray-betweenness claims, and no non-trivial geometric constructions appear. All spatial claims are mutually consistent."
+}

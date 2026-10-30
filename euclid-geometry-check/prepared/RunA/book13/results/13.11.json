@@ -1,0 +1,36 @@
+{
+  "proposition": "13.11",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pentagon ABCDE is inscribed in a circle with center O; radius r = OA, diameter d = 2r is rational",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Side of regular hexagon inscribed in the same circle equals the radius r (by 4.15)",
+      "type": "length_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Decagon side s inscribed in the same circle satisfies (r+s):r = r:s, the extreme-and-mean-ratio property (by 13.9)",
+      "type": "proportion"
+    },
+    {
+      "step": "Step 5",
+      "claim": "r is cut in extreme and mean ratio with s as the greater segment and r-s as the lesser segment (derived by separando from Step 3)",
+      "type": "proportion"
+    },
+    {
+      "step": "Step 6",
+      "claim": "sq(BC) = sq(r) + sq(s): the square on the pentagon side equals the sum of the squares on the hexagon side and the decagon side (by 13.10)",
+      "type": "length_relation"
+    }
+  ],
+  "configuration_map": "Circle with center O, radius r, rational diameter d = 2r. Pentagon ABCDE inscribed in the circle with side BC under analysis. Hexagon side = r (by 4.15) and decagon side = s (satisfying golden ratio property by 13.9) are both referenced as standard results for the same circle. No auxiliary geometric points are constructed in the figure. All subsequent quantities (N = r/2, a = 5N, b = s + N, q = d - s, c with sq(c) = sq(a) - sq(b)) are algebraically defined lengths used for the irrationality classification, not geometric points in the configuration.",
+  "pass_reason": "The proof makes only a few spatial/geometric claims, all of which are standard results cited from earlier propositions (4.15 for hexagon side, 13.9 for decagon EMR property, 13.10 for pentagon side squared formula). No novel geometric constructions are introduced, no angle decompositions occur, no inside/outside claims are made, and no ray orderings are asserted. The bulk of the proof is algebraic and number-theoretic manipulation to establish that the pentagon side is a minor irrational line. All spatial claims are mutually consistent."
+}

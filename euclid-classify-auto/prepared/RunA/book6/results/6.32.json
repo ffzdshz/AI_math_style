@@ -1,0 +1,13 @@
+{
+  "proposition": "6.32",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The AI proof takes a fundamentally different geometric approach from Heath's proof. Heath establishes angle equalities via I.29, uses VI.6 to show the triangles are equiangular, then combines angle sums with I.32 and applies I.14 (adjacent angles equal to two right angles imply collinearity). The AI instead introduces an auxiliary intersection point G where line AE crosses line BD, establishes equiangularity of triangles ABG and EDG via I.29, I.15, and I.32, uses 6.4 for proportional sides, then applies ratio manipulation (5.17/5.9) to show G coincides with C, concluding collinearity. The key intermediate conclusions are entirely different: Heath argues through angle sums at vertex C, while the AI argues through proportional segments and point coincidence. Q2 Case B applies (different backbone). Under Q3, the AI's chain is logically complete despite misciting 5.17 where 5.18 is needed — under the lenience rule, the mathematical inference is sound (informal but sound), so this is NOT-E. Classification is D (path difference).",
+  "jaccard": 0.2,
+  "ai_citations": "1.15|1.29|1.32|5.17|5.9|6.4|CN1|P1",
+  "heath_citations": "1.14|1.29|1.32|6.6",
+  "ai_only": "1.15|5.17|5.9|6.4|CN1|P1",
+  "heath_only": "1.14|6.6",
+  "audit_record": "CANDIDATE E — 6.32\n  violated_claim : \"by 5.17 (composition of a ratio) we obtain (BG + GD)/GD = (BC + CD)/CD\"\n  failure_mode   : invalid_inference\n  missing_is     : expansion — the correct proposition 5.18 would justify this step; it is a citation number error, not a logical gap\n  evidence       : AI Step 8 cites 5.17 for going from BG/GD = BC/CD to (BG+GD)/GD = (BC+CD)/CD, but 5.17 is separando (componendo to separando), not componendo (separando to componendo, which is 5.18)\n  why_not_terse  : This is a miscitation of proposition number, not a logical gap. The mathematical step is sound via 5.18.\nVERDICT: NOT-E — missing_is = expansion; the inference is mathematically sound, just incorrectly numbered. Reclassified as D."
+}

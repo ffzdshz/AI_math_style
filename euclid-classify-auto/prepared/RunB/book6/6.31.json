@@ -1,0 +1,35 @@
+{
+  "proposition": "6.31",
+  "book": 6,
+  "statement": "In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.",
+  "heath_proof": "Let ABC be a right-angled triangle having the angle BAC right; I say that the figure on BC is equal to the similar and similarly described figures on BA, AC. Let AD be drawn perpendicular. Then since, in the right-angled triangle ABC, AD has been drawn from the right angle at A perpendicular to the base BC, the triangles ABD, ADC adjoining the perpendicular are similar both to the whole ABC and to one another. [VI. 8] And, since ABC is similar to ABD, therefore, as CB is to BA, so is AB to BD. [VI. Def. 1] And, since three straight lines are proportional, as the first is to the third, so is the figure on the first to the similar and similarly described figure on the second. [VI. 19] Therefore, as CB is to BD, so is the figure on CB to the similar and similarly described figure on BA. For the same reason also, as BC is to CD, so is the figure on BC to that on CA; so that, in addition, as BC is to BD, DC, so is the figure on BC to the similar and similarly described figures on BA, AC. But BC is equal to BD, DC; therefore the figure on BC is also equal to the similar and similarly described figures on BA, AC.",
+  "ai_proof_text": "6.31\n**Statement:** In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.\n\n**Step 1.** Let triangle ABC have a right angle at vertex A, with BC the side subtending the right angle (the hypotenuse). Let similar and similarly described rectilineal figures be erected on BC, BA, and CA respectively. We must show that the figure on BC equals the sum of the figures on BA and CA.\n\n**Step 2.** From vertex A, draw AD perpendicular to BC, meeting BC at D. By Proposition 6.8, triangle ABD is similar to triangle ABC, and triangle ACD is similar to triangle ABC (and they are similar to one another).\n\n**Step 3.** Since triangle ABC is similar to triangle ABD, by Proposition 6.4 the sides about the equal angles are proportional. Specifically, with the right angle at A in triangle ABC corresponding to the right angle at D in triangle ABD, we have BC : BA = BA : BD. Thus BC, BA, BD are three magnitudes in continued proportion, and by Definition 5.9, BC has to BD the duplicate ratio of that which BC has to BA.\n\n**Step 4.** Similarly, since triangle ABC is similar to triangle ACD, by Proposition 6.4 we have BC : CA = CA : DC. Thus BC, CA, DC are three magnitudes in continued proportion, and by Definition 5.9, BC has to DC the duplicate ratio of that which BC has to CA.\n\n**Step 5.** Now let F_BC, F_BA, and F_CA denote the similar and similarly described rectilineal figures on BC, BA, and CA respectively. By Proposition 6.20, similar polygons are to one another in the duplicate ratio of the corresponding sides. Therefore F_BC : F_BA equals the duplicate ratio of BC : BA, which by Step 3 equals BC : BD. Likewise, F_BC : F_CA equals the duplicate ratio of BC : CA, which by Step 4 equals BC : DC.\n\n**Step 6.** By the porism of Proposition 5.7 (invertendo), since F_BC : F_BA = BC : BD, we have F_BA : F_BC = BD : BC. Similarly, since F_BC : F_CA = BC : DC, we have F_CA : F_BC = DC : BC.\n\n**Step 7.** Since F_BA : F_BC = BD : BC and F_CA : F_BC = DC : BC, we may apply Proposition 5.24: the sum (F_BA + F_CA) has to F_BC the same ratio as the sum (BD + DC) has to BC.\n\n**Step 8.** But D lies on BC between B and C (being the foot of the perpendicular from A), so BD + DC = BC. Therefore (F_BA + F_CA) : F_BC = BC : BC, which is a ratio of equality.\n\n**Step 9.** Since (F_BA + F_CA) has to F_BC the same ratio as F_BC has to F_BC, by Proposition 5.9 (magnitudes which have the same ratio to the same magnitude are equal to one another), we conclude F_BA + F_CA = F_BC. That is, the figure on the side subtending the right angle equals the sum of the similar and similarly described figures on the sides containing the right angle. Q.E.D.\n\n**USED:** 5.24, 5.7, 5.9, 6.20, 6.4, 6.8, D5.9, D6.1\n**Human refs (from References field):** 6.19, 6.8, D6.1\n**Jaccard:** 0.222 — AI adds ['5.24', '5.7', '5.9', '6.20', '6.4', 'D5.9']; Human adds ['6.19']",
+  "ai_used": [
+    "5.24",
+    "5.7",
+    "5.9",
+    "6.20",
+    "6.4",
+    "6.8",
+    "D5.9",
+    "D6.1"
+  ],
+  "heath_refs": [
+    "6.19",
+    "6.8",
+    "D6.1"
+  ],
+  "ai_only": [
+    "5.24",
+    "5.7",
+    "5.9",
+    "6.20",
+    "6.4",
+    "D5.9"
+  ],
+  "heath_only": [
+    "6.19"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let triangle ABC have a right angle at vertex A, with BC the side subtending the right angle (the hypotenuse). Let similar and similarly described rectilineal figures be erected on BC, BA,"
+}

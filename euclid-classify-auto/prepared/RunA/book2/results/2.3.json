@@ -1,0 +1,13 @@
+{
+  "proposition": "2.3",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof constructs a geometric figure (square CDEB on CB via I.46, parallel line AF via I.31) and decomposes the resulting rectangle into sub-areas to establish the identity. The AI instead applies Proposition 2.1 directly as an algebraic identity — treating BC as the uncut line and AB as the line cut into segments AC and CB — then recognizes that rect(BC, CB) equals sq(BC) by definition of a square. These represent fundamentally different logical backbones: Heath uses geometric construction and area decomposition, while the AI uses a previously proved distributive-law proposition and definitional substitution. The proof-tree containment test confirms this is not merely a citation-depth difference, since I.46 (used by Heath to construct the square) does not appear inside Heath's proof of 2.1 (the AI's key citation). The AI's different path is logically valid — 2.1 is correctly applied, the definitional identification of rect(BC,CB) with sq(BC) is sound, and the substitution completes the proof — yielding classification D.",
+  "jaccard": 0.0,
+  "ai_citations": "2.1|D1.22|D2.1",
+  "heath_citations": "1.31|1.46",
+  "ai_only": "2.1|D1.22|D2.1",
+  "heath_only": "1.31|1.46",
+  "audit_record": ""
+}

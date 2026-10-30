@@ -1,0 +1,35 @@
+{
+  "proposition": "6.26",
+  "book": 6,
+  "statement": "If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the whole.",
+  "heath_proof": "For suppose it is not, but, if possible, let AHC be the diameter < of ABCD >, let GF be produced and carried through to H, and let HK be drawn through H parallel to either of the straight lines AD, BC. [I. 31] Since, then, ABCD is about the same diameter with KG, therefore, as DA is to AB, so is GA to AK. [VI. 24] But also, because of the similarity of ABCD, EG, as DA is to AB, so is GA to AE; therefore also, as GA is to AK, so is GA to AE. [V. 11] Therefore GA has the same ratio to each of the straight lines AK, AE. Therefore AE is equal to AK [V. 9], the less to the greater: which is impossible. Therefore ABCD cannot but be about the same diameter with AF; therefore the parallelogram ABCD is about the same diameter with the parallelogram AF.",
+  "ai_proof_text": "6.26\n**Statement:** If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the whole.\n\n**Step 1.** Let ABCD be a parallelogram, and let AEFG be a parallelogram similar and similarly situated to ABCD, having with it the common angle DAB (so that E lies on AB and G lies on AD), and let it be required to prove that AEFG is about the same diameter as ABCD.\n\n**Step 2.** Suppose, for the sake of contradiction, that AEFG is not about the diameter of ABCD. Draw the diameter AC of parallelogram ABCD [P1].\n\n**Step 3.** Since AEFG is a parallelogram contained within ABCD sharing vertex A, and F is not on AC (by assumption), the line AC must pass through the interior of AEFG and intersect one of the sides EF or GF. Suppose AC intersects the side GF at a point H.\n\n**Step 4.** Through H, draw HK parallel to AD meeting AB at K [1.31]. Then AKHG is a parallelogram about the diameter AC of ABCD, since H lies on AC, KH is parallel to AG (both parallel to AD), and AK lies along AB which is parallel to GF (which contains GH).\n\n**Step 5.** Since AKHG is a parallelogram about the diameter AC of the parallelogram ABCD, by Proposition 6.24, AKHG is similar to ABCD [6.24].\n\n**Step 6.** Now, AEFG is similar to ABCD (given), and AKHG is similar to ABCD (Step 5). Since both AEFG and AKHG are similar to the same figure ABCD, they are similar to one another [6.21].\n\n**Step 7.** Since AEFG is similar and similarly situated to ABCD, the sides about the common angle DAB are proportional. By the definition of similar figures [D6.1], AE : AG = AB : AD.\n\n**Step 8.** Since AKHG is similar and similarly situated to ABCD, by the same definition [D6.1], AK : AG = AB : AD.\n\n**Step 9.** From Steps 7 and 8, AE : AG = AB : AD and AK : AG = AB : AD. Therefore AE : AG = AK : AG [CN1].\n\n**Step 10.** Since AE and AK have the same ratio to the same magnitude AG, by Proposition 5.9, AE = AK [5.9].\n\n**Step 11.** But E and K both lie on the line AB, and AE = AK, so E and K coincide. Therefore the parallelogram AKHG is the same as the parallelogram AEHG.\n\n**Step 12.** Now AEHG is a parallelogram (with AE parallel to GH and AG parallel to EH). Also AEFG is a parallelogram (with AE parallel to GF and AG parallel to EF). Both share the three vertices A, E, and G. Since in a parallelogram the fourth vertex is uniquely determined by the other three (for given parallel directions), and both parallelograms have their sides in the same directions (AE parallel to the opposite side, AG parallel to the opposite side), the fourth vertex must be the same. That is, H = F [1.34].\n\n**Step 13.** But H was taken on AC, so F lies on AC. This contradicts the assumption that AEFG is not about the diameter AC.\n\n**Step 14.** The same argument applies if AC intersects EF instead of GF, by a symmetric construction drawing through the intersection a line parallel to AB.\n\n**Step 15.** Therefore the assumption is false, and AEFG is about the same diameter as ABCD. Q.E.D.\n\n**USED:** 1.31, 1.34, 5.9, 6.21, 6.24, CN1, D6.1, P1\n**Human refs (from References field):** 1.31, 5.11, 5.9, 6.24\n**Jaccard:** 0.333 — AI adds ['1.34', '6.21', 'CN1', 'D6.1', 'P1']; Human adds ['5.11']",
+  "ai_used": [
+    "1.31",
+    "1.34",
+    "5.9",
+    "6.21",
+    "6.24",
+    "CN1",
+    "D6.1",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.31",
+    "5.11",
+    "5.9",
+    "6.24"
+  ],
+  "ai_only": [
+    "1.34",
+    "6.21",
+    "CN1",
+    "D6.1",
+    "P1"
+  ],
+  "heath_only": [
+    "5.11"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let ABCD be a parallelogram, and let AEFG be a parallelogram similar and similarly situated to ABCD, having with it the common angle DAB (so that E lies on AB and G lies on AD), and let it"
+}

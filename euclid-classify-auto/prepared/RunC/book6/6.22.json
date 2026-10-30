@@ -1,0 +1,37 @@
+{
+  "proposition": "6.22",
+  "book": 6,
+  "statement": "If four straight lines be proportional, the rectilineal figures similar and similarly described upon them will also be proportional; and, if the rectilineal figures similar and similarly described upon them be proportional, the straight lines will themselves also be proportional.",
+  "heath_proof": "Let the four straight lines AB, CD, EF, GH be proportional, so that, as AB is to CD, so is EF to GH, and let there be described on AB, CD the similar and similarly situated rectilineal figures KAB, LCD, and on EF, GH the similar and similarly situated rectilineal figures MF, NH; I say that, as KAB is to LCD, so is MF to NH. For let there be taken a third proportional O to AB, CD, and a third proportional P to EF, GH. [VI. 11] Then since, as AB is to CD, so is EF to GH, and, as CD is to O, so is GH to P, therefore, ex aequali, as AB is to O, so is EF to P. [V. 22] But, as AB is to O, so is KAB to LCD, [VI. 19] and, as EF is to P, so is MF to NH; therefore also, as KAB is to LCD, so is MF to NH. [V. 11] Next, let MF be to NH as KAB is to LCD; I say also that, as AB is to CD, so is EF to GH. For, if EF is not to GH as AB to CD, let EF be to QR as AB to CD, [VI. 12]and on QR let the rectilineal figure SR be described similar and similarly situated to either of the two MF, NH. [VI. 18] Since then, as AB is to CD, so is EF to QR, and there have been described on AB, CD the similar and similarly situated figures KAB, LCD, and on EF, QR the similar and similarly situated figures MF, SR, therefore, as KAB is to LCD, so is MF to SR. But also, by hypothesis, as KAB is to LCD, so is MF to NH; therefore also, as MF is to SR, so is MF to NH. [V. 11] Therefore MF has the same ratio to each of the figures NH, SR; therefore NH is equal to SR. [V. 9]  But it is also similar and similarly situated to it; therefore GH is equal to QR. And, since, as AB is to CD, so is EF to QR, while QR is equal to GH, therefore, as AB is to CD, so is EF to GH.",
+  "ai_proof_text": "6.22\n**Statement:** If four straight lines be proportional, the rectilineal figures similar and similarly described upon them will also be proportional; and, if the rectilineal figures similar and similarly described upon them be proportional, the straight lines will themselves also be proportional.\n\n**Step 1.** Let AB, CD, EF, GH be four straight lines such that AB:CD :: EF:GH. Let P and Q be similar and similarly described rectilineal figures on AB and CD respectively, and let R and S be similar and similarly described rectilineal figures on EF and GH respectively. We must show P:Q :: R:S.\n\n**Step 2.** By 6.11, find a third proportional M to AB and CD, so that AB:CD :: CD:M. Then AB has to M the duplicate ratio of that which AB has to CD [D5.9].\n\n**Step 3.** Similarly, by 6.11, find a third proportional N to EF and GH, so that EF:GH :: GH:N. Then EF has to N the duplicate ratio of that which EF has to GH [D5.9].\n\n**Step 4.** By 6.20, since P and Q are similar polygons described on AB and CD, P:Q is the duplicate ratio of AB to CD, that is, P:Q :: AB:M.\n\n**Step 5.** By 6.20, since R and S are similar polygons described on EF and GH, R:S is the duplicate ratio of EF to GH, that is, R:S :: EF:N.\n\n**Step 6.** Since AB:CD :: EF:GH (given), and AB:CD :: CD:M (Step 2), and EF:GH :: GH:N (Step 3), it follows that CD:M :: GH:N [5.11].\n\n**Step 7.** From AB:CD :: EF:GH and CD:M :: GH:N, by the ex aequali rule [5.22], AB:M :: EF:N.\n\n**Step 8.** Since P:Q :: AB:M (Step 4) and AB:M :: EF:N (Step 7) and EF:N :: R:S (Step 5), we conclude P:Q :: R:S [5.11]. This completes the first part of the proposition.\n\n**Step 9.** Conversely, suppose P:Q :: R:S, where P, Q are similar and similarly described rectilineal figures on AB, CD, and R, S are similar and similarly described on EF, GH. We must show AB:CD :: EF:GH.\n\n**Step 10.** By 6.12, find a line X such that AB:CD :: EF:X.\n\n**Step 11.** By 6.18, on X describe a rectilineal figure T similar and similarly situated to S (and therefore also similar to R, since R and S are similar).\n\n**Step 12.** Since AB:CD :: EF:X (Step 10), and P, Q are similar figures on AB, CD while R, T are similar figures on EF, X, by the first part of this proposition (Steps 1-8), P:Q :: R:T.\n\n**Step 13.** But P:Q :: R:S (given). Therefore R:T :: R:S [5.11].\n\n**Step 14.** Since R:T :: R:S, it follows that T = S [5.9].\n\n**Step 15.** Since T and S are similar and similarly described rectilineal figures, and T = S (equal in area), and T is described on X while S is described on GH, we conclude X = GH. For if X were not equal to GH, then the similar figures described on them could not be equal, since by 6.20 similar polygons are in the duplicate ratio of corresponding sides, and unequal sides yield unequal duplicate ratios, hence unequal figures.\n\n**Step 16.** Since X = GH and AB:CD :: EF:X (Step 10), we have AB:CD :: EF:GH [CN1]. This completes the converse, and the proposition is proved.\n\n**USED:** 5.11, 5.22, 5.9, 6.11, 6.12, 6.18, 6.20, CN1, D5.9\n**Human refs (from References field):** 5.11, 5.22, 5.9, 6.11, 6.12, 6.18, 6.19\n**Jaccard:** 0.600 — AI adds ['6.20', 'CN1', 'D5.9']; Human adds ['6.19']",
+  "ai_used": [
+    "5.11",
+    "5.22",
+    "5.9",
+    "6.11",
+    "6.12",
+    "6.18",
+    "6.20",
+    "CN1",
+    "D5.9"
+  ],
+  "heath_refs": [
+    "5.11",
+    "5.22",
+    "5.9",
+    "6.11",
+    "6.12",
+    "6.18",
+    "6.19"
+  ],
+  "ai_only": [
+    "6.20",
+    "CN1",
+    "D5.9"
+  ],
+  "heath_only": [
+    "6.19"
+  ],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let AB, CD, EF, GH be four straight lines such that AB:CD :: EF:GH. Let P and Q be similar and similarly described rectilineal figures on AB and CD respectively, and let R and S be similar"
+}

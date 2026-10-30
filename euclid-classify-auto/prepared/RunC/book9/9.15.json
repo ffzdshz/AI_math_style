@@ -1,0 +1,35 @@
+{
+  "proposition": "9.15",
+  "book": 9,
+  "statement": "If three numbers in continued proportion be the least of those which have the same ratio with them, any two whatever added together will be prime to the remaining number.",
+  "heath_proof": "Let A, B, C, three numbers in continued proportion, be the least of those which have the same ratio with them; I say that any two of the numbers A, B, C whatever added together are prime to the remaining number, namely A, B to C; B, C to A; and further A, C to B. For let two numbers DE, EF, the least of those which have the same ratio with A, B, C, be taken. [VIII. 2] It is then manifest that DE by multiplying itself has made A, and by multiplying EF has made B, and, further, EF by multiplying itself has made C. [VIII. 2] Now, since DE, EF are least, they are prime to one another. [VII. 22] But, if two numbers be prime to one another, their sum is also prime to each; [VII. 28] therefore DF is also prime to each of the numbers DE, EF. But further DE is also prime to EF; therefore DF, DE are prime to EF. But, if two numbers be prime to any number, their product is also prime to the other; [VII. 24] so that the product of FD, DE is prime to EF; hence the product of FD, DE is also prime to the square on EF. [VII. 25] But the product of FD, DE is the square on DE together with the product of DE, EF; [II. 3] therefore the square on DE together with the product of DE, EF is prime to the square on EF. And the square on DE is A, the product of DE, EF is B, and the square on EF is C; therefore A, B added together are prime to C. Similarly we can prove that B, C added together are prime to A. I say next that A, C added together are also prime to B. For, since DF is prime to each of the numbers DE, EF, the square on DF is also prime to the product of DE, EF. [VII. 24, 25] But the squares on DE, EF together with twice the product of DE, EF are equal to the square on DF; [II. 4] therefore the squares on DE, EF together with twice the product of DE, EF are prime to the product of DE, EF. Separando, the squares on DE, EF together with once the product of DE, EF are prime to the product of DE, EF. Therefore, separando again, the squares on DE, EF are prime to the product of DE, EF. And the square on DE is A, the product of DE, EF is B, and the square on EF is C. Therefore A, C added together are prime to B.",
+  "ai_proof_text": "9.15\n**Statement:** If three numbers in continued proportion be the least of those which have the same ratio with them, any two whatever added together will be prime to the remaining number.\n\n**Step 1.** Let A, B, C be three numbers in continued proportion that are the least of those which have the same ratio with them, so that A:B = B:C. We must show that any two added together are prime to the remaining one, namely that A+B is prime to C, that B+C is prime to A, and that A+C is prime to B.\n\n**Step 2.** Since A, B, C are three numbers in continued proportion and the least of those having the same ratio, by 8.2, there exist numbers p and q, the least in the ratio A:B, such that A = p*p, B = p*q, and C = q*q.\n\n**Step 3.** Since p and q are the least numbers in the ratio A:B, by 7.22, p and q are prime to one another.\n\n**Step 4.** [Proof that A+B is prime to C.] We have A+B = p*p + p*q = p*(p+q), and C = q*q. Since p is prime to q (Step 3), by 7.28, the sum p+q is prime to each of p and q. In particular, p+q is prime to q.\n\n**Step 5.** Since p+q is prime to q (Step 4), by 7.25, q*q is prime to p+q; that is, p+q is prime to q*q = C.\n\n**Step 6.** Since p is prime to q (Step 3), by 7.25, q*q is prime to p; that is, p is prime to q*q = C.\n\n**Step 7.** Since both p and p+q are prime to C (Steps 6 and 5), by 7.24, their product p*(p+q) is also prime to C. But p*(p+q) = A+B. Therefore A+B is prime to C.\n\n**Step 8.** [Proof that B+C is prime to A.] We have B+C = p*q + q*q = q*(p+q), and A = p*p. Since p is prime to q (Step 3), by 7.28, p+q is prime to p.\n\n**Step 9.** Since p+q is prime to p (Step 8), by 7.25, p*p is prime to p+q; that is, p+q is prime to p*p = A.\n\n**Step 10.** Since q is prime to p (Step 3), by 7.25, p*p is prime to q; that is, q is prime to p*p = A.\n\n**Step 11.** Since both q and p+q are prime to A (Steps 10 and 9), by 7.24, their product q*(p+q) is also prime to A. But q*(p+q) = B+C. Therefore B+C is prime to A.\n\n**Step 12.** [Proof that A+C is prime to B.] We have A+C = p*p + q*q, and B = p*q. Since p is prime to q (Step 3), by 7.26, since p is prime to q and p is prime to q, we have p*p prime to q*q; that is, A is prime to C.\n\n**Step 13.** Since A = p*p is prime to C = q*q (Step 12), by 7.28, their sum A+C = p*p + q*q is prime to both p*p and q*q. In particular, A+C is prime to p*p = A, and A+C is prime to q*q = C.\n\n**Step 14.** Since A+C is prime to A (Step 13), suppose d is any common measure of A+C and p. Then d measures p, so d measures p*p = A. But then d is a common measure of A+C and A. Since A+C is prime to A (Step 13), d must be a unit. Therefore A+C is prime to p.\n\n**Step 15.** Since A+C is prime to C (Step 13), suppose d is any common measure of A+C and q. Then d measures q, so d measures q*q = C. But then d is a common measure of A+C and C. Since A+C is prime to C (Step 13), d must be a unit. Therefore A+C is prime to q.\n\n**Step 16.** Since A+C is prime to p and A+C is prime to q (Steps 14 and 15), by 7.24, A+C is prime to p*q = B.\n\n**Step 17.** Therefore any two of the three numbers A, B, C added together are prime to the remaining number. Q.E.D.\n\n**USED:** 7.22, 7.24, 7.25, 7.26, 7.28, 8.2, D7.12\n**Human refs (from References field):** 2.3, 2.4, 7.22, 7.24, 7.25, 7.28, 8.2\n**Jaccard:** 0.556 — AI adds ['7.26', 'D7.12']; Human adds ['2.3', '2.4']",
+  "ai_used": [
+    "7.22",
+    "7.24",
+    "7.25",
+    "7.26",
+    "7.28",
+    "8.2",
+    "D7.12"
+  ],
+  "heath_refs": [
+    "2.3",
+    "2.4",
+    "7.22",
+    "7.24",
+    "7.25",
+    "7.28",
+    "8.2"
+  ],
+  "ai_only": [
+    "7.26",
+    "D7.12"
+  ],
+  "heath_only": [
+    "2.3",
+    "2.4"
+  ],
+  "jaccard": 0.556,
+  "proof_summary": "**Step 1.** Let A, B, C be three numbers in continued proportion that are the least of those which have the same ratio with them, so that A:B = B:C. We must show that any two added together are prime "
+}

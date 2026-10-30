@@ -1,0 +1,13 @@
+{
+  "proposition": "10.4",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: find D = GCM(A,B) via 10.3, show D and C are commensurable, find E = GCM(D,C) via 10.3, prove E measures A,B,C, then prove E is the greatest common measure. The AI proof omits the explicit two-case split (D measures C vs D does not measure C) present in Heath, but this is not an error because the AI's single general argument demonstrably covers both cases — the procedure of finding GCM(D,C) works regardless of whether D directly measures C. The only citation difference is that the AI explicitly cites D10.1.1 (definition of commensurability) where Heath uses the concept implicitly without citation. Since heath_only is empty and ai_only contains only a definition, this is a classic over-citation pattern indicating same backbone at different citation depth, yielding G.",
+  "jaccard": 0.5,
+  "ai_citations": "10.3|D10.1.1",
+  "heath_citations": "10.3",
+  "ai_only": "D10.1.1",
+  "heath_only": "",
+  "audit_record": ""
+}

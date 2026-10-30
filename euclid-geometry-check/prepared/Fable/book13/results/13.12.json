@@ -1,0 +1,71 @@
+{
+  "proposition": "13.12",
+  "run": "Fable",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABC is an equilateral triangle inscribed in circle ABC; A, B, C lie on the circumference",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is the center of the circle; DA = DB = DE are all radii",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AE is a diameter passing through center D, with D between A and E",
+      "type": "line_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle ADB (central) and angle ACB (inscribed) stand on the same arc AB; angle ADB = 2 times angle ACB",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "DB stands on line AE at D, so angles ADB and BDE are supplementary (sum to 180 degrees)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle BDE = angle ACB (= 60 degrees)",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In triangle DBE, DB = DE (radii), so base angles DBE and DEB are equal",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle DBE is equilateral; BE = DE = radius",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 6",
+      "claim": "B lies on semicircle with diameter AE, so angle ABE = 90 degrees (III.31)",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle ABE is right-angled at B; AE squared = AB squared + BE squared",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AE = AD + DE with AD = DE, so AE squared = 4 times DE squared",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 8",
+      "claim": "AB squared = 4 DE squared minus DE squared = 3 DE squared",
+      "type": "algebraic_conclusion"
+    }
+  ],
+  "configuration_map": "Circle with center D and radius r. Equilateral triangle ABC inscribed with vertices on circumference, each arc (AB, BC, CA) spanning 120 degrees, each interior angle 60 degrees. E is the second intersection of line AD with the circle (antipodal to A), making AE a diameter of length 2r. D lies between A and E with AD = DE = r. Central angle ADB = 120 degrees (subtending 120-degree arc AB). Supplementary angle BDE = 60 degrees. Triangle DBE has DB = DE = r and angle BDE = 60 degrees, making it equilateral with BE = r. Triangle ABE has right angle at B (angle in semicircle), hypotenuse AE = 2r, legs AB (side of equilateral triangle) and BE = r.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof establishes BE = DE through a valid chain of angle calculations (III.20 for the central angle, I.13 for supplementary angles on the diameter, then I.5 and I.6 in the isosceles triangle DBE). No angle decomposition requires a hidden betweenness assumption; the only supplementary relationship (ADB + BDE = 180 degrees) is justified by D lying between A and E on the diameter. The right angle at B from III.31 is correctly applied since B is on the semicircle with diameter AE. The final algebraic steps follow directly from the established equalities."
+}

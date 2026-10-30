@@ -1,0 +1,22 @@
+{
+  "proposition": "7.36",
+  "book": 7,
+  "statement": "Given three numbers, to find the least number which they measure.",
+  "heath_proof": "Let A, B, C be the three given numbers; thus it is required to find the least number which they measure. Let D, the least number measured by the two numbers A, B, be taken. [VII. 34] Then C either measures, or does not measure, D. First, let it measure it. But A, B also measure D; therefore A, B, C measure D. I say next that it is also the least that they measure. For, if not, A, B, C will measure some number which is less than D. Let them measure E. Since A, B, C measure E, therefore also A, B measure E. Therefore the least number measured by A, B will also measure E. [VII. 35] But D is the least number measured by A, B; therefore D will measure E, the greater the less: which is impossible. Therefore A, B, C will not measure any number which is less than D; therefore D is the least that A, B, C measure. Again, let C not measure D, and let E, the least number measured by C, D, be taken. [VII. 34] Since A, B measure D, and D measures E, therefore also A, B measure E. But C also measures E; therefore also A, B, C measure E. I say next that it is also the least that they measure. For, if not, A, B, C will measure some number which is less than E. Let them measure F. Since A, B, C measure F, therefore also A, B measure F; therefore the least number measured by A, B will also measure F. [VII. 35] But D is the least number measured by A, B; therefore D measures F. But C also measures F; therefore D, C measure F, so that the least number measured by D, C will also measure F. But E is the least number measured by C, D; therefore E measures F, the greater the less: which is impossible. Therefore A, B, C will not measure any number which is less than E. Therefore E is the least that is measured by A, B, C.",
+  "ai_proof_text": "7.36\n**Statement:** Given three numbers, to find the least number which they measure.\n\n**Step 1.** Let A, B, C be the three given numbers. We must find the least number which they all measure.\n\n**Step 2.** Take A and B, and by Proposition 7.34, find D, the least number which A and B measure. That is, A measures D and B measures D, and D is the least such number.\n\n**Step 3.** Now take D and C, and again by Proposition 7.34, find E, the least number which D and C measure. That is, D measures E and C measures E, and E is the least such number.\n\n**Step 4.** Since A measures D and D measures E, A also measures E. For if D = mA for some number m, and E = nD for some number n, then E = n(mA) = (nm)A, so A measures E. Similarly, since B measures D and D measures E, B also measures E. And C measures E directly by construction. Therefore A, B, and C all measure E.\n\n**Step 5.** We now show that E is the least such number. Suppose, for the sake of contradiction, that there exists some number F less than E such that A, B, and C all measure F.\n\n**Step 6.** Since A measures F and B measures F, and D is the least number measured by both A and B, then by Proposition 7.35, D also measures F.\n\n**Step 7.** Since D measures F and C measures F, and E is the least number measured by both D and C, then by Proposition 7.35, E also measures F.\n\n**Step 8.** But F is less than E. If E measures F, then E is a part of F, meaning F is a multiple of E, so F is at least as great as E. By Definition 7.5, F being a multiple of E means E measures F, requiring F to be no less than E. This contradicts the assumption that F is less than E.\n\n**Step 9.** Therefore no number less than E is measured by all three of A, B, and C. Hence E is the least number which A, B, and C measure. Q.E.D.\n\n**USED:** 7.34, 7.35, D7.5\n**Human refs (from References field):** 7.34, 7.35\n**Jaccard:** 0.667 — AI adds ['D7.5']",
+  "ai_used": [
+    "7.34",
+    "7.35",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.34",
+    "7.35"
+  ],
+  "ai_only": [
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let A, B, C be the three given numbers. We must find the least number which they all measure.  **Step 2.** Take A and B, and by Proposition 7.34, find D, the least number which A and B mea"
+}

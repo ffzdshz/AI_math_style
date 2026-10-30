@@ -1,0 +1,41 @@
+{
+  "proposition": "2.5",
+  "run": "RunA",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, D, B are collinear on line AB with ordering A-C-D-B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "C is the midpoint of AB, so AC = CB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D lies between C and B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AD = AC + CD, requiring C between A and D",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CB is cut at D, requiring D between C and B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "CB is cut at D into segments CD and DB, requiring C-D-B ordering",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "All points lie on a single straight line AB with fixed ordering A-C-D-B. C is the midpoint of AB (AC = CB). D is strictly between C and B. Segments: AC = CB, AD = AC + CD = CB + CD, CB = CD + DB. The entire proof operates on this collinear arrangement, applying rectangle and square area identities (Props 2.1, 2.3, 2.4) to various sub-segments. No auxiliary points off the line are constructed; no angles, triangles, or circles are involved.",
+  "pass_reason": "The proof is purely algebraic, manipulating rectangle and square area identities on a collinear arrangement of four points A-C-D-B. The only spatial content is the betweenness relations on a single line, which are trivially consistent throughout all steps. Every application of Propositions 2.1, 2.3, and 2.4 correctly references the appropriate segments given the established A-C-D-B ordering. No angle decompositions, interior/exterior claims, or non-trivial spatial configurations are present."
+}

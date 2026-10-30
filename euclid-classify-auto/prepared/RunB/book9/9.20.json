@@ -1,0 +1,30 @@
+{
+  "proposition": "9.20",
+  "book": 9,
+  "statement": "Prime numbers are more than any assigned multitude of prime numbers.",
+  "heath_proof": "Let A, B, C be the assigned prime numbers; I say that there are more prime numbers than A, B, C. For let the least number measured by A, B, C be taken, and let it be DE; let the unit DF be added to DE. Then EF is either prime or not. First, let it be prime; then the prime numbers A, B, C, EF have been found which are more than A, B, C. Next, let EF not be prime; therefore it is measured by some prime number. [VII. 31] Let it be measured by the prime number G. I say that G is not the same with any of the numbers A, B, C. For, if possible, let it be so. Now A, B, C measure DE; therefore G also will measure DE. But it also measures EF. Therefore G, being a number, will measure the remainder, the unit DF: which is absurd. Therefore G is not the same with any one of the numbers A, B, C. And by hypothesis it is prime. Therefore the prime numbers A, B, C, G have been found which are more than the assigned multitude of A, B, C.",
+  "ai_proof_text": "9.20\n**Statement:** Prime numbers are more than any assigned multitude of prime numbers.\n\n**Step 1.** Let A, B, C be any assigned multitude of prime numbers. We shall show that there exists a prime number different from all of A, B, C.\n\n**Step 2.** Consider the number obtained by multiplying A, B, and C together. By D7.15, form the product ABC = A * B * C. Now let N = ABC + 1, that is, the number which exceeds the product ABC by a unit.\n\n**Step 3.** N is either prime or composite (D7.11, D7.13). We consider both cases.\n\n**Step 4.** Case 1: Suppose N is prime. Since ABC is the product of A, B, and C, each of which is at least 2 (being prime, by D7.11 each is greater than a unit), ABC is at least 8, and N = ABC + 1 is at least 9. By CN5, N = ABC + 1 is greater than ABC, and ABC is a multiple of each of A, B, C (by D7.15), so ABC is greater than or equal to each of A, B, C. Therefore N is greater than each of A, B, C, and since N is prime and distinct from each of A, B, C, we have found a prime not in the assigned multitude.\n\n**Step 5.** Case 2: Suppose N is not prime. Then N is composite (D7.13), and by 7.31, some prime number G measures N.\n\n**Step 6.** We claim G is not equal to any of A, B, C. Suppose for contradiction that G equals one of them, say G = A. Now A measures ABC, since ABC = A * (B * C), so ABC is a multiple of A (by D7.15 and D7.5). By our supposition, G = A also measures N. Since G measures both N and ABC, and N = ABC + 1, the number G must measure the excess of N over ABC, which is the unit 1. For if G measures ABC, then ABC = G * k for some number k (D7.3), and if G measures N, then N = G * m for some number m. Then N - ABC = G * m - G * k = G * (m - k), so G measures 1. But G is prime, and by D7.11, a prime number is measured by a unit alone, hence G is not itself a unit and is at least 2, so G cannot measure 1 — a contradiction.\n\n**Step 7.** By the same reasoning, G cannot equal B or C. Therefore G is a prime number different from all of A, B, C.\n\n**Step 8.** In both cases, we have found a prime number not among the assigned primes A, B, C. Since the argument applies to any finite collection of primes of any size, prime numbers are more than any assigned multitude of prime numbers. Q.E.D.\n\n**USED:** 7.31, CN5, D7.11, D7.13, D7.15, D7.3, D7.5\n**Human refs (from References field):** 7.31\n**Jaccard:** 0.143 — AI adds ['CN5', 'D7.11', 'D7.13', 'D7.15', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "7.31",
+    "CN5",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.31"
+  ],
+  "ai_only": [
+    "CN5",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A, B, C be any assigned multitude of prime numbers. We shall show that there exists a prime number different from all of A, B, C.  **Step 2.** Consider the number obtained by multiplyi"
+}

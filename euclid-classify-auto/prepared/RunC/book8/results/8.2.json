@@ -1,0 +1,13 @@
+{
+  "proposition": "8.2",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: construct terms by successive multiplication, show consecutive ratios equal A:B using VII.17/VII.18, establish that extremes are coprime via VII.22 and VII.27, and conclude the terms are least in continued proportion by VIII.1. The AI generalizes to arbitrary n via induction while Heath demonstrates the case n=4, but the key intermediate conclusions are identical. The citation differences are explained by granularity: ai_only items 7.33 (reducing to least terms) and D7.15 (definition of multiplication) are over-citations of preliminary steps Heath leaves implicit; 7.20 is used where 7.17 or 7.18 would be more precise but the underlying claim is sound. The heath_only item 7.18 reflects Heath's use of the symmetric companion to 7.17 for the case of two numbers multiplying one number, while the AI uses 7.17 throughout. The E candidate for miscitation of 7.20 was considered but rejected under the lenience rule since the mathematical claim is correct and licensable by 7.17 (which the AI cites), making it a matter of imprecise citation rather than a logical gap.",
+  "jaccard": 0.5,
+  "ai_citations": "7.17|7.20|7.22|7.27|7.33|8.1|D7.15",
+  "heath_citations": "7.17|7.18|7.22|7.27|8.1",
+  "ai_only": "7.20|7.33|D7.15",
+  "heath_only": "7.18",
+  "audit_record": "CANDIDATE E — 8.2\n  violated_claim : a*c_{n-1} : b*c_{n-1} = a : b justified by 7.20\n  failure_mode   : invalid_inference\n  missing_is     : expansion — the claim is sound and could be licensed by 7.17 or 7.18 (which the AI cites)\n  evidence       : Step 7: \"a*c_{n-1} : b*c_{n-1} = a : b [7.20], since c_{n-1} is a common factor\"\n  why_not_terse  : 7.20 is about measurement of proportionals by least numbers, not about ratios of products with a common factor; however the claim itself is mathematically correct and supportable by 7.17\n  VERDICT: NOT-E — missing_is = expansion; lenience rule applies (sound inference, imprecise citation)"
+}

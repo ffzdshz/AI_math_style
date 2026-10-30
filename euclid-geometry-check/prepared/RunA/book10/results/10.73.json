@@ -1,0 +1,21 @@
+{
+  "proposition": "10.73",
+  "run": "RunA",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB, with BC subtracted from AB, leaving remainder AC",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AB is cut at C, applying Proposition 2.7 identity: sq(AB) + sq(BC) = 2*rect(AB,BC) + sq(AC)",
+      "type": "line_cut_at_point"
+    }
+  ],
+  "configuration_map": "Three collinear points A, C, B on a single straight line. A and B are endpoints of rational line AB. C lies between A and B such that BC is rational and commensurable with AB in square only. AC is the remainder. No auxiliary points, no triangles, no circles, no non-collinear constructions. The entire configuration is one-dimensional.",
+  "skip_reason": "The proof is essentially algebraic, reasoning about commensurability and rationality of areas (squares and rectangles) using Book 10 commensurability propositions and the algebraic identity from 2.7. The only geometric content is three collinear points on a line segment, which is a trivial one-dimensional configuration with no meaningful spatial consistency to check. Book 10 propositions of this type are algebraic number theory expressed in geometric language, with no angle decompositions, interior/exterior arguments, or complex spatial constructions."
+}

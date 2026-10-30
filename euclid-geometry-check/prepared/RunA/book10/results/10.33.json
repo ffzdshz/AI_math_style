@@ -1,0 +1,51 @@
+{
+  "proposition": "10.33",
+  "run": "RunA",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "D is the midpoint of segment BC, so BD = BC/2",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E is a point on segment AB such that AE * EB = sq(BD), placed by 6.28",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Semicircle AGB is described on AB as diameter; G lies on the semicircle",
+      "type": "point_on_circle"
+    },
+    {
+      "step": "Step 5",
+      "claim": "EG is perpendicular to AB, meeting the semicircle at G",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle AGB is a right angle (G on semicircle with diameter AB)",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 7",
+      "claim": "GE is the altitude from the right-angle vertex G to hypotenuse AB, creating similar triangles AGE, GBE, AGB via 6.8",
+      "type": "similar_triangles"
+    },
+    {
+      "step": "Step 9",
+      "claim": "AE + EB = AB (E lies between A and B on segment AB)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 17",
+      "claim": "AG/GE = AB/GB from similarity correspondence AGE ~ AGB, giving AG*GB = GE*AB",
+      "type": "proportion_from_similarity"
+    }
+  ],
+  "configuration_map": "E is on segment AB, strictly between A and B (AE*EB > 0). G is on the semicircle with diameter AB, located where the perpendicular from E meets the semicircle. GE is the altitude from the right-angle vertex G to the hypotenuse AB in right triangle AGB. This creates the standard configuration for 6.8: two sub-triangles AGE and GBE, each similar to the whole triangle AGB. E serves consistently as both the point from 6.28 application and the foot of the altitude from G. G serves consistently as a point on the semicircle (giving the right angle at G) and the vertex from which the altitude is drawn.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction (semicircle on diameter AB, perpendicular from E meeting semicircle at G, similar triangles from altitude to hypotenuse) is a standard well-known configuration. E is consistently between A and B; G is consistently on the semicircle with EG perpendicular to AB; the right angle at G and the similar triangle decomposition via 6.8 are all compatible. No angle decomposition issues arise since no angle is written as a sum of parts. The proof is predominantly algebraic (commensurability arguments) with a standard geometric construction that introduces no spatial contradictions."
+}

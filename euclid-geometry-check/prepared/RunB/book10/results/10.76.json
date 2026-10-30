@@ -1,0 +1,21 @@
+{
+  "proposition": "10.76",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, B are collinear on a straight line with C between A and B, so AC is the remainder AB - BC",
+      "type": "collinear-points"
+    },
+    {
+      "step": "Step 3",
+      "claim": "II.7 applied to line AB cut at C: AB^2 + BC^2 = 2*rect(AB,BC) + AC^2",
+      "type": "algebraic-identity-on-line"
+    }
+  ],
+  "configuration_map": "Trivial linear configuration: three collinear points A, C, B on a single straight line, with C between A and B. No triangles, circles, angles, or complex geometric figures are constructed. The entire proof operates on algebraic properties of areas (rational, medial, commensurable) derived from this line segment.",
+  "skip_reason": "The proof is essentially purely algebraic, dealing with commensurability and rationality/irrationality of areas. The only geometric element is the identity II.7 applied to a line segment cut at a point — a trivially simple collinear configuration with no possibility of spatial contradiction. No triangles, circles, angle decompositions, interior/exterior arguments, or ray orderings appear. This is a typical Book 10 irrationality proof with no meaningful geometric configuration to check."
+}

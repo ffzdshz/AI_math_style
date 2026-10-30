@@ -1,0 +1,22 @@
+{
+  "proposition": "7.14",
+  "book": 7,
+  "statement": "If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.",
+  "heath_proof": "Let there be as many numbers as we please A, B, C, and others equal to them in multitude D, E, F, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F; I say that, ex aequali, as A is to C, so also is D to F.  For, since, as A is to B, so is D to E, therefore, alternately, as A is to D, so is B to E. [VII. 13] Again, since, as B is to C, so is E to F, therefore, alternately, as B is to E, so is C to F. [VII. 13]  But, as B is to E, so is A to D; therefore also, as A is to D, so is C to F. Therefore, alternately, as A is to C, so is D to F.",
+  "ai_proof_text": "7.14\n**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.\n\n**Step 1.** Let there be as many numbers as we please A1, A2, ..., An, and others equal to them in multitude B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2:A3 = B2:B3, ..., A(n-1):An = B(n-1):Bn. We must show that ex aequali A1:An = B1:Bn (D5.17).\n\n**Step 2.** We first prove the result for three numbers on each side. Let A, B, C and D, E, F be numbers such that A:B = D:E and B:C = E:F. We must show A:C = D:F.\n\n**Step 3.** Since A:B = D:E, by alternate proportion (7.13) we have A:D = B:E.\n\n**Step 4.** Since B:C = E:F, by alternate proportion (7.13) we have B:E = C:F.\n\n**Step 5.** From Steps 3 and 4, since A:D = B:E and B:E = C:F, we conclude A:D = C:F. For A is the same part, or parts, or multiple of D that B is of E (D7.20, from A:D = B:E), and B is the same part, or parts, or multiple of E that C is of F (D7.20, from B:E = C:F). Therefore A is the same part, or parts, or multiple of D that C is of F, so A:D = C:F (D7.20).\n\n**Step 6.** Since A:D = C:F, by alternate proportion (7.13) we have A:C = D:F. This establishes the result for three terms on each side.\n\n**Step 7.** Now let there be more than three terms on each side: A1, A2, ..., An and B1, B2, ..., Bn with A(i):A(i+1) = B(i):B(i+1) for each i from 1 to n-1. We proceed by induction on n.\n\n**Step 8.** The base case n = 3 was established in Steps 2 through 6. Suppose the result holds for any chain of n-1 terms. Consider a chain of n terms. By the inductive hypothesis applied to A1, A2, ..., A(n-1) and B1, B2, ..., B(n-1), we obtain A1:A(n-1) = B1:B(n-1).\n\n**Step 9.** We now have A1:A(n-1) = B1:B(n-1) and A(n-1):An = B(n-1):Bn. This is exactly three terms on each side: A1, A(n-1), An and B1, B(n-1), Bn. Applying the result of Steps 2 through 6, we conclude A1:An = B1:Bn.\n\n**Step 10.** Therefore, if there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali. Q.E.D.\n\n**USED:** 7.13, D5.17, D7.20\n**Human refs (from References field):** 7.13\n**Jaccard:** 0.333 — AI adds ['D5.17', 'D7.20']",
+  "ai_used": [
+    "7.13",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.13"
+  ],
+  "ai_only": [
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please A1, A2, ..., An, and others equal to them in multitude B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2:A"
+}

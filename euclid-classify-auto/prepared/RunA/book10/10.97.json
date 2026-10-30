@@ -1,0 +1,51 @@
+{
+  "proposition": "10.97",
+  "book": 10,
+  "statement": "The square on an apotome applied to a rational straight line produces as breadth a first apotome.",
+  "heath_proof": "Let AB be an apotome, and CD rational, and to CD let there be applied CE equal to the square on AB and producing CF as breadth; I say that CF is a first apotome. For let BG be the annex to AB; therefore AG, GB are rational straight lines commensurable in square only. [X. 73] To CD let there be applied CH equal to the square on AG, and KL equal to the square on BG. Therefore the whole CL is equal to the squares on AG, GB, and, in these, CE is equal to the square on AB; therefore the remainder FL is equal to twice the rectangle AG, GB. [II. 7] Let FM be bisected at the point N, and let NO be drawn through N parallel to CD; therefore each of the rectangles FO, LN is equal to the rectangle AG, GB. Now, since the squares on AG, GB are rational, and DM is equal to the squares on AG, GB,. therefore DM is rational. And it has been applied to the rational straight line CD, producing CM as breadth; therefore CM is rational and commensurable in length with CD. [X. 20] Again, since twice the rectangle AG, GB is medial, and FL is equal to twice the rectangle AG, GB, therefore FL is medial. And it is applied to the rational straight line CD, producing FM as breadth; therefore FM is rational and incommensurable in length with CD. [X. 22] And, since the squares on AG, GB are rational, while twice the rectangle AG, GB is medial, therefore the squares on AG, GB are incommensurable with twice the rectangle AG, GB. And CL is equal to the squares on AG, GB, and FL to twice the rectangle AG, GB; therefore DM is incommensurable with FL. But, as DM is to FL, so is CM to FM; [VI. 1] therefore CM is incommensurable in length with FM. [X. 11] And both are rational; therefore CM, MF are rational straight lines commensurable in square only; therefore CF is an apotome. [X. 73] I say next that it is also a first apotome. For, since the rectangle AG, GB is a mean proportional between the squares on AG, GB, and CH is equal to the square on AG, KL equal to the square on BG, and NL equal to the rectangle AG, GB, therefore NL is also a mean proportional between CH, KL; therefore, as CH is to NL, so is NL to KL. But, as CH is to NL, so is CK to NM, and, as NL is to KL, so is NM to KM; [VI. 1] therefore the rectangle CK, KM is equal to the square on NM [VI. 17], that is, to the fourth part of the square on FM. And, since the square on AG is commensurable with the square on GB, CH is also commensurable with KL. But, as CH is to KL, so is CK to KM; [VI. 1] therefore CK is commensurable with KM. [X. 11] Since then CM, MF are two unequal straight lines, and to CM there has been applied the rectangle CK, KM equal to the fourth part of the square on FM and deficient by a square figure, while CK is commensurable with KM, therefore the square on CM is greater than the square on MF by the square on a straight line commensurable in length with CM. [X. 17] And CM is commensurable in length with the rational straight line CD set out; therefore CF is a first apotome. [X. Deff. III. 1]",
+  "ai_proof_text": "10.97\n**Statement:** The square on an apotome applied to a rational straight line produces as breadth a first apotome.\n\n**Step 1.** Let AB be an apotome, and let CD be a rational straight line. Apply the square on AB to CD, producing CE as breadth, so that the rectangle CD by CE equals the square on AB. We must show that CE is a first apotome.\n\n**Step 2.** Since AB is an apotome, let BF be the annex to it, so that AF is the whole. Then AF and BF are rational straight lines commensurable in square only, by the definition of an apotome [D10.1.3, 10.73].\n\n**Step 3.** By Proposition 2.7, the square on AB (that is, the square on the difference AF - BF) equals the sum of the squares on AF and on BF minus twice the rectangle contained by AF and BF. That is, sq(AB) = sq(AF) + sq(BF) - 2*rect(AF, BF).\n\n**Step 4.** Apply each of these areas to the rational straight line CD. Let the square on AF applied to CD produce breadth CG, the square on BF applied to CD produce breadth GH, and twice the rectangle AF by BF applied to CD produce breadth HE. Then CE = CG + GH - HE, that is, CE + HE = CG + GH, so the rectangle CD by CE equals the rectangle CD by (CG + GH) minus the rectangle CD by HE.\n\n**Step 5.** Since AF is rational, the square on AF is rational [D10.1.4]. Since CD is rational and the square on AF is a rational area, by Proposition 10.20 the breadth CG is rational and commensurable in length with CD.\n\n**Step 6.** Since BF is rational, the square on BF is rational [D10.1.4]. By the same reasoning using Proposition 10.20, the breadth GH is rational and commensurable in length with CD.\n\n**Step 7.** Since CG and GH are both commensurable in length with CD, they are commensurable in length with one another [10.12]. Therefore CG + GH is rational, and CG + GH is commensurable in length with CD [10.15].\n\n**Step 8.** Since AF and BF are rational straight lines commensurable in square only, the rectangle contained by AF and BF is medial [10.21]. Therefore twice the rectangle AF by BF is also medial, since a magnitude commensurable with a medial area is medial.\n\n**Step 9.** This medial area (twice the rectangle AF by BF) is applied to the rational straight line CD, producing breadth HE. By Proposition 10.22, HE is rational and incommensurable in length with CD.\n\n**Step 10.** Now, since CG + GH is commensurable in length with CD, while HE is incommensurable in length with CD, it follows that CG + GH is incommensurable in length with HE [10.13].\n\n**Step 11.** Since CE = (CG + GH) - HE, where CG + GH and HE are both rational (Steps 7 and 9), and they are commensurable in square only (being incommensurable in length by Step 10, yet both rational), CE is an apotome [10.73].\n\n**Step 12.** We now show CE is specifically a first apotome. We must verify the conditions of Definition D10.3.1. The whole is CG + GH and the annex is HE. We need: (i) the whole CG + GH is commensurable in length with the rational straight line CD, and (ii) the square on the whole exceeds the square on the annex by the square on a straight line commensurable in length with the whole.\n\n**Step 13.** Condition (i): CG + GH is commensurable in length with CD, as established in Step 7.\n\n**Step 14.** For condition (ii), we examine the relationship between the squares on CG + GH and HE. The square on AF is greater than the square on BF (since AF > BF). Let the square on AF exceed the square on BF by the square on a line K, so sq(AF) = sq(BF) + sq(K).\n\n**Step 15.** Since AF and BF are rational and commensurable in square only, and since AB is an apotome (the first kind, as we shall verify), we consider the commensurability of K with AF. The squares on AF and BF, when applied to CD, produce CG and GH respectively. Since sq(AF) = sq(BF) + sq(K), the rectangle CD by CG = CD by GH + sq(K). Thus CD by (CG - GH) = sq(K).\n\n**Step 16.** Since sq(AF) : sq(BF) = CG : GH (as both areas are applied to the same line CD) [6.1], and the squares on AF and BF are commensurable (since AF and BF are commensurable in square) [D10.1.1], CG is commensurable in length with GH [10.11].\n\n**Step 17.** Since CG and GH are commensurable in length, CG - GH is commensurable in length with CG [10.15], and hence with CD [10.12].\n\n**Step 18.** Now sq(K) = CD by (CG - GH). Since CG - GH is commensurable with CD, the rectangle CD by (CG - GH) is a rational area [10.19]. The square on a straight line commensurable with CG + GH would also be rational. By Proposition 10.17, since sq(AF) > sq(BF) by sq(K), and sq(AF)/sq(BF) = CG/GH (applied to CD), and CG, GH are commensurable, the square on (CG + GH) exceeds the square on HE by the square on a straight line commensurable in length with CG + GH.\n\n**Step 19.** Therefore, both conditions of Definition D10.3.1 are satisfied: the whole CG + GH is commensurable in length with the rational straight line CD, and the square on the whole exceeds the square on the annex by the square on a straight line commensurable with the whole. Hence CE is a first apotome.\n\n**Step 20.** Therefore, the square on an apotome applied to a rational straight line produces as breadth a first apotome. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.20, 10.21, 10.22, 10.73, 2.7, 6.1, D10.1.1, D10.1.3, D10.1.4, D10.3.1\n**Human refs (from References field):** 10.11, 10.17, 10.20, 10.22, 10.73, 2.7, 6.1, 6.17, D10.3.1\n**Jaccard:** 0.471 — AI adds ['10.12', '10.13', '10.15', '10.19', '10.21', 'D10.1.1', 'D10.1.3', 'D10.1.4']; Human adds ['6.17']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.17",
+    "10.19",
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.73",
+    "2.7",
+    "6.1",
+    "D10.1.1",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.1"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.17",
+    "10.20",
+    "10.22",
+    "10.73",
+    "2.7",
+    "6.1",
+    "6.17",
+    "D10.3.1"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.19",
+    "10.21",
+    "D10.1.1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "6.17"
+  ],
+  "jaccard": 0.471,
+  "proof_summary": "**Step 1.** Let AB be an apotome, and let CD be a rational straight line. Apply the square on AB to CD, producing CE as breadth, so that the rectangle CD by CE equals the square on AB. We must show th"
+}

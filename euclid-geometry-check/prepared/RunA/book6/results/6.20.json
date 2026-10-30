@@ -1,0 +1,36 @@
+{
+  "proposition": "6.20",
+  "run": "RunA",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Diagonals AC and AD from vertex A divide convex polygon ABCDE into three non-overlapping triangles ABC, ACD, ADE; diagonals FH and FK from vertex F divide FGHKL into triangles FGH, FHK, FKL",
+      "type": "polygon triangulation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "At vertex C, ray CA lies between rays CB and CD, so angle BCD = angle BCA + angle ACD",
+      "type": "angle decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "At vertex H, ray HF lies between rays HG and HK, so angle GHK = angle GHF + angle FHK",
+      "type": "angle decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "At vertex D, ray DA lies between rays DC and DE, so angle CDE = angle CDA + angle ADE",
+      "type": "angle decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "At vertex K, ray KF lies between rays KH and KL, so angle HKL = angle HKF + angle FKL",
+      "type": "angle decomposition"
+    }
+  ],
+  "configuration_map": "Polygon ABCDE is convex with vertices in order A, B, C, D, E. Vertex A serves as the hub for triangulation. Diagonal AC connects A to C (passing through the polygon interior), creating triangle ABC on one side. Diagonal AD connects A to D (also through the interior), subdividing the remaining quadrilateral ACDE into triangles ACD and ADE. At vertex C, the interior angle BCD is split by diagonal AC into angles BCA and ACD, with ray CA in the interior of angle BCD. At vertex D, the interior angle CDE is split by diagonal AD into angles CDA and ADE, with ray DA in the interior of angle CDE. The same structure applies to polygon FGHKL with hub vertex F and diagonals FH, FK, under the correspondence A-F, B-G, C-H, D-K, E-L. All diagonals lie within their respective convex polygons, and all angle decompositions are consistent with the interior diagonal positions.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses a standard diagonal-from-one-vertex triangulation of convex similar polygons. The angle decompositions at vertices C, D (and corresponding H, K) are valid because each diagonal from the hub vertex passes through the polygon interior, placing the relevant ray between the two sides of each polygon angle. The bulk of the proof (Steps 13-22) is purely proportional/algebraic reasoning with no additional spatial assumptions. No contradictions exist between any pair of spatial claims."
+}

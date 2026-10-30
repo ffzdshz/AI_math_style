@@ -1,0 +1,39 @@
+{
+  "proposition": "9.5",
+  "book": 9,
+  "statement": "If a cube number by multiplying any number make a cube number, the multiplied number will also be cube.",
+  "heath_proof": "For let the cube number A by multiplying any number B make the cube number C; I say that B is cube. For let A by multiplying itself make D; therefore D is cube. [IX. 3] Now, since A by multiplying itself has made D, and by multiplying B has made C, therefore, as A is to B, so is D to C. [VII. 17] And since D, C are cube, they are similar solid numbers. Therefore two mean proportional numbers fall between D, C. [VIII. 19] And, as D is to C, so is A to B; therefore two mean proportional numbers fall between A, B also. [VIII. 8] And A is cube; therefore B is also cube. [VIII. 23]",
+  "ai_proof_text": "9.5\n**Statement:** If a cube number by multiplying any number make a cube number, the multiplied number will also be cube.\n\n**Step 1.** Let A be a cube number with side a, so that A = a * a * a [D7.19]. Let A by multiplying B produce C, where C is also a cube number with side c, so that C = c * c * c [D7.19]. We are to prove that B is a cube number.\n\n**Step 2.** Since A and C are both cube numbers, by 8.12 there fall between them two mean proportional numbers. Let these be D and E, so that A, D, E, C are in continued proportion, that is, A : D :: D : E :: E : C. Moreover, by 8.12, A : D :: a : c.\n\n**Step 3.** Since A * B = C, A measures C [D7.15]. Now A, D, E, C are in continued proportion and A (the first) measures C (the last). Therefore, by 8.7, A also measures D. Let f be the number such that A * f = D [D7.15].\n\n**Step 4.** Since f multiplies both A and D, producing D and f * D respectively, by 7.17 the products are in the same ratio as the numbers multiplied, that is, A : D :: D : (f * D). But from the continued proportion we also have A : D :: D : E. Hence D : (f * D) :: D : E [5.11]. Therefore f * D = E [5.9].\n\n**Step 5.** Since f multiplies both D and E, producing E and f * E respectively, by 7.17 we have D : E :: E : (f * E). But from the continued proportion we also have D : E :: E : C. Hence E : (f * E) :: E : C [5.11]. Therefore f * E = C [5.9].\n\n**Step 6.** From Steps 3, 4, and 5 we have established: D = A * f, E = D * f, and C = E * f. Substituting successively: C = E * f = (D * f) * f = ((A * f) * f) * f. But we are given that C = A * B. Since f multiplies both B and (f * f), and A multiplying B and A multiplying (f * f * f) both produce C, by 7.17 the numbers multiplied must be in the same ratio as the products. Since the products are both equal to C, the ratio is one of equality, and therefore B = f * f * f.\n\n**Step 7.** Since B = f * f * f, B is equal multiplied by equal and again by equal, and therefore B is a cube number [D7.19].\n\nTherefore, if a cube number by multiplying any number make a cube number, the multiplied number will also be cube. Q.E.D.\n\n**USED:** 5.11, 5.9, 7.17, 8.12, 8.7, D7.15, D7.19\n**Human refs (from References field):** 7.17, 8.19, 8.23, 8.8, 9.3\n**Jaccard:** 0.091 — AI adds ['5.11', '5.9', '8.12', '8.7', 'D7.15', 'D7.19']; Human adds ['8.19', '8.23', '8.8', '9.3']",
+  "ai_used": [
+    "5.11",
+    "5.9",
+    "7.17",
+    "8.12",
+    "8.7",
+    "D7.15",
+    "D7.19"
+  ],
+  "heath_refs": [
+    "7.17",
+    "8.19",
+    "8.23",
+    "8.8",
+    "9.3"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.9",
+    "8.12",
+    "8.7",
+    "D7.15",
+    "D7.19"
+  ],
+  "heath_only": [
+    "8.19",
+    "8.23",
+    "8.8",
+    "9.3"
+  ],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let A be a cube number with side a, so that A = a * a * a [D7.19]. Let A by multiplying B produce C, where C is also a cube number with side c, so that C = c * c * c [D7.19]. We are to pro"
+}

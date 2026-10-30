@@ -1,0 +1,33 @@
+{
+  "proposition": "9.30",
+  "book": 9,
+  "statement": "If an odd number measure an even number, it will also measure the half of it.",
+  "heath_proof": "For let the odd number A measure the even number B; I say that it will also measure the half of it. For, since A measures B, let it measure it according to C; I say that C is not odd. For, if possible, let it be so. Then, since A measures B according to C, therefore A by multiplying C has made B. Therefore B is made up of odd numbers the multitude of which is odd. Therefore B is odd: [IX. 23] which is absurd, for by hypothesis it is even. Therefore C is not odd; therefore C is even. Thus A measures B an even number of times. For this reason then it also measures the half of it.",
+  "ai_proof_text": "9.30\n**Statement:** If an odd number measure an even number, it will also measure the half of it.\n\n**Step 1.** Let A be an odd number, and let B be an even number, and let A measure B. I say that A also measures the half of B.\n\n**Step 2.** Since B is even, by D7.6 it is divisible into two equal parts. Let C be the half of B, so that B equals C added to itself, that is, B = C + C.\n\n**Step 3.** Since A measures B, by D7.3 there is some number k such that B = k times A, where k denotes the number of times A measures B (D7.15).\n\n**Step 4.** Suppose k is odd. Then since A is odd and k is odd, by 9.29 (the product of two odd numbers is odd), B = k times A would be odd. But B is even, which is a contradiction. Therefore k is not odd.\n\n**Step 5.** Since k is not odd, k is even (D7.7, since every number is either even or odd). Therefore by D7.6, k is divisible into two equal parts. Let k = m + m for some number m.\n\n**Step 6.** Then B = k times A = (m + m) times A = m times A + m times A (by 7.5, since multiplication distributes: if k = m + m, then kA = mA + mA).\n\n**Step 7.** But B = C + C from Step 2. Therefore C + C = m times A + m times A. Hence C = m times A (CN3, subtracting equals from equals, or equivalently since the two halves must be equal).\n\n**Step 8.** Since C = m times A, A measures C (D7.3). But C is the half of B. Therefore A measures the half of B, which was to be proved.\n\n**USED:** 7.5, 9.29, CN3, D7.15, D7.3, D7.6, D7.7\n**Human refs (from References field):** 9.23\n**Jaccard:** 0.000 — AI adds ['7.5', '9.29', 'CN3', 'D7.15', 'D7.3', 'D7.6', 'D7.7']; Human adds ['9.23']",
+  "ai_used": [
+    "7.5",
+    "9.29",
+    "CN3",
+    "D7.15",
+    "D7.3",
+    "D7.6",
+    "D7.7"
+  ],
+  "heath_refs": [
+    "9.23"
+  ],
+  "ai_only": [
+    "7.5",
+    "9.29",
+    "CN3",
+    "D7.15",
+    "D7.3",
+    "D7.6",
+    "D7.7"
+  ],
+  "heath_only": [
+    "9.23"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A be an odd number, and let B be an even number, and let A measure B. I say that A also measures the half of B.  **Step 2.** Since B is even, by D7.6 it is divisible into two equal par"
+}

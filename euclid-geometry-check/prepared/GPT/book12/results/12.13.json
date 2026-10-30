@@ -1,0 +1,56 @@
+{
+  "proposition": "12.13",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cylinder has axis AB; cutting plane meets AB at point C, so C lies on segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Cutting plane is parallel to both base planes of the cylinder",
+      "type": "plane_relationship"
+    },
+    {
+      "step": "Step 1",
+      "claim": "K is a cylinder with axis AC and L is a cylinder with axis CB, both with the same base radius as the original",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "M and N are points on a ray extending beyond A, with AM = m·AC and AN = n·CB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "m congruent copies of K assembled consecutively along AM from base at A, forming cylinder X with axis AM",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "n congruent copies of L assembled consecutively along AN from same base at A, forming cylinder Y with axis AN",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "X and Y have the same radius (inherited from K and L)",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "X and Y share the same starting base, same axis ray, and same radius; if AM > AN then Y is a proper part of X",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "If AM < AN then X is a proper part of Y; if AM = AN they coincide",
+      "type": "solid_geometry_configuration"
+    }
+  ],
+  "configuration_map": "All points A, B, C, M, N are collinear on the cylinder's axis or its extension. C lies between A and B, partitioning axis AB into AC and CB. M and N lie on the ray from A extending beyond A (away from B), at distances AM = m·AC and AN = n·CB respectively. Cylinders K (axis AC) and L (axis CB) have the same base radius r. Cylinder X (m copies of K, axis AM, radius r) and cylinder Y (n copies of L, axis AN, radius r) both start from the base at A along the same ray. The entire configuration is one-dimensional along the axis, extended to 3D by uniform rotation with constant radius. No non-collinear point relationships or angle decompositions arise.",
+  "pass_reason": "All spatial claims are mutually consistent. The configuration is purely collinear (points along a single axis), and all cylinders share the same radius and axis direction. The containment/equality comparisons in Step 4 follow correctly from the construction. No angle decompositions, interior/exterior claims, or competing betweenness relationships arise. The proof uses a different path from Heath (rotational definitions and coincidence rather than 12.11) but the geometric reasoning is internally sound."
+}

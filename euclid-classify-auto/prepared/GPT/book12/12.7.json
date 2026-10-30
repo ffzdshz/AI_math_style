@@ -1,0 +1,34 @@
+{
+  "proposition": "12.7",
+  "book": 12,
+  "statement": "Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.",
+  "heath_proof": "Let there be a prism in which the triangle ABC is the base and DEF its opposite; I say that the prism ABCDEF is divided into three pyramids equal to one another, which have triangular bases. For let BD, EC, CD be joined. Since ABED is a parallelogram, and BD is its diameter, therefore the triangle ABD is equal to the triangle EBD; [I. 34] therefore also the pyramid of which the triangle ABD is the base and the point C the vertex is equal to the pyramid of which the triangle DEB is the base and the point C the vertex. [XII. 5] But the pyramid of which the triangle DEB is the base and the point C the vertex is the same with the pyramid of which the triangle EBC is the base and the point D the vertex; for they are contained by the same planes. Therefore the pyramid of which the triangle ABD is the base and the point C the vertex is also equal to the pyramid of which the triangle EBC is the base and the point D the vertex. Again, since FCBE is a parallelogram, and CE is its diameter, the triangle CEF is equal to the triangle CBE. [I. 34] Therefore also the pyramid of which the triangle BCE is the base and the point D the vertex is equal to the pyramid of which the triangle ECF is the base and the point D the vertex. [XII. 5] But the pyramid of which the triangle BCE is the base and the point D the vertex was proved equal to the pyramid of which the triangle ABD is the base and the point C the vertex; therefore also the pyramid of which the triangle CEF is the base and the point D the vertex is equal to the pyramid of which the triangle ABD is the base and the point C the vertex; therefore the prism ABCDEF has been divided into three pyramids equal to one another which have triangular bases. And, since the pyramid of which the triangle ABD is the base and the point C the vertex is the same with the pyramid of which the triangle CAB is the base and the point D the vertex, for they are contained by the same planes, while the pyramid of which the triangle ABD is the base and the point C the vertex was proved to be a third of the prism in which the triangle ABC is the base and DEF its opposite, therefore also the pyramid of which the triangle ABC is the base and the point D the vertex is a third of the prism which has the same base, the triangle ABC, and DEF as its opposite.",
+  "ai_proof_text": "12.7\n**Statement:** Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.\n\n**Step 1.** Let the given prism have opposite triangular faces ABC and DEF, with corresponding vertices A, D; B, E; and C, F. Its remaining faces are the parallelograms ABED, BCEF, and CADF. [D11.13]\n\n**Step 2.** Join AF, BF, and AE. The triangles ABF and AEF lie in planes; use these as cutting sections of the prism. [P1, 11.2]\n\n**Step 3.** The section ABF, bounded by the edge AB and the face diagonals BF and AF, separates the triangular pyramid ABCF from the pyramid whose vertex is F and whose base is the parallelogram ABED. In the latter pyramid, the section AEF divides its base along AE into triangles ABE and ADE, and therefore divides that pyramid into the triangular pyramids ABEF and ADEF. Thus the three pyramids\nT₁ = ABCF, T₂ = ABEF, and T₃ = ADEF\nhave disjoint interiors and together exhaust the prism. [D11.12, D11.13, 1.34]\n\n**Step 4.** The diagonal BF bisects the parallelogram BCEF, so the triangles BCF and BEF are equal. Regard T₁ and T₂ as pyramids with these respective bases and the common vertex A. Their bases lie in the same plane, so their heights are the same perpendicular from A to that plane. [1.34, D6.4]\n\n**Step 5.** Apply the triangular-base theorem 12.5 directly: it is the first applicable pyramid-ratio result, and no polygonal-base generalization is needed. It gives\nT₁ : T₂ = triangle BCF : triangle BEF.\nSince the two bases are equal, the definition of equal ratios, taking each multiple once, gives T₁ = T₂. [12.5, D5.5]\n\n**Step 6.** The diagonal AE bisects the parallelogram ABED, so triangles ABE and ADE are equal. Regard T₂ and T₃ as pyramids with these respective bases and the common vertex F. They have the same height, namely the perpendicular from F to the plane ABED. Hence\nT₂ : T₃ = triangle ABE : triangle ADE,\nand therefore T₂ = T₃. [1.34, D6.4, 12.5, D5.5]\n\n**Step 7.** Consequently T₁, T₂, and T₃ are equal to one another. By the dissection in Step 3, they constitute the entire given prism, and each has a triangular base. Thus any prism with a triangular base is divided into three equal pyramids having triangular bases. [CN1, D11.12]\n\n**USED:** 1.34, 11.2, 12.5, CN1, D11.12, D11.13, D5.5, D6.4, P1\n**Human refs (from References field):** 1.34, 12.5\n**Jaccard:** 0.222 — AI adds ['11.2', 'CN1', 'D11.12', 'D11.13', 'D5.5', 'D6.4', 'P1']",
+  "ai_used": [
+    "1.34",
+    "11.2",
+    "12.5",
+    "CN1",
+    "D11.12",
+    "D11.13",
+    "D5.5",
+    "D6.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.34",
+    "12.5"
+  ],
+  "ai_only": [
+    "11.2",
+    "CN1",
+    "D11.12",
+    "D11.13",
+    "D5.5",
+    "D6.4",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let the given prism have opposite triangular faces ABC and DEF, with corresponding vertices A, D; B, E; and C, F. Its remaining faces are the parallelograms ABED, BCEF, and CADF. [D11.13] "
+}

@@ -1,0 +1,32 @@
+{
+  "proposition": "3.22",
+  "book": 3,
+  "statement": "The opposite angles of quadrilaterals in circles are equal to two right angles.",
+  "heath_proof": "Let ABCD be a circle, and let ABCD be a quadrilateral in it; I say that the opposite angles are equal to two right angles. Let AC, BD be joined. Then, since in any triangle the three angles are equal to two right angles, [I. 32] the three angles CAB, ABC, BCA of the triangle ABC are equal to two right angles. But the angle CAB is equal to the angle BDC, for they are in the same segment BADC; [III. 21] and the angle ACB is equal to the angle ADB, for they are in the same segment ADCB; therefore the whole angle ADC is equal to the angles BAC, ACB. Let the angle ABC be added to each; therefore the angles ABC, BAC, ACB are equal to the angles ABC, ADC. But the angles ABC, BAC, ACB are equal to two right angles; therefore the angles ABC, ADC are also equal to two right angles. Similarly we can prove that the angles BAD, DCB are also equal to two right angles.",
+  "ai_proof_text": "3.22\n**Statement:** The opposite angles of quadrilaterals in circles are equal to two right angles.\n\n**Step 1.** Let ABCD be a quadrilateral inscribed in a circle, with its vertices named in their order around the circumference. Join AC and BD. [D4.3; P1]\n\n**Step 2.** The direct route is to use angles in the same segment, since the diagonals immediately supply such angle pairs without requiring a centre construction. The angles BAC and BDC lie in the same segment on chord BC, and the angles BCA and BDA lie in the same segment on chord BA. Hence\n∠BAC = ∠BDC,\n∠BCA = ∠BDA. [D3.8; 3.21]\n\n**Step 3.** Adding these equalities gives\n∠BAC + ∠BCA = ∠BDC + ∠BDA.\nSince BD divides the interior angle ADC, the two angles on the right together coincide with ∠ADC. Thus\n∠BAC + ∠BCA = ∠ADC. [CN2; CN4]\n\n**Step 4.** In triangle ABC,\n∠ABC + ∠BAC + ∠BCA = two right angles. [1.32]\nAdding ∠ABC to the equality in Step 3 and comparing with this triangle-angle sum yields\n∠ABC + ∠ADC = two right angles. [CN2; CN1]\n\n**Step 5.** The angles CBD and CAD lie in the same segment on chord CD, so ∠CBD = ∠CAD. [D3.8; 3.21]\nTogether with ∠BDC = ∠BAC from Step 2, this gives\n∠CBD + ∠BDC = ∠CAD + ∠BAC = ∠BAD,\nbecause AC divides the interior angle BAD. [CN2; CN4]\n\n**Step 6.** In triangle BCD,\n∠BCD + ∠CBD + ∠BDC = two right angles. [1.32]\nAdding ∠BCD to the equality in Step 5 therefore gives\n∠BCD + ∠BAD = two right angles. [CN2; CN1]\nThus each pair of opposite angles of the inscribed quadrilateral is together equal to two right angles, as required.\n\n**USED:** 1.32, 3.21, CN1, CN2, CN4, D3.8, D4.3, P1\n**Human refs (from References field):** 1.32, 3.21\n**Jaccard:** 0.250 — AI adds ['CN1', 'CN2', 'CN4', 'D3.8', 'D4.3', 'P1']",
+  "ai_used": [
+    "1.32",
+    "3.21",
+    "CN1",
+    "CN2",
+    "CN4",
+    "D3.8",
+    "D4.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "3.21"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN2",
+    "CN4",
+    "D3.8",
+    "D4.3",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let ABCD be a quadrilateral inscribed in a circle, with its vertices named in their order around the circumference. Join AC and BD. [D4.3; P1]  **Step 2.** The direct route is to use angle"
+}

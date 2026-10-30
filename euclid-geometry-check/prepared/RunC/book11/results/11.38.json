@@ -1,0 +1,91 @@
+{
+  "proposition": "11.38",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cube with bottom face ABCD, top face EFGH, lateral edges AE, BF, CG, DH. AG is a space diagonal.",
+      "type": "solid_geometry_setup"
+    },
+    {
+      "step": "Step 2",
+      "claim": "K=mid(AB), L=mid(BC), M=mid(CD), N=mid(DA), O=mid(EF), P=mid(FG), Q=mid(GH), R=mid(HE) are midpoints on the cube edges.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Plane through K,O,Q,M and plane through L,P,R,N intersect in a line ST.",
+      "type": "plane_intersection"
+    },
+    {
+      "step": "Step 5",
+      "claim": "KO is parallel to AE and equal to AE (midpoints of opposite sides of square face ABFE).",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 6",
+      "claim": "MQ is parallel to DH and equal to DH (midpoints of opposite sides of square face DCGH).",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 7",
+      "claim": "KO parallel to MQ (both parallel to lateral edges AE and DH which are parallel).",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 8",
+      "claim": "KOMQ is a parallelogram (KO and MQ are equal and parallel opposite sides).",
+      "type": "figure_classification"
+    },
+    {
+      "step": "Step 9",
+      "claim": "LPRN is a parallelogram (LP parallel and equal to NR, both parallel to lateral edges).",
+      "type": "figure_classification"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Diagonal AG lies in the plane through A, C, G, E (rectangle ACGE).",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Diagonals KQ and OM of parallelogram KOMQ bisect each other at point S.",
+      "type": "diagonal_bisection"
+    },
+    {
+      "step": "Step 14",
+      "claim": "KM passes through center of face ABCD; LN also passes through center of ABCD.",
+      "type": "line_through_center"
+    },
+    {
+      "step": "Step 15",
+      "claim": "OQ passes through center of face EFGH; PR also passes through center of EFGH.",
+      "type": "line_through_center"
+    },
+    {
+      "step": "Step 16",
+      "claim": "X = midpoint of AC = center of ABCD; Y = midpoint of EG = center of EFGH.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 17",
+      "claim": "XY is the common section ST: X lies in both bisecting planes, Y lies in both bisecting planes.",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 18",
+      "claim": "ACGE is a parallelogram with diagonals AG and CE that bisect each other.",
+      "type": "figure_classification"
+    },
+    {
+      "step": "Step 19-22",
+      "claim": "XY passes through the intersection point W of diagonals AG and CE; W is the midpoint of both AG and XY.",
+      "type": "diagonal_bisection"
+    }
+  ],
+  "configuration_map": "Cube with vertices A=(0,0,0), B=(1,0,0), C=(1,1,0), D=(0,1,0) (bottom), E=(0,0,1), F=(1,0,1), G=(1,1,1), H=(0,1,1) (top). Midpoints on bottom face: K=(0.5,0,0), L=(1,0.5,0), M=(0.5,1,0), N=(0,0.5,0). Midpoints on top face: O=(0.5,0,1), P=(1,0.5,1), Q=(0.5,1,1), R=(0,0.5,1). Plane KOQM is the plane x=0.5. Plane LPRN is the plane y=0.5. Their common section ST is the vertical line x=0.5, y=0.5, which runs from (0.5,0.5,0) to (0.5,0.5,1). Space diagonal AG goes from (0,0,0) to (1,1,1). Rectangle ACGE has diagonals AG and CE intersecting at center (0.5,0.5,0.5). The line ST (=XY) also passes through (0.5,0.5,0.5), which is the midpoint of both AG and ST. All spatial claims are mutually consistent throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The cube configuration, midpoint positions, parallelogram formations (KOQM and LPRN), plane intersections, and the key claim that the common section ST and diagonal AG bisect each other at the cube's center (0.5,0.5,0.5) are all verified to be geometrically correct. Coordinate verification confirms every parallelism, equality, bisection, and plane membership claim. The proof is verbose in Steps 20-22 but contains no spatial contradictions."
+}

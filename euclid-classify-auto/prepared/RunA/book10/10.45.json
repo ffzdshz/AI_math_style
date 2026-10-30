@@ -1,0 +1,34 @@
+{
+  "proposition": "10.45",
+  "book": 10,
+  "statement": "A major straight line is divided at one and the same point only.",
+  "heath_proof": "Let AB be a major straight line divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB rational, but the rectangle AC, CB medial; [X. 39] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB rational, but the rectangle contained by them medial. Then, since that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, while the squares on AC, CB exceed the squares on AD, DB by a rational area—for both are rational— therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore a major straight line is not divided at different points; therefore it is only divided at one and the same point.",
+  "ai_proof_text": "10.45\n**Statement:** A major straight line is divided at one and the same point only.\n\n**Step 1.** Let AB be a major straight line, and let it be divided at C so that AC and CB are its terms. Then by the definition of a major straight line (10.39), AC and CB are incommensurable in square, the sum of the squares on AC and CB is rational, and the rectangle contained by AC and CB is medial.\n\n**Step 2.** Suppose, for contradiction, that AB is also divided at a different point D so that AD and DB satisfy the same conditions: AD and DB are incommensurable in square, the sum of the squares on AD and DB is rational, and the rectangle contained by AD and DB is medial.\n\n**Step 3.** Since AB is divided at C, by 2.4 the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB. That is, sq(AB) = sq(AC) + sq(CB) + 2*rect(AC,CB).\n\n**Step 4.** Similarly, since AB is divided at D, by 2.4 the square on AB equals the sum of the squares on AD and DB together with twice the rectangle contained by AD and DB. That is, sq(AB) = sq(AD) + sq(DB) + 2*rect(AD,DB).\n\n**Step 5.** By CN1 (since both expressions equal sq(AB)), we have sq(AC) + sq(CB) + 2*rect(AC,CB) = sq(AD) + sq(DB) + 2*rect(AD,DB).\n\n**Step 6.** Now sq(AC) + sq(CB) is rational and sq(AD) + sq(DB) is rational. Since both are rational areas, each is commensurable with the square on the assigned rational straight line (D10.1.4). Therefore by 10.12, sq(AC) + sq(CB) and sq(AD) + sq(DB) are commensurable with one another.\n\n**Step 7.** Consider two cases: either sq(AC) + sq(CB) differs from sq(AD) + sq(DB), or they are equal.\n\n**Step 8.** Case 1: Suppose sq(AC) + sq(CB) is not equal to sq(AD) + sq(DB). From Step 5, by rearranging (CN3), we obtain [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2*rect(AD,DB) - 2*rect(AC,CB). The left-hand side is the difference of two commensurable magnitudes (Step 6). Since they sum as whole and part (the greater equals the lesser plus the difference), by 10.15 the difference is commensurable with each of them. Since each is rational (commensurable with the square on the assigned rational line), the difference is also commensurable with the square on the assigned rational line (by 10.12), and hence is a rational area.\n\n**Step 9.** But the right-hand side, 2*rect(AD,DB) - 2*rect(AC,CB), is the difference of two medial areas (since rect(AC,CB) and rect(AD,DB) are each medial by hypothesis, and twice a medial area is medial). Thus a medial area exceeds a medial area by a rational area. This contradicts 10.26.\n\n**Step 10.** Case 2: Suppose sq(AC) + sq(CB) = sq(AD) + sq(DB). Then from Step 5, by CN3, we also have 2*rect(AC,CB) = 2*rect(AD,DB), and therefore rect(AC,CB) = rect(AD,DB).\n\n**Step 11.** Let M be the midpoint of AB. By 2.5 applied to line AB divided equally at M and unequally at C, we have rect(AC,CB) + sq(MC) = sq(MB). Likewise, by 2.5 applied to AB divided equally at M and unequally at D, we have rect(AD,DB) + sq(MD) = sq(MB).\n\n**Step 12.** Since rect(AC,CB) = rect(AD,DB) (Step 10) and both expressions equal sq(MB), by CN1 we have rect(AC,CB) + sq(MC) = rect(AD,DB) + sq(MD). Subtracting the equal rectangles (CN3), sq(MC) = sq(MD), hence MC = MD, and therefore C and D are the same point.\n\n**Step 13.** This contradicts our assumption that C and D are different points. Therefore in both cases the assumption of a second division leads to a contradiction.\n\n**Step 14.** Hence a major straight line is divided at one and the same point only. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.26, 10.39, 2.4, 2.5, CN1, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.39\n**Jaccard:** 0.222 — AI adds ['10.12', '10.15', '2.4', '2.5', 'CN1', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.39",
+    "2.4",
+    "2.5",
+    "CN1",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.39"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.5",
+    "CN1",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let AB be a major straight line, and let it be divided at C so that AC and CB are its terms. Then by the definition of a major straight line (10.39), AC and CB are incommensurable in squar"
+}

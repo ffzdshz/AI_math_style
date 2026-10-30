@@ -1,0 +1,57 @@
+{
+  "proposition": "11.38",
+  "book": 11,
+  "statement": "If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.",
+  "heath_proof": "For let the sides of the opposite planes CF, AH of the cube AF be bisected at the points K, L, M, N, O, Q, P, R, and through the points of section let the planes KN, OR be carried; let US be the common section of the planes, and DG the diameter of the cube AF. I say that UT is equal to TS, and DT to TG. For let DU, UE, BS, SG be joined. Then, since DO is parallel to PE, the alternate angles DOU, UPE are equal to one another. [I. 29] And, since DO is equal to PE, and OU to UP, and they contain equal angles, therefore the base DU is equal to the base UE, the triangle DOU is equal to the triangle PUE, and the remaining angles are equal to the remaining angles; [I. 4] therefore the angle OUD is equal to the angle PUE. For this reason DUE is a straight line. [I. 14] For the same reason, BSG is also a straight line, and BS is equal to SG. Now, since CA is equal and parallel to DB, while CA is also equal and parallel to EG, therefore DB is also equal and parallel to EG. [XI. 9] And the straight lines DE, BG join their extremities; therefore DE is parallel to BG. [I. 33] Therefore the angle EDT is equal to the angle BGT, for they are alternate; [I. 29] and the angle DTU is equal to the angle GTS. [I. 15] Therefore DTU, GTS are two triangles which have two angles equal to two angles, and one side equal to one side, namely that subtending one of the equal angles, that is, DU equal to GS, for they are the halves of DE, BG; therefore they will also have the remaining sides equal to the remaining sides. [I. 26] Therefore DT is equal to TG, and UT to TS.",
+  "ai_proof_text": "11.38\n**Statement:** If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.\n\n**Step 1.** Let the opposite faces of the cube be ABCD and A'B'C'D', with AA', BB', CC', DD' the joining edges. Let M, N, P, Q bisect AB, BC, CD, DA respectively, and let M', N', P', Q' bisect the corresponding sides of A'B'C'D'. Denote the cutting planes MPP'M' and NQQ'N' by Π and Σ. The faces are squares, hence equilateral and right-angled. [D11.25, D1.22]\n\n**Step 2.** Opposite sides of each square face are parallel. [1.28] Thus AA' ∥ BB' and BB' ∥ CC', whence AA' ∥ CC'. [11.9] Moreover, AA' = AB = BC = CC', so AA' = CC'. [D1.22, CN1] The joins AC and A'C' lie in the plane of the parallel edges AA', CC'; since these edges are equal and parallel, AC ∥ A'C'. Consequently ACC'A' is a parallelogram in one plane. [11.7, 1.33]\n\n**Step 3.** Bisect AC, A'C', and the cube's diameter AC' at X, Y, and T respectively, and draw the joins used below. [1.10, P1] We take the planar midpoint route: divisions into equal halves have the same ratio, so the converse of 6.2 applies immediately to any two bisected sides of a triangle. This is the natural route from the given bisections, without comparing solids. [D5.5, 6.2]\n\n**Step 4.** Apply the converse of 6.2 to triangles ABC, CDA, BCA, and DAC respectively. Since the relevant sides are bisected, it gives\nMX ∥ BC, PX ∥ DA, NX ∥ BA, and QX ∥ DC. [6.2]\nSince BC ∥ DA and BA ∥ DC, the lines MX and PX coincide, and the lines NX and QX coincide: distinct lines parallel to the same line cannot meet. Thus M, X, P are collinear, and N, X, Q are collinear. [1.30, D1.23]\n\n**Step 5.** The identical applications in the upper square give M', Y, P' collinear and N', Y, Q' collinear. [6.2, 1.30, D1.23] Therefore both Π and Σ contain X and Y. [11.1] Their traces on ABCD are the distinct lines MP and NQ, so Π and Σ are distinct planes. Their common section is consequently the straight line XY; its portion within the cube is terminated at X and Y on the opposite faces. [11.3]\n\n**Step 6.** In triangle ACC', X and T bisect AC and AC', so XT ∥ CC'. In triangle C'A'A, Y and T bisect C'A' and C'A, so YT ∥ A'A. [6.2] Since AA' ∥ CC', the lines XT and YT coincide. Hence X, T, Y are collinear. [1.30, D1.23] Moreover, T is between A and C', and therefore lies between the parallel sides AC and A'C' of the diagonal parallelogram. It is consequently between their intersections X and Y with this common line. Thus the common section XY meets the diameter AC' at T.\n\n**Step 7.** Because AC ∥ A'C', the alternate angles XAT and YC'T are equal. [1.29] The vertical angles XTA and YTC' are also equal. [1.15] Together with AT = TC' from the construction, these equalities make triangles XAT and YC'T congruent by the equal-angle-and-included-side criterion; hence XT = TY. [1.10, 1.26] We therefore have both AT = TC' and XT = TY. Thus the diameter of the cube and the common section of the cutting planes bisect one another, as required.\n\n**USED:** 1.10, 1.15, 1.26, 1.28, 1.29, 1.30, 1.33, 11.1, 11.3, 11.7, 11.9, 6.2, CN1, D1.22, D1.23, D11.25, D5.5, P1\n**Human refs (from References field):** 1.14, 1.15, 1.26, 1.29, 1.33, 1.4, 11.9\n**Jaccard:** 0.250 — AI adds ['1.10', '1.28', '1.30', '11.1', '11.3', '11.7', '6.2', 'CN1', 'D1.22', 'D1.23', 'D11.25', 'D5.5', 'P1']; Human adds ['1.14', '1.4']",
+  "ai_used": [
+    "1.10",
+    "1.15",
+    "1.26",
+    "1.28",
+    "1.29",
+    "1.30",
+    "1.33",
+    "11.1",
+    "11.3",
+    "11.7",
+    "11.9",
+    "6.2",
+    "CN1",
+    "D1.22",
+    "D1.23",
+    "D11.25",
+    "D5.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.15",
+    "1.26",
+    "1.29",
+    "1.33",
+    "1.4",
+    "11.9"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.28",
+    "1.30",
+    "11.1",
+    "11.3",
+    "11.7",
+    "6.2",
+    "CN1",
+    "D1.22",
+    "D1.23",
+    "D11.25",
+    "D5.5",
+    "P1"
+  ],
+  "heath_only": [
+    "1.14",
+    "1.4"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let the opposite faces of the cube be ABCD and A'B'C'D', with AA', BB', CC', DD' the joining edges. Let M, N, P, Q bisect AB, BC, CD, DA respectively, and let M', N', P', Q' bisect the cor"
+}

@@ -1,0 +1,49 @@
+{
+  "proposition": "13.8",
+  "book": 13,
+  "statement": "If in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to the side of the pentagon.",
+  "heath_proof": "For in the equilateral and equiangular pentagon ABCDE let the straight lines AC, BE, cutting one another at the point H, subtend two angles taken in order, the angles at A, B; I say that each of them has been cut in extreme and mean ratio at the point H, and their greater segments are equal to the side of the pentagon. For let the circle ABCDE be circumscribed about the pentagon ABCDE. [IV. 14] Then, since the two straight lines EA, AB are equal to the two AB, BC, and they contain equal angles, therefore the base BE is equal to the base AC, the triangle ABE is equal to the triangle ABC, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend. [I. 4] Therefore the angle BAC is equal to the angle ABE; therefore the angle AHE is double of the angle BAH. [I. 32] But the angle EAC is also double of the angle BAC, inasmuch as the circumference EDC is also double of the circumference CB; [III. 28, VI. 33] therefore the angle HAE is equal to the angle AHE; hence the straight line HE is also equal to EA, that is, to AB. [I. 6] And, since the straight line BA is equal to AE, the angle ABE is also equal to the angle AEB. [I. 5] But the angle ABE was proved equal to the angle BAH; therefore the angle BEA is also equal to the angle BAH. And the angle ABE is common to the two triangles ABE and ABH; therefore the remaining angle BAE is equal to the remaining angle AHB; [I. 32] therefore the triangle ABE is equiangular with the triangle ABH; therefore, proportionally, as EB is to BA, so is AB to BH. [VI. 4] But BA is equal to EH; therefore, as BE is to EH, so is EH to HB. And BE is greater than EH; therefore EH is also greater than HB. [V. 14] Therefore BE has been cut in extreme and mean ratio at H, and the greater segment HE is equal to the side of the pentagon. Similarly we can prove that AC has also been cut in extreme and mean ratio at H, and its greater segment CH is equal to the side of the pentagon.",
+  "ai_proof_text": "13.8\n**Statement:** If in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to the side of the pentagon.\n\n**Step 1.** Let ABCDE be an equilateral and equiangular pentagon, with vertices named in order. Draw the diagonals AC and BE, which subtend the two angles at A and B taken in order. Let H be the point where AC and BE intersect.\n\n**Step 2.** Circumscribe a circle about the pentagon ABCDE [4.14]. Since the pentagon is equilateral, all five sides AB, BC, CD, DE, EA are equal. Therefore by [3.28], the arcs they subtend are all equal: arc AB = arc BC = arc CD = arc DE = arc EA, each being one-fifth of the circumference.\n\n**Step 3.** The angle BAC is an inscribed angle in the circle standing on arc BC, and the angle ABE is an inscribed angle standing on arc AE. Since arc BC = arc AE (both being one-fifth of the circumference), we have angle BAC = angle ABE by [3.27].\n\n**Step 4.** Since H lies on segment AC, the angle BAH equals angle BAC. Since H lies on segment BE, the angle ABH equals angle ABE. Therefore angle BAH = angle ABH by [CN1].\n\n**Step 5.** In triangle ABH, since angle BAH = angle ABH, the sides opposite these equal angles are equal: BH = AH by [1.6].\n\n**Step 6.** The angle BCA is an inscribed angle standing on arc AB, and the angle BAC is an inscribed angle standing on arc BC. Since arc AB = arc BC, we have angle BCA = angle BAC by [3.27]. Therefore in triangle ABC, since AB = BC (sides of the pentagon) and angle BAC = angle BCA, the angle ABC at the vertex is the remaining angle. By [1.32], the sum of angles in triangle ABC equals two right angles, so angle ABC = two right angles minus angle BAC minus angle BCA = two right angles minus twice angle BAC.\n\n**Step 7.** Now consider the full angle of the pentagon at B, which is angle ABC. The sum of the interior angles of the pentagon equals three times two right angles (six right angles), since the pentagon can be divided into three triangles from any vertex, each having angle sum two right angles by [1.32]. Since the pentagon is equiangular, each interior angle equals six-fifths of a right angle.\n\n**Step 8.** In triangle ABH, angle AHB = two right angles minus angle BAH minus angle ABH by [1.32]. Since angle BAH = angle ABH (Step 4), we get angle AHB = two right angles minus twice angle BAH. From Step 6, this equals angle ABC, that is, six-fifths of a right angle.\n\n**Step 9.** The angle AEB is an inscribed angle standing on arc AB, which equals one-fifth of the circumference. The angle BAC is an inscribed angle standing on arc BC, also one-fifth of the circumference. Therefore angle AEB = angle BAC by [3.27].\n\n**Step 10.** Now angle EAC = angle EAB minus angle BAC. Since angle EAB is an angle of the pentagon (six-fifths of a right angle) and angle BAC = angle AEB (Step 9), the angle EAC equals the angle of the pentagon minus angle BAC.\n\n**Step 11.** In triangle AHE, angle HAE = angle EAC (since H lies on AC), and angle AEH = angle AEB = angle BAC (Step 9). By [1.32], angle AHE = two right angles minus angle HAE minus angle AEH. But angle AHE and angle AHB are supplementary (H lies on line segment BE between B and E, and A is off this line, but more precisely, angle AHE = two right angles minus angle AHB, since BHE is a straight line). So angle AHE = two right angles minus six-fifths of a right angle = four-fifths of a right angle.\n\n**Step 12.** Then by [1.32] in triangle AHE, angle HAE = two right angles minus angle AEH minus angle AHE. Since angle AEH = angle BAC and angle AHE = four-fifths of a right angle, we get angle HAE = four-fifths of a right angle as well. Therefore angle HAE = angle AHE.\n\n**Step 13.** Since angle HAE = angle AHE in triangle AHE, the sides opposite these equal angles are equal: AE = HE by [1.6]. Since AE is a side of the pentagon, HE equals the side of the pentagon.\n\n**Step 14.** Consider triangles ABC and ABE. We have AB = AB (common side), BC = AE (sides of the equilateral pentagon), and angle ABC = angle BAE (angles of the equiangular pentagon). Therefore triangles ABC and ABE are congruent by [1.4], and so AC = BE.\n\n**Step 15.** Now consider triangles ABH and CBA. In triangle ABH: angle BAH = angle BAC, angle ABH = angle ABE = angle BCA (by Steps 3 and 6, since angle ABE = angle BAC = angle BCA), and angle AHB = angle ABC (Step 8). In triangle CBA: angle BCA = angle BAC = angle BAH, angle ABC = angle AHB, and angle BAC = angle ABH. Therefore triangles ABH and CBA are equiangular, and hence similar by [6.4].\n\n**Step 16.** From the similarity of triangles ABH and CBA (with correspondence A to C, H to B, B to A), the ratios of corresponding sides give: AB/AH = AC/AB. Therefore AB squared equals AH times AC by [6.17].\n\n**Step 17.** Now substitute the equalities established: HE = AE = AB (Step 13 and equilateral pentagon), AH = BH (Step 5), and AC = BE (Step 14). From AB squared = AH times AC, we obtain HE squared = BH times BE.\n\n**Step 18.** Therefore BE is to HE as HE is to BH by [6.17]. Since BE = BH + HE, this means that BE has been cut at H such that the whole is to the greater segment as the greater segment is to the lesser. This is the definition of being cut in extreme and mean ratio [D6.3].\n\n**Step 19.** In triangle ABH, angle AHB (six-fifths of a right angle) is greater than angle ABH (which equals angle BAC, less than one right angle). Therefore AB is greater than AH by [1.19], that is, HE is greater than BH. So HE is indeed the greater segment, and HE equals the side of the pentagon (Step 13).\n\n**Step 20.** By a symmetric argument for diagonal AC: since angle HBC = angle ABC minus angle ABH = the angle of the pentagon minus angle BCA, and angle BCH = angle BCA, triangle BHC has angle BHC = angle HBC (both equal to four-fifths of a right angle, being supplementary considerations analogous to Steps 11-12). By [1.6], BC = HC. Since BC is a side of the pentagon, HC equals the side of the pentagon. From HC squared = AH times AC (which follows from the same similarity, since HC = AB), AC is to HC as HC is to AH by [6.17], so AC is also cut in extreme and mean ratio at H with the greater segment HC equal to the side of the pentagon [D6.3].\n\n**Step 21.** Therefore, if in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are each equal to the side of the pentagon. Q.E.F.\n\n**USED:** 1.19, 1.32, 1.4, 1.5, 1.6, 3.27, 3.28, 4.14, 6.17, 6.4, CN1, CN3, D6.3, P1\n**Human refs (from References field):** 1.32, 1.4, 1.5, 1.6, 3.28, 4.14, 5.14, 6.33, 6.4\n**Jaccard:** 0.438 — AI adds ['1.19', '3.27', '6.17', 'CN1', 'CN3', 'D6.3', 'P1']; Human adds ['5.14', '6.33']",
+  "ai_used": [
+    "1.19",
+    "1.32",
+    "1.4",
+    "1.5",
+    "1.6",
+    "3.27",
+    "3.28",
+    "4.14",
+    "6.17",
+    "6.4",
+    "CN1",
+    "CN3",
+    "D6.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.4",
+    "1.5",
+    "1.6",
+    "3.28",
+    "4.14",
+    "5.14",
+    "6.33",
+    "6.4"
+  ],
+  "ai_only": [
+    "1.19",
+    "3.27",
+    "6.17",
+    "CN1",
+    "CN3",
+    "D6.3",
+    "P1"
+  ],
+  "heath_only": [
+    "5.14",
+    "6.33"
+  ],
+  "jaccard": 0.438,
+  "proof_summary": "**Step 1.** Let ABCDE be an equilateral and equiangular pentagon, with vertices named in order. Draw the diagonals AC and BE, which subtend the two angles at A and B taken in order. Let H be the point"
+}

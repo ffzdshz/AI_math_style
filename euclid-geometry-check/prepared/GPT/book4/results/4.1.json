@@ -1,0 +1,31 @@
+{
+  "proposition": "4.1",
+  "run": "GPT",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the centre of circle Γ; A lies on the circumference; B lies on the circumference diametrically opposite A through O; O lies between A and B on the diameter.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OA = OB = r; AB = OA + OB = 2r since O lies between A and B; the three lengths r, r, s satisfy all triangle inequalities (r+r > s because s < 2r; r+s > r because s > 0).",
+      "type": "metric_and_inequality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangle OAC is constructed on line OA via I.22 with sides OA = r, OC = r, AC = s; point C is a new point not on line AB (in general).",
+      "type": "construction_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "C lies on circle Γ because OC = r = radius of Γ; both A and C lie on Γ, so AC is a chord of Γ with length s.",
+      "type": "point_on_circle"
+    }
+  ],
+  "configuration_map": "O: centre of circle Γ, lies between A and B on the diameter. A: on circumference of Γ, one endpoint of diameter AB, one vertex of triangle OAC. B: on circumference of Γ, other endpoint of diameter AB, used only to establish the diameter length 2r. C: constructed via I.22 to form triangle OAC with OA = r, OC = r, AC = s; since OC = r, C lies on Γ. The configuration is a simple isosceles triangle inscribed with two sides as radii and the third side as the desired chord.",
+  "pass_reason": "The proof makes only straightforward spatial claims that are all mutually consistent. The construction is clean: given s less than the diameter 2r, the triangle inequality is satisfied for sides r, r, s, so I.22 produces triangle OAC. Since OC = r, point C lies on the circle, making AC a chord of the required length. There are no angle decompositions, no interior/exterior point arguments, no betweenness claims beyond the trivial O-between-A-and-B, and no conflicting position requirements for any point."
+}

@@ -1,0 +1,44 @@
+{
+  "proposition": "6.29",
+  "book": 6,
+  "statement": "To a given straight line to apply a parallelogram equal to a given rectilineal figure and exceeding by a parallelogrammic figure similar to a given one.",
+  "heath_proof": "Let AB be the given straight line, C the given rectilineal figure to which the figure to be applied to AB is required to be equal, and D that to which the excess is required to be similar; thus it is required to apply to the straight line AB a parallelogram equal to the rectilineal figure C and exceeding by a parallelogrammic figure similar to D. Let AB be bisected at E; let there be described on EB the parallelogram BF similar and similarly situated to D; and let GH be constructed at once equal to the sum of BF, C and similar and similarly situated to D. [VI. 25] Let KH correspond to FL and KG to FE. Now, since GH is greater than FB, therefore KH is also greater than FL, and KG than FE. Let FL, FE be produced, let FLM be equal to KH, and FEN to KG, and let MN be completed; therefore MN is both equal and similar to GH. But GH is similar to EL; therefore MN is also similar to EL; [VI. 21]therefore EL is about the same diameter with MN. [VI. 26] Let their diameter FO be drawn, and let the figure be described. Since GH is equal to EL, C, while GH is equal to MN, therefore MN is also equal to EL, C. Let EL be subtracted from each; therefore the remainder, the gnomon XWV, is equal to C. Now, since AE is equal to EB, AN is also equal to NB [I. 36], that is, to LP [I. 43]. Let EO be added to each; therefore the whole AO is equal to the gnomon VWX. But the gnomon VWX is equal to C; therefore AO is also equal to C. Therefore to the given straight line AB there has been applied the parallelogram AO equal to the given rectilineal figure C and exceeding by a parallelogrammic figure QP which is similar to D, since PQ is also similar to EL [VI. 24].",
+  "ai_proof_text": "6.29\n**Statement:** To a given straight line to apply a parallelogram equal to a given rectilineal figure and exceeding by a parallelogrammic figure similar to a given one.\n\n**Step 1.** Let AB be the given straight line, C the given rectilineal figure, and D the given parallelogram to which the excess is to be similar. It is required to apply to AB a parallelogram equal to C and exceeding by a parallelogrammic figure similar to D.\n\n**Step 2.** Bisect AB at E [1.10].\n\n**Step 3.** On EB, describe the parallelogram BFGE similar and similarly situated to D [6.18]. Let BFGE be the parallelogram on EB similar to D, where GE is along EB.\n\n**Step 4.** Construct a parallelogram KH equal to the sum of BFGE and C, and similar and similarly situated to D [6.25]. This is possible because 6.25 constructs a figure similar to one given figure and equal in area to another; here we need KH similar to D and equal to BFGE + C. (We first construct a parallelogram equal to BFGE + C by 1.45, then apply 6.25 to obtain KH similar to D and equal to that sum.)\n\n**Step 5.** Since KH is similar to D and BFGE is similar to D, KH is similar to BFGE [6.21].\n\n**Step 6.** Since KH equals BFGE + C, and C is a positive area, KH is greater than BFGE [CN5]. Because KH and BFGE are similar parallelograms and KH is greater, each side of KH is greater than the corresponding side of BFGE.\n\n**Step 7.** Let GE and GF be the sides of parallelogram BFGE meeting at G. Since KH is similar to BFGE, let the sides of KH corresponding to GE and GF be greater. Produce GE to L and GF to M so that GL equals the side of KH corresponding to GE, and GM equals the side of KH corresponding to GF. Complete the parallelogram GLMN on sides GL and GM, similar and similarly situated to D [P1, P2]. Then GLMN is equal and similar to KH, since the corresponding sides are equal and the angles are equal (both being similar to D) [6.24, D6.1].\n\n**Step 8.** Since GLMN is similar to BFGE, and BFGE is about the diameter of GLMN, the parallelogram BFGE is about the same diameter as GLMN [6.26]. Let that diameter be GB (extended to the opposite corner of GLMN).\n\n**Step 9.** Since BFGE is a parallelogram about the diameter of GLMN, the gnomon composed of the remaining pieces of GLMN (that is, GLMN minus BFGE) equals the complement areas. Specifically, the gnomon equals GLMN minus BFGE [CN3]. But GLMN equals KH (Step 7), and KH equals BFGE + C (Step 4). Therefore the gnomon equals (BFGE + C) minus BFGE, which equals C [CN3].\n\n**Step 10.** Now, since AE equals EB (Step 2), and BFGE is built on EB, consider the full figure. The parallelogram applied to the whole line AB in the same angular orientation is composed of the parallelogram on AE (which is the complement to BFGE about the diameter) together with BFGE and the remaining parts of GLMN. More precisely, since AE = EB and EG is a side of the parallelogram BFGE, produce the construction so that the parallelogram on the whole line AB (in the direction of GF) is the parallelogram AEMF (where M lies on GF produced). The gnomon — the region GLMN minus BFGE — can be rearranged as the parallelogram applied to AB. Specifically, the parallelogram applied to AB equals the gnomon [1.43, 1.36], which equals C (Step 9).\n\n**Step 11.** The excess by which this applied parallelogram exceeds the line AB is the parallelogram on the extension of AB beyond B, which is part of GLMN. Since GLMN is similar to D [6.24], and the excess parallelogram is similar to the whole GLMN (being a parallelogram about the diameter of GLMN) [6.24], the excess is similar to D.\n\n**Step 12.** Therefore, to the given straight line AB, a parallelogram has been applied equal to the given rectilineal figure C and exceeding by a parallelogrammic figure similar to the given parallelogram D. This is what was required to be done.\n\n**USED:** 1.10, 1.36, 1.43, 1.45, 6.18, 6.21, 6.24, 6.25, 6.26, CN3, CN5, D6.1, P1, P2\n**Human refs (from References field):** 1.36, 1.43, 6.21, 6.24, 6.25, 6.26\n**Jaccard:** 0.429 — AI adds ['1.10', '1.45', '6.18', 'CN3', 'CN5', 'D6.1', 'P1', 'P2']",
+  "ai_used": [
+    "1.10",
+    "1.36",
+    "1.43",
+    "1.45",
+    "6.18",
+    "6.21",
+    "6.24",
+    "6.25",
+    "6.26",
+    "CN3",
+    "CN5",
+    "D6.1",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.36",
+    "1.43",
+    "6.21",
+    "6.24",
+    "6.25",
+    "6.26"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.45",
+    "6.18",
+    "CN3",
+    "CN5",
+    "D6.1",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, C the given rectilineal figure, and D the given parallelogram to which the excess is to be similar. It is required to apply to AB a parallelogram equal t"
+}

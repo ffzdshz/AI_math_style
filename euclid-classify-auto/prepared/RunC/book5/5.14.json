@@ -1,0 +1,30 @@
+{
+  "proposition": "5.14",
+  "book": 5,
+  "statement": "If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.",
+  "heath_proof": "For let a first magnitude A have the same ratio to a second B as a third C has to a fourth D; and let A be greater than C; I say that B is also greater than D. For, since A is greater than C, and B is another, chance, magnitude, therefore A has to B a greater ratio than C has to B. [V. 8] But, as A is to B, so is C to D; therefore C has also to D a greater ratio than C has to B. [V. 13]  But that to which the same has a greater ratio is less; [V. 10] therefore D is less than B; so that B is greater than D.  Similarly we can prove that, if A be equal to C, B will also be equal to D; and, if A be less than C, B will also be less than D.",
+  "ai_proof_text": "5.14\n**Statement:** If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.\n\n**Step 1.** Let A, B, C, D be magnitudes such that A : B = C : D (D5.5). We must show: if A > C then B > D; if A = C then B = D; if A < C then B < D.\n\n**Step 2.** Case 1: Suppose A > C. Since A and C are unequal magnitudes both having a ratio to B, and A is the greater, by 5.8 (the greater has to the same a greater ratio than the less has), A : B > C : B.\n\n**Step 3.** By hypothesis, A : B = C : D. By the symmetry of the definition of same ratio (D5.5), C : D = A : B. By 5.13 (if a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have to the second a greater ratio than the fifth to the sixth), since C : D = A : B and A : B > C : B, we conclude C : D > C : B.\n\n**Step 4.** By 5.10 (that to which the same has a greater ratio is less), since C has a greater ratio to D than it has to B, we have D < B, that is, B > D.\n\n**Step 5.** Case 2: Suppose A = C. By 5.7 (equal magnitudes have to the same the same ratio), since A = C and both have a ratio to B, we have A : B = C : B.\n\n**Step 6.** By hypothesis, A : B = C : D. By 5.11 (ratios which are the same with the same ratio are also the same with one another), since C : B = A : B (from Step 5) and A : B = C : D (given), we conclude C : B = C : D.\n\n**Step 7.** By 5.9 (magnitudes to which the same has the same ratio are equal), since C : B = C : D, we have B = D.\n\n**Step 8.** Case 3: Suppose A < C. Then C > A. By 5.8, since C is greater than A and both have a ratio to B, C : B > A : B.\n\n**Step 9.** By hypothesis, A : B = C : D. By 5.13, since A : B = C : D and C : B > A : B, we conclude C : B > C : D.\n\n**Step 10.** By 5.10, since C has a greater ratio to B than it has to D, we have B < D.\n\n**Step 11.** Therefore, in all three cases: if A > C then B > D; if A = C then B = D; if A < C then B < D. Q.E.D.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9, D5.5\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.429 — AI adds ['5.11', '5.7', '5.9', 'D5.5']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let A, B, C, D be magnitudes such that A : B = C : D (D5.5). We must show: if A > C then B > D; if A = C then B = D; if A < C then B < D.  **Step 2.** Case 1: Suppose A > C. Since A and C "
+}

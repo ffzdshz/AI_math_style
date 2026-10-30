@@ -1,0 +1,34 @@
+{
+  "proposition": "8.12",
+  "book": 8,
+  "statement": "Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.",
+  "heath_proof": "Let A, B be cube numbers, and let C be the side of A, and D of B; I say that between A, B there are two mean proportional numbers, and A has to B the ratio triplicate of that which C has to D. For let C by multiplying itself make E, and by multiplying D let it make F; let D by multiplying itself make G, and let the numbers C, D by multiplying F make H, K respectively. Now, since A is a cube, and C its side, and C by multiplying itself has made E, therefore C by multiplying itself has made E and by multiplying E has made A. For the same reason also D by multiplying itself has made G and by multiplying G has made B. And, since C by multiplying the numbers C, D has made E, F respectively, therefore, as C is to D, so is E to F. [VII. 17] For the same reason also, as C is to D, so is F to G. [VII. 18]  Again, since C by multiplying the numbers E, F has made A, H respectively, therefore, as E is to F, so is A to H. [VII. 17] But, as E is to F, so is C to D. Therefore also, as C is to D, so is A to H. Again, since the numbers C, D by multiplying F have made H, K respectively, therefore, as C is to D, so is H to K. [VII. 18] Again, since D by multiplying each of the numbers F, G has made K, B respectively, therefore, as F is to G, so is K to B. [VII. 17] But, as F is to G, so is C to D; therefore also, as C is to D, so is A to H, H to K, and K to B. Therefore H, K are two mean proportionals between A, B. I say next that A also has to B the ratio triplicate of that which C has to D. For, since A, H, K, B are four numbers in proportion, therefore A has to B the ratio triplicate of that which A has to H. [V. Def. 10] But, as A is to H, so is C to D; therefore A also has to B the ratio triplicate of that which C has to D.",
+  "ai_proof_text": "8.12\n**Statement:** Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.\n\n**Step 1.** Let a and b be numbers, and let a^3 and b^3 be their respective cubes, so that a^3 = a * a * a and b^3 = b * b * b [D7.19].\n\n**Step 2.** Let a multiply itself to produce a^2, and let b multiply itself to produce b^2 [D7.18, D7.15]. Let a multiply b to produce a*b [D7.15].\n\n**Step 3.** Since a^2 and b^2 are square numbers, by 8.11 there is one mean proportional number between them, namely a*b, and a^2 : a*b = a*b : b^2. That is, a^2, a*b, b^2 are in continued proportion.\n\n**Step 4.** Now let a multiply each of a^2, a*b, and b^2 to produce a^3, a^2*b, and a*b^2 respectively [D7.15]. Since the single number a multiplied the two numbers a^2 and a*b, by 7.17 we have a^3 : a^2*b = a^2 : a*b. Likewise, since a multiplied a*b and b^2, by 7.17 we have a^2*b : a*b^2 = a*b : b^2.\n\n**Step 5.** But from Step 3, a^2 : a*b = a*b : b^2. Therefore a^3 : a^2*b = a^2 : a*b = a*b : b^2 = a^2*b : a*b^2. Hence a^3 : a^2*b = a^2*b : a*b^2 [CN1].\n\n**Step 6.** Now let b multiply each of a^2, a*b, and b^2 to produce b*a^2, b*a*b, and b^3 respectively [D7.15]. By the commutativity of multiplication [7.16], b*a^2 = a^2*b and b*(a*b) = a*b^2. So b multiplying a*b and b^2 produces a*b^2 and b^3.\n\n**Step 7.** Since the single number b multiplied a*b and b^2, by 7.17 we have a*b^2 : b^3 = a*b : b^2. From Step 4, a^2*b : a*b^2 = a*b : b^2. Therefore a^2*b : a*b^2 = a*b^2 : b^3 [CN1].\n\n**Step 8.** Combining Steps 5 and 7: a^3 : a^2*b = a^2*b : a*b^2 = a*b^2 : b^3. Therefore a^2*b and a*b^2 are two mean proportional numbers between the cubes a^3 and b^3.\n\n**Step 9.** For the triplicate ratio: since a^3 = a * a^2 and a^2*b = b * a^2 (using 7.16 to write a^2*b = b * a^2), and both a and b have multiplied the same number a^2, by 7.18 we have a^3 : a^2*b = a : b. That is, the ratio of the first term to the second in the continued proportion equals the ratio of side a to side b.\n\n**Step 10.** Since a^3, a^2*b, a*b^2, b^3 are four numbers in continued proportion, by D5.10 the first has to the fourth the triplicate ratio of that which the first has to the second. That is, a^3 has to b^3 the triplicate ratio of a to b, which is the ratio of the side to the side.\n\n**Step 11.** Therefore, between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side. Q.E.D.\n\n**USED:** 7.16, 7.17, 7.18, 8.11, CN1, D5.10, D7.15, D7.18, D7.19\n**Human refs (from References field):** 7.17, 7.18, D5.10\n**Jaccard:** 0.333 — AI adds ['7.16', '8.11', 'CN1', 'D7.15', 'D7.18', 'D7.19']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.18",
+    "8.11",
+    "CN1",
+    "D5.10",
+    "D7.15",
+    "D7.18",
+    "D7.19"
+  ],
+  "heath_refs": [
+    "7.17",
+    "7.18",
+    "D5.10"
+  ],
+  "ai_only": [
+    "7.16",
+    "8.11",
+    "CN1",
+    "D7.15",
+    "D7.18",
+    "D7.19"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let a and b be numbers, and let a^3 and b^3 be their respective cubes, so that a^3 = a * a * a and b^3 = b * b * b [D7.19].  **Step 2.** Let a multiply itself to produce a^2, and let b mul"
+}

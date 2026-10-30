@@ -1,0 +1,13 @@
+{
+  "proposition": "1.45",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as G (Granularity difference). Both proofs share the same logical backbone: divide the rectilineal figure into triangles, construct parallelograms via I.42 and I.44, prove collinearity of corresponding sides using I.14 and I.29, establish parallelism using I.34 and I.30, and conclude the combined figure is a parallelogram equal to the original figure. The AI proof handles a pentagon (three triangles, three parallelograms) while Heath handles a quadrilateral (two triangles, two parallelograms), but this is simply a matter of generality in the example, not a structural difference. The citation differences are at the granularity level: ai_only contains D1.22 (definition of parallelogram, used explicitly by the AI but implicitly by Heath) and P1 (postulate for joining lines, again explicit vs implicit), while heath_only contains 1.33 (used by Heath to show the final figure is a parallelogram, where the AI achieves the same conclusion via 1.30 and D1.22) and CN1 (used explicitly by Heath but implicitly by the AI). The key intermediate conclusions -- collinearity of sides, parallelism of opposite sides, the combined figure being a parallelogram, and area equality -- are the same in both proofs, making this a same-backbone, different-depth situation.",
+  "jaccard": 0.636,
+  "ai_citations": "1.14|1.29|1.30|1.34|1.42|1.44|CN2|D1.22|P1",
+  "heath_citations": "1.14|1.29|1.30|1.33|1.34|1.42|1.44|CN1|CN2",
+  "ai_only": "D1.22|P1",
+  "heath_only": "1.33|CN1",
+  "audit_record": ""
+}

@@ -1,0 +1,30 @@
+{
+  "proposition": "11.21",
+  "book": 11,
+  "statement": "Any solid angle is contained by plane angles less than four right angles.",
+  "heath_proof": "Let the angle at A be a solid angle contained by the plane angles BAC, CAD, DAB; I say that the angles BAC, CAD, DAB are less than four right angles. For let points B, C, D be taken at random on the straight lines AB, AC, AD respectively, and let BC, CD, DB be joined. Now, since the solid angle at B is contained by the three plane angles CBA, ABD, CBD, any two are greater than the remaining one; [XI. 20] therefore the angles CBA, ABD are greater than the angle CBD. For the same reason the angles BCA, ACD are also greater than the angle BCD, and the angles CDA, ADB are greater than the angle CDB; therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than the three angles CBD, BCD, CDB. But the three angles CBD, BDC, BCD are equal to two right angles; [I. 32] therefore the six angles CBA, ABD, BCA, ACD, CDA, ADB are greater than two right angles. And, since the three angles of each of the triangles ABC, ACD, ADB are equal to two right angles, therefore the nine angles of the three triangles, the angles CBA, ACB, BAC, ACD, CDA, CAD, ADB, DBA, BAD are equal to six right angles; and of them the six angles ABC, BCA, ACD, CDA, ADB, DBA are greater than two right angles; therefore the remaining three angles BAC, CAD, DAB containing the solid angle are less than four right angles.",
+  "ai_proof_text": "11.21\n**Statement:** Any solid angle is contained by plane angles less than four right angles.\n\n**Step 1.** Let the solid angle at vertex A be contained by the plane angles BAC, CAD, DAE, ..., EAB, where there are n such face angles (n >= 3), and the edges AB, AC, AD, AE, ... emanate from A. We must show that the sum of these plane angles is less than four right angles.\n\n**Step 2.** Let the edges AB, AC, AD, AE, ..., be cut by a plane, producing the convex polygon BCDE... with n sides as the cross-section [P1]. The edges AB, AC, AD, etc. meet this plane at the points B, C, D, E, etc.\n\n**Step 3.** Join consecutive vertices of the polygon to A, forming n triangles: triangle ABC, triangle ACD, triangle ADE, ..., triangle AEB [P1]. Each triangle lies in a plane [11.2].\n\n**Step 4.** By 1.32, the sum of the three angles in each triangle equals two right angles. Since there are n such triangles, the total sum of all their angles is 2n right angles [CN2].\n\n**Step 5.** The angles of these n triangles can be partitioned into two groups: (i) the angles at vertex A, which are precisely the plane angles BAC, CAD, DAE, ..., EAB constituting the solid angle, and (ii) the remaining base angles at the polygon vertices B, C, D, E, .... Therefore the sum of the face angles at A plus the sum of all base angles equals 2n right angles [CN2].\n\n**Step 6.** At each polygon vertex, say B, consider the two base angles from the adjacent triangles: angle ABE (from triangle AEB) and angle ABC (from triangle ABC). The line AB meets the plane of the polygon at B, and A is above the plane, so at B the three edges BA, BC, BE form a solid angle, with the plane angle EBC being the interior angle of the polygon at B. By 11.20, any two of the three plane angles forming this solid angle are together greater than the remaining one, so angle ABE + angle ABC > angle EBC.\n\n**Step 7.** Applying Step 6 at every vertex of the polygon, we obtain that the sum of all base angles from the n triangles is greater than the sum of all interior angles of the polygon BCDE... [CN2].\n\n**Step 8.** The polygon BCDE... has n sides. By dividing this polygon into (n - 2) triangles from one vertex [P1], and applying 1.32 to each of these triangles, the sum of the interior angles of the polygon equals 2(n - 2) right angles, that is, (2n - 4) right angles [CN2].\n\n**Step 9.** From Step 7, the sum of all base angles > (2n - 4) right angles.\n\n**Step 10.** From Step 5, the sum of the face angles at A = 2n right angles minus the sum of all base angles. Since the sum of all base angles > (2n - 4) right angles (Step 9), and both quantities are positive, subtracting a larger quantity yields a smaller result: the sum of the face angles at A < 2n right angles - (2n - 4) right angles = 4 right angles [CN3, CN5].\n\n**Step 11.** Therefore any solid angle is contained by plane angles whose sum is less than four right angles. Q.E.D.\n\n**USED:** 1.32, 11.2, 11.20, CN2, CN3, CN5, P1\n**Human refs (from References field):** 1.32, 11.20\n**Jaccard:** 0.286 — AI adds ['11.2', 'CN2', 'CN3', 'CN5', 'P1']",
+  "ai_used": [
+    "1.32",
+    "11.2",
+    "11.20",
+    "CN2",
+    "CN3",
+    "CN5",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "11.20"
+  ],
+  "ai_only": [
+    "11.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let the solid angle at vertex A be contained by the plane angles BAC, CAD, DAE, ..., EAB, where there are n such face angles (n >= 3), and the edges AB, AC, AD, AE, ... emanate from A. We "
+}

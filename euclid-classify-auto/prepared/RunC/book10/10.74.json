@@ -1,0 +1,47 @@
+{
+  "proposition": "10.74",
+  "book": 10,
+  "statement": "If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a rational rectangle, the remainder is irrational. And let it be called a first apotome of a medial straight line.",
+  "heath_proof": "For from the medial straight line AB let there be subtracted the medial straight line BC which is commensurable with AB in square only and with AB makes the rectangle AB, BC rational; I say that the remainder AC is irrational; and let it be called a first apotome of a medial straight line. For, since AB, BC are medial, the squares on AB, BC are also medial. But twice the rectangle AB, BC is rational; therefore the squares on AB, BC are incommensurable with twice the rectangle AB, BC; therefore twice the rectangle AB, BC is also incommensurable with the remainder, the square on AC, [Cf. II. 7] since, if the whole is incommensurable with one of the magnitudes, the original magnitudes will also be incommensurable. [X. 16] But twice the rectangle AB, BC is rational; therefore the square on AC is irrational; therefore AC is irrational. [X. Def. 4] And let it be called a first apotome of a medial straight line.",
+  "ai_proof_text": "10.74\n**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a rational rectangle, the remainder is irrational. And let it be called a first apotome of a medial straight line.\n\n**Step 1.** Let AB be a medial straight line, and from AB let BC be subtracted, where BC is also medial, AB and BC are commensurable in square only, and the rectangle contained by AB and BC is rational. We are to show that the remainder AC is irrational.\n\n**Step 2.** Set out a rational straight line rho. Apply to rho a rectangle equal to the square on AB, producing breadth p1, so that rho * p1 = sq(AB). Since AB is medial, sq(AB) is a medial area [D10.1.4]. By 10.22, p1 is rational and incommensurable in length with rho.\n\n**Step 3.** Similarly, apply to rho a rectangle equal to the square on BC, producing breadth p2, so that rho * p2 = sq(BC). Since BC is medial, sq(BC) is a medial area [D10.1.4]. By 10.22, p2 is rational and incommensurable in length with rho.\n\n**Step 4.** Since AB and BC are commensurable in square, sq(AB) and sq(BC) are commensurable areas [D10.1.2]. Now rho * p1 : rho * p2 = p1 : p2 [6.1]. Since rho * p1 (= sq(AB)) is commensurable with rho * p2 (= sq(BC)), it follows that p1 is commensurable in length with p2 [10.11].\n\n**Step 5.** Since p1 and p2 are commensurable magnitudes, their sum p1 + p2 is commensurable with each of them [10.15]. Since p1 is rational, p1 + p2 is commensurable with a rational line, so p1 + p2 is rational [D10.1.3]. Since p1 is incommensurable in length with rho, and p1 + p2 is commensurable with p1, it follows that p1 + p2 is incommensurable in length with rho [10.13].\n\n**Step 6.** Now the rectangle AB,BC is rational by hypothesis. Since 2 : 1 is a ratio of numbers, 2 * rect(AB,BC) is commensurable with rect(AB,BC) [10.6], and therefore 2 * rect(AB,BC) is also a rational area [D10.1.4]. Apply 2 * rect(AB,BC) to rho, producing breadth q. By 10.20, q is rational and commensurable in length with rho.\n\n**Step 7.** Since p1 + p2 is incommensurable in length with rho (Step 5) and q is commensurable in length with rho (Step 6), it follows that p1 + p2 is incommensurable in length with q [10.13].\n\n**Step 8.** Both p1 + p2 and q are rational straight lines. Since p1 + p2 is commensurable with rho in square [D10.1.3] and q is commensurable with rho in square [D10.1.3], it follows that p1 + p2 and q are commensurable in square [10.12]. Combined with their incommensurability in length (Step 7), p1 + p2 and q are commensurable in square only.\n\n**Step 9.** By 2.7, sq(AB) + sq(BC) = sq(AC) + 2 * rect(AB,BC). Since sq(AC) is a positive area, sq(AB) + sq(BC) is greater than 2 * rect(AB,BC) [CN5]. Therefore rho * (p1 + p2) > rho * q, which gives p1 + p2 > q.\n\n**Step 10.** Since p1 + p2 and q are rational straight lines commensurable in square only, and p1 + p2 > q, by 10.73 the remainder (p1 + p2) - q is irrational; it is an apotome.\n\n**Step 11.** From Step 9, sq(AC) = sq(AB) + sq(BC) - 2 * rect(AB,BC) = rho * (p1 + p2) - rho * q = rho * ((p1 + p2) - q). So the square on AC, when applied to the rational line rho, produces as breadth the apotome (p1 + p2) - q, which is irrational.\n\n**Step 12.** If AC were rational, then sq(AC) would be a rational area [D10.1.3, D10.1.4], and by 10.20 the breadth produced by applying sq(AC) to the rational line rho would be rational and commensurable in length with rho. But the breadth is an apotome, which is irrational. This is a contradiction, so AC is not rational. Therefore AC is irrational [D10.1.3].\n\n**Step 13.** Let AC be called a first apotome of a medial straight line. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.20, 10.22, 10.6, 10.73, 2.7, 6.1, CN5, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.16, 2.7, D10.1.4\n**Jaccard:** 0.133 — AI adds ['10.11', '10.12', '10.13', '10.15', '10.20', '10.22', '10.6', '10.73', '6.1', 'CN5', 'D10.1.2', 'D10.1.3']; Human adds ['10.16']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.6",
+    "10.73",
+    "2.7",
+    "6.1",
+    "CN5",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.16",
+    "2.7",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.6",
+    "10.73",
+    "6.1",
+    "CN5",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.16"
+  ],
+  "jaccard": 0.133,
+  "proof_summary": "**Step 1.** Let AB be a medial straight line, and from AB let BC be subtracted, where BC is also medial, AB and BC are commensurable in square only, and the rectangle contained by AB and BC is rationa"
+}

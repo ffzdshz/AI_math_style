@@ -1,0 +1,38 @@
+{
+  "proposition": "3.1",
+  "book": 3,
+  "statement": "To find the centre of a given circle.",
+  "heath_proof": "Let ABC be the given circle; thus it is required to find the centre of the circle ABC. Let a straight line AB be drawnthrough it at random, and let it be bisected at the point D; from D let DC be drawn at right angles to AB and let it be drawn through to E; let CE be bisected at F;I say that F is the centre of the circle ABC. For suppose it is not, but, if possible, let G be the centre, and let GA, GD, GB be joined. Then, since AD is equal to DB, and DG is common, the two sides AD, DG are equal to the two sides BD, DG respectively; and the base GA is equal to the base GB, for they areradii; therefore the angle ADG is equal to the angle GDB. [I. 8]  But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right; [I. Def. 10]therefore the angle GDB is right. But the angle FDB is also right; therefore the angle FDB is equal to the angle GDB, the greater to the less: which is impossible. Therefore G is not the centre of the circle ABC. Similarly we can prove that neither is any other point except F. Therefore the point F is the centre of the circle ABC.",
+  "ai_proof_text": "3.1\n**Statement:** To find the centre of a given circle.\n\n**Step 1.** Let ABC be the given circle. Take any two points A, B on its circumference and join the straight line AB (P1).\n\n**Step 2.** Bisect AB at the point D (1.10), so that AD = DB.\n\n**Step 3.** From D draw DC at right angles to AB (1.11), C being the point in which this perpendicular meets the circumference; then the angles ADC, BDC are right (D1.10). Produce CD in a straight line beyond D to meet the circumference again at E (P2). Thus CE is a straight line through D, at right angles to AB, terminated at both ends by the circumference, with D lying between C and E.\n\n**Step 4.** Bisect CE at the point F (1.10), so that CF = FE. I say that F is the centre of the circle ABC.\n\n**Step 5.** For suppose it is not. The circle has a centre (D1.16); let G be the centre, G being a point other than F.\n\n**Step 6.** G lies on neither of the straight lines AB, CE. For let XY be either of these two chords and M its point of bisection (M = D for AB, M = F for CE), so that XM = MY, and suppose G lies on XY. Since G is the centre, G lies within the circle (D1.15), hence between X and Y; and GX = GY, both being radii (D1.15). If G were not M, G would lie either between X and M or between M and Y; say between X and M. Then GX is a part of MX and MY is a part of GY, so GX < MX and MY < GY (CN5); but MX = MY; hence GX < GY, contrary to GX = GY. Therefore G = M. Applied to CE this gives G = F, contrary to Step 5; so G is not on CE. Applied to AB it would give G = D, and D lies on CE, which has just been excluded; so G is not on AB either.\n\n**Step 7.** Join GA, GD, GB (P1). Since G is not on AB, ADG and BDG are triangles.\n\n**Step 8.** In the triangles ADG, BDG: AD = DB (Step 2), DG is common, and the base GA equals the base GB, both being straight lines drawn from the centre G to the circumference (D1.15). Therefore the angle ADG, contained by AD, DG, equals the angle BDG, contained by BD, DG (1.8).\n\n**Step 9.** Thus the straight line DG, set up on the straight line AB, makes the adjacent angles ADG, BDG equal to one another; therefore each of them is right (D1.10). In particular the angle GDB is right.\n\n**Step 10.** Since D lies between C and E, the points C, E are on opposite sides of AB; and G, not lying on AB, is on one side of it. Let H be that one of the points C, E which lies on the same side of AB as G. The angle HDB is right: if H = C this is Step 3; if H = E, the angle EDB is vertically opposite to the angle CDA, the straight lines AB and CE cutting one another at D, so that the angle EDB equals the angle CDA (1.15), and the angle CDA is right (Step 3).\n\n**Step 11.** The angles GDB, HDB being both right, the angle GDB equals the angle HDB (P4). But DG and DH are distinct straight lines drawn from D on the same side of AB (G not lying on CE, Step 6), so one of the angles GDB, HDB is a part of the other; hence a part would be equal to the whole, which is impossible (CN5).\n\n**Step 12.** Therefore G is not the centre of the circle ABC. In the same way it is shown that no point other than F is the centre. Since the circle has a centre (D1.16), F is the centre of the given circle ABC; which was to be found.\n\nNote on path: the right angle EDB in Step 10 is obtained from vertical angles (1.15) rather than from 1.13, since 1.15 gives the equality directly without a subtraction step.\n\n**USED:** 1.10, 1.11, 1.15, 1.8, CN5, D1.10, D1.15, D1.16, P1, P2, P4\n**Human refs (from References field):** 1.8, D1.10\n**Jaccard:** 0.182 — AI adds ['1.10', '1.11', '1.15', 'CN5', 'D1.15', 'D1.16', 'P1', 'P2', 'P4']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.15",
+    "1.8",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.16",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.8",
+    "D1.10"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.15",
+    "CN5",
+    "D1.15",
+    "D1.16",
+    "P1",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.182,
+  "proof_summary": "**Step 1.** Let ABC be the given circle. Take any two points A, B on its circumference and join the straight line AB (P1).  **Step 2.** Bisect AB at the point D (1.10), so that AD = DB.  **Step 3.** F"
+}

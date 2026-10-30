@@ -1,0 +1,37 @@
+{
+  "proposition": "6.4",
+  "book": 6,
+  "statement": "In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.",
+  "heath_proof": "Let ABC, DCE be equiangular triangles having the angle ABC equal to the angle DCE, the angle BAC to the angle CDE, and further the angle ACB to the angle CED; I say that in the triangles ABC, DCE the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles. For let BC be placed in a straight line with CE. Then, since the angles ABC, ACB are less than two right angles, [I. 17] and the angle ACB is equal to the angle DEC, therefore the angles ABC, DEC are less than two right angles; therefore BA, ED, when produced, will meet. [I. Post. 5] Let them be produced and meet at F. Now, since the angle DCE is equal to the angle ABC, BF is parallel to CD. [I. 28]  Again, since the angle ACB is equal to the angle DEC, AC is parallel to FE. [I. 28]  Therefore FACD is a parallelogram; therefore FA is equal to DC, and AC to FD. [I. 34] And, since AC has been drawn parallel to FE, one side of the triangle FBE, therefore, as BA is to AF, so is BC to CE. [VI. 2] But AF is equal to CD; therefore, as BA is to CD, so is BC to CE, and alternately, as AB is to BC, so is DC to CE. [V. 16] Again, since CD is parallel to BF, therefore, as BC is to CE, so is FD to DE. [VI. 2] But FD is equal to AC; therefore, as BC is to CE, so is AC to DE, and alternately, as BC is to CA, so is CE to ED. [V. 16] Since then it was proved that, as AB is to BC, so is DC to CE, and, as BC is to CA, so is CE to ED; therefore, ex aequali, as BA is to AC, so is CD to DE. [V. 22]",
+  "ai_proof_text": "6.4\n**Statement:** In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.\n\n**Step 1.** Let ABC and DCE be equiangular triangles with angle ABC = angle DCE, angle BAC = angle CDE, and angle ACB = angle DEC. We wish to show that the sides about the equal angles are proportional, with corresponding sides being those that subtend equal angles.\n\n**Step 2.** Place the triangles so that BC is in a straight line with CE, with C between B and E, so that BCE is a straight line.\n\n**Step 3.** Since the angles of triangle ABC satisfy angle ABC + angle ACB < two right angles [1.17], and angle ACB = angle DEC by hypothesis, we have angle ABC + angle DEC < two right angles. Produce BA beyond A and ED beyond D [P2]. Since the interior angles angle ABC and angle DEC on the same side of transversal BE sum to less than two right angles, the lines BA produced and ED produced must meet on that side [P5]. Let them meet at F, forming triangle BFE with C on side BE.\n\n**Step 4.** We now show BF is parallel to CD. Since BCE is a straight line, angle BCD + angle DCE = two right angles [1.13]. Since angle ABC = angle DCE by hypothesis, angle FBC = angle ABC (as F lies on BA produced), and so angle FBC + angle BCD = angle DCE + angle BCD = two right angles. Since the co-interior angles FBC and BCD on transversal BE sum to two right angles, BF is parallel to CD [1.28].\n\n**Step 5.** We now show AC is parallel to FE. Since BCE is a straight line, angle ACB + angle ACE = two right angles [1.13]. Since angle ACB = angle DEC by hypothesis, and angle FEC = angle DEC (as F lies on ED produced), we have angle ACE + angle FEC = two right angles. Since the co-interior angles ACE and FEC on transversal BE sum to two right angles, AC is parallel to FE [1.28].\n\n**Step 6.** Since D lies on segment FE (as F is on line ED produced beyond D) and A lies on segment BF (as F is on line BA produced beyond A), we apply Proposition 6.2 to triangle BFE. Line CD is parallel to side BF and meets side BE at C and side FE at D. By 6.2, BC : CE = FD : DE.\n\n**Step 7.** Again in triangle BFE, line AC is parallel to side FE and meets side BF at A and side BE at C. By 6.2, BA : AF = BC : CE.\n\n**Step 8.** From Steps 6 and 7, the ratios BA : AF and FD : DE are each equal to BC : CE. Therefore BA : AF = FD : DE [5.11].\n\n**Step 9.** Now, since AC is parallel to FD (Step 5, as FD is part of line FE) and AF is parallel to CD (Step 4, as AF is part of line BF), the quadrilateral ACDF has both pairs of opposite sides parallel, forming a parallelogram. By 1.34, the opposite sides are equal: AF = CD and AC = FD.\n\n**Step 10.** Substituting the equalities from Step 9 into the proportions: since BA : AF = BC : CE and AF = CD, we obtain BA : CD = BC : CE. Since FD : DE = BC : CE and FD = AC, we obtain AC : DE = BC : CE.\n\n**Step 11.** Therefore BA : CD = BC : CE = AC : DE. That is, in the equiangular triangles ABC and DCE, the sides about the equal angles are proportional. Moreover, the corresponding sides which subtend equal angles are proportional: BC and CE subtend the equal angles BAC and CDE; BA and CD subtend the equal angles ACB and DEC; and AC and DE subtend the equal angles ABC and DCE. This is what was to be proved.\n\n**USED:** 1.13, 1.17, 1.28, 1.34, 5.11, 6.2, P2, P5\n**Human refs (from References field):** 1.17, 1.28, 1.34, 5.16, 5.22, 6.2, P5\n**Jaccard:** 0.500 — AI adds ['1.13', '5.11', 'P2']; Human adds ['5.16', '5.22']",
+  "ai_used": [
+    "1.13",
+    "1.17",
+    "1.28",
+    "1.34",
+    "5.11",
+    "6.2",
+    "P2",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.17",
+    "1.28",
+    "1.34",
+    "5.16",
+    "5.22",
+    "6.2",
+    "P5"
+  ],
+  "ai_only": [
+    "1.13",
+    "5.11",
+    "P2"
+  ],
+  "heath_only": [
+    "5.16",
+    "5.22"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let ABC and DCE be equiangular triangles with angle ABC = angle DCE, angle BAC = angle CDE, and angle ACB = angle DEC. We wish to show that the sides about the equal angles are proportiona"
+}

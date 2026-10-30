@@ -1,0 +1,51 @@
+{
+  "proposition": "4.9",
+  "run": "Fable",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "E is the intersection of diagonals AC and BD of square ABCD; E lies on both AC and BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "ABCD is equilateral (DA = AB = BC = CD) and right-angled (all angles are right angles)",
+      "type": "figure_property"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles DAB and CBA are congruent by SAS; angle ABD = angle BAC; since E lies on BD and AC, angle EBA = angle EAB",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle EAB has equal base angles EAB and EBA, so EA = EB by I.6",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle EBC has equal base angles ECB and EBC, so EC = EB by I.6",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle ECD has equal base angles EDC and ECD, so ED = EC by I.6",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "EA = EB = EC = ED by transitivity",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Steps 10-12",
+      "claim": "Circle centered at E with radius EA passes through all four vertices A, B, C, D",
+      "type": "circle_membership"
+    }
+  ],
+  "configuration_map": "Point E is the intersection of diagonals AC and BD of square ABCD. E lies at the center of the square, interior to it, and equidistant from all four vertices. E is not on any side of the square, so triangles EAB, EBC, ECD, and EDA are all well-defined non-degenerate triangles. The diagonals divide the square into four congruent right isosceles triangles. No point changes position or takes on contradictory roles across steps.",
+  "pass_reason": "The proof makes straightforward spatial claims about the intersection of diagonals of a square and uses SAS congruence (I.4) and isosceles triangle properties (I.6) in a standard, correct manner. No angle decomposition is performed, avoiding the primary error pattern. All spatial claims — E on both diagonals, the SAS congruences of adjacent triangles, the angle re-labelings, and the equal distance conclusions — are mutually consistent throughout."
+}

@@ -1,0 +1,41 @@
+{
+  "proposition": "6.6",
+  "run": "RunB",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G is placed on ray DE from D with DG = AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "H is placed on ray DF from D with DH = AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle GDH is the same as angle EDF since G lies on ray DE and H lies on ray DF",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "GH is parallel to EF because DG:DE = DH:DF (sides cut proportionally)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Transversal DE crosses parallel lines GH and EF, so angle DGH = angle DEF by I.29",
+      "type": "angle_equality_from_parallels"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Transversal DF crosses parallel lines GH and EF, so angle DHG = angle DFE by I.29",
+      "type": "angle_equality_from_parallels"
+    }
+  ],
+  "configuration_map": "Triangle DEF with vertex D at origin. G lies on ray DE from D (at distance AB from D). H lies on ray DF from D (at distance AC from D). Since G and H lie on the same rays from D as E and F respectively, angle GDH is identical to angle EDF. The proportionality DG:DE = DH:DF means GH cuts the sides (or extensions) of triangle DEF proportionally from vertex D, making GH parallel to EF. Whether G falls between D and E (when AB less than DE) or beyond E (when AB greater than DE), the angle equalities from I.29 hold: angle DGH = angle DEF and angle DHG = angle DFE. Verified by coordinate computation in both the internal and external cases.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places G on ray DE and H on ray DF from common vertex D, making angle GDH identical to angle EDF. The proportional cutting yields GH parallel to EF, and I.29 correctly transfers angles regardless of whether G/H fall between D and E/F or beyond them. Coordinate verification confirms angle DGH = angle DEF and angle DHG = angle DFE in both configurations. No angle decomposition issues or interior/exterior contradictions are present."
+}

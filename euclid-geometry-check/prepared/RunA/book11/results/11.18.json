@@ -1,0 +1,51 @@
+{
+  "proposition": "11.18",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is perpendicular to reference plane P, meeting it at point A; Q is a plane passing through AB",
+      "type": "perpendicularity_and_plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CE is the common section (straight line) of planes P and Q, passing through A; CE lies in both P and Q",
+      "type": "plane_intersection"
+    },
+    {
+      "step": "Step 3",
+      "claim": "F is a point on CE distinct from A; AG is drawn in plane P perpendicular to CE at A",
+      "type": "construction_in_plane"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB is perpendicular to CE at A (since AB perp P and CE lies in P meeting AB at A)",
+      "type": "perpendicularity_from_plane_perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AB is perpendicular to AG at A (since AB perp P and AG lies in P meeting AB at A)",
+      "type": "perpendicularity_from_plane_perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AG is perpendicular to both CE and AB; CE and AB are two distinct lines in plane Q meeting at A",
+      "type": "perpendicularity_and_plane_membership"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AG is perpendicular to plane Q (by 11.4, since AG perp to two intersecting lines AB and CE in Q)",
+      "type": "line_perpendicular_to_plane"
+    },
+    {
+      "step": "Step 8",
+      "claim": "AG lies in P, is perpendicular to common section CE, and is perpendicular to Q; therefore P perp Q by D11.4",
+      "type": "plane_perpendicularity"
+    }
+  ],
+  "configuration_map": "Point A: foot of perpendicular AB on plane P; lies in both planes P and Q; lies on common section CE. Line AB: perpendicular to plane P; lies in plane Q by hypothesis; meets P at A. Line CE: common section of P and Q; lies in both P and Q; passes through A. Line AG: lies in plane P only (not in Q); drawn perpendicular to CE at A; subsequently shown perpendicular to plane Q. Point F: on CE distinct from A; introduced in Step 3 but never used in subsequent reasoning (vestigial construction). The configuration is consistent: AB stands perpendicular to P at A, Q contains AB and intersects P in CE, AG extends within P away from CE at right angles, making AG perpendicular to both CE and AB (two lines determining Q), hence AG perpendicular to Q.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly uses AB perpendicular to P to derive perpendicularity of AB to both CE and AG (lines in P through A). It then correctly applies 11.4 to conclude AG is perpendicular to Q (since AG is perpendicular to two intersecting lines in Q). Finally D11.4 is correctly applied to conclude P perpendicular to Q. No angle decomposition issues arise; the proof uses only right-angle perpendicularity relationships. The unused point F is a minor style issue but introduces no spatial contradiction."
+}

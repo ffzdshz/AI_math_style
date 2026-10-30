@@ -1,0 +1,13 @@
+{
+  "proposition": "13.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides this classification. Heath's proof establishes the result through similar triangles: he shows triangle ABF is equiangular with triangle BFN (yielding rect(AB,BN) = sq(BF) via VI.4 and VI.17), then triangle KBA is equiangular with triangle KNA (yielding rect(BA,AN) = sq(AK) via VI.4 and VI.17), and combines these via II.2 to get sq(BA) = sq(BF) + sq(AK). The AI takes a fundamentally different approach: it identifies BN as a decagon side via arc midpoints, applies the Pythagorean theorem (I.47) twice to derive d^2 = 2r(r - OM), then invokes 13.9 (the golden ratio property of hexagon and decagon sides) with 6.17 to obtain r^2 = rd + d^2, and finally uses algebraic manipulation to derive s^2 = r^2 + d^2. The two proofs share only 4.15 and 6.17 out of 20 distinct citations (Jaccard = 0.10), and their key intermediate conclusions are entirely different -- similar triangles and proportionality versus Pythagorean theorem and golden ratio algebra. The AI proof is logically complete under the Q1(b) hardened standard, so this is a valid different path (D).",
+  "jaccard": 0.1,
+  "ai_citations": "1.47|1.8|13.9|2.4|3.28|3.29|3.3|4.15|6.17|CN1|CN2|CN3",
+  "heath_citations": "1.26|1.32|1.4|1.5|2.2|3.26|4.15|6.17|6.33|6.4",
+  "ai_only": "1.47|1.8|13.9|2.4|3.28|3.29|3.3|CN1|CN2|CN3",
+  "heath_only": "1.26|1.32|1.4|1.5|2.2|3.26|6.33|6.4",
+  "audit_record": ""
+}

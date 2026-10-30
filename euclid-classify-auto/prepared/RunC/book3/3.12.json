@@ -1,0 +1,26 @@
+{
+  "proposition": "3.12",
+  "book": 3,
+  "statement": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+  "heath_proof": "For let the two circles ABC, ADE touch one anotherexternally at the point A, and let the centre F of ABC, and the centre G of ADE, be taken; I say that the straight line joined from F to G will pass through the point of contact at A. For suppose it does not,but, if possible, let it pass as FCDG, and let AF, AG be joined. Then, since the point F is the centre of the circle ABC,FA is equal to FC. Again, since the point G is the centre of the circle ADE, GA is equal to GD. But FA was also proved equal to FC;therefore FA, AG are equal to FC, GD, so that the whole FG is greater than FA, AG; but it is also less [I. 20]: which is impossible. Therefore the straight line joined from F to G will not fail to pass through the point of contact at A; therefore it will pass through it.",
+  "ai_proof_text": "3.12\n**Statement:** If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.\n\n**Step 1.** Let two circles touch one another externally at the point C, let F be the centre of the first circle, and let G be the centre of the second circle. I say that the straight line FG passes through C.\n\n**Step 2.** Suppose, for the sake of contradiction, that FG does not pass through C. Then join FC and GC [P1]. Since F, C, G are not collinear by assumption, the points F, C, G form a triangle.\n\n**Step 3.** In triangle FCG, the sum of the two sides FC and CG is greater than the remaining side FG [1.20]. That is, FC + CG > FG.\n\n**Step 4.** Now since F is the centre of the first circle and C is a point on the first circle, FC is a radius of the first circle [D1.15]. Since the circles touch externally, the second circle lies entirely outside the first circle (for if any part of it fell inside, the circles would cut one another, contradicting D3.3). Therefore G, the centre of the second circle, lies outside the first circle, and the straight line FG, going from F (inside the first circle) to G (outside it), must meet the first circle at some point H between F and G.\n\n**Step 5.** Since F is the centre of the first circle and H is on the first circle, FH is a radius of the first circle [D1.15]. Therefore FH equals FC [D1.15].\n\n**Step 6.** Similarly, since G is the centre of the second circle and C is on the second circle, GC is a radius of the second circle [D1.15]. Since the first circle lies entirely outside the second circle, F lies outside the second circle. Therefore the line GF, going from G (inside the second circle) to F (outside it), must meet the second circle at some point K between G and F.\n\n**Step 7.** Since G is the centre of the second circle and K is on the second circle, GK is a radius of the second circle [D1.15]. Therefore GK equals GC [D1.15].\n\n**Step 8.** Since the circles touch externally and do not cut one another [D3.3], each circle lies outside the other. Therefore H (on the first circle) lies outside the second circle, and K (on the second circle) lies outside the first circle. The order of points along the line segment FG is F, H, K, G, so that FG equals FH plus HK plus KG.\n\n**Step 9.** Since HK is a segment of the whole FG, HK is greater than or equal to zero, and FG equals FH + HK + KG [CN5]. Therefore FG is greater than or equal to FH + KG, that is, FG is greater than or equal to FC + GC (since FH = FC from Step 5 and GK = GC from Step 7).\n\n**Step 10.** But from Step 3, FC + CG is greater than FG. This contradicts Step 9, which establishes that FG is greater than or equal to FC + GC.\n\n**Step 11.** Therefore the assumption that FG does not pass through C is false. Hence the straight line joining the centres F and G passes through the point of contact C. Q.E.D.\n\n**USED:** 1.20, CN5, D1.15, D3.3, P1\n**Human refs (from References field):** 1.20\n**Jaccard:** 0.200 — AI adds ['CN5', 'D1.15', 'D3.3', 'P1']",
+  "ai_used": [
+    "1.20",
+    "CN5",
+    "D1.15",
+    "D3.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.20"
+  ],
+  "ai_only": [
+    "CN5",
+    "D1.15",
+    "D3.3",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let two circles touch one another externally at the point C, let F be the centre of the first circle, and let G be the centre of the second circle. I say that the straight line FG passes t"
+}

@@ -1,0 +1,26 @@
+{
+  "proposition": "13.11",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A circle has rational diameter d; an equilateral pentagon, regular hexagon, and regular decagon are all inscribed in the same circle; the hexagon side equals the radius r = d/2.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The hexagon side r and decagon side s_10 satisfy the extreme-and-mean-ratio: (r + s_10) : r = r : s_10, yielding s_10^2 = r(r - s_10).",
+      "type": "length_relation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "sq(s) = sq(r) + sq(s_10), i.e., the square on the pentagon side equals the sum of the squares on the hexagon and decagon sides (by 13.10).",
+      "type": "length_relation"
+    }
+  ],
+  "configuration_map": "Circle with rational diameter d and radius r = d/2. Three regular polygons inscribed in the same circle: pentagon (side s), hexagon (side s_6 = r), decagon (side s_10). No auxiliary geometric points are constructed in the plane. All subsequent quantities (N = s_10 + r/2, w = 2r - s_10 = 5r/2 - N) are algebraic expressions of lengths, not geometric constructions placed in the figure. The proof proceeds entirely through algebraic manipulation and Book 10 irrational-line classification after establishing the initial length relationships.",
+  "pass_reason": "The proof makes only minimal spatial claims (three standard regular polygons inscribed in the same circle) which are mutually consistent. The bulk of the argument is algebraic: expressing the square on the pentagon side as a rectangle on a rational line, then classifying the breadth as a fourth apotome via Book 10 machinery. No angle decompositions, interior/exterior point claims, ray orderings, or betweenness claims are made. All cited geometric results (4.15, 13.1, 13.6, 13.9, 13.10) are standard and correctly applied. No spatial configuration contradiction exists."
+}

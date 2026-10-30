@@ -1,0 +1,13 @@
+{
+  "proposition": "9.10",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The AI proof of 9.10 cites proposition 8.25 to conclude that a number is square (Steps 3, 4, and 5), but 8.25 states 'If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube' -- it concerns cubes, not squares. The correct proposition for the square case is 8.24 ('If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second will also be square'). Since the AI explicitly cites 8.25 as its warrant and 8.25 does not entail any conclusion about square numbers, this is an invalid inference under Q1(b). The audit record completes convincingly: the missing element is support (not mere expansion), the cited proposition genuinely does not entail the conclusion, and this is not a matter of terseness or compression but of citing the wrong proposition entirely. Heath correctly uses 8.25 only in the cube case and uses 8.26 (converse) for the square case.",
+  "jaccard": 0.5,
+  "ai_citations": "8.25|9.8",
+  "heath_citations": "8.25|8.26|9.6|9.8",
+  "ai_only": "",
+  "heath_only": "8.26|9.6",
+  "audit_record": "CANDIDATE E -- 9.10\n  violated_claim : \"by 8.25, A is also square\" (Step 3, and repeated in Steps 4-5)\n  failure_mode   : invalid_inference\n  missing_is     : support -- 8.25 is about cubes; the AI needs 8.24 (squares) but cites 8.25 (cubes)\n  evidence       : AI Step 3: \"Since B is square and A has to B the ratio of a square number to a square number, by 8.25, A is also square.\" Proposition 8.25: \"If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube.\" The AI applies 8.25 to a square-ratio context where it does not apply.\n  why_not_terse  : The AI explicitly names 8.25 as the warrant for its conclusion about squares. 8.25 concerns cubes exclusively and cannot justify any conclusion about square numbers. The correct warrant is 8.24, which the AI does not cite."
+}

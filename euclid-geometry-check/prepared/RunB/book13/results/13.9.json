@@ -1,0 +1,46 @@
+{
+  "proposition": "13.9",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "The side of the inscribed regular hexagon equals the radius: s_6 = r (by 4.15)",
+      "type": "length_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Central angle AOB for adjacent decagon vertices equals 36 degrees (1/10 of 360)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle OAB is isosceles with OA = OB = r and base AB = s_10",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Base angles of triangle OAB are each 72 degrees, vertex angle is 36 degrees, making it the 4.10 triangle",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Line r is cut in extreme and mean ratio with s_10 as the greater segment: r : s_10 = s_10 : (r - s_10)",
+      "type": "ratio_property"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Since s_6 = r, line s_6 is cut in EMR with s_10 as greater segment",
+      "type": "ratio_property"
+    },
+    {
+      "step": "Step 7",
+      "claim": "By 13.5, the whole line s_6 + s_10 is cut in EMR with s_6 as the greater segment",
+      "type": "ratio_property"
+    }
+  ],
+  "configuration_map": "Circle with center O and radius r. Points A, B on the circle are adjacent vertices of the inscribed regular decagon, separated by central angle 36 degrees. Triangle OAB is isosceles with equal sides OA = OB = r, base AB = s_10, vertex angle 36 degrees at O, and base angles 72 degrees each at A and B. This is the 36-72-72 triangle of Proposition 4.10. The hexagon side s_6 = r. The decagon side s_10 is approximately 0.618r, being the greater segment when r is cut in extreme and mean ratio. After Step 5, all reasoning is purely about ratios with no further geometric constructions.",
+  "pass_reason": "The proof's spatial claims are minimal and mutually consistent. The only geometric construction is the standard isosceles triangle OAB (36-72-72) formed by the circle center and two adjacent decagon vertices, which is correctly identified as the 4.10 triangle. There are no interior/exterior point claims, no angle decompositions, and no betweenness claims. The bulk of the reasoning is algebraic, applying ratio properties (EMR from 4.10 and the extension property from 13.5). All spatial claims are standard results about inscribed regular polygons and are pairwise compatible."
+}

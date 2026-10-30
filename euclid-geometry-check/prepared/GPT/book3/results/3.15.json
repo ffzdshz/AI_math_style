@@ -1,0 +1,81 @@
+{
+  "proposition": "3.15",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the centre of the circle; AB is a diameter with O between A and B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CD and EF are non-diametral chords; neither passes through O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CD is nearer to the centre than EF",
+      "type": "distance_ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C, O, D are non-collinear (CD does not pass through O), forming triangle COD",
+      "type": "triangle_existence"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AO + OB = OC + OD (all four are radii equal to r)",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "OC + OD > CD by triangle inequality in triangle COD",
+      "type": "triangle_inequality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "M is midpoint of CD; OM is perpendicular to CD (by 3.3)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "N is midpoint of EF; ON is perpendicular to EF (by 3.3)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OM < ON (CD nearer to centre, Definition 3.5)",
+      "type": "distance_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Right triangle OMC with right angle at M; hypotenuse OC = radius",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Right triangle ONE with right angle at N; hypotenuse OE = radius",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 5",
+      "claim": "T lies between O and N on segment ON, with OT = OM",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "ON is divided at T: ON² = OT² + TN² + 2·OT·TN (by 2.4)",
+      "type": "algebraic_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "CD = 2·MC and EF = 2·NE (M, N are midpoints)",
+      "type": "distance_equality"
+    }
+  ],
+  "configuration_map": "Circle with center O. Points A, B, C, D, E, F lie on the circumference. AB is a diameter with O between A and B (AO = OB = r). Chord CD does not pass through O; its midpoint is M, and the perpendicular from O to CD meets CD at M, forming right triangle OMC (right angle at M, hypotenuse OC = r). Chord EF does not pass through O; its midpoint is N, and the perpendicular from O to EF meets EF at N, forming right triangle ONE (right angle at N, hypotenuse OE = r). Since CD is nearer to the centre, OM < ON. Auxiliary point T is placed on ON with OT = OM, so T lies strictly between O and N. The Pythagorean theorem yields OM² + MC² = OC² = OE² = ON² + NE², and Proposition 2.4 applied to ON divided at T shows ON² > OM², giving MC² > NE², hence MC > NE, hence CD > EF.",
+  "pass_reason": "All spatial claims are mutually consistent. The configuration is standard: a circle with center, diameter, two non-diametral chords, and perpendicular distances from the center to each chord forming right triangles with radii as hypotenuses. Point positions (O between A and B, T between O and N), perpendicularity claims (OM perpendicular to CD, ON perpendicular to EF), distance orderings (OM less than ON), and the algebraic manipulations via the Pythagorean theorem and Proposition 2.4 are all compatible. The proof takes a different path from Heath (using I.47 and II.4 instead of I.24 with an auxiliary construction) but introduces no spatial contradictions."
+}

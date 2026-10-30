@@ -1,0 +1,32 @@
+{
+  "proposition": "7.30",
+  "book": 7,
+  "statement": "If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.",
+  "heath_proof": "For let the two numbers A, B by multiplying one another make C, and let any prime number D measure C; I say that D measures one of the numbers A, B. For let it not measure A. Now D is prime; therefore A, D are prime to one another. [VII. 29] And, as many times as D measures C, so many units let there be in E. Since then D measures C according to the units in E, therefore D by multiplying E has made C. [VII. Def. 15] Further, A by multiplying B has also made C; therefore the product of D, E is equal to the product of A, B. Therefore, as D is to A, so is B to E. [VII. 19] But D, A are prime to one another, primes are also least, [VII. 21] and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent; [VII. 20] therefore D measures B. Similarly we can also show that, if D do not measure B, it will measure A. Therefore D measures one of the numbers A, B.",
+  "ai_proof_text": "7.30\n**Statement:** If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.\n\n**Step 1.** Let A and B be two numbers, and let their product A times B equal C. Let p be a prime number that measures C. We must show that p measures A or p measures B.\n\n**Step 2.** Consider two cases: either p measures A, or p does not measure A.\n\n**Step 3.** If p measures A, the conclusion holds immediately, and we are done.\n\n**Step 4.** Suppose p does not measure A. Since p is a prime number and p does not measure A, by Proposition 7.29, p is prime to A.\n\n**Step 5.** Since p is prime to A, by Proposition 7.21, p and A are the least numbers of those which have the same ratio with them.\n\n**Step 6.** Now since A times B equals C, and p measures C, there exists a number k such that p times k equals C (by Definition D7.3 and D7.15, since measuring means p multiplied by some number yields C).\n\n**Step 7.** Therefore A times B equals p times k. By Proposition 7.19, since the product of A and k equals the product of p and B (that is, A times B equals p times k rearranged), the four numbers A, p, k, B are proportional: A is to p as k is to B.\n\n**Step 8.** Since p and A are the least numbers of those in their ratio (Step 5), and k and B are in the same ratio as p and A (from Step 7, since A : p :: k : B, which by Proposition 7.13 gives p : A :: B : k, showing p and A are in the same ratio as B and k), by Proposition 7.20, the least numbers measure those in the same ratio the same number of times, the greater the greater and the less the less. Therefore p measures B.\n\n**Step 9.** Hence in both cases, p measures one of the original numbers A or B. Q.E.D.\n\n**USED:** 7.13, 7.19, 7.20, 7.21, 7.29, D7.11, D7.15, D7.3\n**Human refs (from References field):** 7.19, 7.20, 7.21, 7.29, D7.15\n**Jaccard:** 0.625 — AI adds ['7.13', 'D7.11', 'D7.3']",
+  "ai_used": [
+    "7.13",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.29",
+    "D7.11",
+    "D7.15",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.29",
+    "D7.15"
+  ],
+  "ai_only": [
+    "7.13",
+    "D7.11",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.625,
+  "proof_summary": "**Step 1.** Let A and B be two numbers, and let their product A times B equal C. Let p be a prime number that measures C. We must show that p measures A or p measures B.  **Step 2.** Consider two case"
+}

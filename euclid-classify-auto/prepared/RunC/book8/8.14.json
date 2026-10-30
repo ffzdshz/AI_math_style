@@ -1,0 +1,30 @@
+{
+  "proposition": "8.14",
+  "book": 8,
+  "statement": "If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.",
+  "heath_proof": "Let A, B be square numbers, let C, D be their sides, and let A measure B; I say that C also measures D. For let C by multiplying D make E; therefore A, E, B are continuously proportional in the ratio of C to D. [VIII. 11] And, since A, E, B are continuously proportional, and A measures B, therefore A also measures E. [VIII. 7] And, as A is to E, so is C to D; therefore also C measures D. [VII. Def. 20] Again, let C measure D; I say that A also measures B. For, with the same construction, we can in a similar manner prove that A, E, B are continuously proportional in the ratio of C to D. And since, as C is to D, so is A to E, and C measures D, therefore A also measures E. [VII. Def. 20] And A, E, B are continuously proportional; therefore A also measures B.",
+  "ai_proof_text": "8.14\n**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.\n\n**Step 1.** Let A and B be numbers, and let A*A and B*B be their squares. We must prove two things: (i) if A*A measures B*B, then A measures B; and (ii) if A measures B, then A*A measures B*B.\n\n**Step 2.** By 8.11, between two square numbers A*A and B*B there is one mean proportional number, namely A*B, so that A*A, A*B, B*B are in continued proportion.\n\n**Step 3.** Furthermore, by 7.17, since A multiplied by A produces A*A and A multiplied by B produces A*B, we have A*A : A*B = A : B. Similarly, by 7.18, since A multiplied by B produces A*B and B multiplied by B produces B*B, we have A*B : B*B = A : B.\n\n**Step 4.** (Proof of Part i) Suppose A*A measures B*B. Since A*A, A*B, B*B are in continued proportion (Step 2) and the first term A*A measures the last term B*B, by 8.7, A*A also measures the second term A*B.\n\n**Step 5.** Since A*A measures A*B, and A*A : A*B = A : B (Step 3), A is the same part of B (or equal to B) that A*A is of A*B, by D7.20. Therefore A measures B.\n\n**Step 6.** (Proof of Part ii) Conversely, suppose A measures B. Since A*A : A*B = A : B (Step 3) and A measures B, then A*A measures A*B, by D7.20 (A being a part or equal measure of B means A*A is the same part or equal measure of A*B).\n\n**Step 7.** Since A*B : B*B = A : B (Step 3) and A measures B, then similarly A*B measures B*B, by D7.20.\n\n**Step 8.** Since A*A measures A*B (Step 6), there is a number k such that A*B equals A*A taken k times. Since A*B measures B*B (Step 7), there is a number m such that B*B equals A*B taken m times. Then B*B equals A*A taken k times m, that is, A*A multiplied by the product of k and m, by 7.16. Therefore A*A measures B*B.\n\n**Step 9.** Thus, if a square measures a square, the side also measures the side; and if the side measures the side, the square also measures the square. Q.E.D.\n\n**USED:** 7.16, 7.17, 7.18, 8.11, 8.7, D7.20, D7.3\n**Human refs (from References field):** 8.11, 8.7, D7.20\n**Jaccard:** 0.429 — AI adds ['7.16', '7.17', '7.18', 'D7.3']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.18",
+    "8.11",
+    "8.7",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.17",
+    "7.18",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let A and B be numbers, and let A*A and B*B be their squares. We must prove two things: (i) if A*A measures B*B, then A measures B; and (ii) if A measures B, then A*A measures B*B.  **Step"
+}

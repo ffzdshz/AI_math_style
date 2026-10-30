@@ -1,0 +1,13 @@
+{
+  "proposition": "7.2",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs follow the same logical backbone: (1) handle the trivial case where CD measures AB; (2) apply the antenaresis (repeated subtraction) algorithm, invoking 7.1 to guarantee termination in a number rather than a unit; (3) trace the final remainder back up through each step to show it measures both original numbers; (4) prove maximality by showing any common measure must divide down to the final remainder, contradicting the assumption it could be larger. The AI proof is a faithful reproduction of Heath's argument with only a minor naming difference (FD vs CF for the final remainder). The citation difference is purely one of depth: the AI explicitly cites definitions (D7.3, D7.5, D7.12, D7.14) and common notions (CN3, CN5) that Heath invokes implicitly without citation. Heath's only explicit citation is 7.1, which the AI also cites. Since heath_only is empty and ai_only contains only foundational definitions and common notions, this is a classic over-citation granularity difference.",
+  "jaccard": 0.143,
+  "ai_citations": "7.1|CN3|CN5|D7.12|D7.14|D7.3|D7.5",
+  "heath_citations": "7.1",
+  "ai_only": "CN3|CN5|D7.12|D7.14|D7.3|D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

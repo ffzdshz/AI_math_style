@@ -1,0 +1,30 @@
+{
+  "proposition": "7.28",
+  "book": 7,
+  "statement": "If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.",
+  "heath_proof": "For let two numbers AB, BC prime to one another be added; I say that the sum AC is also prime to each of the numbers AB, BC. For, if CA, AB are not prime to one another, some number will measure CA, AB. Let a number measure them, and let it be D. Since then D measures CA, AB, therefore it will also measure the remainder BC. But it also measures BA; therefore D measures AB, BC which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers CA, AB; therefore CA, AB are prime to one another. For the same reason AC, CB are also prime to one another. Therefore CA is prime to each of the numbers AB, BC. Again, let CA, AB be prime to one another; I say that AB, BC are also prime to one another. For, if AB, BC are not prime to one another, some number will measure AB, BC. Let a number measure them, and let it be D. Now, since D measures each of the numbers AB, BC, it will also measure the whole CA. But it also measures AB; therefore D measures CA, AB which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers AB, BC. Therefore AB, BC are prime to one another.",
+  "ai_proof_text": "7.28\n**Statement:** If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.\n\n**Step 1.** Let A and B be two numbers. The proposition has two parts: (i) if A and B are prime to one another, then A + B is prime to each of A and B; and (ii) if A + B is prime to one of them, say A, then A and B are prime to one another.\n\n**Step 2.** [Part (i)] Suppose A and B are prime to one another, so that by D7.12 the only number that measures both A and B is the unit. Let S denote A + B. We must show S is prime to A (the argument for B is symmetric).\n\n**Step 3.** Suppose, for the sake of contradiction, that S and A are not prime to one another. Then by D7.12, some number C greater than the unit measures both S and A.\n\n**Step 4.** Since C measures A, then A is a certain multiple of C, say A = C times m. Since C measures S = A + B, then S is a certain multiple of C, say S = C times n (by D7.3, D7.5).\n\n**Step 5.** Now B = S - A. Since C measures S and C measures A, and A is a part (or parts) of S that is subtracted, the remainder B is also measured by C. Specifically, if C is the same part of A that C is of S in terms of the unit relationships, then by Proposition 7.7 (if C is a part) or 7.8 (if C is parts), C measures B as well. More precisely, since C measures both S and A, and B = S - A, the number C measures B.\n\n**Step 6.** Thus C measures both A and B. But A and B are prime to one another (D7.12), so the only common measure of A and B is the unit. This contradicts the assumption that C is greater than the unit.\n\n**Step 7.** Therefore S = A + B must be prime to A. By a symmetric argument (interchanging the roles of A and B), S = A + B is also prime to B. This completes Part (i).\n\n**Step 8.** [Part (ii)] Now suppose that S = A + B is prime to A. We must show that A and B are prime to one another.\n\n**Step 9.** Suppose, for the sake of contradiction, that A and B are not prime to one another. Then by D7.12, some number D greater than the unit measures both A and B.\n\n**Step 10.** Since D measures A and D measures B, and S = A + B, then by Proposition 7.5 (if D is the same part of A as it is of B) or 7.6 (if D is the same parts of A as it is of B), D measures A + B = S.\n\n**Step 11.** Thus D measures both S and A. But S and A are prime to one another, so the only common measure of S and A is the unit (D7.12). This contradicts the assumption that D is greater than the unit.\n\n**Step 12.** Therefore A and B must be prime to one another. This completes Part (ii).\n\n**Step 13.** We have proved both directions: if two numbers are prime to one another, their sum is prime to each of them; and if the sum of two numbers is prime to any one of them, the original numbers are prime to one another. Q.E.D.\n\n**USED:** 7.5, 7.6, 7.7, 7.8, D7.12, D7.3, D7.5\n**Human refs (from References field):** D7.12\n**Jaccard:** 0.143 — AI adds ['7.5', '7.6', '7.7', '7.8', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "7.5",
+    "7.6",
+    "7.7",
+    "7.8",
+    "D7.12",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "D7.12"
+  ],
+  "ai_only": [
+    "7.5",
+    "7.6",
+    "7.7",
+    "7.8",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A and B be two numbers. The proposition has two parts: (i) if A and B are prime to one another, then A + B is prime to each of A and B; and (ii) if A + B is prime to one of them, say A"
+}

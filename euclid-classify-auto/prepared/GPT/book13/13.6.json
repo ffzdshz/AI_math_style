@@ -1,0 +1,59 @@
+{
+  "proposition": "13.6",
+  "book": 13,
+  "statement": "If a rational straight line be cut in extreme and mean ratio, each of the segments is the irrational straight line called apotome.",
+  "heath_proof": "Let AB be a rational straight line, let it be cut in extreme and mean ratio at C, and let AC be the greater segment; I say that each of the straight lines AC, CB is the irrational straight line called apotome. For let BA be produced, and let AD be made half of BA. Since then the straight line AB has been cut in extreme and mean ratio, and to the greater segment AC is added AD which is half of AB, therefore the square on CD is five times the square on DA. [XIII. 1] Therefore the square on CD has to the square on DA the ratio which a number has to a number; therefore the square on CD is commensurable with the square on DA. [X. 6] But the square on DA is rational, for DA is rational, being half of AB which is rational; therefore the square on CD is also rational; [X. Def. 4] therefore CD is also rational. And, since the square on CD has not to the square on DA the ratio which a square number has to a square number, therefore CD is incommensurable in length with DA; [X. 9] therefore CD, DA are rational straight lines commensurable in square only; therefore AC is an apotome. [X. 73] Again, since AB has been cut in extreme and mean ratio, and AC is the greater segment, therefore the rectangle AB, BC is equal to the square on AC. [VI. Def. 3, VI. 17] Therefore the square on the apotome AC, if applied to the rational straight line AB, produces BC as breadth. But the square on an apotome, if applied to a rational straight line, produces as breadth a first apotome; [X. 97] therefore CB is a first apotome. And CA was also proved to be an apotome.",
+  "ai_proof_text": "13.6\n**Statement:** If a rational straight line be cut in extreme and mean ratio, each of the segments is the irrational straight line called apotome.\n\n**Step 1.** Let the rational straight line AB be cut in extreme and mean ratio at C, with AC the greater segment. Bisect AB at M [1.10], and produce BA beyond A to D so that AD = AM [P2, 1.3]. The points are in the order D, A, C, B. Write h = AD, t = DC, and u = DB. Thus AB = 2h, u = 3h, AC = t − h, and CB = u − t [CN2, CN3]. Throughout, x² denotes the square on the straight line x.\n\n**Step 2.** The straight line h measures AB twice and u three times. Consequently h, AB, and u are commensurable in length [D10.1.1], and their squares are commensurable [10.9]. Since AB is rational, h and u are also rational: their squares are commensurable with the square on the assigned rational straight line, by transitivity of commensurability [10.12, D10.1.3].\n\n**Step 3.** Choose 13.1, the first preceding square identity, because it applies directly to the greater segment together with the rational half of the whole. Since t = AC + h and h is half of AB, it gives t² = 5h² [13.1]. Therefore t and h are commensurable in square [D10.1.2]. Since h is rational, t is rational as well [10.12, D10.1.3].\n\n**Step 4.** The ratio 5:1 cannot be a ratio of square numbers. Indeed, suppose it were, and take the least numbers m, n in the ratio of the sides of those squares. The original sides are equimultiples of m, n [7.20], so m² = 5n²; moreover, m and n are prime to one another [7.22]. Since 5 is prime and measures m², it measures m [7.30]. Writing m = 5k gives n² = 5k², so 5 also measures n [7.30], a contradiction. Thus t²:h² = 5:1 is not a ratio of square numbers, and t and h are incommensurable in length [10.9].\n\n**Step 5.** Since DC contains DA as a proper part, t > h [CN5]. Hence AC = t − h is obtained by subtracting from the rational straight line t the rational straight line h, commensurable with it in square only. By 10.73, AC is irrational and is an apotome.\n\n**Step 6.** The straight lines u and h are commensurable in length, since u = 3h [D10.1.1]. If u and t were commensurable in length, then h and t would also be commensurable in length [10.12], contrary to Step 4. Thus u and t are incommensurable in length. But u² is commensurable with h² [10.9], and t² is commensurable with h² by Step 3; therefore u² and t² are commensurable [10.12]. The rational straight lines u and t are consequently commensurable in square only.\n\n**Step 7.** Since DB contains DC as a proper part, u > t [CN5]. Thus CB = u − t is likewise obtained by subtracting from one rational straight line another rational straight line commensurable with it in square only. By 10.73, CB is irrational and is an apotome. Therefore each segment of the given rational straight line is the irrational straight line called apotome.\n\n**USED:** 1.10, 1.3, 10.12, 10.73, 10.9, 13.1, 7.20, 7.22, 7.30, CN2, CN3, CN5, D10.1.1, D10.1.2, D10.1.3, P2\n**Human refs (from References field):** 10.6, 10.73, 10.9, 10.97, 13.1, 6.17, D10.1.4, D6.3\n**Jaccard:** 0.143 — AI adds ['1.10', '1.3', '10.12', '7.20', '7.22', '7.30', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'P2']; Human adds ['10.6', '10.97', '6.17', 'D10.1.4', 'D6.3']",
+  "ai_used": [
+    "1.10",
+    "1.3",
+    "10.12",
+    "10.73",
+    "10.9",
+    "13.1",
+    "7.20",
+    "7.22",
+    "7.30",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "P2"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "10.97",
+    "13.1",
+    "6.17",
+    "D10.1.4",
+    "D6.3"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.3",
+    "10.12",
+    "7.20",
+    "7.22",
+    "7.30",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "P2"
+  ],
+  "heath_only": [
+    "10.6",
+    "10.97",
+    "6.17",
+    "D10.1.4",
+    "D6.3"
+  ],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let the rational straight line AB be cut in extreme and mean ratio at C, with AC the greater segment. Bisect AB at M [1.10], and produce BA beyond A to D so that AD = AM [P2, 1.3]. The poi"
+}

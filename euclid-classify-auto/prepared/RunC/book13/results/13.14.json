@@ -1,0 +1,13 @@
+{
+  "proposition": "13.14",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The AI proof uses a fundamentally different construction from Heath's. Heath constructs a square EFGH with diagonals meeting at K, erects perpendiculars KL and KM equal to KE, then uses I.4 (SAS congruence) and III.31 (angle in semicircle is right) to prove the octahedron is inscribed in the given sphere and that the diameter squared is double the side squared. The AI instead places the center C at the midpoint of diameter AB, constructs four points D, E, F, G in a plane perpendicular to AB through C, all at distance CA from C, forming a 6-vertex octahedron directly. The AI proves edge equality via I.47 applied to right triangles with equal legs, proves inscription by noting all vertices are equidistant from C, and proves the diameter-to-side ratio by direct arithmetic (AB squared = 4 AC squared = 2 times side squared). The different constructions lead to different key intermediate conclusions and different citation sets (heath_only contains I.4 and III.31 which are not needed in the AI's approach; ai_only contains constructions, definitions, and 2.4 reflecting the AI's direct algebraic approach). Since the AI's different path is logically complete and valid, Q3 yields category D.",
+  "jaccard": 0.118,
+  "ai_citations": "1.10|1.11|1.3|1.47|11.12|2.4|CN1|CN2|D1.20|D11.14|D11.17|D11.26|D11.3|P1|P3",
+  "heath_citations": "1.4|1.47|11.12|3.31",
+  "ai_only": "1.10|1.11|1.3|2.4|CN1|CN2|D1.20|D11.14|D11.17|D11.26|D11.3|P1|P3",
+  "heath_only": "1.4|3.31",
+  "audit_record": ""
+}

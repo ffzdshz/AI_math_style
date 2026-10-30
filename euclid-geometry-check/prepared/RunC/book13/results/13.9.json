@@ -1,0 +1,41 @@
+{
+  "proposition": "13.9",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Circle with center O, radius OA; the side of the regular hexagon inscribed in the circle equals the radius OA",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Point N lies on segment OA between O and A, cutting OA in extreme and mean ratio with ON as the greater segment and NA as the lesser segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Isosceles triangle with vertex at O, equal sides equal to OA, vertex angle equal to one-fifth of two right angles (36 degrees); the base subtends 36 degrees at center so it is the decagon side; the base equals ON (greater segment of OA cut in EMR)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "OA is cut in extreme and mean ratio with ON (decagon side) as greater segment and NA as lesser segment",
+      "type": "ratio_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Adding ON to OA produces a line OA+ON that is cut in extreme and mean ratio with OA as the greater segment (by 13.5)",
+      "type": "ratio_relationship"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The sum OA+ON equals hexagon side plus decagon side, and this whole line is cut in EMR with OA (hexagon side) as greater segment",
+      "type": "segment_equality"
+    }
+  ],
+  "configuration_map": "Circle with center O and radius OA. Point N lies on segment OA between O and A, dividing OA in extreme and mean ratio: ON is the greater segment (approximately 0.618*OA), NA is the lesser segment (approximately 0.382*OA). The hexagon side equals OA (the radius). The decagon side equals ON (established via the Prop 4.10 isosceles triangle construction). The combined line OA+ON equals hexagon side + decagon side. All points are collinear on segment OA or its extension. No complex geometric configuration beyond points on a line and a standard circle with inscribed polygons.",
+  "pass_reason": "The proof makes minimal spatial/geometric configuration claims, primarily involving segment equalities and golden ratio relationships along a single line. All spatial claims are mutually consistent: (1) N on segment OA with ON as greater segment is compatible with ON equaling the decagon side (verified numerically: decagon side = 2r*sin(18 degrees) approximately equals 0.618r, matching the golden ratio greater segment); (2) the application of Prop 13.5 correctly uses the established EMR cut to conclude the sum is in EMR; (3) the identification of hexagon side = OA and decagon side = ON is consistent throughout. No angle decompositions, no inside/outside claims, and no conflicting positional requirements are present."
+}

@@ -1,0 +1,81 @@
+{
+  "proposition": "13.14",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E is the midpoint of diameter AB, so AE = EB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CD passes through E at right angles to AB; EC = ED = EA = EB; E is midpoint of CD",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "FG passes through E in the plane perpendicular to AB at E, perpendicular to CD; EF = EG = EA; C, D, F, G lie in a plane perpendicular to AB",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Three mutually perpendicular lines AB, CD, FG all pass through E",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angles CEF, FED, DEG, GEC are each right angles in the equatorial plane",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CFDG is a square with all sides equal and all vertex angles right",
+      "type": "figure_property"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AE is perpendicular to the plane through C, D, F, G (by 11.4, since AE perp CD and AE perp FG at E)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AE is at right angles to EC, ED, EF, EG",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle AEC has right angle at E; AC^2 = AE^2 + EC^2 = 2*AE^2",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangles AED, AEF, AEG each have right angle at E; AD = AF = AG = AC",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 8",
+      "claim": "BE is perpendicular to plane CDFG; BC = BD = BF = BG = AC",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "CF^2 = 2*AE^2 = AC^2, so all 12 edges are equal",
+      "type": "equality"
+    },
+    {
+      "step": "Step 11",
+      "claim": "All six vertices A, B, C, D, F, G are at distance EA from center E, lying on the sphere",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AB^2 = 4*AE^2 and AC^2 = 2*AE^2, so AB^2 = 2*AC^2",
+      "type": "algebraic_relation"
+    }
+  ],
+  "configuration_map": "The configuration consists of three mutually perpendicular lines through the sphere center E: (1) AB along the vertical axis with A above and B below the equatorial plane, (2) CD in the equatorial plane, and (3) FG in the equatorial plane perpendicular to CD. All six endpoints A, B, C, D, F, G are at equal distance r = EA from E. Points C, D, F, G form a square CFDG in the equatorial plane with center E. Point A is at perpendicular distance r above this plane, point B at distance r below. In coordinates: E=(0,0,0), A=(0,0,r), B=(0,0,-r), C=(r,0,0), D=(-r,0,0), F=(0,r,0), G=(0,-r,0). All 12 edges (4 from A to CDFG, 4 from B to CDFG, 4 sides of square CDFG) have length r*sqrt(2). Every point maintains its claimed position consistently throughout all steps.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places six vertices at the endpoints of three mutually perpendicular equal segments through the sphere center, forming a standard octahedron. Every perpendicularity claim follows validly from the construction (AB perp CD, AB perp FG, CD perp FG). The application of 11.4 to establish AE perpendicular to the equatorial plane is correct. All Pythagorean theorem applications use genuine right angles. No angle decomposition issues arise (no angle is decomposed as a sum). No inside/outside contradictions exist. The algebraic conclusion AB^2 = 2*AC^2 follows correctly from the established equalities."
+}

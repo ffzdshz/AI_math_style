@@ -1,0 +1,57 @@
+{
+  "proposition": "10.108",
+  "book": 10,
+  "statement": "If from a rational area a medial area be subtracted, the âsideâ of the remaining area becomes one of two irrational straight lines, either an apotome or a minor straight line.",
+  "heath_proof": "For from the rational area BC let the medial area BD be subtracted; I say that the “side” of the remainder EC becomes one of two irrational straight lines, either an apotome or a minor straight line. For let a rational straight line FG be set out, to FG let there be applied the rectangular parallelogram GH equal to BC, and let GK equal to DB be subtracted; therefore the remainder EC is equal to LH. Since then BC is rational, and BD medial, while BC is equal to GH, and BD to GK, therefore GH is rational, and GK medial. And they are applied to the rational straight line FG; therefore FH is rational and commensurable in length with FG, [X. 20] while FK is rational and incommensurable in length with FG; [X. 22] therefore FH is incommensurable in length with FK. [X. 13] Therefore FH, FK are rational straight lines commensurable in square only; therefore KH is an apotome [X. 73], and KF the annex to it. Now the square on HF is greater than the square on FK by the square on a straight line either commensurable with HF or not commensurable. First, let the square on it be greater by the square on a straight line commensurable with it. Now the whole HF is commensurable in length with the rational straight line FG set out; therefore KH is a first apotome. [X. Deff. III. 1] But the “side” of the rectangle contained by a rational straight line and a first apotome is an apotome. [X. 91] Therefore the “side” of LH, that is, of EC, is an apotome. But, if the square on HF is greater than the square on FK by the square on a straight line incommensurable with HF, while the whole FH is commensurable in length with the rational straight line FG set out, KH is a fourth apotome. [X. Deff. III. 4] But the “side” of the rectangle contained by a rational straight line and a fourth apotome is minor. [X. 94]",
+  "ai_proof_text": "10.108\n**Statement:** If from a rational area a medial area be subtracted, the âsideâ of the remaining area becomes one of two irrational straight lines, either an apotome or a minor straight line.\n\n**Step 1.** Let R be the given rational area and M the medial area subtracted from it, with M < R. Fix the assigned rational straight line r. Apply both areas to r, obtaining breadths a and b, so that R = ra and M = rb. These applications can be constructed by first making equal rectangles, then giving them the prescribed side r by a fourth proportional [1.45, 6.12, 6.16]. We choose this common-base route because it directly determines the kind of apotome bounding the remaining rectangle.\n\n**Step 2.** Since R is rational, a is rational and commensurable in length with r [10.20]. Since M is medial, b is rational and incommensurable in length with r [10.22]. The squares on a and b are therefore both commensurable with the square on r, and hence with one another [D10.1.3, 10.12]. But a and b cannot be commensurable in length: otherwise their commensurability, together with that of a and r, would make b commensurable in length with r [10.12]. Thus a and b are rational straight lines commensurable in square only [D10.1.2].\n\n**Step 3.** The rectangles ra and rb have the same base, so R > M implies a > b [6.1]. Put c = a − b. By 10.73, c is an apotome, whose whole is a and whose annex is b. Moreover, ra = rb + rc, so the remaining area R − M equals rc [2.1, CN3].\n\n**Step 4.** Construct a straight line d whose square equals the excess of the square on a over the square on b [2.14]. Thus a² = b² + d². The lines d and a are either commensurable or incommensurable in length [D10.1.1]. These are the only alternatives that need to be considered, because the whole a is already commensurable in length with the rational line r.\n\n**Step 5.** If d is commensurable in length with a, then c is a first apotome relative to r: its whole a is commensurable in length with r, and the excess of the square on its whole over the square on its annex is the square on a line commensurable in length with its whole [D10.3.1]. Consequently, the side of the area rc, and therefore of R − M, is an apotome [10.91].\n\n**Step 6.** If d is incommensurable in length with a, then c is a fourth apotome relative to r, since its whole a is commensurable in length with r but the side of the difference of the squares is incommensurable in length with a [D10.3.4]. Consequently, the side of the area rc, and therefore of R − M, is a minor straight line [10.94].\n\n**Step 7.** The two cases exhaust the alternatives [D10.1.1]. An apotome and a minor straight line are both irrational [10.73, 10.76]. Hence, if a medial area is subtracted from a rational area, the side of the remaining area is one of these two irrational straight lines: either an apotome or a minor straight line.\n\n**USED:** 1.45, 10.12, 10.20, 10.22, 10.73, 10.76, 10.91, 10.94, 2.1, 2.14, 6.1, 6.12, 6.16, CN3, D10.1.1, D10.1.2, D10.1.3, D10.3.1, D10.3.4\n**Human refs (from References field):** 10.13, 10.20, 10.22, 10.73, 10.91, 10.94, D10.3.1, D10.3.4\n**Jaccard:** 0.350 — AI adds ['1.45', '10.12', '10.76', '2.1', '2.14', '6.1', '6.12', '6.16', 'CN3', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.13']",
+  "ai_used": [
+    "1.45",
+    "10.12",
+    "10.20",
+    "10.22",
+    "10.73",
+    "10.76",
+    "10.91",
+    "10.94",
+    "2.1",
+    "2.14",
+    "6.1",
+    "6.12",
+    "6.16",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.3.1",
+    "D10.3.4"
+  ],
+  "heath_refs": [
+    "10.13",
+    "10.20",
+    "10.22",
+    "10.73",
+    "10.91",
+    "10.94",
+    "D10.3.1",
+    "D10.3.4"
+  ],
+  "ai_only": [
+    "1.45",
+    "10.12",
+    "10.76",
+    "2.1",
+    "2.14",
+    "6.1",
+    "6.12",
+    "6.16",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.13"
+  ],
+  "jaccard": 0.35,
+  "proof_summary": "**Step 1.** Let R be the given rational area and M the medial area subtracted from it, with M < R. Fix the assigned rational straight line r. Apply both areas to r, obtaining breadths a and b, so that"
+}

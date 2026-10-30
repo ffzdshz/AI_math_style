@@ -1,0 +1,35 @@
+{
+  "proposition": "10.41",
+  "book": 10,
+  "statement": "If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.",
+  "heath_proof": "For let two straight lines AB, BC incommensurable in square and satisfying the given conditions [X. 35] be added together; I say that AC is irrational. Let a rational straight line DE be set out, and let there be applied to DE the rectangle DF equal to the squares on AB, BC, and the rectangle GH equal to twice the rectangle AB, BC; therefore the whole DH is equal to the square on AC. [II. 4] Now, since the sum of the squares on AB, BC is medial, and is equal to DF, therefore DF is also medial. And it is applied to the rational straight line DE; therefore DG is rational and incommensurable in length with DE. [X. 22] For the same reason GK is also rational and incommensurable in length with GF, that is, DE. And, since the squares on AB, BC are incommensurable with twice the rectangle AB, BC, DF is incommensurable with GH; so that DG is also incommensurable with GK. [VI. 1, X. 11] And they are rational; therefore DG, GK are rational straight lines commensurable in square only; therefore DK is irrational and what is called binomial. [X. 36] But DE is rational; therefore DH is irrational, and the side of the square which is equal to it is irrational. [X. Def. 4] But AC is the side of the square equal to HD; therefore AC is irrational. And let it be called the side of the sum of two medial areas.",
+  "ai_proof_text": "10.41\n**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.\n\n**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, AB^2 + BC^2, is medial, the rectangle AB * BC is medial, and AB^2 + BC^2 is incommensurable with 2 * AB * BC. Let AC = AB + BC. We are to prove that AC is irrational.\n\n**Step 2.** By 2.4, AC^2 = AB^2 + BC^2 + 2 * AB * BC.\n\n**Step 3.** Let DE be a rational straight line set out. Apply the area equal to AB^2 + BC^2 to DE, producing breadth DG, so that DE * DG = AB^2 + BC^2. Since AB^2 + BC^2 is medial, the area DE * DG is medial. By 10.22, since a medial area applied to a rational straight line produces a breadth that is rational and incommensurable in length with the line, DG is rational and incommensurable in length with DE.\n\n**Step 4.** Apply the area equal to 2 * AB * BC to DE, producing breadth GF, so that DE * GF = 2 * AB * BC. Since AB * BC is medial and twice a medial area is medial (for if AB * BC is medial, then 2 * AB * BC is commensurable with AB * BC, hence medial by 10.23 applied to areas via D10.1.4), the area DE * GF is medial. By 10.22, GF is rational and incommensurable in length with DE.\n\n**Step 5.** Now DE * DG = AB^2 + BC^2 and DE * GF = 2 * AB * BC. Since AB^2 + BC^2 is incommensurable with 2 * AB * BC (given), the area DE * DG is incommensurable with the area DE * GF. By 6.1, DE * DG is to DE * GF as DG is to GF (since these rectangles share the same base DE). By 10.11, since the areas are incommensurable, DG is incommensurable in length with GF.\n\n**Step 6.** From Steps 3 and 4, DG and GF are both rational. From Step 5, DG is incommensurable in length with GF. Since two rational straight lines incommensurable in length are commensurable in square only, DG and GF are rational straight lines commensurable in square only.\n\n**Step 7.** By 10.36, since DG and GF are rational straight lines commensurable in square only, the sum DF = DG + GF is irrational, being a binomial straight line.\n\n**Step 8.** From Step 2, AC^2 = AB^2 + BC^2 + 2 * AB * BC = DE * DG + DE * GF = DE * DF. So the area DE * DF equals AC^2. Since DF is irrational (being a binomial) and DE is rational, if the area DE * DF were rational, then by 10.20 the breadth DF would be rational and commensurable in length with DE, contradicting the fact that DF is irrational. Therefore the area DE * DF is irrational, and hence AC^2 is irrational.\n\n**Step 9.** Since AC^2 is irrational, AC itself is irrational by D10.1.4 (the straight line whose square equals an irrational area is irrational). Let AC be called the side of the sum of two medial areas. Q.E.F.\n\n**USED:** 10.11, 10.20, 10.22, 10.23, 10.36, 2.4, 6.1, D10.1.4\n**Human refs (from References field):** 10.11, 10.22, 10.35, 10.36, 2.4, 6.1, D10.1.4\n**Jaccard:** 0.667 — AI adds ['10.20', '10.23']; Human adds ['10.35']",
+  "ai_used": [
+    "10.11",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.36",
+    "2.4",
+    "6.1",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.35",
+    "10.36",
+    "2.4",
+    "6.1",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.20",
+    "10.23"
+  ],
+  "heath_only": [
+    "10.35"
+  ],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let AB and BC be two straight lines incommensurable in square such that the sum of the squares on them, AB^2 + BC^2, is medial, the rectangle AB * BC is medial, and AB^2 + BC^2 is incommen"
+}

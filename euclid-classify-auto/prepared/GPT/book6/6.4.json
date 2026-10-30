@@ -1,0 +1,51 @@
+{
+  "proposition": "6.4",
+  "book": 6,
+  "statement": "In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.",
+  "heath_proof": "Let ABC, DCE be equiangular triangles having the angle ABC equal to the angle DCE, the angle BAC to the angle CDE, and further the angle ACB to the angle CED; I say that in the triangles ABC, DCE the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles. For let BC be placed in a straight line with CE. Then, since the angles ABC, ACB are less than two right angles, [I. 17] and the angle ACB is equal to the angle DEC, therefore the angles ABC, DEC are less than two right angles; therefore BA, ED, when produced, will meet. [I. Post. 5] Let them be produced and meet at F. Now, since the angle DCE is equal to the angle ABC, BF is parallel to CD. [I. 28]  Again, since the angle ACB is equal to the angle DEC, AC is parallel to FE. [I. 28]  Therefore FACD is a parallelogram; therefore FA is equal to DC, and AC to FD. [I. 34] And, since AC has been drawn parallel to FE, one side of the triangle FBE, therefore, as BA is to AF, so is BC to CE. [VI. 2] But AF is equal to CD; therefore, as BA is to CD, so is BC to CE, and alternately, as AB is to BC, so is DC to CE. [V. 16] Again, since CD is parallel to BF, therefore, as BC is to CE, so is FD to DE. [VI. 2] But FD is equal to AC; therefore, as BC is to CE, so is AC to DE, and alternately, as BC is to CA, so is CE to ED. [V. 16] Since then it was proved that, as AB is to BC, so is DC to CE, and, as BC is to CA, so is CE to ED; therefore, ex aequali, as BA is to AC, so is CD to DE. [V. 22]",
+  "ai_proof_text": "6.4\n**Statement:** In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.\n\n**Step 1.** Let ABC and DEF be equiangular triangles, with ∠BAC = ∠EDF, ∠ABC = ∠DEF, and ∠ACB = ∠DFE. We first prove AB : AC = DE : DF. The chosen route is a parallel cut, since 6.2 directly supplies the needed segment proportions.\n\n**Step 2.** Interchanging the triangles if necessary, suppose AB ≥ DE; this merely interchanges the two sides of the desired equality of ratios. If AB = DE, the equal angles at A, B and D, E give AC = DF and BC = EF by 1.26. All the required proportions then follow from equality of corresponding magnitudes and D5.5. It remains to consider AB > DE.\n\n**Step 3.** Cut off AP = DE on AB, with P between A and B [1.3]. Through P draw PQ parallel to BC, meeting AC at Q, between A and C [1.31].\n\n**Step 4.** Since AP and AQ lie along AB and AC, ∠PAQ = ∠BAC [CN4]. Also ∠APQ = ∠ABC because PQ is parallel to BC [1.29]. Hence ∠PAQ = ∠EDF and ∠APQ = ∠DEF by the given angle equalities [CN1]. Together with AP = DE, these equalities give AQ = DF by 1.26.\n\n**Step 5.** Because PQ is parallel to BC, it cuts the other two sides proportionally:\nAP : PB = AQ : QC [6.2].\nAlternating gives\nAP : AQ = PB : QC [5.16].\n\n**Step 6.** By 5.12, the ratio of the sums of these antecedents and consequents equals their common ratio:\n(AP + PB) : (AQ + QC) = AP : AQ.\nSince AP + PB = AB and AQ + QC = AC, this is AB : AC = AP : AQ. Substituting AP = DE and AQ = DF gives\nAB : AC = DE : DF [D5.5].\nHere 5.12 is the direct choice because the sums are precisely the two whole sides required.\n\n**Step 7.** The argument in Steps 2–6 applies to any chosen pair of corresponding vertices. Applying it with (A, B, C; D, E, F) relabelled as (B, A, C; E, D, F), and then as (C, A, B; F, D, E), gives respectively\nBA : BC = ED : EF,\nand\nCA : CB = FD : FE.\nThus the sides about every pair of equal angles are proportional [D5.6].\n\n**Step 8.** The corresponding terms in these proportions pair AB with DE, AC with DF, and BC with EF [D5.11]. These pairs subtend, respectively, the equal angles at C and F, at B and E, and at A and D. Therefore, in equiangular triangles the sides about the equal angles are proportional, and the corresponding sides are those which subtend the equal angles.\n\n**USED:** 1.26, 1.29, 1.3, 1.31, 5.12, 5.16, 6.2, CN1, CN4, D5.11, D5.5, D5.6\n**Human refs (from References field):** 1.17, 1.28, 1.34, 5.16, 5.22, 6.2, P5\n**Jaccard:** 0.118 — AI adds ['1.26', '1.29', '1.3', '1.31', '5.12', 'CN1', 'CN4', 'D5.11', 'D5.5', 'D5.6']; Human adds ['1.17', '1.28', '1.34', '5.22', 'P5']",
+  "ai_used": [
+    "1.26",
+    "1.29",
+    "1.3",
+    "1.31",
+    "5.12",
+    "5.16",
+    "6.2",
+    "CN1",
+    "CN4",
+    "D5.11",
+    "D5.5",
+    "D5.6"
+  ],
+  "heath_refs": [
+    "1.17",
+    "1.28",
+    "1.34",
+    "5.16",
+    "5.22",
+    "6.2",
+    "P5"
+  ],
+  "ai_only": [
+    "1.26",
+    "1.29",
+    "1.3",
+    "1.31",
+    "5.12",
+    "CN1",
+    "CN4",
+    "D5.11",
+    "D5.5",
+    "D5.6"
+  ],
+  "heath_only": [
+    "1.17",
+    "1.28",
+    "1.34",
+    "5.22",
+    "P5"
+  ],
+  "jaccard": 0.118,
+  "proof_summary": "**Step 1.** Let ABC and DEF be equiangular triangles, with ∠BAC = ∠EDF, ∠ABC = ∠DEF, and ∠ACB = ∠DFE. We first prove AB : AC = DE : DF. The chosen route is a parallel cut, since 6.2 directly supplies "
+}

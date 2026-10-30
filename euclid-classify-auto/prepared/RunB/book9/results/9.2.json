@@ -1,0 +1,13 @@
+{
+  "proposition": "9.2",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided this classification. Heath's proof constructs D=A*A (a square), establishes A:B = D:C via 7.17, then uses the fact that D and C are both similar plane numbers (squares) to find a mean proportional between D and C (8.18), transfers this to A and B via the same-ratio result 8.8, and finally applies 8.20. The AI takes a fundamentally different route: it directly extracts N from S=N*N (by D7.18), applies the converse of 7.19 to A*B=N*N to immediately establish A:N=N:B, and then applies 8.20. The AI bypasses Heath's entire intermediate construction involving D=A^2 and the chain 7.17/8.18/8.8. The proof-tree containment test confirms this is not a depth difference: while 7.19 does cite 7.17, the heath_only items 8.18 and 8.8 do not appear inside the proof of 7.19, so the AI is using a genuinely independent argumentative route. Both proofs are logically complete and arrive at the same conclusion via valid but different intermediate steps.",
+  "jaccard": 0.143,
+  "ai_citations": "7.19|8.20|D7.18|D7.21",
+  "heath_citations": "7.17|8.18|8.20|8.8",
+  "ai_only": "7.19|D7.18|D7.21",
+  "heath_only": "7.17|8.18|8.8",
+  "audit_record": ""
+}

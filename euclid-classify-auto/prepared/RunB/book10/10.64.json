@@ -1,0 +1,53 @@
+{
+  "proposition": "10.64",
+  "book": 10,
+  "statement": "The square on the side of a rational plus a medial area applied to a rational straight line produces as breadth the fifth binomial.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area, divided into its straight lines at C, so that AC is the greater; let a rational straight line DE be set out, and let there be applied to DE the parallelogram DF equal to the square on AB, producing DG as its breadth; I say that DG is a fifth binomial straight line. Let the same construction as before be made. Since then AB is the side of a rational plus a medial area, divided at C, therefore AC, CB are straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational. [X. 40] Since then the sum of the squares on AC, CB is medial, therefore DL is medial, so that DM is rational and incommensurable in length with DE. [X. 22] Again, since twice the rectangle AC, CB, that is MF, is rational, therefore MG is rational and commensurable with DE. [X. 20] Therefore DM is incommensurable with MG; [X. 13] therefore DM, MG are rational straight lines commensurable in square only; therefore DG is binomial. [X. 36] I say next that it is also a fifth binomial straight line. For it can be proved similarly that the rectangle DK, KM is equal to the square on MN, and that DK is incommensurable in length with KM; therefore the square on DM is greater than the square on MG by the square on a straight line incommensurable with DM. [X. 18] And DM, MG are commensurable in square only, and the less, MG, is commensurable in length with DE. Therefore DG is a fifth binomial.",
+  "ai_proof_text": "10.64\n**Statement:** The square on the side of a rational plus a medial area applied to a rational straight line produces as breadth the fifth binomial.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, divided at C into its terms AC and CB, where AC is the greater. Then by the definition given in 10.40, AC and CB are straight lines incommensurable in square, the sum of the squares on AC and CB is medial, and the rectangle contained by AC and CB is rational.\n\n**Step 2.** Let DE be a rational straight line, and let the rectangle DEFG be equal to the square on AB, applied to DE, producing DG as breadth. We must show that DG is a fifth binomial straight line.\n\n**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB together with twice the rectangle contained by AC and CB. That is, DEFG = sq(AC) + sq(CB) + 2*rect(AC, CB).\n\n**Step 4.** Let DH be set equal to the sum of the squares on AC and CB applied to DE, producing the breadth DK, and let the remainder HG be set equal to twice the rectangle AC, CB applied to DE, producing the breadth KG. Then DG = DK + KG and the rectangle DEFG is the sum of rectangles DEHK and HKFG.\n\n**Step 5.** Since the sum of the squares on AC and CB is medial (by hypothesis from 10.40), and DE is rational, the area DEHK (equal to sq(AC) + sq(CB)) is medial. A medial area applied to a rational straight line produces as breadth a straight line rational and incommensurable in length with the line to which it is applied, by 10.22. Therefore DK is rational and incommensurable in length with DE.\n\n**Step 6.** Since the rectangle AC, CB is rational (by hypothesis from 10.40), twice the rectangle AC, CB is also rational, being commensurable with the rectangle AC, CB (as the double of a magnitude is commensurable with it, by 10.6). The rational area HKFG (equal to 2*rect(AC, CB)) applied to the rational straight line DE produces as breadth a straight line rational and commensurable in length with DE, by 10.20. Therefore KG is rational and commensurable in length with DE.\n\n**Step 7.** Since DK is incommensurable in length with DE (Step 5) and KG is commensurable in length with DE (Step 6), it follows by 10.13 that DK is incommensurable in length with KG.\n\n**Step 8.** Since DK and KG are each rational (Steps 5 and 6) and incommensurable in length with each other (Step 7), the straight line DG = DK + KG is a binomial, by 10.36.\n\n**Step 9.** We now show that DK is the greater term. The sum of the squares on AC and CB is medial, and twice the rectangle AC, CB is rational. Since a medial area is incommensurable with any rational area (for if they were commensurable, the medial area would be rational, contradicting 10.21 and the definition D10.1.4), the area sq(AC) + sq(CB) is incommensurable with 2*rect(AC, CB). But sq(AC) + sq(CB) = rect(DE, DK) and 2*rect(AC, CB) = rect(DE, KG), so rect(DE, DK) is incommensurable with rect(DE, KG). Since these rectangles share the side DE, by 10.11 applied via 6.1, DK is incommensurable in length with KG. Moreover, since AC and CB are incommensurable in square, the squares on AC and CB are incommensurable, so by 10.16 the sum sq(AC) + sq(CB) is incommensurable with each of sq(AC) and sq(CB). Since sq(AC) > sq(CB) (as AC > CB), and the sum of the squares is medial while twice the rectangle is rational, and a medial area exceeds a rational area when the terms are as specified in 10.40 (since the sum of squares exceeds twice the rectangle for lines incommensurable in square, by 2.7), we have that the area DEHK exceeds HKFG. Since both are applied to the same line DE, DK > KG.\n\n**Step 10.** We now determine the nature of the excess of the square on DK over the square on KG. Since rect(DE, DK) = sq(AC) + sq(CB) and rect(DE, KG) = 2*rect(AC, CB), we have rect(DE, DG) = sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AB) by 2.4, and also rect(DE, DK) - rect(DE, KG) = sq(AC) + sq(CB) - 2*rect(AC, CB) = (sq(AC) - sq(CB)) + 2*(sq(CB) - rect(AC,CB)). Instead, consider that by 2.7, sq(AC) + sq(CB) = 2*rect(AC, CB) + sq(AC - CB), so rect(DE, DK) = rect(DE, KG) + sq(AC - CB), hence rect(DE, DK) - rect(DE, KG) = sq(AC - CB), that is rect(DE, DK - KG) = sq(AC - CB).\n\n**Step 11.** Now apply the square on DK to DE. We have rect(DE, DK) = sq(AC) + sq(CB). Also rect(DE, KG) = 2*rect(AC, CB). Consider rect(DK, DK) = sq(DK). We need to find sq(DK) - sq(KG). Since DK and KG are the breadths produced by applying the respective areas to DE, we use the relationship: sq(DK) - sq(KG) = rect(DK + KG, DK - KG) = rect(DG, DK - KG). We know rect(DE, DK - KG) = sq(AC - CB) from Step 10, so DK - KG = sq(AC - CB)/DE. Also DG = sq(AB)/DE = (AC + CB)^2/DE.\n\n**Step 12.** Therefore sq(DK) - sq(KG) = rect(DG, DK - KG) = (sq(AB)/DE) * (sq(AC - CB)/DE) = sq(AB)*sq(AC - CB)/sq(DE). Also sq(AB) = sq(AC + CB) = sq(AC) + 2*rect(AC,CB) + sq(CB). And sq(AC - CB) = sq(AC) - 2*rect(AC,CB) + sq(CB) by 2.7 and 2.4. So sq(DK) - sq(KG) = sq(AC + CB)*sq(AC - CB)/sq(DE) = (sq(AC) - sq(CB))^2/sq(DE) (by the difference of squares identity from 2.5 and 2.6). That is, sq(DK) - sq(KG) = sq((sq(AC) - sq(CB))/DE).\n\n**Step 13.** Let L be a straight line such that sq(L) = sq(AC) - sq(CB). Then sq(DK) - sq(KG) = sq(L*L/DE), or more precisely, the straight line whose square equals sq(DK) - sq(KG) is defined by (sq(AC) - sq(CB))/DE.\n\n**Step 14.** We must determine whether this excess line is commensurable with DK. We have DK = (sq(AC) + sq(CB))/DE (in the sense of areas producing breadths). The excess is (sq(AC) - sq(CB))/DE. The ratio of DK to the excess line is as sq(AC) + sq(CB) is to sq(AC) - sq(CB). Now AC and CB are incommensurable in square (from 10.40), so sq(AC) is incommensurable with sq(CB). By 10.16, sq(AC) + sq(CB) is incommensurable with sq(AC), and similarly with sq(CB). The sum sq(AC) + sq(CB) is also incommensurable with sq(AC) - sq(CB), since if they were commensurable, then by 10.15 and addition/subtraction, both 2*sq(AC) and 2*sq(CB) would be commensurable with the sum, making sq(AC) commensurable with sq(CB), contradicting the hypothesis. Therefore DK is incommensurable in length with the straight line by which sq(DK) exceeds sq(KG). That is, the square on DK is greater than the square on KG by the square on a straight line incommensurable in length with DK.\n\n**Step 15.** From Step 6, KG is commensurable in length with DE, the rational straight line set out. From Step 5, DK is incommensurable in length with DE.\n\n**Step 16.** We now check the conditions for a fifth binomial (D10.2.5): the binomial DG = DK + KG has its terms DK and KG both rational and commensurable in square only (Step 7, Step 8). The square on the greater term DK exceeds the square on the lesser term KG by the square on a straight line incommensurable in length with DK (Step 14). The lesser term KG is commensurable in length with the rational straight line DE (Step 6). These are precisely the conditions defining a fifth binomial straight line by D10.2.4 and D10.2.5.\n\n**Step 17.** Therefore, the square on the side of a rational plus a medial area, applied to a rational straight line, produces as breadth the fifth binomial. Q.E.D.\n\n**USED:** 10.11, 10.13, 10.15, 10.16, 10.20, 10.21, 10.22, 10.36, 10.40, 10.6, 2.4, 2.7, 6.1, D10.1.3, D10.1.4, D10.2.4, D10.2.5\n**Human refs (from References field):** 10.13, 10.18, 10.20, 10.22, 10.36, 10.40\n**Jaccard:** 0.278 — AI adds ['10.11', '10.15', '10.16', '10.21', '10.6', '2.4', '2.7', '6.1', 'D10.1.3', 'D10.1.4', 'D10.2.4', 'D10.2.5']; Human adds ['10.18']",
+  "ai_used": [
+    "10.11",
+    "10.13",
+    "10.15",
+    "10.16",
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.36",
+    "10.40",
+    "10.6",
+    "2.4",
+    "2.7",
+    "6.1",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.4",
+    "D10.2.5"
+  ],
+  "heath_refs": [
+    "10.13",
+    "10.18",
+    "10.20",
+    "10.22",
+    "10.36",
+    "10.40"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.15",
+    "10.16",
+    "10.21",
+    "10.6",
+    "2.4",
+    "2.7",
+    "6.1",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.4",
+    "D10.2.5"
+  ],
+  "heath_only": [
+    "10.18"
+  ],
+  "jaccard": 0.278,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, divided at C into its terms AC and CB, where AC is the greater. Then by the definition given in 10.40, AC and CB are straight lines inc"
+}

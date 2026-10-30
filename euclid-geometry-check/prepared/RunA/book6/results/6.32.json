@@ -1,0 +1,76 @@
+{
+  "proposition": "6.32",
+  "run": "RunA",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Triangles ABC and DCE placed together at vertex C; B, C, D collinear on a single straight line",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AB is parallel to DE",
+      "type": "line_relationship"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A and E lie on opposite sides of line BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Angles BCA and DCE described as vertical angles at C (anticipates conclusion, not used as premise)",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line AE crosses line BD at point G (existence from opposite-side condition)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BD is a transversal to parallel lines AB and DE; alternate angles ABG = EDG by I.29",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Lines AE and BD intersect at G producing vertical angles AGB = EGD",
+      "type": "angle_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles ABG and EDG are equiangular",
+      "type": "triangle_relationship"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AB/ED = BG/GD from equiangular triangles by 6.4",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "G lies on segment BD between B and D, so BG + GD = BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "C lies between B and D on line BD, so BC + CD = BD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G and C both on segment BD at equal distance from D (GD = CD), so G coincides with C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Since G = C, line AE passes through C, making A, C, E collinear",
+      "type": "collinearity"
+    }
+  ],
+  "configuration_map": "Line BD is the base. C lies between B and D on this line (BC and CD are sides of the respective triangles). A lies on one side of line BD (vertex of triangle ABC), E lies on the opposite side (vertex of triangle DCE). AB is parallel to DE. Point G is constructed as the intersection of line AE with line BD. Since A and E are on opposite sides, G exists and a coordinate analysis confirms G lies strictly between B and D. The proportionality BG/GD = BC/CD (derived from the given BC/CD = AB/DE and the equiangular-triangle result AB/DE = BG/GD) forces G = C, establishing that A, C, E are collinear.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof constructs a coherent configuration with B, C, D collinear and A, E on opposite sides. The auxiliary point G (intersection of AE with BD) is correctly shown to lie between B and D, and the proportionality argument validly demonstrates G = C. The vertical angles remark in Step 1 anticipates the conclusion but is never used as a premise in the logical chain, so it introduces no circularity. No angle decomposition errors, no inside/outside contradictions, no ray-ordering inconsistencies."
+}

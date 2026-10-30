@@ -1,0 +1,13 @@
+{
+  "proposition": "7.3",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone: find GCM of the first two numbers (A,B), then find GCM of that result and the third number (C), and show the final result is GCM(A,B,C). Heath cites 7.2 as a unit for the first step and handles two explicit cases (D measures C vs. D does not measure C). The AI re-derives the Euclidean algorithm (antanairesis) inline for the pair A,B in Steps 2-4 rather than citing 7.2, adding definitions (D7.2, D7.5, D7.12) and common notions (CN2, CN3, CN5) that Heath leaves implicit, then applies 7.2 to D and C and collapses the two cases into a single application. Since the ai_only citations are entirely definitions and common notions used in the inline expansion, and heath_only is empty, this is a citation-depth difference with the same logical backbone, yielding G.",
+  "jaccard": 0.143,
+  "ai_citations": "7.2|CN2|CN3|CN5|D7.12|D7.2|D7.5",
+  "heath_citations": "7.2",
+  "ai_only": "CN2|CN3|CN5|D7.12|D7.2|D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

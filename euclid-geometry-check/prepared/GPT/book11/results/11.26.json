@@ -1,0 +1,46 @@
+{
+  "proposition": "11.26",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O, X1, X2 are non-collinear and their plane is pi; a plane pi-prime is chosen through line ell",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For Xi outside pi, XiHi is perpendicular to pi meeting it at Hi (foot); for Xi in pi, Hi = Xi; in particular H1 = X1, H2 = X2",
+      "type": "perpendicularity and point position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B on ray of ell from A with AB = OX1; C in pi-prime with angle BAC = angle X1OX2 and AC = OX2; triangle ABC congruent to triangle OX1X2 by SAS",
+      "type": "point position and triangle congruence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Each Hi copied to Hi-prime in pi-prime preserving angle from AB and distance from A, with correct side of AB; triangles ABHi-prime congruent to OX1Hi by SAS; under fitting each Hi coincides with Hi-prime",
+      "type": "point position in plane"
+    },
+    {
+      "step": "Step 5",
+      "claim": "At each Hi-prime, perpendicular to pi-prime erected on corresponding side with Hi-prime Xi-prime = HiXi; for Xi in pi, Xi-prime = Hi-prime; X1-prime = B, X2-prime = C",
+      "type": "perpendicularity and point position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Under fitting, perpendiculars HiXi become perpendiculars to pi-prime at Hi-prime on the same side as constructed perpendiculars; by XI.13 (uniqueness) these rays coincide; equal lengths so endpoints coincide (CN5)",
+      "type": "perpendicular uniqueness and coincidence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "All bounding rays and plane angles coincide under fitting; at least one ray lies outside pi so its copy lies outside pi-prime, ensuring the angle is solid",
+      "type": "solid angle configuration"
+    }
+  ],
+  "configuration_map": "The proof decomposes a 3D solid angle at O into a base-plane arrangement plus perpendicular offsets. Base plane pi contains O, X1, X2. All other Xi are projected onto pi giving feet Hi. The entire base arrangement is copied into plane pi-prime (through line ell) via: (1) copy triangle OX1X2 to ABC using SAS, establishing fitting O->A, X1->B, X2->C; (2) copy each foot Hi to Hi-prime using angle-and-distance from A; (3) rebuild perpendicular offsets at Hi-prime with matching lengths. The superposition argument (fitting) then verifies all points and rays coincide. Points B and A are on line ell, ensuring the constructed solid angle has an edge on the given line.",
+  "pass_reason": "All spatial claims are mutually consistent. The projection-and-rebuild approach (project to base plane, copy 2D arrangement, rebuild perpendicular offsets) is geometrically sound. The use of XI.13 for perpendicular uniqueness and CN5 for endpoint coincidence are both applied in configurations consistent with their hypotheses. No angle decomposition errors or point position contradictions were found."
+}

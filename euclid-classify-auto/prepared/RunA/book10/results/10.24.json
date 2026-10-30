@@ -1,0 +1,13 @@
+{
+  "proposition": "10.24",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as Granularity difference (G). Both proofs share the same backbone: (1) sq(A) is medial since A is medial, (2) rect(A,B) is commensurable with sq(A) because A and B are commensurable in length, (3) therefore rect(A,B) is medial. The difference lies entirely in citation depth. Heath invokes X.23 ('a straight line commensurable with a medial straight line is medial') as a packaged unit to go from step 2 to step 3. The AI instead re-derives the content of X.23 inline, introducing a rational reference line and applying areas to it, citing X.22, X.11, X.13, and X.21 -- all of which appear inside Heath's proof of X.23. The proof-tree containment test confirms this: the AI's additional citations (10.22, 10.13, 10.21) are the internal machinery of 10.23, and the AI's use of 10.5 and 10.6 is an alternative method for establishing the commensurability sub-step that Heath handles by direct geometric reasoning (AB=BD). The key intermediate conclusions are the same in both proofs, with the AI simply operating at finer granularity.",
+  "jaccard": 0.222,
+  "ai_citations": "10.11|10.13|10.21|10.22|10.5|10.6|6.1|D10.1.3",
+  "heath_citations": "10.11|10.23|6.1",
+  "ai_only": "10.13|10.21|10.22|10.5|10.6|D10.1.3",
+  "heath_only": "10.23",
+  "audit_record": ""
+}

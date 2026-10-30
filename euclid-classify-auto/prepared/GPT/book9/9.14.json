@@ -1,0 +1,28 @@
+{
+  "proposition": "9.14",
+  "book": 9,
+  "statement": "If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.",
+  "heath_proof": "For let the number A be the least that is measured by the prime numbers B, C, D; I say that A will not be measured by any other prime number except B, C, D. For, if possible, let it be measured by the prime number E, and let E not be the same with any one of the numbers B, C, D. Now, since E measures A, let it measure it according to F; therefore E by multiplying F has made A. And A is measured by the prime numbers B, C, D. But, if two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers; [VII. 30] therefore B, C, D will measure one of the numbers E, F. Now they will not measure E; for E is prime and not the same with any one of the numbers B, C, D. Therefore they will measure F, which is less than A: which is impossible, for A is by hypothesis the least number measured by B, C, D. Therefore no prime number will measure A except B, C, D.",
+  "ai_proof_text": "9.14\n**Statement:** If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.\n\n**Step 1.** Let N be the least number measured by the given prime numbers p₁, …, pᵣ. Suppose, for contradiction, that another prime q measures N, with q different from every pᵢ. [Hypothesis; D7.11.]\n\n**Step 2.** None of the pᵢ measures q, since q is prime and each pᵢ is a number different from q. Consequently N cannot equal q, because every pᵢ measures N. [D7.11; Step 1.]\n\n**Step 3.** Since q measures N, let M be the number of times it measures N. Thus M multiplying q produces N. Because N is not q, M is a number rather than the unit. Moreover, taking one unit from each of these M copies of q gives M units and leaves units over, since q is itself a number. Hence M is less than N. [D7.5; D7.15; D7.2; CN5; Step 2.]\n\n**Step 4.** Take any of the given primes pᵢ. It measures N, the product of M and q; therefore it measures M or q, by 7.30. It does not measure q by Step 2, so it measures M. Thus every given prime measures M. The direct path is to use 7.30 here, because the required product is already supplied by the supposed extra prime divisor. [7.30; Steps 1–3.]\n\n**Step 5.** Therefore M is a number less than N measured by all the given primes, contradicting the hypothesis that N is the least such number. Hence no prime other than the originally given primes measures N. [Steps 3–4; leastness hypothesis.]\n\n**USED:** 7.30, CN5, D7.11, D7.15, D7.2, D7.5\n**Human refs (from References field):** 7.30\n**Jaccard:** 0.167 — AI adds ['CN5', 'D7.11', 'D7.15', 'D7.2', 'D7.5']",
+  "ai_used": [
+    "7.30",
+    "CN5",
+    "D7.11",
+    "D7.15",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.30"
+  ],
+  "ai_only": [
+    "CN5",
+    "D7.11",
+    "D7.15",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let N be the least number measured by the given prime numbers p₁, …, pᵣ. Suppose, for contradiction, that another prime q measures N, with q different from every pᵢ. [Hypothesis; D7.11.]  "
+}

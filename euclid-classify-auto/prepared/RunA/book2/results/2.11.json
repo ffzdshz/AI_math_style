@@ -1,0 +1,13 @@
+{
+  "proposition": "2.11",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same construction and the same first major intermediate conclusion: rect(CF, FA) = sq(AB), established via II.6 and I.47 with area subtraction. However, the proofs diverge in how they bridge from this result to the final conclusion rect(AB, BH) = sq(AH). Heath uses direct geometric area identification in the diagram (FK = AD, subtract AK to get FH = HD, then identify HD as rect(AB,BH) and FH as sq(AH)). The AI instead takes an algebraic route, applying Proposition 2.3 to decompose rect(CF,FA) into rect(CA,FA) + sq(FA), substituting CA = AB and FA = AH to get rect(AB,AH) + sq(AH) = sq(AB), then using Proposition 2.2 to establish rect(AB,AH) + rect(AB,HB) = sq(AB), and equating to conclude sq(AH) = rect(AB,HB). The AI's use of 2.2 and 2.3 as substantive intermediate steps constitutes a genuinely different backbone for the second half of the proof, making this a path difference rather than a granularity difference. Q2 Case B applies, and Q3 confirms the AI's alternative path is logically valid and complete.",
+  "jaccard": 0.3,
+  "ai_citations": "1.10|1.46|1.47|2.2|2.3|2.6|CN3|P1|P2|P3",
+  "heath_citations": "1.46|1.47|2.6",
+  "ai_only": "1.10|2.2|2.3|CN3|P1|P2|P3",
+  "heath_only": "",
+  "audit_record": ""
+}

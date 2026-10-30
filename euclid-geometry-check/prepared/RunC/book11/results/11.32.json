@@ -1,0 +1,51 @@
+{
+  "proposition": "11.32",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB and CD are parallelepipedal solids of the same height, with parallelogram bases AE and CF",
+      "type": "solid geometry setup"
+    },
+    {
+      "step": "Step 2",
+      "claim": "On the line containing one side of AE, produce it and set out m copies of parallelogram AE in succession, forming an m-fold multiple base; complete the parallelepiped on this extended base with the same height and edge directions as AB",
+      "type": "solid construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Planes parallel to opposite faces cut the composite parallelepiped into m equal portions, each with base equal to AE and the same height (by 11.25)",
+      "type": "plane cutting / solid decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Similarly set out n copies of CF in succession and complete the parallelepiped with same height and edge directions as CD; composite is n times solid CD (by 11.25)",
+      "type": "solid construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "The m-fold and n-fold bases are parallelogrammic regions and the solids on them have the same height",
+      "type": "same-height claim"
+    },
+    {
+      "step": "Step 5",
+      "claim": "If the m-fold multiple of base AE is greater than the n-fold multiple of base CF, then the parallelepiped on the m-fold base is greater than that on the n-fold base (by 11.31 and 11.25)",
+      "type": "solid comparison"
+    },
+    {
+      "step": "Step 6",
+      "claim": "If the m-fold base AE equals the n-fold base CF, then the m-fold solid AB equals the n-fold solid CD (by 11.31, parallelepipeds on equal bases and same height are equal)",
+      "type": "solid comparison"
+    },
+    {
+      "step": "Step 7",
+      "claim": "If the m-fold base AE is less than the n-fold base CF, then the m-fold solid AB is less than the n-fold solid CD",
+      "type": "solid comparison"
+    }
+  ],
+  "configuration_map": "Two parallelepipeds AB and CD share the same height. Extended parallelepipeds are formed by juxtaposing m copies of base AE (or n copies of base CF) along a line containing one side of the respective base. The completed extended solids have the same height as the originals and are cut by planes parallel to opposite faces into equal sub-solids. No auxiliary points are placed inside any figure; no angles are decomposed; no betweenness or interior/exterior claims are made. The entire argument is a Eudoxian proportion proof (Definition 5.5) with geometric content delegated to Propositions 11.25 and 11.31.",
+  "pass_reason": "The proof is a standard Eudoxian proportion argument (D5.5 method) with straightforward spatial content: juxtaposition of parallelogram bases, construction of parallelepipeds of the same height, and cutting by planes parallel to opposite faces. All spatial claims are mutually consistent. There are no angle decompositions, no interior/exterior point claims, and no betweenness claims that could conflict. The geometric heavy lifting is correctly delegated to 11.25 and 11.31."
+}

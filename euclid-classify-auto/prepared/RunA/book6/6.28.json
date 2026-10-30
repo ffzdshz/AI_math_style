@@ -1,0 +1,43 @@
+{
+  "proposition": "6.28",
+  "book": 6,
+  "statement": "To a given straight line to apply a parallelogram equal to a given rectilineal figure and deficient by a parallelogrammic figure similar to a given one: thus the given rectilineal figure must not be greater than the parallelogram described on the half of the straight line and similar to the defect.",
+  "heath_proof": "Let AB be the given straight line, C the given rectilineal figure to which the figure to be applied to AB is required to be equal, not being greater than the parallelogram described on the half of AB and similar to the defect, and D the parallelogram to which the defect is required to be similar; thus it is required to apply to the given straight line AB a parallelogram equal to the given rectilineal figure C and deficient by a parallelogrammic figure which is similar to D. Let AB be bisected at the point E, and on EB let EBFG be described similar and similarly situated to D; [VI. 18] let the parallelogram AG be completed. If then AG is equal to C, that which was enjoined will have been done; for there has been applied to the given straight line AB the parallelogram AG equal to the given rectilineal figure C and deficient by a parallelogrammic figure GB which is similar to D.  But, if not, let HE be greater than C. Now HE is equal to GB; therefore GB is also greater than C.  Let KLMN be constructed at once equal to the excess by which GB is greater than C and similar and similarly situated to D. [VI. 25] But D is similar to GB; therefore KM is also similar to GB. [VI. 21]  Let, then, KL correspond to GE, and LM to GF. Now, since GB is equal to C, KM, therefore GB is greater than KM; therefore also GE is greater than KL, and GF than LM. Let GO be made equal to KL, and GP equal to LM; and let the parallelogram OGPQ be completed; therefore it is equal and similar to KM. Therefore GQ is also similar to GB; [VI. 21] therefore GQ is about the same diameter with GB. [VI. 26] Let GQB be their diameter, and let the figure be described. Then, since BG is equal to C, KM, and in them GQ is equal to KM, therefore the remainder, the gnomon UWV, is equal to the remainder C. And, since PR is equal to OS, let QB be added to each; therefore the whole PB is equal to the whole OB. But OB is equal to TE, since the side AE is also equal to the side EB; [I. 36] therefore TE is also equal to PB. Let OS be added to each; therefore the whole TS is equal to the whole, the gnomon VWU. But the gnomon VWU was proved equal to C; therefore TS is also equal to C.  Therefore to the given straight line AB there has been applied the parallelogram ST equal to the given rectilineal figure C and deficient by a parallelogrammic figure QB which is similar to D.",
+  "ai_proof_text": "6.28\n**Statement:** To a given straight line to apply a parallelogram equal to a given rectilineal figure and deficient by a parallelogrammic figure similar to a given one: thus the given rectilineal figure must not be greater than the parallelogram described on the half of the straight line and similar to the defect.\n\n**Step 1.** Let AB be the given straight line, C the given rectilineal figure to which the applied parallelogram must be equal, and D the given parallelogram to which the defect is to be similar. It is required to apply to AB a parallelogram equal to C and deficient by a parallelogrammic figure similar to D. The condition is that C must not be greater than the parallelogram described on the half of AB and similar to the defect D.\n\n**Step 2.** Bisect AB at the point E [1.10]. On EB, describe the parallelogram EBFG similar and similarly situated to D [6.18]. Then by the hypothesis (the diorismos), the rectilineal figure C is not greater than the parallelogram EBFG.\n\n**Step 3.** Case 1: If C is equal to the parallelogram EBFG, then the parallelogram EBFG has been applied to the half EB of the straight line AB, is equal to the given rectilineal figure C, and is deficient from the whole line AB by the parallelogram on the other half EA, which is similar to EBFG and hence similar to D (since a congruent copy on the equal segment EA is similar to D). Thus the problem is solved in this case.\n\n**Step 4.** Case 2: Suppose C is less than the parallelogram EBFG. Then EBFG is greater than C.\n\n**Step 5.** Construct a parallelogram KLMN equal to the excess by which EBFG exceeds C, and similar and similarly situated to D [6.25]. Since D is similar to EBFG [by construction in Step 2], KLMN is also similar to EBFG [6.21].\n\n**Step 6.** Since EBFG is greater than KLMN (because EBFG exceeds C by exactly KLMN, and C is positive), EBFG is greater than KLMN. Therefore the side GE is greater than the corresponding side KL, and the side GF is greater than the corresponding side KM [since similar parallelograms with the greater having greater area must have greater corresponding sides].\n\n**Step 7.** Make GO equal to KL and GP equal to KM [1.3], placing these along GE and GF respectively, so that GO falls on GE and GP falls on GF. Complete the parallelogram OGPQ [1.31, P1]. Then OGPQ is equal and similar to KLMN, since it has the same corresponding sides (GO = KL, GP = KM) and the same angles [by construction, OGPQ is similar and similarly situated to KLMN].\n\n**Step 8.** But KLMN is similar to EBFG [Step 5], so OGPQ is similar to EBFG [6.21]. Therefore the parallelogram OGPQ is about the same diameter as EBFG [6.26].\n\n**Step 9.** Let GQB be the diameter of both OGPQ and EBFG. Complete the figure. Since EBFG equals C plus KLMN [Step 5], and KLMN equals OGPQ [Step 7], we have EBFG equals C plus OGPQ. Subtracting OGPQ from both sides, the gnomon (that is, the L-shaped region of EBFG remaining after removing OGPQ) equals C [CN3].\n\n**Step 10.** Now since the complement of a parallelogram about the diameter equals the other complement [1.43], the parallelogram TE (the complement on one side of the diameter) equals the parallelogram PQ-complement (the complement on the other side). Adding OGPQ to the complement on the PQ side, we see that the whole parallelogram TS (applied to the segment AE and extending along AB) relates to the gnomon. Specifically, the gnomon consisting of the region EBFG minus OGPQ equals the complement TE plus the region between, which together form the applied parallelogram on the portion of AB from A up to a certain point.\n\n**Step 11.** More precisely, since the gnomon of EBFG around the interior parallelogram OGPQ equals C [Step 9], and the gnomon is composed of the two complements and OGPQ's supplementary regions, we use the property that the complement on one side of the diameter equals the complement on the other side [1.43]. The parallelogram applied to the segment AS of line AB (where S is determined by the construction) equals the gnomon, which equals C.\n\n**Step 12.** The deficiency from the full line AB is the parallelogram on the remaining segment SB. This parallelogram on SB is similar to OGPQ [6.24, since the parallelograms about the diameter of EBFG are similar both to the whole and to one another], and OGPQ is similar to D [Steps 5 and 7, via 6.21]. Therefore the defect is similar to D.\n\n**Step 13.** Thus we have applied to the given straight line AB a parallelogram (on segment AS) equal to the given rectilineal figure C, deficient by a parallelogrammic figure (on segment SB) similar to the given parallelogram D.\n\n**Step 14.** Therefore, to a given straight line there has been applied a parallelogram equal to a given rectilineal figure and deficient by a parallelogrammic figure similar to a given one, subject to the necessary condition that the given figure not be greater than the parallelogram on the half of the line similar to the defect. Q.E.F.\n\n**USED:** 1.10, 1.3, 1.31, 1.43, 6.18, 6.21, 6.24, 6.25, 6.26, 6.27, CN3, P1\n**Human refs (from References field):** 1.36, 6.18, 6.21, 6.25, 6.26\n**Jaccard:** 0.308 — AI adds ['1.10', '1.3', '1.31', '1.43', '6.24', '6.27', 'CN3', 'P1']; Human adds ['1.36']",
+  "ai_used": [
+    "1.10",
+    "1.3",
+    "1.31",
+    "1.43",
+    "6.18",
+    "6.21",
+    "6.24",
+    "6.25",
+    "6.26",
+    "6.27",
+    "CN3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.36",
+    "6.18",
+    "6.21",
+    "6.25",
+    "6.26"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.3",
+    "1.31",
+    "1.43",
+    "6.24",
+    "6.27",
+    "CN3",
+    "P1"
+  ],
+  "heath_only": [
+    "1.36"
+  ],
+  "jaccard": 0.308,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, C the given rectilineal figure to which the applied parallelogram must be equal, and D the given parallelogram to which the defect is to be similar. It i"
+}

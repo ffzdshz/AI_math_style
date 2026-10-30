@@ -1,0 +1,13 @@
+{
+  "proposition": "10.37",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determines the classification. Heath's proof uses a direct argument: referencing the reasoning pattern from 10.36, it establishes that the squares on AB, BC are incommensurable with twice the rectangle AB, BC, then applies componendo with 10.16 to conclude that the square on AC is incommensurable with the rational rectangle AB, BC, hence irrational. The AI proof takes a fundamentally different path: it separately establishes that the sum of squares on AB, BC is medial (irrational) via 10.15 and 10.13, that twice the rectangle is rational via 10.6, and then uses a proof by contradiction to show the square on AC cannot be rational (and further argues it cannot be medial, citing 10.26). The backbones differ -- Heath uses direct incommensurability reasoning with 10.16 while the AI uses contradiction via the rational/irrational dichotomy. The proof-tree containment test confirms this is not a mere depth difference: although several ai_only citations (10.13, 10.15, 10.6) appear inside Heath's proof of 10.36, the AI does not cite 10.36 as a unit and instead follows a structurally different contradiction-based argument that avoids 10.16 entirely. Under Q3, the AI's different path is logically complete and valid, yielding classification D.",
+  "jaccard": 0.2,
+  "ai_citations": "10.13|10.15|10.26|10.6|2.4|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.16|10.36|2.4|D10.1.4",
+  "ai_only": "10.13|10.15|10.26|10.6|D10.1.2|D10.1.3",
+  "heath_only": "10.16|10.36",
+  "audit_record": ""
+}

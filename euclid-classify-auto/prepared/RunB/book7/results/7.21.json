@@ -1,0 +1,13 @@
+{
+  "proposition": "7.21",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same logical backbone: assume for contradiction that smaller numbers C, D exist with the same ratio as A, B; apply 7.20 to establish that C measures A and D measures B the same number of times; derive that a common measure greater than the unit exists for A and B; and reach a contradiction with the hypothesis that A and B are prime to one another (D7.12). The difference lies in how the common measure is extracted: Heath uses 7.16 (commutativity of multiplication) to convert 'C measures A according to E' into 'E measures A according to C', while the AI goes directly from A = nC to 'n measures A' by invoking D7.3 (the definition of 'measures'). The AI also explicitly cites D7.3 where Heath leaves the definition implicit. Since the key intermediate conclusions are identical and only the citation depth differs (heath_only = 7.16 is a theorem whose role is replaced by a direct definitional argument in the AI proof, and ai_only = D7.3 is a definition), this is a granularity difference decided at Q2 Case A.",
+  "jaccard": 0.5,
+  "ai_citations": "7.20|D7.12|D7.3",
+  "heath_citations": "7.16|7.20|D7.12",
+  "ai_only": "D7.3",
+  "heath_only": "7.16",
+  "audit_record": ""
+}

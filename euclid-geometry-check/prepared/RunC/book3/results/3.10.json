@@ -1,0 +1,76 @@
+{
+  "proposition": "3.10",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "B, G, F are three distinct points lying on both circle 1 and circle 2 (assumed for contradiction)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Circle 1 and circle 2 cut one another (intersect)",
+      "type": "circle_relationship"
+    },
+    {
+      "step": "Step 2",
+      "claim": "K is the center of circle 1",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "B, G, F lie on the circumference of circle 1, so KB = KG = KF (equal radii)",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "B, G, F lie on circle 2, so three equal lines from K fall upon circle 2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Case 1: K lies inside circle 2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Three equal lines from interior point K to circle 2 implies K is center of circle 2 (by 3.9)",
+      "type": "center_determination"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Circles 1 and 2 share center K but cut each other, contradicting 3.5",
+      "type": "circle_relationship"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Case 2: K lies outside circle 2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "From external point K, at most two equal lines can fall on circle 2 (by 3.8), but three do",
+      "type": "line_count_constraint"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Case 3: K lies on the circumference of circle 2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "K is on the diameter of circle 2 through K (as an endpoint) and is not the center of circle 2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "From point K on diameter of circle 2, not the center, at most two equal lines fall on circle 2 (by 3.7), but three do",
+      "type": "line_count_constraint"
+    }
+  ],
+  "configuration_map": "Configuration: Two circles (circle 1 and circle 2) that cut each other, assumed to intersect at three distinct points B, G, F. K is the center of circle 1, so KB = KG = KF. The position of K relative to circle 2 is unknown and handled by exhaustive case analysis: (1) K inside circle 2, (2) K outside circle 2, (3) K on circle 2. In each case, the three equal segments from K to points on circle 2 yield a contradiction via propositions 3.9, 3.8, and 3.7 respectively. No auxiliary constructions create conflicting spatial claims. The only construction beyond the initial setup is drawing a diameter of circle 2 through K in Case 3.",
+  "pass_reason": "The proof uses a clean exhaustive case analysis on K's position relative to circle 2 (inside, outside, on circumference). Each case correctly applies the corresponding proposition (3.9, 3.8, 3.7) to derive a contradiction from three equal lines falling from K to circle 2. No angle decompositions, ray-ordering claims, or betweenness claims are made. All spatial claims are mutually consistent within each case, and the three cases are exhaustive. The proof contains no spatial configuration contradictions."
+}

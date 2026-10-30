@@ -1,0 +1,27 @@
+{
+  "proposition": "8.1",
+  "book": 8,
+  "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, in continued proportion, and let the extremes of them A, D be prime to one another; I say that A, B, C, D are the least of those which have the same ratio with them. For, if not, let E, F, G, H be less than A, B, C, D, and in the same ratio with them. Now, since A, B, C, D are in the same ratio with E, F, G, H, and the multitude of the numbers A, B, C, D is equal to the multitude of the numbers E, F, G, H, therefore, ex aequali, as A is to D, so is E to H. [VII. 14]  But A, D are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore A measures E, the greater the less: which is impossible. Therefore E, F, G, H which are less than A, B, C, D are not in the same ratio with them. Therefore A, B, C, D are the least of those which have the same ratio with them.",
+  "ai_proof_text": "8.1\n**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.\n\n**Step 1.** Let A1, A2, ..., An be as many numbers as we please in continued proportion, and let the extremes A1 and An be prime to one another. We must show that A1, A2, ..., An are the least numbers of those which have the same ratio with them.\n\n**Step 2.** By 7.33, we can find numbers B1, B2, ..., Bn which are the least of those having the same ratio as A1, A2, ..., An. Since these are the least, either the Bi equal the Ai respectively, or the Bi are less than the Ai respectively.\n\n**Step 3.** Since B1, B2, ..., Bn are the least in the same continued proportion as A1, A2, ..., An, each consecutive pair Bi, Bi+1 are the least numbers in the ratio Ai : Ai+1. By 7.20, the least numbers of those which have the same ratio measure those which have the same ratio the same number of times. Applying this to the first consecutive pair: B1 measures A1 and B2 measures A2, and A1/B1 = A2/B2.\n\n**Step 4.** Applying 7.20 similarly to the second consecutive pair B2, B3 and A2, A3: B2 measures A2 and B3 measures A3, and A2/B2 = A3/B3. Continuing this process for each consecutive pair through the entire sequence, we obtain A1/B1 = A2/B2 = A3/B3 = ... = An/Bn. Let this common value be m, so that Ai = m * Bi for each i.\n\n**Step 5.** In particular, A1 = m * B1 and An = m * Bn. Therefore m measures both A1 and An.\n\n**Step 6.** But A1 and An are prime to one another by hypothesis, meaning by D7.12 they are measured by a unit alone as a common measure. Since m measures both A1 and An, m must be a unit, that is, m = 1.\n\n**Step 7.** Therefore Ai = 1 * Bi = Bi for each i from 1 to n. Hence A1, A2, ..., An are themselves the least numbers of those which have the same ratio with them. Q.E.D.\n\n**USED:** 7.20, 7.33, D7.12\n**Human refs (from References field):** 7.14, 7.20, 7.21\n**Jaccard:** 0.200 — AI adds ['7.33', 'D7.12']; Human adds ['7.14', '7.21']",
+  "ai_used": [
+    "7.20",
+    "7.33",
+    "D7.12"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "7.33",
+    "D7.12"
+  ],
+  "heath_only": [
+    "7.14",
+    "7.21"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A1, A2, ..., An be as many numbers as we please in continued proportion, and let the extremes A1 and An be prime to one another. We must show that A1, A2, ..., An are the least numbers"
+}

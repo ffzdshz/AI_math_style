@@ -1,0 +1,26 @@
+{
+  "proposition": "1.20",
+  "book": 1,
+  "statement": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+  "heath_proof": "For let ABC be a triangle; I say that in the triangle ABC two sides taken together in any manner are greater than the remaining one, namely BA, AC greater than BC, AB, BC greater than AC, BC, CA greater than AB. For let BA be drawn through to the point D, let DA be made equal to CA, and let DC be joined. Then, since DA is equal to AC, the angle ADC is also equal to the angle ACD; [I. 5] therefore the angle BCD is greater than the angle ADC. [C. N. 5] And, since DCB is a triangle having the angle BCD greater than the angle BDC, and the greater angle is subtended by the greater side, [I. 19]therefore DB is greater than BC. But DA is equal to AC; therefore BA, AC are greater than BC. Similarly we can prove that AB, BC are also greater than CA, and BC, CA than AB.",
+  "ai_proof_text": "1.20\n**Statement:** In any triangle two sides taken together in any manner are greater than the remaining one.\n\n**Step 1.** Let ABC be any triangle. We wish to show that any two sides taken together are greater than the remaining one. It suffices to prove BA + AC > BC, since the argument is symmetric for the other pairs of sides.\n\n**Step 2.** Produce BA beyond A to a point D such that AD = AC. This is possible by extending BA along the straight line (P2) and then cutting off from the extension a length equal to AC (1.3). Now BD = BA + AD = BA + AC.\n\n**Step 3.** Since AD = AC, triangle ACD is isosceles with the two equal sides meeting at A. By 1.5, the base angles are equal: angle ACD = angle ADC.\n\n**Step 4.** Now angle BCD = angle BCA + angle ACD. Since angle BCA is an angle of triangle ABC and is therefore positive, angle BCD > angle ACD (CN5, the whole is greater than the part).\n\n**Step 5.** From Steps 3 and 4, angle BCD > angle ACD = angle ADC. Since D lies on ray BA beyond A, the angle ADC is the same as angle BDC. Therefore angle BCD > angle BDC.\n\n**Step 6.** In triangle BDC, angle BCD > angle BDC. By 1.19, the side opposite the greater angle is greater than the side opposite the lesser angle. Therefore BD > BC.\n\n**Step 7.** Since BD = BA + AC (from Step 2), we conclude BA + AC > BC. By the same construction applied to the other pairs of sides, AB + BC > AC and BC + CA > AB. Therefore in any triangle, two sides taken together in any manner are greater than the remaining one. Q.E.F.\n\n**USED:** 1.19, 1.3, 1.5, CN5, P2\n**Human refs (from References field):** 1.19, 1.5, CN5\n**Jaccard:** 0.600 — AI adds ['1.3', 'P2']",
+  "ai_used": [
+    "1.19",
+    "1.3",
+    "1.5",
+    "CN5",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.19",
+    "1.5",
+    "CN5"
+  ],
+  "ai_only": [
+    "1.3",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.6,
+  "proof_summary": "**Step 1.** Let ABC be any triangle. We wish to show that any two sides taken together are greater than the remaining one. It suffices to prove BA + AC > BC, since the argument is symmetric for the ot"
+}

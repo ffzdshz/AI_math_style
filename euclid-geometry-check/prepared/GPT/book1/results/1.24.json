@@ -1,0 +1,56 @@
+{
+  "proposition": "1.24",
+  "run": "GPT",
+  "book": 1,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "A ray from A is constructed strictly inside angle BAC, making angle BAX = angle EDF with AB; point X is placed on this ray at distance AC from A (AX = AC)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "The bisector of angle XAC lies strictly inside angle BAC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "M (intersection of bisector with BC) lies strictly between B and C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Rays from A occur in angular order AB, AX, AM, AC within angle BAC",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "B and X lie on the same side of line AM",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle XAM = angle MAC (angle bisector)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles XAM and CAM are congruent by SAS (AX=AC, AM common, angle XAM = angle CAM), giving XM = CM",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "BM + MX > BX by triangle inequality (non-collinear case) or because B and X are on the same ray from M (collinear case)",
+      "type": "triangle_inequality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "BC = BM + MC (M between B and C), and MC = MX, so BC = BM + MX > BX = EF",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "Point X: On a ray from A inside angle BAC, at angular position angle EDF from AB, at distance AC from A. X is inside angle BAC but not necessarily inside triangle ABC. Its exact position relative to BC does not matter for the proof.\n\nPoint M: On segment BC, between B and C. It is the intersection of the angle bisector of angle XAC with side BC. The bisector exists inside angle BAC because it lies between rays AX and AC, both of which are inside or on the boundary of angle BAC. By the crossbar theorem, this ray from A must cross segment BC.\n\nAngular ordering from A: AB (at 0), AX (at angle EDF), AM (at angle EDF + half of angle XAC), AC (at angle BAC). This ordering is strict because angle EDF is strictly less than angle BAC.\n\nSide-of-line relationships: B and X are on the same side of line AM because rays AB and AX are both angularly on the B-side of ray AM. C is on the opposite side of line AM from B and X.",
+  "pass_reason": "All spatial claims are mutually consistent. The ray ordering AB, AX, AM, AC is valid given angle EDF less than angle BAC. The crossbar theorem guarantees M exists on segment BC. The same-side claim for B and X relative to line AM follows from the angular ordering. The SAS application in Step 5 and the triangle inequality in Step 6 are both geometrically valid in the established configuration. No angle decomposition errors: the proof bisects angle XAC and uses the triangle inequality rather than decomposing angles as sums, avoiding the common configuration trap."
+}

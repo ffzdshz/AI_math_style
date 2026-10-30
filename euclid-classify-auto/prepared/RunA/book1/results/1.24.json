@@ -1,0 +1,13 @@
+{
+  "proposition": "1.24",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same start (BC = EG via I.4) and end (EG > EF via I.19), but their key intermediate conclusions differ fundamentally. Heath uses I.5 (isosceles triangle theorem) to establish that angles DGF and DFG are equal (since DF = DG), then argues through angle ordering. The AI instead uses I.21 (interior point angle theorem) to establish directly that angle DFE > angle DGE, then chains inequalities via CN5 to reach angle EFG > angle EGF. The proof-tree containment test confirms genuine path difference: I.5 (heath_only) does not appear inside Heath's proof of I.21 (the AI's distinctive citation), which relies on I.20 and I.16 instead. Since the AI's different path is logically complete and sound, this is a valid path difference (D).",
+  "jaccard": 0.375,
+  "ai_citations": "1.19|1.21|1.23|1.3|1.4|CN5|P1",
+  "heath_citations": "1.19|1.23|1.4|1.5",
+  "ai_only": "1.21|1.3|CN5|P1",
+  "heath_only": "1.5",
+  "audit_record": ""
+}

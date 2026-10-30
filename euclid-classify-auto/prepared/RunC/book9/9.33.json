@@ -1,0 +1,30 @@
+{
+  "proposition": "9.33",
+  "book": 9,
+  "statement": "If a number have its half odd, it is even-times odd only.",
+  "heath_proof": "For let the number A have its half odd; I say that A is even-times odd only. Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times. [VII. Def. 9] I say next that it is also even-times odd only. For, if A is even-times even also, it will be measured by an even number according to an even number; [VII. Def. 8] so that the half of it will also be measured by an even number though it is odd: which is absurd. Therefore A is even-times odd only.",
+  "ai_proof_text": "9.33\n**Statement:** If a number have its half odd, it is even-times odd only.\n\n**Step 1.** Let N be a number whose half is odd. Then N is divisible into two equal parts (so N is even by D7.6), and N = 2m where m is the half of N and m is odd.\n\n**Step 2.** Since 2 is even and 2 measures N according to m, which is odd, N is an even-times odd number by D7.9.\n\n**Step 3.** We now show that N is not also even-times even. Suppose, for the sake of contradiction, that N is even-times even. Then by D7.8, some even number a measures N according to an even number b, so that N = a * b with a even and b even.\n\n**Step 4.** Since a is even, by D7.6, a is divisible into two equal parts, so a = 2c for some number c. Then since a measures N and a = 2c, we have N = 2c * b.\n\n**Step 5.** Since N = 2m and N = 2c * b, and c measures a while a measures N, it follows that c measures N. Moreover, since a = 2c measures N according to b, and 2 measures a according to c, the number c measures N according to 2b, so that m = c * b (since N = 2m = 2 * (c * b), and 2 measures N according to m on one hand and according to c * b on the other, whence m = c * b by D7.15).\n\n**Step 6.** Now m is odd and m = c * b. We consider whether c is even or odd. First suppose c is even. Then b * c = c * b = m by 7.16 (commutativity of multiplication). Since c is even and b is any number, we write c = 2k for some k. Then m = b * 2k, and so b (taken as a number) multiplied by c (even) gives m. Since c is even and b is a number: if b is odd, then by 9.28, b (odd) multiplied by c (even) produces an even number, so m would be even — contradicting m being odd. If b is even, then by 7.16, b * c = c * b, and c (even) multiplied by b: if c is even, write c = 2k, so m = c * b = 2k * b = 2 * (k * b), meaning 2 measures m, so m is even by D7.6 — again contradicting m being odd.\n\n**Step 7.** Therefore c must be odd. But b is even (by our supposition in Step 3). Then c (odd) multiplied by b (even) produces m. By 9.28, since an odd number (c) multiplied by an even number (b) makes some number, that product is even. So m is even — contradicting the hypothesis that m is odd.\n\n**Step 8.** In every case we reach a contradiction. Therefore N is not even-times even.\n\n**Step 9.** Since N is even-times odd (Step 2) and not even-times even (Step 8), N is even-times odd only. This is what was to be proved.\n\n**USED:** 7.16, 9.28, D7.15, D7.3, D7.6, D7.8, D7.9\n**Human refs (from References field):** D7.8, D7.9\n**Jaccard:** 0.286 — AI adds ['7.16', '9.28', 'D7.15', 'D7.3', 'D7.6']",
+  "ai_used": [
+    "7.16",
+    "9.28",
+    "D7.15",
+    "D7.3",
+    "D7.6",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8",
+    "D7.9"
+  ],
+  "ai_only": [
+    "7.16",
+    "9.28",
+    "D7.15",
+    "D7.3",
+    "D7.6"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let N be a number whose half is odd. Then N is divisible into two equal parts (so N is even by D7.6), and N = 2m where m is the half of N and m is odd.  **Step 2.** Since 2 is even and 2 m"
+}

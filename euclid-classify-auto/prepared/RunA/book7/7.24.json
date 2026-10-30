@@ -1,0 +1,33 @@
+{
+  "proposition": "7.24",
+  "book": 7,
+  "statement": "If two numbers be prime to any number, their product also will be prime to the same.",
+  "heath_proof": "For let the two numbers A, B be prime to any number C, and let A by multiplying B make D; I say that C, D are prime to one another. For, if C, D are not prime to one another, some number will measure C, D. Let a number measure them, and let it be E. Now, since C, A are prime to one another, and a certain number E measures C, therefore A, E are prime to one another. [VII. 23] As many times, then, as E measures D, so many units let there be in F; therefore F also measures D according to the units in E. [VII. 16] Therefore E by multiplying F has made D. [VII. Def. 15] But, further, A by multiplying B has also made D; therefore the product of E, F is equal to the product of A, B. But, if the product of the extremes be equal to that of the means, the four numbers are proportional; [VII. 19] therefore, as E is to A, so is B to F. But A, E are prime to one another, numbers which are prime to one another are also the least of those which have the same ratio, [VII. 21] and the least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent; [VII. 20] therefore E measures B. But it also measures C; therefore E measures B, C which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers C, D. Therefore C, D are prime to one another.",
+  "ai_proof_text": "7.24\n**Statement:** If two numbers be prime to any number, their product also will be prime to the same.\n\n**Step 1.** Let A and B be two numbers, each prime to a number C. Let D = A * B. We must show that D is prime to C.\n\n**Step 2.** Suppose, for the sake of contradiction, that D and C are not prime to one another. Then by D7.14, there exists some number E greater than 1 that measures both D and C.\n\n**Step 3.** Since E measures C, and A is prime to C (given), it follows by 7.23 that E and A are prime to one another.\n\n**Step 4.** Now since E measures D, let F be the number of times E measures D, so that D = E * F. Here F is a number by D7.15, since E multiplies F to produce D.\n\n**Step 5.** But D = A * B (by construction). Therefore E * F = A * B.\n\n**Step 6.** By 7.19, since the product of E and F equals the product of A and B, the four numbers E, A, B, F are proportional: E : A = B : F.\n\n**Step 7.** Since E and A are prime to one another (Step 3), by 7.21 they are the least numbers of those which have the same ratio with them.\n\n**Step 8.** By 7.20, the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less. Since E : A = B : F, and E and A are the least in this ratio, E measures B.\n\n**Step 9.** But E also measures C (Step 2). Therefore E measures both B and C, so B and C have a common measure greater than 1.\n\n**Step 10.** This contradicts the hypothesis that B is prime to C (D7.12). Therefore our supposition in Step 2 is false, and D = A * B is prime to C. Q.E.D.\n\n**USED:** 7.19, 7.20, 7.21, 7.23, D7.12, D7.14, D7.15\n**Human refs (from References field):** 7.16, 7.19, 7.20, 7.21, 7.23, D7.12, D7.15\n**Jaccard:** 0.750 — AI adds ['D7.14']; Human adds ['7.16']",
+  "ai_used": [
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.23",
+    "D7.12",
+    "D7.14",
+    "D7.15"
+  ],
+  "heath_refs": [
+    "7.16",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.23",
+    "D7.12",
+    "D7.15"
+  ],
+  "ai_only": [
+    "D7.14"
+  ],
+  "heath_only": [
+    "7.16"
+  ],
+  "jaccard": 0.75,
+  "proof_summary": "**Step 1.** Let A and B be two numbers, each prime to a number C. Let D = A * B. We must show that D is prime to C.  **Step 2.** Suppose, for the sake of contradiction, that D and C are not prime to o"
+}

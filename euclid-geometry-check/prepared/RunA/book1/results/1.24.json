@@ -1,0 +1,77 @@
+{
+  "proposition": "1.24",
+  "run": "RunA",
+  "book": 1,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G is constructed on the same side of line DE as F",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "G lies on ray DG from D, with DG = AC = DF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Ray DF lies strictly between rays DE and DG (since angle EDF < angle EDG)",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "F falls inside triangle DEG (since DF = DG, DE >= DF, and ray DF between rays DE and DG)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "F inside triangle DEG, so DF and EF are lines from endpoints of DE to interior point F; by 1.21, angle DFE > angle DGE",
+      "type": "interior_point"
+    },
+    {
+      "step": "Step 8",
+      "claim": "E and G lie on opposite sides of line DF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Ray FD falls between rays FE and FG",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Angle EFG = angle EFD + angle DFG (additive decomposition with FD as middle ray)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Ray GF falls between rays GD and GE (since F is inside triangle DEG)",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle DGE = angle DGF + angle EGF (additive decomposition with GF as middle ray)",
+      "type": "angle_decomposition"
+    }
+  ],
+  "configuration_map": "Triangle DEG with vertices D, E, G. Point F is inside this triangle, located on ray DF (which lies between rays DE and DG) at distance DF = DG from D. From F, three rays FD, FE, FG go to the three vertices, partitioning the full 360 degrees around F into three sectors: angle DFE, angle EFG, and angle GFD. Since F is interior to the triangle, all three sectors are less than 360 degrees and sum to exactly 360 degrees. From G, ray GF correctly falls between rays GD and GE (verified numerically). However, from F, ray FD does NOT fall inside the interior angle EFG; instead, the opposite ray (from F away from D, toward side EG) falls inside angle EFG. The proof incorrectly identifies ray FD as the middle ray in the angle EFG decomposition.",
+  "contradictory_steps": [
+    "Step 6",
+    "Step 8"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 6",
+    "claim": "F lies inside triangle DEG, so the three angles DFE, EFG, GFD around F sum to 360 degrees",
+    "required_by": "Application of Proposition 1.21 in Step 7"
+  },
+  "spatial_claim_2": {
+    "step": "Step 8",
+    "claim": "Ray FD falls between rays FE and FG, so angle EFG = angle EFD + angle DFG (additive decomposition)",
+    "required_by": "Angle inequality chain in Steps 8-10 establishing angle EFG > angle DFE"
+  },
+  "contradiction": "If F is inside triangle DEG, the three angles DFE, EFG, GFD around F sum to 360 degrees. The additive decomposition angle EFG = angle EFD + angle DFG is equivalent to angle EFG = angle DFE + angle GFD. Substituting into the 360-degree sum gives: angle DFE + (angle DFE + angle GFD) + angle GFD = 360, so 2(angle DFE + angle GFD) = 360, forcing angle EFG = 180 degrees. But angle EFG = 180 degrees means E, F, G are collinear, contradicting both F being inside triangle DEG and triangle EFG being a valid triangle (as used in Step 11). Numerical verification confirms: from F, ray FD points away from the interior angle EFG, and it is the opposite ray (from F toward side EG) that actually falls between FE and FG.",
+  "fixable": true,
+  "fix_note": "Heath avoids this error entirely by using Proposition 1.5 (isosceles triangle base angles) instead of Proposition 1.21. Since DF = DG, triangle DFG is isosceles, giving angle DGF = angle DFG. The valid decomposition at G (angle DGE = angle DGF + angle FGE, which IS correct) then gives angle DGF > angle EGF, so angle DFG > angle EGF. Since angle EFG is strictly greater than angle DFG (the opposite ray from D through F shows this), we get angle EFG > angle EGF without ever needing the invalid angle decomposition at F."
+}

@@ -1,0 +1,49 @@
+{
+  "proposition": "6.1",
+  "book": 6,
+  "statement": "Triangles and parallelograms which are under the same height are to one another as their bases.",
+  "heath_proof": "Let ABC, ACD be triangles and EC, CF parallelograms under the same height;I say that, as the base BC is to the base CD, so is the triangle ABC to the triangle ACD, and the parallelogram EC to the parallelogram CF. For let BD be produced in both directions to the points H, L and let [any number of straight lines] BG, GH bemade equal to the base BC, and any number of straight lines DK, KL equal to the base CD; let AG, AH, AK, AL be joined. Then, since CB, BG, GH are equal to one another, the triangles ABC, AGB, AHG are also equal to one another. [I. 38] Therefore, whatever multiple the base HC is of the base BC, that multiple also is the triangle AHC of the triangle ABC. For the same reason,whatever multiple the base LC is of the base CD, that multiple also is the triangle ALC of the triangle ACD; and, if the base HC is equal to the base CL, the triangle AHC is also equal to the triangle ACL, [I. 38] if the base HC is in excess of the base CL, the triangle AHC  is also in excess of the triangle ACL, and, if less, less. Thus, there being four magnitudes, two bases BC, CD and two triangles ABC, ACD, equimultiples have been taken of the base BC and thetriangle ABC, namely the base HC and the triangle AHC, and of the base CD and the triangle ADC other, chance, equimultiples, namely the base LC and the triangle ALC; and it has been proved that, if the base HC is in excess of the base CL, the triangle AHC  is also in excess of the triangle ALC; if equal, equal; and, if less, less. Therefore, as the base BC is to the base CD, so is the triangle ABC to the triangle ACD. [V. Def. 5] Next, since the parallelogram EC is double of the triangleABC, [I. 41] and the parallelogram FC is double of the triangle ACD, while parts have the same ratio as the same multiples of them, [V. 15] therefore, as the triangle ABC is to the triangle ACD, so isthe parallelogram EC to the parallelogram FC. Since, then, it was proved that, as the base BC is to CD, so is the triangle ABC to the triangle ACD, and, as the triangle ABC is to the triangle ACD, so is the parallelogram EC to the parallelogram CF,therefore also, as the base BC is to the base CD, so is the parallelogram EC to the parallelogram FC. [V. 11]",
+  "ai_proof_text": "6.1\n**Statement:** Triangles and parallelograms which are under the same height are to one another as their bases.\n\n**Step 1.** Let T and U be the areas of two triangles whose bases have lengths b and c and whose heights are equal. Superpose their equal perpendicular heights on the same segment AO; this changes neither their areas nor their base lengths (D6.4; CN4). Their base-lines coincide in a straight line ℓ, since both are perpendicular to AO at O (1.14). Through A draw the parallel p to ℓ (1.31). Both triangles are therefore between ℓ and p.\n\n**Step 2.** Let m and n be arbitrary positive integers. Starting from O along one ray of ℓ, lay off successive segments OX₁, X₁X₂, …, Xₘ₋₁Xₘ, each equal to b. Independently, along the same ray, lay off OY₁, Y₁Y₂, …, Yₙ₋₁Yₙ, each equal to c. These constructions are made by producing the line and repeatedly cutting off a segment equal to the given base (P2; 1.3). Join A to all the division points (P1). By the definition of a multiple, OXₘ = mb and OYₙ = nc (D5.2).\n\n**Step 3.** Every triangle on one of the successive b-segments with vertex A equals T: its base equals b, and it lies between the same parallels ℓ and p as the original triangle. Likewise, every triangle on one of the successive c-segments with vertex A equals U (1.38). The first collection partitions triangle AOXₘ, and the second partitions triangle AOYₙ. Adding these equal areas therefore gives area(AOXₘ) = mT and area(AOYₙ) = nU (CN2; D5.2).\n\n**Step 4.** Compare OXₘ and OYₙ. If OXₘ is greater, Yₙ lies between O and Xₘ, so triangle AOYₙ is a proper part of triangle AOXₘ; hence mT > nU (CN5). If the segments are equal, Xₘ and Yₙ coincide, so the triangles coincide and mT = nU (CN4). If OXₘ is less, the same proper-part argument with the triangles interchanged gives mT < nU (CN5). Thus mT and nU have exactly the same comparison as mb and nc.\n\n**Step 5.** Since m and n were arbitrary, the equimultiple definition of equal ratios gives T:U = b:c (D5.5). This direct route makes no assumption that the bases have a common measure. The assertion for triangles is proved.\n\n**Step 6.** Now let P and Q be the areas of two parallelograms with respective bases b and c and equal heights. Use diagonal bisection, since it supplies the required half-triangles directly: draw a diagonal in each parallelogram (P1), and let T′ and U′ be the areas of the resulting triangles having the specified bases. Each diagonal bisects its parallelogram, so P = 2T′ and Q = 2U′ (1.34). These triangles have the respective bases b and c and retain the common height of the parallelograms (D6.4).\n\n**Step 7.** Equimultiples have the same ratio as the original magnitudes, so P:Q = (2T′):(2U′) = T′:U′ (5.15). By Step 5, T′:U′ = b:c. Consequently P:Q = b:c (5.11). Therefore triangles of the same height are to one another as their bases, and parallelograms of the same height are likewise to one another as their bases.\n\n**USED:** 1.14, 1.3, 1.31, 1.34, 1.38, 5.11, 5.15, CN2, CN4, CN5, D5.2, D5.5, D6.4, P1, P2\n**Human refs (from References field):** 1.38, 1.41, 5.11, 5.15, D5.5\n**Jaccard:** 0.250 — AI adds ['1.14', '1.3', '1.31', '1.34', 'CN2', 'CN4', 'CN5', 'D5.2', 'D6.4', 'P1', 'P2']; Human adds ['1.41']",
+  "ai_used": [
+    "1.14",
+    "1.3",
+    "1.31",
+    "1.34",
+    "1.38",
+    "5.11",
+    "5.15",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D5.2",
+    "D5.5",
+    "D6.4",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.38",
+    "1.41",
+    "5.11",
+    "5.15",
+    "D5.5"
+  ],
+  "ai_only": [
+    "1.14",
+    "1.3",
+    "1.31",
+    "1.34",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D5.2",
+    "D6.4",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "1.41"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let T and U be the areas of two triangles whose bases have lengths b and c and whose heights are equal. Superpose their equal perpendicular heights on the same segment AO; this changes nei"
+}

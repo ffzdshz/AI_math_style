@@ -1,0 +1,76 @@
+{
+  "proposition": "11.32",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "S and T are parallelepipedal solids of the same height with parallelogram bases ABCD and EFGH",
+      "type": "solid_geometry_setup"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diagonal EG divides parallelogram EFGH into triangles EFG and EGH",
+      "type": "plane_partition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Parallelogram BLKC equal in area to triangle EFG is applied to BC with BL along AB produced, so A-B-L are collinear",
+      "type": "point_collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Parallelogram LNMK equal in area to triangle EGH is applied to LK with LN continuing BL, so A-B-L-N are collinear",
+      "type": "point_collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "A, B, L, N lie on one straight line and D, C, K, M lie on a parallel straight line",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BC, LK, and NM are parallel transversals between the two parallel lines",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BNMC and ANMD are parallelograms",
+      "type": "plane_figure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Area of BNMC (R) equals area of EFGH (Q) since BLKC + LNMK = EFG + EGH",
+      "type": "area_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Parallelepiped W over base ANMD contains S (base ABCD) and U (base BNMC) sharing the same top and bottom planes",
+      "type": "solid_partition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Cutting plane through BC is parallel to the two outer end faces of W (through AD and NM)",
+      "type": "plane_parallelism"
+    },
+    {
+      "step": "Step 4",
+      "claim": "U has the same height as S because they share the same top and bottom planes within W",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "11.25 applied: W cut by plane parallel to opposite faces gives S:U = P:R",
+      "type": "proportion_from_cutting_plane"
+    },
+    {
+      "step": "Step 6",
+      "claim": "U and T have equal base areas (R = Q) and equal heights, so U = T by 11.31",
+      "type": "solid_equality"
+    }
+  ],
+  "configuration_map": "Configuration: Start with parallelepiped S on parallelogram base ABCD. Extend line AB beyond B to points L, N; extend line DC beyond C to points K, M (on a line parallel to ABLN). Parallelogram BLKC (between segments BL and CK, with BC and LK as transversals) has area equal to triangle EFG. Parallelogram LNMK (between segments LN and KM, with LK and NM as transversals) has area equal to triangle EGH. The combined parallelogram BNMC has area R = Q. The full parallelogram ANMD is tiled by ABCD and BNMC. Parallelepiped W is erected over ANMD with the same height as S. A cutting plane through edge BC, parallel to the end faces through AD and NM, divides W into S (over ABCD) and U (over BNMC). All points maintain consistent positions throughout: A-B-L-N remain collinear, D-C-K-M remain collinear on a parallel line, and the cutting plane stays parallel to opposite faces at every reference.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction of adjacent parallelograms tiling a larger parallelogram is valid; the collinearity and parallelism conditions are correctly maintained; the cutting plane through BC is genuinely parallel to the opposite faces of W (since AD parallel to BC parallel to NM); the applications of 11.25 and 11.31 have their geometric hypotheses properly satisfied. The proof takes a different route from Heath (decomposing the second base into triangles and reconstructing equal area via 1.44, rather than directly applying 1.45) but introduces no spatial contradictions."
+}

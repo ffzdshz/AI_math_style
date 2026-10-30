@@ -1,0 +1,13 @@
+{
+  "proposition": "5.20",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determines the classification. Heath's proof of the A>C case establishes D:E > F:E by combining both given proportions with 5.13 (using the inverse), then concludes D > F via 5.10 (greater ratio to the same implies greater magnitude). The AI proof instead uses 5.13 only to get D:E > C:B, then drops to definition-level equimultiple reasoning (D5.7, D5.5) to establish D > F directly without ever forming the comparison D:E > F:E or citing 5.10. The heath_only citation 5.10 does not appear inside Heath's proofs of any AI-cited proposition, so the proof-tree containment test fails and this is not a granularity difference. Furthermore, for the A=C case, Heath says 'similarly we can prove' while the AI uses an entirely different proof by contradiction approach via 5.7 and 5.11. These constitute genuinely different logical backbones. The AI's path is logically complete and valid throughout all three cases, so Q3 yields D.",
+  "jaccard": 0.222,
+  "ai_citations": "5.11|5.13|5.15|5.7|5.8|D5.17|D5.5|D5.7",
+  "heath_citations": "5.10|5.13|5.8",
+  "ai_only": "5.11|5.15|5.7|D5.17|D5.5|D5.7",
+  "heath_only": "5.10",
+  "audit_record": ""
+}

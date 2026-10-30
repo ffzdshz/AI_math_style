@@ -1,0 +1,33 @@
+{
+  "proposition": "6.2",
+  "book": 6,
+  "statement": "If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the line joining the points of section will be parallel to the remaining side of the triangle.",
+  "heath_proof": "For let DE be drawn parallel to BC, one of the sides of the triangle ABC; I say that, as BD is to DA, so is CE to EA. For let BE, CD be joined. Therefore the triangle BDE is equal to the triangle CDE; for they are on the same base DE and in the same parallels DE, BC. [I. 38] And the triangle ADE is another area. But equals have the same ratio to the same; [V. 7] therefore, as the triangle BDE is to the triangle ADE, so is the triangle CDE to the triangle ADE. But, as the triangle BDE is to ADE, so is BD to DA; for, being under the same height, the perpendicular drawn from E to AB, they are to one another as their bases. [VI. 1] For the same reason also, as the triangle CDE is to ADE, so is CE to EA. Therefore also, as BD is to DA, so is CE to EA. [V. 11] Again, let the sides AB, AC of the triangle ABC be cut proportionally, so that, as BD is to DA, so is CE to EA; and let DE be joined. I say that DE is parallel to BC. For, with the same construction, since, as BD is to DA, so is CE to EA, but, as BD is to DA, so is the triangle BDE to the triangle ADE, and, as CE is to EA, so is the triangle CDE to the triangle ADE, [VI. 1] therefore also, as the triangle BDE is to the triangle ADE, so is the triangle CDE to the triangle ADE. [V. 11]  Therefore each of the triangles BDE, CDE has the same ratio to ADE. Therefore the triangle BDE is equal to the triangle CDE; [V. 9] and they are on the same base DE. But equal triangles which are on the same base are also in the same parallels. [I. 39] Therefore DE is parallel to BC.",
+  "ai_proof_text": "6.2\n**Statement:** If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the line joining the points of section will be parallel to the remaining side of the triangle.\n\n**Step 1.** Let ABC be a triangle, and let DE be drawn parallel to BC, with D on AB and E on AC. We must show that AD is to DB as AE is to EC. Conversely, if the sides are cut proportionally so that AD is to DB as AE is to EC, we must show DE is parallel to BC.\n\n**Step 2.** Join BE and CD. [P1]\n\n**Part I (DE parallel to BC implies proportionality):**\n\n**Step 3.** Consider triangles ADE and BDE. They share the common vertex E, and their bases AD and DB lie along the same line AB. Therefore they are under the same height, namely the perpendicular distance from E to line AB. By 6.1, triangle ADE is to triangle BDE as AD is to DB.\n\n**Step 4.** Consider triangles ADE and CDE. They share the common vertex D, and their bases AE and EC lie along the same line AC. Therefore they are under the same height, namely the perpendicular distance from D to line AC. By 6.1, triangle ADE is to triangle CDE as AE is to EC.\n\n**Step 5.** Since DE is parallel to BC, triangles BDE and CDE are on the same base DE and between the same parallels DE and BC. By 1.37, triangle BDE equals triangle CDE.\n\n**Step 6.** Since triangle BDE equals triangle CDE, by 5.7 the triangle ADE has the same ratio to triangle BDE as it has to triangle CDE; that is, triangle ADE is to triangle BDE as triangle ADE is to triangle CDE.\n\n**Step 7.** But triangle ADE is to triangle BDE as AD is to DB (Step 3), and triangle ADE is to triangle CDE as AE is to EC (Step 4). Since both ratios equal the ratio of triangle ADE to triangle BDE (which equals the ratio of triangle ADE to triangle CDE by Step 6), by 5.11 we conclude AD is to DB as AE is to EC.\n\n**Part II (Proportionality implies DE parallel to BC):**\n\n**Step 8.** Now suppose conversely that AD is to DB as AE is to EC, with the same construction (BE and CD joined).\n\n**Step 9.** By 6.1, triangle ADE is to triangle BDE as AD is to DB (as in Step 3), and triangle ADE is to triangle CDE as AE is to EC (as in Step 4).\n\n**Step 10.** Since AD is to DB as AE is to EC (by hypothesis), it follows that triangle ADE is to triangle BDE as triangle ADE is to triangle CDE. By 5.9, triangle BDE equals triangle CDE.\n\n**Step 11.** Now triangles BDE and CDE are equal, lie on the same base DE, and are on the same side of DE. By 1.39, they are between the same parallels; that is, DE is parallel to BC.\n\n**Step 12.** Therefore, if a straight line is drawn parallel to one side of a triangle, it cuts the other two sides proportionally; and conversely, if the sides are cut proportionally, the joining line is parallel to the remaining side. Q.E.F.\n\n**USED:** 1.37, 1.39, 5.11, 5.7, 5.9, 6.1, P1\n**Human refs (from References field):** 1.38, 1.39, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.625 — AI adds ['1.37', 'P1']; Human adds ['1.38']",
+  "ai_used": [
+    "1.37",
+    "1.39",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.38",
+    "1.39",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.37",
+    "P1"
+  ],
+  "heath_only": [
+    "1.38"
+  ],
+  "jaccard": 0.625,
+  "proof_summary": "**Step 1.** Let ABC be a triangle, and let DE be drawn parallel to BC, with D on AB and E on AC. We must show that AD is to DB as AE is to EC. Conversely, if the sides are cut proportionally so that A"
+}

@@ -1,0 +1,35 @@
+{
+  "proposition": "5.20",
+  "book": 5,
+  "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.",
+  "heath_proof": "Let there be three magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and as B is to C, so is E to F; and let A be greater than C ex aequali; I say that D will also be greater than F; if A is equal to C, equal; and, if less, less. For, since A is greater than C, and B is some other magnitude, and the greater has to the same a greater ratio than the less has, [V. 8] therefore A has to B a greater ratio than C has to B. But, as A is to B, so is D to E, and, as C is to B, inversely, so is F to E; therefore D has also to E a greater ratio than F has to E. [V. 13] But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater; [V. 10] therefore D is greater than F.  Similarly we can prove that, if A be equal to C, D will also be equal to F; and if less, less.",
+  "ai_proof_text": "5.20\n**Statement:** If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less.\n\n**Step 1.** Let the three magnitudes be A, B, C, and the other three D, E, F, with A:B = D:E and B:C = E:F, as given. We must show that the comparison of A with C agrees with that of D with F: these are the extreme terms taken ex aequali (D5.17).\n\n**Step 2.** From B:C = E:F we obtain C:B = F:E (D5.5). Indeed, for arbitrary positive integers m and n, the comparisons of nB with mC and of nE with mF agree; reversing both comparisons shows that the comparisons of mC with nB and of mF with nE agree. Path choice: compare ratios with the common consequents B and E, rather than assume any proportion between the extreme terms.\n\n**Step 3.** Suppose first that A > C. Since the consequent B is common, the direct comparison in 5.8 gives A:B > C:B. Hence there are positive integers m and n such that mA > nB while mC does not exceed nB (D5.7).\n\n**Step 4.** Because A:B = D:E, the first comparison gives mD > nE; because C:B = F:E by Step 2, the second gives that mF does not exceed nE (D5.5). These multiples therefore establish D:E > F:E (D5.7). Since these ratios have the same consequent E, it follows that D > F (5.10).\n\n**Step 5.** Suppose next that A = C. Equal magnitudes have the same ratio to B, so A:B = C:B (5.7). Combining this with A:B = D:E and C:B = F:E gives D:E = F:E (5.11, applied twice). Magnitudes having the same ratio to the same magnitude are equal; consequently D = F (5.9).\n\n**Step 6.** Finally, suppose that A < C. Then C:B > A:B (5.8), so there are positive integers m and n such that mC > nB while mA does not exceed nB (D5.7). By C:B = F:E and A:B = D:E, respectively, we obtain mF > nE while mD does not exceed nE (D5.5). Thus F:E > D:E (D5.7), and therefore F > D, or D < F (5.10).\n\n**Step 7.** Accordingly, if the first magnitude A is greater than the third C, the fourth D is greater than the sixth F; if equal, equal; and if less, less, as established in Steps 4–6. This proves the proposition.\n\n**USED:** 5.10, 5.11, 5.7, 5.8, 5.9, D5.17, D5.5, D5.7\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.222 — AI adds ['5.11', '5.7', '5.9', 'D5.17', 'D5.5', 'D5.7']; Human adds ['5.13']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.7",
+    "5.8",
+    "5.9",
+    "D5.17",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9",
+    "D5.17",
+    "D5.5",
+    "D5.7"
+  ],
+  "heath_only": [
+    "5.13"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let the three magnitudes be A, B, C, and the other three D, E, F, with A:B = D:E and B:C = E:F, as given. We must show that the comparison of A with C agrees with that of D with F: these a"
+}

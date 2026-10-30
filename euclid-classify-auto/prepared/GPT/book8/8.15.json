@@ -1,0 +1,35 @@
+{
+  "proposition": "8.15",
+  "book": 8,
+  "statement": "If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.",
+  "heath_proof": "For let the cube number A measure the cube B, and let C be the side of A and D of B; I say that C measures D. For let C by multiplying itself make E, and let D by multiplying itself make G; further, let C by multiplying D make F, and let C, D by multiplying F make H, K respectively. Now it is manifest that E, F, G and A, H, K, B are continuously proportional in the ratio of C to D. [VIII. 11, 12] And, since A, H, K, B are continuously proportional, and A measures B, therefore it also measures H. [VIII. 7] And, as A is to H, so is C to D; therefore C also measures D. [VII. Def. 20] Next, let C measure D; I say that A will also measure B. For, with the same construction, we can prove in a similar manner that A, H, K, B are continuously proportional in the ratio of C to D. And, since C measures D, and, as C is to D, so is A to H, therefore A also measures H, [VII. Def. 20] so that A measures B also.",
+  "ai_proof_text": "8.15\n**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.\n\n**Step 1.** Let A and B be cube numbers with sides a and b. Put p = a·a, q = a·b, and r = b·b. Thus A = a·p and B = b·r. Form also M = a·q and N = b·q. These products are defined by multiplication, and A and B are the corresponding cubes. [D7.15, D7.19]\n\n**Step 2.** Since a multiplies a and b to produce p and q, we have p:q = a:b. Since a multiplies p and q to produce A and M, we have A:M = p:q. [7.17] Since a and b multiply b to produce q and r, and multiply q to produce M and N, we have q:r = a:b and M:N = a:b. [7.18] Finally, since b multiplies q and r to produce N and B, we have N:B = q:r. [7.17] Consequently,\nA:M = M:N = N:B = a:b.\nThus A, M, N, B are in continued proportion.\n\n**Step 3.** Suppose first that A measures B. Then A measures M by 8.7. This is the direct path: the hypothesis concerns the extreme terms of the continued proportion, so the extremes-to-second assertion applies immediately. [8.7]\n\n**Step 4.** Since A:M = a:b, a is the same part of b that A is of M. Hence a measures b. Thus, if the cube measures the cube, its side measures the other side. [D7.20, D7.3]\n\n**Step 5.** Conversely, suppose that a measures b, and let b consist of k copies of a. From A:M = M:N = N:B = a:b, each antecedent is the same part of its consequent that a is of b. Therefore M consists of k copies of A, N of k copies of M, and B of k copies of N. [D7.20, D7.15]\n\n**Step 6.** Expanding these repeated sums, B consists of k·k·k copies of A. Hence A measures B. Therefore, if a cube number measures a cube number, its side measures the other side; and, if the side measures the side, the cube measures the cube. [D7.15, D7.3]\n\n**USED:** 7.17, 7.18, 8.7, D7.15, D7.19, D7.20, D7.3\n**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20\n**Jaccard:** 0.222 — AI adds ['7.17', '7.18', 'D7.15', 'D7.19', 'D7.3']; Human adds ['8.11', '8.12']",
+  "ai_used": [
+    "7.17",
+    "7.18",
+    "8.7",
+    "D7.15",
+    "D7.19",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.12",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "7.18",
+    "D7.15",
+    "D7.19",
+    "D7.3"
+  ],
+  "heath_only": [
+    "8.11",
+    "8.12"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let A and B be cube numbers with sides a and b. Put p = a·a, q = a·b, and r = b·b. Thus A = a·p and B = b·r. Form also M = a·q and N = b·q. These products are defined by multiplication, an"
+}

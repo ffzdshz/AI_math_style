@@ -1,0 +1,42 @@
+{
+  "proposition": "4.11",
+  "book": 4,
+  "statement": "In a given circle to inscribe an equilateral and equiangular pentagon.",
+  "heath_proof": "Let ABCDE be the given circle; thus it is required to inscribe in the circle ABCDE an equilateral and equiangular pentagon. Let the isosceles triangle FGH be set out having each of the angles at G, H double of the angle at F; [IV. 10] let there be inscribed in the circle ABCDE the triangle ACD equiangular with the triangle FGH, so that the angle CAD is equal to the angle at F and the angles at G, H respectively equal to the angles ACD, CDA; [IV. 2] therefore each of the angles ACD, CDA is also double of the angle CAD. Now let the angles ACD, CDA be bisected respectively by the straight lines CE, DB [I. 9], and let AB, BC, DE, EA be joined. Then, since each of the angles ACD, CDA is double of the angle CAD, and they have been bisected by the straight lines CE, DB, therefore the five angles DAC, ACE, ECD, CDB, BDA are equal to one another. But equal angles stand on equal circumferences; [III. 26] therefore the five circumferences AB, BC, CD, DE, EA are equal to one another. But equal circumferences are subtended by equal straight lines; [III. 29] therefore the five straight lines AB, BC, CD, DE, EA are equal to one another; therefore the pentagon ABCDE is equilateral. I say next that it is also equiangular. For, since the circumference AB is equal to the circumference DE, let BCD be added to each; therefore the whole circumference ABCD is equal to the whole circumference EDCB. And the angle AED stands on the circumference ABCD, and the angle BAE on the circumference EDCB; therefore the angle BAE is also equal to the angle AED. [III. 27] For the same reason each of the angles ABC, BCD, CDE is also equal to each of the angles BAE, AED; therefore the pentagon ABCDE is equiangular. But it was also proved equilateral; therefore in the given circle an equilateral and equiangular pentagon has been inscribed.",
+  "ai_proof_text": "4.11\n**Statement:** In a given circle to inscribe an equilateral and equiangular pentagon.\n\n**Step 1.** Let Γ be the given circle. By 4.10 construct an isosceles triangle having each base angle double its vertex angle. By 4.2 inscribe in Γ a triangle ACD equiangular with that triangle, with A corresponding to its vertex. Put α = ∠CAD. Then ∠ACD = ∠CDA = α + α. This route uses the special triangle already available to obtain exactly the angular relations needed. [4.10, 4.2]\n\n**Step 2.** Bisect ∠ACD and ∠CDA, and produce their bisectors to meet Γ again at E and B respectively. Thus E lies on the open arc DA not containing C, and B lies on the open arc AC not containing D. The five points therefore occur around Γ in the order A, B, C, D, E. Join AB, BC, DE, and EA; CD is already drawn. [1.9, P2, P1]\n\n**Step 3.** Each of the bisected angles is α + α, so each half equals α. Indeed, if either of two equal halves were greater or less than α, their sum would respectively be greater or less than α + α. Consequently,\n∠ADB = ∠BDC = ∠CAD = ∠DCE = ∠ECA = α. [1.9, CN2, CN5, CN1]\n\n**Step 4.** These five equal angles stand respectively on the successive arcs AB, BC, CD, DE, and EA, where each successive arc contains no other vertex. Equal angles at the circumference stand on equal arcs of the same circle. Hence\narc AB = arc BC = arc CD = arc DE = arc EA.\nThe natural next step is to use 3.26, since the construction has supplied equal inscribed angles directly. [D3.9, 3.26]\n\n**Step 5.** Equal arcs of the same circle are subtended by equal straight lines. Therefore\nAB = BC = CD = DE = EA,\nso the pentagon ABCDE is equilateral. [3.29]\n\n**Step 6.** The interior angles ∠EAB, ∠ABC, ∠BCD, ∠CDE, and ∠DEA stand respectively on the arcs BCDE, CDEA, DEAB, EABC, and ABCD. Each of these arcs consists of three of the equal successive arcs established in Step 4. They are therefore equal by addition of equals. Angles at the circumference standing on equal arcs are equal; hence\n∠EAB = ∠ABC = ∠BCD = ∠CDE = ∠DEA.\nThus the pentagon is equiangular. Here 3.27 applies directly because the intercepted arcs have already been shown equal. [D3.9, CN2, 3.27]\n\n**Step 7.** Every vertex of ABCDE lies on Γ, so the pentagon is inscribed in the given circle. By Steps 5 and 6 it is equilateral and equiangular. Therefore an equilateral and equiangular pentagon has been inscribed in the given circle, as required. [D4.3]\n\n**USED:** 1.9, 3.26, 3.27, 3.29, 4.10, 4.2, CN1, CN2, CN5, D3.9, D4.3, P1, P2\n**Human refs (from References field):** 1.9, 3.26, 3.27, 3.29, 4.10, 4.2\n**Jaccard:** 0.462 — AI adds ['CN1', 'CN2', 'CN5', 'D3.9', 'D4.3', 'P1', 'P2']",
+  "ai_used": [
+    "1.9",
+    "3.26",
+    "3.27",
+    "3.29",
+    "4.10",
+    "4.2",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D3.9",
+    "D4.3",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.9",
+    "3.26",
+    "3.27",
+    "3.29",
+    "4.10",
+    "4.2"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN2",
+    "CN5",
+    "D3.9",
+    "D4.3",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.462,
+  "proof_summary": "**Step 1.** Let Γ be the given circle. By 4.10 construct an isosceles triangle having each base angle double its vertex angle. By 4.2 inscribe in Γ a triangle ACD equiangular with that triangle, with "
+}

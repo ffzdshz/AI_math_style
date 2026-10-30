@@ -1,0 +1,31 @@
+{
+  "proposition": "3.9",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "P is a point inside the circle; A, B, C are distinct points on the circumference with PA = PB = PC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "O is the center of the circle; assumption that P is not equal to O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line through O and P extended meets circumference at D and E, forming diameter DE; P lies on this diameter between D and E",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 4",
+      "claim": "P is on diameter DE and is not the center, so by 3.7 at most two equal straight lines fall from P on the circle",
+      "type": "circle_inside_outside"
+    }
+  ],
+  "configuration_map": "P: inside the circle (Step 1), on diameter DE between D and E (Step 3). These are consistent — any interior point lies on the chord/diameter determined by the line through it and the center. O: center of the circle (Step 2), on diameter DE (Step 3) — consistent by definition of diameter. A, B, C: on the circumference (Step 1), equidistant from P. D, E: on the circumference, endpoints of the diameter through O and P (Step 3). The configuration is straightforward: a circle with center O, a diameter DE passing through both O and the interior point P, and three points A, B, C on the circumference equidistant from P.",
+  "pass_reason": "All spatial claims are mutually consistent. P being inside the circle and on diameter DE are compatible. The application of Proposition 3.7 to point P on diameter DE (with P not the center) correctly matches 3.7's hypothesis. The contradiction between three equal lines (hypothesis) and at most two equal lines (3.7) is logically valid. No angle decompositions, no between-ray claims, and no interior/exterior switches that could harbor hidden contradictions."
+}

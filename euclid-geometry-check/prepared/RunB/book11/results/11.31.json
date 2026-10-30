@@ -1,0 +1,51 @@
+{
+  "proposition": "11.31",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "AE' has standing edges perpendicular to plane of base ABCD; CF' has standing edges perpendicular to base EFGH",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Vertices A', B', C', D' directly above A, B, C, D; standing edges perpendicular to base plane; angle A'AB is right; face ABB'A' is a rectangle",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Re-orientation of AE' with rectangular face ABB'A' as base; standing edges from A,B,A',B' to D,C,D',C' are oblique to face ABB'A'",
+      "type": "solid orientation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Height in re-oriented view equals perpendicular distance from plane ABB'A' to plane DCC'D', which equals altitude d1 of parallelogram ABCD with respect to side AB",
+      "type": "perpendicular distance"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AE' (oblique parallelepiped on rectangular base ABB'A') equals rectangular box R1 with dimensions a, h, d1 by application of 11.30",
+      "type": "solid equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "CF' equals rectangular box R2 with dimensions e, h, d2 where d2 is altitude of EFGH w.r.t. side EF",
+      "type": "solid equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "R1 and R3 placed side by side along width direction in composite rectangular solid of base a by (d1+d2) and height h; cutting plane parallel to a-by-h faces at width d1",
+      "type": "plane section"
+    },
+    {
+      "step": "Step 10",
+      "claim": "R3 and R2 placed side by side along length direction in composite solid of base (a+e) by d2 and height h; cutting plane parallel to d2-by-h faces at length a",
+      "type": "plane section"
+    }
+  ],
+  "configuration_map": "AE' is a right parallelepiped on base ABCD with vertices A,B,C,D (base) and A',B',C',D' (top, directly above). All standing edges (AA', BB', CC', DD') are perpendicular to the base plane. When re-oriented with face ABB'A' as base, the solid becomes an oblique parallelepiped whose height is d1 (altitude of ABCD w.r.t. AB). By 11.30, this equals rectangular box R1 (a x h x d1). Similarly CF' equals R2 (e x h x d2). Auxiliary box R3 (a x h x d2) is used in both composite constructions consistently. All spatial positions are mutually compatible throughout the proof.",
+  "pass_reason": "The proof reduces both parallelepipeds to rectangular boxes via valid re-orientation and 11.30, then uses proportions (11.25, 6.1, 6.16, 5.22) to show the boxes are equal. All spatial claims (perpendicularity, re-orientation heights, plane sections) are mutually consistent. No angle decompositions, no interior/exterior point arguments, and no betweenness claims that could generate contradictions. The height d1 correctly equals the altitude of the base parallelogram, and R3 is consistently dimensioned across its two uses."
+}

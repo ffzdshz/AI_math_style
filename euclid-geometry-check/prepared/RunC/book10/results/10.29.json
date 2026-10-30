@@ -1,0 +1,57 @@
+{
+  "proposition": "10.29",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 3",
+      "claim": "C is obtained by bisecting A, so C = A/2, a proper nonzero segment",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Right angle constructed at vertex V using 1.11",
+      "type": "angle_construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Segment equal to C marked along one arm from V to point P, so VP = C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Circle centered at vertex V with radius equal to A is drawn",
+      "type": "circle_construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Circle meets the other arm at Q, so VQ = A, and B is defined as VQ",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Right triangle VPQ has hypotenuse A and one leg C, so by 1.47 sq(A) = sq(B) + sq(C)",
+      "type": "pythagorean_application"
+    }
+  ],
+  "configuration_map": "V is the vertex of the right angle. P lies on one arm at distance C = A/2 from V. Q lies on the other arm at the intersection with the circle centered at V with radius A, so VQ = A. B is defined as VQ. Triangle VPQ has a right angle at V, with legs VP = C and VQ = B, and hypotenuse PQ = sqrt(C^2 + B^2). From the circle construction, B = VQ = A, so PQ = sqrt(C^2 + A^2) > A. The proof then identifies A as the hypotenuse (PQ = A), which contradicts PQ = sqrt(C^2 + A^2) > A for C > 0.",
+  "contradictory_steps": [
+    "Step 5 (circle construction: center at vertex V, radius A, giving B = VQ = A)",
+    "Step 5 (Pythagorean application: sq(A) = sq(B) + sq(C) with C > 0, requiring B < A)"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 5",
+    "claim": "Circle centered at vertex V with radius A meets the other arm at Q, making B = VQ = A",
+    "required_by": "Construction of B via the circle intersection with the other arm of the right angle"
+  },
+  "spatial_claim_2": {
+    "step": "Step 5",
+    "claim": "In right triangle VPQ with right angle at V, the hypotenuse is A and one leg is C = A/2 > 0, so sq(A) = sq(B) + sq(C), requiring B = sqrt(A^2 - C^2) < A",
+    "required_by": "Application of 1.47 to derive sq(B) = sq(A) - sq(C) for subsequent algebraic steps"
+  },
+  "contradiction": "The circle centered at V with radius A places Q at distance A from V on the other arm, so B = VQ = A. But the Pythagorean relation sq(A) = sq(B) + sq(C) with C = A/2 > 0 requires B = sqrt(A^2 - A^2/4) = A*sqrt(3)/2, which is strictly less than A. The construction forces B = A while the Pythagorean theorem application requires B < A. Substituting B = A into sq(A) = sq(B) + sq(C) gives sq(C) = 0, contradicting C = A/2 > 0 from Step 3. The circle should be centered at P (the endpoint of C on the arm) rather than at V (the vertex), so that PQ = A is the hypotenuse and VQ = B is the unknown leg.",
+  "fixable": true,
+  "fix_note": "Center the circle at point P (the endpoint of segment C on one arm) instead of at V (the vertex of the right angle). Then PQ = A serves as the hypotenuse, the right angle remains at V, and 1.47 gives sq(A) = sq(C) + sq(B), yielding sq(B) = sq(A) - sq(C) as needed. Alternatively, use Heath's semicircle construction with III.31 (angle in semicircle is right)."
+}

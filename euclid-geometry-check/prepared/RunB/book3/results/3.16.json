@@ -1,0 +1,81 @@
+{
+  "proposition": "3.16",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Circle with center F and diameter BC; BA drawn perpendicular to BC at endpoint B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is a point on line BA that lies on or within the circle; FD joined",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle FBD has right angle at B (angle FBD = 90 degrees)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 5",
+      "claim": "FD > FB by angle comparison in triangle FBD (angle FBD > angle BDF implies opposite side FD > FB)",
+      "type": "line_inequality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "D lies outside the circle since FD > radius FB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "BG lies in the space between line BA and the circumference without cutting the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "H is the foot of perpendicular from F to line BG; angle FHB is right",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Angle FBG < angle FBA = 90 degrees; BG lies between BF and BA directions",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 11",
+      "claim": "In triangle FBH: angle FHB (90) > angle FBH (acute), so FB > FH",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 12",
+      "claim": "H lies inside the circle (FH < radius); BG passes from B on circle through interior point H",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 15",
+      "claim": "For any acute angle FBG, line BG falls between BA and diameter BC on the semicircle side",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Any such line BG must cut the circumference (by Steps 9-13 argument)",
+      "type": "circle_intersection"
+    },
+    {
+      "step": "Step 17",
+      "claim": "The angle of the semicircle (between diameter and arc) contains every acute rectilineal angle at B",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 18",
+      "claim": "The horn angle (between tangent BA and arc) is less than any acute rectilineal angle",
+      "type": "angle_claim"
+    }
+  ],
+  "configuration_map": "Configuration at point B: F is the center of the circle on line BC (the diameter). B is an endpoint of the diameter on the circumference. BA is perpendicular to BC at B (tangent line direction). The arc of the circle at B is tangent to BA and curves toward the diameter. Angular ordering at B from the diameter direction: BF (0 degrees), any line BG at acute angle, the arc tangent direction (= BA direction at 90 degrees), BA (90 degrees). For Part 1: Triangle FBD with F on diameter, B at the right-angle vertex, D on perpendicular line BA. For Part 2: Triangle FBH with F at center, H as perpendicular foot from F onto BG (right angle at H), B on circumference. For Part 3: Any ray from B between diameter and tangent enters the semicircle and must cross the arc again.",
+  "pass_reason": "All spatial claims are mutually consistent. The right triangle arguments (Parts 1 and 2) correctly establish point positions relative to the circle. The angle comparisons (Part 3) follow logically from the interposition result. Minor expository issues (extraneous FA=FB in Step 3, imprecise containment language in Step 18) are notation weaknesses, not spatial configuration contradictions. No step requires a geometric configuration incompatible with another step."
+}

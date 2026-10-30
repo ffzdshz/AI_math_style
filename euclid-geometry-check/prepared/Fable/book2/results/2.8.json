@@ -1,0 +1,31 @@
+{
+  "proposition": "2.8",
+  "run": "Fable",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is a point on segment AB (between A and B)",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is on AB produced beyond B, so B lies between A and D; points are collinear in order A-C-B-D",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 1",
+      "claim": "BD = CB (constructed by I.3)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "B is a point on segment AD (consistent with A-C-B-D collinear order)",
+      "type": "point_on_segment"
+    }
+  ],
+  "configuration_map": "All points lie on a single straight line in the order A — C — B — D, with BD = CB. Point C is an arbitrary cut of AB; point D is constructed on AB produced beyond B so that BD equals CB. The full segment AD = AB + BD = AB + BC. No points off the line are constructed; no triangles, circles, or angles are involved. The proof operates entirely through algebraic area identities (2.4 and 2.7) applied to this collinear configuration.",
+  "pass_reason": "The proof's spatial claims are limited to collinear point positions on a single line (A-C-B-D with BD=CB), all trivially and mutually consistent. The core reasoning is purely algebraic manipulation of area identities from Propositions 2.4 and 2.7, with no angle decompositions, no inside/outside claims, no ray orderings, and no opportunity for spatial configuration contradictions."
+}

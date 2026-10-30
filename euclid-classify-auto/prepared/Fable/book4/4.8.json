@@ -1,0 +1,43 @@
+{
+  "proposition": "4.8",
+  "book": 4,
+  "statement": "In a given square to inscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to inscribe a circle in the given square ABCD. Let the straight lines AD, AB be bisected at the points E, F respectively [I. 10], through E let EH be drawn parallel to either AB or CD, and through F let FK be drawn parallel to either AD or BC; [I. 31] therefore each of the figures AK, KB, AH, HD, AG, GC, BG, GD is a parallelogram, and their opposite sides are evidently equal. [I. 34] Now, since AD is equal to AB, and AE is half of AD, and AF half of AB, therefore AE is equal to AF, so that the opposite sides are also equal;  therefore FG is equal to GE. Similarly we can prove that each of the straight lines GH, GK is equal to each of the straight lines FG, GE; therefore the four straight lines GE, GF, GH, GK are equal to one another. Therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will pass also through the remaining points. And it will touch the straight lines AB, BC, CD, DA, because the angles at E, F, H, K are right. For, if the circle cuts AB, BC, CD, DA, the straight line drawn at right angles to the diameter of the circle from its extremity will fall within the circle: which was proved absurd; [III. 16] therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will not cut the straight lines AB, BC, CD, DA. Therefore it will touch them, and will have been inscribed in the square ABCD. Therefore in the given square a circle has been inscribed.",
+  "ai_proof_text": "4.8\n**Statement:** In a given square to inscribe a circle.\n\n**Step 1.** Let ABCD be the given square, its sides being AB, BC, CD, DA taken in order. Since ABCD is a square, its four sides are equal, AB = BC = CD = DA, and its four angles DAB, ABC, BCD, CDA are right (D1.22).\n\n**Step 2.** Bisect AD at the point E and AB at the point F (1.10), so that AE = ED and AF = FB.\n\n**Step 3.** From the point E draw EH at right angles to AD (1.11), meeting BC at H, and from the point F draw FK at right angles to AB (1.11), meeting CD at K; let EH and FK meet one another at G. Because EH stands at right angles to AD, the adjacent angles AEH, DEH are each right, and because FK stands at right angles to AB, the adjacent angles AFK, BFK are each right (D1.10).\n\n**Step 4.** The straight line AD falls on the two straight lines AB and EH, and the interior angles on the same side, EAB and AEH, are both right, so that together they are equal to two right angles; therefore AB is parallel to EH (1.28). In the same way, AD falls on EH and CD making the interior angles DEH, EDC both right, so EH is parallel to CD (1.28); AB falls on AD and FK making the interior angles FAD, AFK both right, so FK is parallel to AD (1.28); and AB falls on FK and BC making the interior angles BFK, FBC both right, so FK is parallel to BC (1.28).\n\n**Step 5.** Consequently AFGE is a parallelogram, since AF is parallel to EG (AB being parallel to EH) and AE is parallel to FG (AD being parallel to FK); FBHG is a parallelogram, since FB is parallel to GH and BH is parallel to FG (BC being parallel to FK); and EGKD is a parallelogram, since EG is parallel to DK (EH being parallel to CD) and ED is parallel to GK (AD being parallel to FK). In a parallelogram the opposite sides and the opposite angles are equal (1.34); therefore GE = AF and GF = AE; GH = FB and the angle BHG is equal to the angle BFG; GK = ED and the angle DKG is equal to the angle DEG.\n\n**Step 6.** Since AD = AB (Step 1), and AE is half of AD while AF is half of AB (Step 2), AE = AF, halves of equal magnitudes being equal. Hence GE = AF = AE = GF (Step 5, CN1); GH = FB = AF = AE (Step 2, CN1); and GK = ED = AE (Step 2, CN1). Therefore the four straight lines GE, GF, GH, GK are equal to one another (CN1).\n\n**Step 7.** With centre G and distance GE let a circle be described (P3). Since GF, GH, GK are each equal to GE, the points F, H, K also lie on the circumference of this circle (D1.15). The straight line EH passes through the centre G and is terminated at E and H on the circumference, so EH is a diameter of the circle (D1.17); in the same way FK is a diameter of the circle.\n\n**Step 8.** AD is drawn at right angles to the diameter EH from its extremity E (Step 3); therefore AD touches the circle at E (3.16, Porism). The angle BHG is equal to the angle BFG, which is the right angle BFK (Step 5, Step 3), so BC is at right angles to the diameter EH at its extremity H; therefore BC touches the circle at H (3.16). AB is at right angles to the diameter FK at its extremity F (Step 3); therefore AB touches the circle at F (3.16). The angle DKG is equal to the angle DEG, which is the right angle DEH (Step 5, Step 3), so CD is at right angles to the diameter FK at its extremity K; therefore CD touches the circle at K (3.16).\n\n**Step 9.** The circumference of the circle with centre G thus touches each of the four sides AB, BC, CD, DA of the square; therefore a circle has been inscribed in the given square ABCD (D4.5). Q.E.F.\n\nPath note: an equivalent route draws EH, FK through E, F parallel to AB, AD (1.31) and derives the right angles at E, F, H, K from 1.29; the perpendicular construction (1.11) was chosen as the more direct, since the right angles required for tangency are given immediately by the construction and the parallels then follow from 1.28.\n\n**USED:** 1.10, 1.11, 1.28, 1.34, 3.16, CN1, D1.10, D1.15, D1.17, D1.22, D4.5, P3\n**Human refs (from References field):** 1.10, 1.31, 1.34, 3.16\n**Jaccard:** 0.231 — AI adds ['1.11', '1.28', 'CN1', 'D1.10', 'D1.15', 'D1.17', 'D1.22', 'D4.5', 'P3']; Human adds ['1.31']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.28",
+    "1.34",
+    "3.16",
+    "CN1",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D4.5",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.10",
+    "1.31",
+    "1.34",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.28",
+    "CN1",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D4.5",
+    "P3"
+  ],
+  "heath_only": [
+    "1.31"
+  ],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Let ABCD be the given square, its sides being AB, BC, CD, DA taken in order. Since ABCD is a square, its four sides are equal, AB = BC = CD = DA, and its four angles DAB, ABC, BCD, CDA are"
+}

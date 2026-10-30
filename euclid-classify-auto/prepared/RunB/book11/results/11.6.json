@@ -1,0 +1,13 @@
+{
+  "proposition": "11.6",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Both proofs share the same high-level strategy (construct DE perpendicular to BD, prove angle EDA is right, use XI.5 for coplanarity, conclude parallelism), but the key intermediate conclusions differ substantively. Heath proves angle EDA is right via triangle congruence: I.4 (SAS) yields AD = BE, then I.8 (SSS) yields angle ABE = angle EDA, so EDA is right. The AI instead uses a Pythagorean approach: I.47 applied three times gives squared-length relationships, algebraic substitution (CN1, CN2) yields AE squared = AD squared + DE squared, and I.48 (converse Pythagorean theorem) gives angle ADE is right. These are genuinely different mathematical techniques with different intermediate geometric facts (equality of segments vs. squared-length identities), not merely different levels of granularity. Additionally, the final parallelism step uses different propositions: Heath applies I.28 (co-interior angles) while the AI applies I.27 (alternate angles). The AI's path is logically valid throughout, so this is a path difference (D), not an error.",
+  "jaccard": 0.143,
+  "ai_citations": "1.11|1.27|1.47|1.48|11.5|CN1|CN2|D11.3|P1|P4",
+  "heath_citations": "1.28|1.4|1.8|11.2|11.5|D11.3",
+  "ai_only": "1.11|1.27|1.47|1.48|CN1|CN2|P1|P4",
+  "heath_only": "1.28|1.4|1.8|11.2",
+  "audit_record": ""
+}

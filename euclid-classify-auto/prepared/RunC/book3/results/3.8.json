@@ -1,0 +1,13 @@
+{
+  "proposition": "3.8",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. While both proofs establish the same overall conclusions (ordering on concave circumference, ordering on convex circumference, uniqueness of equal lines), the logical paths diverge in two substantive ways. First, for the convex circumference ordering, Heath uses 1.21 (lines constructed within a triangle are less than the remaining two sides) to show DK < DL, while the AI uses 1.24 (SAS inequality) with an angle comparison argument noting that B lies between A and M, making the angle at M directly comparable. Second, for the uniqueness argument, Heath constructs the equal angle directly and uses 1.4, then argues by contradiction citing the earlier ordering result, while the AI uses 1.23 to construct the angle, 1.4 for SAS congruence, and then 1.8 (SSS) in the contradiction argument. These are genuinely different intermediate reasoning steps (not merely different citation depth), confirmed by the fact that heath_only items (1.21, 3.1) are not subsumed by any higher-level proposition the AI cites. The AI's alternative path is logically valid throughout, so the classification is D rather than E.",
+  "jaccard": 0.273,
+  "ai_citations": "1.20|1.23|1.24|1.4|1.8|CN5|D1.15|P1|P3",
+  "heath_citations": "1.20|1.21|1.24|1.4|3.1",
+  "ai_only": "1.23|1.8|CN5|D1.15|P1|P3",
+  "heath_only": "1.21|3.1",
+  "audit_record": ""
+}

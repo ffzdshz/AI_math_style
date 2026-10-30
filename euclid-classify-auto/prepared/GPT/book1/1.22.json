@@ -1,0 +1,44 @@
+{
+  "proposition": "1.22",
+  "book": 1,
+  "statement": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+  "heath_proof": "Let the three given straight lines be A, B, C, and of these let two taken together in any manner be greater than the remaining one, namely A, B greater than C, A, C greater than B, and B, C greater than A; thus it is required to construct a triangle out of straight lines equal to A, B, C. Let there be set out a straight line DE, terminated at D but of infinite length in the direction of E, and let DF be made equal to A, FG equal to B, and GH equal to C. [I. 3] With centre F and distance FD let the circle DKL be described; again, with centre G and distance GH let the circle KLH be described; and let KF, KG be joined; I say that the triangle KFG has been constructed out of three straight lines equal to A, B, C. For, since the point F is the centre of the circle DKL, FD is equal to FK. But FD is equal to A; therefore KF is also equal to A. Again, since the point G is the centre of the circle LKH, GH is equal to GK. But GH is equal to C; therefore KG is also equal to C. And FG is also equal to B; therefore the three straight lines KF, FG, GK are equal to the three straight lines A, B, C. Therefore out of the three straight lines KF, FG, GK, which are equal to the three given straight lines A, B, C, the triangle KFG has been constructed.",
+  "ai_proof_text": "1.22\n**Statement:** Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.\n\n**Step 1.** Let the lengths of the three given straight lines be a, b, c. If a triangle has these side lengths, then a + b > c, b + c > a, and c + a > b, by 1.20. Thus the stated condition is necessary. Assume henceforth that these inequalities hold.\n\n**Step 2.** Relabel the given lengths so that a is a greatest, and use the given segment of length a as the base AB. Mark E on AB so that AE = b: if b < a, apply 1.3; if b = a, take E = B. Path choice: choosing a greatest segment as the base makes the cutting-off construction of 1.3 directly applicable, without a separate transfer construction. [1.3]\n\n**Step 3.** Produce BA beyond A sufficiently far, and on this produced part cut off AF equal to b. Thus F, A, E lie in that order on one straight line, and AF = AE = b. [P2, 1.3]\n\n**Step 4.** Describe the circle Γ with centre A and radius AE, and the circle Δ with centre B and radius c. Both E and F lie on Γ, since AE = AF. [P3, D1.15]\n\n**Step 5.** The point E is inside Δ. Indeed, if E = B, it is the centre. Otherwise, AB = AE + EB and b + c > a give AE + c > AE + EB; cancelling AE gives c > EB. On the other hand, F is outside Δ, because BF = BA + AF = a + b > c. Thus Γ has a point E inside Δ and a point F outside Δ. [Hypothesis, CN2, CN3, CN5, D1.15]\n\n**Step 6.** Since EF passes through A and has its endpoints on Γ, it is a diameter. Consider either semicircular boundary of Γ from E to F. It begins inside the region bounded by Δ and ends outside that region, so it meets the boundary of Δ at some point C. Consequently C lies on both circles. Moreover, C is not on AB: the only points of Γ on that straight line are E and F, and neither lies on Δ. [D1.13, D1.15, D1.17, D1.18]\n\n**Step 7.** Join AC and BC. Since C is not on AB, the three straight lines AB, BC, CA bound a triangle ABC. [P1, D1.19]\n\n**Step 8.** Because C lies on Γ, AC = AE = b; because C lies on Δ, BC = c. Also AB = a by its selection. Therefore triangle ABC has its three sides respectively equal to the three given straight lines. Together with Step 1, this establishes both the construction under the stated condition and the necessity of that condition. [D1.15, CN1]\n\n**USED:** 1.20, 1.3, CN1, CN2, CN3, CN5, D1.13, D1.15, D1.17, D1.18, D1.19, P1, P2, P3\n**Human refs (from References field):** 1.20, 1.3\n**Jaccard:** 0.143 — AI adds ['CN1', 'CN2', 'CN3', 'CN5', 'D1.13', 'D1.15', 'D1.17', 'D1.18', 'D1.19', 'P1', 'P2', 'P3']",
+  "ai_used": [
+    "1.20",
+    "1.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.13",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "D1.19",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.3"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.13",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "D1.19",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let the lengths of the three given straight lines be a, b, c. If a triangle has these side lengths, then a + b > c, b + c > a, and c + a > b, by 1.20. Thus the stated condition is necessar"
+}

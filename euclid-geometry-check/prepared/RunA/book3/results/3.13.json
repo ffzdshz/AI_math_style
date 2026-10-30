@@ -1,0 +1,46 @@
+{
+  "proposition": "3.13",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 3",
+      "claim": "Line GH produced passes through both contact points A and B (by 3.11 applied to each point separately)",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 4",
+      "claim": "A and B both lie on line GH; GA = GB as radii of circle ABDC",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 5",
+      "claim": "A and B lie on opposite sides of G along line GH, each at distance GA from G",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H lies on line GH on the same side of G as A; HA = r - d and HB = r + d where r = GA and d = GH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Line GH passes through both contact points A and B (by 3.12 for external tangency)",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Both A and B lie between G and H on line GH (contact points between centers for external tangency)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 13",
+      "claim": "A and B are on the same ray from G at equal distances GA = GB, forcing A = B",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Case I (Internal tangency): G is center of outer circle ABDC, H is center of inner circle ABEC. H is inside the outer circle so GH < GA = R. Contact points A and B both lie on line GH at distance R from G. Since A and B are distinct and equidistant from G on a line, they are on opposite sides of G. H is between G and A (same side as A). This forces HA = R - GH and HB = R + GH. Setting HA = HB (radii of inner circle) yields GH = 0, so G = H, contradicting 3.6. Case II (External tangency): G and H are centers of the two circles. Contact points A and B both lie on line GH between G and H (by 3.12). Both are at distance r1 from G (radii). Two points on the same ray from G at equal distance must coincide, so A = B, contradicting the assumption of two distinct contact points.",
+  "pass_reason": "All spatial claims are mutually consistent. In Case I, the placement of A and B on opposite sides of G is the only valid configuration for two distinct equidistant points on a line, and the resulting algebra correctly forces centers to coincide. In Case II, both contact points being between G and H on the same ray from G at equal distances correctly forces them to coincide. The proof uses a different approach from Heath (3.12 instead of 3.2 and D3.3 for the external case) but the spatial reasoning is valid throughout."
+}

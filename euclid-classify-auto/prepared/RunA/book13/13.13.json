@@ -1,0 +1,51 @@
+{
+  "proposition": "13.13",
+  "book": 13,
+  "statement": "To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.",
+  "heath_proof": "Let the diameter AB of the given sphere be set out, and let it be cut at the point C so that AC is double of CB; let the semicircle ADB be described on AB, let CD be drawn from the point C at right angles to AB, and let DA be joined; let the circle EFG which has its radius equal to DC be set out, let the equilateral triangle EFG be inscribed in the circle EFG, [IV. 2] let the centre of the circle, the point H, be taken, [III. 1] let EH, HF, HG be joined; from the point H let HK be set up at right angles to the plane of the circle EFG, [XI. 12] let HK equal to the straight line AC be cut off from HK, and let KE, KF, KG be joined. Now, since KH is at right angles to the plane of the circle EFG, therefore it will also make right angles with all the straight lines which meet it and are in the plane of the circle EFG. [XI. Def. 3] But each of the straight lines HE, HF, HG meets it: therefore HK is at right angles to each of the straight lines HE, HF, HG. And, since AC is equal to HK, and CD to HE, and they contain right angles, therefore the base DA is equal to the base KE. [I. 4] For the same reason each of the straight lines KF, KG is also equal to DA; therefore the three straight lines KE, KF, KG are equal to one another. And, since AC is double of CB, therefore AB is triple of BC. But, as AB is to BC, so is the square on AD to the square on DC, as will be proved afterwards. Therefore the square on AD is triple of the square on DC. But the square on FE is also triple of the square on EH, [XIII. 12] and DC is equal to EH; therefore DA is also equal to EF. But DA was proved equal to each of the straight lines KE, KF, KG; therefore each of the straight lines EF, FG, GE is also equal to each of the straight lines KE, KF, KG; therefore the four triangles EFG, KEF, KFG, KEG are equilateral. Therefore a pyramid has been constructed out of four equilateral triangles, the triangle EFG being its base and the point K its vertex. It is next required to comprehend it in the given sphere and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid. For let the straight line HL be produced in a straight line with KH, and let HL be made equal to CB. Now, since, as AC is to CD, so is CD to CB, [VI. 8] while AC is equal to KH, CD to HE, and CB to HL, therefore, as KH is to HE, so is EH to HL; therefore the rectangle KH, HL is equal to the square on EH. [VI. 17] And each of the angles KHE. EHL is right; therefore the semicircle described on KL will pass through E also. [cf. VI. 8, III. 31.] If then, KL remaining fixed, the semicircle be carried round and restored to the same position from which it began to be moved, it will also pass through the points F, G, since, if FL, LG be joined, the angles at F, G similarly become right angles; and the pyramid will be comprehended in the given sphere. For KL, the diameter of the sphere, is equal to the diameter AB of the given sphere, inasmuch as KH was made equal to AC, and HL to CB. I say next that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid For, since AC is double of CB, therefore AB is triple of BC; and, convertendo, BA is one and a half times AC. But, as BA is to AC, so is the square on BA to the square on AD. Therefore the square on BA is also one and a half times the square on AD. And BA is the diameter of the given sphere, and AD is equal to the side of the pyramid. Therefore the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.",
+  "ai_proof_text": "13.13\n**Statement:** To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.\n\n**Step 1.** Let the given sphere have diameter AB. Cut AB at C so that AC = 2CB [6.9]. Then AB = AC + CB = 3CB.\n\n**Step 2.** On AB as diameter, describe semicircle ADB [P3]. From C, draw CD at right angles to AB, meeting the semicircle at D [1.11]. Join AD [P1].\n\n**Step 3.** Since ADB is a semicircle on diameter AB, angle ADB is a right angle [3.31]. In right triangle ADB, CD is the perpendicular from the right angle D to the hypotenuse AB. Therefore the triangles on either side of the perpendicular are similar to the whole triangle and to each other [6.8]. From the similarity of triangle ACD to triangle ADB, we have AC : AD = AD : AB, and hence AD is a mean proportional between AC and AB, so AD^2 = AC * AB [6.17]. From the similarity of triangle ACD to triangle DCB, we have AC : CD = CD : CB, and hence CD is a mean proportional between AC and CB, so CD^2 = AC * CB [6.17].\n\n**Step 4.** By the definition of a sphere [D11.14], the given sphere is generated by rotating semicircle ADB about diameter AB. Under this rotation, the point D traces a circle with center C and radius CD, lying in the plane through C perpendicular to AB. Every point of this traced circle lies on the surface of the sphere.\n\n**Step 5.** In this circle (center C, radius CD), inscribe equilateral triangle EFG [4.2]. Since C is the center of the circle, CE = CF = CG = CD. Join AE, AF, AG [P1].\n\n**Step 6.** Since AB, the axis of the sphere, is perpendicular to the plane of the circle at C, the segment AC (being part of AB) is at right angles to the plane of triangle EFG. Therefore AC makes right angles with every straight line through C lying in that plane [D11.3]; in particular, angles ACE, ACF, and ACG are each right angles.\n\n**Step 7.** Consider right triangles ACE, ACF, and ACG. In each, the side AC is common, CE = CF = CG (all radii of the circle), and the included angle at C is a right angle. By SAS congruence [1.4], these triangles are congruent, and therefore AE = AF = AG.\n\n**Step 8.** In right triangle ACE (right angle at C), AE^2 = AC^2 + CE^2 [1.47]. Since CE = CD, we have AE^2 = AC^2 + CD^2. But in right triangle ACD from the semicircle (with right angle at C, since CD was drawn perpendicular to AB), AD^2 = AC^2 + CD^2 [1.47]. Therefore AE^2 = AD^2, and so AE = AD [CN1]. Consequently AE^2 = AD^2 = AC * AB [Step 3].\n\n**Step 9.** By Proposition 13.12, the square on the side of the equilateral triangle inscribed in a circle equals three times the square on the radius of that circle. Therefore EF^2 = 3 * CD^2 = 3 * AC * CB [Step 3].\n\n**Step 10.** Since AC = 2CB, we compute: AE^2 = AC * AB = 2CB * 3CB = 6CB^2. And EF^2 = 3 * AC * CB = 3 * 2CB * CB = 6CB^2. Since AE^2 = EF^2 = 6CB^2, we conclude AE = EF.\n\n**Step 11.** Now AE = AF = AG [Step 7] and AE = EF [Step 10]. Since EFG is equilateral, EF = FG = GE. Therefore all six edges AE, AF, AG, EF, FG, GE are equal to one another. The solid figure AEFG, being contained by four equilateral triangular planes and constructed from the plane of triangle EFG to the single point A, is a pyramid [D11.12] — indeed a regular tetrahedron.\n\n**Step 12.** It remains to show the pyramid is comprehended in the given sphere. Vertex A is an endpoint of the diameter AB and therefore lies on the sphere. Vertices E, F, and G lie on the circle traced by the rotation of D about AB [Steps 4 and 5], and every point of that circle lies on the surface of the sphere. Therefore all four vertices of pyramid AEFG lie on the given sphere, and the pyramid is inscribed in it.\n\n**Step 13.** Finally, for the metric relation. We have AB = 3CB, so AB^2 = 9CB^2. And EF^2 = 6CB^2 [Step 10]. Therefore 2 * AB^2 = 18CB^2 = 3 * 6CB^2 = 3 * EF^2. That is, twice the square on the diameter equals thrice the square on the side of the pyramid, and hence the square on the diameter of the sphere is one and a half times the square on the side of the pyramid. Q.E.F.\n\n**USED:** 1.11, 1.4, 1.47, 13.12, 3.31, 4.2, 6.17, 6.8, 6.9, CN1, D11.12, D11.14, D11.3, P1, P3\n**Human refs (from References field):** 1.4, 11.12, 13.12, 3.1, 3.31, 4.2, 6.17, 6.8, D11.3\n**Jaccard:** 0.412 — AI adds ['1.11', '1.47', '6.9', 'CN1', 'D11.12', 'D11.14', 'P1', 'P3']; Human adds ['11.12', '3.1']",
+  "ai_used": [
+    "1.11",
+    "1.4",
+    "1.47",
+    "13.12",
+    "3.31",
+    "4.2",
+    "6.17",
+    "6.8",
+    "6.9",
+    "CN1",
+    "D11.12",
+    "D11.14",
+    "D11.3",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.4",
+    "11.12",
+    "13.12",
+    "3.1",
+    "3.31",
+    "4.2",
+    "6.17",
+    "6.8",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.47",
+    "6.9",
+    "CN1",
+    "D11.12",
+    "D11.14",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "11.12",
+    "3.1"
+  ],
+  "jaccard": 0.412,
+  "proof_summary": "**Step 1.** Let the given sphere have diameter AB. Cut AB at C so that AC = 2CB [6.9]. Then AB = AC + CB = 3CB.  **Step 2.** On AB as diameter, describe semicircle ADB [P3]. From C, draw CD at right a"
+}

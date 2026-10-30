@@ -1,0 +1,36 @@
+{
+  "proposition": "11.2",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Lines l and m intersect at point O; A is a point on m distinct from O and not on l; line n is drawn through A parallel to l (by I.31); parallel lines lie in a common plane (D1.23)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "l and n are parallel and lie in one plane Pi; O belongs to Pi (because O is on l); A belongs to Pi (because A is on n)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Segment OA lies in Pi; OA is part of line m; by 11.1 the whole of m lies in Pi; therefore both l and m lie in Pi",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangle ABC has sides AB and AC meeting at A; by Steps 1-3 they lie in one plane Sigma; points A, B, C all belong to Sigma",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Since B and C belong to Sigma, line BC lies in Sigma; all three sides and the triangle lie in Sigma",
+      "type": "plane_membership"
+    }
+  ],
+  "configuration_map": "O: intersection point of lines l and m; lies in plane Pi (via membership in l). A: point on m distinct from O, not on l; lies in Pi (via membership in n). l: one of the intersecting lines; lies in Pi as part of the parallel pair (l, n). n: constructed through A parallel to l; lies in Pi by definition of parallel lines (D1.23). m: the other intersecting line through O and A; segment OA is part of m and lies in Pi, so by 11.1 all of m lies in Pi. For the triangle part: Sigma is the plane determined by sides AB and AC (which meet at A), and BC also lies in Sigma since B, C are in Sigma.",
+  "pass_reason": "All spatial claims are plane-membership assertions (points and lines lying in a common plane) that form a consistent logical chain. The parallel-line construction validly establishes a shared plane Pi, point memberships in Pi follow from line memberships, and 11.1 is correctly applied to extend partial plane membership of m to full membership. No angle decompositions, no inside/outside claims, no ray-betweenness claims — no contradictory spatial assumptions exist."
+}

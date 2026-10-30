@@ -1,0 +1,32 @@
+{
+  "proposition": "4.14",
+  "book": 4,
+  "statement": "About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.",
+  "heath_proof": "Let ABCDE be the given pentagon, which is equilateral and equiangular; thus it is required to circumscribe a circle about the pentagon ABCDE. Let the angles BCD, CDE be bisected by the straight lines CF, DF respectively, and from the point F, at which the straight lines meet, let the straight lines FB, FA, FE be joined to the points B, A, E. Then in manner similar to the preceding it can be proved that the angles CBA, BAE, AED have also been bisected by the straight lines FB, FA, FE respectively. Now, since the angle BCD is equal to the angle CDE, and the angle FCD is half of the angle BCD, and the angle CDF half of the angle CDE, therefore the angle FCD is also equal to the angle CDF, so that the side FC is also equal to the side FD. [I. 6]  Similarly it can be proved that each of the straight lines FB, FA, FE is also equal to each of the straight lines FC, FD; therefore the five straight lines FA, FB, FC, FD, FE are equal to one another. Therefore the circle described with centre F and distance one of the straight lines FA, FB, FC, FD, FE will pass also through the remaining points, and will have been circumscribed. Let it be circumscribed, and let it be ABCDE. Therefore about the given pentagon, which is equilateral and equiangular, a circle has been circumscribed.",
+  "ai_proof_text": "4.14\n**Statement:** About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.\n\n**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. We must circumscribe a circle about it, that is, find a circle whose circumference passes through each vertex A, B, C, D, E [D4.6].\n\n**Step 2.** Bisect angle BCD by the line CF, and bisect angle CDE by the line DF [1.9]. Let F be the point at which CF and DF meet [P1].\n\n**Step 3.** Since the pentagon is equiangular, angle BCD equals angle CDE. Since CF bisects angle BCD, angle FCD equals half of angle BCD. Since DF bisects angle CDE, angle FDC equals half of angle CDE. Because angle BCD equals angle CDE, it follows that angle FCD equals angle FDC.\n\n**Step 4.** In triangle FCD, since angle FCD equals angle FDC, the side FC equals the side FD [1.6].\n\n**Step 5.** Now consider triangles BCF and DCF. We have BC equals DC (the pentagon is equilateral), CF is common to both triangles, and angle BCF equals angle DCF (since CF bisects angle BCD). Therefore by the side-angle-side criterion, triangle BCF is congruent to triangle DCF [1.4]. Hence FB equals FD.\n\n**Step 6.** Since FC equals FD (Step 4) and FB equals FD (Step 5), it follows that FB equals FC [CN1].\n\n**Step 7.** Consider triangles BCF and EDF. We have BC equals ED (equilateral pentagon), FC equals FD (Step 4), and angle BCF equals angle EDF (since angle BCF is half of angle BCD, angle EDF is half of angle CDE, and angle BCD equals angle CDE). Therefore by the side-angle-side criterion, triangle BCF is congruent to triangle EDF [1.4]. Hence FB equals FE.\n\n**Step 8.** From the congruence in Step 5, angle FBC equals angle FDC. Since angle FDC is half of angle CDE (because DF bisects angle CDE) and angle CDE equals angle ABC (equiangular pentagon), angle FBC equals half of angle ABC. Therefore angle ABF, which equals angle ABC minus angle FBC, equals half of angle ABC. Hence angle ABF equals angle FBC, and BF bisects angle ABC.\n\n**Step 9.** Consider triangles ABF and CBF. We have AB equals CB (equilateral pentagon), BF is common, and angle ABF equals angle CBF (since BF bisects angle ABC, as shown in Step 8). Therefore by the side-angle-side criterion, triangle ABF is congruent to triangle CBF [1.4]. Hence FA equals FC.\n\n**Step 10.** From Steps 4, 5, 6, 7, and 9, we have FA equals FC, FC equals FD, FB equals FC, and FB equals FE. Therefore FA equals FB equals FC equals FD equals FE [CN1].\n\n**Step 11.** Describe the circle with center F and radius FA [P3, D1.15]. Since FA equals FB equals FC equals FD equals FE, this circle passes through all five vertices A, B, C, D, E.\n\n**Step 12.** Therefore about the given equilateral and equiangular pentagon ABCDE, a circle has been circumscribed [D4.6]. Q.E.F.\n\n**USED:** 1.4, 1.6, 1.9, CN1, D1.15, D4.6, P1, P3\n**Human refs (from References field):** 1.6\n**Jaccard:** 0.125 — AI adds ['1.4', '1.9', 'CN1', 'D1.15', 'D4.6', 'P1', 'P3']",
+  "ai_used": [
+    "1.4",
+    "1.6",
+    "1.9",
+    "CN1",
+    "D1.15",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6"
+  ],
+  "ai_only": [
+    "1.4",
+    "1.9",
+    "CN1",
+    "D1.15",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. We must circumscribe a circle about it, that is, find a circle whose circumference passes through each vertex A, B, C, D, E [D4"
+}

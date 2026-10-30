@@ -1,0 +1,33 @@
+{
+  "proposition": "3.26",
+  "book": 3,
+  "statement": "In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.",
+  "heath_proof": "Let ABC, DEF be equal circles, and in them let there be equal angles, namely at the centres the angles BGC, EHF, and at the circumferences the angles BAC, EDF; I say that the circumference BKC is equal to the circumference ELF. For let BC, EF be joined. Now, since the circles ABC, DEF are equal, the radii are equal. Thus the two straight lines BG, GC are equal to the two straight lines EH, HF; and the angle at G is equal to the angle at H; therefore the base BC is equal to the base EF. [I. 4]  And, since the angle at A is equal to the angle at D, the segment BAC is similar to the segment EDF; [III. Def. 11]and they are upon equal straight lines. But similar segments of circles on equal straight lines are equal to one another; [III. 24] therefore the segment BAC is equal to EDF. But the whole circle ABC is also equal to the whole circle DEF; therefore the circumference BKC which remains is equal to the circumference ELF.",
+  "ai_proof_text": "3.26\n**Statement:** In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.\n\n**Step 1.** Let ABC and DEF be equal circles, and let the angles BGC and EHF be equal angles at the centres G and H respectively. Also let the angles BAC and EDF be equal angles at the circumferences. We must prove that the circumference BKC is equal to the circumference ELF.\n\n**Step 2.** First consider the case of equal central angles. Since the circles are equal, their radii are equal (D3.1), so GB = HE and GC = HF.\n\n**Step 3.** In triangles BGC and EHF, we have GB = HE, GC = HF, and angle BGC = angle EHF (given). Therefore by the Side-Angle-Side criterion (1.4), triangle BGC is congruent to triangle EHF, and hence the base BC equals the base EF.\n\n**Step 4.** Suppose the circumference BKC is not equal to the circumference ELF. Then one of them is greater. Let circumference BKC be greater than circumference ELF.\n\n**Step 5.** Since circumference BKC is greater than circumference ELF, we can construct an angle BGM at centre G such that the circumference BMC is equal to the circumference ELF, where M is a point on circumference BKC between B and K, so that circumference BMC is less than circumference BKC.\n\n**Step 6.** Then angle BGM stands on circumference BMC and angle EHF stands on circumference ELF. Since circumference BMC equals circumference ELF in equal circles, we would have angle BGM equal to angle EHF. But angle EHF equals angle BGC by hypothesis, so angle BGM would equal angle BGC.\n\n**Step 7.** But angle BGM is a part of angle BGC (since M lies on arc BKC beyond C from G's perspective, making the arc BMC smaller, thus angle BGM is less than angle BGC). Therefore a part would equal the whole, which is impossible (CN5).\n\n**Step 8.** Therefore the circumference BKC is not unequal to the circumference ELF. Hence circumference BKC equals circumference ELF, which is the case for central angles.\n\n**Step 9.** Now consider the case of equal angles at the circumferences: angle BAC = angle EDF. By Proposition 3.20, the angle at the centre is double the angle at the circumference when they stand on the same arc. Therefore angle BGC = 2 * angle BAC and angle EHF = 2 * angle EDF.\n\n**Step 10.** Since angle BAC = angle EDF, we have angle BGC = angle EHF (CN1, as doubles of equal things are equal by CN2, taking each angle added to itself).\n\n**Step 11.** But we proved in the first case that equal central angles in equal circles stand on equal circumferences. Therefore circumference BKC equals circumference ELF.\n\n**Step 12.** Therefore in equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences. Q.E.D.\n\n**USED:** 1.4, 3.20, CN1, CN2, CN5, D3.1\n**Human refs (from References field):** 1.4, 3.24, D3.11\n**Jaccard:** 0.125 — AI adds ['3.20', 'CN1', 'CN2', 'CN5', 'D3.1']; Human adds ['3.24', 'D3.11']",
+  "ai_used": [
+    "1.4",
+    "3.20",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D3.1"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.24",
+    "D3.11"
+  ],
+  "ai_only": [
+    "3.20",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D3.1"
+  ],
+  "heath_only": [
+    "3.24",
+    "D3.11"
+  ],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let ABC and DEF be equal circles, and let the angles BGC and EHF be equal angles at the centres G and H respectively. Also let the angles BAC and EDF be equal angles at the circumferences."
+}

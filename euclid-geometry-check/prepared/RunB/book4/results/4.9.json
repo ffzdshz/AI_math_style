@@ -1,0 +1,91 @@
+{
+  "proposition": "4.9",
+  "run": "RunB",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a square: AB = BC = CD = DA, all angles are right angles",
+      "type": "figure_definition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is the intersection of diagonals AC and BD, so E lies on both diagonals",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB is parallel to DC (co-interior angles DAB + ADC = two right angles)",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AD is parallel to BC (co-interior angles DAB + ABC = two right angles)",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Alternate angles EAB = ECD with AB || DC and transversal AC",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Alternate angles EBA = EDC with AB || DC and transversal BD",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle AEB congruent to triangle CED (ASA), giving EA = EC and EB = ED",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle ABD is isosceles with DA = AB",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle ADB = angle ABD = half a right angle",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangle ABC is isosceles with AB = BC",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle BAC = angle BCA = half a right angle",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 10",
+      "claim": "In triangle AEB, angle EAB = angle BAC (ray AE = ray AC since E is on AC)",
+      "type": "ray_identification"
+    },
+    {
+      "step": "Step 10",
+      "claim": "In triangle AEB, angle EBA = angle ABD (ray BE = ray BD since E is on BD)",
+      "type": "ray_identification"
+    },
+    {
+      "step": "Step 10",
+      "claim": "EA = EB since triangle AEB is isosceles (equal base angles)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 11",
+      "claim": "EA = EB = EC = ED (E is equidistant from all four vertices)",
+      "type": "equidistance"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Circle with center E and radius EA passes through A, B, C, D",
+      "type": "circle_construction"
+    }
+  ],
+  "configuration_map": "Point E: Constructed as intersection of diagonals AC and BD of square ABCD. E lies between A and C on diagonal AC, and between B and D on diagonal BD. Because E is interior to the square and on both diagonals, ray AE coincides with ray AC, and ray BE coincides with ray BD. Triangle AEB is formed by adjacent vertices A, B and center E, with angles of 45-45-90 degrees. The configuration is fully consistent: E is the center of the square, equidistant from all four vertices.",
+  "pass_reason": "All spatial claims are mutually consistent. The key identifications (ray AE = ray AC, ray BE = ray BD) are valid because E lies between the endpoints of each diagonal. The parallel-line alternate-angle arguments are correctly applied. The ASA congruence correctly establishes EA = EC and EB = ED, and the isosceles triangle argument correctly establishes EA = EB. The proof takes a different but geometrically sound path from Heath's."
+}

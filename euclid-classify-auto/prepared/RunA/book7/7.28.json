@@ -1,0 +1,26 @@
+{
+  "proposition": "7.28",
+  "book": 7,
+  "statement": "If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.",
+  "heath_proof": "For let two numbers AB, BC prime to one another be added; I say that the sum AC is also prime to each of the numbers AB, BC. For, if CA, AB are not prime to one another, some number will measure CA, AB. Let a number measure them, and let it be D. Since then D measures CA, AB, therefore it will also measure the remainder BC. But it also measures BA; therefore D measures AB, BC which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers CA, AB; therefore CA, AB are prime to one another. For the same reason AC, CB are also prime to one another. Therefore CA is prime to each of the numbers AB, BC. Again, let CA, AB be prime to one another; I say that AB, BC are also prime to one another. For, if AB, BC are not prime to one another, some number will measure AB, BC. Let a number measure them, and let it be D. Now, since D measures each of the numbers AB, BC, it will also measure the whole CA. But it also measures AB; therefore D measures CA, AB which are prime to one another: which is impossible. [VII. Def. 12] Therefore no number will measure the numbers AB, BC. Therefore AB, BC are prime to one another.",
+  "ai_proof_text": "7.28\n**Statement:** If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.\n\n**Step 1.** Let A and B be two numbers prime to one another. We first prove that A + B is prime to each of A and B.\n\n**Step 2.** Suppose, for the sake of contradiction, that A + B is not prime to A. Then by D7.12, there exists some number D greater than a unit that measures both A + B and A.\n\n**Step 3.** Since D measures A, by D7.3 and D7.15 we have A = n * D for some number n. Since D measures A + B, we have A + B = m * D for some number m.\n\n**Step 4.** Then B = (A + B) - A = m * D - n * D = (m - n) * D, by CN3 (subtracting equals from equals). Therefore D measures B.\n\n**Step 5.** Thus D measures both A and B. But A and B are prime to one another, meaning by D7.12 they are measured by a unit alone as a common measure. This is a contradiction, since D is greater than a unit.\n\n**Step 6.** Therefore A + B is prime to A. By an identical argument (exchanging the roles of A and B), A + B is prime to B. This completes the first part.\n\n**Step 7.** Now we prove the converse. Let A and B be two numbers such that A + B is prime to one of them, say A. We prove that A and B are prime to one another.\n\n**Step 8.** Suppose, for the sake of contradiction, that A and B are not prime to one another. Then by D7.12, there exists some number D greater than a unit that measures both A and B.\n\n**Step 9.** Since D measures A, we have A = n * D for some number n. Since D measures B, we have B = m * D for some number m. By D7.3 and D7.15, these follow from the definition of measuring.\n\n**Step 10.** Then A + B = n * D + m * D = (n + m) * D, by CN2 (adding equals to equals). Therefore D measures A + B.\n\n**Step 11.** Thus D measures both A + B and A. But A + B is prime to A, meaning by D7.12 they are measured by a unit alone as a common measure. This is a contradiction, since D is greater than a unit.\n\n**Step 12.** Therefore A and B are prime to one another. Q.E.D.\n\n**USED:** CN2, CN3, D7.12, D7.15, D7.3\n**Human refs (from References field):** D7.12\n**Jaccard:** 0.200 — AI adds ['CN2', 'CN3', 'D7.15', 'D7.3']",
+  "ai_used": [
+    "CN2",
+    "CN3",
+    "D7.12",
+    "D7.15",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "D7.12"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "D7.15",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A and B be two numbers prime to one another. We first prove that A + B is prime to each of A and B.  **Step 2.** Suppose, for the sake of contradiction, that A + B is not prime to A. T"
+}

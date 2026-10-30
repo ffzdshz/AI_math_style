@@ -1,0 +1,56 @@
+{
+  "proposition": "11.37",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Solids A, B, C, D are similar and similarly described on edges a, b, c, d respectively",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Lines x, y constructed as continued proportionals: a:b = b:x = x:y; triplicate ratio a:y established",
+      "type": "proportional_construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Lines z, w constructed as continued proportionals: c:d = d:z = z:w; triplicate ratio c:w established",
+      "type": "proportional_construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A:B = a:y and C:D = c:w via 11.33 (solid ratio equals triplicate edge ratio)",
+      "type": "ratio_identity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Fourth proportional e constructed so that a:b = c:e",
+      "type": "proportional_construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Solid E constructed on edge e, similar and similarly described to C (via 11.27)",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Faces of D and E are similar to corresponding faces of C, hence similar to each other (6.21)",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "D and E are similar solids (D11.9)",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Continued proportionals p, q constructed: d:e = e:p = p:q; D:E = d:q via 11.33",
+      "type": "proportional_construction"
+    }
+  ],
+  "configuration_map": "No spatial configuration to map. All constructed entities (lines x, y, z, w, e, p, q and solid E) are defined purely by proportional relationships and similarity conditions. No point is positioned relative to any geometric figure (no inside/outside/on claims), no ray ordering is established, no angle decomposition is performed, and no plane membership or perpendicularity claims are made. The proof operates entirely in the domain of ratios, proportions, and abstract similarity of parallelepipedal solids.",
+  "pass_reason": "The proof is entirely proportional/algebraic in nature. It reasons about ratios of similar parallelepipedal solids and their edges using Book 5 proportion theory, Book 6 constructions, and 11.33 (triplicate ratio). No spatial configuration claims are made — no point positions, ray orderings, angle decompositions, plane memberships, or inside/outside assertions — so there are no pairs of spatial claims that could contradict each other."
+}

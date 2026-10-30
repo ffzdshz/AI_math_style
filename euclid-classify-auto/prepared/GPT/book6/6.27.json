@@ -1,0 +1,46 @@
+{
+  "proposition": "6.27",
+  "book": 6,
+  "statement": "Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line, that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect.",
+  "heath_proof": "Let AB be a straight line and let it be bisected at C; let there be applied to the straight line AB the parallelogram AD deficient by the parallelogrammic figure DB described on the half of AB, that is, CB; I say that, of all the parallelograms applied to AB and deficient by parallelogrammic figures similar and similarly situated to DB, AD is greatest. For let there be applied to the straight line AB the parallelogram AF deficient by the parallelogrammic figure FB similar and similarly situated to DB; I say that AD is greater than AF. For, since the parallelogram DB is similar to the parallelogram FB, they are about the same diameter. [VI. 26]  Let their diameter DB be drawn, and let the figure be described. Then, since CF is equal to FE, [I. 43] and FB is common, therefore the whole CH is equal to the whole KE. But CH is equal to CG, since AC is also equal to CB. [I. 36] Therefore GC is also equal to EK. Let CF be added to each; therefore the whole AF is equal to the gnomon LMN; so that the parallelogram DB, that is, AD, is greater than the parallelogram AF.",
+  "ai_proof_text": "6.27\n**Statement:** Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line, that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect.\n\n**Step 1.** Let AB be bisected at M, and let MBCD be the prescribed parallelogram on MB, with vertices named consecutively. Through A draw AE parallel to MD, meeting CD produced beyond D at E. Thus AMDE is the parallelogram applied to AM, and its defect on AB is MBCD. [1.10, 1.31, P2]\n\n**Step 2.** The parallelograms AMDE and MBCD have equal corresponding sides: AM = MB, MD = BC, DE = AM = MB = CD, and EA = MD. Their corresponding angles are also equal, since their sides are correspondingly parallel. Hence AMDE is similar to its defect MBCD and is an admissible application. In particular, ED = DC. Denote its area by U. [1.29, 1.30, 1.34, CN1, D6.1]\n\n**Step 3.** Take any admissible application AXGH, where X is an interior point of AB, and write its defect as XBFG, with vertices named consecutively. By the stipulated similar situation, BF lies on the ray BC, AH lies on the ray AE, and H, G, F are collinear on a line parallel to AB. Similarity gives XB : BF = MB : BC. Consequently, if X lies between M and B, then BF < BC and XBFG is contained in MBCD; if X lies between A and M, then BF > BC and MBCD is contained in XBFG. If X = M, then BF = BC, so the application coincides with AMDE. Denote the area of AXGH by V. [D6.1, 1.30, CN5, 5.14, CN4]\n\n**Step 4.** First suppose X lies between M and B. Let K be the intersection of HG with MD, and let XG produced meet DC at L. Then K lies between M and D, and L between D and C. Since XBFG is similar and similarly situated to MBCD and shares its angle at B, G lies on the diameter BD. Therefore the complements MXGK and GFCL are equal in area. Our path choice is to use the common-diameter criterion followed by equality of complements: the nested similar defects already satisfy these hypotheses, giving a direct dissection comparison. [P2, 6.26, 1.43]\n\n**Step 5.** The parallelograms HKDE and KFCD have equal bases ED and DC and lie between the same parallels EDC and HGF. Therefore they are equal in area. We use equality of parallelograms on equal bases here because those bases and parallels are already present. Writing [W] for the area of a figure W, the dissections give\nU = [AMKH] + [HKDE]\n  = [AMKH] + [KFCD]\n  = [AMKH] + [GFCL] + [KGLD]\n  = [AMKH] + [MXGK] + [KGLD]\n  = V + [KGLD].\nSince KGLD is a nondegenerate parallelogram, U > V. [1.36, CN2, CN5]\n\n**Step 6.** Now suppose X lies between A and M. Let MD produced meet HG at K, and let XG meet ED at L. Here K lies beyond D, and L lies between E and D. The smaller parallelogram MBCD is similar and similarly situated to XBFG and shares its angle at B; hence D lies on the diameter BG. The complements XMDL and DCFK in XBFG are therefore equal in area. [P2, 6.26, 1.43]\n\n**Step 7.** The parallelograms EDKH and DCFK have equal bases ED and DC and lie between the same parallels EDC and HGF, so they are equal in area. Consequently,\nU = [AXLE] + [XMDL]\n  = [AXLE] + [DCFK]\n  = [AXLE] + [EDKH]\n  = [AXLE] + [ELGH] + [LDKG]\n  = V + [LDKG].\nThe parallelogram LDKG is nondegenerate, so again U > V. [1.36, CN2, CN5]\n\n**Step 8.** Thus every admissible application whose base ends away from M is strictly smaller than AMDE, while the application whose base ends at M coincides with it. Since AMDE is applied to half of AB and is similar to its defect, it is the greatest of all the stated parallelograms. [CN4, CN5]\n\n**USED:** 1.10, 1.29, 1.30, 1.31, 1.34, 1.36, 1.43, 5.14, 6.26, CN1, CN2, CN4, CN5, D6.1, P2\n**Human refs (from References field):** 1.36, 1.43, 6.26\n**Jaccard:** 0.200 — AI adds ['1.10', '1.29', '1.30', '1.31', '1.34', '5.14', 'CN1', 'CN2', 'CN4', 'CN5', 'D6.1', 'P2']",
+  "ai_used": [
+    "1.10",
+    "1.29",
+    "1.30",
+    "1.31",
+    "1.34",
+    "1.36",
+    "1.43",
+    "5.14",
+    "6.26",
+    "CN1",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D6.1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.36",
+    "1.43",
+    "6.26"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.29",
+    "1.30",
+    "1.31",
+    "1.34",
+    "5.14",
+    "CN1",
+    "CN2",
+    "CN4",
+    "CN5",
+    "D6.1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let AB be bisected at M, and let MBCD be the prescribed parallelogram on MB, with vertices named consecutively. Through A draw AE parallel to MD, meeting CD produced beyond D at E. Thus AM"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "13.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's Case 1 proof works by joining diagonals AC and BE, showing they are equal (I.4), then using their intersection point F to derive AF=BF via I.6 (converse of the isosceles triangle theorem), subtracting to get FC=FE, and applying I.8 on triangles FCD and FED. The AI's Case 1 proof takes a fundamentally different route: it joins AC, BD, and AD, shows AC=DB via I.4 on triangles ABC and DCB, then applies I.8 on triangles ACD and DBA to get angle CDA = angle BAD, invokes I.5 on triangle EAD, and adds equal angles via CN2 to conclude angle CDE = angle BAE. The AI never introduces the intersection point F and never uses I.6, instead relying on a different set of triangle congruences (I.8 applied to different triangle pairs) combined with the isosceles triangle theorem (I.5) and angle addition (CN2). Heath's unique citation I.6 reflects a genuinely different logical backbone, not mere citation-depth variation. The AI's second case also differs: it reduces the non-consecutive case to the consecutive case by showing angle C = angle B, whereas Heath proves the non-consecutive case independently using I.4 and I.5 on different triangles. Both proofs are logically complete, covering both required cases, but through different key intermediate conclusions.",
+  "jaccard": 0.429,
+  "ai_citations": "1.4|1.5|1.8|CN1|CN2|P1",
+  "heath_citations": "1.4|1.5|1.6|1.8",
+  "ai_only": "CN1|CN2|P1",
+  "heath_only": "1.6",
+  "audit_record": ""
+}

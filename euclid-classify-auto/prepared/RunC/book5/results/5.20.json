@@ -1,0 +1,13 @@
+{
+  "proposition": "5.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: for the A > C case, they establish A:B > C:B via 5.8, then use 5.13 to derive D:E > F:E via the given and inverse ratios, and conclude D > F via 5.10. Heath handles the A = C and A < C cases with 'similarly we can prove,' while the AI spells them out explicitly, citing 5.7, 5.9, and 5.11 for the equality case and reusing 5.8, 5.13, 5.10 for the less-than case. The AI also explicitly cites D5.5 to justify the inverse ratio step that Heath performs implicitly. Since heath_only is empty and all ai_only items (5.7, 5.9, 5.11, D5.5) represent either explicit treatment of cases Heath leaves as exercises or more granular citation of implicit steps, the proofs reach the same key intermediate conclusions at different citation depths, yielding a granularity difference.",
+  "jaccard": 0.429,
+  "ai_citations": "5.10|5.11|5.13|5.7|5.8|5.9|D5.5",
+  "heath_citations": "5.10|5.13|5.8",
+  "ai_only": "5.11|5.7|5.9|D5.5",
+  "heath_only": "",
+  "audit_record": ""
+}

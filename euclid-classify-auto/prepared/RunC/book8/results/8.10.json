@@ -1,0 +1,13 @@
+{
+  "proposition": "8.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided this classification as Case B (different backbone), leading to Q3 which confirmed a valid different path (D). Heath's proof constructs specific intermediate numbers H=D*F, K=D*H, L=F*H and builds the continued proportion A,K,L,B by establishing individual ratio equalities (E:H, H:G, A:K, K:L, L:B all equal D:F) using repeated applications of 7.17 and 7.18. The AI takes a fundamentally different algebraic approach, representing A=c^(k+1) and B=d^(k+1) as powers and constructing the general interpolating sequence c^(k+1-j)*d^j. It then gives a uniform proof that all consecutive pairs share the ratio c:d by factoring each pair as c^(k-j)*d^j*c and c^(k-j)*d^j*d and applying 7.17. This general parametric construction versus Heath's specific stepwise construction constitutes genuinely different key intermediate conclusions. The AI's path is logically complete: 7.16 (commutativity) justifies the rearrangement, 7.17 provides the ratio conclusion, and D7.15/D7.20 supply definitional grounding. Heath's use of 7.18 is subsumed by the AI's direct use of 7.16+7.17 (since 7.18 is proved from exactly those two propositions), but the overall proof architecture differs enough to be a path difference rather than a granularity difference.",
+  "jaccard": 0.4,
+  "ai_citations": "7.16|7.17|D7.15|D7.20",
+  "heath_citations": "7.17|7.18|D7.20",
+  "ai_only": "7.16|D7.15",
+  "heath_only": "7.18",
+  "audit_record": ""
+}

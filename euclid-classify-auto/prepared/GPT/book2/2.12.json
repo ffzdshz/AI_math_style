@@ -1,0 +1,42 @@
+{
+  "proposition": "2.12",
+  "book": 2,
+  "statement": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.",
+  "heath_proof": "Let ABC be an obtuse-angled triangle having the angle BAC obtuse, and let BD be drawn from the point B perpendicular to CA produced;  I say that the square on BC is greater than the squares on BA, AC by twice the rectangle contained by CA, AD. For, since the straight line CD has been cut at random at the point A, the square on DC is equal to the squares on CA, AD and twice the rectangle contained by CA, AD. [II. 4] Let the square on DB be added to each; therefore the squares on CD, DB are equal to the squares on CA, AD, DB and twice the rectangle CA, AD. But the square on CB is equal to the squares on CD, DB, for the angle at D is right; [I. 47] and the square on AB is equal to the squares on AD, DB; [I. 47]therefore the square on CB is equal to the squares on CA, AB and twice the rectangle contained by CA, AD; so that the square on CB is greater than the squares on CA, AB by twice the rectangle contained by CA, AD.",
+  "ai_proof_text": "2.12\n**Statement:** In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.\n\n**Step 1.** Let ABC be a triangle whose angle ABC is obtuse, so that AC subtends the obtuse angle (D1.21, D1.11). Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW, regarding these figures as areas (D1.22, D2.1).\n\n**Step 2.** Produce AB as necessary, and from C draw CD perpendicular to the straight line AB, meeting it at D (P2, 1.12).\n\n**Step 3.** The point D lies beyond B, so that A, B, D occur in that order. For D cannot coincide with B, since then ABC would be right rather than obtuse (D1.10, D1.11). Nor can D lie on the ray from B through A: in that case angle CBD would be the given obtuse angle, while angle CDB would be right, contrary to 1.17, which says that any two angles of a triangle are together less than two right angles (D1.10, D1.11, 1.17). Thus B lies between A and D.\n\n**Step 4.** Direct path choice: apply 2.4 to AD cut at B, since this immediately supplies the required twice-rectangle term. It gives\nS(AD) = S(AB) + S(BD) + 2R(AB,BD).\n(2.4.)\n\n**Step 5.** Since CD is perpendicular to AD, triangles ACD and BCD are right-angled at D (D1.10). Therefore\nS(AC) = S(AD) + S(CD),\nand\nS(BC) = S(BD) + S(CD).\n(1.47.)\n\n**Step 6.** Add S(CD) to both sides of the equality in Step 4 (CN2). Substituting the two equalities from Step 5 gives\nS(AC) = S(AB) + S(BC) + 2R(AB,BD).\n(CN1, CN2.)\n\n**Step 7.** Hence the square on AC is greater than the squares on AB and BC together by precisely twice the rectangle contained by AB and BD (CN5, D2.1). Here AB is the side containing the obtuse angle on whose continuation the perpendicular falls, and BD is the straight line cut off outside that side towards the obtuse vertex B, as established in Step 3. This is the required conclusion.\n\n**USED:** 1.12, 1.17, 1.47, 2.4, CN1, CN2, CN5, D1.10, D1.11, D1.21, D1.22, D2.1, P2\n**Human refs (from References field):** 1.47, 2.4\n**Jaccard:** 0.154 — AI adds ['1.12', '1.17', 'CN1', 'CN2', 'CN5', 'D1.10', 'D1.11', 'D1.21', 'D1.22', 'D2.1', 'P2']",
+  "ai_used": [
+    "1.12",
+    "1.17",
+    "1.47",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D1.10",
+    "D1.11",
+    "D1.21",
+    "D1.22",
+    "D2.1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.4"
+  ],
+  "ai_only": [
+    "1.12",
+    "1.17",
+    "CN1",
+    "CN2",
+    "CN5",
+    "D1.10",
+    "D1.11",
+    "D1.21",
+    "D1.22",
+    "D2.1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.154,
+  "proof_summary": "**Step 1.** Let ABC be a triangle whose angle ABC is obtuse, so that AC subtends the obtuse angle (D1.21, D1.11). Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW"
+}

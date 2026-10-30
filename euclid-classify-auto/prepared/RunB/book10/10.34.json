@@ -1,0 +1,49 @@
+{
+  "proposition": "10.34",
+  "book": 10,
+  "statement": "To find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.",
+  "heath_proof": "Let there be set out two medial straight lines AB, BC, commensurable in square only, such that the rectangle which they contain is rational, and the square on AB is greater than the square on BC by the square on a straight line incommensurable with AB; [X. 31, ad fin.]let the semicircle ADB be described on AB, let BC be bisected at E, let there be applied to AB a parallelogram equal to the square on BE and deficient by a square figure, namely the rectangle AF, FB; [VI. 28] therefore AF is incommensurable in length with FB. [X. 18] Let FD be drawn from F at right angles to AB, and let AD, DB be joined. Since AF is incommensurable in length with FB, therefore the rectangle BA, AF is also incommensurable with the rectangle AB, BF. [X. 11] But the rectangle BA, AF is equal to the square on AD, and the rectangle AB, BF to the square on DB; therefore the square on AD is also incommensurable with the square on DB. And, since the square on AB is medial, therefore the sum of the squares on AD, DB is also medial. [III. 31, I. 47] And, since BC is double of DF, therefore the rectangle AB, BC is also double of the rectangle AB, FD. But the rectangle AB, BC is rational; therefore the rectangle AB, FD is also rational. [X. 6] But the rectangle AB, FD is equal to the rectangle AD, DB; [Lemma]so that the rectangle AD, DB is also rational. Therefore two straight lines AD, DB incommensurable in square have been found which make the sum of the squares on them medial, but the rectangle contained by them rational.",
+  "ai_proof_text": "10.34\n**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.\n\n**Step 1.** Let a rational straight line r be set out. By 10.10, find a straight line s such that s is incommensurable in length with r but commensurable in square only with r, so that s is rational. By 10.21, the rectangle rect(r, s) is irrational, and the side of the square equal to it is called medial. Let AB be a medial straight line such that AB² = rect(r, s); that is, AB² is a medial area.\n\n**Step 2.** Since r and s are rational and commensurable in square only, r² and s² are each rational areas (by D10.1.4). Let k be a rational straight line such that k² = r² (that is, k = r). Then k is rational and k² is rational, and we require k² less than AB²; since AB² is medial and we may choose r and s so that rect(r, s) exceeds r², this is achievable.\n\n**Step 3.** Describe a semicircle on AB as diameter. Find a point C on AB such that AC · CB = k⁴ / (4 · AB²). More precisely, since we seek rect(AD, DB) to be rational, we apply to AB a rectangle equal to the fourth part of the square on k², deficient by a square figure (by 6.28), obtaining the point C on AB such that AC · CB = k⁴/(4·AB²). Since AB² = rect(r,s) and k = r, we have AC · CB = r⁴/(4·r·s) = r³/(4s).\n\n**Step 4.** From C draw CD at right angles to AB (by 1.11), meeting the semicircle at D. Join AD and DB. By 3.31, the angle ADB in the semicircle is a right angle.\n\n**Step 5.** By 1.47, since triangle ADB has a right angle at D, we have AD² + DB² = AB². Since AB² is medial (Step 1), the sum of the squares on AD and DB is medial.\n\n**Step 6.** By 6.8, since CD is drawn from the right angle perpendicular to the base AB, we have CD² = AC · CB, and also AD² = AC · AB and DB² = CB · AB. From the perpendicular, the area of triangle ADB computed two ways gives rect(AD, DB) = rect(AB, CD).\n\n**Step 7.** Now CD² = AC · CB. And rect(AD, DB)² = rect(AB, CD)² = AB² · CD² = AB² · AC · CB. With our construction, AB² = r · s and AC · CB = r³/(4s), so AB² · AC · CB = r · s · r³/(4s) = r⁴/4. Therefore rect(AD, DB)² = r⁴/4, whence rect(AD, DB) = r²/2.\n\n**Step 8.** Since r is rational, r² is a rational area, and r²/2 is commensurable with r² (in the ratio 1:2, by 10.6). Therefore rect(AD, DB) = r²/2 is a rational area.\n\n**Step 9.** It remains to show that AD and DB are incommensurable in square. By 6.8, AD² = AC · AB and DB² = CB · AB. Therefore AD²/DB² = AC/CB. We must show that AC and CB are incommensurable.\n\n**Step 10.** From Step 3, AC · CB = r³/(4s), and AC + CB = AB. Now AB² = r · s, so AB = the side of the square equal to rect(r, s). By 2.5, AC · CB + MC² = MB² = (AB/2)², where M is the midpoint of AB.\n\n**Step 11.** We have (AB/2)² = AB²/4 = r · s / 4. And AC · CB = r³/(4s). So MC² = r · s/4 - r³/(4s) = r(s² - r²)/(4s). Since r and s are rational and incommensurable in length, s² and r² are rational but s²/r² is not a ratio of square numbers (by 10.9, since s and r are incommensurable in length). Hence s² - r² is a nonzero rational magnitude, and MC² = r(s² - r²)/(4s) is well-defined and positive (choosing s > r).\n\n**Step 12.** AC = AB/2 + MC and CB = AB/2 - MC. For AC/CB to be rational (a ratio of numbers), we would need (AB/2 + MC)/(AB/2 - MC) to be rational. This would require MC to be commensurable with AB/2. Now (AB/2)² = r · s/4, a medial area (commensurable with r · s, which is medial). And MC² = r(s² - r²)/(4s) = (r · s)/4 - r³/(4s) = (r · s)/4 · (1 - r²/s²).\n\n**Step 13.** MC²/(AB/2)² = 1 - r²/s² = (s² - r²)/s². Since s and r are rational lines incommensurable in length, by 10.9 the ratio s²/r² is not a ratio of square numbers, hence r²/s² is not a ratio of square numbers, and therefore (s² - r²)/s² = 1 - r²/s² is not a ratio of square numbers. By 10.9, MC and AB/2 are incommensurable in length.\n\n**Step 14.** Since MC is incommensurable in length with AB/2, the ratio AC/CB = (AB/2 + MC)/(AB/2 - MC) is irrational. For if AC/CB were rational, say AC = n · CB for some ratio n, then AB/2 + MC = n(AB/2 - MC), giving MC(1 + n) = AB/2 · (n - 1), so MC/(AB/2) = (n - 1)/(n + 1), which is rational, contradicting MC being incommensurable in length with AB/2.\n\n**Step 15.** Since AC/CB is irrational, AD²/DB² = AC/CB is not a ratio of numbers (by 10.7). Therefore the squares on AD and DB are incommensurable, that is, AD and DB are incommensurable in square (by D10.1.2).\n\n**Step 16.** Therefore AD and DB are two straight lines incommensurable in square which make the sum of the squares on them medial (Step 5) but the rectangle contained by them rational (Step 8). This is what was required to find.\n\n**USED:** 1.11, 1.47, 10.10, 10.21, 10.6, 10.7, 10.9, 2.5, 3.31, 6.28, 6.8, D10.1.2, D10.1.4\n**Human refs (from References field):** 1.47, 10.11, 10.18, 10.31, 10.6, 3.31, 6.28\n**Jaccard:** 0.250 — AI adds ['1.11', '10.10', '10.21', '10.7', '10.9', '2.5', '6.8', 'D10.1.2', 'D10.1.4']; Human adds ['10.11', '10.18', '10.31']",
+  "ai_used": [
+    "1.11",
+    "1.47",
+    "10.10",
+    "10.21",
+    "10.6",
+    "10.7",
+    "10.9",
+    "2.5",
+    "3.31",
+    "6.28",
+    "6.8",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "1.47",
+    "10.11",
+    "10.18",
+    "10.31",
+    "10.6",
+    "3.31",
+    "6.28"
+  ],
+  "ai_only": [
+    "1.11",
+    "10.10",
+    "10.21",
+    "10.7",
+    "10.9",
+    "2.5",
+    "6.8",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.18",
+    "10.31"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let a rational straight line r be set out. By 10.10, find a straight line s such that s is incommensurable in length with r but commensurable in square only with r, so that s is rational. "
+}

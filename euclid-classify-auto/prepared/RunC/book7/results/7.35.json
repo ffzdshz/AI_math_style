@@ -1,0 +1,13 @@
+{
+  "proposition": "7.35",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: they establish that any remainder obtained by subtracting (multiples of) the LCM from the target number is measured by both A and B, and by the minimality of the LCM, such a remainder cannot be less than the LCM, which forces the LCM to divide the target number exactly. Heath's proof accomplishes this in a single contradiction step (assuming E does not measure CD yields a remainder CF < E that is measured by A and B, contradicting minimality), while the AI's proof is more constructive, iteratively subtracting L and arguing at each step that the remainder cannot be less than L. The citation difference arises because Heath cites no explicit propositions, while the AI explicitly cites 7.34 (existence of the LCM) and D7.5 (definition of divisibility), making explicit what Heath leaves implicit. Since heath_only is empty and ai_only contains only an existence reference and a definition, this is a citation-depth difference with the same backbone.",
+  "jaccard": 0.0,
+  "ai_citations": "7.34|D7.5",
+  "heath_citations": "",
+  "ai_only": "7.34|D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

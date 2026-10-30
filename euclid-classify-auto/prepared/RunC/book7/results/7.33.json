@@ -1,0 +1,13 @@
+{
+  "proposition": "7.33",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 identifies different logical backbones, leading to Q3 which confirms a valid different path (D). Both proofs divide by the GCD to obtain reduced numbers and establish ratio equality, but they diverge substantially in how they prove minimality. Heath proves minimality by direct contradiction: assuming smaller proportional numbers exist, he constructs a number M and uses 7.19 (cross-multiplication proportion) to show E:H = M:D, concluding M > D contradicts D being the GCD. The AI instead first proves that E, F, G are coprime (by showing any common measure would yield a common measure of A, B, C larger than D, using CN5), then leverages 7.20 (least numbers measure proportionals) extensively to show that any numbers in the same ratio must be multiples of E, F, G, and since E, F, G are coprime the multiplier must be at least 1, ensuring minimality. Even the ratio-establishment step differs: Heath uses 7.16 (commutativity of multiplication) while the AI uses 7.17 (a number multiplying two numbers produces proportional results). These constitute genuinely different intermediate conclusions and proof strategies, both logically sound.",
+  "jaccard": 0.222,
+  "ai_citations": "7.17|7.20|7.3|CN5|D7.20",
+  "heath_citations": "7.16|7.19|7.21|7.3|D7.15|D7.20",
+  "ai_only": "7.17|7.20|CN5",
+  "heath_only": "7.16|7.19|7.21|D7.15",
+  "audit_record": ""
+}

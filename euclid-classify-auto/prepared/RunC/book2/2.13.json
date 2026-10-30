@@ -1,0 +1,32 @@
+{
+  "proposition": "2.13",
+  "book": 2,
+  "statement": "In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.",
+  "heath_proof": "Let ABC be an acute-angled triangle having the angle at B acute, and let AD be drawn from the point A perpendicular to BC;  I say that the square on AC is less than the squares on CB, BA by twice the rectangle contained by CB, BD. For, since the straight line CB has been cut at random at D, the squares on CB, BD are equal to twice the rectangle contained by CB, BD and the square on DC. [II. 7] Let the square on DA be added to each; therefore the squares on CB, BD, DA are equal to twice the rectangle contained by CB, BD and the squares on AD, DC. But the square on AB is equal to the squares on BD, DA, for the angle at D is right; [I. 47] and the square on AC is equal to the squares on AD, DC; therefore the squares on CB, BA are equal to the square on AC and twice the rectangle CB, BD,  so that the square on AC alone is less than the squares on CB, BA by twice the rectangle contained by CB, BD.",
+  "ai_proof_text": "2.13\n**Statement:** In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.\n\n**Step 1.** Let ABC be an acute-angled triangle, with all three angles acute [D1.21]. Let the angle at B be the acute angle under consideration. From A, draw AD perpendicular to BC [1.12], so that angle ADB is a right angle [D1.10]. Since angle ABD is acute [D1.12], the foot D of the perpendicular falls between B and C, so that BD is the straight line cut off within by the perpendicular towards the acute angle at B. We are to show that the square on AC is less than the squares on AB and BC together by twice the rectangle contained by CB and BD.\n\n**Step 2.** Since the straight line BC has been cut at random at the point D, by Proposition 2.7 the square on BC together with the square on BD is equal to twice the rectangle contained by BC and BD together with the square on CD. That is: sq(BC) + sq(BD) = 2*rect(BC, BD) + sq(CD) [2.7].\n\n**Step 3.** Add the square on DA to both sides. Then the square on BC together with the squares on BD and DA is equal to twice the rectangle contained by BC and BD together with the squares on CD and DA [CN2]. That is: sq(BC) + sq(BD) + sq(DA) = 2*rect(BC, BD) + sq(CD) + sq(DA).\n\n**Step 4.** Since the angle ADB is a right angle, the triangle ABD is right-angled at D. Therefore by the Pythagorean theorem, the square on AB is equal to the squares on BD and DA [1.47]. That is: sq(AB) = sq(BD) + sq(DA).\n\n**Step 5.** Since the angle ADC is also a right angle (for AD is perpendicular to BC), the triangle ACD is right-angled at D. Therefore by the Pythagorean theorem, the square on AC is equal to the squares on CD and DA [1.47]. That is: sq(AC) = sq(CD) + sq(DA).\n\n**Step 6.** Substituting into the equation from Step 3: on the left side, sq(BD) + sq(DA) equals sq(AB) by Step 4, so the left side becomes sq(BC) + sq(AB). On the right side, sq(CD) + sq(DA) equals sq(AC) by Step 5, so the right side becomes 2*rect(BC, BD) + sq(AC) [CN1].\n\n**Step 7.** Therefore sq(BC) + sq(AB) = 2*rect(BC, BD) + sq(AC). Equivalently, the square on AC is less than the squares on AB and BC by twice the rectangle contained by BC and BD, which is what was to be proved.\n\n**USED:** 1.12, 1.47, 2.7, CN1, CN2, D1.10, D1.12, D1.21\n**Human refs (from References field):** 1.47, 2.7\n**Jaccard:** 0.250 — AI adds ['1.12', 'CN1', 'CN2', 'D1.10', 'D1.12', 'D1.21']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.7",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.12",
+    "D1.21"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.7"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.12",
+    "D1.21"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let ABC be an acute-angled triangle, with all three angles acute [D1.21]. Let the angle at B be the acute angle under consideration. From A, draw AD perpendicular to BC [1.12], so that ang"
+}

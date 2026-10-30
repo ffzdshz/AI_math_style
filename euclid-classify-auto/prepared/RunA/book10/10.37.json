@@ -1,0 +1,35 @@
+{
+  "proposition": "10.37",
+  "book": 10,
+  "statement": "If two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a first bimedial straight line.",
+  "heath_proof": "For let two medial straight lines AB, BC commensurable in square only and containing a rational rectangle be added together; I say that the whole AC is irrational. For, since AB is incommensurable in length with BC, therefore the squares on AB, BC are also incommensurable with twice the rectangle AB, BC; [cf. X. 36, ll. 9-20] and, componendo, the squares on AB, BC together with twice the rectangle AB, BC, that is, the square on AC [II. 4], is incommensurable with the rectangle AB, BC. [X. 16] But the rectangle AB, BC is rational, for, by hypothesis, AB, BC are straight lines containing a rational rectangle; therefore the square on AC is irrational; therefore AC is irrational. [X. Def. 4] And let it be called a first bimedial straight line.",
+  "ai_proof_text": "10.37\n**Statement:** If two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a first bimedial straight line.\n\n**Step 1.** Let AB and BC be two medial straight lines commensurable in square only such that the rectangle AB by BC is rational. Let AC be the whole line composed of AB and BC placed together. We are to show that AC is irrational.\n\n**Step 2.** Since AB and BC are commensurable in square only, their squares AB^2 and BC^2 are commensurable areas. By 10.15, the sum AB^2 + BC^2 is commensurable with each of AB^2 and BC^2.\n\n**Step 3.** Since AB is medial, the square on AB is a medial area, which is irrational by D10.1.4. Since AB^2 + BC^2 is commensurable with AB^2 (Step 2), and AB^2 is irrational, it follows that AB^2 + BC^2 is also irrational. For if it were rational, then AB^2 would be commensurable with a rational area and hence rational, contradicting the fact that AB^2 is irrational (by D10.1.4 and 10.11).\n\n**Step 4.** By 2.4, the square on AC equals AB^2 + 2*AB*BC + BC^2. That is, AC^2 = (AB^2 + BC^2) + 2*rect(AB, BC).\n\n**Step 5.** The rectangle contained by AB and BC is rational by hypothesis. Twice a rational area is rational, since the double of an area commensurable with the square on the assigned rational line remains commensurable with it (by 10.6 and the definition D10.1.4). Hence 2*rect(AB, BC) is rational.\n\n**Step 6.** Suppose for contradiction that AC^2 is rational. Then AC^2 - 2*rect(AB, BC) would be the difference of two rational areas. By 10.15, the difference of commensurable rational magnitudes is rational. Since both AC^2 and 2*rect(AB, BC) are assumed rational, they are each commensurable with the square on the assigned rational line, hence commensurable with each other (by 10.12). Therefore their difference AB^2 + BC^2 would be rational.\n\n**Step 7.** But AB^2 + BC^2 is irrational (Step 3). This is a contradiction. Therefore AC^2 is not rational; it is irrational.\n\n**Step 8.** Since AC^2 is irrational, AC itself is irrational by D10.1.4 (the side of a square equal to an irrational area is irrational).\n\n**Step 9.** Therefore, when two medial straight lines commensurable in square only and containing a rational rectangle are added together, the whole is irrational. Let such a line be called a first bimedial straight line. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.15, 10.21, 10.6, 2.4, D10.1.4\n**Human refs (from References field):** 10.16, 10.36, 2.4, D10.1.4\n**Jaccard:** 0.222 — AI adds ['10.11', '10.12', '10.15', '10.21', '10.6']; Human adds ['10.16', '10.36']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.16",
+    "10.36",
+    "2.4",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.6"
+  ],
+  "heath_only": [
+    "10.16",
+    "10.36"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let AB and BC be two medial straight lines commensurable in square only such that the rectangle AB by BC is rational. Let AC be the whole line composed of AB and BC placed together. We are"
+}

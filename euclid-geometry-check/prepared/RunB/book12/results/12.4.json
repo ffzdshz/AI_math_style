@@ -1,0 +1,46 @@
+{
+  "proposition": "12.4",
+  "run": "RunB",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pyramids ABCG and DEFH have equal heights",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Midpoints of edges AB, BC, CA, AG, BG, CG determine the subdivision of pyramid ABCG into two sub-pyramids and two prisms",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Same midpoint subdivision applied to pyramid DEFH",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Each prism has as base a triangle formed by joining midpoints of the sides of triangle ABC",
+      "type": "base_geometry"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Prisms from ABCG and DEFH share the same height because original pyramids have equal heights",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Each sub-pyramid has a base that is one of four congruent triangles from the midpoint subdivision of the original base",
+      "type": "base_geometry"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Sub-pyramids have half the height of the original pyramid",
+      "type": "height_relation"
+    }
+  ],
+  "configuration_map": "Two pyramids ABCG (base ABC, vertex G) and DEFH (base DEF, vertex H) with equal height h. Midpoints of all edges subdivide each pyramid into: (1) two equal prisms whose bases lie in the base plane and whose heights are h/2, and (2) two sub-pyramids similar to the original with height h/2 and bases equal to 1/4 the area of the original base. The subdivision is iterated on the sub-pyramids at each level, producing further prisms and sub-pyramids with the same structural relationships scaled down. At every level, corresponding prisms from the two pyramids share the same height, and their base ratios equal the original base ratio ABC:DEF.",
+  "pass_reason": "The proof is predominantly proportional reasoning applied to the geometric subdivision of pyramids per 12.3. All spatial claims (equal heights, midpoint construction, sub-pyramid heights being half the original, base ratios being preserved) are mutually consistent. No point-position contradictions, no angle decomposition issues, and no ray-ordering contradictions were found. The solid geometry configuration (heights, plane memberships, base relationships) is internally consistent throughout."
+}

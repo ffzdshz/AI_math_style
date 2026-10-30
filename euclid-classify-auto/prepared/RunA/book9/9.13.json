@@ -1,0 +1,39 @@
+{
+  "proposition": "9.13",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be prime, the greatest will not be measured by any except those which have a place among the proportional numbers.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, beginning from an unit and in continued proportion, and let A, the number after the unit, be prime; I say that D, the greatest of them, will not be measured by any other number except A, B, C. For, if possible, let it be measured by E, and let E not be the same with any of the numbers A, B, C. It is then manifest that E is not prime. For, if E is prime and measures D, it will also measure A [IX. 12], which is prime, though it is not the same with it: which is impossible. Therefore E is not prime. Therefore it is composite. But any composite number is measured by some prime number; [VII. 31] therefore E is measured by some prime number. I say next that it will not be measured by any other prime except A. For, if E is measured by another, and E measures D, that other will also measure D; so that it will also measure A [IX. 12], which is prime, though it is not the same with it: which is impossible. Therefore A measures E. And, since E measures D, let it measure it according to F. I say that F is not the same with any of the numbers A, B, C. For, if F is the same with one of the numbers A, B, C, and measures D according to E, therefore one of the numbers A, B, C also measures D according to E. But one of the numbers A, B, C measures D according to some one of the numbers A, B, C; [IX. 11] therefore E is also the same with one of the numbers A, B, C: which is contrary to the hypothesis. Therefore F is not the same as any one of the numbers A, B, C. Similarly we can prove that F is measured by A, by proving again that F is not prime. For, if it is, and measures D, it will also measure A [IX. 12], which is prime, though it is not the same with it: which is impossible; therefore F is not prime. Therefore it is composite. But any composite number is measured by some prime number; [VII. 31] therefore F is measured by some prime number. I say next that it will not be measured by any other prime except A. For, if any other prime number measures F, and F measures D, that other will also measure D; so that it will also measure A [IX. 12], which is prime, though it is not the same with it: which is impossible. Therefore A measures F. And, since E measures D according to F, therefore E by multiplying F has made D. But, further, A has also by multiplying C made D; [IX. 11] therefore the product of A, C is equal to the product of E, F. Therefore, proportionally, as A is to E, so is F to C. [VII. 19] But A measures E; therefore F also measures C. Let it measure it according to G. Similarly, then, we can prove that G is not the same with any of the numbers A, B, and that it is measured by A. And, since F measures C according to G therefore F by multiplying G has made C. But, further, A has also by multiplying B made C; [IX. 11] therefore the product of A, B is equal to the product of F, G. Therefore, proportionally, as A is to F, so is G to B. [VII. 19] But A measures F; therefore G also measures B. Let it measure it according to H. Similarly then we can prove that H is not the same with A. And, since G measures B according to H, therefore G by multiplying H has made B. But further A has also by multiplying itself made B; [IX. 8] therefore the product of H, G is equal to the square on A. Therefore, as H is to A, so is A to G. [VII. 19] But A measures G; therefore H also measures A, which is prime, though it is not the same with it: which is absurd. Therefore D the greatest will not be measured by any other number except A, B, C.",
+  "ai_proof_text": "9.13\n**Statement:** If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be prime, the greatest will not be measured by any except those which have a place among the proportional numbers.\n\n**Step 1.** Let there be as many numbers as we please, A_1 = 1, A_2, A_3, ..., A_n, beginning from a unit and in continued proportion, and let A_2 (the number after the unit) be prime. We must show that A_n, the greatest, is not measured by any number except those which have a place among A_1, A_2, ..., A_{n-1}.\n\n**Step 2.** Suppose, for the sake of contradiction, that some number C measures A_n and that C is not among the proportional numbers A_1, A_2, ..., A_{n-1}.\n\n**Step 3.** Since C measures A_n, C is not equal to A_n itself (for A_n is the greatest and is among the proportional numbers trivially as the last term; but the proposition concerns numbers other than A_n that measure it). Since C measures A_n and C is not a unit, C is greater than a unit, so C is a number composed of units and has at least one prime factor. Let p be any prime that measures C [D7.11, D7.13].\n\n**Step 4.** Since p measures C and C measures A_n, p also measures A_n [7.20, transitivity of measurement].\n\n**Step 5.** Now A_1 = 1, A_2, A_3, ..., A_n are numbers beginning from a unit in continued proportion, and the prime p measures the last term A_n. By Proposition 9.12, p must also measure A_2, the number next after the unit.\n\n**Step 6.** But A_2 is prime [D7.11], so the only numbers that measure A_2 are the unit and A_2 itself. Since p is a prime number (not a unit), p must equal A_2 [D7.11].\n\n**Step 7.** Therefore every prime that measures C is equal to A_2. Now since C is greater than a unit and every prime measuring C equals A_2, the number C is measured by A_2 and by no other prime.\n\n**Step 8.** Since C is measured by the prime A_2 and by no other prime, C must be a power of A_2. That is, C is produced by A_2 multiplied by itself some number of times. More precisely, since A_1 = 1, A_2, A_3, ..., A_n are in continued proportion from the unit with ratio A_2, each term A_k is obtained by multiplying A_2 by itself (k-1) times [by the definition of continued proportion, D7.20, and repeated application of D7.15]. Thus the terms of the sequence are exactly the successive powers of A_2.\n\n**Step 9.** Since C measures A_n and C is a power of A_2, write C = A_m for some index m. By Proposition 9.11, since the numbers from the unit are in continued proportion and A_m is less than A_n (as C measures A_n and is not equal to A_n, so C is less by CN5), A_m measures A_n according to some one of the proportional numbers. Thus C = A_m has a place among the proportional numbers.\n\n**Step 10.** But this contradicts our assumption in Step 2 that C is not among the proportional numbers. Therefore no such C exists: A_n is not measured by any number except those which have a place among the proportional numbers A_1, A_2, ..., A_{n-1}. Q.E.D.\n\n**USED:** 7.20, 9.11, 9.12, CN5, D7.11, D7.13, D7.15, D7.20\n**Human refs (from References field):** 7.19, 7.31, 9.11, 9.12, 9.8\n**Jaccard:** 0.182 — AI adds ['7.20', 'CN5', 'D7.11', 'D7.13', 'D7.15', 'D7.20']; Human adds ['7.19', '7.31', '9.8']",
+  "ai_used": [
+    "7.20",
+    "9.11",
+    "9.12",
+    "CN5",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.19",
+    "7.31",
+    "9.11",
+    "9.12",
+    "9.8"
+  ],
+  "ai_only": [
+    "7.20",
+    "CN5",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.20"
+  ],
+  "heath_only": [
+    "7.19",
+    "7.31",
+    "9.8"
+  ],
+  "jaccard": 0.182,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please, A_1 = 1, A_2, A_3, ..., A_n, beginning from a unit and in continued proportion, and let A_2 (the number after the unit) be prime. We must show th"
+}

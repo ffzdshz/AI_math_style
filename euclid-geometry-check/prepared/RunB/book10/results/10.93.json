@@ -1,0 +1,26 @@
+{
+  "proposition": "10.93",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D lies between A and G on a line segment, so AD + DG = AG",
+      "type": "collinear point position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E is the midpoint of segment DG (DE = EG = (1/2)DG), so E lies between D and G",
+      "type": "collinear point position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "H lies between A and G on segment AG, with AH + HG = AG and AH * HG = (1/4) sq(DG)",
+      "type": "collinear point position"
+    }
+  ],
+  "configuration_map": "All points A, D, E, H, G are collinear on a single line segment. A and G are the endpoints of the whole rational line AG. D lies between A and G, creating the third apotome AD and annex DG. E is the midpoint of DG, lying between D and G. H lies between A and G, determined by the rectangle application of 10.17. The auxiliary lines o and p are defined purely by area equations (sq(o) = r * AH, sq(p) = r * HG) and have no specified spatial positions. Steps 4-16 are entirely algebraic, dealing with commensurability, mediality, ratios, and classification of irrational lines. No angles, triangles, circles, or complex spatial configurations appear anywhere in the proof.",
+  "pass_reason": "The proof's spatial claims are minimal, limited to collinear points on a single line segment (D between A and G, E midpoint of DG, H between A and G). All additive decompositions are mutually consistent. The core argument is algebraic -- classifying lines and areas via commensurability and mediality -- with no angle decompositions, triangle interior/exterior arguments, circle configurations, or other complex spatial reasoning where contradictions could arise."
+}

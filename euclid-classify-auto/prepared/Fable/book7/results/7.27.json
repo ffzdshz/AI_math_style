@@ -1,0 +1,13 @@
+{
+  "proposition": "7.27",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. For the squares part, both proofs share an identical backbone using two applications of 7.25. For the cubes part, the backbones diverge: Heath establishes A prime to B-squared and A-squared prime to B-squared as key intermediates, then applies 7.26 (if two numbers are prime to two numbers both to each, their products are also prime) to conclude the cubes are coprime. The AI instead establishes A-cubed prime to B and A-cubed prime to B-squared as intermediates using 7.24 (if two numbers are each prime to a number, their product is prime to it) combined with 7.25, then applies 7.24 again to conclude the cubes are coprime. Although 7.24 appears inside the proof of 7.26, the AI does not re-derive 7.26 inline; it uses 7.24 in a structurally different arrangement that avoids establishing the cross-coprimality pairs Heath needs for 7.26. The AI's path is logically valid at every step, yielding a genuine path difference.",
+  "jaccard": 0.333,
+  "ai_citations": "7.24|7.25",
+  "heath_citations": "7.25|7.26",
+  "ai_only": "7.24",
+  "heath_only": "7.26",
+  "audit_record": ""
+}

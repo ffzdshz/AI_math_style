@@ -1,0 +1,13 @@
+{
+  "proposition": "10.113",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The AI proof takes a fundamentally different path from Heath's. Heath directly constructs the terms KF and FH of the binomial KH through a chain of proportion manipulations (using convertendo, alternando, and commensurability results 5.11, 5.14, 5.16, 5.19, 6.16, 10.12, 10.14, 10.20) and then verifies their properties step by step. The AI instead constructs the auxiliary binomial BF = AC + CB, shows the breadth DE is commensurable in length with BF (hence binomial of the same order by 10.66), then invokes the converse theorem 10.112 to establish that applying sq(rho) to the binomial DE yields apotome AB with terms matching DE's terms, and finally uses the uniqueness of apotome decomposition (10.79) to conclude the term correspondence. The two proofs share almost no key intermediate conclusions — Heath builds up through direct proportion manipulation while the AI leverages the converse theorem and commensurability transfer — producing a Jaccard of only 0.121. Q3 confirms the AI's path is logically valid: the difference-of-squares identity (2.5), the commensurability chain (10.11, 10.15, 6.1), the binomial transfer (10.66), the converse application (10.112), and the uniqueness argument (10.79) all form a sound chain from premises to conclusion.",
+  "jaccard": 0.121,
+  "ai_citations": "10.11|10.112|10.15|10.36|10.66|10.73|10.79|2.5|6.1|D10.1.2|D10.1.4|D10.2.1|D10.2.2|D10.2.3|D10.2.4|D10.2.5|D10.2.6|D10.3.1|D10.3.2|D10.3.3|D10.3.4|D10.3.5|D10.3.6",
+  "heath_citations": "10.11|10.12|10.14|10.15|10.20|10.36|10.73|5.11|5.14|5.16|5.19|6.16|D10.1.3|D5.9",
+  "ai_only": "10.112|10.66|10.79|2.5|6.1|D10.1.2|D10.1.4|D10.2.1|D10.2.2|D10.2.3|D10.2.4|D10.2.5|D10.2.6|D10.3.1|D10.3.2|D10.3.3|D10.3.4|D10.3.5|D10.3.6",
+  "heath_only": "10.12|10.14|10.20|5.11|5.14|5.16|5.19|6.16|D10.1.3|D5.9",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "6.31",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof draws an altitude from the right angle to the hypotenuse, invokes 6.8 to establish that the sub-triangles are similar to the whole triangle, then applies 6.19 (duplicate ratio of similar triangles) to derive the figure proportions, and concludes by summing the segments. The AI takes a fundamentally different path: it constructs squares on all three sides (1.46), uses 6.20 (duplicate ratio of similar polygons) to show that the ratios of the arbitrary similar figures equal the corresponding ratios of the squares, links these via 5.11, adds the proportions with 5.24, and then applies the Pythagorean theorem (1.47) to conclude that the sum of the figures on the legs equals the figure on the hypotenuse. The only shared citation is D6.1, yielding a Jaccard of 0.091. The proof-tree containment test confirms Case B: while 6.19 does appear inside the proof of 6.20, the other heath_only item 6.8 does not, reflecting Heath's reliance on an altitude-based similar-triangle strategy that is entirely absent from the AI proof. The AI's chain is logically complete and valid under the hardened Q1(b) standard, so Q3 yields D.",
+  "jaccard": 0.091,
+  "ai_citations": "1.46|1.47|5.11|5.24|6.20|D1.22|D5.5|D6.1|P4",
+  "heath_citations": "6.19|6.8|D6.1",
+  "ai_only": "1.46|1.47|5.11|5.24|6.20|D1.22|D5.5|P4",
+  "heath_only": "6.19|6.8",
+  "audit_record": ""
+}

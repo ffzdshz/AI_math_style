@@ -1,0 +1,46 @@
+{
+  "proposition": "3.3",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABC is a circle; CD is a straight line through the centre; AB is a chord not through the centre; E is the intersection of CD and AB on segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "F is the centre of circle ABC, so F lies on line CD (since CD passes through the centre); FA and FB are radii",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5-6",
+      "claim": "Triangles FEA and FEB are non-degenerate (F is off line AB since AB does not pass through centre F)",
+      "type": "triangle_existence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle FEA equals angle FEB by SSS congruence (I.8)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 8-9",
+      "claim": "FE stands on line AB making equal adjacent angles FEA and FEB, so both are right angles (Def 1.10)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Triangle FEA is right-angled at E with hypotenuse FA; Pythagorean theorem gives FA² = FE² + AE²",
+      "type": "right_triangle"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Triangle FEB is right-angled at E with hypotenuse FB; Pythagorean theorem gives FB² = FE² + EB²",
+      "type": "right_triangle"
+    }
+  ],
+  "configuration_map": "Points: A, B on circle ABC (chord endpoints); E is the intersection of lines CD and AB; F is the centre of circle ABC lying on line CD. Key relationships: F is NOT on line AB (since AB does not pass through the centre, and E is the unique intersection of the two distinct lines CD and AB). Therefore triangles FEA and FEB are non-degenerate. F is distinct from E. In Part 1, E is the midpoint of AB (given), and the proof shows the angle at E is right. In Part 2, the angle at E is right (given), and the proof shows E is the midpoint. The AI uses I.47 (Pythagorean theorem) for Part 2 instead of Heath's I.5/I.26 approach, but the spatial configuration supports both methods equally well.",
+  "pass_reason": "All spatial claims are mutually consistent. The configuration (circle with centre F, chord AB not through centre, diameter CD meeting AB at E) is simple and well-determined. The non-degeneracy of triangles FEA and FEB is guaranteed by AB not passing through the centre. The AI's use of the Pythagorean theorem (I.47) in Part 2 instead of Heath's I.5/I.26 approach introduces no spatial issues — both right triangles are properly formed with the right angle at E and the radii as hypotenuses."
+}

@@ -1,0 +1,43 @@
+{
+  "proposition": "11.6",
+  "book": 11,
+  "statement": "If two straight lines be at right angles to the same plane, the straight lines will be parallel.",
+  "heath_proof": "For let the two straight lines AB, CD be at right angles to the plane of reference; I say that AB is parallel to CD. For let them meet the plane of reference at the points B, D, let the straight line BD be joined, let DE be drawn, in the plane of reference, at right angles to BD, let DE be made equal to AB, and let BE, AE, AD be joined. Now, since AB is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference. [XI. Def. 3] But each of the straight lines BD, BE is in the plane of reference and meets AB; therefore each of the angles ABD, ABE is right. For the same reason each of the angles CDB, CDE is also right. And, since AB is equal to DE, and BD is common, the two sides AB, BD are equal to the two sides ED, DB; and they include right angles; therefore the base AD is equal to the base BE. [I. 4] And, since AB is equal to DE, while AD is also equal to BE, the two sides AB, BE are equal to the two sides ED, DA; and AE is their common base; therefore the angle ABE is equal to the angle EDA. [I. 8] But the angle ABE is right; therefore the angle EDA is also right; therefore ED is at right angles to DA. But it is also at right angles to each of the straight lines BD, DC; therefore ED is set up at right angles to the three straight lines BD, DA, DC at their point of meeting; therefore the three straight lines BD, DA, DC are in one plane. [XI. 5] But, in whatever plane DB, DA are, in that plane is AB also, for every triangle is in one plane; [XI. 2] therefore the straight lines AB, BD, DC are in one plane. And each of the angles ABD, BDC is right; therefore AB is parallel to CD. [I. 28]",
+  "ai_proof_text": "11.6\n**Statement:** If two straight lines be at right angles to the same plane, the straight lines will be parallel.\n\n**Step 1.** Let AB and CD be two straight lines at right angles to the same plane P, meeting it at points B and D respectively. We must show that AB and CD are parallel.\n\n**Step 2.** Join BD [P1]. In plane P, at point D, draw DE at right angles to BD [1.11], and cut off DE equal to AB [1.3]. Join BE, AE, and AD [P1].\n\n**Step 3.** Since AB is at right angles to plane P, it makes right angles with all straight lines meeting it that lie in the plane [D11.3]. Both BD and BE lie in plane P and pass through B, so angle ABD and angle ABE are both right angles.\n\n**Step 4.** Similarly, since CD is at right angles to plane P, it makes right angles with all lines through D in the plane [D11.3]. In particular, angle CDB and angle CDE are both right angles.\n\n**Step 5.** In triangle ABD, since angle ABD is a right angle, we have AD squared equals AB squared plus BD squared [1.47].\n\n**Step 6.** In triangle BDE, since angle BDE is a right angle (by construction), we have BE squared equals BD squared plus DE squared [1.47].\n\n**Step 7.** Since DE equals AB (by construction), we may substitute to obtain BE squared equals BD squared plus AB squared. But AD squared also equals AB squared plus BD squared (Step 5). Therefore AD squared equals BE squared [CN1], and hence AD equals BE.\n\n**Step 8.** In triangle ABE, since angle ABE is a right angle (Step 3), we have AE squared equals AB squared plus BE squared [1.47]. Substituting BE squared equals BD squared plus DE squared (Step 6), we get AE squared equals AB squared plus BD squared plus DE squared.\n\n**Step 9.** But AD squared equals AB squared plus BD squared (Step 5), so AB squared plus BD squared plus DE squared equals AD squared plus DE squared [CN1]. Therefore AE squared equals AD squared plus DE squared.\n\n**Step 10.** Since AE squared equals AD squared plus DE squared, by the converse of the Pythagorean theorem the angle ADE is a right angle [1.48]. That is, DE is at right angles to AD.\n\n**Step 11.** We have now established that DE is at right angles to three straight lines at their common point D: to BD (by construction), to AD (Step 10), and to CD (Step 4, since CD is at right angles to plane P and DE lies in the plane through D). By Proposition 11.5, the three lines BD, AD, and CD all lie in one plane [11.5].\n\n**Step 12.** Since BD and AD lie in this plane, the points B and A both lie in this plane. Therefore the straight line AB lies entirely in this plane. Likewise CD lies in this plane. Hence AB and CD are coplanar.\n\n**Step 13.** The straight line BD falls on the two straight lines AB and CD in this plane. The angle ABD is a right angle (Step 3) and the angle CDB is a right angle (Step 4). Since all right angles are equal to one another [P4], the sum of the interior angles ABD and CDB on the same side of BD equals two right angles. Therefore AB is parallel to CD [1.28].\n\n**USED:** 1.11, 1.28, 1.3, 1.47, 1.48, 11.5, CN1, D11.3, P1, P4\n**Human refs (from References field):** 1.28, 1.4, 1.8, 11.2, 11.5, D11.3\n**Jaccard:** 0.231 — AI adds ['1.11', '1.3', '1.47', '1.48', 'CN1', 'P1', 'P4']; Human adds ['1.4', '1.8', '11.2']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.3",
+    "1.47",
+    "1.48",
+    "11.5",
+    "CN1",
+    "D11.3",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.4",
+    "1.8",
+    "11.2",
+    "11.5",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.3",
+    "1.47",
+    "1.48",
+    "CN1",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [
+    "1.4",
+    "1.8",
+    "11.2"
+  ],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Let AB and CD be two straight lines at right angles to the same plane P, meeting it at points B and D respectively. We must show that AB and CD are parallel.  **Step 2.** Join BD [P1]. In "
+}

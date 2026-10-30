@@ -1,0 +1,33 @@
+{
+  "proposition": "9.17",
+  "book": 9,
+  "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.",
+  "heath_proof": "For let there be as many numbers as we please, A, B, C, D, in continued proportion, and let the extremes of them, A, D, be prime to one another; I say that D is not to any other number as A is to B. For, if possible, as A is to B, so let D be to E; therefore, alternately, as A is to D, so is B to E. [VII. 13] But A, D are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore A measures B. And, as A is to B, so is B to C. Therefore B also measures C; so that A also measures C. And since, as B is to C, so is C to D, and B measures C, therefore C also measures D. But A measured C; so that A also measures D. But it also measures itself; therefore A measures A, D which are prime to one another: which is impossible. Therefore D will not be to any other number as A is to B.",
+  "ai_proof_text": "9.17\n**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.\n\n**Step 1.** Let A_1, A_2, …, A_n be numbers in continued proportion, with A_1 and A_n prime to one another. Suppose, for a contradiction, that there is a number B such that A_n : B = A_1 : A_2. Then A_1, A_2, …, A_n, B are in continued proportion, since the appended ratio equals their common ratio (hypothesis; D7.20).\n\n**Step 2.** Path choice: apply the numerical ex aequali theorem to the original sequence and its one-place shift; this directly brings the given coprime extremes into a proportion. The two sequences\nA_1, A_2, …, A_n\nand\nA_2, A_3, …, A_n, B\nhave corresponding successive ratios equal. Therefore, ex aequali,\nA_1 : A_n = A_2 : B (7.14).\n\n**Step 3.** Since A_1 and A_n are prime to one another, they are the least numbers having their ratio (7.21). The least numbers having a given ratio measure the corresponding numbers of any pair having that ratio (7.20). Applying this to the proportion in Step 2, we conclude that A_1 measures A_2.\n\n**Step 4.** Because all successive ratios in the original sequence are equal, each succeeding term consists of the same whole number of copies of its predecessor as A_2 does of A_1 (D7.20). Thus A_2 consists of copies of A_1, A_3 consists of copies of A_2, and so on. Repeatedly substituting these decompositions expresses A_n as a whole number of copies of A_1; hence A_1 measures A_n (D7.15).\n\n**Step 5.** Consequently, A_1 itself measures both A_1 and A_n. Since A_1 is a number, and therefore a multitude of units rather than an unit, this contradicts the hypothesis that their only common measure is an unit (D7.2; D7.12). Therefore no number B can satisfy A_n : B = A_1 : A_2: the last is not to any other number as the first is to the second.\n\n**USED:** 7.14, 7.20, 7.21, D7.12, D7.15, D7.2, D7.20\n**Human refs (from References field):** 7.13, 7.20, 7.21\n**Jaccard:** 0.250 — AI adds ['7.14', 'D7.12', 'D7.15', 'D7.2', 'D7.20']; Human adds ['7.13']",
+  "ai_used": [
+    "7.14",
+    "7.20",
+    "7.21",
+    "D7.12",
+    "D7.15",
+    "D7.2",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "7.14",
+    "D7.12",
+    "D7.15",
+    "D7.2",
+    "D7.20"
+  ],
+  "heath_only": [
+    "7.13"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let A_1, A_2, …, A_n be numbers in continued proportion, with A_1 and A_n prime to one another. Suppose, for a contradiction, that there is a number B such that A_n : B = A_1 : A_2. Then A"
+}

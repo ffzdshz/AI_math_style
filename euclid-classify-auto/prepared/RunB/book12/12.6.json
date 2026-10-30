@@ -1,0 +1,29 @@
+{
+  "proposition": "12.6",
+  "book": 12,
+  "statement": "Pyramids which are of the same height and have polygonal bases are to one another as the bases.",
+  "heath_proof": "Let there be pyramids of the same height of which the polygons ABCDE, FGHKL are the bases and the points M, N the vertices; I say that, as the base ABCDE is to the base FGHKL, so is the pyramid ABCDEM to the pyramid FGHKLN. For let AC, AD, FH, FK be joined. Since then ABCM, ACDM are two pyramids which have triangular bases and equal height, they are to one another as the bases; [XII. 5] therefore, as the base ABC is to the base ACD, so is the pyramid ABCM to the pyramid ACDM. And, componendo, as the base ABCD is to the base ACD, so is the pyramid ABCDM to the pyramid ACDM. [V. 18] But also, as the base ACD is to the base ADE, so is the pyramid ACDM to the pyramid ADEM. [XII. 5] Therefore, ex aequali, as the base ABCD is to the base ADE, so is the pyramid ABCDM to the pyramid ADEM. [V. 22] And again componendo, as the base ABCDE is to the base ADE, so is the pyramid ABCDEM to the pyramid ADEM. [V. 18] Similarly also it can be proved that, as the base FGHKL is to the base FGH, so is the pyramid FGHKLN to the pyramid FGHN. And, since ADEM, FGHN are two pyramids which have triangular bases and equal height, therefore, as the base ADE is to the base FGH, so is the pyramid ADEM to the pyramid FGHN. [XII. 5] But, as the base ADE is to the base ABCDE, so was the pyramid ADEM to the pyramid ABCDEM. Therefore also, ex aequali, as the base ABCDE is to the base FGH, so is the pyramid ABCDEM to the pyramid FGHN. [V. 22] But further, as the base FGH is to the base FGHKL, so also was the pyramid FGHN to the pyramid FGHKLN. Therefore also, ex aequali, as the base ABCDE is to the base FGHKL, so is the pyramid ABCDEM to the pyramid FGHKLN. [V. 22]",
+  "ai_proof_text": "12.6\n**Statement:** Pyramids which are of the same height and have polygonal bases are to one another as the bases.\n\n**Step 1.** Let there be two pyramids of the same height, the first with polygonal base ABCDE and apex F, and the second with polygonal base GHKLM and apex N. We are to show that pyramid F-ABCDE is to pyramid N-GHKLM as polygon ABCDE is to polygon GHKLM.\n\n**Step 2.** From vertex A of polygon ABCDE, draw diagonals AC and AD, dividing the polygonal base into triangles ABC, ACD, and ADE [P1]. From vertex G of polygon GHKLM, draw diagonals GK and GL, dividing the polygonal base into triangles GHK, GKL, and GLM [P1]. These diagonals likewise decompose pyramid F-ABCDE into triangular-based pyramids F-ABC, F-ACD, and F-ADE sharing the common apex F, and pyramid N-GHKLM into triangular-based pyramids N-GHK, N-GKL, and N-GLM sharing the common apex N. All six triangular pyramids have the same height as the original pyramids.\n\n**Step 3.** Since pyramids F-ABC and N-GHK are of the same height and have triangular bases, by 12.5 we have F-ABC : N-GHK = triangle ABC : triangle GHK. Similarly, F-ACD : N-GHK = triangle ACD : triangle GHK, and F-ADE : N-GHK = triangle ADE : triangle GHK [12.5].\n\n**Step 4.** Since F-ABC : N-GHK = ABC : GHK and F-ACD : N-GHK = ACD : GHK, by 5.24, (F-ABC + F-ACD) : N-GHK = (ABC + ACD) : GHK. Applying 5.24 again with F-ADE : N-GHK = ADE : GHK, we obtain (F-ABC + F-ACD + F-ADE) : N-GHK = (ABC + ACD + ADE) : GHK. That is, pyramid F-ABCDE : pyramid N-GHK = polygon ABCDE : triangle GHK.\n\n**Step 5.** By 12.5, since the triangular pyramids N-GHK, N-GKL, and N-GLM each share the same height as pyramid F-ABC, we have N-GHK : F-ABC = triangle GHK : triangle ABC, and N-GKL : F-ABC = triangle GKL : triangle ABC, and N-GLM : F-ABC = triangle GLM : triangle ABC [12.5].\n\n**Step 6.** By two applications of 5.24 (as in Step 4), summing the three ratios from Step 5 yields (N-GHK + N-GKL + N-GLM) : F-ABC = (GHK + GKL + GLM) : ABC. That is, pyramid N-GHKLM : pyramid F-ABC = polygon GHKLM : triangle ABC.\n\n**Step 7.** By the definition of same ratio [D5.5], the proportion in Step 6 — namely N-GHKLM : F-ABC = GHKLM : ABC — entails the inverse proportion F-ABC : N-GHKLM = ABC : GHKLM.\n\n**Step 8.** From 12.5 we also have N-GHK : F-ABC = GHK : ABC. Combining this with the result of Step 7 by ex aequali [5.22] (since N-GHK : F-ABC = GHK : ABC and F-ABC : N-GHKLM = ABC : GHKLM), we conclude N-GHK : N-GHKLM = GHK : GHKLM.\n\n**Step 9.** Combining Step 4 (F-ABCDE : N-GHK = ABCDE : GHK) with Step 8 (N-GHK : N-GHKLM = GHK : GHKLM) by ex aequali [5.22], we obtain F-ABCDE : N-GHKLM = ABCDE : GHKLM.\n\n**Step 10.** Therefore pyramids of the same height with polygonal bases are to one another as their bases. Q.E.D.\n\n**USED:** 12.5, 5.22, 5.24, D5.5, P1\n**Human refs (from References field):** 12.5, 5.18, 5.22\n**Jaccard:** 0.333 — AI adds ['5.24', 'D5.5', 'P1']; Human adds ['5.18']",
+  "ai_used": [
+    "12.5",
+    "5.22",
+    "5.24",
+    "D5.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "12.5",
+    "5.18",
+    "5.22"
+  ],
+  "ai_only": [
+    "5.24",
+    "D5.5",
+    "P1"
+  ],
+  "heath_only": [
+    "5.18"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let there be two pyramids of the same height, the first with polygonal base ABCDE and apex F, and the second with polygonal base GHKLM and apex N. We are to show that pyramid F-ABCDE is to"
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "13.6",
+  "run": "GPT",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is cut in extreme and mean ratio at C with AC the greater segment; points are collinear in order D, A, C, B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "M bisects AB so AM = AB/2; AD = AM; thus h = AD = AB/2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "DB = DA + AB = h + 2h = 3h (u = 3h)",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AC = DC - DA = t - h; CB = DB - DC = u - t",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 3",
+      "claim": "t = AC + h where AC is the greater segment and h = AB/2, so by 13.1 t^2 = 5h^2",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 5",
+      "claim": "t > h because DC contains DA as a proper part (C lies between A and B)",
+      "type": "segment_relationship"
+    },
+    {
+      "step": "Step 7",
+      "claim": "u > t because DB contains DC as a proper part (B lies beyond C from D)",
+      "type": "segment_relationship"
+    }
+  ],
+  "configuration_map": "All points lie on a single line in order D---A---C---B. D is produced beyond A from the direction of B. M is the midpoint of AB. AD = AM = h = AB/2. DC = t = h + AC. DB = u = 3h. AC = t - h. CB = u - t. The configuration is purely one-dimensional with no angles, triangles, or circles involved. The proof proceeds through algebraic and number-theoretic reasoning about commensurability relationships among the segments.",
+  "pass_reason": "All spatial claims are mutually consistent. The configuration is a simple collinear arrangement (D-A-C-B) with straightforward segment arithmetic. The core reasoning is algebraic and number-theoretic (commensurability, showing 5:1 is not a ratio of square numbers), involving no complex geometric configurations, angle decompositions, or interior/exterior arguments that could harbor hidden contradictions."
+}

@@ -1,0 +1,81 @@
+{
+  "proposition": "3.13",
+  "run": "RunB",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Circle ABDC touches circle EBFD internally at two points B and D; both B and D lie on both circumferences",
+      "type": "circle_tangency"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Line GH produced passes through contact point B; G, H, B are collinear (by 3.11)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Line GH produced passes through contact point D; G, H, D are collinear (by 3.11)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "G, H, B, D are all collinear on one straight line",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "GB = GD since B and D are on circumference of circle with center G",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "HB = HD since B and D are on circumference of circle with center H",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G is the midpoint of segment BD (equidistant from B and D on their common line)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "H is the midpoint of segment BD (equidistant from B and D on their common line)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 12",
+      "claim": "G coincides with H (both are midpoints of BD)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Circle ACK touches circle ABDC externally at two points A and C; both on both circumferences",
+      "type": "circle_tangency"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Chord AC falls within circle ABDC (by 3.2, since A, C on its circumference)",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Circle ACK is outside circle ABDC except at points of contact (external tangency by D3.3)",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 19",
+      "claim": "Chord AC falls within circle ACK (by 3.2, since A, C on its circumference)",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 20",
+      "claim": "Segment AC lies inside both circles simultaneously, meaning they share interior points and thus cut each other",
+      "type": "inside_outside"
+    }
+  ],
+  "configuration_map": "Case I: Two circles internally tangent at B and D. Outer circle ABDC has center G; inner circle EBFD has center H. By Prop 3.11 applied to each tangent point, the line through centers G and H passes through both B and D, making all four points collinear. Since G is equidistant from B and D on this line, G must be the midpoint of BD (the only valid position given distinct B, D). Similarly H is the midpoint of BD. Hence G = H. Case II: Two circles externally tangent at A and C. The chord AC connecting points on circle ABDC lies inside that circle (3.2). The same chord AC connecting points on circle ACK lies inside circle ACK (3.2). For external tangency the interiors of the two circles are disjoint, but AC is in both interiors - contradiction.",
+  "pass_reason": "All spatial claims are mutually consistent. In Case I, the collinearity of G, H, B, D (from two applications of 3.11) combined with equal radii correctly forces G and H to coincide. The midpoint argument is valid: on a line, a point equidistant from two distinct points must be their midpoint. In Case II, Prop 3.2 is correctly applied to both circles to show the chord AC is interior to both, which validly contradicts the disjoint-interiors property of external tangency. No angle decomposition, betweenness, or interior/exterior contradictions exist."
+}

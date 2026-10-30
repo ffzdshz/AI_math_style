@@ -1,0 +1,40 @@
+{
+  "proposition": "10.46",
+  "book": 10,
+  "statement": "The side of a rational plus a medial area is divided at one point only.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, but twice the rectangle AC, CB rational; [X. 40] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB medial, but twice the rectangle AD, DB rational. Since then that by which twice the rectangle AC, CB differs from twice the rectangle AD, DB is also that by which the squares on AD, DB differ from the squares on AC, CB, while twice the rectangle AC, CB exceeds twice the rectangle AD, DB by a rational area, therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore the side of a rational plus a medial area is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.46\n**Statement:** The side of a rational plus a medial area is divided at one point only.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, divided into its terms at C. By 10.40, AC and CB are incommensurable in square, the area S_C = AC² + CB² is medial, and the rectangle R_C = AC·CB is rational. Compare divisions with the greater term adjacent to A; merely interchanging the two terms is not a new decomposition. Thus AC > CB. Suppose there is another such division at D, with AD > DB. Then S_D = AD² + DB² is medial and R_D = AD·DB is rational, again by 10.40. The direct route is to show that these two medial areas would differ by a rational area, contrary to 10.26.\n\n**Step 2.** Interchanging the names C and D if necessary, suppose the points occur in the order A, D, C, B. Since DB > CB and AD > DB, we have AD > CB (CN5). By distributing rectangles using 2.1,\nR_D = AD·CB + AD·CD,\nR_C = AD·CB + CB·CD.\nConsequently,\nR_D = R_C + CD·(AD − CB)\n(2.1, CN2, CN3). The additional rectangle is positive, so R_D > R_C (CN5). Denote their positive difference by E.\n\n**Step 3.** Let Q be the square on the assigned rational straight line. Since R_C and R_D are rational, both are commensurable with Q (D10.1.4), and therefore with one another (10.12). Since R_D = R_C + E, the converse part of 10.15 shows that E is commensurable with R_C. Hence E is commensurable with Q (10.12), and is rational (D10.1.4). Moreover, E measures 2E, so E and 2E are commensurable (D10.1.1). Thus 2E is likewise commensurable with Q and is rational (10.12, D10.1.4).\n\n**Step 4.** Applying 2.4 to the two divisions of AB gives\nAB² = S_C + 2R_C,\nAB² = S_D + 2R_D.\nThese expressions are equal (CN1). Substituting R_D = R_C + E and subtracting the common area 2R_C gives\nS_C = S_D + 2E\n(CN2, CN3).\n\n**Step 5.** Thus the medial area S_C exceeds the medial area S_D by the positive rational area 2E. This is impossible by 10.26. Therefore no second division into the defining terms exists. Since the division at C exists by 10.40, the side of a rational plus a medial area is divided at one point only.\n\n**USED:** 10.12, 10.15, 10.26, 10.40, 2.1, 2.4, CN1, CN2, CN3, CN5, D10.1.1, D10.1.4\n**Human refs (from References field):** 10.26, 10.40\n**Jaccard:** 0.167 — AI adds ['10.12', '10.15', '2.1', '2.4', 'CN1', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.40",
+    "2.1",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.40"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.1",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, divided into its terms at C. By 10.40, AC and CB are incommensurable in square, the area S_C = AC² + CB² is medial, and the rectangle R"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "10.14",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as G (granularity difference). Both proofs share the same backbone of key intermediate conclusions: (1) establish sq(A):sq(B) :: sq(C):sq(D) via 6.22, (2) derive the crucial ratio A:E :: C:F, and (3) apply 10.11 to transfer commensurability or incommensurability. The difference lies in how each proof gets from conclusion 1 to conclusion 2: Heath uses separando (5.17) to get sq(E):sq(B) :: sq(F):sq(D), then 6.22 for E:B :: F:D, inversion, and ex aequali (5.22) to reach A:E :: C:F; the AI uses convertendo (5.19) to go directly from sq(A):sq(B) :: sq(C):sq(D) to sq(A):sq(E) :: sq(C):sq(F), then the converse of 6.22 to get A:E :: C:F. These are different proportion-theory manipulations achieving the same intermediate result, representing a citation-depth difference rather than a structural divergence. The ai_only items 1.47, D5.5, P1, P3 are construction/axiom over-citations typical of granularity differences, while the substantive difference (5.19 vs 5.17+5.22) reflects a more direct vs multi-step algebraic route to the same key conclusion.",
+  "jaccard": 0.222,
+  "ai_citations": "1.47|10.11|5.19|6.22|D5.5|P1|P3",
+  "heath_citations": "10.11|5.17|5.22|6.22",
+  "ai_only": "1.47|5.19|D5.5|P1|P3",
+  "heath_only": "5.17|5.22",
+  "audit_record": ""
+}

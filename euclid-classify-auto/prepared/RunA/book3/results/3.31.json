@@ -1,0 +1,13 @@
+{
+  "proposition": "3.31",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 identifies a different backbone between the AI and Heath proofs. For part 1 (angle in semicircle is right), both proofs use the same approach via I.5 and I.32, though the AI adds supplementary angle reasoning via I.13. However, for part 2 (angle in greater segment is acute), Heath argues directly from I.17 (two angles of a triangle sum to less than two right angles) applied to the triangle containing the right angle, while the AI takes a fundamentally different route through III.20 (central angle equals double the inscribed angle) to conclude the inscribed angle is acute. The proof-tree containment test confirms this is a genuine path difference: I.17 does not appear in Heath's proof of III.20, so the AI is not simply citing a higher-level result that subsumes Heath's steps. For parts 4-5 (angles OF the segments), the AI uses III.16 about mixed angles while Heath argues directly from the rectilineal right angle, representing another backbone difference. The AI also introduces III.20 which Heath does not use at all. Q3 confirms the AI's different path is logically valid: the chain from central angles to inscribed angle acuteness is sound, and the arguments for the mixed-angle parts, while convoluted, reach supported conclusions. Classification is D.",
+  "jaccard": 0.143,
+  "ai_citations": "1.13|1.32|1.5|3.16|3.20|3.22|CN1|CN2|CN3|CN5|D1.11|D1.12|D1.15|D1.17|D1.18|D3.6|D3.7|D3.8|P1",
+  "heath_citations": "1.17|1.32|1.5|3.22|D1.10",
+  "ai_only": "1.13|3.16|3.20|CN1|CN2|CN3|CN5|D1.11|D1.12|D1.15|D1.17|D1.18|D3.6|D3.7|D3.8|P1",
+  "heath_only": "1.17|D1.10",
+  "audit_record": ""
+}

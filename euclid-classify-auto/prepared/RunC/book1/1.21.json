@@ -1,0 +1,26 @@
+{
+  "proposition": "1.21",
+  "book": 1,
+  "statement": "If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greaterangle.",
+  "heath_proof": "On BC, one of the sides of the triangle ABC, from its extremities B, C, let the two straight lines BD, DC be constructed meeting within the triangle; I say that BD, DC are less than the remaining two sidesof the triangle BA, AC, but contain an angle BDC greater than the angle BAC. For let BD be drawn through to E. Then, since in any triangle two sides are greater than the remainingone, [I. 20] therefore, in the triangle ABE, the two sides AB, AE are greater than BE. Let EC be added to each; therefore BA, AC are greater than BE, EC. Again, since, in the triangle CED, the two sides CE, ED are greater than CD, let DB be added to each; therefore CE, EB are greater than CD, DB. But BA, AC were proved greater than BE, EC;therefore BA, AC are much greater than BD, DC. Again, since in any triangle the exterior angle is greater than the interior and opposite angle, [I. 16] therefore, in the triangle CDE, the exterior angle BDC is greater than the angle CED. For the same reason, moreover, in the triangle ABE also, the exterior angle CEB is greater than the angle BAC. But the angle BDC was proved greater than the angle CEB; therefore the angle BDC is much greater than the angle BAC.",
+  "ai_proof_text": "1.21\n**Statement:** If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greaterangle.\n\n**Step 1.** Let ABC be a triangle, and from the extremities B and C of side BC, let two straight lines BD and CD be constructed meeting at a point D within the triangle. We are to prove that BD + DC < BA + AC, and that angle BDC > angle BAC.\n\n**Step 2.** Produce BD beyond D to meet AC at a point E [P2, P1]. Such a point E exists because D is inside triangle ABC, so the ray from B through D must cross side AC.\n\n**Step 3.** Consider triangle ABE. By Proposition 1.20, the two sides BA and AE are together greater than the remaining side BE. That is, BA + AE > BE.\n\n**Step 4.** Add EC to both sides of this inequality. Then BA + AE + EC > BE + EC [CN2]. Since E lies on segment AC, we have AE + EC = AC. Therefore BA + AC > BE + EC.\n\n**Step 5.** Now consider triangle DEC. By Proposition 1.20, the two sides DE and EC are together greater than the remaining side DC. That is, DE + EC > DC.\n\n**Step 6.** Add BD to both sides of this inequality. Then BD + DE + EC > BD + DC [CN2]. Since D lies on segment BE, we have BD + DE = BE. Therefore BE + EC > BD + DC.\n\n**Step 7.** From Step 4 we have BA + AC > BE + EC, and from Step 6 we have BE + EC > BD + DC. Therefore BA + AC > BD + DC. Equivalently, BD + DC < BA + AC, which is the first part of what was to be proved.\n\n**Step 8.** For the angle: in triangle DEC, the angle BDC is an exterior angle (formed by producing side ED of the triangle beyond D to B). By Proposition 1.16, the exterior angle BDC is greater than the interior and opposite angle DEC. That is, angle BDC > angle DEC.\n\n**Step 9.** Similarly, in triangle ABE, the angle DEC (which is the same as angle AEB) is an exterior angle (formed by producing side AE of the triangle beyond E, since BE produced meets AC at E, making angle AEB an exterior angle at vertex E when side BE is produced to D — more precisely, angle BEA is exterior to triangle ABE when we consider that E lies on AC and BE crosses from inside). Let us state this more carefully: in triangle ABE, side BE meets vertex E, and the line EC is the production of AE beyond E. Thus angle BEC is an exterior angle of triangle ABE at vertex E. By Proposition 1.16, angle BEC > angle BAE, that is, angle DEC > angle BAC.\n\n**Step 10.** From Step 8 we have angle BDC > angle DEC, and from Step 9 we have angle DEC > angle BAC. Therefore angle BDC > angle BAC, which is the second part of what was to be proved.\n\n**Step 11.** Therefore, if on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed are less than the remaining two sides of the triangle, but contain a greater angle. Q.E.F.\n\n**USED:** 1.16, 1.20, CN2, P1, P2\n**Human refs (from References field):** 1.16, 1.20\n**Jaccard:** 0.400 — AI adds ['CN2', 'P1', 'P2']",
+  "ai_used": [
+    "1.16",
+    "1.20",
+    "CN2",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.20"
+  ],
+  "ai_only": [
+    "CN2",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let ABC be a triangle, and from the extremities B and C of side BC, let two straight lines BD and CD be constructed meeting at a point D within the triangle. We are to prove that BD + DC <"
+}

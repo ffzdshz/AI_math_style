@@ -1,0 +1,41 @@
+{
+  "proposition": "3.32",
+  "book": 3,
+  "statement": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+  "heath_proof": "For let a straight line EF touch the circle ABCD at the point B, and from the point B let there be drawn across, in the circle ABCD, a straight line BD cutting it; I say that the angles which BD makes with the tangent EF will be equal to the angles in the alternate segments of the circle, that is, that the angle FBD is equal to the angle constructed in the segment BAD, and the angle EBD is equal to the angle constructed in the segment DCB. For let BA be drawn from B at right angles to EF, let a point C be taken at random on the circumference BD, and let AD, DC, CB be joined. Then, since a straight line EF touches the circle ABCD at B, and BA has been drawn from the point of contact at right angles to the tangent, the centre of the circle ABCD is on BA. [III. 19] Therefore BA is a diameter of the circle ABCD; therefore the angle ADB, being an angle in a semicircle, is right. [III. 31]  Therefore the remaining angles BAD, ABD are equal to one right angle. [I. 32] But the angle ABF is also right; therefore the angle ABF is equal to the angles BAD, ABD. Let the angle ABD be subtracted from each; therefore the angle DBF which remains is equal to the angle BAD in the alternate segment of the circle. Next, since ABCD is a quadrilateral in a circle, its opposite angles are equal to two right angles. [III. 22] But the angles DBF, DBE are also equal to two right angles; therefore the angles DBF, DBE are equal to the angles BAD, BCD, of which the angle BAD was proved equal to the angle DBF; therefore the angle DBE which remains is equal to the angle DCB in the alternate segment DCB of the circle.",
+  "ai_proof_text": "3.32\n**Statement:** If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.\n\n**Step 1.** Let EF be a straight line tangent to circle ABCD at point B, and let BD be a straight line drawn from B across the circle, cutting it and creating two segments. We must show that angle DBF equals the angle in the alternate segment BAD, and angle DBE equals the angle in the alternate segment BCD.\n\n**Step 2.** Draw the diameter BA from B through the centre of the circle to the point A on the circumference [P1, P2, D1.15, D1.17]. Since EF is tangent to the circle at B [D3.2], and BA is a diameter passing through the centre, by 3.18 the diameter BA is perpendicular to the tangent EF. Therefore angle ABF is a right angle.\n\n**Step 3.** Since BA is a diameter, the angle ADB, being an angle in the semicircle, is a right angle [3.31].\n\n**Step 4.** In triangle ABD, the three interior angles sum to two right angles [1.32]. Since angle ADB is a right angle (Step 3), the remaining angles satisfy: angle ABD + angle BAD = one right angle.\n\n**Step 5.** Now angle ABF is a right angle (Step 2), and angle ABF is composed of angle ABD and angle DBF. Therefore angle DBF = angle ABF minus angle ABD = one right angle minus angle ABD.\n\n**Step 6.** From Step 4, angle BAD = one right angle minus angle ABD. Therefore angle DBF = angle BAD.\n\n**Step 7.** The point A lies on the circumference of segment BAD, and angle BAD is formed by joining A to the endpoints B and D of the chord BD. Therefore angle BAD is an angle in segment BAD [D3.8]. Since angle DBF = angle BAD, the angle between the tangent BF and the chord BD equals the angle in the alternate segment BAD.\n\n**Step 8.** Since EBF is a straight line, angle DBE + angle DBF = two right angles [1.13].\n\n**Step 9.** Let C be any point on the arc BCD. Consider the quadrilateral BADC inscribed in the circle with vertices B, A, D, C on the circumference. By 3.22, the opposite angles of this inscribed quadrilateral sum to two right angles. In particular, angle BAD + angle BCD = two right angles.\n\n**Step 10.** From Step 8, angle DBE = two right angles minus angle DBF. From Step 6, angle DBF = angle BAD. Therefore angle DBE = two right angles minus angle BAD.\n\n**Step 11.** From Step 9, angle BCD = two right angles minus angle BAD. Therefore angle DBE = angle BCD.\n\n**Step 12.** The point C lies on the circumference of segment BCD, and angle BCD is formed by joining C to the endpoints B and D of the chord BD. Therefore angle BCD is an angle in segment BCD [D3.8]. Since angle DBE = angle BCD, the angle between the tangent BE and the chord BD equals the angle in the alternate segment BCD.\n\n**Step 13.** Therefore, if a straight line touches a circle, and from the point of contact a straight line is drawn across the circle cutting it, the angles which it makes with the tangent are equal to the angles in the alternate segments of the circle. Q.E.F.\n\n**USED:** 1.13, 1.32, 3.18, 3.22, 3.31, D1.15, D1.17, D3.2, D3.8, P1, P2\n**Human refs (from References field):** 1.32, 3.19, 3.22, 3.31\n**Jaccard:** 0.250 — AI adds ['1.13', '3.18', 'D1.15', 'D1.17', 'D3.2', 'D3.8', 'P1', 'P2']; Human adds ['3.19']",
+  "ai_used": [
+    "1.13",
+    "1.32",
+    "3.18",
+    "3.22",
+    "3.31",
+    "D1.15",
+    "D1.17",
+    "D3.2",
+    "D3.8",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.32",
+    "3.19",
+    "3.22",
+    "3.31"
+  ],
+  "ai_only": [
+    "1.13",
+    "3.18",
+    "D1.15",
+    "D1.17",
+    "D3.2",
+    "D3.8",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "3.19"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let EF be a straight line tangent to circle ABCD at point B, and let BD be a straight line drawn from B across the circle, cutting it and creating two segments. We must show that angle DBF"
+}

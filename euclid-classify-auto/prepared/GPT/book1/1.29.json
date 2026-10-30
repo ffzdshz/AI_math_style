@@ -1,0 +1,36 @@
+{
+  "proposition": "1.29",
+  "book": 1,
+  "statement": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+  "heath_proof": "For let the straight line EF fall on the parallel straight lines AB, CD; I say that it makes the alternate angles AGH, GHD equal, the exterior angle EGB equal to the interior and opposite angle GHD, and the interior angles on the sameside, namely BGH, GHD, equal to two right angles. For, if the angle AGH is unequal to the angle GHD, one of them is greater. Let the angle AGH be greater. Let the angle BGH be added to each; therefore the angles AGH, BGH are greater than the angles BGH, GHD. But the angles AGH, BGH are equal to two right angles; [I. 13] therefore the angles BGH, GHD are less than two right angles. But straight lines produced indefinitely from angles less than two right angles meet; [Post. 5]therefore AB, CD, if produced indefinitely, will meet; but they do not meet, because they are by hypothesis parallel. Therefore the angle AGH is not unequal to the angle GHD, and is therefore equal to it. Again, the angle AGH is equal to the angle EGB; [I. 15] therefore the angle EGB is also equal to the angle GHD. [C. N. 1] Let the angle BGH be added to each; therefore the angles EGB, BGH are equal to the angles BGH, GHD. [C. N. 2] But the angles EGB, BGH are equal to two right angles; [I. 13] therefore the angles BGH, GHD are also equal to two right angles.",
+  "ai_proof_text": "1.29\n**Statement:** A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.\n\n**Step 1.** Let the parallel straight lines AB and CD be cut by a transversal at G and H, respectively. Label the points so that A,G,B and C,H,D occur in those orders, with A,C on one side of the transversal and B,D on the other. Produce the transversal to E and F so that E,G,H,F occur in that order [P2]. Since AB and CD are parallel, they cannot meet in either direction [D1.23]. Write 2R for the magnitude of two right angles, which is independent of the right angles chosen [P4].\n\n**Step 2.** Put α = ∠AGH, β = ∠BGH, γ = ∠GHC, and δ = ∠GHD. The adjacent angles at each intersection satisfy\nα + β = 2R and γ + δ = 2R [1.13].\nPath choice: first establish alternate-angle equality directly through P5; the adjacent sums supplied by 1.13 make this possible without an auxiliary construction.\n\n**Step 3.** Suppose α > δ. Adding β gives δ + β < α + β = 2R: replacing the larger angle by the smaller makes the sum a proper part of the former sum [CN2, CN5; Step 2]. But β and δ are the interior angles on the side containing B and D. Therefore AB and CD, produced indefinitely, meet on that side [P5], contrary to their parallelism [D1.23]. Thus α cannot exceed δ.\n\n**Step 4.** Suppose instead α < δ. Adding γ gives α + γ < δ + γ = 2R, by the same whole-and-part comparison [CN2, CN5; Step 2]. Now α and γ are the interior angles on the side containing A and C, so AB and CD meet on that side [P5], again contrary to parallelism [D1.23]. Neither inequality is possible; hence α = δ [Steps 3–4].\n\n**Step 5.** The sums α + β and γ + δ are equal, since each equals 2R [Step 2; CN1]. Subtracting the equal angles α and δ leaves β = γ [Step 4; CN3]. Consequently both pairs of alternate angles are equal:\n∠AGH = ∠GHD and ∠BGH = ∠GHC [Steps 4–5].\n\n**Step 6.** Vertical angles are equal [1.15]. Thus the exterior angles satisfy\n∠EGB = α = δ = ∠GHD,\n∠AGE = β = γ = ∠GHC,\n∠CHF = δ = α = ∠AGH,\nand ∠DHF = γ = β = ∠BGH [Steps 4–5; CN1].\nTherefore each exterior angle equals the interior and opposite angle at the other intersection.\n\n**Step 7.** Adding β to α = δ yields β + δ = α + β = 2R [Steps 2, 4; CN2, CN1]. Adding γ to the same equality yields α + γ = δ + γ = 2R [Steps 2, 4; CN2, CN1]. These are precisely the interior-angle sums on the two sides of the transversal. Hence a straight line falling on parallel straight lines makes the alternate angles equal, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.\n\n**USED:** 1.13, 1.15, CN1, CN2, CN3, CN5, D1.23, P2, P4, P5\n**Human refs (from References field):** 1.13, 1.15, CN1, CN2, P5\n**Jaccard:** 0.500 — AI adds ['CN3', 'CN5', 'D1.23', 'P2', 'P4']",
+  "ai_used": [
+    "1.13",
+    "1.15",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.23",
+    "P2",
+    "P4",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.13",
+    "1.15",
+    "CN1",
+    "CN2",
+    "P5"
+  ],
+  "ai_only": [
+    "CN3",
+    "CN5",
+    "D1.23",
+    "P2",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let the parallel straight lines AB and CD be cut by a transversal at G and H, respectively. Label the points so that A,G,B and C,H,D occur in those orders, with A,C on one side of the tran"
+}

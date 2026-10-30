@@ -1,0 +1,37 @@
+{
+  "proposition": "8.15",
+  "book": 8,
+  "statement": "If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.",
+  "heath_proof": "For let the cube number A measure the cube B, and let C be the side of A and D of B; I say that C measures D. For let C by multiplying itself make E, and let D by multiplying itself make G; further, let C by multiplying D make F, and let C, D by multiplying F make H, K respectively. Now it is manifest that E, F, G and A, H, K, B are continuously proportional in the ratio of C to D. [VIII. 11, 12] And, since A, H, K, B are continuously proportional, and A measures B, therefore it also measures H. [VIII. 7] And, as A is to H, so is C to D; therefore C also measures D. [VII. Def. 20] Next, let C measure D; I say that A will also measure B. For, with the same construction, we can prove in a similar manner that A, H, K, B are continuously proportional in the ratio of C to D. And, since C measures D, and, as C is to D, so is A to H, therefore A also measures H, [VII. Def. 20] so that A measures B also.",
+  "ai_proof_text": "8.15\n**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.\n\n**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a * a * a and B = b * b * b [D7.19]. The proposition has two parts: (i) if A measures B then a measures b, and (ii) if a measures b then A measures B.\n\n**Step 2.** (Part i) Suppose A measures B, that is, the cube a^3 measures the cube b^3.\n\n**Step 3.** Since a^3 and b^3 are both cube numbers, by 8.12 there are two mean proportional numbers between them. Let the four numbers in continued proportion be a^3, C, D, b^3.\n\n**Step 4.** Since a^3, C, D, b^3 are in continued proportion and a^3 (the first) measures b^3 (the last), by 8.7 the first also measures the second, so a^3 measures C.\n\n**Step 5.** Now by the construction in 8.12, the first mean proportional C between a^3 and b^3 equals a^2 * b (that is, a multiplied by a gives a^2, and a^2 multiplied by b gives C) [D7.15].\n\n**Step 6.** By 7.17, if a number multiply two numbers, the products have the same ratio as the numbers multiplied. Since a^2 multiplied by a gives a^3 and a^2 multiplied by b gives C, we have a^3 : C = a : b.\n\n**Step 7.** Since a^3 : C = a : b (Step 6) and a^3 measures C (Step 4), by 7.20 it follows that a measures b. This completes Part (i).\n\n**Step 8.** (Part ii) Conversely, suppose a measures b. We must show a^3 measures b^3.\n\n**Step 9.** Since a measures b, by 8.14 (the square analogue), a^2 measures b^2.\n\n**Step 10.** By 7.17, since b multiplied by a^2 gives a^2 * b and b multiplied by b^2 gives b^3, we have a^2 * b : b^3 = a^2 : b^2. Since a^2 measures b^2 (Step 9), by 7.20 it follows that a^2 * b measures b^3.\n\n**Step 11.** By 7.17, since a multiplied by a^2 gives a^3 and b multiplied by a^2 gives a^2 * b, we have a^3 : a^2 * b = a : b. Since a measures b (by hypothesis), by 7.20 it follows that a^3 measures a^2 * b.\n\n**Step 12.** Since a^3 measures a^2 * b (Step 11) and a^2 * b measures b^3 (Step 10), there exist numbers m and n such that a^2 * b = m * a^3 and b^3 = n * a^2 * b [D7.3]. Therefore b^3 = n * m * a^3, which means a^3 measures b^3 [D7.3, D7.15].\n\n**Step 13.** Therefore, if a cube number measures a cube number, the side also measures the side; and if the side measures the side, the cube also measures the cube. Q.E.D.\n\n**USED:** 7.17, 7.20, 8.12, 8.14, 8.7, D7.15, D7.19, D7.3\n**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20\n**Jaccard:** 0.200 — AI adds ['7.17', '7.20', '8.14', 'D7.15', 'D7.19', 'D7.3']; Human adds ['8.11', 'D7.20']",
+  "ai_used": [
+    "7.17",
+    "7.20",
+    "8.12",
+    "8.14",
+    "8.7",
+    "D7.15",
+    "D7.19",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.12",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "7.20",
+    "8.14",
+    "D7.15",
+    "D7.19",
+    "D7.3"
+  ],
+  "heath_only": [
+    "8.11",
+    "D7.20"
+  ],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a * a * a and B = b * b * b [D7.19]. The proposition has two parts: (i) if A measures B then a measures b, and (ii)"
+}

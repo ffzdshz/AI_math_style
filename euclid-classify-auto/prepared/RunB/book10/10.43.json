@@ -1,0 +1,33 @@
+{
+  "proposition": "10.43",
+  "book": 10,
+  "statement": "A first bimedial straight line is divided at one point only.",
+  "heath_proof": "Let AB be a first bimedial straight line divided at C, so that AC, CB are medial straight lines commensurable in square only and containing a rational rectangle; I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also medial straight lines commensurable in square only and containing a rational rectangle. Since, then, that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB is that by which the squares on AC, CB differ from the squares on AD, DB, while twice the rectangle AD, DB differs from twice the rectangle AC, CB by a rational area—for both are rational— therefore the squares on AC, CB also differ from the squares on AD, DB by a rational area, though they are medial: which is absurd. [x. 26] Therefore a first bimedial straight line is not divided into its terms at different points; therefore it is so divided at one point only.",
+  "ai_proof_text": "10.43\n**Statement:** A first bimedial straight line is divided at one point only.\n\n**Step 1.** Let AB be a first bimedial straight line, and let it be divided at C into its terms, so that AC and CB are medial straight lines commensurable in square only and containing a rational rectangle, with AC greater than CB [10.37].\n\n**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D (where D is different from C) into terms AD and DB satisfying the same conditions: AD and DB are medial, commensurable in square only, and contain a rational rectangle, with AD greater than DB.\n\n**Step 3.** Since AC and CB are commensurable in square, the squares AC^2 and CB^2 are commensurable areas. Since AC is medial, AC^2 is a medial area [D10.1.4, 10.21]. Since CB is medial, CB^2 is a medial area. Since AC^2 and CB^2 are commensurable, their sum AC^2 + CB^2 is commensurable with each of them [10.15], and since it is commensurable with the medial area AC^2, and AC^2 is incommensurable with any rational area, by 10.13 the sum AC^2 + CB^2 is also incommensurable with any rational area, and hence is itself a medial area.\n\n**Step 4.** By the same reasoning, since AD and DB are medial and commensurable in square only, the sum AD^2 + DB^2 is also a medial area.\n\n**Step 5.** Since the rectangle contained by AC and CB is rational [by hypothesis from 10.37], twice the rectangle 2*rect(AC,CB) is also rational [D10.1.4].\n\n**Step 6.** Similarly, since the rectangle contained by AD and DB is rational, twice the rectangle 2*rect(AD,DB) is also rational.\n\n**Step 7.** By 2.4, since AB = AC + CB, we have AB^2 = AC^2 + CB^2 + 2*rect(AC,CB). Therefore AC^2 + CB^2 = AB^2 - 2*rect(AC,CB).\n\n**Step 8.** Similarly, since AB = AD + DB, we have AB^2 = AD^2 + DB^2 + 2*rect(AD,DB). Therefore AD^2 + DB^2 = AB^2 - 2*rect(AD,DB).\n\n**Step 9.** Subtracting the equation in Step 8 from the equation in Step 7: (AC^2 + CB^2) - (AD^2 + DB^2) = 2*rect(AD,DB) - 2*rect(AC,CB) [CN2, CN3].\n\n**Step 10.** The right-hand side, 2*rect(AD,DB) - 2*rect(AC,CB), is the difference of two rational areas, which is rational [D10.1.4].\n\n**Step 11.** The left-hand side is the difference of two medial areas (established in Steps 3 and 4). By 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference (AC^2 + CB^2) - (AD^2 + DB^2) cannot be a nonzero rational area.\n\n**Step 12.** Since both sides of the equation in Step 9 must be equal, and the right side is rational while a nonzero rational difference of medial areas is impossible by Step 11, both sides must equal zero. Therefore AC^2 + CB^2 = AD^2 + DB^2, and 2*rect(AC,CB) = 2*rect(AD,DB), hence rect(AC,CB) = rect(AD,DB).\n\n**Step 13.** Now from AC^2 + CB^2 = AD^2 + DB^2 and rect(AC,CB) = rect(AD,DB), we compute using 2.4: (AC + CB)^2 = AC^2 + CB^2 + 2*rect(AC,CB) and (AD + DB)^2 = AD^2 + DB^2 + 2*rect(AD,DB). Since AC + CB = AD + DB = AB, and the sums of squares and the double rectangles are respectively equal, this is consistent.\n\n**Step 14.** Furthermore, (AC - CB)^2 = AC^2 + CB^2 - 2*rect(AC,CB) = AD^2 + DB^2 - 2*rect(AD,DB) = (AD - DB)^2 [2.4, CN3].\n\n**Step 15.** Since AC > CB and AD > DB, the differences AC - CB and AD - DB are both positive. From (AC - CB)^2 = (AD - DB)^2, it follows that AC - CB = AD - DB.\n\n**Step 16.** We have AC + CB = AD + DB (since both equal AB) and AC - CB = AD - DB. Adding these two equations: 2*AC = 2*AD, so AC = AD [CN2]. Subtracting: 2*CB = 2*DB, so CB = DB [CN3].\n\n**Step 17.** Since AC = AD, the points C and D coincide, contradicting our assumption that D is different from C.\n\n**Step 18.** Therefore a first bimedial straight line is divided at one point only. Q.E.D.\n\n**USED:** 10.13, 10.15, 10.21, 10.26, 10.37, 2.4, CN2, CN3, D10.1.4\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['10.13', '10.15', '10.21', '10.26', '10.37', '2.4', 'CN2', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.13",
+    "10.15",
+    "10.21",
+    "10.26",
+    "10.37",
+    "2.4",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "10.13",
+    "10.15",
+    "10.21",
+    "10.26",
+    "10.37",
+    "2.4",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AB be a first bimedial straight line, and let it be divided at C into its terms, so that AC and CB are medial straight lines commensurable in square only and containing a rational rect"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "10.34",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals a different backbone between the two proofs. While both share the geometric framework (semicircle construction, 3.31 for the right angle, 1.47 for the Pythagorean theorem, 6.28 for application of areas, and the conclusion that the sum of squares is medial and the rectangle is rational), they diverge in two fundamental ways. First, the initial setup differs: Heath invokes 10.31 to obtain two medial lines with the required properties directly, while the AI constructs them from scratch using 10.10 (to find incommensurable lines) and 10.21 (to establish the medial line). Second, and more critically, the method for establishing incommensurability in square is entirely different: Heath uses 10.18 to conclude AF is incommensurable with FB from the deficient-rectangle application, then transfers this via 10.11 (proportional incommensurability) to the squares on AD, DB; the AI instead uses 6.8 to express AD² and DB² in terms of AC and CB, then proves AC/CB is irrational through explicit algebraic computation involving 10.9 (square number ratios and commensurability), 10.7 (incommensurability and number ratios), and 2.5 (algebraic identity). The heath_only propositions (10.11, 10.18, 10.31) are not contained within the proofs of any AI-cited proposition; they represent a genuinely independent route. The AI's path is logically complete under the Q1(b) hardened standard, so Q3 yields D.",
+  "jaccard": 0.25,
+  "ai_citations": "1.11|1.47|10.10|10.21|10.6|10.7|10.9|2.5|3.31|6.28|6.8|D10.1.2|D10.1.4",
+  "heath_citations": "1.47|10.11|10.18|10.31|10.6|3.31|6.28",
+  "ai_only": "1.11|10.10|10.21|10.7|10.9|2.5|6.8|D10.1.2|D10.1.4",
+  "heath_only": "10.11|10.18|10.31",
+  "audit_record": ""
+}

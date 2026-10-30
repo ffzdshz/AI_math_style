@@ -1,0 +1,32 @@
+{
+  "proposition": "9.11",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.",
+  "heath_proof": "Let there be as many numbers as we please, B, C, D, E, beginning from the unit A and in continued proportion; I say that B, the least of the numbers B, C, D, E, measures E according to some one of the numbers C, D. For since, as the unit A is to B, so is D to E, therefore the unit A measures the number B the same number of times as D measures E; therefore, alternately, the unit A measures D the same number of times as B measures E. [VII. 15] But the unit A measures D according to the units in it; therefore B also measures E according to the units in D; so that B the less measures E the greater according to some number of those which have place among the proportional numbers.",
+  "ai_proof_text": "9.11\n**Statement:** If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.\n\n**Step 1.** Let there be as many numbers as we please, A1 = 1, A2, A3, ..., An, beginning from a unit and in continued proportion, so that A1 : A2 = A2 : A3 = ... = An-1 : An. We must show that any lesser term measures any greater term according to some one of the numbers which have place among the proportional numbers.\n\n**Step 2.** Since A1 = 1 (the unit), A2, A3, ..., An are in continued proportion from unity, we have by definition that each term is obtained by multiplying the previous term by A2. That is, A3 = A2 times A2, A4 = A3 times A2, and in general Ak+1 = Ak times A2, by the definition of continued proportion from unity (D7.15, D7.20).\n\n**Step 3.** Consider any two terms Ai and Aj where i < j. We wish to show that Ai measures Aj and that the quotient is one of the terms in the sequence.\n\n**Step 4.** First, we show the case where the lesser term is A2 (the term after the unit). Since A3 = A2 times A2, A2 measures A3 according to A2 (D7.15). Since A4 = A3 times A2, A2 measures A4 according to A3, by the definition of multiplication (D7.15). Continuing in this way, A2 measures Ak according to Ak-1 for each k >= 2. In each case, the quotient Ak-1 is one of the numbers in the proportion.\n\n**Step 5.** Next, consider the term A3. Since A4 = A3 times A2, we have that A3 measures A4 according to A2 (D7.15). Now A5 = A4 times A2. By 7.17 (if a number multiplied by two numbers produces two results, the results have the same ratio as the multiplied numbers), since A4 = A3 times A2 and A5 = A4 times A2 = A3 times A2 times A2 = A3 times A3 (because A3 = A2 times A2 by Step 4), we need to verify that A3 measures A5. Since A5 = A4 times A2 and A4 = A3 times A2, we get A5 = A3 times A2 times A2 = A3 times A3, so A3 measures A5 according to A3, which is in the sequence (D7.15).\n\n**Step 6.** More generally, we proceed by considering arbitrary terms. Take Ai and Aj with i < j. We claim Ai measures Aj according to Aj-i+1. We prove this as follows. Since the numbers are in continued proportion from the unit with common ratio A2, each term Ak equals A2 multiplied by itself (k-1) times. By 8.7 (if in a sequence of numbers in continued proportion from unity, the first after the unit multiplied by the last produces a number, the product falls among the proportional numbers in place from the last by the same distance as the first is from unity), we know that multiplicative relationships among terms of the geometric sequence produce other terms in the sequence.\n\n**Step 7.** Since Aj = Aj-1 times A2 = Aj-2 times A2 times A2, and continuing this factorization, we may write Aj = Ai times A2^(j-i). Now A2^(j-i) is the term Aj-i+1 in our sequence (since Ak corresponds to A2^(k-1)). Therefore Aj = Ai times Aj-i+1, which means Ai measures Aj according to Aj-i+1 (D7.15, D7.3).\n\n**Step 8.** The number Aj-i+1 is one of the proportional numbers since 1 <= j-i+1 <= n (because 1 <= i < j <= n implies 2 <= j-i+1 <= n). Thus the lesser term Ai measures the greater term Aj, and the quotient is the term Aj-i+1, which has a place among the proportional numbers.\n\n**Step 9.** To verify the multiplicative decomposition in Step 7: since Ai and Aj-i+1 are both terms in a continued proportion from unity, by 7.16 (if two numbers multiplied by one another make certain numbers, the numbers so produced will be equal to one another), and more precisely by the properties of continued proportions established in 8.7, the product Ai times Aj-i+1 is indeed Aj. This is because in the geometric sequence, Ai = A2^(i-1) and Aj-i+1 = A2^(j-i), so their product is A2^(j-1) = Aj, and by 9.5 applied iteratively (if a number multiplied by a number makes a result that is a power, the original is that power) together with 7.15 (the products of numbers are the same regardless of the order of multiplication), this product equals Aj.\n\n**Step 10.** Therefore, for any terms Ai and Aj with i < j in the sequence of continued proportion from unity, the less measures the greater according to the number Aj-i+1, which is itself one of the numbers that have place among the proportional numbers. This is what was to be proved. Q.E.D.\n\n**USED:** 7.15, 7.16, 7.17, 8.7, 9.5, D7.15, D7.20, D7.3\n**Human refs (from References field):** 7.15\n**Jaccard:** 0.125 — AI adds ['7.16', '7.17', '8.7', '9.5', 'D7.15', 'D7.20', 'D7.3']",
+  "ai_used": [
+    "7.15",
+    "7.16",
+    "7.17",
+    "8.7",
+    "9.5",
+    "D7.15",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.15"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.17",
+    "8.7",
+    "9.5",
+    "D7.15",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let there be as many numbers as we please, A1 = 1, A2, A3, ..., An, beginning from a unit and in continued proportion, so that A1 : A2 = A2 : A3 = ... = An-1 : An. We must show that any le"
+}

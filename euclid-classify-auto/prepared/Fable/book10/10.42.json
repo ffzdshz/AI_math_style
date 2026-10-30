@@ -1,0 +1,48 @@
+{
+  "proposition": "10.42",
+  "book": 10,
+  "statement": "A binomial straight line is divided into its terms at one point only.",
+  "heath_proof": "Let AB be a binomial straight line divided into its terms at C; therefore AC, CB are rational straight lines commensurable in square only. [X. 36] I say that AB is not divided at another point into two rational straight lines commensurable in square only. For, if possible, let it be divided at D also, so that AD, DB are also rational straight lines commensurable in square only. It is then manifest that AC is not the same with DB. For, if possible, let it be so. Then AD will also be the same as CB, and, as AC is to CB, so will BD be to DA; thus AB will be divided at D also in the same way as by the division at C: which is contrary to the hypothesis. Therefore AC is not the same with DB. For this reason also the points C, D are not equidistant from the point of bisection. Therefore that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, because both the squares on AC, CB together with twice the rectangle AC, CB, and the squares on AD, DB together with twice the rectangle AD, DB, are equal to the square on AB. [II. 4] But the squares on AC, CB differ from the squares on AD, DB by a rational area, for both are rational; therefore twice the rectangle AD, DB also differs from twice the rectangle AC, CB by a rational area, though they are medial [X. 21]: which is absurd, for a medial area does not exceed a medial by a rational area. [x. 26] Therefore a binomial straight line is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.42\n**Statement:** A binomial straight line is divided into its terms at one point only.\n\n**Step 1.** Let AB be a binomial straight line divided into its terms at C. By the definition of a binomial (10.36), AC and CB are rational straight lines commensurable in square only; let ρ denote the assigned rational straight line with respect to which \"rational\" is understood (D10.1.3). Suppose, if possible, that AB is also divided into its terms at another point D, so that AD, DB are likewise rational straight lines commensurable in square only and the division at D is different from the division at C, i.e. the terms AD, DB are not the same straight lines as the terms AC, CB. In particular AD is not equal to AC (otherwise D would coincide with C), and AD is not equal to CB (otherwise DB, the remainder of AB after AD, would be equal to AC, the remainder of AB after CB (CN3), and AD, DB would be the very terms CB, AC of the division at C taken in the other order, which is the same division).\n\n**Step 2.** The hypotheses on C and D are the same, so we may suppose that D lies between A and C (otherwise interchange the letters C and D). Then AC is made up of AD and DC, and DB is made up of DC and CB.\n\n**Step 3.** The rectangle rect(AC, CB) is not equal to the rectangle rect(AD, DB). For suppose rect(AC, CB) = rect(AD, DB). Then the rectangle contained by the extremes AC, CB is equal to the rectangle contained by the means AD, DB, so the four straight lines are proportional (6.16): AC : AD = DB : CB, that is, (AD + DC) : AD = (CB + DC) : CB. Separando (5.17), DC : AD = DC : CB. Magnitudes to which the same magnitude has the same ratio are equal (5.9); hence AD = CB, contrary to Step 1. Therefore rect(AC, CB) ≠ rect(AD, DB).\n\n**Step 4.** Since AB is cut at C, sq(AB) = sq(AC) + sq(CB) + 2·rect(AC, CB) (2.4); and since AB is cut at D, sq(AB) = sq(AD) + sq(DB) + 2·rect(AD, DB) (2.4). Hence (CN1) sq(AC) + sq(CB) + 2·rect(AC, CB) = sq(AD) + sq(DB) + 2·rect(AD, DB). Write P = sq(AC) + sq(CB), Q = sq(AD) + sq(DB), M = 2·rect(AC, CB), N = 2·rect(AD, DB), so that P + M = Q + N. By Step 3, M ≠ N; let the greater of M, N exceed the less by the area K. If N = M + K, then P + M = Q + M + K, and subtracting M from both sides (CN3) gives P = Q + K; if M = N + K, the same argument gives Q = P + K. Thus P and Q are unequal, and the greater of the two sums of squares exceeds the less by the same area K by which the greater of the doubled rectangles exceeds the less.\n\n**Step 5.** P = sq(AC) + sq(CB) is a rational area. AC is rational, i.e. commensurable with ρ either in length and in square or in square only (D10.1.3); in either case AC is commensurable in square with ρ, so sq(AC) and sq(ρ) are measured by a common area (D10.1.2), i.e. sq(AC) is commensurable with sq(ρ) (D10.1.1) and therefore rational (D10.1.4). Likewise sq(CB) is rational. Again, AC and CB are commensurable in square, so sq(AC) and sq(CB) are commensurable (D10.1.2). When two commensurable magnitudes are added, the whole is commensurable with each of them (10.15); so P is commensurable with sq(AC). Since sq(AC) is commensurable with sq(ρ), P is commensurable with sq(ρ) (10.12), i.e. P is rational (D10.1.4). In the same way Q = sq(AD) + sq(DB) is rational.\n\n**Step 6.** K is a rational area. P and Q are each commensurable with sq(ρ), hence commensurable with one another (10.12). By Step 4 the greater of P, Q is the whole made up of the less together with K. Since the whole is commensurable with one of its parts (the lesser sum), the two parts are commensurable with one another (10.15); so K is commensurable with the lesser sum, which is commensurable with sq(ρ). Hence K is commensurable with sq(ρ) (10.12), i.e. K is rational (D10.1.4).\n\n**Step 7.** M and N are medial areas. rect(AC, CB) is contained by rational straight lines commensurable in square only, so it is a medial area, being equal to the square on a medial straight line (10.21). Its double M = rect(AC, CB) + rect(AC, CB) is measured by rect(AC, CB), so M is commensurable with rect(AC, CB) (D10.1.1); and an area commensurable with a medial area is medial (10.23, Porism). Therefore M is medial. In the same way, since AD, DB are rational straight lines commensurable in square only, rect(AD, DB) is medial (10.21) and its double N is medial (D10.1.1, 10.23).\n\n**Step 8.** By Step 4 the greater of the areas M, N exceeds the less by K; by Step 7 both M and N are medial; and by Step 6 K is rational. Thus a medial area exceeds a medial area by a rational area, which is impossible (10.26). This contradiction shows that no point D other than C divides AB into rational straight lines commensurable in square only forming a different pair of terms. Therefore a binomial straight line is divided into its terms at one point only. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.21, 10.23, 10.26, 10.36, 2.4, 5.17, 5.9, 6.16, CN1, CN3, D10.1.1, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.21, 10.36, 2.4\n**Jaccard:** 0.188 — AI adds ['10.12', '10.15', '10.23', '10.26', '5.17', '5.9', '6.16', 'CN1', 'CN3', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.23",
+    "10.26",
+    "10.36",
+    "2.4",
+    "5.17",
+    "5.9",
+    "6.16",
+    "CN1",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.21",
+    "10.36",
+    "2.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "10.23",
+    "10.26",
+    "5.17",
+    "5.9",
+    "6.16",
+    "CN1",
+    "CN3",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.188,
+  "proof_summary": "**Step 1.** Let AB be a binomial straight line divided into its terms at C. By the definition of a binomial (10.36), AC and CB are rational straight lines commensurable in square only; let ρ denote th"
+}

@@ -1,0 +1,71 @@
+{
+  "proposition": "12.10",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cone has circular base ABCD and apex E; cylinder has same base ABCD and equal height h",
+      "type": "solid geometry setup"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Square ABCD is inscribed in circle ABCD; inscribed square is greater than half the circle",
+      "type": "polygon-circle containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Inscribed polygon P obtained by successive arc bisection lies inside circle; circle - area(P) < S",
+      "type": "polygon-circle containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Prism on polygon P with height h is inscribed in the cylinder",
+      "type": "solid containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Pyramid with base P and apex E is inscribed in the cone",
+      "type": "solid containment"
+    },
+    {
+      "step": "Step 7",
+      "claim": "cylinder - prism(P) equals the solid above the circular segments between P and the circle, at the same height",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Polygon P decomposed into triangles T_i; prism on P decomposes into prisms on T_i; pyramid on P decomposes into pyramids on T_i",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Each triangular prism on T_i decomposes into three equal pyramids (by 12.7); these have the same height as pyramid(T_i, E); so prism(T_i) = 3 * pyramid(T_i, E)",
+      "type": "solid decomposition / volume equality"
+    },
+    {
+      "step": "Step 13",
+      "claim": "pyramid(P, E) is inscribed in the cone, so cone > pyramid(P, E)",
+      "type": "solid containment"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Circumscribed polygon Q about circle obtained by tangent lines; area(Q) - circle < S",
+      "type": "polygon-circle containment"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Prism on Q circumscribes the cylinder; pyramid(Q, E) circumscribes the cone",
+      "type": "solid containment"
+    },
+    {
+      "step": "Step 20",
+      "claim": "Cone is inscribed in pyramid(Q, E), so pyramid(Q, E) > cone",
+      "type": "solid containment"
+    }
+  ],
+  "configuration_map": "3D configuration: Base plane contains circle ABCD. Apex E is at the top of the cone at height h above the center of the circle. Cylinder extends from circle ABCD upward to height h. In Case 1: Inscribed polygon P lies inside circle ABCD in the base plane. Prism(P) extends from P upward to height h, entirely contained within the cylinder. Pyramid(P,E) connects base P to apex E, entirely contained within the cone. Each triangle T_i of P generates a triangular prism of height h (inside the cylinder's prism) and a pyramid to E (inside the cone's pyramid). In Case 2: Circumscribed polygon Q contains circle ABCD in the base plane. Prism(Q) extends from Q upward to height h, containing the cylinder. Pyramid(Q,E) connects base Q to apex E, containing the cone. Throughout: E remains at fixed height h above center; P stays inside circle; Q stays outside circle. Heights of all prisms and pyramids equal h (the common height of cone and cylinder).",
+  "pass_reason": "All spatial claims are mutually consistent. The inscribed/circumscribed containment relationships (polygon inside/outside circle implies solid inside/outside cone/cylinder) are geometrically correct and compatible with each other. The height equality (cone height = cylinder height = prism height = pyramid height) is maintained consistently throughout. The decomposition of prisms into pyramids via 12.7 and the volume comparison via 12.5 are applied in a spatially valid manner. No angle decompositions, no interior/exterior point arguments, and no ray ordering claims appear -- the primary error patterns from the protocol do not apply to this volumetric method-of-exhaustion proof."
+}

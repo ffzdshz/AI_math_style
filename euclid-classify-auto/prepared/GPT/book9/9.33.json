@@ -1,0 +1,32 @@
+{
+  "proposition": "9.33",
+  "book": 9,
+  "statement": "If a number have its half odd, it is even-times odd only.",
+  "heath_proof": "For let the number A have its half odd; I say that A is even-times odd only. Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times. [VII. Def. 9] I say next that it is also even-times odd only. For, if A is even-times even also, it will be measured by an even number according to an even number; [VII. Def. 8] so that the half of it will also be measured by an even number though it is odd: which is absurd. Therefore A is even-times odd only.",
+  "ai_proof_text": "9.33\n**Statement:** If a number have its half odd, it is even-times odd only.\n\n**Step 1.** Let N be a number whose half H is odd. Then N = H + H, so N is even. [D7.6]\n\n**Step 2.** By the definition of multiplication, twice H makes N; by commutativity of multiplication, H times the dyad also makes N. Thus the dyad, which is even, measures N according to the odd number H. Therefore N is even-times odd. [D7.15, 7.16, D7.6, D7.9]\n\n**Step 3.** To establish “only,” we exclude an even-times even representation. We choose to halve the count of equal even summands, since this leads directly to the sum-of-even-numbers result. Suppose, then, that N is also even-times even. There would be an even number E measuring N according to an even number K; thus N consists of K copies of E. [D7.8, D7.15]\n\n**Step 4.** Since K is even, divide these copies into two groups containing equal numbers of copies. Their sums are equal by repeated addition of equals, and together they constitute N; hence each group sums to its half H. If a group contains just one copy, H equals the even number E. Otherwise, H is a sum of even numbers and is therefore even. [D7.6, CN2, 9.21]\n\n**Step 5.** This contradicts the hypothesis that H is odd, for an odd number is not divisible into two equal parts. Consequently N is not even-times even. Since Step 2 established that N is even-times odd, N is even-times odd only. [D7.6, D7.7, D7.8, D7.9]\n\n**USED:** 7.16, 9.21, CN2, D7.15, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8, D7.9\n**Jaccard:** 0.250 — AI adds ['7.16', '9.21', 'CN2', 'D7.15', 'D7.6', 'D7.7']",
+  "ai_used": [
+    "7.16",
+    "9.21",
+    "CN2",
+    "D7.15",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8",
+    "D7.9"
+  ],
+  "ai_only": [
+    "7.16",
+    "9.21",
+    "CN2",
+    "D7.15",
+    "D7.6",
+    "D7.7"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let N be a number whose half H is odd. Then N = H + H, so N is even. [D7.6]  **Step 2.** By the definition of multiplication, twice H makes N; by commutativity of multiplication, H times t"
+}

@@ -1,0 +1,51 @@
+{
+  "proposition": "13.2",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB between A and B, so AB = AC + BC",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CD is a separate line segment with CD = 2*BC",
+      "type": "segment_construction"
+    },
+    {
+      "step": "Step 8",
+      "claim": "CD is implicitly cut at a point dividing it into segments of lengths AC and CD-AC (requires AC < CD)",
+      "type": "segment_division"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AB > CD (from sq(AB) = 5*sq(BC) > 4*sq(BC) = sq(CD))",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AC > BC (from AB > 2*BC)",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AC < CD (from AB < 3*BC)",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AC > CD - AC (from AB > 2*BC, so AB-BC > 3*BC-AB)",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AC is the greater segment when CD is cut in extreme and mean ratio",
+      "type": "segment_ratio"
+    }
+  ],
+  "configuration_map": "Line AB: Points A, C, B are collinear with C between A and B. AC + BC = AB, with sq(AB) = 5*sq(BC). Line CD: A separate segment with CD = 2*BC. Size hierarchy: AB > CD > AC > BC > CD-AC > 0. Numerically with BC=1: AB=sqrt(5), AC=sqrt(5)-1 approx 1.236, CD=2, CD-AC=3-sqrt(5) approx 0.764. The ratio AC/CD = (sqrt(5)-1)/2 approx 0.618 (golden ratio conjugate), confirming AC is the greater segment of CD cut in extreme and mean ratio. All points remain on their respective line segments throughout the proof; no angles, triangles, circles, or complex geometric configurations are involved.",
+  "pass_reason": "The proof is primarily algebraic, manipulating squares and rectangles (areas) via Book 2 propositions and converting to proportions via 6.17. The only spatial configuration is the simple arrangement of collinear points on two line segments (AB and CD). All length comparisons and segment divisions are mutually consistent: AC < CD (allowing the division of CD), AC > CD-AC (confirming AC is the greater segment), and the area equality sq(AC) = CD*(CD-AC) correctly yields the extreme and mean ratio proportion. No angle decompositions, inside/outside claims, or complex geometric configurations are present that could create contradictions."
+}

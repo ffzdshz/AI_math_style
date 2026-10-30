@@ -1,0 +1,53 @@
+{
+  "proposition": "4.7",
+  "book": 4,
+  "statement": "About a given circle to circumscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to circumscribe a square about the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and through the points A, B, C, D let FG, GH, HK, KF be drawn touching the circle ABCD. [III. 16] Then, since FG touches the circle ABCD, and EA has been joined from the centre E to the point of contact at A, therefore the angles at A are right. [III. 18]  For the same reason the angles at the points B, C, D are also right. Now, since the angle AEB is right, and the angle EBG is also right, therefore GH is parailel to AC. [I. 28]  For the same reason AC is also parallel to FK, so that GH is also parallel to FK. [I. 30]  Similarly we can prove that each of the straight lines GF, HK is parallel to BED. Therefore GK, GC, AK, FB, BK are parallelograms; therefore GF is equal to HK, and GH to FK. [I. 34] And, since AC is equal to BD, and AC is also equal to each of the straight lines GH, FK, while BD is equal to each of the straight lines GF, HK, [I. 34]therefore the quadrilateral FGHK is equilateral. I say next that it is also right-angled. For, since GBEA is a parallelogram, and the angle AEB is right, therefore the angle AGB is also right. [I. 34] Similarly we can prove that the angles at H, K, F are also right. Therefore FGHK is right-angled. But it was also proved equilateral; therefore it is a square; and it has been circumscribed about the circle ABCD. Therefore about the given circle a square has been circumscribed.",
+  "ai_proof_text": "4.7\n**Statement:** About a given circle to circumscribe a square.\n\n**Step 1.** Let the given circle have centre O, found by 3.1. Choose A on its circumference, join AO, and produce it through O to meet the circumference again at C [P1, P2]. Through O draw the perpendicular to AC, meeting the circumference at B and D, labelled so that A, B, C, D occur successively around the circle [1.11, P2]. Thus AC and BD are perpendicular diameters [D1.17, D1.10].\n\n**Step 2.** At A and C draw straight lines a and c perpendicular to AC; at B and D draw straight lines b and d perpendicular to BD [1.11]. Each of these lines, being perpendicular to a diameter at its extremity, falls outside the circle except at that extremity, and therefore touches the circle there [3.16, D3.2]. Path choice: constructing these perpendiculars makes 3.16 immediately applicable, without a separate tangent construction.\n\n**Step 3.** The lines a, c, and BD are parallel to one another, since they are perpendicular to AC. Likewise b, d, and AC are parallel to one another, since they are perpendicular to BD [1.28, using its criterion of interior angles on the same side equal to two right angles].\n\n**Step 4.** The lines a and b meet. For otherwise they would be parallel [D1.23]; since b is parallel to AC, this would make a parallel to AC [1.30], contrary to their intersection at A [D1.23]. The same argument applies to every consecutive pair. Denote their intersections by E = a ∩ b, F = b ∩ c, G = c ∩ d, and H = d ∩ a. A line parallel to a diameter cannot cross that diameter [D1.23]. Hence a and c remain on the opposite sides of BD containing A and C, while b and d remain on the opposite sides of AC containing B and D. Consequently A lies between H and E, B between E and F, C between F and G, and D between G and H.\n\n**Step 5.** By the parallelisms in Step 3, OAEB, OBFC, OCGD, and ODHA are parallelograms. Their angles at O are right because the diameters are perpendicular [D1.10]. Opposite angles of a parallelogram are equal [1.34]; therefore the angles at E, F, G, and H are right. These are the four interior angles of EFGH.\n\n**Step 6.** Opposite sides of those same parallelograms are equal [1.34]. Thus AE = OB and EB = OA; BF = OC and FC = OB; CG = OD and GD = OC; DH = OA and HA = OD. The radii OA, OB, OC, and OD are equal [D1.15]. Therefore all eight segments AE, EB, BF, FC, CG, GD, DH, and HA are equal [CN1].\n\n**Step 7.** Since EF = EB + BF, FG = FC + CG, GH = GD + DH, and HE = HA + AE, the four sides EF, FG, GH, and HE are equal by addition of equals [CN2]. Together with Step 5, this shows that EFGH is an equilateral, right-angled quadrilateral, hence a square [D1.22]. Its sides HE, EF, FG, and GH touch the given circle at A, B, C, and D respectively, by Steps 2 and 4. Therefore EFGH is a square circumscribed about the given circle [D4.4], as required.\n\n**USED:** 1.11, 1.28, 1.30, 1.34, 3.1, 3.16, CN1, CN2, D1.10, D1.15, D1.17, D1.22, D1.23, D3.2, D4.4, P1, P2\n**Human refs (from References field):** 1.28, 1.30, 1.34, 3.16, 3.18\n**Jaccard:** 0.222 — AI adds ['1.11', '3.1', 'CN1', 'CN2', 'D1.10', 'D1.15', 'D1.17', 'D1.22', 'D1.23', 'D3.2', 'D4.4', 'P1', 'P2']; Human adds ['3.18']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.30",
+    "1.34",
+    "3.1",
+    "3.16",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D1.23",
+    "D3.2",
+    "D4.4",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.30",
+    "1.34",
+    "3.16",
+    "3.18"
+  ],
+  "ai_only": [
+    "1.11",
+    "3.1",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D1.23",
+    "D3.2",
+    "D4.4",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "3.18"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let the given circle have centre O, found by 3.1. Choose A on its circumference, join AO, and produce it through O to meet the circumference again at C [P1, P2]. Through O draw the perpend"
+}

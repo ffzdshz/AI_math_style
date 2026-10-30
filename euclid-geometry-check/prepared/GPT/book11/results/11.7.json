@@ -1,0 +1,46 @@
+{
+  "proposition": "11.7",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Lines ℓ and m are parallel and lie in a common plane Π; they do not meet even when produced (D1.23)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A lies on ℓ; B lies on m; B does not lie on ℓ",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AB and ℓ are distinct lines meeting at A, so they determine a plane Σ (by 11.2)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Both Σ and Π contain ℓ; if Σ ≠ Π, their common section is a straight line (by 11.3), which must be ℓ itself",
+      "type": "plane_intersection"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B is in Σ (via AB ⊂ Σ) and B is in Π (via m ⊂ Π), so B lies on the intersection line ℓ",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "B on ℓ contradicts B ∉ ℓ from Step 1, so the assumption Σ ≠ Π is false",
+      "type": "contradiction_derivation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Σ = Π, hence AB lies in Π alongside both parallel lines",
+      "type": "plane_membership"
+    }
+  ],
+  "configuration_map": "Configuration involves two parallel lines ℓ and m in a plane Π, with points A on ℓ and B on m. The line AB and line ℓ share exactly one point (A) and are distinct (since B is on AB but not on ℓ), so by 11.2 they determine a plane Σ. The proof shows by contradiction that Σ must equal Π: if they differed, 11.3 would make their intersection the line ℓ, forcing B onto ℓ (since B belongs to both planes), contradicting B being on m but not on ℓ. All plane membership and point position claims are consistent throughout.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof involves only plane membership and line intersection arguments in solid geometry — no angle decompositions, no interior/exterior point arguments, no circle claims. The contradiction argument is valid: assuming Σ ≠ Π correctly derives B ∈ ℓ (via 11.3 and dual plane membership), which contradicts B ∉ ℓ. Each application of a cited proposition (11.2, 11.3, D1.23) is used in a configuration that satisfies its hypotheses."
+}

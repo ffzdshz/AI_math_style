@@ -1,0 +1,13 @@
+{
+  "proposition": "8.9",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone: establish that the given progression is the least (via VIII.1/8.1), show the endpoints are perfect n-th powers of coprime bases, and then construct geometric sequences from each endpoint to the unit. The key difference is citation depth: Heath cites VIII.2 to construct the least chains of increasing length from the base ratio, while the AI re-derives this construction inline using Book 7 propositions (7.16, 7.17, 7.22, 7.24, 7.33). Heath's proof of VIII.2 itself uses VII.17, VII.22, VII.27, and VIII.1, several of which appear among the AI's citations, confirming that the AI is performing 8.2's work at a lower level of abstraction rather than taking a genuinely different path. The definitions in ai_only (D7.1, D7.12, D7.15) are over-citation. Since the key intermediate conclusions are the same and the difference is only in the depth at which supporting steps are cited, this is a granularity difference.",
+  "jaccard": 0.182,
+  "ai_citations": "7.16|7.17|7.22|7.24|7.33|8.1|D7.1|D7.12|D7.15|D7.20",
+  "heath_citations": "8.1|8.2|D7.20",
+  "ai_only": "7.16|7.17|7.22|7.24|7.33|D7.1|D7.12|D7.15",
+  "heath_only": "8.2",
+  "audit_record": ""
+}

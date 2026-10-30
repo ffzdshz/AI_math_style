@@ -1,0 +1,62 @@
+{
+  "proposition": "6.15",
+  "run": "RunA",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1-2 (construction)",
+      "claim": "CA and AD are placed in a straight line, so C-A-D are collinear",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EA and AC are in a straight line (E-A-C collinear) by application of 1.13 and 1.14",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BE is joined as a line segment",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Bases CA and AE of triangles ABC and ABE lie on the same straight line CE, enabling application of 6.1",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangles ABC and ABE have the same height from shared vertex B to line CE",
+      "type": "same-height"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Bases BA and AD of triangles ABE and ADE lie on the same straight line BD (B-A-D collinear), enabling application of 6.1",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles ABE and ADE have the same height from shared vertex E to line BD",
+      "type": "same-height"
+    }
+  ],
+  "configuration_map": "Configuration: Two triangles ABC and ADE sharing vertex A, with angle BAC = angle DAE. Construction places C-A-D on a straight line. Point B is on one side of line CD, point E on the opposite side. The AI claims E-A-C are collinear (Step 2), but the correct conclusion from 1.13 and 1.14 is that E-A-B are collinear (as Heath establishes). The AI then uses triangle ABE as a ratio reference via 6.1 in Steps 4-5, but this requires two additional false collinearities (E-A-C in Step 4, B-A-D in Step 5). In the correct geometry, triangle ABE is degenerate (E, A, B collinear) and cannot serve as a reference triangle.",
+  "contradictory_steps": [
+    "Step 2",
+    "Step 5"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 2",
+    "claim": "EA and AC are in a straight line (E-A-C collinear). Combined with the construction C-A-D collinear, this forces E, C, A, D all onto one line, making triangle ADE degenerate (zero area).",
+    "required_by": "Step 4 application of 6.1 (triangles ABC and ABE with bases on line CE)"
+  },
+  "spatial_claim_2": {
+    "step": "Step 5",
+    "claim": "BA and AD lie on the same straight line BD (B-A-D collinear). Combined with the construction C-A-D collinear, this forces B onto line CD, making triangle ABC degenerate (zero area).",
+    "required_by": "Step 5 application of 6.1 (triangles ABE and ADE with bases on line BD)"
+  },
+  "contradiction": "The AI's Step 2 incorrectly concludes EA and AC are in a straight line; the correct conclusion from 1.13 and 1.14 (as Heath shows) is that EA and AB are in a straight line. The AI's wrong collinearity (E-A-C), combined with the construction (C-A-D collinear), forces all of E, C, A, D onto one line, making triangle ADE degenerate. Step 5 then requires B-A-D collinear, which combined with C-A-D collinear forces B onto line CD, making triangle ABC degenerate. Both triangles becoming degenerate contradicts the premise of two proper triangles with equal positive area. In the correct geometry (E-A-B collinear), the AI's reference triangle ABE is itself degenerate, so the entire proof strategy of using triangle ABE as a ratio intermediary via 6.1 is fundamentally unsound.",
+  "fixable": true,
+  "fix_note": "Use the correct collinearity E-A-B (not E-A-C) from 1.14, then adopt Heath's approach: join BD and use triangle BAD as the reference triangle. With C-A-D collinear, 6.1 gives CAB:BAD = CA:AD (shared vertex B, bases on line CD). With E-A-B collinear, 6.1 gives EAD:BAD = EA:AB (shared vertex D, bases on line EB). This avoids the degenerate triangle ABE entirely."
+}

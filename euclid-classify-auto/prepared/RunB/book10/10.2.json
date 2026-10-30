@@ -1,0 +1,23 @@
+{
+  "proposition": "10.2",
+  "book": 10,
+  "statement": "If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.",
+  "heath_proof": "For, there being two unequal magnitudes AB, CD, and AB being the less, when the less is continually subtracted in turn from the greater, let that which is left over never measure the one before it; I say that the magnitudes AB, CD are incommensurable. For, if they are commensurable, some magnitude will measure them. Let a magnitude measure them, if possible, and let it be E; let AB, measuring FD, leave CF less than itself, let CF measuring BG, leave AG less than itself, and let this process be repeated continually, until there is left some magnitude which is less than E. Suppose this done, and let there be left AG less than E. Then, since E measures AB, while AB measures DF, therefore E will also measure FD. But it measures the whole CD also; therefore it will also measure the remainder CF. But CF measures BG; therefore E also measures BG. But it measures the whole AB also; therefore it will also measure the remainder AG, the greater the less: which is impossible. Therefore no magnitude will measure the magnitudes AB, CD; therefore the magnitudes AB, CD are incommensurable.",
+  "ai_proof_text": "10.2\n**Statement:** If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.\n\n**Step 1.** Let A and B be two unequal magnitudes, with A greater than B, such that when the less is continually subtracted in turn from the greater, the remainder never measures the magnitude before it. We must show that A and B are incommensurable.\n\n**Step 2.** Suppose, for the sake of contradiction, that A and B are commensurable. Then by the definition of commensurable magnitudes (D10.1.1), there exists some magnitude C that measures both A and B.\n\n**Step 3.** Since C measures both A and B, and B is continually subtracted from A, the remainder after subtracting B from A as many times as possible is some magnitude less than B. Call this remainder A1. Since C measures A and C measures B, and A1 = A - nB for some whole number n, C also measures A1 (CN3, applied repeatedly: if equals are subtracted from equals, the remainders are equal; since C measures A and C measures nB, C measures A1).\n\n**Step 4.** Now the process continues: B has A1 subtracted from it repeatedly, leaving a remainder B1 less than A1. Since C measures B and C measures A1, by the same reasoning C measures B1.\n\n**Step 5.** At each stage of the anthyphairesis, the remainder is measured by C, because C measures both of the magnitudes at the previous stage. Thus every remainder in this process is measured by C.\n\n**Step 6.** Now, the successive remainders A1, B1, A2, B2, ... form a strictly decreasing sequence of positive magnitudes, each less than the one two steps before it. Since C is a fixed positive magnitude and C measures each remainder, each remainder is at least as large as C (for C to measure a magnitude, that magnitude must be at least C, since a part cannot exceed its whole by D5.1).\n\n**Step 7.** However, by Proposition 10.1, since at each step of the anthyphairesis we subtract from the greater a magnitude that is at least half of it (indeed we subtract a quantity at least equal to the remainder, which is the smaller magnitude), the successive remainders, when this process is continued, will eventually become less than C.\n\n**Step 8.** But this contradicts Step 6, which established that every remainder must be at least as great as C. We have a remainder that is both measured by C (hence at least C) and less than C, which is impossible.\n\n**Step 9.** Therefore the assumption in Step 2 is false: A and B cannot be commensurable. Hence A and B are incommensurable (D10.1.1), which was to be proved.\n\n**USED:** 10.1, CN3, D10.1.1, D5.1\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['10.1', 'CN3', 'D10.1.1', 'D5.1']",
+  "ai_used": [
+    "10.1",
+    "CN3",
+    "D10.1.1",
+    "D5.1"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "10.1",
+    "CN3",
+    "D10.1.1",
+    "D5.1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be two unequal magnitudes, with A greater than B, such that when the less is continually subtracted in turn from the greater, the remainder never measures the magnitude before "
+}

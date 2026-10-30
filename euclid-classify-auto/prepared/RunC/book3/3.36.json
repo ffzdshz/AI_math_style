@@ -1,0 +1,38 @@
+{
+  "proposition": "3.36",
+  "book": 3,
+  "statement": "If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.",
+  "heath_proof": "For let a point D be taken outside the circle ABC, and from D let the two straight lines DCA, DB fall on the circle ABC; let DCA cut the circle ABC and let BD touch it; I say that the rectangle contained by AD, DC is equal to the square on DB. Then DCA is either through the centre or not through the centre. First let it be through the centre, and let F be the centre of the circle ABC; let FB be joined; therefore the angle FBD is right. [III. 18]  And, since AC has been bisected at F, and CD is added to it, the rectangle AD, DC together with the square on FC is equal to the square on FD. [II. 6] But FC is equal to FB; therefore the rectangle AD, DC together with the square on FB is equal to the square on FD. And the squares on FB, BD are equal to the square on FD; [I. 47] therefore the rectangle AD, DC together with the square on FB is equal to the squares on FB, BD. Let the square on FB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on the tangent DB. Again, let DCA not be through the centre of the circle ABC; let the centre E be taken, and from E let EF be drawn perpendicular to AC; let EB, EC, ED be joined. Then the angle EBD is right. [III. 18] And, since a straight line EF through the centre cuts a straight line AC not through the centre at right angles, it also bisects it; [III. 3]therefore AF is equal to FC. Now, since the straight line AC has been bisected at the point F, and CD is added to it, the rectangle contained by AD, DC together with the square on FC is equal to the square on FD. [II. 6] Let the square on FE be added to each; therefore the rectangle AD, DC together with the squares on CF, FE is equal to the squares on FD, FE. But the square on EC is equal to the squares on CF, FE, for the angle EFC is right; [I. 47] and the square on ED is equal to the squares on DF, FE; therefore the rectangle AD, DC together with the square on EC is equal to the square on ED. And EC is equal to EB; therefore the rectangle AD, DC together with the square on EB is equal to the square on ED. But the squares on EB, BD are equal to the square on ED, for the angle EBD is right; [I. 47] therefore the rectangle AD, DC together with the square on EB is equal to the squares on EB, BD. Let the square on EB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on DB.",
+  "ai_proof_text": "3.36\n**Statement:** If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.\n\n**Step 1.** Let the circle have center F, let D be a point outside it, let DCA be a straight line from D cutting the circle at C (on the convex circumference, nearer to D) and at A (on the far side), and let DB be a tangent to the circle touching it at B. We must show that the rectangle contained by DA and DC equals the square on DB.\n\n**Step 2.** Join FB, FC, and FD [P1].\n\n**Step 3.** Since DB touches the circle at B, and FB is joined from the center F to the point of contact B, angle FBD is a right angle [3.18].\n\n**Step 4.** Case 1: Suppose the secant DCA passes through the center F, so that CA is a diameter. Then F is the midpoint of CA, meaning CF = FA [D1.15, D1.17]. The points lie in order D, C, F, A along the line.\n\n**Step 5.** Since CA is bisected at F and extended to D, by Proposition 2.6: the rectangle DA times DC plus the square on CF equals the square on DF. That is, rect(DA, DC) + CF² = DF² [2.6].\n\n**Step 6.** In right triangle DFB (right angle at B from Step 3), by the Pythagorean theorem: DF² = DB² + BF² [1.47].\n\n**Step 7.** Since BF and CF are both radii of the circle, BF = CF [D1.15].\n\n**Step 8.** From Steps 5 and 6: rect(DA, DC) + CF² = DB² + BF². Since CF = BF, subtracting CF² from both sides yields rect(DA, DC) = DB² [CN3].\n\n**Step 9.** Case 2: Suppose the secant DCA does not pass through the center F. Draw FG perpendicular from F to chord CA, meeting CA at G [1.12].\n\n**Step 10.** Since FG is drawn from the center perpendicular to chord CA, it bisects CA, so CG = GA [3.3].\n\n**Step 11.** Since CA is bisected at G and extended to D, by Proposition 2.6: rect(DA, DC) + GC² = GD² [2.6].\n\n**Step 12.** Add FG² to both sides: rect(DA, DC) + GC² + FG² = GD² + FG² [CN2].\n\n**Step 13.** In right triangle FGC (right angle at G), by the Pythagorean theorem: FC² = FG² + GC² [1.47].\n\n**Step 14.** In right triangle FGD (right angle at G), by the Pythagorean theorem: FD² = FG² + GD² [1.47].\n\n**Step 15.** Substituting Steps 13 and 14 into Step 12: rect(DA, DC) + FC² = FD² [CN1].\n\n**Step 16.** In right triangle FBD (right angle at B from Step 3), by the Pythagorean theorem: FD² = FB² + BD² [1.47].\n\n**Step 17.** From Steps 15 and 16: rect(DA, DC) + FC² = FB² + BD² [CN1].\n\n**Step 18.** Since FB and FC are both radii of the circle, FB = FC [D1.15], so FB² = FC².\n\n**Step 19.** Subtracting FC² from both sides of Step 17: rect(DA, DC) = BD² [CN3].\n\n**Step 20.** Therefore in both cases, the rectangle contained by the whole secant DA and the external segment DC equals the square on the tangent DB, which was to be proved.\n\n**USED:** 1.12, 1.47, 2.6, 3.18, 3.3, CN1, CN2, CN3, D1.15, D1.17, P1\n**Human refs (from References field):** 1.47, 2.6, 3.18, 3.3\n**Jaccard:** 0.364 — AI adds ['1.12', 'CN1', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.6",
+    "3.18",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.6",
+    "3.18",
+    "3.3"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let the circle have center F, let D be a point outside it, let DCA be a straight line from D cutting the circle at C (on the convex circumference, nearer to D) and at A (on the far side), "
+}

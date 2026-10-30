@@ -1,0 +1,61 @@
+{
+  "proposition": "11.34",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Perpendicular erected at A to the base plane ABCD, with A1 at distance h1 and A2 at distance h2 on the same perpendicular ray",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Right parallelepipeds R1 and R2 completed on base ABCD with all upright edges perpendicular to the base plane",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 2",
+      "claim": "R1 has height h1 (edge AA1) and R2 has height h2 (edge AA2)",
+      "type": "height_assignment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "R1 = S1 by 11.31: equal bases F1 and same perpendicular height h1, valid regardless of obliqueness of S1",
+      "type": "solid_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "R2 and S2 have the same perpendicular height h2, so R2:S2 = F1:F2 by 11.32",
+      "type": "proportion_from_equal_heights"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Lateral faces L1 = ABB1A1 and L2 = ABB2A2 lie in the same plane (plane through AB and the perpendicular direction)",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Opposite lateral faces (along CD) lie in a common plane parallel to the plane of L1/L2",
+      "type": "parallel_planes"
+    },
+    {
+      "step": "Step 4",
+      "claim": "R1 and R2 have the same height in the reoriented view (perpendicular distance from AB-plane to CD-plane depends only on shared base ABCD)",
+      "type": "equal_heights_reoriented"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AB is perpendicular to upright line AA1/AA2 (since upright edges are perpendicular to the base plane and AB lies in the base plane)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "L1 and L2 are rectangles; when AA1 and AA2 are taken as bases, both have common height AB, so L2:L1 = h2:h1 by 6.1",
+      "type": "area_proportion"
+    }
+  ],
+  "configuration_map": "Base parallelogram ABCD = F1 is fixed. At vertex A, a single perpendicular line to the base plane is erected. Points A1 (at distance h1) and A2 (at distance h2) lie on the same perpendicular ray from A. Corresponding perpendicular lines through B, C, D carry points B1/B2, C1/C2, D1/D2 at matching heights. Right parallelepiped R1 = ABCDA1B1C1D1 has base ABCD and height h1. Right parallelepiped R2 = ABCDA2B2C2D2 has base ABCD and height h2. R1 is contained inside R2 when h1 < h2 (or vice versa). The lateral face plane through AB and the perpendicular direction contains both L1 = ABB1A1 and L2 = ABB2A2; the parallel plane through DC contains the opposite faces. The perpendicular distance between these parallel planes equals the altitude of parallelogram ABCD from AB to DC, which is the same for both R1 and R2. All spatial relationships are determined by the single base ABCD and the single perpendicular direction.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places two right parallelepipeds on a shared base with different heights along the same perpendicular direction. The reorientation argument (treating lateral faces as bases for 11.32) is valid because: (1) L1 and L2 share a common plane, (2) opposite faces share a parallel plane, and (3) the distance between these planes is identical for both solids. The perpendicularity claim AB perpendicular to AA1 follows directly from the right parallelepiped construction. No angle decomposition issues arise since the proof works entirely through volume proportions (11.31, 11.32) and area proportions (6.1), with algebraic proportion chaining (5.7, 5.9, 5.11)."
+}

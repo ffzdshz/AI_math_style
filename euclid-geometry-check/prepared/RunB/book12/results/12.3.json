@@ -1,0 +1,86 @@
+{
+  "proposition": "12.3",
+  "run": "RunB",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "E, F, G are midpoints of AB, AC, AD; H, K, L are midpoints of BC, CD, BD respectively",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EF parallel to BC and EF = (1/2)BC (midline of triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EH parallel to AC and EH = (1/2)AC (midline of triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FH parallel to AB and FH = (1/2)AB (midline of triangle ABC)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EG parallel to BD, EL parallel to AD, GL parallel to AB (midlines of triangle ABD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "FK parallel to AD, FG parallel to CD, GK parallel to AC (midlines of triangle ACD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HK parallel to BD, KL parallel to BC, HL parallel to CD (midlines of triangle BCD)",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EFKL is a parallelogram (EF parallel and equal to KL, EL parallel and equal to FK)",
+      "type": "quadrilateral_structure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EGHK is a parallelogram (EG parallel and equal to HK, EH parallel and equal to GK)",
+      "type": "quadrilateral_structure"
+    },
+    {
+      "step": "Step 3",
+      "claim": "FGLH is a parallelogram (FG parallel and equal to LH, FH parallel and equal to GL)",
+      "type": "quadrilateral_structure"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Pyramid AEFG has all six edges equal to half the corresponding edges of ABCD",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Pyramid BEHL has all six edges equal to half the corresponding edges of ABCD",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "EFG is parallel to BCD (plane at half height of tetrahedron)",
+      "type": "plane_relationship"
+    },
+    {
+      "step": "Steps 8-9",
+      "claim": "Remainder after removing AEFG and BEHL consists of two prisms with bases EFH and GKL bounded by the three parallelograms",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Each small pyramid has volume (1/2)^3 = 1/8 of whole; two prisms together are 3/4 of whole, greater than 1/2",
+      "type": "volume_ratio"
+    }
+  ],
+  "configuration_map": "The configuration consists of tetrahedron ABCD with apex A and triangular base BCD. Six midpoints are placed: E on AB, F on AC, G on AD (lateral edge midpoints), and H on BC, K on CD, L on BD (base edge midpoints). These positions remain consistent throughout the proof. The midpoint segments create three parallelogram cross-sections (EFKL, EGHK, FGLH) of the medial octahedron EFGHKL inscribed in the tetrahedron. Two corner pyramids AEFG (at vertex A) and BEHL (at vertex B) are identified, each with all edges half the corresponding edges of ABCD. The proof asserts the remainder forms two prisms but struggles to rigorously identify their face structure. All point positions, segment relationships, and parallelism claims are mutually consistent throughout.",
+  "pass_reason": "All spatial and geometric claims in the proof are individually correct and mutually consistent. The midpoint relationships, parallelism claims, parallelogram identifications, and pyramid similarity arguments are all valid. The proof has a logical gap (it cannot rigorously verify that the remainder forms prisms with the specific faces it names, as the proof itself acknowledges), but this is a proof incompleteness rather than a spatial configuration contradiction. No two spatial claims about the same geometric objects are incompatible. The underlying mathematical result is correct (Heath's proof achieves it via different prism identifications), and the volume argument independently establishes the greater-than-half claim correctly."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "13.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Heath's consecutive-angle case relies on the intersection point F of diagonals AC and BE, using I.6 (converse of the isosceles triangle theorem) to establish AF=BF, then subtracting to get FC=FE, and finally applying I.8 on triangles FCD and FED. The AI proof takes a fundamentally different geometric route: it never introduces the diagonal intersection point and never invokes I.6, instead applying I.4 to triangles ABC/EDC to get AC=EC, then I.5 on triangle ACE, and separately I.4 on ABC/BCD to get AC=BD followed by I.8 on triangles BAD/CDA with the common side AD. The AI also handles the non-consecutive case differently, reducing it to the consecutive case via the A=E result from Step 3, whereas Heath proves it directly. Since the key intermediate conclusions differ (Heath's chain passes through the intersection-point equalities AF=BF and FC=FE, which the AI's chain entirely avoids), this is Case B in Q2 — different backbone. Q3 confirms the AI's alternative path is logically valid throughout, yielding D.",
+  "jaccard": 0.429,
+  "ai_citations": "1.4|1.5|1.8|CN1|CN2|P1",
+  "heath_citations": "1.4|1.5|1.6|1.8",
+  "ai_only": "CN1|CN2|P1",
+  "heath_only": "1.6",
+  "audit_record": ""
+}

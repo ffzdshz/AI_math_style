@@ -1,0 +1,32 @@
+{
+  "proposition": "4.14",
+  "book": 4,
+  "statement": "About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.",
+  "heath_proof": "Let ABCDE be the given pentagon, which is equilateral and equiangular; thus it is required to circumscribe a circle about the pentagon ABCDE. Let the angles BCD, CDE be bisected by the straight lines CF, DF respectively, and from the point F, at which the straight lines meet, let the straight lines FB, FA, FE be joined to the points B, A, E. Then in manner similar to the preceding it can be proved that the angles CBA, BAE, AED have also been bisected by the straight lines FB, FA, FE respectively. Now, since the angle BCD is equal to the angle CDE, and the angle FCD is half of the angle BCD, and the angle CDF half of the angle CDE, therefore the angle FCD is also equal to the angle CDF, so that the side FC is also equal to the side FD. [I. 6]  Similarly it can be proved that each of the straight lines FB, FA, FE is also equal to each of the straight lines FC, FD; therefore the five straight lines FA, FB, FC, FD, FE are equal to one another. Therefore the circle described with centre F and distance one of the straight lines FA, FB, FC, FD, FE will pass also through the remaining points, and will have been circumscribed. Let it be circumscribed, and let it be ABCDE. Therefore about the given pentagon, which is equilateral and equiangular, a circle has been circumscribed.",
+  "ai_proof_text": "4.14\n**Statement:** About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.\n\n**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. It is required to circumscribe a circle about it.\n\n**Step 2.** Bisect each of the angles BCD and CDE by the straight lines CF and DF respectively [1.9], and let these lines meet at the point F. Join FB, FA, and FE [P1].\n\n**Step 3.** Since the pentagon ABCDE is equiangular, angle BCD equals angle CDE. Because CF bisects angle BCD, angle FCD equals half of angle BCD. Because DF bisects angle CDE, angle FDC equals half of angle CDE. Since angle BCD equals angle CDE, it follows that angle FCD equals angle FDC.\n\n**Step 4.** In triangle FCD, since angle FCD equals angle FDC, the side FC equals the side FD [1.6].\n\n**Step 5.** Now consider triangles FCB and FCD. We have BC equals CD (the pentagon is equilateral), FC is common, and angle FCB equals angle FCD (each being half of angle BCD, since CF bisects angle BCD). Therefore by [1.4], triangle FCB is congruent to triangle FCD, and so FB equals FD.\n\n**Step 6.** But FC equals FD [Step 4], so FB equals FC [CN1].\n\n**Step 7.** Next consider triangles FCB and FDE. We have BC equals DE (the pentagon is equilateral), FC equals FD [Step 4], and angle FCB equals angle FDE (angle FCB is half of angle BCD, and angle FDE is half of angle CDE since DF bisects angle CDE, and angle BCD equals angle CDE because the pentagon is equiangular). Therefore by [1.4], triangle FCB is congruent to triangle FDE, and so FB equals FE, and angle FBC equals angle FED.\n\n**Step 8.** Since angle ABC equals angle DEA (the pentagon is equiangular) and angle FBC equals angle FED [Step 7], subtracting equals from equals gives angle ABF equals angle AEF [CN3].\n\n**Step 9.** Now consider triangles ABF and AEF. We have AB equals AE (the pentagon is equilateral), BF equals EF [Step 7], and angle ABF equals angle AEF [Step 8]. Therefore by [1.4], triangle ABF is congruent to triangle AEF. (This confirms the congruence of these triangles, though we require the next step to establish FA equals the common distance.)\n\n**Step 10.** Now consider triangles FAB and FCB. We have AB equals BC (the pentagon is equilateral). Since angle FBC equals half of angle ABC (for: angle FBC equals angle FDC [from the congruence in Step 5, where angle FBC equals angle FDC] which equals half of angle BCD which equals half of angle ABC, since the pentagon is equiangular), it follows that angle ABF equals angle ABC minus angle FBC equals half of angle ABC. Thus angle ABF equals angle CBF. Since BF is common and AB equals BC and angle ABF equals angle CBF, by [1.4] triangle FAB is congruent to triangle FCB, and therefore FA equals FC.\n\n**Step 11.** Collecting results: FA equals FC [Step 10], FC equals FB [Step 6], FB equals FE [Step 7], and FC equals FD [Step 4]. Therefore FA equals FB equals FC equals FD equals FE [CN1].\n\n**Step 12.** With center F and radius FA, describe a circle [P3]. Since FA equals FB equals FC equals FD equals FE, this circle passes through all five vertices A, B, C, D, and E. Therefore the circle is circumscribed about the pentagon ABCDE [D4.6].\n\n**Step 13.** Therefore about the given equilateral and equiangular pentagon, a circle has been circumscribed. Q.E.F.\n\n**USED:** 1.4, 1.6, 1.9, CN1, CN3, D4.6, P1, P3\n**Human refs (from References field):** 1.6\n**Jaccard:** 0.125 — AI adds ['1.4', '1.9', 'CN1', 'CN3', 'D4.6', 'P1', 'P3']",
+  "ai_used": [
+    "1.4",
+    "1.6",
+    "1.9",
+    "CN1",
+    "CN3",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6"
+  ],
+  "ai_only": [
+    "1.4",
+    "1.9",
+    "CN1",
+    "CN3",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon. It is required to circumscribe a circle about it.  **Step 2.** Bisect each of the angles BCD and CDE by the straight lines CF a"
+}

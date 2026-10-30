@@ -1,0 +1,101 @@
+{
+  "proposition": "11.26",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "EG is perpendicular to the plane DFC; G is the foot of this perpendicular in that plane",
+      "type": "perpendicularity/plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "H is the foot of perpendicular from G to DC (H on ray DC, GH perpendicular to DC in plane DFC)",
+      "type": "point position on line"
+    },
+    {
+      "step": "Step 3",
+      "claim": "K is the foot of perpendicular from G to DF (K on ray DF, GK perpendicular to DF in plane DFC)",
+      "type": "point position on line"
+    },
+    {
+      "step": "Step 4",
+      "claim": "DC is perpendicular to plane EGH, hence DC perpendicular to EH; angle EHD = 90 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DF is perpendicular to plane EGK, hence DF perpendicular to EK; angle EKD = 90 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle EGH = 90 and angle EGK = 90 (EG perpendicular to plane, GH and GK in plane)",
+      "type": "angle value"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle BAL = angle CDF; ray AB corresponds to DC, ray AL corresponds to DF",
+      "type": "angle construction/correspondence"
+    },
+    {
+      "step": "Step 8",
+      "claim": "H' on ray AL with AH' = DH; H'P perpendicular to AL in plane BAL, H'P = HG",
+      "type": "point position/perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle AH'P congruent to DHG; AP = DG; angle H'AP = angle HDG",
+      "type": "triangle congruence"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G lies in interior of angle FDC so angle CDF = angle CDG + angle GDF; ray AP between rays AL and AB; angle PAB = angle GDF",
+      "type": "interior point/angle decomposition"
+    },
+    {
+      "step": "Step 11",
+      "claim": "K' is foot of perpendicular from P to line AB, K' on ray AB; AK' = DK, K'P = KG",
+      "type": "point position on line"
+    },
+    {
+      "step": "Step 12",
+      "claim": "PE' perpendicular to plane BAL, PE' = GE",
+      "type": "perpendicularity/construction"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Angle E'PH' = 90 (PE' perp to plane, PH' in plane); triangle E'PH' congruent to EGH; E'H' = EH",
+      "type": "angle value/congruence"
+    },
+    {
+      "step": "Step 14",
+      "claim": "AL perpendicular to plane E'PH'; angle E'H'A = 90 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Angle E'PK' = 90; triangle E'PK' congruent to EGK; E'K' = EK",
+      "type": "angle value/congruence"
+    },
+    {
+      "step": "Step 17",
+      "claim": "AB perpendicular to plane E'PK'; angle E'K'A = 90 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Triangle E'H'A congruent to EHD; angle E'AL = angle EDC",
+      "type": "triangle congruence/face angle equality"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Triangle E'K'A congruent to EKD; angle E'AB = angle EDF",
+      "type": "triangle congruence/face angle equality"
+    }
+  ],
+  "configuration_map": "Original at D: Plane DFC is the base plane. G is the foot of perpendicular from E to plane DFC, lying in the interior of angle FDC. H is foot of perpendicular from G to DC (on ray DC). K is foot of perpendicular from G to DF (on ray DF). E is above the plane (EG perpendicular to it). The angles HDG and GDF partition angle FDC.\n\nConstruction at A: Plane BAL is the base plane (corresponding to DFC). AB corresponds to DC, AL corresponds to DF. H' is placed on ray AL at distance DH from A. P is constructed in plane BAL perpendicular to AL at H', at distance HG, on the B-side of AL (so P is in interior of angle BAL). K' is the foot of perpendicular from P to AB (on ray AB). E' is erected above P perpendicular to plane BAL at distance GE. The configuration at A is a congruent copy of the configuration at D, with all perpendicularity and interior relationships preserved.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof constructs point P in plane BAL as the counterpart of G in plane DFC, using perpendicular feet and distance equalities. The key spatial requirements (G in interior of angle FDC, P in interior of angle BAL, correct perpendicularity relationships for the plane-to-plane arguments) are all satisfied. The angle decomposition in Step 10 is valid because the projection G of interior edge DE onto the base plane falls inside angle FDC, ensuring ray AP falls between AL and AB. All subsequent congruence arguments (Steps 13-18) correctly use the established perpendicularity and distance relationships without contradiction."
+}

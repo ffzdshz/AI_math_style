@@ -1,0 +1,81 @@
+{
+  "proposition": "4.14",
+  "run": "Fable",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "F lies within the pentagon, at the intersection of angle bisectors CF (of angle BCD) and DF (of angle CDE)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "angle BCF = angle FCD (CF bisects angle BCD)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 1",
+      "claim": "angle CDF = angle FDE (DF bisects angle CDE)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangles BCF and DCF are congruent by SAS (BC=DC, CF common, angle BCF=angle DCF), giving BF=DF and angle CBF=angle CDF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangles CDF and EDF are congruent by SAS (CD=ED, DF common, angle CDF=angle EDF), giving CF=EF and angle DCF=angle DEF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle ABC = angle ABF + angle CBF (ray BF interior to angle ABC), so angle ABF = angle ABC - angle CBF",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle CDE = angle CDF + angle FDE, so angle FDE = angle CDE - angle CDF",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "FB bisects angle ABC (angle ABF = angle CBF)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles ABF and CBF are congruent by SAS (AB=CB, BF common, angle ABF=angle CBF), giving AF=CF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "angle AED = angle AEF + angle DEF (ray EF interior to angle AED), so angle AEF = angle AED - angle DEF",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "FE bisects angle AED (angle AEF = angle DEF)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangles AEF and DEF are congruent by SAS (AE=DE, EF common, angle AEF=angle DEF), giving AF=DF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 8",
+      "claim": "FA=FB=FC=FD=FE (chain: BF=DF, DF=AF, AF=CF, CF=EF)",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Circle centered at F with radius FA passes through all five vertices",
+      "type": "circle_construction"
+    }
+  ],
+  "configuration_map": "Point F: Constructed as intersection of CF (bisector of angle BCD) and DF (bisector of angle CDE). Claimed to lie within the pentagon (Step 1). For an equilateral and equiangular pentagon, these two adjacent-angle bisectors meet at the center, which is indeed interior. F is then used as a common vertex of ten triangles formed with the pentagon's sides and diagonals. From each vertex of the pentagon, the ray to F lies within that vertex's interior angle, validating all angle decompositions in Steps 4 and 6. The position of F inside the pentagon is consistent throughout: it supports the SAS congruences (Steps 2, 3, 5, 7), the angle subtractions (Steps 4, 6), and the final circumscription (Step 9).",
+  "pass_reason": "All spatial claims are mutually consistent. F inside the pentagon is geometrically correct for the intersection of adjacent angle bisectors. Each angle decomposition (at vertices B and E in Steps 4 and 6) correctly relies on the ray to F being interior to the vertex angle, which follows from F being inside the pentagon. All four SAS congruences are properly set up. The chain of radius equalities is valid. The proof takes a different route from Heath (using I.4 repeatedly instead of I.6) but introduces no spatial contradiction."
+}

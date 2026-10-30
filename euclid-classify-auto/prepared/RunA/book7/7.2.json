@@ -1,0 +1,32 @@
+{
+  "proposition": "7.2",
+  "book": 7,
+  "statement": "Given two numbers not prime to one another, to find their greatest common measure.",
+  "heath_proof": "Let AB, CD be the two given numbers not prime to one another. Thus it is required to find the greatest common measure of AB, CD. If now CD measures AB —and it also measures itself— CD is a common measure of CD, AB. And it is manifest that it is also the greatest; for no greater number than CD will measure CD. But, if CD does not measure AB, then, the less of the numbers AB, CD being continually subtracted from the greater, some number will be left which will measure the one before it. For an unit will not be left; otherwise AB, CD will be prime to one another [VII. 1], which is contrary to the hypothesis. Therefore some number will be left which will measure the one before it. Now let CD, measuring BE, leave EA less than itself, let EA, measuring DF, leave FC less than itself, and let CF measure AE. Since then, CF measures AE, and AE measures DF, therefore CF will also measure DF. But it also measures itself; therefore it will also measure the whole CD. But CD measures BE; therefore CF also measures BE. But it also measures EA; therefore it will also measure the whole BA. But it also measures CD; therefore CF measures AB, CD. Therefore CF is a common measure of AB, CD. I say next that it is also the greatest. For, if CF is not the greatest common measure of AB, CD, some number which is greater than CF will measure the numbers AB, CD. Let such a number measure them, and let it be G. Now, since G measures CD, while CD measures BE, G also measures BE. But it also measures the whole BA; therefore it will also measure the remainder AE. But AE measures DF; therefore G will also measure DF. But it also measures the whole DC; therefore it will also measure the remainder CF, that is, the greater will measure the less: which is impossible. Therefore no number which is greater than CF will measure the numbers AB, CD; therefore CF is the greatest common measure of AB, CD.",
+  "ai_proof_text": "7.2\n**Statement:** Given two numbers not prime to one another, to find their greatest common measure.\n\n**Step 1.** Let AB and CD be two numbers not prime to one another. We are required to find their greatest common measure. [D7.12: numbers prime to one another are measured by a unit alone as a common measure; AB and CD are not of this kind, so they have a common measure greater than a unit.]\n\n**Step 2.** If CD measures AB, then CD is a common measure of CD and AB (since CD also measures itself). We claim CD is the greatest common measure: for no number greater than CD can measure CD. Hence if CD measures AB, CD is the greatest common measure of AB and CD.\n\n**Step 3.** Now suppose CD does not measure AB. Perform the successive subtraction (antanairesis) of the less from the greater on AB and CD. Since AB and CD are not prime to one another, by the contrapositive of Proposition 7.1, the process does not terminate at a unit. Therefore the process must terminate at some number that measures the one before it. [7.1]\n\n**Step 4.** Let the process proceed as follows: subtract CD from AB repeatedly; let the remainder be EA (where EA < CD). Then subtract EA from CD repeatedly; let the remainder be FC (where FC < EA). Continue until a remainder is reached that measures the one before it. Let FC be that remainder which measures EA.\n\n**Step 5.** Since FC measures EA, and EA measures CD (because when FC is subtracted repeatedly from CD the remainder is zero — i.e., FC measuring EA means that the successive subtraction of FC from EA leaves no remainder, and since subtracting EA from CD left FC, we reconstruct that FC measures CD as follows): FC measures EA; let EA be composed of certain multiples of FC. Now CD was composed of multiples of EA plus the remainder FC. Since FC measures EA, FC also measures any multiple of EA [D7.3, D7.5]. The remainder when EA is subtracted from CD repeatedly is FC, so CD equals some multiple of EA plus FC. Since FC measures EA (and hence measures any multiple of EA) and FC measures FC itself, FC measures their sum, which is CD. [CN2]\n\n**Step 6.** Similarly, since FC measures CD and FC measures EA, and AB equals some multiple of CD plus EA, FC measures any multiple of CD, and FC measures EA, so FC measures their sum AB. [CN2]\n\n**Step 7.** Therefore FC measures both AB and CD, so FC is a common measure of AB and CD.\n\n**Step 8.** We now show FC is the greatest common measure. Suppose G is any common measure of AB and CD. Since G measures CD, and AB equals some multiple of CD plus EA, G measures the multiple of CD; and since G measures AB, G must also measure the remainder EA. [For if G measures the whole AB and measures the part consisting of multiples of CD, then G measures the remainder EA, since the whole equals the parts plus remainder — by CN3.]\n\n**Step 9.** Since G measures EA, and CD equals some multiple of EA plus FC, by the same reasoning G measures the multiple of EA, and since G measures CD, G must measure the remainder FC. [CN3]\n\n**Step 10.** Thus any common measure G of AB and CD also measures FC. Therefore no common measure of AB and CD can be greater than FC. [CN5: the whole is greater than the part; if G were greater than FC, G could not measure FC.]\n\n**Step 11.** Since FC is a common measure of AB and CD (Step 7), and every common measure of AB and CD measures FC (Steps 8-9), FC is the greatest common measure of AB and CD.\n\n**Step 12.** Therefore, given two numbers not prime to one another, we have found their greatest common measure. Q.E.F.\n\n**USED:** 7.1, CN2, CN3, CN5, D7.12, D7.2, D7.3, D7.5\n**Human refs (from References field):** 7.1\n**Jaccard:** 0.125 — AI adds ['CN2', 'CN3', 'CN5', 'D7.12', 'D7.2', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "7.1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.1"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D7.12",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.125,
+  "proof_summary": "**Step 1.** Let AB and CD be two numbers not prime to one another. We are required to find their greatest common measure. [D7.12: numbers prime to one another are measured by a unit alone as a common "
+}

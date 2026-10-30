@@ -1,0 +1,47 @@
+{
+  "proposition": "10.104",
+  "book": 10,
+  "statement": "A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.",
+  "heath_proof": "Let AB be an apotome of a medial straight line, and let CD be commensurable in length with AB; I say that CD is also an apotome of a medial straight line and the same in order with AB. For, since AB is an apotome of a medial straight line, let EB be the annex to it. Therefore AE, EB are medial straight lines commensurable in square only. [X. 74, 75] Let it be contrived that, as AB is to CD, so is BE to DF; [VI. 12] therefore AE is also commensurable with CF, and BE with DF. [V. 12, X. 11] But AE, EB are medial straight lines commensurable in square only; therefore CF, FD are also medial straight lines [X. 23] commensurable in square only; [X. 13] therefore CD is an apotome of a medial straight line. [X. 74, 75] I say next that it is also the same in order with AB. Since, as AE is to EB, so is CF to FD, therefore also, as the square on AE is to the rectangle AE, EB, so is the square on CF to the rectangle CF, FD. But the square on AE is commensurable with the square on CF; therefore the rectangle AE, EB is also commensurable with the rectangle CF, FD. [V. 16, X. 11] Therefore, if the rectangle AE, EB is rational, the rectangle CF, FD will also be rational, [X. Def. 4] and if the rectangle AE, EB is medial, the rectangle CF, FD is also medial. [X. 23] Therefore CD is an apotome of a medial straight line and the same in order with AB. [X. 74, 75]",
+  "ai_proof_text": "10.104\n**Statement:** A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.\n\n**Step 1.** Let AB be an apotome of a medial straight line, and let CD be commensurable in length with AB. We must show that CD is also an apotome of a medial straight line and the same in order.\n\n**Step 2.** Since AB is an apotome of a medial straight line, let BE be the annex to AB, so that AE and BE are medial straight lines commensurable in square only [by 10.74 and 10.75, which define the first and second apotomes of a medial straight line]. Thus AB = AE - BE.\n\n**Step 3.** Since CD is commensurable in length with AB, let the ratio of CD to AB be as the ratio of CD to AB. Find CF and DF such that CF corresponds to AE and DF corresponds to BE, with CD = CF - DF [P1, P2].\n\n**Step 4.** Since CD is commensurable in length with AB, set CD : AB = CF : AE. Then also CD : AB = DF : BE, since AB = AE - BE and CD = CF - DF [6.12, 5.19]. That is, CF is commensurable in length with AE, and DF is commensurable in length with BE [10.11].\n\n**Step 5.** Since AE is medial and CF is commensurable in length with AE, CF is medial [10.23].\n\n**Step 6.** Since BE is medial and DF is commensurable in length with BE, DF is medial [10.23].\n\n**Step 7.** Since AE and BE are commensurable in square only, and CF : AE = DF : BE, the squares on CF and DF have the same ratio as the squares on AE and BE [6.22]. Since the squares on AE and BE are commensurable (as AE and BE are commensurable in square), the squares on CF and DF are commensurable with the squares on AE and BE respectively [10.11]. Hence the squares on CF and DF are commensurable with one another [10.12], so CF and DF are commensurable in square.\n\n**Step 8.** We must show CF and DF are commensurable in square only, i.e., that CF and DF are incommensurable in length. Suppose CF were commensurable in length with DF. Since CF is commensurable in length with AE and DF is commensurable in length with BE, then AE would be commensurable in length with BE [10.12], contradicting the hypothesis that AE and BE are commensurable in square only. Therefore CF and DF are incommensurable in length, and hence commensurable in square only.\n\n**Step 9.** Now we distinguish the two cases to show CD is the same in order as AB.\n\n**Step 10.** Case 1: AB is a first apotome of a medial straight line. Then AE and BE are medial straight lines commensurable in square only, and the rectangle AE by BE is rational [10.74]. Since CF is commensurable in length with AE and DF is commensurable in length with BE, the rectangle CF by DF is commensurable with the rectangle AE by BE [6.16, 10.11]. Since the rectangle AE by BE is rational, the rectangle CF by DF is also rational [D10.1.4, 10.12]. Since CF and DF are medial straight lines commensurable in square only and containing a rational rectangle, CD = CF - DF is a first apotome of a medial straight line [10.74].\n\n**Step 11.** Case 2: AB is a second apotome of a medial straight line. Then AE and BE are medial straight lines commensurable in square only, and the rectangle AE by BE is medial [10.75]. Since CF is commensurable in length with AE and DF is commensurable in length with BE, the rectangle CF by DF is commensurable with the rectangle AE by BE [6.16, 10.11]. Since the rectangle AE by BE is medial, the rectangle CF by DF is also medial [10.23 applied to areas, i.e., since commensurable areas with a medial area are medial]. Since CF and DF are medial straight lines commensurable in square only and containing a medial rectangle, CD = CF - DF is a second apotome of a medial straight line [10.75].\n\n**Step 12.** In both cases, CD is an apotome of a medial straight line and the same in order as AB. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.23, 10.74, 10.75, 5.19, 6.12, 6.16, 6.22, D10.1.4, P1, P2\n**Human refs (from References field):** 10.11, 10.13, 10.23, 10.74, 10.75, 5.12, 5.16, 6.12, D10.1.4\n**Jaccard:** 0.400 — AI adds ['10.12', '5.19', '6.16', '6.22', 'P1', 'P2']; Human adds ['10.13', '5.12', '5.16']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.23",
+    "10.74",
+    "10.75",
+    "5.19",
+    "6.12",
+    "6.16",
+    "6.22",
+    "D10.1.4",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.23",
+    "10.74",
+    "10.75",
+    "5.12",
+    "5.16",
+    "6.12",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "5.19",
+    "6.16",
+    "6.22",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "10.13",
+    "5.12",
+    "5.16"
+  ],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let AB be an apotome of a medial straight line, and let CD be commensurable in length with AB. We must show that CD is also an apotome of a medial straight line and the same in order.  **S"
+}

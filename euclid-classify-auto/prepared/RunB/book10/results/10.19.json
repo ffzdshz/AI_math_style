@@ -1,0 +1,13 @@
+{
+  "proposition": "10.19",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: construct the square on one side, establish it is rational, use VI.1 (6.1) to relate the rectangle to the square via the ratio of the bases, show commensurability of the rectangle with the square, and conclude the rectangle is rational. The key difference is citation depth: Heath cites 10.11 directly to move from the proportion and commensurability of bases to commensurability of areas, while the AI re-derives 10.11's internals inline using 10.5 (commensurability implies number ratio) and 10.6 (number ratio implies commensurability). The proof-tree containment test confirms that 10.5 and 10.6 appear inside Heath's proof of 10.11, so the AI is simply unpacking that lemma. The AI also makes explicit the transitivity of commensurability via 10.12 and cites D10.1.3 for the definition of rational lines, which Heath leaves implicit. These are all citation-depth differences, not backbone differences, yielding a Granularity classification.",
+  "jaccard": 0.286,
+  "ai_citations": "10.12|10.5|10.6|6.1|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|6.1|D10.1.4",
+  "ai_only": "10.12|10.5|10.6|D10.1.3",
+  "heath_only": "10.11",
+  "audit_record": ""
+}

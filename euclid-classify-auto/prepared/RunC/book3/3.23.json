@@ -1,0 +1,26 @@
+{
+  "proposition": "3.23",
+  "book": 3,
+  "statement": "On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.",
+  "heath_proof": "For, if possible, on the same straight line AB let two similar and unequal segments of circles ACB, ADB be constructed on the same side; let ACD be drawn through, and let CB, DB be joined. Then, since the segment ACB is similar to the segment ADB, and similar segments of circles are those which admit equal angles, [III. Def. 11] the angle ACB is equal to the angle ADB, the exterior to the interior: which is impossible. [I. 16]",
+  "ai_proof_text": "3.23\n**Statement:** On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.\n\n**Step 1.** Suppose, for the sake of contradiction, that on the same straight line AB, two similar and unequal segments of circles can be constructed on the same side. Let these be segments ACB and ADB, where segment ADB is the larger and contains segment ACB, with both arcs on the same side of AB. [D3.6, D3.11]\n\n**Step 2.** Since segment ADB is larger and both share the base AB on the same side, the arc ADB lies further from AB than the arc ACB. Take a point D on the arc of segment ADB. Draw the straight line DA. [P1]\n\n**Step 3.** Since the arc ACB lies between AB and the arc ADB, the straight line DA must cross the arc ACB at some point. Let this intersection point be C, so that C lies on the arc ACB and on the line segment AD, with A, C, D in that order. [3.2, since the chord from A toward D enters the region of the inner circle]\n\n**Step 4.** Join DB and CB. [P1]\n\n**Step 5.** Now consider triangle BCD with vertices B, C, D. The angle BCA is an exterior angle of triangle BCD at vertex C, since A, C, D are collinear and A is on the opposite side of C from D. By Proposition 1.16, the exterior angle of a triangle is greater than either of the non-adjacent interior angles. Therefore angle BCA is greater than angle BDC. [1.16]\n\n**Step 6.** Since A, C, D are collinear (with C between A and D), angle BDC is the same as angle BDA, which is the angle in segment ADB (the angle at D subtended by base AB in segment ADB). [D3.8]\n\n**Step 7.** Similarly, angle BCA is the angle in segment ACB (the angle at C subtended by base AB in segment ACB). [D3.8]\n\n**Step 8.** Since segments ACB and ADB are similar, by Definition 3.11 they admit equal angles. Therefore the angle in segment ACB equals the angle in segment ADB; that is, angle BCA equals angle BDA. [D3.11]\n\n**Step 9.** But from Step 5, angle BCA is greater than angle BDC, which equals angle BDA (Step 6). So angle BCA is greater than angle BDA. This contradicts Step 8, which asserts they are equal.\n\n**Step 10.** Therefore the assumption is false, and on the same straight line there cannot be constructed two similar and unequal segments of circles on the same side. Q.E.D.\n\n**USED:** 1.16, D3.11, D3.6, D3.8, P1\n**Human refs (from References field):** 1.16, D3.11\n**Jaccard:** 0.400 — AI adds ['D3.6', 'D3.8', 'P1']",
+  "ai_used": [
+    "1.16",
+    "D3.11",
+    "D3.6",
+    "D3.8",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "D3.11"
+  ],
+  "ai_only": [
+    "D3.6",
+    "D3.8",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Suppose, for the sake of contradiction, that on the same straight line AB, two similar and unequal segments of circles can be constructed on the same side. Let these be segments ACB and AD"
+}

@@ -1,0 +1,43 @@
+{
+  "proposition": "3.15",
+  "book": 3,
+  "statement": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+  "heath_proof": "Let ABCD be a circle, let AD be its diameter and E the centre; and let BC be nearer to the diameter AD, and FG more remote; I say that AD is greatest and BC greater than FG. For from the centre E let EH, EK  be drawn perpendicular to BC, FG. Then, since BC is nearer to the centre and FG more remote, EK is greater than EH. [III. Def. 5] Let EL be made equal to EH, through L let LM be drawn at right angles to EK and carried through to N, and let ME, EN, FE, EG be joined. Then, since EH is equal to EL, BC is also equal to MN. [III. 14]  Again, since AE is equal to EM, and ED to EN, AD is equal to ME, EN. But ME, EN are greater than MN, [I. 20] and MN is equal to BC; therefore AD is greater than BC. And, since the two sides ME, EN are equal to the two sides FE, EG, and the angle MEN greater than the angle FEG, therefore the base MN is greater than the base FG. [I. 24] But MN was proved equal to BC. Therefore the diameter AD is greatest and BC greater than FG.",
+  "ai_proof_text": "3.15\n**Statement:** Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.\n\n**Step 1.** Let ABCD be a circle with centre E, and let BC be a diameter. Let AD be any chord that is not a diameter, and let FG be another chord such that AD is nearer to the centre than FG. We must prove (i) BC is greater than AD, and (ii) AD is greater than FG.\n\n**Step 2.** [Part (i): The diameter is greatest.] Join EA and ED from centre E to the endpoints of chord AD [P1]. Since E is the centre of the circle, EA and ED are radii, so EA = EB and ED = EC [D1.15].\n\n**Step 3.** In triangle EAD, by the triangle inequality, EA + ED > AD [1.20].\n\n**Step 4.** Since EA = EB and ED = EC, substituting gives EB + EC > AD [CN1]. But EB + EC = BC (since B, E, C are collinear with E between B and C, as BC is a diameter through the centre E) [D1.17]. Therefore BC > AD.\n\n**Step 5.** Since AD was an arbitrary chord that is not a diameter, the diameter BC is greater than every other straight line in the circle. This completes Part (i).\n\n**Step 6.** [Part (ii): The nearer chord is greater than the more remote.] Draw EH perpendicular to AD and EK perpendicular to FG from centre E [P1]. Since AD is nearer to the centre than FG, we have EH less than EK [D3.4, D3.5].\n\n**Step 7.** Since EH is drawn from the centre and is perpendicular to chord AD, EH bisects AD, so AH = HD [3.3]. Similarly, since EK is perpendicular to chord FG, EK bisects FG, so FK = KG [3.3].\n\n**Step 8.** In right triangle EHA, by the Pythagorean theorem, the square on EA equals the sum of the squares on EH and HA [1.47]. In right triangle EKG, the square on EG equals the sum of the squares on EK and KG [1.47].\n\n**Step 9.** Since EA and EG are both radii of the same circle, EA = EG [D1.15], and therefore the square on EA equals the square on EG. Hence the square on EH plus the square on HA equals the square on EK plus the square on KG.\n\n**Step 10.** Since EH is less than EK, the square on EH is less than the square on EK. Therefore the square on HA is greater than the square on KG (for if it were not, the sum of the squares on EH and HA would not equal the sum of the squares on EK and KG).\n\n**Step 11.** Since the square on HA is greater than the square on KG, HA is greater than KG. For if HA were equal to KG, their squares would be equal [CN4], and if HA were less than KG, the square on HA would be less than the square on KG; both contradict Step 10.\n\n**Step 12.** Since AH = HD, we have AD = AH + HD = HA + HA [CN2]. Similarly, FG = FK + KG = KG + KG [CN2]. Since HA is greater than KG, adding HA to itself gives a sum greater than adding KG to itself, so AD is greater than FG.\n\n**Step 13.** Therefore, of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote. Q.E.D.\n\n**USED:** 1.20, 1.47, 3.3, CN1, CN2, CN4, D1.15, D1.17, D3.4, D3.5, P1\n**Human refs (from References field):** 1.20, 1.24, 3.14, D3.5\n**Jaccard:** 0.154 — AI adds ['1.47', '3.3', 'CN1', 'CN2', 'CN4', 'D1.15', 'D1.17', 'D3.4', 'P1']; Human adds ['1.24', '3.14']",
+  "ai_used": [
+    "1.20",
+    "1.47",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D3.4",
+    "D3.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.20",
+    "1.24",
+    "3.14",
+    "D3.5"
+  ],
+  "ai_only": [
+    "1.47",
+    "3.3",
+    "CN1",
+    "CN2",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D3.4",
+    "P1"
+  ],
+  "heath_only": [
+    "1.24",
+    "3.14"
+  ],
+  "jaccard": 0.154,
+  "proof_summary": "**Step 1.** Let ABCD be a circle with centre E, and let BC be a diameter. Let AD be any chord that is not a diameter, and let FG be another chord such that AD is nearer to the centre than FG. We must "
+}

@@ -1,0 +1,76 @@
+{
+  "proposition": "6.27",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is a straight line bisected at point C, so C is the midpoint of AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CF is a parallelogrammic figure described on CB (the half of AB)",
+      "type": "figure_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AD is the complement parallelogram applied to AC within the whole parallelogram on AB, with CF about the diameter",
+      "type": "figure_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is a point on AB different from C; AG is applied to segment AE with defect EG similar and similarly situated to CF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EG and CF are about the same diameter DB, by 6.26 (they are similar, similarly situated, and share a common angle at B)",
+      "type": "figure_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CF (on CB) and EG (on EB) are both parallelograms about the diameter DB in the whole parallelogram on AB",
+      "type": "figure_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AD is the complement corresponding to CF; AG is the complement corresponding to EG, each complement equaling its opposite complement by 1.43",
+      "type": "figure_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Since C is the midpoint and E differs from C, EB is not equal to CB",
+      "type": "segment_inequality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "If E lies between A and C, then EB > CB, so EG (on EB) properly contains CF (on CB)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "The complement AG plus the gnomon (EG minus CF) equals the complement AD",
+      "type": "area_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "If E lies between C and B, then EB < CB, so CF (on CB) properly contains EG (on EB)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 7",
+      "claim": "The complement AD consists of the complement AG plus the gnomon (CF minus EG)",
+      "type": "area_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "In both cases AD equals AG plus a positive gnomon region, so AD > AG",
+      "type": "area_decomposition"
+    }
+  ],
+  "configuration_map": "Line AB with midpoint C. Diameter DB is the diagonal of the whole parallelogram on AB. CF is a parallelogrammic figure about DB sitting on segment CB. E is a variable point on AB (not equal to C). EG is a parallelogrammic figure about the same diameter DB sitting on segment EB, similar and similarly situated to CF. AD is the complement of CF in the whole parallelogram; AG is the complement of EG. When E is between A and C, EB > CB so EG contains CF. When E is between C and B, EB < CB so CF contains EG. In both cases the difference in the about-diameter parallelograms (the gnomon) accounts for the difference in complements, giving AD = AG + gnomon > AG.",
+  "pass_reason": "The proof makes spatial claims exclusively about point positions on line AB, containment of similar parallelograms about a common diameter, and area decomposition via gnomons. All claims are mutually consistent: the two cases (E between A and C, or E between C and B) correctly determine containment direction, and the gnomon argument properly accounts for the area difference between complements AD and AG. No angle decompositions, no inside/outside triangle claims, and no conflicting point positions are present."
+}

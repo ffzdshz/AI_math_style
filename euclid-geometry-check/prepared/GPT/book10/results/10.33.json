@@ -1,0 +1,36 @@
+{
+  "proposition": "10.33",
+  "run": "GPT",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Lines a > b constructed with a² = b² + c², c incommensurable in length with a, c < a",
+      "type": "magnitude_ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Points A, C, D, B are collinear in order A-C-D-B with AC = a, CB = a (C is midpoint of AB), CD = c on segment CB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies between C and B because c < a = CB",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line AB is cut equally at C and unequally at D, enabling application of 2.5: pq + c² = a²",
+      "type": "line_division"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Mean proportionals x and y constructed as separate segments via 6.13, with x² = ap and y² = aq",
+      "type": "construction"
+    }
+  ],
+  "configuration_map": "Single line with collinear points A---C---D---B. AC = CB = a (C is midpoint, AB = 2a). CD = c with c < a, placing D strictly between C and B. AD = p = a + c, DB = q = a - c. Mean proportionals x (between a and p) and y (between a and q) are independent segments not on the original line. All subsequent reasoning is algebraic/proportional, operating on the magnitudes p, q, a, b, c, x, y without further geometric configuration.",
+  "pass_reason": "The proof's geometric content is limited to a simple collinear point arrangement (A-C-D-B) that is internally consistent: D lies between C and B because c < a, the equal/unequal cut for 2.5 is valid, and the algebraic identity pq = b² follows correctly. All remaining reasoning is algebraic and proportional (mean proportionals, ratio chains, commensurability arguments) with no spatial configuration conflicts."
+}

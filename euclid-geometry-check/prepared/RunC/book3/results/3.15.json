@@ -1,0 +1,56 @@
+{
+  "proposition": "3.15",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABDC is a circle with center E; BC is a diameter; AD is a non-diameter chord",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EA, EB, EC, ED are all radii of the circle, so EA = EB and ED = EC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AD does not pass through E (since AD is not a diameter), so E, A, D form a triangle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E lies on diameter BC between B and C, so BC = BE + EC",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "EH is perpendicular to chord AD from center E; EK is perpendicular to chord FG from center E",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H lies on AD at its midpoint (AH = HD); K lies on FG at its midpoint (FK = KG)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EH < EK because AD is nearer to the center than FG",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle EHA is right-angled at H (H on chord AD, EH perpendicular to AD)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Triangle EKF is right-angled at K (K on chord FG, EK perpendicular to FG)",
+      "type": "angle_claim"
+    }
+  ],
+  "configuration_map": "Center E is interior to circle ABDC and lies on diameter BC at its midpoint (between B and C). Points A, B, C, D, F, G are on the circle. Chord AD does not pass through E, making E-A-D a proper triangle. H is the foot of the perpendicular from E to chord AD, lying on AD at its midpoint. K is the foot of the perpendicular from E to chord FG, lying on FG at its midpoint. EH < EK since AD is nearer to center. Right triangles EHA (at H) and EKF (at K) share equal hypotenuses (radii AE = EF).",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses the Pythagorean theorem (I.47) on right triangles formed by center-perpendicular-chord endpoint configurations, avoiding any angle decomposition. Key spatial facts — E on diameter between B and C, E not on non-diameter chords, perpendicular from center bisecting chords, right triangles with radii as hypotenuses — are all compatible. No inside/outside contradictions, no betweenness conflicts, and no invalid angle sums."
+}

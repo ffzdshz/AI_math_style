@@ -1,0 +1,30 @@
+{
+  "proposition": "9.20",
+  "book": 9,
+  "statement": "Prime numbers are more than any assigned multitude of prime numbers.",
+  "heath_proof": "Let A, B, C be the assigned prime numbers; I say that there are more prime numbers than A, B, C. For let the least number measured by A, B, C be taken, and let it be DE; let the unit DF be added to DE. Then EF is either prime or not. First, let it be prime; then the prime numbers A, B, C, EF have been found which are more than A, B, C. Next, let EF not be prime; therefore it is measured by some prime number. [VII. 31] Let it be measured by the prime number G. I say that G is not the same with any of the numbers A, B, C. For, if possible, let it be so. Now A, B, C measure DE; therefore G also will measure DE. But it also measures EF. Therefore G, being a number, will measure the remainder, the unit DF: which is absurd. Therefore G is not the same with any one of the numbers A, B, C. And by hypothesis it is prime. Therefore the prime numbers A, B, C, G have been found which are more than the assigned multitude of A, B, C.",
+  "ai_proof_text": "9.20\n**Statement:** Prime numbers are more than any assigned multitude of prime numbers.\n\n**Step 1.** Let A, B, C be any assigned multitude of prime numbers. We shall show that there exists some prime number beyond this collection.\n\n**Step 2.** Take the least number measured by A, B, and C; call it DE. (That is, form the product A * B * C, which by D7.15 is the number produced by successive multiplication.) Each of A, B, and C measures DE by construction.\n\n**Step 3.** Add the unit to DE, obtaining the number EF = DE + 1. By CN5 (the whole is greater than the part), EF is greater than each of A, B, and C individually.\n\n**Step 4.** Now EF is either prime or not prime.\n\n**Step 5.** Case I: Suppose EF is prime. Then since EF is greater than each of A, B, and C, it is a prime number distinct from all of them. Thus a prime has been found which is not among the assigned primes A, B, C.\n\n**Step 6.** Case II: Suppose EF is not prime. Then EF is composite (D7.13). By 7.31, every composite number is measured by some prime number. Let the prime number G measure EF.\n\n**Step 7.** We claim that G is not equal to any of A, B, or C. Suppose, for contradiction, that G is equal to one of them, say G = A. Now A measures DE (by construction in Step 2), and G measures EF (by Step 6). Since G = A, it follows that A measures both DE and EF.\n\n**Step 8.** Since A measures DE and EF = DE + 1, if A measured EF it would also measure the difference EF - DE = 1. (For if a number measures both a whole number and a part of it, it measures the remainder; this follows from D7.3 and the nature of measurement.) But A is a prime and hence is at least 2 (D7.11: a prime is measured by a unit alone, so a prime is not itself a unit). No number greater than 1 can measure the unit (D7.1), yielding a contradiction.\n\n**Step 9.** By the same reasoning, G is not equal to B, and G is not equal to C. Therefore G is a prime number distinct from all of A, B, and C.\n\n**Step 10.** In either case (EF prime, or EF composite), we have produced a prime number not among the originally assigned primes A, B, C. Since A, B, C were any assigned multitude of prime numbers, it follows that the prime numbers are more than any assigned multitude of prime numbers. Q.E.D.\n\n**USED:** 7.31, CN5, D7.1, D7.11, D7.13, D7.15, D7.3\n**Human refs (from References field):** 7.31\n**Jaccard:** 0.143 — AI adds ['CN5', 'D7.1', 'D7.11', 'D7.13', 'D7.15', 'D7.3']",
+  "ai_used": [
+    "7.31",
+    "CN5",
+    "D7.1",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.31"
+  ],
+  "ai_only": [
+    "CN5",
+    "D7.1",
+    "D7.11",
+    "D7.13",
+    "D7.15",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let A, B, C be any assigned multitude of prime numbers. We shall show that there exists some prime number beyond this collection.  **Step 2.** Take the least number measured by A, B, and C"
+}

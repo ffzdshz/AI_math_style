@@ -1,0 +1,56 @@
+{
+  "proposition": "13.2",
+  "run": "Fable",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies between A and B on line AB, with AC as a segment and CB the remainder",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E is on ray from C through B with CE = AC, placing E between C and B (since CE = AC < CB)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is on ray from E through B with ED = AC, placing D beyond B (since CD = 2AC > CB)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CD = 2*AC and E is the midpoint of CD; D lies on the same side of C as B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AB is cut at C, so II.4 applies: sq(AB) = sq(AC) + sq(CB) + 2*rect(AC,CB)",
+      "type": "line_segment_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CD is cut at E (its midpoint), so II.4 applies: sq(CD) = sq(CE) + sq(ED) + 2*rect(CE,ED)",
+      "type": "line_segment_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "II.1 applied to rect(CB, CD) with CD segmented as CE + ED, requiring E between C and D",
+      "type": "line_segment_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "CB < CD proved by contradiction; since B and D are on same side of C, B lies between C and D",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "CD is cut at B (B between C and D), so II.2 applies: rect(CD,CB) + rect(CD,BD) = sq(CD)",
+      "type": "line_segment_decomposition"
+    }
+  ],
+  "configuration_map": "All points lie on a single line with ordering A---C---E---B---D. Distances: AC is the base segment, CE = ED = AC, so CD = 2*AC. CB = AC*(sqrt(5)-1) approximately 1.236*AC. Since CE = AC < CB, E falls between C and B. Since CD = 2*AC > CB approximately 1.236*AC, D falls beyond B. Step 6 formally proves CB < CD and concludes B is between C and D. All Book II propositions (II.1, II.2, II.4) are applied to segments with correct betweenness conditions matching this ordering.",
+  "pass_reason": "The proof operates on points along a single line with a simple ordering A-C-E-B-D. All spatial claims concern collinearity and betweenness, and they are mutually consistent. The critical betweenness claim (B between C and D) is formally proved in Step 6 before being used in Step 7. All applications of Book II propositions match the established point ordering. No angle decompositions, interior/exterior arguments, or complex spatial configurations are involved."
+}

@@ -1,0 +1,38 @@
+{
+  "proposition": "10.79",
+  "book": 10,
+  "statement": "To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.",
+  "heath_proof": "Let AB be an apotome, and BC an annex to it; therefore AC, CB are rational straight lines commensurable in square only. [X. 73] I say that no other rational straight line can be annexed to AB which is commensurable with the whole in square only. For, if possible, let BD be so annexed; therefore AD, DB are also rational straight lines commensurable in square only. [X. 73] Now, since the excess of the squares on AD, DB over twice the rectangle AD, DB is also the excess of the squares on AC, CB over twice the rectangle AC, CB, for both exceed by the same, the square on AB, [II. 7] therefore, alternately, the excess of the squares on AD, DB over the squares on AC, CB is the excess of twice the rectangle AD, DB over twice the rectangle AC, CB. But the squares on AD, DB exceed the squares on AC, CB by a rational area, for both are rational; therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area: which is impossible, for both are medial [X. 21], and a medial area does not exceed a medial by a rational area. [X. 26] Therefore no other rational straight line can be annexed to AB which is commensurable with the whole in square only. Therefore only one rational straight line can be annexed to an apotome which is commensurable with the whole in square only.",
+  "ai_proof_text": "10.79\n**Statement:** To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.\n\n**Step 1.** Let AB be an apotome, and let BC be a rational straight line annexed to it, so that AC and CB are rational straight lines commensurable in square only, and AB = AC - BC [10.73]. Suppose for contradiction that BD is another rational straight line, different from BC, annexed to AB, so that AD and DB are rational straight lines commensurable in square only, and AB = AD - DB.\n\n**Step 2.** Since AC and CB are rational and commensurable in square only, the squares on AC and CB are commensurable with each other [D10.1.2]. Each square is a rational area [D10.1.4]. Therefore sq(AC) + sq(CB) is rational, being commensurable with each rational summand [10.15].\n\n**Step 3.** Similarly, since AD and DB are rational and commensurable in square only, sq(AD) + sq(DB) is rational [D10.1.2, D10.1.4, 10.15].\n\n**Step 4.** Since AC and CB are rational and commensurable in square only, the rectangle rect(AC, CB) is medial [10.21]. Therefore 2 rect(AC, CB) is also medial.\n\n**Step 5.** Similarly, rect(AD, DB) is medial [10.21], and 2 rect(AD, DB) is also medial.\n\n**Step 6.** By 2.7, sq(AC - CB) = sq(AC) + sq(CB) - 2 rect(AC, CB). Since AB = AC - CB, we have sq(AB) = sq(AC) + sq(CB) - 2 rect(AC, CB).\n\n**Step 7.** Likewise, since AB = AD - DB, we have sq(AB) = sq(AD) + sq(DB) - 2 rect(AD, DB) [2.7].\n\n**Step 8.** From Steps 6 and 7: sq(AC) + sq(CB) - 2 rect(AC, CB) = sq(AD) + sq(DB) - 2 rect(AD, DB) [CN1].\n\n**Step 9.** Rearranging: [sq(AC) + sq(CB)] - [sq(AD) + sq(DB)] = 2 rect(AC, CB) - 2 rect(AD, DB) [CN2, CN3].\n\n**Step 10.** The left-hand side is the difference of two rational areas (from Steps 2 and 3). If this difference is nonzero, it is rational. The right-hand side is the difference of two medial areas (from Steps 4 and 5). By 10.26, a medial area does not exceed a medial area by a rational area. Therefore the difference on the right cannot be a nonzero rational quantity.\n\n**Step 11.** Consequently both sides equal zero. That is, sq(AC) + sq(CB) = sq(AD) + sq(DB), and 2 rect(AC, CB) = 2 rect(AD, DB), so rect(AC, CB) = rect(AD, DB).\n\n**Step 12.** From sq(AC) + sq(CB) = sq(AD) + sq(DB) and rect(AC, CB) = rect(AD, DB), adding 2 rect(AC, CB) to the first equation and applying 2.4: sq(AC) + sq(CB) + 2 rect(AC, CB) = sq(AD) + sq(DB) + 2 rect(AD, DB), which gives sq(AC + CB) = sq(AD + DB) [2.4].\n\n**Step 13.** Therefore AC + CB = AD + DB [since both are positive lengths with equal squares].\n\n**Step 14.** We also have AC - CB = AD - DB (= AB). Adding this to AC + CB = AD + DB: 2 AC = 2 AD, so AC = AD [CN2, CN1]. Subtracting: 2 CB = 2 DB, so CB = DB [CN3, CN1].\n\n**Step 15.** This contradicts the assumption that BD is different from BC. Therefore, to an apotome only one rational straight line can be annexed which is commensurable with the whole in square only. Q.E.D.\n\n**USED:** 10.15, 10.21, 10.26, 10.73, 2.4, 2.7, CN1, CN2, CN3, D10.1.2, D10.1.4\n**Human refs (from References field):** 10.21, 10.26, 10.73, 2.7\n**Jaccard:** 0.364 — AI adds ['10.15', '2.4', 'CN1', 'CN2', 'CN3', 'D10.1.2', 'D10.1.4']",
+  "ai_used": [
+    "10.15",
+    "10.21",
+    "10.26",
+    "10.73",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.21",
+    "10.26",
+    "10.73",
+    "2.7"
+  ],
+  "ai_only": [
+    "10.15",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let AB be an apotome, and let BC be a rational straight line annexed to it, so that AC and CB are rational straight lines commensurable in square only, and AB = AC - BC [10.73]. Suppose fo"
+}

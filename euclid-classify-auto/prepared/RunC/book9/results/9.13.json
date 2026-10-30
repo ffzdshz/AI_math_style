@@ -1,0 +1,13 @@
+{
+  "proposition": "9.13",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Classification was decided at Q2 (Case A: same backbone, different citation depth). Both proofs follow the same descent argument: assume E measures D but is not among the proportional numbers, show E is not prime and that A is the only prime dividing E, so A measures E, then repeatedly divide out factors showing each quotient is also divisible only by A, descending through the proportional numbers until reaching a contradiction. The key intermediate conclusions are identical in both proofs. The citation differences are all depth-related: the AI cites 7.17 where Heath cites 7.19, but 7.17 appears inside Heath's proof of 7.19 (containment test satisfied), so the AI simply cites a sub-lemma rather than the composite result. Heath cites 9.8 to establish A*A = B while the AI derives this directly from the continued proportion. The AI's additional citations of D7.11, D7.15, and D7.3 are definitions cited explicitly by the AI but used implicitly by Heath. All differences are citation-depth variations on the same logical backbone.",
+  "jaccard": 0.333,
+  "ai_citations": "7.17|7.31|9.11|9.12|D7.11|D7.15|D7.3",
+  "heath_citations": "7.19|7.31|9.11|9.12|9.8",
+  "ai_only": "7.17|D7.11|D7.15|D7.3",
+  "heath_only": "7.19|9.8",
+  "audit_record": ""
+}

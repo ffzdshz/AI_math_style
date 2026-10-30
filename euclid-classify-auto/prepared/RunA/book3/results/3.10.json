@@ -1,0 +1,13 @@
+{
+  "proposition": "3.10",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs use identical logical backbones: assume two circles cut at more than two points, show a single point is the center of both circles, then derive a contradiction via III.5. The difference is purely in citation depth. Heath re-derives the content of III.9 inline within the proof of 3.10, using perpendicular bisectors of chords (via III.1) to locate the center of each circle separately. The AI instead finds the center K of circle ABC via 3.1, observes KB = KG = KF (by D1.15), and then invokes 3.9 directly to conclude K is also the center of DEF. Heath's proof of 3.9 itself uses III.1 and the perpendicular bisector technique, confirming the proof-tree containment test: the AI cites 3.9 as a unit while Heath re-derives 3.9's internals inline. The ai_only items (3.9, D1.15, P1) reflect over-citation and higher-level abstraction, not a different logical path.",
+  "jaccard": 0.4,
+  "ai_citations": "3.1|3.5|3.9|D1.15|P1",
+  "heath_citations": "3.1|3.5",
+  "ai_only": "3.9|D1.15|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

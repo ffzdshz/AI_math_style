@@ -1,0 +1,66 @@
+{
+  "proposition": "12.10",
+  "run": "RunB",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Cone and cylinder share the same circular base (circle ABCD) and have equal height",
+      "type": "shared_base_and_height"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Square ABCD inscribed in the circle; square is greater than half the circle",
+      "type": "inscribed_figure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Successive arc bisection produces inscribed polygons approaching the circle; excess can be made arbitrarily small by 10.1",
+      "type": "exhaustion_approximation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Polygon P inscribed in circle; prism on P (same height as cylinder) is contained within the cylinder",
+      "type": "containment"
+    },
+    {
+      "step": "Step 7",
+      "claim": "P decomposed into triangles; each triangular prism divided into three equal pyramids by 12.7",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Prism(P) = 3 times Pyramid(P) where Pyramid(P) has base P and vertex at cone apex",
+      "type": "volume_relationship"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Pyramid on P with vertex at cone apex is inscribed within the cone; cone > Pyramid(P)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Prism on inscribed P < cylinder; Pyramid on inscribed P < cone",
+      "type": "containment"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Circumscribed polygon Q about the circle; prism on Q contains and exceeds the cylinder",
+      "type": "containment"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Prism(Q) = 3 times Pyramid(Q) by 12.7 applied to triangulated Q",
+      "type": "volume_relationship"
+    },
+    {
+      "step": "Step 19",
+      "claim": "Pyramid on Q with vertex at cone apex contains the cone; Pyramid(Q) > cone",
+      "type": "containment"
+    }
+  ],
+  "configuration_map": "Circle ABCD serves as the common base of both cone and cylinder. Polygon P is inscribed in the circle (vertices on circumference), so Prism(P) is contained in the cylinder and Pyramid(P) (with apex at cone vertex) is contained in the cone. Polygon Q is circumscribed about the circle (sides tangent to circumference), so Prism(Q) contains the cylinder and Pyramid(Q) (with apex at cone vertex) contains the cone. The cone's apex is at height h directly above the center of the base. All pyramids share this common apex point, ensuring that the decomposition of the polygon into triangles yields triangular pyramids that sum to the full pyramid. The 12.7 relationship (prism = 3 x pyramid for same triangular base and height) applies consistently to both inscribed and circumscribed configurations.",
+  "pass_reason": "All spatial claims are mutually consistent. Inscribed polygons correctly yield contained prisms/pyramids, circumscribed polygons correctly yield containing prisms/pyramids, and 12.7 is validly applied to both cases. The proof's alternative approach for Case 2 (using circumscribed polygons rather than Heath's direct cone exhaustion) is geometrically sound with no configuration contradictions."
+}

@@ -1,0 +1,91 @@
+{
+  "proposition": "3.8",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A is outside the circle with center M; line through A and M meets circle at B (convex/near side) and D (concave/far side); collinear order is A-B-M-D",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "E, F, G are on the concave circumference with E nearer to D than F, and F nearer to D than G",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "H is on the convex circumference on the other side of B from the other random lines",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "MD = ME = MF = MG = MH = MB, all radii of the circle",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AD = AM + MD because A and D are on opposite sides of M along the diameter line",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle AME is non-degenerate (A, M, E not collinear)",
+      "type": "triangle_existence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E nearer to D on concave arc implies central angle DME < central angle DMF",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Since A and D are on opposite sides of M, angle AME = 180 degrees minus angle DME (supplementary relationship)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "angle AME > angle AMF follows from the supplementary relationship",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle AMF > angle AMG by same supplementary argument (angle DMF < angle DMG)",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "B is between A and M, so AB = AM - MB",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "For K on convex circumference, triangle AMK gives AK + KM > AM by 1.20, hence AK > AB",
+      "type": "triangle_inequality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "B on segment AM means ray MB equals ray MA from M, so angle AMH = angle BMH",
+      "type": "ray_identity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H nearer to B than K on convex circumference implies angle BMH < angle BMK, hence angle AMH < angle AMK",
+      "type": "angle_ordering"
+    },
+    {
+      "step": "Step 8",
+      "claim": "L constructed on opposite side of line MA from H, with angle AML = angle AMH and ML a radius, so L is on the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Distinct points on the same semicircle yield distinct central angles with the diameter, ensuring uniqueness",
+      "type": "uniqueness"
+    }
+  ],
+  "configuration_map": "Collinear diameter line: A -- B -- M -- D (A external point, B near circle intersection on convex circumference, M center, D far circle intersection on concave circumference). Concave circumference (far arc from A): points E, F, G with E nearest to D (smallest arc), then F, then G. Central angles from D satisfy: angle DME < angle DMF < angle DMG. Convex circumference (near arc from A): B on the diameter line, H and K on the arc with H nearer to B than K. Central angles from B satisfy: angle BMH < angle BMK. Key angular relationships at M: (1) For concave points, angle AMX = 180 deg - angle DMX (supplementary, since A and D on opposite sides of M). (2) For convex points, angle AMX = angle BMX (identical rays, since B lies on segment AM so rays MA and MB coincide from M). These two relationships are the engine of the proof and are mutually consistent with the A-B-M-D collinear configuration.",
+  "pass_reason": "All spatial claims are mutually consistent. The collinear order A-B-M-D is maintained throughout. The supplementary angle relationship (for concave circumference) and ray identity (for convex circumference) are both valid consequences of this configuration. No additive angle decompositions are used, avoiding the primary error pattern. The AI's use of 1.24 instead of Heath's 1.21 for convex circumference ordering is a legitimate alternative that correctly exploits the coincidence of rays MA and MB."
+}

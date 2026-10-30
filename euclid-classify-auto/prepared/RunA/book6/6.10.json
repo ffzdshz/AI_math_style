@@ -1,0 +1,31 @@
+{
+  "proposition": "6.10",
+  "book": 6,
+  "statement": "To cut a given uncut straight line similarly to a given cut straight line.",
+  "heath_proof": "Let AB be the given uncut straight line, and AC the straight line cut at the points D, E; and let them be so placed as to contain any angle; let CB be joined, and through D, E let DF, EG be drawn parallel to BC, and through D let DHK be drawn parallel to AB. [I. 31] Therefore each of the figures FH, HB is a parallelogram; therefore DH is equal to FG and HK to GB. [I. 34] Now, since the straight line HE has been drawn parallel to KC, one of the sides of the triangle DKC, therefore, proportionally, as CE is to ED, so is KH to HD. [VI. 2] But KH is equal to BG, and HD to GF; therefore, as CE is to ED, so is BG to GF. Again, since FD has been drawn parallel to GE, one of the sides of the triangle AGE, therefore, proportionally, as ED is to DA, so is GF to FA. [VI. 2] But it was also proved that, as CE is to ED, so is BG to GF; therefore, as CE is to ED, so is BG to GF, and, as ED is to DA, so is GF to FA. Therefore the given uncut straight line AB has been cut similarly to the given cut straight line AC.",
+  "ai_proof_text": "6.10\n**Statement:** To cut a given uncut straight line similarly to a given cut straight line.\n\n**Step 1.** Let AC be the given cut straight line, cut at points D and E (so that A, D, E, C lie in order along the line), and let AB be the given uncut straight line. We are required to cut AB similarly to AC.\n\n**Step 2.** Place AB and AC so that they contain any angle at A. Join B to C by a straight line [P1].\n\n**Step 3.** Through D, draw DF parallel to BC, meeting AB at F [1.31]. Through E, draw EG parallel to BC, meeting AB at G [1.31].\n\n**Step 4.** Since DF and EG are each parallel to BC, they are parallel to one another [1.30].\n\n**Step 5.** In triangle ABC, since DF is parallel to side BC and meets sides AC and AB at D and F respectively, by Proposition 6.2 the sides are cut proportionally: AD:DC = AF:FB.\n\n**Step 6.** In triangle ABC, since EG is parallel to side BC and meets sides AC and AB at E and G respectively, by Proposition 6.2: AE:EC = AG:GB.\n\n**Step 7.** Now consider triangle AEG. The point D lies on side AE, and the point F lies on side AG, and DF is parallel to EG [Step 4]. Therefore, by Proposition 6.2 applied to triangle AEG: AD:DE = AF:FG.\n\n**Step 8.** Since AD:DE = AF:FG [Step 7], by Proposition 5.18 (componendo from separando): AE:DE = AG:FG, where AE = AD + DE and AG = AF + FG.\n\n**Step 9.** From Step 8, by inversion: DE:AE = FG:AG. From Step 6 we have AE:EC = AG:GB. Applying ex aequali [5.22] to the chain DE:AE and AE:EC on one side, and FG:AG and AG:GB on the other (since DE:AE = FG:AG and AE:EC = AG:GB), we obtain DE:EC = FG:GB.\n\n**Step 10.** We have now established AD:DE = AF:FG [Step 7] and DE:EC = FG:GB [Step 9]. Therefore AB has been cut at F and G similarly to how AC is cut at D and E: the segments AF, FG, GB of line AB are in the same ratios as the segments AD, DE, EC of line AC.\n\n**Step 11.** Therefore the given uncut straight line AB has been cut similarly to the given cut straight line AC, which is what was required to be done. Q.E.F.\n\n**USED:** 1.30, 1.31, 5.18, 5.22, 6.2, P1\n**Human refs (from References field):** 1.31, 1.34, 6.2\n**Jaccard:** 0.286 — AI adds ['1.30', '5.18', '5.22', 'P1']; Human adds ['1.34']",
+  "ai_used": [
+    "1.30",
+    "1.31",
+    "5.18",
+    "5.22",
+    "6.2",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.31",
+    "1.34",
+    "6.2"
+  ],
+  "ai_only": [
+    "1.30",
+    "5.18",
+    "5.22",
+    "P1"
+  ],
+  "heath_only": [
+    "1.34"
+  ],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let AC be the given cut straight line, cut at points D and E (so that A, D, E, C lie in order along the line), and let AB be the given uncut straight line. We are required to cut AB simila"
+}

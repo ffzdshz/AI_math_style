@@ -1,0 +1,81 @@
+{
+  "proposition": "12.18",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Spheres S (diameter a) and T (diameter b) are concentric at center O",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Cubes A (edge a) and B (edge b) are concentric at O and contain spheres S and T respectively",
+      "type": "containment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "P is a center-enclosing polyhedron inscribed in S, so P is inside S and contains O",
+      "type": "containment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Q is the radial copy of P in T, with vertices scaled along rays from O to surface of T; Q is inside T",
+      "type": "containment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Corresponding distances from O to vertices of P and Q are in ratio a:b",
+      "type": "proportional_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "P and Q are each divided into triangular pyramids with apex at O (O is inside both polyhedra)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Corresponding pyramids of P and Q are similar, with included angles at O equal and containing sides proportional",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Cube A+ (edge a+h) is concentric with A, slightly larger, so A is inside A+",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Inner sphere S- (diameter a-minus) is concentric at O, inside S",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "P encloses S- without its boundary touching S- (by 12.17)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "P+ (radial enlargement of P by ratio (a+h):a) contains S; the enlargement maps S- onto S and A onto A+",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Containment chain: S- is inside P, P is inside S, S is inside P+",
+      "type": "containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "P < A (polyhedron inscribed in sphere which is inside cube)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 6",
+      "claim": "S - P < P+ - P because S is contained in P+ and P is contained in S",
+      "type": "containment"
+    }
+  ],
+  "configuration_map": "All objects are concentric at center O. Containment chain: S- (inner sphere, diameter a^2/(a+h)) ⊂ P (inscribed polyhedron) ⊂ S (sphere, diameter a) ⊂ P+ (enlarged polyhedron) ⊂ A+ (enlarged cube, edge a+h), with S ⊂ A (cube, edge a) ⊂ A+. For the second sphere: Q (radial copy of P) ⊂ T (sphere, diameter b) ⊂ B (cube, edge b). The radial scaling from O maps P to Q, S to T, and A to B, scaling all distances by factor b/a. The enlargement scaling by (a+h)/a maps S- to S, P to P+, and A to A+. All containment relationships are consistent with the concentric arrangement and the two scaling operations.",
+  "pass_reason": "All spatial claims form a coherent system of concentric nested objects. The containment chain S- ⊂ P ⊂ S ⊂ P+ ⊂ A+ is internally consistent: the 12.17 inscription places P between S- and S, and the radial enlargement consistently maps this to the P+ ⊃ S relationship. The radial copy construction (P to Q) preserves angles and scales distances uniformly, making the similarity argument valid. The proportion-theory exhaustion in Steps 7-9 introduces no new spatial claims. No pair of spatial claims contradicts another."
+}

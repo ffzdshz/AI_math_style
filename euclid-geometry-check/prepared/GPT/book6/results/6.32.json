@@ -1,0 +1,56 @@
+{
+  "proposition": "6.32",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Triangles ABC and DCE adjoin at vertex C with AB parallel to DC and AC parallel to DE",
+      "type": "configuration"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CA lies inside angle BCD",
+      "type": "ray ordering"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CB and CE lie on opposite sides of CD",
+      "type": "ray ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AB parallel to DC with transversal AC gives alternate interior angles: angle BAC = angle ACD",
+      "type": "angle equality from parallels"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AC parallel to DE with transversal CD gives alternate interior angles: angle ACD = angle CDE",
+      "type": "angle equality from parallels"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangles ABC and DCE are equiangular by VI.6; in particular angle ABC = angle DCE",
+      "type": "angle equality from similar triangles"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB parallel to DC with transversal BC gives co-interior angles: angle ABC + angle BCD = 180 degrees",
+      "type": "co-interior angle sum from parallels"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle DCE + angle BCD = 180 degrees (by substituting angle ABC = angle DCE)",
+      "type": "derived angle relation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "CB and CE on opposite sides of CD with adjacent angles summing to 180 degrees implies collinearity by I.14",
+      "type": "collinearity from I.14"
+    }
+  ],
+  "configuration_map": "Point C is the shared vertex of both triangles. From C, four rays emanate: CA (into triangle ABC, lying inside angle BCD), CB (side of triangle ABC), CD (side of triangle DCE), and CE (side of triangle DCE). Rays CB and CE are on opposite sides of ray CD. The parallel conditions AB parallel to DC and AC parallel to DE constrain the angular relationships. Throughout the proof, the positions of all rays from C remain consistent: CB and CE stay on opposite sides of CD, the alternate angle equalities follow from the stated parallels, and the co-interior angle sum from AB parallel to DC with transversal BC is compatible with all other angular claims.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof avoids angle decomposition entirely, using instead alternate angles, co-interior angles, and algebraic substitution. The application of I.29 for both alternate and co-interior angle relationships is geometrically correct given the stated parallels. VI.6 is correctly applied with verified equal included angle and proportional sides. I.14 is correctly applied with CB and CE on opposite sides of CD and adjacent angles summing to 180 degrees. No spatial claim contradicts any other."
+}

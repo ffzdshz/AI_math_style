@@ -1,0 +1,39 @@
+{
+  "proposition": "9.17",
+  "book": 9,
+  "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.",
+  "heath_proof": "For let there be as many numbers as we please, A, B, C, D, in continued proportion, and let the extremes of them, A, D, be prime to one another; I say that D is not to any other number as A is to B. For, if possible, as A is to B, so let D be to E; therefore, alternately, as A is to D, so is B to E. [VII. 13] But A, D are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore A measures B. And, as A is to B, so is B to C. Therefore B also measures C; so that A also measures C. And since, as B is to C, so is C to D, and B measures C, therefore C also measures D. But A measured C; so that A also measures D. But it also measures itself; therefore A measures A, D which are prime to one another: which is impossible. Therefore D will not be to any other number as A is to B.",
+  "ai_proof_text": "9.17\n**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.\n\n**Step 1.** Let A_1, A_2, ..., A_n be as many numbers as we please in continued proportion, and let the extremes A_1 and A_n be prime to one another. We are to show that A_n is not to any other number as A_1 is to A_2.\n\n**Step 2.** Since A_1, A_2, ..., A_n are in continued proportion and A_1 and A_n are prime to one another, by 8.1, the numbers A_1, ..., A_n are the least of those which have the same ratio with them.\n\n**Step 3.** Let p and q be the least numbers in the ratio A_1 : A_2, which exist by 7.33. By 7.22, since p and q are the least numbers in their ratio, p and q are prime to one another.\n\n**Step 4.** By 8.2, the least numbers in continued proportion of n terms with ratio p : q are constructed: the first term is p multiplied by itself (n - 1) times, and the last term is q multiplied by itself (n - 1) times. Since A_1, ..., A_n are the least in continued proportion with ratio p : q (from Step 2), A_1 equals p multiplied by itself (n - 1) times, and A_n equals q multiplied by itself (n - 1) times.\n\n**Step 5.** Suppose, for the sake of contradiction, that there exists a number O such that A_n : O = A_1 : A_2 = p : q.\n\n**Step 6.** Since A_n : O = p : q, by 7.19 we have p times O equal to q times A_n.\n\n**Step 7.** Now A_n equals q multiplied by itself (n - 1) times (from Step 4). Therefore q times A_n equals q multiplied by itself n times. So p times O equals q multiplied by itself n times. This means p measures q multiplied by itself n times.\n\n**Step 8.** Since p and q are prime to one another (Step 3), by 7.27, p multiplied by itself any number of times and q multiplied by itself the same number of times are prime to one another. In particular, p multiplied by itself n times and q multiplied by itself n times are prime to one another.\n\n**Step 9.** Now p measures p multiplied by itself n times (since p taken p^(n-1) times yields p^n). From Step 7, p also measures q multiplied by itself n times. Therefore p is a common measure of p multiplied by itself n times and q multiplied by itself n times. But these two numbers are prime to one another (Step 8), so by D7.12 they are measured by a unit alone as a common measure. Therefore p must be the unit.\n\n**Step 10.** But if p is the unit, then A_1 = p multiplied by itself (n - 1) times = the unit. This means A_1 is a unit, not a number (by D7.2, a number is a multitude composed of units, so a number must be at least two). This contradicts the hypothesis that A_1 is a number.\n\n**Step 11.** Therefore, no such number O exists, and A_n is not to any other number as A_1 is to A_2. Q.E.D.\n\n**USED:** 7.19, 7.22, 7.27, 7.33, 8.1, 8.2, D7.12, D7.2\n**Human refs (from References field):** 7.13, 7.20, 7.21\n**Jaccard:** 0.000 — AI adds ['7.19', '7.22', '7.27', '7.33', '8.1', '8.2', 'D7.12', 'D7.2']; Human adds ['7.13', '7.20', '7.21']",
+  "ai_used": [
+    "7.19",
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.1",
+    "8.2",
+    "D7.12",
+    "D7.2"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "7.19",
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.1",
+    "8.2",
+    "D7.12",
+    "D7.2"
+  ],
+  "heath_only": [
+    "7.13",
+    "7.20",
+    "7.21"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A_1, A_2, ..., A_n be as many numbers as we please in continued proportion, and let the extremes A_1 and A_n be prime to one another. We are to show that A_n is not to any other number"
+}

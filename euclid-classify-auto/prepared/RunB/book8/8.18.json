@@ -1,0 +1,29 @@
+{
+  "proposition": "8.18",
+  "book": 8,
+  "statement": "Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.",
+  "heath_proof": "Let A, B be two similar plane numbers, and let the numbers C, D be the sides of A, and E, F of B. Now, since similar plane numbers are those which have their sides proportional, [VII. Def. 21] therefore, as C is to D, so is E to F. I say then that between A, B there is one mean proportional number, and A has to B the ratio duplicate of that which C has to E, or D to F, that is, of that which the corresponding side has to the corresponding side. Now since, as C is to D, so is E to F, therefore, alternately, as C is to E, so is D to F. [VII. 13] And, since A is plane, and C, D are its sides, therefore D by multiplying C has made A. For the same reason also E by multiplying F has made B. Now let D by multiplying E make G. Then, since D by multiplying C has made A, and by multiplying E has made G, therefore, as C is to E, so is A to G. [VII. 17] But, as C is to E, so is D to F; therefore also, as D is to F, so is A to G. Again, since E by multiplying D has made G, and by multiplying F has made B, therefore, as D is to F, so is G to B. [VII. 17] But it was also proved that, as D is to F, so is A to G; therefore also, as A is to G, so is G to B. Therefore A, G, B are in continued proportion. Therefore between A, B there is one mean proportional number. I say next that A also has to B the ratio duplicate of that which the corresponding side has to the corresponding side, that is, of that which C has to E or D to F. For, since A, G, B are in continued proportion, A has to B the ratio duplicate of that which it has to G. [V. Def. 9] And, as A is to G, so is C to E, and so is D to F. Therefore A also has to B the ratio duplicate of that which C has to E or D to F.",
+  "ai_proof_text": "8.18\n**Statement:** Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.\n\n**Step 1.** Let A and B be two similar plane numbers. By definition (D7.16), A is a plane number with sides c, d so that A = c * d, and B is a plane number with sides e, f so that B = e * f.\n\n**Step 2.** Since A and B are similar plane numbers, by definition (D7.21) their corresponding sides are proportional. Thus c : e :: d : f, where c corresponds to e and d corresponds to f.\n\n**Step 3.** Since c : e :: d : f, by 7.19 the product of the extremes equals the product of the means: c * f = d * e. Let M = c * f (which equals d * e). M is a number since it is the product of two numbers.\n\n**Step 4.** Consider the ratio A : M, that is, c * d : c * f. Since c multiplied by d produces c * d, and c multiplied by f produces c * f, by 7.17 the products have the same ratio as the numbers multiplied, so c * d : c * f :: d : f. Thus A : M :: d : f.\n\n**Step 5.** Consider the ratio M : B, that is, c * f : e * f. Since f multiplied by c produces c * f, and f multiplied by e produces e * f, by 7.17 the products have the same ratio as the numbers multiplied, so c * f : e * f :: c : e. Thus M : B :: c : e.\n\n**Step 6.** From Step 2 we have c : e :: d : f. From Step 5 we have M : B :: c : e. From Step 4 we have A : M :: d : f. Since c : e :: d : f, it follows that A : M :: M : B (both equal to the ratio c : e, equivalently d : f). Therefore M is one mean proportional number between A and B.\n\n**Step 7.** Since A, M, B are three numbers in continued proportion (A : M :: M : B), by the definition of duplicate ratio (D5.9), A has to B the ratio duplicate of that which A has to M. Now A : M :: d : f (Step 4), and d : f :: c : e (Step 2), so A has to B the ratio duplicate of that which corresponding side has to corresponding side.\n\n**Step 8.** Therefore, between two similar plane numbers there is one mean proportional number, and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side. Q.E.D.\n\n**USED:** 7.17, 7.19, D5.9, D7.16, D7.21\n**Human refs (from References field):** 7.13, 7.17, D5.9, D7.21\n**Jaccard:** 0.500 — AI adds ['7.19', 'D7.16']; Human adds ['7.13']",
+  "ai_used": [
+    "7.17",
+    "7.19",
+    "D5.9",
+    "D7.16",
+    "D7.21"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.17",
+    "D5.9",
+    "D7.21"
+  ],
+  "ai_only": [
+    "7.19",
+    "D7.16"
+  ],
+  "heath_only": [
+    "7.13"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let A and B be two similar plane numbers. By definition (D7.16), A is a plane number with sides c, d so that A = c * d, and B is a plane number with sides e, f so that B = e * f.  **Step 2"
+}

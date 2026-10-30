@@ -1,0 +1,71 @@
+{
+  "proposition": "3.1",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A and B are distinct points on the circumference; M is the midpoint of segment AB (AM = MB), so M lies on segment AB and inside the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line ℓ is perpendicular to AB at M, extending in both directions",
+      "type": "line_orientation"
+    },
+    {
+      "step": "Step 3",
+      "claim": "O (center) satisfies OA = OB; if O on line AB and outside segment AB, one of OA/OB strictly contains the other, so they are unequal",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "If O on segment AB and O ≠ M, then O is closer to one endpoint, making OA ≠ OB",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "O cannot equal A or B because the center is inside the circle; conclusion: O on line AB implies O = M, hence O on ℓ",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "When O is not on line AB, triangles AMO and BMO have AM = BM, MO common, OA = OB; SSS congruence gives angle AMO = angle BMO",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angles AMO and BMO are adjacent on line AB and equal, so both are right angles",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "X on ray of ℓ from M on same side of AB as O; angle AMX = right angle (ℓ ⊥ AB) and angle AMO = right angle (Step 4); rays MX and MO must coincide",
+      "type": "ray_uniqueness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "O lies on ℓ in every case (combining Steps 3 and 5)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "ℓ meets the circumference at C and D on opposite sides of O; since O (center) is on ℓ, CD is a diameter",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "K is the midpoint of CD (CK = KD); if K ≠ O, ordering C,K,O,D gives CO > CK = KD > OD, contradicting CO = OD",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "K = O, so the constructed midpoint of the diameter is the center",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Circle with center O (position unknown initially). A,B on circumference. M = midpoint of AB, on segment AB, inside circle. Line ℓ perpendicular to AB at M. O proven to lie on ℓ in all cases: (1) if O on line AB, betweenness and midpoint uniqueness force O = M which is on ℓ; (2) if O off line AB, SSS congruence makes angles AMO = BMO = right angle, and perpendicular uniqueness forces ray MO onto ℓ. Then C,D = ℓ ∩ circumference on opposite sides of O, making CD a diameter. K = midpoint of CD; one-dimensional betweenness argument on ℓ forces K = O.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof's case analysis (O on vs off line AB) correctly handles point positions. The perpendicular uniqueness argument in Step 5 is valid (two rays from M on the same side of AB each making right angles must coincide). The betweenness argument in Step 6 for K = O on line ℓ is sound. No angle decomposition issues arise since all angle reasoning involves right angles from perpendicularity, not problematic interior-point decompositions."
+}

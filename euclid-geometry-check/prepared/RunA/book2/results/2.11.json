@@ -1,0 +1,56 @@
+{
+  "proposition": "2.11",
+  "run": "RunA",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABDC is a square on AB with AB = BD = DC = CA and all angles right. Vertices in order A-B-D-C.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is the midpoint of segment AC, lying on side CA of the square.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Segment BE is drawn connecting vertex B to midpoint E on the opposite side.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "F lies on line CA produced beyond A, so the collinear order is C-E-A-F. EF = EB.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "FGHA is a square on FA with vertices F-G-H-A in order. H falls on segment AB.",
+      "type": "construction_and_point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "F, A, C are collinear with A between F and C. FA is added to line CA in a straight line beyond A.",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle EAB is a right angle (being an angle of square ABDC). Triangle EAB is right-angled at A.",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Line CF is cut at A with A between F and C. CF = CA + AF.",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 14",
+      "claim": "H lies on segment AB, cutting it into segments AH and HB.",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Square ABDC: Using coordinates A=(0,a), B=(a,a), D=(a,0), C=(0,0). Side CA is the left side (vertical). E = midpoint of AC = (0, a/2). F is on line CA extended above A: F=(0, a+t) where t = a(sqrt(5)-1)/2. Square FGHA extends to the right of segment FA: G=(t, a+t), H=(t, a). H lies on line AB (y=a) at x = t = a(sqrt(5)-1)/2, which is approximately 0.618a, confirming H is between A and B. All points maintain consistent positions throughout the proof. The collinear order C-E-A-F is preserved in Steps 4, 7, and 11. H on AB is used in Steps 5 and 14. Angle EAB = 90 degrees follows from the square construction in Step 1 and is used in Step 9.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction is the standard golden-section construction (same as Heath). Key verifications: (1) H does fall on segment AB since the square side FA is less than AB. (2) The collinear order C-E-A-F is maintained consistently across all applications of 2.6 and 2.3. (3) Angle EAB is correctly identified as right from the square. (4) No angle decomposition issues arise because the proof uses rectangle/square area identities (2.2, 2.3, 2.6) rather than angle-based arguments. Coordinate verification confirms all algebraic steps are correct."
+}

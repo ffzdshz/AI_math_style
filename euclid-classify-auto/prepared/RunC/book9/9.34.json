@@ -1,0 +1,28 @@
+{
+  "proposition": "9.34",
+  "book": 9,
+  "statement": "If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.",
+  "heath_proof": "For let the number A neither be one of those doubled from a dyad, nor have its half odd; I say that A is both even-times even and even-times odd. Now that A is even-times even is manifest; for it has not its half odd. [VII. Def. 8] I say next that it is also even-times odd. For, if we bisect A, then bisect its half, and do this continually, we shall come upon some odd number which will measure A according to an even number. For, if not, we shall come upon a dyad, and A will be among those which are doubled from a dyad: which is contrary to the hypothesis. Thus A is even-times odd. But it was also proved even-times even. Therefore A is both even-times even and even-times odd.",
+  "ai_proof_text": "9.34\n**Statement:** If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.\n\n**Step 1.** Let N be a number which is neither one of those continually doubled from a dyad, nor has its half odd. Since N has a half, N is even [D7.6]. Since the half of N is not odd, the half of N is even [D7.6, D7.7].\n\n**Step 2.** Since the half of N is even, N is measured by 2, and the result of the measurement, namely N/2, is itself even. Thus N is measured by the even number 2 according to the even number N/2. Therefore N is even-times even [D7.8].\n\n**Step 3.** Now we must show N is also even-times odd. Since N/2 is even, N/2 has a half, call it M, so that N = 4M. Consider M: either M is odd or M is even.\n\n**Step 4.** If M is odd, then N = 4M, where 4 is even and M is odd. Thus N is measured by the even number 4 according to the odd number M. Therefore N is even-times odd [D7.9].\n\n**Step 5.** If M is even, then M has a half. We continue halving: since N is not one of the numbers continually doubled from a dyad (that is, not 2, 4, 8, 16, ...) [9.32], N cannot be a power of 2. Therefore the repeated halving of N cannot always yield even numbers; at some stage we must reach an odd number.\n\n**Step 6.** More precisely, we can write N = 2^k * Q where k is a positive integer and Q is odd, with k >= 2 (since N/2 is even). Since N is not in the sequence continually doubled from a dyad, Q cannot be 1, so Q is an odd number greater than or equal to 1 (and in particular Q is a legitimate number by D7.2). The number 2^k is even, since k >= 2 means 2^k = 2 * 2^(k-1) and is measured by 2 [D7.6]. Since Q is odd, N is measured by the even number 2^k according to the odd number Q. Therefore N is even-times odd [D7.9].\n\n**Step 7.** In either case (Step 4 or Step 6), N is even-times odd. Combined with Step 2, N is both even-times even and even-times odd. This is what was to be proved.\n\n**USED:** 9.32, D7.2, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8\n**Jaccard:** 0.167 — AI adds ['9.32', 'D7.2', 'D7.6', 'D7.7', 'D7.9']",
+  "ai_used": [
+    "9.32",
+    "D7.2",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8"
+  ],
+  "ai_only": [
+    "9.32",
+    "D7.2",
+    "D7.6",
+    "D7.7",
+    "D7.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let N be a number which is neither one of those continually doubled from a dyad, nor has its half odd. Since N has a half, N is even [D7.6]. Since the half of N is not odd, the half of N i"
+}

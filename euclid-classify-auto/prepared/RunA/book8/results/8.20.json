@@ -1,0 +1,13 @@
+{
+  "proposition": "8.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same backbone: they establish the two target numbers as plane numbers with specific sides (D,F and E,G) via 7.33 and 7.20, then prove the sides are proportional (D:E = F:G), and conclude similarity. The difference lies in citation depth for the proportionality step. Heath uses 7.17 twice (to derive D:E = A:C = C:B and F:G = C:B) and then 7.13 (alternation to get D:F = E:G), while the AI derives E*F = D*G from the equalities and applies 7.19 (cross-multiplication converse) to get D:E = F:G directly. The proof-tree containment test confirms this is a depth difference: 7.17 (a heath_only item) appears inside Heath's own proof of 7.19 (an ai_only item), meaning the AI cites 7.19 as a unit while Heath re-derives its internals inline. The AI's additional citations of D7.16 and D7.21 are explicit definitions that Heath uses implicitly. Heath's use of 7.13 is an additional step to restate the proportionality in alternate form, which the AI bypasses by working with D:E = F:G directly for the similarity conclusion. All differences are citation-depth variations around the same logical backbone.",
+  "jaccard": 0.286,
+  "ai_citations": "7.19|7.20|7.33|D7.16|D7.21",
+  "heath_citations": "7.13|7.17|7.20|7.33",
+  "ai_only": "7.19|D7.16|D7.21",
+  "heath_only": "7.13|7.17",
+  "audit_record": ""
+}

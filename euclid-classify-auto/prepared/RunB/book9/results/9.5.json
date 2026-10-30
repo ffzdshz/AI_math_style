@@ -1,0 +1,13 @@
+{
+  "proposition": "9.5",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same initial backbone: establishing D = A*A is cube via 9.3, then deriving the ratio A:B = D:C via 7.17. They diverge in how they conclude B is cube: Heath re-derives the internals of 8.25 inline by going through mean proportionals (8.19 to show two mean proportionals fall between cubes D and C, 8.8 to transfer this to A and B, then 8.23 to conclude B is cube from four numbers in continued proportion), while the AI directly cites 8.25 which packages exactly those three steps. The proof-tree containment test confirms this: all three heath_only citations (8.19, 8.8, 8.23) appear inside Heath's own proof of 8.25, so the AI is citing at a higher level of abstraction rather than taking a genuinely different path. The ai_only definitions D7.15 and D7.19 are simple over-citation of definitions, a hallmark of granularity difference.",
+  "jaccard": 0.25,
+  "ai_citations": "7.17|8.25|9.3|D7.15|D7.19",
+  "heath_citations": "7.17|8.19|8.23|8.8|9.3",
+  "ai_only": "8.25|D7.15|D7.19",
+  "heath_only": "8.19|8.23|8.8",
+  "audit_record": ""
+}

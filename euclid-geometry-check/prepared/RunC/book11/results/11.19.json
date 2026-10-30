@@ -1,0 +1,51 @@
+{
+  "proposition": "11.19",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Planes AB and CD are each at right angles to reference plane P; planes AB and CD cut one another",
+      "type": "plane-perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Common section of AB and CD is line EF; E is the point where EF meets plane P",
+      "type": "plane-membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Common section of AB and P is line EG; common section of CD and P is line EH; E lies on both EG and EH and in P",
+      "type": "plane-membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "EK is erected at right angles to plane P from point E; EK is perpendicular to all lines through E lying in P",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Perpendicular to EG at E in plane AB is perpendicular to P (by D11.4); this perpendicular coincides with EK (by 11.13); therefore EK lies in plane AB",
+      "type": "plane-membership"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Perpendicular to EH at E in plane CD is perpendicular to P (by D11.4); this perpendicular coincides with EK (by 11.13); therefore EK lies in plane CD",
+      "type": "plane-membership"
+    },
+    {
+      "step": "Step 7",
+      "claim": "EK lies in both AB and CD; since EF is the common section of AB and CD, EK lies along EF",
+      "type": "line-coincidence"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EK is perpendicular to P and lies along EF, so EF is perpendicular to P",
+      "type": "perpendicularity"
+    }
+  ],
+  "configuration_map": "Plane P is the reference plane. Planes AB and CD are both perpendicular to P and intersect each other. E is a point lying in all three planes (P, AB, CD) where the common section EF of AB and CD meets P. Lines EG (intersection of AB with P) and EH (intersection of CD with P) are distinct lines in P through E. Line EK is the unique perpendicular to P from E. Through the proof, EK is shown to lie in plane AB (Step 5) and plane CD (Step 6) by applying D11.4 and 11.13 independently to each plane. Since EK lies in both AB and CD, it must lie along their common section EF (Step 7). Throughout all steps, each geometric object maintains a consistent spatial position: E stays in P; EK stays perpendicular to P; EG and EH remain in P; EF remains the common section of AB and CD.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof constructively shows that the unique perpendicular EK to plane P from E must lie in both planes AB and CD (via D11.4 and 11.13 applied independently), and therefore coincides with their common section EF. No angle decomposition, no inside/outside claims, and no ray-betweenness issues arise. Each geometric object maintains a consistent position across all steps."
+}

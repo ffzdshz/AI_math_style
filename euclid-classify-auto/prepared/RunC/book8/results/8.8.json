@@ -1,0 +1,13 @@
+{
+  "proposition": "8.8",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The classification is decided at Q1(b) by an invalid inference in Step 4 of the AI proof. The AI constructs the least numbers in continued proportion via 8.2, then claims 'by 8.1 the extremes F0 and F(n+1) are prime to one another.' However, 8.1 states the converse: 'If numbers in continued proportion have extremes prime to one another, then they are the least of those in the same ratio.' The AI needs the direction 'if they are the least, then the extremes are prime,' which is 8.3, not 8.1. This is not mere brevity or compression -- the cited proposition literally states the opposite implication from what is needed. The converse of a true implication is not logically guaranteed, so citing 8.1 does not license the conclusion that the extremes are prime. The audit record completes convincingly: the missing element is genuine logical support (not an expansion), as no reading of 8.1 yields the needed direction.",
+  "jaccard": 0.2,
+  "ai_citations": "7.17|7.20|7.33|8.1|8.2|CN1",
+  "heath_citations": "7.14|7.20|7.21|7.33|8.3|D7.20",
+  "ai_only": "7.17|8.1|8.2|CN1",
+  "heath_only": "7.14|7.21|8.3|D7.20",
+  "audit_record": "CANDIDATE E — 8.8\n  violated_claim : 'by 8.1 the extremes F0 and F(n+1) are prime to one another' (Step 4)\n  failure_mode   : invalid_inference\n  missing_is     : support — 8.1 states the converse of what is needed; the AI needs 8.3 (if least then prime), not 8.1 (if prime then least)\n  evidence       : AI Step 4: 'Since F0, F1, ..., F(n+1) are the least numbers in continued proportion in the ratio F:G, by 8.1 the extremes F0 and F(n+1) are prime to one another.' 8.1 states: 'If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.' The AI has least numbers and infers prime extremes, but 8.1 goes from prime extremes to least numbers.\n  why_not_terse  : This is not mere brevity — the cited proposition (8.1) literally states the converse implication. No amount of compression makes 8.1 yield 'least implies prime extremes'; that is 8.3's content."
+}

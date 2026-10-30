@@ -1,0 +1,56 @@
+{
+  "proposition": "11.33",
+  "run": "RunA",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "AB and CD are similar parallelepipedal solids with three edges AE, AG, AH and CF, CK, CL meeting at respective vertices, with AE:CF = AG:CK = AH:CL and equal vertex angles",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Edge AE is produced in a straight line to points N and P, making A, E, N, P collinear with AE:CF = CF:EN = EN:EP in continued proportion",
+      "type": "point_position_collinear"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Parallelogram AEKM is constructed on AE as base face of AB with second edge AK = AG and same angles as base face",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Parallelepiped S1 is constructed on segment EN with other two edges equal to CK and CL, same angles as CD",
+      "type": "solid_geometry_construction"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Parallelepiped S2 is constructed on segment EP with edges CK and CL, same angles as CD",
+      "type": "solid_geometry_construction"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Base of CD (sides CF, CK) and base of S1 (sides EN, CK) share edge CK; their area ratio is CF:EN",
+      "type": "base_comparison"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Base faces of AB (sides AE, AG) and CD (sides CF, CK) are similar parallelograms with area ratio equal to duplicate ratio of AE:CF",
+      "type": "similar_figures"
+    },
+    {
+      "step": "Step 10",
+      "claim": "CD-prime is constructed with same base as CD (edges CF, CK) but height edge AH instead of CL, preserving same vertex angles as CD",
+      "type": "solid_geometry_construction"
+    },
+    {
+      "step": "Step 11",
+      "claim": "AB and CD-prime both have height edge AH; since AB and CD are similar the angle between height edge and base face is equal, so perpendicular heights are equal, justifying XI.32",
+      "type": "height_equality"
+    }
+  ],
+  "configuration_map": "Solids AB and CD are similar parallelepipeds with proportional edges (AE:CF = AG:CK = AH:CL) and equal vertex angles. Points N and P lie on the extension of edge AE beyond E, collinear with A and E, with segments determined by the continued proportion AE:CF = CF:EN = EN:EP. Auxiliary parallelepipeds S1 (on EN with edges CK, CL) and S2 (on EP with edges CK, CL) are constructed with the same angles as CD but are not used in the final argument. The key auxiliary solid CD-prime shares its base with CD (edges CF, CK, same base angles) but has height edge AH replacing CL while preserving vertex angles. Since AB and CD are similar, the dihedral angle between the height edge and base face is the same, so AB and CD-prime have equal perpendicular heights (both = AH * sin(theta)), enabling application of XI.32. The ratio chain AB:CD-prime = base(AB):base(CD) = AE:EN (via XI.32 and VI.22), and CD-prime:CD = AH:CL = AE:CF = EN:EP (via XI.25 and similarity), yields AB:CD = AE:EP by ex aequali (V.22), where AE:EP is the triplicate ratio of AE:CF.",
+  "pass_reason": "All spatial constructions are mutually consistent. The auxiliary solid CD-prime is well-defined with base equal to that of CD and height edge AH preserving the vertex angles. The equal-height claim for AB and CD-prime is justified by the similarity of AB and CD (equal vertex angles ensure equal perpendicular heights when both have edge AH). The ratio chain through XI.25, XI.32, VI.22, and V.22 is sound. The unused constructions S1 and S2 are inelegant but introduce no spatial contradictions. No angle decomposition issues, no inside/outside contradictions, and no plane membership conflicts are present."
+}

@@ -1,0 +1,39 @@
+{
+  "proposition": "6.33",
+  "book": 6,
+  "statement": "In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.",
+  "heath_proof": "Let ABC, DEF be equal circles, and let the angles BGC, EHF be angles at their centres G, H, and the angles BAC, EDF angles at the circumferences; I say that, as the circumference BC is to the circumference EF, so is the angle BGC to the angle EHF, and the angle BAC to the angle EDF. For let any number of consecutive circumferences CK, KL be made equal to the circumference BC, and any number of consecutive circumferences FM, MN equal to the circumference EF; and let GK, GL, HM, HN be joined. Then, since the circumferences BC, CK, KL are equal to one another, the angles BGC, CGK, KGL are also equal to one another; [III. 27] therefore, whatever multiple the circumference BL is of BC, that multiple also is the angle BGL of the angle BGC. For the same reason also, whatever multiple the circumference NE is of EF, that multiple also is the angle NHE of the angle EHF. If then the circumference BL is equal to the circumference EN, the angle BGL is also equal to the angle EHN; [III. 27] if the circumference BL is greater than the circumference EN, the angle BGL is also greater than the angle EHN; and, if less, less. There being then four magnitudes, two circumferences BC, EF, and two angles BGC, EHF, there have been taken, of the circumference BC and the angle BGC equimultiples, namely the circumference BL and the angle BGL, and of the circumference EF and the angle EHF equimultiples, namely the circumference EN and the angle EHN. And it has been proved that, if the circumference BL is in excess of the circumference EN, the angle BGL is also in excess of the angle EHN; if equal, equal; and if less, less. Therefore, as the circumference BC is to EF, so is the angle BGC to the angle EHF. [V. Def. 5] But, as the angle BGC is to the angle EHF, so is the angle BAC to the angle EDF; for they are doubles respectively. Therefore also, as the circumference BC is to the circumference EF, so is the angle BGC to the angle EHF, and the angle BAC to the angle EDF.",
+  "ai_proof_text": "6.33\n**Statement:** In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.\n\n**Step 1.** Let θ and φ be angles in two equal circles, either both at their centres or both at their circumferences, and let a and b be the respective arcs on which they stand (D3.9). We use 3.26 directly: it converts equal angles into equal intercepted arcs in both cases, so it naturally applies to subdivisions obtained by angle-bisection. We shall establish the required proportion by the equimultiple criterion D5.5.\n\n**Step 2.** First, comparisons between such angles agree with comparisons between their intercepted arcs. Equal angles intercept equal arcs by 3.26. If one angle is greater than another, construct an angle equal to the smaller inside the greater, sharing one boundary side (1.23), and extend its other side to the circumference (P2). Its intercepted arc is a proper part of the arc intercepted by the greater angle, and equals the arc intercepted by the smaller angle (3.26). The greater angle therefore intercepts the greater arc (CN5). Interchanging the angles gives the corresponding assertion for a smaller angle. Thus greater, equal, and smaller angles intercept respectively greater, equal, and smaller arcs.\n\n**Step 3.** Let m and n be arbitrary positive whole-number multipliers. Choose a power of two k not smaller than either m or n. By repeated bisection, divide each of θ and φ into k equal adjacent angles, extending the dividing rays to the circumference (1.9, P2). Write θ₀ and φ₀ for one small angle in the respective divisions. The corresponding k successive arcs in each circle are equal, since their angles are equal (3.26); write a₀ and b₀ for one arc in the respective divisions. Hence, by the definition of a multiple,\nθ = kθ₀, φ = kφ₀, a = ka₀, and b = kb₀ (D5.2).\n\n**Step 4.** Take the first m adjacent small angles within θ and the first n within φ. Denote the resulting angles by Θ and Φ, and their intercepted arcs by A and B. Then\nΘ = mθ₀, Φ = nφ₀, A = ma₀, and B = nb₀ (D3.9, D5.2).\nBecause m and n are at most k, these auxiliary angles and arcs remain within the original angles and arcs. They therefore are genuine angles of the chosen kind, standing on the indicated arcs. By Step 2, the comparison between Θ and Φ agrees with the comparison between A and B (1.23, 3.26, CN5).\n\n**Step 5.** Taking k-fold sums and applying the addition rule for equimultiples gives\nkΘ = mθ, kΦ = nφ, kA = ma, and kB = nb (5.1).\nEquality is preserved under this common repetition by addition of equals (CN2). Strict inequality is also preserved: the larger magnitude consists of the smaller together with a positive remainder, and repeating both leaves a positive repeated remainder (5.1, CN5). Consequently, according as Θ exceeds, equals, or falls short of Φ, both mθ compared with nφ and ma compared with nb have that same relation. Thus mθ and nφ alike exceed, are alike equal to, or alike fall short of ma and nb respectively taken in corresponding order. These unrestricted multiples are sums; they need not fit within a single angle or circumference.\n\n**Step 6.** Since m and n were arbitrary, D5.5 gives θ : φ = a : b. The construction and comparison apply both when the two angles stand at the centres and when they stand at the circumferences. Therefore, in equal circles, angles have the same ratio as the circumferences on which they stand, in either case.\n\n**USED:** 1.23, 1.9, 3.26, 5.1, CN2, CN5, D3.9, D5.2, D5.5, P2\n**Human refs (from References field):** 3.27, D5.5\n**Jaccard:** 0.091 — AI adds ['1.23', '1.9', '3.26', '5.1', 'CN2', 'CN5', 'D3.9', 'D5.2', 'P2']; Human adds ['3.27']\n\n# Book 7",
+  "ai_used": [
+    "1.23",
+    "1.9",
+    "3.26",
+    "5.1",
+    "CN2",
+    "CN5",
+    "D3.9",
+    "D5.2",
+    "D5.5",
+    "P2"
+  ],
+  "heath_refs": [
+    "3.27",
+    "D5.5"
+  ],
+  "ai_only": [
+    "1.23",
+    "1.9",
+    "3.26",
+    "5.1",
+    "CN2",
+    "CN5",
+    "D3.9",
+    "D5.2",
+    "P2"
+  ],
+  "heath_only": [
+    "3.27"
+  ],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let θ and φ be angles in two equal circles, either both at their centres or both at their circumferences, and let a and b be the respective arcs on which they stand (D3.9). We use 3.26 dir"
+}

@@ -1,0 +1,34 @@
+{
+  "proposition": "9.34",
+  "book": 9,
+  "statement": "If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.",
+  "heath_proof": "For let the number A neither be one of those doubled from a dyad, nor have its half odd; I say that A is both even-times even and even-times odd. Now that A is even-times even is manifest; for it has not its half odd. [VII. Def. 8] I say next that it is also even-times odd. For, if we bisect A, then bisect its half, and do this continually, we shall come upon some odd number which will measure A according to an even number. For, if not, we shall come upon a dyad, and A will be among those which are doubled from a dyad: which is contrary to the hypothesis. Thus A is even-times odd. But it was also proved even-times even. Therefore A is both even-times even and even-times odd.",
+  "ai_proof_text": "9.34\n**Statement:** If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.\n\n**Step 1.** Let A be the given number and B its half. By hypothesis B is not odd, and therefore B is even (D7.6, D7.7). We use successive halving, since this directly continues the information given about the first half.\n\n**Step 2.** Since A consists of two copies of B, the even number B measures A according to the dyad. The dyad is itself even, being divisible into two equal units. Hence A is even-times even (D7.6, D7.8).\n\n**Step 3.** Starting with A, continue taking halves whenever the current number is even (D7.6). Each half is strictly smaller than the number halved (CN5). Since A is a finite multitude of units, this process must terminate, either at the unit or at a number which is not even (D7.2). It cannot terminate at the unit: reversing the halvings would then obtain A by continually doubling from the dyad, contrary to the hypothesis. Therefore it terminates at a number C which is odd (D7.7).\n\n**Step 4.** Starting with the unit, perform exactly as many doublings as there were halvings from A to C, and call the resulting number E. There were at least two halvings, since both A and its first half B are even. In particular, E is a double and is even (D7.6). Now reverse the halvings from C back to A. Starting with one copy of C, each reversal doubles the number of copies; thus the final number of copies is E. Consequently A is the sum of E copies of C, that is, the product of E and C (CN2, D7.15).\n\n**Step 5.** By commutativity of multiplication, A is also the sum of C copies of E (7.16, D7.15). Thus the even number E measures A according to the odd number C, so A is even-times odd (D7.9). Together with Step 2, this proves that A is both even-times even and even-times odd.\n\n**USED:** 7.16, CN2, CN5, D7.15, D7.2, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8\n**Jaccard:** 0.111 — AI adds ['7.16', 'CN2', 'CN5', 'D7.15', 'D7.2', 'D7.6', 'D7.7', 'D7.9']",
+  "ai_used": [
+    "7.16",
+    "CN2",
+    "CN5",
+    "D7.15",
+    "D7.2",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8"
+  ],
+  "ai_only": [
+    "7.16",
+    "CN2",
+    "CN5",
+    "D7.15",
+    "D7.2",
+    "D7.6",
+    "D7.7",
+    "D7.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.111,
+  "proof_summary": "**Step 1.** Let A be the given number and B its half. By hypothesis B is not odd, and therefore B is even (D7.6, D7.7). We use successive halving, since this directly continues the information given a"
+}

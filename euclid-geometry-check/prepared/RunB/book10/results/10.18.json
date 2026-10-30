@@ -1,0 +1,31 @@
+{
+  "proposition": "10.18",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is a point on segment BC such that the rectangle BD by DC equals one-fourth of the square on A",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is the midpoint of BC, so BE = EC",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BC is cut into equal segments at E and unequal segments at D (application of Prop 2.5)",
+      "type": "collinear_ordering"
+    },
+    {
+      "step": "Step 7",
+      "claim": "BD = EC + ED and DC = EC - ED, implying D lies between E and C on segment BC",
+      "type": "betweenness"
+    }
+  ],
+  "configuration_map": "All points are collinear on a single line segment: B --- E --- D --- C, where E is the midpoint of BC and D is between E and C. DF is merely a constructed length equal to 2 times ED, not a point placed in any complex spatial relationship. The entire configuration is one-dimensional with no angles, triangles, circles, or complex geometric figures.",
+  "skip_reason": "This is a Book 10 commensurability proposition whose proof is essentially algebraic. The only spatial content is the trivial placement of collinear points on a single line segment (D on BC, E as midpoint of BC). The entire substance of the proof consists of algebraic identities (Prop 2.5) and commensurability/incommensurability chain reasoning (Props 10.6, 10.11, 10.12, 10.13, 10.15, 10.16). There are no angles, no triangles, no circles, no interior/exterior claims, no ray orderings, and no angle decompositions — none of the geometric configuration patterns that could produce spatial contradictions."
+}

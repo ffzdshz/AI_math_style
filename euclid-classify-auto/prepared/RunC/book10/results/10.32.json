@@ -1,0 +1,13 @@
+{
+  "proposition": "10.32",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath's proof starts with three rational lines A, B, C from 10.29, defines D via sq(D) = rect(A,B) and E via rect(D,E) = rect(B,C), then derives the proportion A:C = D:E to establish all required properties. The AI proof takes a fundamentally different constructive approach: it starts with only two rational lines A, B from 10.29, independently constructs a third rational line E using number-theoretic arguments (10.6, 10.9, D10.1.3), defines M via sq(M) = rect(A,E), and obtains G as the fourth proportional (6.12) so that A:B = M:G. The central proportions differ (Heath: A:C = D:E; AI: A:B = M:G), the auxiliary constructions differ (Heath: rectangle equalities; AI: fourth proportional and independent rational line), and the route to showing the rectangle is medial differs (Heath: rect(D,E) = rect(B,C) which is directly medial; AI: rect(M,G) = rect(B,E) via ratio manipulations with 5.7, 5.9, 6.1). The AI's different path is logically complete and valid throughout, with each step properly justified by cited propositions. The large symmetric difference (Jaccard 0.263) and the presence of substantive ai_only propositions (6.12, 6.22, 5.7, 5.9) as well as substantive heath_only propositions (6.16, 6.17, 6.4, 6.8 from the Lemma; 10.30 from the secondary case remark) confirm a genuine path difference rather than mere granularity variation.",
+  "jaccard": 0.263,
+  "ai_citations": "10.11|10.12|10.14|10.21|10.23|10.29|10.6|10.9|5.7|5.9|6.1|6.12|6.22|D10.1.3",
+  "heath_citations": "10.11|10.14|10.21|10.23|10.29|10.30|6.16|6.17|6.4|6.8",
+  "ai_only": "10.12|10.6|10.9|5.7|5.9|6.1|6.12|6.22|D10.1.3",
+  "heath_only": "10.30|6.16|6.17|6.4|6.8",
+  "audit_record": ""
+}

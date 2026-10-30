@@ -1,0 +1,30 @@
+{
+  "proposition": "8.14",
+  "book": 8,
+  "statement": "If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.",
+  "heath_proof": "Let A, B be square numbers, let C, D be their sides, and let A measure B; I say that C also measures D. For let C by multiplying D make E; therefore A, E, B are continuously proportional in the ratio of C to D. [VIII. 11] And, since A, E, B are continuously proportional, and A measures B, therefore A also measures E. [VIII. 7] And, as A is to E, so is C to D; therefore also C measures D. [VII. Def. 20] Again, let C measure D; I say that A also measures B. For, with the same construction, we can in a similar manner prove that A, E, B are continuously proportional in the ratio of C to D. And since, as C is to D, so is A to E, and C measures D, therefore A also measures E. [VII. Def. 20] And A, E, B are continuously proportional; therefore A also measures B.",
+  "ai_proof_text": "8.14\n**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.\n\n**Step 1.** Let A and B be numbers, and let A², B² be their respective squares (D7.18). We must prove two things: (i) if A² measures B², then A measures B; and (ii) if A measures B, then A² measures B².\n\n**Step 2.** (Part i — Forward direction) Suppose A² measures B². By 8.11, between two square numbers A² and B² there is one mean proportional number, and A² has to B² the duplicate ratio of that which A has to B. The mean proportional is AB (the product of A and B), so A², AB, B² are in continued proportion.\n\n**Step 3.** Since A², AB, B² are in continued proportion and A² measures B² (the first measures the last), by 8.7, A² also measures AB (the first measures the second).\n\n**Step 4.** Now A multiplied by A produces A², and A multiplied by B produces AB (D7.15). By 7.17, the products of a number multiplying two numbers have the same ratio as the numbers multiplied, so A² : AB = A : B.\n\n**Step 5.** Since A² measures AB, there is some number k such that AB = k · A² (D7.3, D7.15). From the proportion A : B = A² : AB, since A² measures AB, it follows that A measures B. For A : B is the same ratio as A² : AB (Step 4), and since A² is a part of AB (or equals it), A is correspondingly a part of B (or equals it), hence A measures B (D7.20).\n\n**Step 6.** (Part ii — Converse direction) Now suppose A measures B. We must show A² measures B².\n\n**Step 7.** Since A measures B, A multiplied by A gives A² and A multiplied by B gives AB. By 7.17, A² : AB = A : B. Since A measures B, the ratio A : B means A is a part of (or equal to) B, so A² is a corresponding part of (or equal to) AB. Therefore A² measures AB (D7.20).\n\n**Step 8.** Similarly, since A measures B, B multiplied by A gives AB and B multiplied by B gives B². By 7.17, AB : B² = A : B. Since A measures B, AB is a corresponding part of (or equal to) B², so AB measures B² (D7.20).\n\n**Step 9.** Since A² measures AB (Step 7) and AB measures B² (Step 8), there exist numbers m and n such that AB = m · A² and B² = n · AB (D7.15). Then B² = n · m · A² = (nm) · A², so A² measures B² (D7.3, D7.15).\n\n**Step 10.** Therefore, if a square measures a square, the side also measures the side; and if the side measures the side, the square also measures the square. Q.E.D.\n\n**USED:** 7.17, 8.11, 8.7, D7.15, D7.18, D7.20, D7.3\n**Human refs (from References field):** 8.11, 8.7, D7.20\n**Jaccard:** 0.429 — AI adds ['7.17', 'D7.15', 'D7.18', 'D7.3']",
+  "ai_used": [
+    "7.17",
+    "8.11",
+    "8.7",
+    "D7.15",
+    "D7.18",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "D7.15",
+    "D7.18",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let A and B be numbers, and let A², B² be their respective squares (D7.18). We must prove two things: (i) if A² measures B², then A measures B; and (ii) if A measures B, then A² measures B"
+}

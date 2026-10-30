@@ -1,0 +1,27 @@
+{
+  "proposition": "11.7",
+  "book": 11,
+  "statement": "If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.",
+  "heath_proof": "Let AB, CD be two parallel straight lines, and let points E, F be taken at random on them respectively; I say that the straight line joining the points E, F is in the same plane with the parallel straight lines. For suppose it is not, but, if possible, let it be in a more elevated plane as EGF, and let a plane be drawn through EGF; it will then make, as section in the plane of reference, a straight line. [XI. 3] Let it make it, as EF; therefore the two straight lines EGF, EF will enclose an area: which is impossible. Therefore the straight line joined from E to F is not in a plane more elevated; therefore the straight line joined from E to F is in the plane through the parallel straight lines AB, CD.",
+  "ai_proof_text": "11.7\n**Statement:** If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.\n\n**Step 1.** Let AB and CD be two parallel straight lines, and let E be a point taken at random on AB and F a point taken at random on CD. Join EF [P1]. We must show that EF is in the same plane as AB and CD.\n\n**Step 2.** Since AB and CD are parallel, by definition they are in the same plane [D1.23]. Call this plane P. Since E lies on AB, the point E is in plane P. Since F lies on CD, the point F is in plane P.\n\n**Step 3.** Let G be any point on the segment EF between E and F. We claim G is also in plane P. Suppose, for the sake of contradiction, that G is not in plane P.\n\n**Step 4.** Since E is on AB and G is not in plane P, draw the straight line EG [P1]. Since E is in plane P and G is not, the line EG is not entirely in plane P. Similarly, draw the straight line GF [P1]. Since F is in plane P and G is not, GF is not entirely in plane P.\n\n**Step 5.** Now consider triangle EGF. However, EG and GF together compose the line EF, and G lies on EF, so E, G, F are collinear and do not form a triangle. We therefore adjust the argument. Take a point H on AB distinct from E, so that E and H are two distinct points on AB.\n\n**Step 6.** Consider the triangle EHF (with vertices E and H on AB, and F on CD). This is a genuine triangle since F is not on line AB (for if F were on AB, then since F is on CD, the lines AB and CD would meet, contradicting that they are parallel). By Proposition 11.2, every triangle is in one plane. Therefore triangle EHF lies in some plane Q.\n\n**Step 7.** The side EH of triangle EHF is a segment of line AB. Since EH lies in plane Q, and a part of a straight line cannot be in one plane and the rest in a plane more elevated [11.1], the entire line AB lies in plane Q.\n\n**Step 8.** The vertex F of triangle EHF lies in plane Q. The side EF of triangle EHF lies in plane Q. Thus EF is in plane Q.\n\n**Step 9.** We now show that CD also lies in plane Q. The point F is on CD and in plane Q. Take a point K on CD distinct from F. Consider triangle EFK (with E on AB and F, K on CD). Since K is a point on CD which is parallel to AB, and E is on AB, triangle EFK is a genuine triangle (K is not on line AB, by the same argument as in Step 6). By 11.2, triangle EFK lies in one plane.\n\n**Step 10.** The vertex E of triangle EFK is in plane Q (since E is on AB which lies in Q by Step 7). The vertex F is in plane Q (shown in Step 8). The side EF lies in plane Q (Step 8). Now the plane of triangle EFK contains E and F, and the plane Q also contains E and F. Since two distinct points determine a unique line, and three non-collinear points determine a unique plane, and E, F, K are non-collinear (K is not on line EF since otherwise K would be in the plane determined by triangle EHF, and being on CD... we need a more direct argument).\n\n**Step 11.** We simplify. From Steps 6-8, the plane Q contains line AB and point F and line EF. Since H and E are distinct points on AB in plane Q, and F is in plane Q but not on AB, the three non-collinear points H, E, F determine plane Q uniquely. Now the point K is on CD. Since AB is parallel to CD, both lie in plane P [D1.23]. But plane P also contains H, E (on AB) and F (on CD). Since H, E, F are non-collinear and determine a unique plane, plane P and plane Q are the same plane.\n\n**Step 12.** Therefore AB, CD, and EF all lie in the single plane P (which equals Q). Since E and F were arbitrary points on AB and CD respectively, the straight line EF joining them is in the same plane as the parallel straight lines AB and CD. Q.E.D.\n\n**USED:** 11.1, 11.2, D1.23, P1\n**Human refs (from References field):** 11.3\n**Jaccard:** 0.000 — AI adds ['11.1', '11.2', 'D1.23', 'P1']; Human adds ['11.3']",
+  "ai_used": [
+    "11.1",
+    "11.2",
+    "D1.23",
+    "P1"
+  ],
+  "heath_refs": [
+    "11.3"
+  ],
+  "ai_only": [
+    "11.1",
+    "11.2",
+    "D1.23",
+    "P1"
+  ],
+  "heath_only": [
+    "11.3"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AB and CD be two parallel straight lines, and let E be a point taken at random on AB and F a point taken at random on CD. Join EF [P1]. We must show that EF is in the same plane as AB "
+}

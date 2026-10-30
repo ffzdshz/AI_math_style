@@ -1,0 +1,51 @@
+{
+  "proposition": "10.91",
+  "run": "RunB",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 3",
+      "claim": "E is a point on segment AG such that AE * EG = (GD/2)^2, with AE commensurable in length with EG",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Semicircle AFG is described on AG as diameter",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "F is the point where the perpendicular from E to AG meets the semicircle, so EF is perpendicular to AG and F lies on the semicircle",
+      "type": "point_on_circle"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AE * EG = EF^2, from the perpendicular-to-diameter property in a semicircle",
+      "type": "metric_relation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angle AFG is a right angle (angle in semicircle)",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AF^2 + FG^2 = AG^2 (Pythagorean theorem on right triangle AFG)",
+      "type": "metric_relation"
+    },
+    {
+      "step": "Step 7",
+      "claim": "EF is the altitude from F to hypotenuse AG of right triangle AFG; AF^2 = AE * AG and FG^2 = EG * AG",
+      "type": "metric_relation"
+    },
+    {
+      "step": "Step 18",
+      "claim": "AE > EG (E between A and G with AE the larger segment)",
+      "type": "betweenness_ordering"
+    }
+  ],
+  "configuration_map": "AG is a line segment serving as the diameter of a semicircle. D is on AG with AD being a first apotome and DG the annex. E is a point on AG between A and G, dividing AG into commensurable parts AE and EG with AE * EG = (GD/2)^2 and AE > EG. F is the unique point on the semicircle directly above E, where the perpendicular from E meets the semicircle. Triangle AFG is right-angled at F (angle in semicircle). EF is the altitude from F to hypotenuse AG. After Step 7, the proof transitions to purely algebraic reasoning, defining abstract quantities p and q via p^2 = AC * AE and q^2 = AC * EG, and the geometric configuration plays no further role.",
+  "pass_reason": "All spatial claims from the semicircle construction (Steps 3-7) are standard and mutually consistent: E between A and G on the diameter, F on the semicircle with EF perpendicular to AG, right angle AFG, and the classical altitude-to-hypotenuse metric relations. No angle decomposition issues, no interior/exterior contradictions. The bulk of the proof (Steps 8-21) is purely algebraic manipulation of commensurability and rationality, introducing no further geometric configuration claims that could conflict."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "2.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The classification is decided at Q2/Q3 (path difference). The AI proof uses an algebraic approach, combining the decomposition identity 2.4 (square on a line equals squares on segments plus twice the rectangle) with the rectangle identity 2.3 (rectangle on whole and segment equals rectangle on segments plus square on segment), then uses arithmetic operations (doubling and addition, justified by CN2) and transitivity (CN1) to derive the desired equality. Heath's proof takes a direct geometric approach: constructing the square on AB (I.46), using the complement theorem (I.43) to establish equality of areas about the diagonal, then manipulating the gnomon and squares. The key intermediate conclusions are entirely different -- Heath works with gnomons, complements about the diagonal, and geometric area decomposition, while the AI works with previously proved algebraic identities from 2.3 and 2.4. The proof-tree containment test confirms genuine divergence: I.43, which is central to Heath's proof of 2.7, does not appear in Heath's proofs of 2.3 or 2.4, so the AI's route is not merely a higher-level packaging of the same geometric argument. The AI's algebraic chain is logically complete and valid, so the classification is D.",
+  "jaccard": 0.0,
+  "ai_citations": "2.3|2.4|CN1|CN2",
+  "heath_citations": "1.43|1.46",
+  "ai_only": "2.3|2.4|CN1|CN2",
+  "heath_only": "1.43|1.46",
+  "audit_record": ""
+}

@@ -1,0 +1,49 @@
+{
+  "proposition": "10.105",
+  "book": 10,
+  "statement": "A straight line commensurable with a minor straight line is minor.",
+  "heath_proof": "Let AB be a minor straight line, and CD commensurable with AB; I say that CD is also minor. Let the same construction be made as before; then, since AE, EB are incommensurable in square, [X. 76] therefore CF, FD are also incommensurable in square. [X. 13] Now since, as AE is to EB, so is CF to FD, [V. 12, V. 16] therefore also, as the square on AE is to the square on EB, so is the square on CF to the square on FD. [VI. 22] Therefore, componendo, as the squares on AE, EB are to the square on EB, so are the squares on CF, FD to the square on FD. [V. 18] But the square on BE is commensurable with the square on DF; therefore the sum of the squares on AE, EB is also commensurable with the sum of the squares on CF, FD. [V. 16, X. 11] But the sum of the squares on AE, EB is rational; [X. 76] therefore the sum of the squares on CF, FD is also rational. [X. Def. 4] Again, since, as the square on AE is to the rectangle AE, EB, so is the square on CF to the rectangle CF, FD, while the square on AE is commensurable with the square on CF, therefore the rectangle AE, EB is also commensurable with the rectangle CF, FD. But the rectangle AE, EB is medial; [X. 76] therefore the rectangle CF, FD is also medial; [X. 23] therefore CF, FD are straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial. Therefore CD is minor. [X. 76]",
+  "ai_proof_text": "10.105\n**Statement:** A straight line commensurable with a minor straight line is minor.\n\n**Step 1.** Let AB be a minor straight line, and let CD be commensurable with AB. We must show that CD is also minor.\n\n**Step 2.** Since AB is minor, let AB = AE - EB, where AE and EB are the components satisfying the definition of minor (10.76): AE and EB are incommensurable in square, the sum of the squares on AE and EB is rational, and twice the rectangle AE by EB is medial.\n\n**Step 3.** By 10.82, to a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial. Thus the decomposition AE, EB is unique.\n\n**Step 4.** Since CD is commensurable with AB, let CD be to AB as CD is to AB. Set CF and FD such that AE is to CF as EB is to FD as AB is to CD. This is possible by 6.12 (proportional construction). Then CF - FD = CD, since AE - EB = AB and the parts are in the same ratio (5.19).\n\n**Step 5.** Since AE is to CF as EB is to FD, and also as AB is to CD, we have AE is to CF as AB is to CD (by construction). Since AB is commensurable with CD, AE is commensurable with CF (10.11). Likewise, EB is commensurable with FD (10.11).\n\n**Step 6.** Since AE is commensurable with CF, the square on AE is commensurable with the square on CF (by 10.11, since commensurable magnitudes have commensurable squares). Likewise, the square on EB is commensurable with the square on FD.\n\n**Step 7.** Therefore the sum of the squares on AE and EB is commensurable with the sum of the squares on CF and FD (10.15, applied to commensurable pairs, and 10.12 for transitivity of commensurability among the sums).\n\n**Step 8.** Since the sum of the squares on AE and EB is rational (by hypothesis from 10.76), and the sum of the squares on CF and FD is commensurable with it, the sum of the squares on CF and FD is also rational (by D10.1.4 and D10.1.3, since a magnitude commensurable with a rational magnitude is rational).\n\n**Step 9.** Since AE is to CF as EB is to FD, the rectangle AE by EB is to the rectangle CF by FD as the square on AE is to the square on CF (6.16). Since the square on AE is commensurable with the square on CF (Step 6), the rectangle AE by EB is commensurable with the rectangle CF by FD (10.11).\n\n**Step 10.** Since twice the rectangle AE by EB is medial (by hypothesis from 10.76), and the rectangle CF by FD is commensurable with the rectangle AE by EB (Step 9), twice the rectangle CF by FD is also medial (10.23 applied to areas: a magnitude commensurable with a medial magnitude is medial, by 10.23 and the relationship between medial lines and medial areas).\n\n**Step 11.** Since AE and EB are incommensurable in square, and AE is to CF as EB is to FD, we consider: the square on AE is to the square on EB as the square on CF is to the square on FD (since AE:CF = EB:FD, and by 6.22 duplicate ratios are preserved). Since the squares on AE and EB are incommensurable (AE and EB being incommensurable in square), the squares on CF and FD are also incommensurable (10.11). Therefore CF and FD are incommensurable in square.\n\n**Step 12.** We have now established that CF and FD are incommensurable in square (Step 11), the sum of the squares on CF and FD is rational (Step 8), and twice the rectangle CF by FD is medial (Step 10). Therefore, by the definition of minor (10.76), CD = CF - FD is a minor straight line.\n\n**Step 13.** Therefore a straight line commensurable with a minor straight line is minor. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.15, 10.23, 10.76, 10.82, 5.19, 6.12, 6.16, 6.22, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.13, 10.23, 10.76, 5.12, 5.16, 5.18, 6.22, D10.1.4\n**Jaccard:** 0.312 — AI adds ['10.12', '10.15', '10.82', '5.19', '6.12', '6.16', 'D10.1.3']; Human adds ['10.13', '5.12', '5.16', '5.18']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.23",
+    "10.76",
+    "10.82",
+    "5.19",
+    "6.12",
+    "6.16",
+    "6.22",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.23",
+    "10.76",
+    "5.12",
+    "5.16",
+    "5.18",
+    "6.22",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "10.82",
+    "5.19",
+    "6.12",
+    "6.16",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.13",
+    "5.12",
+    "5.16",
+    "5.18"
+  ],
+  "jaccard": 0.312,
+  "proof_summary": "**Step 1.** Let AB be a minor straight line, and let CD be commensurable with AB. We must show that CD is also minor.  **Step 2.** Since AB is minor, let AB = AE - EB, where AE and EB are the componen"
+}

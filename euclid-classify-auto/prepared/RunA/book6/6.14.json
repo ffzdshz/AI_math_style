@@ -1,0 +1,34 @@
+{
+  "proposition": "6.14",
+  "book": 6,
+  "statement": "In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.",
+  "heath_proof": "Let AB, BC be equal and equiangular parallelograms having the angles at B equal, and let DB, BE be placed in a straight line; therefore FB, BG are also in a straight line. [I. 14] I say that, in AB, BC, the sides about the equal angles are reciprocally proportional, that is to say, that, as DB is to BE, so is GB to BF. For let the parallelogram FE be completed. Since, then, the parallelogram AB is equal to the parallelogram BC, and FE is another area, therefore, as AB is to FE, so is BC to FE. [V. 7] But, as AB is to FE, so is DB to BE, [VI. 1] and, as BC is to FE, so is GB to BF. [id.]therefore also, as DB is to BE, so is GB to BF. [V. 11] Therefore in the parallelograms AB, BC the sides about the equal angles are reciprocally proportional. Next, let GB be to BF as DB to BE; I say that the parallelogram AB is equal to the parallelogram BC. For since, as DB is to BE, so is GB to BF, while, as DB is to BE, so is the parallelogram AB to the parallelogram FE, [VI. 1] and, as GB is to BF, so is the parallelogram BC to the parallelogram FE, [VI. 1] therefore also, as AB is to FE, so is BC to FE; [V. 11] therefore the parallelogram AB is equal to the parallelogram BC. [V. 9]",
+  "ai_proof_text": "6.14\n**Statement:** In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.\n\n**Step 1.** Let ABCD and EBFG be equal and equiangular parallelograms with the equal angles at B, so that angle ABC equals angle EBF. We must show that the sides about the equal angles are reciprocally proportional, that is, AB : BE = BF : BC.\n\n**Step 2.** Place the parallelograms so that the sides CB and BE about the equal angles are in a straight line, that is, C, B, E are collinear. Since C, B, E are collinear, angle ABC + angle ABE equals two right angles [1.13].\n\n**Step 3.** Since angle ABC equals angle EBF (given), substituting yields angle EBF + angle ABE equals two right angles. Therefore A, B, F are in a straight line [1.14].\n\n**Step 4.** Through C draw a line parallel to BF, and through F draw a line parallel to BC [1.31]. Let these lines meet at H. Then BCHF is a parallelogram with BC and BF as adjacent sides at B, CH parallel to BF, and FH parallel to BC.\n\n**Step 5.** In parallelogram ABCD, the side DC is parallel to AB and hence parallel to the line ABF. In parallelogram BCHF, the side CH is parallel to BF and hence parallel to the line ABF. Since both DC and CH pass through C and are each parallel to ABF, they must lie on the same straight line, so D, C, H are collinear [1.30].\n\n**Step 6.** In parallelogram EBFG, the side GF is parallel to EB and hence parallel to the line CBE. In parallelogram BCHF, the side HF is parallel to BC and hence parallel to the line CBE. Since both GF and HF pass through F and are each parallel to CBE, they must lie on the same straight line, so H, F, G are collinear [1.30].\n\n**Step 7.** Now parallelograms ABCD and BCHF have their bases AB and BF on the same straight line ABF, and their opposite sides lie on the same straight line DCH (by Step 5). Therefore they are under the same height, and by 6.1, ABCD : BCHF = AB : BF.\n\n**Step 8.** Similarly, parallelograms BCHF and EBFG have their bases BC and BE on the same straight line CBE, and their opposite sides lie on the same straight line HFG (by Step 6). Therefore they are under the same height, and by 6.1, BCHF : EBFG = BC : BE. Equivalently, EBFG : BCHF = BE : BC.\n\n**Step 9.** (Forward direction) Since parallelogram ABCD equals parallelogram EBFG (given), they have the same ratio to BCHF [5.7]. Therefore EBFG : BCHF = AB : BF (from Step 7). But also EBFG : BCHF = BE : BC (from Step 8). Hence AB : BF = BE : BC [5.11].\n\n**Step 10.** By alternation, AB : BE = BF : BC [5.16]. This is the reciprocal proportion of the sides about the equal angles, which was to be proved.\n\n**Step 11.** (Converse direction) Now let ABCD and EBFG be equiangular parallelograms with equal angles at B and with the sides about the equal angles reciprocally proportional, so that AB : BE = BF : BC. We must show that parallelogram ABCD equals parallelogram EBFG.\n\n**Step 12.** Using the same arrangement as before (Steps 2 through 8), we again have ABCD : BCHF = AB : BF (Step 7) and BCHF : EBFG = BC : BE (Step 8).\n\n**Step 13.** From the hypothesis AB : BE = BF : BC, by alternation AB : BF = BE : BC [5.16].\n\n**Step 14.** From Step 7, ABCD : BCHF = AB : BF = BE : BC (by Step 13). From Step 8, EBFG : BCHF = BE : BC. Therefore ABCD : BCHF = EBFG : BCHF [5.11].\n\n**Step 15.** Since ABCD and EBFG have the same ratio to the same magnitude BCHF, it follows that ABCD equals EBFG [5.9]. This is what was to be proved.\n\n**USED:** 1.13, 1.14, 1.30, 1.31, 5.11, 5.16, 5.7, 5.9, 6.1\n**Human refs (from References field):** 1.14, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.556 — AI adds ['1.13', '1.30', '1.31', '5.16']",
+  "ai_used": [
+    "1.13",
+    "1.14",
+    "1.30",
+    "1.31",
+    "5.11",
+    "5.16",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.30",
+    "1.31",
+    "5.16"
+  ],
+  "heath_only": [],
+  "jaccard": 0.556,
+  "proof_summary": "**Step 1.** Let ABCD and EBFG be equal and equiangular parallelograms with the equal angles at B, so that angle ABC equals angle EBF. We must show that the sides about the equal angles are reciprocall"
+}

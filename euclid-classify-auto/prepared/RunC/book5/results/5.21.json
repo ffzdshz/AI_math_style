@@ -1,0 +1,13 @@
+{
+  "proposition": "5.21",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided this classification as Case B (different backbone), leading to Q3 which confirmed a valid different path (D). Heath's proof of the A > C case operates at the level of ratio comparisons: it uses 5.8 to get A:B > C:B, then 5.13 to transfer the greater-ratio through the hypotheses to get E:F > E:D, and finally 5.10 to conclude F < D. The AI proof instead works directly from the definitions of ratio (D5.5 and D5.7), unpacking 'greater ratio' into specific multiples m and n, then using D5.5 to transfer the multiple-inequalities through the ratio hypotheses, and assembling D > F from arithmetic on multiples without ever establishing ratio-comparison intermediate conclusions. The key intermediate conclusions differ: Heath reasons about ratio orderings (E:F > E:D) while the AI reasons about specific multiples (mE > nF, nD > mE). Furthermore, for Case 2 (A = C), the AI uses proof by contradiction while Heath merely says 'similarly we can prove.' The proof-tree containment test shows that 5.10 and 5.13 (heath_only) are not inside the proof of any proposition the AI cites as a unit; rather, the AI re-derives their substance from definitions, constituting a genuinely different proof strategy. The AI's path is logically complete and valid under the hardened 1(b) standard.",
+  "jaccard": 0.167,
+  "ai_citations": "5.8|D5.18|D5.5|D5.7",
+  "heath_citations": "5.10|5.13|5.8",
+  "ai_only": "D5.18|D5.5|D5.7",
+  "heath_only": "5.10|5.13",
+  "audit_record": ""
+}

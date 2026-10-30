@@ -1,0 +1,39 @@
+{
+  "proposition": "2.6",
+  "book": 2,
+  "statement": "If a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line.",
+  "heath_proof": "For let a straight line AB be bisected at the point C, and let a straight line BD be added to it in a straight line;  I say that the rectangle contained by AD, DB together with the square on CB is equal to the square on CD. For let the square CEFD be described on CD, [I. 46] and let DE be joined; through the point B let BG be drawn parallel to either EC or DF, through the point H let KM be drawn parallel to either AB or EF, and further through A let AK be drawn parallel to either CL or DM. [I. 31] Then, since AC is equal to CB, AL is also equal to CH. [I. 36]But CH is equal to HF. [I. 43] Therefore AL is also equal to HF. Let CM be added to each; therefore the whole AM is equal to the gnomon NOP. But AM is the rectangle AD, DB, for DM is equal to DB; therefore the gnomon NOP is also equal to the rectangle AD, DB. Let LG, which is equal to the square on BC, be added to each; therefore the rectangle contained by AD, DB together with the square on CB is equal to the gnomon NOP and LG. But the gnomon NOP and LG are the whole square CEFD, which is described on CD; therefore the rectangle contained by AD, DB together with the square on CB is equal to the square on CD.",
+  "ai_proof_text": "2.6\n**Statement:** If a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line.\n\n**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B. Thus A, C, B, D occur in that order, and AC = CB by hypothesis. Write R(X,Y) for the area of the rectangle contained by X and Y, and S(X) for the area of the square on X (D2.1, D1.22). Sums and doublings below refer to areas.\n\n**Step 2.** Choose the direct three-part dissection: the given points divide AD into AC, CB, and BD, so 2.1 applies without any auxiliary construction. Applying it with BD as the uncut straight line gives\nR(AD,BD) = R(AC,BD) + R(CB,BD) + S(BD),\nwhere the rectangle contained by BD and BD is the square on BD (2.1, D1.22).\n\n**Step 3.** Since AC = CB, the rectangles contained by AC, BD and by CB, BD coincide upon superposition and are equal (CN4). Substituting these equal areas in Step 2 therefore gives\nR(AD,BD) = 2R(CB,BD) + S(BD)\n(CN2).\n\n**Step 4.** The straight line CD is cut at B into CB and BD. Hence\nS(CD) = S(CB) + S(BD) + 2R(CB,BD)\nby 2.4.\n\n**Step 5.** Add S(CB) to both sides of the equality in Step 3 (CN2). Its right-hand side is precisely the sum of areas equal to S(CD) in Step 4. Consequently,\nR(AD,BD) + S(CB) = S(CD)\n(CN1). Here AD is the whole with the added straight line, BD is the added straight line, CB is the half, and CD consists of that half together with the added straight line. This is the required conclusion.\n\n**USED:** 2.1, 2.4, CN1, CN2, CN4, D1.22, D2.1\n**Human refs (from References field):** 1.31, 1.36, 1.43, 1.46\n**Jaccard:** 0.000 — AI adds ['2.1', '2.4', 'CN1', 'CN2', 'CN4', 'D1.22', 'D2.1']; Human adds ['1.31', '1.36', '1.43', '1.46']",
+  "ai_used": [
+    "2.1",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN4",
+    "D1.22",
+    "D2.1"
+  ],
+  "heath_refs": [
+    "1.31",
+    "1.36",
+    "1.43",
+    "1.46"
+  ],
+  "ai_only": [
+    "2.1",
+    "2.4",
+    "CN1",
+    "CN2",
+    "CN4",
+    "D1.22",
+    "D2.1"
+  ],
+  "heath_only": [
+    "1.31",
+    "1.36",
+    "1.43",
+    "1.46"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B. Thus A, C, B, D occur in that order, and AC = CB by hypothesis. Write R(X,Y) for the area of the rectangle "
+}

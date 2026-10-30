@@ -1,0 +1,33 @@
+{
+  "proposition": "8.18",
+  "book": 8,
+  "statement": "Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.",
+  "heath_proof": "Let A, B be two similar plane numbers, and let the numbers C, D be the sides of A, and E, F of B. Now, since similar plane numbers are those which have their sides proportional, [VII. Def. 21] therefore, as C is to D, so is E to F. I say then that between A, B there is one mean proportional number, and A has to B the ratio duplicate of that which C has to E, or D to F, that is, of that which the corresponding side has to the corresponding side. Now since, as C is to D, so is E to F, therefore, alternately, as C is to E, so is D to F. [VII. 13] And, since A is plane, and C, D are its sides, therefore D by multiplying C has made A. For the same reason also E by multiplying F has made B. Now let D by multiplying E make G. Then, since D by multiplying C has made A, and by multiplying E has made G, therefore, as C is to E, so is A to G. [VII. 17] But, as C is to E, so is D to F; therefore also, as D is to F, so is A to G. Again, since E by multiplying D has made G, and by multiplying F has made B, therefore, as D is to F, so is G to B. [VII. 17] But it was also proved that, as D is to F, so is A to G; therefore also, as A is to G, so is G to B. Therefore A, G, B are in continued proportion. Therefore between A, B there is one mean proportional number. I say next that A also has to B the ratio duplicate of that which the corresponding side has to the corresponding side, that is, of that which C has to E or D to F. For, since A, G, B are in continued proportion, A has to B the ratio duplicate of that which it has to G. [V. Def. 9] And, as A is to G, so is C to E, and so is D to F. Therefore A also has to B the ratio duplicate of that which C has to E or D to F.",
+  "ai_proof_text": "8.18\n**Statement:** Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.\n\n**Step 1.** Let A and C be two similar plane numbers. Then A = a * b and C = c * d for some numbers a, b, c, d, where a, b are the sides of A and c, d are the sides of C [D7.16]. Since A and C are similar plane numbers, their corresponding sides are proportional [D7.21], so a : c :: b : d, where a corresponds to c and b corresponds to d.\n\n**Step 2.** Let B = a * d, the number produced by multiplying the side a of the first plane number by the non-corresponding side d of the second plane number.\n\n**Step 3.** Since the number a multiplies both b and d to produce a * b = A and a * d = B respectively, by 7.17 we have A : B :: b : d.\n\n**Step 4.** Since the numbers a and c each multiply d to produce a * d = B and c * d = C respectively, by 7.18 we have B : C :: a : c.\n\n**Step 5.** But a : c :: b : d by the similarity of the plane numbers (Step 1). Therefore A : B :: B : C [CN1], since both ratios A : B and B : C equal the ratio b : d (from Steps 3, 4, and 5, noting that B : C :: a : c :: b : d).\n\n**Step 6.** Thus B is one mean proportional number between the similar plane numbers A and C. This establishes the first part of the proposition.\n\n**Step 7.** We also verify that B is a number: since a : c :: b : d, by 7.19 the product a * d equals the product b * c. So B = a * d = b * c, confirming B is a well-defined number (the product of two numbers).\n\n**Step 8.** Since A, B, C are three numbers in continued proportion (A : B :: B : C), by D5.9 the first A has to the third C the ratio duplicate of that which A has to the second B. But A : B :: b : d (Step 3), and b, d are corresponding sides of the two similar plane numbers. Therefore the plane number A has to the plane number C the ratio duplicate of that which the corresponding side b has to the corresponding side d.\n\n**Step 9.** The same holds for the other pair of corresponding sides: since A : B :: b : d and B : C :: a : c, and a : c :: b : d, the duplicate ratio of A to C is equally the duplicate of a : c. Therefore the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side. Q.E.D.\n\n**USED:** 7.17, 7.18, 7.19, CN1, D5.9, D7.16, D7.21\n**Human refs (from References field):** 7.13, 7.17, D5.9, D7.21\n**Jaccard:** 0.375 — AI adds ['7.18', '7.19', 'CN1', 'D7.16']; Human adds ['7.13']",
+  "ai_used": [
+    "7.17",
+    "7.18",
+    "7.19",
+    "CN1",
+    "D5.9",
+    "D7.16",
+    "D7.21"
+  ],
+  "heath_refs": [
+    "7.13",
+    "7.17",
+    "D5.9",
+    "D7.21"
+  ],
+  "ai_only": [
+    "7.18",
+    "7.19",
+    "CN1",
+    "D7.16"
+  ],
+  "heath_only": [
+    "7.13"
+  ],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let A and C be two similar plane numbers. Then A = a * b and C = c * d for some numbers a, b, c, d, where a, b are the sides of A and c, d are the sides of C [D7.16]. Since A and C are sim"
+}

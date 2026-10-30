@@ -1,0 +1,28 @@
+{
+  "proposition": "7.9",
+  "book": 7,
+  "statement": "If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.",
+  "heath_proof": "For let the number A be a part of the number BC, and another, D, the same part of another, EF, that A is of BC; I say that, alternately also, whatever part or parts A is of D, the same part or parts is BC of EF also. For since, whatever part A is of BC, the same part also is D of EF, therefore, as many numbers as there are in BC equal to A, so many also are there in EF equal to D. Let BC be divided into the numbers equal to A, namely BG, GC, and EF into those equal to D, namely EH, HF; thus the multitude of BG, GC will be equal to the multitude of EH, HF. Now, since the numbers BG, GC are equal to one another, and the numbers EH, HF are also equal to one another, while the multitude of BG, GC is equal to the multitude of EH, HF, therefore, whatever part or parts BG is of EH, the same part or the same parts is GC of HF also; so that, in addition, whatever part or parts BG is of EH, the same part also, or the same parts, is the sum BC of the sum EF. [VII. 5, 6] But BG is equal to A, and EH to D; therefore, whatever part or parts A is of D, the same part or the same parts is BC of EF also.",
+  "ai_proof_text": "7.9\n**Statement:** If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.\n\n**Step 1.** Let A be the same part of B that C is of D. We must show that, alternately, whatever part or parts A is of C, the same part or the same parts B is of D.\n\n**Step 2.** Since A is the same part of B that C is of D, by Definition D7.3, A measures B and C measures D, and A is the same kind of part of B as C is of D. That is, there are as many units equal to A in B as there are units equal to C in D. Let B be composed of n numbers each equal to A, so B = A + A + ... + A (n terms), and likewise D = C + C + ... + C (n terms), where the number of terms is the same in each case.\n\n**Step 3.** Now by Proposition 7.4, since A and C are both numbers and A is less than or equal to C (or in any case they are comparable), A is either a part of C or parts of C.\n\n**Step 4.** Case 1: Suppose A is a part of C, that is, A is the same part of C (say a 1/m-th part) by D7.3. We must show that B is the same part of D.\n\n**Step 5.** Consider the n copies of A that compose B, call them A_1, A_2, ..., A_n (each equal to A), and the n copies of C that compose D, call them C_1, C_2, ..., C_n (each equal to C). Since A_1 = A is the same part of C_1 = C as A_2 = A is of C_2 = C, we may apply Proposition 7.5 to conclude that A_1 + A_2 is the same part of C_1 + C_2 as A is of C.\n\n**Step 6.** Now A_1 + A_2 is the same part of C_1 + C_2 as A_3 is of C_3 (since A_3 = A is the same part of C_3 = C). Applying Proposition 7.5 again, A_1 + A_2 + A_3 is the same part of C_1 + C_2 + C_3 as A is of C. Continuing this process for all n terms, we conclude that B = A_1 + A_2 + ... + A_n is the same part of D = C_1 + C_2 + ... + C_n as A is of C.\n\n**Step 7.** Case 2: Suppose A is parts of C, that is, A consists of several equal parts of C by D7.4. We must show that B is the same parts of D.\n\n**Step 8.** Again consider the n copies of A composing B and the n copies of C composing D. Since A_1 = A is the same parts of C_1 = C as A_2 = A is of C_2 = C, we apply Proposition 7.6 to conclude that A_1 + A_2 is the same parts of C_1 + C_2 as A is of C.\n\n**Step 9.** Applying Proposition 7.6 iteratively as in Step 6 (each time combining the accumulated sum with the next pair A_i, C_i), we conclude that B = A_1 + ... + A_n is the same parts of D = C_1 + ... + C_n as A is of C.\n\n**Step 10.** Therefore, in both cases, whatever part or parts A is of C, the same part or the same parts B is of D. This is what was to be proved. Q.E.D.\n\n**USED:** 7.4, 7.5, 7.6, D7.3, D7.4, D7.5\n**Human refs (from References field):** 7.5, 7.6\n**Jaccard:** 0.333 — AI adds ['7.4', 'D7.3', 'D7.4', 'D7.5']",
+  "ai_used": [
+    "7.4",
+    "7.5",
+    "7.6",
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.5",
+    "7.6"
+  ],
+  "ai_only": [
+    "7.4",
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let A be the same part of B that C is of D. We must show that, alternately, whatever part or parts A is of C, the same part or the same parts B is of D.  **Step 2.** Since A is the same pa"
+}

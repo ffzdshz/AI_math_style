@@ -1,0 +1,53 @@
+{
+  "proposition": "13.15",
+  "book": 13,
+  "statement": "To construct a cube and comprehend it in a sphere, like the pyramid; and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.",
+  "heath_proof": "Let the diameter AB of the given sphere be set out, and let it be cut at C so that AC is double of CB; let the semicircle ADB be described on AB, let CD be drawn from C at right angles to AB, and let DB be joined; let the square EFGH having its side equal to DB be set out, from E, F, G, H let EK, FL, GM, HN be drawn at right angles to the plane of the square EFGH, from EK, FL, GM, HN let EK, FL, GM, HN respectively be cut off equal to one of the straight lines EF, FG, GH, HE, and let KL, LM, MN, NK be joined; therefore the cube FN has been constructed which is contained by six equal squares. It is then required to comprehend it in the given sphere, and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube. For let KG, EG be joined. Then, since the angle KEG is right, because KE is also at right angles to the plane EG and of course to the straight line EG also, [XI. Def. 3] therefore the semicircle described on KG will also pass through the point E. Again, since GF is at right angles to each of the straight lines FL, FE, GF is also at right angles to the plane FK; hence also, if we join FK, GF will be at right angles to FK; and for this reason again the semicircle described on GK will also pass through F. Similarly it will also pass through the remaining angular points of the cube. If then, KG remaining fixed, the semicircle be carried round and restored to the same position from which it began to be moved, the cube will be comprehended in a sphere. I say next that it is also comprehended in the given sphere. For, since GF is equal to FE, and the angle at F is right, therefore the square on EG is double of the square on EF. But EF is equal to EK; therefore the square on EG is double of the square on EK; hence the squares on GE, EK, that is the square on GK [I. 47], is triple of the square on EK. And, since AB is triple of BC, while, as AB is to BC, so is the square on AB to the square on BD, therefore the square on AB is triple of the square on BD. But the square on GK was also proved triple of the square on KE. And KE was made equal to DB; therefore KG is also equal to AB. And AB is the diameter of the given sphere; therefore KG is also equal to the diameter of the given sphere. Therefore the cube has been comprehended in the given sphere; and it has been demonstrated at the same time that the square on the diameter of the sphere is triple of the square on the side of the cube.",
+  "ai_proof_text": "13.15\n**Statement:** To construct a cube and comprehend it in a sphere, like the pyramid; and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.\n\n**Step 1.** Let AB be the diameter of the given sphere. Cut AB at C such that AC = 2*CB, using 6.10 to divide AB in the ratio 2:1. Then AB = AC + CB = 3*CB, so CB = (1/3)*AB.\n\n**Step 2.** Describe a semicircle ADB on AB as diameter [P3]. From C, draw CD at right angles to AB [1.11]. Join DB [P1].\n\n**Step 3.** Since ADB is a semicircle, angle ADB is a right angle [3.31]. In the right-angled triangle ADB, CD has been drawn from D perpendicular to the hypotenuse AB. By 6.8, the triangles BDC and BDA are similar. Therefore BD/BC = BA/BD [6.4], whence BD*BD = BC*BA [6.17], that is, BD^2 = BC*BA.\n\n**Step 4.** Since CB = (1/3)*AB, we have BD^2 = (1/3)*AB * AB = (1/3)*AB^2. Therefore AB^2 = 3*BD^2.\n\n**Step 5.** On BD, construct square EFGH with EF = BD [1.46]. This will be the base of the cube.\n\n**Step 6.** From each vertex E, F, G, H of the square, erect a straight line perpendicular to the plane of the square EFGH [11.12]. These four perpendiculars are parallel to one another [11.6].\n\n**Step 7.** On each perpendicular, cut off EK, FL, GM, HN each equal to EF [1.3]. Join KL, LM, MN, NK [P1].\n\n**Step 8.** Since EK and FL are equal and parallel (both perpendicular to the same plane and equal in length [11.6]), and EF joins their endpoints in the base plane, the figure EFLE'... more precisely: EF is equal and parallel to KL, and EK is equal and parallel to FL [1.33]. Therefore EKFL is a parallelogram with all sides equal to EF and all angles right, so KFLG... Actually, by 1.33, since EK and FL are equal and parallel, KL is equal and parallel to EF. Similarly LM = FG, MN = GH, NK = HE, all equal and parallel to the corresponding base edges. Thus KLMN is a square equal to EFGH, and the six faces EFGH, KLMN, EKFL, FLGM, GMHN, HNKE are all equal squares. The solid is therefore a cube [D11.25].\n\n**Step 9.** Join the diagonal EG of the base square EFGH [P1]. Since angle EFG is a right angle and EF = FG, by 1.47, EG^2 = EF^2 + FG^2 = 2*EF^2.\n\n**Step 10.** Join EM, the line from vertex E to vertex M (the vertex of the top face diagonally opposite) [P1]. Since GM is perpendicular to the plane of EFGH, angle EGM is a right angle. By 1.47, EM^2 = EG^2 + GM^2 = 2*EF^2 + EF^2 = 3*EF^2.\n\n**Step 11.** But EF = BD, so EM^2 = 3*BD^2 = AB^2 (from Step 4). Therefore EM = AB, and the space diagonal of the cube equals the diameter of the sphere.\n\n**Step 12.** Now consider the rectangle EGMK (where K is above E and M is above G). Since EK and GM are both perpendicular to the plane EFGH and equal in length, EK is parallel and equal to GM [11.6]. Also EG is parallel and equal to KM (shown in Step 8). So EGMK is a parallelogram [1.33, 1.34]. Its diagonals EM and GK bisect each other [1.34]. Let O be their point of intersection; then O is the midpoint of EM, and OE = OM = EM/2.\n\n**Step 13.** Similarly, consider the rectangle FHNG (where N is above H and L is above F... more precisely, FHNL where L is above F and N is above H). This is also a parallelogram whose diagonals FN and HL bisect each other at the same center point O (since the center of the cube is the unique point equidistant from all vertices). By the same reasoning, OF = ON = OH = OL = FN/2. Since FN^2 = FH^2 + HN^2 = 2*EF^2 + EF^2 = 3*EF^2 = EM^2, we have FN = EM, so OF = OE. Therefore O is equidistant from all eight vertices of the cube.\n\n**Step 14.** The sphere with center O and radius OE therefore passes through all eight vertices of the cube, so the cube is comprehended in the sphere [D11.14]. The diameter of this sphere is EM = AB.\n\n**Step 15.** Since EM^2 = 3*EF^2 (Step 10), and EM is the diameter and EF is the side of the cube, the square on the diameter of the sphere is triple of the square on the side of the cube. This is what was to be proved.\n\n**USED:** 1.11, 1.3, 1.33, 1.34, 1.46, 1.47, 11.12, 11.6, 3.31, 6.10, 6.17, 6.4, 6.8, D11.14, D11.25, P1, P3\n**Human refs (from References field):** 1.47, D11.3\n**Jaccard:** 0.056 — AI adds ['1.11', '1.3', '1.33', '1.34', '1.46', '11.12', '11.6', '3.31', '6.10', '6.17', '6.4', '6.8', 'D11.14', 'D11.25', 'P1', 'P3']; Human adds ['D11.3']",
+  "ai_used": [
+    "1.11",
+    "1.3",
+    "1.33",
+    "1.34",
+    "1.46",
+    "1.47",
+    "11.12",
+    "11.6",
+    "3.31",
+    "6.10",
+    "6.17",
+    "6.4",
+    "6.8",
+    "D11.14",
+    "D11.25",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.47",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.3",
+    "1.33",
+    "1.34",
+    "1.46",
+    "11.12",
+    "11.6",
+    "3.31",
+    "6.10",
+    "6.17",
+    "6.4",
+    "6.8",
+    "D11.14",
+    "D11.25",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "D11.3"
+  ],
+  "jaccard": 0.056,
+  "proof_summary": "**Step 1.** Let AB be the diameter of the given sphere. Cut AB at C such that AC = 2*CB, using 6.10 to divide AB in the ratio 2:1. Then AB = AC + CB = 3*CB, so CB = (1/3)*AB.  **Step 2.** Describe a s"
+}

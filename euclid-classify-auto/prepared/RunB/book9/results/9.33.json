@@ -1,0 +1,13 @@
+{
+  "proposition": "9.33",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same logical backbone: (1) the half of the number is odd, so the number is even-times odd by D7.9; (2) assume for contradiction the number is also even-times even per D7.8; (3) then the half would be measured by an even number, making it even; (4) but the half is odd, contradiction; (5) therefore the number is even-times odd only. The AI proof is substantially more verbose, explicitly unpacking foundational definitions (D7.6 for even, D7.7 for odd, D7.15 for multiplication) and CN2 (adding equals to equals) that Heath treats as implicit. Since heath_only is empty and ai_only contains only definitions and a common notion, this is a clear case of the AI over-citing foundational items while following the identical argument structure. Q2 Case A applies: same backbone, different citation depth, yielding classification G.",
+  "jaccard": 0.333,
+  "ai_citations": "CN2|D7.15|D7.6|D7.7|D7.8|D7.9",
+  "heath_citations": "D7.8|D7.9",
+  "ai_only": "CN2|D7.15|D7.6|D7.7",
+  "heath_only": "",
+  "audit_record": ""
+}

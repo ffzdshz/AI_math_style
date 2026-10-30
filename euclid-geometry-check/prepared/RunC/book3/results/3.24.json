@@ -1,0 +1,36 @@
+{
+  "proposition": "3.24",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AEB and CFD are similar segments of circles on equal straight lines AB and CD",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "When AEB is applied to CFD with A placed on C and AB on CD, point B coincides with D because AB = CD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "If AEB does not coincide with CFD under superposition, the arc falls as segment CGD on chord CD on the same side as CFD, giving two similar but unequal segments on the same side of CD",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Two similar and unequal segments on the same line on the same side is impossible by 3.23",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AEB coincides with CFD under superposition, hence they are equal",
+      "type": "segment_position"
+    }
+  ],
+  "configuration_map": "Two equal chords AB and CD each carry a similar circular segment (AEB and CFD). Under superposition, A is placed on C and AB on CD, forcing B to coincide with D (since AB = CD). Orientation is preserved because the segments are similar (contain equal angles per D3.11), so the superposed arc lies on the same side of CD as the original arc CFD. If the arcs do not coincide, segment CGD (the superposed copy of AEB) and segment CFD coexist as two similar but unequal segments on the same chord CD on the same side — contradicting 3.23. All spatial relationships are straightforward and mutually consistent throughout the proof.",
+  "pass_reason": "The proof uses a clean superposition argument with minimal spatial claims. All claims are mutually consistent: the superposition correctly places endpoints (A on C, B on D), preserves orientation so the superposed arc lies on the same side as CFD, and the contradiction via 3.23 is properly set up. There are no angle decompositions, no interior/exterior point arguments, and no complex configurations that could harbor hidden contradictions."
+}

@@ -1,0 +1,49 @@
+{
+  "proposition": "10.95",
+  "book": 10,
+  "statement": "If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.",
+  "heath_proof": "For let the area AB be contained by the rational straight line AC and the fifth apotome AD; I say that the “side” of the area AB is a straight line which produces with a rational area a medial whole. For let DG be the annex to AD; therefore AG, GD are rational straight lines commensurable in square only, the annex GD is commensurable in length with the rational straight line AC set out, and the square on the whole AG is greater than the square on the annex DG by the square on a straight line incommensurable with AG. [X. Deff. III. 5] Therefore, if there be applied to AG a parallelogram equal to the fourth part of the square on DG and deficient by a square figure, it will divide it into incommensurable parts. [X. 18] Let then DG be bisected at the point E, let there be applied to AG a parallelogram equal to the square on EG and deficient by a square figure, and let it be the rectangle AF, FG; therefore AF is incommensurable in length with FG. Now, since AG is incommensurable in length with CA, and both are rational, therefore AK is medial. [X. 21] Again, since DG is rational and commensurable in length with AC, DK is rational. [X. 19] Now let the square LM be constructed equal to AI, and let the square NO equal to FK and about the same angle, the angle LPM, be subtracted; therefore the squares LM, NO are about the same diameter. [VI. 26] Let PR be their diameter, and let the figure be drawn. Similarly then we can prove that LN is the “side” of the area AB. I say that LN is the straight line which produces with a rational area a medial whole. For, since AK was proved medial and is equal to the squares on LP, PN, therefore the sum of the squares on LP, PN is medial. Again, since DK is rational and is equal to twice the rectangle LP, PN, the latter is itself also rational. And, since AI is incommensurable with FK, therefore the square on LP is also incommensurable with the square on PN; therefore LP, PN are straight lines incommensurable in square which make the sum of the squares on them medial but twice the rectangle contained by them rational. Therefore the remainder LN is the irrational straight line called that which produces with a rational area a medial whole; [X. 77] and it is the “side” of the area AB. Therefore the “side” of the area AB is a straight line which produces with a rational area a medial whole.",
+  "ai_proof_text": "10.95\n**Statement:** If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.\n\n**Step 1.** Let the area AB be contained by the rational straight line rho and the fifth apotome AD. Let DG be the annex to AD, so that AG is the whole of the apotome and AD = AG - GD. I say that the \"side\" of the area AB is a straight line which produces with a rational area a medial whole.\n\n**Step 2.** By the definition of a fifth apotome (D10.3.5), the annex GD is commensurable in length with rho, the whole AG is incommensurable in length with rho, and the square on AG is greater than the square on GD by the square on a straight line incommensurable in length with AG. Since AD is an apotome, AG and GD are rational straight lines commensurable in square only [by 10.73].\n\n**Step 3.** Bisect GD at E [by 1.10]. Apply to AG a rectangle equal to the square on EG and deficient by a square figure [by 6.28]; let the resulting parts of AG be AH and HG, so that AH + HG = AG and AH * HG = EG^2 = (GD/2)^2.\n\n**Step 4.** Since the square on AG exceeds the square on GD by the square on a straight line incommensurable in length with AG (D10.3.5), and the rectangle equal to the fourth part of the square on GD has been applied to AG deficient by a square, it follows by 10.18 that AH is incommensurable in length with HG.\n\n**Step 5.** Construct straight lines MN and NO such that the square on MN equals the rectangle rho by AH, and the square on NO equals the rectangle rho by HG, with MN > NO [by 2.14 and P1].\n\n**Step 6.** Then the sum of the squares on MN and NO equals rho * AH + rho * HG = rho * (AH + HG) = rho * AG [by 2.1].\n\n**Step 7.** Now compute 2 * MN * NO. We have (2 * MN * NO)^2 = 4 * (sq(MN)) * (sq(NO)) = 4 * (rho * AH) * (rho * HG) = 4 * rho^2 * (AH * HG). Since AH * HG = EG^2 = (GD/2)^2, we get 4 * rho^2 * (GD/2)^2 = rho^2 * GD^2. Therefore 2 * MN * NO = rho * GD.\n\n**Step 8.** Consider sq(MN) - sq(NO) = rho * AH - rho * HG = rho * (AH - HG). Then sq(MN - NO) = sq(MN) + sq(NO) - 2 * MN * NO = rho * AG - rho * GD = rho * (AG - GD) = rho * AD = the area AB. Therefore MN - NO is the \"side\" of the area AB.\n\n**Step 9.** We now verify that MN - NO satisfies the conditions of Proposition 10.77, which defines \"that which produces with a rational area a medial whole.\" Three conditions must hold: (i) MN and NO are incommensurable in square, (ii) the sum sq(MN) + sq(NO) is medial, and (iii) twice the rectangle MN by NO is rational.\n\n**Step 10.** Verification of (iii): By Step 7, 2 * MN * NO = rho * GD. Since GD is commensurable in length with rho (D10.3.5), and both are rational, the rectangle rho * GD is rational [by 10.19]. Therefore twice the rectangle MN by NO is rational.\n\n**Step 11.** Verification of (ii): By Step 6, sq(MN) + sq(NO) = rho * AG. Since AG is rational and rho is rational, but AG is incommensurable in length with rho (D10.3.5), AG and rho are rational straight lines commensurable in square only. Therefore the rectangle rho * AG is medial [by 10.21]. So the sum of the squares on MN, NO is medial.\n\n**Step 12.** Verification of (i): Since AH is incommensurable in length with HG (Step 4), the rectangle rho * AH is incommensurable with the rectangle rho * HG [by 6.1 and 10.11]. That is, sq(MN) is incommensurable with sq(NO). Therefore MN is incommensurable in square with NO.\n\n**Step 13.** Since MN and NO are incommensurable in square, the sum of the squares on them is medial, and twice the rectangle contained by them is rational, MN - NO is that which produces with a rational area a medial whole [by 10.77].\n\n**Step 14.** But MN - NO is the \"side\" of the area AB (Step 8). Therefore, if an area be contained by a rational straight line and a fifth apotome, the \"side\" of the area is a straight line which produces with a rational area a medial whole. Q.E.D.\n\n**USED:** 1.10, 10.11, 10.18, 10.19, 10.21, 10.73, 10.77, 2.1, 2.14, 6.1, 6.28, D10.1.3, D10.1.4, D10.3.5, P1\n**Human refs (from References field):** 10.18, 10.19, 10.21, 10.77, 6.26, D10.3.5\n**Jaccard:** 0.312 — AI adds ['1.10', '10.11', '10.73', '2.1', '2.14', '6.1', '6.28', 'D10.1.3', 'D10.1.4', 'P1']; Human adds ['6.26']",
+  "ai_used": [
+    "1.10",
+    "10.11",
+    "10.18",
+    "10.19",
+    "10.21",
+    "10.73",
+    "10.77",
+    "2.1",
+    "2.14",
+    "6.1",
+    "6.28",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.5",
+    "P1"
+  ],
+  "heath_refs": [
+    "10.18",
+    "10.19",
+    "10.21",
+    "10.77",
+    "6.26",
+    "D10.3.5"
+  ],
+  "ai_only": [
+    "1.10",
+    "10.11",
+    "10.73",
+    "2.1",
+    "2.14",
+    "6.1",
+    "6.28",
+    "D10.1.3",
+    "D10.1.4",
+    "P1"
+  ],
+  "heath_only": [
+    "6.26"
+  ],
+  "jaccard": 0.312,
+  "proof_summary": "**Step 1.** Let the area AB be contained by the rational straight line rho and the fifth apotome AD. Let DG be the annex to AD, so that AG is the whole of the apotome and AD = AG - GD. I say that the "
+}

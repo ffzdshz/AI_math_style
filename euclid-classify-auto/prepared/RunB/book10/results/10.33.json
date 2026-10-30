@@ -1,0 +1,13 @@
+{
+  "proposition": "10.33",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs use the same geometric construction: starting from two rational lines commensurable in square only (via 10.30), applying a rectangle deficient by a square (6.28) to get incommensurable segments (10.18), constructing a semicircle and perpendicular, then proving three properties of the resulting pair of lines (incommensurable in square, sum of squares rational, rectangle medial). The key intermediate conclusions are identical in both proofs. The citation differences arise because the AI explicitly cites the similar-triangle machinery (3.31, 6.8, 6.4, 6.17, 6.16) and commensurability transitivity results (10.7, 10.8, 10.12, 10.13) that Heath leaves implicit, plus construction postulates (P1, P3, 1.11) and definitions (D10.1.2-4). The sole heath_only citation 10.23 reflects a minor sub-route difference: Heath transfers mediality from rect(AB,BC) to rect(AB,EF) via 10.23 (commensurable with medial is medial), while the AI directly proves rect(DE,GH) is medial by showing DE and GH are rational commensurable in square only and applying 10.21, then equating rect(DG,GE) = rect(DE,GH). This is a difference in citation depth for the same backbone conclusion, not a different logical path.",
+  "jaccard": 0.227,
+  "ai_citations": "1.11|1.47|10.12|10.13|10.18|10.21|10.30|10.7|10.8|3.31|6.1|6.16|6.17|6.28|6.4|6.8|D10.1.2|D10.1.3|D10.1.4|P1|P3",
+  "heath_citations": "1.47|10.18|10.21|10.23|10.30|6.28",
+  "ai_only": "1.11|10.12|10.13|10.7|10.8|3.31|6.1|6.16|6.17|6.4|6.8|D10.1.2|D10.1.3|D10.1.4|P1|P3",
+  "heath_only": "10.23",
+  "audit_record": ""
+}

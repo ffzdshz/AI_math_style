@@ -1,0 +1,13 @@
+{
+  "proposition": "13.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification. Both proofs correctly handle the two required cases (consecutive and non-consecutive equal angles), but they argue through fundamentally different key intermediate conclusions. In Case 1, Heath introduces diagonals AC, BE, FD and uses I.6 (converse of the isosceles triangle theorem) to establish AF = BF, then derives FC = FE, and applies I.8 (SSS) on triangles FCD and FED to conclude angle FCD = angle FED. The AI never introduces point F and instead uses I.4 to establish AC = BD and BE = BD, making triangle BDE isosceles, then deploys I.32 (angle sum theorem) for explicit angle calculations in terms of alpha = (180 - angle ABC)/2, showing angles D and E both equal 3*alpha, and finally uses further congruence arguments (I.4, I.8) to prove phi = angle ABC. In Case 2, Heath uses I.4 and I.5 directly while the AI reduces to Case 1 after establishing four equal angles via angle arithmetic. The AI proof is logically complete and valid throughout, but the backbones differ: Heath approach is purely synthetic (using I.6 and the auxiliary point F), while the AI approach is computational (using I.32 for angle-sum reasoning). This constitutes a genuine path difference.",
+  "jaccard": 0.375,
+  "ai_citations": "1.32|1.4|1.5|1.8|CN1|CN2|CN3",
+  "heath_citations": "1.4|1.5|1.6|1.8",
+  "ai_only": "1.32|CN1|CN2|CN3",
+  "heath_only": "1.6",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "12.10",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides this classification as G. Both proofs share the same logical backbone: a double reductio ad absurdum via exhaustion, inscribing successively refined polygons in the circular base, establishing that each refinement removes more than half of the remaining solid (conical or cylindrical), invoking X.1 (exhaustion), and using XII.7 to convert between prisms and pyramids (prism = 3 times pyramid). The AI addresses both required cases (cylinder > 3 times cone in Step 7, cylinder < 3 times cone in Step 8). The heath_only items (11.32, 12.2, 4.7) all correspond to facts present in the AI proof at the same logical position but argued at finer granularity or with different equivalent lemmas: Heath uses 11.32 (parallelepipeds of same height are as bases) for comparing prisms, while the AI uses 12.5 and 12.6 (pyramids of same height are as bases) for the analogous comparison; Heath references 12.2 for the more-than-half exhaustion technique, while the AI re-derives it explicitly using 1.41 and 3.16; Heath circumscribes a square (4.7) for the initial more-than-half argument, while the AI uses a rectangle containment argument instead. The large ai_only set consists overwhelmingly of definitions, common notions, postulates, and elementary construction propositions, indicating over-citation at a finer granularity level rather than a different proof path.",
+  "jaccard": 0.107,
+  "ai_citations": "1.12|1.29|1.31|1.41|1.47|10.1|12.5|12.6|12.7|3.16|3.2|3.3|4.6|CN2|CN3|CN5|D1.15|D11.12|D11.13|D11.18|D11.21|D5.1|D5.5|P1|P2",
+  "heath_citations": "10.1|11.32|12.2|12.7|4.6|4.7",
+  "ai_only": "1.12|1.29|1.31|1.41|1.47|12.5|12.6|3.16|3.2|3.3|CN2|CN3|CN5|D1.15|D11.12|D11.13|D11.18|D11.21|D5.1|D5.5|P1|P2",
+  "heath_only": "11.32|12.2|4.7",
+  "audit_record": ""
+}

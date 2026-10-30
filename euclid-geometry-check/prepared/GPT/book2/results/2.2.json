@@ -1,0 +1,41 @@
+{
+  "proposition": "2.2",
+  "run": "GPT",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is an interior point of segment AB, lying between A and B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "ABDE is a square constructed on AB with AB and AE as adjacent sides",
+      "type": "construction"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AB = AE (sides of the square) and all angles are right angles",
+      "type": "equality_and_angle"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AB is decomposed into segments AC and CB with C between A and B",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AE is used as the uncut straight line in the application of Proposition 2.1",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "R(AE,AB) equals the area of square ABDE since AE and AB are adjacent sides",
+      "type": "area_identity"
+    }
+  ],
+  "configuration_map": "Point C: lies on segment AB between A and B. Used consistently across all steps as the division point of AB into AC and CB. Square ABDE: standard construction on AB via I.46. A is a shared vertex of adjacent sides AB and AE. AE = AB throughout. No auxiliary points beyond the square vertices and the division point C. The proof applies Proposition 2.1 algebraically to the rectangle R(AE,AB) and substitutes AE = AB, requiring no complex spatial arrangement.",
+  "pass_reason": "The proof's spatial claims are few, simple, and mutually consistent. C lies on AB throughout; the square ABDE is a standard construction; AE = AB is never contradicted. The core reasoning is area-theoretic/algebraic (applying Proposition 2.1 and substituting equal lengths), with no angle decompositions, interior/exterior point arguments, or ray orderings that could generate spatial contradictions."
+}

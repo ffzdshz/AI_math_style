@@ -1,0 +1,86 @@
+{
+  "proposition": "11.23",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Equal lengths cut from arms of each angle: AB = BC = DE = EF = GH = HK. Chords AC, DF, GK are joined.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle LMN is constructed with sides LM = AC, MN = DF, NL = GK (by 11.22).",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Circle circumscribed about triangle LMN with center O. O may lie inside, on a side, or outside the triangle.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Case 1: O lies inside triangle LMN. OL = OM = ON as radii of circumcircle.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Angles around O in the plane sum to 4 right angles: angle LOM + angle MON + angle NOL = 360 degrees.",
+      "type": "angle_sum"
+    },
+    {
+      "step": "Step 10",
+      "claim": "OL (circumradius) is strictly less than AB (arm length), proved by contradiction using angle sums.",
+      "type": "length_comparison"
+    },
+    {
+      "step": "Step 11",
+      "claim": "OR is erected perpendicular to the plane of triangle LMN at point O, with OR^2 = AB^2 - OL^2 > 0. R is above the plane.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 11",
+      "claim": "RL^2 = OL^2 + OR^2 = AB^2 by Pythagorean theorem (angle LOR = 90 degrees). So RL = AB.",
+      "type": "length_equality"
+    },
+    {
+      "step": "Step 12",
+      "claim": "RM = RN = AB since OM = ON = OL (radii) and OR is common perpendicular.",
+      "type": "length_equality"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Triangle RLM congruent to triangle ABC (SSS: RL = AB, RM = BC, LM = AC). Angle LRM = angle ABC.",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Triangle RMN congruent to triangle DEF (SSS). Angle MRN = angle DEF.",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Triangle RNL congruent to triangle GHK (SSS). Angle NRL = angle GHK.",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Solid angle at R is contained by three plane angles LRM, MRN, NRL equal to given angles ABC, DEF, GHK.",
+      "type": "solid_angle_construction"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Case 2: O on a side of triangle LMN (e.g., on LM). Angle LOM is a straight angle (180 degrees). Same contradiction argument applies.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Case 3: O outside triangle LMN. Angles around O still sum to 360 degrees. Same contradiction argument applies.",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Triangle LMN lies in a plane with sides LM = AC, MN = DF, NL = GK (chords of the three given angles with equal arm lengths). O is the circumcenter of triangle LMN, with OL = OM = ON (circumradius). The proof considers three cases for O's position (inside, on a side, or outside the triangle). In all cases, the angles around O in the plane sum to 360 degrees, and the contradiction argument shows OL < AB. Point R is constructed above the plane of LMN on the perpendicular to the plane at O, at height OR = sqrt(AB^2 - OL^2). R is equidistant from L, M, N (all distances equal AB). The three face triangles RLM, RMN, RNL are congruent to the three given angle triangles, yielding a solid angle at R with the desired face angles.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof does not perform any problematic angle decomposition -- the key relationship (angles around O summing to 360 degrees) is a fundamental property of angles around a point, not a decomposition of a single angle. The construction of R above the plane is geometrically valid: OR perpendicular to the plane ensures right angles with all radii, making the Pythagorean theorem applications correct. The SSS congruences (I.8) establishing the face angles are sound given RL = RM = RN = AB and the matching bases. The contradiction argument proving OL less than AB is logically valid. All three cases for O's position are addressed without spatial contradictions."
+}

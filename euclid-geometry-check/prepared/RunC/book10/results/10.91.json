@@ -1,0 +1,46 @@
+{
+  "proposition": "10.91",
+  "run": "RunC",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "SKIP",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "D lies on line AG such that AG = AD + DG; DG is the annex to the first apotome AD",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E bisects DG, so E is the midpoint of segment DG",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 3",
+      "claim": "H lies on segment AG such that AH x HG = EG squared (application of area deficient by a square)",
+      "type": "point_on_line"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AD = AG - GD, so AC x AD = AC x AG - AC x GD (area decomposition along a line)",
+      "type": "area_algebra"
+    },
+    {
+      "step": "Step 8",
+      "claim": "p squared + q squared = AC x (AH + HG) = AC x AG (additive area decomposition along segment AG)",
+      "type": "area_algebra"
+    },
+    {
+      "step": "Step 9",
+      "claim": "pq = AC x EG, so 2pq = AC x GD (using AH x HG = EG squared and E bisects DG)",
+      "type": "area_algebra"
+    },
+    {
+      "step": "Step 17",
+      "claim": "(p - q) squared = p squared + q squared - 2pq = AC x AD = area AB (algebraic identity 2.7)",
+      "type": "area_algebra"
+    }
+  ],
+  "configuration_map": "All constructed points lie on a single straight line. The approximate order is A...H...D...E...G, where: AG is the whole rational line, DG is the annex to the first apotome AD, E is the midpoint of DG, and H is determined on segment AG by the condition AH x HG = EG squared. The auxiliary magnitudes p and q are defined purely algebraically by p squared = AC x AH and q squared = AC x HG. The entire proof operates through commensurability relationships and area algebra with no multi-dimensional spatial configuration.",
+  "skip_reason": "The proof is purely algebraic/proportional, dealing with commensurability and incommensurability of straight lines and areas (rational vs. medial). All geometric elements are points on a single line and rectangle area computations. There are no triangle interior/exterior claims, no angle decompositions, no ray betweenness claims, and no circle configurations. This is characteristic of Book 10 irrational magnitude theory, which is algebraic rather than spatial in nature."
+}

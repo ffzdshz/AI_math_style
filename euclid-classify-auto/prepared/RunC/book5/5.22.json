@@ -1,0 +1,28 @@
+{
+  "proposition": "5.22",
+  "book": 5,
+  "statement": "If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex aequali.",
+  "heath_proof": "Let there be any number of magnitudes A, B, C, and others D, E, F equal to them in multitude, which taken two and two together are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F; I say that they will also be in the same ratio ex aequali, <that is, as A is to C, so is D to F>. For of A, D let equimultiples G, H be taken, and of B, E other, chance, equimultiples K, L; and, further, of C, F other, chance, equimultiples M, N. Then, since, as A is to B, so is D to E, and of A, D equimultiples G, H have been taken, and of B, E other, chance, equimultiples K, L, therefore, as G is to K, so is H to L. [V. 4]  For the same reason also, as K is to M, so is L to N.  Since, then, there are three magnitudes G, K, M, and others H, L, N equal to them in multitude, which taken two and two together are in the same ratio, therefore, ex aequali, if G is in excess of M, H is also in excess of N; if equal, equal; and if less, less. [V. 20] And G, H are equimultiples of A, D, and M, N other, chance, equimultiples of C, F.  Therefore, as A is to C, so is D to F. [V. Def. 5]",
+  "ai_proof_text": "5.22\n**Statement:** If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex aequali.\n\n**Step 1.** Let there be any number of magnitudes A1, A2, ..., An, and others equal to them in multitude B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2:A3 = B2:B3, and so on up to A(n-1):An = B(n-1):Bn. We are to prove that A1:An = B1:Bn (the ratio ex aequali), in accordance with D5.17.\n\n**Step 2.** We first establish the result for three magnitudes: let A, B, C and D, E, F satisfy A:B = D:E and B:C = E:F. We shall show A:C = D:F. Take any equimultiples mA of A and mD of D, and any equimultiples nC of C and nF of F.\n\n**Step 3.** Since A:B = D:E, by 5.4 (taking m-multiples of the first and third, and any multiples of the second and fourth), for any multiple pB of B and pE of E we have that mA and mD bear the same ratio-relation to pB and pE respectively: mA:pB = mD:pE in the sense of D5.5. In particular, by 5.15, mA:mB = mD:mE, since A:B = mA:mB and D:E = mD:mE, and so by 5.11, mA:mB = mD:mE.\n\n**Step 4.** Since B:C = E:F, by 5.4 (taking m-multiples of the first and third, and n-multiples of the second and fourth), mB:nC = mE:nF.\n\n**Step 5.** Now we have three magnitudes mA, mB, nC and three magnitudes mD, mE, nF, with mA:mB = mD:mE (Step 3) and mB:nC = mE:nF (Step 4). By 5.20 (the ex aequali ordering result for three magnitudes), if mA > nC then mD > nF, if mA = nC then mD = nF, and if mA < nC then mD < nF.\n\n**Step 6.** Since mA, mD are arbitrary equimultiples of A, D, and nC, nF are arbitrary equimultiples of C, F, by D5.5 (the definition of same ratio) we conclude that A:C = D:F. This establishes the result for three magnitudes.\n\n**Step 7.** Now for the general case, proceed by reducing the number of magnitudes. Given A1, A2, ..., An and B1, B2, ..., Bn with the consecutive ratios equal, consider the subsequence A1, A2, ..., A(n-1) and B1, B2, ..., B(n-1). These n-1 magnitudes on each side satisfy the same hypothesis (consecutive ratios equal). By repeating the three-magnitude argument, we can reduce from n magnitudes to n-1: from A1:A(n-1) = B1:B(n-1) (obtained by applying the same procedure to the first n-1 magnitudes) and A(n-1):An = B(n-1):Bn (given), the three-magnitude case (Steps 2-6) yields A1:An = B1:Bn.\n\n**Step 8.** The reduction terminates because the base case of three magnitudes has been established in Steps 2-6. At each stage the three-magnitude result (using 5.4, 5.11, 5.15, and 5.20 via D5.5) reduces the count by one until only three remain.\n\n**Step 9.** Therefore, if there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex aequali. Q.E.D.\n\n**USED:** 5.11, 5.15, 5.20, 5.4, D5.17, D5.5\n**Human refs (from References field):** 5.20, 5.4, D5.5\n**Jaccard:** 0.500 — AI adds ['5.11', '5.15', 'D5.17']",
+  "ai_used": [
+    "5.11",
+    "5.15",
+    "5.20",
+    "5.4",
+    "D5.17",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.20",
+    "5.4",
+    "D5.5"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.15",
+    "D5.17"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let there be any number of magnitudes A1, A2, ..., An, and others equal to them in multitude B1, B2, ..., Bn, which taken two and two are in the same ratio, so that A1:A2 = B1:B2, A2:A3 = "
+}

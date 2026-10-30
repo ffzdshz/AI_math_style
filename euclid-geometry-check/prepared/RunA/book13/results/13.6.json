@@ -1,0 +1,41 @@
+{
+  "proposition": "13.6",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB between A and B, with AC being the greater segment (AC > CB). AB:AC = AC:CB (extreme and mean ratio).",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D is the midpoint of AB, so D lies on segment AB with AD = DB = AB/2. The order on AB is A-D-C-B since AC > AB/2.",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DE is a constructed line segment of length AC + DB (= AC + AD). By 13.1, sq(DE) = 5 * sq(DB), so DE = sqrt(5) * DB.",
+      "type": "constructed_segment_length"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AC = DE - DB, expressing the greater segment as the difference of two constructed lengths. Requires DE > DB.",
+      "type": "length_relationship"
+    },
+    {
+      "step": "Step 7",
+      "claim": "DF is a constructed line segment of length 3 * DB.",
+      "type": "constructed_segment_length"
+    },
+    {
+      "step": "Step 10",
+      "claim": "CB = DF - DE = 3*DB - sqrt(5)*DB, expressing the lesser segment as the difference of two constructed lengths. Requires DF > DE.",
+      "type": "length_relationship"
+    }
+  ],
+  "configuration_map": "Points A and B define a rational straight line. C is on AB between A and B with AC > CB (golden ratio cut, AC/AB ~ 0.618). D is the midpoint of AB (AD = DB = AB/2); since AC > AB/2, the order on AB is A-D-C-B. DE is a separately constructed segment of length AC + DB = (AC + AB/2), which equals sqrt(5) * DB by Proposition 13.1. DF is a separately constructed segment of length 3 * DB. The proof works entirely through algebraic manipulation of these lengths, showing commensurability relationships via ratios of numbers (5:1 and 9:5) to establish that AC = DE - DB and CB = DF - DE are both apotomes by Proposition 10.73. No angles, circles, triangles, or spatial configurations beyond collinear points and lengths are involved.",
+  "pass_reason": "The proof is primarily algebraic, operating through commensurability theory (Book 10) on line segment lengths. The few spatial claims (C and D on segment AB, constructed segments DE and DF) are all mutually consistent. Key consistency checks: DE = sqrt(5)*DB > DB (so AC = DE - DB > 0), DF = 3*DB > sqrt(5)*DB = DE (so CB = DF - DE > 0), and AC + CB = (DE - DB) + (DF - DE) = DF - DB = 2*DB = AB. No angle decompositions, no interior/exterior claims, and no geometric configuration contradictions exist."
+}

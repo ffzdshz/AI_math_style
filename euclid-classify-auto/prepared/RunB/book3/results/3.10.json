@@ -1,0 +1,13 @@
+{
+  "proposition": "3.10",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs use the same overall strategy: proof by contradiction assuming the two circles intersect at more than two points, then showing a single point must be the center of both circles, contradicting 3.5. The key intermediate conclusion in both proofs is identical: the same point serves as center for both circles. Heath establishes this by applying the perpendicular bisector method (3.1) symmetrically to both circles, while the AI finds the center of the first circle via 3.1, shows equal radii fall on the second circle (citing D1.15), and then invokes 3.9 to conclude the point is also the center of the second circle. Since Heath's proof of 3.9 itself uses 3.1 and the perpendicular bisector method internally, the AI is effectively citing 3.9 as a packaged unit rather than re-deriving its content inline. The ai_only items (3.9, D1.15, P1) reflect this different citation depth: 3.9 encapsulates the second application of 3.1, D1.15 makes the equal-radii property explicit, and P1 explicitly cites the postulate for joining lines. Heath_only is empty, confirming the AI covers all of Heath's cited results. This is Case A of Q2: same backbone, different citation depth.",
+  "jaccard": 0.4,
+  "ai_citations": "3.1|3.5|3.9|D1.15|P1",
+  "heath_citations": "3.1|3.5",
+  "ai_only": "3.9|D1.15|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

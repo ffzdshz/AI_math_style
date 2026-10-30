@@ -1,0 +1,56 @@
+{
+  "proposition": "3.26",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "G is the centre of circle ABC; H is the centre of circle DEF; B and C are on circle ABC; E and F are on circle DEF; angle BGC = angle EHF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BG = EH and GC = HF as radii of equal circles",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle BGC is congruent to triangle EHF by SAS (1.4); BC = EF",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Superposition: circle ABC placed on circle DEF with G on H so circumferences coincide; B placed on E along equal radius; C falls on F via equal angle and equal radius",
+      "type": "superposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Arc BC coincides with arc EF since B=E, C=F, and circumferences of equal circles coincide",
+      "type": "arc_coincidence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "A is on the circumference of circle ABC; D is on the circumference of circle DEF; angle BAC = angle EDF as inscribed angles",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "angle BGC = 2 * angle BAC and angle EHF = 2 * angle EDF by 3.20 (central angle double inscribed angle on same arc)",
+      "type": "angle_relation"
+    },
+    {
+      "step": "Step 8",
+      "claim": "angle BGC = angle EHF since doubles of equal angles are equal",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Arc BC = arc EF by reduction to the central angle case already proved",
+      "type": "arc_equality"
+    }
+  ],
+  "configuration_map": "Two equal circles ABC (centre G) and DEF (centre H). In Case 1: B, C on circle ABC and E, F on circle DEF with central angles BGC and EHF equal. Radii BG = EH and GC = HF. Triangles BGC and EHF formed by radii and chords. Superposition aligns the circles with G on H, B on E, C on F. In Case 2: A on circumference of circle ABC, D on circumference of circle DEF. A is on the arc opposite to the arc BC subtended by the central angle (standard inscribed angle configuration). Similarly D is on the arc opposite to arc EF. All points maintain consistent positions throughout: B, C, E, F remain on their respective circles; A and D remain on circumferences as inscribed angle vertices; G and H remain at centres.",
+  "pass_reason": "All spatial claims are mutually consistent. The superposition argument correctly uses equal radii and equal central angles to show coincidence of arcs. The application of Proposition 3.20 is in a valid inscribed-angle configuration. The reduction from the circumference case to the centre case via angle doubling is algebraically and spatially sound. No point is placed in contradictory positions across steps, and no angle decomposition requires an impossible ray ordering."
+}

@@ -1,0 +1,205 @@
+{
+  "summary": "Prove propositions 10.1-10.15 of Euclid Book 10 (Run RunB)",
+  "agentCount": 15,
+  "logs": [
+    "Run RunB | Book 10: proving 15 propositions (10.1-10.15)",
+    "10.7 proved (2 refs)",
+    "10.8 proved (2 refs)",
+    "10.4 proved (3 refs)",
+    "10.2 proved (4 refs)",
+    "10.3 proved (5 refs)",
+    "10.13 proved (2 refs)",
+    "10.1 proved (2 refs)",
+    "10.10 proved (9 refs)",
+    "10.11 proved (5 refs)",
+    "10.12 proved (6 refs)",
+    "10.15 proved (6 refs)",
+    "10.14 proved (7 refs)",
+    "10.5 proved (8 refs)",
+    "10.6 proved (7 refs)",
+    "10.9 proved (6 refs)",
+    "No ordering violations found",
+    "Done: 15/115 propositions"
+  ],
+  "result": [
+    {
+      "prop_id": "10.1",
+      "statement": "Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.",
+      "proof": "**Step 1.** Let AB and C be two unequal magnitudes, with AB the greater. We must show that if from AB there is subtracted a magnitude greater than its half, and from the remainder a magnitude greater than its half, and this process is repeated continually, there will eventually remain a magnitude less than C.\n\n**Step 2.** Since C and AB are magnitudes of the same kind, and C is less than AB, by Definition 5.4 there exists a multiple of C that exceeds AB. Multiply C by successive doubling: let C, 2C, 4C, and so on be formed until we obtain a multiple of C that exceeds AB. Let this multiple be obtained after doubling C a certain number of times, so that we have magnitudes DF = C, FG = C, GH = 2C, and HE = 4C (for example), building up a magnitude DE composed of successive doubles of C such that DE > AB. More precisely, let DE be constructed so that DF = C, and each successive part doubles the previous total: that is, we set DF = C, and then repeatedly double, obtaining DE = 2^k * C for some k, with DE > AB.\n\n**Step 3.** To make this precise in Euclid's manner: let DE be a magnitude such that DE > AB, constructed by successive doubling of C. Partition DE into halves successively: DE has a half, that half has a half, and so on, so that after k halvings we reach a part equal to C (namely DF = C, since DE = 2^k * C).\n\n**Step 4.** Now, from AB subtract a magnitude greater than its half, and let the remainder be AB_1. Then AB_1 < (1/2) AB, since more than half was removed. From AB_1 subtract more than its half, leaving AB_2 < (1/2) AB_1. Continue this process. After k subtractions, the remainder AB_k < (1/2^k) AB.\n\n**Step 5.** Since DE = 2^k * C > AB, it follows that AB < 2^k * C, and therefore (1/2^k) * AB < C. By Step 4, AB_k < (1/2^k) AB, so AB_k < C.\n\n**Step 6.** To express Steps 4 and 5 in Euclid's own terms without fractional notation: consider DE > AB, where DE is divided into successive halves reaching down to DF = C. Let EH be the half of DE, HG the half of EH (i.e., a quarter of DE), and GF the half of HG, and so on until we reach DF = C.\n\n**Step 7.** Now since DE > AB, and from AB we subtract more than its half, the remainder is less than half of AB. But half of DE is EH. Since DE > AB, we have EH = (1/2)DE >= (1/2)AB. The remainder after subtracting more than half of AB is strictly less than (1/2)AB, hence strictly less than EH. By Common Notion 5, the whole is greater than the part, and each subtraction of more than half leaves a remainder that is less than the corresponding half of DE.\n\n**Step 8.** Proceeding: the remainder after the first subtraction is less than EH. From this remainder, subtract more than its half; the new remainder is less than half of EH, which is HG. Continue: after the next subtraction, the remainder is less than half of HG, which is GF. After k such subtractions, the remainder is less than the k-th halving of DE, which is DF = C.\n\n**Step 9.** Therefore, after a finite number of subtractions (each removing more than half of the current remainder), the remaining magnitude will be less than C. This is what was to be proved. Q.E.D.",
+      "used": [
+        "D5.4",
+        "CN5"
+      ]
+    },
+    {
+      "prop_id": "10.2",
+      "statement": "If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.",
+      "proof": "**Step 1.** Let A and B be two unequal magnitudes, with A greater than B, such that when the less is continually subtracted in turn from the greater, the remainder never measures the magnitude before it. We must show that A and B are incommensurable.\n\n**Step 2.** Suppose, for the sake of contradiction, that A and B are commensurable. Then by the definition of commensurable magnitudes (D10.1.1), there exists some magnitude C that measures both A and B.\n\n**Step 3.** Since C measures both A and B, and B is continually subtracted from A, the remainder after subtracting B from A as many times as possible is some magnitude less than B. Call this remainder A1. Since C measures A and C measures B, and A1 = A - nB for some whole number n, C also measures A1 (CN3, applied repeatedly: if equals are subtracted from equals, the remainders are equal; since C measures A and C measures nB, C measures A1).\n\n**Step 4.** Now the process continues: B has A1 subtracted from it repeatedly, leaving a remainder B1 less than A1. Since C measures B and C measures A1, by the same reasoning C measures B1.\n\n**Step 5.** At each stage of the anthyphairesis, the remainder is measured by C, because C measures both of the magnitudes at the previous stage. Thus every remainder in this process is measured by C.\n\n**Step 6.** Now, the successive remainders A1, B1, A2, B2, ... form a strictly decreasing sequence of positive magnitudes, each less than the one two steps before it. Since C is a fixed positive magnitude and C measures each remainder, each remainder is at least as large as C (for C to measure a magnitude, that magnitude must be at least C, since a part cannot exceed its whole by D5.1).\n\n**Step 7.** However, by Proposition 10.1, since at each step of the anthyphairesis we subtract from the greater a magnitude that is at least half of it (indeed we subtract a quantity at least equal to the remainder, which is the smaller magnitude), the successive remainders, when this process is continued, will eventually become less than C.\n\n**Step 8.** But this contradicts Step 6, which established that every remainder must be at least as great as C. We have a remainder that is both measured by C (hence at least C) and less than C, which is impossible.\n\n**Step 9.** Therefore the assumption in Step 2 is false: A and B cannot be commensurable. Hence A and B are incommensurable (D10.1.1), which was to be proved.",
+      "used": [
+        "D5.1",
+        "D10.1.1",
+        "CN3",
+        "10.1"
+      ]
+    },
+    {
+      "prop_id": "10.3",
+      "statement": "Given two commensurable magnitudes, to find their greatest common measure.",
+      "proof": "**Step 1.** Let A and B be two given commensurable magnitudes, and let A be not less than B. We are to find their greatest common measure.\n\n**Step 2.** If B measures A, then B is a common measure of A and B. Moreover, no magnitude greater than B can measure B [by CN5, since the whole is greater than the part, any magnitude greater than B cannot measure B]. Therefore B is the greatest common measure of A and B.\n\n**Step 3.** Now suppose B does not measure A. Apply the process of successive subtraction (antanairesis): subtract B from A as many times as possible, leaving a remainder C less than B. If C measures B, proceed to Step 5. If C does not measure B, subtract C from B as many times as possible, leaving a remainder D less than C. Continue in this manner.\n\n**Step 4.** Since A and B are commensurable [D10.1.1], the process of continually subtracting the lesser from the greater must terminate with some remainder that measures the one before it. For if the remainder never measured the one before it, then by Proposition 10.2, A and B would be incommensurable, contradicting our hypothesis. Therefore the process terminates. Let us say, for definiteness, that after some steps we arrive at a remainder E which measures the magnitude before it in the chain.\n\n**Step 5.** We now show that E is a common measure of A and B. Working backwards through the chain of subtractions: E measures the magnitude before it; from this it follows that E measures the magnitude before that (since that magnitude is composed of a multiple of E plus the magnitude E measures); continuing step by step back through the chain, E measures C, and since B is composed of a multiple of C plus D (and so on), E measures B. Similarly, since A is composed of a multiple of B plus C, and E measures both B and C, E measures A. Therefore E is a common measure of A and B.\n\n**Step 6.** We now show that E is the greatest common measure. Let F be any common measure of A and B. Since F measures A and F measures B, F also measures the remainder when B is subtracted from A (as many times as it goes), so F measures C [CN3, since if F measures two magnitudes, it measures their difference]. Likewise, since F measures B and F measures C, F measures the remainder D. Continuing forward through the chain of subtractions, F measures each successive remainder, and therefore F measures E.\n\n**Step 7.** Since F measures E, we have F is not greater than E [by CN5, since E is a whole of which F would need to be a part or equal]. Since this holds for every common measure F of A and B, no common measure of A and B is greater than E. Therefore E is the greatest common measure of A and B.\n\n**Step 8.** Therefore, given two commensurable magnitudes, we have found their greatest common measure. Q.E.F.",
+      "used": [
+        "D10.1.1",
+        "D5.1",
+        "10.2",
+        "CN3",
+        "CN5"
+      ]
+    },
+    {
+      "prop_id": "10.4",
+      "statement": "Given three commensurable magnitudes, to find their greatest common measure.",
+      "proof": "**Step 1.** Let A, B, C be three given commensurable magnitudes. We wish to find their greatest common measure.\n\n**Step 2.** Since A and B are commensurable, they have a common measure [D10.1.1]. Therefore, by Proposition 10.3, we can find the greatest common measure of A and B. Let D be the greatest common measure of A and B [10.3].\n\n**Step 3.** Now D measures both A and B. Since D measures A, and C is commensurable with A (for A, B, C are mutually commensurable), we must show that D and C are commensurable. Since A, B, C are commensurable, there exists some common measure E that measures all three [D10.1.1]. Since E measures both A and B, and D is the greatest common measure of A and B, E measures D [by the property established in 10.3, that every common measure of two magnitudes measures their greatest common measure]. Since E also measures C, E is a common measure of D and C. Therefore D and C are commensurable [D10.1.1].\n\n**Step 4.** Since D and C are commensurable, by Proposition 10.3 we can find their greatest common measure. Let F be the greatest common measure of D and C [10.3].\n\n**Step 5.** We claim F is the greatest common measure of A, B, and C. First, we show F measures each of A, B, and C. Since F is the greatest common measure of D and C, F measures both D and C. Since F measures D and D measures A, F measures A. Since F measures D and D measures B, F measures B. Since F measures C directly, F measures all three of A, B, and C.\n\n**Step 6.** Now we show F is the greatest such measure. Let G be any magnitude that measures A, B, and C. Since G measures both A and B, and D is the greatest common measure of A and B, G measures D [10.3]. Since G measures both D and C, and F is the greatest common measure of D and C, G measures F [10.3]. Therefore every common measure of A, B, and C measures F, so F is the greatest common measure of A, B, and C.\n\n**Step 7.** Therefore, given three commensurable magnitudes A, B, C, their greatest common measure F has been found. Q.E.F.",
+      "used": [
+        "D10.1.1",
+        "D5.1",
+        "10.3"
+      ]
+    },
+    {
+      "prop_id": "10.5",
+      "statement": "Commensurable magnitudes have to one another the ratio which a number has to a number.",
+      "proof": "**Step 1.** Let A and B be commensurable magnitudes. Then by definition (D10.1.1), there exists a magnitude C which measures both A and B.\n\n**Step 2.** Since C measures A, let C be contained in A exactly D times, where D is a number (D7.2). Then A is the D-th multiple of C, that is, A = D times C (D5.1, D5.2).\n\n**Step 3.** Since C measures B, let C be contained in B exactly E times, where E is a number (D7.2). Then B is the E-th multiple of C, that is, B = E times C (D5.1, D5.2).\n\n**Step 4.** We shall show that A has to B the same ratio that the number D has to the number E. To establish this by D5.5, we must show that for any positive integers m and n, the m-fold multiple of A compares with the n-fold multiple of B in the same way that the m-fold multiple of D compares with the n-fold multiple of E.\n\n**Step 5.** Take any equimultiples: let mA be the m-fold multiple of A, and let nB be the n-fold multiple of B, for arbitrary positive integers m and n. Since A is the D-th multiple of C, by 5.3, the m-fold multiple of A is the (mD)-th multiple of C. That is, mA = (mD) times C. Similarly, since B is the E-th multiple of C, by 5.3, nB = (nE) times C.\n\n**Step 6.** Now mA = (mD) times C and nB = (nE) times C, so both are multiples of the same magnitude C. If mD > nE, then (mD) times C is greater than (nE) times C, since the (mD)-th multiple contains all of the (nE)-th multiple and more besides (CN5). Hence mA > nB. If mD = nE, then (mD) times C equals (nE) times C (CN1), so mA = nB. If mD < nE, then by the same reasoning as the first case (with roles exchanged), (nE) times C is greater than (mD) times C, so nB > mA, that is, mA < nB.\n\n**Step 7.** Therefore, for all positive integers m and n: if mD > nE then mA > nB; if mD = nE then mA = nB; if mD < nE then mA < nB. By the definition of same ratio (D5.5), A is to B as D is to E.\n\n**Step 8.** Since D and E are numbers, A and B have to one another the ratio which a number has to a number, which is what was to be proved.",
+      "used": [
+        "D10.1.1",
+        "D5.1",
+        "D5.2",
+        "D5.5",
+        "D7.2",
+        "5.3",
+        "CN1",
+        "CN5"
+      ]
+    },
+    {
+      "prop_id": "10.6",
+      "statement": "If two magnitudes have to one another the ratio which a number has to a number, the magnitudes will be commensurable.",
+      "proof": "**Step 1.** Let A and B be two magnitudes such that A:B = D:E, where D and E are numbers. We are to prove that A and B are commensurable.\n\n**Step 2.** Since D is a number, it is a multitude composed of units (D7.2). Divide A into as many equal parts as there are units in D, and let C be equal to one of these parts. Then A is D times C, that is, A = D*C, so C is a part of A and A is a multiple of C (D5.1, D5.2).\n\n**Step 3.** Since A:B = D:E and A = D*C, we have D*C : B = D : E. By the definition of same ratio (D5.5), for any positive integers p and q, p*(D*C) exceeds, equals, or falls short of q*B according as p*D exceeds, equals, or falls short of q*E.\n\n**Step 4.** Take the specific equimultiples with p = E and q = D. Then E*(D*C) compared to D*B is as E*D compared to D*E. Since the product of two numbers is the same regardless of the order of multiplication (7.16), we have E*D = D*E. Therefore E*(D*C) = D*B.\n\n**Step 5.** Now E*(D*C) = (ED)*C and also (ED)*C = (DE)*C = D*(E*C), again because the product of two numbers does not depend on the order of multiplication (7.16). Therefore D*(E*C) = D*B.\n\n**Step 6.** Since D*(E*C) = D*B, that is, E*C taken D times equals B taken D times, by repeated subtraction of equals from equals (CN3), we conclude that E*C = B.\n\n**Step 7.** Now C measures A, since A = D*C, meaning C is contained in A exactly D times (D5.1). And C measures B, since B = E*C, meaning C is contained in B exactly E times (D5.1). Therefore C is a common measure of A and B.\n\n**Step 8.** Since A and B have a common measure C, the magnitudes A and B are commensurable (D10.1.1). Q.E.D.",
+      "used": [
+        "D5.1",
+        "D5.2",
+        "D5.5",
+        "D7.2",
+        "D10.1.1",
+        "7.16",
+        "CN3"
+      ]
+    },
+    {
+      "prop_id": "10.7",
+      "statement": "Incommensurable magnitudes have not to one another the ratio which a number has to a number.",
+      "proof": "**Step 1.** Let A and B be incommensurable magnitudes. We are to prove that A does not have to B the ratio which a number has to a number.\n\n**Step 2.** Suppose, for the sake of contradiction, that A has to B the ratio which a number has to a number. That is, suppose A:B = m:n for some numbers m and n.\n\n**Step 3.** Then by Proposition 10.6, since A and B have to one another the ratio which the number m has to the number n, the magnitudes A and B are commensurable.\n\n**Step 4.** But A and B are given as incommensurable (by hypothesis and Definition D10.1.1, which defines incommensurable magnitudes as those which cannot have any common measure). This contradicts the conclusion of Step 3.\n\n**Step 5.** Therefore the assumption in Step 2 is false, and incommensurable magnitudes have not to one another the ratio which a number has to a number. Q.E.D.",
+      "used": [
+        "D10.1.1",
+        "10.6"
+      ]
+    },
+    {
+      "prop_id": "10.8",
+      "statement": "If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes will be incommensurable.",
+      "proof": "**Step 1.** Let A and B be two magnitudes that have not to one another the ratio which a number has to a number. We must show that A and B are incommensurable.\n\n**Step 2.** Suppose, for the sake of contradiction, that A and B are commensurable, that is, that there exists some magnitude C which measures both A and B [D10.1.1].\n\n**Step 3.** Since A and B are commensurable, by Proposition 10.5, A and B have to one another the ratio which a number has to a number [10.5].\n\n**Step 4.** But this contradicts the hypothesis, which states that A and B do not have to one another the ratio which a number has to a number.\n\n**Step 5.** Therefore the assumption that A and B are commensurable is false. Hence A and B are incommensurable [D10.1.1].\n\nQ.E.F.",
+      "used": [
+        "D10.1.1",
+        "10.5"
+      ]
+    },
+    {
+      "prop_id": "10.9",
+      "statement": "The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.",
+      "proof": "**Step 1.** Let A and B be straight lines commensurable in length. We shall prove that the square on A has to the square on B the ratio which a square number has to a square number.\n\n**Step 2.** Since A and B are commensurable in length, by 10.5, A has to B the ratio which a number m has to a number n, that is, A:B = m:n.\n\n**Step 3.** Let C and D be line segments representing the numbers m and n respectively, so that C:D = m:n, and therefore A:B = C:D.\n\n**Step 4.** Since A:B = C:D, by 6.22 (if four straight lines are proportional, the rectilineal figures similar and similarly described upon them are also proportional), taking the similar figures to be the squares on these lines, we have sq(A):sq(B) = sq(C):sq(D).\n\n**Step 5.** Now by 6.20, the ratio sq(C):sq(D) is the duplicate ratio of C:D, that is, the duplicate ratio of m:n. And by 8.11, the square on the number m has to the square on the number n the ratio duplicate of that which m has to n, and this duplicate ratio is m*m to n*n, that is, m^2:n^2. Therefore sq(C):sq(D) = m^2:n^2.\n\n**Step 6.** By D7.18, m^2 and n^2 are square numbers, since each is equal multiplied by equal. Hence sq(A):sq(B) = m^2:n^2, which is the ratio of a square number to a square number. This completes the proof of the first part.\n\n**Step 7.** Conversely, suppose that sq(A):sq(B) has the ratio which a square number has to a square number, say sq(A):sq(B) = p^2:q^2, where p^2 and q^2 are square numbers. We shall prove that A and B are commensurable in length.\n\n**Step 8.** By D7.18, since p^2 and q^2 are square numbers, there exist numbers p and q such that p^2 = p multiplied by p, and q^2 = q multiplied by q.\n\n**Step 9.** Let E and F be line segments representing the numbers p and q respectively, so that E:F = p:q.\n\n**Step 10.** By 6.20, the ratio sq(E):sq(F) is the duplicate ratio of E:F, that is, the duplicate ratio of p:q. By 8.11, the duplicate ratio of p:q is p^2:q^2. Therefore sq(E):sq(F) = p^2:q^2.\n\n**Step 11.** Since sq(A):sq(B) = p^2:q^2 = sq(E):sq(F), by 6.22 (the converse: if rectilineal figures similar and similarly described upon four straight lines are proportional, then the straight lines are themselves proportional), we conclude A:B = E:F = p:q.\n\n**Step 12.** Since A:B = p:q, which is a ratio of number to number, by 10.6, A and B are commensurable in length. This completes the proof of the second part.\n\n**Step 13.** Now let A and B be straight lines incommensurable in length. We shall prove that sq(A):sq(B) does not have the ratio which a square number has to a square number.\n\n**Step 14.** Suppose for contradiction that sq(A):sq(B) has the ratio which a square number has to a square number, say sq(A):sq(B) = p^2:q^2 for some square numbers p^2 and q^2. Then by the second part (Steps 7 through 12), A and B would be commensurable in length. But this contradicts the hypothesis that A and B are incommensurable in length. Therefore sq(A):sq(B) does not have the ratio which a square number has to a square number. This completes the proof of the third part.\n\n**Step 15.** Finally, suppose that sq(A):sq(B) does not have the ratio which a square number has to a square number. We shall prove that A and B are incommensurable in length.\n\n**Step 16.** Suppose for contradiction that A and B are commensurable in length. Then by the first part (Steps 1 through 6), sq(A):sq(B) would have the ratio which a square number has to a square number. But this contradicts the hypothesis. Therefore A and B are incommensurable in length. This completes the proof of the fourth part. Q.E.D.",
+      "used": [
+        "D7.18",
+        "6.20",
+        "6.22",
+        "8.11",
+        "10.5",
+        "10.6"
+      ]
+    },
+    {
+      "prop_id": "10.10",
+      "statement": "To find two straight lines incommensurable, the one in length only, and the other in square also, with an assigned straight line.",
+      "proof": "**Step 1.** Let A be the assigned straight line. We must find two straight lines, one incommensurable with A in length only, and the other incommensurable with A in square also.\n\n**Step 2.** Consider the square on A. The numbers 2 and 1 are numbers, but 2 is not a square number while 1 is, so the ratio 2:1 is not the ratio of a square number to a square number.\n\n**Step 3.** Construct a square equal to twice the square on A, and let B be its side, so that the square on B is to the square on A as 2 is to 1 [1.47, 1.44, or by construction from the diagonal of a square with side A].\n\n**Step 4.** Since the square on B is to the square on A as 2 is to 1, and 2:1 is a ratio of number to number, by Proposition 10.6 the square on B and the square on A are commensurable. Thus B is commensurable in square with A [D10.1.2].\n\n**Step 5.** Since the ratio 2:1 is not the ratio of a square number to a square number (for 2 is not a square number), by Proposition 10.9 (the converse part), B and A are incommensurable in length.\n\n**Step 6.** Therefore B is commensurable with A in square but incommensurable with A in length, that is, B is incommensurable with A in length only [D10.1.1, D10.1.2].\n\n**Step 7.** Now find C, the mean proportional between A and B, so that A is to C as C is to B [6.13].\n\n**Step 8.** Since A, C, B are three straight lines in continued proportion (A:C = C:B), by Proposition 6.17 the rectangle contained by A and B equals the square on C.\n\n**Step 9.** Since A and B are incommensurable in length (established in Step 5), by Proposition 10.7 the ratio A:B is not the ratio of a number to a number.\n\n**Step 10.** Now consider the ratio of the square on A to the square on C. The square on A is the rectangle contained by A and A, and the square on C equals the rectangle contained by A and B (Step 8). By Proposition 6.1, rectangles under the same height are to one another as their bases, so the rectangle contained by A and A is to the rectangle contained by A and B as A is to B. Therefore the square on A is to the square on C as A is to B.\n\n**Step 11.** Since A:B is not the ratio of a number to a number (Step 9), the ratio of the square on A to the square on C is not the ratio of a number to a number. By Proposition 10.8, the square on A and the square on C are incommensurable.\n\n**Step 12.** Therefore, by Definition D10.1.2, C is incommensurable in square with A, and hence also incommensurable in length with A.\n\n**Step 13.** Thus we have found B, incommensurable with A in length only, and C, incommensurable with A in square also, as required. Q.E.F.",
+      "used": [
+        "D10.1.1",
+        "D10.1.2",
+        "6.1",
+        "6.13",
+        "6.17",
+        "10.6",
+        "10.7",
+        "10.8",
+        "10.9"
+      ]
+    },
+    {
+      "prop_id": "10.11",
+      "statement": "If four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth; and, if the first be incommensurable with the second, the third will also be incommensurable with the fourth.",
+      "proof": "**Step 1.** Let A, B, C, D be four magnitudes such that A is to B as C is to D, that is, A:B :: C:D [D5.6].\n\n**Step 2.** First, suppose that A is commensurable with B. Then by Proposition 10.5, A has to B the ratio which a number has to a number. That is, there exist numbers m and n such that A:B :: m:n [10.5].\n\n**Step 3.** Since A:B :: C:D (given) and A:B :: m:n (Step 2), it follows that C:D :: m:n. Thus C has to D the ratio which a number has to a number.\n\n**Step 4.** Since C has to D the ratio which a number has to a number, by Proposition 10.6, C is commensurable with D [10.6].\n\n**Step 5.** Next, suppose that A is incommensurable with B. Then by Proposition 10.7, A does not have to B the ratio which a number has to a number [10.7].\n\n**Step 6.** Suppose, for the sake of contradiction, that C were commensurable with D. Then by Proposition 10.5, C would have to D the ratio which a number has to a number [10.5]. But since A:B :: C:D, this would mean A has to B the ratio which a number has to a number as well. By Proposition 10.6, A and B would then be commensurable [10.6], contradicting the hypothesis that A is incommensurable with B.\n\n**Step 7.** Therefore C does not have to D the ratio which a number has to a number. By Proposition 10.8, C is incommensurable with D [10.8].\n\n**Step 8.** Therefore, if four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth; and if the first be incommensurable with the second, the third will also be incommensurable with the fourth. Q.E.D.",
+      "used": [
+        "D5.6",
+        "10.5",
+        "10.6",
+        "10.7",
+        "10.8"
+      ]
+    },
+    {
+      "prop_id": "10.12",
+      "statement": "Magnitudes commensurable with the same magnitude are commensurable with one another also.",
+      "proof": "**Step 1.** Let A and B be magnitudes each commensurable with a magnitude C. We must show that A is commensurable with B.\n\n**Step 2.** Since A is commensurable with C, by Proposition 10.5, A has to C the ratio which some number m has to some number n. That is, A:C :: m:n.\n\n**Step 3.** Since B is commensurable with C, by Proposition 10.5, B has to C the ratio which some number p has to some number q. That is, B:C :: p:q.\n\n**Step 4.** By Proposition 5.7 (corollary on inversion), since B:C :: p:q, we have inversely C:B :: q:p.\n\n**Step 5.** Since A:C :: m:n, by Proposition 7.17 (if a number multiply two numbers, the products have the same ratio as the numbers multiplied), multiplying both m and n by q, we obtain m:n :: mq:nq. Therefore A:C :: mq:nq.\n\n**Step 6.** Since C:B :: q:p, by Proposition 7.17, multiplying both q and p by n, we obtain q:p :: nq:np. Therefore C:B :: nq:np.\n\n**Step 7.** We now have A:C :: mq:nq and C:B :: nq:np, where mq, nq, np are numbers (each being a product of two numbers, by Proposition 7.19). By Proposition 5.22 (ex aequali), since A:C :: mq:nq and C:B :: nq:np, it follows that A:B :: mq:np.\n\n**Step 8.** Since mq and np are each products of numbers, they are numbers (by Proposition 7.19). Therefore A has to B the ratio which the number mq has to the number np.\n\n**Step 9.** Since A and B have to one another the ratio which a number has to a number, by Proposition 10.6, A is commensurable with B.\n\n**Step 10.** Therefore magnitudes commensurable with the same magnitude are commensurable with one another also. Q.E.D.",
+      "used": [
+        "10.5",
+        "5.7",
+        "7.17",
+        "7.19",
+        "5.22",
+        "10.6"
+      ]
+    },
+    {
+      "prop_id": "10.13",
+      "statement": "If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same.",
+      "proof": "**Step 1.** Let A and B be two commensurable magnitudes, and let A be incommensurable with some magnitude C. We are to prove that B is also incommensurable with C. [D10.1.1]\n\n**Step 2.** Suppose, for the sake of contradiction, that B is commensurable with C. [D10.1.1]\n\n**Step 3.** Since A is commensurable with B (by hypothesis), and B is commensurable with C (by assumption), it follows by 10.12 that A is commensurable with C. [10.12]\n\n**Step 4.** But A was given as incommensurable with C, which contradicts the conclusion of Step 3. [D10.1.1]\n\n**Step 5.** Therefore the assumption that B is commensurable with C is false. Hence B is incommensurable with C. [D10.1.1]\n\n**Step 6.** Therefore, if two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same. Q.E.D.",
+      "used": [
+        "D10.1.1",
+        "10.12"
+      ]
+    },
+    {
+      "prop_id": "10.14",
+      "statement": "If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third will also be greater than the square on the fourth by  the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third will also be greater than the square on the fourth by the square on a straight line in-commensurable with the third.",
+      "proof": "**Step 1.** Let A, B, C, D be four straight lines such that A:B :: C:D. Suppose that the square on A is greater than the square on B by the square on a straight line E, so that sq(A) = sq(B) + sq(E), and suppose that E is commensurable with A. We must show that the square on C is greater than the square on D by the square on a straight line commensurable with C.\n\n**Step 2.** Since sq(A) > sq(B), we have A > B. Since A:B :: C:D and A > B, by the definition of proportion (D5.5), C > D, and therefore sq(C) > sq(D). Let F be the straight line such that sq(C) = sq(D) + sq(F); such a line exists by construction (P1, P3, 1.47).\n\n**Step 3.** Since A:B :: C:D, by 6.22 the squares on proportional lines are proportional, so sq(A):sq(B) :: sq(C):sq(D).\n\n**Step 4.** Since sq(A):sq(B) :: sq(C):sq(D) and sq(A) > sq(B), by convertendo (5.19) we obtain sq(A):(sq(A) - sq(B)) :: sq(C):(sq(C) - sq(D)), that is, sq(A):sq(E) :: sq(C):sq(F).\n\n**Step 5.** Since sq(A):sq(E) :: sq(C):sq(F), by the converse part of 6.22 we obtain A:E :: C:F.\n\n**Step 6.** Now E is commensurable with A (by hypothesis). Since A:E :: C:F and A is commensurable with E, by 10.11 (if four magnitudes be proportional and the first be commensurable with the second, the third will also be commensurable with the fourth), C is commensurable with F. Therefore the square on C is greater than the square on D by the square on F, a straight line commensurable with C.\n\n**Step 7.** For the second part, suppose instead that E is incommensurable with A. The construction and reasoning of Steps 2 through 5 proceed identically, yielding A:E :: C:F. Since A is incommensurable with E, by the second part of 10.11 (if the first be incommensurable with the second, the third will also be incommensurable with the fourth), C is incommensurable with F. Therefore the square on C is greater than the square on D by the square on F, a straight line incommensurable with C.\n\n**Step 8.** Thus both parts of the proposition are established: the commensurability or incommensurability of the excess-line with the first term is preserved under proportion. Q.E.D.",
+      "used": [
+        "D5.5",
+        "P1",
+        "P3",
+        "1.47",
+        "6.22",
+        "5.19",
+        "10.11"
+      ]
+    },
+    {
+      "prop_id": "10.15",
+      "statement": "If two commensurable magnitudes be added together, the whole will also be commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes will also be commensurable.",
+      "proof": "**Step 1.** Let AB and BC be two commensurable magnitudes, and let AC be their sum, so that AC = AB + BC. We must prove two things: (I) that AC is commensurable with each of AB and BC, and (II) conversely, that if AC is commensurable with one of AB, BC, then AB and BC are commensurable with each other.\n\n**Step 2.** [Proof of Part I.] Since AB and BC are commensurable, by Proposition 10.5, AB and BC have to one another the ratio which a number has to a number. Let AB : BC = m : n, where m and n are numbers.\n\n**Step 3.** Since AB : BC = m : n, by Proposition 5.18 (componendo), (AB + BC) : BC = (m + n) : n. But AB + BC = AC, so AC : BC = (m + n) : n.\n\n**Step 4.** Since m and n are numbers, m + n is also a number. Therefore AC : BC is the ratio which a number has to a number. By Proposition 10.6, AC and BC are commensurable.\n\n**Step 5.** Now, since AC is commensurable with BC (just proved in Step 4), and AB is commensurable with BC (given), then by Proposition 10.12, AC is commensurable with AB. Thus AC is commensurable with each of AB and BC, which is Part I.\n\n**Step 6.** [Proof of Part II.] Now suppose that AC is commensurable with AB. We must show that AB and BC are also commensurable.\n\n**Step 7.** Since AC and AB are commensurable, by Proposition 10.5, AC and AB have to one another the ratio which a number has to a number. Let AC : AB = p : q, where p and q are numbers. Since AC is the whole and AB is a part, AC is greater than AB, so p is greater than q.\n\n**Step 8.** Since AC : AB = p : q and AC = AB + BC, we have (AB + BC) : AB = p : q. By Proposition 5.17 (separando), BC : AB = (p - q) : q.\n\n**Step 9.** Since p and q are numbers with p greater than q, p - q is also a number. Therefore BC : AB is the ratio which a number has to a number. By Proposition 10.6, BC and AB are commensurable.\n\n**Step 10.** Therefore, if two commensurable magnitudes be added together, the whole is commensurable with each of them; and if the whole be commensurable with one of them, the original magnitudes are also commensurable. Q.E.F.",
+      "used": [
+        "10.5",
+        "5.18",
+        "10.6",
+        "10.12",
+        "5.17",
+        "D10.1.1"
+      ]
+    }
+  ]
+}

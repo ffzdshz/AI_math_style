@@ -1,0 +1,13 @@
+{
+  "proposition": "7.22",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone: assume A, B are least in their ratio but not coprime, construct D and E from the measurement by C, derive D:E = A:B, show D < A and E < B, and reach a contradiction. The sole substantive difference is that Heath applies 7.17 directly (one number C multiplying two numbers D, E preserves ratio), while the AI applies 7.18 (two numbers D, E multiplying one number C preserves ratio). Since Heath's proof of 7.18 uses both 7.16 and 7.17 internally, the proof-tree containment test confirms that heath_only item 7.17 appears inside the proof of the AI's cited 7.18, making this a citation-depth difference. The remaining ai_only items are definitions (D7.12, D7.2, D7.3), a common notion (CN5), and proposition 7.16 used to explicitly justify D < A and E < B, which Heath states without citation. All differences are granularity, not backbone.",
+  "jaccard": 0.125,
+  "ai_citations": "7.16|7.18|CN5|D7.12|D7.15|D7.2|D7.3",
+  "heath_citations": "7.17|D7.15",
+  "ai_only": "7.16|7.18|CN5|D7.12|D7.2|D7.3",
+  "heath_only": "7.17",
+  "audit_record": ""
+}

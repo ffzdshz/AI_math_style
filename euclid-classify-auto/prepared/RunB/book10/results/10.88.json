@@ -1,0 +1,13 @@
+{
+  "proposition": "10.88",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as Granularity difference (G). Both proofs establish the same backbone: set out a rational line, find two rational lines commensurable in square only whose square difference is incommensurable with the greater, form the apotome, and classify it as a fourth apotome using D10.3.4. The key difference is citation depth: Heath constructs the two lines inline using number-theoretic ratios and applies 10.6, 5.19 (convertendo), and 10.9 individually, while the AI invokes 10.30 directly, which packages exactly these steps (Heath's own proof of 10.30 uses 10.6, 5.19, and 10.9 internally). The proof-tree containment test confirms that all three heath_only propositions appear inside Heath's proof of 10.30, so the AI is citing 10.30 as a unit while Heath re-derives its internals inline. The AI's additional citations of 10.12 (transitivity of commensurability) and D10.1.3 (definition of rational) are explicit low-level details that Heath handles implicitly. This is a same-backbone, different-depth scenario.",
+  "jaccard": 0.25,
+  "ai_citations": "10.12|10.30|10.73|D10.1.3|D10.3.4",
+  "heath_citations": "10.6|10.73|10.9|5.19|D10.3.4",
+  "ai_only": "10.12|10.30|D10.1.3",
+  "heath_only": "10.6|10.9|5.19",
+  "audit_record": ""
+}

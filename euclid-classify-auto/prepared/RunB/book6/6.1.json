@@ -1,0 +1,37 @@
+{
+  "proposition": "6.1",
+  "book": 6,
+  "statement": "Triangles and parallelograms which are under the same height are to one another as their bases.",
+  "heath_proof": "Let ABC, ACD be triangles and EC, CF parallelograms under the same height;I say that, as the base BC is to the base CD, so is the triangle ABC to the triangle ACD, and the parallelogram EC to the parallelogram CF. For let BD be produced in both directions to the points H, L and let [any number of straight lines] BG, GH bemade equal to the base BC, and any number of straight lines DK, KL equal to the base CD; let AG, AH, AK, AL be joined. Then, since CB, BG, GH are equal to one another, the triangles ABC, AGB, AHG are also equal to one another. [I. 38] Therefore, whatever multiple the base HC is of the base BC, that multiple also is the triangle AHC of the triangle ABC. For the same reason,whatever multiple the base LC is of the base CD, that multiple also is the triangle ALC of the triangle ACD; and, if the base HC is equal to the base CL, the triangle AHC is also equal to the triangle ACL, [I. 38] if the base HC is in excess of the base CL, the triangle AHC  is also in excess of the triangle ACL, and, if less, less. Thus, there being four magnitudes, two bases BC, CD and two triangles ABC, ACD, equimultiples have been taken of the base BC and thetriangle ABC, namely the base HC and the triangle AHC, and of the base CD and the triangle ADC other, chance, equimultiples, namely the base LC and the triangle ALC; and it has been proved that, if the base HC is in excess of the base CL, the triangle AHC  is also in excess of the triangle ALC; if equal, equal; and, if less, less. Therefore, as the base BC is to the base CD, so is the triangle ABC to the triangle ACD. [V. Def. 5] Next, since the parallelogram EC is double of the triangleABC, [I. 41] and the parallelogram FC is double of the triangle ACD, while parts have the same ratio as the same multiples of them, [V. 15] therefore, as the triangle ABC is to the triangle ACD, so isthe parallelogram EC to the parallelogram FC. Since, then, it was proved that, as the base BC is to CD, so is the triangle ABC to the triangle ACD, and, as the triangle ABC is to the triangle ACD, so is the parallelogram EC to the parallelogram CF,therefore also, as the base BC is to the base CD, so is the parallelogram EC to the parallelogram FC. [V. 11]",
+  "ai_proof_text": "6.1\n**Statement:** Triangles and parallelograms which are under the same height are to one another as their bases.\n\n**Step 1.** Let ABC and DEF be two triangles having the same height, with bases BC and EF respectively. We must show that triangle ABC is to triangle DEF as BC is to EF. Let GBCA and DEFL be parallelograms on the same bases BC and EF respectively, and under the same height as the triangles. By 1.41, triangle ABC is half of parallelogram GBCA, and triangle DEF is half of parallelogram DEFL.\n\n**Step 2.** Produce BC in the direction beyond C, and mark off any number of segments equal to BC: let CC' = BC, C'C'' = BC, and so on, so that BH (the line from B through these extensions) contains m copies of BC for any chosen positive integer m. Similarly, produce EF in the direction beyond F, and mark off any number of segments equal to EF: let FK contain n copies of EF for any chosen positive integer n. This is possible by P1 and P2, with equal segments laid off by 1.3.\n\n**Step 3.** Join A to each of the division points on BH, forming triangles ABC, ACC', AC'C'', etc. Since BC = CC' = C'C'' (by construction), and all these triangles share the same vertex A and hence the same height, by 1.38 the triangles ABC, ACC', AC'C'', etc., are all equal to one another.\n\n**Step 4.** Therefore triangle ABH (the triangle on base BH with vertex A) equals m times triangle ABC, since BH is composed of m segments each equal to BC, and triangle ABH is the sum of m equal triangles each equal to triangle ABC (by repeated application of CN2).\n\n**Step 5.** Similarly, join D to each of the division points on EK, forming triangles DEF, DFF', DF'F'', etc. Since EF = FF' = F'F'' (by construction), and all these triangles share vertex D and the same height, by 1.38 these triangles are all equal to one another. Therefore triangle DEK equals n times triangle DEF.\n\n**Step 6.** Now, triangle ABH is the m-th multiple of triangle ABC, and BH is the m-th multiple of BC. Triangle DEK is the n-th multiple of triangle DEF, and EK is the n-th multiple of EF. Since triangles ABH and DEK are under the same height, we compare them via their bases BH and EK.\n\n**Step 7.** If BH > EK, then since these triangles are under the same height, by 1.38 and its converse considerations (specifically 1.38 when bases are equal, and 1.39 — if triangles are on the same side and equal then the line through the vertices is parallel to the base — together yielding: greater base implies greater triangle), triangle ABH > triangle DEK. Similarly, if BH = EK then triangle ABH = triangle DEK (by 1.38). And if BH < EK then triangle ABH < triangle DEK.\n\n**Step 8.** That is, for arbitrary positive integers m and n: if m times BC is greater than n times EF, then m times triangle ABC is greater than n times triangle DEF; if m times BC equals n times EF, then m times triangle ABC equals n times triangle DEF; and if m times BC is less than n times EF, then m times triangle ABC is less than n times triangle DEF.\n\n**Step 9.** By D5.5, this is exactly the condition for triangle ABC to be to triangle DEF as BC is to EF. Therefore, triangle ABC : triangle DEF = BC : EF.\n\n**Step 10.** Now for the parallelograms: since triangle ABC is half of parallelogram GBCA and triangle DEF is half of parallelogram DEFL (by 1.41), and since halves have the same ratio as their doubles (by 5.15, or more directly: since parallelogram GBCA = 2 times triangle ABC and parallelogram DEFL = 2 times triangle DEF, these are equimultiples with multiplier 2, so by 5.15 the ratio is preserved), we have parallelogram GBCA : parallelogram DEFL = triangle ABC : triangle DEF = BC : EF.\n\n**Step 11.** Therefore, triangles and parallelograms which are under the same height are to one another as their bases. Q.E.F.\n\n**USED:** 1.3, 1.38, 1.39, 1.41, 5.15, CN2, D5.5, P1, P2\n**Human refs (from References field):** 1.38, 1.41, 5.11, 5.15, D5.5\n**Jaccard:** 0.400 — AI adds ['1.3', '1.39', 'CN2', 'P1', 'P2']; Human adds ['5.11']",
+  "ai_used": [
+    "1.3",
+    "1.38",
+    "1.39",
+    "1.41",
+    "5.15",
+    "CN2",
+    "D5.5",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.38",
+    "1.41",
+    "5.11",
+    "5.15",
+    "D5.5"
+  ],
+  "ai_only": [
+    "1.3",
+    "1.39",
+    "CN2",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "5.11"
+  ],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let ABC and DEF be two triangles having the same height, with bases BC and EF respectively. We must show that triangle ABC is to triangle DEF as BC is to EF. Let GBCA and DEFL be parallelo"
+}

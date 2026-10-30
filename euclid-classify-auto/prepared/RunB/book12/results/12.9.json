@@ -1,0 +1,13 @@
+{
+  "proposition": "12.9",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides this as G (granularity difference, Case A). Both proofs share the same logical backbone: construct parallelepipeds from the given pyramids, apply XI.34 to obtain reciprocal proportionality of parallelogram bases and heights, then use I.34 to relate triangular bases to parallelogram bases, and chain the proportions. The difference is purely in citation depth and which specific lemmas are invoked for equivalent steps. Heath goes directly from pyramid to parallelepiped (factor of 6) and uses V.11 to chain proportions, while the AI takes a more explicit two-step route through prisms (XII.7 for pyramid-to-prism, XI.28 for prism-to-parallelepiped) and uses V.15 instead of V.11 for the proportion chaining. The ai_only items (XII.7, XI.28, CN2, CN3) are construction-level and common-notion citations that spell out what Heath does more concisely, and V.15 replaces V.11 for an equivalent logical step. The heath_only item V.11 is a proportion-transitivity result that the AI replaces with V.15 (parts have the same ratio as their multiples), achieving the same intermediate conclusion. The key geometric facts established are identical in both proofs.",
+  "jaccard": 0.25,
+  "ai_citations": "1.34|11.28|11.34|12.7|5.15|CN2|CN3",
+  "heath_citations": "1.34|11.34|5.11",
+  "ai_only": "11.28|12.7|5.15|CN2|CN3",
+  "heath_only": "5.11",
+  "audit_record": ""
+}

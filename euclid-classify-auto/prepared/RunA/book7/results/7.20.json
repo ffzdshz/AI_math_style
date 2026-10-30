@@ -1,0 +1,13 @@
+{
+  "proposition": "7.20",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G. Both proofs share the same logical backbone: (1) assume for contradiction that C is 'parts' of A, (2) derive the existence of smaller numbers in the same ratio, contradicting the minimality of C and D, (3) conclude C is a 'part' of A and measures it, (4) conclude D measures B the same number of times. The proofs differ in the technical mechanism within these steps: Heath divides into equal parts and uses 7.12 (aggregation of proportions) for the contradiction, while the AI uses 7.17 (multiplication preserving ratios); Heath uses 7.13 and Def. 20 directly for the second conclusion, while the AI chains through 7.17, 7.19, 7.16, and CN5. The proof-tree containment test confirms that heath_only item 7.13 appears inside Heath's proof of 7.17 (which the AI cites), supporting a citation-depth interpretation. The item 7.12 reflects a technique-level variation within the same key intermediate conclusion (finding smaller numbers in same ratio), not a different backbone. The AI's additional citations (7.16, 7.17, 7.19, CN5, D7.3, D7.4) represent a more algebraic approach at finer granularity to reach the same conclusions Heath reaches more directly.",
+  "jaccard": 0.2,
+  "ai_citations": "7.16|7.17|7.19|7.4|CN5|D7.20|D7.3|D7.4",
+  "heath_citations": "7.12|7.13|7.4|D7.20",
+  "ai_only": "7.16|7.17|7.19|CN5|D7.3|D7.4",
+  "heath_only": "7.12|7.13",
+  "audit_record": ""
+}

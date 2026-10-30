@@ -1,0 +1,51 @@
+{
+  "proposition": "12.11",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Two perpendicular diameters through each circle center; angle bisectors extended to circumference; central triangles are isosceles with equal radial sides; corresponding inscribed polygons at each stage are similar",
+      "type": "polygon_construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Polygon vertices joined to cone vertices form inscribed pyramids; F1:F2 = B1:B2 via squares on diameters (12.1, 12.2); P1:P2 = F1:F2 since pyramids have equal height (12.6)",
+      "type": "ratio_via_geometry"
+    },
+    {
+      "step": "Step 4",
+      "claim": "N is intersection of OM with AB; OM is perpendicular to AB via congruent triangles OAN and OBN (SAS)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Rectangle R constructed with base AB, opposite side through M perpendicular to OM, hence tangent to circle at M by 3.16",
+      "type": "tangency"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Circular segment between chord AB and minor arc is a proper part of rectangle R, since arc at most a quadrant cannot extend beyond perpendiculars at A and B",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Rectangle R = 2 times triangle AMB (same base AB, between same parallels, by 1.41)",
+      "type": "area_relation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Pyramid Q (over rectangle R) = 2 times pyramid T (over triangle AMB) by equal-height pyramid theorem 12.6",
+      "type": "volume_relation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Solid W over circular segment is a proper part of Q, so W < 2T; adding M removes T from W, which is more than half of W",
+      "type": "exhaustion_bound"
+    }
+  ],
+  "configuration_map": "O: center of each circle, fixed throughout. A, B: consecutive vertices of inscribed polygon on the circumference, at distance r (radius) from O. M: new circumference point at midpoint of arc AB, introduced by angle bisection; at distance r from O, on the arc between A and B. N: foot of perpendicular from O to chord AB; also the midpoint of AB (since triangle OAB is isosceles and OM bisects angle AOB). Rectangle R: base along AB, extends toward M with opposite side tangent to circle at M, lateral sides are perpendiculars at A and B. Cone vertex: above circle center at the common cone height h. All points maintain consistent positions: N stays on AB as its midpoint, M stays on the circumference between A and B, and the rectangle R is correctly bounded by the tangent line and the two perpendiculars. The construction is performed identically in both circles with the same number of subdivisions, preserving similarity of inscribed polygons at every stage.",
+  "pass_reason": "All spatial claims are mutually consistent. The inscribed polygon construction is standard (angle bisection of equal central angles). The key geometric argument — that the circular segment is contained in the bounding rectangle — is valid because OM is perpendicular to AB, the opposite side of R is tangent at M (by 3.16), and the arc (at most a quadrant) cannot extend beyond the perpendiculars at A and B. The more-than-half exhaustion bound (W < 2T, so removing T removes more than half of W) follows correctly from the containment. Steps 6-11 are proportion-theory and algebraic arguments with no additional spatial configuration claims."
+}

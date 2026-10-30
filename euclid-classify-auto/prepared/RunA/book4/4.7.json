@@ -1,0 +1,49 @@
+{
+  "proposition": "4.7",
+  "book": 4,
+  "statement": "About a given circle to circumscribe a square.",
+  "heath_proof": "Let ABCD be the given circle; thus it is required to circumscribe a square about the circle ABCD. Let two diameters AC, BD of the circle ABCD be drawn at right angles to one another, and through the points A, B, C, D let FG, GH, HK, KF be drawn touching the circle ABCD. [III. 16] Then, since FG touches the circle ABCD, and EA has been joined from the centre E to the point of contact at A, therefore the angles at A are right. [III. 18]  For the same reason the angles at the points B, C, D are also right. Now, since the angle AEB is right, and the angle EBG is also right, therefore GH is parailel to AC. [I. 28]  For the same reason AC is also parallel to FK, so that GH is also parallel to FK. [I. 30]  Similarly we can prove that each of the straight lines GF, HK is parallel to BED. Therefore GK, GC, AK, FB, BK are parallelograms; therefore GF is equal to HK, and GH to FK. [I. 34] And, since AC is equal to BD, and AC is also equal to each of the straight lines GH, FK, while BD is equal to each of the straight lines GF, HK, [I. 34]therefore the quadrilateral FGHK is equilateral. I say next that it is also right-angled. For, since GBEA is a parallelogram, and the angle AEB is right, therefore the angle AGB is also right. [I. 34] Similarly we can prove that the angles at H, K, F are also right. Therefore FGHK is right-angled. But it was also proved equilateral; therefore it is a square; and it has been circumscribed about the circle ABCD. Therefore about the given circle a square has been circumscribed.",
+  "ai_proof_text": "4.7\n**Statement:** About a given circle to circumscribe a square.\n\n**Step 1.** Let ABCD be the given circle with center E. Draw two diameters AC and BD through E. [P1, D1.17]\n\n**Step 2.** Construct diameter AC perpendicular to diameter BD at the center E, so that angle AEB, angle BEC, angle CED, and angle DEA are each right angles. [1.11, D1.10]\n\n**Step 3.** Through A, draw line FG at right angles to EA (and hence to the diameter AC). Through B, draw line GH at right angles to EB (and hence to the diameter BD). Through C, draw line HK at right angles to EC. Through D, draw line KF at right angles to ED. [1.11]\n\n**Step 4.** Since FG is drawn at right angles to the diameter AC at its extremity A, FG touches the circle at A. Similarly GH touches the circle at B, HK touches the circle at C, and KF touches the circle at D. [3.16]\n\n**Step 5.** Since FG is perpendicular to AC and HK is also perpendicular to AC (both at extremities of the same diameter), FG is parallel to HK. [1.28]\n\n**Step 6.** Since GH is perpendicular to BD and KF is also perpendicular to BD, GH is parallel to KF. [1.28]\n\n**Step 7.** Therefore FGHK is a parallelogram, since both pairs of opposite sides are parallel. [D1.22]\n\n**Step 8.** Consider the quadrilateral AEBG. Angle EAG is a right angle (since FG, and hence AG, is perpendicular to EA). Angle EBG is a right angle (since GH, and hence BG, is perpendicular to EB). Angle AEB is a right angle (by construction in Step 2). Since the angles of quadrilateral AEBG sum to four right angles (as it is composed of two triangles by 1.32), angle AGB must also be a right angle. [1.32]\n\n**Step 9.** Since AEBG has all four angles right and EA = EB (both being radii of circle ABCD, by D1.15), and since AG is parallel to EB (both perpendicular to AE by 1.28) and BG is parallel to EA (both perpendicular to EB by 1.28), AEBG is a rectangle with adjacent sides EA = EB. By 1.34, opposite sides of parallelogram AEBG are equal, so AG = EB and BG = EA. Thus AG = BG = EA = EB. [D1.15, 1.28, 1.34]\n\n**Step 10.** By the same reasoning applied to quadrilateral BECH: angle EBH is right (tangent at B), angle ECH is right (tangent at C), angle BEC is right (construction). So angle BHC is right, and BH = CH = EB = EC. [1.32, 1.34, D1.15]\n\n**Step 11.** By the same reasoning applied to quadrilateral CEDK: angle ECK is right (tangent at C), angle EDK is right (tangent at D), angle CED is right (construction). So angle CKD is right, and CK = DK = EC = ED. [1.32, 1.34, D1.15]\n\n**Step 12.** By the same reasoning applied to quadrilateral DEAF: angle EDF is right (tangent at D), angle EAF is right (tangent at A), angle DEA is right (construction). So angle DFA is right, and DF = AF = ED = EA. [1.32, 1.34, D1.15]\n\n**Step 13.** Now GH = GB + BH = EA + EB (from Steps 9 and 10). And FG = FA + AG = EA + EA (from Steps 12 and 9). Since EA = EB = EC = ED (all radii, D1.15), we have GH = FG = 2·EA. Similarly HK = HC + CK = EC + EC = 2·EA, and KF = KD + DF = ED + ED = 2·EA. Therefore FG = GH = HK = KF, so FGHK is equilateral. [CN1, CN2, D1.15]\n\n**Step 14.** The angle at G is right (from Step 8, angle AGB is right, and G lies on sides FG and GH). Since FGHK is a parallelogram (Step 7) and one angle (at G) is right, all angles of FGHK are right, by 1.34 (opposite angles equal) and 1.29 (co-interior angles supplementary). [1.34, 1.29]\n\n**Step 15.** Since FGHK is both equilateral and right-angled, FGHK is a square. [D1.22]\n\n**Step 16.** Each side of FGHK touches the circle ABCD: FG at A, GH at B, HK at C, and KF at D (established in Step 4). Therefore the square FGHK is circumscribed about the given circle, according to D4.4.\n\n**Step 17.** Therefore, about the given circle, a square has been circumscribed, which is what was required to be done. [D4.4]\n\n**USED:** 1.11, 1.28, 1.29, 1.32, 1.34, 3.16, CN1, CN2, D1.10, D1.15, D1.17, D1.22, D4.4, P1\n**Human refs (from References field):** 1.28, 1.30, 1.34, 3.16, 3.18\n**Jaccard:** 0.188 — AI adds ['1.11', '1.29', '1.32', 'CN1', 'CN2', 'D1.10', 'D1.15', 'D1.17', 'D1.22', 'D4.4', 'P1']; Human adds ['1.30', '3.18']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.29",
+    "1.32",
+    "1.34",
+    "3.16",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D4.4",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.30",
+    "1.34",
+    "3.16",
+    "3.18"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.29",
+    "1.32",
+    "CN1",
+    "CN2",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D1.22",
+    "D4.4",
+    "P1"
+  ],
+  "heath_only": [
+    "1.30",
+    "3.18"
+  ],
+  "jaccard": 0.188,
+  "proof_summary": "**Step 1.** Let ABCD be the given circle with center E. Draw two diameters AC and BD through E. [P1, D1.17]  **Step 2.** Construct diameter AC perpendicular to diameter BD at the center E, so that ang"
+}

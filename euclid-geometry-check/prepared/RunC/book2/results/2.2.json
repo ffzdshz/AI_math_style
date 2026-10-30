@@ -1,0 +1,26 @@
+{
+  "proposition": "2.2",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on segment AB between A and B, dividing AB into segments AC and CB",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The square on AB is constructed; sq(AB) = rect(AB, AB) by definition",
+      "type": "construction/definition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Proposition 2.1 applied with both straight lines equal to AB, one cut at C into AC and CB: rect(AB, AB) = rect(AB, AC) + rect(AB, CB)",
+      "type": "algebraic application of previous result"
+    }
+  ],
+  "configuration_map": "Point C: lies on segment AB between A and B (Step 1), used as the cut point when applying Prop. 2.1 (Step 3). Position is consistent throughout. Square on AB: constructed in Step 2, used only to establish the identity sq(AB) = rect(AB, AB). No auxiliary points with evolving positions. The entire configuration is simply a line segment AB with an interior point C.",
+  "pass_reason": "The proof is primarily algebraic, reducing Proposition 2.2 to Proposition 2.1 by taking the special case where both straight lines are AB. The only spatial claims are that C lies between A and B and that the square on AB exists. These are trivially consistent and are never contradicted. There are no angle decompositions, no interior/exterior arguments, no ray orderings, and no complex spatial constructions that could produce a configuration contradiction."
+}

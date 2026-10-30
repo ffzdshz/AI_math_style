@@ -1,0 +1,13 @@
+{
+  "proposition": "1.34",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs follow the same backbone: they use I.29 twice to establish alternate angles, then I.26 (ASA) for triangle congruence yielding equal opposite sides and the remaining angle, then CN2 to combine angles for the second pair of opposite angles, and finally establish that the diagonal bisects the parallelogram via triangle equality. The sole difference is that Heath separately invokes I.4 (SAS) in the bisection part to prove the two triangles are equal in area, whereas the AI attributes triangle equality directly to I.26 without a separate I.4 step. Since I.26 establishes all corresponding sides and angles equal, triangle equality follows immediately from I.4 using those results, making the AI's omission of I.4 a citation-depth difference rather than a logical gap. The heath_only set {1.4} represents an under-citation by the AI, not a different proof path. Both proofs reach the same key intermediate conclusions at the same logical positions, confirming Case A of Q2.",
+  "jaccard": 0.75,
+  "ai_citations": "1.26|1.29|CN2",
+  "heath_citations": "1.26|1.29|1.4|CN2",
+  "ai_only": "",
+  "heath_only": "1.4",
+  "audit_record": ""
+}

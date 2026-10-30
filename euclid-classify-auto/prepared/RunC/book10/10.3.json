@@ -1,0 +1,30 @@
+{
+  "proposition": "10.3",
+  "book": 10,
+  "statement": "Given two commensurable magnitudes, to find their greatest common measure.",
+  "heath_proof": "Let the two given commensurable magnitudes be AB, CD of which AB is the less; thus it is required to find the greatest common measure of AB, CD. Now the magnitude AB either measures CD or it does not. If then it measures it—and it measures itself also— AB is a common measure of AB, CD. And it is manifest that it is also the greatest; for a greater magnitude than the magnitude AB will not measure AB. Next, let AB not measure CD. Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because AB, CD are not incommensurable; [cf. X. 2] let AB, measuring ED, leave EC less than itself, let EC, measuring FB, leave AF less than itself, and let AF measure CE. Since, then, AF measures CE, while CE measures FB, therefore AF will also measure FB. But it measures itself also; therefore AF will also measure the whole AB. But AB measures DE; therefore AF will also measure ED. But it measures CE also; therefore it also measures the whole CD. Therefore AF is a common measure of AB, CD. I say next that it is also the greatest. For, if not, there will be some magnitude greater than AF which will measure AB, CD. Let it be G. Since then G measures AB, while AB measures ED, therefore G will also measure ED. But it measures the whole CD also; therefore G will also measure the remainder CE. But CE measures FB; therefore G will also measure FB. But it measures the whole AB also, and it will therefore measure the remainder AF, the greater the less: which is impossible. Therefore no magnitude greater than AF will measure AB, CD; therefore AF is the greatest common measure of AB, CD. Therefore the greatest common measure of the two given commensurable magnitudes AB, CD has been found.",
+  "ai_proof_text": "10.3\n**Statement:** Given two commensurable magnitudes, to find their greatest common measure.\n\n**Step 1.** Let AB and CD be two commensurable magnitudes, with AB the greater (or equal). Since they are commensurable, by definition (D10.1.1) some magnitude E measures both AB and CD.\n\n**Step 2.** Since E measures the lesser CD, there is some multiple of E equal to CD (D5.2). And since E also measures AB, AB is likewise a multiple of E. Therefore E is a common measure of AB and CD.\n\n**Step 3.** Now apply the successive subtraction process (anthyphairesis) to AB and CD. Subtract CD from AB as many times as possible. If CD measures AB exactly, then CD itself is a common measure of AB and CD. Since CD measures CD (trivially) and CD measures AB, any common measure of AB and CD must measure CD (D5.1), so CD is the greatest common measure, and we are done.\n\n**Step 4.** If CD does not measure AB, then after subtracting CD from AB as many times as possible, some remainder less than CD is left; call it R1, so that AB = m*CD + R1 where R1 < CD. Now subtract R1 from CD as many times as possible. If R1 measures CD, proceed to Step 6. Otherwise a remainder R2 < R1 is left. Continue this process.\n\n**Step 5.** We claim this process must terminate, leaving some remainder that measures the one before it. For suppose it did not terminate. Then the lesser is continually subtracted in turn from the greater, and that which is left never measures the one before it. By Proposition 10.2, AB and CD would be incommensurable. But this contradicts our hypothesis that AB and CD are commensurable (D10.1.1). Therefore the process must terminate.\n\n**Step 6.** Let the process terminate at some stage where the remainder, call it G, exactly measures the magnitude from which it is subtracted. We show G is a common measure of AB and CD by working back through the chain. At the last step, G measures the preceding remainder. At each prior step, G measures both the remainder and the magnitude from which subtractions were made (since G measures the subtracted part and G measures the leftover, G measures their sum by CN2). Working back through every stage, G measures CD and G measures AB. Therefore G is a common measure of AB and CD.\n\n**Step 7.** We now show G is the greatest common measure. Let F be any common measure of AB and CD. Since F measures both AB and CD, F measures AB - m*CD = R1 (CN3 applied repeatedly: if F measures the whole AB and F measures the part m*CD subtracted from it, F measures the remainder R1). Similarly, since F measures CD and F measures R1, F measures CD - n*R1 = R2. Continuing through each stage, F measures G.\n\n**Step 8.** Since every common measure F of AB and CD measures G, it follows that F is not greater than G (CN5: G is the whole, and if F measured G, F would be a part of G or equal to G). Therefore G is the greatest common measure of AB and CD.\n\n**Step 9.** Therefore, given two commensurable magnitudes AB and CD, we have found their greatest common measure G. Q.E.F.\n\n**USED:** 10.2, CN2, CN3, CN5, D10.1.1, D5.1, D5.2\n**Human refs (from References field):** 10.2\n**Jaccard:** 0.143 — AI adds ['CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.1', 'D5.2']",
+  "ai_used": [
+    "10.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "10.2"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.1",
+    "D5.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let AB and CD be two commensurable magnitudes, with AB the greater (or equal). Since they are commensurable, by definition (D10.1.1) some magnitude E measures both AB and CD.  **Step 2.** "
+}

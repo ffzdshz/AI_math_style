@@ -1,0 +1,43 @@
+{
+  "proposition": "10.89",
+  "book": 10,
+  "statement": "To find the fifth apotome.",
+  "heath_proof": "Let a rational straight line A be set out, and let CG be commensurable in length with A; therefore CG is rational. Let two numbers DF, FE be set out such that DE again has not to either of the numbers DF, FE the ratio which a square number has to a square number; and let it be contrived that, as FE is to ED, so is the square on CG to the square on GB. Therefore the square on GB is also rational; [X. 6] therefore BG is also rational. Now since, as DE is to EF, so is the square on BG to the square on GC, while DE has not to EF the ratio which a square number has to a square number, therefore neither has the square on BG to the square on GC the ratio which a square number has to a square number; therefore BG is incommensurable in length with GC. [X. 9] And both are rational; therefore BG, GC are rational straight lines commensurable in square only; therefore BC is an apotome. [X. 73] I say next that it is also a fifth apotome. For let the square on H be that by which the square on BG is greater than the square on GC. Since then, as the square on BG is to the square on GC, so is DE to EF, therefore, convertendo, as ED is to DF, so is the square on BG to the square on H. [V. 19] But ED has not to DF the ratio which a square number has to a square number; therefore neither has the square on BG to the square on H the ratio which a square number has to a square number; therefore BG is incommensurable in length with H. [X. 9] And the square on BG is greater than the square on GC by the square on H; therefore the square on GB is greater than the square on GC by the square on a straight line incommensurable in length with GB. And the annex CG is commensurable in length with the rational straight line A set out; therefore BC is a fifth apotome. [X. Deff. III. 5] Therefore the fifth apotome BC has been found.",
+  "ai_proof_text": "10.89\n**Statement:** To find the fifth apotome.\n\n**Step 1.** Let a rational straight line A be set out, and let CG be commensurable in length with A; then CG is also rational [D10.1.3].\n\n**Step 2.** Let two numbers DF and FE be set out such that DE has not to either of the numbers DF or FE the ratio which a square number has to a square number [this is possible by suitable choice of numbers, as in 10.30].\n\n**Step 3.** Let it be contrived that as FE is to ED, so is the square on CG to the square on GD [10.6, applied in reverse: since FE and ED are numbers, we can find GD such that sq(CG):sq(GD) = FE:ED].\n\n**Step 4.** Since FE:ED is a ratio of number to number, the square on CG has to the square on GD the ratio which a number has to a number. Therefore CG is commensurable in square with GD [10.6].\n\n**Step 5.** But the square on CG is rational, since CG is rational. Therefore the square on GD is also rational [D10.1.4, since it is commensurable with a rational area]. Hence GD is rational [D10.1.3].\n\n**Step 6.** Since DE does not have to EF the ratio which a square number has to a square number, and as DE is to EF, so is the square on GD to the square on a certain straight line (for sq(CG):sq(GD) = FE:ED, which by inversion gives sq(GD):sq(CG) = ED:FE, and by separation and the properties of the ratio, we examine sq(GD) - sq(CG) relative to sq(GD)). Specifically, since FE:ED = sq(CG):sq(GD), we have ED:FE = sq(GD):sq(CG), so convertendo ED:DF = sq(GD):(sq(GD) - sq(CG)). Now since DE does not have to DF the ratio of a square number to a square number, the square on GD does not have to sq(GD) - sq(CG) the ratio of a square number to a square number [5.16, 10.11]. Therefore the straight line which is the side of sq(GD) - sq(CG) is incommensurable in length with GD [10.9].\n\n**Step 7.** Thus the square on GD is greater than the square on CG by the square on a straight line incommensurable in length with GD.\n\n**Step 8.** Now since sq(CG):sq(GD) = FE:ED, and FE is less than ED, we have sq(CG) < sq(GD), so that CG < GD [CN5].\n\n**Step 9.** Since DE does not have to EF the ratio which a square number has to a square number, the square on GD does not have to the square on CG the ratio which a square number has to a square number [since sq(GD):sq(CG) = ED:FE]. Therefore GD is incommensurable in length with CG [10.9].\n\n**Step 10.** Since both GD and CG are rational and they are commensurable in square only (they are commensurable in square by Step 4 but incommensurable in length by Step 9), and GD > CG, the straight line GD - CG is an apotome [10.73]. Let this apotome be denoted by the remainder when CG is subtracted from GD; that is, let GD = BG where B is the point such that BC = CG and BG = GD, so that BG - BC is the apotome. More precisely, set GD as the whole and CG as the annex subtracted from it; the remainder is the apotome.\n\n**Step 11.** I say that BG - CG (i.e., the apotome formed from GD minus CG) is a fifth apotome.\n\n**Step 12.** The square on the whole GD is greater than the square on the annex CG by the square on a straight line incommensurable in length with the whole GD [Step 7]. This satisfies the condition in D10.3.4.\n\n**Step 13.** The annex CG is commensurable in length with the rational straight line A [Step 1]. The whole GD is not commensurable in length with A, because: CG is commensurable in length with A, and GD is incommensurable in length with CG [Step 9], so by 10.13, GD is incommensurable in length with A.\n\n**Step 14.** Therefore, by D10.3.5, the apotome GD - CG is a fifth apotome.\n\n**Step 15.** Thus the fifth apotome has been found. Q.E.F.\n\n**USED:** 10.11, 10.13, 10.30, 10.6, 10.73, 10.9, 5.16, CN5, D10.1.3, D10.1.4, D10.3.4, D10.3.5\n**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.5\n**Jaccard:** 0.308 — AI adds ['10.11', '10.13', '10.30', '5.16', 'CN5', 'D10.1.3', 'D10.1.4', 'D10.3.4']; Human adds ['5.19']",
+  "ai_used": [
+    "10.11",
+    "10.13",
+    "10.30",
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.16",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.4",
+    "D10.3.5"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.19",
+    "D10.3.5"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.13",
+    "10.30",
+    "5.16",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.4"
+  ],
+  "heath_only": [
+    "5.19"
+  ],
+  "jaccard": 0.308,
+  "proof_summary": "**Step 1.** Let a rational straight line A be set out, and let CG be commensurable in length with A; then CG is also rational [D10.1.3].  **Step 2.** Let two numbers DF and FE be set out such that DE "
+}

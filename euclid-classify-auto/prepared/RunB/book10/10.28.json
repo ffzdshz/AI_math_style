@@ -1,0 +1,55 @@
+{
+  "proposition": "10.28",
+  "book": 10,
+  "statement": "To find medial straight lines commensurable in square only which contain a medial rectangle.",
+  "heath_proof": "Let the rational straight lines A, B, C commensurable in square only be set out; let D be taken a mean proportional between A, B, [VI. 13] and let it be contrived that, as B is to C, so is D to E. [VI. 12]  Since A, B are rational straight lines commensurable in square only, therefore the rectangle A, B, that is, the square on D [VI. 17], is medial. [X. 21] Therefore D is medial. [X. 21] And since B, C are commensurable in square only, and, as B is to C, so is D to E, therefore D, E are also commensurable in square only. [X. 11] But D is medial; therefore E is also medial. [X. 23, addition] Therefore D, E are medial straight lines commensurable in square only. I say next that they also contain a medial rectangle. For since, as B is to C, so is D to E, therefore, alternately, as B is to D, so is C to E. [V. 16] But, as B is to D, so is D to A; therefore also, as D is to A, so is C to E; therefore the rectangle A, C is equal to the rectangle D, E. [VI. 16] But the rectangle A, C is medial; [X. 21] therefore the rectangle D, E is also medial. Therefore medial straight lines commensurable in square only have been found which contain a medial rectangle.",
+  "ai_proof_text": "10.28\n**Statement:** To find medial straight lines commensurable in square only which contain a medial rectangle.\n\n**Step 1.** Let A be a given rational straight line. Construct the square on A, and let B be its diagonal. By 1.47, sq(B) = sq(A) + sq(A), that is, sq(B) = 2*sq(A), so that sq(B):sq(A) = 2:1.\n\n**Step 2.** Since sq(B):sq(A) = 2:1, a ratio of numbers, B and A are commensurable in square (10.6, D10.1.2). Since 2 is not a perfect square, 2:1 is not a ratio of square numbers, so by 10.9, B and A are incommensurable in length. Therefore B is commensurable in square only with A, and B is rational (D10.1.3).\n\n**Step 3.** Let C be a straight line equal to three times B, so that C:B = 3:1. Since C:B is a ratio of numbers, C and B are commensurable in length (10.6). Since B is commensurable in square with A and C is commensurable in length with B, the squares sq(C) and sq(B) are commensurable (for by 10.9, commensurable lines have squares in the ratio of square numbers, hence a ratio of numbers, so the squares are commensurable by 10.6). Then since sq(B) is commensurable with sq(A), by 10.12, sq(C) is commensurable with sq(A). So C is rational (D10.1.3). Now if C were commensurable in length with A, then since C is commensurable in length with B, by 10.12, B would be commensurable in length with A, contradicting Step 2. Therefore C is incommensurable in length with A, and hence C is commensurable in square only with A.\n\n**Step 4.** By 6.13, let D be the mean proportional between A and B, so that A:D = D:B and sq(D) = rect(A,B). Since A and B are rational and commensurable in square only (Step 2), by 10.21, rect(A,B) is medial. Therefore sq(D) is a medial area, and D is a medial straight line (D10.1.4).\n\n**Step 5.** By 6.13, let E be the mean proportional between A and C, so that A:E = E:C and sq(E) = rect(A,C). Since A and C are rational and commensurable in square only (Step 3), by 10.21, rect(A,C) is medial. Therefore sq(E) is a medial area, and E is a medial straight line (D10.1.4).\n\n**Step 6.** By 6.1, sq(D):sq(E) = rect(A,B):rect(A,C) = B:C = 1:3. Since 1:3 is a ratio of numbers, sq(D) and sq(E) are commensurable (10.6), so D and E are commensurable in square (D10.1.2). Since 3 is not a perfect square, 1:3 is not a ratio of square numbers. By 10.9, D:E is not a ratio of numbers, so D and E are incommensurable in length. Therefore D and E are commensurable in square only.\n\n**Step 7.** By 6.13, let F be the mean proportional between B and C, so that B:F = F:C and sq(F) = rect(B,C). Since B and C are rational and commensurable in length (Step 3), by 10.19, rect(B,C) is rational. Therefore sq(F) is a rational area, that is, sq(F) is commensurable with sq(A), and F is rational (D10.1.3).\n\n**Step 8.** By 6.1, sq(F):sq(A) = rect(B,C):sq(A). Now by 6.1, rect(B,C):sq(B) = C:B = 3:1, so rect(B,C) = 3*sq(B) = 3*(2*sq(A)) = 6*sq(A). Therefore sq(F):sq(A) = 6:1. Since 6:1 is a ratio of numbers, A and F are commensurable in square (10.6, D10.1.2). Since 6 is not a perfect square, 6:1 is not a ratio of square numbers, so by 10.9, A:F is not a ratio of numbers, and A and F are incommensurable in length. Therefore A and F are commensurable in square only.\n\n**Step 9.** We now show that rect(D,E) = rect(A,F). By 6.1, since sq(D) = rect(A,B), we have sq(A):sq(D) = sq(A):rect(A,B) = A:B. Similarly, since sq(E) = rect(A,C) and sq(F) = rect(B,C), by 6.1, sq(E):sq(F) = rect(A,C):rect(B,C) = A:B. Therefore sq(A):sq(D) = sq(E):sq(F), both ratios being equal to A:B (5.11). By the converse part of 6.22, since the squares (which are similar figures) on A, D, E, F are proportional, the lines themselves are proportional: A:D = E:F. Then by 6.16, since four straight lines A, D, E, F are proportional, the rectangle contained by the extremes equals the rectangle contained by the means: rect(A,F) = rect(D,E).\n\n**Step 10.** Since A and F are rational and commensurable in square only (Step 8), by 10.21, rect(A,F) is medial. Since rect(D,E) = rect(A,F) (Step 9), the rectangle contained by D and E is medial.\n\n**Step 11.** Therefore D and E are medial straight lines (Steps 4 and 5), commensurable in square only (Step 6), which contain a medial rectangle (Step 10). This is what was required to find.\n\n**USED:** 1.47, 10.12, 10.19, 10.21, 10.6, 10.9, 5.11, 6.1, 6.13, 6.16, 6.22, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.16, 6.17\n**Jaccard:** 0.158 — AI adds ['1.47', '10.12', '10.19', '10.6', '10.9', '5.11', '6.1', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '10.23', '5.16', '6.12', '6.17']",
+  "ai_used": [
+    "1.47",
+    "10.12",
+    "10.19",
+    "10.21",
+    "10.6",
+    "10.9",
+    "5.11",
+    "6.1",
+    "6.13",
+    "6.16",
+    "6.22",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.21",
+    "10.23",
+    "5.16",
+    "6.12",
+    "6.13",
+    "6.16",
+    "6.17"
+  ],
+  "ai_only": [
+    "1.47",
+    "10.12",
+    "10.19",
+    "10.6",
+    "10.9",
+    "5.11",
+    "6.1",
+    "6.22",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.23",
+    "5.16",
+    "6.12",
+    "6.17"
+  ],
+  "jaccard": 0.158,
+  "proof_summary": "**Step 1.** Let A be a given rational straight line. Construct the square on A, and let B be its diagonal. By 1.47, sq(B) = sq(A) + sq(A), that is, sq(B) = 2*sq(A), so that sq(B):sq(A) = 2:1.  **Step "
+}

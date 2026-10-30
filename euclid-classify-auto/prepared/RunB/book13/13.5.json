@@ -1,0 +1,35 @@
+{
+  "proposition": "13.5",
+  "book": 13,
+  "statement": "If a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment.",
+  "heath_proof": "For let the straight line AB be cut in extreme and mean ratio at the point C, let AC be the greater segment, and let AD be equal to AC. I say that the straight line DB has been cut in extreme and mean ratio at A, and the original straight line AB is the greater segment. For let the square AE be described on AB, and let the figure be drawn. Since AB has been cut in extreme and mean ratio at C, therefore the rectangle AB, BC is equal to the square on AC. [VI. Def. 3, VI. 17] And CE is the rectangle AB, BC, and CH the square on AC; therefore CE is equal to HC. But HE is equal to CE, and DH is equal to HC; therefore DH is also equal to HE. Therefore the whole DK is equal to the whole AE. And DK is the rectangle BD, DA, for AD is equal to DL; and AE is the square on AB; therefore the rectangle BD, DA is equal to the square on AB. Therefore, as DB is to BA, so is BA to AD. [VI. 17] And DB is greater than BA; therefore BA is also greater than AD. [V. 14] Therefore DB has been cut in extreme and mean ratio at A, and AB is the greater segment.",
+  "ai_proof_text": "13.5\n**Statement:** If a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment.\n\n**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, where AC is the greater segment. Extend BA beyond A to a point D such that DA equals AC [P2, P3, 1.3]. Then DB is the whole line consisting of DA and AB, and we must show that DB has been cut in extreme and mean ratio at A, with AB as the greater segment.\n\n**Step 2.** Since AB is cut in extreme and mean ratio at C with AC as the greater segment, by definition we have AB : AC = AC : CB [D6.3].\n\n**Step 3.** Since AB : AC = AC : CB, the rectangle contained by AB and CB equals the square on AC [6.17]. That is, AB * CB = AC^2.\n\n**Step 4.** Now CB = AB - AC, since C lies between A and B with AC the greater segment. Therefore the rectangle AB * CB equals AB * (AB - AC), which is AB^2 - AB * AC [2.3].\n\n**Step 5.** So from Step 3 and Step 4, AC^2 = AB^2 - AB * AC. Adding AB * AC to both sides, we obtain AC^2 + AB * AC = AB^2 [CN2].\n\n**Step 6.** By Proposition 2.3, AC^2 + AB * AC = AC * (AC + AB). Therefore AC * (AC + AB) = AB^2.\n\n**Step 7.** Since DA = AC [by construction] and DB = DA + AB = AC + AB, we may substitute to obtain AC * DB = AB^2, that is, DA * DB = AB^2.\n\n**Step 8.** Since DA * DB = AB^2, by Proposition 6.17, DB : BA = BA : AD. This means the line DB has been cut at A such that the whole DB is to the segment BA as BA is to the remaining segment AD, which is precisely the definition of being cut in extreme and mean ratio [D6.3].\n\n**Step 9.** It remains to show that AB is the greater segment of DB. Since AC is a proper part of AB (being a segment of it), we have AB > AC [CN5]. But DA = AC, so BA > DA. Since DB is divided at A into segments BA and AD, and BA > AD, the segment BA is the greater segment.\n\n**Step 10.** Therefore, if a straight line be cut in extreme and mean ratio and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment. Q.E.F.\n\n**USED:** 1.3, 2.3, 6.17, CN2, CN5, D6.3, P2, P3\n**Human refs (from References field):** 5.14, 6.17, D6.3\n**Jaccard:** 0.222 — AI adds ['1.3', '2.3', 'CN2', 'CN5', 'P2', 'P3']; Human adds ['5.14']",
+  "ai_used": [
+    "1.3",
+    "2.3",
+    "6.17",
+    "CN2",
+    "CN5",
+    "D6.3",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "5.14",
+    "6.17",
+    "D6.3"
+  ],
+  "ai_only": [
+    "1.3",
+    "2.3",
+    "CN2",
+    "CN5",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [
+    "5.14"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let AB be a straight line cut in extreme and mean ratio at C, where AC is the greater segment. Extend BA beyond A to a point D such that DA equals AC [P2, P3, 1.3]. Then DB is the whole li"
+}

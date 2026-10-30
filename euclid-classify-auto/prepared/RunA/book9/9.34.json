@@ -1,0 +1,26 @@
+{
+  "proposition": "9.34",
+  "book": 9,
+  "statement": "If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.",
+  "heath_proof": "For let the number A neither be one of those doubled from a dyad, nor have its half odd; I say that A is both even-times even and even-times odd. Now that A is even-times even is manifest; for it has not its half odd. [VII. Def. 8] I say next that it is also even-times odd. For, if we bisect A, then bisect its half, and do this continually, we shall come upon some odd number which will measure A according to an even number. For, if not, we shall come upon a dyad, and A will be among those which are doubled from a dyad: which is contrary to the hypothesis. Thus A is even-times odd. But it was also proved even-times even. Therefore A is both even-times even and even-times odd.",
+  "ai_proof_text": "9.34\n**Statement:** If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.\n\n**Step 1.** Let A be an even number which is neither one of those continually doubled from a dyad (i.e., not in the sequence 2, 4, 8, 16, ...) nor has its half odd. We must show that A is both even-times even and even-times odd.\n\n**Step 2.** Since A is even, A has a half, call it B, so that A = 2B. Since A does not have its half odd, B is even. Therefore A is equal to 2 times B, where both 2 and B are even. By the definition of even-times even (D7.8), A is even-times even.\n\n**Step 3.** It remains to show that A is also even-times odd. Since A is even and B is even, we may take the half of B repeatedly. At each stage, if the result is even, halve again. Since A is a finite number, this process must terminate, and it terminates when we reach an odd number. Let this process yield: A = 2B, B = 2C, C = 2D, and so on, until at some stage we reach an odd number, say G, so that A = 2^s * G where s >= 2 and G is odd.\n\n**Step 4.** We claim G must be greater than 1 (i.e., G is not the unit). For suppose G were 1. Then A = 2^s, which means A is one of the numbers continually doubled from a dyad (since 2^1 = 2, 2^2 = 4, 2^3 = 8, etc., by 9.32 these are exactly the numbers in the doubling sequence from 2). But we assumed A is not one of these numbers. This is a contradiction, so G > 1, meaning G is an odd number greater than 1.\n\n**Step 5.** Now let E = 2^s. Since s >= 2, E is even. Since A = E * G where E is even and G is odd, A is measured by the even number E according to the odd number G. By the definition of even-times odd (D7.9), A is even-times odd.\n\n**Step 6.** Therefore A is both even-times even (from Step 2) and even-times odd (from Step 5). This is what was to be proved.\n\n**USED:** 9.32, D7.6, D7.7, D7.8, D7.9\n**Human refs (from References field):** D7.8\n**Jaccard:** 0.200 — AI adds ['9.32', 'D7.6', 'D7.7', 'D7.9']",
+  "ai_used": [
+    "9.32",
+    "D7.6",
+    "D7.7",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "D7.8"
+  ],
+  "ai_only": [
+    "9.32",
+    "D7.6",
+    "D7.7",
+    "D7.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let A be an even number which is neither one of those continually doubled from a dyad (i.e., not in the sequence 2, 4, 8, 16, ...) nor has its half odd. We must show that A is both even-ti"
+}

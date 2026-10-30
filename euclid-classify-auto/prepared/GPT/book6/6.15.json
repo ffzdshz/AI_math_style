@@ -1,0 +1,41 @@
+{
+  "proposition": "6.15",
+  "book": 6,
+  "statement": "In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.",
+  "heath_proof": "Let ABC, ADE be equal triangles having one angle equal to one angle, namely the angle BAC to the angle DAE; I say that in the triangles ABC, ADE the sides about the equal angles are reciprocally proportional, that is to say, that, as CA is to AD, so is EA to AB. For let them be placed so that CA is in a straight line with AD; therefore EA is also in a straight line with AB. [I. 14] Let BD be joined. Since then the triangle ABC is equal to the triangle ADE, and BAD is another area, therefore, as the triangle CAB is to the triangle BAD, so is the triangle EAD to the triangle BAD. [V. 7] But, as CAB is to BAD, so is CA to AD, [VI. 1] and, as EAD is to BAD, so is EA to AB. [id.] Therefore also, as CA is to AD, so is EA to AB. [V. 11] Therefore in the triangles ABC, ADE the sides about the equal angles are reciprocally proportional. Next, let the sides of the triangles ABC, ADE be reciprocally proportional, that is to say, let EA be to AB as CA to AD; I say that the triangle ABC is equal to the triangle ADE. For, if BD be again joined, since, as CA is to AD, so is EA to AB, while, as CA is to AD, so is the triangle ABC to the triangle BAD, and, as EA is to AB, so is the triangle EAD to the triangle BAD, [VI. 1] therefore, as the triangle ABC is to the triangle BAD, so is the triangle EAD to the triangle BAD. [V. 11] Therefore each of the triangles ABC, EAD has the same ratio to BAD. Therefore the triangle ABC is equal to the triangle EAD. [V. 9]",
+  "ai_proof_text": "6.15\n**Statement:** In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.\n\n**Step 1.** Let ABC and DEF be triangles with ∠BAC = ∠EDF. Write [XYZ] for the area of triangle XYZ. We shall prove that [ABC] = [DEF] if and only if AB : DE = DF : AC, which expresses reciprocal proportionality of the sides about the equal angles. [D6.2]\n\n**Step 2.** On the rays AB and AC take points G and H respectively such that AG = DE and AH = DF, extending the sides and cutting off the required lengths when necessary. If a required length equals the existing side, use its endpoint. Join GC and GH. [P2, 1.3, P1]\n\n**Step 3.** Since AG and AH lie along AB and AC, we have ∠GAH = ∠BAC = ∠EDF. Together with AG = DE and AH = DF, this gives [AGH] = [DEF] by the side-angle-side proposition. [1.4]\n\n**Step 4.** Path choice: use the intermediate triangle AGC to compare common-height triangles directly; the common-height theorem 6.1 applies immediately, without introducing parallelograms. Triangles ABC and AGC have bases AB and AG on the same straight line and the same vertex C. Triangles AGH and AGC have bases AH and AC on the same straight line and the same vertex G. Thus each pair has the same height, and\n[ABC] : [AGC] = AB : AG,\n[AGH] : [AGC] = AH : AC. [D6.4, 6.1]\n\n**Step 5.** First suppose [ABC] = [DEF]. By Step 3, [ABC] = [AGH]. Equal magnitudes have the same ratio to the same magnitude, so\n[ABC] : [AGC] = [AGH] : [AGC].\nCombining this with Step 4 gives AB : AG = AH : AC. Substituting AG = DE and AH = DF yields AB : DE = DF : AC. Hence the sides about the equal angles are reciprocally proportional. [CN1, 5.7, 5.11, D6.2]\n\n**Step 6.** Conversely, suppose AB : DE = DF : AC. Since AG = DE and AH = DF, this gives AB : AG = AH : AC. Therefore Step 4 yields\n[ABC] : [AGC] = [AGH] : [AGC].\nMagnitudes having the same ratio to the same magnitude are equal, so [ABC] = [AGH]. By Step 3, [AGH] = [DEF]; hence [ABC] = [DEF]. Thus the triangles are equal, and both assertions are proved. [5.7, 5.11, 5.9, CN1]\n\n**USED:** 1.3, 1.4, 5.11, 5.7, 5.9, 6.1, CN1, D6.2, D6.4, P1, P2\n**Human refs (from References field):** 1.14, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.333 — AI adds ['1.3', '1.4', 'CN1', 'D6.2', 'D6.4', 'P1', 'P2']; Human adds ['1.14']",
+  "ai_used": [
+    "1.3",
+    "1.4",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1",
+    "CN1",
+    "D6.2",
+    "D6.4",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.14",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.3",
+    "1.4",
+    "CN1",
+    "D6.2",
+    "D6.4",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [
+    "1.14"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let ABC and DEF be triangles with ∠BAC = ∠EDF. Write [XYZ] for the area of triangle XYZ. We shall prove that [ABC] = [DEF] if and only if AB : DE = DF : AC, which expresses reciprocal prop"
+}

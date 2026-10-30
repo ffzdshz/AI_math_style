@@ -1,0 +1,33 @@
+{
+  "proposition": "8.15",
+  "book": 8,
+  "statement": "If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.",
+  "heath_proof": "For let the cube number A measure the cube B, and let C be the side of A and D of B; I say that C measures D. For let C by multiplying itself make E, and let D by multiplying itself make G; further, let C by multiplying D make F, and let C, D by multiplying F make H, K respectively. Now it is manifest that E, F, G and A, H, K, B are continuously proportional in the ratio of C to D. [VIII. 11, 12] And, since A, H, K, B are continuously proportional, and A measures B, therefore it also measures H. [VIII. 7] And, as A is to H, so is C to D; therefore C also measures D. [VII. Def. 20] Next, let C measure D; I say that A will also measure B. For, with the same construction, we can prove in a similar manner that A, H, K, B are continuously proportional in the ratio of C to D. And, since C measures D, and, as C is to D, so is A to H, therefore A also measures H, [VII. Def. 20] so that A measures B also.",
+  "ai_proof_text": "8.15\n**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.\n\n**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a * a * a and B = b * b * b (D7.19).\n\n**Part I: If the cube A measures the cube B, then the side a measures the side b.**\n\n**Step 2.** By 8.12, between the two cube numbers A and B there are two mean proportional numbers. Let C and D be these mean proportionals, so that A, C, D, B are four numbers in continued proportion, and A has to B the ratio triplicate of that which a has to b.\n\n**Step 3.** Since A, C, D, B are in continued proportion, the ratio A:C equals a:b. This follows from 8.12, which establishes that the continued proportion between two cubes a^3 and b^3 has common ratio a:b, so that C = a * a * b and D = a * b * b.\n\n**Step 4.** Since A measures B, and A, C, D, B are in continued proportion (with A first and B last), by 8.7 the first term A also measures the second term C.\n\n**Step 5.** Since A:C = a:b (Step 3), and A measures C (Step 4), it follows that a measures b. For if A measures C, then C is a multiple of A, say C = k * A. Since A:C = a:b, we have a * C = b * A (D7.20). Substituting C = k * A gives a * k * A = b * A, hence a * k = b, so a measures b (D7.3, D7.15).\n\n**Part II: If the side a measures the side b, then the cube A measures the cube B.**\n\n**Step 6.** Suppose a measures b. By 8.12, between A and B there are two mean proportional numbers C and D, with A, C, D, B in continued proportion, where C = a * a * b and D = a * b * b.\n\n**Step 7.** Since A, C, D, B are in continued proportion, the common ratio is a:b (from 8.12). In particular, A:C = a:b, C:D = a:b, and D:B = a:b.\n\n**Step 8.** Since a measures b (hypothesis), there exists a number k such that b = k * a (D7.3, D7.15). Then C = a * a * b = a * a * (k * a) = k * (a * a * a) = k * A. Therefore A measures C.\n\n**Step 9.** Similarly, D = a * b * b = a * (k * a) * (k * a). And C = a * a * b = a * a * (k * a). So D = k * C, which means C measures D. Since A measures C (Step 8), A also measures D. This follows because if A measures C and C measures D, then D is a multiple of C which is a multiple of A, so D is a multiple of A (by 7.17 applied to the multiplication relationships, together with D7.3).\n\n**Step 10.** By the same reasoning, B = b * b * b = (k * a) * (k * a) * (k * a) = k * (a * b * b) = k * D. So D measures B. Since A measures D (Step 9), A also measures B. Again, B being a multiple of D which is a multiple of A makes B a multiple of A (D7.3, 7.17).\n\n**Step 11.** Therefore, if the side a measures the side b, the cube A measures the cube B.\n\n**Step 12.** Combining Parts I and II: if a cube number measure a cube number, the side will also measure the side; and if the side measure the side, the cube will also measure the cube. Q.E.D.\n\n**USED:** 7.17, 8.12, 8.7, D7.15, D7.19, D7.20, D7.3\n**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20\n**Jaccard:** 0.375 — AI adds ['7.17', 'D7.15', 'D7.19', 'D7.3']; Human adds ['8.11']",
+  "ai_used": [
+    "7.17",
+    "8.12",
+    "8.7",
+    "D7.15",
+    "D7.19",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.12",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "D7.15",
+    "D7.19",
+    "D7.3"
+  ],
+  "heath_only": [
+    "8.11"
+  ],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let A and B be cube numbers with sides a and b respectively, so that A = a * a * a and B = b * b * b (D7.19).  **Part I: If the cube A measures the cube B, then the side a measures the sid"
+}

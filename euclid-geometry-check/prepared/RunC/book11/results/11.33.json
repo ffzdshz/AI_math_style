@@ -1,0 +1,71 @@
+{
+  "proposition": "11.33",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Three edges AE, AG, AH meet at vertex A of solid AB; three edges CF, CK, CL meet at vertex C of solid CD; solid angles at A and C are equal; AE:CF = AG:CK = AH:CL",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Points N and X lie on the ray from A through E, beyond E, such that AE:CF = CF:EN = EN:NX (continued proportion on a line)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Parallelepiped AO is constructed on edge AE, similar and similarly situated to CD (via 11.27); parallelepiped CP on edge CF equals CD",
+      "type": "solid_construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Edges of AO at vertex A are AE, AG' = AE*(CK/CF), AH' = AE*(CL/CF), preserving edge directions from CD",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Parallelepiped EW constructed on edge EN similar to CD, with edges EN, EN*(CK/CF), EN*(CL/CF) at vertex E, preserving edge directions",
+      "type": "solid_construction"
+    },
+    {
+      "step": "Step 9",
+      "claim": "P1 and AO share the base determined by AE and AG', differ only in third edge (AH' vs EL'), same edge directions; 11.25 applies giving ratio AH':EL' = AE:EN",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 10",
+      "claim": "P1 and P2 share edges AE and EL', differ in AG' vs EG'', same edge directions; 11.25 applies giving ratio AG':EG'' = AE:EN",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 11",
+      "claim": "P2 and EW share edges EG'' and EL', differ in AE vs EN, same edge directions; 11.32 applies giving ratio AE:EN",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Q2 and CD share base parallelogram CF x CK, differ only in third edge AH' vs CL, same edge directions; 11.25 gives Q2:CD = AH':CL = AE:CF",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Q3 and Q2 share edges CF and AH' and have same height, differ in base sides AG' vs CK; 11.32 and 6.1 give Q3:Q2 = AG':CK = AE:CF",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 18",
+      "claim": "AO and Q3 share edges AG' and AH', differ in AE vs CF, same edge directions; 11.32 and 6.1 give AO:Q3 = AE:CF",
+      "type": "solid_comparison"
+    },
+    {
+      "step": "Step 21",
+      "claim": "AO equals AB because both are similar and similarly situated to CD with the same edge AE and same solid angle at A; edges determined uniquely by proportionality",
+      "type": "solid_equality"
+    }
+  ],
+  "configuration_map": "Two similar parallelepipedal solids AB and CD with edges meeting at vertices A (AE, AG, AH) and C (CF, CK, CL) respectively. Points N, X on the line through AE beyond E for continued proportion. Solid AO constructed at vertex A on edge AE similar to CD, with edges AE, AG'=AE*(CK/CF), AH'=AE*(CL/CF). Solid EW at vertex E on edge EN similar to CD. Intermediate solids P1, P2 (Steps 9-11) and Q1=CD, Q2 (edges CF,CK,AH'), Q3 (edges CF,AG',AH') constructed for one-dimension-at-a-time comparison. All intermediate solids preserve edge directions from CD; only edge magnitudes vary. The chain of ratios AO:Q3:Q2:CD each equal AE:CF, yielding AO:CD = triplicate ratio of AE:CF. AO identified with AB via similarity and shared edge.",
+  "pass_reason": "The proof makes no angle decomposition claims, no interior/exterior point claims, and no betweenness claims that could conflict. All spatial content involves constructing parallelepipeds with specific edge lengths (preserving edge directions) and comparing volumes by varying one dimension at a time. Applications of 11.25 (same base, ratio of heights) and 11.32 (same height, ratio of bases) are each applied to pairs of solids that genuinely share the required common element with the same edge directions. The identification AO = AB in Step 21 is valid because both are similar and similarly situated to CD on the same edge AE with the same solid angle. No pairwise contradiction exists among the spatial claims."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "11.8",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The AI proof contains an invalid inference in Step 4 where it claims 'apply 1.29 to obtain that the alternate angles angle ADB and angle DBC are also equal.' Proposition 1.29, applied to parallel lines AB and CD with transversal BD, yields the alternate interior angles ABD = BDC (which the AI correctly used in Step 3), but does NOT yield angle ADB = angle DBC. The angles ADB and DBC are not formed at the intersection of the transversal with the parallel lines and thus are not alternate angles under 1.29. This invalid angle equality is then used in Step 5 via AAS (1.26) to conclude AB = CD, a result that is not generally true for parallel lines one of which is perpendicular to a plane. The false conclusion AB = CD propagates through Steps 6, 9, 10, and 12, undermining the SSS congruence argument in Step 12 that establishes angle CDE is right. Without this, the proof fails to show CD is perpendicular to a second line DE in the plane, which is essential for the application of 11.4 in Step 14. Heath's proof avoids this issue entirely by constructing an auxiliary point E with DE = AB rather than attempting to prove AB = CD.",
+  "jaccard": 0.25,
+  "ai_citations": "1.11|1.26|1.29|1.3|1.30|1.31|1.32|1.33|1.34|1.47|1.8|11.4|11.7|D11.3|P1",
+  "heath_citations": "1.29|11.2|11.4|11.7|D11.3",
+  "ai_only": "1.11|1.26|1.3|1.30|1.31|1.32|1.33|1.34|1.47|1.8|P1",
+  "heath_only": "11.2",
+  "audit_record": "CANDIDATE E — 11.8\n  violated_claim : \"angle ADB equals angle DBC\" derived from 1.29 in Step 4, used as basis for AAS congruence in Step 5 to conclude AB = CD\n  failure_mode   : invalid_inference\n  missing_is     : support — the angle equality has no valid justification; 1.29 does not yield this result for the given configuration\n  evidence       : Step 4 states \"apply 1.29 to obtain that the alternate angles angle ADB and angle DBC are also equal\" — 1.29 applied to parallels AB||CD with transversal BD yields angle ABD = angle BDC (already used in Step 3), not angle ADB = angle DBC. The latter angles are not alternate interior angles formed at intersection points of the transversal with the parallel lines.\n  why_not_terse  : The AI explicitly cites 1.29 as justification for a specific angle equality that 1.29 cannot produce for this configuration. This is not abbreviated reasoning but a misapplication of the cited proposition. The false conclusion AB = CD that follows is essential to the SSS argument in Steps 12-13 and cannot be independently verified."
+}

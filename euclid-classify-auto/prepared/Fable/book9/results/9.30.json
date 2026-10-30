@@ -1,0 +1,13 @@
+{
+  "proposition": "9.30",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: they set up A times C equals B, prove by contradiction that C cannot be odd (which would make B odd, contradicting the hypothesis that B is even), conclude C is even, and derive that A measures the half of B. The sole substantive divergence is the citation used in the contradiction step: Heath cites 9.23 directly (a sum of odd numbers taken an odd number of times is odd), while the AI cites 9.29 (the product of two odd numbers is odd). The proof-tree containment test confirms that 9.23 appears inside Heath's own proof of 9.29, so the AI is citing 9.29 as a unit while Heath re-derives its internals inline. The remaining ai_only items (D7.15, D7.6, D7.7) are definitions reflecting over-citation at a finer granularity. This is Case A of Q2: same backbone, different citation depth.",
+  "jaccard": 0.0,
+  "ai_citations": "9.29|D7.15|D7.6|D7.7",
+  "heath_citations": "9.23",
+  "ai_only": "9.29|D7.15|D7.6|D7.7",
+  "heath_only": "9.23",
+  "audit_record": ""
+}

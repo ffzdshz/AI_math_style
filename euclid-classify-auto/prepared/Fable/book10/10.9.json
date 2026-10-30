@@ -1,0 +1,49 @@
+{
+  "proposition": "10.9",
+  "book": 10,
+  "statement": "The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.",
+  "heath_proof": "For let A, B be commensurable in length; I say that the square on A has to the square on B the ratio which a square number has to a square number. For, since A is commensurable in length with B, therefore A has to B the ratio which a number has to a number. [X. 5] Let it have to it the ratio which C has to D. Since then, as A is to B, so is C to D, while the ratio of the square on A to the square on B is duplicate of the ratio of A to B, for similar figures are in the duplicate ratio of their corresponding sides; [VI. 20] and the ratio of the square on C to the square on D is duplicate of the ratio of C to D, for between two square numbers there is one mean proportional number, and the square number has to the square number the ratio duplicate of that which the side has to the side; [VIII. 11] therefore also, as the square on A is to the square on B, so is the square on C to the square on D. Next, as the square on A is to the square on B, so let the square on C be to the square on D; I say that A is commensurable in length with B. For since, as the square on A is to the square on B, so is the square on C to the square on D, while the ratio of the square on A to the square on B is duplicate of the ratio of A to B, and the ratio of the square on C to the square on D is duplicate of the ratio of C to D, therefore also, as A is to B, so is C to D. Therefore A has to B the ratio which the number C has to the number D; therefore A is commensurable in length with B. [X. 6] Next, let A be incommensurable in length with B; I say that the square on A has not to the square on B the ratio which a square number has to a square number. For, if the square on A has to the square on B the ratio which a square number has to a square number, A will be commensurable with B. But it is not; therefore the square on A has not to the square on B the ratio which a square number has to a square number. Again, let the square on A not have to the square on B the ratio which a square number has to a square number; I say that A is incommensurable in length with B. For, if A is commensurable with B, the square on A will have to the square on B the ratio which a square number has to a square number. But it has not; therefore A is not commensurable in length with B.",
+  "ai_proof_text": "10.9\n**Statement:** The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.\n\nThroughout, let A and B be two straight lines; write sq(A), sq(B) for the squares described on them, and rect(A,B) for the rectangle contained by A and B (D2.1). Steps 1–3 establish an auxiliary result used in both directions of the theorem: if A : B = C : D, where C and D are numbers, then sq(A) : sq(B) = (C·C) : (D·D).\n\n**Step 1.** Suppose A : B = C : D, where C, D are numbers. Let E = C·C and F = D·D; these are square numbers, each being equal multiplied by equal (D7.18). Let also M = C·D. Since the number C, multiplying the two numbers C and D, makes E and M, we have E : M = C : D (7.17). Since the two numbers C and D, multiplying the number D, make M and F, we have M : F = C : D (7.18). Thus E, M, F are in continued proportion, each term having to the next the ratio C : D.\n\n**Step 2.** The square on A and the rectangle contained by A, B are parallelograms under the same height A, standing on the bases A and B respectively; therefore sq(A) : rect(A,B) = A : B (6.1). Likewise the rectangle contained by A, B and the square on B are parallelograms under the same height B, standing on the bases A and B respectively; therefore rect(A,B) : sq(B) = A : B (6.1). Thus sq(A), rect(A,B), sq(B) are in continued proportion, each term having to the next the ratio A : B.\n\n**Step 3.** Since A : B = C : D, Steps 1 and 2 give sq(A) : rect(A,B) = E : M and rect(A,B) : sq(B) = M : F, ratios which are the same with the same ratio being the same with one another (5.11). The three magnitudes sq(A), rect(A,B), sq(B) and the three numbers E, M, F, taken two and two, are therefore in the same ratio; hence, ex aequali, sq(A) : sq(B) = E : F (5.22). This is the auxiliary result: if A : B = C : D, then sq(A) : sq(B) = (C·C) : (D·D).\n\n**Step 4.** (First part.) Let A and B be commensurable in length, that is, let the straight lines A and B themselves be measured by a common measure (D10.1.1). Commensurable magnitudes have to one another the ratio which a number has to a number; so A : B = C : D for some numbers C, D (10.5). By Steps 1–3, sq(A) : sq(B) = E : F, where E = C·C and F = D·D are square numbers. Therefore the squares on A and B have to one another the ratio which a square number has to a square number.\n\n**Step 5.** (Second part.) Conversely, let sq(A) : sq(B) = E : F, where E and F are square numbers, say E = C·C and F = D·D for numbers C, D (D7.18). Given the straight line A and the numbers C, D, a straight line H can be made such that A : H = C : D (10.6, Porism).\n\n**Step 6.** Applying Steps 1–3 to the straight lines A and H, for which A : H = C : D, we obtain sq(A) : sq(H) = E : F. But by hypothesis sq(A) : sq(B) = E : F. Therefore sq(A) : sq(H) = sq(A) : sq(B) (5.11).\n\n**Step 7.** Any two squares are similar rectilineal figures: all their angles are right angles (D1.22) and hence equal to one another (P4), and, each square being equilateral (D1.22), the sides about the equal angles are proportional (D6.1). So the squares on the four straight lines A, H, A, B are similar and similarly described figures, and by Step 6 they are proportional. Hence the straight lines themselves are proportional: A : H = A : B (6.22).\n\n**Step 8.** Since A : H = C : D (Step 5) and A : H = A : B (Step 7), we have A : B = C : D (5.11). Thus A has to B the ratio which a number has to a number; therefore A and B are commensurable (10.6), and since the lines themselves are commensurable, A and B are commensurable in length (D10.1.1).\n\n**Step 9.** (Third part.) Now let A and B be incommensurable in length. If the squares on A and B had to one another the ratio which a square number has to a square number, then by Steps 5–8 the straight lines A and B would be commensurable in length, which is contrary to the hypothesis. Therefore the squares on A and B have not to one another the ratio which a square number has to a square number.\n\n**Step 10.** (Fourth part.) Finally, let the squares on A and B not have to one another the ratio which a square number has to a square number. If A and B were commensurable in length, then by Step 4 the squares on them would have to one another the ratio which a square number has to a square number, which is contrary to the hypothesis. Therefore A and B are not commensurable in length.\n\nHence the squares on straight lines commensurable in length have to one another the ratio of a square number to a square number, and conversely; and the squares on straight lines incommensurable in length have not such a ratio, and conversely. Q.E.D.\n\n**USED:** 10.5, 10.6, 5.11, 5.22, 6.1, 6.22, 7.17, 7.18, D1.22, D10.1.1, D2.1, D6.1, D7.18, P4\n**Human refs (from References field):** 10.5, 10.6, 6.20, 8.11\n**Jaccard:** 0.125 — AI adds ['5.11', '5.22', '6.1', '6.22', '7.17', '7.18', 'D1.22', 'D10.1.1', 'D2.1', 'D6.1', 'D7.18', 'P4']; Human adds ['6.20', '8.11']",
+  "ai_used": [
+    "10.5",
+    "10.6",
+    "5.11",
+    "5.22",
+    "6.1",
+    "6.22",
+    "7.17",
+    "7.18",
+    "D1.22",
+    "D10.1.1",
+    "D2.1",
+    "D6.1",
+    "D7.18",
+    "P4"
+  ],
+  "heath_refs": [
+    "10.5",
+    "10.6",
+    "6.20",
+    "8.11"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.22",
+    "6.1",
+    "6.22",
+    "7.17",
+    "7.18",
+    "D1.22",
+    "D10.1.1",
+    "D2.1",
+    "D6.1",
+    "D7.18",
+    "P4"
+  ],
+  "heath_only": [
+    "6.20",
+    "8.11"
+  ],
+  "jaccard": 0.125,
+  "proof_summary": "**Statement:** The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a"
+}

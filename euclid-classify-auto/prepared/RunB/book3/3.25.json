@@ -1,0 +1,43 @@
+{
+  "proposition": "3.25",
+  "book": 3,
+  "statement": "Given a segment of a circle, to describe the complete circle of which it is a segment.",
+  "heath_proof": "Let ABC be the given segment of a circle; thus it is required to describe the complete circle belonging to the segment ABC, that is, of which it is a segment. For let AC be bisected at D, let DB be drawn from the point D at right angles to AC, and let AB. be joined; the angle ABD is then greater than, equal to, or less than the angle BAD. First let it be greater; and on the straight line BA, and at the point A on it, let the angle BAE be constructed equal to the angle ABD; let DB be drawn through to E, and let EC be joined. Then, since the angle ABE is equal to the angle BAE, the straight line EB is also equal to EA. [I. 6]  And, since AD is equal to DC, and DE is common, the two sides AD, DE are equal to the two sides CD, DE respectively; and the angle ADE is equal to the angle CDE, for each is right; therefore the base AE is equal to the base CE. But AE was proved equal to BE; therefore BE is also equal to CE; therefore the three straight lines AE, EB, EC are equal to one another. Therefore the circle drawn with centre E and distance one of the straight lines AE, EB, EC will also pass through the remaining points and will have been completed. [III. 9] Therefore, given a segment of a circle, the complete circle has been described. And it is manifest that the segment ABC is less than a semicircle, because the centre E happens to be outside it. Similarly, even if the angle ABD be equal to the angle BAD, AD being equal to each of the two BD, DC, the three straight lines DA, DB, DC will be equal to one another, D will be the centre of the completed circle, and ABC will clearly be a semicircle. But, if the angle ABD be less than the angle BAD, and if we construct, on the straight line BA and at the point A on it, an angle equal to the angle ABD, the centre will fall on DB within the segment ABC, and the segment ABC will clearly be greater than a semicircle. Therefore, given a segment of a circle, the complete circle has been described.",
+  "ai_proof_text": "3.25\n**Statement:** Given a segment of a circle, to describe the complete circle of which it is a segment.\n\n**Step 1.** Let ABC be the given segment of a circle, with AC as its base (chord) and B a point on the arc. Bisect AC at D [1.10].\n\n**Step 2.** From D, draw a straight line at right angles to AC [1.11]. Let this perpendicular meet the arc of the segment at B. Join AB [P1].\n\n**Step 3.** Bisect AB at E [1.10].\n\n**Step 4.** From E, draw EG at right angles to AB [1.11], and produce it if necessary [P2]. We claim that line EG meets line DB (or DB produced). To see this, suppose for contradiction that EG is parallel to DB. Since DB is at right angles to AC, and AB is a transversal cutting the parallel lines EG and DB, the alternate interior angles are equal [1.29], so angle ABD equals angle AEG. But angle AEG is a right angle by construction. So angle ABD would be a right angle. However, in triangle ABD, angle ADB is also a right angle (since DB is perpendicular to AC). By 1.32, the three angles of triangle ABD sum to two right angles. If both angle ADB and angle ABD are right angles, their sum already equals two right angles, forcing angle DAB to be zero, which is impossible since A, B, D are distinct non-collinear points. This contradiction shows EG is not parallel to DB. Therefore EG meets line BD (or BD produced) at some point F [P2].\n\n**Step 5.** Since E is the midpoint of AB, we have AE = EB [Step 3]. The angles AEF and BEF are both right angles [Step 4, since EG is at right angles to AB]. And EF is common to triangles AEF and BEF. Therefore, by 1.4 (Side-Angle-Side), triangle AEF is congruent to triangle BEF, and so FA = FB.\n\n**Step 6.** Since F lies on line BD, and BD is perpendicular to AC at D, the angle FDC and angle FDA are both right angles [since BD is at right angles to AC at D; if F is on the same side as B, then angle FDA = angle BDA = right angle and angle FDC = angle BDC = right angle; if F is on the opposite side, then by 1.13, since angle BDA and angle FDA are supplementary and angle BDA is a right angle, angle FDA is also a right angle, and similarly angle FDC is a right angle].\n\n**Step 7.** Since D is the midpoint of AC, we have AD = DC [Step 1]. The angles FDA and FDC are both right angles [Step 6]. And FD is common to triangles FDA and FDC. Therefore, by 1.4 (Side-Angle-Side), triangle FDA is congruent to triangle FDC, and so FA = FC.\n\n**Step 8.** From Steps 5 and 7, FA = FB and FA = FC, hence FA = FB = FC [CN1].\n\n**Step 9.** Describe the circle with center F and radius FA [P3]. Since FA = FB = FC, all three points A, B, and C lie on this circle [D1.15, since all straight lines from F to points on the circle equal FA].\n\n**Step 10.** The chord AC and the arc through B form the given segment. Since A, B, and C all lie on the described circle, and the segment ABC is part of this circle, the described circle is the complete circle of which ABC is a segment. This completes the construction.\n\n**USED:** 1.10, 1.11, 1.13, 1.29, 1.32, 1.4, CN1, D1.15, P1, P2, P3\n**Human refs (from References field):** 1.6, 3.9\n**Jaccard:** 0.000 — AI adds ['1.10', '1.11', '1.13', '1.29', '1.32', '1.4', 'CN1', 'D1.15', 'P1', 'P2', 'P3']; Human adds ['1.6', '3.9']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.29",
+    "1.32",
+    "1.4",
+    "CN1",
+    "D1.15",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6",
+    "3.9"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.13",
+    "1.29",
+    "1.32",
+    "1.4",
+    "CN1",
+    "D1.15",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [
+    "1.6",
+    "3.9"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let ABC be the given segment of a circle, with AC as its base (chord) and B a point on the arc. Bisect AC at D [1.10].  **Step 2.** From D, draw a straight line at right angles to AC [1.11"
+}

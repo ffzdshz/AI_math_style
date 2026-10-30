@@ -1,0 +1,38 @@
+{
+  "proposition": "3.20",
+  "book": 3,
+  "statement": "In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.",
+  "heath_proof": "Let ABC be a circle, let the angle BEC be an angleat its centre, and the angle BAC an angle at the circumference, and let them have the same circumference BC as base; I say that the angle BEC is double ofthe angle BAC. For let AE be joined and drawn through to F. Then, since EA is equal to EB, the angle EAB is also equal to the angle EBA; [I. 5]therefore the angles EAB, EBA are double of the angle EAB. But the angle BEF is equal to the angles EAB, EBA; [I. 32] therefore the angle BEF is also double of the angleEAB. For the same reason the angle FEC is also double of the angle EAC. Therefore the whole angle BEC is double of the whole angle BAC. Again let another straight line be inflected, and let there be another angle BDC; let DE be joined and produced to G. Similarly then we can prove that the angle GEC is double of the angle EDC,of which the angle GEB is double of the angle EDB; therefore the angle BEC which remains is double of the angle BDC.",
+  "ai_proof_text": "3.20\n**Statement:** In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.\n\n**Step 1.** Let O be the centre of the circle, let A and B be the endpoints of the common base arc Γ, and let C lie on the other arc AB. Write φ = ∠ACB, and let θ be the angle at O standing on Γ, taking its opening toward that arc. We must prove θ = 2φ, where twice an angle means that angle added to itself. [D3.9, D3.10]\n\n**Step 2.** Join OA, OB, OC, CA, and CB. Produce CO through O to meet the circumference again at D; thus CD is a diameter and C, O, D occur in that order. The chosen route is to use this diameter to obtain an exact doubling from an exterior angle, and then combine the resulting equalities by addition or subtraction. [P1, P2, D1.17]\n\n**Step 3.** Take X to be either A or B, provided X ≠ D. Since OC = OX, the base angles of triangle OCX are equal: ∠OCX = ∠CXO. [D1.15, 1.5] Because OD is the continuation of CO, the exterior-angle equality gives\n∠XOD = ∠OCX + ∠CXO = 2∠OCX = 2∠XCD.\nHere the last equality holds because CO and CD are the same ray from C. The exterior-angle form of 1.32 is the direct choice because the required side has already been produced. [1.32, CN2, CN4]\n\n**Step 4.** If D coincides with A, apply Step 3 with X = B. The angle ∠BOD is precisely θ, and ∠BCD is precisely φ; hence θ = 2φ. If D coincides with B, the same conclusion follows by taking X = A. [Step 3, D3.9, D3.10, CN4]\n\n**Step 5.** Suppose D lies strictly within Γ. Then CD divides the circumference angle into ∠ACD and ∠DCB, while OD divides the central opening standing on Γ into ∠AOD and ∠DOB. Thus\nφ = ∠ACD + ∠DCB,\nθ = ∠AOD + ∠DOB.\nThese are the corresponding angle decompositions along the two subarcs AD and DB of Γ. [D3.9, D3.10] Adding the two equalities obtained in Step 3 therefore gives\nθ = 2∠ACD + 2∠DCB = 2φ. [Step 3, CN2]\n\n**Step 6.** Finally, suppose D lies outside Γ and is distinct from A and B. Interchange the names A and B if necessary so that, on the arc from D to B which avoids C, A lies between D and B. At C, the angle ∠DCA is then a part of ∠DCB, with remainder φ; at O, the angle ∠DOA is a part of ∠DOB, with remainder θ. Consequently,\nφ = ∠DCB − ∠DCA,\nθ = ∠DOB − ∠DOA. [D3.9, D3.10]\nBy Step 3, ∠DOB = 2∠DCB and ∠DOA = 2∠DCA. Subtracting gives\nθ = 2∠DCB − 2∠DCA = 2φ. [Step 3, CN2, CN3]\n\n**Step 7.** The endpoint, interior, and exterior positions of D exhaust the possibilities. In every case θ = 2φ. Therefore, in a circle, the angle at the centre is double the angle at the circumference when they stand on the same circumference as base. [Steps 4–6]\n\n**USED:** 1.32, 1.5, CN2, CN3, CN4, D1.15, D1.17, D3.10, D3.9, P1, P2\n**Human refs (from References field):** 1.32, 1.5\n**Jaccard:** 0.182 — AI adds ['CN2', 'CN3', 'CN4', 'D1.15', 'D1.17', 'D3.10', 'D3.9', 'P1', 'P2']",
+  "ai_used": [
+    "1.32",
+    "1.5",
+    "CN2",
+    "CN3",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D3.10",
+    "D3.9",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.5"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN4",
+    "D1.15",
+    "D1.17",
+    "D3.10",
+    "D3.9",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.182,
+  "proof_summary": "**Step 1.** Let O be the centre of the circle, let A and B be the endpoints of the common base arc Γ, and let C lie on the other arc AB. Write φ = ∠ACB, and let θ be the angle at O standing on Γ, taki"
+}

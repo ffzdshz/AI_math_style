@@ -1,0 +1,41 @@
+{
+  "proposition": "3.24",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "S and T are similar segments of circles on equal straight lines AB and DE, with boundaries consisting of bases and circular arcs",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Superpose T so D falls on A and DE lies along AB, with T placed on the same side of AB as S",
+      "type": "superposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Since DE = AB, E falls on B after superposition",
+      "type": "point_coincidence"
+    },
+    {
+      "step": "Step 2",
+      "claim": "T' (the placed copy of T) is on the same line AB as S",
+      "type": "segment_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "S and T' are similar segments on the same straight line AB and on the same side of it",
+      "type": "same_line_same_side"
+    },
+    {
+      "step": "Step 3",
+      "claim": "By 3.23, two similar and unequal segments cannot exist on the same line on the same side, so S = T'",
+      "type": "segment_equality"
+    }
+  ],
+  "configuration_map": "Points A and B are endpoints of chord AB (base of segment S). Points D and E are endpoints of chord DE (base of segment T), with DE = AB. After superposition, D coincides with A and E coincides with B. The image T' of segment T sits on chord AB on the same side as S. Both S and T' are thus similar circular segments sharing the same base AB on the same side of that line.",
+  "pass_reason": "The proof is a clean superposition argument reducing the problem to Proposition 3.23. All spatial claims are mutually consistent: the superposition validly places D on A and E on B (since DE = AB), the segment T' is explicitly placed on the same side as S, and 3.23 directly applies to two similar segments on the same chord on the same side. No angle decompositions, interior/exterior claims, or betweenness arguments are involved, so there is no opportunity for spatial configuration contradiction."
+}

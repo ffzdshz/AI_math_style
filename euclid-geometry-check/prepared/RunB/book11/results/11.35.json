@@ -1,0 +1,41 @@
+{
+  "proposition": "11.35",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AG is elevated from the plane of angle BAC; DM elevated from plane of angle EDF; GH perpendicular from G to plane with H in plane; MN perpendicular from M to plane with N in plane; AG = DM set without loss of generality",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "GH perpendicular to plane implies angle GHA = angle GHB = angle GHC = 90 degrees; Pythagorean relations AG^2 = GH^2 + AH^2, BG^2 = GH^2 + BH^2, CG^2 = GH^2 + CH^2 (and similarly for M,N)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Altitude from G to each side decomposes as h_i^2 = GH^2 + d_i^2 where d_i is perpendicular distance from H to that side in the base plane; foot of altitude from G to a side coincides with projection from H to that side",
+      "type": "solid_geometry_decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "H lies inside triangle ABC and N lies inside triangle DEF (for sufficiently large B, C on their rays)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Area(ABC) = Area(ABH) + Area(ACH) + Area(BCH) by interior point decomposition; similarly for DEF and N",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Triangles GAH and MDN are right triangles with right angles at H and N respectively",
+      "type": "perpendicularity"
+    }
+  ],
+  "configuration_map": "H is the projection of G onto the base plane of angle BAC; since AG makes acute angles (BAG, CAG) with both sides of the plane angle, the projection direction AH lies within angle BAC. For B,C sufficiently far on their rays, H lies inside triangle ABC. Similarly N is projection of M onto the plane of angle EDF and lies inside triangle DEF. The 3D altitude from G to any line in the base plane decomposes into vertical component GH and horizontal component (distance from H to that line), connected by the Pythagorean theorem. Both configurations share identical altitude values (from triangle congruences in Steps 3,4,6), enabling comparison of GH vs MN through area arguments.",
+  "pass_reason": "All spatial claims are mutually consistent. The Pythagorean decomposition of 3D altitudes into vertical and horizontal components is geometrically valid (verified by coordinate analysis). The claim that H lies inside triangle ABC for large enough B,C is correct since the projection of the elevated line falls within angle BAC. The area-based contradiction argument is sound: equal altitudes with different perpendicular heights force unequal total areas, contradicting the established area equality. No configuration contradiction exists between any pair of spatial claims."
+}

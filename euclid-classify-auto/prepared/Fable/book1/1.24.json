@@ -1,0 +1,36 @@
+{
+  "proposition": "1.24",
+  "book": 1,
+  "statement": "If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.",
+  "heath_proof": "Let ABC, DEF be two triangles having the two sides AB, AC equal to the two sides DE, DF respectively, namely AB to DE, and AC to DF, and let the angle at A be greater than the angle at D; I say that the base BC is also greater than the base EF. For, since the angle BAC is greater than the angle EDF, let there be constructed, on the straight line DE, and at the point D on it, the angle EDG  equal to the angle BAC; [I. 23] let DG be made equal to either of the two straight lines AC, DF, and let EG, FG be joined. Then, since AB is equal to DE, and AC to DG,the two sides BA, AC are equal to the two sides ED, DG, respectively; and the angle BAC is equal to the angle EDG; therefore the base BC is equal to the base EG. [I. 4] Again, since DF is equal to DG,the angle DGF is also equal to the angle DFG; [I. 5]therefore the angle DFG is greater than the angle EGF. Therefore the angle EFG is much greater than the angle EGF. And, since EFG is a triangle having the angle EFG  greater than the angle EGF, and the greater angle is subtended by the greater side, [I. 19]the side EG is also greater than EF. But EG is equal to BC. Therefore BC is also greater than EF.",
+  "ai_proof_text": "1.24\n**Statement:** If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.\n\n**Step 1.** Let ABC and DEF be two triangles having AB equal to DE and AC equal to DF, and let the angle BAC be greater than the angle EDF; we must show that the base BC is greater than the base EF. Of the two sides AB, AC let AB be the one that is not greater than the other (if AB were greater than AC we would interchange the letters B, C and correspondingly E, F, which changes neither hypothesis nor conclusion). Since DE = AB and DF = AC, it follows that DE is not greater than DF.\n\n**Step 2.** On the straight line DE, at the point D on it, construct the angle EDG equal to the angle BAC [1.23], taking G on the same side of DE as F. Cut off DG equal to AC [1.3], and join EG and FG [P1]. Since DG = AC and DF = AC, DG = DF [CN1].\n\n**Step 3.** In the triangles BAC and EDG, the two sides AB, AC are equal to the two sides DE, DG respectively, and the contained angle BAC is equal to the contained angle EDG. Therefore the base BC is equal to the base EG [1.4].\n\n**Step 4.** Since the angle EDG equals the angle BAC, which is greater than the angle EDF, and F and G lie on the same side of DE, the straight line DF falls within the angle EDG. Hence DF, produced if necessary, meets the straight line EG at a point K lying between E and G.\n\n**Step 5.** Since DE is not greater than DG, the angle DGE is not greater than the angle DEG: if DE = DG the two angles are equal [1.5], and if DE < DG the greater side DG subtends the greater angle, so that angle DEG > angle DGE [1.18]. Moreover, in the triangle DEK the side EK is produced to G, so the exterior angle DKG is greater than the interior and opposite angle DEK, that is, angle DKG > angle DEG [1.16]. Hence angle DKG > angle DGK. In the triangle DKG the greater angle is subtended by the greater side, so DG > DK [1.19]. Since DG = DF, we have DF > DK; and as K and F lie on the same straight line drawn from D, the point K lies between D and F.\n\n**Step 6.** Since K lies between D and F, the straight line GK falls within the angle DGF; therefore the angle DGF is greater than the angle DGK [CN5], and since K lies on GE, angle DGK is the angle EGF; thus angle DGF > angle EGF. Again, since K lies between E and G, the straight line FK falls within the angle EFG; therefore the angle EFG is greater than the angle KFG [CN5], and since K lies on FD, angle KFG is the angle DFG; thus angle EFG > angle DFG.\n\n**Step 7.** Since DF = DG, the angle DFG is equal to the angle DGF [1.5]. Therefore angle EFG > angle DFG = angle DGF > angle EGF, so that the angle EFG is greater than the angle EGF.\n\n**Step 8.** In the triangle EFG the greater angle EFG is subtended by the greater side, so EG > EF [1.19]. But EG = BC by Step 3. Therefore BC is greater than EF. Q.E.D.\n\nPath note: the route chosen is the direct one (construct the larger angle on DE, compare EF with EG inside the isosceles triangle DFG, then apply 1.19). The choice of labelling in Step 1 and the argument of Step 5 are included so that the position of F beyond EG, on which Steps 6 and 7 depend, is established rather than read from the figure.\n\n**USED:** 1.16, 1.18, 1.19, 1.23, 1.3, 1.4, 1.5, CN1, CN5, P1\n**Human refs (from References field):** 1.19, 1.23, 1.4, 1.5\n**Jaccard:** 0.400 — AI adds ['1.16', '1.18', '1.3', 'CN1', 'CN5', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.18",
+    "1.19",
+    "1.23",
+    "1.3",
+    "1.4",
+    "1.5",
+    "CN1",
+    "CN5",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.19",
+    "1.23",
+    "1.4",
+    "1.5"
+  ],
+  "ai_only": [
+    "1.16",
+    "1.18",
+    "1.3",
+    "CN1",
+    "CN5",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let ABC and DEF be two triangles having AB equal to DE and AC equal to DF, and let the angle BAC be greater than the angle EDF; we must show that the base BC is greater than the base EF. O"
+}

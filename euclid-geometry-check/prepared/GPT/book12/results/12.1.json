@@ -1,0 +1,71 @@
+{
+  "proposition": "12.1",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Vertices A, B, C lie on circle 1; vertices A', B', C' lie on circle 2. AC and A'C' are chords.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangles ABC and A'B'C' are equiangular. Angle ACB and angle A'C'B' are acute (by relabeling if necessary).",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D is the second endpoint of the diameter through A on circle 1 (AD passes through center). D' analogous on circle 2.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Since angle ACB is acute, C lies on the major arc (greater segment) of chord AB. AB is not a diameter.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle ABD is a right angle (angle in semicircle, since AD is a diameter).",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle ADB is acute (from right angle at B and angle sum in triangle ABD).",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "D lies on the major arc of chord AB (since angle ADB is acute, by converse of III.31).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "C and D are in the same segment (both on major arc) relative to chord AB.",
+      "type": "same_segment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Angle ADB = angle ACB (angles in the same segment of circle 1, by III.21).",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles ABD and A'B'D' are equiangular (right angles at B,B'; equal angles at D,D'; third angles equal).",
+      "type": "triangle_similarity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AB:A'B' = AD:A'D' (from similar triangles via VI.4 and alternando V.16).",
+      "type": "proportion"
+    },
+    {
+      "step": "Step 7",
+      "claim": "F:G = S:T by VI.22, where S,T are squares on diameters AD, A'D'.",
+      "type": "proportion"
+    }
+  ],
+  "configuration_map": "Circle 1: Vertices A, B, C are consecutive vertices of polygon F on the circumference. The center of the circle is found (III.1), and the line from A through the center meets the circle again at D, making AD a diameter. Chord AB divides the circle into two arcs. Because angle ACB is acute (ensured by relabeling), C lies on the major arc of AB. Because angle ABD = 90 degrees (angle in semicircle) forces angle ADB to be acute, D also lies on the major arc of AB. Thus C and D are on the same arc, enabling the same-segment angle equality. Circle 2: identical configuration with primed points A', B', C', D'. Throughout the proof, D remains on the major arc of AB and is never repositioned or treated as being elsewhere.",
+  "pass_reason": "All spatial claims are mutually consistent. The critical geometric argument -- that C and D both lie on the major arc of chord AB -- is correctly established through III.31 and its converse. The acute angle at C (ensured by relabeling) places C on the major arc; the right angle at B (from the semicircle on diameter AD) forces the angle at D to be acute, placing D on the same major arc. The same-segment application of III.21 then correctly equates angles ADB and ACB. No angle decomposition issues arise; the proof uses only angle equalities and proportions, with no additive decompositions that could hide a configuration error."
+}

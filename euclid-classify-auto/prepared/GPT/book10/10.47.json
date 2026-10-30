@@ -1,0 +1,52 @@
+{
+  "proposition": "10.47",
+  "book": 10,
+  "statement": "The side of the sum of two medial areas is divided at one point only.",
+  "heath_proof": "Let AB be divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, and the rectangle AC, CB medial and also incommensurable with the sum of the squares on them; I say that AB is not divided at another point so as to fulfil the given conditions. For, if possible, let it be divided at D, so that again AC is of course not the same as BD, but AC is supposed greater; let a rational straight line EF be set out, and let there be applied to EF the rectangle EG equal to the squares on AC, CB, and the rectangle HK equal to twice the rectangle AC, CB; therefore the whole EK is equal to the square on AB. [II. 4] Again, let EL, equal to the squares on AD, DB, be applied to EF; therefore the remainder, twice the rectangle AD, DB, is equal to the remainder MK. And since, by hypothesis, the sum of the squares on AC, CB is medial, therefore EG is also medial. And it is applied to the rational straight line EF; therefore HE is rational and incommensurable in length with EF. [X. 22] For the same reason HN is also rational and incommensurable in length with EF. And, since the sum of the squares on AC, CB is incommensurable with twice the rectangle AC, CB, therefore EG is also incommensurable with GN, so that EH is also incommensurable with HN. [VI. 1, X. 11] And they are rational; therefore EH, HN are rational straight lines commensurable in square only; therefore EN is a binomial straight line divided at H. [X. 36] Similarly we can prove that it is also divided at M.  And EH is not the same with MN; therefore a binomial has been divided at different points: which is absurd. [X. 42] Therefore a side of the sum of two medial areas is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.47\n**Statement:** The side of the sum of two medial areas is divided at one point only.\n\n**Step 1.** Let AB be the side of the sum of two medial areas, divided into its defining terms at C. Fix their order by placing the greater term next to A, so AC > CB. Suppose that D is another defining division with AD > DB. Put\nS = AC² + CB², P = AC·CB,\nS′ = AD² + DB², P′ = AD·DB.\nBy 10.41, S and P are medial areas incommensurable with one another, and likewise S′ and P′. The squares on the two terms of each division are incommensurable, so those terms are unequal. [10.41; D10.1.2]\n\n**Step 2.** Path choice: apply the medial areas to a rational straight line, thereby reducing the question to binomial uniqueness, 10.42—the first uniqueness theorem naturally applicable to the resulting rational breadths. Choose the assigned rational straight line r, and apply S, P, S′, P′ to it as rectangles with respective breadths u, v, u′, v′. Thus\nr·u = S, r·v = P, r·u′ = S′, r·v′ = P′.\nEach application can be constructed by taking the third proportional to r and the medial side of the corresponding area; the rectangle contained by the extremes then equals the square on that medial side. All four breadths are rational by 10.22. [D10.1.3; 6.11; 6.17; 10.22]\n\n**Step 3.** Rectangles on the same base are proportional to their breadths, so S:P = u:v and S′:P′ = u′:v′. Consequently u and v are incommensurable in length, as are u′ and v′. Since v measures both v and 2v, these latter two lengths are commensurable; hence u and 2v are incommensurable. Similarly u′ and 2v′ are incommensurable. [6.1; 10.11; D10.1.1; 10.13]\n\n**Step 4.** By 2.4, the square on 2v is four times the square on v, and similarly for v′. These squares are therefore commensurable with the squares on v and v′ respectively. Since v and v′ are rational, transitivity of commensurability shows that 2v and 2v′ are rational also. Moreover, any two rational straight lines are commensurable in square, since their squares are commensurable with the assigned rational square. Thus u and 2v, and likewise u′ and 2v′, are rational straight lines commensurable in square only. Accordingly u + 2v and u′ + 2v′ are binomials. [2.4; D10.1.1; D10.1.2; D10.1.3; 10.12; 10.36]\n\n**Step 5.** Applying 2.4 to the two divisions of AB gives\nAB² = S + 2P = S′ + 2P′.\nBy distributivity of rectangles, the rectangles on base r with breadths u + 2v and u′ + 2v′ therefore have equal areas. Their breadths are consequently equal:\nu + 2v = u′ + 2v′.\nThus these are two decompositions of the same binomial. [2.4; 2.1; 6.1; 5.9]\n\n**Step 6.** By 2.7,\nS = 2P + (AC − CB)²,\nS′ = 2P′ + (AD − DB)².\nThe differences of the terms are positive, so S > 2P and S′ > 2P′. On the common base r, these inequalities imply u > 2v and u′ > 2v′: otherwise the corresponding rectangles could not have those inequalities. Both binomial decompositions therefore have their greater terms first. By uniqueness of the division of a binomial, u = u′ and 2v = 2v′. In particular, the corresponding rectangles give 2P = 2P′. [2.7; 2.1; CN5; 10.42; 6.1]\n\n**Step 7.** Suppose C and D are distinct. Interchanging their names if necessary, their order is A, C, D, B. Put e = CD. Distributivity gives\nP = AC·DB + AC·e,\nP′ = AC·DB + DB·e.\nBut AC > CB > DB, so AC·e is greater than DB·e: it contains that rectangle together with the positive rectangle e·(AC − DB). Hence P consists of P′ together with a positive area, and therefore 2P > 2P′, contrary to Step 6. Thus C = D. Consequently the side of the sum of two medial areas is divided into its defining terms at one point only. [2.1; CN5]\n\n**USED:** 10.11, 10.12, 10.13, 10.22, 10.36, 10.41, 10.42, 2.1, 2.4, 2.7, 5.9, 6.1, 6.11, 6.17, CN5, D10.1.1, D10.1.2, D10.1.3\n**Human refs (from References field):** 10.11, 10.22, 10.36, 10.42, 2.4, 6.1\n**Jaccard:** 0.333 — AI adds ['10.12', '10.13', '10.41', '2.1', '2.7', '5.9', '6.11', '6.17', 'CN5', 'D10.1.1', 'D10.1.2', 'D10.1.3']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.22",
+    "10.36",
+    "10.41",
+    "10.42",
+    "2.1",
+    "2.4",
+    "2.7",
+    "5.9",
+    "6.1",
+    "6.11",
+    "6.17",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.36",
+    "10.42",
+    "2.4",
+    "6.1"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.41",
+    "2.1",
+    "2.7",
+    "5.9",
+    "6.11",
+    "6.17",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let AB be the side of the sum of two medial areas, divided into its defining terms at C. Fix their order by placing the greater term next to A, so AC > CB. Suppose that D is another defini"
+}

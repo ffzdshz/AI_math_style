@@ -1,0 +1,56 @@
+{
+  "proposition": "6.20",
+  "run": "Fable",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Diagonals BE and EC from vertex E divide convex polygon ABCDE into non-overlapping triangles ABE, EBC, ECD covering the interior",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diagonals GL and LH from vertex L divide convex polygon FGHKL into non-overlapping triangles FGL, LGH, LHK covering the interior",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray BE falls between rays BA and BC at vertex B, so angle ABC = angle ABE + angle EBC (additive decomposition)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray GL falls between rays GF and GH at vertex G, so angle FGH = angle FGL + angle LGH (additive decomposition)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Ray CE falls between rays CB and CD at vertex C, so angle BCD = angle BCE + angle ECD (additive decomposition)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Ray HL falls between rays HG and HK at vertex H, so angle GHK = angle GHL + angle LHK (additive decomposition)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "In similar triangles ABE ~ FGL, side BE corresponds to GL (both subtend equal angles BAE = GFL)",
+      "type": "triangle_correspondence"
+    },
+    {
+      "step": "Step 12",
+      "claim": "In similar triangles EBC ~ LGH, side EB corresponds to LG (both subtend equal angles BCE = GHL)",
+      "type": "triangle_correspondence"
+    },
+    {
+      "step": "Step 14",
+      "claim": "In similar triangles ECD ~ LHK, side EC corresponds to LH (both subtend equal angles CDE = HKL)",
+      "type": "triangle_correspondence"
+    }
+  ],
+  "configuration_map": "Polygon ABCDE: convex pentagon with vertices in order A, B, C, D, E. Vertex E is adjacent to A and D. Diagonals BE and EC from vertex E pass through the polygon interior, dividing it into three triangles. At vertex B, ray BE lies inside the interior angle ABC (between rays BA and BC) because E is visible from B through the polygon interior. At vertex C, ray CE lies inside the interior angle BCD (between rays CB and CD) for the same reason. Polygon FGHKL: identical structure with corresponding vertex L (adjacent to F and K). Diagonals GL and LH from vertex L divide it into three triangles, with GL inside angle FGH at G and LH inside angle GHK at H. All angle decompositions are valid additive decompositions consistent with the convex polygon geometry.",
+  "pass_reason": "All spatial claims are mutually consistent. The diagonal decompositions from a single vertex of each convex polygon are standard constructions. The angle subtractions at B, C (and correspondingly G, H) are valid because the diagonals lie within the respective interior angles of the convex polygons. The ratio arguments in Steps 12-16 are purely proportional with correctly identified corresponding sides in the similar triangles. No configuration contradiction exists."
+}

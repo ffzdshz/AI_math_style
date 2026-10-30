@@ -1,0 +1,13 @@
+{
+  "proposition": "4.9",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof establishes that the diagonals bisect the angles of the square via I.8 (SSS congruence), then argues that halves of equal right angles are equal, yielding the base-angle equality needed for I.6. The AI proof takes a genuinely different route: it applies I.4 (SAS congruence) directly to triangle pairs such as DAB and CBA, using the equal sides and equal right angles of the square, to obtain the base-angle equalities without ever establishing angle bisection. Since I.8 does not appear in the proof-tree of I.4 (I.4 precedes I.8), the containment test confirms this is not a granularity difference but a distinct geometric argument. Both proofs converge at the same final conclusion (EA = EB = EC = ED, hence a circle centered at E circumscribes the square), but the key intermediate step of angle bisection in Heath is replaced by direct SAS congruence in the AI proof, making this a path difference. The AI's chain is logically complete and sound, so Q3 confirms D.",
+  "jaccard": 0.1,
+  "ai_citations": "1.4|1.6|CN1|D1.15|D1.22|D4.6|P1|P3|P4",
+  "heath_citations": "1.6|1.8",
+  "ai_only": "1.4|CN1|D1.15|D1.22|D4.6|P1|P3|P4",
+  "heath_only": "1.8",
+  "audit_record": ""
+}

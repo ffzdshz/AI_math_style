@@ -1,0 +1,61 @@
+{
+  "proposition": "12.4",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pyramids ABCD (base ABC, vertex D) and EFGH (base EFG, vertex H) have equal heights from D to plane ABC and from H to plane EFG",
+      "type": "height equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Midpoints K, L, M of base edges AB, BC, CA and midpoints N, O, P of lateral edges DA, DB, DC define the subdivision planes",
+      "type": "point position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Division of ABCD yields two sub-pyramids AKND and LOBC plus two equal prisms",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle KLM (medial triangle of ABC) is similar to ABC with ratio 1:2 and area 1/4 of ABC",
+      "type": "similarity and area ratio"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Four sub-triangles AKM, KBL, LCM, KLM are congruent and each equals 1/4 of ABC",
+      "type": "area decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Prism bases are triangles equal to KLM (one-fourth of ABC)",
+      "type": "solid geometry"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Prisms from both pyramids have equal height, namely half the common original height",
+      "type": "height equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Sub-pyramids have bases one-fourth of original and height half the original; paired sub-pyramids from ABCD and EFGH have equal heights",
+      "type": "height equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Second-level prisms have heights equal to one-fourth the original, equal for corresponding pairs from both pyramids",
+      "type": "height equality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "At every level of recursive subdivision, corresponding sub-pyramids have equal heights because 12.3 halves the height equally for both sides",
+      "type": "height equality"
+    }
+  ],
+  "configuration_map": "Points K, L, M are midpoints of base edges AB, BC, CA, lying in the base plane of ABCD. Points N, O, P are midpoints of lateral edges DA, DB, DC, lying in a plane at half the pyramid height. Triangle KLM is the medial triangle of ABC, partitioning it into four congruent sub-triangles. The two prisms span between the base plane and the midpoint plane (height = half original). The two sub-pyramids occupy the upper portion from the midpoint plane to vertex D. For EFGH, an identical construction applies at the same absolute heights (since the original heights are equal). At each recursive level, the midpoint construction halves the height equally for both pyramids, so corresponding sub-structures always share the same height. The base ratios at every level trace back to ABC:EFG via repeated application of the similarity ratio.",
+  "pass_reason": "The proof is primarily a proportional/ratio argument (Book 5 operations) applied to the standard 12.3 midpoint construction. All spatial claims are limited to midpoint positions, medial triangle similarity (ratio 1:2, area 1:4), and height equalities propagated through recursive subdivision. These claims are mutually consistent: midpoint positions are unambiguous, the area ratio is a standard geometric fact, and height equality propagates correctly because 12.3 bisects heights equally on both pyramids. There are no angle decompositions, no interior/exterior point arguments, no ray ordering claims, and no between-ness assertions that could harbor a hidden spatial contradiction."
+}

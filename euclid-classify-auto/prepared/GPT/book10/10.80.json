@@ -1,0 +1,52 @@
+{
+  "proposition": "10.80",
+  "book": 10,
+  "statement": "To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.",
+  "heath_proof": "For let AB be a first apotome of a medial straight line, and let BC be an annex to AB; therefore AC, CB are medial straight lines commensurable in square only and such that the rectangle AC, CB which they contain is rational; [X. 74] I say that no other medial straight line can be annexed to AB which is commensurable with the whole in square only and which contains with the whole a rational area. For, if possible, let DB also be so annexed; therefore AD, DB are medial straight lines commensurable in square only and such that the rectangle AD, DB which they contain is rational. [X. 74] Now, since the excess of the squares on AD, DB over twice the rectangle AD, DB is also the excess of the squares on AC, CB over twice the rectangle AC, CB, for they exceed by the same, the square on AB, [II. 7] therefore, alternately, the excess of the squares on AD, DB over the squares on AC, CB is also the excess of twice the rectangle AD, DB over twice the rectangle AC, CB. But twice the rectangle AD, DB exceeds twice the rectangle AC, CB by a rational area, for both are rational. Therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area. which is impossible, for both are medial [X. 15 and 23], and a medial area does not exceed a medial by a rational area. [X. 26]",
+  "ai_proof_text": "10.80\n**Statement:** To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.\n\n**Step 1.** Let h be a first apotome of a medial straight line. At least one annex of the required kind exists by the defining description in 10.74. Suppose that there are two distinct medial annexes b and d, and write a = h + b and c = h + d for the corresponding wholes. Thus a and b are commensurable in square only, as are c and d, while the rectangles ab and cd are rational. Interchanging the two annexes if necessary, take d > b; then c > a (CN2, CN5). Here xy denotes the rectangle contained by x and y, and x² the square on x.\n\n**Step 2.** By 6.12, construct straight lines e and f such that b:a = a:e and d:c = c:f. Then be = a² and df = c² (6.17). Since the respective wholes and annexes are commensurable in square, b² is commensurable with be, and d² with df (D10.1.2).\n\n**Step 3.** Rectangles of equal height are proportional to their bases, so b²:be = b:e and d²:df = d:f (6.1). Therefore b is commensurable in length with e, and d with f (10.11). Hence b + e is commensurable in length with b, and d + f with d (10.15). Since b and d are medial, b + e and d + f are also medial (10.23).\n\n**Step 4.** Consequently the rectangles b(b + e) and d(d + f) are medial: each is contained by medial straight lines commensurable in length (10.24). But, by 2.1 and the equalities in Step 2,\nM := b(b + e) = b² + a²,\nN := d(d + f) = d² + c².\nThus both M and N are medial areas.\n\n**Step 5.** Apply 2.7 directly to each whole and its annex; this is the direct route because it expresses each medial area as the same square plus twice a rational rectangle. Since a − b = c − d = h, it gives\nM = h² + 2ab,\nN = h² + 2cd.\nMoreover, c > a and d > b, so the squares making up N are respectively greater than those making up M; hence N > M (CN5, CN2). Subtracting the displayed equalities therefore gives the positive excess\nN − M = 2cd − 2ab (CN3).\n\n**Step 6.** Let Q be the square on the assigned rational straight line. Since ab and cd are rational areas, each is commensurable with Q, and so is each of their doubles (D10.1.1, D10.1.4). Thus 2ab and 2cd are commensurable with one another (10.12). From 2cd = 2ab + (N − M), it follows that N − M is commensurable with 2ab (10.15), and therefore with Q (10.12). Hence N − M is a rational area (D10.1.4).\n\n**Step 7.** We have obtained a medial area N exceeding a medial area M by a rational area, contrary to 10.26. Thus two distinct annexes satisfying the stated conditions cannot exist. Since an annex of the required kind exists by 10.74, exactly one medial straight line can be annexed which is commensurable with the whole in square only and contains with it a rational rectangle.\n\n**USED:** 10.11, 10.12, 10.15, 10.23, 10.24, 10.26, 10.74, 2.1, 2.7, 6.1, 6.12, 6.17, CN2, CN3, CN5, D10.1.1, D10.1.2, D10.1.4\n**Human refs (from References field):** 10.15, 10.23, 10.26, 10.74, 2.7\n**Jaccard:** 0.278 — AI adds ['10.11', '10.12', '10.24', '2.1', '6.1', '6.12', '6.17', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.2', 'D10.1.4']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.15",
+    "10.23",
+    "10.24",
+    "10.26",
+    "10.74",
+    "2.1",
+    "2.7",
+    "6.1",
+    "6.12",
+    "6.17",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.15",
+    "10.23",
+    "10.26",
+    "10.74",
+    "2.7"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.12",
+    "10.24",
+    "2.1",
+    "6.1",
+    "6.12",
+    "6.17",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.278,
+  "proof_summary": "**Step 1.** Let h be a first apotome of a medial straight line. At least one annex of the required kind exists by the defining description in 10.74. Suppose that there are two distinct medial annexes "
+}

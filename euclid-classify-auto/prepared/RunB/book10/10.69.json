@@ -1,0 +1,38 @@
+{
+  "proposition": "10.69",
+  "book": 10,
+  "statement": "A straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area, and let CD be commensurable with AB; it is to be proved that CD is also the side of a rational plus a medial area. Let AB be divided into its straight lines at E; therefore AE, EB are straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational. [X. 40] Let the same construction be made as before. We can then prove similarly that CF, FD are incommensurable in square, and the sum of the squares on AE, EB is commensurable with the sum of the squares on CF, FD, and the rectangle AE, EB with the rectangle CF, FD; so that the sum of the squares on CF, FD is also medial, and the rectangle CF, FD rational. Therefore CD is the side of a rational plus a medial area.",
+  "ai_proof_text": "10.69\n**Statement:** A straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, and let CD be commensurable in length with AB. We are to show that CD is also the side of a rational plus a medial area.\n\n**Step 2.** Since AB is the side of a rational plus a medial area, by 10.40 it is divided into two straight lines, say AG and GB (so that AB = AG + GB), where AG and GB are incommensurable in square, the sum of the squares on AG and GB is medial, and the rectangle contained by AG and GB is rational.\n\n**Step 3.** By 6.12, divide CD at E in the same ratio as AG to GB, so that AG:GB = CE:ED.\n\n**Step 4.** From the proportion AG:GB = CE:ED, by 5.16 (alternando), AG:CE = GB:ED. Then by 5.12 (equal ratios may be summed), AG:CE = (AG + GB):(CE + ED), that is, AG:CE = AB:CD. Likewise GB:ED = AB:CD.\n\n**Step 5.** Since AB is commensurable in length with CD (given), and AG:CE = AB:CD, by 10.11 AG is commensurable in length with CE. Similarly, since GB:ED = AB:CD, by 10.11 GB is commensurable in length with ED.\n\n**Step 6.** Since AG and GB are incommensurable in square (given), the square on AG is incommensurable with the square on GB. Since AG is commensurable with CE, the square on AG is commensurable with the square on CE. By 10.13 (if two magnitudes are commensurable and one is incommensurable with a third, then the other is also incommensurable with that third), the square on CE is incommensurable with the square on GB. Now since the square on GB is commensurable with the square on ED (because GB is commensurable with ED), by 10.13 again, the square on CE is incommensurable with the square on ED. Therefore CE and ED are incommensurable in square.\n\n**Step 7.** Since AG:CE = GB:ED (Step 4), by 6.20 the squares on AG and CE, being similar figures on proportional lines, satisfy sq(AG):sq(CE) = duplicate ratio of AG:CE. Likewise sq(GB):sq(ED) = duplicate ratio of GB:ED. Since AG:CE = GB:ED, the duplicate ratios are equal, so sq(AG):sq(CE) = sq(GB):sq(ED). By 5.12, it follows that sq(AG):sq(CE) = (sq(AG) + sq(GB)):(sq(CE) + sq(ED)).\n\n**Step 8.** Since AG is commensurable in length with CE, the square on AG is commensurable with the square on CE (the ratio sq(AG):sq(CE) being the duplicate of a ratio of numbers is itself a ratio of numbers). From the proportion in Step 7, by 10.11, sq(AG) + sq(GB) is commensurable with sq(CE) + sq(ED).\n\n**Step 9.** Now sq(AG) + sq(GB) is medial (given). Since sq(CE) + sq(ED) is commensurable with sq(AG) + sq(GB), the side of a square equal to sq(CE) + sq(ED) is commensurable with the side of a square equal to sq(AG) + sq(GB). The latter side is medial (since its square is a medial area), so by 10.23 the former side is also medial, and therefore sq(CE) + sq(ED) is a medial area.\n\n**Step 10.** For the rectangles: by 6.1, rect(AG, GB):rect(CE, GB) = AG:CE, and rect(CE, GB):rect(CE, ED) = GB:ED. Since AG:CE = GB:ED (Step 4), we have rect(AG, GB):rect(CE, GB) = rect(CE, GB):rect(CE, ED), so rect(AG, GB):rect(CE, ED) is the duplicate ratio of AG:CE. But sq(AG):sq(CE) is also the duplicate ratio of AG:CE (Step 7). Therefore rect(AG, GB):rect(CE, ED) = sq(AG):sq(CE). Since sq(AG) is commensurable with sq(CE) (Step 8), by 10.11, rect(AG, GB) is commensurable with rect(CE, ED).\n\n**Step 11.** Since rect(AG, GB) is rational (given), and rect(CE, ED) is commensurable with it, rect(CE, ED) is also rational. This follows from D10.1.4: a rational area is one commensurable with the square on the assigned rational line; since rect(AG, GB) is commensurable with that square and rect(CE, ED) is commensurable with rect(AG, GB), by 10.12 rect(CE, ED) is also commensurable with the square on the rational line, hence rational.\n\n**Step 12.** We have now established that CE and ED are incommensurable in square (Step 6), the sum sq(CE) + sq(ED) is medial (Step 9), and rect(CE, ED) is rational (Step 11). Therefore, by 10.40, CD = CE + ED is the side of a rational plus a medial area. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.23, 10.40, 5.12, 5.16, 6.1, 6.12, 6.20, D10.1.4\n**Human refs (from References field):** 10.40\n**Jaccard:** 0.091 — AI adds ['10.11', '10.12', '10.13', '10.23', '5.12', '5.16', '6.1', '6.12', '6.20', 'D10.1.4']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.23",
+    "10.40",
+    "5.12",
+    "5.16",
+    "6.1",
+    "6.12",
+    "6.20",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.40"
+  ],
+  "ai_only": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.23",
+    "5.12",
+    "5.16",
+    "6.1",
+    "6.12",
+    "6.20",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, and let CD be commensurable in length with AB. We are to show that CD is also the side of a rational plus a medial area.  **Step 2.** S"
+}

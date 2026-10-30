@@ -1,0 +1,61 @@
+{
+  "proposition": "2.11",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Square ABDC on AB with A top-left, B top-right, D bottom-right, C bottom-left; AB is top side, CA is left side, all angles right angles",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "E is the midpoint of AC (left side of square), so AE = EC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Segment BE joins B (top-right) to E (midpoint of left side)",
+      "type": "line_construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "F is on line CA produced beyond A (above A), with EF = EB; C, A, F are collinear in that order",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Square FGHA on AF with F top-left, G top-right, H bottom-right, A bottom-left; H lies on AB between A and B; AH = AF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "GH produced downward meets line CD at K; K lies on segment CD",
+      "type": "line_intersection"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AC is bisected at E and FA is added in a straight line, so Prop 2.6 applies: rect(CF,FA) + sq(AE) = sq(EF)",
+      "type": "proposition_application"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle EAB is a right angle since ABDC is a square and E lies on AC",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 12",
+      "claim": "CF = FA + AC with point A dividing CF into two segments; Prop 2.1 decomposes rect(AH,CF)",
+      "type": "line_decomposition"
+    },
+    {
+      "step": "Step 14",
+      "claim": "H lies on AB so AB is cut at H into segments AH and HB; Prop 2.2 applies",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Coordinates (side length s): A=(0,s), B=(s,s), D=(s,0), C=(0,0). E=(0,s/2) midpoint of AC. EB=s*sqrt(5)/2. F=(0, s+t) where t=s(sqrt(5)-1)/2 approx 0.618s, on CA produced beyond A. Square FGHA: F=(0,s+t), G=(t,s+t), H=(t,s), A=(0,s). H is on segment AB since 0<t<s. K=(t,0) is where GH extended meets CD. All points are consistently positioned: H between A and B, K between C and D, F above A on the left side extended, E between A and C. The right angle at A between AB and AC is correctly used for the Pythagorean theorem on triangle EAB.",
+  "pass_reason": "All spatial claims are mutually consistent. The key geometric claims (H on AB between A and B, right angle at A, F above A on CA extended, K on CD) were verified via coordinate analysis. The proof is primarily rectangle-arithmetic, and no angle decomposition or betweenness issues arise. AH = AF = s(sqrt(5)-1)/2 < s = AB confirms H is properly between A and B."
+}

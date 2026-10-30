@@ -1,0 +1,13 @@
+{
+  "proposition": "10.36",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath proves the irrationality of AC directly by building an incommensurability chain: using 10.11 to show rect(AB,BC) is incommensurable with sq(BC), then 10.13 to show 2*rect(AB,BC) is incommensurable with sq(AB)+sq(BC), and 10.16 to show sq(AC) is incommensurable with the rational sum sq(AB)+sq(BC). The AI instead uses a proof by contradiction: it invokes 10.21 to establish that rect(AB,BC) is medial (irrational), then assumes AC is rational and derives that rect(AB,BC) would have to be rational (using 10.12 for transitivity of commensurability), contradicting its mediality. The key intermediate conclusions differ fundamentally: Heath never uses 10.21 or proof by contradiction, and the AI never establishes the incommensurability chain through 10.11, 10.13, and 10.16. The containment test confirms this is a genuine path difference since heath_only items 10.13 and 10.16 do not appear inside the proof of 10.21 (the AI's key differentiating citation). The AI's contradictory path is logically valid, so the classification is D.",
+  "jaccard": 0.364,
+  "ai_citations": "10.12|10.15|10.21|10.6|2.4|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|10.13|10.15|10.16|10.6|2.4|D10.1.4",
+  "ai_only": "10.12|10.21|D10.1.2|D10.1.3",
+  "heath_only": "10.11|10.13|10.16",
+  "audit_record": ""
+}

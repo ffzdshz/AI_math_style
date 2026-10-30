@@ -1,0 +1,36 @@
+{
+  "proposition": "10.46",
+  "book": 10,
+  "statement": "The side of a rational plus a medial area is divided at one point only.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, but twice the rectangle AC, CB rational; [X. 40] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB medial, but twice the rectangle AD, DB rational. Since then that by which twice the rectangle AC, CB differs from twice the rectangle AD, DB is also that by which the squares on AD, DB differ from the squares on AC, CB, while twice the rectangle AC, CB exceeds twice the rectangle AD, DB by a rational area, therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore the side of a rational plus a medial area is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.46\n**Statement:** The side of a rational plus a medial area is divided at one point only.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC and CB are the two straight lines described in the definition (10.40): AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, and twice the rectangle AC by CB is rational.\n\n**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D so that AD and DB satisfy the same conditions: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, and twice the rectangle AD by DB is rational.\n\n**Step 3.** Since twice the rectangle AC by CB is rational and twice the rectangle AD by DB is rational, these two areas are commensurable with each other, for any two rational areas are commensurable (by D10.1.4 and 10.12, since both are commensurable with the square on the assigned rational straight line).\n\n**Step 4.** Now, by 2.4, the square on AB equals the sum of the squares on AC and CB plus twice the rectangle AC by CB. Likewise, the square on AB equals the sum of the squares on AD and DB plus twice the rectangle AD by DB.\n\n**Step 5.** Therefore the sum of the squares on AC and CB plus twice the rectangle AC by CB equals the sum of the squares on AD and DB plus twice the rectangle AD by DB (CN1).\n\n**Step 6.** By subtraction (CN3), the difference between the sum of the squares on AC, CB and the sum of the squares on AD, DB equals the difference between twice the rectangle AD by DB and twice the rectangle AC by CB. That is: (sq(AC) + sq(CB)) - (sq(AD) + sq(DB)) = 2·rect(AD,DB) - 2·rect(AC,CB).\n\n**Step 7.** From Step 3, twice the rectangle AC by CB and twice the rectangle AD by DB are both rational and therefore commensurable. Hence their difference is either zero or rational (by 10.15, since if two commensurable magnitudes are given, their sum is commensurable with each, and by analogous reasoning the difference of commensurable magnitudes is commensurable with each, hence rational).\n\n**Step 8.** The sum of the squares on AC and CB is medial, and the sum of the squares on AD and DB is medial (by the hypothesis of 10.40 applied to each division).\n\n**Step 9.** If the difference in Step 6 is nonzero, then a medial area exceeds a medial area by a rational area (since the left side of the equation in Step 6 is the difference of two medial areas, and the right side is rational). But this contradicts 10.26, which states that a medial area does not exceed a medial area by a rational area.\n\n**Step 10.** Therefore the difference must be zero. Hence twice the rectangle AC by CB equals twice the rectangle AD by DB, and consequently the sum of the squares on AC and CB equals the sum of the squares on AD and DB.\n\n**Step 11.** Since the sum of the squares on AC, CB equals the sum of the squares on AD, DB, and twice the rectangle AC by CB equals twice the rectangle AD by DB, the same conditions hold as in the proof of 10.45. In that proposition it was shown, under these identical equalities of the sums of squares and of the doubled rectangles, that the division point must be the same. Specifically: from 2.4, the square on AC equals the square on AD (which would follow from the equalities by algebraic rearrangement). But we must argue directly.\n\n**Step 12.** Since the squares on AC and CB together equal the squares on AD and DB together, and twice the rectangle AC by CB equals twice the rectangle AD by DB, we add these: (sq(AC) + sq(CB) + 2·rect(AC,CB)) = (sq(AD) + sq(DB) + 2·rect(AD,DB)). By 2.4 applied in reverse, sq(AC + CB) = sq(AD + DB), i.e., sq(AB) = sq(AB), which is trivially true and does not immediately distinguish the points. We must instead subtract.\n\n**Step 13.** From sq(AC) + sq(CB) = sq(AD) + sq(DB) and 2·rect(AC,CB) = 2·rect(AD,DB), subtract the rectangle equations from the square-sum equations: (sq(AC) + sq(CB) - 2·rect(AC,CB)) = (sq(AD) + sq(DB) - 2·rect(AD,DB)). By 2.7, sq(AC) + sq(CB) - 2·rect(AC,CB) = sq(AC - CB), and similarly sq(AD) + sq(DB) - 2·rect(AD,DB) = sq(AD - DB). Therefore sq(AC - CB) = sq(AD - DB).\n\n**Step 14.** From Step 12 (addition), sq(AC + CB) = sq(AD + DB), so AC + CB = AD + DB (= AB). From Step 13, sq(AC - CB) = sq(AD - DB), so AC - CB = AD - DB (taking the positive difference, since in both cases the first-named segment is the greater by convention or we may take absolute values).\n\n**Step 15.** Adding the equations AC + CB = AD + DB and AC - CB = AD - DB, we get 2·AC = 2·AD (CN2), hence AC = AD. Subtracting instead, 2·CB = 2·DB, hence CB = DB.\n\n**Step 16.** Since AC = AD and CB = DB, the point C coincides with the point D. This contradicts the assumption that AB was divided at two distinct points.\n\n**Step 17.** Therefore the side of a rational plus a medial area is divided at one point only. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.26, 10.40, 2.4, 2.7, CN1, CN2, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.40\n**Jaccard:** 0.200 — AI adds ['10.12', '10.15', '2.4', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.40",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.40"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC and CB are the two straight lines described in the definition (10.40): AC and CB are incommensura"
+}

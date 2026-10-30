@@ -1,0 +1,49 @@
+{
+  "proposition": "12.1",
+  "book": 12,
+  "statement": "Similar polygons inscribed in circles are to one another as the squares on the diameters.",
+  "heath_proof": "Let ABC, FGH be circles, let ABCDE, FGHKL be similar polygons inscribed in them, and let BM, GN be diameters of the circles; I say that, as the square on BM is to the square on GN, so is the polygon ABCDE to the polygon FGHKL. For let BE, AM, GL, FN be joined. Now, since the polygon ABCDE is similar to the polygon FGHKL, the angle BAE is equal to the angle GFL, and, as BA is to AE, so is GF to FL. [VI. Def. I] Thus BAE, GFL are two triangles which have one angle equal to one angle, namely the angle BAE to the angle GFL, and the sides about the equal angles proportional; therefore the triangle ABE is equiangular with the triangle FGL. [VI. 6] Therefore the angle AEB is equal to the angle FLG. But the angle AEB is equal to the angle AMB, for they stand on the same circumference; [III. 27] and the angle FLG to the angle FNG; therefore the angle AMB is also equal to the angle FNG. But the right angle BAM is also equal to the right angle GFN; [III. 31] therefore the remaining angle is equal to the remaining angle. [I. 32] Therefore the triangle ABM is equiangular with the triangle FGN. Therefore, proportionally, as BM is to GN, so is BA to GF. [VI. 4] But the ratio of the square on BM to the square on GN is duplicate of the ratio of BM to GN, and the ratio of the polygon ABCDE to the polygon FGHKL is duplicate of the ratio of BA to GF; [VI. 20] therefore also, as the square on BM is to the square on GN, so is the polygon ABCDE to the polygon FGHKL.",
+  "ai_proof_text": "12.1\n**Statement:** Similar polygons inscribed in circles are to one another as the squares on the diameters.\n\n**Step 1.** Let ABCDE and FGHKL be similar polygons inscribed in the circles ABCDE and FGHKL, the vertices corresponding in the order A, B, C, D, E and F, G, H, K, L, so that BA and GF are corresponding sides; and let BM and GN be diameters of the two circles. Since the polygons are inscribed, every vertex of each lies on the circumference of its circle (D4.3). I say that polygon ABCDE : polygon FGHKL = square on BM : square on GN.\n\n**Step 2.** Join BE, AM, GL, FN (P1).\n\n**Step 3.** Since the polygons are similar, their angles are severally equal and the sides about the equal angles are proportional (D6.1); hence the angle BAE is equal to the angle GFL, and BA : AE = GF : FL.\n\n**Step 4.** The triangles BAE and GFL therefore have one angle equal to one angle and the sides about these equal angles proportional; hence they are equiangular, and the angles subtended by corresponding sides are equal (6.6). In particular the angle AEB, subtended by BA, is equal to the angle FLG, subtended by GF.\n\n**Step 5.** In the circle ABCDE the angles AEB and AMB are angles in the same segment, both standing upon the circumference AB (E and M lying on the same side of AB); therefore the angle AEB is equal to the angle AMB (3.21). For the same reason, in the circle FGHKL the angle FLG is equal to the angle FNG (3.21). Hence, by Step 4, the angle AMB is equal to the angle FNG (CN1).\n\n**Step 6.** Since BM is a diameter, the angle BAM is an angle in the semicircle on BM and is therefore right (3.31); likewise the angle GFN is right (3.31). Hence the angle BAM is equal to the angle GFN (P4).\n\n**Step 7.** In the triangles ABM and FGN the three angles of each are together equal to two right angles (1.32); the angles BAM, AMB together are equal to the angles GFN, FNG together (Steps 5 and 6, CN2); therefore the remaining angle ABM is equal to the remaining angle FGN (CN3). Thus the triangles ABM and FGN are equiangular.\n\n**Step 8.** In equiangular triangles the sides about the equal angles are proportional, corresponding sides being those which subtend equal angles (6.4). About the equal angles ABM and FGN, the sides BA and GF subtend the equal angles AMB and FNG, and the sides BM and GN subtend the equal right angles BAM and GFN; therefore BA : BM = GF : GN.\n\n**Step 9.** Alternately, BA : GF = BM : GN (5.16); that is, the four straight lines BM, GN, BA, GF are proportional: BM : GN = BA : GF.\n\n**Step 10.** Upon BM and GN stand the squares on BM and GN, which are similar and similarly described figures; upon BA and GF stand the polygons ABCDE and FGHKL, which are similar and similarly described figures, BA and GF being corresponding sides. Since the four straight lines BM, GN, BA, GF are proportional, the rectilineal figures similar and similarly described upon them are also proportional (6.22): square on BM : square on GN = polygon ABCDE : polygon FGHKL.\n\n**Step 11.** Therefore the polygon ABCDE is to the polygon FGHKL as the square on BM is to the square on GN; that is, similar polygons inscribed in circles are to one another as the squares on the diameters. Q.E.D.\n\nPath note: an equivalent route reaches Step 10 through 6.20 (the polygons are in the duplicate ratio of BA : GF) with 6.20 Por. (the squares are in the duplicate ratio of BM : GN) and then equates the duplicate ratios of the equal ratios BM : GN and BA : GF; 6.22 yields the conclusion in one step from the proportion of Step 9, so it was taken as the more direct route.\n\n**USED:** 1.32, 3.21, 3.31, 5.16, 6.22, 6.4, 6.6, CN1, CN2, CN3, D4.3, D6.1, P1, P4\n**Human refs (from References field):** 1.32, 3.27, 3.31, 6.20, 6.4, 6.6, D6.1\n**Jaccard:** 0.312 — AI adds ['3.21', '5.16', '6.22', 'CN1', 'CN2', 'CN3', 'D4.3', 'P1', 'P4']; Human adds ['3.27', '6.20']",
+  "ai_used": [
+    "1.32",
+    "3.21",
+    "3.31",
+    "5.16",
+    "6.22",
+    "6.4",
+    "6.6",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D4.3",
+    "D6.1",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.32",
+    "3.27",
+    "3.31",
+    "6.20",
+    "6.4",
+    "6.6",
+    "D6.1"
+  ],
+  "ai_only": [
+    "3.21",
+    "5.16",
+    "6.22",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D4.3",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [
+    "3.27",
+    "6.20"
+  ],
+  "jaccard": 0.312,
+  "proof_summary": "**Step 1.** Let ABCDE and FGHKL be similar polygons inscribed in the circles ABCDE and FGHKL, the vertices corresponding in the order A, B, C, D, E and F, G, H, K, L, so that BA and GF are correspondi"
+}

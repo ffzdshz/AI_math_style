@@ -1,0 +1,13 @@
+{
+  "proposition": "12.6",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same geometric backbone: triangulate the polygonal bases, apply XII.5 to compare triangular pyramids of equal height, aggregate the triangular ratios to relate full polygonal pyramids, and conclude via V.22 (ex aequali). The sole substantive citation difference is that Heath uses V.18 (componendo) iteratively to build up polygon-to-triangle ratios one step at a time, while the AI uses V.24 (addendo, which adds antecedents with a fixed consequent) to sum all ratios at once. The proof-tree containment test confirms that V.18 appears inside Heath's own proof of V.24, so the AI is citing V.24 as a unit while Heath re-derives its internals inline. The remaining ai_only items (11.2, CN2, D11.12, D5.5, D6.4, P1) are all definitions, common notions, postulates, or construction-level citations, representing over-citation rather than a path divergence. Since the key geometric conclusions are the same and the citation difference is one of depth, this is a granularity difference.",
+  "jaccard": 0.2,
+  "ai_citations": "11.2|12.5|5.22|5.24|CN2|D11.12|D5.5|D6.4|P1",
+  "heath_citations": "12.5|5.18|5.22",
+  "ai_only": "11.2|5.24|CN2|D11.12|D5.5|D6.4|P1",
+  "heath_only": "5.18",
+  "audit_record": ""
+}

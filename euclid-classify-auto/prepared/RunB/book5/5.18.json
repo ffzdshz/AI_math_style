@@ -1,0 +1,37 @@
+{
+  "proposition": "5.18",
+  "book": 5,
+  "statement": "If magnitudes be proportional separando, they will also be proportional componendo.",
+  "heath_proof": "Let AE, EB, CF, FD be magnitudes proportional separando, so that, as AE is to EB, so is CF to FD; I say that they will also be proportional componendo, that is, as AB is to BE, so is CD to FD. For, if CD be not to DF as AB to BE, then, as AB is to BE, so will CD be either to some magnitude less than DF or to a greater. First, let it be in that ratio to a less magnitude DG. Then, since, as AB is to BE, so is CD to DG, they are magnitudes proportional componendo; so that they will also be proportional separando. [V. 17]  Therefore, as AE is to EB, so is CG to GD. But also, by hypothesis, as AE is to EB, so is CF to FD. Therefore also, as CG is to GD, so is CF to FD. [V. 11] But the first CG is greater than the third CF; therefore the second GD is also greater than the fourth FD. [V. 14]  But it is also less: which is impossible. Therefore, as AB is to BE, so is not CD to a less magnitude than FD. Similarly we can prove that neither is it in that ratio to a greater; it is therefore in that ratio to FD itself.",
+  "ai_proof_text": "5.18\n**Statement:** If magnitudes be proportional separando, they will also be proportional componendo.\n\n**Step 1.** Let AE, EB, CF, FD be magnitudes such that AE : EB :: CF : FD (proportional separando). Let AB = AE + EB and CD = CF + FD. We must show that AB : BE :: CD : DF (proportional componendo), where we write BE for EB and DF for FD.\n\n**Step 2.** By D5.5, to establish AB : BE :: CD : DF, we must show that for any equimultiples m*AB and m*CD of the first and third, and any equimultiples n*BE and n*DF of the second and fourth, the former equimultiples alike exceed, are alike equal to, or alike fall short of the latter equimultiples taken in corresponding order.\n\n**Step 3.** Take arbitrary equimultiples m*AB and m*CD, and arbitrary equimultiples n*BE and n*DF. Since AB = AE + EB, by 5.1 we have m*AB = m*AE + m*EB. Similarly, since CD = CF + FD, we have m*CD = m*CF + m*FD.\n\n**Step 4.** Consider first the case where n > m. Then (n - m) is a positive integer and (n - m)*BE and (n - m)*DF are well-defined equimultiples. We have m*AB compared with n*BE, that is, m*AE + m*EB compared with n*BE. By CN3 (subtracting equals from both sides, namely m*EB from each), m*AE + m*EB is greater than, equal to, or less than n*BE according as m*AE is greater than, equal to, or less than (n - m)*BE. Likewise, m*CD is greater than, equal to, or less than n*DF according as m*CF is greater than, equal to, or less than (n - m)*DF.\n\n**Step 5.** Now m*AE and m*CF are equimultiples of AE and CF, and (n - m)*BE and (n - m)*DF are equimultiples of BE and DF. Since AE : EB :: CF : FD by hypothesis, D5.5 tells us that m*AE is greater than, equal to, or less than (n - m)*BE according as m*CF is greater than, equal to, or less than (n - m)*DF. Therefore, by Step 4, m*AB is greater than, equal to, or less than n*BE according as m*CD is greater than, equal to, or less than n*DF.\n\n**Step 6.** Now consider the case where n is less than or equal to m. Since AE is a magnitude, m*AE is positive, so m*AE + m*EB > m*EB. Since n is less than or equal to m, we have m*EB is greater than or equal to n*EB (by the nature of equimultiples), hence m*AE + m*EB > n*EB, that is, m*AB > n*BE. By the same reasoning, m*CF is positive, so m*CF + m*FD > n*FD, that is, m*CD > n*DF. Thus both equimultiples of the first and third exceed the corresponding equimultiples of the second and fourth, and the condition of D5.5 is satisfied in this case as well.\n\n**Step 7.** Since in every case — whether n > m, n = m, or n < m — the equimultiples m*AB and m*CD alike exceed, are alike equal to, or alike fall short of n*BE and n*DF respectively, it follows by D5.5 that AB : BE :: CD : DF. That is, the magnitudes are proportional componendo. Q.E.D.\n\n**USED:** 5.1, CN2, CN3, CN5, D5.14, D5.15, D5.5\n**Human refs (from References field):** 5.11, 5.14, 5.17\n**Jaccard:** 0.000 — AI adds ['5.1', 'CN2', 'CN3', 'CN5', 'D5.14', 'D5.15', 'D5.5']; Human adds ['5.11', '5.14', '5.17']",
+  "ai_used": [
+    "5.1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_refs": [
+    "5.11",
+    "5.14",
+    "5.17"
+  ],
+  "ai_only": [
+    "5.1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D5.14",
+    "D5.15",
+    "D5.5"
+  ],
+  "heath_only": [
+    "5.11",
+    "5.14",
+    "5.17"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AE, EB, CF, FD be magnitudes such that AE : EB :: CF : FD (proportional separando). Let AB = AE + EB and CD = CF + FD. We must show that AB : BE :: CD : DF (proportional componendo), w"
+}

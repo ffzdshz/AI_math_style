@@ -1,0 +1,28 @@
+{
+  "proposition": "1.21",
+  "book": 1,
+  "statement": "If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greaterangle.",
+  "heath_proof": "On BC, one of the sides of the triangle ABC, from its extremities B, C, let the two straight lines BD, DC be constructed meeting within the triangle; I say that BD, DC are less than the remaining two sidesof the triangle BA, AC, but contain an angle BDC greater than the angle BAC. For let BD be drawn through to E. Then, since in any triangle two sides are greater than the remainingone, [I. 20] therefore, in the triangle ABE, the two sides AB, AE are greater than BE. Let EC be added to each; therefore BA, AC are greater than BE, EC. Again, since, in the triangle CED, the two sides CE, ED are greater than CD, let DB be added to each; therefore CE, EB are greater than CD, DB. But BA, AC were proved greater than BE, EC;therefore BA, AC are much greater than BD, DC. Again, since in any triangle the exterior angle is greater than the interior and opposite angle, [I. 16] therefore, in the triangle CDE, the exterior angle BDC is greater than the angle CED. For the same reason, moreover, in the triangle ABE also, the exterior angle CEB is greater than the angle BAC. But the angle BDC was proved greater than the angle CEB; therefore the angle BDC is much greater than the angle BAC.",
+  "ai_proof_text": "1.21\n**Statement:** If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greaterangle.\n\n**Step 1.** Let ABC be a triangle, and let BD and CD be the two straight lines drawn from the extremities of BC to a point D within the triangle. We must prove that BD + DC < AB + AC and that ∠BDC > ∠BAC. [Hypothesis]\n\n**Step 2.** Produce BD beyond D to meet AC at E. Since D is inside triangle ABC, E lies between A and C, and D lies between B and E. Choose this single extension because it supplies both triangle inequalities for the lengths and exterior-angle comparisons for the angles. [P2; interior-point hypothesis]\n\n**Step 3.** In triangle ABE, AB + AE > BE. Add EC to both sides. Since AE + EC = AC, it follows that AB + AC > BE + EC. Here adding a common magnitude preserves the strict inequality: the excess remains a part of the greater whole. [1.20; CN2; CN5]\n\n**Step 4.** In triangle DEC, DE + EC > DC. Adding BD gives BD + DE + EC > BD + DC. Since BD + DE = BE, this is BE + EC > BD + DC. Together with Step 3, this proves AB + AC > BD + DC. [1.20; CN2; CN5]\n\n**Step 5.** In triangle DEC, ED is produced through D to B. Therefore the exterior angle ∠BDC is greater than the interior and opposite angle ∠DEC. Since the rays ED and EB coincide, ∠DEC = ∠BEC. Hence ∠BDC > ∠BEC. [1.16; CN4]\n\n**Step 6.** In triangle ABE, AE is produced through E to C. Therefore the exterior angle ∠BEC is greater than the interior and opposite angle ∠BAE. Since the rays AE and AC coincide, ∠BAE = ∠BAC. Hence ∠BEC > ∠BAC. [1.16; CN4]\n\n**Step 7.** Combining Steps 5 and 6 gives ∠BDC > ∠BAC. Thus the two constructed straight lines BD and DC are together less than AB and AC, but contain a greater angle, as required. [Steps 4–6; CN5]\n\n**USED:** 1.16, 1.20, CN2, CN4, CN5, P2\n**Human refs (from References field):** 1.16, 1.20\n**Jaccard:** 0.333 — AI adds ['CN2', 'CN4', 'CN5', 'P2']",
+  "ai_used": [
+    "1.16",
+    "1.20",
+    "CN2",
+    "CN4",
+    "CN5",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.20"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN4",
+    "CN5",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let ABC be a triangle, and let BD and CD be the two straight lines drawn from the extremities of BC to a point D within the triangle. We must prove that BD + DC < AB + AC and that ∠BDC > ∠"
+}

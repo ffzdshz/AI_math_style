@@ -1,0 +1,37 @@
+{
+  "proposition": "10.51",
+  "book": 10,
+  "statement": "To find the fourth binomial straight line.",
+  "heath_proof": "Let two numbers AC, CB be set out such that AB neither has to BC, nor yet to AC, the ratio which a square number has to a square number. Let a rational straight line D be set out, and let EF be commensurable in length with D; therefore EF is also rational. Let it be contrived that, as the number BA is to AC, so is the square on EF to the square on FG; [X. 6] therefore the square on EF is commensurable with the square on FG; [X. 6] therefore FG is also rational. Now, since BA has not to AC the ratio which a square number has to a square number, neither has the square on EF to the square on FG the ratio which a square number has to a square number; therefore EF is incommensurable in length with FG. [X. 9] Therefore EF, FG are rational straight lines commensurable in square only; so that EG is binomial. I say next that it is also a fourth binomial straight line. For since, as BA is to AC, so is the square on EF to the square on FG, therefore the square on EF is greater than the square on FG. Let then the squares on FG, H be equal to the square on EF; therefore, convertendo, as the number AB is to BC, so is the square on EF to the square on H. [V. 19] But AB has not to BC the ratio which a square number has to a square number; therefore neither has the square on EF to the square on H the ratio which a square number has to a square number. Therefore EF is incommensurable in length with H; [X. 9] therefore the square on EF is greater than the square on GF by the square on a straight line incommensurable with EF. And EF, FG are rational straight lines commensurable in square only, and EF is commensurable in length with D. Therefore EG is a fourth binomial straight line.",
+  "ai_proof_text": "10.51\n**Statement:** To find the fourth binomial straight line.\n\n**Step 1.** Let AC be a rational straight line set out. By Proposition 10.30, we can find two rational straight lines commensurable in square only such that the square on the greater is greater than the square on the lesser by the square on a straight line incommensurable in length with the greater. Let these be found: let E and F be two such rational straight lines, with E the greater, such that E and F are rational, commensurable in square only, and the square on E is greater than the square on F by the square on a straight line incommensurable in length with E.\n\n**Step 2.** Since E and F are rational straight lines (commensurable in square with AC), by Definition D10.1.3, the squares on E and on F are each commensurable with the square on AC, and hence rational areas. We now require that E be commensurable in length with AC. To achieve this, let E be taken commensurable in length with AC (which is possible since we may apply the construction of 10.30 starting from AC itself as the greater line, or by choosing E commensurable in length with AC by 10.6, since rational lines have to each other the ratio of a number to a number in square).\n\n**Step 3.** More precisely, set out a rational straight line AC. Let the two numbers p and q be such that p^2 + q^2 is not a square number; this is possible (for example, take p = 1, q = 1, so p^2 + q^2 = 2, which is not a perfect square). Now by Proposition 10.29 and its method adapted via 10.30: take E = AC itself (so E is trivially commensurable in length with AC), and find F rational and commensurable in square only with E, such that the square on E exceeds the square on F by the square on a line incommensurable in length with E. This is exactly what 10.30 provides.\n\n**Step 4.** So let E and F be found by 10.30 with E commensurable in length with AC. Then E and F are rational straight lines commensurable in square only, and the square on E is greater than the square on F by the square on a straight line incommensurable in length with E.\n\n**Step 5.** Since E and F are rational and commensurable in square only, by Proposition 10.36, the sum E + F is a binomial straight line. Let AB = E + F, divided at the point where the two terms meet, so that the greater term is E and the lesser term is F.\n\n**Step 6.** We now verify the conditions of Definition D10.2.4 for a fourth binomial. We must check three things: (i) the square on the greater term E is greater than the square on the lesser term F by the square on a straight line incommensurable in length with E; (ii) the greater term E is commensurable in length with the rational straight line AC set out; (iii) neither condition of the first, second, or third binomial applies.\n\n**Step 7.** Condition (i): By construction in Step 4 (via 10.30), the square on E is greater than the square on F by the square on a straight line incommensurable in length with E. This is satisfied.\n\n**Step 8.** Condition (ii): By construction in Step 4, E is commensurable in length with AC. This is satisfied.\n\n**Step 9.** Condition (iii): We verify that AB is not a first, second, or third binomial. For a first binomial (D10.2.1), the square on the greater must exceed the square on the lesser by the square on a line commensurable with the greater, and the greater must be commensurable in length with the rational line. Here condition (ii) is met but condition on the excess is not (it is incommensurable, not commensurable), so AB is not a first binomial. For a second binomial (D10.2.2), the lesser term must be commensurable in length with AC, and the excess must be commensurable; the excess condition fails. For a third binomial (D10.2.3), neither term is commensurable in length with AC, and the excess is commensurable; both conditions fail. Since in all three cases the commensurability of the excess is required but does not hold here, AB is none of these types.\n\n**Step 10.** By Definition D10.2.4, since the square on the greater term E is greater than the square on the lesser term F by the square on a straight line incommensurable in length with E, and the greater term E is commensurable in length with the rational straight line AC, the binomial straight line AB = E + F is a fourth binomial straight line.\n\n**Step 11.** Therefore, we have found a fourth binomial straight line, which is what was required.\n\n**USED:** 10.30, 10.36, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4\n**Human refs (from References field):** 10.6, 10.9, 5.19\n**Jaccard:** 0.000 — AI adds ['10.30', '10.36', 'D10.1.3', 'D10.2.1', 'D10.2.2', 'D10.2.3', 'D10.2.4']; Human adds ['10.6', '10.9', '5.19']",
+  "ai_used": [
+    "10.30",
+    "10.36",
+    "D10.1.3",
+    "D10.2.1",
+    "D10.2.2",
+    "D10.2.3",
+    "D10.2.4"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.9",
+    "5.19"
+  ],
+  "ai_only": [
+    "10.30",
+    "10.36",
+    "D10.1.3",
+    "D10.2.1",
+    "D10.2.2",
+    "D10.2.3",
+    "D10.2.4"
+  ],
+  "heath_only": [
+    "10.6",
+    "10.9",
+    "5.19"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let AC be a rational straight line set out. By Proposition 10.30, we can find two rational straight lines commensurable in square only such that the square on the greater is greater than t"
+}

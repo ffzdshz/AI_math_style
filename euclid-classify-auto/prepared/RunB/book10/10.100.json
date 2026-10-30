@@ -1,0 +1,53 @@
+{
+  "proposition": "10.100",
+  "book": 10,
+  "statement": "The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.",
+  "heath_proof": "Let AB be a minor and CD a rational straight line, and to the rational straight line CD let CE be applied equal to the square on AB and producing CF as breadth; I say that CF is a fourth apotome. For let BG be the annex to AB; therefore AG, GB are straight lines incommensurable in square which make the sum of the squares on AG, GB rational, but twice the rectangle AG, GB medial. [X. 76] To CD let there be applied CH equal to the square on AG and producing CK as breadth, and KL equal to the square on BG, producing KM as breadth; therefore the whole CL is equal to the squares on AG, GB. And the sum of the squares on AG, GB is rational; therefore CL is also rational. And it is applied to the rational straight line CD, producing CM as breadth; therefore CM is also rational and commensurable in length with CD. [X. 20] And, since the whole CL is equal to the squares on AG, GB, and, in these, CE is equal to the square on AB, therefore the remainder FL is equal to twice the rectangle AG, GB. [II. 7] Let then FM be bisected at the point N, and let NO be drawn through N parallel to either of the straight lines CD, ML; therefore each of the rectangles FO, NL is equal to the rectangle AG, GB. And, since twice the rectangle AG, GB is medial and is equal to FL, therefore FL is also medial. And it is applied to the rational straight line FE, producing FM as breadth; therefore FM is rational and incommensurable in length with CD. [X. 22] And, since the sum of the squares on AG, GB is rational, while twice the rectangle AG, GB is medial, the squares on AG, GB are incommensurable with twice the rectangle AG, GB. But CL is equal to the squares on AG, GB, and FL equal to twice the rectangle AG, GB; therefore CL is incommensurable with FL. But, as CL is to FL, so is CM to MF; [VI. 1] therefore CM is incommensurable in length with MF. [X. 11] And both are rational; therefore CM, MF are rational straight lines commensurable in square only; therefore CF is an apotome. [X. 73] I say that it is also a fourth apotome. For, since AG, GB are incommensurable in square, therefore the square on AG is also incommensurable with the square on GB. And CH is equal to the square on AG, and KL equal to the square on GB; therefore CH is incommensurable with KL. But, as CH is to KL, so is CK to KM; [VI. 1] therefore CK is incommensurable in length with KM. [X. 11] And, since the rectangle AG, GB is a mean proportional between the squares on AG, GB, and the square on AG is equal to CH, the square on GB to KL, and the rectangle AG, GB to NL, therefore NL is a mean proportional between CH, KL; therefore, as CH is to NL, so is NL to KL. But, as CH is to NL, so is CK to NM, and, as NL is to KL, so is NM to KM; [VI. 1] therefore, as CK is to MN, so is MN to KM; [V. 11] therefore the rectangle CK, KM is equal to the square on MN [VI. 17], that is, to the fourth part of the square on FM. Since then CM, MF are two unequal straight lines, and the rectangle CK, KM equal to the fourth part of the square on MF and deficient by a square figure has been applied to CM and divides it into incommensurable parts, therefore the square on CM is greater than the square on MF by the square on a straight line incommensurable with CM. [X. 18] And the whole CM is commensurable in length with the rational straight line CD set out; therefore CF is a fourth apotome. [X. Deff. III. 4]",
+  "ai_proof_text": "10.100\n**Statement:** The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.\n\n**Step 1.** Let AB be a minor straight line and let CD be a rational straight line. Apply the square on AB to CD, producing rectangle CE with breadth EF, so that CD times EF equals the square on AB. We must show that EF is a fourth apotome.\n\n**Step 2.** Since AB is minor, by 10.76 there exist straight lines AG and GB such that AB = AG - GB, where AG and GB are incommensurable in square, the sum of the squares on AG and GB is rational, and the rectangle contained by AG and GB is medial.\n\n**Step 3.** Since AB = AG - GB, by 2.7 the square on AB equals the sum of the squares on AG and GB minus twice the rectangle contained by AG and GB.\n\n**Step 4.** Apply the sum of the squares on AG and GB to the rational straight line CD, producing breadth CF. Apply twice the rectangle AG by GB to CD, producing breadth FE. Then since sq(AB) = (sq(AG) + sq(GB)) - 2*rect(AG,GB), we have CD times EF = CD times CF - CD times FE, so EF = CF - FE and CE is the remaining rectangle.\n\n**Step 5.** Since the sum of the squares on AG and GB is rational [Step 2] and CD is rational, and since a rational area applied to a rational straight line produces as breadth a straight line rational and commensurable in length with the line to which it is applied [by 10.20], CF is rational and commensurable in length with CD.\n\n**Step 6.** Since the rectangle AG by GB is medial [Step 2], twice the rectangle AG by GB is also medial. For the rectangle AG by GB is medial, and the ratio 2:1 is a ratio of number to number, so twice the rectangle is commensurable with the rectangle AG by GB [by 10.6]; and since the rectangle AG by GB is medial, any area commensurable with it is also medial [by the area analog of 10.23].\n\n**Step 7.** Since 2*rect(AG,GB) is medial and CD is rational, by 10.22 the breadth FE is rational and incommensurable in length with CD.\n\n**Step 8.** Since CF is commensurable in length with CD [Step 5] and FE is incommensurable in length with CD [Step 7], CF is incommensurable in length with FE [by 10.13].\n\n**Step 9.** Since CF and FE are each rational [Steps 5, 7] and commensurable in square only [Step 8], the straight line EF = CF - FE is an apotome [by 10.73].\n\n**Step 10.** We now show EF is a fourth apotome by verifying the conditions of D10.3.4. We must establish: (i) CF is commensurable in length with the rational straight line CD, and (ii) the square on CF is greater than the square on FE by the square on a straight line incommensurable in length with CF.\n\n**Step 11.** Condition (i) holds by Step 5: CF is commensurable in length with CD.\n\n**Step 12.** For condition (ii), apply the individual squares on AG and GB to CD. Let CK be the breadth such that CD times CK equals the square on AG, and let KF be the breadth such that CD times KF equals the square on GB. Then CF = CK + KF.\n\n**Step 13.** Since AG and GB are incommensurable in square [Step 2], sq(AG) is incommensurable with sq(GB) [by D10.1.2]. Since CD times CK = sq(AG) and CD times KF = sq(GB), we have CK : KF = sq(AG) : sq(GB) [by 6.1]. Since sq(AG) and sq(GB) are incommensurable, CK and KF are incommensurable in length [by 10.11].\n\n**Step 14.** We establish that sq(FE) = 4 times rect(CK, KF). We have CD times FE = 2*rect(AG,GB), so sq(CD) times sq(FE) = 4*sq(rect(AG,GB)) = 4*sq(AG)*sq(GB). Also sq(CD) times rect(CK,KF) = (CD times CK) times (CD times KF) / sq(CD) -- more precisely, (CD times CK)(CD times KF) = sq(CD) times rect(CK,KF), and this equals sq(AG)*sq(GB). Therefore sq(CD)*rect(CK,KF) = sq(AG)*sq(GB), and sq(CD)*sq(FE) = 4*sq(AG)*sq(GB) = 4*sq(CD)*rect(CK,KF). Dividing by sq(CD), we get sq(FE) = 4*rect(CK,KF).\n\n**Step 15.** By 2.5, the rectangle CK by KF together with the square on the half-difference ((CK - KF)/2) equals the square on the half-sum ((CK + KF)/2) = sq(CF/2). Therefore sq(CF/2) - rect(CK,KF) = sq((CK-KF)/2). Multiplying by 4: sq(CF) - 4*rect(CK,KF) = sq(CK - KF). Since sq(FE) = 4*rect(CK,KF) [Step 14], we have sq(CF) - sq(FE) = sq(CK - KF).\n\n**Step 16.** We now show that CK - KF is incommensurable in length with CF = CK + KF. Suppose for contradiction that CK + KF is commensurable with CK - KF. Then since 2*CK = (CK + KF) + (CK - KF), by 10.15 the sum of two commensurable magnitudes (CK + KF) and (CK - KF) would be commensurable with each, so 2*CK would be commensurable with CK + KF and hence with CK - KF. Similarly 2*KF = (CK + KF) - (CK - KF) would be commensurable with CK + KF [by 10.15]. Then 2*CK and 2*KF would both be commensurable with CK + KF, hence commensurable with each other [by 10.12]. Since 2*CK is commensurable with CK and 2*KF is commensurable with KF [by 10.6 and 10.15], CK would be commensurable with KF, contradicting Step 13. Therefore CK - KF is incommensurable in length with CF.\n\n**Step 17.** From Steps 15 and 16, sq(CF) exceeds sq(FE) by sq(CK - KF), and CK - KF is incommensurable in length with CF. This establishes condition (ii).\n\n**Step 18.** Since EF = CF - FE is an apotome [Step 9], CF is commensurable in length with the rational straight line CD [Step 11, condition (i)], and sq(CF) exceeds sq(FE) by the square on a straight line incommensurable in length with CF [Step 17, condition (ii)], EF is a fourth apotome by D10.3.4.\n\n**Step 19.** Therefore the square on the minor straight line AB, applied to the rational straight line CD, produces as breadth a fourth apotome. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.15, 10.20, 10.22, 10.23, 10.6, 10.73, 10.76, 2.5, 2.7, 6.1, D10.1.2, D10.3.4\n**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.76, 2.7, 5.11, 6.1, 6.17, D10.3.4\n**Jaccard:** 0.444 — AI adds ['10.12', '10.13', '10.15', '10.23', '10.6', '2.5', 'D10.1.2']; Human adds ['10.18', '5.11', '6.17']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.22",
+    "10.23",
+    "10.6",
+    "10.73",
+    "10.76",
+    "2.5",
+    "2.7",
+    "6.1",
+    "D10.1.2",
+    "D10.3.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.18",
+    "10.20",
+    "10.22",
+    "10.73",
+    "10.76",
+    "2.7",
+    "5.11",
+    "6.1",
+    "6.17",
+    "D10.3.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.23",
+    "10.6",
+    "2.5",
+    "D10.1.2"
+  ],
+  "heath_only": [
+    "10.18",
+    "5.11",
+    "6.17"
+  ],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let AB be a minor straight line and let CD be a rational straight line. Apply the square on AB to CD, producing rectangle CE with breadth EF, so that CD times EF equals the square on AB. W"
+}

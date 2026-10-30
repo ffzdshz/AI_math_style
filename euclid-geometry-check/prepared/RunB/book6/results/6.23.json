@@ -1,0 +1,51 @@
+{
+  "proposition": "6.23",
+  "run": "RunB",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD and CEFG are equiangular parallelograms sharing common vertex C with angle BCD = angle ECG",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BC and CG are placed in a straight line (B-C-G collinear)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "DC and CE are placed in a straight line (D-C-E collinear)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Parallelogram DCKH constructed with sides along DC and CG, with C and K on line BCG and D and H off that line",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "ABCD and DCKH share the same height (perpendicular distance between line BCG and the parallel through A-D-H)",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 4",
+      "claim": "BC and CG are bases of ABCD and DCKH respectively on the same line BCG",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DCKH and CEFG share the same height (perpendicular distance between line DCE and the parallel through H-K and G-F)",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DC and CE are bases of DCKH and CEFG respectively on the same line DCE",
+      "type": "collinearity"
+    }
+  ],
+  "configuration_map": "Configuration: Two lines intersect at point C. Line BCG has B and G on opposite sides of C. Line DCE has D and E on opposite sides of C. The angle between ray CB and ray CD equals the angle between ray CE and ray CG (both equal to the interior angles of the respective parallelograms). Parallelogram ABCD has base BC on line BCG with vertices A and D at perpendicular distance h1 from BCG (where D is on line DCE). Parallelogram CEFG has side CG on line BCG and side CE on line DCE, with vertices G on BCG and E on DCE, and F offset. Parallelogram DCKH is the bridge: DC lies on line DCE, CK lies on line BCG (with K at or near G), and D,H are at distance h1 from BCG. The height from DCE to HK equals the height from DCE to GF (both equal CG times sin of the angle between the two lines).",
+  "pass_reason": "All spatial claims are mutually consistent. The collinearity of BCG and DCE follows correctly from the equal angle condition. The shared height claims in Steps 4 and 5 are verified: ABCD and DCKH share height because vertex D is common and both have bases on line BCG; DCKH and CEFG share height because both have bases on line DCE and their opposite sides are at equal perpendicular distance (determined by CG times the sine of the angle between the two lines). No angle decompositions or interior/exterior point claims are made. The proof is essentially the standard construction for VI.23 with slightly different notation."
+}

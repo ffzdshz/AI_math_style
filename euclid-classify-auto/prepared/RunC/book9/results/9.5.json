@@ -1,0 +1,13 @@
+{
+  "proposition": "9.5",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: establish that A-squared is cube, use 7.17 to get the ratio A-squared:C = A:B, and then conclude B is cube from the fact that A is cube and the ratio A:B equals a cube-to-cube ratio. The AI operates at a higher level of abstraction throughout: it cites 9.4 (product of two cubes is cube) where Heath cites the lower-level 9.3 (cube times itself is cube), and the AI cites 8.25 (mislabeled as 8.24) directly where Heath re-derives 8.25's internals using 8.19, 8.8, and 8.23. The proof-tree containment test confirms that all heath_only items (8.19, 8.8, 8.23) appear inside Heath's proof of 8.25, and 9.3 appears inside the proof of 9.4. The AI's miscitation of 8.24 (about squares) instead of 8.25 (about cubes) was considered as a potential E under the invalid inference mode, but the AI's text correctly describes the cube-number reasoning matching 8.25, making this a citation label error rather than a logical gap; under the lenience rule the verdict defaults to NOT-E. D7.19 in ai_only is a definition (over-citation). All divergences reduce to citation-depth differences.",
+  "jaccard": 0.125,
+  "ai_citations": "7.17|8.24|9.4|D7.19",
+  "heath_citations": "7.17|8.19|8.23|8.8|9.3",
+  "ai_only": "8.24|9.4|D7.19",
+  "heath_only": "8.19|8.23|8.8|9.3",
+  "audit_record": "CANDIDATE E — 9.5\n  violated_claim : \"by Proposition 8.24 the second number B is also cube\"\n  failure_mode   : invalid_inference\n  missing_is     : expansion — the AI correctly describes the reasoning of 8.25 (cube-to-cube ratio, first cube implies second cube) but mislabels it as 8.24 (which is about squares); the logical support for the conclusion exists in the text, only the citation number is wrong\n  evidence       : AI Step 5: \"Since two numbers A and B have to one another the ratio which a cube number has to a cube number, and the first of them A is cube, therefore by Proposition 8.24 the second number B is also cube [8.24]\" — 8.24 is about square numbers, not cube numbers; the correct proposition is 8.25\n  why_not_terse  : CANNOT COMPLETE — this is not a genuine logical gap but a citation labeling error; the described reasoning is sound and matches 8.25. Under the lenience rule, verdict defaults to NOT-E."
+}

@@ -1,0 +1,51 @@
+{
+  "proposition": "12.6",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two pyramids P1 (base ABCDE, apex F) and P2 (base GHIJK, apex L) have the same height",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Diagonals AC and AD from vertex A partition convex polygon ABCDE into triangles ABC, ACD, ADE",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The triangular decomposition of the base induces a decomposition of P1 into sub-pyramids F-ABC, F-ACD, F-ADE, each with the same height as P1",
+      "type": "pyramid_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Diagonals GI and GJ from vertex G partition convex polygon GHIJK into triangles GHI, GIJ, GJK",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The triangular decomposition of the base induces a decomposition of P2 into sub-pyramids L-GHI, L-GIJ, L-GJK, each with the same height as P2",
+      "type": "pyramid_decomposition"
+    },
+    {
+      "step": "Steps 4-5, 7",
+      "claim": "Each pair of triangular-base sub-pyramids (one from P1, one from P2) shares the same height, enabling 12.5",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Sub-pyramids F-ABC, F-ACD, F-ADE sum to P1; triangles ABC, ACD, ADE sum to polygon ABCDE",
+      "type": "partition_completeness"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Sub-pyramids L-GHI, L-GIJ, L-GJK sum to P2; triangles GHI, GIJ, GJK sum to polygon GHIJK",
+      "type": "partition_completeness"
+    }
+  ],
+  "configuration_map": "Pyramid P1: Convex pentagon ABCDE as base with apex F above the base plane. Diagonals AC and AD from vertex A decompose the base into three non-overlapping triangles (ABC, ACD, ADE) that tile the pentagon. This induces three sub-pyramids (F-ABC, F-ACD, F-ADE) all sharing apex F, with bases coplanar in the base plane, so all have the same height. Pyramid P2: Convex pentagon GHIJK as base with apex L above its base plane. Diagonals GI and GJ from vertex G decompose the base into three non-overlapping triangles (GHI, GIJ, GJK). This induces three sub-pyramids (L-GHI, L-GIJ, L-GJK) all sharing apex L with equal heights. Both pyramids share the same height, so all six sub-pyramids have equal height, making every application of 12.5 valid.",
+  "pass_reason": "All spatial claims are mutually consistent. The polygon decomposition into triangles via diagonals from one vertex is standard and valid for convex polygons. The induced pyramid decompositions correctly preserve height (all sub-pyramids share the original apex and have coplanar bases). The equal-height condition required by 12.5 is maintained throughout. The remainder of the proof is purely ratio manipulation using Book 5 propositions (5.24, 5.22, 5.7), which involve no spatial configuration. No angle decompositions, no interior/exterior claims, and no between-ness arguments that could introduce contradictions."
+}

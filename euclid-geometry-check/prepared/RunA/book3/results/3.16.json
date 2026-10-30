@@ -1,0 +1,96 @@
+{
+  "proposition": "3.16",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Circle with centre F, diameter AB. AE drawn perpendicular to AB at A.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Point G on ray AE lies inside or on the circle (hypothetical for contradiction)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "FG <= FA since G is on or inside circle; angle FAG = 90 degrees (right angle at A)",
+      "type": "distance_and_angle"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle FAG has right angle at A",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle at A is the greatest angle in triangle FAG, so FG (opposite it) > FA by I.19",
+      "type": "angle_comparison"
+    },
+    {
+      "step": "Step 5",
+      "claim": "FG > FA contradicts FG <= FA; AE falls outside circle",
+      "type": "contradiction_resolution"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Line AH placed between AE and circumference, entirely outside circle (hypothetical)",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "K is foot of perpendicular from F to line AH; FK perpendicular to AH",
+      "type": "construction"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Angle FKA = 90 degrees; angle FAH (= FAK) is acute because AH lies between AE and circumference",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Angle FAH = angle FAE - angle EAH, with ray AH between rays AB and AE",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "In right triangle FAK, FA (opposite right angle at K) > FK by I.19",
+      "type": "side_comparison"
+    },
+    {
+      "step": "Step 11",
+      "claim": "Perpendicular distance FK from centre to line AH is less than radius FA, so AH cuts the circle",
+      "type": "circle_intersection"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Line AC (making acute angle BAC with AB) falls between rays AB and AE",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 15",
+      "claim": "AC must enter interior of circle since only AE and lines beyond it stay outside",
+      "type": "inside_outside"
+    },
+    {
+      "step": "Step 16",
+      "claim": "AC cuts circumference at point D; arc of semicircle bulges beyond AC between AC and AB",
+      "type": "circle_intersection"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Mixed angle (diameter BA, arc) is greater than rectilineal angle BAC",
+      "type": "angle_comparison"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Circumference passes between AE and any line AC; horn angle less than any acute rectilineal angle",
+      "type": "angle_comparison"
+    }
+  ],
+  "configuration_map": "Configuration: Circle with centre F on diameter AB. A and B are on the circumference. AE is perpendicular to AB at A (tangent line), making angle FAE = 90 degrees. The semicircular arc from A curves through the region between rays AB and AE, bulging outward from the diameter. Key auxiliary points: G (hypothetical, on ray AE, supposed inside/on circle -- leads to right triangle FAG with FG as hypotenuse > FA, contradicting G inside circle). K (foot of perpendicular from F to hypothetical interposed line AH -- creates right triangle FAK with FA as hypotenuse > FK, showing perpendicular distance from centre to AH is less than radius, so AH cuts circle). D (intersection of arbitrary line AC with circumference, where AC makes acute angle BAC with AB). All points maintain consistent positions throughout: F stays at centre on AB, the tangent AE stays perpendicular to AB at A, and the circumference consistently occupies the region between AB and AE near A.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof has three main parts, each using proof by contradiction with valid spatial reasoning: (1) A point G on AE inside the circle creates a right triangle FAG where the hypotenuse FG must exceed FA, contradicting G being inside the circle -- geometrically sound since the right angle at A makes FG the hypotenuse. (2) An interposed line AH creates a right triangle FAK (K = foot of perpendicular from F to AH) where FA > FK, meaning the perpendicular distance from centre to AH is less than the radius, so AH must cut the circle -- the angle decomposition angle FAH = angle FAE - angle EAH is valid since ray AH lies between rays AB and AE. (3) Any line AC making an acute angle with AB enters the circle (by the tangent property from Part 1), so the arc extends beyond AC, establishing the angle comparison. No angle decomposition errors, no inside/outside contradictions, no betweenness inconsistencies."
+}

@@ -1,0 +1,66 @@
+{
+  "proposition": "12.7",
+  "run": "RunC",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Prism with triangular base ABC and opposite triangular face DEF, with correspondences A-D, B-E, C-F",
+      "type": "solid_geometry_structure"
+    },
+    {
+      "step": "Step 1",
+      "claim": "ABED, BEFC, and ADFC are parallelogram lateral faces of the prism",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Planes through ACE and ACD divide the prism into three tetrahedra: T1=ABCE, T2=ACDE, T3=ACEF",
+      "type": "solid_partition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "ABED is a parallelogram and diagonal AE divides it into equal triangles ABE and ADE",
+      "type": "parallelogram_diagonal"
+    },
+    {
+      "step": "Step 3",
+      "claim": "T1 re-viewed as pyramid with base ABE and apex C; T2 re-viewed as pyramid with base ADE and apex C",
+      "type": "tetrahedron_base_choice"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Both bases ABE and ADE lie in the plane of parallelogram ABED",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "C lies outside the plane of ABED, providing the common height for both pyramids",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "ADFC is a parallelogram and diagonal AC divides it into equal triangles ACD and ACF",
+      "type": "parallelogram_diagonal"
+    },
+    {
+      "step": "Step 4",
+      "claim": "T2 re-viewed as pyramid with base ACD and apex E; T3 re-viewed as pyramid with base ACF and apex E",
+      "type": "tetrahedron_base_choice"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Both bases ACD and ACF lie in the plane of parallelogram ADFC",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E lies outside the plane of ADFC, providing the common height for both pyramids",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Prism ABCDEF: base triangle ABC (bottom plane), opposite triangle DEF (top plane), with lateral edges AD, BE, CF all parallel. Lateral faces are parallelograms ABED, BEFC, ADFC. The prism is partitioned by cutting planes ACE and ACD into three tetrahedra: T1=ABCE (on the B-side of plane ACE), T2=ACDE (between planes ACE and the lateral face ADFC, containing D), T3=ACEF (on the F-side, between plane ACE and lateral face ADFC). Point C is outside plane ABED throughout (required for Step 3 height argument). Point E is outside plane ADFC throughout (required for Step 4 height argument). Both positions are guaranteed by the non-degeneracy of the base triangle.",
+  "pass_reason": "All spatial claims are mutually consistent. The three tetrahedra correctly partition the prism (verified by volume summation and disjointness of interiors). Each equality argument (T1=T2 in Step 3, T2=T3 in Step 4) validly applies I.34 to a parallelogram diagonal to get equal bases, and XII.5 to pyramids sharing a common apex with equal bases in the same plane. The re-viewing of each tetrahedron with a different face as its base is geometrically legitimate. No contradictory point positions, no invalid angle decompositions, and no inconsistent plane membership claims were found."
+}

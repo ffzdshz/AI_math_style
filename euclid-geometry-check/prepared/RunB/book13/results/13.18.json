@@ -1,0 +1,26 @@
+{
+  "proposition": "13.18",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is the diameter of the given sphere, set out as a rational straight line",
+      "type": "line_segment"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C is on segment AB with AC = 2CB, placing C at 2/3 of AB from A",
+      "type": "point_on_segment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D is the midpoint of AB, placing D at 1/2 of AB from A",
+      "type": "point_on_segment"
+    }
+  ],
+  "configuration_map": "AB is a line segment (diameter of the sphere). Two points are placed on AB: D at the midpoint (1/2 from A) and C at the 2:1 division point (2/3 from A). Order along AB from A is: A --- D (1/2) --- C (2/3) --- B. All other reasoning in the proof is purely algebraic, citing ratio results from Propositions 13.13-13.17 and performing arithmetic on squared side lengths. No triangles, circles, angles, or spatial figures are constructed in the proof itself.",
+  "pass_reason": "The proof is predominantly algebraic/proportional. Its only spatial claims are trivial collinear point placements on the diameter AB (C at 2/3 from A, D at midpoint), which are mutually consistent. No angle decompositions, no interior/exterior claims, no ray orderings, and no complex spatial configurations appear. All substantive work is ratio arithmetic using results from 13.13-13.17."
+}

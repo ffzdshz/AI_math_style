@@ -1,0 +1,34 @@
+{
+  "proposition": "8.6",
+  "book": 8,
+  "statement": "If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, E, in continued proportion, and let A not measure B; I say that neither will any other measure any other. Now it is manifest that A, B, C, D, E do not measure one another in order; for A does not even measure B. I say, then, that neither will any other measure any other. For, if possible, let A measure C. And, however many A, B, C are, let as many numbers F, G, H, the least of those which have the same ratio with A, B, C, be taken. [VII. 33] Now, since F, G, H are in the same ratio with A, B, C, and the multitude of the numbers A, B, C is equal to the multitude of the numbers F, G, H, therefore, ex aequali, as A is to C, so is F to H. [VII. 14] And since, as A is to B, so is F to G, while A does not measure B, therefore neither does F measure G; [VII. Def. 20] therefore F is not an unit, for the unit measures any number. Now F, H are prime to one another. [VIII. 3] And, as F is to H, so is A to C; therefore neither does A measure C. Similarly we can prove that neither will any other measure any other.",
+  "ai_proof_text": "8.6\n**Statement:** If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.\n\n**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An, with A1 less than A2, and let A1 not measure A2. We must show that neither does any of them measure any other.\n\n**Step 2.** By 7.33, let p and q be the least numbers in the same ratio as A1:A2. By 7.22, p and q are prime to one another. Since A1 < A2, we have p < q.\n\n**Step 3.** By 7.20, since p and q are the least in the ratio A1:A2, there exists a number m such that A1 = m*p and A2 = m*q.\n\n**Step 4.** If p were equal to 1, then A2 = m*q = q*A1, so A1 would measure A2, contradicting the hypothesis. Therefore p > 1. Since p < q, it follows that q > 1 as well.\n\n**Step 5.** Since the ratio p:q has p < q, the continued proportion is increasing: A1 < A2 < A3 < ... < An. By D7.3, measurement is of the less into the greater, so the only way any term can measure another is if an earlier (lesser) term measures a later (greater) one. We must show this cannot happen.\n\n**Step 6.** (Consecutive terms) Suppose for contradiction that for some k, A_k measures A(k+1). Then A(k+1) = t*A_k for some positive integer t, so by D7.20 the ratio A_k:A(k+1) equals 1:t. Since A_k:A(k+1) = p:q from the continued proportion, and p, q are the least in this ratio (by 7.21, since they are prime to one another), by 7.20 p must measure 1. Hence p = 1, contradicting Step 4. Therefore no consecutive term measures the next.\n\n**Step 7.** (Non-consecutive terms) Now let i < j with j - i >= 2. The numbers A_i, A(i+1), ..., A_j form a continued proportion of (j - i + 1) terms in ratio p:q. By 8.2, let L1, L2, ..., L(j-i+1) be the least numbers in continued proportion of (j - i + 1) terms in this same ratio.\n\n**Step 8.** By 8.3, the extremes L1 and L(j-i+1) are prime to one another. Therefore by 7.21, L1 and L(j-i+1) are the least numbers in the ratio L1:L(j-i+1).\n\n**Step 9.** The sequences A_i, A(i+1), ..., A_j and L1, L2, ..., L(j-i+1) have the same multitude, and each consecutive pair is in the same ratio p:q. By 7.14 (ex aequali), A_i:A_j = L1:L(j-i+1).\n\n**Step 10.** Since L1 and L(j-i+1) are the least in their ratio (Step 8) and A_i:A_j is the same ratio (Step 9), by 7.20 there exists a number m' such that A_i = m'*L1 and A_j = m'*L(j-i+1).\n\n**Step 11.** Suppose for contradiction that A_i measures A_j. Then A_j = s*A_i for some positive integer s. Substituting from Step 10: m'*L(j-i+1) = s*m'*L1, whence L(j-i+1) = s*L1, so L1 measures L(j-i+1). Since L1 and L(j-i+1) are prime to one another (Step 8), L1 = 1.\n\n**Step 12.** But L1, L2, ..., L(j-i+1) is a continued proportion in ratio p:q, so L1:L2 = p:q, that is, 1:L2 = p:q. Since p and q are the least in ratio p:q (Step 2, by 7.21), by 7.20 p measures 1, giving p = 1. This contradicts Step 4.\n\n**Step 13.** Therefore A_i does not measure A_j. Since i and j were arbitrary with i < j, no term of the continued proportion measures any other. Q.E.D.\n\n**USED:** 7.14, 7.20, 7.21, 7.22, 7.33, 8.2, 8.3, D7.20, D7.3\n**Human refs (from References field):** 7.14, 7.33, 8.3, D7.20\n**Jaccard:** 0.444 — AI adds ['7.20', '7.21', '7.22', '8.2', 'D7.3']",
+  "ai_used": [
+    "7.14",
+    "7.20",
+    "7.21",
+    "7.22",
+    "7.33",
+    "8.2",
+    "8.3",
+    "D7.20",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.33",
+    "8.3",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.20",
+    "7.21",
+    "7.22",
+    "8.2",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An, with A1 less than A2, and let A1 not measure A2. We must show that"
+}

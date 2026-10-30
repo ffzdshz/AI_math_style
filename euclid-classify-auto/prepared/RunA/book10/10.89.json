@@ -1,0 +1,35 @@
+{
+  "proposition": "10.89",
+  "book": 10,
+  "statement": "To find the fifth apotome.",
+  "heath_proof": "Let a rational straight line A be set out, and let CG be commensurable in length with A; therefore CG is rational. Let two numbers DF, FE be set out such that DE again has not to either of the numbers DF, FE the ratio which a square number has to a square number; and let it be contrived that, as FE is to ED, so is the square on CG to the square on GB. Therefore the square on GB is also rational; [X. 6] therefore BG is also rational. Now since, as DE is to EF, so is the square on BG to the square on GC, while DE has not to EF the ratio which a square number has to a square number, therefore neither has the square on BG to the square on GC the ratio which a square number has to a square number; therefore BG is incommensurable in length with GC. [X. 9] And both are rational; therefore BG, GC are rational straight lines commensurable in square only; therefore BC is an apotome. [X. 73] I say next that it is also a fifth apotome. For let the square on H be that by which the square on BG is greater than the square on GC. Since then, as the square on BG is to the square on GC, so is DE to EF, therefore, convertendo, as ED is to DF, so is the square on BG to the square on H. [V. 19] But ED has not to DF the ratio which a square number has to a square number; therefore neither has the square on BG to the square on H the ratio which a square number has to a square number; therefore BG is incommensurable in length with H. [X. 9] And the square on BG is greater than the square on GC by the square on H; therefore the square on GB is greater than the square on GC by the square on a straight line incommensurable in length with GB. And the annex CG is commensurable in length with the rational straight line A set out; therefore BC is a fifth apotome. [X. Deff. III. 5] Therefore the fifth apotome BC has been found.",
+  "ai_proof_text": "10.89\n**Statement:** To find the fifth apotome.\n\n**Step 1.** Let A be a rational straight line set out, and let BG be a straight line commensurable in length with A; thus BG is rational [D10.1.3].\n\n**Step 2.** Let two numbers DF and FE (treating these as numerical labels mn and np) be found such that neither has to the other the ratio of a square number to a square number. More precisely, let m and n be numbers such that m has not to n the ratio of a square number to a square number, and let p be a number such that m has not to p the ratio of a square number to a square number either, while n has not to p the ratio of a square number to a square number.\n\n**Step 3.** As m is to n, so let the square on BG be to the square on GC, where GC is some straight line. Since the square on BG has to the square on GC the ratio which m has to n, the square on BG is commensurable with the square on GC [10.6]. Therefore the square on GC is rational, and GC is rational [D10.1.4].\n\n**Step 4.** Since m has not to n the ratio of a square number to a square number, the square on BG has not to the square on GC the ratio of a square number to a square number. Therefore BG is incommensurable in length with GC [10.9]. Yet both are rational, so BG and GC are rational straight lines commensurable in square only; therefore BC, the remainder when we consider GC > BG or the difference appropriately, is an apotome [10.73].\n\n**Step 5.** Now since the square on BG is to the square on GC as m is to n, by conversion of the ratio (componendo/dividendo reasoning on the squares), the square on GC exceeds the square on BG by some area. Let the square on GC be greater than the square on BG by the square on a straight line H. Then since sq(GC) : sq(BG) = m : n, we have sq(GC) - sq(BG) : sq(BG) = (m - n) : n.\n\n**Step 6.** Now let it be arranged that as m is to p, so is the square on GC to the square on some line K. Since m has not to p the ratio of a square number to a square number, GC is incommensurable in length with K [10.9]. Let the square on GC exceed the square on BG by the square on H. We need to verify that H is incommensurable with GC. Since sq(GC) : sq(BG) = m : n, and sq(GC) : sq(K) = m : p, by 10.18 (taking the greater line GC, applying a parallelogram equal to the fourth of the square on BG, deficient by a square, and since it divides into parts that are incommensurable), the square on GC is greater than the square on BG by the square on a straight line incommensurable in length with GC.\n\n**Step 7.** I say that GC - BG (that is, the apotome with whole GC and annex BG) is a fifth apotome. We verify the conditions from the definition [D10.3.5]:\n(a) GC and BG are rational and commensurable in square only, so their difference is an apotome [10.73].\n(b) The square on the whole GC is greater than the square on the annex BG by the square on a straight line incommensurable in length with the whole GC [Step 6].\n(c) The annex BG is commensurable in length with the rational straight line A set out [Step 1].\n\n**Step 8.** Since BG is commensurable in length with A but GC is incommensurable in length with BG [Step 4], then GC is incommensurable in length with A [10.13]. So the whole GC is not commensurable in length with A, while the annex BG is commensurable in length with A.\n\n**Step 9.** Therefore, by the definition of the fifth apotome [D10.3.5], the line GC - BG (i.e., the apotome formed by subtracting BG from GC) is a fifth apotome. Thus the fifth apotome has been found. Q.E.F.\n\n**USED:** 10.13, 10.18, 10.6, 10.73, 10.9, D10.1.3, D10.1.4, D10.3.5\n**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.5\n**Jaccard:** 0.444 — AI adds ['10.13', '10.18', 'D10.1.3', 'D10.1.4']; Human adds ['5.19']",
+  "ai_used": [
+    "10.13",
+    "10.18",
+    "10.6",
+    "10.73",
+    "10.9",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.3.5"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.19",
+    "D10.3.5"
+  ],
+  "ai_only": [
+    "10.13",
+    "10.18",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "5.19"
+  ],
+  "jaccard": 0.444,
+  "proof_summary": "**Step 1.** Let A be a rational straight line set out, and let BG be a straight line commensurable in length with A; thus BG is rational [D10.1.3].  **Step 2.** Let two numbers DF and FE (treating the"
+}

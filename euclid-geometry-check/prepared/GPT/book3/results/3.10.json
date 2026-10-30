@@ -1,0 +1,46 @@
+{
+  "proposition": "3.10",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Circles Gamma and Delta intersect at three distinct points A, B, C (assumption for contradiction). Their centers O and T are distinct.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A, B, C lie on circumference of Delta; T is center of Delta; therefore TA = TB = TC (equal radii).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2 (implicit)",
+      "claim": "A, B, C lie on circumference of Gamma as well, since they are intersection points of the two circles.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Case 1: T lies within or on circumference of Gamma. Line OT produced gives a diameter of Gamma; T lies on this diameter and is not the center O.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "TA, TB, TC are three equal lines from non-center point T on a diameter of Gamma to Gamma's circumference, contradicting 3.7's bound of at most two.",
+      "type": "line_from_point_to_circle"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Case 2: T lies outside Gamma.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "TA, TB, TC are three equal lines from exterior point T to Gamma's circumference, contradicting 3.8's bound of at most two.",
+      "type": "line_from_point_to_circle"
+    }
+  ],
+  "configuration_map": "O is the center of circle Gamma. T is the center of circle Delta, distinct from O. Points A, B, C are on both circles (intersection points) and are distinct from T (T is the center of Delta, hence inside Delta, while A, B, C are on Delta's circumference). The lines TA, TB, TC are equal (all radii of Delta) and each terminates on Gamma's circumference. The proof performs exhaustive case analysis on T's position relative to Gamma: (1) T inside or on Gamma, where T lies on the diameter through O and T, enabling 3.7; (2) T outside Gamma, enabling 3.8. Both cases yield a contradiction with the three equal lines.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly identifies that A, B, C lie on both circles, making TA, TB, TC lines from T to Gamma's circumference. The exhaustive case analysis on T's position (inside/on vs outside Gamma) correctly applies 3.7 and 3.8 respectively, with no conflicting spatial assumptions between steps. The approach differs from Heath's (which uses perpendicular bisectors to show same center) but introduces no geometric configuration errors."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "13.5",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determined the classification. Heath's proof works through areas: it constructs a square on AB, establishes that rectangle AB*BC equals the square on AC (via VI.17), performs area manipulations to show rectangle BD*DA equals the square on AB, then converts back to a proportion via VI.17 and uses V.14 for ordering. The AI proof works entirely within proportions: starting from AB:AC = AC:CB, it applies V.12 (sum of antecedents to sum of consequents) to obtain (AB+AC):(AC+CB) = AB:AC, then substitutes AD = AB+AC and AB = AC+CB to reach AD:AB = AB:BD directly, using CN5 for the ordering. The key intermediate conclusions differ fundamentally -- Heath's backbone pivots on the area equality rect(BD,DA) = sq(AB), while the AI's backbone pivots on the ratio composition (AB+AC):(AC+CB) = AB:AC. Since the backbones are different (Q2 Case B) and the AI's ratio-based chain is logically complete (Q3), the classification is D.",
+  "jaccard": 0.143,
+  "ai_citations": "5.12|CN2|CN5|D5.5|D6.3",
+  "heath_citations": "5.14|6.17|D6.3",
+  "ai_only": "5.12|CN2|CN5|D5.5",
+  "heath_only": "5.14|6.17",
+  "audit_record": ""
+}

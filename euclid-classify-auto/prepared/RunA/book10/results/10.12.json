@@ -1,0 +1,13 @@
+{
+  "proposition": "10.12",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "Q1(b) decides: the AI proof commits an invalid inference when applying 5.22 (ex aequali) in Step 8. The AI establishes A:C :: pm:np and C:B :: nq:np, then claims that 5.22 yields A:B :: pm:nq. However, 5.22 requires matching middle terms -- the second term of the first ratio must equal the first term of the second ratio. Here the second term of A:C is np and the first term of C:B is nq; since p and q are generally distinct, np != nq and 5.22 is inapplicable. Moreover, the claimed result A:B = pm:nq is arithmetically incorrect (the correct ratio would be mq:np). The AI's strategy of using 7.17 to multiply numerators and denominators fails to produce the common middle term that Heath achieves via 8.4. This is not a matter of terseness or compression -- the cited proposition genuinely does not entail the claimed conclusion from the given premises.",
+  "jaccard": 0.5,
+  "ai_citations": "10.5|10.6|5.11|5.22|7.17|D10.1.1|D5.13",
+  "heath_citations": "10.5|10.6|5.11|5.22|8.4",
+  "ai_only": "7.17|D10.1.1|D5.13",
+  "heath_only": "8.4",
+  "audit_record": "CANDIDATE E -- 10.12\n  violated_claim : A:B :: pm:nq (Step 8)\n  failure_mode   : invalid_inference\n  missing_is     : support -- 5.22 does not entail A:B :: pm:nq from A:C :: pm:np and C:B :: nq:np because the middle terms (np vs nq) do not match\n  evidence       : Step 8: 'We now have A:C :: pm:np and C:B :: nq:np... By Proposition 5.22 (ex aequali), A:B :: pm:nq.' Proposition 5.22 requires A:C :: pm:X and C:B :: X:nq with matching middle term X. Here the middle terms are np (from A:C) and nq (from C:B), which are unequal when p != q.\n  why_not_terse  : This is not brevity -- the ratios as stated have non-matching middle terms (np vs nq), making 5.22 structurally inapplicable. The resulting ratio pm:nq is arithmetically incorrect (A/B = (m/n)*(q/p) = mq/np, not pm/nq)."
+}

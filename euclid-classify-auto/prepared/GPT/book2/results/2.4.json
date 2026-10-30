@@ -1,0 +1,13 @@
+{
+  "proposition": "2.4",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath proves 2.4 by geometric construction: building a square ADEB on AB, drawing parallels, and using Book 1 propositions (I.29, I.5, I.6, I.34, I.46, I.31) to identify sub-regions as squares on the segments and rectangles. The AI takes a fundamentally different algebraic path, applying 2.2 to decompose S(AB) into R(AB,AC) + R(AB,CB), then applying 2.3 twice to expand each rectangle into a square plus a rectangle on the segments, yielding S(AC) + S(CB) + 2R(AC,CB). The proof-tree containment test confirms genuine divergence: Heath's proofs of 2.2 and 2.3 cite only I.46 and I.31, so the remaining heath_only items (1.29, 1.34, 1.5, 1.6) are not contained within those proofs. The Jaccard similarity is 0.0 with zero citation overlap, and the key intermediate conclusions differ entirely (geometric sub-region identification vs algebraic decomposition via earlier Book 2 results). Q3 confirms the AI's path is valid: each step correctly applies the cited proposition, and the chain runs soundly from premises to conclusion.",
+  "jaccard": 0.0,
+  "ai_citations": "2.2|2.3|CN1|CN2|D1.22|D2.1",
+  "heath_citations": "1.29|1.31|1.34|1.46|1.5|1.6",
+  "ai_only": "2.2|2.3|CN1|CN2|D1.22|D2.1",
+  "heath_only": "1.29|1.31|1.34|1.46|1.5|1.6",
+  "audit_record": ""
+}

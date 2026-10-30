@@ -1,0 +1,24 @@
+{
+  "proposition": "8.1",
+  "book": 8,
+  "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, in continued proportion, and let the extremes of them A, D be prime to one another; I say that A, B, C, D are the least of those which have the same ratio with them. For, if not, let E, F, G, H be less than A, B, C, D, and in the same ratio with them. Now, since A, B, C, D are in the same ratio with E, F, G, H, and the multitude of the numbers A, B, C, D is equal to the multitude of the numbers E, F, G, H, therefore, ex aequali, as A is to D, so is E to H. [VII. 14]  But A, D are prime, primes are also least, [VII. 21] and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent. [VII. 20] Therefore A measures E, the greater the less: which is impossible. Therefore E, F, G, H which are less than A, B, C, D are not in the same ratio with them. Therefore A, B, C, D are the least of those which have the same ratio with them.",
+  "ai_proof_text": "8.1\n**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.\n\n**Step 1.** Let A, B, C, ..., D be as many numbers as we please in continued proportion, and let the extremes A and D be prime to one another. We must show that A, B, C, ..., D are the least of those which have the same ratio with them.\n\n**Step 2.** Suppose, for the sake of contradiction, that A, B, C, ..., D are not the least numbers in continued proportion having those ratios. Then there exist numbers E, F, G, ..., H, less than A, B, C, ..., D respectively (that is, at least one of them is less than the corresponding term), which are in the same continued proportion as A, B, C, ..., D.\n\n**Step 3.** Since A, B, C, ..., D and E, F, G, ..., H are in the same continued proportion, the ratio of the extremes is the same in both sequences: that is, A is to D as E is to H. This follows because the continued proportion determines each successive ratio, and so the ratio of the first to the last is determined by these successive ratios, which are the same in both sequences (by repeated application of 7.14, which states that if a:b = c:d and b:e = d:f, then a:e = c:f, applied through the chain of equal ratios via 7.13 on the ex aequali composition).\n\n**Step 4.** Since A and D are prime to one another, by Proposition 7.21 (numbers prime to one another are the least of those which have the same ratio with them), A and D are the least numbers in the ratio A:D.\n\n**Step 5.** Since A and D are the least numbers in the ratio A:D, and E:H = A:D, by Proposition 7.20 (the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less), A measures E and D measures H.\n\n**Step 6.** Since A measures E, we have E is a multiple of A, so E is greater than or equal to A. Similarly, since D measures H, H is greater than or equal to D.\n\n**Step 7.** But by our assumption in Step 2, E, F, G, ..., H are supposed to be less than or equal to A, B, C, ..., D with at least one strictly less. Since E is greater than or equal to A and H is greater than or equal to D, we must have E = A and H = D.\n\n**Step 8.** Now since A:B = E:F and E = A, we have A:B = A:F, whence B = F (by 7.20, since in equal ratios the terms are equimultiples of the least, and A = E forces B = F). Similarly, proceeding through each consecutive ratio, each term of the sequence E, F, G, ..., H equals the corresponding term of A, B, C, ..., D.\n\n**Step 9.** This contradicts the assumption that E, F, G, ..., H are less than A, B, C, ..., D (with at least one strictly less). Therefore the supposition in Step 2 is false.\n\n**Step 10.** Therefore A, B, C, ..., D are the least of those numbers which have the same ratio with them. Q.E.D.\n\n**USED:** 7.14, 7.20, 7.21, D7.20\n**Human refs (from References field):** 7.14, 7.20, 7.21\n**Jaccard:** 0.750 — AI adds ['D7.20']",
+  "ai_used": [
+    "7.14",
+    "7.20",
+    "7.21",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.14",
+    "7.20",
+    "7.21"
+  ],
+  "ai_only": [
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.75,
+  "proof_summary": "**Step 1.** Let A, B, C, ..., D be as many numbers as we please in continued proportion, and let the extremes A and D be prime to one another. We must show that A, B, C, ..., D are the least of those "
+}

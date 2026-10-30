@@ -1,0 +1,45 @@
+{
+  "proposition": "10.27",
+  "book": 10,
+  "statement": "To find medial straight lines commensurable in square only which contain a rational rectangle.",
+  "heath_proof": "Let two rational straight lines A, B commensurable in square only be set out; let C be taken a mean proportional between A, B, [VI. 13] and let it be contrived that, as A is to B, so is C to D. [VI. 12]  Then, since A, B are rational and commensurable in square only, the rectangle A, B, that is, the square on C [VI.17], is medial. [X. 21] Therefore C is medial. [X. 21] And since, as A is to B, so is C to D, and A, B are commensurable in square only, therefore C, D are also commensurable in square only. [X. 11] And C is medial; therefore D is also medial. [X. 23, addition] Therefore C, D are medial and commensurable in square only. I say that they also contain a rational rectangle. For since, as A is to B, so is C to D, therefore, alternately, as A is to C, so is B to D. [V. 16] But, as A is to C, so is C to B; therefore also, as C is to B, so is B to D; therefore the rectangle C, D is equal to the square on B. But the square on B is rational; therefore the rectangle C, D is also rational. Therefore medial straight lines commensurable in square only have been found which contain a rational rectangle.",
+  "ai_proof_text": "10.27\n**Statement:** To find medial straight lines commensurable in square only which contain a rational rectangle.\n\n**Step 1.** Let A be a set-out rational straight line (D10.1.3).\n\n**Step 2.** By 10.10, there exists a straight line B commensurable in square only with A. Then B is also rational (D10.1.3), and A, B are incommensurable in length but commensurable in square.\n\n**Step 3.** By 6.13, take C the mean proportional between A and B, so that A:C = C:B.\n\n**Step 4.** By 6.17, since A, C, B are three straight lines in proportion, rect(A, B) = sq(C).\n\n**Step 5.** Since A and B are rational straight lines commensurable in square only, rect(A, B) is irrational and specifically medial, by 10.21. Therefore sq(C) is a medial area, and C is a medial straight line (D10.1.4).\n\n**Step 6.** By 6.11, find E as the third proportional to C and A, so that C:A = A:E.\n\n**Step 7.** Since C:A = A:E, by 6.17 the rectangle contained by the extremes equals the square on the mean: rect(C, E) = sq(A). Since sq(A) is a rational area (D10.1.4), the rectangle rect(C, E) is rational.\n\n**Step 8.** I now show that C and E are incommensurable in length. From C:A = A:E, we obtain C:E = C:A composed with A:E = (C:A) composed with (C:A), that is, C has to E the duplicate ratio of C to A. Now by 6.1, sq(A):rect(A, B) = A:B, and since rect(A, B) = sq(C), we have sq(A):sq(C) = A:B, so C:A is the inverse of this, giving the ratio sq(C):sq(A) = B:A. Since A and B are incommensurable in length (Step 2), the ratio B:A is not a ratio of commensurable magnitudes. Therefore C:E, being the duplicate of an irrational ratio, is itself irrational. Hence C and E are incommensurable in length.\n\n**Step 9.** I now show that C and E are commensurable in square. From C:A = A:E, by 6.22 (similar figures on proportional lines are proportional), sq(C):sq(A) = sq(A):sq(E). So sq(C), sq(A), sq(E) are three magnitudes in continued proportion. By 6.17 applied to this proportion, sq(C) times sq(E) equals sq(A) squared. Therefore sq(E) = sq(A)^2 / sq(C), and the ratio sq(E):sq(C) = sq(A)^2 : sq(C)^2. From Step 8, sq(A):sq(C) = A:B, so sq(A)^2:sq(C)^2 = sq(A):sq(B) (by 6.22, the ratio of squares is the duplicate of the ratio of sides, applied inversely). Now since A and B are both rational, sq(A) and sq(B) are each commensurable with the assigned rational area, and hence commensurable with each other (by 10.12). Thus sq(E):sq(C) = sq(A):sq(B) is a ratio of commensurable magnitudes, so sq(E) and sq(C) are commensurable. Therefore C and E are commensurable in square.\n\n**Step 10.** Since C and E are commensurable in square (Step 9) but incommensurable in length (Step 8), C and E are commensurable in square only.\n\n**Step 11.** Since C is medial (Step 5), and E is commensurable in square with C (Step 9), by 10.23 E is also medial.\n\n**Step 12.** Therefore C and E are medial straight lines, commensurable in square only (Step 10), and they contain a rational rectangle, namely rect(C, E) = sq(A) (Step 7). This is what was required to find.\n\n**USED:** 10.10, 10.12, 10.21, 10.23, 6.1, 6.11, 6.13, 6.17, 6.22, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.17\n**Jaccard:** 0.286 — AI adds ['10.10', '10.12', '6.1', '6.11', '6.22', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '5.16', '6.12']",
+  "ai_used": [
+    "10.10",
+    "10.12",
+    "10.21",
+    "10.23",
+    "6.1",
+    "6.11",
+    "6.13",
+    "6.17",
+    "6.22",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.21",
+    "10.23",
+    "5.16",
+    "6.12",
+    "6.13",
+    "6.17"
+  ],
+  "ai_only": [
+    "10.10",
+    "10.12",
+    "6.1",
+    "6.11",
+    "6.22",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11",
+    "5.16",
+    "6.12"
+  ],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let A be a set-out rational straight line (D10.1.3).  **Step 2.** By 10.10, there exists a straight line B commensurable in square only with A. Then B is also rational (D10.1.3), and A, B "
+}

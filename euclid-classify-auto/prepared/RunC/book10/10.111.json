@@ -1,0 +1,55 @@
+{
+  "proposition": "10.111",
+  "book": 10,
+  "statement": "The apotome is not the same with the binomial straight line.",
+  "heath_proof": "Let AB be an apotome; I say that AB is not the same with the binomial straight line. For, if possible, let it be so; let a rational straight line DC be set out, and to CD let there be applied the rectangle CE equal to the square on AB and producing DE as breadth. Then, since AB is an apotome, DE is a first apotome. [X. 97] Let EF be the annex to it; therefore DF, FE are rational straight lines commensurable in square only, the square on DF is greater than the square on FE by the square on a straight line commensurable with DF, and DF is commensurable in length with the rational straight line DC set out. [X. Deff. III. 1] Again, since AB is binomial, therefore DE is a first binomial straight line. [X. 60] Let it be divided into its terms at G, and let DG be the greater term; therefore DG, GE are rational straight lines commensurable in square only, the square on DG is greater than the square on GE by the square on a straight line commensurable with DG, and the greater term DG is commensurable in length with the rational straight line DC set out. [X. Deff. II. 1] Therefore DF is also commensurable in length with DG; [X. 12] therefore the remainder GF is also commensurable in length with DF. [X. 15] But DF is incommensurable in length with EF; therefore FG is also incommensurable in length with EF. [X. 13] Therefore GF, FE are rational straight lines commensurable in square only; therefore EG is an apotome. [X. 73] But it is also rational: which is impossible. Therefore the apotome is not the same with the binomial straight line.",
+  "ai_proof_text": "10.111\n**Statement:** The apotome is not the same with the binomial straight line.\n\nSuppose, for the sake of contradiction, that some straight line AB is both a binomial and an apotome.\n\n**Step 1.** Since AB is a binomial, by 10.36, AB is the sum of two rational straight lines commensurable in square only. Let AB = AC + CB, where AC and CB are rational and commensurable in square only.\n\n**Step 2.** Since AB is an apotome, by 10.73, AB is the remainder when from a rational straight line a rational straight line commensurable with the whole in square only is subtracted. Let AB = AD - DB, where AD and DB are rational and commensurable in square only, with AD greater than DB.\n\n**Step 3.** By 2.4, since AB = AC + CB, we have sq(AB) = sq(AC) + sq(CB) + 2*rect(AC, CB).\n\n**Step 4.** By 2.7, since AB = AD - DB, we have sq(AB) = sq(AD) + sq(DB) - 2*rect(AD, DB).\n\n**Step 5.** Since both expressions equal sq(AB), by CN1 we have sq(AC) + sq(CB) + 2*rect(AC, CB) = sq(AD) + sq(DB) - 2*rect(AD, DB). Rearranging: 2*rect(AC, CB) + 2*rect(AD, DB) = [sq(AD) + sq(DB)] - [sq(AC) + sq(CB)].\n\n**Step 6.** We show that [sq(AD) + sq(DB)] and [sq(AC) + sq(CB)] are each rational areas. Since AC is rational, sq(AC) is commensurable with the square on the assigned rational line rho, i.e., sq(AC) is rational (D10.1.3, D10.1.4). Similarly sq(CB) is rational. Since AC and CB are commensurable in square, sq(AC) and sq(CB) are commensurable. By 10.12, both being commensurable with sq(rho), they are commensurable with each other, and by 10.15, sq(AC) + sq(CB) is commensurable with each and hence with sq(rho); thus sq(AC) + sq(CB) is rational. By the same reasoning, sq(AD) + sq(DB) is rational.\n\n**Step 7.** The difference R = [sq(AD) + sq(DB)] - [sq(AC) + sq(CB)] is the difference of two rational areas. Since both are commensurable with sq(rho), they are commensurable with each other by 10.12, and their difference R is commensurable with sq(rho) by 10.15. Hence R is a rational area. Note that R is positive, since R equals the sum 2*rect(AC, CB) + 2*rect(AD, DB) of two positive areas.\n\n**Step 8.** We show that 2*rect(AC, CB) is a medial area. By 10.21, since AC and CB are rational and commensurable in square only, rect(AC, CB) is medial. The ratio of 2*rect(AC, CB) to rect(AC, CB) is 2 to 1, which is a ratio of number to number, so by 10.6, these two areas are commensurable. Since rect(AC, CB) is incommensurable with sq(rho) (being medial, D10.1.4), by 10.13, 2*rect(AC, CB) is also incommensurable with sq(rho), hence irrational. Moreover, since rect(AC, CB) equals the square on some medial straight line m (by the definition in 10.21 and D10.1.4), and sq(n) = 2*rect(AC, CB) means sq(n) is commensurable with sq(m), the line n is commensurable with the medial line m, so n is medial by 10.23. Thus 2*rect(AC, CB) = sq(n) is a medial area. By the same reasoning, 2*rect(AD, DB) is a medial area.\n\n**Step 9.** Let rho be a rational straight line. Apply each area in the equation 2*rect(AC, CB) + 2*rect(AD, DB) = R to the line rho, producing breadths s1, s2, and s respectively, so that rect(rho, s1) = 2*rect(AC, CB), rect(rho, s2) = 2*rect(AD, DB), and rect(rho, s) = R. Then s1 + s2 = s.\n\n**Step 10.** Since R is a rational area and rho is rational, by 10.20, s is rational and commensurable in length with rho.\n\n**Step 11.** Since 2*rect(AC, CB) is a medial area equal to sq(n) where n is medial (Step 8), by 10.22, sq(n) applied to the rational line rho produces a breadth s1 that is rational and incommensurable in length with rho. Similarly, s2 is rational and incommensurable in length with rho.\n\n**Step 12.** Now s1 and s2 are both rational lines (D10.1.3), so sq(s1) and sq(s2) are each commensurable with sq(rho). By 10.12, sq(s1) and sq(s2) are commensurable with each other. Hence s1 and s2 are commensurable in square. Two lines commensurable in square are either commensurable in length or commensurable in square only. We consider both cases.\n\n**Step 13.** Case (a): Suppose s1 and s2 are commensurable in length. Then by 10.15, s = s1 + s2 is commensurable in length with s1. Since s1 is incommensurable in length with rho (Step 11), and s is commensurable in length with s1, by 10.13, s is incommensurable in length with rho. But by Step 10, s is commensurable in length with rho. This is a contradiction.\n\n**Step 14.** Case (b): Suppose s1 and s2 are commensurable in square only. Since s1 and s2 are rational and commensurable in square only, by 10.36, s = s1 + s2 is a binomial, which is irrational. But by Step 10, s is rational and commensurable in length with rho, hence s is rational (D10.1.3). A straight line cannot be both rational and irrational. This is a contradiction.\n\n**Step 15.** Since both cases lead to contradiction, the assumption that AB is both a binomial and an apotome is false. Therefore, the apotome is not the same with the binomial straight line. Q.E.D.\n\n**USED:** 10.12, 10.13, 10.15, 10.20, 10.21, 10.22, 10.23, 10.36, 10.6, 10.73, 2.4, 2.7, CN1, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.12, 10.13, 10.15, 10.60, 10.73, 10.97, D10.2.1, D10.3.1\n**Jaccard:** 0.211 — AI adds ['10.20', '10.21', '10.22', '10.23', '10.36', '10.6', '2.4', '2.7', 'CN1', 'D10.1.3', 'D10.1.4']; Human adds ['10.60', '10.97', 'D10.2.1', 'D10.3.1']",
+  "ai_used": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.6",
+    "10.73",
+    "2.4",
+    "2.7",
+    "CN1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.60",
+    "10.73",
+    "10.97",
+    "D10.2.1",
+    "D10.3.1"
+  ],
+  "ai_only": [
+    "10.20",
+    "10.21",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.6",
+    "2.4",
+    "2.7",
+    "CN1",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.60",
+    "10.97",
+    "D10.2.1",
+    "D10.3.1"
+  ],
+  "jaccard": 0.211,
+  "proof_summary": "Suppose, for the sake of contradiction, that some straight line AB is both a binomial and an apotome.  **Step 1.** Since AB is a binomial, by 10.36, AB is the sum of two rational straight lines commen"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "1.26",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone for both cases of this multi-case proposition: Case 1 (ASA) uses reductio by constructing a segment equal to the allegedly unequal side, applying I.4 to derive an angle equality that contradicts the part-whole relationship, then applying I.4 for the final conclusion. Case 2 (AAS) similarly uses reductio with I.4 to set up an angle equality, then invokes I.16 (exterior angle theorem) to obtain a contradiction. The AI's Case 2 uses a slightly different geometric configuration (assuming AB unequal to DE and using the exterior angle at G in triangle AGC, versus Heath assuming BC unequal to EF and using the exterior angle at H in triangle AHC), but the key intermediate conclusions and logical tools are identical. The ai_only set consists entirely of construction-level and axiom-level citations (1.3 for cutting off equal segments, P1 for joining points, CN1 for transitivity of equality, CN5 for part-whole) that Heath uses implicitly but does not cite. With heath_only empty, this is a clear Case A same-backbone-different-depth scenario.",
+  "jaccard": 0.333,
+  "ai_citations": "1.16|1.3|1.4|CN1|CN5|P1",
+  "heath_citations": "1.16|1.4",
+  "ai_only": "1.3|CN1|CN5|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

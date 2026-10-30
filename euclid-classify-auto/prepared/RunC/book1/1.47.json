@@ -1,0 +1,34 @@
+{
+  "proposition": "1.47",
+  "book": 1,
+  "statement": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+  "heath_proof": "Let ABC be a right-angled triangle having the angleBAC right; I say that the square on BC is equal to the squares on BA, AC. For let there be described on BC the square BDEC,and on BA, AC the squares GB, HC; [I. 46] through A let AL be drawn parallel to either BD or CE, and let AD, FC be joined. Then, since each of the angles BAC, BAG is right, it follows that with a straight line BA, and at the point A on it, the two straight linesAC, AG not lying on the same side make the adjacent angles equal to two right angles; therefore CA is in a straight line with AG. [I. 14]  For the same reason BA is also in a straight line with AH. And, since the angle DBC is equal to the angle FBA: for each is right: let the angle ABC be added to each;therefore the whole angle DBA is equal to the whole angle FBC. [C. N. 2]  And, since DB is equal to BC, and FB to BA, the two sides AB, BD are equal to the two sides FB, BC respectively,and the angle ABD is equal to the angle FBC; therefore the base AD is equal to the base FC, and the triangle ABD is equal to the triangle FBC. [I. 4] Now the parallelogram BL is double of the triangle ABD, for they have the same base BD and are in the same parallelsBD, AL. [I. 41] And the square GB is double of the triangle FBC, for they again have the same base FB and are in the same parallels FB, GC. [I. 41] [But the doubles of equals are equal to one another.]Therefore the parallelogram BL is also equal to the square GB. Similarly, if AE, BK be joined, the parallelogram CL can also be proved equal to the square HC;therefore the whole square BDEC is equal to the two squares GB, HC. [C. N. 2] And the square BDEC is described on BC, and the squares GB, HC on BA, AC. Therefore the square on the side BC is equal to thesquares on the sides BA, AC.",
+  "ai_proof_text": "1.47\n**Statement:** In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.\n\n**Step 1.** Let ABC be a right-angled triangle having the right angle BAC. We are to show that the square on BC is equal to the sum of the squares on BA and AC.\n\n**Step 2.** On BC, CA, and AB, describe squares BDEC, CKHA, and BAGF respectively [1.46].\n\n**Step 3.** Through A, draw AL parallel to BD (or CE), and join AD and FC [P1, 1.31].\n\n**Step 4.** Since angle BAC is a right angle (given) and angle BAG is also a right angle (being an angle of square BAGF), the two straight lines CA and AG, not lying on the same side of line BA, make the adjacent angles with BA equal to two right angles. Therefore CA is in a straight line with AG [1.14].\n\n**Step 5.** By the same reasoning, since angle BAC is a right angle and angle CAH is a right angle (being an angle of square CKHA), BA is in a straight line with AH [1.14].\n\n**Step 6.** Now, since angle DBC is a right angle (angle of square BDEC) and angle FBA is a right angle (angle of square BAGF), we have angle DBC equal to angle FBA [P4]. Adding angle ABC to each, angle DBA equals angle FBC [CN2].\n\n**Step 7.** In triangles ABD and FBC: AB equals FB (sides of square BAGF), BD equals BC (sides of square BDEC), and angle ABD equals angle FBC (Step 6). Therefore triangle ABD is equal to triangle FBC [1.4].\n\n**Step 8.** Now, the parallelogram BL (that is, rectangle BDLA) is double the triangle ABD, since they are on the same base BD and in the same parallels BD and AL [1.41].\n\n**Step 9.** The square BAGF is double the triangle FBC, since they are on the same base FB and in the same parallels FB and GC. For since angle BAC is a right angle and BA is in a straight line with AH (Step 5), and since FB is parallel to GC (being opposite sides of square BAGF extended through the collinearity of C, A, H), the triangle FBC and the square BAGF share the base FB and lie in the same parallels [1.41].\n\n**Step 10.** Since the parallelogram BL is double of triangle ABD and the square BAGF is double of triangle FBC, and triangle ABD equals triangle FBC (Step 7), the parallelogram BL equals the square BAGF [CN1].\n\n**Step 11.** Next, join AE and BK [P1].\n\n**Step 12.** Since angle ACE is a right angle (angle of square BDEC) and angle ACK is a right angle (angle of square CKHA), we have angle ACE equal to angle ACK [P4]. Adding angle ACB to each, angle BCE equals angle ACK (that is, angle BCK) [CN2].\n\n**Step 13.** In triangles BCE and ACK: BC equals CE (sides of square BDEC), AC equals CK (sides of square CKHA), and angle BCE equals angle ACK (Step 12). Therefore triangle BCE is equal to triangle ACK [1.4].\n\n**Step 14.** The parallelogram CL (that is, rectangle CELQ where Q is the intersection point on DE) is double the triangle BCE, since they are on the same base CE and in the same parallels CE and AL [1.41].\n\n**Step 15.** The square CKHA is double the triangle ACK, since they are on the same base CK and in the same parallels CK and AH. For BA is in a straight line with AH (Step 5), so the parallels are CK and BH [1.41].\n\n**Step 16.** Since the parallelogram CL is double of triangle BCE and the square CKHA is double of triangle ACK, and triangle BCE equals triangle ACK (Step 13), the parallelogram CL equals the square CKHA [CN1].\n\n**Step 17.** The whole square BDEC is composed of the parallelograms BL and CL. Since BL equals the square BAGF (Step 10) and CL equals the square CKHA (Step 16), the square BDEC equals the sum of the squares BAGF and CKHA [CN2].\n\n**Step 18.** Therefore, in the right-angled triangle ABC, the square on the side BC subtending the right angle is equal to the squares on the sides BA and AC containing the right angle. Q.E.D.\n\n**USED:** 1.14, 1.31, 1.4, 1.41, 1.46, CN1, CN2, P1, P4\n**Human refs (from References field):** 1.14, 1.4, 1.41, 1.46, CN2\n**Jaccard:** 0.556 — AI adds ['1.31', 'CN1', 'P1', 'P4']",
+  "ai_used": [
+    "1.14",
+    "1.31",
+    "1.4",
+    "1.41",
+    "1.46",
+    "CN1",
+    "CN2",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.4",
+    "1.41",
+    "1.46",
+    "CN2"
+  ],
+  "ai_only": [
+    "1.31",
+    "CN1",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.556,
+  "proof_summary": "**Step 1.** Let ABC be a right-angled triangle having the right angle BAC. We are to show that the square on BC is equal to the sum of the squares on BA and AC.  **Step 2.** On BC, CA, and AB, describ"
+}

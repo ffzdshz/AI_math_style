@@ -1,0 +1,36 @@
+{
+  "proposition": "6.5",
+  "book": 6,
+  "statement": "If two triangles have their sides proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.",
+  "heath_proof": "Let ABC, DEF be two triangles having their sides proportional, so that, as AB is to BC, so is DE to EF, as BC is to CA, so is EF to FD, and further, as BA is to AC, so is ED to DF; I say that the triangle ABC is equiangular with the triangle DEF, and they will have those angles equal which the corresponding sides subtend, namely the angle ABC to the angle DEF, the angle BCA to the angle EFD, and further the angle BAC to the angle EDF. For on the straight line EF, and at the points E, F on it, let there be constructed the angle FEG equal to the angle ABC, and the angle EFG equal to the angle ACB; [I. 23] therefore the remaining angle at A is equal to the remaining angle at G. [I. 32]  Therefore the triangle ABC is equiangular with the triangle GEF. Therefore in the triangles ABC, GEF the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles; [VI. 4] therefore, as AB is to BC, so is GE to EF. But, as AB is to BC, so by hypothesis is DE to EF; therefore, as DE is to EF, so is GE to EF. [V. 11]  Therefore each of the straight lines DE, GE has the same ratio to EF; therefore DE is equal to GE. [V. 9]  For the same reason DF is also equal to GF. Since then DE is equal to EG, and EF is common, the two sides DE, EF are equal to the two sides GE, EF; and the base DF is equal to the base FG; therefore the angle DEF is equal to the angle GEF, [I. 8] and the triangle DEF is equal to the triangle GEF, and the remaining angles are equal to the remaining angles, namely those which the equal sides subtend. [I. 4] Therefore the angle DFE is also equal to the angle GFE, and the angle EDF to the angle EGF. And, since the angle FED is equal to the angle GEF, while the angle GEF is equal to the angle ABC, therefore the angle ABC is also equal to the angle DEF. For the same reason the angle ACB is also equal to the angle DFE, and further, the angle at A to the angle at D; therefore the triangle ABC is equiangular with the triangle DEF.",
+  "ai_proof_text": "6.5\n**Statement:** If two triangles have their sides proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend.\n\n**Step 1.** Let ABC, DEF be two triangles having their sides proportional, so that AB : BC = DE : EF, BC : CA = EF : FD, and BA : AC = ED : DF. I say that triangle ABC is equiangular with triangle DEF, and that angle ABC = angle DEF, angle BCA = angle EFD, and angle BAC = angle EDF, these being the angles subtended by the corresponding sides AC and DF, AB and DE, BC and EF respectively.\n\n**Step 2.** On the straight line EF, at the point E on it, construct the angle FEG equal to the angle ABC, and at the point F on it construct the angle EFG equal to the angle ACB, both on the same side of EF [1.23].\n\n**Step 3.** Since ABC, ACB are two angles of the triangle ABC, they are together less than two right angles [1.17]; hence the angles FEG, EFG, which are equal to them, are together less than two right angles, and therefore the straight lines drawn from E and F, if produced, meet on the side of EF on which these angles lie [P5]. Let them meet at G, so that GEF is a triangle.\n\n**Step 4.** In the triangles ABC, GEF, the angle ABC equals the angle GEF and the angle ACB equals the angle GFE (Step 2); and the three angles of each triangle are together equal to two right angles [1.32]; therefore the remaining angle BAC equals the remaining angle EGF. Hence the triangle ABC is equiangular with the triangle GEF.\n\n**Step 5.** In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles [6.4]. Therefore AB : BC = GE : EF (the sides about the equal angles ABC, GEF), and BC : CA = EF : FG (the sides about the equal angles BCA, EFG).\n\n**Step 6.** By hypothesis AB : BC = DE : EF, and by Step 5 AB : BC = GE : EF. Ratios which are the same with the same ratio are also the same with one another [5.11]; therefore DE : EF = GE : EF. But magnitudes which have the same ratio to the same magnitude are equal to one another [5.9]; therefore DE = GE.\n\n**Step 7.** By hypothesis BC : CA = EF : FD, and by Step 5 BC : CA = EF : FG; therefore EF : FD = EF : FG [5.11]. But magnitudes to which the same magnitude has the same ratio are equal to one another [5.9]; therefore FD = FG.\n\n**Step 8.** In the triangles DEF, GEF, the two sides DE, EF are equal to the two sides GE, EF respectively (DE = GE by Step 6, and EF is common), and the base DF is equal to the base GF (Step 7). Therefore the angle DEF, contained by the equal sides DE, EF, is equal to the angle GEF, contained by the equal sides GE, EF [1.8].\n\n**Step 9.** Since DE = GE, EF is common, and the angle DEF equals the angle GEF (Step 8), the triangle DEF is equal to the triangle GEF, and the remaining angles are equal to the remaining angles, namely those which the equal sides subtend [1.4]: the angle EDF equals the angle EGF, and the angle DFE equals the angle GFE.\n\n**Step 10.** Now the angle DEF equals the angle GEF (Step 8), and the angle GEF equals the angle ABC (Step 2); therefore the angle DEF equals the angle ABC [CN1]. Again, the angle DFE equals the angle GFE (Step 9), and the angle GFE equals the angle ACB (Step 2); therefore the angle DFE equals the angle ACB [CN1]. Lastly, the angle EDF equals the angle EGF (Step 9), and the angle EGF equals the angle BAC (Step 4); therefore the angle EDF equals the angle BAC [CN1].\n\n**Step 11.** Therefore the triangle ABC is equiangular with the triangle DEF. Moreover, the angle BAC, subtended by BC, equals the angle EDF, subtended by the corresponding side EF; the angle ABC, subtended by AC, equals the angle DEF, subtended by the corresponding side DF; and the angle ACB, subtended by AB, equals the angle DFE, subtended by the corresponding side DE. Thus the triangles have those angles equal which the corresponding sides subtend. Q.E.D.\n\n**USED:** 1.17, 1.23, 1.32, 1.4, 1.8, 5.11, 5.9, 6.4, CN1, P5\n**Human refs (from References field):** 1.23, 1.32, 1.4, 1.8, 5.11, 5.9, 6.4\n**Jaccard:** 0.700 — AI adds ['1.17', 'CN1', 'P5']",
+  "ai_used": [
+    "1.17",
+    "1.23",
+    "1.32",
+    "1.4",
+    "1.8",
+    "5.11",
+    "5.9",
+    "6.4",
+    "CN1",
+    "P5"
+  ],
+  "heath_refs": [
+    "1.23",
+    "1.32",
+    "1.4",
+    "1.8",
+    "5.11",
+    "5.9",
+    "6.4"
+  ],
+  "ai_only": [
+    "1.17",
+    "CN1",
+    "P5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.7,
+  "proof_summary": "**Step 1.** Let ABC, DEF be two triangles having their sides proportional, so that AB : BC = DE : EF, BC : CA = EF : FD, and BA : AC = ED : DF. I say that triangle ABC is equiangular with triangle DEF"
+}

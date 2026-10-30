@@ -1,0 +1,71 @@
+{
+  "proposition": "11.31",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Perpendiculars erected at vertices of base Ki are parallel and of equal length h; upper face is parallel to Ki; right parallelepiped Ui has same base and height as Si, so Si = Ui by XI.29 or XI.30",
+      "type": "solid construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line through A perpendicular to AB meets line DC (extended if needed) at E; parallel through B to AE meets DC at F; ABFE is a rectangle",
+      "type": "point position and perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Parallelograms ABCD and ABFE share base AB and lie between same parallels AB and DC, so have equal area",
+      "type": "parallelogram area equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "E' and F' constructed in plane DCC'D' by drawing parallels to DD' from E and F; EE' and FF' are perpendicular to base plane (parallel to DD' which is perpendicular to base plane, by XI.8)",
+      "type": "perpendicularity to plane"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Vertices A,B,F,E and A',B',F',E' bound a rectangular box Bi of height h on base ABFE",
+      "type": "solid construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AE is perpendicular to AB (by construction) and to AA' (since AA' is perpendicular to base plane and AE lies in base plane); hence AE is perpendicular to plane ABB'A' by XI.4",
+      "type": "perpendicularity to plane"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Opposite faces of both Ui and Bi lie in plane DCC'D'; both have height AE relative to common base ABB'A'",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Standing-edge endpoints D,C,E,F all lie on line DC; D',C',E',F' all lie on line D'C'; satisfying XI.29 aligned-endpoint condition",
+      "type": "collinearity / betweenness"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Rectangular boxes B1 and B2 placed with common vertex and perpendicular edges aligned; if base rectangles don't coincide, neither contains the other (equal area + CN5), so edges cross: a>c and b<d",
+      "type": "superposition and containment"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Containing rectangular box W with edges a,d,h is cut by planes parallel to opposite faces into B1+T1 and B2+T2; base areas satisfy w = r1+t1 = r2+t2",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "XI.25 applied to each cut of W: B1:T1 = r1:t1 and B2:T2 = r2:t2; since r1=r2 and t1=t2, the ratios are equal",
+      "type": "proportion (algebraic)"
+    },
+    {
+      "step": "Step 10",
+      "claim": "By composition (V.18) and V.9: W:T1 = W:T2, so T1=T2, then B1=B2 by CN3",
+      "type": "proportion (algebraic)"
+    }
+  ],
+  "configuration_map": "The proof constructs a chain of equal solids for each of the two given parallelepipeds Si (i=1,2). First, a right parallelepiped Ui is built on the same base Ki with height h (perpendiculars erected at vertices). Then, in the base plane of Ui (parallelogram ABCD), the rectangle ABFE is constructed: E is the foot of the perpendicular from A to line AB meeting line DC, F is the corresponding point through B. E and F lie on line DC. Above them, E' and F' are constructed in plane DCC'D' by parallels to DD', landing on line D'C'. The rectangular box Bi (base ABFE, height h) equals Ui because, viewed from common face ABB'A', both have height AE (perpendicular to that plane) and their standing-edge endpoints are collinear on DC and D'C' (XI.29). All perpendicularity claims are consistent: AE perpendicular to AB (construction), AE perpendicular to AA' (AA' perpendicular to base plane), giving AE perpendicular to plane ABB'A' (XI.4). The comparison phase places B1 and B2 with aligned edges inside a containing box W(a,d,h), cut two ways; the resulting proportions from XI.25 and Book 5 are algebraic with no further spatial claims.",
+  "pass_reason": "All spatial claims are mutually consistent. The geometric constructions (perpendicularity, collinearity, plane membership, solid decomposition) are verified pairwise compatible. The perpendicular AE to plane ABB'A' follows correctly from XI.4 given the two established perpendicularities. The collinearity of standing-edge endpoints on lines DC and D'C' correctly satisfies XI.29. The later ratio arguments (Steps 7-10) are algebraic and introduce no new spatial configurations. No angle decomposition errors or inside/outside contradictions are present."
+}

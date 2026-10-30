@@ -1,0 +1,39 @@
+{
+  "proposition": "1.45",
+  "book": 1,
+  "statement": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+  "heath_proof": "Let ABCD be the given rectilineal figure and E the given rectilineal angle;thus it is required to construct, in the given angle E, a parallelogram equal to the rectilineal figure ABCD. Let DB be joined, and let the parallelogram FH be constructed equal to the triangle ABD, in the angle HKF which is equal to E; [I. 42]let the parallelogram GM equal to the triangle DBC be applied to the straight line GH, in the angle GHM which is equal to E. [I. 44] Then, since the angle E is equal to each of the angles HKF, GHM,the angle HKF is also equal to the angle GHM. [C. N. 1]  Let the angle KHG be added to each; therefore the angles FKH, KHG are equal to the angles KHG, GHM. But the angles FKH, KHG are equal to two right angles; [I. 29]therefore the angles KHG, GHM are also equal to two right angles. Thus, with a straight line GH, and at the point H on it, two straight lines KH, HM not lying on the same side make the adjacent angles equal to two right angles;therefore KH is in a straight line with HM. [I. 14] And, since the straight line HG falls upon the parallels KM, FG, the alternate angles MHG, HGF are equal to one another. [I. 29] Let the angle HGL be added to each;therefore the angles MHG, HGL are equal to the angles HGF, HGL. [C. N. 2] But the angles MHG, HGL are equal to two right angles; [I. 29] therefore the angles HGF, HGL are also equal to two right angles. [C. N. 1]Therefore FG is in a straight line with GL. [I. 14] And, since FK is equal and parallel to HG, [I. 34] and HG to ML also,   KF is also equal and parallel to ML; [C. N. 1; I. 30] and the straight lines KM, FL join them (at their extremities);therefore KM, FL are also equal and parallel. [I. 33] Therefore KFLM is a parallelogram. And, since the triangle ABD is equal to the parallelogram FH, and DBC to GM,  the whole rectilineal figure ABCD is equal to the whole parallelogram KFLM. Therefore the parallelogram KFLM has been constructed equal to the given rectilineal figure ABCD, in the angle FKM which is equal to the given angle E.",
+  "ai_proof_text": "1.45\n**Statement:** To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.\n\n**Step 1.** Let ABCD be the given rectilineal figure (a quadrilateral; the argument generalizes to any polygon by drawing additional diagonals), and let angle E be the given rectilineal angle. Draw the diagonal DB, dividing ABCD into triangles ABD and DBC [P1].\n\n**Step 2.** Construct parallelogram FGHK equal to triangle ABD in the angle E, so that angle FKH equals angle E [1.42].\n\n**Step 3.** To the straight line GH, apply parallelogram GHLM equal to triangle DBC in the angle E, so that angle GHM equals angle E [1.44].\n\n**Step 4.** We show that KHM is a straight line. Since FGHK is a parallelogram, FK is parallel to GH, and the transversal KH falling on these parallels makes the co-interior angles FKH and KHG equal to two right angles [1.29]. Since angle FKH equals angle E (Step 2) and angle GHM equals angle E (Step 3), we have angle FKH equals angle GHM. Therefore angle KHG plus angle GHM equals angle KHG plus angle FKH equals two right angles. Since the adjacent angles KHG and GHM on the same side of the line GH at the point H sum to two right angles, KHM is a straight line [1.14].\n\n**Step 5.** Since KHM is a straight line, the line GH meets the straight line KM, making angles GHK and GHM on opposite sides. Therefore angle GHK plus angle GHM equals two right angles [1.13].\n\n**Step 6.** We show that FGL is a straight line. Since FGHK is a parallelogram, FG is parallel to KH, and the transversal GH falling on these parallels makes the co-interior angles FGH and GHK equal to two right angles [1.29]. Since GHLM is a parallelogram, GL is parallel to HM, and the transversal GH falling on these parallels makes the co-interior angles LGH and GHM equal to two right angles [1.29]. Therefore angle FGH plus angle LGH equals (two right angles minus angle GHK) plus (two right angles minus angle GHM) equals four right angles minus (angle GHK plus angle GHM). By Step 5, angle GHK plus angle GHM equals two right angles, so angle FGH plus angle LGH equals four right angles minus two right angles equals two right angles. Since the adjacent angles FGH and LGH at the point G sum to two right angles, FGL is a straight line [1.14].\n\n**Step 7.** Since FGHK is a parallelogram, FK is parallel to GH. Since GHLM is a parallelogram, GH is parallel to LM. Therefore FK is parallel to LM, since both are parallel to GH [1.30].\n\n**Step 8.** Since FGL and KHM are both straight lines (Steps 4 and 6), and FG is parallel to KH (from parallelogram FGHK), the straight line FL is parallel to the straight line KM. Together with FK parallel to LM (Step 7), the figure FKML has both pairs of opposite sides parallel, so FKML is a parallelogram.\n\n**Step 9.** Since FGL and KHM are straight lines, the parallelogram FKML is composed of parallelograms FGHK and GHLM. Now parallelogram FGHK equals triangle ABD (Step 2) and parallelogram GHLM equals triangle DBC (Step 3). Therefore parallelogram FKML equals triangle ABD plus triangle DBC [CN2]. But triangle ABD plus triangle DBC equals the whole figure ABCD, since diagonal DB divides ABCD into exactly these two triangles. Therefore parallelogram FKML equals the rectilineal figure ABCD [CN2].\n\n**Step 10.** The angle FKM of the parallelogram FKML equals angle FKH (since KHM is a straight line, so the ray KH is the same as the ray KM from K), which equals angle E by construction (Step 2).\n\n**Step 11.** Therefore parallelogram FKML has been constructed equal to the given rectilineal figure ABCD, in the given angle E. For a polygon of more than four sides, draw further diagonals to decompose it into additional triangles, and repeat the application step (Step 3) using 1.44 for each successive triangle; the same argument at each stage shows the sides align into straight lines and the resulting figure is a parallelogram equal to the whole given figure in the given angle. Q.E.F.\n\n**USED:** 1.13, 1.14, 1.29, 1.30, 1.42, 1.44, CN2, P1\n**Human refs (from References field):** 1.14, 1.29, 1.30, 1.33, 1.34, 1.42, 1.44, CN1, CN2\n**Jaccard:** 0.545 — AI adds ['1.13', 'P1']; Human adds ['1.33', '1.34', 'CN1']",
+  "ai_used": [
+    "1.13",
+    "1.14",
+    "1.29",
+    "1.30",
+    "1.42",
+    "1.44",
+    "CN2",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "1.29",
+    "1.30",
+    "1.33",
+    "1.34",
+    "1.42",
+    "1.44",
+    "CN1",
+    "CN2"
+  ],
+  "ai_only": [
+    "1.13",
+    "P1"
+  ],
+  "heath_only": [
+    "1.33",
+    "1.34",
+    "CN1"
+  ],
+  "jaccard": 0.545,
+  "proof_summary": "**Step 1.** Let ABCD be the given rectilineal figure (a quadrilateral; the argument generalizes to any polygon by drawing additional diagonals), and let angle E be the given rectilineal angle. Draw th"
+}

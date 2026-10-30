@@ -1,0 +1,41 @@
+{
+  "proposition": "12.6",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two pyramids ABCDEM and FGHKLN have the same height, with pentagonal bases ABCDE and FGHKL and apices M and N respectively",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Polygon ABCDE is decomposed into triangles ABC, ACD, ADE by diagonals AC and AD from vertex A",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Polygon FGHKL is decomposed into triangles FGH, FHK, FKL by diagonals FH and FK from vertex F",
+      "type": "polygon_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Pyramid ABCDEM is divided into sub-pyramids ABCM, ACDM, ADEM by the planes through the apex M containing the base diagonals",
+      "type": "pyramid_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Pyramid FGHKLN is divided into sub-pyramids FGHN, FHKN, FKLN by the planes through apex N containing the base diagonals",
+      "type": "pyramid_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "All six triangular sub-pyramids have the same height as the two original pyramids",
+      "type": "height_equality"
+    }
+  ],
+  "configuration_map": "Two pyramids in 3D space. Pyramid 1: pentagonal base ABCDE in plane P1, apex M at perpendicular height h above P1. Pyramid 2: pentagonal base FGHKL in plane P2, apex N at perpendicular height h above P2. Diagonals from vertex A (AC, AD) decompose ABCDE into triangles ABC, ACD, ADE; diagonals from vertex F (FH, FK) decompose FGHKL into triangles FGH, FHK, FKL. These base decompositions induce pyramid decompositions: ABCDEM = ABCM + ACDM + ADEM, FGHKLN = FGHN + FHKN + FKLN. All sub-pyramids share height h because each has the same apex as its parent pyramid and a base in the same plane as the parent base. The rest of the proof (Steps 5-9) is purely proportional reasoning using Book 5 propositions.",
+  "pass_reason": "The spatial claims are few, simple, and mutually consistent. The proof makes only straightforward geometric claims: triangulation of convex polygonal bases by diagonals from one vertex, corresponding decomposition of pyramids into triangular-based sub-pyramids, and the preservation of equal heights across all sub-pyramids (since they share the same apex and base plane as their parent). No angle decompositions, betweenness claims, or inside/outside arguments are involved. The bulk of the proof is proportional reasoning (5.12, 5.22, 5.7) which introduces no spatial configuration issues."
+}

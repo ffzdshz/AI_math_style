@@ -1,0 +1,33 @@
+{
+  "proposition": "6.15",
+  "book": 6,
+  "statement": "In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.",
+  "heath_proof": "Let ABC, ADE be equal triangles having one angle equal to one angle, namely the angle BAC to the angle DAE; I say that in the triangles ABC, ADE the sides about the equal angles are reciprocally proportional, that is to say, that, as CA is to AD, so is EA to AB. For let them be placed so that CA is in a straight line with AD; therefore EA is also in a straight line with AB. [I. 14] Let BD be joined. Since then the triangle ABC is equal to the triangle ADE, and BAD is another area, therefore, as the triangle CAB is to the triangle BAD, so is the triangle EAD to the triangle BAD. [V. 7] But, as CAB is to BAD, so is CA to AD, [VI. 1] and, as EAD is to BAD, so is EA to AB. [id.] Therefore also, as CA is to AD, so is EA to AB. [V. 11] Therefore in the triangles ABC, ADE the sides about the equal angles are reciprocally proportional. Next, let the sides of the triangles ABC, ADE be reciprocally proportional, that is to say, let EA be to AB as CA to AD; I say that the triangle ABC is equal to the triangle ADE. For, if BD be again joined, since, as CA is to AD, so is EA to AB, while, as CA is to AD, so is the triangle ABC to the triangle BAD, and, as EA is to AB, so is the triangle EAD to the triangle BAD, [VI. 1] therefore, as the triangle ABC is to the triangle BAD, so is the triangle EAD to the triangle BAD. [V. 11] Therefore each of the triangles ABC, EAD has the same ratio to BAD. Therefore the triangle ABC is equal to the triangle EAD. [V. 9]",
+  "ai_proof_text": "6.15\n**Statement:** In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.\n\n**Step 1.** Let ABC and ADE be two equal triangles having angle BAC equal to angle DAE. We are to show that the sides about the equal angles are reciprocally proportional, namely that CA:AD = EA:AB; and conversely.\n\n**Step 2.** Place the two triangles so that CA and AD are in a straight line, with the equal angles at vertex A. Since angle BAC equals angle DAE and CA, AD are in a straight line, we have angle BAC + angle CAD equal to two right angles by [1.13]. Therefore angle DAE + angle CAD also equals two right angles, and so EA and AC are in a straight line by [1.14].\n\n**Step 3.** Join BE by [P1].\n\n**Step 4.** Triangles ABC and ABE share vertex B, and their bases CA and AE lie on the same straight line CE. Hence they are under the same height. By [6.1], triangle ABC is to triangle ABE as CA is to AE.\n\n**Step 5.** Triangles ABE and ADE share vertex E, and their bases BA and AD lie on the same straight line BD. Hence they are under the same height. By [6.1], triangle ABE is to triangle ADE as BA is to AD.\n\n**Step 6.** Since triangle ABC equals triangle ADE (given), triangle ABC has to triangle ABE the same ratio that triangle ADE has to triangle ABE by [5.7].\n\n**Step 7.** From Step 4, triangle ABC : triangle ABE = CA : AE. From Steps 5 and 6, triangle ADE : triangle ABE = BA : AD, so triangle ABC : triangle ABE = BA : AD. But triangle ABC : triangle ABE = CA : AE from Step 4. Therefore CA : AE = BA : AD.\n\n**Step 8.** By alternando [5.16], CA : BA = AE : AD, which rearranged gives CA : AD = AE : BA. Thus the sides about the equal angles are reciprocally proportional.\n\n**Step 9.** [Converse] Now let triangles ABC and ADE have angle BAC equal to angle DAE, and let the sides about the equal angles be reciprocally proportional, so that CA : AD = EA : AB. We are to show that triangle ABC equals triangle ADE.\n\n**Step 10.** Place the triangles as before so that CA and AD are in a straight line and EA and AC are in a straight line (by the same reasoning from Steps 1-2 using [1.13] and [1.14]). Join BE by [P1].\n\n**Step 11.** Since CA : AD = EA : AB (given), and also CA : AE = triangle ABC : triangle ABE by [6.1] (Step 4), and BA : AD = triangle ABE : triangle ADE by [6.1] (Step 5), we need to connect these.\n\n**Step 12.** From the given proportion CA : AD = EA : AB, by alternando [5.16] we get CA : EA = AD : AB, that is, CA : AE = AD : BA. Inverting the second ratio by [5.7], CA : AE = AD : BA means CA : AE = AD : BA.\n\n**Step 13.** From Step 4, CA : AE = triangle ABC : triangle ABE. From Step 5, BA : AD = triangle ABE : triangle ADE, so by inversion [5.7], AD : BA = triangle ADE : triangle ABE. Since CA : AE = AD : BA (Step 12), we have triangle ABC : triangle ABE = triangle ADE : triangle ABE.\n\n**Step 14.** Since triangles ABC and ADE have the same ratio to triangle ABE, triangle ABC equals triangle ADE by [5.9].\n\n**Step 15.** Therefore, in equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle and in which the sides about the equal angles are reciprocally proportional are equal. Q.E.D.\n\n**USED:** 1.13, 1.14, 5.16, 5.7, 5.9, 6.1, P1\n**Human refs (from References field):** 1.14, 5.11, 5.7, 5.9, 6.1\n**Jaccard:** 0.500 — AI adds ['1.13', '5.16', 'P1']; Human adds ['5.11']",
+  "ai_used": [
+    "1.13",
+    "1.14",
+    "5.16",
+    "5.7",
+    "5.9",
+    "6.1",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.14",
+    "5.11",
+    "5.7",
+    "5.9",
+    "6.1"
+  ],
+  "ai_only": [
+    "1.13",
+    "5.16",
+    "P1"
+  ],
+  "heath_only": [
+    "5.11"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let ABC and ADE be two equal triangles having angle BAC equal to angle DAE. We are to show that the sides about the equal angles are reciprocally proportional, namely that CA:AD = EA:AB; a"
+}

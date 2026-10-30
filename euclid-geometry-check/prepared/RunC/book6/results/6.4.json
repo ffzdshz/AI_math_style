@@ -1,0 +1,71 @@
+{
+  "proposition": "6.4",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 3",
+      "claim": "G is on segment BC between B and C, with BG = EF < BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "GH is drawn parallel to AC, meeting BA at H; H is between B and A on segment BA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "GH parallel to AC in triangle ABC implies BG:GC = BH:HA (6.2 proportional intercept)",
+      "type": "proportional_intercept"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle BGH = angle BCA (corresponding angles, GH || AC, transversal BC, by 1.29)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle BHG = angle BAC (corresponding angles, GH || AC, transversal BA, by 1.29)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle BGH is congruent to triangle DEF by 1.26 (ASA): angle GBH = angle DEF, BG = EF, angle BGH = angle EFD",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "BH = DE and GH = DF (from congruence)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "HK is drawn parallel to BC, meeting AC at K; K is between A and C on segment AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "HK parallel to BC in triangle ABC implies BH:HA = CK:KA (6.2 proportional intercept)",
+      "type": "proportional_intercept"
+    },
+    {
+      "step": "Step 9",
+      "claim": "GHKC is a parallelogram: GH || KC (since GH || AC and KC is part of AC) and HK || GC (since HK || BC and GC is part of BC)",
+      "type": "parallelogram"
+    },
+    {
+      "step": "Step 9",
+      "claim": "GH = KC (opposite sides of parallelogram GHKC)",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "KA + GH = KA + KC = AC (K between A and C, GH = KC)",
+      "type": "segment_addition"
+    }
+  ],
+  "configuration_map": "Triangle ABC with vertices A, B, C. Triangle DEF separate. Point G on segment BC with BG = EF (G between B and C since BC > EF). Line GH parallel to AC meets segment BA at point H (H between B and A, guaranteed by parallel intercept within the triangle). Line HK parallel to BC meets segment AC at point K (K between A and C, guaranteed by parallel intercept within the triangle). Quadrilateral GHKC forms a parallelogram with GH || KC and HK || GC. All points maintain consistent positions across all steps: G stays on BC, H stays on BA, K stays on AC. No point is ever treated as inside or outside a figure inconsistently. No angle decompositions are used. The proof relies on two applications of 6.2 (parallel intercept proportionality) and one parallelogram (GHKC) to establish the chain of equal ratios.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places G on BC, H on BA, K on AC with two parallel lines (GH || AC and HK || BC). The parallelogram GHKC is validly formed. No angle decomposition contradictions arise (the proof uses no additive angle decompositions). Point positions remain consistent across all steps. The two applications of 6.2 and the parallelogram argument are geometrically sound."
+}

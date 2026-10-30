@@ -1,0 +1,28 @@
+{
+  "proposition": "10.4",
+  "book": 10,
+  "statement": "Given three commensurable magnitudes, to find their greatest common measure.",
+  "heath_proof": "Let A, B, C be the three given commensurable magnitudes; thus it is required to find the greatest common measure of A, B, C. Let the greatest common measure of the two magnitudes A, B be taken, and let it be D; [X. 3] then D either measures C, or does not measure it. First, let it measure it. Since then D measures C, while it also measures A, B, therefore D is a common measure of A, B, C. And it is manifest that it is also the greatest; for a greater magnitude than the magnitude D does not measure A, B. Next, let D not measure C. I say first that C, D are commensurable. For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [X. 3] But it also measures C; so that the said magnitude will measure C, D; therefore C, D are commensurable. Now let their greatest common measure be taken, and let it be E. [X. 3] Since then E measures D, while D measures A, B, therefore E will also measure A, B. But it measures C also; therefore E measures A, B, C; therefore E is a common measure of A, B, C. I say next that it is also the greatest. For, if possible, let there be some magnitude F greater than E, and let it measure A, B, C. Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [X. 3] But the greatest common measure of A, B is D; therefore F measures D. But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [X. 3] But that is E; therefore F will measure E, the greater the less: which is impossible. Therefore no magnitude greater than the magnitude E will measure A, B, C; therefore E is the greatest common measure of A, B, C if D do not measure C, and, if it measure it, D is itself the greatest common measure. Therefore the greatest common measure of the three given commensurable magnitudes has been found.",
+  "ai_proof_text": "10.4\n**Statement:** Given three commensurable magnitudes, to find their greatest common measure.\n\n**Step 1.** Let the three given commensurable magnitudes be A, B, and C. There exists a magnitude H measuring all three [D10.1.1]. Our path is to reduce the problem to the two-magnitude construction [10.3], using successive subtraction on the first pair to keep track of its common measures.\n\n**Step 2.** Starting with A and B, proceed as follows. If they are equal, put D = A. If the lesser measures the greater, put D equal to the lesser. Otherwise subtract the lesser from the greater and continue with the lesser and the remainder, stopping when one measures the other. This process must terminate: otherwise A and B would be incommensurable, contrary to their having the common measure H [10.2, D10.1.1]. Let D be the lesser magnitude in the terminal pair.\n\n**Step 3.** Every common measure of A and B measures D. Indeed, whenever a magnitude K measures two unequal magnitudes X and Y, their difference is also a multiple of K: subtracting the copies of K constituting the lesser from those constituting the greater leaves whole copies of K [D5.2, CN3]. Thus any common measure of the initial pair measures both members of every successive pair, and consequently measures D. In particular, H measures D; since H also measures C, the magnitudes D and C are commensurable [D10.1.1].\n\n**Step 4.** Moreover, D measures A and B. It measures both members of the terminal pair. At each preceding subtraction, the former greater magnitude is the sum of the former lesser magnitude and the remainder. If D measures these two, it measures their sum, by joining their copies of D [D5.2, CN2]. Reversing the finite sequence therefore shows that D measures both original magnitudes. The cases where the process stopped immediately have the same conclusion directly [D5.2].\n\n**Step 5.** Find E, the greatest common measure of D and C [10.3]. Since E measures D, and D measures A and B, replacing each copy of D in A and B by its constituent copies of E shows that E measures A and B [D5.2, CN2]. It also measures C by its construction. Hence E is a common measure of all three given magnitudes.\n\n**Step 6.** Let K be any common measure of A, B, and C. By Step 3, K measures D. Therefore K is a common measure of D and C, and cannot be greater than their greatest common measure E [10.3]. Since E itself measures A, B, and C, it is their greatest common measure. Thus the required magnitude has been found.\n\n**USED:** 10.2, 10.3, CN2, CN3, D10.1.1, D5.2\n**Human refs (from References field):** 10.3\n**Jaccard:** 0.167 — AI adds ['10.2', 'CN2', 'CN3', 'D10.1.1', 'D5.2']",
+  "ai_used": [
+    "10.2",
+    "10.3",
+    "CN2",
+    "CN3",
+    "D10.1.1",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "10.3"
+  ],
+  "ai_only": [
+    "10.2",
+    "CN2",
+    "CN3",
+    "D10.1.1",
+    "D5.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let the three given commensurable magnitudes be A, B, and C. There exists a magnitude H measuring all three [D10.1.1]. Our path is to reduce the problem to the two-magnitude construction ["
+}

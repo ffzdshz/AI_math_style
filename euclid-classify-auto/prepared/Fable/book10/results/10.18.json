@@ -1,0 +1,13 @@
+{
+  "proposition": "10.18",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: they establish that sq(BC) > sq(A) by sq(FD) via the bisection construction, then derive the incommensurability of BC and FD through the chain BD incomm. DC -> BC incomm. DC -> DC comm. BF+DC -> BC incomm. BF+DC -> BC incomm. FD, for both the forward and converse directions. The key difference is citation depth. Heath cites 10.17 as a shortcut ('with the same construction as before, we can prove similarly'), while the AI re-derives 10.17's construction inline using the underlying propositions (1.10, 1.3, 2.4, 2.5, common notions). The proof-tree containment test confirms these ai_only items appear inside Heath's proof of 10.17. Similarly, Heath cites 10.6 to establish DC is commensurable with BF+DC, while the AI reaches the same conclusion directly from definition D10.1.1 (since BF = DC, the sum is 2*DC, which DC measures). All key intermediate conclusions match; only the depth of justification differs.",
+  "jaccard": 0.154,
+  "ai_citations": "1.10|1.3|10.13|10.16|2.4|2.5|CN1|CN2|CN3|CN5|D10.1.1",
+  "heath_citations": "10.13|10.16|10.17|10.6",
+  "ai_only": "1.10|1.3|2.4|2.5|CN1|CN2|CN3|CN5|D10.1.1",
+  "heath_only": "10.17|10.6",
+  "audit_record": ""
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "7.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G. Both proofs share the same logical backbone: find D = LCM(A,B) via 7.34, then find E = LCM(D,C) via 7.34, show A, B, C all measure E via transitivity of divisibility, and prove minimality by contradiction using 7.35. Heath's proof explicitly handles two cases (C measures D vs. C does not measure D), while the AI's proof uses a single general argument that subsumes both cases by always computing LCM(D,C). The only citation difference is ai_only = {D7.5}, a definition the AI cites explicitly to justify that E measuring F implies F >= E, which Heath leaves implicit. This is a citation-depth difference, not a path difference, confirming Case A of Q2.",
+  "jaccard": 0.667,
+  "ai_citations": "7.34|7.35|D7.5",
+  "heath_citations": "7.34|7.35",
+  "ai_only": "D7.5",
+  "heath_only": "",
+  "audit_record": ""
+}

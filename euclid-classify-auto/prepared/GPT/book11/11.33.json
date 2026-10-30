@@ -1,0 +1,53 @@
+{
+  "proposition": "11.33",
+  "book": 11,
+  "statement": "Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.",
+  "heath_proof": "Let AB, CD be similar parallelepipedal solids, and let AE be the side corresponding to CF; I say that the solid AB has to the solid CD the ratio triplicate of that which AE has to CF. For let EK, EL, EM be produced in a straight line with AE, GE, HE, let EK be made equal to CF, EL equal to FN, and further EM equal to FR, and let the parallelogram KL and the solid KP be completed. Now, since the two sides KE, EL are equal to the two sides CF, FN, while the angle KEL is also equal to the angle CFN, inasmuch as the angle AEG is also equal to the angle CFN because of the similarity of the solids AB, CD, therefore the parallelogram KL is equal <and similar> to the parallelogram CN. For the same reason the parallelogram KM is also equal and similar to CR, and further EP to DF; therefore three parallelograms of the solid KP are equal and similar to three parallelograms of the solid CD. But the former three parallelograms are equal and similar to their opposites, and the latter three to their opposites; [XI. 24] therefore the whole solid KP is equal and similar to the whole solid CD. [XI. Def. 10] Let the parallelogram GK be completed, and on the parallelograms GK, KL as bases, and with the same height as that of AB, let the solids EO, LQ be completed. Then since; owing to the similarity of the solids AB, CD, as AE is to CF, so is EG to FN, and EH to FR, while CF is equal to EK, FN to EL, and FR to EM, therefore, as AE is to EK, so is GE to EL, and HE to EM. But, as AE is to EK, so is AG to the parallelogram GK, as GE is to EL, so is GK to KL, and, as HE is to EM, so is QE to KM; [VI. 1] therefore also, as the parallelogram AG is to GK, so is GK to KL, and QE to KM. But, as AG is to GK, so is the solid AB to the solid EO, as GK is to KL, so is the solid OE to the solid QL, and, as QE is to KM, so is the solid QL to the solid KP; [XI. 32] therefore also, as the solid AB is to EO, so is EO to QL, and QL to KP. But, if four magnitudes be continuously proportional, the first has to the fourth the ratio triplicate of that which it has to the second; [V. Def. 10] therefore the solid AB has to KP the ratio triplicate of that which AB has to EO. But, as AB is to EO, so is the parallelogram AG to GK, and the straight line AE to EK [VI. 1]; hence the solid AB has also to KP the ratio triplicate of that which AE has to EK. But the solid KP is equal to the solid CD, and the straight line EK to CF; therefore the solid AB has also to the solid CD the ratio triplicate of that which the corresponding side of it, AE, has to the corresponding side CF.",
+  "ai_proof_text": "11.33\n**Statement:** Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.\n\n**Step 1.** Let S and T be similar parallelepipedal solids. At corresponding vertices O and o, let their three incident edges be OA, OB, OC and oa, ob, oc, respectively. Choose OA and oa as any desired pair of corresponding sides. The corresponding faces are similar, so their corresponding angles are equal and their sides are proportional. Alternating the proportions in the faces gives\nOA : oa = OB : ob = OC : oc.\n[D11.9, D6.1, 5.16, 5.11]\n\n**Step 2.** On the rays OA, OB, OC, produced if necessary, take A₁, B₁, C₁ such that OA₁ = oa, OB₁ = ob, and OC₁ = oc. These points can be obtained by circles centred at O with the respective given distances. [P2, P3]\nWrite Π(X,Y) for the parallelogram having adjacent sides OX and OY, and write P(X,Y,Z) for the parallelepiped having incident edges OX, OY, OZ. Complete these figures by parallels; the resulting opposite face-planes are parallel by 11.15. [1.31, 11.15]\nSet\nS₀ = P(A,B,C) = S,\nS₁ = P(A₁,B,C),\nS₂ = P(A₁,B₁,C),\nS₃ = P(A₁,B₁,C₁).\nThus two intermediate solids have been inserted, and each consecutive pair differs in just one incident edge.\n\n**Step 3.** The solid S₃ is equal and similar to T. Indeed, their three faces incident at O and o have equal corresponding adjacent sides by construction and equal included angles by Step 1. The same holds for their opposite faces: opposite edges of each parallelepiped are equal, and the angles formed by the corresponding parallel edges are equal. [1.34, 11.10, CN1]\nDivide each corresponding parallelogram face by the diagonal joining the endpoints of those adjacent sides. The resulting corresponding triangles are congruent by the equality of two sides and their included angle; the other triangles have the same properties by 1.34. [1.4, 1.34]\nConsequently, the corresponding faces are equal in area and similar. [CN2, D6.1] Since the two solids are contained by equal and similar corresponding faces, S₃ and T are equal and similar solids. [D11.10]\n\n**Step 4.** We compare the completed solids directly by 11.32: it naturally applies because each consecutive pair has equal height after a suitable choice of base, without requiring a subdivision argument.\nFor S₀ and S₁, take the bases Π(A,B) and Π(A₁,B). Both bases lie in the plane OAB, and both opposite faces lie in the same parallel plane through C. Therefore\nS₀ : S₁ = Π(A,B) : Π(A₁,B). [11.32]\nThe two base parallelograms have bases OA and OA₁ on the same straight line and their opposite sides on the same parallel through B. They therefore have equal height, and\nΠ(A,B) : Π(A₁,B) = OA : OA₁. [6.1]\nHence S₀ : S₁ = OA : OA₁. [5.11]\n\n**Step 5.** For S₁ and S₂, take the bases Π(A₁,B) and Π(A₁,B₁). Their opposite faces again lie in the common parallel plane through C, so the solids have equal height. Thus\nS₁ : S₂ = Π(A₁,B) : Π(A₁,B₁). [11.32]\nRegard these parallelograms as having bases OB and OB₁. Their opposite sides lie on the same parallel through A₁, so their heights are equal. Consequently\nΠ(A₁,B) : Π(A₁,B₁) = OB : OB₁, [6.1]\nand therefore S₁ : S₂ = OB : OB₁. [5.11]\n\n**Step 6.** For S₂ and S₃, instead take the bases Π(B₁,C) and Π(B₁,C₁), lying in the plane OBC. Their opposite faces lie in the same parallel plane through A₁, so\nS₂ : S₃ = Π(B₁,C) : Π(B₁,C₁). [11.32]\nThese base parallelograms, regarded as standing on OC and OC₁, have their opposite sides on the same parallel through B₁. Hence\nΠ(B₁,C) : Π(B₁,C₁) = OC : OC₁, [6.1]\nand therefore S₂ : S₃ = OC : OC₁. [5.11]\n\n**Step 7.** By Steps 1–2 and the three comparisons,\nS₀ : S₁ = S₁ : S₂ = S₂ : S₃ = OA : oa. [5.11]\nThus S₀, S₁, S₂, S₃ are four continuously proportional magnitudes. By the definition of triplicate ratio, S₀ : S₃ is the triplicate ratio of S₀ : S₁, and therefore of OA : oa. [D5.10]\nSince S₀ = S and S₃ = T, the ratio S : T is the triplicate ratio of OA : oa. The corresponding sides OA and oa were arbitrary. Therefore similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.\n\n**USED:** 1.31, 1.34, 1.4, 11.10, 11.15, 11.32, 5.11, 5.16, 6.1, CN1, CN2, D11.10, D11.9, D5.10, D6.1, P2, P3\n**Human refs (from References field):** 11.24, 11.32, 6.1, D11.10, D5.10\n**Jaccard:** 0.222 — AI adds ['1.31', '1.34', '1.4', '11.10', '11.15', '5.11', '5.16', 'CN1', 'CN2', 'D11.9', 'D6.1', 'P2', 'P3']; Human adds ['11.24']",
+  "ai_used": [
+    "1.31",
+    "1.34",
+    "1.4",
+    "11.10",
+    "11.15",
+    "11.32",
+    "5.11",
+    "5.16",
+    "6.1",
+    "CN1",
+    "CN2",
+    "D11.10",
+    "D11.9",
+    "D5.10",
+    "D6.1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "11.24",
+    "11.32",
+    "6.1",
+    "D11.10",
+    "D5.10"
+  ],
+  "ai_only": [
+    "1.31",
+    "1.34",
+    "1.4",
+    "11.10",
+    "11.15",
+    "5.11",
+    "5.16",
+    "CN1",
+    "CN2",
+    "D11.9",
+    "D6.1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [
+    "11.24"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let S and T be similar parallelepipedal solids. At corresponding vertices O and o, let their three incident edges be OA, OB, OC and oa, ob, oc, respectively. Choose OA and oa as any desire"
+}

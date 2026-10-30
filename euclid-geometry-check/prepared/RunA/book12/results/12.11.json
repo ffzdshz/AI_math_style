@@ -1,0 +1,51 @@
+{
+  "proposition": "12.11",
+  "run": "RunA",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two cylinders CD and EF of the same height with circular bases B1 and B2",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Polygon Q2 inscribed in circle B2; prism on Q2 inscribed within cylinder EF",
+      "type": "containment"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Cylindrical segments between prism P2 and cylinder EF are less than EF minus S, so P2 > S",
+      "type": "containment/exhaustion"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Polygon Q1 similar to Q2 inscribed in circle B1",
+      "type": "construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Prisms P1 and P2 erected on polygonal bases Q1 and Q2 with same height as cylinders",
+      "type": "construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Each polygon decomposed into triangles from one vertex; triangular prisms decomposed into three pyramids via 12.7",
+      "type": "decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Prism P1 contained in cylinder CD (P1 less than or equal to CD)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Cones G and H share same circular bases B1, B2 and same height as cylinders CD, EF",
+      "type": "construction"
+    }
+  ],
+  "configuration_map": "Circle B1 contains inscribed polygon Q1; circle B2 contains inscribed polygon Q2; Q1 and Q2 are similar. Cylinder CD has base B1 and height h; prism P1 has polygonal base Q1 and height h; P1 is contained in CD. Cylinder EF has base B2 and height h; prism P2 has polygonal base Q2 and height h; P2 is contained in EF. The exhaustion process refines Q2 so remaining segments are smaller than EF - S, ensuring P2 > S. Cones G and H share bases and heights with the respective cylinders.",
+  "pass_reason": "All spatial claims are mutually consistent. The containment relationships (inscribed polygons yield prisms within cylinders) are straightforward. The exhaustion argument and reductio structure are standard and involve no conflicting spatial assumptions. The AI uses prisms with 12.5 and 12.7 instead of Heath's pyramids with 12.6, but this alternative path introduces no spatial configuration contradictions. No angle decompositions, interior/exterior point claims, or ray orderings are present that could conflict."
+}

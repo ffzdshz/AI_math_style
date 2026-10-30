@@ -1,0 +1,35 @@
+{
+  "proposition": "6.31",
+  "book": 6,
+  "statement": "In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.",
+  "heath_proof": "Let ABC be a right-angled triangle having the angle BAC right; I say that the figure on BC is equal to the similar and similarly described figures on BA, AC. Let AD be drawn perpendicular. Then since, in the right-angled triangle ABC, AD has been drawn from the right angle at A perpendicular to the base BC, the triangles ABD, ADC adjoining the perpendicular are similar both to the whole ABC and to one another. [VI. 8] And, since ABC is similar to ABD, therefore, as CB is to BA, so is AB to BD. [VI. Def. 1] And, since three straight lines are proportional, as the first is to the third, so is the figure on the first to the similar and similarly described figure on the second. [VI. 19] Therefore, as CB is to BD, so is the figure on CB to the similar and similarly described figure on BA. For the same reason also, as BC is to CD, so is the figure on BC to that on CA; so that, in addition, as BC is to BD, DC, so is the figure on BC to the similar and similarly described figures on BA, AC. But BC is equal to BD, DC; therefore the figure on BC is also equal to the similar and similarly described figures on BA, AC.",
+  "ai_proof_text": "6.31\n**Statement:** In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.\n\n**Step 1.** Let triangle ABC have a right angle at vertex A, with BC the side subtending the right angle (the hypotenuse). Let similar and similarly described rectilineal figures be constructed on BC, BA, and CA; call them F_BC, F_BA, and F_CA respectively. We are to prove that F_BC = F_BA + F_CA.\n\n**Step 2.** From the right angle at A, draw AD perpendicular to BC. By 6.8, since triangle ABC is right-angled at A and AD is drawn from the right angle perpendicular to the base BC, the triangles ABD and ABC are similar, and likewise triangles ADC and ABC are similar.\n\n**Step 3.** Since triangle ABD is similar to triangle ABC (by Step 2), corresponding sides are proportional (by 6.4), and in particular BC : BA = BA : BD. That is, BA is a mean proportional between BC and BD.\n\n**Step 4.** Since BC : BA = BA : BD, three magnitudes BC, BA, BD are in continued proportion. Therefore, by D5.9, BC has to BD the duplicate ratio of that which BC has to BA.\n\n**Step 5.** Since triangle ADC is similar to triangle ABC (by Step 2), corresponding sides are proportional (by 6.4), and in particular BC : CA = CA : DC. That is, CA is a mean proportional between BC and DC.\n\n**Step 6.** Since BC : CA = CA : DC, three magnitudes BC, CA, DC are in continued proportion. Therefore, by D5.9, BC has to DC the duplicate ratio of that which BC has to CA.\n\n**Step 7.** Now F_BC and F_BA are similar rectilineal figures described on BC and BA respectively. By 6.20, similar polygons have to one another the ratio duplicate of that which corresponding sides have to corresponding sides. Therefore F_BC : F_BA is the duplicate ratio of BC : BA.\n\n**Step 8.** But from Step 4, BC : BD is also the duplicate ratio of BC : BA. Since two ratios that are each the duplicate of the same ratio are the same ratio, we conclude F_BC : F_BA = BC : BD.\n\n**Step 9.** By 5.7 (invertendo), since F_BC : F_BA = BC : BD, we have F_BA : F_BC = BD : BC.\n\n**Step 10.** Similarly, F_BC and F_CA are similar rectilineal figures described on BC and CA respectively. By 6.20, F_BC : F_CA is the duplicate ratio of BC : CA.\n\n**Step 11.** From Step 6, BC : DC is also the duplicate ratio of BC : CA. Therefore F_BC : F_CA = BC : DC.\n\n**Step 12.** By 5.7 (invertendo), since F_BC : F_CA = BC : DC, we have F_CA : F_BC = DC : BC.\n\n**Step 13.** We now have F_BA : F_BC = BD : BC (Step 9) and F_CA : F_BC = DC : BC (Step 12). By 5.24, the sum of the antecedents has to the common consequent the same ratio as the sum of the corresponding antecedents to their common consequent. That is, (F_BA + F_CA) : F_BC = (BD + DC) : BC.\n\n**Step 14.** But D is a point on BC between B and C (being the foot of the perpendicular from A), so BD + DC = BC. Therefore (BD + DC) : BC = BC : BC.\n\n**Step 15.** Thus (F_BA + F_CA) : F_BC = BC : BC. By 5.9, if two magnitudes have the same ratio to the same magnitude, they are equal to one another. Therefore F_BA + F_CA = F_BC.\n\n**Step 16.** Hence, in the right-angled triangle ABC, the figure on the hypotenuse BC is equal to the sum of the similar and similarly described figures on the two sides BA and CA containing the right angle. Q.E.D.\n\n**USED:** 5.24, 5.7, 5.9, 6.20, 6.4, 6.8, D5.9\n**Human refs (from References field):** 6.19, 6.8, D6.1\n**Jaccard:** 0.111 — AI adds ['5.24', '5.7', '5.9', '6.20', '6.4', 'D5.9']; Human adds ['6.19', 'D6.1']",
+  "ai_used": [
+    "5.24",
+    "5.7",
+    "5.9",
+    "6.20",
+    "6.4",
+    "6.8",
+    "D5.9"
+  ],
+  "heath_refs": [
+    "6.19",
+    "6.8",
+    "D6.1"
+  ],
+  "ai_only": [
+    "5.24",
+    "5.7",
+    "5.9",
+    "6.20",
+    "6.4",
+    "D5.9"
+  ],
+  "heath_only": [
+    "6.19",
+    "D6.1"
+  ],
+  "jaccard": 0.111,
+  "proof_summary": "**Step 1.** Let triangle ABC have a right angle at vertex A, with BC the side subtending the right angle (the hypotenuse). Let similar and similarly described rectilineal figures be constructed on BC,"
+}

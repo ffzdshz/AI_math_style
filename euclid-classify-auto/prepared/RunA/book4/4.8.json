@@ -1,0 +1,43 @@
+{
+  "proposition": "4.8",
+  "book": 4,
+  "statement": "In a given square to inscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to inscribe a circle in the given square ABCD. Let the straight lines AD, AB be bisected at the points E, F respectively [I. 10], through E let EH be drawn parallel to either AB or CD, and through F let FK be drawn parallel to either AD or BC; [I. 31] therefore each of the figures AK, KB, AH, HD, AG, GC, BG, GD is a parallelogram, and their opposite sides are evidently equal. [I. 34] Now, since AD is equal to AB, and AE is half of AD, and AF half of AB, therefore AE is equal to AF, so that the opposite sides are also equal;  therefore FG is equal to GE. Similarly we can prove that each of the straight lines GH, GK is equal to each of the straight lines FG, GE; therefore the four straight lines GE, GF, GH, GK are equal to one another. Therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will pass also through the remaining points. And it will touch the straight lines AB, BC, CD, DA, because the angles at E, F, H, K are right. For, if the circle cuts AB, BC, CD, DA, the straight line drawn at right angles to the diameter of the circle from its extremity will fall within the circle: which was proved absurd; [III. 16] therefore the circle described with centre G and distance one of the straight lines GE, GF, GH, GK will not cut the straight lines AB, BC, CD, DA. Therefore it will touch them, and will have been inscribed in the square ABCD. Therefore in the given square a circle has been inscribed.",
+  "ai_proof_text": "4.8\n**Statement:** In a given square to inscribe a circle.\n\n**Step 1.** Let ABCD be the given square. By definition (D1.22), ABCD is both equilateral and right-angled, so AB = BC = CD = DA and each angle is a right angle.\n\n**Step 2.** Bisect side AD at E, and bisect side BC at F (1.10). Then AE = ED, and BF = FC.\n\n**Step 3.** Bisect side AB at G, and bisect side DC at H (1.10). Then AG = GB, and DH = HC.\n\n**Step 4.** Join EF and GH (P1). Let K be the point at which EF and GH intersect.\n\n**Step 5.** Since ABCD is a parallelogram (its opposite angles are equal, each being right, and its opposite sides are equal by D1.22), by 1.34 we have AD = BC and AB = DC, and AD is parallel to BC and AB is parallel to DC.\n\n**Step 6.** Since AD = BC and E bisects AD while F bisects BC, we have AE = BF (CN3, as halves of equals are equal). Also AE is parallel to BF, being parts of the parallel lines AD and BC. Therefore by 1.33, since AE and BF are equal and parallel, EB is parallel to AF, and ABFE is a parallelogram. In particular, EF is parallel to AB.\n\n**Step 7.** Similarly, since AB = DC and G bisects AB while H bisects DC, we have AG = DH (CN3). Also AG is parallel to DH, being parts of the parallel lines AB and DC. Therefore by 1.33, GH is parallel to AD.\n\n**Step 8.** Since EF is parallel to AB and AB is perpendicular to AD (the angle DAB being right by D1.22), it follows by 1.29 that the angle AEK (formed by EF meeting AD) is a right angle, since it and the angle DAB are co-interior angles summing to two right angles, and angle DAB is right. More precisely, since EF is parallel to AB and AE is a transversal, the alternate angles GKE and KEB are related to the angles of the square; since angle EAG is right (being the angle of the square), and AGKE is a parallelogram (as AG is parallel to KE and AE is parallel to GK from Steps 6 and 7), the angle AEK is right (1.29, alternate interior angles with the right angle at A transferred through the parallel lines).\n\n**Step 9.** Since AGKE is a parallelogram (AG parallel to EK, and AE parallel to GK, established in Steps 6 and 7), by 1.34 opposite sides are equal: KE = AG and KG = AE.\n\n**Step 10.** Since the square is equilateral, AB = AD. Since G bisects AB, AG = AB/2. Since E bisects AD, AE = AD/2. Therefore AG = AE (CN1, as both equal half the side of the square). Hence KE = AG = AE = KG (CN1).\n\n**Step 11.** By the same reasoning applied to parallelogram GBFK, we have KF = GB = BF and KG = GB. Since GB = AG (G bisects AB) and BF = AE (from Step 6), we have KF = AG = KE (CN1).\n\n**Step 12.** Similarly, from parallelogram KHDE (with KH = ED and KE = DH), KH = ED = AE = KE (CN1). Thus KE = KG = KF = KH, and each equals half the side of the square.\n\n**Step 13.** With center K and radius KE, describe a circle EGFH (P3). Since KE = KG = KF = KH, the points E, G, F, and H all lie on this circle (D1.15).\n\n**Step 14.** Now, KE is perpendicular to AD (established in Step 8). The side AD passes through E, which lies on the circle, and AD is at right angles to the radius KE at E. By 3.16, the straight line drawn at right angles to a diameter from its extremity falls outside the circle. Since KE is a radius and AD is perpendicular to KE at the point E on the circle, AD does not cut the circle, and therefore AD touches the circle at E.\n\n**Step 15.** By entirely analogous reasoning: KG is perpendicular to AB (since GH is parallel to AD and AD is perpendicular to AB, by 1.29 the angle KGA is right), so side AB touches the circle at G. KF is perpendicular to BC (since EF is parallel to AB and AB is perpendicular to BC), so side BC touches the circle at F. KH is perpendicular to DC (since GH is parallel to AD and AD is parallel to and congruent with the configuration at DC), so side DC touches the circle at H.\n\n**Step 16.** Since the circumference of circle EGFH touches each side of square ABCD, the circle is inscribed in the square (D4.5).\n\nTherefore, in the given square ABCD, a circle has been inscribed. Q.E.F.\n\n**USED:** 1.10, 1.29, 1.33, 1.34, 3.16, CN1, CN3, D1.15, D1.22, D4.5, P1, P3\n**Human refs (from References field):** 1.10, 1.31, 1.34, 3.16\n**Jaccard:** 0.231 — AI adds ['1.29', '1.33', 'CN1', 'CN3', 'D1.15', 'D1.22', 'D4.5', 'P1', 'P3']; Human adds ['1.31']",
+  "ai_used": [
+    "1.10",
+    "1.29",
+    "1.33",
+    "1.34",
+    "3.16",
+    "CN1",
+    "CN3",
+    "D1.15",
+    "D1.22",
+    "D4.5",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.10",
+    "1.31",
+    "1.34",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.29",
+    "1.33",
+    "CN1",
+    "CN3",
+    "D1.15",
+    "D1.22",
+    "D4.5",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "1.31"
+  ],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Let ABCD be the given square. By definition (D1.22), ABCD is both equilateral and right-angled, so AB = BC = CD = DA and each angle is a right angle.  **Step 2.** Bisect side AD at E, and "
+}

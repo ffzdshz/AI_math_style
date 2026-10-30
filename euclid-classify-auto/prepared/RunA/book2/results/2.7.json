@@ -1,0 +1,13 @@
+{
+  "proposition": "2.7",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof uses a geometric construction approach: building a square ADEB on AB, using I.43 (complements about the diagonal are equal) and I.46 (constructing squares), then working with gnomons and area decompositions to reach the conclusion. The AI proof takes a fundamentally different algebraic path: it applies Proposition 2.4 to expand sq(AB), adds sq(BC) to both sides, then uses Proposition 2.3 to express rect(AB,BC), doubles the result, adds sq(AC), and establishes equality of the two sides by observing identical right-hand sides (CN1). The key intermediate conclusions are entirely different -- Heath works with geometric regions (gnomon KLM, square CF, complements AG and GE) while the AI works with algebraic identities from 2.3 and 2.4. The proof-tree containment test confirms this is not merely a citation-depth difference: while 1.46 appears inside the proofs of 2.3 and 2.4, the critical citation 1.43 does not, and more importantly, the overall proof strategy (algebraic manipulation vs. geometric area decomposition) is genuinely different. The AI's algebraic chain is logically complete and sound, so this is a valid different path (D).",
+  "jaccard": 0.0,
+  "ai_citations": "2.3|2.4|CN1|CN2",
+  "heath_citations": "1.43|1.46",
+  "ai_only": "2.3|2.4|CN1|CN2",
+  "heath_only": "1.43|1.46",
+  "audit_record": ""
+}

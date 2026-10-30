@@ -1,0 +1,13 @@
+{
+  "proposition": "3.10",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Classification was decided at Q2/Q3. Heath's proof uses perpendicular bisectors of chords connecting intersection points to show that both circles share the same center (contradicting III.5), citing only III.1 and III.5. The AI proof takes a fundamentally different approach: it finds the center K of one circle via III.1, observes that three equal radii KB=KG=KF fall from K onto the second circle (by D1.15), then performs an exhaustive case analysis on K's position relative to the second circle — inside (contradicted by III.9 implying K is also center of circle 2, violating III.5), outside (contradicted by III.8 allowing at most two equal lines), or on the circumference (contradicted by III.7 allowing at most two equal lines from a non-center point on the diameter). These are genuinely different logical backbones: Heath derives a shared center via perpendicular bisector geometry, while the AI derives contradictions via equal-line-count propositions III.7/III.8/III.9. The AI's path is logically complete — every step is supported by valid citations and the case analysis is exhaustive — so Q3(b) holds, yielding D.",
+  "jaccard": 0.286,
+  "ai_citations": "3.1|3.5|3.7|3.8|3.9|D1.15|P1",
+  "heath_citations": "3.1|3.5",
+  "ai_only": "3.7|3.8|3.9|D1.15|P1",
+  "heath_only": "",
+  "audit_record": ""
+}

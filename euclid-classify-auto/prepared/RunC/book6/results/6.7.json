@@ -1,0 +1,13 @@
+{
+  "proposition": "6.7",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same backbone: indirect proof assuming angle ABC is not equal to angle DEF, constructing angle ABG equal to angle DEF via I.23, showing triangles ABG and DEF are equiangular via I.32, deriving BG = BC via proportions and V.9, using the isosceles triangle property I.5, and reaching contradictions in both cases. The differences are in citation depth rather than key conclusions. The AI avoids V.11 by arranging the given proportions as AB:DE = BC:EF rather than AB:BC = DE:EF, so the 6.4 result AB:DE = BG:EF lines up directly without needing transitivity. In Case 2, the AI uses a longer route through angle-sum arguments (I.32) instead of Heath's direct appeal to I.17, but both reach the same structural contradiction from BG = BC. The ai_only item P1 is a postulate (over-citation consistent with G). The heath_only items (1.17 used in Case 2, 5.11 used for ratio transitivity) reflect the AI taking slightly different but equivalent sub-paths to reach the same key intermediate conclusions.",
+  "jaccard": 0.667,
+  "ai_citations": "1.13|1.23|1.32|1.5|5.9|6.4|P1",
+  "heath_citations": "1.13|1.17|1.23|1.32|1.5|5.11|5.9|6.4",
+  "ai_only": "P1",
+  "heath_only": "1.17|5.11",
+  "audit_record": ""
+}

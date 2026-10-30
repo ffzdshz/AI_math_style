@@ -1,0 +1,13 @@
+{
+  "proposition": "7.26",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides this classification as D (path difference). Heath's proof consolidates primality along the product AB first: it shows AB is prime to C (since A and B are each prime to C, by 7.24), then AB is prime to D (similarly), and finally concludes CD is prime to AB (since C and D are each prime to AB, by 7.24). The AI proof takes the symmetric approach, consolidating along CD first: it uses D7.12 to flip the given relations, shows CD is prime to A (since C and D are each prime to A, by 7.24), then CD is prime to B (similarly), then CD is prime to AB (since CD is prime to both A and B, by 7.24), and finally uses symmetry to state AB is prime to CD. The key intermediate conclusions differ: Heath's backbone runs through 'AB is prime to C' and 'AB is prime to D', while the AI's runs through 'CD is prime to A' and 'CD is prime to B'. Both paths are logically valid and complete, but they establish different intermediate facts, making this a genuine path difference. The AI's additional citations of D7.12 and D7.15 reflect its explicit use of the symmetry of the coprimality relation and the definition of multiplication, which Heath leaves implicit.",
+  "jaccard": 0.333,
+  "ai_citations": "7.24|D7.12|D7.15",
+  "heath_citations": "7.24",
+  "ai_only": "D7.12|D7.15",
+  "heath_only": "",
+  "audit_record": ""
+}

@@ -1,0 +1,34 @@
+{
+  "proposition": "10.46",
+  "book": 10,
+  "statement": "The side of a rational plus a medial area is divided at one point only.",
+  "heath_proof": "Let AB be the side of a rational plus a medial area divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, but twice the rectangle AC, CB rational; [X. 40] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB medial, but twice the rectangle AD, DB rational. Since then that by which twice the rectangle AC, CB differs from twice the rectangle AD, DB is also that by which the squares on AD, DB differ from the squares on AC, CB, while twice the rectangle AC, CB exceeds twice the rectangle AD, DB by a rational area, therefore the squares on AD, DB also exceed the squares on AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore the side of a rational plus a medial area is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.46\n**Statement:** The side of a rational plus a medial area is divided at one point only.\n\n**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC and CB are the two straight lines described in the definition of this irrational line (10.40). Thus AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, and the rectangle contained by AC and CB is rational.\n\n**Step 2.** Suppose, for the sake of contradiction, that AB is also divided at D so that AD and DB satisfy the same conditions: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, and the rectangle contained by AD and DB is rational.\n\n**Step 3.** By 2.4, the square on AB equals the sum of the squares on AC and CB plus twice the rectangle contained by AC and CB. Likewise, the square on AB equals the sum of the squares on AD and DB plus twice the rectangle contained by AD and DB.\n\n**Step 4.** Therefore the sum of the squares on AC and CB plus twice the rectangle AC.CB equals the sum of the squares on AD and DB plus twice the rectangle AD.DB (CN1).\n\n**Step 5.** Now, twice the rectangle AC.CB is rational (since the rectangle AC.CB is rational, and a rational multiple of a rational area is rational, by 10.19 and the definition D10.1.4). Similarly, twice the rectangle AD.DB is rational.\n\n**Step 6.** The sum of the squares on AC and CB is medial, and the sum of the squares on AD and DB is medial (by the hypothesis of 10.40 for each division).\n\n**Step 7.** From Step 4, rearranging, the difference between the sum of the squares on AC, CB and the sum of the squares on AD, DB equals twice the rectangle AD.DB minus twice the rectangle AC.CB.\n\n**Step 8.** The right side of this equation, being the difference of two rational areas, is either rational or zero (since the difference of commensurable areas is commensurable with each, by 10.15 applied to their common rational measure, and hence rational by D10.1.4).\n\n**Step 9.** The left side is the difference of two medial areas. By 10.26, a medial area does not exceed a medial area by a rational area.\n\n**Step 10.** Therefore the difference on the left side cannot be a nonzero rational area. Combined with Step 8, both sides must equal zero.\n\n**Step 11.** Hence the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and twice the rectangle AC.CB equals twice the rectangle AD.DB, so the rectangle AC.CB equals the rectangle AD.DB.\n\n**Step 12.** Since the sum of the squares on AC and CB equals the sum of the squares on AD and DB, and the rectangle AC.CB equals the rectangle AD.DB, the situation is identical to that in the proof of 10.45 (the major straight line is divided at one point only). In 10.45, from exactly these two equalities the uniqueness of the division point is established.\n\n**Step 13.** Specifically, since the squares on AC, CB sum to the same as the squares on AD, DB, and the rectangles AC.CB and AD.DB are equal, by 2.7 the square on AC plus the square on CB equals the square on AD plus the square on DB. By 2.4 applied to each pair, the square on the whole AB expressed via the division at C equals the square on the whole AB expressed via the division at D. Since the sums of squares are equal and the rectangles are equal, we may apply the same argument as in the uniqueness proof for the major line.\n\n**Step 14.** From Step 11, the sum of the squares on AC and CB equals the sum of the squares on AD and DB. Let us set S = this common value. Also the rectangle AC.CB equals the rectangle AD.DB; let R = this common value.\n\n**Step 15.** By 2.7, the square on the difference AC - CB can be expressed as: the sum of the squares on AC and CB minus twice the rectangle AC.CB, which equals S - 2R. Similarly, the square on the difference AD - DB equals S - 2R. Therefore the square on (AC - CB) equals the square on (AD - DB).\n\n**Step 16.** Hence AC - CB = AD - DB (since these are positive magnitudes whose squares are equal).\n\n**Step 17.** But also AC + CB = AD + DB (since both equal AB, by CN2 and the construction).\n\n**Step 18.** Adding the equations from Steps 16 and 17: 2*AC = 2*AD, so AC = AD (CN3).\n\n**Step 19.** Therefore CB = DB as well, meaning the division points C and D coincide.\n\n**Step 20.** This contradicts the assumption that AB is divided at two distinct points. Therefore the side of a rational plus a medial area is divided at one point only. Q.E.D.\n\n**USED:** 10.26, 10.40, 10.45, 2.4, 2.7, CN1, CN2, CN3, D10.1.4\n**Human refs (from References field):** 10.26, 10.40\n**Jaccard:** 0.222 — AI adds ['10.45', '2.4', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.4']",
+  "ai_used": [
+    "10.26",
+    "10.40",
+    "10.45",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.40"
+  ],
+  "ai_only": [
+    "10.45",
+    "2.4",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let AB be the side of a rational plus a medial area, and let it be divided at C so that AC and CB are the two straight lines described in the definition of this irrational line (10.40). Th"
+}

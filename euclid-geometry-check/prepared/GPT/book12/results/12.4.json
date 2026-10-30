@@ -1,0 +1,61 @@
+{
+  "proposition": "12.4",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E, F, G are midpoints of AB, BC, CA; H, I, K are midpoints of DA, DB, DC. Pyramid D-ABC decomposes into pyramids D-HIK and I-BEF plus prisms R (ends AEG, HIK) and S (ends EFI, GCK).",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HI parallel to AB and HK parallel to AC (midpoint theorem), so plane HIK is parallel to plane ABC.",
+      "type": "plane_parallelism"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Perpendicular DO from D to plane ABC meets plane HIK at N, with DN = NO = h/2 (midpoint bisection of altitude).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DO is perpendicular to plane HIK as well (perpendicular to one of two parallel planes implies perpendicular to both).",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Prisms R and R' have equal height h/2; both smaller pyramids also have height h/2.",
+      "type": "equal_heights"
+    },
+    {
+      "step": "Step 4",
+      "claim": "[ABC] = 4[AEG] via two applications of 6.1 to midpoints E and G, so a:a' = b:b'.",
+      "type": "area_relation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Completing triangular prism R to parallelepiped T; base area c = 2b (diagonal bisects parallelogram); T = 2R by 11.28.",
+      "type": "volume_relation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "T and T' have equal height h/2, so T:T' = c:c' by 11.32 (equal-height parallelepipeds). Thus R:R' = b:b' = a:a'.",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "[HIK] = [AEG] = b (congruent opposite ends of prism R); [BEF] = a/4 = b (by 6.1 twice). Smaller pyramid bases preserve ratio a:a'.",
+      "type": "area_relation"
+    },
+    {
+      "step": "Steps 9-10",
+      "claim": "Iteration preserves base ratio a:a' and equal heights at each subdivision; total prisms ratio equals a:a' by 5.12.",
+      "type": "proportionality"
+    }
+  ],
+  "configuration_map": "Two pyramids D-ABC and D'-A'B'C' share height h. Midpoints E,F,G on base edges and H,I,K on lateral edges define the 12.3 decomposition. Plane HIK is parallel to plane ABC at half-height (h/2). The perpendicular from D to ABC passes through both planes, bisected at point N in plane HIK. Prism R has congruent parallel triangular faces AEG (in base plane) and HIK (in midpoint plane), connected by parallelogram lateral faces, with height h/2 measured perpendicular to these planes. Prism S has triangular faces EFI and GCK in oblique planes, also with perpendicular height h/2. All points maintain consistent positions throughout: midpoints remain at their established locations, the parallel plane relationship is preserved, and area/volume ratios follow from the fixed geometry. Verified numerically with coordinates A=(0,0,0), B=(1,0,0), C=(0,1,0), D=(0,0,1): [AEG]=[HIK]=[BEF]=1/8, [ABC]=1/2, R=S=1/16, total volume checks to 1/6.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof makes no angle decompositions, no inside/outside point claims, and no ray-betweenness claims — the primary error patterns are absent. The geometric setup (midpoint decomposition, parallel planes, perpendicular heights) is correct and verified numerically. The remainder of the proof is proportional reasoning (Book 5 propositions) applied to this valid geometric foundation. The different path from Heath (using parallelepipeds and 11.32 instead of the lemma following 12.4 and 6.22) introduces no spatial contradictions."
+}

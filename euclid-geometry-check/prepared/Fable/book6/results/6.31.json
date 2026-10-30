@@ -1,0 +1,36 @@
+{
+  "proposition": "6.31",
+  "run": "Fable",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D lies on segment BC; AD is perpendicular to BC (constructed via 1.12)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangles DBA and DAC adjoin the perpendicular AD and are similar to ABC and to each other (by 6.8)",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle BDA = angle BAC (right angles); BA subtends the right angle in DBA as BC subtends the right angle in ABC; triangles DBA and ABC are similar figures similarly described upon BA and BC",
+      "type": "corresponding_sides"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle ADC = angle BAC (right angles); AC subtends the right angle in DAC as BC subtends the right angle in ABC; triangles DAC and ABC are similar figures similarly described upon AC and BC",
+      "type": "corresponding_sides"
+    },
+    {
+      "step": "Step 8",
+      "claim": "D on BC and AD divides triangle ABC into exactly DBA and DAC, so area(DBA) + area(DAC) = area(ABC)",
+      "type": "area_decomposition"
+    }
+  ],
+  "configuration_map": "Triangle ABC with right angle at A; BC is the hypotenuse. Point D is the foot of the perpendicular from A to BC, lying strictly between B and C. Angle BDA = angle ADC = 90 degrees. Triangle DBA has right angle at D, triangle DAC has right angle at D. Both sub-triangles are similar to ABC by 6.8. Figures P (on BC), Q (on BA), R (on AC) are similar and similarly described. No auxiliary points inside triangles or outside circles; all positions are unambiguous and determined by the single altitude construction.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses a single standard construction (altitude from right-angle vertex to hypotenuse) producing an unambiguous configuration. The similarity relationships, corresponding-side identifications, and area decomposition all follow correctly. No angle decompositions, no inside/outside ambiguities, and no conflicting point positions arise. The different route via 6.22 instead of Heath's 6.19 introduces no spatial contradictions."
+}

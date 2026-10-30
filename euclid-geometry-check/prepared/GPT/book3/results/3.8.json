@@ -1,0 +1,86 @@
+{
+  "proposition": "3.8",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "P is exterior to the circle; line PO intersects circle at A and B in order P, A, O, B; AB is a diameter",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "W is on circumference (not A or B); triangle POW exists with P exterior, O center, W on circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "PW < PO + OW = PO + OB = PB by triangle inequality; PA < PW by subtraction; PA < PB as proper part",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Two secants on same side of PO with orders P,U,X and P,V,Y; angle OPX < angle OPY (PX nearer to PO); U,V convex endpoints; X,Y concave endpoints",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "O lies on one side of line PX; V and Y lie on the other side",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Segments OV and OY cross segment PX at S and T respectively; S and T are inside the circle",
+      "type": "line_intersection"
+    },
+    {
+      "step": "Step 4",
+      "claim": "S and T lie between U and X on secant PX; orders P,U,S,X and P,U,T,X",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In triangle POS, U lies strictly between P and S; cevian OU divides angle POS",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray OS is the same ray as OV (S is on segment OV inside circle); therefore angle POV > angle POU",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "T lies strictly between P and X; cevian OT divides angle POX in triangle POX",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray OT is the same ray as OY (T is on segment OY inside circle); therefore angle POX > angle POY",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Hinge theorem (1.24) on triangles POX, POY: OX=OY, OP common, angle POX > angle POY implies PX > PY",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Hinge theorem (1.24) on triangles POV, POU: OV=OU, OP common, angle POV > angle POU implies PV > PU",
+      "type": "distance_comparison"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Q on circumference; Q' constructed on opposite side of PO with angle POQ' = angle POQ; SAS congruence gives PQ = PQ'",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "If Q, R on same side of PO with PQ=PR and OQ=OR, then on base PO two pairs of equal segments meet at distinct points on same side, contradicting 1.7",
+      "type": "uniqueness"
+    }
+  ],
+  "configuration_map": "P is a fixed exterior point. O is the center of the circle. The line PO intersects the circle at A (between P and O) and B (beyond O), giving diameter AB in order P, A, O, B. Two secants from P on the same side of PO are considered: the nearer one PX (with convex endpoint U and concave endpoint X, order P, U, X) and the farther one PY (with convex endpoint V and concave endpoint Y, order P, V, Y). Since the angular order of rays from P is PO, PX, PY, the center O lies on the opposite side of line PX from V and Y. The radii OV and OY therefore cross segment PX at points S and T respectively. Since S and T lie on radii (hence inside the circle), they fall between U and X on the secant, giving orders P, U, S, X and P, U, T, X. In triangle POS, U is on side PS allowing cevian OU to divide angle POS. In triangle POX, T is on side PX allowing cevian OT to divide angle POX. Ray OS equals ray OV and ray OT equals ray OY since S and T are interior points of their respective radii.",
+  "pass_reason": "All spatial claims are mutually consistent. The key construction — radii OV and OY crossing the nearer secant PX at interior points S and T — is geometrically valid given the established configuration (O on one side of PX, V and Y on the other). The derived angle inequalities at O (via cevians in triangles POS and POX) correctly feed into the hinge theorem (1.24). No angle decomposition inconsistency exists; the proof uses whole-greater-than-part (CN5) rather than additive decomposition. The uniqueness argument via 1.7 is properly configured with same base PO and same-side constraint. The proof takes a different path from Heath (notably using 1.7 instead of 1.21 for uniqueness, and a crossing-radii argument for angle ordering) but all spatial reasoning is sound."
+}

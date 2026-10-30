@@ -1,0 +1,113 @@
+{
+  "proposition": "13.16",
+  "run": "RunB",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C lies on diameter AB with AC = 4·CB; semicircle ADB described on AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CD is perpendicular to AB; D lies on semicircle ADB; angle ADB is right (angle in semicircle); DB² = AB·BC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB² = 5·DB² (algebraic from Step 2)",
+      "type": "algebraic"
+    },
+    {
+      "step": "Step 5",
+      "claim": "A plane through center E is perpendicular to diameter AB",
+      "type": "plane_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Circle with center O, radius r = DB; regular pentagon FGHKL inscribed; perpendicular line through O erected from plane of pentagon",
+      "type": "construction"
+    },
+    {
+      "step": "Step 9",
+      "claim": "M above and N below the plane of the pentagon on the perpendicular axis; second pentagon F'G'H'K'L' in a parallel plane rotated 36° relative to the first",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Each vertex of the top pentagon is joined to two adjacent vertices of the bottom pentagon, forming ten equilateral triangles in a band",
+      "type": "triangle_construction"
+    },
+    {
+      "step": "Step 12",
+      "claim": "The separation between the two pentagonal planes equals s₁₀ (the side of the decagon inscribed in the same circle); lateral edges equal s₅",
+      "type": "plane_separation"
+    },
+    {
+      "step": "Step 13",
+      "claim": "The horizontal distance between a top vertex and adjacent bottom vertex is s₁₀; the separation between the planes also equals s₁₀",
+      "type": "plane_separation"
+    },
+    {
+      "step": "Step 14",
+      "claim": "M is above the top pentagon connected to all 5 top vertices at distance s₅; N is below the bottom pentagon connected to all 5 bottom vertices at distance s₅",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 15",
+      "claim": "M lies on axis of symmetry at height s₁₀ above the top pentagon (MO = s₁₀)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Total height from N to M is 2·s₁₀ + d where d is the inter-plane distance",
+      "type": "distance"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Center of circumscribed sphere lies on axis of symmetry at midpoint between M and N",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 19",
+      "claim": "Top pentagon is at height d/2 above center E; bottom pentagon at height d/2 below E; distance E to vertex F = sqrt((d/2)² + r²)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 20",
+      "claim": "Circumsphere condition: s₁₀² + s₁₀·d = r²",
+      "type": "algebraic"
+    },
+    {
+      "step": "Step 22",
+      "claim": "The distance between the two pentagonal planes d = r (the radius of the circle)",
+      "type": "plane_separation"
+    },
+    {
+      "step": "Step 23",
+      "claim": "With d = r, lateral edge² = r² + s₁₀² = s₅² by 13.10, confirming equilateral triangles",
+      "type": "distance"
+    }
+  ],
+  "configuration_map": "The icosahedron is constructed with 12 vertices: two apex/nadir points M, N on a vertical axis of symmetry, and two regular pentagons (5 vertices each) inscribed in circles of radius r = DB in parallel planes, rotated 36 degrees relative to each other. The key spatial parameter is d, the separation between the two pentagonal planes. Steps 12-13 claim d = s₁₀ (side of decagon). Steps 20-22 derive d = r (radius of the circle). Since s₁₀ = r(√5-1)/2 ≈ 0.618r, these two values are different. M is placed at height s₁₀ above the top pentagon on the axis (Step 15). The circumsphere center E is at the midpoint of M and N on the axis (Step 17), at height d/2 from each pentagonal plane (Step 19).",
+  "contradictory_steps": [
+    "Step 12",
+    "Step 13",
+    "Step 22"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 12 and Step 13",
+    "claim": "The separation between the two pentagonal planes equals s₁₀, the side of the decagon inscribed in a circle of radius r",
+    "required_by": "Step 12's assertion that lateral edges equal s₅ with this plane separation"
+  },
+  "spatial_claim_2": {
+    "step": "Step 22",
+    "claim": "The separation between the two pentagonal planes d = r, the radius of the circle in which the pentagons are inscribed",
+    "required_by": "The circumsphere condition derived in Step 20 (s₁₀² + s₁₀·d = r²) combined with the golden ratio property from Prop. 13.9 (s₁₀² + s₁₀·r = r²)"
+  },
+  "contradiction": "Steps 12-13 assert the inter-plane distance d = s₁₀ (the decagon side), while Step 22 derives d = r (the circle radius). Since s₁₀ = r(√5-1)/2 ≈ 0.618r, these values are not equal. Moreover, Step 12's claim that d = s₁₀ produces equilateral lateral triangles is false: with d = s₁₀ the lateral edge² = s₁₀² + s₁₀² = 2s₁₀², but the required value is s₅² = r² + s₁₀² (by Prop. 13.10), and 2s₁₀² ≠ r² + s₁₀² since r ≠ s₁₀. Only d = r gives the correct lateral edge length. The proof asserts two mutually inconsistent positions for the pentagonal planes.",
+  "fixable": true,
+  "fix_note": "Remove the incorrect claim in Steps 12-13 that d = s₁₀. The correct derivation in Steps 20-22 showing d = r should be retained and presented as the initial determination of the plane separation, not as a post-hoc correction. Heath's proof avoids this issue entirely by constructing perpendiculars of length r (= radius = hexagon side) from each pentagon vertex, which directly establishes the inter-plane distance as r."
+}

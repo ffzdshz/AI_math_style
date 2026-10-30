@@ -1,0 +1,71 @@
+{
+  "proposition": "11.3",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A and B are two distinct points on the common section s of planes Pi and Sigma; line l is defined as AB produced",
+      "type": "point position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Segment AB lies in both planes Pi and Sigma (by D1.7 planarity)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line l (through A, B) is contained in common section s, since 11.1 says a line with a segment in a plane lies entirely in that plane",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "C is a point of s outside line l (reductio hypothesis), hence C is in both planes but not on AB",
+      "type": "point position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Segments CA, CB lie in both planes (D1.7 applied to pairs of common points)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "For every point D on segment AB, segment CD lies in both planes",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The triangular region ABC is entirely common to both planes, since it is filled by segments CD for D on AB",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle ABC is nondegenerate (C outside AB) and has interior points in each plane",
+      "type": "point position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Point X belongs to Pi but not to Sigma (exists because the planes are distinct)",
+      "type": "point position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "O is an interior point of triangle ABC, hence in both planes",
+      "type": "point position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "A nonzero initial segment of ray OX lies within the triangular region ABC and therefore in Sigma (since O is interior and triangle interior is open)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 4",
+      "claim": "X is outside Sigma, so line OX has a segment in Sigma and extends outside it, contradicting 11.1",
+      "type": "plane membership"
+    }
+  ],
+  "configuration_map": "Planes Pi and Sigma intersect. Points A, B lie on their common section s and define line l. Line l lies in both planes (by 11.1). For the reductio, point C lies on s but off l, making triangle ABC nondegenerate with its entire region in both planes. Point O is interior to triangle ABC, hence in both planes. Point X is in Pi but not Sigma (guaranteed by distinctness of planes). Line OX lies in Pi; its initial segment from O lies within the triangle (open interior) and hence in Sigma, but X is not in Sigma, giving the contradiction with 11.1.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly establishes plane membership for each point and region, correctly uses the openness of the triangle interior to place an initial segment of OX in Sigma, and correctly applies 11.1 to derive the contradiction. No point is placed in contradictory positions across steps, and no implicit spatial assumption conflicts with an explicit one."
+}

@@ -1,0 +1,37 @@
+{
+  "proposition": "10.114",
+  "book": 10,
+  "statement": "If an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the âsideâ of the area is rational.",
+  "heath_proof": "For let an area, the rectangle AB, CD, be contained by the apotome AB and the binomial straight line CD, and let CE be the greater term of the latter; let the terms CE, ED of the binomial straight line be commensurable with the terms AF, FB of the apotome and in the same ratio; and let the “side” of the rectangle AB, CD be G; I say that G is rational. For let a rational straight line H be set out, and to CD let there be applied a rectangle equal to the square on H and producing KL as breadth. Therefore KL is an apotome. Let its terms be KM, ML commensurable with the terms CE, ED of the binomial straight line and in the same ratio. [X. 112] But CE, ED are also commensurable with AF, FB and in the same ratio; therefore, as AF is to FB, so is KM to ML. Therefore, alternately, as AF is to KM, so is BF to LM; therefore also the remainder AB is to the remainder KL as AF is to KM. [V. 19] But AF is commensurable with KM; [X. 12] therefore AB is also commensurable with KL. [X. 11] And, as AB is to KL, so is the rectangle CD, AB to the rectangle CD, KL; [VI. 1] therefore the rectangle CD, AB is also commensurable with the rectangle CD, KL. [X. 11] But the rectangle CD, KL is equal to the square on H; therefore the rectangle CD, AB is commensurable with the square on H. But the square on G is equal to the rectangle CD, AB; therefore the square on G is commensurable with the square on H. But the square on H is rational; therefore the square on G is also rational; therefore G is rational. And it is the “side” of the rectangle CD, AB.",
+  "ai_proof_text": "10.114\n**Statement:** If an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the âsideâ of the area is rational.\n\n**Step 1.** Let the area S be contained by an apotome AB and a binomial straight line CD, where the terms of CD are commensurable with the terms of AB and in the same ratio. We are to show that the \"side\" of S is rational.\n\n**Step 2.** Let AB have terms a (the whole) and b (the annex), so that AB = a - b, where a and b are rational straight lines commensurable in square only. Let CD have terms c and d, where c is commensurable with a, d is commensurable with b, and c : d = a : b.\n\n**Step 3.** Take a rational straight line r. Apply the square on r to the binomial CD, producing some breadth E, so that the rectangle CD * E equals the square on r. By 10.112, E is an apotome whose terms (call them e1 and e2, with e1 > e2) are commensurable with the terms of CD and in the same ratio; that is, e1 is commensurable with c, e2 is commensurable with d, and e1 : e2 = c : d.\n\n**Step 4.** Since e1 is commensurable with c and c is commensurable with a, by 10.12, e1 is commensurable with a. Similarly, since e2 is commensurable with d and d is commensurable with b, by 10.12, e2 is commensurable with b.\n\n**Step 5.** Since e1 : e2 = c : d and c : d = a : b, we have e1 : e2 = a : b by CN1.\n\n**Step 6.** From e1 : e2 = a : b, by alternando (5.16), we obtain e1 : a = e2 : b.\n\n**Step 7.** Since e1 is commensurable with a (Step 4), the ratio e1 : a is a ratio of a number to a number, by 10.5.\n\n**Step 8.** Now e1 > e2 (since e1, e2 are terms of an apotome with e1 the whole) and a > b (since a, b are terms of an apotome with a the whole). Since e1 : a = e2 : b (Step 6), by 5.19, the remainder (e1 - e2) is to the remainder (a - b) as e1 is to a. That is, E : AB = e1 : a.\n\n**Step 9.** Since e1 : a is a ratio of a number to a number (Step 7), E : AB is likewise a ratio of a number to a number. Therefore E and AB are commensurable in length, by 10.6.\n\n**Step 10.** Now consider the rectangle AB * CD and the rectangle E * CD. By 6.1, since the rectangles AB * CD and E * CD have the same breadth CD, they are to one another as AB is to E. That is, (AB * CD) : (E * CD) = AB : E.\n\n**Step 11.** Since AB and E are commensurable in length (Step 9), the ratio AB : E is a ratio of a number to a number (10.5). Therefore the rectangle AB * CD and the rectangle E * CD are commensurable areas, by 10.6.\n\n**Step 12.** But the rectangle E * CD equals the square on r (Step 3), and r is rational; therefore the square on r is a rational area (D10.1.4). Since AB * CD is commensurable with the rational area E * CD, the rectangle AB * CD is itself rational (D10.1.4).\n\n**Step 13.** Since AB * CD is a rational area, the \"side\" of the area -- that is, the side of the square equal to the rectangle AB * CD -- is a rational straight line (D10.1.4).\n\nTherefore, if an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the \"side\" of the area is rational. Q.E.D.\n\n**USED:** 10.112, 10.12, 10.5, 10.6, 5.16, 5.19, 6.1, CN1, D10.1.4\n**Human refs (from References field):** 10.11, 10.112, 10.12, 5.19, 6.1\n**Jaccard:** 0.400 — AI adds ['10.5', '10.6', '5.16', 'CN1', 'D10.1.4']; Human adds ['10.11']",
+  "ai_used": [
+    "10.112",
+    "10.12",
+    "10.5",
+    "10.6",
+    "5.16",
+    "5.19",
+    "6.1",
+    "CN1",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.112",
+    "10.12",
+    "5.19",
+    "6.1"
+  ],
+  "ai_only": [
+    "10.5",
+    "10.6",
+    "5.16",
+    "CN1",
+    "D10.1.4"
+  ],
+  "heath_only": [
+    "10.11"
+  ],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let the area S be contained by an apotome AB and a binomial straight line CD, where the terms of CD are commensurable with the terms of AB and in the same ratio. We are to show that the \"s"
+}

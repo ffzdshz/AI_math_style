@@ -1,0 +1,29 @@
+{
+  "proposition": "8.14",
+  "book": 8,
+  "statement": "If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.",
+  "heath_proof": "Let A, B be square numbers, let C, D be their sides, and let A measure B; I say that C also measures D. For let C by multiplying D make E; therefore A, E, B are continuously proportional in the ratio of C to D. [VIII. 11] And, since A, E, B are continuously proportional, and A measures B, therefore A also measures E. [VIII. 7] And, as A is to E, so is C to D; therefore also C measures D. [VII. Def. 20] Again, let C measure D; I say that A also measures B. For, with the same construction, we can in a similar manner prove that A, E, B are continuously proportional in the ratio of C to D. And since, as C is to D, so is A to E, and C measures D, therefore A also measures E. [VII. Def. 20] And A, E, B are continuously proportional; therefore A also measures B.",
+  "ai_proof_text": "8.14\n**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.\n\n**Step 1.** Let A and B be numbers, with A^2 and B^2 their respective squares. We must prove two things: (i) if A^2 measures B^2, then A measures B; and (ii) if A measures B, then A^2 measures B^2.\n\n**Step 2.** (Part i: Forward direction.) Suppose A^2 measures B^2. Since A^2 and B^2 are square numbers, by 8.11, there is one mean proportional number between them, namely the product AB, so that A^2, AB, B^2 are in continued proportion.\n\n**Step 3.** Since A^2, AB, B^2 are three numbers in continued proportion and the first (A^2) measures the last (B^2), by 8.7, the first also measures the second; that is, A^2 measures AB.\n\n**Step 4.** Now, A multiplied by A produces A^2, and A multiplied by B produces AB. By 7.17, the products of a number multiplying two numbers have the same ratio as the numbers multiplied. Therefore A^2 : AB = A : B.\n\n**Step 5.** Since A^2 measures AB, by the definition of measurement (D7.3), AB is a multiple of A^2. By 7.20, since A^2 : AB = A : B, and A^2 is the same part of AB as A is of B, it follows that A measures B.\n\n**Step 6.** (Part ii: Converse direction.) Now suppose A measures B. Again by 7.17, since A multiplied by A gives A^2 and A multiplied by B gives AB, we have A^2 : AB = A : B. Since A measures B, by 7.20, A^2 measures AB.\n\n**Step 7.** Similarly, B multiplied by A gives AB and B multiplied by B gives B^2. By 7.17, AB : B^2 = A : B. Since A measures B, by 7.20, AB measures B^2.\n\n**Step 8.** Since A^2 measures AB and AB measures B^2, A^2 measures B^2. (For if AB = k * A^2 and B^2 = m * AB, then B^2 = mk * A^2, so A^2 measures B^2.)\n\n**Step 9.** Therefore, if a square measures a square, the side also measures the side; and if the side measures the side, the square also measures the square. Q.E.D.\n\n**USED:** 7.17, 7.20, 8.11, 8.7, D7.3\n**Human refs (from References field):** 8.11, 8.7, D7.20\n**Jaccard:** 0.333 — AI adds ['7.17', '7.20', 'D7.3']; Human adds ['D7.20']",
+  "ai_used": [
+    "7.17",
+    "7.20",
+    "8.11",
+    "8.7",
+    "D7.3"
+  ],
+  "heath_refs": [
+    "8.11",
+    "8.7",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "7.20",
+    "D7.3"
+  ],
+  "heath_only": [
+    "D7.20"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let A and B be numbers, with A^2 and B^2 their respective squares. We must prove two things: (i) if A^2 measures B^2, then A measures B; and (ii) if A measures B, then A^2 measures B^2.  *"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "6.20",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "The forward-dependency gate passes cleanly. Q1 finds no logical defect: the AI proof is complete and every step is properly supported by cited propositions. Q2 reveals that while the first part of the proof (dividing similar polygons into similar triangles, Steps 1-11) shares the same backbone as Heath — both use VI.6, VI.4, angle subtraction, and V.22 ex aequali in the same sequence — the second part (proving the triangles are in the same ratio as the wholes) follows a fundamentally different route. Heath joins the further diagonals AC and FH, uses I.32 to show partial triangles equiangular, and compares the component triangles through their bases using VI.1 and V.12 with alternation. The AI instead applies VI.19 to the shared corresponding sides (BE:GL and EC:LH) of adjacent similar triangle pairs, constructs third proportionals via 6.11, identifies the duplicate ratio via D5.9, equates the triangle ratios via 5.11, and sums via V.12. The heath_only references 1.32 and 6.1 belong entirely to Heath's diagonal-based approach and are not subsumed by any proposition the AI cites; conversely, the ai_only references 5.11, 6.11, and D5.9 belong to the AI's duplicate-ratio approach. This constitutes a genuine path divergence (Case B). Q3 confirms the AI's alternative chain is logically valid, running soundly from premises to conclusion, so the classification is D.",
+  "jaccard": 0.462,
+  "ai_citations": "5.11|5.12|5.22|6.11|6.19|6.4|6.6|CN3|D5.9|D6.1|P1",
+  "heath_citations": "1.32|5.12|5.22|6.1|6.19|6.4|6.6|D6.1",
+  "ai_only": "5.11|6.11|CN3|D5.9|P1",
+  "heath_only": "1.32|6.1",
+  "audit_record": ""
+}

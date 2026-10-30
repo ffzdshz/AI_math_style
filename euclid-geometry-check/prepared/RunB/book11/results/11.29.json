@@ -1,0 +1,87 @@
+{
+  "proposition": "11.29",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "CM is a parallelepiped on base ABCD with standing edges AE, BF, CG, DH (all parallel, same vector v); CN is a parallelepiped on base ABCD with standing edges AE', BF', CG', DH' (all parallel, same vector w). The collinearity condition (E,F,E',F' on one line; H,G,H',G' on another) constrains w = v + t*AB but does NOT require v || w.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "EH is equal and parallel to E'H' (both equal to AD), confirmed by 11.9 and 1.33",
+      "type": "line_parallelism"
+    },
+    {
+      "step": "Step 4",
+      "claim": "EHH'E' is a parallelogram; FGG'F' is a parallelogram",
+      "type": "planar_figure"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Diagonal plane through BF, DH divides CM into Prism-I (ABD-EFH) and Prism-II (BCD-FGH) by 11.28",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Diagonal plane through BF', DH' divides CN into Prism-III (ABD-E'F'H') and Prism-IV (BCD-F'G'H') by 11.28",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 17",
+      "claim": "The auxiliary solid ABCD-EF'G'H with standing edges AE, BF', CG', DH is a parallelepiped",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 18",
+      "claim": "Diagonal plane through BF', DH divides auxiliary solid into Prism-V (ABD-EF'H) and Prism-VI (BCD-F'G'H) by 11.28",
+      "type": "solid_decomposition"
+    },
+    {
+      "step": "Step 20",
+      "claim": "Triangle EFH = triangle EF'H by 1.37 (same base EH, between same parallels)",
+      "type": "planar_figure"
+    },
+    {
+      "step": "Step 21",
+      "claim": "Prism-I = Prism-V (equal bases ABD, equal opposite faces EFH=EF'H, same height between parallel planes)",
+      "type": "solid_equality"
+    },
+    {
+      "step": "Step 28",
+      "claim": "Prism-II = Prism-VI (equal base BCD, equal opposite triangles FGH = F'G'H by 1.37)",
+      "type": "solid_equality"
+    },
+    {
+      "step": "Step 29",
+      "claim": "CM = Prism-V + Prism-VI = auxiliary solid",
+      "type": "solid_equality"
+    },
+    {
+      "step": "Step 30",
+      "claim": "Auxiliary solid = CN by symmetric reasoning",
+      "type": "solid_equality"
+    }
+  ],
+  "configuration_map": "Configuration: Two parallelepipeds CM and CN share base ABCD (a parallelogram in a plane). CM has translation vector v (AE=BF=CG=DH=v), CN has translation vector w (AE'=BF'=CG'=DH'=w). The collinearity condition forces w-v = t*AB for some scalar t (since E,F,E',F' must be collinear and H,G,H',G' must be collinear). All top vertices (E,F,G,H,E',F',G',H') lie in the same plane parallel to ABCD. The auxiliary solid ABCD-EF'G'H has standing edges AE=v (from CM) and BF'=w (from CN). Since w = v + t*AB and v is generally not parallel to AB, we have v not parallel to w, so AE is not parallel to BF'. Consequently face ABF'E is not a parallelogram and the auxiliary solid is not a parallelepiped. Concrete counterexample: A=(0,0,0), B=(1,0,0), C=(1,1,0), D=(0,1,0), v=(0.5,0,1), w=(0.8,0,1) gives valid parallelepipeds satisfying all hypotheses but AE=(0.5,0,1) is not parallel to BF'=(0.8,0,1).",
+  "contradictory_steps": [
+    "Step 1",
+    "Step 17"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 1",
+    "claim": "CM and CN are general parallelepipeds on base ABCD satisfying the collinearity condition. Their translation vectors v and w satisfy w = v + t*AB but are NOT required to be parallel (v not parallel to w in general).",
+    "required_by": "The hypothesis of the proposition; establishes the generality of the configuration"
+  },
+  "spatial_claim_2": {
+    "step": "Step 17",
+    "claim": "The solid ABCD-EF'G'H (with standing edges AE from CM and BF' from CN) is a parallelepiped. This implicitly requires AE || BF', i.e., v || w.",
+    "required_by": "Application of Proposition 11.28 in Step 18 to decompose the auxiliary solid into prisms, which is essential for the chain CM = auxiliary solid = CN in Steps 29-31"
+  },
+  "contradiction": "The auxiliary solid ABCD-EF'G'H has standing edges AE = v (from CM) and BF' = w (from CN). For it to be a parallelepiped, all six faces must be parallelograms, which requires AE || BF' (i.e., v || w). But the hypothesis only constrains w = v + t*AB (from collinearity), which does NOT imply v || w unless v happens to be parallel to AB (a degenerate case). In a general oblique parallelepiped, v is not parallel to AB, so AE is not parallel to BF', face ABF'E is not a parallelogram, and the auxiliary solid is not a parallelepiped. A concrete counterexample with v=(0.5,0,1) and w=(0.8,0,1) confirms this: both parallelepipeds satisfy all hypotheses but ABF'E has non-parallel opposite sides.",
+  "fixable": true,
+  "fix_note": "Heath's proof avoids this entirely by using a direct subtraction/addition approach: showing triangles DCE = HBK (by I.8, I.4), parallelograms DG = HN (by I.36), and then adding equal prisms to reach CM = CN. The AI's strategy of constructing an auxiliary parallelepiped is fundamentally flawed because the solid ABCD-EF'G'H is not a parallelepiped in general. A correct proof must use Heath's approach or an equivalent one that does not require this false intermediate construction."
+}

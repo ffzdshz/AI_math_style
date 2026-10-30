@@ -1,0 +1,21 @@
+{
+  "proposition": "7.35",
+  "book": 7,
+  "statement": "If two numbers measure any number, the least number measured by them will also measure the same.",
+  "heath_proof": "For let the two numbers A, B measure any number CD, and let E be the least that they measure; I say that E also measures CD. For, if E does not measure CD, let E, measuring DF, leave CF less than itself. Now, since A, B measure E, and E measures DF, therefore A, B will also measure DF. But they also measure the whole CD; therefore they will also measure the remainder CF which is less than E: which is impossible. Therefore E cannot fail to measure CD; therefore it measures it.",
+  "ai_proof_text": "7.35\n**Statement:** If two numbers measure any number, the least number measured by them will also measure the same.\n\n**Step 1.** Let A and B be two numbers that both measure some number C, and let D be the least number that is measured by both A and B. We must show that D also measures C. The existence of D is guaranteed by Proposition 7.34.\n\n**Step 2.** Suppose, for the sake of contradiction, that D does not measure C. Then since D is less than or equal to C (because A measures both D and C, and D is the least number measured by A and B, while C is also measured by both, so D cannot exceed C), we may subtract D from C repeatedly. By this process, some number R is left which is less than D, where C exceeds a multiple of D by R, so that C = kD + R with R less than D and R not zero (since D does not measure C by our assumption).\n\n**Step 3.** Since A measures C, we have C = mA for some number m (by Definition D7.3). Since A measures D, we have D = nA for some number n. Therefore kD = knA, so A measures kD. Since C = kD + R, we have R = C - kD = mA - knA = (m - kn)A. Hence A measures R (by D7.3 and D7.5, since m - kn is a positive number as R is positive).\n\n**Step 4.** By the same reasoning, since B measures C and B measures D, we have C = pB and D = qB for some numbers p and q. Then R = C - kD = pB - kqB = (p - kq)B. Hence B measures R.\n\n**Step 5.** Therefore both A and B measure R. But R is less than D, and D was defined as the least number measured by both A and B (by 7.34). This is a contradiction, since R would be a number less than D that is measured by both A and B.\n\n**Step 6.** Therefore our supposition is false, and D does measure C. Hence the least number measured by A and B also measures C. Q.E.D.\n\n**USED:** 7.34, D7.3, D7.5\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['7.34', 'D7.3', 'D7.5']",
+  "ai_used": [
+    "7.34",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "7.34",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A and B be two numbers that both measure some number C, and let D be the least number that is measured by both A and B. We must show that D also measures C. The existence of D is guara"
+}

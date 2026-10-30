@@ -1,0 +1,41 @@
+{
+  "proposition": "3.9",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is a point taken within circle ABC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "A, B, C are points on circle ABC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "DA, DB, DC are straight lines from D to the circle with DA = DB = DC",
+      "type": "segment_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Assume D is not the centre of circle ABC (for contradiction)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "By Prop 3.7, since D is a non-centre interior point, only two equal straight lines can fall from D on the circle",
+      "type": "circle_inside_outside"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Three equal straight lines DA, DB, DC fall from D on the circle, contradicting the maximum of two from 3.7",
+      "type": "logical_contradiction"
+    }
+  ],
+  "configuration_map": "Circle ABC with interior point D. Points A, B, C lie on the circumference. Segments DA, DB, DC connect D to A, B, C respectively, all equal in length. D is interior to the circle throughout the proof. Any interior non-centre point lies on a diameter (the one through the centre and D), so Proposition 3.7 applies to D. The configuration is simple and static — no auxiliary constructions are made, no points change position, and the proof proceeds entirely by logical contradiction using a prior result.",
+  "pass_reason": "The proof is a clean indirect argument with minimal spatial content. The only geometric claims are that D is inside the circle and that three equal lines run from D to the circumference. The application of Proposition 3.7 is valid because any interior non-centre point lies on a diameter, satisfying 3.7's hypothesis. No angle decompositions, betweenness claims, or interior/exterior arguments are made, so there is no opportunity for the characteristic configuration contradiction patterns. All spatial claims are mutually consistent."
+}

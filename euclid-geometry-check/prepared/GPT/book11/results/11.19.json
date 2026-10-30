@@ -1,0 +1,56 @@
+{
+  "proposition": "11.19",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Planes alpha and beta are each perpendicular to plane Pi; their common section is line s; a = alpha ∩ Pi and b = beta ∩ Pi are straight lines",
+      "type": "plane perpendicularity and intersection"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Point A is chosen on s; line p is constructed in alpha through A perpendicular to a; line q is constructed in beta through A perpendicular to b",
+      "type": "point position and perpendicular construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Case analysis: if A lies in Pi then A lies on both a and b (perpendiculars erected at A); if A not in Pi then perpendiculars dropped from A",
+      "type": "point position relative to plane"
+    },
+    {
+      "step": "Step 3",
+      "claim": "p is perpendicular to Pi (by Def. 11.4 applied to alpha ⊥ Pi with p ⊥ a in alpha)",
+      "type": "line perpendicular to plane"
+    },
+    {
+      "step": "Step 3",
+      "claim": "q is perpendicular to Pi (by Def. 11.4 applied to beta ⊥ Pi with q ⊥ b in beta)",
+      "type": "line perpendicular to plane"
+    },
+    {
+      "step": "Step 4",
+      "claim": "p and q both pass through A and are both perpendicular to Pi; if distinct they would be parallel by 11.6, contradicting that they share point A",
+      "type": "parallelism and concurrence"
+    },
+    {
+      "step": "Step 4",
+      "claim": "p and q coincide (they are the same line)",
+      "type": "line identification"
+    },
+    {
+      "step": "Step 5",
+      "claim": "The coincident line p=q lies in both alpha and beta, hence is their common section s by 11.3",
+      "type": "plane membership and line identification"
+    },
+    {
+      "step": "Step 5",
+      "claim": "s is perpendicular to Pi (since s = p = q and p ⊥ Pi from Step 3)",
+      "type": "line perpendicular to plane"
+    }
+  ],
+  "configuration_map": "Plane Pi is the fixed reference plane. Planes alpha and beta are both perpendicular to Pi and intersect each other along line s. The traces a = alpha ∩ Pi and b = beta ∩ Pi are lines in Pi. Point A is chosen on s (hence in both alpha and beta). Line p is constructed in alpha through A perpendicular to a; line q is constructed in beta through A perpendicular to b. By Def. 11.4, both p and q are perpendicular to Pi. By 11.6, since p and q are both perpendicular to Pi and share point A, they must coincide. The coincident line lies in both alpha and beta, so by 11.3 it is s. Therefore s is perpendicular to Pi.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof uses a direct argument (11.6 for parallelism of perpendiculars plus Def. 1.23 to force coincidence) rather than Heath's proof by contradiction (11.13). Every perpendicularity claim follows correctly from Def. 11.4, the identification of lines via 11.6 and 11.3 is valid, and no angle decomposition or interior/exterior point issues arise in this solid geometry perpendicularity argument."
+}

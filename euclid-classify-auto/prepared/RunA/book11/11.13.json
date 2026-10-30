@@ -1,0 +1,26 @@
+{
+  "proposition": "11.13",
+  "book": 11,
+  "statement": "From the same point two straight lines cannot be set up at right angles to the same plane on the same side.",
+  "heath_proof": "For, if possible, from the same point A let the two straight lines AB, AC be set up at right angles to the plane of reference and on the same side, and let a plane be drawn through BA, AC; it will then make, as section through A in the plane of reference, a straight line. [XI. 3] Let it make DAE; therefore the straight lines AB, AC, DAE are in one plane. And, since CA is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference. [XI. Def. 3] But DAE meets it and is in the plane of reference; therefore the angle CAE is right. For the same reason the angle BAE is also right; therefore the angle CAE is equal to the angle BAE. And they are in one plane: which is impossible.",
+  "ai_proof_text": "11.13\n**Statement:** From the same point two straight lines cannot be set up at right angles to the same plane on the same side.\n\n**Step 1.** Suppose, for the sake of contradiction, that from the same point A two distinct straight lines AB and AC are both set up at right angles to the same plane P, on the same side of that plane.\n\n**Step 2.** Since AB and AC are two straight lines meeting at A, by 11.2, they lie in one plane, call it Q.\n\n**Step 3.** Since planes P and Q both exist and intersect (they share at least the point A, and the plane P contains points not in Q since AB is not in P), by 11.3 their common section is a straight line. Let this line of intersection be DAE, passing through A and lying in plane P.\n\n**Step 4.** Since AB is at right angles to the plane P, by D11.3, AB makes right angles with every straight line that meets it and lies in plane P. In particular, since DAE lies in plane P and meets AB at A, the angle BAD is a right angle, and the angle BAE is a right angle.\n\n**Step 5.** Similarly, since AC is at right angles to the plane P, by D11.3, AC makes right angles with every straight line that meets it and lies in plane P. In particular, since DAE lies in plane P and meets AC at A, the angle CAD is a right angle, and the angle CAE is a right angle.\n\n**Step 6.** Now consider the configuration in the single plane Q. The lines AB, AC, and DAE all lie in plane Q. The line DAE passes through A. Both AB and AC are on the same side of line DAE (since they are on the same side of plane P, and DAE lies in plane P).\n\n**Step 7.** Since angle BAD is a right angle (Step 4) and angle CAD is a right angle (Step 5), and AB and AC are on the same side of line DAE, we have angle BAD equals angle CAD, both being right angles, by P4.\n\n**Step 8.** But since AB and AC are distinct lines from A on the same side of DAE, one of them, say AC, lies in the interior of angle BAD (or AB lies in the interior of angle CAD). Therefore angle CAD is a proper part of angle BAD (or vice versa).\n\n**Step 9.** By CN5, the whole is greater than the part. So angle BAD is greater than angle CAD (or vice versa). But this contradicts Step 7, where we established that angle BAD equals angle CAD.\n\n**Step 10.** Therefore the assumption is false, and from the same point two straight lines cannot be set up at right angles to the same plane on the same side. Q.E.D.\n\n**USED:** 11.2, 11.3, CN5, D11.3, P4\n**Human refs (from References field):** 11.3, D11.3\n**Jaccard:** 0.400 — AI adds ['11.2', 'CN5', 'P4']",
+  "ai_used": [
+    "11.2",
+    "11.3",
+    "CN5",
+    "D11.3",
+    "P4"
+  ],
+  "heath_refs": [
+    "11.3",
+    "D11.3"
+  ],
+  "ai_only": [
+    "11.2",
+    "CN5",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Suppose, for the sake of contradiction, that from the same point A two distinct straight lines AB and AC are both set up at right angles to the same plane P, on the same side of that plane"
+}

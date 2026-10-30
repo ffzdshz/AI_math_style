@@ -1,0 +1,33 @@
+{
+  "proposition": "9.3",
+  "book": 9,
+  "statement": "If a cube number by multiplying itself make some number, the product will be cube.",
+  "heath_proof": "For let the cube number A by multiplying itself make B; I say that B is cube. For let C, the side of A, be taken, and let C by multiplying itself make D. It is then manifest that C by multiplying D has made A. Now, since C by multiplying itself has made D, therefore C measures D according to the units in itself. But further the unit also measures C according to the units in it; therefore, as the unit is to C, so is C to D. [VII. Def. 20] Again, since C by multiplying D has made A, therefore D measures A according to the units in C. But the unit also measures C according to the units in it; therefore, as the unit is to C, so is D to A. But, as the unit is to C, so is C to D; therefore also, as the unit is to C, so is C to D, and D to A. Therefore between the unit and the number A two mean proportional numbers C, D have fallen in continued proportion. Again, since A by multiplying itself has made B, therefore A measures B according to the units in itself. But the unit also measures A according to the units in it; therefore, as the unit is to A, so is A to B. [VII. Def. 20] But between the unit and A two mean proportional numbers have fallen; therefore two mean proportional numbers will also fall between A, B. [VIII. 8] But, if two mean proportional numbers fall between two numbers, and the first be cube, the second will also be cube. [VIII. 23] And A is cube; therefore B is also cube.",
+  "ai_proof_text": "9.3\n**Statement:** If a cube number by multiplying itself make some number, the product will be cube.\n\n**Step 1.** Let A be a cube number, and let A multiplied by A produce B. Since A is cube, there exists a number C such that A = C * C * C [D7.19]. Let D = C * C; then D is a square number [D7.18].\n\n**Step 2.** Now C multiplied by D gives C * (C * C) = C * C * C = A. So A is the product of C and D.\n\n**Step 3.** Since C multiplied by C produces D, and C multiplied by D produces A, by 7.17 the products are in the same ratio as the numbers multiplied, that is, D : A = C : D.\n\n**Step 4.** Rewriting the proportion of Step 3 as C : D = D : A, we apply 7.19: C * A = D * D. Let E = C * A, so that E = D * D.\n\n**Step 5.** Since C multiplied by D produces A, and C multiplied by A produces E, by 7.17 we have A : E = D : A.\n\n**Step 6.** From Steps 3 and 5, we have C : D = D : A = A : E. Therefore C, D, A, E are four numbers in continued proportion.\n\n**Step 7.** From the proportion A : E = D : A (Step 5), by 7.19 we obtain A * A = E * D. Hence B = E * D.\n\n**Step 8.** Since E = D * D (Step 4), we have B = E * D = (D * D) * D. That is, D multiplied by D produces E, and E multiplied by D produces B. Therefore B is a solid number with three equal sides D, D, D [D7.17].\n\n**Step 9.** Since B is the product of three equal numbers (D multiplied by D and again by D), B is a cube number [D7.19]. This is what was to be proved.\n\n**USED:** 7.17, 7.19, D7.17, D7.18, D7.19\n**Human refs (from References field):** 8.23, 8.8, D7.20\n**Jaccard:** 0.000 — AI adds ['7.17', '7.19', 'D7.17', 'D7.18', 'D7.19']; Human adds ['8.23', '8.8', 'D7.20']",
+  "ai_used": [
+    "7.17",
+    "7.19",
+    "D7.17",
+    "D7.18",
+    "D7.19"
+  ],
+  "heath_refs": [
+    "8.23",
+    "8.8",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.17",
+    "7.19",
+    "D7.17",
+    "D7.18",
+    "D7.19"
+  ],
+  "heath_only": [
+    "8.23",
+    "8.8",
+    "D7.20"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A be a cube number, and let A multiplied by A produce B. Since A is cube, there exists a number C such that A = C * C * C [D7.19]. Let D = C * C; then D is a square number [D7.18].  **"
+}

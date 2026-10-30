@@ -1,0 +1,41 @@
+{
+  "proposition": "12.5",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pyramids P and Q have the same height with triangular bases of areas A and B; each is subdivided by 12.3 into prism collections and remaining pyramids: P = X_k + R_k, Q = Y_k + S_k",
+      "type": "volumetric decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "At every stage the prism collections maintain ratio X_k : Y_k = A : B (by 12.4)",
+      "type": "volumetric ratio"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For k > 1, X_k > X_1 and Y_k > Y_1 since later collections include additional prisms",
+      "type": "volumetric comparison"
+    },
+    {
+      "step": "Step 3",
+      "claim": "At each stage more than half of every remaining pyramid is removed as prisms (from 12.3)",
+      "type": "volumetric removal rate"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Volumetric inequality chain: nQ = nY_k + nS_k < nY_k + delta < mX_k < mP",
+      "type": "volumetric inequality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "If mA = nB then mX_k = nY_k at every stage; contradiction derived from assuming mP != nQ",
+      "type": "volumetric equality"
+    }
+  ],
+  "configuration_map": "No auxiliary geometric points, lines, or planes are constructed by this proof. The pyramids P and Q are given by the proposition statement. All subdivisions into prisms and smaller pyramids are handled by reference to Propositions 12.3 and 12.4. The proof operates entirely at the level of volumes (X_k, Y_k, R_k, S_k) and ratios, using Definition 5.5 (Eudoxean equal ratios) and Proposition 10.1 (Archimedean property). There are no spatial positions to track.",
+  "pass_reason": "The proof is primarily proportional/algebraic, operating on volumes and ratios rather than geometric configurations. Its spatial content consists of volumetric decompositions (P = X_k + R_k) and ratio comparisons (X_k : Y_k = A : B), all delegated to cited propositions 12.3 and 12.4. No point positions, ray orderings, angle decompositions, interior/exterior claims, or solid geometry configuration claims are made, so no spatial contradiction is possible."
+}

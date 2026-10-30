@@ -1,0 +1,71 @@
+{
+  "proposition": "3.13",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Circle ABDC (center G) and circle ABEC (center H) touch internally at two distinct points A and B (assumed for contradiction)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "G, H, A, B are all collinear on a single straight line (by applying 3.11 to each contact point)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "GA = GB (A, B on circle with center G); HA = HB (A, B on circle with center H)",
+      "type": "equal_distances"
+    },
+    {
+      "step": "Step 5",
+      "claim": "A and B are on opposite sides of G; G is the midpoint of segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "H is the midpoint of segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "G coincides with H (both midpoints of AB)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Circle AKC (center G) and circle ALC (center H) touch externally at two distinct points A and C (assumed for contradiction)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G, H, A, C are all collinear (by applying 3.12 to each contact point)",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 11",
+      "claim": "GA = GC (A, C on circle with center G); HA = HC (A, C on circle with center H)",
+      "type": "equal_distances"
+    },
+    {
+      "step": "Step 12",
+      "claim": "A and C are on opposite sides of G; G is the midpoint of segment AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 13",
+      "claim": "H is the midpoint of segment AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 14",
+      "claim": "G coincides with H (both midpoints of AC)",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Case 1 (Internal tangency): G is the center of the outer circle ABDC, H is the center of the inner circle ABEC. Points A and B are assumed to be two distinct internal tangent points. By 3.11 applied to each contact point, all four points G, H, A, B lie on a single line. GA = GB and HA = HB by definition of circles. Since A and B are distinct and equidistant from G on a line, they are on opposite sides of G (G is the midpoint of AB). Same reasoning makes H the midpoint of AB, so G = H.\n\nCase 2 (External tangency): G is the center of circle AKC, H is the center of circle ALC. Points A and C are assumed to be two distinct external tangent points. By 3.12 applied to each contact point, G, H, A, C are collinear. GA = GC and HA = HC by definition of circles. Same midpoint argument gives G = H.\n\nIn both cases the proof reaches a contradiction with 3.6 (tangent circles cannot share a center). All spatial claims are logically valid deductions from the assumed-false premises; no step requires a point to occupy two incompatible positions within the reasoning mechanism.",
+  "pass_reason": "The proof uses only collinearity (from 3.11/3.12), equal radii (definition of circle), and midpoint deductions -- all simple, unambiguous spatial relationships. No angle decompositions, no complex inside/outside claims, and no ray ordering arguments appear. Every spatial deduction follows validly from its premises. The contradictions derived (G = H vs. 3.6) are the intended outcome of the reductio ad absurdum, not errors in the geometric reasoning mechanism."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "7.33",
+  "category": "E",
+  "category_label": "AI proof error",
+  "error_type": "Invalid inference",
+  "analysis": "The classification was decided at Q1(b). The AI's proof contains an invalid inference in Step 8: it claims that E and F are pairwise coprime because 'any common measure of E and F would also measure G,' but this is false in general. Group coprimality (gcd(E,F,G)=1, established in Steps 5-7) does not entail pairwise coprimality. For example, with A=6, B=10, C=15, D=gcd=1, we get E=6, F=10, G=15 where gcd(6,10)=2 but 2 does not divide 15, yet gcd(6,10,15)=1. The AI then applies Proposition 7.21 (numbers prime to one another are least in their ratio) to the pair E, F, but 7.21 requires pairwise coprimality which was not validly established. This breaks the proof chain: without pairwise coprimality, the AI cannot invoke 7.21 to get that E, F are least in ratio E:F, and therefore cannot use 7.20 to derive the contradiction. Heath avoids this issue entirely by using a direct contradiction argument through 7.19 (cross-multiplication proportion). The audit record completes convincingly: the AI infers Q (pairwise coprimality) from P (group coprimality) where P does not entail Q, satisfying the 'invalid inference' mode.",
+  "jaccard": 0.3,
+  "ai_citations": "7.17|7.20|7.21|7.3|CN1|CN5|D7.15",
+  "heath_citations": "7.16|7.19|7.21|7.3|D7.15|D7.20",
+  "ai_only": "7.17|7.20|CN1|CN5",
+  "heath_only": "7.16|7.19|D7.20",
+  "audit_record": "CANDIDATE E — 7.33\n  violated_claim : \"E and F are prime to one another (from Step 7, any common measure of E and F would also measure G, giving a common measure of all three greater than one, which was shown impossible)\"\n  failure_mode   : invalid_inference\n  missing_is     : support\n  evidence       : Step 8 claims pairwise coprimality of E, F from group coprimality of E, F, G. The parenthetical justification \"any common measure of E and F would also measure G\" is stated without proof and is false in general (e.g., gcd(6,10)=2 does not divide 15, yet gcd(6,10,15)=1). The subsequent invocation of 7.21 (numbers prime to one another are least in their ratio) requires pairwise coprimality, so the proof chain from Step 7 to Step 8's conclusion is broken.\n  why_not_terse  : This is not compression of a valid argument but an incorrect logical inference. No valid argument exists from group coprimality to pairwise coprimality in general, so there is nothing being abbreviated — the claimed implication is simply false."
+}

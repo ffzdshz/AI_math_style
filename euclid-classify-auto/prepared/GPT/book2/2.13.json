@@ -1,0 +1,44 @@
+{
+  "proposition": "2.13",
+  "book": 2,
+  "statement": "In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.",
+  "heath_proof": "Let ABC be an acute-angled triangle having the angle at B acute, and let AD be drawn from the point A perpendicular to BC;  I say that the square on AC is less than the squares on CB, BA by twice the rectangle contained by CB, BD. For, since the straight line CB has been cut at random at D, the squares on CB, BD are equal to twice the rectangle contained by CB, BD and the square on DC. [II. 7] Let the square on DA be added to each; therefore the squares on CB, BD, DA are equal to twice the rectangle contained by CB, BD and the squares on AD, DC. But the square on AB is equal to the squares on BD, DA, for the angle at D is right; [I. 47] and the square on AC is equal to the squares on AD, DC; therefore the squares on CB, BA are equal to the square on AC and twice the rectangle CB, BD,  so that the square on AC alone is less than the squares on CB, BA by twice the rectangle contained by CB, BD.",
+  "ai_proof_text": "2.13\n**Statement:** In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.\n\n**Step 1.** Let ABC be an acute-angled triangle, and take ABC as the acute angle under consideration; its opposite side is AC (D1.21). Write S(XY) for the area of the square on XY, and R(XY,ZW) for the area of the rectangle contained by XY and ZW (D1.22, D2.1).\n\n**Step 2.** Produce BC in both directions and draw from A the perpendicular AD to this straight line, with foot D (P2, 1.12). The angles made by AD with the straight line BC at D are right angles (D1.10).\n\n**Step 3.** The point D lies strictly between B and C. Indeed, if D lay beyond B, then angle ABC would be an exterior angle of triangle ABD and would be greater than its opposite interior right angle ADB (1.16), contradicting the acuteness of angle ABC (D1.12). If D lay beyond C, then angle ACB would similarly be an exterior angle of triangle ACD greater than its opposite interior right angle ADC (1.16), again contradicting acuteness (D1.12). Finally, D cannot coincide with B or C, since the corresponding angle of ABC would then be right, not acute (D1.10, D1.12). Thus BC is cut internally at D.\n\n**Step 4.** Apply 2.7 to BC cut at D, taking BD as the specified segment. It gives\nS(BC) + S(BD) = 2R(BC,BD) + S(DC).\nThis is the direct choice of identity because it already contains the rectangle formed by the whole side BC and the segment BD required in the conclusion (2.7).\n\n**Step 5.** Applying the theorem on the square opposite a right angle to triangles ADB and ADC gives, respectively,\nS(AB) = S(AD) + S(BD),\nand\nS(AC) = S(AD) + S(DC) (1.47).\n\n**Step 6.** Add S(AD) to both sides of the equality in Step 4 (CN2). Using the two equalities in Step 5 to replace the corresponding sums by equal squares, we obtain\nS(AB) + S(BC) = S(AC) + 2R(BC,BD) (CN1, CN2).\n\n**Step 7.** Subtracting S(AC) from these equal totals shows that the squares on AB and BC together exceed the square on AC by exactly 2R(BC,BD) (CN3). Since D lies strictly between B and C, this rectangle has positive area, so the square on AC is strictly less than those two squares together (CN5). Here BC is the side containing the chosen acute angle on which the perpendicular falls, and BD is the segment cut off within it towards that angle. This is the required conclusion.\n\n**USED:** 1.12, 1.16, 1.47, 2.7, CN1, CN2, CN3, CN5, D1.10, D1.12, D1.21, D1.22, D2.1, P2\n**Human refs (from References field):** 1.47, 2.7\n**Jaccard:** 0.143 — AI adds ['1.12', '1.16', 'CN1', 'CN2', 'CN3', 'CN5', 'D1.10', 'D1.12', 'D1.21', 'D1.22', 'D2.1', 'P2']",
+  "ai_used": [
+    "1.12",
+    "1.16",
+    "1.47",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.10",
+    "D1.12",
+    "D1.21",
+    "D1.22",
+    "D2.1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.7"
+  ],
+  "ai_only": [
+    "1.12",
+    "1.16",
+    "CN1",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D1.10",
+    "D1.12",
+    "D1.21",
+    "D1.22",
+    "D2.1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.143,
+  "proof_summary": "**Step 1.** Let ABC be an acute-angled triangle, and take ABC as the acute angle under consideration; its opposite side is AC (D1.21). Write S(XY) for the area of the square on XY, and R(XY,ZW) for th"
+}

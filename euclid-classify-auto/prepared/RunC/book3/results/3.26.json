@@ -1,0 +1,13 @@
+{
+  "proposition": "3.26",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. For the centres case, Heath establishes arc equality by showing BC = EF via I.4, then arguing that segments BAC and EDF are similar (Def. 11), applying III.24 to conclude the similar segments on equal lines are equal, and finally subtracting the equal segments from the equal whole circles to get equal remaining circumferences. The AI instead uses a superposition method: after establishing BC = EF via I.4, it places one circle on the other so that centres, radii, and points coincide, then invokes CN4 (things that coincide are equal) to conclude the arcs are equal. For the circumferences case, Heath handles it through similar segments and III.24 as part of a unified argument, while the AI uses III.20 (central angle is double the inscribed angle) and CN2 to reduce the circumferences case to the already-proved centres case. The key intermediate conclusions differ substantively: Heath's backbone runs through similar segments and III.24, while the AI's runs through superposition (centres case) and III.20 with angle-doubling (circumferences case). Both paths are logically complete, so this is a genuine path difference.",
+  "jaccard": 0.143,
+  "ai_citations": "1.4|3.20|CN2|CN4|D3.1",
+  "heath_citations": "1.4|3.24|D3.11",
+  "ai_only": "3.20|CN2|CN4|D3.1",
+  "heath_only": "3.24|D3.11",
+  "audit_record": ""
+}

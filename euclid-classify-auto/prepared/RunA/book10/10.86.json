@@ -1,0 +1,33 @@
+{
+  "proposition": "10.86",
+  "book": 10,
+  "statement": "To find the second apotome.",
+  "heath_proof": "Let a rational straight line A be set out, and GC commensurable in length with A; therefore GC is rational. Let two square numbers DE, EF be set out, and let their difference DF not be square. Now let it be contrived that, as FD is to DE, so is the square on CG to the square on GB. [X. 6] Therefore the square on CG is commensurable with the square on GB. [X. 6] But the square on CG is rational; therefore the square on GB is also rational; therefore BG is rational. And, since the square on GC has not to the square on GB the ratio which a square number has to a square number, CG is incommensurable in length with GB. [X. 9] And both are rational; therefore CG, GB are rational straight lines commensurable in square only; therefore BC is an apotome. [X. 73] I say next that it is also a second apotome. For let the square on H be that by which the square on BG is greater than the square on GC. Since then, as the square on BG is to the square on GC, so is the number ED to the number DF, therefore, convertendo, as the square on BG is to the square on H, so is DE to EF. [V. 19] And each of the numbers DE, EF is square; therefore the square on BG has to the square on H the ratio which a square number has to a square number; therefore BG is commensurable in length with H. [X. 9] And the square on BG is greater than the square on GC by the square on H; therefore the square on BG is greater than the square on GC  by the square on a straight line commensurable in length with BG. And CG, the annex, is commensurable with the rational straight line A set out. Therefore BC is a second apotome. [X. Deff. III. 2] Therefore the second apotome BC has been found.",
+  "ai_proof_text": "10.86\n**Statement:** To find the second apotome.\n\n**Step 1.** Let A be a rational straight line set out. [D10.1.3]\n\n**Step 2.** Find three numbers DN, MN, DM such that DN = DM + MN, where DN has to DM the ratio of a square number to a square number, but neither DM to MN nor DN to MN is the ratio of a square number to a square number. For example, take DN = 9, DM = 4, MN = 5: then DN:DM = 9:4 (a ratio of square numbers), DM:MN = 4:5 (not square to square), and DN:MN = 9:5 (not square to square).\n\n**Step 3.** Let it be contrived that sq(A):sq(GH) = DN:DM. Since DN:DM = 9:4 is the ratio of a square number to a square number, A is commensurable in length with GH. [10.9] Since A is rational, GH is also rational. [D10.1.3]\n\n**Step 4.** Let it be contrived that sq(GH):sq(KG) = MN:DN, so that sq(KG):sq(GH) = DN:MN. Since DN:MN is a ratio of number to number, KG is commensurable in square with GH. [10.6] But DN:MN = 9:5 is not a ratio of a square number to a square number, so KG is incommensurable in length with GH. [10.9] Therefore KG and GH are commensurable in square only. Since GH is rational, KG is also rational. [D10.1.3]\n\n**Step 5.** Since KG and GH are rational straight lines commensurable in square only, KG - GH is an apotome. [10.73] Let the apotome be called KB, where KB = KG - GH (that is, B is the point on KG such that BG = GH, and KB is the remainder).\n\n**Step 6.** Now, sq(A):sq(KG) can be found from the chain sq(A):sq(GH) = DN:DM and sq(GH):sq(KG) = MN:DN. By the ratio ex aequali, sq(A):sq(KG) = (DN:DM) composed with (MN:DN) = MN:DM = 5:4. [5.22] Since MN:DM = 5:4 is not the ratio of a square number to a square number, A is incommensurable in length with KG. [10.9]\n\n**Step 7.** But GH (the annex) is commensurable in length with A (from Step 3). So the annex is commensurable in length with the rational straight line set out. [D10.3.2 condition on the annex]\n\n**Step 8.** Since sq(KG):sq(GH) = DN:MN, we have sq(KG) - sq(GH) : sq(KG) = (DN - MN) : DN = DM : DN. [5.17] That is, sq(KG) - sq(GH) has to sq(KG) the ratio DM:DN. Let sq(KG) - sq(GH) = sq(L). Then sq(L):sq(KG) = DM:DN = 4:9, which is the ratio of a square number to a square number. Therefore L is commensurable in length with KG. [10.9]\n\n**Step 9.** Hence the square on the whole KG is greater than the square on the annex GH by the square on a straight line L commensurable in length with KG. [D10.3.2 condition on the excess]\n\n**Step 10.** The annex GH is commensurable in length with the rational straight line A set out (Step 7), and the square on the whole KG exceeds the square on the annex GH by the square on a straight line commensurable in length with KG (Step 9). Therefore, by Definition D10.3.2, the apotome KB is a second apotome.\n\n**Step 11.** Therefore the second apotome KB has been found. Q.E.F.\n\n**USED:** 10.6, 10.73, 10.9, 5.17, 5.22, D10.1.3, D10.3.2\n**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.2\n**Jaccard:** 0.500 — AI adds ['5.17', '5.22', 'D10.1.3']; Human adds ['5.19']",
+  "ai_used": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.17",
+    "5.22",
+    "D10.1.3",
+    "D10.3.2"
+  ],
+  "heath_refs": [
+    "10.6",
+    "10.73",
+    "10.9",
+    "5.19",
+    "D10.3.2"
+  ],
+  "ai_only": [
+    "5.17",
+    "5.22",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "5.19"
+  ],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let A be a rational straight line set out. [D10.1.3]  **Step 2.** Find three numbers DN, MN, DM such that DN = DM + MN, where DN has to DM the ratio of a square number to a square number, "
+}

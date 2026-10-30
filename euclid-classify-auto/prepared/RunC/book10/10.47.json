@@ -1,0 +1,48 @@
+{
+  "proposition": "10.47",
+  "book": 10,
+  "statement": "The side of the sum of two medial areas is divided at one point only.",
+  "heath_proof": "Let AB be divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB medial, and the rectangle AC, CB medial and also incommensurable with the sum of the squares on them; I say that AB is not divided at another point so as to fulfil the given conditions. For, if possible, let it be divided at D, so that again AC is of course not the same as BD, but AC is supposed greater; let a rational straight line EF be set out, and let there be applied to EF the rectangle EG equal to the squares on AC, CB, and the rectangle HK equal to twice the rectangle AC, CB; therefore the whole EK is equal to the square on AB. [II. 4] Again, let EL, equal to the squares on AD, DB, be applied to EF; therefore the remainder, twice the rectangle AD, DB, is equal to the remainder MK. And since, by hypothesis, the sum of the squares on AC, CB is medial, therefore EG is also medial. And it is applied to the rational straight line EF; therefore HE is rational and incommensurable in length with EF. [X. 22] For the same reason HN is also rational and incommensurable in length with EF. And, since the sum of the squares on AC, CB is incommensurable with twice the rectangle AC, CB, therefore EG is also incommensurable with GN, so that EH is also incommensurable with HN. [VI. 1, X. 11] And they are rational; therefore EH, HN are rational straight lines commensurable in square only; therefore EN is a binomial straight line divided at H. [X. 36] Similarly we can prove that it is also divided at M.  And EH is not the same with MN; therefore a binomial has been divided at different points: which is absurd. [X. 42] Therefore a side of the sum of two medial areas is not divided at different points; therefore it is divided at one point only.",
+  "ai_proof_text": "10.47\n**Statement:** The side of the sum of two medial areas is divided at one point only.\n\n**Step 1.** Let AB be the side of the sum of two medial areas, and suppose it is divided at C so that AC and CB satisfy the conditions of 10.41: AC and CB are incommensurable in square, the sum of the squares on AC and CB is medial, the rectangle contained by AC and CB is medial, and the sum of the squares on AC and CB is incommensurable with the rectangle AC.CB.\n\n**Step 2.** Suppose for contradiction that AB is also divided at a different point D so that AD and DB likewise satisfy the conditions of 10.41: AD and DB are incommensurable in square, the sum of the squares on AD and DB is medial, the rectangle AD.DB is medial, and the sum of the squares on AD and DB is incommensurable with the rectangle AD.DB.\n\n**Step 3.** By 2.4, the square on AB equals the squares on AC and CB together with twice the rectangle AC.CB. Likewise the square on AB equals the squares on AD and DB together with twice the rectangle AD.DB. Therefore the squares on AC and CB together with twice the rectangle AC.CB equal the squares on AD and DB together with twice the rectangle AD.DB [CN1].\n\n**Step 4.** Set out a rational straight line rho [D10.1.3]. Apply the sum of the squares on AC and CB to rho, producing breadth p. Apply twice the rectangle AC.CB to rho, producing breadth q, placed adjacent to p along rho. Then the rectangle contained by rho and p+q equals the square on AB.\n\n**Step 5.** Since the sum of the squares on AC and CB is medial, applying it to the rational line rho produces a breadth p that is rational and incommensurable in length with rho [10.22].\n\n**Step 6.** Since the rectangle AC.CB is medial, and twice the rectangle AC.CB is commensurable with the rectangle AC.CB (their ratio being 2 to 1, which is a ratio of number to number, so they are commensurable by 10.6), and since a straight line commensurable with a medial straight line is medial [10.23], the side of the square equal to twice the rectangle AC.CB is medial, so twice the rectangle AC.CB is a medial area [D10.1.4]. Applying this medial area to the rational line rho produces a breadth q that is rational and incommensurable in length with rho [10.22].\n\n**Step 7.** Since the sum of the squares on AC and CB is incommensurable with the rectangle AC.CB [by hypothesis from 10.41], and twice the rectangle AC.CB is commensurable with the rectangle AC.CB [Step 6], the sum of the squares on AC and CB is incommensurable with twice the rectangle AC.CB [10.13]. Now these areas, when applied to rho, produce breadths p and q respectively, and the areas are to one another as p is to q [6.1]. Since the areas are incommensurable, p is incommensurable in length with q [10.11].\n\n**Step 8.** Since p and q are both rational [Steps 5 and 6] and incommensurable in length with each other [Step 7], they are commensurable in square only. Therefore the straight line p+q is a binomial [10.36].\n\n**Step 9.** Similarly, apply the sum of the squares on AD and DB to rho producing breadth p', and twice the rectangle AD.DB to rho producing breadth q'. By the same reasoning as Steps 5 through 8 (using the conditions from 10.41 applied to the division at D), p' and q' are rational and commensurable in square only, and p'+q' is a binomial.\n\n**Step 10.** From Step 3, since the total areas applied to rho are equal, the total breadths are equal: p+q = p'+q' [CN1].\n\n**Step 11.** Since p+q is a binomial straight line, and a binomial straight line is divided into its terms at one point only [10.42], and p+q = p'+q' with both pairs being the terms of the same binomial, the point of division is the same. Therefore p = p' and q = q'.\n\n**Step 12.** Since p = p' and both rectangles rho times p and rho times p' equal the sum of the squares on AC, CB and on AD, DB respectively, we have that the squares on AC and CB together equal the squares on AD and DB together. Since q = q', twice the rectangle AC.CB equals twice the rectangle AD.DB, whence the rectangle AC.CB equals the rectangle AD.DB [CN3].\n\n**Step 13.** By 2.7, the square on the difference AC minus CB equals the squares on AC and CB minus twice the rectangle AC.CB. Likewise the square on the difference AD minus DB equals the squares on AD and DB minus twice the rectangle AD.DB. Since the squares on AC and CB equal the squares on AD and DB, and twice the rectangle AC.CB equals twice the rectangle AD.DB [Step 12], the square on AC minus CB equals the square on AD minus DB [CN1, CN3].\n\n**Step 14.** Therefore AC minus CB equals AD minus DB. Since also AC plus CB equals AD plus DB (both sums equal AB), adding these two equalities gives twice AC equals twice AD [CN2], so AC equals AD. Subtracting gives twice CB equals twice DB, so CB equals DB.\n\n**Step 15.** Since AC equals AD, the point C coincides with the point D. Therefore the side of the sum of two medial areas is divided at one point only. Q.E.D.\n\n**USED:** 10.11, 10.13, 10.22, 10.23, 10.36, 10.41, 10.42, 10.6, 2.4, 2.7, 6.1, CN1, CN2, CN3, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.22, 10.36, 10.42, 2.4, 6.1\n**Jaccard:** 0.375 — AI adds ['10.13', '10.23', '10.41', '10.6', '2.7', 'CN1', 'CN2', 'CN3', 'D10.1.3', 'D10.1.4']",
+  "ai_used": [
+    "10.11",
+    "10.13",
+    "10.22",
+    "10.23",
+    "10.36",
+    "10.41",
+    "10.42",
+    "10.6",
+    "2.4",
+    "2.7",
+    "6.1",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.22",
+    "10.36",
+    "10.42",
+    "2.4",
+    "6.1"
+  ],
+  "ai_only": [
+    "10.13",
+    "10.23",
+    "10.41",
+    "10.6",
+    "2.7",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.375,
+  "proof_summary": "**Step 1.** Let AB be the side of the sum of two medial areas, and suppose it is divided at C so that AC and CB satisfy the conditions of 10.41: AC and CB are incommensurable in square, the sum of the"
+}

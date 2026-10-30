@@ -1,0 +1,36 @@
+{
+  "proposition": "2.5",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, D, B are collinear in that order along line AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "C is the midpoint of AB so AC = CB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D lies between C and B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AD = AC + CD = CB + CD, i.e. AD is composed of segments CB and CD",
+      "type": "segment_composition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CB = CD + DB since D lies between C and B",
+      "type": "segment_composition"
+    }
+  ],
+  "configuration_map": "All points are collinear on a single line in the order A --- C --- D --- B. C is the midpoint of AB (AC = CB). D lies between C and B, so CD + DB = CB. The proof introduces no two-dimensional constructions — no triangles, circles, angles, or auxiliary points off the line. The entire argument is algebraic manipulation of rectangle and square area identities (Props 2.1, 2.3, 2.4) applied to segments of this line.",
+  "pass_reason": "All spatial claims are about collinear point ordering on a single line (A, C, D, B in that order) and are trivially mutually consistent. The proof uses no 2D constructions, no angle decompositions, and no interior/exterior point arguments. It is purely algebraic manipulation of area identities applied to line segments, and each application (2.1, 2.3, 2.4) is valid for the established configuration."
+}

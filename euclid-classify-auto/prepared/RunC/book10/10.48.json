@@ -1,0 +1,43 @@
+{
+  "proposition": "10.48",
+  "book": 10,
+  "statement": "To find the first binomial straight line.",
+  "heath_proof": "Let two numbers AC, CB be set out such that the sum of them AB has to BC the ratio which a square number has to a square number, but has not to CA the ratio which a square number has to a square number; [Lemma I after X. 28] let any rational straight line D be set out, and let EF be commensurable in length with D. Therefore EF is also rational. Let it be contrived that, as the number BA is to AC, so is the square on EF to the square on FG. [X. 6] But AB has to AC the ratio which a number has to a number; therefore the square on EF also has to the square on FG the ratio which a number has to a number, so that the square on EF is commensurable with the square on FG. [X. 6] And EF is rational; therefore FG is also rational. And, since BA has not to AC the ratio which a square number has to a square number. neither, therefore, has the square on EF to the square on FG the ratio which a square number has to a square number; therefore EF is incommensurable in length with FG. [X. 9] Therefore EF, FG are rational straight lines commensurable in square only; therefore EG is binomial. [X. 36] I say that it is also a first binomial straight line. For since, as the number BA is to AC, so is the square on EF to the square on FG, while BA is greater than AC, therefore the square on EF is also greater than the square on FG. Let then the squares on FG, H be equal to the square on EF. Now since, as BA is to AC, so is the square on EF to the square on FG, therefore, convertendo, as AB is to BC, so is the square on EF to the square on H. [V. 19] But AB has to BC the ratio which a square number has to a square number; therefore the square on EF also has to the square on H the ratio which a square number has to a square number. Therefore EF is commensurable in length with H; [X. 9] therefore the square on EF is greater than the square on FG by the square on a straight line commensurable with EF. And EF, FG are rational, and EF is commensurable in length with D. Therefore EF is a first binomial straight line.",
+  "ai_proof_text": "10.48\n**Statement:** To find the first binomial straight line.\n\n**Step 1.** Set out a rational straight line A. Set out two numbers AC and CB such that AB = AC + CB, where AB has to BC the ratio of a square number to a square number, but AB does not have to AC the ratio of a square number to a square number. For example, let AC = 3 and CB = 1, so that AB = 4. Then AB:BC = 4:1 = 2^2:1^2, a ratio of square number to square number; and AB:AC = 4:3, which is not a ratio of square number to square number.\n\n**Step 2.** Let DG be the straight line such that sq(A):sq(DG) = BC:AB, that is, sq(DG):sq(A) = AB:BC. Since AB:BC = 4:1 is a ratio of a number to a number, by 10.6 the square on DG is commensurable with the square on A. Since A is rational, the square on A is rational (D10.1.3, D10.1.4), and therefore the square on DG is also rational, so DG is rational.\n\n**Step 3.** Since AB:BC is a ratio of a square number to a square number, and sq(DG):sq(A) = AB:BC, by 10.9 DG is commensurable in length with A.\n\n**Step 4.** Let GH be the straight line such that sq(A):sq(GH) = BC:AC, that is, sq(GH):sq(A) = AC:BC. Since AC:BC = 3:1 is a ratio of a number to a number, by 10.6 the square on GH is commensurable with the square on A. Since the square on A is rational, the square on GH is rational, so GH is rational.\n\n**Step 5.** We now show that DG is incommensurable in length with GH. We have sq(DG):sq(A) = AB:BC and sq(GH):sq(A) = AC:BC. Therefore sq(DG):sq(GH) = AB:AC (since both ratios share sq(A) in the denominator, by 5.22 ex aequali, or equivalently by combining via CN1). Since AB:AC = 4:3 is not a ratio of a square number to a square number, by 10.9 DG is incommensurable in length with GH.\n\n**Step 6.** Since DG and GH are both rational (Steps 2 and 4) and incommensurable in length (Step 5), they are rational straight lines commensurable in square only. By 10.36, the line DG + GH is a binomial straight line.\n\n**Step 7.** We now show DG is the greater term. Since sq(DG):sq(GH) = AB:AC = 4:3, we have sq(DG) > sq(GH), so DG > GH (CN5), confirming DG is the greater term.\n\n**Step 8.** We verify the first binomial condition on the difference of squares. We have sq(DG):sq(A) = AB:BC = 4:1, so sq(DG) = 4*sq(A). And sq(GH):sq(A) = AC:BC = 3:1, so sq(GH) = 3*sq(A). Therefore sq(DG) - sq(GH) = 4*sq(A) - 3*sq(A) = sq(A) (by CN3). Hence the straight line whose square equals sq(DG) - sq(GH) is A itself.\n\n**Step 9.** Now sq(A):sq(DG) = BC:AB = 1:4, which is a ratio of a square number to a square number (1^2:2^2). Therefore by 10.9, A is commensurable in length with DG. That is, the straight line by which the square on DG exceeds the square on GH (namely A) is commensurable in length with DG.\n\n**Step 10.** The greater term DG is commensurable in length with the rational straight line A (Step 3). The square on DG exceeds the square on GH by the square on a straight line commensurable in length with DG (Steps 8-9). Therefore, by D10.2.1, the binomial straight line DG + GH is a first binomial straight line.\n\n**Step 11.** Therefore a first binomial straight line has been found, which is what was required to do.\n\n**USED:** 10.13, 10.36, 10.6, 10.9, 5.22, CN1, CN3, CN5, D10.1.3, D10.1.4, D10.2.1\n**Human refs (from References field):** 10.28, 10.36, 10.6, 10.9, 5.19\n**Jaccard:** 0.231 — AI adds ['10.13', '5.22', 'CN1', 'CN3', 'CN5', 'D10.1.3', 'D10.1.4', 'D10.2.1']; Human adds ['10.28', '5.19']",
+  "ai_used": [
+    "10.13",
+    "10.36",
+    "10.6",
+    "10.9",
+    "5.22",
+    "CN1",
+    "CN3",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.1"
+  ],
+  "heath_refs": [
+    "10.28",
+    "10.36",
+    "10.6",
+    "10.9",
+    "5.19"
+  ],
+  "ai_only": [
+    "10.13",
+    "5.22",
+    "CN1",
+    "CN3",
+    "CN5",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.1"
+  ],
+  "heath_only": [
+    "10.28",
+    "5.19"
+  ],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Set out a rational straight line A. Set out two numbers AC and CB such that AB = AC + CB, where AB has to BC the ratio of a square number to a square number, but AB does not have to AC the"
+}

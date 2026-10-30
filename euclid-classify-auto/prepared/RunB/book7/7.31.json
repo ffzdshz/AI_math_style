@@ -1,0 +1,21 @@
+{
+  "proposition": "7.31",
+  "book": 7,
+  "statement": "Any composite number is measured by some prime number.",
+  "heath_proof": "Let A be a composite number; I say that A is measured by some prime number. For, since A is composite,some number will measure it. Let a number measure it, and let it be B. Now, if B is prime, what was enjoined will have been done. But if it is composite, some number will measure it. Let a number measure it, and let it be C. Then, since C measures B, and B measures A, therefore C also measures A. And, if C is prime, what was enjoined will have been done. But if it is composite, some number will measure it. Thus, if the investigation be continued in this way, some prime number will be found which will measure the numberbefore it, which will also measure A. For, if it is not found, an infinite series of numbers will measure the number A, each of which is less than the other: which is impossible in numbers. Therefore some prime number will be found which willmeasure the one before it, which will also measure A. Therefore any composite number is measured by some prime number.",
+  "ai_proof_text": "7.31\n**Statement:** Any composite number is measured by some prime number.\n\n**Step 1.** Let A be any composite number. By D7.13, since A is composite, it is measured by some number B, where B is not a unit and B is not equal to A.\n\n**Step 2.** If B is prime, then A is measured by the prime number B, and the proposition is proved.\n\n**Step 3.** Suppose B is not prime. Since B measures A and A is composite (hence greater than 1), B must be greater than 1. A number greater than 1 that is not prime is composite (by D7.11 and D7.13). Therefore B is composite.\n\n**Step 4.** Since B is composite, by D7.13 some number C measures B, where C is greater than 1 and less than B.\n\n**Step 5.** Since C measures B, there exists a number m such that B is the product of C taken m times. Since B measures A, there exists a number n such that A is the product of B taken n times. Therefore A is the product of C taken m times n times, so C measures A.\n\n**Step 6.** If C is prime, then A is measured by the prime number C, and the proposition is proved.\n\n**Step 7.** If C is not prime, then C is composite (by the same reasoning as Step 3), and some number D measures C with D less than C. By the same argument as Step 5, D also measures A.\n\n**Step 8.** Continuing in this manner, we obtain a decreasing sequence of numbers A > B > C > D > ..., each greater than 1, and each measuring A. Since A is finite, this sequence cannot continue indefinitely; it must terminate at some number which has no divisor other than a unit. Such a number is prime by D7.11.\n\n**Step 9.** Therefore some prime number is found which measures A. Since A was an arbitrary composite number, any composite number is measured by some prime number. Q.E.D.\n\n**USED:** D7.11, D7.13, D7.3\n**Human refs (from References field):** \n**Jaccard:** 0.000 — AI adds ['D7.11', 'D7.13', 'D7.3']",
+  "ai_used": [
+    "D7.11",
+    "D7.13",
+    "D7.3"
+  ],
+  "heath_refs": [],
+  "ai_only": [
+    "D7.11",
+    "D7.13",
+    "D7.3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let A be any composite number. By D7.13, since A is composite, it is measured by some number B, where B is not a unit and B is not equal to A.  **Step 2.** If B is prime, then A is measure"
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "11.38",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD and A'B'C'D' are opposite faces of a cube with edges AA', BB', CC', DD'. Midpoints M, N, P, Q on bottom face sides; M', N', P', Q' on top face sides. Cutting planes Pi through M,P,P',M' and Sigma through N,Q,Q',N'.",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AA' parallel to CC' (both parallel to BB', transitivity via 11.9). AA' = CC'. AC parallel to A'C'. Quadrilateral ACC'A' is a parallelogram lying in one plane.",
+      "type": "parallelism_and_coplanarity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "X is midpoint of AC (bottom face diagonal), Y is midpoint of A'C' (top face diagonal), T is midpoint of AC' (space diagonal of cube).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "In triangle ABC: MX parallel to BC (midpoint theorem). In triangle CDA: PX parallel to DA. Since BC parallel to DA, M, X, P are collinear. Similarly N, X, Q are collinear.",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "In top face: M', Y, P' collinear and N', Y, Q' collinear. Both planes Pi and Sigma contain X and Y. Common section of planes is line XY.",
+      "type": "plane_intersection"
+    },
+    {
+      "step": "Step 6",
+      "claim": "In triangle ACC': XT parallel to CC' (midpoint theorem). In triangle C'A'A: YT parallel to AA'. Since AA' parallel to CC', X, T, Y are collinear. T lies between X and Y.",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Alternate angles XAT = YC'T (since AC parallel to A'C'). Vertical angles XTA = YTC'. With AT = TC', triangles XAT congruent to YC'T by ASA, giving XT = TY.",
+      "type": "triangle_congruence"
+    }
+  ],
+  "configuration_map": "Parallelogram ACC'A' in the cube: A and C are diagonally opposite vertices of bottom face ABCD; A' and C' are corresponding vertices of top face A'B'C'D'. Edges AA' and CC' are parallel and equal (vertical edges of cube). Diagonals AC and A'C' of the two square faces are parallel and equal. These four points are coplanar, forming parallelogram ACC'A'. Point X (midpoint of AC) lies on the bottom face, on lines MP and NQ. Point Y (midpoint of A'C') lies on the top face, on lines M'P' and N'Q'. Point T (midpoint of space diagonal AC') lies in the interior of parallelogram ACC'A'. Line XTY connects X on side AC to Y on side A'C' of the parallelogram, passing through the interior point T. All key geometric arguments (midpoint theorem, triangle congruence) are applied within well-defined planar contexts: either within a face plane or within the parallelogram plane ACC'A'.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly identifies parallelogram ACC'A' as a planar cross-section of the cube, applies the midpoint theorem within appropriate planar contexts (face planes and the parallelogram plane), establishes collinearity of X, T, Y, and proves bisection via valid ASA triangle congruence. No angle decomposition issues arise, no point occupies contradictory positions, and 3D-to-2D reductions via Book 11 propositions are properly justified."
+}

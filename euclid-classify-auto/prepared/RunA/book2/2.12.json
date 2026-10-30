@@ -1,0 +1,24 @@
+{
+  "proposition": "2.12",
+  "book": 2,
+  "statement": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.",
+  "heath_proof": "Let ABC be an obtuse-angled triangle having the angle BAC obtuse, and let BD be drawn from the point B perpendicular to CA produced;  I say that the square on BC is greater than the squares on BA, AC by twice the rectangle contained by CA, AD. For, since the straight line CD has been cut at random at the point A, the square on DC is equal to the squares on CA, AD and twice the rectangle contained by CA, AD. [II. 4] Let the square on DB be added to each; therefore the squares on CD, DB are equal to the squares on CA, AD, DB and twice the rectangle CA, AD. But the square on CB is equal to the squares on CD, DB, for the angle at D is right; [I. 47] and the square on AB is equal to the squares on AD, DB; [I. 47]therefore the square on CB is equal to the squares on CA, AB and twice the rectangle contained by CA, AD; so that the square on CB is greater than the squares on CA, AB by twice the rectangle contained by CA, AD.",
+  "ai_proof_text": "2.12\n**Statement:** In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the   perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.\n\n**Step 1.** Let ABC be an obtuse-angled triangle having the angle ABC obtuse. From point A, draw AD perpendicular to BC produced, so that D falls on the extension of BC beyond B [1.12]. Since the angle at B is obtuse, the perpendicular from A to line BC falls outside the triangle, with D on the side of B away from C.\n\n**Step 2.** Since D lies on BC produced beyond B, the segment DC is composed of DB and BC. That is, DC = DB + BC, meaning the straight line DC has been cut at point B into segments DB and BC.\n\n**Step 3.** Apply Proposition 2.4 to the straight line DC cut at B. The square on the whole DC equals the squares on the segments DB and BC together with twice the rectangle contained by DB and BC. That is, sq(DC) = sq(DB) + sq(BC) + 2*rect(BC, BD) [2.4].\n\n**Step 4.** Add the square on DA to both sides of this equality [CN2]. We obtain: sq(DC) + sq(DA) = sq(DB) + sq(DA) + sq(BC) + 2*rect(BC, BD).\n\n**Step 5.** Since AD is perpendicular to DC, the angle ADC is a right angle. In the right-angled triangle ADC with the right angle at D, by the Pythagorean theorem, the square on AC (the side subtending the right angle) equals the sum of the squares on AD and DC. That is, sq(AC) = sq(AD) + sq(DC) [1.47].\n\n**Step 6.** Similarly, since the angle ADB is also a right angle (AD is perpendicular to the line BDC), in the right-angled triangle ADB with the right angle at D, by the Pythagorean theorem, the square on AB equals the sum of the squares on AD and DB. That is, sq(AB) = sq(AD) + sq(DB) [1.47].\n\n**Step 7.** Substituting the results of Steps 5 and 6 into the equation from Step 4: the left side sq(DC) + sq(DA) equals sq(AC) by Step 5, and the term sq(DB) + sq(DA) on the right side equals sq(AB) by Step 6. Therefore, sq(AC) = sq(AB) + sq(BC) + 2*rect(BC, BD).\n\n**Step 8.** This shows that in the obtuse-angled triangle ABC, the square on AC (the side subtending the obtuse angle) is greater than the squares on AB and BC (the sides containing the obtuse angle) by twice the rectangle contained by BC and BD, where BC is the side about the obtuse angle on which the perpendicular falls, and BD is the straight line cut off outside by the perpendicular towards the obtuse angle. This is what was to be proved. Q.E.D.\n\n**USED:** 1.12, 1.47, 2.4, CN2\n**Human refs (from References field):** 1.47, 2.4\n**Jaccard:** 0.500 — AI adds ['1.12', 'CN2']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.4",
+    "CN2"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.4"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let ABC be an obtuse-angled triangle having the angle ABC obtuse. From point A, draw AD perpendicular to BC produced, so that D falls on the extension of BC beyond B [1.12]. Since the angl"
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "9.17",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof uses alternation (7.13) to convert the assumed proportion into A:D = B:E, then applies 7.21 (primes are least in their ratio) and 7.20 to conclude A measures B, and cascades through the continued proportion to show A measures D, contradicting coprimality. The AI proof takes a fundamentally different route: it uses 7.33 to find the least numbers F,G in the ratio A_1:A_2, applies 7.20 to show F divides both A_1 and A_n, uses coprimality (D7.12) to conclude F is a unit, then derives the multiplicative structure A_k = G^{k-1}*A_1 to show A_1 divides A_n, and uses D7.2 to establish A_1 is not a unit, reaching a contradiction. The key intermediate conclusions differ: Heath argues through alternation and a divisibility cascade (A|B, then A|C, then A|D), while the AI argues through least-ratio representatives and multiplicative structure (F=unit, then A_1|A_n directly). Both paths are logically complete, making this a genuine path difference.",
+  "jaccard": 0.167,
+  "ai_citations": "7.20|7.33|D7.12|D7.2",
+  "heath_citations": "7.13|7.20|7.21",
+  "ai_only": "7.33|D7.12|D7.2",
+  "heath_only": "7.13|7.21",
+  "audit_record": ""
+}

@@ -1,0 +1,76 @@
+{
+  "proposition": "13.13",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the midpoint of AB, the center of the given sphere",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "C lies on AB with CB = AB/3 and AC = 2AB/3, so C is between A and B closer to B",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D lies on semicircle ADB, obtained by erecting perpendicular from C to AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle ADB is a right angle (D on semicircle with diameter AB)",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DC is perpendicular to hypotenuse AB in right triangle ADB; similar triangles yield AD^2 = AC*AB and CD^2 = AC*CB",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Circle with center C and radius CD lies in a plane perpendicular to AB at C; AB is perpendicular to this plane",
+      "type": "plane_perpendicularity"
+    },
+    {
+      "step": "Step 8",
+      "claim": "F, G, H lie on circle centered at C with radius CD in the plane perpendicular to AB; CF = CG = CH = CD",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Angle ACF is a right angle because AB is perpendicular to the plane containing CF",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 12",
+      "claim": "AF = AG = AH = AD, all computed via right angle at C between AC and radii CF, CG, CH",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 13",
+      "claim": "FG = GH = HF = AD, so all six edges of tetrahedron AFGH are equal",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 15",
+      "claim": "O lies between A and C on segment AB, with OC = CB/2",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 16",
+      "claim": "OF = OA (circumradius), verified via right angle at C between OC and CF",
+      "type": "distance_equality"
+    },
+    {
+      "step": "Step 17",
+      "claim": "OG = OH = OA, so F, G, H all lie on the sphere centered at O",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "Configuration: AB is a diameter of the sphere with center O at midpoint. C divides AB such that AC:CB = 2:1. D is the foot of the perpendicular from the semicircle on AB down to C (i.e., D is where the perpendicular at C meets the semicircle). In 3D, a plane perpendicular to AB passes through C; a circle of radius CD is drawn in this plane centered at C. Equilateral triangle FGH is inscribed in this circle. The tetrahedron AFGH has apex A and base FGH. Key measurements: CB is the unit; AC = 2CB, AB = 3CB, AO = 3CB/2, OC = CB/2, CD^2 = 2CB^2, AD^2 = 6CB^2, FG^2 = 6CB^2. The circumcenter O lies on segment AC at distance 3CB/2 from A, which is 3/4 of the height AC = 2CB from apex A to base plane -- the correct circumcenter position for a regular tetrahedron.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places the base equilateral triangle FGH in a plane perpendicular to diameter AB at point C, with vertex A at one endpoint of the diameter. Every distance computation (AF, AG, AH, FG, GH, HF) correctly uses the right angle at C between the diameter direction and radial directions in the base plane, yielding all six edges equal to AD. The sphere inscription is verified by showing OF = OG = OH = OA using the same right-angle configuration. The circumcenter O at 3/4 of the apex-to-base height is the correct position for a regular tetrahedron. No angle decomposition errors, no inside/outside contradictions, no betweenness violations."
+}

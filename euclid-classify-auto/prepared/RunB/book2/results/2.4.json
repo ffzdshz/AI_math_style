@@ -1,0 +1,13 @@
+{
+  "proposition": "2.4",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Heath's proof constructs the square ADEB on AB, draws parallels, and geometrically decomposes it into four areas (two smaller squares HF and KC on segments AC and CB, plus two rectangles AG and GE each equal to rect(AC,CB)), using Book 1 propositions about parallel lines, angle equality, and parallelograms (1.29, 1.31, 1.34, 1.46, 1.5, 1.6). The AI proof takes a completely different algebraic path: it applies Proposition 2.3 twice (once for each segment) to get rect(AB,AC) = rect(AC,CB) + sq(AC) and rect(AB,CB) = rect(CB,AC) + sq(CB), adds these equations via CN2, then substitutes using 2.2 (which states rect(AB,AC) + rect(AB,CB) = sq(AB)) via CN1 to reach the conclusion. The two proofs share no citations (Jaccard = 0.0) and their key intermediate conclusions are entirely different: Heath identifies geometric sub-regions within a constructed figure, while the AI manipulates algebraic identities from earlier Book 2 propositions. Both paths are logically complete and valid, making this a genuine path difference.",
+  "jaccard": 0.0,
+  "ai_citations": "2.2|2.3|CN1|CN2",
+  "heath_citations": "1.29|1.31|1.34|1.46|1.5|1.6",
+  "ai_only": "2.2|2.3|CN1|CN2",
+  "heath_only": "1.29|1.31|1.34|1.46|1.5|1.6",
+  "audit_record": ""
+}

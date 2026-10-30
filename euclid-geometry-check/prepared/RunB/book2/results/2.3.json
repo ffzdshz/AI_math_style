@@ -1,0 +1,21 @@
+{
+  "proposition": "2.3",
+  "run": "RunB",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Point C lies on line AB between A and B, dividing it into segments AC and CB",
+      "type": "betweenness/collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Line AB is composed of segments AC and CB (used as premise for applying Prop 2.1)",
+      "type": "segment decomposition"
+    }
+  ],
+  "configuration_map": "The configuration is minimal: a single line AB with an arbitrary interior point C. Point C divides AB into segments AC and CB. No auxiliary points, circles, triangles, or other figures are constructed. The proof operates entirely in terms of area relationships (rectangles as products of lengths), applying Proposition 2.1 as an algebraic distributive identity. The position of C as between A and B is stated once in Step 1 and used consistently throughout without any competing spatial claims.",
+  "pass_reason": "The proof is purely algebraic, applying Proposition 2.1 (distributive property of rectangles over segment sums) to derive the result. The only spatial claim is the premise that C lies between A and B on line AB, which is used consistently throughout. No auxiliary geometric constructions are made, no angle decompositions occur, and no inside/outside claims are asserted. There is nothing in the configuration that could be self-contradictory."
+}

@@ -1,0 +1,37 @@
+{
+  "proposition": "9.8",
+  "book": 9,
+  "statement": "If as many numbers as we please beginning from an unit be in continued proportion, the third from the unit will be square, as will also those which successively leave out one; the fourth will be cube, as will also all those which leave out two; and the seventh will be at once cube and square, as will also those which leave out five.",
+  "heath_proof": "Let there be as many numbers as we please, A, B, C, D, E, F, beginning from an unit and in continued proportion; I say that B, the third from the unit, is square, as are also all those which leave out one; C, the fourth, is cube, as are also all those which leave out two; and F, the seventh, is at once cube and square, as are also all those which leave out five. For since, as the unit is to A, so is A to B, therefore the unit measures the number A the same number of times that A measures B. [VII. Def. 20] But the unit measures the number A according to the units in it; therefore A also measures B according to the units in A. Therefore A by multiplying itself has made B; therefore B is square. And, since B, C, D are in continued proportion, and B is square, therefore D is also square. [VIII. 22] For the same reason F is also square. Similarly we can prove that all those which leave out one are square. I say next that C, the fourth from the unit, is cube, as are also all those which leave out two. For since, as the unit is to A, so is B to C, therefore the unit measures the number A the same number of times that B measures C. But the unit measures the number A according to the units in A; therefore B also measures C according to the units in A. Therefore A by multiplying B has made C. Since then A by multiplying itself has made B, and by multiplying B has made C, therefore C is cube. And, since C, D, E, F are in continued proportion, and C is cube, therefore F is also cube. [VIII. 23] But it was also proved square; therefore the seventh from the unit is both cube and square. Similarly we can prove that all the numbers which leave out five are also both cube and square.",
+  "ai_proof_text": "9.8\n**Statement:** If as many numbers as we please beginning from an unit be in continued proportion, the third from the unit will be square, as will also those which successively leave out one; the fourth will be cube, as will also all those which leave out two; and the seventh will be at once cube and square, as will also those which leave out five.\n\n**Step 1.** Let the given progression be u₀, u₁, …, u_N, where u₀ = 1 is the unit, and put a = u₁. Count the unit as the first term. By hypothesis, u_j : u_{j+1} = 1 : a. Since a consists of units, u_{j+1} therefore consists of as many copies of u_j as there are units in a. Consequently, for every j ≥ 1 for which the next term occurs,\nu_{j+1} = a·u_j.\nHere x·y denotes the product obtained when x multiplies y. [D7.1, D7.2, D7.20, D7.15]\n\n**Step 2.** Path choice: use 7.18, since we shall keep the multiplied number fixed while the multipliers run through the progression. Fix positive indices r and s with r+s ≤ N, and form P_j = u_j·u_r for j = 1, …, s. For each adjacent pair, multiplication of the same number u_r gives\nP_j : P_{j+1} = u_j : u_{j+1}.\nThus P_{j+1}, like u_{j+1} relative to u_j, consists of as many copies of P_j as there are units in a; that is, P_{j+1} = a·P_j. [7.18, D7.20, D7.15]\n\n**Step 3.** The first product is P₁ = a·u_r = u_{r+1}, by Step 1. Whenever P_j = u_{r+j}, adding the same number of copies of these equal numbers gives P_{j+1} = u_{r+j+1}, by Steps 1–2 and CN2. Repeating this along the finite sequence proves P_s = u_{r+s}. Hence, whenever r and s are positive and the indicated term occurs,\nu_{r+s} = u_s·u_r. [D7.15, CN2]\n\n**Step 4.** Taking s = r in Step 3 gives u_{2r} = u_r·u_r. Therefore every such u_{2r} is square, being equal multiplied by equal. Its position, counting the unit first, is 2r+1. These are precisely the third, fifth, seventh, and successive terms obtained by leaving out one term each time. [Step 3; D7.18]\n\n**Step 5.** Taking s = 2r in Step 3 gives u_{3r} = u_{2r}·u_r. By Step 4, u_{2r} = u_r·u_r; hence\nu_{3r} = (u_r·u_r)·u_r.\nThus u_{3r} is cube, being equal multiplied by equal and again by equal. Its position is 3r+1: the fourth, seventh, tenth, and successive terms obtained by leaving out two terms each time. [Steps 3–4; D7.19]\n\n**Step 6.** Whenever u_{6r} occurs, Step 4 applied with index 3r shows that it is square, while Step 5 applied with index 2r shows that it is cube. Its position is 6r+1: the seventh, thirteenth, nineteenth, and successive terms obtained by leaving out five terms each time. Thus all three assertions hold throughout the given progression. [Steps 4–5; D7.18, D7.19]\n\n**USED:** 7.18, CN2, D7.1, D7.15, D7.18, D7.19, D7.2, D7.20\n**Human refs (from References field):** 8.22, 8.23, D7.20\n**Jaccard:** 0.100 — AI adds ['7.18', 'CN2', 'D7.1', 'D7.15', 'D7.18', 'D7.19', 'D7.2']; Human adds ['8.22', '8.23']",
+  "ai_used": [
+    "7.18",
+    "CN2",
+    "D7.1",
+    "D7.15",
+    "D7.18",
+    "D7.19",
+    "D7.2",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "8.22",
+    "8.23",
+    "D7.20"
+  ],
+  "ai_only": [
+    "7.18",
+    "CN2",
+    "D7.1",
+    "D7.15",
+    "D7.18",
+    "D7.19",
+    "D7.2"
+  ],
+  "heath_only": [
+    "8.22",
+    "8.23"
+  ],
+  "jaccard": 0.1,
+  "proof_summary": "**Step 1.** Let the given progression be u₀, u₁, …, u_N, where u₀ = 1 is the unit, and put a = u₁. Count the unit as the first term. By hypothesis, u_j : u_{j+1} = 1 : a. Since a consists of units, u_"
+}

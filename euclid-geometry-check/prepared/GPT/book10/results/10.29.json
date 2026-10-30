@@ -1,0 +1,41 @@
+{
+  "proposition": "10.29",
+  "run": "GPT",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABC is an equilateral triangle constructed on segment AB (I.1); D is the midpoint of AB; CD is drawn",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangles ADC and BDC are congruent by SSS (AD=DB, AC=BC, CD common), so angles ADC and BDC are equal",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angles ADC and BDC are adjacent angles on line AB that are equal, hence both are right angles",
+      "type": "angle"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle ADC is right-angled at D, so Q(AC) = Q(AD) + Q(CD) by I.47",
+      "type": "right triangle / Pythagorean theorem"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AC = AB because triangle ABC is equilateral, so Q(AB) = Q(AD) + Q(CD)",
+      "type": "length equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AB = 2·AD (D is midpoint), so Q(AB) = 4·Q(AD), giving Q(CD) = 3·Q(AD)",
+      "type": "algebraic from geometry"
+    }
+  ],
+  "configuration_map": "Points: A, B are endpoints of the given rational line. C is the apex of equilateral triangle ABC, above line AB. D is the midpoint of segment AB. Line CD is the altitude/perpendicular bisector of the equilateral triangle, meeting AB at right angles at D. Triangle ADC is a right triangle with right angle at D, hypotenuse AC = AB, and legs AD = AB/2, CD = AB·sqrt(3)/2. All spatial relationships are standard properties of an equilateral triangle and its altitude. No point changes position or role across steps.",
+  "pass_reason": "The geometric configuration is a standard equilateral triangle with its altitude. All spatial claims (equilateral triangle, midpoint, perpendicular bisector, right triangle, congruent sub-triangles) are mutually consistent and well-established. The bulk of the proof after the initial setup is algebraic/number-theoretic reasoning about ratios and commensurability, introducing no further spatial claims. No contradictions found."
+}

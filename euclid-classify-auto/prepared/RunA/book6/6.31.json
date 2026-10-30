@@ -1,0 +1,33 @@
+{
+  "proposition": "6.31",
+  "book": 6,
+  "statement": "In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.",
+  "heath_proof": "Let ABC be a right-angled triangle having the angle BAC right; I say that the figure on BC is equal to the similar and similarly described figures on BA, AC. Let AD be drawn perpendicular. Then since, in the right-angled triangle ABC, AD has been drawn from the right angle at A perpendicular to the base BC, the triangles ABD, ADC adjoining the perpendicular are similar both to the whole ABC and to one another. [VI. 8] And, since ABC is similar to ABD, therefore, as CB is to BA, so is AB to BD. [VI. Def. 1] And, since three straight lines are proportional, as the first is to the third, so is the figure on the first to the similar and similarly described figure on the second. [VI. 19] Therefore, as CB is to BD, so is the figure on CB to the similar and similarly described figure on BA. For the same reason also, as BC is to CD, so is the figure on BC to that on CA; so that, in addition, as BC is to BD, DC, so is the figure on BC to the similar and similarly described figures on BA, AC. But BC is equal to BD, DC; therefore the figure on BC is also equal to the similar and similarly described figures on BA, AC.",
+  "ai_proof_text": "6.31\n**Statement:** In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.\n\n**Step 1.** Let ABC be a right-angled triangle having the angle BAC right, and let similar and similarly described rectilineal figures be drawn on BC, BA, and AC. We must show that the figure on BC is equal to the sum of the figures on BA and AC.\n\n**Step 2.** From A draw AD perpendicular to BC [1.12]. Then in the right-angled triangle ABC, the perpendicular AD has been drawn from the right angle to the base BC.\n\n**Step 3.** By 6.8, the triangles ABD and ADC are similar both to the whole triangle ABC and to one another. In particular, triangle ABC is similar to triangle ABD, and triangle ABC is similar to triangle ACD.\n\n**Step 4.** Since triangle ABC is similar to triangle ABD, the sides about the equal angles are proportional [D6.1]. In particular, as BC (the side subtending the right angle in ABC) is to BA (the side subtending the right angle in ABD), so is BA to BD. That is, BC : BA = BA : BD.\n\n**Step 5.** Since BC : BA = BA : BD, the line BA is a mean proportional between BC and BD. Therefore BC has to BD the duplicate ratio of that which BC has to BA [D5.9].\n\n**Step 6.** Similarly, since triangle ABC is similar to triangle ACD, as BC is to CA, so is CA to CD. That is, BC : CA = CA : CD. Therefore BC has to CD the duplicate ratio of that which BC has to CA [D5.9].\n\n**Step 7.** Now let the similar and similarly described figure on BC be F, the similar figure on BA be G, and the similar figure on AC be H. Since these are similar rectilineal figures described on BC, BA, and AC respectively, by 6.20 the figure F is to the figure G in the duplicate ratio of BC to BA, and the figure F is to the figure H in the duplicate ratio of BC to CA.\n\n**Step 8.** From Step 5, the duplicate ratio of BC to BA is the ratio BC : BD. From Step 7, the figure F is to the figure G in the duplicate ratio of BC to BA. Therefore F : G = BC : BD.\n\n**Step 9.** From Step 6, the duplicate ratio of BC to CA is the ratio BC : CD. From Step 7, the figure F is to the figure H in the duplicate ratio of BC to CA. Therefore F : H = BC : CD.\n\n**Step 10.** From Step 8, F : G = BC : BD. By inversion [5.7 via contrapositive, or directly by 5.4], G : F = BD : BC. Similarly from Step 9, by inversion, H : F = CD : BC.\n\n**Step 11.** Since G : F = BD : BC and H : F = CD : BC, by addition of ratios [5.24], (G + H) : F = (BD + CD) : BC.\n\n**Step 12.** But D lies on BC between B and C (since AD is the perpendicular from A to BC), so BD + CD = BC. Therefore (BD + CD) : BC = BC : BC.\n\n**Step 13.** Since BC : BC is the ratio of equal magnitudes, by 5.9 (equals have the same ratio), (G + H) : F = BC : BC, which is a ratio of equality.\n\n**Step 14.** Therefore G + H = F [5.9]. That is, the figure on BA together with the figure on AC is equal to the figure on BC.\n\n**Step 15.** Therefore, in right-angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle. Q.E.D.\n\n**USED:** 1.12, 5.24, 5.9, 6.20, 6.8, D5.9, D6.1\n**Human refs (from References field):** 6.19, 6.8, D6.1\n**Jaccard:** 0.250 — AI adds ['1.12', '5.24', '5.9', '6.20', 'D5.9']; Human adds ['6.19']",
+  "ai_used": [
+    "1.12",
+    "5.24",
+    "5.9",
+    "6.20",
+    "6.8",
+    "D5.9",
+    "D6.1"
+  ],
+  "heath_refs": [
+    "6.19",
+    "6.8",
+    "D6.1"
+  ],
+  "ai_only": [
+    "1.12",
+    "5.24",
+    "5.9",
+    "6.20",
+    "D5.9"
+  ],
+  "heath_only": [
+    "6.19"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let ABC be a right-angled triangle having the angle BAC right, and let similar and similarly described rectilineal figures be drawn on BC, BA, and AC. We must show that the figure on BC is"
+}

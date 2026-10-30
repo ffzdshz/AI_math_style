@@ -1,0 +1,55 @@
+{
+  "proposition": "13.9",
+  "book": 13,
+  "statement": "If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater segment is the side of the hexagon.",
+  "heath_proof": "Let ABC be a circle; of the figures inscribed in the circle ABC let BC be the side of a decagon, CD that of a hexagon, and let them be in a straight line; I say that the whole straight line BD has been cut in extreme and mean ratio, and CD is its greater segment. For let the centre of the circle, the point E, be taken, let EB, EC, ED be joined, and let BE be carried through to A. Since BC is the side of an equilateral decagon, therefore the circumference ACB is five times the circumference BC; therefore the circumference AC is quadruple of CB. But, as the circumference AC is to CB, so is the angle AEC to the angle CEB; [VI. 33] therefore the angle AEC is quadruple of the angle CEB. And, since the angle EBC is equal to the angle ECB, [I. 5] therefore the angle AEC is double of the angle ECB. [I. 32] And, since the straight line EC is equal to CD, for each of them is equal to the side of the hexagon inscribed in the circle ABC, [IV. 15] the angle CED is also equal to the angle CDE; [I. 5] therefore the angle ECB is double of the angle EDC. [I. 32] But the angle AEC was proved double of the angle ECB; therefore the angle AEC is quadruple of the angle EDC. But the angle AEC was also proved quadruple of the angle BEC; therefore the angle EDC is equal to the angle BEC. But the angle EBD is common to the two triangles BEC and BED; therefore the remaining angle BED is also equal to the remaining angle ECB; [I. 32] therefore the triangle EBD is equiangular with the triangle EBC. Therefore, proportionally, as DB is to BE, so is EB to BC. [VI. 4] But EB is equal to CD. Therefore, as BD is to DC, so is DC to CB. And BD is greater than DC; therefore DC is also greater than CB. Therefore the straight line BD has been cut in extreme and mean ratio, and DC is its greater segment.",
+  "ai_proof_text": "13.9\n**Statement:** If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater segment is the side of the hexagon.\n\n**Step 1.** Let O be the centre of the given circle, and let AB be a side of its inscribed regular decagon. Join OA and OB (P1). The radii OA and OB are equal (D1.15), and each equals the side of the inscribed regular hexagon, by the radius–side equality in 4.15. We shall identify AB as the greater segment of a radius cut in extreme and mean ratio; 13.5 will then give the required addition directly.\n\n**Step 2.** Join O to the remaining vertices of the decagon (P1). The ten triangles so formed have equal radii and equal bases, so their angles at O are equal (D1.15, 1.8). Put θ = ∠AOB. Since the angles about O total four right angles (1.13), five angles θ equal two right angles. Also, OA = OB, so ∠OAB = ∠ABO (1.5). The angle sum of triangle OAB therefore gives ∠OAB = ∠ABO = 2θ (1.32).\n\n**Step 3.** Bisect ∠OAB by AD, meeting OB at D (1.9). Thus ∠OAD = ∠DAB = θ. In triangle OAD, ∠AOD = ∠OAD = θ, whence OD = AD (1.6). In triangle ADB, the angles at A and B are θ and 2θ; its remaining angle ∠ADB is consequently 2θ (1.32). Hence AD = AB (1.6), and therefore OD = AD = AB (CN1).\n\n**Step 4.** In triangle ADB, ∠ABD = 2θ is greater than ∠BAD = θ (CN5). The side opposite the greater angle is greater, so AD > DB (1.19). Since OD = AD, it follows that OD > DB: OD is the greater segment of OB.\n\n**Step 5.** Because AD bisects ∠OAB, the angle-bisector theorem gives OA : AB = OD : DB (6.3). This theorem is the direct choice here because the constructed bisector supplies precisely the required proportion. Substituting OA = OB and AB = OD gives OB : OD = OD : DB. Together with OD > DB, this says that OB is cut at D in extreme and mean ratio, with greater segment OD equal to the decagon side AB (D6.3).\n\n**Step 6.** Produce OB beyond B to C, taking BC = BA by intersecting the produced line with the circle of centre B and distance BA (P2, P3, D1.15). Thus BC = OD (CN1). Since OB is cut in extreme and mean ratio and a line equal to its greater segment has been added to it, 13.5 shows that OC is cut at B in extreme and mean ratio, with OB its greater segment. In particular, OC : OB = OB : BC (D6.3). But OB is the hexagon side and BC is the decagon side, so OC is their sum. Therefore their sum is cut in extreme and mean ratio, and its greater segment is the side of the hexagon, as required.\n\n**USED:** 1.13, 1.19, 1.32, 1.5, 1.6, 1.8, 1.9, 13.5, 4.15, 6.3, CN1, CN5, D1.15, D6.3, P1, P2, P3\n**Human refs (from References field):** 1.32, 1.5, 4.15, 6.33, 6.4\n**Jaccard:** 0.158 — AI adds ['1.13', '1.19', '1.6', '1.8', '1.9', '13.5', '6.3', 'CN1', 'CN5', 'D1.15', 'D6.3', 'P1', 'P2', 'P3']; Human adds ['6.33', '6.4']",
+  "ai_used": [
+    "1.13",
+    "1.19",
+    "1.32",
+    "1.5",
+    "1.6",
+    "1.8",
+    "1.9",
+    "13.5",
+    "4.15",
+    "6.3",
+    "CN1",
+    "CN5",
+    "D1.15",
+    "D6.3",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.5",
+    "4.15",
+    "6.33",
+    "6.4"
+  ],
+  "ai_only": [
+    "1.13",
+    "1.19",
+    "1.6",
+    "1.8",
+    "1.9",
+    "13.5",
+    "6.3",
+    "CN1",
+    "CN5",
+    "D1.15",
+    "D6.3",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [
+    "6.33",
+    "6.4"
+  ],
+  "jaccard": 0.158,
+  "proof_summary": "**Step 1.** Let O be the centre of the given circle, and let AB be a side of its inscribed regular decagon. Join OA and OB (P1). The radii OA and OB are equal (D1.15), and each equals the side of the "
+}

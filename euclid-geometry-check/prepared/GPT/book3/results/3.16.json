@@ -1,0 +1,61 @@
+{
+  "proposition": "3.16",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AT is a ray of line t (perpendicular to AB at A) on one side of AB; angle OAT is right",
+      "type": "angle/position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "X on line t forms triangle OAX with right angle at A; OX > OA by angle-side inequality",
+      "type": "distance comparison"
+    },
+    {
+      "step": "Step 3",
+      "claim": "X lies outside the circle since OX > OA = radius; entire line t except A is outside the circle",
+      "type": "inside/outside circle"
+    },
+    {
+      "step": "Step 4",
+      "claim": "F is the foot of perpendicular from O to line AR; F lies on ray AR (not at A, not on opposite ray)",
+      "type": "point position on ray"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle OAR is acute (proper part of right angle OAT) since AR is strictly inside angle OAT",
+      "type": "angle comparison"
+    },
+    {
+      "step": "Step 5",
+      "claim": "C is on line AR beyond F with FC = FA; SAS congruence gives OA = OC, so C is on the circumference",
+      "type": "point on circumference"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Chord AC (both endpoints on circle) lies inside the circle by 3.2; chord lies in the chosen semicircle",
+      "type": "inside circle"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Every ray strictly inside angle OAT enters the semicircle immediately from A; no line can be interposed between AT and circumference",
+      "type": "interposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "For any acute alpha, ray AR with angle OAR = alpha contains chord AC inside semicircle; circumference extends beyond chord, so angle of semicircle S > alpha",
+      "type": "angle comparison (mixed)"
+    },
+    {
+      "step": "Step 8",
+      "claim": "For any acute alpha, ray AR with angle TAR = alpha contains chord AC; circumference lies between AT and chord at A, so horn angle H < alpha",
+      "type": "angle comparison (mixed)"
+    }
+  ],
+  "configuration_map": "Circle with center O and radius r. A is at one end of diameter AB on the circle. Line t is perpendicular to AB at A, with ray AT on one side. For any ray AR strictly inside angle OAT (making acute angle OAR with the diameter): F is the foot of the perpendicular from O to line AR, lying on ray AR at distance r*cos(angle OAR) from A. C is the reflection of A across F on line AR, at distance 2r*cos(angle OAR) from A. Coordinate verification: OC^2 = CF^2 + OF^2 = r^2*cos^2(angle OAR) + r^2*sin^2(angle OAR) = r^2, confirming C on the circle. The chord AC lies inside the circle (by 3.2). The tangent line t lies entirely outside the circle except at A. At point A, the circumference curves between the tangent direction AT (outside) and any interior chord direction (inside).",
+  "pass_reason": "All spatial claims are mutually consistent. The key construction (perpendicular from O to line AR, reflection to place C on the circle) is verified by coordinate geometry. F lies on ray AR because angle OAR is acute (perpendicular projection lands on the correct side). C is on the circumference by SAS congruence. Chord AC lies inside the circle by Prop 3.2. The interposition and horn-angle comparison arguments correctly use the fact that the circumference at A lies between the tangent (outside) and any chord (inside). No angle decomposition errors or point-position contradictions are present."
+}

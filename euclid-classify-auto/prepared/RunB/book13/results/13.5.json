@@ -1,0 +1,13 @@
+{
+  "proposition": "13.5",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same logical backbone: they start from the golden ratio definition to establish AB*BC = AC^2 (via D6.3 and 6.17), then derive DA*DB = AB^2, convert this to the proportion DB:BA = BA:AD (via 6.17), and finally show BA > AD. The difference is in the tools used to traverse this backbone. Heath uses a geometric diagram with squares and rectangles (AE, CE, HC, DK) to reach DA*DB = AB^2, while the AI uses algebraic manipulation via 2.3 and CN2 to reach the same conclusion. For the ordering step, Heath cites 5.14 (proportion-preserves-ordering from DB > BA), while the AI argues directly via CN5 (whole > part, since AC is a proper part of AB and DA = AC). The ai_only items (1.3, 2.3, CN2, CN5, P2, P3) are construction propositions, common notions, postulates, and an algebraic identity — all reflecting different citation depth rather than a different backbone. The heath_only item (5.14) is replaced by an equivalent direct argument. Since both proofs establish the same key intermediate conclusions through the same logical chain but at different levels of citation granularity, this is a granularity difference.",
+  "jaccard": 0.222,
+  "ai_citations": "1.3|2.3|6.17|CN2|CN5|D6.3|P2|P3",
+  "heath_citations": "5.14|6.17|D6.3",
+  "ai_only": "1.3|2.3|CN2|CN5|P2|P3",
+  "heath_only": "5.14",
+  "audit_record": ""
+}

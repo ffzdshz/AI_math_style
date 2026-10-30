@@ -1,0 +1,30 @@
+{
+  "proposition": "3.2",
+  "book": 3,
+  "statement": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+  "heath_proof": "Let ABC be a circle, and let two points A, B be taken at random on its circumference; I say that the straight line joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as AEB; let the centre of the circle ABC be taken [III. 1], and let it be D; let DA, DB be joined, and let DFE be drawn through. Then, since DA is equal to DB, the angle DAE is also equal to the angle DBE. [I. 5]And, since one side AEB of the triangle DAE is produced, the angle DEB is greater than the angle DAE. [I. 16]  But the angle DAE is equal to the angle DBE; therefore the angle DEB is greater than the angle DBE. And the greater angle is subtended by the greater side; [I. 19] therefore DB is greater than DE. But DB is equal to DF;  therefore DF is greater than DE,   the less than the greater: which is impossible. Therefore the straight line joined from A to B will not fall outside the circle. Similarly we can prove that neither will it fall on the circumference itself; therefore it will fall within.",
+  "ai_proof_text": "3.2\n**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.\n\n**Step 1.** Let A and B be two distinct points on the circumference of the given circle, and draw AB. Find the centre O and join OA and OB. Since these are radii, OA = OB. [P1, 3.1, D1.15]\n\n**Step 2.** Let C be any point strictly between A and B. If C coincides with O, it is inside the circle, since the centre lies within it. Otherwise join OC. Our route is to show OC < OA, separating the collinear case from the triangular case. [D1.15, P1]\n\n**Step 3.** Suppose first that O lies on the straight line AB. Then O must lie between A and B; otherwise one of the equal radii OA and OB would be a proper part of the other, contrary to the whole being greater than its part. Since C is strictly between A and B and differs from O, OC is a proper part of either OA or OB. Hence OC < OA. [D1.15, CN5]\n\n**Step 4.** Now suppose that O does not lie on the straight line AB. Since OA = OB, the base angles of triangle OAB are equal: ∠OAB = ∠OBA. Because C lies between A and B, these are respectively ∠OAC and ∠OBC. Thus ∠OAC = ∠OBC. [1.5]\n\n**Step 5.** In triangle AOC, ∠OCB is an exterior angle, and therefore ∠OCB > ∠OAC. The exterior-angle theorem is the direct choice here because CB already continues AC. By Step 4, ∠OCB > ∠OBC. Consequently, in triangle OBC, the side OB opposite the greater angle is greater than OC. Thus OC < OB = OA. [1.16, 1.19, D1.15]\n\n**Step 6.** In either case, OC < OA. Therefore C cannot be on the circumference, since its distance from O would then equal OA. Nor can C be outside the circle: since O is inside and the circumference bounds the figure, the segment OC would meet that boundary at a point D strictly between O and C. Then OD = OA, while OC > OD, contradicting OC < OA. Hence C is inside the circle. Since C was any point strictly between A and B, the straight line joining A and B lies within the circle, except for its endpoints on the circumference. [D1.15, CN5]\n\n**USED:** 1.16, 1.19, 1.5, 3.1, CN5, D1.15, P1\n**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1\n**Jaccard:** 0.571 — AI adds ['CN5', 'D1.15', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1",
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1"
+  ],
+  "ai_only": [
+    "CN5",
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.571,
+  "proof_summary": "**Step 1.** Let A and B be two distinct points on the circumference of the given circle, and draw AB. Find the centre O and join OA and OB. Since these are radii, OA = OB. [P1, 3.1, D1.15]  **Step 2.*"
+}

@@ -1,0 +1,39 @@
+{
+  "proposition": "10.36",
+  "book": 10,
+  "statement": "If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called binomial.",
+  "heath_proof": "For let two rational straight lines AB, BC commensurablein square only be added together; I say that the whole AC is irrational. For, since AB is incommensurable in length with BC —for they are commensurable in square only— and, as AB is to BC, so is the rectangle AB, BC to the square on BC, therefore the rectangle AB, BC is incommensurable with the square on BC. [X. 11] But twice the rectangle AB, BC is commensurable with the rectangle AB, BC [X. 6], and the squares on AB, BC are commensurable with the square on BC —for AB, BC are rational straight lines commensurable in square only— [X. 15] therefore twice the rectangle AB, BC is incommensurablewith the squares on AB, BC. [X. 13] And, componendo, twice the rectangle AB, BC together with the squares on AB, BC, that is, the square on AC [II. 4], is incommensurable with the sum of the squares on AB, BC. [X. 16] But the sum of the squares on AB, BC is rational;therefore the square on AC is irrational, so that AC is also irrational. [X. Def. 4] And let it be called binomial.",
+  "ai_proof_text": "10.36\n**Statement:** If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called binomial.\n\n**Step 1.** Let AB and BC be two rational straight lines commensurable in square only. Set AC equal to AB together with BC; we must show that AC is irrational.\n\n**Step 2.** Since AC is cut at B, by Proposition 2.4, the square on AC is equal to the sum of the squares on AB and BC together with twice the rectangle contained by AB and BC. That is, sq(AC) = sq(AB) + sq(BC) + 2*rect(AB, BC).\n\n**Step 3.** Since AB and BC are rational, the squares on AB and on BC are each rational areas (by Definition D10.1.3 and D10.1.4, rational straight lines have rational squares). Since AB and BC are commensurable in square, sq(AB) is commensurable with sq(BC) (by Definition D10.1.2). Therefore, by Proposition 10.15, the sum sq(AB) + sq(BC) is commensurable with each of sq(AB) and sq(BC), and hence sq(AB) + sq(BC) is a rational area.\n\n**Step 4.** Since AB and BC are rational straight lines commensurable in square only, by Proposition 10.21, the rectangle contained by AB and BC is irrational, and the side of the square equal to it is called medial. That is, rect(AB, BC) is a medial (and hence irrational) area.\n\n**Step 5.** Now suppose, for the sake of contradiction, that AC is rational. Then the square on AC would be a rational area (by D10.1.4).\n\n**Step 6.** Since sq(AC) would be rational and sq(AB) + sq(BC) is rational (from Step 3), both are commensurable with the square on the assigned rational straight line. By Proposition 10.12, two areas each commensurable with the same area are commensurable with one another, so sq(AC) and sq(AB) + sq(BC) would be commensurable with each other.\n\n**Step 7.** From Step 2, we have 2*rect(AB, BC) = sq(AC) - sq(AB) - sq(BC). Since sq(AC) and sq(AB) + sq(BC) are commensurable (by Step 6), by Proposition 10.15, the whole sq(AC) being commensurable with the part sq(AB) + sq(BC) implies that the remainder 2*rect(AB, BC) is also commensurable with sq(AC). Since sq(AC) is rational, 2*rect(AB, BC) would therefore be a rational area.\n\n**Step 8.** Since 2*rect(AB, BC) is in the ratio 2:1 to rect(AB, BC), and this is the ratio of a number to a number, by Proposition 10.6, rect(AB, BC) is commensurable with 2*rect(AB, BC). If 2*rect(AB, BC) were rational, then rect(AB, BC) would be commensurable with a rational area, and hence rational itself (by D10.1.4 and 10.12).\n\n**Step 9.** But this contradicts Step 4, which established that rect(AB, BC) is irrational (medial). Therefore the assumption in Step 5 is false, and AC cannot be rational.\n\n**Step 10.** Therefore AC is irrational. And let such a line, the sum of two rational straight lines commensurable in square only, be called binomial. Q.E.D.\n\n**USED:** 10.12, 10.15, 10.21, 10.6, 2.4, D10.1.2, D10.1.3, D10.1.4\n**Human refs (from References field):** 10.11, 10.13, 10.15, 10.16, 10.6, 2.4, D10.1.4\n**Jaccard:** 0.364 — AI adds ['10.12', '10.21', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.13', '10.16']",
+  "ai_used": [
+    "10.12",
+    "10.15",
+    "10.21",
+    "10.6",
+    "2.4",
+    "D10.1.2",
+    "D10.1.3",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.13",
+    "10.15",
+    "10.16",
+    "10.6",
+    "2.4",
+    "D10.1.4"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.21",
+    "D10.1.2",
+    "D10.1.3"
+  ],
+  "heath_only": [
+    "10.11",
+    "10.13",
+    "10.16"
+  ],
+  "jaccard": 0.364,
+  "proof_summary": "**Step 1.** Let AB and BC be two rational straight lines commensurable in square only. Set AC equal to AB together with BC; we must show that AC is irrational.  **Step 2.** Since AC is cut at B, by Pr"
+}

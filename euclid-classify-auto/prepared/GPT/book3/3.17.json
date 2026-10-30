@@ -1,0 +1,42 @@
+{
+  "proposition": "3.17",
+  "book": 3,
+  "statement": "From a given point to draw a straight line touching a given circle.",
+  "heath_proof": "Let A be the given point, and BCD the given circle; thus it is required to draw from the point A a straight line touching the circle BCD. For let the centre E of the circle be taken; [III. 1] let AE be joined, and with centre E and distance EA let the circle AFG be described; from D let DF be drawn at right angles to EA, and let EF, AB be joined; I say that AB has been drawn from the point A touching the circle BCD. For, since E is the centre of the circles BCD, AFG, EA is equal to EF, and ED to EB; therefore the two sides AE, EB are equal to the two sides FE, ED: and they contain a common angle, the angle at E; therefore the base DF is equal to the base AB, and the triangle DEF is equal to the triangle BEA, and the remaining angles to the remaining angles; [I. 4]therefore the angle EDF is equal to the angle EBA. But the angle EDF is right; therefore the angle EBA is also right. Now EB is a radius; and the straight line drawn at right angles to the diameter of a circle, from its extremity, touches the circle; [III. 16] therefore AB touches the circle BCD. Therefore from the given point A the straight line AB has been drawn touching the circle BCD.",
+  "ai_proof_text": "3.17\n**Statement:** From a given point to draw a straight line touching a given circle.\n\n**Step 1.** Let Γ be the given circle and A the given point. The admissible cases are that A lies outside Γ or on its circumference: a straight line through an interior point cuts the circle and therefore cannot touch it (D3.2). Find the centre O of Γ (3.1).\n\n**Step 2.** First suppose A lies outside Γ. Join OA, and let B be its intersection with Γ between O and A (P1). Describe the auxiliary circle Σ with centre O and radius OA (P3). Since OB is a proper part of OA, OB < OA; thus B lies inside Σ (CN5, D1.15).\n\n**Step 3.** At B draw a perpendicular to OA, and produce it to meet Σ at C (1.11, P2). Join OC, let D be its intersection with Γ between O and C, and join AD (P1).\n\n**Step 4.** We have OB = OD, since both are radii of Γ, and OC = OA, since both are radii of Σ (D1.15). Moreover, ∠BOC = ∠DOA: these angles coincide because the rays OB and OA coincide, as do the rays OC and OD (CN4). Consequently, triangles OBC and ODA have two corresponding sides and their included angles equal, so ∠OBC = ∠ODA (1.4). This is the chosen path: the included central angle is already common, making the side–angle–side criterion 1.4 the directly applicable congruence proposition.\n\n**Step 5.** Since BC is perpendicular to OA, ∠OBC is right; hence the equal angle ODA is right, and AD is perpendicular to OD (D1.10). Produce DO through O to the opposite circumference of Γ, thereby completing a diameter with extremity D (P2, D1.17). The straight line AD is perpendicular to this diameter at D, so it falls outside Γ except at D (3.16). Therefore AD touches Γ at D (D3.2).\n\n**Step 6.** If instead A lies on the circumference of Γ, join OA and extend its straight line as needed; the segment it cuts off in Γ is a diameter with extremity A (P1, P2, D1.17). Draw through A a perpendicular to this diameter (1.11). This perpendicular falls outside Γ except at A, and therefore touches Γ at A (3.16, D3.2). Thus, in either admissible case, a straight line touching the given circle has been drawn from the given point.\n\n**USED:** 1.11, 1.4, 3.1, 3.16, CN4, CN5, D1.10, D1.15, D1.17, D3.2, P1, P2, P3\n**Human refs (from References field):** 1.4, 3.1, 3.16\n**Jaccard:** 0.231 — AI adds ['1.11', 'CN4', 'CN5', 'D1.10', 'D1.15', 'D1.17', 'D3.2', 'P1', 'P2', 'P3']",
+  "ai_used": [
+    "1.11",
+    "1.4",
+    "3.1",
+    "3.16",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D3.2",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.4",
+    "3.1",
+    "3.16"
+  ],
+  "ai_only": [
+    "1.11",
+    "CN4",
+    "CN5",
+    "D1.10",
+    "D1.15",
+    "D1.17",
+    "D3.2",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.231,
+  "proof_summary": "**Step 1.** Let Γ be the given circle and A the given point. The admissible cases are that A lies outside Γ or on its circumference: a straight line through an interior point cuts the circle and there"
+}

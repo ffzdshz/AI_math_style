@@ -1,0 +1,81 @@
+{
+  "proposition": "3.17",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "A lies on the circumference of circle BCD; E is the center (Case 1)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AF is drawn at right angles to radius AE at point A on the circumference",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AF falls outside circle BCD and is tangent at A (by 3.16)",
+      "type": "tangent_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "A lies outside circle BCD; AE meets the circumference at D (Case 2)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "M is the midpoint of AE, hence M lies strictly between A and E on segment AE",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Circle ABF (center M, radius MA = AE/2) intersects circle BCD; B is an intersection point",
+      "type": "circle_intersection"
+    },
+    {
+      "step": "Step 8",
+      "claim": "MA = MB = ME, all equal to AE/2 (M midpoint gives MA = ME; B on circle ABF gives MB = MA)",
+      "type": "equal_radii"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle MAB is isosceles with MA = MB; angle MAB = angle MBA",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Triangle MEB is isosceles with ME = MB; angle MEB = angle MBE",
+      "type": "triangle_property"
+    },
+    {
+      "step": "Step 11",
+      "claim": "A, M, E are collinear with B not on line AE; rays MA and ME from M are opposite, so angles AMB and EMB are supplementary",
+      "type": "supplementary_angles"
+    },
+    {
+      "step": "Step 15",
+      "claim": "angle BAE = angle MAB (ray AM from A is same as ray AE since M is between A and E)",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 15",
+      "claim": "angle AEB = angle MEB (ray EM from E is same as ray EA since M is between A and E)",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 16",
+      "claim": "angle ABE equals one right angle",
+      "type": "angle_value"
+    },
+    {
+      "step": "Step 17",
+      "claim": "EB is a radius of circle BCD and B is on the circumference; AB is perpendicular to EB at B, so AB is tangent by 3.16",
+      "type": "tangent_position"
+    }
+  ],
+  "configuration_map": "Case 2 configuration: A is outside circle BCD (center E, radius r = ED). M is the midpoint of segment AE, so M lies strictly between A and E on line AE, with MA = ME = AE/2. Circle ABF has center M and radius AE/2. Since AE > r (A is outside), the two circles intersect at point B (and another point). B lies on both circles but NOT on line AE (since the only points on line AE at distance AE/2 from M are A and E, neither of which can be B). This gives triangle ABE with M as an interior point of side AE. From M, rays MA and ME point in opposite directions, making angles AMB and EMB supplementary. From A, rays AM and AE coincide (same direction), so angle BAE = angle MAB. From E, rays EM and EA coincide (same direction), so angle AEB = angle MEB. The isosceles triangles MAB (MA=MB) and MEB (ME=MB) combined with the supplementary angle relation yield angle ABE = 90 degrees, establishing AB as tangent.",
+  "pass_reason": "All spatial claims are mutually consistent. The key configuration (M as midpoint of AE, B on both circles, B not on line AE) is verified to be geometrically realizable. The supplementary angle claim at M follows correctly from M being between A and E. The angle identifications in Step 15 follow correctly from M being on segment AE. No angle decomposition issues arise because the proof uses only triangle angle sums (1.32), supplementary angles (1.13), and isosceles base angles (1.5) — never a ray-betweenness decomposition. The tangent conclusion correctly applies 3.16 to a line perpendicular to a radius at the circumference."
+}

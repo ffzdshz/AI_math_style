@@ -1,0 +1,41 @@
+{
+  "proposition": "6.15",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G lies on ray AB from A, with AG = DE",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "H lies on ray AC from A, with AH = DF",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle GAH = Angle BAC because G is on ray AB and H is on ray AC (rays coincide)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangles ABC and AGC have bases AB and AG on the same straight line (A, G, B collinear) with common vertex C",
+      "type": "collinearity_and_common_height"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Triangles AGH and AGC have bases AH and AC on the same straight line (A, H, C collinear) with common vertex G",
+      "type": "collinearity_and_common_height"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Height from C to line AB is the same for triangles ABC and AGC; height from G to line AC is the same for triangles AGH and AGC",
+      "type": "same_height"
+    }
+  ],
+  "configuration_map": "Triangle ABC given with angle BAC. Triangle DEF given separately with angle EDF = angle BAC. Point G constructed on ray AB from A with AG = DE, so A, G, B are collinear (G between A and B, or at B, or beyond B depending on magnitudes). Point H constructed on ray AC from A with AH = DF, so A, H, C are collinear (similarly flexible). Triangle AGH is congruent to triangle DEF by SAS (1.4). Triangle AGC serves as the key intermediary: it shares vertex C with triangle ABC (enabling the first 6.1 application via common height from C to line AB) and shares vertex G with triangle AGH (enabling the second 6.1 application via common height from G to line AC). All constructions lie in the plane of triangle ABC.",
+  "pass_reason": "All spatial claims are mutually consistent. G on ray AB and H on ray AC ensure valid collinearity for both applications of 6.1 (same-height triangle pairs). The angle equality angle GAH = angle BAC follows directly from G and H lying on the respective rays. No angle decompositions, no inside/outside claims, and no betweenness issues arise. The proof uses only proportional reasoning (5.7, 5.11, 5.9) after establishing the geometric configuration, with no conflicting spatial requirements."
+}

@@ -1,0 +1,13 @@
+{
+  "proposition": "9.6",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "The forward dependency gate passes (9.5 precedes 9.6; D7.19 is a definition). Q1 finds no logical defect: the AI correctly establishes C = A^3 is cube by D7.19, then correctly applies 9.5 (if a cube multiplied by a number yields a cube, that number is cube) to conclude A is cube. Q2 applies the proof-tree containment test to the three substantive heath_only propositions (8.19, 8.8, 8.23): all three appear inside Heath's own proof of 9.5, which the AI cites as a single higher-level unit. Heath re-derives the internals of 9.5 inline in his proof of 9.6 (establishing proportions via VII.Def.20, finding mean proportionals via VIII.19/VIII.8, concluding via VIII.23), while the AI packages that entire argument by citing 9.5 directly. The remaining differences (D7.19 vs D7.20) are definitional. Since the containment test passes for all substantive heath_only items, this is Case A -- same logical backbone at different citation depth -- yielding G.",
+  "jaccard": 0.0,
+  "ai_citations": "9.5|D7.19",
+  "heath_citations": "8.19|8.23|8.8|D7.20",
+  "ai_only": "9.5|D7.19",
+  "heath_only": "8.19|8.23|8.8|D7.20",
+  "audit_record": ""
+}

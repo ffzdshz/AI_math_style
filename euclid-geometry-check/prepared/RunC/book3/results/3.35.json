@@ -1,0 +1,61 @@
+{
+  "proposition": "3.35",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "E is inside the circle; AC and BD intersect at E",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Case 1: E coincides with centre F (both chords are diameters); AE=EC=DE=EB as radii",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Case 2: F lies on AC (AC is a diameter); FG is perpendicular from F to BD; G is on BD; DG=GB (bisection by III.3)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "F is midpoint of AC; E is on AC but not at the midpoint (unequal partition for II.5)",
+      "type": "segment_partition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Triangle FGE is right-angled at G; G and E are both on BD, F is off BD",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle FGB is right-angled at G; G and B are both on BD, F is off BD",
+      "type": "triangle_configuration"
+    },
+    {
+      "step": "Step 9",
+      "claim": "BD is cut equally at G and unequally at E (partition for II.5)",
+      "type": "segment_partition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "Case 3: Diameter through F and E is drawn; G is named as intersection of diameter with BD (but G=E since E is already on both)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 13",
+      "claim": "Diameter FH intersects chord AC at E; Case 2 applied to give FE*EH = AE*EC",
+      "type": "intersection"
+    },
+    {
+      "step": "Step 14",
+      "claim": "Diameter FH intersects chord BD at E; Case 2 applied to give FE*EH = DE*EB",
+      "type": "intersection"
+    }
+  ],
+  "configuration_map": "Case 1: E = F = centre. All segments AE, EC, DE, EB are radii. Trivially consistent.\n\nCase 2: Circle with centre F. Diameter AC passes through F (midpoint of AC). Chord BD does not pass through F. The two chords intersect at E (inside circle, on AC but not at midpoint F). Perpendicular from F to BD has foot G on BD, which bisects BD. Triangles FGE and FGB are right-angled at G. G and E are distinct points on BD (G is the midpoint of BD, E is the intersection with AC). All positions are mutually consistent.\n\nCase 3: Circle with centre F. Neither chord AC nor BD passes through F. They intersect at E inside the circle. A diameter is drawn through F and E, meeting the circle at two endpoints. Since E lies on BD and E lies on the diameter, the diameter intersects BD at E. The point G introduced as 'intersection of diameter with BD' equals E. Steps 13-15 apply Case 2 twice using the diameter and each chord, both intersecting at E. The result FE*EH serves as a common value proving AE*EC = DE*EB. All positions are consistent.",
+  "pass_reason": "All spatial claims are mutually consistent across all three cases. Case 2 correctly establishes perpendicular foot G on BD as distinct from intersection point E, and applies II.5 and I.47 to valid right triangles. Case 3 has a notational issue (G is introduced as if distinct from E when G=E), but this does not affect the mathematical argument since Steps 13-15 only use E as the intersection point and correctly apply Case 2 twice via the common product FE*EH. No angle decompositions are used; the proof relies entirely on segment products and the Pythagorean theorem applied to properly configured right triangles."
+}

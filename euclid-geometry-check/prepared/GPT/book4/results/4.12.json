@@ -1,0 +1,86 @@
+{
+  "proposition": "4.12",
+  "run": "GPT",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCDE is an equilateral and equiangular pentagon inscribed in the given circle with vertices in circular order",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Triangles ABC, BCD, CDE, DEA, EAB each have two sides equal to s with included angle alpha, yielding equal base angles beta",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "The sum of two base angles 2*beta is less than two right angles (by 1.17)",
+      "type": "angle_inequality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Tangent rays at A and B on the side of AB opposite the remaining vertices each make angle beta with AB (by tangent-chord theorem 3.32, each equals inscribed angle ACB)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "The tangent rays at A and B for side AB meet at point F on the side opposite C,D,E (by Postulate 5, since 2*beta < 2R)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Similarly tangent intersections G, H, I, K are formed at sides BC, CD, DE, EA respectively, all outside the inscribed pentagon",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Exterior triangles FAB, GBC, HCD, IDE, KEA each have both base angles equal to beta",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "At vertex B, successive angles are FBA=beta, ABC=alpha, CBG=beta, summing to alpha+2*beta=2R",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "BF and BG are opposite rays (collinear through B), so B lies between F and G on the tangent line at B",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Similarly C between G and H, D between H and I, E between I and K, A between K and F",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "The five original vertices lie within the respective sides of pentagon FGHIK",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "The five exterior triangles are congruent by ASA (base angles beta, base s), so all ten tangent segments are equal",
+      "type": "congruence"
+    },
+    {
+      "step": "Step 6",
+      "claim": "FG = FB + BG by betweenness; each side of FGHIK is the sum of two equal tangent segments",
+      "type": "segment_addition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Interior angles of FGHIK equal vertex angles AFB=BGC=CHD=DIE=EKA from the congruent exterior triangles",
+      "type": "angle_identification"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Each side of FGHIK lies on a tangent to the circle and contains the point of tangency within the side",
+      "type": "tangent_position"
+    }
+  ],
+  "configuration_map": "Points F, G, H, I, K are the intersections of consecutive tangent lines at the vertices of the inscribed pentagon ABCDE. F = intersection of tangents at A and B (outside circle, on side of AB opposite C,D,E). G = intersection of tangents at B and C. H = intersection of tangents at C and D. I = intersection of tangents at D and E. K = intersection of tangents at E and A. Each tangent line at a vertex passes through two adjacent outer vertices: the tangent at B passes through both F and G, with B between them. The tangent-chord angle at each endpoint of every pentagon side equals beta (the base angle of the isosceles triangles formed by consecutive sides and diagonals). The angle sum alpha + 2*beta = 2R (from triangle angle sum) ensures collinearity of consecutive outer vertices through each inscribed vertex. All exterior triangles (FAB, GBC, HCD, IDE, KEA) are congruent isosceles triangles with base angles beta and base s, making all tangent segments equal and all outer vertex angles equal. The outer pentagon FGHIK is therefore equilateral (each side = 2 * tangent segment) and equiangular (each angle = vertex angle of exterior triangle).",
+  "pass_reason": "All spatial claims are mutually consistent. The tangent-chord angles correctly equal beta by Proposition 3.32. The collinearity of F, B, G (and analogous triples) is validly established via the angle sum alpha + 2*beta = 2R. The betweenness claims are consistent with the tangent construction. The congruence of exterior triangles by ASA is valid, and the equilateral/equiangular conclusions follow correctly from the established betweenness and congruence. The proof takes a genuinely different path from Heath (tangent-chord angles rather than center-based perpendicularity arguments) but introduces no configuration contradictions."
+}

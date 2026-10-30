@@ -1,0 +1,36 @@
+{
+  "proposition": "3.9",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "D is a point taken within circle ABC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "More than two equal straight lines fall from D on circle ABC",
+      "type": "distance_claim"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Assumption: D is not the centre of the circle",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "By 3.7, since D is inside circle ABC and not the centre, the greatest line from D to the circle passes through the centre, the least is the remainder of that diameter, and only two equal straight lines fall from D on the circle (one on each side of the least)",
+      "type": "distance_ordering"
+    },
+    {
+      "step": "Step 4",
+      "claim": "More than two equal lines from hypothesis contradicts 3.7 conclusion of only two equal lines when D is not the centre",
+      "type": "contradiction_derivation"
+    }
+  ],
+  "configuration_map": "D is placed inside circle ABC (given). No auxiliary points or lines are constructed. The proof applies Proposition 3.7 as a black-box result: 3.7 requires D to be inside the circle and not the centre, both of which hold under the hypothesis and reductio assumption respectively. The conclusion of 3.7 (only two equal lines from a non-centre interior point) contradicts the given hypothesis (more than two equal lines), completing the proof.",
+  "pass_reason": "The proof makes minimal spatial claims: D is inside the circle and assumed not to be the centre. These are used consistently in a single application of Proposition 3.7. There are no angle decompositions, no auxiliary constructions, no ray orderings, and no inside/outside ambiguities. All spatial claims are mutually consistent."
+}

@@ -1,0 +1,767 @@
+# Book 8 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 8.1
+**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
+
+## Proposition 8.1
+**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
+
+**Step 1.** Let A, B, C, D be as many numbers as we please in continued proportion, so that, as A is to B, so is B to C, and, as B is to C, so is C to D; and let the extremes of them, A and D, be prime to one another, that is, let A and D be measured by an unit alone as a common measure [D7.12]. I say that A, B, C, D are the least of those numbers which have the same ratio with them.
+
+**Step 2.** For, if not, let E, F, G, H be numbers less than A, B, C, D respectively and in the same ratio with them, so that, as A is to B, so is E to F; as B is to C, so is F to G; and, as C is to D, so is G to H.
+
+**Step 3.** Now the numbers A, B, C, D and the numbers E, F, G, H are equal in multitude, and taken two and two they are in the same ratio (Step 2); therefore, ex aequali, as A is to D, so is E to H [7.14].
+
+**Step 4.** But A and D are prime to one another (Step 1), and numbers prime to one another are the least of those which have the same ratio with them [7.21]; therefore A, D are the least of the numbers which have the same ratio as A, D.
+
+**Step 5.** Now the least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent [7.20]. Since, as A is to D, so is E to H (Step 3), and A, D are the least of those which have this ratio (Step 4), therefore A measures E and D measures H, the antecedent the antecedent and the consequent the consequent.
+
+**Step 6.** But a number which measures another number is a part of it, the less of the greater [D7.3]; hence A, which measures E, is not greater than E. Yet E was supposed less than A (Step 2). Therefore the greater number A measures the less number E: which is impossible.
+
+**Step 7.** Therefore there are no numbers less than A, B, C, D which are in the same ratio with them; and the same argument applies whatever be the multitude of the numbers in continued proportion, since the ex aequali step (Step 3) holds for any multitude. Therefore A, B, C, D are the least of those numbers which have the same ratio with them. Q.E.D.
+
+**USED:** D7.12, 7.14, 7.21, 7.20, D7.3
+
+**USED:** 7.14, 7.20, 7.21, D7.12, D7.3
+**Human refs (from References field):** 7.14, 7.20, 7.21
+**Jaccard:** 0.600 — AI adds ['D7.12', 'D7.3']
+
+## Proposition 8.2
+**Statement:** To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.
+
+**Step 1.** Let the given ratio be that of two numbers, and by 7.33 take A, B, the least numbers of those which have the same ratio with them; the given ratio is thus A : B, with A, B the least numbers in that ratio. Let it be required to find numbers in continued proportion, as many as may be prescribed, the least in the ratio A : B. Let four be prescribed.
+
+**Step 2.** Let A by multiplying itself make C, let A by multiplying B make D, and let B by multiplying itself make E [D7.15].
+
+**Step 3.** Since A by multiplying the two numbers A and B has made C and D, the products have the same ratio as the numbers multiplied: A : B = C : D [7.17].
+
+**Step 4.** Since the two numbers A and B by multiplying B have made D and E, the products have the same ratio as the multipliers: A : B = D : E [7.18].
+
+**Step 5.** Therefore C : D = D : E, each being the ratio A : B; so C, D, E are three numbers in continued proportion in the ratio A : B.
+
+**Step 6.** Again, let A by multiplying C, D, E make F, G, H respectively, and let B by multiplying E make K [D7.15].
+
+**Step 7.** Since A by multiplying C and D has made F and G, C : D = F : G [7.17]; and since A by multiplying D and E has made G and H, D : E = G : H [7.17]. But C : D = A : B and D : E = A : B (Steps 3 and 4); therefore A : B = F : G and A : B = G : H.
+
+**Step 8.** Since A and B by multiplying E have made H and K, A : B = H : K [7.18].
+
+**Step 9.** Therefore F : G = G : H = H : K, each being the ratio A : B; so F, G, H, K are four numbers in continued proportion in the ratio A : B.
+
+**Step 10.** It remains to show that they are the least of those which have the same ratio. Since A, B are the least numbers of those which have the same ratio with them, A and B are prime to one another [7.22].
+
+**Step 11.** Since A, B are prime to one another, and A by multiplying itself has made C while B by multiplying itself has made E, the products C and E are prime to one another; and since further A by multiplying C has made F while B by multiplying E has made K, F and K are also prime to one another [7.27].
+
+**Step 12.** Now C, D, E are in continued proportion (Step 5) and their extremes C, E are prime to one another (Step 11); therefore C, D, E are the least of those which have the same ratio with them [8.1]. Likewise F, G, H, K are in continued proportion (Step 9) and their extremes F, K are prime to one another (Step 11); therefore F, G, H, K are the least of those which have the same ratio with them [8.1].
+
+**Step 13.** The same construction serves for any prescribed multitude. From any set of numbers so obtained, in continued proportion in the ratio A : B and having as extremes the products formed from A alone and from B alone, let A multiply each term and let B also multiply the last term; this yields a set with one term more. Exactly as in Steps 7 and 8, the new set is in continued proportion in the ratio A : B [7.17, 7.18]; its extremes are prime to one another, being formed by A and B multiplying the former extremes [7.27]; and hence it is the least of those which have the same ratio [8.1]. Therefore numbers in continued proportion, as many as may be prescribed, and the least that are in the given ratio, have been found. Q.E.F.
+
+**USED:** 7.17, 7.18, 7.22, 7.27, 7.33, 8.1, D7.15
+**Human refs (from References field):** 7.17, 7.18, 7.22, 7.27, 8.1
+**Jaccard:** 0.714 — AI adds ['7.33', 'D7.15']
+
+## Proposition 8.3
+**Statement:** If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.
+
+**Step 1.** Let A, B, C, D be as many numbers as we please in continued proportion, the least of those which have the same ratio with them; thus A : B = B : C = C : D. It is to be proved that the extremes A, D are prime to one another.
+
+**Step 2.** By 7.33 take E, F, the least numbers of those which have the same ratio with A, B; then E : F = A : B, which is the common ratio of the given numbers A, B, C, D.
+
+**Step 3.** By 8.2, in the ratio E : F, construct three numbers G, H, K in continued proportion, the least that are in that ratio; then four numbers L, M, N, O with the same property; and so on, taking one number more each time, until the multitude of the numbers taken equals the multitude of A, B, C, D. Let the numbers finally taken be L, M, N, O. By 8.2 they are in continued proportion in the ratio E : F and are the least of those which have the same ratio with them.
+
+**Step 4.** In the construction of 8.2, G is made by E multiplying itself and K by F multiplying itself; L is made by E multiplying G and O by F multiplying K; and, in general, the first extreme of each newly constructed set is made by E multiplying the first extreme of the preceding set, and the last extreme by F multiplying the last extreme of the preceding set.
+
+**Step 5.** Since E, F are the least of those which have the same ratio with them, E, F are prime to one another (7.22).
+
+**Step 6.** Since E, F are prime to one another, and E multiplying itself makes G while F multiplying itself makes K, therefore G, K are prime to one another (7.27). And since E multiplying G makes L and F multiplying K makes O, therefore L, O are prime to one another (7.27); and the same holds for the extremes of every further set so constructed, since they arise from E and F multiplying the preceding extremes respectively (7.27). Hence the extremes of the set equal in multitude to A, B, C, D, namely L and O, are prime to one another.
+
+**Step 7.** Now A, B, C, D are the least of those which have the same ratio with them; L, M, N, O are also the least of those which have the same ratio with them, and this ratio E : F is the ratio of A, B, C, D (Step 2); and the multitude of A, B, C, D is equal to the multitude of L, M, N, O. Since each of the two sets is the least of the numbers in continued proportion having this ratio and this multitude, neither set is less than the other; therefore A, B, C, D are equal to L, M, N, O respectively. In particular A = L and D = O.
+
+**Step 8.** But L, O are prime to one another (Step 6). Therefore A, D, being these same numbers, are prime to one another. Therefore, if as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another. Q.E.D.
+
+*Path note:* the coprimality of the extremes could alternatively be obtained by repeated application of 7.24 (products of numbers prime to a number are prime to it); 7.27 was chosen because it addresses directly the squares and cubes produced by the 8.2 construction and, as stated, extends to the extremes of every further set.
+
+**USED:** 7.22, 7.27, 7.33, 8.2
+**Human refs (from References field):** 7.22, 7.27, 7.33, 8.2
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 8.4
+**Statement:** Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.
+
+**Statement:** Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.
+
+Let the given ratios in least numbers be A:B, C:D and E:F, so that A, B are the least numbers having their ratio, C, D the least having theirs, and E, F the least having theirs. It is required to find numbers in continued proportion, the least, which are in the ratios A:B, C:D, E:F. (The argument for any number of ratios is the same, adjoining one ratio at a time, as noted in Step 8.)
+
+**Step 1.** Take G, the least number which is measured by both B and C [7.34].
+
+**Step 2.** B measures G; let it measure G m times. Multiply A by m and let the product be H. Then the number m, multiplying the two numbers A and B, produces H and G; therefore A:B = H:G [7.17].
+
+**Step 3.** C measures G; let it measure G n times. Multiply D by n and let the product be K. Then n, multiplying C and D, produces G and K; therefore C:D = G:K [7.17].
+
+**Step 4.** First case: E measures K. Let it measure K p times, and multiply F by p to obtain L. Then p, multiplying E and F, produces K and L; therefore E:F = K:L [7.17]. Hence H, G, K, L are in continued proportion, H:G being the ratio A:B, G:K the ratio C:D, and K:L the ratio E:F. So H, G, K, L are numbers in continued proportion in the given ratios.
+
+**Step 5.** H, G, K, L are the least such numbers. For if not, there are numbers N, O, M, P less than H, G, K, L which are in continued proportion in the ratios A:B, C:D, E:F. Since A:B = N:O and A, B are the least numbers having their ratio, the least numbers measure those having the same ratio equally, the greater the greater and the less the less; so B measures O [7.20]. Again, since C:D = O:M and C, D are least, C measures O [7.20]. Thus B and C both measure O; therefore G, the least number measured by B and C, also measures O [7.35]. A number which measures another is a part of it, the less of the greater, or is equal to it; so G is not greater than O [D7.3]. But O is less than G by hypothesis, which is impossible. Therefore H, G, K, L are the least numbers in continued proportion in the given ratios.
+
+**Step 6.** Second case: E does not measure K. Take M, the least number measured by both E and K [7.34]. K measures M; let it measure M t times, and multiply H and G by t to obtain N and O respectively. Then t, multiplying H, G, K, produces N, O, M; therefore H:G = N:O and G:K = O:M [7.17]. Also E measures M; let it measure M s times, and multiply F by s to obtain P. Then s, multiplying E and F, produces M and P; therefore E:F = M:P [7.17]. Now N:O is the same ratio as H:G, that is, A:B; O:M is the same as G:K, that is, C:D; and M:P is E:F [D7.20]. Hence N, O, M, P are in continued proportion in the given ratios A:B, C:D, E:F.
+
+**Step 7.** N, O, M, P are the least such numbers. For if not, there are numbers Q, R, S, T less than N, O, M, P which are in continued proportion in the ratios A:B, C:D, E:F. Since A:B = Q:R and A, B are least, B measures R [7.20]; since C:D = R:S and C, D are least, C measures R [7.20]. Thus B and C both measure R, so G, the least number measured by B and C, measures R [7.35]. Now G:K and R:S are each the same ratio as C:D, so G:K = R:S [D7.20]; therefore, alternately, G:R = K:S [7.13]. Since G measures R, G is a part of R or equal to it, and hence K is the same part of S, or equal to it; that is, K measures S [D7.20, D7.3]. Again, since E:F = S:T and E, F are least, E measures S [7.20]. Thus E and K both measure S; therefore M, the least number measured by E and K, measures S [7.35], and so M is not greater than S [D7.3]. But S is less than M by hypothesis, which is impossible. Therefore N, O, M, P are the least numbers in continued proportion in the given ratios.
+
+**Step 8.** In either case, numbers in continued proportion which are the least in the given ratios A:B, C:D, E:F have been found. If further ratios in least numbers are given, the same process is repeated: having the least numbers in continued proportion for the ratios so far, with last term X, and the next ratio Y:Z in least numbers, if Y measures X the sequence is extended by one term as in Step 4, and if not, the least number measured by Y and X is taken as in Step 6, all preceding terms being multiplied accordingly; the argument of Steps 5 and 7 shows at each stage that the numbers obtained are least. Q.E.F.
+
+**USED:** 7.13, 7.17, 7.20, 7.34, 7.35, D7.20, D7.3
+**Human refs (from References field):** 7.13, 7.20, 7.34, 7.35, D7.20
+**Jaccard:** 0.714 — AI adds ['7.17', 'D7.3']
+
+## Proposition 8.5
+**Statement:** Plane numbers have to one another the ratio compounded of the ratios of their sides.
+
+**Step 1.** Let A and B be plane numbers; let C, D be the sides of A and E, F the sides of B, so that A is the number produced when C and D multiply one another, and B the number produced when E and F multiply one another (D7.16). Name the sides so that D by multiplying C makes A, and F by multiplying E makes B. It is to be shown that A has to B the ratio compounded of the ratios of the sides, namely of C : E and D : F.
+
+**Step 2.** Let D by multiplying E make L (D7.15).
+
+**Step 3.** Since the one number D, by multiplying the two numbers C and E, has made A and L, the products have the same ratio as the numbers multiplied; therefore C : E = A : L (7.17).
+
+**Step 4.** Since the two numbers D and F, by multiplying the same number E, have made L and B, the products have the same ratio as the multipliers; therefore D : F = L : B (7.18).
+
+**Step 5.** The three numbers A, L, B thus form a chain in which A : L = C : E and L : B = D : F. The ratio of the extremes, A : B, is the ratio compounded of the ratios A : L and L : B, since the sizes of these two ratios multiplied together make the ratio A : B (D6.5).
+
+**Step 6.** But A : L is the same ratio as C : E, and L : B the same ratio as D : F (Steps 3 and 4); hence the ratio compounded of A : L and L : B is the ratio compounded of C : E and D : F. Therefore A has to B the ratio compounded of the ratios of the sides C : E and D : F. Q.E.D.
+
+**Remark (path choice).** An alternative route takes, by 8.4, the least numbers G, H, K continuously proportional in the ratios C : E and D : F and then passes from G : K to A : B ex aequali (7.14). The route above is chosen as the more direct one: the numbers A, L, B themselves already form the required chain, so no auxiliary least numbers and no ex aequali step are needed.
+
+**USED:** 7.17, 7.18, D6.5, D7.15, D7.16
+**Human refs (from References field):** 7.14, 7.17, 8.4
+**Jaccard:** 0.143 — AI adds ['7.18', 'D6.5', 'D7.15', 'D7.16']; Human adds ['7.14', '8.4']
+
+## Proposition 8.6
+**Statement:** If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.
+
+**Step 1.** Let A, B, C, D, E be as many numbers as we please in continued proportion, so that A:B = B:C = C:D = D:E, and let A not measure B. I say that no one of these numbers measures any one that comes after it in the proportion.
+
+**Step 2.** First, each number fails to measure the number next after it. For, since A:B = B:C, by D7.20 A is the same multiple, or the same part, or the same parts of B that B is of C. Now if B measured C, then B would be a part of C (D7.3), and therefore A would be the same part of B; that is, A would measure B (D7.3), which is contrary to the hypothesis. Therefore B does not measure C.
+
+**Step 3.** In the same way, since B:C = C:D and B does not measure C, it follows by D7.20 and D7.3 that C does not measure D; and since C:D = D:E and C does not measure D, D does not measure E; and so on through the whole sequence. Thus no number of the sequence measures the number immediately following it.
+
+**Step 4.** Next let any two of the numbers be taken which are not next to one another, P the earlier and Q the later, and let P, R, S, ..., Q be the numbers of the sequence from P to Q inclusive. These are in continued proportion, P:R = R:S = ..., since they are consecutive terms of the given proportion; and P does not measure R, either by hypothesis (if P is A) or by Step 3 (if P is a later term).
+
+**Step 5.** By 7.33 take F, G, H, ..., K, the least numbers of those which have the same ratio with P, R, S, ..., Q, equal to them in multitude; so that P:R = F:G, R:S = G:H, and so on for each pair in order.
+
+**Step 6.** Since P:R = F:G, R:S = G:H, and so on, while P:R = R:S = ... is one and the same ratio, the ratios F:G, G:H, ... are all the same ratio; hence F, G, H, ..., K are in continued proportion, and by Step 5 they are the least of those which have the same ratio with them.
+
+**Step 7.** Therefore, by 8.3, the extremes F and K are prime to one another; that is, by D7.12, the unit is the only common measure of F and K.
+
+**Step 8.** Since the numbers P, R, S, ..., Q and the numbers F, G, H, ..., K are equal in multitude and, taken two and two, are in the same ratio, they are also in the same ratio ex aequali (7.14): P:Q = F:K.
+
+**Step 9.** Since P:R = F:G and P does not measure R (Step 4), F does not measure G. For if F measured G, F would be a part of G (D7.3), and then by D7.20 P would be the same part of R, so that P would measure R, which is not the case.
+
+**Step 10.** Hence F is not a unit. For every number is a multitude composed of units (D7.2), so that the unit measures every number and in particular would measure G; but F does not measure G (Step 9).
+
+**Step 11.** Now F does not measure K. For F measures itself; so if F also measured K, then F would be a common measure of F and K; but by Step 7 the unit alone is a common measure of F and K, so that F would be a unit, contrary to Step 10.
+
+**Step 12.** Finally, since P:Q = F:K (Step 8) and F does not measure K (Step 11), P does not measure Q. For if P measured Q, P would be a part of Q (D7.3), and then by D7.20 F would be the same part of K, so that F would measure K, which is not the case.
+
+**Step 13.** Thus no number of the sequence measures the number next after it (Step 3), and no number measures any later number not next to it (Steps 4 to 12). Therefore, if there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other. Q.E.D.
+
+**USED:** 7.14, 7.33, 8.3, D7.12, D7.2, D7.20, D7.3
+**Human refs (from References field):** 7.14, 7.33, 8.3, D7.20
+**Jaccard:** 0.571 — AI adds ['D7.12', 'D7.2', 'D7.3']
+
+## Proposition 8.7
+**Statement:** If there be as many numbers as we please in continued proportion, and the first measure the last, it will measure the second also.
+
+**Step 1.** Let A, B, C, D be as many numbers as we please in continued proportion, so that A is to B as B is to C and as C is to D, and let the first number A measure the last number D. I say that A measures the second number B also.
+
+**Step 2.** Suppose, if possible, that A does not measure B.
+
+**Step 3.** Then A, B, C, D are numbers in continued proportion in which the first, A, does not measure the second, B. Therefore, by 8.6, no one of the numbers A, B, C, D measures any other of them; in particular, A does not measure D.
+
+**Step 4.** But A measures D by hypothesis. This contradicts the conclusion of Step 3.
+
+**Step 5.** Therefore the supposition of Step 2 is impossible, so A measures B. Hence, if there be as many numbers as we please in continued proportion and the first measure the last, it measures the second also. Q.E.D.
+
+**USED:** 8.6
+**Human refs (from References field):** 8.6
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 8.8
+**Statement:** If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.
+
+**Step 1.** Let A, B be two numbers, and let the numbers C, D fall between them in continued proportion with them, so that A : C = C : D = D : B. Let E, F be numbers which have the same ratio as A, B, so that A : B = E : F. It is to be shown that as many numbers as fall between A and B in continued proportion (here two, namely C and D), so many also fall between E and F in continued proportion with them.
+
+**Step 2.** By 7.33, take G, H, K, L, equal in multitude to A, C, D, B, and the least of those numbers which have the same ratio with A, C, D, B; thus A : C = G : H, C : D = H : K, and D : B = K : L.
+
+**Step 3.** Since A : C = C : D = D : B, it follows that G : H = H : K = K : L. Hence G, H, K, L are in continued proportion, and they are the least of those numbers which have the same ratio with them.
+
+**Step 4.** Therefore, by 8.3, the extremes G, L are prime to one another.
+
+**Step 5.** Since A, C, D, B and G, H, K, L are equal in multitude and, taken two and two, are in the same ratio (Step 2), by 7.14, ex aequali, A : B = G : L.
+
+**Step 6.** But A : B = E : F by hypothesis; therefore G : L = E : F.
+
+**Step 7.** Since G, L are prime to one another (Step 4), by 7.21 they are the least of those numbers which have the same ratio with them.
+
+**Step 8.** Now E, F have the same ratio as G, L (Step 6). Hence, by 7.20, G and L measure E and F respectively the same number of times, the antecedent G measuring the antecedent E and the consequent L measuring the consequent F. Let P be that number of times, so that G measures E according to the units in P, and L measures F according to the units in P.
+
+**Step 9.** By D7.15, E is G added to itself as many times as there are units in P, that is, P multiplying G makes E; likewise P multiplying L makes F. Let P also multiply H and K, making M and N respectively (D7.15).
+
+**Step 10.** Since P multiplying G, H makes E, M, by 7.17, G : H = E : M. Since P multiplying H, K makes M, N, by 7.17, H : K = M : N. Since P multiplying K, L makes N, F, by 7.17, K : L = N : F.
+
+**Step 11.** But G : H = H : K = K : L (Step 3); therefore E : M = M : N = N : F. So E, M, N, F are in continued proportion, and M, N fall between E and F in continued proportion with them.
+
+**Step 12.** Thus the two numbers M, N fall between E, F in continued proportion, exactly as many as the two numbers C, D fall between A, B. Nothing in the argument depended on the particular multitude of the intermediate numbers: for any multitude of numbers falling between A and B in continued proportion, the same construction (least numbers by 7.33, extremes prime to one another by 8.3, ex aequali by 7.14, a common number of measurings by 7.21 and 7.20, and multiplication of each of the least numbers by that same number P with 7.17) produces an equal multitude of numbers falling between E and F in continued proportion. Therefore, however many numbers fall between two numbers in continued proportion, so many also fall in continued proportion between the numbers which have the same ratio with the original numbers. Q.E.D.
+
+**USED:** 7.14, 7.17, 7.20, 7.21, 7.33, 8.3, D7.15
+**Human refs (from References field):** 7.14, 7.20, 7.21, 7.33, 8.3, D7.20
+**Jaccard:** 0.625 — AI adds ['7.17', 'D7.15']; Human adds ['D7.20']
+
+## Proposition 8.9
+**Statement:** If two numbers be prime to one another, and numbers fall between them in continued proportion, then, however many numbers fall between them in continued proportion, so many will also fall between each of them and an unit in continued proportion.
+
+**Step 1.** Let A, B be two numbers prime to one another, and let the numbers C, D fall between them in continued proportion, so that A : C = C : D = D : B. Let E be an unit. I say that, as many numbers as fall between A, B in continued proportion, so many also fall between each of A, B and the unit E in continued proportion.
+
+**Step 2.** Since A, C, D, B are in continued proportion and their extremes A, B are prime to one another, A, C, D, B are the least of those numbers which have the same ratio with them [8.1].
+
+**Step 3.** Take F, G, the least numbers of those which have the same ratio with A, C [7.33]. Then A : C = F : G; and since A : C = C : D = D : B, the ratio F : G is the common ratio of the continued proportion A, C, D, B.
+
+**Step 4.** By 8.2, take numbers in continued proportion, the least that are in the ratio F : G, equal in multitude to A, C, D, B, namely four numbers M, N, O, P. By the construction of 8.2 they arise thus: F multiplied by itself makes H, and F multiplied by H makes M; G multiplied by itself makes L, and G multiplied by L makes P; the remaining two, N and O, are F multiplied by the product of F, G and by L respectively. So M, N, O, P are in continued proportion with M : N = N : O = O : P = F : G, they are the least of those which have this ratio, and their extremes are M = F·F·F and P = G·G·G [8.2].
+
+**Step 5.** Since F : G = A : C [Step 3], the numbers M, N, O, P are in continued proportion in the same ratio as A, C, D, B; that is, A : C = M : N, C : D = N : O, D : B = O : P, and the two sets are equal in multitude. Now A, C, D, B are the least of those which have this ratio [Step 2], and M, N, O, P are also the least of those which have this ratio [Step 4]. But of numbers in continued proportion having a given ratio and given in multitude there is only one least set, for neither of two such sets, each being the least, can be less than the other. Therefore A, C, D, B are equal to M, N, O, P respectively; in particular A = M and B = P.
+
+**Step 6.** Since F multiplied by itself makes H, H is F added to itself as many times as there are units in F [D7.15]; therefore F measures H according to the units in F. But the unit E measures F according to the units in F, since F is a multitude composed of units [D7.2]. Therefore the unit E measures F the same number of times that F measures H; so E is the same part of F that F is of H, and therefore E : F = F : H [D7.20].
+
+**Step 7.** Again, since F multiplied by H makes M, M is H added to itself as many times as there are units in F [D7.15]; therefore H measures M according to the units in F. But the unit E measures F according to the units in F [D7.2]. Therefore E measures F the same number of times that H measures M; so E : F = H : M [D7.20]. Combining with Step 6, E : F = F : H = H : M, so that E, F, H, M are in continued proportion. But M = A [Step 5]; therefore E : F = F : H = H : A, and the two numbers F, H fall between the unit E and A in continued proportion.
+
+**Step 8.** In the same way, since G multiplied by itself makes L and G multiplied by L makes P, G measures L, and L measures P, each according to the units in G [D7.15], while the unit E measures G according to the units in G [D7.2]; therefore E : G = G : L and E : G = L : P [D7.20], so that E : G = G : L = L : P. But P = B [Step 5]; therefore E : G = G : L = L : B, and the two numbers G, L fall between the unit E and B in continued proportion.
+
+**Step 9.** Thus two numbers C, D fell between A, B in continued proportion, and two numbers fall between the unit E and A, and likewise two between the unit E and B, in continued proportion. The argument is the same for any multitude of numbers falling between A, B: 8.2 furnishes the least numbers in continued proportion in the ratio F : G of any prescribed multitude, whose extremes are the products of F, and of G, by themselves taken correspondingly often; these least numbers coincide with the given ones by Steps 2 and 5, and the chain of proportions from the unit is formed as in Steps 6 to 8. Therefore, however many numbers fall between A, B in continued proportion, so many also fall between each of A, B and the unit in continued proportion. Q.E.D.
+
+**USED:** 7.33, 8.1, 8.2, D7.15, D7.2, D7.20
+**Human refs (from References field):** 8.1, 8.2, D7.20
+**Jaccard:** 0.500 — AI adds ['7.33', 'D7.15', 'D7.2']
+
+## Proposition 8.10
+**Statement:** If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
+
+## Proposition 8.10
+**Statement:** If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
+
+**Step 1.** Let A, B be two numbers and C the unit. Let the numbers D, E fall between C and A in continued proportion, so that C : D = D : E = E : A, and let the numbers F, G fall between C and B in continued proportion, so that C : F = F : G = G : B. (Two intermediates are taken as the representative case; the argument below is the same, step for step, for any number of intermediates.) I say that as many numbers fall between A and B in continued proportion as fall between each of A, B and the unit, namely two.
+
+**Step 2.** Since C : D = D : E, by D7.20 the unit C is the same part of D that D is of E; that is, D measures E as many times as the unit C measures D. But D is a multitude composed of units (D7.2), so the unit C measures D according to the units in D. Therefore D measures E according to the units in D; that is, D added to itself as many times as there are units in D makes E, so that D multiplied by itself makes E: D × D = E (D7.15).
+
+**Step 3.** Since C : D = D : E and D : E = E : A, the ratios C : D and E : A, each being the same as D : E, are the same as one another: C : D = E : A. Hence by D7.20 the unit C is the same part of D that E is of A, so E measures A as many times as C measures D, namely according to the units in D (D7.2). Therefore D multiplied by E makes A: D × E = A (D7.15).
+
+**Step 4.** In exactly the same way, from C : F = F : G it follows that F × F = G, and from C : F = G : B (both being the same as F : G) it follows that F × G = B (D7.2, D7.20, D7.15).
+
+**Step 5.** Let D multiplied by F make H, let D multiplied by H make K, and let F multiplied by H make L (D7.15).
+
+**Step 6.** Since D × D = E and D × F = H, the number D multiplying the two numbers D, F has made E, H; therefore by 7.17, D : F = E : H.
+
+**Step 7.** Since D × F = H and F × F = G, the two numbers D, F multiplying the number F have made H, G; therefore by 7.18, D : F = H : G.
+
+**Step 8.** Since D × E = A and D × H = K, the number D multiplying the two numbers E, H has made A, K; therefore by 7.17, E : H = A : K. But E : H = D : F (Step 6); therefore A : K = D : F.
+
+**Step 9.** Since D × H = K and F × H = L, the two numbers D, F multiplying the number H have made K, L; therefore by 7.18, D : F = K : L.
+
+**Step 10.** Since F × H = L and F × G = B, the number F multiplying the two numbers H, G has made L, B; therefore by 7.17, H : G = L : B. But H : G = D : F (Step 7); therefore L : B = D : F.
+
+**Step 11.** Therefore A : K = K : L = L : B, each of these ratios being the same as D : F. Hence the two numbers K, L fall between A and B in continued proportion, which is as many as fell between each of A, B and the unit C. With n intermediates between each number and the unit, the same construction (multiplying D and F together and then successively by D or by F) yields n numbers between A and B, each consecutive pair being in the ratio D : F by 7.17 and 7.18 exactly as above. Therefore, however many numbers fall between each of two numbers and an unit in continued proportion, so many also fall between the numbers themselves in continued proportion.
+
+**USED:** D7.2, D7.15, D7.20, 7.17, 7.18
+
+**USED:** 7.17, 7.18, D7.15, D7.2, D7.20
+**Human refs (from References field):** 7.17, 7.18, D7.20
+**Jaccard:** 0.600 — AI adds ['D7.15', 'D7.2']
+
+## Proposition 8.11
+**Statement:** Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
+
+## Proposition 8.11
+**Statement:** Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
+
+**Step 1.** Let A and B be square numbers, and let C be the side of A and D the side of B. Since A is a square number, by D7.18 it is contained by two equal numbers, so C multiplied by itself makes A; for the same reason D multiplied by itself makes B.
+
+**Step 2.** Let C multiplying D make the number E.
+
+**Step 3.** Since the one number C, multiplying the two numbers C and D, makes A and E respectively (Steps 1 and 2), by 7.17 the products have the same ratio as the numbers multiplied: as C is to D, so is A to E.
+
+**Step 4.** Since the two numbers C and D, each multiplying the one number D, make E and B respectively (Steps 2 and 1), by 7.18 the products have the same ratio as the multipliers: as C is to D, so is E to B.
+
+**Step 5.** By Steps 3 and 4, the ratio A : E and the ratio E : B are each the same as the ratio C : D. Ratios which are the same with the same ratio are the same with one another (5.11); therefore as A is to E, so is E to B.
+
+**Step 6.** Hence E is a number that is a mean proportional between A and B: the three numbers A, E, B are in continued proportion. Thus between the two square numbers A and B there falls one mean proportional number, namely E, which is the product of the sides.
+
+**Step 7.** Since A, E, B are three numbers in continued proportion, by D5.9 the first, A, has to the third, B, the ratio duplicate of that which A has to the second, E.
+
+**Step 8.** But by Step 3, as A is to E, so is C to D. Therefore A has to B the ratio duplicate of that which C has to D; that is, the square has to the square the ratio duplicate of that which the side has to the side.
+
+Q.E.D.
+
+**USED:** D7.18, 7.17, 7.18, 5.11, D5.9
+
+**USED:** 5.11, 7.17, 7.18, D5.9, D7.18
+**Human refs (from References field):** 7.17, 7.18, D5.9
+**Jaccard:** 0.600 — AI adds ['5.11', 'D7.18']
+
+## Proposition 8.12
+**Statement:** Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.
+
+**Step 1.** Let A and B be cube numbers, let C be the side of A and D the side of B; that is, A is C multiplied by C and again by C, and B is D multiplied by D and again by D [D7.19]. It is required to prove that between A and B there fall two mean proportional numbers, and that A has to B the ratio triplicate of that which C has to D.
+
+**Step 2.** Let C by multiplying itself make E, and by multiplying D make F; let D by multiplying itself make G; further, let C by multiplying F make H, and let D by multiplying F make K.
+
+**Step 3.** Since A is a cube whose side is C, and C by multiplying itself has made E, C by multiplying E makes A [D7.19]. For the same reason, since B is a cube whose side is D and D by multiplying itself has made G, D by multiplying G makes B [D7.19].
+
+**Step 4.** Since the one number C by multiplying the two numbers C and D has made E and F respectively, C : D = E : F [7.17]. Since the two numbers C and D by multiplying the one number D have made F and G respectively, C : D = F : G [7.18].
+
+**Step 5.** Since the one number C by multiplying the two numbers E and F has made A and H respectively, E : F = A : H [7.17]. Since the two numbers C and D by multiplying the one number F have made H and K respectively, C : D = H : K [7.18]. Since the one number D by multiplying the two numbers F and G has made K and B respectively, F : G = K : B [7.17].
+
+**Step 6.** Now A : H = E : F (Step 5) and E : F = C : D (Step 4); therefore A : H = C : D [5.11]. Also H : K = C : D (Step 5). Again K : B = F : G (Step 5) and F : G = C : D (Step 4); therefore K : B = C : D [5.11]. Consequently A : H, H : K and K : B are each the same as C : D, so that A : H = H : K = K : B [5.11].
+
+**Step 7.** Therefore the four numbers A, H, K, B are in continued proportion, and H and K are two mean proportional numbers between the cubes A and B. This establishes the first part.
+
+**Step 8.** Since A, H, K, B are four numbers in continued proportion, A has to B the ratio triplicate of that which A has to H [D5.10]. But A : H = C : D (Step 6). Therefore A has to B the ratio triplicate of that which C has to D; that is, the cube has to the cube the ratio triplicate of that which the side has to the side.
+
+**Step 9.** Therefore between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side. Q.E.D.
+
+**USED:** 5.11, 7.17, 7.18, D5.10, D7.19
+**Human refs (from References field):** 7.17, 7.18, D5.10
+**Jaccard:** 0.600 — AI adds ['5.11', 'D7.19']
+
+## Proposition 8.13
+**Statement:** If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.
+
+**Step 1.** Let A, B, C be as many numbers as we please in continued proportion, so that as A is to B, so is B to C. Let each multiply itself: let A×A = D, B×B = E, C×C = F. Further, let the original numbers multiply these products: let A×D = G, B×E = H, C×F = K. It must be shown that D, E, F are in continued proportion (D:E = E:F), and that G, H, K are in continued proportion (G:H = H:K).
+
+**Step 2.** Construct the means. Let A×B = L and B×C = M. Let A×L = N, B×L = O, B×M = P, and C×M = Q.
+
+**Step 3.** Since A by multiplying the two numbers A and B makes D and L respectively, the products have the same ratio as the numbers multiplied [7.17]: D:L = A:B.
+
+**Step 4.** Since the two numbers A and B by multiplying the same number B make L and E respectively, the products have the same ratio as the multipliers [7.18]: L:E = A:B.
+
+**Step 5.** Each of D:L and L:E is the same ratio as A:B; therefore D:L = L:E, so that D, L, E are in continued proportion in the ratio A:B.
+
+**Step 6.** In the same way, since B by multiplying B and C makes E and M, E:M = B:C [7.17]; and since B and C by multiplying C make M and F, M:F = B:C [7.18]. Hence E:M = M:F, so that E, M, F are in continued proportion in the ratio B:C.
+
+**Step 7.** Since A:B = B:C, the numbers D, L, E and the numbers E, M, F, taken two and two, are in the same ratio: D:L = E:M and L:E = M:F. Therefore, ex aequali [7.14], D:E = E:F. Thus the squares D, E, F are in continued proportion, which is the first part of the proposition.
+
+**Step 8.** Now for the cubes. Since A by multiplying D and L makes G and N, G:N = D:L [7.17], and D:L = A:B (Step 3); so G:N = A:B.
+
+**Step 9.** Since A and B by multiplying L make N and O, N:O = A:B [7.18].
+
+**Step 10.** Since B by multiplying L and E makes O and H, O:H = L:E [7.17], and L:E = A:B (Step 4); so O:H = A:B. Hence G:N = N:O = O:H, and G, N, O, H are in continued proportion in the ratio A:B.
+
+**Step 11.** Similarly, since B by multiplying E and M makes H and P, H:P = E:M = B:C [7.17]; since B and C by multiplying M make P and Q, P:Q = B:C [7.18]; and since C by multiplying M and F makes Q and K, Q:K = M:F = B:C [7.17]. Hence H:P = P:Q = Q:K, and H, P, Q, K are in continued proportion in the ratio B:C.
+
+**Step 12.** Since A:B = B:C, the numbers G, N, O, H and the numbers H, P, Q, K, taken two and two, are in the same ratio: G:N = H:P, N:O = P:Q, O:H = Q:K. Therefore, ex aequali [7.14], G:H = H:K. Thus the cubes G, H, K are in continued proportion, which is the second part of the proposition.
+
+**Step 13.** If there are more than three original numbers in continued proportion, the same construction between each consecutive pair yields, in exactly the same way, that each consecutive pair of squares (and of cubes) is in the same ratio as the next pair; hence, however many numbers are taken, the products by self-multiplication are proportional, and so are the products of the original numbers with those. Therefore, if as many numbers as we please are in continued proportion and each by multiplying itself makes some number, the products are proportional; and if the original numbers by multiplying the products make certain numbers, the latter are also proportional. Q.E.D.
+
+**USED:** 7.14, 7.17, 7.18
+**Human refs (from References field):** 7.14
+**Jaccard:** 0.333 — AI adds ['7.17', '7.18']
+
+## Proposition 8.14
+**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.
+
+## Proposition 8.14
+**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.
+
+**Step 1.** Let A and B be square numbers, and let C and D be their sides; that is, C by multiplying itself makes A, and D by multiplying itself makes B [D7.18].
+
+**Step 2.** Construction: let C by multiplying D make E.
+
+**Step 3.** Since the one number C, by multiplying the two numbers C and D, has made A and E respectively, the numbers so produced have the same ratio as the numbers multiplied: as C is to D, so is A to E [7.17].
+
+**Step 4.** Since the two numbers C and D, by multiplying the one number D, have made E and B respectively, the numbers so produced have the same ratio as the multipliers: as C is to D, so is E to B [7.18].
+
+**Step 5.** By Step 3, A is the same multiple, the same part, or the same parts of E that C is of D; and by Step 4, E is the same multiple, part, or parts of B that C is of D. Therefore A is the same multiple, part, or parts of E that E is of B; that is, as A is to E, so is E to B [D7.20]. Thus A, E, B are three numbers in continued proportion, and each of the ratios A : E and E : B is the ratio of C to D.
+
+**Step 6.** (First part.) Suppose that the square A measures the square B. Since A, E, B are in continued proportion and the first, A, measures the last, B, the first also measures the second: A measures E [8.7].
+
+**Step 7.** Since A measures E, A is a part of E, or else A is equal to E [D7.3]. But as A is to E, so is C to D (Step 3); therefore C is the same part of D that A is of E, or else C is equal to D [D7.20]. In either case C measures D [D7.3]. Hence, if the square measures the square, the side measures the side.
+
+**Step 8.** (Second part.) Suppose now that the side C measures the side D. Then C is a part of D, or else C is equal to D [D7.3]. Since as C is to D, so is A to E (Step 3), A is the same part of E that C is of D, or else A is equal to E [D7.20]; hence A measures E [D7.3].
+
+**Step 9.** Likewise, since as C is to D, so is E to B (Step 4), E is the same part of B that C is of D, or else E is equal to B [D7.20]; hence E measures B [D7.3].
+
+**Step 10.** Since A measures E, E is made up of numbers each equal to A; and since E measures B, B is made up of numbers each equal to E. Therefore B is made up of numbers each equal to A; that is, A measures B. Hence, if the side measures the side, the square measures the square.
+
+**Step 11.** Therefore, if a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square. Q.E.D.
+
+*Path note:* The continued proportion A, E, B could also be motivated by 8.11 (one mean proportional between two squares). However, the statement of 8.11 asserts only the existence of the mean and the duplicate ratio; it does not identify the mean with the product C·D nor give A : E = C : D, which the proof requires. The explicit construction through 7.17 and 7.18 is therefore the direct route, and 8.11 is not invoked.
+
+**USED:** D7.18, 7.17, 7.18, D7.20, 8.7, D7.3
+
+**USED:** 7.17, 7.18, 8.7, D7.18, D7.20, D7.3
+**Human refs (from References field):** 8.11, 8.7, D7.20
+**Jaccard:** 0.286 — AI adds ['7.17', '7.18', 'D7.18', 'D7.3']; Human adds ['8.11']
+
+## Proposition 8.15
+**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.
+
+## Proposition 8.15
+**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.
+
+**Step 1.** Let A and B be cube numbers, let C be the side of A and D the side of B. I say that, if A measures B, then C measures D; and that, if C measures D, then A measures B.
+
+**Step 2.** Construction. Let C multiplied by itself make E, let C multiplied by D make F, and let D multiplied by itself make G. Further, let C multiplied by F make H, and let D multiplied by F make K.
+
+**Step 3.** Since A is a cube number and C is its side, A is C multiplied by C and again by C; that is, C multiplying itself makes E, and C multiplying E makes A [D7.19]. In the same way, since B is a cube with side D, D multiplying itself makes G, and D multiplying G makes B [D7.19].
+
+**Step 4.** Since C by multiplying the two numbers C and D has made E and F, the products have the same ratio as the numbers multiplied; therefore E : F = C : D [7.17]. Again, since the two numbers C and D by multiplying D have made F and G, the products have the same ratio as the multipliers; therefore F : G = C : D [7.18]. Hence E, F, G are in continued proportion, each in the ratio C : D.
+
+**Step 5.** Since C by multiplying the two numbers E and F has made A and H, A : H = E : F [7.17]; and E : F = C : D by Step 4; therefore A : H = C : D.
+
+**Step 6.** Since the two numbers C and D by multiplying F have made H and K, H : K = C : D [7.18].
+
+**Step 7.** Since D by multiplying the two numbers F and G has made K and B, K : B = F : G [7.17]; and F : G = C : D by Step 4; therefore K : B = C : D.
+
+**Step 8.** Therefore A : H = H : K = K : B = C : D. Thus A, H, K, B are four numbers in continued proportion, and the first, A, has to the second, H, the same ratio that the side C has to the side D.
+
+**Step 9.** First part. Let the cube A measure the cube B. Since A, H, K, B are in continued proportion and the first A measures the last B, the first also measures the second; therefore A measures H [8.7].
+
+**Step 10.** Since A measures H, A is a part of H [D7.3]. But A : H = C : D (Step 5), and numbers are proportional when the first is the same part of the second that the third is of the fourth; therefore C is the same part of D that A is of H [D7.20]. Hence C measures D [D7.3]. So, if the cube measures the cube, the side measures the side.
+
+**Step 11.** Second part. Let the side C measure the side D. Then C is a part of D [D7.3]. Since A : H = C : D (Step 5), A is the same part of H that C is of D [D7.20]; therefore A measures H. In the same way, since H : K = C : D (Step 6), H is the same part of K that C is of D, so H measures K [D7.20]; and since K : B = C : D (Step 7), K is the same part of B that C is of D, so K measures B [D7.20].
+
+**Step 12.** Now A measures H, H measures K, and K measures B. A number which measures a number that measures a third number measures the third also; therefore A measures K, and hence A measures B. So, if the side measures the side, the cube measures the cube.
+
+**Step 13.** Therefore, if a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube. Q.E.D.
+
+**Path note.** The continued proportion A, H, K, B with common ratio C : D is established directly from 7.17 and 7.18 rather than by appeal to 8.12, because the statement of 8.12 asserts only that two mean proportionals exist and that the cubes are in the triplicate ratio of the sides, whereas the argument needs the specific fact that the first term has to the second the ratio C : D.
+
+**USED:** D7.3, D7.19, D7.20, 7.17, 7.18, 8.7
+
+**USED:** 7.17, 7.18, 8.7, D7.19, D7.20, D7.3
+**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20
+**Jaccard:** 0.250 — AI adds ['7.17', '7.18', 'D7.19', 'D7.3']; Human adds ['8.11', '8.12']
+
+## Proposition 8.16
+**Statement:** If a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square.
+
+**Step 1.** Let A and B be square numbers, and let C be the side of A and D the side of B; that is, C multiplied by itself makes A, and D multiplied by itself makes B.
+
+**Step 2.** First, let A not measure B. I say that C does not measure D either.
+
+**Step 3.** For suppose, if possible, that C measures D. Then, since C and D are the sides of the square numbers A and B, and the side C measures the side D, the square A also measures the square B [8.14, second part: if the side measure the side, the square will also measure the square].
+
+**Step 4.** But by hypothesis A does not measure B. This is impossible. Therefore C does not measure D.
+
+**Step 5.** Next, let the side C not measure the side D. I say that the square A does not measure the square B either.
+
+**Step 6.** For suppose, if possible, that A measures B. Then, since the square A measures the square B, the side C also measures the side D [8.14, first part: if a square measure a square, the side will also measure the side].
+
+**Step 7.** But by hypothesis C does not measure D. This is impossible. Therefore A does not measure B.
+
+**Step 8.** Therefore, if a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square. Q.E.D.
+
+**USED:** 8.14
+
+**USED:** 8.14
+**Human refs (from References field):** 8.14
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 8.17
+**Statement:** If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
+
+**Statement:** If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
+
+**Step 1.** Let A and B be cube numbers, and let C be the side of A and D the side of B; that is, A is the number contained by C, C, C, and B is the number contained by D, D, D [D7.19].
+
+**Step 2.** First, let the cube A not measure the cube B. I say that the side C does not measure the side D.
+
+**Step 3.** For, if possible, let C measure D.
+
+**Step 4.** Then, since C is the side of the cube A, D is the side of the cube B, and the side C measures the side D, the cube A measures the cube B [8.15, second part: if the side measure the side, the cube will also measure the cube].
+
+**Step 5.** But, by hypothesis, A does not measure B. This is impossible.
+
+**Step 6.** Therefore C does not measure D. Thus, if a cube number do not measure a cube number, neither does the side measure the side.
+
+**Step 7.** Next, let the side C not measure the side D. I say that the cube A does not measure the cube B.
+
+**Step 8.** For, if possible, let A measure B.
+
+**Step 9.** Then, since the cube A measures the cube B, the side C measures the side D [8.15, first part: if a cube number measure a cube number, the side will also measure the side].
+
+**Step 10.** But, by hypothesis, C does not measure D. This is impossible.
+
+**Step 11.** Therefore A does not measure B. Thus, if the side do not measure the side, neither does the cube measure the cube.
+
+**Step 12.** Therefore, if a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube. Q.E.D.
+
+**USED:** D7.19, 8.15
+
+**USED:** 8.15, D7.19
+**Human refs (from References field):** 8.15
+**Jaccard:** 0.500 — AI adds ['D7.19']
+
+## Proposition 8.18
+**Statement:** Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.
+
+**Step 1.** Let A, B be two similar plane numbers. Let C, D be the sides of A, and E, F the sides of B; that is, C and D by multiplying one another make A, and E and F by multiplying one another make B (D7.16).
+
+**Step 2.** Since A, B are similar plane numbers, their sides are proportional (D7.21): as C is to D, so is E to F, where C corresponds to E and D corresponds to F.
+
+**Step 3.** Since the four numbers C, D, E, F are proportional, they are also proportional alternately (7.13): as C is to E, so is D to F.
+
+**Step 4.** Let D and E by multiplying one another make the plane number G, whose sides are D and E (D7.16); thus D by multiplying E makes G, and E by multiplying D makes G.
+
+**Step 5.** Since C, D are the sides of A, the number D by multiplying C has made A (D7.16), and D by multiplying E has made G (Step 4). Since one number D by multiplying the two numbers C, E has made A, G, the products have the same ratio as the numbers multiplied (7.17): as C is to E, so is A to G.
+
+**Step 6.** But as C is to E, so is D to F (Step 3). The ratio of A to G and the ratio of D to F are each the same as the ratio of C to E; therefore they are the same as one another (5.11): as D is to F, so is A to G.
+
+**Step 7.** Again, since E, F are the sides of B, the number E by multiplying F has made B (D7.16), and E by multiplying D has made G (Step 4). Since one number E by multiplying the two numbers D, F has made G, B, the products have the same ratio as the numbers multiplied (7.17): as D is to F, so is G to B.
+
+**Step 8.** But as D is to F, so is A to G (Step 6). The ratio of A to G and the ratio of G to B are each the same as the ratio of D to F; therefore they are the same as one another (5.11): as A is to G, so is G to B.
+
+**Step 9.** Therefore the three numbers A, G, B are in continued proportion, and G is a mean proportional between A and B. Hence between the two similar plane numbers A, B there is one mean proportional number, namely G.
+
+**Step 10.** Next, since A, G, B are three numbers in continued proportion (Step 8), A has to B the ratio duplicate of that which A has to G (D5.9).
+
+**Step 11.** But as A is to G, so is C to E (Step 5), and so also is D to F (Step 6); that is, the ratio of A to G is the same as the ratio of a side of A to the corresponding side of B.
+
+**Step 12.** Therefore A has to B the ratio duplicate of that which C has to E, or equally of that which D has to F. Thus the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side. Q.E.D.
+
+**USED:** 5.11, 7.13, 7.17, D5.9, D7.16, D7.21
+**Human refs (from References field):** 7.13, 7.17, D5.9, D7.21
+**Jaccard:** 0.667 — AI adds ['5.11', 'D7.16']
+
+## Proposition 8.19
+**Statement:** Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.
+
+**Step 1.** Let A and B be two similar solid numbers. Let C, D, E be the sides of A and F, G, H the sides of B, so that A is the number produced when C, D, E multiply one another, and B is the number produced when F, G, H multiply one another (D7.17). Since A and B are similar solid numbers, their sides are proportional (D7.21): taking the sides in corresponding order, C : D = F : G and D : E = G : H, where C corresponds to F, D to G, and E to H.
+
+**Step 2.** Since C : D = F : G, alternately C : F = D : G (7.13). Since D : E = G : H, alternately D : G = E : H (7.13). Therefore C : F = D : G = E : H; this common ratio is the ratio of a side of A to the corresponding side of B.
+
+**Step 3.** Let C by multiplying D make K, let F by multiplying D make M, and let F by multiplying G make L.
+
+**Step 4.** Since the two numbers C, F by multiplying the same number D have made K, M respectively, C : F = K : M (7.18).
+
+**Step 5.** Since the one number F by multiplying the two numbers D, G has made M, L respectively, D : G = M : L (7.17).
+
+**Step 6.** But C : F = D : G (Step 2); therefore K : M = M : L. Thus K, M, L are three numbers in continued proportion, and each of the ratios K : M and M : L is the same as the ratio C : F.
+
+**Step 7.** Since A is the solid number whose sides are C, D, E, and K is the product of C and D, A is the number produced when E multiplies K (D7.17). Likewise, since B is the solid number whose sides are F, G, H, and L is the product of F and G, B is the number produced when H multiplies L (D7.17).
+
+**Step 8.** Let E by multiplying M make N, and let H by multiplying M make O.
+
+**Step 9.** Since the one number E by multiplying the two numbers K, M has made A, N respectively, K : M = A : N (7.17). But K : M = C : F (Step 6); therefore A : N = C : F.
+
+**Step 10.** Since the two numbers E, H by multiplying the same number M have made N, O respectively, E : H = N : O (7.18). But E : H = C : F (Step 2); therefore N : O = C : F.
+
+**Step 11.** Since the one number H by multiplying the two numbers M, L has made O, B respectively, M : L = O : B (7.17). But M : L = C : F (Step 6); therefore O : B = C : F.
+
+**Step 12.** Therefore A : N = N : O = O : B, each of these ratios being the same as C : F, so that A, N, O, B are four numbers in continued proportion. Hence the two numbers N, O fall between A and B as mean proportionals, which is the first part of the proposition.
+
+**Step 13.** Since A, N, O, B are four numbers continuously proportional, A has to B the ratio triplicate of that which A has to N (D5.10). But A : N = C : F, and C : F = D : G = E : H (Steps 9 and 2). Therefore A has to B the ratio triplicate of that which the side C has to the corresponding side F, which is likewise the ratio of D to G and of E to H.
+
+Therefore between two similar solid numbers there fall two mean proportional numbers, and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side. Q.E.D.
+
+Remark on path: the mean M between the plane numbers K and L (which are similar, since C : D = F : G) could be obtained from 8.18, but that proposition asserts only the existence of a mean, whereas the argument requires M to be identified as the product of F and D. Constructing M directly and verifying K : M = M : L by 7.18 and 7.17 supplies the identity and the proportion together, so 8.18 is not invoked.
+
+**USED:** 7.13, 7.17, 7.18, D5.10, D7.17, D7.21
+**Human refs (from References field):** 7.13, 7.17, 7.18, 8.18, D5.10, D7.21
+**Jaccard:** 0.714 — AI adds ['D7.17']; Human adds ['8.18']
+
+## Proposition 8.20
+**Statement:** If one mean proportional number fall between two numbers, the numbers will be similar plane numbers.
+
+## Proposition 8.20
+**Statement:** If one mean proportional number fall between two numbers, the numbers will be similar plane numbers.
+
+**Step 1.** Let A and B be two numbers, and let one mean proportional number C fall between them, so that A : C = C : B. I say that A and B are similar plane numbers.
+
+**Step 2.** By 7.33, take D and E, the least numbers of those which have the same ratio with A and C. Then D : E = A : C, and D, E are the least numbers having that ratio.
+
+**Step 3.** Since D, E are the least numbers of those which have the same ratio with them, by 7.20 they measure A, C (which have the same ratio) the same number of times, the greater the greater and the less the less: D measures A the same number of times as E measures C. Let F be that number of times, so that D measures A according to the units in F, and E measures C according to the units in F.
+
+**Step 4.** Then A is D added to itself as many times as there are units in F, and C is E added to itself as many times as there are units in F; that is, by D7.15, F by multiplying D makes A, and F by multiplying E makes C.
+
+**Step 5.** By hypothesis A : C = C : B, and by Step 2 D : E = A : C. By D7.20, D is the same multiple, or the same part, or the same parts, of E that A is of C; and A is the same multiple, or part, or parts, of C that C is of B. Hence D is the same multiple, or part, or parts, of E that C is of B; that is, D : E = C : B.
+
+**Step 6.** Since D, E are the least numbers of those which have the same ratio with them, and C, B have that same ratio, by 7.20 D measures C the same number of times as E measures B. Let G be that number of times, so that D measures C according to the units in G, and E measures B according to the units in G.
+
+**Step 7.** As in Step 4, by D7.15, G by multiplying D makes C, and G by multiplying E makes B.
+
+**Step 8.** By Steps 4 and 7, F by multiplying E makes C, and G by multiplying D makes C. Consider the four numbers F, G, D, E: the number produced from the first and the fourth (F by multiplying E) is C, and the number produced from the second and the third (G by multiplying D) is the same number C. Therefore, since the number produced from the first and fourth is equal to that produced from the second and third, by 7.19 the four numbers are proportional: F : G = D : E.
+
+**Step 9.** Since F by multiplying D makes A, A is a plane number and its sides are F and D (D7.16). Since G by multiplying E makes B, B is a plane number and its sides are G and E (D7.16).
+
+**Step 10.** By Step 8, F : G = D : E; thus the sides F, D of A and the sides G, E of B are proportional. Therefore, by D7.21, A and B are similar plane numbers.
+
+**Step 11.** Therefore, if one mean proportional number fall between two numbers, the numbers are similar plane numbers. Q.E.D.
+
+**USED:** 7.33, 7.20, D7.15, D7.20, 7.19, D7.16, D7.21
+
+**USED:** 7.19, 7.20, 7.33, D7.15, D7.16, D7.20, D7.21
+**Human refs (from References field):** 7.13, 7.17, 7.20, 7.33
+**Jaccard:** 0.222 — AI adds ['7.19', 'D7.15', 'D7.16', 'D7.20', 'D7.21']; Human adds ['7.13', '7.17']
+
+## Proposition 8.21
+**Statement:** If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.
+
+## Proposition 8.21
+**Statement:** If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.
+
+Let A, B be two numbers, and let C, D be two mean proportional numbers falling between them, so that A, C, D, B are in continued proportion: A : C = C : D = D : B. I say that A and B are similar solid numbers.
+
+**Step 1.** Take H, K, the least numbers of those which have the same ratio with A, C [7.33]. Then H : K = A : C, and since A : C = C : D = D : B, also H : K = C : D = D : B.
+
+**Step 2.** Let H by multiplying itself make E, let H by multiplying K make F, and let K by multiplying itself make G.
+
+**Step 3.** Since H by multiplying the two numbers H, K has made E, F, the products have the same ratio as the numbers multiplied: E : F = H : K [7.17]. Since the two numbers H, K by multiplying K have made F, G, the products have the same ratio as the multipliers: F : G = H : K [7.18]. Therefore E : F = F : G = H : K, and so by Step 1, E : F = A : C = C : D and F : G = C : D = D : B.
+
+**Step 4.** The three numbers E, F, G and the three numbers A, C, D are equal in multitude and, taken two and two, are in the same ratio (E : F = A : C and F : G = C : D); therefore, ex aequali, E : G = A : D [7.14]. Likewise E, F, G and C, D, B are two and two in the same ratio (E : F = C : D and F : G = D : B); therefore, ex aequali, E : G = C : B [7.14].
+
+**Step 5.** Since H, K are the least of the numbers which have the same ratio with them, H and K are prime to one another [7.22]. And since H, K are prime to one another and each by multiplying itself has made E and G respectively, E and G are prime to one another [7.27]. Therefore E, G are the least of the numbers which have the same ratio with them [7.21].
+
+**Step 6.** Since E, G are the least of the numbers having the ratio E : G, and A, D have the same ratio (E : G = A : D by Step 4), E measures A the same number of times that G measures D, the greater the greater and the less the less [7.20]. Let E measure A as many times as there are units in N; then G also measures D as many times as there are units in N. Hence A is E added to itself as many times as there are units in N, that is, N by multiplying E has made A; and likewise N by multiplying G has made D [D7.15].
+
+**Step 7.** Again, since E, G are least and E : G = C : B (Step 4), E measures C the same number of times that G measures B [7.20]. Let E measure C as many times as there are units in O; then G measures B as many times as there are units in O. Hence O by multiplying E has made C, and O by multiplying G has made B [D7.15].
+
+**Step 8.** Now E is the product of H and H, and N by multiplying E has made A; therefore the three numbers H, H, N, having multiplied one another, make A. Hence A is a solid number, and its sides are H, H, N [D7.17]. Similarly G is the product of K and K, and O by multiplying G has made B; therefore K, K, O, having multiplied one another, make B, so B is a solid number with sides K, K, O [D7.17].
+
+**Step 9.** Since the two numbers N, O by multiplying the same number E have made A, C (Steps 6 and 7), the products have the same ratio as the multipliers: A : C = N : O [7.18]. But A : C = H : K (Step 1). Therefore N : O = H : K.
+
+**Step 10.** Thus the sides H, H, N of the solid number A and the sides K, K, O of the solid number B are proportional, side to corresponding side: H : K = H : K = N : O. Therefore A and B are similar solid numbers [D7.21].
+
+Therefore, if two mean proportional numbers fall between two numbers, the numbers are similar solid numbers. Q.E.D.
+
+**USED:** 7.33, 7.17, 7.18, 7.14, 7.22, 7.27, 7.21, 7.20, D7.15, D7.17, D7.21
+
+*Path note:* The least continued-proportion triple E, F, G is built directly from the least pair H, K (7.33, 7.27) rather than obtained through 8.2/8.3 and 8.20, because the statement of 8.20 alone does not determine the mean F in terms of the sides of the extremes; the direct construction is the shorter fully rigorous route.
+
+**USED:** 7.14, 7.17, 7.18, 7.20, 7.21, 7.22, 7.27, 7.33, D7.15, D7.17, D7.21
+**Human refs (from References field):** 7.14, 7.18, 7.20, 7.21, 7.33, 8.2, 8.20, 8.3
+**Jaccard:** 0.357 — AI adds ['7.17', '7.22', '7.27', 'D7.15', 'D7.17', 'D7.21']; Human adds ['8.2', '8.20', '8.3']
+
+## Proposition 8.22
+**Statement:** If three numbers be in continued proportion, and the first be square, the third will also be square.
+
+**Step 1.** Let A, B, C be three numbers in continued proportion, so that as A is to B, so is B to C, and let the first, A, be square. Then A is contained by two equal numbers [D7.18]; let A be the number produced by D multiplying D, so that A = D·D.
+
+**Step 2.** Since as A is to B, so is B to C, the four numbers A, B, B, C are proportional; therefore the number produced from the first and fourth is equal to the number produced from the second and third [7.19], that is, A·C = B·B.
+
+**Step 3.** Since A by multiplying C makes B·B, the number B·B is A added to itself as many times as there are units in C [D7.15]; therefore A, that is the square D·D, measures the square B·B.
+
+**Step 4.** Since the square D·D measures the square B·B, the side D measures the side B [8.14]. Let D measure B according to the units in E, so that B is the number produced by D multiplying E: B = D·E.
+
+**Step 5.** Now D by multiplying the two numbers D, E makes A and B respectively; therefore as D is to E, so is A to B [7.17].
+
+**Step 6.** Again, the two numbers D, E by multiplying the number E make B and E·E respectively; therefore as D is to E, so is B to E·E [7.18].
+
+**Step 7.** Hence, as A is to B, so is B to E·E, each of these two ratios being the same as the ratio of D to E.
+
+**Step 8.** But by hypothesis, as A is to B, so is B to C. Therefore as B is to C, so is B to E·E; that is, B has the same ratio to each of the numbers C and E·E. Therefore C is equal to E·E [5.9].
+
+**Step 9.** Thus C is the number produced by E multiplying E, that is, C is contained by two equal numbers; therefore C is square [D7.18]. Q.E.D.
+
+Remark (path choice). A shorter route would observe from VIII.20 that A and C are similar plane numbers and then argue from proportional sides. That similarity, however, only asserts that some pair of sides of A is proportional to some pair of sides of C, without identifying those sides of A as its two equal sides, so the step "A square, hence C square" is not immediate from it. The direct route above, through A·C = B·B and VIII.14, avoids this and is the one taken.
+
+**USED:** 5.9, 7.17, 7.18, 7.19, 8.14, D7.15, D7.18
+**Human refs (from References field):** 8.20
+**Jaccard:** 0.000 — AI adds ['5.9', '7.17', '7.18', '7.19', '8.14', 'D7.15', 'D7.18']; Human adds ['8.20']
+
+## Proposition 8.23
+**Statement:** If four numbers be in continued proportion, and the first be cube, the fourth will also be cube.
+
+**Step 1.** Let A, B, C, D be four numbers in continued proportion, so that A : B = B : C = C : D, and let the first, A, be a cube; that is, A is contained by three equal numbers, A = a·a·a for some number a (D7.19). We must show that D is also a cube.
+
+**Step 2.** Since A : B = B : C = C : D, the numbers B and C fall between A and D as two mean proportional numbers. Therefore, by 8.21, A and D are similar solid numbers.
+
+**Step 3.** Since A and D are similar solid numbers, they have their sides proportional (D7.21). The sides of A are the three equal numbers a, a, a (Step 1); let p, q, r be the sides of D corresponding to them, so that D = p·q·r and a : p = a : q = a : r.
+
+**Step 4.** Since a has the same ratio to each of p, q, r, the number a is the same multiple, or the same part, or the same parts of p that it is of q and of r (D7.20); hence p, q, r are equal to one another.
+
+**Step 5.** Therefore D is contained by three equal numbers, D = p·p·p, and so D is a cube (D7.19). Hence, if four numbers be in continued proportion and the first be cube, the fourth is also cube. Q.E.D.
+
+Path note: the most direct route is through 8.21 (two mean proportionals between A and D make them similar solid numbers), with the cube property transferred through the definitions of cube and of similar solid numbers; an alternative route through the least numbers in the ratio (8.2, 8.3, 7.14, 7.20, 7.21, 8.15) is longer and was not taken.
+
+**USED:** 8.21, D7.19, D7.20, D7.21
+**Human refs (from References field):** 8.21
+**Jaccard:** 0.250 — AI adds ['D7.19', 'D7.20', 'D7.21']
+
+## Proposition 8.24
+**Statement:** If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second will also be square.
+
+**Step 1.** Let A and B be two numbers which have to one another the ratio which a square number C has to a square number D, so that A : B = C : D, and let A be a square number. I say that B is also a square number.
+
+**Step 2.** Since C and D are square numbers, between C and D there falls one mean proportional number [8.11]. Let it be E, so that C, E, D are three numbers in continued proportion.
+
+**Step 3.** Since A : B = C : D, and between C and D there falls one number E in continued proportion with them, therefore between A and B, which have the same ratio as C and D, there also falls one number in continued proportion with them [8.8]. Let it be F, so that A, F, B are three numbers in continued proportion.
+
+**Step 4.** Now A, F, B are three numbers in continued proportion, and the first, A, is square by hypothesis. Therefore the third, B, is also square [8.22].
+
+**Step 5.** Therefore, if two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second will also be square. Q.E.D.
+
+**USED:** 8.11, 8.8, 8.22
+
+**USED:** 8.11, 8.22, 8.8
+**Human refs (from References field):** 8.18, 8.22, 8.8
+**Jaccard:** 0.500 — AI adds ['8.11']; Human adds ['8.18']
+
+## Proposition 8.25
+**Statement:** If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube.
+
+**Step 1.** Let A and B be two numbers such that A has to B the ratio which a cube number C has to a cube number D, and let A be a cube number. I say that B is also a cube number.
+
+**Step 2.** Since C and D are cube numbers, between the two cube numbers C and D there fall two mean proportional numbers [8.12]. Let them be G and H, so that C, G, H, D are in continued proportion.
+
+**Step 3.** Since two numbers G, H fall between C and D in continued proportion, and A, B have the same ratio as C, D (for A : B = C : D by hypothesis), it follows that as many numbers fall in continued proportion between A and B as fall between C and D [8.8]. Therefore two numbers fall between A and B in continued proportion. Let them be E and F, so that A, E, F, B are four numbers in continued proportion.
+
+**Step 4.** Now A, E, F, B are four numbers in continued proportion, and the first, A, is a cube number. Therefore the fourth, B, is also a cube number [8.23].
+
+**Step 5.** Therefore, if two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube. Q.E.D.
+
+**USED:** 8.12, 8.23, 8.8
+**Human refs (from References field):** 8.19, 8.23, 8.8
+**Jaccard:** 0.500 — AI adds ['8.12']; Human adds ['8.19']
+
+## Proposition 8.26
+**Statement:** Similar plane numbers have to one another the ratio which a square number has to a square number.
+
+**Step 1.** Let A and B be similar plane numbers. It is required to prove that A has to B the ratio which a square number has to a square number.
+
+**Step 2.** Since A and B are similar plane numbers, one mean proportional number falls between them [8.18]. Let C be that mean proportional; then A is to C as C is to B, so that A, C, B are three numbers in continued proportion.
+
+**Step 3.** In the ratio of A to C, take three numbers D, E, F in continued proportion, the least that are in that ratio [8.2]. Then D is to E as E is to F, and each of these ratios is the same as the ratio of A to C.
+
+**Step 4.** Since D, E, F are three numbers in continued proportion and are the least of those which have the same ratio with them, their extremes D and F are square numbers [8.2, Porism].
+
+**Step 5.** Now A is to C as D is to E (Step 3); and C is to B as A is to C (Step 2), which is the same as E is to F (Step 3); hence C is to B as E is to F. Thus the numbers A, C, B and the numbers D, E, F, equal to them in multitude, taken two and two are in the same ratio.
+
+**Step 6.** Therefore, ex aequali, A is to B as D is to F [7.14].
+
+**Step 7.** But D and F are square numbers (Step 4). Therefore A has to B the ratio which the square number D has to the square number F; that is, similar plane numbers have to one another the ratio which a square number has to a square number. Q.E.D.
+
+*Path note:* at Step 3 the least numbers D, E, F could equally be obtained by 7.33 applied to A, C, B (the least numbers having the same ratio with A, C, B), which are then in continued proportion because A, C, B are; 8.2 is chosen because it yields the three least numbers in continued proportion directly and its porism supplies their squareness, making it the more direct route.
+
+**USED:** 7.14, 8.18, 8.2
+**Human refs (from References field):** 7.33, 8.18, 8.2
+**Jaccard:** 0.500 — AI adds ['7.14']; Human adds ['7.33']
+
+## Proposition 8.27
+**Statement:** Similar solid numbers have to one another the ratio which a cube number has to a cube number.
+
+**Step 1.** Let A and B be similar solid numbers. We must show that A has to B the ratio which a cube number has to a cube number.
+
+**Step 2.** Since A and B are similar solid numbers, two mean proportional numbers fall between them (8.19). Let these be C and D, so that A, C, D, B are four numbers in continued proportion: A : C = C : D = D : B.
+
+**Step 3.** Take E, F the least numbers of those which have the same ratio with A, C (7.33). Then E : F = A : C, and the ratio A : C is now given in least numbers E, F.
+
+**Step 4.** With the ratio E : F given in least numbers, construct four numbers K, L, M, N in continued proportion, the least that are in the ratio E : F (8.2); thus K : L = L : M = M : N = E : F. In the construction of 8.2 the first of the four numbers is E multiplied by E and again by E (K = E·E·E), and the last is F multiplied by F and again by F (N = F·F·F).
+
+**Step 5.** Hence each of K and N is contained by three equal numbers, so K and N are cube numbers (D7.19). This is precisely the Porism to 8.2: when four numbers in continued proportion are the least of those which have the same ratio with them, the extremes are cubes.
+
+**Step 6.** From Steps 2, 3 and 4, K : L = E : F = A : C, L : M = E : F = C : D, and M : N = E : F = D : B. Thus K, L, M, N and A, C, D, B, being equal in multitude and taken two and two, are in the same ratio.
+
+**Step 7.** Therefore, ex aequali, K : N = A : B (7.14).
+
+**Step 8.** But K and N are cube numbers (Step 5). Therefore A has to B the ratio which the cube number K has to the cube number N. Q.E.D.
+
+Path note: the least four numbers in continued proportion could also be obtained by applying 7.33 directly to A, C, D, B; I reduced only the ratio A : C by 7.33 and then built the four terms by 8.2, because the construction in 8.2 exhibits the extremes as E·E·E and F·F·F, making their cube form explicit.
+
+**USED:** 7.14, 7.33, 8.19, 8.2, D7.19
+**Human refs (from References field):** 7.33, 8.19, 8.2
+**Jaccard:** 0.600 — AI adds ['7.14', 'D7.19']

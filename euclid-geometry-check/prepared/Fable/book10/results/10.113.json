@@ -1,0 +1,46 @@
+{
+  "proposition": "10.113",
+  "run": "Fable",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "D lies between B and C on a straight line; BC is the whole and CD the annex of the apotome BD",
+      "type": "collinear point ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CD < BC since CD is a part of BC",
+      "type": "segment length ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BC produced beyond C and CM cut off equal to CD, giving collinear order B-D-C-M",
+      "type": "collinear point ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "DM is bisected at C (since DC = CM = CD)",
+      "type": "midpoint claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "BD is added to DM in a straight line; rect(BM, BD) + sq(CD) = sq(BC) by 2.6",
+      "type": "algebraic identity from geometric configuration"
+    },
+    {
+      "step": "Step 7",
+      "claim": "KH is divided at F so that KF:FH = BC:CD via 6.10",
+      "type": "proportional division of segment"
+    },
+    {
+      "step": "Step 9",
+      "claim": "KF > FH follows from BC > CD and the proportion KF:FH = BC:CD",
+      "type": "segment length ordering"
+    }
+  ],
+  "configuration_map": "Primary configuration is a line with points in collinear order B---D---C---M. BD is the apotome, BC the whole rational line, CD the annex, CM = CD by construction (1.3), so DM = 2CD bisected at C, and BM = BC + CD. A separate line segment KH is divided at F with KF:FH = BC:CD. All reasoning beyond the initial geometric setup is purely algebraic/proportional: commensurability relations, proportion manipulations, and matching of apotome/binomial order definitions. No triangles, circles, angles, or interior/exterior claims appear.",
+  "pass_reason": "All spatial claims are mutually consistent. The geometry is limited to collinear point arrangements (B-D-C-M and K-F-H) whose relative positions are straightforward and never conflict. The application of 2.6 is algebraically verified: rect(BM,BD) + sq(CD) = (BC+CD)(BC-CD) + sq(CD) = sq(BC). The core argument is algebraic/proportional (commensurability and order definitions), with no angle decompositions, no interior/exterior claims, and no complex spatial configurations that could harbor contradictions."
+}

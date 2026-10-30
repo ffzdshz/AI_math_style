@@ -1,0 +1,470 @@
+{
+  "summary": "Prove all 36 propositions of Euclid Book 9 (Run A)",
+  "agentCount": 36,
+  "logs": [
+    "Run A | Book 9: proving 36 propositions",
+    "9.8 proved (4 refs)",
+    "9.7 proved (3 refs)",
+    "9.1 proved (5 refs)",
+    "9.6 proved (4 refs)",
+    "9.9 proved (3 refs)",
+    "9.2 proved (4 refs)",
+    "9.10 proved (2 refs)",
+    "9.13 proved (8 refs)",
+    "9.18 proved (4 refs)",
+    "9.12 proved (3 refs)",
+    "9.11 proved (7 refs)",
+    "9.16 proved (7 refs)",
+    "9.14 proved (6 refs)",
+    "9.4 proved (7 refs)",
+    "9.19 proved (3 refs)",
+    "9.21 proved (2 refs)",
+    "9.22 proved (4 refs)",
+    "9.23 proved (3 refs)",
+    "9.20 proved (7 refs)",
+    "9.24 proved (2 refs)",
+    "9.25 proved (2 refs)",
+    "9.27 proved (3 refs)",
+    "9.28 proved (3 refs)",
+    "9.26 proved (2 refs)",
+    "9.15 proved (7 refs)",
+    "9.29 proved (3 refs)",
+    "9.31 proved (5 refs)",
+    "9.3 proved (5 refs)",
+    "9.33 proved (6 refs)",
+    "9.34 proved (5 refs)",
+    "9.32 proved (5 refs)",
+    "9.36 proved (12 refs)",
+    "9.30 proved (5 refs)",
+    "9.5 proved (7 refs)",
+    "9.35 proved (5 refs)",
+    "9.17 proved (8 refs)",
+    "No ordering violations found",
+    "Done: 36/36 propositions"
+  ],
+  "result": [
+    {
+      "prop_id": "9.1",
+      "statement": "If two similar plane numbers by multiplying one another make some number, the product will be square.",
+      "proof": "**Step 1.** Let A and B be two similar plane numbers, and let A multiplied by B produce the number C. We are to show that C is a square number.\n\n**Step 2.** Since A and B are similar plane numbers, let a, b be the sides of A (so that A = a * b) and let c, d be the sides of B (so that B = c * d), where the sides are proportional: a is to c as d is to b [D7.21, D7.16].\n\n**Step 3.** Since A and B are similar plane numbers, by Proposition 8.18, there exists one mean proportional number G between A and B, so that A, G, B are in continued proportion, that is, A is to G as G is to B.\n\n**Step 4.** Since A is to G as G is to B, and these are four numbers in proportion (with A first, G second, G third, B fourth), by Proposition 7.19, the product of the first and fourth equals the product of the second and third. That is, A multiplied by B equals G multiplied by G.\n\n**Step 5.** But A multiplied by B is C (by hypothesis). Therefore C equals G multiplied by G.\n\n**Step 6.** Now G multiplied by G is a square number, since a square number is equal multiplied by equal [D7.18].\n\n**Step 7.** Therefore C is a square number. This is what was to be proved.",
+      "used": [
+        "D7.16",
+        "D7.18",
+        "D7.21",
+        "7.19",
+        "8.18"
+      ]
+    },
+    {
+      "prop_id": "9.2",
+      "statement": "If two numbers by multiplying one another make a square number, they are similar plane numbers.",
+      "proof": "**Step 1.** Let A and B be two numbers such that A multiplied by B makes a square number C. We must show that A and B are similar plane numbers.\n\n**Step 2.** Since C is a square number, by Definition D7.18 (a square number is equal multiplied by equal), there exists a number k such that C = k multiplied by k. That is, A multiplied by B equals k multiplied by k.\n\n**Step 3.** Since the product of A and B equals the product of k and k, by Proposition 7.19 (the converse part: if the number produced from the first and fourth equals the number produced from the second and third, the four numbers are proportional), the numbers A, k, k, B are proportional. That is, A is to k as k is to B.\n\n**Step 4.** Therefore k is one mean proportional number falling between A and B.\n\n**Step 5.** Since one mean proportional number falls between A and B, by Proposition 8.20 (if one mean proportional number falls between two numbers, those numbers are similar plane numbers), A and B are similar plane numbers (D7.21).\n\n**Step 6.** Therefore, if two numbers by multiplying one another make a square number, they are similar plane numbers. Q.E.D.",
+      "used": [
+        "D7.18",
+        "D7.21",
+        "7.19",
+        "8.20"
+      ]
+    },
+    {
+      "prop_id": "9.3",
+      "statement": "If a cube number by multiplying itself make some number, the product will be cube.",
+      "proof": "**Step 1.** Let A be a cube number, and let A multiplied by A produce B. Since A is cube, there exists a number C such that A = C * C * C [D7.19]. Let D = C * C; then D is a square number [D7.18].\n\n**Step 2.** Now C multiplied by D gives C * (C * C) = C * C * C = A. So A is the product of C and D.\n\n**Step 3.** Since C multiplied by C produces D, and C multiplied by D produces A, by 7.17 the products are in the same ratio as the numbers multiplied, that is, D : A = C : D.\n\n**Step 4.** Rewriting the proportion of Step 3 as C : D = D : A, we apply 7.19: C * A = D * D. Let E = C * A, so that E = D * D.\n\n**Step 5.** Since C multiplied by D produces A, and C multiplied by A produces E, by 7.17 we have A : E = D : A.\n\n**Step 6.** From Steps 3 and 5, we have C : D = D : A = A : E. Therefore C, D, A, E are four numbers in continued proportion.\n\n**Step 7.** From the proportion A : E = D : A (Step 5), by 7.19 we obtain A * A = E * D. Hence B = E * D.\n\n**Step 8.** Since E = D * D (Step 4), we have B = E * D = (D * D) * D. That is, D multiplied by D produces E, and E multiplied by D produces B. Therefore B is a solid number with three equal sides D, D, D [D7.17].\n\n**Step 9.** Since B is the product of three equal numbers (D multiplied by D and again by D), B is a cube number [D7.19]. This is what was to be proved.",
+      "used": [
+        "D7.17",
+        "D7.18",
+        "D7.19",
+        "7.17",
+        "7.19"
+      ]
+    },
+    {
+      "prop_id": "9.4",
+      "statement": "If a cube number by multiplying a cube number make some number, the product will be cube.",
+      "proof": "**Step 1.** Let A be a cube number, let B be a cube number, and let A multiplied by B produce C. We are to show that C is a cube number.\n\n**Step 2.** Since A is a cube number, let A multiplied by itself produce D. Then D is a cube number, by 9.3 (if a cube number multiplied by itself makes some number, the product is cube).\n\n**Step 3.** Since A multiplied by A produces D, and A multiplied by B produces C, by 7.17 (if a number by multiplying two numbers make certain numbers, the numbers so produced have the same ratio as the numbers multiplied), we have D : C = A : B.\n\n**Step 4.** Since A and B are both cube numbers, by 8.12 (between two cube numbers there are two mean proportional numbers), there exist two numbers E and F such that A, E, F, B are in continued proportion.\n\n**Step 5.** Since A : B = D : C (from Step 3), and there are two mean proportional numbers between A and B (from Step 4), by 8.8 (if between two numbers there fall numbers in continued proportion, then between numbers having the same ratio there fall equally many mean proportionals), there are also two mean proportional numbers between D and C. Let these be G and H, so that D, G, H, C are in continued proportion.\n\n**Step 6.** Since D, G, H, C are four numbers in continued proportion, and D (the first) is a cube number (established in Step 2), by 8.23 (if four numbers be in continued proportion and the first be cube, the fourth also will be cube), C is also a cube number.\n\n**Step 7.** Therefore, if a cube number by multiplying a cube number make some number, the product is cube. Q.E.D.",
+      "used": [
+        "7.17",
+        "8.8",
+        "8.12",
+        "8.23",
+        "9.3",
+        "D7.15",
+        "D7.19"
+      ]
+    },
+    {
+      "prop_id": "9.5",
+      "statement": "If a cube number by multiplying any number make a cube number, the multiplied number will also be cube.",
+      "proof": "**Step 1.** Let A be a cube number with side a, so that A = a * a * a [D7.19]. Let A by multiplying B produce C, where C is also a cube number with side c, so that C = c * c * c [D7.19]. We are to prove that B is a cube number.\n\n**Step 2.** Since A and C are both cube numbers, by 8.12 there fall between them two mean proportional numbers. Let these be D and E, so that A, D, E, C are in continued proportion, that is, A : D :: D : E :: E : C. Moreover, by 8.12, A : D :: a : c.\n\n**Step 3.** Since A * B = C, A measures C [D7.15]. Now A, D, E, C are in continued proportion and A (the first) measures C (the last). Therefore, by 8.7, A also measures D. Let f be the number such that A * f = D [D7.15].\n\n**Step 4.** Since f multiplies both A and D, producing D and f * D respectively, by 7.17 the products are in the same ratio as the numbers multiplied, that is, A : D :: D : (f * D). But from the continued proportion we also have A : D :: D : E. Hence D : (f * D) :: D : E [5.11]. Therefore f * D = E [5.9].\n\n**Step 5.** Since f multiplies both D and E, producing E and f * E respectively, by 7.17 we have D : E :: E : (f * E). But from the continued proportion we also have D : E :: E : C. Hence E : (f * E) :: E : C [5.11]. Therefore f * E = C [5.9].\n\n**Step 6.** From Steps 3, 4, and 5 we have established: D = A * f, E = D * f, and C = E * f. Substituting successively: C = E * f = (D * f) * f = ((A * f) * f) * f. But we are given that C = A * B. Since f multiplies both B and (f * f), and A multiplying B and A multiplying (f * f * f) both produce C, by 7.17 the numbers multiplied must be in the same ratio as the products. Since the products are both equal to C, the ratio is one of equality, and therefore B = f * f * f.\n\n**Step 7.** Since B = f * f * f, B is equal multiplied by equal and again by equal, and therefore B is a cube number [D7.19].\n\nTherefore, if a cube number by multiplying any number make a cube number, the multiplied number will also be cube. Q.E.D.",
+      "used": [
+        "D7.15",
+        "D7.19",
+        "5.9",
+        "5.11",
+        "7.17",
+        "8.7",
+        "8.12"
+      ]
+    },
+    {
+      "prop_id": "9.6",
+      "statement": "If a number by multiplying itself make a cube number, it will itself also be cube.",
+      "proof": "**Step 1.** Let A be a number such that A multiplied by itself produces a cube number. That is, let A * A be cube. We must show that A is itself a cube.\n\n**Step 2.** Set C = A * A. By hypothesis, C is a cube number.\n\n**Step 3.** Now consider the product C * A, that is, (A * A) * A. By the definition of multiplication (D7.15), this equals the solid number A * A * A, which has sides A, A, and A (D7.17).\n\n**Step 4.** Since the three sides of this solid number are all equal to A, the number A * A * A is a cube by D7.19 (a cube is equal multiplied by equal and again by equal).\n\n**Step 5.** We now have that C is a cube number (Step 2), and C multiplied by A produces A * A * A (Step 3), which is itself a cube number (Step 4).\n\n**Step 6.** By Proposition 9.5 (if a cube number by multiplying any number make a cube number, the multiplied number will also be cube), since the cube number C multiplied by A produces the cube number A * A * A, it follows that A is also a cube number.\n\n**Step 7.** Therefore, if a number by multiplying itself make a cube number, it will itself also be cube. Q.E.D.",
+      "used": [
+        "D7.15",
+        "D7.17",
+        "D7.19",
+        "9.5"
+      ]
+    },
+    {
+      "prop_id": "9.7",
+      "statement": "If a composite number by multiplying any number make some number, the product will be solid.",
+      "proof": "**Step 1.** Let A be a composite number, let D be any number, and let A multiplied by D produce E. We must show that E is solid.\n\n**Step 2.** Since A is composite, by Definition D7.13, A is measured by some number. Let B be a number that measures A.\n\n**Step 3.** Since B measures A, let C be the number such that B multiplied by C equals A, that is, A = B * C (by the definition of multiplication, D7.15).\n\n**Step 4.** Now since A multiplied by D produces E, we have E = A * D. But A = B * C, so E = (B * C) * D, meaning that E is the product obtained when the three numbers B, C, and D multiply one another (D7.15).\n\n**Step 5.** By Definition D7.17, when three numbers having multiplied one another make some number, the number so produced is solid, and its sides are the numbers which have multiplied one another. Therefore E is a solid number with sides B, C, and D.\n\n**Step 6.** Hence, if a composite number by multiplying any number make some number, the product will be solid. Q.E.D.",
+      "used": [
+        "D7.13",
+        "D7.15",
+        "D7.17"
+      ]
+    },
+    {
+      "prop_id": "9.8",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, the third from the unit will be square, as will also those which successively leave out one; the fourth will be cube, as will also all those which leave out two; and the seventh will be at once cube and square, as will also those which leave out five.",
+      "proof": "**Step 1.** Let there be as many numbers as we please, A1, A2, A3, A4, A5, A6, A7, and so on, beginning from a unit and in continued proportion. We must show that A3 is square and likewise every alternate term thereafter; that A4 is cube and likewise every term leaving out two thereafter; and that A7 is both square and cube, and likewise every term leaving out five thereafter.\n\n**Step 2.** Since A1, A2, A3 are in continued proportion beginning from the unit, A2 multiplied by itself produces A3 (for the unit is to A2 as A2 is to A3, so A3 equals A2 times A2). Therefore A3 is a square number, being equal multiplied by equal [D7.18].\n\n**Step 3.** Since A1, A2, A3, A4 are in continued proportion beginning from the unit, A2 multiplied by itself produces A3, and A2 multiplied by A3 produces A4 (equivalently, A4 equals A2 times A2 times A2). Therefore A4 is a cube number, being equal multiplied by equal and again by equal [D7.19].\n\n**Step 4.** Now consider A3, A4, A5: these are three numbers in continued proportion (being consecutive terms of the original progression), and A3 is square (Step 2). Therefore A5 is also square [8.22].\n\n**Step 5.** Similarly, A5, A6, A7 are three numbers in continued proportion, and A5 is square (Step 4). Therefore A7 is also square [8.22].\n\n**Step 6.** By the same reasoning, from any square term in the sequence, the term two places further along is also square by 8.22, since any three consecutive terms of the progression are in continued proportion. Thus every term that successively leaves out one from A3 (that is, A3, A5, A7, A9, and so on) is square.\n\n**Step 7.** Now consider A4, A5, A6, A7: these are four numbers in continued proportion, and A4 is cube (Step 3). Therefore A7 is also cube [8.23].\n\n**Step 8.** By the same reasoning, from any cube term in the sequence, the term three places further along is also cube by 8.23, since any four consecutive terms of the progression are in continued proportion. Thus every term that successively leaves out two from A4 (that is, A4, A7, A10, and so on) is cube.\n\n**Step 9.** Since A7 is both square (Step 5) and cube (Step 7), A7 is at once square and cube.\n\n**Step 10.** By the combined reasoning of Steps 6 and 8, the terms that are simultaneously square (appearing in the sequence A3, A5, A7, A9, A11, A13, ...) and cube (appearing in the sequence A4, A7, A10, A13, ...) are exactly those that leave out five from one another starting from A7, that is A7, A13, A19, and so on. Each such term is at once cube and square.\n\n**Step 11.** Therefore, if as many numbers as we please beginning from a unit are in continued proportion, the third from the unit is square, as are all those which successively leave out one; the fourth is cube, as are all those which leave out two; and the seventh is at once cube and square, as are all those which leave out five. Q.E.D.",
+      "used": [
+        "D7.18",
+        "D7.19",
+        "8.22",
+        "8.23"
+      ]
+    },
+    {
+      "prop_id": "9.9",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be square, all the rest will also be square.",
+      "proof": "**Step 1.** Let there be as many numbers as we please, 1, A, B, C, D, ..., beginning from a unit and in continued proportion, and let A (the number after the unit) be square. We must show that all the remaining terms B, C, D, ... are also square.\n\n**Step 2.** Since 1, A, B, C, D, ... are in continued proportion beginning from a unit, by Proposition 9.8, the third from the unit, namely B, is square, as are all terms which successively leave out one (that is, B, D, and every alternate term thereafter are square). [9.8]\n\n**Step 3.** Now A is square by hypothesis, and B is square by Step 2. Consider any three consecutive terms in the sequence. We shall show that if the first of three consecutive terms is square, then the third is also square, using Proposition 8.22. [D7.18]\n\n**Step 4.** Since 1, A, B are in continued proportion and A is square, consider the three consecutive terms A, B, C. These are in continued proportion (since the whole sequence is in continued proportion). The first term A is square (by hypothesis). Therefore by Proposition 8.22, since three numbers A, B, C are in continued proportion and the first A is square, the third C is also square. [8.22]\n\n**Step 5.** Next consider the three consecutive terms B, C, D. These are in continued proportion. The first term B is square (established in Step 2 by 9.8). Therefore by Proposition 8.22, the third term D is also square. [8.22]\n\n**Step 6.** Proceeding in this manner for each successive triple of consecutive terms: since C is square (Step 4), considering C, D, E in continued proportion, E is square by 8.22. Since D is square (Step 5), considering D, E, F in continued proportion, F is square by 8.22. [8.22]\n\n**Step 7.** In general, for any term in the sequence beyond A, it appears as the third member of a triple of consecutive terms whose first member has already been shown to be square. By repeated application of Proposition 8.22, each such term is therefore square. [8.22]\n\n**Step 8.** Therefore all terms in the sequence after the unit are square, which is what was to be proved.",
+      "used": [
+        "9.8",
+        "8.22",
+        "D7.18"
+      ]
+    },
+    {
+      "prop_id": "9.10",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be not square, neither will any other be square except the third from the unit and all those which leave out one.",
+      "proof": "**Step 1.** Let there be as many numbers as we please, 1, A, B, C, D, E, F, ..., beginning from a unit and in continued proportion, and let A (the number after the unit) not be square. We must show that no number in the sequence is square except B (the third from the unit) and every alternate one thereafter (D, F, ..., i.e., those which leave out one).\n\n**Step 2.** By 9.8, the third from the unit, B, is square, as are all those which leave out one (D, F, and so on). So these terms are indeed square. It remains to show that every other term — namely A, C, E, and so on (the 2nd, 4th, 6th, ... from the unit) — is not square.\n\n**Step 3.** A is not square by hypothesis. We now show C (the 4th from the unit) is not square. Suppose, for the sake of contradiction, that C is square. Now B is square by Step 2. Consider the three consecutive terms A, B, C in continued proportion. Since B and C are both square, the ratio B : C is that of a square number to a square number. But A : B = B : C (continued proportion), so A : B is also the ratio of a square to a square. Since B is square and A has to B the ratio of a square number to a square number, by 8.25, A is also square. This contradicts the hypothesis that A is not square. Therefore C is not square.\n\n**Step 4.** We now show E (the 6th from the unit) is not square. Suppose E is square. Now D is square by Step 2 (9.8). Consider the three consecutive terms C, D, E in continued proportion. Since D and E are both square, D : E is the ratio of a square to a square. But C : D = D : E (continued proportion), so C : D is also the ratio of a square to a square. Since D is square and C has to D the ratio of a square to a square, by 8.25, C is also square. This contradicts what was proved in Step 3. Therefore E is not square.\n\n**Step 5.** The same argument applies to every subsequent even-positioned term. For any term in an even position from the unit — say the (2k)th term — suppose it were square. The (2k - 1)th term is square by 9.8 (it occupies an odd position, i.e., it leaves out one). The (2k - 2)th term, the (2k - 1)th term, and the (2k)th term are three consecutive terms in continued proportion. Since the (2k - 1)th and (2k)th are both assumed square, their ratio is square to square. By the continued proportion, the ratio of the (2k - 2)th term to the (2k - 1)th term is also square to square. By 8.25, since the (2k - 1)th term is square, the (2k - 2)th term is also square. But the (2k - 2)th term occupies an even position and was already shown not to be square by the preceding case of this same argument (with the base case being A at position 2, which is not square by hypothesis). This is a contradiction. Therefore the (2k)th term is not square.\n\n**Step 6.** Hence no term in the sequence is square except the third from the unit and all those which leave out one. Q.E.D.",
+      "used": [
+        "9.8",
+        "8.25"
+      ]
+    },
+    {
+      "prop_id": "9.11",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.",
+      "proof": "**Step 1.** Let there be as many numbers as we please beginning from a unit in continued proportion: let the sequence be U (the unit), A, B, C, ..., where U:A = A:B = B:C = ... and so on. We must show that the less measures the greater according to some one of the numbers which have place among the proportional numbers.\n\n**Step 2.** Consider any two terms in the sequence where the lesser comes before the greater. It suffices to show that A (the second term, i.e., the first number after the unit) measures every subsequent term in the sequence, and that the quotient is itself a term in the sequence. For if this is established for A, the result for any lesser term measuring any greater term follows by repeated application.\n\n**Step 3.** Since U, A, B are in continued proportion and U is the unit, we have U:A = A:B. Since U is the unit, by the definition of proportion for numbers (D7.20) and the definition of multiplication (D7.15), A multiplied by A produces B. That is, A measures B according to A, which is a number having place among the proportional numbers.\n\n**Step 4.** Again, since U:A = B:C, the unit has to A the same ratio that B has to C. Therefore A multiplied by B produces C (by D7.20 and D7.15), so A measures C according to B, which is a number having place among the proportional numbers.\n\n**Step 5.** Proceeding in this manner: for any term, say the (k+1)-th term T_{k+1} in the sequence, since U:A = T_k:T_{k+1}, it follows that A multiplied by T_k equals T_{k+1}. Thus A measures every subsequent term in the sequence, and in each case the quotient is the preceding term, which is itself among the proportional numbers.\n\n**Step 6.** Now we show the general result. Take any two terms T_i and T_j with i < j. We claim T_i measures T_j according to T_{j-i+1}, where T_{j-i+1} is the term in position (j - i + 1), which is itself among the proportional numbers. We prove this as follows.\n\n**Step 7.** Since all consecutive pairs share the same ratio (by the definition of continued proportion), the sequence from T_i onward, namely T_i, T_{i+1}, ..., T_j, is also in continued proportion with the same common ratio. There are (j - i + 1) terms in this subsequence.\n\n**Step 8.** Similarly, the sequence U, A, B, ..., T_{j-i+1} consists of (j - i + 1) terms in continued proportion beginning from the unit with the same ratio. By Proposition 8.7, if there are as many numbers as we please in continued proportion, and the first measures the last, it will measure the second also. But more directly, since these two sequences have the same number of terms and the same common ratio, by Proposition 7.14 (if there are as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali), we can relate the extreme terms.\n\n**Step 9.** By Proposition 7.17, which states that if a number multiplies two numbers and makes certain numbers, the products will have the same ratio as the multiplied numbers: since U:T_{j-i} = A:T_{j-i+1} (from the continued proportion beginning from unity), multiplying through the sequence, T_i multiplied by T_{j-i} gives a number in the same proportional relationship.\n\n**Step 10.** More precisely, we establish by the recursive property shown in Steps 3-5 that for any term T_m in the sequence, U multiplied by T_m equals T_m (since U is the unit), and A multiplied by T_m equals T_{m+1}. Extending this by Proposition 7.16 (if two numbers multiplying two numbers make certain numbers, the products will be equal), and applying the recursion: T_2 times T_m = T_{m+1}, T_3 times T_m = T_2 times T_{m+1} = T_{m+2}, and in general T_i times T_m = T_{m+i-1}.\n\n**Step 11.** Setting m = j - i + 1, we get T_i multiplied by T_{j-i+1} equals T_j. This means T_i measures T_j (by D7.5, since T_j is a multiple of T_i), and it measures it according to T_{j-i+1}, which has place among the proportional numbers (being the (j-i+1)-th term of the sequence).\n\n**Step 12.** Therefore, if as many numbers as we please beginning from a unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers. Q.E.D.",
+      "used": [
+        "D7.5",
+        "D7.15",
+        "D7.20",
+        "7.14",
+        "7.16",
+        "7.17",
+        "8.7"
+      ]
+    },
+    {
+      "prop_id": "9.12",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, by however many prime numbers the last is measured, the next to the unit will also be measured by the same.",
+      "proof": "**Step 1.** Let there be as many numbers as we please beginning from the unit in continued proportion: 1, A, B, C, ..., L, where A is the term next to the unit and L is the last term. Suppose a prime number p measures L. We must show that p also measures A.\n\n**Step 2.** We proceed by considering the number of terms. First, if there are only two terms, namely 1 and A, then L is A itself, and since p measures A, the conclusion holds immediately.\n\n**Step 3.** If there are three terms, 1, A, B, then the continued proportion gives 1:A = A:B. By 7.19, since four numbers are proportional (1, A, A, B), the product of the first and fourth equals the product of the second and third, so 1 * B = A * A, that is, B = A * A. Since p is prime and p measures B = A * A, by 7.30, p measures one of the two factors, hence p measures A.\n\n**Step 4.** Now suppose there are more than three terms: 1, A, B, C, ..., K, L, where K is the term immediately before L. From the continued proportion, the ratio of each consecutive pair is the same, so in particular 1:A = K:L. By 7.19, 1 * L = A * K, that is, L = A * K. This means A multiplied by K produces L (D7.15).\n\n**Step 5.** Since p is prime and p measures L, and L is the product of A and K, by 7.30, p measures at least one of A or K.\n\n**Step 6.** If p measures A, we are done.\n\n**Step 7.** If p measures K, we observe that K is itself the last term of the shorter continued proportion 1, A, B, ..., K, which begins from the unit and has one fewer term than the original sequence, with A still being the term next to the unit.\n\n**Step 8.** We now apply the same argument to this shorter sequence. The term before K in the continued proportion is some term J, and by the same reasoning (using 7.19), K = A * J. Since p measures K and K is the product of A and J, by 7.30, p measures A or p measures J.\n\n**Step 9.** Continuing this descent through successively shorter sequences, at each stage either p measures A (and we are done) or p measures the preceding term in the proportion. Since the sequence is finite and decreasing in length, this process must eventually terminate.\n\n**Step 10.** The descent terminates at the latest when we reach the sequence 1, A, B (three terms), at which point B = A * A as shown in Step 3, and since p is prime and measures B, by 7.30, p measures A.\n\n**Step 11.** Therefore, in all cases, the prime p measures the term next to the unit A. Since p was an arbitrary prime measuring the last term, by however many prime numbers the last is measured, the next to the unit will also be measured by the same. Q.E.D.",
+      "used": [
+        "7.19",
+        "7.30",
+        "D7.15"
+      ]
+    },
+    {
+      "prop_id": "9.13",
+      "statement": "If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be prime, the greatest will not be measured by any except those which have a place among the proportional numbers.",
+      "proof": "**Step 1.** Let there be as many numbers as we please, A_1 = 1, A_2, A_3, ..., A_n, beginning from a unit and in continued proportion, and let A_2 (the number after the unit) be prime. We must show that A_n, the greatest, is not measured by any number except those which have a place among A_1, A_2, ..., A_{n-1}.\n\n**Step 2.** Suppose, for the sake of contradiction, that some number C measures A_n and that C is not among the proportional numbers A_1, A_2, ..., A_{n-1}.\n\n**Step 3.** Since C measures A_n, C is not equal to A_n itself (for A_n is the greatest and is among the proportional numbers trivially as the last term; but the proposition concerns numbers other than A_n that measure it). Since C measures A_n and C is not a unit, C is greater than a unit, so C is a number composed of units and has at least one prime factor. Let p be any prime that measures C [D7.11, D7.13].\n\n**Step 4.** Since p measures C and C measures A_n, p also measures A_n [7.20, transitivity of measurement].\n\n**Step 5.** Now A_1 = 1, A_2, A_3, ..., A_n are numbers beginning from a unit in continued proportion, and the prime p measures the last term A_n. By Proposition 9.12, p must also measure A_2, the number next after the unit.\n\n**Step 6.** But A_2 is prime [D7.11], so the only numbers that measure A_2 are the unit and A_2 itself. Since p is a prime number (not a unit), p must equal A_2 [D7.11].\n\n**Step 7.** Therefore every prime that measures C is equal to A_2. Now since C is greater than a unit and every prime measuring C equals A_2, the number C is measured by A_2 and by no other prime.\n\n**Step 8.** Since C is measured by the prime A_2 and by no other prime, C must be a power of A_2. That is, C is produced by A_2 multiplied by itself some number of times. More precisely, since A_1 = 1, A_2, A_3, ..., A_n are in continued proportion from the unit with ratio A_2, each term A_k is obtained by multiplying A_2 by itself (k-1) times [by the definition of continued proportion, D7.20, and repeated application of D7.15]. Thus the terms of the sequence are exactly the successive powers of A_2.\n\n**Step 9.** Since C measures A_n and C is a power of A_2, write C = A_m for some index m. By Proposition 9.11, since the numbers from the unit are in continued proportion and A_m is less than A_n (as C measures A_n and is not equal to A_n, so C is less by CN5), A_m measures A_n according to some one of the proportional numbers. Thus C = A_m has a place among the proportional numbers.\n\n**Step 10.** But this contradicts our assumption in Step 2 that C is not among the proportional numbers. Therefore no such C exists: A_n is not measured by any number except those which have a place among the proportional numbers A_1, A_2, ..., A_{n-1}. Q.E.D.",
+      "used": [
+        "D7.11",
+        "D7.13",
+        "D7.15",
+        "D7.20",
+        "7.20",
+        "9.11",
+        "9.12",
+        "CN5"
+      ]
+    },
+    {
+      "prop_id": "9.14",
+      "statement": "If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.",
+      "proof": "**Step 1.** Let A be the least number that is measured by the prime numbers B, C, D. Suppose, for the sake of contradiction, that A is also measured by some prime number E which is different from each of B, C, D.\n\n**Step 2.** Since E measures A, by the definition of measurement there exists a number F such that A equals E multiplied by F [D7.15].\n\n**Step 3.** Now B is prime and B measures A, that is, B measures the product of E and F. By 7.30, since a prime measuring a product must measure one of the factors, B measures E or B measures F.\n\n**Step 4.** But E is prime, so by D7.11 it is measured by a unit alone. Since B is a prime number, B is not a unit [D7.1, D7.11]. And B is not equal to E, since E is different from each of B, C, D. Therefore B does not measure E.\n\n**Step 5.** Consequently, from Step 3 and Step 4, B must measure F.\n\n**Step 6.** By the same reasoning applied to C: since C is prime and measures the product E times F, by 7.30 either C measures E or C measures F. Since E is prime and C is a prime different from E, C does not measure E [D7.1, D7.11]. Therefore C measures F.\n\n**Step 7.** Likewise for D: since D is prime and measures the product E times F, by 7.30 either D measures E or D measures F. Since E is prime and D is a prime different from E, D does not measure E [D7.1, D7.11]. Therefore D measures F.\n\n**Step 8.** Therefore F is measured by each of B, C, D. But A is by hypothesis the least number measured by B, C, D. Hence A is less than or equal to F.\n\n**Step 9.** However, since E is a prime number, E is at least 2, so E is greater than a unit. Therefore A, being E multiplied by F, is greater than F [CN5, D7.3]. That is, F is less than A.\n\n**Step 10.** But Step 8 established that A is less than or equal to F, while Step 9 established that F is less than A. This is a contradiction.\n\n**Step 11.** Therefore the supposition is false, and A is not measured by any prime number other than B, C, D. Q.E.D.",
+      "used": [
+        "D7.1",
+        "D7.3",
+        "D7.11",
+        "D7.15",
+        "7.30",
+        "CN5"
+      ]
+    },
+    {
+      "prop_id": "9.15",
+      "statement": "If three numbers in continued proportion be the least of those which have the same ratio with them, any two whatever added together will be prime to the remaining number.",
+      "proof": "**Step 1.** Let A, B, C be three numbers in continued proportion that are the least of those which have the same ratio with them. By Proposition 8.2, since A, B, C are the least three numbers in continued proportion with their given ratio, there exist numbers p and q, where p : q is the ratio A : B expressed in lowest terms, such that A = p*p, B = p*q, and C = q*q.\n\n**Step 2.** Since p : q is the ratio in lowest terms, by Proposition 7.22, p and q are prime to one another.\n\n**Step 3.** Since p and q are prime to one another, by Proposition 7.28, the sum p + q is prime to each of p and q individually. That is, p + q is prime to p, and p + q is prime to q.\n\n**Step 4.** Since p is prime to q, by Proposition 7.25 (applied with q prime to p), q*q is prime to p; that is, p is prime to C. Likewise, since q is prime to p, p*p is prime to q; that is, q is prime to A.\n\n**Step 5.** We now show that A + B is prime to C. We have A + B = p*p + p*q = p*(p + q), and C = q*q. By Step 2, p is prime to q, so by Proposition 7.25, q*q is prime to p, which means p is prime to q*q. By Step 3, p + q is prime to q, so by Proposition 7.25, q*q is prime to (p + q), which means p + q is prime to q*q. Now since both p and p + q are each prime to q*q, by Proposition 7.24, their product p*(p + q) is also prime to q*q. Therefore A + B is prime to C.\n\n**Step 6.** We next show that B + C is prime to A. We have B + C = p*q + q*q = q*(p + q), and A = p*p. By Step 2, q is prime to p, so by Proposition 7.25, p*p is prime to q, which means q is prime to p*p. By Step 3, p + q is prime to p, so by Proposition 7.25, p*p is prime to (p + q), which means p + q is prime to p*p. Now since both q and p + q are each prime to p*p, by Proposition 7.24, their product q*(p + q) is also prime to p*p. Therefore B + C is prime to A.\n\n**Step 7.** Finally, we show that A + C is prime to B. We have A + C = p*p + q*q, and B = p*q. We must show p*p + q*q is prime to each of p and q separately, and then combine.\n\n**Step 8.** We show p*p + q*q is prime to p. Suppose for contradiction that some number d greater than a unit is a common measure of both p*p + q*q and p. Since d measures p, and p measures p*p (because p*p is the product of p by itself, so p*p is a multiple of p by Definition 7.5), d also measures p*p. Since d measures both p*p + q*q and p*p, d measures their difference q*q. But then d is a common measure of p and q*q. However, since p is prime to q (Step 2), by Proposition 7.25, q*q is prime to p, meaning p and q*q have no common measure other than a unit. This is a contradiction. Therefore p*p + q*q is prime to p.\n\n**Step 9.** By the same reasoning with the roles of p and q interchanged: since q is prime to p (Step 2), by Proposition 7.25, p*p is prime to q. Supposing d greater than a unit is a common measure of p*p + q*q and q, then d measures q*q (since q measures q*q), and d measures (p*p + q*q) - q*q = p*p. But q is prime to p*p (by 7.25 since q prime to p), giving a contradiction. Therefore p*p + q*q is prime to q.\n\n**Step 10.** Since p*p + q*q is prime to p and p*p + q*q is prime to q, equivalently p is prime to (p*p + q*q) and q is prime to (p*p + q*q). By Proposition 7.24, the product p*q is also prime to p*p + q*q. Therefore A + C is prime to B.\n\n**Step 11.** We have shown that A + B is prime to C (Step 5), B + C is prime to A (Step 6), and A + C is prime to B (Step 10). Therefore, when three numbers in continued proportion are the least of those which have the same ratio with them, any two whatever added together are prime to the remaining number. Q.E.D.",
+      "used": [
+        "8.2",
+        "7.22",
+        "7.24",
+        "7.25",
+        "7.28",
+        "D7.5",
+        "D7.12"
+      ]
+    },
+    {
+      "prop_id": "9.16",
+      "statement": "If two numbers be prime to one another, the second will not be to any other number as the first is to the second.",
+      "proof": "**Step 1.** Let A and B be two numbers prime to one another [D7.12]. Suppose, for the sake of contradiction, that there exists some number C such that A is to B as B is to C, i.e., A:B = B:C.\n\n**Step 2.** Since A, B, B, C are four proportional numbers, the product of the first and fourth equals the product of the second and third [7.19]. That is, A multiplied by C equals B multiplied by B, so A * C = B * B.\n\n**Step 3.** Since A * C = B * B, the number A measures B * B, for B * B is made up of A taken C times [D7.3, D7.15].\n\n**Step 4.** But A and B are prime to one another, so the product of B with itself, namely B * B, is prime to A [7.25]. That is, A and B * B have no common measure other than the unit [D7.12].\n\n**Step 5.** Since A measures B * B (Step 3), A is a common measure of A and B * B. But since A and B * B are prime to one another (Step 4), the only number that measures both is the unit [D7.12]. Therefore A must be the unit.\n\n**Step 6.** But A is a number, and a number is a multitude composed of units [D7.2], so A is at least two. This contradicts A being the unit [D7.1].\n\n**Step 7.** Therefore the assumption is false, and there exists no number C such that A:B = B:C. That is, if two numbers be prime to one another, the second will not be to any other number as the first is to the second. Q.E.D.",
+      "used": [
+        "D7.1",
+        "D7.2",
+        "D7.3",
+        "D7.12",
+        "D7.15",
+        "7.19",
+        "7.25"
+      ]
+    },
+    {
+      "prop_id": "9.17",
+      "statement": "If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.",
+      "proof": "**Step 1.** Let A_1, A_2, ..., A_n be as many numbers as we please in continued proportion, and let the extremes A_1 and A_n be prime to one another. We are to show that A_n is not to any other number as A_1 is to A_2.\n\n**Step 2.** Since A_1, A_2, ..., A_n are in continued proportion and A_1 and A_n are prime to one another, by 8.1, the numbers A_1, ..., A_n are the least of those which have the same ratio with them.\n\n**Step 3.** Let p and q be the least numbers in the ratio A_1 : A_2, which exist by 7.33. By 7.22, since p and q are the least numbers in their ratio, p and q are prime to one another.\n\n**Step 4.** By 8.2, the least numbers in continued proportion of n terms with ratio p : q are constructed: the first term is p multiplied by itself (n - 1) times, and the last term is q multiplied by itself (n - 1) times. Since A_1, ..., A_n are the least in continued proportion with ratio p : q (from Step 2), A_1 equals p multiplied by itself (n - 1) times, and A_n equals q multiplied by itself (n - 1) times.\n\n**Step 5.** Suppose, for the sake of contradiction, that there exists a number O such that A_n : O = A_1 : A_2 = p : q.\n\n**Step 6.** Since A_n : O = p : q, by 7.19 we have p times O equal to q times A_n.\n\n**Step 7.** Now A_n equals q multiplied by itself (n - 1) times (from Step 4). Therefore q times A_n equals q multiplied by itself n times. So p times O equals q multiplied by itself n times. This means p measures q multiplied by itself n times.\n\n**Step 8.** Since p and q are prime to one another (Step 3), by 7.27, p multiplied by itself any number of times and q multiplied by itself the same number of times are prime to one another. In particular, p multiplied by itself n times and q multiplied by itself n times are prime to one another.\n\n**Step 9.** Now p measures p multiplied by itself n times (since p taken p^(n-1) times yields p^n). From Step 7, p also measures q multiplied by itself n times. Therefore p is a common measure of p multiplied by itself n times and q multiplied by itself n times. But these two numbers are prime to one another (Step 8), so by D7.12 they are measured by a unit alone as a common measure. Therefore p must be the unit.\n\n**Step 10.** But if p is the unit, then A_1 = p multiplied by itself (n - 1) times = the unit. This means A_1 is a unit, not a number (by D7.2, a number is a multitude composed of units, so a number must be at least two). This contradicts the hypothesis that A_1 is a number.\n\n**Step 11.** Therefore, no such number O exists, and A_n is not to any other number as A_1 is to A_2. Q.E.D.",
+      "used": [
+        "7.19",
+        "7.22",
+        "7.27",
+        "7.33",
+        "8.1",
+        "8.2",
+        "D7.2",
+        "D7.12"
+      ]
+    },
+    {
+      "prop_id": "9.18",
+      "statement": "Given two numbers, to investigate whether it is possible to find a third proportional to them.",
+      "proof": "**Step 1.** Let A and B be two given numbers. We investigate whether it is possible to find a number C such that A : B = B : C, i.e., a third proportional to A and B.\n\n**Step 2.** Let D be the number produced by B multiplied by B, so that D = B * B. [D7.15]\n\n**Step 3.** Now there are two cases: either A measures D, or A does not measure D.\n\n**Step 4.** First, suppose A measures D. Then there exists a number C such that D = A * C, that is, A * C = B * B. [D7.3]\n\n**Step 5.** Since A * C = B * B, the number produced from the first (A) and fourth (C) equals the number produced from the second (B) and third (B). Therefore by 7.19 (converse part), the four numbers A, B, B, C are proportional, that is, A : B = B : C. [7.19, D7.20]\n\n**Step 6.** Thus C is a third proportional to A and B, and it has been found.\n\n**Step 7.** Now suppose A does not measure D (where D = B * B). We claim no third proportional to A and B exists.\n\n**Step 8.** For suppose, by way of contradiction, that there exists a number C such that A : B = B : C. Then since these four numbers are proportional, by 7.19, the product A * C equals B * B, that is, A * C = D. [7.19]\n\n**Step 9.** But then A measures D, since D = A * C. This contradicts our assumption that A does not measure D. [D7.3]\n\n**Step 10.** Therefore, when A does not measure B * B, it is not possible to find a third proportional to A and B.\n\n**Step 11.** Hence, given two numbers A and B, a third proportional to them exists if and only if A measures the product of B with itself. Q.E.D.",
+      "used": [
+        "D7.3",
+        "D7.15",
+        "D7.20",
+        "7.19"
+      ]
+    },
+    {
+      "prop_id": "9.19",
+      "statement": "Given three numbers, to investigate when it is possible to find a fourth proportional to them.",
+      "proof": "**Step 1.** Let A, B, C be the three given numbers. We seek to determine when it is possible to find a fourth number D such that A is to B as C is to D, that is, A : B = C : D.\n\n**Step 2.** First, suppose that such a fourth proportional D exists, so that A : B = C : D. Then by 7.19, the product of the first and fourth equals the product of the second and third, that is, A times D equals B times C.\n\n**Step 3.** Since A times D equals B times C, the number A measures the product B times C, with D as the factor according to which it measures (by D7.15, since A multiplied by D produces B times C). Thus, if a fourth proportional exists, then A necessarily measures B times C.\n\n**Step 4.** Conversely, suppose that A measures the product B times C. Then there exists a number D such that A times D equals B times C (by D7.3 and D7.15, since A measuring B times C means that B times C is produced by A multiplied by some number D).\n\n**Step 5.** Since A times D equals B times C, the product of the extremes equals the product of the means. By 7.19, it follows that the four numbers A, B, C, D are proportional, that is, A : B = C : D. Thus D is a fourth proportional to A, B, C.\n\n**Step 6.** Now suppose that A does not measure the product B times C. Assume for contradiction that a fourth proportional D exists such that A : B = C : D. Then by 7.19, A times D equals B times C. But then A measures B times C (since A multiplied by D produces B times C), contradicting our supposition. Therefore no fourth proportional can exist in this case.\n\n**Step 7.** Therefore, given three numbers A, B, C, it is possible to find a fourth proportional to them if and only if the first number A measures the product of the second and third, B times C. Q.E.F.",
+      "used": [
+        "D7.3",
+        "D7.15",
+        "7.19"
+      ]
+    },
+    {
+      "prop_id": "9.20",
+      "statement": "Prime numbers are more than any assigned multitude of prime numbers.",
+      "proof": "**Step 1.** Let A, B, C be any assigned multitude of prime numbers. We shall show that there exists a prime number beyond those assigned.\n\n**Step 2.** Let DE be the least number measured by A, B, and C. Such a number exists: for instance, the product A times B times C is measured by each of A, B, and C, by the definition of multiplication [D7.15] and measurement [D7.3]. (We may take DE to be this product, or any common multiple; the argument requires only that A, B, and C each measure DE.)\n\n**Step 3.** Add a unit to DE, and let EF equal one unit, so that DF = DE + 1.\n\n**Step 4.** Now DF is either prime or composite [D7.11, D7.13].\n\n**Step 5.** Case 1: Suppose DF is prime. Since DF = DE + 1 and DE is measured by each of A, B, C, we have DF > A, DF > B, and DF > C (because DE is at least as large as each prime factor, and DF = DE + 1). Thus DF is a prime number different from each of A, B, and C.\n\n**Step 6.** Case 2: Suppose DF is composite. Then by Proposition 7.31, some prime number G measures DF.\n\n**Step 7.** We claim that G is not equal to any of A, B, or C. For suppose, toward a contradiction, that G is one of A, B, C — say G equals A.\n\n**Step 8.** Now A measures DE (by construction in Step 2). And A (being equal to G) measures DF (by Step 6). Since A measures both DF and DE, and DF = DE + EF where EF is a unit, A must also measure the remainder EF, which is a unit. (For if a number measures a whole and a part taken from it, it measures the remainder as well, which follows from the nature of measurement [D7.3, D5.1].)\n\n**Step 9.** But A is a prime number, and hence is greater than a unit [D7.11, D7.1]. A number greater than a unit cannot measure a unit, since the only number that measures a unit is the unit itself. This is a contradiction.\n\n**Step 10.** Therefore G is not equal to A. By the same reasoning, G is not equal to B, and G is not equal to C. Hence G is a prime number different from all of A, B, and C.\n\n**Step 11.** In either case (whether DF is prime or composite), we have found a prime number — either DF itself or G — that is not among the originally assigned primes A, B, and C.\n\n**Step 12.** Since A, B, C were any assigned multitude of prime numbers, this shows that for any finite collection of primes, there exists a prime not in that collection. Therefore, prime numbers are more than any assigned multitude of prime numbers. Q.E.D.",
+      "used": [
+        "D5.1",
+        "D7.1",
+        "D7.3",
+        "D7.11",
+        "D7.13",
+        "D7.15",
+        "7.31"
+      ]
+    },
+    {
+      "prop_id": "9.21",
+      "statement": "If as many even numbers as we please be added together, the whole is even.",
+      "proof": "**Step 1.** Let AB, BC, CD be as many even numbers as we please. We are to show that the whole, namely AD (the sum AB + BC + CD), is even.\n\n**Step 2.** Since AB is even, by definition it is divisible into two equal parts [D7.6]. Let AB be divided into the two equal halves AE and EB, so that AE equals EB and AE + EB = AB.\n\n**Step 3.** Since BC is even, by definition it is divisible into two equal parts [D7.6]. Let BC be divided into the two equal halves BF and FC, so that BF equals FC and BF + FC = BC.\n\n**Step 4.** Since CD is even, by definition it is divisible into two equal parts [D7.6]. Let CD be divided into the two equal halves CG and GD, so that CG equals GD and CG + GD = CD.\n\n**Step 5.** Now AE equals EB, BF equals FC, and CG equals GD. Adding equals to equals, AE + BF + CG equals EB + FC + GD [CN2].\n\n**Step 6.** But AE + EB + BF + FC + CG + GD constitutes the whole AD (since AE + EB = AB, BF + FC = BC, CG + GD = CD, and AB + BC + CD = AD). Therefore AD equals (AE + BF + CG) + (EB + FC + GD), which is twice the quantity (AE + BF + CG), since AE + BF + CG equals EB + FC + GD.\n\n**Step 7.** Therefore the whole AD is divisible into two equal parts, namely (AE + BF + CG) and (EB + FC + GD). Hence by definition AD is even [D7.6].\n\n**Step 8.** The argument extends to any number of even summands by the same reasoning: each even number contributes equal halves, and summing the respective halves yields two equal parts of the whole.\n\n**Step 9.** Therefore, if as many even numbers as we please be added together, the whole is even. Q.E.D.",
+      "used": [
+        "D7.6",
+        "CN2"
+      ]
+    },
+    {
+      "prop_id": "9.22",
+      "statement": "If as many odd numbers as we please be added together, and their multitude be even, the whole will be even.",
+      "proof": "**Step 1.** Let there be as many odd numbers as we please, say A1, A2, A3, ..., A2n, and let their multitude be even.\n\n**Step 2.** Since the multitude of odd numbers is even, by D7.6 it is divisible into two equal parts. Therefore the odd numbers can be arranged into pairs: (A1, A2), (A3, A4), ..., (A(2n-1), A2n), yielding n pairs.\n\n**Step 3.** Consider any one pair, say Ai and Ai+1, both odd. By D7.7, each odd number differs by a unit from an even number. Therefore Ai = Bi + 1 where Bi is even, and Ai+1 = Ci + 1 where Ci is even.\n\n**Step 4.** Then Ai + Ai+1 = Bi + Ci + 2 [by CN2, adding equals to equals]. Now Bi, Ci, and 2 are all even numbers (Bi and Ci by construction, and 2 because it is divisible into two equal parts, namely two units, satisfying D7.6). Therefore the sum Bi + Ci + 2 is a sum of even numbers, which is even by 9.21.\n\n**Step 5.** Thus each pair of odd numbers sums to an even number. We therefore have n even numbers, namely the sums S1 = A1 + A2, S2 = A3 + A4, ..., Sn = A(2n-1) + A2n.\n\n**Step 6.** The total sum A1 + A2 + A3 + ... + A2n equals S1 + S2 + ... + Sn, which is a sum of as many even numbers as we please. By 9.21, this sum is even.\n\n**Step 7.** Therefore, if as many odd numbers as we please be added together, and their multitude be even, the whole is even. Q.E.D.",
+      "used": [
+        "D7.6",
+        "D7.7",
+        "CN2",
+        "9.21"
+      ]
+    },
+    {
+      "prop_id": "9.23",
+      "statement": "If as many odd numbers as we please be added together, and their multitude be odd, the whole will also be odd.",
+      "proof": "**Step 1.** Let there be as many odd numbers as we please, A1, A2, ..., An, and let their multitude n be odd. We must show that the sum S = A1 + A2 + ... + An is odd.\n\n**Step 2.** Since the multitude n is odd, and n is at least 1, set aside the last number An. The remaining multitude is n - 1. Since n is odd, n differs by a unit from an even number [D7.7], so n - 1 is even.\n\n**Step 3.** The numbers A1, A2, ..., A(n-1) form an even multitude of odd numbers. By Proposition 9.22, their sum T = A1 + A2 + ... + A(n-1) is even.\n\n**Step 4.** Now S = T + An, where T is even and An is odd. Since An is odd, by Definition 7.7, An differs by a unit from an even number. That is, An = E + 1, where E is some even number and 1 is the unit.\n\n**Step 5.** Then S = T + E + 1. Since T is even and E is even, their sum T + E is even, being a sum of even numbers [9.21].\n\n**Step 6.** Therefore S = (T + E) + 1, which is an even number plus a unit. By Definition 7.7, S is odd.\n\n**Step 7.** Therefore, if as many odd numbers as we please be added together, and their multitude be odd, the whole is also odd. Q.E.D.",
+      "used": [
+        "D7.7",
+        "9.21",
+        "9.22"
+      ]
+    },
+    {
+      "prop_id": "9.24",
+      "statement": "If from an even number an even number be subtracted, the remainder will be even.",
+      "proof": "**Step 1.** Let AB be an even number, and let BC, an even number, be subtracted from it. We must show that the remainder AC is even.\n\n**Step 2.** Since AB is even, by Definition D7.6, AB is divisible into two equal parts. That is, there exists a number M such that AB is the sum of M and M, so the dyad (the number 2) measures AB.\n\n**Step 3.** Since BC is even, by Definition D7.6, BC is divisible into two equal parts. That is, there exists a number N such that BC is the sum of N and N, so the dyad measures BC.\n\n**Step 4.** Now AB is composed of BC and the remainder AC. Since the dyad measures AB, we may write AB as M taken together with M (two equal parts). Since the dyad measures BC, we may write BC as N taken together with N (two equal parts).\n\n**Step 5.** Since AB equals BC together with AC, and AB equals M together with M, and BC equals N together with N, we have that M together with M equals N together with N together with AC. By Common Notion CN3 (if equals be subtracted from equals, the remainders are equal), subtracting N from M on one side and N from one of the equal halves on the other, the remainder AC equals (M minus N) taken together with (M minus N). That is, AC is composed of two equal parts, each equal to M minus N.\n\n**Step 6.** Since AC is divisible into two equal parts, AC is even by Definition D7.6. Therefore, if from an even number an even number be subtracted, the remainder is even. Q.E.D.",
+      "used": [
+        "D7.6",
+        "CN3"
+      ]
+    },
+    {
+      "prop_id": "9.25",
+      "statement": "If from an even number an odd number be subtracted, the remainder will be odd.",
+      "proof": "**Step 1.** Let AB be an even number, and let the odd number CD be subtracted from it. We must show that the remainder is odd.\n\n**Step 2.** Since CD is odd, by D7.7, CD differs by a unit from an even number. That is, we may take DE to be a unit such that CE is even and CD = CE + DE.\n\n**Step 3.** Since AB is even and CE is even, by 9.24 (if from an even number an even number be subtracted, the remainder is even), the number AB - CE is even. Let this even remainder be called F, so that F = AB - CE.\n\n**Step 4.** Now, AB - CD = AB - (CE + DE) = (AB - CE) - DE = F - DE. Since DE is a unit, F - DE differs from the even number F by a unit.\n\n**Step 5.** By D7.7, a number that differs by a unit from an even number is odd. Therefore F - DE is odd.\n\n**Step 6.** Since F - DE = AB - CD, the remainder when the odd number CD is subtracted from the even number AB is odd, which is what was to be proved.",
+      "used": [
+        "D7.7",
+        "9.24"
+      ]
+    },
+    {
+      "prop_id": "9.26",
+      "statement": "If from an odd number an odd number be subtracted, the remainder will be even.",
+      "proof": "**Step 1.** Let the odd number BC be subtracted from the odd number AB, so that the remainder is AC. I say that AC is even.\n\n**Step 2.** Since AB is odd, let the unit BD be subtracted from it. Then the remainder AD is even. [D7.7]\n\n**Step 3.** For the same reason, since BC is odd, let the unit BE be subtracted from it. Then the remainder CE is even. [D7.7]\n\n**Step 4.** But BD and BE are each a unit, so BD equals BE, and therefore D coincides with E. That is, CE equals CD.\n\n**Step 5.** Now since AD is even and CD is even, and AC equals AD minus CD, we have that from the even number AD the even number CD has been subtracted. Therefore the remainder AC is even. [9.24]\n\n**Step 6.** Therefore, if from an odd number an odd number be subtracted, the remainder is even. Q.E.D.",
+      "used": [
+        "D7.7",
+        "9.24"
+      ]
+    },
+    {
+      "prop_id": "9.27",
+      "statement": "If from an odd number an even number be subtracted, the remainder will be odd.",
+      "proof": "**Step 1.** Let A be an odd number and B an even number subtracted from it, and let the remainder be C, so that A = B + C.\n\n**Step 2.** We must show that C is odd.\n\n**Step 3.** Suppose, for the sake of contradiction, that C is even.\n\n**Step 4.** Then B is even (given) and C is even (assumption). Since two even numbers are added together, by Proposition 9.21, their sum B + C is even.\n\n**Step 5.** But B + C = A, so A would be even.\n\n**Step 6.** This contradicts the hypothesis that A is odd (Definition 7.7: an odd number is not divisible into two equal parts).\n\n**Step 7.** Therefore the assumption that C is even is false, and C is not divisible into two equal parts.\n\n**Step 8.** Hence, by Definition 7.7, C is odd, which is what was to be proved.",
+      "used": [
+        "D7.6",
+        "D7.7",
+        "9.21"
+      ]
+    },
+    {
+      "prop_id": "9.28",
+      "statement": "If an odd number by multiplying an even number make some number, the product will be even.",
+      "proof": "**Step 1.** Let A be an odd number and B be an even number, and let C be the product A times B. We are to show that C is even.\n\n**Step 2.** By the definition of multiplication [D7.15], A times B means that B is added to itself as many times as there are units in A. That is, C = B + B + ... + B, where the number of summands is equal to A.\n\n**Step 3.** Since B is even [given], each of the A summands in this sum is an even number.\n\n**Step 4.** We have as many even numbers as we please (namely A copies of B) added together. By Proposition 9.21, if as many even numbers as we please be added together, the whole is even. Therefore C, being the sum of A even numbers, is even.\n\n**Step 5.** Therefore, if an odd number by multiplying an even number make some number, the product will be even. Q.E.D.",
+      "used": [
+        "D7.6",
+        "D7.15",
+        "9.21"
+      ]
+    },
+    {
+      "prop_id": "9.29",
+      "statement": "If an odd number by multiplying an odd number make some number, the product will be odd.",
+      "proof": "**Step 1.** Let A be an odd number and let B be an odd number, and let A multiplied by B produce C. We are to show that C is odd.\n\n**Step 2.** Since A multiplied by B produces C, by the definition of multiplication (D7.15), C is the result of adding A to itself as many times as there are units in B. That is, C equals the sum of B copies of A.\n\n**Step 3.** Now each of these B summands is equal to A, and A is odd (by hypothesis and D7.7). Furthermore, the multitude of summands is B, which is itself odd (by hypothesis and D7.7).\n\n**Step 4.** Therefore we have as many odd numbers as we please (namely B of them) added together, and their multitude B is odd. By Proposition 9.23, if as many odd numbers as we please be added together and their multitude be odd, the whole will also be odd.\n\n**Step 5.** Therefore C, being this sum, is odd. This is what was to be proved.",
+      "used": [
+        "D7.7",
+        "D7.15",
+        "9.23"
+      ]
+    },
+    {
+      "prop_id": "9.30",
+      "statement": "If an odd number measure an even number, it will also measure the half of it.",
+      "proof": "**Step 1.** Let A be an odd number and B an even number, and let A measure B. Since A measures B, there exists a number C such that A taken C times equals B, that is, C multiplied by A produces B [D7.3, D7.15].\n\n**Step 2.** I claim that C must be even. For suppose C is odd. Then C is odd and A is odd, so by Proposition 9.29 their product C times A is odd. But C times A equals B, and B is even, which is a contradiction since a number cannot be both odd and even [D7.6, D7.7]. Therefore C is not odd, and so C is even.\n\n**Step 3.** Since C is even, C is divisible into two equal parts [D7.6]. Let E be the half of C, so that C equals E plus E.\n\n**Step 4.** Now C multiplied by A equals B, and C equals E plus E. By the definition of multiplication [D7.15], C multiplied by A means A is added to itself as many times as there are units in C. Since C equals E plus E, adding A to itself C times amounts to adding A to itself E times and then adding A to itself E more times. The first grouping produces E multiplied by A, and the second produces E multiplied by A again. Therefore B equals the sum of E times A with E times A.\n\n**Step 5.** Since B equals E times A plus E times A, the number B is divisible into two equal parts, each equal to E times A. Therefore the half of B is E times A [D7.6].\n\n**Step 6.** Since E times A equals E multiplied by A, by the definition of multiplication A has been added to itself E times to produce this number [D7.15]. Therefore A measures E times A, that is, A measures the half of B [D7.3].\n\n**Step 7.** Hence if an odd number measure an even number, it also measures the half of it. Q.E.D.",
+      "used": [
+        "D7.3",
+        "D7.6",
+        "D7.7",
+        "D7.15",
+        "9.29"
+      ]
+    },
+    {
+      "prop_id": "9.31",
+      "statement": "If an odd number be prime to any number, it will also be prime to the double of it.",
+      "proof": "**Step 1.** Let A be an odd number, and let B be any number such that A is prime to B. We are to show that A is also prime to the double of B, that is, to 2B.\n\n**Step 2.** Since A is odd, by D7.7, A is not divisible into two equal parts, which means 2 does not measure A.\n\n**Step 3.** Now 2 is a prime number, since it is measured by a unit alone (D7.11).\n\n**Step 4.** Since 2 is prime and does not measure A, by 7.29 (any prime number is prime to any number which it does not measure), 2 is prime to A.\n\n**Step 5.** Since A is prime to B (given), B is also prime to A, for numbers prime to one another are those measured by a unit alone as a common measure, and this relation is symmetric (D7.12).\n\n**Step 6.** Now both 2 and B are prime to A. Therefore, by 7.24 (if two numbers be prime to any number, their product also will be prime to that same number), the product of 2 and B, which is 2B, is also prime to A.\n\n**Step 7.** Since 2B is prime to A, it follows that A is prime to 2B (D7.12). Therefore, if an odd number be prime to any number, it will also be prime to the double of it. Q.E.D.",
+      "used": [
+        "D7.7",
+        "D7.11",
+        "D7.12",
+        "7.24",
+        "7.29"
+      ]
+    },
+    {
+      "prop_id": "9.32",
+      "statement": "Each of the numbers which are continually doubled beginning from a dyad is even-times even only.",
+      "proof": "**Step 1.** Let the numbers A, B, C, D, ... be continually doubled beginning from a dyad. That is, consider the sequence of numbers in continued proportion beginning from the unit 1, with common ratio 2: namely 1, 2, 4, 8, 16, and so on. The numbers continually doubled beginning from a dyad are 2, 4, 8, 16, ..., being all terms of this sequence after the unit.\n\n**Step 2.** We must show that each of these numbers is even-times even only, that is, each is even-times even (D7.8) but not even-times odd (D7.9).\n\n**Step 3.** First, each number in the sequence is even. For each number after the first is produced by doubling the previous one, so each equals 2 times some number, and hence is divisible into two equal parts. By D7.6, each is even.\n\n**Step 4.** Next we show each is even-times even. Consider any number in the sequence beyond the dyad itself, say C = 4, D = 8, and so on. Each such number is the product of two numbers both belonging to the sequence (for example, 4 = 2 times 2, 8 = 2 times 4, 16 = 2 times 8 or 4 times 4). Since every number in the sequence is even (Step 3), each such number is measured by an even number according to an even number. By D7.8, each is even-times even. The dyad 2 itself is also even-times even, since by D7.8 it is measured by 2 (an even number) according to 1 (the unit), and in the sequence from the unit, 2 is the product of the unit and an even number.\n\n**Step 5.** It remains to show that none of these numbers is even-times odd. Suppose for contradiction that some number in the sequence, say N, is even-times odd. Then by D7.9, N is measured by an even number according to an odd number. This means there exists an odd number greater than 1 that measures N.\n\n**Step 6.** Now the sequence 1, 2, 4, 8, 16, ... consists of numbers in continued proportion beginning from the unit, and the number after the unit is 2, which is prime (D7.11, since 2 is measured by the unit alone among numbers). By Proposition 9.13, since the numbers are in continued proportion from the unit and the number after the unit (namely 2) is prime, no number in the sequence is measured by any number except those which have a place among the proportional numbers themselves.\n\n**Step 7.** The numbers which have a place among the proportional numbers are 1, 2, 4, 8, 16, and so on. The unit 1 is not a number in the sense required for measurement by an odd number greater than 1. Every other term in the sequence is even, as shown in Step 3. Therefore no odd number greater than 1 measures any number in the sequence.\n\n**Step 8.** This contradicts the supposition in Step 5 that an odd number greater than 1 measures N. Therefore N is not even-times odd.\n\n**Step 9.** Since each number in the sequence is even-times even (Step 4) and not even-times odd (Step 8), each of the numbers which are continually doubled beginning from a dyad is even-times even only. Q.E.D.",
+      "used": [
+        "D7.6",
+        "D7.8",
+        "D7.9",
+        "D7.11",
+        "9.13"
+      ]
+    },
+    {
+      "prop_id": "9.33",
+      "statement": "If a number have its half odd, it is even-times odd only.",
+      "proof": "**Step 1.** Let N be a number whose half is odd. Then N = 2C for some odd number C. Since N is divided into two equal parts, N is even [D7.6].\n\n**Step 2.** Now, 2 is even [D7.6] and C is odd, so N is measured by the even number 2 according to the odd number C. Therefore N is even-times odd [D7.9].\n\n**Step 3.** It remains to show that N is even-times odd only, that is, N is not also even-times even and not odd-times odd.\n\n**Step 4.** Suppose for contradiction that N is even-times even. Then by definition [D7.8], N is measured by some even number A according to some even number B, so that N = A times B with both A and B even.\n\n**Step 5.** Since A is even, A is divisible into two equal parts [D7.6], so A = 2m for some number m. Then N = 2m times B, and therefore the half of N is m times B.\n\n**Step 6.** Since B is even, B is divisible into two equal parts [D7.6], so B = 2n for some number n. Then m times B = m times 2n = 2 times (m times n), so m times B is divisible into two equal parts, namely m times n and m times n. Therefore m times B is even [D7.6].\n\n**Step 7.** But the half of N is C, which is odd. Since a number cannot be both even and odd [D7.6, D7.7], this is a contradiction. Therefore N is not even-times even.\n\n**Step 8.** Now suppose for contradiction that N is odd-times odd. Then by definition [D7.10], N is measured by some odd number P according to some odd number Q, so that N = P times Q with both P and Q odd.\n\n**Step 9.** But if an odd number multiplies an odd number, the product is odd [9.29]. Therefore N = P times Q is odd.\n\n**Step 10.** However, N is even (Step 1). Since a number cannot be both even and odd [D7.6, D7.7], this is a contradiction. Therefore N is not odd-times odd.\n\n**Step 11.** Since N is even-times odd (Step 2), and N is neither even-times even (Step 7) nor odd-times odd (Step 10), N is even-times odd only. Q.E.D.",
+      "used": [
+        "D7.6",
+        "D7.7",
+        "D7.8",
+        "D7.9",
+        "D7.10",
+        "9.29"
+      ]
+    },
+    {
+      "prop_id": "9.34",
+      "statement": "If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.",
+      "proof": "**Step 1.** Let A be an even number which is neither one of those continually doubled from a dyad (i.e., not in the sequence 2, 4, 8, 16, ...) nor has its half odd. We must show that A is both even-times even and even-times odd.\n\n**Step 2.** Since A is even, A has a half, call it B, so that A = 2B. Since A does not have its half odd, B is even. Therefore A is equal to 2 times B, where both 2 and B are even. By the definition of even-times even (D7.8), A is even-times even.\n\n**Step 3.** It remains to show that A is also even-times odd. Since A is even and B is even, we may take the half of B repeatedly. At each stage, if the result is even, halve again. Since A is a finite number, this process must terminate, and it terminates when we reach an odd number. Let this process yield: A = 2B, B = 2C, C = 2D, and so on, until at some stage we reach an odd number, say G, so that A = 2^s * G where s >= 2 and G is odd.\n\n**Step 4.** We claim G must be greater than 1 (i.e., G is not the unit). For suppose G were 1. Then A = 2^s, which means A is one of the numbers continually doubled from a dyad (since 2^1 = 2, 2^2 = 4, 2^3 = 8, etc., by 9.32 these are exactly the numbers in the doubling sequence from 2). But we assumed A is not one of these numbers. This is a contradiction, so G > 1, meaning G is an odd number greater than 1.\n\n**Step 5.** Now let E = 2^s. Since s >= 2, E is even. Since A = E * G where E is even and G is odd, A is measured by the even number E according to the odd number G. By the definition of even-times odd (D7.9), A is even-times odd.\n\n**Step 6.** Therefore A is both even-times even (from Step 2) and even-times odd (from Step 5). This is what was to be proved.",
+      "used": [
+        "D7.6",
+        "D7.7",
+        "D7.8",
+        "D7.9",
+        "9.32"
+      ]
+    },
+    {
+      "prop_id": "9.35",
+      "statement": "If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.",
+      "proof": "**Step 1.** Let A1, A2, A3, ..., An be as many numbers as we please in continued proportion, so that A1:A2 = A2:A3 = ... = A(n-1):An. From A2 subtract a number equal to A1, giving the excess A2 - A1, and from An subtract a number equal to A1, giving the excess An - A1. We are to show that (A2 - A1) : A1 = (An - A1) : (A1 + A2 + ... + A(n-1)).\n\n**Step 2.** Since the numbers are in continued proportion, we have A2:A1 = A3:A2 = A4:A3 = ... = An:A(n-1). Consider any two consecutive equal ratios A(k+1):Ak = A(k+2):A(k+1). Since A(k+2):A(k+1) = A(k+1):Ak, and Ak is less than A(k+1) which is less than A(k+2), by 7.11 the remainder after subtracting corresponds: (A(k+2) - A(k+1)) : (A(k+1) - Ak) = A(k+2) : A(k+1).\n\n**Step 3.** In particular, applying 7.11 to A3:A2 = A2:A1, we obtain (A3 - A2) : (A2 - A1) = A3 : A2 = A2 : A1. By 7.13 (alternando), since (A3 - A2) : (A2 - A1) = A2 : A1, we deduce (A3 - A2) : A2 = (A2 - A1) : A1.\n\n**Step 4.** Similarly, applying 7.11 to A4:A3 = A3:A2 gives (A4 - A3) : (A3 - A2) = A3 : A2 = A2 : A1. By 7.13, (A4 - A3) : A3 = (A3 - A2) : A2 = (A2 - A1) : A1. Repeating this argument for each successive pair of terms in the continued proportion, we establish that (A2 - A1) : A1 = (A3 - A2) : A2 = (A4 - A3) : A3 = ... = (An - A(n-1)) : A(n-1).\n\n**Step 5.** We now have as many equal ratios as there are terms before An, namely (A2 - A1) : A1 = (A3 - A2) : A2 = ... = (An - A(n-1)) : A(n-1). By 7.12, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents. Therefore (A2 - A1) : A1 = [(A2 - A1) + (A3 - A2) + (A4 - A3) + ... + (An - A(n-1))] : [A1 + A2 + A3 + ... + A(n-1)].\n\n**Step 6.** Consider the sum of the antecedents: (A2 - A1) + (A3 - A2) + (A4 - A3) + ... + (An - A(n-1)). Adding equals to equals successively by CN2, and observing that each intermediate term is both added and subtracted, the sum telescopes. Specifically, (A2 - A1) + (A3 - A2) = A3 - A1 by CN2 and CN3. Continuing, (A3 - A1) + (A4 - A3) = A4 - A1, and so on. Therefore the entire sum of antecedents equals An - A1.\n\n**Step 7.** Substituting back into the proportion from Step 5, we obtain (A2 - A1) : A1 = (An - A1) : (A1 + A2 + ... + A(n-1)). That is, as the excess of the second over the first is to the first, so is the excess of the last over the first to the sum of all terms before the last. This is what was to be proved.",
+      "used": [
+        "7.11",
+        "7.12",
+        "7.13",
+        "CN2",
+        "CN3"
+      ]
+    },
+    {
+      "prop_id": "9.36",
+      "statement": "If as many numbers as we please beginning from an unit be set out continuously in double proportion, until the sum of all becomes prime, and if the sum multiplied into the last make some number, the product will be perfect.",
+      "proof": "**Step 1.** Let A, B, C, D be as many numbers as we please beginning from a unit, set out continuously in double proportion, so that A = 1, B = 2, C = 4, D = 8, and so on. Let S denote the sum of all these numbers (1 + 2 + 4 + ... + D), and suppose S is prime. Let E = S * D (the sum multiplied into the last). We must show that E is perfect, that is, E equals the sum of all its parts (D7.22).\n\n**Step 2.** Since the numbers A, B, C, D, ... are in continued double proportion from the unit, each term is double the preceding one. By 9.35 (if numbers in continued proportion have the first subtracted from the second and from the last, then as the excess of the second over the first is to the first, so is the excess of the last over the first to the sum of all before it), applied to the doubled geometric series extended by one term: the sum 1 + 2 + 4 + ... + 2^(n-1) equals 2^n - 1. Thus S = 2D - 1, which gives 2D = S + 1, and equivalently S * A = S (since A = 1), and 2D - S = A = 1.\n\n**Step 3.** Now consider the product S * B. Since B = 2A = 2, we have S * B = 2S. Also S * B = S * 2A. Since S = 2D - 1, we get S * B = 2S = 2(2D - 1) = 4D - 2. Consider the products S * A = S, S * B = 2S, S * C = 4S, S * D. Since A, B, C, D are in continued proportion with ratio 2, and each is multiplied by S, the products S * A, S * B, S * C, S * D are also in continued double proportion, by 7.17 (if a number multiply two numbers, the products have the same ratio as the multiplied numbers) and 7.18.\n\n**Step 4.** We identify all the divisors of E = S * D. Since S is prime (by hypothesis), and the numbers A, B, C, ... D are the geometric progression 1, 2, 4, ..., 2^(n-1), we proceed to find every number that measures E. First, since D = 2^(n-1), the divisors of D are exactly A = 1, B = 2, C = 4, ..., D itself (each term in the geometric progression from unity). This follows from 9.13: since the terms begin from unity and B = 2 is prime, the greatest term D is not measured by any number except those which have a place among the proportional numbers.\n\n**Step 5.** The divisors of E = S * D are of two kinds: (i) the divisors of D, which are A, B, C, ..., D; and (ii) S times each divisor of D, which are S * A = S, S * B, S * C, ..., S * D = E. We must verify these are all the divisors. Suppose some number F measures E. Then F measures S * D. Since S is prime, either S measures F or S is prime to F (7.29). If S is prime to F, then since F measures S * D, by 7.30 F must measure D, so F is among A, B, C, ..., D by Step 4. If S measures F, write F = S * G; then S * G measures S * D, so G measures D (7.17 and 7.20 on cancellation), and G is among A, B, ..., D. Thus F = S * G is among S * A, S * B, ..., S * D. This accounts for all divisors.\n\n**Step 6.** The proper parts of E (divisors less than E) are therefore: A, B, C, ..., D, S, S * B, S * C, ..., and the term just before E in the second sequence. We must show their sum equals E. The sum of the first group is A + B + C + ... + D = S (by construction, since S is the sum of the geometric progression).\n\n**Step 7.** The sum of the second group (the proper divisors from the S-multiples, excluding E = S * D itself) is S * A + S * B + S * C + ... + S * (D/2), that is, S + S * B + S * C + ... + S * (the term before D). Factor out S: this equals S * (A + B + C + ... + the term before D). Now A + B + C + ... + (the term before D) = S - D (since the full sum A + B + ... + D = S, removing D gives S - D). So the sum of the second group is S * (S - D).\n\n**Step 8.** The total sum of all proper parts of E is therefore S + S * (S - D) = S * (1 + S - D) = S * (A + S - D). From Step 2, S = 2D - 1, so S - D = D - 1. Therefore A + S - D = 1 + D - 1 = D. Thus the sum of all proper parts equals S * D = E.\n\n**Step 9.** Since E equals the sum of all its proper parts, E is a perfect number by D7.22. This is what was to be proved.",
+      "used": [
+        "D7.1",
+        "D7.3",
+        "D7.11",
+        "D7.15",
+        "D7.22",
+        "7.17",
+        "7.18",
+        "7.20",
+        "7.29",
+        "7.30",
+        "9.13",
+        "9.35"
+      ]
+    }
+  ]
+}

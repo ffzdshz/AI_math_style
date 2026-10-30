@@ -1,0 +1,61 @@
+{
+  "proposition": "11.23",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "A, B, C+, C-, E+, E- all on circle Omega with center O, radius r, in plane Pi. Angles: AOB = alpha, AOC+ = AOC- = beta (opposite directions), BOE+ = BOE- = gamma (opposite directions).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angular positions from OC-: C- at 0, E- at alpha+beta-gamma, C+ at 2*beta, E+ at alpha+beta+gamma. Cyclic order C-, E-, C+, E+.",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Chords C-C+ and E-E+ intersect at point D, strictly interior to both chords. D is inside circle Omega.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "D lies inside all three circles Omega, Omega_A, and Omega_B (by 3.2, since D is interior to chords of each).",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "DC+ * DC- = DE+ * DE- = k (intersecting chords theorem 3.35 in Omega).",
+      "type": "metric_relation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "r^2 = OD^2 + k, AC+^2 = AD^2 + k, BE+^2 = BD^2 + k (from 2.5 applied to diameters through D in each circle).",
+      "type": "metric_relation"
+    },
+    {
+      "step": "Step 7",
+      "claim": "P is on the perpendicular to Pi at D, with DP = h where h^2 = k. P is outside plane Pi.",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Triangles ODP, ADP, BDP are right-angled at D (DP perpendicular to Pi). OP = r, AP = AC+, BP = BE+.",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Angle AOP = beta (by SSS congruence of triangles AOP and AOC+). Angle BOP = gamma (by SSS congruence of triangles BOP and BOE+). Angle AOB = alpha (by construction).",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 10",
+      "claim": "P is not in plane Pi, so rays OA, OB, OP are not coplanar and form a valid solid angle with face angles alpha, beta, gamma.",
+      "type": "solid_angle_formation"
+    }
+  ],
+  "configuration_map": "O is the center of circle Omega in plane Pi. Points A, B are on Omega with angle AOB = alpha. Points C+, C- are on Omega symmetric about ray OA at angle beta; points E+, E- are on Omega symmetric about ray OB at angle gamma. The cyclic order on Omega is C-, E-, C+, E+ (verified from the triangle inequality hypotheses on the angles). Chords C-C+ and E-E+ intersect at D strictly inside Omega (alternating endpoints guarantee intersection). D is also inside circles Omega_A (centered at A, radius AC+) and Omega_B (centered at B, radius BE+), since D lies on chords of each. Point P is lifted perpendicularly above Pi at D to height h = sqrt(DC+ * DC-). The perpendicular lift ensures right angles at D in triangles ODP, ADP, BDP, yielding OP = r, AP = AC+, BP = BE+ via Pythagorean theorem and the chord-product identities. SSS congruence then gives the face angles of the solid angle at O.",
+  "pass_reason": "All spatial claims are mutually consistent. The cyclic ordering of points on Omega follows correctly from the angle hypotheses. The intersection point D of the two chords is properly interior to all three circles. The chord-product identity (3.35) and the diameter relation (2.5) correctly yield the metric identities used for the perpendicular lift. The SSS congruences in Step 9 validly recover the desired face angles. The solid angle formation in Step 10 is sound since P is genuinely outside plane Pi. No configuration contradiction exists between any pair of spatial claims."
+}

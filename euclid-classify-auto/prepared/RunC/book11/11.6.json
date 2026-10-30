@@ -1,0 +1,45 @@
+{
+  "proposition": "11.6",
+  "book": 11,
+  "statement": "If two straight lines be at right angles to the same plane, the straight lines will be parallel.",
+  "heath_proof": "For let the two straight lines AB, CD be at right angles to the plane of reference; I say that AB is parallel to CD. For let them meet the plane of reference at the points B, D, let the straight line BD be joined, let DE be drawn, in the plane of reference, at right angles to BD, let DE be made equal to AB, and let BE, AE, AD be joined. Now, since AB is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference. [XI. Def. 3] But each of the straight lines BD, BE is in the plane of reference and meets AB; therefore each of the angles ABD, ABE is right. For the same reason each of the angles CDB, CDE is also right. And, since AB is equal to DE, and BD is common, the two sides AB, BD are equal to the two sides ED, DB; and they include right angles; therefore the base AD is equal to the base BE. [I. 4] And, since AB is equal to DE, while AD is also equal to BE, the two sides AB, BE are equal to the two sides ED, DA; and AE is their common base; therefore the angle ABE is equal to the angle EDA. [I. 8] But the angle ABE is right; therefore the angle EDA is also right; therefore ED is at right angles to DA. But it is also at right angles to each of the straight lines BD, DC; therefore ED is set up at right angles to the three straight lines BD, DA, DC at their point of meeting; therefore the three straight lines BD, DA, DC are in one plane. [XI. 5] But, in whatever plane DB, DA are, in that plane is AB also, for every triangle is in one plane; [XI. 2] therefore the straight lines AB, BD, DC are in one plane. And each of the angles ABD, BDC is right; therefore AB is parallel to CD. [I. 28]",
+  "ai_proof_text": "11.6\n**Statement:** If two straight lines be at right angles to the same plane, the straight lines will be parallel.\n\n**Step 1.** Let AB and CD be two straight lines at right angles to the given plane, meeting it at B and D respectively. Join BD in the plane. [P1]\n\n**Step 2.** Since AB is at right angles to the plane and BD is a straight line in the plane meeting AB at B, the angle ABD is a right angle. [D11.3]\n\n**Step 3.** Since CD is at right angles to the plane and BD is a straight line in the plane meeting CD at D, the angle CDB is a right angle. [D11.3]\n\n**Step 4.** In the given plane, draw DE at right angles to BD from the point D, so that DE lies in the given plane. [1.11]\n\n**Step 5.** Make DE equal to AB. [1.3]\n\n**Step 6.** Join BE, AE, and AD. [P1]\n\n**Step 7.** Since the angle ABD is a right angle (Step 2), in the right triangle ABD the square on AD equals the sum of the squares on AB and BD. [1.47]\n\n**Step 8.** Since the angle BDE is a right angle (Step 4), in the right triangle BDE the square on BE equals the sum of the squares on BD and DE. But DE equals AB (Step 5), so the square on BE equals the sum of the squares on BD and AB, which equals the square on AD (Step 7). Therefore BE equals AD. [1.47, CN1]\n\n**Step 9.** Since AB is at right angles to the plane and both B and E lie in the plane, the line BE lies in the plane, so the angle ABE is a right angle. In the right triangle ABE, the square on AE equals the sum of the squares on AB and BE. [D11.3, 1.47]\n\n**Step 10.** Now the sum of the squares on AD and DE equals the sum of the squares on AB and BD together with the square on DE (by Step 7). Since DE equals AB, this equals the square on AB plus the square on BD plus the square on AB, which equals the square on AB plus the square on BE (by Step 8), which equals the square on AE (by Step 9). Therefore the square on AE equals the sum of the squares on AD and DE. [CN1, CN2]\n\n**Step 11.** Since the square on AE equals the sum of the squares on AD and DE, by the converse of the Pythagorean theorem the angle ADE is a right angle. [1.48]\n\n**Step 12.** Since CD is at right angles to the plane and DE is a line in the plane meeting CD at D, the angle CDE is a right angle. [D11.3]\n\n**Step 13.** The line DE is at right angles to each of the three straight lines BD, DA, and DC at their common point D: to BD by construction (Step 4), to DA since the angle ADE is a right angle (Step 11), and to DC since the angle CDE is a right angle (Step 12). Since BD, DA, and DC all meet one another at the point D, by Proposition 11.5 the three lines BD, DA, and DC lie in one plane. [11.5]\n\n**Step 14.** Since BD and DA lie in this plane, the points B and A lie in this plane, and therefore the line AB lies in this plane. Since BD and DC lie in this plane, the points D and C lie in this plane, and therefore the line CD lies in this plane. Thus AB, CD, and the transversal BD all lie in one plane.\n\n**Step 15.** The transversal BD falls on lines AB and CD in this plane. The interior angles on the same side are the angle ABD and the angle BDC, each of which is a right angle (Steps 2 and 3). Their sum equals two right angles. [P4]\n\n**Step 16.** Since the interior angles on the same side of the transversal BD sum to two right angles, AB is parallel to CD. [1.28]\n\n**USED:** 1.11, 1.28, 1.3, 1.47, 1.48, 11.5, CN1, CN2, D11.3, P1, P4\n**Human refs (from References field):** 1.28, 1.4, 1.8, 11.2, 11.5, D11.3\n**Jaccard:** 0.214 — AI adds ['1.11', '1.3', '1.47', '1.48', 'CN1', 'CN2', 'P1', 'P4']; Human adds ['1.4', '1.8', '11.2']",
+  "ai_used": [
+    "1.11",
+    "1.28",
+    "1.3",
+    "1.47",
+    "1.48",
+    "11.5",
+    "CN1",
+    "CN2",
+    "D11.3",
+    "P1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.28",
+    "1.4",
+    "1.8",
+    "11.2",
+    "11.5",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.11",
+    "1.3",
+    "1.47",
+    "1.48",
+    "CN1",
+    "CN2",
+    "P1",
+    "P4"
+  ],
+  "heath_only": [
+    "1.4",
+    "1.8",
+    "11.2"
+  ],
+  "jaccard": 0.214,
+  "proof_summary": "**Step 1.** Let AB and CD be two straight lines at right angles to the given plane, meeting it at B and D respectively. Join BD in the plane. [P1]  **Step 2.** Since AB is at right angles to the plane"
+}

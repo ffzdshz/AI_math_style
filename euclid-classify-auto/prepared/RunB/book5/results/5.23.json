@@ -1,0 +1,13 @@
+{
+  "proposition": "5.23",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as D (path difference). The two proofs use fundamentally different equimultiple groupings: Heath takes G, H as equimultiples of A, B and K of D (first group), with L, M of C, E and N of F (second group), then uses alternation (5.16) twice as a key technique to establish H:L = K:M. The AI instead takes G, H, K as equimultiples of A, D, E and L, M, N of B, C, F, then uses 5.4 to directly derive G:L = K:N from A:B = E:F across the two multiplier groups. This leads to different intermediate conclusions: Heath establishes G:H = M:N and H:L = K:M before applying 5.21, while the AI establishes G:L = K:N and L:M = H:K before applying 5.21 to a differently-constituted set of six magnitudes. The containment test confirms this is genuine path divergence since 5.16 (heath_only) does not appear inside Heath's proof of 5.4 (ai_only). The AI's alternative path is logically valid throughout, with each step properly justified by cited propositions.",
+  "jaccard": 0.375,
+  "ai_citations": "5.11|5.15|5.21|5.4|D5.17|D5.18|D5.5",
+  "heath_citations": "5.11|5.15|5.16|5.21",
+  "ai_only": "5.4|D5.17|D5.18|D5.5",
+  "heath_only": "5.16",
+  "audit_record": ""
+}

@@ -1,0 +1,91 @@
+{
+  "proposition": "11.35",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "GH is perpendicular from G to the plane of angle BAC; H is the foot in the plane. MN is perpendicular from M to the plane of angle EDF; N is the foot in the plane.",
+      "type": "perpendicularity/point-position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GK is perpendicular to AB, meeting AB at K. ML is perpendicular to DE, meeting DE at L. Angle GHA, GHK are right angles (GH perp to plane). Angle MND, MNL are right angles (MN perp to plane).",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle GKA is a right angle (GK perp AB). Angle MLD is a right angle (ML perp DE).",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AG equals DM (by construction/choice of points G and M on elevated lines).",
+      "type": "construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles AGK and DML are congruent by AAS (1.26): angle GAK = angle MDL, angle AKG = angle DLM = 90 degrees, AG = DM. Therefore AK = DL and GK = ML.",
+      "type": "triangle-congruence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Triangle GKH has right angle at H (GH perp to HK since GH perp to plane and HK in plane). Triangle MLN has right angle at N.",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 14",
+      "claim": "GJ perpendicular from G to AC (foot J on AC). MQ perpendicular from M to DF (foot Q on DF). Triangles AJG and DQM congruent by AAS: AJ = DQ and GJ = MQ.",
+      "type": "perpendicularity/triangle-congruence"
+    },
+    {
+      "step": "Step 15",
+      "claim": "Right triangle GHK (right angle at H): GK squared = GH squared + HK squared.",
+      "type": "Pythagorean-relation"
+    },
+    {
+      "step": "Step 16",
+      "claim": "Right triangle GHJ (right angle at H): GJ squared = GH squared + HJ squared.",
+      "type": "Pythagorean-relation"
+    },
+    {
+      "step": "Step 17",
+      "claim": "Right triangle MNL (right angle at N): ML squared = MN squared + NL squared. Right triangle MNQ (right angle at N): MQ squared = MN squared + NQ squared.",
+      "type": "Pythagorean-relation"
+    },
+    {
+      "step": "Step 21",
+      "claim": "HK is perpendicular to AB (by 11.4: since GH perp plane implies GH perp AB, and GK perp AB, AB is perp to plane GHK, hence AB perp HK). Similarly NL perp DE.",
+      "type": "perpendicularity/solid-geometry"
+    },
+    {
+      "step": "Step 22",
+      "claim": "HJ is perpendicular to AC (same 11.4 argument). NQ is perpendicular to DF.",
+      "type": "perpendicularity/solid-geometry"
+    },
+    {
+      "step": "Step 46",
+      "claim": "Triangles AKJ and DLQ are congruent by SAS (1.4): AK = DL, AJ = DQ, angle KAJ = angle LDQ = angle BAC = angle EDF.",
+      "type": "triangle-congruence"
+    },
+    {
+      "step": "Step 47",
+      "claim": "H is the unique point in plane of angle BAC where HK perp AB at K and HJ perp AC at J. N is the corresponding point in plane of angle EDF. From congruence of triangles AKJ and DLQ: AH = DN, KH = LN, JH = QN.",
+      "type": "point-position/congruence"
+    },
+    {
+      "step": "Step 48",
+      "claim": "From GK = ML and HK = LN, and Pythagorean relations GK squared = GH squared + HK squared and ML squared = MN squared + NL squared, conclude GH = MN.",
+      "type": "length-equality"
+    },
+    {
+      "step": "Step 49-50",
+      "claim": "Triangles GAH and MDN congruent by SSS (1.8): AG = DM, AH = DN, GH = MN. Therefore angle GAH = angle MDN.",
+      "type": "triangle-congruence"
+    }
+  ],
+  "configuration_map": "Two symmetric configurations in 3D:\n\nFIRST CONFIGURATION: Plane of angle BAC with elevated point G.\n- A: vertex of angle BAC in the base plane\n- G: point on elevated line AG above the plane (AG = DM by construction)\n- H: foot of perpendicular from G to the base plane (in the plane, by 11.11)\n- K: foot of perpendicular from G to line AB (K on AB, by 1.12)\n- J: foot of perpendicular from G to line AC (J on AC, by 1.12)\n- Key perpendicularity: GH perp plane, GK perp AB, GJ perp AC, HK perp AB (by 11.4), HJ perp AC (by 11.4)\n- H is uniquely determined as intersection of perpendicular to AB at K and perpendicular to AC at J in the plane\n\nSECOND CONFIGURATION: Plane of angle EDF with elevated point M.\n- D: vertex of angle EDF in the base plane\n- M: point on elevated line DM above the plane (DM = AG by construction)\n- N: foot of perpendicular from M to the base plane (in the plane, by 11.11)\n- L: foot of perpendicular from M to line DE (L on DE)\n- Q: foot of perpendicular from M to line DF (Q on DF)\n- Same perpendicularity structure as first configuration\n\nDERIVED EQUALITIES: AK=DL, GK=ML (Step 5), AJ=DQ, GJ=MQ (Step 14), AH=DN, KH=LN (Step 47), GH=MN (Step 48). All points maintain consistent positions throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof makes extensive perpendicularity and point-position claims in 3D, but each is compatible with the others. The 11.4 application (deriving HK perp AB and HJ perp AC from the perpendicularity of GH to the plane) is geometrically valid. The determination of H as the unique point satisfying two perpendicular conditions is correct. The chain of triangle congruences (AKG to DLM, AJG to DQM, AKJ to DLQ, GAH to MDN) is internally consistent, with no contradictory positional requirements on any point. No angle decomposition issues arise since the proof relies entirely on triangle congruences and Pythagorean relations rather than angle sums."
+}

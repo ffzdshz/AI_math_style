@@ -1,0 +1,13 @@
+{
+  "proposition": "9.4",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: define D = A*A as cube by 9.3, establish D:C = A:B by 7.17, then conclude C is cube because D is cube and the ratio D:C is a cube-to-cube ratio. The difference lies entirely in citation depth for the final step. Heath re-derives the internals of this reasoning inline using three propositions (8.19 to get mean proportionals between similar solids A and B, 8.8 to transfer those mean proportionals to D and C, and 8.23 to conclude from four numbers in continued proportion with the first being cube). The AI instead cites 8.25 as a single unit, which packages exactly that chain — Heath's own proof of 8.25 uses precisely 8.19, 8.8, and 8.23. The proof-tree containment test confirms all heath_only items appear inside Heath's proof of the AI's cited proposition 8.25, establishing this as a citation-depth difference rather than a path difference.",
+  "jaccard": 0.333,
+  "ai_citations": "7.17|8.25|9.3",
+  "heath_citations": "7.17|8.19|8.23|8.8|9.3",
+  "ai_only": "8.25",
+  "heath_only": "8.19|8.23|8.8",
+  "audit_record": ""
+}

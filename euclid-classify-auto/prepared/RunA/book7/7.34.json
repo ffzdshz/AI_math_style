@@ -1,0 +1,43 @@
+{
+  "proposition": "7.34",
+  "book": 7,
+  "statement": "Given two numbers, to find the least number which they measure.",
+  "heath_proof": "Let A, B be the two given numbers; thus it is required to find the least number which they measure. Now A, B are either prime to one another or not. First, let A, B be prime to one another, and let A by multiplying B make C; therefore also B by multiplying A has made C. [VII. 16] Therefore A, B measure C   I say next that it is also the least number they measure. For, if not, A, B will measure some number which is less than C. Let them measure D. Then, as many times as A measures D, so many units let there be in E, and, as many times as B measures D, so many units let there be in F; therefore A by multiplying E has made D, and B by multiplying F has made D; [VII. Def. 15] therefore the product of A, E is equal to the product of B, F. Therefore, as A is to B, so is F   E. [VII. 19] But A, B are prime, primes are also least, [VII. 21] and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less; [VII. 20] therefore B measures E, as consequent consequent. And, since A by multiplying B, E has made C, D, therefore, as B is to E, so is C to D. [VII. 17] But B measures E; therefore C also measures D, the greater the less: which is impossible. Therefore A, B do not measure any number less than C; therefore C is the least that is measured by A, B. Next, let A, B not be prime to one another, and let F, E, the least numbers of those which have the same ratio with A, B, be taken; [VII. 33] therefore the product of A, E is equal to the product of B, F. [VII. 19] And let A by multiplying E make C; therefore also B by multiplying F has made C; therefore A, B measure C. I say next that it is also the least number that they measure. For, if not, A, B will measure some number which is less than C. Let them measure D. And, as many times as A measures D, so many units let there be in G, and, as many times as B measures D, so many units let there be in H. Therefore A by multiplying G has made D, and B by multiplying H has made D. Therefore the product of A, G is equal to the product of B, H; therefore, as A is to B, so is H to G. [VII. 19] But, as A is to B, so is F to E. Therefore also, as F is to E, so is H to G. But F, E are least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less; [VII. 20] therefore E measures G. And, since A by multiplying E, G has made C, D, therefore, as E is to G, so is C to D. [VII. 17] But E measures G; therefore C also measures D, the greater the less: which is impossible. Therefore A, B will not measure any number which is less than C. Therefore C is the least that is measured by A, B.",
+  "ai_proof_text": "7.34\n**Statement:** Given two numbers, to find the least number which they measure.\n\n**Step 1.** Let A, B be the two given numbers. We seek the least number which both A and B measure (i.e., which is measured by both A and B).\n\n**Step 2.** If A and B are equal, then A itself is measured by both A and B, and no number less than A can be measured by A, so A is the required least common multiple. In what follows, assume A and B are not equal, and without loss of generality let A not measure B and B not measure A (for if one measures the other, the greater of the two is measured by both and is plainly the least such number).\n\n**Step 3.** By Proposition 7.33, find C, D the least numbers which have the same ratio as A to B, so that A : B = C : D.\n\n**Step 4.** Let E be the number produced by multiplying A by D, that is, E = A * D [D7.15].\n\n**Step 5.** Since A : B = C : D, by Proposition 7.19, the number produced from A and D equals the number produced from B and C. That is, A * D = B * C, and therefore E = B * C as well.\n\n**Step 6.** Since E = A * D, the number A measures E, with D being the number of times [D7.15, D7.5]. Since E = B * C, the number B measures E, with C being the number of times. Thus E is a common multiple of A and B.\n\n**Step 7.** Now we prove E is the least such number. Suppose for contradiction that some number G is measured by both A and B, and G < E.\n\n**Step 8.** Since A measures G, let A measure G according to H, so that G = A * H [D7.15]. Since B measures G, let B measure G according to K, so that G = B * K [D7.15].\n\n**Step 9.** From A * H = G = B * K, we have A * H = B * K. By Proposition 7.19, since the product of A and H equals the product of B and K, the four numbers A, B, K, H are proportional: A : B = K : H.\n\n**Step 10.** But A : B = C : D (Step 3). Therefore K : H = C : D [CN1].\n\n**Step 11.** Since C, D are the least numbers in the ratio C : D (by 7.33 and 7.22, C and D are prime to one another; by 7.21, numbers prime to one another are the least of those having the same ratio), by Proposition 7.20, C measures K and D measures H, the greater the greater and the less the less (or equals the equals).\n\n**Step 12.** Since D measures H, there exists a number M such that H = D * M [D7.3, D7.5]. Since M is a number (a multitude of units), M is at least 1, that is, M contains at least one unit [D7.1, D7.2].\n\n**Step 13.** Then G = A * H = A * (D * M) = (A * D) * M = E * M [by 7.16, the order of multiplication does not affect the product]. Since M is at least 1 as a number, G = E * M >= E.\n\n**Step 14.** But this contradicts our assumption that G < E. Therefore no number less than E can be measured by both A and B.\n\n**Step 15.** Hence E = A * D is the least number which is measured by both A and B. This is what was required to find.\n\n**USED:** 7.16, 7.19, 7.20, 7.21, 7.22, 7.33, CN1, D7.1, D7.15, D7.2, D7.3, D7.5\n**Human refs (from References field):** 7.16, 7.17, 7.19, 7.20, 7.21, 7.33, D7.15\n**Jaccard:** 0.462 — AI adds ['7.22', 'CN1', 'D7.1', 'D7.2', 'D7.3', 'D7.5']; Human adds ['7.17']",
+  "ai_used": [
+    "7.16",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.22",
+    "7.33",
+    "CN1",
+    "D7.1",
+    "D7.15",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.16",
+    "7.17",
+    "7.19",
+    "7.20",
+    "7.21",
+    "7.33",
+    "D7.15"
+  ],
+  "ai_only": [
+    "7.22",
+    "CN1",
+    "D7.1",
+    "D7.2",
+    "D7.3",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.17"
+  ],
+  "jaccard": 0.462,
+  "proof_summary": "**Step 1.** Let A, B be the two given numbers. We seek the least number which both A and B measure (i.e., which is measured by both A and B).  **Step 2.** If A and B are equal, then A itself is measur"
+}

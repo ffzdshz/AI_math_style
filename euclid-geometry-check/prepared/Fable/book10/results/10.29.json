@@ -1,0 +1,31 @@
+{
+  "proposition": "10.29",
+  "run": "Fable",
+  "book": 10,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 4",
+      "claim": "BF is drawn at right angles to AB from point B, creating angle ABF = 90 degrees",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AF is joined, forming right triangle ABF with vertices A, B, F",
+      "type": "triangle construction"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AF is the hypotenuse of right triangle ABF, so AF^2 = AB^2 + BF^2 by Pythagorean theorem",
+      "type": "angle/length relationship"
+    },
+    {
+      "step": "Step 10",
+      "claim": "AF > AB since AF^2 = AB^2 + BF^2 > AB^2, so AF is the greater of the two lines",
+      "type": "length ordering"
+    }
+  ],
+  "configuration_map": "The geometric configuration is a single right triangle ABF. AB is a given rational straight line serving as one leg. BF is perpendicular to AB at B (constructed via 1.11), serving as the other leg, with length determined by the ratio CE:DE = AB^2:BF^2. AF is the hypotenuse, formed by joining A and F. The right angle is at vertex B. Since AF is the hypotenuse, AF > AB > 0 and AF > BF > 0. The number-theoretic component uses points C, E, D on a number line (E between C and D) representing numbers CD (square), DE (square), and CE = CD - DE (not square). This is purely arithmetic and carries no geometric spatial content. All ratio manipulations (componendo, convertendo) operate on these numerical ratios and the squares of the triangle's sides — no additional geometric constructions or spatial claims are involved.",
+  "pass_reason": "The proof's geometric content is limited to a single right triangle ABF with the right angle at B. The perpendicularity claim (Step 4) and the Pythagorean theorem application (Step 5) are mutually consistent and standard. All remaining reasoning is algebraic ratio manipulation (componendo, convertendo) and number-theoretic arguments about commensurability. No angle decompositions, no inside/outside claims, no betweenness claims, and no conflicting spatial configurations exist. The different path from Heath (erecting a perpendicular rather than using a semicircle) introduces no spatial inconsistency — it simply produces AF as the greater line rather than AB."
+}

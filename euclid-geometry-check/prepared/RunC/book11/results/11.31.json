@@ -1,0 +1,94 @@
+{
+  "proposition": "11.31",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "FAIL",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "EFGH and KLMN are non-degenerate parallelograms serving as bases of parallelepipeds AB and CD",
+      "type": "figure definition"
+    },
+    {
+      "step": "Step 1",
+      "claim": "EFGH equals KLMN (equal area) and both solids have the same height",
+      "type": "metric claim"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E, F, K, L are collinear: sides EF and KL placed on the same straight line",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E, H, K, N are collinear: sides EH and KN placed on the same straight line",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Both bases lie in the same plane",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Standing edges of CD are KT, LU, MV, NW (T is in the upper plane above K)",
+      "type": "point position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB' constructed on base EFGH with standing edges equal and parallel to KT, LU, MV, NW",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB and AB' on same base EFGH with same height, so AB = AB' by 11.29/11.30",
+      "type": "solid equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "EKNT is a completed parallelogram in the base plane",
+      "type": "figure definition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "FKLG is a parallelogram region connecting the two bases",
+      "type": "figure definition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "AB' + solid on FKLG = solid on larger base EKNT",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 7",
+      "claim": "CD + solid on FKLG = solid on larger base EKNT",
+      "type": "solid decomposition"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Bases can always be repositioned so both pairs of adjacent sides are simultaneously collinear",
+      "type": "construction claim"
+    }
+  ],
+  "configuration_map": "Points E, F, G, H form non-degenerate parallelogram EFGH (base of solid AB). Points K, L, M, N form non-degenerate parallelogram KLMN (base of solid CD). Step 3 places these in the same plane with EF-KL on line l1 and EH-KN on line l2. Since EFGH is non-degenerate, EF and EH point in linearly independent directions, so l1 and l2 are distinct lines. Point E is on both l1 and l2; point K is claimed to be on both l1 and l2. Two distinct lines in a plane share at most one intersection point, so K = E. This forces the two bases to share a vertex and makes the combined parallelogram EKNT degenerate (two vertices coincide). Additionally, T was defined in Step 3 as a vertex in the upper plane (top of standing edge KT) but is used in Step 6 as a vertex of a base-plane parallelogram EKNT, creating a naming collision. The connecting region FKLG also fails to be a parallelogram: with K = E, FKLG becomes FELG, and side FE (along l1) is not parallel to LG in general.",
+  "contradictory_steps": [
+    "Step 3 (first collinearity claim)",
+    "Step 3 (second collinearity claim)",
+    "Step 6",
+    "Step 7"
+  ],
+  "spatial_claim_1": {
+    "step": "Step 3",
+    "claim": "E, F, K, L are collinear (EF and KL on the same straight line), with E and K as distinct points (vertices of different parallelogram bases)",
+    "required_by": "Steps 6-7: construction of combined parallelogram EKNT and connecting region FKLG"
+  },
+  "spatial_claim_2": {
+    "step": "Step 3",
+    "claim": "E, H, K, N are collinear (EH and KN on the same straight line), with EFGH a non-degenerate parallelogram (so EF and EH are not parallel, meaning the two lines l1 and l2 are distinct)",
+    "required_by": "Steps 6-7: construction of combined parallelogram EKNT spanning both bases"
+  },
+  "contradiction": "Since EFGH is a non-degenerate parallelogram, its adjacent sides EF and EH are not parallel, so line l1 (through E,F,K,L) is distinct from line l2 (through E,H,K,N). Two distinct lines in a plane intersect in at most one point. E lies on both lines, making E the unique intersection. K is also claimed to lie on both lines, forcing K = E. With K = E: (1) the combined parallelogram EKNT degenerates (two vertices coincide); (2) the connecting region FKLG = FELG is not a parallelogram since FE is along l1 while FG is parallel to EH along l2; (3) the entire complement technique of Steps 6-8 breaks down. The double-collinearity configuration is geometrically impossible for distinct non-degenerate parallelogram bases.",
+  "fixable": false,
+  "fix_note": "The AI proof's additive/subtractive complement technique inherently requires both pairs of adjacent sides to be collinear, which is impossible. Heath's proof avoids this by placing only one pair of sides collinear, constructing the second direction via angle construction (I.23), and using proportion theory (V.7, V.9, V.11 combined with XI.25) instead of the complement technique. The proof would need to be fundamentally restructured to follow Heath's proportion-based approach rather than the impossible complement-based approach."
+}

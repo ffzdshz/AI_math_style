@@ -1,0 +1,13 @@
+{
+  "proposition": "12.6",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (Granularity difference). Both proofs share the same backbone: decompose polygonal bases into triangles via diagonals, apply XII.5 to compare triangular pyramids of equal height, then recombine the ratios to obtain the final proportion. The key difference is the recombination mechanism: Heath uses V.18 (componendo) sequentially to build up the polygon ratio one triangle at a time, while the AI uses V.24 (ratio addition with a common second term) to aggregate all triangular sub-pyramid ratios simultaneously. The proof-tree containment test confirms this is a depth difference rather than a path difference: V.18 appears inside Heath's own proof of V.24, so the AI is citing a higher-level result (5.24) that internally relies on the step Heath applies directly (5.18). The remaining ai_only items (P1 for drawing diagonals, D5.5 for ratio inversion) are construction and definitional over-citations consistent with granularity difference.",
+  "jaccard": 0.333,
+  "ai_citations": "12.5|5.22|5.24|D5.5|P1",
+  "heath_citations": "12.5|5.18|5.22",
+  "ai_only": "5.24|D5.5|P1",
+  "heath_only": "5.18",
+  "audit_record": ""
+}

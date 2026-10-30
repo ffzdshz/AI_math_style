@@ -1,0 +1,36 @@
+{
+  "proposition": "3.36",
+  "book": 3,
+  "statement": "If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.",
+  "heath_proof": "For let a point D be taken outside the circle ABC, and from D let the two straight lines DCA, DB fall on the circle ABC; let DCA cut the circle ABC and let BD touch it; I say that the rectangle contained by AD, DC is equal to the square on DB. Then DCA is either through the centre or not through the centre. First let it be through the centre, and let F be the centre of the circle ABC; let FB be joined; therefore the angle FBD is right. [III. 18]  And, since AC has been bisected at F, and CD is added to it, the rectangle AD, DC together with the square on FC is equal to the square on FD. [II. 6] But FC is equal to FB; therefore the rectangle AD, DC together with the square on FB is equal to the square on FD. And the squares on FB, BD are equal to the square on FD; [I. 47] therefore the rectangle AD, DC together with the square on FB is equal to the squares on FB, BD. Let the square on FB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on the tangent DB. Again, let DCA not be through the centre of the circle ABC; let the centre E be taken, and from E let EF be drawn perpendicular to AC; let EB, EC, ED be joined. Then the angle EBD is right. [III. 18] And, since a straight line EF through the centre cuts a straight line AC not through the centre at right angles, it also bisects it; [III. 3]therefore AF is equal to FC. Now, since the straight line AC has been bisected at the point F, and CD is added to it, the rectangle contained by AD, DC together with the square on FC is equal to the square on FD. [II. 6] Let the square on FE be added to each; therefore the rectangle AD, DC together with the squares on CF, FE is equal to the squares on FD, FE. But the square on EC is equal to the squares on CF, FE, for the angle EFC is right; [I. 47] and the square on ED is equal to the squares on DF, FE; therefore the rectangle AD, DC together with the square on EC is equal to the square on ED. And EC is equal to EB; therefore the rectangle AD, DC together with the square on EB is equal to the square on ED. But the squares on EB, BD are equal to the square on ED, for the angle EBD is right; [I. 47] therefore the rectangle AD, DC together with the square on EB is equal to the squares on EB, BD. Let the square on EB be subtracted from each; therefore the rectangle AD, DC which remains is equal to the square on DB.",
+  "ai_proof_text": "3.36\n**Statement:** If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.\n\n**Step 1.** Let the circle have center E, let D be a point outside the circle, let DCA be a straight line cutting the circle at C and A (with C on the convex, nearer side and A on the far side), and let DB be a tangent to the circle at B. We must show that the rectangle contained by DA and DC equals the square on DB.\n\n**Step 2.** **Case 1: DCA passes through the center E.** Since DB touches the circle at B, and EB is joined from the center E to the point of contact B, angle EBD is a right angle [3.18].\n\n**Step 3.** Since the straight line AC is a diameter, E is its midpoint, so EA = EC [D1.17, D1.15]. The line CA is bisected at E, and D is a point on CA produced beyond C.\n\n**Step 4.** By Proposition 2.6, the rectangle contained by DA and DC together with the square on EC equals the square on DE. That is, rect(DA, DC) + sq(EC) = sq(DE) [2.6].\n\n**Step 5.** Since triangle DBE has a right angle at B [Step 2], by Proposition 1.47 the square on DE equals the square on DB together with the square on BE. That is, sq(DE) = sq(DB) + sq(BE) [1.47].\n\n**Step 6.** Since BE and EC are both radii of the circle, BE = EC [D1.15]. Therefore sq(BE) = sq(EC).\n\n**Step 7.** Substituting from Step 5 into Step 4: rect(DA, DC) + sq(EC) = sq(DB) + sq(BE). Since sq(BE) = sq(EC) [Step 6], we have rect(DA, DC) + sq(EC) = sq(DB) + sq(EC). Subtracting the square on EC from both sides, rect(DA, DC) = sq(DB) [CN3].\n\n**Step 8.** **Case 2: DCA does not pass through the center E.** Draw EF perpendicular from E to the chord AC [1.12]. Then EF bisects AC at F, so FC = FA [3.3]. Join DE, EB, and EC [P1].\n\n**Step 9.** Since the chord CA is bisected at F and D is a point on CA produced beyond C, by Proposition 2.6 the rectangle contained by DA and DC together with the square on FC equals the square on DF. That is, rect(DA, DC) + sq(FC) = sq(DF) [2.6].\n\n**Step 10.** In triangle EFC, the angle at F is a right angle (since EF is perpendicular to AC). By Proposition 1.47, sq(EC) = sq(EF) + sq(FC) [1.47].\n\n**Step 11.** Since EC and EB are both radii of the circle, EC = EB [D1.15], so sq(EC) = sq(EB). Therefore sq(EF) + sq(FC) = sq(EB).\n\n**Step 12.** Adding the square on EF to both sides of the equation in Step 9: rect(DA, DC) + sq(FC) + sq(EF) = sq(DF) + sq(EF) [CN2].\n\n**Step 13.** The left side equals rect(DA, DC) + sq(EB), since sq(FC) + sq(EF) = sq(EB) [Step 11]. The right side equals sq(DE), since in the right triangle DEF (right angle at F), sq(DE) = sq(DF) + sq(EF) [1.47]. Therefore rect(DA, DC) + sq(EB) = sq(DE).\n\n**Step 14.** Since DB touches the circle at B, and EB is joined from center E to the point of contact, angle EBD is a right angle [3.18]. Therefore in triangle DBE, sq(DE) = sq(DB) + sq(EB) [1.47].\n\n**Step 15.** From Steps 13 and 14: rect(DA, DC) + sq(EB) = sq(DB) + sq(EB). Subtracting the square on EB from both sides, rect(DA, DC) = sq(DB) [CN3].\n\n**Step 16.** In both cases, the rectangle contained by DA and DC equals the square on DB. Therefore, if a point be taken outside a circle and from it there fall on the circle two straight lines, one cutting the circle and the other touching it, the rectangle contained by the whole cutting line and the part intercepted outside between the point and the convex circumference equals the square on the tangent. Q.E.F.\n\n**USED:** 1.12, 1.47, 2.6, 3.18, 3.3, CN2, CN3, D1.15, D1.17, P1\n**Human refs (from References field):** 1.47, 2.6, 3.18, 3.3\n**Jaccard:** 0.400 — AI adds ['1.12', 'CN2', 'CN3', 'D1.15', 'D1.17', 'P1']",
+  "ai_used": [
+    "1.12",
+    "1.47",
+    "2.6",
+    "3.18",
+    "3.3",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.47",
+    "2.6",
+    "3.18",
+    "3.3"
+  ],
+  "ai_only": [
+    "1.12",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let the circle have center E, let D be a point outside the circle, let DCA be a straight line cutting the circle at C and A (with C on the convex, nearer side and A on the far side), and l"
+}

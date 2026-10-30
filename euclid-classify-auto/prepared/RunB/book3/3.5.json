@@ -1,0 +1,28 @@
+{
+  "proposition": "3.5",
+  "book": 3,
+  "statement": "If two circles cut one another, they will not have the same centre.",
+  "heath_proof": "For let the circles ABC, CDG cut one another at the points B, C; I say that they will not have the same centre. For, if possible, let it be E; let EC be joined, and let EFG be drawn through at random. Then, since the point E is the centre of the circle ABC, EC is equal to EF. [I. Def. 15] Again, since the point E is the centre of the circle CDG, EC is equal to EG. But EC was proved equal to EF also; therefore EF is also equal to EG, the less to the greater: which is impossible. Therefore the point E is not the centre of the circles ABC, CDG.",
+  "ai_proof_text": "3.5\n**Statement:** If two circles cut one another, they will not have the same centre.\n\n**Step 1.** Let circles ABC and CDG cut one another at the points C and B. Assume, for the sake of contradiction, that they have the same centre. Call this centre E.\n\n**Step 2.** Join EC from E to the intersection point C. [P1]\n\n**Step 3.** Draw any straight line EFG through E, meeting circle ABC at F and circle CDG at G, chosen so that F and G are distinct points on the same ray from E. Such a direction exists because the two circles are not identical (they cut one another, so each passes through points interior to the other and points exterior to the other), and therefore there is a radius direction along which the two circles meet the ray at different distances from E. Let F lie between E and G. [P1, P2]\n\n**Step 4.** Because E is the centre of circle ABC, every straight line from E to the circumference of ABC equals every other. In particular, EC = EF. [D1.15, D1.16]\n\n**Step 5.** Because E is the centre of circle CDG, every straight line from E to the circumference of CDG equals every other. In particular, EC = EG. [D1.15, D1.16]\n\n**Step 6.** From Steps 4 and 5, EF = EG. [CN1]\n\n**Step 7.** But F lies between E and G, so EF is a proper part of EG. Therefore EG is greater than EF, and EF is not equal to EG. [CN5]\n\n**Step 8.** Step 6 contradicts Step 7. Therefore the assumption that the two circles have the same centre is false. Hence, if two circles cut one another, they do not have the same centre. Q.E.D.\n\n**USED:** CN1, CN5, D1.15, D1.16, P1, P2\n**Human refs (from References field):** D1.15\n**Jaccard:** 0.167 — AI adds ['CN1', 'CN5', 'D1.16', 'P1', 'P2']",
+  "ai_used": [
+    "CN1",
+    "CN5",
+    "D1.15",
+    "D1.16",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "D1.15"
+  ],
+  "ai_only": [
+    "CN1",
+    "CN5",
+    "D1.16",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let circles ABC and CDG cut one another at the points C and B. Assume, for the sake of contradiction, that they have the same centre. Call this centre E.  **Step 2.** Join EC from E to the"
+}

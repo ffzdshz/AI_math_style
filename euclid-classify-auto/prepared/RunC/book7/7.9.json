@@ -1,0 +1,28 @@
+{
+  "proposition": "7.9",
+  "book": 7,
+  "statement": "If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.",
+  "heath_proof": "For let the number A be a part of the number BC, and another, D, the same part of another, EF, that A is of BC; I say that, alternately also, whatever part or parts A is of D, the same part or parts is BC of EF also. For since, whatever part A is of BC, the same part also is D of EF, therefore, as many numbers as there are in BC equal to A, so many also are there in EF equal to D. Let BC be divided into the numbers equal to A, namely BG, GC, and EF into those equal to D, namely EH, HF; thus the multitude of BG, GC will be equal to the multitude of EH, HF. Now, since the numbers BG, GC are equal to one another, and the numbers EH, HF are also equal to one another, while the multitude of BG, GC is equal to the multitude of EH, HF, therefore, whatever part or parts BG is of EH, the same part or the same parts is GC of HF also; so that, in addition, whatever part or parts BG is of EH, the same part also, or the same parts, is the sum BC of the sum EF. [VII. 5, 6] But BG is equal to A, and EH to D; therefore, whatever part or parts A is of D, the same part or the same parts is BC of EF also.",
+  "ai_proof_text": "7.9\n**Statement:** If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.\n\n**Step 1.** Let A be the same part of B that C is of D. We must show that whatever part or parts A is of C, the same part or the same parts B is of D.\n\n**Step 2.** Since A is the same part of B that C is of D, by D7.3 and D7.20, A measures B and C measures D, and there exists some number n such that B is composed of n copies of A, and D is composed of n copies of C. That is, B = A + A + ... + A (n times) and D = C + C + ... + C (n times).\n\n**Step 3.** By D7.3 and D7.4, A is either a part of C or parts of C.\n\n**Step 4.** Case 1: Suppose A is a part of C. Then A is the (1/m)-th part of C for some number m, meaning that A measures C and C is composed of m copies of A. Now consider the n summands that compose B and D respectively. Each summand A of B is the same part (namely the 1/m-th part) of the corresponding summand C of D. By repeated application of 7.5 (which states that if a number is a part of a number and another is the same part of another, the sum is the same part of the sum), combining the first two copies: A + A is the same part of C + C that A is of C. Adding the third copy by 7.5 again: A + A + A is the same part of C + C + C that A is of C. Continuing in this manner for all n copies, we conclude that nA is the same part of nC that A is of C, that is, B is the same part of D that A is of C.\n\n**Step 5.** Case 2: Suppose A is parts of C, that is, A does not measure C but A bears the relation of certain parts to C. Again, each summand A of B bears the same relation (the same parts) to the corresponding summand C of D. By repeated application of 7.6 (which states that if a number is the same parts of a number and another is the same parts of another, the sum is the same parts of the sum), combining all n copies as in Step 4, we conclude that nA is the same parts of nC that A is of C, that is, B is the same parts of D that A is of C.\n\n**Step 6.** Therefore, in both cases, whatever part or parts A is of C, the same part or the same parts B is of D, which is what was to be proved.\n\n**USED:** 7.5, 7.6, D7.20, D7.3, D7.4, D7.5\n**Human refs (from References field):** 7.5, 7.6\n**Jaccard:** 0.333 — AI adds ['D7.20', 'D7.3', 'D7.4', 'D7.5']",
+  "ai_used": [
+    "7.5",
+    "7.6",
+    "D7.20",
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.5",
+    "7.6"
+  ],
+  "ai_only": [
+    "D7.20",
+    "D7.3",
+    "D7.4",
+    "D7.5"
+  ],
+  "heath_only": [],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let A be the same part of B that C is of D. We must show that whatever part or parts A is of C, the same part or the same parts B is of D.  **Step 2.** Since A is the same part of B that C"
+}

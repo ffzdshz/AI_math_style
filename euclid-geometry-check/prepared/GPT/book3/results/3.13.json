@@ -1,0 +1,86 @@
+{
+  "proposition": "3.13",
+  "run": "GPT",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "A and B lie on both circumferences as distinct points of contact",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "O and Q are distinct centres of the two circles (by 3.6)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For internal contact, 3.11 places A on the produced line OQ",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For internal contact, 3.11 places B on the produced line OQ",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For external contact, 3.12 places A on segment OQ",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "For external contact, 3.12 places B on segment OQ",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A, B, O, Q are all collinear",
+      "type": "collinearity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OA = OB (radii of circle centred at O)",
+      "type": "equal_radii"
+    },
+    {
+      "step": "Step 3",
+      "claim": "QA = QB (radii of circle centred at Q)",
+      "type": "equal_radii"
+    },
+    {
+      "step": "Step 3",
+      "claim": "O lies strictly between A and B (from OA = OB, collinearity, and O not on circumference)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Q lies strictly between A and B (from QA = QB, collinearity, and Q not on circumference)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Linear ordering A, O, Q, B along the line (after possible renaming)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AO is a proper part of AQ, so AO < AQ (CN5)",
+      "type": "segment_inequality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "QB is a proper part of OB, so QB < OB (CN5)",
+      "type": "segment_inequality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AQ = QB (radii of Q) and OB = AO (radii of O), yielding AO < AO",
+      "type": "numerical_contradiction"
+    }
+  ],
+  "configuration_map": "All four points A, B, O, Q are collinear (Step 2). O is the centre of one circle with A, B on its circumference, so OA = OB and O is interior to its circle (not on circumference). Q is the centre of the other circle with A, B on its circumference, so QA = QB and Q is interior. From equal radii and collinearity, O must lie between A and B, and Q must lie between A and B (Step 3). With O and Q distinct and both between A and B, they can be ordered as A, O, Q, B (Step 4). This ordering produces the chain AO < AQ = QB < OB = AO, a contradiction.",
+  "pass_reason": "The proof is a valid reductio ad absurdum. Each deduction step follows correctly: collinearity from 3.11/3.12, betweenness from equal radii on a line (via CN5), and the numerical contradiction from the linear ordering. The proof handles both internal and external tangency uniformly. No spatial configuration error exists; the contradiction is the intended conclusion of the proof by contradiction."
+}

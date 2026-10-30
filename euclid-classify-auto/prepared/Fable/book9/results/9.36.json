@@ -1,0 +1,13 @@
+{
+  "proposition": "9.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone of key intermediate conclusions: establishing E, HK, L, M, FG in continuous double proportion, applying 9.35 to show OG equals the sum E+HK+L+M, demonstrating FG equals the sum of all its parts, showing each part measures FG, and proving by contradiction that no other number measures FG. The only difference is the sub-argument mechanism for the uniqueness step: the AI uses 7.30 (a prime dividing a product divides one factor) to split into two cases, while Heath re-derives the internals of 7.30 inline using 7.29 (prime not measuring a number is coprime to it), 7.21 (coprime numbers are least in ratio), and 7.20 (least numbers measure proportionals the same number of times). The proof-tree containment test confirms that all three heath_only propositions (7.29, 7.21, 7.20) appear inside Heath's own proof of 7.30, so the AI is citing 7.30 as a packaged unit while Heath unpacks it. The remaining ai_only items are definitions (D7.2, D7.3, D7.11, D7.15), common notions (CN1, CN2, CN5), and basic results (7.13, 7.16, 7.17) that represent explicit over-citation of steps Heath leaves implicit. This is a citation-depth difference, not a path difference.",
+  "jaccard": 0.3,
+  "ai_citations": "7.13|7.14|7.16|7.17|7.19|7.30|9.13|9.35|CN1|CN2|CN5|D7.11|D7.15|D7.2|D7.20|D7.22|D7.3",
+  "heath_citations": "7.14|7.19|7.20|7.21|7.29|9.13|9.35|D7.20|D7.22",
+  "ai_only": "7.13|7.16|7.17|7.30|CN1|CN2|CN5|D7.11|D7.15|D7.2|D7.3",
+  "heath_only": "7.20|7.21|7.29",
+  "audit_record": ""
+}

@@ -1,0 +1,41 @@
+{
+  "proposition": "11.26",
+  "book": 11,
+  "statement": "On a given straight line, and at a given point on it, to construct a solid angle equal to a given solid angle.",
+  "heath_proof": "Let AB be the given straight line, A the given point on it, and the angle at D, contained by the angles EDC, EDF, FDC, the given solid angle; thus it is required to construct on the straight line AB, and at the point A on it, a solid angle equal to the solid angle at D. For let a point F be taken at random on DF, let FG be drawn from F perpendicular to the plane through ED, DC, and let it meet the plane at G, [XI. 11] let DG be joined, let there be constructed on the straight line AB and at the point A on it the angle BAL equal to the angle EDC, and the angle BAK equal to the angle EDG, [I. 23] let AK be made equal to DG, let KH be set up from the point K at right angles to the plane through BA, AL, [XI. 12] let KH be made equal to GF, and let HA be joined; I say that the solid angle at A, contained by the angles BAL, BAH, HAL is equal to the solid angle at D contained by the angles EDC, EDF, FDC. For let AB, DE be cut off equal to one another, and let HB, KB, FE, GE be joined. Then, since FG is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference; [XI. Def. 3] therefore each of the angles FGD, FGE is right. For the same reason each of the angles HKA, HKB is also right. And, since the two sides KA, AB are equal to the two sides GD, DE respectively, and they contain equal angles, therefore the base KB is equal to the base GE. [I. 4] But KH is also equal to GF, and they contain right angles; therefore HB is also equal to FE. [I. 4] Again, since the two sides AK, KH are equal to the two sides DG, GF, and they contain right angles, therefore the base AH is equal to the base FD. [I. 4] But AB is also equal to DE; therefore the two sides HA, AB are equal to the two sides DF, DE. And the base HB is equal to the base FE; therefore the angle BAH is equal to the angle EDF. [I. 8] For the same reason the angle HAL is also equal to the angle FDC. And the angle BAL is also equal to the angle EDC. Therefore on the straight line AB, and at the point A on it, a solid angle has been constructed equal to the given solid angle at D.",
+  "ai_proof_text": "11.26\n**Statement:** On a given straight line, and at a given point on it, to construct a solid angle equal to a given solid angle.\n\n**Step 1.** Let AB be the given straight line, A the given point on it, and let the given solid angle be at D, contained by the plane angles EDC, EDF, and FDC (the argument generalizes to solid angles contained by more plane angles by decomposition into trihedral components).\n\n**Step 2.** On the straight line DE, take any point E; on DF take any point F; and on DC take any point C (these points are already named as the endpoints of the edges containing the solid angle). Join EF, FC, and EC [P1].\n\n**Step 3.** Since the solid angle at D is contained by the three plane angles EDC, EDF, and FDC, by 11.20, any two of these plane angles taken together are greater than the remaining one. By 11.21, the three plane angles together are less than four right angles.\n\n**Step 4.** At the point A on the straight line AB, in a plane through AB, construct the angle BAH equal to the angle EDC [1.23]. Make AH equal to DC and AB' (a point on ray AB beyond A, call it K) such that AK equals DE, by cutting off equal lengths [1.3].\n\n**Step 5.** More precisely: on line AB, set AK equal to DE [1.3]. At point A, construct angle KAH equal to angle EDC [1.23], and make AH equal to DC [1.3]. Join KH [P1].\n\n**Step 6.** Now construct angle KAL equal to angle EDF [1.23], in a plane different from the plane of angle KAH. Make AL equal to DF [1.3].\n\n**Step 7.** We must verify that a triangle can be formed from KH, the line joining H to L, and KL, corresponding to the triangle formed by EC, CF, and EF respectively. In triangle EDC, since AK = DE, AH = DC, and angle KAH = angle EDC, by 1.4 (side-angle-side), triangle KAH is congruent to triangle EDC. Therefore KH = EC.\n\n**Step 8.** Similarly, in triangle EDF, since AK = DE, AL = DF, and angle KAL = angle EDF, by 1.4, triangle KAL is congruent to triangle EDF. Therefore KL = EF.\n\n**Step 9.** We need to determine HL such that triangle KHL corresponds to triangle ECF. In triangle DCF, since AH = DC and AL = DF, and we require angle HAL = angle CDF, construct angle HAL equal to angle CDF [1.23]. Then by 1.4, triangle HAL is congruent to triangle CDF, so HL = CF.\n\n**Step 10.** Now we have three plane angles KAH, KAL, and HAL at vertex A, equal respectively to angles EDC, EDF, and FDC. By Step 3, any two of these angles taken together are greater than the remaining one (since they equal the original angles which satisfy this by 11.20), and their sum is less than four right angles (since they equal the original angles which satisfy this by 11.21).\n\n**Step 11.** The straight lines AK, AH, AL are equal respectively to DE, DC, DF. The triangles KAH, KAL, HAL are congruent respectively to triangles EDC, EDF, DCF. Therefore KH = EC, KL = EF, and HL = CF, so triangle KHL is congruent to triangle ECF [1.8, since all three pairs of sides are equal].\n\n**Step 12.** By 11.22, since any two of the three plane angles KAH, KAL, HAL taken together are greater than the remaining one, and they are contained by equal straight lines (AK = AH in the case where DE = DC, but more generally the construction uses the equal straight lines AK, AH, AL matching DE, DC, DF), and the joining lines KH, KL, HL form a triangle, the conditions for constructing a solid angle are met.\n\n**Step 13.** By 11.23, from the three plane angles KAH, KAL, HAL (any two of which are greater than the third, and whose sum is less than four right angles), construct a solid angle at A. Specifically, 11.23 provides a solid angle at A contained by these three plane angles.\n\n**Step 14.** The solid angle at A is contained by plane angles KAH, KAL, and HAL, which are respectively equal to the plane angles EDC, EDF, and FDC that contain the given solid angle at D.\n\n**Step 15.** Since the plane angles containing the solid angle at A are respectively equal to the plane angles containing the solid angle at D, and the sides about those equal angles are respectively equal (AK = DE, AH = DC, AL = DF), and the bases are respectively equal (KH = EC, KL = EF, HL = CF), the solid angle at A equals the solid angle at D.\n\n**Step 16.** Moreover, this solid angle has been constructed at the given point A on the given straight line AB, since the edge AK lies along AB.\n\n**Step 17.** Therefore, on the given straight line AB, at the given point A on it, a solid angle has been constructed equal to the given solid angle at D. Q.E.F.\n\n**USED:** 1.23, 1.3, 1.4, 1.8, 11.20, 11.21, 11.22, 11.23, P1\n**Human refs (from References field):** 1.23, 1.4, 1.8, 11.11, 11.12, D11.3\n**Jaccard:** 0.250 — AI adds ['1.3', '11.20', '11.21', '11.22', '11.23', 'P1']; Human adds ['11.11', '11.12', 'D11.3']",
+  "ai_used": [
+    "1.23",
+    "1.3",
+    "1.4",
+    "1.8",
+    "11.20",
+    "11.21",
+    "11.22",
+    "11.23",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.23",
+    "1.4",
+    "1.8",
+    "11.11",
+    "11.12",
+    "D11.3"
+  ],
+  "ai_only": [
+    "1.3",
+    "11.20",
+    "11.21",
+    "11.22",
+    "11.23",
+    "P1"
+  ],
+  "heath_only": [
+    "11.11",
+    "11.12",
+    "D11.3"
+  ],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, A the given point on it, and let the given solid angle be at D, contained by the plane angles EDC, EDF, and FDC (the argument generalizes to solid angles"
+}

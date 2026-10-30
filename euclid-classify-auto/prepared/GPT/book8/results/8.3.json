@@ -1,0 +1,13 @@
+{
+  "proposition": "8.3",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same logical backbone: (1) take the least pair in the given ratio and show they are prime to each other (VII.33, VII.22); (2) construct a comparison sequence in continued proportion whose extremes are powers of that pair, hence prime to each other (VII.27); (3) show the comparison sequence is least, so it equals the original sequence, transferring the primality of the extremes. The difference is citation depth: Heath cites VIII.2 as a single unit to construct the comparison sequence and establish its leastness, while the AI re-derives VIII.2's construction explicitly (citing the lower-level 7.16, 7.17, D7.15 for the ratio-preserving multiplication steps) and directly invokes VIII.1 to establish leastness. Since VIII.1 appears inside Heath's proof of VIII.2, the proof-tree containment test confirms this is a citation-depth difference rather than a path divergence. The additional AI citations (D7.12, D7.15, 7.16, 7.17) are definitions and basic arithmetic facts that Heath uses implicitly through the VIII.2 package. This is Case A of Q2: same backbone, different granularity.",
+  "jaccard": 0.333,
+  "ai_citations": "7.16|7.17|7.22|7.27|7.33|8.1|D7.12|D7.15",
+  "heath_citations": "7.22|7.27|7.33|8.2",
+  "ai_only": "7.16|7.17|8.1|D7.12|D7.15",
+  "heath_only": "8.2",
+  "audit_record": ""
+}

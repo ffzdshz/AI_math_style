@@ -1,0 +1,49 @@
+{
+  "proposition": "4.15",
+  "book": 4,
+  "statement": "In a given circle to inscribe an equilateral and equiangular hexagon.",
+  "heath_proof": "Let ABCDEF be the given circle; thus it is required to inscribe an equilateral and equiangular hexagon in the circle ABCDEF. Let the diameter AD of the circle ABCDEF be drawn; let the centre G of the circle be taken, and with centre D and distance DG let the circle EGCH be described; let EG, CG be joined and carried through to the points B, F, and let AB, BC, CD, DE, EF, FA be joined. I say that the hexagon ABCDEF is equilateral and equiangular. For, since the point G is the centre of the circle ABCDEF, GE is equal to GD. Again, since the point D is the centre of the circle GCH, DE is equal to DG. But GE was proved equal to GD; therefore GE is also equal to ED; therefore the triangle EGD is equilateral; and therefore its three angles EGD, GDE, DEG are equal to one another, inasmuch as, in isosceles triangles, the angles at the base are equal to one another. [I. 5] And the three angles of the triangle are equal to two right angles; [I. 32] therefore the angle EGD is one-third of two right angles. Similarly, the angle DGC can also be proved to be onethird of two right angles. And, since the straight line CG standing on EB makes the adjacent angles EGC, CGB equal to two right angles, therefore the remaining angle CGB is also one-third of two right angles. Therefore the angles EGD, DGC, CGB are equal to one another; so that the angles vertical to them, the angles BGA, AGF, FGE are equal. [I. 15] Therefore the six angles EGD, DGC, CGB, BGA, AGF, FGE are equal to one another. But equal angles stand on equal circumferences; [III. 26] therefore the six circumferences AB, BC, CD, DE, EF, FA are equal to one another. And equal circumferences are subtended by equal straight lines; [III. 29] therefore the six straight lines are equal to one another; therefore the hexagon ABCDEF is equilateral. I say next that it is also equiangular. For, since the circumference FA is equal to the circumference ED, let the circumference ABCD be added to each; therefore the whole FABCD is equal to the whole EDCBA; and the angle FED stands on the circumference FABCD, and the angle AFE on the circumference EDCBA; therefore the angle AFE is equal to the angle DEF. [III. 27] Similarly it can be proved that the remaining angles of the hexagon ABCDEF are also severally equal to each of the angles AFE, FED; therefore the hexagon ABCDEF is equiangular. But it was also proved equilateral; and it has been inscribed in the circle ABCDEF. Therefore in the given circle an equilateral and equiangular hexagon has been inscribed.",
+  "ai_proof_text": "4.15\n**Statement:** In a given circle to inscribe an equilateral and equiangular hexagon.\n\n**Step 1.** Let ABCDEF be the given circle with center G. Draw a diameter AD of the circle through G. [P1, D1.17]\n\n**Step 2.** With center D and distance DG, describe a circle. [P3] Let it meet the given circle at points E and C. With center A and distance AG, describe a circle. [P3] Let it meet the given circle at points F and B. Join AB, BC, CD, DE, EF, FA. [P1]\n\n**Step 3.** Since G is the center of circle ABCDEF, GE = GD. [D1.15] Since D is the center of the circle through E and C, DE = DG. Therefore GE = GD = DE. [CN1] Triangle EGD is therefore equilateral. [D1.20]\n\n**Step 4.** Since triangle EGD is equilateral, all three of its sides are equal, so by the base angles theorem applied to each pair of equal sides, all three angles are equal. [1.5] Since the three angles of triangle EGD sum to two right angles [1.32], each angle equals one-third of two right angles. In particular, angle EGD equals one-third of two right angles.\n\n**Step 5.** Similarly, since GD = GC (radii of circle ABCDEF) [D1.15] and DC = DG (radii of circle centered at D), we have GD = GC = DC [CN1], so triangle DGC is equilateral [D1.20], and angle DGC equals one-third of two right angles. [1.5, 1.32]\n\n**Step 6.** Similarly, since GA = GB (radii of circle ABCDEF) [D1.15] and AB = AG (radii of circle centered at A), we have GA = GB = AB [CN1], so triangle AGB is equilateral [D1.20], and angle AGB equals one-third of two right angles. [1.5, 1.32]\n\n**Step 7.** Similarly, since GA = GF (radii of circle ABCDEF) [D1.15] and AF = AG (radii of circle centered at A), we have GA = GF = AF [CN1], so triangle AGF is equilateral [D1.20], and angle AGF equals one-third of two right angles. [1.5, 1.32]\n\n**Step 8.** Since AD is a diameter and hence a straight line, the angles on one side of line AD at point G sum to two right angles. [1.13] That is, angle AGB + angle BGC + angle CGD equals two right angles. Since angle AGB equals one-third of two right angles (Step 6) and angle CGD equals one-third of two right angles (Step 5), subtracting these from two right angles [CN3] yields angle BGC equals one-third of two right angles.\n\n**Step 9.** Similarly, on the other side of line AD, angle AGF + angle FGE + angle EGD equals two right angles. [1.13] Since angle AGF equals one-third of two right angles (Step 7) and angle EGD equals one-third of two right angles (Step 4), subtracting these from two right angles [CN3] yields angle FGE equals one-third of two right angles.\n\n**Step 10.** Therefore all six central angles at G — namely angles EGD, DGC, CGB, BGA, AGF, and FGE — are each equal to one-third of two right angles, and hence are all equal to one another. [CN1]\n\n**Step 11.** Since these equal central angles stand at the center G of circle ABCDEF, by Proposition 3.26 they stand on equal arcs. That is, arc AB = arc BC = arc CD = arc DE = arc EF = arc FA. [3.26]\n\n**Step 12.** Since the six arcs are all equal, by Proposition 3.29, the straight lines subtending them are equal. Therefore AB = BC = CD = DE = EF = FA, and the hexagon ABCDEF is equilateral. [3.29]\n\n**Step 13.** Since the six arcs are all equal, the arc subtended by each inscribed angle of the hexagon consists of four of these equal arcs. For example, angle FAB stands on arc BCDEF (the arc from B to F not containing A), which is the sum of arcs BC, CD, DE, and EF — four equal arcs. [CN2] Similarly, each other vertex angle of the hexagon stands on an arc composed of four equal arcs. Therefore all six inscribed angles stand on equal arcs.\n\n**Step 14.** Since the six vertex angles of the hexagon are angles in the same circle standing on equal arcs, by Proposition 3.27 they are equal to one another. Therefore the hexagon ABCDEF is equiangular. [3.27]\n\n**Step 15.** Since each vertex of hexagon ABCDEF lies on the circumference of the given circle, the hexagon is inscribed in the circle. [D4.3]\n\n**Step 16.** Therefore, in the given circle, an equilateral and equiangular hexagon ABCDEF has been inscribed, which is what was required to do.\n\n**USED:** 1.13, 1.32, 1.5, 3.26, 3.27, 3.29, CN1, CN2, CN3, D1.15, D1.17, D1.20, D4.3, P1, P3\n**Human refs (from References field):** 1.15, 1.32, 1.5, 3.26, 3.27, 3.29\n**Jaccard:** 0.312 — AI adds ['1.13', 'CN1', 'CN2', 'CN3', 'D1.15', 'D1.17', 'D1.20', 'D4.3', 'P1', 'P3']; Human adds ['1.15']",
+  "ai_used": [
+    "1.13",
+    "1.32",
+    "1.5",
+    "3.26",
+    "3.27",
+    "3.29",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.20",
+    "D4.3",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.15",
+    "1.32",
+    "1.5",
+    "3.26",
+    "3.27",
+    "3.29"
+  ],
+  "ai_only": [
+    "1.13",
+    "CN1",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.20",
+    "D4.3",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "1.15"
+  ],
+  "jaccard": 0.312,
+  "proof_summary": "**Step 1.** Let ABCDEF be the given circle with center G. Draw a diameter AD of the circle through G. [P1, D1.17]  **Step 2.** With center D and distance DG, describe a circle. [P3] Let it meet the gi"
+}

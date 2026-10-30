@@ -1,0 +1,26 @@
+{
+  "proposition": "9.32",
+  "book": 9,
+  "statement": "Each of the numbers which are continually doubled beginning from a dyad is even-times even only.",
+  "heath_proof": "For let as many numbers as we please, B, C, D, have been continually doubled beginning from the dyad A; I say that B, C, D are eventimes even only. Now that each of the numbers B, C, D is even-times even is manifest; for it is doubled from a dyad. I say that it is also even-times even only. For let an unit be set out. Since then as many numbers as we please beginning from an unit are in continued proportion, and the number A after the unit is prime, therefore D, the greatest of the numbers A, B, C, D, will not be measured by any other number except A, B, C. [IX. 13] And each of the numbers A, B, C is even; therefore D is even-times even only. [VII. Def. 8] Similarly we can prove that each of the numbers B, C is even-times even only.",
+  "ai_proof_text": "9.32\n**Statement:** Each of the numbers which are continually doubled beginning from a dyad is even-times even only.\n\n**Step 1.** Let the numbers which are continually doubled beginning from the dyad be A, B, C, ..., so that A = 4, B = 8, C = 16, and so on. We are to prove that each of these is even-times even only.\n\n**Step 2.** Set out the sequence beginning from unity with common ratio 2: 1, 2, 4, 8, 16, ..., so that each term is double the preceding. This is a continued proportion from unity. The number after the unit is 2, which is prime [D7.11].\n\n**Step 3.** Consider any number in the sequence after the dyad, say 2^k where k >= 2. Since the sequence 1, 2, 4, ..., 2^k is a continued proportion beginning from unity, and the number after the unit (namely 2) is prime, by Proposition 9.13, the greatest number 2^k is not measured by any number except those which have a place among the proportional numbers, that is, except 1, 2, 4, ..., 2^k.\n\n**Step 4.** Now each of the numbers 2, 4, 8, ..., 2^k in the sequence is even, for each is divisible into two equal parts: 2^j = 2 * 2^(j-1) for each j >= 1 [D7.6]. Only unity among the divisors of 2^k is not even.\n\n**Step 5.** We show that 2^k is even-times even. Since k >= 2, we may write 2^k = 2 * 2^(k-1). Both 2 and 2^(k-1) are even numbers (since k-1 >= 1, we have 2^(k-1) >= 2, which is even) [D7.6]. Thus 2^k is measured by the even number 2 according to the even number 2^(k-1), so 2^k is even-times even [D7.8].\n\n**Step 6.** We show that 2^k is not even-times odd. Suppose for contradiction that 2^k is even-times odd. Then by definition [D7.9], there exist an even number p and an odd number q (with q > 1) such that 2^k = p * q, meaning q measures 2^k. But q is odd and greater than 1, so q is not among the proportional numbers 1, 2, 4, ..., 2^k (all of which except unity are even). This contradicts Proposition 9.13, which states that 2^k is measured only by numbers having a place in the sequence. Therefore 2^k is not even-times odd.\n\n**Step 7.** Since 2^k is even-times even [Step 5] and not even-times odd [Step 6], each of the numbers continually doubled beginning from a dyad is even-times even only. Q.E.D.\n\n**USED:** 9.13, D7.11, D7.6, D7.8, D7.9\n**Human refs (from References field):** 9.13, D7.8\n**Jaccard:** 0.400 — AI adds ['D7.11', 'D7.6', 'D7.9']",
+  "ai_used": [
+    "9.13",
+    "D7.11",
+    "D7.6",
+    "D7.8",
+    "D7.9"
+  ],
+  "heath_refs": [
+    "9.13",
+    "D7.8"
+  ],
+  "ai_only": [
+    "D7.11",
+    "D7.6",
+    "D7.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.4,
+  "proof_summary": "**Step 1.** Let the numbers which are continually doubled beginning from the dyad be A, B, C, ..., so that A = 4, B = 8, C = 16, and so on. We are to prove that each of these is even-times even only. "
+}

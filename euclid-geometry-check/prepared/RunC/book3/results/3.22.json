@@ -1,0 +1,66 @@
+{
+  "proposition": "3.22",
+  "run": "RunC",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a quadrilateral inscribed in a circle with all four vertices A, B, C, D on the circumference",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "O is the centre of the circle; radii OB and OD are constructed",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle BAD is an inscribed angle standing on arc BCD (arc from B to D not containing A)",
+      "type": "arc_subtension"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Central angle BOD facing arc BCD is double angle BAD by 3.20 (reflex or non-reflex as appropriate)",
+      "type": "central_angle_relation"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angle BCD is an inscribed angle standing on arc BAD (arc from B to D containing A)",
+      "type": "arc_subtension"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Central angle BOD facing arc BAD is double angle BCD by 3.20",
+      "type": "central_angle_relation"
+    },
+    {
+      "step": "Step 5",
+      "claim": "alpha (central angle on arc BCD) = 2 * angle BAD; beta (central angle on arc BAD) = 2 * angle BCD",
+      "type": "angle_relation"
+    },
+    {
+      "step": "Step 6",
+      "claim": "alpha and beta partition the full revolution around O, so alpha + beta = four right angles",
+      "type": "angle_sum_around_point"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Central angle AOC on arc ADC is double inscribed angle ABC by 3.20",
+      "type": "central_angle_relation"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Central angle AOC on arc ABC is double inscribed angle ADC by 3.20",
+      "type": "central_angle_relation"
+    },
+    {
+      "step": "Step 8",
+      "claim": "The two central angles formed by OA and OC around O sum to four right angles",
+      "type": "angle_sum_around_point"
+    }
+  ],
+  "configuration_map": "O is the center of the circle throughout. A, B, C, D are four distinct points on the circumference forming cyclic quadrilateral ABCD. Arc BCD (B to D through C, not containing A) and arc BAD (B to D through A, not containing C) are complementary arcs partitioning the full circle. Central angles alpha and beta at O subtend arcs BCD and BAD respectively, partitioning the full 360-degree revolution around O. In Step 8, the same configuration is repeated with radii OA and OC instead of OB and OD, with arcs ADC and ABC as the complementary pair. No point changes position or role between steps.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof correctly identifies complementary arcs for each pair of opposite inscribed angles, correctly applies 3.20 to relate each inscribed angle to its corresponding central angle (handling all cases including when the central angle is effectively reflex), and correctly concludes that the two central angles sum to four right angles because they partition the full revolution around O. No angle decomposition errors or conflicting position claims exist. The central angle approach is a valid alternative to Heath's triangle-based method."
+}

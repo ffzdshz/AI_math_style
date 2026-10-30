@@ -1,0 +1,13 @@
+{
+  "proposition": "9.13",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: proof by contradiction assuming a divisor E not among the proportional numbers, showing E cannot be prime (via 9.12), that E must be divisible by A (the number after unity) using 7.31 and 9.12, then performing a descent through the sequence terms until reaching the prime A itself, yielding a contradiction. The citation differences are purely about depth: the AI uses 7.17 (equal products imply same ratio when multiplied by same number) where Heath uses 7.19 (the proportion-from-equal-products result) for the same logical step of concluding that quotients measure earlier terms. Heath explicitly cites 9.8 for the fact that A multiplied by itself makes B (the square property of the third term), while the AI handles this implicitly through the general descent argument recognizing proportional numbers as powers of A_2. The AI's additional citations of definitions (D7.3, D7.11, D7.15) and 7.20 (transitivity of measurement) represent over-citation of foundational facts that Heath leaves implicit. All key intermediate conclusions are established in both proofs at the same logical positions, making this a citation-depth difference rather than a path difference.",
+  "jaccard": 0.3,
+  "ai_citations": "7.17|7.20|7.31|9.11|9.12|D7.11|D7.15|D7.3",
+  "heath_citations": "7.19|7.31|9.11|9.12|9.8",
+  "ai_only": "7.17|7.20|D7.11|D7.15|D7.3",
+  "heath_only": "7.19|9.8",
+  "audit_record": ""
+}

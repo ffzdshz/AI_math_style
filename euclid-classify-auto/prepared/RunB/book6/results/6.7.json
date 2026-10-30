@@ -1,0 +1,13 @@
+{
+  "proposition": "6.7",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided this classification as G (granularity difference). Both proofs share the same logical backbone: assume angle ABC is not equal to angle DEF, construct angle ABG equal to DEF via I.23, show triangles ABG and DEF are equiangular via I.32, derive the proportion AB:BG = DE:EF via VI.4, conclude BG = BC via V.11 and V.9, establish the isosceles triangle via I.5, and reach contradictions in both the less-than-right-angle and not-less-than-right-angle cases. The citation difference is purely one of depth: Heath cites I.17 directly for the Case 2 contradiction (two angles in a triangle are less than two right angles), while the AI derives the same contradiction by working through the angle sums using I.32 and I.13, which are the constituent parts of I.17. The AI additionally cites Postulate 5 to justify that ray BG meets line AC, which is an explicit construction detail Heath leaves implicit. Since the key intermediate conclusions are identical and the differences are limited to citation depth, this is a granularity difference.",
+  "jaccard": 0.778,
+  "ai_citations": "1.13|1.23|1.32|1.5|5.11|5.9|6.4|P5",
+  "heath_citations": "1.13|1.17|1.23|1.32|1.5|5.11|5.9|6.4",
+  "ai_only": "P5",
+  "heath_only": "1.17",
+  "audit_record": ""
+}

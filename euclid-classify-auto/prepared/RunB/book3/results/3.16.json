@@ -1,0 +1,13 @@
+{
+  "proposition": "3.16",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. In Part 1 of the proof (showing the tangent falls outside the circle), Heath and the AI use genuinely different logical backbones. Heath uses I.5 (isosceles triangle base angles are equal) to show that equal radii imply equal base angles, then derives a contradiction via I.17 (two right angles in a triangle). The AI instead applies I.17 directly to show the non-right angle in the triangle must be less than a right angle, then uses I.19 (greater angle subtended by greater side) to show the segment exceeds the radius, placing the point outside the circle. These are different key intermediate conclusions: Heath's pivot is the equality of base angles (I.5), while the AI's pivot is the angle-side inequality (I.17 + I.19). Parts 2 and 3 share essentially the same backbone. The AI's alternative path in Part 1 is logically complete and valid, so Q3 yields D rather than E. The ai_only citations (1.12, CN5, D1.10, D1.15, D1.17, D3.2, P1) are all definitions, postulates, common notions, or construction propositions reflecting the AI's greater explicitness, while heath_only contains I.5 which the AI genuinely replaces with a different argument.",
+  "jaccard": 0.2,
+  "ai_citations": "1.12|1.17|1.19|CN5|D1.10|D1.15|D1.17|D3.2|P1",
+  "heath_citations": "1.17|1.19|1.5",
+  "ai_only": "1.12|CN5|D1.10|D1.15|D1.17|D3.2|P1",
+  "heath_only": "1.5",
+  "audit_record": ""
+}

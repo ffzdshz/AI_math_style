@@ -1,0 +1,13 @@
+{
+  "proposition": "10.36",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification. Both proofs share the same backbone of key intermediate conclusions: the sum of squares on the two lines is rational, the rectangle (or twice it) is incommensurable with the rational standard, and therefore the square on the whole is irrational. The difference lies in citation depth. The AI uses 10.21 directly to establish that the rectangle of two rational lines commensurable in square only is irrational, packaging the step that Heath derives inline using 10.11 (proportionality-commensurability transfer) and VI.1; the proof-tree containment test confirms that 10.11 appears inside Heath's proof of 10.21, so this is citation-depth, not path divergence. Similarly, the AI cites D10.1.1 (definition of commensurability) instead of 10.6 to justify that R and 2R are commensurable, and adds 10.12 (transitivity) and additional definitions (D10.1.2, D10.1.3) as explicit citations for facts Heath leaves implicit. These are all granularity differences: the same geometric argument at different levels of detail.",
+  "jaccard": 0.417,
+  "ai_citations": "10.12|10.13|10.15|10.16|10.21|2.4|D10.1.1|D10.1.2|D10.1.3|D10.1.4",
+  "heath_citations": "10.11|10.13|10.15|10.16|10.6|2.4|D10.1.4",
+  "ai_only": "10.12|10.21|D10.1.1|D10.1.2|D10.1.3",
+  "heath_only": "10.11|10.6",
+  "audit_record": ""
+}

@@ -1,0 +1,39 @@
+{
+  "proposition": "3.25",
+  "book": 3,
+  "statement": "Given a segment of a circle, to describe the complete circle of which it is a segment.",
+  "heath_proof": "Let ABC be the given segment of a circle; thus it is required to describe the complete circle belonging to the segment ABC, that is, of which it is a segment. For let AC be bisected at D, let DB be drawn from the point D at right angles to AC, and let AB. be joined; the angle ABD is then greater than, equal to, or less than the angle BAD. First let it be greater; and on the straight line BA, and at the point A on it, let the angle BAE be constructed equal to the angle ABD; let DB be drawn through to E, and let EC be joined. Then, since the angle ABE is equal to the angle BAE, the straight line EB is also equal to EA. [I. 6]  And, since AD is equal to DC, and DE is common, the two sides AD, DE are equal to the two sides CD, DE respectively; and the angle ADE is equal to the angle CDE, for each is right; therefore the base AE is equal to the base CE. But AE was proved equal to BE; therefore BE is also equal to CE; therefore the three straight lines AE, EB, EC are equal to one another. Therefore the circle drawn with centre E and distance one of the straight lines AE, EB, EC will also pass through the remaining points and will have been completed. [III. 9] Therefore, given a segment of a circle, the complete circle has been described. And it is manifest that the segment ABC is less than a semicircle, because the centre E happens to be outside it. Similarly, even if the angle ABD be equal to the angle BAD, AD being equal to each of the two BD, DC, the three straight lines DA, DB, DC will be equal to one another, D will be the centre of the completed circle, and ABC will clearly be a semicircle. But, if the angle ABD be less than the angle BAD, and if we construct, on the straight line BA and at the point A on it, an angle equal to the angle ABD, the centre will fall on DB within the segment ABC, and the segment ABC will clearly be greater than a semicircle. Therefore, given a segment of a circle, the complete circle has been described.",
+  "ai_proof_text": "3.25\n**Statement:** Given a segment of a circle, to describe the complete circle of which it is a segment.\n\n**Step 1.** Let ABC be the given segment of a circle, with base AC and arc ABC, where B is any point on the arc. We are to describe the complete circle of which this segment is a part. [D3.6]\n\n**Step 2.** Bisect AC at D. [1.10]\n\n**Step 3.** From D, draw DB at right angles to AC, where B is on the arc of the segment, and produce DB in both directions as needed. [1.11]\n\n**Step 4.** Join AB. [P1]\n\n**Step 5.** Now consider the angles ABD and BAD. Exactly one of three cases holds: (i) angle ABD equals angle BAD, (ii) angle ABD is greater than angle BAD, or (iii) angle ABD is less than angle BAD.\n\n**Step 6.** Case (i): Suppose angle ABD equals angle BAD. Then in triangle ABD, since the base angles are equal, the sides opposite them are equal, so BD = DA. [1.6] But DA = DC since D bisects AC. Therefore BD = DA = DC. Let E coincide with D. Then EA = EB = EC, and E is equidistant from A, B, and C.\n\n**Step 7.** Case (ii): Suppose angle ABD is greater than angle BAD. At point A on the straight line AB, construct angle BAE equal to angle ABD, with E on the line BD between D and B. [1.23, P1] In triangle ABE, since angle BAE equals angle ABE, the sides opposite them are equal, so AE = BE. [1.6]\n\n**Step 8.** Now in triangles ADE and CDE: AD = DC (since D bisects AC), DE is common, and angle ADE = angle CDE (both are right angles, since DB is perpendicular to AC). Therefore by the side-angle-side criterion, triangles ADE and CDE are congruent, and in particular AE = CE. [1.4]\n\n**Step 9.** Thus in Case (ii), AE = BE = CE, so E is equidistant from A, B, and C.\n\n**Step 10.** Case (iii): Suppose angle ABD is less than angle BAD. At point A on the straight line AB, construct angle BAE equal to angle ABD, with E on the line BD produced beyond D (on the opposite side of AC from B). [1.23, P1] In triangle ABE, since angle BAE equals angle ABE, the sides opposite them are equal, so AE = BE. [1.6]\n\n**Step 11.** In triangles ADE and CDE: AD = DC (since D bisects AC), DE is common, and angle ADE = angle CDE (both are right angles, since the line through D perpendicular to AC makes right angles on both sides). Therefore by the side-angle-side criterion, triangles ADE and CDE are congruent, and AE = CE. [1.4]\n\n**Step 12.** Thus in Case (iii), AE = BE = CE, so E is equidistant from A, B, and C.\n\n**Step 13.** In all three cases, we have found a point E such that EA = EB = EC. With centre E and radius EA, describe a circle. [P3] Since EA = EB = EC, this circle passes through all three points A, B, and C. [D1.15]\n\n**Step 14.** Now the given segment ABC is part of some circle; call it the original circle. The original circle passes through A and C (the endpoints of the base of the segment) and through B (a point on the arc). The newly constructed circle with centre E and radius EA also passes through A, B, and C.\n\n**Step 15.** If the constructed circle were different from the original circle, then two distinct circles would have three common points A, B, and C. But a circle does not cut another circle at more than two points. [3.10] Since the two circles share three points, they cannot be distinct. Therefore the constructed circle is the same as the original circle.\n\n**Step 16.** Therefore the circle with centre E and radius EA is the complete circle of which the given segment ABC is a segment. The complete circle has been described from the given segment, which is what was required to do.\n\n**USED:** 1.10, 1.11, 1.23, 1.4, 1.6, 3.10, D1.15, D3.6, P1, P3\n**Human refs (from References field):** 1.6, 3.9\n**Jaccard:** 0.091 — AI adds ['1.10', '1.11', '1.23', '1.4', '3.10', 'D1.15', 'D3.6', 'P1', 'P3']; Human adds ['3.9']",
+  "ai_used": [
+    "1.10",
+    "1.11",
+    "1.23",
+    "1.4",
+    "1.6",
+    "3.10",
+    "D1.15",
+    "D3.6",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6",
+    "3.9"
+  ],
+  "ai_only": [
+    "1.10",
+    "1.11",
+    "1.23",
+    "1.4",
+    "3.10",
+    "D1.15",
+    "D3.6",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [
+    "3.9"
+  ],
+  "jaccard": 0.091,
+  "proof_summary": "**Step 1.** Let ABC be the given segment of a circle, with base AC and arc ABC, where B is any point on the arc. We are to describe the complete circle of which this segment is a part. [D3.6]  **Step "
+}

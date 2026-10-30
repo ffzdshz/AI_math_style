@@ -1,0 +1,86 @@
+{
+  "proposition": "13.17",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Two cube faces ABCD and CBEF are at right angles along common edge BC",
+      "type": "plane_relationship"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Midpoints G on AB, H on BC, K on CD, L on DE, M on EF, N on FA (DE and FA are not actual edges of the stated cube faces)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "GK passes through center of face ABCD (connecting midpoints of AB and CD)",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "HL passes through center of face CBEF (but L is midpoint of non-existent edge DE, so this line does not lie in CBEF)",
+      "type": "line_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "O lies on GK where GK is cut in extreme and mean ratio, GO is greater segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "P lies on HL where HL is cut in extreme and mean ratio, HP is greater segment",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "OR is perpendicular to the plane of face ABCD, erected from O",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "PS is perpendicular to the plane of face CBEF, erected from P",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "OR and PS each equal the greater segment when half the cube side is cut in extreme and mean ratio",
+      "type": "length_assignment"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Same construction performed at all 12 edges of the cube",
+      "type": "construction_extension"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Twenty vertices produced; cube vertices are NOT used as dodecahedron vertices",
+      "type": "vertex_count"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Five vertices lie in one pentagonal face; edges equal by symmetry; interior angles each equal 3/5 of two right angles",
+      "type": "angle_claim"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Center of cube O' is center of circumscribing sphere; each vertex V at perpendicular distance from face midpoint",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "Distance O' to V has three orthogonal components: O' to face center (a/2), face center to foot of perpendicular, perpendicular height",
+      "type": "distance_decomposition"
+    },
+    {
+      "step": "Step 12",
+      "claim": "All twenty vertices equidistant from O', lying on a sphere",
+      "type": "equidistance"
+    }
+  ],
+  "configuration_map": "The construction begins with cube faces ABCD and CBEF sharing edge BC and at right angles. Midpoints of edges are identified (with labeling errors for L and N, placed on non-existent edges DE and FA). Lines GK (on face ABCD) and HL (claimed on face CBEF) connect midpoints and are cut in extreme and mean ratio at points O and P. Perpendiculars OR and PS are erected from these division points, normal to their respective face planes, with heights equal to the greater segment of half the cube side. This construction is extended to all 12 cube edges to produce 20 dodecahedron vertices. The cube center O' serves as the sphere center. The proof operates at a high level of abstraction: it sketches the construction and appeals to symmetry and algebraic identities (13.1, 13.4) rather than performing detailed geometric verification of each vertex, edge, or angle. No detailed angle decompositions or inside/outside arguments are made.",
+  "pass_reason": "The AI proof is a high-level constructive sketch that does not make sufficiently detailed spatial claims to generate pairwise contradictions. While it contains labeling errors (edges DE and FA do not exist in the stated cube) and a factual error (claiming cube vertices are not used when they are in the standard construction), these are individual errors in the construction description, not mutually contradictory spatial claims. The proof avoids detailed angle decompositions, inside/outside arguments, and between-ness claims -- the primary patterns where spatial contradictions arise. No specific pair of spatial claims was found that cannot simultaneously be true."
+}

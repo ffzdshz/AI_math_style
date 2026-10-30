@@ -1,0 +1,40 @@
+{
+  "proposition": "10.45",
+  "book": 10,
+  "statement": "A major straight line is divided at one and the same point only.",
+  "heath_proof": "Let AB be a major straight line divided at C, so that AC, CB are incommensurable in square and make the sum of the squares on AC, CB rational, but the rectangle AC, CB medial; [X. 39] I say that AB is not so divided at another point. For, if possible, let it be divided at D also, so that AD, DB are also incommensurable in square and make the sum of the squares on AD, DB rational, but the rectangle contained by them medial. Then, since that by which the squares on AC, CB differ from the squares on AD, DB is also that by which twice the rectangle AD, DB differs from twice the rectangle AC, CB, while the squares on AC, CB exceed the squares on AD, DB by a rational area—for both are rational— therefore twice the rectangle AD, DB also exceeds twice the rectangle AC, CB by a rational area, though they are medial: which is impossible. [X. 26] Therefore a major straight line is not divided at different points; therefore it is only divided at one and the same point.",
+  "ai_proof_text": "10.45\n**Statement:** A major straight line is divided at one and the same point only.\n\n**Step 1.** Let AB be a major straight line, divided into its defining terms at C. Fix A as the endpoint from which the greater term is measured, so AC > CB. Suppose that D is another dividing point into terms of the same kind, with AD > DB. Write S_C = AC² + CB² and S_D = AD² + DB², and let M_C and M_D denote the rectangles AC·CB and AD·DB. By 10.39, S_C and S_D are rational areas, while M_C and M_D are medial areas. The direct path is to compare these medial rectangles and apply the prohibition in 10.26 against their differing by a rational area. [10.39, 10.26]\n\n**Step 2.** Bisect AB at O. Since the greater term is measured from A in both divisions, C and D lie between O and B. If they are distinct, interchange their names if necessary so that their order is O, D, C, B. The equal-and-unequal division identity gives\nM_C + OC² = OB² = M_D + OD².\nHere 2.5 is the natural cut-line identity because it directly compares the rectangles through their distances from the midpoint. Since OC = OD + DC, the square-expansion identity shows that OC² > OD². Consequently M_D > M_C. [1.10, 2.5, 2.4, CN3, CN5]\n\n**Step 3.** Expanding the square on the whole line at each dividing point gives\nAB² = S_C + 2M_C = S_D + 2M_D.\nSubtracting equal areas and collecting the remainders therefore yields\nS_C − S_D = 2(M_D − M_C) > 0.\nPut Δ = S_C − S_D and δ = M_D − M_C; thus Δ = 2δ. [2.4, CN2, CN3]\n\n**Step 4.** Let R be the square on the assigned rational straight line. Since S_C and S_D are rational, each is commensurable with R, and hence they are commensurable with one another. Since S_C = S_D + Δ, the converse assertion of 10.15 makes Δ commensurable with S_D. Therefore Δ is commensurable with R and is a rational area. [D10.1.4, 10.12, 10.15]\n\n**Step 5.** Because Δ = 2δ, the area δ measures both itself and Δ; thus δ and Δ are commensurable. As Δ is commensurable with R, so is δ. Hence δ is rational. But δ = M_D − M_C is positive, and both M_D and M_C are medial. This contradicts 10.26: a medial area does not exceed a medial area by a rational area. [D10.1.1, 10.12, D10.1.4, 10.26]\n\n**Step 6.** The supposition that C and D are distinct is therefore impossible. Thus, with the greater term measured from the fixed endpoint, the defining division of a major straight line is at one and the same point only. [Steps 1–5]\n\n**USED:** 1.10, 10.12, 10.15, 10.26, 10.39, 2.4, 2.5, CN2, CN3, CN5, D10.1.1, D10.1.4\n**Human refs (from References field):** 10.26, 10.39\n**Jaccard:** 0.167 — AI adds ['1.10', '10.12', '10.15', '2.4', '2.5', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.4']",
+  "ai_used": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "10.26",
+    "10.39",
+    "2.4",
+    "2.5",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_refs": [
+    "10.26",
+    "10.39"
+  ],
+  "ai_only": [
+    "1.10",
+    "10.12",
+    "10.15",
+    "2.4",
+    "2.5",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D10.1.4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let AB be a major straight line, divided into its defining terms at C. Fix A as the endpoint from which the greater term is measured, so AC > CB. Suppose that D is another dividing point i"
+}

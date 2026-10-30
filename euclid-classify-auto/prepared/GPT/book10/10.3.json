@@ -1,0 +1,28 @@
+{
+  "proposition": "10.3",
+  "book": 10,
+  "statement": "Given two commensurable magnitudes, to find their greatest common measure.",
+  "heath_proof": "Let the two given commensurable magnitudes be AB, CD of which AB is the less; thus it is required to find the greatest common measure of AB, CD. Now the magnitude AB either measures CD or it does not. If then it measures it—and it measures itself also— AB is a common measure of AB, CD. And it is manifest that it is also the greatest; for a greater magnitude than the magnitude AB will not measure AB. Next, let AB not measure CD. Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because AB, CD are not incommensurable; [cf. X. 2] let AB, measuring ED, leave EC less than itself, let EC, measuring FB, leave AF less than itself, and let AF measure CE. Since, then, AF measures CE, while CE measures FB, therefore AF will also measure FB. But it measures itself also; therefore AF will also measure the whole AB. But AB measures DE; therefore AF will also measure ED. But it measures CE also; therefore it also measures the whole CD. Therefore AF is a common measure of AB, CD. I say next that it is also the greatest. For, if not, there will be some magnitude greater than AF which will measure AB, CD. Let it be G. Since then G measures AB, while AB measures ED, therefore G will also measure ED. But it measures the whole CD also; therefore G will also measure the remainder CE. But CE measures FB; therefore G will also measure FB. But it measures the whole AB also, and it will therefore measure the remainder AF, the greater the less: which is impossible. Therefore no magnitude greater than AF will measure AB, CD; therefore AF is the greatest common measure of AB, CD. Therefore the greatest common measure of the two given commensurable magnitudes AB, CD has been found.",
+  "ai_proof_text": "10.3\n**Statement:** Given two commensurable magnitudes, to find their greatest common measure.\n\n**Step 1.** Let A and B be the given commensurable magnitudes, labelled so that A is not less than B. If B measures A, including the case A = B, then B is their greatest common measure: it measures both, and no magnitude greater than B can measure B. Hence suppose that B does not measure A. [D5.2; CN5]\n\n**Step 2.** Starting with A and B, continually subtract the lesser magnitude from the greater, retaining the lesser and the positive remainder as the next pair. Stop as soon as the lesser of the current pair measures the greater. This process must stop: otherwise the successive remainders would never measure their predecessors, and A and B would be incommensurable by 10.2, contrary to the hypothesis and D10.1.1. Denote the terminal pair by H and G, where G measures H. **Path choice:** use 10.2 directly, since its subtraction criterion applies to the given magnitudes without any reduction to numbers. [10.2; D10.1.1]\n\n**Step 3.** The magnitude G measures both members of the terminal pair. Now reverse the subtractions. At any subtraction, if the former pair was X, Y with X > Y, the new pair was Y, X − Y, possibly reordered. If G measures both members of the new pair, then each consists of whole copies of G; adding them shows that G also measures X = Y + (X − Y). Thus G measures both members of the former pair. Repeating this argument backwards through the finite process proves that G measures A and B. [D5.2; CN2]\n\n**Step 4.** Let M be any common measure of A and B. At each subtraction, if M measures X and Y, then X and Y consist of whole copies of M. Subtracting the copies constituting Y from those constituting X leaves whole copies of M constituting X − Y. Therefore M measures both members of the next pair. Following the finite process forwards, M consequently measures G. [D5.2; CN3]\n\n**Step 5.** Since every common measure M of A and B measures G, it is either equal to G or less than G: one copy gives equality, while several copies make G greater than any one of them. No common measure can therefore exceed G. Together with Step 3, this proves that the constructed magnitude G is the greatest common measure of A and B, as required. [D5.2; CN5]\n\n**USED:** 10.2, CN2, CN3, CN5, D10.1.1, D5.2\n**Human refs (from References field):** 10.2\n**Jaccard:** 0.167 — AI adds ['CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.2']",
+  "ai_used": [
+    "10.2",
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.2"
+  ],
+  "heath_refs": [
+    "10.2"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "CN5",
+    "D10.1.1",
+    "D5.2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.167,
+  "proof_summary": "**Step 1.** Let A and B be the given commensurable magnitudes, labelled so that A is not less than B. If B measures A, including the case A = B, then B is their greatest common measure: it measures bo"
+}

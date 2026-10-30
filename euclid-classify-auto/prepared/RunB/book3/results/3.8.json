@@ -1,0 +1,13 @@
+{
+  "proposition": "3.8",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 reveals a different backbone in how the two proofs handle the convex circumference ordering. Heath proves that DK < DL by constructing triangle MLD and showing that the interior lines MK, KD are less than the exterior sides ML, LD via 1.21, then using the equal radii MK = ML to conclude DK < DL. The AI instead proves the convex ordering by comparing angles at the center: since H is nearer to G than K, angle DMH < angle DMK, and then by 1.24 (with equal sides DM common and MH = MK as radii), the base DH < DK. This is a genuinely different intermediate approach, not merely a citation-depth variation. The AI's angle-based method is logically sound, applying 1.24 directly to the convex case rather than Heath's 1.21-based interior-lines argument. The remaining differences in citations (ai_only items 1.13, 1.23, CN3, D1.15, P1, P3) are over-citations of construction steps, definitions, and axioms that do not affect the backbone classification. Since both proofs are logically complete but diverge in a key intermediate step, this is a path difference.",
+  "jaccard": 0.364,
+  "ai_citations": "1.13|1.20|1.23|1.24|1.4|3.1|CN3|D1.15|P1|P3",
+  "heath_citations": "1.20|1.21|1.24|1.4|3.1",
+  "ai_only": "1.13|1.23|CN3|D1.15|P1|P3",
+  "heath_only": "1.21",
+  "audit_record": ""
+}

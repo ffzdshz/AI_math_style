@@ -1,0 +1,36 @@
+{
+  "proposition": "2.6",
+  "run": "RunC",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Points A, C, B, D are collinear with C bisecting AB and BD added beyond B, giving order A-C-B-D on the line",
+      "type": "collinear_point_ordering"
+    },
+    {
+      "step": "Step 2",
+      "claim": "AC = CB (bisection); AD = CB + CD; CD = CB + BD (segment decompositions on the line)",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AD is cut at C into segments AC and CD for application of 2.1",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 4",
+      "claim": "CD is cut at B into segments CB and BD for application of 2.3",
+      "type": "segment_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "CD is cut at B into segments CB and BD for application of 2.4",
+      "type": "segment_decomposition"
+    }
+  ],
+  "configuration_map": "Single line with four collinear points in order A-C-B-D. C is the midpoint of AB. BD is the added segment. All segment relationships derive from this single collinear arrangement. No auxiliary points are constructed off the line. No two-dimensional figures (triangles, circles, angles) are involved. Every application of 2.1, 2.3, and 2.4 uses segments on this same line with the cutting point (C or B) correctly between the endpoints of the segment being cut.",
+  "pass_reason": "The proof is purely algebraic, using segment arithmetic identities (2.1, 2.3, 2.4) on a single collinear arrangement A-C-B-D. The only spatial claims are the collinear ordering and bisection, which are the given conditions used consistently throughout. There are no angle decompositions, no interior/exterior point claims, no ray orderings, and no two-dimensional configuration claims that could contradict each other. All segment decompositions are consistent with the established collinear order."
+}

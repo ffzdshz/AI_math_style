@@ -1,0 +1,59 @@
+{
+  "proposition": "10.95",
+  "book": 10,
+  "statement": "If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.",
+  "heath_proof": "For let the area AB be contained by the rational straight line AC and the fifth apotome AD; I say that the “side” of the area AB is a straight line which produces with a rational area a medial whole. For let DG be the annex to AD; therefore AG, GD are rational straight lines commensurable in square only, the annex GD is commensurable in length with the rational straight line AC set out, and the square on the whole AG is greater than the square on the annex DG by the square on a straight line incommensurable with AG. [X. Deff. III. 5] Therefore, if there be applied to AG a parallelogram equal to the fourth part of the square on DG and deficient by a square figure, it will divide it into incommensurable parts. [X. 18] Let then DG be bisected at the point E, let there be applied to AG a parallelogram equal to the square on EG and deficient by a square figure, and let it be the rectangle AF, FG; therefore AF is incommensurable in length with FG. Now, since AG is incommensurable in length with CA, and both are rational, therefore AK is medial. [X. 21] Again, since DG is rational and commensurable in length with AC, DK is rational. [X. 19] Now let the square LM be constructed equal to AI, and let the square NO equal to FK and about the same angle, the angle LPM, be subtracted; therefore the squares LM, NO are about the same diameter. [VI. 26] Let PR be their diameter, and let the figure be drawn. Similarly then we can prove that LN is the “side” of the area AB. I say that LN is the straight line which produces with a rational area a medial whole. For, since AK was proved medial and is equal to the squares on LP, PN, therefore the sum of the squares on LP, PN is medial. Again, since DK is rational and is equal to twice the rectangle LP, PN, the latter is itself also rational. And, since AI is incommensurable with FK, therefore the square on LP is also incommensurable with the square on PN; therefore LP, PN are straight lines incommensurable in square which make the sum of the squares on them medial but twice the rectangle contained by them rational. Therefore the remainder LN is the irrational straight line called that which produces with a rational area a medial whole; [X. 77] and it is the “side” of the area AB. Therefore the “side” of the area AB is a straight line which produces with a rational area a medial whole.",
+  "ai_proof_text": "10.95\n**Statement:** If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.\n\n**Step 1.** Write uv for the rectangle contained by straight lines u and v, and u² for the square on u. Let r be the given rational straight line and let a−b be the fifth apotome, with whole a and annex b. Thus a>b are rational straight lines commensurable in square only; b is commensurable in length with r; and a²−b² is the square on a straight line incommensurable in length with a. [10.73; D10.3.5]\n\n**Step 2.** We use the sum a+b, because the same defining conditions immediately make it a fifth binomial. Indeed, it is binomial by 10.36 and fifth by D10.2.5. Therefore the side of r(a+b) is a straight line called the side of a rational plus a medial area. [10.58] By the designation introduced in 10.40, write this side as x+y, choosing x>y, where x² and y² are incommensurable, their sum S=x²+y² is medial, and xy is rational. Thus (x+y)²=r(a+b). [10.40]\n\n**Step 3.** Since a and r are rational, their squares are commensurable. [D10.1.3; 10.12] But b is commensurable in length with r and incommensurable in length with a; hence a and r are incommensurable in length. [10.13] Consequently M=ra is medial. [10.21] Also R=rb is rational, since r and b are rational and commensurable in length. [10.19]\n\n**Step 4.** Put T=2xy. Since xy is rational, its double T is also rational: the double is commensurable with xy, and hence with the assigned rational square. [10.15; 10.12; D10.1.4] Expanding the equality from Step 2 gives\nS+T=(x+y)²=r(a+b)=M+R.\n[2.4; 2.1]\n\n**Step 5.** We claim that S=M and T=R. If S and M were unequal, the greater would exceed the lesser by the positive difference of R and T, by cancellation in S+T=M+R. [CN3] That difference would be rational: R and T are commensurable with the assigned rational square and therefore with one another; their difference is commensurable with either, and consequently with the assigned square. [D10.1.4; 10.12; 10.15] But S and M are medial, and a medial area cannot exceed a medial area by a rational area. [10.26] Hence S=M, and cancellation then gives T=R. [CN3]\n\n**Step 6.** The square on the difference x−y satisfies\n(x−y)²+2xy=x²+y².\n[2.7] Substituting the equalities established in Step 5 and subtracting equal areas yields\n(x−y)²=M−R=ra−rb=r(a−b).\n[CN3; 2.1] Thus x−y is the side of the given area.\n\n**Step 7.** The straight lines x and y are incommensurable in square, the sum of their squares is medial, and twice their rectangle is rational, as established in Steps 2 and 4. Therefore their difference x−y is precisely a straight line which produces with a rational area a medial whole. [10.77] Hence the side of an area contained by a rational straight line and a fifth apotome has the required designation.\n\n**USED:** 10.12, 10.13, 10.15, 10.19, 10.21, 10.26, 10.36, 10.40, 10.58, 10.73, 10.77, 2.1, 2.4, 2.7, CN3, D10.1.3, D10.1.4, D10.2.5, D10.3.5\n**Human refs (from References field):** 10.18, 10.19, 10.21, 10.77, 6.26, D10.3.5\n**Jaccard:** 0.190 — AI adds ['10.12', '10.13', '10.15', '10.26', '10.36', '10.40', '10.58', '10.73', '2.1', '2.4', '2.7', 'CN3', 'D10.1.3', 'D10.1.4', 'D10.2.5']; Human adds ['10.18', '6.26']",
+  "ai_used": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.19",
+    "10.21",
+    "10.26",
+    "10.36",
+    "10.40",
+    "10.58",
+    "10.73",
+    "10.77",
+    "2.1",
+    "2.4",
+    "2.7",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.5",
+    "D10.3.5"
+  ],
+  "heath_refs": [
+    "10.18",
+    "10.19",
+    "10.21",
+    "10.77",
+    "6.26",
+    "D10.3.5"
+  ],
+  "ai_only": [
+    "10.12",
+    "10.13",
+    "10.15",
+    "10.26",
+    "10.36",
+    "10.40",
+    "10.58",
+    "10.73",
+    "2.1",
+    "2.4",
+    "2.7",
+    "CN3",
+    "D10.1.3",
+    "D10.1.4",
+    "D10.2.5"
+  ],
+  "heath_only": [
+    "10.18",
+    "6.26"
+  ],
+  "jaccard": 0.19,
+  "proof_summary": "**Step 1.** Write uv for the rectangle contained by straight lines u and v, and u² for the square on u. Let r be the given rational straight line and let a−b be the fifth apotome, with whole a and ann"
+}

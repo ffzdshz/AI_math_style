@@ -1,0 +1,41 @@
+{
+  "proposition": "11.36",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "S has edges A, B, C at a given solid angle; P has edges B, B, B at the same solid angle",
+      "type": "solid_angle_sharing"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Q is constructed with edges A, B, B at the same solid angle as S and P",
+      "type": "solid_angle_sharing"
+    },
+    {
+      "step": "Step 3",
+      "claim": "S and Q share edge A in the same direction and same solid angle, giving same perpendicular height between the base faces",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Base of S is parallelogram with sides B, C and base of Q is parallelogram with sides B, B, both at the same included angle",
+      "type": "parallelogram_comparison"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Q and P both have edge B in a shared direction with same solid angle, giving same perpendicular height; bases are parallelograms (A,B) and (B,B) at same angle",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Bases of Q and P (parallelograms with sides A,B and B,B at same angle) are in ratio A:B by 6.1",
+      "type": "parallelogram_comparison"
+    }
+  ],
+  "configuration_map": "Three parallelepipeds S, Q, P all share the same solid angle with three edge directions d1, d2, d3. S has edges (A, B, C) in directions (d1, d2, d3). Q has edges (A, B, B) in directions (d1, d2, d3). P has edges (B, B, B) in directions (d1, d2, d3). When comparing S and Q: both share edge A in d1 and B in d2, so the perpendicular height from the d2-d3 base is the same (determined by A and the solid angle). When comparing Q and P: both share edge B in d2, so the perpendicular height from the d1-d3 base is the same (determined by B and the solid angle). All face parallelograms share included angles determined by the common solid angle.",
+  "pass_reason": "All spatial claims about shared solid angles, equal heights, and parallelogram base comparisons are mutually consistent. The perpendicular heights are correctly determined by shared edges and the common solid angle. The proportional argument (via 11.32, 6.1, and ex aequali) is geometrically grounded in valid parallelepiped geometry with no configuration contradictions."
+}

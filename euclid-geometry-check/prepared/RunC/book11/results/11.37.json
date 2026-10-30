@@ -1,0 +1,51 @@
+{
+  "proposition": "11.37",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "SA, SB are similar and similarly situated parallelepipedal solids described on lines A, B respectively",
+      "type": "solid similarity"
+    },
+    {
+      "step": "Step 1",
+      "claim": "SC, SD are similar and similarly situated parallelepipedal solids described on lines C, D respectively",
+      "type": "solid similarity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "SA:SB is the triplicate ratio of A:B (by 11.33 for similar parallelepipedal solids)",
+      "type": "solid ratio"
+    },
+    {
+      "step": "Step 6",
+      "claim": "SC:SD is the triplicate ratio of C:D (by 11.33 for similar parallelepipedal solids)",
+      "type": "solid ratio"
+    },
+    {
+      "step": "Step 10",
+      "claim": "SE is a parallelepipedal solid on E, similar and similarly situated to SC (constructed by 11.27)",
+      "type": "solid similarity"
+    },
+    {
+      "step": "Step 12",
+      "claim": "SE = SC (equal solids, since both have the same ratio to SD)",
+      "type": "solid equality"
+    },
+    {
+      "step": "Step 13",
+      "claim": "If E > C then SE > SC for similar solids (by 11.33 and triplicate ratio)",
+      "type": "solid size comparison"
+    },
+    {
+      "step": "Step 14",
+      "claim": "If E < C then SC > SE for similar solids (by 11.33 and triplicate ratio)",
+      "type": "solid size comparison"
+    }
+  ],
+  "configuration_map": "The proof treats four straight lines A, B, C, D as magnitudes (lengths) in proportion A:B :: C:D. Parallelepipedal solids SA, SB, SC, SD are described on these lines but are never spatially analyzed — they are used only through their ratio properties via Proposition 11.33 (triplicate ratio of corresponding sides). Auxiliary magnitudes E, F, G, H are constructed as third/fourth proportionals and are also pure magnitudes. In the converse, a solid SE similar to SC is constructed on E by 11.27. No vertices, edges, faces, angles, or spatial positions are ever specified. The entire proof operates through proportion theory (Book 5) applied to the ratio results of 11.33. There are no spatial configuration claims that could conflict.",
+  "pass_reason": "The proof is a proportion/ratio argument throughout. Parallelepipedal solids appear but are treated purely through their ratio properties via 11.33 (triplicate ratio) and 11.27 (construction of similar solids). No spatial configuration claims are made — no point positions, angle decompositions, betweenness claims, plane memberships, or inside/outside assertions. All claims (solid similarity, ratio relationships, solid equality) are mutually consistent."
+}

@@ -1,0 +1,66 @@
+{
+  "proposition": "11.33",
+  "run": "RunB",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Three edges AE, AG, AH meet at vertex A of parallelepiped AB; three corresponding edges CF, CK, CL meet at vertex C of parallelepiped CD, with AE:CF = AG:CK = AH:CL",
+      "type": "edge_configuration"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Parallelepiped EP is constructed at vertex E with edge EM along AE produced (direction e1) of length CF, edge EN in direction of AG (direction e2) of length CK, edge EO in direction of AH (direction e3) of length CL",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Parallelepiped EP is equal and similar to parallelepiped CD (same edge lengths and same solid angles)",
+      "type": "solid_equality"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Parallelepiped EX at vertex E has edges AE (from E toward A), EN (in AG direction, length CK), EO (in AH direction, length CL)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Parallelepiped EY at vertex E has edges AE (from E toward A), AG (in AG direction, full length AG), EO (in AH direction, length CL)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "AB and EY share the same base parallelogram (formed by AE and AG) and have heights AH and EO respectively in the same direction (e3)",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 9",
+      "claim": "AB:EY = AH:EO by XI.25 (cutting AB at height EO parallel to base)",
+      "type": "ratio_from_cutting"
+    },
+    {
+      "step": "Step 10",
+      "claim": "EY and EX share base parallelogram (formed by AE and EO) and have heights AG and EN respectively in the same direction (e2)",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "EY:EX = AG:EN by XI.25 (cutting EY at height EN parallel to AE-EO face)",
+      "type": "ratio_from_cutting"
+    },
+    {
+      "step": "Step 11",
+      "claim": "EX and EP share base parallelogram (formed by EN and EO) and have heights AE and EM respectively along e1 direction (opposite sides of base plane at E)",
+      "type": "solid_geometry_configuration"
+    },
+    {
+      "step": "Step 11",
+      "claim": "EX:EP = AE:EM by XI.25 (combined solid from A to M cut at E)",
+      "type": "ratio_from_cutting"
+    }
+  ],
+  "configuration_map": "All parallelepipeds share vertex E and use the same three orthogonal-like directions (e1 along AE, e2 along AG, e3 along AH). From E:\n- AB: extends to A (length AE in -e1), width AG in e2, height AH in e3\n- EY: extends to A (length AE in -e1), width AG in e2, height CL in e3\n- EX: extends to A (length AE in -e1), width CK in e2, height CL in e3\n- EP: extends to M (length CF in +e1), width CK in e2, height CL in e3\n\nChain of intermediate solids varies one dimension at a time:\nAB -> EY: reduce e3 from AH to CL (shared e1-e2 base)\nEY -> EX: reduce e2 from AG to CK (shared e1-e3 base)\nEX -> EP: change e1 from AE (toward A) to EM=CF (toward M) (shared e2-e3 base)\n\nFor Step 11, EX and EP sit on opposite sides of the EN-EO parallelogram at E. The combined solid from A through E to M (total length AE+CF in e1, cross-section CK x CL) is cut at E by XI.25 giving EX:EP = AE:EM.",
+  "pass_reason": "All spatial claims are mutually consistent. The proof constructs a chain of intermediate parallelepipeds at vertex E, each sharing a common face with the next and differing in exactly one edge length. Each application of XI.25 is valid: Steps 9 and 10 involve cutting a larger solid at a specified height (EY is a sub-solid of AB, EX is a sub-solid of EY). Step 11 involves the combined solid from A to M being cut at E into EX and EP. The directions and positions of all constructed solids are compatible throughout."
+}

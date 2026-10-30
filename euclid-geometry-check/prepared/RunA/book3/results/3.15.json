@@ -1,0 +1,56 @@
+{
+  "proposition": "3.15",
+  "run": "RunA",
+  "book": 3,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a circle with centre E; BC is a diameter; FG is a chord not a diameter",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "EF and EG are radii from centre E to circumference points F and G; EF = EB, EG = EC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "E, F, G form a triangle because FG does not pass through E (FG is not a diameter)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "B, E, C are collinear with E between B and C on diameter BC; EB + EC = BC",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 6",
+      "claim": "EL is perpendicular to chord FG; EM is perpendicular to chord HK; EL < EM since FG is nearer to centre",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "L is midpoint of FG on segment FG (FL = LG); M is midpoint of HK on segment HK (HM = MK)",
+      "type": "betweenness"
+    },
+    {
+      "step": "Step 8",
+      "claim": "EF and EH are radii of the same circle, so EF = EH",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Triangle ELF is right-angled at L; triangle EMH is right-angled at M",
+      "type": "angle_configuration"
+    },
+    {
+      "step": "Step 10",
+      "claim": "EF^2 = EL^2 + LF^2 and EH^2 = EM^2 + MH^2 (Pythagorean theorem on right triangles)",
+      "type": "angle_configuration"
+    }
+  ],
+  "configuration_map": "Part 1: Circle ABCD with centre E. Diameter BC passes through E with B--E--C collinear and E between B and C. Chord FG does not pass through E, so E is off line FG, making EFG a proper triangle. Part 2: Chord FG has perpendicular foot L from E, with L on segment FG between F and G (III.3 bisection). Chord HK has perpendicular foot M from E, with M on segment HK between H and K. Right triangles ELF (right at L) and EMH (right at M) share equal hypotenuses EF = EH (radii). EL < EM by definition of nearer chord. All points maintain consistent positions throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. Part 1 uses a valid triangle EFG (E off chord FG) with the triangle inequality. Part 2 uses well-defined perpendicular feet L and M on their respective chords, forming right triangles with equal hypotenuses (radii). The Pythagorean theorem argument correctly transfers the inequality EL < EM to LF > MH and then to FG > HK. No angle decomposition issues arise, no inside/outside contradictions exist, and every point position is used consistently throughout."
+}

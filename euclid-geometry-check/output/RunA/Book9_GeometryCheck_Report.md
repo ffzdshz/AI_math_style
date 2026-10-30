@@ -1,0 +1,30 @@
+# Book 9 — Geometry Configuration Check (RunA)
+
+## Summary
+
+**Total propositions checked**: 16
+
+| Verdict | Count | Propositions |
+|---|---|---|
+| PASS | 0 |  |
+| FAIL | 0 |  |
+| SKIP | 16 | 9.1, 9.2, 9.3, 9.5, 9.6, 9.11, 9.12, 9.13, 9.15, 9.16, 9.17, 9.18, 9.19, 9.22, 9.27, 9.31 |
+
+## Skipped Propositions
+
+- **9.1**: Book 9 is number theory. Proposition 9.1 proves that the product of two similar plane numbers is square, using only arithmetic definitions (D7.16, D7.18, D7.21), proportion properties (7.19), and mean proportional existence (8.18). The proof contains zero geometric objects — no points, lines, angles, circles, triangles, or spatial relationships of any kind. There are no spatial claims to check for consistency.
+- **9.2**: Book 9 is number theory with no spatial configuration. This proof involves only numbers, products, proportions, and number-theoretic definitions (square numbers, similar plane numbers). There are no geometric points, lines, angles, circles, or any spatial claims to check.
+- **9.3**: Book 9 is number theory with no spatial configuration. Proposition 9.3 proves that A*A is cube when A is cube, using only arithmetic properties (products, proportions via 7.17 and 7.19, and definitions of square/cube/solid numbers). There are no geometric constructions, points, lines, angles, or any spatial claims to check.
+- **9.5**: Book 9 is number theory with no spatial configuration. The proof concerns cube numbers and proportional relationships among numbers. There are no geometric points, lines, angles, circles, or any spatial claims to check for consistency.
+- **9.6**: Book 9 is number theory with no spatial configuration. The proof involves only numerical concepts (cube numbers, multiplication, solid number definitions) and applies purely arithmetic/algebraic reasoning. There are no geometric objects, spatial claims, or configuration issues to check.
+- **9.11**: Book 9 is number theory with no spatial configuration. Proposition 9.11 concerns numbers in continued proportion and divisibility — the proof contains zero geometric or spatial claims (no points, lines, angles, triangles, circles, or figures). The protocol explicitly excludes Books 5, 7, 8, 9 as proportions theory and number theory.
+- **9.12**: Proposition 9.12 is from Book 9 (number theory), which the protocol explicitly marks for skipping. The AI proof is purely arithmetic/algebraic: it reasons about integer sequences in continued proportion, products of numbers, and divisibility by primes using propositions 7.19, 7.30, and definition D7.15. There are no geometric constructions, no spatial claims, and no configuration to check for consistency.
+- **9.13**: Book 9 is number theory with no spatial configuration. Proposition 9.13 concerns numbers in continued proportion beginning from a unit, proving that the greatest number is measured only by those in the proportional sequence. The proof involves only arithmetic concepts: divisibility (measurement), prime numbers, powers, and continued proportion. There are no geometric constructions, no points, lines, angles, circles, or any spatial claims to check for consistency.
+- **9.15**: Proposition 9.15 is from Book 9 (number theory). The AI proof is purely algebraic/number-theoretic, involving coprimality of integers, divisibility arguments, and properties of common measures. There are no geometric constructions, no points, lines, angles, circles, or any spatial configuration claims to check.
+- **9.16**: Book 9 is number theory. Proposition 9.16 is purely algebraic/number-theoretic: it reasons about numbers, ratios (A:B = B:C), products (A*C = B*B), divisibility (A measures B*B), and coprimality (A and B prime to one another). No geometric figures, points, lines, angles, or spatial relationships are constructed or referenced. There are zero spatial claims to check for consistency.
+- **9.17**: Proposition 9.17 is pure number theory (Book 9). The AI proof involves only numbers in continued proportion, ratios, coprimality, divisibility (measuring), and a reductio ad absurdum argument about the existence of a number. There are no geometric constructions, no points, lines, angles, circles, or any spatial claims. The protocol explicitly excludes Books 7-9 as number theory with no spatial configuration.
+- **9.18**: Book 9 is number theory with no spatial configuration. Proposition 9.18 investigates whether a third proportional to two given numbers exists. The proof is purely algebraic/number-theoretic, using only divisibility (measures), multiplication, and proportionality of numbers. No geometric points, lines, angles, circles, or spatial relationships appear anywhere in the proof.
+- **9.19**: Proposition 9.19 is a number theory result from Book 9 about when a fourth proportional to three given numbers exists. The AI proof is purely arithmetic and logical, using only numerical products, divisibility (measuring), and proportional ratios. It contains no geometric or spatial claims whatsoever, so spatial configuration consistency checking does not apply.
+- **9.22**: Proposition 9.22 is a number theory result from Book 9, which the protocol designates for skipping. The AI proof is purely arithmetic/algebraic: it pairs odd numbers, uses the definition of odd (D7.7) and even (D7.6), and applies Proposition 9.21 (sum of even numbers is even). There are zero geometric or spatial claims to check for configuration consistency.
+- **9.27**: Book 9 is number theory with no spatial configuration. Proposition 9.27 proves that subtracting an even number from an odd number yields an odd remainder. The proof involves only arithmetic properties of odd and even numbers (Prop. 9.21, Def. 7.6, Def. 7.7) with zero geometric constructions, points, lines, angles, or spatial claims of any kind.
+- **9.31**: Proposition 9.31 is from Book 9 (number theory). The AI proof is purely algebraic, reasoning about divisibility and coprimeness of numbers. It involves no geometric constructions, points, lines, angles, or spatial relationships. The protocol explicitly marks Books 7-9 as having no spatial configuration to check.

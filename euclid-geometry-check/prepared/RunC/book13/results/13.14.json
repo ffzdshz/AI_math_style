@@ -1,0 +1,66 @@
+{
+  "proposition": "13.14",
+  "run": "RunC",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is the midpoint of diameter AB; sphere has center C and radius CA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A plane through C is perpendicular to AB; D, E, F, G lie in this equatorial plane",
+      "type": "plane_membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "DE and FG are drawn through C at right angles to each other in the equatorial plane",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CD = CE = CF = CG = CA; D opposite E through C, F opposite G through C",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AC is perpendicular to the equatorial plane, so angle ACD is a right angle",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "AC is perpendicular to each of CF, CE, CG (all in equatorial plane)",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 6",
+      "claim": "CB is perpendicular to the equatorial plane containing D, E, F, G",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 7",
+      "claim": "In triangle DCF, angle DCF is a right angle (D on DE, F on FG, DE perp FG)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 8",
+      "claim": "Each pair of adjacent equatorial vertices (D-F, F-E, E-G, G-D) subtends a right angle at C",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 9",
+      "claim": "Eight triangular faces ADF, AFE, AEG, AGD, BDF, BFE, BEG, BGD form the octahedron",
+      "type": "topology"
+    },
+    {
+      "step": "Step 10",
+      "claim": "All six vertices A, B, D, E, F, G are at distance CA from center C, lying on the sphere",
+      "type": "point_position"
+    }
+  ],
+  "configuration_map": "C: Center of the sphere, midpoint of AB, intersection of DE and FG in the equatorial plane. A, B: Endpoints of diameter AB, on the axis perpendicular to the equatorial plane, each at distance CA from C (A above, B below). D, E: Diametrically opposite points in the equatorial plane along one axis through C, each at distance CA from C. F, G: Diametrically opposite points in the equatorial plane along a second axis through C perpendicular to DE, each at distance CA from C. The six vertices lie at the ends of three mutually perpendicular axes through C, forming a regular octahedron. All positions are consistently maintained throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction places six vertices at the ends of three mutually perpendicular axes through the sphere center C, each at distance CA from C. Every perpendicularity claim, right angle claim, Pythagorean theorem application, and distance equality follows correctly from this standard octahedral configuration. No angle decomposition errors or point position contradictions were found."
+}

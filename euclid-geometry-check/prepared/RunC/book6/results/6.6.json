@@ -1,0 +1,61 @@
+{
+  "proposition": "6.6",
+  "run": "RunC",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "G lies on ray DE from D, with DG = AB; H lies on ray DF from D, with DH = AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Angle GDH is the same angle as angle EDF because G is on ray DE and H is on ray DF",
+      "type": "angle_identity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle DGH is congruent to triangle ABC by SAS (1.4), so angle DGH = angle ABC and angle DHG = angle ACB",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "G lies between D and E on segment DE (since DG < DE in Case 2)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 7",
+      "claim": "H lies between D and F on segment DF (since DH < DF in Case 2)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 10",
+      "claim": "G on side DE and H on side DF of triangle DEF, with DG:GE = DH:HF, so GH is parallel to EF by converse of 6.2",
+      "type": "parallel_lines"
+    },
+    {
+      "step": "Step 11",
+      "claim": "GH parallel to EF with transversal DE gives angle DGH = angle DEF by I.29 (corresponding angles)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 11",
+      "claim": "GH parallel to EF with transversal DF gives angle DHG = angle DFE by I.29 (corresponding angles)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 13",
+      "claim": "When DG > DE, G falls on DE produced beyond E and H on DF produced beyond F; E is between D and G, F is between D and H",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 13",
+      "claim": "In Case 3, by converse of 6.2 applied to triangle DGH (with E on DG, F on DH), EF is parallel to GH, and I.29 gives same angle equalities",
+      "type": "parallel_lines"
+    }
+  ],
+  "configuration_map": "Point G: Constructed on ray DE from D at distance AB. In Case 1 (DG=DE), G coincides with E. In Case 2 (DG<DE), G is between D and E on segment DE, hence on side DE of triangle DEF. In Case 3 (DG>DE), G is beyond E on ray DE, so E is between D and G. All references to G are consistent within each case.\n\nPoint H: Constructed on ray DF from D at distance AC. In Case 1 (DH=DF), H coincides with F. In Case 2 (DH<DF), H is between D and F on segment DF, hence on side DF of triangle DEF. In Case 3 (DH>DF), H is beyond F on ray DF, so F is between D and H. All references to H are consistent within each case.\n\nLine GH: Joined in Step 2. In Case 2, shown parallel to EF via converse of 6.2 (Step 10). In Case 3, the parallel relationship holds via 6.2 applied to triangle DGH. Used with transversals DE and DF to establish corresponding angle equalities by I.29 (Step 11).\n\nAngle GDH: Identified as the same angle as EDF throughout, since G is on ray DE and H is on ray DF. This holds regardless of where G and H are on those rays. No angle decomposition (sum of sub-angles) is used anywhere in the proof, so the primary error pattern does not arise.",
+  "pass_reason": "All spatial claims are mutually consistent across all three cases. The construction of G on ray DE and H on ray DF is used consistently throughout. The converse of 6.2 is correctly applied with G and H on the appropriate sides of the relevant triangle (DEF in Case 2, DGH in Case 3). The corresponding angle equalities via I.29 are geometrically valid given the established parallel lines and transversals. No angle decomposition as a sum of sub-angles appears anywhere, so the primary error pattern does not arise."
+}

@@ -1,0 +1,13 @@
+﻿Proposition,Book,Run,Current_Category,Verdict,Contradictory_Steps,Contradiction_Summary,Fixable
+13.1,13,RunB,D,PASS,,,
+13.2,13,RunB,D,PASS,,,
+13.6,13,RunB,D,PASS,,,
+13.7,13,RunB,D,PASS,,,
+13.8,13,RunB,D,PASS,,,
+13.9,13,RunB,D,PASS,,,
+13.10,13,RunB,D,PASS,,,
+13.11,13,RunB,D,PASS,,,
+13.13,13,RunB,D,PASS,,,
+13.16,13,RunB,D,FAIL,Step 12 | Step 13 | Step 22,"Steps 12-13 assert the inter-plane distance d = s₁₀ (the decagon side), while Step 22 derives d = r (the circle radius). Since s₁₀ = r(√5-1)/2 ≈ 0.618r, these values are not equal. Moreover, Step 12's claim that d = s₁₀ produces equilateral lateral triangles is false: with d = s₁₀ the lateral edge² = s₁₀² + s₁₀² = 2s₁₀², but the required value is s₅² = r² + s₁₀² (by Prop. 13.10), and 2s₁₀² ≠ r² + s₁₀² since r ≠ s₁₀. Only d = r gives the correct lateral edge length. The proof asserts two mutually inconsistent positions for the pentagonal planes.",True
+13.17,13,RunB,D,FAIL,Steps 11-12 | Step 16,"If a point K lies on an edge of the cube (between two cube vertices), it is strictly closer to the center O than the cube vertices are. Direct computation: for K on edge AB at the golden-section position, OK^2 = (s/2 - g)^2 + (s/2)^2 + (s/2)^2. Since 0 < g < s/2, we have (s/2 - g)^2 < (s/2)^2, so OK^2 < 3(s/2)^2 = d^2/4. Therefore K lies strictly inside the circumsphere, contradicting the claim that OK = d/2. The proof's assertion in Step 16 that OK^2 = (s/2)^2 + (s/2)^2 + (s/2)^2 is false -- it silently replaces (s/2 - g) with s/2 in the first coordinate. The fundamental error is that the construction places all vertices on the cube's edges, but a dodecahedron inscribed in the same sphere as the cube necessarily has vertices OUTSIDE the cube (raised above its faces).",True
+13.18,13,RunB,D,PASS,,,

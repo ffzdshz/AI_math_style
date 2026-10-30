@@ -1,0 +1,35 @@
+{
+  "proposition": "8.3",
+  "book": 8,
+  "statement": "If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.",
+  "heath_proof": "Let as many numbers as we please, A, B, C, D, in continued proportion be the least of those which have the same ratio with them; I say that the extremes of them A, D are prime to one another. For let two numbers E, F, the least that are in the ratio of A, B, C, D, be taken, [VII. 33] then three others G, H, K with the same property; and others, more by one continually, [VIII. 2] until the multitude taken becomes equal to the multitude of the numbers A, B, C, D. Let them be taken, and let them be L, M, N, O. Now, since E, F are the least of those which have the same ratio with them, they are prime to one another. [VII. 22] And, since the numbers E, F by multiplying themselves respectively have made the numbers G, K, and by multiplying the numbers G, K respectively have made the numbers L, O, [VIII. 2] therefore both G, K and L, O are prime to one another. [VII. 27] And, since A, B, C, D are the least of those which have the same ratio with them, while L, M, N, O are the least that are in the same ratio with A, B, C, D, and the multitude of the numbers A, B, C, D is equal to the multitude of the numbers L, M, N, O, therefore the numbers A, B, C, D are equal to the numbers L, M, N, O respectively; therefore A is equal to L, and D to O. And L, O are prime to one another. Therefore A, D are also prime to one another.",
+  "ai_proof_text": "8.3\n**Statement:** If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.\n\n**Step 1.** Let A₀, A₁, …, Aₙ be the given numbers in continued proportion, least among all sequences having the same successive ratios. If n = 1, the extremes are prime to one another by 7.22. Assume therefore that n ≥ 2. We use a comparison progression, allowing 8.1 to be applied in its stated, forward direction.\n\n**Step 2.** Choose the least numbers p, q such that p:q = A₀:A₁, by 7.33. Then p and q are prime to one another by 7.22. This proposition applies directly because the chosen pair is least.\n\n**Step 3.** Form the n + 1 numbers\nBᵢ = pⁿ⁻ⁱqⁱ, for 0 ≤ i ≤ n,\nwhere powers denote repeated multiplication and a factor with exponent zero is omitted. For each 0 ≤ i < n, put Cᵢ = pⁿ⁻ⁱ⁻¹qⁱ. Since n ≥ 2, each Cᵢ contains at least one factor. By repeated multiplication and interchange of factors,\nBᵢ = Cᵢp and Bᵢ₊₁ = Cᵢq. [D7.15, 7.16]\nTherefore Bᵢ:Bᵢ₊₁ = p:q, since multiplication of two numbers by the same number preserves their ratio. [7.17] Thus B₀, B₁, …, Bₙ are in continued proportion with the same successive ratios as the given numbers. [Step 2; hypothesis]\n\n**Step 4.** The extremes of this comparison progression are B₀ = pⁿ and Bₙ = qⁿ. Since p and q are prime to one another, their corresponding successive powers are prime to one another, by repeated application of 7.27. Hence B₀ and Bₙ are prime to one another.\n\n**Step 5.** By 8.1, the comparison progression is least among those having its successive ratios. These are also the successive ratios of the given progression. For each i, the assumed leastness of the given progression gives Aᵢ ≤ Bᵢ, while the leastness just established gives Bᵢ ≤ Aᵢ. Consequently Aᵢ = Bᵢ for every i. [Hypothesis; 8.1]\n\n**Step 6.** In particular, A₀ = B₀ and Aₙ = Bₙ. By Step 4 their only common measure is the unit. Therefore the extremes A₀ and Aₙ of the given progression are prime to one another, as required. [D7.12]\n\n**USED:** 7.16, 7.17, 7.22, 7.27, 7.33, 8.1, D7.12, D7.15\n**Human refs (from References field):** 7.22, 7.27, 7.33, 8.2\n**Jaccard:** 0.333 — AI adds ['7.16', '7.17', '8.1', 'D7.12', 'D7.15']; Human adds ['8.2']",
+  "ai_used": [
+    "7.16",
+    "7.17",
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.1",
+    "D7.12",
+    "D7.15"
+  ],
+  "heath_refs": [
+    "7.22",
+    "7.27",
+    "7.33",
+    "8.2"
+  ],
+  "ai_only": [
+    "7.16",
+    "7.17",
+    "8.1",
+    "D7.12",
+    "D7.15"
+  ],
+  "heath_only": [
+    "8.2"
+  ],
+  "jaccard": 0.333,
+  "proof_summary": "**Step 1.** Let A₀, A₁, …, Aₙ be the given numbers in continued proportion, least among all sequences having the same successive ratios. If n = 1, the extremes are prime to one another by 7.22. Assume"
+}

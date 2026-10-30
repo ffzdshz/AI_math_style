@@ -1,0 +1,48 @@
+{
+  "proposition": "10.25",
+  "book": 10,
+  "statement": "The rectangle contained by medial straight lines commensurable in square only is either rational or medial.",
+  "heath_proof": "For let the rectangle AC be contained by the medial straight lines AB, BC which are commensurable in square only; I say that AC is either rational or medial. For on AB, BC let the squares AD, BE be described; therefore each of the squares AD, BE is medial. Let a rational straight line FG be set out, to FG let there be applied the rectangular parallelogram GH equal to AD, producing FH as breadth, to HM let there be applied the rectangular parallelogram MK equal to AC, producing HK as breadth, and further to KN let there be similarly applied NL equal to BE, producing KL as breadth; therefore FH, HK, KL are in a straight line. Since then each of the squares AD, BE is medial, and AD is equal to GH, and BE to NL, therefore each of the rectangles GH, NL is also medial. And they are applied to the rational straight line FG; therefore each of the straight lines FH, KL is rational and incommensurable in length with FG. [X. 22] And, since AD is commensurable with BE, therefore GH is also commensurable with NL. And, as GH is to NL, so is FH to KL; [VI. 1] therefore FH is commensurable in length with KL. [X. 11] Therefore FH, KL are rational straight lines commensurable in length; therefore the rectangle FH, KL is rational. [X. 19] And, since DB is equal to BA, and OB to BC, therefore, as DB is to BC, so is AB to BO. But, as DB is to BC, so is DA to AC, [VI. 1] and, as AB is to BO, so is AC to CO; [id.]therefore, as DA is to AC, so is AC to CO. But AD is equal to GH, AC to MK and CO to NL; therefore, as GH is to MK, so is MK to NL; therefore also, as FH is to HK, so is HK to KL; [VI. 1, V. 11] therefore the rectangle FH, KL is equal to the square on HK. [VI. 17] But the rectangle FH, KL is rational; therefore the square on HK is also rational. Therefore HK is rational. And, if it is commensurable in length with FG, HN is rational; [X. 19] but, if it is incommensurable in length with FG, KH, HM are rational straight lines commensurable in square only, and therefore HN is medial. [X. 21] Therefore HN is either rational or medial. But HN is equal to AC; therefore AC is either rational or medial.",
+  "ai_proof_text": "10.25\n**Statement:** The rectangle contained by medial straight lines commensurable in square only is either rational or medial.\n\n**Step 1.** Let a and b be the given medial straight lines, commensurable in square only, and let u be the assigned rational straight line. Write S(t) for the square on t and R(s,t) for the rectangle contained by s and t. Thus S(a) and S(b) are commensurable. We shall express R(a,b) as a rectangle with rational sides. [D2.1, D10.1.2, D10.1.3]\n\n**Step 2.** Construct a third proportional x to u and a, so that u:a = a:x. Then R(u,x) = S(a). This is the square on the medial straight line a applied to the rational straight line u; consequently its breadth x is rational. In particular, S(x) is commensurable with S(u). [6.11, 6.17, 10.22, D10.1.2, D10.1.3]\n\n**Step 3.** Construct a fourth proportional y to a, b, and x, so that a:b = x:y. The squares on these proportional straight lines are proportional, giving S(a):S(b) = S(x):S(y). The direct application to squares is the chosen route, since it immediately matches the given square-commensurability. [6.12, 6.22]\n\n**Step 4.** Since S(a) and S(b) are commensurable, the proportion in Step 3 implies that S(x) and S(y) are commensurable. But S(x) is also commensurable with S(u), by Step 2. Therefore S(y) is commensurable with S(u), and y is rational. [10.11, 10.12, D10.1.2, D10.1.3]\n\n**Step 5.** Rectangles with the same height are to one another as their bases. Hence\nS(a):R(a,b) = a:b,\nand\nR(u,x):R(u,y) = x:y.\nCombining these equalities with Step 3 gives S(a):R(a,b) = R(u,x):R(u,y). Since S(a) = R(u,x), the same magnitude has the same ratio to R(a,b) and R(u,y); therefore R(a,b) = R(u,y). [6.1, 5.11, 5.9]\n\n**Step 6.** If u and y are commensurable in length, their rectangle R(u,y) is rational, since both sides are rational. Thus the equal rectangle R(a,b) is rational. [10.19; Step 5]\n\n**Step 7.** If u and y are incommensurable in length, they are nevertheless commensurable in square by Step 4. They are therefore rational straight lines commensurable in square only. By 10.21, the side of a square equal to R(u,y) is medial; that is, R(u,y) is a medial area. Thus R(a,b) is medial by Step 5. The two cases exhaust the possibilities, so the rectangle contained by the given medial straight lines is either rational or medial. [D10.1.1, D10.1.2, 10.21]\n\n**USED:** 10.11, 10.12, 10.19, 10.21, 10.22, 5.11, 5.9, 6.1, 6.11, 6.12, 6.17, 6.22, D10.1.1, D10.1.2, D10.1.3, D2.1\n**Human refs (from References field):** 10.11, 10.19, 10.21, 10.22, 5.11, 6.1, 6.17\n**Jaccard:** 0.438 — AI adds ['10.12', '5.9', '6.11', '6.12', '6.22', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D2.1']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.19",
+    "10.21",
+    "10.22",
+    "5.11",
+    "5.9",
+    "6.1",
+    "6.11",
+    "6.12",
+    "6.17",
+    "6.22",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D2.1"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.19",
+    "10.21",
+    "10.22",
+    "5.11",
+    "6.1",
+    "6.17"
+  ],
+  "ai_only": [
+    "10.12",
+    "5.9",
+    "6.11",
+    "6.12",
+    "6.22",
+    "D10.1.1",
+    "D10.1.2",
+    "D10.1.3",
+    "D2.1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.438,
+  "proof_summary": "**Step 1.** Let a and b be the given medial straight lines, commensurable in square only, and let u be the assigned rational straight line. Write S(t) for the square on t and R(s,t) for the rectangle "
+}

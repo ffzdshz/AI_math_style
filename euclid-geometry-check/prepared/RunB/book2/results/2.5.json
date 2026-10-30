@@ -1,0 +1,31 @@
+{
+  "proposition": "2.5",
+  "run": "RunB",
+  "book": 2,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "C is the midpoint of AB (AC = CB); D is on AB creating unequal segments",
+      "type": "point_position_on_line"
+    },
+    {
+      "step": "Step 2",
+      "claim": "D lies on segment CB (CB is cut at point D), implying linear order A-C-D-B",
+      "type": "point_position_on_line"
+    },
+    {
+      "step": "Step 3",
+      "claim": "D lies on segment CB (CB is cut at D), same ordering A-C-D-B",
+      "type": "point_position_on_line"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AD = AC + CD = CB + CD, consistent with A-C-D-B ordering",
+      "type": "segment_addition"
+    }
+  ],
+  "configuration_map": "All points lie on a single straight line AB in the order A-C-D-B. C is the midpoint of AB so AC = CB. D is between C and B, so CB = CD + DB and AD = AC + CD = CB + CD. The entire proof operates algebraically on lengths and areas (rectangles and squares) derived from this linear configuration. No auxiliary points are constructed off the line.",
+  "pass_reason": "The proof is essentially algebraic, applying Props 2.1, 2.3, and 2.4 as algebraic identities to lengths on a line. The only spatial claims concern the collinear ordering A-C-D-B, which is consistently maintained in every step. There are no angle decompositions, no interior/exterior claims, no ray orderings — nothing that could produce a spatial configuration contradiction."
+}

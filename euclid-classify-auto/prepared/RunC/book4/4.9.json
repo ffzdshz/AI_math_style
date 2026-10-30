@@ -1,0 +1,30 @@
+{
+  "proposition": "4.9",
+  "book": 4,
+  "statement": "About a given square to circumscribe a circle.",
+  "heath_proof": "Let ABCD be the given square; thus it is required to circumscribe a circle about the square ABCD. For let AC, BD be joined, and let them cut one another at E. Then, since DA is equal to AB, and AC is common, therefore the two sides DA, AC are equal to the two sides BA, AC; and the base DC is equal to the base BC; therefore the angle DAC is equal to the angle BAC. [I. 8]  Therefore the angle DAB is bisected by AC. Similarly we can prove that each of the angles ABC, BCD, CDA is bisected by the straight lines AC, DB. Now, since the angle DAB is equal to the angle ABC, and the angle EAB is half the angle DAB, and the angle EBA half the angle ABC, therefore the angle EAB is also equal to the angle EBA; so that the side EA is also equal to EB. [I. 6] Similarly we can prove that each of the straight lines EA, EB is equal to each of the straight lines EC, ED. Therefore the four straight lines EA, EB, EC, ED are equal to one another. Therefore the circle described with centre E and distance one of the straight lines EA, EB, EC, ED will pass also through the remaining points; and it will have been circumscribed about the square ABCD. Let it be circumscribed, as ABCD. Therefore about the given square a circle has been circumscribed.",
+  "ai_proof_text": "4.9\n**Statement:** About a given square to circumscribe a circle.\n\n**Step 1.** Let ABCD be the given square, with right angles at each vertex and all sides equal [D1.22].\n\n**Step 2.** Draw the diagonals AC and BD [P1], and let them intersect at point E.\n\n**Step 3.** Since ABCD is a square, AB = AD and BC = DC [D1.22]. In triangles ABC and ADC, we have AB = AD, BC = DC, and AC is common. Therefore triangle ABC is congruent to triangle ADC [1.8], and so angle BAC = angle DAC.\n\n**Step 4.** Since angle BAD is a right angle [D1.22] and angle BAC = angle DAC, each of these equals half a right angle.\n\n**Step 5.** Similarly, since AB = CB and AD = CD, in triangles ABD and CBD we have AB = CB, AD = CD, and BD is common. Therefore triangle ABD is congruent to triangle CBD [1.8], and so angle ABD = angle CBD.\n\n**Step 6.** Since angle ABC is a right angle [D1.22] and angle ABD = angle CBD, each of these equals half a right angle.\n\n**Step 7.** Now consider triangle ABE. We have angle BAE = half a right angle [Step 4] and angle ABE = half a right angle [Step 6]. Since the two base angles are equal, the sides opposite them are equal, so EA = EB [1.6].\n\n**Step 8.** By the same reasoning in triangle BCE: angle CBE = half a right angle [Step 6] and angle BCE = half a right angle (since angle BCA = angle BAC = half a right angle, from Step 3 applied to the congruence of triangles ABC and ADC, noting angle BCA corresponds to angle BAC in the congruent pair). Therefore EB = EC [1.6].\n\n**Step 9.** Similarly in triangle CDE: angle DCE = angle DAC = half a right angle (since angle DCA = angle BAC by the congruence in Step 3, and angle BCA = angle BAC, so angle DCA = half a right angle). And angle CDE = half a right angle (by an argument symmetric to Step 6, from the congruence of triangles ACD and BCD giving angle ADC bisected by diagonal, so angle CDE = half a right angle). Therefore EC = ED [1.6].\n\n**Step 10.** From Steps 7, 8, and 9, we have EA = EB = EC = ED [CN1].\n\n**Step 11.** With centre E and radius EA, describe a circle [P3]. Since EA = EB = EC = ED, the circle passes through all four vertices A, B, C, and D.\n\n**Step 12.** Therefore the circle is circumscribed about the square ABCD [D4.6], which is what was required.\n\n**USED:** 1.6, 1.8, CN1, D1.22, D4.6, P1, P3\n**Human refs (from References field):** 1.6, 1.8\n**Jaccard:** 0.286 — AI adds ['CN1', 'D1.22', 'D4.6', 'P1', 'P3']",
+  "ai_used": [
+    "1.6",
+    "1.8",
+    "CN1",
+    "D1.22",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_refs": [
+    "1.6",
+    "1.8"
+  ],
+  "ai_only": [
+    "CN1",
+    "D1.22",
+    "D4.6",
+    "P1",
+    "P3"
+  ],
+  "heath_only": [],
+  "jaccard": 0.286,
+  "proof_summary": "**Step 1.** Let ABCD be the given square, with right angles at each vertex and all sides equal [D1.22].  **Step 2.** Draw the diagonals AC and BD [P1], and let them intersect at point E.  **Step 3.** "
+}

@@ -1,0 +1,33 @@
+{
+  "proposition": "3.22",
+  "book": 3,
+  "statement": "The opposite angles of quadrilaterals in circles are equal to two right angles.",
+  "heath_proof": "Let ABCD be a circle, and let ABCD be a quadrilateral in it; I say that the opposite angles are equal to two right angles. Let AC, BD be joined. Then, since in any triangle the three angles are equal to two right angles, [I. 32] the three angles CAB, ABC, BCA of the triangle ABC are equal to two right angles. But the angle CAB is equal to the angle BDC, for they are in the same segment BADC; [III. 21] and the angle ACB is equal to the angle ADB, for they are in the same segment ADCB; therefore the whole angle ADC is equal to the angles BAC, ACB. Let the angle ABC be added to each; therefore the angles ABC, BAC, ACB are equal to the angles ABC, ADC. But the angles ABC, BAC, ACB are equal to two right angles; therefore the angles ABC, ADC are also equal to two right angles. Similarly we can prove that the angles BAD, DCB are also equal to two right angles.",
+  "ai_proof_text": "3.22\n**Statement:** The opposite angles of quadrilaterals in circles are equal to two right angles.\n\n**Step 1.** Let ABCD be a quadrilateral inscribed in a circle, so that all four vertices A, B, C, D lie on the circumference [D4.3]. We are to show that the opposite angles, namely angle BAD + angle BCD, and angle ABC + angle ADC, each equal two right angles.\n\n**Step 2.** Let O be the centre of the circle [3.1]. Join OB and OD [P1].\n\n**Step 3.** The angle BAD is an angle at the circumference standing on the arc BCD (the arc from B to D that does not contain A). The angle BOD on the same side as A — that is, the angle BOD that faces arc BCD — is the angle at the centre standing on the same arc BCD. By Proposition 3.20, the angle BOD (reflex or non-reflex as appropriate) standing on arc BCD is double the angle BAD.\n\n**Step 4.** Similarly, the angle BCD is an angle at the circumference standing on the arc BAD (the arc from B to D that contains A). The angle BOD on the same side as C — that is, the remaining angle BOD that faces arc BAD — is the angle at the centre standing on the same arc BAD. By Proposition 3.20, this angle BOD standing on arc BAD is double the angle BCD.\n\n**Step 5.** Let the angle at the centre standing on arc BCD be called alpha, and the angle at the centre standing on arc BAD be called beta. Then alpha = 2 * angle BAD, and beta = 2 * angle BCD [Steps 3-4, by 3.20].\n\n**Step 6.** Now alpha and beta together constitute the full angle around the centre O formed by the two rays OB and OD. Since OB and OD are two straight lines meeting at O, the angles on one side of line BD through O and the angles on the other side each sum to two right angles by Proposition 1.13. More precisely, the total of all angles around O formed by OB and OD equals four right angles: the angles on one side of the line through B, O, D (if it is a straight line) sum to two right angles, or if BOD is not a straight line, we apply 1.15 and 1.13 to see that the pair of angles alpha and beta (which together go all the way around O) sum to four right angles. Formally: draw the diameter from B through O; the angles on each side of this diameter sum to two right angles [1.13], giving four right angles total around O. The angles alpha and beta partition this full revolution, so alpha + beta = four right angles.\n\n**Step 7.** Since alpha + beta = four right angles, and alpha = 2 * angle BAD and beta = 2 * angle BCD, we have 2 * angle BAD + 2 * angle BCD = four right angles. Halving both sides (which follows from CN1 and the properties of equal magnitudes), angle BAD + angle BCD = two right angles.\n\n**Step 8.** By the same argument applied to the diagonal AC: join OA and OC [P1]. The angle ABC stands on arc ADC, and the angle at the centre AOC on arc ADC is double angle ABC [3.20]. The angle ADC stands on arc ABC, and the angle at the centre AOC on arc ABC is double angle ADC [3.20]. The two central angles around O (formed by OA and OC) again sum to four right angles [1.13]. Therefore 2 * angle ABC + 2 * angle ADC = four right angles, whence angle ABC + angle ADC = two right angles.\n\n**Step 9.** Therefore the opposite angles of the quadrilateral ABCD inscribed in the circle are together equal to two right angles. Q.E.F.\n\n**USED:** 1.13, 3.1, 3.20, CN1, D4.3, P1\n**Human refs (from References field):** 1.32, 3.21\n**Jaccard:** 0.000 — AI adds ['1.13', '3.1', '3.20', 'CN1', 'D4.3', 'P1']; Human adds ['1.32', '3.21']",
+  "ai_used": [
+    "1.13",
+    "3.1",
+    "3.20",
+    "CN1",
+    "D4.3",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.32",
+    "3.21"
+  ],
+  "ai_only": [
+    "1.13",
+    "3.1",
+    "3.20",
+    "CN1",
+    "D4.3",
+    "P1"
+  ],
+  "heath_only": [
+    "1.32",
+    "3.21"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let ABCD be a quadrilateral inscribed in a circle, so that all four vertices A, B, C, D lie on the circumference [D4.3]. We are to show that the opposite angles, namely angle BAD + angle B"
+}

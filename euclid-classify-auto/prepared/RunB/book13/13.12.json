@@ -1,0 +1,44 @@
+{
+  "proposition": "13.12",
+  "book": 13,
+  "statement": "If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.",
+  "heath_proof": "Let ABC be a circle, and let the equilateral triangle ABC be inscribed in it; I say that the square on one side of the triangle ABC is triple of the square on the radius of the circle. For let the centre D of the circle ABC be taken, let AD be joined and carried through to E, and let BE be joined. Then, since the triangle ABC is equilateral, therefore the circumference BEC is a third part of the circumference of the circle ABC. Therefore the circumference BE is a sixth part of the circumference of the circle; therefore the straight line BE belongs to a hexagon; therefore it is equal to the radius DE. [IV. 15] And, since AE is double of DE, the square on AE is quadruple of the square on ED, that is, of the square on BE. But the square on AE is equal to the squares on AB, BE; [III. 31, I. 47] therefore the squares on AB, BE are quadruple of the square on BE. Therefore, separando, the square on AB is triple of the square on BE. But BE is equal to DE; therefore the square on AB is triple of the square on DE. Therefore the square on the side of the triangle is triple of the square on the radius.",
+  "ai_proof_text": "13.12\n**Statement:** If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.\n\n**Step 1.** Let ABC be an equilateral triangle inscribed in a circle with center E [D1.15, D1.20, D4.3]. Find the center E of the circle [3.1].\n\n**Step 2.** Draw the diameter AD of the circle through A and E, so that A, E, D are collinear with D on the circumference [D1.17, P1, P2]. Then AE = ED, each being a radius of the circle, and AD = AE + ED. Join BD [P1].\n\n**Step 3.** Since triangle ABC is equilateral, AB = BC = CA [D1.20]. Equal straight lines in a circle cut off equal arcs [3.28], so arc AB = arc BC = arc CA. These three arcs together compose the whole circumference, so each arc is one-third of the circumference.\n\n**Step 4.** Since AD is a diameter, the arc ABD (from A to D passing through B) is a semicircle, that is, one-half of the circumference [D1.17, D1.18]. Now arc ABD = arc AB + arc BD. Since arc AB is one-third of the circumference, arc BD is one-half minus one-third, which is one-sixth of the circumference.\n\n**Step 5.** Since arc BD is one-sixth of the circumference, BD is the side of a regular hexagon inscribed in the circle. By the construction and proof of the regular hexagon inscribed in a circle [4.15], the side of the inscribed hexagon equals the radius. Therefore BD = AE.\n\n**Step 6.** Since AD is a diameter and B is a point on the circumference, the angle ABD is an angle in a semicircle and is therefore a right angle [3.31].\n\n**Step 7.** In the right-angled triangle ABD with the right angle at B, by the Pythagorean theorem, the square on AD equals the sum of the squares on AB and BD [1.47]. That is, sq(AD) = sq(AB) + sq(BD).\n\n**Step 8.** Since AE = ED (both radii) and AED is a straight line, the diameter AD is cut into two equal parts at E. By Proposition 2.4, the square on the whole line AD equals the squares on the two parts AE and ED together with twice the rectangle contained by AE and ED. Since AE = ED, this gives sq(AD) = sq(AE) + sq(AE) + 2 * sq(AE) = 4 * sq(AE). That is, the square on the diameter is four times the square on the radius.\n\n**Step 9.** From Step 5, BD = AE, so sq(BD) = sq(AE). Substituting into the result of Step 7: 4 * sq(AE) = sq(AB) + sq(AE).\n\n**Step 10.** Subtracting the square on AE from both sides [CN3], we obtain sq(AB) = 3 * sq(AE). That is, the square on the side of the equilateral triangle is triple the square on the radius of the circle.\n\nTherefore, if an equilateral triangle is inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle. Q.E.D.\n\n**USED:** 1.47, 2.4, 3.1, 3.28, 3.31, 4.15, CN3, D1.15, D1.17, D1.18, D1.20, D4.3, P1, P2\n**Human refs (from References field):** 1.47, 3.31, 4.15\n**Jaccard:** 0.214 — AI adds ['2.4', '3.1', '3.28', 'CN3', 'D1.15', 'D1.17', 'D1.18', 'D1.20', 'D4.3', 'P1', 'P2']",
+  "ai_used": [
+    "1.47",
+    "2.4",
+    "3.1",
+    "3.28",
+    "3.31",
+    "4.15",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "D1.20",
+    "D4.3",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.47",
+    "3.31",
+    "4.15"
+  ],
+  "ai_only": [
+    "2.4",
+    "3.1",
+    "3.28",
+    "CN3",
+    "D1.15",
+    "D1.17",
+    "D1.18",
+    "D1.20",
+    "D4.3",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.214,
+  "proof_summary": "**Step 1.** Let ABC be an equilateral triangle inscribed in a circle with center E [D1.15, D1.20, D4.3]. Find the center E of the circle [3.1].  **Step 2.** Draw the diameter AD of the circle through "
+}

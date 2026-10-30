@@ -1,0 +1,24 @@
+{
+  "proposition": "7.14",
+  "book": 7,
+  "statement": "If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.",
+  "heath_proof": "Let there be as many numbers as we please A, B, C, and others equal to them in multitude D, E, F, which taken two and two are in the same ratio, so that, as A is to B, so is D to E, and, as B is to C, so is E to F; I say that, ex aequali, as A is to C, so also is D to F.  For, since, as A is to B, so is D to E, therefore, alternately, as A is to D, so is B to E. [VII. 13] Again, since, as B is to C, so is E to F, therefore, alternately, as B is to E, so is C to F. [VII. 13]  But, as B is to E, so is A to D; therefore also, as A is to D, so is C to F. Therefore, alternately, as A is to C, so is D to F.",
+  "ai_proof_text": "7.14\n**Statement:** If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.\n\n**Step 1.** Let A₁, …, Aₙ and B₁, …, Bₙ be two lists of numbers equal in multitude, with n ≥ 2, such that, for every i < n,\nAᵢ : Aᵢ₊₁ = Bᵢ : Bᵢ₊₁.\nWe must prove A₁ : Aₙ = B₁ : Bₙ, which is the asserted proportion ex aequali. [Hypothesis; D5.17]\n\n**Step 2.** Choose numerical alternation, since it applies directly to the given proportions without translating them into proportions of magnitudes. Applying 7.13 to each proportion in Step 1 gives\nAᵢ : Bᵢ = Aᵢ₊₁ : Bᵢ₊₁\nfor every i < n. [7.13]\n\n**Step 3.** By the definition of numerical proportion, these equalities say that each Aᵢ has the same multiple, part, or parts relation to Bᵢ as Aᵢ₊₁ has to Bᵢ₊₁. Repeatedly transmitting this sameness along the finite chain yields\nA₁ : B₁ = Aₙ : Bₙ. [D7.20; CN1]\n\n**Step 4.** Applying numerical alternation once more gives\nA₁ : Aₙ = B₁ : Bₙ.\nThus the first number is to the last in the first list as the first is to the last in the second list: the numbers are in the same ratio ex aequali, as required. [7.13; D5.17]\n\n**USED:** 7.13, CN1, D5.17, D7.20\n**Human refs (from References field):** 7.13\n**Jaccard:** 0.250 — AI adds ['CN1', 'D5.17', 'D7.20']",
+  "ai_used": [
+    "7.13",
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_refs": [
+    "7.13"
+  ],
+  "ai_only": [
+    "CN1",
+    "D5.17",
+    "D7.20"
+  ],
+  "heath_only": [],
+  "jaccard": 0.25,
+  "proof_summary": "**Step 1.** Let A₁, …, Aₙ and B₁, …, Bₙ be two lists of numbers equal in multitude, with n ≥ 2, such that, for every i < n, Aᵢ : Aᵢ₊₁ = Bᵢ : Bᵢ₊₁. We must prove A₁ : Aₙ = B₁ : Bₙ, which is the asserte"
+}

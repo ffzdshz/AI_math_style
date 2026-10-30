@@ -1,0 +1,13 @@
+{
+  "proposition": "10.98",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Both proofs share the same backbone of key intermediate conclusions: (1) decomposing sq(AB) via II.7 and applying the components to the rational line CD, (2) showing the breadth for the sum of squares is rational and incommensurable with CD while the breadth for twice the rectangle is rational and commensurable with CD, (3) concluding the result is an apotome via 10.73, and (4) establishing it is specifically a second apotome via D10.3.2. The citation differences reflect different sub-routes to the same conclusions: the AI uses 10.13 and 10.16 for transitivity of incommensurability where Heath uses VI.1 and X.11 more directly, the AI uses 10.14 to transfer commensurability properties where Heath constructs a mean proportional using 5.11 and 6.17, and the AI cites 10.22 for each square individually rather than using 10.23 to establish mediality of the combined area. These are all depth and method variations within the same logical backbone, making this a granularity difference (Q2 Case A). E was considered for Step 27's assertion that sq(AF) > sq(BF) by a commensurable amount, but the audit record showed missing_is = expansion since the AI cites 10.14 and 10.17 as supporting propositions, making the gap one of terse exposition rather than a genuine logical defect.",
+  "jaccard": 0.5,
+  "ai_citations": "10.11|10.13|10.14|10.15|10.16|10.17|10.20|10.22|10.73|10.74|2.4|2.7|6.1|CN2|CN3|D10.1.3|D10.3.2",
+  "heath_citations": "10.11|10.15|10.17|10.20|10.22|10.23|10.73|10.74|2.7|5.11|6.1|6.17|D10.3.2",
+  "ai_only": "10.13|10.14|10.16|2.4|CN2|CN3|D10.1.3",
+  "heath_only": "10.23|5.11|6.17",
+  "audit_record": "CANDIDATE E — 10.98\n  violated_claim : sq(AF) > sq(BF) by the square on a line commensurable with AF (Step 27)\n  failure_mode   : unsupported_assertion\n  missing_is     : expansion (the AI cites 10.14 and 10.17, and the overall chain of reasoning is present but compressed)\n  evidence       : Step 27: \"they arise from the construction of 10.31 or equivalent, where sq(AF) > sq(BF) by the square on a line commensurable with AF. By 10.14, since CD * CK = sq(AF) and CD * KL = sq(BF), and sq(AF) > sq(BF) by a square commensurable with AF, then sq(CK) > sq(KL) by a square commensurable with CK\"\n  why_not_terse  : Cannot be completed convincingly — the AI does cite 10.14 and 10.17 which together would establish the result, and the gap is in the premise for 10.14 which is asserted tersely rather than truly missing. The argument is compressed but not logically broken. Reclassify as NOT-E."
+}

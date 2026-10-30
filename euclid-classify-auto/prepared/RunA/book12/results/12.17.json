@@ -1,0 +1,13 @@
+{
+  "proposition": "12.17",
+  "category": "D",
+  "category_label": "Path difference",
+  "error_type": "",
+  "analysis": "Q2 determines this classification. The AI and Heath proofs have fundamentally different backbones. Heath constructs the polyhedron by drawing a perpendicular OA from center to sphere surface, creating planes through OA, inscribing arcs in the resulting semicircles, then establishing an intricate chain of parallel lines (WV parallel to KB via VI.2, PV parallel to SW via XI.6), showing KBPS is a quadrilateral in a circle (XI.7, XI.9, I.33), and using a detailed algebraic argument with squares and rectangles (III.31, VI.8) to prove AX > AZ > AG. The AI takes a rotational approach, explicitly citing 12.16 to inscribe the polygon, then rotating the construction around an axis by passing planes through AC, constructing the polyhedron from connected vertices in adjacent planes, and arguing that the perpendicular from center to each face exceeds the lesser sphere's radius using a Pythagorean framework (OT^2 + r^2 = R^2). E was considered for the terse assertion of OT >= OS in Step 16, but the audit record yields missing_is = expansion (the claim is stated with supporting structure, just not fully expanded), so the lenience rule applies and the verdict is NOT-E. The very low Jaccard (0.13) with 7 AI-only and 13 Heath-only citations confirms the substantial path divergence.",
+  "jaccard": 0.13,
+  "ai_citations": "1.11|1.4|1.47|11.11|11.38|12.16|4.1|D11.14|D3.4|P1",
+  "heath_citations": "1.26|1.33|1.47|11.11|11.18|11.2|11.6|11.7|11.9|3.27|3.31|6.2|6.8|D11.14|D11.3|D11.4",
+  "ai_only": "1.11|1.4|11.38|12.16|4.1|D3.4|P1",
+  "heath_only": "1.26|1.33|11.18|11.2|11.6|11.7|11.9|3.27|3.31|6.2|6.8|D11.3|D11.4",
+  "audit_record": "CANDIDATE E — 12.17\n  violated_claim : OT >= OS (perpendicular from O to face plane >= perpendicular from O to polygon side)\n  failure_mode   : unsupported_assertion\n  missing_is     : expansion  # The AI states the claim and sketches why, but doesn't fully expand the argument\n  evidence       : Step 16: \"OT >= OS > OE\" - asserted without detailed derivation; the AI provides OT^2 + r^2 = R^2 framework but does not rigorously derive the inequality\n  why_not_terse  : Cannot complete convincingly - the AI provides structural reasoning (Pythagorean framework, angle subtension argument) that informally supports the claim, making this an expansion gap rather than a logical gap"
+}

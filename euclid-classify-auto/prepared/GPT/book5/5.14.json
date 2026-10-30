@@ -1,0 +1,28 @@
+{
+  "proposition": "5.14",
+  "book": 5,
+  "statement": "If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.",
+  "heath_proof": "For let a first magnitude A have the same ratio to a second B as a third C has to a fourth D; and let A be greater than C; I say that B is also greater than D. For, since A is greater than C, and B is another, chance, magnitude, therefore A has to B a greater ratio than C has to B. [V. 8] But, as A is to B, so is C to D; therefore C has also to D a greater ratio than C has to B. [V. 13]  But that to which the same has a greater ratio is less; [V. 10] therefore D is less than B; so that B is greater than D.  Similarly we can prove that, if A be equal to C, B will also be equal to D; and, if A be less than C, B will also be less than D.",
+  "ai_proof_text": "5.14\n**Statement:** If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less.\n\n**Step 1.** Let A, B, C, D be the first, second, third, and fourth magnitudes, with A:B = C:D. [Hypothesis.] Path choice: for the strict comparisons, use ratios with a common term—first 5.8, then 5.13 to transfer the comparison, and finally 5.10 to compare the magnitudes.\n\n**Step 2.** Suppose A > C. Then A:B > C:B, since the greater magnitude has to the same a greater ratio than the less has. [5.8.] But C:D = A:B by the hypothesis; therefore C:D > C:B. [5.13.] Of magnitudes to which the same magnitude has a ratio, that to which it has the greater ratio is less. Hence D < B, that is, B > D. [5.10.]\n\n**Step 3.** Suppose A = C. Equal magnitudes have to the same the same ratio, so A:B = C:B. [5.7.] Together with the hypothesis A:B = C:D, this gives C:B = C:D, since ratios which are the same with the same ratio are the same with one another. [5.11.] Therefore B = D, since magnitudes to which the same has the same ratio are equal. [5.9.] Here the direct equality criterion is used rather than excluding the two strict inequalities.\n\n**Step 4.** Suppose A < C. Then C:D > A:D, since the greater magnitude has to the same a greater ratio than the less has. [5.8.] Since A:B = C:D by the hypothesis, it follows that A:B > A:D. [5.13.] Thus B < D, since that to which the same magnitude has a greater ratio is less. [5.10.]\n\n**Step 5.** Consequently, when the first magnitude is greater than, equal to, or less than the third, the second is respectively greater than, equal to, or less than the fourth. [Steps 2–4.] This proves the proposition.\n\n**USED:** 5.10, 5.11, 5.13, 5.7, 5.8, 5.9\n**Human refs (from References field):** 5.10, 5.13, 5.8\n**Jaccard:** 0.500 — AI adds ['5.11', '5.7', '5.9']",
+  "ai_used": [
+    "5.10",
+    "5.11",
+    "5.13",
+    "5.7",
+    "5.8",
+    "5.9"
+  ],
+  "heath_refs": [
+    "5.10",
+    "5.13",
+    "5.8"
+  ],
+  "ai_only": [
+    "5.11",
+    "5.7",
+    "5.9"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let A, B, C, D be the first, second, third, and fourth magnitudes, with A:B = C:D. [Hypothesis.] Path choice: for the strict comparisons, use ratios with a common term—first 5.8, then 5.13"
+}

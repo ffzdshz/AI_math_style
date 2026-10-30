@@ -1,0 +1,86 @@
+{
+  "proposition": "4.15",
+  "run": "GPT",
+  "book": 4,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "O is the center of the circle; A is on the circumference; OA is a radius",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Equilateral triangles OAB and OAF constructed on opposite sides of line OA",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 2",
+      "claim": "B lies on the circle since OB = OA = radius; F lies on the circle since OF = OA = radius",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 3",
+      "claim": "angle AOB = angle AOF = alpha, with 3*alpha = two right angles (so alpha = 60 degrees)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AO produced through O meets circle at D (AD is a diameter); BO produced through O meets circle at E (BE is a diameter); FO produced through O meets circle at C (FC is a diameter)",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "OC and OF are opposite rays since F-O-C are collinear (FC is a diameter)",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle AOC + angle AOF = two right angles (supplementary angles on straight line FC)",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle AOC = 2*alpha (subtracting angle AOF = alpha from two right angles = 3*alpha)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "B and C are both on the side of diameter AD opposite to F",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Ray OB lies inside angle AOC (since alpha < 2*alpha and B, C on same side of AD)",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 5",
+      "claim": "angle AOC = angle AOB + angle BOC, so angle BOC = alpha",
+      "type": "angle_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Vertical angles: angle COD = angle FOA, angle DOE = angle AOB, angle EOF = angle BOC (all equal alpha)",
+      "type": "angle_measure"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Vertices occur in cyclic order A, B, C, D, E, F around the circle; all six central angles equal alpha",
+      "type": "ray_ordering"
+    },
+    {
+      "step": "Step 6",
+      "claim": "All six radial triangles (OAB, OBC, OCD, ODE, OEF, OFA) have two sides equal to the radius and included angle alpha; by SAS they are congruent",
+      "type": "triangle_congruence"
+    },
+    {
+      "step": "Step 7",
+      "claim": "At each vertex, the interior angle of the hexagon equals the sum of the base angles of two adjacent radial triangles: alpha + alpha = 2*alpha",
+      "type": "angle_decomposition"
+    }
+  ],
+  "configuration_map": "Six points A, B, C, D, E, F equally spaced on a circle with center O, each separated by central angle alpha = 60 degrees. Three diameters AD, BE, FC all pass through O. Going around the circle from A: B is at 60 degrees, C at 120 degrees, D at 180 degrees (diametrically opposite A), E at 240 degrees, F at 300 degrees. B and F are on opposite sides of diameter AD (constructed as equilateral triangles on opposite sides of radius OA). C is diametrically opposite F, so C is on the same side of AD as B. E is diametrically opposite B. The center O is inside the hexagon, and from any vertex the ray to O falls between the two sides of the hexagon, validating the interior angle decomposition.",
+  "pass_reason": "All spatial claims are mutually consistent. The equilateral triangle construction on the radius correctly places B and F on the circle on opposite sides of OA. The diameter extensions correctly place C opposite F and E opposite B. The angle arithmetic (supplementary angles, vertical angles, additive decomposition with OB between OA and OC) is valid throughout. The interior angle decomposition at each vertex is valid because O lies inside the regular hexagon. No configuration contradictions found."
+}

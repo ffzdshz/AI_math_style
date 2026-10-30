@@ -1,0 +1,28 @@
+{
+  "proposition": "3.2",
+  "book": 3,
+  "statement": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+  "heath_proof": "Let ABC be a circle, and let two points A, B be taken at random on its circumference; I say that the straight line joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as AEB; let the centre of the circle ABC be taken [III. 1], and let it be D; let DA, DB be joined, and let DFE be drawn through. Then, since DA is equal to DB, the angle DAE is also equal to the angle DBE. [I. 5]And, since one side AEB of the triangle DAE is produced, the angle DEB is greater than the angle DAE. [I. 16]  But the angle DAE is equal to the angle DBE; therefore the angle DEB is greater than the angle DBE. And the greater angle is subtended by the greater side; [I. 19] therefore DB is greater than DE. But DB is equal to DF;  therefore DF is greater than DE,   the less than the greater: which is impossible. Therefore the straight line joined from A to B will not fall outside the circle. Similarly we can prove that neither will it fall on the circumference itself; therefore it will fall within.",
+  "ai_proof_text": "3.2\n**Statement:** If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.\n\n**Step 1.** Let ABC be a circle, and let A and B be two points taken on its circumference. Join the straight line AB [P1]. We must show that AB falls within the circle.\n\n**Step 2.** Find the centre E of circle ABC [3.1]. Join EA and EB [P1].\n\n**Step 3.** Take an arbitrary point F on the straight line AB between A and B. We shall show that F lies within the circle by proving that EF is less than the radius.\n\n**Step 4.** Since EA and EB are both straight lines drawn from the centre E to the circumference of circle ABC, we have EA = EB [D1.15].\n\n**Step 5.** In triangle EAB, since EA = EB, the angles opposite these equal sides are equal: angle EAB = angle EBA [1.5].\n\n**Step 6.** Consider triangle AEF (where F lies on AB between A and B). The angle EFA is an exterior angle of triangle AEF with respect to the side AF produced to B. Wait — more precisely, angle EFB is an exterior angle of triangle AEF, since when side AF is produced beyond F to B, angle EFB is exterior. Therefore angle EFB is greater than the interior and opposite angle EAF [1.16].\n\n**Step 7.** Now angle EAF is the same angle as angle EAB (since F lies on AB). And angle EAB = angle EBA [from Step 5]. And angle EBA is the same angle as angle EBF (since F lies on AB). Therefore angle EFB > angle EBF.\n\n**Step 8.** In triangle EBF, since angle EFB > angle EBF, the side opposite the greater angle is greater than the side opposite the lesser angle: EB > EF [1.19].\n\n**Step 9.** But EB is a radius of circle ABC, being drawn from the centre E to the circumference [D1.15]. Therefore EF is less than the radius, which means point F lies within the circle.\n\n**Step 10.** Since F was an arbitrary point on line segment AB, every point of AB lies within the circle. Therefore the straight line joining two points on the circumference of a circle falls within the circle [D1.15]. Q.E.D.\n\n**USED:** 1.16, 1.19, 1.5, 3.1, D1.15, P1\n**Human refs (from References field):** 1.16, 1.19, 1.5, 3.1\n**Jaccard:** 0.667 — AI adds ['D1.15', 'P1']",
+  "ai_used": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1",
+    "D1.15",
+    "P1"
+  ],
+  "heath_refs": [
+    "1.16",
+    "1.19",
+    "1.5",
+    "3.1"
+  ],
+  "ai_only": [
+    "D1.15",
+    "P1"
+  ],
+  "heath_only": [],
+  "jaccard": 0.667,
+  "proof_summary": "**Step 1.** Let ABC be a circle, and let A and B be two points taken on its circumference. Join the straight line AB [P1]. We must show that AB falls within the circle.  **Step 2.** Find the centre E "
+}

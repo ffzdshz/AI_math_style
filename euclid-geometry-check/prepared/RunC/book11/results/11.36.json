@@ -1,0 +1,46 @@
+{
+  "proposition": "11.36",
+  "run": "RunC",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "A solid angle is constructed equal to the given solid angle via 11.26; edges A, B, C are set off on its three edges for S1",
+      "type": "solid_angle_construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "On the same solid angle, all three edges are set equal to B for equilateral solid S2",
+      "type": "solid_angle_construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Base of S1 is the parallelogram formed by edges A and C with the included angle from the solid angle; height direction is edge B",
+      "type": "base_height_decomposition"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Base of S2 is the parallelogram formed by edges B and B with the same included angle; height direction is edge B",
+      "type": "base_height_decomposition"
+    },
+    {
+      "step": "Step 6",
+      "claim": "S1 and S2 have the same height B, so 11.32 gives S1:S2 = base1:base2",
+      "type": "height_equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Both base parallelograms have the same included angle, so their ratio equals the ratio of the rectangles on their sides (6.1)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 9",
+      "claim": "S1 and S2 have equal bases and the same height, so 11.31 gives S1 = S2",
+      "type": "volume_equality"
+    }
+  ],
+  "configuration_map": "Two parallelepipedal solids S1 and S2 share the same solid angle. The solid angle has three edge directions. Edge position 1: length A in S1, length B in S2. Edge position 2 (height direction): length B in both. Edge position 3: length C in S1, length B in S2. The base of each solid is the parallelogram on edge positions 1 and 3, with the included angle from the solid angle. The height direction is edge position 2, which has length B in both solids and makes the same angle with the base plane (since the solid angles are identical), giving equal perpendicular heights.",
+  "pass_reason": "The proof is primarily algebraic/proportional, comparing parallelepipeds through edge ratios, base area ratios, and volume ratios. All spatial claims are mutually consistent: both solids share the same solid angle, the base/height decomposition uses corresponding edge positions in both solids, the height equality follows from equal edge lengths in the same angular direction, and all cited propositions (11.26, 11.31, 11.32, 6.1, 6.16) are applied in configurations consistent with their requirements. No spatial configuration contradiction exists."
+}

@@ -1,0 +1,46 @@
+{
+  "proposition": "13.18",
+  "run": "RunA",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "AB is set out as the diameter of a given sphere",
+      "type": "line_segment"
+    },
+    {
+      "step": "Step 1",
+      "claim": "C is on segment AB with AC = (2/3)AB and CB = (1/3)AB, so C lies between A and B dividing it in ratio 2:1",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Semicircle ADB is described on AB as diameter",
+      "type": "circle_construction"
+    },
+    {
+      "step": "Step 1",
+      "claim": "D is the point where the perpendicular from C meets the semicircle ADB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "CD is perpendicular to AB",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle ADB is a right angle (angle in semicircle by 3.31)",
+      "type": "angle_property"
+    },
+    {
+      "step": "Step 2",
+      "claim": "CD is identified as the side of the tetrahedron inscribed in the sphere",
+      "type": "length_identification"
+    }
+  ],
+  "configuration_map": "The proof constructs a single geometric configuration: a semicircle ADB on diameter AB, with point C on AB such that AC:CB = 2:1, and D on the semicircle where the perpendicular from C meets it. Points A, C, B are collinear in that order with C interior to AB. Point D is above the line AB on the semicircle. Triangle ADB has a right angle at D (Thales). The segment CD is perpendicular to AB. All subsequent steps (3-13) are purely algebraic, comparing ratios of side lengths using results from propositions 13.13-13.17. No additional geometric constructions or spatial claims are introduced beyond Step 2.",
+  "pass_reason": "The only spatial configuration in the proof is the semicircle construction in Step 1, and all spatial claims about it (point positions, perpendicularity, angle in semicircle) are mutually consistent. The remainder of the proof is algebraic ratio comparison using results from prior propositions (13.13-13.17), with no new spatial constructions or claims that could create configuration contradictions."
+}

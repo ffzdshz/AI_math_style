@@ -1,0 +1,46 @@
+{
+  "proposition": "12.2",
+  "run": "GPT",
+  "book": 12,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 2",
+      "claim": "Inscribed square has vertices at endpoints of perpendicular diameters; all polygonal sides lie within their circles (3.2); each refinement enlarges the preceding polygon",
+      "type": "construction"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Corresponding central-angle triangles have equal included angles and proportional radial sides, making them similar (6.6); inscribed polygons P_j and Q_j are similar (D6.1)",
+      "type": "similarity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Bisector of angle AOB meets minor arc AB at M; since OA=OB, OM is perpendicular to AB with foot H on segment AB",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Rectangle R formed above AB by parallels to OM through A,B and parallel to AB through M; tangent at M is perpendicular to OM hence parallel to AB (3.16)",
+      "type": "construction"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Circular segment K (bounded by chord AB and minor arc) is contained in rectangle R; points X on minor arc lie between perpendiculars at A and B since inscribed angles XAB, ABX are acute (3.31)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle AMB lies within segment K (chords within circle, 3.2); shares base AB with R and lies between same parallels, so R = 2 times triangle AMB (1.41)",
+      "type": "containment"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Since K is properly contained in R and AMB = R/2, triangle AMB exceeds half of segment K; each refinement removes more than half of total polygonal remainder",
+      "type": "area_comparison"
+    }
+  ],
+  "configuration_map": "O (center): Fixed at center of each circle, equidistant from all circumference points. A, B (consecutive polygon vertices): On circumference, connected by chord; central angle AOB determined by refinement stage. H (foot of perpendicular from O to AB): On segment AB at its midpoint (OA=OB). M (midpoint of minor arc AB): On circumference, opposite side of AB from O; OM passes through H with H between O and M. Rectangle R: On minor-arc side of AB, bounded by AB (base), perpendiculars at A and B (sides), tangent at M (top parallel to AB). Segment K: Between chord AB and minor arc, properly contained in R. Triangle AMB: Vertices A, M, B, contained within K. All positions are mutually consistent throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The geometric construction (inscribed polygons via perpendicular diameters, arc bisection, bounding rectangle for circular segments) is valid and standard. Key spatial arguments — M on the perpendicular bisector of AB extended to the minor arc, tangent at M parallel to AB, segment K contained in rectangle R, triangle AMB exceeding half of K — are all compatible with the established configuration. Steps 6-10 are purely algebraic/proportional (equimultiple criterion, Archimedean property) and introduce no new spatial claims."
+}

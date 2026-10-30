@@ -1,0 +1,35 @@
+{
+  "proposition": "9.20",
+  "book": 9,
+  "statement": "Prime numbers are more than any assigned multitude of prime numbers.",
+  "heath_proof": "Let A, B, C be the assigned prime numbers; I say that there are more prime numbers than A, B, C. For let the least number measured by A, B, C be taken, and let it be DE; let the unit DF be added to DE. Then EF is either prime or not. First, let it be prime; then the prime numbers A, B, C, EF have been found which are more than A, B, C. Next, let EF not be prime; therefore it is measured by some prime number. [VII. 31] Let it be measured by the prime number G. I say that G is not the same with any of the numbers A, B, C. For, if possible, let it be so. Now A, B, C measure DE; therefore G also will measure DE. But it also measures EF. Therefore G, being a number, will measure the remainder, the unit DF: which is absurd. Therefore G is not the same with any one of the numbers A, B, C. And by hypothesis it is prime. Therefore the prime numbers A, B, C, G have been found which are more than the assigned multitude of A, B, C.",
+  "ai_proof_text": "9.20\n**Statement:** Prime numbers are more than any assigned multitude of prime numbers.\n\n**Step 1.** Let p₁, …, pᵣ be any assigned finite collection of distinct prime numbers. Construct a common multiple M as follows: begin with p₁, and successively take the least common multiple of the current number and the next assigned prime by 7.34. Every earlier prime continues to measure the resulting number, since repeating a sum of copies of that prime again gives a sum of copies of it [D7.15]. Thus every pᵢ measures M. If only one prime is assigned, take M = p₁. Construction choice: only the common-multiple property is needed; leastness is not used.\n\n**Step 2.** Let u be a unit and form N = M + u, which is a number [D7.1, D7.2]. Since each pᵢ measures M, each is at most M; and N is greater than M. Consequently N is greater than every assigned prime [D7.5, CN5].\n\n**Step 3.** By 7.32, N either is prime or is measured by some prime number. This unconditional alternative is the direct choice because the primality of N has not been determined. If N is prime, Step 2 already gives a prime different from all the assigned primes. In the other case, let q be a prime measuring N [7.32].\n\n**Step 4.** Suppose that q were one of the assigned primes. Then q would measure M by Step 1, as well as N by Step 3. Express M and N as sums of copies of q. Since N > M, cancelling from the latter sum the copies that make M leaves a positive number of copies of q equal to N − M = u [D7.15, CN3].\n\n**Step 5.** But q, being a number, is a multitude of units and is therefore greater than a single unit [D7.1, D7.2, CN5]. A positive sum of copies of q cannot equal u: one copy already exceeds u, and further copies only increase the whole [CN5]. Thus the supposition in Step 4 is impossible, and q is different from every assigned prime.\n\n**Step 6.** In either alternative of Step 3, a prime has been found outside the assigned collection. Adjoining it produces a collection of prime numbers greater in multitude than the assigned collection, which is a proper part of the enlarged collection [Steps 3–5, CN5]. Since the assigned collection was arbitrary, prime numbers are more than any assigned multitude of prime numbers.\n\n**USED:** 7.32, 7.34, CN3, CN5, D7.1, D7.15, D7.2, D7.5\n**Human refs (from References field):** 7.31\n**Jaccard:** 0.000 — AI adds ['7.32', '7.34', 'CN3', 'CN5', 'D7.1', 'D7.15', 'D7.2', 'D7.5']; Human adds ['7.31']",
+  "ai_used": [
+    "7.32",
+    "7.34",
+    "CN3",
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_refs": [
+    "7.31"
+  ],
+  "ai_only": [
+    "7.32",
+    "7.34",
+    "CN3",
+    "CN5",
+    "D7.1",
+    "D7.15",
+    "D7.2",
+    "D7.5"
+  ],
+  "heath_only": [
+    "7.31"
+  ],
+  "jaccard": 0.0,
+  "proof_summary": "**Step 1.** Let p₁, …, pᵣ be any assigned finite collection of distinct prime numbers. Construct a common multiple M as follows: begin with p₁, and successively take the least common multiple of the c"
+}

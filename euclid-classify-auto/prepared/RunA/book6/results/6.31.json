@@ -1,0 +1,13 @@
+{
+  "proposition": "6.31",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decided the classification as G (granularity difference). Both proofs share the same logical backbone: drawing the perpendicular AD from the right angle to BC, establishing similarity of sub-triangles ABD and ACD to the whole triangle ABC via 6.8, deriving the proportional relationships CB:BA = BA:BD and BC:CA = CA:CD, connecting these to the ratios of similar figures on the sides, and concluding via BD+DC=BC that the figure on BC equals the sum of the figures on BA and AC. The key citation difference is that Heath uses 6.19 (similar triangles are in duplicate ratio of corresponding sides) to establish the figure-ratio step, while the AI uses 6.20 (similar polygons in duplicate ratio of corresponding sides) along with explicit Book V ratio manipulations (D5.9, 5.24, 5.9). The proof-tree containment test confirms that 6.19 appears explicitly within Heath's proof of 6.20, so the AI is citing the higher-level result as a unit while Heath uses the more specific sub-result directly. The remaining ai_only items (1.12 for the perpendicular construction, D5.9 for the duplicate ratio definition, 5.24 for ratio addition, 5.9 for ratio equality) represent over-citation of construction steps and ratio arithmetic that Heath leaves implicit.",
+  "jaccard": 0.25,
+  "ai_citations": "1.12|5.24|5.9|6.20|6.8|D5.9|D6.1",
+  "heath_citations": "6.19|6.8|D6.1",
+  "ai_only": "1.12|5.24|5.9|6.20|D5.9",
+  "heath_only": "6.19",
+  "audit_record": ""
+}

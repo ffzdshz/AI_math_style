@@ -1,0 +1,28 @@
+{
+  "proposition": "1.20",
+  "book": 1,
+  "statement": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+  "heath_proof": "For let ABC be a triangle; I say that in the triangle ABC two sides taken together in any manner are greater than the remaining one, namely BA, AC greater than BC, AB, BC greater than AC, BC, CA greater than AB. For let BA be drawn through to the point D, let DA be made equal to CA, and let DC be joined. Then, since DA is equal to AC, the angle ADC is also equal to the angle ACD; [I. 5] therefore the angle BCD is greater than the angle ADC. [C. N. 5] And, since DCB is a triangle having the angle BCD greater than the angle BDC, and the greater angle is subtended by the greater side, [I. 19]therefore DB is greater than BC. But DA is equal to AC; therefore BA, AC are greater than BC. Similarly we can prove that AB, BC are also greater than CA, and BC, CA than AB.",
+  "ai_proof_text": "1.20\n**Statement:** In any triangle two sides taken together in any manner are greater than the remaining one.\n\n**Step 1.** Let ABC be any triangle. We shall prove that BA + AC > BC, AB + BC > AC, and BC + CA > AB. It suffices to show that any two sides taken together exceed the third; we demonstrate BA + AC > BC, and the other cases follow by the same argument applied to the other pairs of sides.\n\n**Step 2.** Produce the straight line BA beyond the point A to a point D [P2]. Using Proposition 1.3, cut off from AD a length AD equal to AC [1.3], so that DA = AC. Join DC [P1].\n\n**Step 3.** In triangle ACD, since DA = AC, triangle ACD is isosceles. Therefore by Proposition 1.5, the angle ACD equals the angle ADC [1.5].\n\n**Step 4.** Now the angle BCD is the whole of which the angle ACD is a part, since A lies between B and D on line BD and C is not on line BD. Therefore angle BCD is greater than angle ACD [CN5].\n\n**Step 5.** Since angle ACD = angle ADC (Step 3), and angle BCD > angle ACD (Step 4), it follows that angle BCD > angle ADC. But angle ADC is the same as angle BDC (since D, being on ray BA produced, gives that the angle ADC at D in triangle BDC is the angle BDC). Thus angle BCD > angle BDC.\n\n**Step 6.** In triangle BDC, since angle BCD is greater than angle BDC, the side BD which is opposite the greater angle BCD is greater than the side BC which is opposite the lesser angle BDC, by Proposition 1.19 [1.19]. That is, BD > BC.\n\n**Step 7.** But BD = BA + AD (since A lies between B and D on the straight line BD), and AD = AC (by construction in Step 2). Therefore BD = BA + AC.\n\n**Step 8.** Since BD > BC (Step 6) and BD = BA + AC (Step 7), we conclude that BA + AC > BC.\n\n**Step 9.** By applying the same construction and argument to the other pairs of sides (producing side CB beyond B, or producing side AC beyond C), we obtain similarly that AB + BC > AC and that BC + CA > AB.\n\n**Step 10.** Therefore, in any triangle, two sides taken together in any manner are greater than the remaining one. Q.E.F.\n\n**USED:** 1.19, 1.3, 1.5, CN5, P1, P2\n**Human refs (from References field):** 1.19, 1.5, CN5\n**Jaccard:** 0.500 — AI adds ['1.3', 'P1', 'P2']",
+  "ai_used": [
+    "1.19",
+    "1.3",
+    "1.5",
+    "CN5",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.19",
+    "1.5",
+    "CN5"
+  ],
+  "ai_only": [
+    "1.3",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.5,
+  "proof_summary": "**Step 1.** Let ABC be any triangle. We shall prove that BA + AC > BC, AB + BC > AC, and BC + CA > AB. It suffices to show that any two sides taken together exceed the third; we demonstrate BA + AC > "
+}

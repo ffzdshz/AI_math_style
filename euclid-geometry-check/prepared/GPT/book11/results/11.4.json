@@ -1,0 +1,96 @@
+{
+  "proposition": "11.4",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Lines a and b meet at point O; r is perpendicular to both a and b at O",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Plane π contains lines a and b (by 11.2)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Line r does not lie in plane π (proved by contradiction via 1.14)",
+      "type": "plane non-membership"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Line r meets plane π only at O (by D1.7, 11.1)",
+      "type": "intersection uniqueness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Line t is in plane π through O, distinct from a and b",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "A ray of t is enclosed between chosen rays OB (on a) and OC (on b)",
+      "type": "ray ordering/betweenness"
+    },
+    {
+      "step": "Step 2",
+      "claim": "BC lies in plane π (by D1.7)",
+      "type": "plane membership"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle from OB to ray of t is less than angle BOC (CN5)",
+      "type": "angle comparison"
+    },
+    {
+      "step": "Step 2",
+      "claim": "t meets ray BC at point X; X is on segment BC so BX and BC are the same ray",
+      "type": "intersection/betweenness"
+    },
+    {
+      "step": "Step 3",
+      "claim": "A is on r distinct from O; A' is on opposite side of O with OA' = OA",
+      "type": "point position on line"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Angles AOB, A'OB, AOC, A'OC are all right angles",
+      "type": "perpendicularity"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB = A'B and AC = A'C (by SAS via 1.4)",
+      "type": "segment equality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangles ABC and A'BC are congruent by SSS (1.8); angle ABC = angle A'BC",
+      "type": "angle equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Since BX = BC (same ray), angle ABX = angle ABC and angle A'BX = angle A'BC",
+      "type": "angle equality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "AX = A'X by SAS in triangles ABX and A'BX",
+      "type": "segment equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Angle AOX = angle A'OX by SSS in triangles AOX and A'OX",
+      "type": "angle equality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "A-O-A' collinear (on r), so angles AOX and A'OX are supplementary and equal, each 90 degrees",
+      "type": "perpendicularity"
+    }
+  ],
+  "configuration_map": "O is the intersection point of two distinct lines a, b lying in plane π. Line r passes through O perpendicular to both a and b; r is not in π and meets π only at O. Points A and A' lie on r on opposite sides of O with OA = OA'. An arbitrary line t in π through O has one ray enclosed between chosen rays OB (B on a) and OC (C on b). Point X is the intersection of t with segment BC, so X lies between B and C and BX/BC are the same ray. All triangles are planar by 11.2. The configuration is three-dimensional: A and A' are above and below π, while B, C, X, O all lie in π.",
+  "pass_reason": "All spatial claims are mutually consistent. The betweenness of the ray of t between OB and OC is established by choosing the correct angular sector. The intersection X on segment BC follows validly from P5. The angle equalities (Steps 5-6) and segment equalities (Steps 4, 6) feed correctly into the final SSS congruence (Step 7). The supplementary-equal-angle argument at O is valid because A-O-A' are collinear on r and X is not on r. No pair of spatial claims contradicts any other."
+}

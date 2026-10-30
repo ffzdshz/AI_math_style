@@ -1,0 +1,13 @@
+{
+  "proposition": "6.31",
+  "category": "G",
+  "category_label": "Granularity difference",
+  "error_type": "",
+  "analysis": "Q2 decides the classification as G (Granularity difference). Both proofs share the same backbone: draw AD perpendicular from the right angle to the hypotenuse BC, invoke 6.8 to obtain similar triangles, extract the proportion BC:BA = BA:BD from similarity, establish that the ratio of figures on BC and BA equals the ratio BC:BD, apply the same reasoning to the other side, and conclude from BD+DC=BC that the figure on BC equals the sum of the similar figures on BA and CA. The key difference is citation depth: Heath cites 6.19 directly (similar triangles are in duplicate ratio of corresponding sides) to link the figure ratio to the segment ratio, while the AI cites the more general 6.20 (similar polygons in duplicate ratio) and also explicitly invokes D5.9 (definition of duplicate ratio) to build the same link in more detail. The proof-tree containment test confirms that 6.19 appears inside Heath's proof of 6.20, so the AI citing 6.20 instead of 6.19 is a citation-depth difference, not a path difference. The AI also makes explicit the proportion algebra that Heath leaves implicit, citing 5.7 (invertendo), 5.24 (combining ratios), and 5.9 (equality from equal ratios), all of which are valid steps that Heath compresses. D6.1 in heath_only is a definition used to extract proportions from similarity, which the AI handles via the theorem 6.4 instead. These are all granularity differences with the same underlying logical backbone.",
+  "jaccard": 0.111,
+  "ai_citations": "5.24|5.7|5.9|6.20|6.4|6.8|D5.9",
+  "heath_citations": "6.19|6.8|D6.1",
+  "ai_only": "5.24|5.7|5.9|6.20|6.4|D5.9",
+  "heath_only": "6.19|D6.1",
+  "audit_record": ""
+}

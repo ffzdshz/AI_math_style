@@ -1,0 +1,55 @@
+{
+  "proposition": "10.103",
+  "book": 10,
+  "statement": "A straight line commensurable in length with an apotome is an apotome and the same in order.",
+  "heath_proof": "Let AB be an apotome, and let CD be commensurable in length with AB; I say that CD is also an apotome and the same in order with AB. For, since AB is an apotome, let BE be the annex to it; therefore AE, EB are rational straight lines commensurable in square only. [X. 73] Let it be contrived that the ratio of BE to DF is the same as the ratio of AB to CD; [VI. 12] therefore also, as one is to one, so are all to all; [V. 12] therefore also, as the whole AE is to the whole CF, so is AB to CD. But AB is commensurable in length with CD. Therefore AE is also commensurable with CF, and BE with DF. [X. 11] And AE, EB are rational straight lines commensurable in square only; therefore CF, FD are also rational straight lines commensurable in square only. [X. 13] Now since, as AE is to CF, so is BE to DF, alternately therefore, as AE is to EB, so is CF to FD. [V. 16] And the square on AE is greater than the square on EB either by the square on a straight line commensurable with AE or by the square on a straight line incommensurable with it. If then the square on AE is greater than the square on EB by the square on a straight line commensurable with AE, the square on CF will also be greater than the square on FD by the square on a straight line commensurable with CF. [X. 14] And, if AE is commensurable in length with the rational straight line set out, CF is so also, [X. 12] if BE, then DF also, [id.]and, if neither of the straight lines AE, EB, then neither of the straight lines CF, FD. [X. 13] But, if the square on AE is greater than the square on EB by the square on a straight line incommensurable with AE, the square on CF will also be greater than the square on FD by the square on a straight line incommensurable with CF. [X. 14] And, if AE is commensurable in length with the rational straight line set out, CF is so also, if BE, then DF also, [X. 12] and, if neither of the straight lines AE, EB, then neither of the straight lines CF, FD. [X. 13] Therefore CD is an apotome and the same in order with AB.",
+  "ai_proof_text": "10.103\n**Statement:** A straight line commensurable in length with an apotome is an apotome and the same in order.\n\n**Step 1.** Let AB be an apotome, and let CD be commensurable in length with AB. We must show that CD is also an apotome and the same in order as AB.\n\n**Step 2.** Since AB is an apotome, let BE be the annex to AB, so that AE is the whole and AB = AE - BE, where AE and BE are rational straight lines commensurable in square only [10.73, D10.1.3].\n\n**Step 3.** Let the ratio of CD to AB be given. Since CD is commensurable in length with AB, the ratio CD:AB is as a number to a number [10.5]. Let CF be taken on CD (or CD produced) such that CF:AE = CD:AB, and let FD be the remainder, so that CD = CF - FD [6.12].\n\n**Step 4.** Since CF:AE = CD:AB, and CD = CF - FD while AB = AE - BE, by separation of ratio (separando) we have FD:BE = CF:AE = CD:AB [5.17, 5.11].\n\n**Step 5.** Now CF:AE = CD:AB, and CD is commensurable in length with AB. Therefore CF is commensurable in length with AE [10.11]. Since AE is rational, CF is also rational [D10.1.3].\n\n**Step 6.** Similarly, FD:BE = CD:AB, and CD is commensurable in length with AB. Therefore FD is commensurable in length with BE [10.11]. Since BE is rational, FD is also rational [D10.1.3].\n\n**Step 7.** Since AE and BE are commensurable in square only, and CF is commensurable in length with AE while FD is commensurable in length with BE, we must show CF and FD are commensurable in square only. Since CF is commensurable in length with AE and FD is commensurable in length with BE, if CF were commensurable in length with FD, then AE would be commensurable in length with BE [10.12], contradicting the fact that AE and BE are commensurable in square only. Therefore CF and FD are incommensurable in length. But since CF:AE = FD:BE (from Step 4), the squares satisfy sq(CF):sq(AE) = sq(FD):sq(BE) [6.22]. Since AE is commensurable in square with BE (i.e., sq(AE) is commensurable with sq(BE)), it follows that sq(CF) is commensurable with sq(FD) [10.11]. Therefore CF and FD are commensurable in square only.\n\n**Step 8.** Since CF and FD are rational straight lines commensurable in square only, and CD = CF - FD, the line CD is an apotome with whole CF and annex FD [10.73].\n\n**Step 9.** It remains to show that CD is the same in order as AB. We consider the conditions that determine the order.\n\n**Step 10.** First, consider whether sq(AE) > sq(BE) by the square on a line commensurable or incommensurable with AE. Since CF:AE = FD:BE (Step 4), the four lines CF, AE, FD, BE are proportional. By Proposition 10.14, if sq(AE) > sq(BE) by the square on a line commensurable with AE, then sq(CF) > sq(FD) by the square on a line commensurable with CF; and if sq(AE) > sq(BE) by the square on a line incommensurable with AE, then sq(CF) > sq(FD) by the square on a line incommensurable with CF [10.14].\n\n**Step 11.** Now let a rational straight line G be set out. Consider the commensurability of AE and BE with G. Since CF is commensurable in length with AE, CF is commensurable in length with AE; so if AE is commensurable in length with G, then CF is commensurable in length with G [10.12]. Conversely, if AE is incommensurable in length with G, then since CF is commensurable in length with AE, CF is also incommensurable in length with G [10.13].\n\n**Step 12.** Similarly, since FD is commensurable in length with BE: if BE is commensurable in length with G, then FD is commensurable in length with G [10.12]; and if BE is incommensurable in length with G, then FD is incommensurable in length with G [10.13].\n\n**Step 13.** Therefore the commensurability relations of CF and FD with the rational line G exactly mirror those of AE and BE with G. Combined with Step 10, every condition that determines the order of the apotome (as specified in D10.3.1 through D10.3.6) is the same for CD as for AB. Hence CD is an apotome of the same order as AB.\n\n**Step 14.** Therefore a straight line commensurable in length with an apotome is an apotome and the same in order. Q.E.D.\n\n**USED:** 10.11, 10.12, 10.13, 10.14, 10.5, 10.73, 5.11, 5.17, 6.12, 6.22, D10.1.3, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6\n**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.73, 5.12, 5.16, 6.12\n**Jaccard:** 0.316 — AI adds ['10.5', '5.11', '5.17', '6.22', 'D10.1.3', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']; Human adds ['5.12', '5.16']",
+  "ai_used": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.5",
+    "10.73",
+    "5.11",
+    "5.17",
+    "6.12",
+    "6.22",
+    "D10.1.3",
+    "D10.3.1",
+    "D10.3.2",
+    "D10.3.3",
+    "D10.3.4",
+    "D10.3.5",
+    "D10.3.6"
+  ],
+  "heath_refs": [
+    "10.11",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.73",
+    "5.12",
+    "5.16",
+    "6.12"
+  ],
+  "ai_only": [
+    "10.5",
+    "5.11",
+    "5.17",
+    "6.22",
+    "D10.1.3",
+    "D10.3.1",
+    "D10.3.2",
+    "D10.3.3",
+    "D10.3.4",
+    "D10.3.5",
+    "D10.3.6"
+  ],
+  "heath_only": [
+    "5.12",
+    "5.16"
+  ],
+  "jaccard": 0.316,
+  "proof_summary": "**Step 1.** Let AB be an apotome, and let CD be commensurable in length with AB. We must show that CD is also an apotome and the same in order as AB.  **Step 2.** Since AB is an apotome, let BE be the"
+}

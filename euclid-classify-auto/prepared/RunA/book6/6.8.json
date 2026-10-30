@@ -1,0 +1,30 @@
+{
+  "proposition": "6.8",
+  "book": 6,
+  "statement": "If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.",
+  "heath_proof": "Let ABC be a right-angled triangle having the angle BAC right, and let AD be drawn from A perpendicular to BC; I say that each of the triangles ABD, ADC is similar to the whole ABC and, further, they are similar to one another. For, since the angle BAC is equal to the angle ADB, for each is right, and the angle at B is common to the two triangles ABC and ABD, therefore the remaining angle ACB is equal to the remaining angle BAD; [I. 32] therefore the triangle ABC is equiangular with the triangle ABD. Therefore, as BC which subtends the right angle in the triangle ABC is to BA which subtends the right angle in the triangle ABD, so is AB itself which subtends the angle at C in the triangle ABC to BD which subtends the equal angle BAD in the triangle ABD, and so also is AC to AD which subtends the angle at B common to the two triangles. [VI. 4] Therefore the triangle ABC is both equiangular to the triangle ABD and has the sides about the equal angles proportional. Therefore the triangle ABC is similar to the triangle ABD. [VI. Def. 1] Similarly we can prove that the triangle ABC is also similar to the triangle ADC; therefore each of the triangles ABD, ADC is similar to the whole ABC. I say next that the triangles ABD, ADC are also similar to one another. For, since the right angle BDA is equal to the right angle ADC, and moreover the angle BAD was also proved equal to the angle at C, therefore the remaining angle at B is also equal to the remaining angle DAC; [I. 32] therefore the triangle ABD is equiangular with the triangle ADC. Therefore, as BD which subtends the angle BAD in the triangle ABD is to DA which subtends the angle at C in the triangle ADC equal to the angle BAD, so is AD itself which subtends the angle at B in the triangle ABD to DC which subtends the angle DAC in the triangle ADC equal to the angle at B, and so also is BA to AC, these sides subtending the right angles; [VI. 4] therefore the triangle ABD is similar to the triangle ADC. [VI. Def. 1]",
+  "ai_proof_text": "6.8\n**Statement:** If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.\n\n**Step 1.** Let triangle ABC have a right angle at A (so angle BAC is a right angle), and let AD be drawn from A perpendicular to the base BC. Then angle ADB and angle ADC are each right angles [D1.10].\n\n**Step 2.** Consider triangle ABD and triangle ABC. Angle ADB is a right angle and angle BAC is a right angle, so angle ADB equals angle BAC [P4]. Furthermore, angle ABD is the same angle as angle ABC, since B is common to both triangles.\n\n**Step 3.** Since in triangle ABC the three angles sum to two right angles [1.32], and in triangle ABD the three angles also sum to two right angles [1.32], and two of the angles are respectively equal (angle ADB = angle BAC, and angle ABD = angle ABC), the remaining angles must be equal: angle BAD equals angle ACB [CN3].\n\n**Step 4.** Since triangle ABD and triangle ABC have all three angles respectively equal (angle ADB = angle BAC, angle ABD = angle ABC, angle BAD = angle ACB), they are equiangular. Therefore the sides about the equal angles are proportional [6.4], and hence triangle ABD is similar to triangle ABC [D6.1].\n\n**Step 5.** Now consider triangle ACD and triangle ABC. Angle ADC is a right angle and angle BAC is a right angle, so angle ADC equals angle BAC [P4]. Furthermore, angle ACD is the same angle as angle ACB, since C is common to both triangles.\n\n**Step 6.** Since in triangle ACD the three angles sum to two right angles [1.32], and in triangle ABC the three angles also sum to two right angles [1.32], and two of the angles are respectively equal (angle ADC = angle BAC, and angle ACD = angle ACB), the remaining angles must be equal: angle DAC equals angle ABC [CN3].\n\n**Step 7.** Since triangle ACD and triangle ABC have all three angles respectively equal (angle ADC = angle BAC, angle ACD = angle ACB, angle DAC = angle ABC), they are equiangular. Therefore the sides about the equal angles are proportional [6.4], and hence triangle ACD is similar to triangle ABC [D6.1].\n\n**Step 8.** It remains to show that triangle ABD is similar to triangle ACD. From Steps 3 and 6, we have: angle BAD equals angle ACB (Step 3), and angle DAC equals angle ABC (Step 6). Also angle ADB equals angle ADC, both being right angles [P4]. Since angle ACB equals angle DAC (both equal angle ABC by Step 6 giving DAC = ABC, and from triangle ABC we can compare), let us verify directly: in triangle ABD, the angles are angle ABD, angle BAD, angle ADB; in triangle ACD, the angles are angle ACD, angle DAC, angle ADC.\n\n**Step 9.** From Step 3: angle BAD = angle ACB = angle ACD. From Step 6: angle DAC = angle ABC = angle ABD. And angle ADB = angle ADC [P4]. Therefore triangle ABD and triangle ACD have all three angles respectively equal, so they are equiangular. By the proportionality of sides about equal angles [6.4], triangle ABD is similar to triangle ACD [D6.1].\n\n**Step 10.** Therefore the triangles adjoining the perpendicular (triangles ABD and ACD) are similar both to the whole triangle ABC and to one another. Q.E.F.\n\n**USED:** 1.32, 6.4, CN3, D1.10, D1.21, D6.1, P4\n**Human refs (from References field):** 1.32, 6.4, D6.1\n**Jaccard:** 0.429 — AI adds ['CN3', 'D1.10', 'D1.21', 'P4']",
+  "ai_used": [
+    "1.32",
+    "6.4",
+    "CN3",
+    "D1.10",
+    "D1.21",
+    "D6.1",
+    "P4"
+  ],
+  "heath_refs": [
+    "1.32",
+    "6.4",
+    "D6.1"
+  ],
+  "ai_only": [
+    "CN3",
+    "D1.10",
+    "D1.21",
+    "P4"
+  ],
+  "heath_only": [],
+  "jaccard": 0.429,
+  "proof_summary": "**Step 1.** Let triangle ABC have a right angle at A (so angle BAC is a right angle), and let AD be drawn from A perpendicular to the base BC. Then angle ADB and angle ADC are each right angles [D1.10"
+}

@@ -1,0 +1,35 @@
+{
+  "proposition": "11.27",
+  "book": 11,
+  "statement": "On a given straight line to describe a parallelepipedal solid similar and similarly situated to a given parallelepipedal solid.",
+  "heath_proof": "Let AB be the given straight line and CD the given parallelepipedal solid; thus it is required to describe on the given straight line AB a parallelepipedal solid similar and similarly situated to the given parallelepipedal solid CD. For on the straight line AB and at the point A on it let the solid angle, contained by the angles BAH, HAK, KAB, be constructed equal to the solid angle at C, so that the angle BAH is equal to the angle ECF, the angle BAK equal to the angle ECG, and the angle KAH to the angle GCF; and let it be contrived that, as EC is to CG, so is BA to AK, and, as GC is to CF, so is KA to AH. [VI. 12] Therefore also, ex aequali, as EC is to CF, so is BA to AH. [V. 22] Let the parallelogram HB and the solid AL be completed. Now since, as EC is to CG, so is BA to AK, and the sides about the equal angles ECG, BAK are thus proportional, therefore the parallelogram GE is similar to the parallelogram KB. For the same reason the parallelogram KH is also similar to the parallelogram GF, and further FE to HB; therefore three parallelograms of the solid CD are similar to three parallelograms of the solid AL. But the former three are both equal and similar to the three opposite parallelograms, and the latter three are both equal and similar to the three opposite parallelograms; therefore the whole solid CD is similar to the whole solid AL. [XI. Def. 9] Therefore on the given straight line AB there has been described AL similar and similarly situated to the given parallelepipedal solid CD.",
+  "ai_proof_text": "11.27\n**Statement:** On a given straight line to describe a parallelepipedal solid similar and similarly situated to a given parallelepipedal solid.\n\n**Step 1.** Let AB be the given straight line, and let CD be the given parallelepipedal solid. Let the solid CD have vertex C, and let the three edges meeting at C be CE, CF, and CG, so that the solid angle at C is contained by the three plane angles ECF, FCG, and ECG. Let CE = e, CF = f, and CG = g be the lengths of these edges.\n\n**Step 2.** We wish to construct on AB a parallelepiped similar and similarly situated to CD, with AB corresponding to the edge CE. At the point A of the straight line AB, construct a solid angle equal to the solid angle at C of the solid CD, contained by the three plane angles ECF, FCG, and ECG [11.26]. Let the three lines forming this solid angle at A be AB (corresponding to CE), AH (corresponding to CF), and AK (corresponding to CG), where the plane angle BAH equals angle ECF, the plane angle HAK equals angle FCG, and the plane angle BAK equals angle ECG.\n\n**Step 3.** Since the parallelepipeds are to be similar, the edges about equal solid angles must be proportional [D11.9, D6.1]. We require AB : CE = AH : CF = AK : CG. Since AB and CE are given, find AH such that AB : CE = AH : CF, that is, AH = (AB · CF) / CE [6.12]. Similarly, find AK such that AB : CE = AK : CG, that is, AK = (AB · CG) / CE [6.12]. Cut off AH along the ray from A corresponding to CF, and AK along the ray from A corresponding to CG, at the lengths so determined [1.3].\n\n**Step 4.** Through H, draw a line parallel to AK, and through K, draw a line parallel to AH [1.31]. Let these meet at L. Then AHLK is a parallelogram in the plane through AH and AK, and the face AHLK corresponds to the face CFPG of the solid CD (where P is the vertex of CD opposite to C in that face). Since AH : CF = AK : CG and angle HAK = angle FCG, the parallelogram AHLK is similar to the parallelogram CFPG [6.24, with equal contained angles and proportional sides].\n\n**Step 5.** Similarly, through B, draw a line parallel to AH and a line parallel to AK [1.31]. Through H, draw a line parallel to AB, and through K, draw a line parallel to AB [1.31]. Complete the three pairs of parallel faces to form a parallelepiped with vertex A and edges AB, AH, AK.\n\n**Step 6.** The face at A in the plane of AB and AH is a parallelogram with sides AB and AH and included angle BAH equal to angle ECF. Since AB : CE = AH : CF and the included angles are equal, this face is similar to the corresponding face of CD [6.24].\n\n**Step 7.** The face at A in the plane of AB and AK is a parallelogram with sides AB and AK and included angle BAK equal to angle ECG. Since AB : CE = AK : CG and the included angles are equal, this face is similar to the corresponding face of CD [6.24].\n\n**Step 8.** By 11.24, the opposite faces of the constructed solid are equal and parallelogrammic, so the solid is indeed a parallelepiped. Each pair of corresponding faces of the two solids is similar (having equal angles and proportional sides), and the solid angles are equal by construction.\n\n**Step 9.** Since the solid constructed on AB has its three edges AB, AH, AK proportional to the three edges CE, CF, CG of CD (all in the same ratio AB : CE), and the solid angles at corresponding vertices are equal, the constructed parallelepiped is similar and similarly situated to CD [D11.9].\n\n**Step 10.** Therefore, on the given straight line AB, a parallelepipedal solid has been described similar and similarly situated to the given parallelepipedal solid CD, which is what was required to be done. Q.E.F.\n\n**USED:** 1.3, 1.31, 11.24, 11.26, 6.12, 6.24, D11.9, D6.1\n**Human refs (from References field):** 5.22, 6.12, D11.9\n**Jaccard:** 0.222 — AI adds ['1.3', '1.31', '11.24', '11.26', '6.24', 'D6.1']; Human adds ['5.22']",
+  "ai_used": [
+    "1.3",
+    "1.31",
+    "11.24",
+    "11.26",
+    "6.12",
+    "6.24",
+    "D11.9",
+    "D6.1"
+  ],
+  "heath_refs": [
+    "5.22",
+    "6.12",
+    "D11.9"
+  ],
+  "ai_only": [
+    "1.3",
+    "1.31",
+    "11.24",
+    "11.26",
+    "6.24",
+    "D6.1"
+  ],
+  "heath_only": [
+    "5.22"
+  ],
+  "jaccard": 0.222,
+  "proof_summary": "**Step 1.** Let AB be the given straight line, and let CD be the given parallelepipedal solid. Let the solid CD have vertex C, and let the three edges meeting at C be CE, CF, and CG, so that the solid"
+}

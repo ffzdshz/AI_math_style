@@ -1,0 +1,116 @@
+{
+  "proposition": "6.24",
+  "run": "GPT",
+  "book": 6,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "ABCD is a parallelogram with diameter (diagonal) AC",
+      "type": "figure_definition"
+    },
+    {
+      "step": "Step 1",
+      "claim": "O lies between A and C on diagonal AC",
+      "type": "point_position"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Line EG through O is parallel to AD, meeting AB at E and CD at G",
+      "type": "parallel_line_construction"
+    },
+    {
+      "step": "Step 1",
+      "claim": "Line HF through O is parallel to AB, meeting AD at H and BC at F",
+      "type": "parallel_line_construction"
+    },
+    {
+      "step": "Step 1",
+      "claim": "EG is parallel to BC (since AD parallel to BC)",
+      "type": "derived_parallelism"
+    },
+    {
+      "step": "Step 1",
+      "claim": "HF is parallel to CD (since AB parallel to CD)",
+      "type": "derived_parallelism"
+    },
+    {
+      "step": "Step 1",
+      "claim": "AEOH and OFCG are parallelograms about the diameter",
+      "type": "figure_definition"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle at A of AEOH equals angle at A of ABCD (shared vertex angle)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle at C of OFCG equals angle at C of ABCD (shared vertex angle)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle AEO equals angle ABC (by EO parallel to BC and transversal AB)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Angle OFC equals angle ABC (by OF parallel to AB and transversal BC)",
+      "type": "angle_equality"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Triangle AEO is equiangular with triangle ABC (shared angle at A, EO parallel to BC)",
+      "type": "triangle_similarity"
+    },
+    {
+      "step": "Step 3",
+      "claim": "AE:EO = AB:BC (sides about equal angles at E and B, by 6.4)",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AE = OH and EO = HA (opposite sides of parallelogram AEOH)",
+      "type": "parallelogram_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "AB = CD and BC = DA (opposite sides of parallelogram ABCD)",
+      "type": "parallelogram_property"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Sides about every pair of corresponding equal angles in AEOH and ABCD are proportional",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 5",
+      "claim": "Triangle OFC is equiangular with triangle ABC (shared angle at C, OF parallel to AB)",
+      "type": "triangle_similarity"
+    },
+    {
+      "step": "Step 5",
+      "claim": "OF:FC = AB:BC (sides about equal angles at F and B, by 6.4)",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 6",
+      "claim": "OF = CG and FC = GO (opposite sides of parallelogram OFCG)",
+      "type": "parallelogram_property"
+    },
+    {
+      "step": "Step 6",
+      "claim": "Sides about every pair of corresponding equal angles in OFCG and ABCD are proportional",
+      "type": "proportionality"
+    },
+    {
+      "step": "Step 7",
+      "claim": "Both AEOH and OFCG similar to ABCD implies they are similar to each other (by 6.21)",
+      "type": "similarity_transitivity"
+    }
+  ],
+  "configuration_map": "ABCD is a parallelogram with diagonal AC. Point O lies on segment AC between A and C. Through O, line EG is drawn parallel to sides AD and BC, meeting AB at E and CD at G. Through O, line HF is drawn parallel to sides AB and CD, meeting AD at H and BC at F. This creates two sub-parallelograms about the diagonal: AEOH (at the A-corner, with vertices A on corner, E on AB, O on diagonal, H on AD) and OFCG (at the C-corner, with vertices O on diagonal, F on BC, C on corner, G on CD). In triangle ABC, segment EO connects point E on AB to point O on AC and is parallel to BC, making triangle AEO similar to triangle ABC. In triangle ABC, segment OF connects point O on AC to point F on BC and is parallel to AB, making triangle OFC similar to triangle ABC. All points maintain consistent positions throughout the proof.",
+  "pass_reason": "All spatial claims are mutually consistent. The construction is standard: a point O on diagonal AC of parallelogram ABCD with parallel lines through O creating sub-parallelograms. The triangle similarities (AEO ~ ABC via EO parallel to BC; OFC ~ ABC via OF parallel to AB) are geometrically valid, and the proportionality chains derived from these similarities combined with parallelogram opposite-side equalities all check out correctly. No angle decomposition issues arise since the proof uses direct triangle similarity (6.4) rather than angle sums, and no point position contradictions exist."
+}

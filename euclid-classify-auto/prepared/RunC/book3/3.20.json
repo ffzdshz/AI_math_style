@@ -1,0 +1,36 @@
+{
+  "proposition": "3.20",
+  "book": 3,
+  "statement": "In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.",
+  "heath_proof": "Let ABC be a circle, let the angle BEC be an angleat its centre, and the angle BAC an angle at the circumference, and let them have the same circumference BC as base; I say that the angle BEC is double ofthe angle BAC. For let AE be joined and drawn through to F. Then, since EA is equal to EB, the angle EAB is also equal to the angle EBA; [I. 5]therefore the angles EAB, EBA are double of the angle EAB. But the angle BEF is equal to the angles EAB, EBA; [I. 32] therefore the angle BEF is also double of the angleEAB. For the same reason the angle FEC is also double of the angle EAC. Therefore the whole angle BEC is double of the whole angle BAC. Again let another straight line be inflected, and let there be another angle BDC; let DE be joined and produced to G. Similarly then we can prove that the angle GEC is double of the angle EDC,of which the angle GEB is double of the angle EDB; therefore the angle BEC which remains is double of the angle BDC.",
+  "ai_proof_text": "3.20\n**Statement:** In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.\n\n**Step 1.** Let ABC be a circle with center F [D1.15, D1.16]. Let angle BFC be an angle at the center and angle BAC be an angle at the circumference, where both angles stand on the same arc BC [D3.8, D3.9].\n\n**Step 2.** Join AF and produce it to a point E on the circumference [P1, P2].\n\n**Step 3.** [Case 1: F lies on AC.] Since FA and FB are both radii of circle ABC, FA equals FB [D1.15]. Therefore triangle FAB is isosceles, and by 1.5, angle FAB equals angle FBA.\n\n**Step 4.** Since BFC is an exterior angle of triangle ABF, by 1.32 angle BFC equals the sum of angles FAB and FBA. Since angle FAB equals angle FBA, angle BFC equals twice angle FAB, that is, twice angle BAC. This concludes Case 1.\n\n**Step 5.** [Case 2: F lies within angle BAC.] Since FE and FB are both radii, FE equals FB [D1.15]. Triangle BEF is isosceles, so by 1.5 angle FEB equals angle FBE.\n\n**Step 6.** Since BFE is an exterior angle of triangle ABF, by 1.32 angle BFE equals the sum of angles FAB and FBA. But FA equals FB (both radii), so by 1.5 angle FAB equals angle FBA. Therefore angle BFE equals twice angle FAB, that is, twice angle BAE.\n\n**Step 7.** Similarly, since FE and FC are both radii, FE equals FC [D1.15]. Triangle CEF is isosceles, so by 1.5 angle FEC equals angle FCE. Since CFE is an exterior angle of triangle ACF, by 1.32 angle CFE equals the sum of angles FAC and FCA. But FA equals FC (both radii), so by 1.5 angle FAC equals angle FCA. Therefore angle CFE equals twice angle FAC, that is, twice angle CAE.\n\n**Step 8.** Adding, angle BFE plus angle CFE equals twice angle BAE plus twice angle CAE [CN2]. That is, the whole angle BFC equals twice the whole angle BAC. This concludes Case 2.\n\n**Step 9.** [Case 3: F lies outside angle BAC, on the opposite side of AB from C.] As in Steps 5-6, since FA equals FB (both radii), by 1.5 angle FAB equals angle FBA. Then by 1.32 angle BFE equals twice angle BAE.\n\n**Step 10.** Similarly, as in Step 7, since FA equals FC (both radii), by 1.5 angle FAC equals angle FCA. Then by 1.32 angle CFE equals twice angle CAE.\n\n**Step 11.** Subtracting angle CFE from angle BFE: angle BFE minus angle CFE equals twice angle BAE minus twice angle CAE [CN3]. That is, the remaining angle BFC equals twice the remaining angle BAC. This concludes Case 3.\n\n**Step 12.** Therefore, in all cases, the angle BFC at the center is double the angle BAC at the circumference, when both stand on the same arc BC. Q.E.D.\n\n**USED:** 1.32, 1.5, CN2, CN3, D1.15, D1.16, D3.8, D3.9, P1, P2\n**Human refs (from References field):** 1.32, 1.5\n**Jaccard:** 0.200 — AI adds ['CN2', 'CN3', 'D1.15', 'D1.16', 'D3.8', 'D3.9', 'P1', 'P2']",
+  "ai_used": [
+    "1.32",
+    "1.5",
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.16",
+    "D3.8",
+    "D3.9",
+    "P1",
+    "P2"
+  ],
+  "heath_refs": [
+    "1.32",
+    "1.5"
+  ],
+  "ai_only": [
+    "CN2",
+    "CN3",
+    "D1.15",
+    "D1.16",
+    "D3.8",
+    "D3.9",
+    "P1",
+    "P2"
+  ],
+  "heath_only": [],
+  "jaccard": 0.2,
+  "proof_summary": "**Step 1.** Let ABC be a circle with center F [D1.15, D1.16]. Let angle BFC be an angle at the center and angle BAC be an angle at the circumference, where both angles stand on the same arc BC [D3.8, "
+}

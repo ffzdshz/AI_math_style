@@ -1,0 +1,26 @@
+{
+  "proposition": "11.13",
+  "run": "GPT",
+  "book": 11,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Point A lies on plane Π; two distinct rays AB and AC emanate from A, both perpendicular to Π, both on the same side",
+      "type": "point_position_and_perpendicularity"
+    },
+    {
+      "step": "Step 2",
+      "claim": "Lines AB and AC are parallel, by 11.6 applied to their mutual perpendicularity to Π",
+      "type": "parallelism"
+    },
+    {
+      "step": "Step 3",
+      "claim": "Lines AB and AC both pass through point A, contradicting parallelism (D1.23)",
+      "type": "intersection"
+    }
+  ],
+  "configuration_map": "Point A: lies on plane Π (fixed throughout). Line through AB: perpendicular to Π, passes through A. Line through AC: perpendicular to Π, passes through A, distinct from line through AB. No auxiliary points constructed. No angles decomposed. No interior/exterior claims made. The configuration is minimal: a single point on a plane with two lines through it, both perpendicular to the plane.",
+  "pass_reason": "The proof makes minimal spatial claims (two lines from A perpendicular to a plane, their parallelism via 11.6, their intersection at A). These claims are deliberately contradictory as part of the reductio argument — that is the intended structure, not a configuration error. No auxiliary constructions, angle decompositions, or interior/exterior arguments introduce hidden inconsistencies. The logical chain (perpendicularity to same plane implies parallelism by 11.6; parallelism implies non-intersection by D1.23; but both lines pass through A) is spatially coherent."
+}

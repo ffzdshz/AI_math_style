@@ -1,0 +1,31 @@
+{
+  "proposition": "13.11",
+  "run": "GPT",
+  "book": 13,
+  "current_category": "D",
+  "verdict": "PASS",
+  "spatial_claims": [
+    {
+      "step": "Step 1",
+      "claim": "Pentagon, hexagon, and decagon inscribed in the same circle; hexagon side h equals the radius d/2 (by 4.15)",
+      "type": "construction"
+    },
+    {
+      "step": "Step 2",
+      "claim": "h + t is cut in extreme and mean ratio with greater segment h and lesser segment t (by 13.9), giving h^2 = ht + t^2",
+      "type": "ratio_relationship"
+    },
+    {
+      "step": "Step 3",
+      "claim": "p^2 = h^2 + t^2 relating pentagon side to hexagon and decagon sides (by 13.10)",
+      "type": "metric_relationship"
+    },
+    {
+      "step": "Step 4",
+      "claim": "Application of 13.3 to the EMR division: (t + u)^2 = 5u^2 where u = h/2",
+      "type": "metric_relationship"
+    }
+  ],
+  "configuration_map": "The configuration consists of a single circle with rational diameter d. Three regular polygons are inscribed: a pentagon (side p), hexagon (side h = d/2), and decagon (side t). No auxiliary geometric points are constructed in the plane. The proof defines purely algebraic quantities: u = h/2, a = 5u, b = t + u, e = a - b = 2h - t. All reasoning after Step 4 is number-theoretic classification (rational, commensurable, apotome type) with no further spatial content. The relationships between p, h, and t come from prior propositions (13.9, 13.10, 13.3) and are not re-derived geometrically.",
+  "pass_reason": "The proof is essentially algebraic/number-theoretic. Its geometric content is limited to citing established relationships between sides of inscribed regular polygons (13.9, 13.10, 13.3, 4.15). No new spatial constructions are introduced, no point positions are claimed, no angle decompositions are performed, and no inside/outside arguments are used. The algebraic chain is internally consistent throughout."
+}
