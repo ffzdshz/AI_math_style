@@ -48,16 +48,6 @@ Directed graphs stored as Python `pickle` files (NetworkX `DiGraph`). Nodes repr
 ## Source data
 
 The structured Euclid dataset is from the [Wolfram Data Repository](https://datarepository.wolframcloud.com/resources/Structure-of-Euclids-Elements/).
-
-## Citation
-
-If you use this data or code, please cite:
-
-```bibtex
-@article{li2026aistyle,
-  title={AI has its own style in mathematical proving},
-  author={Li, Xiaokai and Zhou, Ziyu and Cheng, Qibin and Wu, Yangcheng and Zeng, An and Fan, Ying},
-  year={2026}
 }
 ```
 
