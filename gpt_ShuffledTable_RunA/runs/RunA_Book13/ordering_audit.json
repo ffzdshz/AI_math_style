@@ -1,0 +1,2226 @@
+{
+  "completed_at": "2026-11-06T09:55:27.844997+00:00",
+  "expected_ids": [
+    "13.1",
+    "13.2",
+    "13.3",
+    "13.4",
+    "13.5",
+    "13.6",
+    "13.7",
+    "13.8",
+    "13.9",
+    "13.10",
+    "13.11",
+    "13.12",
+    "13.13",
+    "13.14",
+    "13.15",
+    "13.16",
+    "13.17",
+    "13.18"
+  ],
+  "selected_attempts": {
+    "13.1": 0,
+    "13.2": 0,
+    "13.3": 0,
+    "13.4": 0,
+    "13.5": 0,
+    "13.6": 0,
+    "13.7": 0,
+    "13.8": 0,
+    "13.9": 0,
+    "13.10": 0,
+    "13.11": 0,
+    "13.12": 0,
+    "13.13": 0,
+    "13.14": 0,
+    "13.15": 0,
+    "13.16": 0,
+    "13.17": 0,
+    "13.18": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "13.1": [
+      {
+        "result": {
+          "prop_id": "13.1",
+          "proof": "**Step 1.** Let the whole line have length a, its greater segment g, and its lesser segment s. Bisect the whole by I.10, and denote its half by h. Thus a = g + s = h + h. By the definition of extreme and mean ratio, a : g = g : s. Write Q(x) for the square on x and R(x,y) for the rectangle contained by x and y. [1.10, D6.3]\n\n**Step 2.** Since a, g, s are proportional, VI.17 gives Q(g) = R(a,s). Dividing the side a into its two equal halves, II.1 gives R(a,s) = 2R(h,s). Hence Q(g) = 2R(h,s). [6.17, 2.1, CN1]\n\n**Step 3.** The required square is on the sum g + h, so take the direct square-of-a-sum route using II.4. It gives\nQ(g + h) = Q(g) + Q(h) + 2R(g,h).\nSubstituting the equality from Step 2, we obtain\nQ(g + h) = 2R(h,s) + 2R(h,g) + Q(h). [2.4, CN2, CN1]\n\n**Step 4.** By II.1, since s + g = a and a consists of two halves h,\nR(h,s) + R(h,g) = R(h,a) = 2Q(h).\nAdding this equality to itself and then adding Q(h), Step 3 therefore yields\nQ(g + h) = 4Q(h) + Q(h) = 5Q(h).\nThus the square on the greater segment together with half the whole is five times the square on the half, as required. [2.1, CN2, CN1]",
+          "used": [
+            "1.10",
+            "D6.3",
+            "6.17",
+            "2.1",
+            "CN1",
+            "2.4",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:54:13.950730+00:00",
+          "prompt_sha256": "36f1332fa6603d173cdef6519ae3aa18bc8ce6d1f0bdf5d453ab6a5370821cb6",
+          "resource_table_sha256": "702a29f06cc3028f6b1f81a3866661c156b78fcb0c4074eb49790bf49bf1df81",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b010-cfbe-7ee3-b2a1-b4dbc5fba0de",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b010-cfbe-7ee3-b2a1-b4dbc5fba0de",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-54-14-01a1b010-cfbe-7ee3-b2a1-b4dbc5fba0de.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:55:50.421931+00:00",
+          "total_wall_time_seconds": 96.471,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.1_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.2": [
+      {
+        "result": {
+          "prop_id": "13.2",
+          "proof": "**Step 1.** Let C lie between A and B, and suppose that the square on AB is five times the square on AC. Let DE be twice AC, and cut DE at F in extreme and mean ratio, DF being the greater segment. Such a division is possible by 6.30. Thus AC is half of DE. [6.30]\n\n**Step 2.** Apply 13.1 directly to this division: this is the natural route because the half of DE is precisely the given segment AC. The square on DF + AC is therefore five times the square on AC. By the hypothesis, the square on AB is equal to that same area. Consequently, the square on DF + AC equals the square on AB. [13.1, CN1]\n\n**Step 3.** Hence DF + AC = AB. For if these lengths were unequal, apply 2.4 to the longer, divided into a part equal to the shorter and the positive excess. Its square would equal the square on the shorter together with the square on the excess and twice the rectangle contained by the shorter and the excess. It would therefore be greater than the square on the shorter, contradicting Step 2. [2.4, CN5]\n\n**Step 4.** Subtract AC from the equal lengths DF + AC and AB. The remainders are equal, so DF = CB. Thus, when the double of the given segment is cut in extreme and mean ratio, its greater segment is the remaining part of the original straight line. [CN3]",
+          "used": [
+            "6.30",
+            "13.1",
+            "CN1",
+            "2.4",
+            "CN5",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:54:43.766096+00:00",
+          "prompt_sha256": "cec314bc4d95918e60749ab6eda5db7c26fb1e9777a66c45570c3668925ba69c",
+          "resource_table_sha256": "631f36465c1441f95e551b2aa57388da35e13ebf5e989874d42e5c34d3871611",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b011-443f-7b83-a593-e522a8d616f5",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b011-443f-7b83-a593-e522a8d616f5",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-54-44-01a1b011-443f-7b83-a593-e522a8d616f5.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:56:04.456651+00:00",
+          "total_wall_time_seconds": 80.691,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.2_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.3": [
+      {
+        "result": {
+          "prop_id": "13.3",
+          "proof": "**Step 1.** Let AB be cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. Bisect AC at D, so that AD = DC. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. [1.10]\n\n**Step 2.** By the definition of extreme and mean ratio,\nAB : AC = AC : CB.\nThus R(AB,CB) = S(AC). We use the three-proportional-lines theorem directly, since the defining proportion already has this form. [D6.3, 6.17]\n\n**Step 3.** Apply the bisection-and-extension identity to AC, bisected at D and extended by CB. This route directly supplies the square on DB, the sum of the lesser segment and half the greater segment:\nS(DB) = R(AB,CB) + S(DC). [2.6]\n\n**Step 4.** Applying the square-of-a-divided-line identity to AC gives\nS(AC) = S(AD) + S(DC) + 2R(AD,DC).\nSince AD = DC, each of S(AD) and R(AD,DC) is S(DC). Hence\nS(AC) = 4S(DC). [2.4]\n\n**Step 5.** Combining Steps 2 and 4 yields R(AB,CB) = 4S(DC). Adding S(DC) to both sides and using Step 3, we obtain\nS(DB) = 5S(DC).\nBut DB is CB added to DC, and DC is half the greater segment AC. Therefore the square on the lesser segment added to half the greater segment is five times the square on half the greater segment, as required. [CN1, CN2]",
+          "used": [
+            "1.10",
+            "D6.3",
+            "6.17",
+            "2.6",
+            "2.4",
+            "CN1",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:55:13.762658+00:00",
+          "prompt_sha256": "e59a7d38cdeb2fdce21c9907f2bff1b65099dc74f20432b2bedaba01ca2a2d94",
+          "resource_table_sha256": "226bf34c4cd0acef950b95fd17abeb21016e8b2ebb25ec7de644bc9eade4f507",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b011-b975-7120-a14f-a4da1b81909c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b011-b975-7120-a14f-a4da1b81909c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-55-14-01a1b011-b975-7120-a14f-a4da1b81909c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:56:21.329105+00:00",
+          "total_wall_time_seconds": 67.566,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.3_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.4": [
+      {
+        "result": {
+          "prop_id": "13.4",
+          "proof": "**Step 1.** Let AB be cut in extreme and mean ratio at C, with AC the greater segment and CB the lesser. By the definition of extreme and mean ratio,\nAB : AC = AC : CB. [D6.3]\n\n**Step 2.** These three straight lines are proportional; therefore the rectangle contained by AB and CB equals the square on AC. [6.17]\n\n**Step 3.** Apply II.7 to AB cut at C, taking CB as the specified segment. This is the direct route because the proposition gives exactly the required pair of squares: the square on AB and the square on CB together equal twice the rectangle contained by AB and CB together with the square on AC. [2.7]\n\n**Step 4.** By Step 2, adding that rectangle to itself gives an area equal to two squares on AC; adding the square on AC to both gives three squares on AC. Thus the equality in Step 3 shows that the square on AB and the square on CB together are triple the square on AC. Hence the squares on the whole and the lesser segment together are triple the square on the greater segment, as required. [CN2, CN1]",
+          "used": [
+            "D6.3",
+            "6.17",
+            "2.7",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:55:43.797116+00:00",
+          "prompt_sha256": "7eb6f8905719e14fb7432cc4f6955d395766a5eb32001e881cb599d4d78c1614",
+          "resource_table_sha256": "3107e8ca56c767efe8c7b30b2b31d860f4c3ca3f4d1fa0f00e9bc630bd7cc71b",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b012-2ee1-7541-945c-a18f3ebeac9b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b012-2ee1-7541-945c-a18f3ebeac9b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-55-44-01a1b012-2ee1-7541-945c-a18f3ebeac9b.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:56:35.471276+00:00",
+          "total_wall_time_seconds": 51.674,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.4_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.5": [
+      {
+        "result": {
+          "prop_id": "13.5",
+          "proof": "**Step 1.** Let the greater and lesser segments of the original straight line have lengths a and b, respectively, and let its whole length be s = a + b. Since it is cut in extreme and mean ratio, s : a = a : b. Add a straight line of length a to the original line, making the new whole of length t = s + a. [D6.3]\n\n**Step 2.** Use the direct sum-of-antecedents and sum-of-consequents rule, since these sums are precisely the new whole and the original line. Applied to s : a = a : b, it gives\n(s + a) : (a + b) = s : a.\nThus t : s = s : a. [5.12]\n\n**Step 3.** The original whole s is greater than its part a. Hence the new whole t has segments s and a, with s the greater; and the proportion t : s = s : a shows that it is cut in extreme and mean ratio. Therefore the original straight line is the greater segment of the new whole, as required. [CN5, D6.3]",
+          "used": [
+            "D6.3",
+            "5.12",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:56:13.755353+00:00",
+          "prompt_sha256": "09495e6aeea4014292df51d85655619d481cc439dd9e2e51d559066befe84d67",
+          "resource_table_sha256": "fa2c66d921c255775a86818f57dfdfcbe51a8b29fd5c1f9eaa3cdcab2c077d91",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b012-a3c8-7062-9118-a18723c04422",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b012-a3c8-7062-9118-a18723c04422",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-56-14-01a1b012-a3c8-7062-9118-a18723c04422.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:57:23.658858+00:00",
+          "total_wall_time_seconds": 69.904,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.5_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.6": [
+      {
+        "result": {
+          "prop_id": "13.6",
+          "proof": "**Step 1.** Let the rational straight line have length L, and let its greater and lesser segments in extreme and mean ratio have lengths a and b. Thus L = a + b. Bisect L, and denote its half by h. Put t = a + h and u = L + h = 3h. [1.10]\n\n**Step 2.** Use XIII.1 directly, because it relates an auxiliary square to the square on half the given rational whole. It gives t² = 5h². Also, since squares have the duplicate ratio of their sides, L² = 4h² and u² = 9h². Consequently the squares on h, t, u, and L have h² as a common measure. Since L is rational, its square is commensurable with the square on the assigned rational straight line; transitivity of commensurability therefore shows that h, t, and u are all rational straight lines. [13.1, 6.20, D10.1.2, 10.12, D10.1.3]\n\n**Step 3.** The ratio t² : h² = 5 : 1 is not the ratio of a square number to a square number. Indeed, if m² = 5n² for relatively prime positive integers m and n, VII.30 would imply that 5 divides m; writing m = 5k then gives n² = 5k², so VII.30 would also imply that 5 divides n, a contradiction. Hence X.9 shows that t and h are incommensurable in length. Together with Step 2, this says that they are commensurable in square only. [7.30, 10.9, D10.1.2]\n\n**Step 4.** Now a = t − h > 0. Thus the greater segment is obtained by subtracting from the rational straight line t the rational straight line h, which is commensurable with t in square only. By X.73, a is irrational and is called an apotome. [10.73]\n\n**Step 5.** Since u = 3h, the lines u and h are commensurable in length, h being a common measure. Since h is incommensurable in length with t, X.13 implies that u is also incommensurable in length with t. Their squares, however, are commensurable by Step 2. Thus the rational straight lines u and t are commensurable in square only. [D10.1.1, 10.13, D10.1.2]\n\n**Step 6.** Subtracting t = a + h from u = L + h leaves L − a = b. Therefore b = u − t > 0. The lesser segment is consequently also the remainder after subtracting from a rational straight line a rational straight line commensurable with it in square only. By X.73, b is irrational and is called an apotome. Hence each segment of the given rational straight line is the irrational straight line called apotome. [CN3, 10.73]",
+          "used": [
+            "1.10",
+            "13.1",
+            "6.20",
+            "D10.1.2",
+            "10.12",
+            "D10.1.3",
+            "7.30",
+            "10.9",
+            "10.73",
+            "D10.1.1",
+            "10.13",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:56:43.754240+00:00",
+          "prompt_sha256": "24012b4449d7e345e3723ddc8066c1c1048ead3e84990f1a23358326c971c16e",
+          "resource_table_sha256": "ab42be9b392b17befb11cc0d23d96d5fded28a61de50f2ece7b9760fe44d1005",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b013-1902-7c00-a8d7-fc605a492e65",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b013-1902-7c00-a8d7-fc605a492e65",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 9,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-56-44-01a1b013-1902-7c00-a8d7-fc605a492e65.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T08:59:10.889649+00:00",
+          "total_wall_time_seconds": 147.135,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.6_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.7": [
+      {
+        "result": {
+          "prop_id": "13.7",
+          "proof": "**Step 1.** Let ABCDE be the pentagon, with AB = BC = CD = DE = EA. Join AC, BE, BD, and CE [P1]. Up to relabelling around the boundary, the three equal angles occur either at A, C, D or at A, B, C. We first treat the nonconsecutive arrangement; the consecutive arrangement will then reduce to it.\n\n**Step 2.** Suppose ∠EAB = ∠BCD = ∠CDE. Apply side–angle–side to triangles EAB, BCD, and CDE: this is the natural congruence criterion because their equal included angles are given. Their corresponding sides and angles are equal [1.4]. Consequently BE = BD = CE. Moreover, their base angles are all equal, since each triangle is isosceles [1.5, CN1]. Denote this common base angle by α; thus\n∠ABE = ∠BEA = ∠CBD = ∠BDC = ∠DCE = ∠CED = α.\n\n**Step 3.** Since BE = BD, triangle BED gives ∠BED = ∠BDE [1.5]. Adding the equal angles ∠BEA and ∠BDC therefore gives\n∠DEA = ∠BED + α = ∠BDE + α = ∠CDE [CN2].\nLikewise, BE = CE gives ∠EBC = ∠BCE [1.5], and hence\n∠ABC = α + ∠EBC = α + ∠BCE = ∠BCD [CN2].\nThus the angles at E and B equal the given equal angles at D and C respectively. All five angles are therefore equal in the nonconsecutive case [CN1].\n\n**Step 4.** Now suppose ∠EAB = ∠ABC = ∠BCD. Triangles EAB and ABC have equal corresponding sides enclosing equal angles, so BE = AC and their corresponding base angles are equal [1.4]. Since they are also isosceles, write\n∠EBA = ∠BEA = ∠BAC = ∠BCA = β [1.5, CN1].\nLet F be the intersection of diagonals AC and BE.\n\n**Step 5.** In triangle ABF, the angles BAF and ABF both equal β. Therefore AF = BF [1.6]. Subtracting these equal lengths from AC = BE yields FC = FE [CN3]. Triangle CFE is consequently isosceles, so ∠FCE = ∠CEF [1.5]. Because F lies on AC and BE, this says\n∠ACE = ∠BEC.\n\n**Step 6.** Since CD = DE, triangle CDE gives ∠ECD = ∠CED [1.5]. Adding this equality, the equality from Step 5, and ∠BCA = ∠BEA = β, we obtain\n∠BCD = ∠BCA + ∠ACE + ∠ECD\n= ∠BEA + ∠BEC + ∠CED\n= ∠DEA [CN2].\nThus the angle at E equals the given equal angles at A, B, and C [CN1].\n\n**Step 7.** In particular, the angles at B, C, and E are equal. These form the nonconsecutive arrangement already proved in Steps 2–3, so that case shows that all five angles are equal. Hence, whether the three given equal angles are taken in order or not in order, the equilateral pentagon is equiangular.",
+          "used": [
+            "P1",
+            "1.4",
+            "1.5",
+            "CN1",
+            "CN2",
+            "1.6",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:57:13.825467+00:00",
+          "prompt_sha256": "5446df795bd6d4fe4a031acc00a57b1cd27ee7d1929c599bd836f87146d33398",
+          "resource_table_sha256": "6d6784ad18d446fc3e66cb6e9af97a542fef06b924660b3bb869f0eb76200a27",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b013-8e62-7d51-bdad-c0777524f877",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b013-8e62-7d51-bdad-c0777524f877",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-57-14-01a1b013-8e62-7d51-bdad-c0777524f877.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:07:23.582254+00:00",
+          "total_wall_time_seconds": 609.757,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.7_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.8": [
+      {
+        "result": {
+          "prop_id": "13.8",
+          "proof": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices in order. Draw AC and BD, which subtend the consecutive angles at B and C, and let them meet at P. Also draw AD. Let u denote one fifth of two right angles. The triangles ABC, ACD, and ADE partition the pentagon, so its interior angles together equal six right angles, or 15u. Since its five angles are equal, each equals 3u. [P1, 1.32, CN2]\n\n**Step 2.** Since AB = BC and BC = CD, the triangles ABC and BCD are isosceles. Their vertex angles at B and C respectively equal 3u, while each triangle has angle sum 5u. Consequently,\n∠BAC = ∠BCA = ∠CBD = ∠BDC = u. [1.5, 1.32]\n\n**Step 3.** Because P lies on AC and BD,\n∠BAP = u and ∠ABP = ∠ABC − ∠CBD = 2u.\nThus ∠APB = 2u, and the equal angles at B and P in triangle ABP give AP = AB.\nSimilarly,\n∠CDP = u and ∠PCD = ∠BCD − ∠BCA = 2u.\nThus ∠CPD = 2u, and the equal angles at C and P in triangle CDP give DP = CD. As all pentagon sides are equal, we have\nAP = DP = BC. [CN3, 1.32, 1.6, CN1]\n\n**Step 4.** In triangle BPC, the angles at B and C both equal u, so the angle at P equals 3u. The side opposite the greater angle is greater; hence BC > BP and BC > PC. Since AP = DP = BC, it follows that AP > PC and DP > PB. Therefore AP and DP are the greater segments of AC and BD respectively. [1.32, 1.19, CN1]\n\n**Step 5.** Use equiangular-triangle proportionality directly, since the preceding angle equalities supply its hypotheses. Triangles ABC and BPC are equiangular, with A corresponding to B, B to P, and C to C. Their corresponding sides therefore give\nAC : BC = BC : PC.\nLikewise, triangles BCD and BPC are equiangular, with B corresponding to B, C to P, and D to C. Thus\nBD : BC = BC : PB. [6.4]\n\n**Step 6.** Substitute AP = BC into the first proportion and DP = BC into the second:\nAC : AP = AP : PC,\nBD : DP = DP : PB.\nBy Step 4, the middle terms are precisely the greater segments. Thus each diagonal is cut by the other in extreme and mean ratio. By Step 3, both greater segments equal a side of the pentagon. This proves the proposition. [CN1, D6.3]",
+          "used": [
+            "P1",
+            "1.32",
+            "CN2",
+            "1.5",
+            "CN3",
+            "1.6",
+            "CN1",
+            "1.19",
+            "6.4",
+            "D6.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:57:43.797295+00:00",
+          "prompt_sha256": "07f45a2f248891bf44f143c9f257ba955ba406a6d593dc52a48c997d7797220e",
+          "resource_table_sha256": "9a89d5312893a1e4c79f10bf664c346dbef3f42e061b35b97b2f2074da6a3eb6",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b014-039b-75d3-8baa-2c27212a614b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b014-039b-75d3-8baa-2c27212a614b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-57-44-01a1b014-039b-75d3-8baa-2c27212a614b.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:02:05.972187+00:00",
+          "total_wall_time_seconds": 262.175,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.8_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.9": [
+      {
+        "result": {
+          "prop_id": "13.9",
+          "proof": "**Step 1.** Let O be the centre of the given circle, r its radius, h the side of its inscribed regular hexagon, and d the side of its inscribed regular decagon. Join O to the vertices [P1]. All these radii are equal [D1.15]. Equal sides cut off equal minor arcs, and equal arcs subtend equal angles at the centre [3.28, 3.27]. Since the angles about O together equal four right angles [1.13], consecutive vertices of the hexagon subtend 60° at O, and consecutive vertices of the decagon subtend 36°.\n\n**Step 2.** Let UV be a side of the hexagon. In triangle OUV, OU = OV and ∠UOV = 60°. Its base angles are equal and together equal 120°, so each is 60° [1.5, 1.32]. Equal angles subtend equal sides; hence UV = OU, and therefore h = r [1.6].\n\n**Step 3.** Let AB be a side of the decagon. In triangle OAB, OA = OB = r, AB = d, and ∠AOB = 36°. Thus ∠OAB = ∠ABO = 72° [1.5, 1.32]. Bisect ∠OAB by AD, meeting OB at D [1.9]. Then ∠OAD = ∠DAB = 36°.\n\n**Step 4.** In triangle OAD, ∠AOD = ∠OAD = 36°, so OD = AD [1.6]. In triangle ADB, ∠DAB = 36° and ∠ABD = 72°; therefore ∠ADB = 72° [1.32], and AD = AB [1.6]. Consequently OD = AD = AB = d. Moreover, in triangle ADB the angle at B is greater than the angle at A, so AD > DB [1.19]. Thus OD > DB.\n\n**Step 5.** Use the angle-bisector theorem here, since it directly gives the proportion between the two parts of the radius:\nOD : DB = OA : AB [6.3].\nAs OA = OB and AB = OD, this is\nOB : OD = OD : DB.\nSince OD is the greater segment, OB has been cut at D in extreme and mean ratio, with its greater segment equal to d [D6.3].\n\n**Step 6.** Apply 13.5: adjoining to a line cut in extreme and mean ratio a line equal to its greater segment produces another such division, whose greater segment is the original whole. Here the original whole is r and its greater segment is d. Hence r + d is cut in extreme and mean ratio into r and d, with r the greater segment [13.5]. Since h = r by Step 2, the sum h + d is cut in extreme and mean ratio, and its greater segment is the side h of the hexagon, as required.",
+          "used": [
+            "P1",
+            "D1.15",
+            "3.28",
+            "3.27",
+            "1.13",
+            "1.5",
+            "1.32",
+            "1.6",
+            "1.9",
+            "1.19",
+            "6.3",
+            "D6.3",
+            "13.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:58:13.765245+00:00",
+          "prompt_sha256": "8581a4b4a150a2423af1080c92319bf4af5b513bc048c03c6a44e570aaa63ea5",
+          "resource_table_sha256": "6f284d0af95eaabf22b2e46f246afcf1763003676e76215d81805f6853925257",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b014-7895-7cb0-aefd-07e273bf90c7",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b014-7895-7cb0-aefd-07e273bf90c7",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-58-14-01a1b014-7895-7cb0-aefd-07e273bf90c7.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:00:34.629932+00:00",
+          "total_wall_time_seconds": 140.865,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.9_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.10": [
+      {
+        "result": {
+          "prop_id": "13.10",
+          "proof": "**Step 1.** Let O be the centre of the circle, let r be its radius, and let p, h, d denote respectively the sides of the inscribed equilateral pentagon, hexagon, and decagon. Equal chords cut off equal corresponding arcs, so the successive arcs of each polygon are equal. The six hexagonal arcs therefore give six equal central angles. Each is one third of two right angles; and, since the two radii forming such an angle are equal, the other two angles of the triangle are equal and have that same magnitude. Thus its three sides are equal, and h = r. [3.28, 3.27, D1.15, 1.5, 1.32, 1.6]\n\n**Step 2.** Take a pentagon side AB and bisect it at H. Join OH and extend it to meet the minor arc AB at C; join AC and BC. Since AB is not a diameter, the line through the centre bisecting AB is perpendicular to AB. Moreover, O, H, C occur in that order. Put AH = HB = x and OH = u. Thus p = 2x and HC = r − u. [1.10, P1, P2, 3.3]\n\n**Step 3.** The right triangles AHC and BHC give AC² = AH² + HC² = BH² + HC² = BC². Hence AC = BC, and their corresponding arcs are equal. Together these arcs form the pentagonal arc AB, which is one fifth of the circumference; each is therefore one tenth. Consequently AC = BC = d, the side of the inscribed decagon. [1.47, 3.28, 3.29]\n\n**Step 4.** Use XIII.9 directly, since it already relates the hexagon and decagon sides needed here. It says that r + d is cut in extreme and mean ratio with greater segment r. Thus (r + d):r = r:d, and consequently\nr² = (r + d)d = rd + d².  (1)\nHere and below, products denote rectangles and squares denote their areas. [13.9, D6.3, 6.17, 2.3]\n\n**Step 5.** Applying the right-triangle theorem to OHA and CHA gives\nr² = x² + u²,\nd² = x² + (r − u)².  (2)\n[1.47]\n\n**Step 6.** Apply II.7 to the radius cut into u and r − u:\nr² + u² = 2ru + (r − u)².\nAdding x² to both sides and using (2) gives\n2r² = 2ru + d².\nTogether with (1), this yields\n2ru = r² + rd = r(r + d).\nThe left side is the rectangle r(2u). These equal rectangles have the same positive height r, so their bases are equal:\n2u = r + d.  (3)\n[2.7, CN2, CN3, 2.1, 2.3, 6.1]\n\n**Step 7.** Multiply the first equality in (2) by four. Since 2x = p and, by (3), 2u = r + d, the square-of-a-sum identity gives\n4r² = p² + (r + d)² = p² + r² + 2rd + d².\nAdd d² to both sides and use (1):\n4r² + d² = p² + r² + 2(rd + d²) = p² + 3r².\nSubtracting 3r² gives p² = r² + d². Since h = r, this is p² = h² + d²: the square on the pentagon side equals the squares on the hexagon and decagon sides inscribed in the same circle. [2.4, CN2, CN3]",
+          "used": [
+            "3.28",
+            "3.27",
+            "D1.15",
+            "1.5",
+            "1.32",
+            "1.6",
+            "1.10",
+            "P1",
+            "P2",
+            "3.3",
+            "1.47",
+            "3.29",
+            "13.9",
+            "D6.3",
+            "6.17",
+            "2.3",
+            "2.7",
+            "CN2",
+            "CN3",
+            "2.1",
+            "6.1",
+            "2.4"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T08:59:11.081071+00:00",
+          "prompt_sha256": "8399cd992f510b5059fe101983394cd0b2f250d843941ffd8a67cd3f96d11a09",
+          "resource_table_sha256": "5b9e05a7c775f834be966383611167e8efdffaaf3ca78423dbbc75f7fbc4db6d",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b015-58b3-71e3-99db-329cc0e28465",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b015-58b3-71e3-99db-329cc0e28465",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T08-59-11-01a1b015-58b3-71e3-99db-329cc0e28465.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:06:06.640604+00:00",
+          "total_wall_time_seconds": 415.56,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.10_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.11": [
+      {
+        "result": {
+          "prop_id": "13.11",
+          "proof": "**Step 1.** Let D be the given rational diameter, r its half, and p the side of the inscribed equilateral pentagon. Set out D as the rational straight line of reference. Since r²:D² = 1:4, r is rational. [10.6, D10.1.3]\n\n**Step 2.** Inscribe a regular hexagon in the circle. Its side equals r: joining its vertices to the centre gives six triangles whose corresponding sides are equal, since their two radial sides are equal and their bases are equal. Their central angles are therefore equal, each being two-thirds of a right angle. Each triangle is isosceles, and its angle sum is two right angles; consequently its base angles also equal two-thirds of a right angle. Thus each triangle is equilateral, proving that the hexagon’s side is r. [4.15, D1.15, 1.8, 1.5, 1.32, 1.6]\n\n**Step 3.** Let d be the side of the regular decagon inscribed in the same circle. The line r+d is cut in extreme and mean ratio, with greater segment r and lesser segment d. Therefore, putting t = d+r/2, the square on the lesser segment together with half the greater segment satisfies\n\nt² = 5(r/2)² = 5r²/4. [13.9, 13.3]\n\n**Step 4.** We use the direct square identity for the pentagon’s side: p² = r²+d². Also, expanding the square on t gives\n\nt² = d²+rd+r²/4.\n\nTogether with Step 3, this yields d²+rd = r². Hence, if u = 5r/2,\n\np² = r²+d² = 2r²−rd = r(2r−d) = r(u−t).\n\nThus the required square is a rectangle with rational side r; it remains to classify its other side u−t. [13.10, 2.4, 2.1]\n\n**Step 5.** We have u² = 25r²/4 and t² = 5r²/4. Consequently u²:D² = 25:16 and t²:D² = 5:16, so u and t are rational straight lines. Their squares have ratio 5:1 and are therefore commensurable. But 5:1 is not the ratio of a square number to a square number, so u and t are incommensurable in length. Since u>t, their difference u−t is an apotome. [10.6, D10.1.3, 10.9, 10.73]\n\n**Step 6.** Moreover,\n\nu²−t² = 5r² = (2t)²,\n\nand u²:(2t)² = 5:4. This is not a ratio of square numbers, so 2t is incommensurable in length with u. Meanwhile u:D = 5:4, so the whole u is commensurable in length with the rational line set out. The apotome u−t therefore meets exactly the definition of a fourth apotome: the excess of the square on its whole over the square on its annex is the square on a line incommensurable with the whole. [10.9, 10.6, D10.3.4]\n\n**Step 7.** By Step 4, the square on p is the rectangle contained by the rational straight line r and the fourth apotome u−t. The direct classification theorem for such an area says that its square-side is minor. Therefore the side p of the inscribed equilateral pentagon is the irrational straight line called minor, as required. [10.94]",
+          "used": [
+            "10.6",
+            "D10.1.3",
+            "4.15",
+            "D1.15",
+            "1.8",
+            "1.5",
+            "1.32",
+            "1.6",
+            "13.9",
+            "13.3",
+            "13.10",
+            "2.4",
+            "2.1",
+            "10.9",
+            "10.73",
+            "D10.3.4",
+            "10.94"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:00:34.819351+00:00",
+          "prompt_sha256": "9f7e0d86eb32fe81e8c918ef4d8135c2c6b812f2b9d6409a82398d48ae1f025f",
+          "resource_table_sha256": "2048dd75c8ee01f53b53e13b7394c03e96a26c20d5f4f6770339f9b2a32eeb57",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b016-9fb9-74a2-aa30-b4f953d5e156",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b016-9fb9-74a2-aa30-b4f953d5e156",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 10,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-00-35-01a1b016-9fb9-74a2-aa30-b4f953d5e156.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:05:50.070844+00:00",
+          "total_wall_time_seconds": 315.251,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.11_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.12": [
+      {
+        "result": {
+          "prop_id": "13.12",
+          "proof": "**Step 1.** Let ABC be an equilateral triangle inscribed in the given circle, and write R for a right angle. Since AB = BC = CA, the three angles of ABC are equal; since their sum is 2R, each is 2R/3. We use a diameter through A to obtain a right triangle directly. [1.5, 1.32]\n\n**Step 2.** Find the centre O, draw AO, and produce it through O to meet the circle again at D. Join BD and BO. The radii satisfy AO = OB = OD, and AD is a diameter. [3.1, P1, P2, D1.15]\n\n**Step 3.** The point D is distinct from B and C, since otherwise an angle of ABC would be right by the semicircle theorem, contrary to Step 1. Since AD is a diameter, ∠ABD = R, so ∠ADB is acute. The angle ACB is also acute. Thus, by the greater- and lesser-segment assertions of III.31, C and D lie in the same greater segment bounded by AB. The same-segment theorem is therefore the direct applicable theorem, giving\n∠ADB = ∠ACB = 2R/3. [3.31, 1.32, 3.21]\n\n**Step 4.** Because O lies between A and D, ∠ODB = ∠ADB = 2R/3. In triangle OBD, OB = OD, so ∠OBD = ∠ODB = 2R/3. Its remaining angle BOD is consequently also 2R/3. Equal angles have equal opposite sides; hence BD = OD. Thus BD equals a radius of the circle. [D1.15, 1.5, 1.32, 1.6]\n\n**Step 5.** Write XY² for the square on XY. Since AO = OD, applying II.4 to AD cut at O gives\nAD² = AO² + OD² + 2(AO · OD) = 4OD².\nHere AO · OD denotes the rectangle contained by AO and OD, which is a square because those lengths are equal. [2.4, CN2]\n\n**Step 6.** Applying the right-triangle theorem to ABD gives\nAB² + BD² = AD².\nSubstituting BD = OD and the equality from Step 5 yields\nAB² + OD² = 4OD².\nSubtracting OD² gives AB² = 3OD². Since AB is a side of the equilateral triangle and OD is a radius, the square on the side is triple the square on the radius, as required. [1.47, CN3]",
+          "used": [
+            "1.5",
+            "1.32",
+            "3.1",
+            "P1",
+            "P2",
+            "D1.15",
+            "3.31",
+            "3.21",
+            "1.6",
+            "2.4",
+            "CN2",
+            "1.47",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:02:06.169367+00:00",
+          "prompt_sha256": "86e43e30abaf69fc31169250aea53d9dc24bdf9c29fab380ec90c46ff573dea5",
+          "resource_table_sha256": "1c592e5b4d2ded1218dfb41b7cfc6cb9ea09a632686a30b661a9d6c700c51daf",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b018-0472-78d2-9029-223405f397ad",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b018-0472-78d2-9029-223405f397ad",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-02-06-01a1b018-0472-78d2-9029-223405f397ad.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:04:47.073182+00:00",
+          "total_wall_time_seconds": 160.904,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.12_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.13": [
+      {
+        "result": {
+          "prop_id": "13.13",
+          "proof": "**Step 1.** Let AB be the diameter of a generating semicircle of the given sphere, and let O be its centre. Thus O is also the sphere’s centre, and OA = OB. Cut off CB equal to one third of AB, so that AC = 2CB. In the plane of the semicircle draw CD perpendicular to AB, meeting the semicircle at D. Write t = CB and r = CD; thus AC = 2t and AB = 3t. [D11.14, D11.16, D11.17, D1.15, 6.9, 1.11]\n\n**Step 2.** Construct the plane of the base as follows. At C erect CT perpendicular to the plane of the semicircle. The intersecting lines CD and CT determine a plane Π. Since AB is perpendicular to both CD and CT, it is perpendicular to Π. In Π describe the circle k with centre C and radius CD. [11.12, D11.3, 11.2, 11.4, P3]\n\n**Step 3.** Determine the radius of k. Since the sphere’s centre already bisects AB, II.5 applies directly to the equal division at O and the unequal division at C:\n\nAC·CB + OC² = OA².\n\nThe right triangle OCD gives\n\nCD² + OC² = OD².\n\nBut OA = OD, being radii of the generating circle. Subtracting OC² from these equal areas therefore gives\n\nr² = CD² = AC·CB = 2t².\n\nHere products denote rectangles and squared lengths denote the corresponding squares. [2.5, 1.47, D1.15, CN3]\n\n**Step 4.** The circle k lies on the given sphere. Indeed, for any point X of k, CX = CD, and OC is perpendicular to CX. Consequently,\n\nOX² = OC² + CX² = OC² + CD² = OD².\n\nThus every point of k is at the sphere’s radius from O. Equivalently, as the generating semicircle revolves about AB, D describes precisely this circle, whose centre is C and whose plane is perpendicular to AB. Hence k is on the given sphere. [D1.15, D11.3, 1.47, D11.14, D11.16]\n\n**Step 5.** Construct an auxiliary equilateral triangle, and inscribe in k a triangle EFG equiangular with it. The auxiliary triangle has equal angles, and therefore EFG has equal sides. Join A to E, F, and G. Since A is outside Π, these joins and the base EFG form a triangular pyramid. All four vertices lie on the given sphere, so the pyramid is comprehended by it. [1.1, 1.5, 4.2, 1.6, P1, D11.12]\n\n**Step 6.** We use XIII.12 for the base because its circumradius r has already been determined. It gives\n\nEF² = FG² = GE² = 3r² = 6t².\n\nAlso, AC is perpendicular to the base plane, while CE = CF = CG = r. Applying the theorem on the square of the hypotenuse to each of the three right triangles with vertex C gives\n\nAE² = AF² = AG² = AC² + r² = (2t)² + 2t² = 6t².\n\nThe expansion (2t)² = 4t² follows from II.4. Thus all six edges are equal: the constructed pyramid has four equilateral triangular faces. [13.12, D11.3, D1.15, 1.47, 2.4, CN1]\n\n**Step 7.** Let s be any edge of the pyramid. We have proved s² = 6t². Since the sphere’s diameter is AB = 3t, successive application of II.4 gives AB² = 9t². Therefore\n\nAB² = (3/2)s².\n\nHence an equilateral triangular pyramid has been constructed and comprehended in the given sphere, and the square on the sphere’s diameter is one and a half times the square on the side of the pyramid, as required. [2.4]",
+          "used": [
+            "D11.14",
+            "D11.16",
+            "D11.17",
+            "D1.15",
+            "6.9",
+            "1.11",
+            "11.12",
+            "D11.3",
+            "11.2",
+            "11.4",
+            "P3",
+            "2.5",
+            "1.47",
+            "CN3",
+            "1.1",
+            "1.5",
+            "4.2",
+            "1.6",
+            "P1",
+            "D11.12",
+            "13.12",
+            "2.4",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:35:49.221301+00:00",
+          "prompt_sha256": "02849fdde1803fd627de69af8f5dafae4b241b3762f08cd6720c584749b48a96",
+          "resource_table_sha256": "c6b1b0b793ff70bea05caaac8a68ab6540fea57ba5970a4e3440f6e16799e595",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b036-e301-7061-81ad-ad792eb3c69b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b036-e301-7061-81ad-ad792eb3c69b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 11,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-35-49-01a1b036-e301-7061-81ad-ad792eb3c69b.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:40:42.578414+00:00",
+          "total_wall_time_seconds": 293.357,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.13_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.14": [
+      {
+        "result": {
+          "prop_id": "13.14",
+          "proof": "**Step 1.** Let AC be the prescribed diameter of the sphere. We use the direct construction by three mutually perpendicular diameters. Bisect AC at O, and describe in a plane π the circle Γ with centre O and radius OA. Through O draw the perpendicular to AC in π, meeting Γ at B and D, so that A, B, C, D occur successively around the circle. Thus AC and BD are diameters, and OA = OB = OC = OD. [1.10, P3, 1.11, D1.15, D1.17]\n\n**Step 2.** At O set up a straight line perpendicular to π. Produce it through O, and take E and F on its opposite sides such that OE = OF = OA. Join consecutive vertices of ABCD, and join each of E and F to each of A, B, C, D. Since EF is perpendicular to π, each of OE and OF makes a right angle with every equatorial radius OA, OB, OC, OD. [11.12, P2, 1.3, P1, D11.3]\n\n**Step 3.** Consider the twelve triangles OAB, OBC, OCD, ODA, OEA, OEB, OEC, OED, OFA, OFB, OFC, OFD. In each, the two sides issuing from O equal OA, and their included angle is right. Consequently their opposite sides are all equal by side–angle–side. This is the natural criterion here because the equal radii and included right angles are already available. Hence\nAB = BC = CD = DA = EA = EB = EC = ED = FA = FB = FC = FD. [P4, 1.4]\n\n**Step 4.** Since AC and BD are diameters of Γ, all four angles of ABCD are angles in semicircles and therefore right. Together with the equality of its sides, this makes ABCD a square. The four triangles EAB, EBC, ECD, EDA form the boundary above this square, and FAB, FBC, FCD, FDA form the boundary below it; together they enclose a solid, with their common square base internal. Every one of these eight boundary triangles is equilateral by Step 3. Moreover, any two have their three sides respectively equal, so their corresponding angles are equal, and side–angle–side then gives equality of the triangles themselves. The solid is therefore contained by eight equal equilateral triangles: it is an octahedron. [3.31, D1.22, D1.20, 1.8, 1.4, D11.26]\n\n**Step 5.** In the plane through AC and EF, describe the circle with centre O and radius OA. Its diameter is EF, and A lies on its circumference. Rotate the semicircle EAF about EF. By the definition of a sphere, this generates a sphere with centre O. The endpoints E and F remain on its surface, while A traces precisely Γ, the circle in π with centre O and radius OA. Thus A, B, C, D also lie on the spherical surface, and the sphere comprehends the constructed octahedron. Its diameter EF equals the prescribed AC, since\nEF = EO + OF = AO + OC = AC. [P3, D1.18, D11.14, D11.16, D11.17, CN2]\n\n**Step 6.** The angle ABC is right, being an angle in the semicircle on AC. Therefore the square on AC equals the sum of the squares on AB and BC. But AB = BC by Step 3, so the square on AC is double the square on AB. Since AC equals the sphere’s diameter and AB is a side of the octahedron, the square on the diameter of the sphere is double the square on the side of the octahedron. The required construction and proof are complete. [3.31, 1.47]",
+          "used": [
+            "1.10",
+            "P3",
+            "1.11",
+            "D1.15",
+            "D1.17",
+            "11.12",
+            "P2",
+            "1.3",
+            "P1",
+            "D11.3",
+            "P4",
+            "1.4",
+            "3.31",
+            "D1.22",
+            "D1.20",
+            "1.8",
+            "D11.26",
+            "D1.18",
+            "D11.14",
+            "D11.16",
+            "D11.17",
+            "CN2",
+            "1.47"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:40:42.786440+00:00",
+          "prompt_sha256": "6771f3906e6017b2c67cb71fb498e75fa16ecdc12cf82dcb1249635b3265f623",
+          "resource_table_sha256": "c9c37266e4fd6dac3b9478e13229277a32d77b15e94c56671ef3b512175b6f09",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b03b-5dad-78e1-812a-dbfdafacadee",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b03b-5dad-78e1-812a-dbfdafacadee",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-40-43-01a1b03b-5dad-78e1-812a-dbfdafacadee.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:44:11.364563+00:00",
+          "total_wall_time_seconds": 208.578,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.14_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.15": [
+      {
+        "result": {
+          "prop_id": "13.15",
+          "proof": "**Step 1.** Let d be the prescribed diameter of the sphere. We first determine the cube’s edge by a mean proportional, since this directly constructs a square equal to one third of the square on d. Cut off t equal to one third of d, and construct a mean proportional s between d and t. Thus d:s = s:t, and the square on s equals the rectangle contained by d and t. Dividing the square on d into three such rectangles gives\n\nd² = 3s².\n[6.9, 6.13, 6.17, 2.1]\n\n**Step 2.** Construct the square ABCD with side s. At A, B, C, and D erect perpendiculars to its plane, all on the same side. Extend them as necessary and cut off AA′ = BB′ = CC′ = DD′ = s. These four perpendiculars are parallel to one another. [1.46, 11.12, P2, 1.3, 11.6]\n\n**Step 3.** Join A′B′, B′C′, C′D′, and D′A′. Since AA′ and BB′ are equal and parallel, AB and A′B′ are equal and parallel; the same reasoning applies to the other three pairs of corresponding edges. Consequently ABB′A′, BCC′B′, CDD′C′, and DAA′D′ are parallelograms whose sides all equal s. Each has right angles at its base, because the erected edges are perpendicular to the base plane; its remaining angles are right by the properties of parallel lines. Thus these four faces are squares. [P1, 1.33, D11.3, 1.29, D1.22]\n\n**Step 4.** The opposite sides of ABCD are parallel, since its angles are right. Therefore, using the parallels established above, A′B′ and D′C′ are parallel. They consequently lie in one plane containing all four upper vertices. The angles of A′B′C′D′ equal the corresponding angles of ABCD, because their respective sides are parallel. Hence the upper face is also a square of side s. [1.28, 11.9, D1.23, 11.10, D1.22]\n\nAll six faces are equal: dividing each square by a diagonal gives two triangles having sides s, s and the included right angle, so the triangles, and therefore the squares, are equal. The constructed solid is consequently a cube. [1.4, CN2, D11.25]\n\n**Step 5.** Join the face diagonals AC and BD and the four body diagonals AC′, BD′, CA′, and DB′. By the right-angled triangles in the base,\n\nAC² = BD² = 2s².\n\nSince CC′ is perpendicular to the base plane, triangle ACC′ is right-angled at C. Thus\n\nAC′² = AC² + CC′² = 2s² + s² = 3s² = d².\n\nThe identical calculation, using the appropriate base diagonal and erected edge, applies to BD′, CA′, and DB′. Hence all four body diagonals have length d. [P1, D11.3, 1.47]\n\n**Step 6.** To locate their common midpoint, use XI.38, which applies directly to the cube just constructed. Bisect the four sides of each of the opposite faces ABCD and A′B′C′D′. Carry one plane through the midpoints of AB, CD, A′B′, and C′D′, and another through the midpoints of BC, DA, B′C′, and D′A′. Let MN be their common section within the cube. [1.10]\n\nApply XI.38 to these same planes and each body diagonal: MN and that diagonal bisect one another. Thus all four body diagonals have the same midpoint O, namely the midpoint of MN. Since each diagonal has length d, the distances from O to all eight vertices are equal to d/2. [11.38]\n\n**Step 7.** In the plane ACC′A′ describe the circle with centre O and radius OA, and take a semicircle with diameter AC′. Rotate this semicircle about AC′. It generates a sphere with centre O. [P3, D11.14, D11.16]\n\nEvery vertex lies on this sphere. Indeed, each is at distance OA from O; the plane through that vertex and the axis AC′ is a position of the rotating semicircle, whose circular boundary has precisely that radius. Thus the generated surface passes through all eight vertices, and the cube is comprehended in the sphere. [D1.15, D11.14]\n\nThe segment AC′ passes through O and terminates on the sphere, so it is a diameter. Its length is d, and Step 5 gives AC′² = 3s². Therefore the cube has been constructed and comprehended in a sphere of the prescribed diameter, and the square on that diameter is triple the square on the side of the cube. [D11.17, 1.47]",
+          "used": [
+            "6.9",
+            "6.13",
+            "6.17",
+            "2.1",
+            "1.46",
+            "11.12",
+            "P2",
+            "1.3",
+            "11.6",
+            "P1",
+            "1.33",
+            "D11.3",
+            "1.29",
+            "D1.22",
+            "1.28",
+            "11.9",
+            "D1.23",
+            "11.10",
+            "1.4",
+            "CN2",
+            "D11.25",
+            "1.47",
+            "1.10",
+            "11.38",
+            "P3",
+            "D11.14",
+            "D11.16",
+            "D1.15",
+            "D11.17"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:41:12.773331+00:00",
+          "prompt_sha256": "ee6bf7ce71288735595f26563ee13f67790b47b89d9894999977bb28664c4e24",
+          "resource_table_sha256": "0d4d73b355cea3fd5b7ec9073bcad1792ce7da6cf0cc91955eb4bd81dd510498",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b03b-d2e5-7511-8f9f-bc39a392a8e3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b03b-d2e5-7511-8f9f-bc39a392a8e3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 9,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-41-13-01a1b03b-d2e5-7511-8f9f-bc39a392a8e3.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:47:21.064794+00:00",
+          "total_wall_time_seconds": 368.291,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.15_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.16": [
+      {
+        "result": {
+          "prop_id": "13.16",
+          "proof": "**Step 1.** Let D be the diameter of the required sphere, and take D as the assigned rational straight line for the irrationality assertion [D10.1.3]. Cut off D/5, and construct a mean proportional r between D and D/5 [6.9, 6.13]. Then\nr² = D²/5,\nby the relation between a mean proportional and the rectangle contained by its extremes [6.17]. Squares below denote the squares on the corresponding straight lines.\n\n**Step 2.** Describe a circle with centre O and radius r, and inscribe a regular pentagon A₀A₁A₂A₃A₄ in it [P3, 4.11]. Let its side be a. Indices throughout are taken modulo five. Bisect each successive arc AᵢAᵢ₊₁ at Cᵢ [3.30]. Since equal chords cut off equal arcs, the ten points A₀,C₀,A₁,C₁,…,A₄,C₄ divide the circumference into ten equal arcs [3.28]. Consequently they form a regular decagon; write t for its side. Thus AᵢCᵢ = CᵢAᵢ₊₁ = t. Moreover, each arc CᵢCᵢ₊₁ equals an arc AᵢAᵢ₊₁, so CᵢCᵢ₊₁ = a [3.29].\n\n**Step 3.** The side of a regular hexagon inscribed in this circle is r. Indeed, construct the hexagon by 4.15. Its equal arcs give six equal central angles [3.28, 3.27]; its isosceles central triangles therefore have all three angles equal, and hence are equilateral [1.5, 1.32, 1.6]. Applying 13.10 to our pentagon now gives\n(1)  a² = r² + t².\nThis suggests the direct construction: two staggered pentagons separated by r, whose joining edges have perpendicular components r and t.\n\n**Step 4.** By 13.9, the sum r+t is cut in extreme and mean ratio, with greater segment r and lesser segment t. Therefore 13.3 gives\n(2)  (t+r/2)² = 5(r/2)² = D²/4.\nPut h = t+r/2. Since lengths are positive, 2h = D. Here 13.3 is the directly applicable identity: the distance needed for each axial pole is the lesser segment plus half the greater.\n\n**Step 5.** Erect OO′ perpendicular to the plane of the circle and make OO′ = r [11.12, P3]. Through each Cᵢ draw a parallel to OO′ and mark Bᵢ on the same side of the original plane, with CᵢBᵢ = r [1.31, P3]. Equal parallel displacements give\nO′Bᵢ = OCᵢ = r,\nBᵢBᵢ₊₁ = CᵢCᵢ₊₁ = a,\nwith the corresponding joins parallel [1.33]. Hence B₀,…,B₄ form the congruent pentagon in the plane through O′ parallel to the original plane [11.15]. The lifting lines are perpendicular to the original plane [11.8]. Also OO′ is perpendicular to the upper plane: it is perpendicular to two intersecting lines in that plane parallel to lines through O in the original plane [1.29, 11.4]. Thus the two pentagons have perpendicular separation r, and the projections of the upper vertices are precisely the intervening arc-midpoints Cᵢ.\n\n**Step 6.** Produce the axis beyond O away from O′ to S, and beyond O′ away from O to T, taking OS = O′T = t [P2, P3]. Join S to every Aᵢ, T to every Bᵢ, and each Bᵢ to Aᵢ and Aᵢ₊₁ [P1]. Perpendicularity to the planes supplies the right angles in the following triangles [D11.3]. By 1.47,\nAᵢBᵢ² = AᵢCᵢ² + CᵢBᵢ² = t²+r² = a²,\nand likewise Aᵢ₊₁Bᵢ² = a². Also\nSAᵢ² = SO² + OAᵢ² = t²+r² = a²,\nTBᵢ² = TO′² + O′Bᵢ² = t²+r² = a².\nThus every joining edge, as well as every side of either pentagon, equals a, by (1).\n\n**Step 7.** Take the following four families of triangular faces, each containing five triangles:\nS Aᵢ Aᵢ₊₁;\nAᵢ Aᵢ₊₁ Bᵢ;\nAᵢ₊₁ Bᵢ Bᵢ₊₁;\nT Bᵢ Bᵢ₊₁.\nThe middle ten form a nonintersecting belt between the pentagons. To see this explicitly, intersect the belt with any plane strictly between and parallel to their planes. Its section is a closed ten-sided polygon, with sides alternately parallel to the sides of the two pentagons [11.16]. In their cyclic order these directions turn successively through one-tenth of a full turn, always in the same sense; hence the section is a convex decagon. The belt therefore has no crossings. The first and last five triangles form the two caps, lying on opposite sides outside the slab, and close its two boundary pentagons. Consequently these twenty triangles enclose a solid.\nBy Step 6 each triangle is equilateral of side a. They are equal triangles, since their corresponding sides and included angles are equal [1.5, 1.32, 1.4]. The solid is therefore an icosahedron, according to the definition of a solid contained by twenty equal equilateral triangles [D11.27].\n\n**Step 8.** Bisect OO′ at M [1.10]. Then\nMS = MT = r/2+t = h = D/2.\nFor every lower vertex, the right triangle MOAᵢ gives\nMAᵢ² = MO²+OAᵢ² = r²/4+r² = 5r²/4 = D²/4.\nThe upper right triangles MO′Bᵢ give the same result for MBᵢ [1.47]. Thus all twelve vertices S,T,A₀,…,A₄,B₀,…,B₄ are at distance D/2 from M. The sphere generated by rotating the semicircle with diameter ST has centre M and diameter D, and all these vertices lie on its surface [D11.14, D11.16, D11.17]. Hence the constructed icosahedron is comprehended in a sphere of the prescribed diameter.\n\n**Step 9.** The diameter of the original pentagon's circle is 2r, and\n(2r)² = 4D²/5.\nThe squares on 2r and D therefore have the common measure D²/5. Thus 2r is commensurable in square with the assigned rational line D, and is itself rational [D10.1.2, D10.1.3]. Proposition 13.11 now applies directly to the original inscribed pentagon: its side a is the irrational straight line called minor. Since a is also the side of the constructed icosahedron, the required construction, comprehension in the sphere, and classification of its side are complete.",
+          "used": [
+            "D10.1.3",
+            "6.9",
+            "6.13",
+            "6.17",
+            "P3",
+            "4.11",
+            "3.30",
+            "3.28",
+            "3.29",
+            "4.15",
+            "3.27",
+            "1.5",
+            "1.32",
+            "1.6",
+            "13.10",
+            "13.9",
+            "13.3",
+            "11.12",
+            "1.31",
+            "1.33",
+            "11.15",
+            "11.8",
+            "1.29",
+            "11.4",
+            "P2",
+            "P1",
+            "D11.3",
+            "1.47",
+            "11.16",
+            "1.4",
+            "D11.27",
+            "1.10",
+            "D11.14",
+            "D11.16",
+            "D11.17",
+            "D10.1.2",
+            "13.11"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:41:42.796758+00:00",
+          "prompt_sha256": "638d63f55ff151201d3c325bf94fdc933bc965d2ee8f4d8ece4765d992bb895f",
+          "resource_table_sha256": "df9e082318c59f24d5cc4b74264291c8b3a41df8bd545addd0025e9977646472",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b03c-482e-7323-9842-456f0ec540ff",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b03c-482e-7323-9842-456f0ec540ff",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 16,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-41-43-01a1b03c-482e-7323-9842-456f0ec540ff.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:50:45.041055+00:00",
+          "total_wall_time_seconds": 542.244,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.16_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.17": [
+      {
+        "result": {
+          "prop_id": "13.17",
+          "proof": "**Step 1.** Let D be the diameter of the given sphere, and take D as the assigned rational straight line. Choose the cube construction: it will make the required dodecahedral edge a golden-section segment of the cube’s edge, so that the apotome conclusion follows directly. By [13.15], construct a cube with edge s such that D² = 3s². Cut s in extreme and mean ratio by [6.30]. Bisect s and its greater segment, writing them respectively as 2a and 2b; thus 0 < b < a. Put c = a + b. These bisections are supplied by [1.10]. The choice of rational reference is that of [D10.1.3].\n\n**Step 2.** By the definition of extreme and mean ratio and the invariance of a ratio under equal multiplication,\na : b = b : (a − b).\nSince c = a + b, [13.5] gives\nc : a = a : b,\nand therefore bc = a² by [6.16]. Apply the golden-section square identity [13.4] first to a, whose greater segment is b, and then to c, whose greater segment is a. We obtain\n(1) a² + (a − b)² = 3b²,\n(2) c² + b² = 3a².\nAlso c − a = b and c − b = a. These are the identities needed below. [D6.3, 5.15, 13.5, 6.16, 13.4]\n\n**Step 3.** At the centre O of the sphere choose three mutually perpendicular directions, using [1.11] and [11.12]. A triple (x,y,z) will denote signed perpendicular offsets in these directions; this is only notation for constructed lengths. Copy lengths and draw parallels by [1.2] and [1.31] to construct the following twenty points, with the signs independent:\n• eight points (±a, ±a, ±a);\n• four points (0, ±b, ±c);\n• four points (±b, ±c, 0);\n• four points (±c, 0, ±b).\nThe first eight are the vertices of a cube of edge 2a. For any two listed points, the square of their distance is the sum of the squares of the differences of their three offsets, by applying [1.47] twice.\n\n**Step 4.** Attach a roof to each of the cube’s six faces. For the face z = a, its ridge is the segment joining (0,−b,c) to (0,b,c). The roof is filled by the straight joins between this ridge and the square base. Its boundary, apart from the base, consists of two triangular ends and two trapezoidal sides. The trapezoids are planar because their opposite sides lie on parallel straight lines. [11.2, 11.7]\n\nFor clarity, at proportional height t above the base, where 0 ≤ t ≤ 1, the roof’s section is the rectangle\nz = a + tb,\n|x| ≤ a(1 − t),\n|y| ≤ a(1 − t) + bt.\nThese proportional sections follow from [6.2]. In particular, the roof lies in the outward prism over its base square, since both half-widths are at most a.\n\nUse the analogous ridge on z = −a. On the faces y = ±a use the ridges joining (−b,±c,0) to (b,±c,0); on x = ±a use those joining (±c,0,−b) to (±c,0,b). Thus the ridge directions are chosen cyclically. The six roofs have disjoint interiors, since they lie in the respective outward face-prisms. Added to the cube, they form a solid whose exterior consists of twelve triangular and twelve trapezoidal panels.\n\n**Step 5.** We show that these panels join in pairs into twelve plane pentagons. Consider\nP = (0,b,c), Q = (a,a,a), R = (b,c,0), S = (−b,c,0), T = (−a,a,a).\nThe roof on z = a supplies triangle PQT, while the roof on y = a supplies trapezoid QRST. Their common side QT is an edge of the cube.\n\nThe plane through the parallel lines QT and RS has the perpendicular-offset equation\nay + bz = ac.\nIndeed, in the section x = 0 its line joins (y,z) = (a,a) to (c,0), and the displayed relation is precisely the proportional-intercept relation of [6.2]. Parallel lines in the x-direction fill the same plane. [11.7]\n\nThe point P also belongs to this plane, since\nab + bc = ab + a² = ac.\nHence PQT and QRST are coplanar. They lie on opposite sides of QT: P has z = c > a, while R and S have z = 0 < a. Their union is the pentagon PQRST. Its outline is convex: P has greatest z, RS has least z, and Q and T are respectively its extreme positive and negative x-points.\n\nAt every cube edge the cyclic ridge choice similarly places one triangular panel beside one trapezoidal panel. Sign changes and cyclic permutation of the three directions repeat the preceding calculation at all twelve cube edges. Thus all twenty-four exterior panels pair into exactly twelve plane pentagons. Their planes are the twelve distinct planes ±ay ±bz = ac and their cyclic variants. [6.2, 11.7]\n\n**Step 6.** Compute the sides and diagonals of PQRST by [1.47]. For four of its sides the squared length, with the terms possibly reordered, is\na² + (a − b)² + b² = 4b²\nby identity (1); the remaining side RS is visibly 2b. Therefore all five sides equal 2b.\n\nThe diagonal QT is 2a. Each of the other four diagonals has squared length\nc² + b² + a² = 4a²\nby identity (2). For example,\nPR² = b² + (c − b)² + c² = b² + a² + c²,\nand\nQS² = (a + b)² + (a − c)² + a² = c² + b² + a².\nConsequently every diagonal is 2a. [1.47, 13.4]\n\n**Step 7.** At each vertex of this convex pentagon, the two adjacent sides and the straight line joining their other endpoints form a triangle with sides 2b, 2b, 2a. By [1.8], all five interior angles are equal. Thus PQRST is equilateral and equiangular.\n\nThe sign changes and cyclic permutations used for the other eleven pentagons preserve all the lengths just computed. Triangulating corresponding pentagons therefore gives corresponding triangles with equal sides; [1.8] gives their equal included angles, and [1.4] gives equality of the triangles. Hence the twelve pentagons are equal as well as equilateral and equiangular. The constructed solid is therefore a dodecahedron by [D11.28].\n\n**Step 8.** Every cube vertex has squared distance 3a² from O. Every added vertex has squared distance b² + c² = 3a², by identity (2). Since\nD² = 3(2a)²,\nwe have 3a² = (D/2)². Thus all twenty vertices lie on the given sphere. [1.47, 13.4, D11.14, D11.16]\n\nThe sphere also contains the solid itself. A plane through O and a straight join cuts the sphere in a circle; chords lie inside that circle by [3.2]. Extending the joining line to the circumference gives the same conclusion when its endpoints are already inside. Hence every straight join filling the cube and its six roofs stays inside the sphere. The dodecahedron is therefore comprehended in the given sphere. [11.2, D11.14, 3.2]\n\n**Step 9.** Finally, D² = 3s² shows that s is commensurable in square with the assigned rational diameter D. Hence s is rational in Euclid’s sense. [D10.1.2, D10.1.3] The dodecahedron’s edge is 2b, which by Step 1 is exactly the greater segment obtained by cutting s in extreme and mean ratio. By [13.6], this segment is the irrational straight line called apotome.\n\nThus a dodecahedron has been constructed and comprehended in the given sphere, and its side has been proved to be an apotome.",
+          "used": [
+            "D10.1.3",
+            "13.15",
+            "6.30",
+            "1.10",
+            "D6.3",
+            "5.15",
+            "13.5",
+            "6.16",
+            "13.4",
+            "1.11",
+            "11.12",
+            "1.2",
+            "1.31",
+            "1.47",
+            "11.2",
+            "11.7",
+            "6.2",
+            "1.8",
+            "1.4",
+            "D11.28",
+            "D11.14",
+            "D11.16",
+            "3.2",
+            "D10.1.2",
+            "13.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:42:12.789423+00:00",
+          "prompt_sha256": "3a072375e3ae7b353caffbc56a0934fd0feda395fc6b3d12462b091385a0a5b4",
+          "resource_table_sha256": "e9c6a87a8c3c49c359ca337d0ca3afef46693f7fe48ec86f6e17f972d0231a58",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b03c-bd5f-7a03-b378-cc6a9b8212ec",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b03c-bd5f-7a03-b378-cc6a9b8212ec",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 9,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-42-13-01a1b03c-bd5f-7a03-b378-cc6a9b8212ec.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:55:27.841613+00:00",
+          "total_wall_time_seconds": 795.052,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.17_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.18": [
+      {
+        "result": {
+          "prop_id": "13.18",
+          "proof": "**Step 1.** Let the given sphere have diameter AB, of length L. We use comparison of squares, since the diameter relations already established for the first three figures directly determine their sides; for the remaining two figures we obtain the needed relations from diametral sections. Write x² for the square on a segment x, and xy for the rectangle contained by x and y.\n\nDraw a semicircle on AB. Bisect AB at M, and take C on AB with AC one third of AB. The perpendiculars at C and M meet the semicircle at P and Q respectively. Set t = BP, o = AQ, and c = AP. These constructions are available by P3, I.10, VI.9, and I.11. [P3, 1.10, 6.9, 1.11]\n\n**Step 2.** The angles APB and AQB are right. Similarity of the triangles formed by their perpendiculars to AB gives\nAP² = AB·AC, BP² = AB·BC, and AQ² = AB·AM.\nConsequently,\n3c² = L², 3t² = 2L², and 2o² = L².\nBy the diameter relations of XIII.13, XIII.14, and XIII.15, t, o, and c are respectively the sides of the pyramid, octahedron, and cube inscribed in the given sphere. [3.31, 6.8, 6.4, 6.17, 13.13, 13.14, 13.15]\n\n**Step 3.** Take the fifth part of L and construct its mean proportional with L; call this mean r. Thus 5r² = L². In a circle of radius r inscribe an equilateral and equiangular pentagon, and call its side i. Also cut c in extreme and mean ratio, and call its greater segment d. We shall show that i and d are respectively the required icosahedral and dodecahedral sides. [6.9, 6.13, 6.17, P3, 4.11, 6.30, D6.3]\n\n**Step 4.** For these two identifications, consider a vertex U on the sphere and any collection of vertices V at the same distance s from U. Let UW be the diameter through U, and drop VH perpendicular to UW. The section through U, W, V is a circle with diameter UW, so UVW is a right angle. Similar triangles give UW:UV = UV:UH, and therefore\nL·UH = s².\nThus the foot H is the same for every such V. Their perpendiculars to UW lie in one plane, and, by the right-triangle theorem, all the lengths HV are equal. The vertices V therefore lie on a circle in that plane. If its radius is ρ and UH = h, we have\ns² = ρ² + h² = Lh.\nThis is the diametral-section relation we need. [D11.14, D11.16, 1.12, 3.31, 6.8, 6.4, 6.17, 11.5, 1.47]\n\n**Step 5.** Take the icosahedron constructed in XIII.16, and denote its side by e. The five neighbours of one vertex form an equilateral pentagon of side e. By Step 4 they lie on a circle; denote its radius by ρ and its decagon side by q. The hexagon side is ρ, as in the hexagon construction. XIII.9 and XIII.10 give\nρ² = q(ρ + q), with ρ > q,\nand e² = ρ² + q².\nComparing the latter equality with e² = ρ² + h² from Step 4 gives h = q. Hence\nLq = e² = ρ² + q² = q(ρ + 2q),\nso L = ρ + 2q. [13.16, 4.15, 13.9, 13.10, 1.47, 6.17]\n\n**Step 6.** By XIII.9, the line ρ + q is cut in extreme and mean ratio with greater segment ρ. XIII.3 therefore gives\n(q + ρ/2)² = 5(ρ/2)²,\nand hence (ρ + 2q)² = 5ρ². Since L = ρ + 2q, we obtain L² = 5ρ². But L² = 5r² by construction, so ρ = r. Equilateral pentagons in equal circles have equal sides: their equal chords divide their circumferences into five equal arcs, and equal arcs have equal chords. Thus e = i, identifying the icosahedral side. [13.9, 13.3, 3.28, 3.29]\n\n**Step 7.** Take the dodecahedron constructed in XIII.17. Let its side be a and a diagonal of one of its pentagonal faces be f. By XIII.8, f is cut in extreme and mean ratio with greater segment a. Put v = f − a. Then\na² = fv and f² + v² = 3a²,\nthe second equality being XIII.4.\n\nAt a vertex U, the three adjacent vertices are pairwise separated by face diagonals f, and so form an equilateral triangle. Let the radius of its circle be ρ. XIII.12 gives f² = 3ρ². Applying Step 4 with s = a gives\na² = ρ² + h² = Lh.\nIt follows that\n3h² = 3a² − f² = v²,\nwhile Lh = a² = fv. [13.17, 13.8, D6.3, 6.17, 13.4, 13.12, 1.47]\n\n**Step 8.** From Lh = fv we have L:f = v:h. Squares have the duplicate ratio of their sides; since v² = 3h², it follows that L² = 3f². Step 2 gives L² = 3c², so f = c. Thus a is the greater segment of c cut in extreme and mean ratio, and therefore a = d.\n\nThis segment is unique: enlarging it increases its square while decreasing the rectangle contained by the whole and the remainder, whereas those two areas must be equal. The dodecahedral side has therefore also been identified. [6.16, 6.20, D6.3, 6.17, CN5]\n\n**Step 9.** The relations in Step 2 give\nt² = 2c² and o² = (3/2)c².\nTherefore t² > o² > c², and hence t > o > c. Here and below, the order of squares is the order of their positive sides. [6.20, CN5]\n\n**Step 10.** In the circle of radius r, let q be the decagon side. By XIII.9,\nr² = q(r + q) > 2q²,\nbecause r > q. By XIII.10, i² = r² + q². Consequently,\ni² < (3/2)r² < (5/3)r² = c²,\nwhere the last equality follows from 5r² = L² = 3c². Thus c > i. [4.15, 13.9, 13.10, 6.20, CN5]\n\nNow put u = c − d. Since d is the greater segment, u < d. XIII.4 gives c² + u² = 3d², and therefore c² > 2d². Hence\nd² < c²/2 = (5/6)r² < r² < i².\nThus i > d. [D6.3, 13.4, 13.10, 6.20, CN5]\n\n**Step 11.** Transfer the five constructed segments to a common starting point if desired. They are the sides of the five figures inscribed in the same sphere, and their order is\npyramid side > octahedron side > cube side > icosahedron side > dodecahedron side.\nThus the sides of the five figures have been set out and compared with one another. [1.2]",
+          "used": [
+            "P3",
+            "1.10",
+            "6.9",
+            "1.11",
+            "3.31",
+            "6.8",
+            "6.4",
+            "6.17",
+            "13.13",
+            "13.14",
+            "13.15",
+            "6.13",
+            "4.11",
+            "6.30",
+            "D6.3",
+            "D11.14",
+            "D11.16",
+            "1.12",
+            "11.5",
+            "1.47",
+            "13.16",
+            "4.15",
+            "13.9",
+            "13.10",
+            "13.3",
+            "3.28",
+            "3.29",
+            "13.17",
+            "13.8",
+            "13.4",
+            "13.12",
+            "6.16",
+            "6.20",
+            "CN5",
+            "1.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T09:44:11.549448+00:00",
+          "prompt_sha256": "164da61c75f220f6d3bf3136b54cee66ed0f17488b03e6445654d74e8b42d0fb",
+          "resource_table_sha256": "a88715794cbc406cfd78d746f7c466c586fa3cd6fe9c8e22c6f036675a40e9eb",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b03e-8d45-7fa2-859b-cf3ff82be320",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b03e-8d45-7fa2-859b-cf3ff82be320",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 12,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T09-44-11-01a1b03e-8d45-7fa2-859b-cf3ff82be320.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T09:54:03.163393+00:00",
+          "total_wall_time_seconds": 591.614,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.18_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

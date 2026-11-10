@@ -1,0 +1,2721 @@
+{
+  "completed_at": "2026-11-06T16:50:08.815270+00:00",
+  "expected_ids": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8",
+    "5.9",
+    "5.10",
+    "5.11",
+    "5.12",
+    "5.13",
+    "5.14",
+    "5.15",
+    "5.16",
+    "5.17",
+    "5.18",
+    "5.19",
+    "5.20",
+    "5.21",
+    "5.22",
+    "5.23",
+    "5.24",
+    "5.25"
+  ],
+  "selected_attempts": {
+    "5.1": 0,
+    "5.2": 0,
+    "5.3": 0,
+    "5.4": 0,
+    "5.5": 0,
+    "5.6": 0,
+    "5.7": 0,
+    "5.8": 0,
+    "5.9": 0,
+    "5.10": 0,
+    "5.11": 0,
+    "5.12": 0,
+    "5.13": 0,
+    "5.14": 0,
+    "5.15": 0,
+    "5.16": 0,
+    "5.17": 0,
+    "5.18": 0,
+    "5.19": 0,
+    "5.20": 0,
+    "5.21": 0,
+    "5.22": 0,
+    "5.23": 0,
+    "5.24": 0,
+    "5.25": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "5.1": [
+      {
+        "result": {
+          "prop_id": "5.1",
+          "proof": "**Step 1.** Let A and B be the whole magnitudes, and let C and D be the respective parts subtracted. Suppose A is the same multiple of B that C is of D. By the definition of a multiple, A consists of some number n of parts each equal to B, while C consists of the same number n of parts each equal to D. We use these equal constituent parts directly, without invoking a theorem about ratios. [D5.2]\n\n**Step 2.** In each of the n parts of A equal to B, take away a part equal to D; this is possible since D is a part of B. Each remainder is equal to the remainder B − D, because equal magnitudes have been subtracted from equal magnitudes. Thus there are n remaining parts, each equal to B − D. [CN3]\n\n**Step 3.** The parts taken away together equal C: both consist of n parts each equal to D, and repeated addition of equals gives equal wholes. Consequently, subtracting their total from A leaves a magnitude equal to A − C. But what remains after these removals is precisely the collection of the n remaining parts from Step 2. Hence A − C consists of n parts each equal to B − D. [CN2, CN3]\n\n**Step 4.** Therefore B − D measures A − C exactly n times. By the definition of a multiple, A − C is the same multiple of B − D that A is of B, as required. [D5.2]",
+          "used": [
+            "D5.2",
+            "CN3",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:36:18.825044+00:00",
+          "prompt_sha256": "a92da77aab5797505e83dface2189ad40e129a1515126041398a5ec77cba118d",
+          "resource_table_sha256": "2f6091206b1257072bae3766a22648d55d444e47ea530f619acf09b89009b29a",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1b7-dbfe-7c50-9747-0bae2baffedb",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1b7-dbfe-7c50-9747-0bae2baffedb",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-36-19-01a1b1b7-dbfe-7c50-9747-0bae2baffedb.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:37:31.195526+00:00",
+          "total_wall_time_seconds": 72.37
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.2": [
+      {
+        "result": {
+          "prop_id": "5.2",
+          "proof": "**Step 1.** Denote the first through sixth magnitudes by A, B, C, D, E, F, respectively. Choose the direct route of counting measuring parts, since the hypotheses concern multiples rather than general ratios. By the definition of a multiple, A consists of some number m of parts each equal to B, while C consists of the same number m of parts each equal to D. Likewise, E consists of some number n of parts each equal to B, and F consists of the same number n of parts each equal to D. The numbers m and n need not be equal. [D5.2]\n\n**Step 2.** Add the expressions for A and E as sums of their measuring parts. Since equals added to equals give equal wholes, A + E equals the sum of the m parts equal to B followed by the n parts equal to B: altogether m + n such parts. In precisely the same way, C + F equals the sum of m + n parts each equal to D. [CN2]\n\n**Step 3.** Thus B measures A + E exactly as many times as D measures C + F. By the definition of a multiple, the sum of the first and fifth is therefore the same multiple of the second as the sum of the third and sixth is of the fourth, as required. [D5.2]",
+          "used": [
+            "D5.2",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:36:48.628581+00:00",
+          "prompt_sha256": "21572ae1dcf6548958f037388cd2d3958e44a2244b5157ae44483f551fc52d82",
+          "resource_table_sha256": "89229f996b95908b401c2ecee828a140c51ef096cec4aa35663eda2c33c094d1",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1b8-5094-7452-aaf8-59e68fae703d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1b8-5094-7452-aaf8-59e68fae703d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-36-48-01a1b1b8-5094-7452-aaf8-59e68fae703d.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:37:37.450546+00:00",
+          "total_wall_time_seconds": 48.822
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.3": [
+      {
+        "result": {
+          "prop_id": "5.3",
+          "proof": "**Step 1.** Let A be the same multiple of B that C is of D, and let E and F be equimultiples of A and C respectively. By the meaning of multiple, E consists of some number n of copies of A, and F consists of the same number n of copies of C. Thus it suffices to show that these two sums are equimultiples of B and D. [D5.2]\n\n**Step 2.** We use successive addition, since Proposition 5.2 directly preserves the required relation. The first pair of summands, A and C, are equimultiples of B and D by hypothesis. Whenever the sums of the first k copies are equimultiples of B and D, adding one further A to the first sum and one further C to the second gives sums that are again equimultiples of B and D: this is precisely Proposition 5.2, applied to the two partial sums and the additional pair A, C. [5.2]\n\n**Step 3.** Continuing through all n pairs of summands, the resulting sums E and F are therefore equimultiples of B and D respectively. Hence, ex aequali, the magnitudes taken are the same multiple of the second and fourth magnitudes, as required. [5.2, D5.2]",
+          "used": [
+            "D5.2",
+            "5.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:37:18.651982+00:00",
+          "prompt_sha256": "373831caf6c5771458cbb84b234e108e887f7afef49b5b16b27920c877a79e68",
+          "resource_table_sha256": "5311e5efd8580fc9bcd94541afc5f7e941535d9483c13bff4f428b59c131d13e",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1b8-c5c0-7260-b3a4-967beeeaaf86",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1b8-c5c0-7260-b3a4-967beeeaaf86",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-37-18-01a1b1b8-c5c0-7260-b3a4-967beeeaaf86.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:38:05.004956+00:00",
+          "total_wall_time_seconds": 46.353
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.4": [
+      {
+        "result": {
+          "prop_id": "5.4",
+          "proof": "**Step 1.** Let A have to B the same ratio as C has to D. Let E and G be any equimultiples of A and C, and let F and H be any equimultiples of B and D, respectively. We shall prove that E has to F the same ratio as G has to H. We choose the direct defining test for equality of ratios, since it concerns precisely such arbitrary equimultiples. [D5.5]\n\n**Step 2.** Take any equimultiples K and M of E and G, and any equimultiples L and N of F and H, respectively. Since E and G are equimultiples of A and C, Proposition 5.3 shows that K and M are equimultiples of A and C. Likewise, L and N are equimultiples of B and D. [5.3]\n\n**Step 3.** Since A has to B the same ratio as C has to D, these equimultiples satisfy the defining condition: K and M alike exceed, are alike equal to, or alike fall short of L and N, respectively. Thus the comparison of K with L agrees with that of M with N. [D5.5]\n\n**Step 4.** The equimultiples K, M and L, N were arbitrary. Therefore E has to F the same ratio as G has to H. Since E, G and F, H were themselves any equimultiples of the original magnitudes in corresponding order, the proposition follows. [D5.5]",
+          "used": [
+            "D5.5",
+            "5.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:37:48.618018+00:00",
+          "prompt_sha256": "e104d9ecb6beb1847a733b70f08988def9c659a1a5c2faf7176fd065b6e49797",
+          "resource_table_sha256": "089f9c205e6ae457665fa19874ad0883feb622aa8ef55e2e59578a094e0bba86",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1b9-3adc-7e43-8354-d8d6a8187f1c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1b9-3adc-7e43-8354-d8d6a8187f1c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-37-48-01a1b1b9-3adc-7e43-8354-d8d6a8187f1c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:38:23.687279+00:00",
+          "total_wall_time_seconds": 35.069
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.5": [
+      {
+        "result": {
+          "prop_id": "5.5",
+          "proof": "**Step 1.** Let A and B be the whole magnitudes, and let C and D be the respective parts subtracted. Suppose A is the same multiple of B that C is of D. By the definition of a multiple, there is a common number n of copies such that A consists of n copies of B and C consists of n copies of D. We use these equal parts directly, followed by cancellation. [D5.2]\n\n**Step 2.** Write R = A − C and S = B − D, so that B consists of D together with S. In each of the n copies of B making up A, distinguish the corresponding copy of D and the remaining copy of S. Adding these decompositions, the n copies of D together equal C, while the remaining pieces together equal a magnitude T consisting of n copies of S. Thus A = C + T. This follows by repeated addition of equals. [D5.2, CN2]\n\n**Step 3.** Subtract C from the equal magnitudes A and C + T. The remainders are equal; hence R = A − C = T. [CN3]\n\n**Step 4.** Since T consists of n copies of S, the equality R = T shows that R is n times S. Therefore A − C is the same multiple of B − D that A is of B: the remainder is the same multiple of the remainder that the whole is of the whole. [D5.2]",
+          "used": [
+            "D5.2",
+            "CN2",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:38:18.616607+00:00",
+          "prompt_sha256": "b1a2b77e5948b69065232281096cea97bc84a934c97eddcea327c9769adf8108",
+          "resource_table_sha256": "a86c5784501fe18a5da07aee938c92ed692c5de4354530f9e6026551c010ab46",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1b9-b010-7421-9177-8a164dc9a0c5",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1b9-b010-7421-9177-8a164dc9a0c5",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-38-18-01a1b1b9-b010-7421-9177-8a164dc9a0c5.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:39:09.232428+00:00",
+          "total_wall_time_seconds": 50.616
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.6": [
+      {
+        "result": {
+          "prop_id": "5.6",
+          "proof": "**Step 1.** Let X and Y be equimultiples of A and B respectively, and let U and V, subtracted from X and Y, also be equimultiples of A and B respectively. Write R and S for the remainders. We use repeated measurement directly, since it is the defining property of a multiple: X consists of m copies of A and Y of m copies of B, while U consists of n copies of A and V of n copies of B. [D5.2]\n\n**Step 2.** Since U and V are parts removed with remainders left, each is less than its respective whole. Thus n is less than m: n copies cannot exhaust or exceed the m copies constituting the whole. Removing the first n copies from each of the two lists therefore leaves the same positive number k of copies in each. [D5.2, CN5]\n\n**Step 3.** The first n copies of A together equal U. Subtracting these from the m-copy representation of X leaves an aggregate equal to R, by subtraction of equals from equals. Hence R equals the remaining k copies of A. In precisely the same way, S equals the remaining k copies of B. [D5.2, CN3]\n\n**Step 4.** If k is one, R equals A and S equals B. If k is greater than one, A measures R exactly k times and B measures S exactly k times; consequently R and S are equimultiples of A and B. Thus the remainders are either equal to the original magnitudes respectively or equimultiples of them, as required. [D5.2]",
+          "used": [
+            "D5.2",
+            "CN5",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:38:48.666693+00:00",
+          "prompt_sha256": "ada3bc24fc9c235473d506631ce951b3c39ff90f11efccc2e15e688666f5177f",
+          "resource_table_sha256": "c7c35c283f745d334860b259df00ed271c60e995ca501f8498a6a74eca3562b5",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1ba-2577-7e81-877b-fa9e9d8e5789",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1ba-2577-7e81-877b-fa9e9d8e5789",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-38-48-01a1b1ba-2577-7e81-877b-fa9e9d8e5789.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:39:39.618949+00:00",
+          "total_wall_time_seconds": 50.952
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.7": [
+      {
+        "result": {
+          "prop_id": "5.7",
+          "proof": "**Step 1.** Let A and B be equal magnitudes, and let C be a magnitude with which their ratios are considered. We use the definition of equal ratios directly for both assertions, checking arbitrary equimultiples rather than invoking a theorem about ratios. [D5.5]\n\n**Step 2.** Let m and n be any positive whole numbers. Repeated addition of equals to equals gives mA = mB and nA = nB: each multiple consists of the indicated number of copies of its magnitude. [D5.2, CN2]\n\n**Step 3.** Compare mA and mB with nC. Since mA = mB, they alike exceed nC, alike equal nC, or alike fall short of nC; in particular, equality of either with nC entails equality of the other with nC. As m and n were arbitrary, the definition of equal ratios gives A:C = B:C. Thus equal magnitudes have to the same magnitude the same ratio. [CN1, D5.5]\n\n**Step 4.** Now compare mC with nA and nB. Since nA = nB, mC alike exceeds both, equals both, or falls short of both; again, equality with either entails equality with the other. Since m and n were arbitrary, the same definition gives C:A = C:B. Thus the same magnitude also has the same ratio to equal magnitudes, completing both assertions. [CN1, D5.5]",
+          "used": [
+            "D5.5",
+            "D5.2",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:39:18.615131+00:00",
+          "prompt_sha256": "e5d089d238e82ab572a98a4476953e33c2e1de2fbed410e41dd695f0bacfb355",
+          "resource_table_sha256": "be93fd73a93609d1cb77517f3e55124509952dd7416d1fa4b8f4d767aa5c11fc",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1ba-9a4f-7961-90c0-d58ec47a90aa",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1ba-9a4f-7961-90c0-d58ec47a90aa",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-39-18-01a1b1ba-9a4f-7961-90c0-d58ec47a90aa.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:40:09.725860+00:00",
+          "total_wall_time_seconds": 51.111
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.8": [
+      {
+        "result": {
+          "prop_id": "5.8",
+          "proof": "**Step 1.** Let A and B be the unequal magnitudes, with A greater than B, and let C be the common magnitude in the ratios under consideration. Write A = B + D, where D is the positive excess. We use the definition of greater ratio directly: a single strict comparison between suitable multiples will establish both assertions. Write kX for k copies of a magnitude X. [CN5, D5.2, D5.7]\n\n**Step 2.** Choose a positive integer n such that nD > C; such a multiple exists by the criterion for magnitudes to have a ratio. Repeated addition of A = B + D gives nA = nB + nD. Since nD > C, it follows that\nnA = nB + nD > nB + C.\n[D5.4, D5.2, CN2, CN5]\n\n**Step 3.** Multiples of C eventually exceed nB. In a finite succession ending with such a multiple, let mC be the first multiple exceeding nB. Thus nB < mC. If m > 1, the preceding multiple satisfies (m − 1)C ≤ nB, and adding C gives mC ≤ nB + C. If m = 1, the same upper bound holds because C is a part of nB + C. Consequently, by Step 2,\nnB < mC ≤ nB + C < nA,\nand hence nB < mC < nA. [D5.4, D5.2, CN2, CN5]\n\n**Step 4.** For the ratios A:C and B:C, take the equimultiples nA and nB of the antecedents, and the equal multiples mC and mC of the consequents. Then nA exceeds mC, whereas nB does not exceed mC. Therefore A has to C a greater ratio than B has to C. [D5.7]\n\n**Step 5.** For the ratios C:B and C:A, take the equal multiples mC and mC of the antecedents, and the equimultiples nB and nA of the consequents. Then mC exceeds nB, whereas mC does not exceed nA. Therefore C has to B a greater ratio than C has to A. Thus the greater magnitude has to the same a greater ratio than the less has, and the same has to the less a greater ratio than it has to the greater. [D5.7]",
+          "used": [
+            "CN5",
+            "D5.2",
+            "D5.7",
+            "D5.4",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:39:48.612341+00:00",
+          "prompt_sha256": "1ef1fbd10c84becaa2d4a4c259ca4d97ff1cae988159ba35cb730dc68dc8e36e",
+          "resource_table_sha256": "8af6b9fe6a8ebff1994341dcc11a7a255694a929654c2dff2b6dd3cca79a65bb",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bb-0f68-7cf2-96ed-7c9ea6cfa060",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bb-0f68-7cf2-96ed-7c9ea6cfa060",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-39-48-01a1b1bb-0f68-7cf2-96ed-7c9ea6cfa060.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:41:16.899969+00:00",
+          "total_wall_time_seconds": 88.288
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.9": [
+      {
+        "result": {
+          "prop_id": "5.9",
+          "proof": "**Step 1.** Use Proposition 5.8 directly, since its two clauses address the two possible positions of the common magnitude. Equality of ratios excludes a greater ratio in either direction: Definition D5.5 requires every corresponding pair of equimultiples to agree in whether they exceed, equal, or fall short, whereas Definition D5.7 requires equimultiples for which one comparison exceeds and the other does not. These conditions are incompatible. [5.8, D5.5, D5.7]\n\n**Step 2.** Let A and B have the same ratio to C. If A were greater than B, then A would have to C a greater ratio than B has to C, by the first clause of Proposition 5.8, contradicting their having the same ratio by Step 1. If B were greater than A, the same clause would give the opposite strict inequality of ratios, again a contradiction. Thus A = B. [5.8, D5.5, D5.7]\n\n**Step 3.** Let C have the same ratio to A as to B. If A were greater than B, then C would have to B a greater ratio than it has to A, by the second clause of Proposition 5.8, contradicting the hypothesis by Step 1. If B were greater than A, that clause would instead make the ratio of C to A greater than that of C to B, likewise impossible. Thus A = B. Therefore magnitudes which have the same ratio to the same are equal, and magnitudes to which the same has the same ratio are equal. [5.8, D5.5, D5.7]",
+          "used": [
+            "5.8",
+            "D5.5",
+            "D5.7"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:40:18.631050+00:00",
+          "prompt_sha256": "6b4ec5d2b3d031c54a3ae9476631bf7898e3ca2f6353ebbd454036dc36ae3f8c",
+          "resource_table_sha256": "b8e91b39320b9cd439037811d7d63af801100d1c01fc99ed1aa436b3599d2cb3",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bb-84d0-76a0-8fed-33297ad21b76",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bb-84d0-76a0-8fed-33297ad21b76",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-40-18-01a1b1bb-84d0-76a0-8fed-33297ad21b76.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:41:16.166675+00:00",
+          "total_wall_time_seconds": 57.536
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.10": [
+      {
+        "result": {
+          "prop_id": "5.10",
+          "proof": "**Step 1.** Let A have to C a greater ratio than B has to C. We first exclude equality, then the opposite inequality: propositions 5.7 and 5.8 naturally apply because they give ratio comparisons from magnitude comparisons. If A = B, then A:C = B:C by 5.7, contrary to the hypothesis. Thus A is not equal to B. [5.7]\n\n**Step 2.** If A were less than B, then B, being greater, would have to C a greater ratio than A has to C, by 5.8. This contradicts the given strict comparison. Therefore A is neither equal to nor less than B, and hence A is greater than B. [5.8]\n\n**Step 3.** Now let C have to A a greater ratio than it has to B. If A = B, then C:A = C:B by the second assertion of 5.7, contrary to the hypothesis. Thus A is not equal to B. [5.7]\n\n**Step 4.** If A were greater than B, then C would have to the lesser magnitude B a greater ratio than it has to A, by the second assertion of 5.8. This contradicts the given strict comparison. Therefore A is neither equal to nor greater than B, and hence A is less than B. Thus, of magnitudes having a ratio to the same magnitude, that which has the greater ratio is greater; and that to which the same magnitude has the greater ratio is less. [5.8]",
+          "used": [
+            "5.7",
+            "5.8"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:40:48.630566+00:00",
+          "prompt_sha256": "790bbb882a6db374fbf56a5de9b598a96bb99cc53caf38f057a637d83d21a115",
+          "resource_table_sha256": "c220da9b552060ed9934aa279e3cd52cd50de951c1545c685fa6d76bf89e1c8b",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bb-fa21-7a63-ac2a-d2a38604521f",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bb-fa21-7a63-ac2a-d2a38604521f",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-40-48-01a1b1bb-fa21-7a63-ac2a-d2a38604521f.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:41:54.824651+00:00",
+          "total_wall_time_seconds": 66.194
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.11": [
+      {
+        "result": {
+          "prop_id": "5.11",
+          "proof": "**Step 1.** Let A:B and C:D each be the same ratio as E:F. We use the equimultiple criterion directly, since both hypotheses involve the same comparison ratio. Take arbitrary positive integers m and n, forming the equimultiples mA, mC, mE and nB, nD, nF. [D5.5]\n\n**Step 2.** Since A:B is the same ratio as E:F, mA and nB have the same comparison—greater than, equal to, or less than—as mE and nF. Likewise, since C:D is the same ratio as E:F, mC and nD have the same comparison as mE and nF. Thus, if mE exceeds nF, both mA exceeds nB and mC exceeds nD; if mE equals nF, both corresponding pairs are equal; and if mE falls short of nF, both corresponding pairs fall short. [D5.5]\n\n**Step 3.** Consequently, mA and mC alike exceed, are alike equal to, or alike fall short of nB and nD respectively. Since m and n were arbitrary, the definition of sameness of ratios gives A:B the same ratio as C:D. Therefore ratios which are the same with the same ratio are also the same with one another. [D5.5]",
+          "used": [
+            "D5.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:41:18.625237+00:00",
+          "prompt_sha256": "7cdbbcfaeb3e1c3f337ac270eaecc8822a524d23fdef24a67c34270cc6ab066c",
+          "resource_table_sha256": "833556af4406cdf8e8987412ec2173669ff0eea6318d90862217d7b1b8179c30",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bc-6f07-7f93-9647-d4cd31bbd0e5",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bc-6f07-7f93-9647-d4cd31bbd0e5",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-41-18-01a1b1bc-6f07-7f93-9647-d4cd31bbd0e5.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:41:58.522472+00:00",
+          "total_wall_time_seconds": 39.897
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.12": [
+      {
+        "result": {
+          "prop_id": "5.12",
+          "proof": "**Step 1.** Let the given proportional pairs be A₁, B₁; …; Aₖ, Bₖ, and put S = A₁ + ⋯ + Aₖ and T = B₁ + ⋯ + Bₖ. The antecedents are magnitudes that can be added together, and likewise the consequents. Fix any index j. By the meaning of proportionality, Aᵢ : Bᵢ = Aⱼ : Bⱼ for every i. We take the direct route through the defining equimultiple test for equality of ratios. [D5.6, D5.5]\n\n**Step 2.** Take any positive integers m and n. Form Xᵢ = mAᵢ and Yᵢ = nBᵢ for every i. Since a multiple consists of repeated copies of its magnitude, collecting the m copies of each antecedent, and similarly the n copies of each consequent, gives\nX₁ + ⋯ + Xₖ = mS,\nY₁ + ⋯ + Yₖ = nT.\nThese equalities follow by repeated addition of equal magnitudes. [D5.2, CN2]\n\n**Step 3.** Since Aᵢ : Bᵢ = Aⱼ : Bⱼ, the equimultiple test says that Xᵢ and Yᵢ have the same comparison as mAⱼ and nBⱼ. Thus, if mAⱼ exceeds nBⱼ, every Xᵢ exceeds Yᵢ; if they are equal, every Xᵢ equals Yᵢ; and if mAⱼ falls short of nBⱼ, every Xᵢ falls short of Yᵢ. [D5.5]\n\n**Step 4.** These comparisons persist upon taking the sums. In the equality case, repeated addition of equals gives mS = nT. In the greater case, write each Xᵢ as Yᵢ together with its positive excess Eᵢ. Then mS is nT together with E₁ + ⋯ + Eₖ, and therefore mS > nT, since the whole is greater than the part. In the lesser case, reversing the roles gives mS < nT. Consequently, mAⱼ and nBⱼ alike exceed, equal, or fall short of one another exactly as mS and nT do. [CN2, CN5]\n\n**Step 5.** The integers m and n were arbitrary. Hence the defining equimultiple test gives Aⱼ : Bⱼ = S : T. Since j was any chosen corresponding pair, as any one antecedent is to its consequent, so are all the antecedents taken together to all the consequents taken together. This is the required conclusion. [D5.5]",
+          "used": [
+            "D5.6",
+            "D5.5",
+            "D5.2",
+            "CN2",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:41:48.653094+00:00",
+          "prompt_sha256": "00f7f3840f86e0f6603c5f2b6e0f79424d03182b9e1b825291fe2b5b058049f5",
+          "resource_table_sha256": "0f9b10699f3f0e35bffc0881bada06b2b850d9b8bf66f06718dc0427cddb9896",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bc-e48f-7c21-8339-5181ac8a32f6",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bc-e48f-7c21-8339-5181ac8a32f6",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-41-48-01a1b1bc-e48f-7c21-8339-5181ac8a32f6.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:42:59.617214+00:00",
+          "total_wall_time_seconds": 70.964
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.13": [
+      {
+        "result": {
+          "prop_id": "5.13",
+          "proof": "**Step 1.** Let A, B, C, D, E, F be the six magnitudes, with A:B = C:D and C:D greater than E:F. We use the definitions directly, transferring the equimultiples that witness the greater ratio. By D5.7, there are positive integers m and n such that mC exceeds nD, while mE does not exceed nF. [D5.7]\n\n**Step 2.** Take also the multiples mA and nB. Since A:B = C:D, the equimultiples mA, mC must alike exceed, equal, or fall short of nB, nD respectively. As mC exceeds nD, mA therefore exceeds nB. [D5.5]\n\n**Step 3.** Thus the equimultiples mA, mE of A, E and the equimultiples nB, nF of B, F satisfy: mA exceeds nB, but mE does not exceed nF. By the definition of a greater ratio, A:B is greater than E:F, as required. [D5.7]",
+          "used": [
+            "D5.7",
+            "D5.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:42:18.642054+00:00",
+          "prompt_sha256": "4e281a719c42255cd14d8f19919c4e28395f8766144839916e115e89d93eb91a",
+          "resource_table_sha256": "3ea2ca476936f4fa34485e24c9e42c1350e015c1f89421c6b5c4ea6062ce3a3c",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bd-59bc-7b23-8f74-64cb5611febf",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bd-59bc-7b23-8f74-64cb5611febf",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-42-18-01a1b1bd-59bc-7b23-8f74-64cb5611febf.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:42:46.538951+00:00",
+          "total_wall_time_seconds": 27.897
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.14": [
+      {
+        "result": {
+          "prop_id": "5.14",
+          "proof": "**Step 1.** Let A, B, C, D be the first, second, third, and fourth magnitudes, with A:B = C:D. We use comparisons with a common term, since these apply directly to the given magnitude comparisons. First suppose A > C. Comparing their ratios to B gives A:B > C:B. [5.8]\n\n**Step 2.** Since C:D = A:B and A:B > C:B, we have C:D > C:B. With the common antecedent C, the greater ratio has the smaller consequent; hence D < B, or B > D. [5.13, 5.10]\n\n**Step 3.** Next suppose A = C. Equal magnitudes have the same ratio to B, so A:B = C:B. Together with A:B = C:D, this gives C:B = C:D. [5.7, 5.11]\n\n**Step 4.** Magnitudes to which the same magnitude has the same ratio are equal. Applying this to C:B = C:D gives B = D. [5.9]\n\n**Step 5.** Finally suppose A < C. Since C > A, comparison with the common consequent D gives C:D > A:D. Since A:B = C:D, it follows that A:B > A:D. [5.8, 5.13]\n\n**Step 6.** With the common antecedent A, the greater ratio has the smaller consequent; hence B < D. Thus, whenever A:B = C:D, the second magnitude is greater than, equal to, or less than the fourth according as the first is greater than, equal to, or less than the third. [5.10]",
+          "used": [
+            "5.8",
+            "5.13",
+            "5.10",
+            "5.7",
+            "5.11",
+            "5.9"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:42:48.628063+00:00",
+          "prompt_sha256": "999b1bb6886cc9e615ca8b443afa2d3fd8359499eae859014c915a1b05d49b6e",
+          "resource_table_sha256": "e7ccfec9cdf43e738943b7d80864c3bfa2d3c785b22befa4d720eadd2cdace39",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bd-ced3-7212-85d9-1484024ebae7",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bd-ced3-7212-85d9-1484024ebae7",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 1,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-42-48-01a1b1bd-ced3-7212-85d9-1484024ebae7.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:43:37.345388+00:00",
+          "total_wall_time_seconds": 48.717
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.15": [
+      {
+        "result": {
+          "prop_id": "5.15",
+          "proof": "**Step 1.** Let C and D be the same multiples of magnitudes A and B, respectively. By the definition of a multiple, write C = A₁ + ⋯ + Aₙ and D = B₁ + ⋯ + Bₙ, where every Aᵢ equals A and every Bᵢ equals B, with the same number of terms in both sums. [D5.2]\n\n**Step 2.** For every index i, equal magnitudes have the same ratio to the same magnitude, so Aᵢ:Bᵢ = A:Bᵢ. Likewise, the same magnitude has the same ratio to equal magnitudes, so A:B = A:Bᵢ. Since ratios which are the same with the same ratio are the same with one another, Aᵢ:Bᵢ = A:B. Thus all the corresponding pairs are proportional. [5.7, 5.11]\n\n**Step 3.** We apply 5.12 directly: it is the natural route because the prescribed multiples are sums of these proportional pairs. The ratio of one antecedent to its consequent therefore equals the ratio of all the antecedents together to all the consequents together:\nA₁:B₁ = (A₁ + ⋯ + Aₙ):(B₁ + ⋯ + Bₙ) = C:D.\nTogether with Step 2, this gives A:B = C:D. Hence parts have the same ratio as the same multiples of them taken in corresponding order. [5.12, 5.11]",
+          "used": [
+            "D5.2",
+            "5.7",
+            "5.11",
+            "5.12"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:43:18.697737+00:00",
+          "prompt_sha256": "2033073a57bf7ba855607a58ed0dfde8017b75c53a5647d40b062092e9ffe3f2",
+          "resource_table_sha256": "4a36a8cb5cfa1fad24b7235f7c946a16684fc2a05a680df80114abcd0608da88",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1be-4454-7ad0-9de5-c65a298660c3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1be-4454-7ad0-9de5-c65a298660c3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-43-18-01a1b1be-4454-7ad0-9de5-c65a298660c3.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:44:07.827644+00:00",
+          "total_wall_time_seconds": 49.13
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.16": [
+      {
+        "result": {
+          "prop_id": "5.16",
+          "proof": "**Step 1.** Let A, B, C, D be proportional, so that A:B = C:D. We must prove A:C = B:D, which is the alternate proportion. [D5.6, D5.12]\n\n**Step 2.** Take arbitrary positive whole numbers m and n, forming equimultiples mA, mB of A, B and equimultiples nC, nD of C, D. Use 5.15 directly, since each individual ratio has both its terms multiplied by the same number. Thus\nA:B = mA:mB and C:D = nC:nD. [5.15]\n\n**Step 3.** Combining these equalities with the hypothesis A:B = C:D, ratios which are the same with the same ratio give\nmA:mB = nC:nD. [5.11]\n\n**Step 4.** Apply 5.14 to these four multiples. If mA is greater than nC, then mB is greater than nD; if mA equals nC, then mB equals nD; and if mA is less than nC, then mB is less than nD. Thus mA and mB alike exceed, equal, or fall short of nC and nD respectively. [5.14]\n\n**Step 5.** Here mA and mB are arbitrary equimultiples of the first and third magnitudes in the order A, C, B, D, while nC and nD are arbitrary equimultiples of the second and fourth. Step 4 therefore establishes precisely the defining condition for A:C = B:D. Hence the four magnitudes are proportional alternately. [D5.5, D5.6, D5.12]",
+          "used": [
+            "D5.6",
+            "D5.12",
+            "5.15",
+            "5.11",
+            "5.14",
+            "D5.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:43:48.644021+00:00",
+          "prompt_sha256": "6713017bdc5db6ebb410b4f17bbd77d90ba43e4aac0a8225177a2a93b5fb400a",
+          "resource_table_sha256": "905f093bc19125fe55472069b7394b6bc4f5372f78fab52705e5e071ed5abbb8",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1be-b918-76e0-abe8-0d3430d94849",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1be-b918-76e0-abe8-0d3430d94849",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-43-48-01a1b1be-b918-76e0-abe8-0d3430d94849.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:44:43.778588+00:00",
+          "total_wall_time_seconds": 55.135
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.17": [
+      {
+        "result": {
+          "prop_id": "5.17",
+          "proof": "**Step 1.** Write the given proportion componendo as\n(A+B):B = (C+D):D.\nBy the definitions of composition and separation, we must prove A:B = C:D. We take the direct route through the defining equimultiple test. [D5.14, D5.15, D5.5]\n\n**Step 2.** Let m and n be arbitrary positive integers. Put\nE=m(A+B), F=m(C+D),\nP=mB, Q=mD, R=nB, S=nD.\nThe remainder-of-multiples rule gives\nE−P=mA and F−Q=mC.\nHere we use 5.1, the first applicable remainder-of-multiples result in the table. [5.1]\n\n**Step 3.** By addition of corresponding multiples, P+R and Q+S are respectively the (m+n)-fold multiples of B and D. Since E and F are the m-fold multiples of A+B and C+D, the given proportion implies that E and F alike exceed, equal, or fall short of P+R and Q+S, respectively. [5.2, D5.5]\n\n**Step 4.** Remove P from both magnitudes in the first comparison, and Q from both magnitudes in the second. Each comparison retains its character: equal magnitudes leave equal remainders; in an unequal comparison the positive excess remains, so the greater remainder is still greater than the lesser. Consequently, E−P and F−Q alike exceed, equal, or fall short of R and S, respectively. Thus mA and mC alike exceed, equal, or fall short of nB and nD, respectively. [CN3, CN5; Step 2]\n\n**Step 5.** Since m and n were arbitrary, the defining equimultiple test gives A:B = C:D. Therefore the magnitudes are proportional separando, as required. [D5.5, D5.6, D5.15]",
+          "used": [
+            "D5.14",
+            "D5.15",
+            "D5.5",
+            "5.1",
+            "5.2",
+            "CN3",
+            "CN5",
+            "D5.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:44:18.631275+00:00",
+          "prompt_sha256": "659a917c86786d7da396155e8b6c4f198ce32485cc5a1bd4b23347e19aff46eb",
+          "resource_table_sha256": "57bcfe79705f2d8bda1e8cd0a26c129939fa2f7f761c7a91f11e15b6a32b2ead",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bf-2e46-7382-beab-7e3674414337",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bf-2e46-7382-beab-7e3674414337",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-44-18-01a1b1bf-2e46-7382-beab-7e3674414337.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:46:04.145192+00:00",
+          "total_wall_time_seconds": 105.514
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.18": [
+      {
+        "result": {
+          "prop_id": "5.18",
+          "proof": "**Step 1.** Let X=A+B and Y=C+D, with all the parts positive, and suppose A:B=C:D. This is the hypothesis obtained by separating the ratios X:B and Y:D; the required conclusion by composition is X:B=Y:D. We use the defining equimultiple criterion directly, without introducing alternate ratios. [D5.15, D5.14, D5.5]\n\n**Step 2.** Choose arbitrary positive integers m and n, writing mM for m copies of a magnitude M. Each copy of X contains B, so mB can be subtracted from mX; similarly mD can be subtracted from mY. Proposition 5.1, the earliest applicable table entry for the remainder-of-multiples identity, gives\nmX−mB=mA and mY−mD=mC.\nThus mX=mA+mB and mY=mC+mD. [D5.2, 5.1]\n\n**Step 3.** If n≤m, then nB≤mB<mX and nD≤mD<mY: the additional copies and the positive remainders make the respective wholes greater than their parts. Hence mX and mY both exceed nB and nD respectively. [D5.2, CN5]\n\n**Step 4.** If n>m, put k=n−m, a positive integer. Grouping the copies gives nB=mB+kB and nD=mD+kD. Since A:B=C:D, the definition of equal ratios says that mA and mC alike exceed, are alike equal to, or alike fall short of kB and kD respectively. [D5.2, D5.5]\n\n**Step 5.** Add mB to both magnitudes in the first comparison, and mD to both in the second. Equality is preserved by addition of equals; a strict inequality is preserved because its positive excess remains a part of the larger whole. Using the identities above, it follows that mX and mY alike exceed, are alike equal to, or alike fall short of nB and nD respectively. [CN2, CN5]\n\n**Step 6.** Thus, for every choice of m and n, the equimultiples mX and mY have matching relations to nB and nD. Therefore X:B=Y:D by the definition of equal ratios. Equivalently, (A+B):B=(C+D):D. Hence magnitudes proportional separando are also proportional componendo. [D5.5, D5.14, D5.15]",
+          "used": [
+            "D5.15",
+            "D5.14",
+            "D5.5",
+            "D5.2",
+            "5.1",
+            "CN5",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:44:48.660125+00:00",
+          "prompt_sha256": "df98ab23230ad7acbd70a7a2dcf9c41101ed4046bcb2f9a0368290ae011a5a5b",
+          "resource_table_sha256": "7ff20be5d8000e0b854a5e0119dbbcf9877609a2d68f828640c27b2419b2395e",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1bf-a3ad-7481-a099-68c3d15bbfef",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1bf-a3ad-7481-a099-68c3d15bbfef",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-44-48-01a1b1bf-a3ad-7481-a099-68c3d15bbfef.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:47:29.283838+00:00",
+          "total_wall_time_seconds": 160.624
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.19": [
+      {
+        "result": {
+          "prop_id": "5.19",
+          "proof": "**Step 1.** Let the wholes be A and B, the parts subtracted be C and D, and the respective remainders be R and S. Thus A = R + C and B = S + D, and by hypothesis A:B = C:D. By alternation, A:C = B:D. We choose alternation first because it puts each whole in relation to its own subtracted part, allowing separation directly. [5.16, D5.12]\n\n**Step 2.** The proportion just obtained is (R + C):C = (S + D):D. By separation, taking the excess of each antecedent over its consequent, R:C = S:D. [5.17, D5.15]\n\n**Step 3.** Alternating this proportion gives R:S = C:D. [5.16, D5.12]\n\n**Step 4.** By hypothesis A:B = C:D, and Step 3 gives R:S = C:D. Ratios which are the same with the same ratio are the same with one another; hence R:S = A:B. Therefore the remainder is to the remainder as the whole is to the whole. [5.11]",
+          "used": [
+            "5.16",
+            "D5.12",
+            "5.17",
+            "D5.15",
+            "5.11"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:45:18.637269+00:00",
+          "prompt_sha256": "636e8af41990c8788aaefdef778f33514b28fa324b88be3f171b2c35314d5723",
+          "resource_table_sha256": "e76594c7ea6a6ba8c1af4f6e5274f2aea78958fadfe2307b0c49292dc5713db0",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c0-18ad-7e33-abf2-9df066739847",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c0-18ad-7e33-abf2-9df066739847",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-45-18-01a1b1c0-18ad-7e33-abf2-9df066739847.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:46:20.709083+00:00",
+          "total_wall_time_seconds": 62.072
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.20": [
+      {
+        "result": {
+          "prop_id": "5.20",
+          "proof": "**Step 1.** Let the two triples be A, B, C and D, E, F, with A:B = D:E and B:C = E:F. We use common-consequent ratio comparisons, since these apply directly to the extreme terms without requiring ratios between the two triples. First, C:B = F:E: for arbitrary positive integers m,n, the comparisons of nB with mC and of nE with mF agree; reversing both comparisons shows that those of mC with nB and of mF with nE agree. This is precisely the definition of equality of the inverse ratios. [D5.5]\n\n**Step 2.** Suppose A > C. Then A:B > C:B. [5.8] Hence there are positive integers m,n such that mA > nB while mC does not exceed nB. [D5.7] Since A:B = D:E and C:B = F:E, these same comparisons give mD > nE while mF does not exceed nE. [D5.5] Thus D:E > F:E, and consequently D > F. [D5.7, 5.10]\n\n**Step 3.** Suppose A = C. Then A:B = C:B. [5.7] Combining this with A:B = D:E and C:B = F:E gives D:E = F:E. [5.11] Magnitudes having the same ratio to the same magnitude are equal; therefore D = F. [5.9]\n\n**Step 4.** Suppose A < C. Then C:B > A:B. [5.8] There are therefore positive integers m,n such that mC > nB while mA does not exceed nB. [D5.7] The equalities C:B = F:E and A:B = D:E give mF > nE while mD does not exceed nE. [D5.5] Hence F:E > D:E, so F > D, or D < F. [D5.7, 5.10] Thus, ex aequali, according as the first magnitude is greater than, equal to, or less than the third, the fourth is greater than, equal to, or less than the sixth, as required.",
+          "used": [
+            "D5.5",
+            "5.8",
+            "D5.7",
+            "5.10",
+            "5.7",
+            "5.11",
+            "5.9"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:45:48.625317+00:00",
+          "prompt_sha256": "0d22cc7aef117749cd221eaed6d5e966a03e8aafd68484b2c2b03dad1cb6abd4",
+          "resource_table_sha256": "f9f312fee80b7af8a2ec53c2ff7d89c572479d5f2a8c1a0558617cb29e1319f4",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c0-8dd9-79d1-9f26-39a45c1f6c15",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c0-8dd9-79d1-9f26-39a45c1f6c15",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-45-48-01a1b1c0-8dd9-79d1-9f26-39a45c1f6c15.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:47:59.561869+00:00",
+          "total_wall_time_seconds": 130.937
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.21": [
+      {
+        "result": {
+          "prop_id": "5.21",
+          "proof": "**Step 1.** Let the two triples be A, B, C and D, E, F. The perturbed proportion means that A:B = E:F and B:C = D:E. We must compare A with C and D with F, the extreme terms left after removing the intermediates. We choose the common-antecedent ratios B:C and B:A, since their comparisons can be transferred directly through the given proportions by the defining equimultiple tests. [D5.18, D5.17]\n\n**Step 2.** From A:B = E:F we obtain B:A = F:E directly from the definition of equal ratios. Indeed, for arbitrary positive integers m and n, the comparisons of nA with mB and of nE with mF agree. Reversing both comparisons shows that the comparisons of mB with nA and of mF with nE agree. This is precisely B:A = F:E. [D5.5]\n\n**Step 3.** Suppose A > C. Since the same magnitude has a greater ratio to the less, B:C > B:A. Hence there are equimultiples satisfying mB > nC but mB ≤ nA. By B:C = D:E, the first comparison gives mD > nE; by B:A = F:E, the second gives mF ≤ nE. Thus D:E > F:E by the definition of a greater ratio. Magnitudes having ratios to the same magnitude are ordered as their ratios; therefore D > F. [5.8, D5.7, D5.5, 5.10]\n\n**Step 4.** Suppose A = C. The same magnitude has the same ratio to equal magnitudes, so B:C = B:A. Combining this with B:C = D:E and B:A = F:E gives D:E = F:E, since ratios equal to the same ratio are equal to one another. Magnitudes having the same ratio to the same magnitude are equal; hence D = F. [5.7, 5.11, 5.9]\n\n**Step 5.** Suppose A < C. Then B:A > B:C. Consequently there are equimultiples satisfying mB > nA but mB ≤ nC. The proportions B:A = F:E and B:C = D:E give respectively mF > nE and mD ≤ nE. Therefore F:E > D:E, and hence F > D, or D < F. Thus, ex aequali, if the first magnitude is greater than the third, the fourth is greater than the sixth; if equal, equal; and if less, less. [5.8, D5.7, D5.5, 5.10]",
+          "used": [
+            "D5.18",
+            "D5.17",
+            "D5.5",
+            "5.8",
+            "D5.7",
+            "5.10",
+            "5.7",
+            "5.11",
+            "5.9"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:46:18.636416+00:00",
+          "prompt_sha256": "b25293e5b9f89b38ece5b17eb9153191e1ebf5d2954866f5a4c6175420ea54a2",
+          "resource_table_sha256": "6aca8c18f72886f442fddd6865ee88cc1191ba702c07ff8a13ac19cfc90cf414",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c1-031c-7e53-acd8-1b049f415e8e",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c1-031c-7e53-acd8-1b049f415e8e",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 9,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-46-18-01a1b1c1-031c-7e53-acd8-1b049f415e8e.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:48:33.451641+00:00",
+          "total_wall_time_seconds": 134.815
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.22": [
+      {
+        "result": {
+          "prop_id": "5.22",
+          "proof": "**Step 1.** Let A₁,…,Aᵣ and B₁,…,Bᵣ be two lists of magnitudes, with r ≥ 2, such that Aᵢ:Aᵢ₊₁ = Bᵢ:Bᵢ₊₁ for every i < r. We must show A₁:Aᵣ = B₁:Bᵣ, which is the meaning of proportion ex aequali. We use the order-preserving comparison theorem 5.20, since the successive ratios occur in corresponding order. [D5.17; 5.20]\n\n**Step 2.** First consider three magnitudes A,B,C and three others D,E,F satisfying A:B = D:E and B:C = E:F. Take arbitrary positive integral multipliers m,n. By the theorem on equimultiples of proportional magnitudes,\n(mA):(mB) = (mD):(mE),\nand\n(mB):(nC) = (mE):(nF).\nThus the triples mA,mB,nC and mD,mE,nF satisfy the successive-ratio hypotheses of the comparison theorem. [5.4]\n\n**Step 3.** Apply that theorem to these triples. If mA is greater than nC, then mD is greater than nF; if mA equals nC, then mD equals nF; and if mA is less than nC, then mD is less than nF. [5.20]\n\n**Step 4.** Since m and n were arbitrary, any equimultiples of A and D alike exceed, equal, or fall short of any equimultiples of C and F, respectively. Therefore A:C = D:F by the definition of equality of ratios. This establishes the required result for three magnitudes in each list. [D5.5]\n\n**Step 5.** Return to the original lists. For k = 2, A₁:Aₖ = B₁:Bₖ is a hypothesis. Whenever this equality has been obtained for some k < r, combine it with the given equality Aₖ:Aₖ₊₁ = Bₖ:Bₖ₊₁. Applying the three-magnitude argument of Steps 2–4 to A₁,Aₖ,Aₖ₊₁ and B₁,Bₖ,Bₖ₊₁ gives A₁:Aₖ₊₁ = B₁:Bₖ₊₁. Repeating this finite process yields A₁:Aᵣ = B₁:Bᵣ. [Steps 2–4, using 5.4, 5.20 and D5.5]\n\n**Step 6.** Hence, upon removing all intermediate terms, the first magnitude has to the last in one list the same ratio as the first has to the last in the other. The magnitudes are therefore in the same ratio ex aequali, as required. [D5.17]",
+          "used": [
+            "D5.17",
+            "5.20",
+            "5.4",
+            "D5.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:46:48.646684+00:00",
+          "prompt_sha256": "97aef0fb7dfbed4f85d50ac05d20f2f1139885204722843fd6f7c8eb3d9d8ec9",
+          "resource_table_sha256": "0dd5b3c1fc70b04ec682662c27811f349d905eaf9d276667cdfe3bdcf859e9e9",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c1-7869-7842-8b8d-7b4f97a8904c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c1-7869-7842-8b8d-7b4f97a8904c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-46-48-01a1b1c1-7869-7842-8b8d-7b4f97a8904c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:48:05.495427+00:00",
+          "total_wall_time_seconds": 76.849
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.23": [
+      {
+        "result": {
+          "prop_id": "5.23",
+          "proof": "**Step 1.** Let the two triples be A, B, C and D, E, F, with A:B = E:F and B:C = D:E. This is the given perturbed proportion. We must prove A:C = D:F, the proportion ex aequali. [D5.18, D5.17]\n\n**Step 2.** Let m and n be arbitrary positive integers. Take G = mA, H = mB, K = mD, and L = nC, M = nE, N = nF. To establish A:C = D:F by the definition of equal ratios, it suffices to show that G and L have the same comparison as K and N for every such choice. [D5.5]\n\n**Step 3.** Parts have the same ratio as their corresponding equimultiples; hence G:H = A:B and M:N = E:F. Since A:B = E:F by hypothesis, it follows that G:H = M:N. [5.15, 5.11]\n\n**Step 4.** From B:C = D:E, taking m-fold multiples of the antecedents and n-fold multiples of the consequents gives H:L = K:M. [5.4]\n\n**Step 5.** Thus the triples G, H, L and K, M, N satisfy G:H = M:N and H:L = K:M. We use the perturbed-comparison proposition directly, since it matches this order without rearrangement. It gives: if G > L, then K > N; if G = L, then K = N; and if G < L, then K < N. [5.21]\n\n**Step 6.** Therefore arbitrary equimultiples G and K of A and D alike exceed, are alike equal to, or alike fall short of the arbitrary equimultiples L and N of C and F, respectively. By the definition of equal ratios, A:C = D:F. Hence the original triples are in the same ratio ex aequali, as required. [D5.5, D5.17]",
+          "used": [
+            "D5.18",
+            "D5.17",
+            "D5.5",
+            "5.15",
+            "5.11",
+            "5.4",
+            "5.21"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:47:29.402384+00:00",
+          "prompt_sha256": "fb53cc4e758f3993731b501bb6342d4992d90edaf63d8cae2b86f49c6184bffe",
+          "resource_table_sha256": "bbf0c49ce641b5df8ccfbff1db909179a065172bd7f020115b9937a40aada527",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c2-176f-7723-815e-d6a17e098925",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c2-176f-7723-815e-d6a17e098925",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-47-29-01a1b1c2-176f-7723-815e-d6a17e098925.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:48:42.614749+00:00",
+          "total_wall_time_seconds": 73.212
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.24": [
+      {
+        "result": {
+          "prop_id": "5.24",
+          "proof": "**Step 1.** Let the six magnitudes be A, B, C, D, E, F, with A:B = C:D and E:B = F:D. The latter equality also gives B:E = D:F directly by D5.5: for arbitrary positive integers m and n, the comparisons of nE with mB and of nF with mD agree; reversing both comparisons shows that the comparisons of mB with nE and of mD with nF agree.\n\n**Step 2.** Choose ex aequali as the first combination, since B and D now serve as intermediate terms. Apply 5.22 to the triples A, B, E and C, D, F. From A:B = C:D and B:E = D:F, obtain A:E = C:F.\n\n**Step 3.** Since A and C are respectively the excesses of A+E over E and C+F over F, this last equality is the separated proportion for A+E, E, C+F, F (D5.15). By 5.18, the corresponding composed proportion holds; that is, (A+E):E = (C+F):F (D5.14).\n\n**Step 4.** Apply 5.22 again, now to the triples A+E, E, B and C+F, F, D. The equality from Step 3 and the given equality E:B = F:D yield (A+E):B = (C+F):D. Thus the first and fifth added together have to the second the same ratio as the third and sixth added together have to the fourth, as required.",
+          "used": [
+            "D5.5",
+            "5.22",
+            "D5.15",
+            "5.18",
+            "D5.14"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:47:59.671129+00:00",
+          "prompt_sha256": "9eef66c846d1e1dfb134a7c0b7898214524f9e5e0258b1e080012f937dc7a911",
+          "resource_table_sha256": "7d27b0a2b8302dd0361de0c078d147b539ec7f3e361bb299ef174f0bf8d6292e",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c2-8d93-7690-9c2c-0964a917792f",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c2-8d93-7690-9c2c-0964a917792f",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-47-59-01a1b1c2-8d93-7690-9c2c-0964a917792f.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:49:31.718107+00:00",
+          "total_wall_time_seconds": 92.047
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "5.25": [
+      {
+        "result": {
+          "prop_id": "5.25",
+          "proof": "**Step 1.** Write the given proportion as A:B = C:D, with A the greatest magnitude. This arrangement is possible by exchanging the two ratios and, if necessary, inverting both; simultaneous inversion preserves proportionality by the equimultiple definition (D5.5). Since A>B, that definition, with unit multiples, gives C>D. Since A>C, Proposition 5.14 gives B>D. Thus D is the least magnitude.\n\n**Step 2.** Let X be the excess of A over B, and Y the excess of C over D, so that A=B+X and C=D+Y. Choose separation as the direct route, because these excesses determine the difference between the required sums. By Proposition 5.17,\nX:B = Y:D.\n\n**Step 3.** Since B>D, the three cases of Proposition 5.14 force X>Y: if X=Y, that proposition would give B=D, and if X<Y, it would give B<D. Both are excluded. Therefore X=Y+H for some positive excess H. (5.14)\n\n**Step 4.** Substituting these equal magnitudes and adding equals gives\nA+D = B+X+D = B+Y+H+D = B+C+H. (CN2)\nConsequently A+D is greater than B+C, since the whole is greater than the part (CN5). Thus the greatest and the least together are greater than the remaining two.",
+          "used": [
+            "D5.5",
+            "5.14",
+            "5.17",
+            "CN2",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T16:48:29.700246+00:00",
+          "prompt_sha256": "d8b367a0e4a873df37534af80f757dbbe2f923547de73c158a8948313527d182",
+          "resource_table_sha256": "9f023535cdf1300e0ca916125793839fc0070144d62269f3149c6c7b9c2cb800",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b1c3-0317-7e92-b47d-f57dd2f95a96",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b1c3-0317-7e92-b47d-f57dd2f95a96",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T16-48-29-01a1b1c3-0317-7e92-b47d-f57dd2f95a96.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T16:50:08.813323+00:00",
+          "total_wall_time_seconds": 99.113
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

@@ -1,0 +1,529 @@
+# Book 8 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 8.1
+**Statement:** If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
+
+**Step 1.** Let A₁, …, Aₙ be the given numbers in continued proportion, with A₁ and Aₙ prime to one another. Let B₁, …, Bₙ be any numbers having the same corresponding ratios, so that Aᵢ:Aᵢ₊₁ = Bᵢ:Bᵢ₊₁ for every i < n. We shall show that each Aᵢ is no greater than Bᵢ. (Hypotheses; D7.12, D7.20.)
+
+**Step 2.** Taking the corresponding ratios ex aequali gives A₁:Aₙ = B₁:Bₙ. (7.14.) Since A₁ and Aₙ are prime to one another, they are the least numbers having their ratio. (7.21.) This is the direct path: apply the coprimality hypothesis to the extremes, without constructing a least proportional sequence.
+
+**Step 3.** The least numbers having a given ratio measure any numbers having that ratio the same number of times. Hence A₁ measures B₁ and Aₙ measures Bₙ with the same measurement count. Write this count as k ≥ 1, so B₁ = kA₁, where k = 1 means equality. (7.20.)
+
+**Step 4.** For any i with 2 ≤ i ≤ n, apply ex aequali to the first i terms to obtain B₁:Bᵢ = A₁:Aᵢ. (7.14.) Alternately, B₁:A₁ = Bᵢ:Aᵢ. (7.13.) Therefore Bᵢ is the same multiple of Aᵢ that B₁ is of A₁: namely, Bᵢ = kAᵢ. (D7.20.)
+
+**Step 5.** Thus every Bᵢ consists of the same positive number k of copies of Aᵢ. If k = 1, all corresponding terms are equal; if k > 1, each Bᵢ is greater than Aᵢ, since the whole is greater than its part. (CN5.) Since the comparison sequence was arbitrary, A₁, …, Aₙ are the least numbers having the same ratios with them, as required.
+
+**USED:** 7.13, 7.14, 7.20, 7.21, CN5, D7.12, D7.20
+**Human refs (from References field):** 7.14, 7.20, 7.21
+**Jaccard:** 0.429 — AI adds ['7.13', 'CN5', 'D7.12', 'D7.20']
+
+## Proposition 8.2
+**Statement:** To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.
+
+**Step 1.** Let A:B be the given numerical ratio, and let n ≥ 2 be the prescribed number of terms. Find the least numbers a, b having the ratio A:B, by 7.33. These numbers are prime to one another, by 7.22. If n = 2, they already give the required construction; henceforth suppose n ≥ 3.
+
+**Step 2.** We describe a construction that adds one term while preserving the required ratio. Suppose X₀, X₁, …, Xₖ₋₁ are k numbers whose successive ratios are all a:b. By multiplication, construct the following k + 1 numbers:
+
+ aX₀, aX₁, …, aXₖ₋₁, bXₖ₋₁.
+
+Here aX means the number obtained when a multiplies X. Each indicated construction is repeated addition, as specified in D7.15.
+
+**Step 3.** For every i from 0 through k − 2, the common multiplier a gives
+
+ aXᵢ : aXᵢ₊₁ = Xᵢ : Xᵢ₊₁ = a:b,
+
+by 7.17 and 5.11. For the final adjacent pair, the common multiplicand Xₖ₋₁ gives
+
+ aXₖ₋₁ : bXₖ₋₁ = a:b,
+
+by 7.18. Thus every successive ratio in the enlarged row is a:b, and therefore A:B, by 5.11 and Step 1. The row remains in continued proportion.
+
+**Step 4.** Begin with the row a, b and perform the construction of Step 2 exactly n − 2 times. Steps 2–3 show that this produces exactly n numbers in continued proportion with successive ratio A:B. At every extension, the first term is multiplied by a and the last term by b. Consequently, the final extremes are a^(n−1) and b^(n−1), where each power denotes the product of n − 1 copies of its base, formed by repeated multiplication (D7.15).
+
+**Step 5.** Since a and b are prime to one another, their corresponding powers a^(n−1) and b^(n−1) are prime to one another, by 7.27. Apply 8.1: numbers in continued proportion whose extremes are prime to one another are the least of those having the same ratio with them. This is the direct leastness criterion here, because the construction has supplied precisely its hypothesis concerning the extremes. Hence the constructed n numbers are the least numbers in continued proportion with the prescribed ratio A:B. The required numbers have therefore been found.
+
+**USED:** 5.11, 7.17, 7.18, 7.22, 7.27, 7.33, 8.1, D7.15
+**Human refs (from References field):** 7.17, 7.18, 7.22, 7.27, 8.1
+**Jaccard:** 0.625 — AI adds ['5.11', '7.33', 'D7.15']
+
+## Proposition 8.3
+**Statement:** If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.
+
+**Step 1.** Let A₀, A₁, …, Aₙ be the given numbers in continued proportion, least among all sequences having the same successive ratios. If n = 1, the extremes are prime to one another by 7.22. Assume therefore that n ≥ 2. We use a comparison progression, allowing 8.1 to be applied in its stated, forward direction.
+
+**Step 2.** Choose the least numbers p, q such that p:q = A₀:A₁, by 7.33. Then p and q are prime to one another by 7.22. This proposition applies directly because the chosen pair is least.
+
+**Step 3.** Form the n + 1 numbers
+Bᵢ = pⁿ⁻ⁱqⁱ, for 0 ≤ i ≤ n,
+where powers denote repeated multiplication and a factor with exponent zero is omitted. For each 0 ≤ i < n, put Cᵢ = pⁿ⁻ⁱ⁻¹qⁱ. Since n ≥ 2, each Cᵢ contains at least one factor. By repeated multiplication and interchange of factors,
+Bᵢ = Cᵢp and Bᵢ₊₁ = Cᵢq. [D7.15, 7.16]
+Therefore Bᵢ:Bᵢ₊₁ = p:q, since multiplication of two numbers by the same number preserves their ratio. [7.17] Thus B₀, B₁, …, Bₙ are in continued proportion with the same successive ratios as the given numbers. [Step 2; hypothesis]
+
+**Step 4.** The extremes of this comparison progression are B₀ = pⁿ and Bₙ = qⁿ. Since p and q are prime to one another, their corresponding successive powers are prime to one another, by repeated application of 7.27. Hence B₀ and Bₙ are prime to one another.
+
+**Step 5.** By 8.1, the comparison progression is least among those having its successive ratios. These are also the successive ratios of the given progression. For each i, the assumed leastness of the given progression gives Aᵢ ≤ Bᵢ, while the leastness just established gives Bᵢ ≤ Aᵢ. Consequently Aᵢ = Bᵢ for every i. [Hypothesis; 8.1]
+
+**Step 6.** In particular, A₀ = B₀ and Aₙ = Bₙ. By Step 4 their only common measure is the unit. Therefore the extremes A₀ and Aₙ of the given progression are prime to one another, as required. [D7.12]
+
+**USED:** 7.16, 7.17, 7.22, 7.27, 7.33, 8.1, D7.12, D7.15
+**Human refs (from References field):** 7.22, 7.27, 7.33, 8.2
+**Jaccard:** 0.333 — AI adds ['7.16', '7.17', '8.1', 'D7.12', 'D7.15']; Human adds ['8.2']
+
+## Proposition 8.4
+**Statement:** Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.
+
+**Step 1.** Let the given ratios, expressed in least numbers, be a₁:b₁, …, aₘ:bₘ, in the prescribed order. We seek numbers N₀, …, Nₘ such that Nᵢ₋₁:Nᵢ = aᵢ:bᵢ for every i, and which are the least satisfying these conditions. We shall first construct an integral chain with these successive ratios and then apply the general minimization construction of **7.33**. This is the direct choice because that proposition applies to an arbitrary finite list, without requiring all its successive ratios to be equal.
+
+**Step 2.** Start with the chain a₁, b₁. Suppose that C₀, …, Cₖ has already been constructed with the first k prescribed successive ratios, where k < m. For the next ratio, write a = aₖ₊₁ and b = bₖ₊₁, and construct
+Dⱼ = aCⱼ for 0 ≤ j ≤ k, and Dₖ₊₁ = bCₖ.
+These products are constructed by repeated addition as in **D7.15**.
+
+**Step 3.** For every 1 ≤ j ≤ k, multiplication by the same number preserves the ratio, so
+Dⱼ₋₁:Dⱼ = Cⱼ₋₁:Cⱼ = aⱼ:bⱼ (**7.17**, **5.11**).
+Also, multiplication is commutative, and therefore
+Dₖ:Dₖ₊₁ = (aCₖ):(bCₖ) = (Cₖa):(Cₖb) = a:b (**7.16**, **7.17**).
+Thus the new chain retains all the previous prescribed ratios and adds the next one. Repeating this construction through the finite list produces numbers U₀, …, Uₘ satisfying Uᵢ₋₁:Uᵢ = aᵢ:bᵢ for every i.
+
+**Step 4.** Apply **7.33** to U₀, …, Uₘ, obtaining the least numbers N₀, …, Nₘ having the same ratios as that list. In particular,
+Nᵢ₋₁:Nᵢ = Uᵢ₋₁:Uᵢ = aᵢ:bᵢ
+for every i (**5.11**). Hence the constructed numbers have all the required successive ratios.
+
+**Step 5.** Let T₀, …, Tₘ be any other numbers having the prescribed successive ratios. Their corresponding adjacent ratios equal those of U₀, …, Uₘ by **5.11**. For any indices r < s, apply the numerical ex aequali theorem **7.14** to the intervening chains; it gives Tᵣ:Tₛ = Uᵣ:Uₛ. Thus every competing chain belongs to the class of lists minimized in Step 4. By **7.33**, no Tᵢ is smaller than its corresponding Nᵢ. Therefore N₀, …, Nₘ are the least numbers in a continued chain having the given ratios, as required.
+
+**USED:** 5.11, 7.14, 7.16, 7.17, 7.33, D7.15
+**Human refs (from References field):** 7.13, 7.20, 7.34, 7.35, D7.20
+**Jaccard:** 0.000 — AI adds ['5.11', '7.14', '7.16', '7.17', '7.33', 'D7.15']; Human adds ['7.13', '7.20', '7.34', '7.35', 'D7.20']
+
+## Proposition 8.5
+**Statement:** Plane numbers have to one another the ratio compounded of the ratios of their sides.
+
+**Step 1.** Let A and B be any plane numbers, with sides a, b and c, d respectively. Thus a multiplying b produces A, and c multiplying d produces B (D7.16).
+
+**Step 2.** Let E be the number produced by c multiplying b (D7.15). Path choice: this mixed product makes the two required side ratios occur successively in the chain A, E, B, so the multiplication-ratio propositions apply directly.
+
+**Step 3.** The numbers a and c, multiplying the same number b, produce A and E respectively. Therefore A:E = a:c, since the products have the same ratio as the multipliers (7.18). This proposition applies directly because the number multiplied is common.
+
+**Step 4.** The same number c, multiplying b and d, produces E and B respectively. Therefore E:B = b:d, since the products have the same ratio as the numbers multiplied (7.17). This proposition applies directly because the multiplier is common.
+
+**Step 5.** The ratio A:B is compounded of A:E and E:B: multiplying the sizes of these successive ratios cancels the common intermediate term E (D6.5). By Steps 3 and 4, these ratios are respectively a:c and b:d. Hence A:B is the ratio compounded of a:c and b:d, which are the ratios of the corresponding sides. Therefore plane numbers have to one another the ratio compounded of the ratios of their sides.
+
+**USED:** 7.17, 7.18, D6.5, D7.15, D7.16
+**Human refs (from References field):** 7.14, 7.17, 8.4
+**Jaccard:** 0.143 — AI adds ['7.18', 'D6.5', 'D7.15', 'D7.16']; Human adds ['7.14', '8.4']
+
+## Proposition 8.6
+**Statement:** If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.
+
+**Step 1.** Let A₀, A₁, …, Aₙ be numbers in continued proportion, and suppose that A₀ does not measure A₁. Choose arbitrary positions i < j, and put d = j − i. We shall prove that Aᵢ does not measure Aⱼ. [Hypothesis; D7.20]
+
+**Step 2.** Construct d + 1 least terms B₀, B₁, …, B_d in continued proportion with the same consecutive ratio as the given numbers. Thus B₀:B₁ = A₀:A₁, and likewise for every consecutive pair. We choose this least-chain construction because it permits direct application of the coprimality theorem for the extremes. [8.2]
+
+**Step 3.** B₀ cannot be the unit. For the unit measures every number, so it would measure B₁; the equality B₀:B₁ = A₀:A₁ would then imply that A₀ measures A₁, contrary to the hypothesis. Thus B₀ is not the unit. Moreover, because the B-terms are the least in their continued proportion, B₀ and B_d are prime to one another. [D7.2; D7.20; D7.3; 8.3]
+
+**Step 4.** The chains Aᵢ, Aᵢ₊₁, …, Aⱼ and B₀, B₁, …, B_d have equally many terms and equal corresponding consecutive ratios. Therefore, ex aequali, Aᵢ:Aⱼ = B₀:B_d. We use the numerical ex aequali theorem, since all the terms here are numbers. [7.14]
+
+**Step 5.** Suppose that Aᵢ measures Aⱼ. The proportion in Step 4 then implies that B₀ measures B_d. Since B₀ also measures itself once, B₀ is a common measure of B₀ and B_d. But B₀ is not the unit, contradicting the fact that these extremes are prime to one another. Consequently Aᵢ does not measure Aⱼ. [D7.20; D7.3; D7.12; Step 3]
+
+**Step 6.** Since i < j were arbitrary, no earlier term measures any later term in the continued proportion. Thus, if the first does not measure the second, neither will any other measure any other in the order of the proportion. [Steps 1–5]
+
+**USED:** 7.14, 8.2, 8.3, D7.12, D7.2, D7.20, D7.3
+**Human refs (from References field):** 7.14, 7.33, 8.3, D7.20
+**Jaccard:** 0.375 — AI adds ['8.2', 'D7.12', 'D7.2', 'D7.3']; Human adds ['7.33']
+
+## Proposition 8.7
+**Statement:** If there be as many numbers as we please in continued proportion, and the first measure the last, it will measure the second also.
+
+**Step 1.** Let A₁, A₂, …, Aₙ be numbers in continued proportion, and suppose that A₁ measures Aₙ. We must show that A₁ measures A₂. [Hypothesis]
+
+**Step 2.** Choose the direct route of applying 8.6 by contraposition, since it addresses exactly the failure of the desired conclusion. Suppose that A₁ does not measure A₂. Then, by 8.6, no term measures another later term; in particular, A₁ does not measure Aₙ. [8.6]
+
+**Step 3.** This contradicts the hypothesis that A₁ measures Aₙ. Therefore A₁ measures A₂: the first measures the second, as required. [Steps 1–2]
+
+**USED:** 8.6
+**Human refs (from References field):** 8.6
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 8.8
+**Statement:** If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.
+
+**Step 1.** Let A₀, A₁, …, Aₘ₊₁ be in continued proportion, with m intermediate numbers, and let C and D satisfy C:D = A₀:Aₘ₊₁. Thus all successive ratios Aᵢ:Aᵢ₊₁ are equal. We must place m numbers in continued proportion between C and D. [Hypothesis; D7.20]
+
+**Step 2.** Construct m+2 numbers B₀, B₁, …, Bₘ₊₁ in continued proportion, the least in the ratio A₀:A₁. Then Bᵢ:Bᵢ₊₁ = Aᵢ:Aᵢ₊₁ for every successive pair. This is the least-progression route: the construction of 8.2 applies directly because there is a single repeated ratio. [8.2]
+
+**Step 3.** Applying ex aequali to the two sequences gives B₀:Bₘ₊₁ = A₀:Aₘ₊₁, and hence B₀:Bₘ₊₁ = C:D. We use the numerical ex aequali theorem because both sequences consist of numbers. [7.14; hypothesis]
+
+**Step 4.** Since the B-sequence is the least in its continued ratio, its extremes B₀ and Bₘ₊₁ are prime to one another. Consequently, these extremes are the least pair having their ratio. [8.3; 7.21]
+
+**Step 5.** Because B₀:Bₘ₊₁ = C:D, the least numbers B₀ and Bₘ₊₁ measure C and D respectively the same number of times. Thus C and D are corresponding equal multiples of these extremes. [7.20]
+
+**Step 6.** For each i, take Cᵢ to be the same multiple of Bᵢ as C is of B₀. These multiples are obtained by repeated addition; if the common multiplicity is one, retain Bᵢ itself. By Step 5, C₀ = C and Cₘ₊₁ = D. [D7.15; Step 5]
+
+**Step 7.** Multiplication by the same number preserves the ratio of each successive pair, so Cᵢ:Cᵢ₊₁ = Bᵢ:Bᵢ₊₁ for every i; for multiplicity one these equalities hold immediately. Since the B-sequence is in continued proportion, so is C₀, C₁, …, Cₘ₊₁. Its endpoints are C and D, and its intermediate terms are exactly C₁, …, Cₘ, numbering m. Therefore the same number of means can be placed in continued proportion between any two numbers having the original endpoint ratio. [7.17; Steps 2 and 6]
+
+**USED:** 7.14, 7.17, 7.20, 7.21, 8.2, 8.3, D7.15, D7.20
+**Human refs (from References field):** 7.14, 7.20, 7.21, 7.33, 8.3, D7.20
+**Jaccard:** 0.556 — AI adds ['7.17', '8.2', 'D7.15']; Human adds ['7.33']
+
+## Proposition 8.9
+**Statement:** If two numbers be prime to one another, and numbers fall between them in continued proportion, then, however many numbers fall between them in continued proportion, so many will also fall between each of them and an unit in continued proportion.
+
+**Step 1.** Let A and B be prime to one another, and suppose that m numbers fall between them in continued proportion. Put n = m + 1, and write the progression as A = X₀, X₁, …, Xₙ = B, so that all consecutive ratios are equal (D7.20). By 8.1, this progression is the least among progressions of the same length and consecutive ratio. We choose this route because 8.1 applies directly to the given hypothesis that the extremes are prime to one another.
+
+**Step 2.** Neither endpoint measures the other, since otherwise that endpoint would be a common measure greater than the unit, contrary to D7.12. Consequently, the common consecutive ratio cannot be an integral multiple in either direction: otherwise, proceeding through the progression in the appropriate direction, every term would be the same integral multiple of its predecessor, and one endpoint would measure the other (D7.15, D7.20). Choose the least numbers p and q such that p:q = X₀:X₁ (7.33). Neither term can be the unit, by the preceding observation; and p and q are prime to one another by 7.22.
+
+**Step 3.** Form n + 1 products C₀, C₁, …, Cₙ, where Cᵢ contains n − i factors equal to p and i factors equal to q. Thus C₀ = pⁿ and Cₙ = qⁿ, with powers denoting repeated multiplication (D7.15). For each i < n, let Tᵢ be the product containing n − i − 1 factors p and i factors q. Since n ≥ 2, this product contains at least one factor. Regrouping the repeated products and commuting factors gives Cᵢ = Tᵢp and Cᵢ₊₁ = Tᵢq (D7.15, 7.16). Therefore Cᵢ:Cᵢ₊₁ = p:q by 7.17. Hence the Cᵢ form a continued proportion with the same length and consecutive ratio as the given progression.
+
+**Step 4.** Apply the product rule 7.24 repeatedly, which handles any prescribed number of factors. Since p is prime to q, every repeated product of p is prime to q; in particular, pⁿ is prime to q. Primality to one another is symmetric (D7.12), so repeated application of 7.24 to products of q now shows that qⁿ is prime to pⁿ. Thus C₀ and Cₙ are prime to one another.
+
+**Step 5.** By 8.1, the progression C₀, …, Cₙ is therefore also the least among progressions of this length and consecutive ratio. Both it and X₀, …, Xₙ are least in the same class, so each corresponding term is no greater than the other and hence they are equal. In particular, A = pⁿ and B = qⁿ.
+
+**Step 6.** Let 1 denote the unit (D7.1). The sequences A = pⁿ, pⁿ⁻¹, …, p, 1 and B = qⁿ, qⁿ⁻¹, …, q, 1 are continued proportions: in the first, each term is p times its successor; in the second, each term is q times its successor (D7.15, D7.20). Each sequence has exactly n − 1 = m numbers between its endpoints. Thus, however many numbers fall between A and B in continued proportion, so many also fall between each of A and B and the unit in continued proportion, as required.
+
+**USED:** 7.16, 7.17, 7.22, 7.24, 7.33, 8.1, D7.1, D7.12, D7.15, D7.20
+**Human refs (from References field):** 8.1, 8.2, D7.20
+**Jaccard:** 0.182 — AI adds ['7.16', '7.17', '7.22', '7.24', '7.33', 'D7.1', 'D7.12', 'D7.15']; Human adds ['8.2']
+
+## Proposition 8.10
+**Statement:** If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
+
+**Step 1.** Let m numbers fall in continued proportion between each of A and B and the unit, and put n=m+1. Write the given progressions as
+1=a_0, a_1, …, a_n=A,
+1=b_0, b_1, …, b_n=B.
+Thus each progression has n−1=m intermediate terms. Put p=a_1 and q=b_1. The successive ratios in the two progressions are respectively 1:p and 1:q. [Hypothesis; D7.20.]
+
+**Step 2.** Since a_i:a_{i+1}=1:p, the number a_i is the same part of a_{i+1} that the unit is of p. Consequently a_{i+1} is p times a_i. Likewise b_{i+1} is q times b_i. Starting from the unit and repeating this observation, A is the product of n copies of p, and B is the product of n copies of q. [D7.2, D7.20, D7.15.]
+
+**Step 3.** Choose the direct product construction, since Step 2 expresses both endpoints as products with the same number of factors. For every j from 0 through n, form C_j as the product of n−j copies of p and j copies of q, omitting whichever group has no factors. These are numbers, and C_0=A and C_n=B. In these products, factors may be regrouped by expanding multiplication into repeated addition and regrouping the equal summands; factors may also be interchanged. [D7.15, CN2, 7.16; Step 2.]
+
+**Step 4.** For each j from 0 through n−1, let R_j be the product of n−j−1 copies of p and j copies of q. Since n−1=m≥1, R_j has at least one factor and is a number. Regrouping and interchanging factors gives
+R_j·p=C_j and R_j·q=C_{j+1}.
+Therefore C_j:C_{j+1}=p:q by 7.17, which applies directly because the same number R_j multiplies p and q. [D7.15, CN2, 7.16, 7.17.]
+
+**Step 5.** Every successive pair in C_0, C_1, …, C_n therefore has the same ratio. Since C_0=A and C_n=B, the numbers C_1, …, C_{n−1} fall between A and B in continued proportion. Their multitude is n−1=m, exactly the multitude falling between each given number and the unit. This proves the proposition. [D7.20; Steps 1, 3–4.]
+
+**USED:** 7.16, 7.17, CN2, D7.15, D7.2, D7.20
+**Human refs (from References field):** 7.17, 7.18, D7.20
+**Jaccard:** 0.286 — AI adds ['7.16', 'CN2', 'D7.15', 'D7.2']; Human adds ['7.18']
+
+## Proposition 8.11
+**Statement:** Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
+
+**Step 1.** Let A and B be square numbers, with sides a and b respectively. Thus A = a·a and B = b·b [D7.18]. Form the number M = a·b [D7.15]. We choose this product directly as the proposed mean.
+
+**Step 2.** Multiplying a and b by the same number a produces A and M. Therefore A:M = a:b [7.17]. The common-multiplier theorem is the direct choice because these two products share their multiplier.
+
+**Step 3.** Multiplication in the opposite order gives b·a = a·b = M [7.16]. Hence multiplying a and b by b produces M and B, so M:B = a:b [7.17].
+
+**Step 4.** Since A:M and M:B are both equal to a:b, they are equal to one another [5.11]. Thus A:M = M:B, and A, M, B are in continued proportion; consequently M is a mean proportional number between the two squares [D7.20].
+
+**Step 5.** For three numbers in continued proportion, the ratio of the first to the third is duplicate of the ratio of the first to the second [D5.9]. Therefore A:B is duplicate of A:M. But A:M = a:b by Step 2 [7.17]. Hence the square A has to the square B the ratio duplicate of that which its side a has to the side b, as required.
+
+**USED:** 5.11, 7.16, 7.17, D5.9, D7.15, D7.18, D7.20
+**Human refs (from References field):** 7.17, 7.18, D5.9
+**Jaccard:** 0.250 — AI adds ['5.11', '7.16', 'D7.15', 'D7.18', 'D7.20']; Human adds ['7.18']
+
+## Proposition 8.12
+**Statement:** Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.
+
+**Step 1.** Let C and D be the given cube numbers, with sides a and b. Write xy for the number obtained when x multiplies y. Put p = aa, q = ab, and r = bb; then C = ap and D = br. Construct M = aq and N = ar. These are numbers obtained by multiplication. We choose this direct construction because it exhibits the required means explicitly. [D7.15, D7.19]
+
+**Step 2.** Since a multiplies a and b to produce p and q, respectively, p:q = a:b by 7.17. Since a and b multiply b to produce q and r, respectively, q:r = a:b by 7.18. These are the directly applicable forms: 7.17 concerns a common multiplier, and 7.18 a common number multiplied. [7.17, 7.18]
+
+**Step 3.** Since a multiplies p and q to produce C and M, respectively, C:M = p:q. Likewise, since a multiplies q and r to produce M and N, respectively, M:N = q:r. Combining these proportions with Step 2 gives C:M = a:b and M:N = a:b. [7.17, 5.11]
+
+**Step 4.** Since a and b multiply r to produce N and D, respectively, N:D = a:b. Consequently,
+C:M = M:N = N:D = a:b.
+Thus C, M, N, D are in continued proportion, and M and N are the two mean proportional numbers between the given cubes. [7.18, 5.11]
+
+**Step 5.** For four continuously proportional numbers, the first has to the fourth the triplicate ratio of that which it has to the second. Hence C:D is triplicate of C:M; and C:M = a:b by Step 3. Therefore the cube C has to the cube D the ratio triplicate of that which its side a has to the side b, as required. [D5.10]
+
+**USED:** 5.11, 7.17, 7.18, D5.10, D7.15, D7.19
+**Human refs (from References field):** 7.17, 7.18, D5.10
+**Jaccard:** 0.500 — AI adds ['5.11', 'D7.15', 'D7.19']
+
+## Proposition 8.13
+**Statement:** If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.
+
+**Step 1.** Let a₁, …, aₙ be the given numbers in continued proportion. Write Sᵢ for the product of aᵢ with itself, and Tᵢ for the product of aᵢ with Sᵢ. Thus Sᵢ is a square with side aᵢ, and Tᵢ is a cube with side aᵢ. [D7.18, D7.19] Path choice: apply the square-ratio theorem 8.11 first, since the first products are squares, and then the cube-ratio theorem 8.12; use numerical ex aequali, 7.14, to compare the resulting chains.
+
+**Step 2.** Take any three consecutive original numbers aᵢ, aᵢ₊₁, aᵢ₊₂. By hypothesis, aᵢ:aᵢ₊₁ = aᵢ₊₁:aᵢ₊₂. By 8.11 and the definition of duplicate ratio, there are mean proportional numbers p and q such that
+Sᵢ:p = p:Sᵢ₊₁ = aᵢ:aᵢ₊₁,
+and
+Sᵢ₊₁:q = q:Sᵢ₊₂ = aᵢ₊₁:aᵢ₊₂. [8.11, D5.9]
+
+**Step 3.** Consequently, the chains Sᵢ, p, Sᵢ₊₁ and Sᵢ₊₁, q, Sᵢ₊₂ have equal corresponding successive ratios. [5.11] Therefore, ex aequali,
+Sᵢ:Sᵢ₊₁ = Sᵢ₊₁:Sᵢ₊₂. [7.14]
+
+**Step 4.** Likewise, by 8.12 and the definition of triplicate ratio, there are intermediate numbers u, v and w, x such that
+Tᵢ:u = u:v = v:Tᵢ₊₁ = aᵢ:aᵢ₊₁,
+and
+Tᵢ₊₁:w = w:x = x:Tᵢ₊₂ = aᵢ₊₁:aᵢ₊₂. [8.12, D5.10]
+
+**Step 5.** Since aᵢ:aᵢ₊₁ = aᵢ₊₁:aᵢ₊₂, these two four-term chains also have equal corresponding successive ratios. [5.11] Hence, ex aequali,
+Tᵢ:Tᵢ₊₁ = Tᵢ₊₁:Tᵢ₊₂. [7.14]
+
+**Step 6.** The three consecutive original numbers were arbitrary. Thus every consecutive triple of the Sᵢ is proportional, and every consecutive triple of the Tᵢ is proportional. Accordingly, both the products obtained by multiplying each original number by itself and the products obtained by multiplying each original number by its corresponding first product are in continued proportion, as required. [D7.20]
+
+**USED:** 5.11, 7.14, 8.11, 8.12, D5.10, D5.9, D7.18, D7.19, D7.20
+**Human refs (from References field):** 7.14
+**Jaccard:** 0.111 — AI adds ['5.11', '8.11', '8.12', 'D5.10', 'D5.9', 'D7.18', 'D7.19', 'D7.20']
+
+## Proposition 8.14
+**Statement:** If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.
+
+**Step 1.** Let A and B be square numbers with sides a and b respectively, so that A = a·a and B = b·b (D7.18). Form M = a·b (D7.15).
+
+**Step 2.** Since a multiplies a and b to produce A and M, respectively, A:M = a:b (7.17). Since a and b multiply b to produce M and B, respectively, M:B = a:b (7.18). Thus A, M, B are in continued proportion, and both successive ratios equal a:b. This product mean is chosen to make the measurement between the squares a measurement between the extremes of a continued proportion.
+
+**Step 3.** First suppose that A measures B. Since A, M, B are in continued proportion and the first measures the last, A also measures M (8.7). This proposition applies directly to the given measurement of the extremes.
+
+**Step 4.** But A:M = a:b. Therefore a is the same part of b that A is of M; hence a measures b (D7.20). Thus, if the square measures the square, its side measures the other side.
+
+**Step 5.** Conversely, suppose that a measures b. From A:M = a:b and M:B = a:b, A measures M and M measures B, since corresponding antecedents are the same parts of their consequents (D7.20).
+
+**Step 6.** Consequently, M is a multiple of A, and B is a multiple of M (D7.5). Each copy of M consists of a whole number of copies of A; therefore the copies of M making up B together consist of a whole number of copies of A (D7.15). Hence B is a multiple of A, and A measures B (D7.5). Thus, if the side measures the side, the square also measures the square. Both assertions are proved.
+
+**USED:** 7.17, 7.18, 8.7, D7.15, D7.18, D7.20, D7.5
+**Human refs (from References field):** 8.11, 8.7, D7.20
+**Jaccard:** 0.250 — AI adds ['7.17', '7.18', 'D7.15', 'D7.18', 'D7.5']; Human adds ['8.11']
+
+## Proposition 8.15
+**Statement:** If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.
+
+**Step 1.** Let A and B be cube numbers with sides a and b. Put p = a·a, q = a·b, and r = b·b. Thus A = a·p and B = b·r. Form also M = a·q and N = b·q. These products are defined by multiplication, and A and B are the corresponding cubes. [D7.15, D7.19]
+
+**Step 2.** Since a multiplies a and b to produce p and q, we have p:q = a:b. Since a multiplies p and q to produce A and M, we have A:M = p:q. [7.17] Since a and b multiply b to produce q and r, and multiply q to produce M and N, we have q:r = a:b and M:N = a:b. [7.18] Finally, since b multiplies q and r to produce N and B, we have N:B = q:r. [7.17] Consequently,
+A:M = M:N = N:B = a:b.
+Thus A, M, N, B are in continued proportion.
+
+**Step 3.** Suppose first that A measures B. Then A measures M by 8.7. This is the direct path: the hypothesis concerns the extreme terms of the continued proportion, so the extremes-to-second assertion applies immediately. [8.7]
+
+**Step 4.** Since A:M = a:b, a is the same part of b that A is of M. Hence a measures b. Thus, if the cube measures the cube, its side measures the other side. [D7.20, D7.3]
+
+**Step 5.** Conversely, suppose that a measures b, and let b consist of k copies of a. From A:M = M:N = N:B = a:b, each antecedent is the same part of its consequent that a is of b. Therefore M consists of k copies of A, N of k copies of M, and B of k copies of N. [D7.20, D7.15]
+
+**Step 6.** Expanding these repeated sums, B consists of k·k·k copies of A. Hence A measures B. Therefore, if a cube number measures a cube number, its side measures the other side; and, if the side measures the side, the cube measures the cube. [D7.15, D7.3]
+
+**USED:** 7.17, 7.18, 8.7, D7.15, D7.19, D7.20, D7.3
+**Human refs (from References field):** 8.11, 8.12, 8.7, D7.20
+**Jaccard:** 0.222 — AI adds ['7.17', '7.18', 'D7.15', 'D7.19', 'D7.3']; Human adds ['8.11', '8.12']
+
+## Proposition 8.16
+**Statement:** If a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square.
+
+**Step 1.** Let A and B be square numbers with respective sides a and b, so that A = a·a and B = b·b [D7.18]. We choose the direct route through 8.14, since its two implications are precisely the contrapositives of the assertions required.
+
+**Step 2.** Suppose that A does not measure B. If a measured b, then the square A would measure the square B, by the second implication of 8.14. This contradicts the supposition. Therefore, if the square A does not measure the square B, its side a does not measure the side b [8.14].
+
+**Step 3.** Suppose that a does not measure b. If A measured B, then the side a would measure the side b, by the first implication of 8.14. This contradicts the supposition. Therefore, if the side a does not measure the side b, the square A does not measure the square B [8.14]. Both assertions are proved.
+
+**USED:** 8.14, D7.18
+**Human refs (from References field):** 8.14
+**Jaccard:** 0.500 — AI adds ['D7.18']
+
+## Proposition 8.17
+**Statement:** If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
+
+**Step 1.** Let A and B be cube numbers, and let a and b be their respective sides. We use the two implications of **8.15** by contradiction: this is the direct route because that proposition concerns precisely measurement of cubes and of their sides.
+
+**Step 2.** Suppose that A does not measure B. If a measured b, then A would measure B, by the second implication of **8.15**. This contradicts the supposition. Therefore, if a cube number does not measure a cube number, neither does its side measure the other's side.
+
+**Step 3.** Conversely, suppose that a does not measure b. If A measured B, then a would measure b, by the first implication of **8.15**. This again contradicts the supposition. Therefore, if the side does not measure the side, neither does the cube measure the cube. Both assertions are proved.
+
+**USED:** 8.15
+**Human refs (from References field):** 8.15
+**Jaccard:** 1.000 — Perfect match.
+
+## Proposition 8.18
+**Statement:** Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.
+
+**Step 1.** Let A and B be similar plane numbers, with sides a, b and c, d respectively, so that A = ab and B = cd. By the definitions of plane numbers and similar plane numbers, a:b = c:d, with a corresponding to c and b to d. [D7.16, D7.21]
+
+**Step 2.** Taking the proportion alternately gives a:c = b:d. [7.13]
+
+**Step 3.** Construct the number M = bc. By commutativity of multiplication, A = ba and M = cb. The path chosen is the direct cross-product construction: these expressions provide common multipliers, making the common-multiplier proposition 7.17 directly applicable. [D7.15, 7.16]
+
+**Step 4.** Since b multiplying a and c produces A and M respectively, A:M = a:c. Likewise, since c multiplying b and d produces M and B respectively, M:B = b:d. Both proportions follow from the fact that products obtained by the same multiplier have the ratio of the numbers multiplied. [7.17]
+
+**Step 5.** By Step 2, the two side ratios in Step 4 are equal. Therefore A:M = M:B, since ratios equal to the same ratio are equal to one another. Thus M is a mean proportional number between A and B. [5.11]
+
+**Step 6.** Since A, M, B are continuously proportional, A:B is the duplicate ratio of A:M. By Step 4, A:M = a:c, and by Step 2 this also equals b:d. Hence the plane number A has to the plane number B the ratio duplicate of that which either side has to its corresponding side. Both assertions are proved. [D5.9; Steps 2, 4–5]
+
+**USED:** 5.11, 7.13, 7.16, 7.17, D5.9, D7.15, D7.16, D7.21
+**Human refs (from References field):** 7.13, 7.17, D5.9, D7.21
+**Jaccard:** 0.500 — AI adds ['5.11', '7.16', 'D7.15', 'D7.16']
+
+## Proposition 8.19
+**Statement:** Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.
+
+**Step 1.** Let A and B be similar solid numbers, with corresponding sides a, b, c and d, e, f. Writing xy for the product obtained when x multiplies y, we have A = (ab)c and B = (de)f, and similarity gives a:d = b:e = c:f. [D7.17, D7.21]
+
+**Step 2.** Form the numbers M = (db)c and N = (de)c. These products are numbers by the definition of multiplication. We choose this direct mixed-product construction because the multiplication-ratio propositions immediately compare successive products having a common factor. [D7.15]
+
+**Step 3.** Since ab and db multiply the same number c, proposition 7.18 gives A:M = (ab):(db). Since a and d multiply the same number b, the same proposition gives (ab):(db) = a:d. Therefore A:M = a:d. [7.18, 5.11]
+
+**Step 4.** Since db and de multiply the same number c, proposition 7.18 gives M:N = (db):(de). Since the same number d multiplies b and e, proposition 7.17 gives (db):(de) = b:e. Therefore M:N = b:e. Here 7.17 is the direct choice because the multiplier is fixed, whereas 7.18 applies directly to the preceding comparisons because the multiplied number is fixed. [7.18, 7.17, 5.11]
+
+**Step 5.** Since the same number de multiplies c and f, proposition 7.17 gives N:B = c:f. [7.17]
+
+**Step 6.** The corresponding-side ratios a:d, b:e, and c:f are equal. Thus the preceding comparisons yield A:M = M:N = N:B = a:d. Hence A, M, N, B are continuously proportional, so M and N are two mean proportional numbers between A and B. [D7.21, 5.11, D7.20]
+
+**Step 7.** When four numbers are continuously proportional, the first has to the fourth the ratio triplicate of that which it has to the second. Therefore A:B is triplicate of A:M, which equals a:d and hence the ratio of any corresponding side to its corresponding side. Both assertions are proved. [D5.10]
+
+**USED:** 5.11, 7.17, 7.18, D5.10, D7.15, D7.17, D7.20, D7.21
+**Human refs (from References field):** 7.13, 7.17, 7.18, 8.18, D5.10, D7.21
+**Jaccard:** 0.400 — AI adds ['5.11', 'D7.15', 'D7.17', 'D7.20']; Human adds ['7.13', '8.18']
+
+## Proposition 8.20
+**Statement:** If one mean proportional number fall between two numbers, the numbers will be similar plane numbers.
+
+**Step 1.** Let M be a mean proportional number between A and C. Thus A:M = M:C. We must show that A and C are plane numbers with proportional sides. [Hypothesis; D7.20; D7.21]
+
+**Step 2.** Take p and q to be the least terms having the ratio A:M. Then p:q = A:M = M:C. We choose this route because least terms provide factors of both extremes directly. [7.33]
+
+**Step 3.** Since the least terms measure corresponding terms of every pair having their ratio the same number of times, let p measure A and q measure M each r times; likewise, let p measure M and q measure C each s times. Hence
+A = pr,  M = qr,  M = ps,  C = qs.
+[7.20; D7.15]
+
+**Step 4.** The two expressions for M give qr = ps. Consequently p:q = r:s, since the product of the extremes equals the product of the means. This equal-products criterion is the direct route from the factorizations to the required proportion. [CN1; 7.19]
+
+**Step 5.** Since A = pr and C = qs, A and C are plane numbers with sides p, r and q, s respectively. Their corresponding sides are proportional, since p:q = r:s. Therefore A and C are similar plane numbers, as required. [D7.16; D7.21]
+
+**USED:** 7.19, 7.20, 7.33, CN1, D7.15, D7.16, D7.20, D7.21
+**Human refs (from References field):** 7.13, 7.17, 7.20, 7.33
+**Jaccard:** 0.200 — AI adds ['7.19', 'CN1', 'D7.15', 'D7.16', 'D7.20', 'D7.21']; Human adds ['7.13', '7.17']
+
+## Proposition 8.21
+**Statement:** If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.
+
+**Step 1.** Let A and B be the given numbers, and let M and N be their two mean proportionals. Thus
+A:M = M:N = N:B.
+We must show that A and B have representations as solid numbers with proportional corresponding sides. [D7.20, D7.21]
+
+**Step 2.** Choose the least terms E and F having the ratio A:B. Such terms can be found by 7.33, and they are prime to one another by 7.22. Our path is to reduce the endpoint ratio: this supplies precisely the coprimality needed to pass from the given means to means adjoining the unit. [7.33, 7.22]
+
+**Step 3.** Since A:B = E:F, the two mean proportionals between A and B imply that two mean proportionals also fall between E and F. Since E and F are prime to one another, two mean proportionals therefore fall between each of them and the unit. [8.8, 8.9]
+
+**Step 4.** Write these latter progressions as
+E:U = U:r = r:1,
+and
+F:V = V:s = s:1.
+The first progression gives U = r·r and E = r·U = r·r·r; the second gives V = s·s and F = s·V = s·s·s. These equalities follow directly from the definition of numerical proportion and multiplication. Thus E and F are cubes. If a least term is itself the unit, its corresponding expression is simply 1 = 1·1·1. [D7.20, D7.15, D7.19]
+
+**Step 5.** The least terms E and F measure A and B respectively the same number of times. Denote this common multiplicity by k, allowing k to be the unit when the pairs coincide. Hence
+A = kE = (kr)·r·r,
+and
+B = kF = (ks)·s·s.
+The regrouping follows from multiplication as repeated addition. Accordingly, these are solid representations of A and B, with sides kr, r, r and ks, s, s respectively. [7.20, D7.15, D7.17]
+
+**Step 6.** Multiplication by the same number preserves the ratio, so kr:ks = r:s; when k is the unit this equality is immediate. Therefore the three corresponding side-ratios are equal:
+kr:ks = r:s = r:s.
+The solid numbers A and B consequently have their sides proportional, and hence are similar solid numbers, as required. [7.17, D7.21]
+
+**USED:** 7.17, 7.20, 7.22, 7.33, 8.8, 8.9, D7.15, D7.17, D7.19, D7.20, D7.21
+**Human refs (from References field):** 7.14, 7.18, 7.20, 7.21, 7.33, 8.2, 8.20, 8.3
+**Jaccard:** 0.118 — AI adds ['7.17', '7.22', '8.8', '8.9', 'D7.15', 'D7.17', 'D7.19', 'D7.20', 'D7.21']; Human adds ['7.14', '7.18', '7.21', '8.2', '8.20', '8.3']
+
+## Proposition 8.22
+**Statement:** If three numbers be in continued proportion, and the first be square, the third will also be square.
+
+**Step 1.** Let A, B, C be in continued proportion, so that A:B = B:C, and let A be square. Take its side s, so that A = s·s. (Hypothesis; D7.18.)
+
+**Step 2.** From A:B = B:C, we obtain A·C = B·B by 7.19. Therefore the square A measures the square B·B. (D7.15; D7.3; D7.18.)
+
+**Step 3.** Apply 8.14: since the square A measures the square B·B, its side s measures the side B. This is the direct square-divisibility route, chosen because the required divisibility has just been established. Write B = s·t. The multiplier t is a number, not merely the unit: otherwise B = s and B·B = A, whereas Step 2 gives B·B = A·C > A, since C is a multitude of units. (8.14; D7.3; D7.15; D7.2; CN5.)
+
+**Step 4.** Multiplication of s and t by s produces A and B respectively. Hence A:B = s:t. (7.17.)
+
+**Step 5.** Let T = t·t, which is square by D7.18. Since t·s = s·t = B by 7.16, multiplication of s and t by t produces B and T respectively. Thus B:T = s:t. (7.17.)
+
+**Step 6.** Steps 4 and 5 give A:B = B:T by 5.11. Together with the given proportion A:B = B:C, this yields B:C = B:T, again by 5.11. Therefore C = T by 5.9. Since T = t·t, C is square, as required. (D7.18.)
+
+**USED:** 5.11, 5.9, 7.16, 7.17, 7.19, 8.14, CN5, D7.15, D7.18, D7.2, D7.3
+**Human refs (from References field):** 8.20
+**Jaccard:** 0.000 — AI adds ['5.11', '5.9', '7.16', '7.17', '7.19', '8.14', 'CN5', 'D7.15', 'D7.18', 'D7.2', 'D7.3']; Human adds ['8.20']
+
+## Proposition 8.23
+**Statement:** If four numbers be in continued proportion, and the first be cube, the fourth will also be cube.
+
+**Step 1.** Let A, B, C, D be in continued proportion, so that A:B = B:C = C:D, and suppose A is a cube. Let a be its side, so A = a³. Put s = a²; then A² = a⁶ = s³, by regrouping repeated multiplication. [D7.19, D7.15]
+
+**Step 2.** From A:B = B:C, the products of the extremes and means are equal, giving AC = B². Likewise, from A:B = C:D, we obtain AD = BC. [7.19]
+
+**Step 3.** Multiplying the first equality by B and using the second, we obtain
+B³ = B(AC) = A(BC) = A(AD) = A²D = s³D.
+Here multiplying equal numbers preserves equality by repeated addition, and the products may be regrouped and their factors interchanged. [D7.15, CN2, 7.16]
+
+**Step 4.** Thus the cube s³ measures the cube B³. Consequently s measures B. We use the forward cube-divisibility implication of 8.15 because Step 3 supplies exactly its hypothesis. Write B = st, where t is the integral multiplier, possibly initially a unit. [D7.5, 8.15, D7.15]
+
+**Step 5.** Cubing B = st gives B³ = s³t³, by regrouping and interchanging the factors. Together with Step 3, this yields
+s³D = s³t³.
+[D7.15, 7.16, CN1]
+
+**Step 6.** Therefore D = t³. Indeed, if D and t³ were unequal, adding the greater to itself s³ times would give a greater result than adding the lesser to itself equally many times: the former sum would contain the latter together with a positive excess. This contradicts Step 5. [D7.15, CN2, CN5] Since D is a number, t cannot be merely a unit. Hence D is the product of three equal numbers t, and is therefore a cube, as required. [D7.2, D7.19]
+
+**USED:** 7.16, 7.19, 8.15, CN1, CN2, CN5, D7.15, D7.19, D7.2, D7.5
+**Human refs (from References field):** 8.21
+**Jaccard:** 0.000 — AI adds ['7.16', '7.19', '8.15', 'CN1', 'CN2', 'CN5', 'D7.15', 'D7.19', 'D7.2', 'D7.5']; Human adds ['8.21']
+
+## Proposition 8.24
+**Statement:** If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second will also be square.
+
+**Step 1.** Let A and B be the given numbers, with A square, and let C and D be square numbers such that A:B = C:D, as stipulated. By **8.11**, there is a mean proportional number E between C and D, so C:E = E:D. This square-specific theorem applies directly to the hypothesis, without passing through general similar plane numbers.
+
+**Step 2.** Since one mean proportional number falls between C and D, and A:B = C:D, **8.8** supplies one mean proportional number M between A and B. Thus A:M = M:B, and A, M, B are in continued proportion.
+
+**Step 3.** The first of these three numbers, A, is square by hypothesis. Therefore, by **8.22**, the third, B, is also square, as required.
+
+**USED:** 8.11, 8.22, 8.8
+**Human refs (from References field):** 8.18, 8.22, 8.8
+**Jaccard:** 0.500 — AI adds ['8.11']; Human adds ['8.18']
+
+## Proposition 8.25
+**Statement:** If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second will also be cube.
+
+**Step 1.** Let A and B be numbers such that A:B = C:D, where C and D are cube numbers, and suppose A is a cube (hypothesis). Choose the direct route through mean proportionals, since the cube-specific theorem applies immediately: by **8.12**, there are two numbers E and F such that C:E = E:F = F:D.
+
+**Step 2.** Since two mean proportional numbers fall between C and D, and A:B = C:D, two mean proportional numbers also fall between A and B, by **8.8**. Thus there are numbers X and Y such that A:X = X:Y = Y:B.
+
+**Step 3.** The four numbers A, X, Y, B are therefore in continued proportion. Since their first term A is a cube, their fourth term B is also a cube, by **8.23**. Hence the second of the given numbers is a cube, as required.
+
+**USED:** 8.12, 8.23, 8.8
+**Human refs (from References field):** 8.19, 8.23, 8.8
+**Jaccard:** 0.500 — AI adds ['8.12']; Human adds ['8.19']
+
+## Proposition 8.26
+**Statement:** Similar plane numbers have to one another the ratio which a square number has to a square number.
+
+**Step 1.** Let A and B be similar plane numbers. Choose their sides a, b and c, d respectively, so that A = ab, B = cd, and a:c = b:d. Thus a and c are corresponding sides. [D7.16, D7.21]
+
+**Step 2.** By 8.18, A:B is the duplicate ratio of a:c. This is the direct path: the duplicate-ratio assertion applies immediately to the given similarity, without requiring a separate construction of a mean proportional. [8.18]
+
+**Step 3.** Let S be the number produced by a multiplying itself, and T the number produced by c multiplying itself. Then S and T are square numbers with sides a and c respectively. [D7.18]
+
+**Step 4.** The square S has to the square T the duplicate ratio of their sides a:c. [8.11]
+
+**Step 5.** Therefore A:B and S:T are the same ratio, since both are the duplicate ratio of a:c; ratios which are the same with the same ratio are the same with one another. Hence similar plane numbers have to one another the ratio which a square number has to a square number. [5.11]
+
+**USED:** 5.11, 8.11, 8.18, D7.16, D7.18, D7.21
+**Human refs (from References field):** 7.33, 8.18, 8.2
+**Jaccard:** 0.125 — AI adds ['5.11', '8.11', 'D7.16', 'D7.18', 'D7.21']; Human adds ['7.33', '8.2']
+
+## Proposition 8.27
+**Statement:** Similar solid numbers have to one another the ratio which a cube number has to a cube number.
+
+**Step 1.** Let A and B be similar solid numbers, and let a and b be corresponding sides (D7.21). Form the cube numbers C = a³ and D = b³ (D7.19). The direct path is to compare the triplicate ratios determined by these same corresponding sides.
+
+**Step 2.** By 8.19, A:B is triplicate of a:b. Thus, in the terminology of D5.10, there are two mean proportional numbers M and N such that
+A:M = M:N = N:B = a:b.
+
+**Step 3.** Since C and D are cubes with sides a and b, 8.12 gives that C:D is likewise triplicate of a:b. Hence there are two mean proportional numbers P and Q such that
+C:P = P:Q = Q:D = a:b (D5.10).
+
+**Step 4.** Ratios equal to the same ratio are equal to one another (5.11), so
+A:M = C:P,  M:N = P:Q,  N:B = Q:D.
+Apply the numerical ex aequali theorem (7.14), chosen because both chains consist of numbers. It follows that A:B = C:D. Since C and D are cube numbers, similar solid numbers have to one another the ratio which a cube number has to a cube number.
+
+**USED:** 5.11, 7.14, 8.12, 8.19, D5.10, D7.19, D7.21
+**Human refs (from References field):** 7.33, 8.19, 8.2
+**Jaccard:** 0.111 — AI adds ['5.11', '7.14', '8.12', 'D5.10', 'D7.19', 'D7.21']; Human adds ['7.33', '8.2']

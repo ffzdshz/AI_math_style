@@ -1,0 +1,1761 @@
+{
+  "coordinator": {
+    "model": "unknown/not verified",
+    "reasoning_effort": "unknown/not verified",
+    "evidence": "caller-supplied or unknown; not inferred from proof worker"
+  },
+  "requested_worker": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "provider": "custom",
+    "endpoint": "http://127.0.0.1:11435",
+    "identity_scope": "requested; runtime evidence stored per attempt"
+  },
+  "per_proposition_execution": {
+    "13.1": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:22:28.060982+00:00",
+          "prompt_sha256": "36f1332fa6603d173cdef6519ae3aa18bc8ce6d1f0bdf5d453ab6a5370821cb6",
+          "resource_table_sha256": "8264b4f9157083e3890e19b40f8a551ad9dc87ce3114adf6533f466c2b1dcff6",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b286-e8ee-76c1-9cb7-46f976009650",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b286-e8ee-76c1-9cb7-46f976009650",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-22-28-01a1b286-e8ee-76c1-9cb7-46f976009650.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:23:30.609627+00:00",
+          "total_wall_time_seconds": 62.549
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.2": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:22:57.833476+00:00",
+          "prompt_sha256": "cec314bc4d95918e60749ab6eda5db7c26fb1e9777a66c45570c3668925ba69c",
+          "resource_table_sha256": "73921254b539c2149935cf313057f4440aba5c41da6a681806a712e6db5faeca",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b287-5d62-75a2-9b11-561a1103b558",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b287-5d62-75a2-9b11-561a1103b558",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-22-58-01a1b287-5d62-75a2-9b11-561a1103b558.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:23:48.609936+00:00",
+          "total_wall_time_seconds": 50.776
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.3": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:23:27.816017+00:00",
+          "prompt_sha256": "e59a7d38cdeb2fdce21c9907f2bff1b65099dc74f20432b2bedaba01ca2a2d94",
+          "resource_table_sha256": "b8b93b408f50e1cc6ba2111f0385dca47a56f7daaf000ec9a1f11ae20bdbefe4",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b287-d25f-7fc1-b696-ba4f3fbe323c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b287-d25f-7fc1-b696-ba4f3fbe323c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-23-28-01a1b287-d25f-7fc1-b696-ba4f3fbe323c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:24:12.223850+00:00",
+          "total_wall_time_seconds": 44.408
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.4": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:23:57.811457+00:00",
+          "prompt_sha256": "7eb6f8905719e14fb7432cc4f6955d395766a5eb32001e881cb599d4d78c1614",
+          "resource_table_sha256": "bc1254868e3ba626b9124387d5d6cd8bcf42c1940231e997b13df1341f9a374f",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b288-47d0-76a1-87e9-a02d6dc71098",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b288-47d0-76a1-87e9-a02d6dc71098",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-23-58-01a1b288-47d0-76a1-87e9-a02d6dc71098.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:24:32.997450+00:00",
+          "total_wall_time_seconds": 35.186
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.5": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:24:27.831011+00:00",
+          "prompt_sha256": "09495e6aeea4014292df51d85655619d481cc439dd9e2e51d559066befe84d67",
+          "resource_table_sha256": "4a613f89d6dcc308605a6b12d7e92d1d7579616af50d17f512e0fa660a4784c8",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b288-bcbf-7451-af4c-359e6d3326da",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b288-bcbf-7451-af4c-359e6d3326da",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-24-28-01a1b288-bcbf-7451-af4c-359e6d3326da.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:25:17.603674+00:00",
+          "total_wall_time_seconds": 49.773
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.6": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:24:57.820271+00:00",
+          "prompt_sha256": "24012b4449d7e345e3723ddc8066c1c1048ead3e84990f1a23358326c971c16e",
+          "resource_table_sha256": "470992b90cf1571e67f4d23c2a3293b45316a0ae303ceea00fccf4af1950a693",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b289-31ec-77f3-ba39-d9721f25d750",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b289-31ec-77f3-ba39-d9721f25d750",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-24-58-01a1b289-31ec-77f3-ba39-d9721f25d750.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:26:25.540589+00:00",
+          "total_wall_time_seconds": 87.72
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.7": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:25:27.824788+00:00",
+          "prompt_sha256": "5446df795bd6d4fe4a031acc00a57b1cd27ee7d1929c599bd836f87146d33398",
+          "resource_table_sha256": "74865686ec2bfe8916ed44968e4d8e2fe78f9232f883f042ca5d3bfa513bdfe9",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b289-a72c-72c1-b737-53cd0f0ea283",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b289-a72c-72c1-b737-53cd0f0ea283",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-25-28-01a1b289-a72c-72c1-b737-53cd0f0ea283.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:32:17.582913+00:00",
+          "total_wall_time_seconds": 409.758
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.8": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:25:57.843885+00:00",
+          "prompt_sha256": "07f45a2f248891bf44f143c9f257ba955ba406a6d593dc52a48c997d7797220e",
+          "resource_table_sha256": "ea98bae4bd325f43856fdc7d0659de3a8e5a6720e9769ed97407387562691770",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28a-1c80-76e0-9d03-05e526f9c140",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28a-1c80-76e0-9d03-05e526f9c140",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-25-58-01a1b28a-1c80-76e0-9d03-05e526f9c140.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:28:22.154529+00:00",
+          "total_wall_time_seconds": 144.311
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.9": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:26:27.842885+00:00",
+          "prompt_sha256": "8581a4b4a150a2423af1080c92319bf4af5b513bc048c03c6a44e570aaa63ea5",
+          "resource_table_sha256": "305f56eefe0aedd1c9070d44aa6470e60f36212dae63ec93820be91d48cc3836",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28a-919f-71c1-b687-db4de07bd41e",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28a-919f-71c1-b687-db4de07bd41e",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-26-28-01a1b28a-919f-71c1-b687-db4de07bd41e.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:28:26.241924+00:00",
+          "total_wall_time_seconds": 118.399
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.10": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:26:57.838671+00:00",
+          "prompt_sha256": "8399cd992f510b5059fe101983394cd0b2f250d843941ffd8a67cd3f96d11a09",
+          "resource_table_sha256": "5437d18de7cd79f4bf4efe660954f9fd3c53f158039982fb580e056715149bee",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28b-06e9-7aa0-bc2e-3f848cf5c9ed",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28b-06e9-7aa0-bc2e-3f848cf5c9ed",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-26-58-01a1b28b-06e9-7aa0-bc2e-3f848cf5c9ed.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:31:24.795909+00:00",
+          "total_wall_time_seconds": 266.957
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.11": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:28:22.334455+00:00",
+          "prompt_sha256": "9f7e0d86eb32fe81e8c918ef4d8135c2c6b812f2b9d6409a82398d48ae1f025f",
+          "resource_table_sha256": "ac9c59c5b832c345ee4b48bf17219ed8e474e82990d196d5d454956ecc15c297",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28c-50c3-7bb2-9d1f-4467cb2234e3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28c-50c3-7bb2-9d1f-4467cb2234e3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 16,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-28-22-01a1b28c-50c3-7bb2-9d1f-4467cb2234e3.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:31:04.760997+00:00",
+          "total_wall_time_seconds": 162.427
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.12": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:28:52.351519+00:00",
+          "prompt_sha256": "86e43e30abaf69fc31169250aea53d9dc24bdf9c29fab380ec90c46ff573dea5",
+          "resource_table_sha256": "44d9a247c26b9d6795e66e561c9fa3f2d14af747de0b9beda8d2fd21a9212b9b",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28c-c61f-7632-a664-3a83e67ec484",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28c-c61f-7632-a664-3a83e67ec484",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-28-52-01a1b28c-c61f-7632-a664-3a83e67ec484.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:30:37.843859+00:00",
+          "total_wall_time_seconds": 105.492
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.13": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:30:38.033106+00:00",
+          "prompt_sha256": "02849fdde1803fd627de69af8f5dafae4b241b3762f08cd6720c584749b48a96",
+          "resource_table_sha256": "6902252a1539dedca1dd517ac0ddeaa408fc1f09d09b085136acb0b41d83b82a",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28e-62e7-77b3-a6d8-33062caf7368",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28e-62e7-77b3-a6d8-33062caf7368",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 9,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-30-38-01a1b28e-62e7-77b3-a6d8-33062caf7368.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:33:45.360505+00:00",
+          "total_wall_time_seconds": 187.327
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.14": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:31:08.011385+00:00",
+          "prompt_sha256": "6771f3906e6017b2c67cb71fb498e75fa16ecdc12cf82dcb1249635b3265f623",
+          "resource_table_sha256": "5c3a86731a907a2f791a087e2761f49ea4a46d155e774f42ee7dd55f9a34ef1a",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28e-d7fd-7281-b909-abdd484d3433",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28e-d7fd-7281-b909-abdd484d3433",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-31-08-01a1b28e-d7fd-7281-b909-abdd484d3433.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:33:32.269615+00:00",
+          "total_wall_time_seconds": 144.258
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.15": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:31:38.016126+00:00",
+          "prompt_sha256": "ee6bf7ce71288735595f26563ee13f67790b47b89d9894999977bb28664c4e24",
+          "resource_table_sha256": "32e48ac6039acb7c899d0fa7439e57c3294ebce70fd348a850d24062811f86c2",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28f-4d25-7e93-8e48-9a8ad45c6f23",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28f-4d25-7e93-8e48-9a8ad45c6f23",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-31-38-01a1b28f-4d25-7e93-8e48-9a8ad45c6f23.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:35:13.971287+00:00",
+          "total_wall_time_seconds": 215.955
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.16": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:32:17.744500+00:00",
+          "prompt_sha256": "638d63f55ff151201d3c325bf94fdc933bc965d2ee8f4d8ece4765d992bb895f",
+          "resource_table_sha256": "17890b4f4d87c1564f06fca46407852b612fdae08fc8695a8e8418caa06a9dd0",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b28f-e8a6-76b2-b534-06b29508e6fc",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b28f-e8a6-76b2-b534-06b29508e6fc",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 12,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-32-18-01a1b28f-e8a6-76b2-b534-06b29508e6fc.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:36:51.146033+00:00",
+          "total_wall_time_seconds": 273.402
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.17": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:33:32.471608+00:00",
+          "prompt_sha256": "3a072375e3ae7b353caffbc56a0934fd0feda395fc6b3d12462b091385a0a5b4",
+          "resource_table_sha256": "fd446a917466e5a04b278706be747b51020233d4e99ebdff1412fa1a8e67a932",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b291-0ccb-7f43-8b03-64eaaa5b885f",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b291-0ccb-7f43-8b03-64eaaa5b885f",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 10,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-33-32-01a1b291-0ccb-7f43-8b03-64eaaa5b885f.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:39:30.050675+00:00",
+          "total_wall_time_seconds": 357.579
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "13.18": [
+      {
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T20:34:02.432600+00:00",
+          "prompt_sha256": "164da61c75f220f6d3bf3136b54cee66ed0f17488b03e6445654d74e8b42d0fb",
+          "resource_table_sha256": "61620ac84b2300fdc530c5877da37eaba3669e49edc1b9e8ba2219d19c042857",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b291-8137-70e1-bdae-b345b34e0ffa",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b291-8137-70e1-bdae-b345b34e0ffa",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 12,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T20-34-02-01a1b291-8137-70e1-bdae-b345b34e0ffa.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T20:41:20.375863+00:00",
+          "total_wall_time_seconds": 437.943
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "comparison": {
+    "completed_at": "2026-11-06T20:41:20.390291+00:00",
+    "human_source": "/data/WYC/mathProofV2/euclid-proof-project-reverse-table/data/euclid_human_refs.json",
+    "human_sha256": "0ab95bb06bad41f3b9081a7b28dab9d04076f081c969c2ce80c166564ec00646",
+    "mean_jaccard_legacy_rounded": 0.1776111111111111,
+    "perfect_matches": 0,
+    "proposition_count": 18,
+    "unresolved_ordering": {},
+    "mathematical_validity": "not assessed; outside the proof-generation workflow scope",
+    "partial_run": false,
+    "outputs": [
+      "/data/WYC/mathProofV2/euclid-proof-project-reverse-table/outputs/RunA_Book13_StepByStep_Proofs.md",
+      "/data/WYC/mathProofV2/euclid-proof-project-reverse-table/outputs/RunA_Book13_AI_vs_Human_Citations.csv",
+      "/data/WYC/mathProofV2/euclid-proof-project-reverse-table/outputs/RunA_Book13_Execution_Metadata.json",
+      "/data/WYC/mathProofV2/euclid-proof-project-reverse-table/proofs/RunA_Book13"
+    ]
+  }
+}

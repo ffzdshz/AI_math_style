@@ -1,0 +1,141 @@
+{
+  "format_version": 1,
+  "status": "complete",
+  "started_at": "2026-11-05T14:09:20.783419+00:00",
+  "book": 6,
+  "run_id": "A",
+  "output_prefix": "RunA_Book6",
+  "selected_ids": [
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4",
+    "6.5",
+    "6.6",
+    "6.7",
+    "6.8",
+    "6.9",
+    "6.10",
+    "6.11",
+    "6.12",
+    "6.13",
+    "6.14",
+    "6.15",
+    "6.16",
+    "6.17",
+    "6.18",
+    "6.19",
+    "6.20",
+    "6.21",
+    "6.22",
+    "6.23",
+    "6.24",
+    "6.25",
+    "6.26",
+    "6.27",
+    "6.28",
+    "6.29",
+    "6.30",
+    "6.31",
+    "6.32",
+    "6.33"
+  ],
+  "partial_run": false,
+  "expected_full_book_count": 33,
+  "context_mode": "shuffled-table",
+  "prompt_protocol_version": "shuffled-table-v2-minimal-access-instruction",
+  "experiment_variant": "shuffled-table",
+  "shuffle_seed": "10d43d90a56b8834547e38ffd49035a8",
+  "statements_xlsx_sha256": "4840a1b0404ddb807fa948c06f46310ca55dca91bbb262575d98485d7c125513",
+  "worker_model_catalog_sha256": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+  "runtime_sources_sha256": {
+    "scripts/euclid_core.py": "ed602670db2c655c3865e5fff39655bd38f6c57fe423f488058cb17506883cc0",
+    "scripts/codex_worker.py": "21e9512042d1f99b657e01eae01ed2d23802cb1718bb728e7b2b0c1c65ea2505",
+    "scripts/resource_tables.py": "bae535d3a7a83c9f45f0bb6782ba6370583381591a221b667096225a4fbd4c49",
+    "scripts/table_reader.py": "40eb464fb1ee611887c2a6e1075712e6c4cc51dcf079a1b341106b19ebd80058",
+    "scripts/table_mcp_server.py": "7a888a382d7db99b0f105851e43b8ca19dd5d74bda3477edd86f1597f1faa1d2",
+    "scripts/run_book_codex.py": "986c1052183843b69a50f2aa7beacf8abc0969dff5256c668dd6d0292add503c",
+    "scripts/execution_gate.py": "d544ffd54d33af4920cfcf442ddcfa0cb724d9dc7a22b138bd42041d1b1ff92a",
+    "scripts/proxy_health_gate.py": "cf595123099f158ab1d6ee4920e1fbcfc7f880de529bca81d871f5a42e76cec1",
+    "schemas/worker_model_catalog.json": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+    "schemas/proof_result.schema.json": "4b06fab8ec009f0244168b3372470d15f201672225a7693beea476affe129c53"
+  },
+  "resource_policy": "all foundations and strictly preceding theorems, individually shuffled XLSX",
+  "information_budget_change": "earlier-book statements now accessible in the table, unlike legacy ID-only prompts",
+  "worker": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "provider": "custom",
+    "endpoint": "http://127.0.0.1:11435",
+    "identity_scope": "requested; runtime evidence stored per attempt"
+  },
+  "coordinator": {
+    "model": "unknown/not verified",
+    "reasoning_effort": "unknown/not verified",
+    "evidence": "caller-supplied or unknown; not inferred from proof worker"
+  },
+  "original_files_sha256": {
+    "CLAUDE.md": "3a98d42d6584325326935c3c0a87e0b3fa5538de3e218edfc7fece842425014e",
+    "SKILL.md": "5f25e09eef738d4be62ac5cc2da5b955bb27d9e21cd4ab27c93f1080ecc20277",
+    "euclid_prove_book.js": "0f59182300843033d7d5e7cbc8675f888f9961b08fa4581133b69e1dfeacf7ff",
+    "generate_workflow.py": "b01c77127d8b39a378c14adc377d877ee587d8b070bdd849656cb05a82ca285f",
+    "euclid_postprocess.py": "3e489f4cdb6a9266f26d1eb8cbc9a968612a02d6fcda0107039cfe08c2ef0699"
+  },
+  "statements_sha256": "9b7fb3a8d79ba0c9c51d419f45736f597270fcae3ae1715890152e836bfe8b8e",
+  "max_workers": 4,
+  "max_ordering_retries": 3,
+  "timeout_seconds": 1800.0,
+  "cli_version": "codex-cli 0.166.0",
+  "protocol_changes": [
+    "safe-context filesystem isolation",
+    "no silent missing results",
+    "structural output validation",
+    "execution metadata sidecar",
+    "resource statements only in individually shuffled XLSX",
+    "one read-only local table MCP tool; shell/web disabled",
+    "retain CLI session JSONL and table-call input/output logs"
+  ],
+  "error": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+  "updated_at": "2026-11-05T15:51:53.200039+00:00",
+  "execution_recoveries": [
+    {
+      "episode": 1,
+      "started_at": "2026-11-05T14:55:53.499726+00:00",
+      "reason": "TimeoutExpired: Command '['/usr/bin/bwrap', '--die-with-parent', '--new-session', '--unshare-pid', '--unshare-ipc', '--unshare-uts', '--tmpfs', '/', '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin', '--symlink', 'usr/sbin', '/sbin', '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib64', '/lib64', '--proc', '/proc', '--dev', '/dev', '--tmpfs', '/tmp', '--dir', '/etc', '--dir', '/opt', '--ro-bind', '/home/wuyangcheng/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex', '/opt/codex', '--ro-bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book6/stage2_context/6.23/attempt0', '/proof', '--bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book6/raw/6.23_attempt0', '/out', '--bind', '/tmp/euclid-private-mfx23agw/home', '/codex-home', '--setenv', 'HOME', '/codex-home', '--setenv', 'CODEX_HOME', '/codex-home', '--setenv', 'PATH', '/usr/bin:/bin', '--chdir', '/proof', '--ro-bind', '/etc/resolv.conf', '/etc/resolv.conf', '--ro-bind', '/etc/hosts', '/etc/hosts', '--ro-bind', '/etc/nsswitch.conf', '/etc/nsswitch.conf', '--ro-bind', '/etc/ssl', '/etc/ssl', '--ro-bind', '/etc/ca-certificates', '/etc/ca-certificates', '--', '/opt/codex', 'exec', '--skip-git-repo-check', '--ignore-rules', '-C', '/proof', '--sandbox', 'read-only', '-m', 'gpt-6-astra', '-c', 'model_reasoning_effort=\"xhigh\"', '--output-schema', '/proof/proof_result.schema.json', '--output-last-message', '/out/result.json', '--color', 'never', '--json', '-']' timed out after 1799.9999407520518 seconds",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 2,
+      "started_at": "2026-11-05T15:31:55.674294+00:00",
+      "reason": "TimeoutExpired: Command '['/usr/bin/bwrap', '--die-with-parent', '--new-session', '--unshare-pid', '--unshare-ipc', '--unshare-uts', '--tmpfs', '/', '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin', '--symlink', 'usr/sbin', '/sbin', '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib64', '/lib64', '--proc', '/proc', '--dev', '/dev', '--tmpfs', '/tmp', '--dir', '/etc', '--dir', '/opt', '--ro-bind', '/home/wuyangcheng/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex', '/opt/codex', '--ro-bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book6/stage2_context/6.25/attempt1', '/proof', '--bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book6/raw/6.25_attempt1', '/out', '--bind', '/tmp/euclid-private-9_7a20_o/home', '/codex-home', '--setenv', 'HOME', '/codex-home', '--setenv', 'CODEX_HOME', '/codex-home', '--setenv', 'PATH', '/usr/bin:/bin', '--chdir', '/proof', '--ro-bind', '/etc/resolv.conf', '/etc/resolv.conf', '--ro-bind', '/etc/hosts', '/etc/hosts', '--ro-bind', '/etc/nsswitch.conf', '/etc/nsswitch.conf', '--ro-bind', '/etc/ssl', '/etc/ssl', '--ro-bind', '/etc/ca-certificates', '/etc/ca-certificates', '--', '/opt/codex', 'exec', '--skip-git-repo-check', '--ignore-rules', '-C', '/proof', '--sandbox', 'read-only', '-m', 'gpt-6-astra', '-c', 'model_reasoning_effort=\"xhigh\"', '--output-schema', '/proof/proof_result.schema.json', '--output-last-message', '/out/result.json', '--color', 'never', '--json', '-']' timed out after 1799.9999143781606 seconds",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 3,
+      "started_at": "2026-11-05T15:44:16.474045+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    }
+  ],
+  "independent_results_frozen_at": "2026-11-05T15:51:53.191092+00:00",
+  "frozen_results_sha256": "1fd2f68d6920e8b7b7c5060e9b82ea0ba0a8763a38d2dcff61d01e77839c40f7",
+  "frozen_audit_sha256": "7cecc88d6f1c4ed4bf13af20248ed4e3d822a0144261388834d602a2b230ee76",
+  "heath_load_started_at": "2026-11-05T15:51:53.194790+00:00",
+  "comparison": {
+    "completed_at": "2026-11-05T15:51:53.197341+00:00",
+    "human_source": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/data/euclid_human_refs.json",
+    "human_sha256": "0ab95bb06bad41f3b9081a7b28dab9d04076f081c969c2ce80c166564ec00646",
+    "mean_jaccard_legacy_rounded": 0.3562727272727272,
+    "perfect_matches": 0,
+    "proposition_count": 33,
+    "unresolved_ordering": {},
+    "mathematical_validity": "not assessed; outside the proof-generation workflow scope",
+    "partial_run": false,
+    "outputs": [
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book6_StepByStep_Proofs.md",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book6_AI_vs_Human_Citations.csv",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book6_Execution_Metadata.json",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/proofs/RunA_Book6"
+    ]
+  }
+}

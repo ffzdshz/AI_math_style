@@ -1,0 +1,529 @@
+[
+  {
+    "prop_id": "6.1",
+    "proof": "**Step 1.** Place the figures of the given height between two parallel straight lines ℓ and h, their bases lying on ℓ and their opposite vertices or sides on h. Such placement does not change their magnitudes. Let T and U be any two triangles so placed, with bases b and c. We shall establish their ratio directly by the equimultiple criterion, without assuming that their bases are commensurable. [CN4, D5.5]\n\n**Step 2.** Choose a point O on ℓ and a point A on h. Let m and n be arbitrary positive whole numbers. Starting at O along the same ray of ℓ, lay off m consecutive segments each equal to b, ending at X; independently, lay off n consecutive segments each equal to c, ending at Y. Produce the line and cut off the required segments successively, and join A to all their endpoints. Thus OX = mb and OY = nc. [P2, 1.3, P1]\n\n**Step 3.** Each of the m triangles formed over the successive copies of b is equal to T: its base equals b, and it lies between the same parallels ℓ and h. Likewise, each of the n triangles formed over the copies of c is equal to U. Proposition 1.38 is the natural equal-base result here, since the copied bases need not be the identical segment. The first collection partitions triangle AOX, and the second partitions triangle AOY. Adding equals therefore gives\n[AOX] = mT and [AOY] = nU,\nwhere brackets denote the magnitude of a triangle. [1.38, CN2]\n\n**Step 4.** Because OX and OY lie on the same ray:\n• If mb > nc, then Y lies strictly between O and X. Triangle AOY is a proper part of triangle AOX, so mT > nU.\n• If mb = nc, then X and Y coincide, and the triangles coincide, so mT = nU.\n• If mb < nc, then X lies strictly between O and Y. Triangle AOX is a proper part of triangle AOY, so mT < nU.\nThus the corresponding multiples of the triangles and their bases always have the same comparison. [CN5, CN4]\n\n**Step 5.** Since m and n were arbitrary, any equimultiples of T and b alike exceed, equal, or fall short of the corresponding equimultiples of U and c. By the definition of equality of ratios,\nT : U = b : c.\nThis proves the assertion for triangles. [D5.5]\n\n**Step 6.** Now let P and Q be parallelograms of the same height, with bases b and c. On each base form a triangle by joining its endpoints to a vertex on the opposite side of its parallelogram. Call these triangles T and U. Each triangle has the same base and lies between the same parallels as its parallelogram. Consequently,\nP = 2T and Q = 2U. [P1, 1.41]\n\n**Step 7.** Parts have the same ratio as equal multiples of them taken in corresponding order; hence P : Q = T : U. By Step 5, T : U = b : c, and therefore P : Q = b : c. Thus triangles, and likewise parallelograms, which are under the same height are to one another as their bases. [5.15, 5.11]",
+    "used": [
+      "CN4",
+      "D5.5",
+      "P2",
+      "1.3",
+      "P1",
+      "1.38",
+      "CN2",
+      "CN5",
+      "1.41",
+      "5.15",
+      "5.11"
+    ],
+    "statement": "Triangles and parallelograms which are under the same height are to one another as their bases."
+  },
+  {
+    "prop_id": "6.2",
+    "proof": "**Step 1.** Let ABC be a triangle, with D in the interior of AB and E in the interior of AC. Join DE, BE, and CD. Write [XYZ] for the area of triangle XYZ. We shall prove that DE is parallel to BC if and only if AD:DB = AE:EC. [P1]\n\n**Step 2.** Use the direct area route, since the divided segments are bases of triangles of the same height. Triangles ADE and BDE have their bases AD and DB on AB and the common vertex E; triangles ADE and CDE have their bases AE and EC on AC and the common vertex D. Hence\nAD:DB = [ADE]:[BDE],\nand\nAE:EC = [ADE]:[CDE]. [6.1]\n\n**Step 3.** First suppose DE is parallel to BC. Triangles BDE and CDE stand on the same base DE and lie between the same parallels DE and BC. Therefore [BDE] = [CDE]. [1.37]\n\n**Step 4.** The same magnitude has the same ratio to equal magnitudes, so\n[ADE]:[BDE] = [ADE]:[CDE].\nCombining this with Step 2, by equality of ratios, gives AD:DB = AE:EC. Thus the parallel cuts the two sides proportionally. [5.7, 5.11]\n\n**Step 5.** Conversely, suppose AD:DB = AE:EC. The two identities in Step 2 and equality of ratios give\n[ADE]:[BDE] = [ADE]:[CDE]. [5.11]\n\n**Step 6.** Magnitudes to which the same magnitude has the same ratio are equal. Consequently [BDE] = [CDE]. [5.9]\n\n**Step 7.** Because D and E are interior points of AB and AC, B and C lie on the same side of DE. Thus the equal triangles BDE and CDE stand on the same base DE and on the same side of it. Apply the direct converse for such triangles, rather than constructing an auxiliary parallel: they lie in the same parallels. Their opposite vertices B and C therefore lie on a straight line parallel to DE; that line is BC. Hence DE is parallel to BC. Both assertions are proved. [1.39]",
+    "used": [
+      "P1",
+      "6.1",
+      "1.37",
+      "5.7",
+      "5.11",
+      "5.9",
+      "1.39"
+    ],
+    "statement": "If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the line joining the points of section will be parallel to the remaining side of the triangle."
+  },
+  {
+    "prop_id": "6.3",
+    "proof": "**Step 1.** Let ABC be a triangle, and let D lie between B and C on its base. Join AD. We shall prove that AD bisects ∠BAC if and only if BD:DC = AB:AC. [P1]\n\n**Step 2.** Through C draw CE parallel to AD, meeting BA produced beyond A at E. This auxiliary parallel is chosen because 6.2 directly relates the base segments to the segments on BE. [1.31, P2]\n\n**Step 3.** In triangle BCE, the line AD is parallel to CE. Therefore\nBD:DC = BA:AE.\nAlso, the parallels AD and CE give\n∠BAD = ∠AEC and ∠DAC = ∠ACE,\nby the equality of corresponding and alternate angles, respectively. [6.2, 1.29]\n\n**Step 4.** First suppose that AD bisects ∠BAC, so that ∠BAD = ∠DAC. The angle equalities in Step 3 then give ∠AEC = ∠ACE. Hence, in triangle ACE, the sides opposite these equal angles are equal: AC = AE. [CN1, 1.6]\n\n**Step 5.** Since AE = AC, the same magnitude BA has the same ratio to each: BA:AE = BA:AC. Combining this with Step 3 gives\nBD:DC = BA:AC = AB:AC.\nThus the segments of the base have the same ratio as the remaining sides. [5.7, 5.11]\n\n**Step 6.** Conversely, suppose that BD:DC = AB:AC. Step 3 also gives BD:DC = BA:AE; consequently BA:AE = BA:AC. Magnitudes to which the same magnitude has the same ratio are equal, so AE = AC. [5.11, 5.9]\n\n**Step 7.** Triangle ACE is therefore isosceles, and ∠AEC = ∠ACE. Using the angle equalities from Step 3, we obtain ∠BAD = ∠DAC. Thus AD bisects ∠BAC. Both directions of the proposition are proved. [1.5, CN1]",
+    "used": [
+      "P1",
+      "1.31",
+      "P2",
+      "6.2",
+      "1.29",
+      "CN1",
+      "1.6",
+      "5.7",
+      "5.11",
+      "5.9",
+      "1.5"
+    ],
+    "statement": "If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the straight line joined from the vertex to the point of section will bisect the angle of the triangle."
+  },
+  {
+    "prop_id": "6.4",
+    "proof": "**Step 1.** Let the equiangular triangles be ABC and DCE, with ∠BAC = ∠CDE, ∠ABC = ∠DCE, and ∠BCA = ∠CED. Place their bases consecutively on one straight line, with B, C, E in that order, and their vertices A and D on the same side. This placement preserves the triangles’ magnitudes. We use this adjoining-base arrangement so that VI.2 applies directly to divided sides. [P2, CN4]\n\n**Step 2.** Since ∠ABC = ∠DCE, BA is parallel to CD. Since ∠BCA = ∠CED, AC is parallel to ED. Here I.28 is the direct parallelism criterion: the given equalities are equalities of corresponding exterior and interior angles on the straight line BCE. [1.28]\n\n**Step 3.** In triangle ABC, ∠ABC + ∠BCA is less than two right angles. Hence ∠ABC + ∠CED is also less than two right angles. Therefore BA and ED, produced toward A and D, meet at G on the side of BCE containing the triangles. With the parallels established in Step 2 and C between B and E, A lies between B and G, and D between E and G. [1.32, CN5, P2, P5]\n\n**Step 4.** The quadrilateral ACDG is a parallelogram: AC is parallel to DG, and CD is parallel to AG. Its opposite sides are therefore equal:\nAG = CD and DG = AC. [1.34]\n\n**Step 5.** In triangle BGE, AC is parallel to GE. Thus\nBA:AG = BC:CE.\nReplacing AG by its equal CD gives\nAB:CD = BC:CE.\nAlternately,\nAB:BC = CD:CE.\nThis is the required proportion about the equal angles ABC and DCE. [6.2, 5.7, 5.11, 5.16]\n\n**Step 6.** In triangle EGB, DC is parallel to GB. Thus\nED:DG = EC:CB.\nAlternately,\nED:EC = DG:CB.\nReplacing DG by AC and reversing the equality gives\nAC:BC = DE:CE.\nThis is the required proportion about the equal angles BCA and CED. Alternating this last proportion also gives\nAC:DE = BC:CE. [6.2, 5.16, 5.7, 5.11]\n\n**Step 7.** Step 5 gives AB:CD = BC:CE, and Step 6 gives AC:DE = BC:CE. Ratios equal to the same ratio are equal; hence\nAB:CD = AC:DE.\nAlternately,\nAB:AC = CD:DE,\nwhich is the required proportion about the equal angles BAC and CDE. Together with Steps 5 and 6, this proves proportionality about every pair of equal angles. The corresponding sides are AB and CD, BC and CE, and AC and DE; these respectively subtend the equal angles at C and E, A and D, and B and C. Therefore, in equiangular triangles the sides about the equal angles are proportional, and corresponding sides subtend equal angles. [5.11, 5.16]",
+    "used": [
+      "P2",
+      "CN4",
+      "1.28",
+      "1.32",
+      "CN5",
+      "P5",
+      "1.34",
+      "6.2",
+      "5.7",
+      "5.11",
+      "5.16"
+    ],
+    "statement": "In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles."
+  },
+  {
+    "prop_id": "6.5",
+    "proof": "**Step 1.** Let triangles ABC and DEF have their corresponding sides AB, BC, CA and DE, EF, FD proportional. Thus, by hypothesis,\nAB:BC = DE:EF and BC:CA = EF:FD.\nWe will construct an auxiliary triangle equiangular with ABC on the side DE, use the forward implication in 6.4, and then compare equal sides by 1.8.\n\n**Step 2.** On the same side of DE as F, construct at D an angle equal to ∠BAC and at E an angle equal to ∠ABC [1.23]. These two angles together are less than two right angles [1.17]. Therefore their other arms meet on that side of DE at a point G [P5]. Hence\n∠GDE = ∠BAC and ∠DEG = ∠ABC.\n\n**Step 3.** The angles of each of triangles DEG and ABC sum to two right angles [1.32]. Subtracting the two respective equal angles gives\n∠DGE = ∠ACB [CN3].\nThus triangles DEG and ABC are equiangular.\n\n**Step 4.** Apply 6.4, the natural forward-direction result for this equiangular pair. Corresponding sides are proportional, so\nDE:EG = AB:BC and EG:GD = BC:CA [6.4].\nComparing these ratios with the hypothesized ratios yields\nDE:EG = DE:EF and EG:GD = EF:FD [5.11].\n\n**Step 5.** Since DE has the same ratio to EG and EF, we have EG = EF [5.9]. Substituting this equality into the second ratio equality gives\nEF:GD = EF:FD.\nTherefore GD = FD, again by 5.9.\n\n**Step 6.** Triangles DEG and DEF now have DE common, EG = EF, and GD = FD. Applying 1.8 with each corresponding pair of sides as the two sides containing the angle gives\n∠GDE = ∠FDE,\n∠DEG = ∠DEF,\nand ∠DGE = ∠DFE [1.8].\nThis side-equality comparison is appropriate because all three corresponding sides have been established equal.\n\n**Step 7.** Combining these equalities with Steps 2–3 gives\n∠BAC = ∠FDE,\n∠ABC = ∠DEF,\nand ∠ACB = ∠DFE [CN1].\nConsequently the original triangles are equiangular: the angles opposite BC and EF are equal, those opposite CA and FD are equal, and those opposite AB and DE are equal. Thus equal angles are precisely those subtended by corresponding sides, as required.",
+    "used": [
+      "1.23",
+      "1.17",
+      "P5",
+      "1.32",
+      "CN3",
+      "6.4",
+      "5.11",
+      "5.9",
+      "1.8",
+      "CN1"
+    ],
+    "statement": "If two triangles have their sides proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend."
+  },
+  {
+    "prop_id": "6.6",
+    "proof": "**Step 1.** Let ABC and DEF be triangles such that ∠BAC = ∠EDF and AB:AC = DE:DF. At E, on ED, construct a ray in the half-plane containing F which makes with ED an angle equal to ∠ABC. [1.23]\n\n**Step 2.** The angles ∠BAC and ∠ABC together are less than two right angles, since the three angles of triangle ABC equal two right angles and the whole is greater than its part. Thus the interior angles made by DE with the constructed ray and with DF are together less than two right angles. These rays therefore meet on the side of DE containing F; call their intersection G. Consequently ∠EDG = ∠BAC and ∠DEG = ∠ABC. [1.32, CN5, P5]\n\n**Step 3.** The angle sums of triangles ABC and DEG each equal two right angles. Subtracting their respective equal angles gives ∠DGE = ∠ACB, so these triangles are equiangular. The direct route is now to apply the proportionality theorem for equiangular triangles, since it immediately supplies the needed comparison:\nAB:AC = DE:DG. [1.32, CN3, 6.4]\n\n**Step 4.** By hypothesis AB:AC = DE:DF, while Step 3 gives AB:AC = DE:DG. Ratios equal to the same ratio are equal to one another; hence DE:DG = DE:DF. Magnitudes to which the same magnitude has the same ratio are equal, so DG = DF. [5.11, 5.9]\n\n**Step 5.** In triangles DEG and DEF, DE is common, DG = DF, and ∠EDG = ∠EDF because DG and DF lie on the same ray. By side–angle–side, ∠DEG = ∠DEF and ∠DGE = ∠DFE. Combining these equalities with those already established gives ∠ABC = ∠DEF and ∠ACB = ∠DFE. Together with the given ∠BAC = ∠EDF, this proves that ABC and DEF are equiangular. Their equal angles are precisely those subtended by the corresponding sides: BC and EF, AC and DF, and AB and DE, respectively. [1.4, CN1]",
+    "used": [
+      "1.23",
+      "1.32",
+      "CN5",
+      "P5",
+      "CN3",
+      "6.4",
+      "5.11",
+      "5.9",
+      "1.4",
+      "CN1"
+    ],
+    "statement": "If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the corresponding sides subtend."
+  },
+  {
+    "prop_id": "6.7",
+    "proof": "**Step 1.** Let ABC and DEF satisfy ∠BAC = ∠EDF and AB:BC = DE:EF, with ∠BCA and ∠EFD either both less than a right angle or both not less than a right angle. Suppose ∠ABC and ∠DEF are unequal. Interchanging the triangles if necessary, assume ∠ABC > ∠DEF. Construct inside ∠ABC the ray BG such that ∠ABG = ∠DEF, meeting AC at G. Since the constructed angle is strictly between zero and ∠ABC, G lies between A and C. [1.23]\n\n**Step 2.** In triangles ABG and DEF, ∠BAG = ∠EDF and ∠ABG = ∠DEF. Their angle sums are each two right angles; adding the equal pairs and subtracting them from these equal sums gives ∠AGB = ∠EFD. Thus these triangles are equiangular. [1.32, CN2, CN3]\n\n**Step 3.** Use the equiangular-triangle route, since the auxiliary triangles’ angles are already known to be equal. Their corresponding sides satisfy AB:BG = DE:EF. Together with the given AB:BC = DE:EF, this yields AB:BG = AB:BC, and consequently BG = BC. [6.4, 5.11, 5.9]\n\n**Step 4.** Triangle BGC is therefore isosceles, so ∠BGC = ∠BCG. These two angles together are less than two right angles, and hence each is less than a right angle. Since G lies on AC, ∠BCG is ∠BCA. Thus the original remaining angle ∠BCA is less than a right angle. [1.5, 1.17]\n\n**Step 5.** Since GA and GC are opposite rays, ∠AGB and ∠BGC together equal two right angles. As ∠BGC is less than a right angle, ∠AGB is greater than a right angle. But ∠AGB = ∠EFD by Step 2, so ∠EFD is greater than a right angle. This contradicts either permitted hypothesis: if both remaining angles are less than a right angle, ∠EFD contradicts it; if both are not less than a right angle, ∠BCA contradicts it. Therefore ∠ABC = ∠DEF. [1.13; Steps 2–4]\n\n**Step 6.** Finally, ∠BAC = ∠EDF by hypothesis and ∠ABC = ∠DEF by Step 5. Subtracting these equal angle pairs from the equal triangle angle sums gives ∠BCA = ∠EFD. Hence ABC and DEF are equiangular, and in particular the angles ∠ABC and ∠DEF, about which the given proportional sides lie, are equal, as required. [1.32, CN2, CN3]",
+    "used": [
+      "1.23",
+      "1.32",
+      "CN2",
+      "CN3",
+      "6.4",
+      "5.11",
+      "5.9",
+      "1.5",
+      "1.17",
+      "1.13"
+    ],
+    "statement": "If two triangles have one angle equal to one angle, the sides about other angles proportional, and the remaining angles either both less or both not less than a right angle, the triangles will be equiangular and will have those angles equal, the sides about which are proportional."
+  },
+  {
+    "prop_id": "6.8",
+    "proof": "**Step 1.** Let ABC be a triangle right-angled at A, and let AD be the given perpendicular to the base BC, with D on BC. The angles ADB and ADC are right angles by the definition of perpendicularity, and therefore each equals the right angle BAC. [D1.10, P4]\n\n**Step 2.** Since BD lies along BC, the angle ABD is the same as ABC. Thus triangles ABD and ABC have two angles respectively equal: ABD equals ABC, and ADB equals BAC. The angles of each triangle sum to two right angles; subtracting the equal angles leaves BAD equal to ACB. Hence triangles DBA and ABC are equiangular, with correspondence D ↔ A, B ↔ B, A ↔ C. [1.32, CN3]\n\n**Step 3.** Since CD lies along CB, the angle ACD is the same as ACB. Triangles ACD and ABC therefore also have two angles respectively equal: ACD equals ACB, and ADC equals BAC. Subtracting these equal angles from their equal angle sums gives DAC equal to ABC. Hence triangles DAC and ABC are equiangular, with correspondence D ↔ A, A ↔ B, C ↔ C. [1.32, CN3]\n\n**Step 4.** Apply the theorem on proportional sides in equiangular triangles. This is the direct route because the perpendicular and the shared base angles have already established equiangularity. The corresponding sides of DBA and ABC are proportional, as are those of DAC and ABC. Since their corresponding angles are also equal, each of the two smaller triangles is similar to the whole triangle. [6.4, D6.1]\n\n**Step 5.** The smaller triangles are also equiangular to one another: ADB equals ADC, since both equal BAC; DBA equals DAC, since both equal ABC; and DAB equals DCA, since both equal ACB. Their corresponding sides are therefore proportional, so they are similar to one another. Thus the triangles adjoining the perpendicular are similar both to the whole and to one another, as required. [CN1, 6.4, D6.1]",
+    "used": [
+      "D1.10",
+      "P4",
+      "1.32",
+      "CN3",
+      "6.4",
+      "D6.1",
+      "CN1"
+    ],
+    "statement": "If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another."
+  },
+  {
+    "prop_id": "6.9",
+    "proof": "**Step 1.** Let AB be the given straight line, and let the prescribed part be its nth part, where n ≥ 2 is a prescribed integer. We must cut off a segment which measures AB exactly n times. [D5.1, D5.2]\n\n**Step 2.** Draw an auxiliary ray from A, not along AB, and choose a segment AD on it. Produce the ray and successively cut off n − 1 further segments, each equal to AD; call the final endpoint C. Thus D lies between A and C, and DC is the sum of n − 1 segments equal to AD, so DC = (n − 1)AD. [P1, P2, 1.3, CN2, D5.2]\n\n**Step 3.** Join CB. Through D draw a straight line parallel to CB, meeting AB at F. [P1, 1.31]\n\n**Step 4.** In triangle ACB, the parallel DF cuts its sides proportionally. Hence\nCD : DA = BF : FA.\nWe use this proportion between the pieces directly, without converting it into a proportion between whole sides. [6.2]\n\n**Step 5.** Apply the definition of equal ratios to this proportion: take one copy of each antecedent CD and BF, and n − 1 copies of each consequent DA and FA. Since CD equals (n − 1)DA, the corresponding comparison must also be equality. Therefore BF = (n − 1)FA. [D5.5]\n\n**Step 6.** Adding AF to these equal magnitudes gives\nAB = AF + FB = AF + (n − 1)AF = nAF.\nThus AF measures AB exactly n times, and is the prescribed nth part of AB. The required part has therefore been cut off. [CN2, D5.1, D5.2]",
+    "used": [
+      "D5.1",
+      "D5.2",
+      "P1",
+      "P2",
+      "1.3",
+      "CN2",
+      "1.31",
+      "6.2",
+      "D5.5"
+    ],
+    "statement": "From a given straight line to cut off a prescribed part."
+  },
+  {
+    "prop_id": "6.10",
+    "proof": "**Step 1.** Let AB be the given uncut straight line, and suppose the given cut straight line has n successive parts, where n ≥ 2. Draw a ray from A not collinear with AB. Extending it as necessary, copy the given parts successively onto it, obtaining points A = C₀, C₁, …, Cₙ, with each Cᵢ₋₁Cᵢ equal to the corresponding given part. These transfers and markings are possible by I.2 and I.3. [P1, P2, 1.2, 1.3]\n\n**Step 2.** Join CₙB. Through each interior point Cᵢ draw a parallel to CₙB, meeting AB at Bᵢ. Put B₀ = A and Bₙ = B. The points Bᵢ occur successively along AB, and all the lines CᵢBᵢ, for 1 ≤ i ≤ n, are parallel to one another. Our direct route is to apply the parallel-cutting theorem VI.2 to this construction. [P1, 1.31, 1.30]\n\n**Step 3.** In triangle AC₂B₂, the line C₁B₁ is parallel to C₂B₂. Therefore\nC₀C₁ : C₁C₂ = B₀B₁ : B₁B₂.\nThus the first two parts have the required ratio. [6.2]\n\n**Step 4.** Consider any index i with 2 ≤ i ≤ n − 1. Through Cᵢ₋₁ draw a straight line parallel to AB, meeting CᵢBᵢ at Q and Cᵢ₊₁Bᵢ₊₁ at R. The points Cᵢ₋₁, Q, R occur in that order. [1.31]\n\n**Step 5.** The quadrilaterals Bᵢ₋₁BᵢQCᵢ₋₁ and BᵢBᵢ₊₁RQ are parallelograms: one pair of their opposite sides is parallel to AB, and the other pair lies on the mutually parallel lines constructed in Step 2. Hence their opposite sides are equal:\nCᵢ₋₁Q = Bᵢ₋₁Bᵢ, and QR = BᵢBᵢ₊₁. [1.30, 1.34]\n\n**Step 6.** In triangle Cᵢ₋₁Cᵢ₊₁R, the line CᵢQ is parallel to Cᵢ₊₁R. Consequently,\nCᵢ₋₁Cᵢ : CᵢCᵢ₊₁ = Cᵢ₋₁Q : QR.\nSubstituting the equal lengths from Step 5 gives\nCᵢ₋₁Cᵢ : CᵢCᵢ₊₁ = Bᵢ₋₁Bᵢ : BᵢBᵢ₊₁.\nThis holds for every index considered in Step 4. [6.2, D5.5]\n\n**Step 7.** Together, Steps 3 and 6 show that every two successive parts of AB have the same ratio as the corresponding successive parts on ACₙ. Those parts were copied equal to the parts of the given cut straight line, so their ratios are unchanged. Therefore the points B₁, …, Bₙ₋₁ cut the given straight line AB similarly to the given cut straight line, as required. [D5.5]",
+    "used": [
+      "P1",
+      "P2",
+      "1.2",
+      "1.3",
+      "1.31",
+      "1.30",
+      "6.2",
+      "1.34",
+      "D5.5"
+    ],
+    "statement": "To cut a given uncut straight line similarly to a given cut straight line."
+  },
+  {
+    "prop_id": "6.11",
+    "proof": "**Step 1.** Let the two given straight lines have lengths a and b. Draw two rays from A forming an angle. On these rays cut off AB = a and AC = b, producing the rays as necessary. [P1, P2, 1.3]\n\n**Step 2.** Produce AB beyond B to D, making BD = b. Join BC, and through D draw DE parallel to BC, meeting AC produced beyond C at E. [P1, P2, 1.3, 1.31]\n\n**Step 3.** In triangle ADE, the straight line BC is parallel to DE and cuts the sides AD and AE. Therefore\nAB : BD = AC : CE.\nThis parallel-section route gives the required proportion directly, without passing through similar triangles. [6.2]\n\n**Step 4.** Since AB = a and BD = AC = b, the proportion becomes\na : b = b : CE.\nThus CE is a third proportional to the two given straight lines, as required. [D5.6]",
+    "used": [
+      "P1",
+      "P2",
+      "1.3",
+      "1.31",
+      "6.2",
+      "D5.6"
+    ],
+    "statement": "To two given straight lines to find a third proportional."
+  },
+  {
+    "prop_id": "6.12",
+    "proof": "**Step 1.** Let the three given straight lines have lengths a, b, and c, in that order. Draw two non-collinear rays from O. Produce their straight lines as necessary and cut off OA = a and AC = b consecutively on the first ray, so that O, A, C occur in that order. On the second ray cut off OB = c. [P1, P2, 1.3]\n\n**Step 2.** Join A to B. Through C draw a straight line parallel to AB, meeting the second ray produced beyond B at D. Thus AB is parallel to CD in triangle OCD. [P1, P2, 1.31]\n\n**Step 3.** Use the forward direction of the proportional-section theorem directly, since the construction supplies a parallel to a side of a triangle. Applied to triangle OCD, it gives OA : AC = OB : BD. Substituting the lengths prescribed in Step 1 yields a : b = c : BD. Therefore BD is a fourth proportional to the three given straight lines, as required. [6.2]",
+    "used": [
+      "P1",
+      "P2",
+      "1.3",
+      "1.31",
+      "6.2"
+    ],
+    "statement": "To three given straight lines to find a fourth proportional."
+  },
+  {
+    "prop_id": "6.13",
+    "proof": "**Step 1.** Let the two given straight lines have lengths a and b. Take AB to be the first given line and produce it beyond B. Describe a circle with centre B and radius equal to the second given line, meeting the produced ray at C. Thus A, B, C lie in this order on one straight line, with AB = a and BC = b. [P2, P3, D1.15]\n\n**Step 2.** Bisect AC at O and describe the circle with centre O and radius OA. Since OA = OC, both A and C lie on this circle, and AC is a diameter. [1.10, P3, D1.15, D1.17]\n\n**Step 3.** At B draw a perpendicular to AC, and produce it to meet either semicircle at D. Join AD and CD. [1.11, P2, P1]\n\n**Step 4.** Since AC is a diameter, angle ADC is right. Therefore DB is the perpendicular from the right angle of triangle ADC to its base AC. Use the altitude-similarity route: VI.8 directly gives the similarity of triangles ABD and DBC, with corresponding vertices A ↔ D, B ↔ B, and D ↔ C. [3.31, 6.8]\n\n**Step 5.** The corresponding sides of these similar triangles are proportional, so AB : BD = BD : BC. Since AB and BC equal the two given straight lines, BD is their mean proportional. Thus the required straight line has been found. [D6.1]",
+    "used": [
+      "P2",
+      "P3",
+      "D1.15",
+      "1.10",
+      "D1.17",
+      "1.11",
+      "P1",
+      "3.31",
+      "6.8",
+      "D6.1"
+    ],
+    "statement": "To two given straight lines to find a mean proportional."
+  },
+  {
+    "prop_id": "6.14",
+    "proof": "**Step 1.** Let the given equiangular parallelograms be OABC and ODEF, with the equal angles AOC and DOF superposed, so that OA and OD lie on one ray, and OC and OF on another. This placement changes neither lengths nor areas (CN4). Denote their areas by p and q, respectively.\n\n**Step 2.** Through D draw a parallel to OC, and through C draw a parallel to OD, meeting at H; thus ODHC is a parallelogram (1.31). Denote its area by r. We use this single auxiliary parallelogram because the common-height comparison of 6.1 applies directly to each original parallelogram and the auxiliary one.\n\n**Step 3.** OABC and ODHC have bases OA and OD on the same straight line and lie between that line and its parallel through C. Hence, by 6.1,\n p:r = OA:OD.\nLikewise, ODEF and ODHC, regarded as having bases OF and OC, lie between the straight line OC and its parallel through D. Hence, again by 6.1,\n q:r = OF:OC.\n\n**Step 4.** First suppose the given parallelograms are equal, so p=q. Equal magnitudes have the same ratio to the same magnitude; therefore p:r=q:r (5.7). Combining this with the two ratios in Step 3 gives\n OA:OD = OF:OC\nby 5.11. Thus the sides about the equal angles are reciprocally proportional: the first side of the first parallelogram is to the corresponding side of the second as the other side of the second is to the other side of the first (D6.2).\n\n**Step 5.** Conversely, suppose the sides about the equal angles are reciprocally proportional, so that OA:OD=OF:OC (D6.2). The ratios in Step 3 then give p:r=q:r by 5.11. Magnitudes having the same ratio to the same magnitude are equal (5.9); hence p=q, and the given parallelograms are equal. Therefore both assertions are proved.",
+    "used": [
+      "CN4",
+      "1.31",
+      "6.1",
+      "5.7",
+      "5.11",
+      "D6.2",
+      "5.9"
+    ],
+    "statement": "In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal."
+  },
+  {
+    "prop_id": "6.15",
+    "proof": "**Step 1.** Let ABC and DEF be triangles with ∠BAC = ∠EDF. Write [XYZ] for the area of triangle XYZ. On the rays AB and AC take points G and H such that AG = DE and AH = DF, producing the straight lines if necessary and cutting off the required lengths; if a required length already equals AB or AC, use the existing endpoint. Join GH and GC. (P2, 1.3, P1.)\n\n**Step 2.** Since AG = DE, AH = DF, and ∠GAH = ∠BAC = ∠EDF, the triangles AGH and DEF are equal by the side-angle-side proposition. Thus [AGH] = [DEF]. (1.4.)\n\n**Step 3.** We use the common auxiliary triangle AGC: the same-height theorem directly converts the required side ratios into ratios of triangle areas. Triangles ABC and AGC have their bases AB and AG on the same straight line and the same vertex C. Triangles AGH and AGC have their bases AH and AC on the same straight line and the same vertex G. Consequently,\n[ABC] : [AGC] = AB : AG,\nand\n[AGH] : [AGC] = AH : AC. (6.1.)\n\n**Step 4.** First suppose [ABC] = [DEF]. By Step 2, [ABC] = [AGH]. (CN1.) Equal magnitudes have the same ratio to the same magnitude, so\n[ABC] : [AGC] = [AGH] : [AGC]. (5.7.)\nCombining this with Step 3 gives AB : AG = AH : AC. (5.11.) Substituting AG = DE and AH = DF yields\nAB : DE = DF : AC.\nThus the sides about the equal angles are reciprocally proportional. (D6.2.)\n\n**Step 5.** Conversely, suppose the sides about the equal angles are reciprocally proportional, so AB : DE = DF : AC. (D6.2.) The constructed equalities give AB : AG = AH : AC. Hence Step 3 implies\n[ABC] : [AGC] = [AGH] : [AGC]. (5.11.)\nMagnitudes having the same ratio to the same magnitude are equal; therefore [ABC] = [AGH]. (5.9.) Since [AGH] = [DEF] by Step 2, it follows that [ABC] = [DEF]. (CN1.) Thus the triangles are equal, completing both directions.",
+    "used": [
+      "P2",
+      "1.3",
+      "P1",
+      "1.4",
+      "6.1",
+      "CN1",
+      "5.7",
+      "5.11",
+      "D6.2",
+      "5.9"
+    ],
+    "statement": "In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal."
+  },
+  {
+    "prop_id": "6.16",
+    "proof": "**Step 1.** Let the four straight lines, in their given order, be a, b, c, d. Consider the rectangles R and S contained respectively by a, d and by b, c. Thus R and S are rectangular parallelograms with these pairs of adjacent sides [D2.1]. Since all right angles are equal, they are equiangular [P4]. We use 6.14 directly: its two directions concern precisely equality and reciprocal proportionality in equiangular parallelograms.\n\n**Step 2.** Suppose the four straight lines are proportional, so that a:b = c:d [D5.6]. Here a and d are the sides about a right angle of R, while b and c are the sides about a right angle of S. The given proportion compares a side of R with a side of S, and the other side of S with the other side of R; hence these sides are reciprocally proportional [D6.2]. Therefore the equiangular parallelograms R and S are equal [6.14]. That is, the rectangle contained by the extremes a, d equals the rectangle contained by the means b, c [D2.1].\n\n**Step 3.** Conversely, suppose the rectangle contained by a, d equals the rectangle contained by b, c. Then R and S are equal equiangular parallelograms. Their sides about the equal right angles are consequently reciprocally proportional [6.14]. Comparing a with b, this gives a:b = c:d [D6.2]. Thus the four straight lines a, b, c, d are proportional [D5.6]. Both assertions are proved.",
+    "used": [
+      "D2.1",
+      "P4",
+      "6.14",
+      "D5.6",
+      "D6.2"
+    ],
+    "statement": "If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes be equal to the rectangle contained by the means, the four straight lines will be proportional."
+  },
+  {
+    "prop_id": "6.17",
+    "proof": "**Step 1.** Let the three straight lines, in order, be A, B, C. The square on B is precisely the rectangle contained by B and B: it is right-angled and all its sides equal B. [D1.22, D2.1] We use 6.16 directly, with B occupying both middle places, because that proposition already provides both required implications. [6.16]\n\n**Step 2.** Suppose A, B, C are proportional; that is, A:B = B:C. [D5.6] Apply 6.16 to the four terms A, B, B, C. The rectangle contained by the extremes A, C equals the rectangle contained by the means B, B, which, by Step 1, is the square on B. Thus the rectangle contained by the extremes equals the square on the mean. [6.16]\n\n**Step 3.** Conversely, suppose the rectangle contained by A, C equals the square on B. By Step 1, it therefore equals the rectangle contained by B, B. The converse of 6.16, applied to A, B, B, C, gives A:B = B:C. Hence A, B, C are proportional. [6.16, D5.6] Both directions are proved.",
+    "used": [
+      "D1.22",
+      "D2.1",
+      "6.16",
+      "D5.6"
+    ],
+    "statement": "If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes be equal to the square on the mean, the three straight lines will be proportional."
+  },
+  {
+    "prop_id": "6.18",
+    "proof": "**Step 1.** Let AB be the given straight line, and let C₁C₂…Cₙ be the given rectilineal figure, with C₁C₂ the side to which AB is to correspond. Draw non-crossing diagonals dividing the figure into triangles, and begin with the triangle having C₁C₂ as a side. We choose to copy these triangles by their angles and then deduce proportionality, rather than prescribe their side lengths. [P1]\n\n**Step 2.** The required triangle construction is as follows. If XYZ is one of the original triangles and xy is the already constructed side corresponding to XY, construct at x and y, on the prescribed side of xy, angles equal respectively to ∠YXZ and ∠XYZ. This is possible by I.23. Their sum is less than two right angles, since the three angles of XYZ equal two right angles. Therefore the two constructed rays meet at a point z. The remaining angle at z equals the angle at Z, by subtracting the equal sums of the other two angles from two right angles. Thus xyz and XYZ are equiangular, with the stated correspondence. [1.23, 1.32, CN5, P5, CN2, CN3]\n\n**Step 3.** Apply this construction first on AB to copy the triangle adjoining C₁C₂. Then, working through the dissection, copy each adjoining triangle on the already constructed side corresponding to their shared diagonal. Put each new triangle on the side of that diagonal corresponding to its position in the original figure. Continue until every triangle has been copied, preserving the incidences and cyclic order of the original dissection. Denote the resulting boundary by A₁A₂…Aₙ, where A₁ = A and A₂ = B. Every original triangle and its copy are equiangular by Step 2. [1.23, 1.32, P5]\n\n**Step 4.** Within any pair of corresponding triangles, let r and s be two original sides and r′ and s′ their copies. Since the triangles are equiangular, VI.4 gives r:s = r′:s′. Alternating gives r:r′ = s:s′. Hence all three sides of each triangle have the same ratio to their corresponding constructed sides. [6.4, 5.16]\n\n**Step 5.** Two adjoining triangles share a diagonal, and their copies share its corresponding diagonal. Consequently the original-to-copy ratios obtained in Step 4 agree for adjoining triangles. Passing through the connected dissection, all corresponding sides therefore have the same ratio, namely C₁C₂:AB. In particular, at every boundary vertex, the two original sides and their copies satisfy\nCᵢ₋₁Cᵢ:Aᵢ₋₁Aᵢ = CᵢCᵢ₊₁:AᵢAᵢ₊₁.\nAlternating, the sides about the corresponding boundary angles are proportional. Here the indices are read cyclically. [5.11, 5.16]\n\n**Step 6.** Each angle of the original figure consists of the angles of the triangles meeting there. The corresponding constructed angle consists, in the same order, of the equal angles of their copies. Adding these equal angles shows that all corresponding angles of the two rectilineal figures are equal. [CN2]\n\n**Step 7.** The constructed figure is therefore equiangular with the given figure and has the sides about equal angles proportional; hence the figures are similar. Their corresponding triangles and boundary sides occur in the same cyclic order, with the same side-of-diagonal choices, so they are also similarly situated. Thus, on the given straight line AB, a rectilineal figure similar and similarly situated to the given rectilineal figure has been described. [D6.1]",
+    "used": [
+      "P1",
+      "1.23",
+      "1.32",
+      "CN5",
+      "P5",
+      "CN2",
+      "CN3",
+      "6.4",
+      "5.16",
+      "5.11",
+      "D6.1"
+    ],
+    "statement": "On a given straight line to describe a rectilineal figure similar and similarly situated to a given rectilineal figure."
+  },
+  {
+    "prop_id": "6.19",
+    "proof": "**Step 1.** Let ABC and DEF be similar triangles, with A, B, C corresponding respectively to D, E, F. Write [XYZ] for the area of triangle XYZ. By the definition of similar figures,\n∠ABC = ∠DEF and AB:DE = BC:EF. [D6.1]\n\n**Step 2.** We use a third proportional, since this leads directly to the duplicate ratio. Construct a length t such that BC:EF = EF:t. On the ray from B through C, producing BC if necessary, mark G using a circle with centre B and radius t, and join AG. Thus\nBC:EF = EF:BG. [6.11, P2, P3, P1]\n\n**Step 3.** The proportions in Steps 1 and 2 give\nAB:DE = EF:BG.\nAlso, since BG is on the ray BC, ∠ABG = ∠ABC = ∠DEF. Hence triangles ABG and DEF have an equal included angle and reciprocally proportional sides about that angle. They are therefore equal:\n[ABG] = [DEF]. [5.11, 6.15]\n\n**Step 4.** Triangles ABC and ABG have their bases BC and BG on the same straight line and have the same altitude from A. Consequently,\n[ABC]:[ABG] = BC:BG.\nReplacing [ABG] by the equal magnitude [DEF] gives\n[ABC]:[DEF] = BC:BG. [6.1, 5.7, 5.11]\n\n**Step 5.** Since BC:EF = EF:BG, the three straight lines BC, EF, BG are proportional. Thus BC:BG is the duplicate ratio of BC:EF. By Step 4, the ratio of triangle ABC to triangle DEF is therefore the duplicate ratio of their corresponding sides BC and EF. These were arbitrarily named corresponding sides, so similar triangles are to one another in the duplicate ratio of the corresponding sides. [D5.9]",
+    "used": [
+      "D6.1",
+      "6.11",
+      "P2",
+      "P3",
+      "P1",
+      "5.11",
+      "6.15",
+      "6.1",
+      "5.7",
+      "D5.9"
+    ],
+    "statement": "Similar triangles are to one another in the duplicate ratio of the corresponding sides."
+  },
+  {
+    "prop_id": "6.20",
+    "proof": "**Step 1.** Let the similar polygons be P = A₁A₂…Aₙ and Q = B₁B₂…Bₙ, with vertices in corresponding order. Their corresponding angles are equal, and the sides about those angles are proportional. By alternation, the ratios of corresponding boundary sides are equal; denote their common ratio by r. Thus AᵢAᵢ₊₁ : BᵢBᵢ₊₁ = r, including the closing sides. [D6.1, 5.16, 5.11]\n\n**Step 2.** Join A₁ to A₃,…,Aₙ₋₁, and B₁ to B₃,…,Bₙ₋₁. These fan dissections divide the polygons into the respective triangles\nTᵢ = A₁AᵢAᵢ₊₁ and Uᵢ = B₁BᵢBᵢ₊₁, for i = 2,…,n−1.\nEach dissection therefore contains n−2 triangles. We use this dissection because successive triangle angles can be obtained by subtracting already matched angles from corresponding polygon angles. [P1]\n\n**Step 3.** In T₂ and U₂, the angles at A₂ and B₂ are equal, and A₁A₂ : A₂A₃ = B₁B₂ : B₂B₃. Apply the two-sides-and-included-angle criterion: it is the direct choice because its hypotheses are precisely the given polygon angle and its adjacent sides. The triangles are equiangular, and consequently their corresponding sides are proportional; hence they are similar. In particular, by alternation,\nA₁A₃ : B₁B₃ = A₁A₂ : B₁B₂ = r. [D6.1, 6.6, 6.4, 5.16]\n\n**Step 4.** Suppose Tᵢ₋₁ and Uᵢ₋₁ have already been shown similar, with A₁Aᵢ : B₁Bᵢ = r, where 3 ≤ i ≤ n−1. Subtract their equal angles Aᵢ₋₁AᵢA₁ and Bᵢ₋₁BᵢB₁ from the equal polygon angles Aᵢ₋₁AᵢAᵢ₊₁ and Bᵢ₋₁BᵢBᵢ₊₁. The remaining angles A₁AᵢAᵢ₊₁ and B₁BᵢBᵢ₊₁ are equal. Moreover,\nA₁Aᵢ : B₁Bᵢ = AᵢAᵢ₊₁ : BᵢBᵢ₊₁,\nso, alternately,\nA₁Aᵢ : AᵢAᵢ₊₁ = B₁Bᵢ : BᵢBᵢ₊₁.\nThe same included-angle criterion makes Tᵢ and Uᵢ equiangular, and their sides are therefore proportional. They are similar, and alternation gives A₁Aᵢ₊₁ : B₁Bᵢ₊₁ = r. Repeating this argument proves that every corresponding triangle pair is similar. [D6.1, CN3, 5.11, 5.16, 6.6, 6.4]\n\n**Step 5.** For each i = 3,…,n−1, the successive triangles Tᵢ₋₁ and Tᵢ share the side A₁Aᵢ, while Uᵢ₋₁ and Uᵢ share B₁Bᵢ. Similar triangles are in the duplicate ratio of corresponding sides. Consequently, both Tᵢ₋₁ : Uᵢ₋₁ and Tᵢ : Uᵢ are the duplicate of the very same ratio A₁Aᵢ : B₁Bᵢ, and hence are equal. It follows successively that\nT₂ : U₂ = T₃ : U₃ = ⋯ = Tₙ₋₁ : Uₙ₋₁.\nFor n = 3 there is just one triangle pair. [6.19, 5.11]\n\n**Step 6.** Since these triangle-area ratios are equal, one antecedent is to its consequent as the sum of all antecedents is to the sum of all consequents. The sums are exactly the two polygons. Therefore, for every i,\nTᵢ : Uᵢ = (T₂ + ⋯ + Tₙ₋₁) : (U₂ + ⋯ + Uₙ₋₁) = P : Q.\nThus the corresponding triangles are in the same ratio as the whole polygons. [5.12]\n\n**Step 7.** In particular, P : Q = T₂ : U₂, and the latter is the duplicate ratio of A₁A₂ : B₁B₂. More generally, any chosen boundary side belongs to one of the fan triangles, and its corresponding side belongs to the corresponding triangle. Applying the same similar-triangle theorem to that pair gives the same conclusion for those sides. Hence the similar polygons are divided into similar triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon the duplicate ratio of any corresponding side to its corresponding side. [6.19, 5.11]",
+    "used": [
+      "D6.1",
+      "5.16",
+      "5.11",
+      "P1",
+      "6.6",
+      "6.4",
+      "CN3",
+      "6.19",
+      "5.12"
+    ],
+    "statement": "Similar polygons are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon a ratio duplicate of that which the corresponding side has to the corresponding  side."
+  },
+  {
+    "prop_id": "6.21",
+    "proof": "**Step 1.** Let the rectilineal figures F and G each be similar to the same rectilineal figure H. Match the angles and sides of F and G through their respective correspondences with H. We take the direct route through the definition of similarity: equality of corresponding angles and proportionality of the sides about them. [D6.1]\n\n**Step 2.** Each angle of F and its corresponding angle of G are equal to the same angle of H, by the assumed similarities. Therefore they are equal to one another. Thus F and G have their corresponding angles severally equal. [D6.1, CN1]\n\n**Step 3.** At any corresponding angles, denote the two incident sides in F by a, a′, those in G by b, b′, and those in H by c, c′, with the sides listed in corresponding order. The assumed similarities give a:a′ = c:c′ and b:b′ = c:c′. Ratios which are the same with the same ratio are the same with one another; hence a:a′ = b:b′. Thus the sides of F and G about each pair of corresponding equal angles are proportional. [D6.1, 5.11]\n\n**Step 4.** Since F and G have their angles severally equal and the sides about the equal angles proportional, they are similar. Therefore figures which are similar to the same rectilineal figure are also similar to one another. [D6.1]",
+    "used": [
+      "D6.1",
+      "CN1",
+      "5.11"
+    ],
+    "statement": "Figures which are similar to the same rectilineal figure are also similar to one another."
+  },
+  {
+    "prop_id": "6.22",
+    "proof": "**Step 1.** Let a, b, c, d be the four straight lines, and let P, Q, R, S be the rectilineal figures described upon them respectively, with P and Q similar and similarly described, and R and S likewise. Find third proportionals e and f, so that a:b = b:e and c:d = d:f. [6.11]\n\n**Step 2.** We use third proportionals to express the duplicate ratios explicitly. Similar triangles have the duplicate ratio of their corresponding sides by VI.19; for polygons with more sides, VI.20 supplies the corresponding result. Thus, using the earlier triangle result wherever applicable, the definition of duplicate ratio gives\nP:Q = a:e and R:S = c:f.\nThe bases are corresponding sides because the figures are similarly described. [6.19, 6.20, D5.9, 5.11]\n\n**Step 3.** First suppose a:b = c:d. Then b:e = d:f, since these ratios equal a:b and c:d respectively. Applying ex aequali to the sequences a, b, e and c, d, f gives a:e = c:f. Step 2 therefore yields P:Q = R:S. This proves the forward implication. [5.11, 5.22]\n\n**Step 4.** Conversely, suppose P:Q = R:S. Step 2 gives a:e = c:f. Find a fourth proportional t such that c:d = a:t, and then a third proportional u such that a:t = t:u. Consequently a:t = c:d and t:u = d:f; hence, ex aequali, a:u = c:f. Therefore a:e = a:u, and so e = u. [6.12, 6.11, 5.11, 5.22, 5.9]\n\n**Step 5.** We now have a:b = b:e and a:t = t:e, the latter because u = e. If b were greater than t, then a:b would be less than a:t, whereas b:e would be greater than t:e. This contradicts the two displayed equalities of ratios. If b were less than t, the reverse inequalities would give the same contradiction. Thus b = t. [5.7, 5.8]\n\n**Step 6.** Since b = t, we have a:b = a:t; and by construction a:t = c:d. Hence a:b = c:d. Therefore the four straight lines are proportional if and only if the rectilineal figures similar and similarly described upon them are proportional. [5.7, 5.11]",
+    "used": [
+      "6.11",
+      "6.19",
+      "6.20",
+      "D5.9",
+      "5.11",
+      "5.22",
+      "6.12",
+      "5.9",
+      "5.7",
+      "5.8"
+    ],
+    "statement": "If four straight lines be proportional, the rectilineal figures similar and similarly described upon them will also be proportional; and, if the rectilineal figures similar and similarly described upon them be proportional, the straight lines will themselves also be proportional."
+  },
+  {
+    "prop_id": "6.23",
+    "proof": "**Step 1.** Let the given equiangular parallelograms be ABCD and AEFG. Place their equal angles at A together, with AB and AE on one ray and AD and AG on the other. Such superposition preserves the figures and their magnitudes. Write P and Q for their respective areas. We must show that P:Q is compounded of AB:AE and AD:AG. [CN4]\n\n**Step 2.** Complete the auxiliary parallelogram AEHD by drawing through E a parallel to AD and through D a parallel to AE, meeting at H. Write R for its area. This mixed-side parallelogram is the direct path: it allows both required comparisons to be made between parallelograms of the same height. [1.31]\n\n**Step 3.** The parallelograms ABCD and AEHD have bases AB and AE on the same straight line, and their opposite sides lie on the same parallel through D. Therefore\nP:R = AB:AE.\nLikewise, AEHD and AEFG, taken on bases AD and AG, have their opposite sides on the same parallel through E. Therefore\nR:Q = AD:AG. [6.1]\n\n**Step 4.** Take any straight-line magnitude x. Find a fourth proportional y to AB, AE, x, and then a fourth proportional z to AD, AG, y. Thus\nAB:AE = x:y, and AD:AG = y:z.\nCombining these with Step 3 gives\nP:R = x:y, and R:Q = y:z. [6.12, 5.11]\n\n**Step 5.** The three areas P, R, Q and the three lengths x, y, z have their successive ratios equal in the same order. Hence, by ordinary ex aequali,\nP:Q = x:z. [5.22]\n\n**Step 6.** The ratio x:z is compounded of x:y and y:z, since the sizes of those two ratios multiplied together give the size of x:z. By Step 4 these factors are respectively the ratios AB:AE and AD:AG, and by Step 5 their compounded ratio is P:Q. Therefore the given equiangular parallelograms have to one another the ratio compounded of the ratios of their corresponding sides about the equal angles. [D6.5]",
+    "used": [
+      "CN4",
+      "1.31",
+      "6.1",
+      "6.12",
+      "5.11",
+      "5.22",
+      "D6.5"
+    ],
+    "statement": "Equiangular parallelograms have to one another the ratio compounded of the ratios of their sides."
+  },
+  {
+    "prop_id": "6.24",
+    "proof": "**Step 1.** Let ABCD be a parallelogram, with vertices in order, and let AC be its diameter. Take any point P inside AC. Through P draw FG parallel to AB, meeting AD at F and BC at G, and EH parallel to BC, meeting AB at E and CD at H. The parallelograms about the diameter are AEPF and PGCH. These parallels can be drawn by [1.31].\n\n**Step 2.** The triangles AEP and ABC are equiangular: AE lies along AB, AP lies along AC, and EP is parallel to BC. Likewise, triangles PGC and ABC are equiangular: PG is parallel to AB, GC lies along BC, and PC lies along AC. The required angle equalities follow from the angles made by transversals with parallel lines. [1.29]\n\n**Step 3.** We use these equiangular triangles directly, since the diameter already supplies the triangles needed for the side proportions. By [6.4],\nAE : EP = AB : BC,\nand\nPG : GC = AB : BC.\n\n**Step 4.** Opposite sides of a parallelogram are equal. Thus\nAE = PF, EP = FA;\nPG = CH, GC = HP;\nAB = CD, BC = DA.\nConsequently, the first proportion in Step 3 gives\nAE : FA = AB : DA,\nAE : EP = AB : BC,\nPF : EP = CD : BC,\nPF : FA = CD : DA.\nThese are the proportions between the sides about the corresponding vertices A, E, P, F and A, B, C, D. Similarly, the second proportion gives\nPG : PH = AB : AD,\nPG : GC = AB : BC,\nCH : CG = CD : CB,\nHC : HP = DC : DA,\nwhich are the required proportions at the corresponding vertices P, G, C, H and A, B, C, D. [1.34]\n\n**Step 5.** The parallelograms AEPF and ABCD are equiangular: their angles at A agree, their angles at E and B agree by parallelism, and their remaining corresponding angles agree because opposite angles of parallelograms are equal. Likewise, PGCH and ABCD are equiangular: their angles at C agree, their angles at G and B agree by parallelism, and equality of opposite angles supplies the other two pairs. [1.29, 1.34] Together with Step 4, the definition of similar rectilineal figures therefore shows that AEPF and PGCH are each similar to ABCD. [D6.1]\n\n**Step 6.** Figures similar to the same rectilineal figure are similar to one another. Hence AEPF and PGCH are also similar to one another. Thus, in any parallelogram, the parallelograms about the diameter are similar both to the whole and to one another. [6.21]",
+    "used": [
+      "1.31",
+      "1.29",
+      "6.4",
+      "1.34",
+      "D6.1",
+      "6.21"
+    ],
+    "statement": "In any parallelogram the parallelograms about the diameter are similar both to the whole and to one another."
+  },
+  {
+    "prop_id": "6.25",
+    "proof": "**Step 1.** Let F be the given rectilineal figure to which the required figure must be similar, and G the given rectilineal figure to which it must be equal. Construct squares S and T equal to F and G respectively, and denote their sides by s and t (2.14). We choose this square-reduction route because the similar-polygon area theorem will then give both needed area comparisons directly.\n\n**Step 2.** Choose a side a of F. Construct a fourth proportional x to s, t, a, so that s:t = a:x (6.12).\n\n**Step 3.** On x construct a rectilineal figure H similar and similarly situated to F, with x corresponding to a (6.18).\n\n**Step 4.** The squares S and T are similar: their angles are equal right angles, and their corresponding sides are proportional because each square is equilateral (D1.22, P4, D6.1). By 6.20, S:T is the duplicate ratio of s:t, and F:H is the duplicate ratio of a:x. Since s:t = a:x, these are the same duplicate ratio; hence S:T = F:H (D5.9, 5.11). Here 6.20 is used directly because it applies to both pairs of similar polygons.\n\n**Step 5.** Since S equals F and T equals G, the preceding equality gives F:G = F:H. Magnitudes to which the same magnitude has the same ratio are equal; therefore G equals H (5.9). Thus H is both similar to F and equal to G, as required.",
+    "used": [
+      "2.14",
+      "6.12",
+      "6.18",
+      "D1.22",
+      "P4",
+      "D6.1",
+      "6.20",
+      "D5.9",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "To construct one and the same figure similar to a given rectilineal figure and equal to another given rectilineal figure."
+  },
+  {
+    "prop_id": "6.26",
+    "proof": "**Step 1.** Let ABCD be the whole parallelogram, and let AEFG be the similar and similarly situated parallelogram taken from it, with their common angle at A, E on AB, and G on AD. The corresponding sides are proportional, so\nAB : BC = AE : EF. [D6.1]\n\n**Step 2.** Draw the diameter AC. Let it meet EF, produced if necessary, at H. Through H draw HK parallel to AB, meeting AD at K. Then AEHK is a parallelogram about the diameter AC of ABCD. Moreover, H and F lie on the same ray from E, directed into the whole parallelogram. [P1, P2, 1.31]\n\n**Step 3.** Apply 6.24 to the auxiliary parallelogram AEHK: this is the direct route because that parallelogram is already about AC. It is similar to ABCD, and therefore\nAB : BC = AE : EH. [6.24, D6.1]\n\n**Step 4.** The two ratios AE : EF and AE : EH are thus equal to the same ratio AB : BC, and hence equal to one another. Since the same magnitude AE has the same ratio to EF and EH, we obtain EF = EH. [5.11, 5.9]\n\n**Step 5.** Since F and H are on the same ray from E, their equality of distance from E forces F = H: otherwise one of EF and EH would be a proper part of the other, contrary to their equality. Thus F lies on AC. Consequently the diameter AF of AEFG lies on the diameter AC of ABCD, so the parallelogram taken away is about the same diameter with the whole. [CN5]",
+    "used": [
+      "D6.1",
+      "P1",
+      "P2",
+      "1.31",
+      "6.24",
+      "5.11",
+      "5.9",
+      "CN5"
+    ],
+    "statement": "If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the whole."
+  },
+  {
+    "prop_id": "6.27",
+    "proof": "**Step 1.** Write [R] for the area of a figure R. Bisect the given straight line AB at E, and let H = EBCD be the prescribed parallelogram on EB. Complete Q = AEDF on AE, with F, D, C collinear, by drawing parallels (1.10, 1.31). Opposite sides of parallelograms are equal, so FD = AE = EB = DC, and AF = ED = BC (1.34, CN1). Corresponding angles of Q and H are equal by parallelism; hence Q and H are similar and similarly situated (1.29, D6.1). Moreover, they are on the equal bases AE and EB and between the same parallels, so [Q] = [H] (1.36).\n\n**Step 2.** Let P = AXYZ be any parallelogram applied to AB, deficient by T = XBWY, where X lies between A and B and T is similar and similarly situated to H. Thus BW lies on the ray BC, and EB:BC = XB:BW (D6.1). Consequently, if X lies between E and B, T is contained in H; if X lies between A and E, H is contained in T: the corresponding side BW is respectively shorter or longer than BC (5.14). If X = E, the same proposition gives BW = BC; the figures coincide, and P = Q (CN4). It remains to consider the two strict cases.\n\n**Step 3.** Suppose first that X lies between E and B. The smaller defect T is similar and similarly situated to H and shares its angle at B. Therefore T is about the same diameter as H, so Y lies on BD (6.26). This common-diameter route applies directly to the nested defects and gives equal complements. Let L be the intersection of the side-line YW with ED, and N the intersection of the side-line XY with DC. The complements EXYL and YWCN in H are equal (1.43). Also, AELZ and EBWL are on the equal bases AE and EB and between the same parallels AB and ZW; hence they are equal (1.36).\n\n**Step 4.** The divisions just described give\n[P] = [AELZ] + [EXYL],\n[H] = [EBWL] + [YWCN] + [LYND].\nSubstituting the equal areas from Step 3 yields\n[H] = [P] + [LYND]\n(CN1, CN2). Here LYND is a nondegenerate parallelogram, since X is strictly between E and B.\n\n**Step 5.** Now suppose that X lies between A and E. The smaller defect H is similar and similarly situated to T and shares its angle at B. Therefore H is about the same diameter as T, and D lies on BY (6.26). Let U be the intersection of XY with the line FDC, and V the intersection of the side-line ED with ZW. The complements XEDU and DCWV in T are consequently equal:\n[XEDU] = [DCWV]\n(1.43).\n\n**Step 6.** Since FD = DC by Step 1, the parallelograms FDVZ and DCWV are on equal bases and between the same parallels FC and ZW. Thus [FDVZ] = [DCWV] (1.36), and therefore [XEDU] = [FDVZ] (CN1). Dividing the figures along their indicated sides now gives\n[Q] = [AXUF] + [XEDU]\n= [AXUF] + [FDVZ]\n= [AXUF] + [FUYZ] + [UDVY]\n= [P] + [UDVY]\n(CN2). The parallelogram UDVY is nondegenerate, since X is strictly between A and E.\n\n**Step 7.** In the first strict case, Step 4 and [Q] = [H] show that Q equals P together with the positive parallelogram LYND. In the second strict case, Step 6 shows that Q equals P together with the positive parallelogram UDVY. Hence [Q] > [P] in either case, since the whole is greater than the part (CN1, CN5). Equality occurs when X = E, as established in Step 2. Therefore the greatest of all the stated applied parallelograms is Q, which is applied to half of AB and is similar to its defect. This proves the proposition.",
+    "used": [
+      "1.10",
+      "1.31",
+      "1.34",
+      "CN1",
+      "1.29",
+      "D6.1",
+      "1.36",
+      "5.14",
+      "CN4",
+      "6.26",
+      "1.43",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line, that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect."
+  },
+  {
+    "prop_id": "6.28",
+    "proof": "**Step 1.** Let AB be the given straight line, C the given rectilineal figure, and D the parallelogram prescribing the defect. Write |F| for the area of a figure F. Bisect AB at E, and on EB describe the parallelogram P = EBFG similar and similarly situated to D. Through A draw a parallel to EG, meeting FG produced at H. The parallelograms AEGH and EBFG have equal bases AE and EB and lie between the same parallels, so their areas are equal. The hypothesis is |C| ≤ |P|. [1.10, 6.18, 1.31, P2, 1.36]\n\n**Step 2.** If |C| = |P|, take AEGH: it equals C and, within ABFH, has the defect EBFG, which is similar to D. Thus suppose |C| < |P|.\n\nRepresent the excess |P| − |C| by an actual rectilineal figure as follows. Divide C into triangles by straight joins. Apply these triangles successively as adjacent parallelogrammic strips, beginning on GF and proceeding towards EB, with their lateral sides along GE and FB, produced if necessary. Each successive strip is applied to the opposite side of the preceding strip, in the same angle. Their union U is a parallelogram equal to C. Since |U| < |P|, its opposite side must lie strictly between GF and EB; otherwise U would contain P. Consequently the remaining strip V is a parallelogram satisfying |V| = |P| − |C|. [P1, 1.44, P2, CN2, CN5]\n\n**Step 3.** Construct a parallelogram Q similar to P and equal to V. Thus\n|Q| = |P| − |C| < |P|. [6.25, CN5]\n\nIts sides are shorter than the corresponding sides of P. Indeed, similarity makes the two pairs of adjacent sides proportional; if either side of Q were greater than, or equal to, its corresponding side of P, the other would respectively be greater than, or equal to, its corresponding side. With corresponding angles aligned, Q would then contain P properly, or have equal area with it, contrary to |Q| < |P|. In the equal-side case, the equality follows by applying side-angle-side to the triangles formed by adjacent sides and then doubling their areas. [D6.1, 5.14, CN5, 1.4, 1.34]\n\n**Step 4.** On GF and GE cut off GR and GY equal to the corresponding adjacent sides of Q, and complete the parallelogram GRZY by parallels. This is a copy of Q: its adjacent sides and included angle agree with those of Q, so the corresponding triangles, and hence the parallelograms, are equal. Retain Q as the name of this placed parallelogram. [1.3, 1.31, 1.4, 1.34]\n\nIt lies inside P, is similar and similarly situated to P, and shares its angle at G. Therefore its opposite vertex Z lies on the diameter GB of P. Here VI.26 is the direct choice because the smaller similar parallelogram has already been constructed at a common corner. [P1, 6.26]\n\n**Step 5.** Produce RZ to meet EB at X. Produce YZ to meet BF at S and AH at T. Thus AXZT and XBSZ are parallelograms whose union is the parallelogram ABST on the whole given line AB. The construction places X between E and B; we take this branch, giving an applied base AX greater than half of AB. [P2, 1.31]\n\n**Step 6.** In P, the parallelograms GRZY and XBSZ are about the diameter GB. Their complements EXZY and RFSZ are therefore equal. [1.43]\n\nAlso AEYT and EBSY have equal bases AE and EB and lie between the same parallels AB and TS; hence they are equal. The equal-base theorem is the natural choice here, without any proportional-area calculation. [1.36]\n\nAdding these equalities gives\n|AXZT| = |AEYT| + |EXZY|\n          = |EBSY| + |RFSZ|\n          = |P| − |Q|\n          = |C|.\nThe third expression is precisely the part of P outside Q, and the last equality follows from |Q| = |P| − |C|. [CN2, CN3]\n\n**Step 7.** Since XBSZ is about the diameter of P, it is similar to P; and since P is similar to D, XBSZ is similar to D. Thus AXZT is equal to C and is applied to AB with the required parallelogrammic defect XBSZ. [6.24, 6.21]\n\nFinally, VI.27 shows that any such application cannot exceed the parallelogram on half of AB similar and similarly situated to its defect. Hence the stated non-excess condition is necessary as well. Together with the equality case in Step 2, the construction proves the proposition under exactly its stated restriction. [6.27]",
+    "used": [
+      "1.10",
+      "6.18",
+      "1.31",
+      "P2",
+      "1.36",
+      "P1",
+      "1.44",
+      "CN2",
+      "CN5",
+      "6.25",
+      "D6.1",
+      "5.14",
+      "1.4",
+      "1.34",
+      "1.3",
+      "6.26",
+      "1.43",
+      "CN3",
+      "6.24",
+      "6.21",
+      "6.27"
+    ],
+    "statement": "To a given straight line to apply a parallelogram equal to a given rectilineal figure and deficient by a parallelogrammic figure similar to a given one: thus the given rectilineal figure must not be greater than the parallelogram described on the half of the straight line and similar to the defect."
+  },
+  {
+    "prop_id": "6.29",
+    "proof": "**Step 1.** Let AB be the given straight line, C the given rectilineal figure, and K the parallelogram to which the excess must be similar. Write [F] for the area of a figure F. We use the midpoint-and-complements construction, enlarging a similar parallelogram by the given area. Bisect AB at E, and on EB describe the parallelogram EBFD similar and similarly situated to K. Denote this parallelogram also by S = DFBE, listing its vertices from D. [1.10, 6.18]\n\n**Step 2.** Form a single rectilineal figure T of area [S] + [C] as follows. Produce BF beyond F, and in the exterior angle between FD and this produced ray construct a parallelogram equal to C. It lies on the opposite side of DF from S and shares a boundary segment with S; their union is the required rectilineal figure T. Construct a parallelogram R similar to S and equal to T. Thus [R] = [S] + [C] > [S]. [P2, 1.45, CN2, 6.25, CN5]\n\n**Step 3.** On the rays DF and DE take X and H respectively so that DX and DH equal the corresponding adjacent sides of R, and complete the parallelogram DXGH by parallels. The included angle at D equals the corresponding angle of R, so this parallelogram coincides with R upon superposition. Consequently it is similar and similarly situated to S, and\n[DXGH] = [S] + [C].\nMoreover, similarity gives DX : DH = DF : DE. If DX were less than or equal to DF, then DH would respectively be less than or equal to DE; DXGH would therefore be contained in S or coincide with S, contrary to its greater area. Hence DX > DF and DH > DE: X lies beyond F, and H beyond E. [P2, 1.3, 1.31, D6.1, CN4, 5.14, CN5]\n\n**Step 4.** The smaller parallelogram DFBE lies within DXGH, is similar and similarly situated to it, and shares its angle at D. Proposition VI.26 applies directly because of this shared-angle arrangement: the two parallelograms are about the same diameter. Therefore B lies on the diameter DG. [6.26]\n\n**Step 5.** Produce AB to meet XG at P. Through B draw a parallel to DH, meeting HG at Q. Through A draw another parallel to DH, meeting HG produced at L. Thus A, E, B, P lie in that order on one straight line, and L, H, Q, G lie in that order on another. The figure APGL is a parallelogram applied along AB and extended beyond B; its excess is precisely the parallelogram BPGQ. [P2, 1.31]\n\n**Step 6.** Since B lies on DG, the parallelograms DFBE and BPGQ are the two parallelograms about the diameter of DXGH. They are therefore similar to one another. Since DFBE is similar to K, BPGQ is also similar to K. [6.24, 6.21]\n\n**Step 7.** The other two parallelograms, EBQH and FXPB, are the complements about that diameter, and hence\n[EBQH] = [FXPB].\nAlso AE = EB, and the parallelograms AEHL and EBQH stand on these equal bases between the same parallels AP and LG. Therefore\n[AEHL] = [EBQH] = [FXPB].\n[1.43, 1.36, CN1]\n\n**Step 8.** The parallelogram APGL consists of AEHL, EBQH, and BPGQ. The remainder of DXGH after removing S consists of FXPB, EBQH, and BPGQ. Substituting the equal areas AEHL and FXPB gives\n[APGL] = [DXGH] − [S] = ([S] + [C]) − [S] = [C].\nThus APGL is equal to the given rectilineal figure C, is applied to the given straight line AB, and exceeds by the parallelogram BPGQ similar to K. The required construction is complete. [CN2, CN3]",
+    "used": [
+      "1.10",
+      "6.18",
+      "P2",
+      "1.45",
+      "CN2",
+      "6.25",
+      "CN5",
+      "1.3",
+      "1.31",
+      "D6.1",
+      "CN4",
+      "5.14",
+      "6.26",
+      "6.24",
+      "6.21",
+      "1.43",
+      "1.36",
+      "CN1",
+      "CN3"
+    ],
+    "statement": "To a given straight line to apply a parallelogram equal to a given rectilineal figure and exceeding by a parallelogrammic figure similar to a given one."
+  },
+  {
+    "prop_id": "6.30",
+    "proof": "**Step 1.** Let AB be the given finite straight line. Choose the direct rectangle–square construction: by 2.11, cut AB at C so that the rectangle contained by AB and CB equals the square on AC. [2.11]\n\n**Step 2.** The three-line proportionality criterion applies directly to this rectangle–square equality. By 6.17, the lines AB, AC, CB are proportional; hence\nAB : AC = AC : CB. [6.17]\n\n**Step 3.** Since AC is a proper part of AB, we have AB > AC. Applying 5.14 to the proportion in Step 2, with AB, AC, AC, CB as the four magnitudes, gives AC > CB. Thus AC is the greater segment and CB the less. [CN5, 5.14]\n\n**Step 4.** Therefore, as the whole AB is to the greater segment AC, so is AC to the lesser segment CB. By the definition of extreme and mean ratio, AB has been cut in extreme and mean ratio at C, as required. [D6.3]",
+    "used": [
+      "2.11",
+      "6.17",
+      "CN5",
+      "5.14",
+      "D6.3"
+    ],
+    "statement": "To cut a given finite straight line in extreme and mean ratio."
+  },
+  {
+    "prop_id": "6.31",
+    "proof": "**Step 1.** Let ABC be right-angled at A. Let F, G, and H denote the areas of the similar and similarly described figures on BC, AB, and AC, respectively. We use the altitude to divide the given triangle into two similar triangles. Draw AD perpendicular to BC, meeting the hypotenuse at D. [1.12]\n\n**Step 2.** The triangles ABD and ACD are each similar to ABC. Write U, V, and T for the areas of ABD, ACD, and ABC, respectively. Their corresponding hypotenuses are AB, AC, and BC, and the division by AD gives U + V = T. [6.8]\n\n**Step 3.** By the earlier result specifically concerning similar triangles, U:T is the duplicate ratio of AB:BC, and V:T is the duplicate ratio of AC:BC. For the prescribed similar figures, the polygonal result gives G:F and H:F as those same respective duplicate ratios; if the figures are triangles, the triangle result itself applies. Therefore\nU:T = G:F, and V:T = H:F.\n[6.19, 6.20, 5.11]\n\n**Step 4.** Alternating these proportions gives\nG:U = F:T, and H:V = F:T.\nConsequently G:U = H:V. This choice of figure-to-triangle ratios permits the two corresponding pairs to be added directly. [5.16, 5.11]\n\n**Step 5.** Since G:U = H:V, the sum of the antecedents has to the sum of the consequents the same ratio:\n(G + H):(U + V) = G:U = F:T.\nUsing U + V = T, we obtain\n(G + H):T = F:T.\n[5.12, 5.11]\n\n**Step 6.** Magnitudes having the same ratio to the same magnitude are equal. Hence G + H = F. Thus the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle, taken together. [5.9]",
+    "used": [
+      "1.12",
+      "6.8",
+      "6.19",
+      "6.20",
+      "5.11",
+      "5.16",
+      "5.12",
+      "5.9"
+    ],
+    "statement": "In right - angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle."
+  },
+  {
+    "prop_id": "6.32",
+    "proof": "**Step 1.** Let the triangles be ABC and DCE, joined at C in the stipulated adjacent placement, with AB:AC = CD:DE, AB ∥ CD, and AC ∥ DE. In this placement A and D lie on the same side of BC, while B and E lie on opposite sides of CD. We must prove that BC and CE form one straight line. (Hypotheses.)\n\n**Step 2.** Since AB ∥ CD, the transversal AC gives ∠BAC = ∠ACD. Since AC ∥ DE, the transversal CD gives ∠ACD = ∠CDE. Therefore ∠BAC = ∠CDE. [1.29, CN1]\n\n**Step 3.** The sides AB, AC are proportional to CD, DE, and their included angles BAC and CDE are equal. Apply 6.6—the direct route because the equal angles are included by the proportional sides. The triangles are equiangular, with corresponding angles ∠ABC = ∠DCE. [6.6]\n\n**Step 4.** Since AB ∥ CD, the transversal BC makes the interior angles on the same side, ∠ABC and ∠BCD, together equal to two right angles. Adding ∠BCD to the equal angles ∠ABC and ∠DCE therefore gives\n∠BCD + ∠DCE = two right angles. [1.29, CN2, CN1]\n\n**Step 5.** At C, the rays CB and CE lie on opposite sides of CD, and the adjacent angles BCD and DCE together equal two right angles. Hence CB and CE are in a straight line with one another. Thus the remaining sides BC and CE of the two triangles form one straight line, as required. [1.14]",
+    "used": [
+      "1.29",
+      "CN1",
+      "6.6",
+      "CN2",
+      "1.14"
+    ],
+    "statement": "If two triangles having two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining sides of the triangles will be in a straight line."
+  },
+  {
+    "prop_id": "6.33",
+    "proof": "**Step 1.** Let two equal circles have centres O and P. Let a and b be the respective circumferences (arcs) BC and EF, and let α and β be the central angles standing on them. We first prove α : β = a : b by the equimultiple definition of equal ratios. The natural direction needed is that equal arcs give equal central angles, so we use III.27. [D5.5, 3.27]\n\n**Step 2.** Take any positive integers m and n. Lay m copies of a consecutively around the first circle and n copies of b consecutively around the second. If a succession passes through a complete revolution, retain that revolution as part of the succession rather than identifying the total with its final residual arc. The circles have equal radii. Each copy of a subtends an angle equal to α, and each copy of b an angle equal to β. Consequently the arc totals ma and nb have corresponding angular sums mα and nβ. These are sums of angular magnitudes and need not be single angles between two rays. [D3.1, 3.27, CN2]\n\n**Step 3.** Compare these two arc successions from a common starting radius and in the same direction, superposing their equal circular tracks and retaining the successive revolutions. Subdivide their common initial portion at the endpoints of all constituent copies, adding further divisions if necessary so that each piece is a proper arc. Corresponding pieces coincide and are therefore equal; their central angles are equal by III.27, and the sums of those angles are equal by addition.\n\nIf ma = nb, this common portion exhausts both successions, so mα = nβ. If ma > nb, the first succession consists of the common portion followed by a nonzero arc remainder. Its angular sum therefore consists of the equal common angular sum together with a positive remainder, so mα > nβ. If ma < nb, the same argument with the successions interchanged gives mα < nβ. Keeping complete revolutions as separate consecutive portions makes this argument applicable to every m and n, without any restriction to totals smaller than one circumference. [CN4, 3.27, CN2, CN5]\n\n**Step 4.** Thus, for every choice of m and n, mα and nβ alike exceed, equal, or fall short of one another exactly as ma and nb do. By the definition of equal ratios,\nα : β = a : b.\nThis proves the assertion for angles at the centres. [D5.5]\n\n**Step 5.** Now let θ and φ be angles at the circumferences standing respectively on the same arcs a and b. The angle at the centre is double the angle at the circumference on the same arc. Hence α = 2θ and β = 2φ. [3.20]\n\n**Step 6.** Parts have the same ratio as their corresponding equal multiples; therefore\nθ : φ = 2θ : 2φ = α : β.\nCombining this with Step 4 gives θ : φ = a : b. Thus, in equal circles, angles have the same ratio as the circumferences on which they stand, both at the centres and at the circumferences. [5.15, 5.11]",
+    "used": [
+      "D5.5",
+      "3.27",
+      "D3.1",
+      "CN2",
+      "CN4",
+      "CN5",
+      "3.20",
+      "5.15",
+      "5.11"
+    ],
+    "statement": "In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences."
+  }
+]

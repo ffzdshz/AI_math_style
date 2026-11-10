@@ -1,0 +1,372 @@
+[
+  {
+    "prop_id": "12.1",
+    "proof": "**Step 1.** Let P and Q be similar polygons inscribed in two circles, and let A, B, C and A′, B′, C′ be corresponding triples of consecutive vertices. By the definition of similar figures, ∠ABC = ∠A′B′C′ and AB:BC = A′B′:B′C′. Hence triangles ABC and A′B′C′ are equiangular. We will compare a corresponding boundary side with a diameter, then apply the duplicate-ratio conclusion for similar polygons directly. [D6.1, 6.6]\n\n**Step 2.** At least one of the angles at A and C is acute, since the three angles of triangle ABC equal two right angles. Reversing the names A and C, and likewise A′ and C′, if necessary, we may suppose that ∠ACB is acute. Its corresponding angle ∠A′C′B′ is equal and therefore also acute. The lines AB and A′B′ remain corresponding sides of the polygons. This choice avoids a supplementary-angle case in the circle comparison. [1.32, 6.6]\n\n**Step 3.** Draw diameters AD and A′D′. Since ∠ACB is acute, AB is not a diameter, and C lies on the greater segment cut off by AB. Likewise C′ lies on the greater segment cut off by A′B′. The angles ABD and A′B′D′ are right, being angles in semicircles; consequently the angles ADB and A′D′B′ are acute. Thus D lies on the same greater segment as C, and D′ on the same greater segment as C′. [D1.17, 3.31, 1.32]\n\n**Step 4.** Angles in the same segment are equal, so ∠ADB = ∠ACB and ∠A′D′B′ = ∠A′C′B′. Therefore ∠ADB = ∠A′D′B′. Together with the right angles at B and B′, this makes triangles ABD and A′B′D′ equiangular. Their corresponding sides are proportional, giving AB:AD = A′B′:A′D′; alternately,\nAB:A′B′ = AD:A′D′. [3.21, 1.32, 6.4, 5.16]\n\n**Step 5.** Since P and Q are similar polygons and AB and A′B′ are corresponding sides, P:Q is the duplicate ratio of AB:A′B′. Here we use the duplicate-ratio clause directly, without summing triangular pieces. [6.20]\n\n**Step 6.** Construct squares S and S′ on AD and A′D′. Squares are equilateral and right-angled, hence are similar figures. Applying the same polygon theorem to these squares, S:S′ is the duplicate ratio of AD:A′D′. [1.46, D1.22, D6.1, 6.20]\n\n**Step 7.** By Step 4 the two underlying ratios are equal, so their duplicate ratios are equal: a duplicate ratio is the ratio of the extremes of three proportional magnitudes, and equality of the two successive ratios gives equality of the extreme ratios ex aequali. Thus Steps 5 and 6 yield P:Q = S:S′. Therefore similar polygons inscribed in circles are to one another as the squares on the diameters. [D5.9, 5.22, 5.11]",
+    "used": [
+      "D6.1",
+      "6.6",
+      "1.32",
+      "D1.17",
+      "3.31",
+      "3.21",
+      "6.4",
+      "5.16",
+      "6.20",
+      "1.46",
+      "D1.22",
+      "D5.9",
+      "5.22",
+      "5.11"
+    ],
+    "statement": "Similar polygons inscribed in circles are to one another as the squares on the diameters."
+  },
+  {
+    "prop_id": "12.2",
+    "proof": "**Step 1.** Let C and D denote the areas of the two circles, and S and T the squares on their respective diameters. We use the directly available polygon ratio in XII.1, exhaust the circles by X.1, and verify the equimultiple criterion D5.5. This route requires no auxiliary fourth proportional involving a circle. [12.1, 10.1, D5.5]\n\n**Step 2.** Inscribe a square in each circle. Its consecutive sides cut off equal minor arcs. Repeatedly bisect every arc between consecutive vertices and join consecutive division points. Denote the resulting polygonal areas at matching stages by P_j and Q_j. [4.6, 3.28, 3.30]\n\nAt each stage, the polygons have the same number of equal arcs. Equal arcs give equal central angles and equal chords; hence the central angles in the two circles are equal subdivisions of four right angles. The triangles formed by the centre and consecutive vertices are isosceles, so their corresponding base angles, and consequently the corresponding polygon angles, are equal. Within either polygon all sides are equal, so corresponding sides of the two polygons have one ratio. Thus the polygons are similar. They lie inside their respective circles, and XII.1 gives\nP_j : Q_j = S : T.\n[3.27, 3.29, D1.15, 1.5, 1.32, D6.1, 3.2, 12.1]\n\n**Step 3.** Consider one circular segment remaining outside either polygon. Let AB be its chord, M the midpoint of its minor arc, and O the centre. The chords AM and BM are equal, as are the radii OA and OB. Applying I.8 to triangles OAM and OBM shows that OM bisects angle AMB. Since triangle AMB is isosceles, I.5 and I.32 show that the two adjacent angles where OM meets AB are equal; thus OM is perpendicular to AB. [3.29, D1.15, 1.8, 1.5, 1.32, D1.10]\n\nThrough M draw the parallel to AB, and through A and B draw parallels to OM. These lines and AB bound a rectangle R. The line through M is perpendicular to the radius OM and therefore lies outside the circle. Since the arc AB is no greater than a quadrant, its circular segment is properly contained in R. But R is double triangle AMB, having the same base and lying between the same parallels. Consequently, triangle AMB is greater than half the circular segment. [1.31, 3.16, CN5, 1.41]\n\n**Step 4.** Passing from one polygonal stage to the next adds precisely these triangles in all the remaining segments. Hence more than half the total remainder is removed at every stage. Thus each of C − P_j and D − Q_j can be made less than any prescribed positive area, by X.1. The same holds for any fixed positive integral multiple of either remainder, since multiplying preserves the more-than-half removal. [CN2, CN3, 10.1]\n\n**Step 5.** Let m and n be arbitrary positive integers. Suppose first that mC > nD, and put g = mC − nD. By Step 4 choose a matching stage with\nm(C − P_j) < g.\nSubtracting gives mP_j > nD. Since Q_j is properly inside D, we obtain\nmP_j > nD > nQ_j.\nThe equality P_j : Q_j = S : T and D5.5 therefore imply\nmS > nT.\n[CN2, CN3, CN5, D5.5]\n\n**Step 6.** Suppose instead that mC < nD. Choose a matching stage with\nn(D − Q_j) < nD − mC.\nThen nQ_j > mC > mP_j. Applying D5.5 to P_j : Q_j = S : T gives\nmS < nT.\nThus both strict comparisons between multiples of the circles imply the corresponding strict comparisons between multiples of the diameter-squares. [CN2, CN3, CN5, D5.5]\n\n**Step 7.** Finally suppose that mC = nD. If mS > nT, put δ = mS − nT. By the magnitude condition D5.4, choose a positive integer r such that rδ > T. Then\n(rm)S > (rn + 1)T.\nBut the assumed equality of the circle-multiples gives\n(rm)C = (rn)D < (rn + 1)D.\nStep 6, applied to the integers rm and rn + 1, gives the contradictory inequality\n(rm)S < (rn + 1)T.\nThus mS > nT is impossible. Exchanging the two circles and their corresponding squares excludes mS < nT in exactly the same way. Therefore mS = nT. [D5.4, CN2, CN3, CN5]\n\n**Step 8.** For every pair of positive integers m and n, the multiples mC and nD respectively exceed, equal, or fall short of one another exactly as mS and nT do. By D5.5,\nC : D = S : T.\nTherefore circles are to one another as the squares on their diameters. [D5.5]",
+    "used": [
+      "12.1",
+      "10.1",
+      "D5.5",
+      "4.6",
+      "3.28",
+      "3.30",
+      "3.27",
+      "3.29",
+      "D1.15",
+      "1.5",
+      "1.32",
+      "D6.1",
+      "3.2",
+      "1.8",
+      "D1.10",
+      "1.31",
+      "3.16",
+      "CN5",
+      "1.41",
+      "CN2",
+      "CN3",
+      "D5.4"
+    ],
+    "statement": "Circles are to one another as the squares on the diameters."
+  },
+  {
+    "prop_id": "12.3",
+    "proof": "**Step 1.** Let ABCD be the given pyramid, with triangular base ABC and vertex D. Bisect AB, AC, AD, BC, BD, CD at E, F, G, H, K, L respectively, and join the requisite points. A segment joining the midpoints of two sides of any face is parallel to the third side and equal to its half: the parallelism follows from VI.2, and the equality from I.29 and VI.4. [1.10, P1, 6.2, 1.29, 6.4]\n\n**Step 2.** Consider the four corner pyramids, writing their vertices in correspondence with A, B, C, D:\nT_A = AEFG, T_B = EBHK, T_C = FHCL, and T_D = GKLD.\nBy Step 1, every edge of each is half the corresponding edge of ABCD. Consequently, their corresponding triangular faces are similar to those of ABCD, by VI.5 and the definition of similar rectilineal figures. Moreover, corresponding faces of the four corner pyramids have equal corresponding sides and equal included angles, and hence are equal by I.4. Thus the four corner pyramids are equal and similar to one another, and each is similar to ABCD. In particular, T_A and T_D have the equality and similarity required in the proposition. [6.5, D6.1, 1.4, D11.9, D11.10]\n\n**Step 3.** We have FH parallel to GK, both being parallel to AB, and FG parallel to HK, both being parallel to CD. Thus FHKG is a planar parallelogram. Also, EFG is parallel to BHK, and FHC is parallel to GKL, since in each pair two intersecting sides are respectively parallel. [11.9, 11.15]\n\nCut the pyramid by the planes EFG and GKL, removing T_A and T_D, and cut the remaining solid by the plane FHKG. The resulting two solids are:\n• P, with triangular ends EFG and BHK and side faces EBHF, EBKG, and FHKG;\n• Q, with triangular ends FHC and GKL and side faces FHKG, HCLK, and CFGL.\nTheir triangular ends are equal and similar by Step 2, and parallel as just shown; their other faces are parallelograms by the midpoint relations. Therefore P and Q are prisms. These cuts partition ABCD, without overlapping interiors, into exactly T_A, T_D, P, and Q. [D11.12, D11.13]\n\n**Step 4.** Regard the parallelogram EBHF as the base of P, and the triangle FHC as the base of Q. Both bases lie in the plane ABC. The plane GKL is parallel to ABC, because GK is parallel to AB and GL to AC. The opposite edge GK of P and the opposite triangular face GKL of Q lie in that same parallel plane. Hence the two prisms, with these choices of base, have the same height. [11.15]\n\n**Step 5.** The diagonal BF bisects the parallelogram EBHF, so that this parallelogram is double the triangle BHF. The triangles BHF and CHF have equal bases BH and HC and lie between the same parallels BC and EF; therefore they are equal. Consequently, the parallelogram EBHF is double the triangle FHC. [1.34, 1.38, CN2]\n\n**Step 6.** Use XI.39 directly: this is the natural comparison here because the prisms have equal heights, one chosen base is a parallelogram, and the other is a triangle. By Steps 4–5, the parallelogram base is double the triangular base. Therefore P and Q are equal. [11.39]\n\n**Step 7.** The comparison pyramid T_B = EBHK is a proper part of P: its base is the triangular end BHK and its vertex E is one vertex of the opposite triangular end EFG. Thus P is greater than T_B. Since T_B equals T_A, P is greater than T_A. Since Q equals P and T_D equals T_A, Q is likewise greater than T_D. Hence the two prisms together are greater than the two remaining pyramids together. [CN5, CN2]\n\nBut the whole pyramid is precisely the sum of these two prisms and these two pyramids. Therefore the two prisms together are greater than half the whole pyramid. We have thus divided ABCD into two equal and similar triangular-based pyramids, each similar to ABCD, and two equal prisms whose sum is greater than half of ABCD, as required.",
+    "used": [
+      "1.10",
+      "P1",
+      "6.2",
+      "1.29",
+      "6.4",
+      "6.5",
+      "D6.1",
+      "1.4",
+      "D11.9",
+      "D11.10",
+      "11.9",
+      "11.15",
+      "D11.12",
+      "D11.13",
+      "1.34",
+      "1.38",
+      "CN2",
+      "11.39",
+      "CN5"
+    ],
+    "statement": "Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; and the two prisms are greater than the half of the whole pyramid."
+  },
+  {
+    "prop_id": "12.4",
+    "proof": "**Step 1.** Let the pyramids be DABC and D′A′B′C′, with triangular bases ABC and A′B′C′ and the same height h. Write [XYZ] for the area of a triangle. Make the midpoint division of XII.3 in each pyramid. In the first, let E, F, G be the midpoints of AB, BC, CA, and H, K, L the midpoints of DA, DB, DC; use corresponding primed letters in the second. The two smaller pyramids are DHKL and HAEG. One of the prisms, P, has opposite triangular faces EBF and HKL; call the other prism Q. Similarly define P′ and Q′. The joining lines are parallel to the corresponding edges, and XII.3 gives P = Q and P′ = Q′. [6.2, 12.3]\n\n**Step 2.** Since HK and HL are respectively parallel to AB and AC, the plane HKL is parallel to the plane ABC. Because H bisects DA, the parallel planes through D, through HKL, and through ABC also bisect a perpendicular measuring the height. Thus the distance between HKL and ABC is h/2, and the distance from D to HKL is also h/2. The same holds in the primed pyramid. Consequently P and P′ have the same height h/2; moreover, all four smaller pyramids have height h/2 relative to their indicated triangular bases. [6.2, 11.15, 11.17]\n\n**Step 3.** Triangles ABC and EBC have the same altitude to AB, while AB is double EB. Triangles EBC and EBF have the same altitude to BC, while BC is double BF. Hence\n[ABC] = 2[EBC] = 4[EBF].\nLikewise [A′B′C′] = 4[E′B′F′]. Therefore\n[EBF] : [E′B′F′] = [ABC] : [A′B′C′].\nThe same two applications of the triangle-area theorem give [AEG] = [ABC]/4 and [A′E′G′] = [A′B′C′]/4. Also, the opposite triangular faces of a prism are equal, so [HKL] = [EBF] and [H′K′L′] = [E′B′F′]. Thus every smaller pyramid has a base equal to one quarter of its parent's base. [6.1, 5.15, D11.13]\n\n**Step 4.** We take the direct route through parallelepipeds: diagonal bisection is the natural first bridge from these triangular prisms to the equal-height theorem for parallelepipeds. Complete P and P′ to parallelepipeds U and U′, respectively, so that each prism is cut off by the plane through diagonals of opposite faces. Their parallelogram bases are double EBF and E′B′F′, and U = 2P, U′ = 2P′. Their heights remain h/2. Therefore\nU : U′ = (2[EBF]) : (2[E′B′F′]).\nRemoving the same multiples from both ratios and using Step 3 gives\nP : P′ = U : U′ = [EBF] : [E′B′F′] = [ABC] : [A′B′C′].\nThis uses only the equal-height theorem for parallelepipeds, not a volume theorem for pyramids. [1.34, 11.28, 11.32, 5.15, 5.11]\n\n**Step 5.** Since Q = P and Q′ = P′, the ratio Q : Q′ is also [ABC] : [A′B′C′]. Adding the corresponding antecedents and consequents therefore yields\n(P + Q) : (P′ + Q′) = [ABC] : [A′B′C′].\nThis proves the assertion for the two prisms obtained in the first division. [12.3, 5.12]\n\n**Step 6.** If the division is continued, pair DHKL with D′H′K′L′ and HAEG with H′A′E′G′. By Steps 2 and 3, each pair consists of pyramids of equal height whose bases have the original ratio [ABC] : [A′B′C′]. Apply the same division and the argument of Steps 1–5 to each pair. The newly obtained corresponding prisms therefore have that same ratio. At every subsequent division, corresponding heights are again halved and corresponding base areas quartered, so the argument continues for any finite number of corresponding subdivisions. [12.3, 5.15; Steps 2–5]\n\n**Step 7.** Denote all the prisms so obtained, equal in multitude, by R₁, …, Rₙ in the first pyramid and R′₁, …, R′ₙ in the second, pairing corresponding prisms. For every i,\nRᵢ : R′ᵢ = [ABC] : [A′B′C′].\nHence the theorem on sums of proportional magnitudes gives\n[ABC] : [A′B′C′] = (R₁ + ··· + Rₙ) : (R′₁ + ··· + R′ₙ).\nThus, as the base of one pyramid is to the base of the other, so are all the prisms in the first to all the prisms, equal in multitude, in the second. [5.12]",
+    "used": [
+      "6.2",
+      "12.3",
+      "11.15",
+      "11.17",
+      "6.1",
+      "5.15",
+      "D11.13",
+      "1.34",
+      "11.28",
+      "11.32",
+      "5.11",
+      "5.12"
+    ],
+    "statement": "If there be two pyramids of the same height which have triangular bases, and cach of them be divided into two pyramids equal to one another and similar to the whole, and into two equal prisms, then, as the base of the one pyramid is to the base of the other pyramid, so will all the prisms in the one pyramid be to all the prisms, being equal in multitude, in the other pyramid."
+  },
+  {
+    "prop_id": "12.5",
+    "proof": "**Step 1.** Let P and Q be pyramids of the same height with triangular bases A and B. We use the immediately preceding prism-proportionality result, 12.4, together with exhaustion; this route does not assume the existence of a fourth proportional solid. Apply 12.3 to both pyramids, and repeatedly apply the same subdivision to every remaining pyramid. At stage j, write S_j and T_j for the respective sums of all prisms removed, and R_j and U_j for the respective sums of the remaining pyramids. Thus P = S_j + R_j and Q = T_j + U_j. Each refinement removes more than half of every remaining pyramid, and hence more than half of their sum. [12.3, CN2]\n\n**Step 2.** Carry out matching stages of subdivision in the two pyramids. The prism collections then have equal numbers of corresponding pieces, so 12.4 gives\nA : B = S_j : T_j\nat every stage. Consequently, for any positive integers m and n, the comparison of mA with nB is the same as that of mS_j with nT_j. [12.4, D5.5]\n\n**Step 3.** For any fixed positive integer m and any positive solid magnitude E, refinement eventually gives mR_j < E. Indeed, at every refinement more than half of the current remainder is removed; the same is true of its m-fold multiple. Proposition 10.1 therefore applies. Likewise, any fixed multiple of U_j can be made smaller than any prescribed positive solid magnitude. [12.3, 10.1, CN2]\n\n**Step 4.** Let m and n be arbitrary positive integers. Suppose first that mP > nQ, and put E = mP − nQ. Choose a stage with mR_j < E. Then\nmS_j = mP − mR_j > nQ > nT_j,\nwhere the last inequality holds because T_j is a proper part of Q. Step 2 therefore gives mA > nB.\n\nSimilarly, if mP < nQ, choose a stage with nU_j < nQ − mP. Then\nnT_j = nQ − nU_j > mP > mS_j,\nso Step 2 gives mA < nB. Thus either strict comparison between arbitrary multiples of the pyramids implies the corresponding strict comparison between the same multiples of their bases. [10.1, D5.5, CN2, CN5]\n\n**Step 5.** Suppose now that mP = nQ. We show that mA = nB. If instead mA > nB, let D = mA − nB. By the Archimedean condition for magnitudes having a ratio, choose a positive integer k such that kD > B. Adding knB gives\nkmA > (kn + 1)B.\nBut mP = nQ gives\nkmP = knQ < (kn + 1)Q.\nApplying Step 4 with multipliers km and kn + 1 yields kmA < (kn + 1)B, a contradiction. If mA < nB, the identical argument with P and Q, A and B, and m and n interchanged gives a contradiction. Therefore mA = nB. [D5.4, CN2, CN5; Step 4]\n\n**Step 6.** For every pair of positive integers m and n, the multiples mP and nQ therefore exceed, equal, or fall short of one another exactly as mA and nB do. By the definition of equal ratios,\nP : Q = A : B.\nHence pyramids of the same height having triangular bases are to one another as their bases. [D5.5]",
+    "used": [
+      "12.3",
+      "12.4",
+      "10.1",
+      "D5.4",
+      "D5.5",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Pyramids which are of the same height and have triangular bases are to one another as the bases."
+  },
+  {
+    "prop_id": "12.6",
+    "proof": "**Step 1.** Let the two pyramids have equal heights, and denote their solid magnitudes by P and Q and their base areas by A and B. Divide each polygonal base by nonintersecting diagonals into triangles, and join these triangles to the corresponding vertex. This partitions the pyramids into triangular pyramids P₁,…,Pₘ and Q₁,…,Qₙ, with respective base areas a₁,…,aₘ and b₁,…,bₙ. Thus P = P₁ + ⋯ + Pₘ, Q = Q₁ + ⋯ + Qₙ, A = a₁ + ⋯ + aₘ, and B = b₁ + ⋯ + bₙ. Every component has the height of its original pyramid, since its vertex and base plane are unchanged. [P1, D11.12]\n\n**Step 2.** Use the triangular-base case directly. For every i and j, the pyramids Qⱼ and Pᵢ have equal heights and triangular bases. Therefore\nQⱼ : Pᵢ = bⱼ : aᵢ.\n[12.5]\n\n**Step 3.** Fix i. In these proportions, Pᵢ and aᵢ remain the respective consequents. Repeated application of the addition rule therefore gives\n(Q₁ + ⋯ + Qₙ) : Pᵢ = (b₁ + ⋯ + bₙ) : aᵢ,\nthat is, Q : Pᵢ = B : aᵢ. This is the natural addition rule here because the consequents are fixed; the two bases need not have equally many triangles. [5.24]\n\n**Step 4.** Reverse both ratios to obtain, for every i,\nPᵢ : Q = aᵢ : B.\nThis follows immediately from the definition of equal ratios: interchanging the two groups of equimultiples reverses their comparisons on both sides alike. [D5.5]\n\n**Step 5.** Now Q and B are fixed consequents. Repeated application of the same addition rule yields\n(P₁ + ⋯ + Pₘ) : Q = (a₁ + ⋯ + aₘ) : B.\nHence P : Q = A : B. Therefore pyramids of the same height with polygonal bases are to one another as their bases. [5.24]",
+    "used": [
+      "P1",
+      "D11.12",
+      "12.5",
+      "5.24",
+      "D5.5"
+    ],
+    "statement": "Pyramids which are of the same height and have polygonal bases are to one another as the bases."
+  },
+  {
+    "prop_id": "12.7",
+    "proof": "**Step 1.** Let the given prism have opposite triangular bases ABC and DEF, with corresponding vertices A,D; B,E; and C,F. Its lateral faces ABED, BCFE, and CADF are parallelograms. [D11.13]\n\n**Step 2.** Draw the face diagonals AF, BF, and AE, and cut the prism by the planes ABF and AEF. These planes exist because every triangle lies in a plane. The section ABF separates the triangular pyramid ABCF from the pyramid with vertex F and parallelogram base ABED. The section AEF then divides this remaining pyramid along the diagonal AE of its base into the triangular pyramids ABEF and ADEF. Thus the three pyramids\nT₁ = ABCF, T₂ = ABEF, and T₃ = ADEF\nfill the prism and have disjoint interiors. [P1, 11.2, D11.12]\n\n**Step 3.** The diagonal BF bisects the parallelogram BCFE, so the triangles BCF and BEF are equal. Regard T₁ and T₂ as pyramids with these respective bases and common vertex A. Their bases lie in the same plane, so their heights are equal. Use the triangular-base proportionality theorem directly, since the comparison bases are triangles: T₁:T₂ = BCF:BEF. Since the bases are equal, the definition of equal ratios, taking all the multiples to be one, gives T₁ = T₂. [1.34, 12.5, D5.5]\n\n**Step 4.** Likewise, the diagonal AE bisects the parallelogram ABED, so the triangles ABE and ADE are equal. Regard T₂ and T₃ as pyramids with these respective bases and common vertex F. Again their bases lie in one plane and their heights are equal. Hence T₂:T₃ = ABE:ADE, and therefore T₂ = T₃. [1.34, 12.5, D5.5]\n\n**Step 5.** Consequently T₁, T₂, and T₃ are equal to one another. By the division in Step 2, they constitute the entire given prism, and each has a triangular base. Therefore any prism with a triangular base is divided into three equal pyramids having triangular bases. [CN1, D11.12]",
+    "used": [
+      "D11.13",
+      "P1",
+      "11.2",
+      "D11.12",
+      "1.34",
+      "12.5",
+      "D5.5",
+      "CN1"
+    ],
+    "statement": "Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases."
+  },
+  {
+    "prop_id": "12.8",
+    "proof": "**Step 1.** Let the similar triangular pyramids be P = ABCD and P′ = A′B′C′D′, with vertices named in corresponding order. Their corresponding triangular faces are similar; hence the corresponding angles between AB, AC, AD and A′B′, A′C′, A′D′ are equal, and\nAB : A′B′ = AC : A′C′ = AD : A′D′.\nWe use completion to parallelepipeds: XII.7 will give the same fixed multiple of each pyramid, and XI.33 then supplies the required triplicate ratio directly. [D11.9, D6.1]\n\n**Step 2.** By drawing parallels, complete the parallelepiped Q having AB, AC, AD as its three edges at A. Name its base parallelogram ABEC and its opposite face DFHG, so that AD, BF, EH, CG are parallel edges. Likewise construct Q′ from A′B′, A′C′, A′D′, using corresponding primed names. The opposite faces of these solids are equal and parallelogrammic. [1.31, 11.24]\n\n**Step 3.** The three faces of Q meeting at A are similar respectively to the three faces of Q′ meeting at A′. Indeed, their corresponding adjacent sides are proportional by Step 1, and their included angles are equal. Their remaining angles are equal because adjacent angles of a parallelogram sum to two right angles and opposite angles are equal; their remaining sides are proportional because opposite sides are equal. Thus these corresponding parallelograms satisfy the definition of similar rectilineal figures. The opposite faces correspond similarly, since they have sides parallel and equal to those of the respective faces already considered. Consequently Q and Q′ are contained by six corresponding similar faces and are similar solids. [1.29, 1.34, 11.24, D6.1, D11.9]\n\n**Step 4.** Cut Q by the plane BCFG, which passes through the diagonals BC and FG of its opposite faces ABEC and DFHG. This bisects Q, and one half is the triangular prism T with opposite bases ABC and DFG. The corresponding cut of Q′ gives the triangular prism T′ with bases A′B′C′ and D′F′G′. Therefore Q is twice T, and Q′ is twice T′. [11.28]\n\n**Step 5.** Apply the three-pyramid division of XII.7 to T, drawing the dividing planes BCD and CDF. Its three equal triangular pyramids are ABCD, BCDF, and CDFG. The first is precisely P; hence T is three times P. The corresponding division of T′ shows that T′ is three times P′. Together with Step 4, this gives Q as six times P and Q′ as six times P′. [12.7]\n\n**Step 6.** Parts have the same ratio as their corresponding equimultiples, so\nP : P′ = Q : Q′.\nBut Q and Q′ are similar parallelepipedal solids, and therefore Q : Q′ is the triplicate ratio of AB : A′B′. The equality of ratios transfers this conclusion to P : P′. Since AB and A′B′ are corresponding sides of the given pyramids, and all corresponding side-pairs have the same ratio by their similar faces, the pyramids are in the triplicate ratio of their corresponding sides. [5.15, 11.33, 5.11, D6.1]\n\nTherefore similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.",
+    "used": [
+      "D11.9",
+      "D6.1",
+      "1.31",
+      "11.24",
+      "1.29",
+      "1.34",
+      "11.28",
+      "12.7",
+      "5.15",
+      "11.33",
+      "5.11"
+    ],
+    "statement": "Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides."
+  },
+  {
+    "prop_id": "12.9",
+    "proof": "**Step 1.** Let the two triangular pyramids be P = DABC and Q = D′A′B′C′. Write b and c for their respective base areas, and h and k for their respective heights. We use parallelepiped completion, since XI.34 already supplies both directions of the required reciprocal-proportion statement for parallelepipeds.\n\nBy drawing parallels, complete a parallelepiped K on the three edges AB, AC, AD, and similarly complete L on A′B′, A′C′, A′D′. Their heights are h and k. Let their base areas be B and C. Each triangular base is half its completed parallelogram, so B = 2b and C = 2c. [1.31, 1.34; route: 11.34]\n\n**Step 2.** Cut K through the diagonals of its base and opposite face. By XI.28 this produces two equal triangular prisms. Take the prism whose lower face is ABC and whose upper face is DEF, with AD, BE, CF as its lateral edges. The trisection of XII.7 consists of the pyramids ABCD, BCDE, CDEF, which are equal. Its first pyramid is precisely P. Thus this prism is three times P, and K is six times P. The identical construction for Q gives L six times Q. Hence\nK = 6P and L = 6Q. [11.28, 12.7]\n\n**Step 3.** Parts have the same ratio as their corresponding equimultiples. Consequently,\nB:C = 2b:2c = b:c,\nand\nK:L = 6P:6Q = P:Q. [5.15]\n\n**Step 4.** First suppose that P and Q are equal. Their sixfold multiples K and L are equal, by repeated addition of equals. XI.34 therefore gives\nB:C = k:h.\nTogether with Step 3, this yields\nb:c = k:h.\nThus the bases of the equal pyramids are reciprocally proportional to their heights. [CN2, 11.34, 5.11]\n\n**Step 5.** Conversely, suppose that the bases are reciprocally proportional to the heights, so that\nb:c = k:h.\nStep 3 then gives B:C = k:h. By the converse part of XI.34, K and L are equal; hence 6P = 6Q. More explicitly, equality of these multiples and V.15 give\nP:Q = 6P:6Q = 6Q:6Q = Q:Q.\nSince P and Q thus have the same ratio to Q, they are equal by V.9. Therefore pyramids with triangular bases are equal whenever their bases are reciprocally proportional to their heights. Both assertions are proved. [5.11, 11.34, 5.7, 5.15, 5.9]",
+    "used": [
+      "1.31",
+      "1.34",
+      "11.34",
+      "11.28",
+      "12.7",
+      "5.15",
+      "CN2",
+      "5.11",
+      "5.7",
+      "5.9"
+    ],
+    "statement": "In equal pyramids which have triangular bases the bases are reciprocally proportional to the heights; and those pyramids in which the bases are reciprocally proportional to the heights are equal."
+  },
+  {
+    "prop_id": "12.10",
+    "proof": "**Step 1.** Let K be the cone, S its vertex, O the centre of its circular base, and C the cylinder on that base whose upper base lies in the plane through S parallel to the lower base. Thus the solids have the same height. Inscribe a square P₀ in the base circle. For any inscribed polygon P obtained by refining this square, let Q(P) be the prism erected on P to the cylinder's height, and T(P) the pyramid with base P and vertex S. These lie inside C and K respectively. We use the same letters for solids and their magnitudes. [D11.18, D11.21, 4.6]\n\n**Step 2.** We take the direct route through triangular prisms, since their equal-thirds division already supplies the required factor three. Join O to the vertices of P, dividing P into triangles. The corresponding triangular prisms divide Q(P), and the pyramids on those triangles with vertex S divide T(P). In the three-equal-pyramid division of each triangular prism, one constituent has its lower triangular face as base and a vertex in the upper base plane. By the equality of pyramids with equal triangular bases and equal heights, that constituent equals the corresponding pyramid with vertex S. Adding over the triangles gives\nQ(P) = 3T(P).\n[12.7, 12.5, CN2]\n\n**Step 3.** Refine P as follows. For each side AB, bisect AB at E and extend the ray OE to meet the minor arc AB at M. The line OM is perpendicular to AB. The tangent at M is therefore parallel to AB. Construct the rectangle R having AB as one side and its opposite side on this tangent, with the remaining sides perpendicular to AB through A and B. The circular segment Σ between AB and the minor arc AB is a proper part of R, and triangle AMB lies inside Σ. Replace AB by AM and MB, doing this for every side to obtain the next inscribed polygon. [1.10, 3.3, 3.16, 1.28, CN5]\n\n**Step 4.** The line EM divides R into two rectangles, and AM and BM are diagonals of these respective rectangles. Each diagonal bisects its rectangle. Consequently, when these figures are erected to the cylinder's height, the prism on AMB is half the rectangular prism on R: the corresponding diagonal planes bisect the two rectangular solids. Likewise, when they are joined to S, the pyramid on AMB is half the pyramid on R, since the paired triangular bases are equal and their pyramids have the same height. Here the triangular-base theorem suffices directly. [1.34, 11.28, 12.5, CN2]\n\nThe cylindrical piece over Σ is a proper part of the prism on R. Hence the prism on AMB, which the refinement adds, is greater than half that cylindrical piece. Similarly, the portion of the cone formed by joining S to Σ is a proper part of the pyramid on R; therefore the pyramid on AMB is greater than half that portion of the cone. [CN5]\n\n**Step 5.** Repeat this refinement, obtaining polygons Pₙ and corresponding solids Qₙ and Tₙ. Set\nDₙ = C − Qₙ and Fₙ = K − Tₙ.\nThe pieces considered in Step 4 partition these respective remainders. Thus each refinement removes more than half of each remainder:\nDₙ₊₁ < Dₙ/2, and Fₙ₊₁ < Fₙ/2.\nThe same assertion holds for the successive magnitudes 3Fₙ. By exhaustion, Dₙ can therefore be made less than any prescribed positive solid magnitude, and so can 3Fₙ. Throughout, Step 2 gives Qₙ = 3Tₙ. [CN2, CN3, 10.1]\n\n**Step 6.** Suppose C > 3K, and put δ = C − 3K. Choose a refinement for which Dₙ < δ. Then\nQₙ = C − Dₙ > C − δ = 3K.\nBut Tₙ is a proper part of K, so Qₙ = 3Tₙ < 3K, a contradiction. Therefore C is not greater than 3K. [10.1, CN3, CN5]\n\n**Step 7.** Suppose instead that C < 3K, and put δ = 3K − C. Choose a refinement for which 3Fₙ < δ. Then\nQₙ = 3Tₙ = 3K − 3Fₙ > 3K − δ = C,\ncontrary to Qₙ being a proper part of C. Therefore C is not less than 3K either. It follows that C = 3K: any cone is a third part of the cylinder having the same base and equal height. [10.1, CN2, CN3, CN5]",
+    "used": [
+      "D11.18",
+      "D11.21",
+      "4.6",
+      "12.7",
+      "12.5",
+      "CN2",
+      "1.10",
+      "3.3",
+      "3.16",
+      "1.28",
+      "CN5",
+      "1.34",
+      "11.28",
+      "CN3",
+      "10.1"
+    ],
+    "statement": "Any cone is a third part of the cylinder which has the same base with it and equal height."
+  },
+  {
+    "prop_id": "12.11",
+    "proof": "**Step 1.** Let K and L be cones of the same height, with circular bases A and B. We first compare the cones by inscribed polygonal pyramids, using the polygonal-base theorem directly; afterward the cone–cylinder relation will give the result for cylinders. Inscribe a square in each base and repeatedly bisect all the intervening arcs, performing the same number of bisections in both circles. Denote the resulting similar polygons by a_j and b_j, and the pyramids joining them to the respective cone vertices by P_j and Q_j, beginning with j = 0. These pyramids lie inside their cones and increase with each refinement. [4.6, 3.30, D11.12, D11.18, CN5]\n\n**Step 2.** Similar polygons inscribed in circles are to one another as the squares on the diameters; the circles themselves have that same ratio. Hence a_j : b_j = A : B. Since P_j and Q_j have equal heights and polygonal bases, it follows that\nP_j : Q_j = a_j : b_j = A : B\nfor every j. The polygonal-base theorem is the natural choice here because every refinement again has polygonal bases. [12.1, 12.2, 5.11, 12.6]\n\n**Step 3.** We show explicitly that the remainders K − P_j and L − Q_j can be made smaller than any assigned positive solid magnitude. Consider a side UV of one of the inscribed polygons, and let M bisect the minor arc UV. Enclose the circular segment between UV and that arc in the rectangle having UV as one side and the parallel tangent at M as the opposite side. The perpendicular-bisector property of the chord and the tangent construction give this rectangle; its other sides pass through U and V perpendicular to UV. The circular segment is a proper part of the rectangle, while triangle UMV is half the rectangle, having the same base and lying between the same parallels. [3.30, 3.3, 3.16, 1.31, 1.41, CN5]\n\nJoin the rectangle and triangle to the vertex of the cone. By the equal-height polygonal-pyramid theorem, the triangular pyramid is half the rectangular pyramid. The portion of the cone joining the vertex to the circular segment is a proper part of the rectangular pyramid. Consequently the triangular pyramid is greater than half that portion of the cone. But this triangular pyramid is precisely what is added over UV when the arc is bisected. Applying this to every side shows that each refinement removes more than half the whole remainder outside the inscribed pyramid. Proposition 10.1 therefore makes each remainder smaller than any assigned positive solid magnitude. The same is true of any fixed multiple of either remainder, since those multiples likewise decrease by more than half at each refinement. [D11.12, D11.18, 12.6, 1.41, CN5, 10.1]\n\n**Step 4.** Let m and n be arbitrary positive integers. By Step 2 and the definition of equal ratios, the comparison of mP_j with nQ_j is always the same as that of mA with nB. Moreover, for j > 0, Step 2 gives P_j : Q_j = P_0 : Q_0. Subtracting the corresponding parts therefore gives\n(P_j − P_0) : (Q_j − Q_0) = A : B.\nThus the corresponding multiples of these increments also have the same comparison as mA and nB. [D5.5, 5.19, 5.11]\n\n**Step 5.** Suppose mA > nB. Then δ = mP_0 − nQ_0 is positive. By Step 4, the increments satisfy m(P_j − P_0) > n(Q_j − Q_0) for j > 0, so\nmP_j − nQ_j ≥ δ.\nChoose a refinement for which n(L − Q_j) < δ, as Step 3 permits. Then\nmK > mP_j ≥ nQ_j + δ > nQ_j + n(L − Q_j) = nL.\nHence mA > nB implies mK > nL. Interchanging the two cones and the two multipliers proves likewise that mA < nB implies mK < nL. [D5.5, 5.19, CN2, CN3, CN5, 10.1]\n\n**Step 6.** Suppose instead that mA = nB. Step 2 gives mP_j = nQ_j for every j. If mK > nL, let ε = mK − nL. Choose a refinement for which m(K − P_j) < ε. It follows that mP_j > nL, whereas mP_j = nQ_j < nL, a contradiction. Interchanging the cones excludes mK < nL as well. Therefore mK = nL. [D5.5, 10.1, CN3, CN5]\n\n**Step 7.** For arbitrary positive integers m and n, the multiples mK and nL therefore exceed, equal, or fall short of one another exactly as mA and nB do. By the definition of equality of ratios,\nK : L = A : B.\nThus cones of the same height are to one another as their bases. [D5.5]\n\n**Step 8.** Now let X and Y be cylinders of the same height, with bases A and B, and take the cones K and L on those bases with that height. Each cone is one third of its corresponding cylinder, so X = 3K and Y = 3L. Parts have the same ratio as their corresponding equal multiples; hence\nX : Y = K : L = A : B.\nTherefore cylinders also, and consequently cones and cylinders respectively, which are of the same height are to one another as their bases. [12.10, 5.15, 5.11]",
+    "used": [
+      "4.6",
+      "3.30",
+      "D11.12",
+      "D11.18",
+      "CN5",
+      "12.1",
+      "12.2",
+      "5.11",
+      "12.6",
+      "3.3",
+      "3.16",
+      "1.31",
+      "1.41",
+      "10.1",
+      "D5.5",
+      "5.19",
+      "CN2",
+      "CN3",
+      "12.10",
+      "5.15"
+    ],
+    "statement": "Cones and cylinders which are of the same height are to one another as their bases."
+  },
+  {
+    "prop_id": "12.12",
+    "proof": "**Step 1.** Let C and C′ be similar cones, with vertices S and S′, base-centres O and O′, heights h and h′, radii r and r′, and base-diameters d and d′. Their axes are their heights, and similarity gives h:h′ = d:d′. Since diameters are twice radii, also r:r′ = d:d′. We take the direct route through inscribed triangular pyramids, and afterwards transfer the result to cylinders by equal multiplication. [D11.18, D11.19, D11.24, 5.15]\n\n**Step 2.** Inscribe a square in each base-circle. Repeatedly bisect every central angle in both circles, joining the successive points obtained on their circumferences. This produces corresponding inscribed polygons with equal numbers of sides and equal corresponding central angles. Let P_k and P′_k be the pyramids having these polygons as bases and S and S′ as vertices, with k = 0 denoting the initial squares. Each refinement enlarges the inscribed pyramid. [4.6, 1.9, CN5]\n\n**Step 3.** Divide each polygon into triangles by joining its vertices to its centre. Consider corresponding triangular pyramids S–OAB and S′–O′A′B′.\n\nThe triangles OAB and O′A′B′ are similar, because their central angles are equal and their corresponding radii proportional. The right triangles SOA and S′O′A′, and likewise SOB and S′O′B′, are similar because h:h′ = r:r′. Consequently all corresponding edges of the two triangular pyramids are proportional in the ratio r:r′. Their remaining faces SAB and S′A′B′ are therefore similar as well. Thus the pyramids are similar solids. [6.6, 6.4, 6.5, D6.1, D11.9]\n\nBy the theorem for similar triangular pyramids, every such pair has the triplicate ratio of r:r′, hence of d:d′. Summing the corresponding triangular pyramids preserves their common ratio. Accordingly, if U = P_0 and V = P′_0, then for every k,\nP_k:P′_k = U:V,\nand U:V is the triplicate ratio of d:d′. This uses the triangular-pyramid theorem directly, rather than introducing a separate result about similar polygonal pyramids. [12.8, D5.10, 5.12, 5.11]\n\n**Step 4.** We show that these inscribed pyramids exhaust their cones. Consider one side AB of an inscribed polygon, and let M be the new point introduced between A and B by the next central-angle bisection. The radius OM bisects AB at right angles. Draw the tangent at M and the perpendiculars to AB through A and B. These bound a rectangle on AB, with its opposite side passing through M. The circular segment between AB and its minor arc is strictly contained in this rectangle. [1.4, 3.3, 3.16]\n\nThe rectangle is twice triangle ABM, since they have the same base and lie between the same parallels. Therefore the pyramid from S over this rectangle is twice the triangular pyramid S–ABM: their heights are equal, so their ratio is that of their bases. Here the polygonal-base theorem applies directly to the rectangle and triangle, avoiding an additional dissection. [1.41, 12.6]\n\nThe portion of C lying over the circular segment is strictly contained in that rectangular-based pyramid. Summing over all sides, the portions over the circular segments constitute C − P_k, while the pyramids S–ABM constitute P_{k+1} − P_k. Hence\nC − P_k < 2(P_{k+1} − P_k).\nThus each refinement removes more than half the remaining difference between the cone and its inscribed pyramid. The identical argument applies to C′ and P′_k. [D11.18, CN5]\n\n**Step 5.** It follows by exhaustion that C − P_k and C′ − P′_k can each be made less than any assigned positive solid magnitude. The same is true of any fixed multiple of either remainder, since its successive reductions also remove more than half. The construction can therefore be continued until any finitely many such requirements hold simultaneously. [10.1]\n\n**Step 6.** We now establish the exact ratio, using the definition of proportional magnitudes. Let m and n be arbitrary positive integers. Since P_k:P′_k = U:V, subtraction of the initial pyramids gives, for k > 0,\n(P_k − U):(P′_k − V) = U:V. [5.19]\n\nIf mU > nV, write δ = mU − nV. The definition of equal ratios gives\nm(P_k − U) > n(P′_k − V),\nso mP_k − nP′_k > δ. Choose k so that n(C′ − P′_k) < δ. Since C contains P_k, it follows that\nmC > mP_k > nP′_k + δ > nC′.\nIf mU < nV, the same argument with the two cones interchanged gives mC < nC′. [D5.5, 10.1, CN5]\n\nFinally, suppose mU = nV. Then mP_k = nP′_k for every k. If mC > nC′, choose k so that m(C − P_k) is smaller than the positive excess mC − nC′. This gives mP_k > nC′ > nP′_k, a contradiction. Interchanging the cones excludes mC < nC′. Therefore mC = nC′. [D5.5, 10.1, CN5]\n\nThus, for all m and n, the comparison of mC with nC′ agrees exactly with that of mU with nV. By the definition of equal ratios,\nC:C′ = U:V.\nBy Step 3, this is the triplicate ratio of d:d′. The proposition is therefore established for similar cones. [D5.5, 5.11]\n\n**Step 7.** Now let Z and Z′ be similar cylinders, and construct cones C and C′ on their respective bases with their respective heights. These cones are similar, because their axes and base-diameters have the same proportions as those of the cylinders. Each cylinder is three times its corresponding cone. Equal multiples preserve a ratio, so\nZ:Z′ = C:C′,\nwhich is the triplicate ratio of their base-diameters. Therefore similar cones, and likewise similar cylinders, are to one another in the triplicate ratio of the diameters in their bases. [D11.24, 12.10, 5.15]",
+    "used": [
+      "D11.18",
+      "D11.19",
+      "D11.24",
+      "5.15",
+      "4.6",
+      "1.9",
+      "CN5",
+      "6.6",
+      "6.4",
+      "6.5",
+      "D6.1",
+      "D11.9",
+      "12.8",
+      "D5.10",
+      "5.12",
+      "5.11",
+      "1.4",
+      "3.3",
+      "3.16",
+      "1.41",
+      "12.6",
+      "10.1",
+      "5.19",
+      "D5.5",
+      "12.10"
+    ],
+    "statement": "Similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases."
+  },
+  {
+    "prop_id": "12.13",
+    "proof": "**Step 1.** Let the parallel cutting plane meet the axis AC of the given cylinder at B. Denote the cylinder between A and B by U, and that between B and C by V; put a = AB and b = BC. In a plane through the axis, the traces of the cutting plane and the end planes are parallel (11.16). They therefore divide the generating rectangle into two rectangles of the same width (1.34). By the definitions of cylinder, axis, and bases, U and V are cylinders with axes a and b and with circular bases of the same radius (D11.21, D11.22, D11.23). These bases are equal, since they coincide when superposed (CN4).\n\n**Step 2.** We use the equimultiple criterion for equality of ratios directly (D5.5). Let m and n be arbitrary positive integers. Using the same circular base and the same axial ray, form cylinders P and Q whose axial lengths are respectively ma and nb. Divide the generating rectangle of P into m successive rectangles of axial length a, and that of Q into n successive rectangles of axial length b. Rotation gives corresponding partitions of P and Q into cylinders, all having bases equal to the original base (D11.21, D11.23, CN4).\n\n**Step 3.** Each of the m pieces of P has the same height and an equal base as U. By 12.11, its ratio to U is the ratio of their equal bases; taking onefold multiples in D5.5 shows that the piece equals U. Likewise, each of the n pieces of Q equals V. Hence, by addition of equals, P = mU and Q = nV (CN2). The equal-height theorem 12.11 is the direct choice here because precisely these equal-height comparisons are required.\n\n**Step 4.** Compare P and Q in their common position, with the same base and axial ray. If ma > nb, the generating rectangle of Q is a proper part of that of P, so Q is a proper part of P (D11.21), and therefore mU > nV (CN5). If ma = nb, their generating rectangles and the cylinders they generate coincide, so mU = nV (D11.21, CN4). If ma < nb, the reverse containment gives mU < nV (D11.21, CN5).\n\n**Step 5.** Thus, for every pair of positive integers m and n, the multiples mU and nV have exactly the same comparison as ma and nb. By D5.5, U : V = a : b = AB : BC. Therefore, as one of the two cylinders is to the other, so is its axis to the other's axis, as required.",
+    "used": [
+      "11.16",
+      "1.34",
+      "D11.21",
+      "D11.22",
+      "D11.23",
+      "CN4",
+      "D5.5",
+      "12.11",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis."
+  },
+  {
+    "prop_id": "12.14",
+    "proof": "**Step 1.** Let C and D be cylinders on equal bases B and B′, with heights h and k. Their axes have lengths h and k by the rotational definition of a cylinder and its axis [D11.21, D11.22]. We first compare cylinders by a parallel cut, which directly handles unequal heights without requiring similarity; afterward we pass to cones by their relation to cylinders.\n\n**Step 2.** If h = k, then C:D = B:B′ by the equal-height theorem [12.11]. Since B = B′, the definition of equal ratios, applied with both multiples equal to one, gives C = D. Ratios of equal magnitudes are the same, so C:D = h:k [D5.5].\n\n**Step 3.** Suppose the heights are unequal, and label the cylinders so that h > k. Cut off from the axis of C a segment of length k [1.3], and cut C there by a plane parallel to its bases. Let E be the cylindrical part of height k and F the remaining cylindrical part, of height h − k. The rotational definition shows that these parts are cylinders with the same base as C, and their axes have the stated lengths [D11.21, D11.22]. Thus C = F + E.\n\n**Step 4.** By the theorem on a cylinder cut parallel to its bases,\nF:E = (h − k):k [12.13].\nConsequently, by composition,\n(F + E):E = ((h − k) + k):k,\nand therefore C:E = h:k [5.18].\n\n**Step 5.** The cylinders E and D have equal heights and equal bases. Hence E:D = B:B′ [12.11], and therefore E = D by the definition of equal ratios [D5.5]. Replacing E by its equal D gives C:D = C:E [5.7]; thus C:D = h:k [5.11]. Reversing both ratios preserves their equality by the same definition [D5.5], so the result also holds with the opposite labeling. Together with Step 2, this proves the assertion for all cylinders on equal bases.\n\n**Step 6.** Now let P and Q be cones on equal bases, with heights h and k. Take cylinders C and D respectively on those same bases and with those same heights. Each cone is one-third of its corresponding cylinder [12.10]. Parts have the same ratio as their corresponding equal multiples, so P:Q = C:D [5.15]. The cylinder result gives C:D = h:k; hence P:Q = h:k [5.11]. Therefore cones on equal bases, and likewise cylinders on equal bases, are to one another as their heights.",
+    "used": [
+      "D11.21",
+      "D11.22",
+      "12.11",
+      "D5.5",
+      "1.3",
+      "12.13",
+      "5.18",
+      "5.7",
+      "5.11",
+      "12.10",
+      "5.15"
+    ],
+    "statement": "Cones and cylinders which are on equal bases are to one another as their heights."
+  },
+  {
+    "prop_id": "12.15",
+    "proof": "**Step 1.** Let S₁ and S₂ be two cones or two cylinders, with bases B₁, B₂ and heights h₁, h₂. Construct an auxiliary solid T of the same kind, with base equal to B₁ and height h₂. We choose this comparison because the equal-height and equal-base propositions apply directly, without cutting the given solids. [12.11, 12.14]\n\n**Step 2.** Since T and S₂ have the same height, and T and S₁ have equal bases,\nT : S₂ = B₁ : B₂,\nand\nT : S₁ = h₂ : h₁.\n[12.11, 12.14]\n\n**Step 3.** Suppose S₁ and S₂ are equal. The same magnitude T has the same ratio to these equal magnitudes, so T : S₂ = T : S₁. Combining this with Step 2 gives B₁ : B₂ = h₂ : h₁. Thus the bases are reciprocally proportional to the heights. [5.7, 5.11]\n\n**Step 4.** Conversely, suppose B₁ : B₂ = h₂ : h₁. By Step 2 and equality of ratios, T : S₂ = T : S₁. Magnitudes to which the same magnitude has the same ratio are equal; hence S₂ = S₁. Therefore, for cones as well as for cylinders, equality of the solids is equivalent to reciprocal proportionality of their bases and heights. [5.11, 5.9]",
+    "used": [
+      "12.11",
+      "12.14",
+      "5.7",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "In equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights are equal."
+  },
+  {
+    "prop_id": "12.16",
+    "proof": "**Step 1.** Let O be the common centre, and let r and R be the radii of the lesser and greater circles, respectively, so r<R. Choose B on the lesser circle. Through B draw a perpendicular to OB, and extend it to meet the greater circle at C and D. Thus the chord CD has perpendicular distance OB=r from O. Put φ=∠COD, taking the interior angle of triangle COD. We shall construct equal central angles smaller than φ and compare their chords directly. [D1.15, P1, P2, 1.11]\n\n**Step 2.** Draw two perpendicular diameters of the greater circle. They divide the angles about O into four equal right angles. Bisect every sector angle, and then bisect each resulting angle again. Repeat these paired bisections simultaneously in all sectors. After k rounds there are 4·4^k equal sectors. [P2, 1.11, P4, 1.9]\n\n**Step 3.** A paired bisection replaces each sector angle by one quarter of itself: the amount removed is three quarters, greater than its half. Hence X.1 guarantees a finite stage at which the common sector angle θ is less than φ. If the initial angle is already smaller, no refinement is needed; if equality occurs, one further round makes it smaller. Paired bisection is chosen so that X.1 applies in its stated, strictly-more-than-half form. [1.9, 10.1]\n\n**Step 4.** Let V₁,…,Vₙ be the successive points where the resulting rays meet the greater circle, with n=4·4^k, and join consecutive points, including Vₙ to V₁. Every triangle OVᵢVᵢ₊₁ has two sides equal to R and included angle θ. Therefore I.4 makes all their bases equal. This uses the directly available triangle-congruence proposition, without requiring an arc comparison. The resulting polygon is equilateral, has an even number of sides, and is inscribed in the greater circle because all its vertices lie on that circumference. [P1, D1.15, 1.4, D4.3]\n\n**Step 5.** For any side VᵢVᵢ₊₁, compare triangles COD and OVᵢVᵢ₊₁. Their two radial sides are respectively equal, while φ>θ. Consequently CD>VᵢVᵢ₊₁ by I.24. [D1.15, 1.24]\n\n**Step 6.** Draw OH perpendicular to the straight line containing this arbitrary side. If OH<OB, that side would be nearer the centre than CD and therefore greater than CD by III.15, contrary to Step 5. If OH=OB, the two chords would be equally distant from the centre and therefore equal by III.14, again contrary to Step 5. Thus OH>OB=r. [1.12, D3.4, D3.5, 3.15, 3.14]\n\n**Step 7.** Let X be any point of this side. If X=H, then OX=OH>r. Otherwise triangle OHX is right-angled at H; by I.17 its other angles are less than that right angle, and by I.19 its hypotenuse OX is greater than OH. Thus in every case OX>r. Since every point of the lesser circumference is at distance r from O, no side meets that circumference or enters the lesser circle. Therefore the constructed polygon is an equilateral polygon with an even number of sides, inscribed in the greater circle and not touching the lesser circle, as required. [1.17, 1.19, D1.15]",
+    "used": [
+      "D1.15",
+      "P1",
+      "P2",
+      "1.11",
+      "P4",
+      "1.9",
+      "10.1",
+      "1.4",
+      "D4.3",
+      "1.24",
+      "1.12",
+      "D3.4",
+      "D3.5",
+      "3.15",
+      "3.14",
+      "1.17",
+      "1.19"
+    ],
+    "statement": "Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle."
+  },
+  {
+    "prop_id": "12.17",
+    "proof": "**Step 1.** Let O be the common centre, and let R and r be the radii of the greater and lesser spheres, with R > r. We use the planar construction 12.16 directly, with an intermediate radius to allow for polygonal approximation in two directions. Construct a mean proportional t between R and r. Then t² = Rr and r < t < R. [6.13, 6.17]\n\n**Step 2.** Choose a plane E through O, and erect its perpendicular diameter NS. Choose a meridian great circle through NS; its centre is O and its radius is R. [11.12, D11.14, D11.16]\n\nIn this circle apply 12.16 to the concentric circles of radii R and t. Obtain an equilateral inscribed polygon P with an even number n of sides, none of whose sides meets the smaller circle. The triangles formed by O and successive sides have three corresponding sides equal; hence their central angles are equal. Thus P is regular. By copying these central angles, place a vertex at N; since n is even, the opposite vertex is S. [12.16, 1.8, 1.23]\n\n**Step 3.** Let a be the perpendicular distance from O to any side of P. These distances are equal because the sides are equal. Each perpendicular meets its side at its midpoint, so its foot belongs to the side itself. Consequently a > t, since the sides avoid the circle of radius t. Also a < R, by the right triangle formed by O, a side’s midpoint, and an endpoint. Put k = a/R. Then\n\n0 < k < 1, and ka = a²/R > t²/R = r.\n\n[3.14, 3.3, 1.47; Step 1]\n\n**Step 4.** Take the half of P running from N to S on one side of NS. In E construct n equally spaced rays from O, using the central angle of P. Rotate this half-polygon about NS into the n meridian half-planes determined by those rays. Every copied vertex lies on the greater sphere, by the defining rotation of a sphere. [1.23, D11.14]\n\nAt each nonpolar vertex-level, join successive copied vertices. They form a regular n-gon in a plane perpendicular to NS. These planes are parallel, and the polygons are similarly situated, with their centres on NS. Join corresponding vertices at consecutive levels. [11.14, 6.4]\n\n**Step 5.** Corresponding sides of consecutive level-polygons are parallel: each is parallel to the corresponding side of the equatorial copy of P. They therefore lie in one plane and bound a trapezoidal face. At N and S the corresponding faces are triangles. These finitely many faces form a closed polyhedral solid K. [11.9, 11.7]\n\nHere is an explicit description of its sections. Let H be a point of NS strictly between the poles, and cut K by the plane through H parallel to E. In the original meridian let Y be the point where this plane meets the polygonal chain from N to S, and write ρ = HY. The section Q is a regular n-gon centred at H, similar to P, with circumradius ρ. Indeed, a parallel section of each trapezoidal or triangular face divides its lateral edges in the same ratio; its vertices are therefore the n equally spaced rotated copies of Y. This also shows that the faces close without crossings and that O is inside K. [6.2, 6.4]\n\n**Step 6.** Write h = OH. The point Y lies on a side of P. If F is the perpendicular foot from O to that side, then OF = a, and therefore OY² = a² + FY² ≥ a². Moreover, a chord lies within its circle, so OY ≤ R. Since HY is perpendicular to the axis,\n\na² ≤ h² + ρ² = OY² ≤ R².\n\n[1.47, 3.2, D11.3]\n\nEvery point of Q is within its circumcircle, and hence has distance at most ρ from H. Its squared distance from O is consequently at most h² + ρ² ≤ R². Thus K lies wholly in the greater sphere; all its vertices lie on that sphere by Step 4. [3.2, 1.47]\n\n**Step 7.** Since Q is similar to P, its apothem b satisfies b/ρ = a/R; hence b = kρ. A point X on any side of Q has HX ≥ b, by the perpendicular from H to that side and the right-triangle theorem. Therefore\n\nOX² = h² + HX² ≥ h² + k²ρ² ≥ k²(h² + ρ²) ≥ k²a² > r².\n\nHere the second inequality uses k < 1, the third uses Step 6, and the strict inequality uses ka > r from Step 3. The poles themselves also have distance R > r from O. Thus every point of the polyhedral surface is strictly outside the lesser sphere. [6.4, 1.47]\n\nFurthermore, whenever h ≤ r, the circular section of the lesser sphere has radius s satisfying s² = r² − h². The same inequality gives b² > r² − h² = s². Hence that circle lies strictly inside the centred polygon Q. Thus K contains the lesser sphere, and its surface nowhere meets the lesser sphere. [1.47]\n\nAccordingly K is the required polyhedral solid inscribed in the greater sphere and not touching the lesser sphere at its surface.",
+    "used": [
+      "6.13",
+      "6.17",
+      "11.12",
+      "D11.14",
+      "D11.16",
+      "12.16",
+      "1.8",
+      "1.23",
+      "3.14",
+      "3.3",
+      "1.47",
+      "11.14",
+      "6.4",
+      "11.9",
+      "11.7",
+      "6.2",
+      "3.2",
+      "D11.3"
+    ],
+    "statement": "Given two spheres about the same centre, to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface."
+  },
+  {
+    "prop_id": "12.18",
+    "proof": "**Step 1.** Let the spheres have solid magnitudes S and T, radii r and s, and diameters d and e. Place their centres together at O; this does not change their magnitudes [CN4]. Since the diameters are twice the radii, r:s = d:e [5.15]. We use the inscribed polyhedra of XII.17 and divide them into triangular pyramids: XII.8 is therefore the natural triplicate-ratio result for this route.\n\n**Step 2.** Radial copies about O can be constructed by taking fourth proportional lengths on the rays [6.12]. In any triangle formed by O and two vertices, radial copying preserves the angle at O and multiplies its adjacent sides in the same ratio. The corresponding triangles are therefore equiangular, and their remaining sides have that same ratio [6.6, 6.4]. Consequently, corresponding triangular faces have proportional sides and are similar [6.5]; corresponding triangular pyramids are thus similar solid figures [D11.9].\n\nChoose a triangular pyramid U with vertex O, and let V be its radial copy with lengths multiplied in the ratio s:r. By XII.8, U:V is the triplicate ratio of r:s, hence of d:e [12.8, 5.15]. It remains to prove S:T = U:V.\n\n**Step 3.** Whenever P is an enclosing polyhedron about O and Q is its radial copy with lengths multiplied in the ratio s:r, triangulate the faces of P and join their triangles to O. Do the corresponding division in Q. Each pair of corresponding triangular pyramids has the ratio U:V, since each has the same triplicate ratio of corresponding lengths [12.8, 5.11]. Therefore their sums satisfy\nP:Q = U:V [5.12].\nThe same argument applies to any radial enlargement of either polyhedron.\n\n**Step 4.** Let k be any positive integer. Inside S take the concentric sphere of radius kr/(k+1). By XII.17, inscribe in S a polyhedron P whose boundary lies outside that smaller sphere, so that P contains it [12.17]. Let Q be the corresponding radial copy inscribed in T. Then Q contains the concentric sphere of radius ks/(k+1).\n\nEnlarge P and Q radially by the factor (k+1)/k, obtaining P⁺ and Q⁺. These contain S and T respectively. Thus, as solid magnitudes,\nP < S < P⁺, and Q < T < Q⁺ [CN5].\n\nPut a = k³ and b = (k+1)³. By the triangular-pyramid calculation of Step 3, the ratios P⁺:P and Q⁺:Q are triplicate ratios of (k+1):k; consequently\n aP⁺ = bP, and aQ⁺ = bQ\n[12.8, 5.12, D5.10, D5.5]. Hence, for every positive integer k, the constructed polyhedra satisfy\nP:Q = U:V,\nP < S, Q < T,\naS < bP, and aT < bQ.\n\n**Step 5.** We shall use the following finite exhaustion calculation. Given solid magnitudes X > Y, choose a positive integer k such that\nk(X − Y) > 7Y;\nsuch a multiple exists by the Archimedean condition on magnitudes [D5.4]. Since\n(k+1)³ − k³ = 3k² + 3k + 1 ≤ 7k²,\nit follows, by multiplying the preceding strict inequality by k² and adding k³Y, that\nk³X > (k+1)³Y.\nThus k can always be chosen so that aX > bY, with a and b as in Step 4.\n\n**Step 6.** Take arbitrary positive integers m and n. Suppose first that mU > nV. By Step 5 choose k so that\namU > bnV,\nand take the polyhedra supplied by Step 4 for this k. Because P:Q = U:V, the definition of equal ratios gives\namP > bnQ [D5.5].\nThe inequalities of Step 4 now yield\namS > amP > bnQ > anT.\nTherefore mS > nT. Interchanging the two spheres and the corresponding pyramids proves likewise that mU < nV implies mS < nT [D5.5, CN5].\n\n**Step 7.** Suppose instead that mU = nV. For every pair P,Q constructed in Step 4, equality of ratios gives mP = nQ [D5.5]. If mS > nT, choose k by Step 5 so that amS > bnT. But Step 4 gives\namS < bmP = bnQ < bnT,\na contradiction. If nT > mS, choose k so that anT > bmS; then, similarly,\nanT < bnQ = bmP < bmS,\nagain a contradiction. Hence mS = nT [D5.5, CN5].\n\n**Step 8.** For every pair of positive integers m,n, the multiples mS,nT have precisely the same comparison—greater, equal, or less—as mU,nV. Therefore S:T = U:V by the definition of equal ratios [D5.5]. Since U:V is the triplicate ratio of r:s = d:e, the spheres are to one another in the triplicate ratio of their respective diameters [12.8, 5.15].",
+    "used": [
+      "CN4",
+      "5.15",
+      "6.12",
+      "6.6",
+      "6.4",
+      "6.5",
+      "D11.9",
+      "12.8",
+      "5.11",
+      "5.12",
+      "12.17",
+      "CN5",
+      "D5.10",
+      "D5.5",
+      "D5.4"
+    ],
+    "statement": "Spheres are to one another in the triplicate ratio of their respective diameters."
+  }
+]

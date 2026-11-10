@@ -1,0 +1,1578 @@
+{
+  "completed_at": "2026-11-06T15:26:24.147505+00:00",
+  "expected_ids": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9",
+    "2.10",
+    "2.11",
+    "2.12",
+    "2.13",
+    "2.14"
+  ],
+  "selected_attempts": {
+    "2.1": 0,
+    "2.2": 0,
+    "2.3": 0,
+    "2.4": 0,
+    "2.5": 0,
+    "2.6": 0,
+    "2.7": 0,
+    "2.8": 0,
+    "2.9": 0,
+    "2.10": 0,
+    "2.11": 0,
+    "2.12": 0,
+    "2.13": 0,
+    "2.14": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "2.1": [
+      {
+        "result": {
+          "prop_id": "2.1",
+          "proof": "**Step 1.** Let UV be the uncut straight line, and let the other straight line AB be divided, in order, at A = X₀, X₁, …, Xₙ = B. We choose a direct subdivision into rectangles, constructing the required pieces themselves. At A draw a perpendicular to AB; produce it sufficiently far and cut off AD equal to UV. [1.11, P2, 1.3]\n\n**Step 2.** Through D draw a straight line parallel to AB. Through each Xᵢ, for i = 1, …, n, draw a straight line parallel to AD, meeting the parallel through D at Yᵢ. Put Y₀ = D and Yₙ = E. [1.31]\n\n**Step 3.** The straight lines XᵢYᵢ are mutually parallel, since they are parallel to AD. Moreover, since AD is perpendicular to AB, the angle relations for parallel lines show that the angles formed by these lines with AB and DE are right angles. Thus ABED is a rectangle, as is every strip Xᵢ₋₁XᵢYᵢYᵢ₋₁. [1.30, 1.29]\n\n**Step 4.** For each i ≥ 1, AXᵢYᵢD is a parallelogram, so its opposite sides XᵢYᵢ and AD are equal. Consequently every strip has its perpendicular side equal to AD, which was constructed equal to UV. [1.34]\n\n**Step 5.** The whole rectangle ABED is therefore the rectangle contained by AB and UV. Likewise, each strip Xᵢ₋₁XᵢYᵢYᵢ₋₁ is the rectangle contained by the segment Xᵢ₋₁Xᵢ and UV: these are the lengths of its two sides containing a right angle. [D2.1]\n\n**Step 6.** Because the division points occur successively on AB and the parallel dividing lines do not meet, the strips have no overlapping interiors and together fill exactly ABED. Their aggregate therefore coincides with, and is equal to, the whole rectangle. Substituting the identifications in Step 5, the rectangle contained by the two given straight lines equals all the rectangles contained by the uncut straight line and the several segments of the cut straight line, taken together. This is the required conclusion. [D1.23, CN4]",
+          "used": [
+            "1.11",
+            "P2",
+            "1.3",
+            "1.31",
+            "1.30",
+            "1.29",
+            "1.34",
+            "D2.1",
+            "D1.23",
+            "CN4"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:17:27.738312+00:00",
+          "prompt_sha256": "e4f87c4bf65319a5f44b1f0c8ba8e8897bb7e0e0b9837e3b62d17f9ceb73ea42",
+          "resource_table_sha256": "e8e6825bb115fa881ed670a03fe6a9d7d35f2dbd3bc8dd17a5444c66e6709312",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b16f-ab6e-72b2-945a-ee3f2d79bca8",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b16f-ab6e-72b2-945a-ee3f2d79bca8",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-17-28-01a1b16f-ab6e-72b2-945a-ee3f2d79bca8.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:19:19.388671+00:00",
+          "total_wall_time_seconds": 111.65
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.2": [
+      {
+        "result": {
+          "prop_id": "2.2",
+          "proof": "**Step 1.** Let the straight line AB be cut at any point C between A and B. Describe the square ABDE on AB [1.46]. Its adjacent sides AE and AB are equal and contain a right angle [D1.22]; hence this square is the rectangle contained by AE and AB [D2.1].\n\n**Step 2.** Use the direct specialization of Proposition 2.1, since it applies immediately to the cut line AB and the uncut line AE. It gives that the rectangle contained by AE and AB is equal to the rectangles contained by AE and AC, and by AE and CB, taken together [2.1].\n\n**Step 3.** Since AE equals AB, the two latter rectangles are respectively the rectangles contained by AB and AC, and by AB and CB [D1.22, D2.1]. The rectangle contained by AE and AB is the square on AB, as established in Step 1. Therefore the rectangles contained by the whole AB and each of its two segments, taken together, are equal to the square on the whole AB [2.1]. This is the required conclusion.",
+          "used": [
+            "1.46",
+            "D1.22",
+            "D2.1",
+            "2.1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:17:57.518098+00:00",
+          "prompt_sha256": "906c3e6375e86e38fc066a102b4eb2d75b828f74d969b8a5e953728b77cfbad9",
+          "resource_table_sha256": "1b2725a2d5304c82e0a7b14205c62566910f65407f07c39838e5c828e87ee79e",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b170-1f84-7e02-bfae-a04e7fa4c85b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b170-1f84-7e02-bfae-a04e7fa4c85b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-17-57-01a1b170-1f84-7e02-bfae-a04e7fa4c85b.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:18:43.089003+00:00",
+          "total_wall_time_seconds": 45.571
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.3": [
+      {
+        "result": {
+          "prop_id": "2.3",
+          "proof": "**Step 1.** Let the straight line AB be cut at an arbitrary point C, and let BC be the aforesaid segment. Denote by R(x,y) the rectangle contained by the straight lines x and y; the order of these two containing sides is immaterial. [D2.1]\n\n**Step 2.** Use the two-segment case of Proposition 2.1 directly, since it already decomposes the required rectangle. Apply it to the straight lines BC and AB, with AB cut into AC and CB. It gives\nR(AB,BC) = R(AC,BC) + R(BC,BC). [2.1]\n\n**Step 3.** The square on BC is precisely the rectangle contained by BC and BC. Hence the preceding equality says that the rectangle contained by the whole AB and the segment BC equals the rectangle contained by the two segments AC and BC together with the square on BC. The chosen segment was arbitrary, so this proves the proposition. [D1.22, D2.1]",
+          "used": [
+            "D2.1",
+            "2.1",
+            "D1.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:18:27.488487+00:00",
+          "prompt_sha256": "adc3430af1a672be8ebb4d32b6e6715eb151f90bef13e4e42c7c798f04f0120a",
+          "resource_table_sha256": "bc56f896c459041b09ef29976cb8df21fca58aeb13f46a921aeae3a097d12264",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b170-94e5-79e3-99dd-cdfa7fc1f5ba",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b170-94e5-79e3-99dd-cdfa7fc1f5ba",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-18-27-01a1b170-94e5-79e3-99dd-cdfa7fc1f5ba.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:19:33.807954+00:00",
+          "total_wall_time_seconds": 66.319
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.4": [
+      {
+        "result": {
+          "prop_id": "2.4",
+          "proof": "**Step 1.** Let AB be cut at any point C between A and B. Write S for the square on AB, X and Y for the squares on AC and CB, and R for the rectangle contained by AC and CB. Write U and V for the rectangles contained by AB and AC, and by AB and CB, respectively. Choose the square-specific decomposition, since it applies directly to the whole line and its two segments: S = U + V. Here addition denotes the sum of areas. [2.2]\n\n**Step 2.** Apply the whole-by-segment identity to AB cut at C, first taking AC as the selected segment and then taking CB. It gives U = R + X and V = R + Y. The rectangle contained by the two segments is R in both applications. [2.3]\n\n**Step 3.** Adding these equalities, U + V equals the squares X and Y together with two copies of R; that is, U + V = X + Y + 2R. [CN2]\n\n**Step 4.** Since S = U + V, it follows that S = X + Y + 2R. Thus the square on the whole AB is equal to the squares on AC and CB and twice the rectangle contained by AC and CB, as required. [CN1]",
+          "used": [
+            "2.2",
+            "2.3",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:18:57.499399+00:00",
+          "prompt_sha256": "5e87dff95ebdf93b6ac98efddaf5a6bc6078d3182d2dc22707f979dbb1304982",
+          "resource_table_sha256": "a92b0542f79e0bcfaaf18a50ee39e88ec1ba196e576e838bd7f497aa54d37903",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b171-0a00-70b3-b2ce-9d51f5be79ac",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b171-0a00-70b3-b2ce-9d51f5be79ac",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-18-57-01a1b171-0a00-70b3-b2ce-9d51f5be79ac.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:19:49.359978+00:00",
+          "total_wall_time_seconds": 51.861
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.5": [
+      {
+        "result": {
+          "prop_id": "2.5",
+          "proof": "**Step 1.** Let AB be cut equally at C and unequally at D. Interchanging the names A and B if necessary, take the order to be A, C, D, B. Thus AC = CB. Write R(X,Y) for the rectangle contained by the lengths X and Y, and S(X) for the square on X. By the definitions, S(X) = R(X,X); reversing the order of the containing sides or replacing them by equal lengths gives coincident, hence equal, rectangles. [D2.1, D1.22, CN4]\n\n**Step 2.** Choose the direct rectangle-decomposition route: proposition 2.1 is the earliest applicable rule and supplies all the required decompositions. Apply it to AD cut at C, with DB as the uncut straight line:\nR(AD,DB) = R(AC,DB) + R(CD,DB).\nSince AC = CB, this gives\nR(AD,DB) = R(CB,DB) + R(CD,DB). [2.1, CN4]\n\n**Step 3.** Apply the same rule to CB cut at D, with CD as the uncut straight line:\nR(CB,CD) = R(CD,CD) + R(DB,CD)\n= S(CD) + R(CD,DB). [2.1, D1.22, CN4]\n\n**Step 4.** Apply the rule once more to CB cut at D, now with a straight line equal to CB as the uncut straight line:\nS(CB) = R(CB,CD) + R(CB,DB).\nSubstituting the equality from Step 3 yields\nS(CB) = S(CD) + R(CD,DB) + R(CB,DB). [2.1, D1.22, CN2, CN1]\n\n**Step 5.** By Step 2, the last two rectangles together equal R(AD,DB). Therefore\nS(CB) = S(CD) + R(AD,DB).\nHere AD and DB are the unequal segments of the whole, CD is the straight line between the points of section, and CB is the half. Thus the rectangle contained by the unequal segments, together with the square on the straight line between the points of section, equals the square on the half, as required. [CN2, CN1]",
+          "used": [
+            "D2.1",
+            "D1.22",
+            "CN4",
+            "2.1",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:19:27.505402+00:00",
+          "prompt_sha256": "1bdb060805fa16c60cd2761f1005767f399464e87ce33da1bd05c0aee4d1b743",
+          "resource_table_sha256": "df8b6a25230128999c397bea472bf7a7fef35e7198e90699fce787644850f2aa",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b171-7f2f-7e13-abb3-5c137cce0846",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b171-7f2f-7e13-abb3-5c137cce0846",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-19-27-01a1b171-7f2f-7e13-abb3-5c137cce0846.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:20:45.774065+00:00",
+          "total_wall_time_seconds": 78.269
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.6": [
+      {
+        "result": {
+          "prop_id": "2.6",
+          "proof": "**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B, so that A, C, B, D occur in this order and AC = CB. Write R(XY, ZW) for the rectangle contained by XY and ZW, and S(XY) for the square on XY. These symbols denote areas, not numerical products. [D2.1, D1.22]\n\n**Step 2.** Choose the direct decomposition of AD at C and B: its pieces will match those in the expansion of the square on CD. By II.1, with BD as the uncut straight line,\nR(AD, BD) = R(AC, BD) + R(CB, BD) + R(BD, BD). [2.1]\n\n**Step 3.** Since AC = CB, the rectangles R(AC, BD) and R(CB, BD) have equal corresponding sides and coincide when superposed, so they are equal. Also, the rectangle contained by BD and BD is the square on BD. Consequently,\nR(AD, BD) = 2R(CB, BD) + S(BD). [CN4, D1.22, CN2]\n\n**Step 4.** Apply II.4 to CD cut at B. It gives\nS(CD) = S(CB) + S(BD) + 2R(CB, BD). [2.4]\n\n**Step 5.** Add S(CB) to both sides of the equality in Step 3. The resulting right-hand side consists of exactly the areas equal to S(CD) in Step 4. Hence\nR(AD, BD) + S(CB) = S(CD).\nHere AD is the whole original line together with the added line, BD is the added line, CB is the half, and CD is the half together with the added line. This is the required conclusion. [CN2, CN1]",
+          "used": [
+            "D2.1",
+            "D1.22",
+            "2.1",
+            "CN4",
+            "CN2",
+            "2.4",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:19:57.483726+00:00",
+          "prompt_sha256": "c08f106312fd08e8e1cb960797c4b2e8d7d8878c7431b0c919a3beb0420fb378",
+          "resource_table_sha256": "ae39cb087a5765a733430dc244bf8a772726a7a1d4dcb2f9f4b2cced33623176",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b171-f43c-7bb1-a147-0b78aad2dee2",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b171-f43c-7bb1-a147-0b78aad2dee2",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-19-57-01a1b171-f43c-7bb1-a147-0b78aad2dee2.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:21:09.202291+00:00",
+          "total_wall_time_seconds": 71.719
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.7": [
+      {
+        "result": {
+          "prop_id": "2.7",
+          "proof": "**Step 1.** Let AB be cut at an arbitrary point C, and take AC as the specified segment. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. Choose the direct decomposition given by 2.4, since it immediately expresses the square on the whole in terms of the segments:\nS(AB) = S(AC) + S(CB) + 2R(AC,CB). [2.4]\n\n**Step 2.** Add S(AC) to both sides. Then\nS(AB) + S(AC) = 2S(AC) + S(CB) + 2R(AC,CB). [CN2]\n\n**Step 3.** Applied to the same cut, 2.3 gives\nR(AB,AC) = R(AC,CB) + S(AC).\nAdd this equality to itself, and then add S(CB) to both sides:\n2R(AB,AC) + S(CB) = 2R(AC,CB) + 2S(AC) + S(CB). [2.3, CN2]\n\n**Step 4.** The right-hand sides in Steps 2 and 3 are the same sum of areas. Therefore\nS(AB) + S(AC) = 2R(AB,AC) + S(CB).\nThus the square on the whole and the square on the specified segment together equal twice the rectangle contained by the whole and that segment, together with the square on the remaining segment, as required. [CN1]",
+          "used": [
+            "2.4",
+            "CN2",
+            "2.3",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:20:27.494151+00:00",
+          "prompt_sha256": "ef72653bcde4659383e703b041055c61ae28886d3d4789b18d50c6a9897c3f6f",
+          "resource_table_sha256": "a36de91bbc3940604bed8d5e4d95d7e4f9b1b9475b6668b8fbe70338cf783797",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b172-698a-75a3-a636-dc505b2c54b0",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b172-698a-75a3-a636-dc505b2c54b0",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-20-27-01a1b172-698a-75a3-a636-dc505b2c54b0.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:21:06.431338+00:00",
+          "total_wall_time_seconds": 38.937
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.8": [
+      {
+        "result": {
+          "prop_id": "2.8",
+          "proof": "**Step 1.** Let AB be cut at an arbitrary point C, and let AC be the aforesaid segment, so that CB is the remaining segment. Produce AB beyond B sufficiently far, and cut off BD equal to AC. Thus AD consists of the whole AB and the segment AC placed together on one straight line. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. [P2, 1.3]\n\n**Step 2.** Apply II.4 to AD cut at B. Since BD equals AC, it gives\nS(AD) = S(AB) + S(AC) + 2R(AB,AC).\nThis decomposition reduces the proof to replacing the first two squares. [2.4]\n\n**Step 3.** Apply II.7 to AB cut at C, taking AC as the selected segment. This proposition directly supplies the two-square sum occurring in Step 2:\nS(AB) + S(AC) = 2R(AB,AC) + S(CB). [2.7]\n\n**Step 4.** Add 2R(AB,AC) to both sides of the equality in Step 3 and combine it with Step 2. Then\nS(AD) = 4R(AB,AC) + S(CB).\nSince AD is AB and AC taken as one straight line, four times the rectangle contained by the whole and the aforesaid segment, together with the square on the remaining segment, equals the square on the whole and the aforesaid segment taken as one straight line. This is the required conclusion. [CN2, CN1]",
+          "used": [
+            "P2",
+            "1.3",
+            "2.4",
+            "2.7",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:20:57.500256+00:00",
+          "prompt_sha256": "2f6d79600875f6c5fbf2e5a0fcb819d2aa1f10799eb2f6baf720b01920b2338d",
+          "resource_table_sha256": "7b8fdc8d23126aec9f224aa1f88bf9258c0af9ef7a08b63c59a29fa99e0e8dcd",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b172-deb6-7371-b4a0-0ba94d8989fb",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b172-deb6-7371-b4a0-0ba94d8989fb",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-20-57-01a1b172-deb6-7371-b4a0-0ba94d8989fb.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:22:12.575178+00:00",
+          "total_wall_time_seconds": 75.075
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.9": [
+      {
+        "result": {
+          "prop_id": "2.9",
+          "proof": "**Step 1.** Let AB be bisected at C and cut unequally at D. Interchanging the names A and B if necessary, suppose the points occur in the order A, C, D, B. Write Q(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. Since AC = CB, their squares are equal, as are the rectangles contained by AC, CD and by CB, CD: the corresponding figures coincide by superposition. [CN4]\n\n**Step 2.** Choose the direct square-expansion route: II.4 applies naturally first because AD consists of the half AC together with CD. Applied to AD cut at C, it gives\nQ(AD) = Q(AC) + Q(CD) + 2R(AC,CD).\nUsing the equalities in Step 1, this becomes\nQ(AD) = Q(CB) + Q(CD) + 2R(CB,CD). [2.4, CN1]\n\n**Step 3.** Apply II.7 to CB cut at D, taking CD as the specified segment. This supplies exactly the rectangle term occurring in Step 2:\nQ(CB) + Q(CD) = 2R(CB,CD) + Q(DB). [2.7]\n\n**Step 4.** Add Q(DB) to both sides of the equality in Step 2 and use Step 3. Then\nQ(AD) + Q(DB)\n= Q(CB) + Q(CD) + 2R(CB,CD) + Q(DB)\n= Q(CB) + Q(CD) + Q(CB) + Q(CD)\n= 2Q(CB) + 2Q(CD). [CN2, CN1]\nThus the squares on the unequal segments AD and DB together are double the square on the half CB together with the square on CD, the straight line between the points of section. This is the required conclusion.",
+          "used": [
+            "CN4",
+            "2.4",
+            "CN1",
+            "2.7",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:21:27.492771+00:00",
+          "prompt_sha256": "a7cdf73b1b6374551aa59a1cf00eda29de298a72653b7f4a06e03b34df1ae797",
+          "resource_table_sha256": "aed47790f45c8a7c452e333183986c87809af5ba5c5cc87522c2c0b4d443c1b2",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b173-53d7-7501-aac9-67e0c483effe",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b173-53d7-7501-aac9-67e0c483effe",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-21-27-01a1b173-53d7-7501-aac9-67e0c483effe.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:22:54.576756+00:00",
+          "total_wall_time_seconds": 87.084
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.10": [
+      {
+        "result": {
+          "prop_id": "2.10",
+          "proof": "**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B. Write S(XY) for the square on XY. We shall apply 2.9, since an equal extension at the opposite end converts this configuration into a line cut into equal and unequal segments. [2.9]\n\n**Step 2.** Produce BA beyond A sufficiently far, and cut off AE equal to BD. The points are therefore in the order E, A, C, B, D. [P2, 1.3]\n\n**Step 3.** Since EA = BD and AC = CB, addition of equals gives\nEC = EA + AC = BD + CB = CD.\nThus C bisects ED. Also AD is greater than its proper part BD, which equals EA; hence A cuts ED into unequal segments EA and AD. [CN2, CN5]\n\n**Step 4.** Apply 2.9 to ED, bisected at C and cut unequally at A. Its unequal segments are EA and AD, one half is CD, and the straight line between the points of section is AC. Therefore\nS(EA) + S(AD) = 2(S(CD) + S(AC)). [2.9]\n\n**Step 5.** Since EA = BD, their squares coincide upon superposition and are equal. Substituting this equality in Step 4 gives\nS(AD) + S(BD) = 2(S(AC) + S(CD)).\nHere AD is the whole original line with the added line, AC is the half, and CD consists of the other equal half CB together with the added line BD. Thus the square on the whole with the added line and the square on the added line together are double the square on the half and the square on the half together with the added line, as required. [CN4, CN2, CN1]",
+          "used": [
+            "2.9",
+            "P2",
+            "1.3",
+            "CN2",
+            "CN5",
+            "CN4",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:21:57.506169+00:00",
+          "prompt_sha256": "242199f9f724b2fef05b226dd525841098f67e957ccb3e627f0a548a2f60f6c5",
+          "resource_table_sha256": "5647c5a55d27779fa79684f6f548d301e33bf8cd3dff6554675038e4aecb83f8",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b173-c91f-7620-a61d-3a4622681f21",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b173-c91f-7620-a61d-3a4622681f21",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-21-57-01a1b173-c91f-7620-a61d-3a4622681f21.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:23:35.082296+00:00",
+          "total_wall_time_seconds": 97.576
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.11": [
+      {
+        "result": {
+          "prop_id": "2.11",
+          "proof": "**Step 1.** Let AB be the given straight line. Write R(u,v) for the rectangle contained by segments u and v, and Q(u) for the square on u, with equalities understood as equalities of areas. Construct the square ABCD, bisect AD at E, and join EB. Thus AD = AB, EA = ED, and angle EAB is right. [D2.1, D1.22, 1.46, 1.10, P1]\n\n**Step 2.** In triangle EAB, the triangle inequalities give EB + EA > AB and EB < EA + AB. Since AB = AD = EA + EA, these imply\nEA < EB < EA + AB. [1.20]\n\n**Step 3.** Produce DA beyond A sufficiently far, and cut off EF equal to EB on the ray from E through A. Since EB > EA, F lies beyond A. Moreover, AF = EB − EA, so Step 2 gives 0 < AF < AB. Therefore cut off AH equal to AF from AB; H lies strictly between A and B. [P2, 1.3]\n\n**Step 4.** We use 2.6 directly because DA has been bisected at E and extended by AF. It gives\nR(DF,AF) + Q(EA) = Q(EF). [2.6]\n\n**Step 5.** Since triangle EAB is right-angled at A,\nQ(EB) = Q(EA) + Q(AB).\nBut EF = EB. Comparing this equality with Step 4 and subtracting Q(EA), we obtain\nR(DF,AF) = Q(AB). [1.47, CN1, CN3]\n\n**Step 6.** Apply the whole-and-segment identity directly to DF cut at A:\nR(DF,AF) = R(DA,AF) + Q(AF).\nSince DA = AB and AF = AH, Step 5 therefore becomes\nQ(AB) = R(AB,AH) + Q(AH). [2.3, CN1]\n\n**Step 7.** The square-partition identity applied to AB cut at H gives\nQ(AB) = R(AB,AH) + R(AB,HB). [2.2]\n\n**Step 8.** Compare Steps 6 and 7 and subtract the common rectangle R(AB,AH). The remainders are equal:\nR(AB,HB) = Q(AH).\nThus AB has been cut at H so that the rectangle contained by the whole AB and one segment HB equals the square on the remaining segment AH, as required. [CN1, CN3]",
+          "used": [
+            "D2.1",
+            "D1.22",
+            "1.46",
+            "1.10",
+            "P1",
+            "1.20",
+            "P2",
+            "1.3",
+            "2.6",
+            "1.47",
+            "CN1",
+            "CN3",
+            "2.3",
+            "2.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:22:27.588183+00:00",
+          "prompt_sha256": "39be1a1b448fc1d3871f16c36de2d426a7d1edc3ec56a3fd9620a6f03d14e9e8",
+          "resource_table_sha256": "7e6ddfa5c9147d15092bdc3fe1ee234e75009e40d7c9c4dbc924c44e88ec492e",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b174-3ec0-7351-a955-a09a2facb58a",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b174-3ec0-7351-a955-a09a2facb58a",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-22-27-01a1b174-3ec0-7351-a955-a09a2facb58a.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:25:00.649883+00:00",
+          "total_wall_time_seconds": 153.062
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.12": [
+      {
+        "result": {
+          "prop_id": "2.12",
+          "proof": "**Step 1.** Let ABC be a triangle whose angle ACB is obtuse. Produce BC, and from A draw AD perpendicular to the straight line containing BC, meeting it at D. Write XY² for the square on XY and XY·ZW for the rectangle contained by XY and ZW. [P2, 1.12]\n\n**Step 2.** The foot D lies beyond C, so that B, C, D occur in that order. Indeed, D cannot coincide with C, for then angle ACB would be right rather than obtuse. If D lay on the ray CB, triangle ACD would have an obtuse angle at C and a right angle at D. Since an obtuse angle exceeds a right angle and all right angles are equal, these two angles would exceed two right angles, contrary to I.17. Thus D lies on the opposite ray from CB. [D1.10, D1.11, P4, 1.17]\n\n**Step 3.** Use II.4 directly: it is the whole-and-parts identity naturally applicable because C cuts BD into BC and CD. Hence\nBD² = BC² + CD² + 2(BC·CD). [2.4]\n\n**Step 4.** Since AD is perpendicular to BD, triangles ADB and ADC are right-angled at D. Applying I.47 to each gives\nAB² = AD² + BD²,\nAC² = AD² + CD². [D1.10, 1.47]\n\n**Step 5.** Add AD² to both sides of the equality in Step 3, and substitute the equal quantities from Step 4. We obtain\nAB² = AD² + BC² + CD² + 2(BC·CD)\n     = AC² + BC² + 2(BC·CD). [CN2, CN1]\n\n**Step 6.** Therefore the square on AB, the side subtending the obtuse angle, is greater than the squares on AC and BC by exactly twice the rectangle contained by BC and CD. Here BC is the side on whose produced line the perpendicular falls, and CD is the segment cut off outside the triangle between the perpendicular's foot and the obtuse vertex. The displayed equality gives the asserted excess, and the whole is greater than its part. This proves the proposition. [CN5]",
+          "used": [
+            "P2",
+            "1.12",
+            "D1.10",
+            "D1.11",
+            "P4",
+            "1.17",
+            "2.4",
+            "1.47",
+            "CN2",
+            "CN1",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:22:57.478416+00:00",
+          "prompt_sha256": "5e59550da2b0272f0b18635d6a5faf839f59ad9536fcdcbb0393736c628d823a",
+          "resource_table_sha256": "85bf215862db76be0538a26af1608cc0ba8d1628bb01c91194a8b891f1dbd30f",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b174-b342-7ff1-813a-465362569ae4",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b174-b342-7ff1-813a-465362569ae4",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-22-57-01a1b174-b342-7ff1-813a-465362569ae4.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:23:58.918073+00:00",
+          "total_wall_time_seconds": 61.44
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.13": [
+      {
+        "result": {
+          "prop_id": "2.13",
+          "proof": "**Step 1.** Let ABC be an acute-angled triangle, and take ABC as the acute angle in the assertion. Its opposite side is AC, and its containing sides are AB and BC. All three angles are less than a right angle. Produce BC as necessary and draw AD perpendicular to its straight line. [D1.21, D1.12, P2, 1.12]\n\n**Step 2.** The foot D lies strictly between B and C. It cannot coincide with either endpoint, since then the triangle would have a right angle. If D lay beyond B, angle ABC would be an exterior angle of triangle ABD and hence greater than the right angle ADB, contrary to its being acute. If D lay beyond C, angle ACB would similarly be an exterior angle of triangle ACD and greater than the right angle ADC. Thus BC is cut internally at D, and BD is the segment towards the chosen acute angle at B. [D1.10, D1.12, 1.16]\n\n**Step 3.** Write Q(XY) for the square on XY and R(XY, ZW) for the rectangle contained by XY and ZW. Apply II.7 directly to BC cut at D, taking BD as the selected segment; this gives precisely the rectangle involving the whole side and the segment towards B:\n\nQ(BC) + Q(BD) = 2R(BC, BD) + Q(DC). [D2.1, 2.7]\n\n**Step 4.** Since ADB and ADC are right angles, the squares on the hypotenuses of the two right-angled triangles give\n\nQ(AB) = Q(AD) + Q(BD),\n\nQ(AC) = Q(AD) + Q(DC). [1.47]\n\n**Step 5.** Add Q(AD) to both sides of the equality in Step 3 and substitute the equal magnitudes from Step 4. We obtain\n\nQ(AB) + Q(BC) = Q(AC) + 2R(BC, BD). [CN2, CN1]\n\nTherefore the square on AC is less than the squares on AB and BC together by exactly twice the rectangle contained by BC, the side on which the perpendicular falls, and BD, the segment cut off within towards the acute angle ABC. The inequality is strict because the rectangle has positive area. This is the required conclusion. [CN5]",
+          "used": [
+            "D1.21",
+            "D1.12",
+            "P2",
+            "1.12",
+            "D1.10",
+            "1.16",
+            "D2.1",
+            "2.7",
+            "1.47",
+            "CN2",
+            "CN1",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:23:27.544301+00:00",
+          "prompt_sha256": "c14a4c027390ea409bf5a2f36be80fc744c1c1130a88c699ccee30164ba3ea3a",
+          "resource_table_sha256": "fa2d5d56b001a234560ee0a6df33a64b6cbfdb8ad7089d378ef11341f2bf076d",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b175-28ec-7271-81a5-6f84b27c7e54",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b175-28ec-7271-81a5-6f84b27c7e54",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-23-27-01a1b175-28ec-7271-81a5-6f84b27c7e54.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:24:58.938950+00:00",
+          "total_wall_time_seconds": 91.395
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.14": [
+      {
+        "result": {
+          "prop_id": "2.14",
+          "proof": "**Step 1.** Let F be the given rectilineal figure. Construct a right angle, and in that angle construct a parallelogram ABCD equal to F. Its remaining angles are also right angles, since adjacent angles of a parallelogram equal two right angles and opposite angles are equal. Thus ABCD is a rectangle. This reduces the required construction directly to squaring a rectangle. [1.11, 1.45, 1.29, 1.34]\n\n**Step 2.** If AB = AD, the opposite sides are also equal, so ABCD is equilateral and right-angled: it is already the required square. Otherwise, label the rectangle so that AB > AD. [1.34, D1.22]\n\n**Step 3.** Produce AB beyond B sufficiently far, and cut off BE equal to AD. Bisect AE at M. Since AB > BE, M lies between A and B; the points therefore occur in the order A, M, B, E. [P2, 1.3, 1.10]\n\n**Step 4.** Describe the circle with centre M and radius ME; it also passes through A. At B draw a perpendicular to AE, producing it to meet the circle at H, and join MH. Here MB < ME, so B is inside the circle. Since H and E lie on the circle, MH = ME. Construct a square K on BH. [P3, 1.11, P2, P1, D1.15, 1.46]\n\n**Step 5.** Write R(x,y) for the rectangle contained by lengths x and y, and S(x) for the square on length x. The line AE is cut equally at M and unequally at B. Proposition 2.5 is the direct choice because these are precisely its hypotheses. It gives\nR(AB,BE) + S(MB) = S(ME).\nSince ME = MH, the squares on these equal lengths coincide upon superposition and hence are equal. Therefore\nR(AB,BE) + S(MB) = S(MH). [D2.1, 2.5, CN4, CN1]\n\n**Step 6.** Triangle MBH is right-angled at B. Consequently,\nS(MH) = S(MB) + S(BH).\nCombining this with Step 5 and subtracting the common square S(MB), we obtain\nR(AB,BE) = S(BH). [1.47, CN1, CN3]\n\n**Step 7.** Since BE = AD, the rectangle contained by AB and BE equals rectangle ABCD: their corresponding adjacent sides are equal, so the rectangles coincide upon superposition. But ABCD equals F, and S(BH) is the constructed square K. Hence K equals the given rectilineal figure F. Thus a square equal to the given rectilineal figure has been constructed. [D2.1, CN4, CN1]",
+          "used": [
+            "1.11",
+            "1.45",
+            "1.29",
+            "1.34",
+            "D1.22",
+            "P2",
+            "1.3",
+            "1.10",
+            "P3",
+            "P1",
+            "D1.15",
+            "1.46",
+            "D2.1",
+            "2.5",
+            "CN4",
+            "CN1",
+            "1.47",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-06T15:23:57.503836+00:00",
+          "prompt_sha256": "1c37f84e5e82e6e9bfa6821cc3cf22af76c53aaf4db7ae3268f203ff3303bb5c",
+          "resource_table_sha256": "b113dfee26bdb0fbcde53ed64a572d1d4d1df91e1e4e685429226bb7a1995de4",
+          "resource_mode": "reverse-table",
+          "resource_order": "reverse_source_rows_then_filter_allowed",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_before": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1b175-9df6-7c32-a7be-cbc6bd079d45",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1b175-9df6-7c32-a7be-cbc6bd079d45",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 104
+          },
+          "proxy_health_after": {
+            "required": true,
+            "healthy": true,
+            "mode": "fallback_disabled",
+            "reason": "fallback disabled verified; local proxy available (upstream not probed)",
+            "witness": {
+              "valid": true,
+              "pid": 587973,
+              "start_ticks": 172781113,
+              "source_sha256": "9cd407ec70b45183448e4239cb31d0718d251cf9a3a3977822930e2deb10def4",
+              "config_mtime_ns": 1793949437789764516,
+              "mode": "fallback_disabled",
+              "scope": "local proxy config and liveness only; not upstream availability or model attestation"
+            }
+          },
+          "table_access_calls": 10,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/06/rollout-2026-11-06T15-23-57-01a1b175-9df6-7c32-a7be-cbc6bd079d45.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-06T15:26:24.135438+00:00",
+          "total_wall_time_seconds": 146.632
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

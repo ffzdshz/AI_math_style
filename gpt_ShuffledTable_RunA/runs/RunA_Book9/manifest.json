@@ -1,0 +1,2328 @@
+{
+  "format_version": 1,
+  "status": "complete",
+  "started_at": "2026-11-05T18:04:15.533112+00:00",
+  "book": 9,
+  "run_id": "A",
+  "output_prefix": "RunA_Book9",
+  "selected_ids": [
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7",
+    "9.8",
+    "9.9",
+    "9.10",
+    "9.11",
+    "9.12",
+    "9.13",
+    "9.14",
+    "9.15",
+    "9.16",
+    "9.17",
+    "9.18",
+    "9.19",
+    "9.20",
+    "9.21",
+    "9.22",
+    "9.23",
+    "9.24",
+    "9.25",
+    "9.26",
+    "9.27",
+    "9.28",
+    "9.29",
+    "9.30",
+    "9.31",
+    "9.32",
+    "9.33",
+    "9.34",
+    "9.35",
+    "9.36"
+  ],
+  "partial_run": false,
+  "expected_full_book_count": 36,
+  "context_mode": "shuffled-table",
+  "prompt_protocol_version": "shuffled-table-v2-minimal-access-instruction",
+  "experiment_variant": "shuffled-table",
+  "shuffle_seed": "47674fdaf6b8292c8b763b81395dd834",
+  "statements_xlsx_sha256": "4840a1b0404ddb807fa948c06f46310ca55dca91bbb262575d98485d7c125513",
+  "worker_model_catalog_sha256": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+  "runtime_sources_sha256": {
+    "scripts/euclid_core.py": "ed602670db2c655c3865e5fff39655bd38f6c57fe423f488058cb17506883cc0",
+    "scripts/codex_worker.py": "21e9512042d1f99b657e01eae01ed2d23802cb1718bb728e7b2b0c1c65ea2505",
+    "scripts/resource_tables.py": "bae535d3a7a83c9f45f0bb6782ba6370583381591a221b667096225a4fbd4c49",
+    "scripts/table_reader.py": "40eb464fb1ee611887c2a6e1075712e6c4cc51dcf079a1b341106b19ebd80058",
+    "scripts/table_mcp_server.py": "7a888a382d7db99b0f105851e43b8ca19dd5d74bda3477edd86f1597f1faa1d2",
+    "scripts/run_book_codex.py": "986c1052183843b69a50f2aa7beacf8abc0969dff5256c668dd6d0292add503c",
+    "scripts/execution_gate.py": "d544ffd54d33af4920cfcf442ddcfa0cb724d9dc7a22b138bd42041d1b1ff92a",
+    "scripts/proxy_health_gate.py": "cf595123099f158ab1d6ee4920e1fbcfc7f880de529bca81d871f5a42e76cec1",
+    "schemas/worker_model_catalog.json": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+    "schemas/proof_result.schema.json": "4b06fab8ec009f0244168b3372470d15f201672225a7693beea476affe129c53"
+  },
+  "resource_policy": "all foundations and strictly preceding theorems, individually shuffled XLSX",
+  "information_budget_change": "earlier-book statements now accessible in the table, unlike legacy ID-only prompts",
+  "worker": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "provider": "custom",
+    "endpoint": "http://127.0.0.1:11435",
+    "identity_scope": "requested; runtime evidence stored per attempt"
+  },
+  "coordinator": {
+    "model": "unknown/not verified",
+    "reasoning_effort": "unknown/not verified",
+    "evidence": "caller-supplied or unknown; not inferred from proof worker"
+  },
+  "original_files_sha256": {
+    "CLAUDE.md": "3a98d42d6584325326935c3c0a87e0b3fa5538de3e218edfc7fece842425014e",
+    "SKILL.md": "5f25e09eef738d4be62ac5cc2da5b955bb27d9e21cd4ab27c93f1080ecc20277",
+    "euclid_prove_book.js": "0f59182300843033d7d5e7cbc8675f888f9961b08fa4581133b69e1dfeacf7ff",
+    "generate_workflow.py": "b01c77127d8b39a378c14adc377d877ee587d8b070bdd849656cb05a82ca285f",
+    "euclid_postprocess.py": "3e489f4cdb6a9266f26d1eb8cbc9a968612a02d6fcda0107039cfe08c2ef0699"
+  },
+  "statements_sha256": "9b7fb3a8d79ba0c9c51d419f45736f597270fcae3ae1715890152e836bfe8b8e",
+  "max_workers": 4,
+  "max_ordering_retries": 3,
+  "timeout_seconds": 1800.0,
+  "cli_version": "codex-cli 0.166.0",
+  "protocol_changes": [
+    "safe-context filesystem isolation",
+    "no silent missing results",
+    "structural output validation",
+    "execution metadata sidecar",
+    "resource statements only in individually shuffled XLSX",
+    "one read-only local table MCP tool; shell/web disabled",
+    "retain CLI session JSONL and table-call input/output logs"
+  ],
+  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "updated_at": "2026-11-06T03:40:59.475355+00:00",
+  "execution_recoveries": [
+    {
+      "episode": 1,
+      "started_at": "2026-11-05T18:06:35.024072+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 2,
+      "started_at": "2026-11-05T18:07:45.110912+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 3,
+      "started_at": "2026-11-05T18:08:55.173042+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 4,
+      "started_at": "2026-11-05T18:10:05.232167+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 5,
+      "started_at": "2026-11-05T18:11:15.308591+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 6,
+      "started_at": "2026-11-05T18:12:25.378926+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 7,
+      "started_at": "2026-11-05T18:17:55.690054+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 8,
+      "started_at": "2026-11-05T18:19:05.756090+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 9,
+      "started_at": "2026-11-05T18:20:15.836336+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 10,
+      "started_at": "2026-11-05T18:21:25.886237+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 11,
+      "started_at": "2026-11-05T18:22:35.969539+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 12,
+      "started_at": "2026-11-05T18:31:16.516225+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 13,
+      "started_at": "2026-11-05T18:32:26.587094+00:00",
+      "reason": "RuntimeError: Upstream capacity/rate-limit service message, not proof JSON; stop pending requests and retry after cooldown",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 14,
+      "started_at": "2026-11-05T18:43:07.274739+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 15,
+      "started_at": "2026-11-05T18:44:17.350786+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 16,
+      "started_at": "2026-11-05T18:45:27.435981+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 17,
+      "started_at": "2026-11-05T18:46:37.522641+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 18,
+      "started_at": "2026-11-05T18:47:47.599586+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 19,
+      "started_at": "2026-11-05T18:48:57.655266+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 20,
+      "started_at": "2026-11-05T18:50:07.732867+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 21,
+      "started_at": "2026-11-05T18:51:17.808853+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 22,
+      "started_at": "2026-11-05T18:52:27.881982+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 23,
+      "started_at": "2026-11-05T18:53:37.952930+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 24,
+      "started_at": "2026-11-05T18:54:48.035010+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 25,
+      "started_at": "2026-11-05T18:55:58.119037+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 26,
+      "started_at": "2026-11-05T18:57:08.187144+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 27,
+      "started_at": "2026-11-05T18:58:18.270822+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 28,
+      "started_at": "2026-11-05T18:59:28.326571+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 29,
+      "started_at": "2026-11-05T19:00:38.408421+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 30,
+      "started_at": "2026-11-05T19:01:48.470158+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 31,
+      "started_at": "2026-11-05T19:02:58.550387+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 32,
+      "started_at": "2026-11-05T19:04:08.628930+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 33,
+      "started_at": "2026-11-05T19:05:18.699397+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 34,
+      "started_at": "2026-11-05T19:06:28.790758+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 35,
+      "started_at": "2026-11-05T19:07:38.849237+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 36,
+      "started_at": "2026-11-05T19:08:48.947206+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 37,
+      "started_at": "2026-11-05T19:09:59.040724+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 38,
+      "started_at": "2026-11-05T19:11:09.113630+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 39,
+      "started_at": "2026-11-05T19:12:19.196794+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 40,
+      "started_at": "2026-11-05T19:13:29.269762+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 41,
+      "started_at": "2026-11-05T19:14:39.352232+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 42,
+      "started_at": "2026-11-05T19:15:49.422858+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 43,
+      "started_at": "2026-11-05T19:16:59.514908+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 44,
+      "started_at": "2026-11-05T19:18:09.596085+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 45,
+      "started_at": "2026-11-05T19:19:19.673891+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 46,
+      "started_at": "2026-11-05T19:20:29.752384+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 47,
+      "started_at": "2026-11-05T19:21:39.824419+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 48,
+      "started_at": "2026-11-05T19:22:49.910328+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 49,
+      "started_at": "2026-11-05T19:24:00.002927+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 50,
+      "started_at": "2026-11-05T19:25:10.077476+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 51,
+      "started_at": "2026-11-05T19:26:20.163543+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 52,
+      "started_at": "2026-11-05T19:27:30.210699+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 53,
+      "started_at": "2026-11-05T19:28:40.305437+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 54,
+      "started_at": "2026-11-05T19:29:50.383710+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 55,
+      "started_at": "2026-11-05T19:31:00.433810+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 56,
+      "started_at": "2026-11-05T19:32:10.525699+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 57,
+      "started_at": "2026-11-05T19:33:20.598803+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 58,
+      "started_at": "2026-11-05T19:34:30.669924+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 59,
+      "started_at": "2026-11-05T19:35:40.740863+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 60,
+      "started_at": "2026-11-05T19:36:50.812126+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 61,
+      "started_at": "2026-11-05T19:38:00.904300+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 62,
+      "started_at": "2026-11-05T19:39:10.985573+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 63,
+      "started_at": "2026-11-05T19:40:21.059839+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 64,
+      "started_at": "2026-11-05T19:41:31.134860+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 65,
+      "started_at": "2026-11-05T19:42:41.226966+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 66,
+      "started_at": "2026-11-05T19:43:51.321363+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 67,
+      "started_at": "2026-11-05T19:45:01.417728+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 68,
+      "started_at": "2026-11-05T19:46:11.475540+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 69,
+      "started_at": "2026-11-05T19:47:21.528903+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 70,
+      "started_at": "2026-11-05T19:48:31.617691+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 71,
+      "started_at": "2026-11-05T19:49:41.758647+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 72,
+      "started_at": "2026-11-05T19:50:51.797523+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 73,
+      "started_at": "2026-11-05T19:52:01.897424+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 74,
+      "started_at": "2026-11-05T19:53:11.983159+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 75,
+      "started_at": "2026-11-05T19:54:22.053482+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 76,
+      "started_at": "2026-11-05T19:55:32.143508+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 77,
+      "started_at": "2026-11-05T19:56:42.221464+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 78,
+      "started_at": "2026-11-05T19:57:52.298956+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 79,
+      "started_at": "2026-11-05T19:59:02.403536+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 80,
+      "started_at": "2026-11-05T20:00:12.488708+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 81,
+      "started_at": "2026-11-05T20:01:22.593283+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 82,
+      "started_at": "2026-11-05T20:02:32.672886+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 83,
+      "started_at": "2026-11-05T20:03:42.757958+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 84,
+      "started_at": "2026-11-05T20:04:52.834259+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 85,
+      "started_at": "2026-11-05T20:06:02.954645+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 86,
+      "started_at": "2026-11-05T20:07:13.016728+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 87,
+      "started_at": "2026-11-05T20:08:23.100597+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 88,
+      "started_at": "2026-11-05T20:09:33.177716+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 89,
+      "started_at": "2026-11-05T20:10:43.274382+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 90,
+      "started_at": "2026-11-05T20:11:53.353518+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 91,
+      "started_at": "2026-11-05T20:13:03.438473+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 92,
+      "started_at": "2026-11-05T20:14:13.537207+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 93,
+      "started_at": "2026-11-05T20:15:23.631534+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 94,
+      "started_at": "2026-11-05T20:16:33.723212+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 95,
+      "started_at": "2026-11-05T20:17:43.792327+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 96,
+      "started_at": "2026-11-05T20:18:53.872393+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 97,
+      "started_at": "2026-11-05T20:20:03.971613+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 98,
+      "started_at": "2026-11-05T20:21:14.071920+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 99,
+      "started_at": "2026-11-05T20:22:24.166663+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 100,
+      "started_at": "2026-11-05T20:23:34.223311+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 101,
+      "started_at": "2026-11-05T20:24:44.324436+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 102,
+      "started_at": "2026-11-05T20:25:54.400880+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 103,
+      "started_at": "2026-11-05T20:27:04.502337+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 104,
+      "started_at": "2026-11-05T20:28:14.583663+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 105,
+      "started_at": "2026-11-05T20:29:24.670113+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 106,
+      "started_at": "2026-11-05T20:30:34.772689+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 107,
+      "started_at": "2026-11-05T20:31:44.851789+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 108,
+      "started_at": "2026-11-05T20:32:54.923068+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 109,
+      "started_at": "2026-11-05T20:34:05.029436+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 110,
+      "started_at": "2026-11-05T20:35:15.126787+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 111,
+      "started_at": "2026-11-05T20:36:25.216968+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 112,
+      "started_at": "2026-11-05T20:37:35.324975+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 113,
+      "started_at": "2026-11-05T20:38:45.435917+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 114,
+      "started_at": "2026-11-05T20:39:55.532351+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 115,
+      "started_at": "2026-11-05T20:41:05.645494+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 116,
+      "started_at": "2026-11-05T20:42:15.746443+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 117,
+      "started_at": "2026-11-05T20:43:25.830769+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 118,
+      "started_at": "2026-11-05T20:44:35.917338+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 119,
+      "started_at": "2026-11-05T20:45:46.017790+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 120,
+      "started_at": "2026-11-05T20:46:56.105187+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 121,
+      "started_at": "2026-11-05T20:48:06.196691+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 122,
+      "started_at": "2026-11-05T20:49:16.293893+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 123,
+      "started_at": "2026-11-05T20:50:26.376837+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 124,
+      "started_at": "2026-11-05T20:51:36.480154+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 125,
+      "started_at": "2026-11-05T20:52:46.613736+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 126,
+      "started_at": "2026-11-05T20:53:56.706869+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 127,
+      "started_at": "2026-11-05T20:55:06.817741+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 128,
+      "started_at": "2026-11-05T20:56:16.910028+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 129,
+      "started_at": "2026-11-05T20:57:27.026506+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 130,
+      "started_at": "2026-11-05T20:58:37.148980+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 131,
+      "started_at": "2026-11-05T20:59:47.222163+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 132,
+      "started_at": "2026-11-05T21:00:57.345262+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 133,
+      "started_at": "2026-11-05T21:02:07.441607+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 134,
+      "started_at": "2026-11-05T21:03:17.527460+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 135,
+      "started_at": "2026-11-05T21:04:27.618190+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 136,
+      "started_at": "2026-11-05T21:05:37.706859+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 137,
+      "started_at": "2026-11-05T21:06:47.797843+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 138,
+      "started_at": "2026-11-05T21:07:57.894421+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 139,
+      "started_at": "2026-11-05T21:09:07.972404+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 140,
+      "started_at": "2026-11-05T21:10:18.068284+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 141,
+      "started_at": "2026-11-05T21:11:28.164160+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 142,
+      "started_at": "2026-11-05T21:12:38.250429+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 143,
+      "started_at": "2026-11-05T21:13:48.357558+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 144,
+      "started_at": "2026-11-05T21:14:58.468845+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 145,
+      "started_at": "2026-11-05T21:16:08.561784+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 146,
+      "started_at": "2026-11-05T21:17:18.661220+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 147,
+      "started_at": "2026-11-05T21:18:28.748035+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 148,
+      "started_at": "2026-11-05T21:19:38.853265+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 149,
+      "started_at": "2026-11-05T21:35:49.888986+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 150,
+      "started_at": "2026-11-05T21:36:59.968690+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 151,
+      "started_at": "2026-11-05T21:38:10.058105+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 152,
+      "started_at": "2026-11-05T21:39:20.162387+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 153,
+      "started_at": "2026-11-05T21:40:30.253987+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 154,
+      "started_at": "2026-11-05T21:41:40.362248+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 155,
+      "started_at": "2026-11-05T21:42:50.450963+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 156,
+      "started_at": "2026-11-05T21:44:00.546697+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 157,
+      "started_at": "2026-11-05T21:45:10.657746+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 158,
+      "started_at": "2026-11-05T21:46:20.724458+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 159,
+      "started_at": "2026-11-05T21:47:30.828420+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 160,
+      "started_at": "2026-11-05T21:48:40.946915+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 161,
+      "started_at": "2026-11-05T21:49:51.049891+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 162,
+      "started_at": "2026-11-05T21:51:01.165205+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 163,
+      "started_at": "2026-11-05T21:52:11.251082+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 164,
+      "started_at": "2026-11-05T21:53:21.357601+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 165,
+      "started_at": "2026-11-05T21:54:31.460280+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 166,
+      "started_at": "2026-11-05T21:55:41.576177+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 167,
+      "started_at": "2026-11-05T21:56:51.695401+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 168,
+      "started_at": "2026-11-05T21:58:01.821190+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 169,
+      "started_at": "2026-11-05T21:59:11.912612+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 170,
+      "started_at": "2026-11-05T22:00:22.026996+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 171,
+      "started_at": "2026-11-05T22:01:32.138881+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 172,
+      "started_at": "2026-11-05T22:02:42.221626+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 173,
+      "started_at": "2026-11-05T22:03:52.356923+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 174,
+      "started_at": "2026-11-05T22:05:02.441121+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 175,
+      "started_at": "2026-11-05T22:06:12.547110+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 176,
+      "started_at": "2026-11-05T22:07:22.669079+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 177,
+      "started_at": "2026-11-05T22:08:32.747040+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 178,
+      "started_at": "2026-11-05T22:09:42.837446+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 179,
+      "started_at": "2026-11-05T22:10:52.945108+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 180,
+      "started_at": "2026-11-05T22:12:03.068725+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 181,
+      "started_at": "2026-11-05T22:13:13.180471+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 182,
+      "started_at": "2026-11-05T22:14:23.269075+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 183,
+      "started_at": "2026-11-05T22:15:33.369468+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 184,
+      "started_at": "2026-11-05T22:16:43.469342+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 185,
+      "started_at": "2026-11-05T22:17:53.574369+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 186,
+      "started_at": "2026-11-05T22:19:03.642344+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 187,
+      "started_at": "2026-11-05T22:20:13.765202+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 188,
+      "started_at": "2026-11-05T22:21:23.860232+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 189,
+      "started_at": "2026-11-05T22:22:33.964027+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 190,
+      "started_at": "2026-11-05T22:23:44.080676+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 191,
+      "started_at": "2026-11-05T22:24:54.169735+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 192,
+      "started_at": "2026-11-05T22:26:04.267665+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 193,
+      "started_at": "2026-11-05T22:27:14.372994+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 194,
+      "started_at": "2026-11-05T22:28:24.484688+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 195,
+      "started_at": "2026-11-05T22:29:34.575446+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 196,
+      "started_at": "2026-11-05T22:30:44.682738+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 197,
+      "started_at": "2026-11-05T22:31:54.774278+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 198,
+      "started_at": "2026-11-05T22:33:04.903432+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 199,
+      "started_at": "2026-11-05T22:34:15.023010+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 200,
+      "started_at": "2026-11-05T22:35:25.109901+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 201,
+      "started_at": "2026-11-05T22:36:35.238362+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 202,
+      "started_at": "2026-11-05T22:37:45.345418+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 203,
+      "started_at": "2026-11-05T22:38:55.457050+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 204,
+      "started_at": "2026-11-05T22:40:05.576303+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 205,
+      "started_at": "2026-11-05T22:41:15.679398+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 206,
+      "started_at": "2026-11-05T22:42:25.764445+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 207,
+      "started_at": "2026-11-05T22:43:35.874949+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 208,
+      "started_at": "2026-11-05T22:44:45.981583+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 209,
+      "started_at": "2026-11-05T22:45:56.077730+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 210,
+      "started_at": "2026-11-05T22:47:06.200450+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 211,
+      "started_at": "2026-11-05T22:48:16.274830+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 212,
+      "started_at": "2026-11-05T22:49:26.400683+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 213,
+      "started_at": "2026-11-05T22:50:36.496580+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 214,
+      "started_at": "2026-11-05T22:51:46.615778+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 215,
+      "started_at": "2026-11-05T22:52:56.728865+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 216,
+      "started_at": "2026-11-05T22:54:06.831575+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 217,
+      "started_at": "2026-11-05T22:55:16.944198+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 218,
+      "started_at": "2026-11-05T22:56:27.056600+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 219,
+      "started_at": "2026-11-05T22:57:37.173366+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 220,
+      "started_at": "2026-11-05T22:58:47.289095+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 221,
+      "started_at": "2026-11-05T22:59:57.412589+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 222,
+      "started_at": "2026-11-05T23:01:07.500168+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 223,
+      "started_at": "2026-11-05T23:02:17.635766+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 224,
+      "started_at": "2026-11-05T23:03:27.735611+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 225,
+      "started_at": "2026-11-05T23:04:37.850205+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 226,
+      "started_at": "2026-11-05T23:05:48.003325+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 227,
+      "started_at": "2026-11-05T23:06:58.095671+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 228,
+      "started_at": "2026-11-05T23:08:08.204576+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 229,
+      "started_at": "2026-11-05T23:09:18.318167+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 230,
+      "started_at": "2026-11-05T23:10:28.482058+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 231,
+      "started_at": "2026-11-05T23:11:38.565878+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 232,
+      "started_at": "2026-11-05T23:12:48.662178+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 233,
+      "started_at": "2026-11-05T23:13:58.745863+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 234,
+      "started_at": "2026-11-05T23:15:08.866518+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 235,
+      "started_at": "2026-11-05T23:16:18.953771+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 236,
+      "started_at": "2026-11-05T23:17:29.084810+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 237,
+      "started_at": "2026-11-05T23:18:39.194082+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 238,
+      "started_at": "2026-11-05T23:19:49.359272+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 239,
+      "started_at": "2026-11-05T23:20:59.462615+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 240,
+      "started_at": "2026-11-05T23:22:09.582364+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 241,
+      "started_at": "2026-11-05T23:23:19.687707+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 242,
+      "started_at": "2026-11-05T23:24:29.778065+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 243,
+      "started_at": "2026-11-05T23:25:39.903202+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 244,
+      "started_at": "2026-11-05T23:26:50.006547+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 245,
+      "started_at": "2026-11-05T23:28:00.126586+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 246,
+      "started_at": "2026-11-05T23:29:10.295571+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 247,
+      "started_at": "2026-11-05T23:30:20.378637+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 248,
+      "started_at": "2026-11-05T23:31:30.478085+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 249,
+      "started_at": "2026-11-05T23:32:40.623330+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 250,
+      "started_at": "2026-11-05T23:33:50.715030+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 251,
+      "started_at": "2026-11-05T23:35:00.828821+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 252,
+      "started_at": "2026-11-05T23:36:10.960525+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 253,
+      "started_at": "2026-11-05T23:37:21.055104+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 254,
+      "started_at": "2026-11-05T23:38:31.156700+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 255,
+      "started_at": "2026-11-05T23:39:41.304243+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 256,
+      "started_at": "2026-11-05T23:40:51.403357+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 257,
+      "started_at": "2026-11-05T23:42:01.506750+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 258,
+      "started_at": "2026-11-05T23:43:11.625211+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 259,
+      "started_at": "2026-11-05T23:44:21.727063+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 260,
+      "started_at": "2026-11-05T23:45:31.839012+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 261,
+      "started_at": "2026-11-05T23:46:41.947036+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 262,
+      "started_at": "2026-11-05T23:47:52.064761+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 263,
+      "started_at": "2026-11-05T23:49:02.185070+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 264,
+      "started_at": "2026-11-05T23:50:12.283868+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 265,
+      "started_at": "2026-11-05T23:51:22.390372+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 266,
+      "started_at": "2026-11-05T23:52:32.508141+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 267,
+      "started_at": "2026-11-05T23:57:42.798777+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 268,
+      "started_at": "2026-11-05T23:59:12.924612+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 269,
+      "started_at": "2026-11-06T00:04:03.210310+00:00",
+      "reason": "RuntimeError: proxy GPT fallback was ACTIVE during this attempt (fallback_model=gpt-6-luna); the response may come from a substituted model — refusing to accept it",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 270,
+      "started_at": "2026-11-06T00:05:13.347412+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 271,
+      "started_at": "2026-11-06T00:07:23.505556+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 272,
+      "started_at": "2026-11-06T00:08:33.614188+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 273,
+      "started_at": "2026-11-06T00:10:43.747659+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 274,
+      "started_at": "2026-11-06T00:11:53.843202+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 275,
+      "started_at": "2026-11-06T00:15:04.045276+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 276,
+      "started_at": "2026-11-06T00:19:34.363075+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 277,
+      "started_at": "2026-11-06T00:20:44.444953+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 278,
+      "started_at": "2026-11-06T00:21:54.566141+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 279,
+      "started_at": "2026-11-06T00:29:05.001948+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 280,
+      "started_at": "2026-11-06T00:30:15.124233+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 281,
+      "started_at": "2026-11-06T00:36:25.465843+00:00",
+      "reason": "RuntimeError: proxy GPT fallback was ACTIVE during this attempt (fallback_model=gpt-6-luna); the response may come from a substituted model — refusing to accept it",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 282,
+      "started_at": "2026-11-06T00:37:35.586964+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 283,
+      "started_at": "2026-11-06T00:42:45.894385+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 284,
+      "started_at": "2026-11-06T00:44:26.042711+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 285,
+      "started_at": "2026-11-06T00:45:36.188779+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 286,
+      "started_at": "2026-11-06T00:46:46.297601+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 287,
+      "started_at": "2026-11-06T00:49:56.491473+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 288,
+      "started_at": "2026-11-06T00:51:06.602041+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 289,
+      "started_at": "2026-11-06T00:52:16.733853+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 290,
+      "started_at": "2026-11-06T00:53:26.869786+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 291,
+      "started_at": "2026-11-06T00:54:37.006603+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 292,
+      "started_at": "2026-11-06T00:55:47.184505+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 293,
+      "started_at": "2026-11-06T00:57:57.299492+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 294,
+      "started_at": "2026-11-06T00:59:07.431891+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 295,
+      "started_at": "2026-11-06T01:05:27.835220+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 296,
+      "started_at": "2026-11-06T01:08:58.108894+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 297,
+      "started_at": "2026-11-06T01:15:08.483904+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 298,
+      "started_at": "2026-11-06T01:16:18.581284+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 299,
+      "started_at": "2026-11-06T01:34:29.685430+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 300,
+      "started_at": "2026-11-06T01:35:39.780854+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 301,
+      "started_at": "2026-11-06T01:36:49.919114+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 302,
+      "started_at": "2026-11-06T01:38:00.018389+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 303,
+      "started_at": "2026-11-06T01:39:10.128225+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 304,
+      "started_at": "2026-11-06T01:40:20.251025+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 305,
+      "started_at": "2026-11-06T01:41:30.381444+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 306,
+      "started_at": "2026-11-06T01:47:30.719683+00:00",
+      "reason": "RuntimeError: proxy GPT fallback was ACTIVE during this attempt (fallback_model=gpt-6-luna); the response may come from a substituted model — refusing to accept it",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 307,
+      "started_at": "2026-11-06T01:48:40.848294+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 308,
+      "started_at": "2026-11-06T01:56:51.348391+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 309,
+      "started_at": "2026-11-06T01:58:01.441995+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 310,
+      "started_at": "2026-11-06T02:04:11.835114+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 311,
+      "started_at": "2026-11-06T02:05:21.958520+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 312,
+      "started_at": "2026-11-06T02:06:32.101183+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 313,
+      "started_at": "2026-11-06T02:07:42.201487+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 314,
+      "started_at": "2026-11-06T02:08:52.300649+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 315,
+      "started_at": "2026-11-06T02:10:02.420779+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 316,
+      "started_at": "2026-11-06T02:11:12.534791+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 317,
+      "started_at": "2026-11-06T02:12:22.647405+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 318,
+      "started_at": "2026-11-06T02:13:32.794410+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 319,
+      "started_at": "2026-11-06T02:14:42.904598+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 320,
+      "started_at": "2026-11-06T02:15:53.025808+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 321,
+      "started_at": "2026-11-06T02:17:03.119484+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 322,
+      "started_at": "2026-11-06T02:18:13.285956+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 323,
+      "started_at": "2026-11-06T02:19:23.383739+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 324,
+      "started_at": "2026-11-06T02:20:33.518160+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 325,
+      "started_at": "2026-11-06T02:21:43.645371+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 326,
+      "started_at": "2026-11-06T02:22:53.737047+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 327,
+      "started_at": "2026-11-06T02:24:03.870174+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 328,
+      "started_at": "2026-11-06T02:25:14.001542+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 329,
+      "started_at": "2026-11-06T02:26:24.121290+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 330,
+      "started_at": "2026-11-06T02:32:34.480012+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 331,
+      "started_at": "2026-11-06T02:34:04.606565+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 332,
+      "started_at": "2026-11-06T02:35:14.751697+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 333,
+      "started_at": "2026-11-06T02:40:25.034141+00:00",
+      "reason": "ProxyHealthBlocked: proxy health gate blocked: proxy degraded/fallback active, failed probe, or stale health record",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 334,
+      "started_at": "2026-11-06T02:41:35.189568+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 335,
+      "started_at": "2026-11-06T02:42:45.294498+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 336,
+      "started_at": "2026-11-06T02:43:55.399178+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 337,
+      "started_at": "2026-11-06T02:45:05.558509+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 338,
+      "started_at": "2026-11-06T02:46:15.692633+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 339,
+      "started_at": "2026-11-06T02:47:25.859078+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 340,
+      "started_at": "2026-11-06T02:48:35.945586+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 341,
+      "started_at": "2026-11-06T02:49:46.081154+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 342,
+      "started_at": "2026-11-06T02:50:56.225565+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 343,
+      "started_at": "2026-11-06T02:52:06.386704+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 344,
+      "started_at": "2026-11-06T02:53:16.491865+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 345,
+      "started_at": "2026-11-06T02:54:26.618145+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 346,
+      "started_at": "2026-11-06T02:55:36.752250+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 347,
+      "started_at": "2026-11-06T02:56:46.877445+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 348,
+      "started_at": "2026-11-06T02:57:57.008638+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 349,
+      "started_at": "2026-11-06T02:59:07.115645+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 350,
+      "started_at": "2026-11-06T03:15:18.116365+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 351,
+      "started_at": "2026-11-06T03:16:28.241463+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 352,
+      "started_at": "2026-11-06T03:17:38.403027+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 353,
+      "started_at": "2026-11-06T03:18:48.569153+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 354,
+      "started_at": "2026-11-06T03:19:58.660276+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 355,
+      "started_at": "2026-11-06T03:21:08.764088+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 356,
+      "started_at": "2026-11-06T03:22:18.886444+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 357,
+      "started_at": "2026-11-06T03:23:29.032272+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 358,
+      "started_at": "2026-11-06T03:24:39.158507+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 359,
+      "started_at": "2026-11-06T03:25:49.261750+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 360,
+      "started_at": "2026-11-06T03:26:59.377101+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 361,
+      "started_at": "2026-11-06T03:28:09.533563+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 362,
+      "started_at": "2026-11-06T03:29:19.651045+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 363,
+      "started_at": "2026-11-06T03:30:29.752911+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 364,
+      "started_at": "2026-11-06T03:31:39.907259+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 365,
+      "started_at": "2026-11-06T03:32:50.020278+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 366,
+      "started_at": "2026-11-06T03:34:00.163638+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    },
+    {
+      "episode": 367,
+      "started_at": "2026-11-06T03:35:10.287649+00:00",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    }
+  ],
+  "independent_results_frozen_at": "2026-11-06T03:40:59.464691+00:00",
+  "frozen_results_sha256": "78f9095d737a57429265eb91317983e3a446c96bd7a103ca567556b5face52a5",
+  "frozen_audit_sha256": "a0bfcd3d3d4d9322b8d6ef8752027c444e78961df845f19c3faa6bc83d248e02",
+  "heath_load_started_at": "2026-11-06T03:40:59.469690+00:00",
+  "comparison": {
+    "completed_at": "2026-11-06T03:40:59.472443+00:00",
+    "human_source": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/data/euclid_human_refs.json",
+    "human_sha256": "0ab95bb06bad41f3b9081a7b28dab9d04076f081c969c2ce80c166564ec00646",
+    "mean_jaccard_legacy_rounded": 0.31725,
+    "perfect_matches": 3,
+    "proposition_count": 36,
+    "unresolved_ordering": {},
+    "mathematical_validity": "not assessed; outside the proof-generation workflow scope",
+    "partial_run": false,
+    "outputs": [
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book9_StepByStep_Proofs.md",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book9_AI_vs_Human_Citations.csv",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book9_Execution_Metadata.json",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/proofs/RunA_Book9"
+    ]
+  }
+}

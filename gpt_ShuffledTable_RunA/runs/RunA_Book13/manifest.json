@@ -1,0 +1,114 @@
+{
+  "format_version": 1,
+  "status": "complete",
+  "started_at": "2026-11-06T08:54:13.571270+00:00",
+  "book": 13,
+  "run_id": "A",
+  "output_prefix": "RunA_Book13",
+  "selected_ids": [
+    "13.1",
+    "13.2",
+    "13.3",
+    "13.4",
+    "13.5",
+    "13.6",
+    "13.7",
+    "13.8",
+    "13.9",
+    "13.10",
+    "13.11",
+    "13.12",
+    "13.13",
+    "13.14",
+    "13.15",
+    "13.16",
+    "13.17",
+    "13.18"
+  ],
+  "partial_run": false,
+  "expected_full_book_count": 18,
+  "context_mode": "shuffled-table",
+  "prompt_protocol_version": "shuffled-table-v2-minimal-access-instruction",
+  "experiment_variant": "shuffled-table",
+  "shuffle_seed": "647b196267d9c687453d296aaed61993",
+  "statements_xlsx_sha256": "4840a1b0404ddb807fa948c06f46310ca55dca91bbb262575d98485d7c125513",
+  "worker_model_catalog_sha256": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+  "runtime_sources_sha256": {
+    "scripts/euclid_core.py": "ed602670db2c655c3865e5fff39655bd38f6c57fe423f488058cb17506883cc0",
+    "scripts/codex_worker.py": "5e69e9e34c1d7165bc002bd0df947fe00cd0176d8466a761f2673b8d9f9d3fcb",
+    "scripts/resource_tables.py": "bae535d3a7a83c9f45f0bb6782ba6370583381591a221b667096225a4fbd4c49",
+    "scripts/table_reader.py": "40eb464fb1ee611887c2a6e1075712e6c4cc51dcf079a1b341106b19ebd80058",
+    "scripts/table_mcp_server.py": "7a888a382d7db99b0f105851e43b8ca19dd5d74bda3477edd86f1597f1faa1d2",
+    "scripts/run_book_codex.py": "986c1052183843b69a50f2aa7beacf8abc0969dff5256c668dd6d0292add503c",
+    "scripts/execution_gate.py": "d544ffd54d33af4920cfcf442ddcfa0cb724d9dc7a22b138bd42041d1b1ff92a",
+    "scripts/proxy_health_gate.py": "c5c151ad5871172e40d7930a5e4ff7c5fbf79bd5109fa2fb2dda845067557064",
+    "schemas/worker_model_catalog.json": "b8e56d73d91e9952e385399c230ef9f37cdcb2713cc00fe96f674daf5759dbc8",
+    "schemas/proof_result.schema.json": "4b06fab8ec009f0244168b3372470d15f201672225a7693beea476affe129c53"
+  },
+  "resource_policy": "all foundations and strictly preceding theorems, individually shuffled XLSX",
+  "information_budget_change": "earlier-book statements now accessible in the table, unlike legacy ID-only prompts",
+  "worker": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "provider": "custom",
+    "endpoint": "http://127.0.0.1:11435",
+    "identity_scope": "requested; runtime evidence stored per attempt"
+  },
+  "coordinator": {
+    "model": "unknown/not verified",
+    "reasoning_effort": "unknown/not verified",
+    "evidence": "caller-supplied or unknown; not inferred from proof worker"
+  },
+  "original_files_sha256": {
+    "CLAUDE.md": "3a98d42d6584325326935c3c0a87e0b3fa5538de3e218edfc7fece842425014e",
+    "SKILL.md": "5f25e09eef738d4be62ac5cc2da5b955bb27d9e21cd4ab27c93f1080ecc20277",
+    "euclid_prove_book.js": "0f59182300843033d7d5e7cbc8675f888f9961b08fa4581133b69e1dfeacf7ff",
+    "generate_workflow.py": "b01c77127d8b39a378c14adc377d877ee587d8b070bdd849656cb05a82ca285f",
+    "euclid_postprocess.py": "3e489f4cdb6a9266f26d1eb8cbc9a968612a02d6fcda0107039cfe08c2ef0699"
+  },
+  "statements_sha256": "9b7fb3a8d79ba0c9c51d419f45736f597270fcae3ae1715890152e836bfe8b8e",
+  "max_workers": 4,
+  "max_ordering_retries": 3,
+  "timeout_seconds": 1800.0,
+  "cli_version": "codex-cli 0.166.0",
+  "protocol_changes": [
+    "safe-context filesystem isolation",
+    "no silent missing results",
+    "structural output validation",
+    "execution metadata sidecar",
+    "resource statements only in individually shuffled XLSX",
+    "one read-only local table MCP tool; shell/web disabled",
+    "retain CLI session JSONL and table-call input/output logs"
+  ],
+  "error": "TimeoutExpired: Command '['/usr/bin/bwrap', '--die-with-parent', '--new-session', '--unshare-pid', '--unshare-ipc', '--unshare-uts', '--tmpfs', '/', '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin', '--symlink', 'usr/sbin', '/sbin', '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib64', '/lib64', '--proc', '/proc', '--dev', '/dev', '--tmpfs', '/tmp', '--dir', '/etc', '--dir', '/opt', '--ro-bind', '/home/wuyangcheng/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex', '/opt/codex', '--ro-bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/stage2_context/13.13/attempt0', '/proof', '--bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.13_attempt0', '/out', '--bind', '/tmp/euclid-private-6f6ijaca/home', '/codex-home', '--setenv', 'HOME', '/codex-home', '--setenv', 'CODEX_HOME', '/codex-home', '--setenv', 'PATH', '/usr/bin:/bin', '--chdir', '/proof', '--ro-bind', '/etc/resolv.conf', '/etc/resolv.conf', '--ro-bind', '/etc/hosts', '/etc/hosts', '--ro-bind', '/etc/nsswitch.conf', '/etc/nsswitch.conf', '--ro-bind', '/etc/ssl', '/etc/ssl', '--ro-bind', '/etc/ca-certificates', '/etc/ca-certificates', '--', '/opt/codex', 'exec', '--skip-git-repo-check', '--ignore-rules', '-C', '/proof', '--sandbox', 'read-only', '-m', 'gpt-6-astra', '-c', 'model_reasoning_effort=\"xhigh\"', '--output-schema', '/proof/proof_result.schema.json', '--output-last-message', '/out/result.json', '--color', 'never', '--json', '-']' timed out after 1799.9999440799002 seconds",
+  "updated_at": "2026-11-06T09:55:27.863090+00:00",
+  "execution_recoveries": [
+    {
+      "episode": 1,
+      "started_at": "2026-11-06T09:35:48.835762+00:00",
+      "reason": "TimeoutExpired: Command '['/usr/bin/bwrap', '--die-with-parent', '--new-session', '--unshare-pid', '--unshare-ipc', '--unshare-uts', '--tmpfs', '/', '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin', '--symlink', 'usr/sbin', '/sbin', '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib64', '/lib64', '--proc', '/proc', '--dev', '/dev', '--tmpfs', '/tmp', '--dir', '/etc', '--dir', '/opt', '--ro-bind', '/home/wuyangcheng/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex', '/opt/codex', '--ro-bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/stage2_context/13.13/attempt0', '/proof', '--bind', '/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/runs/RunA_Book13/raw/13.13_attempt0', '/out', '--bind', '/tmp/euclid-private-6f6ijaca/home', '/codex-home', '--setenv', 'HOME', '/codex-home', '--setenv', 'CODEX_HOME', '/codex-home', '--setenv', 'PATH', '/usr/bin:/bin', '--chdir', '/proof', '--ro-bind', '/etc/resolv.conf', '/etc/resolv.conf', '--ro-bind', '/etc/hosts', '/etc/hosts', '--ro-bind', '/etc/nsswitch.conf', '/etc/nsswitch.conf', '--ro-bind', '/etc/ssl', '/etc/ssl', '--ro-bind', '/etc/ca-certificates', '/etc/ca-certificates', '--', '/opt/codex', 'exec', '--skip-git-repo-check', '--ignore-rules', '-C', '/proof', '--sandbox', 'read-only', '-m', 'gpt-6-astra', '-c', 'model_reasoning_effort=\"xhigh\"', '--output-schema', '/proof/proof_result.schema.json', '--output-last-message', '/out/result.json', '--color', 'never', '--json', '-']' timed out after 1799.9999440799002 seconds",
+      "policy": "replay accepted logical attempts; no semantic selection"
+    }
+  ],
+  "independent_results_frozen_at": "2026-11-06T09:55:27.851999+00:00",
+  "frozen_results_sha256": "ba17f942e83d25c30d697e474ae99f38a6b4c594b85bc1c2bf3aaef7b7ce6f62",
+  "frozen_audit_sha256": "994cc471da94d2eb70d81d21ef23b8dc162a88515c6e3378858e566f4230f006",
+  "heath_load_started_at": "2026-11-06T09:55:27.857816+00:00",
+  "comparison": {
+    "completed_at": "2026-11-06T09:55:27.860359+00:00",
+    "human_source": "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/data/euclid_human_refs.json",
+    "human_sha256": "0ab95bb06bad41f3b9081a7b28dab9d04076f081c969c2ce80c166564ec00646",
+    "mean_jaccard_legacy_rounded": 0.1848333333333333,
+    "perfect_matches": 0,
+    "proposition_count": 18,
+    "unresolved_ordering": {},
+    "mathematical_validity": "not assessed; outside the proof-generation workflow scope",
+    "partial_run": false,
+    "outputs": [
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book13_StepByStep_Proofs.md",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book13_AI_vs_Human_Citations.csv",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/outputs/RunA_Book13_Execution_Metadata.json",
+      "/data/WYC/mathProofV2/euclid-proof-project-shuffled-table/proofs/RunA_Book13"
+    ]
+  }
+}

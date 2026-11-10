@@ -1,0 +1,2833 @@
+# Book 10 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 10.1
+**Statement:** Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.
+
+**Step 1.** Let A be the greater magnitude and B the lesser. By D5.4, choose a finite positive integer n such that n copies of B together exceed A: nB > A. We use this finite-multiple route directly, without introducing a proportionality theorem. [D5.4]
+
+**Step 2.** Consider n successive prescribed subtractions, unless a remainder less than B has already appeared, in which case the conclusion is obtained. Write R₀ = A, and let Sᵢ be the magnitude removed at the ith subtraction and Rᵢ its remainder, so Rᵢ₋₁ = Sᵢ + Rᵢ. Since Sᵢ exceeds half of Rᵢ₋₁, Rᵢ is less than that half; consequently Sᵢ > Rᵢ. Explicitly, if Rᵢ₋₁ = Hᵢ + Hᵢ and Sᵢ = Hᵢ + Eᵢ with Eᵢ positive, subtracting the common part gives Hᵢ = Eᵢ + Rᵢ. Thus Sᵢ > Hᵢ > Rᵢ. [CN3, CN5]
+
+**Step 3.** Each successive remainder is a part of the preceding one. Hence Rᵢ ≥ Rₙ for every i from 1 to n. Together with Step 2, this gives Sᵢ > Rₙ for every one of the n removed magnitudes. [CN5]
+
+**Step 4.** Adding the successive decompositions gives
+A = S₁ + S₂ + ⋯ + Sₙ + Rₙ.
+Each Sᵢ contains a magnitude equal to Rₙ and a positive excess. Therefore nRₙ is a proper part of A, and
+nRₙ < A < nB.
+If Rₙ were equal to or greater than B, adding n copies would give nRₙ equal to or greater than nB, contrary to this inequality. Thus Rₙ < B. Accordingly, after finitely many prescribed subtractions, a magnitude remains which is less than the lesser magnitude originally set out. [CN2, CN5]
+
+**USED:** CN2, CN3, CN5, D5.4
+**Human refs (from References field):** D5.4
+**Jaccard:** 0.250 — AI adds ['CN2', 'CN3', 'CN5']
+
+## Proposition 10.2
+**Statement:** If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.
+
+**Step 1.** Let A>B be the given magnitudes. Suppose, for a contradiction, that they are commensurable. Then some magnitude D measures both A and B. [D10.1.1]
+
+**Step 2.** Put R₀=A and R₁=B, and denote by R₂,R₃,… the successive remainders after completed turns of the subtraction process. Thus, for each i≥1,
+Rᵢ₋₁=qᵢRᵢ+Rᵢ₊₁,
+where qᵢ is a positive whole number and 0<Rᵢ₊₁<Rᵢ. The hypothesis excludes exact measurement, so no turn terminates with zero and these positive remainders continue indefinitely. Here qᵢRᵢ denotes qᵢ copies of Rᵢ. [Hypothesis; D5.2]
+
+**Step 3.** D measures every remainder. Indeed, whenever D measures two magnitudes, subtracting the smaller from the larger removes a whole number of copies of D and leaves a whole number of copies of D. Starting with A and B, this observation applies to each subtraction and hence to every Rᵢ. In particular, every positive Rᵢ is at least D. [D5.2; CN3; CN5]
+
+**Step 4.** Since qᵢ≥1 and Rᵢ>Rᵢ₊₁, the relation in Step 2 gives
+Rᵢ₋₁≥Rᵢ+Rᵢ₊₁>Rᵢ₊₁+Rᵢ₊₁.
+Consequently Rᵢ₊₁ is less than half of Rᵢ₋₁. Thus, in the sequence R₀,R₂,R₄,…, each magnitude is obtained from the preceding one by subtracting more than its half. [CN2; CN5]
+
+**Step 5.** We use 10.1 directly on these alternate remainders, since Step 4 supplies precisely its hypothesis for magnitudes. As A>B≥D, we have A>D. Proposition 10.1 therefore ensures that some remainder R₂ₖ is less than D. [10.1; CN5]
+
+**Step 6.** But Step 3 shows that D measures this positive remainder, so it contains at least one copy of D and cannot be less than D. This contradiction proves that A and B have no common measure. Therefore the given magnitudes are incommensurable. [D5.2; CN5; D10.1.1]
+
+**USED:** 10.1, CN2, CN3, CN5, D10.1.1, D5.2
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['10.1', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.2']
+
+## Proposition 10.3
+**Statement:** Given two commensurable magnitudes, to find their greatest common measure.
+
+**Step 1.** Let A and B be the given commensurable magnitudes, so that they admit a common measure. If they are equal, either is their greatest common measure. If they are unequal and the lesser measures the greater, the lesser is their greatest common measure: it measures both, and no measure of the lesser can exceed it, since a measured magnitude consists of one or more copies of its measure. Hence suppose that neither of these cases holds. [D10.1.1, D5.2, CN5]
+
+**Step 2.** Choose successive subtraction directly on the magnitudes, because Proposition 10.2 supplies the required stopping criterion. Subtract the lesser current magnitude from the greater, continue with the lesser and the positive remainder, and repeat, stopping as soon as the lesser current magnitude measures the greater. If this never occurred, A and B would be incommensurable by Proposition 10.2, contrary to the hypothesis. Thus the process stops after finitely many subtractions, at magnitudes C and D, with D measuring C. [10.2, D10.1.1]
+
+**Step 3.** D measures both final magnitudes. Now reverse the subtractions. At each subtraction the preceding greater magnitude was the sum of the preceding lesser magnitude and the remainder. If D measures those two summands, each consists of whole copies of D, and their sum therefore also consists of whole copies of D. Repeating this argument backwards through the finite process shows that D measures both A and B. [D5.2, CN2]
+
+**Step 4.** Let E be any common measure of A and B. At each subtraction, if E measures the two current magnitudes, removing the whole copies of E constituting the lesser from those constituting the greater leaves whole copies of E. Thus E also measures the remainder. Following all the subtractions forwards, E consequently measures both final magnitudes, and in particular D. [D5.2, CN3]
+
+**Step 5.** Since E measures D, D is either equal to E or consists of several copies of E and is greater than E. Therefore no common measure of A and B exceeds D. By Step 3, D itself measures both. Hence D is the greatest common measure of the two given commensurable magnitudes, and the stated procedure finds it. [D5.2, CN5]
+
+**USED:** 10.2, CN2, CN3, CN5, D10.1.1, D5.2
+**Human refs (from References field):** 10.2
+**Jaccard:** 0.167 — AI adds ['CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.2']
+
+## Proposition 10.4
+**Statement:** Given three commensurable magnitudes, to find their greatest common measure.
+
+**Step 1.** Let A, B, C be the three given commensurable magnitudes. Thus some magnitude U measures all three; U is used only to justify termination and need not be supplied for the construction. We use successive subtraction twice, since this route retains every common measure throughout the construction. [D10.1.1]
+
+**Step 2.** In successive subtraction, every common measure of the two current magnitudes also measures the remainder: subtracting a whole number of copies of a measure from another whole number of its copies leaves a whole number of copies. Conversely, a measure of the subtracted magnitude and the remainder measures their sum. Consequently, common measures persist forwards through the subtractions, and a measure of both terminal magnitudes measures all preceding magnitudes by reversing the subtractions. [D5.2, CN3, CN2]
+
+**Step 3.** Apply successive subtraction to A and B, stopping when the lesser magnitude measures the greater, and call that lesser magnitude D. If A and B are equal, take D=A immediately. Otherwise the process must reach the stated stopping condition: if it did not, A and B would be incommensurable by 10.2, contrary to their common measure U. At the stopping condition D measures both terminal magnitudes, so reversing the subtractions shows that D measures A and B. Moreover, every common measure of A and B, including U, measures D, since it measures every remainder. [10.2, D10.1.1, CN2, CN3]
+
+**Step 4.** If D also measures C, return D. It measures all three magnitudes. Every common measure H of the three measures A and B, and hence measures D by Step 3. Therefore H cannot be greater than D. Thus D is their greatest common measure, and the construction is finished in this case. [D5.2, CN5]
+
+**Step 5.** If D does not measure C, apply successive subtraction to D and C, again stopping when the lesser measures the greater; call the lesser at that stage E. This process terminates by 10.2, because U measures both D and C. As in Steps 2–3, reversing the subtractions shows that E measures D and C, while every common measure of D and C measures E. Since E measures D and D measures A and B, repeated addition shows that E also measures A and B. Thus E measures all three given magnitudes. [D10.1.1, 10.2, D5.2, CN2, CN3]
+
+**Step 6.** Let H be any common measure of A, B, C. By Step 3 it measures D; it therefore measures both D and C, and hence measures E by Step 5. Consequently H cannot exceed E. Thus E is the greatest common measure of A, B, C. In either case, the required greatest common measure has been found. [D5.2, CN5]
+
+**USED:** 10.2, CN2, CN3, CN5, D10.1.1, D5.2
+**Human refs (from References field):** 10.3
+**Jaccard:** 0.000 — AI adds ['10.2', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D5.2']; Human adds ['10.3']
+
+## Proposition 10.5
+**Statement:** Commensurable magnitudes have to one another the ratio which a number has to a number.
+
+**Step 1.** Let A and B be commensurable magnitudes. By the definition of commensurability, some magnitude C measures both. Thus A consists of m copies of C and B of n copies of C, where m and n are positive repetition counts. We use this common measure directly; a greatest common measure is unnecessary. [D10.1.1]
+
+**Step 2.** Let M be the number consisting of 2m units, and N the number consisting of 2n units. Both are multitudes of units and therefore numbers. Doubling the counts ensures this even if C measures either magnitude just once. [D7.2]
+
+**Step 3.** Take arbitrary positive repetition counts r and s. Then rA consists of rm copies of C, and sB consists of sn copies of C. Equal counts of these equal copies give equal wholes; a greater count gives a greater whole, since the additional copies make the smaller whole a proper part. Meanwhile, rM consists of 2rm units and sN of 2sn units. Doubling both counts preserves whether they are greater, equal, or less. Consequently, rA exceeds, equals, or falls short of sB exactly when rM respectively exceeds, equals, or falls short of sN. [CN2, CN5]
+
+**Step 4.** Thus arbitrary equimultiples of A and M, compared respectively with arbitrary equimultiples of B and N, always agree in exceeding, equalling, or falling short. By the definition of equal ratios, A:B = M:N. Since M and N are numbers, commensurable magnitudes have to one another the ratio which a number has to a number. [D5.5]
+
+**USED:** CN2, CN5, D10.1.1, D5.5, D7.2
+**Human refs (from References field):** 5.22, 5.7, D7.20
+**Jaccard:** 0.000 — AI adds ['CN2', 'CN5', 'D10.1.1', 'D5.5', 'D7.2']; Human adds ['5.22', '5.7', 'D7.20']
+
+## Proposition 10.6
+**Statement:** If two magnitudes have to one another the ratio which a number has to a number, the magnitudes will be commensurable.
+
+**Step 1.** Let A and B be magnitudes such that A:B = m:n, where m and n are the positive integral counts of units in the given numbers. Equality of ratios implies that A is greater than, equal to, or less than B according as m is greater than, equal to, or less than n: take the multiples once in the definition of equal ratios. The same observation applies to every proportional pair below. [D7.2, D5.5]
+
+**Step 2.** Suppose at some stage X:Y = p:q and p ≠ q. Interchange both pairs if necessary so that p > q; equality of ratios is preserved by this interchange, directly from its definition. Then X > Y. By separation of ratios,
+(X − Y):Y = (p − q):q.
+Thus subtracting the smaller magnitude from the greater can be accompanied by the identical subtraction of their numerical representatives, preserving the proportion. We use V.17 because separation is precisely the operation required here. [D5.5, 5.17, D5.15]
+
+**Step 3.** Repeat this operation while the two numerical representatives are unequal. Both remain positive integral counts, and their sum decreases by at least one unit at every operation. Consequently the process must end, since the initial sum contains only finitely many units. At its end the numerical representatives are equal; hence the corresponding magnitudes are equal by Step 1. Denote each of these last magnitudes by C. [D7.2, D5.5]
+
+**Step 4.** The magnitude C measures both final magnitudes, each once. Now reverse the finite sequence of subtractions. If C measures both X − Y and Y, say X − Y = rC and Y = sC, then addition of equals gives X = (r + s)C. Hence C also measures X. Reversing every subtraction therefore shows that C measures both original magnitudes A and B. [CN2, D5.2]
+
+**Step 5.** Magnitudes measured by the same measure are commensurable. Since C measures both A and B, the given magnitudes are commensurable, as required. [D10.1.1]
+
+**USED:** 5.17, CN2, D10.1.1, D5.15, D5.2, D5.5, D7.2
+**Human refs (from References field):** 5.11, 5.22, 5.7, 5.9, D7.20
+**Jaccard:** 0.000 — AI adds ['5.17', 'CN2', 'D10.1.1', 'D5.15', 'D5.2', 'D5.5', 'D7.2']; Human adds ['5.11', '5.22', '5.7', '5.9', 'D7.20']
+
+## Proposition 10.7
+**Statement:** Incommensurable magnitudes have not to one another the ratio which a number has to a number.
+
+**Step 1.** Let A and B be incommensurable magnitudes. By definition, they cannot have any common measure. [D10.1.1]
+
+**Step 2.** Use Proposition 10.6 by contraposition: it is the immediately preceding proposition and gives exactly the implication needed. Suppose, for a contradiction, that A:B is the ratio of some number m to some number n. Then A and B are commensurable. [10.6]
+
+**Step 3.** Being commensurable, A and B have a common measure, contrary to Step 1. Therefore incommensurable magnitudes have not to one another the ratio which a number has to a number. [D10.1.1]
+
+**USED:** 10.6, D10.1.1
+**Human refs (from References field):** 10.6
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.8
+**Statement:** If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes will be incommensurable.
+
+**Step 1.** Let A and B be magnitudes whose ratio is not the ratio of any number to any number. Suppose they had a common measure. They would then be commensurable. [D10.1.1]
+
+**Step 2.** Commensurable magnitudes have to one another the ratio which a number has to a number. Thus A and B would have such a ratio, contrary to the hypothesis. This uses 10.5 contrapositively, the immediate route because its conclusion is precisely what the hypothesis excludes. [10.5]
+
+**Step 3.** Therefore A and B cannot have any common measure; hence they are incommensurable, as required. [D10.1.1]
+
+**USED:** 10.5, D10.1.1
+**Human refs (from References field):** 10.5
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.9
+**Statement:** The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.
+
+**Step 1.** For a straight line x, write Q(x) for the square on it. Squares are similar figures: their angles are right angles and their corresponding sides are proportional. Thus Q(a):Q(b) is the duplicate ratio of a:b. We use this duplicate-ratio route for the forward implication, and the converse theorem about similar figures for the reverse implication. [D1.22, D6.1, 6.20]
+
+**Step 2.** Suppose a and b are commensurable in length. There are numbers m and n such that a:b = m:n. [10.5] The numbers m² and n² are square numbers, and m²:n² is the duplicate ratio of m:n. The theorem specifically about square numbers is the direct numerical counterpart needed here. [D7.18, 8.11] Equal ratios have equal duplicate ratios: by the definition of duplication, these are the ratios across two successive proportional pairs, and equality follows ex aequali. [D5.9, 5.22] Consequently,
+Q(a):Q(b) = m²:n².
+Thus the squares on lines commensurable in length have the ratio of a square number to a square number.
+
+**Step 3.** Conversely, suppose Q(a):Q(b) = m²:n², where m and n are the sides of the given square numbers. [D7.18] Choose a straight line u and, by repeated placement of equal segments, take straight lines c and d consisting respectively of m and n copies of u. [1.2] Then c:d = m:n. Indeed, for any positive integers r and s, the multiples rc and sd contain respectively rm and sn copies of u, so they exceed, equal, or fall short of one another exactly as rm and sn do. This is equality of ratios by the equimultiple definition. [D5.5]
+
+**Step 4.** Applying the duplicate-ratio argument of Step 2 to c:d = m:n gives Q(c):Q(d) = m²:n². [6.20, 8.11, D5.9, 5.22] Hence Q(a):Q(b) = Q(c):Q(d). [5.11] Since these are similar figures similarly described on their sides, the converse of the similar-figure theorem gives a:b = c:d. [6.22] Therefore a:b = m:n, and a and b are commensurable in length. [5.11, 10.6] This establishes the converse without assuming that duplicate ratios may simply be cancelled.
+
+**Step 5.** Suppose a and b are incommensurable in length. If Q(a):Q(b) were the ratio of a square number to a square number, Steps 3–4 would make a and b commensurable, contradicting their having no common measure. Therefore their squares do not have such a ratio. [D10.1.1; Steps 3–4]
+
+**Step 6.** Finally, suppose Q(a):Q(b) is not the ratio of a square number to a square number. If a and b were commensurable in length, Step 2 would give precisely such a ratio. Hence a and b have no common measure and are incommensurable in length. All four assertions follow. [D10.1.1; Step 2]
+
+**USED:** 1.2, 10.5, 10.6, 5.11, 5.22, 6.20, 6.22, 8.11, D1.22, D10.1.1, D5.5, D5.9, D6.1, D7.18
+**Human refs (from References field):** 10.5, 10.6, 6.20, 8.11
+**Jaccard:** 0.286 — AI adds ['1.2', '5.11', '5.22', '6.22', 'D1.22', 'D10.1.1', 'D5.5', 'D5.9', 'D6.1', 'D7.18']
+
+## Proposition 10.10
+**Statement:** To find two straight lines incommensurable, the one in length only, and the other in square also, with an assigned straight line.
+
+**Step 1.** Choose the numerical ratio 2:3. This is not the ratio of two square numbers. For otherwise, since there is a mean proportional number between two square numbers, there would also be a mean proportional number between 2 and 3. Such a number must lie strictly between 2 and 3, which is impossible, since a number is a multitude of units. [8.11, 8.8, D7.2]
+
+**Step 2.** Let A be the assigned straight line, and write S(X) for the square on a straight line X. Cut off one third of A, and let R be the remaining straight line. Thus R:A = 2:3. [6.9, D5.5]
+
+**Step 3.** Construct a mean proportional B between A and R, so that A:B = B:R. We choose the mean-proportional construction because it immediately expresses the required square as a rectangle: S(B) equals the rectangle contained by A and R. This rectangle and S(A) have the same height A, so their ratio is R:A. Consequently,
+S(B):S(A) = R:A = 2:3. [6.13, 6.17, 6.1, 5.11]
+
+**Step 4.** Since S(B):S(A) is a ratio of numbers, these squares are commensurable; hence B and A are commensurable in square. But, by Step 1, their squares do not have the ratio of a square number to a square number. Apply 10.9, the direct criterion naturally supplied by this square-ratio construction: B and A are incommensurable in length. Thus B is incommensurable with A in length only. [10.6, D10.1.2, 10.9]
+
+**Step 5.** Construct a mean proportional C between A and B, so that A:C = C:B. Then S(C) equals the rectangle contained by A and B. Comparing this rectangle with S(A), again under the same height A, gives
+S(C):S(A) = B:A. [6.13, 6.17, 6.1]
+
+**Step 6.** Since B and A are incommensurable in length, B:A is not the ratio of a number to a number. Therefore S(C):S(A) is not such a ratio either, and these squares are incommensurable. Hence C and A are incommensurable in square. [10.7, 10.8, D10.1.2]
+
+**Step 7.** C and A are also incommensurable in length. For if they were commensurable in length, their squares would have the ratio of a square number to a square number, and would therefore be commensurable, contrary to Step 6. Thus the constructed straight lines B and C satisfy the requirement: B is incommensurable with A in length only, and C is incommensurable with A in square also. [10.9, 10.6]
+
+**USED:** 10.6, 10.7, 10.8, 10.9, 5.11, 6.1, 6.13, 6.17, 6.9, 8.11, 8.8, D10.1.2, D5.5, D7.2
+**Human refs (from References field):** 10.11, 10.6, 10.9, D5.9
+**Jaccard:** 0.125 — AI adds ['10.7', '10.8', '5.11', '6.1', '6.13', '6.17', '6.9', '8.11', '8.8', 'D10.1.2', 'D5.5', 'D7.2']; Human adds ['10.11', 'D5.9']
+
+## Proposition 10.11
+**Statement:** If four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth; and, if the first be incommensurable with the second, the third will also be incommensurable with the fourth.
+
+**Step 1.** Let A, B, C, D be magnitudes such that A:B = C:D. Use the numerical-ratio criterion, since it directly transfers commensurability through this equality of ratios. Suppose first that A is commensurable with B. Then there are numbers m, n such that A:B = m:n. (10.5)
+
+**Step 2.** Since C:D and m:n are both the same ratio as A:B, they are the same as one another. Thus C:D = m:n, and consequently C is commensurable with D. This proves the first assertion. (5.11, 10.6)
+
+**Step 3.** Now suppose that A is incommensurable with B. For this case, use contradiction with the same numerical-ratio criterion. If C were commensurable with D, there would be numbers p, q such that C:D = p:q. Since A:B = C:D, it would follow that A:B = p:q, and hence A would be commensurable with B, contrary to the supposition. Therefore C is incommensurable with D. Both assertions are proved. (10.5, 5.11, 10.6)
+
+**USED:** 10.5, 10.6, 5.11
+**Human refs (from References field):** 10.5, 10.6, 10.7, 10.8
+**Jaccard:** 0.400 — AI adds ['5.11']; Human adds ['10.7', '10.8']
+
+## Proposition 10.12
+**Statement:** Magnitudes commensurable with the same magnitude are commensurable with one another also.
+
+**Step 1.** Let A and B each be commensurable with the same magnitude C. Choose the direct numerical-ratio route: the affirmative hypotheses allow immediate application of 10.5. Thus there are numbers m, n, p, q such that A:C = m:n and C:B = p:q. [10.5]
+
+**Step 2.** Form the numbers r = pm, s = pn, and t = nq. Multiplication preserves the ratio of the numbers multiplied, so r:s = m:n and np:t = p:q. Since pn = np, the latter equality is s:t = p:q. [7.17, 7.16]
+
+**Step 3.** Ratios equal to the same ratio are equal to one another. Hence A:C = r:s and C:B = s:t. [5.11]
+
+**Step 4.** Apply equality of ratios ex aequali to the triples A, C, B and r, s, t. It follows that A:B = r:t. [5.22]
+
+**Step 5.** Since A and B have the ratio of a number to a number, they are commensurable. Therefore magnitudes commensurable with the same magnitude are commensurable with one another also. [10.6]
+
+**USED:** 10.5, 10.6, 5.11, 5.22, 7.16, 7.17
+**Human refs (from References field):** 10.5, 10.6, 5.11, 5.22, 8.4
+**Jaccard:** 0.571 — AI adds ['7.16', '7.17']; Human adds ['8.4']
+
+## Proposition 10.13
+**Statement:** If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same.
+
+**Step 1.** Let A and B be commensurable magnitudes, and let A be incommensurable with C. Commensurability is symmetric, since a common measure measures both magnitudes. [D10.1.1]
+
+**Step 2.** Use contradiction and 10.12, the immediate common-magnitude criterion. Suppose B were commensurable with C. Then A and C would both be commensurable with B, and therefore A and C would be commensurable with one another. [D10.1.1, 10.12]
+
+**Step 3.** This contradicts the hypothesis that A and C are incommensurable, meaning that they cannot have a common measure. Hence B is incommensurable with C, as required. [D10.1.1]
+
+**USED:** 10.12, D10.1.1
+**Human refs (from References field):** 10.12
+**Jaccard:** 0.500 — AI adds ['D10.1.1']
+
+## Proposition 10.14
+**Statement:** If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third will also be greater than the square on the fourth by  the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third will also be greater than the square on the fourth by the square on a straight line in-commensurable with the third.
+
+**Step 1.** Let the four straight lines be a, b, c, d, with a:b = c:d. Write x² for the area of the square on a line x. Let e be the given line such that a² = b² + e². Choose the direct fourth-proportional route, so that the required comparison of commensurability will follow from a proportion between straight lines. Construct f such that a:e = c:f. [6.12]
+
+**Step 2.** Alternating the two proportions gives a:c = b:d and a:c = e:f. Squares are similar and similarly described figures; hence
+
+a²:c² = b²:d²,
+
+a²:c² = e²:f². [5.16, 6.22]
+
+**Step 3.** Thus b²:d² = e²:f², since both ratios equal a²:c². By the proposition on the sums of proportional magnitudes,
+
+(b² + e²):(d² + f²) = b²:d². [5.11, 5.12]
+
+**Step 4.** Since b² + e² = a² and b²:d² = a²:c², it follows that
+
+a²:(d² + f²) = a²:c².
+
+Magnitudes to which the same magnitude has the same ratio are equal. Therefore d² + f² = c². Consequently, the square on c is greater than the square on d by the square on f. [5.11, 5.9]
+
+**Step 5.** Apply 10.11 to the constructed proportion a:e = c:f. If e is commensurable with a, then f is commensurable with c. If e is incommensurable with a, then f is incommensurable with c. Together with c² = d² + f², these are precisely the two asserted conclusions. [10.11]
+
+**USED:** 10.11, 5.11, 5.12, 5.16, 5.9, 6.12, 6.22
+**Human refs (from References field):** 10.11, 5.17, 5.22, 6.22
+**Jaccard:** 0.222 — AI adds ['5.11', '5.12', '5.16', '5.9', '6.12']; Human adds ['5.17', '5.22']
+
+## Proposition 10.15
+**Statement:** If two commensurable magnitudes be added together, the whole will also be commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes will also be commensurable.
+
+**Step 1.** Let A and B be the two magnitudes, and let W = A + B be their whole. We use the defining common measure directly, rather than pass through ratios. Suppose first that A and B are commensurable. By D10.1.1, some magnitude U measures both: A consists of m copies of U and B of n copies of U, for positive integers m and n. [D10.1.1]
+
+**Step 2.** Adding these equal representations, W consists of m + n copies of U. Thus U measures W as well as A and B. Consequently W is commensurable with each of A and B. [CN2, D10.1.1]
+
+**Step 3.** Conversely, suppose W is commensurable with one of its parts, which we may name A. There is then a common measure V such that W consists of r copies of V and A of s copies of V. Since the whole W is greater than its part A, r > s. [D10.1.1, CN5]
+
+**Step 4.** Subtracting the equal representations of A from those of W, the remainder B consists of r − s copies of V. Therefore V measures both A and B, so the original magnitudes are commensurable. This proves both assertions. [CN3, D10.1.1]
+
+**USED:** CN2, CN3, CN5, D10.1.1
+**Human refs (from References field):** D10.1.1
+**Jaccard:** 0.250 — AI adds ['CN2', 'CN3', 'CN5']
+
+## Proposition 10.16
+**Statement:** If two incommensurable magnitudes be added together, the whole will also be incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes will also be incommensurable.
+
+**Step 1.** Let the two magnitudes be A and B, and let their whole be W = A + B. By definition, commensurable magnitudes admit a common measure, whereas incommensurable magnitudes admit none. We use the two clauses of Proposition 10.15 by contradiction, choosing this direct route because that proposition concerns precisely a whole and its two summands. [D10.1.1; 10.15]
+
+**Step 2.** Suppose A and B are incommensurable. If W were commensurable with either A or B, the second clause of Proposition 10.15 would imply that A and B are commensurable, contrary to the supposition. Hence W is incommensurable with A and also with B. [10.15; D10.1.1]
+
+**Step 3.** Conversely, suppose W is incommensurable with one of A and B. If A and B were commensurable, the first clause of Proposition 10.15 would make W commensurable with each of them, contradicting the supposition. Therefore A and B are incommensurable. Thus both assertions are proved. [10.15; D10.1.1]
+
+**USED:** 10.15, D10.1.1
+**Human refs (from References field):** D10.1.1
+**Jaccard:** 0.500 — AI adds ['10.15']
+
+## Proposition 10.17
+**Statement:** If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater will be greater than the square on the less by the square on a straight line commensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with  the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
+
+**Step 1.** Let a be the greater straight line and b the less. Write S(u) for the square on u and R(u,v) for the rectangle contained by u and v. Let the given application divide a into parts p and q, named so that p ≥ q. Because the deficient figure is a square, the applied parallelogram is the rectangle contained by the two parts. Thus a = p + q and 4R(p,q) = S(b). [D1.22]
+
+**Step 2.** The parts are unequal. For if p = q, then II.4 gives S(a) = S(2p) = 4S(p) = 4R(p,q) = S(b). But a > b, and II.4 expresses S(a) as S(b) together with positive additional areas, so S(a) > S(b). This is a contradiction. Hence p > q; denote their positive difference by d, so that p = q + d. [2.4, CN1, CN5]
+
+**Step 3.** We use the difference-of-parts route: II.8 directly gives the required square, without an auxiliary midpoint. Apply it to p cut into q and d. It gives
+S(p + q) = 4R(p,q) + S(d).
+Consequently,
+S(a) = S(b) + S(d). [2.8, CN1]
+
+**Step 4.** First suppose that the parts p and q are commensurable in length. By X.15, their sum a is commensurable with q. Also, since p = d + q and p is commensurable with q, the converse part of X.15 shows that d and q are commensurable. Therefore a and d are commensurable by X.12. The identity in Step 3 now proves that the square on the greater exceeds the square on the less by the square on a straight line commensurable with the greater. [10.15, 10.12]
+
+**Step 5.** Conversely, suppose that S(a) = S(b) + S(c), where c is commensurable in length with a, and let the stated application divide a into p and q. Steps 1–3 apply to this application. Comparing its identity with the present hypothesis and subtracting S(b), we obtain S(c) = S(d). Squares on unequal straight lines are unequal, by II.4 and the whole being greater than its part, as in Step 2. Hence c = d, so a and d have a common measure. [CN1, CN3, 2.4, CN5, D10.1.1]
+
+**Step 6.** Since a = d + 2q and a is commensurable with d, X.15 shows that d and 2q are commensurable. The lines 2q and q are commensurable, since q measures both. Thus d and q are commensurable by X.12. Finally, X.15 applied to p = d + q shows that p and q are commensurable. Therefore the application divides the greater straight line into parts commensurable in length. Both assertions are proved. [10.15, D10.1.1, 10.12]
+
+**USED:** 10.12, 10.15, 2.4, 2.8, CN1, CN3, CN5, D1.22, D10.1.1
+**Human refs (from References field):** 10.12, 10.15, 10.6, 2.5
+**Jaccard:** 0.182 — AI adds ['2.4', '2.8', 'CN1', 'CN3', 'CN5', 'D1.22', 'D10.1.1']; Human adds ['10.6', '2.5']
+
+## Proposition 10.18
+**Statement:** If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater will be greater than the square on the less by the square on a straight line incommensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable. Let A, BC be two unequal straight lines, of which BC is the greater, and to BC let there be applied a parallelogram equal to the fourth part of the square on the less, A, and deficient by a square figure.
+
+**Step 1.** Let D be the point at which the given parallelogram, applied to BC and deficient by a square, divides BC. Its area is one fourth of the square on A, and BC > A. We use Proposition 10.17, the immediately preceding commensurable criterion, because it concerns exactly this application and supplies both implications needed here. Throughout, commensurability of straight lines means commensurability in length; incommensurability means that no common measure exists. [10.17; D10.1.1]
+
+**Step 2.** First obtain a straight line whose square equals the excess of the square on BC over the square on A. Describe the two squares and place them with a common vertex and corresponding sides along the same two rays. Since BC > A, the smaller square is a proper part of the larger, so the remaining rectilineal figure E is positive. Construct a square equal to E, and call its side t. Thus
+BC² = A² + t².
+[1.46; CN5; 2.14]
+
+**Step 3.** Suppose that BD and DC are incommensurable. If t were commensurable with BC, then, since BC² exceeds A² by t², the converse implication of Proposition 10.17 would make BD and DC commensurable. This contradicts the supposition. Hence t is incommensurable with BC. Together with Step 2, this proves that the square on BC exceeds the square on A by the square on a straight line incommensurable with BC. [10.17; D10.1.1]
+
+**Step 4.** Conversely, suppose that BC² = A² + u², where u is incommensurable with BC. If BD and DC were commensurable, the forward implication of Proposition 10.17 would give a straight line v commensurable with BC such that BC² = A² + v². Subtracting the equal squares on A gives u² = v². Consequently u = v: otherwise, placing these squares with a common vertex and corresponding sides along the same rays would make one a proper part of the other, contradicting their equality. Thus the common measure of v and BC would also measure u and BC, contrary to the hypothesis. Therefore BD and DC are incommensurable. Both assertions are proved. [10.17; CN3; CN5; D10.1.1]
+
+**USED:** 1.46, 10.17, 2.14, CN3, CN5, D10.1.1
+**Human refs (from References field):** 10.13, 10.16, 10.17, 10.6
+**Jaccard:** 0.111 — AI adds ['1.46', '2.14', 'CN3', 'CN5', 'D10.1.1']; Human adds ['10.13', '10.16', '10.6']
+
+## Proposition 10.19
+**Statement:** The rectangle contained by rational straight lines commensurable in length is rational.
+
+**Step 1.** Let a and b be rational straight lines commensurable in length, and let u be the assigned rational straight line. Write R for the rectangle contained by a and b, S for the square on a, and U for the square on u. Since a is rational, it is commensurable in square with u; thus S and U have a common area-measure and are commensurable. [D10.1.3, D10.1.2, D10.1.1]
+
+**Step 2.** Choose the direct comparison with S, since R and S can be placed under the same height a, with bases b and a respectively. Hence b : a = R : S. Since b and a are commensurable, R and S are commensurable also, by the transfer of commensurability between proportional pairs. [6.1, 10.11]
+
+**Step 3.** Both R and U are commensurable with S; therefore R and U are commensurable with one another. An area commensurable with the square on the assigned rational straight line is rational. Consequently R is rational: the rectangle contained by rational straight lines commensurable in length is rational. [10.12, D10.1.4]
+
+**USED:** 10.11, 10.12, 6.1, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.429 — AI adds ['10.12', 'D10.1.1', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.20
+**Statement:** If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.
+
+**Step 1.** Let the rational area R be applied to the rational straight line a, producing a rectangle with breadth b. Let u be the assigned rational straight line, and denote the squares on a, b, and u by Q_a, Q_b, and Q_u; these squares can be constructed by 1.46. Since a is rational, Q_a is commensurable with Q_u; since R is rational, R is commensurable with Q_u. [1.46; D10.1.2; D10.1.3; D10.1.4]
+
+**Step 2.** Consequently Q_a and R are commensurable, because both are commensurable with Q_u. [10.12]
+
+**Step 3.** Take a as the common height of Q_a and the applied rectangle R. Their bases are a and b, respectively, so
+Q_a : R = a : b.
+Since Q_a and R are commensurable, a and b are commensurable in length. This is the direct route: the shared height supplies precisely the proportion needed to transfer commensurability. [6.1; 10.11]
+
+**Step 4.** Now take b as the common height of the applied rectangle R and Q_b. Their bases are a and b, respectively, and therefore
+R : Q_b = a : b.
+Since a and b are commensurable, R and Q_b are commensurable. But R is also commensurable with Q_u, so Q_b and Q_u are commensurable with one another. [6.1; 10.11; 10.12]
+
+**Step 5.** Thus b is commensurable in square with the assigned rational straight line u, and hence b is rational. Together with Step 3, this proves that the breadth produced is rational and commensurable in length with the straight line to which the rational area is applied. [D10.1.2; D10.1.3]
+
+**USED:** 1.46, 10.11, 10.12, 6.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.429 — AI adds ['1.46', '10.12', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.21
+**Statement:** The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called medial.
+
+**Step 1.** Let a and b be rational straight lines commensurable in square only, and let R be the rectangle contained by them. Thus their squares have a common area-measure, but a and b have no common length-measure: they are incommensurable in length. [D10.1.1, D10.1.2]
+
+**Step 2.** Use the application criterion directly, since R is already a rectangle applied to the rational straight line a, with breadth b. If R were rational, its breadth b would be commensurable in length with a, by 10.20. This contradicts Step 1. Therefore R is not rational and hence is irrational. [10.20, D10.1.4]
+
+**Step 3.** Construct a square equal to R, and let m be its side. Since R is irrational, the straight line on which a square equal to R is described is irrational by definition. Thus m is irrational; call it **medial**. Consequently, both the rectangle contained by the given rational straight lines commensurable in square only and the side of the square equal to it are irrational, as required. [2.14, D10.1.4]
+
+**USED:** 10.20, 2.14, D10.1.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 6.1, D10.1.4
+**Jaccard:** 0.143 — AI adds ['10.20', '2.14', 'D10.1.1', 'D10.1.2']; Human adds ['10.11', '6.1']
+
+## Proposition 10.22
+**Statement:** The square on a medial straight line, if applied to a rational straight line, produces as breadth a straight line rational and incommensurable in length with that to which it is applied.
+
+**Step 1.** Write S(x) for the square on a straight line x and R(x,y) for the rectangle contained by x and y. Let m be medial, and let its square be applied to a rational straight line a, producing breadth b; thus R(a,b) = S(m). We use the defining rectangle of a medial line: there are rational straight lines c,d, commensurable in square only, such that S(m) = R(c,d), and this area is irrational. [10.21]
+
+**Step 2.** Since R(c,d) = R(a,b), the converse of the rectangle theorem gives c:a = b:d. Consequently, the squares similarly described on these four straight lines are proportional:
+S(c):S(a) = S(b):S(d). [6.16, 6.22]
+
+**Step 3.** Let u be the assigned rational straight line. Because c and a are rational, S(c) and S(a) are each commensurable with S(u). They are therefore commensurable with one another. [D10.1.2, D10.1.3, 10.12]
+
+**Step 4.** Applying the transfer of commensurability to the proportion in Step 2, we obtain that S(b) is commensurable with S(d). Since d is rational, S(d) is commensurable with S(u); hence S(b) is also commensurable with S(u). Thus b is commensurable in square with the assigned rational straight line and is therefore rational. [10.11, 10.12, D10.1.2, D10.1.3]
+
+**Step 5.** To establish incommensurability in length, use directly the criterion for a rectangle contained by rational straight lines commensurable in length. If b were commensurable in length with a, their rectangle R(a,b) would be rational. But this is the irrational area S(m) identified in Step 1, a contradiction. Therefore b is incommensurable in length with a. Accordingly, the square on a medial straight line, applied to a rational straight line, produces a breadth rational and incommensurable in length with the line to which it is applied. [10.19, 10.21, D10.1.4]
+
+**USED:** 10.11, 10.12, 10.19, 10.21, 6.16, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.21, 6.14, 6.22, D10.1.4
+**Jaccard:** 0.364 — AI adds ['10.12', '10.19', '6.16', 'D10.1.2', 'D10.1.3']; Human adds ['10.13', '6.14']
+
+## Proposition 10.23
+**Statement:** A straight line commensurable with a medial straight line is medial.
+
+**Step 1.** Let a be a medial straight line, and let b be commensurable in length with a. Denote the square on x by S(x), and the rectangle contained by x and y by R(x,y). We use the defining rectangle directly, since it is the earliest applicable characterization of a medial line: there are rational straight lines u and v, commensurable in square only, such that S(a) = R(u,v). [10.21]
+
+**Step 2.** Since a and b are commensurable in length, S(a) and S(b) have the ratio of a square number to a square number. Therefore these squares are commensurable. [10.9, 10.6]
+
+**Step 3.** Construct a third proportional w to u and b, so that u:b = b:w. Then R(u,w) = S(b). [6.11, 6.17]
+
+**Step 4.** The rectangles R(u,v) and R(u,w), having the same height u, are to one another as v is to w. Thus
+S(a):S(b) = R(u,v):R(u,w) = v:w.
+Since S(a) and S(b) are commensurable, v and w are commensurable in length. [6.1, 10.11]
+
+**Step 5.** Consequently S(v) and S(w) are commensurable, again by the square-number ratio criterion. Also S(u) and S(v) are commensurable, since u and v are commensurable in square. Hence S(u) and S(w) are commensurable, so u and w are commensurable in square. Moreover, because u is rational, S(u) is commensurable with the square on the assigned rational straight line. Transitivity therefore makes S(w) commensurable with that square, and w is rational. [10.9, 10.6, D10.1.2, 10.12, D10.1.3]
+
+**Step 6.** The straight lines v and u are incommensurable in length, whereas v and w are commensurable in length. Therefore w and u are incommensurable in length. Together with Step 5, this shows that the rational straight lines u and w are commensurable in square only. [10.13, D10.1.2]
+
+**Step 7.** The side of the square equal to the rectangle contained by two rational straight lines commensurable in square only is medial. Since S(b) = R(u,w), b is medial. Thus a straight line commensurable with a medial straight line is medial. [10.21]
+
+**USED:** 10.11, 10.12, 10.13, 10.21, 10.6, 10.9, 6.1, 6.11, 6.17, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.13, 10.21, 10.22, 6.1, D10.1.3
+**Jaccard:** 0.417 — AI adds ['10.12', '10.6', '10.9', '6.11', '6.17', 'D10.1.2']; Human adds ['10.22']
+
+## Proposition 10.24
+**Statement:** The rectangle contained by medial straight lines commensurable in length is medial.
+
+**Step 1.** Let a and b be medial straight lines commensurable in length, and let r be the assigned rational straight line. We take the direct route of expressing the rectangle contained by a and b on the rational base r, so that the criterion defining a medial straight line can be used. [D10.1.3, 10.21]
+
+**Step 2.** Construct fourth proportionals x and y such that r:a = a:x and r:a = b:y. Then the rectangle contained by r and x equals the square on a, while the rectangle contained by r and y equals the rectangle contained by a and b. Since a is medial, applying its square to the rational line r produces a breadth x which is rational and incommensurable in length with r. [6.12, 6.16, 10.22]
+
+**Step 3.** Rectangles under the same height are proportional to their bases; hence
+x:y = (rectangle contained by r and x):(rectangle contained by r and y) = (square on a):(rectangle contained by a and b) = a:b.
+Since a and b are commensurable in length, x and y are also commensurable in length. Here 10.11 directly transfers commensurability through the proportion, without an intervening numerical-ratio argument. [6.1, 10.11]
+
+**Step 4.** Because x and y are commensurable in length, their squares have the ratio of a square number to a square number and therefore are commensurable. Since x is rational, its square is commensurable with the square on r. Consequently the squares on y and r are commensurable with one another, so y is rational and commensurable in square with r. [10.9, 10.6, D10.1.3, D10.1.2, 10.12]
+
+**Step 5.** But x is incommensurable in length with r, and y is commensurable in length with x. Therefore y is incommensurable in length with r. Thus r and y are rational straight lines commensurable in square only. [10.13]
+
+**Step 6.** The side of the square equal to the rectangle contained by r and y is therefore medial. That rectangle equals the rectangle contained by a and b; hence the latter is equal to the square on a medial straight line and is a medial area. Therefore the rectangle contained by medial straight lines commensurable in length is medial. [10.21, 6.16]
+
+**USED:** 10.11, 10.12, 10.13, 10.21, 10.22, 10.6, 10.9, 6.1, 6.12, 6.16, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.23, 6.1
+**Jaccard:** 0.154 — AI adds ['10.12', '10.13', '10.21', '10.22', '10.6', '10.9', '6.12', '6.16', 'D10.1.2', 'D10.1.3']; Human adds ['10.23']
+
+## Proposition 10.25
+**Statement:** The rectangle contained by medial straight lines commensurable in square only is either rational or medial.
+
+**Step 1.** Let a and b be medial straight lines commensurable in square only. Write a² for the square on a and ab for the rectangle contained by a and b. Thus a² and b² are commensurable. Let r be the assigned rational straight line. We take the direct route of expressing both a² and ab as rectangles having side r. [D10.1.2, D10.1.3]
+
+**Step 2.** Construct fourth proportionals x and y such that
+r : a = a : x, and r : a = b : y.
+Then rx = a² and ry = ab. The rectangle form of proportionality is used uniformly for both applications. Since a is medial, applying its square to the rational straight line r gives a rational breadth; hence x is rational. [6.12, 6.16, 10.22]
+
+**Step 3.** The two constructed proportions give a : x = b : y, since both ratios equal r : a. Alternating therefore gives
+a : b = x : y. [5.11, 5.16]
+
+**Step 4.** Squares similarly described on proportional straight lines are proportional, so
+a² : b² = x² : y².
+Since a² and b² are commensurable, x² and y² are also commensurable. [6.22, 10.11]
+
+**Step 5.** Because x is rational, x² is commensurable with r². Both y² and r² are therefore commensurable with x², and consequently are commensurable with one another. Thus y is rational and is commensurable in square with r. [D10.1.3, 10.12, D10.1.2]
+
+**Step 6.** There are now two cases. If r and y are commensurable in length, their rectangle ry is rational. If they are incommensurable in length, they are rational straight lines commensurable in square only; the side of a square equal to ry is then medial, so ry is a medial area. Since ry = ab, the rectangle contained by the given medial straight lines is either rational or medial. [10.19, 10.21]
+
+**USED:** 10.11, 10.12, 10.19, 10.21, 10.22, 5.11, 5.16, 6.12, 6.16, 6.22, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.19, 10.21, 10.22, 5.11, 6.1, 6.17
+**Jaccard:** 0.357 — AI adds ['10.12', '5.16', '6.12', '6.16', '6.22', 'D10.1.2', 'D10.1.3']; Human adds ['6.1', '6.17']
+
+## Proposition 10.26
+**Statement:** A medial area does not exceed a medial area by a rational area.
+
+**Step 1.** Suppose, for a contradiction, that a medial area M exceeds a medial area N by a rational area R. Let r be the assigned rational straight line. Use application to this common line, since this makes the excess correspond to a difference of breadths. Apply M and N to r, obtaining rectangular breadths a and b respectively. Then a>b. Put d=a−b; the rectangle contained by r and d equals R. Here and below, xy denotes the rectangle contained by x and y, and x² the square on x. [D10.1.3, 10.22, 2.1]
+
+**Step 2.** Since M and N are medial, their breadths a and b are rational straight lines and are incommensurable in length with r. Since R is rational and rd=R, its breadth d is rational and commensurable in length with r. [10.22, 10.20]
+
+**Step 3.** Consequently a², b², and d² are each commensurable with r²: rational straight lines are commensurable in square with the assigned rational line. Thus these three squares are rational areas. [D10.1.2, D10.1.3, D10.1.4]
+
+**Step 4.** Apply II.7 directly to the division a=b+d; this gives the required relation using precisely these three squares:
+
+a²+d² = 2ad+b².
+
+Therefore the positive remainder of a²+d² after subtracting b² is 2ad. [2.7]
+
+**Step 5.** Since a² and d² are commensurable with r², they are commensurable with one another, and their sum is commensurable with r². That sum and b² are therefore commensurable; hence their remainder 2ad is also commensurable with r². [10.12, 10.15]
+
+The rectangle ad itself is commensurable with r²: if an area measures both 2ad and r², half that area measures both ad and r². Thus ad is a rational area. [D10.1.1, D10.1.4]
+
+**Step 6.** Apply this rational area ad to the rational straight line d. By X.20 its breadth a is commensurable in length with d. But d is commensurable in length with r, so a is commensurable in length with r, contrary to Step 2. [10.20, 10.12]
+
+Therefore a medial area does not exceed a medial area by a rational area.
+
+**USED:** 10.12, 10.15, 10.20, 10.22, 2.1, 2.7, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.16, 10.20, 10.22, 10.6, 2.4, D10.1.4
+**Jaccard:** 0.200 — AI adds ['10.12', '10.15', '2.1', '2.7', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.13', '10.16', '10.6', '2.4']
+
+## Proposition 10.27
+**Statement:** To find medial straight lines commensurable in square only which contain a rational rectangle.
+
+**Step 1.** Let a be the assigned rational straight line. Construct b incommensurable in length, but commensurable in square, with a. Then b is also rational. Write s² for the square on a line s, and st for the rectangle contained by s and t. [10.10; D10.1.3]
+
+**Step 2.** Construct c as the third proportional to b, a, so that b:a = a:c. Consequently bc = a². This reciprocal choice is the direct route to obtaining a rational rectangle in the conclusion. Since a² is rational, applying it to the rational line b produces the breadth c, which is rational and commensurable in length with b. Since b is incommensurable in length with a, so is c. But c, being rational, is commensurable in square with the assigned line a. Thus a and c are rational straight lines commensurable in square only. [6.11; 6.17; D10.1.4; 10.20; 10.13; D10.1.3]
+
+**Step 3.** Construct a mean proportional x between a and b, and a mean proportional y between a and c. Then
+x² = ab and y² = ac.
+Both pairs a, b and a, c consist of rational straight lines commensurable in square only. Hence x and y are medial straight lines. [6.13; 6.17; 10.21]
+
+**Step 4.** Rectangles under the same height are as their bases; therefore
+x²:y² = ab:ac = b:c.
+Since b and c are commensurable in length, x² and y² are commensurable. Thus x and y are commensurable in square. Here the direct ratio-transfer theorem is the natural choice, since the construction already supplies the required proportion, without introducing numerical ratios. [6.1; 10.11; D10.1.2]
+
+**Step 5.** Again using rectangles under the same height and bc = a², we have
+b²:a² = b²:bc = b:c = x²:y².
+Squares are similar and similarly described figures, so proportionality of these squares gives
+b:a = x:y.
+Since b and a are incommensurable in length, x and y are likewise incommensurable in length. Together with Step 4, this proves that x and y are commensurable in square only. [6.1; 5.11; 6.22; 10.11]
+
+**Step 6.** Finally,
+x²:a² = ab:bc = a:c = b:a = bc:ac = a²:y².
+The rectangle ratios follow from their common heights, and a:c = b:a is the defining proportion of c. Proportionality of the squares therefore gives x:a = a:y, whence xy = a². Since the square on the assigned rational line is rational, the rectangle contained by x and y is rational. Thus the constructed medial straight lines x and y are commensurable in square only and contain a rational rectangle, as required. [6.1; 5.11; 6.22; 6.17; D10.1.4]
+
+**USED:** 10.10, 10.11, 10.13, 10.20, 10.21, 5.11, 6.1, 6.11, 6.13, 6.17, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.17
+**Jaccard:** 0.235 — AI adds ['10.10', '10.13', '10.20', '5.11', '6.1', '6.11', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.23', '5.16', '6.12']
+
+## Proposition 10.28
+**Statement:** To find medial straight lines commensurable in square only which contain a medial rectangle.
+
+**Step 1.** Write uv for the rectangle contained by straight lines u and v, and u² for the square on u. We take the direct route of making the required rectangle equal to one contained by rational straight lines commensurable in square only; its square-root side will then be medial by 10.21. First observe that none of the ratios 1:2, 1:3, and 2:3 is a ratio of a square number to a square number. They equal 4:8, 4:12, and 4:6 respectively; since 4 is square, 8.24 would otherwise make 8, 12, or 6 square, which they are not. [10.21, 8.24]
+
+**Step 2.** Let a be the assigned rational straight line, and take its double 2a and triple 3a. Construct b as a mean proportional between a and 2a, and c as a mean proportional between a and 3a. Then b² = 2a² and c² = 3a². Also, (3a)² = 9a². Thus a² measures the squares on a, b, c, and 3a: these lines are rational and are commensurable in square with one another. The square-ratios for the pairs (a,b), (a,c), and (b,c) are respectively 1:2, 1:3, and 2:3. By Step 1 and 10.9, each of these pairs is incommensurable in length. [6.13, 6.17, 6.1, 6.20, D10.1.2, D10.1.3, 10.9]
+
+**Step 3.** Construct x as a mean proportional between a and b, so that x² = ab. Since a and b are rational and commensurable in square only, x is medial. Next construct y as the fourth proportional to a, c, and x, so that a:c = x:y. These are the two lines we shall establish as satisfying the requirement. [6.13, 6.17, 10.21, 6.12]
+
+**Step 4.** Apply the duplicate-ratio statement of 6.20 directly to the constructed proportion. It gives x²:y² = a²:c² = 1:3. Hence y² = 3x², and x² measures both squares; therefore x and y are commensurable in square. But 1:3 is not a ratio of a square number to a square number, by Step 1. Consequently x and y are incommensurable in length, and so are commensurable in square only. [6.20, D10.1.2, 10.9]
+
+**Step 5.** Since x² = ab, the preceding equality gives y² = 3ab = (3a)b. The lines 3a and b are rational and commensurable in square by Step 2. Moreover, 3a is commensurable in length with a, whereas b is incommensurable in length with a; hence b is incommensurable in length with 3a. Thus y² is the rectangle contained by rational lines 3a and b commensurable in square only. Therefore y, like x, is medial. [6.1, 10.13, 10.21]
+
+**Step 6.** Rectangles under the same height have the ratio of their bases. Accordingly, xy:x² = y:x = c:a, while bc:ab = c:a. Since x² = ab, the rectangles xy and bc have the same ratio to the same area, and therefore are equal. Now b and c are rational and commensurable in square only, by Step 2; hence the side of the square equal to bc is medial. Thus bc, and therefore xy, is a medial area. We have constructed medial straight lines x and y, commensurable in square only, which contain a medial rectangle, as required. [6.1, 5.9, 10.21]
+
+**USED:** 10.13, 10.21, 10.9, 5.9, 6.1, 6.12, 6.13, 6.17, 6.20, 8.24, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.21, 10.23, 5.16, 6.12, 6.13, 6.16, 6.17
+**Jaccard:** 0.250 — AI adds ['10.13', '10.9', '5.9', '6.1', '6.20', '8.24', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.23', '5.16', '6.16']
+
+## Proposition 10.29
+**Statement:** To find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+
+**Step 1.** Let a be the assigned rational straight line, and bisect it into two equal parts, each equal to c. Thus a = 2c, and c measures both a and itself, so a and c are commensurable in length. We choose a construction with square-area ratio 4:3, making the required difference the square on half the greater line. Write S(x) for the square on a straight line x. [D10.1.3, 1.10, D10.1.1]
+
+**Step 2.** Describe the square on a and, within one corner, the square on c. Since a consists of two equal parts c, II.4 gives S(a) = 4S(c). The rectilineal figure remaining after the corner square is removed therefore has area 3S(c). Construct a square equal to this remaining figure, and let b be its side. Hence S(b) = 3S(c), while S(a) = 4S(c); in particular, a is greater than b. [1.46, 2.4, 2.14]
+
+**Step 3.** The area S(c) measures S(a) four times and S(b) three times. Thus a and b are commensurable in square. Since a is the assigned rational straight line, b is also rational. [D10.1.2, D10.1.3]
+
+**Step 4.** The ratio 4:3 cannot be the ratio of a square number to a square number. For, if it were, VIII.11—the direct result for square numbers—would give a mean proportional number between those square numbers. VIII.8 would then give a mean proportional number between 4 and 3. Such a number would lie strictly between 3 and 4, which is impossible because a number is a multitude of units. [8.11, 8.8, D7.2]
+
+**Step 5.** Since S(a):S(b) = 4:3 is not the ratio of a square number to a square number, X.9 shows that a and b are incommensurable in length. Together with Step 3, this proves that they are commensurable in square only. [10.9, D10.1.2]
+
+**Step 6.** By the construction, S(a) = S(b) + S(c), and Step 1 established that c is commensurable in length with a. Therefore a and b are the required two rational straight lines, commensurable in square only, such that the square on the greater exceeds the square on the less by the square on a straight line commensurable in length with the greater. [2.14, D10.1.1]
+
+**USED:** 1.10, 1.46, 10.9, 2.14, 2.4, 8.11, 8.8, D10.1.1, D10.1.2, D10.1.3, D7.2
+**Human refs (from References field):** 1.47, 10.6, 10.9, 3.31, 5.19, D10.1.4
+**Jaccard:** 0.062 — AI adds ['1.10', '1.46', '2.14', '2.4', '8.11', '8.8', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D7.2']; Human adds ['1.47', '10.6', '3.31', '5.19', 'D10.1.4']
+
+## Proposition 10.30
+**Statement:** To find two rational straight lines commensurable in square only and such that the square on the greater is greater is greater than the square on the less by the square on a straight line incommensurable in length with the greater.
+
+**Step 1.** Choose the assigned rational straight line AB, construct the square ABCD on it, and join AC. Thus AB = BC and angle ABC is right. We choose this direct construction because the excess square will be the square on the other side BC itself. [D10.1.3, 1.46, P1, D1.22]
+
+**Step 2.** Write S(XY) for the square on XY. By the theorem on right-angled triangles,
+S(AC) = S(AB) + S(BC) = 2S(AB).
+Consequently AC is greater than AB, and
+S(AC) − S(AB) = S(BC). [1.47]
+
+**Step 3.** The area S(AB) measures both S(AB) and S(AC), once and twice respectively. Hence AB and AC are commensurable in square. Since AB is the assigned rational straight line, AC is rational also. [D10.1.2, D10.1.3]
+
+**Step 4.** We show that AC and AB are incommensurable in length. If they were commensurable in length, their squares would have the ratio of a square number to a square number. Since their squares have ratio 2:1, there would therefore be positive integers m,n satisfying m² = 2n². Choose such a pair with m least. [10.9, 7.19]
+
+The number 2 is prime. Because it measures m², it measures m; write m = 2k. Substitution gives n² = 2k², so the same proposition shows that 2 measures n; write n = 2l. We then obtain k² = 2l². This is another pair of the required kind, with 0 < k < m, contradicting the choice of m. Thus AC and AB are incommensurable in length. [D7.11, 7.30]
+
+**Step 5.** By Steps 3 and 4, AC and AB are rational straight lines commensurable in square only. By Step 2, the square on the greater AC exceeds the square on the less AB by the square on BC. Since BC = AB, Step 4 also shows that BC is incommensurable in length with AC. Thus AC and AB are the required straight lines. [D10.1.2, D10.1.3, D1.22, 1.47, 10.9]
+
+**USED:** 1.46, 1.47, 10.9, 7.19, 7.30, D1.22, D10.1.2, D10.1.3, D7.11, P1
+**Human refs (from References field):** 1.47, 10.6, 10.9, 3.31, 5.19
+**Jaccard:** 0.154 — AI adds ['1.46', '7.19', '7.30', 'D1.22', 'D10.1.2', 'D10.1.3', 'D7.11', 'P1']; Human adds ['10.6', '3.31', '5.19']
+
+## Proposition 10.31
+**Statement:** To find two medial straight lines commensurable in square only, containing a rational rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+
+**Step 1.** Write uv for the rectangle contained by straight lines u and v, and u² for the square on u. Begin with 10.29, since it directly supplies the required commensurable square-difference. Construct rational straight lines a > b, commensurable in square only, and a straight line c commensurable in length with a, such that a² = b² + c². [10.29]
+
+**Step 2.** Construct a mean proportional x between a and b. Using the fourth-proportional construction uniformly for the other auxiliary lines, construct d, y, and z so that
+
+a:b = b:d,    a:x = x:b,    a:b = x:y,    a:c = x:z.
+
+The first two proportions give ad = b² and x² = ab. [6.12, 6.13, 6.17]
+
+**Step 3.** Since b is rational, b² is a rational area. The equality ad = b² therefore exhibits that rational area applied to the rational straight line a. Consequently d is rational and commensurable in length with a. Since a is incommensurable in length with b, so is d. Moreover, the squares on the rational lines b and d are each commensurable with the square on the assigned rational line, and hence with one another. Thus b and d are commensurable in square only. [D10.1.3, D10.1.4, 10.20, 10.13, 10.12, D10.1.2]
+
+**Step 4.** Alternating a:b = x:y gives a:x = b:y. But a:x = x:b; hence x:b = b:y, and therefore xy = b².
+
+Also, a:b = b:d and a:b = x:y give x:y = b:d. Alternating yields x:b = y:d. Combining this with x:b = b:y gives b:y = y:d, and therefore y² = bd. [5.16, 6.17]
+
+**Step 5.** The lines a and b are rational and commensurable in square only, and x² = ab; therefore x is medial. Likewise, b and d are rational and commensurable in square only, and y² = bd; therefore y is medial. Their rectangle xy = b² is rational. [10.21, D10.1.3, D10.1.4]
+
+**Step 6.** From a:b = x:y, the squares are proportional:
+
+a²:b² = x²:y².
+
+Since a² and b² are commensurable, x² and y² are commensurable. But a and b are incommensurable in length, so the original proportion shows that x and y are also incommensurable in length. Thus x and y are commensurable in square only. [6.22, 10.11, D10.1.2]
+
+**Step 7.** The proportions a:b = x:y and a:c = x:z give, by taking squares and alternating,
+
+a²:x² = b²:y² = c²:z².
+
+Adding the antecedents and consequents of the last two ratios gives
+
+a²:x² = (b² + c²):(y² + z²).
+
+Since b² + c² = a², the same area a² has the same ratio to x² and to y² + z². Hence x² = y² + z². In particular, x is greater than y, and its square exceeds the square on y by z². [6.22, 5.16, 5.12, 5.9]
+
+**Step 8.** Finally, a:c = x:z, and a and c are commensurable in length. Therefore x and z are commensurable in length. Thus the constructed medial straight lines x and y are commensurable in square only, contain a rational rectangle, and satisfy x² − y² = z² with z commensurable in length with the greater line x, as required. [10.11]
+
+**USED:** 10.11, 10.12, 10.13, 10.20, 10.21, 10.29, 5.12, 5.16, 5.9, 6.12, 6.13, 6.17, 6.22, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.14, 10.21, 10.23, 10.29, 10.30
+**Jaccard:** 0.158 — AI adds ['10.12', '10.13', '10.20', '5.12', '5.16', '5.9', '6.12', '6.13', '6.17', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.14', '10.23', '10.30']
+
+## Proposition 10.32
+**Statement:** To find two medial straight lines commensurable in square only, containing a medial rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
+
+**Step 1.** Use the medial-rectangle construction directly, since it already supplies the required kinds of lines and rectangle; we shall modify its factors only by integer multiples. By 10.28, construct medial straight lines u > v, commensurable in square only, whose rectangle uv is medial. Find a common measure E of their squares by 10.3, and write
+u² = mE,   v² = nE,
+where m > n are positive integers (D10.1.2). Here products of straight lines denote rectangles.
+
+**Step 2.** Construct the straight lines
+x = (m+n)u,   y = 2mv,   z = (m−n)u.
+The lines x and u are commensurable in length, as are y and v. Consequently x and y are medial by 10.23. Also z is positive, and u measures both x and z, so z is commensurable in length with x (D10.1.1).
+
+**Step 3.** Squares have the duplicate ratio of their sides (6.20). Hence
+x² = m(m+n)²E,   y² = 4m²nE.
+Thus E measures both squares, so x and y are commensurable in square (D10.1.2). They are not commensurable in length: otherwise, since u is commensurable with x and v with y, repeated application of 10.12 would make u and v commensurable in length, contrary to their construction. Therefore x and y are commensurable in square only.
+
+**Step 4.** Apply 2.8 to the straight line mu, divided into nu and (m−n)u. The resulting identity, with rectangles scaled according to 6.1, is
+x² = 4mn·u² + z².
+On the other hand, by 6.20 and the equations in Step 1,
+y² = 4m²·v² = 4mn·u².
+Therefore
+x² − y² = z².
+Since z is positive, x is the greater line; and Step 2 shows that the side z of the excess square is commensurable in length with x.
+
+**Step 5.** By applying 6.1 to the two factors of the rectangle,
+xy = 2m(m+n)·uv.
+Thus xy and uv are commensurable areas (D10.1.1). The medial area uv is irrational, by the meaning of medial in 10.21 and the definition of irrational area (D10.1.4). If xy were rational, it would be commensurable with the square on the assigned rational straight line; transitivity of commensurability would then make uv rational also, a contradiction (10.12; D10.1.4). But the rectangle contained by medial straight lines commensurable in square only is either rational or medial (10.25). Hence xy is medial.
+
+Accordingly, x and y are medial straight lines commensurable in square only, containing a medial rectangle, and the square on the greater x exceeds the square on y by the square on z, which is commensurable in length with x. This is the required construction.
+
+**USED:** 10.12, 10.21, 10.23, 10.25, 10.28, 10.3, 2.8, 6.1, 6.20, D10.1.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 10.14, 10.21, 10.23, 10.29, 10.30, 6.16, 6.17, 6.4, 6.8
+**Jaccard:** 0.100 — AI adds ['10.12', '10.25', '10.28', '10.3', '2.8', '6.1', '6.20', 'D10.1.1', 'D10.1.2', 'D10.1.4']; Human adds ['10.11', '10.14', '10.29', '10.30', '6.16', '6.17', '6.4', '6.8']
+
+## Proposition 10.33
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.
+
+**Step 1.** Write uv for the rectangle contained by straight lines u and v, and u² for the square on u. By 10.30, construct rational straight lines a > b, commensurable in square only, such that a² − b² = c², where c is incommensurable in length with a. This construction supplies precisely the incommensurable excess needed for the deficient-square division below. [10.30]
+
+**Step 2.** Bisect b, calling its half h. Then h² = b²/4 < a²/4. By 6.28, apply to a a rectangle equal to h² and deficient by a square; the required bound is satisfied because h² is less than the square on half of a. Let the resulting parts of a be d and e, so that d + e = a and de = h². Since a² − b² is the square on a straight line incommensurable with a, the converse assertion of 10.18 shows that d and e are incommensurable in length. [1.10, 6.20, 6.28, 10.18]
+
+**Step 3.** Construct squares equal respectively to the rectangles ad and ae, and call their sides x and y. Thus x² = ad and y² = ae. We use the direct square-area construction here because the sought straight lines are naturally specified by their squares. [2.14]
+
+**Step 4.** Since d + e = a, the distributive area identity gives
+x² + y² = ad + ae = a².
+Because a is rational, its square is a rational area. Hence the sum of the squares on x and y is rational. [2.1, D10.1.3, D10.1.4]
+
+**Step 5.** The rectangles ad and ae have the same height, so
+x² : y² = ad : ae = d : e.
+Since d and e are incommensurable, 10.11 shows that x² and y² are incommensurable. Therefore x and y are incommensurable in square. [6.1, 10.11, D10.1.2]
+
+**Step 6.** Since h² is one quarter of b², those squares are commensurable. The square on b is commensurable both with a² and with the square on the assigned rational straight line. By 10.12, h² is therefore commensurable with each of these squares. Thus h is rational and is commensurable in square with a. But h is commensurable in length with b, whereas b is incommensurable in length with a; hence h is incommensurable in length with a by 10.13. Consequently a and h are rational straight lines commensurable in square only. Their rectangle ah is therefore medial—that is, equal to the square on a medial straight line. [6.20, 10.12, D10.1.3, 10.13, 10.21]
+
+**Step 7.** Using de = h² and the common-height theorem,
+h² : e² = de : e² = d : e = x² : y².
+The squares on x, y, h, e are thus proportional. By the converse assertion of 6.22, their sides are proportional:
+x : y = h : e. [6.1, 5.11, 6.22]
+
+**Step 8.** Again by the common-height theorem,
+xy : y² = x : y = h : e = ah : ae.
+But y² = ae. Therefore the areas xy and ah have the same ratio to the same area, and so are equal. Since ah is medial, xy is medial. Thus the constructed straight lines x and y are incommensurable in square, the sum of their squares is rational, and the rectangle contained by them is medial, as required. [6.1, 5.11, 5.9, 10.21]
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.18, 10.21, 10.30, 2.1, 2.14, 5.11, 5.9, 6.1, 6.20, 6.22, 6.28, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 1.47, 10.18, 10.21, 10.23, 10.30, 6.28
+**Jaccard:** 0.200 — AI adds ['1.10', '10.11', '10.12', '10.13', '2.1', '2.14', '5.11', '5.9', '6.1', '6.20', '6.22', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['1.47', '10.23']
+
+## Proposition 10.34
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.
+
+**Step 1.** Use the immediately preceding construction, X.33, because it already supplies two lines incommensurable in square; we shall preserve that property by a common change of scale. Construct p, q such that p² + q² is rational and the rectangle pq is medial. Here x² denotes the square on x, and xy the rectangle contained by x and y. [10.33]
+
+**Step 2.** Construct straight lines r, m whose squares satisfy
+r² = p² + q², m² = pq.
+Since r² is rational, r is a rational straight line; since m² equals the medial area pq, m is medial. [2.14, D10.1.3, D10.1.4, 10.21]
+
+**Step 3.** Construct the third proportional t to r, m, so that
+r : m = m : t.
+Then rt = m². Thus t is the breadth obtained by applying the square on the medial line m to the rational line r. Consequently t is rational. [6.11, 6.17, 10.22]
+
+**Step 4.** Construct a and b by fourth proportionals so that
+a : p = b : q = m : r.
+The corresponding squares, and also the rectangles ab and pq, are similar. Hence their areas have the duplicate ratio of m to r:
+a² : p² = b² : q² = ab : pq = m² : r². [6.12, 6.20]
+
+**Step 5.** Taking the sums of the antecedents and consequents gives
+(a² + b²) : (p² + q²) = m² : r².
+But p² + q² = r². Therefore a² + b² = m², which is medial. [5.12, 5.9]
+
+**Step 6.** The proportion in Step 3 also gives t : m = m : r. Therefore
+ t² : m² = m² : r².
+By Step 4 and pq = m², we also have
+ab : m² = m² : r².
+Thus ab and t² have the same ratio to m², so ab = t². Since t is rational, its square—and therefore the rectangle ab—is rational. [6.20, 5.9, D10.1.3, D10.1.4]
+
+**Step 7.** Alternating the proportion a² : p² = b² : q² gives
+a² : b² = p² : q².
+The latter two squares are incommensurable by construction, so a² and b² are also incommensurable. Hence a and b are incommensurable in square. They therefore satisfy all the requirements: the sum of their squares is medial, while the rectangle contained by them is rational. [5.16, 10.11, D10.1.2]
+
+**USED:** 10.11, 10.21, 10.22, 10.33, 2.14, 5.12, 5.16, 5.9, 6.11, 6.12, 6.17, 6.20, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 1.47, 10.11, 10.18, 10.31, 10.6, 3.31, 6.28
+**Jaccard:** 0.048 — AI adds ['10.21', '10.22', '10.33', '2.14', '5.12', '5.16', '5.9', '6.11', '6.12', '6.17', '6.20', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['1.47', '10.18', '10.31', '10.6', '3.31', '6.28']
+
+## Proposition 10.35
+**Statement:** To find two straight lines incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them medial and moreover incommensurable with the sum of the squares on them.
+
+**Step 1.** Let r be the assigned rational straight line. Write uv for the rectangle contained by u and v, and u² for the square on u. We take a direct construction using square ratios 3:1 and 6:1; constructing squares equal to specified areas is precisely the construction supplied by 2.14. Construct a and b such that
+
+a² = 3r²,     b² = 6r².
+
+Both a and b are rational, since their squares are commensurable with r². Also b > a. [2.14, D10.1.2, D10.1.3]
+
+**Step 2.** The numbers 2, 3, and 6 are not ratios of square numbers. Indeed, if m² = k n² for one of these integers k, then n² measures m², so n measures m by 8.14. Consequently k would itself be the square of an integer, which none of 2, 3, and 6 is. Since
+
+a²:r² = 3:1,     b²:r² = 6:1,     b²:a² = 2:1,
+
+10.9 shows that r, a, and b are pairwise incommensurable in length. [8.14, 10.9]
+
+**Step 3.** Put c = b + a and d = b − a, so d is positive. Construct x and y such that
+
+x² = rc,     y² = rd.
+
+By addition of rectangles,
+
+S := x² + y² = r(c + d) = (2r)b.
+
+Moreover, applying 2.5 to the line 2b, whose equal parts are b, b and whose unequal parts are c, d, gives
+
+cd + a² = b².
+
+Since b² = 2a², it follows that cd = a². [2.14, 2.1, 2.5]
+
+**Step 4.** We show that the rectangle contained by x and y equals ra. Rectangles with a common height give
+
+x²:a² = rc:cd = r:d,
+
+y²:d² = rd:d² = r:d.
+
+Thus x²:a² = y²:d², and therefore x:a = y:d by the converse of 6.22 applied to squares. Since y² = rd, 6.17 gives y:d = r:y. Consequently x:a = r:y, and 6.16 yields
+
+P := xy = ra.
+
+[6.1, 5.11, 6.22, 6.17, 6.16]
+
+**Step 5.** Both S and P are medial. For P = ra, the lines r and a are rational and commensurable in square only, by Steps 1–2. For S = (2r)b, the lines 2r and b are also rational and commensurable in square, their squares being 4r² and 6r². They are incommensurable in length: if a line measured both 2r and b, its half would measure both r and b, contrary to Step 2. Thus 10.21 makes each rectangle equal to a square on a medial straight line, and hence each is a medial area. [D10.1.1, D10.1.2, D10.1.3, 10.21]
+
+**Step 6.** The constructed lines x and y are incommensurable in square. For if c and d had a common measure δ, write c = mδ and d = nδ. Then
+
+b = (m + n)δ/2,     a = (m − n)δ/2,
+
+so δ/2 would measure both b and a, contrary to Step 2. Hence c and d are incommensurable. But, by 6.1,
+
+x²:y² = rc:rd = c:d.
+
+Therefore x² and y² are incommensurable by 10.11, which is exactly to say that x and y are incommensurable in square. [D10.1.1, 6.1, 10.11, D10.1.2]
+
+**Step 7.** Finally, by 6.1,
+
+S:P = r(2b):ra = 2b:a.
+
+The lines 2b and a are incommensurable: a common measure of them, halved, would measure both b and a, contradicting Step 2. Thus 10.11 shows that S and P are incommensurable. Accordingly, x and y are the required straight lines: they are incommensurable in square, the sum of their squares is medial, and their rectangle is medial and incommensurable with that sum. [6.1, D10.1.1, 10.11]
+
+**USED:** 10.11, 10.21, 10.9, 2.1, 2.14, 2.5, 5.11, 6.1, 6.16, 6.17, 6.22, 8.14, D10.1.1, D10.1.2, D10.1.3
+**Human refs (from References field):** 1.47, 10.11, 10.13, 10.18, 10.32, 3.31
+**Jaccard:** 0.050 — AI adds ['10.21', '10.9', '2.1', '2.14', '2.5', '5.11', '6.1', '6.16', '6.17', '6.22', '8.14', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['1.47', '10.13', '10.18', '10.32', '3.31']
+
+## Proposition 10.36
+**Statement:** If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called binomial.
+
+**Step 1.** Let the rational straight lines AB and BC, commensurable in square only, be placed together in a straight line AC. Let Q be the square on the assigned rational straight line, U the square on AB, V the square on BC, and R the rectangle contained by AB and BC. Then U and V are commensurable, and U is commensurable with Q. [D10.1.2, D10.1.3]
+
+**Step 2.** Put S = U + V. Since U and V are commensurable, S is commensurable with U. Since S and Q are both commensurable with U, S is commensurable with Q. [10.15, 10.12]
+
+**Step 3.** We use 10.21 directly, since its hypotheses are exactly those of the given summands: R is irrational, hence incommensurable with Q. Moreover, R and 2R are commensurable, since R measures both. Therefore 2R is also incommensurable with Q. [10.21, D10.1.4, D10.1.1, 10.13]
+
+**Step 4.** Since S and Q are commensurable, while Q is incommensurable with 2R, S is incommensurable with 2R. Consequently their sum S + 2R is incommensurable with S. [10.13, 10.16]
+
+**Step 5.** Since S and Q are commensurable, while S is incommensurable with S + 2R, Q is likewise incommensurable with S + 2R. [10.13]
+
+**Step 6.** The square on AC equals the squares on AB and BC together with twice their rectangle; thus it equals S + 2R. The square on AC is therefore incommensurable with Q, so AC is irrational. Hence the sum of two rational straight lines commensurable in square only is irrational; let this whole be called **binomial**. [2.4, D10.1.4]
+
+**USED:** 10.12, 10.13, 10.15, 10.16, 10.21, 2.4, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.16, 10.6, 2.4, D10.1.4
+**Jaccard:** 0.417 — AI adds ['10.12', '10.21', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.11', '10.6']
+
+## Proposition 10.37
+**Statement:** If two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a first bimedial straight line.
+
+**Step 1.** Let a and b be the given medial straight lines, commensurable in square only, and let c be their sum. Put U = a², V = b², and R = ab, where R denotes their rectangle. Let Q be the square on the assigned rational straight line. Then U and V are commensurable. Since a is medial, U is irrational and therefore incommensurable with Q. By hypothesis R is rational, so R is commensurable with Q. We proceed directly by expanding the square on the whole and comparing areas. [D10.1.2, 10.21, D10.1.4]
+
+**Step 2.** Put S = U + V. Apply the forward implication of 10.15, since the component squares are known to be commensurable: S is commensurable with U. Since U is incommensurable with Q, S is also incommensurable with Q. [10.15, 10.13]
+
+**Step 3.** Put T = 2R. Since R and Q have a common measure, that same measure measures both 2R and Q. Thus T is commensurable with Q. [D10.1.1]
+
+**Step 4.** Because Q and T are commensurable, while Q is incommensurable with S, T is incommensurable with S. Hence their sum S + T is incommensurable with T. [10.13, 10.16]
+
+**Step 5.** The square on the whole is equal to the squares on the parts together with twice their rectangle; hence c² = U + V + 2R = S + T. Thus c² is incommensurable with T. Since T and Q are commensurable, Q is likewise incommensurable with c². [2.4, 10.13]
+
+**Step 6.** The square on c is therefore irrational, and its side c is irrational. Consequently, the sum of two medial straight lines commensurable in square only and containing a rational rectangle is irrational; let this sum be called a **first bimedial straight line**. [D10.1.4]
+
+**USED:** 10.13, 10.15, 10.16, 10.21, 2.4, D10.1.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.16, 10.36, 2.4, D10.1.4
+**Jaccard:** 0.333 — AI adds ['10.13', '10.15', '10.21', 'D10.1.1', 'D10.1.2']; Human adds ['10.36']
+
+## Proposition 10.38
+**Statement:** If two medial straight lines commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a second bimedial straight line.
+
+**Step 1.** Let the medial straight lines be a and b, and put s = a + b. By hypothesis, a² and b² are commensurable, a and b are incommensurable in length, and the rectangle ab is medial. Suppose, for contradiction, that s is rational. We use s as a common base, reducing the question directly to the earlier criterion for a binomial. [D10.1.2, D10.1.3]
+
+**Step 2.** Construct a square c² equal to ab; its side c is medial, since ab is a medial area. Apply the squares a², b², and c² to s as rectangles, obtaining respective breadths u, v, and w. Thus
+su = a², sv = b², sw = ab.
+Such applications can be made by applying the two triangular parts of each square to s and adjoining the resulting rectangles. Since a, b, and c are medial and s is assumed rational, u, v, and w are rational straight lines. [2.14, 10.21, 1.44, 2.1, 10.22]
+
+**Step 3.** Rectangles of equal height are proportional to their bases; hence
+u : v = a² : b²,
+and
+u : w = a² : ab = a : b.
+Consequently, u and v are commensurable in length, whereas u and w are incommensurable in length. [6.1, 10.11]
+
+**Step 4.** Put U = u + v and V = w + w. Then U is commensurable in length with u, and V is commensurable in length with w. Their respective squares are therefore commensurable with u² and w²: the ratios are ratios of square numbers, and thus ratios of numbers. Since u and w are rational, their squares are commensurable with the square on the assigned rational straight line. Transitivity now shows that U and V are rational and that U² and V² are commensurable. [10.15, 10.9, 10.6, 10.12, D10.1.2, D10.1.3]
+
+**Step 5.** Since U is commensurable with u while u is incommensurable with w, U is incommensurable with w. Since V is commensurable with w, U is also incommensurable with V. Thus U and V are rational straight lines commensurable in square only. [10.13]
+
+**Step 6.** Proposition 10.36 applies directly to these rational breadths: their sum U + V is irrational. This is the earlier sum criterion naturally reached by the common-base construction. [10.36]
+
+**Step 7.** But distributivity of rectangles and the square-of-a-sum identity give
+s(U + V) = su + sv + 2sw = a² + b² + 2ab = (a + b)² = s².
+The rectangles on the common base s therefore have equal breadths, so U + V = s. This contradicts the assumption that s is rational. Hence a + b is irrational; let it be called a **second bimedial straight line**. [2.1, 2.4, 6.1]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.15, 10.21, 10.22, 10.36, 10.6, 10.9, 2.1, 2.14, 2.4, 6.1, D10.1.2, D10.1.3
+**Human refs (from References field):** 1.44, 10.11, 10.13, 10.15, 10.20, 10.22, 10.36, 10.6, 2.4, 6.1, D10.1.4
+**Jaccard:** 0.500 — AI adds ['10.12', '10.21', '10.9', '2.1', '2.14', 'D10.1.2', 'D10.1.3']; Human adds ['10.20', 'D10.1.4']
+
+## Proposition 10.39
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole straight line is irrational: and let it be called major.
+
+**Step 1.** Let the given straight lines be a and b, incommensurable in square, and let c be their sum. Write R for the sum of the squares on a and b, and M for the rectangle contained by them. By hypothesis R is rational and M is medial. We take the direct area route, since II.4 expresses the square on the whole in precisely these given areas:
+(square on c) = R + 2M. [2.4]
+
+**Step 2.** Let Q be the square on the assigned rational straight line. Since R is rational, R is commensurable with Q. A medial area is irrational, by the characterization of medial in X.21; hence M is incommensurable with Q. [D10.1.4, 10.21]
+
+**Step 3.** M and 2M are commensurable, since M measures both. Therefore, by X.13, 2M is incommensurable with Q. Since Q and R are commensurable, another application of X.13 shows that 2M is incommensurable with R. [D10.1.1, 10.13]
+
+**Step 4.** By X.16, the sum R + 2M is incommensurable with R. Thus the square on c is incommensurable with R. But R is commensurable with Q, so X.13 implies that the square on c is incommensurable with Q. [10.16, 10.13]
+
+**Step 5.** Consequently the square on c is irrational, and its side c is irrational. Therefore the sum of the two given straight lines is irrational; let it be called **major**. [D10.1.4]
+
+**USED:** 10.13, 10.16, 10.21, 2.4, D10.1.1, D10.1.4
+**Human refs (from References field):** 10.16, 10.23, 10.33, 10.6, D10.1.4
+**Jaccard:** 0.222 — AI adds ['10.13', '10.21', '2.4', 'D10.1.1']; Human adds ['10.23', '10.33', '10.6']
+
+## Proposition 10.40
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational, be added together, the whole straight line is irrational; and let it be called the side of a rational plus a medial area.
+
+**Step 1.** Let the given straight lines be a and b, incommensurable in square, and let c be their sum. Write M for the sum of the squares on a and b, and R for the rectangle contained by them. Thus M is medial and R is rational. Choose the direct area route: the square on the whole is precisely the sum of these given areas, with the rectangle taken twice. By 2.4,
+\[
+\operatorname{sq}(c)=M+2R.
+\]
+[2.4]
+
+**Step 2.** Let Q be the square on the assigned rational straight line. A medial area is irrational, so M is incommensurable with Q; since R is rational, R is commensurable with Q. [10.21, D10.1.4]
+
+**Step 3.** Put T=R+R. Since R is commensurable with itself, T is commensurable with R. Since Q is also commensurable with R, T and Q are commensurable. Hence T is a rational area. [10.15, 10.12, D10.1.4]
+
+**Step 4.** Since T and Q are commensurable, while M is incommensurable with Q, M is incommensurable with T. Consequently M+T is incommensurable with T. By Step 1, therefore, the square on c is incommensurable with T. [10.13, 10.16]
+
+**Step 5.** Since Q is commensurable with T, and the square on c is incommensurable with T, the square on c is incommensurable with Q. Thus c is irrational. Its square is the sum of the rational area T and the medial area M; let c therefore be called **the side of a rational plus a medial area**, as required. [10.13, D10.1.4]
+
+**USED:** 10.12, 10.13, 10.15, 10.16, 10.21, 2.4, D10.1.4
+**Human refs (from References field):** 10.16, 10.34, D10.1.4
+**Jaccard:** 0.250 — AI adds ['10.12', '10.13', '10.15', '10.21', '2.4']; Human adds ['10.34']
+
+## Proposition 10.41
+**Statement:** If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the   side of the sum of two medial areas.
+
+**Step 1.** Let the given straight lines be a and b, and put S = a² + b² and P = ab. By hypothesis, S and P are medial areas incommensurable with one another. Let c = a + b. Then
+c² = S + 2P.
+[2.4]
+
+**Step 2.** Let r be the assigned rational straight line. Apply S and P to r, obtaining rectangular breadths u and v respectively, so that ru = S and rv = P. Since both areas are medial, u and v are rational straight lines. We choose this application-to-a-rational-base route because it leads directly to the earlier binomial criterion. [10.22]
+
+**Step 3.** Rectangles under the same height are proportional to their bases, so
+u : v = S : P.
+Since S and P are incommensurable, u and v are incommensurable in length. [6.1, 10.11]
+
+**Step 4.** Put w = v + v. The lines v and w are commensurable, since v measures both. Moreover, w² = 4v², so their squares are commensurable. Since v is rational, v² is commensurable with r²; hence w² is also commensurable with r², and w is rational. Likewise u² and w², being commensurable with r², are commensurable with one another. Thus u and w are commensurable in square. [D10.1.1, 2.4, 10.12, D10.1.3, D10.1.2]
+
+**Step 5.** Since v and w are commensurable in length, while v is incommensurable in length with u, w is also incommensurable in length with u. Therefore u and w are rational straight lines commensurable in square only. Their sum u + w is consequently irrational, by the binomial criterion. [10.13, 10.36]
+
+**Step 6.** The rectangle contained by r and u + w equals
+ru + rw = S + 2P = c².
+If c² were rational, its application to the rational straight line r would produce a rational breadth. But that breadth is u + w, which Step 5 proved irrational. Hence c² is irrational, and its side c is irrational. Therefore the whole straight line a + b is irrational; let it be called the **side of the sum of two medial areas**. [2.1, 10.20, D10.1.4]
+
+**USED:** 10.11, 10.12, 10.13, 10.20, 10.22, 10.36, 2.1, 2.4, 6.1, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.22, 10.35, 10.36, 2.4, 6.1, D10.1.4
+**Jaccard:** 0.429 — AI adds ['10.12', '10.13', '10.20', '2.1', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.35']
+
+## Proposition 10.42
+**Statement:** A binomial straight line is divided into its terms at one point only.
+
+**Step 1.** Let AB be a binomial divided at C into its greater term AC and lesser term CB. Suppose D also divides it into its terms, with AD the greater and DB the lesser. We compare divisions with the greater term measured from the same endpoint A; merely interchanging the terms is not a different decomposition. By the definition of a binomial, each pair consists of rational straight lines commensurable in square only. [10.36]
+
+**Step 2.** Write X² for the square on X and X·Y for the rectangle contained by X and Y. Set
+P = AC·CB,   Q = AD·DB,
+S = AC² + CB²,   T = AD² + DB².
+We use the medial-area route because the defining conditions on each pair immediately make P and Q medial areas. [10.21]
+
+**Step 3.** Each of the four term-squares is commensurable with the square on the assigned rational straight line. Consequently S and T are rational areas: their component squares are commensurable with one another, their sum is commensurable with either component, and hence the sum is commensurable with the assigned square. If S and T are unequal, their positive difference is likewise rational, by applying the converse part of 10.15 to the greater area as the sum of the lesser and the difference. Half that difference is also rational, since a magnitude and its half have a common measure. [D10.1.1, D10.1.3, D10.1.4, 10.12, 10.15]
+
+**Step 4.** Applying 2.4 to the two divisions of AB gives
+AB² = S + 2P = T + 2Q.
+If P and Q were unequal, subtraction would show that their positive difference is half the positive difference between S and T. By Step 3 this would be a rational area. But a medial area cannot exceed another medial area by a rational area. Therefore P = Q. [2.4, CN1, CN3, 10.26]
+
+**Step 5.** Bisect AB at E. Since AC > CB and AD > DB, both C and D lie between E and B. Applying 2.5 to the equal division at E and each unequal division gives
+P + EC² = AE²,
+Q + ED² = AE².
+Since P = Q, subtraction yields EC² = ED², and therefore EC = ED. The points C and D lie on the same side of E, so they coincide. Hence the binomial is divided into its terms at one point only. [1.10, 2.5, CN1, CN3]
+
+**USED:** 1.10, 10.12, 10.15, 10.21, 10.26, 10.36, 2.4, 2.5, CN1, CN3, D10.1.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.21, 10.36, 2.4
+**Jaccard:** 0.231 — AI adds ['1.10', '10.12', '10.15', '10.26', '2.5', 'CN1', 'CN3', 'D10.1.1', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.43
+**Statement:** A first bimedial straight line is divided at one point only.
+
+**Step 1.** Let AB be a first bimedial straight line, divided into its terms at C. Thus AC and CB are medial, commensurable in square only, and contain a rational rectangle. Put the greater term first, so AC > CB. Suppose that another division into such terms occurs at D, likewise with AD > DB. We shall compare the two sums of squares and use the direct area criterion of 10.26. [10.37, D10.1.2, 10.26]
+
+**Step 2.** Take the assigned rational straight line r. Apply the squares on AC, CB, AD, and DB to r, obtaining respective breadths x, y, u, and v. By 10.22 these four breadths are rational and each is incommensurable in length with r. Rectangles on the same base are proportional to their breadths; hence
+x : y = AC² : CB², and u : v = AD² : DB².
+Since the squares in each pair are commensurable, x and y are commensurable in length, as are u and v. [10.22, 6.1, 10.11]
+
+**Step 3.** By 10.15, x + y is commensurable in length with x, and u + v with u. Consequently each sum is incommensurable in length with r, by 10.13. Each sum is nevertheless rational: a common length measure of two lines gives, by its square, a common area measure of their squares; thus (x + y)² is commensurable with x², and (u + v)² with u². Since x and u are rational, transitivity of commensurability makes both these squares commensurable with r². [10.15, 10.13, D10.1.1, D10.1.2, 10.12, D10.1.3]
+
+**Step 4.** Therefore r and x + y are rational straight lines commensurable in square only, and the same is true of r and u + v. Their rectangles are consequently medial areas. By their construction these areas are
+S = AC² + CB² and T = AD² + DB².
+Thus both S and T are medial. [10.21]
+
+**Step 5.** Put P = AC·CB and Q = AD·DB. Let M be the midpoint of AB. Because the greater term has been put first in both divisions, C and D lie on the same side of M. If C and D are distinct, MC and MD are unequal and so have unequal squares. But 2.5 gives
+P + MC² = AM² = Q + MD².
+It follows that P and Q are unequal. Interchanging the names of the two divisions if necessary, take P > Q. [2.5, CN5, CN3]
+
+**Step 6.** Both P and Q are rational areas, hence commensurable with r² and with one another. Their difference P − Q is commensurable with Q by the converse part of 10.15; therefore P − Q, and also twice that difference, are rational areas. Meanwhile, applying 2.4 to the two divisions gives
+AB² = S + 2P = T + 2Q.
+Subtracting equal areas yields
+T − S = 2(P − Q).
+Thus T exceeds S by a positive rational area. [D10.1.4, 10.12, 10.15, 2.4, CN3]
+
+**Step 7.** This is impossible: a medial area does not exceed a medial area by a rational area. Therefore no distinct second division into the terms exists. Hence a first bimedial straight line is divided at one point only, with the greater term taken first. [10.26]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.21, 10.22, 10.26, 10.37, 2.4, 2.5, 6.1, CN3, CN5, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['10.11', '10.12', '10.13', '10.15', '10.21', '10.22', '10.26', '10.37', '2.4', '2.5', '6.1', 'CN3', 'CN5', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.44
+**Statement:** A second bimedial straight line is divided at one point only.
+
+**Step 1.** Let a second bimedial straight line have two defining divisions, with terms a, b and c, d. Thus a+b=c+d=L; each pair consists of medial straight lines commensurable in square only, and each pair contains a medial rectangle. Compare the divisions in the same order, with a>b and c>d and the greater term adjacent to the same endpoint. We reduce the question to binomial uniqueness, since applying the relevant medial areas to a rational straight line naturally produces rational terms. [10.38]
+
+**Step 2.** Fix the assigned rational straight line r. For either defining pair, denoted temporarily by x>y, apply the areas x², y², and xy to r, obtaining breadths u, v, and w:
+ru=x², rv=y², rw=xy.
+The first two areas are squares on medial straight lines, and the third is medial, so its equal square also has a medial side. Consequently u, v, and w are rational straight lines. Put p=u+v and q=2w. [10.22]
+
+**Step 3.** Since x² and y² are commensurable and u:v=x²:y², the lines u and v are commensurable in length. Hence p=u+v is commensurable in length with u. Also q=2w is commensurable in length with w. [6.1, 10.11, 10.15, D10.1.1]
+
+**Step 4.** A common length-measure of two straight lines gives a common area-measure of their squares. Therefore p² is commensurable with u², and q² with w². Since u and w are rational, their squares are commensurable with r². Transitivity of commensurability shows that p² and q² are each commensurable with r², and hence with one another. Thus p and q are rational and commensurable in square. [D10.1.1, D10.1.2, D10.1.3, 10.12]
+
+**Step 5.** By the ratios of rectangles under the same height,
+u:w=x²:xy=x:y.
+Since x and y are incommensurable in length, so are u and w. But p is commensurable with u, and q with w; applying the preservation of incommensurability twice shows that p and q are incommensurable in length. Together with Step 4, this proves that p+q is a binomial and p, q are its terms. [6.1, 10.11, 10.13, 10.36]
+
+**Step 6.** The square-of-a-sum identity gives
+r(p+q)=x²+y²+2xy=(x+y)²=L².
+Moreover, applying II.7 to x divided into y and x−y gives
+r(p−q)=x²+y²−2xy=(x−y)²>0.
+Thus p is the greater binomial term. [2.4, 2.7]
+
+**Step 7.** Carry out these same applications for both pairs a, b and c, d, obtaining terms p, q and p′, q′. By Step 6, both binomials have length L²/r, and their greater terms are respectively p and p′. The earlier binomial-uniqueness theorem therefore applies directly: p=p′ and q=q′. [10.42]
+
+**Step 8.** The second identity in Step 6 now yields
+(a−b)²=r(p−q)=r(p′−q′)=(c−d)².
+Both differences are positive, so a−b=c−d. Together with a+b=c+d, equality of these differences gives a=c and b=d by addition and subtraction. The two proposed divisions therefore have exactly the same terms and, laid off in the same order, the same point of junction. Hence a second bimedial straight line is divided at one point only. [2.7, CN2, CN3]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.22, 10.36, 10.38, 10.42, 2.4, 2.7, 6.1, CN2, CN3, D10.1.1, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.13, 10.22, 10.36, 10.38, 10.6, 2.4, 6.1
+**Jaccard:** 0.412 — AI adds ['10.12', '10.15', '10.42', '2.7', 'CN2', 'CN3', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.6']
+
+## Proposition 10.45
+**Statement:** A major straight line is divided at one and the same point only.
+
+**Step 1.** Let AB be a major straight line divided into its terms at C. Suppose it also admits such a division at D. In comparing the divisions, take the greater term from the same endpoint A, so that AC > CB and AD > DB. Write
+S = AC² + CB², T = AD² + DB²,
+P = AC·CB, R = AD·DB.
+By the defining property of a major straight line, S and T are rational areas, whereas P and R are medial areas. [10.39]
+
+**Step 2.** The square on the whole gives
+AB² = S + 2P = T + 2R.
+If P and R are unequal, interchange the names of the divisions if necessary so that P > R. Then
+T − S = 2(P − R) > 0.
+[2.4]
+
+**Step 3.** Let Q be the square on the assigned rational straight line. Since S and T are rational, each is commensurable with Q, and therefore they are commensurable with one another. Since T = S + (T − S) is commensurable with S, the difference T − S is commensurable with S and hence with Q. Its half is commensurable with it—the half itself measures both—and consequently is also commensurable with Q. Thus (T − S)/2 is a rational area. [D10.1.4, 10.12, 10.15, D10.1.1]
+
+**Step 4.** But Step 2 gives
+P − R = (T − S)/2.
+Thus one medial area would exceed another by a rational area. Apply the medial-area excess criterion directly: this is impossible. Hence P = R. [10.26]
+
+**Step 5.** Bisect AB at M. By the rectangle identity for equal and unequal divisions,
+P + MC² = AM²,
+R + MD² = AM².
+Since P = R, it follows that MC² = MD², and therefore MC = MD. Indeed, unequal positive sides have unequal squares, as follows from the square-of-a-sum identity and the fact that the whole is greater than the part. Since AC > CB and AD > DB, both C and D lie on the same side of M, toward B. Equal distances from M on that side give C = D. Therefore a major straight line is divided into its terms at one and the same point only. [1.10, 2.5, 2.4, CN5]
+
+**USED:** 1.10, 10.12, 10.15, 10.26, 10.39, 2.4, 2.5, CN5, D10.1.1, D10.1.4
+**Human refs (from References field):** 10.26, 10.39
+**Jaccard:** 0.200 — AI adds ['1.10', '10.12', '10.15', '2.4', '2.5', 'CN5', 'D10.1.1', 'D10.1.4']
+
+## Proposition 10.46
+**Statement:** The side of a rational plus a medial area is divided at one point only.
+
+**Step 1.** Let AB be the side of a rational plus a medial area. Suppose that C and D give two divisions into its defining terms, placing the greater term next to A in each division. By 10.40, the areas
+M = AC² + CB² and N = AD² + DB²
+are medial, while the rectangles
+R = AC·CB and S = AD·DB
+are rational. The terms in each division are incommensurable in square, so they are unequal. [10.40]
+
+**Step 2.** Applying the identity for the square on a divided straight line to both divisions gives
+AB² = M + 2R = N + 2S.
+We use the direct area-difference route: the medial square-sums can be compared by comparing the rational rectangles. [2.4, CN1]
+
+**Step 3.** Suppose R and S are unequal, and interchange their names, together with M and N, if necessary, so that R > S. Let U be the square on the assigned rational straight line. Since R and S are rational, both are commensurable with U, and therefore with one another. A common measure of R and S also measures R − S and 2(R − S). Consequently 2(R − S) is commensurable with R, hence with U, and is therefore a rational area. [D10.1.4, 10.12, D10.1.1]
+
+**Step 4.** Subtracting equal areas from the equality in Step 2 yields
+N = M + 2(R − S).
+Thus one medial area exceeds another medial area by a rational area, contrary to 10.26. This proposition is the natural direct choice because it applies precisely to the two medial square-sums. Therefore R = S. [CN3, 10.26]
+
+**Step 5.** Bisect AB at O. By 2.5,
+R + OC² = AO² and S + OD² = AO².
+Since R = S, subtraction gives OC² = OD², and hence OC = OD: a longer straight line has a larger square, as follows immediately from 2.4. Because AC > CB and AD > DB, both C and D lie on the B-side of O. Their equal distances from O therefore place them at the same point. Thus C = D, and the side of a rational plus a medial area is divided into its terms at one point only. [1.10, 2.5, CN3, 2.4]
+
+**USED:** 1.10, 10.12, 10.26, 10.40, 2.4, 2.5, CN1, CN3, D10.1.1, D10.1.4
+**Human refs (from References field):** 10.26, 10.40
+**Jaccard:** 0.200 — AI adds ['1.10', '10.12', '2.4', '2.5', 'CN1', 'CN3', 'D10.1.1', 'D10.1.4']
+
+## Proposition 10.47
+**Statement:** The side of the sum of two medial areas is divided at one point only.
+
+**Step 1.** Let L be the side of the sum of two medial areas. Write its division into terms as L=x+y, placing the greater term first, so x>y. By the defining construction, x and y are incommensurable in square, while S=x²+y² and P=xy are medial areas incommensurable with one another. Suppose there is another such division L=x′+y′, with x′>y′, and put S′=x′²+y′² and P′=x′y′. These likewise are medial and mutually incommensurable. Products here denote rectangular areas. [10.41]
+
+**Step 2.** Choose the assigned rational straight line r. Apply each of S, P, S′, P′ to r, obtaining breadths u, v, u′, v′ respectively; thus ru=S, rv=P, ru′=S′, and rv′=P′. Since each applied area is medial, all four breadths are rational straight lines. [D10.1.3, 10.22]
+
+**Step 3.** The square on 2v is four times the square on v, so these squares are commensurable. Since v is rational, its square is commensurable with the square on r; consequently the square on 2v is also commensurable with that on r, and 2v is rational. The same holds for 2v′. Moreover, the squares on u and 2v are commensurable, since both are commensurable with the square on r; likewise for u′ and 2v′. [2.4, D10.1.1, D10.1.3, 10.12]
+
+**Step 4.** Rectangles on the same height are proportional to their breadths, so S:P=u:v. Since S and P are incommensurable, u and v are incommensurable in length. But v and 2v are commensurable; hence u and 2v are incommensurable in length. Therefore u and 2v are rational straight lines commensurable in square only, and u+2v is binomial. The identical argument shows that u′+2v′ is binomial. [6.1, 10.11, D10.1.1, 10.13, 10.36]
+
+**Step 5.** The square on the whole gives
+L²=S+2P=S′+2P′.
+By addition of rectangles on r, this says
+r(u+2v)=L²=r(u′+2v′).
+Thus u+2v=u′+2v′, since the equal rectangles have the same height. Furthermore, II.7 gives
+S=2P+(x−y)²,
+so S>2P and consequently u>2v. Similarly, u′>2v′. [2.4, 2.1, 6.1, 2.7, CN5]
+
+**Step 6.** We now take the direct route through binomial uniqueness: the auxiliary straight line is binomial, so X.42 is the naturally applicable earlier uniqueness proposition. Its two divisions just obtained both have the greater term first. They must therefore coincide: u=u′ and 2v=2v′. The corresponding rectangles on r are consequently equal, giving S=S′ and 2P=2P′. [10.42, 6.1]
+
+**Step 7.** By II.7 and subtraction of these equal areas,
+(x−y)²=S−2P=S′−2P′=(x′−y′)².
+Hence x−y=x′−y′: unequal positive sides would give unequal squares, since the larger square contains the smaller as a proper part. Adding this equality to x+y=x′+y′ gives 2x=2x′, whence x=x′ and then y=y′. Thus the two divisions have exactly the same terms and the same dividing point. Therefore the side of the sum of two medial areas is divided at one point only. [2.7, CN3, CN5, CN2]
+
+**USED:** 10.11, 10.12, 10.13, 10.22, 10.36, 10.41, 10.42, 2.1, 2.4, 2.7, 6.1, CN2, CN3, CN5, D10.1.1, D10.1.3
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.42, 2.4, 6.1
+**Jaccard:** 0.375 — AI adds ['10.12', '10.13', '10.41', '2.1', '2.7', 'CN2', 'CN3', 'CN5', 'D10.1.1', 'D10.1.3']
+
+## Proposition 10.48
+**Statement:** To find the first binomial straight line.
+
+**Step 1.** Let r be the assigned rational straight line, and write t² for the square on a straight line t. By 10.29, construct two rational straight lines u > v, commensurable in square only, such that
+u² = v² + w²,
+where w is commensurable in length with u. This is the direct starting construction because it supplies exactly the required excess-square condition; we shall scale its greater term to r. [D10.1.3, 10.29]
+
+**Step 2.** Construct fourth proportionals x and y such that
+u : r = v : x and u : r = w : y.
+Alternately,
+u : v = r : x and u : w = r : y.
+Moreover, since u > v, the first proportion gives r > x. [6.12, 5.16, 5.14]
+
+**Step 3.** Since u and v are incommensurable in length, the proportion u : v = r : x shows that r and x are incommensurable in length. But their squares satisfy
+u² : v² = r² : x²;
+hence, since u² and v² are commensurable, r² and x² are commensurable. Thus r and x are commensurable in square only, and x is rational relative to the assigned line r. Likewise, u : w = r : y shows that y is commensurable in length with r. [10.11, 6.22, D10.1.2, D10.1.3]
+
+**Step 4.** The proportions in Step 2 also give
+u² : r² = v² : x² = w² : y².
+Consequently, by adding corresponding antecedents and consequents,
+(v² + w²) : (x² + y²) = u² : r².
+Since v² + w² = u², the same area u² has the same ratio to x² + y² as to r². Therefore
+r² = x² + y².
+Thus the square on r exceeds the square on x by the square on y, which is commensurable in length with r. [6.22, 5.12, 5.9]
+
+**Step 5.** Add x to r in a straight line, obtaining s = r + x. Because r and x are rational straight lines commensurable in square only, s is a binomial, with greater term r and lesser term x. [10.36]
+
+**Step 6.** The greater term r is equal to, and therefore commensurable in length with, the assigned rational straight line. By Step 4, its square exceeds the square on the lesser term by the square on a straight line commensurable in length with it. Hence s satisfies the definition of a first binomial straight line. The required first binomial has therefore been found. [D10.2.1]
+
+**USED:** 10.11, 10.29, 10.36, 5.12, 5.14, 5.16, 5.9, 6.12, 6.22, D10.1.2, D10.1.3, D10.2.1
+**Human refs (from References field):** 10.28, 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.062 — AI adds ['10.11', '10.29', '5.12', '5.14', '5.16', '5.9', '6.12', '6.22', 'D10.1.2', 'D10.1.3', 'D10.2.1']; Human adds ['10.28', '10.6', '10.9', '5.19']
+
+## Proposition 10.49
+**Statement:** To find the second binomial straight line.
+
+**Step 1.** Let r be the assigned rational straight line. By 10.29, construct two rational straight lines a > b, commensurable in square only, such that a² = b² + c² for a straight line c commensurable in length with a. Here squares denote their areas. This is the direct construction to use because it supplies precisely the required square-excess condition; we shall make the lesser term correspond to r. [D10.1.3, 10.29]
+
+**Step 2.** By the construction of a fourth proportional, find x such that b:a = r:x, or equivalently a:b = x:r. [6.12]
+
+**Step 3.** Since a:b = x:r and the square on a exceeds the square on b by the square on a straight line commensurable in length with a, 10.14 gives a straight line d commensurable in length with x such that x² = r² + d². In particular, x > r. [10.14]
+
+**Step 4.** The straight lines a and b are incommensurable in length, so their proportional counterparts x and r are also incommensurable in length. Moreover, by 6.22, a²:b² = x²:r². Since a² and b² are commensurable, 10.11 shows that x² and r² are commensurable. Thus x and r are commensurable in square only, and x is rational relative to the assigned rational line r. [10.11, 6.22, D10.1.2, D10.1.3]
+
+**Step 5.** Place straight lines equal to x and r consecutively on one straight line, and call their whole L. Since its terms are rational and commensurable in square only, L is a binomial straight line. [10.36]
+
+**Step 6.** The greater term of L is x, and its square exceeds the square on the lesser term r by d², where d is commensurable in length with x. The lesser term is the assigned rational line r itself, and hence is commensurable in length with it. Therefore, by the defining conditions, L is a second binomial straight line. The required straight line has been found. [D10.1.1, D10.2.1, D10.2.2]
+
+**USED:** 10.11, 10.14, 10.29, 10.36, 6.12, 6.22, D10.1.1, D10.1.2, D10.1.3, D10.2.1, D10.2.2
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.071 — AI adds ['10.11', '10.14', '10.29', '6.12', '6.22', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.2.1', 'D10.2.2']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.50
+**Statement:** To find the third binomial straight line.
+
+**Step 1.** Let r be the assigned rational straight line, and construct the square S on it. Form rectilineal figures consisting respectively of eight, six, and two adjacent copies of S, and construct squares equal to these figures. Let their sides be a, b, and c. Writing x² for the square on x, we therefore have
+
+a² = 8S, b² = 6S, c² = 2S,
+
+with a greater than b. [1.46, 2.14]
+
+**Step 2.** The area S measures both a² and b². Consequently a and b are commensurable in square with r and with one another. In particular, both are rational straight lines relative to the assigned line r. [D10.1.2, D10.1.3]
+
+**Step 3.** None of the ratios 16:2, 12:2, and 8:6 is the ratio of a square number to a square number. For between two square numbers there is a mean proportional number; if any displayed ratio were such a ratio, a mean proportional number would therefore also exist between its displayed terms. Its square would respectively be 32, 24, or 48. But 25 < 32 < 36, 16 < 24 < 25, and 36 < 48 < 49, so none of these products is a square number. Thus no such mean proportional number exists. [8.11, 8.8, 7.19]
+
+**Step 4.** Use the square-ratio criterion, which is the direct choice because the construction specifies the squares. Now
+
+a²:r² = 8:1 = 16:2,
+b²:r² = 6:1 = 12:2,
+a²:b² = 8:6.
+
+By Step 3 and the criterion, a and b are each incommensurable in length with r, and they are incommensurable in length with one another. On the other hand,
+
+a²:c² = 8:2 = 16:4,
+
+which is a ratio of square numbers; hence a and c are commensurable in length. [10.9]
+
+**Step 5.** Place a and b end to end on one straight line. Since they are rational and commensurable in square only, their sum a + b is a binomial straight line, with terms a and b. [10.36]
+
+**Step 6.** The square on its greater term exceeds the square on its lesser term by
+
+a² − b² = 8S − 6S = 2S = c²,
+
+and c is commensurable in length with the greater term a. Moreover, neither term is commensurable in length with the assigned rational line r. These are precisely the conditions defining a third binomial. Therefore a + b is the required third binomial straight line. [D10.2.1, D10.2.3]
+
+**USED:** 1.46, 10.36, 10.9, 2.14, 7.19, 8.11, 8.8, D10.1.2, D10.1.3, D10.2.1, D10.2.3
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19, 5.22
+**Jaccard:** 0.143 — AI adds ['1.46', '2.14', '7.19', '8.11', '8.8', 'D10.1.2', 'D10.1.3', 'D10.2.1', 'D10.2.3']; Human adds ['10.6', '5.19', '5.22']
+
+## Proposition 10.51
+**Statement:** To find the fourth binomial straight line.
+
+**Step 1.** Let R be the assigned rational straight line. Choose the construction of 10.30, because it supplies directly the incommensurable square-difference required for the fourth kind. Thus construct rational straight lines U > V, commensurable in square only, such that U² − V² = W², where W is incommensurable in length with U. We shall make the greater term equal to R by proportional construction. [D10.1.3, 10.30, D10.2.4]
+
+**Step 2.** To the three straight lines U, V, R construct a fourth proportional S, so that U : V = R : S. [6.12]
+
+**Step 3.** Since U and V are incommensurable in length, the same proportion shows that R and S are incommensurable in length. Moreover, squares on proportional straight lines are proportional, so U² : V² = R² : S². Since U² and V² are commensurable, R² and S² are also commensurable. Consequently R and S are commensurable in square only; and S is rational because its square is commensurable with the square on the assigned rational line R. [10.11, 6.22, D10.1.2, D10.1.3]
+
+**Step 4.** Apply 10.14 to U : V = R : S. Since the square on U exceeds the square on V by the square on a line incommensurable in length with U, the square on R likewise exceeds the square on S by the square on a line T incommensurable in length with R. Thus R is the greater term and R² − S² = T². [10.14]
+
+**Step 5.** Add R and S end to end. They are rational straight lines commensurable in square only, so their sum is a binomial. Its greater term R is commensurable in length with the assigned rational straight line, being that very line; and the square on its greater term exceeds the square on its lesser term by the square on T, which is incommensurable in length with the greater term. Therefore R + S is a fourth binomial straight line, as required. [10.36, D10.2.4]
+
+**USED:** 10.11, 10.14, 10.30, 10.36, 6.12, 6.22, D10.1.2, D10.1.3, D10.2.4
+**Human refs (from References field):** 10.6, 10.9, 5.19
+**Jaccard:** 0.000 — AI adds ['10.11', '10.14', '10.30', '10.36', '6.12', '6.22', 'D10.1.2', 'D10.1.3', 'D10.2.4']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.52
+**Statement:** To find the fifth binomial straight line.
+
+**Step 1.** Let r be the rational straight line set out. Use 10.30 directly, since it supplies exactly the excess-square condition required; we shall make its lesser term correspond to r. Thus construct straight lines a > b, commensurable in square only, such that
+ a² = b² + c²,
+where c is incommensurable in length with a. Here and below, a² denotes the square on a, and similarly for the other lines. [D10.1.3, 10.30]
+
+**Step 2.** Construct fourth proportionals x and y such that
+ b : a = r : x,     a : c = x : y.
+These constructions are possible by 6.12. [6.12]
+
+**Step 3.** We show that the excess-square condition is preserved. Since squares are similar figures, the proportions in Step 2 give
+ b² : a² = r² : x²,     a² : c² = x² : y².
+By alternation and equality of ratios,
+ b² : r² = a² : x² = c² : y².
+Consequently, by adding antecedents and consequents,
+ (b² + c²) : (r² + y²) = a² : x².
+But b² + c² = a². Hence the same magnitude a² has the same ratio to r² + y² and to x², so these latter magnitudes are equal. Therefore
+ x² = r² + y²,
+and in particular x > r. [6.22, 5.16, 5.11, 5.12, 5.9]
+
+**Step 4.** Since b and a are incommensurable in length, the proportion b : a = r : x shows that r and x are incommensurable in length. But b² and a² are commensurable, so the proportion b² : a² = r² : x² shows that r² and x² are commensurable. Thus r and x are commensurable in square only. In particular, x is rational relative to the rational line r set out. [10.11, D10.1.2, D10.1.3]
+
+**Step 5.** Since a and c are incommensurable in length, the proportion a : c = x : y shows that x and y are incommensurable in length. Thus, by Step 3, the square on the greater line x exceeds the square on the lesser line r by the square on y, a line incommensurable in length with x. [10.11]
+
+**Step 6.** Add r to x in a straight line. Since x and r are rational and commensurable in square only, their sum is a binomial. Its greater term has the excess-square property established in Step 5, and its lesser term is the very rational line r set out, hence is commensurable in length with it. By the definition, x + r is therefore a fifth binomial straight line. The required straight line has been found. [10.36, D10.2.4, D10.2.5]
+
+**USED:** 10.11, 10.30, 10.36, 5.11, 5.12, 5.16, 5.9, 6.12, 6.22, D10.1.2, D10.1.3, D10.2.4, D10.2.5
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19
+**Jaccard:** 0.062 — AI adds ['10.11', '10.30', '5.11', '5.12', '5.16', '5.9', '6.12', '6.22', 'D10.1.2', 'D10.1.3', 'D10.2.4', 'D10.2.5']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.53
+**Statement:** To find the sixth binomial straight line.
+
+**Step 1.** Let r be the assigned rational straight line, and write S for its square. We use a direct construction in which the difference of the two term-squares will be S itself. Describe S, form rectilineal figures consisting respectively of two and three adjacent copies of S, and construct squares equal to those figures. Let their sides be b and a, respectively. Thus a² = 3S, b² = 2S, and a > b. Here a² and b² denote the squares on the straight lines. [1.46, 2.14]
+
+**Step 2.** The numerical ratios 2:1, 3:1, and 3:2 are not ratios of square numbers. Indeed, reduce the ratio of the sides of any two square numbers to its least terms. Those terms are prime to one another; their squares are therefore prime to one another and are the least terms of the square-ratio. The square-ratio is unchanged, since it is the duplicate ratio of the sides. Consequently a ratio of square numbers has square least terms. But each of the three displayed ratios is already in least terms and contains the nonsquare number 2 or 3. [7.22, 7.27, 7.21, 8.11]
+
+**Step 3.** The area S measures both a² and b², as well as r². Hence a and b are commensurable in square with one another and with r. Since r is the assigned rational straight line, both a and b are rational straight lines. [D10.1.2, D10.1.3]
+
+**Step 4.** We have a²:r² = 3:1, b²:r² = 2:1, and a²:b² = 3:2. By Step 2 none is a ratio of square numbers. Therefore a and b are each incommensurable in length with r, and they are incommensurable in length with one another. Together with Step 3, this says that a and b are rational straight lines commensurable in square only. [10.9]
+
+**Step 5.** Place a and b consecutively on one straight line, making c = a + b. Since its two terms are rational and commensurable in square only, c is a binomial straight line. [10.36]
+
+**Step 6.** The square on its greater term exceeds the square on its lesser term by a² − b² = 3S − 2S = S = r². The side of this difference-square is therefore r, which is incommensurable in length with the greater term a by Step 4. Moreover, neither term is commensurable in length with the assigned rational straight line r. These are precisely the conditions defining a sixth binomial. Thus c is the required sixth binomial straight line. [D10.2.4, D10.2.6]
+
+**USED:** 1.46, 10.36, 10.9, 2.14, 7.21, 7.22, 7.27, 8.11, D10.1.2, D10.1.3, D10.2.4, D10.2.6
+**Human refs (from References field):** 10.36, 10.6, 10.9, 5.19, 5.22
+**Jaccard:** 0.133 — AI adds ['1.46', '2.14', '7.21', '7.22', '7.27', '8.11', 'D10.1.2', 'D10.1.3', 'D10.2.4', 'D10.2.6']; Human adds ['10.6', '5.19', '5.22']
+
+## Proposition 10.54
+**Statement:** If an area be contained by a rational straight line and the first binomial, the âsideâ of the area is the irrational straight line which is called binomial.
+
+**Step 1.** Let a be the given rational straight line, and let b+c be the first binomial, with b>c. Write products for rectangle areas and squares for square areas. By the definition of the first binomial, b and c are rational straight lines commensurable in square only, a and b are commensurable in length, and b²−c²=d² for some straight line d commensurable in length with b. We must show that the side of the area a(b+c) is binomial. [D10.2.1, 10.36]
+
+**Step 2.** Put h=c/2. Since c<b, the square h² is less than the square on half of b. Apply to b a rectangle equal to h² and deficient by a square. This divides b into positive segments u,v satisfying
+u+v=b, uv=h².
+The converse direction of 10.17 shows that u and v are commensurable in length. This is the direct commensurable-part route: the square-difference condition defining the first binomial is exactly the hypothesis of that proposition. [6.28, 10.17]
+
+**Step 3.** Since u and v are commensurable, their sum b is commensurable with each. Since a is commensurable with b, it is therefore commensurable with both u and v. Thus u and v are rational, and the rectangles au and av are rational. Construct squares equal to these rectangles, and denote their sides by x and y, so that
+x²=au, y²=av.
+Because these squares are rational areas, x and y are rational straight lines. [10.15, 10.12, D10.1.3, 10.19, 2.14, D10.1.4]
+
+**Step 4.** Rectangles under the same height are proportional to their bases. Consequently,
+x²:h² = au:uv = a:v = a²:av = a²:y².
+Applying the converse of 6.22 to these squares gives x:h=a:y. Hence the rectangle xy equals ah, and therefore
+2xy=ac.
+[6.1, 6.22, 6.16, 2.1]
+
+**Step 5.** Also,
+x²:y² = au:av = u:v.
+Since u and v are commensurable, 10.11 implies that x² and y² are commensurable. Thus x and y are commensurable in square. [6.1, 10.11, D10.1.2]
+
+**Step 6.** The same rectangle-ratio theorem gives
+x:y = x²:xy = au:ah = u:h.
+If x and y were commensurable in length, 10.11 would make u and h commensurable in length. But b is commensurable with u, while c=2h is commensurable with h. Transitivity would then make b and c commensurable in length, contrary to Step 1. Therefore x and y are incommensurable in length, and hence are commensurable in square only. [6.1, 10.11, 10.15, 10.12]
+
+**Step 7.** By the square-of-a-sum identity and the preceding equalities,
+(x+y)² = x²+y²+2xy = au+av+ac = a(u+v+c) = a(b+c).
+Thus x+y is the side of the given area. Since x and y are rational straight lines commensurable in square only, their sum is irrational and is called binomial. Therefore the side of an area contained by a rational straight line and the first binomial is the irrational straight line called binomial. [2.4, 2.1, 10.36]
+
+**USED:** 10.11, 10.12, 10.15, 10.17, 10.19, 10.36, 2.1, 2.14, 2.4, 6.1, 6.16, 6.22, 6.28, D10.1.2, D10.1.3, D10.1.4, D10.2.1
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.36, 2.14, 6.1, 6.17, D10.2.1
+**Jaccard:** 0.474 — AI adds ['2.1', '2.4', '6.16', '6.22', '6.28', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.13', '6.17']
+
+## Proposition 10.55
+**Statement:** If an area be contained by a rational straight line and the second binomial, the âsideâ of the area is the irrational straight line which is called a first bimedial.
+
+**Step 1.** Let the given rational straight line be r, and write the second binomial as a+b, where a>b. Its terms a and b are rational and commensurable in square only. Moreover, b is commensurable in length with r, and a²−b²=d² for a straight line d commensurable in length with a. These are precisely the binomial and second-binomial conditions. Since a is incommensurable in length with b, it is also incommensurable in length with r. Here and below, products denote rectangles and squares denote square areas. [10.36, D10.2.1, D10.2.2, 10.13]
+
+**Step 2.** Bisect b, and put h=b/2. We choose the deficient-square division because its commensurability criterion applies directly to the square-excess condition in Step 1. Since h<a/2, apply to a a rectangle equal to h² and deficient by a square. This divides a into positive parts u and v satisfying
+u+v=a,  uv=h²=b²/4.
+By the converse assertion of 10.17, u and v are commensurable in length. Their sum a is therefore commensurable in length with each of them. [1.10, 2.4, 6.28, 10.17, 10.15]
+
+**Step 3.** The lines u and v are rational. Indeed, length-commensurable lines have commensurable squares by 10.9 and 10.6; hence their length-commensurability with the rational line a makes their squares commensurable with the assigned rational square. Neither u nor v is commensurable in length with r, since each is commensurable with a, while a is incommensurable with r. Also, h is commensurable in length with b and hence with r, so h is rational. [10.9, 10.6, 10.12, D10.1.3, 10.13, D10.1.1]
+
+**Step 4.** Construct squares equal to the rectangles ru and rv, and call their sides x and y:
+x²=ru,  y²=rv.
+Since r, u, and v are rational, their squares are mutually commensurable; but u and v are each incommensurable in length with r. Thus each of the rectangles ru and rv is contained by rational lines commensurable in square only. Consequently x and y are medial, and their squares are irrational areas. [2.14, D10.1.3, 10.12, D10.1.2, 10.21]
+
+**Step 5.** Rectangles with the same height have the ratio of their bases, so
+x²:y²=ru:rv=u:v.
+Because u and v are commensurable, x² and y² are commensurable. Thus x and y are commensurable in square. [6.1, 10.11, D10.1.2]
+
+**Step 6.** We next show that the rectangle xy equals rh. From uv=h² and the common-height proportion,
+x²:y²=u:v=u²:uv=u²:h².
+The converse assertion of 6.22, applied to squares, therefore gives x:y=u:h. Also x²=ru gives r:x=x:u. Taking these two proportions ex aequali gives r:y=x:h, and hence
+xy=rh.
+[6.1, 6.22, 6.17, 5.22, 6.16]
+
+**Step 7.** Since r and h are rational and commensurable in length, rh—and therefore xy—is rational. We reuse the common-height proportion to decide length-incommensurability directly. The irrational area x² cannot be commensurable with the rational area xy: otherwise transitivity of commensurability would make x² rational. But
+x²:xy=x:y.
+Therefore x and y are incommensurable in length. Together with Step 5, this shows that they are commensurable in square only. [10.19, 10.21, D10.1.4, 10.12, 6.1, 10.11]
+
+**Step 8.** Finally, the square on their sum is
+(x+y)²=x²+y²+2xy
+=ru+rv+2rh
+=r(u+v)+rb
+=r(a+b).
+Thus x+y is the side of the given area. By Steps 4–7, it is the sum of two medial straight lines commensurable in square only and containing a rational rectangle. Proposition 10.37 therefore declares it irrational and calls it a first bimedial. Hence the side of an area contained by a rational straight line and the second binomial is a first bimedial, as required. [2.4, 2.1, 10.37]
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.36, 10.37, 10.6, 10.9, 2.1, 2.14, 2.4, 5.22, 6.1, 6.16, 6.17, 6.22, 6.28, D10.1.1, D10.1.2, D10.1.3, D10.1.4, D10.2.1, D10.2.2
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.37, 6.1, D10.2.2
+**Jaccard:** 0.370 — AI adds ['1.10', '10.36', '10.6', '10.9', '2.1', '2.14', '2.4', '5.22', '6.16', '6.17', '6.22', '6.28', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D10.2.1']
+
+## Proposition 10.56
+**Statement:** If an area be contained by a rational straight line and the third binomial, the âsideâ of the area is the irrational straight line called a second bimedial.
+
+**Step 1.** Let the given area be the rectangle r(a+b), where r is the rational straight line set out and a+b is the third binomial, with a>b. Its terms a,b are rational and commensurable in square only. Neither is commensurable in length with r, and a²−b² is the square on a straight line commensurable in length with a. Here and below, uv denotes the rectangle contained by u,v. [10.36; D10.2.1; D10.2.3]
+
+**Step 2.** Put h=b/2. Apply to a a rectangle equal to h² and deficient by a square; this is possible because b<a. Let the resulting parts of a be p,q, so that
+p+q=a and pq=h².
+Use the commensurable-division direction of 10.17, since its hypothesis is exactly the excess-square condition supplied by the third-binomial definition. It follows that p,q are commensurable in length. Their sum a is therefore commensurable in length with each of them. [6.28; 10.17; 10.15]
+
+**Step 3.** Since p,q are commensurable in length with a, and h with b, their squares are commensurable with a²,a²,b² respectively. Consequently p,q,h are rational and commensurable in square with r. [10.9; 10.6; 10.12; D10.1.3]
+Because a,b are each incommensurable in length with r, the same is true of p,q,h. Moreover, p and h are incommensurable in length: p is commensurable with a and hence incommensurable with b; h, being commensurable with b, is therefore incommensurable with p. [10.13]
+
+**Step 4.** Construct straight lines x,y whose squares equal rp,rq respectively:
+x²=rp and y²=rq.
+Since r,p and r,q are pairs of rational straight lines commensurable in square only, x and y are medial straight lines. [2.14; 10.21]
+
+**Step 5.** Rectangles of the same height are proportional to their bases, so
+x²:y²=rp:rq=p:q.
+As p,q are commensurable, x²,y² are commensurable; thus x,y are commensurable in square. [6.1; 10.11; D10.1.2]
+Also, since pq=h²,
+p²:h²=p²:pq=p:q=x²:y².
+The converse of the proportional-figures theorem, applied to these squares, gives x:y=p:h. Since p,h are incommensurable in length, x,y are likewise incommensurable in length. Thus x,y are commensurable in square only. [6.1; 6.22; 10.11]
+
+**Step 6.** The same-height rectangle ratios give
+x²:xy=x:y=p:h=rp:rh=x²:rh.
+Therefore xy=rh. Since r,h are rational and commensurable in square only, rh is an area whose square-side is medial. Hence the rectangle xy is medial. [6.1; 5.9; 10.21]
+
+**Step 7.** By the square-on-a-sum identity and the distribution of rectangles,
+(x+y)²=x²+y²+2xy=rp+rq+2rh=r(p+q)+rb=r(a+b),
+where p+q=a and 2h=b. Thus x+y is the side of the given area. [2.4; 2.1]
+
+**Step 8.** The straight lines x,y are medial, commensurable in square only, and contain a medial rectangle. Their sum is therefore the irrational straight line called a second bimedial. Since this sum is the side of the given area, the proposition follows. [10.38]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.21, 10.36, 10.38, 10.6, 10.9, 2.1, 2.14, 2.4, 5.9, 6.1, 6.22, 6.28, D10.1.2, D10.1.3, D10.2.1, D10.2.3
+**Human refs (from References field):** 10.13, 10.21, 10.38, D10.2.3
+**Jaccard:** 0.190 — AI adds ['10.11', '10.12', '10.15', '10.17', '10.36', '10.6', '10.9', '2.1', '2.14', '2.4', '5.9', '6.1', '6.22', '6.28', 'D10.1.2', 'D10.1.3', 'D10.2.1']
+
+## Proposition 10.57
+**Statement:** If an area be contained by a rational straight line and the fourth binomial, the âsideâ of the area is the irrational straight line called major.
+
+**Step 1.** Let r be the rational straight line set out, and let a+b be the fourth binomial, with a>b. Write uv for the rectangle contained by u,v, and u² for the square on u. The terms a,b are rational and commensurable in square only. Moreover, a is commensurable in length with r, and a²=b²+d² for a straight line d incommensurable in length with a. [10.36; D10.2.4]
+
+**Step 2.** Bisect b, calling its half h; thus h²=b²/4. Apply to a a rectangle equal to h² and deficient by a square. This construction is possible because b<a, so h² is less than the square on half of a. Let p,q be the resulting parts of a. Then
+p+q=a,  pq=h²=b²/4.
+Use the converse direction of 10.18: the fourth-binomial condition from Step 1 is exactly its hypothesis, so p,q are incommensurable in length. This deficient-square division is the direct route to the incommensurable squares required below. [1.10; 2.4; 6.28; 10.18]
+
+**Step 3.** Construct straight lines x,y whose squares equal the rectangles rp,rq respectively:
+x²=rp,  y²=rq.
+Since rectangles under the same height are proportional to their bases,
+x²:y²=p:q.
+Because p,q are incommensurable, their proportional areas x²,y² are incommensurable. Thus x,y are incommensurable in square. [2.14; 6.1; 10.11; D10.1.2]
+
+**Step 4.** Adding the two squares gives
+x²+y²=rp+rq=r(p+q)=ra.
+The straight lines r,a are rational and commensurable in length; hence ra, and therefore x²+y², is a rational area. [2.1; 10.19]
+
+**Step 5.** We next show that xy=rh. Since pq=h², proportionality of rectangles gives
+p²:h²=p²:pq=p:q=x²:y².
+The converse of 6.22 applies directly to these proportional squares, giving x:y=p:h. Consequently,
+x²:xy=x:y=p:h=rp:rh=x²:rh.
+Since the same area x² has the same ratio to xy and rh, those two areas are equal. Thus xy=rh. [6.1; 6.22; 5.9]
+
+**Step 6.** Since a is commensurable in length with r but incommensurable in length with b, r and b are incommensurable in length. Also, h is commensurable in length with b, so r and h are incommensurable in length. On the other hand, h²=b²/4 is commensurable with b²; and b² is commensurable with r² because b is rational. Hence h² is commensurable with r², and h is rational. Thus r,h are rational straight lines commensurable in square only. Their rectangle rh is therefore a medial area, its equal-square side being medial. By Step 5, xy is medial. [D10.1.1; 10.13; 10.12; D10.1.3; 10.21]
+
+**Step 7.** Finally, the square on the sum is
+(x+y)²=x²+y²+2xy=ra+2rh=ra+rb=r(a+b),
+since b=2h. Thus x+y is the side of the given area. Its constituent lines x,y are incommensurable in square, the sum of their squares is rational, and their rectangle is medial. By 10.39, their sum is the irrational straight line called major. Therefore the side of an area contained by a rational straight line and the fourth binomial is major. [2.4; 2.1; 10.39]
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.18, 10.19, 10.21, 10.36, 10.39, 2.1, 2.14, 2.4, 5.9, 6.1, 6.22, 6.28, D10.1.1, D10.1.2, D10.1.3, D10.2.4
+**Human refs (from References field):** 10.11, 10.13, 10.18, 10.19, 10.21, 10.39, 6.1, D10.2.4
+**Jaccard:** 0.400 — AI adds ['1.10', '10.12', '10.36', '2.1', '2.14', '2.4', '5.9', '6.22', '6.28', 'D10.1.1', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.58
+**Statement:** If an area be contained by a rational straight line and the fifth binomial, the âsideâ of the area is the irrational straight line called the side of a rational plus a medial area.
+
+**Step 1.** Let the given area be the rectangle r(b+c), where r is the rational straight line set out and b+c is a fifth binomial, with b>c. Its terms b and c are rational and commensurable in square only; c is commensurable in length with r; and b²−c² is the square on a straight line incommensurable in length with b. Here products denote rectangles and squares denote square areas. [10.36; D10.2.4; D10.2.5]
+
+**Step 2.** Since c and r are commensurable in length, whereas b and c are incommensurable in length, b and r are incommensurable in length. They are nevertheless commensurable in square, since b is rational relative to r. Consequently rb is a medial area: the side of the square equal to it is medial. [10.13; D10.1.3; 10.21]
+
+**Step 3.** Bisect c, calling its half h. Apply to b a rectangle equal to h² and deficient by a square. This construction is possible because c<b, so h² is less than the square on half of b. If x and y are the resulting positive parts of b, then x+y=b and xy=h²=c²/4. The defining incommensurability of the fifth binomial selects the converse direction of X.18: x and y are incommensurable in length. This division supplies the two summands needed for the direct classification below. [1.10; 6.28; 10.18]
+
+**Step 4.** Construct straight lines p and q whose squares equal rx and ry respectively. Rectangles of the same height are proportional to their bases, so p²:q²=rx:ry=x:y. Since x and y are incommensurable, their proportional square areas p² and q² are also incommensurable. Thus p and q are incommensurable in square. [2.14; 6.1; 10.11; D10.1.2]
+
+**Step 5.** The sum of these squares is p²+q²=rx+ry=r(x+y)=rb. By Step 2, this sum is therefore medial. [2.1; 10.21]
+
+**Step 6.** We next identify the rectangle pq. Since p²=rx, q²=ry, and h²=xy, comparison of rectangles of equal height gives
+p²:r²=rx:r²=x:r=xy:ry=h²:q².
+The proportionality of these squares implies p:r=h:q. Hence the rectangle contained by the extremes equals that contained by the means: pq=rh. [6.1; 6.22; 6.16]
+
+**Step 7.** The half h of c is commensurable in length with r: half of a common measure of c and r measures both h and r. Thus h is rational, and the rectangle rh—and therefore pq—is rational. [D10.1.1; D10.1.3; 10.19]
+
+**Step 8.** The square on p+q is
+(p+q)²=p²+q²+2pq=rb+2rh=rb+rc=r(b+c),
+because 2h=c. Therefore p+q is the side of the given area. [2.4; 2.1]
+
+**Step 9.** The straight lines p and q are incommensurable in square, the sum of their squares is medial, and the rectangle contained by them is rational. These are exactly the hypotheses of X.40. Accordingly p+q is irrational and is called the side of a rational plus a medial area. Since it is the side of r(b+c), the proposition is proved. [10.40]
+
+**USED:** 1.10, 10.11, 10.13, 10.18, 10.19, 10.21, 10.36, 10.40, 2.1, 2.14, 2.4, 6.1, 6.16, 6.22, 6.28, D10.1.1, D10.1.2, D10.1.3, D10.2.4, D10.2.5
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.18, 10.19, 10.21, 10.40, 6.1, D10.2.5
+**Jaccard:** 0.381 — AI adds ['1.10', '10.36', '2.1', '2.14', '2.4', '6.16', '6.22', '6.28', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.2.4']; Human adds ['10.12']
+
+## Proposition 10.59
+**Statement:** If an area be contained by a rational straight line and the sixth binomial, the âsideâ of the area is the irrational straight line called the side of the sum of two medial areas.
+
+**Step 1.** Let r be the given rational straight line, and let a+b be the sixth binomial, with a>b. Write uv for the rectangle contained by u and v, and u² for the square on u. The terms a and b are rational and commensurable in square only. Neither is commensurable in length with r; moreover, a² exceeds b² by the square on a straight line incommensurable in length with a. These are precisely the binomial and sixth-binomial conditions. [10.36, D10.2.4, D10.2.6]
+
+**Step 2.** Put h=b/2. Since b=2h, the lines b and h are commensurable in length, and b²=4h². Hence their squares are commensurable, so h is rational. Since b is incommensurable in length with both r and a, the line h is likewise incommensurable in length with both r and a. [2.4, D10.1.1, D10.1.3, 10.12, 10.13]
+
+**Step 3.** Apply to a a rectangle equal to h² and deficient by a square. This construction is possible because h²=b²/4<a²/4. Let c and d be the resulting parts of a; thus
+c+d=a,   cd=h².
+By the converse clause of X.18, c and d are incommensurable in length. This is the direct route: the sixth-binomial condition supplies exactly the incommensurable square-excess hypothesis of X.18. [6.28, 10.18]
+
+**Step 4.** Construct a square with side x equal to the rectangle rc, so that x²=rc. Construct a fourth proportional y such that x:y=c:h. Since cd=h², the three lines c,h,d are proportional. Consequently,
+x:y=c:h=h:d. [2.14, 6.12, 6.17]
+
+**Step 5.** Rectangles of the same height are proportional to their bases. Therefore
+x²:xy=x:y=c:h=rc:rh.
+As x²=rc, equality of the ratios gives xy=rh. Similarly,
+xy:y²=x:y=h:d=rh:rd;
+since xy=rh, it follows that y²=rd. Thus
+x²+y²=rc+rd=r(c+d)=ra,   xy=rh. [6.1, 5.9, 2.1]
+
+**Step 6.** Again by proportionality of rectangles of the same height,
+x²:y²=rc:rd=c:d.
+Since c and d are incommensurable, their equal-ratio areas x² and y² are incommensurable. Thus x and y are incommensurable in square. [6.1, 10.11, D10.1.2]
+
+**Step 7.** The rational lines r and a are commensurable in square only; the same is true of r and h. Hence ra and rh are medial areas. Accordingly, x²+y²=ra is medial, and xy=rh is medial. Furthermore,
+(x²+y²):xy=ra:rh=a:h.
+The lines a and h are incommensurable in length by Step 2, so the areas x²+y² and xy are incommensurable. [D10.1.3, 10.12, 10.21, 6.1, 10.11]
+
+**Step 8.** By the square-on-a-sum identity,
+(x+y)²=x²+y²+2xy=ra+2rh=ra+rb=r(a+b).
+Thus x+y is the side of the given area. By Steps 6–7, its two parts are incommensurable in square, their squares have a medial sum, and their rectangle is medial and incommensurable with that sum. Proposition X.41 therefore says that x+y is irrational and is called the side of the sum of two medial areas. Hence the side of the area contained by a rational straight line and the sixth binomial is precisely the irrational straight line asserted. [2.4, 2.1, 10.41]
+
+**USED:** 10.11, 10.12, 10.13, 10.18, 10.21, 10.36, 10.41, 2.1, 2.14, 2.4, 5.9, 6.1, 6.12, 6.17, 6.28, D10.1.1, D10.1.2, D10.1.3, D10.2.4, D10.2.6
+**Human refs (from References field):** 10.11, 10.13, 10.21, 10.41, 6.1
+**Jaccard:** 0.250 — AI adds ['10.12', '10.18', '10.36', '2.1', '2.14', '2.4', '5.9', '6.12', '6.17', '6.28', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.2.4', 'D10.2.6']
+
+## Proposition 10.60
+**Statement:** The square on the binomial straight line applied to a rational straight line produces as breadth the first binomial.
+
+**Step 1.** Let the given binomial be a+b, where a>b are rational straight lines commensurable in square only, and let r be the rational straight line to which its square is applied. We shall verify the defining conditions of a first binomial directly. [10.36]
+
+**Step 2.** Write xy for the rectangle contained by x and y. Apply the areas a², b², and ab to r, obtaining breadths p, q, and t respectively, so that
+rp=a², rq=b², rt=ab.
+These applications can be made by applying triangular parts of the areas. Since a² and b² are rational areas, p and q are rational and commensurable in length with r; consequently p and q are commensurable with one another. Also p>q. Since a and b are rational and commensurable in square only, ab is the square on a medial straight line; its application to r therefore makes t rational and incommensurable in length with r. [1.44, D10.1.3, D10.1.4, 10.20, 10.12, 6.1, 10.21, 10.22]
+
+**Step 3.** Put u=p+q and v=2t. The areas a² and b² are commensurable with the assigned rational square, so their sum is also commensurable with that square. Thus ru=a²+b² is rational, and u is rational and commensurable in length with r. Moreover, v²=4t², so v is rational. The lines v and t are commensurable in length; hence v is incommensurable in length with r, and therefore also with u. Since u and v are both rational, they are commensurable in square. Thus u and v are rational straight lines commensurable in square only. [2.1, 10.12, 10.15, D10.1.4, 10.20, 2.4, D10.1.3, D10.1.1, 10.13]
+
+**Step 4.** By addition of rectangles and the square-of-a-sum identity,
+r(u+v)=rp+rq+2rt=a²+b²+2ab=(a+b)².
+Consequently the breadth produced by applying the given square to r is u+v. [2.1, 2.4, 6.1]
+
+**Step 5.** Rectangles having the same height are proportional to their bases. Hence
+p:t=rp:rt=a²:ab=a:b,
+and
+t:q=rt:rq=ab:b²=a:b.
+Therefore p:t=t:q, and the rectangle pq equals t², that is, one fourth of v². [6.1, 5.11, 6.17]
+
+**Step 6.** Apply the equal-and-unequal division identity to u=p+q. It gives
+(u/2)²=pq+((p−q)/2)².
+Since p>q and pq=t², we have (u/2)²>t², and therefore u>2t=v. Thus u is the greater of the two proposed binomial terms. [2.5]
+
+**Step 7.** For the square-difference condition, use the commensurable-division criterion, since the required division has already arisen. The rectangle pq, equal to one fourth of v², is applied to u=p+q with height q and base p, leaving a square of side q as its deficiency. It therefore divides u into the commensurable parts p and q. Since u>v, the criterion gives a straight line d commensurable in length with u such that
+u²=v²+d². [10.17]
+
+**Step 8.** The breadth u+v is a binomial because its terms are rational and commensurable in square only. Its greater term u is commensurable in length with the rational straight line r, and its square exceeds the square on v by the square on d, which is commensurable in length with u. By the definition, u+v is therefore a first binomial. Thus the square on a binomial straight line, applied to a rational straight line, produces as breadth the first binomial. [10.36, D10.2.1]
+
+**USED:** 1.44, 10.12, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.36, 2.1, 2.4, 2.5, 5.11, 6.1, 6.17, D10.1.1, D10.1.3, D10.1.4, D10.2.1
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.36, 10.53, 6.1, 6.17, D10.2.1
+**Jaccard:** 0.476 — AI adds ['1.44', '10.12', '2.1', '2.4', '2.5', '5.11', 'D10.1.1', 'D10.1.3', 'D10.1.4']; Human adds ['10.11', '10.53']
+
+## Proposition 10.61
+**Statement:** The square on the first bimedial straight line applied to a rational straight line produces as breadth the second binomial.
+
+**Step 1.** Let L be a first bimedial straight line, and let r be the rational straight line to which its square is to be applied. By the defining description of a first bimedial, write L = a + b, where a > b are medial straight lines commensurable in square only, and the rectangle ab is rational. Here products denote rectangles and squares denote square areas. [10.37]
+
+**Step 2.** Apply a², b², and ab to r, obtaining breadths u, v, and h respectively. Thus ru = a², rv = b², and rh = ab. Since a and b are medial, u and v are rational and incommensurable in length with r. Since ab is rational, h is rational and commensurable in length with r. [10.22, 10.20]
+
+**Step 3.** Rectangles of equal height are proportional to their bases, so u:v = a²:b². Since a² and b² are commensurable, u and v are commensurable in length. Put x = u + v and y = 2h. Then x is commensurable in length with u, and y with h. For each of these pairs, their squares have the ratio of square numbers and therefore are commensurable. Since u and h are rational, x and y are consequently rational. Moreover, y is commensurable in length with r. [6.1, 10.11, 10.15, 10.9, 10.6, 10.12, D10.1.3]
+
+**Step 4.** Since x is commensurable in length with u, whereas u is incommensurable in length with r, x is incommensurable in length with r. Since y is commensurable in length with r, x and y are incommensurable in length with one another. But, being rational, they are commensurable in square. Hence x + y is a binomial, with terms x and y. [10.13, D10.1.3, 10.12, 10.36]
+
+**Step 5.** The equal-height rectangle ratios give
+u:h = a²:ab = a:b,
+and
+h:v = ab:b² = a:b.
+Thus u:h = h:v, and consequently uv = h². Also u > v, since a > b. Applying the identity for a straight line divided equally and unequally to x = u + v gives
+(x/2)² = uv + ((u − v)/2)² > h².
+Therefore x > 2h = y, so y is the lesser binomial term. [6.1, 6.17, 2.5]
+
+**Step 6.** The rectangle uv is equal to h², hence to one quarter of y². Applied to x = u + v with height v, it is deficient by the square v², because xv = uv + v². Its division of x is into the commensurable lengths u and v. We therefore use the forward implication of 10.17: it is the direct criterion here because its required commensurable division is already established. It follows that x² exceeds y² by the square on a straight line commensurable in length with x. [2.1, 10.17]
+
+**Step 7.** By the square-of-a-sum identity and addition of rectangles,
+L² = (a + b)² = a² + b² + 2ab
+= ru + rv + 2rh
+= r(u + v + 2h) = r(x + y).
+Thus the breadth produced by applying L² to r is precisely x + y. [2.4, 2.1]
+
+**Step 8.** This breadth is a binomial whose greater term x has its square exceeding the square on its lesser term y by the square on a straight line commensurable in length with x; and its lesser term y is commensurable in length with the rational straight line r. These are exactly the defining conditions of the second binomial. Therefore the square on the first bimedial straight line, applied to a rational straight line, produces as breadth the second binomial. [D10.2.1, D10.2.2]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.20, 10.22, 10.36, 10.37, 10.6, 10.9, 2.1, 2.4, 2.5, 6.1, 6.17, D10.1.3, D10.2.1, D10.2.2
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.23, 10.36, 10.37, 6.1, D10.2.2
+**Jaccard:** 0.476 — AI adds ['10.12', '10.6', '10.9', '2.1', '2.4', '2.5', '6.17', 'D10.1.3', 'D10.2.1']; Human adds ['10.21', '10.23']
+
+## Proposition 10.62
+**Statement:** The square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial.
+
+**Step 1.** Let s be a second bimedial straight line and r the rational straight line to which its square is to be applied. By 10.38, write s=a+b, where a>b are medial straight lines commensurable in square only, and the rectangle ab is medial. We follow the direct route of applying the two component squares and their rectangle separately. [10.38]
+
+**Step 2.** Apply the areas a², b², and ab to r as rectangles, with respective breadths x, y, and z; thus
+rx=a², ry=b², rz=ab.
+These applications can be made by applying their component triangles using 1.44. Put U=x+y and V=2z. By the square-of-a-sum identity,
+r(U+V)=a²+b²+2ab=(a+b)²=s².
+Thus the breadth in question is U+V. [1.44, 2.4]
+
+**Step 3.** Since a and b are medial, 10.22 shows that x and y are rational and incommensurable in length with r. The area ab is likewise the square on a medial straight line, so the same proposition shows that z is rational and incommensurable in length with r. Moreover, rectangles on the same base give x:y=a²:b². Since a² and b² are commensurable, x and y are commensurable in length. Consequently U=x+y is commensurable in length with x and y; likewise V=z+z is commensurable in length with z. [10.22, 6.1, 10.11, 10.15]
+
+**Step 4.** Commensurability in length implies commensurability of the squares: their ratio is a ratio of square numbers by 10.9, and hence the squares are commensurable by 10.6. Therefore, since x and z are rational, U and V are rational also, by transitivity of commensurability and the definition of rational straight lines. Their squares are consequently commensurable with one another. Furthermore, U is incommensurable in length with r because it is commensurable with x, which is incommensurable with r; similarly V is incommensurable in length with r. [10.9, 10.6, 10.12, D10.1.3, 10.13]
+
+**Step 5.** By the ratios of rectangles under the same height,
+x:z=a²:ab=a:b.
+But a and b are incommensurable in length, so x and z are incommensurable in length. Since U is commensurable with x, U is incommensurable with z; and since V is commensurable with z, U and V are incommensurable in length. Together with Step 4, this proves that U and V are rational straight lines commensurable in square only. Their sum U+V is therefore a binomial. [6.1, 10.11, 10.13, 10.36]
+
+**Step 6.** Again, the ratios of rectangles give
+x:z=a²:ab=a:b=ab:b²=z:y.
+Thus x, z, y are proportional, and the rectangle contained by the extremes equals the square on the mean:
+xy=z².
+Also x>y, since a²>b² and the corresponding rectangles have the same base r. [6.1, 6.17]
+
+**Step 7.** For the defining square-difference condition, use the elementary square identities directly: they exhibit the required difference explicitly. Proposition 2.4 gives
+(x+y)²=x²+y²+2xy,
+and 2.7, applied to x divided into y and x−y, gives
+x²+y²=2xy+(x−y)².
+Using Step 6, we therefore obtain
+U²=4xy+(x−y)²=4z²+(x−y)²=V²+(x−y)².
+Since x>y, U>V. Furthermore, x−y is commensurable in length with y by the converse part of 10.15 applied to x=(x−y)+y. Since U is also commensurable with y, x−y is commensurable in length with U. Thus the square on the greater term U exceeds the square on V by the square on a straight line commensurable in length with U. [2.4, 2.7, 10.15, 10.12]
+
+**Step 8.** The binomial U+V satisfies the square-difference condition in D10.2.1, while neither of its terms is commensurable in length with the rational straight line r set out. By D10.2.3, it is therefore a third binomial. Since Step 2 identified U+V as the breadth produced by applying s² to r, the square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial. [D10.2.1, D10.2.3]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.15, 10.22, 10.36, 10.38, 10.6, 10.9, 2.4, 2.7, 6.1, 6.17, D10.1.3, D10.2.1, D10.2.3
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.22, 10.23, 10.36, 10.38, 6.1, D10.2.3
+**Jaccard:** 0.500 — AI adds ['1.44', '10.6', '10.9', '2.4', '2.7', '6.17', 'D10.1.3', 'D10.2.1']; Human adds ['10.23']
+
+## Proposition 10.63
+**Statement:** The square on the major straight line applied to a rational straight line produces as breadth the fourth binomial.
+
+**Step 1.** Let L be the given major straight line, and let r be the rational straight line to which its square is to be applied. Write L = a + b, with a > b, for its defining division. Then a² + b² is rational, ab is medial, and the areas a² and b² are incommensurable. Here products denote rectangle areas. We shall verify directly the defining conditions of a fourth binomial. [10.39, D10.1.2]
+
+**Step 2.** Apply the areas a², b², and ab to r, obtaining respective breadths u, v, and t. These applications can be made by repeated application of I.44 in a right angle, after dividing the areas into triangles. Thus ru = a², rv = b², and rt = ab. Put c = u + v and d = 2t. By addition of rectangles and the square-of-a-sum identity,
+r(c + d) = a² + b² + 2ab = (a + b)² = L².
+Consequently c + d is the breadth in question. [1.44, 2.1, 2.4]
+
+**Step 3.** Since rc = a² + b² is rational, c is rational and commensurable in length with r. Since rt = ab is medial, t is rational and incommensurable in length with r. [10.20, 10.22]
+
+**Step 4.** The line d = 2t is commensurable in length with t, and d² = 4t². Hence d² is commensurable with t² and therefore with the square on the assigned rational line; thus d is rational. Since c and d are both rational, their squares are commensurable. But d is incommensurable in length with r, because t is; and, since c is commensurable in length with r, d is incommensurable in length with c. Thus c and d are rational straight lines commensurable in square only. [D10.1.1, 2.4, D10.1.3, 10.12, 10.13]
+
+**Step 5.** The identity a² + b² = 2ab + (a − b)², applied to the unequal lines a and b, gives rc > rd, and hence c > d. Therefore c + d is a binomial whose greater term is c, which is commensurable in length with r. [2.7, 6.1, 10.36]
+
+**Step 6.** The rectangles ru and rv have the same height, so
+u : v = a² : b².
+Since a² and b² are incommensurable, u and v are incommensurable in length. Thus c = u + v has been divided into incommensurable parts. [6.1, 10.11]
+
+**Step 7.** Comparing rectangles of the same height gives
+u : t = a² : ab = a : b,
+and
+t : v = ab : b² = a : b.
+Therefore u : t = t : v, so uv = t². Since d = 2t, the rectangle uv equals the fourth part of d². [6.1, 5.11, 6.17, 2.4]
+
+**Step 8.** Apply this rectangle uv to c = u + v, using u as its base and v as its height. It is deficient by the square v², since the remaining base is v. It therefore supplies precisely an application to the greater line c, equal to the fourth part of the square on the lesser line d, deficient by a square, and dividing c into the incommensurable parts u and v. The forward implication of X.18 applies directly to this division: c² exceeds d² by the square on a straight line incommensurable in length with c. [2.1, 10.18]
+
+**Step 9.** We have proved that c + d is a binomial, that its greater term c is commensurable in length with the given rational line r, and that c² exceeds d² by the square on a line incommensurable in length with c. By the definition, c + d is therefore the fourth binomial. Since r(c + d) = L², the square on the major straight line, applied to a rational straight line, produces as breadth the fourth binomial. [D10.2.4]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.18, 10.20, 10.22, 10.36, 10.39, 2.1, 2.4, 2.7, 5.11, 6.1, 6.17, D10.1.1, D10.1.2, D10.1.3, D10.2.4
+**Human refs (from References field):** 10.11, 10.13, 10.18, 10.20, 10.22, 10.36, 10.39, 6.1, D10.2.4
+**Jaccard:** 0.474 — AI adds ['1.44', '10.12', '2.1', '2.4', '2.7', '5.11', '6.17', 'D10.1.1', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.64
+**Statement:** The square on the side of a rational plus a medial area applied to a rational straight line produces as breadth the fifth binomial.
+
+**Step 1.** Let s be the given side of a rational plus a medial area, and let r be the rational straight line to which its square is applied. Take r as the rational straight line set out for the classification of binomials. By 10.40, write s = x + y, where x² and y² are incommensurable, x² + y² is medial, and the rectangle xy is rational. Here juxtaposition denotes the rectangle contained by two straight lines. [10.40, D10.1.2]
+
+**Step 2.** Let b be the breadth produced by applying s² to r. Denote by u, v, and n the breadths obtained by applying x², y², and 2xy respectively to r; thus ru = x², rv = y², and rn = 2xy. Put m = u + v. Then rm = x² + y². Since s² = x² + y² + 2xy, equality of rectangles on the same height gives b = m + n. [2.4, 6.1]
+
+**Step 3.** Since rm is medial, m is rational and incommensurable in length with r. Since xy is rational, its double is also rational: xy and 2xy have a common measure, so 2xy remains commensurable with the square on the assigned rational line. Consequently, n is rational and commensurable in length with r. [10.22, D10.1.1, D10.1.4, 10.12, 10.20]
+
+**Step 4.** The rational lines m and n are commensurable in square, since their squares are each commensurable with r². But they are incommensurable in length: n is commensurable with r, whereas m is not. Thus m + n is a binomial. Moreover, x and y are unequal; taking x > y, we have x² + y² = 2xy + (x − y)². Hence rm > rn and therefore m > n. Thus n is the lesser term of this binomial. [D10.1.3, 10.12, 10.13, 10.36, 2.7, 6.1]
+
+**Step 5.** The rectangles ru and rv have the same height, so u:v = x²:y². Since x² and y² are incommensurable, u and v are incommensurable in length. [6.1, 10.11]
+
+**Step 6.** Put h = n/2, so that rh = xy. Using rectangles of equal height gives
+u:h = x²:xy = x:y,
+and
+h:v = xy:y² = x:y.
+Thus u:h = h:v, and consequently uv = h² = n²/4. [6.1, 5.11, 6.17]
+
+**Step 7.** The rectangle contained by u and v, applied to m = u + v with height v, is deficient by the square on v. Its area is n²/4, and it divides m into the incommensurable parts u and v. The incommensurable-parts criterion of 10.18 is therefore the direct route here: since m > n, it shows that m² exceeds n² by the square on a straight line incommensurable in length with m. [10.18]
+
+**Step 8.** Therefore b = m + n is a binomial whose greater term has its square exceeding the square on the lesser by the square on a line incommensurable with the greater; and its lesser term n is commensurable in length with the rational line r set out. These are precisely the defining conditions of the fifth binomial. Hence the square on the side of a rational plus a medial area, applied to a rational straight line, produces as breadth the fifth binomial. [D10.2.4, D10.2.5]
+
+**USED:** 10.11, 10.12, 10.13, 10.18, 10.20, 10.22, 10.36, 10.40, 2.4, 2.7, 5.11, 6.1, 6.17, D10.1.1, D10.1.2, D10.1.3, D10.1.4, D10.2.4, D10.2.5
+**Human refs (from References field):** 10.13, 10.18, 10.20, 10.22, 10.36, 10.40
+**Jaccard:** 0.316 — AI adds ['10.11', '10.12', '2.4', '2.7', '5.11', '6.1', '6.17', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4', 'D10.2.4', 'D10.2.5']
+
+## Proposition 10.65
+**Statement:** The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.
+
+**Step 1.** Let x be the side of the sum of two medial areas, and let r be the rational straight line to which its square is applied. By the defining characterization, write x=a+b, with a>b, where a² and b² are incommensurable, the areas A=a²+b² and B=ab are medial, and A and B are incommensurable. Here products denote rectangles and squares denote square areas. [10.41, D10.1.2]
+
+**Step 2.** Apply a², b², and ab to r as rectangles, obtaining breadths p, q, and t respectively. These applications can be made by applying the triangular halves of each area. Thus rp=a², rq=b², and rt=ab. Set u=p+q and v=2t. Addition of rectangles gives ru=A and rv=2B; consequently
+r(u+v)=a²+b²+2ab=(a+b)²=x².
+It therefore suffices to show that u+v is the sixth binomial. This construction obtains its two terms directly from the sum of the squares and twice the rectangle. [1.44, 2.1, 2.4]
+
+**Step 3.** Since A and B are medial areas, their applications to the rational line r have breadths u and t that are rational and incommensurable in length with r. Since v=2t, v is commensurable in length with t, and v²=4t² is commensurable with t². Thus v is also rational: its square is commensurable with the square of the assigned rational line. Moreover, v is incommensurable in length with r, because t is. Hence both u and v are rational, and neither is commensurable in length with r. [10.22, D10.1.1, 2.4, 10.12, D10.1.3, 10.13]
+
+**Step 4.** Rectangles of the same height give u:t=A:B. Since A and B are incommensurable, u and t are incommensurable in length. Since v is commensurable with t, u and v are likewise incommensurable in length. But, being rational lines, u and v have squares commensurable with the same assigned rational square, and hence with one another. They are therefore commensurable in square only, so u+v is a binomial. [6.1, 10.11, 10.13, D10.1.3, 10.12, D10.1.2, 10.36]
+
+**Step 5.** Again by the equality of heights, p:q=a²:b². Hence p and q are incommensurable in length. Furthermore,
+p:t=a²:ab=a:b,
+and
+t:q=ab:b²=a:b.
+Thus p:t=t:q, and therefore pq=t²=v²/4. [6.1, 10.11, 6.17]
+
+**Step 6.** The square identity a²+b²=2ab+(a−b)² shows that A>2B, and therefore u>v. Now u=p+q, and the rectangle pq is equal to one quarter of the square on v. Applied along the part p of u with height q, this rectangle is deficient from the rectangle on the whole u by the square q². Its division of u is into the incommensurable parts p and q. We therefore use the direct incommensurable-division criterion, whose hypothesis is exactly what Step 5 established: the square on u exceeds the square on v by the square on a straight line incommensurable in length with u. [2.7, 6.1, 2.1, 10.18]
+
+**Step 7.** Thus u+v is a binomial; the square on its greater term u exceeds that on its lesser term v by the square on a line incommensurable in length with u; and neither term is commensurable in length with the rational line r. These are precisely the conditions defining the sixth binomial. Since r(u+v)=x², the square on the side of the sum of two medial areas, applied to a rational straight line, produces as breadth the sixth binomial. [D10.2.4, D10.2.6]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.18, 10.22, 10.36, 10.41, 2.1, 2.4, 2.7, 6.1, 6.17, D10.1.1, D10.1.2, D10.1.3, D10.2.4, D10.2.6
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.41, 6.1
+**Jaccard:** 0.278 — AI adds ['1.44', '10.12', '10.13', '10.18', '2.1', '2.4', '2.7', '6.17', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.2.4', 'D10.2.6']
+
+## Proposition 10.66
+**Statement:** A straight line commensurable in length with a binomial straight line is itself also binomial and the same in order.
+
+**Step 1.** Let x be a binomial straight line, and let y be commensurable in length with x. Write x = a + b, where a > b and a, b are rational straight lines commensurable in square only. Fix the rational straight line r relative to which rationality and the order of the binomial are understood. We shall transfer the defining terms by a similar division. [10.36; D10.1.3]
+
+**Step 2.** Divide y similarly to x, obtaining y = c + d with a : b = c : d. By alternation, a : c = b : d, and therefore, by taking the sums of antecedents and consequents,
+(a + b) : (c + d) = a : c = b : d.
+Thus x : y = a : c = b : d. Since a > b, the proportion a : c = b : d also gives c > d. [6.10; 5.16; 5.12; 5.14]
+
+**Step 3.** Since x and y are commensurable in length, the proportions just obtained show that a and c are commensurable in length, as are b and d. Moreover, a and b are incommensurable in length; hence a : b = c : d shows that c and d are also incommensurable in length. [10.11]
+
+**Step 4.** The squares on a and c have the ratio of a square number to a square number, and consequently are commensurable; the same holds for the squares on b and d. Since a and b are rational, their squares are commensurable with the square on r. Transitivity of commensurability therefore shows that the squares on c and d are each commensurable with the square on r, and also with one another. Thus c and d are rational and commensurable in square. By Step 3 they are incommensurable in length, so y = c + d is binomial. [10.9; 10.6; 10.12; D10.1.2; D10.1.3; 10.36]
+
+**Step 5.** Because a and c are commensurable in length, a is commensurable in length with r if and only if c is. Likewise, b is commensurable in length with r if and only if d is. Here 10.12 applies directly in both directions because the corresponding terms are already known to be commensurable. Thus the greater terms, the lesser terms, or neither pair have length-commensurability with r in exactly the same cases. [10.12]
+
+**Step 6.** The other test determining the order concerns the square by which the square on the greater term exceeds that on the lesser. Apply 10.14 directly, since it preserves precisely this test: from a : b = c : d, if a² exceeds b² by the square on a line commensurable in length with a, then c² exceeds d² by the square on a line commensurable in length with c; and if the former excess-side is incommensurable with a, the latter is incommensurable with c. Hence this defining distinction is also preserved. [10.14]
+
+**Step 7.** If the excess-side is commensurable with the greater term, the greater term, the lesser term, or neither being commensurable in length with r gives respectively the first, second, or third binomial. Steps 5–6 preserve each of these cases. If the excess-side is incommensurable with the greater term, the same three alternatives give respectively the fourth, fifth, or sixth binomial, and again each case is preserved. Therefore y is binomial and has the same order as x. [D10.2.1; D10.2.2; D10.2.3; D10.2.4; D10.2.5; D10.2.6]
+
+**USED:** 10.11, 10.12, 10.14, 10.36, 10.6, 10.9, 5.12, 5.14, 5.16, 6.10, D10.1.2, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.36, 5.11, 5.16, 5.19, 6.12, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6
+**Jaccard:** 0.500 — AI adds ['10.6', '10.9', '5.12', '5.14', '6.10', 'D10.1.2', 'D10.1.3']; Human adds ['10.13', '5.11', '5.19', '6.12']
+
+## Proposition 10.67
+**Statement:** A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.
+
+**Step 1.** Let a be a bimedial straight line, and let b be commensurable in length with a. We use the binomial breadths obtained by applying their squares to one rational straight line: this allows the preceding order-preservation theorem, 10.66, to apply directly. Choose a rational straight line r. Construct fourth proportionals x and y such that r:a = a:x and r:b = b:y (6.12). Then the rectangles contained by r, x and by r, y equal the squares on a and b respectively (6.16). Thus x and y are the breadths obtained by applying those squares to r.
+
+**Step 2.** Since a and b are commensurable in length, their squares have the ratio of a square number to a square number (10.9). The rectangles contained by r, x and by r, y have the same height r, so their ratio is x:y (6.1). Consequently x:y is a ratio of numbers, and therefore x and y are commensurable in length (10.6).
+
+**Step 3.** If a is a first bimedial, the breadth x is a second binomial (10.61). If a is a second bimedial, the breadth x is a third binomial (10.62).
+
+**Step 4.** Since y is commensurable in length with x, it is binomial and of the same order as x (10.66). Thus y is a second binomial when a is a first bimedial, and a third binomial when a is a second bimedial.
+
+**Step 5.** The square on b equals the rectangle contained by the rational straight line r and y. If y is a second binomial, the side of this area, namely b, is a first bimedial (10.55). If y is a third binomial, b is a second bimedial (10.56). Hence a straight line commensurable in length with a bimedial straight line is itself bimedial and the same in order.
+
+**USED:** 10.55, 10.56, 10.6, 10.61, 10.62, 10.66, 10.9, 6.1, 6.12, 6.16
+**Human refs (from References field):** 10.11, 10.23, 10.37, 10.38, 5.11, 5.16, 5.19
+**Jaccard:** 0.000 — AI adds ['10.55', '10.56', '10.6', '10.61', '10.62', '10.66', '10.9', '6.1', '6.12', '6.16']; Human adds ['10.11', '10.23', '10.37', '10.38', '5.11', '5.16', '5.19']
+
+## Proposition 10.68
+**Statement:** A straight line commensurable with a major straight line is itself also major.
+
+**Step 1.** Let a be a major straight line, and let b be commensurable with a. Write S and T for their respective squares. These areas are commensurable: if the commensurability is in square, this is its definition; if it is in length, their squares have the ratio of a square number to a square number and hence are commensurable. [D10.1.2, 10.9, 10.6]
+
+**Step 2.** Take the assigned rational straight line r. Construct fourth proportionals x and y so that r:a = a:x and r:b = b:y. Then the rectangle contained by r and x equals S, and the rectangle contained by r and y equals T. Thus S and T are applied to the same rational straight line r, with breadths x and y. [D10.1.3, 6.12, 6.17]
+
+**Step 3.** Since a is major, the breadth x is a fourth binomial. We choose this application-to-a-rational-line route because it leads directly to the earlier theorem preserving binomial order. [10.63]
+
+**Step 4.** Rectangles under the same height are proportional to their bases; consequently S:T = x:y. Since S and T are commensurable, x and y are commensurable in length. [6.1, 10.11]
+
+**Step 5.** A straight line commensurable in length with a binomial is itself binomial and of the same order. Therefore y, being commensurable in length with the fourth binomial x, is also a fourth binomial. [10.66]
+
+**Step 6.** The rectangle contained by the rational straight line r and the fourth binomial y has a major straight line as the side of its equal square. But that rectangle equals T, the square on b. Therefore b is major. Hence a straight line commensurable with a major straight line is itself also major. [10.57]
+
+**USED:** 10.11, 10.57, 10.6, 10.63, 10.66, 10.9, 6.1, 6.12, 6.17, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.23, 10.39, 5.11, 5.16, 5.18, 6.20
+**Jaccard:** 0.059 — AI adds ['10.57', '10.6', '10.63', '10.66', '10.9', '6.1', '6.12', '6.17', 'D10.1.2', 'D10.1.3']; Human adds ['10.23', '10.39', '5.11', '5.16', '5.18', '6.20']
+
+## Proposition 10.69
+**Statement:** A straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area.
+
+**Step 1.** Let a be the side of a rational plus a medial area, and let b be commensurable in length with a. Write Q(a) and Q(b) for their square areas. By X.9, Q(a):Q(b) is the ratio of a square number to a square number; hence Q(a) and Q(b) are commensurable by X.6. [10.9, 10.6]
+
+**Step 2.** We use application to a common rational base, which directly converts the given classification into the fifth-binomial classification. Fix a rational straight line r. By VI.11 construct x and y such that r:a = a:x and r:b = b:y. By VI.17, the rectangles contained by r,x and by r,y equal Q(a) and Q(b), respectively. Thus x and y are the breadths obtained by applying these squares to r. Since a is the side of a rational plus a medial area, X.64 says that x is a fifth binomial. [6.11, 6.17, 10.64]
+
+**Step 3.** The two rectangles have the same height r, so VI.1 gives
+Q(a):Q(b) = x:y.
+Since Q(a) and Q(b) are commensurable, X.11 implies that x and y are commensurable in length. [6.1, 10.11]
+
+**Step 4.** A straight line commensurable in length with a binomial is itself binomial and of the same order. Since x is a fifth binomial, y is therefore also a fifth binomial. [10.66]
+
+**Step 5.** The square on b is the rectangle contained by the rational straight line r and the fifth binomial y. By X.58, the side of this area—that is, b—is the side of a rational plus a medial area. Therefore a straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area. [10.58]
+
+**USED:** 10.11, 10.58, 10.6, 10.64, 10.66, 10.9, 6.1, 6.11, 6.17
+**Human refs (from References field):** 10.40
+**Jaccard:** 0.000 — AI adds ['10.11', '10.58', '10.6', '10.64', '10.66', '10.9', '6.1', '6.11', '6.17']; Human adds ['10.40']
+
+## Proposition 10.70
+**Statement:** A straight line commensurable with the side of the sum of two medial areas is the side of the sum of two medial areas.
+
+**Step 1.** Let L be a side of the sum of two medial areas, and let M be a straight line commensurable in length with L. By the defining characterization in 10.41, write L = a + b, where the squares on a and b are incommensurable, while S = a² + b² and P = ab are medial areas incommensurable with one another. Here x² denotes the square on x, and xy the rectangle contained by x and y. We take the direct route of transferring these defining conditions to a similar division of M. [10.41]
+
+**Step 2.** Divide M into c and d similarly to the division of L into a and b, so that a:b = c:d. By composition, (a+b):b = (c+d):d; alternation therefore gives L:M = b:d. Alternating the original proportion also gives a:c = b:d. Hence
+L:M = a:c = b:d.
+[6.10, 5.18, 5.16, 5.11]
+
+**Step 3.** Put S′ = c² + d² and P′ = cd. The rectangles contained by a, b and by c, d are similar, since their angles are right and their corresponding sides are proportional. Use the similar-polygon theorem here because it treats the squares and the rectangles uniformly: their area ratios are all the duplicate of the same corresponding-side ratio. Consequently,
+a²:c² = b²:d² = P:P′ = L²:M².
+Taking the sums of the antecedents and consequents in the first two ratios gives
+S:S′ = P:P′ = L²:M².
+[D6.1, 6.20, 5.11, 5.12]
+
+**Step 4.** Alternating a²:c² = b²:d² gives a²:b² = c²:d². Since a² and b² are incommensurable, c² and d² are incommensurable also. Thus c and d are incommensurable in square. Likewise, alternating S:S′ = P:P′ gives S:P = S′:P′. Since S and P are incommensurable, S′ and P′ are incommensurable. [5.16, 10.11]
+
+**Step 5.** Since S and P are medial areas, let u and v be their medial square-sides. Construct square-sides u′ and v′ of S′ and P′. From Step 3,
+u²:(u′)² = L²:M² and v²:(v′)² = L²:M².
+The converse of the theorem on similar figures described on proportional straight lines therefore gives
+u:u′ = L:M and v:v′ = L:M.
+[2.14, 6.22]
+
+**Step 6.** Because L and M are commensurable, these proportions show that u and u′ are commensurable, and that v and v′ are commensurable. A straight line commensurable with a medial straight line is medial. Hence u′ and v′ are medial, so S′ and P′ are medial areas. [10.11, 10.23]
+
+**Step 7.** Thus M = c + d, where c and d are incommensurable in square, the sum c² + d² is medial, and the rectangle cd is medial and incommensurable with that sum. By 10.41, M is the side of the sum of two medial areas. Therefore a straight line commensurable with the side of the sum of two medial areas is itself the side of the sum of two medial areas. [10.41]
+
+**USED:** 10.11, 10.23, 10.41, 2.14, 5.11, 5.12, 5.16, 5.18, 6.10, 6.20, 6.22, D6.1
+**Human refs (from References field):** 10.41
+**Jaccard:** 0.083 — AI adds ['10.11', '10.23', '2.14', '5.11', '5.12', '5.16', '5.18', '6.10', '6.20', '6.22', 'D6.1']
+
+## Proposition 10.71
+**Statement:** If a rational and a medial area be added together, four irrational straight lines arise, namely a binomial or a first bimedial or a major or a side of a rational plus a medial area.
+
+**Step 1.** Let R be the given rational area and M the given medial area, and fix the assigned rational straight line u (D10.1.3). Apply the two areas to u as rectangles, with respective breadths a and b; this application can be made by applying triangular pieces using 1.44 and combining the resulting rectangles using 2.1. By 10.20, a is rational and commensurable in length with u. By 10.22, b is rational but incommensurable in length with u.
+
+**Step 2.** Since a and b are rational, their squares are each commensurable with the square on u, and therefore with one another (D10.1.3; 10.12). But a and b cannot be commensurable in length: otherwise, since a is commensurable in length with u, so would b be (10.12), contrary to Step 1. Thus a and b are rational straight lines commensurable in square only, and a+b is a binomial (10.36). Exactly one of its terms, namely a, is commensurable in length with u.
+
+**Step 3.** By 2.1, the rectangle contained by u and a+b equals R+M. Construct a square equal to this area, and denote its side by s (2.14). Since a and b are unequal, let g be the greater and l the lesser. Also construct a straight line d whose square equals the difference between the squares on g and l (2.14). Thus the square on g exceeds the square on l by the square on d. Either d is commensurable in length with g or it is not.
+
+**Step 4.** We use the direct area-to-side propositions, since the area has already been expressed as a rectangle contained by a rational straight line and a binomial. There are precisely four cases:
+
+• If a>b and d is commensurable in length with a, then a+b is a first binomial, because its greater term is commensurable in length with u (D10.2.1). Hence s is an irrational binomial straight line (10.54).
+
+• If b>a and d is commensurable in length with b, then a+b is a second binomial, because its lesser term is commensurable in length with u (D10.2.1–D10.2.2). Hence s is an irrational first bimedial straight line (10.55).
+
+• If a>b and d is incommensurable in length with a, then a+b is a fourth binomial (D10.2.4). Hence s is the irrational straight line called major (10.57).
+
+• If b>a and d is incommensurable in length with b, then a+b is a fifth binomial (D10.2.4–D10.2.5). Hence s is the irrational straight line called the side of a rational plus a medial area (10.58).
+
+These cases exhaust the possibilities, since exactly one term is commensurable in length with u.
+
+**Step 5.** Each of the four possibilities can occur. First, second, fourth, and fifth binomials can be constructed by 10.48, 10.49, 10.51, and 10.52 respectively. In each, one term is commensurable in length with the assigned rational straight line u, while the other is not, by their defining conditions and 10.12. The rectangle contained by u and the commensurable term is rational (10.19); that contained by u and the other term is a medial area, since its two rational sides are commensurable in square only (10.21). Their sum is the rectangle contained by u and the whole binomial (2.1), whose square-side has the corresponding type established in Step 4.
+
+Therefore the addition of a rational and a medial area gives rise to the four stated irrational straight lines: a binomial, a first bimedial, a major, or a side of a rational plus a medial area.
+
+**USED:** 1.44, 10.12, 10.19, 10.20, 10.21, 10.22, 10.36, 10.48, 10.49, 10.51, 10.52, 10.54, 10.55, 10.57, 10.58, 2.1, 2.14, D10.1.3, D10.2.1, D10.2.2, D10.2.4, D10.2.5
+**Human refs (from References field):** 10.11, 10.20, 10.22, 10.36, 10.54, 10.55, 10.57, 10.58, 6.1, D10.2.1, D10.2.2, D10.2.4, D10.2.5
+**Jaccard:** 0.458 — AI adds ['1.44', '10.12', '10.19', '10.21', '10.48', '10.49', '10.51', '10.52', '2.1', '2.14', 'D10.1.3']; Human adds ['10.11', '6.1']
+
+## Proposition 10.72
+**Statement:** If two medial areas incommensurable with one another be added together, the remaining two irrational straight lines arise, namely either a second bimedial or a side of the sum of two medial areas.
+
+**Step 1.** Let M and N be the given medial areas, incommensurable with one another, and let r be the assigned rational straight line. We use application to r, since this directly converts each medial area into a rectangle with rational breadth. Apply M and N to r, obtaining breadths x and y, so that M = rx and N = ry. Both x and y are rational and each is incommensurable in length with r. [10.22]
+
+**Step 2.** The rectangles rx and ry have the same height, so M:N = x:y. Since M and N are incommensurable, x and y are incommensurable in length. But, being rational, their squares are each commensurable with the square on r, and hence with one another. Thus x and y are commensurable in square only. [6.1, 10.11, D10.1.3, 10.12, D10.1.2]
+
+**Step 3.** Therefore b = x+y is a binomial. Moreover, the rectangle rb equals rx+ry, hence equals M+N. Construct a square equal to this area, and denote its side by s. Thus s is the side of the area contained by r and b. [10.36, 2.1, 2.14]
+
+**Step 4.** Since x and y are incommensurable in length, they are unequal; name the greater x. Construct a straight line d whose square equals the excess of the square on x over the square on y. Thus x² = y²+d². There are two exhaustive cases: d is either commensurable or incommensurable in length with x. [2.14]
+
+**Step 5.** If d is commensurable in length with x, then b is a third binomial: its greater term exceeds its lesser in square by the square on a straight line commensurable with the greater, and neither term is commensurable in length with r. Consequently, the side s of the area contained by the rational straight line r and b is a second bimedial. [D10.2.1, D10.2.3, 10.56]
+
+**Step 6.** If d is incommensurable in length with x, then b is a sixth binomial, since the square-difference condition is now the incommensurable one and neither term is commensurable in length with r. Consequently, s is the irrational straight line called the side of the sum of two medial areas. The two cases exhaust all possibilities. Therefore the side of the sum of two incommensurable medial areas is either a second bimedial or a side of the sum of two medial areas, as required. [D10.2.4, D10.2.6, 10.59]
+
+**USED:** 10.11, 10.12, 10.22, 10.36, 10.56, 10.59, 2.1, 2.14, 6.1, D10.1.2, D10.1.3, D10.2.1, D10.2.3, D10.2.4, D10.2.6
+**Human refs (from References field):** 10.11, 10.22, 10.36, 10.56, 10.59, 6.1, D10.2.3, D10.2.6
+**Jaccard:** 0.533 — AI adds ['10.12', '2.1', '2.14', 'D10.1.2', 'D10.1.3', 'D10.2.1', 'D10.2.4']
+
+## Proposition 10.73
+**Statement:** If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational; and let it be called   an apotome.
+
+**Step 1.** Let AB be a rational straight line, and let the rational straight line AC, commensurable with AB in square only, be subtracted from it, leaving CB. Write P and Q for the squares on AB and AC, R for the rectangle contained by AB and AC, and T for the square on CB. Let U be the square on the assigned rational straight line. Since AB and AC are rational, P and Q are each commensurable with U. [D10.1.3, D10.1.4]
+
+**Step 2.** Therefore P and Q are commensurable with one another. Their sum S = P + Q is consequently commensurable with P, and hence with U. [10.12, 10.15]
+
+**Step 3.** For the rectangle R, use X.21 directly, since its hypotheses are exactly the given conditions on AB and AC. Thus R is irrational, hence incommensurable with U. But R and 2R are commensurable, since R measures both; therefore 2R is also incommensurable with U. Since S is commensurable with U, S is incommensurable with 2R. [10.21, D10.1.4, D10.1.1, 10.13]
+
+**Step 4.** Use II.7 because it relates the square on the remainder directly to the squares and rectangle of the given lines. Applied to AB cut at C, it gives
+S = P + Q = 2R + T. [2.7]
+
+**Step 5.** The whole S is incommensurable with its part 2R. Hence its two parts 2R and T are incommensurable. Their sum S is therefore also incommensurable with T, by the converse and then the first assertion of X.16. [10.16]
+
+**Step 6.** Since U is commensurable with S, while T is incommensurable with S, T is incommensurable with U. Thus the square on CB is irrational, and its side CB is irrational. Therefore the remainder after the stated subtraction is irrational; let it be called an **apotome**. [10.13, D10.1.4]
+
+**USED:** 10.12, 10.13, 10.15, 10.16, 10.21, 2.7, D10.1.1, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.16, 10.6, 2.7, D10.1.4
+**Jaccard:** 0.455 — AI adds ['10.12', '10.21', 'D10.1.1', 'D10.1.3']; Human adds ['10.11', '10.6']
+
+## Proposition 10.74
+**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a rational rectangle, the remainder is irrational. And let it be called a first apotome of a medial straight line.
+
+**Step 1.** Let AC be the whole medial straight line, and let BC be the medial straight line subtracted from it, with B between A and C. Thus AC and BC are commensurable in square only, and the rectangle R contained by AC and BC is rational. Write X, Y, and Z for the squares on AC, BC, and AB respectively. We choose the direct area route, using II.7 because it expresses precisely the square of the remainder:
+\[
+X+Y=2R+Z.
+\]
+[2.7]
+
+**Step 2.** Let Q be the square on the assigned rational straight line. Since AC is medial, its square X is irrational and therefore incommensurable with Q. Since AC and BC are commensurable in square, X and Y are commensurable. Hence their sum S = X + Y is commensurable with X, and consequently S is incommensurable with Q. [10.21, D10.1.4, D10.1.2, 10.15, 10.13]
+
+**Step 3.** Since R is rational, R is commensurable with Q. Any common measure of R and Q also measures 2R, so T = 2R is commensurable with Q. Since S is incommensurable with Q, it is also incommensurable with T. [D10.1.4, D10.1.1, 10.13]
+
+**Step 4.** By Step 1, S = T + Z. The whole S is incommensurable with its part T; therefore the original magnitudes T and Z are incommensurable. But T is commensurable with Q, so Z is incommensurable with Q. Thus the square on AB is irrational, and its side AB is irrational. Therefore the remainder obtained by the stated subtraction is irrational; let it be called a **first apotome of a medial straight line**. [10.16, 10.13, D10.1.4]
+
+**USED:** 10.13, 10.15, 10.16, 10.21, 2.7, D10.1.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.16, 2.7, D10.1.4
+**Jaccard:** 0.375 — AI adds ['10.13', '10.15', '10.21', 'D10.1.1', 'D10.1.2']
+
+## Proposition 10.75
+**Statement:** If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a medial rectangle, the remainder is irrational; and let it be called a second apotome of a medial straight line.
+
+**Step 1.** Let a be the whole medial straight line, b the medial straight line subtracted, and c = a − b the positive remainder. By hypothesis, a and b are commensurable in square only, so a² and b² are commensurable areas [D10.1.2]. Put S = a² + b² and T = 2ab. Then
+S = T + c² [2.7].
+We take the direct medial-area route: establish that S and T are medial, then apply the prohibition against a rational difference between medial areas [10.26].
+
+**Step 2.** Construct a third proportional d to a and b, so that a:b = b:d [6.11]. Thus ad = b² [6.17]. The square a² and the rectangle ad have the common height a, and therefore a²:ad = a:d [6.1]. Since a² and ad = b² are commensurable, a and d are commensurable in length [10.11].
+
+**Step 3.** Consequently a + d is commensurable in length with a [10.15], and is therefore medial, since a is medial [10.23]. The rectangle contained by the commensurable medial straight lines a and a + d is medial [10.24]. But
+ a(a + d) = a² + ad = a² + b² = S [2.1].
+Hence S is medial.
+
+**Step 4.** Construct a square equal to the given medial rectangle ab, and let its side be m [2.14]. Since ab is medial, m is medial, by the meaning of medial [10.21]. Let n = 2m. The lines m and n have the common measure m [D10.1.1], so n is also medial [10.23]. Their rectangle mn is therefore medial [10.24]. Moreover,
+ mn = 2m² = 2ab = T [2.1].
+Thus T is medial.
+
+**Step 5.** By Step 1, the medial area S exceeds the medial area T by c². Such an excess cannot be a rational area [10.26]. Therefore c² is irrational, and its side c is an irrational straight line [D10.1.4]. Hence the remainder is irrational; let it be called a **second apotome of a medial straight line**, as required.
+
+**USED:** 10.11, 10.15, 10.21, 10.23, 10.24, 10.26, 2.1, 2.14, 2.7, 6.1, 6.11, 6.17, D10.1.1, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.20, 10.22, 10.23, 10.28, 10.6, 10.73, 2.7, 6.1
+**Jaccard:** 0.238 — AI adds ['10.21', '10.24', '10.26', '2.1', '2.14', '6.11', '6.17', 'D10.1.1', 'D10.1.2', 'D10.1.4']; Human adds ['10.13', '10.20', '10.22', '10.28', '10.6', '10.73']
+
+## Proposition 10.76
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the squares on them added together rational, but the rectangle contained by them medial, the remainder is irrational; and let it be called minor.
+
+**Step 1.** Let AC be subtracted from AB, leaving CB, under the stated hypotheses. Write S for the sum of the squares on AB and AC, M for the rectangle contained by AB and AC, and Q for the square on CB. Thus S is rational and M is medial. We take the direct route through the square on the remainder: by 2.7,
+S = 2M + Q. [2.7]
+
+**Step 2.** Let U be the square on the assigned rational straight line. Since S is rational, S is commensurable with U. Since M is medial, it is irrational and therefore incommensurable with U. [D10.1.4, 10.21]
+
+**Step 3.** The area M itself measures both M and 2M, so these two areas are commensurable directly by definition; no numerical-ratio theorem is needed. Because M is incommensurable with U, it follows that 2M is also incommensurable with U. Since U and S are commensurable, S is consequently incommensurable with 2M. [D10.1.1, 10.13]
+
+**Step 4.** Now S is the whole formed by adding 2M and Q, and S is incommensurable with the part 2M. Hence the two parts 2M and Q are incommensurable. Applying the other direction of the same proposition, their whole S is therefore incommensurable with Q. [10.16]
+
+**Step 5.** Since S and U are commensurable, while S and Q are incommensurable, U and Q are incommensurable. Thus Q is an irrational area, and its square-side CB is an irrational straight line. Therefore the remainder is irrational; under the stated hypotheses, let it be called **minor**. [10.13, D10.1.4]
+
+**USED:** 10.13, 10.16, 10.21, 2.7, D10.1.1, D10.1.4
+**Human refs (from References field):** 10.16, 10.33, 2.7
+**Jaccard:** 0.286 — AI adds ['10.13', '10.21', 'D10.1.1', 'D10.1.4']; Human adds ['10.33']
+
+## Proposition 10.77
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole, and which with the whole makes the sum of the squares on them medial, but twice the rectangle contained by them rational, the remainder is irrational: and let it be called that which produces with a rational area a medial whole.
+
+**Step 1.** Let AC be subtracted from AB, leaving CB, where AB and AC are incommensurable in square. Write M for the sum of the squares on AB and AC, R for twice the rectangle contained by AB and AC, and S for the square on CB. By hypothesis, M is medial and R is rational. We take the direct area-subtraction route: by II.7,
+M = R + S.
+[2.7]
+
+**Step 2.** Let Q be the square on the assigned rational straight line. Since R is rational, R is commensurable with Q. Since M is medial, it is an irrational area and hence is incommensurable with Q. [D10.1.4, 10.21]
+
+**Step 3.** Because Q and R are commensurable, while Q is incommensurable with M, R is also incommensurable with M. Thus the whole area M is incommensurable with its part R. [10.13]
+
+**Step 4.** From M = R + S and the incommensurability of M with R, it follows that S and R are incommensurable. Since R is commensurable with Q, Q is likewise incommensurable with S. [10.16, 10.13]
+
+**Step 5.** Therefore S, the square on CB, is an irrational area, and its side CB is an irrational straight line. Thus the remainder is irrational; let it be called **that which produces with a rational area a medial whole**, since its square S together with the rational area R produces the medial whole M. [D10.1.4]
+
+**USED:** 10.13, 10.16, 10.21, 2.7, D10.1.4
+**Human refs (from References field):** 10.16, 10.34, 2.7
+**Jaccard:** 0.333 — AI adds ['10.13', '10.21', 'D10.1.4']; Human adds ['10.34']
+
+## Proposition 10.78
+**Statement:** If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial, twice the rectangle contained by them medial, and further the squares on them incommensurable with twice the rectangle contained by them, the remainder is irrational; and let it be called that which produces with a medial area a medial whole.
+
+**Step 1.** Let AC be subtracted from AB, with C between A and B, leaving CB. By hypothesis, AB and AC are incommensurable in square, and the areas S = AB² + AC² and T = 2(AB·AC) are medial and incommensurable with one another. By Proposition 2.7,
+AB² + AC² = 2(AB·AC) + CB².
+Thus S exceeds T by the square on CB. [2.7]
+
+**Step 2.** Use the difference-of-medial-areas criterion directly, since Step 1 gives exactly such a difference. A medial area does not exceed a medial area by a rational area. Since S and T are both medial, their difference, the square on CB, is therefore not rational. [10.26]
+
+**Step 3.** By the definition of irrational areas and their sides, the square on CB is irrational, and hence its side CB is an irrational straight line. Thus the required remainder is irrational; under the stated hypotheses, let it be called **that which produces with a medial area a medial whole**. [D10.1.4]
+
+**USED:** 10.26, 2.7, D10.1.4
+**Human refs (from References field):** 10.11, 10.20, 10.22, 10.35, 10.73, 2.7, 6.1
+**Jaccard:** 0.111 — AI adds ['10.26', 'D10.1.4']; Human adds ['10.11', '10.20', '10.22', '10.35', '10.73', '6.1']
+
+## Proposition 10.79
+**Statement:** To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.
+
+**Step 1.** Let x be an apotome. By 10.73, there are rational straight lines a and b, commensurable in square only, such that a = x + b. Thus b is an annex of the required kind. We prove uniqueness by directly comparing the rectangles formed by two supposed wholes and annexes. Write s² for the square on s and st for the rectangle contained by s and t. [10.73]
+
+**Step 2.** Suppose a different rational annex d is possible, and put c = x + d, where c and d are commensurable in square only. Fix the assigned rational straight line, and denote its square by U. Since d² is commensurable with U and c² is commensurable with d², c² is commensurable with U; hence c is rational. We therefore have two representations x = a − b = c − d, each with rational whole and annex commensurable in square only. Interchanging their names if necessary, suppose b > d; then a > c. [D10.1.2, D10.1.3, 10.12]
+
+**Step 3.** The four squares a², b², c², d² are rational areas, each commensurable with U. Consequently the positive differences a² − c² and b² − d², and their sum
+S = (a² − c²) + (b² − d²),
+are rational areas. Indeed, magnitudes commensurable with U are commensurable with one another; by 10.15 their positive differences and sums remain commensurable with their constituents, and hence with U. [D10.1.4, 10.12, 10.15]
+
+**Step 4.** Applying 2.7 to a = x + b and c = x + d gives
+a² + b² = 2ab + x²,
+c² + d² = 2cd + x².
+Subtracting yields S = 2(ab − cd). Thus ab exceeds cd by the area S/2. This area is commensurable with S, since it measures S twice; because S is rational, S/2 is rational also. [2.7, CN3, D10.1.1, 10.12, D10.1.4]
+
+**Step 5.** But ab and cd are both medial areas: in each rectangle the containing straight lines are rational and commensurable in square only. By 10.26, a medial area cannot exceed a medial area by a rational area. This contradicts Step 4. Therefore no second annex exists; together with the annex supplied in Step 1, this proves that to an apotome exactly one rational straight line can be annexed which is commensurable with the whole in square only. [10.21, 10.26, 10.73]
+
+**USED:** 10.12, 10.15, 10.21, 10.26, 10.73, 2.7, CN3, D10.1.1, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.21, 10.26, 10.73, 2.7
+**Jaccard:** 0.364 — AI adds ['10.12', '10.15', 'CN3', 'D10.1.1', 'D10.1.2', 'D10.1.3', 'D10.1.4']
+
+## Proposition 10.80
+**Statement:** To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.
+
+**Step 1.** Let h be a first apotome of a medial straight line. By 10.74, it has a representation h=a−b, where a and b are medial, commensurable in square only, and the rectangle ab is rational. Suppose a different admissible medial annex d gives h=c−d, with c and d commensurable in square only and cd rational. Since d is medial, c is also medial by 10.23. Relabel the two representations, if necessary, so that d>b; then c=h+d>h+b=a. [10.74, 10.23]
+
+**Step 2.** Put S=a²+b² and T=c²+d², where squares and products denote areas. The areas a² and b² are commensurable, so S is commensurable with a²; similarly, T is commensurable with c². Construct squares equal to S and T. Their sides are therefore commensurable in square with a and c respectively, and hence are medial. Consequently S and T are medial areas. [D10.1.2, 10.15, 2.14, 10.23]
+
+**Step 3.** Put P=ab and Q=cd. Since c>a and d>b, a rectangle with sides a,b fits properly inside a rectangle with sides c,d; hence Q>P. Both P and Q are rational, so both are commensurable with the square on the assigned rational straight line, and therefore with one another. By the converse part of 10.15, Q−P is commensurable with P, hence with that assigned square. Thus Q−P is rational, and its double 2(Q−P) is rational as well. [CN5, D10.1.4, 10.12, 10.15]
+
+**Step 4.** Apply II.7 to each whole and its annex. Since the remainder is h in both cases,
+S=h²+2P,     T=h²+2Q.
+Removing the common area h² and comparing the remainders gives
+T−S=2(Q−P)>0.
+Thus one medial area exceeds another by a rational area. The sums-of-squares route is the direct choice here: II.7 makes the common remainder cancel and leaves precisely this medial-area obstruction. [2.7, CN3]
+
+**Step 5.** But a medial area does not exceed a medial area by a rational area, by 10.26. This contradiction excludes two different admissible annexes. Since an admissible annex exists by the defining representation in Step 1, exactly one medial straight line can be annexed which is commensurable with the whole in square only and contains with the whole a rational rectangle. [10.26, 10.74]
+
+**USED:** 10.12, 10.15, 10.23, 10.26, 10.74, 2.14, 2.7, CN3, CN5, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.15, 10.23, 10.26, 10.74, 2.7
+**Jaccard:** 0.455 — AI adds ['10.12', '2.14', 'CN3', 'CN5', 'D10.1.2', 'D10.1.4']
+
+## Proposition 10.81
+**Statement:** To a second apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a medial rectangle.
+
+**Step 1.** Let d be the given second apotome of a medial straight line. Thus d=a−b, where a and b are medial, commensurable in square only, and contain a medial rectangle ab [10.75]. Suppose that another medial straight line e can be annexed, giving c=d+e, where c and e are commensurable in square only and ce is medial. We must show e=b. We choose the area-application route, since it leads naturally to the earlier uniqueness theorem for an ordinary apotome [10.79].
+
+**Step 2.** Fix the assigned rational straight line r. For either pair (x,y)=(a,b) or (c,e), write p,q,h for the breadths obtained by applying x²,y²,xy to r; thus rp=x², rq=y², and rh=xy. Since y is medial, q is rational. Since xy is a medial area, its square-side is medial, so h is likewise rational [10.22]. Put U=p+q and V=2h.
+
+**Step 3.** The areas x² and y² are commensurable because x and y are commensurable in square [D10.1.2]. Their applied breadths satisfy p:q=x²:y², so p and q are commensurable in length [6.1, 10.11]. Consequently U=p+q is commensurable in length with q [10.15]. Also V=2h is commensurable in length with h, since h measures both [D10.1.1].
+
+**Step 4.** It follows that U² is commensurable with q², and V² with h²: the squares on length-commensurable lines have the ratio of square numbers, and such a ratio implies commensurability [10.9, 10.6]. Since q and h are rational, their squares are commensurable with r². Hence U² and V² are commensurable with r² and with one another. Thus U and V are rational and commensurable in square [D10.1.3, 10.12].
+
+**Step 5.** On the other hand,
+q:h = y²:xy = y:x
+by the ratios of rectangles under the same height [6.1]. Since y and x are incommensurable in length, q and h are incommensurable in length [10.11]. As U is commensurable with q and V with h, two applications of 10.13 show that U and V are incommensurable in length. Therefore U and V are commensurable in square only [10.13].
+
+**Step 6.** Because x=y+d, the square identity gives
+x²+y² = 2xy+d² [2.7].
+Using the applied breadths and addition of rectangles, this becomes
+rU = rV+d² [2.1].
+Thus U>V, and U−V is precisely the breadth s obtained by applying d² to r. This breadth depends only on d and r, not on the chosen pair [6.1]. Since U and V are rational and commensurable in square only, s=U−V is an ordinary apotome [10.73].
+
+**Step 7.** Applying this construction to (a,b) and (c,e) therefore gives two rational annexes V₁ and V₂ to the same apotome s, each commensurable with its corresponding whole in square only. By the uniqueness theorem for an apotome, V₁=V₂ [10.79]. Their rectangles on the common base r are consequently equal; since these rectangles are respectively 2ab and 2ce, we obtain ab=ce [6.1].
+
+**Step 8.** If e>b, write e=b+t with t>0. Since c−e=a−b=d, we have c=a+t. Distributing the rectangle gives
+ce=(a+t)(b+t)=ab+at+bt+t²>ab,
+contrary to Step 7 [2.1, CN5]. The alternative b>e gives the same contradiction with the pairs interchanged. Hence e=b. The original representation supplies an admissible annex, and every admissible annex equals it [10.75]. Therefore only one medial straight line can be annexed to the given second apotome which is commensurable with the whole in square only and contains with the whole a medial rectangle.
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.22, 10.6, 10.73, 10.75, 10.79, 10.9, 2.1, 2.7, 6.1, CN5, D10.1.1, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.22, 10.23, 10.6, 10.73, 10.75, 10.79, 2.7, 6.1
+**Jaccard:** 0.556 — AI adds ['10.12', '10.9', '2.1', 'CN5', 'D10.1.1', 'D10.1.2', 'D10.1.3']; Human adds ['10.23']
+
+## Proposition 10.82
+**Statement:** To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.
+
+**Step 1.** Let m be the given minor straight line. We choose the direct route of comparing the associated rational and medial areas. By the definition of a minor in 10.76, there is an annex x, incommensurable in square with m+x, such that (m+x)²+x² is rational and the rectangle (m+x)x is medial. Twice this rectangle is also medial: the sides of squares equal to an area and its double are commensurable in square, so 10.23 preserves mediality (D10.1.2). Thus an annex with the required properties exists.
+
+**Step 2.** Suppose that two distinct annexes x and y have the required properties, and take y>x. Write
+S_x=(m+x)²+x²,  T_x=2(m+x)x,
+S_y=(m+y)²+y²,  T_y=2(m+y)y.
+By hypothesis, S_x and S_y are rational areas, while T_x and T_y are medial areas. Since y>x and m+y>m+x, the corresponding larger squares contain the smaller squares as proper parts; hence S_y>S_x (CN5).
+
+**Step 3.** Applying 2.7 to each whole, divided into m and its annex, gives
+S_x=m²+T_x,  S_y=m²+T_y.
+Consequently, subtracting the common area m² yields
+S_y−S_x=T_y−T_x>0 (CN3).
+
+**Step 4.** Let U be the square on the assigned rational straight line. Since S_x and S_y are rational, each is commensurable with U (D10.1.4), and therefore they are commensurable with one another (10.12). Applying 10.15 to S_y=S_x+(S_y−S_x), the difference S_y−S_x is commensurable with S_x. Since U is also commensurable with S_x, 10.12 makes this difference commensurable with U. Thus S_y−S_x is a rational area (D10.1.4).
+
+**Step 5.** By Steps 3–4, the medial area T_y exceeds the medial area T_x by the positive rational area S_y−S_x. This contradicts 10.26, which states that a medial area does not exceed a medial area by a rational area. Therefore two distinct admissible annexes cannot exist. Together with Step 1, this proves that to a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and makes the sum of their squares rational but twice their rectangle medial.
+
+**USED:** 10.12, 10.15, 10.23, 10.26, 10.76, 2.7, CN3, CN5, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.26, 10.76
+**Jaccard:** 0.200 — AI adds ['10.12', '10.15', '10.23', '2.7', 'CN3', 'CN5', 'D10.1.2', 'D10.1.4']
+
+## Proposition 10.83
+**Statement:** To a straight line which produces with a rational area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial, but twice the rectangle contained by them rational.
+
+**Step 1.** Let r be a straight line which produces with a rational area a medial whole. By the designation in X.77, an annex a exists such that a and the whole r+a are incommensurable in square, the area Mₐ=(r+a)²+a² is medial, and the area Rₐ=2(r+a)a is rational. Suppose that two distinct annexes satisfy these conditions; call the smaller a and the greater b. Thus Mᵦ=(r+b)²+b² is also medial, Rᵦ=2(r+b)b is rational, and b is incommensurable in square with r+b. Here squares and products denote their corresponding areas. [10.77]
+
+**Step 2.** Use II.7 directly, since it relates each sum of squares to the square on the same remainder r. Applied to each whole and its annex, it gives
+Mₐ=r²+Rₐ and Mᵦ=r²+Rᵦ.
+Since b>a and r+b>r+a, each square in Mᵦ exceeds its corresponding square in Mₐ: the smaller square can be contained as a proper part of the larger. Hence Mᵦ>Mₐ. Subtracting the displayed equalities therefore gives the positive area
+D=Mᵦ−Mₐ=Rᵦ−Rₐ. [2.7, CN5, CN3]
+
+**Step 3.** Let Q be the square on the assigned rational straight line. Since Rₐ and Rᵦ are rational areas, each is commensurable with Q, and therefore they are commensurable with one another. Now Rᵦ=Rₐ+D. Because this whole is commensurable with its part Rₐ, X.15 shows that D is commensurable with Rₐ. Consequently D is commensurable with Q, by X.12, and is therefore a rational area. [D10.1.4, 10.12, 10.15]
+
+**Step 4.** Thus the medial area Mᵦ exceeds the medial area Mₐ by the positive rational area D. This contradicts X.26, which states that a medial area does not exceed a medial area by a rational area. Hence two distinct qualifying annexes cannot exist. Together with the annex supplied by the designation in Step 1, this proves that exactly one straight line can be annexed with all the required properties. [10.26]
+
+**USED:** 10.12, 10.15, 10.26, 10.77, 2.7, CN3, CN5, D10.1.4
+**Human refs (from References field):** 10.26, 10.77
+**Jaccard:** 0.250 — AI adds ['10.12', '10.15', '2.7', 'CN3', 'CN5', 'D10.1.4']
+
+## Proposition 10.84
+**Statement:** To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial and twice the rectangle contained by them both medial and also incommensurable with the sum of the squares on them.
+
+**Step 1.** Let d be the given straight line. By the meaning of its name in 10.78, at least one annex with the stated properties exists. Let a be such an annex, and suppose b is another. Put x=d+a and y=d+b. Write u² for the square on u and uv for the rectangle contained by u and v. Thus the areas
+S=x²+a², T=2xa, S′=y²+b², T′=2yb
+are medial, with S incommensurable with T and S′ incommensurable with T′. [10.78]
+
+**Step 2.** Applying the square-and-rectangle identity to the whole x and its segment a, and likewise to y and b, gives
+S=T+d² and S′=T′+d².
+Consequently S−T=S′−T′=d². [2.7]
+
+**Step 3.** Apply all four medial areas to the same rational straight line r, and denote their respective breadths by s,t,s′,t′. Thus
+rs=S, rt=T, rs′=S′, rt′=T′.
+Each breadth is rational, since a medial area applied to a rational straight line produces a rational breadth. [10.22]
+
+**Step 4.** Rectangles of the same height are proportional to their bases, so
+s:t=S:T and s′:t′=S′:T′.
+The assumed incommensurability of the areas therefore makes s,t incommensurable in length, and likewise s′,t′. On the other hand, all four breadths are rational: their squares are commensurable with the square on the assigned rational line, and hence with one another. Thus s,t are commensurable in square only, as are s′,t′. [6.1; 10.11; D10.1.3; 10.12]
+
+**Step 5.** Since S>T and S′>T′, form the positive remainders h=s−t and h′=s′−t′. Subtracting the corresponding rectangles and using Step 2 gives
+rh=rs−rt=d²=rs′−rt′=rh′.
+Equal rectangles on the same height have equal bases; hence h=h′. Moreover, h is an apotome, since it is the remainder when the rational line t is subtracted from the rational line s, which is commensurable with it in square only. The second pair gives another such representation of this same apotome. [2.1; CN3; 6.1; 10.73]
+
+**Step 6.** We use apotome-annex uniqueness directly, because application to r has produced rational whole lines and rational annexes commensurable in square only. By 10.79, the common apotome h cannot have the two distinct annexes t and t′. Therefore t=t′, and the rectangles on these equal breadths and the same height r are equal. Hence T=T′, or
+2xa=2yb. [10.79; 6.1]
+
+**Step 7.** If a>b, then x=d+a>d+b=y. Placed with a common vertex and corresponding sides in the same directions, the rectangle xa strictly contains the rectangle yb; its double is therefore also strictly greater. This contradicts 2xa=2yb. The supposition b>a gives the same contradiction. Consequently a=b. Since an admissible annex exists by Step 1, exactly one straight line with the required properties can be annexed to d. [CN5; 10.78]
+
+**USED:** 10.11, 10.12, 10.22, 10.73, 10.78, 10.79, 2.1, 2.7, 6.1, CN3, CN5, D10.1.3
+**Human refs (from References field):** 10.11, 10.22, 10.73, 10.78, 10.79, 2.7, 6.1
+**Jaccard:** 0.583 — AI adds ['10.12', '2.1', 'CN3', 'CN5', 'D10.1.3']
+
+## Proposition 10.85
+**Statement:** To find the first apotome.
+
+**Step 1.** Let r be the rational straight line set out. By 10.48 construct a first binomial relative to r, and denote its greater and lesser terms by a and b. We choose this route because the first-binomial construction supplies the required square-difference and commensurability conditions; we need only subtract its terms instead of adding them. [10.48, D10.2.1]
+
+**Step 2.** By the definition of a binomial, a and b are rational straight lines commensurable in square only. Since this binomial is a first binomial, a is commensurable in length with r, and there is a straight line c, commensurable in length with a, such that the square on a exceeds the square on b by the square on c. [10.36, D10.2.1]
+
+**Step 3.** Let AB be the greater term a. Cut off BC equal to b, leaving AC. This is possible because a>b. Since the rational straight line BC is commensurable with the rational whole AB in square only, the remainder AC is an apotome. Its whole is AB and its annex is BC. [1.3, 10.73]
+
+**Step 4.** The square on the whole AB exceeds the square on its annex BC by the square on c, which is commensurable in length with AB; moreover, AB is commensurable in length with the rational straight line r set out. Therefore AC is a first apotome, by definition. Thus the first apotome has been found. [D10.3.1]
+
+**USED:** 1.3, 10.36, 10.48, 10.73, D10.2.1, D10.3.1
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.1
+**Jaccard:** 0.222 — AI adds ['1.3', '10.36', '10.48', 'D10.2.1']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.86
+**Statement:** To find the second apotome.
+
+**Step 1.** Let r be the rational straight line set out. Construct a second binomial by 10.49, and denote its greater and lesser terms by a and b. We choose this construction because its terms already have the square-difference and commensurability properties required for a second apotome. [10.49]
+
+**Step 2.** Since a+b is binomial, a and b are rational straight lines commensurable in square only. Since it is specifically a second binomial, b is commensurable in length with r, and there is a straight line c commensurable in length with a such that the square on a exceeds the square on b by the square on c. Here the square-difference condition is the common condition stated before the distinction between the first and second binomials. [10.36, D10.2.1, D10.2.2]
+
+**Step 3.** From a cut off a straight line equal to b, leaving x. This is possible because a>b. Since the rational straight line b has been subtracted from the rational straight line a, and they are commensurable in square only, x is an apotome. Its whole is a and its annex is b. [1.3, 10.73]
+
+**Step 4.** The annex b is commensurable in length with the rational straight line r set out, while the square on the whole a exceeds the square on the annex b by the square on c, which is commensurable in length with a. Therefore x is a second apotome. Thus the second apotome has been found. [D10.3.2]
+
+**USED:** 1.3, 10.36, 10.49, 10.73, D10.2.1, D10.2.2, D10.3.2
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.2
+**Jaccard:** 0.200 — AI adds ['1.3', '10.36', '10.49', 'D10.2.1', 'D10.2.2']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.87
+**Statement:** To find the third apotome.
+
+**Step 1.** Set out a rational straight line r. Construct a third binomial relative to r, and denote its greater and lesser terms by u and v. We choose this construction because its terms already possess the required square-difference and commensurability properties; we shall subtract them instead of adding them. [10.50]
+
+**Step 2.** By the meaning of binomial, u and v are rational straight lines commensurable with one another in square only. By the definition of a third binomial, neither is commensurable in length with r, and the square on u exceeds the square on v by the square on a straight line w commensurable in length with u. The square-difference condition is the common hypothesis of the first three binomial definitions. [10.36; D10.2.1; D10.2.3]
+
+**Step 3.** From u cut off a straight line equal to v, leaving a straight line a. Since a rational straight line has been subtracted from a rational straight line commensurable with it in square only, a is an apotome. Its whole is u and its annex is v. [1.3; 10.73]
+
+**Step 4.** Neither this whole nor its annex is commensurable in length with r, while the square on the whole exceeds the square on the annex by the square on w, which is commensurable in length with the whole. Therefore a is a third apotome. Thus the third apotome has been found. [D10.3.3]
+
+**USED:** 1.3, 10.36, 10.50, 10.73, D10.2.1, D10.2.3, D10.3.3
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, 5.22, D10.3.3
+**Jaccard:** 0.182 — AI adds ['1.3', '10.36', '10.50', 'D10.2.1', 'D10.2.3']; Human adds ['10.6', '10.9', '5.19', '5.22']
+
+## Proposition 10.88
+**Statement:** To find the fourth apotome.
+
+**Step 1.** Fix the rational straight line set out. Construct a fourth binomial by Proposition 10.51, and denote its greater and lesser terms by a and b. We take the direct route of retaining these terms and replacing their sum by their difference. [10.51]
+
+**Step 2.** Since these are the terms of a binomial, a and b are rational straight lines commensurable in square only. Since the binomial is fourth, a is commensurable in length with the rational straight line set out, and there is a straight line d, incommensurable in length with a, such that the square on a equals the squares on b and d together. [10.36, D10.2.4]
+
+**Step 3.** From a cut off a straight line equal to b, and let the remainder be c. This is possible because a is greater than b. Thus c + b = a. [1.3]
+
+**Step 4.** A rational straight line b has been subtracted from a rational straight line a commensurable with it in square only. Therefore c is an apotome, with b as its annex and a as its whole. [10.73]
+
+**Step 5.** The square on this whole exceeds the square on its annex by the square on d, which is incommensurable in length with the whole; moreover, the whole is commensurable in length with the rational straight line set out. Hence c is a fourth apotome, by definition. Thus the fourth apotome has been found. [D10.3.4]
+
+**USED:** 1.3, 10.36, 10.51, 10.73, D10.2.4, D10.3.4
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.4
+**Jaccard:** 0.222 — AI adds ['1.3', '10.36', '10.51', 'D10.2.4']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.89
+**Statement:** To find the fifth apotome.
+
+**Step 1.** Let R be the rational straight line set out. Construct a fifth binomial by Proposition 10.52, and let its greater and lesser terms be U and V. We choose this earlier construction because its terms already satisfy the conditions needed for the whole and annex of the required apotome. By the definition of a binomial, U and V are rational straight lines commensurable in square only. By the definition of a fifth binomial, V is commensurable in length with R, and the square on U exceeds the square on V by the square on a straight line D incommensurable in length with U. [10.52, 10.36, D10.2.4, D10.2.5]
+
+**Step 2.** Since U is greater than V, cut off from U a straight line equal to V, and call the remaining straight line W. Thus W + V = U. [1.3]
+
+**Step 3.** A rational straight line V has been subtracted from a rational straight line U commensurable with it in square only. Therefore W is an apotome, with whole U and annex V. [10.73]
+
+**Step 4.** The square on the whole U exceeds the square on the annex V by the square on D, which is incommensurable in length with U; moreover, the annex V is commensurable in length with the rational straight line R set out. Consequently W is a fifth apotome, by its definition. Thus the fifth apotome has been found. [D10.3.4, D10.3.5]
+
+**USED:** 1.3, 10.36, 10.52, 10.73, D10.2.4, D10.2.5, D10.3.4, D10.3.5
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, D10.3.5
+**Jaccard:** 0.182 — AI adds ['1.3', '10.36', '10.52', 'D10.2.4', 'D10.2.5', 'D10.3.4']; Human adds ['10.6', '10.9', '5.19']
+
+## Proposition 10.90
+**Statement:** To find the sixth apotome.
+
+**Step 1.** Let g be the rational straight line set out. Use the earlier construction of a sixth binomial: this route supplies two terms with the required commensurability and square-difference properties. Construct such a binomial relative to g, and denote its greater and lesser terms by x and y. These terms are rational straight lines commensurable in square only. [10.53, 10.36]
+
+**Step 2.** By the definition of a sixth binomial, neither x nor y is commensurable in length with g. Moreover, the square on x exceeds the square on y by the square on a straight line z incommensurable in length with x; thus x² = y² + z². [D10.2.4, D10.2.6]
+
+**Step 3.** From x cut off a straight line equal to y, and call the remainder a. This is possible because x is greater than y. Since x and y are rational and commensurable in square only, their difference a is an apotome. Its whole is x and its annex is y. [1.3, 10.73]
+
+**Step 4.** The square on this whole exceeds the square on its annex by the square on z, which is incommensurable in length with the whole. Also, neither the whole nor the annex is commensurable in length with g. Therefore, by the definition, a is a sixth apotome. Thus the sixth apotome has been found. [D10.3.4, D10.3.6]
+
+**USED:** 1.3, 10.36, 10.53, 10.73, D10.2.4, D10.2.6, D10.3.4, D10.3.6
+**Human refs (from References field):** 10.6, 10.73, 10.9, 5.19, 5.22, D10.3.6
+**Jaccard:** 0.167 — AI adds ['1.3', '10.36', '10.53', 'D10.2.4', 'D10.2.6', 'D10.3.4']; Human adds ['10.6', '10.9', '5.19', '5.22']
+
+## Proposition 10.91
+**Statement:** If an area be contained by a rational straight line and a first apotome, the âsideâ of the area is an apotome.
+
+**Step 1.** Let r be the rational straight line set out, and write the first apotome as a−b, where a>b. Thus a and b are rational straight lines commensurable in square only. Moreover, a is commensurable in length with r, and a²−b²=c² for some straight line c commensurable in length with a. These are precisely the apotome and first-apotome conditions. Juxtaposition below denotes a rectangle, and a superscript 2 denotes a square. [10.73, D10.3.1]
+
+**Step 2.** Bisect b, putting h=b/2; then h²=b²/4. Since b<a, this area is smaller than the square on half of a. Apply to a a rectangle equal to h² and deficient by a square. If u and v are the resulting parts of a, then
+u+v=a, uv=h².
+The parts are unequal, since equality would give a=b; name them so that u>v. Use the commensurable-division direction of 10.17: it applies directly because the first-apotome condition gives a²−b²=c² with c commensurable with a. Consequently u and v are commensurable in length. [1.10, 2.4, 6.28, 10.17]
+
+**Step 3.** Since u and v are commensurable, each is commensurable with their sum a, and hence with r. They are therefore rational, and the rectangles ru and rv are rational. Construct straight lines x and y such that
+x²=ru, y²=rv.
+Their squares are both commensurable with the rational square on r, hence with one another. Thus x and y are rational and commensurable in square; also x>y because u>v. [10.15, 10.12, D10.1.3, 10.19, 2.14, D10.1.4]
+
+**Step 4.** Rectangles under the same height are proportional to their bases. Therefore, using h²=uv,
+x²:y²=ru:rv=u:v=u²:uv=u²:h².
+Since proportional squares have proportional sides, it follows that
+x:y=u:h. [6.1, 6.22]
+
+**Step 5.** Again by the ratios of rectangles under the same height,
+x²:xy=x:y=u:h=ru:rh.
+But x²=ru. Magnitudes to which the same magnitude has the same ratio are equal; hence
+xy=rh, and therefore 2xy=rb. [6.1, 5.9, 2.1]
+
+**Step 6.** The line u is commensurable with a, whereas a is incommensurable in length with b. Thus u is incommensurable in length with b. Since b=2h, the lines b and h are commensurable, so u is also incommensurable in length with h. The proportion x:y=u:h now implies that x and y are incommensurable in length. Together with Step 3, this proves that x and y are rational straight lines commensurable in square only. [D10.1.1, 10.13, 10.11]
+
+**Step 7.** By the square identity for a line cut into two parts, and by addition of rectangles,
+(x−y)²=x²+y²−2xy
+=ru+rv−rb
+=r(u+v)−rb
+=ra−rb
+=r(a−b).
+Thus x−y is the side of the given area. Since it is obtained by subtracting the rational straight line y from the rational straight line x, and these are commensurable in square only, x−y is an apotome. Therefore the side of an area contained by a rational straight line and a first apotome is an apotome. [2.7, 2.1, 10.73]
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.73, 2.1, 2.14, 2.4, 2.7, 5.9, 6.1, 6.22, 6.28, D10.1.1, D10.1.3, D10.1.4, D10.3.1
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.53, 10.73, 5.11, 6.1, 6.17, 6.26, D10.3.1
+**Jaccard:** 0.360 — AI adds ['1.10', '2.1', '2.14', '2.4', '2.7', '5.9', '6.22', '6.28', 'D10.1.1', 'D10.1.3', 'D10.1.4']; Human adds ['10.21', '10.53', '5.11', '6.17', '6.26']
+
+## Proposition 10.92
+**Statement:** If an area be contained by a rational straight line and a second apotome, the âsideâ of the area is a first apotome of a medial straight line.
+
+**Step 1.** Let r be the given rational straight line, and write the second apotome as a−b, where a is its whole and b its annex. Thus a>b; a and b are rational and commensurable in square only; b is commensurable in length with r; and a²−b²=c² for a straight line c commensurable in length with a. Here products denote rectangles and squares denote square areas. [10.73, D10.3.2]
+
+**Step 2.** Put h=b/2. Apply to a a rectangle equal to h² and deficient by a square. This is possible because h² is less than the square on a/2. The resulting parts p,q of a satisfy
+p+q=a,   pq=h².
+By the commensurable-excess direction of 10.17, p and q are commensurable in length; consequently each is commensurable with their sum a. We choose p>q, since equality would imply a=b. This direction of 10.17 is the natural choice because its excess-square hypothesis is supplied directly by the second-apotome definition. [6.28, 10.17, 10.15]
+
+**Step 3.** Since p and q are commensurable in length with the rational line a, their squares are commensurable with a², and therefore with the rational reference square. Hence p and q are rational. Moreover, a is incommensurable in length with r: otherwise its incommensurability with b would contradict the commensurability of b with r. Since p and q are commensurable with a, each is likewise incommensurable in length with r. Thus r,p and r,q are pairs of rational straight lines commensurable in square only. [10.9, 10.6, 10.12, D10.1.3, 10.13]
+
+**Step 4.** Construct straight lines x,y whose squares equal the rectangles rp,rq respectively:
+x²=rp,   y²=rq.
+Both x and y are medial by 10.21, and x>y. Further,
+x²:y²=rp:rq=p:q.
+Since p and q are commensurable, x² and y² are commensurable. Thus x and y are commensurable in square. [2.14, 10.21, 6.1, 10.11, D10.1.2]
+
+**Step 5.** We show that xy=rh. Since pq=h², the same-height rectangle ratios give
+p²:h²=p²:pq=p:q=x²:y².
+The proportionality of these squares implies x:y=p:h, and alternation gives x:p=y:h. But x²=rp also gives x:p=r:x. Hence r:x=y:h, so the rectangle xy equals rh. [6.1, 6.22, 5.16, 6.16]
+
+**Step 6.** Since h=b/2 is commensurable in length with r, the rectangle rh is rational. Therefore xy is rational. If x and y were commensurable in length, their rectangle would instead be medial, since both are medial straight lines. This is impossible, because medial areas are irrational. Hence x and y are incommensurable in length and, by Step 4, commensurable in square only. [10.19, 10.24, 10.21]
+
+**Step 7.** The square on their difference is
+(x−y)²=x²+y²−2xy
+=rp+rq−2rh
+=r(p+q)−rb
+=r(a−b).
+Thus x−y is the side of the given area. The square identity is 2.7, and the additions and subtraction of rectangles follow from 2.1. [2.7, 2.1]
+
+**Step 8.** We have obtained x−y by subtracting from a medial straight line another medial straight line commensurable with it in square only, the two containing a rational rectangle. Therefore x−y is a first apotome of a medial straight line. Since its square equals the area contained by r and the second apotome a−b, the required conclusion follows. [10.74]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.19, 10.21, 10.24, 10.6, 10.73, 10.74, 10.9, 2.1, 2.14, 2.7, 5.16, 6.1, 6.16, 6.22, 6.28, D10.1.2, D10.1.3, D10.3.2
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.19, 10.21, 10.73, 10.74, 5.11, 6.1, 6.17, 6.26, D10.3.2
+**Jaccard:** 0.385 — AI adds ['10.12', '10.24', '10.6', '10.9', '2.1', '2.14', '2.7', '5.16', '6.16', '6.22', '6.28', 'D10.1.2', 'D10.1.3']; Human adds ['5.11', '6.17', '6.26']
+
+## Proposition 10.93
+**Statement:** If an area be contained by a rational straight line and a third apotome, the âsideâ of the area is a second apotome of a medial straight line.
+
+**Step 1.** Write the given area as r(a−b), where r is the rational straight line set out and a−b is the third apotome, with whole a and annex b. Thus a and b are rational and commensurable in square only. Neither is commensurable in length with r, and a²−b²=c² for a straight line c commensurable in length with a. Here products denote rectangular areas. [10.73; D10.3.3]
+
+**Step 2.** Bisect b, calling its half h. Apply to a a rectangle equal to h² and deficient by a square; this is possible because h=b/2<a/2. Let its division of a give parts x>y>0, so that x+y=a and xy=h². We use the commensurable-parts direction of 10.17: it is the natural direct choice because the defining condition of the third apotome supplies exactly its hypothesis a²−b²=c² with c commensurable with a. Hence x and y are commensurable in length, and their sum a is commensurable with each. [1.10; 6.28; 10.17; 10.15]
+
+**Step 3.** The lines x and y are rational, as is h. Indeed, 10.9 and 10.6 show that commensurability in length implies commensurability of the squares. Since x and y are commensurable in length with the rational line a, and h with the rational line b, transitivity of commensurability and the definition of rational straight lines give the assertion. Moreover, x and y are incommensurable in length with r because a is; likewise h is incommensurable in length with r because b is. [10.9; 10.6; 10.12; D10.1.3; 10.13]
+
+**Step 4.** Construct straight lines u and v whose squares equal rx and ry respectively. Since r is commensurable in square only with each of x and y, both u and v are medial straight lines. For the same reason, rh is a medial area. [2.14; 10.21]
+
+**Step 5.** Rectangles of equal height give
+u²:v²=rx:ry=x:y.
+Since x and y are commensurable, u² and v² are commensurable; thus u and v are commensurable in square. Furthermore, because h²=xy,
+x²:h²=x²:xy=x:y=u²:v².
+The converse concerning similarly described figures therefore gives u:v=x:h. [6.1; 10.11; D10.1.2; 6.22]
+
+**Step 6.** The lines x and h are incommensurable in length. Otherwise, since a is commensurable with x and b with h, transitivity would make a and b commensurable in length, contrary to Step 1. Consequently u and v are incommensurable in length, because u:v=x:h. Together with Step 5, this proves that u and v are commensurable in square only. [10.12; 10.11]
+
+**Step 7.** From u²=rx, the mean-proportional relation gives u:x=r:u. Combining this with x:h=u:v, ex aequali gives u:h=r:v. Hence the rectangle uv equals rh. By Step 4, therefore, u and v contain a medial rectangle. [6.17; 5.22; 6.16]
+
+**Step 8.** Since x>y, we have u>v. The square on their difference is
+(u−v)²=u²+v²−2uv=rx+ry−2rh=r(a−b),
+using x+y=a and 2h=b. Thus u−v is the side of the given area. But u and v are medial straight lines commensurable in square only and containing a medial rectangle; their difference is therefore a second apotome of a medial straight line. Hence the side of an area contained by a rational straight line and a third apotome is a second apotome of a medial straight line. [2.7; 2.1; 10.75]
+
+**USED:** 1.10, 10.11, 10.12, 10.13, 10.15, 10.17, 10.21, 10.6, 10.73, 10.75, 10.9, 2.1, 2.14, 2.7, 5.22, 6.1, 6.16, 6.17, 6.22, 6.28, D10.1.2, D10.1.3, D10.3.3
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.21, 10.75, 5.11, 6.1, 6.17, 6.26, D10.3.3
+**Jaccard:** 0.360 — AI adds ['1.10', '10.12', '10.6', '10.73', '10.9', '2.1', '2.14', '2.7', '5.22', '6.16', '6.22', '6.28', 'D10.1.2', 'D10.1.3']; Human adds ['5.11', '6.26']
+
+## Proposition 10.94
+**Statement:** If an area be contained by a rational straight line and a fourth apotome, the âsideâ of the area is minor.
+
+**Step 1.** Let r be the rational straight line, and write the fourth apotome as a−b, where a>b. By the definition of an apotome, a and b are rational straight lines commensurable in square only. Since the apotome is fourth, a is commensurable in length with r, and a²−b² is the square on a straight line incommensurable in length with a. Products below denote rectangle areas, and squares denote the corresponding square areas. [10.73; D10.3.4]
+
+**Step 2.** Apply to a a rectangle equal to the square on b/2 and deficient by a square. This is possible because b<a, so (b/2)²<(a/2)². Let the resulting parts of a be u and v, named so that u>v. Then
+u+v=a,    uv=(b/2)².
+Use the converse direction of 10.18: it is the direct applicable criterion because the defining square-difference in Step 1 has a side incommensurable with a. It follows that u and v are incommensurable in length. [6.28; 10.18]
+
+**Step 3.** Construct straight lines x and y whose squares equal the rectangles ru and rv respectively. Thus x²=ru and y²=rv, with x>y. Rectangles of the same height are as their bases, so
+x²:y²=ru:rv=u:v.
+Consequently x² and y² are incommensurable, and x and y are incommensurable in square. Also,
+x²+y²=r(u+v)=ra,
+which is rational because r and a are rational and commensurable in length. [2.14; 6.1; 10.11; D10.1.2; 10.19]
+
+**Step 4.** Put h=b/2. Since b²=4h² and b² is commensurable with r², h² is also commensurable with r²; hence h is rational. Moreover, b is incommensurable in length with r, because b is incommensurable with a whereas a is commensurable with r. Therefore h is also incommensurable in length with r: a common measure of h and r would measure b=2h as well. Thus r and h are rational straight lines commensurable in square only, and the rectangle rh is medial. [10.12; D10.1.3; 10.13; 10.21]
+
+The equalities established in Steps 2–3 give
+(xy)²=x²y²=(ru)(rv)=r²uv=r²h²=(rh)².
+Since all these magnitudes are positive, xy=rh. Hence the rectangle contained by x and y is medial.
+
+**Step 5.** The square on the difference x−y is the sum of their squares less twice their rectangle. Therefore
+(x−y)²=x²+y²−2xy=ra−2rh=ra−rb=r(a−b).
+Thus x−y is the side of the given area. [2.7]
+
+**Step 6.** The straight lines x and y are incommensurable in square; their squares together form a rational area; and their rectangle is medial. Therefore their difference x−y is minor by 10.76. Since this difference is the side of the area contained by r and the fourth apotome a−b, the required side is minor. [10.76]
+
+**USED:** 10.11, 10.12, 10.13, 10.18, 10.19, 10.21, 10.73, 10.76, 2.14, 2.7, 6.1, 6.28, D10.1.2, D10.1.3, D10.3.4
+**Human refs (from References field):** 10.11, 10.18, 10.19, 10.21, 10.76, 5.11, 6.1, 6.17, 6.26, D10.3.4
+**Jaccard:** 0.389 — AI adds ['10.12', '10.13', '10.73', '2.14', '2.7', '6.28', 'D10.1.2', 'D10.1.3']; Human adds ['5.11', '6.17', '6.26']
+
+## Proposition 10.95
+**Statement:** If an area be contained by a rational straight line and a fifth apotome, the âsideâ of the area is a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let r be the given rational straight line, and write the fifth apotome, relative to r, as a−b, where a>b>0. Here uv denotes the rectangle contained by u,v, and u² the square on u. The lines a,b are rational and commensurable in square only; b is commensurable in length with r; and a²−b²=d², where d is incommensurable in length with a. [10.73, D10.3.4, D10.3.5]
+
+**Step 2.** Since r is commensurable in length with b, whereas a is incommensurable in length with b, a and r are incommensurable in length. They are rational, hence commensurable in square. Therefore ra is a medial area, while rb is a rational area. [10.13, D10.1.3, 10.21, 10.19]
+
+**Step 3.** Put h=b/2. Apply to a a rectangle equal to h² and deficient by a square. This is possible because h² is less than the square on half of a. Let the resulting parts of a be p,q, so that p+q=a and pq=h². We use the incommensurable case of X.18 directly, since its hypothesis is precisely the defining condition a²−b²=d² from Step 1. Thus p,q are incommensurable in length; label them so that p>q. [6.28, 10.18]
+
+**Step 4.** Construct squares with sides x,y equal respectively to rp,rq. Thus x²=rp and y²=rq, with x>y. Rectangles of the same height give x²:y²=p:q. Since p,q are incommensurable, x²,y² are incommensurable areas; consequently x,y are incommensurable in square. [2.14, 6.1, 10.11, D10.1.2]
+
+**Step 5.** We now show that twice xy equals rb. Because h²=pq, the same-height rectangle proportion gives
+p²:h²=p²:pq=p:q=x²:y².
+The converse proportion theorem for similar figures therefore gives x:y=p:h, and alternation gives x:p=y:h. Using the rectangle–proportion equivalence VI.16, x²=rp gives r:x=x:p. Hence r:x=y:h, and the same equivalence gives rh=xy. Since b=2h, it follows that 2xy=rb, which is rational by Step 2. [6.1, 6.22, 5.16, 6.16, 2.1]
+
+**Step 6.** By addition of the rectangles,
+x²+y²=rp+rq=r(p+q)=ra,
+which is medial by Step 2. Moreover, the square identity for a difference gives
+(x−y)²=x²+y²−2xy=ra−rb=r(a−b).
+Thus x−y is the side of the given area. [2.1, 2.7]
+
+**Step 7.** The lines x,y are incommensurable in square, the sum of their squares is medial, and twice their rectangle is rational. Therefore their difference x−y is, by X.77, the straight line called that which produces with a rational area a medial whole. Since x−y is the side of r(a−b), the proposition follows. [10.77]
+
+**USED:** 10.11, 10.13, 10.18, 10.19, 10.21, 10.73, 10.77, 2.1, 2.14, 2.7, 5.16, 6.1, 6.16, 6.22, 6.28, D10.1.2, D10.1.3, D10.3.4, D10.3.5
+**Human refs (from References field):** 10.18, 10.19, 10.21, 10.77, 6.26, D10.3.5
+**Jaccard:** 0.250 — AI adds ['10.11', '10.13', '10.73', '2.1', '2.14', '2.7', '5.16', '6.1', '6.16', '6.22', '6.28', 'D10.1.2', 'D10.1.3', 'D10.3.4']; Human adds ['6.26']
+
+## Proposition 10.96
+**Statement:** If an area be contained by a rational straight line and a sixth apotome, the âsideâ of the area is a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let r be the given rational straight line, set out for the apotome classification, and write the sixth apotome as a − b, where a > b. By the definition of an apotome, a and b are rational and commensurable in square only. By the sixth-apotome classification, neither is commensurable in length with r, and a² − b² = c² for a straight line c incommensurable in length with a. Throughout, st denotes the rectangle contained by s and t, and s² the square on s. [10.73, D10.3.4, D10.3.5, D10.3.6]
+
+**Step 2.** Put h = b/2. Apply to a a rectangle equal to h² and deficient by a square. This construction is possible because b < a, so h² is less than the square on half of a. It divides a into positive parts x and y, which we label so that x > y, satisfying
+x + y = a,   xy = h².
+Use the deficient-square division criterion of X.18: it directly matches the square-difference condition in Step 1 and shows that x and y are incommensurable in length. [6.28, 10.18]
+
+**Step 3.** Construct straight lines p and q such that
+p² = rx,   q² = ry.
+Then p > q. Since rectangles of the same height have the ratio of their bases,
+p² : q² = rx : ry = x : y.
+Thus p² and q² are incommensurable, and consequently p and q are incommensurable in square. [2.14, 6.1, 10.11, D10.1.2]
+
+**Step 4.** We show that twice the rectangle pq equals rb. Since xy = h², the same-height rectangle ratios give
+p² : q² = x : y = x² : xy = x² : h².
+The proportionality of these squares therefore gives p : q = x : h. Hence, again by the same-height rectangle ratios,
+p² : pq = p : q = x : h = rx : rh.
+As p² = rx, the equal antecedents have the same ratio to pq and rh; therefore pq = rh. Doubling gives
+2pq = 2rh = rb.
+[6.1, 6.22, 5.9, 2.1]
+
+**Step 5.** By addition of rectangles,
+p² + q² = rx + ry = r(x + y) = ra.
+Because r, a, and b are rational, their squares are commensurable with the assigned rational square and hence with one another. But neither a nor b is commensurable in length with r. Thus each of the pairs r, a and r, b is commensurable in square only. Accordingly, both ra and rb are medial areas. Therefore p² + q² and 2pq are medial areas. [2.1, D10.1.3, 10.12, 10.21]
+
+**Step 6.** Moreover,
+(p² + q²) : 2pq = ra : rb = a : b.
+Since a and b are incommensurable in length, the squares on p and q taken together are incommensurable with twice the rectangle pq. [6.1, 10.11]
+
+**Step 7.** The square-difference identity, applied to p and its part q, now gives
+(p − q)² = p² + q² − 2pq = ra − rb = r(a − b).
+Thus p − q is the side of the given area. [2.7, 2.1]
+
+**Step 8.** We have subtracted q from p, where p and q are incommensurable in square; their combined squares are medial, twice their rectangle is medial, and these two areas are incommensurable. By X.78, their difference p − q is the irrational straight line called that which produces with a medial area a medial whole. Since this difference is the side of the area contained by r and the sixth apotome a − b, the proposition follows. [10.78]
+
+**USED:** 10.11, 10.12, 10.18, 10.21, 10.73, 10.78, 2.1, 2.14, 2.7, 5.9, 6.1, 6.22, 6.28, D10.1.2, D10.1.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.18, 10.21, 10.78, 6.1, 6.26, D10.3.6
+**Jaccard:** 0.316 — AI adds ['10.12', '10.73', '2.1', '2.14', '2.7', '5.9', '6.22', '6.28', 'D10.1.2', 'D10.1.3', 'D10.3.4', 'D10.3.5']; Human adds ['6.26']
+
+## Proposition 10.97
+**Statement:** The square on an apotome applied to a rational straight line produces as breadth a first apotome.
+
+**Step 1.** Let s be the given apotome, r the given rational straight line, and w the breadth obtained by applying the square on s to r; thus rw = s². Write s = a − b, where a > b and a, b are rational straight lines commensurable in square only. This is the constitution of an apotome. We shall construct the whole and annex of w and verify the defining conditions directly. [10.73]
+
+**Step 2.** Construct straight lines p, q, t such that
+rp = a², rq = b², rt = ab.
+These constructions are obtained by fourth proportionals and the equality between rectangles expressed by a proportion. [6.12, 6.16]
+The squares a² and b² are rational areas, so p and q are rational and commensurable in length with r. [D10.1.3, D10.1.4, 10.20]
+Since a and b are rational and commensurable in square only, ab is the square on a medial straight line. Its application to r therefore gives t rational and incommensurable in length with r. [10.21, 10.22]
+
+**Step 3.** Put C = p + q and D = 2t. Since p and q are each commensurable in length with r, they are commensurable with one another. Their sum C is commensurable with p, and consequently with r; hence C is rational. [10.12, 10.15, D10.1.3]
+
+**Step 4.** The square on D is four times the square on t. Since t is rational, D is also rational. [2.4, D10.1.3, D10.1.4]
+Moreover, D is commensurable in length with t. Because t is incommensurable in length with r, whereas C is commensurable in length with r, t is incommensurable in length with C; consequently D is incommensurable in length with C. [10.15, 10.13]
+But C and D, being rational, have commensurable squares. Thus C and D are commensurable in square only. [D10.1.3, 10.12]
+
+**Step 5.** Distributing the rectangles over the sums gives rC = a² + b² and rD = 2ab. The square identity for the difference a − b gives
+a² + b² = 2ab + (a − b)².
+Hence rC = rD + s², so C > D and r(C − D) = s² = rw. Equal rectangles on the same straight line have equal breadths; therefore w = C − D. Since C and D are rational and commensurable in square only, w is an apotome with whole C and annex D. [2.1, 2.7, 6.1, 10.73]
+
+**Step 6.** Rectangles under the same height are proportional to their bases. Accordingly,
+p : t = a² : ab = a : b,
+and
+t : q = ab : b² = a : b.
+Thus p : t = t : q, and therefore pq = t². [6.1, 5.11, 6.17]
+
+**Step 7.** Since D = 2t, the rectangle pq is the fourth part of the square on D. Applied to C = p + q with breadth q, this rectangle is deficient by the square q²: indeed Cq = pq + q². It divides C into the commensurable parts p and q. [2.4, 2.1; Step 3]
+Use the direct square-deficiency criterion here, since precisely its required commensurable division is already available. It follows that the square on C exceeds the square on D by the square on a straight line commensurable in length with C. [10.17]
+
+**Step 8.** The breadth w is therefore an apotome whose whole C is commensurable in length with the rational straight line r, and whose whole square exceeds its annex square by the square on a straight line commensurable in length with C. By definition, w is a first apotome. Thus the square on an apotome, applied to a rational straight line, produces as breadth a first apotome. [D10.3.1]
+
+**USED:** 10.12, 10.13, 10.15, 10.17, 10.20, 10.21, 10.22, 10.73, 2.1, 2.4, 2.7, 5.11, 6.1, 6.12, 6.16, 6.17, D10.1.3, D10.1.4, D10.3.1
+**Human refs (from References field):** 10.11, 10.17, 10.20, 10.22, 10.73, 2.7, 6.1, 6.17, D10.3.1
+**Jaccard:** 0.400 — AI adds ['10.12', '10.13', '10.15', '10.21', '2.1', '2.4', '5.11', '6.12', '6.16', 'D10.1.3', 'D10.1.4']; Human adds ['10.11']
+
+## Proposition 10.98
+**Statement:** The square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome.
+
+**Step 1.** Let r be the rational straight line to which the square is applied. Let the given first apotome of a medial straight line be a−b, where a>b. By its defining property, a and b are medial, their squares are commensurable, and the rectangle ab is rational. We take the direct route: apply the two constituent squares and twice their rectangle separately to r. [10.74]
+
+**Step 2.** Apply these three areas rectangularly to r, obtaining breadths p, q, and t such that
+rp=a², rq=b², and rt=2ab.
+These applications can be made by applying triangular decompositions of the areas. Put W=p+q. By the square-difference identity,
+(a−b)²=a²+b²−2ab=r(W−t).
+Consequently W>t, and the breadth whose classification is required is W−t. [1.44, 2.7, 6.1]
+
+**Step 3.** Since a and b are medial, p and q are rational straight lines, each incommensurable in length with r. Moreover,
+p:q=a²:b².
+The squares on a and b are commensurable; therefore p and q are commensurable in length. [10.22, D10.1.2, 6.1, 10.11]
+
+**Step 4.** Since p and q are commensurable, W=p+q is commensurable in length with p. The squares on W and p consequently have the ratio of a square number to a square number, and hence are commensurable. Since p is rational, W is therefore rational also. But p is incommensurable in length with r, so W, being commensurable with p, is likewise incommensurable in length with r. [10.15, 10.9, 10.6, 10.12, D10.1.3, 10.13]
+
+**Step 5.** The area ab is rational, and doubling it preserves commensurability with the assigned rational square; thus 2ab is rational. Its application to r therefore gives t rational and commensurable in length with r. Since W is incommensurable in length with r, W and t are incommensurable in length. Being rational straight lines, however, they are commensurable in square. Hence W−t is an apotome, with whole W and annex t. [D10.1.4, 10.15, 10.12, 10.20, 10.13, D10.1.3, 10.73]
+
+**Step 6.** Set s=t/2, so that rs=ab. Comparing rectangles of equal height gives
+p:s=a²:ab=a:b,
+and
+s:q=ab:b²=a:b.
+Thus p:s=s:q, and consequently pq=s²=t²/4. [6.1, 6.17]
+
+Now W=p+q. The rectangle with sides p and q, applied to W with height q, is deficient by the square on q; it divides W into the commensurable parts p and q. Its area is one-quarter of the square on t. We therefore use 10.17 directly, since its commensurable-subdivision hypothesis has already been established. It follows that the square on W exceeds the square on t by the square on a straight line commensurable in length with W. [10.17]
+
+**Step 7.** The breadth W−t is thus an apotome whose annex t is commensurable in length with the rational straight line r, and whose whole-square exceeds its annex-square by the square on a straight line commensurable with the whole. By definition, it is a second apotome. Since r(W−t)=(a−b)², the square on the given first apotome of a medial straight line, applied to r, produces a second apotome as breadth, as required. [D10.3.2]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.15, 10.17, 10.20, 10.22, 10.6, 10.73, 10.74, 10.9, 2.7, 6.1, 6.17, D10.1.2, D10.1.3, D10.1.4, D10.3.2
+**Human refs (from References field):** 10.11, 10.15, 10.17, 10.20, 10.22, 10.23, 10.73, 10.74, 2.7, 5.11, 6.1, 6.17, D10.3.2
+**Jaccard:** 0.524 — AI adds ['1.44', '10.12', '10.13', '10.6', '10.9', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.23', '5.11']
+
+## Proposition 10.99
+**Statement:** The square on a second apotome of a medial straight line applied to a rational straight line produces as breadth a third apotome.
+
+**Step 1.** Let s be the given second apotome of a medial straight line. By 10.75, write s=u−v, where u>v are medial straight lines commensurable in square only, and the rectangle uv is medial. Thus u² and v² are commensurable areas, while u and v are incommensurable in length. Let r be the rational straight line to which s² is applied, taking r as the rational straight line set out. [10.75, D10.1.2]
+
+**Step 2.** Apply the areas u², v², and uv to r, obtaining breadths a, b, and t respectively, so that
+ra=u², rb=v², rt=uv.
+Each of these areas is the square on a medial straight line. Consequently a, b, and t are rational straight lines, each incommensurable in length with r. Put p=a+b and q=2t. [10.22]
+
+**Step 3.** Rectangles having the same height are proportional to their bases, so a:b=u²:v². Since u² and v² are commensurable, a and b are commensurable in length. Therefore p=a+b is commensurable in length with a. Likewise q=t+t is commensurable in length with t. [6.1, 10.11, 10.15]
+
+**Step 4.** Length commensurability implies commensurability of the squares: by 10.9 their ratio is a ratio of square numbers, and hence they are commensurable by 10.6. Thus p² is commensurable with a², and q² with t². Since a and t are rational, transitivity of commensurability shows that p and q are rational also, and that their squares are commensurable with one another. Moreover, because p is commensurable in length with a and q with t, while a and t are each incommensurable in length with r, neither p nor q is commensurable in length with r. [10.9, 10.6, 10.12, D10.1.3, 10.13]
+
+**Step 5.** Again, by comparing rectangles of equal height,
+a:t=u²:uv=u:v.
+Since u and v are incommensurable in length, a and t are incommensurable in length. Transferring this incommensurability first from a to p, and then from t to q, shows that p and q are incommensurable in length. Together with Step 4, this proves that p and q are commensurable in square only. [6.1, 10.11, 10.13, D10.1.2]
+
+**Step 6.** Applied to the division u=v+s, 2.7 gives
+u²+v²=2uv+s².
+Substituting the applied rectangles yields r(a+b)=2rt+s², and therefore
+r(p−q)=s².
+In particular p>q, and the required breadth is p−q. Since p and q are rational and commensurable in square only, p−q is an apotome. [2.7, 10.73]
+
+**Step 7.** It remains to establish the defining square-difference condition. We use 10.17 directly because the commensurable division p=a+b is already available. Equal-height rectangle ratios give
+a:t=u:v=t:b;
+hence a:t=t:b, and therefore ab=t². Since q=2t, the rectangle ab equals the fourth part of q². This rectangle is applied to p=a+b with height b, deficient by the square b², and it divides p into the commensurable lengths a and b. As p>q, 10.17 therefore shows that p² exceeds q² by the square on a straight line commensurable in length with p. [6.1, 5.11, 6.17, 10.17]
+
+**Step 8.** The breadth p−q is thus an apotome whose whole p and annex q are both incommensurable in length with the rational straight line r set out, and whose whole square exceeds its annex square by the square on a straight line commensurable with the whole. By the definition, it is a third apotome. Therefore the square on a second apotome of a medial straight line, applied to a rational straight line, produces as breadth a third apotome. [D10.3.3]
+
+**USED:** 10.11, 10.12, 10.13, 10.15, 10.17, 10.22, 10.6, 10.73, 10.75, 10.9, 2.7, 5.11, 6.1, 6.17, D10.1.2, D10.1.3, D10.3.3
+**Human refs (from References field):** 10.11, 10.13, 10.15, 10.17, 10.22, 10.23, 10.73, 10.75, 2.7, 5.11, 6.1, D10.3.3
+**Jaccard:** 0.611 — AI adds ['10.12', '10.6', '10.9', '6.17', 'D10.1.2', 'D10.1.3']; Human adds ['10.23']
+
+## Proposition 10.100
+**Statement:** The square on a minor straight line applied to a rational straight line produces as breadth a fourth apotome.
+
+**Step 1.** Let m be a minor straight line, and let r be the rational straight line to which its square is applied. By the definition of a minor, write m = a − b, where a > b, the squares a² and b² are incommensurable, a² + b² is rational, and the rectangle ab is medial. Here products denote rectangles and superscript 2 denotes squares. [10.76, D10.1.2]
+
+**Step 2.** Apply a², b², and ab to r, obtaining breadths p, q, and t respectively. These applications can be made by dividing the areas into triangles and repeatedly applying them in right angles. Thus rp = a², rq = b², and rt = ab. Put u = p + q and v = 2t. By the square identity for the division a = b + m,
+ru = a² + b² = 2ab + m² = rv + m².
+Consequently u > v and r(u − v) = m². The breadth whose classification is required is therefore u − v. [1.44, 2.7, 6.1]
+
+**Step 3.** Since ru = a² + b² is rational, u is rational and commensurable in length with r. Since rt = ab is medial, t is rational and incommensurable in length with r. Moreover v² = (2t)² = 4t², so v is also rational: any area measuring t² and the assigned rational square also measures 4t². [10.20, 10.22, 2.4, D10.1.3]
+
+**Step 4.** The lines v and t are commensurable in length, so v is incommensurable in length with r. Since u is commensurable in length with r, u and v are incommensurable in length. But u and v are both rational, so their squares are commensurable with the assigned rational square and hence with one another. Thus u and v are commensurable in square only, and u − v is an apotome. [10.13, D10.1.3, 10.12, 10.73]
+
+**Step 5.** The rectangles rp and rq have the same height, whence
+p : q = a² : b².
+Since a² and b² are incommensurable, p and q are incommensurable in length. Thus the division u = p + q is into incommensurable parts. [6.1, 10.11]
+
+**Step 6.** Comparing rectangles of equal height gives
+p : t = a² : ab = a : b,
+and
+t : q = ab : b² = a : b.
+Therefore p : t = t : q, and consequently pq = t². Since v = 2t, this says that pq is the fourth part of v². [6.1, 5.11, 6.17, 2.4]
+
+**Step 7.** Apply the incommensurable-cut criterion directly, since the preceding construction supplies its required division. On u = p + q, the rectangle pq is applied with deficiency the square q²; its area is the fourth part of v², and its division of u is into the incommensurable parts p and q. Since u > v, it follows that u² exceeds v² by the square on a straight line d incommensurable in length with u. [10.18]
+
+**Step 8.** The apotome u − v therefore has whole u commensurable in length with the rational straight line r, while the square on its whole exceeds the square on its annex v by the square on a line incommensurable with its whole. By definition, u − v is a fourth apotome. Since r(u − v) = m², the square on a minor straight line, applied to a rational straight line, produces as breadth a fourth apotome. [D10.3.4]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.18, 10.20, 10.22, 10.73, 10.76, 2.4, 2.7, 5.11, 6.1, 6.17, D10.1.2, D10.1.3, D10.3.4
+**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.76, 2.7, 5.11, 6.1, 6.17, D10.3.4
+**Jaccard:** 0.647 — AI adds ['1.44', '10.12', '10.13', '2.4', 'D10.1.2', 'D10.1.3']
+
+## Proposition 10.101
+**Statement:** The square on the straight line which produces with a rational area a medial whole, if applied to a rational straight line, produces as breadth a fifth apotome.
+
+**Step 1.** Write xy for the rectangle contained by straight lines x and y, and x² for the square on x. Let c be the given straight line and r the rational straight line to which its square is applied. By the defining property of c, there are straight lines a>b such that c=a−b, the squares a² and b² are incommensurable, a²+b² is medial, and 2ab is rational. [10.77, D10.1.2]
+
+**Step 2.** Apply a², b², and 2ab to r, obtaining breadths p, q, and v respectively; such rectangular applications can be made by applying their triangular halves and doubling. Put u=p+q. Then
+rp=a², rq=b², rv=2ab, and ru=a²+b².
+By II.7, a²+b²=2ab+c². Consequently u>v and r(u−v)=c². Thus the breadth whose character must be established is u−v. [1.44, 2.1, 2.7, CN3, 6.1]
+
+**Step 3.** Since ru is medial, u is rational and incommensurable in length with r. Since rv is rational, v is rational and commensurable in length with r. Therefore u and v are incommensurable in length. Their squares, however, are commensurable, since both lines are rational. Hence u−v is an apotome, with whole u and annex v. [10.22, 10.20, 10.13, D10.1.3, 10.12, 10.73]
+
+**Step 4.** The rectangles rp and rq have the same height, so
+p:q=a²:b².
+Since a² and b² are incommensurable, p and q are incommensurable in length. [6.1, 10.11]
+
+**Step 5.** Let w be half of v. Then rw=ab. Comparing rectangles of equal height gives
+p:w=a²:ab=a:b,
+and
+w:q=ab:b²=a:b.
+Thus p:w=w:q, and consequently pq=w². The rectangle pq is therefore equal to one fourth of the square on v. [2.1, 6.1, 5.11, 6.17]
+
+**Step 6.** Since u=p+q, the rectangle pq, applied to u with height q, is deficient by the square q²: indeed, uq=pq+q². It is equal to one fourth of v² and divides u into the incommensurable parts p and q. We therefore use X.18 directly, since this is precisely the incommensurable division supplied by the original two squares. It follows that u² exceeds v² by the square on a straight line incommensurable in length with u. [2.1, 10.18]
+
+**Step 7.** The apotome u−v thus has its whole-square exceeding its annex-square by the square on a straight line incommensurable with the whole, while its annex v is commensurable in length with the rational straight line r set out. These are exactly the conditions defining a fifth apotome. Since r(u−v)=c², the square on the given straight line, applied to r, produces as breadth a fifth apotome, as required. [D10.3.4, D10.3.5]
+
+**USED:** 1.44, 10.11, 10.12, 10.13, 10.18, 10.20, 10.22, 10.73, 10.77, 2.1, 2.7, 5.11, 6.1, 6.17, CN3, D10.1.2, D10.1.3, D10.3.4, D10.3.5
+**Human refs (from References field):** 10.11, 10.18, 10.20, 10.22, 10.73, 10.77, 2.7, 6.1, D10.3.5
+**Jaccard:** 0.474 — AI adds ['1.44', '10.12', '10.13', '2.1', '5.11', '6.17', 'CN3', 'D10.1.2', 'D10.1.3', 'D10.3.4']
+
+## Proposition 10.102
+**Statement:** The square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome.
+
+**Step 1.** Let x be the given straight line, and let r be the rational straight line to which its square is applied. Write s² for the square on s and st for the rectangle contained by s and t. By the defining description in 10.78, there are straight lines a > b such that x = a − b, the areas a² and b² are incommensurable, and the areas S = a² + b² and T = 2ab are medial and incommensurable with one another. [10.78, D10.1.2]
+
+**Step 2.** By constructing fourth proportionals, choose straight lines p, q, h such that rp = a², rq = b², and rh = ab. Put u = p + q and v = 2h. Then ru = S and rv = T. By 2.7, S = T + (a − b)²; consequently u > v and r(u − v) = x². Thus the breadth whose character must be determined is u − v. [6.12, 6.16, 2.1, 2.7]
+
+**Step 3.** Since S and T are medial areas applied to the rational straight line r, both u and v are rational and incommensurable in length with r. Moreover, rectangles under the same height are as their bases, so u:v = S:T. Hence u and v are incommensurable in length. Being rational, their squares are commensurable with the square on the assigned rational straight line, and therefore with one another. Thus u and v are commensurable in square only, and u − v is an apotome, with whole u and annex v. [10.22, 6.1, 10.11, D10.1.3, 10.12, 10.73]
+
+**Step 4.** The equal-height rectangles rp and rq give p:q = a²:b². Since a² and b² are incommensurable, p and q are incommensurable in length. [6.1, 10.11]
+
+**Step 5.** Again, comparison of rectangles under the same height gives
+p:h = a²:ab = a:b,
+and
+h:q = ab:b² = a:b.
+Thus p:h = h:q, and consequently pq = h². Since v = 2h, the rectangle pq equals the fourth part of v². [6.1, 5.11, 6.17, 2.1]
+
+**Step 6.** Use the incommensurable-parts criterion of 10.18: it applies directly because the two original squares have supplied the division u = p + q. The rectangle pq is an area applied to u deficient by the square q², since uq = pq + q². By Step 5 its area is the fourth part of v², and by Step 4 its division of u is into incommensurable parts. Therefore 10.18 shows that u² exceeds v² by the square on a straight line incommensurable in length with u. [2.1, 10.18]
+
+**Step 7.** The apotome u − v therefore has its whole-square exceeding its annex-square by a square whose side is incommensurable with the whole. Furthermore, neither its whole u nor its annex v is commensurable in length with the rational straight line r, by Step 3. These are precisely the conditions for a sixth apotome. Since r(u − v) = x², the square on the given straight line, applied to r, produces a sixth apotome as breadth, as required. [D10.3.4, D10.3.5, D10.3.6]
+
+**USED:** 10.11, 10.12, 10.18, 10.22, 10.73, 10.78, 2.1, 2.7, 5.11, 6.1, 6.12, 6.16, 6.17, D10.1.2, D10.1.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.18, 10.22, 10.73, 10.78, 2.7, 6.1, D10.3.6
+**Jaccard:** 0.444 — AI adds ['10.12', '2.1', '5.11', '6.12', '6.16', '6.17', 'D10.1.2', 'D10.1.3', 'D10.3.4', 'D10.3.5']
+
+## Proposition 10.103
+**Statement:** A straight line commensurable in length with an apotome is an apotome and the same in order.
+
+**Step 1.** Let x be an apotome, and let y be commensurable in length with x. Fix the rational straight line r relative to which the order is determined. Write x = u − v, where u > v are rational straight lines commensurable in square only: u is the whole and v the annex (10.73; D10.1.3). We work directly with the whole and annex, since these supply the defining data of the order.
+
+**Step 2.** Construct a fourth proportional v′ such that x : y = v : v′, and put u′ = y + v′ (6.12). Since u = x + v, the theorem on sums of proportional magnitudes gives
+u : u′ = x : y = v : v′ (5.12).
+By alternation, therefore,
+u : v = u′ : v′ (5.16).
+
+**Step 3.** Since x and y are commensurable in length, the proportions in Step 2 imply that u and u′, and likewise v and v′, are commensurable in length (10.11). Their squares consequently have ratios of square numbers, and hence are commensurable areas (10.9, 10.6). Thus each corresponding pair is commensurable in square (D10.1.2). Because u and v are rational, their squares are commensurable with the square on r. Transitivity of commensurability now shows that the squares on u′ and v′ are also commensurable with the square on r, and with one another (10.12). Hence u′ and v′ are rational and commensurable in square (D10.1.3; D10.1.2).
+
+**Step 4.** The lines u and v are incommensurable in length. Since u : v = u′ : v′, the lines u′ and v′ are likewise incommensurable in length (10.11). They are therefore rational straight lines commensurable in square only. As u′ − v′ = y, it follows that y is an apotome (10.73).
+
+**Step 5.** Apply 10.14 directly to u : v = u′ : v′; this proposition addresses precisely the square-excess distinction used in the definitions of order. If the square on u exceeds the square on v by the square on a line commensurable with u, then the square on u′ exceeds the square on v′ by the square on a line commensurable with u′. If the former excess-side is incommensurable with u, the latter is incommensurable with u′ (10.14). Thus the square-excess condition is preserved.
+
+**Step 6.** Since u and u′ are commensurable in length, they are either both commensurable in length with r or both incommensurable with r. The same holds for v and v′ (10.12, 10.13). Consequently the status of the whole, the annex, or neither being commensurable in length with r is also preserved.
+
+**Step 7.** When the excess-side is commensurable with the whole, the first, second, and third orders are distinguished respectively by the whole, the annex, or neither being commensurable in length with r (D10.3.1–D10.3.3). When the excess-side is incommensurable with the whole, the same three alternatives distinguish the fourth, fifth, and sixth orders (D10.3.4–D10.3.6). Steps 5 and 6 preserve both defining distinctions. Therefore y is an apotome of the same order as x. Thus a straight line commensurable in length with an apotome is an apotome and the same in order.
+
+**USED:** 10.11, 10.12, 10.13, 10.14, 10.6, 10.73, 10.9, 5.12, 5.16, 6.12, D10.1.2, D10.1.3, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.12, 10.13, 10.14, 10.73, 5.12, 5.16, 6.12
+**Jaccard:** 0.444 — AI adds ['10.6', '10.9', 'D10.1.2', 'D10.1.3', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']
+
+## Proposition 10.104
+**Statement:** A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.
+
+**Step 1.** Let x be an apotome of a medial straight line, and let y be commensurable in length with x. By the defining descriptions, write x = u − v, where u > v are medial straight lines commensurable in square only. The rectangle uv is rational if x is a first apotome of a medial straight line, and medial if x is a second. We use these defining terms directly, tracking the order through the character of their rectangle. [10.74, 10.75]
+
+**Step 2.** Construct v′ so that x:y = v:v′, and put u′ = y + v′. The construction is possible by the fourth-proportional construction. Since u = x + v, addition of the proportional magnitudes gives
+u:u′ = (x + v):(y + v′) = x:y = v:v′.
+Also y = u′ − v′. [6.12, 5.12]
+
+**Step 3.** Since x and y are commensurable in length, these proportions show that u and u′, and likewise v and v′, are commensurable in length. Therefore u′ and v′ are medial, since each is commensurable with a medial straight line. [10.11, 10.23]
+
+**Step 4.** Alternating u:u′ = v:v′ gives u:v = u′:v′. Since u and v are incommensurable in length, so are u′ and v′. Applying the proportional-figures theorem directly to the squares gives
+u²:v² = (u′)²:(v′)².
+The squares on u and v are commensurable; hence the squares on u′ and v′ are also commensurable. Thus u′ and v′ are commensurable in square only. [5.16, 6.22, 10.11, D10.1.2]
+
+**Step 5.** Denote the rectangles uv, u′v, and u′v′ by R, T, and S, respectively. Rectangles under the same height are as their bases, so
+R:T = u:u′, and T:S = v:v′.
+The pairs of straight lines on the right are commensurable in length. Consequently R and T are commensurable, and T and S are commensurable; therefore R and S are commensurable. [6.1, 10.11, 10.12]
+
+**Step 6.** If x is of the first order, R is rational. Thus R is commensurable with the square on the assigned rational straight line. Since S is commensurable with R, it is commensurable with that same square and is therefore rational. [D10.1.4, 10.12]
+
+**Step 7.** If x is of the second order, R is medial and hence irrational: it is incommensurable with the square on the assigned rational straight line. Since S is commensurable with R, S is likewise incommensurable with that square and is irrational. But u′ and v′ are medial straight lines commensurable in square only, so their rectangle S is either rational or medial. Being irrational, S must therefore be medial. [10.21, D10.1.4, 10.13, 10.25]
+
+**Step 8.** We have expressed y as u′ − v′, with u′ and v′ medial and commensurable in square only. Their rectangle is rational when x is of the first order and medial when x is of the second. Accordingly, y is respectively a first or a second apotome of a medial straight line. Therefore a straight line commensurable with an apotome of a medial straight line is itself an apotome of a medial straight line and the same in order. [10.74, 10.75]
+
+**USED:** 10.11, 10.12, 10.13, 10.21, 10.23, 10.25, 10.74, 10.75, 5.12, 5.16, 6.1, 6.12, 6.22, D10.1.2, D10.1.4
+**Human refs (from References field):** 10.11, 10.13, 10.23, 10.74, 10.75, 5.12, 5.16, 6.12, D10.1.4
+**Jaccard:** 0.600 — AI adds ['10.12', '10.21', '10.25', '6.1', '6.22', 'D10.1.2']
+
+## Proposition 10.105
+**Statement:** A straight line commensurable with a minor straight line is minor.
+
+**Step 1.** Let a be a minor straight line, and let b be commensurable in length with a. Fix a rational straight line r. By VI.12 construct straight lines u and v such that r:a = a:u and r:b = b:v. By VI.17, the rectangle contained by r and u equals the square on a, and the rectangle contained by r and v equals the square on b. [6.12, 6.17]
+
+**Step 2.** Since a is minor, its square applied to the rational straight line r produces a fourth apotome as breadth. Thus u is a fourth apotome. We take this square-area route because it reduces the claim directly to preservation of the order of an apotome. [10.100]
+
+**Step 3.** Because a and b are commensurable in length, their squares have the ratio of a square number to a square number. The rectangles contained by r,u and by r,v have the same height r; hence their ratio is u:v. Consequently u:v is a ratio of numbers, so u and v are commensurable in length. Here VI.1 applies directly because the rectangles have a common height. [10.9, 6.1, 10.6]
+
+**Step 4.** A straight line commensurable in length with an apotome is an apotome of the same order. Since u is a fourth apotome, v is therefore also a fourth apotome. [10.103]
+
+**Step 5.** The square on b is the rectangle contained by the rational straight line r and the fourth apotome v. The side of such an area is minor; therefore b is minor. Thus a straight line commensurable with a minor straight line is minor. [10.94]
+
+**USED:** 10.100, 10.103, 10.6, 10.9, 10.94, 6.1, 6.12, 6.17
+**Human refs (from References field):** 10.11, 10.13, 10.23, 10.76, 5.12, 5.16, 5.18, 6.22, D10.1.4
+**Jaccard:** 0.000 — AI adds ['10.100', '10.103', '10.6', '10.9', '10.94', '6.1', '6.12', '6.17']; Human adds ['10.11', '10.13', '10.23', '10.76', '5.12', '5.16', '5.18', '6.22', 'D10.1.4']
+
+## Proposition 10.106
+**Statement:** A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let A be a straight line which produces with a rational area a medial whole, and let B be commensurable in length with A. Choose a rational straight line r. Apply the squares on A and B to r as rectangles, and call their respective breadths u and v. Thus the rectangle contained by r and u equals the square on A, and that contained by r and v equals the square on B. These applications are obtained by I.44, applied successively to the triangles composing each square. [1.44]
+
+**Step 2.** Since A produces with a rational area a medial whole, u is a fifth apotome. We take this direct fifth-apotome route because X.101 applies immediately to the given kind of straight line. [10.101]
+
+**Step 3.** Since A and B are commensurable in length, their squares have to one another the ratio of a square number to a square number. [10.9] But the two applied rectangles have the same height r, so their ratio is the ratio u:v. [6.1] Consequently u and v have to one another the ratio of a number to a number, and therefore are commensurable in length. [10.6]
+
+**Step 4.** A straight line commensurable in length with an apotome is an apotome of the same order. Since u is a fifth apotome, v is also a fifth apotome. [10.103]
+
+**Step 5.** The square on B is the rectangle contained by the rational straight line r and the fifth apotome v. The side of such an area is a straight line which produces with a rational area a medial whole. Hence B is a straight line which produces with a rational area a medial whole, as required. [10.95]
+
+**USED:** 1.44, 10.101, 10.103, 10.6, 10.9, 10.95, 6.1
+**Human refs (from References field):** 10.77
+**Jaccard:** 0.000 — AI adds ['1.44', '10.101', '10.103', '10.6', '10.9', '10.95', '6.1']; Human adds ['10.77']
+
+## Proposition 10.107
+**Statement:** A straight line commensurable with that which produces with a medial area a medial whole is itself also a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let a be a straight line which produces with a medial area a medial whole, and let b be commensurable in length with a. Choose a rational straight line r, and apply the squares on a and b to r as rectangles, calling their respective breadths x and y. Thus rectangle(r, x) equals the square on a, and rectangle(r, y) equals the square on b. These applications can be made by bisecting each square along its diagonal, applying one triangular half to r at a right angle, and adjoining a second equal rectangle. [1.34, 1.44]
+
+**Step 2.** We take the sixth-apotome route, because it is reached directly from the given kind of straight line: the square on a, applied to the rational straight line r, produces a sixth apotome as breadth. Therefore x is a sixth apotome. [10.102]
+
+**Step 3.** Since a and b are commensurable in length, their squares have to one another the ratio of a square number to a square number. The rectangles equal to these squares have the common height r, so their ratio is x : y. Consequently x and y have to one another the ratio of a number to a number, and hence are commensurable in length. [10.9, 6.1, 10.6]
+
+**Step 4.** A straight line commensurable in length with an apotome is itself an apotome of the same order. Since x is a sixth apotome and y is commensurable with it, y is also a sixth apotome. [10.103]
+
+**Step 5.** The area contained by the rational straight line r and the sixth apotome y has as its square-side a straight line which produces with a medial area a medial whole. But that area is the square on b, so its square-side is b. Therefore b is itself a straight line which produces with a medial area a medial whole, as required. [10.96]
+
+**USED:** 1.34, 1.44, 10.102, 10.103, 10.6, 10.9, 10.96, 6.1
+**Human refs (from References field):** 10.78
+**Jaccard:** 0.000 — AI adds ['1.34', '1.44', '10.102', '10.103', '10.6', '10.9', '10.96', '6.1']; Human adds ['10.78']
+
+## Proposition 10.108
+**Statement:** If from a rational area a medial area be subtracted, the âsideâ of the remaining area becomes one of two irrational straight lines, either an apotome or a minor straight line.
+
+**Step 1.** Let R be the rational area and M the medial area subtracted from it, with M<R. Construct a square a² equal to R by II.14. Its side a is rational by the definitions of rational lines and areas. For the apotome classification, take a itself as the rational straight line set out; this makes the first/fourth-apotome distinction directly applicable. [2.14, D10.1.3, D10.1.4]
+
+**Step 2.** Apply M to a, obtaining a rectangle ab=M. By X.22, b is rational and incommensurable in length with a. Since a and b are rational, their squares are commensurable with the square on the assigned rational line, and hence with one another by X.12. Thus a and b are commensurable in square only. Moreover, ab<a², so b<a. [10.22, D10.1.3, 10.12, D10.1.2]
+
+**Step 3.** Put d=a−b. By X.73, d is an apotome. Since a is divided into b and d, II.2 gives a²=ab+ad. Consequently the remaining area R−M equals ad. It remains to classify the side of this rectangle. [10.73, 2.2]
+
+**Step 4.** Construct a straight line c whose square equals the positive difference a²−b². The two exhaustive cases are that c is commensurable in length with a or that it is incommensurable in length with a. These are exactly the alternatives in the first- and fourth-apotome definitions, because the whole a is itself the rational line set out. [2.14, D10.3.1, D10.3.4]
+
+**Step 5.** If c is commensurable in length with a, then a² exceeds b² by the square on a line commensurable in length with the whole a. Hence d is a first apotome. The remaining area ad is therefore contained by a rational straight line and a first apotome, so its side is an apotome by X.91, and is irrational by X.73. [D10.3.1, 10.91, 10.73]
+
+**Step 6.** If c is incommensurable in length with a, then d is a fourth apotome. The remaining area ad is therefore contained by a rational straight line and a fourth apotome, so its side is minor by X.94, and is irrational by X.76. The two cases exhaust all possibilities. Thus the side of the area remaining when a medial area is subtracted from a rational area is either an apotome or a minor straight line, as required. [D10.3.4, 10.94, 10.76]
+
+**USED:** 10.12, 10.22, 10.73, 10.76, 10.91, 10.94, 2.14, 2.2, D10.1.2, D10.1.3, D10.1.4, D10.3.1, D10.3.4
+**Human refs (from References field):** 10.13, 10.20, 10.22, 10.73, 10.91, 10.94, D10.3.1, D10.3.4
+**Jaccard:** 0.400 — AI adds ['10.12', '10.76', '2.14', '2.2', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.13', '10.20']
+
+## Proposition 10.109
+**Statement:** If from a medial area a rational area be subtracted, there arise two other irrational straight lines, either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole.
+
+**Step 1.** Let M be the given medial area and Q the rational area subtracted from it, with M > Q. Set out the assigned rational straight line r, and apply both areas to r, obtaining breadths a and b respectively. By 10.22, a is rational and incommensurable in length with r; by 10.20, b is rational and commensurable in length with r. We use this common-base application to classify the breadth of the remaining area. [10.22, 10.20]
+
+**Step 2.** Since a and b are rational, their squares are each commensurable with the square on r, and therefore with one another. But a and b are incommensurable in length, because b is commensurable with r whereas a is incommensurable with r. Thus a and b are commensurable in square only. Also a > b, since their rectangles on the same base r have areas M > Q. Consequently c = a − b is an apotome, with whole a and annex b. [D10.1.3, 10.12, 10.13, 10.73]
+
+**Step 3.** By the division of rectangles, the remaining area M − Q is the rectangle contained by r and c. Let s be its square-side. Also let d be the side of a square equal to the excess of the square on a over the square on b; these squares can be constructed by 2.14. There are two exhaustive cases: d is either commensurable or incommensurable in length with a. [2.1, 2.14]
+
+**Step 4.** Suppose d is commensurable in length with a. The annex b is commensurable in length with the assigned rational line r, and the square on the whole a exceeds the square on the annex b by the square on d, which is commensurable with the whole. Hence c is a second apotome. Since M − Q is already expressed as the rectangle contained by a rational line and this second apotome, the direct area-to-side theorem 10.92 gives that s is a first apotome of a medial straight line. [D10.3.2, 10.92]
+
+**Step 5.** Suppose instead that d is incommensurable in length with a. The square on the whole now exceeds the square on the annex by the square on a line incommensurable with the whole, while the annex remains commensurable with r. Thus c is a fifth apotome, by the incommensurable-excess clause and its annex condition. Applying the corresponding direct area-to-side theorem, s is a straight line which produces with a rational area a medial whole. [D10.3.4, D10.3.5, 10.95]
+
+**Step 6.** These cases exhaust the possibilities. The first named kind is irrational by 10.74, and the second is irrational by 10.77. Therefore the square-side of the area remaining when a rational area is subtracted from a medial area is either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole, as required. [10.74, 10.77]
+
+**USED:** 10.12, 10.13, 10.20, 10.22, 10.73, 10.74, 10.77, 10.92, 10.95, 2.1, 2.14, D10.1.3, D10.3.2, D10.3.4, D10.3.5
+**Human refs (from References field):** 10.13, 10.73, 10.92, 10.95, D10.3.2, D10.3.5
+**Jaccard:** 0.400 — AI adds ['10.12', '10.20', '10.22', '10.74', '10.77', '2.1', '2.14', 'D10.1.3', 'D10.3.4']
+
+## Proposition 10.110
+**Statement:** If from a medial area there be subtracted a medial area incommensurable with the whole, the two remaining irrational straight lines arise, either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole.
+
+**Step 1.** Let M and N be medial areas, with N less than M and incommensurable with M. Fix the assigned rational straight line r. Apply the areas to r as rectangles, and denote their breadths by a and b, so that M = ra and N = rb. Such applications are obtained by applying triangular parts and adjoining the resulting rectangles. By 10.22, a and b are rational straight lines, each incommensurable in length with r. [1.44, 10.22]
+
+**Step 2.** Since rectangles of the same height are proportional to their bases, M:N = a:b. Therefore a > b, and a and b are incommensurable in length. But, being rational, their squares are each commensurable with the square on r, and hence with one another. Thus a and b are commensurable in square only. [6.1, 10.11, D10.1.3, 10.12]
+
+**Step 3.** Put c = a − b. By 10.73, c is an apotome, with whole a and annex b. Moreover, ra = rb + rc, so M − N = rc. Let x be the side of a square equal to this remaining area. The direct route is now to classify c and use the corresponding area-to-side theorem, since the remainder is already a rectangle with rational side r. [10.73, 2.1, CN3, 2.14]
+
+**Step 4.** Construct a straight line d whose square equals the excess of the square on a over the square on b. Thus a² = b² + d². The lines d and a are either commensurable or incommensurable in length; these are the two cases to consider. [2.14, D10.1.1]
+
+**Step 5.** Suppose first that d is commensurable in length with a. Neither the whole a nor the annex b is commensurable in length with the assigned rational line r, by Step 1. Since a² exceeds b² by the square on a line commensurable with a, c is therefore a third apotome. Consequently, the side x of the area rc is a second apotome of a medial straight line, which is irrational. [D10.3.3, 10.93, 10.75]
+
+**Step 6.** Suppose instead that d is incommensurable in length with a. The square on the whole then exceeds the square on the annex by the square on a line incommensurable with the whole; and neither the whole nor the annex is commensurable in length with r. Thus c is a sixth apotome. Consequently, the side x of the area rc is a straight line which produces with a medial area a medial whole, which is irrational. [D10.3.4, D10.3.6, 10.96, 10.78]
+
+**Step 7.** These cases exhaust the possibilities. Hence, when a medial area incommensurable with a medial whole is subtracted from it, the side of the remaining area is either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole, as required. [10.93, 10.96]
+
+**USED:** 1.44, 10.11, 10.12, 10.22, 10.73, 10.75, 10.78, 10.93, 10.96, 2.1, 2.14, 6.1, CN3, D10.1.1, D10.1.3, D10.3.3, D10.3.4, D10.3.6
+**Human refs (from References field):** 10.11, 10.22, 10.73, 10.93, 10.96, 6.1, D10.3.3, D10.3.6
+**Jaccard:** 0.444 — AI adds ['1.44', '10.12', '10.75', '10.78', '2.1', '2.14', 'CN3', 'D10.1.1', 'D10.1.3', 'D10.3.4']
+
+## Proposition 10.111
+**Statement:** The apotome is not the same with the binomial straight line.
+
+**Step 1.** Suppose that a straight line L is both an apotome and a binomial. We take the direct route through their defining decompositions. There are positive rational straight lines a>b and c,d such that
+L=a−b=c+d,
+where a,b are commensurable in square only, and c,d are commensurable in square only. Here u² denotes the square on u, and uv the rectangle contained by u,v. [10.73, 10.36]
+
+**Step 2.** The square identities for a difference and a sum give
+L²=a²+b²−2ab,
+L²=c²+d²+2cd.
+Consequently,
+(a²+b²)−(c²+d²)=2(ab+cd)>0. [2.7, 2.4]
+
+**Step 3.** Put R=ab+cd. Since a,b,c,d are rational, their squares are commensurable with the square on the assigned rational straight line. By commensurability with a common magnitude and the rule for adding commensurable magnitudes, both a²+b² and c²+d² are rational areas. Their positive difference 2R is likewise rational: the converse part of 10.15 makes the remainder commensurable with the subtracted area. Moreover, R is commensurable with 2R, since 2R is the sum of two equal copies of R. Thus R itself is a rational area. [D10.1.3, D10.1.4, 10.12, 10.15]
+
+**Step 4.** Because c,d are rational and commensurable in square only, the rectangle cd is medial. Apply this area to the rational straight line a, and let x be the resulting breadth, so that ax=cd. By the theorem on applying a medial area to a rational straight line, x is rational. [10.21, 10.22]
+
+**Step 5.** Let y=b+x. Distributing the rectangle gives
+ay=ab+ax=ab+cd=R.
+Thus y is the breadth obtained by applying the rational area R to the rational straight line a. Therefore y is rational and commensurable in length with a. [2.1, 10.20]
+
+**Step 6.** Since a is incommensurable in length with b but commensurable in length with y, y is incommensurable in length with b. Yet y and b are rational, so their squares are commensurable with the same assigned rational square, and hence with one another. Therefore y,b are commensurable in square only. We now use 10.73, which applies directly to their difference: because y>b, the remainder y−b=x is irrational. This contradicts the rationality of x established in Step 4. Consequently, the apotome is not the same with the binomial straight line. [10.13, D10.1.2, D10.1.3, 10.12, 10.73]
+
+**USED:** 10.12, 10.13, 10.15, 10.20, 10.21, 10.22, 10.36, 10.73, 2.1, 2.4, 2.7, D10.1.2, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.12, 10.13, 10.15, 10.60, 10.73, 10.97, D10.2.1, D10.3.1
+**Jaccard:** 0.222 — AI adds ['10.20', '10.21', '10.22', '10.36', '2.1', '2.4', '2.7', 'D10.1.2', 'D10.1.3', 'D10.1.4']; Human adds ['10.60', '10.97', 'D10.2.1', 'D10.3.1']
+
+## Proposition 10.112
+**Statement:** The square on a rational straight line applied to the binomial straight line produces as breadth an apotome the terms of which are commensurable with the terms of the binomial and moreover in the same ratio; and further the apotome so arising will have the same order as the binomial straight line.
+
+**Step 1.** Let u be the rational straight line set out, and let r be the rational straight line whose square is to be applied. Write the given binomial as a+b, where a>b. Its terms a and b are rational and commensurable in square only; hence a², b², and r² are each commensurable with u². We use the difference of the squares of the terms, because this route explicitly exhibits the two terms of the required breadth. Products below denote rectangles. [10.36, D10.1.2, D10.1.3]
+
+**Step 2.** Put Δ=a²−b². The squares a² and b² are commensurable with one another. Since a²=Δ+b², the converse part of 10.15 shows that Δ is commensurable with b². Consequently Δ is commensurable with r². There are therefore positive integers m,n such that r²:Δ=m:n. [10.12, 10.15, 10.5]
+
+**Step 3.** Form straight lines c=(m/n)a and d=(m/n)b, by taking prescribed parts and their multiples. Then c>d, and
+c:a=d:b=m:n.
+Thus c is commensurable in length with a, and d with b. Alternating the proportion also gives c:d=a:b. These are precisely the required commensurabilities and equality of ratios between corresponding terms. [6.9, 10.6, 5.16]
+
+**Step 4.** Apply 2.5 to a straight line of length 2a, bisected into lengths a,a and divided unequally into lengths a+b,a−b. It gives
+(a+b)(a−b)+b²=a²,
+so (a+b)(a−b)=Δ. By the additivity of rectangles, scaling the second side by m/n scales the rectangle by m/n. Hence
+(a+b)(c−d)=(m/n)(a+b)(a−b)=(m/n)Δ=r².
+Therefore c−d is the breadth produced by applying the square on r to the given binomial. [2.5, 2.1]
+
+**Step 5.** Since c and a are commensurable in length, their squares have the ratio of a square number to a square number and are therefore commensurable; likewise d² and b² are commensurable. It follows that c² and d² are each commensurable with u², so c and d are rational and commensurable in square. They cannot be commensurable in length: otherwise, using the commensurabilities of a with c and of d with b, transitivity would make a and b commensurable in length, contrary to Step 1. Thus c and d are rational straight lines commensurable in square only. Their difference c−d is consequently an apotome, with whole c and annex d. [10.9, 10.6, 10.12, D10.1.2, D10.1.3, 10.73]
+
+**Step 6.** It remains to check the order. Because a and c are commensurable in length, a is commensurable in length with u if and only if c is; similarly, b is commensurable in length with u if and only if d is. Moreover, a:b=c:d. We therefore use 10.14 directly, since this proportion has already been established: the square on a exceeds the square on b by the square on a straight line commensurable in length with a exactly when the corresponding square-difference for c,d has a side commensurable in length with c. The incommensurable cases likewise correspond. Thus both criteria determining the order are preserved. [10.12, 10.14]
+
+**Step 7.** If the side of the square-difference is commensurable with the greater term, commensurability with u of the greater term, the lesser term, or neither determines respectively orders one, two, and three, for both the binomial and the apotome. [D10.2.1, D10.2.2, D10.2.3, D10.3.1, D10.3.2, D10.3.3] If that side is incommensurable with the greater term, the same three alternatives determine respectively orders four, five, and six for both. [D10.2.4, D10.2.5, D10.2.6, D10.3.4, D10.3.5, D10.3.6] By Step 6 the corresponding alternatives agree. Hence the breadth is an apotome of the same order as the binomial, with its terms respectively commensurable with the binomial’s terms and in the same ratio, as required.
+
+**USED:** 10.12, 10.14, 10.15, 10.36, 10.5, 10.6, 10.73, 10.9, 2.1, 2.5, 5.16, 6.9, D10.1.2, D10.1.3, D10.2.1, D10.2.2, D10.2.3, D10.2.4, D10.2.5, D10.2.6, D10.3.1, D10.3.2, D10.3.3, D10.3.4, D10.3.5, D10.3.6
+**Human refs (from References field):** 10.11, 10.12, 10.14, 10.15, 10.20, 10.36, 10.73, 5.11, 5.12, 5.14, 5.16, 5.17, 6.16, 6.22, D5.9
+**Jaccard:** 0.171 — AI adds ['10.5', '10.6', '10.9', '2.1', '2.5', '6.9', 'D10.1.2', 'D10.1.3', 'D10.2.1', 'D10.2.2', 'D10.2.3', 'D10.2.4', 'D10.2.5', 'D10.2.6', 'D10.3.1', 'D10.3.2', 'D10.3.3', 'D10.3.4', 'D10.3.5', 'D10.3.6']; Human adds ['10.11', '10.20', '5.11', '5.12', '5.14', '5.17', '6.16', '6.22', 'D5.9']
+
+## Proposition 10.113
+**Statement:** The square on a rational straight line, if applied to an apotome, produces as, breadth the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio; and further the binomial so arising has the same order as the apotome.
+
+**Step 1.** Let the given apotome be p = a − b, where a > b are rational straight lines commensurable in square only; these are its whole and annex (10.73). Let r be the given rational straight line, and write Q = r². The conjugate sum s = a + b is binomial (10.36). We take the conjugate-sum route: first establish that the required breadth is commensurable with s, and then reverse the application to obtain the assertions about its terms and order.
+
+**Step 2.** Write uv for the rectangle contained by straight lines u and v. By 2.6, applied to a line of length 2b bisected and extended by p = a − b,
+
+ps + b² = a².
+
+Thus the rectangle T = ps is equal to the difference a² − b² (2.6).
+
+**Step 3.** Since a, b, and r are rational, their squares are commensurable with the square on the assigned rational straight line (D10.1.3). Hence a² and Q are each commensurable with b² (10.12). Now a² = b² + T; because this whole is commensurable with b², its two parts b² and T are commensurable (10.15). Consequently T and Q are commensurable with one another (10.12).
+
+**Step 4.** Let x be the breadth obtained by applying Q to p, so that px = Q. The rectangles px and ps have the same height p; therefore
+
+Q : T = x : s
+
+by 6.1. Since Q and T are commensurable, x and s are commensurable in length (10.11).
+
+**Step 5.** Since s is binomial, the straight line x, being commensurable with it in length, is also binomial (10.66). This theorem applies directly to the commensurability just obtained, without requiring a separate construction of the terms of x.
+
+**Step 6.** Regard the same rectangle px = Q as applied to the binomial x. Its breadth is precisely the original apotome p. Proposition 10.112 therefore says that the terms of p are commensurable with the corresponding terms of x and are in the same ratio, and that p and x have the same order. Equivalently, if x = c + d with c > d, then c is commensurable with a, d with b, and c : d = a : b; moreover, x has the same order as p (10.112).
+
+Thus the square on the rational straight line, applied to the given apotome, produces a binomial breadth whose corresponding terms are commensurable with those of the apotome and in the same ratio, and whose order is the same. This proves the proposition.
+
+**USED:** 10.11, 10.112, 10.12, 10.15, 10.36, 10.66, 10.73, 2.6, 6.1, D10.1.3
+**Human refs (from References field):** 10.11, 10.12, 10.14, 10.15, 10.20, 10.36, 10.73, 5.11, 5.14, 5.16, 5.19, 6.16, D10.1.3, D5.9
+**Jaccard:** 0.333 — AI adds ['10.112', '10.66', '2.6', '6.1']; Human adds ['10.14', '10.20', '5.11', '5.14', '5.16', '5.19', '6.16', 'D5.9']
+
+## Proposition 10.114
+**Statement:** If an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the âsideâ of the area is rational.
+
+**Step 1.** Write the given apotome as a = u − v and the given binomial as b = x + y, with corresponding terms ordered so that x is commensurable in length with u, y with v, and x:y = u:v. Let P be the rectangle contained by a and b. Choose the assigned rational straight line r, and let Q be its square. [D10.1.3]
+
+**Step 2.** Apply Q to a. By X.113, the resulting breadth is a binomial c = p + q whose corresponding terms are commensurable in length with u and v and satisfy p:q = u:v. Thus the rectangle contained by a and c equals Q. This is the direct route because X.113 keeps the given apotome fixed. [10.113]
+
+**Step 3.** Since x and p are both commensurable in length with u, they are commensurable with one another. Also, x:y and p:q are both equal to u:v, so x:y = p:q; alternately, x:p = y:q. [10.12; 5.11; 5.16]
+
+**Step 4.** From these equal ratios, the ratio of the sums equals the ratio of corresponding terms:
+(x + y):(p + q) = x:p.
+Hence b:c = x:p. Since x and p are commensurable, b and c are commensurable also. [5.12; 10.11]
+
+**Step 5.** The rectangles P and Q have the same height a and respective bases b and c. Therefore P:Q = b:c. Since b and c are commensurable, P and Q are commensurable. [6.1; 10.11]
+
+**Step 6.** Construct a square equal to P, and let s be its side. Its square is commensurable with Q, the square on the assigned rational straight line r. Thus s is commensurable in square with r and is therefore rational. Consequently, the “side” of the area contained by the given apotome and binomial is rational. [2.14; D10.1.2; D10.1.3]
+
+**USED:** 10.11, 10.113, 10.12, 2.14, 5.11, 5.12, 5.16, 6.1, D10.1.2, D10.1.3
+**Human refs (from References field):** 10.11, 10.112, 10.12, 5.19, 6.1
+**Jaccard:** 0.250 — AI adds ['10.113', '2.14', '5.11', '5.12', '5.16', 'D10.1.2', 'D10.1.3']; Human adds ['10.112', '5.19']
+
+## Proposition 10.115
+**Statement:** From a medial straight line there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding.
+
+**Step 1.** Fix the assigned rational straight line \(a\), and let \(x_0\) be the given medial straight line. Thus \(x_0\) is irrational. We choose successive mean proportionals, because applying each new square to \(a\) will return the preceding line. Given \(x_n\), construct \(x_{n+1}\) as the mean proportional between \(a\) and \(x_n\). Then
+\[
+ x_{n+1}^{\,2}=a\,x_n.
+\]
+Consequently, the square on \(x_{n+1}\), applied to \(a\), has breadth \(x_n\). This breadth is unique, since rectangles of the same height are proportional to their bases. The construction can be repeated any finite number of times. [D10.1.3, 10.21, 6.13, 6.17, 6.1]
+
+**Step 2.** The initial medial line \(x_0\) is neither a binomial nor an apotome. Indeed, its square applied to \(a\) produces a rational breadth. If \(x_0\) were binomial, that same application would produce a first binomial; if it were an apotome, it would produce a first apotome. Both such breadths are irrational, contradicting the rationality and uniqueness of the breadth. [10.22, 10.60, 10.97, 10.36, 10.73, 6.1]
+
+**Step 3.** Every \(x_n\) is irrational. This holds for \(x_0\). Suppose it holds for \(x_n\). If \(x_{n+1}\) were rational, its square would be a rational area. Applied to the rational line \(a\), that area would produce a rational breadth. But its breadth is \(x_n\), which is irrational. Hence \(x_{n+1}\) is irrational, and the assertion follows throughout the construction. [D10.1.3, D10.1.4, 10.20; Step 1]
+
+**Step 4.** No \(x_n\) with \(n\geq1\) is medial. For the square on a medial line, applied to \(a\), produces a rational breadth; whereas the square on \(x_n\) produces the irrational breadth \(x_{n-1}\). [10.22; Steps 1 and 3]
+
+**Step 5.** Nor does any \(x_n\), for \(n\geq1\), belong to any of the twelve other previously established irrational kinds. For each of the six additive kinds—binomial, first bimedial, second bimedial, major, side of a rational plus a medial area, and side of the sum of two medial areas—applying its square to a rational line produces a binomial. Moreover, applying the square on a binomial again produces a binomial. Thus, if \(x_n\) belonged to any of these six kinds, successive applications to \(a\), passing through \(x_{n-1},\ldots,x_0\), would make \(x_0\) binomial, contrary to Step 2. [10.60, 10.61, 10.62, 10.63, 10.64, 10.65]
+
+For each of the six subtractive kinds—apotome, first and second apotomes of a medial line, minor, and the lines producing respectively with a rational or a medial area a medial whole—the corresponding application produces an apotome. Applying the square on an apotome again produces an apotome. The same descent would therefore make \(x_0\) an apotome, again contrary to Step 2. [10.97, 10.98, 10.99, 10.100, 10.101, 10.102]
+
+**Step 6.** Finally, no two lines in the sequence are equal. Suppose \(x_j=x_i\), where \(j>i\). If \(i=0\), this contradicts Step 4 immediately. Otherwise, apply their equal squares to \(a\). Uniqueness of breadth gives \(x_{j-1}=x_{i-1}\). Repeating this \(i\) times gives \(x_{j-i}=x_0\), also impossible: \(j-i\geq1\), so Step 4 says that \(x_{j-i}\) is not medial, whereas \(x_0\) is medial. [6.1; Steps 1 and 4]
+
+The construction therefore yields infinitely many distinct irrational straight lines from the given medial line. None repeats an earlier line, and none belongs to any of the previously established irrational kinds. This proves the proposition.
+
+**USED:** 10.100, 10.101, 10.102, 10.20, 10.21, 10.22, 10.36, 10.60, 10.61, 10.62, 10.63, 10.64, 10.65, 10.73, 10.97, 10.98, 10.99, 6.1, 6.13, 6.17, D10.1.3, D10.1.4
+**Human refs (from References field):** 10.20, D10.1.4
+**Jaccard:** 0.091 — AI adds ['10.100', '10.101', '10.102', '10.21', '10.22', '10.36', '10.60', '10.61', '10.62', '10.63', '10.64', '10.65', '10.73', '10.97', '10.98', '10.99', '6.1', '6.13', '6.17', 'D10.1.3']

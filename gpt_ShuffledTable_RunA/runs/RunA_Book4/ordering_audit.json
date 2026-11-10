@@ -1,0 +1,1399 @@
+{
+  "completed_at": "2026-11-05T13:54:43.244591+00:00",
+  "expected_ids": [
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "4.9",
+    "4.10",
+    "4.11",
+    "4.12",
+    "4.13",
+    "4.14",
+    "4.15",
+    "4.16"
+  ],
+  "selected_attempts": {
+    "4.1": 0,
+    "4.2": 0,
+    "4.3": 0,
+    "4.4": 0,
+    "4.5": 0,
+    "4.6": 0,
+    "4.7": 0,
+    "4.8": 0,
+    "4.9": 0,
+    "4.10": 0,
+    "4.11": 0,
+    "4.12": 0,
+    "4.13": 0,
+    "4.14": 0,
+    "4.15": 0,
+    "4.16": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "4.1": [
+      {
+        "result": {
+          "prop_id": "4.1",
+          "proof": "**Step 1.** Let Γ be the given circle and let ℓ be the given straight line, not greater than its diameter. Find the centre O of Γ. Choose A on its circumference, join AO, and produce AO to meet the circumference again at B. Thus AB is a diameter. [3.1, P1, P2, D1.17]\n\n**Step 2.** If ℓ equals AB, then AB itself is the required straight line: its extremities lie on Γ. Otherwise ℓ is less than AB; cut off AD from AB, with D between A and B, so that AD equals ℓ. [D4.7, 1.3]\n\n**Step 3.** Describe an auxiliary circle with centre A and radius AD. This endpoint-centred construction gives the required length directly as a radius. A is inside the auxiliary circle, while B is outside it because AB is greater than AD; hence the semicircumference of Γ from A to B crosses the auxiliary circumference at a point C. [P3, D1.15]\n\n**Step 4.** Join AC. Since C and D lie on the auxiliary circle with centre A, AC equals AD. But AD equals ℓ; therefore AC equals ℓ. [P1, D1.15, CN1]\n\n**Step 5.** Both A and C lie on the circumference of Γ, so AC is fitted into Γ. Thus in either case a straight line equal to the given straight line has been fitted into the given circle, as required. [D4.7]",
+          "used": [
+            "3.1",
+            "P1",
+            "P2",
+            "D1.17",
+            "D4.7",
+            "1.3",
+            "P3",
+            "D1.15",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:39:29.570728+00:00",
+          "prompt_sha256": "2d9be4d2652d5ea90f845ceb5ddc5b85d65faa62978965c3b2ffce8452356277",
+          "resource_table_sha256": "cfdc476c88b50f9aa924b201bed664e42859afd87b303d1fce9356cd283b29e8",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abef-9d9e-7730-a52a-6425cbb6bcc3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abef-9d9e-7730-a52a-6425cbb6bcc3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-39-29-01a1abef-9d9e-7730-a52a-6425cbb6bcc3.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:40:40.680937+00:00",
+          "total_wall_time_seconds": 71.11
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.2": [
+      {
+        "result": {
+          "prop_id": "4.2",
+          "proof": "**Step 1.** Let Ω be the given circle and DEF the given triangle. We use the tangent–chord construction to obtain two of the required angles directly. Choose A on Ω and draw the tangent XAY at A, with A between X and Y. [3.17]\n\n**Step 2.** The angles of triangle DEF sum to two right angles, so ∠DEF + ∠DFE is less than two right angles. We use the angle-sum theorem here because it will also determine the third angle below. [1.32] On the side of XAY containing the circle, construct rays AB and AC such that\n∠YAB = ∠DFE and ∠XAC = ∠DEF. [1.23]\nProduce these rays to meet the circumference again at B and C, respectively. [P2] Since the two prescribed angles together are less than two right angles, the rays occur in the order AY, AB, AC, AX within that half-plane; in particular, B and C are distinct. [1.13, 1.32] Join BC. [P1]\n\n**Step 3.** The angle between the tangent AY and chord AB equals the angle in the alternate segment, namely ∠ACB. Consequently,\n∠ACB = ∠YAB = ∠DFE. [3.32, CN1]\n\n**Step 4.** Likewise, the angle between the tangent AX and chord AC equals the angle in the alternate segment, namely ∠ABC. Consequently,\n∠ABC = ∠XAC = ∠DEF. [3.32, CN1]\n\n**Step 5.** The angles of each of triangles ABC and DEF sum to two right angles. [1.32] The two angle equalities just established give equal sums; subtracting those equal sums from the equal totals yields\n∠BAC = ∠EDF. [CN2, CN3]\nThus ABC is equiangular with DEF. Since its three vertices A, B, and C lie on the circumference of Ω, it is inscribed in Ω. [D4.3] Therefore, in the given circle a triangle equiangular with the given triangle has been inscribed.",
+          "used": [
+            "3.17",
+            "1.32",
+            "1.23",
+            "P2",
+            "1.13",
+            "P1",
+            "3.32",
+            "CN1",
+            "CN2",
+            "CN3",
+            "D4.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:39:59.362817+00:00",
+          "prompt_sha256": "4009a840a6e141fd08e7b8959ed0419aef42b30a01d6d38e0975936eaf06284d",
+          "resource_table_sha256": "b4804ba7659f50ada533a07f173e6a8c71132f60b0c8fea6b419534d56934d9d",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf0-11dd-7930-8d50-fb5d7d373498",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf0-11dd-7930-8d50-fb5d7d373498",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-39-59-01a1abf0-11dd-7930-8d50-fb5d7d373498.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:42:39.009838+00:00",
+          "total_wall_time_seconds": 159.647
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.3": [
+      {
+        "result": {
+          "prop_id": "4.3",
+          "proof": "**Step 1.** Let the given circle be Γ and the given triangle be ABC. Write α, β, γ for its angles at A, B, C, and let R denote a right angle. By the angle-sum theorem, α + β + γ = 2R. Produce sides at A and B to obtain exterior angles α′ = 2R − α and β′ = 2R − β. Each of α′ and β′ is positive and less than 2R. [P2, P4, 1.13, 1.32, CN3]\n\n**Step 2.** Find the centre O of Γ, choose a point P on its circumference, and join OP. At O construct a ray OQ making angle α′ with OP, and, on the opposite side of OP, a ray OS making angle β′ with OP; let Q and S be their intersections with Γ. The three successive sectors between OP, OQ, OS have angles\n∠POQ = 2R − α,\n∠QOS = 4R − α′ − β′ = α + β = 2R − γ,\n∠SOP = 2R − β,\nwhere the middle sector does not contain OP. Thus all three sectors are positive and less than two right angles. [3.1, P1, P2, 1.23, 1.13, 1.32, CN2, CN3]\n\n**Step 3.** At P, Q, S erect straight lines p, q, s perpendicular to OP, OQ, OS respectively. Extend the radii through O to diameters. Each perpendicular falls outside Γ and meets it at its prescribed point, so each is a tangent. This is the direct choice of construction: the contact points are already fixed, and the perpendicular-to-diameter result applies immediately. [P2, 1.11, 3.16, D3.2]\n\n**Step 4.** Verify that the required intersections exist. Consider in turn the consecutive pairs (P,Q), (Q,S), and (S,P), writing U,V for the pair and θ for its central sector angle. Join UV. Since OU = OV, the base angles of triangle OUV are equal; call each b. Its angle sum gives 2b + θ = 2R, so b < R. On the side of UV opposite O, the angles made by UV with the tangents at U and V are each R − b. Their sum is therefore 2R − 2b = θ < 2R. Consequently those tangents meet on that side of UV. Denote p ∩ q by X, p ∩ s by Y, and q ∩ s by Z. [P1, D1.15, 1.5, 1.32, CN2, CN3, P5]\n\n**Step 5.** At each contact point, the other two contact radii lie on opposite sides of the line through that point and O, because each of the three consecutive central sectors is less than 2R. In the construction of Step 4, the tangent intersection for U,V lies on the ray of the tangent at U directed toward the side of OU containing V. Hence X and Y lie on opposite rays of p from P; X and Z lie on opposite rays of q from Q; and Y and Z lie on opposite rays of s from S. Thus P lies between X and Y, Q between X and Z, and S between Y and Z. The actual sides of triangle XYZ therefore touch Γ at P, Q, S respectively, so XYZ is circumscribed about Γ. [P5, 3.16, D3.2, D4.4]\n\n**Step 6.** In each tangent triangle considered in Step 4, the two angles at the contact points have sum θ. Its angle at the tangent intersection is consequently 2R − θ. Applying this to triangles XPQ, YPS, and ZQS, and using the betweenness established in Step 5, gives\n∠YXZ = 2R − ∠POQ = α,\n∠XYZ = 2R − ∠SOP = β,\n∠XZY = 2R − ∠QOS = γ.\nThus XYZ is equiangular with ABC and is circumscribed about the given circle, as required. [1.32, CN3, D4.4]",
+          "used": [
+            "P2",
+            "P4",
+            "1.13",
+            "1.32",
+            "CN3",
+            "3.1",
+            "P1",
+            "1.23",
+            "CN2",
+            "1.11",
+            "3.16",
+            "D3.2",
+            "D1.15",
+            "1.5",
+            "P5",
+            "D4.4"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:40:29.365315+00:00",
+          "prompt_sha256": "4bb238f66f693558f916f1d2ecf6608fb255de0b8751196ceac7a369e56df3c8",
+          "resource_table_sha256": "daf329f8753803475356eb916de3cc2ec6801efb1751e886d469e7ae80f8f100",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf0-86f0-71d1-bb9c-a024e7ec3508",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf0-86f0-71d1-bb9c-a024e7ec3508",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 7,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-40-29-01a1abf0-86f0-71d1-bb9c-a024e7ec3508.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:44:08.113865+00:00",
+          "total_wall_time_seconds": 218.749
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.4": [
+      {
+        "result": {
+          "prop_id": "4.4",
+          "proof": "**Step 1.** Let ABC be the given triangle. We use the direct construction by two internal angle bisectors. Bisect ∠ABC and ∠BCA. Their angles with BC have sum less than two right angles, so the bisectors meet on the side of BC containing A. Call their intersection D. Since D lies within both internal angles, it lies inside triangle ABC. [1.9, 1.17, P5]\n\n**Step 2.** Produce the side lines as necessary, and draw DE perpendicular to AB, DF perpendicular to BC, and DG perpendicular to CA, with E, F, G on the respective lines. Each half-angle at B and C is acute. Consequently E lies on ray BA, F lies on both rays BC and CB, and G lies on ray CA: a foot on an opposite ray would give a right triangle another angle greater than a right angle, contrary to 1.17. [P2, 1.12, 1.17]\n\n**Step 3.** In triangles BDE and BDF, ∠EBD = ∠DBF because BD bisects ∠ABC; the angles at E and F are equal, being right angles; and BD is common. Thus DE = DF by the two-angle-and-side criterion. This is the natural criterion here, since the two equal angles and the common side are already available. [1.9, P4, 1.26]\n\n**Step 4.** Similarly, in triangles CDF and CDG, ∠FCD = ∠DCG because CD bisects ∠BCA; the angles at F and G are equal right angles; and CD is common. Hence DF = DG. Together with Step 3, this gives DE = DF = DG. [1.9, P4, 1.26, CN1]\n\n**Step 5.** Describe the circle with centre D and radius DE. Since DF and DG equal DE, this circle passes through E, F, and G. [P3, D1.15]\n\n**Step 6.** Produce the radii through D to form diameters. At E, F, and G respectively, the lines AB, BC, and CA are perpendicular to these diameters at their extremities. Therefore each line falls outside the circle apart from its point of contact, and so touches the circle. The circle lies on the side of each tangent containing its centre D. Since D is inside ABC, the circle is contained within the triangle; in particular, its contacts E, F, and G lie on the side segments themselves. Thus the circle touches every side of ABC and is inscribed in the given triangle, as required. [P2, 3.16, D3.2, D4.5]",
+          "used": [
+            "1.9",
+            "1.17",
+            "P5",
+            "P2",
+            "1.12",
+            "P4",
+            "1.26",
+            "CN1",
+            "P3",
+            "D1.15",
+            "3.16",
+            "D3.2",
+            "D4.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:40:59.379126+00:00",
+          "prompt_sha256": "b159317f9d6851be2c5e7de07fd7dae2e5dc60849f25712808eafa9c3dc5568a",
+          "resource_table_sha256": "949e42b2bad52c998e9449601923be2876d3ded41ce1b8737fc2de60ac348b3b",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf0-fc6d-75b2-b406-a128720d4360",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf0-fc6d-75b2-b406-a128720d4360",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-40-59-01a1abf0-fc6d-75b2-b406-a128720d4360.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:43:42.050658+00:00",
+          "total_wall_time_seconds": 162.672
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.5": [
+      {
+        "result": {
+          "prop_id": "4.5",
+          "proof": "**Step 1.** Let ABC be the given triangle. Bisect AB at D and AC at E. Through D draw a straight line m perpendicular to AB, and through E draw a straight line n perpendicular to AC, producing these lines as necessary. We use their intersection as the prospective centre. [1.10, 1.11, D1.10, P2]\n\n**Step 2.** The lines m and n meet. For suppose they were parallel. Through A draw a line ℓ parallel to m; then ℓ is also parallel to n. Applying the theorem on angles made by a transversal to AB and then to AC shows that both AB and AC are perpendicular to ℓ at A. [1.31, 1.30, 1.29]\n\nIf the rays AB and AC lay on the same side of ℓ and were distinct, one of the right angles they make with a fixed ray of ℓ would be a proper part of the other, contrary to the equality of right angles and the whole being greater than its part. If they lay on opposite sides, their adjacent right angles would make them one straight line. Thus A, B, C would be collinear, contrary to their forming a triangle. Consequently m and n are not parallel and meet at some point O. [P4, CN5, 1.14, D1.23]\n\n**Step 3.** Join OA, OB, and OC. If O is distinct from D, compare triangles ODA and ODB: AD = DB, OD is common, and the included angles ODA and ODB are right and therefore equal. Side–angle–side is the direct choice here, since the equal included angles are already known. Hence OA = OB. If O = D, the same equality follows immediately from AD = DB. [P1, 1.10, D1.10, P4, 1.4]\n\n**Step 4.** Likewise, if O is distinct from E, triangles OEA and OEC have AE = EC, OE common, and equal included right angles. Therefore OA = OC by side–angle–side. If O = E, this equality follows directly from AE = EC. Thus OA, OB, and OC are all equal. [1.10, D1.10, P4, 1.4, CN1]\n\n**Step 5.** Describe the circle with centre O and distance OA. Since OA = OB = OC, its circumference passes through A, B, and C. It is therefore a circle circumscribed about triangle ABC, as required. [P3, D1.15, D4.6]",
+          "used": [
+            "1.10",
+            "1.11",
+            "D1.10",
+            "P2",
+            "1.31",
+            "1.30",
+            "1.29",
+            "P4",
+            "CN5",
+            "1.14",
+            "D1.23",
+            "P1",
+            "1.4",
+            "CN1",
+            "P3",
+            "D1.15",
+            "D4.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:41:29.403073+00:00",
+          "prompt_sha256": "64ffe56e3676845b48fbbb92752365b0f45fe4fc2aff5e5a69c14cbcd4da154e",
+          "resource_table_sha256": "ffa595d0f627c58ecf14f68bedcf9a064e70441e26266f3ea14ab91bd7c8af12",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf1-719e-7dd0-ac57-902f193c78b2",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf1-719e-7dd0-ac57-902f193c78b2",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-41-29-01a1abf1-719e-7dd0-ac57-902f193c78b2.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:45:38.119064+00:00",
+          "total_wall_time_seconds": 248.716
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.6": [
+      {
+        "result": {
+          "prop_id": "4.6",
+          "proof": "**Step 1.** Let the given circle have centre O, found by Proposition 3.1. Choose A on its circumference, join AO, and produce AO through O to meet the circumference again at C. Thus AC is a diameter. [3.1, P1, P2, D1.17]\n\n**Step 2.** At O construct OB perpendicular to AC, with B on the circumference, and produce BO through O to meet the circumference again at D. Thus BD is also a diameter. The angles AOB and BOC are right by the definition of perpendicularity; their vertically opposite angles COD and DOA are likewise right. Hence all four central angles are equal. [1.11, P2, D1.17, D1.10, 1.15, P4]\n\n**Step 3.** Join AB, BC, CD, and DA. Since O is the centre, OA, OB, OC, and OD are equal radii. [P1, D1.15, D1.16]\n\n**Step 4.** Use side–angle–side directly: the construction already supplies equal radii and equal included angles. Comparing triangle AOB with each of triangles BOC, COD, and DOA, Proposition 1.4 gives AB = BC, AB = CD, and AB = DA. Consequently ABCD is equilateral. [1.4, CN1]\n\n**Step 5.** Because AC is a diameter, the angles ABC and ADC are angles in semicircles and therefore right. Because BD is a diameter, the angles BAD and BCD are likewise right. Thus ABCD is right-angled. [3.31]\n\n**Step 6.** The quadrilateral ABCD is both equilateral and right-angled, so it is a square. Its four vertices lie on the circumference of the given circle, so it is inscribed in that circle. Therefore a square has been inscribed in the given circle, as required. [D1.22, D4.3]",
+          "used": [
+            "3.1",
+            "P1",
+            "P2",
+            "D1.17",
+            "1.11",
+            "D1.10",
+            "1.15",
+            "P4",
+            "D1.15",
+            "D1.16",
+            "1.4",
+            "CN1",
+            "3.31",
+            "D1.22",
+            "D4.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:42:39.120065+00:00",
+          "prompt_sha256": "a9d9189670fd0d997434cb0bc57edfc57812f1301b07cd804bb23c1e9179ec5b",
+          "resource_table_sha256": "1995564b5353754b5a44ececfeac505ef1fd5c77a0e88afee725edaf599875ae",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf2-81d7-7091-aa0b-058e2945675f",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf2-81d7-7091-aa0b-058e2945675f",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-42-39-01a1abf2-81d7-7091-aa0b-058e2945675f.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:44:14.894783+00:00",
+          "total_wall_time_seconds": 95.775
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.7": [
+      {
+        "result": {
+          "prop_id": "4.7",
+          "proof": "**Step 1.** Let the given circle have centre O, found by III.1. Draw a diameter AC, and through O draw its perpendicular, meeting the circle at B and D, so that A, B, C, D occur successively around the circle. The four angles at O are right angles, and OA = OB = OC = OD. [3.1, P1, P2, 1.11, D1.10, D1.17, D1.15]\n\n**Step 2.** At A and C draw straight lines perpendicular to AC, and at B and D draw straight lines perpendicular to BD; denote these lines by a, b, c, d respectively. We choose these perpendiculars because III.16 directly shows that each lies outside the circle except at its endpoint of contact. Thus a, b, c, d touch the circle at A, B, C, D respectively. [1.11, 3.16, D3.2]\n\n**Step 3.** Let consecutive tangents meet at E = a ∩ b, F = b ∩ c, G = c ∩ d, and H = d ∩ a. These intersections exist on the required sides: for example, join AB. Since triangle OAB is right-angled at O, its angles at A and B are each less than a right angle. Consequently the angles made by AB with a and b on the side of AB opposite O are each less than a right angle, being the complements of those triangle angles. The fifth postulate therefore makes a and b meet on that side. The same argument applies to BC, CD, and DA. Thus A lies between H and E, B between E and F, C between F and G, and D between G and H. [P1, P2, 1.17, D1.10, P5]\n\n**Step 4.** The lines a and c are each parallel to BD, since they and BD are perpendicular to AC. Likewise b and d are each parallel to AC. Hence OAEB, OBFC, OCGD, and ODHA are parallelograms. [P4, 1.28]\n\n**Step 5.** Opposite sides and opposite angles of these parallelograms are equal. Their angles at O are right angles, so the angles of EFGH at E, F, G, H are all right angles. Moreover, every one of the segments AE, EB, BF, FC, CG, GD, DH, HA equals a radius of the given circle. Since all those radii are equal,\nAE = EB = BF = FC = CG = GD = DH = HA. [1.34, D1.15, CN1]\n\n**Step 6.** Since the contact points lie between the corresponding vertices,\nEF = EB + BF, FG = FC + CG, GH = GD + DH, and HE = HA + AE.\nAdding equal segments gives EF = FG = GH = HE. Therefore EFGH is both equilateral and right-angled, and hence is a square. Its four sides touch the given circle at B, C, D, A respectively, so it is circumscribed about that circle. Thus about the given circle a square has been circumscribed, as required. [CN2, D1.22, D4.4]",
+          "used": [
+            "3.1",
+            "P1",
+            "P2",
+            "1.11",
+            "D1.10",
+            "D1.17",
+            "D1.15",
+            "3.16",
+            "D3.2",
+            "1.17",
+            "P5",
+            "P4",
+            "1.28",
+            "1.34",
+            "CN1",
+            "CN2",
+            "D1.22",
+            "D4.4"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:43:42.122464+00:00",
+          "prompt_sha256": "b32bced77ce7db1a3e41c679c73efc1820b300d83ef3455fca06722aae1ba24a",
+          "resource_table_sha256": "275bed02f864eeaab033467f0c5f0ed7bb848571d02814f6a809771f297ce4ee",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf3-7814-7de3-b04b-ce1731042b50",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf3-7814-7de3-b04b-ce1731042b50",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 10,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-43-42-01a1abf3-7814-7de3-b04b-ce1731042b50.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:46:45.792282+00:00",
+          "total_wall_time_seconds": 183.67
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.8": [
+      {
+        "result": {
+          "prop_id": "4.8",
+          "proof": "**Step 1.** Let ABCD be the given square. We use its diagonals as angle bisectors and construct equal perpendiculars to its sides. Join AC and BD, meeting inside the square at O. Since the sides of the square are equal, triangles ABC and ADC have their three sides respectively equal; hence AC bisects the angles at A and C. Similarly, comparison of triangles ABD and CBD shows that BD bisects the angles at B and D. Thus each angle between a side and the segment from its endpoint to O is half a right angle, and therefore less than a right angle. [D1.22, P1, 1.8, CN5]\n\n**Step 2.** From O draw perpendiculars OE, OF, OG, OH to the straight lines AB, BC, CD, DA respectively. Their feet lie on the sides themselves, not on their extensions. Indeed, consider any side UV and its perpendicular foot T. If T lay beyond U, then in triangle OUT the exterior angle OUV would, by 1.16, be greater than the right angle OTU; but Step 1 shows that OUV is less than a right angle. The case where T lies beyond V is identical. Nor can T coincide with either endpoint, since the angle there between the side and the segment to O is not right. Hence E, F, G, H lie strictly within their respective sides. [1.12, D1.10, 1.16, P4]\n\n**Step 3.** Triangles AEO and AHO have equal right angles at E and H, equal angles at A, and the common side AO opposite their right angles. Therefore OE = OH by 1.26. Likewise, comparison of triangles BEO and BFO gives OE = OF, and comparison of triangles CFO and CGO gives OF = OG. Consequently\nOE = OF = OG = OH.\nHere 1.26 applies directly because the known data are two equal angles and the common side opposite a right angle. [P4, 1.26, CN1]\n\n**Step 4.** Describe the circle with centre O and distance OE. By the equalities just proved, its circumference passes through E, F, G, and H. [P3, D1.15]\n\n**Step 5.** Extend each radius through O to form its diameter. The line AB is perpendicular at E to the diameter through E, so it falls outside the circle by 3.16; since it meets the circle at E, it touches it there. The same argument shows that BC, CD, and DA touch the circle at F, G, and H respectively. The circle therefore touches every side of the square, at points on those sides, and is inscribed in ABCD. Thus a circle has been inscribed in the given square, as required. [P2, 3.16, D3.2, D4.5]",
+          "used": [
+            "D1.22",
+            "P1",
+            "1.8",
+            "CN5",
+            "1.12",
+            "D1.10",
+            "1.16",
+            "P4",
+            "1.26",
+            "CN1",
+            "P3",
+            "D1.15",
+            "P2",
+            "3.16",
+            "D3.2",
+            "D4.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:44:12.118608+00:00",
+          "prompt_sha256": "eedcb586afe9b429e90adc9dda0b63b5fea2b5f4839a4747d7f5d59722ed1c88",
+          "resource_table_sha256": "e6d7c234b8034c58a36c5c51eb1cac41fe10162e28811f4ade9a6e3461ffb7f9",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf3-ed1f-7ec3-8e05-935df4a93a57",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf3-ed1f-7ec3-8e05-935df4a93a57",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-44-12-01a1abf3-ed1f-7ec3-8e05-935df4a93a57.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:47:38.329297+00:00",
+          "total_wall_time_seconds": 206.211
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.9": [
+      {
+        "result": {
+          "prop_id": "4.9",
+          "proof": "**Step 1.** Let ABCD be the given square, with its vertices in order. Its four sides are equal and its four angles are right angles. Join AC and BD, and let their intersection be E. [D1.22, P1]\n\n**Step 2.** Use side–angle–side congruence (1.4), since the equal sides and right angles of the square supply its hypotheses directly. All right angles are equal. Comparing the following pairs of triangles therefore gives:\n- ABC and BAD: AB = BA, BC = AD, and ∠ABC = ∠BAD; hence ∠BAC = ∠ABD.\n- BCD and CBA: BC = CB, CD = BA, and ∠BCD = ∠CBA; hence ∠CBD = ∠BCA.\n- CDA and DCB: CD = DC, DA = CB, and ∠CDA = ∠DCB; hence ∠DCA = ∠CDB. [D1.22, P4, 1.4]\n\n**Step 3.** Since E lies on both diagonals, these angle equalities give, respectively,\n∠BAE = ∠ABE, ∠CBE = ∠BCE, and ∠DCE = ∠CDE.\nIn each triangle, the sides opposite equal angles are equal. Thus EA = EB in triangle ABE, EB = EC in triangle BCE, and EC = ED in triangle CDE. Consequently EA = EB = EC = ED. [1.6, CN1]\n\n**Step 4.** Describe the circle with centre E and radius EA. Because EB, EC, and ED are also equal to this radius, its circumference passes through A, B, C, and D. It is therefore circumscribed about the square ABCD, as required. [P3, D1.15, D4.6]",
+          "used": [
+            "D1.22",
+            "P1",
+            "P4",
+            "1.4",
+            "1.6",
+            "CN1",
+            "P3",
+            "D1.15",
+            "D4.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:44:42.149097+00:00",
+          "prompt_sha256": "d4010d28ae28a6f9761acd530bf2b4ed1119b3c2a22585b1e298750944e11e85",
+          "resource_table_sha256": "c5d429b748b90191dbf17e08133f5fb1fd35ce9355803841331b39a7a873a0cf",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf4-6283-7013-b315-294de532e572",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf4-6283-7013-b315-294de532e572",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-44-42-01a1abf4-6283-7013-b315-294de532e572.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:47:08.579409+00:00",
+          "total_wall_time_seconds": 146.43
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.10": [
+      {
+        "result": {
+          "prop_id": "4.10",
+          "proof": "**Step 1.** Take a straight line AB and cut it at C so that the rectangle contained by AB and BC equals the square on AC. Thus A, C, B occur in this order, and AC < AB. [2.11, CN5]\n\n**Step 2.** Describe a circle with centre A and radius AB. Since AC is less than the radius, and therefore less than the diameter, fit into this circle a chord BD equal to AC, taking B as one endpoint. Join AD and CD. The radii AB and AD are equal, whereas BD = AC < AB; in particular, A, C, D are not collinear. [P3, D1.15, D1.17, CN5, 4.1, P1]\n\n**Step 3.** Circumscribe a circle about triangle ACD. The point B is outside this circle, and the secant from B meets it first at C and then at A. By the construction,\nrectangle AB, BC = square AC = square BD.\nConsequently BD touches this circle at D. This tangent criterion is the direct route: the rectangle–square equality already supplies precisely its hypothesis. [4.5, CN1, 3.37]\n\n**Step 4.** Apply the tangent–chord theorem to the tangent DB and chord DC. The angle between them equals the angle in the alternate segment:\n∠BDC = ∠DAC.\nSince A, C, B are collinear, ∠DAC = ∠DAB. [3.32]\n\n**Step 5.** The angle BCD is an exterior angle of triangle ACD, so\n∠BCD = ∠CAD + ∠ADC.\nReplacing ∠CAD by its equal ∠BDC gives\n∠BCD = ∠BDC + ∠ADC = ∠BDA,\nbecause DC lies inside angle BDA. Also, AB = AD, so the base angles of triangle ABD satisfy ∠DBA = ∠BDA. Since ray BC is ray BA, it follows that ∠DBC = ∠BCD. Therefore, in triangle BCD, the opposite sides DC and DB are equal. [1.32, CN2, 1.5, CN1, 1.6]\n\n**Step 6.** Now DC = DB = AC. Hence triangle ACD is isosceles, and ∠ADC = ∠CAD. Both ∠CAD and, by Step 4, ∠BDC equal ∠BAD. Therefore\n∠BDA = ∠BDC + ∠CDA = 2∠BAD.\nThe other base angle ∠ABD equals ∠BDA, and is consequently also double ∠BAD. [CN1, 1.5, CN2]\n\n**Step 7.** Thus triangle ABD has AB = AD and BD < AB, so it is isosceles; each of its base angles ABD and BDA is double its remaining angle BAD. The required triangle has been constructed. [D1.20; Steps 2 and 6]",
+          "used": [
+            "2.11",
+            "CN5",
+            "P3",
+            "D1.15",
+            "D1.17",
+            "4.1",
+            "P1",
+            "4.5",
+            "CN1",
+            "3.37",
+            "3.32",
+            "1.32",
+            "CN2",
+            "1.5",
+            "1.6",
+            "D1.20"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:45:38.211040+00:00",
+          "prompt_sha256": "49afebf8b4a9432c3ce9fd41e6d67c73f8ef510edea063953c5e35f076c024a5",
+          "resource_table_sha256": "bcab0693f673535346a8d8f85056cc1a552a6e55b9ecf2ea974fbc9de279d894",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf5-3d6f-7cb1-85f5-9a3b868922e4",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf5-3d6f-7cb1-85f5-9a3b868922e4",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-45-38-01a1abf5-3d6f-7cb1-85f5-9a3b868922e4.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:48:32.655710+00:00",
+          "total_wall_time_seconds": 174.445
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.11": [
+      {
+        "result": {
+          "prop_id": "4.11",
+          "proof": "**Step 1.** Let the given circle be Γ. Construct an isosceles triangle whose two base angles are each double its vertex angle, and inscribe in Γ a triangle ACD equiangular with it, with A corresponding to the vertex. Thus ∠ACD = ∠CDA = 2∠CAD. This angle-ratio construction is the direct route, since the prescribed angles can be transferred immediately to the given circle. [4.10, 4.2]\n\n**Step 2.** Bisect ∠ACD and ∠CDA. Produce their bisectors to meet Γ again at E and B respectively: E lies on the arc DA not containing C, and B on the arc AC not containing D. The points therefore occur around Γ in the order A, B, C, D, E. Join AB, BC, DE, and EA; together with CD these form pentagon ABCDE. [1.9, P2, P1]\n\n**Step 3.** Put α = ∠CAD. Since each angle bisected in Step 2 is double α, each of its halves equals α. Consequently\n∠CAD = ∠ACE = ∠ECD = ∠CDB = ∠BDA.\n[4.10, 4.2, 1.9, CN1]\n\n**Step 4.** These five equal angles stand respectively on the arcs CD, AE, ED, CB, and BA, taking in each case the arc not containing the angle's vertex. Equal angles at the circumference stand on equal arcs. Hence the five successive arcs AB, BC, CD, DE, and EA are equal. We pass from angles to arcs first because equal angles are what the construction supplies directly. [3.26]\n\n**Step 5.** Equal arcs are subtended by equal straight lines. Therefore AB = BC = CD = DE = EA, so pentagon ABCDE is equilateral. [3.29]\n\n**Step 6.** Each interior angle of the pentagon stands on the arc between its adjacent vertices that does not contain its own vertex. Each such arc consists of three of the five equal successive arcs established in Step 4. These five three-part arcs are equal, because adding equals to equals gives equal wholes. Angles at the circumference standing on equal arcs are equal; hence ∠EAB, ∠ABC, ∠BCD, ∠CDE, and ∠DEA are all equal. The pentagon is therefore equiangular. [CN2, 3.27]\n\n**Step 7.** All five vertices lie on Γ, so ABCDE is inscribed in the given circle. By Steps 5 and 6 it is both equilateral and equiangular. Thus the required pentagon has been constructed. [D4.3]",
+          "used": [
+            "4.10",
+            "4.2",
+            "1.9",
+            "P2",
+            "P1",
+            "CN1",
+            "3.26",
+            "3.29",
+            "CN2",
+            "3.27",
+            "D4.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:46:45.861242+00:00",
+          "prompt_sha256": "bf76caf3218b35b9e6c1d8a4166fea92d8009bb52960a45af60ee38b54d36c27",
+          "resource_table_sha256": "38c4503e478c795ef3a70baf30aed18dc737d96a76aa16215bbbce20ad2eacbc",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf6-45d7-7461-b31c-9df86e644f33",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf6-45d7-7461-b31c-9df86e644f33",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-46-46-01a1abf6-45d7-7461-b31c-9df86e644f33.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:49:16.325366+00:00",
+          "total_wall_time_seconds": 150.464
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.12": [
+      {
+        "result": {
+          "prop_id": "4.12",
+          "proof": "**Step 1.** In the given circle inscribe an equilateral and equiangular pentagon ABCDE, with its vertices in circular order. We use these vertices as the points of contact and construct the required figure from their tangents; this is the direct route supplied by the inscribed pentagon. [4.11]\n\n**Step 2.** Join AC, BD, CE, DA, and EB. Consider the consecutive-vertex triangles ABC, BCD, CDE, DEA, and EAB. Their corresponding pairs of sides are equal, and their included angles are equal because ABCDE is equilateral and equiangular. Therefore their corresponding angles are equal by I.4—the natural comparison, since two sides and the included angle are already given equal. Each triangle is also isosceles, so its two base angles are equal. Consequently all these base angles have one common value, α. Since the two base angles of a triangle together are less than two right angles, α is acute. [P1, 1.4, 1.5, CN1, 1.17]\n\n**Step 3.** Draw tangents to the circle at A, B, C, D, and E, extending them as necessary. For the tangents at A and B, take the rays lying on the side of AB opposite C. By the tangent–chord theorem, each makes with AB an angle equal to ∠ACB, namely α. Their two interior angles on that side therefore total less than two right angles, so the rays meet; call their intersection P. In precisely the same way, the tangents at B and C meet at Q outside BC, those at C and D at R outside CD, those at D and E at S outside DE, and those at E and A at T outside EA. Thus every triangle PAB, QBC, RCD, SDE, and TEA has both base angles equal to α. [3.17, P2, 3.32, P5]\n\n**Step 4.** The contact points lie between the appropriate intersections. For example, P, B, and Q lie on the tangent at B. The chord rays BA and BC lie on the same side of that tangent, because it does not cut the circle. Moreover, ∠PBA = ∠QBC = α. If BP and BQ were the same ray, these equal angles would have distinct other rays on the same side, making one a proper part of the other, which is impossible. Hence BP and BQ are opposite rays, and B lies between P and Q. Likewise C lies between Q and R, D between R and S, E between S and T, and A between T and P. The five tangent segments therefore form the pentagon PQRST, with the respective contact points B, C, D, E, A on its sides. [D3.2, 3.32, CN5]\n\n**Step 5.** The triangles PAB, QBC, RCD, SDE, and TEA have two corresponding angles equal and the sides between those angles equal, since AB = BC = CD = DE = EA. By I.26 their corresponding remaining sides and their apex angles are equal. Thus\nPA = QB = RC = SD = TE,\nPB = QC = RD = SE = TA,\nand\n∠APB = ∠BQC = ∠CRD = ∠DSE = ∠ETA. [1.26]\n\n**Step 6.** Since the contact points are between consecutive vertices,\nPQ = PB + BQ, QR = QC + CR, RS = RD + DS, ST = SE + ET, and TP = TA + AP.\nAdding the corresponding equal segments from Step 5 gives PQ = QR = RS = ST = TP. The interior angles of PQRST are exactly the five equal apex angles established in Step 5. Hence PQRST is equilateral and equiangular. Each of its sides touches the given circle at its stated contact point, so it is circumscribed about that circle. Therefore an equilateral and equiangular pentagon has been circumscribed about the given circle, as required. [CN2, 1.26, D4.4]",
+          "used": [
+            "4.11",
+            "P1",
+            "1.4",
+            "1.5",
+            "CN1",
+            "1.17",
+            "3.17",
+            "P2",
+            "3.32",
+            "P5",
+            "D3.2",
+            "CN5",
+            "1.26",
+            "CN2",
+            "D4.4"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:47:15.857581+00:00",
+          "prompt_sha256": "d98fc83778bfee91a41d67cd9291c0233cb0c116cd1e63f1a2d4f99eae59f059",
+          "resource_table_sha256": "da131ec88408e35b7f406a0af02517a4befacbb1531f9da9d6b6e6ed59a2d3ea",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf6-bae1-7c72-b083-7da3b6376e9d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf6-bae1-7c72-b083-7da3b6376e9d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-47-16-01a1abf6-bae1-7c72-b083-7da3b6376e9d.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:54:04.526378+00:00",
+          "total_wall_time_seconds": 408.669
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.13": [
+      {
+        "result": {
+          "prop_id": "4.13",
+          "proof": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices in boundary order. We use the direct angle-bisector construction, without first constructing a circumcircle. Bisect the interior angles BCD and CDE. Their inward bisectors meet at F: the two half-angles they make with CD together are less than two right angles, so the fifth postulate applies. Join FB, FE, and FA. [1.9, P5, P1]\n\n**Step 2.** In triangles BCF and DCF, BC equals CD, CF is common, and angle BCF equals angle DCF. Therefore, by side-angle-side, angle CBF equals angle CDF. But angle CDF is half of angle CDE, and angle CDE equals angle CBA. Consequently angle CBF is half of angle CBA; subtracting it leaves angle ABF equal to angle FBC. Thus BF bisects the interior angle at B. [1.4, CN3]\n\n**Step 3.** Similarly, in triangles CDF and EDF, CD equals DE, DF is common, and angle CDF equals angle EDF. Hence angle DEF equals angle DCF. Since angle DCF is half of angle BCD, and angle BCD equals angle DEA, EF bisects the interior angle at E. The construction places F on the inward sides of BC, CD, and DE; the interior bisectors just established at B and E also place it on the inward sides of AB and AE. Thus F lies inside the pentagon. [1.4, CN3]\n\n**Step 4.** In triangles ABF and CBF, AB equals CB, BF is common, and angle ABF equals angle CBF. Therefore angle BAF equals angle BCF. The latter is half of angle BCD, which equals angle EAB. Since F is inside the pentagon, subtracting angle BAF from angle EAB shows that angle FAE equals angle BAF. Thus AF also bisects the interior angle at A. Accordingly, the segments from F to all five vertices bisect their respective interior angles. [1.4, CN3]\n\n**Step 5.** Draw perpendiculars FG, FH, FI, FK, and FL to the straight lines AB, BC, CD, DE, and EA respectively. Their feet lie on the actual sides, not their extensions. Indeed, at both endpoints of each side, the segment to F makes an acute angle with that side, being half an interior angle of the pentagon. A perpendicular foot beyond an endpoint would make this acute angle an exterior angle of a triangle whose opposite interior angle at the foot is right, contrary to the exterior-angle theorem. A foot at an endpoint would likewise make the endpoint angle right rather than acute. [1.12, D1.10, 1.16]\n\n**Step 6.** Compare the right triangles FBG and FBH. Their angles at G and H are equal right angles, their angles at B are equal because BF bisects angle ABC, and FB is their common side opposite the right angles. Hence FG equals FH. Applying the same angle-angle-side proposition to FCH and FCI, to FDI and FDK, and to FEK and FEL gives, respectively, FH = FI, FI = FK, and FK = FL. Therefore\nFG = FH = FI = FK = FL. [P4, 1.26, CN1]\n\n**Step 7.** Describe the circle with centre F and radius FG. By the equality just proved, its circumference passes through G, H, I, K, and L. [P3, D1.15]\n\n**Step 8.** Each side of the pentagon is perpendicular, at the corresponding point on the circumference, to the diameter through that point. The perpendicular-to-diameter theorem therefore places that side, apart from its contact point, outside the circle; hence the side touches the circle. Thus the circle touches AB, BC, CD, DE, and EA at G, H, I, K, and L respectively. By the definition of an inscribed circle, it is inscribed in the given pentagon, as required. [3.16, D3.2, D4.5]",
+          "used": [
+            "1.9",
+            "P5",
+            "P1",
+            "1.4",
+            "CN3",
+            "1.12",
+            "D1.10",
+            "1.16",
+            "P4",
+            "1.26",
+            "CN1",
+            "P3",
+            "D1.15",
+            "3.16",
+            "D3.2",
+            "D4.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:47:45.895601+00:00",
+          "prompt_sha256": "f165916bb0ecd736a975c40d8e80074604ab4ad2c01e503c54afa6a569ec9323",
+          "resource_table_sha256": "8ae60cf14abb4600e748ed26e54855c29daa6a681e5a4f1569303b57e6e04868",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf7-3074-7c23-8088-2c4f84554c25",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf7-3074-7c23-8088-2c4f84554c25",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-47-46-01a1abf7-3074-7c23-8088-2c4f84554c25.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:51:47.407446+00:00",
+          "total_wall_time_seconds": 241.512
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.14": [
+      {
+        "result": {
+          "prop_id": "4.14",
+          "proof": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices named in order. We take the direct angle-bisector route, constructing a point equally distant from all five vertices. Join AC and AD. The resulting three triangles show that the five interior angles together equal six right angles. Thus their common value, denoted by 2α, is less than two right angles. [P1, 1.32]\n\n**Step 2.** Bisect ∠BCD and ∠CDE. The angles which these bisectors make with CD on its interior side are each α, and their sum is less than two right angles. Therefore the bisectors, produced as necessary, meet on that side at O. Join OA, OB, and OE. We have ∠BCO = ∠OCD = ∠CDO = ∠ODE = α. [1.9, P2, P5, P1]\n\n**Step 3.** In triangle CDO, the angles OCD and CDO are equal. Hence their opposite sides are equal: OC = OD. [1.6]\n\n**Step 4.** Compare triangles BCO and DCO. Their sides BC and DC are equal, CO is common, and their included angles BCO and DCO are equal by the bisection at C. SAS is the natural criterion here, since precisely these two sides and their included angle are given equal. Consequently OB = OD and ∠CBO = ∠CDO = α. [1.4]\n\n**Step 5.** Since CO lies inside ∠BCD, O is on the same side of BC as A. As ∠CBO = α while ∠CBA = 2α, BO lies inside ∠CBA, and subtraction gives ∠ABO = ∠CBO. Now AB = CB, BO is common, and these included angles are equal. Therefore triangles ABO and CBO have equal bases: OA = OC. [CN3, 1.4]\n\n**Step 6.** Compare triangles EDO and CDO. We have DE = DC, DO common, and ∠EDO = ∠CDO by the bisection at D. Therefore OE = OC. Together with the preceding equalities, this gives OA = OB = OC = OD = OE. [1.4, CN1]\n\n**Step 7.** Describe the circle with centre O and radius OC. Since all five vertices are equally distant from O, its circumference passes through A, B, C, D, and E. It is therefore circumscribed about the given pentagon, as required. [P3, D1.15, D4.6]",
+          "used": [
+            "P1",
+            "1.32",
+            "1.9",
+            "P2",
+            "P5",
+            "1.6",
+            "1.4",
+            "CN3",
+            "CN1",
+            "P3",
+            "D1.15",
+            "D4.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:48:32.733647+00:00",
+          "prompt_sha256": "915efc1f3ab3a34c0ae2672224143824c55ab9c4fbd0d9a9fa3d6106e0031a10",
+          "resource_table_sha256": "6b00823266f56904c67305814ce88cdba7fda19c4cdf676f4dfe5ed9291a26a6",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf7-e736-70d1-861c-1a23945d0b8c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf7-e736-70d1-861c-1a23945d0b8c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-48-32-01a1abf7-e736-70d1-861c-1a23945d0b8c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:51:56.062725+00:00",
+          "total_wall_time_seconds": 203.329
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.15": [
+      {
+        "result": {
+          "prop_id": "4.15",
+          "proof": "**Step 1.** Construct an equilateral triangle by I.1. Applying I.5 to two pairs of its equal sides shows that its three angles are equal. By IV.2, inscribe in the given circle a triangle ACE equiangular with this triangle. Thus the angles of ACE are equal. [1.1, 1.5, CN1, 4.2]\n\n**Step 2.** Consider the three intervening arcs AC, CE, and EA, each chosen not to contain the remaining vertex. They are subtended respectively by the equal angles AEC, CAE, and ECA; hence they are equal by III.26. We take this equal-arc route because III.26 applies directly to the angle equality already obtained, without first establishing equality of the triangle’s chords. [3.26]\n\n**Step 3.** Bisect arc AC at B, arc CE at D, and arc EA at F by III.30. The points therefore occur around the circle in the order A, B, C, D, E, F, and the six successive arcs AB, BC, CD, DE, EF, FA are equal. Indeed, each is a half of one of the three equal arcs; unequal halves would have unequal doubles, contrary to the equality of those whole arcs. This is the elementary consequence of addition and whole–part comparison. Join AB, BC, CD, DE, EF, and FA. [3.30, CN1, CN2, CN5, P1]\n\n**Step 4.** Equal arcs in the same circle are subtended by equal straight lines, by III.29. Consequently\nAB = BC = CD = DE = EF = FA,\nso ABCDEF is equilateral. [3.29]\n\n**Step 5.** Each interior angle of ABCDEF stands on the arc between its two neighbouring vertices that does not contain its own vertex. Each such arc consists of four of the equal successive arcs from Step 3: for example, ∠FAB stands on arc BCDEF, while ∠ABC stands on arc CDEFA. Thus all six intercepted arcs are equal, by addition of equals. By III.27, the six interior angles standing on them are equal. Hence ABCDEF is equiangular. [CN2, 3.27]\n\n**Step 6.** All six vertices lie on the given circumference, so ABCDEF is inscribed in the given circle. Together with Steps 4 and 5, this proves that the constructed figure is an inscribed equilateral and equiangular hexagon, as required. [D4.3]",
+          "used": [
+            "1.1",
+            "1.5",
+            "CN1",
+            "4.2",
+            "3.26",
+            "3.30",
+            "CN2",
+            "CN5",
+            "P1",
+            "3.29",
+            "3.27",
+            "D4.3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:49:16.398853+00:00",
+          "prompt_sha256": "edf0bd491877b813973bc1d9773a825f2b35b007fa6f9cd698e2040c02c403c4",
+          "resource_table_sha256": "9e1f57d0aba8180112e69841268aca08f4f7b89bacde90413ea0cfb8cea83fd9",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abf8-91cf-7b52-8d06-4ec0f4c6b8a5",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abf8-91cf-7b52-8d06-4ec0f4c6b8a5",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-49-16-01a1abf8-91cf-7b52-8d06-4ec0f4c6b8a5.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:51:17.189647+00:00",
+          "total_wall_time_seconds": 120.791
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "4.16": [
+      {
+        "result": {
+          "prop_id": "4.16",
+          "proof": "**Step 1.** Construct an equilateral triangle by I.1. Its angles are equal by I.5. In the given circle inscribe a triangle equiangular with this triangle by IV.2; its sides are equal by I.6. Call one vertex A, and let C be the next vertex in a chosen direction around the circle. [1.1, 1.5, 4.2, 1.6]\n\n**Step 2.** Inscribe an equilateral and equiangular pentagon in the same circle, taking A as one vertex, and let B be its next vertex in the same direction. Equal chords cut off equal corresponding arcs; hence the consecutive arcs of the triangle are thirds of the circumference, and those of the pentagon are fifths. Thus, writing c for the whole circumference, arc AC is c/3 and arc AB is c/5, and B lies between A and C on this arc. [4.11, 3.28]\n\n**Step 3.** Subtracting arc AB from arc AC gives\narc BC = c/3 − c/5 = 2c/15.\nBisect arc BC at D. Each of arcs BD and DC is therefore c/15. This is the direct triangle–pentagon route: subtract their successive arcs and bisect the remainder to obtain the required fifteenth of the circumference. [CN3, 3.30]\n\n**Step 4.** Join BD. As a chord of the given circle, BD is not greater than its diameter. Starting with V₀ = B and V₁ = D, repeatedly fit a chord equal to BD from the latest vertex, proceeding in the same direction around the circle. This fitting is possible by IV.1. By III.28 every corresponding minor arc is equal to arc BD, hence is c/15. Consequently fifteen such arcs make the whole circumference: the fifteenth chord ends at V₀, while the preceding fourteen endpoints are distinct. Join successive vertices to obtain the inscribed fifteen-sided figure V₀V₁…V₁₄. [P1, 3.15, 4.1, 3.28, CN2]\n\n**Step 5.** Every side of this figure was constructed equal to BD. Its fifteen sides are therefore equal to one another, so the figure is equilateral. [4.1, CN1]\n\n**Step 6.** At any vertex Vᵢ, the interior angle stands on the arc joining its two neighbouring vertices and not containing Vᵢ. This arc consists of thirteen of the equal successive arcs. All fifteen such intercepted arcs are therefore equal. By III.27, the angles standing on them are equal. This proposition applies directly because the angles stand on equal arcs, rather than necessarily in the same segment. Hence the figure is equiangular as well as equilateral. [CN2, 3.27]\n\nTherefore an equilateral and equiangular fifteen-angled figure has been inscribed in the given circle, as required.",
+          "used": [
+            "1.1",
+            "1.5",
+            "4.2",
+            "1.6",
+            "4.11",
+            "3.28",
+            "CN3",
+            "3.30",
+            "P1",
+            "3.15",
+            "4.1",
+            "CN2",
+            "CN1",
+            "3.27"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:51:17.269592+00:00",
+          "prompt_sha256": "daf084ea8f95b0babf69ac242f3c5bce8d006d9026e517f85c9860d0ea24b5b2",
+          "resource_table_sha256": "830ee1fed7b2908432fd64880d8829fbabbef288efbfcbffe3166b50bdda0949",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abfa-6a00-7062-a72c-6be51d67b048",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abfa-6a00-7062-a72c-6be51d67b048",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-51-17-01a1abfa-6a00-7062-a72c-6be51d67b048.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:54:43.241112+00:00",
+          "total_wall_time_seconds": 205.972
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

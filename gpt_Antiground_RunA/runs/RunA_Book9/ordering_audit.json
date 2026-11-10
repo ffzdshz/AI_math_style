@@ -1,0 +1,2693 @@
+{
+  "completed_at": "2026-11-03T02:46:13.808975+00:00",
+  "expected_ids": [
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7",
+    "9.8",
+    "9.9",
+    "9.10",
+    "9.11",
+    "9.12",
+    "9.13",
+    "9.14",
+    "9.15",
+    "9.16",
+    "9.17",
+    "9.18",
+    "9.19",
+    "9.20",
+    "9.21",
+    "9.22",
+    "9.23",
+    "9.24",
+    "9.25",
+    "9.26",
+    "9.27",
+    "9.28",
+    "9.29",
+    "9.30",
+    "9.31",
+    "9.32",
+    "9.33",
+    "9.34",
+    "9.35",
+    "9.36"
+  ],
+  "selected_attempts": {
+    "9.1": 0,
+    "9.2": 0,
+    "9.3": 0,
+    "9.4": 0,
+    "9.5": 0,
+    "9.6": 0,
+    "9.7": 0,
+    "9.8": 0,
+    "9.9": 0,
+    "9.10": 0,
+    "9.11": 0,
+    "9.12": 0,
+    "9.13": 0,
+    "9.14": 0,
+    "9.15": 0,
+    "9.16": 0,
+    "9.17": 0,
+    "9.18": 0,
+    "9.19": 0,
+    "9.20": 0,
+    "9.21": 0,
+    "9.22": 0,
+    "9.23": 0,
+    "9.24": 0,
+    "9.25": 0,
+    "9.26": 0,
+    "9.27": 0,
+    "9.28": 0,
+    "9.29": 0,
+    "9.30": 0,
+    "9.31": 0,
+    "9.32": 0,
+    "9.33": 0,
+    "9.34": 0,
+    "9.35": 0,
+    "9.36": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "9.1": [
+      {
+        "result": {
+          "prop_id": "9.1",
+          "proof": "**Step 1.** Let A and B be the given similar plane numbers, and let N be their product. By **8.18**, there is a number M such that A:M = M:B. This mean-proportional route applies directly to the given similarity, avoiding a reconstruction from the sides.\n\n**Step 2.** Apply **7.19** to the four proportional numbers A, M, M, B. The product of the first and fourth equals the product of the second and third. Hence N = A·B = M·M.\n\n**Step 3.** A number produced by multiplying a number by itself is square, by **D7.18**. Therefore N, the product of the two similar plane numbers, is square.",
+          "used": [
+            "8.18",
+            "7.19",
+            "D7.18"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:01:44.826431+00:00",
+          "prompt_sha256": "67c0471ec6b8777e7f1a2c2da4fa7ae11cccc152f33b307bff2f92b291e78aeb",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19dda-8039-7e11-b3d5-912ec77753f3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19dda-8039-7e11-b3d5-912ec77753f3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:02:17.040857+00:00",
+          "total_wall_time_seconds": 32.214,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.1_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.2": [
+      {
+        "result": {
+          "prop_id": "9.2",
+          "proof": "**Step 1.** Let A and B be the two numbers whose product is square. By the definition of a square number, there is a number C such that AB = CC. [Hypothesis; D7.18]\n\n**Step 2.** Apply the converse direction of 7.19 to the four numbers A, C, C, B. Since the product of the extremes equals the product of the means, these numbers are proportional: A:C = C:B. Thus C is a mean proportional between A and B. [7.19]\n\n**Step 3.** Use the mean-proportional criterion, since the side of the given square has supplied precisely such a mean. If one mean proportional number falls between two numbers, those numbers are similar plane numbers. Therefore A and B are similar plane numbers, as required. [8.20]",
+          "used": [
+            "D7.18",
+            "7.19",
+            "8.20"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:02:14.826156+00:00",
+          "prompt_sha256": "21656cf3114ef731a1e8324f4d50189fef70c62434f30c9d50e35dba4ffb72b6",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19dda-f55e-7fd3-b028-16a88d8ed7f3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19dda-f55e-7fd3-b028-16a88d8ed7f3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:03:08.701594+00:00",
+          "total_wall_time_seconds": 53.875,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.2_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.3": [
+      {
+        "result": {
+          "prop_id": "9.3",
+          "proof": "**Step 1.** Let C be a cube number, and let P be the product of C with itself. By D7.19, there is a number r such that, putting S = r·r, we have C = r·S; also P = C·C (D7.15). Our chosen route is to apply 8.23 by exhibiting C and P as the first and fourth terms of a continued proportion.\n\n**Step 2.** Let r multiply C to produce X, and let S multiply C to produce Y. Thus X = r·C and Y = S·C (D7.15).\n\n**Step 3.** Multiplication by r sends r, S, C to S, C, X respectively. Applying 7.17 to the successive pairs gives\nr:S = S:C and S:C = C:X.\n\n**Step 4.** The multipliers r, S, C, acting on the common number C, produce X, Y, P respectively. Hence, by 7.18,\nX:Y = r:S and Y:P = S:C.\n\n**Step 5.** Combining these equalities gives C:X = X:Y = Y:P (CN1). Therefore C, X, Y, P are four numbers in continued proportion. Since the first, C, is a cube, the fourth, P, is also a cube by 8.23. Thus a cube number multiplied by itself produces a cube.",
+          "used": [
+            "D7.19",
+            "D7.15",
+            "7.17",
+            "7.18",
+            "CN1",
+            "8.23"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:02:44.830198+00:00",
+          "prompt_sha256": "1736c774e7b600a9adea852c16667f82312fca771bce57e6e203178117c07f0a",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddb-6a8c-7243-9b25-40ed81406a9b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddb-6a8c-7243-9b25-40ed81406a9b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:04:13.483750+00:00",
+          "total_wall_time_seconds": 88.654,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.3_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.4": [
+      {
+        "result": {
+          "prop_id": "9.4",
+          "proof": "**Step 1.** Let A and B be the given cube numbers, and let C be the product obtained when A multiplies B. Let D be the product obtained when A multiplies itself. Since A is cube, D is cube by **9.3**.\n\n**Step 2.** The same number A, multiplying A and B, produces D and C respectively. Consequently, by **7.17**, D:C = A:B.\n\n**Step 3.** Use **8.25**, the natural direct choice because Step 2 supplies a ratio of two cube numbers: if two numbers have the ratio of a cube to a cube and the first is cube, the second is also cube. Here D:C equals the ratio A:B of two cubes, and D is cube by Step 1. Therefore C is cube. Thus the product of the two given cube numbers is cube.",
+          "used": [
+            "9.3",
+            "7.17",
+            "8.25"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:03:14.828052+00:00",
+          "prompt_sha256": "91b66d8eb391fe96ea3dac0fe8a107ae1c935e9077bc5c88e94ca4857d9900b8",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddb-dfcc-7070-946d-2cdc6371f778",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddb-dfcc-7070-946d-2cdc6371f778",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:04:05.295673+00:00",
+          "total_wall_time_seconds": 50.468,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.4_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.5": [
+      {
+        "result": {
+          "prop_id": "9.5",
+          "proof": "**Step 1.** Let the cube number A, by multiplying the number N, produce the cube number C, so that AN = C. Let a and c be the respective sides of these cubes: A = a³ and C = c³. We must prove that N is a cube. [D7.15, D7.19]\n\n**Step 2.** Since AN = C, A measures C. Therefore a measures c, because a cube measuring a cube has its side measuring the other's side. This is the direct path: 8.15 applies immediately to the divisibility supplied by the hypothesis. [D7.3, D7.15, 8.15]\n\n**Step 3.** Since a measures c, let d be the number according to which it measures c; thus c = ad. Form E = d³, which is a cube. [D7.3, D7.15, D7.19]\n\n**Step 4.** Regrouping the repeated additions that define multiplication, and interchanging factors, gives\nC = c³ = (ad)(ad)(ad) = (aaa)(ddd) = AE.\nThus A, by multiplying E, also produces C. [D7.15, 7.16]\n\n**Step 5.** A multiplied by N and by E produces C in both cases. Hence N:E = C:C, since products by the same number have the same ratio as the numbers multiplied. Therefore N = E. Since E is a cube, N is also a cube, as required. [7.17, D7.20, D7.19]",
+          "used": [
+            "D7.15",
+            "D7.19",
+            "D7.3",
+            "8.15",
+            "7.16",
+            "7.17",
+            "D7.20"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:03:44.833172+00:00",
+          "prompt_sha256": "39a4a2bef2925a04178a7833ec8622c92c0803763969dba31da819acefe30288",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddc-5501-7090-b7f1-978157d5632a",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddc-5501-7090-b7f1-978157d5632a",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:05:11.884219+00:00",
+          "total_wall_time_seconds": 87.051,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.5_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.6": [
+      {
+        "result": {
+          "prop_id": "9.6",
+          "proof": "**Step 1.** Let A be the given number, and let B = A·A be the number it produces by multiplying itself. By hypothesis, B is a cube. [D7.15; hypothesis]\n\n**Step 2.** Form C = B·A = (A·A)·A. Since C is contained by the three equal numbers A, A, A, it is a cube. [D7.15, D7.19]\n\n**Step 3.** Choose the direct route through 9.5: the known cube B, by multiplying A, produces the cube C. Therefore the multiplied number A is itself a cube, as required. [9.5]",
+          "used": [
+            "D7.15",
+            "D7.19",
+            "9.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:04:14.830638+00:00",
+          "prompt_sha256": "0bda1fd96e5d2fb1e2d8733c3d673a29a1c21c8b9e3793a7f2db316c4b9a164c",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddc-ca48-7f30-97c1-fbc669d5cf82",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddc-ca48-7f30-97c1-fbc669d5cf82",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:04:41.839136+00:00",
+          "total_wall_time_seconds": 27.009,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.6_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.7": [
+      {
+        "result": {
+          "prop_id": "9.7",
+          "proof": "**Step 1.** Let A be a composite number, and let A multiplying any number B produce C. We use the direct factorization route. Since A is composite, it has a numerical measure D smaller than itself (D7.13).\n\n**Step 2.** Let E consist of as many units as there are times that D measures A. Since D is smaller than A, it measures A at least twice; hence E is a number (D7.2). By the definition of multiplication, E multiplying D produces A (D7.15).\n\n**Step 3.** Thus the three numbers E, D, and B produce C by successive multiplication: E multiplying D produces A, and A multiplying B produces C by hypothesis. Therefore C is a solid number, with sides E, D, and B (D7.17). Hence the product of a composite number with any number is solid.",
+          "used": [
+            "D7.13",
+            "D7.2",
+            "D7.15",
+            "D7.17"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:04:44.833642+00:00",
+          "prompt_sha256": "85bdb4b0bdfa01411bb22f39646d2e4989efb57d98711f66449864d65af4fac1",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddd-3f91-79a1-9fa2-dee79fd83dd7",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddd-3f91-79a1-9fa2-dee79fd83dd7",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:05:23.278534+00:00",
+          "total_wall_time_seconds": 38.445,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.7_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.8": [
+      {
+        "result": {
+          "prop_id": "9.8",
+          "proof": "**Step 1.** Write the given progression as a_0, a_1, …, a_N, where a_0 is the unit, counted as the first term. Thus all consecutive ratios a_j : a_{j+1} are equal. We use the numerical ex-aequali theorem, 7.14, because equal-length portions of this progression already have equal corresponding ratios; this exhibits the required squares and cubes directly. [Hypothesis; D7.1; D7.20]\n\n**Step 2.** Let r and k be positive integers with r + k ≤ N. Compare the two equally long lists a_0, a_1, …, a_k and a_r, a_{r+1}, …, a_{r+k}. Their corresponding consecutive ratios are equal by hypothesis. Therefore, ex aequali,\n\na_0 : a_k = a_r : a_{r+k}. [7.14]\n\n**Step 3.** Since a_0 is the unit, it measures a_k as many times as there are units in a_k. The proportion in Step 2 therefore says that a_r measures a_{r+k} that same number of times. Consequently, a_{r+k} is obtained by adding a_r to itself as many times as there are units in a_k: it is a_r multiplied by a_k. Hence\n\na_{r+k} = a_r · a_k. [D7.2; D7.20; D7.15]\n\n**Step 4.** For every positive k with 2k ≤ N, put r = k in Step 3. Then a_{2k} = a_k · a_k, so a_{2k} is square. Counting the unit first, these are precisely the third, fifth, seventh, and succeeding terms obtained by leaving out one term each time. [Step 3; D7.18]\n\n**Step 5.** For every positive k with 3k ≤ N, put r = 2k in Step 3. Then\n\na_{3k} = a_{2k} · a_k = (a_k · a_k) · a_k.\n\nThus a_{3k} is contained by three equal numbers and is cube. These are precisely the fourth, seventh, tenth, and succeeding terms obtained by leaving out two terms each time. [Steps 3–4; D7.19]\n\n**Step 6.** For every positive k with 6k ≤ N, the term a_{6k} is square by Step 4, taking its index as 2(3k), and cube by Step 5, taking its index as 3(2k). These are precisely the seventh, thirteenth, nineteenth, and succeeding terms obtained by leaving out five terms each time. Hence all three assertions hold for every indicated term present in the given progression. [Steps 4–5]",
+          "used": [
+            "D7.1",
+            "D7.20",
+            "7.14",
+            "D7.2",
+            "D7.15",
+            "D7.18",
+            "D7.19"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:05:14.831959+00:00",
+          "prompt_sha256": "7839c1f5c0b321ce009dc45d49693a700705b76fac1d307e36d7d4e6184713a4",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddd-b4d5-73b2-ab77-eaa3ce608d91",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddd-b4d5-73b2-ab77-eaa3ce608d91",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:07:41.757304+00:00",
+          "total_wall_time_seconds": 146.925,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.8_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.9": [
+      {
+        "result": {
+          "prop_id": "9.9",
+          "proof": "**Step 1.** Let u, A₁, A₂, …, Aₙ be the given progression, where u is the unit and A₁ is square. Thus u:A₁ = A₁:A₂ = A₂:A₃ = …, wherever these terms occur. [Hypothesis; D7.20]\n\n**Step 2.** Apply 9.8 first: it directly supplies the alternating square terms under the given continued-proportion hypothesis. Counting the unit as the first term, the third term is A₂; hence A₂, A₄, A₆, …, insofar as they occur, are all square. [9.8]\n\n**Step 3.** For the intervening terms, use 8.22, which states that if three numbers are in continued proportion and the first is square, the third is also square. Indeed, whenever j ≥ 1 and j + 2 ≤ n, the numbers Aⱼ, Aⱼ₊₁, Aⱼ₊₂ are in continued proportion. Consequently, if Aⱼ is square, then Aⱼ₊₂ is square. [Step 1; 8.22]\n\n**Step 4.** Since A₁ is square by hypothesis, Step 3 gives successively that A₃ is square, then A₅ is square, and so on through every odd-indexed term present in the finite progression. [Hypothesis; Step 3]\n\n**Step 5.** Every number after the unit has either an even or an odd index. The even-indexed terms are square by Step 2, and the odd-indexed terms are square by Step 4. Therefore all the remaining numbers are square, as required. [Steps 2 and 4]",
+          "used": [
+            "D7.20",
+            "9.8",
+            "8.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:05:44.832987+00:00",
+          "prompt_sha256": "6b8a0abf528ccca32b71e3c63741c2c04171409cc4c6fbbbe2626ca633ebfe8b",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19dde-29da-7b12-9b7b-ee6a6fdd7625",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19dde-29da-7b12-9b7b-ee6a6fdd7625",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:07:08.954462+00:00",
+          "total_wall_time_seconds": 84.121,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.9_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.10": [
+      {
+        "result": {
+          "prop_id": "9.10",
+          "proof": "**Step 1.** Let the given progression be a₁, a₂, …, aₙ, where a₁ is the unit and a₂ is not square. By hypothesis, the successive ratios a₁:a₂, a₂:a₃, … are equal (D7.20).\n\n**Step 2.** By 9.8, every existing term in positions 3, 5, 7, … is square. These are precisely the third from the unit and the terms obtained thereafter by leaving out one.\n\n**Step 3.** For the remaining positions, use 8.22: if three numbers are in continued proportion and the first is square, the third is also square. This is the direct route because applying it to three consecutive terms in reverse order carries squareness backwards by two positions.\n\n**Step 4.** Suppose some term a₂ₖ in an even position beyond the second is square, with k ≥ 2. Since a₂ₖ₋₂:a₂ₖ₋₁ = a₂ₖ₋₁:a₂ₖ, inversion gives a₂ₖ:a₂ₖ₋₁ = a₂ₖ₋₁:a₂ₖ₋₂ (D7.20). Thus a₂ₖ, a₂ₖ₋₁, a₂ₖ₋₂ are in continued proportion, and 8.22 makes a₂ₖ₋₂ square. Repeating this same application through the preceding triples makes a₂ₖ₋₄, …, a₂ square. This contradicts the hypothesis that a₂ is not square.\n\n**Step 5.** Therefore no even-positioned term is square: the second is not square by hypothesis, and every later even position is excluded by Step 4. Together with Step 2, this proves that, among the numbers following the unit, exactly the third from the unit and all those which successively leave out one are square (9.8; 8.22).",
+          "used": [
+            "D7.20",
+            "9.8",
+            "8.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:06:14.833978+00:00",
+          "prompt_sha256": "03b4fef4252dc0d54a24704c457be25f3e692d2b26031e8ce9cb879b7cae3c8e",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19dde-9f2e-7b01-aab9-69d14222c258",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19dde-9f2e-7b01-aab9-69d14222c258",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:09:30.708260+00:00",
+          "total_wall_time_seconds": 195.874,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.10_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.11": [
+      {
+        "result": {
+          "prop_id": "9.11",
+          "proof": "**Step 1.** Let a₀ = u, a₁, …, aₙ be the given terms, where u is the unit and\nu : a₁ = a₁ : a₂ = ⋯ = aₙ₋₁ : aₙ.\nSince a₁ is a multitude of units, u is a proper part of a₁. By the equality of the successive ratios, each term is likewise a proper part of the next. Thus a₀ < a₁ < ⋯ < aₙ. (Hypothesis; D7.2, D7.20, D7.3, CN5.)\n\n**Step 2.** Choose any lesser term aᵢ and greater term aⱼ, so that i < j, and put d = j − i. Compare the two blocks\na₀, a₁, …, a_d\nand\naᵢ, aᵢ₊₁, …, aⱼ.\nThey contain equally many terms, and their corresponding successive ratios are equal by the continued-proportion hypothesis. (Step 1; hypothesis.) Path choice: these matching blocks lead directly to numerical ex aequali, without constructing products.\n\n**Step 3.** Applying numerical ex aequali to these blocks gives\nu : a_d = aᵢ : aⱼ. (7.14.)\nIf d = 1, this equality is already given by the continued proportion; if i = 0, the two ratios are identical.\n\n**Step 4.** The unit measures a_d according to the number a_d, since a_d consists of that multitude of units. (D7.2.) Therefore the proportion in Step 3 says that aᵢ is the same part of aⱼ that the unit is of a_d: consequently, aᵢ measures aⱼ according to a_d. (D7.20, D7.3.) Since 1 ≤ d ≤ n, a_d is one of the given proportional numbers. The chosen lesser and greater terms were arbitrary; hence the less measures the greater according to some one of the numbers having place among the proportional numbers.",
+          "used": [
+            "D7.2",
+            "D7.20",
+            "D7.3",
+            "CN5",
+            "7.14"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:06:44.835166+00:00",
+          "prompt_sha256": "679eb8c15319c713083bb135befdcf028f6ac9d80abb3dc61ad5c492a17a86bb",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddf-1415-75d0-98ca-75a7ab530c37",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddf-1415-75d0-98ca-75a7ab530c37",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:08:21.672866+00:00",
+          "total_wall_time_seconds": 96.838,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.11_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.12": [
+      {
+        "result": {
+          "prop_id": "9.12",
+          "proof": "**Step 1.** Let 1, A₁, A₂, …, Aₙ be the given finite continued proportion, and let p be any prime number measuring Aₙ. By the hypothesis of continued proportion, for every k with 2 ≤ k ≤ n,\n1 : A₁ = Aₖ₋₁ : Aₖ.\nThese proportions express equality of the respective parts or multiples (D7.20).\n\n**Step 2.** In each such proportion, the unit is the same part of A₁ that Aₖ₋₁ is of Aₖ. Consequently, Aₖ consists of as many copies of Aₖ₋₁ as there are units in A₁ (D7.20). By the definition of multiplication, therefore,\nAₖ = A₁ · Aₖ₋₁ (D7.15).\n\n**Step 3.** Choose the first term Aⱼ among A₁, …, Aₙ which p measures; such a term exists because p measures Aₙ. We use 7.30 directly, since Step 2 supplies a product to which its prime-divisor conclusion applies. If j > 1, then Aⱼ = A₁ · Aⱼ₋₁ by Step 2, so p measures either A₁ or Aⱼ₋₁ (7.30). Both precede Aⱼ, contradicting its choice as the first term measured by p. Hence j = 1, and p measures A₁.\n\n**Step 4.** Since p was any prime number measuring the last term, Step 3 applies separately to every such prime. Therefore, by however many prime numbers the last term is measured, the term next to the unit is also measured by those same primes, as required.",
+          "used": [
+            "D7.20",
+            "D7.15",
+            "7.30"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:07:14.835900+00:00",
+          "prompt_sha256": "eabb465833f25acb6cfa481f77afaf4d2027158fc5ab507d7f6527670f537cd1",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddf-89d1-7a90-b356-9ba842d513c6",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddf-89d1-7a90-b356-9ba842d513c6",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:08:07.356153+00:00",
+          "total_wall_time_seconds": 52.52,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.12_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.13": [
+      {
+        "result": {
+          "prop_id": "9.13",
+          "proof": "**Step 1.** Write the given progression as a₀ = 1, a₁ = p, a₂, …, aₙ, where p is prime. The continued proportion gives aᵢ₊₁ = p·aᵢ for every i < n, by the definitions of numerical proportion and multiplication (D7.20, D7.15). Since p is a number, it exceeds the unit; consequently each successive term exceeds its predecessor, and aₙ is the greatest (D7.2, CN5).\n\n**Step 2.** Path choice: use 9.12 directly to identify the possible prime divisors, then handle arbitrary divisors by choosing a greatest listed divisor. If a prime r divides aₙ, then r also divides p by 9.12. Since p is prime, r cannot be a proper numerical divisor of p; hence r = p (D7.11). Thus p is the only possible prime divisor of aₙ.\n\n**Step 3.** Let d divide aₙ, and suppose, for a contradiction, that d is not one of a₀, a₁, …, aₙ. The unit divides every number (D7.2), so among this finite list there is a greatest term aₖ dividing d. Write d = aₖ·q, where q is the number of times aₖ measures d (D7.5, D7.15, 7.16). Since d is not a listed term, d ≠ aₖ, so q exceeds the unit. Moreover, aₖ < d ≤ aₙ, because a proper multiple exceeds its measure; hence k < n (D7.15, CN5).\n\n**Step 4.** By 7.32, q is either prime or measured by a prime. Thus choose a prime r dividing q, taking r = q if q itself is prime. This proposition applies directly without requiring q to be composite. Since d = aₖ·q, q divides d (D7.15, 7.16). Therefore r divides d and hence aₙ: measurement is transitive because a repeated sum of repeated sums of a number is again a repeated sum of that number (D7.15). Step 2, by 9.12 and D7.11, now gives r = p. Consequently p divides q.\n\n**Step 5.** Write q = p·t, where t is a number or the unit. Regrouping the repeated additions defining multiplication, and interchanging factors where necessary, gives\n\nd = aₖ·q = aₖ·(p·t) = (p·aₖ)·t = aₖ₊₁·t\n\n(D7.15, 7.16, and Step 1). Thus aₖ₊₁ divides d. But k < n, so aₖ₊₁ is a listed term greater than aₖ, contradicting the choice of aₖ. Therefore every divisor of the greatest term has a place among the given proportional terms, as required.",
+          "used": [
+            "D7.20",
+            "D7.15",
+            "D7.2",
+            "CN5",
+            "9.12",
+            "D7.11",
+            "D7.5",
+            "7.16",
+            "7.32"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:07:44.838212+00:00",
+          "prompt_sha256": "2253ef73b27fe22779a3b1d2c59ca75ab171d11f2f2c33b446769ce19f2104f7",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19ddf-fe97-7360-8689-d1509066005b",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19ddf-fe97-7360-8689-d1509066005b",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:11:46.817201+00:00",
+          "total_wall_time_seconds": 241.979,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.13_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.14": [
+      {
+        "result": {
+          "prop_id": "9.14",
+          "proof": "**Step 1.** Let N be the least number measured by the given prime numbers p₁, …, pᵣ. Suppose, for contradiction, that another prime q measures N, with q different from every pᵢ. These are the hypothesis and the assumed contrary of the conclusion.\n\n**Step 2.** Since q is prime, no prime different from q measures it. Thus none of the pᵢ measures q. In particular, N cannot equal q, since every pᵢ measures N. [D7.11; Step 1]\n\n**Step 3.** Because q measures N and N is not q, there is a number M such that multiplying M by q produces N. [D7.5, D7.15] Moreover, M<N: N consists of M copies of q, each containing more than one unit, so one unit from each copy constitutes a proper part of N equal to M. [D7.2, D7.15, CN5]\n\n**Step 4.** Take any of the given primes pᵢ. It measures N, the product of M and q; therefore it measures M or q. [7.30] The latter is excluded by Step 2, so pᵢ measures M. Since pᵢ was arbitrary, every given prime measures M. The direct prime-product proposition 7.30 is the natural choice here because the required product is already available; no auxiliary coprimality argument is needed.\n\n**Step 5.** Thus M is a number smaller than N and measured by all the given primes, contradicting the assumed leastness of N. [Steps 3–4; hypothesis] Consequently, no prime other than the primes originally specified can measure N, as required.",
+          "used": [
+            "D7.11",
+            "D7.5",
+            "D7.15",
+            "D7.2",
+            "CN5",
+            "7.30"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:08:14.841434+00:00",
+          "prompt_sha256": "db2cf1803482102e41c12d6303c22035efd4d4fade44d9da7a645785461390b1",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de0-73c3-7aa3-9ee7-be3a7085ff73",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de0-73c3-7aa3-9ee7-be3a7085ff73",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:09:22.696858+00:00",
+          "total_wall_time_seconds": 67.855,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.14_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.15": [
+      {
+        "result": {
+          "prop_id": "9.15",
+          "proof": "**Step 1.** Let A, B, C be in continued proportion, A:B = B:C, and be the least numbers having this ratio. By 8.3, A and C are prime to one another. This is the direct path: 8.3 applies immediately to the leastness hypothesis, without constructing another proportional triple.\n\n**Step 2.** Applying 7.19 to A:B = B:C gives A·C = B·B.\n\n**Step 3.** Suppose that the sum of some two of A, B, C is not prime to the remaining number. They therefore have a common numerical measure d [D7.12]. By 7.32, either d is prime, in which case take p = d, or some prime p measures d. Thus a prime p measures both the chosen sum and the remaining number. Here and below, a measure passes to multiples, and a measure of a sum and one summand measures the other summand: these are consequences of repeated addition and subtraction of equal multiples [D7.5, D7.15, CN2, CN3].\n\n**Step 4.** First suppose that the remaining number is an extreme. Since the argument is unchanged on interchanging A and C, let it be A. Then p measures A and B+C. Because p measures A, it measures A·C, and hence B·B by Step 2 [D7.15, 7.19]. Since p is prime, 7.30 implies that p measures B. Subtracting B from B+C shows that p also measures C [CN3 and the measuring rule in Step 3]. Thus p measures both A and C, contrary to their being prime to one another [8.3, D7.12]. This excludes either extreme as the remaining number.\n\n**Step 5.** Now suppose that the remaining number is B. Then p measures B and A+C. It therefore measures B·B = A·C [D7.15, 7.19]. By 7.30, p measures A or C. In the first case, subtracting A from A+C shows that p measures C; in the second, subtracting C shows that p measures A [CN3 and the measuring rule in Step 3]. Again p measures both extremes, contradicting 8.3 and D7.12.\n\n**Step 6.** Every possible choice of the remaining number has been covered. No numerical common measure can therefore exist between any two of A, B, C added together and the remaining number. Consequently A+B is prime to C, A+C is prime to B, and B+C is prime to A [D7.12], as required.",
+          "used": [
+            "8.3",
+            "7.19",
+            "D7.12",
+            "7.32",
+            "D7.5",
+            "D7.15",
+            "CN2",
+            "CN3",
+            "7.30"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:08:44.838703+00:00",
+          "prompt_sha256": "c2f19132aab2ceb0067fe38a7d8e361bf41d5964a034f647a1348b5ba398e2a6",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de0-e8f9-7520-803e-e73b6442b592",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de0-e8f9-7520-803e-e73b6442b592",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:10:13.648586+00:00",
+          "total_wall_time_seconds": 88.81,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.15_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.16": [
+      {
+        "result": {
+          "prop_id": "9.16",
+          "proof": "**Step 1.** Let A and B be numbers prime to one another; thus their only common measure is a unit (D7.12). Suppose, for a contradiction, that there is a number C such that A:B = B:C.\n\n**Step 2.** Since A and B are prime to one another, they are the least numbers having their ratio (7.21). This least-terms route is the direct choice because 7.21 applies immediately to the given coprimality.\n\n**Step 3.** The least numbers having a given ratio measure the corresponding numbers in any pair having that ratio (7.20). Applying this to A:B = B:C, we obtain that A measures B.\n\n**Step 4.** Since A also measures itself once, A is a common measure of A and B. But A, being a number, is a multitude of units and not a unit (D7.2). This contradicts their being prime to one another (D7.12). Therefore no number C satisfies B:C = A:B: the second number is not to any other number as the first is to the second.",
+          "used": [
+            "D7.12",
+            "7.21",
+            "7.20",
+            "D7.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:09:22.698759+00:00",
+          "prompt_sha256": "8716fd0d08719a117695f619ca18da9cde2e0640c18cfebf8bf15c75adfb426e",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de1-7cb7-7dc1-8e83-c4bd391998ff",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de1-7cb7-7dc1-8e83-c4bd391998ff",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:09:59.779628+00:00",
+          "total_wall_time_seconds": 37.081,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.16_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.17": [
+      {
+        "result": {
+          "prop_id": "9.17",
+          "proof": "**Step 1.** Let A₁, A₂, …, Aₙ be the given numbers in continued proportion, with n ≥ 2, and let A₁ and Aₙ be prime to one another. Thus no number other than the unit measures both extremes (D7.12).\n\n**Step 2.** Suppose, for a contradiction, that there is a number X such that Aₙ:X = A₁:A₂. The extended list A₁, A₂, …, Aₙ, X is therefore in continued proportion. Path choice: compare the original chain with its one-place shift, since this brings the given coprime extremes directly into a proportion. The chains A₁, …, Aₙ and A₂, …, Aₙ, X have corresponding successive ratios equal; hence, ex aequali,\nA₁:Aₙ = A₂:X (7.14).\n\n**Step 3.** Since A₁ and Aₙ are prime to one another, they are the least numbers having their ratio (7.21). The least numbers in a ratio measure the corresponding numbers in every equal ratio (7.20). Applied to the proportion in Step 2, this shows that A₁ measures A₂.\n\n**Step 4.** Every successive ratio Aᵢ:Aᵢ₊₁ equals A₁:A₂. Since A₁ measures A₂, the definition of proportional numbers therefore gives that each Aᵢ measures Aᵢ₊₁ (D7.20). Consequently A₁ measures Aₙ: successively, each next term consists of repetitions of the preceding term, so repetitions of a term measured by A₁ remain measured by A₁ (D7.15).\n\n**Step 5.** Thus A₁ measures both itself and Aₙ. Since A₁ is a number, not a unit (D7.2), this contradicts the hypothesis that the extremes are prime to one another (D7.12). Therefore no number X satisfies Aₙ:X = A₁:A₂: the last is not to any other number as the first is to the second.",
+          "used": [
+            "D7.12",
+            "7.14",
+            "7.21",
+            "7.20",
+            "D7.20",
+            "D7.15",
+            "D7.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:09:52.701605+00:00",
+          "prompt_sha256": "9c2e991c5d991466bf5f1fc0ec9947eff450b11595ddcb4088dadafefd426104",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de1-f1f3-7ec2-b201-b98b31751766",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de1-f1f3-7ec2-b201-b98b31751766",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:12:41.713273+00:00",
+          "total_wall_time_seconds": 169.012,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.17_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.18": [
+      {
+        "result": {
+          "prop_id": "9.18",
+          "proof": "**Step 1.** Let the given numbers, in their assigned order, be A and B. We seek a number C such that A:B = B:C (D7.20). Choose the product criterion of 7.19: it applies directly to A, B, B, C and makes the required proportion equivalent to AC = BB. This avoids an unnecessary preliminary reduction of the given ratio.\n\n**Step 2.** Multiply B by itself, producing the square number S = BB (D7.15, D7.18). Investigate whether S is the sum of at least two copies of A: begin with A and successively add another A until the sum equals or exceeds S. This is a finite investigation, since S consists of finitely many units and each addition strictly increases the sum (D7.2, D7.15, CN5). Equality with only one copy is not accepted, because the required third term must be a number, not merely the unit (D7.1, D7.2).\n\n**Step 3.** Suppose equality occurs with at least two copies of A, and let C be the number of these copies. Then CA = S by the definition of multiplication, and AC = CA by commutativity (D7.15, 7.16). Hence AC = BB. The converse direction of 7.19 therefore gives A:B = B:C. Thus C is the required third proportional.\n\n**Step 4.** Suppose instead that the investigation finds no equality with at least two copies of A. If a third proportional number C nevertheless existed, then A:B = B:C would imply AC = BB = S by 7.19. By 7.16 and D7.15, S would consequently consist of C copies of A. Since C is a number rather than the unit, these would be at least two copies (D7.1, D7.2), contradicting the investigation. Thus no third proportional number exists in this case.\n\n**Step 5.** Therefore the investigation is complete: form the square of the second given number and test whether it consists of a number of copies of the first. If it does, that number of copies is a third proportional; if it does not, no third proportional number is possible (D7.15, 7.19).",
+          "used": [
+            "D7.20",
+            "7.19",
+            "D7.15",
+            "D7.18",
+            "D7.2",
+            "CN5",
+            "D7.1",
+            "7.16"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:10:22.700267+00:00",
+          "prompt_sha256": "dca6275e8e5f48082b4f851420e978e09e2188e7bbccb10ae05e49526a63904d",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de2-6736-7c81-99a5-e54fd99b0222",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de2-6736-7c81-99a5-e54fd99b0222",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:12:09.431047+00:00",
+          "total_wall_time_seconds": 106.731,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.18_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.19": [
+      {
+        "result": {
+          "prop_id": "9.19",
+          "proof": "**Step 1.** Let the three given numbers, in their assigned order, be A, B, C. We seek a number X such that A:B = C:X (D7.20). **Path choice:** use 7.19 directly: this proportion holds if and only if the product AX equals the product BC. This gives an immediate test without first reducing the given ratios.\n\n**Step 2.** Form the number P = BC (D7.15). Count successive whole copies of A until their sum either equals or first exceeds P. This is a finite test, since A and P are finite multitudes of units (D7.2, D7.15). Accept precisely when equality is reached after two or more copies; otherwise reject. The restriction to two or more copies ensures that their count is a number, rather than merely the unit (D7.1, D7.2).\n\n**Step 3.** If the test accepts, let X be the number of copies counted. Then AX = P = BC by the definition of multiplication (D7.15). Hence A:B = C:X by the converse direction of 7.19. Thus X is the required fourth proportional.\n\n**Step 4.** Conversely, suppose a fourth proportional number X exists. By 7.19, AX = BC = P. Therefore P consists of exactly X whole copies of A (D7.15). Since X is a number and not the unit, there are at least two such copies (D7.1, D7.2). The test in Step 2 must therefore accept. Consequently, whenever that test rejects, no fourth proportional number exists.\n\n**Step 5.** The investigation is complete: a fourth proportional number exists exactly when A measures BC and BC is greater than A—that is, when A is a proper divisor of BC—and the required number is the number of times A measures BC (D7.3, D7.15; 7.19). If BC = A, the count is only the unit, so it does not supply a fourth proportional number in the sense of D7.1–D7.2.",
+          "used": [
+            "D7.1",
+            "D7.2",
+            "D7.3",
+            "D7.15",
+            "D7.20",
+            "7.19"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:10:52.700995+00:00",
+          "prompt_sha256": "ba08af5d0a493745fe8d06301832f106bca4894e92e61066a1fd4dcd683d9d3d",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de2-dc74-76f3-8e56-0272117c4b5d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de2-dc74-76f3-8e56-0272117c4b5d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:12:10.179112+00:00",
+          "total_wall_time_seconds": 77.478,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.19_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.20": [
+      {
+        "result": {
+          "prop_id": "9.20",
+          "proof": "**Step 1.** Let p₁, …, pₖ be any assigned finite collection of distinct prime numbers. Obtain a common multiple M by starting with p₁ and successively applying 7.34 to the preceding common multiple and the next prime. Each preceding prime continues to measure the resulting number, since grouping repetitions shows that a multiple of a multiple is again a multiple of the original number (D7.5). Thus every pᵢ measures M. Path choice: iterate the two-number common-multiple construction; its leastness property is not needed.\n\n**Step 2.** Adjoin one unit u to M, forming the number N = M + u (D7.1, D7.2). Since each pᵢ measures M, each is at most M; and N is greater than M (D7.5, CN5). Hence N is greater than every assigned prime. If N is prime, it is therefore a prime outside the assigned collection, and adjoining it increases that collection (CN5).\n\n**Step 3.** It remains to consider the case in which N is not prime. Then N is composite (D7.11, D7.13), so some prime q measures N by 7.31. Path choice: use the composite-number prime-divisor theorem directly, since the prime case has already been settled.\n\n**Step 4.** Suppose q were one of the assigned primes. Then q would measure M by Step 1, as well as N by Step 3. Subtract the q-sized groups composing M from the q-sized groups composing N. Since N > M, a positive number of such groups remains; thus q measures N − M = u (CN3, D7.5). But q is a number, hence a multitude of units, and is greater than one unit (D7.1, D7.2, CN5). Even one q-sized group therefore exceeds u, so q cannot measure u. This contradiction shows that q is different from every assigned prime.\n\n**Step 5.** In either case, a prime outside the assigned collection has been found: N in Step 2, or q in Steps 3–4. Adjoining that prime gives a strictly greater multitude of distinct primes (CN5). Since the assigned collection was arbitrary, prime numbers are more than any assigned multitude of prime numbers.",
+          "used": [
+            "7.34",
+            "D7.5",
+            "D7.1",
+            "D7.2",
+            "CN5",
+            "D7.11",
+            "D7.13",
+            "7.31",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:10:36.180580+00:00",
+          "prompt_sha256": "d5b682134aa7d63b31c99d2dc6595c90fa56d1e5d6e5af68a832ca1969ad8f36",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2c-32f0-7462-a9bd-8b0ce8f1b9ff",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2c-32f0-7462-a9bd-8b0ce8f1b9ff",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:12:08.472627+00:00",
+          "total_wall_time_seconds": 92.292,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.20_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.21": [
+      {
+        "result": {
+          "prop_id": "9.21",
+          "proof": "**Step 1.** Let E₁, …, Eₙ be any finite collection of even numbers. By D7.6, divide each Eᵢ into two equal parts Aᵢ and Bᵢ. Thus Aᵢ = Bᵢ for every i. (Path choice: combine these equal parts directly, since the definition already supplies the required divisions.)\n\n**Step 2.** Let A be the sum of all the parts Aᵢ, and let B be the sum of all the parts Bᵢ. Since the corresponding parts are equal, repeated application of CN2 gives A = B.\n\n**Step 3.** A number is a multitude of units (D7.2). Gathering the first part of each summand into A and the second into B therefore partitions the whole sum E₁ + ⋯ + Eₙ into these two parts, without omitting or repeating any unit. By Step 2 the parts are equal. Hence the whole sum is divisible into two equal parts and is therefore even (D7.6).",
+          "used": [
+            "D7.6",
+            "CN2",
+            "D7.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-02T20:12:16.821367+00:00",
+          "prompt_sha256": "7e4219a609804225fd5387bb3793efc3f20f78d9f286e39f5da0c95e1f93b59b",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19de4-24f6-7731-abfc-2b432b09b4ad",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19de4-24f6-7731-abfc-2b432b09b4ad",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-02T20:13:01.768520+00:00",
+          "total_wall_time_seconds": 44.947,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.21_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.22": [
+      {
+        "result": {
+          "prop_id": "9.22",
+          "proof": "**Step 1.** Let A₁, …, Aₙ be the given odd numbers, where their multitude n is even. Remove one unit from each Aᵢ, leaving an even number Eᵢ, so that Aᵢ = Eᵢ + 1 (D7.7). This route reduces the question directly to the already established addition theorem for even numbers, 9.21.\n\n**Step 2.** Let E be the sum of E₁, …, Eₙ. Since every Eᵢ is even, E is even (9.21).\n\n**Step 3.** The removed units, one from each of the n given numbers, together constitute the number n (D7.2). Their sum is therefore even, by the hypothesis that the multitude of the given numbers is even.\n\n**Step 4.** Adding the equalities Aᵢ = Eᵢ + 1 shows that the sum of the given odd numbers equals E + n (CN2). Both E and n are even, so their sum is even (9.21). Therefore, if an even multitude of odd numbers is added together, the whole is even.",
+          "used": [
+            "D7.7",
+            "9.21",
+            "D7.2",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:13:38.522055+00:00",
+          "prompt_sha256": "849d54096ffa0314ef573b2a0b720a1c24ed2211f01eaa6d70c9a073524446de",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2e-fb5a-7f20-abfa-326a3462f03d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2e-fb5a-7f20-abfa-326a3462f03d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:14:10.024529+00:00",
+          "total_wall_time_seconds": 31.502,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.22_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.23": [
+      {
+        "result": {
+          "prop_id": "9.23",
+          "proof": "**Step 1.** Let the given odd numbers be a₁, …, aₙ, with their multitude n odd, and let S be their sum. If there is only one summand, S is odd by hypothesis. Otherwise, removing one from the odd multitude leaves the even multitude n − 1. [D7.7]\n\n**Step 2.** Let T be the sum of a₂, …, aₙ. These are odd numbers in an even multitude, so T is even. [9.22] This is the direct path: separating one summand makes the preceding proposition immediately applicable.\n\n**Step 3.** Remove a unit from a₁, and call the remainder b. Since a₁ is odd, b is even. [D7.7] Therefore E = T + b is even, being the sum of two even numbers. [9.21]\n\n**Step 4.** Since a₁ = b + 1, adding T to both sides gives S = E + 1. [CN2] Thus S differs by a unit from the even number E, and consequently S is odd. [D7.7] Therefore the sum of any odd multitude of odd numbers is odd.",
+          "used": [
+            "D7.7",
+            "9.22",
+            "9.21",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:13:08.521056+00:00",
+          "prompt_sha256": "4e5e3f446448d3cfc07a7f130d795ee2340512e3a612482bc2d8f1d75cdc11b1",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2e-85f0-76d1-a245-04a8a092fe7a",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2e-85f0-76d1-a245-04a8a092fe7a",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:13:59.063753+00:00",
+          "total_wall_time_seconds": 50.543,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.23_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.24": [
+      {
+        "result": {
+          "prop_id": "9.24",
+          "proof": "**Step 1.** Let A be an even number, B the smaller even number subtracted from it, and R = A − B. Since A and B are even, they have equal halves a and b respectively, so A = a + a and B = b + b. (D7.6)\n\n**Step 2.** We have a > b. For if a = b, adding equals gives A = B; if a < b, then a + a is a proper part of b + b, giving A < B. Both contradict A > B. (CN2, CN5)\n\n**Step 3.** Apply the previously proved subtraction rule for equimultiples: if a whole and a subtracted part are the same multiples of another whole and its subtracted part, their remainders are also those same multiples. Here A is twice a, and B is twice b; therefore A − B is twice a − b. Thus R = (a − b) + (a − b). This route is chosen because the equal halves immediately supply the doubles required by the theorem. (5.5)\n\n**Step 4.** Consequently R is divisible into the two equal parts a − b and a − b. Hence the remainder is even. (D7.6)",
+          "used": [
+            "D7.6",
+            "CN2",
+            "CN5",
+            "5.5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:12:38.520146+00:00",
+          "prompt_sha256": "fb636f0497fc41d9b88447726d98f60d17960f1728a3feafd788be98277996e4",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2e-10ac-7ac0-ade8-b05eb5e20f2d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2e-10ac-7ac0-ade8-b05eb5e20f2d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:14:03.024433+00:00",
+          "total_wall_time_seconds": 84.504,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.24_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.25": [
+      {
+        "result": {
+          "prop_id": "9.25",
+          "proof": "**Step 1.** Let A be the given even number, B the odd number subtracted, and R the remainder, so A = B + R. By D7.6, A is divisible into two equal parts; by D7.7, B is not.\n\n**Step 2.** Suppose, for a contradiction, that R is even. Then subtracting R from the even number A leaves an even remainder, by 9.24. (Path choice: 9.24 applies directly to the original whole and the supposed even remainder, requiring no auxiliary construction.)\n\n**Step 3.** Subtracting R from both sides of A = B + R gives A − R = B [CN3]. Thus B is even by Step 2, contradicting its oddness: it cannot both be divisible and not divisible into two equal parts [D7.6, D7.7].\n\n**Step 4.** Therefore R is not even, so it is not divisible into two equal parts [D7.6]. Hence R is odd [D7.7]. Thus, if an odd number is subtracted from an even number, the remainder is odd.",
+          "used": [
+            "D7.6",
+            "D7.7",
+            "9.24",
+            "CN3"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:12:08.517980+00:00",
+          "prompt_sha256": "634c428c18e5cc09a047e221b4a8347e4145ff140501301bb6194d8096d5c8da",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2d-9b76-7dc2-be4d-ca9367adcbe6",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2d-9b76-7dc2-be4d-ca9367adcbe6",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:12:37.193598+00:00",
+          "total_wall_time_seconds": 28.676,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.25_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.26": [
+      {
+        "result": {
+          "prop_id": "9.26",
+          "proof": "**Step 1.** Let A be the given odd number, B the smaller odd number subtracted, and R the remainder; thus A = B + R (hypothesis). Suppose that R is not even. Then R is odd, since an even number is divisible into two equal parts and an odd number is not (D7.6, D7.7).\n\n**Step 2.** The two summands B and R are therefore odd. Their multitude, two, is even, being divisible into two equal units (D7.6). Hence their sum B + R, which is A, is even by 9.22. This is the chosen route: 9.22 applies directly to the two odd summands, without reconstructing their halves.\n\n**Step 3.** But A is odd by hypothesis, and therefore cannot be divisible into two equal parts (D7.7), whereas its being even requires precisely that divisibility (D7.6). This contradiction rules out the supposition that R is not even. Therefore R is even: if an odd number is subtracted from an odd number, the remainder is even.",
+          "used": [
+            "D7.6",
+            "D7.7",
+            "9.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:45:18.324151+00:00",
+          "prompt_sha256": "cfa70f9f35602e6ac5be43a43038b1e4893428cb8404322f0a0602856c1f0359",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f4b-f831-7cc3-afd2-3b55aff9ac59",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f4b-f831-7cc3-afd2-3b55aff9ac59",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:46:13.749696+00:00",
+          "total_wall_time_seconds": 55.426,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 1,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.26_attempt1"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.27": [
+      {
+        "result": {
+          "prop_id": "9.27",
+          "proof": "**Step 1.** Let A be an odd number, and let an even number B be subtracted from it, leaving R. Thus A = B + R. Since A is odd, it is not divisible into two equal parts. [Hypothesis; D7.7]\n\n**Step 2.** Choose the contradiction route using 9.21, since the whole A is already expressed as the sum B + R; no auxiliary numbers are needed. Suppose R were even. Then B and R would both be even, so their sum A would be even. [9.21]\n\n**Step 3.** A would therefore be divisible into two equal parts, contrary to Step 1. Hence R is not even, and thus is not divisible into two equal parts. By the definition of odd, R is odd. Therefore, if an even number is subtracted from an odd number, the remainder is odd. [D7.6; D7.7]",
+          "used": [
+            "D7.7",
+            "9.21",
+            "D7.6"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:14:38.524140+00:00",
+          "prompt_sha256": "601ad84fae2388498d43c2c4530646b98c4f0940fb1e99f34d192f51387e8832",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f2f-e56d-7310-9300-47accd64d00d",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f2f-e56d-7310-9300-47accd64d00d",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:15:07.235561+00:00",
+          "total_wall_time_seconds": 28.711,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.27_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.28": [
+      {
+        "result": {
+          "prop_id": "9.28",
+          "proof": "**Step 1.** Let A be an odd number and B an even number, and let A by multiplying B produce C. By the definition of multiplication, C is the sum of as many copies of B as there are units in A. [D7.15]\n\n**Step 2.** Every summand is B and therefore even by hypothesis. By 9.21, the sum of any multitude of even numbers is even; hence C is even, as required. This is the direct route: the given order of multiplication already expresses C as a sum of even numbers, so no interchange of factors or restriction on the multitude of summands is needed. [9.21]",
+          "used": [
+            "D7.15",
+            "9.21"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:15:08.525303+00:00",
+          "prompt_sha256": "e478ef2318782dbf05cc2764d8c2ba6ade9e4ac0151c18e84d22bb793e51bec9",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f30-5ad1-7760-94cb-a7c2d5f4b408",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f30-5ad1-7760-94cb-a7c2d5f4b408",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:15:24.888953+00:00",
+          "total_wall_time_seconds": 16.364,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.28_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.29": [
+      {
+        "result": {
+          "prop_id": "9.29",
+          "proof": "**Step 1.** Let the odd number A multiply the odd number B to produce C. By the definition of multiplication, C is the sum of as many copies of B as there are units in A. [D7.15]\n\n**Step 2.** Every summand is odd, since B is odd, and their multitude is odd, since A is odd. Thus the direct applicable result is 9.23: a sum of odd numbers whose multitude is odd is itself odd. Applying it to the defining sum gives that C is odd, as required. [9.23]",
+          "used": [
+            "D7.15",
+            "9.23"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:15:38.526063+00:00",
+          "prompt_sha256": "bf3200126f79241f9dc6184cb8f0b25ae2801cd1caef118dc1430bcc66457286",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f30-cfe9-7781-b661-a33852f9aca0",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f30-cfe9-7781-b661-a33852f9aca0",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:15:58.418042+00:00",
+          "total_wall_time_seconds": 19.892,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.29_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.30": [
+      {
+        "result": {
+          "prop_id": "9.30",
+          "proof": "**Step 1.** Let the odd number A measure the even number B. Then B consists of a certain number Q of copies of A, so Q multiplying A produces B. The count Q is not merely a unit, since otherwise B would equal A, contrary to their being even and odd respectively. [D7.5, D7.15, D7.6, D7.7]\n\n**Step 2.** If Q were odd, then Q multiplying the odd number A would produce an odd number, by 9.29. But its product B is even, which is impossible. Therefore Q is not odd and hence is even. Path choice: the multiplication supplied by the hypothesis makes the already-proved odd-product theorem the direct tool. [9.29, D7.6, D7.7]\n\n**Step 3.** Since Q is even, divide the Q copies of A constituting B into two groups containing equally many copies. The sums of these groups are equal, by repeated addition of equals, and together they constitute B. Thus each group has sum equal to the half of B. [D7.6, D7.15, CN2]\n\n**Step 4.** Each group consists of whole copies of A, possibly just one copy. Consequently A measures its sum, and therefore A measures the half of B, as required. [D7.5, D7.15]",
+          "used": [
+            "D7.5",
+            "D7.15",
+            "D7.6",
+            "D7.7",
+            "9.29",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:16:08.527172+00:00",
+          "prompt_sha256": "04b030175820186d47347b3060adb9cdbd8e7ba9c809e6f90212b7ede1cd0070",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f31-4520-75e3-a009-05592c7b60b2",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f31-4520-75e3-a009-05592c7b60b2",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:17:21.206549+00:00",
+          "total_wall_time_seconds": 72.679,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.30_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.31": [
+      {
+        "result": {
+          "prop_id": "9.31",
+          "proof": "**Step 1.** Let A be an odd number prime to a number B, and let C = B + B be the double of B. Then C is even, with B as its half. [D7.6]\n\n**Step 2.** Suppose that A and C are not prime to one another. Then some number D greater than the unit measures both A and C. [D7.12]\n\n**Step 3.** D cannot be even. For, since D measures A, A is either D itself or a sum of copies of D. If D were even, A would therefore be even, in the latter case by 9.21, contrary to its being odd. Hence D is odd. [9.21; D7.6; D7.7]\n\n**Step 4.** Apply 9.30: since the odd number D measures the even number C, it also measures its half B. This is the direct path, because 9.30 passes immediately from the double to its half. [9.30]\n\n**Step 5.** Thus D measures both A and B, contradicting the hypothesis that they are prime to one another. Consequently A and C are prime to one another: the odd number A is prime to the double of B. [D7.12]",
+          "used": [
+            "D7.6",
+            "D7.12",
+            "9.21",
+            "D7.7",
+            "9.30"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:16:38.528350+00:00",
+          "prompt_sha256": "88805dad83fd17109cbda3fd4ebab5a6cbd1f3e452d9cb2ed90aaf5c3cf6259b",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f31-ba2f-7a12-bc25-5fc39283fe53",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f31-ba2f-7a12-bc25-5fc39283fe53",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:17:18.795428+00:00",
+          "total_wall_time_seconds": 40.267,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.31_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.32": [
+      {
+        "result": {
+          "prop_id": "9.32",
+          "proof": "**Step 1.** Let N be any number obtained by one or more successive doublings of the dyad. Write the finite sequence as a₀ = 2, a₁, …, aᵣ = N, where r ≥ 1 and each term doubles its predecessor. The dyad is the starting seed; its successive doubles are the numbers under consideration. Prefixing a unit gives 1, a₀, a₁, …, aᵣ in continued proportion, since each succeeding term is twice the preceding one. [D7.15, D7.20]\n\n**Step 2.** The dyad divides into two equal units, and each subsequent term divides into two equal copies of its predecessor. Hence every numerical term in this progression is even. Moreover, the dyad is prime: a number is a multitude of units, so no number smaller than the dyad can measure it; its only proper measure is therefore the unit. [D7.2, D7.6, D7.11, CN5]\n\n**Step 3.** The even number aᵣ₋₁ measures N according to the dyad, which is also even. Consequently N is even-times even. [D7.15, D7.8]\n\n**Step 4.** For exclusivity, use the direct divisor-classification route: 9.13 applies naturally because the progression begins with a unit followed by the prime dyad. It follows that every numerical proper measure M of N occurs among a₀, a₁, …, aᵣ₋₁. Thus every such measure M is even, by Step 2. [9.13, D7.6]\n\n**Step 5.** Since M and N belong to this progression and M is less than N, M measures N according to one of the numbers in the progression. That number is not the unit, because M is less than N; hence it too is even by Step 2. Thus every numerical proper measure of N measures it according to an even number, never an odd number. In particular, N is not even-times odd. Together with Step 3, this proves that N is even-times even only. Since N was an arbitrary successive double of the dyad, the proposition follows. [9.11, D7.6, D7.7, D7.8, D7.9]",
+          "used": [
+            "D7.15",
+            "D7.20",
+            "D7.2",
+            "D7.6",
+            "D7.11",
+            "CN5",
+            "D7.8",
+            "9.13",
+            "9.11",
+            "D7.7",
+            "D7.9"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:17:08.529703+00:00",
+          "prompt_sha256": "1a6e5128a0c74966091eed1cb1e60621452330e272a92796599f927175286048",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f32-2f88-7852-9d37-48f6c0b9959a",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f32-2f88-7852-9d37-48f6c0b9959a",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:19:28.929234+00:00",
+          "total_wall_time_seconds": 140.4,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.32_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.33": [
+      {
+        "result": {
+          "prop_id": "9.33",
+          "proof": "**Step 1.** Let N be a number whose half H is odd. Thus N = H + H, and N is even by D7.6.\n\n**Step 2.** The dyad multiplying H produces N (D7.15). Therefore H multiplying the dyad also produces N (7.16). Consequently the dyad, which is even, measures N according to the odd number H; hence N is even-times odd (D7.6, D7.9).\n\n**Step 3.** To establish “only,” we exclude an even-times-even representation. Suppose, for a contradiction, that an even number E measures N according to an even number F (D7.8). Then N consists of F equal summands, each equal to E (D7.15).\n\n**Step 4.** Since F is even, divide those summands into two groups containing equally many summands (D7.6). Their sums are equal, since they contain equally many equal terms (CN2), and together they make N; thus each group sums to the half H. Each group consists entirely of even numbers E, so its sum H is even by 9.21. This is the direct prior result to use, because the half has been exhibited as a sum of even numbers.\n\n**Step 5.** But H is odd and therefore is not divisible into two equal parts (D7.7), contradicting its being even (D7.6). Thus N is not even-times even (D7.8). Since it is even-times odd by Step 2, N is even-times odd only (D7.9).",
+          "used": [
+            "D7.6",
+            "D7.15",
+            "7.16",
+            "D7.9",
+            "D7.8",
+            "CN2",
+            "9.21",
+            "D7.7"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:17:38.530079+00:00",
+          "prompt_sha256": "1087de5abca2bf3a2dcf9b63a2d46131cee4bc630a423964a513da21513ef78e",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f32-a47d-78b1-a572-a4708f9b0a55",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f32-a47d-78b1-a572-a4708f9b0a55",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:19:39.265689+00:00",
+          "total_wall_time_seconds": 120.736,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.33_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.34": [
+      {
+        "result": {
+          "prop_id": "9.34",
+          "proof": "**Step 1.** Let N satisfy the hypotheses, and let H be the numerical half referred to in the statement, so that N = 2H. Since N is not a term of the sequence 2, 4, 8, …, H is not a unit. By hypothesis H is not odd; therefore H is even. (D7.1, D7.6, D7.7.)\n\n**Step 2.** The dyad, an even number, measures N according to the even number H. Thus N is even-times even. (D7.6, D7.15, D7.8.)\n\n**Step 3.** To obtain an odd multiplicity directly, choose the greatest term D of the dyad-doubling sequence that measures N, allowing equality when considering these measures. Such a term exists: the dyad measures N by Step 2, every such measure is at most N, and the successive doubles strictly increase. Since N is a finite multitude of units, there are only finitely many possible such terms. Moreover, D is even, being either the dyad or the double of its preceding term. (D7.2, D7.15, CN5, D7.6.)\n\n**Step 4.** Write N = qD, where q is the multiplicity of this measure. Since N is not itself a term of the dyad-doubling sequence, N is not D; hence q is a number, not a unit. If q were even, its q equal copies of D could be grouped into pairs. Each pair equals 2D, so 2D would also measure N. But 2D is the next term of the sequence and is greater than D, contradicting the choice of D. Consequently q is not even and therefore is odd. (D7.1, D7.2, D7.15, D7.6, CN2, CN5, D7.7.)\n\n**Step 5.** The even number D therefore measures N according to the odd number q, so N is even-times odd. Together with Step 2, this proves that N is both even-times even and even-times odd. (D7.9, D7.8.)",
+          "used": [
+            "D7.1",
+            "D7.6",
+            "D7.7",
+            "D7.15",
+            "D7.8",
+            "D7.2",
+            "CN5",
+            "CN2",
+            "D7.9"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:18:08.531073+00:00",
+          "prompt_sha256": "f7dad465ad92f4f2f3f11eef463d48d33fcfc5ce61ef85f2a075bb31496fe458",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f33-19e1-7951-b8da-20dcb1fd9b92",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f33-19e1-7951-b8da-20dcb1fd9b92",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:19:31.971750+00:00",
+          "total_wall_time_seconds": 83.441,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.34_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.35": [
+      {
+        "result": {
+          "prop_id": "9.35",
+          "proof": "**Step 1.** Let a₁, a₂, …, aₙ be the given numbers in continued proportion, so that a₁:a₂ = a₂:a₃ = ⋯ = aₙ₋₁:aₙ (hypothesis; D7.20). Let e = a₂ − a₁ and f = aₙ − a₁ be the stated excesses, and put S = a₁ + ⋯ + aₙ₋₁ and T = a₂ + ⋯ + aₙ. We use the numerical summation theorem 7.12 followed by the numerical subtraction theorem 7.11, since these apply directly to the shifted lists and their differences.\n\n**Step 2.** By 7.12, the common ratio of the corresponding terms equals the ratio of their sums; hence a₁:a₂ = S:T. Alternating this proportion gives a₁:S = a₂:T (7.13).\n\n**Step 3.** Since aₙ = a₁ + f, replacing the last term in T shows that T = S + f: both sums contain the same intermediate terms a₂, …, aₙ₋₁ (CN2). Subtracting S therefore gives T − S = f (CN3).\n\n**Step 4.** Regard a₂ and T as the wholes, and a₁ and S as the respective numbers subtracted. Step 2 shows that the wholes have the same ratio as the numbers subtracted. Consequently, their remainders have that same ratio (7.11):\n(a₂ − a₁):(T − S) = a₂:T.\nUsing Step 3 and the equality of ratios in Step 2, this becomes e:f = a₁:S (CN1).\n\n**Step 5.** Alternating the last proportion gives e:a₁ = f:S (7.13). Thus, as the excess of the second number over the first is to the first, so is the excess of the last number over the first to the sum of all the numbers before the last, as required.",
+          "used": [
+            "D7.20",
+            "7.12",
+            "7.13",
+            "CN2",
+            "CN3",
+            "7.11",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:19:28.931780+00:00",
+          "prompt_sha256": "17e7016060944573ed5bac338ef64a1a9bfd9b397737f012a9e6cb02bd7026e9",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f34-53d1-7e63-8b7a-af776a6fd81e",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f34-53d1-7e63-8b7a-af776a6fd81e",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:21:41.924971+00:00",
+          "total_wall_time_seconds": 132.993,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.35_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "9.36": [
+      {
+        "result": {
+          "prop_id": "9.36",
+          "proof": "**Step 1.** Let the given progression be a₀ = 1, a₁ = 2, …, aₘ = a, where each term doubles its predecessor. Put p = a₀ + a₁ + ⋯ + aₘ, and let N = pa. By hypothesis p is prime. Since the unit is not a number, m ≥ 1, and consequently a ≥ 2. Products below denote repeated addition. [D7.2, D7.11, D7.15]\n\n**Step 2.** Use 9.35 directly to evaluate the sum, rather than derive a geometric-sum formula. Apply it to the doubled progression 2a₀, 2a₁, …, 2aₘ. Its first two terms are 2 and 4, its last term is 2a, and the sum of all terms before the last is a₁ + ⋯ + aₘ = p − 1. Therefore\n2 : 2 = (2a − 2) : (p − 1).\nThus p − 1 = 2a − 2, and hence p = 2a − 1 and p − a = a − 1. In particular, p = a + (a − 1) > a. [9.35, D7.20, CN2, CN3, CN5]\n\n**Step 3.** Determine the measures of a by the directly applicable progression theorem 9.13. The dyad is prime: no number is smaller than it, so its only proper measure is the unit. [D7.2, D7.11] Every numerical term of the original progression smaller than a measures a by 9.11; the unit and a itself also measure a. Since the first term after the unit is prime, 9.13 excludes every other numerical measure. Consequently the complete list of positive measures of a, including the unit and a itself, is a₀, a₁, …, aₘ. [9.11, 9.13, D7.15]\n\n**Step 4.** Let d > 1 be any proper measure of N. Write N = de, where e > 1. [D7.3, D7.15] Since the prime p measures de, it measures d or e. [7.30] In the following equalities, regrouping products follows from repeated addition, and interchanging factors is justified by 7.16. Cancellation of a common multiplier follows directly from 7.17 and D7.20. [D7.15, CN2, 7.16, 7.17, D7.20]\n\nIf p measures d, write d = pb, allowing b to be the unit. Then pa = (pb)e = p(be), so a = be. Thus b measures a and is some aᵢ by Step 3. Since d < N, b < a; hence i < m, and d = paᵢ.\n\nIf p measures e, write e = pc, allowing c to be the unit. Then pa = d(pc) = p(dc), so a = dc. Thus d measures a and is some aᵢ by Step 3.\n\nTherefore every proper measure of N other than the unit belongs to one of the lists a₀, …, aₘ or pa₀, …, paₘ₋₁.\n\n**Step 5.** Conversely, since each aᵢ measures a, both aᵢ and paᵢ measure pa = N. [Step 3; D7.15, 7.16] Every aᵢ is less than N, and every paᵢ with i < m is less than N, because aᵢ < a. [D7.15, CN5] The terms within each list are distinct, since successive terms double; the two lists are disjoint, since every term of the first is at most a, whereas every term of the second is at least p > a. [Step 2; D7.15, CN5] Including the unit a₀, the proper measures of N are therefore exactly\n a₀, a₁, …, aₘ, and pa₀, pa₁, …, paₘ₋₁. [Step 4; D7.3]\n\n**Step 6.** The sum of these proper measures is\n(a₀ + ⋯ + aₘ) + p(a₀ + ⋯ + aₘ₋₁)\n= p + p(p − a)\n= p + p(a − 1)\n= pa\n= N.\nHere the first list sums to p by Step 1, the shorter sum is p − a, and Step 2 gives p − a = a − 1; collecting the repeated additions is justified by D7.15 and CN2. Thus N equals the sum of all its own parts and is perfect. [CN3, D7.15, CN2, D7.3, D7.22]",
+          "used": [
+            "D7.2",
+            "D7.11",
+            "D7.15",
+            "9.35",
+            "D7.20",
+            "CN2",
+            "CN3",
+            "CN5",
+            "9.11",
+            "9.13",
+            "D7.3",
+            "7.30",
+            "7.16",
+            "7.17",
+            "D7.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-03T02:19:58.933349+00:00",
+          "prompt_sha256": "bca1cc19af96d44d9af33a41e40041de5b01ab8fb20470cd9983804823cc38d1",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a19f34-c907-7142-b4ef-4a03556e1b1c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a19f34-c907-7142-b4ef-4a03556e1b1c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 83
+          },
+          "status": "returned",
+          "completed_at": "2026-11-03T02:23:50.237553+00:00",
+          "total_wall_time_seconds": 231.304,
+          "reused_accepted_attempt": true,
+          "logical_ordering_attempt": 0,
+          "storage_attempt": 0,
+          "raw_directory": "/data/WYC/mathProofV2/euclid-proof-project-antiground/runs/RunA_Book9/raw/9.36_attempt0"
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

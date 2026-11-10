@@ -1,0 +1,293 @@
+[
+  {
+    "prop_id": "5.1",
+    "proof": "**Step 1.** Let A and B be the whole magnitudes, and let C and D be the parts subtracted from A and B respectively. Suppose A is the same multiple of B that C is of D. Thus, for some common number n of repetitions, A consists of n copies of B, and C consists of n copies of D. We use this equal-copy decomposition and direct subtraction, rather than a ratio argument. [Hypothesis; D5.2]\n\n**Step 2.** Denote the n copies composing A by B₁, …, Bₙ. In each Bᵢ take the corresponding part Dᵢ equal to D, and call the remainder Rᵢ. This uses the decomposition of B into D and its remainder in each copy of B. Since Bᵢ equals B and Dᵢ equals D, each Rᵢ equals the remainder B − D. [D5.2; CN3]\n\n**Step 3.** The parts D₁, …, Dₙ are respectively equal to the n copies of D composing C, because each corresponding pair is equal to D. Adding these equalities shows that the marked-off parts taken together equal C. [CN1; CN2, repeatedly]\n\n**Step 4.** The pieces R₁, …, Rₙ together are what remains of A after those marked-off parts have been removed. Since their total removal equals C, their total remainder equals A − C: equal magnitudes have been subtracted from equal wholes. [CN3]\n\n**Step 5.** Therefore A − C consists of n pieces, each equal to B − D. Consequently A − C is n times B − D, which is the same multiple that A is of B. Hence the remainder is the same multiple of the remainder that the whole is of the whole. [Steps 2 and 4; D5.2]",
+    "used": [
+      "D5.2",
+      "CN3",
+      "CN1",
+      "CN2"
+    ],
+    "statement": "If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole."
+  },
+  {
+    "prop_id": "5.2",
+    "proof": "**Step 1.** Denote the first through sixth magnitudes by A, B, C, D, E, F, respectively. We use the direct route of counting equal parts, as supplied by the definition of a multiple. By the first hypothesis, A consists of some number m of parts each equal to B, while C consists of the same number m of parts each equal to D. [Hypothesis; D5.2]\n\n**Step 2.** By the second hypothesis, E consists of some number n of parts each equal to B, while F consists of the same number n of parts each equal to D. The number n need not equal m. [Hypothesis; D5.2]\n\n**Step 3.** Add the decomposition of E to that of A, and the decomposition of F to that of C. Addition of equals to equals shows that A + E equals the sum of the m copies of B followed by the n copies of B, while C + F equals the sum of the m copies of D followed by the n copies of D. Thus each combined list has m + n parts, all equal to its respective measuring magnitude. [CN2]\n\n**Step 4.** Consequently, B measures A + E exactly as many times as D measures C + F, namely m + n times. Therefore the sum of the first and fifth is the same multiple of the second that the sum of the third and sixth is of the fourth, as required. [D5.2]",
+    "used": [
+      "D5.2",
+      "CN2"
+    ],
+    "statement": "If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the first and fifth will also be the same multiple of the second that the sum of the third and sixth is of the fourth."
+  },
+  {
+    "prop_id": "5.3",
+    "proof": "**Step 1.** Let A be the same multiple of B that C is of D, and let E and F be equimultiples of A and C respectively. Thus, for some common number n of copies, E consists of n copies of A and F consists of n copies of C. [Hypotheses; D5.2]\n\n**Step 2.** For each k from 1 through n, denote the sum of k copies of A by S_k, and the sum of k copies of C by T_k. In particular, S_1 = A and T_1 = C, so S_1 is the same multiple of B that T_1 is of D. Also, S_n = E and T_n = F. [Hypotheses; D5.2]\n\n**Step 3.** We use the addition rule 5.2, since these sums are formed by adjoining corresponding copies. Suppose k < n and S_k is the same multiple of B that T_k is of D. Since A is also the same multiple of B that C is of D, proposition 5.2 gives that S_k + A is the same multiple of B that T_k + C is of D. These sums are precisely S_{k+1} and T_{k+1}. [Hypothesis; 5.2]\n\n**Step 4.** Starting with the first pair in Step 2 and applying Step 3 successively for every further copy, S_n is the same multiple of B that T_n is of D. If n = 1, this is already the initial hypothesis. Since S_n = E and T_n = F, E and F are therefore equimultiples of B and D respectively, as required. [5.2; D5.2]",
+    "used": [
+      "D5.2",
+      "5.2"
+    ],
+    "statement": "If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also ex aequali the magnitudes taken will be equimultiples respectively, the one of the second and the other of the fourth."
+  },
+  {
+    "prop_id": "5.4",
+    "proof": "**Step 1.** Let A have to B the same ratio as C has to D. Let E and G be any equimultiples of A and C respectively, and let F and H independently be any equimultiples of B and D respectively. We must prove that E has to F the same ratio as G has to H. Here multiples are understood in the sense of D5.2.\n\n**Step 2.** Take arbitrary equimultiples X and Z of E and G respectively, and independently take arbitrary equimultiples Y and W of F and H respectively. By D5.5, it suffices to show that X and Z alike exceed, are alike equal to, or alike fall short of Y and W respectively.\n\n**Step 3.** Apply 5.3 directly: it is the natural tool because these test magnitudes are multiples of multiples. Since E and G are equimultiples of A and C, and X and Z are equimultiples of E and G, X and Z are equimultiples of A and C. Likewise, since F and H are equimultiples of B and D, and Y and W are equimultiples of F and H, Y and W are equimultiples of B and D. [5.3]\n\n**Step 4.** Since A has to B the same ratio as C has to D, these equimultiples satisfy the corresponding comparisons: if X exceeds Y, Z exceeds W; if X equals Y, Z equals W; and if X falls short of Y, Z falls short of W. [D5.5]\n\n**Step 5.** Thus arbitrary equimultiples of E and G have matching comparisons with arbitrary equimultiples of F and H respectively. Therefore E has to F the same ratio as G has to H. Since E, G and F, H were any equimultiples of the original magnitudes in the required order, the proposition follows. [D5.5]",
+    "used": [
+      "D5.2",
+      "D5.5",
+      "5.3"
+    ],
+    "statement": "If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples whatever of the second and fourth respectively, taken in corresponding order."
+  },
+  {
+    "prop_id": "5.5",
+    "proof": "**Step 1.** Let A and B be the whole magnitudes, and let C and D be the parts subtracted from A and B respectively. Suppose that A is the same multiple of B that C is of D. Denote the respective remainders by R and S. (Given hypothesis.)\n\n**Step 2.** Choose the direct application of 5.1, whose statement as supplied has exactly these hypotheses. Applied to the wholes A, B and the subtracted parts C, D, it establishes that R is the same multiple of S that A is of B. Thus the remainder is the same multiple of the remainder that the whole is of the whole, as required. (5.1.)",
+    "used": [
+      "5.1"
+    ],
+    "statement": "If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole."
+  },
+  {
+    "prop_id": "5.6",
+    "proof": "**Step 1.** Let A and B be equimultiples of X and Y respectively, and let C and D, subtracted from A and B, also be equimultiples of X and Y respectively. Denote the remainders by R and S. By the meaning of multiple, A and B consist respectively of the same number n of copies of X and Y, while C and D consist respectively of the same number m of copies of X and Y. We use these equal-copy decompositions and cancellation directly, rather than an argument about ratios. [Hypotheses; D5.2]\n\n**Step 2.** Since C is subtracted as a proper part of A, C is less than A. Consequently m is less than n: if m equalled n, adding the corresponding equal copies would give C = A; if m exceeded n, the first n copies constituting C would equal A, and C would be greater than A because it contains further copies. Both alternatives contradict C being less than A. Thus at least one copy remains after m copies are removed from n copies. [CN5; CN2]\n\n**Step 3.** In the decomposition of A, let U be the sum of its first m copies of X and T the sum of its remaining copies. Likewise, in the decomposition of B, let V be the sum of its first m copies of Y and W the sum of its remaining copies. Adding corresponding equal copies gives U = C and V = D. Moreover, T and W consist of the same positive number of copies of X and Y respectively, since the same number m has been removed from the same number n. [D5.2; CN2; Step 2]\n\n**Step 4.** Subtracting the equal magnitudes C and U from the same whole A gives equal remainders, so R = T. Similarly, subtracting D and V from B gives S = W. [CN3]\n\n**Step 5.** If precisely one copy remains in each decomposition, then T = X and W = Y, hence R = X and S = Y. If more than one copy remains, R and S are measured respectively by X and Y the same number of times, and therefore are equimultiples of them. Thus the remainders are either equal to the original magnitudes respectively or equimultiples of them, as required. [CN1; D5.2; Steps 3–4]",
+    "used": [
+      "D5.2",
+      "CN5",
+      "CN2",
+      "CN3",
+      "CN1"
+    ],
+    "statement": "If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them."
+  },
+  {
+    "prop_id": "5.7",
+    "proof": "**Step 1.** Let A and B be equal magnitudes, and let C be any magnitude for which the stated ratios are defined. We use the defining criterion of equal ratios directly for both assertions, rather than a transformation of ratios (D5.5).\n\n**Step 2.** Write kX for the magnitude formed by adding k copies of X, with 1X = X; this is its k-fold multiple (D5.2). Since A = B, adding the same number of these equal magnitudes gives kA = kB by repeated application of CN2; for k = 1, the equality is the hypothesis.\n\n**Step 3.** Let m and n be arbitrary positive integers. By Step 2, mA = mB. Consequently, mA exceeds, equals, or falls short of nC exactly when mB respectively exceeds, equals, or falls short of nC. These are precisely the corresponding comparisons between arbitrary equimultiples for the pairs (A, C) and (B, C). Therefore A:C = B:C by D5.5.\n\n**Step 4.** Again let m and n be arbitrary positive integers. By Step 2, nA = nB. Consequently, mC exceeds, equals, or falls short of nA exactly when it respectively exceeds, equals, or falls short of nB. Applying D5.5 to the pairs (C, A) and (C, B) therefore gives C:A = C:B. Together with Step 3, this proves that equal magnitudes have to the same magnitude the same ratio, and that the same magnitude has to equal magnitudes the same ratio.",
+    "used": [
+      "D5.5",
+      "D5.2",
+      "CN2"
+    ],
+    "statement": "Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes."
+  },
+  {
+    "prop_id": "5.8",
+    "proof": "**Step 1.** Let A>B, and let C be the common magnitude, of the same kind as required for the stated ratios (D5.3). Write A=B+E, where E is the positive excess of A over B. Write rX for the sum of r copies of a magnitude X (D5.2). Our chosen route is to construct one strict separation mB<nC<mA; D5.7 will then establish both assertions directly.\n\n**Step 2.** Let F be the lesser of B and E, or either if they are equal. By D5.4, choose a positive integer m such that mF>C. Repeated addition of equal magnitudes, together with the whole–part comparison, gives mB≥mF and mE≥mF; hence mB>C and mE>C (CN2, CN5). Moreover, adding m copies of A=B+E gives mA=mB+mE. Since mE>C, it follows that mA>mB+C (CN2, CN5).\n\n**Step 3.** By D5.4, some multiple of C exceeds mB. In the finite sequence of successive multiples up to such a multiple, let nC be the first that exceeds mB. Since C<mB by Step 2, n is at least two. Thus\nmB<nC, while (n−1)C≤mB.\nThese are successive multiples in the sense of D5.2; their selection is possible by D5.4.\n\n**Step 4.** Adding C to the latter comparison gives\nnC≤mB+C\n(CN2, CN5). Combining this with Step 2 and the former comparison in Step 3 yields the strict separation\nmB<nC<mA\n(CN5).\n\n**Step 5.** Compare A:C with B:C. Take the equimultiples mA and mB of the antecedents, and the equimultiples nC and nC of the consequents. By Step 4, mA exceeds nC, whereas mB does not exceed nC. Therefore A has to C a greater ratio than B has to C (D5.7).\n\n**Step 6.** Compare C:B with C:A. Take the equimultiples nC and nC of the antecedents, and the equimultiples mB and mA of the consequents. By Step 4, nC exceeds mB, whereas nC does not exceed mA. Therefore C has to B a greater ratio than C has to A (D5.7). Thus the greater magnitude has to the same a greater ratio than the less has, and the same has to the less a greater ratio than it has to the greater.",
+    "used": [
+      "D5.3",
+      "D5.2",
+      "D5.7",
+      "D5.4",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater."
+  },
+  {
+    "prop_id": "5.9",
+    "proof": "**Step 1.** We use both clauses of 5.8 directly, since they compare ratios with precisely the common terms occurring in the two assertions; no inversion of ratios is needed. A greater ratio cannot be the same as the ratio it exceeds: D5.7 supplies equimultiples for which one antecedent multiple exceeds its corresponding consequent multiple while the other does not, whereas D5.5 requires the corresponding comparisons to agree. Thus, of two ratios which are the same, neither can be greater than the other. [5.8; D5.7; D5.5]\n\n**Step 2.** Let A and B have the same ratio to C. If A were greater than B, then A would have to C a greater ratio than B has to C; if B were greater than A, then B would have to C a greater ratio than A has to C. Both implications follow from the first clause of 5.8, and both contradict the given sameness of ratios by Step 1. Therefore A and B are neither greater nor less than one another, and hence A = B. [5.8; D5.5; D5.7]\n\n**Step 3.** Now let C have the same ratio to A as it has to B. If A were greater than B, then C would have to B a greater ratio than it has to A; if B were greater than A, then C would have to A a greater ratio than it has to B. Both implications follow from the second clause of 5.8, and both contradict the given sameness of ratios by Step 1. Therefore again A = B. [5.8; D5.5; D5.7]\n\n**Step 4.** Consequently, magnitudes which have the same ratio to the same are equal to one another, and magnitudes to which the same has the same ratio are equal. [Steps 2–3]",
+    "used": [
+      "5.8",
+      "D5.7",
+      "D5.5"
+    ],
+    "statement": "Magnitudes which have the same ratio to the same are equal to one another; and magnitudes to which the same has the same ratio are equal."
+  },
+  {
+    "prop_id": "5.10",
+    "proof": "**Step 1.** Path choice: use the defining equimultiples directly, since they turn each hypothesis into a comparison of magnitudes without requiring an auxiliary comparison theorem for ratios. Write kX for the magnitude formed from k equal copies of X (D5.2). Suppose A has to C a greater ratio than B has to C. By D5.7, there are positive whole numbers m,n such that mA > nC while mB ≤ nC. Consequently mA > mB.\n\n**Step 2.** If A = B, repeated addition of equals gives mA = mB (CN2), contradicting Step 1. If A < B, each copy of B consists of a part equal to A together with a nonzero remainder. Adding these m decompositions makes mA a proper part of mB (CN2), and hence mA < mB (CN5), again contradicting Step 1. Thus A is neither equal to nor less than B, and therefore A > B. This proves the first assertion.\n\n**Step 3.** Now suppose C has to A a greater ratio than C has to B. By D5.7, there are positive whole numbers p,q such that pC > qA while pC ≤ qB. Consequently qA < qB.\n\n**Step 4.** If A = B, repeated addition of equals gives qA = qB (CN2), contradicting Step 3. If A > B, each copy of A consists of a part equal to B together with a nonzero remainder. Adding these q decompositions makes qB a proper part of qA (CN2), and hence qA > qB (CN5), again contradicting Step 3. Thus A is neither equal to nor greater than B, and therefore A < B. Hence, of magnitudes having a ratio to the same, that which has the greater ratio is greater; and that to which the same has the greater ratio is less.",
+    "used": [
+      "D5.2",
+      "D5.7",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less."
+  },
+  {
+    "prop_id": "5.11",
+    "proof": "**Step 1.** Let the ratios A:B and C:D each be the same as E:F. We shall prove that A:B is the same as C:D. We use the defining equimultiple criterion directly, since both hypotheses supply comparisons with the same pair of magnitudes. [D5.5]\n\n**Step 2.** Let m and n be arbitrary positive whole numbers. Take the equimultiples mA, mC, mE of A, C, E, and the equimultiples nB, nD, nF of B, D, F. These are the arbitrary multiples required by the criterion. [D5.5]\n\n**Step 3.** Since A:B is the same as E:F, the comparison of mA with nB agrees with that of mE with nF: they alike exceed, are alike equal, or alike fall short. [D5.5]\n\n**Step 4.** Since C:D is also the same as E:F, the comparison of mC with nD likewise agrees with that of mE with nF. Consequently, using Step 3:\n- If mA > nB, then mE > nF, and hence mC > nD.\n- If mA = nB, then mE = nF, and hence mC = nD.\n- If mA < nB, then mE < nF, and hence mC < nD.\nThus mA and mC alike exceed, are alike equal to, or alike fall short of nB and nD respectively. [D5.5]\n\n**Step 5.** Because m and n were arbitrary, the defining criterion gives that A:B is the same as C:D. Therefore ratios which are the same with the same ratio are also the same with one another. [D5.5]",
+    "used": [
+      "D5.5"
+    ],
+    "statement": "Ratios which are the same with the same ratio are also the same with one another."
+  },
+  {
+    "prop_id": "5.12",
+    "proof": "**Step 1.** Let the antecedents be A₁, …, Aᵣ and their corresponding consequents B₁, …, Bᵣ, and write A = A₁ + ⋯ + Aᵣ and B = B₁ + ⋯ + Bᵣ. Fix any index j. By the hypothesis of proportionality, Aᵢ:Bᵢ = Aⱼ:Bⱼ for every i. [D5.6] **Path choice:** apply the equimultiple test directly, since the given equal ratios already supply the comparisons needed for the sums. [D5.5]\n\n**Step 2.** Take arbitrary positive whole numbers m and n. Repeated addition, grouping the copies of the summands into copies of their respective wholes, gives\nmA = mA₁ + ⋯ + mAᵣ,\nnB = nB₁ + ⋯ + nBᵣ.\nThus these sums are respectively the m-fold multiple of A and the n-fold multiple of B. [D5.2, CN2]\n\n**Step 3.** Since Aᵢ:Bᵢ = Aⱼ:Bⱼ, the comparison between mAᵢ and nBᵢ agrees with the comparison between mAⱼ and nBⱼ for every i. Consequently, if mAⱼ exceeds, equals, or falls short of nBⱼ, then every mAᵢ respectively exceeds, equals, or falls short of nBᵢ. [D5.5]\n\n**Step 4.** These comparisons pass to the wholes in Step 2. If all mAᵢ = nBᵢ, adding equals gives mA = nB. [CN2] If all mAᵢ > nBᵢ, write each mAᵢ as nBᵢ together with its positive excess. Adding these equal decompositions makes mA equal to nB together with the sum of those excesses; hence mA > nB. [CN2, CN5] If all mAᵢ < nBᵢ, the same argument with the roles reversed gives mA < nB. [CN2, CN5]\n\n**Step 5.** Because Aⱼ and Bⱼ have a ratio, some multiple of Aⱼ exceeds Bⱼ and some multiple of Bⱼ exceeds Aⱼ. Steps 3–4 give the corresponding exceedances for A and B, so these wholes also have a ratio. [D5.4] Moreover, for every choice of m and n, mAⱼ and mA alike exceed, alike equal, or alike fall short of nBⱼ and nB respectively. Therefore Aⱼ:Bⱼ = A:B. [D5.5] Since j was arbitrary, as any one antecedent is to its corresponding consequent, so are all the antecedents together to all the consequents together.",
+    "used": [
+      "D5.6",
+      "D5.5",
+      "D5.2",
+      "CN2",
+      "CN5",
+      "D5.4"
+    ],
+    "statement": "If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents."
+  },
+  {
+    "prop_id": "5.13",
+    "proof": "**Step 1.** Let A, B, C, D, E, F be the six magnitudes, with A:B = C:D and C:D > E:F (given). We use the direct definitional route: obtain equimultiples witnessing the greater ratio by D5.7, then transfer the necessary comparison using D5.5.\n\n**Step 2.** Since C:D > E:F, there are positive whole-number multipliers m and n such that mC exceeds nD, but mE does not exceed nF. Here mC and mE are equimultiples of C and E, while nD and nF are equimultiples of D and F. [D5.7]\n\n**Step 3.** Take also the m-fold multiple mA of A and the n-fold multiple nB of B. Since A:B = C:D, the equimultiples mA and mC must alike exceed, equal, or fall short of nB and nD respectively. As mC exceeds nD, mA therefore exceeds nB. [D5.5]\n\n**Step 4.** Thus the equimultiples mA and mE of A and E, compared respectively with the equimultiples nB and nF of B and F, satisfy: mA exceeds nB, but mE does not exceed nF. Therefore A has to B a greater ratio than E has to F, as required. [D5.7]",
+    "used": [
+      "D5.7",
+      "D5.5"
+    ],
+    "statement": "If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have to the second a greater ratio than the fifth to the sixth."
+  },
+  {
+    "prop_id": "5.14",
+    "proof": "**Step 1.** Let A, B, C, D be the first, second, third, and fourth magnitudes, with A:B = C:D. [Hypothesis.] Path choice: for the strict comparisons, use ratios with a common term—first 5.8, then 5.13 to transfer the comparison, and finally 5.10 to compare the magnitudes.\n\n**Step 2.** Suppose A > C. Then A:B > C:B, since the greater magnitude has to the same a greater ratio than the less has. [5.8.] But C:D = A:B by the hypothesis; therefore C:D > C:B. [5.13.] Of magnitudes to which the same magnitude has a ratio, that to which it has the greater ratio is less. Hence D < B, that is, B > D. [5.10.]\n\n**Step 3.** Suppose A = C. Equal magnitudes have to the same the same ratio, so A:B = C:B. [5.7.] Together with the hypothesis A:B = C:D, this gives C:B = C:D, since ratios which are the same with the same ratio are the same with one another. [5.11.] Therefore B = D, since magnitudes to which the same has the same ratio are equal. [5.9.] Here the direct equality criterion is used rather than excluding the two strict inequalities.\n\n**Step 4.** Suppose A < C. Then C:D > A:D, since the greater magnitude has to the same a greater ratio than the less has. [5.8.] Since A:B = C:D by the hypothesis, it follows that A:B > A:D. [5.13.] Thus B < D, since that to which the same magnitude has a greater ratio is less. [5.10.]\n\n**Step 5.** Consequently, when the first magnitude is greater than, equal to, or less than the third, the second is respectively greater than, equal to, or less than the fourth. [Steps 2–4.] This proves the proposition.",
+    "used": [
+      "5.8",
+      "5.13",
+      "5.10",
+      "5.7",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth; if equal, equal; and if less, less."
+  },
+  {
+    "prop_id": "5.15",
+    "proof": "**Step 1.** Let A and B be the parts, and let M and N be the same multiples of A and B respectively. By the definitions of part and multiple, write M = A₁ + ⋯ + Aₙ and N = B₁ + ⋯ + Bₙ, with the same number of terms, where every Aᵢ equals A and every Bᵢ equals B. We must prove A:B = M:N. [D5.1, D5.2]\n\n**Step 2.** For each corresponding pair, Aᵢ:Bᵢ = A:Bᵢ because Aᵢ = A, and A:Bᵢ = A:B because Bᵢ = B. Therefore Aᵢ:Bᵢ = A:B for every i: all the corresponding pairs have the same ratio. [5.7, 5.11]\n\n**Step 3.** Apply 5.12 directly: this is the natural route because the multiples are already expressed as equally numerous lists of proportional parts. As one antecedent is to its consequent, so are all the antecedents together to all the consequents together. Hence A₁:B₁ = (A₁ + ⋯ + Aₙ):(B₁ + ⋯ + Bₙ) = M:N. [5.12]\n\n**Step 4.** By Step 2, A:B has the same ratio as A₁:B₁; by Step 3, M:N also has that ratio. Therefore A:B = M:N. Thus parts have the same ratio as the same multiples of them taken in corresponding order. [5.11]",
+    "used": [
+      "D5.1",
+      "D5.2",
+      "5.7",
+      "5.11",
+      "5.12"
+    ],
+    "statement": "Parts have the same ratio as the same multiples of them taken in corresponding order."
+  },
+  {
+    "prop_id": "5.16",
+    "proof": "**Step 1.** Let A, B, C, D be the given proportional magnitudes, of the same kind so that the alternate ratios are defined (D5.3). Thus A:B = C:D (D5.6). We must prove A:C = B:D, which is the alternate proportion (D5.12).\n\n**Step 2.** Take arbitrary equimultiples mA, mB of A, B, and arbitrary equimultiples nC, nD of C, D, where m and n are independently chosen positive whole numbers (D5.2).\n\n**Step 3.** By 5.15,\nA:B = mA:mB and C:D = nC:nD.\nThis is the direct path: 5.15 permits each original ratio to be multiplied by its own common multiplier. Combining these equalities with A:B = C:D by 5.11 gives\nmA:mB = nC:nD.\n\n**Step 4.** Apply 5.14 to this last proportion. If mA > nC, then mB > nD; if mA = nC, then mB = nD; and if mA < nC, then mB < nD.\n\n**Step 5.** Thus arbitrary equimultiples mA, mB of A, B alike exceed, equal, or fall short of arbitrary equimultiples nC, nD of C, D, respectively. By D5.5, A:C = B:D. Therefore the four magnitudes are proportional alternately (D5.6, D5.12).",
+    "used": [
+      "D5.3",
+      "D5.6",
+      "D5.12",
+      "D5.2",
+      "5.15",
+      "5.11",
+      "5.14",
+      "D5.5"
+    ],
+    "statement": "If four magnitudes be proportional, they will also be proportional alternately."
+  },
+  {
+    "prop_id": "5.17",
+    "proof": "**Step 1.** Write the given proportion componendo as\n(A + B):B = (C + D):D,\nwhere A, B and C, D are respectively magnitudes of the same kind. We must prove A:B = C:D, the proportion separando. These are precisely the operations described in D5.14 and D5.15. We take the direct route through the equimultiple criterion D5.5.\n\n**Step 2.** Let m and n be arbitrary positive integers, and let mX denote the magnitude formed from m copies of X (D5.2). Grouping the repeated sums, with equality preserved by repeated addition (CN2), gives\nm(A + B) = mA + mB,    (m + n)B = mB + nB,\nand\nm(C + D) = mC + mD,    (m + n)D = mD + nD.\n\n**Step 3.** Apply D5.5 to the given proportion, taking m-fold multiples of its antecedents and (m + n)-fold multiples of its consequents. Thus m(A + B) exceeds, equals, or falls short of (m + n)B exactly as m(C + D) exceeds, equals, or falls short of (m + n)D. By the identities in Step 2, this compares mA + mB with nB + mB, and mC + mD with nD + mD.\n\n**Step 4.** Subtract mB from both magnitudes in the first comparison, and mD from both magnitudes in the second comparison. Each comparison retains its direction: equality is preserved by CN3; in either unequal case, subtracting the common part leaves the same positive excess, so the whole remains greater than the part (CN3, CN5). Consequently, mA exceeds, equals, or falls short of nB exactly as mC exceeds, equals, or falls short of nD.\n\n**Step 5.** Since m and n were arbitrary, D5.5 gives A:B = C:D. Hence the magnitudes are proportional separando (D5.6, D5.15), as required.",
+    "used": [
+      "D5.14",
+      "D5.15",
+      "D5.5",
+      "D5.2",
+      "CN2",
+      "CN3",
+      "CN5",
+      "D5.6"
+    ],
+    "statement": "If magnitudes be proportional componendo, they will also be proportional separando."
+  },
+  {
+    "prop_id": "5.18",
+    "proof": "**Step 1.** Let A exceed B and C exceed D, and suppose (A − B):B = (C − D):D. Put X = A − B and Y = C − D. Thus A = X + B, C = Y + D, and X:B = Y:D. We must prove A:B = C:D, the required proportion componendo. [D5.15, D5.14] Path choice: use the equimultiple criterion directly; this does not require magnitudes belonging to different ratio-pairs to be of the same kind. [D5.5]\n\n**Step 2.** Let m and n be arbitrary positive whole numbers. Take the m-fold multiples of A and C and the n-fold multiples of B and D. Repeated addition of A = X + B and C = Y + D gives\nmA = mX + mB and mC = mY + mD.\nHere multiplication denotes repeated addition of a magnitude. [D5.2, CN2]\n\n**Step 3.** Suppose first that n ≤ m. Then mB ≥ nB and mD ≥ nD: when m = n the respective multiples coincide, and when m > n the smaller multiple is a proper part of the larger. Moreover, mA exceeds its part mB, and mC exceeds its part mD. Consequently mA > nB and mC > nD. [D5.2, CN5]\n\n**Step 4.** Suppose instead that n > m, and put r = n − m, a positive whole number. By repeated addition,\nnB = mB + rB and nD = mD + rD. [D5.2, CN2]\nSince X:B = Y:D, the defining criterion for equal ratios says that mX and rB have the same comparison as mY and rD: they alike exceed, are alike equal to, or alike fall short of one another in corresponding order. [D5.5]\n\n**Step 5.** Adding the same magnitude to both sides preserves a comparison: equality is preserved by CN2, while a strict inequality is preserved because the larger sum consists of the smaller sum together with the original positive excess. [CN2, CN5] Thus, adding mB to the comparison between mX and rB, and mD to the comparison between mY and rD, shows that\nmX + mB and rB + mB have the same comparison as mY + mD and rD + mD.\nBy the identities in Steps 2 and 4, this says exactly that mA and nB have the same comparison as mC and nD. [CN2, CN5]\n\n**Step 6.** In both cases, therefore, the arbitrary multiples mA and mC alike exceed, are alike equal to, or alike fall short of nB and nD respectively. Hence A:B = C:D by D5.5. The magnitudes are consequently proportional componendo, as required. [D5.6, D5.14]",
+    "used": [
+      "D5.15",
+      "D5.14",
+      "D5.5",
+      "D5.2",
+      "CN2",
+      "CN5",
+      "D5.6"
+    ],
+    "statement": "If magnitudes be proportional separando, they will also be proportional componendo."
+  },
+  {
+    "prop_id": "5.19",
+    "proof": "**Step 1.** Let A and B be the wholes, C and D their respective subtracted parts, and R and S the respective remainders. Thus A = C + R and B = D + S, and, by hypothesis, A:B = C:D.\n\n**Step 2.** By alternation, A:C = B:D (5.16). The direct path is to place each whole over its own subtracted part, so that separation yields the remainders.\n\n**Step 3.** Since A = C + R and B = D + S, the preceding proportion is (C + R):C = (D + S):D. Therefore, by separation, R:C = S:D (5.17).\n\n**Step 4.** Alternating this proportion gives R:S = C:D (5.16).\n\n**Step 5.** By the hypothesis, A:B = C:D, and by Step 4, R:S = C:D. Ratios which are the same with the same ratio are also the same with one another; hence R:S = A:B (5.11). Therefore the remainder is to the remainder as the whole is to the whole.",
+    "used": [
+      "5.16",
+      "5.17",
+      "5.11"
+    ],
+    "statement": "If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder will also be to the remainder as whole to whole."
+  },
+  {
+    "prop_id": "5.20",
+    "proof": "**Step 1.** Let the three magnitudes be A, B, C, and the other three D, E, F, with A:B = D:E and B:C = E:F, as given. We must show that the comparison of A with C agrees with that of D with F: these are the extreme terms taken ex aequali (D5.17).\n\n**Step 2.** From B:C = E:F we obtain C:B = F:E (D5.5). Indeed, for arbitrary positive integers m and n, the comparisons of nB with mC and of nE with mF agree; reversing both comparisons shows that the comparisons of mC with nB and of mF with nE agree. Path choice: compare ratios with the common consequents B and E, rather than assume any proportion between the extreme terms.\n\n**Step 3.** Suppose first that A > C. Since the consequent B is common, the direct comparison in 5.8 gives A:B > C:B. Hence there are positive integers m and n such that mA > nB while mC does not exceed nB (D5.7).\n\n**Step 4.** Because A:B = D:E, the first comparison gives mD > nE; because C:B = F:E by Step 2, the second gives that mF does not exceed nE (D5.5). These multiples therefore establish D:E > F:E (D5.7). Since these ratios have the same consequent E, it follows that D > F (5.10).\n\n**Step 5.** Suppose next that A = C. Equal magnitudes have the same ratio to B, so A:B = C:B (5.7). Combining this with A:B = D:E and C:B = F:E gives D:E = F:E (5.11, applied twice). Magnitudes having the same ratio to the same magnitude are equal; consequently D = F (5.9).\n\n**Step 6.** Finally, suppose that A < C. Then C:B > A:B (5.8), so there are positive integers m and n such that mC > nB while mA does not exceed nB (D5.7). By C:B = F:E and A:B = D:E, respectively, we obtain mF > nE while mD does not exceed nE (D5.5). Thus F:E > D:E (D5.7), and therefore F > D, or D < F (5.10).\n\n**Step 7.** Accordingly, if the first magnitude A is greater than the third C, the fourth D is greater than the sixth F; if equal, equal; and if less, less, as established in Steps 4–6. This proves the proposition.",
+    "used": [
+      "D5.17",
+      "D5.5",
+      "5.8",
+      "D5.7",
+      "5.10",
+      "5.7",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourth will also be greater than the sixth; if equal, equal; and, if less, less."
+  },
+  {
+    "prop_id": "5.21",
+    "proof": "**Step 1.** Let the three magnitudes be A, B, C, and the other three D, E, F, with the perturbed proportions\nA:B = E:F and B:C = D:E (D5.18).\nWe must show that D is greater than, equal to, or less than F according as A is greater than, equal to, or less than C.\n\n**Step 2.** From A:B = E:F obtain B:A = F:E by D5.5. Indeed, for arbitrary positive integers m and n, the comparison of nA with mB agrees with that of nE with mF. Reversing both comparisons, the comparison of mB with nA agrees with that of mF with nE, which establishes the inverse proportion by D5.5. This inversion is the direct path: the first triple now supplies ratios with common antecedent B, and the second supplies ratios with common consequent E.\n\n**Step 3.** Suppose A>C. Then B:C > B:A, since the same magnitude has a greater ratio to the less than to the greater (5.8). By D5.7, there are positive integers m and n such that mB>nC while mB≤nA. Since B:C = D:E and B:A = F:E, D5.5 gives mD>nE and mF≤nE. These comparisons establish D:E > F:E by D5.7. Therefore D>F, since of magnitudes having ratios to the same magnitude, that which has the greater ratio is greater (5.10).\n\n**Step 4.** Suppose A=C. The same magnitude B has the same ratio to the equal magnitudes A and C, so B:A = B:C (5.7). Combining this with B:A = F:E and B:C = D:E gives D:E = F:E (5.11). Magnitudes having the same ratio to the same magnitude are equal; hence D=F (5.9).\n\n**Step 5.** Suppose A<C. Then B:A > B:C (5.8). By D5.7, there are positive integers m and n such that mB>nA while mB≤nC. The proportions B:A = F:E and B:C = D:E consequently give mF>nE and mD≤nE (D5.5). Thus F:E > D:E (D5.7), and therefore F>D (5.10), or D<F.\n\n**Step 6.** By Steps 3–5, in the perturbed proportion the fourth magnitude D is greater than, equal to, or less than the sixth F according as the first A is greater than, equal to, or less than the third C, as required.",
+    "used": [
+      "D5.18",
+      "D5.5",
+      "5.8",
+      "D5.7",
+      "5.10",
+      "5.7",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth will also be greater than the sixth; if equal, equal; and if less, less."
+  },
+  {
+    "prop_id": "5.22",
+    "proof": "**Step 1.** Let A₁, …, Aₙ and B₁, …, Bₙ be the two collections, with Aᵢ:Aᵢ₊₁ = Bᵢ:Bᵢ₊₁ for each i from 1 to n−1. We must prove A₁:Aₙ = B₁:Bₙ, which is precisely the required ratio ex aequali. For two terms this is already the hypothesis. [D5.17]\n\n**Step 2.** First consider three corresponding terms, denoted A, B, C and D, E, F, satisfying A:B = D:E and B:C = E:F. Let m and n be any positive whole-number multipliers, and write mX for the m-fold multiple of a magnitude X. By 5.4, the two given proportions yield\n(mA):(mB) = (mD):(mE),\n(mB):(nC) = (mE):(nF).\nThe direct path is to use 5.4 because it permits the independently chosen multipliers required by the definition of equal ratios. [5.4, D5.5]\n\n**Step 3.** Apply 5.20 to the triples mA, mB, nC and mD, mE, nF, whose successive ratios agree by Step 2. If mA exceeds nC, then mD exceeds nF; if mA equals nC, then mD equals nF; and if mA falls short of nC, then mD falls short of nF. This uses the comparison theorem in the given, unperturbed order. [5.20]\n\n**Step 4.** Since m and n were arbitrary, any equimultiples of A and D alike exceed, equal, or fall short of any equimultiples of C and F, respectively. Therefore A:C = D:F. Thus the required conclusion has been established for any three corresponding terms. [D5.5]\n\n**Step 5.** Return to the original collections. The equality A₁:A₂ = B₁:B₂ is given. Whenever A₁:Aⱼ = B₁:Bⱼ has been established and j < n, combine it with the given equality Aⱼ:Aⱼ₊₁ = Bⱼ:Bⱼ₊₁. Applying the three-term argument of Steps 2–4 to A₁, Aⱼ, Aⱼ₊₁ and B₁, Bⱼ, Bⱼ₊₁ gives A₁:Aⱼ₊₁ = B₁:Bⱼ₊₁. Repeating this finite process reaches A₁:Aₙ = B₁:Bₙ. Hence the collections are in the same ratio ex aequali, as required. [Steps 2–4, D5.17]",
+    "used": [
+      "D5.17",
+      "5.4",
+      "D5.5",
+      "5.20"
+    ],
+    "statement": "If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex aequali."
+  },
+  {
+    "prop_id": "5.23",
+    "proof": "**Step 1.** Let the three magnitudes be A, B, C, and the other three D, E, F, with A:B = E:F and B:C = D:E, as prescribed by perturbed proportion (D5.18). We must prove A:C = D:F, the required ratio ex aequali (D5.17).\n\n**Step 2.** Let m and n be arbitrary positive integers, and write kX for the k-fold multiple of a magnitude X (D5.2). Take mA, mB, mD and nC, nE, nF. In particular, mA and mD are arbitrary equimultiples of A and D, while nC and nF are arbitrary equimultiples of C and F, as required for testing A:C = D:F by D5.5.\n\n**Step 3.** By 5.15, mA:mB = A:B and nE:nF = E:F. Together with the hypothesis A:B = E:F, these give mA:mB = nE:nF by 5.11. Here 5.15 is the natural choice because both terms within each ratio have been multiplied equally.\n\n**Step 4.** Apply 5.4 to the hypothesis B:C = D:E, taking m-fold multiples of its antecedents and n-fold multiples of its consequents. Thus mB:nC = mD:nE.\n\n**Step 5.** Consequently, the triples mA, mB, nC and mD, nE, nF satisfy the perturbed proportions of D5.18. The direct route is therefore to apply the perturbed comparison theorem 5.21. It gives all three corresponding comparisons: if mA > nC, then mD > nF; if mA = nC, then mD = nF; and if mA < nC, then mD < nF.\n\n**Step 6.** Since m and n were arbitrary, the equimultiples of A and D alike exceed, are alike equal to, or alike fall short of the respective equimultiples of C and F. Therefore A:C = D:F by D5.5. Thus the original triples are in the same ratio ex aequali, as required (D5.17).",
+    "used": [
+      "D5.18",
+      "D5.17",
+      "D5.2",
+      "D5.5",
+      "5.15",
+      "5.11",
+      "5.4",
+      "5.21"
+    ],
+    "statement": "If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, they will also be in the same ratio ex aequali."
+  },
+  {
+    "prop_id": "5.24",
+    "proof": "**Step 1.** Let the first, second, third, fourth, fifth, and sixth magnitudes be A, B, C, D, E, and F, respectively. By hypothesis, A:B = C:D and E:B = F:D. We must prove (A + E):B = (C + F):D.\n\n**Step 2.** The second hypothesis gives B:E = D:F by the definition of equal ratios. Indeed, for any positive integers m and n, nE has the same comparison with mB as nF has with mD. Reversing both comparisons, mB has the same comparison with nE as mD has with nF. This is precisely B:E = D:F. [D5.5]\n\n**Step 3.** Apply ex aequali to the triples A, B, E and C, D, F. Since A:B = C:D by Step 1 and B:E = D:F by Step 2, we obtain A:E = C:F. Ordinary ex aequali is the natural choice here because the ratios occur in successive, rather than perturbed, order. [5.22]\n\n**Step 4.** By composition of the proportion in Step 3, (A + E):E = (C + F):F. [5.18]\n\n**Step 5.** Apply ex aequali to the triples A + E, E, B and C + F, F, D. Their successive ratios are equal by Step 4 and the hypothesis E:B = F:D. Therefore (A + E):B = (C + F):D: the first and fifth together have to the second the same ratio as the third and sixth together have to the fourth, as required. [5.22]",
+    "used": [
+      "D5.5",
+      "5.22",
+      "5.18"
+    ],
+    "statement": "If a first magnitude have to a second the same ratio as a third has to a fourth, and also a fifth have to the second the same ratio as a sixth to the fourth, the first and fifth added together will have to the second the same ratio as the third and sixth have to the fourth."
+  },
+  {
+    "prop_id": "5.25",
+    "proof": "**Step 1.** Name the four proportional magnitudes A, B, C, D so that A:B = C:D and A is the greatest; thus A>B and A>C. Such naming is legitimate by exchanging the equal ratios and, if necessary, reversing both: the defining equimultiple comparisons remain equivalent when both ratios are reversed. [D5.6, D5.5]\n\n**Step 2.** Since A:B = C:D and A>C, we have B>D. [5.14] Also, since A>B, the same-ratio definition, with both multipliers equal to one, gives C>D. [D5.5] Consequently D is the least magnitude.\n\n**Step 3.** Let X be the remainder after subtracting C from A, and Y the remainder after subtracting D from B. Both are positive by Steps 1–2. The whole magnitudes A, B have the same ratio as the subtracted parts C, D; therefore\nX:Y = A:B. [5.19]\nPath choice: the remainder theorem applies directly to the given proportion and produces precisely the two excesses needed, without an additional transformation of ratios.\n\n**Step 4.** Since A>B and X:Y = A:B, the defining comparisons with both multipliers equal to one give X>Y. [D5.5] Thus X consists of Y together with a positive excess E.\n\n**Step 5.** By the definitions of the remainders, A=C+X and B=D+Y. Substituting X=Y+E and adding equal magnitudes gives\nA+D = C+Y+E+D = B+C+E. [CN2]\nHence B+C is a proper part of A+D, so A+D>B+C. [CN5] Therefore the greatest and the least together are greater than the remaining two.",
+    "used": [
+      "D5.6",
+      "D5.5",
+      "5.14",
+      "5.19",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "If four magnitudes be proportional, the greatest and the least are greater than the remaining two."
+  }
+]

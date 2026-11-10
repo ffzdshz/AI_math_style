@@ -1,0 +1,688 @@
+[
+  {
+    "prop_id": "1.1",
+    "proof": "**Step 1.** Let AB be the given finite straight line. Describe a circle with centre A and distance AB, and a circle with centre B and distance BA. This is the direct two-circle construction; no preceding proposition is available. [P3]\n\n**Step 2.** The construction requires a common point C of the two circumferences, lying off the straight line AB. This existence claim is not supplied by the stated foundations: P3 permits describing each circle, while D1.15 specifies equality of its radii; neither guarantees that these two circles intersect. No circle-intersection or continuity principle is listed. [P3, D1.15]\n\n**Step 3.** Conditional on the existence of such a point C, draw AC and BC. [P1]\n\n**Step 4.** Since B and C lie on the circle centred at A, AC = AB. Since A and C lie on the circle centred at B, BC = BA. Also BA = AB, since these denote the same segment. Consequently AC = BC = AB. [D1.15, CN4, CN1]\n\n**Step 5.** Because C lies off AB, the three segments bound a trilateral figure; their equality makes it an equilateral triangle on AB. This establishes the desired conclusion conditional on the missing intersection-existence claim. [D1.19, D1.20]\n\n**Step 6.** Therefore the familiar construction proves the proposition only after that existence claim is admitted. A finished proof under the stated tools-only restriction cannot be supplied without adding an appropriate intersection-existence principle; citing P3 for that claim would leave an unjustified step.",
+    "used": [
+      "P3",
+      "D1.15",
+      "P1",
+      "CN4",
+      "CN1",
+      "D1.19",
+      "D1.20"
+    ],
+    "statement": "On a given finite straight line to construct an equilateral triangle."
+  },
+  {
+    "prop_id": "1.2",
+    "proof": "**Step 1.** Let A be the given point and BC the given straight line, labeling its endpoints so that B is distinct from A. Draw AB (P1).\n\n**Step 2.** Construct an equilateral triangle DAB on AB (1.1). Then DA = DB (D1.20). This preceding construction supplies equal parts to subtract; either choice of side of AB for the triangle will serve.\n\n**Step 3.** Produce DB beyond B (P2). Describe the circle with centre B and distance BC, and let it meet this produced straight line at G beyond B (P3). Thus D, B, G lie in that order, and BG = BC because they are radii of the same circle (D1.15).\n\n**Step 4.** Since DB is a proper part of DG, DG > DB (CN5). Together with DA = DB from Step 2, this gives DG > DA.\n\n**Step 5.** Describe the circle with centre D and distance DG (P3). Produce DA beyond A to meet this circle at L (P2); the intersection is beyond A because DG > DA, as established in Step 4. Thus D, A, L lie in that order, and DL = DG because they are radii of this circle (D1.15).\n\n**Step 6.** From the equal wholes DL and DG subtract the equal parts DA and DB. The respective remainders are AL and BG, so AL = BG (CN3).\n\n**Step 7.** Since AL = BG and BC = BG, we have AL = BC (CN1). Therefore AL is a straight line equal to the given straight line BC and has the given point A as an extremity, as required.",
+    "used": [
+      "P1",
+      "1.1",
+      "D1.20",
+      "P2",
+      "P3",
+      "D1.15",
+      "CN5",
+      "CN3",
+      "CN1"
+    ],
+    "statement": "To place at a given point (as an extremity) a straight line equal to a given straight line."
+  },
+  {
+    "prop_id": "1.3",
+    "proof": "**Step 1.** Let AB and CD be the given unequal straight lines, with AB > CD. At A place a straight line AE equal to CD. [1.2] Path choice: use the previously proved length-transfer construction directly, rather than reconstructing it from elementary constructions.\n\n**Step 2.** Describe a circle with centre A and distance AE, and let F be the point where its circumference meets AB in the direction from A toward B. Since AE = CD < AB, this meeting occurs between A and B. [P3; Step 1 and the given inequality]\n\n**Step 3.** Since E and F lie on the circumference of the circle with centre A, AF = AE. [D1.15]\n\n**Step 4.** But AE = CD, so AF = CD. [CN1] Thus AF, lying within AB, has been cut off from the greater straight line AB equal to the lesser straight line CD, as required.",
+    "used": [
+      "1.2",
+      "P3",
+      "D1.15",
+      "CN1"
+    ],
+    "statement": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less."
+  },
+  {
+    "prop_id": "1.4",
+    "proof": "**Step 1.** Let ABC and DEF be triangles such that AB = DE, AC = DF, and ∠BAC = ∠EDF. We shall prove BC = EF, equality of the triangles, and equality of the corresponding remaining angles. The direct path is superposition and comparison by coincidence, rather than an auxiliary construction. [Hypotheses; CN4]\n\n**Step 2.** Apply triangle ABC to triangle DEF, placing A on D and the direction AB along the direction DE, with C on the same side of DE as F. Then B coincides with E. For, since AB = DE, B cannot fall either short of E or beyond E: in either case one of the aligned segments would be a proper part of the other, contradicting their equality. [Hypothesis AB = DE; CN5; coincidence comparison under CN4]\n\n**Step 3.** The direction AC now coincides with the direction DF. Indeed, the angles BAC and EDF have their vertices and first sides coincident, and their second sides lie on the same side of the common first side. If those second sides had different directions, one of the angles would be a proper part of the other. This contradicts the given equality of the angles. [Hypothesis ∠BAC = ∠EDF; D1.8; D1.9; CN5]\n\n**Step 4.** Consequently C coincides with F. Both lie in the same direction from the coincident points A and D, and AC = DF. If their endpoints differed, one segment would be a proper part of the other, again contradicting equality. Thus the sides AC and DF coincide, as do AB and DE. [Hypothesis AC = DF; CN5]\n\n**Step 5.** Since B coincides with E and C with F, the straight base BC coincides with the straight base EF: they are the straight segments between the same two endpoints. Hence BC = EF. [D1.4; CN4]\n\n**Step 6.** All three sides of triangle ABC therefore coincide respectively with the three sides of triangle DEF. The triangular figures contained by these boundaries consequently coincide, so triangle ABC equals triangle DEF. [D1.14; D1.19; CN4]\n\n**Step 7.** The sides forming ∠ABC coincide respectively with those forming ∠DEF, and the sides forming ∠ACB coincide respectively with those forming ∠DFE. Thus ∠ABC = ∠DEF and ∠ACB = ∠DFE. The first pair is opposite the equal sides AC and DF; the second pair is opposite the equal sides AB and DE. Together with Steps 5 and 6, these are precisely the required conclusions. [D1.8; D1.9; CN4]",
+    "used": [
+      "CN4",
+      "CN5",
+      "D1.8",
+      "D1.9",
+      "D1.4",
+      "D1.14",
+      "D1.19"
+    ],
+    "statement": "If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base, the triangle will be equal to the triangle, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend."
+  },
+  {
+    "prop_id": "1.5",
+    "proof": "**Step 1.** Let ABC be an isosceles triangle with AB = AC and base BC (D1.20). Path choice: construct equal extended sides using 1.3, then apply the available side-angle-side theorem 1.4 twice; this establishes both assertions without requiring a theorem about supplementary angles.\n\n**Step 2.** Produce AB beyond B to F, and produce AC beyond C to E far enough that AE > AF (P2). Cut off AG from AE equal to AF (1.3). Since AF > AB = AC, we have AG > AC, so G lies beyond C. Here the strict inequalities follow from the whole being greater than its part (CN5), together with the stated equalities. Thus the points have orders A, B, F and A, C, G.\n\n**Step 3.** Join FC and GB (P1). Since AF and AB have the same direction from A, as do AG and AC, the angles FAC and GAB are the same angle and hence equal (CN4).\n\n**Step 4.** In triangles AFC and AGB, AF = AG by construction, AC = AB by hypothesis, and ∠FAC = ∠GAB by Step 3. Therefore side-angle-side gives FC = GB, ∠AFC = ∠AGB, and ∠ACF = ∠ABG (1.4).\n\n**Step 5.** Subtract AB = AC from AF = AG. Because B lies between A and F, and C between A and G, the remaining segments satisfy BF = CG (CN3).\n\n**Step 6.** The rays FB and FA coincide, and the rays GC and GA coincide. Consequently ∠BFC = ∠AFC and ∠CGB = ∠AGB (CN4). Together with Step 4, these equalities give ∠BFC = ∠CGB (CN1).\n\n**Step 7.** In triangles BFC and CGB, BF = CG by Step 5, FC = GB by Step 4, and their included angles BFC and CGB are equal by Step 6. Hence ∠FBC = ∠GCB and ∠BCF = ∠CBG (1.4). The first equality is precisely the equality of the angles under the base, since BF and CG are the continuations of AB and AC.\n\n**Step 8.** By the indicated point orders, ∠ACF consists of ∠ACB together with ∠BCF, while ∠ABG consists of ∠ABC together with ∠CBG. The whole angles are equal by Step 4, and the latter parts are equal by Step 7. Subtracting these equal parts gives ∠ACB = ∠ABC (CN3). Thus the angles at the base are equal, and the angles under the base, when the equal sides are produced, are also equal.",
+    "used": [
+      "D1.20",
+      "P2",
+      "1.3",
+      "CN5",
+      "P1",
+      "CN4",
+      "1.4",
+      "CN3",
+      "CN1"
+    ],
+    "statement": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another."
+  },
+  {
+    "prop_id": "1.6",
+    "proof": "**Step 1.** Let ABC be a triangle with ∠ABC = ∠ACB. We must prove AB = AC, the sides opposite these equal angles. [Hypothesis]\n\n**Step 2.** Suppose instead that AB and AC are unequal. By interchanging B and C if necessary, assume AB > AC; this interchange preserves the hypothesis. Cut off BD from BA equal to AC, with D strictly between B and A. [1.3]\n\n**Step 3.** Join DC. Since BD lies along BA in the same direction from B, ∠DBC is the same angle as ∠ABC. Consequently ∠DBC = ∠ACB. [P1; D1.8; hypothesis; CN1]\n\n**Step 4.** Compare triangles DBC and ACB. We have BD = AC by construction, BC = CB because it is the common side, and ∠DBC = ∠ACB by Step 3. Therefore triangle DBC equals triangle ACB. The path chosen is the direct side–angle–side application of 1.4, using its equality-of-triangles conclusion. [CN4; 1.4]\n\n**Step 5.** Because D lies strictly between A and B, DC divides triangle ABC into triangles ADC and DBC. Thus triangle DBC is a proper part of triangle ABC, and triangle ABC is greater than triangle DBC. [Construction in Steps 2–3; CN5]\n\n**Step 6.** Triangle ACB is triangle ABC itself. Hence Step 4 makes the whole triangle equal to its proper part, contradicting Step 5. The supposition that AB and AC are unequal is therefore impossible, so AB = AC. Thus the sides subtending the equal angles are equal. [Steps 4–5; CN5]",
+    "used": [
+      "1.3",
+      "P1",
+      "D1.8",
+      "CN1",
+      "CN4",
+      "1.4",
+      "CN5"
+    ],
+    "statement": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another."
+  },
+  {
+    "prop_id": "1.7",
+    "proof": "**Step 1.** Let AC and BC meet at C on one side of the straight line AB. Suppose, contrary to the proposition, that AD and BD meet at a distinct point D on that same side, with AC = AD and BC = BD. We shall derive a contradiction from these hypotheses.\n\n**Step 2.** The points A, C, D cannot be collinear: since C and D are on the same side of AB, they would lie on the same ray from A, making one of AC and AD a proper part of the other, contrary to their equality (CN5). Likewise, B, C, D cannot be collinear (CN5). Join CD (P1). Thus ACD and BCD are nondegenerate triangles.\n\n**Step 3.** Interchange the names C and D if necessary so that ray AD lies strictly inside angle BAC. This is possible because C and D are on the same side of AB and are not collinear with A (Steps 1–2). There are now two positional cases. If D is on the opposite side of BC from A, the four points have convex boundary order A, C, D, B. If D is on the same side of BC as A, it lies strictly inside triangle ABC. The boundary case D on BC was excluded in Step 2.\n\n**Step 4.** Path choice: apply the isosceles-triangle theorem directly, since the hypotheses already supply the requisite equal sides. From AC = AD and BC = BD, respectively, obtain\nα = ∠ACD = ∠CDA,\nβ = ∠BCD = ∠CDB.\nThese are precisely the base-angle equalities of 1.5.\n\n**Step 5.** In the first case of Step 3, ray CB lies strictly inside angle ACD, while ray DA lies strictly inside angle CDB. Consequently, ∠ACD > ∠BCD and ∠CDB > ∠CDA, because each whole angle is greater than its proper part (CN5). By the equalities in Step 4, these inequalities say both α > β and β > α, a contradiction. Thus the first case is impossible.\n\n**Step 6.** In the second case, D lies strictly inside triangle ABC. Produce AC beyond C to E, and AD beyond D to F (P2). Applying the exterior-angle clause of 1.5 to triangle ACD gives\nγ = ∠ECD = ∠CDF.\n\n**Step 7.** In this interior configuration, ray CB lies strictly inside angle ECD, while ray DF lies strictly inside angle CDB (Steps 3 and 6). Hence ∠ECD > ∠BCD and ∠CDB > ∠CDF (CN5). Using the equalities of Steps 4 and 6, these say both γ > β and β > γ, again a contradiction. Thus the second case is also impossible.\n\n**Step 8.** The two noncollinear arrangements of Step 3 are impossible by Steps 5 and 7, and all collinear boundary arrangements were excluded in Step 2. Therefore no distinct point D on the same side of AB as C can satisfy both AD = AC and BD = BC. This proves the proposition.",
+    "used": [
+      "CN5",
+      "P1",
+      "1.5",
+      "P2"
+    ],
+    "statement": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it."
+  },
+  {
+    "prop_id": "1.8",
+    "proof": "**Step 1.** Let ABC and DEF be triangles with AB = DE, AC = DF, and BC = EF. We must prove ∠BAC = ∠EDF. (Hypotheses.) The direct route is to superpose the equal bases and invoke the same-side uniqueness supplied by 1.7, rather than rederive that uniqueness.\n\n**Step 2.** Superpose triangle DEF upon the plane of ABC, placing E on B and EF along BC, with D on the same side of BC as A. Since EF = BC, F coincides with C. Denote the position of D by X. The placed sides BX and CX coincide with DE and DF respectively, so BX = DE and CX = DF. (Hypothesis BC = EF; CN4.)\n\n**Step 3.** Since BX = DE and AB = DE, we have BX = AB. Likewise, since CX = DF and AC = DF, we have CX = AC. (Hypotheses; CN1.)\n\n**Step 4.** If X were distinct from A, the pairs BA, CA and BX, CX would stand on the same base BC, meet at distinct points on the same side of it, and be respectively equal at the same extremities. This is impossible by 1.7. Therefore X coincides with A. (1.7.)\n\n**Step 5.** Thus, under this superposition, DE coincides with AB and DF with AC. Consequently ∠EDF coincides with ∠BAC, and coincident angles are equal. Hence ∠BAC = ∠EDF, as required. (CN4.)",
+    "used": [
+      "CN4",
+      "CN1",
+      "1.7"
+    ],
+    "statement": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines."
+  },
+  {
+    "prop_id": "1.9",
+    "proof": "**Step 1.** Let BAC be the given rectilineal angle. Interchange the names B and C if necessary so that AB is not greater than AC. We must draw a straight line from A dividing this angle into two equal angles. [D1.9]\n\n**Step 2.** If AB = AC, take E = C. Otherwise, cut off AE from AC equal to AB. Thus, in either case, E lies on the side AC and AB = AE. [1.3]\n\n**Step 3.** Join BE and construct the equilateral triangle BEF on it, choosing F on the side of BE opposite A. In particular, BF = EF. The opposite-side choice ensures that the auxiliary vertex is distinct from A and places it beyond BE rather than toward A. [P1, 1.1, D1.20]\n\n**Step 4.** Join AF. In triangles BAF and EAF, the sides BA and EA are equal by Step 2, and AF is common to both triangles, hence equal to itself. Their bases BF and EF are equal by Step 3. [P1, CN4]\n\n**Step 5.** Therefore the angles contained by BA, AF and by EA, AF are equal: ∠BAF = ∠EAF. We use the three-side criterion directly because the construction has supplied exactly its required side equalities. [1.8]\n\n**Step 6.** With F chosen across BE from A, the joining line AF passes inside the angle BAE. Since AE lies along AC, the angles EAF and FAC coincide and are equal. Thus ∠BAF = ∠FAC, and AF divides the given angle BAC into two equal angles. The given rectilineal angle has therefore been bisected. [CN4, CN1, D1.9]",
+    "used": [
+      "D1.9",
+      "1.3",
+      "P1",
+      "1.1",
+      "D1.20",
+      "CN4",
+      "1.8",
+      "CN1"
+    ],
+    "statement": "To bisect a given rectilineal angle."
+  },
+  {
+    "prop_id": "1.10",
+    "proof": "**Step 1.** Let AB be the given finite straight line. Construct the equilateral triangle ABC on AB by Proposition 1.1. Thus CA = CB by the definition of an equilateral triangle. [1.1, D1.20]\n\n**Step 2.** Bisect the angle ACB by Proposition 1.9, and produce its internal bisecting straight line as necessary to meet AB at D, between A and B. Then ∠ACD = ∠DCB. This chooses angle bisection as the route to the required segment bisection. [1.9, P2]\n\n**Step 3.** The side CD is common to triangles ACD and BCD, and hence equals itself. Together with Steps 1–2, we therefore have CA = CB, CD = CD, and the included angles ∠ACD = ∠BCD. [CN4; Steps 1–2]\n\n**Step 4.** Apply Proposition 1.4 to triangles ACD and BCD: their bases AD and BD are equal. The side–angle–side criterion is the natural choice because precisely its hypotheses have already been established. Since D lies between A and B, the given finite straight line AB has been divided into the two equal parts AD and DB, as required. [1.4; Step 2]",
+    "used": [
+      "1.1",
+      "D1.20",
+      "1.9",
+      "P2",
+      "CN4",
+      "1.4"
+    ],
+    "statement": "To bisect a given finite straight line."
+  },
+  {
+    "prop_id": "1.11",
+    "proof": "**Step 1.** Let C be the given point on the given straight line. Choose a point D distinct from C on that line. Produce the line on the opposite side of C to a point G far enough that CG > CD. Thus C lies between D and G. [P2]\n\n**Step 2.** From CG cut off CE equal to CD, with E on CG. Then D, C, E lie on the given straight line, C lies between D and E, and CD = CE. [1.3]\n\n**Step 3.** On DE construct an equilateral triangle DFE, whose vertex F is off the given line. In particular, DF = EF. [1.1, D1.20]\n\n**Step 4.** Join C to F. The side CF is common to triangles DCF and ECF, so CF = CF. [P1, CN4]\n\n**Step 5.** In triangles DCF and ECF, the sides DC and CF equal EC and CF respectively, and the bases DF and EF are equal. Therefore ∠DCF = ∠ECF. The path choice is to apply 1.8 directly: the three side equalities are already established, and it yields precisely the required angles at C without first proving another angle equality. [1.8]\n\n**Step 6.** Since D, C, E are collinear with C between D and E, these are the adjacent angles made by CF standing on the given straight line. They are equal, so each is a right angle and CF is perpendicular to that line. Thus CF is the required straight line drawn at right angles from the given point C. [D1.10]",
+    "used": [
+      "P2",
+      "1.3",
+      "1.1",
+      "D1.20",
+      "P1",
+      "CN4",
+      "1.8",
+      "D1.10"
+    ],
+    "statement": "To draw a straight line at right angles to a given straight line from a given point on it."
+  },
+  {
+    "prop_id": "1.12",
+    "proof": "**Step 1.** Let ℓ be the given infinite straight line and C the given point not on it. Choose A on ℓ, join CA, and produce CA beyond A to D. (P1, P2.)\n\n**Step 2.** Describe the circle with centre C and radius CD. (P3.) Since CA is a proper part of CD, CA < CD; hence A lies inside the circle. The infinite straight line ℓ through A therefore cuts the circumference on either side of A; call these intersections E and F. (CN5, D1.15.)\n\n**Step 3.** Bisect EF at M, so that EM = MF and M lies between E and F. (1.10.) Join CE, CF, and CM. (P1.) The chosen route is to compare the two triangles formed by joining C to the midpoint of EF.\n\n**Step 4.** Since E and F lie on the circle with centre C, CE = CF. (D1.15.) Also EM = MF by the bisection, and CM = CM because it is common to both triangles. (1.10, CN4.)\n\n**Step 5.** In triangles EMC and FMC, the sides EM and MC equal FM and MC respectively, and the bases EC and FC are equal. Therefore ∠EMC = ∠FMC. (1.8.) This is the direct choice of proposition: all three corresponding side equalities are already available, without first needing an angle equality.\n\n**Step 6.** Since E, M, and F lie in that order on ℓ, these equal angles are the adjacent angles made by CM standing on ℓ. Consequently each is a right angle, and CM is perpendicular to ℓ. Thus the required perpendicular has been drawn from the given point C to the given infinite straight line. (D1.10.)",
+    "used": [
+      "P1",
+      "P2",
+      "P3",
+      "CN5",
+      "D1.15",
+      "1.10",
+      "CN4",
+      "1.8",
+      "D1.10"
+    ],
+    "statement": "To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line."
+  },
+  {
+    "prop_id": "1.13",
+    "proof": "**Step 1.** Let A, B, C lie on one straight line, with B between A and C, and let BD stand on that line, making the adjacent angles ABD and DBC. If these angles are equal, each is a right angle by D1.10. This gives the first alternative.\n\n**Step 2.** Suppose instead that the two angles are unequal. On the side of AC containing D, construct BE perpendicular to AC at B. We choose 1.11 directly because the point B is on the given line. The adjacent angles ABE and EBC are equal and are both right angles (1.11; D1.10). Consequently BE is distinct from BD. Interchanging the names A and C if necessary, we may take BD to lie between BA and BE.\n\n**Step 3.** The adjacent angular parts coincide with their respective whole angles. Therefore\n∠ABE = ∠ABD + ∠DBE,\nand\n∠DBC = ∠DBE + ∠EBC.\nThese are equalities of each whole with precisely the parts composing it (CN4).\n\n**Step 4.** Adding ∠EBC to both sides of the first equality, and using the second equality to identify the adjoining parts ∠DBE and ∠EBC, gives\n∠ABE + ∠EBC = ∠ABD + ∠DBE + ∠EBC = ∠ABD + ∠DBC\n(CN2; CN1).\n\n**Step 5.** Since ∠ABE and ∠EBC are both right angles, Step 4 shows that ∠ABD and ∠DBC together equal two right angles (D1.10; CN1). Together with Step 1, this proves that a straight line set up on a straight line makes either two right angles or angles equal to two right angles.",
+    "used": [
+      "D1.10",
+      "1.11",
+      "CN4",
+      "CN2",
+      "CN1"
+    ],
+    "statement": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles."
+  },
+  {
+    "prop_id": "1.14",
+    "proof": "**Step 1.** Let B be the given point, and let BA be the common side of the adjacent angles. Let BC and BD lie on opposite sides of the straight line containing BA, with ∠CBA + ∠ABD equal to two right angles. We must show that BC and BD are in one straight line. [Hypothesis]\n\n**Step 2.** Produce CB through B to E in a straight line. Thus BE lies on the opposite side of the line containing BA from BC, and hence on the same side as BD. [P2; hypothesis]\n\n**Step 3.** Since BA stands on the straight line CBE, ∠CBA + ∠ABE equals two right angles. This is the direct route: 1.13 already supplies the adjacent-angle sum for the constructed straight continuation. [1.13]\n\n**Step 4.** All right angles are equal, so the sums of two right angles in Step 1 and Step 3 are equal. Therefore\n∠CBA + ∠ABD = ∠CBA + ∠ABE.\n[P4; CN2; CN1]\n\n**Step 5.** Subtract the common angle ∠CBA from these equal sums. The remaining angles are equal:\n∠ABD = ∠ABE.\n[CN3]\n\n**Step 6.** If BD and BE were distinct rays, then, since they lie on the same side of the line containing BA, one would lie inside the angle formed by BA and the other. Thus one of ∠ABD and ∠ABE would be a proper part of the other, and the whole would be greater than the part. This contradicts Step 5. Hence BD and BE coincide in direction. [Step 2; CN5; Step 5]\n\n**Step 7.** Since BE is the straight continuation of CB and BD coincides with BE, BC and BD are in one straight line with one another, as required. [P2; Steps 2 and 6]",
+    "used": [
+      "P2",
+      "1.13",
+      "P4",
+      "CN2",
+      "CN1",
+      "CN3",
+      "CN5"
+    ],
+    "statement": "If with any straight line, and at a point on it, two straight lines not lying on the same side make the adjacent angles equal to two right angles, the two straight lines will be in a straight line with one another."
+  },
+  {
+    "prop_id": "1.15",
+    "proof": "**Step 1.** Let the straight lines AB and CD cut one another at O, with A, O, B in that order and C, O, D in that order. We must prove ∠AOC = ∠BOD and ∠COB = ∠DOA. [Given configuration.]\n\n**Step 2.** Let T denote the sum of two right angles. Every pair of right angles has this same sum: right angles are equal, and adding equals to equals gives equal wholes. [P4, CN2.]\n\n**Step 3.** Use 1.13 directly, since straightness is given and we need the adjacent-angle sums; no auxiliary construction or converse straightness test is needed. Applying it to OC standing on AB, to OB standing on CD, and to OA standing on CD, respectively, gives\n∠AOC + ∠COB = T,\n∠COB + ∠BOD = T,\n∠DOA + ∠AOC = T.\n[1.13; Step 2.]\n\n**Step 4.** The first two sums in Step 3 are equal because both equal T. [CN1.] Subtract the common angle ∠COB from these equal sums. The remainders are equal, so ∠AOC = ∠BOD. [CN3.]\n\n**Step 5.** The first and third sums in Step 3 are likewise equal because both equal T. [CN1.] Subtract the common angle ∠AOC. The remainders are equal, so ∠COB = ∠DOA. [CN3.] Thus both pairs of vertical angles are equal, as required.",
+    "used": [
+      "P4",
+      "CN2",
+      "1.13",
+      "CN1",
+      "CN3"
+    ],
+    "statement": "If two straight lines cut one another, they make the vertical angles equal to one another."
+  },
+  {
+    "prop_id": "1.16",
+    "proof": "**Step 1.** Let ABC be a triangle, and produce BC beyond C to D. We must show that ∠ACD is greater than both ∠BAC and ∠ABC. We use midpoint constructions: these provide two equal sides and equal included vertical angles, making the side–angle–side theorem 1.4 the natural congruence criterion. [P2]\n\n**Step 2.** Bisect AC at E. Join BE, produce it beyond E, and cut off EF equal to EB on the produced part, first extending that part sufficiently. Join CF. Thus AE = EC, BE = EF, and B, E, F occur in that order. [1.10, P1, P2, 1.3]\n\n**Step 3.** The angles ∠AEB and ∠CEF are vertical angles and therefore equal. Hence triangles AEB and CEF have two sides respectively equal and their included angles equal. Consequently, ∠BAE = ∠ECF. [1.15, 1.4]\n\n**Step 4.** Since E lies between A and C, ∠BAE coincides with ∠BAC, and ∠ECF coincides with ∠ACF. Therefore ∠BAC = ∠ACF. [CN4, CN1; Step 3]\n\n**Step 5.** The point order in Step 2 places F on the side of AC opposite B and on the same side of BC as A. Thus CF lies strictly inside the exterior angle ∠ACD. Consequently, ∠ACF is a proper part of ∠ACD, so ∠ACD > ∠ACF = ∠BAC. [CN5; Steps 1–4]\n\n**Step 6.** Now produce AC beyond C to G. Bisect BC at H, join AH, and produce AH beyond H. On the produced part, extended sufficiently, cut off HK equal to HA, and join CK. Thus BH = HC, AH = HK, and A, H, K occur in that order. [P2, 1.10, P1, 1.3]\n\n**Step 7.** The vertical angles ∠BHA and ∠CHK are equal. Therefore triangles BHA and CHK have two sides respectively equal and their included angles equal, giving ∠HBA = ∠HCK. Since H lies between B and C, these angles coincide respectively with ∠ABC and ∠BCK. Hence ∠ABC = ∠BCK. [1.15, 1.4, CN4, CN1]\n\n**Step 8.** The point order in Step 6 places K on the side of BC opposite A and on the same side of AC as B. Thus CK lies strictly inside ∠BCG. Consequently, ∠BCK is a proper part of ∠BCG, and ∠BCG > ∠BCK = ∠ABC. [CN5; Steps 6–7]\n\n**Step 9.** Since BC is produced to D and AC is produced to G, ∠BCG and ∠ACD are vertical angles and are equal. Step 8 therefore gives ∠ACD > ∠ABC, while Step 5 gives ∠ACD > ∠BAC. Thus the exterior angle is greater than either interior and opposite angle. [1.15; Steps 5 and 8]",
+    "used": [
+      "P1",
+      "P2",
+      "CN1",
+      "CN4",
+      "CN5",
+      "1.3",
+      "1.4",
+      "1.10",
+      "1.15"
+    ],
+    "statement": "In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles."
+  },
+  {
+    "prop_id": "1.17",
+    "proof": "**Step 1.** Let ABC be any triangle, and choose any two of its angles, labelling their vertices B and C. Produce AB beyond B to D, so that A, B, D lie on one straight line. [P2]\n\n**Step 2.** The exterior angle CBD is greater than the interior and opposite angle BCA. [1.16] This is the direct path: the extension naturally supplies an exterior angle to which the previously proved exterior-angle inequality applies.\n\n**Step 3.** Since BC stands on the straight line ABD, the adjacent angles ABC and CBD together equal two right angles. [1.13]\n\n**Step 4.** Let E denote the nonzero excess of angle CBD over angle BCA established in Step 2. Thus ∠CBD = ∠BCA + E. Adding ∠ABC to both sides gives\n∠ABC + ∠CBD = (∠ABC + ∠BCA) + E. [CN2]\nConsequently, ∠ABC + ∠BCA is a proper part of ∠ABC + ∠CBD and is therefore less than it. [CN5] By Step 3, the latter sum equals two right angles. Hence ∠ABC + ∠BCA is less than two right angles. [Steps 2–3]\n\n**Step 5.** The triangle and the selected pair of angles were arbitrary. Therefore, in any triangle, two angles taken together in any manner are less than two right angles. [Steps 1–4]",
+    "used": [
+      "P2",
+      "1.16",
+      "1.13",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "In any triangle two angles taken together in any manner are less than two right angles."
+  },
+  {
+    "prop_id": "1.18",
+    "proof": "**Step 1.** Let ABC be any triangle with AC > AB. We must show that ∠ABC > ∠BCA. Cut off AD from AC equal to AB, with D strictly between A and C [1.3]. Join BD [P1].\n\n**Step 2.** In triangle ABD, AB = AD by construction. Therefore its base angles are equal: ∠ABD = ∠BDA [1.5].\n\n**Step 3.** In triangle BDC, the side CD is produced through D to A. Thus ∠BDA is an exterior angle, and ∠BDA > ∠BCD [1.16]. This is the direct path choice: the constructed exterior angle makes 1.16 immediately applicable. Since D lies on CA, the rays CD and CA coincide, so ∠BCD = ∠BCA [CN4].\n\n**Step 4.** Since D lies strictly between A and C, BD divides ∠ABC, and ∠ABD is a proper part of ∠ABC. Hence ∠ABC > ∠ABD [CN5].\n\n**Step 5.** Combining Steps 2–4 gives ∠ABC > ∠ABD = ∠BDA > ∠BCD = ∠BCA. Thus the angle opposite the greater side AC is greater than the angle opposite the lesser side AB. Since the triangle and the unequal sides were arbitrary, in any triangle the greater side subtends the greater angle.",
+    "used": [
+      "1.3",
+      "P1",
+      "1.5",
+      "1.16",
+      "CN4",
+      "CN5"
+    ],
+    "statement": "In any triangle the greater side subtends the greater angle."
+  },
+  {
+    "prop_id": "1.19",
+    "proof": "**Step 1.** Let ABC be any triangle in which ∠ABC > ∠BCA (hypothesis). We must prove AC > AB. Our path is to exclude equality and the reverse inequality using the previously proved side-to-angle results, without an auxiliary construction.\n\n**Step 2.** If AC = AB, then the angles at the base BC are equal: ∠ABC = ∠BCA, by **1.5**. This contradicts the hypothesis in Step 1. Therefore AC ≠ AB. Proposition 1.5 is the direct choice here because the assumed equality concerns sides and yields equality of the opposite angles.\n\n**Step 3.** If AC < AB, then the greater side AB subtends the greater angle, so ∠BCA > ∠ABC, by **1.18**. This again contradicts the hypothesis in Step 1. Therefore AC is not less than AB.\n\n**Step 4.** Since AC is neither equal to AB nor less than AB (Steps 2–3), the remaining comparison is AC > AB. Thus the greater angle ∠ABC is subtended by the greater side AC. Since the triangle and the pair of unequal angles were arbitrary, in any triangle the greater angle is subtended by the greater side.",
+    "used": [
+      "1.5",
+      "1.18"
+    ],
+    "statement": "In any triangle the greater angle is subtended by the greater side."
+  },
+  {
+    "prop_id": "1.20",
+    "proof": "**Step 1.** Let ABC be any triangle. We first prove AB + AC > BC, choosing an isosceles extension to obtain an angle comparison. Produce BA beyond A to E with AE > AC (P2), and cut off AD = AC from AE (1.3). Thus B, A, D lie in that order on one straight line. Join CD (P1).\n\n**Step 2.** Since AD = AC, the base angles of triangle ACD are equal: ∠ACD = ∠CDA (1.5). Since the rays DA and DB coincide, ∠CDA = ∠CDB (CN4).\n\n**Step 3.** Because A lies between B and D, ray CA lies inside ∠BCD. Therefore ∠ACD is a proper part of ∠BCD, so ∠BCD > ∠ACD (CN5). Substituting the equal angles from Step 2 gives ∠BCD > ∠CDB.\n\n**Step 4.** In triangle BCD, the greater angle ∠BCD is subtended by BD, while ∠CDB is subtended by BC. Consequently BD > BC (1.19). This angle-to-side proposition applies directly to the comparison obtained in Step 3.\n\n**Step 5.** Since A lies between B and D, BD is BA and AD taken together. Adding BA to the equality AD = AC gives BA + AD = BA + AC (CN2). Thus BD = BA + AC, and Step 4 yields AB + AC > BC.\n\n**Step 6.** Apply Steps 1–5 with (A, B, C) replaced first by (B, C, A) and then by (C, A, B). These give BA + BC > AC and CA + CB > AB, respectively. Together with Step 5, these establish that any two sides of the triangle taken together are greater than the remaining side.",
+    "used": [
+      "P2",
+      "1.3",
+      "P1",
+      "1.5",
+      "CN4",
+      "CN5",
+      "1.19",
+      "CN2"
+    ],
+    "statement": "In any triangle two sides taken together in any manner are greater than the remaining one."
+  },
+  {
+    "prop_id": "1.21",
+    "proof": "**Step 1.** Let ABC be the given triangle, and let BD and CD be the straight lines drawn from the extremities of BC to a point D strictly inside the triangle. We must prove BD + DC < BA + AC and ∠BDC > ∠BAC. [Hypothesis]\n\n**Step 2.** Produce BD beyond D to meet AC at E. Thus B, D, E occur in that order, and E lies between A and C, since D is inside triangle ABC. [P2; interior-point hypothesis] Path choice: this single extension allows direct application of the triangle inequality (1.20) to the lengths and the exterior-angle inequality (1.16) to the angles.\n\n**Step 3.** In triangle ABE, AB + AE > BE. [1.20] Add EC to both sides. Equal addition preserves the strict comparison, since the greater magnitude retains its excess. As AE + EC = AC, we obtain\nAB + AC > BE + EC. [CN2, CN5]\n\n**Step 4.** In triangle DEC, DE + EC > DC. [1.20] Add BD to both sides; since BD + DE = BE, this gives\nBE + EC > BD + DC. [CN2, CN5]\nTogether with Step 3, this proves AB + AC > BD + DC. [Steps 3–4]\n\n**Step 5.** In triangle DEC, ED is produced through D to B. Hence the exterior angle BDC is greater than the interior opposite angle DEC. [1.16] The rays ED and EB coincide, so ∠DEC = ∠BEC. [CN4] Therefore ∠BDC > ∠BEC.\n\n**Step 6.** In triangle ABE, AE is produced through E to C. Hence the exterior angle BEC is greater than the interior opposite angle BAE. [1.16] The rays AE and AC coincide, so ∠BAE = ∠BAC. [CN4] Therefore ∠BEC > ∠BAC.\n\n**Step 7.** By Steps 5–6, ∠BDC > ∠BAC; and by Step 4, BD + DC < BA + AC. Thus the two straight lines meeting within the triangle are together less than the remaining two sides, but contain a greater angle, as required. [Steps 4–6]",
+    "used": [
+      "P2",
+      "1.20",
+      "CN2",
+      "CN5",
+      "1.16",
+      "CN4"
+    ],
+    "statement": "If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greaterangle."
+  },
+  {
+    "prop_id": "1.22",
+    "proof": "**Step 1.** The stated condition is necessary: in any triangle, two sides taken together in any manner are greater than the remaining side, by **1.20**. For the construction, let the given lengths be a, b, c, with a greatest, and suppose a+b>c, a+c>b, and b+c>a.\n\n**Step 2.** Take the given line of length a itself as AB. If b<a, cut off AD=b from AB by **1.3**; if b=a, take D=B. Thus D lies on AB and AD=b. This is the direct path: retain a given line as the base and use **1.3**, rather than transfer that base to a new position.\n\n**Step 3.** Describe the circle Γ with centre A and distance AD, and the circle Δ with centre B and distance c (**P3**). Produce BA beyond A to the opposite endpoint E of the diameter of Γ through D (**P2**, **D1.17**). Then AE=AD=b, since both are radii of Γ (**D1.15**).\n\n**Step 4.** Because D lies between A and B, or coincides with B, we have BD=a−b; because A lies between B and E, we have BE=a+b (**CN2**, **CN3**). The assumed inequality b+c>a gives BD<c, while a+b>c gives BE>c. Hence D is inside Δ and E is outside Δ; if D=B, D is its centre and therefore inside it (**D1.15**).\n\n**Step 5.** Consider either semicircular circumference of Γ from D to E (**D1.18**). It passes from a point inside Δ to a point outside Δ, and therefore meets the circumference bounding Δ. Choose such a meeting point C. Thus C lies on both circles (**D1.15**). Neither D nor E lies on Δ, by the strict inequalities in Step 4. The only points of Γ on its diameter-line DE are D and E, since a radius on either ray from A has the fixed length AD (**D1.15**, **CN5**). Consequently C does not lie on AB.\n\n**Step 6.** Join AC and BC (**P1**). Since C belongs to Γ, AC=AD=b; since C belongs to Δ, BC=c (**D1.15**, **CN1**). Also AB=a by its selection in Step 2.\n\n**Step 7.** The three noncollinear points A, B, C therefore determine the triangle ABC, bounded by AB, BC, and CA (**D1.19**). Its sides equal the three given straight lines respectively. Thus the required triangle has been constructed whenever every two given lines together exceed the remaining one; Step 1 establishes the necessity of that condition.",
+    "used": [
+      "1.20",
+      "1.3",
+      "P3",
+      "P2",
+      "D1.17",
+      "D1.15",
+      "CN2",
+      "CN3",
+      "D1.18",
+      "CN5",
+      "P1",
+      "CN1",
+      "D1.19"
+    ],
+    "statement": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one."
+  },
+  {
+    "prop_id": "1.23",
+    "proof": "**Step 1.** Let A be the given point on the given straight line ℓ, and let the given rectilineal angle have vertex C. Choose points D and E, distinct from C, on its two respective sides. These sides do not lie in one straight line, so C, D, E are noncollinear (D1.8, D1.9). Join DE, forming triangle CDE (P1).\n\n**Step 2.** In triangle CDE, any two sides together are greater than the remaining side. Thus CD + CE > DE, CD + DE > CE, and CE + DE > CD (1.20).\n\n**Step 3.** Apply the three-side triangle construction of 1.22, taking A as its initial vertex and ℓ as the supporting line of its first side. Construct triangle AFG such that F lies on ℓ and AF = CD, AG = CE, and FG = DE (1.22). The inequalities in Step 2 supply all the required hypotheses. This uses the established triangle construction directly rather than repeating its underlying construction.\n\n**Step 4.** The triangles AFG and CDE have AF = CD and AG = CE, and their bases FG and DE are equal. Therefore their included angles ∠FAG and ∠DCE are equal (1.8). This is the direct applicable angle-equality criterion because the construction supplies three corresponding side equalities. Since AF lies on ℓ and A is the prescribed point, ∠FAG is the required rectilineal angle on the given straight line at that point (D1.9).",
+    "used": [
+      "D1.8",
+      "D1.9",
+      "P1",
+      "1.20",
+      "1.22",
+      "1.8"
+    ],
+    "statement": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle."
+  },
+  {
+    "prop_id": "1.24",
+    "proof": "**Step 1.** Let ABC and DEF be triangles with AB = DE, AC = DF, and ∠BAC > ∠EDF. We must prove BC > EF. (Hypotheses.)\n\n**Step 2.** At A construct a ray inside ∠BAC making with AB an angle equal to ∠EDF; this placement is possible because ∠EDF < ∠BAC. On this ray take G such that AG = AC, extending a segment along the ray before cutting off the required length if necessary. Thus ∠BAG = ∠EDF and AG = DF. (1.23; P2; 1.3; CN1.)\n\n**Step 3.** In triangles ABG and DEF, AB = DE, AG = DF, and the included angles ∠BAG and ∠EDF are equal. These are precisely the side–angle–side data, so 1.4 gives BG = EF. (1.4.)\n\n**Step 4.** Path choice: bisect the excess angle ∠GAC, so that another application of side–angle–side will make the triangle inequality directly applicable. Let its internal bisector meet BC at X, and join GX. Since this bisector lies strictly inside ∠BAC, X lies between B and C. (1.9; P2; P1.)\n\n**Step 5.** In triangles AGX and ACX, AG = AC, AX is common, and ∠GAX = ∠XAC by the bisection. Hence GX = CX. (1.4.)\n\n**Step 6.** If G lies on BC, it lies between B and C, since the ray AG lies strictly inside ∠BAC. Consequently BG < BC, the whole being greater than its part. (CN5.) If G does not lie on BC, then B, G, and X form a triangle, and therefore BG < BX + XG. (1.20.) But XG = XC by Step 5, so BX + XG = BX + XC by addition of equals; and BX + XC = BC because X lies between B and C. Thus BG < BC in this case also. (CN2; Step 4.)\n\n**Step 7.** By Step 3, BG = EF, while Step 6 gives BC > BG. Substituting the equal base EF for BG yields BC > EF. Therefore the triangle with the greater angle contained by the respectively equal sides has the greater base, as required. (Steps 3 and 6.)",
+    "used": [
+      "1.23",
+      "P2",
+      "1.3",
+      "CN1",
+      "1.4",
+      "1.9",
+      "P1",
+      "CN5",
+      "1.20",
+      "CN2"
+    ],
+    "statement": "If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base."
+  },
+  {
+    "prop_id": "1.25",
+    "proof": "**Step 1.** Let ABC and DEF be triangles with AB = DE, AC = DF, and BC > EF (hypotheses). We must prove that ∠BAC > ∠EDF. We exclude equality and the reverse inequality directly, without an auxiliary construction.\n\n**Step 2.** If ∠BAC = ∠EDF, then the two pairs of equal sides and their equal included angles give BC = EF by **1.4**. This contradicts BC > EF from Step 1. Thus ∠BAC is not equal to ∠EDF. Here 1.4 is the natural choice because its side–angle–side hypotheses hold directly.\n\n**Step 3.** If ∠BAC < ∠EDF, apply **1.24** with triangle DEF first and triangle ABC second. Since DE = AB and DF = AC, the greater included angle ∠EDF would give EF > BC. This contradicts BC > EF from Step 1. Thus ∠BAC is not less than ∠EDF.\n\n**Step 4.** Since ∠BAC is neither equal to nor less than ∠EDF, it must be greater than ∠EDF (elimination of the other two comparisons, Steps 2–3). Therefore the greater base is opposite the greater angle contained by the respectively equal sides, as required.",
+    "used": [
+      "1.4",
+      "1.24"
+    ],
+    "statement": "If two triangles have the two sides equal to two sides respectively, but have the base greater than the base, they will also have the one of the angles contained by the equal straight lines greater than the other."
+  },
+  {
+    "prop_id": "1.26",
+    "proof": "**Step 1.** Let triangles ABC and DEF satisfy ∠ABC = ∠DEF and ∠ACB = ∠DFE. The given equal sides are either BC = EF, adjoining the equal angles, or a corresponding pair opposite one of them. In the latter case, by interchanging B with C and E with F if necessary, we may take AB = DE. These exhaust the hypotheses. Path choice: in each case establish a second pair of equal sides, then apply 1.4, which directly uses a given included angle. [Hypotheses; 1.4.]\n\n**Step 2.** First suppose BC = EF. If AB and DE are unequal, interchange the triangles if necessary so that AB > DE. Cut off BG = DE from BA, with G strictly between B and A, and join GC. [1.3; P1.]\n\n**Step 3.** Since BG and BA have the same direction from B, ∠GBC = ∠ABC = ∠DEF. Thus triangles GBC and DEF have BG = DE, BC = EF, and their included angles equal. Therefore ∠GCB = ∠DFE by 1.4. Together with the given equality ∠DFE = ∠ACB, this gives ∠GCB = ∠ACB. [CN4; hypotheses; 1.4; CN1.]\n\n**Step 4.** But G lies strictly between A and B, so CG lies inside ∠ACB: ∠GCB is a proper part of ∠ACB. Hence ∠ACB > ∠GCB, contradicting Step 3. Consequently AB = DE; the opposite inequality is excluded by the same argument with the triangles interchanged. Applying 1.4 to ABC and DEF, using AB = DE, BC = EF, and ∠ABC = ∠DEF, now gives AC = DF and ∠BAC = ∠EDF. This completes the case of the adjoining side. [CN5; Step 3; 1.4.]\n\n**Step 5.** Now suppose AB = DE, the sides opposite the given equal angles at C and F. If BC and EF are unequal, interchange the triangles if necessary so that BC > EF. Cut off BH = EF from BC, with H strictly between B and C, and join AH. [Hypotheses; 1.3; P1.]\n\n**Step 6.** Since BH and BC have the same direction from B, ∠ABH = ∠ABC = ∠DEF. Thus triangles ABH and DEF have AB = DE, BH = EF, and their included angles equal. By 1.4, ∠AHB = ∠DFE; hence ∠AHB = ∠ACB by the given equality at C and F. [CN4; hypotheses; 1.4; CN1.]\n\n**Step 7.** In triangle AHC, the side CH is extended beyond H to B. Therefore its exterior angle ∠AHB is greater than its interior opposite angle ∠ACH. Since CH and CB have the same direction from C, ∠ACH = ∠ACB. Thus ∠AHB > ∠ACB, contradicting Step 6. Consequently BC = EF; again, the opposite inequality is excluded by interchanging the triangles. [1.16; CN4; Step 6.]\n\n**Step 8.** With AB = DE, BC = EF, and ∠ABC = ∠DEF, proposition 1.4 gives AC = DF and ∠BAC = ∠EDF. Therefore, whether the given equal sides adjoin the equal angles or subtend corresponding equal angles, the remaining sides are respectively equal and the remaining angles are equal, as required. [1.4; Steps 4 and 7.]",
+    "used": [
+      "1.3",
+      "P1",
+      "CN4",
+      "1.4",
+      "CN1",
+      "CN5",
+      "1.16"
+    ],
+    "statement": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal tothe remaining sides and the remaining angle to the remaining angle."
+  },
+  {
+    "prop_id": "1.27",
+    "proof": "**Step 1.** Let the transversal meet the two coplanar straight lines AB and CD at E and F respectively. Name points on the lines, producing them if necessary, so that A,E,B and C,F,D occur in these orders, with A and C on one side of EF and B and D on the other. The given equality of alternate angles is ∠AEF = ∠EFD. [Hypothesis; P2]\n\n**Step 2.** Produce both straight lines in both directions. We choose the exterior-angle inequality as the direct route: any alleged meeting forms a triangle in which one of the given equal angles is exterior and the other is interior and opposite. [P2; 1.16]\n\n**Step 3.** Suppose the lines meet at G on the side of EF containing B and D. In triangle EFG, ∠AEF is the exterior angle at E, and ∠EFD is the interior opposite angle at F, since FG and FD are the same ray. Therefore ∠AEF > ∠EFD, contradicting their given equality. Thus the lines cannot meet on this side. [1.16; Step 1]\n\n**Step 4.** Suppose instead that the lines meet at H on the side of EF containing A and C. In triangle EFH, ∠EFD is the exterior angle at F, and ∠AEF is the interior opposite angle at E, since EH and EA are the same ray. Therefore ∠EFD > ∠AEF, again contradicting their given equality. Thus the lines cannot meet on this side either. [1.16; Step 1]\n\n**Step 5.** The two straight lines therefore do not meet in either direction when produced indefinitely. Since they lie in the same plane, they are parallel to one another. [Steps 3–4; D1.23]",
+    "used": [
+      "P2",
+      "1.16",
+      "D1.23"
+    ],
+    "statement": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another."
+  },
+  {
+    "prop_id": "1.28",
+    "proof": "**Step 1.** Let the transversal meet the two coplanar straight lines AB and CD at E and F respectively. Label the points so that A, E, B and C, F, D occur in those orders, with B and D on the same side of the transversal. Produce FE beyond E to G. [P2] The given alternatives are then ∠GEB = ∠EFD, or ∠BEF + ∠EFD equals two right angles. [Hypotheses]\n\n**Step 2.** First suppose that the exterior angle ∠GEB equals the interior and opposite angle ∠EFD. Since AB and GF intersect at E, their vertical angles ∠AEF and ∠GEB are equal. [1.15] Consequently ∠AEF = ∠EFD. [Hypothesis, CN1]\n\n**Step 3.** The angles ∠AEF and ∠EFD are alternate angles made by the transversal EF with AB and CD. Therefore AB is parallel to CD. [1.27] This is the direct path: the vertical-angle equality immediately supplies the hypothesis of the previously established alternate-angle criterion.\n\n**Step 4.** Now suppose instead that ∠BEF + ∠EFD equals two right angles. [Hypothesis] Because EA and EB are opposite rays, ∠AEF + ∠BEF also equals two right angles. [1.13] All right angles are equal, so any two pairs of right angles have equal sums. [P4, CN2] Hence\n∠AEF + ∠BEF = ∠BEF + ∠EFD. [CN1]\n\n**Step 5.** Subtract the common angle ∠BEF from these equal sums. The remaining angles are equal:\n∠AEF = ∠EFD. [CN3]\n\n**Step 6.** Again these are alternate angles, so AB is parallel to CD. [1.27] Thus either of the two stated conditions makes the straight lines parallel to one another.",
+    "used": [
+      "P2",
+      "1.15",
+      "CN1",
+      "1.27",
+      "1.13",
+      "P4",
+      "CN2",
+      "CN3"
+    ],
+    "statement": "If a straight line falling on two straight lines make the exterior angle equal to the interior and opposite angle on the same side, or the interior angles on the same side equal to two right angles, the straight lines will be parallel to one another."
+  },
+  {
+    "prop_id": "1.29",
+    "proof": "**Step 1.** Let the parallel straight lines AB and CD be cut by a transversal at G and H. Label points so that A,G,B; C,H,D; and E,G,H,F occur in those orders, with A and C on one side of the transversal and B and D on the other. Since AB and CD are parallel, they do not meet when produced indefinitely in either direction. [D1.23]\n\n**Step 2.** Write 2R for two right angles. The adjacent-angle theorem gives\n∠AGH + ∠BGH = 2R,\n∠CHG + ∠GHD = 2R.\nThe two right-angle totals are equal because all right angles are equal. [1.13, P4]\nPath choice: use these adjacent-angle equalities directly with P5, since they supply precisely its two-right-angle threshold without any auxiliary construction.\n\n**Step 3.** Suppose ∠AGH > ∠GHD. Adding the common angle ∠BGH preserves the positive excess, so\n∠GHD + ∠BGH < ∠AGH + ∠BGH = 2R. [Step 2; CN2, CN5]\nThus the interior angles on the side containing B and D are less than two right angles. By P5, AB and CD, produced indefinitely, would meet on that side, contrary to their being parallel. Hence ∠AGH cannot exceed ∠GHD. [P5, D1.23]\n\n**Step 4.** Suppose instead ∠AGH < ∠GHD. Adding the common angle ∠CHG gives\n∠AGH + ∠CHG < ∠GHD + ∠CHG = 2R. [Step 2; CN2, CN5]\nNow P5 would make AB and CD meet on the side containing A and C, again contradicting parallelism. Neither strict inequality is possible; therefore\n∠AGH = ∠GHD. [P5, D1.23; Step 3]\n\n**Step 5.** The two sums in Step 2 are equal. Subtracting the equal angles ∠AGH and ∠GHD established in Step 4 leaves\n∠BGH = ∠CHG.\nThus both pairs of alternate angles are equal. [Steps 2 and 4; CN1, CN3]\n\n**Step 6.** Vertical angles are equal. Combining their equalities with Steps 4–5 gives\n∠EGB = ∠AGH = ∠GHD,\n∠EGA = ∠BGH = ∠CHG,\n∠FHD = ∠CHG = ∠BGH,\n∠FHC = ∠GHD = ∠AGH.\nConsequently, each exterior angle equals the interior and opposite angle at the other intersection on the same side of the transversal. [1.15, CN1; Steps 4–5]\n\n**Step 7.** Adding equal angles to the equalities already obtained gives\n∠AGH + ∠CHG = ∠AGH + ∠BGH = 2R,\n∠BGH + ∠GHD = ∠BGH + ∠AGH = 2R.\nThese are the interior-angle sums on the two respective sides of the transversal. Hence the interior angles on either same side equal two right angles; together with Steps 4–6, this proves all three assertions. [Steps 2, 4–6; CN2, CN1]",
+    "used": [
+      "D1.23",
+      "1.13",
+      "P4",
+      "CN2",
+      "CN5",
+      "P5",
+      "CN1",
+      "CN3",
+      "1.15"
+    ],
+    "statement": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles."
+  },
+  {
+    "prop_id": "1.30",
+    "proof": "**Step 1.** Let a and b be distinct straight lines in the same plane, each parallel to the straight line c. We must prove that a is parallel to b. (Hypothesis.)\n\n**Step 2.** Draw a straight transversal t cutting a, b, and c at distinct points A, B, and C, and produce it beyond these intersections. At each intersection, select the angle between the ray of t pointing in one fixed direction and the ray of the intersected line lying on one fixed side of t. Denote these corresponding angles by α, β, and γ respectively. [P1, P2]\n\n**Step 3.** Since a is parallel to c, the corresponding angles α and γ are equal. Likewise, since b is parallel to c, the corresponding angles β and γ are equal. In each application, these are the exterior angle and the interior opposite angle on the same side of the transversal. [1.29]\n\n**Step 4.** Therefore α = β, since each equals γ. [CN1]\n\n**Step 5.** Thus t makes an exterior angle equal to the interior opposite angle on the same side when it cuts a and b. Consequently, a is parallel to b. The corresponding-angle criterion is the direct path here: the angles already obtained have precisely the configuration required by its first clause, so no conversion to alternate angles is needed. Hence straight lines parallel to the same straight line are parallel to one another. [1.28]",
+    "used": [
+      "P1",
+      "P2",
+      "1.29",
+      "CN1",
+      "1.28"
+    ],
+    "statement": "Straight lines parallel to the same straight line are also parallel to one another."
+  },
+  {
+    "prop_id": "1.31",
+    "proof": "**Step 1.** Let BC be the given straight line and A the given point in its plane, outside BC. This is the necessary configuration: if A lay on BC, every line through A would meet BC and therefore could not be parallel to it (D1.23). Join AB (P1).\n\n**Step 2.** On the straight line AB, at A, construct the angle BAE equal to the angle ABC, choosing E on the opposite side of AB from C (1.23).\n\n**Step 3.** Produce EA through A to F, so that E, A, F lie on one straight line (P2).\n\n**Step 4.** The straight line AB, falling on EF and BC, makes the alternate angles BAE and ABC equal by Step 2. Therefore EF is parallel to BC (1.27). This criterion is the natural first choice because the construction gives equal alternate angles directly, without conversion to another angle condition. Since EF passes through A by Step 3, the required parallel through the given point has been drawn.",
+    "used": [
+      "D1.23",
+      "P1",
+      "1.23",
+      "P2",
+      "1.27"
+    ],
+    "statement": "Through a given point to draw a straight line parallel to a given straight line."
+  },
+  {
+    "prop_id": "1.32",
+    "proof": "**Step 1.** Let ABC be any triangle, and produce BC beyond C to D. The exterior angle is ∠ACD, and its interior and opposite angles are ∠BAC and ∠ABC. [P2]\n\n**Step 2.** Through C draw a straight line parallel to AB, taking its ray CE inside the exterior angle ∠ACD. Path choice: use the available parallel construction directly, rather than reconstructing it from elementary constructions. [1.31]\n\n**Step 3.** Since AC falls on the parallel straight lines AB and CE, the alternate angles are equal: ∠BAC = ∠ACE. [1.29]\n\n**Step 4.** Since BD falls on the same parallel straight lines, the exterior angle ∠ECD equals the interior and opposite angle ∠ABC. Here the exterior-angle clause applies directly, so no auxiliary angle conversion is needed. [1.29]\n\n**Step 5.** Add the equalities in Steps 3 and 4. Since CE divides ∠ACD into the adjacent angles ∠ACE and ∠ECD, we obtain ∠BAC + ∠ABC = ∠ACE + ∠ECD = ∠ACD. Thus the exterior angle equals the two interior and opposite angles together. [CN2]\n\n**Step 6.** Since AC stands on the straight line BCD, the adjacent angles ∠BCA and ∠ACD together equal two right angles. [1.13]\n\n**Step 7.** Add ∠BCA to both sides of the equality in Step 5. Then ∠BAC + ∠ABC + ∠BCA = ∠ACD + ∠BCA, and the latter sum equals two right angles by Step 6. Hence the three interior angles of the triangle equal two right angles. Both assertions are proved. [CN2, CN1]",
+    "used": [
+      "P2",
+      "1.31",
+      "1.29",
+      "CN2",
+      "1.13",
+      "CN1"
+    ],
+    "statement": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles."
+  },
+  {
+    "prop_id": "1.33",
+    "proof": "**Step 1.** Let AB and CD be equal and parallel straight lines, labeled so that A and C, and B and D, are the corresponding extremities in the same directions. Join AC and BD, and draw the auxiliary straight line BC (P1). We shall prove that AC and BD are equal and parallel.\n\n**Step 2.** Since AB is parallel to CD and BC falls upon them, the alternate angles ∠ABC and ∠DCB are equal (1.29). The stipulated correspondence of extremities places these angles in alternate positions.\n\n**Step 3.** In triangles ABC and DCB, AB = DC by hypothesis, BC = CB because it is the same straight line (CN4), and ∠ABC = ∠DCB by Step 2. Thus the two sides and their included angle are respectively equal. Applying 1.4—the direct side–angle–side route—gives AC = DB and ∠ACB = ∠DBC.\n\n**Step 4.** The equal angles ∠ACB and ∠DBC are alternate angles made by BC falling upon AC and BD. Therefore AC is parallel to BD (1.27). This criterion applies directly to the angle equality already obtained. Together with AC = BD from Step 3, this proves that the straight lines joining the corresponding extremities are themselves equal and parallel.",
+    "used": [
+      "P1",
+      "1.29",
+      "CN4",
+      "1.4",
+      "1.27"
+    ],
+    "statement": "The straight lines joining equal and parallel straight lines (at the extremities which are) in the same directions (respectively) are themselves also equal and parallel."
+  },
+  {
+    "prop_id": "1.34",
+    "proof": "**Step 1.** Let ABCD be a parallelogrammic area, with its vertices in boundary order, so that AB is parallel to CD and BC is parallel to AD. Join the opposite vertices A and C, drawing the diameter AC. [P1]\n\n**Step 2.** Since AC falls on the parallel lines AB and CD, the alternate angles BAC and DCA are equal. Since AC also falls on the parallel lines BC and AD, the alternate angles BCA and DAC are equal. [1.29] Moreover, AC equals CA, being the same segment. [CN4]\n\n**Step 3.** Apply 1.26 to triangles ABC and CDA: their angles BAC and BCA equal DCA and DAC respectively, and their included side AC is common. Therefore AB = CD, BC = DA, and ∠ABC = ∠CDA. Thus the opposite sides and one pair of opposite angles are equal. The direct path is 1.26 because the two angle equalities and the included side equality are already available. [1.26]\n\n**Step 4.** Add the equal angles from Step 2. The angles DAC and CAB together form ∠DAB, while the respectively equal angles BCA and ACD together form ∠BCD. Hence ∠DAB = ∠BCD. Thus the other pair of opposite angles is also equal. [CN2]\n\n**Step 5.** In triangles BAC and DCA, we have BA = DC by Step 3, AC = CA by Step 2, and the included angles BAC and DCA equal by Step 2. Therefore the triangles are equal in area. Here we use 1.4 because its conclusion explicitly includes equality of the triangles, whereas the stated conclusion of 1.26 supplies sides and angles. [1.4] The diameter AC divides ABCD into precisely these two triangular regions, so it bisects the area. Since either diameter can be designated AC by naming the vertices accordingly, the conclusion holds for either diameter. Consequently, in parallelogrammic areas the opposite sides and angles are equal, and the diameter bisects the areas.",
+    "used": [
+      "P1",
+      "1.29",
+      "CN4",
+      "1.26",
+      "CN2",
+      "1.4"
+    ],
+    "statement": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas."
+  },
+  {
+    "prop_id": "1.35",
+    "proof": "**Step 1.** Let ABCD and EBCF be the given parallelograms, named in boundary order, on the common base BC, with their opposite sides AD and EF on the other parallel. Orient that parallel so that A precedes D and E precedes F. By 1.34, AD = BC and EF = BC; therefore AD = EF by CN1. Also AB = DC by 1.34.\n\n**Step 2.** If A coincides with E, then D coincides with F: otherwise one of the equal segments AD and EF would be a proper part of the other, contrary to CN5. The parallelograms then coincide and are equal by CN4. Otherwise, interchange the names of the two parallelograms if necessary so that A precedes E. Then D precedes F, for if F coincided with D or preceded D, EF would be a proper part of AD, again contradicting AD = EF by CN5. Thus D and E both lie strictly between A and F, although their order relative to one another is unrestricted.\n\n**Step 3.** Join AF by P1, forming the outer quadrilateral ABCF. The whole segment AF consists both of AD together with DF and of AE together with EF. Subtracting the equal segments AD and EF from this same whole gives DF = AE by CN3. We will compare the parallelograms by removing equal triangles from the common outer quadrilateral; this works whether their upper sides overlap, meet, or are separated.\n\n**Step 4.** Since AB is parallel to DC, the transversal AF makes the exterior angle CDF equal to the interior and opposite angle BAE on the same side, by 1.29. Hence ∠BAE = ∠CDF.\n\n**Step 5.** In triangles ABE and DCF, AB = DC, AE = DF, and the included angles BAE and CDF are equal. Therefore triangle ABE is equal to triangle DCF by 1.4. This side–angle–side comparison is the direct choice because precisely those data have already been established.\n\n**Step 6.** Within the quadrilateral ABCF, removing triangle DCF leaves exactly parallelogram ABCD, while removing triangle ABE leaves exactly parallelogram EBCF. Since the removed triangles are equal, the remainders are equal by CN3. Therefore parallelograms which are on the same base and in the same parallels are equal to one another.",
+    "used": [
+      "1.34",
+      "CN1",
+      "CN5",
+      "CN4",
+      "P1",
+      "CN3",
+      "1.29",
+      "1.4"
+    ],
+    "statement": "Parallelograms which are on the same base and in the same parallels are equal to one another."
+  },
+  {
+    "prop_id": "1.36",
+    "proof": "**Step 1.** Let ABCD and EFGH be parallelograms on equal bases AB and EF, lying between the same parallel straight lines l and m: AB and EF lie on l, while DC and HG lie on m. Label the endpoints so that AB and HG run in the same direction along these parallels. Thus AB = EF. (Hypotheses; choice of notation.)\n\n**Step 2.** In parallelogram EFGH, the opposite sides HG and EF are equal. Hence AB = HG, since both equal EF. Also AB is parallel to HG because their containing lines are l and m. (1.34; CN1; the given parallels.)\n\n**Step 3.** Join AH and BG. Since AB and HG are equal and parallel, the straight lines AH and BG joining their corresponding endpoints are parallel. Consequently ABGH is a parallelogram. (P1; 1.33.) Path choice: 1.33 directly supplies the bridging parallelogram, reducing the desired comparison to the established same-base case.\n\n**Step 4.** Parallelograms ABCD and ABGH are on the same base AB and between the same parallels l and m. Therefore ABCD and ABGH are equal in area. (1.35.)\n\n**Step 5.** Parallelograms ABGH and EFGH are on the same base HG and between the same parallels m and l. Therefore ABGH and EFGH are equal in area. (1.35.)\n\n**Step 6.** Since ABCD and EFGH are each equal in area to ABGH, they are equal to one another. Therefore parallelograms on equal bases and in the same parallels are equal to one another. (CN1.)",
+    "used": [
+      "1.34",
+      "CN1",
+      "P1",
+      "1.33",
+      "1.35"
+    ],
+    "statement": "Parallelograms which are on equal bases and in the same parallels are equal to one another."
+  },
+  {
+    "prop_id": "1.37",
+    "proof": "**Step 1.** Let triangles ABC and DBC have the same base BC, and let their vertices A and D lie on a straight line ℓ parallel to BC, as given. We shall prove that the triangles are equal in area.\n\n**Step 2.** Through B draw a straight line parallel to CA and another parallel to CD (1.31), producing the lines as necessary (P2). Let them meet ℓ at E and F respectively. These intersections exist: if either drawn line did not meet ℓ, it would be parallel to ℓ (D1.23); then 1.30 would make CA or CD parallel to ℓ, contrary to its meeting ℓ at A or D (D1.23).\n\n**Step 3.** The quadrilaterals EBCA and FBCD are parallelograms: EB is parallel to CA and FB to CD by construction, while EA and FD lie on ℓ and are therefore parallel to BC. Both parallelograms are on the same base BC and between the same parallels BC and ℓ, so they are equal (1.35). This is the direct path: the earlier same-base proposition applies immediately, without passing to an equal-base reformulation.\n\n**Step 4.** BA is a diameter of parallelogram EBCA, and BD is a diameter of parallelogram FBCD. A diameter bisects a parallelogrammic area (1.34). Consequently EBCA consists of two triangles each equal to ABC, and FBCD consists of two triangles each equal to DBC.\n\n**Step 5.** The halves of these equal areas are equal. Indeed, if either triangle were greater than the other, two copies of the lesser would together be a proper part of two copies of the greater; addition of equals and the fact that the whole is greater than the part would then make their doubles unequal (CN2, CN5), contradicting Step 3. Therefore triangle ABC equals triangle DBC. Thus triangles on the same base and in the same parallels are equal to one another.",
+    "used": [
+      "1.31",
+      "P2",
+      "D1.23",
+      "1.30",
+      "1.35",
+      "1.34",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Triangles which are on the same base and in the same parallels are equal to one another."
+  },
+  {
+    "prop_id": "1.38",
+    "proof": "**Step 1.** Let triangles ABC and DEF have equal bases BC and EF lying on a straight line ℓ, and let their vertices A and D lie on a straight line m parallel to ℓ. We must prove the triangles equal in area. (Hypotheses.)\n\n**Step 2.** Through C draw a straight line parallel to BA, and through F draw a straight line parallel to ED; produce these to meet m at G and H respectively. Then BCGA and EFHD are parallelograms: BC is parallel to AG and CG to BA, while EF is parallel to DH and FH to ED. (1.31, P2; the given parallelism.)\n\n**Step 3.** The parallelograms BCGA and EFHD are on the equal bases BC and EF and between the same parallels ℓ and m. Therefore they are equal in area. This is the direct path: the equal-base parallelogram theorem applies immediately to the constructed figures. (1.36.)\n\n**Step 4.** The diagonal AC bisects parallelogram BCGA, and the diagonal DF bisects parallelogram EFHD. Consequently, BCGA consists of two triangles each equal to ABC, and EFHD consists of two triangles each equal to DEF. (1.34.)\n\n**Step 5.** Thus twice the area of ABC equals twice the area of DEF. (Steps 3–4, CN1.) To justify passing to their halves, suppose either triangle had greater area than the other. Its area would then equal the smaller area together with a nonzero remainder. Adding this equality to itself would express its double as the smaller double together with two such remainders (CN2), making it strictly greater than the smaller double (CN5), contrary to their equality. Hence triangle ABC equals triangle DEF in area. Therefore triangles on equal bases and in the same parallels are equal to one another.",
+    "used": [
+      "1.31",
+      "P2",
+      "1.36",
+      "1.34",
+      "CN1",
+      "CN2",
+      "CN5"
+    ],
+    "statement": "Triangles which are on equal bases and in the same parallels are equal to one another."
+  },
+  {
+    "prop_id": "1.39",
+    "proof": "**Step 1.** Let ABC and DBC be equal triangles on the same base BC, with A and D on the same side of BC. Through A draw a straight line ℓ parallel to BC. It suffices to show that D also lies on ℓ. [Hypothesis; 1.31]\n\n**Step 2.** Suppose that D does not lie on ℓ. The straight line BD must meet ℓ: otherwise BD would be parallel to ℓ, and hence parallel to BC, since BC is also parallel to ℓ. This is impossible because BD and BC meet at B. Produce BD as necessary, and denote its intersection with ℓ by E. [D1.23; 1.30; P2]\n\n**Step 3.** Since ℓ passes through A and never meets BC, E is on the same side of BC as A, and therefore as D. Consequently E lies on the ray from B through D. Also E differs from D by the supposition in Step 2. Join CE. [D1.23; hypothesis; P1]\n\n**Step 4.** Triangles ABC and EBC are on the same base BC and between the same parallels BC and ℓ; therefore they are equal. The direct path is the same-base theorem 1.37: an equal-base generalization is unnecessary because the base has not changed. [1.37]\n\n**Step 5.** Triangle DBC equals triangle ABC by hypothesis, and triangle EBC equals triangle ABC by Step 4. Hence triangles DBC and EBC are equal. [CN1]\n\n**Step 6.** But E and D are distinct points on the same ray from B. If E lies between B and D, triangle EBC is a proper part of triangle DBC; if D lies between B and E, triangle DBC is a proper part of triangle EBC. In either case the whole is greater than its part, contradicting Step 5. [Step 3; CN5]\n\n**Step 7.** Thus D lies on ℓ. Both triangles therefore have their base on BC and their opposite vertices on ℓ, which is parallel to BC. They are consequently in the same parallels, as required. [Steps 1–6; D1.23]",
+    "used": [
+      "1.31",
+      "D1.23",
+      "1.30",
+      "P2",
+      "P1",
+      "1.37",
+      "CN1",
+      "CN5"
+    ],
+    "statement": "Equal triangles which are on the same base and on the same side are also in the same parallels."
+  },
+  {
+    "prop_id": "1.40",
+    "proof": "**Step 1.** Let the equal triangles ABC and DEF stand on equal bases BC and EF lying on the same straight line ℓ, with their vertices A and D on the same side of ℓ. Thus BC = EF and triangle ABC equals triangle DEF. [Hypotheses]\n\n**Step 2.** Through A draw a straight line m parallel to ℓ, and join AE and AF. [1.31, P1] If A = D, the original triangles already lie between the same parallels ℓ and m. Otherwise, proceed with the auxiliary triangle AEF; the chosen route is to reduce the problem to the same-base converse, 1.39.\n\n**Step 3.** Triangles ABC and AEF stand on the equal bases BC and EF and lie between the same parallels ℓ and m. Therefore triangle ABC equals triangle AEF. [1.38] This is the direct equal-base theorem; the same-base theorem 1.37 is not needed.\n\n**Step 4.** Triangle AEF and triangle DEF are each equal to triangle ABC. Hence triangle AEF equals triangle DEF. [Step 1, Step 3, CN1]\n\n**Step 5.** The equal triangles AEF and DEF stand on the same base EF and on the same side of it. Therefore the straight line AD is parallel to EF, and hence to its containing straight line ℓ. [1.39] Thus the original triangles ABC and DEF lie between the same parallels ℓ and AD, as required.",
+    "used": [
+      "1.31",
+      "P1",
+      "1.38",
+      "CN1",
+      "1.39"
+    ],
+    "statement": "Equal triangles which are on equal bases and on the same side are also in the same parallels."
+  },
+  {
+    "prop_id": "1.41",
+    "proof": "**Step 1.** Let ABCD be the given parallelogram and ABE the given triangle, with common base AB and lying between the same parallels AB and CD. Thus E lies on the straight line CD. Join AC. [Hypothesis; P1]\n\n**Step 2.** The diagonal AC bisects the parallelogram ABCD into the two equal triangles ABC and ACD. These two triangles together constitute the whole parallelogram. [1.34]\n\n**Step 3.** Triangles ABC and ABE have the same base AB and lie between the same parallels AB and CD; hence they are equal. The same-base theorem is the direct choice here, rather than its equal-base generalization. Since triangle ACD equals triangle ABC by Step 2, triangle ACD also equals triangle ABE. [1.37; CN1]\n\n**Step 4.** Adding the equalities ABC = ABE and ACD = ABE, the two triangles constituting parallelogram ABCD together equal triangle ABE taken twice. Therefore the parallelogram is double the triangle, as required. [CN2; Step 2]",
+    "used": [
+      "P1",
+      "1.34",
+      "1.37",
+      "CN1",
+      "CN2"
+    ],
+    "statement": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle."
+  },
+  {
+    "prop_id": "1.42",
+    "proof": "**Step 1.** Let ABC be the given triangle and θ the given rectilineal angle. Bisect BC at D, so that BD = DC, and join AD. (1.10, P1.)\n\n**Step 2.** Through A draw a straight line ℓ parallel to BC, producing straight lines as necessary throughout the construction. (1.31, P2.) The triangles ABD and ADC stand on the equal bases BD and DC and lie between the same parallels BC and ℓ; therefore they are equal in area. (1.38.) Path choice: the equal-base theorem applies directly to these distinct half-bases; we will construct a parallelogram double of triangle ADC.\n\n**Step 3.** At D construct a ray r on the same side of BC as A, making with DC an angle equal to θ. (1.23.) Let r meet ℓ at E. To justify this intersection, if the straight line containing r did not meet ℓ, it would be parallel to ℓ. (D1.23.) It would consequently be parallel to BC, since BC is also parallel to ℓ. (1.30.) This is impossible, since these distinct lines meet at D. (D1.23.) Thus the intersection exists; it lies on the chosen ray because ℓ lies on A's side of BC. Hence ∠CDE = θ by construction. (1.23.)\n\n**Step 4.** Through C draw a straight line m parallel to DE. (1.31.) It meets ℓ at a point F: otherwise m would be parallel to ℓ, and DE and ℓ, being parallel to m, would be parallel to one another, contrary to their meeting at E. (D1.23, 1.30.) Now DC is parallel to EF, and DE is parallel to CF, by the two parallel constructions. Thus DCFE is a parallelogram, and its angle CDE equals θ. (1.31, Step 3.)\n\n**Step 5.** The parallelogram DCFE and triangle ADC have the same base DC and lie between the same parallels BC and ℓ. Therefore the parallelogram is double of triangle ADC. (1.41.)\n\n**Step 6.** By Step 2, triangle ABD equals triangle ADC. Adding triangle ADC to each, and observing that AD divides triangle ABC into triangles ABD and ADC, triangle ABC equals two copies of triangle ADC. (CN2.) The parallelogram DCFE equals those same two copies by Step 5, so it equals triangle ABC. (CN1.) Therefore DCFE is the required parallelogram, equal to the given triangle and having an angle equal to the given rectilineal angle.",
+    "used": [
+      "1.10",
+      "P1",
+      "1.31",
+      "P2",
+      "1.38",
+      "1.23",
+      "D1.23",
+      "1.30",
+      "1.41",
+      "CN2",
+      "CN1"
+    ],
+    "statement": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle."
+  },
+  {
+    "prop_id": "1.43",
+    "proof": "**Step 1.** Let ABCD be the given parallelogram with diameter AC. Label the given subdivision so that K lies on AC; E, F, G, H lie respectively on AB, BC, CD, DA; and E, K, G and H, K, F are respectively collinear. The parallelograms about the diameter are AEKH and KFCG; their complements are EBFK and HKGD. Write [X] for the area of figure X. We choose the diameter-bisection clause of **1.34**, since it applies directly to the given parallelogram and both parallelograms about its diameter. Applied to ABCD, it gives\n[ABC] = [ADC].\n\n**Step 2.** Since AK is a diameter of parallelogram AEKH, and KC is a diameter of parallelogram KFCG, their respective triangular halves are equal:\n[AEK] = [AKH], and [KFC] = [KCG]. (**1.34**)\n\n**Step 3.** Adding these equalities gives\n[AEK] + [KFC] = [AKH] + [KCG]. (**CN2**)\n\n**Step 4.** In triangle ABC, removing triangles AEK and KFC leaves exactly the complement EBFK. In triangle ADC, removing triangles AKH and KCG leaves exactly the complement HKGD. Therefore, subtracting the equal sums of Step 3 from the equal areas of Step 1 gives\n[EBFK] = [HKGD]. (**CN3**)\nThus the complements of the parallelograms about the diameter are equal to one another.",
+    "used": [
+      "1.34",
+      "CN2",
+      "CN3"
+    ],
+    "statement": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another."
+  },
+  {
+    "prop_id": "1.44",
+    "proof": "**Step 1.** Let AB be the given straight line, T the given triangle, and α the given rectilineal angle. Construct a parallelogram PQRS equal to T, with ∠QPS = α (1.42). The path chosen is to obtain the required area and angle from 1.42, then use equal complements (1.43) to obtain the prescribed base. We first explicitly copy the auxiliary parallelogram into a convenient position.\n\n**Step 2.** Produce AB beyond B (P2). At B construct a ray making with this continuation an angle equal to ∠QPS (1.23). On the continuation of AB mark E so that BE = PQ, and on the other ray mark G so that BG = PS, producing the rays sufficiently and cutting off the required lengths (P2, 1.3). Thus A, B, E occur in that order, and ∠EBG = ∠QPS = α (CN1).\n\n**Step 3.** Through E draw a parallel to BG, and through G draw a parallel to BE; let them meet at F (1.31). They must meet: otherwise they would be parallel, and 1.30 would imply that BE and BG were parallel, although they meet at B (D1.23). Thus BEFG is a parallelogram.\n\n**Step 4.** Join QS and EG (P1). The triangles PQS and BEG have PQ = BE, PS = BG, and ∠QPS = ∠EBG. These are exactly two sides and their included angle, so 1.4 gives equality of the triangles. The diagonals QS and EG bisect their respective parallelograms (1.34); adding the equal halves therefore gives PQRS = BEFG (CN2). Consequently BEFG equals T (CN1).\n\n**Step 5.** Through A draw a parallel to BG, meeting FG produced beyond G at H (1.31, P2). The intersection exists because a parallel to BG cannot also be parallel to FG, which is parallel to BE (1.30, D1.23). Since A, B, E occur in that order and AH, BG, EF are parallel, H, G, F occur in that order. In particular, AH ∥ BG and HG ∥ AB, so ABGH is a parallelogram (1.30 and the construction).\n\n**Step 6.** Join HB and produce it beyond B to a point X; also produce FE beyond E to a point Y (P1, P2). Ray BG lies strictly inside ∠EBH, so ∠EBG < ∠EBH (CN5). Moreover,\n∠EBX + ∠EBH = two right angles (1.13),\nand ∠BEY = ∠EBG, because BG ∥ FE (1.29).\nIt follows that ∠EBX + ∠BEY is less than two right angles (CN5). These are the interior angles on the same side of transversal BE. Hence the rays BX and EY meet at a point K (P5). Thus H, B, K occur in that order, as do F, E, K.\n\n**Step 7.** Through K draw a parallel to BE, meeting AH produced beyond A at L and GB produced beyond B at M (1.31, P2). These intersections exist by 1.30 and D1.23, since the two directions are those of the intersecting lines BE and BG. We have HF ∥ LK, and HL ∥ FK because both are parallel to BG (1.30). Therefore HFKL is a parallelogram. Also AB ∥ LM and AL ∥ BM, so ABML is a parallelogram.\n\n**Step 8.** In the parallelogram HFKL, the diagonal HK passes through B. The lines ABE and GBM through B are parallel to its respective sides. The parallelograms H G B A and B E K M are therefore the two parallelograms about this diagonal; their complements are BEFG and ABML. These are exactly the figures to which 1.43 applies, so BEFG = ABML. Since BEFG equals T, ABML also equals T (CN1).\n\n**Step 9.** The rays BA and BE are opposite, as are BM and BG. Hence ∠ABM and ∠EBG are vertically opposite angles and are equal (1.15). Therefore ∠ABM = α (CN1). Thus ABML is a parallelogram applied to the given straight line AB, equal to the given triangle T, and having an angle equal to the given angle α, as required.",
+    "used": [
+      "P1",
+      "P2",
+      "P5",
+      "CN1",
+      "CN2",
+      "CN5",
+      "D1.23",
+      "1.3",
+      "1.4",
+      "1.13",
+      "1.15",
+      "1.23",
+      "1.29",
+      "1.30",
+      "1.31",
+      "1.34",
+      "1.42",
+      "1.43"
+    ],
+    "statement": "To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle."
+  },
+  {
+    "prop_id": "1.45",
+    "proof": "**Step 1.** Let F be the given rectilineal figure and θ the given rectilineal angle. Divide F into finitely many triangles T₁, …, Tₙ with disjoint interiors. For completeness, this division can be made even when F is nonconvex: draw parallel lines through its vertices, choosing their direction parallel to none of its sides (D1.19, 1.31). Within each open strip between successive lines there is no boundary vertex; consequently each piece is bounded by two unbroken boundary segments and portions of the strip boundaries, and its closure is a triangle or a convex quadrilateral. Divide every such quadrilateral by a diagonal (P1). These triangles together constitute F. If F is already a triangle, take F itself as T₁.\n\n**Step 2.** Construct a parallelogram ABCD equal to T₁, with ∠DAB = θ (1.42). This is the natural initial construction: 1.42 suffices because no side of the first parallelogram is prescribed.\n\n**Step 3.** Suppose that ABCD has been constructed equal to T₁, …, Tₖ together, with ∠DAB = θ, where k < n. Apply to BC, on the side opposite ABCD, a parallelogram BEFC equal to Tₖ₊₁, making ∠CBE equal to ∠BCD (1.44). Here 1.44 is used because the common side BC is already prescribed; the chosen angle will make the adjoining sides continue straight.\n\n**Step 4.** Since AB is parallel to DC, the angles ∠ABC and ∠BCD together equal two right angles (1.29). Since ∠CBE = ∠BCD, the angles ∠ABC and ∠CBE also together equal two right angles (CN2, CN1). The rays BA and BE lie on opposite sides of BC by the construction. Therefore A, B, E lie on one straight line, with B between A and E (1.14).\n\n**Step 5.** Since BE is parallel to CF, the angles ∠CBE and ∠BCF together equal two right angles (1.29). Substituting the equal angle ∠BCD for ∠CBE shows that ∠BCD and ∠BCF together equal two right angles (CN2, CN1). The rays CD and CF lie on opposite sides of BC. Therefore D, C, F lie on one straight line, with C between D and F (1.14).\n\n**Step 6.** The straight lines AE and DF are consequently parallel, since they are the same straight lines as AB and DC. Also AD and EF are each parallel to BC, and therefore are parallel to one another (1.30). Thus AEFD is a parallelogram. Its angle ∠DAE coincides with ∠DAB, so ∠DAE = θ (CN4, CN1).\n\n**Step 7.** The parallelograms ABCD and BEFC have disjoint interiors, being on opposite sides of their common side BC. By the straight-line continuations established in Steps 4–5, their union is exactly AEFD. Since ABCD equals T₁, …, Tₖ together and BEFC equals Tₖ₊₁, their whole AEFD equals T₁, …, Tₖ₊₁ together (CN2).\n\n**Step 8.** Regard AEFD as the new ABCD and repeat Steps 3–7 for each remaining triangle. Each repetition preserves the angle θ and adds a parallelogram equal to the next triangle (1.44, CN2). After finitely many repetitions, the resulting parallelogram equals all the triangles together, and hence equals F by Step 1 (CN1). It has an angle equal to θ by Step 6. Therefore a parallelogram equal to the given rectilineal figure has been constructed in the given rectilineal angle, as required.",
+    "used": [
+      "D1.19",
+      "1.31",
+      "P1",
+      "1.42",
+      "1.44",
+      "1.29",
+      "CN2",
+      "CN1",
+      "1.14",
+      "1.30",
+      "CN4"
+    ],
+    "statement": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure."
+  },
+  {
+    "prop_id": "1.46",
+    "proof": "**Step 1.** Let AB be the given finite straight line. Draw AX at right angles to AB at A (1.11). Produce AX until it is longer than AB (P2), and cut off AD equal to AB (1.3). Thus AD = AB and ∠DAB is right.\n\n**Step 2.** Through B draw a straight line parallel to AD (1.31). On its ray lying on the same side of AB as D, take BC equal to AD, producing the ray sufficiently and cutting off the required length (P2, 1.3). Thus AD and BC are equal, parallel, and directed toward the same side of AB.\n\n**Step 3.** Join D to C (P1). Since AD and BC are equal and parallel, the lines AB and DC joining their corresponding extremities are themselves equal and parallel (1.33). This is the direct path choice: 1.33 applies immediately to the equal parallel sides just constructed and supplies the remaining pair of sides.\n\n**Step 4.** We have AB = AD, AD = BC, and AB = DC. Therefore all four sides of quadrilateral ABCD are equal (CN1).\n\n**Step 5.** Since AD is parallel to BC, the transversal AB makes ∠DAB and ∠ABC together equal to two right angles (1.29). Since ∠DAB is right, ∠ABC is right (P4, CN3). Likewise, since AB is parallel to DC, the transversal AD makes ∠DAB and ∠ADC together equal to two right angles (1.29); hence ∠ADC is right (P4, CN3).\n\n**Step 6.** Since AB is parallel to DC, the transversal BC makes ∠ABC and ∠BCD together equal to two right angles (1.29). Since ∠ABC is right, ∠BCD is also right (P4, CN3). Thus all four angles of ABCD are right.\n\n**Step 7.** The quadrilateral ABCD is both equilateral and right-angled, and is therefore a square (D1.22). Hence a square has been described on the given straight line AB.",
+    "used": [
+      "1.11",
+      "P2",
+      "1.3",
+      "1.31",
+      "P1",
+      "1.33",
+      "CN1",
+      "1.29",
+      "P4",
+      "CN3",
+      "D1.22"
+    ],
+    "statement": "On a given straight line to describe a square."
+  },
+  {
+    "prop_id": "1.47",
+    "proof": "**Step 1.** Let ABC be a triangle whose angle BAC is right. Construct externally the squares ABFG, ACKH, and BCDE, with their vertices named in cyclic order (1.46). Their sides are equal and their angles are right (D1.22); their opposite sides are parallel (1.28). Write [F] for the area of a figure F.\n\n**Step 2.** The adjacent angles GAB and BAC are right, and AG and AC lie on opposite sides of AB. Therefore G, A, C lie on one straight line (1.14). Likewise, the adjacent right angles CAH and CAB show that H, A, B lie on one straight line (1.14). Consequently C lies on the line AG, which is parallel to BF, and B lies on the line AH, which is parallel to CK.\n\n**Step 3.** Through A draw a line ℓ parallel to BE, producing it as necessary (1.31; P2). Let it meet BC at M and ED at L. These intersections exist: otherwise BC or ED would be parallel to ℓ and hence to BE, although each meets BE (D1.23; 1.30). Since BE is parallel to CD, ℓ is also parallel to CD (1.30). Its angles with BC are right, by the corresponding-angle equality for parallels (1.29).\n\n**Step 4.** Both angles ABC and ACB are less than a right angle, since each, together with the right angle BAC, is less than two right angles (1.17). Hence M lies strictly between B and C. Indeed, if M lay beyond B, angle ABC would be an exterior angle of the right triangle ABM and would exceed its right angle at M (1.16); if M lay beyond C, the same contradiction would follow for angle ACB in triangle ACM (1.16). An endpoint M would make one of those acute angles right. Since ℓ passes through the interior point M of BC and cannot cross either parallel side BE or CD, its intersection L with ED lies between E and D (D1.23). Thus ℓ divides square BCDE into the two parallelograms BMLE and MCDL, whose interiors do not overlap.\n\n**Step 5.** Join AE, CF, AD, and BK (P1). At B, the external construction of the squares gives\n∠ABE = ∠ABC + ∠CBE,\nand\n∠FBC = ∠FBA + ∠ABC.\nThe angles CBE and FBA are right and therefore equal (D1.22; P4). Adding the common angle ABC gives ∠ABE = ∠FBC (CN2). Also AB = FB and BE = BC, by the respective squares (D1.22). Therefore triangles ABE and FBC are equal (1.4). This is the direct congruence choice: the two corresponding sides and their included angle are already known.\n\n**Step 6.** Parallelogram BMLE and triangle ABE have the same base BE and lie between the same parallels BE and ℓ. Hence [BMLE] is double [ABE] (1.41). Square ABFG and triangle FBC have the same base BF and lie between the same parallels BF and AG, since C lies on AG. Hence [ABFG] is double [FBC] (1.41). Equal triangles have equal doubles (CN2), so Step 5 yields\n[BMLE] = [ABFG] (CN1).\nThe area-path choice is to apply 1.41 directly to these common-base, common-parallel pairs, rather than introduce further dissections or area constructions.\n\n**Step 7.** At C, the external construction similarly gives\n∠ACD = ∠ACB + ∠BCD,\nand\n∠KCB = ∠KCA + ∠ACB.\nThe angles BCD and KCA are right and therefore equal (D1.22; P4), so ∠ACD = ∠KCB (CN2). Also AC = KC and CD = CB (D1.22). Thus triangles ACD and KCB are equal by the same two-side-and-included-angle criterion (1.4).\n\n**Step 8.** Parallelogram MCDL and triangle ACD have the same base CD and lie between the same parallels CD and ℓ. Therefore [MCDL] is double [ACD] (1.41). Square ACKH and triangle KCB have the same base CK and lie between the same parallels CK and AH, since B lies on AH. Therefore [ACKH] is double [KCB] (1.41). Using Step 7 and adding equals to equals gives\n[MCDL] = [ACKH] (CN2; CN1).\n\n**Step 9.** Add the equalities obtained in Steps 6 and 8 (CN2). Because BMLE and MCDL exactly partition square BCDE, the result is\n[BCDE] = [ABFG] + [ACKH].\nThus the square on BC, the side subtending the right angle, is equal to the squares on AB and AC, the sides containing the right angle, taken together.",
+    "used": [
+      "1.46",
+      "D1.22",
+      "1.28",
+      "1.14",
+      "1.31",
+      "P2",
+      "D1.23",
+      "1.30",
+      "1.29",
+      "1.17",
+      "1.16",
+      "P1",
+      "P4",
+      "CN2",
+      "1.4",
+      "1.41",
+      "CN1"
+    ],
+    "statement": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle."
+  },
+  {
+    "prop_id": "1.48",
+    "proof": "**Step 1.** Let ABC be a triangle such that the square on BC equals the squares on AB and AC together. Write S(XY) for the area of the square on XY; squares needed below may be constructed by 1.46 and are equilateral and right-angled by D1.22. Thus the hypothesis is S(BC) = S(AB) + S(AC). Our route is to compare ABC with a constructed right triangle, using 1.47 and then the three-side criterion 1.8.\n\n**Step 2.** At A draw a straight line perpendicular to AC by 1.11. This is the appropriate construction because A lies on the given straight line. Produce the perpendicular far enough and cut off AD equal to AB (P2, 1.3). Join DC (P1). The angle DAC is right by the definition of perpendicularity (D1.10).\n\n**Step 3.** Since AD = AB, the squares on AD and AB are equal: their corresponding sides are equal and their angles are right, so they coincide when corresponding vertices and adjacent sides are superposed (D1.22, P4, CN4). Hence S(AD) = S(AB). Adding S(AC) to both gives\nS(AD) + S(AC) = S(AB) + S(AC) (CN2).\n\n**Step 4.** Apply 1.47 to the right-angled triangle DAC. It gives\nS(DC) = S(AD) + S(AC).\nTogether with Step 3 and the hypothesis in Step 1, this yields S(DC) = S(BC) (CN1).\n\n**Step 5.** Therefore DC = BC. Indeed, if these sides differed, place their squares with one vertex in common and their two adjacent sides along the same two perpendicular rays. Such alignment is possible because their angles are right (D1.22, P4). The square on the shorter side would then be a proper part of the square on the longer side, since each square has all its sides equal (D1.22). The whole would therefore be greater than the part (CN5), contradicting the equality established in Step 4. Thus the sides cannot differ.\n\n**Step 6.** In triangles BAC and DAC, BA = DA by construction, AC is common (CN4), and BC = DC by Step 5. Consequently ∠BAC = ∠DAC by 1.8. This is the direct comparison criterion because all three corresponding sides are now known to be equal. Since ∠DAC is right by Step 2, ∠BAC is right also (D1.10). Hence the angle contained by the remaining two sides AB and AC is right, as required.",
+    "used": [
+      "1.46",
+      "D1.22",
+      "1.11",
+      "P2",
+      "1.3",
+      "P1",
+      "D1.10",
+      "P4",
+      "CN4",
+      "CN2",
+      "1.47",
+      "CN1",
+      "CN5",
+      "1.8"
+    ],
+    "statement": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right."
+  }
+]

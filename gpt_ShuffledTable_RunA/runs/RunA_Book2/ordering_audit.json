@@ -1,0 +1,1143 @@
+{
+  "completed_at": "2026-11-05T13:05:07.496097+00:00",
+  "expected_ids": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9",
+    "2.10",
+    "2.11",
+    "2.12",
+    "2.13",
+    "2.14"
+  ],
+  "selected_attempts": {
+    "2.1": 0,
+    "2.2": 0,
+    "2.3": 0,
+    "2.4": 0,
+    "2.5": 0,
+    "2.6": 0,
+    "2.7": 0,
+    "2.8": 0,
+    "2.9": 0,
+    "2.10": 0,
+    "2.11": 0,
+    "2.12": 0,
+    "2.13": 0,
+    "2.14": 0
+  },
+  "unresolved": {},
+  "attempts": {
+    "2.1": [
+      {
+        "result": {
+          "prop_id": "2.1",
+          "proof": "**Step 1.** Let the uncut straight line have length a, and let the other straight line be divided at the ordered points B₀, B₁, …, Bₙ into any finite number of segments. We use direct subdivision of one rectangle. At B₀ erect a perpendicular to B₀Bₙ, produce it sufficiently far, and cut off B₀C₀ equal to a. [1.11, P2, 1.3]\n\n**Step 2.** Through C₀ draw a straight line parallel to B₀Bₙ. Through each Bᵢ, for 1 ≤ i ≤ n, draw a straight line parallel to B₀C₀, meeting the line through C₀ at Cᵢ. These upright lines are mutually parallel, since they are parallel to the same straight line. The angles made with the two horizontal lines are right angles. Thus B₀BₙCₙC₀ and every strip Bᵢ₋₁BᵢCᵢCᵢ₋₁ are rectangular parallelograms. [1.31, 1.30, 1.29]\n\n**Step 3.** For each i ≥ 1, B₀BᵢCᵢC₀ is a parallelogram. Its opposite sides BᵢCᵢ and B₀C₀ are equal. Consequently every upright side has length a, including B₀C₀ itself. [1.34, CN1]\n\n**Step 4.** Write R(u,v) for the rectangular area contained by straight lines of lengths u and v. By the definition of a rectangle contained by two straight lines, the whole rectangle B₀BₙCₙC₀ is R(a,B₀Bₙ), and, for each i, the strip Bᵢ₋₁BᵢCᵢCᵢ₋₁ is R(a,Bᵢ₋₁Bᵢ). [D2.1]\n\n**Step 5.** The cuts through the ordered division points partition the whole rectangle into exactly these strips: the parallel cuts do not meet, and consecutive strips share only their boundary sides. Hence the strips together coincide with the whole rectangle. Adding their identified areas therefore gives\n\nR(a,B₀Bₙ) = R(a,B₀B₁) + R(a,B₁B₂) + ··· + R(a,Bₙ₋₁Bₙ).\n\nThus the rectangle contained by the two original straight lines equals the rectangles contained by the uncut straight line and each segment of the divided straight line, as required. [D1.23, CN4, CN2]",
+          "used": [
+            "1.11",
+            "P2",
+            "1.3",
+            "1.31",
+            "1.30",
+            "1.29",
+            "1.34",
+            "CN1",
+            "D2.1",
+            "D1.23",
+            "CN4",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:56:17.009758+00:00",
+          "prompt_sha256": "e4f87c4bf65319a5f44b1f0c8ba8e8897bb7e0e0b9837e3b62d17f9ceb73ea42",
+          "resource_table_sha256": "9481aac11b80cd7271683db4398ef6558c326bcf9f64c1413c5a6991576b2749",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abc8-0eed-7b62-a95d-a215ebb9b09f",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abc8-0eed-7b62-a95d-a215ebb9b09f",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 8,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-56-17-01a1abc8-0eed-7b62-a95d-a215ebb9b09f.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:58:34.706622+00:00",
+          "total_wall_time_seconds": 137.697
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.2": [
+      {
+        "result": {
+          "prop_id": "2.2",
+          "proof": "**Step 1.** Let the straight line AB be cut at an arbitrary interior point C. Apply Proposition 2.1 with both whole lengths equal to AB, dividing one of them into AC and CB. It gives: the rectangle contained by AB and AB is equal to the rectangles contained by AB and AC, and by AB and CB, taken together. This direct specialization is the natural route because Proposition 2.1 already supplies exactly the required division into two rectangles. [2.1]\n\n**Step 2.** The square on AB is equilateral and right-angled; its two sides containing a right angle are therefore both equal to AB. Thus it is the rectangle contained by AB and AB. Substituting this identification into Step 1, the rectangles contained by the whole AB and each of its segments AC and CB, taken together, are equal to the square on AB, as required. [D1.22, D2.1]",
+          "used": [
+            "2.1",
+            "D1.22",
+            "D2.1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:56:46.789984+00:00",
+          "prompt_sha256": "906c3e6375e86e38fc066a102b4eb2d75b828f74d969b8a5e953728b77cfbad9",
+          "resource_table_sha256": "d63afc65227ffc59bea1a40468f6e4ea0ef8b37a3061465cccfaa2b9b7e3746c",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abc8-82be-7d41-b421-0cddae8e8ec0",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abc8-82be-7d41-b421-0cddae8e8ec0",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-56-47-01a1abc8-82be-7d41-b421-0cddae8e8ec0.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:57:45.536865+00:00",
+          "total_wall_time_seconds": 58.747
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.3": [
+      {
+        "result": {
+          "prop_id": "2.3",
+          "proof": "**Step 1.** Let the straight line AB be cut at an arbitrary point C, and take BC as the aforesaid segment. Write R(u,v) for the rectangle contained by straight lines u and v, namely the rectangular parallelogram having those adjacent sides. [D2.1]\n\n**Step 2.** Choose the direct distribution route: II.1 is the earliest applicable rectangle-distribution proposition. Apply it to the uncut straight line BC and the straight line AB cut into AC and CB. It gives\nR(AB,BC) = R(AC,BC) + R(BC,BC). [2.1]\n\n**Step 3.** The rectangle contained by BC and BC is the square on BC. Thus the equality in Step 2 says that the rectangle contained by the whole AB and the chosen segment BC equals the rectangle contained by the two segments AC, BC together with the square on BC. This is the required conclusion. [D1.22, D2.1]",
+          "used": [
+            "D2.1",
+            "2.1",
+            "D1.22"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:57:16.800762+00:00",
+          "prompt_sha256": "adc3430af1a672be8ebb4d32b6e6715eb151f90bef13e4e42c7c798f04f0120a",
+          "resource_table_sha256": "72bc5e18c7612f13e5c0e21982a61264b81bd353b7640972680b66e2e6292051",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abc8-f814-7320-a562-5689fdb3bec3",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abc8-f814-7320-a562-5689fdb3bec3",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-57-17-01a1abc8-f814-7320-a562-5689fdb3bec3.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:58:14.389870+00:00",
+          "total_wall_time_seconds": 57.589
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.4": [
+      {
+        "result": {
+          "prop_id": "2.4",
+          "proof": "**Step 1.** Let the straight line AB be cut at an arbitrary interior point C. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW; sums below mean sums of areas. The order of the two containing sides does not change the rectangle. [D1.22, D2.1]\n\n**Step 2.** Use II.2 directly, since it gives precisely the decomposition of the square on the whole into rectangles involving the two segments:\nS(AB) = R(AB,AC) + R(AB,CB). [2.2]\n\n**Step 3.** Apply II.3 to the same cut, first taking AC as the chosen segment and then taking CB. Thus\nR(AB,AC) = S(AC) + R(AC,CB),\nand\nR(AB,CB) = S(CB) + R(AC,CB). [2.3, D2.1]\n\n**Step 4.** Adding these equalities, equals being added to equals, gives\nR(AB,AC) + R(AB,CB) = S(AC) + S(CB) + 2R(AC,CB). [CN2]\n\n**Step 5.** The equality in Step 2 and that in Step 4 have the same sum of rectangles. Therefore\nS(AB) = S(AC) + S(CB) + 2R(AC,CB).\nHence the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments, as required. [CN1]",
+          "used": [
+            "D1.22",
+            "D2.1",
+            "2.2",
+            "2.3",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:57:46.770560+00:00",
+          "prompt_sha256": "5e87dff95ebdf93b6ac98efddaf5a6bc6078d3182d2dc22707f979dbb1304982",
+          "resource_table_sha256": "6b1d41c08637981d539b0c490978eb91956a8d83a8968d02038cfd46b5043d4f",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abc9-6d1d-7f12-8731-26171207a637",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abc9-6d1d-7f12-8731-26171207a637",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 5,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-57-47-01a1abc9-6d1d-7f12-8731-26171207a637.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:58:40.016967+00:00",
+          "total_wall_time_seconds": 53.246
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.5": [
+      {
+        "result": {
+          "prop_id": "2.5",
+          "proof": "**Step 1.** Let AB be cut equally at C and unequally at D. By interchanging the names A and B if necessary, take the order to be A, C, D, B. Thus AC = CB. Write R(X,Y) for the rectangle contained by the lengths X and Y, and S(X) for the square on X. The two containing sides may be exchanged, and R(X,X) = S(X). Rectangles with the same containing lengths coincide upon superposition, so equal lengths may be substituted. [D2.1, D1.22, CN4]\n\n**Step 2.** Choose the direct rectangle-decomposition route: II.1 applies to each required partition, including a rectangle whose equal sides make it a square. Apply it to AC and CB, with CB cut at D. Since AC = CB, this gives\nS(CB) = R(AC,CD) + R(AC,DB). [2.1, D1.22, CN4]\n\n**Step 3.** Since AC = CB, the rectangle R(AC,CD) equals R(CB,CD). Apply II.1 to CD and CB, again cutting CB at D. Consequently,\nR(AC,CD) = R(CD,CD) + R(DB,CD)\n= S(CD) + R(CD,DB). [2.1, D2.1, D1.22, CN4, CN1]\n\n**Step 4.** Apply II.1 to DB and AD, with AD cut at C. It follows that\nR(AD,DB) = R(AC,DB) + R(CD,DB). [2.1, D2.1]\n\n**Step 5.** Add R(AC,DB) to the equality in Step 3 and use Steps 2 and 4. By addition of equals and equality to the same magnitude,\nS(CB) = S(CD) + R(CD,DB) + R(AC,DB)\n= S(CD) + R(AD,DB).\nHere AD and DB are the unequal segments of AB, CD is the straight line between the points of section, and CB is the half of AB. Therefore the rectangle contained by the unequal segments, together with the square on the straight line between the points of section, equals the square on the half. [CN2, CN1]",
+          "used": [
+            "D2.1",
+            "D1.22",
+            "CN4",
+            "2.1",
+            "CN1",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:58:16.818222+00:00",
+          "prompt_sha256": "1bdb060805fa16c60cd2761f1005767f399464e87ce33da1bd05c0aee4d1b743",
+          "resource_table_sha256": "040781aec1148d43d7c26f2b9c5dcf8a5e77ef419bc0f81df397c92e27582d80",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abc9-e28a-75d0-b7f4-1a94a5d27e77",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abc9-e28a-75d0-b7f4-1a94a5d27e77",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-58-17-01a1abc9-e28a-75d0-b7f4-1a94a5d27e77.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:00:07.857893+00:00",
+          "total_wall_time_seconds": 111.04
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.6": [
+      {
+        "result": {
+          "prop_id": "2.6",
+          "proof": "**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B, so that A, C, B, D occur in this order and AC = CB. Write R(x,y) for the rectangle contained by lengths x,y, and S(x) for the square on length x; in particular, R(x,x) = S(x). We must prove R(AD,BD) + S(CB) = S(CD). [D2.1, D1.22]\n\n**Step 2.** Apply II.1 to AD, divided at C and B, and the uncut line BD. This is the direct choice because the required three-part division is already given. Thus\nR(AD,BD) = R(AC,BD) + R(CB,BD) + R(BD,BD).\nSince AC = CB, this becomes\nR(AD,BD) = 2R(CB,BD) + S(BD). [2.1, D1.22]\n\n**Step 3.** Apply II.4 to CD, cut at B. It gives\nS(CD) = S(CB) + S(BD) + 2R(CB,BD). [2.4]\n\n**Step 4.** Add S(CB) to both sides of the equality in Step 2. The resulting right-hand side is exactly the sum equal to S(CD) in Step 3. Hence\nR(AD,BD) + S(CB) = S(CD).\nTherefore the rectangle contained by the whole with the added line and the added line, together with the square on the half, equals the square on the half together with the added line, as required. [CN2, CN1]",
+          "used": [
+            "D2.1",
+            "D1.22",
+            "2.1",
+            "2.4",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:58:46.782710+00:00",
+          "prompt_sha256": "c08f106312fd08e8e1cb960797c4b2e8d7d8878c7431b0c919a3beb0420fb378",
+          "resource_table_sha256": "03e453addda0213b4074c773df768b31eebcd217b2d3751d9e3c569a39332f66",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abca-575d-76a1-a4b0-7953f01f3ab0",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abca-575d-76a1-a4b0-7953f01f3ab0",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-58-47-01a1abca-575d-76a1-a4b0-7953f01f3ab0.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:59:51.963643+00:00",
+          "total_wall_time_seconds": 65.181
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.7": [
+      {
+        "result": {
+          "prop_id": "2.7",
+          "proof": "**Step 1.** Let AB be cut at C, and let AC be the chosen segment. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. We use II.4 to decompose the square on the whole, followed by II.3 to identify the rectangle involving the chosen segment; these directly match the magnitudes in the claim. By II.4,\nS(AB) = S(AC) + S(CB) + 2R(AC,CB). [2.4]\n\n**Step 2.** Add S(AC) to both sides. Then\nS(AB) + S(AC) = 2S(AC) + 2R(AC,CB) + S(CB). [CN2]\n\n**Step 3.** By II.3, applied to the same cut and the chosen segment AC,\nR(AB,AC) = R(AC,CB) + S(AC).\nAdding this equality to itself gives\n2R(AB,AC) = 2R(AC,CB) + 2S(AC). [2.3, CN2]\n\n**Step 4.** Add S(CB) to both sides of the last equality and compare with Step 2. Things equal to the same magnitude are equal; hence\nS(AB) + S(AC) = 2R(AB,AC) + S(CB).\nThus the square on the whole and the square on the chosen segment together equal twice the rectangle contained by the whole and that segment, together with the square on the remaining segment, as required. [CN2, CN1]",
+          "used": [
+            "2.4",
+            "CN2",
+            "2.3",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:59:16.790333+00:00",
+          "prompt_sha256": "ef72653bcde4659383e703b041055c61ae28886d3d4789b18d50c6a9897c3f6f",
+          "resource_table_sha256": "8fd8f43da5a0a90e273b8d120fbef0703d96c628181884d3bad887ef2214d42f",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abca-ccfb-72e2-a65a-29b798a0e5d4",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abca-ccfb-72e2-a65a-29b798a0e5d4",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-59-17-01a1abca-ccfb-72e2-a65a-29b798a0e5d4.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T12:59:53.850383+00:00",
+          "total_wall_time_seconds": 37.06
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.8": [
+      {
+        "result": {
+          "prop_id": "2.8",
+          "proof": "**Step 1.** Let the straight line AB be cut at any point C, and let AC be the chosen segment, so that CB is the remaining segment. Produce AB beyond B and cut off BD equal to AC. Thus AD is the whole AB and the chosen segment AC taken as one straight line. This construction uses P2 and 1.3. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW; multiples denote repeated addition of areas. [P2, 1.3]\n\n**Step 2.** Apply 2.4 to AD cut at B. This is the direct starting point because its two segments are precisely the original whole and a copy of the chosen segment. Since BD = AC,\nS(AD) = S(AB) + S(AC) + 2R(AB,AC). [2.4]\n\n**Step 3.** The paired squares on the right are exactly the combination addressed by 2.7. Apply that proposition to AB cut at C, with AC as the chosen segment:\nS(AB) + S(AC) = 2R(AB,AC) + S(CB). [2.7]\n\n**Step 4.** Add 2R(AB,AC) to both sides of the equality in Step 3. By CN2,\nS(AB) + S(AC) + 2R(AB,AC) = 4R(AB,AC) + S(CB).\nComparing this with Step 2, CN1 gives\nS(AD) = 4R(AB,AC) + S(CB).\nThus four times the rectangle contained by the whole and the chosen segment, together with the square on the remaining segment, equals the square on the whole and the chosen segment taken as one straight line, as required. [CN2, CN1]",
+          "used": [
+            "P2",
+            "1.3",
+            "2.4",
+            "2.7",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T12:59:46.792741+00:00",
+          "prompt_sha256": "2f6d79600875f6c5fbf2e5a0fcb819d2aa1f10799eb2f6baf720b01920b2338d",
+          "resource_table_sha256": "eb44e6b478584981135b0b5509e505d5175150590a72ad34ec2f8e5abf40b473",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcb-4206-77e1-b464-51414f661cec",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcb-4206-77e1-b464-51414f661cec",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 4,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T12-59-47-01a1abcb-4206-77e1-b464-51414f661cec.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:00:54.893974+00:00",
+          "total_wall_time_seconds": 68.101
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.9": [
+      {
+        "result": {
+          "prop_id": "2.9",
+          "proof": "**Step 1.** Let AB be cut equally at C and unequally at D. Interchanging the names A and B if necessary, take the points in the order A, C, D, B. Write S(XY) for the square on XY and R(XY, ZW) for the rectangle contained by XY and ZW; sums below are sums of areas. [D1.22, D2.1]\n\n**Step 2.** Since AC = CB, the squares on AC and CB coincide upon superposition, as do the rectangles contained respectively by AC, CD and by CB, CD. Hence\nS(AC) = S(CB), and R(AC, CD) = R(CB, CD). [CN4]\n\n**Step 3.** Apply II.4 to AD cut at C. It gives\nS(AD) = S(AC) + S(CD) + 2R(AC, CD).\nThis directly expresses the square on the longer unequal segment using the half and the distance between the points of section. [2.4]\n\n**Step 4.** Apply II.7 to CB cut at D, choosing CD as the specified segment. This route places the same rectangle together with the square on DB, ready for substitution:\nS(CB) + S(CD) = 2R(CB, CD) + S(DB).\nUsing the equalities of Step 2, this becomes\nS(AC) + S(CD) = 2R(AC, CD) + S(DB). [2.7, CN2, CN1]\n\n**Step 5.** Add S(DB) to both sides of the equality in Step 3, and then substitute the equality in Step 4. Thus\nS(AD) + S(DB)\n= S(AC) + S(CD) + [2R(AC, CD) + S(DB)]\n= [S(AC) + S(CD)] + [S(AC) + S(CD)]\n= 2S(AC) + 2S(CD). [CN2, CN1]\nTherefore the squares on the unequal segments AD and DB are together double the square on the half AC and the square on CD, the straight line between the points of section. This proves the proposition.",
+          "used": [
+            "D1.22",
+            "D2.1",
+            "CN4",
+            "2.4",
+            "2.7",
+            "CN2",
+            "CN1"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:00:16.777077+00:00",
+          "prompt_sha256": "a7cdf73b1b6374551aa59a1cf00eda29de298a72653b7f4a06e03b34df1ae797",
+          "resource_table_sha256": "d571c362f4d5cdd97fb5fd85e5c621fcca766cb510ded061b75bf32118e97d8b",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcb-b6e0-77f1-9044-6341a39bcd53",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcb-b6e0-77f1-9044-6341a39bcd53",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-00-16-01a1abcb-b6e0-77f1-9044-6341a39bcd53.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:01:43.267568+00:00",
+          "total_wall_time_seconds": 86.491
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.10": [
+      {
+        "result": {
+          "prop_id": "2.10",
+          "proof": "**Step 1.** Let AB be bisected at C, and let BD be added in the same straight line beyond B. Thus A, C, B, D occur in that order, and AC = CB. Write S(XY) for the square on XY and R(XY,ZW) for the rectangle contained by XY and ZW. Squares on equal lengths, and rectangles with equal corresponding dimensions, coincide and are therefore equal. Consequently S(AC) = S(CB) and R(AC,CD) = R(CD,CB). [CN4]\n\n**Step 2.** Apply II.4 to AD cut at C. This expansion directly exposes the squares on the half AC and on the combined length CD:\nS(AD) = S(AC) + S(CD) + 2R(AC,CD). [2.4]\n\n**Step 3.** Apply II.7 to CD cut at B, taking CB as the specified segment:\nS(CD) + S(CB) = 2R(CD,CB) + S(BD).\nThis proposition is used because its rectangle term is exactly the one obtained in Step 2. By the equalities in Step 1, we therefore have\n2R(AC,CD) + S(BD) = S(CD) + S(AC). [2.7, CN1]\n\n**Step 4.** Add S(BD) to both sides of the equality in Step 2, and substitute the equality from Step 3. Then\nS(AD) + S(BD)\n= S(AC) + S(CD) + [2R(AC,CD) + S(BD)]\n= S(AC) + S(CD) + S(CD) + S(AC)\n= 2S(AC) + 2S(CD). [CN2, CN1]\nSince AD is the whole with the added straight line, AC is the half, and CD consists of the half CB together with the added straight line BD, this is precisely the required conclusion.",
+          "used": [
+            "CN4",
+            "2.4",
+            "2.7",
+            "CN1",
+            "CN2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:00:46.776249+00:00",
+          "prompt_sha256": "242199f9f724b2fef05b226dd525841098f67e957ccb3e627f0a548a2f60f6c5",
+          "resource_table_sha256": "8e2598018646763f0001f254dbf81eed6e3e419f9b402ed1baa81f73563be6af",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcc-2c16-79a3-a7d5-fca32671e5cc",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcc-2c16-79a3-a7d5-fca32671e5cc",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 2,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-00-46-01a1abcc-2c16-79a3-a7d5-fca32671e5cc.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:02:13.674265+00:00",
+          "total_wall_time_seconds": 86.898
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.11": [
+      {
+        "result": {
+          "prop_id": "2.11",
+          "proof": "**Step 1.** Let AB be the given straight line. Construct the square ABCD, so that AD = AB and angle DAB is right. Bisect AD at E, and join EB. Thus AE = ED and AB = AE + ED. [1.46, D1.22, 1.10, P1]\n\n**Step 2.** In triangle AEB, the triangle inequality gives EB + AE > AB = AE + AE, and also EB < AE + AB. Consequently,\nAE < EB < AE + AB. [1.20]\n\n**Step 3.** Produce EA beyond A sufficiently far, and cut off EF equal to EB on this ray. Since EB > EA, the point F lies beyond A. Moreover, EA + AF = EF = EB < EA + AB, so AF < AB. Therefore cut off AH equal to AF from AB; H lies strictly between A and B. [P2, 1.3]\n\n**Step 4.** Write S(XY) for the square on XY and R(XY, ZW) for the rectangle contained by XY and ZW. Use the bisected-and-extended-line proposition, since AD is bisected at E and extended beyond A by AF. It gives\nR(DF, AF) + S(AE) = S(EF). [D2.1, 2.6]\n\n**Step 5.** Since triangle EAB is right-angled at A,\nS(EB) = S(AE) + S(AB).\nBut EF = EB. Comparing this equality with that in Step 4 and subtracting S(AE), we obtain\nR(DF, AF) = S(AB). [1.47, CN1, CN3]\n\n**Step 6.** Apply the whole-and-segment rectangle proposition to DF cut at A, choosing AF as the segment. It gives\nR(DF, AF) = R(DA, AF) + S(AF).\nSince DA = AB and AF = AH, Step 5 therefore yields\nS(AB) = R(AB, AH) + S(AH). [2.3, CN1]\n\n**Step 7.** Applying the rectangle decomposition for a line cut into two segments to AB cut at H gives\nS(AB) = R(AB, AH) + R(AB, HB). [2.2]\n\n**Step 8.** The right-hand sides in Steps 6 and 7 are equal. Subtracting their common rectangle R(AB, AH), we obtain\nS(AH) = R(AB, HB).\nThus AB has been cut at H so that the rectangle contained by the whole AB and the segment HB equals the square on the remaining segment AH, as required. [CN1, CN3]",
+          "used": [
+            "1.46",
+            "D1.22",
+            "1.10",
+            "P1",
+            "1.20",
+            "P2",
+            "1.3",
+            "D2.1",
+            "2.6",
+            "1.47",
+            "CN1",
+            "CN3",
+            "2.3",
+            "2.2"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:01:16.777757+00:00",
+          "prompt_sha256": "39be1a1b448fc1d3871f16c36de2d426a7d1edc3ec56a3fd9620a6f03d14e9e8",
+          "resource_table_sha256": "b21608d2932dc0ac62f9984f070b3bfd9ab9f58ee58d82da59147848a38d83e9",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcc-a124-7282-8261-ffc27c6220b9",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcc-a124-7282-8261-ffc27c6220b9",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-01-16-01a1abcc-a124-7282-8261-ffc27c6220b9.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:04:14.676363+00:00",
+          "total_wall_time_seconds": 177.899
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.12": [
+      {
+        "result": {
+          "prop_id": "2.12",
+          "proof": "**Step 1.** Let ABC be a triangle with obtuse angle BAC. Choose AB as the side containing the obtuse angle on whose extended line the perpendicular is to fall. Produce its line and draw CD perpendicular to it, with foot D. Write XY² for the square on XY, and R(XY, ZW) for the rectangle contained by XY and ZW. [P2, 1.12]\n\n**Step 2.** The point D lies beyond A, so the order is B, A, D. Indeed, D cannot equal A, since then BAC would be right. Nor can D lie on the ray AB away from A: in that case triangle ACD would have the obtuse angle CAD and the right angle ADC, contrary to the fact that any two angles of a triangle together are less than two right angles. Thus AD is precisely the straight line cut off outside towards the obtuse angle. [D1.10, D1.11, 1.17]\n\n**Step 3.** Apply the square-of-a-divided-line proposition to BD cut at A:\nBD² = AB² + AD² + 2R(AB, AD).\nThis is the natural expansion to choose, since the segments AB and AD are exactly those required in the rectangle of the conclusion. [2.4]\n\n**Step 4.** Since CD is perpendicular to BD, triangles BDC and ADC are right-angled at D. Hence\nBC² = BD² + CD²,\nand\nAC² = AD² + CD². [D1.10, 1.47]\n\n**Step 5.** Add CD² to both sides of the equality in Step 3, and substitute the equalities from Step 4. This gives\nBC² = AB² + AC² + 2R(AB, AD). [CN2, CN1]\n\n**Step 6.** Since AB and AD are nonzero, the twice-rectangle is a positive area. Therefore the square on BC, the side subtending the obtuse angle, is greater than the squares on AB and AC by twice the rectangle contained by AB and the external segment AD cut off by the perpendicular towards that angle. This is the required conclusion. [CN5]",
+          "used": [
+            "P2",
+            "1.12",
+            "D1.10",
+            "D1.11",
+            "1.17",
+            "2.4",
+            "1.47",
+            "CN2",
+            "CN1",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:01:46.791499+00:00",
+          "prompt_sha256": "5e59550da2b0272f0b18635d6a5faf839f59ad9536fcdcbb0393736c628d823a",
+          "resource_table_sha256": "c97b5e4e4355e55c82fe529b73782654b650354c40493a294f15802c3b8f83b8",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcd-16a9-7241-84a7-f00b94db908c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcd-16a9-7241-84a7-f00b94db908c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-01-47-01a1abcd-16a9-7241-84a7-f00b94db908c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:03:08.335930+00:00",
+          "total_wall_time_seconds": 81.544
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.13": [
+      {
+        "result": {
+          "prop_id": "2.13",
+          "proof": "**Step 1.** Let ABC be an acute-angled triangle, and choose the acute angle ABC. Its opposite side is AC, and its containing sides are AB and BC. All three angles are less than a right angle. Write X² for the square on a segment X, and R(X,Y) for the rectangle contained by segments X and Y. [D1.21, D1.12]\n\n**Step 2.** Draw AD perpendicular to the straight line BC, with foot D. The point D lies strictly between B and C. Indeed, if D coincided with B or C, the corresponding angle of ABC would be right. If D lay beyond B, angle ABC would be an exterior angle of triangle ABD and hence greater than its right angle ADB. If D lay beyond C, angle ACB would similarly be greater than the right angle ADC. Each possibility contradicts the acuteness of ABC. Thus BD is the segment cut off within BC towards the chosen angle B. [1.12, D1.10, 1.16, D1.12]\n\n**Step 3.** Use II.7 directly: its whole-and-segment rectangle is exactly the rectangle required here. Since BC is cut at D,\nBC² + BD² = 2R(BC,BD) + CD². [2.7]\n\n**Step 4.** Applying the theorem on the square of the hypotenuse to the right-angled triangles ADB and ADC gives\nAB² = AD² + BD²,\nAC² = AD² + CD². [1.47]\n\n**Step 5.** Add AD² to both sides of the equality in Step 3, and substitute the equal areas from Step 4. Therefore\nAB² + BC² = AC² + 2R(BC,BD). [CN2, CN1]\n\n**Step 6.** Subtracting AC² shows that the excess of AB² + BC² over AC² is exactly 2R(BC,BD). This rectangle has nonzero sides, since D lies strictly between B and C; hence the sum of the two squares is greater than AC². Thus the square on the side subtending the chosen acute angle is less than the squares on its containing sides by twice the rectangle contained by BC, the side on which the perpendicular falls, and BD, the segment cut off within it towards that angle. Since the chosen angle was arbitrary, the proposition follows. [CN3, CN5]",
+          "used": [
+            "D1.21",
+            "D1.12",
+            "1.12",
+            "D1.10",
+            "1.16",
+            "2.7",
+            "1.47",
+            "CN2",
+            "CN1",
+            "CN3",
+            "CN5"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:02:16.788077+00:00",
+          "prompt_sha256": "c14a4c027390ea409bf5a2f36be80fc744c1c1130a88c699ccee30164ba3ea3a",
+          "resource_table_sha256": "1952db95818f100f19b7317e492db7a8e3e9d3e9cad590d9b9d06280552ec16a",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abcd-8bcb-7701-a989-cba5b674ab2c",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abcd-8bcb-7701-a989-cba5b674ab2c",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 3,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-02-17-01a1abcd-8bcb-7701-a989-cba5b674ab2c.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:03:28.726002+00:00",
+          "total_wall_time_seconds": 71.938
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ],
+    "2.14": [
+      {
+        "result": {
+          "prop_id": "2.14",
+          "proof": "**Step 1.** Let the given rectilineal figure be F. Construct a right angle, and in that angle construct a parallelogram ABCD equal to F (1.11, 1.45). Its remaining angles are also right angles, by the properties of parallel lines and opposite angles of a parallelogram (1.29, 1.34). Thus ABCD is the rectangle contained by AB and AD (D2.1).\n\n**Step 2.** If AB equals AD, the opposite sides are equal as well, so ABCD is equilateral and right-angled: it is already the required square (1.34, D1.22). Otherwise, relabel the rectangle if necessary so that AB is greater than AD. We shall convert this unequal-sided rectangle into a square.\n\n**Step 3.** Produce AB beyond B and cut off BE equal to AD (P2, 1.3). Bisect AE at O (1.10). Since AB is greater than BE, O lies between A and B. Thus AE is cut equally at O and unequally at B.\n\n**Step 4.** Describe the circle with centre O and radius OA (P3). Since OA equals OE, this circle passes through A and E (D1.15). At B draw a perpendicular to AE and produce it to meet the circle at H (1.11, P2). Here B is inside the circle, since OB is less than OE, so the perpendicular reaches its circumference. Join OH (P1). The angle OBH is right, and OH equals OA because they are radii of the same circle (D1.15).\n\n**Step 5.** Write S(XY) for the square on XY and R(XY, ZW) for the rectangle contained by XY and ZW. Apply 2.5 to AE, cut equally at O and unequally at B. This is the directly matching proposition because the construction supplies precisely its two kinds of division. It gives\nR(AB, BE) + S(OB) = S(OA).\n\n**Step 6.** In the right-angled triangle OBH, the square on the hypotenuse equals the squares on the other two sides (1.47):\nS(OH) = S(OB) + S(BH).\nSince OH equals OA, the right-hand total here equals the total in Step 5 (CN1). Subtracting the common square S(OB) gives\nR(AB, BE) = S(BH) (CN3).\nBut BE equals AD, so R(AB, BE) is equal to the rectangle ABCD, which is contained by AB and AD (D2.1). Consequently S(BH) equals ABCD and hence the given figure F (CN1).\n\n**Step 7.** Construct a square on BH (1.46). By Step 6 this square is equal to the given rectilineal figure. Therefore a square equal to the given rectilineal figure has been constructed.",
+          "used": [
+            "1.11",
+            "1.45",
+            "1.29",
+            "1.34",
+            "D2.1",
+            "D1.22",
+            "P2",
+            "1.3",
+            "1.10",
+            "P3",
+            "D1.15",
+            "P1",
+            "2.5",
+            "1.47",
+            "CN1",
+            "CN3",
+            "1.46"
+          ]
+        },
+        "execution": {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "xhigh",
+          "requested_provider": "custom",
+          "endpoint": "http://127.0.0.1:11435",
+          "started_at": "2026-11-05T13:02:46.856497+00:00",
+          "prompt_sha256": "1c37f84e5e82e6e9bfa6821cc3cf22af76c53aaf4db7ae3268f203ff3303bb5c",
+          "resource_table_sha256": "a7f9a1c59199707b023ab213471ab7e3bc7b658c9b1fec54247eb40c32dc3880",
+          "resource_mode": "shuffled-table",
+          "table_tool": "euclid_table.lookup_statements",
+          "isolation": "bubblewrap-minimal-root",
+          "network": "enabled for trusted model endpoint; web/shell disabled in clean config",
+          "proxy_fallback_before": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "runtime": {
+            "model": "gpt-6-astra",
+            "reasoning_effort": "xhigh",
+            "provider": "custom",
+            "session_id": "01a1abce-01ae-7d80-8171-29388cd8b897",
+            "records": [
+              {
+                "type": "session_meta",
+                "fields": {
+                  "id": "01a1abce-01ae-7d80-8171-29388cd8b897",
+                  "model_provider": "custom"
+                }
+              },
+              {
+                "type": "turn_context",
+                "fields": {
+                  "model": "gpt-6-astra",
+                  "effort": "xhigh"
+                }
+              }
+            ],
+            "scope": "CLI session configuration; upstream backend routing not independently attested"
+          },
+          "returncode": 0,
+          "proxy_fallback_after": {
+            "readable": true,
+            "degraded": false,
+            "fallback_active": false,
+            "fallback_model": "gpt-6-luna",
+            "fallback_hits": 87
+          },
+          "table_access_calls": 6,
+          "table_access_observed": true,
+          "session_logs": [
+            "session_logs/2026/11/05/rollout-2026-11-05T13-02-47-01a1abce-01ae-7d80-8171-29388cd8b897.jsonl"
+          ],
+          "status": "returned",
+          "completed_at": "2026-11-05T13:05:07.490624+00:00",
+          "total_wall_time_seconds": 140.634
+        },
+        "attempt": 0,
+        "violations": []
+      }
+    ]
+  },
+  "proof_validation": "schema/ID/reference/step-format/order only; mathematical validity outside scope"
+}

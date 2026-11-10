@@ -1,0 +1,808 @@
+# Book 11 of Euclid's Elements — Step-by-Step AI Proofs (Run A)
+
+## Proposition 11.1
+**Statement:** A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.
+
+**Step 1.** Use the direct straight-continuation argument from the definitions of a straight line and a plane. Suppose, contrary to the assertion, that a straight line ABC has a nonzero segment AB in the reference plane, while its continuation BC leaves that plane. [D1.4, D1.7]
+
+**Step 2.** Produce AB beyond B in the reference plane, and call this continuation BD, produced as far as necessary. This is straight-line production performed in the plane surface. [P2, D1.7]
+
+**Step 3.** Both ABC and ABD would then be straight, agreeing throughout AB but separating beyond B. This is incompatible with straightness: a line which lies evenly with its points cannot depart from the straight continuation fixed by its existing segment. Thus BC must coincide with the in-plane continuation BD, contrary to the supposition that BC leaves the plane. Therefore a part of a straight line cannot be in the plane of reference and another part in a plane more elevated. [D1.4]
+
+**USED:** D1.4, D1.7, P2
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['D1.4', 'D1.7', 'P2']
+
+## Proposition 11.2
+**Statement:** If two straight lines cut one another, they are in one plane, and every triangle is in one plane.
+
+**Step 1.** We prove the triangle assertion first, choosing a circumcircle because it supplies a plane directly. Let ABC be any triangle. Circumscribe a circle Γ about it by 4.5. Its circumference passes through A, B, and C by D4.6, and Γ lies in a plane Π because a circle is a plane figure by D1.15.
+
+**Step 2.** By 3.2, the straight segments AB, BC, and CA joining pairs of points on Γ lie within the circle, and hence in Π. Consequently the triangle contained by these three sides is in Π (D1.19). Thus every triangle is in one plane.
+
+**Step 3.** Now let two distinct straight lines ℓ and m cut one another at O. Choose A on ℓ and B on m, each different from O, and join AB (P1). Since the lines are distinct, the segments OA, OB, and AB form a triangle (D1.19). By Steps 1–2, this triangle lies in some plane Σ. In particular, the nonzero segments OA and OB lie in Σ.
+
+**Step 4.** By 11.1, a straight line cannot have one part in the plane of reference and another part outside that plane. Since OA lies in Σ, the whole straight line ℓ lies in Σ; similarly, since OB lies in Σ, the whole straight line m lies in Σ. Therefore two straight lines which cut one another are in one plane, and, as already proved, every triangle is in one plane.
+
+**USED:** 11.1, 3.2, 4.5, D1.15, D1.19, D4.6, P1
+**Human refs (from References field):** 11.1
+**Jaccard:** 0.143 — AI adds ['3.2', '4.5', 'D1.15', 'D1.19', 'D4.6', 'P1']
+
+## Proposition 11.3
+**Statement:** If two planes cut one another, their common section is a straight line.
+
+**Step 1.** Let two distinct planes Π and Σ cut one another, and let S be their common section. Choose distinct points A and B of S. Draw AB and produce it as necessary, calling its straight line ℓ [P1, P2]. Since a plane lies evenly with the straight lines on itself, the segment AB lies in both planes [D1.7]. Its continuation cannot leave either plane [11.1]; hence ℓ lies in S. We use this continuation property directly to rule out any common point outside ℓ.
+
+**Step 2.** Suppose that C is a point of S outside ℓ. Join BC, and join A to each point D of BC [P1]. The segment BC lies in both planes, and so does every segment AD [D1.7]. These segments fill the triangle ABC. Thus both planes contain this triangle, including its interior.
+
+**Step 3.** Choose an interior point O of that triangle. For any point X of Π distinct from O, draw OX [P1]; this segment lies in Π [D1.7]. An initial, nonzero portion of OX lies inside the common triangle and therefore in Σ. By 11.1, the remainder of this straight segment cannot leave Σ. Hence X belongs to Σ. Thus Π is contained in Σ. The same argument with the planes interchanged shows that Σ is contained in Π [11.1]. The planes would therefore coincide, contrary to their being distinct.
+
+**Step 4.** Consequently S has no point outside ℓ. Since Step 1 showed that ℓ belongs to S, their common section is exactly the straight line ℓ. Therefore, if two planes cut one another, their common section is a straight line.
+
+**USED:** 11.1, D1.7, P1, P2
+**Human refs (from References field):** 
+**Jaccard:** 0.000 — AI adds ['11.1', 'D1.7', 'P1', 'P2']
+
+## Proposition 11.4
+**Statement:** If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it will also be at right angles to the plane through them.
+
+**Step 1.** Let the distinct straight lines a and b meet at O, and let ℓ be perpendicular to both at O. Let Π be the plane through a and b. The line ℓ cannot lie in Π: otherwise, rays of a and b chosen on opposite sides of ℓ would each make a right angle with a fixed ray of ℓ, and hence would form one straight line, contrary to a and b being distinct. Moreover, ℓ meets Π only at O; a second common point would put the intervening segment, and therefore the whole straight line, in Π. [11.2, D1.10, 1.14, D1.7, 11.1]
+
+**Step 2.** Choose A on ℓ, distinct from O. Produce AO beyond O and cut off OA′ equal to OA. We use these equal opposite segments for a direct triangle-congruence proof. [P2, 1.3]
+
+**Step 3.** Let m be any straight line in Π through O other than a or b. Choose rays of a and b bounding a sector that contains one ray of m. Take points C and D, distinct from O, on those respective rays, and join CD. The chosen ray of m meets CD at a point X between C and D. Thus X lies in Π and X ≠ O. Join AC, A′C, AD, A′D, AX, and A′X. Each triangle used below lies in a plane, so the Book I congruence propositions apply. [P1, D1.7, 11.2]
+
+**Step 4.** In triangles AOC and A′OC, AO = A′O, OC is common, and the included angles at O are right angles and therefore equal. Hence AC = A′C. Similarly, triangles AOD and A′OD give AD = A′D. [D1.10, P4, 1.4]
+
+**Step 5.** Triangles ACD and A′CD now have their three corresponding sides equal: AC = A′C, AD = A′D, and CD is common. Thus the three-side angle criterion is the natural next step, giving ∠ACD = ∠A′CD. Since X lies between C and D, it follows that ∠ACX = ∠A′CX. Consequently, triangles ACX and A′CX have two corresponding sides and their included angles equal, so AX = A′X. [1.8, 1.4]
+
+**Step 6.** Finally, triangles AOX and A′OX have AO = A′O, OX common, and AX = A′X. Therefore ∠AOX = ∠A′OX. Since OA and OA′ are opposite rays, these are equal adjacent angles; each is therefore a right angle. Thus ℓ is perpendicular to m. [1.8, D1.10]
+
+**Step 7.** The line m was arbitrary among the straight lines of Π through O other than a and b, and perpendicularity to a and b was given. Since O is the only intersection of ℓ with Π, ℓ therefore makes right angles with every straight line in Π that meets it. By the definition of perpendicularity to a plane, ℓ is at right angles to Π, as required. [11.1, D11.3]
+
+**USED:** 1.14, 1.3, 1.4, 1.8, 11.1, 11.2, D1.10, D1.7, D11.3, P1, P2, P4
+**Human refs (from References field):** 1.15, 1.26, 1.4, 1.8, D11.3
+**Jaccard:** 0.214 — AI adds ['1.14', '1.3', '11.1', '11.2', 'D1.10', 'D1.7', 'P1', 'P2', 'P4']; Human adds ['1.15', '1.26']
+
+## Proposition 11.5
+**Statement:** If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.
+
+**Step 1.** Let the three given straight lines a, b, c meet at O, and let n be at right angles to each of them at O. The intersecting lines a and b lie in a plane α. [11.2]
+
+**Step 2.** By the two-line criterion, n is at right angles to α. Consequently, n makes right angles with every straight line in α through O. [11.4, D11.3]
+
+**Step 3.** The intersecting lines n and c lie in a plane β. If β is α, all three given lines already lie in α. Otherwise, α and β meet at O, and their common section is a straight line d through O. [11.2, 11.3]
+
+**Step 4.** Work in β. Take a ray OA along n and a ray OC along c. Since n is perpendicular to d by Step 2, d is distinct from n; choose its ray OD on the opposite side of n from OC. The angle COA is right by hypothesis, and AOD is right because d lies in α. Thus these adjacent angles together equal two right angles. [D11.3]
+
+**Step 5.** Apply the adjacent-angle criterion directly: since OC and OD lie on opposite sides of OA and make adjacent angles equal to two right angles, they are in a straight line with one another. Hence c is the same straight line as d and therefore lies in α. Thus a, b, c are all in one plane, as required. [1.14]
+
+**USED:** 1.14, 11.2, 11.3, 11.4, D11.3
+**Human refs (from References field):** 11.3, 11.4, D11.3
+**Jaccard:** 0.600 — AI adds ['1.14', '11.2']
+
+## Proposition 11.6
+**Statement:** If two straight lines be at right angles to the same plane, the straight lines will be parallel.
+
+**Step 1.** Let the two distinct given straight lines be perpendicular to a plane Π at B and D. Their feet are distinct. For if both feet were O, draw perpendicular straight lines r and s through O in Π. Then r is perpendicular to s and to both given lines. By 11.5, s and the two given lines lie in one plane. Taking rays of the given lines on opposite sides of s, their adjacent angles with s are two right angles; hence 1.14 makes them one straight line, contrary to their distinctness. [1.11, D11.3, 11.5, 1.14]
+
+**Step 2.** Choose A on the first given line, different from B, and C on the second, different from D. Join BD in Π. In Π draw DE perpendicular to DB, extending and cutting it off so that DE = AB. Join AD, BE, and AE. By perpendicularity to Π, the angles ABD and ABE are right, and DC is perpendicular to DE. [P1, 1.11, P2, 1.3, D11.3]
+
+**Step 3.** In triangles ABD and EDB, AB = ED, BD is common, and the included angles ABD and EDB are equal, both being right. Therefore AD = EB by 1.4. This uses the immediately available two sides and included angle. [P4, 1.4]
+
+**Step 4.** In triangles ABE and EDA, AB = ED, BE = DA, and AE is common. Therefore their angles ABE and EDA are equal. Since ABE is right, EDA is right also; thus DE is perpendicular to DA. [1.8, D1.10]
+
+**Step 5.** DE is now perpendicular to DB, DA, and DC at their common point D. Consequently these three straight lines lie in one plane. That plane contains A and B and hence the whole straight line AB; it also contains CD. Thus the two given lines are coplanar. This supplies the coplanarity required before using a planar parallelism criterion. [11.5, 11.1]
+
+**Step 6.** In this common plane, BD meets AB and CD at right angles, since BD lies in Π. Its interior angles on the same side therefore equal two right angles. By 1.28, AB and CD are parallel. Hence two straight lines perpendicular to the same plane are parallel. [D11.3, 1.28]
+
+**USED:** 1.11, 1.14, 1.28, 1.3, 1.4, 1.8, 11.1, 11.5, D1.10, D11.3, P1, P2, P4
+**Human refs (from References field):** 1.28, 1.4, 1.8, 11.2, 11.5, D11.3
+**Jaccard:** 0.357 — AI adds ['1.11', '1.14', '1.3', '11.1', 'D1.10', 'P1', 'P2', 'P4']; Human adds ['11.2']
+
+## Proposition 11.7
+**Statement:** If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.
+
+**Step 1.** Let the parallel straight lines be ℓ and m, and take arbitrary points A on ℓ and B on m. By the definition of parallel straight lines, ℓ and m lie in a plane Π and do not meet. In particular, B does not lie on ℓ. [D1.23]
+
+**Step 2.** Draw the straight line AB. Since AB and ℓ are distinct and meet at A, they lie in a plane Σ. We use the intersecting-lines clause of 11.2 because the required intersection is already present; no auxiliary triangle is needed. [P1, 11.2]
+
+**Step 3.** If Σ and Π were distinct, their common section would be a straight line. Both planes contain ℓ, so that common section must be ℓ itself. But B belongs to Π because it lies on m, and belongs to Σ because it lies on AB. Thus B would lie on ℓ, contrary to Step 1. Therefore Σ and Π coincide, and AB lies in the same plane as both parallel straight lines, as required. [11.3, D1.23]
+
+**USED:** 11.2, 11.3, D1.23, P1
+**Human refs (from References field):** 11.3
+**Jaccard:** 0.250 — AI adds ['11.2', 'D1.23', 'P1']
+
+## Proposition 11.8
+**Statement:** If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane.
+
+**Step 1.** Let the parallel straight lines be a and b, and let a be perpendicular to the plane Π at B. We use the criterion of 11.4: it suffices to show that b is perpendicular to two intersecting straight lines in Π at their intersection. By the definition of parallels, a and b lie in a plane Q. This plane is distinct from Π, and their common section is a straight line r through B. [D11.3, D1.23, 11.3, 11.4]
+
+**Step 2.** The line b meets r. For otherwise, being coplanar with r and not meeting it, b would be parallel to r. Since a is also parallel to b, a would then be parallel to r, contrary to their meeting at B. Let D be the intersection of b and r; thus B and D are distinct. [D1.23, 1.30]
+
+**Step 3.** Choose A on a and C on b on opposite sides of r in Q. Since AB is perpendicular to Π, angle ABD is right. The alternate angles ABD and BDC are equal because AB and DC are parallel; hence angle BDC is also right. Thus DC is perpendicular to DB. [D11.3, 1.29]
+
+**Step 4.** In Π draw DE perpendicular to DB at D, and take E on this perpendicular so that DE equals AB, prolonging the perpendicular and cutting off the required length if necessary. Join AD, BE, and AE. The segment AD lies in Q, while BE lies in Π. Consequently angle ABE is right, since AB is perpendicular to Π. [1.11, P2, 1.3, P1, D1.7, D11.3]
+
+**Step 5.** Compare triangles ABD and EDB. We have AB equal to ED by construction, BD common, and the included angles ABD and EDB both right and therefore equal. Side–angle–side is the direct applicable criterion, since these included angles are already known. It follows that AD equals EB. [P4, 1.4]
+
+**Step 6.** Now compare triangles ABE and EDA. Their corresponding sides satisfy AB = ED, BE = DA, and AE = EA. Therefore their angles ABE and EDA are equal. Since angle ABE is right, angle EDA is right; hence DE is perpendicular to DA. [1.8]
+
+**Step 7.** Thus DE is perpendicular to both DB and DA at D. These two intersecting lines lie in Q, so DE is perpendicular to Q. Since DC lies in Q and meets DE at D, DE is perpendicular to DC. [11.4, D11.3]
+
+**Step 8.** The line DC is therefore perpendicular to both DB and DE at their common point D. These are two intersecting straight lines in Π. Hence DC, and thus the remaining parallel line b, is perpendicular to Π. Therefore, if one of two parallel straight lines is at right angles to a plane, the other is also at right angles to that plane. [11.4]
+
+**USED:** 1.11, 1.29, 1.3, 1.30, 1.4, 1.8, 11.3, 11.4, D1.23, D1.7, D11.3, P1, P2, P4
+**Human refs (from References field):** 1.29, 11.2, 11.4, 11.7, D11.3
+**Jaccard:** 0.188 — AI adds ['1.11', '1.3', '1.30', '1.4', '1.8', '11.3', 'D1.23', 'D1.7', 'P1', 'P2', 'P4']; Human adds ['11.2', '11.7']
+
+## Proposition 11.9
+**Statement:** Straight lines which are parallel to the same straight line and are not in the same plane with it are also parallel to one another.
+
+**Step 1.** Let a and b each be parallel to c, with the three lines not all in one plane. By the definition of parallels, a and c lie in a plane α, and b and c lie in a plane β. These planes are distinct by hypothesis. Choose a point O on c. We shall use the direct route through a plane perpendicular to c. [D1.23]
+
+**Step 2.** In α draw p through O perpendicular to c; in β draw q through O perpendicular to c. These constructions are supplied by 1.11. The common section of α and β is the straight line c, by 11.3. Consequently p and q are distinct: if they coincided, that line would belong to both planes and therefore coincide with c, contrary to its being perpendicular to c. Thus p and q intersect at O. [1.11, 11.3]
+
+**Step 3.** The intersecting lines p and q lie in a plane π. Since c is perpendicular to both at their common point O, c is perpendicular to π. [11.2, 11.4]
+
+**Step 4.** Since a is parallel to c and c is perpendicular to π, a is perpendicular to π. Likewise, since b is parallel to c, b is perpendicular to π. [11.8]
+
+**Step 5.** Straight lines perpendicular to the same plane are parallel; hence a is parallel to b. This criterion applies directly and does not require us to assume beforehand that a and b are coplanar. Therefore straight lines parallel to the same straight line, though not all in one plane, are parallel to one another. [11.6]
+
+**USED:** 1.11, 11.2, 11.3, 11.4, 11.6, 11.8, D1.23
+**Human refs (from References field):** 11.4, 11.6, 11.8
+**Jaccard:** 0.429 — AI adds ['1.11', '11.2', '11.3', 'D1.23']
+
+## Proposition 11.10
+**Statement:** If two straight lines meeting one another be parallel to two straight lines meeting one another not in the same plane, they will contain equal angles.
+
+**Step 1.** Let AB and AC meet at A, and DE and DF meet at D, with AB parallel to DE and AC parallel to DF, the two pairs not lying in one plane. Choose the corresponding rays in the same directions. Cutting off the longer segment of each corresponding pair if necessary, take AB = DE and AC = DF. We shall prove that ∠BAC = ∠EDF. [1.3]
+
+**Step 2.** Join AD, BE, CF, BC, and EF. [P1]
+
+**Step 3.** Each given pair of parallel lines lies in a plane. Since AB and DE are equal, parallel, and similarly directed, their corresponding joins AD and BE are equal and parallel. Likewise, since AC and DF are equal, parallel, and similarly directed, AD and CF are equal and parallel. [D1.23, 1.33]
+
+**Step 4.** Consequently BE = CF, since each equals AD. Moreover, BE and CF are parallel to AD in the respective planes ABED and ACFD. These planes are distinct, for otherwise all four original lines would lie in one plane. Therefore BE is parallel to CF. Here the spatial parallelism theorem is the direct choice, because the two parallels to AD occur in different planes. [CN1, 11.9]
+
+**Step 5.** The directions from B to E and from C to F correspond to the same direction from A to D in Step 3. Thus BE and CF are equal and parallel in the same direction. Their corresponding joins BC and EF are therefore equal. [1.33]
+
+**Step 6.** Each of the triangles ABC and DEF lies in a plane. They have AB = DE and AC = DF by construction, and their bases BC and EF are equal by Step 5. Hence the angles contained by the corresponding equal sides are equal: ∠BAC = ∠EDF. Therefore the two pairs of intersecting parallel straight lines contain equal corresponding angles, as required. [11.2, 1.8]
+
+**USED:** 1.3, 1.33, 1.8, 11.2, 11.9, CN1, D1.23, P1
+**Human refs (from References field):** 1.33, 1.8, 11.9
+**Jaccard:** 0.375 — AI adds ['1.3', '11.2', 'CN1', 'D1.23', 'P1']
+
+## Proposition 11.11
+**Statement:** From a given elevated point to draw a straight line perpendicular to a given plane.
+
+**Step 1.** Let A be the given point outside the given plane α. Choose a straight line ℓ in α and a point B on ℓ, and join AB. The intersecting lines AB and ℓ lie in a plane. In that plane, draw AD perpendicular to ℓ, with D on ℓ. Thus D lies in α. [P1, 11.2, 1.12]
+
+**Step 2.** In α, draw a straight line m through D perpendicular to ℓ. We use the criterion of perpendicularity to two intersecting lines: if AD is also perpendicular to m, then AD is perpendicular to α, and the required construction is complete. Henceforth suppose AD is not perpendicular to m. [1.11, 11.4]
+
+**Step 3.** The intersecting lines AD and m lie in a plane σ. Since A is outside α, it is not on m. In σ, draw AF perpendicular to m, with F on m. Here F is distinct from D, since otherwise AD would be perpendicular to m, contrary to the case under consideration. [11.2, 1.12]
+
+**Step 4.** The line ℓ is perpendicular both to AD and to m at their common point D. Consequently ℓ is perpendicular to their plane σ. [11.4]
+
+**Step 5.** In α, draw a straight line n through F parallel to ℓ. The lines n and m are distinct: m meets ℓ at D, whereas n, being parallel to ℓ, does not meet ℓ. Since ℓ is already perpendicular to σ, the direct next step is to transfer that perpendicularity to its parallel n. Thus n is perpendicular to σ. As AF lies in σ and meets n at F, n is perpendicular to AF. [1.31, D1.23, 11.8, D11.3]
+
+**Step 6.** Therefore AF is perpendicular to both m and n at their common point F. These are two distinct intersecting lines in α, so AF is perpendicular to α. Since F lies in α, AF is the required straight line drawn from the given elevated point A perpendicular to the given plane. [11.4]
+
+**USED:** 1.11, 1.12, 1.31, 11.2, 11.4, 11.8, D1.23, D11.3, P1
+**Human refs (from References field):** 1.11, 1.12, 1.31, 11.4, 11.8, D11.3
+**Jaccard:** 0.667 — AI adds ['11.2', 'D1.23', 'P1']
+
+## Proposition 11.12
+**Statement:** To set up a straight line at right angles to a given plane from a given point in it.
+
+**Step 1.** Let Π be the given plane and A the given point in it. Use the preceding external-perpendicular construction, then transfer its direction to A. Choose a point B outside Π and draw BC perpendicular to Π, with C in Π. If C coincides with A, then AB is already the required straight line. [11.11]
+
+**Step 2.** Otherwise, join A to C. The intersecting straight lines AC and BC lie in one plane; call it Σ. Thus Σ contains A and BC. [P1, 11.2]
+
+**Step 3.** In Σ, draw through A a straight line AD parallel to BC. [1.31]
+
+**Step 4.** Since BC is perpendicular to Π and AD is parallel to BC, AD is also perpendicular to Π. Therefore AD is the required straight line set up at right angles to the given plane from the given point A in it. [11.8]
+
+**USED:** 1.31, 11.11, 11.2, 11.8, P1
+**Human refs (from References field):** 1.31, 11.11, 11.8
+**Jaccard:** 0.600 — AI adds ['11.2', 'P1']
+
+## Proposition 11.13
+**Statement:** From the same point two straight lines cannot be set up at right angles to the same plane on the same side.
+
+**Step 1.** Suppose that two distinct straight lines AB and AC are set up from the same point A at right angles to a plane, on the same side of it. The same-side condition excludes their being opposite portions of a single straight line. Choose the direct parallelism route, since XI.6 applies immediately to the two perpendiculars: AB and AC must be parallel. [11.6]
+
+**Step 2.** Parallel straight lines, even when produced indefinitely, do not meet one another. But AB and AC meet at A, a contradiction. Therefore, from the same point two straight lines cannot be set up at right angles to the same plane on the same side. [D1.23]
+
+**USED:** 11.6, D1.23
+**Human refs (from References field):** 11.3, D11.3
+**Jaccard:** 0.000 — AI adds ['11.6', 'D1.23']; Human adds ['11.3', 'D11.3']
+
+## Proposition 11.14
+**Statement:** Planes to which the same straight line is at right angles will be parallel.
+
+**Step 1.** Let the straight line AB be perpendicular to the two given planes α and β, meeting them at A and B respectively. Thus it makes right angles with the straight lines through A in α and with those through B in β (D11.3).
+
+**Step 2.** Suppose, for a contradiction, that the planes meet. Their common section is a straight line (11.3). Choose a point C on this section outside AB, and join CA and CB (P1). Since A and C lie in α, and B and C lie in β, the joins CA and CB lie in the respective planes (D1.7). The triangle ABC lies in one plane (11.2).
+
+**Step 3.** Because AB is perpendicular to α, the angle CAB is right; because AB is perpendicular to β, the angle ABC is right (D11.3). Hence these two angles of triangle ABC together equal two right angles.
+
+**Step 4.** But any two angles of a triangle together are less than two right angles (1.17), a contradiction. This is the direct two-angle bound needed here, rather than a theorem about the triangle’s full angle sum.
+
+**Step 5.** Therefore the two planes do not meet. Planes which do not meet are parallel (D11.8). Thus planes to which the same straight line is at right angles are parallel.
+
+**USED:** 1.17, 11.2, 11.3, D1.7, D11.3, D11.8, P1
+**Human refs (from References field):** 1.17, 11.3, D11.3, D11.8
+**Jaccard:** 0.571 — AI adds ['11.2', 'D1.7', 'P1']
+
+## Proposition 11.15
+**Statement:** If two straight lines meeting one another be parallel to two straight lines meeting one another, not being in the same plane, the planes through them are parallel.
+
+**Step 1.** Let AB and AC meet at A in the plane α, and let DE and DF meet at D in the distinct plane β, with AB parallel to DE and AC parallel to DF. We take the direct route of finding a common perpendicular to the two planes. Set up a straight line n perpendicular to α at A. Then n is perpendicular to both AB and AC. [11.12, D11.3]
+
+**Step 2.** Construct a straight line m through D as follows. If D lies on n, take m to be n itself. Otherwise, n and AD determine a plane, and in that plane draw m through D parallel to n. Since n is perpendicular to α, so is m. Thus in either case m is perpendicular to α. [11.2, 1.31, 11.8]
+
+**Step 3.** We show that m is perpendicular to DE and DF by transferring the right angles from Step 1. First compare the intersecting pair AB, n with the intersecting pair DE, m. If n and m are distinct and the planes of these pairs differ, their corresponding sides are parallel, so their angles are equal by 11.10; hence the angle between DE and m is right. If those planes coincide, the same conclusion follows in that plane from 1.29, transferring the right angle across the two parallel pairs. If m is n itself, that line is a transversal of the parallels AB and DE, and 1.29 again gives a right angle at D. Therefore m is perpendicular to DE. Apply exactly the same comparison to AC, n and DF, m to obtain that m is perpendicular to DF. Here 11.10 is the natural spatial angle-transfer theorem, while 1.29 supplies precisely the coplanar cases. [11.10, 1.29]
+
+**Step 4.** Since DE and DF intersect at D and m is perpendicular to both at D, m is perpendicular to their plane β. [11.4]
+
+**Step 5.** The same straight line m is perpendicular to both α and β. Planes perpendicular to the same straight line are parallel. Therefore the planes through AB, AC and through DE, DF are parallel, as required. [11.14]
+
+**USED:** 1.29, 1.31, 11.10, 11.12, 11.14, 11.2, 11.4, 11.8, D11.3
+**Human refs (from References field):** 1.29, 1.31, 11.11, 11.14, 11.4, 11.9, D11.3
+**Jaccard:** 0.455 — AI adds ['11.10', '11.12', '11.2', '11.8']; Human adds ['11.11', '11.9']
+
+## Proposition 11.16
+**Statement:** If two parallel planes be cut by any plane, their common sections are parallel.
+
+**Step 1.** Let the parallel planes P and Q be cut by a plane R, and let their common sections with R be ℓ and m respectively. By 11.3, each common section is a straight line. Both ℓ and m lie in R, so they are coplanar. [11.3]
+
+**Step 2.** When ℓ and m are produced in either direction, they remain in P and Q respectively: a straight line cannot lie partly in a plane and partly outside it. If the two lines met at any point, that point would therefore belong to both P and Q. But parallel planes do not meet. Hence ℓ and m, however far produced in either direction, cannot meet. [11.1, D11.8]
+
+**Step 3.** We use the defining criterion for parallel straight lines directly, since coplanarity and non-intersection have been established. The straight lines ℓ and m lie in the same plane and, when produced indefinitely in both directions, do not meet; therefore they are parallel. Thus the common sections of two parallel planes by any cutting plane are parallel. [D1.23]
+
+**USED:** 11.1, 11.3, D1.23, D11.8
+**Human refs (from References field):** 11.1, D1.23
+**Jaccard:** 0.500 — AI adds ['11.3', 'D11.8']
+
+## Proposition 11.17
+**Statement:** If two straight lines be cut by parallel planes, they will be cut in the same ratios.
+
+**Step 1.** Let three parallel planes cut the two straight lines at A, B, C and D, E, F respectively, in corresponding order, with B between A and C and E between D and F. We must prove AB:BC = DE:EF. We use the direct triangle-section route: parallel sections supplied by 11.16 lead immediately to the proportional divisions of 6.2, without requiring a similarity argument. [11.16, 6.2]
+
+**Step 2.** Coincident straight lines give identical corresponding segments, so suppose the lines are distinct. If A = D, form triangle ACF; its middle-plane section BE is parallel to CF, and 6.2 gives AB:BC = AE:EF = DE:EF. If C = F, form triangle CAD; its middle-plane section BE is parallel to AD, and 6.2 gives AB:BC = DE:EC = DE:EF. These triangles are planar by 11.2, and the asserted parallel sections follow from 11.3 and 11.16. Hence it remains to consider A ≠ D and C ≠ F. [P1, 11.2, 11.3, 11.16, 6.2]
+
+**Step 3.** Join AF, CF, and AD, and let AF meet the middle plane at G. Since A and F lie on opposite sides of that plane, G lies between them. The nondegenerate triangles ACF and FAD each lie in a plane. [P1, 11.2]
+
+**Step 4.** The plane of triangle ACF cuts the middle and third parallel planes in the straight lines BG and CF; therefore BG is parallel to CF. Likewise, the plane of triangle FAD cuts the middle and first parallel planes in GE and AD; therefore GE is parallel to AD. [11.3, 11.16]
+
+**Step 5.** In triangle ACF, BG parallel to CF gives AB:BC = AG:GF. In triangle FAD, GE parallel to AD gives DE:EF = AG:GF. [6.2]
+
+**Step 6.** Ratios equal to the same ratio are equal to one another; hence AB:BC = DE:EF. Since the three parallel planes were arbitrary, the two straight lines are cut by the parallel planes in the same ratios. [5.11]
+
+**USED:** 11.16, 11.2, 11.3, 5.11, 6.2, P1
+**Human refs (from References field):** 11.16, 5.11, 6.2
+**Jaccard:** 0.500 — AI adds ['11.2', '11.3', 'P1']
+
+## Proposition 11.18
+**Statement:** If a straight line be at right angles to any plane, all the planes through it will also be at right angles to the same plane.
+
+**Step 1.** Let the straight line ℓ be perpendicular to the plane α at O, and let β be any plane through ℓ. The planes α and β meet at O, and their common section is a straight line; call it s. [11.3]
+
+**Step 2.** Since s lies in α and meets ℓ at O, ℓ is perpendicular to s by the definition of a straight line perpendicular to a plane. Let P be any point of s, and let m be any straight line in β drawn through P perpendicular to s; such a perpendicular can be drawn by Proposition 1.11. [D11.3, 1.11]
+
+**Step 3.** If P = O, then m coincides with ℓ. Indeed, if they were distinct, their rays on the same side of s would make with a fixed ray of s two right angles, one properly contained in the other. This contradicts both the equality of all right angles and the fact that the whole is greater than the part. Thus in this case m is perpendicular to α by hypothesis. [P4, CN5]
+
+**Step 4.** If P ≠ O, the straight line s meets the coplanar lines ℓ and m and makes their interior angles on the same side equal to two right angles. Therefore m is parallel to ℓ. We choose this direct parallel-line criterion because the required right angles are already given. Since ℓ is perpendicular to α, its parallel m is also perpendicular to α. [1.28, 11.8]
+
+**Step 5.** Consequently every straight line drawn in β perpendicular to the common section s is perpendicular to α. By the definition of perpendicular planes, β is therefore perpendicular to α. Since β was any plane through ℓ, all planes through a straight line perpendicular to a plane are perpendicular to that same plane. [D11.4]
+
+**USED:** 1.11, 1.28, 11.3, 11.8, CN5, D11.3, D11.4, P4
+**Human refs (from References field):** 1.11, 1.28, 11.8, D11.3, D11.4
+**Jaccard:** 0.625 — AI adds ['11.3', 'CN5', 'P4']
+
+## Proposition 11.19
+**Statement:** If two planes which cut one another be at right angles to any plane, their common section will also be at right angles to the same plane.
+
+**Step 1.** Let α and β be the two intersecting planes, each at right angles to the plane γ. Denote their common section by ℓ, and their respective sections with γ by a and b. These sections are straight lines. Choose a point P on ℓ. [D11.4, 11.3]
+
+**Step 2.** In α construct a straight line u through P perpendicular to a; in β construct a straight line v through P perpendicular to b. If P lies in γ, it lies on both a and b, so use the construction of a perpendicular at a point on a line. Otherwise, use the construction of a perpendicular from a point outside a line, separately in each plane. [1.11, 1.12]
+
+**Step 3.** Since α is at right angles to γ and u is perpendicular to their common section a, u is perpendicular to γ. Likewise, since β is at right angles to γ and v is perpendicular to their common section b, v is perpendicular to γ. [D11.4]
+
+**Step 4.** Use the parallelism of perpendiculars to one plane: this route does not require first establishing where ℓ meets γ. If u and v were distinct, they would be parallel, since both are perpendicular to γ. Parallel straight lines do not meet, whereas u and v both pass through P. Therefore u and v are the same straight line. [11.6, D1.23]
+
+**Step 5.** This coincident straight line lies in both α and β, so it is their common section ℓ. Since it is perpendicular to γ by Step 3, the common section of the two given planes is at right angles to γ, as required. [11.3, D11.4]
+
+**USED:** 1.11, 1.12, 11.3, 11.6, D1.23, D11.4
+**Human refs (from References field):** 11.13, D11.4
+**Jaccard:** 0.143 — AI adds ['1.11', '1.12', '11.3', '11.6', 'D1.23']; Human adds ['11.13']
+
+## Proposition 11.20
+**Statement:** If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.
+
+**Step 1.** Let A be the vertex of the solid angle, and let AB, AC, AD be its three noncoplanar edges. Single out ∠BAC as the angle to be exceeded; we shall prove ∠BAD + ∠DAC > ∠BAC. If ∠BAD ≥ ∠BAC, this follows immediately, since adding the positive angle ∠DAC makes the sum greater. We therefore suppose ∠BAD < ∠BAC. [D11.11, CN5]
+
+**Step 2.** Choose points B and C on the first two edges and join BC. In the plane of AB and AC, construct a ray from A inside ∠BAC making with AB an angle equal to ∠BAD. Let this ray meet BC at E. Thus E lies between B and C, and ∠BAE = ∠BAD. [P1, 11.2, 1.23]
+
+**Step 3.** On the third edge take D so that AD = AE, producing the edge first if necessary, and join BD and CD. In triangles ABD and ABE, AB is common, AD = AE, and ∠BAD = ∠BAE. Hence BD = BE. [P2, 1.3, P1, 1.4]
+
+**Step 4.** Since the three edges are noncoplanar, D is outside the plane ABC, so BCD is a nondegenerate triangle. This triangle lies in a plane, and its two sides BD and DC together exceed BC. Consequently,
+BD + DC > BC = BE + EC.
+Using BD = BE and removing the equal common parts gives DC > EC. [D11.11, 11.2, 1.20, CN3, CN5]
+
+**Step 5.** Compare triangles DAC and EAC. They have DA = EA and AC common, while DC > EC. Proposition 1.25 applies directly to these two equal side-pairs and unequal third sides; therefore ∠DAC > ∠EAC. This is the required angle comparison obtained from the preceding side comparison. [1.25]
+
+**Step 6.** Add the equal angles ∠BAD and ∠BAE to the respective sides of this inequality. Since AE lies inside ∠BAC,
+∠BAD + ∠DAC > ∠BAE + ∠EAC = ∠BAC.
+The angle singled out as ∠BAC was arbitrary. Therefore any two of the three plane angles containing the solid angle, taken together in any manner, are greater than the remaining one. [CN2, CN5]
+
+**USED:** 1.20, 1.23, 1.25, 1.3, 1.4, 11.2, CN2, CN3, CN5, D11.11, P1, P2
+**Human refs (from References field):** 1.20, 1.25, 1.4
+**Jaccard:** 0.250 — AI adds ['1.23', '1.3', '11.2', 'CN2', 'CN3', 'CN5', 'D11.11', 'P1', 'P2']
+
+## Proposition 11.21
+**Statement:** Any solid angle is contained by plane angles less than four right angles.
+
+**Step 1.** Let the given solid angle have vertex O and n bounding plane angles. Cut it by a transverse plane, meeting its successive edges at A₁,…,Aₙ and forming a convex polygon. Its sides are the intersections of the cutting plane with the faces. Indices below are cyclic. We use the three-angle inequality of 11.20 at the section vertices, since it directly supplies the comparison needed for any number of faces. [D11.11, 11.3, 11.20]
+
+**Step 2.** Write R for a right angle and αᵢ = ∠Aᵢ₋₁AᵢAᵢ₊₁ for the interior angles of the section. Draw the diagonals from A₁, dividing the section into n−2 triangles. Their angles together constitute exactly the interior angles of the polygon. Since each triangle has angle sum 2R,
+Σαᵢ = 2(n−2)R. [P1, 1.32, CN2]
+
+**Step 3.** At each Aᵢ, the three rays AᵢO, AᵢAᵢ₋₁, and AᵢAᵢ₊₁ form a solid angle contained by three plane angles. Hence
+∠Aᵢ₋₁AᵢO + ∠OAᵢAᵢ₊₁ > αᵢ.
+Let B be the sum of the two angles on the left over all section vertices. Adding these strict inequalities gives
+B > Σαᵢ = 2(n−2)R. [11.20, CN2, CN5]
+
+**Step 4.** Let Φ = Σ∠AᵢOAᵢ₊₁, the sum of the plane angles containing the given solid angle. The n lateral triangles OAᵢAᵢ₊₁ have, collectively, angle sum Φ+B. Applying the triangle-angle sum to each gives
+Φ+B = 2nR. [1.32, CN2]
+
+**Step 5.** By Step 3, write B = 2(n−2)R+E, where E is a positive angular excess. Substitute this in Step 4 and subtract 2(n−2)R from both sides. Then
+Φ+E = 4R.
+Since the whole exceeds its proper part, Φ < 4R. Thus any solid angle is contained by plane angles whose sum is less than four right angles. [CN3, CN5]
+
+**USED:** 1.32, 11.20, 11.3, CN2, CN3, CN5, D11.11, P1
+**Human refs (from References field):** 1.32, 11.20
+**Jaccard:** 0.250 — AI adds ['11.3', 'CN2', 'CN3', 'CN5', 'D11.11', 'P1']
+
+## Proposition 11.22
+**Statement:** If there be three plane angles of which two, taken together in any manner, are greater than the remaining one, and they are contained by equal straight lines, it is possible to construct a triangle out of the straight lines joining the extremities of the equal straight lines.
+
+**Step 1.** Let the three given angles be α = ∠AOB, β = ∠DPE, and γ = ∠FQG, with OA = OB = PD = PE = QF = QG. Join AB, DE, and FG, and denote their lengths by a, b, and c respectively. Relabel the angles so that α is greatest. We take the direct route of establishing the triangle inequalities and applying 1.22; the equal containing sides make 1.24 the natural comparison theorem. [P1, 1.22, 1.24]
+
+**Step 2.** Since α ≥ β and α ≥ γ, comparison of the corresponding triangles gives a ≥ b and a ≥ c: use 1.24 when the angles are unequal, and 1.4 when they are equal. Consequently a + b > c and a + c > b, since each sum is greater than its part a. It remains only to prove b + c > a. [1.24, 1.4, CN5]
+
+**Step 3.** If α = β, then a = b by 1.4, and hence b + c > a. Thus all three inequalities already hold in this case. For the remaining case, suppose α > β. [1.4, CN5]
+
+**Step 4.** Describe the circle with centre O and radius OA; B also lies on it because OB = OA. Inside ∠AOB construct a ray OR such that ∠AOR = β, and take R at its intersection with this circle. Join AR and BR. Then OR = OA = OB, and A, R, B are distinct. They are not collinear: otherwise one would lie between the other two, whereas 3.2 places the interior of their joining chord inside the circle, not on its circumference. Thus ARB is a triangle. [P3, D1.15, 1.23, P1, 3.2]
+
+**Step 5.** Triangles AOR and DPE have two corresponding sides equal and their included angles equal, so AR = DE = b. Moreover, ∠ROB = α − β. The hypothesis β + γ > α therefore gives γ > ∠ROB. Comparing triangles FQG and ROB, whose containing sides are respectively equal, gives FG > RB, or c > RB. Finally, in triangle ARB, AR + RB > AB. Hence b + c > AR + RB > a, as required. [1.4, 1.24, 1.20]
+
+**Step 6.** In either case, a + b > c, a + c > b, and b + c > a. Therefore 1.22 constructs a triangle whose sides are equal to AB, DE, and FG, the straight lines joining the extremities of the given equal straight lines. This is the required construction. [1.22]
+
+**USED:** 1.20, 1.22, 1.23, 1.24, 1.4, 3.2, CN5, D1.15, P1, P3
+**Human refs (from References field):** 1.24, 1.4
+**Jaccard:** 0.200 — AI adds ['1.20', '1.22', '1.23', '3.2', 'CN5', 'D1.15', 'P1', 'P3']
+
+## Proposition 11.23
+**Statement:** To construct a solid angle out of three plane angles two of which, taken together in any manner, are greater than the remaining one: thus the three angles must be less than four right angles.
+
+**Step 1.** Let R denote a right angle, and let the given plane angles be α, β, γ, each strictly between 0 and 2R. We have α + β > γ, β + γ > α, γ + α > β, and require α + β + γ < 4R. This last restriction is necessary by 11.21. We use a direct construction: intersect two chords in a plane, then erect a perpendicular to that plane at their intersection. [11.21]
+
+**Step 2.** Describe a circle Γ with centre O and any radius r in a plane Π, and choose B on it. Choose an orientation around O. Construct points C, D, F on Γ such that OC follows OB through α, OD follows OB through β, and OF follows OC through γ. Thus ∠BOC = α, ∠BOD = β, and ∠COF = γ. Measured in the chosen direction from OB, the directions of OD and OF are β and α + γ respectively. [P3, D1.15, 1.23]
+
+**Step 3.** Drop perpendiculars DP and FQ to the full straight lines OB and OC respectively. Produce DP beyond P to E with PE = PD, and FQ beyond Q to G with QG = QF. Thus E is the reflection of D in OB, and G the reflection of F in OC. The corresponding right triangles are congruent by 1.4, so OE = OD = r and OG = OF = r; if a foot is O, these equalities follow immediately from the construction. Hence E and G also lie on Γ. The reflected directions are −β and α − γ respectively; when a foot lies on the opposite ray, the same assertion follows by taking supplementary angles. [1.12, P2, 1.3, 1.4, 1.13]
+
+**Step 4.** The hypotheses give
+−β < α − γ < β,
+and
+β < α + γ < 4R − β.
+A complete turn is 4R. Consequently G lies on the open arc from E to D containing B, while F lies on the complementary open arc from D to E. Thus the endpoints of chords DE and FG alternate around Γ. The chords therefore intersect at a point X in both open segments. In particular, X lies strictly inside Γ. [1.13, 3.2]
+
+**Step 5.** If X ≠ O, draw through X a perpendicular to OX in Π, meeting Γ at H, and put h = XH. Since X is inside Γ, h > 0. If X = O, put h = r instead. Erect XA perpendicular to Π and take XA = h. Join A to O, B, and C. When X ≠ O, the right triangles OXA and OXH have OX common and XA = XH, so 1.4 gives OA = OH = r. When X = O, OA = XA = r directly. Thus in every case OA = r, and A is outside Π. [1.11, 11.12, 1.3, P1, D11.3, 1.4]
+
+**Step 6.** We show that AB = BD and AC = CF. Since OP and BP lie on the line perpendicular to DE at P, and AX is perpendicular to Π, repeated application of 1.47 gives
+AB² = AX² + BX²
+= (r² − OX²) + (BP² + PX²)
+= (OP² + PD²) − (OP² + PX²) + BP² + PX²
+= PD² + BP²
+= BD².
+Thus AB = BD. These identities remain immediate if P coincides with O or X, with the corresponding zero segment omitted. Replacing B, D, P by C, F, Q gives, in exactly the same way,
+AC² = (OQ² + QF²) − (OQ² + QX²) + CQ² + QX² = CF²,
+so AC = CF. [D11.3, 1.47, CN2, CN3]
+
+**Step 7.** Apply 1.8, the side–side–side result, since the construction has supplied the three corresponding side equalities. In triangles AOB and DOB, OA = OD, OB is common, and AB = DB; therefore ∠AOB = ∠DOB = β. Likewise, in triangles AOC and FOC, OA = OF, OC is common, and AC = FC; therefore ∠AOC = ∠FOC = γ. Also ∠BOC = α by construction. Since OB and OC are noncollinear in Π while A lies outside Π, the three rays OA, OB, OC form a solid angle. Its three containing plane angles are precisely α, β, γ. The required solid angle has therefore been constructed. [1.8, D11.11]
+
+**USED:** 1.11, 1.12, 1.13, 1.23, 1.3, 1.4, 1.47, 1.8, 11.12, 11.21, 3.2, CN2, CN3, D1.15, D11.11, D11.3, P1, P2, P3
+**Human refs (from References field):** 1.25, 1.29, 1.4, 1.47, 1.8, 11.12, 11.22, 5.16, 6.2, 6.4
+**Jaccard:** 0.160 — AI adds ['1.11', '1.12', '1.13', '1.23', '1.3', '11.21', '3.2', 'CN2', 'CN3', 'D1.15', 'D11.11', 'D11.3', 'P1', 'P2', 'P3']; Human adds ['1.25', '1.29', '11.22', '5.16', '6.2', '6.4']
+
+## Proposition 11.24
+**Statement:** If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.
+
+**Step 1.** Let the solid be ABCD–EFGH, with opposite face-pairs ABCD and EFGH, ABFE and DCGH, and ADHE and BCGF lying in parallel planes. The parallel planes ABFE and DCGH, cut by the plane ABCD, give AB ∥ DC; likewise, the parallel planes ADHE and BCGF, cut by ABCD, give AD ∥ BC. Thus ABCD is a parallelogram. Applying the same argument in each of the other faces proves that every face is parallelogrammic. [11.16]
+
+**Step 2.** Consider the opposite faces ABCD and EFGH. Since the side faces ABFE and ADHE are parallelograms, their opposite sides give AB = EF and AD = EH. They also give AB ∥ EF and AD ∥ EH, with the corresponding sides directed from A and E in the same respective directions. [1.34; Step 1]
+
+**Step 3.** The intersecting straight lines AB and AD are respectively parallel to the intersecting straight lines EF and EH, which lie in the other plane. Therefore ∠BAD = ∠FEH. [11.10]
+
+**Step 4.** Join BD and FH. We use side-angle-side directly, since the side-face parallelograms have supplied the two equal sides and Step 3 has supplied their equal included angles. Hence triangles BAD and FEH are equal: AB = EF, AD = EH, and ∠BAD = ∠FEH. [P1, 1.4]
+
+**Step 5.** The diagonal BD bisects the parallelogram ABCD, and FH bisects the parallelogram EFGH. Consequently these parallelograms are doubles of the equal triangles BAD and FEH, and are therefore equal. The chosen pair of opposite faces was arbitrary, so the same argument gives ABFE equal to DCGH and ADHE equal to BCGF. Thus the opposite planes bounding the solid are equal and parallelogrammic, as required. [1.34, CN2]
+
+**USED:** 1.34, 1.4, 11.10, 11.16, CN2, P1
+**Human refs (from References field):** 1.34, 1.4, 11.10, 11.16
+**Jaccard:** 0.667 — AI adds ['CN2', 'P1']
+
+## Proposition 11.25
+**Statement:** If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.
+
+**Step 1.** Let the parallelepiped have base ABCD and opposite face A′B′C′D′. Let the cutting plane, parallel to the opposite faces ADD′A′ and BCC′B′, meet AB, DC, A′B′, D′C′ at E, F, E′, F′ respectively. Its intersections with the lateral faces are parallel to their corresponding end edges. Thus the two resulting solids, S and T, are parallelepipeds with respective bases U = AEFD and V = EBCF. We must prove U : V = S : T. [11.16, 11.24]
+
+**Step 2.** We use the equimultiple definition of equal ratios directly, since repeated pieces can be compared by containment in one continued parallelepiped. Prolong the four edges AB, DC, A′B′, D′C′ in their forward directions. At any point of the prolonged AB, draw in the two adjacent lateral planes parallels to AD and AA′. The plane through these intersecting parallels is parallel to ADD′A′ and supplies another end section of the continued parallelepiped. [D5.5, P2, 1.31, 11.15]
+
+**Step 3.** All these end sections are equal and similar. Indeed, between any two sections the lateral faces are parallelograms, so corresponding sides of the sections are equal; their corresponding angles are equal because their sides are respectively parallel. Dividing the sections along corresponding diagonals and applying side-angle-side therefore gives equal corresponding triangles. Likewise, whenever two pieces occupy equal intervals on the prolonged AB, their corresponding longitudinal faces have equal adjacent sides and equal included angles, and hence are equal and similar. Such pieces consequently have six corresponding equal and similar faces, and are equal solids. Their corresponding bottom faces are equal as well. [11.24, 1.34, 11.10, 1.29, 1.4, D11.10]
+
+**Step 4.** Let m and n be any positive integers. Starting at A on the ray AB, lay off m successive intervals each equal to AE, ending at M. Independently, starting again at A, lay off n successive intervals each equal to EB, ending at N. The necessary lengths can be cut off after extending the ray sufficiently. Construct the parallel sections at all division points as in Step 2. Let Sₘ and Tₙ be the solids between the section at A and the sections at M and N respectively, and let their bottom faces be Uₘ and Vₙ. [P2, 1.3, 1.31, 11.15]
+
+**Step 5.** By Step 3, each of the m pieces making up Sₘ equals S, and each of its bottom faces equals U. Similarly, each of the n pieces making up Tₙ equals T, and each of its bottom faces equals V. Adding these equal pieces gives
+Uₘ = mU,  Sₘ = mS,  Vₙ = nV,  Tₙ = nT.
+Thus Uₘ and Sₘ are corresponding equimultiples, as are Vₙ and Tₙ. [D11.10, CN2, D5.2]
+
+**Step 6.** Compare M and N on the same ray. If M lies beyond N, then Vₙ is a proper part of Uₘ, and Tₙ is a proper part of Sₘ; hence both former magnitudes exceed their corresponding latter magnitudes. If M = N, the two bottom faces coincide, and the two solids coincide, so both pairs are equal. If M lies before N, the containments reverse, and both former magnitudes fall short. Therefore mU exceeds, equals, or falls short of nV precisely as mS exceeds, equals, or falls short of nT. [CN5, CN4]
+
+**Step 7.** Since m and n were arbitrary, the equimultiple definition of equal ratios gives U : V = S : T. Therefore, when a parallelepipedal solid is cut by a plane parallel to a pair of opposite faces, as the base is to the base, so is the solid to the solid. [D5.5]
+
+**USED:** 1.29, 1.3, 1.31, 1.34, 1.4, 11.10, 11.15, 11.16, 11.24, CN2, CN4, CN5, D11.10, D5.2, D5.5, P2
+**Human refs (from References field):** 11.24, D5.5
+**Jaccard:** 0.125 — AI adds ['1.29', '1.3', '1.31', '1.34', '1.4', '11.10', '11.15', '11.16', 'CN2', 'CN4', 'CN5', 'D11.10', 'D5.2', 'P2']
+
+## Proposition 11.26
+**Statement:** On a given straight line, and at a given point on it, to construct a solid angle equal to a given solid angle.
+
+**Step 1.** Let the given straight line be g and the given point on it be A. Let the given solid angle have vertex O and bounding rays OX, OY, OZ₃, …, OZₘ, in their boundary order, with OX and OY bounding one face. Denote their plane by π, and choose a plane π′ through g. We use the direct construction of copying this face and then reproducing the perpendicular heights of the remaining bounding rays; thus one bounding ray can be placed on g from the outset. [D11.11, 11.2]
+
+**Step 2.** Choose points X, Y, and Zᵢ different from O on their respective rays. For each Zᵢ outside π, draw ZᵢHᵢ perpendicular to π, with Hᵢ in π. Record on which side of π the point Zᵢ lies. If a Zᵢ lies in π, put Hᵢ = Zᵢ. [11.11]
+
+**Step 3.** Choose one direction along g from A, and on that ray mark B so that AB = OX. In π′ construct AC so that ∠BAC = ∠XOY, and mark C so that AC = OY. Copy every Hᵢ into π′ as follows: when Hᵢ is not on the straight line OX, construct AKᵢ making with AB an angle equal to ∠XOHᵢ, on the side corresponding to the side of OX containing Hᵢ, and take AKᵢ = OHᵢ. When Hᵢ lies on OX, place Kᵢ on the corresponding direction of the full line AB at the same distance from A; if Hᵢ = O, put Kᵢ = A. These constructions use copied angles and equal lengths, producing straight lines as necessary. [1.23, P2, 1.3]
+
+**Step 4.** The planar configuration O, X, Y, H₃, …, Hₘ is congruent to A, B, C, K₃, …, Kₘ. Indeed, triangles OXY and ABC have two corresponding sides and their included angle equal; the same is true of triangles OXHᵢ and ABKᵢ whenever Hᵢ is not on OX. We use the side-angle-side criterion here because these are precisely the data copied in Step 3. The consistent choices of sides ensure that one planar superposition places Y on C and every noncollinear Hᵢ on Kᵢ; the collinear points also coincide because their distances and directions were copied. Fix this superposition, including the resulting correspondence between the two sides of π and π′. [1.4]
+
+**Step 5.** For each Zᵢ outside π, erect at Kᵢ a perpendicular to π′. On its ray on the corresponding side of π′, mark Wᵢ so that KᵢWᵢ = HᵢZᵢ. For each Zᵢ in π, put Wᵢ = Kᵢ. Draw AWᵢ. The rays AB, AC, AW₃, …, AWₘ, in the corresponding boundary order, form a solid angle: at least one Wᵢ is outside π′, since the original bounding rays were not all coplanar. [11.12, P2, 1.3, P1, D11.11]
+
+**Step 6.** Superpose the original planar configuration on its copy as in Step 4. Each Hᵢ then coincides with Kᵢ. For a Zᵢ outside π, the perpendicular ray HᵢZᵢ consequently becomes a perpendicular to π′ at Kᵢ, on the same side as KᵢWᵢ. These rays coincide, since two distinct perpendiculars cannot be erected at the same point of a plane on the same side. Their equal lengths therefore place Zᵢ on Wᵢ. Points Zᵢ lying in π already coincide with their copies. Hence all corresponding bounding rays and face angles coincide, so the solid angles are equal. Thus a solid angle equal to the given solid angle has been constructed at A with a bounding ray on the given straight line g, as required. [11.13, CN4]
+
+**USED:** 1.23, 1.3, 1.4, 11.11, 11.12, 11.13, 11.2, CN4, D11.11, P1, P2
+**Human refs (from References field):** 1.23, 1.4, 1.8, 11.11, 11.12, D11.3
+**Jaccard:** 0.308 — AI adds ['1.3', '11.13', '11.2', 'CN4', 'D11.11', 'P1', 'P2']; Human adds ['1.8', 'D11.3']
+
+## Proposition 11.27
+**Statement:** On a given straight line to describe a parallelepipedal solid similar and similarly situated to a given parallelepipedal solid.
+
+**Step 1.** Let AB be the given straight line, and let O be a vertex of the given parallelepipedal solid, with OX, OY, OZ its three incident edges. Its faces are parallelograms, since the solid is contained by parallel planes. We shall make AB correspond to OX. [11.24]
+
+**Step 2.** At A, on AB, construct a solid angle equal to the solid angle at O, with its other two edges along rays AC and AD, corresponding respectively to OY and OZ. Thus
+∠BAC = ∠XOY, ∠CAD = ∠YOZ, and ∠DAB = ∠ZOX.
+The direct construction of 11.26 is the natural route here, because the datum is already a solid angle to be copied. Choose the correspondence of its faces in the same order as in the given solid. [11.26]
+
+**Step 3.** Find a fourth proportional to OX, OY, AB, and lay off that length as AC on its ray. Next find a fourth proportional to OY, OZ, AC, and lay it off as AD on its ray. Then
+OX : OY = AB : AC,
+OY : OZ = AC : AD.
+Consequently, ex aequali,
+OX : OZ = AB : AD.
+The points C and D therefore give the required proportional lengths on the two remaining edges of the copied solid angle. [6.12, 1.3, 5.22]
+
+**Step 4.** Complete the parallelepiped on the three edges AB, AC, AD. Explicitly, through B draw a plane parallel to ACD, through C a plane parallel to ABD, and through D a plane parallel to ABC. Each such plane is constructed by drawing through its specified point two lines parallel to the two intersecting edges of the corresponding plane; the plane through those lines is parallel to that plane. Together with ABC, ABD, ACD, these three planes enclose the required parallelepipedal solid, say P. Its faces are parallelograms, and corresponding edges of opposite faces are parallel, being sections of parallel planes by a face-plane. [1.31, 11.15, 11.24, 11.16]
+
+**Step 5.** Consider the face of P containing AB and AC and the face of the given solid containing OX and OY. Their angles at A and O are equal by Step 2, and the sides containing those angles are proportional by Step 3. In each parallelogram the opposite sides and angles are equal, while adjacent angles are supplementary. Thus all corresponding angles of these two faces are equal, and their corresponding sides are proportional; the faces are therefore similar. The same reasoning applies to the faces containing AC, AD and OY, OZ, and to those containing AB, AD and OX, OZ. Hence the three faces at A are respectively similar to the three faces at O. [1.29, 1.34, D6.1]
+
+**Step 6.** In either solid, corresponding sides of opposite faces are equal: each pair is a pair of opposite sides of an intervening parallelogram face. Their corresponding angles are also equal, since the corresponding bounding lines are parallel. Therefore, in each of the three remaining pairs of corresponding faces of the two solids, the angles and side proportions are the same as in the corresponding pair already considered in Step 5. These remaining faces are consequently similar as well. [1.34, 11.10, D6.1]
+
+**Step 7.** The two solids are thus contained by six respectively similar faces, and so they are similar solid figures. Moreover, the correspondence OX ↔ AB, OY ↔ AC, OZ ↔ AD preserves the copied solid angle and the order of its faces; the parallel completion preserves that correspondence throughout the solids. They are therefore similarly situated. Hence on the given straight line AB we have described a parallelepipedal solid similar and similarly situated to the given parallelepipedal solid, as required. [D11.9, 11.26, 11.15]
+
+**USED:** 1.29, 1.3, 1.31, 1.34, 11.10, 11.15, 11.16, 11.24, 11.26, 5.22, 6.12, D11.9, D6.1
+**Human refs (from References field):** 5.22, 6.12, D11.9
+**Jaccard:** 0.231 — AI adds ['1.29', '1.3', '1.31', '1.34', '11.10', '11.15', '11.16', '11.24', '11.26', 'D6.1']
+
+## Proposition 11.28
+**Statement:** If a parallelepipedal solid be cut by a plane through the diagonals of the opposite planes, the solid will be bisected by the plane.
+
+**Step 1.** Let the opposite faces of the parallelepiped be ABCD and EFGH, with joining edges AE, BF, CG, DH, and let the cutting plane pass through the diagonals AC and EG. Its section is ACGE. By [11.24], the faces of the solid are parallelograms, and opposite faces are equal. We shall compare the bounding faces of the two pieces directly, using the criterion in [D11.10].
+
+**Step 2.** Opposite faces are also similar. Indeed, their corresponding sides are parallel and equal: these are opposite sides of the intervening parallelogram faces, so their equality follows from [1.34]. Their corresponding angles are equal by [11.10], since the sides containing those angles are respectively parallel. Thus their corresponding angles are equal and their corresponding sides proportional, which gives similarity by [D6.1]. Together with [11.24], this shows in particular that ABFE and CDHG are equal and similar, and that BCGF and DAEH are equal and similar.
+
+**Step 3.** In parallelogram ABCD, we have AB = CD, BC = DA, and angle ABC equal to angle CDA, by [1.34]. Hence triangles ABC and CDA are equal and have their remaining corresponding angles equal, by [1.4]. Their corresponding sides are equal, the third side AC being common, so they are also similar by [D6.1]. The same argument in parallelogram EFGH shows that triangles EFG and GHE are equal and similar. Here [1.4] is the direct choice because [1.34] already supplies two equal sides and their included equal angles.
+
+**Step 4.** The cutting plane divides the solid into two pieces whose bounding faces are, respectively,
+
+• triangle ABC, triangle EFG, ABFE, BCGF, and ACGE;
+
+• triangle CDA, triangle GHE, CDHG, DAEH, and ACGE.
+
+The first two pairs are equal and similar by Step 3; the next two pairs are equal and similar by Step 2; and the last face is common. Thus the two pieces are contained by similar plane figures equal in multitude and in magnitude. They are therefore equal and similar solids by [D11.10]. Consequently, the given plane bisects the parallelepipedal solid, as required.
+
+**USED:** 1.34, 1.4, 11.10, 11.24, D11.10, D6.1
+**Human refs (from References field):** 1.34, D11.10
+**Jaccard:** 0.333 — AI adds ['1.4', '11.10', '11.24', 'D6.1']
+
+## Proposition 11.29
+**Statement:** Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal to one another.
+
+**Step 1.** Let the common base be the parallelogram ABCD. Write the two solids as S = ABCD–EFGH and T = ABCD–E′F′G′H′, with the upper vertices corresponding respectively to A, B, C, D. Label them so that E, F, E′, F′ lie on one of the straight lines specified in the hypothesis, and H, G, H′, G′ on the other. The faces are parallelograms, and consequently the segments AB, EF, E′F′, DC, HG, H′G′ are equal, parallel, and similarly directed. Likewise, EH and E′H′ are equal and parallel to AD. [11.24, 1.34]
+
+**Step 2.** If E = E′, the equal and similarly directed upper edges make all corresponding upper vertices coincide; the solids then coincide and are equal. Otherwise, interchange S and T if necessary so that E′ lies from E in the direction EF. Since EF and E′F′ are equal and similarly directed, F′ lies beyond F in that direction. Moreover, applying the theorem about joining the corresponding extremities of equal parallel segments to EH and E′H′ shows that EE′ and HH′ are equal and similarly directed; thus the same ordering holds on the other upper line. We use a common containing solid and cancel congruent end prisms, so no overlap of the two upper faces need be assumed. [1.34, 1.33, CN4]
+
+**Step 3.** Form the containing solid W whose front and back faces are the quadrilaterals ABF′E and DCG′H. Its other four faces are ABCD, EF′G′H, AEHD, and BF′G′C. These faces fit together by the parallelism and equality of the corresponding edges established above.
+
+Inside W, let P be the triangular prism with triangular ends AEE′ and DHH′, and let Q be the triangular prism with triangular ends BFF′ and CGG′. Cutting W along the face AE′H′D separates P from T; cutting it along BFGC separates Q from S. Hence removing P from W leaves T, while removing Q from W leaves S. This description holds whether E′ is between E and F or beyond F; P and Q themselves need not be disjoint. [11.24, 1.34]
+
+**Step 4.** Superpose P upon Q by moving it parallel to AB through the distance AB, without turning it. The equal, parallel, similarly directed segments
+AB, EF, E′F′, DC, HG, H′G′
+show respectively that A falls on B, E on F, E′ on F′, D on C, H on G, and H′ on G′. Thus every face of P falls on the corresponding face of Q, and the two prisms coincide. Therefore P = Q. This explicit coincidence establishes the equality needed for cancellation directly. [11.24, 1.34, CN4]
+
+**Step 5.** Subtract the equal prisms P and Q separately from the same solid W. The remainders are equal; by Step 3 they are T and S. Therefore the two parallelepipedal solids on the same base, of the same height, and with the specified upper extremities on the same straight lines are equal to one another. [CN3]
+
+**USED:** 1.33, 1.34, 11.24, CN3, CN4
+**Human refs (from References field):** 1.34, 1.36, 1.4, 1.8
+**Jaccard:** 0.125 — AI adds ['1.33', '11.24', 'CN3', 'CN4']; Human adds ['1.36', '1.4', '1.8']
+
+## Proposition 11.30
+**Statement:** Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal to one another.
+
+**Step 1.** Let the two solids be S = ABCD–EFGH and T = ABCD–KLMN, with common base ABCD; let E and K correspond to A, F and L to B, G and M to C, and H and N to D. Since the solids stand above the same base and have equal heights, their opposite faces EFGH and KLMN lie in the same plane π, parallel to the base. The faces are parallelograms, so their corresponding edges are equal and parallel to the corresponding base edges. Consequently EF, GH, KL, MN have the direction of AB, while EH, FG, KN, LM have the direction of AD. [11.24, 1.34, 11.9]
+
+**Step 2.** We take the direct route through XI.29: construct an intermediate solid whose upper extremities are aligned with those of S in one direction and with those of T in the other. Produce the upper edges as necessary, and in π set
+X = EF ∩ KN,  Y = EF ∩ LM,
+Z = GH ∩ LM,  W = GH ∩ KN.
+Each intersection exists because the two lines have the distinct directions of adjacent sides of the base. Thus XYZW is a parallelogram. [P2, 11.29]
+
+**Step 3.** The quadrilateral KLYX is a parallelogram, so XY = KL = AB. Likewise EXWH is a parallelogram, so XW = EH = AD. If either pair of compared segments coincides, its equality is immediate. Together with the parallelisms already established and opposite-side equality in ABCD and XYZW, this shows that every side of XYZW is equal and parallel to its corresponding side of ABCD, with corresponding directions agreeing. [1.34]
+
+**Step 4.** Join AX, BY, CZ, and DW, forming R = ABCD–XYZW. Each pair of corresponding base and upper edges lies in one plane; the lines joining their corresponding extremities are equal and parallel. Hence the lateral faces of R are parallelograms. Their opposite planes are parallel, because each contains two intersecting lines respectively parallel to two intersecting lines in the other. Thus R is a parallelepipedal solid. Its base is ABCD, and its opposite face lies in π, so it has the same height as S and T. [P1, 11.7, 1.33, 11.15]
+
+**Step 5.** Compare S and R. Their upper extremities E, F, X, Y lie on the same straight line EF, and G, H, Z, W lie on the same straight line GH. They also have the same base and height. Therefore S = R by the aligned-extremities proposition. [11.29]
+
+**Step 6.** Compare T and R, using the other direction. Their upper extremities K, N, X, W lie on KN, and L, M, Y, Z lie on LM. Again their base and height are the same. Therefore T = R. [11.29]
+
+**Step 7.** Since S and T are each equal to R, they are equal to one another. Therefore parallelepipedal solids on the same base and of the same height are equal also when the extremities of their standing sides are not on the same straight lines. [CN1]
+
+**USED:** 1.33, 1.34, 11.15, 11.24, 11.29, 11.7, 11.9, CN1, P1, P2
+**Human refs (from References field):** 11.29
+**Jaccard:** 0.100 — AI adds ['1.33', '1.34', '11.15', '11.24', '11.7', '11.9', 'CN1', 'P1', 'P2']
+
+## Proposition 11.31
+**Statement:** Parallelepipedal solids which are on equal bases and of the same height are equal to one another.
+
+**Step 1.** Let P and Q be the given parallelepipedal solids, with equal bases and common height h. Their opposite faces are equal parallelograms (11.24). First replace each solid by a right parallelepiped on its own base, with its upper face in the original upper-face plane. To construct this replacement, erect perpendiculars to the base plane at its vertices (11.12). These perpendiculars are parallel (11.6), and the upper edges are parallel to the corresponding base edges by the parallel-plane section theorem (11.16). The replacement therefore has the same base and height as the original. For their equality, use 11.29 when the upper endpoints lie on the same straight lines, and 11.30 only in the complementary arrangement. Thus P and Q are respectively equal to right parallelepipeds P₀ and Q₀. This is our first reduction: change the inclination of the standing edges without changing either base.
+
+**Step 2.** Consider P₀, and name its base ABCD in order and its upper vertices A′B′C′D′. In the base plane draw AF perpendicular to AB, meeting the line DC at F; through B draw a parallel to AF, meeting DC at E (1.11, 1.31). Since AB is parallel to FE, ABEF is a rectangle (1.29). The parallelograms ABCD and ABEF have the same base AB and lie between the same parallels AB and DC, so they are equal (1.35). Erect the right parallelepiped S on ABEF up to the same upper-face plane, by the construction in Step 1.
+
+**Step 3.** Regard P₀ and S as standing on their common lateral face ABB′A′. Their opposite faces lie in the same plane: the plane through DC and D′C′. Moreover, the endpoints opposite A and B lie on the common line DC, while those opposite A′ and B′ lie on the common line D′C′. Hence 11.29 applies directly and gives P₀ = S; its same-lines hypothesis is explicit here, so 11.30 is not needed for this comparison. Since ABEF is rectangular and the standing edges are perpendicular to it, S is a rectangular parallelepiped. Perform the same construction on Q₀ to obtain a rectangular parallelepiped T equal to Q₀. Consequently P = S and Q = T, and the rectangular bases of S and T are equal, because each equals its corresponding original base (1.35, CN1). Both retain height h.
+
+**Step 4.** Let a, b be the adjacent sides of the base of S, and c, d those of the base of T. Since these bases are equal and equiangular, their sides are reciprocally proportional:
+
+a : c = d : b.  (6.14)
+
+We use 6.14 precisely because the bases are now equal rectangles. Construct an auxiliary rectangular parallelepiped U whose base sides are c, b and whose height is h, using the perpendicular-and-parallel constructions already described. In the following comparisons, congruent copies may be placed as required: right boxes with the same corresponding edge lengths coincide upon superposition and are equal (CN4).
+
+**Step 5.** Place copies of S and U side by side along equal faces with sides b and h, so that their edges of lengths a and c continue one another. Their union is a rectangular parallelepiped, divided by their common face into the two given parts. The dividing plane is parallel to the opposite end planes. Therefore the solids are in the ratio of their horizontal bases (11.25). Those bases are rectangles of common height b and respective bases a and c, so their ratio is a : c (6.1). Thus
+
+S : U = a : c.  (11.25, 6.1)
+
+**Step 6.** Similarly, place copies of T and U side by side along equal faces with sides c and h, so that their edges of lengths d and b continue one another. Again their union is a rectangular parallelepiped cut by a plane parallel to its opposite end planes. Its two horizontal bases have common height c and respective bases d and b. Hence
+
+T : U = d : b.  (11.25, 6.1)
+
+**Step 7.** Combining Steps 4–6 gives S : U = T : U (5.11). Magnitudes having the same ratio to the same magnitude are equal, so S = T (5.9). Since P = S and Q = T, it follows that P = Q (CN1). Therefore parallelepipedal solids on equal bases and of the same height are equal to one another.
+
+**USED:** 1.11, 1.29, 1.31, 1.35, 11.12, 11.16, 11.24, 11.25, 11.29, 11.30, 11.6, 5.11, 5.9, 6.1, 6.14, CN1, CN4
+**Human refs (from References field):** 1.23, 1.35, 11.24, 11.25, 11.29, 11.30, 5.11, 5.7, 5.9, D11.10
+**Jaccard:** 0.350 — AI adds ['1.11', '1.29', '1.31', '11.12', '11.16', '11.6', '6.1', '6.14', 'CN1', 'CN4']; Human adds ['1.23', '5.7', 'D11.10']
+
+## Proposition 11.32
+**Statement:** Parallelepipedal solids which are of the same height are to one another as their bases.
+
+**Step 1.** Let S and T be the given parallelepipedal solids, with bases α and β and the same height h. Write S as ABCD–A′B′C′D′, with α = ABCD. Its faces are parallelograms by XI.24. Divide β by a diagonal into two equal triangles by I.34. We choose the adjacent-parts construction, because XI.25 directly supplies the required ratio when two solids are parts of one parallelepiped. [11.24, 1.34]
+
+**Step 2.** Produce AB beyond B and DC beyond C. By I.44, apply to BC, on the side away from ABCD and in the angle between BC and AB produced, a parallelogram equal to one of the triangles making up β. Apply another parallelogram equal to the other triangle to the opposite side of this new parallelogram, continuing in the same direction and with the same inclination. Their union is a parallelogram BEFC, where E lies on AB produced and F on DC produced. Calling this union γ, addition of the two equalities gives γ = β. [P2, 1.44, CN2]
+
+**Step 3.** Extend S beyond its face BCC′B′, keeping its base and top planes and its lateral planes above AB and DC. Through E, in the extended face ABB′A′, draw a line parallel to BB′. This line and EF determine a plane parallel to the face BCC′B′: indeed, the two intersecting lines are respectively parallel to BB′ and BC. Use this plane as the new end face. The added portion U is therefore a parallelepiped on γ, of height h, and S together with U forms a single parallelepiped W. The shared face BCC′B′ cuts W by a plane parallel to its opposite end faces. The line construction is I.31, and the assertion of parallel planes is XI.15. [1.31, 11.15]
+
+**Step 4.** Apply XI.25 to this cut of W. The bases of its two parts S and U are α and γ; hence
+S : U = α : γ. [11.25]
+
+**Step 5.** The solids U and T have equal bases, since γ = β, and the same height h. Therefore U = T by XI.31. [11.31]
+
+**Step 6.** By V.7, replacing U by the equal solid T and γ by the equal base β preserves the respective ratios. Combining these equalities with Step 4 by V.11 gives
+S : T = α : β.
+Thus parallelepipedal solids of the same height are to one another as their bases. [5.7, 5.11]
+
+**USED:** 1.31, 1.34, 1.44, 11.15, 11.24, 11.25, 11.31, 5.11, 5.7, CN2, P2
+**Human refs (from References field):** 1.45, 11.25, 11.31
+**Jaccard:** 0.167 — AI adds ['1.31', '1.34', '1.44', '11.15', '11.24', '5.11', '5.7', 'CN2', 'P2']; Human adds ['1.45']
+
+## Proposition 11.33
+**Statement:** Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.
+
+**Step 1.** Let S and T be similar parallelepipedal solids. Choose corresponding vertices O and V, with incident edges OA, OB, OC in S and VA₁, VB₁, VC₁ in T. Their faces are parallelograms, and corresponding faces are similar. Hence
+OA:VA₁ = OB:VB₁ = OC:VC₁,
+and the angles between corresponding pairs of these edges are equal. The pair OA, VA₁ may be any chosen pair of corresponding sides. [11.24, D11.9, D6.1]
+
+**Step 2.** On the rays OA, OB, OC mark A′, B′, C′ so that OA′ = VA₁, OB′ = VB₁, and OC′ = VC₁, extending the edges if necessary. By drawing parallels, complete the parallelepipeds having the following three incident edges at O:
+S₀: OA, OB, OC;
+S₁: OA′, OB, OC;
+S₂: OA′, OB′, OC;
+S₃: OA′, OB′, OC′.
+Here S₀ is S. The parallel-line constructions give parallel opposite face planes. We choose this one-edge-at-a-time route because consecutive solids have an available common height, so the equal-height theorem applies directly. [P2, 1.3, 1.31, 11.15, 11.32]
+
+**Step 3.** The three faces of S₃ incident at O have respectively the same adjacent side lengths and included angles as the corresponding faces of T. Divide each such face by the diagonal joining the endpoints of those adjacent sides. The corresponding triangles are equal by side-angle-side; each diagonal bisects its parallelogram, so addition of equal halves gives equal whole faces. Their corresponding sides and angles agree, so these faces are also similar. Opposite faces have equal corresponding side lengths by the parallelogram properties, and equal corresponding angles because their edges are parallel. Thus all six faces of S₃ and T are respectively equal and similar. Consequently S₃ and T are equal and similar solids; in particular, S₃ = T. [1.4, 1.34, CN2, D6.1, 11.10, D11.10]
+
+**Step 4.** Regard S₀ and S₁ as standing on the parallelograms generated respectively by OA, OB and by OA′, OB. Their opposite base planes both pass through C and are parallel to the same base plane, so the solids have the same height. Their bases, regarded as standing on OA and OA′, also have the same height, since their opposite sides lie on the same parallel through B. Therefore
+S₀:S₁ = (base of S₀):(base of S₁) = OA:OA′.
+[11.32, 6.1, 5.11]
+
+**Step 5.** Similarly, take as bases of S₁ and S₂ the parallelograms generated by OA′, OB and by OA′, OB′. The common remaining edge OC gives the solids the same height. Taking OB and OB′ as the bases of these parallelograms, their opposite sides lie on the same parallel through A′, so the parallelograms have the same height. Hence
+S₁:S₂ = OB:OB′.
+[11.32, 6.1, 5.11]
+
+**Step 6.** Finally, take as bases of S₂ and S₃ the parallelograms generated by OA′, OC and by OA′, OC′. The common remaining edge OB′ gives these solids the same height. The base parallelograms, standing on OC and OC′, have the same height because their opposite sides lie on the same parallel through A′. Thus
+S₂:S₃ = OC:OC′.
+[11.32, 6.1, 5.11]
+
+**Step 7.** By Step 1 and the chosen lengths,
+OA:OA′ = OB:OB′ = OC:OC′.
+Consequently Steps 4–6 give
+S₀:S₁ = S₁:S₂ = S₂:S₃ = OA:VA₁.
+The four solids are therefore continuously proportional. By the definition of triplicate ratio, S₀:S₃ is the triplicate ratio of OA:VA₁. Since S₀ = S and S₃ = T, substitution of equal magnitudes gives the same conclusion for S:T. Thus similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides. [5.11, D5.10, 5.7]
+
+**USED:** 1.3, 1.31, 1.34, 1.4, 11.10, 11.15, 11.24, 11.32, 5.11, 5.7, 6.1, CN2, D11.10, D11.9, D5.10, D6.1, P2
+**Human refs (from References field):** 11.24, 11.32, 6.1, D11.10, D5.10
+**Jaccard:** 0.294 — AI adds ['1.3', '1.31', '1.34', '1.4', '11.10', '11.15', '5.11', '5.7', 'CN2', 'D11.9', 'D6.1', 'P2']
+
+## Proposition 11.34
+**Statement:** In equal parallelepipedal solids the bases are reciprocally proportional to the heights; and those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal.
+
+**Step 1.** Let P and Q be the given parallelepipedal solids, with bases B and C and respective heights h and k. Construct a rectangle R equal to B, and denote its adjacent side lengths by a and b. On R construct right rectangular parallelepipeds X and Z with heights h and k respectively, using perpendiculars to the base plane and parallels to complete their faces. These constructions are supplied by 1.45, 11.12, and 1.31. Since P and X have equal bases and the same height, P = X by 11.31. We choose this rectangular replacement so that the equal-height comparison can be applied directly in two orientations.
+
+**Step 2.** With their original bases, Z and Q both have height k. Therefore
+Z : Q = R : C = B : C.
+The first equality is 11.32; the second follows from R = B by 5.7, with the ratios combined by 5.11.
+
+**Step 3.** Now regard the side faces with dimensions a and k, and a and h, as bases of Z and X respectively. Relative to these side faces, both solids have height b: the base edge of length b is perpendicular both to the edge of length a and to the upright edge, and hence is perpendicular to the side-face plane. Here perpendicularity to the upright edge follows from D11.3, and perpendicularity to the side-face plane follows from 11.4.
+
+Let these rectangular side faces be F_k and F_h. By 11.32,
+Z : X = F_k : F_h.
+Taking the sides of lengths k and h as the planar bases of these rectangles, their common planar height is a. Thus 6.1 gives
+F_k : F_h = k : h.
+Consequently, by 5.11,
+Z : X = k : h.
+
+**Step 4.** Suppose first that P = Q. Since P = X, we have X = Q by CN1. Hence Z : Q = Z : X by 5.7. Combining this with Steps 2 and 3 by 5.11 gives
+B : C = k : h.
+Thus the bases of equal parallelepipedal solids are reciprocally proportional to their heights.
+
+**Step 5.** Conversely, suppose that the bases are reciprocally proportional to the heights, so that
+B : C = k : h.
+Steps 2 and 3, together with 5.11, then give
+Z : Q = Z : X.
+Magnitudes to which the same magnitude has the same ratio are equal, so Q = X by 5.9. Since P = X, CN1 gives P = Q. Therefore parallelepipedal solids whose bases are reciprocally proportional to their heights are equal, completing both directions.
+
+**USED:** 1.31, 1.45, 11.12, 11.31, 11.32, 11.4, 5.11, 5.7, 5.9, 6.1, CN1, D11.3
+**Human refs (from References field):** 11.25, 11.29, 11.30, 11.31, 11.32, 5.7, 5.9, 6.1
+**Jaccard:** 0.333 — AI adds ['1.31', '1.45', '11.12', '11.4', '5.11', 'CN1', 'D11.3']; Human adds ['11.25', '11.29', '11.30']
+
+## Proposition 11.35
+**Statement:** If there be two equal plane angles, and on their vertices there be set up elevated straight lines containing equal angles with the original straight lines respectively, if on the elevated straight lines points be taken at random and perpendiculars be drawn from them to the planes in which the original angles are, and if from the points so arising in the planes straight lines be joined to the vertices of the original angles, they will contain, with the elevated straight lines, equal angles.
+
+**Step 1.** Let the equal plane angles be ∠XOY and ∠X′O′Y′, in planes π and π′. Let OP and O′Q be the elevated rays, with their respective inclinations to the original sides equal. Let PH and QK be the given perpendiculars to π and π′. We must prove ∠POH = ∠QO′K. On the ray O′Q take R such that O′R = OP, producing the ray if necessary. We shall transfer the first perpendicular foot by triangle congruence. [P2, 1.3]
+
+**Step 2.** Interchange the two side labels in both configurations if necessary so that H is not on the complete line OX. Choose a transversal through H, not through O, meeting the complete side lines OX and OY at A and B. Thus A ≠ H. On the corresponding side lines in π′ choose A′ and B′ with O′A′ = OA and O′B′ = OB, using the original or opposite ray according as A and B lie on the original or opposite rays. Draw the required joining lines. Reversing corresponding rays preserves the required angle equalities: the resulting angles are supplements of equal angles. Hence ∠AOB = ∠A′O′B′, ∠POA = ∠RO′A′, and ∠POB = ∠RO′B′. [P1, P2, 1.3, 1.13, P4, CN3]
+
+**Step 3.** Apply side–angle–side first, since the equal included angles are already available. The triangles OAB and O′A′B′ give AB = A′B′ and ∠OAB = ∠O′A′B′. The triangles OPA and O′RA′ give PA = RA′; similarly, OPB and O′RB′ give PB = RB′. [1.4]
+
+**Step 4.** The triangles PAB and RA′B′ now have their three sides respectively equal, so ∠PAB = ∠RA′B′. On the complete line A′B′ take H′ with A′H′ = AH and in the same position relative to A′ and B′ as H occupies relative to A and B. This is possible because AB = A′B′, allowing extension when necessary. Consequently, whether AH points along AB or in the opposite direction, ∠OAH = ∠O′A′H′ and ∠PAH = ∠RA′H′; in the opposite-direction case these are supplements of the equal angles just established. [1.8, P2, 1.3, 1.13, P4, CN3]
+
+**Step 5.** In triangles OAH and O′A′H′, the two sides surrounding the angles at A and A′ are respectively equal. Therefore OH = O′H′. Likewise, triangles PAH and RA′H′ give PH = RH′ and ∠PHA = ∠RH′A′. Since PH is perpendicular to π and HA lies in π, ∠PHA is right. Thus RH′ is perpendicular to A′B′. [1.4, D11.3]
+
+**Step 6.** The triangles OPH and O′RH′ have all three sides respectively equal: OP = O′R by construction, OH = O′H′, and PH = RH′. Side–side–side therefore gives both ∠POH = ∠RO′H′ and ∠PHO = ∠RH′O′. The latter angles are right, since PH is perpendicular to π. Hence RH′ is also perpendicular to H′O′. [1.8, D11.3]
+
+**Step 7.** The lines H′A′ and H′O′ are distinct intersecting lines in π′, because O′ does not lie on A′B′. We have proved RH′ perpendicular to both at H′. The direct two-line criterion therefore shows that RH′ is perpendicular to π′. [11.4]
+
+**Step 8.** If R = Q, then H′ = K: otherwise triangle RH′K would have right angles at both H′ and K, which is impossible. In this case ∠RO′H′ = ∠QO′K immediately. [D11.3, 1.17]
+
+**Step 9.** If R ≠ Q, the perpendiculars RH′ and QK to π′ are parallel and therefore coplanar. The common elevated line O′RQ is a transversal. Since R and Q lie on the same ray from O′, their corresponding angles satisfy ∠O′RH′ = ∠O′QK. The triangles O′RH′ and O′QK are right-angled at H′ and K; subtracting their equal right angles and equal angles at R and Q from their equal angle sums gives ∠RO′H′ = ∠QO′K. Combining this with Step 6, in either case ∠POH = ∠QO′K. Thus the joins from the perpendicular feet to the original vertices contain equal angles with the elevated straight lines, as required. [11.6, D1.23, 1.29, D11.3, P4, 1.32, CN3, CN1]
+
+**USED:** 1.13, 1.17, 1.29, 1.3, 1.32, 1.4, 1.8, 11.4, 11.6, CN1, CN3, D1.23, D11.3, P1, P2, P4
+**Human refs (from References field):** 1.26, 1.4, 1.47, 1.48, 1.8, 11.8
+**Jaccard:** 0.100 — AI adds ['1.13', '1.17', '1.29', '1.3', '1.32', '11.4', '11.6', 'CN1', 'CN3', 'D1.23', 'D11.3', 'P1', 'P2', 'P4']; Human adds ['1.26', '1.47', '1.48', '11.8']
+
+## Proposition 11.36
+**Statement:** If three straight lines be proportional, the parallelepipedal solid formed out of the three is equal to the parallelepipedal solid on the mean which is equilateral, but equiangular with the aforesaid solid.
+
+**Step 1.** Let the three straight lines have lengths a, b, c, with a:b = b:c. Let S be the parallelepipedal solid whose three edges from O are OA = a, OB = b, and OC = c. Choose the extreme edges OA and OC for its base, leaving the mean OB as its third edge; this permits a direct equal-base, equal-height comparison. On the rays OA and OC take OD = OE = b, producing the lines if necessary. Complete the parallelogram ODYE and the parallelepiped T having OD, OE, and the same OB as its three edges from O, by drawing parallels. Denote the base of S by OAXC. These constructions use P2, P3, and I.31.
+
+**Step 2.** The three edges OD, OE, OB of T are all equal to b. Its remaining edges equal these by the equality of opposite sides of parallelograms; hence T is equilateral (I.34). Moreover, its edges from O lie on the same three rays as those of S, and all corresponding remaining edges are parallel. Thus its corresponding angles agree with those of S: T is equiangular with S (XI.10).
+
+**Step 3.** The base parallelograms OAXC and ODYE are equiangular, having their adjacent sides along the same two rays. Also,
+OA:OD = a:b = b:c = OE:OC.
+Their sides about the equal angle at O are therefore reciprocally proportional. Consequently the two base parallelograms are equal (VI.14).
+
+**Step 4.** Both bases lie in the plane through OA and OC. The opposite faces of both solids lie in the same plane through B, determined by the parallels through B to OA and OC. This plane is parallel to the base plane (XI.15). Thus S and T have the same height. Since their bases are equal by Step 3, the solids are equal (XI.31). But T is the equilateral parallelepipedal solid on the mean b, equiangular with S. Therefore the parallelepipedal solid formed from the three proportional straight lines equals the equilateral, equiangular parallelepipedal solid on the mean, as required.
+
+**USED:** 1.31, 1.34, 11.10, 11.15, 11.31, 6.14, P2, P3
+**Human refs (from References field):** 11.31, 11.35, 6.14
+**Jaccard:** 0.222 — AI adds ['1.31', '1.34', '11.10', '11.15', 'P2', 'P3']; Human adds ['11.35']
+
+## Proposition 11.37
+**Statement:** If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described will also be proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.
+
+**Step 1.** Let the four straight lines be a, b, c, d, and let P, Q, R, S be the similar and similarly described parallelepipedal solids on them, respectively. We use the triplicate-ratio route, since the theorem on similar parallelepipedal solids applies directly to their corresponding edges. [11.33]
+
+**Step 2.** By successively finding third proportionals, construct straight lines e, f, g, h such that
+
+a:b = b:e = e:f, and c:d = d:g = g:h.
+
+Thus a:f is the triplicate ratio of a:b, and c:h is the triplicate ratio of c:d. Consequently,
+
+P:Q = a:f, and R:S = c:h. [6.11, D5.10, 11.33]
+
+**Step 3.** First suppose a:b = c:d. The sequences a, b, e, f and c, d, g, h then have equal corresponding successive ratios. Therefore, ex aequali, a:f = c:h. Together with Step 2, this gives P:Q = R:S. This proves the forward implication. [5.22, 5.11]
+
+**Step 4.** Conversely, suppose P:Q = R:S. Step 2 gives a:f = c:h. Find a fourth proportional u such that a:u = c:d, and then find third proportionals v, w such that
+
+a:u = u:v = v:w.
+
+The sequences a, u, v, w and c, d, g, h have equal corresponding successive ratios; hence a:w = c:h, ex aequali. Thus a:w = a:f, and therefore w = f. We consequently have
+
+a:b = b:e = e:f, and a:u = u:v = v:f. [5.11, 6.12, 6.11, 5.22, 5.9]
+
+**Step 5.** Suppose b > u. Then a:u > a:b. Using the equal ratios in Step 4, this gives both
+
+v:f > e:f, and u:v > b:e.
+
+The first inequality implies v > e. But b > u and v > e give
+
+u:v < b:v < b:e,
+
+contrary to the second inequality. Hence b cannot be greater than u. [5.8, 5.13, 5.10]
+
+**Step 6.** If b < u, the same argument, interchanging the pairs b, e and u, v, gives a contradiction. Therefore b = u. Since a:u = c:d by construction, it follows that a:b = c:d. Thus the straight lines are proportional if and only if the similar and similarly described parallelepipedal solids on them are proportional. [5.8, 5.13, 5.10, 5.11]
+
+**USED:** 11.33, 5.10, 5.11, 5.13, 5.22, 5.8, 5.9, 6.11, 6.12, D5.10
+**Human refs (from References field):** 11.33
+**Jaccard:** 0.100 — AI adds ['5.10', '5.11', '5.13', '5.22', '5.8', '5.9', '6.11', '6.12', 'D5.10']
+
+## Proposition 11.38
+**Statement:** If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.
+
+**Step 1.** Label the cube ABCD–EFGH, with opposite faces ABCD and EFGH and joining edges AE, BF, CG, DH. Let AG be the diameter under consideration. Every face is a square, so its opposite sides are equal and parallel (D11.25, D1.22, 1.28). Let M, N, R, S be the midpoints of AB, CD, AD, BC respectively, and let M′, N′, R′, S′ be the corresponding midpoints of EF, GH, EH, FG. The given section planes are Π through M, N, M′, N′ and Σ through R, S, R′, S′. Draw the face diagonals AC and EG (P1).
+
+**Step 2.** Let MN meet AC at O. Since AB = CD, their halves AM and CN are equal: unequal halves would have unequal doubles (CN2, CN5). Because AB is parallel to CD, ∠MAO = ∠NCO and ∠AMO = ∠CNO (1.29). Thus triangles AMO and CNO have two corresponding angles and their included sides equal. We use 1.26 directly, since precisely its hypotheses are available; it gives AO = CO. Hence O is the midpoint of AC.
+
+**Step 3.** Let RS meet AC at O₁. Similarly, AR = CS, and the parallelism of AD and BC gives the two corresponding angle equalities in triangles ARO₁ and CSO₁. Therefore AO₁ = CO₁ (1.29, 1.26). A segment has only one midpoint, since otherwise a proper part would equal the whole; consequently O₁ = O (CN5). Thus both MN and RS pass through O. Applying the same argument on the opposite square EFGH shows that M′N′ and R′S′ pass through the same point P on EG, with EP = PG (1.29, 1.26, CN5).
+
+**Step 4.** Since a straight line joining points of a plane lies in that plane, O and P belong to both Π and Σ (11.1). These planes are distinct, their traces on ABCD being the distinct lines MN and RS. Their common section is therefore the straight line OP (11.3); the portion within the cube is the segment OP.
+
+**Step 5.** The square faces give AE = CG, AE parallel to BF, and CG parallel to BF. Hence AE is parallel to CG (11.9), and these two lines lie in one plane by the definition of parallel lines (D1.23). Applying 1.33 to the equal parallel segments AE and CG gives AC = EG and AC parallel to EG. Thus ACGE is a parallelogram in this diagonal plane. The plane also contains O, P, and AG (11.1). Since O and P bisect the equal segments AC and EG, AO = GP (CN2, CN5).
+
+**Step 6.** In the parallelogram ACGE, the segment OP joining the midpoints of the opposite sides AC and EG meets the diagonal AG at an interior point X. Since AC is parallel to EG, ∠OAX = ∠PGX and ∠AOX = ∠GPX (1.29). Together with AO = GP, these equalities make triangles AOX and GPX equal by 1.26. Consequently AX = XG and OX = XP. Therefore the common section of the two planes and the diameter of the cube bisect one another, as required.
+
+**USED:** 1.26, 1.28, 1.29, 1.33, 11.1, 11.3, 11.9, CN2, CN5, D1.22, D1.23, D11.25, P1
+**Human refs (from References field):** 1.14, 1.15, 1.26, 1.29, 1.33, 1.4, 11.9
+**Jaccard:** 0.250 — AI adds ['1.28', '11.1', '11.3', 'CN2', 'CN5', 'D1.22', 'D1.23', 'D11.25', 'P1']; Human adds ['1.14', '1.15', '1.4']
+
+## Proposition 11.39
+**Statement:** If there be two prisms of equal height, and one have a parallelogram as base and the other a triangle, and if the parallelogram be double of the triangle, the prisms will be equal.
+
+**Step 1.** Let P be the prism whose designated base is the parallelogram B, and Q the prism whose base is the triangle Δ. Let their common height be h; by hypothesis, B is double Δ. For P, the designated base is a parallelogram face: label its triangular ends ABC and A′B′C′ so that B is ABB′A′ and the opposite edge is CC′. We use the direct route of completing both prisms to parallelepipeds. [D11.13]
+
+**Step 2.** By drawing parallels, complete ABC to the parallelogram ABDC, and complete A′B′C′ correspondingly to A′B′D′C′. These completed faces determine a parallelepiped S having ABB′A′ as base and CDD′C′ as its opposite face. The latter face is parallel to the base and contains CC′, so S has the same height h as P. The plane BCC′B′ passes through the diagonals BC and B′C′ of the opposite parallelogram faces. It therefore bisects S, and one of the resulting parts is P. Consequently S is double P. [1.31, 11.15, 11.28]
+
+**Step 3.** Similarly, write the triangular ends of Q as EFG and E′F′G′. Complete them by parallels to the parallelograms EFHG and E′F′H′G′, obtaining a parallelepiped R. Its base and opposite face lie in the original triangular-end planes, so its height remains h. The diagonal FG bisects EFHG; hence the base of R is double Δ. Moreover, the plane FGG′F′ passes through the diagonals of the opposite completed faces and bisects R, with Q as one part. Thus R is double Q. [1.31, 11.15, 1.34, 11.28]
+
+**Step 4.** The base of S is B, which is double Δ by hypothesis; the base of R is likewise double Δ. Their bases are therefore equal. Since S and R also have the same height h, they are equal by 11.31. This is the direct equal-base, equal-height proposition, precisely matching the completed solids. [CN1, 11.31]
+
+**Step 5.** Since S is double P and R is double Q, we have S:P = R:Q: the equimultiple comparisons in the definition of equal ratios are identical for a double and its single. Since S = R, the same magnitude thus has the same ratio to P and Q; consequently P = Q. Therefore the two given prisms are equal. [D5.5, 5.9]
+
+**USED:** 1.31, 1.34, 11.15, 11.28, 11.31, 5.9, CN1, D11.13, D5.5
+**Human refs (from References field):** 1.34, 11.28, 11.31
+**Jaccard:** 0.333 — AI adds ['1.31', '11.15', '5.9', 'CN1', 'D11.13', 'D5.5']

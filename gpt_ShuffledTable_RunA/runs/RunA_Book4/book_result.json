@@ -1,0 +1,334 @@
+[
+  {
+    "prop_id": "4.1",
+    "proof": "**Step 1.** Let Γ be the given circle and let ℓ be the given straight line, not greater than its diameter. Find the centre O of Γ. Choose A on its circumference, join AO, and produce AO to meet the circumference again at B. Thus AB is a diameter. [3.1, P1, P2, D1.17]\n\n**Step 2.** If ℓ equals AB, then AB itself is the required straight line: its extremities lie on Γ. Otherwise ℓ is less than AB; cut off AD from AB, with D between A and B, so that AD equals ℓ. [D4.7, 1.3]\n\n**Step 3.** Describe an auxiliary circle with centre A and radius AD. This endpoint-centred construction gives the required length directly as a radius. A is inside the auxiliary circle, while B is outside it because AB is greater than AD; hence the semicircumference of Γ from A to B crosses the auxiliary circumference at a point C. [P3, D1.15]\n\n**Step 4.** Join AC. Since C and D lie on the auxiliary circle with centre A, AC equals AD. But AD equals ℓ; therefore AC equals ℓ. [P1, D1.15, CN1]\n\n**Step 5.** Both A and C lie on the circumference of Γ, so AC is fitted into Γ. Thus in either case a straight line equal to the given straight line has been fitted into the given circle, as required. [D4.7]",
+    "used": [
+      "3.1",
+      "P1",
+      "P2",
+      "D1.17",
+      "D4.7",
+      "1.3",
+      "P3",
+      "D1.15",
+      "CN1"
+    ],
+    "statement": "Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle."
+  },
+  {
+    "prop_id": "4.2",
+    "proof": "**Step 1.** Let Ω be the given circle and DEF the given triangle. We use the tangent–chord construction to obtain two of the required angles directly. Choose A on Ω and draw the tangent XAY at A, with A between X and Y. [3.17]\n\n**Step 2.** The angles of triangle DEF sum to two right angles, so ∠DEF + ∠DFE is less than two right angles. We use the angle-sum theorem here because it will also determine the third angle below. [1.32] On the side of XAY containing the circle, construct rays AB and AC such that\n∠YAB = ∠DFE and ∠XAC = ∠DEF. [1.23]\nProduce these rays to meet the circumference again at B and C, respectively. [P2] Since the two prescribed angles together are less than two right angles, the rays occur in the order AY, AB, AC, AX within that half-plane; in particular, B and C are distinct. [1.13, 1.32] Join BC. [P1]\n\n**Step 3.** The angle between the tangent AY and chord AB equals the angle in the alternate segment, namely ∠ACB. Consequently,\n∠ACB = ∠YAB = ∠DFE. [3.32, CN1]\n\n**Step 4.** Likewise, the angle between the tangent AX and chord AC equals the angle in the alternate segment, namely ∠ABC. Consequently,\n∠ABC = ∠XAC = ∠DEF. [3.32, CN1]\n\n**Step 5.** The angles of each of triangles ABC and DEF sum to two right angles. [1.32] The two angle equalities just established give equal sums; subtracting those equal sums from the equal totals yields\n∠BAC = ∠EDF. [CN2, CN3]\nThus ABC is equiangular with DEF. Since its three vertices A, B, and C lie on the circumference of Ω, it is inscribed in Ω. [D4.3] Therefore, in the given circle a triangle equiangular with the given triangle has been inscribed.",
+    "used": [
+      "3.17",
+      "1.32",
+      "1.23",
+      "P2",
+      "1.13",
+      "P1",
+      "3.32",
+      "CN1",
+      "CN2",
+      "CN3",
+      "D4.3"
+    ],
+    "statement": "In a given circle to inscribe a triangle equiangular with a given triangle."
+  },
+  {
+    "prop_id": "4.3",
+    "proof": "**Step 1.** Let the given circle be Γ and the given triangle be ABC. Write α, β, γ for its angles at A, B, C, and let R denote a right angle. By the angle-sum theorem, α + β + γ = 2R. Produce sides at A and B to obtain exterior angles α′ = 2R − α and β′ = 2R − β. Each of α′ and β′ is positive and less than 2R. [P2, P4, 1.13, 1.32, CN3]\n\n**Step 2.** Find the centre O of Γ, choose a point P on its circumference, and join OP. At O construct a ray OQ making angle α′ with OP, and, on the opposite side of OP, a ray OS making angle β′ with OP; let Q and S be their intersections with Γ. The three successive sectors between OP, OQ, OS have angles\n∠POQ = 2R − α,\n∠QOS = 4R − α′ − β′ = α + β = 2R − γ,\n∠SOP = 2R − β,\nwhere the middle sector does not contain OP. Thus all three sectors are positive and less than two right angles. [3.1, P1, P2, 1.23, 1.13, 1.32, CN2, CN3]\n\n**Step 3.** At P, Q, S erect straight lines p, q, s perpendicular to OP, OQ, OS respectively. Extend the radii through O to diameters. Each perpendicular falls outside Γ and meets it at its prescribed point, so each is a tangent. This is the direct choice of construction: the contact points are already fixed, and the perpendicular-to-diameter result applies immediately. [P2, 1.11, 3.16, D3.2]\n\n**Step 4.** Verify that the required intersections exist. Consider in turn the consecutive pairs (P,Q), (Q,S), and (S,P), writing U,V for the pair and θ for its central sector angle. Join UV. Since OU = OV, the base angles of triangle OUV are equal; call each b. Its angle sum gives 2b + θ = 2R, so b < R. On the side of UV opposite O, the angles made by UV with the tangents at U and V are each R − b. Their sum is therefore 2R − 2b = θ < 2R. Consequently those tangents meet on that side of UV. Denote p ∩ q by X, p ∩ s by Y, and q ∩ s by Z. [P1, D1.15, 1.5, 1.32, CN2, CN3, P5]\n\n**Step 5.** At each contact point, the other two contact radii lie on opposite sides of the line through that point and O, because each of the three consecutive central sectors is less than 2R. In the construction of Step 4, the tangent intersection for U,V lies on the ray of the tangent at U directed toward the side of OU containing V. Hence X and Y lie on opposite rays of p from P; X and Z lie on opposite rays of q from Q; and Y and Z lie on opposite rays of s from S. Thus P lies between X and Y, Q between X and Z, and S between Y and Z. The actual sides of triangle XYZ therefore touch Γ at P, Q, S respectively, so XYZ is circumscribed about Γ. [P5, 3.16, D3.2, D4.4]\n\n**Step 6.** In each tangent triangle considered in Step 4, the two angles at the contact points have sum θ. Its angle at the tangent intersection is consequently 2R − θ. Applying this to triangles XPQ, YPS, and ZQS, and using the betweenness established in Step 5, gives\n∠YXZ = 2R − ∠POQ = α,\n∠XYZ = 2R − ∠SOP = β,\n∠XZY = 2R − ∠QOS = γ.\nThus XYZ is equiangular with ABC and is circumscribed about the given circle, as required. [1.32, CN3, D4.4]",
+    "used": [
+      "P2",
+      "P4",
+      "1.13",
+      "1.32",
+      "CN3",
+      "3.1",
+      "P1",
+      "1.23",
+      "CN2",
+      "1.11",
+      "3.16",
+      "D3.2",
+      "D1.15",
+      "1.5",
+      "P5",
+      "D4.4"
+    ],
+    "statement": "About a given circle to circumscribe a triangle equiangular with a given triangle."
+  },
+  {
+    "prop_id": "4.4",
+    "proof": "**Step 1.** Let ABC be the given triangle. We use the direct construction by two internal angle bisectors. Bisect ∠ABC and ∠BCA. Their angles with BC have sum less than two right angles, so the bisectors meet on the side of BC containing A. Call their intersection D. Since D lies within both internal angles, it lies inside triangle ABC. [1.9, 1.17, P5]\n\n**Step 2.** Produce the side lines as necessary, and draw DE perpendicular to AB, DF perpendicular to BC, and DG perpendicular to CA, with E, F, G on the respective lines. Each half-angle at B and C is acute. Consequently E lies on ray BA, F lies on both rays BC and CB, and G lies on ray CA: a foot on an opposite ray would give a right triangle another angle greater than a right angle, contrary to 1.17. [P2, 1.12, 1.17]\n\n**Step 3.** In triangles BDE and BDF, ∠EBD = ∠DBF because BD bisects ∠ABC; the angles at E and F are equal, being right angles; and BD is common. Thus DE = DF by the two-angle-and-side criterion. This is the natural criterion here, since the two equal angles and the common side are already available. [1.9, P4, 1.26]\n\n**Step 4.** Similarly, in triangles CDF and CDG, ∠FCD = ∠DCG because CD bisects ∠BCA; the angles at F and G are equal right angles; and CD is common. Hence DF = DG. Together with Step 3, this gives DE = DF = DG. [1.9, P4, 1.26, CN1]\n\n**Step 5.** Describe the circle with centre D and radius DE. Since DF and DG equal DE, this circle passes through E, F, and G. [P3, D1.15]\n\n**Step 6.** Produce the radii through D to form diameters. At E, F, and G respectively, the lines AB, BC, and CA are perpendicular to these diameters at their extremities. Therefore each line falls outside the circle apart from its point of contact, and so touches the circle. The circle lies on the side of each tangent containing its centre D. Since D is inside ABC, the circle is contained within the triangle; in particular, its contacts E, F, and G lie on the side segments themselves. Thus the circle touches every side of ABC and is inscribed in the given triangle, as required. [P2, 3.16, D3.2, D4.5]",
+    "used": [
+      "1.9",
+      "1.17",
+      "P5",
+      "P2",
+      "1.12",
+      "P4",
+      "1.26",
+      "CN1",
+      "P3",
+      "D1.15",
+      "3.16",
+      "D3.2",
+      "D4.5"
+    ],
+    "statement": "In a given triangle to inscribe a circle."
+  },
+  {
+    "prop_id": "4.5",
+    "proof": "**Step 1.** Let ABC be the given triangle. Bisect AB at D and AC at E. Through D draw a straight line m perpendicular to AB, and through E draw a straight line n perpendicular to AC, producing these lines as necessary. We use their intersection as the prospective centre. [1.10, 1.11, D1.10, P2]\n\n**Step 2.** The lines m and n meet. For suppose they were parallel. Through A draw a line ℓ parallel to m; then ℓ is also parallel to n. Applying the theorem on angles made by a transversal to AB and then to AC shows that both AB and AC are perpendicular to ℓ at A. [1.31, 1.30, 1.29]\n\nIf the rays AB and AC lay on the same side of ℓ and were distinct, one of the right angles they make with a fixed ray of ℓ would be a proper part of the other, contrary to the equality of right angles and the whole being greater than its part. If they lay on opposite sides, their adjacent right angles would make them one straight line. Thus A, B, C would be collinear, contrary to their forming a triangle. Consequently m and n are not parallel and meet at some point O. [P4, CN5, 1.14, D1.23]\n\n**Step 3.** Join OA, OB, and OC. If O is distinct from D, compare triangles ODA and ODB: AD = DB, OD is common, and the included angles ODA and ODB are right and therefore equal. Side–angle–side is the direct choice here, since the equal included angles are already known. Hence OA = OB. If O = D, the same equality follows immediately from AD = DB. [P1, 1.10, D1.10, P4, 1.4]\n\n**Step 4.** Likewise, if O is distinct from E, triangles OEA and OEC have AE = EC, OE common, and equal included right angles. Therefore OA = OC by side–angle–side. If O = E, this equality follows directly from AE = EC. Thus OA, OB, and OC are all equal. [1.10, D1.10, P4, 1.4, CN1]\n\n**Step 5.** Describe the circle with centre O and distance OA. Since OA = OB = OC, its circumference passes through A, B, and C. It is therefore a circle circumscribed about triangle ABC, as required. [P3, D1.15, D4.6]",
+    "used": [
+      "1.10",
+      "1.11",
+      "D1.10",
+      "P2",
+      "1.31",
+      "1.30",
+      "1.29",
+      "P4",
+      "CN5",
+      "1.14",
+      "D1.23",
+      "P1",
+      "1.4",
+      "CN1",
+      "P3",
+      "D1.15",
+      "D4.6"
+    ],
+    "statement": "About a given triangle to circumscribe a circle."
+  },
+  {
+    "prop_id": "4.6",
+    "proof": "**Step 1.** Let the given circle have centre O, found by Proposition 3.1. Choose A on its circumference, join AO, and produce AO through O to meet the circumference again at C. Thus AC is a diameter. [3.1, P1, P2, D1.17]\n\n**Step 2.** At O construct OB perpendicular to AC, with B on the circumference, and produce BO through O to meet the circumference again at D. Thus BD is also a diameter. The angles AOB and BOC are right by the definition of perpendicularity; their vertically opposite angles COD and DOA are likewise right. Hence all four central angles are equal. [1.11, P2, D1.17, D1.10, 1.15, P4]\n\n**Step 3.** Join AB, BC, CD, and DA. Since O is the centre, OA, OB, OC, and OD are equal radii. [P1, D1.15, D1.16]\n\n**Step 4.** Use side–angle–side directly: the construction already supplies equal radii and equal included angles. Comparing triangle AOB with each of triangles BOC, COD, and DOA, Proposition 1.4 gives AB = BC, AB = CD, and AB = DA. Consequently ABCD is equilateral. [1.4, CN1]\n\n**Step 5.** Because AC is a diameter, the angles ABC and ADC are angles in semicircles and therefore right. Because BD is a diameter, the angles BAD and BCD are likewise right. Thus ABCD is right-angled. [3.31]\n\n**Step 6.** The quadrilateral ABCD is both equilateral and right-angled, so it is a square. Its four vertices lie on the circumference of the given circle, so it is inscribed in that circle. Therefore a square has been inscribed in the given circle, as required. [D1.22, D4.3]",
+    "used": [
+      "3.1",
+      "P1",
+      "P2",
+      "D1.17",
+      "1.11",
+      "D1.10",
+      "1.15",
+      "P4",
+      "D1.15",
+      "D1.16",
+      "1.4",
+      "CN1",
+      "3.31",
+      "D1.22",
+      "D4.3"
+    ],
+    "statement": "In a given circle to inscribe a square."
+  },
+  {
+    "prop_id": "4.7",
+    "proof": "**Step 1.** Let the given circle have centre O, found by III.1. Draw a diameter AC, and through O draw its perpendicular, meeting the circle at B and D, so that A, B, C, D occur successively around the circle. The four angles at O are right angles, and OA = OB = OC = OD. [3.1, P1, P2, 1.11, D1.10, D1.17, D1.15]\n\n**Step 2.** At A and C draw straight lines perpendicular to AC, and at B and D draw straight lines perpendicular to BD; denote these lines by a, b, c, d respectively. We choose these perpendiculars because III.16 directly shows that each lies outside the circle except at its endpoint of contact. Thus a, b, c, d touch the circle at A, B, C, D respectively. [1.11, 3.16, D3.2]\n\n**Step 3.** Let consecutive tangents meet at E = a ∩ b, F = b ∩ c, G = c ∩ d, and H = d ∩ a. These intersections exist on the required sides: for example, join AB. Since triangle OAB is right-angled at O, its angles at A and B are each less than a right angle. Consequently the angles made by AB with a and b on the side of AB opposite O are each less than a right angle, being the complements of those triangle angles. The fifth postulate therefore makes a and b meet on that side. The same argument applies to BC, CD, and DA. Thus A lies between H and E, B between E and F, C between F and G, and D between G and H. [P1, P2, 1.17, D1.10, P5]\n\n**Step 4.** The lines a and c are each parallel to BD, since they and BD are perpendicular to AC. Likewise b and d are each parallel to AC. Hence OAEB, OBFC, OCGD, and ODHA are parallelograms. [P4, 1.28]\n\n**Step 5.** Opposite sides and opposite angles of these parallelograms are equal. Their angles at O are right angles, so the angles of EFGH at E, F, G, H are all right angles. Moreover, every one of the segments AE, EB, BF, FC, CG, GD, DH, HA equals a radius of the given circle. Since all those radii are equal,\nAE = EB = BF = FC = CG = GD = DH = HA. [1.34, D1.15, CN1]\n\n**Step 6.** Since the contact points lie between the corresponding vertices,\nEF = EB + BF, FG = FC + CG, GH = GD + DH, and HE = HA + AE.\nAdding equal segments gives EF = FG = GH = HE. Therefore EFGH is both equilateral and right-angled, and hence is a square. Its four sides touch the given circle at B, C, D, A respectively, so it is circumscribed about that circle. Thus about the given circle a square has been circumscribed, as required. [CN2, D1.22, D4.4]",
+    "used": [
+      "3.1",
+      "P1",
+      "P2",
+      "1.11",
+      "D1.10",
+      "D1.17",
+      "D1.15",
+      "3.16",
+      "D3.2",
+      "1.17",
+      "P5",
+      "P4",
+      "1.28",
+      "1.34",
+      "CN1",
+      "CN2",
+      "D1.22",
+      "D4.4"
+    ],
+    "statement": "About a given circle to circumscribe a square."
+  },
+  {
+    "prop_id": "4.8",
+    "proof": "**Step 1.** Let ABCD be the given square. We use its diagonals as angle bisectors and construct equal perpendiculars to its sides. Join AC and BD, meeting inside the square at O. Since the sides of the square are equal, triangles ABC and ADC have their three sides respectively equal; hence AC bisects the angles at A and C. Similarly, comparison of triangles ABD and CBD shows that BD bisects the angles at B and D. Thus each angle between a side and the segment from its endpoint to O is half a right angle, and therefore less than a right angle. [D1.22, P1, 1.8, CN5]\n\n**Step 2.** From O draw perpendiculars OE, OF, OG, OH to the straight lines AB, BC, CD, DA respectively. Their feet lie on the sides themselves, not on their extensions. Indeed, consider any side UV and its perpendicular foot T. If T lay beyond U, then in triangle OUT the exterior angle OUV would, by 1.16, be greater than the right angle OTU; but Step 1 shows that OUV is less than a right angle. The case where T lies beyond V is identical. Nor can T coincide with either endpoint, since the angle there between the side and the segment to O is not right. Hence E, F, G, H lie strictly within their respective sides. [1.12, D1.10, 1.16, P4]\n\n**Step 3.** Triangles AEO and AHO have equal right angles at E and H, equal angles at A, and the common side AO opposite their right angles. Therefore OE = OH by 1.26. Likewise, comparison of triangles BEO and BFO gives OE = OF, and comparison of triangles CFO and CGO gives OF = OG. Consequently\nOE = OF = OG = OH.\nHere 1.26 applies directly because the known data are two equal angles and the common side opposite a right angle. [P4, 1.26, CN1]\n\n**Step 4.** Describe the circle with centre O and distance OE. By the equalities just proved, its circumference passes through E, F, G, and H. [P3, D1.15]\n\n**Step 5.** Extend each radius through O to form its diameter. The line AB is perpendicular at E to the diameter through E, so it falls outside the circle by 3.16; since it meets the circle at E, it touches it there. The same argument shows that BC, CD, and DA touch the circle at F, G, and H respectively. The circle therefore touches every side of the square, at points on those sides, and is inscribed in ABCD. Thus a circle has been inscribed in the given square, as required. [P2, 3.16, D3.2, D4.5]",
+    "used": [
+      "D1.22",
+      "P1",
+      "1.8",
+      "CN5",
+      "1.12",
+      "D1.10",
+      "1.16",
+      "P4",
+      "1.26",
+      "CN1",
+      "P3",
+      "D1.15",
+      "P2",
+      "3.16",
+      "D3.2",
+      "D4.5"
+    ],
+    "statement": "In a given square to inscribe a circle."
+  },
+  {
+    "prop_id": "4.9",
+    "proof": "**Step 1.** Let ABCD be the given square, with its vertices in order. Its four sides are equal and its four angles are right angles. Join AC and BD, and let their intersection be E. [D1.22, P1]\n\n**Step 2.** Use side–angle–side congruence (1.4), since the equal sides and right angles of the square supply its hypotheses directly. All right angles are equal. Comparing the following pairs of triangles therefore gives:\n- ABC and BAD: AB = BA, BC = AD, and ∠ABC = ∠BAD; hence ∠BAC = ∠ABD.\n- BCD and CBA: BC = CB, CD = BA, and ∠BCD = ∠CBA; hence ∠CBD = ∠BCA.\n- CDA and DCB: CD = DC, DA = CB, and ∠CDA = ∠DCB; hence ∠DCA = ∠CDB. [D1.22, P4, 1.4]\n\n**Step 3.** Since E lies on both diagonals, these angle equalities give, respectively,\n∠BAE = ∠ABE, ∠CBE = ∠BCE, and ∠DCE = ∠CDE.\nIn each triangle, the sides opposite equal angles are equal. Thus EA = EB in triangle ABE, EB = EC in triangle BCE, and EC = ED in triangle CDE. Consequently EA = EB = EC = ED. [1.6, CN1]\n\n**Step 4.** Describe the circle with centre E and radius EA. Because EB, EC, and ED are also equal to this radius, its circumference passes through A, B, C, and D. It is therefore circumscribed about the square ABCD, as required. [P3, D1.15, D4.6]",
+    "used": [
+      "D1.22",
+      "P1",
+      "P4",
+      "1.4",
+      "1.6",
+      "CN1",
+      "P3",
+      "D1.15",
+      "D4.6"
+    ],
+    "statement": "About a given square to circumscribe a circle."
+  },
+  {
+    "prop_id": "4.10",
+    "proof": "**Step 1.** Take a straight line AB and cut it at C so that the rectangle contained by AB and BC equals the square on AC. Thus A, C, B occur in this order, and AC < AB. [2.11, CN5]\n\n**Step 2.** Describe a circle with centre A and radius AB. Since AC is less than the radius, and therefore less than the diameter, fit into this circle a chord BD equal to AC, taking B as one endpoint. Join AD and CD. The radii AB and AD are equal, whereas BD = AC < AB; in particular, A, C, D are not collinear. [P3, D1.15, D1.17, CN5, 4.1, P1]\n\n**Step 3.** Circumscribe a circle about triangle ACD. The point B is outside this circle, and the secant from B meets it first at C and then at A. By the construction,\nrectangle AB, BC = square AC = square BD.\nConsequently BD touches this circle at D. This tangent criterion is the direct route: the rectangle–square equality already supplies precisely its hypothesis. [4.5, CN1, 3.37]\n\n**Step 4.** Apply the tangent–chord theorem to the tangent DB and chord DC. The angle between them equals the angle in the alternate segment:\n∠BDC = ∠DAC.\nSince A, C, B are collinear, ∠DAC = ∠DAB. [3.32]\n\n**Step 5.** The angle BCD is an exterior angle of triangle ACD, so\n∠BCD = ∠CAD + ∠ADC.\nReplacing ∠CAD by its equal ∠BDC gives\n∠BCD = ∠BDC + ∠ADC = ∠BDA,\nbecause DC lies inside angle BDA. Also, AB = AD, so the base angles of triangle ABD satisfy ∠DBA = ∠BDA. Since ray BC is ray BA, it follows that ∠DBC = ∠BCD. Therefore, in triangle BCD, the opposite sides DC and DB are equal. [1.32, CN2, 1.5, CN1, 1.6]\n\n**Step 6.** Now DC = DB = AC. Hence triangle ACD is isosceles, and ∠ADC = ∠CAD. Both ∠CAD and, by Step 4, ∠BDC equal ∠BAD. Therefore\n∠BDA = ∠BDC + ∠CDA = 2∠BAD.\nThe other base angle ∠ABD equals ∠BDA, and is consequently also double ∠BAD. [CN1, 1.5, CN2]\n\n**Step 7.** Thus triangle ABD has AB = AD and BD < AB, so it is isosceles; each of its base angles ABD and BDA is double its remaining angle BAD. The required triangle has been constructed. [D1.20; Steps 2 and 6]",
+    "used": [
+      "2.11",
+      "CN5",
+      "P3",
+      "D1.15",
+      "D1.17",
+      "4.1",
+      "P1",
+      "4.5",
+      "CN1",
+      "3.37",
+      "3.32",
+      "1.32",
+      "CN2",
+      "1.5",
+      "1.6",
+      "D1.20"
+    ],
+    "statement": "To construct an isosceles triangle having each of the angles at the base double of the remaining one."
+  },
+  {
+    "prop_id": "4.11",
+    "proof": "**Step 1.** Let the given circle be Γ. Construct an isosceles triangle whose two base angles are each double its vertex angle, and inscribe in Γ a triangle ACD equiangular with it, with A corresponding to the vertex. Thus ∠ACD = ∠CDA = 2∠CAD. This angle-ratio construction is the direct route, since the prescribed angles can be transferred immediately to the given circle. [4.10, 4.2]\n\n**Step 2.** Bisect ∠ACD and ∠CDA. Produce their bisectors to meet Γ again at E and B respectively: E lies on the arc DA not containing C, and B on the arc AC not containing D. The points therefore occur around Γ in the order A, B, C, D, E. Join AB, BC, DE, and EA; together with CD these form pentagon ABCDE. [1.9, P2, P1]\n\n**Step 3.** Put α = ∠CAD. Since each angle bisected in Step 2 is double α, each of its halves equals α. Consequently\n∠CAD = ∠ACE = ∠ECD = ∠CDB = ∠BDA.\n[4.10, 4.2, 1.9, CN1]\n\n**Step 4.** These five equal angles stand respectively on the arcs CD, AE, ED, CB, and BA, taking in each case the arc not containing the angle's vertex. Equal angles at the circumference stand on equal arcs. Hence the five successive arcs AB, BC, CD, DE, and EA are equal. We pass from angles to arcs first because equal angles are what the construction supplies directly. [3.26]\n\n**Step 5.** Equal arcs are subtended by equal straight lines. Therefore AB = BC = CD = DE = EA, so pentagon ABCDE is equilateral. [3.29]\n\n**Step 6.** Each interior angle of the pentagon stands on the arc between its adjacent vertices that does not contain its own vertex. Each such arc consists of three of the five equal successive arcs established in Step 4. These five three-part arcs are equal, because adding equals to equals gives equal wholes. Angles at the circumference standing on equal arcs are equal; hence ∠EAB, ∠ABC, ∠BCD, ∠CDE, and ∠DEA are all equal. The pentagon is therefore equiangular. [CN2, 3.27]\n\n**Step 7.** All five vertices lie on Γ, so ABCDE is inscribed in the given circle. By Steps 5 and 6 it is both equilateral and equiangular. Thus the required pentagon has been constructed. [D4.3]",
+    "used": [
+      "4.10",
+      "4.2",
+      "1.9",
+      "P2",
+      "P1",
+      "CN1",
+      "3.26",
+      "3.29",
+      "CN2",
+      "3.27",
+      "D4.3"
+    ],
+    "statement": "In a given circle to inscribe an equilateral and equiangular pentagon."
+  },
+  {
+    "prop_id": "4.12",
+    "proof": "**Step 1.** In the given circle inscribe an equilateral and equiangular pentagon ABCDE, with its vertices in circular order. We use these vertices as the points of contact and construct the required figure from their tangents; this is the direct route supplied by the inscribed pentagon. [4.11]\n\n**Step 2.** Join AC, BD, CE, DA, and EB. Consider the consecutive-vertex triangles ABC, BCD, CDE, DEA, and EAB. Their corresponding pairs of sides are equal, and their included angles are equal because ABCDE is equilateral and equiangular. Therefore their corresponding angles are equal by I.4—the natural comparison, since two sides and the included angle are already given equal. Each triangle is also isosceles, so its two base angles are equal. Consequently all these base angles have one common value, α. Since the two base angles of a triangle together are less than two right angles, α is acute. [P1, 1.4, 1.5, CN1, 1.17]\n\n**Step 3.** Draw tangents to the circle at A, B, C, D, and E, extending them as necessary. For the tangents at A and B, take the rays lying on the side of AB opposite C. By the tangent–chord theorem, each makes with AB an angle equal to ∠ACB, namely α. Their two interior angles on that side therefore total less than two right angles, so the rays meet; call their intersection P. In precisely the same way, the tangents at B and C meet at Q outside BC, those at C and D at R outside CD, those at D and E at S outside DE, and those at E and A at T outside EA. Thus every triangle PAB, QBC, RCD, SDE, and TEA has both base angles equal to α. [3.17, P2, 3.32, P5]\n\n**Step 4.** The contact points lie between the appropriate intersections. For example, P, B, and Q lie on the tangent at B. The chord rays BA and BC lie on the same side of that tangent, because it does not cut the circle. Moreover, ∠PBA = ∠QBC = α. If BP and BQ were the same ray, these equal angles would have distinct other rays on the same side, making one a proper part of the other, which is impossible. Hence BP and BQ are opposite rays, and B lies between P and Q. Likewise C lies between Q and R, D between R and S, E between S and T, and A between T and P. The five tangent segments therefore form the pentagon PQRST, with the respective contact points B, C, D, E, A on its sides. [D3.2, 3.32, CN5]\n\n**Step 5.** The triangles PAB, QBC, RCD, SDE, and TEA have two corresponding angles equal and the sides between those angles equal, since AB = BC = CD = DE = EA. By I.26 their corresponding remaining sides and their apex angles are equal. Thus\nPA = QB = RC = SD = TE,\nPB = QC = RD = SE = TA,\nand\n∠APB = ∠BQC = ∠CRD = ∠DSE = ∠ETA. [1.26]\n\n**Step 6.** Since the contact points are between consecutive vertices,\nPQ = PB + BQ, QR = QC + CR, RS = RD + DS, ST = SE + ET, and TP = TA + AP.\nAdding the corresponding equal segments from Step 5 gives PQ = QR = RS = ST = TP. The interior angles of PQRST are exactly the five equal apex angles established in Step 5. Hence PQRST is equilateral and equiangular. Each of its sides touches the given circle at its stated contact point, so it is circumscribed about that circle. Therefore an equilateral and equiangular pentagon has been circumscribed about the given circle, as required. [CN2, 1.26, D4.4]",
+    "used": [
+      "4.11",
+      "P1",
+      "1.4",
+      "1.5",
+      "CN1",
+      "1.17",
+      "3.17",
+      "P2",
+      "3.32",
+      "P5",
+      "D3.2",
+      "CN5",
+      "1.26",
+      "CN2",
+      "D4.4"
+    ],
+    "statement": "About a given circle to circumscribe an equilateral and equiangular pentagon."
+  },
+  {
+    "prop_id": "4.13",
+    "proof": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices in boundary order. We use the direct angle-bisector construction, without first constructing a circumcircle. Bisect the interior angles BCD and CDE. Their inward bisectors meet at F: the two half-angles they make with CD together are less than two right angles, so the fifth postulate applies. Join FB, FE, and FA. [1.9, P5, P1]\n\n**Step 2.** In triangles BCF and DCF, BC equals CD, CF is common, and angle BCF equals angle DCF. Therefore, by side-angle-side, angle CBF equals angle CDF. But angle CDF is half of angle CDE, and angle CDE equals angle CBA. Consequently angle CBF is half of angle CBA; subtracting it leaves angle ABF equal to angle FBC. Thus BF bisects the interior angle at B. [1.4, CN3]\n\n**Step 3.** Similarly, in triangles CDF and EDF, CD equals DE, DF is common, and angle CDF equals angle EDF. Hence angle DEF equals angle DCF. Since angle DCF is half of angle BCD, and angle BCD equals angle DEA, EF bisects the interior angle at E. The construction places F on the inward sides of BC, CD, and DE; the interior bisectors just established at B and E also place it on the inward sides of AB and AE. Thus F lies inside the pentagon. [1.4, CN3]\n\n**Step 4.** In triangles ABF and CBF, AB equals CB, BF is common, and angle ABF equals angle CBF. Therefore angle BAF equals angle BCF. The latter is half of angle BCD, which equals angle EAB. Since F is inside the pentagon, subtracting angle BAF from angle EAB shows that angle FAE equals angle BAF. Thus AF also bisects the interior angle at A. Accordingly, the segments from F to all five vertices bisect their respective interior angles. [1.4, CN3]\n\n**Step 5.** Draw perpendiculars FG, FH, FI, FK, and FL to the straight lines AB, BC, CD, DE, and EA respectively. Their feet lie on the actual sides, not their extensions. Indeed, at both endpoints of each side, the segment to F makes an acute angle with that side, being half an interior angle of the pentagon. A perpendicular foot beyond an endpoint would make this acute angle an exterior angle of a triangle whose opposite interior angle at the foot is right, contrary to the exterior-angle theorem. A foot at an endpoint would likewise make the endpoint angle right rather than acute. [1.12, D1.10, 1.16]\n\n**Step 6.** Compare the right triangles FBG and FBH. Their angles at G and H are equal right angles, their angles at B are equal because BF bisects angle ABC, and FB is their common side opposite the right angles. Hence FG equals FH. Applying the same angle-angle-side proposition to FCH and FCI, to FDI and FDK, and to FEK and FEL gives, respectively, FH = FI, FI = FK, and FK = FL. Therefore\nFG = FH = FI = FK = FL. [P4, 1.26, CN1]\n\n**Step 7.** Describe the circle with centre F and radius FG. By the equality just proved, its circumference passes through G, H, I, K, and L. [P3, D1.15]\n\n**Step 8.** Each side of the pentagon is perpendicular, at the corresponding point on the circumference, to the diameter through that point. The perpendicular-to-diameter theorem therefore places that side, apart from its contact point, outside the circle; hence the side touches the circle. Thus the circle touches AB, BC, CD, DE, and EA at G, H, I, K, and L respectively. By the definition of an inscribed circle, it is inscribed in the given pentagon, as required. [3.16, D3.2, D4.5]",
+    "used": [
+      "1.9",
+      "P5",
+      "P1",
+      "1.4",
+      "CN3",
+      "1.12",
+      "D1.10",
+      "1.16",
+      "P4",
+      "1.26",
+      "CN1",
+      "P3",
+      "D1.15",
+      "3.16",
+      "D3.2",
+      "D4.5"
+    ],
+    "statement": "In a given pentagon, which is equilateral and equiangular, to inscribe a circle."
+  },
+  {
+    "prop_id": "4.14",
+    "proof": "**Step 1.** Let ABCDE be the given equilateral and equiangular pentagon, with its vertices named in order. We take the direct angle-bisector route, constructing a point equally distant from all five vertices. Join AC and AD. The resulting three triangles show that the five interior angles together equal six right angles. Thus their common value, denoted by 2α, is less than two right angles. [P1, 1.32]\n\n**Step 2.** Bisect ∠BCD and ∠CDE. The angles which these bisectors make with CD on its interior side are each α, and their sum is less than two right angles. Therefore the bisectors, produced as necessary, meet on that side at O. Join OA, OB, and OE. We have ∠BCO = ∠OCD = ∠CDO = ∠ODE = α. [1.9, P2, P5, P1]\n\n**Step 3.** In triangle CDO, the angles OCD and CDO are equal. Hence their opposite sides are equal: OC = OD. [1.6]\n\n**Step 4.** Compare triangles BCO and DCO. Their sides BC and DC are equal, CO is common, and their included angles BCO and DCO are equal by the bisection at C. SAS is the natural criterion here, since precisely these two sides and their included angle are given equal. Consequently OB = OD and ∠CBO = ∠CDO = α. [1.4]\n\n**Step 5.** Since CO lies inside ∠BCD, O is on the same side of BC as A. As ∠CBO = α while ∠CBA = 2α, BO lies inside ∠CBA, and subtraction gives ∠ABO = ∠CBO. Now AB = CB, BO is common, and these included angles are equal. Therefore triangles ABO and CBO have equal bases: OA = OC. [CN3, 1.4]\n\n**Step 6.** Compare triangles EDO and CDO. We have DE = DC, DO common, and ∠EDO = ∠CDO by the bisection at D. Therefore OE = OC. Together with the preceding equalities, this gives OA = OB = OC = OD = OE. [1.4, CN1]\n\n**Step 7.** Describe the circle with centre O and radius OC. Since all five vertices are equally distant from O, its circumference passes through A, B, C, D, and E. It is therefore circumscribed about the given pentagon, as required. [P3, D1.15, D4.6]",
+    "used": [
+      "P1",
+      "1.32",
+      "1.9",
+      "P2",
+      "P5",
+      "1.6",
+      "1.4",
+      "CN3",
+      "CN1",
+      "P3",
+      "D1.15",
+      "D4.6"
+    ],
+    "statement": "About a given pentagon, which is equilateral and equiangular, to circumscribe a circle."
+  },
+  {
+    "prop_id": "4.15",
+    "proof": "**Step 1.** Construct an equilateral triangle by I.1. Applying I.5 to two pairs of its equal sides shows that its three angles are equal. By IV.2, inscribe in the given circle a triangle ACE equiangular with this triangle. Thus the angles of ACE are equal. [1.1, 1.5, CN1, 4.2]\n\n**Step 2.** Consider the three intervening arcs AC, CE, and EA, each chosen not to contain the remaining vertex. They are subtended respectively by the equal angles AEC, CAE, and ECA; hence they are equal by III.26. We take this equal-arc route because III.26 applies directly to the angle equality already obtained, without first establishing equality of the triangle’s chords. [3.26]\n\n**Step 3.** Bisect arc AC at B, arc CE at D, and arc EA at F by III.30. The points therefore occur around the circle in the order A, B, C, D, E, F, and the six successive arcs AB, BC, CD, DE, EF, FA are equal. Indeed, each is a half of one of the three equal arcs; unequal halves would have unequal doubles, contrary to the equality of those whole arcs. This is the elementary consequence of addition and whole–part comparison. Join AB, BC, CD, DE, EF, and FA. [3.30, CN1, CN2, CN5, P1]\n\n**Step 4.** Equal arcs in the same circle are subtended by equal straight lines, by III.29. Consequently\nAB = BC = CD = DE = EF = FA,\nso ABCDEF is equilateral. [3.29]\n\n**Step 5.** Each interior angle of ABCDEF stands on the arc between its two neighbouring vertices that does not contain its own vertex. Each such arc consists of four of the equal successive arcs from Step 3: for example, ∠FAB stands on arc BCDEF, while ∠ABC stands on arc CDEFA. Thus all six intercepted arcs are equal, by addition of equals. By III.27, the six interior angles standing on them are equal. Hence ABCDEF is equiangular. [CN2, 3.27]\n\n**Step 6.** All six vertices lie on the given circumference, so ABCDEF is inscribed in the given circle. Together with Steps 4 and 5, this proves that the constructed figure is an inscribed equilateral and equiangular hexagon, as required. [D4.3]",
+    "used": [
+      "1.1",
+      "1.5",
+      "CN1",
+      "4.2",
+      "3.26",
+      "3.30",
+      "CN2",
+      "CN5",
+      "P1",
+      "3.29",
+      "3.27",
+      "D4.3"
+    ],
+    "statement": "In a given circle to inscribe an equilateral and equiangular hexagon."
+  },
+  {
+    "prop_id": "4.16",
+    "proof": "**Step 1.** Construct an equilateral triangle by I.1. Its angles are equal by I.5. In the given circle inscribe a triangle equiangular with this triangle by IV.2; its sides are equal by I.6. Call one vertex A, and let C be the next vertex in a chosen direction around the circle. [1.1, 1.5, 4.2, 1.6]\n\n**Step 2.** Inscribe an equilateral and equiangular pentagon in the same circle, taking A as one vertex, and let B be its next vertex in the same direction. Equal chords cut off equal corresponding arcs; hence the consecutive arcs of the triangle are thirds of the circumference, and those of the pentagon are fifths. Thus, writing c for the whole circumference, arc AC is c/3 and arc AB is c/5, and B lies between A and C on this arc. [4.11, 3.28]\n\n**Step 3.** Subtracting arc AB from arc AC gives\narc BC = c/3 − c/5 = 2c/15.\nBisect arc BC at D. Each of arcs BD and DC is therefore c/15. This is the direct triangle–pentagon route: subtract their successive arcs and bisect the remainder to obtain the required fifteenth of the circumference. [CN3, 3.30]\n\n**Step 4.** Join BD. As a chord of the given circle, BD is not greater than its diameter. Starting with V₀ = B and V₁ = D, repeatedly fit a chord equal to BD from the latest vertex, proceeding in the same direction around the circle. This fitting is possible by IV.1. By III.28 every corresponding minor arc is equal to arc BD, hence is c/15. Consequently fifteen such arcs make the whole circumference: the fifteenth chord ends at V₀, while the preceding fourteen endpoints are distinct. Join successive vertices to obtain the inscribed fifteen-sided figure V₀V₁…V₁₄. [P1, 3.15, 4.1, 3.28, CN2]\n\n**Step 5.** Every side of this figure was constructed equal to BD. Its fifteen sides are therefore equal to one another, so the figure is equilateral. [4.1, CN1]\n\n**Step 6.** At any vertex Vᵢ, the interior angle stands on the arc joining its two neighbouring vertices and not containing Vᵢ. This arc consists of thirteen of the equal successive arcs. All fifteen such intercepted arcs are therefore equal. By III.27, the angles standing on them are equal. This proposition applies directly because the angles stand on equal arcs, rather than necessarily in the same segment. Hence the figure is equiangular as well as equilateral. [CN2, 3.27]\n\nTherefore an equilateral and equiangular fifteen-angled figure has been inscribed in the given circle, as required.",
+    "used": [
+      "1.1",
+      "1.5",
+      "4.2",
+      "1.6",
+      "4.11",
+      "3.28",
+      "CN3",
+      "3.30",
+      "P1",
+      "3.15",
+      "4.1",
+      "CN2",
+      "CN1",
+      "3.27"
+    ],
+    "statement": "In a given circle to inscribe a fifteen-angled figure which shall be both equilateral and equiangular."
+  }
+]

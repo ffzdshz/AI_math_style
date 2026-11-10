@@ -1,0 +1,450 @@
+[
+  {
+    "prop_id": "7.1",
+    "proof": "**Step 1.** Let A>B be the given numbers, and perform the successive subtractions specified in the hypothesis until a unit is left. We follow an arbitrary common measure through these individual subtractions: it suffices to show that such a measure can only be the unit. [D7.12]\n\n**Step 2.** Let c be any common measure of A and B. At any subtraction, suppose c measures both the greater quantity X and the lesser quantity Y. Then X and Y consist of whole copies of c. From the copies constituting X, remove exactly as many copies as constitute Y. Since equal quantities have been subtracted from equal quantities, the remaining copies constitute X−Y. Thus c measures the positive remainder as well as Y. [D7.5, CN3]\n\n**Step 3.** Starting with A and B, apply this reasoning at every successive subtraction. Retaining the lesser quantity and replacing the greater by the remainder therefore preserves c as a common measure; interchanging their roles does not change this. Consequently c measures every remainder reached, including the final unit. [D7.5, CN3]\n\n**Step 4.** A measure of the unit cannot exceed the unit: it is either the whole unit or a part of it. But any number, being a multitude composed of units, is greater than a single unit. Hence c cannot be a number greater than the unit and must itself be the unit. [D7.1, D7.2, CN5]\n\n**Step 5.** The unit measures both original numbers, since each is composed of units, and the preceding steps show that they have no other common measure. Therefore A and B are prime to one another. [D7.2, D7.12]",
+    "used": [
+      "D7.12",
+      "D7.5",
+      "CN3",
+      "D7.1",
+      "D7.2",
+      "CN5"
+    ],
+    "statement": "Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is left, the original numbers will be prime to one another."
+  },
+  {
+    "prop_id": "7.2",
+    "proof": "**Step 1.** Let the given numbers be A and B, not prime to one another, and arrange them so that A ≥ B. If B measures A, including the case A = B, take B as the required measure. It measures both, and no common measure can exceed B: a measure unequal to the number it measures is a part of it and therefore less. Hence only the case in which B does not measure A remains. [D7.3, CN5]\n\n**Step 2.** Use continual subtraction, the direct route treated by VII.1. At each stage, if the lesser measures the greater, stop. Otherwise, writing the greater as X and the lesser as Y, subtract Y from X and continue with Y and the positive remainder R = X − Y, arranging them in descending order. This process must terminate: every subtraction strictly decreases the total number of units in the pair, and the original pair contains only finitely many units. Denote the terminal pair by H and G, where G measures H. [7.1, D7.2]\n\n**Step 3.** The terminal lesser quantity G is not an unit. For if an unit were reached, our stopping rule ensures that throughout the preceding continual subtraction no remainder had measured the quantity before it. By VII.1, the original numbers would then be prime to one another, contrary to the hypothesis. Thus G is a number greater than an unit. [7.1, D7.12]\n\n**Step 4.** G measures both original numbers. To see this, retrace the subtractions. At the terminal stage, G measures H and itself. At any preceding stage, X = Y + R. If G measures Y and R, these quantities consist of whole copies of G; adding their copies shows that G also measures X. Thus measurement by G passes backward through every subtraction, until it follows that G measures A and B. [D7.5, CN2]\n\n**Step 5.** Let C be any common measure of A and B. Follow the subtractions forward. Whenever C measures X and Y, subtracting the whole copies of C composing Y from those composing X leaves whole copies of C composing the positive remainder R = X − Y. Hence C measures both members of the next pair. Continuing through all the subtractions, C therefore measures G. [D7.5, CN3]\n\n**Step 6.** Since C measures G, either C = G or C is a part of G and is less than G. Consequently no common measure of A and B is greater than G. By Step 4, G itself is a common measure; it is therefore their greatest common measure. The prescribed continual subtraction finds it, as required. [D7.3, CN5]",
+    "used": [
+      "D7.3",
+      "CN5",
+      "7.1",
+      "D7.2",
+      "D7.12",
+      "D7.5",
+      "CN2",
+      "CN3"
+    ],
+    "statement": "Given two numbers not prime to one another, to find their greatest common measure."
+  },
+  {
+    "prop_id": "7.3",
+    "proof": "**Step 1.** Let A, B, C be the three given numbers. Since they are not prime to one another, they have a common measure H other than the unit. We use repeated subtraction directly on the three numbers, choosing this route because it preserves their common measures throughout. [D7.12]\n\n**Step 2.** Begin with the triple A, B, C. Whenever its entries are not all equal, choose two unequal entries X > Y and replace X by X − Y, leaving the other two entries unchanged.\n\nThis operation preserves exactly the common measures of the triple. Indeed, if M measures all three entries, then X and Y consist of whole collections of copies of M; subtracting the copies making up Y from those making up X leaves a whole collection of copies of M. Thus M measures the new triple. Conversely, if M measures the new triple, it measures X − Y and Y, and therefore measures their sum X; hence it measures the preceding triple. In particular, H remains a common measure after every operation, so every entry remains a number at least as large as H. [D7.5, CN3, CN2, CN5]\n\n**Step 3.** Continue this operation whenever two entries are unequal. At each operation the total number of units in the three entries decreases by the positive number Y. The initial total contains only finitely many units, and the entries remain positive. Consequently the operation cannot continue indefinitely. Since it can be performed whenever the entries are not all equal, it must finish with three equal entries, say D, D, D. [D7.2]\n\n**Step 4.** D measures each entry of the final triple. Reversing the operations reconstructs each replaced entry by adding the retained smaller entry to the remainder. Since a sum of whole collections of copies of D is again a whole collection of copies of D, D measures every entry at each preceding stage. Thus D measures A, B, and C. Moreover, H measures D by the forward preservation in Step 2, so D is greater than the unit. [D7.5, CN2, CN5]\n\n**Step 5.** Let M be any common measure of A, B, and C. By the forward preservation in Step 2, M measures every successive triple and therefore measures D. Hence D consists of one or more copies of M: either D = M, or D is greater than M. No common measure of the given numbers can therefore exceed D. Since D itself measures all three, D is their greatest common measure, and the finite construction above finds it. [D7.5, CN3, CN5]",
+    "used": [
+      "D7.12",
+      "D7.5",
+      "CN3",
+      "CN2",
+      "CN5",
+      "D7.2"
+    ],
+    "statement": "Given three numbers not prime to one another, to find their greatest common measure."
+  },
+  {
+    "prop_id": "7.4",
+    "proof": "**Step 1.** Let A and B be any numbers with A less than B. Take the direct definitional route: the definitions of “part” and “parts” distinguish whether A measures B or does not measure B, and these cases are exhaustive. [D7.3, D7.4]\n\n**Step 2.** If A measures B, then A is a part of B, by the definition of a number being a part of a greater number. [D7.3]\n\n**Step 3.** If A does not measure B, then A is parts of B, by the definition of parts. Hence in either case the less number is either a part or parts of the greater, as required. [D7.4]",
+    "used": [
+      "D7.3",
+      "D7.4"
+    ],
+    "statement": "Any number is either a part or parts of any number, the less of the greater."
+  },
+  {
+    "prop_id": "7.5",
+    "proof": "**Step 1.** Let A be a part of B, and let C be the same part of D. We use equal-group decomposition directly, since the hypothesis already supplies the same measuring count. Thus B consists of k copies of A, and D consists of k copies of C, for the same count k, with k at least two. [D7.3]\n\n**Step 2.** Pair each copy of A in B with one corresponding copy of C in D. Each resulting group equals A + C, since equals added to equals give equal wholes. There are exactly k such groups. [CN2]\n\n**Step 3.** These groups contain precisely all the units of B and D, each once; hence together they constitute B + D. Consequently A + C measures B + D exactly k times. Since there are at least two groups, A + C is less than B + D, and therefore is a part of it. Its measuring count is the same as that of A in B, so A + C is the same part of B + D that A is of B, as required. [D7.2, CN5, D7.3]",
+    "used": [
+      "D7.3",
+      "CN2",
+      "D7.2",
+      "CN5"
+    ],
+    "statement": "If a number be a part of a number, and another be the same part of another, the sum will also be the same part of the sum that the one is of the one."
+  },
+  {
+    "prop_id": "7.6",
+    "proof": "**Step 1.** Let A be parts of B, and let C be the same parts of D. Unpacking “the same parts,” let A consist of m equal parts a and B of n such parts, while C consists of m equal parts b and D of n such parts. Here m<n, and m does not measure n: otherwise repetitions of A would make B, contrary to A being parts, rather than a part, of B. The letters m and n record the numbers of equal summands. [D7.2, D7.3, D7.4]\n\n**Step 2.** Each a is the same part of B that each b is of D, namely one of n equal parts. We use VII.5, the immediately preceding single-part addition result, as the direct route from “part” to “parts.” By that proposition, a+b is also one of n equal parts of B+D. Thus B+D consists of n equal copies of a+b. [7.5, D7.3]\n\n**Step 3.** Pair each of the m equal parts of A with one of the m equal parts of C. Each pair has sum a+b; by repeated addition of equals, A+C therefore consists of m equal copies of a+b. [CN2, D7.2]\n\n**Step 4.** Consequently, A+C comprises m of the n equal parts of B+D, just as A comprises m of the n equal parts of B. Moreover, A+C cannot measure B+D: if repetitions of its m equal parts made the n equal parts of B+D, the same repetitions of the m equal parts of A would make B, contradicting Step 1. Hence A+C is the same parts of B+D that A is of B, as required. [D7.2, D7.3, D7.4]",
+    "used": [
+      "D7.2",
+      "D7.3",
+      "D7.4",
+      "7.5",
+      "CN2"
+    ],
+    "statement": "If a number be parts of a number, and another be the same parts of another, the sum will also be the same parts of the sum that the one is of the one."
+  },
+  {
+    "prop_id": "7.7",
+    "proof": "**Step 1.** Let A be a part of B, and let C, subtracted from A, be the same part of D, subtracted from B. Thus C < A and D < B. By the meaning of a part, B consists of a certain number k of equal copies of A, while D consists of exactly k equal copies of C. We take the direct route of subtracting corresponding equal pieces, since the hypothesis already supplies this common number of repetitions. [D7.3]\n\n**Step 2.** From each of the k copies of A composing B, subtract a copy of C. Since equal numbers are subtracted from equal numbers, each remainder equals A − C. Hence the pieces left are k equal copies of A − C. [CN3]\n\n**Step 3.** The pieces removed are k copies of C. By repeated addition of equals, their total equals D, which likewise consists of k copies of C. Consequently, subtracting their total from B leaves the same remainder as subtracting D from B, namely B − D. Thus B − D consists of exactly k equal copies of A − C. [CN2, CN3]\n\n**Step 4.** Therefore A − C measures B − D exactly as many times as A measures B. By the definition of a part, the remainder A − C is the same part of the remainder B − D that the whole A is of the whole B. This proves the proposition. [D7.3]",
+    "used": [
+      "D7.3",
+      "CN3",
+      "CN2"
+    ],
+    "statement": "If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder will also be the same part of the remainder that the whole is of the whole."
+  },
+  {
+    "prop_id": "7.8",
+    "proof": "**Step 1.** Let A be the same parts of B that C is of D, and let C be subtracted from A and D from B. Write R = A − C and S = B − D. We use the direct route of subtracting corresponding equal groups, without introducing ratios. Unpacking “the same parts,” there are the same counts m < n and positive measures u, v such that\nA = mu,  B = nu,  C = mv,  D = nv.\nHere mu means m equal groups of size u, and similarly for the other expressions; a group may consist of a single unit. Thus A comprises m of the n equal parts of B, and C comprises m of the n equal parts of D. [D7.2, D7.3, D7.4]\n\n**Step 2.** Since C < A, we have v < u. Indeed, if v equalled u, their m-fold sums would be equal; if v exceeded u, the m groups of size v would contain the m groups of size u together with a positive excess. Both alternatives contradict C < A. Let w = u − v, which is therefore positive. [CN2, CN5]\n\n**Step 3.** From each of the m groups of size u composing A, remove one group of size v. The total removed is precisely C. Equal groups have had equal groups subtracted, so each remainder is w, and consequently R consists of m groups of size w. Likewise, removing v from each of the n groups of size u composing B removes precisely D and leaves S consisting of n groups of size w. Hence\nR = mw,  S = nw.\nThese are statements about repeated addition and subtraction, not an appeal to any multiplication or proportion theorem. [D7.2, CN2, CN3]\n\n**Step 4.** The remainder R does not measure S. For if S consisted of k copies of R, it would consist of km groups of size w. Since it also consists of n such groups and w is positive, the counts must agree: n = km; otherwise the larger collection would contain the smaller with a positive excess. But then B, consisting of n groups of size u, would consist of k copies of A, each containing m such groups. Thus A would measure B, contrary to the hypothesis that A is parts of B. [D7.2, D7.3, D7.4, CN2, CN5]\n\n**Step 5.** Therefore R comprises m of the n equal parts of S and is parts, rather than a measuring part, of S. These are exactly the same parts as the m of n equal parts which A comprises of B. Hence the remainder is the same parts of the remainder that the whole is of the whole. [D7.3, D7.4]",
+    "used": [
+      "D7.2",
+      "D7.3",
+      "D7.4",
+      "CN2",
+      "CN3",
+      "CN5"
+    ],
+    "statement": "If a number be the same parts of a number that a number subtracted is of a number subtracted, the remainder will also be the same parts of the remainder that the whole is of the whole."
+  },
+  {
+    "prop_id": "7.9",
+    "proof": "**Step 1.** Let A be the same part of B that C is of D. By the meaning of a part, B consists of some number n of copies of A, and D consists of the same number n of copies of C. Thus\nB = A + ⋯ + A, D = C + ⋯ + C,\nwith n summands in each sum. We use the direct additive route, since the hypothesis supplies equally many corresponding summands. [D7.3]\n\n**Step 2.** Suppose first that A is a part of C. By VII.5, the sum of two copies of A is the same part of the sum of two copies of C. Apply VII.5 again to these sums and one further pair A, C, and continue through the n pairs. At each addition the sums remain in the same part-relation as A to C. Consequently B is the same part of D that A is of C. [7.5]\n\n**Step 3.** Suppose instead that A is parts of C, that is, A is less than C but does not measure it. By VII.6, the sum of two copies of A is the same parts of the sum of two copies of C. Applying VII.6 successively with each further pair A, C preserves these same parts through all n pairs. Consequently B is the same parts of D that A is of C. [D7.4, 7.6]\n\n**Step 4.** Therefore, alternately, whatever part or parts the first number A is of the third C, the same part or parts the second B is of the fourth D, as required. [7.5, 7.6]",
+    "used": [
+      "D7.3",
+      "7.5",
+      "D7.4",
+      "7.6"
+    ],
+    "statement": "If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth."
+  },
+  {
+    "prop_id": "7.10",
+    "proof": "**Step 1.** Let A be parts of B, and let C be the same parts of D. Consider the asserted part-or-parts comparison of A with C, so that A<C. Unpack the hypothesis of “the same parts”: there are constituent measures e and f and counts r,s, with 1<r<s, such that\nA=r·e, B=s·e, C=r·f, D=s·f.\nHere each product denotes repeated addition: A and C contain equally many corresponding parts, and those parts measure B and D equally many times. Since A<C, necessarily e<f. [D7.2, D7.3, D7.4]\n\n**Step 2.** First dispose of the possibility that e is a unit. Let f contain t units. Arrange the units of C in r rows, each containing t units. Its t columns then each contain r units and hence each equal A. Likewise, arranging D in s rows of t units gives t columns, each equal to B. Thus C consists of t copies of A, and D of t copies of B. Consequently A is the same part of C that B is of D, proving the conclusion in this case. [D7.2, CN2, D7.3]\n\n**Step 3.** Now let e be a number; then f, being greater, is also a number. By VII.4, e is either a part or parts of f. Moreover, e is the same part of A that f is of C, since each measures its respective whole r times. Similarly, e is the same part of B that f is of D, since each measures its respective whole s times. We therefore take the direct single-part route through VII.9. [7.4, D7.3]\n\n**Step 4.** Apply VII.9 to e,A,f,C. It follows that A is the same part or the same parts of C that e is of f. Apply VII.9 again, now to e,B,f,D. It follows that B is the same part or the same parts of D that e is of f. [7.9]\n\n**Step 5.** Both comparisons therefore give the same part or the same collection of parts, since each agrees with the comparison of e with f. Hence, alternately, whatever parts or part the first number A is of the third C, the same parts or the same part the second B is of the fourth D. This is the required conclusion. [CN1]",
+    "used": [
+      "D7.2",
+      "D7.3",
+      "D7.4",
+      "CN2",
+      "7.4",
+      "7.9",
+      "CN1"
+    ],
+    "statement": "If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will the second also be of the fourth."
+  },
+  {
+    "prop_id": "7.11",
+    "proof": "**Step 1.** Let A and B be the whole numbers, and let C and D be the numbers subtracted from them, respectively, with A:B = C:D. Put R = A−C and S = B−D, the positive remainders. We work directly with the numerical definition of proportion: the first number is the same multiple, the same part, or the same parts of the second as the third is of the fourth. This makes the earlier numerical subtraction propositions the direct route. [D7.20]\n\n**Step 2.** If A = B, the given proportion gives C = D. Subtracting equals from equals gives R = S. Thus R:S = A:B, both being the ratio of equal numbers. Henceforth suppose A ≠ B. [D7.20, CN3]\n\n**Step 3.** Suppose A is the same part of B that C is of D. Apply 7.7 to these wholes and the numbers subtracted: R is the same part of S that A is of B. Consequently R:S = A:B. We choose 7.7 here because it is the first subtraction proposition and applies directly to the single-part case. [7.7, D7.20]\n\n**Step 4.** Suppose A is the same parts of B that C is of D. Proposition 7.8 gives that R is the same parts of S that A is of B. Therefore R:S = A:B. This is the corresponding direct subtraction result for the parts case. [7.8, D7.20]\n\n**Step 5.** Finally, suppose A is the same multiple of B that C is of D. By the definitions of part and multiple, B is the same part of A that D is of C. Apply 7.7 with B and A as the wholes and D and C as the respective subtractions: S is the same part of R that B is of A. Hence R is the same multiple of S that A is of B, so again R:S = A:B. These cases exhaust the numerical definition of the given proportion. Thus the remainder is to the remainder as whole to whole. [D7.3, D7.5, 7.7, D7.20]",
+    "used": [
+      "D7.20",
+      "CN3",
+      "7.7",
+      "7.8",
+      "D7.3",
+      "D7.5"
+    ],
+    "statement": "If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder will also be to the remainder as whole to whole."
+  },
+  {
+    "prop_id": "7.12",
+    "proof": "**Step 1.** Let a₁, …, aₙ be the antecedents and b₁, …, bₙ their corresponding consequents, with a₁:b₁ = ⋯ = aₙ:bₙ. Put A = a₁ + ⋯ + aₙ and B = b₁ + ⋯ + bₙ. By the definition of numerical proportion, the antecedents are respectively the same multiple, the same part, or the same parts of their consequents. We take the direct numerical route, using the addition results VII.5 and VII.6, whose hypotheses match these defining relations. [D7.20]\n\n**Step 2.** Suppose each aᵢ is the same part of bᵢ. By VII.5, a₁ + a₂ is that same part of b₁ + b₂. Applying VII.5 again to these sums and the next pair, and continuing through the finitely many pairs, shows that A is that same part of B. [7.5]\n\n**Step 3.** Suppose instead that each aᵢ is the same parts of bᵢ. By VII.6, a₁ + a₂ is those same parts of b₁ + b₂. Repeating the application with each succeeding pair shows that A is those same parts of B. [7.6]\n\n**Step 4.** Suppose each aᵢ is the same multiple of bᵢ. If the multiple is greater than one, each bᵢ is consequently the same part of aᵢ. Repeated application of VII.5 therefore makes B that same part of A; hence A is the same multiple of B that each aᵢ is of bᵢ. If the common multiple is one, corresponding numbers are equal, and repeated addition of equals gives A = B. [D7.3, D7.5, 7.5, CN2]\n\n**Step 5.** Thus, in every case, A has to B the same defining numerical relation that any antecedent aᵢ has to its corresponding consequent bᵢ. By the definition of proportion, aᵢ:bᵢ = A:B. Therefore, as one antecedent is to its corresponding consequent, so are all the antecedents together to all the consequents together. [D7.20]",
+    "used": [
+      "D7.20",
+      "7.5",
+      "7.6",
+      "D7.3",
+      "D7.5",
+      "CN2"
+    ],
+    "statement": "If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents."
+  },
+  {
+    "prop_id": "7.13",
+    "proof": "**Step 1.** Let A, B, C, D be proportional, so that A:B = C:D. By D7.20, A is the same multiple, the same part, or the same parts of B that C is of D. We take the direct route through the part-alternation result 7.9, using 7.10 only for the distinct same-parts case and reducing the multiple case to the same-part case.\n\n**Step 2.** Suppose A is the same part of B that C is of D. By 7.9, alternately, whatever part or parts A is of C, B is the same part or parts of D. Thus A:C = B:D by D7.20.\n\n**Step 3.** Suppose A is the same parts of B that C is of D. By 7.10, alternately, whatever parts or part A is of C, B is the same parts or part of D. Again A:C = B:D by D7.20.\n\n**Step 4.** Suppose A is the same multiple of B that C is of D. Then B measures A the same number of times that D measures C; hence B is the same part of A that D is of C (D7.5, D7.3). Apply 7.9 to B, A, D, C: whatever part or parts B is of D, A is the same part or parts of C. Therefore A:C = B:D by D7.20.\n\n**Step 5.** All alternatives in D7.20 have been covered. Consequently, if A:B = C:D, then A:C = B:D: the four numbers are proportional alternately.",
+    "used": [
+      "D7.20",
+      "7.9",
+      "7.10",
+      "D7.5",
+      "D7.3"
+    ],
+    "statement": "If four numbers be proportional, they will also be proportional alternately."
+  },
+  {
+    "prop_id": "7.14",
+    "proof": "**Step 1.** Let A₁, …, Aₙ and B₁, …, Bₙ be the two lists of numbers, equal in multitude, with\nAᵢ : Aᵢ₊₁ = Bᵢ : Bᵢ₊₁\nfor each i = 1, …, n−1. To establish their proportionality ex aequali, we must show A₁ : Aₙ = B₁ : Bₙ, taking the extreme terms and removing the intermediate terms. [D5.17]\n\n**Step 2.** Choose the numerical alternation theorem, since it turns the given proportions directly into a chain with matching intermediate ratios. Applying it to each given proportion gives\nAᵢ : Bᵢ = Aᵢ₊₁ : Bᵢ₊₁\nfor every i = 1, …, n−1. [7.13]\n\n**Step 3.** Ratios which are the same with the same ratio are the same with one another. Applying this successively along the finite chain obtained in Step 2 yields\nA₁ : B₁ = Aₙ : Bₙ. [5.11]\n\n**Step 4.** Alternating this last proportion gives\nA₁ : Aₙ = B₁ : Bₙ.\nThus the two lists are in the same ratio ex aequali, as required. [7.13; D5.17]",
+    "used": [
+      "D5.17",
+      "7.13",
+      "5.11"
+    ],
+    "statement": "If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali."
+  },
+  {
+    "prop_id": "7.15",
+    "proof": "**Step 1.** Let u be the unit, and let B, C, D be the second, third, and fourth terms respectively. Suppose that u measures B as many times as C measures D. We use direct decomposition into units, rather than an alternation theorem for four numbers, since the first term here is a unit. [D7.1, D7.2]\n\n**Step 2.** Denote the common number of measurements by n. Thus B consists of n units, while D consists of n copies of C. Let C consist of m units; consequently u measures C m times. View the units of D as n rows, one for each copy of C, with m units in each row. This merely displays the given decomposition of D into copies of C and of each copy into units. [D7.2, D7.3]\n\n**Step 3.** Collect the first unit from every row into one group, the second unit from every row into another, and continue through the m positions. Each group consists of n units and therefore equals B: its units equal the corresponding units of B, so their sums are equal by repeated addition of equals. There are exactly m such groups, and they exhaust the units of D without omission or repetition. [D7.2, CN2]\n\n**Step 4.** Hence D is composed of exactly m copies of B, so B measures D m times. But u also measures C m times. Therefore, alternately, the unit measures the third number the same number of times that the second measures the fourth, as required. [D7.2, D7.3]",
+    "used": [
+      "D7.1",
+      "D7.2",
+      "D7.3",
+      "CN2"
+    ],
+    "statement": "If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of times that the second measures the fourth."
+  },
+  {
+    "prop_id": "7.16",
+    "proof": "**Step 1.** Let A by multiplying B produce C, and let B by multiplying A produce D. Let u be a unit. By the definition of multiplication, B measures C as many times as u measures A; likewise, A measures D as many times as u measures B. [D7.15]\n\n**Step 2.** Use the direct route of alternating these equal multiplicities. Since u measures A as many times as B measures C, Proposition 7.15 gives that u measures B as many times as A measures C. [7.15]\n\n**Step 3.** Thus A measures both C and D as many times as there are units in B. Consequently, C and D are each equal to the sum obtained by adding A to itself that many times. Things equal to the same thing are equal to one another, so C = D. Therefore the numbers produced by the two multiplications are equal. [D7.15, CN1]",
+    "used": [
+      "D7.15",
+      "7.15",
+      "CN1"
+    ],
+    "statement": "If two numbers by multiplying one another make certain numbers, the numbers so produced will be equal to one another."
+  },
+  {
+    "prop_id": "7.17",
+    "proof": "**Step 1.** Let the number A, by multiplying the numbers B and C, produce D and E respectively. By the definition of multiplication, D consists of as many copies of B as there are units in A, and E consists of that same number of copies of C. Thus D is the same multiple of B that E is of C. [D7.15, D7.5]\n\n**Step 2.** By the same-multiple clause in the definition of proportional numbers, D:B = E:C. This proportion follows directly from the given multiplication, so the direct route is to alternate it. [D7.20]\n\n**Step 3.** Four proportional numbers are also proportional alternately. Applying this to D, B, E, C gives D:E = B:C. Therefore the numbers produced have the same ratio as the numbers multiplied, as required. [7.13]",
+    "used": [
+      "D7.15",
+      "D7.5",
+      "D7.20",
+      "7.13"
+    ],
+    "statement": "If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied."
+  },
+  {
+    "prop_id": "7.18",
+    "proof": "**Step 1.** Let the numbers A and B, by multiplying a number C, produce D and E respectively. We choose to reverse the multiplications, since this gives a common multiplier directly. By 7.16, C multiplying A produces D, and C multiplying B produces E. [7.16]\n\n**Step 2.** Since the same number C multiplies A and B to produce D and E, proposition 7.17 gives D:E = A:B. Thus the numbers produced have the same ratio as the original multipliers, as required. [7.17]",
+    "used": [
+      "7.16",
+      "7.17"
+    ],
+    "statement": "If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers."
+  },
+  {
+    "prop_id": "7.19",
+    "proof": "**Step 1.** Let A, B, C, D be the four numbers, in order. Form E by A multiplying D, F by B multiplying C, and G by B multiplying D. Thus E = AD, F = BC, and G = BD. [D7.15]\n\n**Step 2.** Since A and B multiply the same number D, their products satisfy E:G = A:B. [7.18] Since B multiplies C and D, its products satisfy F:G = C:D. [7.17] We use the common comparison product G because these two propositions apply directly in the stated factor order, without interchanging factors.\n\n**Step 3.** Suppose A:B = C:D. The ratios in Step 2 then give E:G = F:G, since ratios equal to the same ratio are equal to one another. [5.11] Numbers having the same ratio to the same number are equal; hence E = F, or AD = BC. [5.9]\n\n**Step 4.** Conversely, suppose AD = BC, so E = F. Substituting this equality into the ratios of Step 2, A:B and C:D both equal E:G. Therefore A:B = C:D. [5.11] Thus the four numbers are proportional if and only if the product of the first and fourth equals the product of the second and third.",
+    "used": [
+      "D7.15",
+      "7.18",
+      "7.17",
+      "5.11",
+      "5.9"
+    ],
+    "statement": "If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers will be proportional."
+  },
+  {
+    "prop_id": "7.20",
+    "proof": "**Step 1.** Let A, B be the least numbers having the same ratio as C, D, with A the greater and B the less, corresponding respectively to C and D. Thus A:B = C:D, and by their leastness A ≤ C and B ≤ D. We must show that C and D contain A and B respectively the same number of times. [D7.20]\n\n**Step 2.** We take the alternation route, since it directly compares each least number with its corresponding number. By alternation, A:C = B:D. If A = C, then A measures C once, and the equality of ratios means that B likewise measures D once; the conclusion follows. Hence suppose A < C. [7.13, D7.20]\n\n**Step 3.** By 7.4, A is either a part or parts of C. Suppose it is parts, rather than a part. Since A:C = B:D, B is the same parts of D. Accordingly, let E and F be the corresponding equal subparts: for whole-number counts m, n with 1 < m < n, we have A = mE, C = nE, B = mF, and D = nF. This expresses precisely that A and B comprise the same number of the corresponding parts of C and D; m cannot be one, since then A would measure C. [7.4, D7.3, D7.20]\n\n**Step 4.** Now E measures C exactly n times, and F measures D exactly n times. Hence E:C = F:D, and, by alternation, E:F = C:D. But E < A and F < B, since each is a proper part of its respective whole. We have therefore found smaller numbers having the ratio C:D, contrary to the leastness of A and B. Thus the supposition that A is parts of C is impossible. [D7.3, D7.20, 7.13, CN5]\n\n**Step 5.** Consequently A is a part of C, so A measures C. Since A:C = B:D, B is the same part of D and therefore measures D exactly as many times as A measures C. Thus the least numbers measure every pair having the same ratio the same number of times, the greater measuring the greater and the less the less. [7.4, D7.3, D7.20]",
+    "used": [
+      "D7.20",
+      "7.13",
+      "7.4",
+      "D7.3",
+      "CN5"
+    ],
+    "statement": "The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less."
+  },
+  {
+    "prop_id": "7.21",
+    "proof": "**Step 1.** Let A and B be numbers prime to one another. Thus the unit alone is a common measure of A and B. [D7.12]\n\n**Step 2.** Suppose that A and B are not the least numbers having their ratio, and let C and D be the least pair in that ratio, corresponding respectively to A and B. We use VII.20 because its equal-multiplicity conclusion directly supplies a common measure: C measures A the same number of times that D measures B. This multiplicity cannot be one, since then A = C and B = D, contrary to the supposition. It is therefore a multitude of units, hence a number E. [7.20, D7.2]\n\n**Step 3.** Since A consists of E repetitions of C, and B of E repetitions of D, multiplying C by E produces A, and multiplying D by E produces B. Interchanging the multiplying numbers leaves each product unchanged. Consequently, A also consists of C repetitions of E, and B of D repetitions of E. Thus E measures both A and B. [D7.15, 7.16]\n\n**Step 4.** This contradicts the fact that the unit alone is a common measure of A and B, since E is a number, not the unit. Therefore A and B are the least numbers having their ratio. Hence numbers prime to one another are the least of those which have the same ratio with them. [D7.12]",
+    "used": [
+      "D7.12",
+      "7.20",
+      "D7.2",
+      "D7.15",
+      "7.16"
+    ],
+    "statement": "Numbers prime to one another are the least of those which have the same ratio with them."
+  },
+  {
+    "prop_id": "7.22",
+    "proof": "**Step 1.** Let A and B be the least numbers among those having their ratio. Suppose that they are not prime to one another. Then they have a common measure d other than the unit; thus d > 1. [D7.12, D7.2]\n\n**Step 2.** Let a and b be the respective numbers of times that d measures A and B. Multiplication therefore gives A = da and B = db. We use this common measure directly; there is no need to find a greatest common measure. [D7.15]\n\n**Step 3.** Since the same number d multiplies a and b to produce A and B, the products have the ratio of the numbers multiplied. Hence A:B = a:b. This is the direct common-multiplier route, for which 7.17 applies immediately. [7.17]\n\n**Step 4.** Since d > 1, A consists of more than one copy of a, and B of more than one copy of b. Consequently a < A and b < B, because the whole is greater than the part. This contradicts the assumption that A and B are the least numbers having their ratio. Thus they have no common measure other than the unit and are therefore prime to one another. [D7.15, CN5, D7.12]",
+    "used": [
+      "D7.12",
+      "D7.2",
+      "D7.15",
+      "7.17",
+      "CN5"
+    ],
+    "statement": "The least numbers of those which have the same ratio with them are prime to one another."
+  },
+  {
+    "prop_id": "7.23",
+    "proof": "**Step 1.** Let A and B be numbers prime to one another, and let C measure A. We use the defining common-measure criterion directly: the unit alone measures both A and B. It therefore suffices to show that no number other than the unit measures both C and B. [D7.12]\n\n**Step 2.** Suppose a number D other than the unit measures both C and B. Since C measures A, A consists of equal copies of C; since D measures C, each such copy consists of equal copies of D. Replacing each copy of C by its copies of D expresses A as repeated addition of D. Thus D measures A, while by supposition it also measures B. [D7.5, D7.15]\n\n**Step 3.** This contradicts the fact that the unit alone is a common measure of A and B. Consequently, no number other than the unit measures both C and B, so C and B are prime to one another. Hence a number which measures either of two numbers prime to one another is prime to the remaining number. [D7.12]",
+    "used": [
+      "D7.12",
+      "D7.5",
+      "D7.15"
+    ],
+    "statement": "If two number be prime to one another, the number which measures the one of them will be prime to the remaining number."
+  },
+  {
+    "prop_id": "7.24",
+    "proof": "**Step 1.** Let A and B each be prime to C, and let P be the number produced when A multiplies B. Thus P consists of A copies of B, so B measures P. We must show that P and C have only the unit as a common measure. [D7.15, D7.12]\n\n**Step 2.** Suppose instead that a number D greater than the unit measures both P and C. Since C and B are prime to one another and D measures C, D and B are prime to one another. [D7.12, 7.23]\n\n**Step 3.** D cannot equal P: otherwise B would measure D as well as itself, contradicting the relative primality of D and B, since B is a number, not the unit. Hence D is less than P. Because D measures P, P is a multiple of D; therefore there is a number E such that E multiplying D produces P. [D7.2, D7.12, D7.5, D7.15]\n\n**Step 4.** The product of E and D equals the product of A and B, both being P. The equal-products direction of 7.19 therefore gives\nE : A = B : D. [7.19]\n\n**Step 5.** We use the least-terms route, since the relative primality already established supplies its hypothesis: B and D are the least numbers having their ratio. These least numbers measure the corresponding terms of any equal ratio. Applying this to B : D = E : A, we obtain that D measures A. [7.21, 7.20]\n\n**Step 6.** Thus D, which is greater than the unit, measures both A and C. This contradicts the hypothesis that A and C are prime to one another. Consequently P and C have no common measure except the unit, and the product of A and B is prime to C, as required. [D7.12]",
+    "used": [
+      "D7.15",
+      "D7.12",
+      "7.23",
+      "D7.2",
+      "D7.5",
+      "7.19",
+      "7.21",
+      "7.20"
+    ],
+    "statement": "If two numbers be prime to any number, their product also will be prime to the same."
+  },
+  {
+    "prop_id": "7.25",
+    "proof": "**Step 1.** Let A and B be numbers prime to one another. Both factors in the product A·A are therefore prime to B, by the hypothesis.\n\n**Step 2.** Choose the direct product rule VII.24: numbers prime to the same number have their product prime to that number. Apply it with both factors equal to A and the common number equal to B; the rule does not require distinct factors. Hence A·A is prime to B, which is the required conclusion. [7.24]",
+    "used": [
+      "7.24"
+    ],
+    "statement": "If two numbers be prime to one another, the product of one of them into itself will be prime to the remaining one."
+  },
+  {
+    "prop_id": "7.26",
+    "proof": "**Step 1.** Let A and B each be prime to each of C and D, and write P = AB and Q = CD. Being prime to one another is symmetric, since it means that the unit alone is a common measure (D7.12).\n\n**Step 2.** Choose the direct product rule, 7.24, because the hypotheses give two numbers prime to each fixed factor. Since A and B are both prime to C, their product P is prime to C. Likewise, since A and B are both prime to D, P is prime to D (7.24).\n\n**Step 3.** Thus C and D are both prime to P, by symmetry (D7.12). Applying 7.24 to C and D with P fixed, their product Q is prime to P. Therefore AB and CD are prime to one another, as required.",
+    "used": [
+      "D7.12",
+      "7.24"
+    ],
+    "statement": "If two numbers be prime to two numbers, both to each, their products also will be prime to one another."
+  },
+  {
+    "prop_id": "7.27",
+    "proof": "**Step 1.** Let a and b be prime to one another. We use VII.24 directly, since its rule for multiplying numbers prime to a fixed number applies successively to the repeated factors here. Applying it to a and a, each prime to b, shows that a² is prime to b. [7.24]\n\n**Step 2.** Consequently b is prime to a². Applying VII.24 to b and b, with a² held fixed, shows that b² is prime to a². Thus the products obtained by multiplying each original number by itself are prime to one another. [7.24]\n\n**Step 3.** Both a² and a are prime to b, so VII.24 shows that their product a³ is prime to b. Now b and b are each prime to a³, so b² is prime to a³. Finally, b² and b are each prime to a³, so their product b³ is prime to a³. Therefore the products obtained by multiplying the original numbers into their respective squares are also prime to one another. [7.24]\n\n**Step 4.** The same reasoning continues without limit. For any positive integer n, repeated applications of VII.24, multiplying by a at each stage while holding b fixed, show that aⁿ is prime to b. Holding aⁿ fixed instead, repeated applications of VII.24 to successive products of b show that bⁿ is prime to aⁿ. Hence the squares, the cubes, and every subsequent pair of corresponding powers—the extremes at each continuation—are prime to one another. [7.24]",
+    "used": [
+      "7.24"
+    ],
+    "statement": "If two numbers be prime to one another, and each by multiplying itself make a certain number, the products will be prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter will also be prime to one another [and this is always the case with the extremes]."
+  },
+  {
+    "prop_id": "7.28",
+    "proof": "**Step 1.** Let the two numbers be A and B, and let S=A+B. We take the direct route through common measures, rather than ratios. Every number is a multitude of units, so the unit measures each number. Thus, by the definition of numbers prime to one another, it suffices to exclude any common measure greater than the unit. [D7.2, D7.12]\n\n**Step 2.** Suppose A and B are prime to one another. If S and A had a common measure d greater than the unit, each would consist of a whole number of copies of d. Subtracting the copies making up A from those making up S leaves B, still consisting of whole copies of d. Therefore d would measure both A and B, contrary to their being prime to one another. Hence S and A are prime to one another. [D7.5, CN3, D7.12]\n\n**Step 3.** Likewise, if S and B had a common measure d greater than the unit, subtracting the copies of d making up B from those making up S would leave A measured by d. Again d would be a common measure of A and B, a contradiction. Hence S is also prime to B, proving the first assertion. [D7.5, CN3, D7.12]\n\n**Step 4.** Conversely, suppose S is prime to one of the summands; call that summand A, interchanging the names if necessary. If A and B were not prime to one another, they would have a common measure d greater than the unit. Adding the copies of d making up A to those making up B shows that d also measures S=A+B. Thus d would measure both S and A, contrary to the hypothesis. Consequently A and B are prime to one another. This proves the converse and completes both assertions. [D7.5, CN2, D7.12]",
+    "used": [
+      "D7.2",
+      "D7.12",
+      "D7.5",
+      "CN3",
+      "CN2"
+    ],
+    "statement": "If two numbers be prime to one another, the sum will also be prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another."
+  },
+  {
+    "prop_id": "7.29",
+    "proof": "**Step 1.** Let P be a prime number and N a number which P does not measure. We take the direct definitional route: it suffices to show that the unit alone is their common measure. [D7.12]\n\n**Step 2.** Any common measure of P and N must measure P. Since P is prime, no number less than P measures it; hence any common measure other than the unit would have to be P itself. But P does not measure N by hypothesis. Therefore there is no common measure of P and N other than the unit. [D7.11]\n\n**Step 3.** The unit measures both P and N, since each number is a multitude composed of units. Consequently the unit alone is their common measure, so P and N are prime to one another. Thus any prime number is prime to any number which it does not measure. [D7.2, D7.12]",
+    "used": [
+      "D7.12",
+      "D7.11",
+      "D7.2"
+    ],
+    "statement": "Any prime number is prime to any number which it does not measure."
+  },
+  {
+    "prop_id": "7.30",
+    "proof": "**Step 1.** Let A and B multiply one another to produce C, and let the prime number P measure C. If P measures A, the conclusion already holds. Suppose therefore that P does not measure A. Then P is prime to A. [7.29]\n\n**Step 2.** Suppose, for a contradiction, that P does not measure B either. Then P is also prime to B. Thus both A and B are prime to P. [7.29; D7.12]\n\n**Step 3.** We choose the product-coprimality route because it applies directly to these two coprimality statements: since A and B are each prime to P, their product C is prime to P. [7.24]\n\n**Step 4.** But P measures C by hypothesis and measures itself once. Hence C and P have the common measure P, which is a number, not a unit. This contradicts their being prime to one another, for such numbers have only a unit as a common measure. Therefore P must measure B when it does not measure A. Consequently, any prime number measuring the product measures at least one of the original numbers. [D7.2; D7.12]",
+    "used": [
+      "7.29",
+      "D7.12",
+      "7.24",
+      "D7.2"
+    ],
+    "statement": "If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers."
+  },
+  {
+    "prop_id": "7.31",
+    "proof": "**Step 1.** Let A be a composite number. Then A has a numerical measure smaller than itself. A numerical measure is a number—a multitude of units—not the unit alone. [D7.13, D7.3, D7.2]\n\n**Step 2.** Take the direct least-measure route: among the numerical measures smaller than A, choose the least, P. This choice is possible because the collection is nonempty by Step 1 and finite: A is a finite multitude of units, so only finitely many numbers are smaller than A. [D7.2, D7.3]\n\n**Step 3.** If P were not prime, it would have a numerical measure Q smaller than itself. Since Q measures P, P consists of repeated copies of Q; since P measures A, A consists of repeated copies of P. Replacing each copy of P by its copies of Q therefore expresses A as repeated copies of Q. Thus Q measures A. But Q is a number smaller than P, contradicting the choice of P as the least numerical measure of A. [D7.11, D7.3, D7.15]\n\n**Step 4.** Consequently P is prime, and by its choice P measures A. Therefore any composite number is measured by some prime number. [D7.11]",
+    "used": [
+      "D7.13",
+      "D7.3",
+      "D7.2",
+      "D7.11",
+      "D7.15"
+    ],
+    "statement": "Any composite number is measured by some prime number."
+  },
+  {
+    "prop_id": "7.32",
+    "proof": "**Step 1.** Let N be any number. If N is prime, the first alternative holds. Otherwise, by the definition of a prime number, N has a measure other than the unit; hence N is composite by the definition of a composite number. (D7.11, D7.13)\n\n**Step 2.** In the composite case, apply VII.31 directly, since it supplies exactly the required prime measure: some prime number measures N. Thus, in either case, N either is prime or is measured by some prime number. (7.31)",
+    "used": [
+      "D7.11",
+      "D7.13",
+      "7.31"
+    ],
+    "statement": "Any number either is prime or is measured by some prime number."
+  },
+  {
+    "prop_id": "7.33",
+    "proof": "**Step 1.** Let the given numbers be \\(a_1,\\ldots,a_n\\). We use common-measure reduction: numbers prime to one another are already the least numbers having their ratios, so VII.21 supplies the required direction directly. Here “prime to one another” means having only the unit as a common measure. [D7.12, 7.21]\n\n**Step 2.** Find their greatest common measure \\(d\\). This is a finite construction for any given multitude: examine the unit and the numbers not exceeding the smallest given number, retain those measuring every \\(a_i\\), and take the greatest. Every common measure occurs in this finite list; if no number measures them all, take \\(d\\) to be the unit. [D7.1, D7.2, D7.3]\n\n**Step 3.** For each \\(i\\), let \\(b_i\\) count how many times \\(d\\) measures \\(a_i\\); thus \\(a_i=d b_i\\). Multiplication by the same number preserves the ratio of the numbers multiplied. Consequently, for every pair of indices,\n\\[\n b_i:b_j=a_i:a_j.\n\\]\nIf \\(d\\) is the unit, the lists are identical and this conclusion is immediate. [D7.15, 7.17]\n\n**Step 4.** The reduced terms have no common measure other than the unit. For suppose a number \\(e\\), greater than the unit, measured every \\(b_i\\). Writing \\(b_i=e c_i\\), repeated addition gives\n\\[\n a_i=d(e c_i)=(de)c_i.\n\\]\nThus \\(de\\) would measure every given number. But \\(de>d\\), contrary to the choice of \\(d\\) as their greatest common measure. Hence the reduced terms are prime to one another. [D7.15, D7.12]\n\n**Step 5.** By VII.21, \\(b_1,\\ldots,b_n\\) are the least of the numbers having their ratios. Step 3 shows that these are precisely the ratios of the given numbers. Therefore the required least proportional numbers have been found. [7.21]",
+    "used": [
+      "D7.12",
+      "7.21",
+      "D7.1",
+      "D7.2",
+      "D7.3",
+      "D7.15",
+      "7.17"
+    ],
+    "statement": "Given as many numbers as we please, to find the least of those which have the same ratio with them."
+  },
+  {
+    "prop_id": "7.34",
+    "proof": "**Step 1.** Let the given numbers be A and B. If they are equal, take L = A. If either measures the other, take L to be the latter. In either case both measure L, and no smaller number can be measured by the larger given number. These cases are therefore settled. Henceforth suppose that neither given number measures the other. [D7.3, D7.15, CN5]\n\n**Step 2.** By 7.33, find the least numbers C and D having the same ratio as A and B, so that C:D = A:B. We choose this least-ratio construction because it directly supplies the multipliers needed below. [7.33]\n\n**Step 3.** Let D multiply A to produce L. Since C:D = A:B, the products CB and DA are equal. Thus L = DA = CB, and consequently both A and B measure L. [7.19, D7.15]\n\n**Step 4.** Let N be any number measured by both A and B. Write N = XA = YB, where X and Y count the respective repetitions. Neither count is a unit: otherwise N would equal one of the given numbers and the other would measure it, contrary to Step 1. Thus X and Y are numbers. Since YB = XA, the converse of 7.19 gives Y:X = A:B. Hence C and D are the least numbers in the same ratio as Y and X. By 7.20, D measures X; in particular, X is not less than D. [D7.15, 7.19, 7.20]\n\n**Step 5.** Now N consists of X repetitions of A, while L consists of D repetitions of A. If X = D, then N = L; if X > D, the repetitions forming L are a proper part of those forming N, so N > L. Therefore every number measured by both A and B is at least L. Since both measure L by Step 3, L is the least number which they measure, and it has been constructed. [D7.15, CN5]",
+    "used": [
+      "D7.3",
+      "D7.15",
+      "CN5",
+      "7.33",
+      "7.19",
+      "7.20"
+    ],
+    "statement": "Given two numbers, to find the least number which they measure."
+  },
+  {
+    "prop_id": "7.35",
+    "proof": "**Step 1.** Let A and B measure N, and let L be the least number measured by both A and B, supplied by 7.34. We use repeated subtraction: the leastness of L will exclude a nonzero remainder. [7.34]\n\n**Step 2.** Subtract L from N whenever the quantity remaining is at least L. At every subtraction, any nonempty remainder is still measured by both A and B. Indeed, the quantity before subtraction consists of whole copies of A, and L also consists of whole copies of A; removing the latter copies leaves whole copies of A. The same argument applies to B. [D7.15, CN3]\n\n**Step 3.** This process must stop: N consists of finitely many units, and each subtraction removes a positive number of them. Thus eventually either nothing remains, or a positive remainder R less than L remains. [D7.2, CN5]\n\n**Step 4.** A positive remainder R is impossible. By Step 2, both A and B would measure R, contrary to L being the least number measured by them, since R < L. Hence nothing remains. [7.34]\n\n**Step 5.** Therefore N is exactly a whole number of copies of L. Consequently L measures N: the least number measured by A and B also measures the number measured by them both. [D7.15, D7.5]",
+    "used": [
+      "7.34",
+      "D7.15",
+      "CN3",
+      "D7.2",
+      "CN5",
+      "D7.5"
+    ],
+    "statement": "If two numbers measure any number, the least number measured by them will also measure the same."
+  },
+  {
+    "prop_id": "7.36",
+    "proof": "**Step 1.** Let the three given numbers be A, B, and C. Choose the direct route of applying the earlier two-number construction successively. By 7.34, find D, the least number measured by A and B. Apply 7.34 again to find L, the least number measured by D and C. [7.34]\n\n**Step 2.** The numbers A and B measure D, and D measures L. Thus L consists of whole copies of D; replacing each such copy by its whole copies of A shows that A measures L, and replacing it by its whole copies of B shows that B measures L. Also C measures L by construction. Hence all three given numbers measure L. [D7.5, 7.34]\n\n**Step 3.** Let N be any number measured by A, B, and C. Since A and B measure N, their least common measured number D also measures N, by 7.35. Therefore D and C both measure N. But L was constructed as the least number measured by D and C, so N cannot be less than L. Consequently L is the least number measured by A, B, and C, and the required number has been found. [7.35, 7.34]",
+    "used": [
+      "7.34",
+      "D7.5",
+      "7.35"
+    ],
+    "statement": "Given three numbers, to find the least number which they measure."
+  },
+  {
+    "prop_id": "7.37",
+    "proof": "**Step 1.** Let the number M measure the number N. A part called by the same name as M means an Mth part: one of as many equal parts as there are units in M. If N=M, a unit is already such a part, since N then consists of exactly as many units as M. We may therefore suppose N>M. [D7.1, D7.2]\n\n**Step 2.** Let Q be the number of repetitions of M which make up N. Since N>M, this count is a number, not merely a unit. Thus Q multiplying M produces N, by the definition of multiplication. [D7.2, D7.15]\n\n**Step 3.** Let M multiplying Q produce P. By 7.16, the products obtained by multiplying these two numbers in opposite orders are equal; hence P=N. This direct interchange of the factors is the natural route, because it makes M the count of the equal parts. [D7.15, 7.16]\n\n**Step 4.** Consequently, N consists of Q repeated as many times as there are units in M. Therefore Q measures N and, since M contains more than one unit, Q is less than N. Thus Q is a part of N, and its repetition count shows that it is precisely the Mth part. Hence the measured number has a part called by the same name as the measuring number. [D7.2, D7.3, D7.15]",
+    "used": [
+      "D7.1",
+      "D7.2",
+      "D7.15",
+      "7.16",
+      "D7.3"
+    ],
+    "statement": "If a number be measured by any number, the number which is measured will have a part called by the same name as the measuring number."
+  },
+  {
+    "prop_id": "7.38",
+    "proof": "**Step 1.** Let A have a part B, and let C be the number called by the same name as that part. Thus A consists of as many copies of B as there are units in C. If B is a unit, then C equals A and measures A once, so the conclusion already holds. Otherwise B is a number. [D7.1, D7.2, D7.3]\n\n**Step 2.** We take the direct multiplication route, since it allows the roles of B and C to be interchanged. By the definition of multiplication, C multiplying B produces A. [D7.15]\n\n**Step 3.** The numbers produced by two numbers multiplying one another are equal. Therefore B multiplying C also produces A. [7.16]\n\n**Step 4.** Consequently A consists of as many copies of C as there are units in B. Hence C measures A; and C is precisely the number called by the same name as the given part. Therefore, if a number has any part whatever, it is measured by the number called by the same name as that part. [D7.15, D7.3]",
+    "used": [
+      "D7.1",
+      "D7.2",
+      "D7.3",
+      "D7.15",
+      "7.16"
+    ],
+    "statement": "If a number have any part whatever, it will be measured by a number called by the same name as the part."
+  },
+  {
+    "prop_id": "7.39",
+    "proof": "**Step 1.** Let the given parts be named by the numbers a₁, …, aᵣ: thus aᵢ names the aᵢ-th part. By VII.37, a number measured by every aᵢ has all the given parts; conversely, by VII.38, any number having all those parts is measured by every aᵢ. We therefore seek their least common multiple. We use successive two-number constructions, since this directly accommodates any finite list of given parts. [7.37, 7.38]\n\n**Step 2.** Put L₁ = a₁. For each i from 2 through r, construct Lᵢ as the least number measured by Lᵢ₋₁ and aᵢ, using VII.34. Every aⱼ with j ≤ i measures Lᵢ: the earlier naming numbers measure Lᵢ₋₁, which measures Lᵢ, and aᵢ also measures Lᵢ. Consequently all the naming numbers measure L = Lᵣ, so L has every given part by VII.37. [7.34, 7.37]\n\n**Step 3.** Let N be any number having every given part. Each aᵢ measures N by VII.38. Thus L₁ measures N. Whenever Lᵢ₋₁ measures N, both Lᵢ₋₁ and aᵢ measure N; therefore their least common multiple Lᵢ also measures N, by VII.35. Successively, L measures N. A number cannot be smaller than a number which measures it, so N is not smaller than L. Hence L has the prescribed parts and is the least number that has them, as required. [7.38, 7.35]",
+    "used": [
+      "7.37",
+      "7.38",
+      "7.34",
+      "7.35"
+    ],
+    "statement": "To find the number which is the least that will have given parts."
+  }
+]
